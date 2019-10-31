@@ -17,7 +17,7 @@
     "docs": "graphdoc",
     "serve": "firebase serve --only functions",
     "serve:docs": "serve docs",
-    "deploy": "firebase deploy --only functions",
+    "deploy": "firebase deploy --only functions:api",
     "logs": "firebase functions:log",
     "commit": "git-cz",
     "cz": "git-cz",
@@ -63,7 +63,7 @@
     "functions/lib"
   ],
   "engines": {
-    "node": "8 || 12",
+    "node": "10",
     "npm": ">=6"
   },
   "repository": {

@@ -10,7 +10,7 @@ export const idId = (speciesOrId: string | number): speciesOrId is number => {
 };
 
 /** Gets a pokedex entry by either species or dex number */
-export const getPokemonForSpeciesOrId = (speciesOrId: string | number): Pokemon.DexEntry | null => {
+export const getPokemonForSpeciesOrId = (speciesOrId: string | number): Pokemon.DexEntry | undefined => {
   if (idId(speciesOrId)) {
     return pokedex.find(poke => poke.num === speciesOrId);
   }

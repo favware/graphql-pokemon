@@ -1,0 +1,32 @@
+name: Code Quality
+
+on: [push, pull_request]
+
+jobs:
+  ESLint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Deps
+      run: yarn
+    - name: Run ESLint
+      uses: discordjs/action-eslint@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        job-name: ESLint
+
+  Typescript:
+    name: Typescript
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Deps
+      run: yarn
+    - name: Run TSC
+      uses: icrawl/action-tsc@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        job-name: Typescript

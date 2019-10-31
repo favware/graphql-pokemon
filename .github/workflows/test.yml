@@ -1,0 +1,26 @@
+name: Unit Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Node v${{ matrix.node_version }} - ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: [10, 12, 13]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: Install Deps
+      run: yarn
+    - name: Build Project
+      run: yarn build
+    - name: Test
+      run: yarn test

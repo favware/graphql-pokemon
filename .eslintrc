@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "@favware/eslint-config"
+  ],
+  "rules": {
+    "new-cap": "off"
+  }
+}

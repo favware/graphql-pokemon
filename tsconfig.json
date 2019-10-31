@@ -1,0 +1,28 @@
+{
+  "extends": "@favware/ts-config",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "es2017"
+  },
+  "include": [
+    "src"
+  ],
+  "typedocOptions": {
+    "out": "./docs/",
+    "readme": "./README.md",
+    "name": "YarnTs Template",
+    "exclude": [
+      "**/node_modules/**",
+      "**/*.test.ts",
+      "**/*.js"
+    ],
+    "mode": "modules",
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "excludeNotExported": true
+  }
+}

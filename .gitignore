@@ -18,6 +18,7 @@ node_modules/
 # Logs
 logs
 *.log*
+**/tsconfig.tsbuildinfo
 coverage/
 
 # IDE Settings

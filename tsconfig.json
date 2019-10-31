@@ -3,26 +3,17 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
+    "lib": [
+      "es2016",
+      "esnext.asynciterable"
+    ],
     "outDir": "dist",
     "rootDir": "src",
-    "target": "es2017"
+    "target": "es2017",
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true
   },
   "include": [
     "src"
-  ],
-  "typedocOptions": {
-    "out": "./docs/",
-    "readme": "./README.md",
-    "name": "YarnTs Template",
-    "exclude": [
-      "**/node_modules/**",
-      "**/*.test.ts",
-      "**/*.js"
-    ],
-    "mode": "modules",
-    "excludeExternals": true,
-    "excludePrivate": true,
-    "excludeProtected": true,
-    "excludeNotExported": true
-  }
+  ]
 }

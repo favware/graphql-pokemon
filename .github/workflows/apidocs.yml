@@ -8,6 +8,7 @@ jobs:
   docgen:
     name: Automated API Doc Generation
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v1
       with:

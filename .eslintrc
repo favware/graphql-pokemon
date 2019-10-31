@@ -2,6 +2,9 @@
   "extends": [
     "@favware/eslint-config"
   ],
+  "parserOptions": {
+    "createDefaultProgram": true
+  },
   "rules": {
     "new-cap": "off"
   }

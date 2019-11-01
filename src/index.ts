@@ -7,7 +7,10 @@ import { RecipeResolver } from './resolvers/RecipeResolver';
 import { HelloResolver } from './resolvers/HelloResolver';
 
 const schema = buildSchemaSync({ resolvers: [ RecipeResolver, HelloResolver ] });
-const apolloServer = new ApolloServer({ schema });
+const apolloServer = new ApolloServer({
+  schema,
+  playground: { endpoint: '/playground' },
+});
 const app = express();
 
 apolloServer.applyMiddleware({ app });

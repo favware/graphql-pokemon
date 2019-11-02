@@ -1,8 +1,7 @@
 ---
 name: Bug report
 about: Report incorrect or unexpected behaviour of this library
-title: ''
-labels: 'Bug 👾'
+title: 'Fix(): '
 assignees: ''
 
 ---

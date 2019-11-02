@@ -1,8 +1,7 @@
 ---
 name: Feature request
 about: Request a feature for the library
-title: ''
-labels: 'Addition 📤, Improvement 🎗️'
+title: 'Feat(): '
 assignees: ''
 
 ---

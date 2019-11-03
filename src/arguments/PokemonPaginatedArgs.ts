@@ -16,6 +16,6 @@ export default class PokemonPaginatedArgs {
   @IsBoolean()
   reverse = false;
 
-  @Field()
+  @Field(() => String, { description: 'The pokemon to search for' })
   pokemon: string;
 }

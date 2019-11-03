@@ -6,7 +6,10 @@ import {buildSchemaSync} from 'type-graphql';
 import DexResolver from './resolvers/DexResolver';
 
 const schema = buildSchemaSync({resolvers: [ DexResolver ]});
-const apolloServer = new ApolloServer({schema});
+const apolloServer = new ApolloServer({
+  schema,
+  playground: {endpoint: '/playground'},
+});
 const app = express();
 
 apolloServer.applyMiddleware({app});

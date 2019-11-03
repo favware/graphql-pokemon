@@ -14,7 +14,7 @@
 
 **Project Status**
 
-[![GitHub](https://img.shields.io/github/license/favware/website?logo=github&style=flat-square)](https://github.com/favware/website/blob/master/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/master/LICENSE.md)
 
 **Social Media and Donations**
 

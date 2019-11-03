@@ -18,7 +18,11 @@
     ],
     "rewrites": [
       {
-        "source": "/api/**",
+        "source": "**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/foo{,/**}",
         "function": "api"
       }
     ]

@@ -4,7 +4,7 @@
     "source": "./"
   },
   "hosting": {
-    "public": "public",
+    "public": "docs",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -19,11 +19,10 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/foo{,/**}",
-        "function": "api"
+        "run": {
+          "serviceId": "graphql-pokemon",
+          "region": "europe-west1"
+        }
       }
     ]
   }

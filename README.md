@@ -93,3 +93,5 @@ Gets the dex entry for a pokemon based on their species name
 ###  getDexEntryByDexNumber
 
 Gets the dex entry for a pokemon based on their dex number
+
+## [Web hosted documentation](https://favware.github.io/graphql-pokemon)

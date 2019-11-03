@@ -7,8 +7,9 @@ cleanup () {
 
 set -e
 exit_code=1
+PORT=4000
 
-yarn ts-node src/index.ts > /dev/null &
+yarn start > /dev/null &
 
 trap cleanup EXIT
 

@@ -3,8 +3,8 @@ import path from 'path';
 import fs from 'fs';
 import chalk from 'chalk';
 
-let files = glob.sync('**/*.test.?(j|t)s?(x)', { cwd: path.join(__dirname, '../packages') });
-files = files.map(file => path.join(__dirname, '../packages', file));
+let files = glob.sync('**/*.test.?(j|t)s?(x)', { cwd: path.join(__dirname, '../__tests__') });
+files = files.map(file => path.join(__dirname, '../__tests__', file));
 const onlyPattern = new RegExp(/(?:describe\.only|it\.only|test\.only)/, 'gm');
 
 let shouldError = false;

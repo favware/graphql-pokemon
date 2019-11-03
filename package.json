@@ -24,7 +24,7 @@
     "firebase:logs": "firebase functions:log",
     "firebase:serve": "firebase serve",
     "firebase:deploy": "firebase deploy",
-    "firebase:preparehost": "cp docs/base.html docs/index.html && showdown makehtml -i README.md --ghcodeblocks --strikethrough --tables --parseimgdimensions --smartIndentationFix | sed -i -e '3r /dev/stdin' docs/index.html",
+    "firebase:preparehost": "cp public/base.html public/index.html && showdown makehtml -i README.md --ghcodeblocks --strikethrough --tables --parseimgdimensions --smartIndentationFix | sed -i -e '3r /dev/stdin' public/index.html",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "scripts:validateNoOnly": "yarn scripts:runner scripts/validateNoOnly",
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull"

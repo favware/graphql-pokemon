@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>DateTime</title>
+    <title>Float</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -40,19 +40,19 @@
                 Boolean
             </a>
         </li>
-        <li class="slds-is-active" title="DateTime">
-            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                DateTime
-            </a>
-        </li>
-        <li  title="ID">
-            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ID
+        <li class="slds-is-active" title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
             </a>
         </li>
         <li  title="Int">
             <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Int
+            </a>
+        </li>
+        <li  title="JSONObject">
+            <a href="jsonobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JSONObject
             </a>
         </li>
         <li  title="String">
@@ -80,9 +80,14 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li  title="Recipe">
-            <a href="recipe.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Recipe
+        <li  title="DetailsEntry">
+            <a href="detailsentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DetailsEntry
+            </a>
+        </li>
+        <li  title="DexEntry">
+            <a href="dexentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DexEntry
             </a>
         </li>
         <li  title="__Directive">
@@ -151,8 +156,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
-        <h1 class="slds-text-heading--large">DateTime</h1>
-        <div class="slds-text-body--regular"><p>The javascript <code>Date</code> as string. Type represents date and time as the ISO Date string.</p>
+        <h1 class="slds-text-heading--large">Float</h1>
+        <div class="slds-text-body--regular"><p>The <code>Float</code> scalar type represents signed double-precision fractional values as specified by <a href="https://en.wikipedia.org/wiki/IEEE_floating_point">IEEE 754</a>.</p>
 </div>
     </div>
 </section>
@@ -164,7 +169,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">DateTime</span></li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Float</span></li></ul></code>
     </div>
 </section>
 <section>
@@ -175,7 +180,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="recipe.doc.html" title="Recipe - ">Recipe<em>null</em></a><li></ul>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

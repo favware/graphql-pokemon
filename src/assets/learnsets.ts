@@ -2,7 +2,7 @@
 import { Pokemon } from '../typings/pokemon';
 import Collection from '@discordjs/collection';
 
-export const learnsets = new Collection<string, Pokemon.RecordStringArray>(
+const learnsets = new Collection<string, Pokemon.RecordStringArray>(
   [
     [ 'missingno', {
       blizzard: [ '5L1' ],

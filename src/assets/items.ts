@@ -1,7 +1,7 @@
 import { Pokemon } from '../typings/pokemon';
 import Collection from '@discordjs/collection';
 
-const pokemonItem = new Collection<string, Pokemon.Item>(
+const items = new Collection<string, Pokemon.Item>(
   [
     [
       'crucibellite',
@@ -3523,4 +3523,4 @@ const pokemonItem = new Collection<string, Pokemon.Item>(
   ]
 );
 
-export default pokemonItem;
+export default items;

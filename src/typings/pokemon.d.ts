@@ -59,7 +59,7 @@ export namespace Pokemon {
     evos?: string[];
     forme?: string;
     formeLetter?: string;
-    gender?: string;
+    gender?: 'M' | 'F' | 'N';
     genderRatio?: GenderRatio;
     heightm: number;
     num: number;
@@ -125,20 +125,19 @@ export namespace Pokemon {
     move: string;
   }
 
-  export interface DexDataset {
-    abilities?: string;
-    evos?: string;
-    flavors?: string;
-    genders?: string;
+  export interface DexDataset extends Exclude<DexEntry, 'evos' | 'prevo' | 'gender' | 'genderRatio'> {
+    preevolutions: DexEntry[];
+    evolutions: DexEntry[];
+    flavorText: Flavor[];
+    genderData: GenderRatio | 'none';
     sprite: string;
-    tier?: string;
+    shinySprite: string;
+    smogonTier: string | 'Undiscovered';
   }
 
-  export interface FlavorDataType extends DexDataset {
-    entries: {
-      game: string;
-      text: string;
-    }[];
+  export interface Flavor {
+    game: string;
+    text: string;
   }
 
   export interface Learnset {
@@ -168,4 +167,8 @@ export namespace Pokemon {
     version_id: string;
     flavor_text: string;
   }
+
+  export type GendersUnion = 'Female' | 'Male' | 'None' | 'Unknown';
 }
+
+export default Pokemon;

@@ -40,19 +40,19 @@
                 Boolean
             </a>
         </li>
-        <li  title="DateTime">
-            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                DateTime
-            </a>
-        </li>
-        <li  title="ID">
-            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ID
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
             </a>
         </li>
         <li  title="Int">
             <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Int
+            </a>
+        </li>
+        <li  title="JSONObject">
+            <a href="jsonobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JSONObject
             </a>
         </li>
         <li  title="String">
@@ -80,9 +80,14 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li  title="Recipe">
-            <a href="recipe.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Recipe
+        <li  title="DetailsEntry">
+            <a href="detailsentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DetailsEntry
+            </a>
+        </li>
+        <li  title="DexEntry">
+            <a href="dexentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DexEntry
             </a>
         </li>
         <li  title="__Directive">
@@ -163,7 +168,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Query</span> {</li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">recipe</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="recipe.doc.html">Recipe</a>! </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>skip</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>take</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">recipes</span>(<span class="meta">skip</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">take</span>: <a class="support type" href="int.doc.html">Int</a>): [<a class="support type" href="recipe.doc.html">Recipe</a>!]! </span></li><li></li><li><span class="tab"><span class="meta">hello</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Query</span> {</li><li></li><li><span class="tab"><span class="comment line">#   Gets details on a single pokemon based on species name.You can supply skip and </span></span></li><li><span class="tab"><span class="comment line">#   take to limit the amount of flavour texts to return and reverse to show latest </span></span></li><li><span class="tab"><span class="comment line">#   games on top.Reversal is applied before pagination!</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>skip</strong>: Sets the offset where to start</span></span></li><li><span class="tab"><span class="comment line">#   <strong>take</strong>: Return only this many results from offset</span></span></li><li><span class="tab"><span class="comment line">#   <strong>reverse</strong>: Reverses the dataset before paginating</span></span></li><li><span class="tab"><span class="comment line">#   <strong>pokemon</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">getPokemonDetails</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">skip</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">take</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">reverse</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">pokemon</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="jsonobject.doc.html">JSONObject</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Gets details on a single pokemon based on a fuzzy search.You can supply skip and </span></span></li><li><span class="tab"><span class="comment line">#   take to limit the amount of flavour texts to return and reverse to show latest </span></span></li><li><span class="tab"><span class="comment line">#   games on top.Reversal is applied before pagination!</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>skip</strong>: Sets the offset where to start</span></span></li><li><span class="tab"><span class="comment line">#   <strong>take</strong>: Return only this many results from offset</span></span></li><li><span class="tab"><span class="comment line">#   <strong>reverse</strong>: Reverses the dataset before paginating</span></span></li><li><span class="tab"><span class="comment line">#   <strong>pokemon</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">getPokemonDetailsByFuzzy</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">skip</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">take</span>: <a class="support type" href="int.doc.html">Int</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">reverse</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">pokemon</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): <a class="support type" href="jsonobject.doc.html">JSONObject</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Gets dex entries for pokemon based on a fuzzy searchYou can supply a skip and </span></span></li><li><span class="tab"><span class="comment line">#   take to paginate the results and reverse to show the results least to most well </span></span></li><li><span class="tab"><span class="comment line">#   matchesReversal is applied before pagination!</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>skip</strong>: Sets the offset where to start</span></span></li><li><span class="tab"><span class="comment line">#   <strong>take</strong>: Return only this many results from offset</span></span></li><li><span class="tab"><span class="comment line">#   <strong>reverse</strong>: Reverses the dataset before paginating</span></span></li><li><span class="tab"><span class="comment line">#   <strong>pokemon</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">getDexEntries</span>(<span class="meta">skip</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">take</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">reverse</span>: <a class="support type" href="boolean.doc.html">Boolean</a>, <span class="meta">pokemon</span>: <a class="support type" href="string.doc.html">String</a>!): [<a class="support type" href="jsonobject.doc.html">JSONObject</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Gets the dex entry for a pokemon based on their species name</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>pokemon</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">getDexEntryBySpeciesName</span>(<span class="meta">pokemon</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="jsonobject.doc.html">JSONObject</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Gets the dex entry for a pokemon based on their dex number</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>num</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">getDexEntryByDexNumber</span>(<span class="meta">num</span>: <a class="support type" href="float.doc.html">Float</a>!): <a class="support type" href="jsonobject.doc.html">JSONObject</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

@@ -1,5 +1,5 @@
 import Collection from '@discordjs/collection';
-import Fuse, { FuseOptions } from 'fuse.js';
+import Fuse, {FuseOptions} from 'fuse.js';
 
 export default class FuzzySearch<K extends string, V> {
   private readonly collectionArray: ReadonlyArray<V>;

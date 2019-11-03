@@ -23,6 +23,16 @@
 [![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://www.patreon.com/bePatron?u=9336537)](https://www.patreon.com/bePatron?u=9336537)
 [![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)](https://www.patreon.com/bePatron?u=9336537)
 
+**Typings**
+
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@favware/website-api?label=website-api%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/website-api)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@favware/website-api?label=website-api%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/website-api)
+[![npm](https://img.shields.io/npm/v/@favware/website-api?color=crimson&label=website-api%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/website-api)
+
+---
+
+
+
 ## Buy me a donut
 
 This project is open source and always will be, even if I don't get donations. That said, I know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!

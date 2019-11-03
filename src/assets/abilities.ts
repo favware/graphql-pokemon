@@ -2,7 +2,7 @@
 import { Pokemon } from '../typings/pokemon';
 import Collection from '@discordjs/collection';
 
-export const ABILITIES = new Collection<string, Pokemon.Ability>(
+const abilities = new Collection<string, Pokemon.Ability>(
   [
     [ 'persistent',
       {
@@ -2028,4 +2028,4 @@ export const ABILITIES = new Collection<string, Pokemon.Ability>(
   ]
 );
 
-export default ABILITIES;
+export default abilities;

@@ -2,7 +2,7 @@
 import { Pokemon } from '../typings/pokemon';
 import Collection from '@discordjs/collection';
 
-const pokemonMoves = new Collection<string, Pokemon.Move>(
+const moves = new Collection<string, Pokemon.Move>(
   [
     [
       'paleowave',
@@ -11993,4 +11993,4 @@ const pokemonMoves = new Collection<string, Pokemon.Move>(
   ]
 );
 
-export default pokemonMoves;
+export default moves;

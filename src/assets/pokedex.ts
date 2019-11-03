@@ -1,7 +1,7 @@
 import Collection from '@discordjs/collection';
 import { Pokemon } from '../typings/pokemon';
 
-export const pokedex = new Collection<string, Pokemon.DexEntry>(
+const pokedex = new Collection<string, Pokemon.DexEntry>(
   [
     [
       'bulbasaur',
@@ -12295,9 +12295,9 @@ export const pokedex = new Collection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'basculin-blue-striped',
+      'basculin-bluestriped',
       {
-        species: 'basculin-blue-striped',
+        species: 'basculin-bluestriped',
         num: 550,
         types: [ 'Water' ],
         baseStats: {
@@ -16388,9 +16388,9 @@ export const pokedex = new Collection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'oricorio-pom-pom',
+      'oricorio-pompom',
       {
-        species: 'oricorio-pom-pom',
+        species: 'oricorio-pompom',
         num: 741,
         types: [ 'Electric', 'Flying' ],
         genderRatio: { M: 0.25, F: 0.75 },
@@ -19539,3 +19539,5 @@ export const pokedex = new Collection<string, Pokemon.DexEntry>(
     ]
   ]
 );
+
+export default pokedex;

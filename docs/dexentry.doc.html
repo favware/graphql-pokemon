@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Recipe</title>
+    <title>DexEntry</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -40,19 +40,19 @@
                 Boolean
             </a>
         </li>
-        <li  title="DateTime">
-            <a href="datetime.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                DateTime
-            </a>
-        </li>
-        <li  title="ID">
-            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                ID
+        <li  title="Float">
+            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Float
             </a>
         </li>
         <li  title="Int">
             <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Int
+            </a>
+        </li>
+        <li  title="JSONObject">
+            <a href="jsonobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                JSONObject
             </a>
         </li>
         <li  title="String">
@@ -80,9 +80,14 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li class="slds-is-active" title="Recipe">
-            <a href="recipe.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Recipe
+        <li  title="DetailsEntry">
+            <a href="detailsentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DetailsEntry
+            </a>
+        </li>
+        <li class="slds-is-active" title="DexEntry">
+            <a href="dexentry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DexEntry
             </a>
         </li>
         <li  title="__Directive">
@@ -151,8 +156,9 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Recipe</h1>
-        <div class="slds-text-body--regular"></div>
+        <h1 class="slds-text-heading--large">DexEntry</h1>
+        <div class="slds-text-body--regular"><p>A single Pokedex entry</p>
+</div>
     </div>
 </section>
 <section>
@@ -163,7 +169,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Recipe</span> {</li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">creationDate</span>: <a class="support type" href="datetime.doc.html">DateTime</a>! </span></li><li></li><li><span class="tab"><span class="meta">ingredients</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">DexEntry</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The dex number for a pokemon</span></span></li><li><span class="tab"><span class="meta">num</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The species name for a pokemon</span></span></li><li><span class="tab"><span class="meta">species</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The types for a pokemon</span></span></li><li><span class="tab"><span class="meta">types</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The abilities for a pokemon</span></span></li><li><span class="tab"><span class="meta">abilities</span>: <a class="support type" href="jsonobject.doc.html">JSONObject</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Base stats for a pokemon</span></span></li><li><span class="tab"><span class="meta">baseStats</span>: <a class="support type" href="jsonobject.doc.html">JSONObject</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The colour of a pokemon as listed in the Pokedex</span></span></li><li><span class="tab"><span class="meta">color</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The egg groups a pokemon is in</span></span></li><li><span class="tab"><span class="meta">eggGroups</span>: [<a class="support type" href="string.doc.html">String</a>!] </span></li><li></li><li><span class="tab"><span class="comment line">#   The evolution level, or special method, for a pokemon</span></span></li><li><span class="tab"><span class="meta">evolutionLevel</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The raw evos of a pokemon </span></span></li><li><span class="tab"><span class="meta">evos</span>: [<a class="support type" href="string.doc.html">String</a>!] </span></li><li></li><li><span class="tab"><span class="comment line">#   The raw prevo of a pokemon </span></span></li><li><span class="tab"><span class="meta">prevo</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The form identifier of a pokemon </span></span></li><li><span class="tab"><span class="meta">forme</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The single letter identifier of the form</span></span></li><li><span class="tab"><span class="meta">formeLetter</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The gender of a pokemon, if it can only have 1 gender </span></span></li><li><span class="tab"><span class="meta">gender</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The gender ratio of a pokemon, if it can be multiple genders</span></span></li><li><span class="tab"><span class="meta">genderRatio</span>: <a class="support type" href="jsonobject.doc.html">JSONObject</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The height of a pokemon in meters</span></span></li><li><span class="tab"><span class="meta">height</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The weight of a pokemon in kilograms</span></span></li><li><span class="tab"><span class="meta">weight</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Base form if this entry describes an alternate form</span></span></li><li><span class="tab"><span class="meta">baseForme</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Base species if this entry describes a special form</span></span></li><li><span class="tab"><span class="meta">baseSpecies</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Any other forms for a pokemon</span></span></li><li><span class="tab"><span class="meta">otherFormes</span>: [<a class="support type" href="string.doc.html">String</a>!] </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -174,7 +180,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
+        <div class="require-by anyone">This element is not required by anyone</div>
     </div>
 </section>
 <footer>

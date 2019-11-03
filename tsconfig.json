@@ -1,19 +1,21 @@
 {
   "extends": "@favware/ts-config",
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "lib": [
-      "es2016",
-      "esnext.asynciterable"
-    ],
-    "outDir": "dist",
+    "outDir": "build",
     "rootDir": "src",
     "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "strictPropertyInitialization": false,
     "resolveJsonModule": true
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.js",
+    "typings"
   ]
 }

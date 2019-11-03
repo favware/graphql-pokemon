@@ -1,7 +1,7 @@
 import { Pokemon } from '../typings/pokemon';
 import Collection from '@discordjs/collection';
 
-export const TYPE_CHART = new Collection<keyof Pokemon.Types, Pokemon.TypeMatchups>(
+const typechart = new Collection<keyof Pokemon.Types, Pokemon.TypeMatchups>(
   [
     [
       'bug', {
@@ -764,4 +764,4 @@ export const TYPE_CHART = new Collection<keyof Pokemon.Types, Pokemon.TypeMatchu
   ]
 );
 
-export default TYPE_CHART;
+export default typechart;

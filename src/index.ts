@@ -27,3 +27,4 @@ if (!process.env.FIREBASE_CONFIG) {
 }
 
 export const api = functions.https.onRequest(app);
+export * from './client';

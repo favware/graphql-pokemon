@@ -1,7 +1,7 @@
 {
   "extends": "@favware/ts-config",
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "dist",
     "rootDir": "src",
     "target": "es2017",
     "module": "commonjs",

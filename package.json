@@ -1,21 +1,20 @@
 {
   "name": "@favware/website-api",
-  "typings": "dist/client.d.ts",
   "version": "1.0.0",
-  "description": "API for favware.tech",
+  "description": "Expansive Pokemon GraphQL API",
   "author": "@favware",
   "license": "MIT",
-  "main": "dist/index.flow.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "homepage": "https://favware.tech/",
   "scripts": {
+    "clean": "rm -rf build dist tsconfig.tsbuildinfo",
     "lint": "eslint src --ext ts --fix",
     "test": "jest",
     "build": "tsc",
     "watch": "tsc -w",
     "dev": "nodemon --exec ts-node src/index.ts",
     "start": "ts-node src/index.ts",
-    "typings": "graphql-codegen",
     "serve": "firebase serve --only functions",
     "serve:docs": "serve docs",
     "deploy": "firebase deploy --only functions:api",
@@ -24,7 +23,7 @@
     "cz": "git-cz",
     "up": "yarn upgrade-interactive --latest",
     "version": "standard-version",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "./scripts/predeploy.sh",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "scripts:validateNoOnly": "yarn scripts:runner scripts/validateNoOnly",
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull"
@@ -71,7 +70,9 @@
     "typescript": "^3.6.4"
   },
   "files": [
-    "functions/lib"
+    "dist/index.d.ts",
+    "dist/client.d.ts",
+    "dist/client.flow.js"
   ],
   "engines": {
     "node": "10",
@@ -113,9 +114,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "graphdoc": {
-    "endpoint": "http://localhost:4000/graphql",
-    "output": "./docs"
   }
 }

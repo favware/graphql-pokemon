@@ -1,9 +1,9 @@
 # LOGIN:  docker login
-# BUILD:  docker build . --tag gcr.io/favware-graphql/graphql-pokemon
-# RUN:    docker container run -d --expose 8080 -p 8080:8080 -it gcr.io/favware-graphql/graphql-pokemon:latest
-# DEPLOY: docker push gcr.io/favware-graphql/graphql-pokemon
-# DEPLOY: gcloud beta run deploy --image gcr.io/favware-graphql/graphql-pokemon
-# REMOVE: docker rmi -f favware/graphql-pokemon
+# BUILD:  docker build -t gcr.io/data-sunlight-146313/graphql-pokemon .
+# RUN:    docker container run -d --expose 8080 -p 8080:8080 -it gcr.io/data-sunlight-146313/graphql-pokemon:latest
+# DEPLOY: docker push gcr.io/data-sunlight-146313/graphql-pokemon
+# DEPLOY: gcloud beta run deploy --image gcr.io/data-sunlight-146313/graphql-pokemon
+# REMOVE: docker rmi -f gcr.io/data-sunlight-146313/graphql-pokemo
 
 FROM node:10-alpine
 

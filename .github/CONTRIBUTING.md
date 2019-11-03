@@ -12,8 +12,7 @@ To get ready to work on the codebase, please do the following:
 1. Fork & clone the repository, and make sure you're on the **master** branch
 2. Run `yarn install`
 3. Code your heart out!
-4. Ensure your changes compile and run by testing them using GraphiQL. You can start a dev server with `yarn dev`
-  - Ignore the warning about `FIREBASE_CONFIG` and `GCLOUD_PROJECT` environment variables not being set up
+4. Ensure your changes compile and run by testing them using GraphQL Playground. You can start a dev server with `yarn dev`
 4. If you have any substantial code changes make sure these are covered in unit tests
 5. Run `yarn lint && yarn test` to run ESLint and ensure all tests pass
 6. Submit a pull request

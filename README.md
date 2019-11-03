@@ -1,11 +1,11 @@
 <div align="center">
   <p>
-  <a href="https://favware.tech/ribbon"><img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-project-icons/favware-graphql.png" height="200" alt="logo"/></a>
+  <a href="https://favware.tech/ribbon"><img style="height: 200px" src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-project-icons/favware-graphql.png" height="200" alt="logo"/></a>
   </p>
 
   <p>
-<h1> Favware </h1>
-<h3> GraphQL API files for <a href="https://favware.tech">my website</a></h3>
+<h1> GraphQL-Pokemon </h1>
+<h3> Expansive Pokemon GraphQL API!</a></h3>
   </p>
 
 </div>
@@ -25,23 +25,71 @@
 
 **Typings**
 
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@favware/website-api?label=website-api%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/website-api)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@favware/website-api?label=website-api%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/website-api)
-[![npm](https://img.shields.io/npm/v/@favware/website-api?color=crimson&label=website-api%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/website-api)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@favware/graphql-pokemon?label=graphql-pokemon%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/graphql-pokemon)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@favware/graphql-pokemon?label=graphql-pokemon%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/graphql-pokemon)
+[![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=graphql-pokemon%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
 
 ---
 
+__***Query for Pokemon data using GraphQL***__
 
+**Key Features**
+- Fully generated client-side type information published to npm under `@favware/graphql-pokemon`
+  - Has TypeScript and FlowJS Typings
+- Provides information about not just Pokemon. See supported queries below.
 
-## Buy me a donut
+# Install
 
-This project is open source and always will be, even if I don't get donations. That said, I know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
+Install client side typings with [yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com/):
 
-I accept donations through PayPal, BitCoin, Ethereum and LiteCoin. You can use the buttons below to donate through your method of choice
+```sh
+yarn add @favware/graphql-pokemon
 
-|Donate With|QR|Address|
-|:---:|:---:|:---:|
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34"><img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/paypaldonate.png"></a>|<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34"><img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/paypalqr.png" width="128"></a>|[Donate with PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)|
-<img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/bitcoindonate.png">|<img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/bitcoinqr.png" width="128">|<a href="bitcoin:1E643TNif2MTh75rugepmXuq35Tck4TnE5?amount=0.01&label=favware%27%20Ribbon%20Discord%20Bot">1E643TNif2MTh75rugepmXuq35Tck4TnE5</a>|
-<img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/ethereumdonate.png">|<img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/ethereumqr.png" width="128">|<a href="ethereum:0xF653F666903cd8739030D2721bF01095896F5D6E?amount=0.01&label=favware%27%20Ribbon%20Discord%20Bot">0xF653F666903cd8739030D2721bF01095896F5D6E</a>|
-<img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/litecoindonate.png">|<img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/ribbon/litecoinqr.png" width="128">|<a href="litecoin:LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6?amount=0.01&label=favware%27%20Ribbon%20Discord%20Bot">LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6</a>|
+# npm install @favware/graphql-pokemon
+```
+
+* * *
+
+# Usage
+
+```ts
+import { DetailsEntry, Query } from '@favware/graphql-pokemon';
+
+type fetchResponse<T> = {
+  data: Record<keyof Query, T>
+}
+
+fetch('https://eu-west1-favware-graphql.cloudfunctions.net/api', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    query: '{getPokemonDetails(pokemon: "pikachu" skip: 0 take: 4 reverse: true)}'
+  })
+})
+.then(res => res.json() as fetchResponse<DetailsEntry>)
+.then(json => console.log(json.data))
+```
+
+## Supported Queries
+
+### getPokemonDetails
+
+Gets details on a single pokemon based on species name.You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.Reversal is applied before pagination
+
+### getPokemonDetailsByFuzzy
+
+Gets details on a single pokemon based on a fuzzy search.You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.Reversal is applied before pagination!
+
+### getDexEntries
+
+Gets dex entries for pokemon based on a fuzzy searchYou can supply a skip and take to paginate the results and reverse to show the results least to most well matchesReversal is applied before pagination!
+
+### getDexEntryBySpeciesName
+
+Gets the dex entry for a pokemon based on their species name
+
+###  getDexEntryByDexNumber
+
+Gets the dex entry for a pokemon based on their dex number

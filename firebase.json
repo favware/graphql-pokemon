@@ -1,6 +1,26 @@
 {
   "functions": {
-    "predeploy": "yarn build ",
+    "predeploy": "yarn firebase:preparehost && yarn build ",
     "source": "./"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "scripts",
+      "**/*.yml",
+      "**/*.json",
+      "**/*.iml",
+      "**/*.tsbuildinfo",
+      "**/*.lock"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "api"
+      }
+    ]
   }
 }

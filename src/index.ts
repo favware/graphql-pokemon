@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import {https} from 'firebase-functions';
+import * as functions from 'firebase-functions';
 import gqlServer from './graphql/server';
 
 // If we're not in the Cloud Functions environment, spin up a Node server
@@ -12,5 +12,5 @@ import gqlServer from './graphql/server';
 
 const server = gqlServer();
 
-export const api = https.onRequest(server);
+export const api = functions.region('europe-west1').https.onRequest(server);
 export * from './client';

@@ -29,3 +29,4 @@ coverage/
 # Transpiled files
 dist/
 build/
+.firebase/

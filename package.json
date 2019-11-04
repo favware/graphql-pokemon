@@ -12,7 +12,7 @@
     "test": "jest",
     "build": "tsc",
     "watch": "tsc -w",
-    "dev": "nodemon --exec ts-node src/index.ts",
+    "dev": "nodemon dist/index.js",
     "commit": "git-cz",
     "cz": "git-cz",
     "up": "yarn upgrade-interactive --latest",

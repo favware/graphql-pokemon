@@ -25,4 +25,13 @@ export default class DetailsEntry extends DexEntry {
 
   @Field({description: 'The smogon tier a pokemon falls under'})
   smogonTier: string | 'none';
+
+  @Field(() => String, {description: 'Bulbapedia page for a pokemon'})
+  bulbapediaPage: string;
+
+  @Field(() => String, { description: 'Serebii page for a pokemon'})
+  serebiiPage: string;
+
+  @Field(() => String, { description: 'Smogon page for a pokemon'})
+  smogonPage: string;
 }

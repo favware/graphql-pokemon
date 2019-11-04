@@ -17128,6 +17128,7 @@ const pokedex = new Collection<string, Pokemon.DexEntry>(
       'type null',
       {
         species: 'type null',
+        baseForme: 'Type: Null',
         num: 772,
         types: [ 'Normal' ],
         gender: 'N',

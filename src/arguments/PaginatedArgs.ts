@@ -2,7 +2,7 @@ import {IsBoolean, Max, Min} from 'class-validator';
 import {ArgsType, Field, Int} from 'type-graphql';
 
 @ArgsType()
-export default class PokemonPaginatedArgs {
+export default class PaginatedArgs {
   @Field(() => Int, {defaultValue: 0, description: 'Sets the offset where to start'})
   @Min(0)
   skip: number;
@@ -16,6 +16,6 @@ export default class PokemonPaginatedArgs {
   @IsBoolean()
   reverse = false;
 
-  @Field(() => String, { description: 'The pokemon to search for' })
-  pokemon: string;
+  @Field(() => String, { description: 'The data to look up' })
+  query: string;
 }

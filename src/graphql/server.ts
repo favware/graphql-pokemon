@@ -2,10 +2,11 @@ import express from 'express';
 import {ApolloServer} from 'apollo-server-express';
 import {buildSchemaSync} from 'type-graphql';
 import DexResolver from '../resolvers/DexResolver';
+import AbilityResolver from '../resolvers/AbilityResolver';
 
 const gqlServer = () => {
   const app = express();
-  const schema = buildSchemaSync({resolvers: [ DexResolver ]});
+  const schema = buildSchemaSync({resolvers: [ DexResolver, AbilityResolver ]});
 
   const apolloServer = new ApolloServer({
     schema,

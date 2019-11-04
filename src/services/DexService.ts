@@ -6,10 +6,12 @@ import Pokemon from '../typings/pokemon';
 import {SimpleFuseOptions} from '../typings/common';
 import DetailsEntry from '../structures/DetailsEntry';
 import DexEntry from '../structures/DexEntry';
-import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
+import PaginatedArgs from '../arguments/PaginatedArgs';
 import {GraphQLJSONObject} from 'graphql-type-json';
 
 export default class DexService {
+  private replaceSpacesRegex = new RegExp(/ /, 'g');
+
   public findByNum(@Arg('num') num: number) {
     return pokedex.find(poke => poke.num === num);
   }
@@ -19,19 +21,19 @@ export default class DexService {
   }
 
   public findByFuzzy(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    if (pokemon.split(' ')[0] === 'mega') {
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
+    query, skip, take, reverse,
+  }: PaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    if (query.split(' ')[0] === 'mega') {
+      query = `${query.substring(query.split(' ')[0].length + 1)}-mega`;
     }
 
     const queryResults: DexEntry[] = [];
     const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], {threshold: 0.3, ...fuseOptions});
 
-    let fuzzyResult = fuzzyPokemon.run(pokemon);
+    let fuzzyResult = fuzzyPokemon.run(query);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], {threshold: 0.4}).run(pokemon);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], {threshold: 0.4}).run(query);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyPokemon.run(fuzzyAliasResult[0].name);
@@ -39,7 +41,7 @@ export default class DexService {
     }
 
     if (!fuzzyResult.length) {
-      throw new Error(`No pokemon found ${pokemon}`);
+      throw new Error(`No pokemon found ${query}`);
     }
 
     if (reverse) {
@@ -76,13 +78,13 @@ export default class DexService {
     return queryResults;
   }
 
-  public async fetchPokemonDetails(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs, parsingPokemon = '') {
-    const basePokemonData = this.findBySpecies(pokemon);
+  public async findBySpeciesWithDetails(@Args() {
+    query, skip, take, reverse,
+  }: PaginatedArgs, parsingPokemon = '') {
+    const basePokemonData = this.findBySpecies(query);
 
     if (!basePokemonData) {
-      throw new Error(`No pokemon found for ${pokemon}`);
+      throw new Error(`No pokemon found for ${query}`);
     }
 
     const [ flavorsImport, tiersImport ] = await Promise.all([
@@ -112,15 +114,18 @@ export default class DexService {
           ? basePokemonData.genderRatio
           : {M: 0.5, F: 0.5}
       );
-    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${basePokemonData.species.replace(/ /g, '').toLowerCase()}`;
-    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${basePokemonData.species.replace(/ /g, '').toLowerCase()}`;
-    pokemonData.smogonTier = tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
+    pokemonData.smogonTier = tiers[query.replace(/([-% ])/gm, '')] || 'Undiscovered';
     pokemonData.height = basePokemonData.heightm;
     pokemonData.weight = basePokemonData.weightkg;
     pokemonData.baseForme = basePokemonData.baseForme;
     pokemonData.baseSpecies = basePokemonData.baseSpecies;
     pokemonData.otherFormes = basePokemonData.otherFormes;
     pokemonData.flavorTexts = [];
+    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${basePokemonData.species.replace(/ /g, '').toLowerCase()}`;
+    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${basePokemonData.species.replace(/ /g, '').toLowerCase()}`;
+    pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
+    pokemonData.serebiiPage = basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '';
+    pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${basePokemonData.species.replace(this.replaceSpacesRegex, '-')}` : '';
 
     if (basePokemonData.num >= 0) {
       if (basePokemonData.forme) {
@@ -145,8 +150,8 @@ export default class DexService {
     if (basePokemonData.prevo && basePokemonData.prevo !== parsingPokemon) {
       const prevoPokemon = this.findBySpecies(basePokemonData.prevo);
       if (prevoPokemon) {
-        preevolutionChain.push(this.fetchPokemonDetails({
-          pokemon: prevoPokemon.species,
+        preevolutionChain.push(this.findBySpeciesWithDetails({
+          query: prevoPokemon.species,
           skip,
           take,
           reverse,
@@ -157,8 +162,8 @@ export default class DexService {
     if (basePokemonData.evos && basePokemonData.evos[0] !== parsingPokemon) {
       const evoPokemon = this.findBySpecies(basePokemonData.evos[0]);
       if (evoPokemon) {
-        evolutionChain.push(this.fetchPokemonDetails({
-          pokemon: evoPokemon.species,
+        evolutionChain.push(this.findBySpeciesWithDetails({
+          query: evoPokemon.species,
           skip,
           take,
           reverse,
@@ -198,5 +203,13 @@ export default class DexService {
     }
 
     return parsedGenderRatios;
+  }
+
+  private parseSpeciesForBulbapedia(pokemonName: string, baseForme?: string) {
+    if (baseForme) {
+      pokemonName = baseForme.replace(this.replaceSpacesRegex, '_');
+    }
+
+    return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;
   }
 }

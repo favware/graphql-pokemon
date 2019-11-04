@@ -1,7 +1,7 @@
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 import DexService from '../services/DexService';
 import DetailsEntry from '../structures/DetailsEntry';
-import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
+import PaginatedArgs from '../arguments/PaginatedArgs';
 import { GraphQLJSONObject } from 'graphql-type-json';
 
 @Resolver(DetailsEntry)
@@ -20,13 +20,13 @@ export default class DexResolver {
     ].join(''),
   })
   async getPokemonDetails(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs) {
-    const detailsEntry = this.dexService.fetchPokemonDetails({
-      pokemon, skip, take, reverse,
+    query, skip, take, reverse,
+  }: PaginatedArgs) {
+    const detailsEntry = this.dexService.findBySpeciesWithDetails({
+      query, skip, take, reverse,
     });
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${pokemon}`);
+      throw new Error(`Failed to get data for Pokemon: ${query}`);
     }
 
     return detailsEntry;
@@ -40,25 +40,25 @@ export default class DexResolver {
     ].join(''),
   })
   async getPokemonDetailsByFuzzy(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs) {
-    const entry = this.dexService.findBySpecies(pokemon);
+    query, skip, take, reverse,
+  }: PaginatedArgs) {
+    const entry = this.dexService.findBySpecies(query);
 
     if (!entry) {
       const fuzzyEntry = this.dexService.findByFuzzy({
-        pokemon, skip, take, reverse,
+        query, skip, take, reverse,
       });
       if (fuzzyEntry === undefined) {
-        throw new Error(`Failed to get data for Pokemon: ${pokemon}`);
+        throw new Error(`Failed to get data for Pokemon: ${query}`);
       }
-      pokemon = fuzzyEntry[0].species;
+      query = fuzzyEntry[0].species;
     }
 
-    const detailsEntry = this.dexService.fetchPokemonDetails({
-      pokemon, skip, take, reverse,
+    const detailsEntry = this.dexService.findBySpeciesWithDetails({
+      query, skip, take, reverse,
     });
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${pokemon}`);
+      throw new Error(`Failed to get data for Pokemon: ${query}`);
     }
 
     return detailsEntry;
@@ -72,13 +72,13 @@ export default class DexResolver {
     ].join(''),
   })
   getDexEntries(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs) {
+    query, skip, take, reverse,
+  }: PaginatedArgs) {
     const dexEntries = this.dexService.findByFuzzy({
-      pokemon, skip, take, reverse,
+      query, skip, take, reverse,
     });
     if (dexEntries === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${pokemon}`);
+      throw new Error(`Failed to get data for Pokemon: ${query}`);
     }
 
     return dexEntries;

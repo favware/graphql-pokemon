@@ -1,13 +1,13 @@
-import {Arg, Args} from 'type-graphql';
+import { Arg, Args } from 'type-graphql';
 import FuzzySearch from '../utils/FuzzySearch';
 import pokedex from '../assets/pokedex';
-import {pokedexAliases} from '../assets/aliases';
+import { pokedexAliases } from '../assets/aliases';
 import Pokemon from '../typings/pokemon';
-import {SimpleFuseOptions} from '../typings/common';
+import { SimpleFuseOptions } from '../typings/common';
 import DetailsEntry from '../structures/DetailsEntry';
 import DexEntry from '../structures/DexEntry';
 import PaginatedArgs from '../arguments/PaginatedArgs';
-import {GraphQLJSONObject} from 'graphql-type-json';
+import { GraphQLJSONObject } from 'graphql-type-json';
 
 export default class DexService {
   private replaceSpacesRegex = new RegExp(/ /, 'g');
@@ -28,12 +28,12 @@ export default class DexService {
     }
 
     const queryResults: DexEntry[] = [];
-    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], {threshold: 0.3, ...fuseOptions});
+    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyPokemon.run(query);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], {threshold: 0.4}).run(query);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).run(query);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyPokemon.run(fuzzyAliasResult[0].name);
@@ -92,8 +92,8 @@ export default class DexService {
       import('../assets/formats.json')
     ]);
 
-    const {default: flavors} = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
-    const {default: tiers} = tiersImport as { default: Record<string, string> };
+    const { default: flavors } = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
+    const { default: tiers } = tiersImport as { default: Record<string, string> };
 
     const pokemonData = new DetailsEntry();
     const evolutionChain: Promise<DetailsEntry>[] = [];
@@ -112,7 +112,7 @@ export default class DexService {
       : this.parseGenderRatio(
         basePokemonData.genderRatio
           ? basePokemonData.genderRatio
-          : {M: 0.5, F: 0.5}
+          : { M: 0.5, F: 0.5 }
       );
     pokemonData.smogonTier = tiers[query.replace(/([-% ])/gm, '')] || 'Undiscovered';
     pokemonData.height = basePokemonData.heightm;
@@ -131,12 +131,12 @@ export default class DexService {
       if (basePokemonData.forme) {
         const formFlavors = flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
         for (const formFlavor of formFlavors) {
-          pokemonData.flavorTexts.push({game: formFlavor.version_id, text: formFlavor.flavor_text});
+          pokemonData.flavorTexts.push({ game: formFlavor.version_id, text: formFlavor.flavor_text });
         }
       } else {
         const baseFlavors = flavors[basePokemonData.num];
         for (const baseFlavor of baseFlavors) {
-          pokemonData.flavorTexts.push({game: baseFlavor.version_id, text: baseFlavor.flavor_text});
+          pokemonData.flavorTexts.push({ game: baseFlavor.version_id, text: baseFlavor.flavor_text });
         }
       }
     }

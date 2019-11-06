@@ -1,7 +1,7 @@
-import {Arg, Args, Query, Resolver} from 'type-graphql';
+import { Arg, Args, Query, Resolver } from 'type-graphql';
 import AbilityEntry from '../structures/AbilityEntry';
 import AbilityService from '../services/AbilityService';
-import {GraphQLJSONObject} from 'graphql-type-json';
+import { GraphQLJSONObject } from 'graphql-type-json';
 import PaginatedArgs from '../arguments/PaginatedArgs';
 
 @Resolver(AbilityEntry)
@@ -29,14 +29,14 @@ export default class AbilityResolver {
         query, skip, take, reverse,
       });
       if (fuzzyEntry === undefined) {
-        throw new Error(`Failed to get data for Pokemon: ${query}`);
+        throw new Error(`Failed to get data for ability: ${query}`);
       }
       query = fuzzyEntry[0].name;
     }
 
     const detailsEntry = this.abilityService.findByNameWithDetails(query);
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${query}`);
+      throw new Error(`Failed to get data for ability: ${query}`);
     }
 
     return detailsEntry;
@@ -51,7 +51,7 @@ export default class AbilityResolver {
     const entry = this.abilityService.findByNameWithDetails(ability);
 
     if (entry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${ability}`);
+      throw new Error(`Failed to get data for ability: ${ability}`);
     }
 
     return entry;
@@ -78,7 +78,7 @@ export default class AbilityResolver {
     return abilityEntries;
   }
 
-  @Query(() => GraphQLJSONObject, {description: 'Gets details on a single ability based on name.'})
+  @Query(() => GraphQLJSONObject, { description: 'Gets the entry of a single ability by name.' })
   getAbilityByName(@Arg('name') name: string) {
     const abilityEntry = this.abilityService.findByName(name);
 

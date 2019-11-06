@@ -1,12 +1,12 @@
-import {Arg, Args} from 'type-graphql';
+import { Arg, Args } from 'type-graphql';
 import abilities from '../assets/abilities';
 import PaginatedArgs from '../arguments/PaginatedArgs';
-import {GraphQLJSONObject} from 'graphql-type-json';
-import {SimpleFuseOptions} from '../typings/common';
+import { GraphQLJSONObject } from 'graphql-type-json';
+import { SimpleFuseOptions } from '../typings/common';
 import AbilityEntry from '../structures/AbilityEntry';
 import FuzzySearch from '../utils/FuzzySearch';
-import {abilityAliases} from '../assets/aliases';
-import {sentencecase} from '../utils/util';
+import { abilityAliases } from '../assets/aliases';
+import Util from '../utils/util';
 
 export default class AbilityService {
   public findByName(@Arg('name') name: string) {
@@ -16,12 +16,12 @@ export default class AbilityService {
   public findByFuzzy(@Args() {
     query, skip, take, reverse,
   }: PaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const fuzzyAbility = new FuzzySearch(abilities, [ 'name', 'num' ], {threshold: 0.3, ...fuseOptions});
+    const fuzzyAbility = new FuzzySearch(abilities, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyAbility.run(query);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(abilityAliases, [ 'alias', 'ability' ], {threshold: 0.4}).run(query);
+      const fuzzyAliasResult = new FuzzySearch(abilityAliases, [ 'alias', 'ability' ], { threshold: 0.4 }).run(query);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyAbility.run(fuzzyAliasResult[0].ability);
@@ -47,7 +47,7 @@ export default class AbilityService {
     abilityEntry.name = abilityData.name;
     abilityEntry.num = abilityData.num;
     abilityEntry.shortDesc = abilityData.shortDesc;
-    abilityEntry.bulbapediaPage = `https://bulbapedia.bulbagarden.net/wiki/${sentencecase(abilityData.name.replace(/ /g, '_'))}_(Ability)`;
+    abilityEntry.bulbapediaPage = `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleCase(abilityData.name).replace(/ /g, '_')}_(Ability)`;
     abilityEntry.serebiiPage = `https://www.serebii.net/abilitydex/${abilityData.name.replace(/ /g, '_').toLowerCase()}.shtml`;
     abilityEntry.smogonPage = `https://www.smogon.com/dex/sm/abilities/${abilityData.name.toLowerCase().replace(/ /g, '_')}`;
 

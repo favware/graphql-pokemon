@@ -57,7 +57,7 @@ export default class AbilityResolver {
     return entry;
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => [ GraphQLJSONObject ], {
     description: [
       'Gets entries of multiple ability based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',

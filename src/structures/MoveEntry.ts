@@ -26,7 +26,7 @@ export default class MoveEntry {
   category: Pokemon.MoveCategoriesUnion;
 
   @Field(() => Int, {description: 'The accuracy for a move'})
-  move: number;
+  accuracy: number;
 
   @Field(() => Int, {description: 'The priority for a move'})
   priority: number;

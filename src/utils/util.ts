@@ -38,6 +38,12 @@ export default class Util {
     return Util.replaceSymbols(str, '').toLowerCase();
   }
 
+  public static parseZCrystal(str: string | undefined): string | undefined {
+    if (str === undefined) return str;
+
+    return `${Util.toTitleCase(str.substr(0, str.length - 1))} Z`;
+  }
+
   /**
    * Removes common symbols and spaces from any string replacing it with something else
    * @since 1.0.0

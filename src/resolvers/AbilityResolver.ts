@@ -2,6 +2,8 @@ import {Arg, Args, Query, Resolver} from 'type-graphql';
 import AbilityEntry from '../structures/AbilityEntry';
 import AbilityService from '../services/AbilityService';
 import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
+import Util from '../utils/util';
+import { GraphQLJSONObject } from 'graphql-type-json';
 
 @Resolver(AbilityEntry)
 export default class AbilityResolver {
@@ -27,10 +29,10 @@ export default class AbilityResolver {
       const fuzzyEntry = this.abilityService.findByFuzzy({
         ability, skip, take, reverse,
       });
-      if (fuzzyEntry === undefined) {
+      if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for ability: ${ability}`);
       }
-      ability = fuzzyEntry[0].name;
+      ability = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
     }
 
     const detailsEntry = this.abilityService.findByNameWithDetails(ability);
@@ -56,9 +58,9 @@ export default class AbilityResolver {
     return entry;
   }
 
-  @Query(() => [ AbilityEntry ], {
+  @Query(() => [ GraphQLJSONObject ], {
     description: [
-      'Gets entries of multiple ability based on a fuzzy search.',
+      'Gets raw entries of multiple ability based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
     ].join(''),
@@ -77,7 +79,7 @@ export default class AbilityResolver {
     return abilityEntries;
   }
 
-  @Query(() => AbilityEntry, { description: 'Gets the entry of a single ability by name.' })
+  @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single ability by name.' })
   getAbilityByName(@Arg('name') name: string) {
     const abilityEntry = this.abilityService.findByName(name);
 

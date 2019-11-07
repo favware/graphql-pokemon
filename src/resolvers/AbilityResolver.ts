@@ -1,4 +1,4 @@
-import {Arg, Args, Query, Resolver} from 'type-graphql';
+import { Arg, Args, Query, Resolver } from 'type-graphql';
 import AbilityEntry from '../structures/AbilityEntry';
 import AbilityService from '../services/AbilityService';
 import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';

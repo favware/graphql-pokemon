@@ -1,6 +1,6 @@
-import {GraphQLScalarType} from 'graphql/type/definition';
-import {GraphQLError} from 'graphql/error';
-import {Kind} from 'graphql/language';
+import { GraphQLScalarType } from 'graphql/type/definition';
+import { GraphQLError } from 'graphql/error';
+import { Kind } from 'graphql/language';
 
 type RegularExpressionErrorMessageFn = (r: RegExp, v: unknown) => string;
 
@@ -66,6 +66,5 @@ export default class RegularExpression extends GraphQLScalarType {
   }
 }
 
-export const StringOrNumber = new RegularExpression('StringOrNumber', /^[a-zA-Z0-9]+$/);
 export const GenderUnion = new RegularExpression('GenderUnion', /^(?:Female|Male|None|Unknown)$/);
 export const MoveCategoryUnion = new RegularExpression('MoveCategoryUnion', /^(?:Physical|Special|Status)$/);

@@ -91,7 +91,7 @@ export namespace Pokemon {
     name: string;
     shortDesc: string;
     type: string;
-    basePower: StringOrNumber;
+    basePower: string;
     pp: number;
     category: MoveCategoriesUnion;
     accuracy: number;

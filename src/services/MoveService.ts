@@ -2,7 +2,7 @@ import { Arg, Args } from 'type-graphql';
 import moves from '../assets/moves';
 import { SimpleFuseOptions } from '../typings/common';
 import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
-import {GraphQLJSONObject} from 'graphql-type-json';
+import { GraphQLJSONObject } from 'graphql-type-json';
 import FuzzySearch from '../utils/FuzzySearch';
 import { moveAliases } from '../assets/aliases';
 import MoveEntry from '../structures/MoveEntry';
@@ -16,11 +16,11 @@ export default class MoveService {
   public findByFuzzy(@Args() {
     move, skip, take, reverse,
   }: MovePaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const fuzzyMove = new FuzzySearch(moves, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions});
+    const fuzzyMove = new FuzzySearch(moves, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyMove.run(move);
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(moveAliases, [ 'alias', 'move' ], {threshold: 0.4}).run(move);
+      const fuzzyAliasResult = new FuzzySearch(moveAliases, [ 'alias', 'move' ], { threshold: 0.4 }).run(move);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyMove.run(fuzzyAliasResult[0].move);

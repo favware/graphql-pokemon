@@ -9,7 +9,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 0,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Special',
         desc: 'Has a 20% chance to lower the target\'s Attack by 1 stage.',
         shortDesc: '20% chance to lower the target\'s Attack by 1.',
@@ -26,7 +26,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 0,
         accuracy: 95,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 50% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '50% chance to lower the target\'s Defense by 1.',
@@ -43,7 +43,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 0,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Does many things turn 1. Can\'t move turn 2.',
         name: 'Magikarp\'s Revenge',
@@ -59,7 +59,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 1,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -76,7 +76,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 2,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -93,7 +93,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 3,
         accuracy: 85,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Double Slap',
@@ -109,7 +109,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 4,
         accuracy: 85,
-        basePower: 18,
+        basePower: '18',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Comet Punch',
@@ -125,7 +125,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 5,
         accuracy: 85,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -142,7 +142,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 6,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Scatters coins.',
@@ -159,7 +159,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 7,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         desc: 'Has a 10% chance to burn the target.',
         shortDesc: '10% chance to burn the target.',
@@ -176,7 +176,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 8,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         desc: 'Has a 10% chance to freeze the target.',
         shortDesc: '10% chance to freeze the target.',
@@ -193,7 +193,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 9,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         desc: 'Has a 10% chance to paralyze the target.',
         shortDesc: '10% chance to paralyze the target.',
@@ -210,7 +210,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 10,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -227,7 +227,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 11,
         accuracy: 100,
-        basePower: 55,
+        basePower: '55',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -244,7 +244,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 12,
         accuracy: 30,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'OHKOs the target. Fails if user is a lower level.',
         name: 'Guillotine',
@@ -260,7 +260,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 13,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'Charges, then hits foe(s) turn 2. High crit ratio.',
         name: 'Razor Wind',
@@ -276,7 +276,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 14,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack by 2 stages.',
         shortDesc: 'Raises the user\'s Attack by 2.',
@@ -293,7 +293,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 15,
         accuracy: 95,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -310,7 +310,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 16,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'Damage doubles if the target is using Bounce, Fly, or Sky Drop.',
         shortDesc: 'Power doubles during Fly, Bounce, and Sky Drop.',
@@ -327,7 +327,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 17,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -344,7 +344,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 18,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Forces the target to switch to a random ally.',
         name: 'Whirlwind',
@@ -360,7 +360,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 19,
         accuracy: 95,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Flies up on first turn, then strikes the next turn.',
         name: 'Fly',
@@ -376,7 +376,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 20,
         accuracy: 85,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Bind',
@@ -392,7 +392,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 21,
         accuracy: 75,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -409,7 +409,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 22,
         accuracy: 100,
-        basePower: 45,
+        basePower: '45',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -426,7 +426,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 23,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         shortDesc: '30% chance to flinch the target.',
         name: 'Stomp',
@@ -442,7 +442,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 24,
         accuracy: 100,
-        basePower: 30,
+        basePower: '30',
         category: 'Physical',
         shortDesc: 'Hits 2 times in one turn.',
         name: 'Double Kick',
@@ -458,7 +458,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 25,
         accuracy: 75,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -475,7 +475,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 26,
         accuracy: 95,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'User is hurt by 50% of its max HP if it misses.',
         name: 'Jump Kick',
@@ -491,7 +491,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 27,
         accuracy: 85,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -508,7 +508,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 28,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s accuracy by 1 stage.',
         shortDesc: 'Lowers the target\'s accuracy by 1.',
@@ -525,7 +525,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 29,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -542,7 +542,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 30,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -559,7 +559,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 31,
         accuracy: 85,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Fury Attack',
@@ -575,7 +575,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 32,
         accuracy: 30,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'OHKOs the target. Fails if user is a lower level.',
         name: 'Horn Drill',
@@ -591,7 +591,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 33,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -608,7 +608,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 34,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         shortDesc: '30% chance to paralyze the target.',
         name: 'Body Slam',
@@ -624,7 +624,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 35,
         accuracy: 90,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Wrap',
@@ -640,7 +640,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 36,
         accuracy: 85,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Has 1/4 recoil.',
         name: 'Take Down',
@@ -656,7 +656,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 37,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Lasts 2-3 turns. Confuses the user afterwards.',
         name: 'Thrash',
@@ -672,7 +672,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 38,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Has 33% recoil.',
         name: 'Double-Edge',
@@ -688,7 +688,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 39,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Defense by 1 stage.',
         shortDesc: 'Lowers the foe(s) Defense by 1.',
@@ -705,7 +705,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 40,
         accuracy: 100,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         desc: 'Has a 30% chance to poison the target.',
         shortDesc: '30% chance to poison the target.',
@@ -722,7 +722,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 41,
         accuracy: 100,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2 times. Each hit has 20% chance to poison.',
         name: 'Twineedle',
@@ -738,7 +738,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 42,
         accuracy: 95,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Pin Missile',
@@ -754,7 +754,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 43,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Defense by 1 stage.',
         shortDesc: 'Lowers the foe(s) Defense by 1.',
@@ -771,7 +771,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 44,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -788,7 +788,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 45,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack by 1 stage.',
         shortDesc: 'Lowers the foe(s) Attack by 1.',
@@ -805,7 +805,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 46,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Forces the target to switch to a random ally.',
         name: 'Roar',
@@ -821,7 +821,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 47,
         accuracy: 55,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to fall asleep.',
         shortDesc: 'Puts the target to sleep.',
@@ -838,7 +838,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 48,
         accuracy: 55,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to become confused.',
         shortDesc: 'Confuses the target.',
@@ -855,7 +855,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 49,
         accuracy: 90,
-        basePower: 20,
+        basePower: '20',
         category: 'Special',
         desc: 'Deals 20 HP of damage to the target.',
         shortDesc: 'Always does 20 HP of damage.',
@@ -872,7 +872,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 50,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 4 turns, disables the target\'s last move used.',
         name: 'Disable',
@@ -888,7 +888,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 51,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         shortDesc: '10% chance to lower the foe(s) Sp. Def by 1.',
         name: 'Acid',
@@ -904,7 +904,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 52,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'Has a 10% chance to burn the target.',
         shortDesc: '10% chance to burn the target.',
@@ -921,7 +921,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 53,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 10% chance to burn the target.',
         shortDesc: '10% chance to burn the target.',
@@ -938,7 +938,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 54,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, protects user\'s party from stat drops.',
         name: 'Mist',
@@ -954,7 +954,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 55,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -971,7 +971,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 56,
         accuracy: 80,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -988,7 +988,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 57,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Damage doubles if the target is using Dive.',
         shortDesc: 'Hits adjacent Pokemon. Power doubles on Dive.',
@@ -1005,7 +1005,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 58,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 10% chance to freeze the target.',
         shortDesc: '10% chance to freeze the target.',
@@ -1022,7 +1022,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 59,
         accuracy: 70,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         shortDesc: '10% chance to freeze foe(s). Can\'t miss in hail.',
         name: 'Blizzard',
@@ -1038,7 +1038,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 60,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 10% chance to confuse the target.',
         shortDesc: '10% chance to confuse the target.',
@@ -1055,7 +1055,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 61,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 10% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '10% chance to lower the target\'s Speed by 1.',
@@ -1072,7 +1072,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 62,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 10% chance to lower the target\'s Attack by 1 stage.',
         shortDesc: '10% chance to lower the foe\'s Attack by 1.',
@@ -1089,7 +1089,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 63,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
         name: 'Hyper Beam',
@@ -1105,7 +1105,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 64,
         accuracy: 100,
-        basePower: 35,
+        basePower: '35',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -1122,7 +1122,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 65,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -1139,7 +1139,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 66,
         accuracy: 80,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         shortDesc: 'Has 1/4 recoil.',
         name: 'Submission',
@@ -1155,7 +1155,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 67,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the heavier the target.',
         name: 'Low Kick',
@@ -1171,7 +1171,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 68,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'If hit by physical attack, returns double damage.',
         name: 'Counter',
@@ -1204,7 +1204,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 70,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -1221,7 +1221,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 71,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Special',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Absorb',
@@ -1237,7 +1237,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 72,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Mega Drain',
@@ -1253,7 +1253,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 73,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: '1/8 of target\'s HP is restored to user every turn.',
         name: 'Leech Seed',
@@ -1269,7 +1269,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 74,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises user\'s Attack and Sp. Atk by 1; 2 in Sun.',
         name: 'Growth',
@@ -1285,7 +1285,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 75,
         accuracy: 95,
-        basePower: 55,
+        basePower: '55',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio. Hits adjacent foes.',
@@ -1302,7 +1302,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 76,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         shortDesc: 'Charges turn 1. Hits turn 2. No charge in sunlight.',
         name: 'Solar Beam',
@@ -1318,7 +1318,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 77,
         accuracy: 75,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Poisons the target.',
         shortDesc: 'Poisons the target.',
@@ -1335,7 +1335,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 78,
         accuracy: 75,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Paralyzes the target.',
         shortDesc: 'Paralyzes the target.',
@@ -1352,7 +1352,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 79,
         accuracy: 75,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to fall asleep.',
         shortDesc: 'Puts the target to sleep.',
@@ -1369,7 +1369,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 80,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         shortDesc: 'Lasts 2-3 turns. Confuses the user afterwards.',
         name: 'Petal Dance',
@@ -1385,7 +1385,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 81,
         accuracy: 95,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Speed by 2 stages.',
         shortDesc: 'Lowers the foe(s) Speed by 2.',
@@ -1402,7 +1402,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 82,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'Deals 40 HP of damage to the target.',
         shortDesc: 'Always does 40 HP of damage.',
@@ -1419,7 +1419,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 83,
         accuracy: 85,
-        basePower: 35,
+        basePower: '35',
         category: 'Special',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Fire Spin',
@@ -1435,7 +1435,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 84,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'Has a 10% chance to paralyze the target.',
         shortDesc: '10% chance to paralyze the target.',
@@ -1452,7 +1452,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 85,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 10% chance to paralyze the target.',
         shortDesc: '10% chance to paralyze the target.',
@@ -1469,7 +1469,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 86,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Paralyzes the target.',
         shortDesc: 'Paralyzes the target.',
@@ -1486,7 +1486,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 87,
         accuracy: 70,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         shortDesc: '30% chance to paralyze target. Can\'t miss in rain.',
         name: 'Thunder',
@@ -1502,7 +1502,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 88,
         accuracy: 90,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -1519,7 +1519,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 89,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Damage doubles if the target is using Dig.',
         shortDesc: 'Hits adjacent Pokemon. Power doubles on Dig.',
@@ -1536,7 +1536,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 90,
         accuracy: 30,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'OHKOs the target. Fails if user is a lower level.',
         name: 'Fissure',
@@ -1552,7 +1552,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 91,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         shortDesc: 'Digs underground turn 1, strikes turn 2.',
         name: 'Dig',
@@ -1568,7 +1568,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 92,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Badly poisons the target.',
         name: 'Toxic',
@@ -1584,7 +1584,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 93,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         desc: 'Has a 10% chance to confuse the target.',
         shortDesc: '10% chance to confuse the target.',
@@ -1601,7 +1601,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 94,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: '10% chance to lower the target\'s Sp. Def by 1.',
         name: 'Psychic',
@@ -1617,7 +1617,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 95,
         accuracy: 60,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to fall asleep.',
         shortDesc: 'Puts the target to sleep.',
@@ -1634,7 +1634,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 96,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack by 1 stage.',
         shortDesc: 'Raises the user\'s Attack by 1.',
@@ -1651,7 +1651,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 97,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Speed by 2 stages.',
         shortDesc: 'Raises the user\'s Speed by 2.',
@@ -1668,7 +1668,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 98,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -1685,7 +1685,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 99,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Physical',
         shortDesc: 'Raises the user\'s Attack by 1 if hit during use.',
         name: 'Rage',
@@ -1701,7 +1701,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 100,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Fails when used.',
         shortDesc: 'Flee from wild Pokemon battles.',
@@ -1735,7 +1735,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 102,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The last move the target used replaces this one.',
         name: 'Mimic',
@@ -1751,7 +1751,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 103,
         accuracy: 85,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Defense by 2 stages.',
         shortDesc: 'Lowers the target\'s Defense by 2.',
@@ -1768,7 +1768,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 104,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s evasiveness by 1 stage.',
         shortDesc: 'Raises the user\'s evasiveness by 1.',
@@ -1785,7 +1785,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 105,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
         shortDesc: 'Heals the user by 50% of its max HP.',
@@ -1802,7 +1802,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 106,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense by 1 stage.',
         shortDesc: 'Raises the user\'s Defense by 1.',
@@ -1819,7 +1819,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 107,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises the user\'s evasiveness by 2.',
         name: 'Minimize',
@@ -1835,7 +1835,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 108,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s accuracy by 1 stage.',
         shortDesc: 'Lowers the target\'s accuracy by 1.',
@@ -1852,7 +1852,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 109,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to become confused.',
         shortDesc: 'Confuses the target.',
@@ -1869,7 +1869,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 110,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense by 1 stage.',
         shortDesc: 'Raises the user\'s Defense by 1.',
@@ -1886,7 +1886,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 111,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises the user\'s Defense by 1.',
         name: 'Defense Curl',
@@ -1902,7 +1902,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 112,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense by 2 stages.',
         shortDesc: 'Raises the user\'s Defense by 2.',
@@ -1919,7 +1919,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 113,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, special damage to allies is halved.',
         name: 'Light Screen',
@@ -1935,7 +1935,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 114,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Resets the stat stages of all active Pokemon to 0.',
         shortDesc: 'Eliminates all stat changes.',
@@ -1952,7 +1952,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 115,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, physical damage to allies is halved.',
         name: 'Reflect',
@@ -1968,7 +1968,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 116,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises the user\'s critical hit ratio by 2.',
         name: 'Focus Energy',
@@ -1984,7 +1984,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 117,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Waits 2 turns; deals double the damage taken.',
         name: 'Bide',
@@ -2000,7 +2000,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 118,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Picks a random move.',
         name: 'Metronome',
@@ -2016,7 +2016,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 119,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User uses the target\'s last used move against it.',
         name: 'Mirror Move',
@@ -2032,7 +2032,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 120,
         accuracy: 100,
-        basePower: 200,
+        basePower: '200',
         category: 'Physical',
         shortDesc: 'Hits adjacent Pokemon. The user faints.',
         name: 'Self-Destruct',
@@ -2048,7 +2048,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 121,
         accuracy: 75,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -2065,7 +2065,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 122,
         accuracy: 100,
-        basePower: 30,
+        basePower: '30',
         category: 'Physical',
         desc: 'Has a 30% chance to paralyze the target.',
         shortDesc: '30% chance to paralyze the target.',
@@ -2082,7 +2082,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 123,
         accuracy: 70,
-        basePower: 30,
+        basePower: '30',
         category: 'Special',
         desc: 'Has a 40% chance to poison the target.',
         shortDesc: '40% chance to poison the target.',
@@ -2099,7 +2099,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 124,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 30% chance to poison the target.',
         shortDesc: '30% chance to poison the target.',
@@ -2116,7 +2116,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 125,
         accuracy: 85,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         desc: 'Has a 10% chance to flinch the target.',
         shortDesc: '10% chance to flinch the target.',
@@ -2133,7 +2133,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 126,
         accuracy: 85,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         desc: 'Has a 10% chance to burn the target.',
         shortDesc: '10% chance to burn the target.',
@@ -2150,7 +2150,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 127,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 20% chance to flinch the target.',
         shortDesc: '20% chance to flinch the target.',
@@ -2167,7 +2167,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 128,
         accuracy: 85,
-        basePower: 35,
+        basePower: '35',
         category: 'Physical',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Clamp',
@@ -2183,7 +2183,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 129,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy. Hits foes.',
@@ -2200,7 +2200,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 130,
         accuracy: 100,
-        basePower: 130,
+        basePower: '130',
         category: 'Physical',
         shortDesc: 'Raises user\'s Defense by 1 on turn 1. Hits turn 2.',
         name: 'Skull Bash',
@@ -2216,7 +2216,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 131,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Spike Cannon',
@@ -2232,7 +2232,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 132,
         accuracy: 100,
-        basePower: 10,
+        basePower: '10',
         category: 'Physical',
         desc: 'Has a 10% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '10% chance to lower the target\'s Speed by 1.',
@@ -2249,7 +2249,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 133,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Special Defense by 2 stages.',
         shortDesc: 'Raises the user\'s Sp. Def by 2.',
@@ -2266,7 +2266,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 134,
         accuracy: 80,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s accuracy by 1 stage.',
         shortDesc: 'Lowers the target\'s accuracy by 1.',
@@ -2283,7 +2283,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 135,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
         shortDesc: 'Heals the user by 50% of its max HP.',
@@ -2300,7 +2300,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 136,
         accuracy: 90,
-        basePower: 130,
+        basePower: '130',
         category: 'Physical',
         shortDesc: 'User is hurt by 50% of its max HP if it misses.',
         name: 'High Jump Kick',
@@ -2316,7 +2316,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 137,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Paralyzes the target.',
         shortDesc: 'Paralyzes the target.',
@@ -2333,7 +2333,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 138,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         shortDesc: 'User gains 1/2 HP inflicted. Sleeping target only.',
         name: 'Dream Eater',
@@ -2349,7 +2349,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 139,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Poisons the target.',
         shortDesc: 'Poisons the foe(s).',
@@ -2366,7 +2366,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 140,
         accuracy: 85,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Barrage',
@@ -2382,7 +2382,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 141,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Leech Life',
@@ -2398,7 +2398,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 142,
         accuracy: 75,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to fall asleep.',
         shortDesc: 'Puts the target to sleep.',
@@ -2415,7 +2415,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 143,
         accuracy: 90,
-        basePower: 140,
+        basePower: '140',
         category: 'Physical',
         shortDesc: 'Charges, then hits turn 2. 30% flinch. High crit.',
         name: 'Sky Attack',
@@ -2431,7 +2431,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 144,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Copies target\'s stats, moves, types, and Ability.',
         name: 'Transform',
@@ -2447,7 +2447,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 145,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'Has a 10% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '10% chance to lower the foe(s) Speed by 1.',
@@ -2464,7 +2464,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 146,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a 20% chance to confuse the target.',
         shortDesc: '20% chance to confuse the target.',
@@ -2481,7 +2481,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 147,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to fall asleep.',
         shortDesc: 'Puts the target to sleep.',
@@ -2498,7 +2498,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 148,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s accuracy by 1 stage.',
         shortDesc: 'Lowers the target\'s accuracy by 1.',
@@ -2515,7 +2515,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 149,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'Random damage equal to 0.5x-1.5x user\'s level.',
         name: 'Psywave',
@@ -2531,7 +2531,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 150,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Nothing happens...',
         shortDesc: 'Does nothing (but we still love it).',
@@ -2548,7 +2548,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 151,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense by 2 stages.',
         shortDesc: 'Raises the user\'s Defense by 2.',
@@ -2565,7 +2565,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 152,
         accuracy: 90,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -2582,7 +2582,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 153,
         accuracy: 100,
-        basePower: 250,
+        basePower: '250',
         category: 'Physical',
         shortDesc: 'Hits adjacent Pokemon. The user faints.',
         name: 'Explosion',
@@ -2598,7 +2598,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 154,
         accuracy: 80,
-        basePower: 18,
+        basePower: '18',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Fury Swipes',
@@ -2614,7 +2614,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 155,
         accuracy: 90,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'Hits 2 times in one turn.',
         name: 'Bonemerang',
@@ -2630,7 +2630,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 156,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User sleeps 2 turns and restores HP and status.',
         name: 'Rest',
@@ -2646,7 +2646,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 157,
         accuracy: 90,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the foe(s).',
@@ -2663,7 +2663,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 158,
         accuracy: 90,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 10% chance to flinch the target.',
         shortDesc: '10% chance to flinch the target.',
@@ -2680,7 +2680,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 159,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack by 1 stage.',
         shortDesc: 'Raises the user\'s Attack by 1.',
@@ -2697,7 +2697,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 160,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Changes user\'s type to match its first move.',
         name: 'Conversion',
@@ -2713,7 +2713,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 161,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: '20% chance to paralyze or burn or freeze target.',
         name: 'Tri Attack',
@@ -2729,7 +2729,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 162,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Does damage equal to 1/2 target\'s current HP.',
         name: 'Super Fang',
@@ -2745,7 +2745,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 163,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -2762,7 +2762,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 164,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User takes 1/4 its max HP to put in a Substitute.',
         name: 'Substitute',
@@ -2778,7 +2778,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 165,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'User loses 25% of its max HP as recoil.',
         name: 'Struggle',
@@ -2794,7 +2794,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 166,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Permanently copies the last move target used.',
         name: 'Sketch',
@@ -2810,7 +2810,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 167,
         accuracy: 90,
-        basePower: 10,
+        basePower: '10',
         category: 'Physical',
         shortDesc: 'Hits 3 times. Each hit can miss, but power rises.',
         name: 'Triple Kick',
@@ -2826,7 +2826,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 168,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'If the user has no item, it steals the target\'s.',
         name: 'Thief',
@@ -2842,7 +2842,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 169,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The target cannot switch out.',
         name: 'Spider Web',
@@ -2858,7 +2858,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 170,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User\'s next move will not miss the target.',
         name: 'Mind Reader',
@@ -2874,7 +2874,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 171,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'A sleeping target is hurt by 1/4 max HP per turn.',
         name: 'Nightmare',
@@ -2890,7 +2890,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 172,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 10% chance to burn the target.',
         shortDesc: '10% chance to burn the target. Thaws user.',
@@ -2907,7 +2907,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 173,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         shortDesc: 'User must be asleep. 30% chance to flinch target.',
         name: 'Snore',
@@ -2923,7 +2923,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 174,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Curses if Ghost, else +1 Atk, +1 Def, -1 Spe.',
         name: 'Curse',
@@ -2939,7 +2939,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 175,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the less HP the user has left.',
         name: 'Flail',
@@ -2955,7 +2955,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 176,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Changes user\'s type to resist target\'s last move.',
         name: 'Conversion 2',
@@ -2971,7 +2971,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 177,
         accuracy: 95,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -2988,7 +2988,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 178,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Speed by 2 stages.',
         shortDesc: 'Lowers the target\'s Speed by 2.',
@@ -3005,7 +3005,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 179,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the less HP the user has left.',
         name: 'Reversal',
@@ -3021,7 +3021,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 180,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers the PP of the target\'s last move by 4.',
         name: 'Spite',
@@ -3037,7 +3037,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 181,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'Has a 10% chance to freeze the target.',
         shortDesc: '10% chance to freeze the foe(s).',
@@ -3054,7 +3054,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 182,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Prevents moves from affecting the user this turn.',
         name: 'Protect',
@@ -3070,7 +3070,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 183,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -3087,7 +3087,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 184,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Speed by 2 stages.',
         shortDesc: 'Lowers the target\'s Speed by 2.',
@@ -3104,7 +3104,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 185,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -3121,7 +3121,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 186,
         accuracy: 75,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to become confused.',
         shortDesc: 'Confuses the target.',
@@ -3138,7 +3138,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 187,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User loses 50% max HP. Maximizes Attack.',
         name: 'Belly Drum',
@@ -3154,7 +3154,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 188,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 30% chance to poison the target.',
         shortDesc: '30% chance to poison the target.',
@@ -3171,7 +3171,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 189,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Special',
         desc: 'Has a 100% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '100% chance to lower the target\'s accuracy by 1.',
@@ -3188,7 +3188,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 190,
         accuracy: 85,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 50% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '50% chance to lower the target\'s accuracy by 1.',
@@ -3205,7 +3205,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 191,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Hurts grounded foes on switch-in. Max 3 layers.',
         name: 'Spikes',
@@ -3221,7 +3221,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 192,
         accuracy: 50,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         desc: 'Has a 100% chance to paralyze the target.',
         shortDesc: '100% chance to paralyze the target.',
@@ -3238,7 +3238,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 193,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Fighting, Normal hit Ghost. Evasiveness ignored.',
         name: 'Foresight',
@@ -3254,7 +3254,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 194,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'If an opponent knocks out the user, it also faints.',
         name: 'Destiny Bond',
@@ -3270,7 +3270,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 195,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'All active Pokemon will faint in 3 turns.',
         name: 'Perish Song',
@@ -3286,7 +3286,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 196,
         accuracy: 95,
-        basePower: 55,
+        basePower: '55',
         category: 'Special',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower the foe(s) Speed by 1.',
@@ -3303,7 +3303,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 197,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Prevents moves from affecting the user this turn.',
         name: 'Detect',
@@ -3319,7 +3319,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 198,
         accuracy: 90,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Bone Rush',
@@ -3335,7 +3335,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 199,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User\'s next move will not miss the target.',
         name: 'Lock-On',
@@ -3351,7 +3351,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 200,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Lasts 2-3 turns. Confuses the user afterwards.',
         name: 'Outrage',
@@ -3367,7 +3367,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 201,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, a sandstorm rages.',
         name: 'Sandstorm',
@@ -3383,7 +3383,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 202,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Special',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Giga Drain',
@@ -3399,7 +3399,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 203,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The user survives the next hit with at least 1 HP.',
         name: 'Endure',
@@ -3415,7 +3415,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 204,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack by 2 stages.',
         shortDesc: 'Lowers the target\'s Attack by 2.',
@@ -3432,7 +3432,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 205,
         accuracy: 90,
-        basePower: 30,
+        basePower: '30',
         category: 'Physical',
         shortDesc: 'Power doubles with each hit. Repeats for 5 turns.',
         name: 'Rollout',
@@ -3448,7 +3448,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 206,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'Leaves the target with at least 1 HP.',
         shortDesc: 'Always leaves the target with at least 1 HP.',
@@ -3465,7 +3465,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 207,
         accuracy: 85,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the target\'s Attack by 2 stages and confuses it.',
         shortDesc: 'Raises the target\'s Attack by 2 and confuses it.',
@@ -3482,7 +3482,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 208,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
         shortDesc: 'Heals the user by 50% of its max HP.',
@@ -3499,7 +3499,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 209,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         desc: 'Has a 30% chance to paralyze the target.',
         shortDesc: '30% chance to paralyze the target.',
@@ -3516,7 +3516,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 210,
         accuracy: 95,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         shortDesc: 'Power doubles with each hit, up to 160.',
         name: 'Fury Cutter',
@@ -3532,7 +3532,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 211,
         accuracy: 90,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a 10% chance to raise the user\'s Defense by 1 stage.',
         shortDesc: '10% chance to raise the user\'s Defense by 1.',
@@ -3549,7 +3549,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 212,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The target cannot switch out.',
         name: 'Mean Look',
@@ -3565,7 +3565,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 213,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'A target of the opposite gender gets infatuated.',
         name: 'Attract',
@@ -3581,7 +3581,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 214,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'One of the user\'s known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Z-Move.',
         shortDesc: 'User must be asleep. Uses another known move.',
@@ -3598,7 +3598,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 215,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Cures the user\'s party of all status conditions.',
         name: 'Heal Bell',
@@ -3614,7 +3614,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 216,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Max 102 power at maximum Happiness.',
         name: 'Return',
@@ -3630,7 +3630,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 217,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: '40, 80, 120 power, or heals target by 1/4 max HP.',
         name: 'Present',
@@ -3646,7 +3646,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 218,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Max 102 power at minimum Happiness.',
         name: 'Frustration',
@@ -3662,7 +3662,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 219,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, protects user\'s party from status.',
         name: 'Safeguard',
@@ -3678,7 +3678,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 220,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Shares HP of user and target equally.',
         name: 'Pain Split',
@@ -3694,7 +3694,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 221,
         accuracy: 95,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a 50% chance to burn the target.',
         shortDesc: '50% chance to burn the target. Thaws user.',
@@ -3711,7 +3711,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 222,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Hits adjacent Pokemon. Power varies; 2x on Dig.',
         name: 'Magnitude',
@@ -3727,7 +3727,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 223,
         accuracy: 50,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a 100% chance to confuse the target.',
         shortDesc: '100% chance to confuse the target.',
@@ -3744,7 +3744,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 224,
         accuracy: 85,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -3761,7 +3761,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 225,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: 'Has a 30% chance to paralyze the target.',
         shortDesc: '30% chance to paralyze the target.',
@@ -3778,7 +3778,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 226,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User switches, passing stat changes and more.',
         name: 'Baton Pass',
@@ -3794,7 +3794,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 227,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The target repeats its last move for 3 turns.',
         name: 'Encore',
@@ -3810,7 +3810,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 228,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         shortDesc: 'Power doubles if a foe is switching out.',
         name: 'Pursuit',
@@ -3826,7 +3826,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 229,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Physical',
         shortDesc: 'Frees user from hazards/partial trap/Leech Seed.',
         name: 'Rapid Spin',
@@ -3842,7 +3842,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 230,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s evasiveness by 2 stages.',
         shortDesc: 'Lowers the foe(s) evasiveness by 2.',
@@ -3859,7 +3859,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 231,
         accuracy: 75,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a 30% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '30% chance to lower the target\'s Defense by 1.',
@@ -3876,7 +3876,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 232,
         accuracy: 95,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'Has a 10% chance to raise the user\'s Attack by 1 stage.',
         shortDesc: '10% chance to raise the user\'s Attack by 1.',
@@ -3893,7 +3893,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 233,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy. Goes last.',
@@ -3910,7 +3910,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 234,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals the user by a weather-dependent amount.',
         name: 'Morning Sun',
@@ -3926,7 +3926,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 235,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals the user by a weather-dependent amount.',
         name: 'Synthesis',
@@ -3942,7 +3942,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 236,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals the user by a weather-dependent amount.',
         name: 'Moonlight',
@@ -3958,7 +3958,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 237,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: '',
         shortDesc: '',
@@ -3975,7 +3975,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 238,
         accuracy: 80,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -3992,7 +3992,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 239,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         shortDesc: '20% chance to flinch the foe(s).',
         name: 'Twister',
@@ -4008,7 +4008,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 240,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, heavy rain powers Water moves.',
         name: 'Rain Dance',
@@ -4024,7 +4024,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 241,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, intense sunlight powers Fire moves.',
         name: 'Sunny Day',
@@ -4040,7 +4040,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 242,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 20% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '20% chance to lower the target\'s Defense by 1.',
@@ -4057,7 +4057,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 243,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'If hit by special attack, returns double damage.',
         name: 'Mirror Coat',
@@ -4073,7 +4073,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 244,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user copies all of the target\'s current stat stage changes.',
         shortDesc: 'Copies the target\'s current stat stages.',
@@ -4090,7 +4090,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 245,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Nearly always goes first.',
@@ -4107,7 +4107,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 246,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         shortDesc: '10% chance to raise all stats by 1 (not acc/eva).',
         name: 'Ancient Power',
@@ -4123,7 +4123,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 247,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: '20% chance to lower the target\'s Sp. Def by 1.',
         name: 'Shadow Ball',
@@ -4139,7 +4139,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 248,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         shortDesc: 'Hits two turns after being used.',
         name: 'Future Sight',
@@ -4155,7 +4155,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 249,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'Has a 50% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '50% chance to lower the target\'s Defense by 1.',
@@ -4172,7 +4172,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 250,
         accuracy: 85,
-        basePower: 35,
+        basePower: '35',
         category: 'Special',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Whirlpool',
@@ -4188,7 +4188,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 251,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'All healthy allies aid in damaging the target.',
         name: 'Beat Up',
@@ -4204,7 +4204,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 252,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         shortDesc: 'Hits first. First turn out only. 100% flinch chance.',
         name: 'Fake Out',
@@ -4220,7 +4220,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 253,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: 'Lasts 3 turns. Active Pokemon cannot fall asleep.',
         name: 'Uproar',
@@ -4236,7 +4236,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 254,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises user\'s Defense, Sp. Def by 1. Max 3 uses.',
         name: 'Stockpile',
@@ -4252,7 +4252,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 255,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'More power with more uses of Stockpile.',
         name: 'Spit Up',
@@ -4268,7 +4268,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 256,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals the user based on uses of Stockpile.',
         name: 'Swallow',
@@ -4284,7 +4284,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 257,
         accuracy: 90,
-        basePower: 95,
+        basePower: '95',
         category: 'Special',
         desc: 'Has a 10% chance to burn the target.',
         shortDesc: '10% chance to burn the foe(s).',
@@ -4301,7 +4301,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 258,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, hail crashes down.',
         name: 'Hail',
@@ -4317,7 +4317,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 259,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Target can\'t select the same move twice in a row.',
         name: 'Torment',
@@ -4333,7 +4333,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 260,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the target\'s Special Attack by 1 stage and confuses it.',
         shortDesc: 'Raises the target\'s Sp. Atk by 1 and confuses it.',
@@ -4350,7 +4350,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 261,
         accuracy: 85,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Burns the target.',
         shortDesc: 'Burns the target.',
@@ -4367,7 +4367,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 262,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers target\'s Attack, Sp. Atk by 2. User faints.',
         name: 'Memento',
@@ -4383,7 +4383,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 263,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'Power doubles if user is burn/poison/paralyzed.',
         name: 'Facade',
@@ -4399,7 +4399,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 264,
         accuracy: 100,
-        basePower: 150,
+        basePower: '150',
         category: 'Physical',
         shortDesc: 'Fails if the user takes damage before it hits.',
         name: 'Focus Punch',
@@ -4415,7 +4415,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 265,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'Power doubles if target is paralyzed, and cures it.',
         name: 'Smelling Salts',
@@ -4431,7 +4431,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 266,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The foes\' moves target the user on the turn used.',
         name: 'Follow Me',
@@ -4447,7 +4447,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 267,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Attack depends on terrain (default Tri Attack).',
         name: 'Nature Power',
@@ -4463,7 +4463,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 268,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Boosts next Electric move and user\'s Sp. Def by 1.',
         name: 'Charge',
@@ -4479,7 +4479,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 269,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 3 turns, the target can\'t use status moves.',
         name: 'Taunt',
@@ -4495,7 +4495,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 270,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'One adjacent ally\'s move power is 1.5x this turn.',
         name: 'Helping Hand',
@@ -4511,7 +4511,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 271,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User switches its held item with the target\'s.',
         name: 'Trick',
@@ -4527,7 +4527,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 272,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User replaces its Ability with the target\'s.',
         name: 'Role Play',
@@ -4543,7 +4543,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 273,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Next turn, 50% of the user\'s max HP is restored.',
         name: 'Wish',
@@ -4559,7 +4559,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 274,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'A random move among those known by the user\'s party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King\'s Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.',
         shortDesc: 'Uses a random move known by a team member.',
@@ -4576,7 +4576,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 275,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Traps/grounds user; heals 1/16 max HP per turn.',
         name: 'Ingrain',
@@ -4592,7 +4592,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 276,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'Lowers the user\'s Attack and Defense by 1 stage.',
         shortDesc: 'Lowers the user\'s Attack and Defense by 1.',
@@ -4609,7 +4609,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 277,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Bounces back certain non-damaging moves.',
         name: 'Magic Coat',
@@ -4625,7 +4625,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 278,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Restores the item the user last used.',
         name: 'Recycle',
@@ -4641,7 +4641,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 279,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Power doubles if the user was hit by the target this turn.',
         shortDesc: 'Power doubles if user is damaged by the target.',
@@ -4658,7 +4658,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 280,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         shortDesc: 'Destroys screens, unless the target is immune.',
         name: 'Brick Break',
@@ -4674,7 +4674,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 281,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Puts the target to sleep after 1 turn.',
         name: 'Yawn',
@@ -4690,7 +4690,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 282,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         shortDesc: '1.5x damage if foe holds an item. Removes item.',
         name: 'Knock Off',
@@ -4706,7 +4706,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 283,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Lowers the target\'s HP to the user\'s HP.',
         name: 'Endeavor',
@@ -4722,7 +4722,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 284,
         accuracy: 100,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'Less power as user\'s HP decreases. Hits foe(s).',
         name: 'Eruption',
@@ -4738,7 +4738,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 285,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user swaps its Ability with the target\'s Ability. Fails if either the user or the target\'s Ability is Battle Bond, Comatose, Disguise, Illusion, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode.',
         shortDesc: 'The user and the target trade Abilities.',
@@ -4755,7 +4755,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 286,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'No foe can use any move known by the user.',
         name: 'Imprison',
@@ -4771,7 +4771,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 287,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user cures its burn, poison, or paralysis.',
         shortDesc: 'User cures its burn, poison, or paralysis.',
@@ -4788,7 +4788,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 288,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'If the user faints, the attack used loses all its PP.',
         name: 'Grudge',
@@ -4804,7 +4804,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 289,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User steals certain support moves to use itself.',
         name: 'Snatch',
@@ -4820,7 +4820,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 290,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'Effect varies with terrain. (30% paralysis chance)',
         name: 'Secret Power',
@@ -4836,7 +4836,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 291,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         shortDesc: 'Dives underwater turn 1, strikes turn 2.',
         name: 'Dive',
@@ -4852,7 +4852,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 292,
         accuracy: 100,
-        basePower: 15,
+        basePower: '15',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Arm Thrust',
@@ -4868,7 +4868,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 293,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Changes user\'s type by terrain (default Normal).',
         name: 'Camouflage',
@@ -4884,7 +4884,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 294,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Special Attack by 3 stages.',
         shortDesc: 'Raises the user\'s Sp. Atk by 3.',
@@ -4901,7 +4901,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 295,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Special',
         shortDesc: '50% chance to lower the target\'s Sp. Def by 1.',
         name: 'Luster Purge',
@@ -4917,7 +4917,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 296,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Special',
         shortDesc: '50% chance to lower the target\'s Sp. Atk by 1.',
         name: 'Mist Ball',
@@ -4933,7 +4933,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 297,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack by 2 stages.',
         shortDesc: 'Lowers the target\'s Attack by 2.',
@@ -4950,7 +4950,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 298,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to become confused.',
         shortDesc: 'Confuses adjacent Pokemon.',
@@ -4967,7 +4967,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 299,
         accuracy: 90,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         shortDesc: 'High critical hit ratio. 10% chance to burn.',
         name: 'Blaze Kick',
@@ -4983,7 +4983,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 300,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, Electric-type attacks have 1/3 power.',
         name: 'Mud Sport',
@@ -4999,7 +4999,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 301,
         accuracy: 90,
-        basePower: 30,
+        basePower: '30',
         category: 'Physical',
         shortDesc: 'Power doubles with each hit. Repeats for 5 turns.',
         name: 'Ice Ball',
@@ -5015,7 +5015,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 302,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -5032,7 +5032,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 303,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
         shortDesc: 'Heals the user by 50% of its max HP.',
@@ -5049,7 +5049,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 304,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent foes.',
@@ -5066,7 +5066,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 305,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'Has a 50% chance to badly poison the target.',
         shortDesc: '50% chance to badly poison the target.',
@@ -5083,7 +5083,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 306,
         accuracy: 95,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         desc: 'Has a 50% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '50% chance to lower the target\'s Defense by 1.',
@@ -5100,7 +5100,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 307,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
         name: 'Blast Burn',
@@ -5116,7 +5116,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 308,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
         name: 'Hydro Cannon',
@@ -5132,7 +5132,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 309,
         accuracy: 90,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a 20% chance to raise the user\'s Attack by 1 stage.',
         shortDesc: '20% chance to raise the user\'s Attack by 1.',
@@ -5149,7 +5149,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 310,
         accuracy: 100,
-        basePower: 30,
+        basePower: '30',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -5166,7 +5166,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 311,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         shortDesc: 'Power doubles and type varies in each weather.',
         name: 'Weather Ball',
@@ -5182,7 +5182,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 312,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Cures the user\'s party of all status conditions.',
         name: 'Aromatherapy',
@@ -5198,7 +5198,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 313,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Special Defense by 2 stages.',
         shortDesc: 'Lowers the target\'s Sp. Def by 2.',
@@ -5215,7 +5215,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 314,
         accuracy: 95,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio. Hits adjacent foes.',
@@ -5232,7 +5232,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 315,
         accuracy: 90,
-        basePower: 130,
+        basePower: '130',
         category: 'Special',
         desc: 'Lowers the user\'s Special Attack by 2 stages.',
         shortDesc: 'Lowers the user\'s Sp. Atk by 2.',
@@ -5249,7 +5249,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 316,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Fighting, Normal hit Ghost. Evasiveness ignored.',
         name: 'Odor Sleuth',
@@ -5265,7 +5265,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 317,
         accuracy: 95,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower the target\'s Speed by 1.',
@@ -5282,7 +5282,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 318,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         shortDesc: '10% chance to raise all stats by 1 (not acc/eva).',
         name: 'Silver Wind',
@@ -5298,7 +5298,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 319,
         accuracy: 85,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Special Defense by 2 stages.',
         shortDesc: 'Lowers the target\'s Sp. Def by 2.',
@@ -5315,7 +5315,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 320,
         accuracy: 55,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target to fall asleep.',
         shortDesc: 'Puts the target to sleep.',
@@ -5332,7 +5332,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 321,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack and Defense by 1 stage.',
         shortDesc: 'Lowers the target\'s Attack and Defense by 1.',
@@ -5349,7 +5349,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 322,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense and Special Defense by 1 stage.',
         shortDesc: 'Raises the user\'s Defense and Sp. Def by 1.',
@@ -5366,7 +5366,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 323,
         accuracy: 100,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'Less power as user\'s HP decreases. Hits foe(s).',
         name: 'Water Spout',
@@ -5382,7 +5382,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 324,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Special',
         desc: 'Has a 10% chance to confuse the target.',
         shortDesc: '10% chance to confuse the target.',
@@ -5399,7 +5399,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 325,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -5416,7 +5416,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 326,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'Has a 10% chance to flinch the target.',
         shortDesc: '10% chance to flinch the target.',
@@ -5433,7 +5433,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 327,
         accuracy: 90,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         desc: 'This move can hit a target using Bounce, Fly, or Sky Drop.',
         shortDesc: 'Can hit Pokemon using Bounce, Fly, or Sky Drop.',
@@ -5450,7 +5450,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 328,
         accuracy: 85,
-        basePower: 35,
+        basePower: '35',
         category: 'Physical',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Sand Tomb',
@@ -5466,7 +5466,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 329,
         accuracy: 30,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'OHKOs non-Ice targets. Fails if user\'s lower level.',
         name: 'Sheer Cold',
@@ -5482,7 +5482,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 330,
         accuracy: 85,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 30% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '30% chance to lower the foe(s) accuracy by 1.',
@@ -5499,7 +5499,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 331,
         accuracy: 100,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Bullet Seed',
@@ -5515,7 +5515,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 332,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -5532,7 +5532,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 333,
         accuracy: 100,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Icicle Spear',
@@ -5548,7 +5548,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 334,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense by 2 stages.',
         shortDesc: 'Raises the user\'s Defense by 2.',
@@ -5565,7 +5565,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 335,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The target cannot switch out.',
         name: 'Block',
@@ -5581,7 +5581,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 336,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack by 1 stage.',
         shortDesc: 'Raises the user\'s Attack by 1.',
@@ -5598,7 +5598,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 337,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -5615,7 +5615,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 338,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
         name: 'Frenzy Plant',
@@ -5631,7 +5631,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 339,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack and Defense by 1 stage.',
         shortDesc: 'Raises the user\'s Attack and Defense by 1.',
@@ -5648,7 +5648,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 340,
         accuracy: 85,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         shortDesc: 'Bounces turn 1. Hits turn 2. 30% paralyze.',
         name: 'Bounce',
@@ -5664,7 +5664,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 341,
         accuracy: 95,
-        basePower: 55,
+        basePower: '55',
         category: 'Special',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower the target\'s Speed by 1.',
@@ -5681,7 +5681,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 342,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'High critical hit ratio. 10% chance to poison.',
         name: 'Poison Tail',
@@ -5697,7 +5697,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 343,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'If the user has no item, it steals the target\'s.',
         name: 'Covet',
@@ -5713,7 +5713,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 344,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Has 33% recoil. 10% chance to paralyze target.',
         name: 'Volt Tackle',
@@ -5729,7 +5729,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 345,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -5746,7 +5746,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 346,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, Fire-type attacks have 1/3 power.',
         name: 'Water Sport',
@@ -5762,7 +5762,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 347,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises the user\'s Sp. Atk and Sp. Def by 1.',
         name: 'Calm Mind',
@@ -5778,7 +5778,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 348,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -5795,7 +5795,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 349,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack and Speed by 1 stage.',
         shortDesc: 'Raises the user\'s Attack and Speed by 1.',
@@ -5812,7 +5812,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 350,
         accuracy: 90,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Rock Blast',
@@ -5828,7 +5828,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 351,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -5845,7 +5845,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 352,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         desc: 'Has a 20% chance to confuse the target.',
         shortDesc: '20% chance to confuse the target.',
@@ -5862,7 +5862,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 353,
         accuracy: 100,
-        basePower: 140,
+        basePower: '140',
         category: 'Special',
         shortDesc: 'Hits two turns after being used.',
         name: 'Doom Desire',
@@ -5878,7 +5878,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 354,
         accuracy: 90,
-        basePower: 140,
+        basePower: '140',
         category: 'Special',
         desc: 'Lowers the user\'s Special Attack by 2 stages.',
         shortDesc: 'Lowers the user\'s Sp. Atk by 2.',
@@ -5895,7 +5895,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 355,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals 50% HP. Flying-type removed \'til turn ends.',
         name: 'Roost',
@@ -5911,7 +5911,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 356,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, negates all Ground immunities.',
         name: 'Gravity',
@@ -5927,7 +5927,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 357,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Psychic hits Dark. Evasiveness ignored.',
         name: 'Miracle Eye',
@@ -5943,7 +5943,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 358,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'Power doubles if target is asleep, and wakes it.',
         name: 'Wake-Up Slap',
@@ -5959,7 +5959,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 359,
         accuracy: 90,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Lowers the user\'s Speed by 1 stage.',
         shortDesc: 'Lowers the user\'s Speed by 1.',
@@ -5976,7 +5976,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 360,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the slower the user than the target.',
         name: 'Gyro Ball',
@@ -5992,7 +5992,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 361,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User faints. Replacement is fully healed.',
         name: 'Healing Wish',
@@ -6008,7 +6008,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 362,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         shortDesc: 'Power doubles if the target\'s HP is 50% or less.',
         name: 'Brine',
@@ -6024,7 +6024,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 363,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Power and type depends on the user\'s Berry.',
         name: 'Natural Gift',
@@ -6040,7 +6040,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 364,
         accuracy: 100,
-        basePower: 30,
+        basePower: '30',
         category: 'Physical',
         shortDesc: 'Nullifies Detect, Protect, and Quick/Wide Guard.',
         name: 'Feint',
@@ -6056,7 +6056,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 365,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'User steals and eats the target\'s Berry.',
         name: 'Pluck',
@@ -6072,7 +6072,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 366,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 4 turns, allies\' Speed is doubled.',
         name: 'Tailwind',
@@ -6088,7 +6088,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 367,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises a random stat of the user or an ally by 2.',
         name: 'Acupressure',
@@ -6104,7 +6104,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 368,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'If hit by an attack, returns 1.5x damage.',
         name: 'Metal Burst',
@@ -6120,7 +6120,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 369,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'User switches out after damaging the target.',
         name: 'U-turn',
@@ -6136,7 +6136,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 370,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'Lowers the user\'s Defense and Special Defense by 1 stage.',
         shortDesc: 'Lowers the user\'s Defense and Sp. Def by 1.',
@@ -6153,7 +6153,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 371,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'Power doubles if the user moves after the target.',
         name: 'Payback',
@@ -6169,7 +6169,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 372,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'Power doubles if target was damaged this turn.',
         name: 'Assurance',
@@ -6185,7 +6185,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 373,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, the target\'s item has no effect.',
         name: 'Embargo',
@@ -6201,7 +6201,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 374,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'Flings the user\'s item at the target. Power varies.',
         name: 'Fling',
@@ -6217,7 +6217,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 375,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Transfers the user\'s status ailment to the target.',
         name: 'Psycho Shift',
@@ -6233,7 +6233,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 376,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'More power the fewer PP this move has left.',
         name: 'Trump Card',
@@ -6249,7 +6249,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 377,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, the foe(s) is prevented from healing.',
         name: 'Heal Block',
@@ -6265,7 +6265,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 378,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'More power the more HP the target has left.',
         name: 'Wring Out',
@@ -6281,7 +6281,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 379,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Switches user\'s Attack and Defense stats.',
         name: 'Power Trick',
@@ -6297,7 +6297,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 380,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target\'s Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target\'s Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this move fails, and receiving the effect through Baton Pass ends the effect immediately.',
         shortDesc: 'Nullifies the target\'s Ability.',
@@ -6314,7 +6314,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 381,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, shields user\'s party from critical hits.',
         name: 'Lucky Chant',
@@ -6330,7 +6330,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 382,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Copies a foe at 1.5x power. User must be faster.',
         name: 'Me First',
@@ -6346,7 +6346,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 383,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King\'s Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.',
         shortDesc: 'Uses the last move used in the battle.',
@@ -6363,7 +6363,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 384,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Swaps Attack and Sp. Atk stat stages with target.',
         name: 'Power Swap',
@@ -6379,7 +6379,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 385,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Swaps Defense and Sp. Def changes with target.',
         name: 'Guard Swap',
@@ -6395,7 +6395,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 386,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: '60 power +20 for each of the target\'s stat boosts.',
         name: 'Punishment',
@@ -6411,7 +6411,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 387,
         accuracy: 100,
-        basePower: 140,
+        basePower: '140',
         category: 'Physical',
         shortDesc: 'Fails unless each known move has been used.',
         name: 'Last Resort',
@@ -6427,7 +6427,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 388,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target\'s Ability to become Insomnia. Fails if the target\'s Ability is Battle Bond, Comatose, Disguise, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode.',
         shortDesc: 'The target\'s Ability becomes Insomnia.',
@@ -6444,7 +6444,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 389,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'Usually goes first. Fails if target is not attacking.',
         name: 'Sucker Punch',
@@ -6460,7 +6460,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 390,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Poisons grounded foes on switch-in. Max 2 layers.',
         name: 'Toxic Spikes',
@@ -6476,7 +6476,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 391,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user swaps all its stat stage changes with the target.',
         shortDesc: 'Swaps all stat changes with target.',
@@ -6493,7 +6493,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 392,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User recovers 1/16 max HP per turn.',
         name: 'Aqua Ring',
@@ -6509,7 +6509,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 393,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, the user is immune to Ground moves.',
         name: 'Magnet Rise',
@@ -6525,7 +6525,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 394,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Has 33% recoil. 10% chance to burn. Thaws user.',
         name: 'Flare Blitz',
@@ -6541,7 +6541,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 395,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 30% chance to paralyze the target.',
         shortDesc: '30% chance to paralyze the target.',
@@ -6558,7 +6558,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 396,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -6575,7 +6575,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 397,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Speed by 2 stages.',
         shortDesc: 'Raises the user\'s Speed by 2.',
@@ -6592,7 +6592,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 398,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 30% chance to poison the target.',
         shortDesc: '30% chance to poison the target.',
@@ -6609,7 +6609,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 399,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'Has a 20% chance to flinch the target.',
         shortDesc: '20% chance to flinch the target.',
@@ -6626,7 +6626,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 400,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -6643,7 +6643,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 401,
         accuracy: 90,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -6660,7 +6660,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 402,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -6677,7 +6677,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 403,
         accuracy: 95,
-        basePower: 75,
+        basePower: '75',
         category: 'Special',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -6694,7 +6694,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 404,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -6711,7 +6711,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 405,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: '10% chance to lower the target\'s Sp. Def by 1.',
         name: 'Bug Buzz',
@@ -6727,7 +6727,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 406,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -6744,7 +6744,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 407,
         accuracy: 75,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: '20% chance to flinch the target.',
         name: 'Dragon Rush',
@@ -6760,7 +6760,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 408,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -6777,7 +6777,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 409,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Drain Punch',
@@ -6793,7 +6793,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 410,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -6810,7 +6810,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 411,
         accuracy: 70,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         shortDesc: '10% chance to lower the target\'s Sp. Def by 1.',
         name: 'Focus Blast',
@@ -6826,7 +6826,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 412,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: '10% chance to lower the target\'s Sp. Def by 1.',
         name: 'Energy Ball',
@@ -6842,7 +6842,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 413,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Has 33% recoil.',
         name: 'Brave Bird',
@@ -6858,7 +6858,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 414,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: '10% chance to lower the target\'s Sp. Def by 1.',
         name: 'Earth Power',
@@ -6874,7 +6874,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 415,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User switches its held item with the target\'s.',
         name: 'Switcheroo',
@@ -6890,7 +6890,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 416,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Physical',
         shortDesc: 'User cannot move next turn.',
         name: 'Giga Impact',
@@ -6906,7 +6906,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 417,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Special Attack by 2 stages.',
         shortDesc: 'Raises the user\'s Sp. Atk by 2.',
@@ -6923,7 +6923,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 418,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -6940,7 +6940,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 419,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Power doubles if the user was hit by the target this turn.',
         shortDesc: 'Power doubles if user is damaged by the target.',
@@ -6957,7 +6957,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 420,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -6974,7 +6974,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 421,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -6991,7 +6991,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 422,
         accuracy: 95,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         shortDesc: '10% chance to paralyze. 10% chance to flinch.',
         name: 'Thunder Fang',
@@ -7007,7 +7007,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 423,
         accuracy: 95,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         shortDesc: '10% chance to freeze. 10% chance to flinch.',
         name: 'Ice Fang',
@@ -7023,7 +7023,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 424,
         accuracy: 95,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         shortDesc: '10% chance to burn. 10% chance to flinch.',
         name: 'Fire Fang',
@@ -7039,7 +7039,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 425,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -7056,7 +7056,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 426,
         accuracy: 85,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 30% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '30% chance to lower the target\'s accuracy by 1.',
@@ -7073,7 +7073,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 427,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -7090,7 +7090,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 428,
         accuracy: 90,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 20% chance to flinch the target.',
         shortDesc: '20% chance to flinch the target.',
@@ -7107,7 +7107,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 429,
         accuracy: 85,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 30% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '30% chance to lower the target\'s accuracy by 1.',
@@ -7124,7 +7124,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 430,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: '10% chance to lower the target\'s Sp. Def by 1.',
         name: 'Flash Cannon',
@@ -7140,7 +7140,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 431,
         accuracy: 85,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a 20% chance to confuse the target.',
         shortDesc: '20% chance to confuse the target.',
@@ -7157,7 +7157,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 432,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: '-1 evasion; clears user and target side\'s hazards.',
         name: 'Defog',
@@ -7173,7 +7173,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 433,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'For 5 turns, the Speed of every Pokemon is recalculated for the purposes of determining turn order. During the effect, each Pokemon\'s Speed is considered to be (10000 - its normal Speed), and if this value is greater than 8191, 8192 is subtracted from it. If this move is used during the effect, the effect ends.',
         shortDesc: 'Goes last. For 5 turns, turn order is reversed.',
@@ -7190,7 +7190,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 434,
         accuracy: 90,
-        basePower: 130,
+        basePower: '130',
         category: 'Special',
         desc: 'Lowers the user\'s Special Attack by 2 stages.',
         shortDesc: 'Lowers the user\'s Sp. Atk by 2.',
@@ -7207,7 +7207,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 435,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'Has a 30% chance to paralyze the target.',
         shortDesc: '30% chance to paralyze adjacent Pokemon.',
@@ -7224,7 +7224,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 436,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'Has a 30% chance to burn the target.',
         shortDesc: '30% chance to burn adjacent Pokemon.',
@@ -7241,7 +7241,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 437,
         accuracy: 90,
-        basePower: 130,
+        basePower: '130',
         category: 'Special',
         desc: 'Lowers the user\'s Special Attack by 2 stages.',
         shortDesc: 'Lowers the user\'s Sp. Atk by 2.',
@@ -7258,7 +7258,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 438,
         accuracy: 85,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -7275,7 +7275,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 439,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Physical',
         shortDesc: 'User cannot move next turn.',
         name: 'Rock Wrecker',
@@ -7291,7 +7291,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 440,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'High critical hit ratio. 10% chance to poison.',
         name: 'Cross Poison',
@@ -7307,7 +7307,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 441,
         accuracy: 80,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'Has a 30% chance to poison the target.',
         shortDesc: '30% chance to poison the target.',
@@ -7324,7 +7324,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 442,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -7341,7 +7341,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 443,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -7358,7 +7358,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 444,
         accuracy: 80,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -7375,7 +7375,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 445,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers the foe(s) Sp. Atk by 2 if opposite gender.',
         name: 'Captivate',
@@ -7391,7 +7391,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 446,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Hurts foes on switch-in. Factors Rock weakness.',
         name: 'Stealth Rock',
@@ -7407,7 +7407,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 447,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'More power the heavier the target.',
         name: 'Grass Knot',
@@ -7423,7 +7423,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 448,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 100% chance to confuse the target.',
         shortDesc: '100% chance to confuse the target.',
@@ -7440,7 +7440,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 449,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         desc: 'This move\'s type depends on the user\'s held Plate.',
         shortDesc: 'Type varies based on the held Plate.',
@@ -7457,7 +7457,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 450,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'User steals and eats the target\'s Berry.',
         name: 'Bug Bite',
@@ -7473,7 +7473,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 451,
         accuracy: 90,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         desc: 'Has a 70% chance to raise the user\'s Special Attack by 1 stage.',
         shortDesc: '70% chance to raise the user\'s Sp. Atk by 1.',
@@ -7490,7 +7490,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 452,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Has 33% recoil.',
         name: 'Wood Hammer',
@@ -7506,7 +7506,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 453,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -7523,7 +7523,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 454,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -7540,7 +7540,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 455,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense and Special Defense by 1 stage.',
         shortDesc: 'Raises the user\'s Defense and Sp. Def by 1.',
@@ -7557,7 +7557,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 456,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
         shortDesc: 'Heals the user by 50% of its max HP.',
@@ -7574,7 +7574,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 457,
         accuracy: 80,
-        basePower: 150,
+        basePower: '150',
         category: 'Physical',
         shortDesc: 'Has 1/2 recoil.',
         name: 'Head Smash',
@@ -7590,7 +7590,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 458,
         accuracy: 90,
-        basePower: 35,
+        basePower: '35',
         category: 'Physical',
         shortDesc: 'Hits 2 times in one turn.',
         name: 'Double Hit',
@@ -7606,7 +7606,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 459,
         accuracy: 90,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
         name: 'Roar of Time',
@@ -7622,7 +7622,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 460,
         accuracy: 95,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -7639,7 +7639,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 461,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User faints. Replacement is fully healed, with PP.',
         name: 'Lunar Dance',
@@ -7655,7 +7655,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 462,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the more HP the target has left.',
         name: 'Crush Grip',
@@ -7671,7 +7671,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 463,
         accuracy: 75,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Magma Storm',
@@ -7687,7 +7687,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 464,
         accuracy: 50,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Darkrai: Puts the foe(s) to sleep.',
         name: 'Dark Void',
@@ -7703,7 +7703,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 465,
         accuracy: 85,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         shortDesc: '40% chance to lower the target\'s Sp. Def by 2.',
         name: 'Seed Flare',
@@ -7719,7 +7719,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 466,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         shortDesc: '10% chance to raise all stats by 1 (not acc/eva).',
         name: 'Ominous Wind',
@@ -7735,7 +7735,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 467,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Disappears turn 1. Hits turn 2. Breaks protection.',
         name: 'Shadow Force',
@@ -7751,7 +7751,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 468,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack and accuracy by 1 stage.',
         shortDesc: 'Raises the user\'s Attack and accuracy by 1.',
@@ -7768,7 +7768,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 469,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects allies from multi-target moves this turn.',
         name: 'Wide Guard',
@@ -7784,7 +7784,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 470,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Averages Defense and Sp. Def stats with target.',
         name: 'Guard Split',
@@ -7800,7 +7800,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 471,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Averages Attack and Sp. Atk stats with target.',
         name: 'Power Split',
@@ -7816,7 +7816,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 472,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, all Defense and Sp. Def stats switch.',
         name: 'Wonder Room',
@@ -7832,7 +7832,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 473,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'Damages target based on Defense, not Sp. Def.',
         name: 'Psyshock',
@@ -7848,7 +7848,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 474,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Power doubles if the target is poisoned.',
         shortDesc: 'Power doubles if the target is poisoned.',
@@ -7865,7 +7865,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 475,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises the user\'s Speed by 2; user loses 100 kg.',
         name: 'Autotomize',
@@ -7881,7 +7881,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 476,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The foes\' moves target the user on the turn used.',
         name: 'Rage Powder',
@@ -7897,7 +7897,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 477,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 3 turns, target floats but moves can\'t miss it.',
         name: 'Telekinesis',
@@ -7913,7 +7913,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 478,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, all held items have no effect.',
         name: 'Magic Room',
@@ -7929,7 +7929,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 479,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'Removes the target\'s Ground immunity.',
         name: 'Smack Down',
@@ -7945,7 +7945,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 480,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'Always results in a critical hit.',
         name: 'Storm Throw',
@@ -7961,7 +7961,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 481,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Special',
         shortDesc: 'Damages Pokemon next to the target as well.',
         name: 'Flame Burst',
@@ -7977,7 +7977,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 482,
         accuracy: 100,
-        basePower: 95,
+        basePower: '95',
         category: 'Special',
         desc: 'Has a 10% chance to poison the target.',
         shortDesc: '10% chance to poison adjacent Pokemon.',
@@ -7994,7 +7994,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 483,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises the user\'s Sp. Atk, Sp. Def, Speed by 1.',
         name: 'Quiver Dance',
@@ -8010,7 +8010,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 484,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the heavier the user than the target.',
         name: 'Heavy Slam',
@@ -8026,7 +8026,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 485,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         desc: 'The target is immune if it does not share a type with the user.',
         shortDesc: 'Hits adjacent Pokemon sharing the user\'s type.',
@@ -8043,7 +8043,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 486,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'More power the faster the user is than the target.',
         name: 'Electro Ball',
@@ -8059,7 +8059,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 487,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Changes the target\'s type to Water.',
         name: 'Soak',
@@ -8075,7 +8075,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 488,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'Has a 100% chance to raise the user\'s Speed by 1 stage.',
         shortDesc: '100% chance to raise the user\'s Speed by 1.',
@@ -8092,7 +8092,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 489,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack, Defense, and accuracy by 1 stage.',
         shortDesc: 'Raises user\'s Attack, Defense, and accuracy by 1.',
@@ -8109,7 +8109,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 490,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower the target\'s Speed by 1.',
@@ -8126,7 +8126,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 491,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         shortDesc: '100% chance to lower the target\'s Sp. Def by 2.',
         name: 'Acid Spray',
@@ -8142,7 +8142,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 492,
         accuracy: 100,
-        basePower: 95,
+        basePower: '95',
         category: 'Physical',
         shortDesc: 'Uses target\'s Attack stat in damage calculation.',
         name: 'Foul Play',
@@ -8158,7 +8158,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 493,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes the target\'s Ability to become Simple. Fails if the target\'s Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Simple, Stance Change, Truant, or Zen Mode.',
         shortDesc: 'The target\'s Ability becomes Simple.',
@@ -8175,7 +8175,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 494,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The target\'s Ability changes to match the user\'s.',
         name: 'Entrainment',
@@ -8191,7 +8191,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 495,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The target makes its move right after the user.',
         name: 'After You',
@@ -8207,7 +8207,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 496,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         shortDesc: 'Power doubles if others used Round this turn.',
         name: 'Round',
@@ -8223,7 +8223,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 497,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         shortDesc: 'Power increases when used on consecutive turns.',
         name: 'Echoed Voice',
@@ -8239,7 +8239,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 498,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Ignores the target\'s stat stage changes, including evasiveness.',
         shortDesc: 'Ignores the target\'s stat stage changes.',
@@ -8256,7 +8256,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 499,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         desc: 'Resets all of the target\'s stat stages to 0.',
         shortDesc: 'Eliminates the target\'s stat changes.',
@@ -8273,7 +8273,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 500,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Special',
         shortDesc: ' + 20 power for each of the user\'s stat boosts.',
         name: 'Stored Power',
@@ -8289,7 +8289,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 501,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects allies from priority attacks this turn.',
         name: 'Quick Guard',
@@ -8305,7 +8305,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 502,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'The user swaps positions with its ally.',
         name: 'Ally Switch',
@@ -8321,7 +8321,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 503,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: '30% chance to burn the target. Thaws target.',
         name: 'Scald',
@@ -8337,7 +8337,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 504,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2.',
         name: 'Shell Smash',
@@ -8353,7 +8353,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 505,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals the target by 50% of its max HP.',
         name: 'Heal Pulse',
@@ -8369,7 +8369,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 506,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Power doubles if the target has a major status condition.',
         shortDesc: 'Power doubles if the target has a status ailment.',
@@ -8386,7 +8386,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 507,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'User and foe fly up turn 1. Damages on turn 2.',
         name: 'Sky Drop',
@@ -8402,7 +8402,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 508,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Speed by 2 stages and its Attack by 1 stage.',
         shortDesc: 'Raises the user\'s Speed by 2 and Attack by 1.',
@@ -8419,7 +8419,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 509,
         accuracy: 90,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'Forces the target to switch to a random ally.',
         name: 'Circle Throw',
@@ -8435,7 +8435,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 510,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         shortDesc: 'Destroys the foe(s) Berry/Gem.',
         name: 'Incinerate',
@@ -8451,7 +8451,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 511,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Forces the target to move last this turn.',
         name: 'Quash',
@@ -8467,7 +8467,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 512,
         accuracy: 100,
-        basePower: 55,
+        basePower: '55',
         category: 'Physical',
         desc: 'Power doubles if the user has no held item.',
         shortDesc: 'Power doubles if the user has no held item.',
@@ -8484,7 +8484,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 513,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User becomes the same type as the target.',
         name: 'Reflect Type',
@@ -8500,7 +8500,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 514,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         shortDesc: 'Power doubles if an ally fainted last turn.',
         name: 'Retaliate',
@@ -8516,7 +8516,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 515,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'Does damage equal to the user\'s HP. User faints.',
         name: 'Final Gambit',
@@ -8532,7 +8532,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 516,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User passes its held item to the target.',
         name: 'Bestow',
@@ -8548,7 +8548,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 517,
         accuracy: 50,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         desc: 'Has a 100% chance to burn the target.',
         shortDesc: '100% chance to burn the target.',
@@ -8565,7 +8565,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 518,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'Use with Grass or Fire Pledge for added effect.',
         name: 'Water Pledge',
@@ -8581,7 +8581,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 519,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'Use with Grass or Water Pledge for added effect.',
         name: 'Fire Pledge',
@@ -8597,7 +8597,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 520,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'Use with Fire or Water Pledge for added effect.',
         name: 'Grass Pledge',
@@ -8613,7 +8613,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 521,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Special',
         shortDesc: 'User switches out after damaging the target.',
         name: 'Volt Switch',
@@ -8629,7 +8629,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 522,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         shortDesc: '100% chance to lower the foe(s) Sp. Atk by 1.',
         name: 'Struggle Bug',
@@ -8645,7 +8645,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 523,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower adjacent Pkmn Speed by 1.',
@@ -8662,7 +8662,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 524,
         accuracy: 90,
-        basePower: 60,
+        basePower: '60',
         category: 'Special',
         shortDesc: 'Always results in a critical hit.',
         name: 'Frost Breath',
@@ -8678,7 +8678,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 525,
         accuracy: 90,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'Forces the target to switch to a random ally.',
         name: 'Dragon Tail',
@@ -8694,7 +8694,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 526,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Attack and Special Attack by 1 stage.',
         shortDesc: 'Raises the user\'s Attack and Sp. Atk by 1.',
@@ -8711,7 +8711,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 527,
         accuracy: 95,
-        basePower: 55,
+        basePower: '55',
         category: 'Special',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower the foe(s) Speed by 1.',
@@ -8728,7 +8728,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 528,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Has 1/4 recoil.',
         name: 'Wild Charge',
@@ -8744,7 +8744,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 529,
         accuracy: 95,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a higher chance for a critical hit.',
         shortDesc: 'High critical hit ratio.',
@@ -8761,7 +8761,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 530,
         accuracy: 90,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         shortDesc: 'Hits 2 times in one turn.',
         name: 'Dual Chop',
@@ -8777,7 +8777,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 531,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -8794,7 +8794,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 532,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Horn Leech',
@@ -8810,7 +8810,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 533,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Ignores the target\'s stat stage changes, including evasiveness.',
         shortDesc: 'Ignores the target\'s stat stage changes.',
@@ -8827,7 +8827,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 534,
         accuracy: 95,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         desc: 'Has a 50% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '50% chance to lower the target\'s Defense by 1.',
@@ -8844,7 +8844,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 535,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Physical',
         shortDesc: 'More power the heavier the user than the target.',
         name: 'Heat Crash',
@@ -8860,7 +8860,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 536,
         accuracy: 90,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 50% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '50% chance to lower the target\'s accuracy by 1.',
@@ -8877,7 +8877,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 537,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Physical',
         shortDesc: '30% chance to flinch the target.',
         name: 'Steamroller',
@@ -8893,7 +8893,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 538,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Raises the user\'s Defense by 3 stages.',
         shortDesc: 'Raises the user\'s Defense by 3.',
@@ -8910,7 +8910,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 539,
         accuracy: 95,
-        basePower: 85,
+        basePower: '85',
         category: 'Special',
         desc: 'Has a 40% chance to lower the target\'s accuracy by 1 stage.',
         shortDesc: '40% chance to lower the target\'s accuracy by 1.',
@@ -8927,7 +8927,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 540,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         shortDesc: 'Damages target based on Defense, not Sp. Def.',
         name: 'Psystrike',
@@ -8943,7 +8943,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 541,
         accuracy: 85,
-        basePower: 25,
+        basePower: '25',
         category: 'Physical',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Tail Slap',
@@ -8959,7 +8959,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 542,
         accuracy: 70,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         shortDesc: '30% chance to confuse target. Can\'t miss in rain.',
         name: 'Hurricane',
@@ -8975,7 +8975,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 543,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         shortDesc: 'Has 1/4 recoil.',
         name: 'Head Charge',
@@ -8991,7 +8991,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 544,
         accuracy: 85,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'Hits 2 times in one turn.',
         name: 'Gear Grind',
@@ -9007,7 +9007,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 545,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         desc: 'Has a 30% chance to burn the target.',
         shortDesc: '30% chance to burn adjacent Pokemon.',
@@ -9024,7 +9024,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 546,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         desc: 'This move\'s type depends on the user\'s held Drive.',
         shortDesc: 'Type varies based on the held Drive.',
@@ -9041,7 +9041,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 547,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Special',
         shortDesc: '10% chance to sleep foe(s). Meloetta transforms.',
         name: 'Relic Song',
@@ -9057,7 +9057,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 548,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Special',
         shortDesc: 'Damages target based on Defense, not Sp. Def.',
         name: 'Secret Sword',
@@ -9073,7 +9073,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 549,
         accuracy: 95,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
         shortDesc: '100% chance to lower the foe(s) Speed by 1.',
@@ -9090,7 +9090,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 550,
         accuracy: 85,
-        basePower: 130,
+        basePower: '130',
         category: 'Physical',
         desc: 'Has a 20% chance to paralyze the target.',
         shortDesc: '20% chance to paralyze the target.',
@@ -9107,7 +9107,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 551,
         accuracy: 85,
-        basePower: 130,
+        basePower: '130',
         category: 'Special',
         desc: 'Has a 20% chance to burn the target.',
         shortDesc: '20% chance to burn the target.',
@@ -9124,7 +9124,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 552,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'Has a 50% chance to raise the user\'s Special Attack by 1 stage.',
         shortDesc: '50% chance to raise the user\'s Sp. Atk by 1.',
@@ -9141,7 +9141,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 553,
         accuracy: 90,
-        basePower: 140,
+        basePower: '140',
         category: 'Physical',
         shortDesc: 'Charges turn 1. Hits turn 2. 30% paralyze.',
         name: 'Freeze Shock',
@@ -9157,7 +9157,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 554,
         accuracy: 90,
-        basePower: 140,
+        basePower: '140',
         category: 'Special',
         shortDesc: 'Charges turn 1. Hits turn 2. 30% burn.',
         name: 'Ice Burn',
@@ -9173,7 +9173,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 555,
         accuracy: 95,
-        basePower: 55,
+        basePower: '55',
         category: 'Special',
         shortDesc: '100% chance to lower the foe(s) Sp. Atk by 1.',
         name: 'Snarl',
@@ -9189,7 +9189,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 556,
         accuracy: 90,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -9206,7 +9206,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 557,
         accuracy: 95,
-        basePower: 180,
+        basePower: '180',
         category: 'Physical',
         shortDesc: 'Lowers the user\'s Defense, Sp. Def, Speed by 1.',
         name: 'V-create',
@@ -9222,7 +9222,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 558,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         shortDesc: 'Power doubles if used after Fusion Bolt.',
         name: 'Fusion Flare',
@@ -9238,7 +9238,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 559,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'Power doubles if used after Fusion Flare.',
         name: 'Fusion Bolt',
@@ -9254,7 +9254,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 560,
         accuracy: 95,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'Combines Flying in its type effectiveness.',
         name: 'Flying Press',
@@ -9270,7 +9270,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 561,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects allies from attacks. First turn out only.',
         name: 'Mat Block',
@@ -9286,7 +9286,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 562,
         accuracy: 90,
-        basePower: 120,
+        basePower: '120',
         category: 'Special',
         shortDesc: 'Cannot be selected until the user eats a Berry.',
         name: 'Belch',
@@ -9302,7 +9302,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 563,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises Atk, Sp. Atk of grounded Grass types by 1.',
         name: 'Rototiller',
@@ -9318,7 +9318,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 564,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers Speed of grounded foes by 1 on switch-in.',
         name: 'Sticky Web',
@@ -9334,7 +9334,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 565,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         shortDesc: 'Raises user\'s Attack by 3 if this KOes the target.',
         name: 'Fell Stinger',
@@ -9350,7 +9350,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 566,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Disappears turn 1. Hits turn 2. Breaks protection.',
         name: 'Phantom Force',
@@ -9366,7 +9366,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 567,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Adds Ghost to the target\'s type(s).',
         name: 'Trick-or-Treat',
@@ -9382,7 +9382,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 568,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack and Special Attack by 1 stage.',
         shortDesc: 'Lowers the target\'s Attack and Sp. Atk by 1.',
@@ -9399,7 +9399,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 569,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Causes Normal-type moves to become Electric type this turn.',
         shortDesc: 'Normal moves become Electric type this turn.',
@@ -9416,7 +9416,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 570,
         accuracy: 100,
-        basePower: 65,
+        basePower: '65',
         category: 'Special',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Parabolic Charge',
@@ -9432,7 +9432,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 571,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Adds Grass to the target\'s type(s).',
         name: 'Forest\'s Curse',
@@ -9448,7 +9448,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 572,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent Pokemon.',
@@ -9465,7 +9465,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 573,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Special',
         shortDesc: '10% chance to freeze. Super effective on Water.',
         name: 'Freeze-Dry',
@@ -9481,7 +9481,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 574,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy. Hits foes.',
@@ -9498,7 +9498,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 575,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers target\'s Atk, Sp. Atk by 1. User switches.',
         name: 'Parting Shot',
@@ -9514,7 +9514,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 576,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Inverts the target\'s stat stages.',
         name: 'Topsy-Turvy',
@@ -9530,7 +9530,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 577,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Special',
         shortDesc: 'User recovers 75% of the damage dealt.',
         name: 'Draining Kiss',
@@ -9546,7 +9546,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 578,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects allies from Status moves this turn.',
         name: 'Crafty Shield',
@@ -9562,7 +9562,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 579,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises Defense by 1 of all active Grass types.',
         name: 'Flower Shield',
@@ -9578,7 +9578,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 580,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: '5 turns. Grounded: +Grass power,+1/16 max HP.',
         name: 'Grassy Terrain',
@@ -9594,7 +9594,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 581,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: '5 turns. Can\'t status,-Dragon power vs grounded.',
         name: 'Misty Terrain',
@@ -9610,7 +9610,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 582,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Changes the target\'s move to Electric this turn.',
         name: 'Electrify',
@@ -9626,7 +9626,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 583,
         accuracy: 90,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a 10% chance to lower the target\'s Attack by 1 stage.',
         shortDesc: '10% chance to lower the target\'s Attack by 1.',
@@ -9643,7 +9643,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 584,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -9660,7 +9660,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 585,
         accuracy: 100,
-        basePower: 95,
+        basePower: '95',
         category: 'Special',
         shortDesc: '30% chance to lower the target\'s Sp. Atk by 1.',
         name: 'Moonblast',
@@ -9676,7 +9676,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 586,
         accuracy: 100,
-        basePower: 140,
+        basePower: '140',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent Pokemon.',
@@ -9693,7 +9693,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 587,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Prevents all Pokemon from switching next turn.',
         name: 'Fairy Lock',
@@ -9709,7 +9709,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 588,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects from attacks. Contact: lowers Atk by 2.',
         name: 'King\'s Shield',
@@ -9725,7 +9725,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 589,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack by 1 stage.',
         shortDesc: 'Lowers the target\'s Attack by 1.',
@@ -9742,7 +9742,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 590,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Special Attack by 1 stage.',
         shortDesc: 'Lowers the target\'s Sp. Atk by 1.',
@@ -9759,7 +9759,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 591,
         accuracy: 95,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Has a 50% chance to raise the user\'s Defense by 2 stages.',
         shortDesc: '50% chance to raise user\'s Def by 2 for each hit.',
@@ -9776,7 +9776,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 592,
         accuracy: 95,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         shortDesc: '30% chance to burn the target.',
         name: 'Steam Eruption',
@@ -9792,7 +9792,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 593,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'Breaks the target\'s protection for this turn.',
         name: 'Hyperspace Hole',
@@ -9808,7 +9808,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 594,
         accuracy: 100,
-        basePower: 15,
+        basePower: '15',
         category: 'Special',
         shortDesc: 'Hits 2-5 times in one turn.',
         name: 'Water Shuriken',
@@ -9824,7 +9824,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 595,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Special',
         shortDesc: '100% chance to lower the target\'s Sp. Atk by 1.',
         name: 'Mystical Fire',
@@ -9840,7 +9840,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 596,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects from moves. Contact: loses 1/8 max HP.',
         name: 'Spiky Shield',
@@ -9856,7 +9856,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 597,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises an ally\'s Sp. Def by 1.',
         name: 'Aromatic Mist',
@@ -9872,7 +9872,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 598,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Special Attack by 2 stages.',
         shortDesc: 'Lowers the target\'s Sp. Atk by 2.',
@@ -9889,7 +9889,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 599,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Lowers Atk, Sp. Atk, Speed of poisoned foes by 1.',
         name: 'Venom Drench',
@@ -9905,7 +9905,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 600,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'If using a Fire move, target loses 1/4 max HP.',
         name: 'Powder',
@@ -9921,7 +9921,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 601,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Charges, then raises SpA, SpD, Spe by 2 turn 2.',
         name: 'Geomancy',
@@ -9937,7 +9937,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 602,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises Def, Sp. Def of allies with Plus/Minus by 1.',
         name: 'Magnetic Flux',
@@ -9953,7 +9953,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 603,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Money falls from the sky.',
         shortDesc: 'No competitive use.',
@@ -9970,7 +9970,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 604,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: '5 turns. Grounded: +Electric power, can\'t sleep.',
         name: 'Electric Terrain',
@@ -9986,7 +9986,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 605,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent foes.',
@@ -10003,7 +10003,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 606,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'It is your birthday.',
         shortDesc: 'No competitive use. Or any use.',
@@ -10020,7 +10020,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 608,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack by 1 stage.',
         shortDesc: 'Lowers the target\'s Attack by 1.',
@@ -10037,7 +10037,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 609,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Physical',
         desc: 'Has a 100% chance to paralyze the target.',
         shortDesc: '100% chance to paralyze the target.',
@@ -10054,7 +10054,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 610,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'Leaves the target with at least 1 HP.',
         shortDesc: 'Always leaves the target with at least 1 HP.',
@@ -10071,7 +10071,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 611,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Special',
         shortDesc: 'Traps and damages the target for 4-5 turns.',
         name: 'Infestation',
@@ -10087,7 +10087,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 612,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'Has a 100% chance to raise the user\'s Attack by 1 stage.',
         shortDesc: '100% chance to raise the user\'s Attack by 1.',
@@ -10104,7 +10104,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 613,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Special',
         shortDesc: 'User recovers 75% of the damage dealt.',
         name: 'Oblivion Wing',
@@ -10120,7 +10120,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 614,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Grounds adjacent foes. First hit neutral on Flying.',
         name: 'Thousand Arrows',
@@ -10136,7 +10136,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 615,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'No competitive use. Or any use.',
         name: 'Hold Hands',
@@ -10152,7 +10152,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 615,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Hits adjacent foes. Prevents them from switching.',
         name: 'Thousand Waves',
@@ -10168,7 +10168,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 616,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent foes.',
@@ -10185,7 +10185,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 617,
         accuracy: 90,
-        basePower: 140,
+        basePower: '140',
         category: 'Special',
         shortDesc: 'Has 1/2 recoil.',
         name: 'Light of Ruin',
@@ -10201,7 +10201,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 618,
         accuracy: 85,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent foes.',
@@ -10218,7 +10218,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 619,
         accuracy: 85,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent foes.',
@@ -10235,7 +10235,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 620,
         accuracy: 100,
-        basePower: 120,
+        basePower: '120',
         category: 'Physical',
         desc: 'Lowers the user\'s Defense and Special Defense by 1 stage.',
         shortDesc: 'Lowers the user\'s Defense and Sp. Def by 1.',
@@ -10252,7 +10252,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 621,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'Hoopa-U: Lowers user\'s Def by 1; breaks protection.',
         name: 'Hyperspace Fury',
@@ -10268,7 +10268,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 622,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Breakneck Blitz',
@@ -10285,7 +10285,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 624,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'All-Out Pummeling',
@@ -10302,7 +10302,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 626,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Supersonic Skystrike',
@@ -10319,7 +10319,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 628,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Acid Downpour',
@@ -10336,7 +10336,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 630,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Tectonic Rage',
@@ -10353,7 +10353,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 632,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Continental Crush',
@@ -10370,7 +10370,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 634,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Savage Spin-Out',
@@ -10387,7 +10387,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 636,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Never-Ending Nightmare',
@@ -10404,7 +10404,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 638,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Corkscrew Crash',
@@ -10421,7 +10421,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 640,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Inferno Overdrive',
@@ -10438,7 +10438,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 642,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Hydro Vortex',
@@ -10455,7 +10455,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 644,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Bloom Doom',
@@ -10472,7 +10472,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 646,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Gigavolt Havoc',
@@ -10489,7 +10489,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 648,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Shattered Psyche',
@@ -10506,7 +10506,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 650,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Subzero Slammer',
@@ -10523,7 +10523,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 652,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Devastating Drake',
@@ -10540,7 +10540,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 654,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Black Hole Eclipse',
@@ -10557,7 +10557,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 656,
         accuracy: 100,
-        basePower: 1,
+        basePower: '1',
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
         name: 'Twinkle Tackle',
@@ -10574,7 +10574,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 658,
         accuracy: 100,
-        basePower: 210,
+        basePower: '210',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -10592,7 +10592,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 659,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User restores 1/2 its max HP; 2/3 in Sandstorm.',
         name: 'Shore Up',
@@ -10608,7 +10608,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 660,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Fails unless it is the user\'s first turn on the field.',
         shortDesc: 'Hits first. First turn out only.',
@@ -10625,7 +10625,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 661,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Protects from moves. Contact: poison.',
         name: 'Baneful Bunker',
@@ -10641,7 +10641,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 662,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         shortDesc: 'Prevents the target from switching out.',
         name: 'Spirit Shackle',
@@ -10657,7 +10657,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 663,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         desc: 'Ignores the target\'s stat stage changes, including evasiveness.',
         shortDesc: 'Ignores the target\'s stat stage changes.',
@@ -10674,7 +10674,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 664,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'If the user has not fainted, the target is cured of its burn.',
         shortDesc: 'The target is cured of its burn.',
@@ -10691,7 +10691,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 665,
         accuracy: 90,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         desc: 'Lowers the user\'s Speed by 1 stage.',
         shortDesc: 'Lowers the user\'s Speed by 1.',
@@ -10708,7 +10708,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 666,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Heals the target by 50% of its max HP.',
         name: 'Floral Healing',
@@ -10724,7 +10724,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 667,
         accuracy: 95,
-        basePower: 95,
+        basePower: '95',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -10741,7 +10741,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 668,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'User heals HP=target\'s Atk stat. Lowers Atk by 1.',
         name: 'Strength Sap',
@@ -10757,7 +10757,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 669,
         accuracy: 100,
-        basePower: 125,
+        basePower: '125',
         category: 'Physical',
         shortDesc: 'Charges turn 1. Hits turn 2. No charge in sunlight.',
         name: 'Solar Blade',
@@ -10773,7 +10773,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 670,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -10790,7 +10790,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 671,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Target\'s foes\' moves are redirected to it this turn.',
         name: 'Spotlight',
@@ -10806,7 +10806,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 672,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Speed by 1 stage and poisons it.',
         shortDesc: 'Lowers the target\'s Speed by 1 and poisons it.',
@@ -10823,7 +10823,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 673,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Next turn, the user\'s attack will be a critical hit.',
         name: 'Laser Focus',
@@ -10839,7 +10839,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 674,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises Atk, Sp. Atk of allies with Plus/Minus by 1.',
         name: 'Gear Up',
@@ -10855,7 +10855,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 675,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'For 2 turns, the target cannot use sound-based moves.',
         shortDesc: 'For 2 turns, the target cannot use sound moves.',
@@ -10872,7 +10872,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 676,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: 'If the target is an ally, heals 50% of its max HP.',
         name: 'Pollen Puff',
@@ -10888,7 +10888,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 677,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         shortDesc: 'Prevents the target from switching out.',
         name: 'Anchor Shot',
@@ -10904,7 +10904,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 678,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: '5 turns. Grounded: +Psychic power, priority-safe.',
         name: 'Psychic Terrain',
@@ -10920,7 +10920,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 679,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 100% chance to lower the target\'s Attack by 1 stage.',
         shortDesc: '100% chance to lower the target\'s Attack by 1.',
@@ -10937,7 +10937,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 680,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 100% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '100% chance to lower the target\'s Defense by 1.',
@@ -10954,7 +10954,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 681,
         accuracy: 100,
-        basePower: 20,
+        basePower: '20',
         category: 'Physical',
         shortDesc: ' + 20 power for each of the user\'s stat boosts.',
         name: 'Power Trip',
@@ -10970,7 +10970,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 682,
         accuracy: 100,
-        basePower: 130,
+        basePower: '130',
         category: 'Special',
         shortDesc: 'User\'s Fire type becomes typeless; must be Fire.',
         name: 'Burn Up',
@@ -10986,7 +10986,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 683,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The user swaps its raw Speed stat with the target.',
         shortDesc: 'Swaps Speed stat with target.',
@@ -11003,7 +11003,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 684,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'This move does not check accuracy.',
         shortDesc: 'This move does not check accuracy.',
@@ -11020,7 +11020,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 685,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Cures target\'s status; heals user 1/2 maxHP if so.',
         name: 'Purify',
@@ -11036,7 +11036,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 686,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'This move\'s type depends on the user\'s primary type.',
         shortDesc: 'Type varies based on the user\'s primary type.',
@@ -11053,7 +11053,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 687,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         desc: 'If the user moves after the target, the target\'s Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target\'s Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.',
         shortDesc: 'Nullifies the foe(s) Ability if the target moves first.',
@@ -11070,7 +11070,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 688,
         accuracy: 100,
-        basePower: 70,
+        basePower: '70',
         category: 'Physical',
         desc: 'Has a 100% chance to lower the target\'s Attack by 1 stage.',
         shortDesc: '100% chance to lower the target\'s Attack by 1.',
@@ -11087,7 +11087,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 689,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'The target immediately uses its last used move. Fails if the target has not made a move, if the move has 0 PP, if the target is preparing to use Beak Blast, Focus Punch, or Shell Trap, or if the move is Assist, Beak Blast, Belch, Bide, Celebrate, Copycat, Focus Punch, Ice Ball, Instruct, King\'s Shield, Me First, Metronome, Mimic, Mirror Move, Nature Power, Outrage, Petal Dance, Rollout, Shell Trap, Sketch, Sleep Talk, Struggle, Thrash, Transform, Uproar, any two-turn move, any recharge move, or any Z-Move.',
         shortDesc: 'The target immediately uses its last used move.',
@@ -11104,7 +11104,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 690,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'Burns on contact with the user before it moves.',
         name: 'Beak Blast',
@@ -11120,7 +11120,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 691,
         accuracy: 100,
-        basePower: 110,
+        basePower: '110',
         category: 'Special',
         desc: 'Lowers the user\'s Defense by 1 stage.',
         shortDesc: 'Lowers the user\'s Defense by 1.',
@@ -11137,7 +11137,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 692,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -11154,7 +11154,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 693,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect. Hits adjacent Pokemon.',
@@ -11171,7 +11171,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 694,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'For 5 turns, damage to allies is halved. Hail only.',
         name: 'Aurora Veil',
@@ -11187,7 +11187,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 695,
         accuracy: 100,
-        basePower: 180,
+        basePower: '180',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -11205,7 +11205,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 696,
         accuracy: 100,
-        basePower: 180,
+        basePower: '180',
         category: 'Physical',
         shortDesc: 'Damage doubles if the target used Minimize.',
         name: 'Malicious Moonsault',
@@ -11222,7 +11222,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 697,
         accuracy: 100,
-        basePower: 195,
+        basePower: '195',
         category: 'Special',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -11240,7 +11240,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 698,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'Does damage equal to 3/4 target\'s current HP.',
         name: 'Guardian of Alola',
@@ -11257,7 +11257,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 699,
         accuracy: 100,
-        basePower: 195,
+        basePower: '195',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -11275,7 +11275,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 700,
         accuracy: 100,
-        basePower: 175,
+        basePower: '175',
         category: 'Special',
         desc: 'Has a 100% chance to paralyze the target.',
         shortDesc: '100% chance to paralyze the target.',
@@ -11293,7 +11293,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 701,
         accuracy: 100,
-        basePower: 210,
+        basePower: '210',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -11311,7 +11311,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 702,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         shortDesc: 'Raises user\'s Atk, Def, SpA, SpD, and Spe by 2.',
         name: 'Extreme Evoboost',
@@ -11328,7 +11328,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 703,
         accuracy: 100,
-        basePower: 185,
+        basePower: '185',
         category: 'Special',
         desc: 'The terrain becomes Psychic Terrain.',
         shortDesc: 'Summons Psychic Terrain.',
@@ -11346,7 +11346,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 704,
         accuracy: 100,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User must take physical damage before moving.',
         name: 'Shell Trap',
@@ -11362,7 +11362,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 705,
         accuracy: 90,
-        basePower: 130,
+        basePower: '130',
         category: 'Special',
         desc: 'Lowers the user\'s Special Attack by 2 stages.',
         shortDesc: 'Lowers the user\'s Sp. Atk by 2.',
@@ -11379,7 +11379,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 706,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         shortDesc: 'Destroys screens, unless the target is immune.',
         name: 'Psychic Fangs',
@@ -11395,7 +11395,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 707,
         accuracy: 100,
-        basePower: 75,
+        basePower: '75',
         category: 'Physical',
         shortDesc: 'Power doubles if the user\'s last move failed.',
         name: 'Stomping Tantrum',
@@ -11411,7 +11411,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 708,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         desc: 'Has a 20% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '20% chance to lower the target\'s Defense by 1.',
@@ -11428,7 +11428,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 709,
         accuracy: 100,
-        basePower: 40,
+        basePower: '40',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'Usually goes first.',
@@ -11445,7 +11445,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 710,
         accuracy: 100,
-        basePower: 85,
+        basePower: '85',
         category: 'Physical',
         desc: 'Has a 20% chance to lower the target\'s Defense by 1 stage.',
         shortDesc: '20% chance to lower the target\'s Defense by 1.',
@@ -11462,7 +11462,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 711,
         accuracy: 100,
-        basePower: 160,
+        basePower: '160',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
         name: 'Prismatic Laser',
@@ -11478,7 +11478,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 712,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         shortDesc: 'Steals target\'s boosts before dealing damage.',
         name: 'Spectral Thief',
@@ -11494,7 +11494,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 713,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'Ignores the Abilities of other Pokemon.',
         name: 'Sunsteel Strike',
@@ -11510,7 +11510,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 714,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         shortDesc: 'Ignores the Abilities of other Pokemon.',
         name: 'Moongeist Beam',
@@ -11526,7 +11526,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 715,
         accuracy: 100,
-        basePower: 0,
+        basePower: '0',
         category: 'Status',
         desc: 'Lowers the target\'s Attack and Special Attack by 1 stage.',
         shortDesc: 'Lowers the target\'s Attack and Sp. Atk by 1.',
@@ -11543,7 +11543,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 716,
         accuracy: 100,
-        basePower: 80,
+        basePower: '80',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -11560,7 +11560,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 717,
         accuracy: 90,
-        basePower: 0,
+        basePower: '0',
         category: 'Special',
         shortDesc: 'Does damage equal to 1/2 target\'s current HP.',
         name: 'Nature\'s Madness',
@@ -11576,7 +11576,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 718,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'This move\'s type depends on the user\'s held Memory.',
         shortDesc: 'Type varies based on the held Memory.',
@@ -11593,7 +11593,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 719,
         accuracy: 100,
-        basePower: 195,
+        basePower: '195',
         category: 'Special',
         desc: 'Has a very high chance for a critical hit.',
         shortDesc: 'Very high critical hit ratio.',
@@ -11611,7 +11611,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 720,
         accuracy: 100,
-        basePower: 150,
+        basePower: '150',
         category: 'Special',
         shortDesc: 'User loses 50% max HP. Hits adjacent Pokemon.',
         name: 'Mind Blown',
@@ -11627,7 +11627,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 721,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Physical',
         shortDesc: 'Normal moves become Electric type this turn.',
         name: 'Plasma Fists',
@@ -11643,7 +11643,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 722,
         accuracy: 100,
-        basePower: 100,
+        basePower: '100',
         category: 'Special',
         shortDesc: 'Physical if user\'s Atk > Sp. Atk. Ignores Abilities.',
         name: 'Photon Geyser',
@@ -11659,7 +11659,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 723,
         accuracy: 100,
-        basePower: 200,
+        basePower: '200',
         category: 'Special',
         shortDesc: 'Physical if user\'s Atk > Sp. Atk. Ignores Abilities.',
         name: 'Light That Burns the Sky',
@@ -11676,7 +11676,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 724,
         accuracy: 100,
-        basePower: 200,
+        basePower: '200',
         category: 'Physical',
         shortDesc: 'Ignores the Abilities of other Pokemon.',
         name: 'Searing Sunraze Smash',
@@ -11693,7 +11693,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 725,
         accuracy: 100,
-        basePower: 200,
+        basePower: '200',
         category: 'Special',
         shortDesc: 'Ignores the Abilities of other Pokemon.',
         name: 'Menacing Moonraze Maelstrom',
@@ -11710,7 +11710,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 726,
         accuracy: 100,
-        basePower: 190,
+        basePower: '190',
         category: 'Physical',
         desc: 'No additional effect.',
         shortDesc: 'No additional effect.',
@@ -11728,7 +11728,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 727,
         accuracy: 100,
-        basePower: 190,
+        basePower: '190',
         category: 'Physical',
         shortDesc: 'Ends the effects of Terrain.',
         name: 'Splintered Stormshards',
@@ -11745,7 +11745,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 728,
         accuracy: 100,
-        basePower: 185,
+        basePower: '185',
         category: 'Special',
         shortDesc: 'Raises the user\'s Atk/Def/SpAtk/SpDef/Spe by 1.',
         name: 'Clangorous Soulblaze',
@@ -11762,7 +11762,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 729,
         accuracy: 100,
-        basePower: 50,
+        basePower: '50',
         category: 'Physical',
         desc: 'Will always result in a critical hit.',
         shortDesc: 'Nearly always goes first. Always crits.',
@@ -11779,7 +11779,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 730,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 30% chance to paralyze the target.',
         shortDesc: '30% chance to paralyze the target.',
@@ -11796,7 +11796,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 731,
         accuracy: 95,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a 30% chance to flinch the target.',
         shortDesc: '30% chance to flinch the target.',
@@ -11829,7 +11829,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 733,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: 'User recovers 50% of the damage dealt.',
         name: 'Bouncy Bubble',
@@ -11845,7 +11845,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 734,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Has a 100% chance to paralyze the foe.',
         shortDesc: '100% chance to paralyze the foe.',
@@ -11862,7 +11862,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 735,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'Has a 100% chance to burn the foe.',
         shortDesc: '100% chance to burn the foe.',
@@ -11879,7 +11879,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 736,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'This move summons Light Screen for 5 turns upon use.',
         shortDesc: 'Summons Light Screen.',
@@ -11896,7 +11896,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 737,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'This move summons Reflect for 5 turns upon use.',
         shortDesc: 'Summons Reflect.',
@@ -11913,7 +11913,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 738,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Physical',
         desc: 'This move summons Leech Seed on the foe.',
         shortDesc: 'Summons Leech Seed.',
@@ -11930,7 +11930,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 739,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         desc: 'Resets the stat stages of all active Pokemon to 0.',
         shortDesc: 'Eliminates all stat changes.',
@@ -11947,7 +11947,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 740,
         accuracy: 100,
-        basePower: 90,
+        basePower: '90',
         category: 'Special',
         shortDesc: 'Cures the user\'s party of all status conditions.',
         name: 'Sparkly Swirl',
@@ -11979,7 +11979,7 @@ const moves = new Collection<string, Pokemon.Move>(
       {
         num: 742,
         accuracy: 100,
-        basePower: 60,
+        basePower: '60',
         category: 'Physical',
         shortDesc: 'Hits twice. 30% chance to flinch.',
         name: 'Double Iron Bash',

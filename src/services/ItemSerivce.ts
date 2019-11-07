@@ -1,8 +1,8 @@
-import {GraphQLJSONObject} from 'graphql-type-json';
-import {Arg, Args} from 'type-graphql';
-import {itemAliases} from '../assets/aliases';
+import { GraphQLJSONObject } from 'graphql-type-json';
+import { Arg, Args } from 'type-graphql';
+import { itemAliases } from '../assets/aliases';
 import items from '../assets/items';
-import {SimpleFuseOptions} from '../typings/common';
+import { SimpleFuseOptions } from '../typings/common';
 import FuzzySearch from '../utils/FuzzySearch';
 import ItemEntry from '../structures/ItemEntry';
 import Util from '../utils/util';

@@ -1,12 +1,12 @@
-import {Arg, Args} from 'type-graphql';
+import { Arg, Args } from 'type-graphql';
 import FuzzySearch from '../utils/FuzzySearch';
 import pokedex from '../assets/pokedex';
-import {pokedexAliases} from '../assets/aliases';
+import { pokedexAliases } from '../assets/aliases';
 import Pokemon from '../typings/pokemon';
-import {SimpleFuseOptions} from '../typings/common';
+import { SimpleFuseOptions } from '../typings/common';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
-import {GraphQLJSONObject} from 'graphql-type-json';
+import { GraphQLJSONObject } from 'graphql-type-json';
 import GenderEntry from '../structures/GenderEntry';
 import Util from '../utils/util';
 import AbilitiesEntry from '../structures/AbilitiesEntry';
@@ -31,12 +31,12 @@ export default class DexService {
     }
 
     const queryResults: DexEntry[] = [];
-    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], {threshold: 0.3, ...fuseOptions});
+    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyPokemon.run(pokemon);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], {threshold: 0.4}).run(pokemon);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).run(pokemon);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyPokemon.run(fuzzyAliasResult[0].name);
@@ -120,8 +120,8 @@ export default class DexService {
       import('../assets/formats.json')
     ]);
 
-    const {default: flavors} = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
-    const {default: tiers} = tiersImport as { default: Record<string, string> };
+    const { default: flavors } = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
+    const { default: tiers } = tiersImport as { default: Record<string, string> };
 
     const pokemonData = new DexDetails();
     const genderData = new GenderEntry();

@@ -1,4 +1,4 @@
-import {Arg, Args, Query, Resolver} from 'type-graphql';
+import { Arg, Args, Query, Resolver } from 'type-graphql';
 import ItemService from '../services/ItemSerivce';
 import ItemEntry from '../structures/ItemEntry';
 import ItemPaginatedArgs from '../arguments/ItemPaginatedArgs';

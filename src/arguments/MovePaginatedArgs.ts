@@ -3,6 +3,6 @@ import PaginatedArgs from './PaginatedArgs';
 
 @ArgsType()
 export default class MovePaginatedArgs extends PaginatedArgs {
-  @Field(() => String, { description: 'The move to look up'})
+  @Field(() => String, { description: 'The move to look up' })
   move: string;
 }

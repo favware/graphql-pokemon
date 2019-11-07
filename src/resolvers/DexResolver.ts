@@ -1,9 +1,10 @@
-import {Arg, Args, Query, Resolver} from 'type-graphql';
+import { Arg, Args, Query, Resolver } from 'type-graphql';
 import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import Util from '../utils/util';
+import { GraphQLJSONObject } from 'graphql-type-json';
 
 @Resolver(DexDetails)
 export default class DexResolver {
@@ -85,7 +86,7 @@ export default class DexResolver {
     return dexEntries;
   }
 
-  @Query(() => DexEntry, { description: 'Gets the dex entry for a Pokémon based on their species name' })
+  @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their species name' })
   getDexEntryBySpeciesName(@Arg('pokemon') pokemon: string) {
     const dexEntry = this.dexService.findBySpecies(pokemon);
     if (dexEntry === undefined) {
@@ -95,7 +96,7 @@ export default class DexResolver {
     return dexEntry;
   }
 
-  @Query(() => DexEntry, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
+  @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
   getDexEntryByDexNumber(@Arg('num') num: number) {
     const dexEntry = this.dexService.findByNum(num);
     if (dexEntry === undefined) {

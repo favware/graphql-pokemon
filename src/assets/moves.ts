@@ -5103,6 +5103,7 @@ const moves = new Collection<string, Pokemon.Move>(
         basePower: '150',
         category: 'Special',
         shortDesc: 'User cannot move next turn.',
+        desc: 'If this move is successful, the user must recharge on the following turn and cannot select a move.',
         name: 'Blast Burn',
         pp: 5,
         priority: 0,

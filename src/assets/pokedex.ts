@@ -18848,6 +18848,8 @@ const pokedex = new Collection<string, Pokemon.DexEntry>(
         heightm: 2.5,
         weightkg: 140,
         color: 'Green',
+        prevo: 'electrelk',
+        evoLevel: 34,
         eggGroups: [ 'Field' ],
       }
     ],
@@ -18865,6 +18867,8 @@ const pokedex = new Collection<string, Pokemon.DexEntry>(
         heightm: 2.2,
         weightkg: 205,
         color: 'Red',
+        prevo: 'smoguana',
+        evoLevel: 36,
         eggGroups: [ 'Field', 'Monster' ],
       }
     ],
@@ -18882,7 +18886,26 @@ const pokedex = new Collection<string, Pokemon.DexEntry>(
         heightm: 2,
         weightkg: 120,
         color: 'Blue',
+        prevo: 'coribalis',
+        evoLevel: 34,
         eggGroups: [ 'Water 1', 'Fairy' ],
+      }
+    ],
+    [
+      'equilibra',
+      {
+        num: -28,
+        species: 'equilibra',
+        types: [ 'Steel', 'Ground' ],
+        gender: 'N',
+        baseStats: {
+          hp: 102, atk: 50, def: 96, spa: 133, spd: 118, spe: 60,
+        },
+        abilities: {first: 'Levitate', second: 'Bulletproof', hidden: 'Justified'},
+        heightm: 0.8,
+        weightkg: 51.3,
+        color: 'Brown',
+        eggGroups: [ 'Mineral' ],
       }
     ],
     [
@@ -19234,6 +19257,114 @@ const pokedex = new Collection<string, Pokemon.DexEntry>(
         color: 'Brown',
         evos: [ 'jumbao' ],
         eggGroups: [ 'Grass' ],
+      }
+    ],
+    [
+      'fawnifer', {
+        num: -121,
+        species: 'fawnifer',
+        types: [ 'Grass' ],
+        genderRatio: {M: 0.875, F: 0.125},
+        baseStats: {
+          hp: 49, atk: 61, def: 42, spa: 52, spd: 40, spe: 76,
+        },
+        abilities: {first: 'Overgrow', hidden: 'Lightning Rod'},
+        heightm: 0.7,
+        weightkg: 6.9,
+        color: 'Green',
+        evos: [ 'electrelk' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'electrelk', {
+        num: -122,
+        species: 'electrelk',
+        types: [ 'Grass', 'Electric' ],
+        genderRatio: {M: 0.875, F: 0.125},
+        baseStats: {
+          hp: 59, atk: 81, def: 67, spa: 57, spd: 55, spe: 101,
+        },
+        abilities: {first: 'Overgrow', hidden: 'Galvanize'},
+        heightm: 1.4,
+        weightkg: 41.5,
+        color: 'Green',
+        prevo: 'fawnifer',
+        evoLevel: 17,
+        evos: [ 'caribolt' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'smogecko', {
+        num: -123,
+        species: 'smogecko',
+        types: [ 'Fire' ],
+        genderRatio: {M: 0.875, F: 0.125},
+        baseStats: {
+          hp: 48, atk: 66, def: 43, spa: 58, spd: 48, spe: 56,
+        },
+        abilities: {first: 'Blaze', hidden: 'Technician'},
+        heightm: 0.5,
+        weightkg: 8.5,
+        color: 'Red',
+        evos: [ 'smoguana' ],
+        eggGroups: [ 'Field', 'Monster' ],
+      }
+    ],
+    [
+      'smoguana', {
+        num: -124,
+        species: 'smoguana',
+        types: [ 'Fire', 'Ground' ],
+        genderRatio: {M: 0.875, F: 0.125},
+        baseStats: {
+          hp: 68, atk: 86, def: 53, spa: 68, spd: 68, spe: 76,
+        },
+        abilities: {first: 'Blaze', hidden: 'Technician'},
+        heightm: 1.5,
+        weightkg: 22.2,
+        color: 'Red',
+        prevo: 'smogecko',
+        evoLevel: 15,
+        evos: [ 'smokomodo' ],
+        eggGroups: [ 'Field', 'Monster' ],
+      }
+    ],
+    [
+      'swirlpool', {
+        num: -125,
+        species: 'swirlpool',
+        types: [ 'Water' ],
+        genderRatio: {M: 0.875, F: 0.125},
+        baseStats: {
+          hp: 61, atk: 49, def: 70, spa: 50, spd: 62, spe: 28,
+        },
+        abilities: {first: 'Torrent', hidden: 'Poison Heal'},
+        heightm: 0.5,
+        weightkg: 7,
+        color: 'Blue',
+        evos: [ 'coribalis' ],
+        eggGroups: [ 'Water 1', 'Fairy' ],
+      }
+    ],
+    [
+      'coribalis', {
+        num: -126,
+        species: 'coribalis',
+        types: [ 'Water', 'Bug' ],
+        genderRatio: {M: 0.875, F: 0.125},
+        baseStats: {
+          hp: 76, atk: 69, def: 90, spa: 65, spd: 77, spe: 43,
+        },
+        abilities: {first: 'Torrent', hidden: 'Poison Heal'},
+        heightm: 1.4,
+        weightkg: 24.5,
+        color: 'Blue',
+        prevo: 'swirlpool',
+        evoLevel: 17,
+        evos: [ 'snaelstrom' ],
+        eggGroups: [ 'Water 1', 'Fairy' ],
       }
     ],
     [

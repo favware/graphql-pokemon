@@ -746,6 +746,7 @@ const abilities = new Collection<string, Pokemon.Ability>(
     [
       'simple',
       {
+        desc: 'When this Pokemon\'s stat stages are raised or lowered, the effect is doubled instead. This Ability does not affect stat stage increases received from Z-Power effects that happen before a Z-Move is used.',
         shortDesc: 'When this Pokemon\'s stat stages are raised or lowered, the effect is doubled instead.',
         name: 'Simple',
         num: 86,
@@ -1086,6 +1087,7 @@ const abilities = new Collection<string, Pokemon.Ability>(
     [
       'contrary',
       {
+        desc: 'If this Pokemon has a stat stage raised it is lowered instead, and vice versa. This Ability does not affect stat stage increases received from Z-Power effects that happen before a Z-Move is used.',
         shortDesc: 'If this Pokemon has a stat stage raised it is lowered instead, and vice versa.',
         name: 'Contrary',
         num: 126,

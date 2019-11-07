@@ -12,6 +12,14 @@
 
 ---
 
+**Table of Contents**
+
+- [Install](#install)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+
+---
+
 **Project Status**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/master/LICENSE.md)
@@ -72,24 +80,8 @@ fetch('https://eu-west1-favware-graphql.cloudfunctions.net/api', {
 .then(json => console.log(json.data))
 ```
 
-## Supported Queries
+# API Documentation
 
-### getPokemonDetails
+For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api).
 
-Gets details on a single pokemon based on species name.You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.Reversal is applied before pagination
-
-### getPokemonDetailsByFuzzy
-
-Gets details on a single pokemon based on a fuzzy search.You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.Reversal is applied before pagination!
-
-### getDexEntries
-
-Gets dex entries for pokemon based on a fuzzy searchYou can supply a skip and take to paginate the results and reverse to show the results least to most well matchesReversal is applied before pagination!
-
-### getDexEntryBySpeciesName
-
-Gets the dex entry for a pokemon based on their species name
-
-###  getDexEntryByDexNumber
-
-Gets the dex entry for a pokemon based on their dex number
+**Please note that if you visited my site normally before a cache-clear refresh (Control + F5) might be required due to the Service Worker caching the regular site data!**

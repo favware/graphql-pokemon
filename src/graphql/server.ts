@@ -7,10 +7,13 @@ import ItemResolver from '../resolvers/ItemResolver';
 
 const gqlServer = () => {
   const app = express();
-  const schema = buildSchemaSync({ resolvers: [ DexResolver, AbilityResolver, ItemResolver ] });
+  const schema = buildSchemaSync({ resolvers: [ DexResolver, AbilityResolver, ItemResolver ]});
 
   const apolloServer = new ApolloServer({
     schema,
+    resolvers: [
+
+    ],
     introspection: true,
     playground: { endpoint: '/playground' },
   });

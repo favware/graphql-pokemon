@@ -1,6 +1,6 @@
 import { Field, Int, ObjectType } from 'type-graphql';
 
-@ObjectType({ description: 'A single Pokemon ability entry' })
+@ObjectType({ description: 'A single Pokémon ability entry' })
 export default class AbilityEntry {
   @Field(() => String, { nullable: true, description: 'The long description for an ability' })
   desc?: string;

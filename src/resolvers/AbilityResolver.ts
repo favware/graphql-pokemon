@@ -1,8 +1,7 @@
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import {Arg, Args, Query, Resolver} from 'type-graphql';
 import AbilityEntry from '../structures/AbilityEntry';
 import AbilityService from '../services/AbilityService';
-import { GraphQLJSONObject } from 'graphql-type-json';
-import PaginatedArgs from '../arguments/PaginatedArgs';
+import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
 
 @Resolver(AbilityEntry)
 export default class AbilityResolver {
@@ -12,7 +11,7 @@ export default class AbilityResolver {
     this.abilityService = new AbilityService();
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => AbilityEntry, {
     description: [
       'Gets details on a single ability based on a fuzzy search.',
       'You can supply skip and take to paginate the fuzzy search and reverse to show the least likely matched on top.',
@@ -20,29 +19,29 @@ export default class AbilityResolver {
     ].join(''),
   })
   async getAbilityDetailsByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
-    const entry = this.abilityService.findByName(query);
+    ability, skip, take, reverse,
+  }: AbilityPaginatedArgs) {
+    const entry = this.abilityService.findByName(ability);
 
     if (!entry) {
       const fuzzyEntry = this.abilityService.findByFuzzy({
-        query, skip, take, reverse,
+        ability, skip, take, reverse,
       });
       if (fuzzyEntry === undefined) {
-        throw new Error(`Failed to get data for ability: ${query}`);
+        throw new Error(`Failed to get data for ability: ${ability}`);
       }
-      query = fuzzyEntry[0].name;
+      ability = fuzzyEntry[0].name;
     }
 
-    const detailsEntry = this.abilityService.findByNameWithDetails(query);
+    const detailsEntry = this.abilityService.findByNameWithDetails(ability);
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for ability: ${query}`);
+      throw new Error(`Failed to get data for ability: ${ability}`);
     }
 
     return detailsEntry;
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => AbilityEntry, {
     description: [
       'Gets details on a single ability based on an exact name match.'
     ].join(''),
@@ -57,7 +56,7 @@ export default class AbilityResolver {
     return entry;
   }
 
-  @Query(() => [ GraphQLJSONObject ], {
+  @Query(() => [ AbilityEntry ], {
     description: [
       'Gets entries of multiple ability based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
@@ -65,10 +64,10 @@ export default class AbilityResolver {
     ].join(''),
   })
   getAbilityByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
+    ability, skip, take, reverse,
+  }: AbilityPaginatedArgs) {
     const abilityEntries = this.abilityService.findByFuzzy({
-      query, skip, take, reverse,
+      ability, skip, take, reverse,
     });
 
     if (abilityEntries === undefined) {
@@ -78,7 +77,7 @@ export default class AbilityResolver {
     return abilityEntries;
   }
 
-  @Query(() => GraphQLJSONObject, { description: 'Gets the entry of a single ability by name.' })
+  @Query(() => AbilityEntry, { description: 'Gets the entry of a single ability by name.' })
   getAbilityByName(@Arg('name') name: string) {
     const abilityEntry = this.abilityService.findByName(name);
 

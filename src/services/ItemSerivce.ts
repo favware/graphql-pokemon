@@ -1,12 +1,12 @@
-import { GraphQLJSONObject } from 'graphql-type-json';
-import { Arg, Args } from 'type-graphql';
-import PaginatedArgs from '../arguments/PaginatedArgs';
-import { itemAliases } from '../assets/aliases';
+import {GraphQLJSONObject} from 'graphql-type-json';
+import {Arg, Args} from 'type-graphql';
+import {itemAliases} from '../assets/aliases';
 import items from '../assets/items';
-import { SimpleFuseOptions } from '../typings/common';
+import {SimpleFuseOptions} from '../typings/common';
 import FuzzySearch from '../utils/FuzzySearch';
 import ItemEntry from '../structures/ItemEntry';
 import Util from '../utils/util';
+import ItemPaginatedArgs from '../arguments/ItemPaginatedArgs';
 
 export default class ItemService {
   public findByName(@Arg('name') name: string) {
@@ -14,14 +14,14 @@ export default class ItemService {
   }
 
   public findByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    item, skip, take, reverse,
+  }: ItemPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
     const fuzzyItem = new FuzzySearch(items, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
 
-    let fuzzyResult = fuzzyItem.run(query);
+    let fuzzyResult = fuzzyItem.run(item);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(itemAliases, [ 'alias', 'item' ], { threshold: 0.4 }).run(query);
+      const fuzzyAliasResult = new FuzzySearch(itemAliases, [ 'alias', 'item' ], { threshold: 0.4 }).run(item);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyItem.run(fuzzyAliasResult[0].item);

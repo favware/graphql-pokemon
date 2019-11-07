@@ -1,8 +1,7 @@
-import { GraphQLJSONObject } from 'graphql-type-json';
-import { Args, Query, Resolver, Arg } from 'type-graphql';
-import PaginatedArgs from '../arguments/PaginatedArgs';
+import {Arg, Args, Query, Resolver} from 'type-graphql';
 import ItemService from '../services/ItemSerivce';
 import ItemEntry from '../structures/ItemEntry';
+import ItemPaginatedArgs from '../arguments/ItemPaginatedArgs';
 
 @Resolver(ItemEntry)
 export default class ItemResolver {
@@ -12,7 +11,7 @@ export default class ItemResolver {
     this.itemService = new ItemService();
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => ItemEntry, {
     description: [
       'Gets details on a single item based on a fuzzy search.',
       'You can supply skip and take to paginate the fuzzy search and reverse to show teh least likely results on top',
@@ -20,29 +19,29 @@ export default class ItemResolver {
     ].join(''),
   })
   async getItemDetailsByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
-    const entry = this.itemService.findByName(query);
+    item, skip, take, reverse,
+  }: ItemPaginatedArgs) {
+    const entry = this.itemService.findByName(item);
 
     if (!entry) {
       const fuzzyEntry = this.itemService.findByFuzzy({
-        query, skip, take, reverse,
+        item, skip, take, reverse,
       });
       if (fuzzyEntry === undefined) {
-        throw new Error(`Failed to get data for item: ${query}`);
+        throw new Error(`Failed to get data for item: ${item}`);
       }
-      query = fuzzyEntry[0].name;
+      item = fuzzyEntry[0].name;
     }
 
-    const detailsEntry = this.itemService.findByNameWithDetails(query);
+    const detailsEntry = this.itemService.findByNameWithDetails(item);
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for item: ${query}`);
+      throw new Error(`Failed to get data for item: ${item}`);
     }
 
     return detailsEntry;
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => ItemEntry, {
     description: [
       'Gets details on a single item based on an exact name match.'
     ].join(''),
@@ -57,7 +56,7 @@ export default class ItemResolver {
     return entry;
   }
 
-  @Query(() => [ GraphQLJSONObject ], {
+  @Query(() => [ ItemEntry ], {
     description: [
       'Gets entries of multiple items based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
@@ -65,10 +64,10 @@ export default class ItemResolver {
     ].join(''),
   })
   getItemByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
+    item, skip, take, reverse,
+  }: ItemPaginatedArgs) {
     const itemEntries = this.itemService.findByFuzzy({
-      query, skip, take, reverse,
+      item, skip, take, reverse,
     });
 
     if (itemEntries === undefined) {
@@ -78,7 +77,7 @@ export default class ItemResolver {
     return itemEntries;
   }
 
-  @Query(() => GraphQLJSONObject, { description: 'Gets the entry of a single item based on name.' })
+  @Query(() => ItemEntry, { description: 'Gets the entry of a single item based on name.' })
   getsItemByName(@Arg('name') name: string) {
     const itemEntry = this.itemService.findByName(name);
 

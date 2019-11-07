@@ -16,7 +16,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Paleo Wave',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Beautiful',
       }
@@ -33,7 +33,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Strike',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -42,14 +42,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'magikarpsrevenge',
       {
         num: 0,
-        accuracy: true,
+        accuracy: 100,
         basePower: 120,
         category: 'Physical',
         shortDesc: 'Does many things turn 1. Can\'t move turn 2.',
         name: 'Magikarp\'s Revenge',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -66,7 +66,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Pound',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -83,7 +83,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Karate Chop',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -99,7 +99,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Double Slap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -115,7 +115,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Comet Punch',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -132,7 +132,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mega Punch',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -149,7 +149,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Pay Day',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -166,7 +166,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fire Punch',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -183,7 +183,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Punch',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -200,7 +200,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thunder Punch',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -217,7 +217,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Scratch',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -234,7 +234,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Vice Grip',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -250,7 +250,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Guillotine',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -266,7 +266,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Razor Wind',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -275,7 +275,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'swordsdance',
       {
         num: 14,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack by 2 stages.',
@@ -283,7 +283,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Swords Dance',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -300,7 +300,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Cut',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -317,7 +317,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Gust',
         pp: 35,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Clever',
       }
@@ -334,7 +334,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Wing Attack',
         pp: 35,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -343,14 +343,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'whirlwind',
       {
         num: 18,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Forces the target to switch to a random ally.',
         name: 'Whirlwind',
         pp: 20,
         priority: -6,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -366,7 +366,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fly',
         pp: 15,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Clever',
       }
@@ -382,7 +382,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bind',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -399,7 +399,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Slam',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -416,7 +416,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Vine Whip',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -432,7 +432,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Stomp',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -448,7 +448,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Double Kick',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -465,7 +465,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mega Kick',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -481,7 +481,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Jump Kick',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -498,7 +498,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rolling Kick',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -515,7 +515,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sand Attack',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Cute',
       }
@@ -532,7 +532,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Headbutt',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -549,7 +549,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Horn Attack',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -565,7 +565,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fury Attack',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -581,7 +581,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Horn Drill',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -598,7 +598,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tackle',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -614,7 +614,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Body Slam',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -630,7 +630,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Wrap',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -646,7 +646,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Take Down',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -678,7 +678,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Double-Edge',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -695,7 +695,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tail Whip',
         pp: 30,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -712,7 +712,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Poison Sting',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -728,7 +728,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Twineedle',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -744,7 +744,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Pin Missile',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -761,7 +761,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leer',
         pp: 30,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -778,7 +778,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bite',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -795,7 +795,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Growl',
         pp: 40,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -804,14 +804,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'roar',
       {
         num: 46,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Forces the target to switch to a random ally.',
         name: 'Roar',
         pp: 20,
         priority: -6,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -828,7 +828,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sing',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -845,7 +845,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Supersonic',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -862,7 +862,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sonic Boom',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -878,7 +878,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Disable',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -894,7 +894,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Acid',
         pp: 30,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -911,7 +911,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ember',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cute',
       }
@@ -928,7 +928,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flamethrower',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -937,14 +937,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mist',
       {
         num: 54,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, protects user\'s party from stat drops.',
         name: 'Mist',
         pp: 30,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -961,7 +961,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Water Gun',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -978,7 +978,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hydro Pump',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -995,7 +995,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Surf',
         pp: 15,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -1012,7 +1012,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Beam',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -1028,7 +1028,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Blizzard',
         pp: 5,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -1045,7 +1045,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psybeam',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -1062,7 +1062,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bubble Beam',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -1079,7 +1079,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Aurora Beam',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -1095,7 +1095,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hyper Beam',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -1112,7 +1112,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Peck',
         pp: 35,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -1129,7 +1129,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Drill Peck',
         pp: 20,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -1145,7 +1145,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Submission',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -1161,7 +1161,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Low Kick',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -1194,7 +1194,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Seismic Toss',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -1211,7 +1211,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Strength',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -1227,7 +1227,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Absorb',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -1243,7 +1243,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mega Drain',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -1259,7 +1259,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leech Seed',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -1268,14 +1268,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'growth',
       {
         num: 74,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises user\'s Attack and Sp. Atk by 1; 2 in Sun.',
         name: 'Growth',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -1292,7 +1292,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Razor Leaf',
         pp: 25,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -1308,7 +1308,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Solar Beam',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -1325,7 +1325,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Poison Powder',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -1342,7 +1342,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Stun Spore',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -1359,7 +1359,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sleep Powder',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -1392,7 +1392,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'String Shot',
         pp: 40,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -1409,7 +1409,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Rage',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -1425,7 +1425,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fire Spin',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -1442,7 +1442,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thunder Shock',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -1459,7 +1459,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thunderbolt',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -1476,7 +1476,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thunder Wave',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -1492,7 +1492,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thunder',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -1509,7 +1509,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Throw',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -1526,7 +1526,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Earthquake',
         pp: 10,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -1542,7 +1542,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fissure',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -1558,7 +1558,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dig',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -1574,7 +1574,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Toxic',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -1591,7 +1591,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Confusion',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -1607,7 +1607,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psychic',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -1624,7 +1624,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hypnosis',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -1633,7 +1633,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'meditate',
       {
         num: 96,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack by 1 stage.',
@@ -1641,7 +1641,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Meditate',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -1650,7 +1650,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'agility',
       {
         num: 97,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Speed by 2 stages.',
@@ -1658,7 +1658,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Agility',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -1675,7 +1675,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Quick Attack',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -1691,7 +1691,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rage',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -1700,7 +1700,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'teleport',
       {
         num: 100,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Fails when used.',
@@ -1708,7 +1708,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Teleport',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -1725,7 +1725,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Night Shade',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -1734,14 +1734,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mimic',
       {
         num: 102,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The last move the target used replaces this one.',
         name: 'Mimic',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -1758,7 +1758,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Screech',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -1767,7 +1767,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'doubleteam',
       {
         num: 104,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s evasiveness by 1 stage.',
@@ -1775,7 +1775,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Double Team',
         pp: 15,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -1784,7 +1784,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'recover',
       {
         num: 105,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
@@ -1792,7 +1792,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Recover',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -1801,7 +1801,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'harden',
       {
         num: 106,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense by 1 stage.',
@@ -1809,7 +1809,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Harden',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -1818,14 +1818,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'minimize',
       {
         num: 107,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises the user\'s evasiveness by 2.',
         name: 'Minimize',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -1842,7 +1842,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Smokescreen',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -1859,7 +1859,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Confuse Ray',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -1868,7 +1868,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'withdraw',
       {
         num: 110,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense by 1 stage.',
@@ -1876,7 +1876,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Withdraw',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -1885,14 +1885,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'defensecurl',
       {
         num: 111,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises the user\'s Defense by 1.',
         name: 'Defense Curl',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -1901,7 +1901,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'barrier',
       {
         num: 112,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense by 2 stages.',
@@ -1909,7 +1909,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Barrier',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -1918,14 +1918,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'lightscreen',
       {
         num: 113,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, special damage to allies is halved.',
         name: 'Light Screen',
         pp: 30,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -1934,7 +1934,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'haze',
       {
         num: 114,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Resets the stat stages of all active Pokemon to 0.',
@@ -1942,7 +1942,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Haze',
         pp: 30,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -1951,14 +1951,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'reflect',
       {
         num: 115,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, physical damage to allies is halved.',
         name: 'Reflect',
         pp: 20,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -1967,14 +1967,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'focusenergy',
       {
         num: 116,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises the user\'s critical hit ratio by 2.',
         name: 'Focus Energy',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -1983,14 +1983,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'bide',
       {
         num: 117,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Physical',
         shortDesc: 'Waits 2 turns; deals double the damage taken.',
         name: 'Bide',
         pp: 10,
         priority: 1,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -1999,14 +1999,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'metronome',
       {
         num: 118,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Picks a random move.',
         name: 'Metronome',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2015,14 +2015,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mirrormove',
       {
         num: 119,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User uses the target\'s last used move against it.',
         name: 'Mirror Move',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Flying',
         contestType: 'Clever',
       }
@@ -2038,7 +2038,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Self-Destruct',
         pp: 5,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2055,7 +2055,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Egg Bomb',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2072,7 +2072,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Lick',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cute',
       }
@@ -2089,7 +2089,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Smog',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -2106,7 +2106,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sludge',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -2123,7 +2123,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bone Club',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -2140,7 +2140,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fire Blast',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -2157,7 +2157,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Waterfall',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -2173,7 +2173,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Clamp',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -2182,7 +2182,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'swift',
       {
         num: 129,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Special',
         desc: 'This move does not check accuracy.',
@@ -2190,7 +2190,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Swift',
         pp: 20,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -2206,7 +2206,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Skull Bash',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -2222,7 +2222,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spike Cannon',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -2239,7 +2239,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Constrict',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -2248,7 +2248,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'amnesia',
       {
         num: 133,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Special Defense by 2 stages.',
@@ -2256,7 +2256,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Amnesia',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Cute',
       }
@@ -2273,7 +2273,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Kinesis',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -2282,7 +2282,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'softboiled',
       {
         num: 135,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
@@ -2290,7 +2290,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Soft-Boiled',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2306,7 +2306,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'High Jump Kick',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -2323,7 +2323,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Glare',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -2339,7 +2339,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dream Eater',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -2356,7 +2356,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Poison Gas',
         pp: 40,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -2372,7 +2372,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Barrage',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2388,7 +2388,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leech Life',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -2405,7 +2405,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Lovely Kiss',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2421,7 +2421,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sky Attack',
         pp: 5,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -2430,14 +2430,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'transform',
       {
         num: 144,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Copies target\'s stats, moves, types, and Ability.',
         name: 'Transform',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -2454,7 +2454,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bubble',
         pp: 30,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -2471,7 +2471,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dizzy Punch',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2488,7 +2488,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spore',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -2505,7 +2505,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flash',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2521,7 +2521,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psywave',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -2530,7 +2530,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'splash',
       {
         num: 150,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Nothing happens...',
@@ -2538,7 +2538,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Splash',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2547,7 +2547,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'acidarmor',
       {
         num: 151,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense by 2 stages.',
@@ -2555,7 +2555,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Acid Armor',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -2572,7 +2572,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Crabhammer',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -2588,7 +2588,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Explosion',
         pp: 5,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2604,7 +2604,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fury Swipes',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -2620,7 +2620,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bonemerang',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -2629,14 +2629,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'rest',
       {
         num: 156,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User sleeps 2 turns and restores HP and status.',
         name: 'Rest',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Cute',
       }
@@ -2653,7 +2653,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Slide',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -2670,7 +2670,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hyper Fang',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -2679,7 +2679,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'sharpen',
       {
         num: 159,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack by 1 stage.',
@@ -2687,7 +2687,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sharpen',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2696,14 +2696,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'conversion',
       {
         num: 160,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Changes user\'s type to match its first move.',
         name: 'Conversion',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2719,7 +2719,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tri Attack',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2735,7 +2735,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Super Fang',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -2752,7 +2752,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Slash',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -2761,14 +2761,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'substitute',
       {
         num: 164,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User takes 1/4 its max HP to put in a Substitute.',
         name: 'Substitute',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2777,7 +2777,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'struggle',
       {
         num: 165,
-        accuracy: true,
+        accuracy: 100,
         basePower: 50,
         category: 'Physical',
         shortDesc: 'User loses 25% of its max HP as recoil.',
@@ -2793,14 +2793,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'sketch',
       {
         num: 166,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Permanently copies the last move target used.',
         name: 'Sketch',
         pp: 1,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -2816,7 +2816,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Triple Kick',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -2832,7 +2832,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thief',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -2841,14 +2841,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'spiderweb',
       {
         num: 169,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The target cannot switch out.',
         name: 'Spider Web',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -2857,14 +2857,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mindreader',
       {
         num: 170,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User\'s next move will not miss the target.',
         name: 'Mind Reader',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -2880,7 +2880,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Nightmare',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -2897,7 +2897,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flame Wheel',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -2913,7 +2913,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Snore',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2922,14 +2922,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'curse',
       {
         num: 174,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Curses if Ghost, else +1 Atk, +1 Def, -1 Spe.',
         name: 'Curse',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Tough',
       }
@@ -2945,7 +2945,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flail',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -2954,14 +2954,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'conversion2',
       {
         num: 176,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Changes user\'s type to resist target\'s last move.',
         name: 'Conversion 2',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -2978,7 +2978,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Aeroblast',
         pp: 5,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -2995,7 +2995,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Cotton Spore',
         pp: 40,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -3011,7 +3011,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Reversal',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -3027,7 +3027,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spite',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Tough',
       }
@@ -3044,7 +3044,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Powder Snow',
         pp: 25,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -3053,14 +3053,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'protect',
       {
         num: 182,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Prevents moves from affecting the user this turn.',
         name: 'Protect',
         pp: 10,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3077,7 +3077,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mach Punch',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -3094,7 +3094,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Scary Face',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -3103,7 +3103,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'feintattack',
       {
         num: 185,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Physical',
         desc: 'This move does not check accuracy.',
@@ -3111,7 +3111,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Feint Attack',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -3128,7 +3128,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sweet Kiss',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -3137,14 +3137,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'bellydrum',
       {
         num: 187,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User loses 50% max HP. Maximizes Attack.',
         name: 'Belly Drum',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3161,7 +3161,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sludge Bomb',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -3178,7 +3178,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mud-Slap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Cute',
       }
@@ -3195,7 +3195,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Octazooka',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -3204,14 +3204,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'spikes',
       {
         num: 191,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Hurts grounded foes on switch-in. Max 3 layers.',
         name: 'Spikes',
         pp: 20,
         priority: 0,
-        target: 'foeSide',
+        target: 'Foe\'s side',
         type: 'Ground',
         contestType: 'Clever',
       }
@@ -3228,7 +3228,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Zap Cannon',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -3237,14 +3237,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'foresight',
       {
         num: 193,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Fighting, Normal hit Ghost. Evasiveness ignored.',
         name: 'Foresight',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -3253,14 +3253,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'destinybond',
       {
         num: 194,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'If an opponent knocks out the user, it also faints.',
         name: 'Destiny Bond',
         pp: 5,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -3269,14 +3269,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'perishsong',
       {
         num: 195,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'All active Pokemon will faint in 3 turns.',
         name: 'Perish Song',
         pp: 5,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -3293,7 +3293,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Icy Wind',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -3302,14 +3302,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'detect',
       {
         num: 197,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Prevents moves from affecting the user this turn.',
         name: 'Detect',
         pp: 5,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -3325,7 +3325,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bone Rush',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -3334,14 +3334,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'lockon',
       {
         num: 199,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User\'s next move will not miss the target.',
         name: 'Lock-On',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -3366,14 +3366,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'sandstorm',
       {
         num: 201,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, a sandstorm rages.',
         name: 'Sandstorm',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -3389,7 +3389,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Giga Drain',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -3398,14 +3398,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'endure',
       {
         num: 203,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The user survives the next hit with at least 1 HP.',
         name: 'Endure',
         pp: 10,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -3422,7 +3422,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Charm',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -3438,7 +3438,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rollout',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Cute',
       }
@@ -3455,7 +3455,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'False Swipe',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -3472,7 +3472,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Swagger',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3481,7 +3481,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'milkdrink',
       {
         num: 208,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
@@ -3489,7 +3489,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Milk Drink',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3506,7 +3506,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spark',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -3522,7 +3522,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fury Cutter',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -3539,7 +3539,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Steel Wing',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -3548,14 +3548,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'meanlook',
       {
         num: 212,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The target cannot switch out.',
         name: 'Mean Look',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -3571,7 +3571,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Attract',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3580,7 +3580,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'sleeptalk',
       {
         num: 214,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'One of the user\'s known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Z-Move.',
@@ -3588,7 +3588,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sleep Talk',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3597,7 +3597,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'healbell',
       {
         num: 215,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Cures the user\'s party of all status conditions.',
@@ -3620,7 +3620,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Return',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3636,7 +3636,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Present',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3652,7 +3652,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Frustration',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3661,14 +3661,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'safeguard',
       {
         num: 219,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, protects user\'s party from status.',
         name: 'Safeguard',
         pp: 25,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -3677,14 +3677,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'painsplit',
       {
         num: 220,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Shares HP of user and target equally.',
         name: 'Pain Split',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -3701,7 +3701,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sacred Fire',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -3717,7 +3717,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Magnitude',
         pp: 30,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -3734,7 +3734,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dynamic Punch',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -3751,7 +3751,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Megahorn',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -3768,7 +3768,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Breath',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -3777,14 +3777,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'batonpass',
       {
         num: 226,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User switches, passing stat changes and more.',
         name: 'Baton Pass',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3800,7 +3800,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Encore',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3816,7 +3816,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Pursuit',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -3832,7 +3832,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rapid Spin',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -3849,7 +3849,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sweet Scent',
         pp: 20,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -3866,7 +3866,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Iron Tail',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -3883,7 +3883,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Metal Claw',
         pp: 35,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -3892,7 +3892,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'vitalthrow',
       {
         num: 233,
-        accuracy: true,
+        accuracy: 100,
         basePower: 70,
         category: 'Physical',
         desc: 'This move does not check accuracy.',
@@ -3900,7 +3900,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Vital Throw',
         pp: 10,
         priority: -1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -3909,14 +3909,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'morningsun',
       {
         num: 234,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals the user by a weather-dependent amount.',
         name: 'Morning Sun',
         pp: 5,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -3925,14 +3925,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'synthesis',
       {
         num: 235,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals the user by a weather-dependent amount.',
         name: 'Synthesis',
         pp: 5,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -3941,14 +3941,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'moonlight',
       {
         num: 236,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals the user by a weather-dependent amount.',
         name: 'Moonlight',
         pp: 5,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -3965,7 +3965,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hidden Power Water',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Clever',
       }
@@ -3982,7 +3982,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Cross Chop',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -3998,7 +3998,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Twister',
         pp: 20,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -4007,14 +4007,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'raindance',
       {
         num: 240,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, heavy rain powers Water moves.',
         name: 'Rain Dance',
         pp: 5,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -4023,14 +4023,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'sunnyday',
       {
         num: 241,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, intense sunlight powers Fire moves.',
         name: 'Sunny Day',
         pp: 5,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -4047,7 +4047,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Crunch',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -4072,7 +4072,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'psychup',
       {
         num: 244,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user copies all of the target\'s current stat stage changes.',
@@ -4080,7 +4080,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psych Up',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -4097,7 +4097,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Extreme Speed',
         pp: 5,
         priority: 2,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -4113,7 +4113,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ancient Power',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -4129,7 +4129,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Ball',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -4145,7 +4145,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Future Sight',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -4162,7 +4162,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Smash',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -4178,7 +4178,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Whirlpool',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -4194,7 +4194,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Beat Up',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -4210,7 +4210,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fake Out',
         pp: 10,
         priority: 3,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4235,14 +4235,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'stockpile',
       {
         num: 254,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises user\'s Defense, Sp. Def by 1. Max 3 uses.',
         name: 'Stockpile',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -4258,7 +4258,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spit Up',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -4267,14 +4267,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'swallow',
       {
         num: 256,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals the user based on uses of Stockpile.',
         name: 'Swallow',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -4291,7 +4291,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heat Wave',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -4300,14 +4300,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'hail',
       {
         num: 258,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, hail crashes down.',
         name: 'Hail',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -4323,7 +4323,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Torment',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -4340,7 +4340,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flatter',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -4357,7 +4357,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Will-O-Wisp',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -4373,7 +4373,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Memento',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -4389,7 +4389,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Facade',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4405,7 +4405,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Focus Punch',
         pp: 20,
         priority: -3,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -4421,7 +4421,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Smelling Salts',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -4430,14 +4430,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'followme',
       {
         num: 266,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The foes\' moves target the user on the turn used.',
         name: 'Follow Me',
         pp: 20,
         priority: 2,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4446,14 +4446,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'naturepower',
       {
         num: 267,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Attack depends on terrain (default Tri Attack).',
         name: 'Nature Power',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -4462,14 +4462,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'charge',
       {
         num: 268,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Boosts next Electric move and user\'s Sp. Def by 1.',
         name: 'Charge',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -4485,7 +4485,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Taunt',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -4494,14 +4494,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'helpinghand',
       {
         num: 270,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'One adjacent ally\'s move power is 1.5x this turn.',
         name: 'Helping Hand',
         pp: 20,
         priority: 5,
-        target: 'adjacentAlly',
+        target: 'Adjacent Ally',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -4517,7 +4517,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Trick',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -4526,14 +4526,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'roleplay',
       {
         num: 272,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User replaces its Ability with the target\'s.',
         name: 'Role Play',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cute',
       }
@@ -4542,14 +4542,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'wish',
       {
         num: 273,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Next turn, 50% of the user\'s max HP is restored.',
         name: 'Wish',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4558,7 +4558,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'assist',
       {
         num: 274,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'A random move among those known by the user\'s party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King\'s Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.',
@@ -4566,7 +4566,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Assist',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4575,14 +4575,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'ingrain',
       {
         num: 275,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Traps/grounds user; heals 1/16 max HP per turn.',
         name: 'Ingrain',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -4599,7 +4599,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Superpower',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -4608,14 +4608,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'magiccoat',
       {
         num: 277,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Bounces back certain non-damaging moves.',
         name: 'Magic Coat',
         pp: 15,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -4624,14 +4624,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'recycle',
       {
         num: 278,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Restores the item the user last used.',
         name: 'Recycle',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -4648,7 +4648,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Revenge',
         pp: 10,
         priority: -4,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -4664,7 +4664,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Brick Break',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -4673,14 +4673,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'yawn',
       {
         num: 281,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Puts the target to sleep after 1 turn.',
         name: 'Yawn',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4696,7 +4696,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Knock Off',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -4712,7 +4712,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Endeavor',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -4728,7 +4728,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Eruption',
         pp: 5,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -4737,7 +4737,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'skillswap',
       {
         num: 285,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user swaps its Ability with the target\'s Ability. Fails if either the user or the target\'s Ability is Battle Bond, Comatose, Disguise, Illusion, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode.',
@@ -4745,7 +4745,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Skill Swap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -4754,14 +4754,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'imprison',
       {
         num: 286,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'No foe can use any move known by the user.',
         name: 'Imprison',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -4770,7 +4770,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'refresh',
       {
         num: 287,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user cures its burn, poison, or paralysis.',
@@ -4778,7 +4778,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Refresh',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4787,14 +4787,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'grudge',
       {
         num: 288,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'If the user faints, the attack used loses all its PP.',
         name: 'Grudge',
         pp: 5,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Ghost',
         contestType: 'Tough',
       }
@@ -4803,14 +4803,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'snatch',
       {
         num: 289,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User steals certain support moves to use itself.',
         name: 'Snatch',
         pp: 10,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -4826,7 +4826,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Secret Power',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -4842,7 +4842,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dive',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -4858,7 +4858,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Arm Thrust',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -4867,14 +4867,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'camouflage',
       {
         num: 293,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Changes user\'s type by terrain (default Normal).',
         name: 'Camouflage',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -4883,7 +4883,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'tailglow',
       {
         num: 294,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Special Attack by 3 stages.',
@@ -4891,7 +4891,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tail Glow',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Bug',
         contestType: 'Beautiful',
       }
@@ -4907,7 +4907,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Luster Purge',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -4923,7 +4923,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mist Ball',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -4940,7 +4940,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Feather Dance',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Flying',
         contestType: 'Beautiful',
       }
@@ -4957,7 +4957,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Teeter Dance',
         pp: 20,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -4973,7 +4973,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Blaze Kick',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -4982,14 +4982,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mudsport',
       {
         num: 300,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, Electric-type attacks have 1/3 power.',
         name: 'Mud Sport',
         pp: 15,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Ground',
         contestType: 'Cute',
       }
@@ -5005,7 +5005,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Ball',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -5022,7 +5022,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Needle Arm',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -5031,7 +5031,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'slackoff',
       {
         num: 303,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
@@ -5039,7 +5039,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Slack Off',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -5056,7 +5056,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hyper Voice',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -5073,7 +5073,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Poison Fang',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -5090,7 +5090,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Crush Claw',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -5106,7 +5106,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Blast Burn',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -5122,7 +5122,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hydro Cannon',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -5139,7 +5139,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Meteor Mash',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -5156,7 +5156,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Astonish',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cute',
       }
@@ -5172,7 +5172,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Weather Ball',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -5181,7 +5181,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'aromatherapy',
       {
         num: 312,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Cures the user\'s party of all status conditions.',
@@ -5205,7 +5205,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fake Tears',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cute',
       }
@@ -5222,7 +5222,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Air Cutter',
         pp: 25,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -5239,7 +5239,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Overheat',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -5248,14 +5248,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'odorsleuth',
       {
         num: 316,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Fighting, Normal hit Ghost. Evasiveness ignored.',
         name: 'Odor Sleuth',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -5272,7 +5272,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Tomb',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Clever',
       }
@@ -5288,7 +5288,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Silver Wind',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Beautiful',
       }
@@ -5305,7 +5305,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Metal Sound',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Clever',
       }
@@ -5322,7 +5322,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Grass Whistle',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -5339,7 +5339,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tickle',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -5348,7 +5348,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'cosmicpower',
       {
         num: 322,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense and Special Defense by 1 stage.',
@@ -5356,7 +5356,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Cosmic Power',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -5372,7 +5372,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Water Spout',
         pp: 5,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -5389,7 +5389,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Signal Beam',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Beautiful',
       }
@@ -5398,7 +5398,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'shadowpunch',
       {
         num: 325,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Physical',
         desc: 'This move does not check accuracy.',
@@ -5406,7 +5406,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Punch',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -5423,7 +5423,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Extrasensory',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -5440,7 +5440,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sky Uppercut',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -5456,7 +5456,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sand Tomb',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Clever',
       }
@@ -5472,7 +5472,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sheer Cold',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -5489,7 +5489,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Muddy Water',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -5505,7 +5505,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bullet Seed',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -5514,7 +5514,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'aerialace',
       {
         num: 332,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Physical',
         desc: 'This move does not check accuracy.',
@@ -5522,7 +5522,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Aerial Ace',
         pp: 20,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -5538,7 +5538,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Icicle Spear',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -5547,7 +5547,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'irondefense',
       {
         num: 334,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense by 2 stages.',
@@ -5555,7 +5555,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Iron Defense',
         pp: 15,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Steel',
         contestType: 'Tough',
       }
@@ -5564,14 +5564,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'block',
       {
         num: 335,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The target cannot switch out.',
         name: 'Block',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -5580,7 +5580,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'howl',
       {
         num: 336,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack by 1 stage.',
@@ -5588,7 +5588,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Howl',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -5605,7 +5605,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Claw',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -5621,7 +5621,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Frenzy Plant',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -5630,7 +5630,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'bulkup',
       {
         num: 339,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack and Defense by 1 stage.',
@@ -5638,7 +5638,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bulk Up',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -5654,7 +5654,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bounce',
         pp: 5,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cute',
       }
@@ -5671,7 +5671,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mud Shot',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -5687,7 +5687,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Poison Tail',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -5703,7 +5703,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Covet',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -5719,7 +5719,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Volt Tackle',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -5728,7 +5728,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'magicalleaf',
       {
         num: 345,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Special',
         desc: 'This move does not check accuracy.',
@@ -5736,7 +5736,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Magical Leaf',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -5745,14 +5745,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'watersport',
       {
         num: 346,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, Fire-type attacks have 1/3 power.',
         name: 'Water Sport',
         pp: 15,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -5761,14 +5761,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'calmmind',
       {
         num: 347,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises the user\'s Sp. Atk and Sp. Def by 1.',
         name: 'Calm Mind',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -5785,7 +5785,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leaf Blade',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -5794,7 +5794,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'dragondance',
       {
         num: 349,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack and Speed by 1 stage.',
@@ -5802,7 +5802,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Dance',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -5818,7 +5818,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Blast',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -5827,7 +5827,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'shockwave',
       {
         num: 351,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Special',
         desc: 'This move does not check accuracy.',
@@ -5835,7 +5835,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shock Wave',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -5852,7 +5852,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Water Pulse',
         pp: 20,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -5868,7 +5868,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Doom Desire',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Beautiful',
       }
@@ -5885,7 +5885,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psycho Boost',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -5894,14 +5894,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'roost',
       {
         num: 355,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals 50% HP. Flying-type removed \'til turn ends.',
         name: 'Roost',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Flying',
         contestType: 'Clever',
       }
@@ -5910,14 +5910,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'gravity',
       {
         num: 356,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, negates all Ground immunities.',
         name: 'Gravity',
         pp: 5,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -5926,14 +5926,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'miracleeye',
       {
         num: 357,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Psychic hits Dark. Evasiveness ignored.',
         name: 'Miracle Eye',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -5949,7 +5949,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Wake-Up Slap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -5966,7 +5966,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hammer Arm',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -5982,7 +5982,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Gyro Ball',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -5991,14 +5991,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'healingwish',
       {
         num: 361,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User faints. Replacement is fully healed.',
         name: 'Healing Wish',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -6014,7 +6014,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Brine',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -6030,7 +6030,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Natural Gift',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -6046,7 +6046,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Feint',
         pp: 10,
         priority: 2,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -6062,7 +6062,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Pluck',
         pp: 20,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cute',
       }
@@ -6071,14 +6071,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'tailwind',
       {
         num: 366,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 4 turns, allies\' Speed is doubled.',
         name: 'Tailwind',
         pp: 15,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -6087,14 +6087,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'acupressure',
       {
         num: 367,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises a random stat of the user or an ally by 2.',
         name: 'Acupressure',
         pp: 30,
         priority: 0,
-        target: 'adjacentAllyOrSelf',
+        target: 'Adjacent ally or self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -6126,7 +6126,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'U-turn',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -6143,7 +6143,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Close Combat',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -6159,7 +6159,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Payback',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -6175,7 +6175,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Assurance',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -6191,7 +6191,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Embargo',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -6207,7 +6207,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fling',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cute',
       }
@@ -6223,7 +6223,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psycho Shift',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -6232,14 +6232,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'trumpcard',
       {
         num: 376,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Special',
         shortDesc: 'More power the fewer PP this move has left.',
         name: 'Trump Card',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -6255,7 +6255,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heal Block',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -6271,7 +6271,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Wring Out',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -6280,14 +6280,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'powertrick',
       {
         num: 379,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Switches user\'s Attack and Defense stats.',
         name: 'Power Trick',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -6304,7 +6304,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Gastro Acid',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -6313,14 +6313,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'luckychant',
       {
         num: 381,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, shields user\'s party from critical hits.',
         name: 'Lucky Chant',
         pp: 30,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -6329,14 +6329,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mefirst',
       {
         num: 382,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Copies a foe at 1.5x power. User must be faster.',
         name: 'Me First',
         pp: 20,
         priority: 0,
-        target: 'adjacentFoe',
+        target: 'Adjacent foe',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -6345,7 +6345,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'copycat',
       {
         num: 383,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King\'s Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.',
@@ -6353,7 +6353,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Copycat',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -6362,14 +6362,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'powerswap',
       {
         num: 384,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Swaps Attack and Sp. Atk stat stages with target.',
         name: 'Power Swap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -6378,14 +6378,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'guardswap',
       {
         num: 385,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Swaps Defense and Sp. Def changes with target.',
         name: 'Guard Swap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -6401,7 +6401,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Punishment',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -6417,7 +6417,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Last Resort',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -6434,7 +6434,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Worry Seed',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -6450,7 +6450,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sucker Punch',
         pp: 5,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -6459,14 +6459,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'toxicspikes',
       {
         num: 390,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Poisons grounded foes on switch-in. Max 2 layers.',
         name: 'Toxic Spikes',
         pp: 20,
         priority: 0,
-        target: 'foeSide',
+        target: 'Foe\'s side',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -6475,7 +6475,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'heartswap',
       {
         num: 391,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user swaps all its stat stage changes with the target.',
@@ -6483,7 +6483,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heart Swap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -6492,14 +6492,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'aquaring',
       {
         num: 392,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User recovers 1/16 max HP per turn.',
         name: 'Aqua Ring',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -6508,14 +6508,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'magnetrise',
       {
         num: 393,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, the user is immune to Ground moves.',
         name: 'Magnet Rise',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -6531,7 +6531,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flare Blitz',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -6548,7 +6548,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Force Palm',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -6557,7 +6557,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'aurasphere',
       {
         num: 396,
-        accuracy: true,
+        accuracy: 100,
         basePower: 80,
         category: 'Special',
         desc: 'This move does not check accuracy.',
@@ -6565,7 +6565,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Aura Sphere',
         pp: 20,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Fighting',
         contestType: 'Beautiful',
       }
@@ -6574,7 +6574,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'rockpolish',
       {
         num: 397,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Speed by 2 stages.',
@@ -6582,7 +6582,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Polish',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -6599,7 +6599,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Poison Jab',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -6616,7 +6616,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dark Pulse',
         pp: 15,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -6633,7 +6633,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Night Slash',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -6650,7 +6650,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Aqua Tail',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -6667,7 +6667,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Seed Bomb',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Tough',
       }
@@ -6684,7 +6684,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Air Slash',
         pp: 15,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -6701,7 +6701,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'X-Scissor',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -6717,7 +6717,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bug Buzz',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Beautiful',
       }
@@ -6734,7 +6734,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Pulse',
         pp: 10,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Dragon',
         contestType: 'Beautiful',
       }
@@ -6750,7 +6750,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Rush',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -6767,7 +6767,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Power Gem',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Beautiful',
       }
@@ -6783,7 +6783,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Drain Punch',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -6800,7 +6800,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Vacuum Wave',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -6816,7 +6816,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Focus Blast',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -6832,7 +6832,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Energy Ball',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -6848,7 +6848,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Brave Bird',
         pp: 15,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -6864,7 +6864,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Earth Power',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Beautiful',
       }
@@ -6880,7 +6880,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Switcheroo',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -6896,7 +6896,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Giga Impact',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -6905,7 +6905,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'nastyplot',
       {
         num: 417,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Special Attack by 2 stages.',
@@ -6913,7 +6913,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Nasty Plot',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -6930,7 +6930,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bullet Punch',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Tough',
       }
@@ -6947,7 +6947,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Avalanche',
         pp: 10,
         priority: -4,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -6964,7 +6964,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Shard',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -6981,7 +6981,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Claw',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -6997,7 +6997,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thunder Fang',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -7013,7 +7013,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Fang',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Cool',
       }
@@ -7029,7 +7029,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fire Fang',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -7046,7 +7046,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Sneak',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -7063,7 +7063,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mud Bomb',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Cute',
       }
@@ -7080,7 +7080,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psycho Cut',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -7097,7 +7097,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Zen Headbutt',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7114,7 +7114,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mirror Shot',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Beautiful',
       }
@@ -7130,7 +7130,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flash Cannon',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Beautiful',
       }
@@ -7147,7 +7147,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Climb',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -7156,14 +7156,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'defog',
       {
         num: 432,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: '-1 evasion; clears user and target side\'s hazards.',
         name: 'Defog',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -7172,7 +7172,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'trickroom',
       {
         num: 433,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'For 5 turns, the Speed of every Pokemon is recalculated for the purposes of determining turn order. During the effect, each Pokemon\'s Speed is considered to be (10000 - its normal Speed), and if this value is greater than 8191, 8192 is subtracted from it. If this move is used during the effect, the effect ends.',
@@ -7180,7 +7180,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Trick Room',
         pp: 5,
         priority: -7,
-        target: 'all',
+        target: 'All',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7197,7 +7197,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Draco Meteor',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Beautiful',
       }
@@ -7214,7 +7214,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Discharge',
         pp: 15,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Electric',
         contestType: 'Beautiful',
       }
@@ -7231,7 +7231,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Lava Plume',
         pp: 15,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -7248,7 +7248,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leaf Storm',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -7265,7 +7265,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Power Whip',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Tough',
       }
@@ -7281,7 +7281,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Rock Wrecker',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -7297,7 +7297,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Cross Poison',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Cool',
       }
@@ -7314,7 +7314,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Gunk Shot',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -7331,7 +7331,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Iron Head',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Tough',
       }
@@ -7340,7 +7340,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'magnetbomb',
       {
         num: 443,
-        accuracy: true,
+        accuracy: 100,
         basePower: 60,
         category: 'Physical',
         desc: 'This move does not check accuracy.',
@@ -7348,7 +7348,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Magnet Bomb',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -7365,7 +7365,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Stone Edge',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -7381,7 +7381,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Captivate',
         pp: 20,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -7390,14 +7390,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'stealthrock',
       {
         num: 446,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Hurts foes on switch-in. Factors Rock weakness.',
         name: 'Stealth Rock',
         pp: 20,
         priority: 0,
-        target: 'foeSide',
+        target: 'Foe\'s side',
         type: 'Rock',
         contestType: 'Cool',
       }
@@ -7413,7 +7413,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Grass Knot',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cute',
       }
@@ -7430,7 +7430,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Chatter',
         pp: 20,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cute',
       }
@@ -7447,7 +7447,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Judgment',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -7463,7 +7463,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bug Bite',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -7480,7 +7480,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Charge Beam',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Beautiful',
       }
@@ -7496,7 +7496,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Wood Hammer',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Tough',
       }
@@ -7513,7 +7513,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Aqua Jet',
         pp: 20,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -7530,7 +7530,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Attack Order',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -7539,7 +7539,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'defendorder',
       {
         num: 455,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense and Special Defense by 1 stage.',
@@ -7547,7 +7547,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Defend Order',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -7556,7 +7556,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'healorder',
       {
         num: 456,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
@@ -7564,7 +7564,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heal Order',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -7580,7 +7580,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Head Smash',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -7596,7 +7596,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Double Hit',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -7612,7 +7612,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Roar of Time',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Beautiful',
       }
@@ -7629,7 +7629,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spacial Rend',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Beautiful',
       }
@@ -7638,14 +7638,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'lunardance',
       {
         num: 461,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User faints. Replacement is fully healed, with PP.',
         name: 'Lunar Dance',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -7661,7 +7661,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Crush Grip',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -7677,7 +7677,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Magma Storm',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -7693,7 +7693,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dark Void',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -7709,7 +7709,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Seed Flare',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -7725,7 +7725,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ominous Wind',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Beautiful',
       }
@@ -7741,7 +7741,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Force',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -7750,7 +7750,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'honeclaws',
       {
         num: 468,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack and accuracy by 1 stage.',
@@ -7758,7 +7758,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hone Claws',
         pp: 15,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Dark',
         contestType: 'Cute',
       }
@@ -7767,14 +7767,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'wideguard',
       {
         num: 469,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects allies from multi-target moves this turn.',
         name: 'Wide Guard',
         pp: 10,
         priority: 3,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -7783,14 +7783,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'guardsplit',
       {
         num: 470,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Averages Defense and Sp. Def stats with target.',
         name: 'Guard Split',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7799,14 +7799,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'powersplit',
       {
         num: 471,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Averages Attack and Sp. Atk stats with target.',
         name: 'Power Split',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7815,14 +7815,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'wonderroom',
       {
         num: 472,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, all Defense and Sp. Def stats switch.',
         name: 'Wonder Room',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7838,7 +7838,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psyshock',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -7855,7 +7855,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Venoshock',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Beautiful',
       }
@@ -7864,14 +7864,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'autotomize',
       {
         num: 475,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises the user\'s Speed by 2; user loses 100 kg.',
         name: 'Autotomize',
         pp: 15,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Steel',
         contestType: 'Beautiful',
       }
@@ -7880,14 +7880,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'ragepowder',
       {
         num: 476,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The foes\' moves target the user on the turn used.',
         name: 'Rage Powder',
         pp: 20,
         priority: 2,
-        target: 'self',
+        target: 'Self',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -7896,14 +7896,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'telekinesis',
       {
         num: 477,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 3 turns, target floats but moves can\'t miss it.',
         name: 'Telekinesis',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7912,14 +7912,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'magicroom',
       {
         num: 478,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, all held items have no effect.',
         name: 'Magic Room',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -7935,7 +7935,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Smack Down',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -7951,7 +7951,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Storm Throw',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -7967,7 +7967,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flame Burst',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -7984,7 +7984,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sludge Wave',
         pp: 10,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -7993,14 +7993,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'quiverdance',
       {
         num: 483,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises the user\'s Sp. Atk, Sp. Def, Speed by 1.',
         name: 'Quiver Dance',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Bug',
         contestType: 'Beautiful',
       }
@@ -8016,7 +8016,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heavy Slam',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Tough',
       }
@@ -8033,7 +8033,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Synchronoise',
         pp: 10,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -8049,7 +8049,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Electro Ball',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -8065,7 +8065,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Soak',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -8082,7 +8082,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flame Charge',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -8091,7 +8091,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'coil',
       {
         num: 489,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack, Defense, and accuracy by 1 stage.',
@@ -8099,7 +8099,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Coil',
         pp: 20,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -8116,7 +8116,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Low Sweep',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Clever',
       }
@@ -8132,7 +8132,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Acid Spray',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Beautiful',
       }
@@ -8148,7 +8148,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Foul Play',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -8165,7 +8165,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Simple Beam',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -8181,7 +8181,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Entrainment',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -8190,14 +8190,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'afteryou',
       {
         num: 495,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The target makes its move right after the user.',
         name: 'After You',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -8213,7 +8213,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Round',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -8229,7 +8229,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Echoed Voice',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -8246,7 +8246,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Chip Away',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -8255,7 +8255,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'clearsmog',
       {
         num: 499,
-        accuracy: true,
+        accuracy: 100,
         basePower: 50,
         category: 'Special',
         desc: 'Resets all of the target\'s stat stages to 0.',
@@ -8263,7 +8263,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Clear Smog',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Beautiful',
       }
@@ -8279,7 +8279,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Stored Power',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -8288,14 +8288,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'quickguard',
       {
         num: 501,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects allies from priority attacks this turn.',
         name: 'Quick Guard',
         pp: 15,
         priority: 3,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -8304,14 +8304,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'allyswitch',
       {
         num: 502,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'The user swaps positions with its ally.',
         name: 'Ally Switch',
         pp: 15,
         priority: 2,
-        target: 'self',
+        target: 'Self',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -8327,7 +8327,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Scald',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -8336,14 +8336,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'shellsmash',
       {
         num: 504,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2.',
         name: 'Shell Smash',
         pp: 15,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -8352,14 +8352,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'healpulse',
       {
         num: 505,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals the target by 50% of its max HP.',
         name: 'Heal Pulse',
         pp: 10,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Psychic',
         contestType: 'Beautiful',
       }
@@ -8376,7 +8376,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hex',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Clever',
       }
@@ -8392,7 +8392,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sky Drop',
         pp: 10,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Tough',
       }
@@ -8401,7 +8401,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'shiftgear',
       {
         num: 508,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Speed by 2 stages and its Attack by 1 stage.',
@@ -8409,7 +8409,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shift Gear',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Steel',
         contestType: 'Clever',
       }
@@ -8425,7 +8425,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Circle Throw',
         pp: 10,
         priority: -6,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -8441,7 +8441,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Incinerate',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -8457,7 +8457,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Quash',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -8474,7 +8474,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Acrobatics',
         pp: 15,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -8483,14 +8483,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'reflecttype',
       {
         num: 513,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User becomes the same type as the target.',
         name: 'Reflect Type',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -8506,7 +8506,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Retaliate',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -8522,7 +8522,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Final Gambit',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -8531,14 +8531,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'bestow',
       {
         num: 516,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User passes its held item to the target.',
         name: 'Bestow',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -8555,7 +8555,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Inferno',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -8571,7 +8571,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Water Pledge',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -8587,7 +8587,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fire Pledge',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -8603,7 +8603,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Grass Pledge',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -8619,7 +8619,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Volt Switch',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -8635,7 +8635,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Struggle Bug',
         pp: 20,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -8652,7 +8652,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bulldoze',
         pp: 20,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -8668,7 +8668,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Frost Breath',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -8684,7 +8684,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Tail',
         pp: 10,
         priority: -6,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -8693,7 +8693,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'workup',
       {
         num: 526,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Attack and Special Attack by 1 stage.',
@@ -8701,7 +8701,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Work Up',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -8718,7 +8718,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Electroweb',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Electric',
         contestType: 'Beautiful',
       }
@@ -8734,7 +8734,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Wild Charge',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Tough',
       }
@@ -8751,7 +8751,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Drill Run',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -8767,7 +8767,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dual Chop',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -8784,7 +8784,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heart Stamp',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cute',
       }
@@ -8800,7 +8800,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Horn Leech',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Tough',
       }
@@ -8817,7 +8817,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sacred Sword',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -8834,7 +8834,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Razor Shell',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -8850,7 +8850,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Heat Crash',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -8867,7 +8867,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leaf Tornado',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -8883,7 +8883,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Steamroller',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Tough',
       }
@@ -8892,7 +8892,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'cottonguard',
       {
         num: 538,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Raises the user\'s Defense by 3 stages.',
@@ -8900,7 +8900,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Cotton Guard',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Grass',
         contestType: 'Cute',
       }
@@ -8917,7 +8917,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Night Daze',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -8933,7 +8933,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psystrike',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -8949,7 +8949,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tail Slap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -8965,7 +8965,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hurricane',
         pp: 10,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Tough',
       }
@@ -8981,7 +8981,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Head Charge',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -8997,7 +8997,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Gear Grind',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Clever',
       }
@@ -9014,7 +9014,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Searing Shot',
         pp: 5,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -9031,7 +9031,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Techno Blast',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -9047,7 +9047,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Relic Song',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -9063,7 +9063,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Secret Sword',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Beautiful',
       }
@@ -9080,7 +9080,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Glaciate',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -9097,7 +9097,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bolt Strike',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Beautiful',
       }
@@ -9114,7 +9114,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Blue Flare',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -9131,7 +9131,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fiery Dance',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -9147,7 +9147,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Freeze Shock',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -9163,7 +9163,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Burn',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -9179,7 +9179,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Snarl',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -9196,7 +9196,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Icicle Crash',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -9212,7 +9212,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'V-create',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -9228,7 +9228,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fusion Flare',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -9244,7 +9244,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fusion Bolt',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -9260,7 +9260,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Flying Press',
         pp: 10,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -9269,14 +9269,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'matblock',
       {
         num: 561,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects allies from attacks. First turn out only.',
         name: 'Mat Block',
         pp: 10,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -9292,7 +9292,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Belch',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -9301,14 +9301,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'rototiller',
       {
         num: 563,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises Atk, Sp. Atk of grounded Grass types by 1.',
         name: 'Rototiller',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -9317,14 +9317,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'stickyweb',
       {
         num: 564,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Lowers Speed of grounded foes by 1 on switch-in.',
         name: 'Sticky Web',
         pp: 20,
         priority: 0,
-        target: 'foeSide',
+        target: 'Foe\'s side',
         type: 'Bug',
         contestType: 'Tough',
       }
@@ -9340,7 +9340,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fell Stinger',
         pp: 25,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -9356,7 +9356,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Phantom Force',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -9372,7 +9372,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Trick-or-Treat',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cute',
       }
@@ -9389,7 +9389,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Noble Roar',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -9398,7 +9398,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'iondeluge',
       {
         num: 569,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Causes Normal-type moves to become Electric type this turn.',
@@ -9406,7 +9406,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ion Deluge',
         pp: 25,
         priority: 1,
-        target: 'all',
+        target: 'All',
         type: 'Electric',
         contestType: 'Beautiful',
       }
@@ -9422,7 +9422,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Parabolic Charge',
         pp: 20,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -9438,7 +9438,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Forest\'s Curse',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -9455,7 +9455,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Petal Blizzard',
         pp: 15,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -9471,7 +9471,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Freeze-Dry',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -9480,7 +9480,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'disarmingvoice',
       {
         num: 574,
-        accuracy: true,
+        accuracy: 100,
         basePower: 40,
         category: 'Special',
         desc: 'This move does not check accuracy.',
@@ -9488,7 +9488,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Disarming Voice',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -9504,7 +9504,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Parting Shot',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -9513,14 +9513,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'topsyturvy',
       {
         num: 576,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Inverts the target\'s stat stages.',
         name: 'Topsy-Turvy',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -9536,7 +9536,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Draining Kiss',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -9545,14 +9545,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'craftyshield',
       {
         num: 578,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects allies from Status moves this turn.',
         name: 'Crafty Shield',
         pp: 10,
         priority: 3,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Fairy',
         contestType: 'Clever',
       }
@@ -9561,14 +9561,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'flowershield',
       {
         num: 579,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises Defense by 1 of all active Grass types.',
         name: 'Flower Shield',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -9577,14 +9577,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'grassyterrain',
       {
         num: 580,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: '5 turns. Grounded: +Grass power,+1/16 max HP.',
         name: 'Grassy Terrain',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -9593,14 +9593,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'mistyterrain',
       {
         num: 581,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: '5 turns. Can\'t status,-Dragon power vs grounded.',
         name: 'Misty Terrain',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -9609,14 +9609,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'electrify',
       {
         num: 582,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Changes the target\'s move to Electric this turn.',
         name: 'Electrify',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -9633,7 +9633,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Play Rough',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -9650,7 +9650,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fairy Wind',
         pp: 30,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -9666,7 +9666,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Moonblast',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -9683,7 +9683,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Boomburst',
         pp: 10,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -9692,14 +9692,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'fairylock',
       {
         num: 587,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Prevents all Pokemon from switching next turn.',
         name: 'Fairy Lock',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Fairy',
         contestType: 'Clever',
       }
@@ -9708,14 +9708,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'kingsshield',
       {
         num: 588,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects from attacks. Contact: lowers Atk by 2.',
         name: 'King\'s Shield',
         pp: 10,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -9724,7 +9724,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'playnice',
       {
         num: 589,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Lowers the target\'s Attack by 1 stage.',
@@ -9732,7 +9732,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Play Nice',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -9741,7 +9741,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'confide',
       {
         num: 590,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Lowers the target\'s Special Attack by 1 stage.',
@@ -9749,7 +9749,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Confide',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -9766,7 +9766,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Diamond Storm',
         pp: 5,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Rock',
         contestType: 'Beautiful',
       }
@@ -9782,7 +9782,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Steam Eruption',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -9791,14 +9791,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'hyperspacehole',
       {
         num: 593,
-        accuracy: true,
+        accuracy: 100,
         basePower: 80,
         category: 'Special',
         shortDesc: 'Breaks the target\'s protection for this turn.',
         name: 'Hyperspace Hole',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -9814,7 +9814,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Water Shuriken',
         pp: 20,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -9830,7 +9830,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mystical Fire',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -9839,14 +9839,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'spikyshield',
       {
         num: 596,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects from moves. Contact: loses 1/8 max HP.',
         name: 'Spiky Shield',
         pp: 10,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Grass',
         contestType: 'Tough',
       }
@@ -9855,14 +9855,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'aromaticmist',
       {
         num: 597,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises an ally\'s Sp. Def by 1.',
         name: 'Aromatic Mist',
         pp: 20,
         priority: 0,
-        target: 'adjacentAlly',
+        target: 'Adjacent Ally',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -9879,7 +9879,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Eerie Impulse',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -9895,7 +9895,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Venom Drench',
         pp: 20,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -9911,7 +9911,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Powder',
         pp: 20,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -9920,14 +9920,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'geomancy',
       {
         num: 601,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Charges, then raises SpA, SpD, Spe by 2 turn 2.',
         name: 'Geomancy',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -9936,14 +9936,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'magneticflux',
       {
         num: 602,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises Def, Sp. Def of allies with Plus/Minus by 1.',
         name: 'Magnetic Flux',
         pp: 20,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -9952,7 +9952,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'happyhour',
       {
         num: 603,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Money falls from the sky.',
@@ -9960,7 +9960,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Happy Hour',
         pp: 30,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -9969,14 +9969,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'electricterrain',
       {
         num: 604,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: '5 turns. Grounded: +Electric power, can\'t sleep.',
         name: 'Electric Terrain',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -9993,7 +9993,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dazzling Gleam',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -10002,7 +10002,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'celebrate',
       {
         num: 606,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'It is your birthday.',
@@ -10010,7 +10010,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Celebrate',
         pp: 40,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -10027,7 +10027,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Baby-Doll Eyes',
         pp: 30,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -10044,7 +10044,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Nuzzle',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cute',
       }
@@ -10061,7 +10061,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Hold Back',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -10077,7 +10077,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Infestation',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -10094,7 +10094,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Power-Up Punch',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
       }
@@ -10110,7 +10110,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Oblivion Wing',
         pp: 10,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -10126,7 +10126,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thousand Arrows',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ground',
         contestType: 'Beautiful',
       }
@@ -10135,14 +10135,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'holdhands',
       {
         num: 615,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'No competitive use. Or any use.',
         name: 'Hold Hands',
         pp: 40,
         priority: 0,
-        target: 'adjacentAlly',
+        target: 'Adjacent Ally',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -10158,7 +10158,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Thousand Waves',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -10175,7 +10175,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Land\'s Wrath',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ground',
         contestType: 'Beautiful',
       }
@@ -10191,7 +10191,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Light of Ruin',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -10208,7 +10208,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Origin Pulse',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -10225,7 +10225,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Precipice Blades',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Ground',
         contestType: 'Cool',
       }
@@ -10242,7 +10242,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Ascent',
         pp: 5,
         priority: 0,
-        target: 'any',
+        target: 'Any',
         type: 'Flying',
         contestType: 'Beautiful',
       }
@@ -10251,14 +10251,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'hyperspacefury',
       {
         num: 621,
-        accuracy: true,
+        accuracy: 100,
         basePower: 100,
         category: 'Physical',
         shortDesc: 'Hoopa-U: Lowers user\'s Def by 1; breaks protection.',
         name: 'Hyperspace Fury',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -10267,7 +10267,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'breakneckblitz',
       {
         num: 622,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10275,7 +10275,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'normaliumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -10284,7 +10284,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'alloutpummeling',
       {
         num: 624,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10292,7 +10292,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'fightiniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
       }
@@ -10301,7 +10301,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'supersonicskystrike',
       {
         num: 626,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10309,7 +10309,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'flyiniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -10318,7 +10318,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'aciddownpour',
       {
         num: 628,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10326,7 +10326,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'poisoniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Cool',
       }
@@ -10335,7 +10335,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'tectonicrage',
       {
         num: 630,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10343,7 +10343,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'groundiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Cool',
       }
@@ -10352,7 +10352,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'continentalcrush',
       {
         num: 632,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10360,7 +10360,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'rockiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Cool',
       }
@@ -10369,7 +10369,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'savagespinout',
       {
         num: 634,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10377,7 +10377,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'buginiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
       }
@@ -10386,7 +10386,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'neverendingnightmare',
       {
         num: 636,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10394,7 +10394,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'ghostiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -10403,7 +10403,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'corkscrewcrash',
       {
         num: 638,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10411,7 +10411,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'steeliumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -10420,7 +10420,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'infernooverdrive',
       {
         num: 640,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10428,7 +10428,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'firiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -10437,7 +10437,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'hydrovortex',
       {
         num: 642,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10445,7 +10445,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'wateriumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -10454,7 +10454,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'bloomdoom',
       {
         num: 644,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10462,7 +10462,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'grassiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -10471,7 +10471,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'gigavolthavoc',
       {
         num: 646,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10479,7 +10479,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'electriumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -10488,7 +10488,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'shatteredpsyche',
       {
         num: 648,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10496,7 +10496,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'psychiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -10505,7 +10505,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'subzeroslammer',
       {
         num: 650,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10513,7 +10513,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'iciumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Cool',
       }
@@ -10522,7 +10522,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'devastatingdrake',
       {
         num: 652,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10530,7 +10530,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'dragoniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -10539,7 +10539,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'blackholeeclipse',
       {
         num: 654,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10547,7 +10547,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'darkiniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -10556,7 +10556,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'twinkletackle',
       {
         num: 656,
-        accuracy: true,
+        accuracy: 100,
         basePower: 1,
         category: 'Physical',
         shortDesc: 'Power is equal to the base move\'s Z-Power.',
@@ -10564,7 +10564,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'fairiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cool',
       }
@@ -10573,7 +10573,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'catastropika',
       {
         num: 658,
-        accuracy: true,
+        accuracy: 100,
         basePower: 210,
         category: 'Physical',
         desc: 'No additional effect.',
@@ -10582,7 +10582,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'pikaniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -10591,14 +10591,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'shoreup',
       {
         num: 659,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'User restores 1/2 its max HP; 2/3 in Sandstorm.',
         name: 'Shore Up',
         pp: 10,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Ground',
         contestType: 'Beautiful',
       }
@@ -10615,7 +10615,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'First Impression',
         pp: 10,
         priority: 2,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -10624,14 +10624,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'banefulbunker',
       {
         num: 661,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Protects from moves. Contact: poison.',
         name: 'Baneful Bunker',
         pp: 10,
         priority: 4,
-        target: 'self',
+        target: 'Self',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -10647,7 +10647,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spirit Shackle',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Tough',
       }
@@ -10664,7 +10664,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Darkest Lariat',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -10681,7 +10681,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sparkling Aria',
         pp: 10,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -10698,7 +10698,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Ice Hammer',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Tough',
       }
@@ -10707,14 +10707,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'floralhealing',
       {
         num: 666,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Heals the target by 50% of its max HP.',
         name: 'Floral Healing',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -10731,7 +10731,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'High Horsepower',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -10747,7 +10747,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Strength Sap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cute',
       }
@@ -10763,7 +10763,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Solar Blade',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -10780,7 +10780,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Leafage',
         pp: 40,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Tough',
       }
@@ -10789,14 +10789,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'spotlight',
       {
         num: 671,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Target\'s foes\' moves are redirected to it this turn.',
         name: 'Spotlight',
         pp: 15,
         priority: 3,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -10813,7 +10813,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Toxic Thread',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Tough',
       }
@@ -10822,14 +10822,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'laserfocus',
       {
         num: 673,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Next turn, the user\'s attack will be a critical hit.',
         name: 'Laser Focus',
         pp: 30,
         priority: 0,
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -10838,14 +10838,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'gearup',
       {
         num: 674,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises Atk, Sp. Atk of allies with Plus/Minus by 1.',
         name: 'Gear Up',
         pp: 20,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Steel',
         contestType: 'Clever',
       }
@@ -10862,7 +10862,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Throat Chop',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -10878,7 +10878,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Pollen Puff',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -10894,7 +10894,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Anchor Shot',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Tough',
       }
@@ -10903,14 +10903,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'psychicterrain',
       {
         num: 678,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: '5 turns. Grounded: +Psychic power, priority-safe.',
         name: 'Psychic Terrain',
         pp: 10,
         priority: 0,
-        target: 'all',
+        target: 'All',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -10927,7 +10927,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Lunge',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -10944,7 +10944,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fire Lash',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Cute',
       }
@@ -10960,7 +10960,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Power Trip',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -10976,7 +10976,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Burn Up',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Clever',
       }
@@ -10985,7 +10985,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'speedswap',
       {
         num: 683,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The user swaps its raw Speed stat with the target.',
@@ -10993,7 +10993,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Speed Swap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -11002,7 +11002,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'smartstrike',
       {
         num: 684,
-        accuracy: true,
+        accuracy: 100,
         basePower: 70,
         category: 'Physical',
         desc: 'This move does not check accuracy.',
@@ -11010,7 +11010,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Smart Strike',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -11019,14 +11019,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'purify',
       {
         num: 685,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Cures target\'s status; heals user 1/2 maxHP if so.',
         name: 'Purify',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Poison',
         contestType: 'Beautiful',
       }
@@ -11043,7 +11043,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Revelation Dance',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -11060,7 +11060,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Core Enforcer',
         pp: 10,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -11077,7 +11077,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Trop Kick',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Cute',
       }
@@ -11086,7 +11086,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'instruct',
       {
         num: 689,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'The target immediately uses its last used move. Fails if the target has not made a move, if the move has 0 PP, if the target is preparing to use Beak Blast, Focus Punch, or Shell Trap, or if the move is Assist, Beak Blast, Belch, Bide, Celebrate, Copycat, Focus Punch, Ice Ball, Instruct, King\'s Shield, Me First, Metronome, Mimic, Mirror Move, Nature Power, Outrage, Petal Dance, Rollout, Shell Trap, Sketch, Sleep Talk, Struggle, Thrash, Transform, Uproar, any two-turn move, any recharge move, or any Z-Move.',
@@ -11094,7 +11094,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Instruct',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -11110,7 +11110,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Beak Blast',
         pp: 15,
         priority: -3,
-        target: 'normal',
+        target: 'Normal',
         type: 'Flying',
         contestType: 'Tough',
       }
@@ -11127,7 +11127,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Clanging Scales',
         pp: 5,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -11144,7 +11144,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Dragon Hammer',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -11161,7 +11161,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Brutal Swing',
         pp: 20,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -11170,14 +11170,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'auroraveil',
       {
         num: 694,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'For 5 turns, damage to allies is halved. Hail only.',
         name: 'Aurora Veil',
         pp: 20,
         priority: 0,
-        target: 'allySide',
+        target: 'Ally\'s side',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -11186,7 +11186,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'sinisterarrowraid',
       {
         num: 695,
-        accuracy: true,
+        accuracy: 100,
         basePower: 180,
         category: 'Physical',
         desc: 'No additional effect.',
@@ -11195,7 +11195,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'decidiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -11204,7 +11204,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'maliciousmoonsault',
       {
         num: 696,
-        accuracy: true,
+        accuracy: 100,
         basePower: 180,
         category: 'Physical',
         shortDesc: 'Damage doubles if the target used Minimize.',
@@ -11212,7 +11212,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'inciniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
       }
@@ -11221,7 +11221,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'oceanicoperetta',
       {
         num: 697,
-        accuracy: true,
+        accuracy: 100,
         basePower: 195,
         category: 'Special',
         desc: 'No additional effect.',
@@ -11230,7 +11230,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'primariumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -11239,7 +11239,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'guardianofalola',
       {
         num: 698,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Special',
         shortDesc: 'Does damage equal to 3/4 target\'s current HP.',
@@ -11247,7 +11247,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'tapuniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Tough',
       }
@@ -11256,7 +11256,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'soulstealing7starstrike',
       {
         num: 699,
-        accuracy: true,
+        accuracy: 100,
         basePower: 195,
         category: 'Physical',
         desc: 'No additional effect.',
@@ -11265,7 +11265,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'marshadiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -11274,7 +11274,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'stokedsparksurfer',
       {
         num: 700,
-        accuracy: true,
+        accuracy: 100,
         basePower: 175,
         category: 'Special',
         desc: 'Has a 100% chance to paralyze the target.',
@@ -11283,7 +11283,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'aloraichiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -11292,7 +11292,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'pulverizingpancake',
       {
         num: 701,
-        accuracy: true,
+        accuracy: 100,
         basePower: 210,
         category: 'Physical',
         desc: 'No additional effect.',
@@ -11301,7 +11301,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'snorliumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -11310,7 +11310,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'extremeevoboost',
       {
         num: 702,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         shortDesc: 'Raises user\'s Atk, Def, SpA, SpD, and Spe by 2.',
@@ -11318,7 +11318,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'eeviumz',
-        target: 'self',
+        target: 'Self',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -11327,7 +11327,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'genesissupernova',
       {
         num: 703,
-        accuracy: true,
+        accuracy: 100,
         basePower: 185,
         category: 'Special',
         desc: 'The terrain becomes Psychic Terrain.',
@@ -11336,7 +11336,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'mewniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -11352,7 +11352,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shell Trap',
         pp: 5,
         priority: -3,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -11369,7 +11369,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Fleur Cannon',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -11385,7 +11385,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Psychic Fangs',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -11401,7 +11401,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Stomping Tantrum',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -11418,7 +11418,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Shadow Bone',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -11435,7 +11435,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Accelerock',
         pp: 20,
         priority: 1,
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Cool',
       }
@@ -11452,7 +11452,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Liquidation',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -11468,7 +11468,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Prismatic Laser',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -11484,7 +11484,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Spectral Thief',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -11500,7 +11500,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sunsteel Strike',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -11516,7 +11516,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Moongeist Beam',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -11525,7 +11525,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'tearfullook',
       {
         num: 715,
-        accuracy: true,
+        accuracy: 100,
         basePower: 0,
         category: 'Status',
         desc: 'Lowers the target\'s Attack and Special Attack by 1 stage.',
@@ -11533,7 +11533,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Tearful Look',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -11550,7 +11550,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Zing Zap',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -11566,7 +11566,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Nature\'s Madness',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Tough',
       }
@@ -11583,7 +11583,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Multi-Attack',
         pp: 10,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
       }
@@ -11592,7 +11592,7 @@ const moves = new Collection<string, Pokemon.Move>(
       '10000000voltthunderbolt',
       {
         num: 719,
-        accuracy: true,
+        accuracy: 100,
         basePower: 195,
         category: 'Special',
         desc: 'Has a very high chance for a critical hit.',
@@ -11601,7 +11601,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'pikashuniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -11617,7 +11617,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Mind Blown',
         pp: 5,
         priority: 0,
-        target: 'allAdjacent',
+        target: 'All adjacent',
         type: 'Fire',
         contestType: 'Cool',
       }
@@ -11633,7 +11633,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Plasma Fists',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -11649,7 +11649,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Photon Geyser',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -11658,7 +11658,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'lightthatburnsthesky',
       {
         num: 723,
-        accuracy: true,
+        accuracy: 100,
         basePower: 200,
         category: 'Special',
         shortDesc: 'Physical if user\'s Atk > Sp. Atk. Ignores Abilities.',
@@ -11666,7 +11666,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'ultranecroziumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
       }
@@ -11675,7 +11675,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'searingsunrazesmash',
       {
         num: 724,
-        accuracy: true,
+        accuracy: 100,
         basePower: 200,
         category: 'Physical',
         shortDesc: 'Ignores the Abilities of other Pokemon.',
@@ -11683,7 +11683,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'solganiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Cool',
       }
@@ -11692,7 +11692,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'menacingmoonrazemaelstrom',
       {
         num: 725,
-        accuracy: true,
+        accuracy: 100,
         basePower: 200,
         category: 'Special',
         shortDesc: 'Ignores the Abilities of other Pokemon.',
@@ -11700,7 +11700,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'lunaliumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Ghost',
         contestType: 'Cool',
       }
@@ -11709,7 +11709,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'letssnuggleforever',
       {
         num: 726,
-        accuracy: true,
+        accuracy: 100,
         basePower: 190,
         category: 'Physical',
         desc: 'No additional effect.',
@@ -11718,7 +11718,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'mimikiumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Cool',
       }
@@ -11727,7 +11727,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'splinteredstormshards',
       {
         num: 727,
-        accuracy: true,
+        accuracy: 100,
         basePower: 190,
         category: 'Physical',
         shortDesc: 'Ends the effects of Terrain.',
@@ -11735,7 +11735,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'lycaniumz',
-        target: 'normal',
+        target: 'Normal',
         type: 'Rock',
         contestType: 'Cool',
       }
@@ -11744,7 +11744,7 @@ const moves = new Collection<string, Pokemon.Move>(
       'clangoroussoulblaze',
       {
         num: 728,
-        accuracy: true,
+        accuracy: 100,
         basePower: 185,
         category: 'Special',
         shortDesc: 'Raises the user\'s Atk/Def/SpAtk/SpDef/Spe by 1.',
@@ -11752,7 +11752,7 @@ const moves = new Collection<string, Pokemon.Move>(
         pp: 1,
         priority: 0,
         isZ: 'kommoniumz',
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -11769,7 +11769,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Zippy Zap',
         pp: 15,
         priority: 2,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cool',
       }
@@ -11786,7 +11786,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Splishy Splash',
         pp: 15,
         priority: 0,
-        target: 'allAdjacentFoes',
+        target: 'All adjacent foes',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -11803,7 +11803,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Floaty Fall',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -11812,14 +11812,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'pikapapow',
       {
         num: 732,
-        accuracy: true,
+        accuracy: 100,
         basePower: '(happiness * 10) / 25',
         category: 'Special',
         shortDesc: 'Max happiness: 102 power. Can\t miss.',
         name: 'Pika Papow',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Cute',
       }
@@ -11835,7 +11835,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Bouncy Bubble',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Water',
         contestType: 'Clever',
       }
@@ -11852,7 +11852,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Buzzy Buzz',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Electric',
         contestType: 'Clever',
       }
@@ -11869,7 +11869,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sizzly Slide',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fire',
         contestType: 'Clever',
       }
@@ -11886,7 +11886,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Glitzy Glow',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -11903,7 +11903,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Baddy Bad',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -11920,7 +11920,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sappy Seed',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -11937,7 +11937,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Freezy Frost',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Ice',
         contestType: 'Clever',
       }
@@ -11953,7 +11953,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Sparkly Swirl',
         pp: 15,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Fairy',
         contestType: 'Clever',
       }
@@ -11962,14 +11962,14 @@ const moves = new Collection<string, Pokemon.Move>(
       'veeveevolley',
       {
         num: 741,
-        accuracy: true,
+        accuracy: 100,
         basePower: '(happiness * 10) / 25',
         category: 'Physical',
         shortDesc: 'Max happiness: 102 power. Can\'t miss.',
         name: 'Veevee Volley',
         pp: 20,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -11985,7 +11985,7 @@ const moves = new Collection<string, Pokemon.Move>(
         name: 'Double Iron Bash',
         pp: 5,
         priority: 0,
-        target: 'normal',
+        target: 'Normal',
         type: 'Steel',
         contestType: 'Clever',
       }

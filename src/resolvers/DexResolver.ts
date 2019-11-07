@@ -1,10 +1,10 @@
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import {Arg, Args, Query, Resolver} from 'type-graphql';
 import DexService from '../services/DexService';
-import DetailsEntry from '../structures/DetailsEntry';
-import PaginatedArgs from '../arguments/PaginatedArgs';
-import { GraphQLJSONObject } from 'graphql-type-json';
+import DexDetails from '../structures/DexDetails';
+import DexEntry from '../structures/DexEntry';
+import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 
-@Resolver(DetailsEntry)
+@Resolver(DexDetails)
 export default class DexResolver {
   private dexService: DexService;
 
@@ -12,93 +12,93 @@ export default class DexResolver {
     this.dexService = new DexService();
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => DexDetails, {
     description: [
-      'Gets details on a single pokemon based on species name.',
+      'Gets details on a single Pokémon based on species name.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
     ].join(''),
   })
   async getPokemonDetails(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
+    pokemon, skip, take, reverse,
+  }: PokemonPaginatedArgs) {
     const detailsEntry = this.dexService.findBySpeciesWithDetails({
-      query, skip, take, reverse,
+      pokemon, skip, take, reverse,
     });
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${query}`);
+      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
 
     return detailsEntry;
   }
 
-  @Query(() => GraphQLJSONObject, {
+  @Query(() => DexDetails, {
     description: [
-      'Gets details on a single pokemon based on a fuzzy search.',
+      'Gets details on a single Pokémon based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
     ].join(''),
   })
   async getPokemonDetailsByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
-    const entry = this.dexService.findBySpecies(query);
+    pokemon, skip, take, reverse,
+  }: PokemonPaginatedArgs) {
+    const entry = this.dexService.findBySpecies(pokemon);
 
     if (!entry) {
       const fuzzyEntry = this.dexService.findByFuzzy({
-        query, skip, take, reverse,
+        pokemon, skip, take, reverse,
       });
       if (fuzzyEntry === undefined) {
-        throw new Error(`Failed to get data for Pokemon: ${query}`);
+        throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      query = fuzzyEntry[0].species;
+      pokemon = fuzzyEntry[0].species;
     }
 
     const detailsEntry = this.dexService.findBySpeciesWithDetails({
-      query, skip, take, reverse,
+      pokemon, skip, take, reverse,
     });
     if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${query}`);
+      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
 
     return detailsEntry;
   }
 
-  @Query(() => [ GraphQLJSONObject ], {
+  @Query(() => [ DexEntry ], {
     description: [
-      'Gets dex entries for pokemon based on a fuzzy search',
+      'Gets dex entries for Pokémon based on a fuzzy search',
       'You can supply a skip and take to paginate the results and reverse to show the results least to most well matches',
       'Reversal is applied before pagination!'
     ].join(''),
   })
   getDexEntries(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs) {
+    pokemon, skip, take, reverse,
+  }: PokemonPaginatedArgs) {
     const dexEntries = this.dexService.findByFuzzy({
-      query, skip, take, reverse,
+      pokemon, skip, take, reverse,
     });
     if (dexEntries === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${query}`);
+      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
 
     return dexEntries;
   }
 
-  @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a pokemon based on their species name' })
+  @Query(() => DexEntry, { description: 'Gets the dex entry for a Pokémon based on their species name' })
   getDexEntryBySpeciesName(@Arg('pokemon') pokemon: string) {
     const dexEntry = this.dexService.findBySpecies(pokemon);
     if (dexEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon: ${pokemon}`);
+      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
 
     return dexEntry;
   }
 
-  @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a pokemon based on their dex number' })
+  @Query(() => DexEntry, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
   getDexEntryByDexNumber(@Arg('num') num: number) {
     const dexEntry = this.dexService.findByNum(num);
     if (dexEntry === undefined) {
-      throw new Error(`Failed to get data for Pokemon with dex number: ${num}`);
+      throw new Error(`Failed to get data for Pokémon with dex number: ${num}`);
     }
 
     return dexEntry;

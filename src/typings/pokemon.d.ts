@@ -27,9 +27,10 @@ export namespace Pokemon {
     water: number;
   }
 
-  export interface GenderRatio {
-    M: number;
-    F: number;
+  export interface GenderEntry {
+    male: number;
+    female: number;
+    special?: GendersUnion;
   }
 
   export interface Stats extends Record<string, number> {
@@ -42,10 +43,10 @@ export namespace Pokemon {
   }
 
   export interface Abilities extends Record<string, string | undefined> {
-    0: string;
-    1?: string;
-    H?: string;
-    S?: string;
+    first: string;
+    second?: string;
+    hidden?: string;
+    special?: string;
   }
 
   export interface DexEntry {
@@ -60,7 +61,7 @@ export namespace Pokemon {
     forme?: string;
     formeLetter?: string;
     gender?: 'M' | 'F' | 'N';
-    genderRatio?: GenderRatio;
+    genderRatio?: GenderEntry;
     heightm: number;
     num: number;
     otherFormes?: string[];
@@ -92,8 +93,8 @@ export namespace Pokemon {
     type: string;
     basePower: StringOrNumber;
     pp: number;
-    category: string;
-    accuracy: boolean | StringOrNumber;
+    category: MoveCategoriesUnion;
+    accuracy: number;
     priority: number;
     target: string;
     contestType: string;
@@ -129,7 +130,7 @@ export namespace Pokemon {
     preevolutions: DexEntry[];
     evolutions: DexEntry[];
     flavorText: Flavor[];
-    genderData: GenderRatio | 'none';
+    genderData: GenderEntry | 'none';
     sprite: string;
     shinySprite: string;
     smogonTier: string | 'Undiscovered';
@@ -168,6 +169,8 @@ export namespace Pokemon {
     flavor_text: string;
   }
 
+
+  export type MoveCategoriesUnion = 'Physical' | 'Special' | 'Status';
   export type GendersUnion = 'Female' | 'Male' | 'None' | 'Unknown';
 }
 

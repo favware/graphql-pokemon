@@ -1,17 +1,20 @@
-import { Arg, Args } from 'type-graphql';
+import {Arg, Args} from 'type-graphql';
 import FuzzySearch from '../utils/FuzzySearch';
 import pokedex from '../assets/pokedex';
-import { pokedexAliases } from '../assets/aliases';
+import {pokedexAliases} from '../assets/aliases';
 import Pokemon from '../typings/pokemon';
-import { SimpleFuseOptions } from '../typings/common';
-import DetailsEntry from '../structures/DetailsEntry';
+import {SimpleFuseOptions} from '../typings/common';
+import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
-import PaginatedArgs from '../arguments/PaginatedArgs';
-import { GraphQLJSONObject } from 'graphql-type-json';
+import {GraphQLJSONObject} from 'graphql-type-json';
+import GenderEntry from '../structures/GenderEntry';
+import Util from '../utils/util';
+import AbilitiesEntry from '../structures/AbilitiesEntry';
+import StatsEntry from '../structures/StatsEntry';
+import FlavorEntry from '../structures/FlavorEntry';
+import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 
 export default class DexService {
-  private replaceSpacesRegex = new RegExp(/ /, 'g');
-
   public findByNum(@Arg('num') num: number) {
     return pokedex.find(poke => poke.num === num);
   }
@@ -21,19 +24,19 @@ export default class DexService {
   }
 
   public findByFuzzy(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    if (query.split(' ')[0] === 'mega') {
-      query = `${query.substring(query.split(' ')[0].length + 1)}-mega`;
+    pokemon, skip, take, reverse,
+  }: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    if (pokemon.split(' ')[0] === 'mega') {
+      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
     }
 
     const queryResults: DexEntry[] = [];
-    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
+    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], {threshold: 0.3, ...fuseOptions});
 
-    let fuzzyResult = fuzzyPokemon.run(query);
+    let fuzzyResult = fuzzyPokemon.run(pokemon);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).run(query);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], {threshold: 0.4}).run(pokemon);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyPokemon.run(fuzzyAliasResult[0].name);
@@ -41,7 +44,7 @@ export default class DexService {
     }
 
     if (!fuzzyResult.length) {
-      throw new Error(`No pokemon found ${query}`);
+      throw new Error(`No Pokémon found ${pokemon}`);
     }
 
     if (reverse) {
@@ -52,11 +55,38 @@ export default class DexService {
 
     for (const page of paginatedFuzzyResult) {
       const dexEntry = new DexEntry();
+
+      const genderData = new GenderEntry();
+      const baseStatsData = new StatsEntry();
+      const abilitiesData = new AbilitiesEntry();
+      const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.genderRatio || {
+        male: 0.5,
+        female: 0.5,
+        special: 'Unknown',
+      };
+
+      genderData.male = `${pageGenderRatio.male * 100}%`;
+      genderData.female = `${pageGenderRatio.female * 100}%`;
+      genderData.special = pageGenderRatio.special;
+
+      baseStatsData.hp = page.baseStats.hp;
+      baseStatsData.attack = page.baseStats.atk;
+      baseStatsData.defense = page.baseStats.def;
+      baseStatsData.specialattack = page.baseStats.spa;
+      baseStatsData.specialdefense = page.baseStats.spd;
+      baseStatsData.speed = page.baseStats.spe;
+
+      abilitiesData.first = page.abilities.first;
+      abilitiesData.second = page.abilities.second;
+      abilitiesData.hidden = page.abilities.hidden;
+      abilitiesData.special = page.abilities.special;
+
+      dexEntry.abilities = abilitiesData;
+      dexEntry.gender = genderData;
+      dexEntry.baseStats = baseStatsData;
       dexEntry.num = page.num;
       dexEntry.species = page.species;
       dexEntry.types = page.types;
-      dexEntry.abilities = page.abilities;
-      dexEntry.baseStats = page.baseStats;
       dexEntry.color = page.color;
       dexEntry.eggGroups = page.eggGroups || undefined;
       dexEntry.evolutionLevel = page.evoLevel || undefined;
@@ -64,8 +94,6 @@ export default class DexService {
       dexEntry.prevo = page.prevo || undefined;
       dexEntry.forme = page.forme || undefined;
       dexEntry.formeLetter = page.formeLetter || undefined;
-      dexEntry.gender = page.gender || undefined;
-      dexEntry.genderRatio = page.genderRatio || undefined;
       dexEntry.height = page.heightm;
       dexEntry.weight = page.weightkg;
       dexEntry.baseForme = page.baseForme || undefined;
@@ -79,12 +107,12 @@ export default class DexService {
   }
 
   public async findBySpeciesWithDetails(@Args() {
-    query, skip, take, reverse,
-  }: PaginatedArgs, parsingPokemon = '') {
-    const basePokemonData = this.findBySpecies(query);
+    pokemon, skip, take, reverse,
+  }: PokemonPaginatedArgs, parsingPokemon = '') {
+    const basePokemonData = this.findBySpecies(pokemon);
 
     if (!basePokemonData) {
-      throw new Error(`No pokemon found for ${query}`);
+      throw new Error(`No Pokémon found for ${pokemon}`);
     }
 
     const [ flavorsImport, tiersImport ] = await Promise.all([
@@ -92,51 +120,75 @@ export default class DexService {
       import('../assets/formats.json')
     ]);
 
-    const { default: flavors } = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
-    const { default: tiers } = tiersImport as { default: Record<string, string> };
+    const {default: flavors} = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
+    const {default: tiers} = tiersImport as { default: Record<string, string> };
 
-    const pokemonData = new DetailsEntry();
-    const evolutionChain: Promise<DetailsEntry>[] = [];
-    const preevolutionChain: Promise<DetailsEntry>[] = [];
+    const pokemonData = new DexDetails();
+    const genderData = new GenderEntry();
+    const baseStatsData = new StatsEntry();
+    const abilitiesData = new AbilitiesEntry();
+    const evolutionChain: Promise<DexDetails>[] = [];
+    const preevolutionChain: Promise<DexDetails>[] = [];
+    const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = basePokemonData.genderRatio || {
+      male: 0.5,
+      female: 0.5,
+      special: 'Unknown',
+    };
 
+    genderData.male = `${basePokemonGenderRatio.male * 100}%`;
+    genderData.female = `${basePokemonGenderRatio.female * 100}%`;
+    genderData.special = basePokemonGenderRatio.special;
+
+    baseStatsData.hp = basePokemonData.baseStats.hp;
+    baseStatsData.attack = basePokemonData.baseStats.atk;
+    baseStatsData.defense = basePokemonData.baseStats.def;
+    baseStatsData.specialattack = basePokemonData.baseStats.spa;
+    baseStatsData.specialdefense = basePokemonData.baseStats.spd;
+    baseStatsData.speed = basePokemonData.baseStats.spe;
+
+    abilitiesData.first = basePokemonData.abilities.first;
+    abilitiesData.second = basePokemonData.abilities.second;
+    abilitiesData.hidden = basePokemonData.abilities.hidden;
+    abilitiesData.special = basePokemonData.abilities.special;
+
+    pokemonData.abilities = abilitiesData;
+    pokemonData.gender = genderData;
+    pokemonData.baseStats = baseStatsData;
     pokemonData.num = basePokemonData.num;
     pokemonData.species = basePokemonData.species;
     pokemonData.types = basePokemonData.types;
-    pokemonData.abilities = basePokemonData.abilities;
-    pokemonData.baseStats = basePokemonData.baseStats;
     pokemonData.color = basePokemonData.color;
     pokemonData.eggGroups = basePokemonData.eggGroups || undefined;
     pokemonData.evolutionLevel = basePokemonData.evoLevel || undefined;
-    pokemonData.genderData = basePokemonData.gender
-      ? this.getFullGenderName(basePokemonData.gender)
-      : this.parseGenderRatio(
-        basePokemonData.genderRatio
-          ? basePokemonData.genderRatio
-          : { M: 0.5, F: 0.5 }
-      );
-    pokemonData.smogonTier = tiers[query.replace(/([-% ])/gm, '')] || 'Undiscovered';
+    pokemonData.smogonTier = tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
     pokemonData.height = basePokemonData.heightm;
     pokemonData.weight = basePokemonData.weightkg;
     pokemonData.baseForme = basePokemonData.baseForme;
     pokemonData.baseSpecies = basePokemonData.baseSpecies;
     pokemonData.otherFormes = basePokemonData.otherFormes;
     pokemonData.flavorTexts = [];
-    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${basePokemonData.species.replace(/ /g, '').toLowerCase()}`;
-    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${basePokemonData.species.replace(/ /g, '').toLowerCase()}`;
+    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${Util.toLowerSingleWordCase(basePokemonData.species)}`;
+    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${Util.toLowerSingleWordCase(basePokemonData.species)}`;
     pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
     pokemonData.serebiiPage = basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '';
-    pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${basePokemonData.species.replace(this.replaceSpacesRegex, '-')}` : '';
+    pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${Util.toLowerHyphenCase(basePokemonData.species)}` : '';
 
     if (basePokemonData.num >= 0) {
       if (basePokemonData.forme) {
         const formFlavors = flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
         for (const formFlavor of formFlavors) {
-          pokemonData.flavorTexts.push({ game: formFlavor.version_id, text: formFlavor.flavor_text });
+          const formFlavorEntry = new FlavorEntry();
+          formFlavorEntry.game = formFlavor.version_id;
+          formFlavorEntry.flavor = formFlavor.flavor_text;
+          pokemonData.flavorTexts.push(formFlavorEntry);
         }
       } else {
         const baseFlavors = flavors[basePokemonData.num];
         for (const baseFlavor of baseFlavors) {
-          pokemonData.flavorTexts.push({ game: baseFlavor.version_id, text: baseFlavor.flavor_text });
+          const formFlavorEntry = new FlavorEntry();
+          formFlavorEntry.game = baseFlavor.version_id;
+          formFlavorEntry.flavor = baseFlavor.flavor_text;
+          pokemonData.flavorTexts.push(formFlavorEntry);
         }
       }
     }
@@ -151,7 +203,7 @@ export default class DexService {
       const prevoPokemon = this.findBySpecies(basePokemonData.prevo);
       if (prevoPokemon) {
         preevolutionChain.push(this.findBySpeciesWithDetails({
-          query: prevoPokemon.species,
+          pokemon: prevoPokemon.species,
           skip,
           take,
           reverse,
@@ -163,7 +215,7 @@ export default class DexService {
       const evoPokemon = this.findBySpecies(basePokemonData.evos[0]);
       if (evoPokemon) {
         evolutionChain.push(this.findBySpeciesWithDetails({
-          query: evoPokemon.species,
+          pokemon: evoPokemon.species,
           skip,
           take,
           reverse,
@@ -177,37 +229,9 @@ export default class DexService {
     return pokemonData;
   }
 
-  private getFullGenderName(gender: Pokemon.DexEntry['gender']): Pokemon.GendersUnion {
-    switch (gender) {
-      case 'F':
-        return 'Female';
-      case 'M':
-        return 'Male';
-      case 'N':
-        return 'None';
-      default:
-        return 'Unknown';
-    }
-  }
-
-  private parseGenderRatio(genderRatio: Pokemon.GenderRatio) {
-    type genders = Exclude<Pokemon.DexEntry['gender'], undefined | 'N'>;
-    const parsedGenderRatios = {} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    const objectKeys = Object.keys(genderRatio) as genders[];
-
-    let amountOfKeys = objectKeys.length;
-    let key: genders;
-    while (amountOfKeys--) {
-      key = objectKeys[amountOfKeys];
-      parsedGenderRatios[this.getFullGenderName(key)] = `${genderRatio[key] * 100}%`;
-    }
-
-    return parsedGenderRatios;
-  }
-
   private parseSpeciesForBulbapedia(pokemonName: string, baseForme?: string) {
     if (baseForme) {
-      pokemonName = baseForme.replace(this.replaceSpacesRegex, '_');
+      pokemonName = Util.toTitleSnakeCase(baseForme);
     }
 
     return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;

@@ -1,0 +1,25 @@
+name: Update Showdown Formats
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  UpdateFormats:
+    name: Update Showdown Formats
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Deps
+      run: yarn
+    - name: Run Updater
+      run: yarn scripts:formatsupdater
+    - name: Commit any changes
+      run: |
+        git config --local user.email "favwarebot@gmail.com"
+        git config --local user.name "Favware-bot"
+        git commit -sam "feat: update smogon formats
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

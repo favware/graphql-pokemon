@@ -80,16 +80,6 @@
     "color": "f9d0c4"
   },
   {
-    "name": "Bug: Cannot Fix (H&C)",
-    "description": "Issues that report bugs related to Hammer And Chisel Inc.",
-    "color": "f9d0c4"
-  },
-  {
-    "name": "Bug: Cannot Fix (D.JS)",
-    "description": "Issues that report bugs related to discord.js.",
-    "color": "f9d0c4"
-  },
-  {
     "name": "Bug: Cannot Reproduce",
     "description": "Issues that report bugs that cannot be reproduced.",
     "color": "f9d0c4"
@@ -121,12 +111,12 @@
   },
   {
     "name": "Type: Proposal",
-    "description": "Issues that request a new feature or a change in the framework's interface.",
+    "description": "Issues that request a new feature or a change in the api's interface.",
     "color": "ffffff"
   },
   {
     "name": "Type: Performance",
-    "description": "Issues and PRs related to the performance of the framework's interface.",
+    "description": "Issues and PRs related to the performance of the api's interface.",
     "color": "1d76db"
   },
   {
@@ -211,7 +201,7 @@
   },
   {
     "name": "SEM: N/A",
-    "description": "PRs that only contain documentation changes and do not change the framework's interface.",
+    "description": "PRs that only contain documentation changes and do not change the api's interface.",
     "color": "a7f9f3"
   },
   {

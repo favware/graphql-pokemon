@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import { Pokemon } from '../typings/pokemon';
-import Collection from '@discordjs/collection';
+import GraphQLCollection from '../extensions/GraphQLCollection';
 
-const abilities = new Collection<string, Pokemon.Ability>(
+const abilities = new GraphQLCollection<string, Pokemon.Ability>(
   [
     [ 'persistent',
       {

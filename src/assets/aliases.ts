@@ -1,7 +1,7 @@
 import { Pokemon } from '../typings/pokemon';
-import Collection from '@discordjs/collection';
+import GraphQLCollection from '../extensions/GraphQLCollection';
 
-export const tierAliases = new Collection<string, Pokemon.TierAlias>(
+export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>(
   [
     [ 'randbats', { alias: 'randbats', tier: 'randombattle' } ],
     [ 'randoms', { alias: 'randoms', tier: 'randombattle' } ],
@@ -90,7 +90,7 @@ export const tierAliases = new Collection<string, Pokemon.TierAlias>(
   ]
 );
 
-export const pokedexAliases = new Collection<string, Pokemon.DexAlias>(
+export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
   [
     [ 'maero', { alias: 'maero', name: 'Aerodactyl-Mega' } ],
     [ 'megaaero', { alias: 'megaaero', name: 'Aerodactyl-Mega' } ],
@@ -155,10 +155,11 @@ export const pokedexAliases = new Collection<string, Pokemon.DexAlias>(
     [ 'shep', { alias: 'shep', name: 'Ampharos-Mega' } ],
     [ 'type: null', { alias: 'type: null', name: 'typenull' } ],
     [ 'type null', { alias: 'type null', name: 'typenull' } ],
-    [ 'mr. mime', { alias: 'mr. mime', name: 'mrmime' } ],
-    [ 'mr mime', { alias: 'mr mime', name: 'mrmime' } ],
-    [ 'mister mime', { alias: 'mister mime', name: 'mrmime' } ],
-    [ 'mrmime', { alias: 'mrmime', name: 'mrmime' } ],
+    [ 'mr. mime', { alias: 'mr. mime', name: 'mr. mime' } ],
+    [ 'mr mime', { alias: 'mr mime', name: 'mr. mime' } ],
+    [ 'mrmime', { alias: 'mrmime', name: 'mr. mime' } ],
+    [ 'mister mime', { alias: 'mister mime', name: 'mr. mime' } ],
+    [ 'mrmime', { alias: 'mrmime', name: 'mr. mime' } ],
     [ 'mime jr.', { alias: 'mime jr.', name: 'mimejr' } ],
     [ 'mime jr', { alias: 'mime jr', name: 'mimejr' } ],
     [ 'mimejr', { alias: 'mimejr', name: 'mimejr' } ],
@@ -1740,14 +1741,14 @@ export const pokedexAliases = new Collection<string, Pokemon.DexAlias>(
   ]
 );
 
-export const abilityAliases = new Collection<string, Pokemon.AbilityAlias>(
+export const abilityAliases = new GraphQLCollection<string, Pokemon.AbilityAlias>(
   [
     [ 'ph', { alias: 'ph', ability: 'Poison Heal' } ],
     [ 'stag', { alias: 'stag', ability: 'Shadow Tag' } ]
   ]
 );
 
-export const itemAliases = new Collection<string, Pokemon.ItemAlias>(
+export const itemAliases = new GraphQLCollection<string, Pokemon.ItemAlias>(
   [
     [ 'assvest', { alias: 'assvest', item: 'Assault Vest' } ],
     [ 'av', { alias: 'av', item: 'Assault Vest' } ],
@@ -1778,7 +1779,7 @@ export const itemAliases = new Collection<string, Pokemon.ItemAlias>(
 );
 
 
-export const moveAliases = new Collection<string, Pokemon.MoveAlias>(
+export const moveAliases = new GraphQLCollection<string, Pokemon.MoveAlias>(
   [
     [ 'bb', { alias: 'bb', move: 'Brave Bird' } ],
     [ 'bd', { alias: 'bd', move: 'Belly Drum' } ],

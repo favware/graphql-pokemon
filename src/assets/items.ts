@@ -1,7 +1,7 @@
+import GraphQLCollection from '../extensions/GraphQLCollection';
 import { Pokemon } from '../typings/pokemon';
-import Collection from '@discordjs/collection';
 
-const items = new Collection<string, Pokemon.Item>(
+const items = new GraphQLCollection<string, Pokemon.Item>(
   [
     [
       'crucibellite',

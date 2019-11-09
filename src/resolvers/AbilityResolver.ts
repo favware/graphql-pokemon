@@ -1,7 +1,7 @@
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 import AbilityEntry from '../structures/AbilityEntry';
 import AbilityService from '../services/AbilityService';
-import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
+import AbilityPaginatedArgs, { Abilities } from '../arguments/AbilityPaginatedArgs';
 import Util from '../utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
 
@@ -48,7 +48,7 @@ export default class AbilityResolver {
       'Gets details on a single ability based on an exact name match.'
     ].join(''),
   })
-  async getAbilityDetailsByName(@Arg('ability') ability: string) {
+  async getAbilityDetailsByName(@Arg('ability', () => Abilities) ability: string) {
     const entry = this.abilityService.findByNameWithDetails(ability);
 
     if (entry === undefined) {
@@ -80,11 +80,11 @@ export default class AbilityResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single ability by name.' })
-  getAbilityByName(@Arg('name') name: string) {
-    const abilityEntry = this.abilityService.findByName(name);
+  getAbilityByName(@Arg('ability', () => Abilities) ability: string) {
+    const abilityEntry = this.abilityService.findByName(ability);
 
     if (abilityEntry === undefined) {
-      throw new Error(`Failed to get data for ability: ${name}`);
+      throw new Error(`Failed to get data for ability: ${ability}`);
     }
 
     return abilityEntry;

@@ -174,15 +174,21 @@ export default class DexService {
     pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${Util.toLowerHyphenCase(basePokemonData.species)}` : '';
 
     if (basePokemonData.num >= 0) {
+      let shouldParseBaseForme = true;
       if (basePokemonData.forme) {
         const formFlavors = flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
-        for (const formFlavor of formFlavors) {
-          const formFlavorEntry = new FlavorEntry();
-          formFlavorEntry.game = formFlavor.version_id;
-          formFlavorEntry.flavor = formFlavor.flavor_text;
-          pokemonData.flavorTexts.push(formFlavorEntry);
+        if (formFlavors) {
+          shouldParseBaseForme = false;
+          for (const formFlavor of formFlavors) {
+            const formFlavorEntry = new FlavorEntry();
+            formFlavorEntry.game = formFlavor.version_id;
+            formFlavorEntry.flavor = formFlavor.flavor_text;
+            pokemonData.flavorTexts.push(formFlavorEntry);
+          }
         }
-      } else {
+      }
+
+      if (shouldParseBaseForme) {
         const baseFlavors = flavors[basePokemonData.num];
         for (const baseFlavor of baseFlavors) {
           const formFlavorEntry = new FlavorEntry();

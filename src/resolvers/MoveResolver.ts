@@ -1,7 +1,7 @@
 import { Resolver, Query, Args, Arg } from 'type-graphql';
 import MoveEntry from '../structures/MoveEntry';
 import MoveService from '../services/MoveService';
-import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
+import MovePaginatedArgs, { Moves } from '../arguments/MovePaginatedArgs';
 import Util from '../utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
 
@@ -48,7 +48,7 @@ export default class MoveResolver {
       'Gets details on a single move based on an exact name match.'
     ].join(''),
   })
-  getMoveDetailsByName(@Arg('move') move: string) {
+  getMoveDetailsByName(@Arg('move', () => Moves) move: string) {
     const entry = this.moveService.findByNameWithDetails(move);
 
     if (entry === undefined) {
@@ -80,7 +80,7 @@ export default class MoveResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single move based on name.' })
-  getMoveByName(@Arg('move') move: string) {
+  getMoveByName(@Arg('move', () => Moves) move: string) {
     const moveEntry = this.moveService.findByName(move);
 
     if (moveEntry === undefined) {

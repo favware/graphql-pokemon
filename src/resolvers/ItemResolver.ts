@@ -1,7 +1,7 @@
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 import ItemService from '../services/ItemSerivce';
 import ItemEntry from '../structures/ItemEntry';
-import ItemPaginatedArgs from '../arguments/ItemPaginatedArgs';
+import ItemPaginatedArgs, { Items } from '../arguments/ItemPaginatedArgs';
 import Util from '../utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
 
@@ -49,7 +49,7 @@ export default class ItemResolver {
       'Gets details on a single item based on an exact name match.'
     ].join(''),
   })
-  getItemDetailsByName(@Arg('item') item: string) {
+  getItemDetailsByName(@Arg('item', () => Items) item: string) {
     const entry = this.itemService.findByNameWithDetails(item);
 
     if (entry === undefined) {
@@ -81,7 +81,7 @@ export default class ItemResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single item based on name.' })
-  getItemByName(@Arg('item') item: string) {
+  getItemByName(@Arg('item', () => Items) item: string) {
     const itemEntry = this.itemService.findByName(item);
 
     if (itemEntry === undefined) {

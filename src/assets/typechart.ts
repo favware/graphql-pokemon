@@ -1,7 +1,7 @@
 import { Pokemon } from '../typings/pokemon';
-import Collection from '@discordjs/collection';
+import GraphQLCollection from '../extensions/GraphQLCollection';
 
-const typechart = new Collection<keyof Pokemon.Types, Pokemon.TypeMatchups>(
+const typechart = new GraphQLCollection<string, Pokemon.TypeMatchups>(
   [
     [
       'bug', {

@@ -1,5 +1,5 @@
 const TOTITLECASE = /[A-Za-zÀ-ÖØ-öø-ÿ]\S*/g;
-const COMMON_SYMBOLS = /[$-/:-?{-~!"^_`[\] ]/g;
+const COMMON_SYMBOLS = /[$-/:-?{-~!"^_`[\] .]/g;
 
 export default class Util {
   /**
@@ -34,10 +34,15 @@ export default class Util {
    * @since 1.0.0
    * @param str The string to replace to lowercase
    */
-  public static toLowerSingleWordCase(str: string): string {
-    return Util.replaceSymbols(str, '').toLowerCase();
+  public static toLowerSingleWordCase<T extends string>(str: T): T {
+    return Util.replaceSymbols(str, '').toLowerCase() as T;
   }
 
+  /**
+   * Parses Z-Crystal data into proper names
+   * @since 1.0.0
+   * @param str The Z-Crystal string to parse
+   */
   public static parseZCrystal(str: string | undefined): string | undefined {
     if (str === undefined) return str;
 
@@ -50,7 +55,15 @@ export default class Util {
    * @param str The string to get symbols removed from
    * @param replacement The replacement to fill instead of the symbols
    */
-  private static replaceSymbols(str: string, replacement: string): string {
-    return str.replace(COMMON_SYMBOLS, replacement);
+  private static replaceSymbols<T extends string>(str: T, replacement: string): T {
+    return str.replace(COMMON_SYMBOLS, replacement) as T;
   }
+}
+
+/**
+ * Cleans an array of null and undefined
+ * @param value array to filter
+ */
+export function removeNullAndUndefined<TValue>(value: TValue | null | undefined): value is TValue {
+  return value !== null && value !== undefined;
 }

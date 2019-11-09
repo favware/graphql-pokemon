@@ -1,10 +1,10 @@
+import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
+import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
-import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
-import Util from '../utils/util';
-import { GraphQLJSONObject } from 'graphql-type-json';
+import ExactPokemonPaginatedArgs from '../arguments/ExactPokemonPaginatedArgs';
 
 @Resolver(DexDetails)
 export default class DexResolver {
@@ -23,7 +23,7 @@ export default class DexResolver {
   })
   async getPokemonDetails(@Args() {
     pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs) {
+  }: ExactPokemonPaginatedArgs) {
     const detailsEntry = this.dexService.findBySpeciesWithDetails({
       pokemon, skip, take, reverse,
     });
@@ -32,6 +32,21 @@ export default class DexResolver {
     }
 
     return detailsEntry;
+  }
+
+  @Query(() => DexDetails, {
+    description: [
+      'Gets details on a single Pokémon based on species name.',
+      'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
+      'Reversal is applied before pagination!'
+    ].join(''),
+  })
+  getPokemomDetailsByName(@Args() {
+    pokemon, skip, take, reverse,
+  }: ExactPokemonPaginatedArgs) {
+    return this.getPokemonDetails({
+      pokemon, skip, take, reverse,
+    });
   }
 
   @Query(() => DexDetails, {
@@ -53,7 +68,7 @@ export default class DexResolver {
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].species);
+      pokemon = fuzzyEntry[0].species;
     }
 
     const detailsEntry = this.dexService.findBySpeciesWithDetails({

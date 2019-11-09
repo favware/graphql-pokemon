@@ -1,7 +1,7 @@
-import Collection from '@discordjs/collection';
 import { Pokemon } from '../typings/pokemon';
+import GraphQLCollection from '../extensions/GraphQLCollection';
 
-const pokedex = new Collection<string, Pokemon.DexEntry>(
+const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
   [
     [
       'bulbasaur',
@@ -14746,9 +14746,9 @@ const pokedex = new Collection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'flabébé',
+      'flabebe',
       {
-        species: 'flabébé',
+        species: 'flabebe',
         num: 669,
         types: [ 'Fairy' ],
         gender: 'F',

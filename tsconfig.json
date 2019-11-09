@@ -1,6 +1,5 @@
 {
   "extends": "@favware/ts-config",
-  "compileOnSave": false,
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",

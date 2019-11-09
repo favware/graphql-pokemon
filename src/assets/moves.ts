@@ -1,8 +1,8 @@
 /* eslint-disable max-len*/
 import { Pokemon } from '../typings/pokemon';
-import Collection from '@discordjs/collection';
+import GraphQLCollection from '../extensions/GraphQLCollection';
 
-const moves = new Collection<string, Pokemon.Move>(
+const moves = new GraphQLCollection<string, Pokemon.Move>(
   [
     [
       'paleowave',

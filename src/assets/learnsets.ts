@@ -1,8 +1,8 @@
 /*eslint max-len: ["error", { "code": 250 }]*/
 import { Pokemon } from '../typings/pokemon';
-import Collection from '@discordjs/collection';
+import GraphQLCollection from '../extensions/GraphQLCollection';
 
-const learnsets = new Collection<string, Pokemon.RecordStringArray>(
+const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray>(
   [
     [ 'missingno', {
       blizzard: [ '5L1' ],

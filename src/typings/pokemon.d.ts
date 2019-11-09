@@ -6,7 +6,7 @@ export namespace Pokemon {
     flavor_text: string;
   }
 
-  export interface Types {
+  export interface Types extends Record<string, number> {
     bug: number;
     dark: number;
     dragon: number;

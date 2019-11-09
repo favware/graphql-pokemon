@@ -10,16 +10,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.OS }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          ${{ runner.OS }}-yarn-${{ env.cache-name }}-
+          ${{ runner.OS }}-yarn-
+          ${{ runner.OS }}-
+
     - name: Install Deps
       run: yarn
     - name: Run Updater
       run: yarn scripts:formatsupdater
     - name: Commit any changes
       run: |
-        git config --local user.email "favwarebot@gmail.com"
-        git config --local user.name "Favware-bot"
+        GITHUB_REPO_URL="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git";
+        git config --local user.email "favwarebot@gmail.com";
+        git config --local user.name "Favware-bot";
         git commit -sam "feat: update smogon formats"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        git push "${GITHUB_REPO_URL}" HEAD:master;

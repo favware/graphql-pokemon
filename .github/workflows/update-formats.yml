@@ -18,7 +18,7 @@ jobs:
       run: |
         git config --local user.email "favwarebot@gmail.com"
         git config --local user.name "Favware-bot"
-        git commit -sam "feat: update smogon formats
+        git commit -sam "feat: update smogon formats"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:

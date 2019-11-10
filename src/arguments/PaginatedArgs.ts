@@ -7,12 +7,12 @@ export default abstract class PaginatedArgs {
   @Min(0)
   skip: number;
 
-  @Field(() => Int, { description: 'Return only this many results from offset' })
+  @Field(() => Int, { defaultValue: 10, description: 'Return only this many results, starting from the offset' })
   @Min(1)
   @Max(50)
-  take = 10;
+  take: number;
 
-  @Field(() => Boolean, { description: 'Reverses the dataset before paginating' })
+  @Field(() => Boolean, { defaultValue: false, description: 'Reverses the dataset before paginating' })
   @IsBoolean()
-  reverse = false;
+  reverse: boolean;
 }

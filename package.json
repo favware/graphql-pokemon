@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "homepage": "https://favware.tech/api",
   "scripts": {
-    "lint": "eslint src scripts --ext ts --fix",
+    "lint": "eslint src scripts __tests__ --ext ts --fix",
     "test": "jest",
     "build": "tsc",
     "watch": "tsc -w",

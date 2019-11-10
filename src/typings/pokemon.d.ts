@@ -141,11 +141,14 @@ export namespace Pokemon {
     text: string;
   }
 
-  export interface Learnset {
-    learnset: Record<string, string[]>;
+  export interface LearnsetMove {
+    name: string | null;
+    generation: number | null;
   }
 
-  export type LearnsetData = Record<string, Learnset>;
+  export interface LearnsetLevelupMove extends LearnsetMove {
+    level: number | null;
+  }
 
   export type RecordStringArray = Record<string, string[]>;
 

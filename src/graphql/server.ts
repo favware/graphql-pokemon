@@ -11,6 +11,7 @@ import { Items } from '../arguments/ItemPaginatedArgs';
 import { Abilities } from '../arguments/AbilityPaginatedArgs';
 import { Moves } from '../arguments/MovePaginatedArgs';
 import { Pokemon } from '../arguments/ExactPokemonPaginatedArgs';
+import LearnsetResolver from '../resolvers/LearnsetResolver';
 
 const gqlServer = () => {
   registerEnumType(Abilities, {
@@ -42,7 +43,7 @@ const gqlServer = () => {
   const schema = buildSchemaSync(
     {
       resolvers: [
-        DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver
+        DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver
       ],
     }
   );

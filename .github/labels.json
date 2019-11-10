@@ -50,6 +50,11 @@
     "color": "ffff00"
   },
   {
+    "name": "Meta: Tests",
+    "description": "Issues and PRs related to test code.",
+    "color": "ffff00"
+  },
+  {
     "name": "Meta: Bike-Shedding",
     "description": "Issues and PRs that nit pick",
     "color": "f9253a"

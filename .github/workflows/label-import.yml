@@ -1,6 +1,8 @@
 name: Label Sync
 
-on: issues
+on:
+  issues:
+  label:
 
 jobs:
   labels:

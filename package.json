@@ -38,8 +38,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@favware/eslint-config": "^3.1.4",
-    "@favware/ts-config": "^1.0.2",
+    "@favware/eslint-config": "^3.1.5",
+    "@favware/ts-config": "^1.1.0",
     "@graphql-codegen/cli": "^1.8.3",
     "@graphql-codegen/flow": "^1.8.3",
     "@graphql-codegen/flow-resolvers": "^1.8.3",

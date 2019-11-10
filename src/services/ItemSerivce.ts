@@ -2,10 +2,9 @@ import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args } from 'type-graphql';
 import { itemAliases } from '../assets/aliases';
 import items from '../assets/items';
-import { SimpleFuseOptions } from '../typings/common';
 import FuzzySearch from '../utils/FuzzySearch';
 import ItemEntry from '../structures/ItemEntry';
-import Util from '../utils/util';
+import Util, { SimpleFuseOptions } from '../utils/util';
 import ItemPaginatedArgs from '../arguments/ItemPaginatedArgs';
 
 export default class ItemService {

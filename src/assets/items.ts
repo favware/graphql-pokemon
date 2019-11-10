@@ -1,5 +1,5 @@
-import GraphQLCollection from '../extensions/GraphQLCollection';
-import { Pokemon } from '../typings/pokemon';
+import GraphQLCollection from '../utils/GraphQLCollection';
+import { Pokemon } from '../utils/pokemon';
 
 const items = new GraphQLCollection<string, Pokemon.Item>(
   [

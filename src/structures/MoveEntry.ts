@@ -1,5 +1,5 @@
 import { Field, Int, ObjectType } from 'type-graphql';
-import Pokemon from '../typings/pokemon';
+import Pokemon from '../utils/pokemon';
 import { MoveCategoryUnion } from './RegularExpression';
 
 @ObjectType({ description: 'A single Pokémon move entry' })

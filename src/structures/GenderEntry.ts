@@ -1,6 +1,6 @@
 import { Field, ObjectType } from 'type-graphql';
 import { GenderUnion } from './RegularExpression';
-import Pokemon from '../typings/pokemon';
+import Pokemon from '../utils/pokemon';
 
 @ObjectType({ description: 'A Pokémon gender ratio entry' })
 export default class GenderEntry {

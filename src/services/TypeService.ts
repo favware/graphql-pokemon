@@ -1,7 +1,7 @@
 import { Arg, Args } from 'type-graphql';
 import TypeArgs, { Types } from '../arguments/TypeArgs';
 import typechart from '../assets/typechart';
-import Pokemon from '../typings/pokemon';
+import Pokemon from '../utils/pokemon';
 import TypeEntry from '../structures/TypeEntry';
 import TypeMatchups from '../structures/TypeMatchups';
 

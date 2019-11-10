@@ -1,12 +1,11 @@
 import { Arg, Args } from 'type-graphql';
 import moves from '../assets/moves';
-import { SimpleFuseOptions } from '../typings/common';
 import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import FuzzySearch from '../utils/FuzzySearch';
 import { moveAliases } from '../assets/aliases';
 import MoveEntry from '../structures/MoveEntry';
-import Util from '../utils/util';
+import Util, { SimpleFuseOptions } from '../utils/util';
 
 export default class MoveService {
   public findByName(@Arg('name') name: string) {

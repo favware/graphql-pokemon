@@ -1,11 +1,10 @@
 import { Arg, Args } from 'type-graphql';
 import abilities from '../assets/abilities';
 import { GraphQLJSONObject } from 'graphql-type-json';
-import { SimpleFuseOptions } from '../typings/common';
 import AbilityEntry from '../structures/AbilityEntry';
 import FuzzySearch from '../utils/FuzzySearch';
 import { abilityAliases } from '../assets/aliases';
-import Util from '../utils/util';
+import Util, { SimpleFuseOptions } from '../utils/util';
 import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
 
 export default class AbilityService {

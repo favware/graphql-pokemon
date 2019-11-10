@@ -1,6 +1,6 @@
 /*eslint max-len: ["error", { "code": 250 }]*/
-import { Pokemon } from '../typings/pokemon';
-import GraphQLCollection from '../extensions/GraphQLCollection';
+import { Pokemon } from '../utils/pokemon';
+import GraphQLCollection from '../utils/GraphQLCollection';
 
 const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray>(
   [

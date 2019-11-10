@@ -11,7 +11,13 @@ export default class LearnsetResolver {
     this.learnsetService = new LearnsetService();
   }
 
-  @Query(() => LearnsetEntry, { description: 'Gets the learnsets for a given Pokémon and move' })
+  @Query(() => LearnsetEntry, {
+    description: [
+      'Gets the learnsets for a given Pokémon and move.',
+      'Multiple moves are possible by putting them in an array: [move1, move2].',
+      'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
+    ].join(''),
+  })
   getPokemonLearnset(@Args() { pokemon, moves, generation }: LearnsetArgs) {
     const entry = this.learnsetService.findLearnsets({ pokemon, moves, generation });
 

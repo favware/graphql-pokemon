@@ -1,5 +1,5 @@
 import { Field, Int, ObjectType } from 'type-graphql';
-import Pokemon from '../typings/pokemon';
+import Pokemon from '../utils/pokemon';
 
 @ObjectType({ description: 'A learnset move entry' })
 export class LearnsetMove implements Pokemon.LearnsetMove {

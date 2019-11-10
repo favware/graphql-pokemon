@@ -1,5 +1,5 @@
 import { ObjectType, Field } from 'type-graphql';
-import Pokemon from '../typings/pokemon';
+import Pokemon from '../utils/pokemon';
 
 @ObjectType({ description: 'A type matchup entry' })
 export default class TypeEntry {

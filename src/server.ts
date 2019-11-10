@@ -1,19 +1,19 @@
-import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
+import express from 'express';
 import { buildSchemaSync, registerEnumType } from 'type-graphql';
-import DexResolver from './resolvers/DexResolver';
-import AbilityResolver from './resolvers/AbilityResolver';
-import ItemResolver from './resolvers/ItemResolver';
-import MoveResolver from './resolvers/MoveResolver';
-import { Types } from './arguments/TypeArgs';
-import TypeResolver from './resolvers/TypeResolver';
-import { Items } from './arguments/ItemPaginatedArgs';
 import { Abilities } from './arguments/AbilityPaginatedArgs';
-import { Moves } from './arguments/MovePaginatedArgs';
 import { Pokemon } from './arguments/ExactPokemonPaginatedArgs';
+import { Items } from './arguments/ItemPaginatedArgs';
+import { Moves } from './arguments/MovePaginatedArgs';
+import { Types } from './arguments/TypeArgs';
+import AbilityResolver from './resolvers/AbilityResolver';
+import DexResolver from './resolvers/DexResolver';
+import ItemResolver from './resolvers/ItemResolver';
 import LearnsetResolver from './resolvers/LearnsetResolver';
+import MoveResolver from './resolvers/MoveResolver';
+import TypeResolver from './resolvers/TypeResolver';
 
-const gqlServer = () => {
+export const buildGqlSchema = () => {
   registerEnumType(Abilities, {
     name: 'Abilities',
     description: 'The supported abilities',
@@ -39,15 +39,18 @@ const gqlServer = () => {
     description: 'The types in Pokémon',
   });
 
-  const app = express();
-  const schema = buildSchemaSync(
+  return buildSchemaSync(
     {
       resolvers: [
         DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver
       ],
     }
   );
+};
 
+const gqlServer = () => {
+  const schema = buildGqlSchema();
+  const app = express();
   const apolloServer = new ApolloServer({
     schema,
     introspection: true,

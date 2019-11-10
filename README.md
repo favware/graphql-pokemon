@@ -51,9 +51,11 @@ __***Query for Pokemon data using GraphQL***__
 Install client side typings with [yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com/):
 
 ```sh
-yarn add @favware/graphql-pokemon
+# graphql is a peer dependency for type information
 
-# npm install @favware/graphql-pokemon
+yarn add -D graphql @favware/graphql-pokemon
+
+# npm install -D graphql @favware/graphql-pokemon
 ```
 
 * * *

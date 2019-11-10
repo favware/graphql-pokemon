@@ -5,7 +5,3 @@ generates:
     plugins:
       - typescript
       - typescript-resolvers
-  ./dist/client.flow.js:
-    plugins:
-      - flow
-      - flow-resolvers

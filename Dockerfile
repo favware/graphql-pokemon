@@ -9,10 +9,10 @@ FROM node:12-alpine
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package.json ./
 COPY yarn.lock ./
 
-RUN yarn
+RUN yarn --production --frozen-lockfile --no-bin-links --link-duplicates
 
 COPY dist .
 

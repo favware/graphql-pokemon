@@ -2,7 +2,6 @@ import { Arg, Args } from 'type-graphql';
 import TypeArgs, { Types } from '../arguments/TypeArgs';
 import typechart from '../assets/typechart';
 import Pokemon from '../typings/pokemon';
-import { removeNullAndUndefined } from '../utils/util';
 import TypeEntry from '../structures/TypeEntry';
 import TypeMatchups from '../structures/TypeMatchups';
 
@@ -11,8 +10,7 @@ export default class TypeService {
     return typechart.get(name);
   }
 
-  public findTypeMatchups(@Args(() => Types) { type, secondType }: TypeArgs) {
-    const types = [ type, secondType ].filter(removeNullAndUndefined);
+  public findTypeMatchups(@Args(() => Types) { types }: TypeArgs) {
     const atk: Pokemon.TypeDataset = {
       doubleEffectiveTypes: [],
       doubleResistedTypes: [],

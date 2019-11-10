@@ -1,3 +1,5 @@
+import { FuseOptions } from 'fuse.js';
+
 const TOTITLECASE = /[A-Za-zÀ-ÖØ-öø-ÿ]\S*/g;
 const COMMON_SYMBOLS = /[$-/:-?{-~!"^_`[\] .]/g;
 
@@ -60,10 +62,4 @@ export default class Util {
   }
 }
 
-/**
- * Cleans an array of null and undefined
- * @param value array to filter
- */
-export function removeNullAndUndefined<TValue>(value: TValue | null | undefined): value is TValue {
-  return value !== null && value !== undefined;
-}
+export type SimpleFuseOptions = Exclude<FuseOptions<unknown>, 'id'>;

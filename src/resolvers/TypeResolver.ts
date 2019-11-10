@@ -13,11 +13,11 @@ export default class TypeResolver {
   }
 
   @Query(() => TypeMatchups, { description: 'Gets the type matchup data for the given type or types' })
-  getTypeMatchup(@Args() { type, secondType }: TypeArgs) {
-    const entry = this.typeService.findTypeMatchups({ type, secondType });
+  getTypeMatchup(@Args() { types }: TypeArgs) {
+    const entry = this.typeService.findTypeMatchups({ types });
 
     if (entry === undefined) {
-      throw new Error(`Failed to get type matchups for: ${type} ${secondType ? `and ${secondType}` : ''}`);
+      throw new Error(`Failed to get type matchups for: ${types.join(', ')}`);
     }
 
     return entry;

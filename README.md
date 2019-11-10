@@ -67,13 +67,13 @@ type fetchResponse<T> = {
   data: Record<keyof Query, T>
 }
 
-fetch('https://eu-west1-favware-graphql.cloudfunctions.net/api', {
+fetch('https://favware.tech/api', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    query: '{getPokemonDetails(pokemon: "pikachu" skip: 0 take: 4 reverse: true)}'
+    query: '{getPokemonDetails(pokemon:pikachu skip:0 take:4 reverse:true)}'
   })
 })
 .then(res => res.json() as fetchResponse<DetailsEntry>)

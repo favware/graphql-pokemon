@@ -53,7 +53,12 @@ const needFile = async (url: string) => {
 
   for (const mon in BattleFormatsData) output[mon] = BattleFormatsData[mon].tier;
 
-  await Promise.all([ writeJSONAtomic(DATA_FILE, { lastSha: data.sha }), writeJSONAtomic(FORMATS_FILE, output) ]);
+  const writePromises: Promise<void>[] = [];
+
+  if (data.sha) writePromises.push(writeJSONAtomic(DATA_FILE, { lastSha: data.sha }));
+  if (output && Object.entries(output).length) writePromises.push(writeJSONAtomic(FORMATS_FILE, output));
+
+  await Promise.all(writePromises);
 
   console.log(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`);
 

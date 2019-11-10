@@ -30,12 +30,12 @@ const gqlServer = () => {
 
   registerEnumType(Pokemon, {
     name: 'Pokemon',
-    description: 'The supported pokemon',
+    description: 'The supported Pokémon',
   });
 
   registerEnumType(Types, {
     name: 'Types',
-    description: 'The types in pokemon',
+    description: 'The types in Pokémon',
   });
 
   const app = express();

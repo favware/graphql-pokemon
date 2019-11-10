@@ -6,11 +6,11 @@ export const Types = typechart.enumObject();
 
 @ArgsType()
 export default class TypeArgs {
-  @Field(() => Types, { description: 'The first type to check for'})
+  @Field(() => Types, { description: 'The first type to check for' })
   @IsIn(typechart.keyArray())
   type: string;
 
-  @Field(() => Types, { nullable: true, description: 'The secondary type to check for dual-typing'})
+  @Field(() => Types, { nullable: true, description: 'The secondary type to check for dual-typing' })
   @IsIn(typechart.keyArray())
   secondType?: string;
 }

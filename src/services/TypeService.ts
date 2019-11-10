@@ -11,7 +11,7 @@ export default class TypeService {
     return typechart.get(name);
   }
 
-  public findTypeMatchups(@Args(() => Types) {type, secondType}: TypeArgs): TypeMatchups {
+  public findTypeMatchups(@Args(() => Types) { type, secondType }: TypeArgs) {
     const types = [ type, secondType ].filter(removeNullAndUndefined);
     const atk: Pokemon.TypeDataset = {
       doubleEffectiveTypes: [],

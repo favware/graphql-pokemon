@@ -12,9 +12,9 @@ export default class TypeResolver {
     this.typeService = new TypeService();
   }
 
-  @Query(() => TypeMatchups, { description: 'Gets the type matchup data for the given type or types'})
-  getTypeMatchup(@Args() {type, secondType}: TypeArgs) {
-    const entry = this.typeService.findTypeMatchups({type, secondType});
+  @Query(() => TypeMatchups, { description: 'Gets the type matchup data for the given type or types' })
+  getTypeMatchup(@Args() { type, secondType }: TypeArgs) {
+    const entry = this.typeService.findTypeMatchups({ type, secondType });
 
     if (entry === undefined) {
       throw new Error(`Failed to get type matchups for: ${type} ${secondType ? `and ${secondType}` : ''}`);
@@ -23,7 +23,7 @@ export default class TypeResolver {
     return entry;
   }
 
-  @Query(() => GraphQLJSONObject, {description: 'Gets the raw type matchup data for any one given type' })
+  @Query(() => GraphQLJSONObject, { description: 'Gets the raw type matchup data for any one given type' })
   getTypeByName(@Arg('type', () => Types) type: string) {
     const typeEntry = this.typeService.findTypeMatchupByName(type);
 

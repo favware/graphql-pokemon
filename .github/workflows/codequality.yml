@@ -7,22 +7,17 @@ jobs:
     name: ESLint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout Project
+      uses: actions/checkout@v1
     - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: 12
-
-    - name: Cache node modules
+    - name: Restore CI Cache
       uses: actions/cache@v1
       with:
         path: node_modules
-        key: ${{ runner.OS }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.OS }}-yarn-${{ env.cache-name }}-
-          ${{ runner.OS }}-yarn-
-          ${{ runner.OS }}-
-
+        key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
     - name: Install Deps
       run: yarn
     - name: Run ESLint
@@ -36,23 +31,17 @@ jobs:
     name: Typescript
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout Project
+      uses: actions/checkout@v1
     - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: 12
-
-    - name: Cache node modules
+    - name: Restore CI Cache
       uses: actions/cache@v1
       with:
         path: node_modules
-        key: ${{ runner.OS }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.OS }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          ${{ runner.OS }}-yarn-${{ env.cache-name }}-
-          ${{ runner.OS }}-yarn-
-          ${{ runner.OS }}-
-
+        key: ${{ runner.os }}-10-${{ hashFiles('**/yarn.lock') }}
     - name: Install Deps
       run: yarn
     - name: Run TSC

@@ -74,7 +74,7 @@
     "dist/client.d.ts"
   ],
   "engines": {
-    "node": ">=12",
+    "node": ">=10",
     "npm": ">=6"
   },
   "repository": {

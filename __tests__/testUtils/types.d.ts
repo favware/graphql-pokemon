@@ -205,6 +205,6 @@ export interface Query {
   getTypeByName: Scalars['JSONObject'];
 }
 
-export interface DataResponse<K extends keyof Omit<Query, '__typename'>, D> {
-  data: Record<K, D>;
+export interface DataResponse<K extends keyof Omit<Query, '__typename'>> {
+  data: Record<K, Query[K]>;
 }

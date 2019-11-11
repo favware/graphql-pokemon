@@ -1,5 +1,5 @@
 import { gCall, formatResponse } from './testUtils/testUtils';
-import { Query, DataResponse } from './testUtils/types';
+import { DataResponse } from './testUtils/types';
 import { GraphQLError } from 'graphql';
 
 describe('getMoveDetailsByName', () => {
@@ -15,7 +15,7 @@ describe('getMoveDetailsByName', () => {
     const { data } = await gCall({
       source: getMoveDetailsByName,
       variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByName', Query['getMoveDetailsByName']>;
+    }).then(formatResponse) as DataResponse<'getMoveDetailsByName'>;
 
     expect(data.getMoveDetailsByName.name).toBe('Dragon Dance');
     expect(data.getMoveDetailsByName.num).toBe(349);
@@ -46,8 +46,9 @@ describe('getMoveDetailsByFuzzy', () => {
     const { data } = await gCall({
       source: getMoveDetailsByFuzzy,
       variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy', Query['getMoveDetailsByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy'>;
 
+    expect(data.getMoveDetailsByFuzzy.name).toBe('Dragon Dance');
     expect(data).toMatchSnapshot();
   });
 
@@ -55,7 +56,7 @@ describe('getMoveDetailsByFuzzy', () => {
     const { data } = await gCall({
       source: getMoveDetailsByFuzzy,
       variableValues: { move: 'dragon' },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy', Query['getMoveDetailsByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
@@ -69,7 +70,7 @@ describe('getMoveDetailsByFuzzy', () => {
         take: 1,
         reverse: true,
       },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy', Query['getMoveDetailsByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
@@ -110,7 +111,7 @@ describe('getMoveByFuzzy', () => {
     const { data } = await gCall({
       source: getMoveByFuzzy,
       variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy', Query['getMoveByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
@@ -119,7 +120,7 @@ describe('getMoveByFuzzy', () => {
     const { data } = await gCall({
       source: getMoveByFuzzy,
       variableValues: { move: 'dragon' },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy', Query['getMoveByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
@@ -133,7 +134,7 @@ describe('getMoveByFuzzy', () => {
         take: 1,
         reverse: true,
       },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy', Query['getMoveByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
@@ -142,7 +143,7 @@ describe('getMoveByFuzzy', () => {
     const { data } = await gCall({
       source: getMoveByFuzzy,
       variableValues: { move: 'totally_invalid_move' },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy', Query['getMoveByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data.getMoveByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
@@ -157,7 +158,7 @@ describe('getMoveByFuzzy', () => {
         take: 1,
         reverse: false,
       },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy', Query['getMoveByFuzzy']>;
+    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data.getMoveByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
@@ -174,7 +175,7 @@ describe('getMoveByName', () => {
     const { data } = await gCall({
       source: getMoveByName,
       variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveByName', Query['getMoveByName']>;
+    }).then(formatResponse) as DataResponse<'getMoveByName'>;
 
     expect(data.getMoveByName.num).toBe(349);
     expect(data.getMoveByName.name).toBe('Dragon Dance');

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types */
 export type Maybe<T> = T | null;
-export type RequireFields<T, K extends keyof T> = { [X in Exclude<keyof T, K>]?: T[X] } & { [P in K]-?: NonNullable<T[P]> };
+
 export interface Scalars {
   ID: string;
   String: string;
@@ -206,5 +206,5 @@ export interface Query {
 }
 
 export interface DataResponse<K extends keyof Omit<Query, '__typename'>> {
-  data: Record<K, Query[K]>;
+  data: Record<K, Omit<Query[K], '__typename'>>;
 }

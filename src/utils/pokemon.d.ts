@@ -119,11 +119,6 @@ export namespace Pokemon {
     move: string;
   }
 
-  export interface Flavor {
-    game: string;
-    text: string;
-  }
-
   export interface LearnsetMove {
     name: string | null;
     generation: number | null;

@@ -32,13 +32,13 @@ export default class DexService {
     const queryResults: DexEntry[] = [];
     const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
 
-    let fuzzyResult = fuzzyPokemon.run(pokemon);
+    let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).run(pokemon);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).runFuzzy(pokemon);
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyPokemon.run(fuzzyAliasResult[0].name);
+        fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].name);
       }
     }
 

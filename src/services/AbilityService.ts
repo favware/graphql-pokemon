@@ -17,13 +17,13 @@ export default class AbilityService {
   }: AbilityPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
     const fuzzyAbility = new FuzzySearch(abilities, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
 
-    let fuzzyResult = fuzzyAbility.run(ability);
+    let fuzzyResult = fuzzyAbility.runFuzzy(ability);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(abilityAliases, [ 'alias', 'ability' ], { threshold: 0.4 }).run(ability);
+      const fuzzyAliasResult = new FuzzySearch(abilityAliases, [ 'alias', 'ability' ], { threshold: 0.4 }).runFuzzy(ability);
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyAbility.run(fuzzyAliasResult[0].ability);
+        fuzzyResult = fuzzyAbility.runFuzzy(fuzzyAliasResult[0].ability);
       }
     }
 

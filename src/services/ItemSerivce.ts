@@ -17,13 +17,13 @@ export default class ItemService {
   }: ItemPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
     const fuzzyItem = new FuzzySearch(items, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
 
-    let fuzzyResult = fuzzyItem.run(item);
+    let fuzzyResult = fuzzyItem.runFuzzy(item);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(itemAliases, [ 'alias', 'item' ], { threshold: 0.4 }).run(item);
+      const fuzzyAliasResult = new FuzzySearch(itemAliases, [ 'alias', 'item' ], { threshold: 0.4 }).runFuzzy(item);
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyItem.run(fuzzyAliasResult[0].item);
+        fuzzyResult = fuzzyItem.runFuzzy(fuzzyAliasResult[0].item);
       }
     }
 

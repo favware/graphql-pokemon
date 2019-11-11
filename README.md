@@ -5,7 +5,7 @@
 
   <p>
 <h1> GraphQL-Pokemon </h1>
-<h3> Expansive Pokemon GraphQL API!</a></h3>
+<h3> Expansive Pokemon GraphQL API!</h3>
   </p>
 
 </div>

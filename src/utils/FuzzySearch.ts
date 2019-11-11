@@ -13,7 +13,7 @@ export default class FuzzySearch<K extends string, V> {
     };
   }
 
-  public run(query: string) {
+  public runFuzzy(query: string) {
     const locquery = query.toLowerCase();
 
     const fuzzyFuse = new Fuse(this.collectionArray, this.fuseOptions);

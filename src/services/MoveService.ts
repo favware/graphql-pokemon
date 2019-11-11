@@ -17,12 +17,12 @@ export default class MoveService {
   }: MovePaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
     const fuzzyMove = new FuzzySearch(moves, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
 
-    let fuzzyResult = fuzzyMove.run(move);
+    let fuzzyResult = fuzzyMove.runFuzzy(move);
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(moveAliases, [ 'alias', 'move' ], { threshold: 0.4 }).run(move);
+      const fuzzyAliasResult = new FuzzySearch(moveAliases, [ 'alias', 'move' ], { threshold: 0.4 }).runFuzzy(move);
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyMove.run(fuzzyAliasResult[0].move);
+        fuzzyResult = fuzzyMove.runFuzzy(fuzzyAliasResult[0].move);
       }
     }
 

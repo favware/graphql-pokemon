@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import fetch from 'node-fetch';
-import { writeJSONAtomic, readJSON } from 'fs-nextra';
-import { join, dirname } from 'path';
-import { Timestamp, constants } from '@klasa/timestamp';
+import { readJSON, writeJSONAtomic } from 'fs-nextra';
+import { dirname, join } from 'path';
+import { constants, Timestamp } from '@klasa/timestamp';
 
 const DATA_FILE = join(__dirname, 'updateFormatsData.json');
 const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
@@ -11,21 +11,21 @@ const TEN_DAYS_AGO = Date.now() - (10 * constants.DAY);
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
 const needFile = async (url: string) => {
-  const nodeModule: Module = module.constructor as Module;
+  const NodeModule: Module = module.constructor as Module;
   const request = await fetch(url);
   const body: string = await request.text();
-  const m = new nodeModule(url, module.parent);
-  m.fileName = url;
+  const nodeModule = new NodeModule(url, module.parent);
+  nodeModule.fileName = url;
   /* eslint-disable no-underscore-dangle */
-  m.paths = nodeModule._nodeModulePaths(dirname(url));
-  m._compile(body, url);
+  nodeModule.paths = NodeModule._nodeModulePaths(dirname(url));
+  nodeModule._compile(body, url);
 
   /* eslint-enable no-underscore-dangle */
-  return m.exports;
+  return nodeModule.exports;
 };
 
 (async () => {
-  const url = new URL('https://api.github.com/repos/Zarel/Pokemon-Showdown/commits');
+  const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
   url.searchParams.append('path', 'data/formats-data.js');
   url.searchParams.append('since', TIMESTAMP);
 
@@ -48,7 +48,7 @@ const needFile = async (url: string) => {
   }
 
   const { BattleFormatsData } = await needFile(
-    'https://raw.githubusercontent.com/Zarel/Pokemon-Showdown/master/data/formats-data.js'
+    'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.js',
   );
 
   for (const mon in BattleFormatsData) output[mon] = BattleFormatsData[mon].tier;

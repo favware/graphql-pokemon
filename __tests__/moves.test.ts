@@ -1,4 +1,4 @@
-import { gCall, formatResponse } from './testUtils/testUtils';
+import { formatResponse, gCall } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
 import { GraphQLError } from 'graphql';
 

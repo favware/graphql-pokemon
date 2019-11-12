@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getItemByFuzzy GIVEN a fuzzy item THEN returns JSONObject 1`] = `
+Object {
+  "getItemByFuzzy": Array [
+    Object {
+      "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+      "gen": 3,
+      "name": "Choice Band",
+      "num": 220,
+    },
+    Object {
+      "desc": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
+      "gen": 4,
+      "name": "Choice Scarf",
+      "num": 287,
+    },
+    Object {
+      "desc": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
+      "gen": 4,
+      "name": "Choice Specs",
+      "num": 297,
+    },
+  ],
+}
+`;
+
+exports[`getItemByFuzzy GIVEN a fuzzy item and pagination THEN returns JSONObject 1`] = `
+Object {
+  "getItemByFuzzy": Array [
+    Object {
+      "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+      "gen": 3,
+      "name": "Choice Band",
+      "num": 220,
+    },
+  ],
+}
+`;
+
+exports[`getItemByFuzzy GIVEN a valid item THEN returns JSONObject 1`] = `
+Object {
+  "getItemByFuzzy": Array [
+    Object {
+      "desc": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+      "gen": 4,
+      "name": "Life Orb",
+      "num": 270,
+    },
+  ],
+}
+`;
+
+exports[`getItemByFuzzy GIVEN an invalid item THEN returns empty array 1`] = `
+Object {
+  "getItemByFuzzy": Array [],
+}
+`;
+
+exports[`getItemByFuzzy GIVEN an invalid item and pagination THEN returns empty array 1`] = `
+Object {
+  "getItemByFuzzy": Array [],
+}
+`;
+
+exports[`getItemByName GIVEN a valid item THEN returns JSONObject 1`] = `
+Object {
+  "getItemByName": Object {
+    "desc": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+    "gen": 4,
+    "name": "Life Orb",
+    "num": 270,
+  },
+}
+`;
+
+exports[`getItemByName GIVEN an invalid item THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$item" got invalid value "totally_invalid_item"; Expected type Items.],
+  ],
+}
+`;
+
+exports[`getItemDetailsByFuzzy GIVEN a fuzzy item THEN returns ItemEntry 1`] = `
+Object {
+  "getItemDetailsByFuzzy": Object {
+    "name": "Choice Band",
+    "num": 220,
+  },
+}
+`;
+
+exports[`getItemDetailsByFuzzy GIVEN a fuzzy item and pagination THEN returns ItemEntry 1`] = `
+Object {
+  "getItemDetailsByFuzzy": Object {
+    "name": "Choice Scarf",
+    "num": 287,
+  },
+}
+`;
+
+exports[`getItemDetailsByFuzzy GIVEN a valid item THEN returns ItemEntry 1`] = `
+Object {
+  "getItemDetailsByFuzzy": Object {
+    "name": "Choice Specs",
+    "num": 297,
+  },
+}
+`;
+
+exports[`getItemDetailsByFuzzy GIVEN an invalid item THEN returns error 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Failed to get data for item: totally_invalid_item],
+  ],
+}
+`;
+
+exports[`getItemDetailsByFuzzy GIVEN an invalid item and pagination THEN returns error 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Failed to get data for item: totally_invalid_item],
+  ],
+}
+`;
+
+exports[`getItemDetailsByName GIVEN a valid item THEN returns ItemEntry 1`] = `
+Object {
+  "getItemDetailsByName": Object {
+    "name": "Life Orb",
+    "num": 270,
+  },
+}
+`;
+
+exports[`getItemDetailsByName GIVEN an invalid item THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$item" got invalid value "totally_invalid_item"; Expected type Items.],
+  ],
+}
+`;

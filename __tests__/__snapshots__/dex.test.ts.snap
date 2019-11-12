@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDexEntries GIVEN a fuzzy pokemon THEN returns DexEntries 1`] = `
+Object {
+  "getDexEntries": Array [
+    Object {
+      "num": 149,
+      "species": "dragonite",
+    },
+    Object {
+      "num": 148,
+      "species": "dragonair",
+    },
+    Object {
+      "num": 493,
+      "species": "arceus-dragon",
+    },
+    Object {
+      "num": 773,
+      "species": "silvally-dragon",
+    },
+    Object {
+      "num": 147,
+      "species": "dratini",
+    },
+  ],
+}
+`;
+
+exports[`getDexEntries GIVEN a fuzzy pokemon and pagination THEN returns DexEntries 1`] = `
+Object {
+  "getDexEntries": Array [
+    Object {
+      "num": 493,
+      "species": "arceus-dragon",
+    },
+    Object {
+      "num": 148,
+      "species": "dragonair",
+    },
+    Object {
+      "num": 149,
+      "species": "dragonite",
+    },
+  ],
+}
+`;
+
+exports[`getDexEntries GIVEN an invalid pokemon THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$pokemon" of required type "String!" was not provided.],
+  ],
+}
+`;
+
+exports[`getDexEntryByDexNumber GIVEN a valid pokemon number THEN returns JSONObject 1`] = `
+Object {
+  "getDexEntryByDexNumber": Object {
+    "abilities": Object {
+      "first": "Multitype",
+    },
+    "baseForme": "Normal",
+    "baseStats": Object {
+      "atk": 120,
+      "def": 120,
+      "hp": 120,
+      "spa": 120,
+      "spd": 120,
+      "spe": 120,
+    },
+    "color": "White",
+    "eggGroups": Array [
+      "Undiscovered",
+    ],
+    "gender": "N",
+    "heightm": 3.2,
+    "num": 493,
+    "otherFormes": Array [
+      "arceusbug",
+      "arceusdark",
+      "arceusdragon",
+      "arceuselectric",
+      "arceusfairy",
+      "arceusfighting",
+      "arceusfire",
+      "arceusflying",
+      "arceusghost",
+      "arceusgrass",
+      "arceusground",
+      "arceusice",
+      "arceuspoison",
+      "arceuspsychic",
+      "arceusrock",
+      "arceussteel",
+      "arceuswater",
+    ],
+    "species": "arceus",
+    "types": Array [
+      "Normal",
+    ],
+    "weightkg": 320,
+  },
+}
+`;
+
+exports[`getDexEntryByDexNumber GIVEN an invalid pokemon number THEN returns error 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Failed to get data for Pokémon with dex number: -9999],
+  ],
+}
+`;
+
+exports[`getDexEntryBySpeciesName GIVEN a valid pokemon THEN returns JSONObject 1`] = `
+Object {
+  "getDexEntryBySpeciesName": Object {
+    "abilities": Object {
+      "first": "Inner Focus",
+      "hidden": "Multiscale",
+    },
+    "baseStats": Object {
+      "atk": 134,
+      "def": 95,
+      "hp": 91,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80,
+    },
+    "color": "Brown",
+    "eggGroups": Array [
+      "Water 1",
+      "Dragon",
+    ],
+    "evoLevel": 55,
+    "heightm": 2.2,
+    "num": 149,
+    "prevo": "dragonair",
+    "species": "dragonite",
+    "types": Array [
+      "Dragon",
+      "Flying",
+    ],
+    "weightkg": 210,
+  },
+}
+`;
+
+exports[`getDexEntryBySpeciesName GIVEN an invalid pokemon THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$pokemon" got invalid value "totally_invalid_pokemon"; Expected type Pokemon.],
+  ],
+}
+`;
+
+exports[`getPokemonDetails GIVEN a valid pokemon THEN returns DexDetails 1`] = `
+Object {
+  "getPokemonDetails": Object {
+    "num": 149,
+    "species": "dragonite",
+  },
+}
+`;
+
+exports[`getPokemonDetails GIVEN an invalid pokemon THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$pokemon" of required type "Pokemon!" was not provided.],
+  ],
+}
+`;
+
+exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon THEN returns DexDetails 1`] = `
+Object {
+  "getPokemonDetailsByFuzzy": Object {
+    "num": 149,
+    "species": "dragonite",
+  },
+}
+`;
+
+exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon and pagination THEN returns DexDetails 1`] = `
+Object {
+  "getPokemonDetailsByFuzzy": Object {
+    "num": 773,
+    "species": "silvally-dragon",
+  },
+}
+`;
+
+exports[`getPokemonDetailsByFuzzy GIVEN a valid pokemon THEN returns DexDetails 1`] = `
+Object {
+  "getPokemonDetailsByFuzzy": Object {
+    "num": 149,
+    "species": "dragonite",
+  },
+}
+`;
+
+exports[`getPokemonDetailsByFuzzy GIVEN an invalid pokemon THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$pokemon" of required type "String!" was not provided.],
+  ],
+}
+`;
+
+exports[`getPokemonDetailsByName GIVEN a valid pokemon THEN returns DexDetails 1`] = `
+Object {
+  "getPokemonDetailsByName": Object {
+    "num": 149,
+    "species": "dragonite",
+  },
+}
+`;
+
+exports[`getPokemonDetailsByName GIVEN an invalid pokemon THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$pokemon" of required type "Pokemon!" was not provided.],
+  ],
+}
+`;

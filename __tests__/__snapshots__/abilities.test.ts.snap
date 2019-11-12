@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAbilityByFuzzy GIVEN a fuzzy ability THEN returns JSONObject 1`] = `
+Object {
+  "getAbilityByFuzzy": Array [
+    Object {
+      "name": "Multitype",
+      "num": 121,
+      "shortDesc": "If this Pokemon is an Arceus, its type changes to match its held Plate or Z-Crystal.",
+    },
+    Object {
+      "name": "Multiscale",
+      "num": 136,
+      "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    },
+  ],
+}
+`;
+
+exports[`getAbilityByFuzzy GIVEN a fuzzy ability and pagination THEN returns JSONObject 1`] = `
+Object {
+  "getAbilityByFuzzy": Array [
+    Object {
+      "name": "Multitype",
+      "num": 121,
+      "shortDesc": "If this Pokemon is an Arceus, its type changes to match its held Plate or Z-Crystal.",
+    },
+  ],
+}
+`;
+
+exports[`getAbilityByFuzzy GIVEN a valid ability THEN returns JSONObject 1`] = `
+Object {
+  "getAbilityByFuzzy": Array [
+    Object {
+      "name": "Multiscale",
+      "num": 136,
+      "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    },
+  ],
+}
+`;
+
+exports[`getAbilityByFuzzy GIVEN an invalid ability THEN returns empty array 1`] = `
+Object {
+  "getAbilityByFuzzy": Array [],
+}
+`;
+
+exports[`getAbilityByFuzzy GIVEN an invalid ability and pagination THEN returns empty array 1`] = `
+Object {
+  "getAbilityByFuzzy": Array [],
+}
+`;
+
+exports[`getAbilityByName GIVEN a valid ability THEN returns JSONObject 1`] = `
+Object {
+  "getAbilityByName": Object {
+    "name": "Multiscale",
+    "num": 136,
+    "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+  },
+}
+`;
+
+exports[`getAbilityByName GIVEN an invalid ability THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$ability" got invalid value "totally_invalid_ability"; Expected type Abilities.],
+  ],
+}
+`;
+
+exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability THEN returns AbilityEntry 1`] = `
+Object {
+  "getAbilityDetailsByFuzzy": Object {
+    "name": "Multitype",
+    "num": 121,
+  },
+}
+`;
+
+exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability and pagination THEN returns AbilityEntry 1`] = `
+Object {
+  "getAbilityDetailsByFuzzy": Object {
+    "name": "Multiscale",
+    "num": 136,
+  },
+}
+`;
+
+exports[`getAbilityDetailsByFuzzy GIVEN a valid ability THEN returns AbilityEntry 1`] = `
+Object {
+  "getAbilityDetailsByFuzzy": Object {
+    "name": "Multiscale",
+    "num": 136,
+  },
+}
+`;
+
+exports[`getAbilityDetailsByFuzzy GIVEN an invalid ability THEN returns error 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Failed to get data for ability: totally_invalid_ability],
+  ],
+}
+`;
+
+exports[`getAbilityDetailsByFuzzy GIVEN an invalid ability and pagination THEN returns error 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Failed to get data for ability: totally_invalid_ability],
+  ],
+}
+`;
+
+exports[`getAbilityDetailsByName GIVEN a valid ability THEN returns AbilityEntry 1`] = `
+Object {
+  "getAbilityDetailsByName": Object {
+    "name": "Multiscale",
+    "num": 136,
+  },
+}
+`;
+
+exports[`getAbilityDetailsByName GIVEN an invalid ability THEN returns error 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Variable "$ability" got invalid value "totally_invalid_ability"; Expected type Abilities.],
+  ],
+}
+`;

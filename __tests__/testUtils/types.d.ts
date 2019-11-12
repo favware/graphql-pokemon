@@ -187,7 +187,7 @@ export interface Query {
   getAbilityByFuzzy: Array<Scalars['JSONObject']>;
   getAbilityByName: Scalars['JSONObject'];
   getPokemonDetails: DexDetails;
-  getPokemomDetailsByName: DexDetails;
+  getPokemonDetailsByName: DexDetails;
   getPokemonDetailsByFuzzy: DexDetails;
   getDexEntries: Array<DexEntry>;
   getDexEntryBySpeciesName: Scalars['JSONObject'];

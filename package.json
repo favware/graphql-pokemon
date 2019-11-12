@@ -15,7 +15,7 @@
     "commit": "git-cz",
     "cz": "git-cz",
     "up": "yarn upgrade-interactive --latest",
-    "version": "standard-version",
+    "sversion": "standard-version",
     "codegen": "graphql-codegen",
     "cloud:start": "node index.js",
     "prepublishOnly": "yarn build && yarn codegen",

@@ -56,7 +56,7 @@
     "chalk": "^3.0.0",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.6.0",
-    "execa": "^3.2.0",
+    "execa": "^3.3.0",
     "fs-nextra": "^0.4.6",
     "glob": "^7.1.6",
     "husky": "^3.0.9",

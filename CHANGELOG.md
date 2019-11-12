@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/favware/graphql-pokemon/compare/v1.0.0...v1.0.1) (2019-11-12)
+
+
+### Bug Fixes
+
+* **dexentry:** set height and weight as floats to allow decimal values ([e62c262](https://github.com/favware/graphql-pokemon/commit/e62c262aa1d0b5c0556dfd972bdbd391d5526354))
+
 ## 1.0.0 (2019-11-12)
 
 

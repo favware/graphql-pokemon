@@ -1,4 +1,4 @@
-import { Field, Int, ObjectType } from 'type-graphql';
+import { Field, Int, ObjectType, Float } from 'type-graphql';
 import AbilitiesEntry from './AbilitiesEntry';
 import StatsEntry from './StatsEntry';
 import GenderEntry from './GenderEntry';
@@ -44,10 +44,10 @@ export default class DexEntry {
   @Field(() => GenderEntry, { description: 'The gender data for a Pokémon ' })
   gender: GenderEntry;
 
-  @Field(() => Int, { description: 'The height of a Pokémon in meters' })
+  @Field(() => Float, { description: 'The height of a Pokémon in meters' })
   height: number;
 
-  @Field(() => Int, { description: 'The weight of a Pokémon in kilograms' })
+  @Field(() => Float, { description: 'The weight of a Pokémon in kilograms' })
   weight: number;
 
   @Field(() => String, { nullable: true, description: 'Base form if this entry describes an alternate form' })

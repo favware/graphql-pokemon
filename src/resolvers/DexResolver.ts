@@ -4,7 +4,7 @@ import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
-import ExactPokemonPaginatedArgs from '../arguments/ExactPokemonPaginatedArgs';
+import ExactPokemonPaginatedArgs, { Pokemon } from '../arguments/ExactPokemonPaginatedArgs';
 
 @Resolver(DexDetails)
 export default class DexResolver {
@@ -41,7 +41,7 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join(''),
   })
-  getPokemomDetailsByName(@Args() {
+  getPokemonDetailsByName(@Args() {
     pokemon, skip, take, reverse,
   }: ExactPokemonPaginatedArgs) {
     return this.getPokemonDetails({
@@ -102,7 +102,7 @@ export default class DexResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their species name' })
-  getDexEntryBySpeciesName(@Arg('pokemon') pokemon: string) {
+  getDexEntryBySpeciesName(@Arg('pokemon', () => Pokemon) pokemon: string) {
     const dexEntry = this.dexService.findBySpecies(pokemon);
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);

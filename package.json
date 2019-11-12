@@ -1,6 +1,6 @@
 {
   "name": "@favware/graphql-pokemon",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Expansive Pokemon GraphQL API",
   "author": "@favware",
   "license": "MIT",

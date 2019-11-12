@@ -54,7 +54,7 @@ const gqlServer = () => {
   const apolloServer = new ApolloServer({
     schema,
     introspection: true,
-    playground: { endpoint: '/playground' },
+    playground: { endpoint: '/api' },
   });
 
   apolloServer.applyMiddleware({ app, path: '/', cors: true });

@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 COPY package.json ./
 COPY yarn.lock ./
 
-RUN yarn --production --frozen-lockfile --no-bin-links --link-duplicates
+RUN yarn install --frozen-lockfile --no-bin-links --link-duplicates
 
 COPY dist .
 

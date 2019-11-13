@@ -19205,6 +19205,117 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'clobbopus',
+      {
+        species: 'clobbopus',
+        num: 852,
+        types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 50, atk: 68, def: 60, spa: 50, spd: 50, spe: 32,
+        },
+        abilities: { first: 'Limber', second: 'Limber', hidden: 'Technician' },
+        heightm: 0.60,
+        weightkg: 4.0,
+        color: 'Brown',
+        evos: [ 'grapploct' ],
+        eggGroups: [ 'Water1', 'HumanLike' ],
+      }
+    ],
+    [
+      'grapploct',
+      {
+        species: 'grapploct',
+        num: 853,
+        types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 80, atk: 118, def: 90, spa: 70, spd: 80, spe: 42,
+        },
+        abilities: { first: 'Limber', second: 'Limber', hidden: 'Technician' },
+        heightm: 1.60,
+        weightkg: 39.0,
+        color: 'Blue',
+        prevo: 'clobbopus',
+        evoLevel: 'level up while knowing Taunt',
+        eggGroups: [ 'Water1', 'HumanLike' ],
+      }
+    ],
+    [
+      'sinistea-cracked',
+      {
+        species: 'sinistea-cracked',
+        num: 854,
+        types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50,
+        },
+        abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Cursed Body' },
+        heightm: 0.10,
+        weightkg: 0.2,
+        color: 'Purple',
+        evos: [ 'polteageist-cracked' ],
+        eggGroups: [ 'Mineral', 'Amorphous' ],
+      }
+    ],
+    [
+      'sinistea-chipped',
+      {
+        species: 'sinistea-chipped',
+        num: 854,
+        types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50,
+        },
+        abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Cursed Body' },
+        heightm: 0.10,
+        weightkg: 0.2,
+        color: 'Purple',
+        evos: [ 'polteageist-chipped' ],
+        eggGroups: [ 'Mineral', 'Amorphous' ],
+      }
+    ],
+    [
+      'polteageist-cracked',
+      {
+        species: 'polteageist-cracked',
+        num: 855,
+        types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 60, atk: 65, def: 65, spa: 134, spd: 114, spe: 70,
+        },
+        abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Cursed Body' },
+        heightm: 0.20,
+        weightkg: 0.4,
+        color: 'Purple',
+        prevo: 'sinistea-cracked',
+        evoLevel: 'use Cracked Pot',
+        eggGroups: [ 'Mineral', 'Amorphous' ],
+      }
+    ],
+    [
+      'polteageist-chipped',
+      {
+        species: 'polteageist-chipped',
+        num: 855,
+        types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 60, atk: 65, def: 65, spa: 134, spd: 114, spe: 70,
+        },
+        abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Cursed Body' },
+        heightm: 0.20,
+        weightkg: 0.4,
+        color: 'Purple',
+        prevo: 'sinistea-chipped',
+        evoLevel: 'use Chipped Pot',
+        eggGroups: [ 'Mineral', 'Amorphous' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

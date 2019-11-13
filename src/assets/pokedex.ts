@@ -18793,6 +18793,80 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'wooloo',
+      {
+        species: 'wooloo',
+        num: 831,
+        types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 42, atk: 40, def: 55, spa: 40, spd: 45, spe: 48,
+        },
+        abilities: { first: 'Fluffy', second: 'Run Away', hidden: 'Bulletproof' },
+        heightm: 0.60,
+        weightkg: 6.0,
+        color: 'White',
+        evos: [ 'dubwool' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'dubwool',
+      {
+        species: 'dubwool',
+        num: 832,
+        types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 72, atk: 80, def: 100, spa: 60, spd: 90, spe: 88,
+        },
+        abilities: { first: 'Fluffy', second: 'Steadfast', hidden: 'Bulletproof' },
+        heightm: 1.30,
+        weightkg: 43.0,
+        color: 'White',
+        prevo: 'wooloo',
+        evoLevel: 24,
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'chewtle',
+      {
+        species: 'chewtle',
+        num: 833,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 50, atk: 64, def: 50, spa: 38, spd: 38, spe: 44,
+        },
+        abilities: { first: 'Strong Jaw', second: 'Shell Armor', hidden: 'Swift Swim' },
+        heightm: 0.30,
+        weightkg: 8.5,
+        color: 'Green',
+        evos: [ 'drednaw' ],
+        eggGroups: [ 'Monster', 'Water1' ],
+      }
+    ],
+    [
+      'drednaw',
+      {
+        species: 'drednaw',
+        num: 834,
+        types: [ 'Water', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 90, atk: 115, def: 90, spa: 48, spd: 68, spe: 74,
+        },
+        abilities: { first: 'Strong Jaw', second: 'Shell Armor', hidden: 'Swift Swim' },
+        heightm: 1,
+        weightkg: 115.5,
+        color: 'Green',
+        prevo: 'chewtle',
+        evoLevel: 22,
+        eggGroups: [ 'Monster', 'Water1' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

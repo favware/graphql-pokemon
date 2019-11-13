@@ -51,7 +51,10 @@ const needFile = async (url: string) => {
     'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.js',
   );
 
-  for (const mon in BattleFormatsData) output[mon] = BattleFormatsData[mon].tier;
+  for (const mon in BattleFormatsData) {
+    const tier = BattleFormatsData[mon].isNonstandard || BattleFormatsData[mon].tier;
+    output[mon] = tier;
+  }
 
   const writePromises: Promise<void>[] = [];
 

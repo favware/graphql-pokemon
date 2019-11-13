@@ -159,6 +159,8 @@ export default class DexService {
     pokemonData.color = basePokemonData.color;
     pokemonData.eggGroups = basePokemonData.eggGroups || undefined;
     pokemonData.evolutionLevel = basePokemonData.evoLevel || undefined;
+    pokemonData.evos = basePokemonData.evos;
+    pokemonData.prevo = basePokemonData.prevo;
     pokemonData.smogonTier = tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
     pokemonData.height = basePokemonData.heightm;
     pokemonData.weight = basePokemonData.weightkg;

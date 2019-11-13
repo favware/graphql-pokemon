@@ -18925,7 +18925,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       'carkol',
       {
         species: 'carkol',
-        num: 836,
+        num: 838,
         types: [ 'Rock', 'Fire' ],
         genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
@@ -18936,7 +18936,27 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 78.0,
         color: 'Black',
         prevo: 'rolycoly',
+        evos: [ 'coalossal' ],
         evoLevel: 18,
+        eggGroups: [ 'Mineral' ],
+      }
+    ],
+    [
+      'coalossal',
+      {
+        species: 'coalossal',
+        num: 839,
+        types: [ 'Rock', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 110, atk: 80, def: 120, spa: 80, spd: 90, spe: 30,
+        },
+        abilities: { first: 'Steam Engine', second: 'Flame Body', hidden: 'Flash Fire' },
+        heightm: 2.80,
+        weightkg: 310.5,
+        color: 'Black',
+        prevo: 'carkol',
+        evoLevel: 34,
         eggGroups: [ 'Mineral' ],
       }
     ],

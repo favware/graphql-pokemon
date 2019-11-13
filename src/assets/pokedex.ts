@@ -18599,9 +18599,66 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         heightm: 0.60,
         weightkg: 6.0,
         color: 'Brown',
-        prevo: [ 'skwovet' ],
+        prevo: 'skwovet',
         evoLevel: 24,
         eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'rookidee',
+      {
+        species: 'rookidee',
+        num: 821,
+        types: [ 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 38, atk: 47, def: 35, spa: 33, spd: 35, spe: 57,
+        },
+        abilities: { first: 'Keen Eye', second: 'Unnerve', hidden: 'Big Pecks' },
+        heightm: 0.20,
+        weightkg: 1.8,
+        color: 'Blue',
+        evos: [ 'corvisquire' ],
+        eggGroups: [ 'Flying' ],
+      }
+    ],
+    [
+      'corvisquire',
+      {
+        species: 'corvisquire',
+        num: 822,
+        types: [ 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 68, atk: 67, def: 55, spa: 43, spd: 55, spe: 77,
+        },
+        abilities: { first: 'Keen Eye', second: 'Unnerve', hidden: 'Big Pecks' },
+        heightm: 0.80,
+        weightkg: 16.0,
+        color: 'Blue',
+        prevo: 'rookidee',
+        evos: [ 'corvisquire' ],
+        evoLevel: 18,
+        eggGroups: [ 'Flying' ],
+      }
+    ],
+    [
+      'corviknight',
+      {
+        species: 'corviknight',
+        num: 823,
+        types: [ 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 98, atk: 87, def: 105, spa: 53, spd: 85, spe: 67,
+        },
+        abilities: { first: 'Pressure', second: 'Unnerve', hidden: 'Mirror Armor' },
+        heightm: 2.20,
+        weightkg: 75.0,
+        color: 'Blue',
+        prevo: 'corvisquire',
+        evoLevel: 38,
+        eggGroups: [ 'Flying' ],
       }
     ],
     [

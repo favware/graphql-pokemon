@@ -19126,8 +19126,11 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         eggGroups: [ 'Undiscovered' ],
       }
     ],
+    /**
+     * TODO: When Showdown adds data for Gen 8, verify Toxtricity's formes
+     */
     [
-      'toxtricity-yellow',
+      'toxtricity',
       {
         species: 'toxtricity',
         num: 849,
@@ -19146,9 +19149,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'toxtricity-blue',
+      'toxtricity-undocked',
       {
-        species: 'toxtricity',
+        species: 'toxtricity-undocked',
         num: 849,
         types: [ 'Electric', 'Poison' ],
         genderRatio: { male: 0.50, female: 0.50 },

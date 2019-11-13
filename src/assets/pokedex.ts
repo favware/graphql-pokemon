@@ -19316,6 +19316,62 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'hatenna',
+      {
+        species: 'hatenna',
+        num: 856,
+        types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 42, atk: 30, def: 45, spa: 56, spd: 53, spe: 39,
+        },
+        abilities: { first: 'Healer', second: 'Anticipation', hidden: 'Magic Bounce' },
+        heightm: 0.40,
+        weightkg: 3.4,
+        color: 'Pink',
+        evos: [ 'hattrem' ],
+        eggGroups: [ 'Fairy' ],
+      }
+    ],
+    [
+      'hattrem',
+      {
+        species: 'hattrem',
+        num: 857,
+        types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 57, atk: 40, def: 65, spa: 86, spd: 73, spe: 49,
+        },
+        abilities: { first: 'Healer', second: 'Anticipation', hidden: 'Magic Bounce' },
+        heightm: 0.60,
+        weightkg: 4.8,
+        color: 'Pink',
+        prevo: 'hatenna',
+        evoLevel: 32,
+        eggGroups: [ 'Fairy' ],
+      }
+    ],
+    [
+      'hatterene',
+      {
+        species: 'hatterene',
+        num: 858,
+        types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 57, atk: 90, def: 95, spa: 136, spd: 103, spe: 29,
+        },
+        abilities: { first: 'Healer', second: 'Anticipation', hidden: 'Magic Bounce' },
+        heightm: 2.10,
+        weightkg: 5.1,
+        color: 'Pink',
+        prevo: 'hattrem',
+        evoLevel: 42,
+        eggGroups: [ 'Fairy' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

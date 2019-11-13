@@ -19372,6 +19372,63 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'impidimp',
+      {
+        species: 'impidimp',
+        num: 859,
+        types: [ 'Dark', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 45, atk: 45, def: 30, spa: 55, spd: 40, spe: 50,
+        },
+        abilities: { first: 'Prankster', second: 'Frisk', hidden: 'Pickpocket' },
+        heightm: 0.40,
+        weightkg: 5.5,
+        color: 'Pink',
+        evos: [ 'morgrem' ],
+        eggGroups: [ 'Fairy', 'HumanLike' ],
+      }
+    ],
+    [
+      'morgrem',
+      {
+        species: 'morgrem',
+        num: 860,
+        types: [ 'Dark', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 65, atk: 60, def: 45, spa: 75, spd: 55, spe: 70,
+        },
+        abilities: { first: 'Prankster', second: 'Frisk', hidden: 'Pickpocket' },
+        heightm: 0.80,
+        weightkg: 12.5,
+        color: 'Pink',
+        prevo: 'impidimp',
+        evos: [ 'grimmsnarl' ],
+        evoLevel: 32,
+        eggGroups: [ 'Fairy', 'HumanLike' ],
+      }
+    ],
+    [
+      'grimmsnarl',
+      {
+        species: 'grimmsnarl',
+        num: 861,
+        types: [ 'Dark', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 95, atk: 120, def: 65, spa: 95, spd: 75, spe: 60,
+        },
+        abilities: { first: 'Prankster', second: 'Frisk', hidden: 'Pickpocket' },
+        heightm: 1.50,
+        weightkg: 61.0,
+        color: 'Purple',
+        prevo: 'morgrem',
+        evoLevel: 42,
+        eggGroups: [ 'Fairy', 'HumanLike' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

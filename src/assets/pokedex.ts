@@ -18397,6 +18397,59 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'grookey',
+      {
+        species: 'grookey',
+        num: 810,
+        types: [ 'Grass' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 50, atk: 65, def: 50, spa: 40, spd: 40, spe: 65,
+        },
+        abilities: { first: 'Overgrow', second: 'Overgrow', hidden: 'Grassy Surge' },
+        heightm: 0.30,
+        weightkg: 5.0,
+        color: 'Green',
+        evos: [ 'thwackey' ],
+        eggGroups: [ 'Field', 'Grass' ],
+      }
+    ],
+    [
+      'thwackey',
+      {
+        species: 'thwackey',
+        num: 811,
+        types: [ 'Grass' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 70, atk: 85, def: 70, spa: 55, spd: 60, spe: 80,
+        },
+        abilities: { first: 'Overgrow', second: 'Overgrow', hidden: 'Grassy Surge' },
+        heightm: 0.70,
+        weightkg: 14.0,
+        color: 'Green',
+        evos: [ 'rillaboom' ],
+        eggGroups: [ 'Field', 'Grass' ],
+      }
+    ],
+    [
+      'rillaboom',
+      {
+        species: 'rillaboom',
+        num: 812,
+        types: [ 'Grass' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 100, atk: 125, def: 90, spa: 60, spd: 70, spe: 85,
+        },
+        abilities: { first: 'Overgrow', second: 'Overgrow', hidden: 'Grassy Surge' },
+        heightm: 2.10,
+        weightkg: 90.0,
+        color: 'Green',
+        eggGroups: [ 'Field', 'Grass' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

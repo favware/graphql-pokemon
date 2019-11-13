@@ -19042,7 +19042,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         types: [ 'Ground' ],
         genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
-          hp: 7072, atk: 107, def: 125, spa: 65, spd: 70, spe: 71,
+          hp: 72, atk: 107, def: 125, spa: 65, spd: 70, spe: 71,
         },
         abilities: { first: 'Sand Spit', second: 'Shed Skin', hidden: 'Sand Veil' },
         heightm: 3.80,
@@ -19051,6 +19051,61 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         prevo: 'silicobra',
         evoLevel: 36,
         eggGroups: [ 'Field', 'Dragon' ],
+      }
+    ],
+    [
+      'cramorant',
+      {
+        species: 'cramorant',
+        num: 845,
+        types: [ 'Flying', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 70, atk: 85, def: 55, spa: 85, spd: 95, spe: 85,
+        },
+        abilities: { first: 'Gulp Missile', second: 'Gulp Missile', hidden: 'Gulp Missile' },
+        heightm: 0.80,
+        weightkg: 18.0,
+        color: 'Blue',
+        eggGroups: [ 'Water1', 'Flying' ],
+      }
+    ],
+    [
+      'arrokuda',
+      {
+        species: 'arrokuda',
+        num: 846,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 41, atk: 63, def: 40, spa: 40, spd: 30, spe: 66,
+        },
+        abilities: { first: 'Swift Swim', second: 'Swift Swim', hidden: 'Propeller Tail' },
+        heightm: 0.50,
+        weightkg: 1.0,
+        color: 'Brown',
+        evos: [ 'barraskewda' ],
+        evoLevel: 36,
+        eggGroups: [ 'Water2' ],
+      }
+    ],
+    [
+      'barraskewda',
+      {
+        species: 'barraskewda',
+        num: 847,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 61, atk: 123, def: 60, spa: 60, spd: 50, spe: 136,
+        },
+        abilities: { first: 'Swift Swim', second: 'Swift Swim', hidden: 'Propeller Tail' },
+        heightm: 1.30,
+        weightkg: 30.0,
+        color: 'Brown',
+        prevo: 'arrokuda',
+        evoLevel: 26,
+        eggGroups: [ 'Water2' ],
       }
     ],
     [

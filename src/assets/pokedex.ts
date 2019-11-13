@@ -19165,6 +19165,43 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'sizzlipede',
+      {
+        species: 'sizzlipede',
+        num: 850,
+        types: [ 'Fire', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 50, atk: 65, def: 45, spa: 50, spd: 50, spe: 45,
+        },
+        abilities: { first: 'Flash Fire', second: 'White Smoke', hidden: 'Flame Body' },
+        heightm: 0.70,
+        weightkg: 1.0,
+        color: 'Red',
+        evos: [ 'centiskorch' ],
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
+      'centiskorch',
+      {
+        species: 'centiskorch',
+        num: 851,
+        types: [ 'Fire', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 100, atk: 115, def: 65, spa: 90, spd: 90, spe: 65,
+        },
+        abilities: { first: 'Flash Fire', second: 'White Smoke', hidden: 'Flame Body' },
+        heightm: 3.00,
+        weightkg: 120.0,
+        color: 'Red',
+        prevo: 'sizzlipede',
+        evoLevel: 28,
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

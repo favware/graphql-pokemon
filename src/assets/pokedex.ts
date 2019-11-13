@@ -19429,6 +19429,80 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'obstagoon',
+      {
+        species: 'obstagoon',
+        num: 862,
+        types: [ 'Dark', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 93, atk: 90, def: 101, spa: 60, spd: 81, spe: 95,
+        },
+        abilities: { first: 'Reckless', second: 'Guts', hidden: 'Defiant' },
+        heightm: 1.60,
+        weightkg: 46.0,
+        color: 'Gray',
+        prevo: 'linoone-galar',
+        evoLevel: 'level 35 at night',
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'perrserker',
+      {
+        species: 'perrserker',
+        num: 863,
+        types: [ 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 70, atk: 110, def: 100, spa: 50, spd: 60, spe: 50,
+        },
+        abilities: { first: 'Battle Armor', second: 'Tough Claws', hidden: 'Steely Spirit' },
+        heightm: 0.80,
+        weightkg: 28.0,
+        color: 'Brown',
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'cursola',
+      {
+        species: 'cursola',
+        num: 864,
+        types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 60, atk: 95, def: 50, spa: 145, spd: 130, spe: 30,
+        },
+        abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Perish Body' },
+        heightm: 1.00,
+        weightkg: 0.4,
+        color: 'White',
+        prevo: 'morgrem',
+        evoLevel: 42,
+        eggGroups: [ 'Water1', 'Water3' ],
+      }
+    ],
+    [
+      'sirfetch\'d',
+      {
+        species: 'sirfetch\'d',
+        num: 865,
+        types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 62, atk: 135, def: 95, spa: 68, spd: 82, spe: 65,
+        },
+        abilities: { first: 'Steadfast', second: 'Steadfast', hidden: 'Scrappy' },
+        heightm: 0.8,
+        weightkg: 117.0,
+        color: 'White',
+        prevo: 'farfetch\'d-galar',
+        evoLevel: '???',
+        eggGroups: [ 'Flying', 'Field' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

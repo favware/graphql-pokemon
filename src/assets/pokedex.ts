@@ -18719,6 +18719,80 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'nickit',
+      {
+        species: 'nickit',
+        num: 827,
+        types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 40, atk: 28, def: 28, spa: 47, spd: 52, spe: 50,
+        },
+        abilities: { first: 'Run Away', second: 'Unburden', hidden: 'Stakeout' },
+        heightm: 0.60,
+        weightkg: 8.9,
+        color: 'Brown',
+        evos: [ 'thievul' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'thievul',
+      {
+        species: 'thievul',
+        num: 828,
+        types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 70, atk: 58, def: 58, spa: 87, spd: 92, spe: 90,
+        },
+        abilities: { first: 'Run Away', second: 'Unburden', hidden: 'Stakeout' },
+        heightm: 1.20,
+        weightkg: 19.9,
+        color: 'Brown',
+        prevo: 'nickit',
+        evoLevel: 18,
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'gossifleur',
+      {
+        species: 'gossifleur',
+        num: 829,
+        types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 40, atk: 40, def: 60, spa: 40, spd: 60, spe: 10,
+        },
+        abilities: { first: 'Cotton Down', second: 'Regenerator', hidden: 'Effect Spore' },
+        heightm: 0.40,
+        weightkg: 2.2,
+        color: 'Green',
+        evos: [ 'eldegoss' ],
+        eggGroups: [ 'Grass' ],
+      }
+    ],
+    [
+      'eldegoss',
+      {
+        species: 'eldegoss',
+        num: 830,
+        types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 60, atk: 50, def: 90, spa: 80, spd: 120, spe: 60,
+        },
+        abilities: { first: 'Cotton Down', second: 'Regenerator', hidden: 'Effect Spore' },
+        heightm: 0.50,
+        weightkg: 2.5,
+        color: 'Green',
+        prevo: 'gossifleur',
+        evoLevel: 20,
+        eggGroups: [ 'Grass' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

@@ -18867,6 +18867,80 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'yamper',
+      {
+        species: 'yamper',
+        num: 835,
+        types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 59, atk: 45, def: 50, spa: 40, spd: 50, spe: 26,
+        },
+        abilities: { first: 'Ball Fetch', second: 'Ball Fetch', hidden: 'Rattled' },
+        heightm: 0.30,
+        weightkg: 13.5,
+        color: 'Yellow',
+        evos: [ 'boltund' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'boltund',
+      {
+        species: 'drednaw',
+        num: 836,
+        types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 69, atk: 90, def: 60, spa: 90, spd: 60, spe: 121,
+        },
+        abilities: { first: 'Strong Jaw', second: 'Strong Jaw', hidden: 'Competitive' },
+        heightm: 1.00,
+        weightkg: 34.0,
+        color: 'Yellow',
+        prevo: 'yamper',
+        evoLevel: 25,
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'rolycoly',
+      {
+        species: 'rolycoly',
+        num: 837,
+        types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 30, atk: 40, def: 50, spa: 40, spd: 50, spe: 30,
+        },
+        abilities: { first: 'Steam Engine', second: 'Heatproof', hidden: 'Flash Fire' },
+        heightm: 0.30,
+        weightkg: 12.0,
+        color: 'Black',
+        evos: [ 'carkol' ],
+        eggGroups: [ 'Mineral' ],
+      }
+    ],
+    [
+      'carkol',
+      {
+        species: 'carkol',
+        num: 836,
+        types: [ 'Rock', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 80, atk: 60, def: 90, spa: 60, spd: 70, spe: 50,
+        },
+        abilities: { first: 'Steam Engine', second: 'Flame Body', hidden: 'Flash Fire' },
+        heightm: 1.10,
+        weightkg: 78.0,
+        color: 'Black',
+        prevo: 'rolycoly',
+        evoLevel: 18,
+        eggGroups: [ 'Mineral' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

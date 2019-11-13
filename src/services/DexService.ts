@@ -166,8 +166,8 @@ export default class DexService {
     pokemonData.baseSpecies = basePokemonData.baseSpecies;
     pokemonData.otherFormes = basePokemonData.otherFormes;
     pokemonData.flavorTexts = [];
-    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${Util.toLowerSingleWordCase(basePokemonData.species)}`;
-    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${Util.toLowerSingleWordCase(basePokemonData.species)}`;
+    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${Util.toLowerSingleWordCase(basePokemonData.species)}.gif`;
+    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${Util.toLowerSingleWordCase(basePokemonData.species)}.gif`;
     pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
     pokemonData.serebiiPage = basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '';
     pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${Util.toLowerHyphenCase(basePokemonData.species)}` : '';

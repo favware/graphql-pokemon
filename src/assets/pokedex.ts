@@ -18961,6 +18961,99 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'applin',
+      {
+        species: 'applin',
+        num: 840,
+        types: [ 'Grass', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 40, atk: 40, def: 80, spa: 40, spd: 40, spe: 20,
+        },
+        abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Bulletproof' },
+        heightm: 0.20,
+        weightkg: 0.5,
+        color: 'Green',
+        evos: [ 'flapple', 'appletun' ],
+        eggGroups: [ 'Grass', 'Dragon' ],
+      }
+    ],
+    [
+      'flapple',
+      {
+        species: 'flapple',
+        num: 841,
+        types: [ 'Grass', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 70, atk: 110, def: 80, spa: 95, spd: 60, spe: 70,
+        },
+        abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Hustle' },
+        heightm: 0.3,
+        weightkg: 1.0,
+        color: 'Green',
+        prevo: 'applin',
+        evoLevel: 'use Tart Apple',
+        eggGroups: [ 'Grass', 'Dragon' ],
+      }
+    ],
+    [
+      'appletun',
+      {
+        species: 'appletun',
+        num: 842,
+        types: [ 'Grass', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 110, atk: 85, def: 80, spa: 100, spd: 80, spe: 30,
+        },
+        abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Thick Fat' },
+        heightm: 0.40,
+        weightkg: 0.13,
+        color: 'Green',
+        prevo: 'applin',
+        evoLevel: 'use Sweet Apple',
+        eggGroups: [ 'Grass', 'Dragon' ],
+      }
+    ],
+    [
+      'silicobra',
+      {
+        species: 'silicobra',
+        num: 843,
+        types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 52, atk: 57, def: 75, spa: 35, spd: 50, spe: 46,
+        },
+        abilities: { first: 'Sand Spit', second: 'Shed Skin', hidden: 'Sand Veil' },
+        heightm: 2.20,
+        weightkg: 7.6,
+        color: 'Green',
+        evos: [ 'sandaconda' ],
+        eggGroups: [ 'Field', 'Dragon' ],
+      }
+    ],
+    [
+      'sandaconda',
+      {
+        species: 'sandaconda',
+        num: 844,
+        types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 7072, atk: 107, def: 125, spa: 65, spd: 70, spe: 71,
+        },
+        abilities: { first: 'Sand Spit', second: 'Shed Skin', hidden: 'Sand Veil' },
+        heightm: 3.80,
+        weightkg: 65.5,
+        color: 'Green',
+        prevo: 'silicobra',
+        evoLevel: 36,
+        eggGroups: [ 'Field', 'Dragon' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

@@ -18662,6 +18662,63 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'blipbug',
+      {
+        species: 'blipbug',
+        num: 824,
+        types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 25, atk: 20, def: 20, spa: 25, spd: 45, spe: 45,
+        },
+        abilities: { first: 'Swarm', second: 'Compound Eyes', hidden: 'Telepathy' },
+        heightm: 0.40,
+        weightkg: 8.0,
+        color: 'Blue',
+        evos: [ 'dottler' ],
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
+      'dottler',
+      {
+        species: 'dottler',
+        num: 825,
+        types: [ 'Bug', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 50, atk: 35, def: 80, spa: 50, spd: 90, spe: 30,
+        },
+        abilities: { first: 'Keen Eye', second: 'Unnerve', hidden: 'Big Pecks' },
+        heightm: 0.80,
+        weightkg: 19.5,
+        color: 'Yellow',
+        prevo: 'blipbug',
+        evos: [ 'orbeetle' ],
+        evoLevel: 10,
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
+      'orbeetle',
+      {
+        species: 'orbeetle',
+        num: 826,
+        types: [ 'Bug', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 60, atk: 45, def: 110, spa: 80, spd: 120, spe: 90,
+        },
+        abilities: { first: 'Swarm', second: 'Frisk', hidden: 'Telepathy' },
+        heightm: 0.40,
+        weightkg: 40.8,
+        color: 'Red',
+        prevo: 'dottler',
+        evoLevel: 30,
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

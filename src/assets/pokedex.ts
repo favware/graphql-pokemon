@@ -19109,6 +19109,62 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'toxel',
+      {
+        species: 'toxel',
+        num: 848,
+        types: [ 'Electric', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 40, atk: 38, def: 35, spa: 54, spd: 35, spe: 40,
+        },
+        abilities: { first: 'Rattled', second: 'Static', hidden: 'Klutz' },
+        heightm: 0.40,
+        weightkg: 0.11,
+        color: 'Purple',
+        evos: [ 'toxtricity' ],
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'toxtricity-yellow',
+      {
+        species: 'toxtricity',
+        num: 849,
+        types: [ 'Electric', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 75, atk: 98, def: 70, spa: 114, spd: 70, spe: 75,
+        },
+        abilities: { first: 'Punk Rock', second: 'Plus', hidden: 'Technician' },
+        heightm: 1.60,
+        weightkg: 40.0,
+        color: 'Purple',
+        prevo: 'toxel',
+        evoLevel: '30 while Nintendo Switch is docked',
+        eggGroups: [ 'HumanLike' ],
+      }
+    ],
+    [
+      'toxtricity-blue',
+      {
+        species: 'toxtricity',
+        num: 849,
+        types: [ 'Electric', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 75, atk: 98, def: 70, spa: 114, spd: 70, spe: 75,
+        },
+        abilities: { first: 'Punk Rock', second: 'Minus', hidden: 'Technician' },
+        heightm: 1.60,
+        weightkg: 40.0,
+        color: 'Purple',
+        prevo: 'toxel',
+        evoLevel: '30 while Nintendo Switch is undocked',
+        eggGroups: [ 'HumanLike' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

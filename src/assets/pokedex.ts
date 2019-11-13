@@ -18428,7 +18428,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         heightm: 0.70,
         weightkg: 14.0,
         color: 'Green',
+        prevo: 'grookey',
         evos: [ 'rillaboom' ],
+        evoLevel: 16,
         eggGroups: [ 'Field', 'Grass' ],
       }
     ],
@@ -18446,7 +18448,66 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         heightm: 2.10,
         weightkg: 90.0,
         color: 'Green',
+        prevo: 'thwackey',
+        evoLevel: 35,
         eggGroups: [ 'Field', 'Grass' ],
+      }
+    ],
+    [
+      'scorbunny',
+      {
+        species: 'scorbunny',
+        num: 813,
+        types: [ 'Fire' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 50, atk: 71, def: 40, spa: 40, spd: 40, spe: 69,
+        },
+        abilities: { first: 'Blaze', second: 'Blaze', hidden: 'Libero' },
+        heightm: 0.30,
+        weightkg: 4.5,
+        color: 'White',
+        evos: [ 'raboot' ],
+        eggGroups: [ 'Field', 'HumanLike' ],
+      }
+    ],
+    [
+      'raboot',
+      {
+        species: 'raboot',
+        num: 814,
+        types: [ 'Fire' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 65, atk: 86, def: 60, spa: 55, spd: 60, spe: 94,
+        },
+        abilities: { first: 'Blaze', second: 'Blaze', hidden: 'Libero' },
+        heightm: 0.60,
+        weightkg: 9.0,
+        color: 'Gray',
+        prevo: 'scorbunny',
+        evos: [ 'cinderace' ],
+        evoLevel: 16,
+        eggGroups: [ 'Field', 'HumanLike' ],
+      }
+    ],
+    [
+      'cinderace',
+      {
+        species: 'cinderace',
+        num: 815,
+        types: [ 'Fire' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 80, atk: 116, def: 75, spa: 65, spd: 75, spe: 119,
+        },
+        abilities: { first: 'Blaze', second: 'Blaze', hidden: 'Libero' },
+        heightm: 1.40,
+        weightkg: 33.0,
+        color: 'White',
+        prevo: 'raboot',
+        evoLevel: 35,
+        eggGroups: [ 'Field', 'HumanLike' ],
       }
     ],
     [

@@ -18511,6 +18511,63 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'sobble',
+      {
+        species: 'sobble',
+        num: 816,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 50, atk: 40, def: 40, spa: 70, spd: 40, spe: 70,
+        },
+        abilities: { first: 'Torrent', second: 'Torrent', hidden: 'Sniper' },
+        heightm: 0.30,
+        weightkg: 4.0,
+        color: 'Blue',
+        evos: [ 'drizzile' ],
+        eggGroups: [ 'Water1', 'Field' ],
+      }
+    ],
+    [
+      'drizzile',
+      {
+        species: 'drizzile',
+        num: 817,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 65, atk: 60, def: 55, spa: 95, spd: 55, spe: 90,
+        },
+        abilities: { first: 'Torrent', second: 'Torrent', hidden: 'Sniper' },
+        heightm: 0.70,
+        weightkg: 11.5,
+        color: 'Blue',
+        prevo: 'sobble',
+        evos: [ 'inteleon' ],
+        evoLevel: 16,
+        eggGroups: [ 'Water1', 'Field' ],
+      }
+    ],
+    [
+      'inteleon',
+      {
+        species: 'inteleon',
+        num: 818,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.875, female: 0.125 },
+        baseStats: {
+          hp: 70, atk: 85, def: 65, spa: 125, spd: 65, spe: 120,
+        },
+        abilities: { first: 'Torrent', second: 'Torrent', hidden: 'Sniper' },
+        heightm: 1.90,
+        weightkg: 45.2,
+        color: 'Blue',
+        prevo: 'drizzile',
+        evoLevel: 35,
+        eggGroups: [ 'Water1', 'Field' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

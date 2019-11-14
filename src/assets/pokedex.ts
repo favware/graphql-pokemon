@@ -1602,9 +1602,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'meowth-galar',
+      'meowthgalar',
       {
-        species: 'meowth-galar',
+        species: 'meowthgalar',
         num: 52,
         baseSpecies: 'Meowth',
         forme: 'Galar',
@@ -2184,9 +2184,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'ponyta-galar',
+      'ponytagalar',
       {
-        species: 'ponyta-galar',
+        species: 'ponytagalar',
         num: 77,
         types: [ 'Psychic' ],
         baseSpecies: 'Ponyta',
@@ -2222,9 +2222,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'rapidash-galar',
+      'rapidashgalar',
       {
-        species: 'rapidash-galar',
+        species: 'rapidashgalar',
         num: 78,
         types: [ 'Psychic', 'Fairy' ],
         baseSpecies: 'Rapidash',
@@ -2352,9 +2352,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'farfetch\'d-galar',
+      'farfetchdgalar',
       {
-        species: 'farfetch\'d-galar',
+        species: 'farfetchgalar',
         num: 83,
         types: [ 'Fighting' ],
         baseSpecies: 'Farfetch\'d',
@@ -3213,9 +3213,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'mr. mime-galar',
+      'mrmimegalar',
       {
-        species: 'mr. mime-galar',
+        species: 'mrmimegalar',
         num: 122,
         types: [ 'Ice', 'Psychic' ],
         baseSpecies: 'Mr. Mime',
@@ -5260,9 +5260,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'corsola-galar',
+      'corsolagalar',
       {
-        species: 'corsola-galar',
+        species: 'corsolagalar',
         num: 222,
         types: [ 'Ghost' ],
         baseSpecies: 'Corsola',
@@ -6114,9 +6114,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'zigzagoon-galar',
+      'zigzagoongalar',
       {
-        species: 'zigzagoon-galar',
+        species: 'zigzagoongalar',
         num: 263,
         types: [ 'Dark', 'Normal' ],
         baseSpecies: 'Zigzagoon',
@@ -6152,9 +6152,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'linoone-galar',
+      'linoonegalar',
       {
-        species: 'linoone-galar',
+        species: 'linoonegalar',
         num: 264,
         types: [ 'Dark', 'Normal' ],
         baseSpecies: 'Linoone',
@@ -12548,9 +12548,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'darumaka-galar',
+      'darumakagalar',
       {
-        species: 'darumaka-galar',
+        species: 'darumakagalar',
         num: 554,
         types: [ 'Ice' ],
         baseSpecies: 'Darumaka',
@@ -12588,9 +12588,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'darmanitan-galar',
+      'darmanitangalar',
       {
-        species: 'darmanitan-galar',
+        species: 'darmanitangalar',
         num: 55,
         types: [ 'Ice' ],
         baseSpecies: 'Darmanitan',
@@ -12630,9 +12630,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'darmanitan-zen-galar',
+      'darmanitanzengalar',
       {
-        species: 'darmanitan-zen-galar',
+        species: 'darmanitanzengalar',
         num: 555,
         types: [ 'Ice', 'Fire' ],
         baseStats: {
@@ -19394,9 +19394,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'toxtricity-undocked',
+      'toxtricityundocked',
       {
-        species: 'toxtricity-undocked',
+        species: 'toxtricityundocked',
         num: 849,
         types: [ 'Electric', 'Poison' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -19487,9 +19487,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'sinistea-cracked',
+      'sinisteacracked',
       {
-        species: 'sinistea-cracked',
+        species: 'sinisteacracked',
         num: 854,
         types: [ 'Ghost' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -19505,9 +19505,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'sinistea-chipped',
+      'sinisteachipped',
       {
-        species: 'sinistea-chipped',
+        species: 'sinisteachipped',
         num: 854,
         types: [ 'Ghost' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -19523,9 +19523,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'polteageist-cracked',
+      'polteageistcracked',
       {
-        species: 'polteageist-cracked',
+        species: 'polteageistcracked',
         num: 855,
         types: [ 'Ghost' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -19542,9 +19542,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'polteageist-chipped',
+      'polteageistchipped',
       {
-        species: 'polteageist-chipped',
+        species: 'polteageistchipped',
         num: 855,
         types: [ 'Ghost' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -19729,9 +19729,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'sirfetch\'d',
+      'sirfetchd',
       {
-        species: 'sirfetch\'d',
+        species: 'sirfetchd',
         num: 865,
         types: [ 'Fighting' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -19748,9 +19748,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'mr. rime',
+      'mrrime',
       {
-        species: 'mr. rime',
+        species: 'mrrime',
         num: 866,
         types: [ 'Ice', 'Psychic' ],
         genderRatio: { male: 0.50, female: 0.50 },

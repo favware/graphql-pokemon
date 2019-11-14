@@ -19827,6 +19827,78 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'falinks',
+      {
+        species: 'falinks',
+        num: 870,
+        types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 65, atk: 100, def: 100, spa: 70, spd: 60, spe: 75,
+        },
+        abilities: { first: 'Battle Armor', second: 'Battle Armor', hidden: 'Defiant' },
+        heightm: 3.0,
+        weightkg: 62.0,
+        color: 'Yellow',
+        eggGroups: [ 'Fairy', 'Mineral' ],
+      }
+    ],
+    [
+      'pincurchin',
+      {
+        species: 'pincurchin',
+        num: 871,
+        types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 48, atk: 101, def: 95, spa: 91, spd: 85, spe: 15,
+        },
+        abilities: { first: 'Lightning Rod', second: 'Lightning Rod', hidden: 'Electric Surge' },
+        heightm: 0.30,
+        weightkg: 1.0,
+        color: 'Purple',
+        eggGroups: [ 'Water1', 'Amorphous' ],
+      }
+    ],
+    [
+      'snom',
+      {
+        species: 'snom',
+        num: 872,
+        types: [ 'Ice', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 30, atk: 25, def: 35, spa: 45, spd: 30, spe: 20,
+        },
+        abilities: { first: 'Shield Dust', second: 'Shield Dust', hidden: 'Ice Scales' },
+        heightm: 0.30,
+        weightkg: 3.8,
+        color: 'White',
+        evos: [ 'frosmoth' ],
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
+      'frosmoth',
+      {
+        species: 'frosmoth',
+        num: 873,
+        types: [ 'Ice', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 70, atk: 65, def: 60, spa: 125, spd: 90, spe: 65,
+        },
+        abilities: { first: 'Shield Dust', second: 'Shield Dust', hidden: 'Ice Scales' },
+        heightm: 1.30,
+        weightkg: 42.0,
+        color: 'White',
+        prevo: 'snom',
+        evos: [ 'frosmoth' ],
+        evoLevel: 'level with high friendship at night',
+        eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

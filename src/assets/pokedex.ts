@@ -20123,6 +20123,80 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'duraludon',
+      {
+        species: 'duraludon',
+        num: 884,
+        types: [ 'Steel', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 70, atk: 95, def: 115, spa: 120, spd: 50, spe: 85,
+        },
+        abilities: { first: 'Light Metal', second: 'Heavy Metal', hidden: 'Stalwart' },
+        heightm: 1.80,
+        weightkg: 40.0,
+        color: 'White',
+        eggGroups: [ 'Mineral', 'Dragon' ],
+      }
+    ],
+    [
+      'dreepy',
+      {
+        species: 'dreepy',
+        num: 885,
+        types: [ 'Dragon', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 28, atk: 60, def: 30, spa: 40, spd: 30, spe: 82,
+        },
+        abilities: { first: 'Clear Body', second: 'Infiltrator', hidden: 'Cursed Body' },
+        heightm: 0.50,
+        weightkg: 2.0,
+        color: 'Green',
+        evos: [ 'drakloak' ],
+        eggGroups: [ 'Amorphous', 'Dragon' ],
+      }
+    ],
+    [
+      'drakloak',
+      {
+        species: 'drakloak',
+        num: 886,
+        types: [ 'Dragon', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 68, atk: 80, def: 50, spa: 60, spd: 50, spe: 102,
+        },
+        abilities: { first: 'Clear Body', second: 'Infiltrator', hidden: 'Cursed Body' },
+        heightm: 1.40,
+        weightkg: 11.0,
+        color: 'Green',
+        prevo: 'dreepy',
+        evoLevel: 50,
+        evos: [ 'dragapult' ],
+        eggGroups: [ 'Amorphous', 'Dragon' ],
+      }
+    ],
+    [
+      'dragapult',
+      {
+        species: 'dragapult',
+        num: 887,
+        types: [ 'Dragon', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 88, atk: 120, def: 75, spa: 100, spd: 75, spe: 142,
+        },
+        abilities: { first: 'Clear Body', second: 'Infiltrator', hidden: 'Cursed Body' },
+        heightm: 3.00,
+        weightkg: 50.0,
+        color: 'Green',
+        prevo: 'drakloak',
+        evoLevel: 60,
+        eggGroups: [ 'Amorphous', 'Dragon' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

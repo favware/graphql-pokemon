@@ -20197,6 +20197,108 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'zacian',
+      {
+        species: 'zacian',
+        num: 888,
+        types: [ 'Fairy' ],
+        gender: 'N',
+        baseStats: {
+          hp: 92, atk: 130, def: 115, spa: 80, spd: 115, spe: 138,
+        },
+        abilities: { first: 'Intrepid Sword', second: 'Intrepid Sword', hidden: 'Intrepid Sword' },
+        heightm: 2.80,
+        weightkg: 110.0,
+        color: 'Blue',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'zacian-sword',
+      {
+        species: 'zacian-sword',
+        num: 888,
+        types: [ 'Fairy', 'Steel' ],
+        gender: 'N',
+        baseStats: {
+          hp: 92, atk: 170, def: 115, spa: 80, spd: 115, spe: 148,
+        },
+        abilities: { first: 'Intrepid Sword', second: 'Intrepid Sword', hidden: 'Intrepid Sword' },
+        heightm: 2.80,
+        weightkg: 355.0,
+        color: 'Blue',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'zamazenta',
+      {
+        species: 'zamazenta',
+        num: 889,
+        types: [ 'Fighting' ],
+        gender: 'N',
+        baseStats: {
+          hp: 92, atk: 130, def: 115, spa: 80, spd: 115, spe: 138,
+        },
+        abilities: { first: 'Dauntless Shield', second: 'Dauntless Shield', hidden: 'Dauntless Shield' },
+        heightm: 2.90,
+        weightkg: 210.0,
+        color: 'Red',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'zamazenta-shield',
+      {
+        species: 'zamazenta-shield',
+        num: 889,
+        types: [ 'Fighting', 'Steel' ],
+        gender: 'N',
+        baseStats: {
+          hp: 92, atk: 130, def: 145, spa: 80, spd: 145, spe: 128,
+        },
+        abilities: { first: 'Dauntless Shield', second: 'Dauntless Shield', hidden: 'Dauntless Shield' },
+        heightm: 2.90,
+        weightkg: 785.0,
+        color: 'Red',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'eternatus',
+      {
+        species: 'eternatus',
+        num: 890,
+        types: [ 'Poison', 'Dragon' ],
+        gender: 'N',
+        baseStats: {
+          hp: 140, atk: 85, def: 95, spa: 145, spd: 95, spe: 130,
+        },
+        abilities: { first: 'Pressure', second: 'Pressure', hidden: 'Pressure' },
+        heightm: 20.00,
+        weightkg: 950.0,
+        color: 'Purple',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'eternatus2',
+      {
+        species: 'eternatus2',
+        num: 890,
+        types: [ 'Poison', 'Dragon' ],
+        gender: 'N',
+        baseStats: {
+          hp: 255, atk: 115, def: 250, spa: 125, spd: 250, spe: 130,
+        },
+        abilities: { first: 'Pressure', second: 'Pressure', hidden: 'Pressure' },
+        heightm: 100.00,
+        weightkg: 0,
+        color: 'Purple',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

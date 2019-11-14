@@ -44,7 +44,7 @@
     "@types/jest": "^24.0.23",
     "@types/node-fetch": "^2.5.3",
     "@types/node": "^12.12.7",
-    "apollo-server-express": "^2.9.8",
+    "apollo-server-express": "^2.9.9",
     "chalk": "^3.0.0",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.6.0",

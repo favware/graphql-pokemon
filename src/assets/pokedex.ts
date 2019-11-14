@@ -19984,6 +19984,77 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'morpeko',
+      {
+        species: 'morpeko',
+        num: 877,
+        types: [ 'Electric', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 58, atk: 95, def: 58, spa: 70, spd: 58, spe: 97,
+        },
+        abilities: { first: 'Hunger Switch', second: 'Hunger Switch', hidden: 'Hunger Switch' },
+        heightm: 0.30,
+        weightkg: 3.0,
+        color: 'Yellow',
+        eggGroups: [ 'Field', 'Fairy' ],
+      }
+    ],
+    [
+      'morpeko-hangry',
+      {
+        species: 'morpeko-hangry',
+        num: 877,
+        types: [ 'Electric', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 58, atk: 95, def: 58, spa: 70, spd: 58, spe: 97,
+        },
+        abilities: { first: 'Hunger Switch', second: 'Hunger Switch', hidden: 'Hunger Switch' },
+        heightm: 0.30,
+        weightkg: 3.0,
+        color: 'Yellow',
+        eggGroups: [ 'Field', 'Fairy' ],
+      }
+    ],
+    [
+      'cufant',
+      {
+        species: 'cufant',
+        num: 878,
+        types: [ 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 72, atk: 80, def: 49, spa: 40, spd: 49, spe: 40,
+        },
+        abilities: { first: 'Sheer Force', second: 'Sheer Force', hidden: 'Heavy Metal' },
+        heightm: 1.20,
+        weightkg: 100.0,
+        color: 'Yellow',
+        evos: [ 'copperajah' ],
+        eggGroups: [ 'Field', 'Mineral' ],
+      }
+    ],
+    [
+      'copperajah',
+      {
+        species: 'copperajah',
+        num: 879,
+        types: [ 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 122, atk: 130, def: 69, spa: 80, spd: 69, spe: 30,
+        },
+        abilities: { first: 'Sheer Force', second: 'Sheer Force', hidden: 'Heavy Metal' },
+        heightm: 3.00,
+        weightkg: 650.0,
+        color: 'Green',
+        prevo: 'cufant',
+        evoLevel: 34,
+        eggGroups: [ 'Field', 'Mineral' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

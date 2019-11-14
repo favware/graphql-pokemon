@@ -20055,6 +20055,74 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'dracozolt',
+      {
+        species: 'dracozolt',
+        num: 880,
+        types: [ 'Electric', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 90, atk: 100, def: 90, spa: 80, spd: 70, spe: 75,
+        },
+        abilities: { first: 'Volt Absorb', second: 'Hustle', hidden: 'Sand Rush' },
+        heightm: 1.80,
+        weightkg: 190.0,
+        color: 'Green',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'arctozolt',
+      {
+        species: 'arctozolt',
+        num: 881,
+        types: [ 'Electric', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 90, atk: 100, def: 90, spa: 90, spd: 80, spe: 55,
+        },
+        abilities: { first: 'Volt Absorb', second: 'Static', hidden: 'Slush Rush' },
+        heightm: 2.30,
+        weightkg: 150.0,
+        color: 'Blue',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'dracovish',
+      {
+        species: 'dracovish',
+        num: 882,
+        types: [ 'Water', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 90, atk: 90, def: 100, spa: 70, spd: 80, spe: 75,
+        },
+        abilities: { first: 'Water Absorb', second: 'Strong Jaw', hidden: 'Sand Rush' },
+        heightm: 2.30,
+        weightkg: 215.0,
+        color: 'Green',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
+      'arctovish',
+      {
+        species: 'arctovish',
+        num: 883,
+        types: [ 'Water', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 90, atk: 90, def: 100, spa: 80, spd: 90, spe: 55,
+        },
+        abilities: { first: 'Water Absorb', second: 'Ice Body', hidden: 'Slush Rush' },
+        heightm: 2.00,
+        weightkg: 175.0,
+        color: 'Blue',
+        eggGroups: [ 'Undiscovered' ],
+      }
+    ],
+    [
       'syclant',
       {
         species: 'syclant',

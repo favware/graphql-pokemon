@@ -10483,7 +10483,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 25.5,
         color: 'Green',
         prevo: 'eevee',
-        evoLevel: 'Level up near Moss Rock',
+        evoLevel: 'use Leaf Stone',
         eggGroups: [ 'Field' ],
       }
     ],
@@ -10502,7 +10502,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 25.9,
         color: 'Blue',
         prevo: 'eevee',
-        evoLevel: 'Level up near Ice Rock',
+        evoLevel: 'use Ice Stone',
         eggGroups: [ 'Field' ],
       }
     ],
@@ -19896,6 +19896,91 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         evos: [ 'frosmoth' ],
         evoLevel: 'level with high friendship at night',
         eggGroups: [ 'Bug' ],
+      }
+    ],
+    [
+      'stonjourner',
+      {
+        species: 'stonjourner',
+        num: 874,
+        types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 100, atk: 125, def: 135, spa: 20, spd: 20, spe: 20,
+        },
+        abilities: { first: 'Power Spot', second: 'Power Spot', hidden: 'Power Spot' },
+        heightm: 2.50,
+        weightkg: 520.0,
+        color: 'Gray',
+        eggGroups: [ 'Mineral' ],
+      }
+    ],
+    [
+      'eiscue',
+      {
+        species: 'eiscue',
+        num: 875,
+        types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 75, atk: 80, def: 110, spa: 65, spd: 90, spe: 50,
+        },
+        abilities: { first: 'Ice Face', second: 'Ice Face', hidden: 'Ice Face' },
+        heightm: 1.40,
+        weightkg: 89.0,
+        color: 'Blue',
+        eggGroups: [ 'Water1', 'Field' ],
+      }
+    ],
+    [
+      'eiscue-cube',
+      {
+        species: 'eiscue-cube',
+        num: 875,
+        types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 75, atk: 80, def: 110, spa: 65, spd: 90, spe: 50,
+        },
+        abilities: { first: 'Ice Face', second: 'Ice Face', hidden: 'Ice Face' },
+        heightm: 1.40,
+        weightkg: 89.0,
+        color: 'Blue',
+        eggGroups: [ 'Water1', 'Field' ],
+      }
+    ],
+    [
+      'indeedee-f',
+      {
+        species: 'indeedee-f',
+        num: 876,
+        types: [ 'Psychic', 'Normal' ],
+        gender: 'F',
+        baseStats: {
+          hp: 70, atk: 55, def: 65, spa: 95, spd: 105, spe: 85,
+        },
+        abilities: { first: 'Inner Focus', second: 'Synchronize', hidden: 'Psychic Surge' },
+        heightm: 0.90,
+        weightkg: 28.0,
+        color: 'Purple',
+        eggGroups: [ 'Fairy' ],
+      }
+    ],
+    [
+      'indeedee-m',
+      {
+        species: 'indeedee-m',
+        num: 876,
+        types: [ 'Psychic', 'Normal' ],
+        gender: 'M',
+        baseStats: {
+          hp: 70, atk: 55, def: 65, spa: 95, spd: 105, spe: 85,
+        },
+        abilities: { first: 'Own Tempo', second: 'Synchronize', hidden: 'Psychic Surge' },
+        heightm: 0.90,
+        weightkg: 28.0,
+        color: 'Purple',
+        eggGroups: [ 'Fairy' ],
       }
     ],
     [

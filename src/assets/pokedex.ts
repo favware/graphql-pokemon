@@ -2352,6 +2352,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'farfetch\'d-galar',
+      {
+        species: 'farfetch\'d-galar',
+        num: 83,
+        types: [ 'Fighting' ],
+        baseSpecies: 'Farfetch\'d',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 52, atk: 95, def: 55, spa: 58, spd: 62, spe: 55,
+        },
+        abilities: { first: 'Steadfast', second: 'Steadfast', hidden: 'Scrappy' },
+        heightm: 0.80,
+        weightkg: 42.0,
+        color: 'Brown',
+        evos: [ 'sirfetch\'d-galar' ],
+        eggGroups: [ 'Flying', 'Field' ],
+      }
+    ],
+    [
       'doduo',
       {
         species: 'doduo',
@@ -3190,6 +3210,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         prevo: 'mime jr',
         evoLevel: 'Level up while knowing Mimic',
         eggGroups: [ 'Human-Like' ],
+      }
+    ],
+    [
+      'mr. mime-galar',
+      {
+        species: 'mr. mime-galar',
+        num: 122,
+        types: [ 'Ice', 'Psychic' ],
+        baseSpecies: 'Mr. Mime',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 50, atk: 65, def: 65, spa: 90, spd: 90, spe: 100,
+        },
+        abilities: { first: 'Vital Spirit', second: 'Screen Cleaner', hidden: 'Ice Body' },
+        heightm: 1.40,
+        weightkg: 56.8,
+        color: 'White',
+        evos: [ 'mr. rime' ],
+        eggGroups: [ 'HumanLike' ],
       }
     ],
     [
@@ -5220,6 +5260,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'corsola-galar',
+      {
+        species: 'corsola-galar',
+        num: 222,
+        types: [ 'Ghost' ],
+        baseSpecies: 'Corsola',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 60, atk: 55, def: 100, spa: 65, spd: 100, spe: 30,
+        },
+        abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Cursed Body' },
+        heightm: 0.60,
+        weightkg: 0.5,
+        color: 'White',
+        evos: [ 'cursola' ],
+        eggGroups: [ 'Water1', 'Water3' ],
+      }
+    ],
+    [
       'remoraid',
       {
         species: 'remoraid',
@@ -6054,6 +6114,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'zigzagoon-galar',
+      {
+        species: 'zigzagoon-galar',
+        num: 263,
+        types: [ 'Dark', 'Normal' ],
+        baseSpecies: 'Zigzagoon',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 38, atk: 30, def: 41, spa: 30, spd: 41, spe: 60,
+        },
+        abilities: { first: 'Pickup', second: 'Gluttony', hidden: 'Quick Feet' },
+        heightm: 0.40,
+        weightkg: 17.5,
+        color: 'White',
+        evos: [ 'linoone-galar' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
       'linoone',
       {
         species: 'linoone',
@@ -6067,6 +6147,28 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 32.5,
         color: 'White',
         prevo: 'zigzagoon',
+        evoLevel: 20,
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'linoone-galar',
+      {
+        species: 'linoone-galar',
+        num: 264,
+        types: [ 'Dark', 'Normal' ],
+        baseSpecies: 'Linoone',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 78, atk: 70, def: 61, spa: 50, spd: 61, spe: 100,
+        },
+        abilities: { first: 'Pickup', second: 'Gluttony', hidden: 'Quick Feet' },
+        heightm: 0.50,
+        weightkg: 32.5,
+        color: 'White',
+        evos: [ 'obstagoon' ],
+        prevo: 'zigzagoon-galar',
         evoLevel: 20,
         eggGroups: [ 'Field' ],
       }
@@ -12446,6 +12548,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'darumaka-galar',
+      {
+        species: 'darumaka-galar',
+        num: 554,
+        types: [ 'Ice' ],
+        baseSpecies: 'Darumaka',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 70, atk: 90, def: 45, spa: 15, spd: 45, spe: 50,
+        },
+        abilities: { first: 'Hustle', second: 'Hustle', hidden: 'Inner Focus' },
+        heightm: 0.70,
+        weightkg: 40.0,
+        color: 'White',
+        evos: [ 'darmanitan-galar' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
       'darmanitan',
       {
         species: 'darmanitan',
@@ -12466,6 +12588,27 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'darmanitan-galar',
+      {
+        species: 'darmanitan-galar',
+        num: 55,
+        types: [ 'Ice' ],
+        baseSpecies: 'Darmanitan',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 105, atk: 140, def: 55, spa: 30, spd: 55, spe: 95,
+        },
+        abilities: { first: 'Gorilla Tactics', second: 'Gorilla Tactics', hidden: 'Zen Mode' },
+        heightm: 1.70,
+        weightkg: 120.0,
+        color: 'White',
+        prevo: 'darumaka-galar',
+        evoLevel: 'use Ice Stone',
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
       'darmanitan-zen',
       {
         species: 'darmanitan-zen',
@@ -12483,6 +12626,27 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         color: 'Blue',
         prevo: 'darumaka',
         evoLevel: 35,
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'darmanitan-zen-galar',
+      {
+        species: 'darmanitan-zen-galar',
+        num: 555,
+        types: [ 'Ice', 'Fire' ],
+        baseStats: {
+          hp: 105, atk: 160, def: 55, spa: 30, spd: 55, spe: 135,
+        },
+        baseSpecies: 'Darmanitan',
+        forme: 'Zen-Galar',
+        formeLetter: 'Z',
+        abilities: { first: 'Gorilla Tactics', second: 'Gorilla Tactics', hidden: 'Zen Mode' },
+        heightm: 1.7,
+        weightkg: 120.0,
+        color: 'White',
+        prevo: 'darumaka-galar',
+        evoLevel: 'use Ice Stone',
         eggGroups: [ 'Field' ],
       }
     ],
@@ -12602,6 +12766,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 1.5,
         color: 'Black',
         evos: [ 'cofagrigus' ],
+        eggGroups: [ 'Mineral', 'Amorphous' ],
+      }
+    ],
+    [
+      'yamask-galar',
+      {
+        species: 'yamask-galar',
+        num: 562,
+        types: [ 'Ground', 'Ghost' ],
+        baseSpecies: 'Yamask',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 38, atk: 55, def: 85, spa: 30, spd: 65, spe: 30,
+        },
+        abilities: { first: 'Wandering Spirit', second: 'Wandering Spirit', hidden: 'Wandering Spirit' },
+        heightm: 0.50,
+        weightkg: 1.5,
+        color: 'Black',
+        evos: [ 'runerigus' ],
         eggGroups: [ 'Mineral', 'Amorphous' ],
       }
     ],

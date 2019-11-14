@@ -1602,6 +1602,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'meowth-galar',
+      {
+        species: 'meowth-galar',
+        num: 52,
+        baseSpecies: 'Meowth',
+        forme: 'Galar',
+        formeLetter: 'G',
+        types: [ 'Dark' ],
+        baseStats: {
+          hp: 40, atk: 35, def: 35, spa: 50, spd: 40, spe: 90,
+        },
+        abilities: { first: 'Pickup', second: 'Technician', hidden: 'Rattled' },
+        heightm: 0.40,
+        weightkg: 4.2,
+        color: 'Blue',
+        evos: [ 'perrserker ' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
       'persian',
       {
         species: 'persian',
@@ -2164,6 +2184,26 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'ponyta-galar',
+      {
+        species: 'ponyta-galar',
+        num: 77,
+        types: [ 'Psychic' ],
+        baseSpecies: 'Ponyta',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 50, atk: 85, def: 55, spa: 65, spd: 65, spe: 90,
+        },
+        abilities: { first: 'Run Away', second: 'Pastel Veil', hidden: 'Anticipation' },
+        heightm: 0.80,
+        weightkg: 24.0,
+        color: 'White',
+        evos: [ 'rapidash-galar' ],
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
       'rapidash',
       {
         species: 'rapidash',
@@ -2177,6 +2217,27 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 95,
         color: 'Yellow',
         prevo: 'ponyta',
+        evoLevel: 40,
+        eggGroups: [ 'Field' ],
+      }
+    ],
+    [
+      'rapidash-galar',
+      {
+        species: 'rapidash-galar',
+        num: 78,
+        types: [ 'Psychic', 'Fairy' ],
+        baseSpecies: 'Rapidash',
+        forme: 'Galar',
+        formeLetter: 'G',
+        baseStats: {
+          hp: 65, atk: 100, def: 70, spa: 80, spd: 80, spe: 105,
+        },
+        abilities: { first: 'Run Away', second: 'Pastel Veil', hidden: 'Anticipation' },
+        heightm: 1.7,
+        weightkg: 95,
+        color: 'White',
+        prevo: 'ponyta-galar',
         evoLevel: 40,
         eggGroups: [ 'Field' ],
       }
@@ -19500,6 +19561,85 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         prevo: 'farfetch\'d-galar',
         evoLevel: '???',
         eggGroups: [ 'Flying', 'Field' ],
+      }
+    ],
+    [
+      'mr. rime',
+      {
+        species: 'mr. rime',
+        num: 866,
+        types: [ 'Ice', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 80, atk: 85, def: 75, spa: 110, spd: 100, spe: 70,
+        },
+        abilities: { first: 'Tangled Feet', second: 'Screen Cleaner', hidden: 'Ice Body' },
+        heightm: 1.50,
+        weightkg: 58.2,
+        color: 'Purple',
+        prevo: 'mr. mime-galar',
+        evoLevel: 42,
+        eggGroups: [ 'HumanLike' ],
+      }
+    ],
+    [
+      'runerigus',
+      {
+        species: 'runerigus',
+        num: 867,
+        types: [ 'Ground', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 58, atk: 95, def: 145, spa: 50, spd: 105, spe: 30,
+        },
+        abilities: { first: 'Wandering Spirit', second: 'Wandering Spirit', hidden: 'Wandering Spirit' },
+        heightm: 1.60,
+        weightkg: 66.6,
+        color: 'Gray',
+        prevo: 'yamask-galar',
+        evoLevel: 'have 49+ damage on Yamask and walk under stone sculpture in Dusty Bowl Wild Area',
+        eggGroups: [ 'Mineral', 'Amorphous' ],
+      }
+    ],
+    [
+      'milcery',
+      {
+        species: 'milcery',
+        num: 868,
+        types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 45, atk: 40, def: 40, spa: 50, spd: 61, spe: 34,
+        },
+        abilities: { first: 'Sweet Veil', second: 'Sweet Veil', hidden: 'Aroma Veil' },
+        heightm: 0.20,
+        weightkg: 0.3,
+        color: 'White',
+        eggGroups: [ 'Fairy', 'Amorphous' ],
+      }
+    ],
+    [
+      'alcremie',
+      {
+        species: 'alcremie',
+        num: 869,
+        types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 65, atk: 60, def: 75, spa: 110, spd: 121, spe: 64,
+        },
+        abilities: { first: 'Sweet Veil', second: 'Sweet Veil', hidden: 'Aroma Veil' },
+        heightm: 0.30,
+        weightkg: 0.5,
+        color: 'White',
+        prevo: 'milcery',
+        evoLevel: 45,
+        eggGroups: [ 'Fairy', 'Amorphous' ],
+        otherFormes: [
+          'alcremiepink', 'alcremiegreen',
+          'alcremieyellow', 'alcremiewhite',
+          'alcremiestrawberry', 'alcremiechocolate',
+          'alcremieneopolitan' ],
       }
     ],
     [

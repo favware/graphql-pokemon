@@ -66,5 +66,4 @@ export default class RegularExpression extends GraphQLScalarType {
   }
 }
 
-export const GenderUnion = new RegularExpression('GenderUnion', /^(?:Female|Male|None|Unknown)$/);
 export const MoveCategoryUnion = new RegularExpression('MoveCategoryUnion', /^(?:Physical|Special|Status)$/);

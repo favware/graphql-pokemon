@@ -8,7 +8,6 @@ export interface Scalars {
   Int: number;
   Float: number;
   JSONObject: any;
-  GenderUnion: any;
   MoveCategoryUnion: any;
 }
 
@@ -46,8 +45,8 @@ export interface DexDetails {
   forme?: Maybe<Scalars['String']>;
   formeLetter?: Maybe<Scalars['String']>;
   gender: GenderEntry;
-  height: Scalars['Int'];
-  weight: Scalars['Int'];
+  height: Scalars['Float'];
+  weight: Scalars['Float'];
   baseForme?: Maybe<Scalars['String']>;
   baseSpecies?: Maybe<Scalars['String']>;
   otherFormes?: Maybe<Array<Scalars['String']>>;
@@ -77,8 +76,8 @@ export interface DexEntry {
   forme?: Maybe<Scalars['String']>;
   formeLetter?: Maybe<Scalars['String']>;
   gender: GenderEntry;
-  height: Scalars['Int'];
-  weight: Scalars['Int'];
+  height: Scalars['Float'];
+  weight: Scalars['Float'];
   baseForme?: Maybe<Scalars['String']>;
   baseSpecies?: Maybe<Scalars['String']>;
   otherFormes?: Maybe<Array<Scalars['String']>>;
@@ -94,7 +93,6 @@ export interface GenderEntry {
   __typename?: 'GenderEntry';
   male: Scalars['String'];
   female: Scalars['String'];
-  special?: Maybe<Scalars['GenderUnion']>;
 }
 
 

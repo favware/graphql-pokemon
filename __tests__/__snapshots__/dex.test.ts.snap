@@ -73,7 +73,10 @@ Object {
     "eggGroups": Array [
       "Undiscovered",
     ],
-    "gender": "N",
+    "genderRatio": Object {
+      "female": 0,
+      "male": 0,
+    },
     "heightm": 3.2,
     "num": 493,
     "otherFormes": Array [

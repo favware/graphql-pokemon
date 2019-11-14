@@ -106,7 +106,7 @@ describe('getPokemonDetailsByFuzzy', () => {
     const { data } = await gCall({
       source: getPokemonDetailsByFuzzy,
       variableValues: {
-        pokemon: 'dragoni', skip: 1, take: 2, reverse: true,
+        pokemon: 'silvally-dragon', skip: 1, take: 2, reverse: true,
       },
     }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
 
@@ -156,8 +156,8 @@ describe('getDexEntries', () => {
       },
     }).then(formatResponse) as DataResponse<'getDexEntries'>;
 
-    expect(data.getDexEntries[0].species).toBe('arceus-dragon');
-    expect(data.getDexEntries[0].num).toBe(493);
+    expect(data.getDexEntries[0].species).toBe('silvally-dragon');
+    expect(data.getDexEntries[0].num).toBe(773);
     expect(data.getDexEntries).toContainEqual({ num: 148, species: 'dragonair' });
     expect(data).toMatchSnapshot();
   });

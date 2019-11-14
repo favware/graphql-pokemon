@@ -23,6 +23,10 @@ Object {
       "num": 147,
       "species": "dratini",
     },
+    Object {
+      "num": 882,
+      "species": "dracovish",
+    },
   ],
 }
 `;
@@ -31,16 +35,16 @@ exports[`getDexEntries GIVEN a fuzzy pokemon and pagination THEN returns DexEntr
 Object {
   "getDexEntries": Array [
     Object {
+      "num": 773,
+      "species": "silvally-dragon",
+    },
+    Object {
       "num": 493,
       "species": "arceus-dragon",
     },
     Object {
       "num": 148,
       "species": "dragonair",
-    },
-    Object {
-      "num": 149,
-      "species": "dragonite",
     },
   ],
 }

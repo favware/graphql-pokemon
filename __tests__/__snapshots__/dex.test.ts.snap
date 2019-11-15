@@ -13,11 +13,11 @@ Object {
     },
     Object {
       "num": 493,
-      "species": "arceus-dragon",
+      "species": "arceusdragon",
     },
     Object {
       "num": 773,
-      "species": "silvally-dragon",
+      "species": "silvallydragon",
     },
     Object {
       "num": 147,
@@ -36,11 +36,11 @@ Object {
   "getDexEntries": Array [
     Object {
       "num": 773,
-      "species": "silvally-dragon",
+      "species": "silvallydragon",
     },
     Object {
       "num": 493,
-      "species": "arceus-dragon",
+      "species": "arceusdragon",
     },
     Object {
       "num": 148,
@@ -189,7 +189,7 @@ exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon and pagination THEN retu
 Object {
   "getPokemonDetailsByFuzzy": Object {
     "num": 773,
-    "species": "silvally-dragon",
+    "species": "silvallydragon",
   },
 }
 `;

@@ -61,12 +61,10 @@ export default class DexService {
       const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.genderRatio || {
         male: 0.5,
         female: 0.5,
-        special: 'Unknown',
       };
 
       genderData.male = `${pageGenderRatio.male * 100}%`;
       genderData.female = `${pageGenderRatio.female * 100}%`;
-      genderData.special = pageGenderRatio.special;
 
       baseStatsData.hp = page.baseStats.hp;
       baseStatsData.attack = page.baseStats.atk;
@@ -131,12 +129,10 @@ export default class DexService {
     const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = basePokemonData.genderRatio || {
       male: 0.5,
       female: 0.5,
-      special: 'Unknown',
     };
 
     genderData.male = `${basePokemonGenderRatio.male * 100}%`;
     genderData.female = `${basePokemonGenderRatio.female * 100}%`;
-    genderData.special = basePokemonGenderRatio.special;
 
     baseStatsData.hp = basePokemonData.baseStats.hp;
     baseStatsData.attack = basePokemonData.baseStats.atk;

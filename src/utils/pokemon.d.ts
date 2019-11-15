@@ -23,7 +23,6 @@ export namespace Pokemon {
   export interface GenderEntry {
     male: number;
     female: number;
-    special?: GendersUnion;
   }
 
   export interface Stats extends Record<string, number> {
@@ -53,7 +52,6 @@ export namespace Pokemon {
     evos?: string[];
     forme?: string;
     formeLetter?: string;
-    gender?: 'M' | 'F' | 'N';
     genderRatio?: GenderEntry;
     heightm: number;
     num: number;
@@ -151,7 +149,6 @@ export namespace Pokemon {
   }
 
   export type MoveCategoriesUnion = 'Physical' | 'Special' | 'Status';
-  export type GendersUnion = 'Female' | 'Male' | 'None' | 'Unknown';
 }
 
 export default Pokemon;

@@ -164,10 +164,10 @@ export default class DexService {
     pokemonData.baseSpecies = basePokemonData.baseSpecies;
     pokemonData.otherFormes = basePokemonData.otherFormes;
     pokemonData.flavorTexts = [];
-    pokemonData.sprite = `https://play.pokemonshowdown.com/sprites/ani/${Util.toLowerSingleWordCase(basePokemonData.species)}.gif`;
-    pokemonData.shinySprite = `https://play.pokemonshowdown.com/sprites/ani-shiny/${Util.toLowerSingleWordCase(basePokemonData.species)}.gif`;
-    pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
     pokemonData.serebiiPage = basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '';
+    pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
+    pokemonData.sprite = this.parseSpeciesForSprite(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies);
+    pokemonData.shinySprite = this.parseSpeciesForSprite(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies, true);
     pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${Util.toLowerHyphenCase(basePokemonData.species)}` : '';
 
     if (basePokemonData.num >= 0) {
@@ -215,14 +215,16 @@ export default class DexService {
     }
 
     if (basePokemonData.evos && basePokemonData.evos[0] !== parsingPokemon) {
-      const evoPokemon = this.findBySpecies(basePokemonData.evos[0]);
-      if (evoPokemon) {
-        evolutionChain.push(this.findBySpeciesWithDetails({
-          pokemon: evoPokemon.species,
-          skip,
-          take,
-          reverse,
-        }, basePokemonData.species));
+      for (const evo of basePokemonData.evos) {
+        const evoPokemon = this.findBySpecies(Util.toLowerSingleWordCase(evo));
+        if (evoPokemon) {
+          evolutionChain.push(this.findBySpeciesWithDetails({
+            pokemon: Util.toLowerSingleWordCase(evoPokemon.species),
+            skip,
+            take,
+            reverse,
+          }, basePokemonData.species));
+        }
       }
     }
 
@@ -238,5 +240,17 @@ export default class DexService {
     }
 
     return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;
+  }
+
+  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, shiny = false) {
+    if (!baseForme) {
+      pokemonName = Util.toLowerSingleWordCase(pokemonName);
+    }
+
+    if (pokemonName.match(/^(.+)-(x|y)$/g)) {
+      pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
+    }
+
+    return `https://play.pokemonshowdown.com/sprites/${shiny ? 'ani-shiny' : 'ani'}/${pokemonName}.gif`;
   }
 }

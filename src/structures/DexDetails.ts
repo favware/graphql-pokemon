@@ -4,10 +4,10 @@ import FlavorEntry from './FlavorEntry';
 
 @ObjectType({ description: 'A Pokémon\'s details entry' })
 export default class DexDetails extends DexEntry {
-  @Field(() => DexDetails, { nullable: true, description: 'The evolutions for a Pokémon, if any ' })
+  @Field(() => [ DexDetails ], { nullable: true, description: 'The evolutions for a Pokémon, if any ' })
   evolutions?: this[];
 
-  @Field(() => DexDetails, { nullable: true, description: 'The preevolutions for a Pokémon, if any ' })
+  @Field(() => [ DexDetails ], { nullable: true, description: 'The preevolutions for a Pokémon, if any ' })
   preevolutions?: this[];
 
   @Field(() => [ FlavorEntry ], { description: 'The flavortexts for a Pokémon' })

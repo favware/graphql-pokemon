@@ -263,6 +263,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'caterpie',
         num: 10,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 30, def: 35, spa: 20, spd: 20, spe: 45,
         },
@@ -280,6 +281,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'metapod',
         num: 11,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 20, def: 55, spa: 25, spd: 25, spe: 30,
         },
@@ -299,6 +301,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'butterfree',
         num: 12,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 45, def: 50, spa: 90, spd: 80, spe: 70,
         },
@@ -317,6 +320,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'weedle',
         num: 13,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 35, def: 30, spa: 20, spd: 20, spe: 50,
         },
@@ -334,6 +338,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kakuna',
         num: 14,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 25, def: 50, spa: 25, spd: 25, spe: 35,
         },
@@ -353,6 +358,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'beedrill',
         num: 15,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 90, def: 40, spa: 45, spd: 80, spe: 75,
         },
@@ -375,6 +381,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Mega',
         formeLetter: 'M',
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 150, def: 40, spa: 15, spd: 80, spe: 145,
         },
@@ -391,6 +398,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pidgey',
         num: 16,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 45, def: 40, spa: 35, spd: 35, spe: 56,
         },
@@ -408,6 +416,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pidgeotto',
         num: 17,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 63, atk: 60, def: 55, spa: 50, spd: 50, spe: 71,
         },
@@ -427,6 +436,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pidgeot',
         num: 18,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 83, atk: 80, def: 75, spa: 70, spd: 70, spe: 101,
         },
@@ -446,6 +456,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pidgeotmega',
         num: 18,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Pidgeot',
         forme: 'Mega',
         formeLetter: 'M',
@@ -465,6 +476,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rattata',
         num: 19,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 56, def: 35, spa: 25, spd: 35, spe: 72,
         },
@@ -483,6 +495,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rattataalola',
         num: 19,
         types: [ 'Dark', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Rattata',
         forme: 'Alola',
         formeLetter: 'A',
@@ -503,6 +516,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'raticate',
         num: 20,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 81, def: 60, spa: 50, spd: 70, spe: 97,
         },
@@ -522,6 +536,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'raticatealola',
         num: 20,
         types: [ 'Dark', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Raticate',
         forme: 'Alola',
         formeLetter: 'A',
@@ -546,6 +561,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola-Totem',
         formeLetter: 'T',
         types: [ 'Dark', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 71, def: 70, spa: 40, spd: 80, spe: 77,
         },
@@ -562,6 +578,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spearow',
         num: 21,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 60, def: 30, spa: 31, spd: 31, spe: 70,
         },
@@ -579,6 +596,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'fearow',
         num: 22,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 90, def: 65, spa: 61, spd: 61, spe: 100,
         },
@@ -597,6 +615,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ekans',
         num: 23,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 60, def: 44, spa: 40, spd: 54, spe: 55,
         },
@@ -614,6 +633,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'arbok',
         num: 24,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 95, def: 69, spa: 65, spd: 79, spe: 80,
         },
@@ -632,6 +652,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pikachu',
         num: 25,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
@@ -923,6 +944,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Starter',
         formeLetter: 'S',
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 80, def: 50, spa: 75, spd: 60, spe: 120,
         },
@@ -939,6 +961,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'raichu',
         num: 26,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 90, def: 55, spa: 90, spd: 80, spe: 110,
         },
@@ -961,6 +984,8 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Electric', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+
         baseStats: {
           hp: 60, atk: 85, def: 50, spa: 95, spd: 85, spe: 110,
         },
@@ -979,6 +1004,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sandshrew',
         num: 27,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 75, def: 85, spa: 20, spd: 30, spe: 40,
         },
@@ -1000,6 +1026,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Ice', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 75, def: 90, spa: 10, spd: 35, spe: 40,
         },
@@ -1017,6 +1044,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sandslash',
         num: 28,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 100, def: 110, spa: 45, spd: 55, spe: 65,
         },
@@ -1039,6 +1067,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Ice', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 100, def: 120, spa: 25, spd: 65, spe: 65,
         },
@@ -1210,7 +1239,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vulpix',
         num: 37,
         types: [ 'Fire' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 38, atk: 41, def: 40, spa: 50, spd: 65, spe: 65,
         },
@@ -1232,7 +1261,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Ice' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 38, atk: 41, def: 40, spa: 50, spd: 65, spe: 65,
         },
@@ -1250,7 +1279,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ninetales',
         num: 38,
         types: [ 'Fire' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 73, atk: 76, def: 75, spa: 81, spd: 100, spe: 100,
         },
@@ -1273,7 +1302,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Ice', 'Fairy' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 73, atk: 67, def: 75, spa: 81, spd: 100, spe: 109,
         },
@@ -1331,6 +1360,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zubat',
         num: 41,
         types: [ 'Poison', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 45, def: 35, spa: 30, spd: 40, spe: 55,
         },
@@ -1348,6 +1378,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'golbat',
         num: 42,
         types: [ 'Poison', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 80, def: 70, spa: 65, spd: 75, spe: 90,
         },
@@ -1367,6 +1398,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'oddish',
         num: 43,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 50, def: 55, spa: 75, spd: 65, spe: 30,
         },
@@ -1384,6 +1416,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gloom',
         num: 44,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 65, def: 70, spa: 85, spd: 75, spe: 40,
         },
@@ -1403,6 +1436,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vileplume',
         num: 45,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 80, def: 85, spa: 110, spd: 90, spe: 50,
         },
@@ -1421,6 +1455,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'paras',
         num: 46,
         types: [ 'Bug', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 70, def: 55, spa: 45, spd: 55, spe: 25,
         },
@@ -1438,6 +1473,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'parasect',
         num: 47,
         types: [ 'Bug', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 95, def: 80, spa: 60, spd: 80, spe: 30,
         },
@@ -1456,6 +1492,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'venonat',
         num: 48,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 55, def: 50, spa: 40, spd: 55, spe: 45,
         },
@@ -1473,6 +1510,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'venomoth',
         num: 49,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 65, def: 60, spa: 90, spd: 75, spe: 90,
         },
@@ -1491,6 +1529,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'diglett',
         num: 50,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 10, atk: 55, def: 25, spa: 35, spd: 45, spe: 95,
         },
@@ -1512,6 +1551,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Ground', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 10, atk: 55, def: 30, spa: 35, spd: 45, spe: 90,
         },
@@ -1529,6 +1569,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dugtrio',
         num: 51,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 100, def: 50, spa: 50, spd: 70, spe: 120,
         },
@@ -1551,6 +1592,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Alola',
         formeLetter: 'A',
         types: [ 'Ground', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 100, def: 60, spa: 50, spd: 70, spe: 110,
         },
@@ -1569,6 +1611,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'meowth',
         num: 52,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 45, def: 35, spa: 40, spd: 40, spe: 90,
         },
@@ -1587,6 +1630,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'meowthalola',
         num: 52,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Meowth',
         forme: 'Alola',
         formeLetter: 'A',
@@ -1610,6 +1654,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Galar',
         formeLetter: 'G',
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 35, def: 35, spa: 50, spd: 40, spe: 90,
         },
@@ -1627,6 +1672,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'persian',
         num: 53,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 70, def: 60, spa: 65, spd: 65, spe: 115,
         },
@@ -1646,6 +1692,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'persianalola',
         num: 53,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Persian',
         forme: 'Alola',
         formeLetter: 'A',
@@ -1667,6 +1714,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'psyduck',
         num: 54,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 52, def: 48, spa: 65, spd: 50, spe: 55,
         },
@@ -1684,6 +1732,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'golduck',
         num: 55,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 82, def: 78, spa: 95, spd: 80, spe: 85,
         },
@@ -1702,6 +1751,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mankey',
         num: 56,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 80, def: 35, spa: 35, spd: 45, spe: 70,
         },
@@ -1719,6 +1769,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'primeape',
         num: 57,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 105, def: 60, spa: 60, spd: 70, spe: 95,
         },
@@ -1774,6 +1825,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'poliwag',
         num: 60,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 50, def: 40, spa: 40, spd: 40, spe: 90,
         },
@@ -1791,6 +1843,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'poliwhirl',
         num: 61,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 65, def: 65, spa: 50, spd: 50, spe: 90,
         },
@@ -1810,6 +1863,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'poliwrath',
         num: 62,
         types: [ 'Water', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 95, def: 95, spa: 70, spd: 90, spe: 70,
         },
@@ -1963,6 +2017,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bellsprout',
         num: 69,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 75, def: 35, spa: 70, spd: 30, spe: 40,
         },
@@ -1980,6 +2035,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'weepinbell',
         num: 70,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 90, def: 50, spa: 85, spd: 45, spe: 55,
         },
@@ -1999,6 +2055,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'victreebel',
         num: 71,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 105, def: 65, spa: 100, spd: 70, spe: 70,
         },
@@ -2017,6 +2074,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tentacool',
         num: 72,
         types: [ 'Water', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 40, def: 35, spa: 50, spd: 100, spe: 70,
         },
@@ -2034,6 +2092,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tentacruel',
         num: 73,
         types: [ 'Water', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 70, def: 65, spa: 80, spd: 120, spe: 100,
         },
@@ -2052,6 +2111,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'geodude',
         num: 74,
         types: [ 'Rock', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 80, def: 100, spa: 30, spd: 30, spe: 20,
         },
@@ -2070,6 +2130,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'geodudealola',
         num: 74,
         types: [ 'Rock', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Geodude',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2090,6 +2151,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'graveler',
         num: 75,
         types: [ 'Rock', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 95, def: 115, spa: 45, spd: 45, spe: 35,
         },
@@ -2110,6 +2172,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'graveleralola',
         num: 75,
         types: [ 'Rock', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Graveler',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2132,6 +2195,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'golem',
         num: 76,
         types: [ 'Rock', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 120, def: 130, spa: 55, spd: 65, spe: 45,
         },
@@ -2151,6 +2215,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'golemalola',
         num: 76,
         types: [ 'Rock', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Golem',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2172,6 +2237,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ponyta',
         num: 77,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 85, def: 55, spa: 65, spd: 65, spe: 90,
         },
@@ -2189,6 +2255,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ponytagalar',
         num: 77,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Ponyta',
         forme: 'Galar',
         formeLetter: 'G',
@@ -2209,6 +2276,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rapidash',
         num: 78,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 100, def: 70, spa: 80, spd: 80, spe: 105,
         },
@@ -2227,6 +2295,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rapidashgalar',
         num: 78,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Rapidash',
         forme: 'Galar',
         formeLetter: 'G',
@@ -2248,6 +2317,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slowpoke',
         num: 79,
         types: [ 'Water', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 65, def: 65, spa: 40, spd: 40, spe: 15,
         },
@@ -2265,6 +2335,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slowbro',
         num: 80,
         types: [ 'Water', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 75, def: 110, spa: 100, spd: 80, spe: 30,
         },
@@ -2284,6 +2355,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slowbromega',
         num: 80,
         types: [ 'Water', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Slowbro',
         forme: 'Mega',
         formeLetter: 'M',
@@ -2341,6 +2413,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'farfetchd',
         num: 83,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 52, atk: 90, def: 55, spa: 58, spd: 62, spe: 60,
         },
@@ -2367,7 +2440,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         heightm: 0.80,
         weightkg: 42.0,
         color: 'Brown',
-        evos: [ 'sirfetch\'d-galar' ],
+        evos: [ 'sirfetchgalar' ],
         eggGroups: [ 'Flying', 'Field' ],
       }
     ],
@@ -2377,6 +2450,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'doduo',
         num: 84,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 85, def: 45, spa: 35, spd: 35, spe: 75,
         },
@@ -2394,6 +2468,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dodrio',
         num: 85,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 110, def: 70, spa: 60, spd: 60, spe: 110,
         },
@@ -2412,6 +2487,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'seel',
         num: 86,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 45, def: 55, spa: 45, spd: 70, spe: 45,
         },
@@ -2429,6 +2505,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dewgong',
         num: 87,
         types: [ 'Water', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 70, def: 80, spa: 70, spd: 95, spe: 70,
         },
@@ -2447,6 +2524,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'grimer',
         num: 88,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 80, def: 50, spa: 40, spd: 50, spe: 25,
         },
@@ -2465,6 +2543,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'grimeralola',
         num: 88,
         types: [ 'Poison', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Grimer',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2485,6 +2564,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'muk',
         num: 89,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 105, def: 75, spa: 65, spd: 100, spe: 50,
         },
@@ -2504,6 +2584,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mukalola',
         num: 89,
         types: [ 'Poison', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Muk',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2525,6 +2606,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shellder',
         num: 90,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 65, def: 100, spa: 45, spd: 25, spe: 40,
         },
@@ -2542,6 +2624,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cloyster',
         num: 91,
         types: [ 'Water', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 95, def: 180, spa: 85, spd: 45, spe: 70,
         },
@@ -2560,6 +2643,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gastly',
         num: 92,
         types: [ 'Ghost', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 35, def: 30, spa: 100, spd: 35, spe: 80,
         },
@@ -2577,6 +2661,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'haunter',
         num: 93,
         types: [ 'Ghost', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 50, def: 45, spa: 115, spd: 55, spe: 95,
         },
@@ -2596,6 +2681,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gengar',
         num: 94,
         types: [ 'Ghost', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 65, def: 60, spa: 130, spd: 75, spe: 110,
         },
@@ -2615,6 +2701,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gengarmega',
         num: 94,
         types: [ 'Ghost', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Gengar',
         forme: 'Mega',
         formeLetter: 'M',
@@ -2634,6 +2721,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'onix',
         num: 95,
         types: [ 'Rock', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 45, def: 160, spa: 30, spd: 45, spe: 70,
         },
@@ -2651,6 +2739,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'drowzee',
         num: 96,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 48, def: 45, spa: 43, spd: 90, spe: 42,
         },
@@ -2668,6 +2757,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hypno',
         num: 97,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 73, def: 70, spa: 73, spd: 115, spe: 67,
         },
@@ -2686,6 +2776,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'krabby',
         num: 98,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 105, def: 90, spa: 25, spd: 25, spe: 50,
         },
@@ -2703,6 +2794,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kingler',
         num: 99,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75,
         },
@@ -2758,6 +2850,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'exeggcute',
         num: 102,
         types: [ 'Grass', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 40, def: 80, spa: 60, spd: 45, spe: 40,
         },
@@ -2775,6 +2868,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'exeggutor',
         num: 103,
         types: [ 'Grass', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 95, def: 85, spa: 125, spd: 75, spe: 55,
         },
@@ -2794,6 +2888,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'exeggutoralola',
         num: 103,
         types: [ 'Grass', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Exeggutor',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2815,6 +2910,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cubone',
         num: 104,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 50, def: 95, spa: 40, spd: 50, spe: 35,
         },
@@ -2832,6 +2928,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'marowak',
         num: 105,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 80, def: 110, spa: 50, spd: 80, spe: 45,
         },
@@ -2851,6 +2948,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'marowakalola',
         num: 105,
         types: [ 'Fire', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Marowak',
         forme: 'Alola',
         formeLetter: 'A',
@@ -2872,6 +2970,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'marowakalolatotem',
         num: 105,
         types: [ 'Fire', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Marowak',
         forme: 'Alola-Totem',
         formeLetter: 'T',
@@ -2929,6 +3028,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lickitung',
         num: 108,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 55, def: 75, spa: 60, spd: 75, spe: 30,
         },
@@ -2946,6 +3046,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'koffing',
         num: 109,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 65, def: 95, spa: 60, spd: 45, spe: 35,
         },
@@ -2963,6 +3064,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'weezing',
         num: 110,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 90, def: 120, spa: 85, spd: 70, spe: 60,
         },
@@ -2981,6 +3083,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rhyhorn',
         num: 111,
         types: [ 'Ground', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 85, def: 95, spa: 30, spd: 30, spe: 25,
         },
@@ -2998,6 +3101,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rhydon',
         num: 112,
         types: [ 'Ground', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 130, def: 120, spa: 45, spd: 45, spe: 40,
         },
@@ -3037,6 +3141,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tangela',
         num: 114,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 55, def: 115, spa: 100, spd: 40, spe: 60,
         },
@@ -3092,6 +3197,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'horsea',
         num: 116,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 40, def: 70, spa: 70, spd: 25, spe: 60,
         },
@@ -3109,6 +3215,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'seadra',
         num: 117,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 65, def: 95, spa: 95, spd: 45, spe: 85,
         },
@@ -3128,6 +3235,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'goldeen',
         num: 118,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 67, def: 60, spa: 35, spd: 50, spe: 63,
         },
@@ -3145,6 +3253,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'seaking',
         num: 119,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 92, def: 65, spa: 65, spd: 80, spe: 68,
         },
@@ -3200,6 +3309,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mrmime',
         num: 122,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 45, def: 65, spa: 100, spd: 120, spe: 90,
         },
@@ -3218,6 +3328,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mrmimegalar',
         num: 122,
         types: [ 'Ice', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Mr. Mime',
         forme: 'Galar',
         formeLetter: 'G',
@@ -3238,6 +3349,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scyther',
         num: 123,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 110, def: 80, spa: 55, spd: 80, spe: 105,
         },
@@ -3314,6 +3426,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pinsir',
         num: 127,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 125, def: 100, spa: 55, spd: 70, spe: 85,
         },
@@ -3331,6 +3444,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pinsirmega',
         num: 127,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Pinsir',
         forme: 'Mega',
         formeLetter: 'M',
@@ -3367,6 +3481,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'magikarp',
         num: 129,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 20, atk: 10, def: 55, spa: 15, spd: 20, spe: 80,
         },
@@ -3384,6 +3499,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gyarados',
         num: 130,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 125, def: 79, spa: 60, spd: 100, spe: 81,
         },
@@ -3403,6 +3519,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gyaradosmega',
         num: 130,
         types: [ 'Water', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Gyarados',
         forme: 'Mega',
         formeLetter: 'M',
@@ -3422,6 +3539,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lapras',
         num: 131,
         types: [ 'Water', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 130, atk: 85, def: 80, spa: 85, spd: 95, spe: 60,
         },
@@ -3756,6 +3874,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dratini',
         num: 147,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 41, atk: 64, def: 45, spa: 50, spd: 50, spe: 50,
         },
@@ -3773,6 +3892,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dragonair',
         num: 148,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 61, atk: 84, def: 65, spa: 70, spd: 70, spe: 70,
         },
@@ -3792,6 +3912,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dragonite',
         num: 149,
         types: [ 'Dragon', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 91, atk: 134, def: 95, spa: 100, spd: 100, spe: 80,
         },
@@ -4056,6 +4177,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sentret',
         num: 161,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 46, def: 34, spa: 35, spd: 45, spe: 20,
         },
@@ -4073,6 +4195,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'furret',
         num: 162,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 76, def: 64, spa: 45, spd: 55, spe: 90,
         },
@@ -4091,6 +4214,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hoothoot',
         num: 163,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 30, def: 30, spa: 36, spd: 56, spe: 50,
         },
@@ -4108,6 +4232,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'noctowl',
         num: 164,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 50, def: 50, spa: 86, spd: 96, spe: 70,
         },
@@ -4126,6 +4251,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ledyba',
         num: 165,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 20, def: 30, spa: 40, spd: 80, spe: 55,
         },
@@ -4143,6 +4269,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ledian',
         num: 166,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 35, def: 50, spa: 55, spd: 110, spe: 85,
         },
@@ -4161,6 +4288,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spinarak',
         num: 167,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 60, def: 40, spa: 40, spd: 40, spe: 30,
         },
@@ -4178,6 +4306,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ariados',
         num: 168,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 90, def: 70, spa: 60, spd: 70, spe: 40,
         },
@@ -4196,6 +4325,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crobat',
         num: 169,
         types: [ 'Poison', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 90, def: 80, spa: 70, spd: 80, spe: 130,
         },
@@ -4214,6 +4344,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'chinchou',
         num: 170,
         types: [ 'Water', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 38, def: 38, spa: 56, spd: 56, spe: 67,
         },
@@ -4231,6 +4362,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lanturn',
         num: 171,
         types: [ 'Water', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 125, atk: 58, def: 58, spa: 76, spd: 76, spe: 67,
         },
@@ -4249,6 +4381,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pichu',
         num: 172,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 20, atk: 40, def: 15, spa: 35, spd: 35, spe: 60,
         },
@@ -4267,6 +4400,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pichuspikyeared',
         num: 172,
         types: [ 'Electric' ],
+        genderRatio: { male: 0, female: 1 },
         baseStats: {
           hp: 20, atk: 40, def: 15, spa: 35, spd: 35, spe: 60,
         },
@@ -4360,6 +4494,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'natu',
         num: 177,
         types: [ 'Psychic', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 50, def: 45, spa: 70, spd: 45, spe: 70,
         },
@@ -4377,6 +4512,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'xatu',
         num: 178,
         types: [ 'Psychic', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 75, def: 70, spa: 95, spd: 70, spe: 95,
         },
@@ -4395,6 +4531,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mareep',
         num: 179,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 40, def: 40, spa: 65, spd: 45, spe: 35,
         },
@@ -4412,6 +4549,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'flaaffy',
         num: 180,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 55, def: 55, spa: 80, spd: 60, spe: 45,
         },
@@ -4431,6 +4569,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ampharos',
         num: 181,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 75, def: 85, spa: 115, spd: 90, spe: 55,
         },
@@ -4450,6 +4589,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ampharosmega',
         num: 181,
         types: [ 'Electric', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 95, def: 105, spa: 165, spd: 110, spe: 45,
         },
@@ -4469,6 +4609,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bellossom',
         num: 182,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 80, def: 95, spa: 90, spd: 100, spe: 50,
         },
@@ -4487,6 +4628,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'marill',
         num: 183,
         types: [ 'Water', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 20, def: 50, spa: 20, spd: 50, spe: 40,
         },
@@ -4506,6 +4648,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'azumarill',
         num: 184,
         types: [ 'Water', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 50, def: 80, spa: 60, spd: 80, spe: 50,
         },
@@ -4524,6 +4667,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sudowoodo',
         num: 185,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 100, def: 115, spa: 30, spd: 65, spe: 30,
         },
@@ -4542,6 +4686,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'politoed',
         num: 186,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 75, def: 75, spa: 90, spd: 100, spe: 70,
         },
@@ -4560,6 +4705,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hoppip',
         num: 187,
         types: [ 'Grass', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 35, def: 40, spa: 35, spd: 55, spe: 50,
         },
@@ -4577,6 +4723,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skiploom',
         num: 188,
         types: [ 'Grass', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 45, def: 50, spa: 45, spd: 65, spe: 80,
         },
@@ -4596,6 +4743,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'jumpluff',
         num: 189,
         types: [ 'Grass', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 55, def: 70, spa: 55, spd: 95, spe: 110,
         },
@@ -4614,6 +4762,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aipom',
         num: 190,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 70, def: 55, spa: 40, spd: 55, spe: 85,
         },
@@ -4631,6 +4780,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sunkern',
         num: 191,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30,
         },
@@ -4648,6 +4798,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sunflora',
         num: 192,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 75, def: 55, spa: 105, spd: 85, spe: 30,
         },
@@ -4666,6 +4817,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'yanma',
         num: 193,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 65, def: 45, spa: 75, spd: 45, spe: 95,
         },
@@ -4683,6 +4835,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wooper',
         num: 194,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 45, def: 45, spa: 25, spd: 25, spe: 15,
         },
@@ -4700,6 +4853,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'quagsire',
         num: 195,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 85, def: 85, spa: 65, spd: 65, spe: 35,
         },
@@ -4756,6 +4910,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'murkrow',
         num: 198,
         types: [ 'Dark', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 85, def: 42, spa: 85, spd: 42, spe: 91,
         },
@@ -4773,6 +4928,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slowking',
         num: 199,
         types: [ 'Water', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 75, def: 80, spa: 100, spd: 110, spe: 30,
         },
@@ -4791,6 +4947,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'misdreavus',
         num: 200,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 60, spa: 85, spd: 85, spe: 85,
         },
@@ -4842,6 +4999,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wobbuffet',
         num: 202,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 190, atk: 33, def: 58, spa: 33, spd: 58, spe: 33,
         },
@@ -4860,6 +5018,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'girafarig',
         num: 203,
         types: [ 'Normal', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 80, def: 65, spa: 90, spd: 65, spe: 85,
         },
@@ -4876,6 +5035,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pineco',
         num: 204,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 65, def: 90, spa: 35, spd: 35, spe: 15,
         },
@@ -4893,6 +5053,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'forretress',
         num: 205,
         types: [ 'Bug', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 90, def: 140, spa: 60, spd: 60, spe: 40,
         },
@@ -4911,6 +5072,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dunsparce',
         num: 206,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 70, def: 70, spa: 65, spd: 65, spe: 45,
         },
@@ -4927,6 +5089,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gligar',
         num: 207,
         types: [ 'Ground', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 75, def: 105, spa: 35, spd: 65, spe: 85,
         },
@@ -4944,6 +5107,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'steelix',
         num: 208,
         types: [ 'Steel', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 85, def: 200, spa: 55, spd: 65, spe: 30,
         },
@@ -4963,6 +5127,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'steelixmega',
         num: 208,
         types: [ 'Steel', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 125, def: 230, spa: 55, spd: 95, spe: 30,
         },
@@ -4982,7 +5147,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'snubbull',
         num: 209,
         types: [ 'Fairy' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 60, atk: 80, def: 50, spa: 40, spd: 40, spe: 30,
         },
@@ -5000,7 +5165,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'granbull',
         num: 210,
         types: [ 'Fairy' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 90, atk: 120, def: 75, spa: 60, spd: 60, spe: 45,
         },
@@ -5019,6 +5184,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'qwilfish',
         num: 211,
         types: [ 'Water', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 95, def: 85, spa: 55, spd: 55, spe: 85,
         },
@@ -5035,6 +5201,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scizor',
         num: 212,
         types: [ 'Bug', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 130, def: 100, spa: 55, spd: 80, spe: 65,
         },
@@ -5054,6 +5221,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scizormega',
         num: 212,
         types: [ 'Bug', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Scizor',
         forme: 'Mega',
         formeLetter: 'M',
@@ -5073,6 +5241,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shuckle',
         num: 213,
         types: [ 'Bug', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 20, atk: 10, def: 230, spa: 10, spd: 230, spe: 5,
         },
@@ -5089,6 +5258,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'heracross',
         num: 214,
         types: [ 'Bug', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 125, def: 75, spa: 40, spd: 95, spe: 85,
         },
@@ -5109,6 +5279,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Mega',
         formeLetter: 'M',
         types: [ 'Bug', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 185, def: 115, spa: 40, spd: 105, spe: 75,
         },
@@ -5125,6 +5296,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sneasel',
         num: 215,
         types: [ 'Dark', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 95, def: 55, spa: 35, spd: 75, spe: 115,
         },
@@ -5142,6 +5314,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'teddiursa',
         num: 216,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 80, def: 50, spa: 50, spd: 50, spe: 40,
         },
@@ -5159,6 +5332,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ursaring',
         num: 217,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 130, def: 75, spa: 75, spd: 75, spe: 55,
         },
@@ -5177,6 +5351,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slugma',
         num: 218,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 40, def: 40, spa: 70, spd: 40, spe: 20,
         },
@@ -5194,6 +5369,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'magcargo',
         num: 219,
         types: [ 'Fire', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 50, def: 120, spa: 90, spd: 80, spe: 30,
         },
@@ -5212,6 +5388,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swinub',
         num: 220,
         types: [ 'Ice', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 50, def: 40, spa: 30, spd: 30, spe: 50,
         },
@@ -5229,6 +5406,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'piloswine',
         num: 221,
         types: [ 'Ice', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 80, spa: 60, spd: 60, spe: 50,
         },
@@ -5248,7 +5426,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'corsola',
         num: 222,
         types: [ 'Water', 'Rock' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 55, def: 95, spa: 65, spd: 95, spe: 35,
         },
@@ -5265,6 +5443,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'corsolagalar',
         num: 222,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Corsola',
         forme: 'Galar',
         formeLetter: 'G',
@@ -5285,6 +5464,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'remoraid',
         num: 223,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 65, def: 35, spa: 65, spd: 35, spe: 65,
         },
@@ -5302,6 +5482,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'octillery',
         num: 224,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 105, def: 75, spa: 105, spd: 75, spe: 45,
         },
@@ -5320,6 +5501,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'delibird',
         num: 225,
         types: [ 'Ice', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 55, def: 45, spa: 65, spd: 45, spe: 75,
         },
@@ -5336,6 +5518,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mantine',
         num: 226,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 40, def: 70, spa: 80, spd: 140, spe: 70,
         },
@@ -5354,6 +5537,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skarmory',
         num: 227,
         types: [ 'Steel', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 80, def: 140, spa: 40, spd: 70, spe: 70,
         },
@@ -5370,6 +5554,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'houndour',
         num: 228,
         types: [ 'Dark', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 60, def: 30, spa: 80, spd: 50, spe: 65,
         },
@@ -5387,6 +5572,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'houndoom',
         num: 229,
         types: [ 'Dark', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 90, def: 50, spa: 110, spd: 80, spe: 95,
         },
@@ -5406,6 +5592,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'houndoommega',
         num: 229,
         types: [ 'Dark', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Houndoom',
         forme: 'Mega',
         formeLetter: 'M',
@@ -5425,6 +5612,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kingdra',
         num: 230,
         types: [ 'Water', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 95, def: 95, spa: 95, spd: 95, spe: 85,
         },
@@ -5443,6 +5631,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'phanpy',
         num: 231,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 60, def: 60, spa: 40, spd: 40, spe: 40,
         },
@@ -5460,6 +5649,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'donphan',
         num: 232,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 120, def: 120, spa: 60, spd: 60, spe: 50,
         },
@@ -5498,6 +5688,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'stantler',
         num: 234,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 73, atk: 95, def: 62, spa: 85, spd: 65, spe: 85,
         },
@@ -5514,6 +5705,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'smeargle',
         num: 235,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 20, def: 35, spa: 20, spd: 45, spe: 75,
         },
@@ -5708,6 +5900,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'larvitar',
         num: 246,
         types: [ 'Rock', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 64, def: 50, spa: 45, spd: 50, spe: 41,
         },
@@ -5725,6 +5918,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pupitar',
         num: 247,
         types: [ 'Rock', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 84, def: 70, spa: 65, spd: 70, spe: 51,
         },
@@ -5744,6 +5938,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tyranitar',
         num: 248,
         types: [ 'Rock', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 134, def: 110, spa: 95, spd: 100, spe: 61,
         },
@@ -5763,6 +5958,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tyranitarmega',
         num: 248,
         types: [ 'Rock', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 164, def: 150, spa: 95, spd: 120, spe: 71,
         },
@@ -6067,6 +6263,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'poochyena',
         num: 261,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 55, def: 35, spa: 30, spd: 30, spe: 35,
         },
@@ -6084,6 +6281,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mightyena',
         num: 262,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 90, def: 70, spa: 60, spd: 60, spe: 70,
         },
@@ -6102,6 +6300,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zigzagoon',
         num: 263,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 38, atk: 30, def: 41, spa: 30, spd: 41, spe: 60,
         },
@@ -6119,6 +6318,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zigzagoongalar',
         num: 263,
         types: [ 'Dark', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Zigzagoon',
         forme: 'Galar',
         formeLetter: 'G',
@@ -6139,6 +6339,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'linoone',
         num: 264,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 78, atk: 70, def: 61, spa: 50, spd: 61, spe: 100,
         },
@@ -6157,6 +6358,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'linoonegalar',
         num: 264,
         types: [ 'Dark', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Linoone',
         forme: 'Galar',
         formeLetter: 'G',
@@ -6179,6 +6381,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wurmple',
         num: 265,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 45, def: 35, spa: 20, spd: 30, spe: 20,
         },
@@ -6196,6 +6399,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'silcoon',
         num: 266,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 35, def: 55, spa: 25, spd: 25, spe: 15,
         },
@@ -6215,6 +6419,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'beautifly',
         num: 267,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 70, def: 50, spa: 100, spd: 50, spe: 65,
         },
@@ -6233,6 +6438,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cascoon',
         num: 268,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 35, def: 55, spa: 25, spd: 25, spe: 15,
         },
@@ -6252,6 +6458,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dustox',
         num: 269,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 50, def: 70, spa: 50, spd: 90, spe: 65,
         },
@@ -6270,6 +6477,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lotad',
         num: 270,
         types: [ 'Water', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 30, def: 30, spa: 40, spd: 50, spe: 30,
         },
@@ -6287,6 +6495,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lombre',
         num: 271,
         types: [ 'Water', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 50, def: 50, spa: 60, spd: 70, spe: 50,
         },
@@ -6306,6 +6515,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ludicolo',
         num: 272,
         types: [ 'Water', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 70, def: 70, spa: 90, spd: 100, spe: 70,
         },
@@ -6324,6 +6534,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'seedot',
         num: 273,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 40, def: 50, spa: 30, spd: 30, spe: 30,
         },
@@ -6341,6 +6552,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'nuzleaf',
         num: 274,
         types: [ 'Grass', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 70, def: 40, spa: 60, spd: 40, spe: 60,
         },
@@ -6360,6 +6572,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shiftry',
         num: 275,
         types: [ 'Grass', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 100, def: 60, spa: 90, spd: 60, spe: 80,
         },
@@ -6378,6 +6591,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'taillow',
         num: 276,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 55, def: 30, spa: 30, spd: 30, spe: 85,
         },
@@ -6395,6 +6609,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swellow',
         num: 277,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 85, def: 60, spa: 75, spd: 50, spe: 125,
         },
@@ -6413,6 +6628,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wingull',
         num: 278,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 30, def: 30, spa: 55, spd: 30, spe: 85,
         },
@@ -6430,6 +6646,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pelipper',
         num: 279,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 50, def: 100, spa: 95, spd: 70, spe: 65,
         },
@@ -6448,6 +6665,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ralts',
         num: 280,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 28, atk: 25, def: 25, spa: 45, spd: 35, spe: 40,
         },
@@ -6465,6 +6683,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kirlia',
         num: 281,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 38, atk: 35, def: 35, spa: 65, spd: 55, spe: 50,
         },
@@ -6484,6 +6703,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gardevoir',
         num: 282,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 65, def: 65, spa: 125, spd: 115, spe: 80,
         },
@@ -6503,6 +6723,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gardevoirmega',
         num: 282,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 85, def: 65, spa: 165, spd: 135, spe: 100,
         },
@@ -6522,6 +6743,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'surskit',
         num: 283,
         types: [ 'Bug', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 30, def: 32, spa: 50, spd: 52, spe: 65,
         },
@@ -6539,6 +6761,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'masquerain',
         num: 284,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 60, def: 62, spa: 100, spd: 82, spe: 80,
         },
@@ -6557,6 +6780,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shroomish',
         num: 285,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 40, def: 60, spa: 40, spd: 60, spe: 35,
         },
@@ -6574,6 +6798,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'breloom',
         num: 286,
         types: [ 'Grass', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 130, def: 80, spa: 60, spd: 60, spe: 70,
         },
@@ -6592,6 +6817,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slakoth',
         num: 287,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 60, spa: 35, spd: 35, spe: 30,
         },
@@ -6609,6 +6835,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vigoroth',
         num: 288,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 80, def: 80, spa: 55, spd: 55, spe: 90,
         },
@@ -6628,6 +6855,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slaking',
         num: 289,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 150, atk: 160, def: 100, spa: 95, spd: 65, spe: 100,
         },
@@ -6646,6 +6874,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'nincada',
         num: 290,
         types: [ 'Bug', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 31, atk: 45, def: 90, spa: 30, spd: 30, spe: 40,
         },
@@ -6663,6 +6892,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ninjask',
         num: 291,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 61, atk: 90, def: 45, spa: 50, spd: 50, spe: 160,
         },
@@ -6700,6 +6930,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'whismur',
         num: 293,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 64, atk: 51, def: 23, spa: 51, spd: 23, spe: 28,
         },
@@ -6717,6 +6948,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'loudred',
         num: 294,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 84, atk: 71, def: 43, spa: 71, spd: 43, spe: 48,
         },
@@ -6736,6 +6968,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'exploud',
         num: 295,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 104, atk: 91, def: 63, spa: 91, spd: 73, spe: 68,
         },
@@ -6754,7 +6987,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'makuhita',
         num: 296,
         types: [ 'Fighting' ],
-        genderRatio: { male: 0.75, female: 0.75 },
+        genderRatio: { male: 0.75, female: 0.25 },
         baseStats: {
           hp: 72, atk: 60, def: 30, spa: 20, spd: 30, spe: 25,
         },
@@ -6772,7 +7005,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hariyama',
         num: 297,
         types: [ 'Fighting' ],
-        genderRatio: { male: 0.75, female: 0.75 },
+        genderRatio: { male: 0.75, female: 0.25 },
         baseStats: {
           hp: 144, atk: 120, def: 60, spa: 40, spd: 60, spe: 50,
         },
@@ -6791,7 +7024,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'azurill',
         num: 298,
         types: [ 'Normal', 'Fairy' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 50, atk: 20, def: 40, spa: 20, spd: 40, spe: 20,
         },
@@ -6809,6 +7042,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'nosepass',
         num: 299,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 45, def: 135, spa: 45, spd: 90, spe: 30,
         },
@@ -6826,7 +7060,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skitty',
         num: 300,
         types: [ 'Normal' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 50, atk: 45, def: 45, spa: 35, spd: 35, spe: 50,
         },
@@ -6844,7 +7078,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'delcatty',
         num: 301,
         types: [ 'Normal' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 70, atk: 65, def: 65, spa: 55, spd: 55, spe: 90,
         },
@@ -6863,6 +7097,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sableye',
         num: 302,
         types: [ 'Dark', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 75, def: 75, spa: 65, spd: 65, spe: 50,
         },
@@ -6880,6 +7115,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sableyemega',
         num: 302,
         types: [ 'Dark', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 85, def: 125, spa: 85, spd: 115, spe: 20,
         },
@@ -6899,6 +7135,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mawile',
         num: 303,
         types: [ 'Steel', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 85, def: 85, spa: 55, spd: 55, spe: 50,
         },
@@ -6916,6 +7153,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mawilemega',
         num: 303,
         types: [ 'Steel', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 105, def: 125, spa: 55, spd: 95, spe: 50,
         },
@@ -6935,6 +7173,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aron',
         num: 304,
         types: [ 'Steel', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 70, def: 100, spa: 40, spd: 40, spe: 30,
         },
@@ -6952,6 +7191,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lairon',
         num: 305,
         types: [ 'Steel', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 90, def: 140, spa: 50, spd: 50, spe: 40,
         },
@@ -6971,6 +7211,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aggron',
         num: 306,
         types: [ 'Steel', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 110, def: 180, spa: 60, spd: 60, spe: 50,
         },
@@ -6990,6 +7231,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aggronmega',
         num: 306,
         types: [ 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 140, def: 230, spa: 60, spd: 80, spe: 50,
         },
@@ -7009,6 +7251,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'meditite',
         num: 307,
         types: [ 'Fighting', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 40, def: 55, spa: 40, spd: 55, spe: 60,
         },
@@ -7026,6 +7269,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'medicham',
         num: 308,
         types: [ 'Fighting', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 75, spa: 60, spd: 75, spe: 80,
         },
@@ -7045,6 +7289,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'medichammega',
         num: 308,
         types: [ 'Fighting', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 100, def: 85, spa: 80, spd: 85, spe: 100,
         },
@@ -7064,6 +7309,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'electrike',
         num: 309,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 45, def: 40, spa: 65, spd: 40, spe: 65,
         },
@@ -7081,6 +7327,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'manectric',
         num: 310,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 75, def: 60, spa: 105, spd: 60, spe: 105,
         },
@@ -7100,6 +7347,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'manectricmega',
         num: 310,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 75, def: 80, spa: 135, spd: 80, spe: 135,
         },
@@ -7119,6 +7367,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'plusle',
         num: 311,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 50, def: 40, spa: 85, spd: 75, spe: 95,
         },
@@ -7135,6 +7384,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'minun',
         num: 312,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 40, def: 50, spa: 75, spd: 85, spe: 95,
         },
@@ -7185,6 +7435,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'roselia',
         num: 315,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 60, def: 45, spa: 100, spd: 80, spe: 65,
         },
@@ -7204,6 +7455,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gulpin',
         num: 316,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 43, def: 53, spa: 43, spd: 53, spe: 40,
         },
@@ -7221,6 +7473,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swalot',
         num: 317,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 73, def: 83, spa: 73, spd: 83, spe: 55,
         },
@@ -7239,6 +7492,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'carvanha',
         num: 318,
         types: [ 'Water', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 90, def: 20, spa: 65, spd: 20, spe: 65,
         },
@@ -7256,6 +7510,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sharpedo',
         num: 319,
         types: [ 'Water', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 120, def: 40, spa: 95, spd: 40, spe: 95,
         },
@@ -7275,6 +7530,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sharpedomega',
         num: 319,
         types: [ 'Water', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 140, def: 70, spa: 110, spd: 65, spe: 105,
         },
@@ -7294,6 +7550,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wailmer',
         num: 320,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 130, atk: 70, def: 35, spa: 70, spd: 35, spe: 60,
         },
@@ -7311,6 +7568,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wailord',
         num: 321,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 170, atk: 90, def: 45, spa: 90, spd: 45, spe: 60,
         },
@@ -7329,6 +7587,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'numel',
         num: 322,
         types: [ 'Fire', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 40, spa: 65, spd: 45, spe: 35,
         },
@@ -7346,6 +7605,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'camerupt',
         num: 323,
         types: [ 'Fire', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 100, def: 70, spa: 105, spd: 75, spe: 40,
         },
@@ -7365,6 +7625,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cameruptmega',
         num: 323,
         types: [ 'Fire', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 120, def: 100, spa: 145, spd: 105, spe: 20,
         },
@@ -7384,6 +7645,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'torkoal',
         num: 324,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 85, def: 140, spa: 85, spd: 70, spe: 20,
         },
@@ -7400,6 +7662,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spoink',
         num: 325,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 25, def: 35, spa: 70, spd: 80, spe: 60,
         },
@@ -7417,6 +7680,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'grumpig',
         num: 326,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 45, def: 65, spa: 90, spd: 110, spe: 80,
         },
@@ -7435,6 +7699,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spinda',
         num: 327,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 60, spa: 60, spd: 60, spe: 60,
         },
@@ -7451,6 +7716,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'trapinch',
         num: 328,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 100, def: 45, spa: 45, spd: 45, spe: 10,
         },
@@ -7468,6 +7734,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vibrava',
         num: 329,
         types: [ 'Ground', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 70, def: 50, spa: 50, spd: 50, spe: 70,
         },
@@ -7487,6 +7754,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'flygon',
         num: 330,
         types: [ 'Ground', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 100, def: 80, spa: 80, spd: 80, spe: 100,
         },
@@ -7505,6 +7773,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cacnea',
         num: 331,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 85, def: 40, spa: 85, spd: 40, spe: 35,
         },
@@ -7522,6 +7791,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cacturne',
         num: 332,
         types: [ 'Grass', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 115, def: 60, spa: 115, spd: 60, spe: 55,
         },
@@ -7540,6 +7810,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swablu',
         num: 333,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 40, def: 60, spa: 40, spd: 75, spe: 50,
         },
@@ -7557,6 +7828,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'altaria',
         num: 334,
         types: [ 'Dragon', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 70, def: 90, spa: 70, spd: 105, spe: 80,
         },
@@ -7576,6 +7848,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'altariamega',
         num: 334,
         types: [ 'Dragon', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 110, def: 110, spa: 110, spd: 105, spe: 80,
         },
@@ -7595,6 +7868,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zangoose',
         num: 335,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 73, atk: 115, def: 60, spa: 60, spd: 60, spe: 90,
         },
@@ -7611,6 +7885,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'seviper',
         num: 336,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 73, atk: 100, def: 60, spa: 100, spd: 60, spe: 65,
         },
@@ -7661,6 +7936,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'barboach',
         num: 339,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 48, def: 43, spa: 46, spd: 41, spe: 60,
         },
@@ -7678,6 +7954,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'whiscash',
         num: 340,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 78, def: 73, spa: 76, spd: 71, spe: 60,
         },
@@ -7696,6 +7973,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'corphish',
         num: 341,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 43, atk: 80, def: 65, spa: 50, spd: 35, spe: 35,
         },
@@ -7713,6 +7991,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crawdaunt',
         num: 342,
         types: [ 'Water', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 63, atk: 120, def: 85, spa: 90, spd: 55, spe: 55,
         },
@@ -7842,6 +8121,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'feebas',
         num: 349,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 20, atk: 15, def: 20, spa: 10, spd: 55, spe: 80,
         },
@@ -7859,6 +8139,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'milotic',
         num: 350,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 60, def: 79, spa: 100, spd: 125, spe: 81,
         },
@@ -7877,6 +8158,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'castform',
         num: 351,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 70, def: 70, spa: 70, spd: 70, spe: 70,
         },
@@ -7894,6 +8176,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'castformsunny',
         num: 351,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 70, def: 70, spa: 70, spd: 70, spe: 70,
         },
@@ -7913,6 +8196,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'castformrainy',
         num: 351,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 70, def: 70, spa: 70, spd: 70, spe: 70,
         },
@@ -7932,6 +8216,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'castformsnowy',
         num: 351,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 70, def: 70, spa: 70, spd: 70, spe: 70,
         },
@@ -7951,6 +8236,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kecleon',
         num: 352,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 90, def: 70, spa: 60, spd: 120, spe: 40,
         },
@@ -7967,6 +8253,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shuppet',
         num: 353,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 44, atk: 75, def: 35, spa: 63, spd: 33, spe: 45,
         },
@@ -7984,6 +8271,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'banette',
         num: 354,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 64, atk: 115, def: 65, spa: 83, spd: 63, spe: 65,
         },
@@ -8003,6 +8291,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'banettemega',
         num: 354,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 64, atk: 165, def: 75, spa: 93, spd: 83, spe: 75,
         },
@@ -8022,6 +8311,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'duskull',
         num: 355,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 20, atk: 40, def: 90, spa: 30, spd: 90, spe: 25,
         },
@@ -8039,6 +8329,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dusclops',
         num: 356,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 70, def: 130, spa: 60, spd: 130, spe: 25,
         },
@@ -8058,6 +8349,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tropius',
         num: 357,
         types: [ 'Grass', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 99, atk: 68, def: 83, spa: 72, spd: 87, spe: 51,
         },
@@ -8074,6 +8366,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'chimecho',
         num: 358,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 50, def: 80, spa: 95, spd: 90, spe: 65,
         },
@@ -8092,6 +8385,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'absol',
         num: 359,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 130, def: 60, spa: 75, spd: 60, spe: 75,
         },
@@ -8109,6 +8403,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'absolmega',
         num: 359,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 150, def: 60, spa: 115, spd: 60, spe: 115,
         },
@@ -8128,6 +8423,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wynaut',
         num: 360,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 23, def: 48, spa: 23, spd: 48, spe: 23,
         },
@@ -8145,6 +8441,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'snorunt',
         num: 361,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 50, def: 50, spa: 50, spd: 50, spe: 50,
         },
@@ -8162,6 +8459,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'glalie',
         num: 362,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80,
         },
@@ -8181,6 +8479,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'glaliemega',
         num: 362,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 120, def: 80, spa: 120, spd: 80, spe: 100,
         },
@@ -8200,6 +8499,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spheal',
         num: 363,
         types: [ 'Ice', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 40, def: 50, spa: 55, spd: 50, spe: 25,
         },
@@ -8217,6 +8517,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sealeo',
         num: 364,
         types: [ 'Ice', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 60, def: 70, spa: 75, spd: 70, spe: 45,
         },
@@ -8236,6 +8537,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'walrein',
         num: 365,
         types: [ 'Ice', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 80, def: 90, spa: 95, spd: 90, spe: 65,
         },
@@ -8254,6 +8556,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'clamperl',
         num: 366,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 64, def: 85, spa: 74, spd: 55, spe: 32,
         },
@@ -8271,6 +8574,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'huntail',
         num: 367,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 104, def: 105, spa: 94, spd: 75, spe: 52,
         },
@@ -8289,6 +8593,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gorebyss',
         num: 368,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 84, def: 105, spa: 114, spd: 75, spe: 52,
         },
@@ -8324,7 +8629,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'luvdisc',
         num: 370,
         types: [ 'Water' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 43, atk: 30, def: 55, spa: 40, spd: 65, spe: 97,
         },
@@ -8341,6 +8646,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bagon',
         num: 371,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 75, def: 60, spa: 40, spd: 30, spe: 50,
         },
@@ -8358,6 +8664,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shelgon',
         num: 372,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 95, def: 100, spa: 60, spd: 50, spe: 50,
         },
@@ -8377,6 +8684,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'salamence',
         num: 373,
         types: [ 'Dragon', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 135, def: 80, spa: 110, spd: 80, spe: 100,
         },
@@ -8399,6 +8707,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         forme: 'Mega',
         formeLetter: 'M',
         types: [ 'Dragon', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 145, def: 130, spa: 120, spd: 90, spe: 120,
         },
@@ -9001,6 +9310,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'starly',
         num: 396,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 55, def: 30, spa: 30, spd: 30, spe: 60,
         },
@@ -9018,6 +9328,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'staravia',
         num: 397,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 75, def: 50, spa: 40, spd: 40, spe: 80,
         },
@@ -9037,6 +9348,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'staraptor',
         num: 398,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 120, def: 70, spa: 50, spd: 60, spe: 100,
         },
@@ -9055,6 +9367,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bidoof',
         num: 399,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 59, atk: 45, def: 40, spa: 35, spd: 40, spe: 31,
         },
@@ -9072,6 +9385,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bibarel',
         num: 400,
         types: [ 'Normal', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 79, atk: 85, def: 60, spa: 55, spd: 60, spe: 71,
         },
@@ -9090,6 +9404,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kricketot',
         num: 401,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 37, atk: 25, def: 41, spa: 25, spd: 41, spe: 25,
         },
@@ -9107,6 +9422,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kricketune',
         num: 402,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 77, atk: 85, def: 51, spa: 55, spd: 51, spe: 65,
         },
@@ -9125,6 +9441,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shinx',
         num: 403,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 65, def: 34, spa: 40, spd: 34, spe: 45,
         },
@@ -9142,6 +9459,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'luxio',
         num: 404,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 85, def: 49, spa: 60, spd: 49, spe: 60,
         },
@@ -9161,6 +9479,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'luxray',
         num: 405,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 120, def: 79, spa: 95, spd: 79, spe: 70,
         },
@@ -9179,6 +9498,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'budew',
         num: 406,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 30, def: 35, spa: 50, spd: 70, spe: 55,
         },
@@ -9196,6 +9516,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'roserade',
         num: 407,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 70, def: 65, spa: 125, spd: 105, spe: 90,
         },
@@ -9288,6 +9609,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'burmy',
         num: 412,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 29, def: 45, spa: 29, spd: 45, spe: 36,
         },
@@ -9428,6 +9750,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pachirisu',
         num: 417,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 45, def: 70, spa: 45, spd: 90, spe: 95,
         },
@@ -9444,6 +9767,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'buizel',
         num: 418,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 65, def: 35, spa: 60, spd: 30, spe: 85,
         },
@@ -9461,6 +9785,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'floatzel',
         num: 419,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 105, def: 55, spa: 85, spd: 50, spe: 115,
         },
@@ -9479,6 +9804,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cherubi',
         num: 420,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 35, def: 45, spa: 62, spd: 53, spe: 35,
         },
@@ -9496,6 +9822,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cherrim',
         num: 421,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 60, def: 70, spa: 87, spd: 78, spe: 85,
         },
@@ -9516,6 +9843,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cherrimsunshine',
         num: 421,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 60, def: 70, spa: 87, spd: 78, spe: 85,
         },
@@ -9537,6 +9865,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shellos',
         num: 422,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 76, atk: 48, def: 48, spa: 57, spd: 62, spe: 34,
         },
@@ -9556,6 +9885,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gastrodon',
         num: 423,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 111, atk: 83, def: 68, spa: 92, spd: 82, spe: 39,
         },
@@ -9576,6 +9906,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ambipom',
         num: 424,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 100, def: 66, spa: 60, spd: 66, spe: 115,
         },
@@ -9594,6 +9925,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'drifloon',
         num: 425,
         types: [ 'Ghost', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 50, def: 34, spa: 60, spd: 44, spe: 70,
         },
@@ -9611,6 +9943,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'drifblim',
         num: 426,
         types: [ 'Ghost', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 150, atk: 80, def: 44, spa: 90, spd: 54, spe: 80,
         },
@@ -9629,6 +9962,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'buneary',
         num: 427,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 66, def: 44, spa: 44, spd: 56, spe: 85,
         },
@@ -9646,6 +9980,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lopunny',
         num: 428,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 76, def: 84, spa: 54, spd: 96, spe: 105,
         },
@@ -9665,6 +10000,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lopunnymega',
         num: 428,
         types: [ 'Normal', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 136, def: 94, spa: 54, spd: 96, spe: 135,
         },
@@ -9684,6 +10020,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mismagius',
         num: 429,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 60, spa: 105, spd: 105, spe: 105,
         },
@@ -9702,6 +10039,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'honchkrow',
         num: 430,
         types: [ 'Dark', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 125, def: 52, spa: 105, spd: 52, spe: 71,
         },
@@ -9720,7 +10058,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'glameow',
         num: 431,
         types: [ 'Normal' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 49, atk: 55, def: 42, spa: 42, spd: 37, spe: 85,
         },
@@ -9738,7 +10076,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'purugly',
         num: 432,
         types: [ 'Normal' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 71, atk: 82, def: 64, spa: 64, spd: 59, spe: 112,
         },
@@ -9757,6 +10095,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'chingling',
         num: 433,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 30, def: 50, spa: 65, spd: 50, spe: 45,
         },
@@ -9774,6 +10113,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'stunky',
         num: 434,
         types: [ 'Poison', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 63, atk: 63, def: 47, spa: 41, spd: 41, spe: 74,
         },
@@ -9791,6 +10131,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skuntank',
         num: 435,
         types: [ 'Poison', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 103, atk: 93, def: 67, spa: 71, spd: 61, spe: 84,
         },
@@ -9846,6 +10187,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bonsly',
         num: 438,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 80, def: 95, spa: 10, spd: 45, spe: 10,
         },
@@ -9863,6 +10205,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mimejr',
         num: 439,
         types: [ 'Psychic', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 20, atk: 25, def: 45, spa: 70, spd: 90, spe: 60,
         },
@@ -9898,6 +10241,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'chatot',
         num: 441,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 76, atk: 65, def: 45, spa: 92, spd: 42, spe: 91,
         },
@@ -9914,6 +10258,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spiritomb',
         num: 442,
         types: [ 'Ghost', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 92, def: 108, spa: 92, spd: 108, spe: 35,
         },
@@ -9930,6 +10275,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gible',
         num: 443,
         types: [ 'Dragon', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 58, atk: 70, def: 45, spa: 40, spd: 45, spe: 42,
         },
@@ -9947,6 +10293,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gabite',
         num: 444,
         types: [ 'Dragon', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 90, def: 65, spa: 50, spd: 55, spe: 82,
         },
@@ -9966,6 +10313,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'garchomp',
         num: 445,
         types: [ 'Dragon', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 108, atk: 130, def: 95, spa: 80, spd: 85, spe: 102,
         },
@@ -9985,6 +10333,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'garchompmega',
         num: 445,
         types: [ 'Dragon', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 108, atk: 170, def: 115, spa: 120, spd: 95, spe: 92,
         },
@@ -10080,6 +10429,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hippopotas',
         num: 449,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 72, def: 78, spa: 38, spd: 42, spe: 32,
         },
@@ -10097,6 +10447,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hippowdon',
         num: 450,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 108, atk: 112, def: 118, spa: 68, spd: 72, spe: 47,
         },
@@ -10115,6 +10466,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skorupi',
         num: 451,
         types: [ 'Poison', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 50, def: 90, spa: 30, spd: 55, spe: 65,
         },
@@ -10132,6 +10484,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'drapion',
         num: 452,
         types: [ 'Poison', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 90, def: 110, spa: 60, spd: 75, spe: 95,
         },
@@ -10150,6 +10503,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'croagunk',
         num: 453,
         types: [ 'Poison', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 48, atk: 61, def: 40, spa: 61, spd: 40, spe: 50,
         },
@@ -10167,6 +10521,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'toxicroak',
         num: 454,
         types: [ 'Poison', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 83, atk: 106, def: 65, spa: 86, spd: 65, spe: 85,
         },
@@ -10185,6 +10540,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'carnivine',
         num: 455,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 74, atk: 100, def: 72, spa: 90, spd: 72, spe: 46,
         },
@@ -10201,6 +10557,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'finneon',
         num: 456,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 49, atk: 49, def: 56, spa: 49, spd: 61, spe: 66,
         },
@@ -10218,6 +10575,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lumineon',
         num: 457,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 69, atk: 69, def: 76, spa: 69, spd: 86, spe: 91,
         },
@@ -10236,6 +10594,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mantyke',
         num: 458,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 20, def: 50, spa: 60, spd: 120, spe: 50,
         },
@@ -10253,6 +10612,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'snover',
         num: 459,
         types: [ 'Grass', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 62, def: 50, spa: 62, spd: 60, spe: 40,
         },
@@ -10270,6 +10630,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'abomasnow',
         num: 460,
         types: [ 'Grass', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 92, def: 75, spa: 92, spd: 85, spe: 60,
         },
@@ -10289,6 +10650,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'abomasnowmega',
         num: 460,
         types: [ 'Grass', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 132, def: 105, spa: 132, spd: 105, spe: 30,
         },
@@ -10308,6 +10670,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'weavile',
         num: 461,
         types: [ 'Dark', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 120, def: 65, spa: 45, spd: 85, spe: 125,
         },
@@ -10345,6 +10708,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lickilicky',
         num: 463,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 85, def: 95, spa: 80, spd: 95, spe: 50,
         },
@@ -10363,6 +10727,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rhyperior',
         num: 464,
         types: [ 'Ground', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 115, atk: 140, def: 130, spa: 55, spd: 55, spe: 40,
         },
@@ -10381,6 +10746,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tangrowth',
         num: 465,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 125, spa: 110, spd: 50, spe: 50,
         },
@@ -10456,6 +10822,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'yanmega',
         num: 469,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 86, atk: 76, def: 86, spa: 116, spd: 56, spe: 95,
         },
@@ -10512,6 +10879,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gliscor',
         num: 472,
         types: [ 'Ground', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 95, def: 125, spa: 45, spd: 75, spe: 95,
         },
@@ -10530,6 +10898,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mamoswine',
         num: 473,
         types: [ 'Ice', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 130, def: 80, spa: 70, spd: 60, spe: 80,
         },
@@ -10607,6 +10976,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'probopass',
         num: 476,
         types: [ 'Rock', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 55, def: 145, spa: 75, spd: 150, spe: 40,
         },
@@ -10625,6 +10995,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dusknoir',
         num: 477,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 100, def: 135, spa: 65, spd: 135, spe: 45,
         },
@@ -10865,6 +11236,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'heatran',
         num: 485,
         types: [ 'Fire', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 91, atk: 90, def: 106, spa: 130, spd: 106, spe: 77,
         },
@@ -11601,6 +11973,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'patrat',
         num: 504,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 55, def: 39, spa: 35, spd: 39, spe: 42,
         },
@@ -11618,6 +11991,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'watchog',
         num: 505,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 85, def: 69, spa: 60, spd: 69, spe: 77,
         },
@@ -11636,6 +12010,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lillipup',
         num: 506,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 60, def: 45, spa: 25, spd: 45, spe: 55,
         },
@@ -11653,6 +12028,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'herdier',
         num: 507,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 80, def: 65, spa: 35, spd: 65, spe: 60,
         },
@@ -11672,6 +12048,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'stoutland',
         num: 508,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 110, def: 90, spa: 45, spd: 90, spe: 80,
         },
@@ -11690,6 +12067,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'purrloin',
         num: 509,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 41, atk: 50, def: 37, spa: 50, spd: 37, spe: 66,
         },
@@ -11707,6 +12085,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'liepard',
         num: 510,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 64, atk: 88, def: 50, spa: 88, spd: 50, spe: 106,
         },
@@ -11836,6 +12215,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'munna',
         num: 517,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 76, atk: 25, def: 45, spa: 67, spd: 55, spe: 24,
         },
@@ -11853,6 +12233,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'musharna',
         num: 518,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 116, atk: 55, def: 85, spa: 107, spd: 95, spe: 29,
         },
@@ -11871,6 +12252,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pidove',
         num: 519,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 55, def: 50, spa: 36, spd: 30, spe: 43,
         },
@@ -11888,6 +12270,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tranquill',
         num: 520,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 62, atk: 77, def: 62, spa: 50, spd: 42, spe: 65,
         },
@@ -11907,6 +12290,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'unfezant',
         num: 521,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 115, def: 80, spa: 65, spd: 55, spe: 93,
         },
@@ -11925,6 +12309,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'blitzle',
         num: 522,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 60, def: 32, spa: 50, spd: 32, spe: 76,
         },
@@ -11942,6 +12327,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zebstrika',
         num: 523,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 100, def: 63, spa: 80, spd: 63, spe: 116,
         },
@@ -11960,6 +12346,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'roggenrola',
         num: 524,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 75, def: 85, spa: 25, spd: 25, spe: 15,
         },
@@ -11977,6 +12364,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'boldore',
         num: 525,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 105, def: 105, spa: 50, spd: 40, spe: 20,
         },
@@ -11996,6 +12384,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gigalith',
         num: 526,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 135, def: 130, spa: 60, spd: 80, spe: 25,
         },
@@ -12014,6 +12403,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'woobat',
         num: 527,
         types: [ 'Psychic', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 45, def: 43, spa: 55, spd: 43, spe: 72,
         },
@@ -12031,6 +12421,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swoobat',
         num: 528,
         types: [ 'Psychic', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 67, atk: 57, def: 55, spa: 77, spd: 55, spe: 114,
         },
@@ -12049,6 +12440,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'drilbur',
         num: 529,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 85, def: 40, spa: 30, spd: 45, spe: 68,
         },
@@ -12066,6 +12458,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'excadrill',
         num: 530,
         types: [ 'Ground', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 135, def: 60, spa: 50, spd: 65, spe: 88,
         },
@@ -12084,6 +12477,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'audino',
         num: 531,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 103, atk: 60, def: 86, spa: 60, spd: 86, spe: 50,
         },
@@ -12101,6 +12495,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'audinomega',
         num: 531,
         types: [ 'Normal', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 103, atk: 60, def: 126, spa: 80, spd: 126, spe: 50,
         },
@@ -12120,7 +12515,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'timburr',
         num: 532,
         types: [ 'Fighting' ],
-        genderRatio: { male: 0.75, female: 0.75 },
+        genderRatio: { male: 0.75, female: 0.25 },
         baseStats: {
           hp: 75, atk: 80, def: 55, spa: 25, spd: 35, spe: 35,
         },
@@ -12138,7 +12533,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gurdurr',
         num: 533,
         types: [ 'Fighting' ],
-        genderRatio: { male: 0.75, female: 0.75 },
+        genderRatio: { male: 0.75, female: 0.25 },
         baseStats: {
           hp: 85, atk: 105, def: 85, spa: 40, spd: 50, spe: 40,
         },
@@ -12158,7 +12553,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'conkeldurr',
         num: 534,
         types: [ 'Fighting' ],
-        genderRatio: { male: 0.75, female: 0.75 },
+        genderRatio: { male: 0.75, female: 0.25 },
         baseStats: {
           hp: 105, atk: 140, def: 95, spa: 55, spd: 65, spe: 45,
         },
@@ -12177,6 +12572,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tympole',
         num: 535,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 50, def: 40, spa: 50, spd: 40, spe: 64,
         },
@@ -12194,6 +12590,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'palpitoad',
         num: 536,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 65, def: 55, spa: 65, spd: 55, spe: 69,
         },
@@ -12213,6 +12610,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'seismitoad',
         num: 537,
         types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 95, def: 75, spa: 85, spd: 75, spe: 74,
         },
@@ -12265,6 +12663,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sewaddle',
         num: 540,
         types: [ 'Bug', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 53, def: 70, spa: 40, spd: 60, spe: 42,
         },
@@ -12282,6 +12681,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swadloon',
         num: 541,
         types: [ 'Bug', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 63, def: 90, spa: 50, spd: 80, spe: 42,
         },
@@ -12301,6 +12701,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'leavanny',
         num: 542,
         types: [ 'Bug', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 103, def: 80, spa: 70, spd: 80, spe: 92,
         },
@@ -12319,6 +12720,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'venipede',
         num: 543,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 30, atk: 45, def: 59, spa: 30, spd: 39, spe: 57,
         },
@@ -12336,6 +12738,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'whirlipede',
         num: 544,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 55, def: 99, spa: 40, spd: 79, spe: 47,
         },
@@ -12355,6 +12758,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scolipede',
         num: 545,
         types: [ 'Bug', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 100, def: 89, spa: 55, spd: 69, spe: 112,
         },
@@ -12373,6 +12777,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cottonee',
         num: 546,
         types: [ 'Grass', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 27, def: 60, spa: 37, spd: 50, spe: 66,
         },
@@ -12390,6 +12795,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'whimsicott',
         num: 547,
         types: [ 'Grass', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 67, def: 85, spa: 77, spd: 75, spe: 116,
         },
@@ -12445,6 +12851,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'basculin',
         num: 550,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 92, def: 65, spa: 80, spd: 55, spe: 98,
         },
@@ -12463,6 +12870,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'basculinbluestriped',
         num: 550,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 92, def: 65, spa: 80, spd: 55, spe: 98,
         },
@@ -12482,6 +12890,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sandile',
         num: 551,
         types: [ 'Ground', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 72, def: 35, spa: 35, spd: 35, spe: 65,
         },
@@ -12499,6 +12908,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'krokorok',
         num: 552,
         types: [ 'Ground', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 82, def: 45, spa: 45, spd: 45, spe: 74,
         },
@@ -12518,6 +12928,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'krookodile',
         num: 553,
         types: [ 'Ground', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 117, def: 80, spa: 65, spd: 70, spe: 92,
         },
@@ -12536,6 +12947,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'darumaka',
         num: 554,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 90, def: 45, spa: 15, spd: 45, spe: 50,
         },
@@ -12553,6 +12965,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'darumakagalar',
         num: 554,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Darumaka',
         forme: 'Galar',
         formeLetter: 'G',
@@ -12573,6 +12986,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'darmanitan',
         num: 555,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 140, def: 55, spa: 30, spd: 55, spe: 95,
         },
@@ -12593,6 +13007,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'darmanitangalar',
         num: 55,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Darmanitan',
         forme: 'Galar',
         formeLetter: 'G',
@@ -12614,6 +13029,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'darmanitanzen',
         num: 555,
         types: [ 'Fire', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 30, def: 105, spa: 140, spd: 105, spe: 55,
         },
@@ -12635,6 +13051,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'darmanitanzengalar',
         num: 555,
         types: [ 'Ice', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 160, def: 55, spa: 30, spd: 55, spe: 135,
         },
@@ -12656,6 +13073,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'maractus',
         num: 556,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 86, def: 67, spa: 106, spd: 67, spe: 60,
         },
@@ -12672,6 +13090,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dwebble',
         num: 557,
         types: [ 'Bug', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 65, def: 85, spa: 35, spd: 35, spe: 55,
         },
@@ -12689,6 +13108,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crustle',
         num: 558,
         types: [ 'Bug', 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 105, def: 125, spa: 65, spd: 75, spe: 45,
         },
@@ -12707,6 +13127,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scraggy',
         num: 559,
         types: [ 'Dark', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 75, def: 70, spa: 35, spd: 70, spe: 48,
         },
@@ -12724,6 +13145,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scrafty',
         num: 560,
         types: [ 'Dark', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 90, def: 115, spa: 45, spd: 115, spe: 58,
         },
@@ -12742,6 +13164,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sigilyph',
         num: 561,
         types: [ 'Psychic', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 72, atk: 58, def: 80, spa: 103, spd: 80, spe: 97,
         },
@@ -12758,6 +13181,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'yamask',
         num: 562,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 38, atk: 30, def: 85, spa: 55, spd: 65, spe: 30,
         },
@@ -12775,6 +13199,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'yamaskgalar',
         num: 562,
         types: [ 'Ground', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseSpecies: 'Yamask',
         forme: 'Galar',
         formeLetter: 'G',
@@ -12795,6 +13220,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cofagrigus',
         num: 563,
         types: [ 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 58, atk: 50, def: 145, spa: 95, spd: 105, spe: 30,
         },
@@ -12887,6 +13313,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'trubbish',
         num: 568,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 50, def: 62, spa: 40, spd: 62, spe: 65,
         },
@@ -12904,6 +13331,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'garbodor',
         num: 569,
         types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 95, def: 82, spa: 60, spd: 82, spe: 75,
         },
@@ -12959,7 +13387,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'minccino',
         num: 572,
         types: [ 'Normal' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 55, atk: 50, def: 40, spa: 40, spd: 40, spe: 75,
         },
@@ -12977,7 +13405,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cinccino',
         num: 573,
         types: [ 'Normal' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 75, atk: 95, def: 60, spa: 65, spd: 60, spe: 115,
         },
@@ -12996,7 +13424,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gothita',
         num: 574,
         types: [ 'Psychic' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 45, atk: 30, def: 50, spa: 55, spd: 65, spe: 45,
         },
@@ -13014,7 +13442,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gothorita',
         num: 575,
         types: [ 'Psychic' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 60, atk: 45, def: 70, spa: 75, spd: 85, spe: 55,
         },
@@ -13034,7 +13462,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gothitelle',
         num: 576,
         types: [ 'Psychic' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 70, atk: 55, def: 95, spa: 95, spd: 110, spe: 65,
         },
@@ -13053,6 +13481,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'solosis',
         num: 577,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 30, def: 40, spa: 105, spd: 50, spe: 20,
         },
@@ -13070,6 +13499,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'duosion',
         num: 578,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 40, def: 50, spa: 125, spd: 60, spe: 30,
         },
@@ -13089,6 +13519,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'reuniclus',
         num: 579,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 65, def: 75, spa: 125, spd: 85, spe: 30,
         },
@@ -13107,6 +13538,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ducklett',
         num: 580,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 62, atk: 44, def: 50, spa: 44, spd: 50, spe: 55,
         },
@@ -13124,6 +13556,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swanna',
         num: 581,
         types: [ 'Water', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 87, def: 63, spa: 87, spd: 63, spe: 98,
         },
@@ -13142,6 +13575,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vanillite',
         num: 582,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 36, atk: 50, def: 50, spa: 65, spd: 60, spe: 44,
         },
@@ -13159,6 +13593,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vanillish',
         num: 583,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 51, atk: 65, def: 65, spa: 80, spd: 75, spe: 59,
         },
@@ -13178,6 +13613,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vanilluxe',
         num: 584,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 71, atk: 95, def: 85, spa: 110, spd: 95, spe: 79,
         },
@@ -13196,6 +13632,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'deerling',
         num: 585,
         types: [ 'Normal', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 60, def: 50, spa: 40, spd: 50, spe: 75,
         },
@@ -13215,6 +13652,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sawsbuck',
         num: 586,
         types: [ 'Normal', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 100, def: 70, spa: 60, spd: 70, spe: 95,
         },
@@ -13235,6 +13673,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'emolga',
         num: 587,
         types: [ 'Electric', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 75, def: 60, spa: 75, spd: 60, spe: 103,
         },
@@ -13251,6 +13690,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'karrablast',
         num: 588,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 75, def: 45, spa: 40, spd: 45, spe: 60,
         },
@@ -13268,6 +13708,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'escavalier',
         num: 589,
         types: [ 'Bug', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 135, def: 105, spa: 60, spd: 105, spe: 20,
         },
@@ -13286,6 +13727,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'foongus',
         num: 590,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 69, atk: 55, def: 45, spa: 55, spd: 55, spe: 15,
         },
@@ -13303,6 +13745,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'amoonguss',
         num: 591,
         types: [ 'Grass', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 114, atk: 85, def: 70, spa: 85, spd: 80, spe: 30,
         },
@@ -13321,6 +13764,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'frillish',
         num: 592,
         types: [ 'Water', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 40, def: 50, spa: 65, spd: 85, spe: 40,
         },
@@ -13338,6 +13782,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'jellicent',
         num: 593,
         types: [ 'Water', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 60, def: 70, spa: 85, spd: 105, spe: 60,
         },
@@ -13356,6 +13801,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'alomomola',
         num: 594,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 165, atk: 75, def: 80, spa: 40, spd: 45, spe: 65,
         },
@@ -13372,6 +13818,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'joltik',
         num: 595,
         types: [ 'Bug', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 47, def: 50, spa: 57, spd: 50, spe: 65,
         },
@@ -13389,6 +13836,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'galvantula',
         num: 596,
         types: [ 'Bug', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 77, def: 60, spa: 97, spd: 60, spe: 108,
         },
@@ -13407,6 +13855,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ferroseed',
         num: 597,
         types: [ 'Grass', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 44, atk: 50, def: 91, spa: 24, spd: 86, spe: 10,
         },
@@ -13424,6 +13873,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ferrothorn',
         num: 598,
         types: [ 'Grass', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 74, atk: 94, def: 131, spa: 54, spd: 116, spe: 20,
         },
@@ -13499,6 +13949,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tynamo',
         num: 602,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 45, spd: 40, spe: 60,
         },
@@ -13516,6 +13967,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'eelektrik',
         num: 603,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 85, def: 70, spa: 75, spd: 70, spe: 40,
         },
@@ -13535,6 +13987,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'eelektross',
         num: 604,
         types: [ 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 115, def: 80, spa: 105, spd: 80, spe: 50,
         },
@@ -13553,6 +14006,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'elgyem',
         num: 605,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 55, def: 55, spa: 85, spd: 55, spe: 30,
         },
@@ -13570,6 +14024,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'beheeyem',
         num: 606,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 75, def: 75, spa: 125, spd: 95, spe: 40,
         },
@@ -13588,6 +14043,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'litwick',
         num: 607,
         types: [ 'Ghost', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 30, def: 55, spa: 65, spd: 55, spe: 20,
         },
@@ -13605,6 +14061,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lampent',
         num: 608,
         types: [ 'Ghost', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 40, def: 60, spa: 95, spd: 60, spe: 55,
         },
@@ -13624,6 +14081,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'chandelure',
         num: 609,
         types: [ 'Ghost', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 55, def: 90, spa: 145, spd: 90, spe: 80,
         },
@@ -13642,6 +14100,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'axew',
         num: 610,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 46, atk: 87, def: 60, spa: 30, spd: 40, spe: 57,
         },
@@ -13659,6 +14118,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'fraxure',
         num: 611,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 66, atk: 117, def: 70, spa: 40, spd: 50, spe: 67,
         },
@@ -13678,6 +14138,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'haxorus',
         num: 612,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 76, atk: 147, def: 90, spa: 60, spd: 70, spe: 97,
         },
@@ -13696,6 +14157,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cubchoo',
         num: 613,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 70, def: 40, spa: 60, spd: 40, spe: 40,
         },
@@ -13713,6 +14175,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'beartic',
         num: 614,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 130, def: 80, spa: 70, spd: 80, spe: 50,
         },
@@ -13748,6 +14211,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shelmet',
         num: 616,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 40, def: 85, spa: 40, spd: 65, spe: 25,
         },
@@ -13765,6 +14229,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'accelgor',
         num: 617,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 70, def: 40, spa: 100, spd: 60, spe: 145,
         },
@@ -13783,6 +14248,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'stunfisk',
         num: 618,
         types: [ 'Ground', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 109, atk: 66, def: 84, spa: 81, spd: 99, spe: 32,
         },
@@ -13799,6 +14265,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mienfoo',
         num: 619,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 85, def: 50, spa: 55, spd: 50, spe: 65,
         },
@@ -13816,6 +14283,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mienshao',
         num: 620,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 125, def: 60, spa: 95, spd: 60, spe: 105,
         },
@@ -13834,6 +14302,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'druddigon',
         num: 621,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 77, atk: 120, def: 90, spa: 60, spd: 90, spe: 48,
         },
@@ -13887,6 +14356,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pawniard',
         num: 624,
         types: [ 'Dark', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 85, def: 70, spa: 40, spd: 40, spe: 60,
         },
@@ -13904,6 +14374,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bisharp',
         num: 625,
         types: [ 'Dark', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 125, def: 100, spa: 60, spd: 70, spe: 70,
         },
@@ -13922,6 +14393,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bouffalant',
         num: 626,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 110, def: 95, spa: 40, spd: 95, spe: 55,
         },
@@ -14012,6 +14484,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'heatmor',
         num: 631,
         types: [ 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 97, def: 66, spa: 105, spd: 66, spe: 65,
         },
@@ -14028,6 +14501,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'durant',
         num: 632,
         types: [ 'Bug', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 58, atk: 109, def: 112, spa: 48, spd: 48, spe: 109,
         },
@@ -14044,6 +14518,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'deino',
         num: 633,
         types: [ 'Dark', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 52, atk: 65, def: 50, spa: 45, spd: 50, spe: 38,
         },
@@ -14061,6 +14536,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zweilous',
         num: 634,
         types: [ 'Dark', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 72, atk: 85, def: 70, spa: 65, spd: 70, spe: 58,
         },
@@ -14080,6 +14556,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hydreigon',
         num: 635,
         types: [ 'Dark', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 92, atk: 105, def: 90, spa: 125, spd: 90, spe: 98,
         },
@@ -14098,6 +14575,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'larvesta',
         num: 636,
         types: [ 'Bug', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 85, def: 55, spa: 50, spd: 55, spe: 60,
         },
@@ -14115,6 +14593,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'volcarona',
         num: 637,
         types: [ 'Bug', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 60, def: 65, spa: 135, spd: 105, spe: 100,
         },
@@ -14766,6 +15245,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bunnelby',
         num: 659,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 38, atk: 36, def: 38, spa: 32, spd: 36, spe: 57,
         },
@@ -14783,6 +15263,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'diggersby',
         num: 660,
         types: [ 'Normal', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 56, def: 77, spa: 50, spd: 77, spe: 78,
         },
@@ -14801,6 +15282,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'fletchling',
         num: 661,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 50, def: 43, spa: 40, spd: 38, spe: 62,
         },
@@ -14818,6 +15300,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'fletchinder',
         num: 662,
         types: [ 'Fire', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 62, atk: 73, def: 55, spa: 56, spd: 52, spe: 84,
         },
@@ -14837,6 +15320,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'talonflame',
         num: 663,
         types: [ 'Fire', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 78, atk: 81, def: 71, spa: 74, spd: 69, spe: 126,
         },
@@ -14855,6 +15339,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scatterbug',
         num: 664,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 38, atk: 35, def: 40, spa: 27, spd: 25, spe: 35,
         },
@@ -14872,6 +15357,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spewpa',
         num: 665,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 22, def: 60, spa: 27, spd: 30, spe: 29,
         },
@@ -14891,6 +15377,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vivillon',
         num: 666,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 52, def: 50, spa: 90, spd: 50, spe: 89,
         },
@@ -14921,6 +15408,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vivillonfancy',
         num: 666,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 52, def: 50, spa: 90, spd: 50, spe: 89,
         },
@@ -14940,6 +15428,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vivillonpokeball',
         num: 666,
         types: [ 'Bug', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 52, def: 50, spa: 90, spd: 50, spe: 89,
         },
@@ -14959,7 +15448,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'litleo',
         num: 667,
         types: [ 'Fire', 'Normal' ],
-        genderRatio: { male: 0.125, female: 0.125 },
+        genderRatio: { male: 0.125, female: 0.875 },
         baseStats: {
           hp: 62, atk: 50, def: 58, spa: 73, spd: 54, spe: 72,
         },
@@ -14977,7 +15466,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pyroar',
         num: 668,
         types: [ 'Fire', 'Normal' ],
-        genderRatio: { male: 0.125, female: 0.125 },
+        genderRatio: { male: 0.125, female: 0.875 },
         baseStats: {
           hp: 86, atk: 68, def: 72, spa: 109, spd: 66, spe: 106,
         },
@@ -15085,6 +15574,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skiddo',
         num: 672,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 66, atk: 65, def: 48, spa: 62, spd: 57, spe: 52,
         },
@@ -15102,6 +15592,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gogoat',
         num: 673,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 123, atk: 100, def: 62, spa: 97, spd: 81, spe: 68,
         },
@@ -15120,6 +15611,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pancham',
         num: 674,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 67, atk: 82, def: 62, spa: 46, spd: 48, spe: 43,
         },
@@ -15137,6 +15629,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pangoro',
         num: 675,
         types: [ 'Fighting', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 124, def: 78, spa: 69, spd: 71, spe: 58,
         },
@@ -15155,6 +15648,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'furfrou',
         num: 676,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 80, def: 60, spa: 65, spd: 90, spe: 102,
         },
@@ -15182,6 +15676,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'espurr',
         num: 677,
         types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 62, atk: 48, def: 54, spa: 63, spd: 60, spe: 68,
         },
@@ -15242,6 +15737,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'honedge',
         num: 679,
         types: [ 'Steel', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 80, def: 100, spa: 35, spd: 37, spe: 28,
         },
@@ -15259,6 +15755,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'doublade',
         num: 680,
         types: [ 'Steel', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 59, atk: 110, def: 150, spa: 45, spd: 49, spe: 35,
         },
@@ -15279,6 +15776,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         num: 681,
         baseForme: 'Shield',
         types: [ 'Steel', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 50, def: 150, spa: 50, spd: 150, spe: 60,
         },
@@ -15298,6 +15796,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aegislash',
         num: 681,
         types: [ 'Steel', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 150, def: 50, spa: 150, spd: 50, spe: 60,
         },
@@ -15319,6 +15818,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'spritzee',
         num: 682,
         types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 78, atk: 52, def: 60, spa: 63, spd: 65, spe: 23,
         },
@@ -15336,6 +15836,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aromatisse',
         num: 683,
         types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 101, atk: 72, def: 72, spa: 99, spd: 89, spe: 29,
         },
@@ -15354,6 +15855,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'swirlix',
         num: 684,
         types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 62, atk: 48, def: 66, spa: 59, spd: 57, spe: 49,
         },
@@ -15371,6 +15873,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'slurpuff',
         num: 685,
         types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 82, atk: 80, def: 86, spa: 85, spd: 75, spe: 72,
         },
@@ -15389,6 +15892,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'inkay',
         num: 686,
         types: [ 'Dark', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 53, atk: 54, def: 53, spa: 37, spd: 46, spe: 45,
         },
@@ -15406,6 +15910,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'malamar',
         num: 687,
         types: [ 'Dark', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 86, atk: 92, def: 88, spa: 68, spd: 75, spe: 73,
         },
@@ -15424,6 +15929,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'binacle',
         num: 688,
         types: [ 'Rock', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 42, atk: 52, def: 67, spa: 39, spd: 56, spe: 50,
         },
@@ -15441,6 +15947,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'barbaracle',
         num: 689,
         types: [ 'Rock', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 72, atk: 105, def: 115, spa: 54, spd: 86, spe: 68,
         },
@@ -15459,6 +15966,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'skrelp',
         num: 690,
         types: [ 'Poison', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 60, def: 60, spa: 60, spd: 60, spe: 30,
         },
@@ -15476,6 +15984,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dragalge',
         num: 691,
         types: [ 'Poison', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 75, def: 90, spa: 97, spd: 123, spe: 44,
         },
@@ -15494,6 +16003,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'clauncher',
         num: 692,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 53, def: 62, spa: 58, spd: 63, spe: 44,
         },
@@ -15511,6 +16021,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'clawitzer',
         num: 693,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 71, atk: 73, def: 88, spa: 120, spd: 89, spe: 59,
         },
@@ -15529,6 +16040,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'helioptile',
         num: 694,
         types: [ 'Electric', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 44, atk: 38, def: 33, spa: 61, spd: 43, spe: 70,
         },
@@ -15546,6 +16058,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'heliolisk',
         num: 695,
         types: [ 'Electric', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 62, atk: 55, def: 52, spa: 109, spd: 94, spe: 109,
         },
@@ -15657,6 +16170,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hawlucha',
         num: 701,
         types: [ 'Fighting', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 78, atk: 92, def: 75, spa: 74, spd: 63, spe: 118,
         },
@@ -15673,6 +16187,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dedenne',
         num: 702,
         types: [ 'Electric', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 67, atk: 58, def: 57, spa: 81, spd: 67, spe: 101,
         },
@@ -15706,6 +16221,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'goomy',
         num: 704,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 50, def: 35, spa: 55, spd: 75, spe: 40,
         },
@@ -15723,6 +16239,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sliggoo',
         num: 705,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 75, def: 53, spa: 83, spd: 113, spe: 60,
         },
@@ -15742,6 +16259,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'goodra',
         num: 706,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 100, def: 70, spa: 110, spd: 150, spe: 80,
         },
@@ -15760,6 +16278,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'klefki',
         num: 707,
         types: [ 'Steel', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 57, atk: 80, def: 91, spa: 80, spd: 87, spe: 75,
         },
@@ -15776,6 +16295,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'phantump',
         num: 708,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 43, atk: 70, def: 48, spa: 50, spd: 60, spe: 38,
         },
@@ -15793,6 +16313,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'trevenant',
         num: 709,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 110, def: 76, spa: 65, spd: 82, spe: 56,
         },
@@ -15811,6 +16332,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pumpkaboo',
         num: 710,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 49, atk: 66, def: 70, spa: 44, spd: 55, spe: 51,
         },
@@ -15830,6 +16352,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pumpkaboosmall',
         num: 710,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 44, atk: 66, def: 70, spa: 44, spd: 55, spe: 56,
         },
@@ -15850,6 +16373,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pumpkaboolarge',
         num: 710,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 54, atk: 66, def: 70, spa: 44, spd: 55, spe: 46,
         },
@@ -15870,6 +16394,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pumpkaboosuper',
         num: 710,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 59, atk: 66, def: 70, spa: 44, spd: 55, spe: 41,
         },
@@ -15890,6 +16415,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gourgeist',
         num: 711,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 90, def: 122, spa: 58, spd: 75, spe: 84,
         },
@@ -15910,6 +16436,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gourgeistsmall',
         num: 711,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 85, def: 122, spa: 58, spd: 75, spe: 99,
         },
@@ -15931,6 +16458,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gourgeistlarge',
         num: 711,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 95, def: 122, spa: 58, spd: 75, spe: 69,
         },
@@ -15952,6 +16480,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gourgeistsuper',
         num: 711,
         types: [ 'Ghost', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 100, def: 122, spa: 58, spd: 75, spe: 54,
         },
@@ -15973,6 +16502,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bergmite',
         num: 712,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 69, def: 85, spa: 32, spd: 35, spe: 28,
         },
@@ -15990,6 +16520,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'avalugg',
         num: 713,
         types: [ 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 117, def: 184, spa: 44, spd: 46, spe: 28,
         },
@@ -16008,6 +16539,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'noibat',
         num: 714,
         types: [ 'Flying', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 30, def: 35, spa: 45, spd: 40, spe: 55,
         },
@@ -16025,6 +16557,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'noivern',
         num: 715,
         types: [ 'Flying', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 70, def: 80, spa: 97, spd: 80, spe: 123,
         },
@@ -16401,6 +16934,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pikipek',
         num: 731,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 75, def: 30, spa: 30, spd: 30, spe: 65,
         },
@@ -16418,6 +16952,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'trumbeak',
         num: 732,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 85, def: 50, spa: 40, spd: 50, spe: 75,
         },
@@ -16437,6 +16972,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'toucannon',
         num: 733,
         types: [ 'Normal', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 120, def: 75, spa: 75, spd: 75, spe: 60,
         },
@@ -16455,6 +16991,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'yungoos',
         num: 734,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 48, atk: 70, def: 30, spa: 30, spd: 30, spe: 45,
         },
@@ -16472,6 +17009,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gumshoos',
         num: 735,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 88, atk: 110, def: 60, spa: 55, spd: 60, spe: 45,
         },
@@ -16491,6 +17029,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'gumshoostotem',
         num: 735,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 88, atk: 110, def: 60, spa: 55, spd: 60, spe: 45,
         },
@@ -16510,6 +17049,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'grubbin',
         num: 736,
         types: [ 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 47, atk: 62, def: 45, spa: 55, spd: 45, spe: 46,
         },
@@ -16527,6 +17067,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'charjabug',
         num: 737,
         types: [ 'Bug', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 57, atk: 82, def: 95, spa: 55, spd: 75, spe: 36,
         },
@@ -16546,6 +17087,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vikavolt',
         num: 738,
         types: [ 'Bug', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 77, atk: 70, def: 90, spa: 145, spd: 75, spe: 43,
         },
@@ -16565,6 +17107,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'vikavolttotem',
         num: 738,
         types: [ 'Bug', 'Electric' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 77, atk: 70, def: 90, spa: 145, spd: 75, spe: 43,
         },
@@ -16584,6 +17127,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crabrawler',
         num: 739,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 47, atk: 82, def: 57, spa: 42, spd: 47, spe: 63,
         },
@@ -16601,6 +17145,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crabominable',
         num: 740,
         types: [ 'Fighting', 'Ice' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 97, atk: 132, def: 77, spa: 62, spd: 67, spe: 43,
         },
@@ -16619,7 +17164,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'oricorio',
         num: 741,
         types: [ 'Fire', 'Flying' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 75, atk: 70, def: 70, spa: 98, spd: 70, spe: 93,
         },
@@ -16638,7 +17183,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'oricoriopompom',
         num: 741,
         types: [ 'Electric', 'Flying' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 75, atk: 70, def: 70, spa: 98, spd: 70, spe: 93,
         },
@@ -16658,7 +17203,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'oricoriopau',
         num: 741,
         types: [ 'Psychic', 'Flying' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 75, atk: 70, def: 70, spa: 98, spd: 70, spe: 93,
         },
@@ -16678,7 +17223,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'oricoriosensu',
         num: 741,
         types: [ 'Ghost', 'Flying' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 75, atk: 70, def: 70, spa: 98, spd: 70, spe: 93,
         },
@@ -16698,6 +17243,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cutiefly',
         num: 742,
         types: [ 'Bug', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 45, def: 40, spa: 55, spd: 40, spe: 84,
         },
@@ -16715,6 +17261,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ribombee',
         num: 743,
         types: [ 'Bug', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 55, def: 60, spa: 95, spd: 70, spe: 124,
         },
@@ -16734,6 +17281,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'ribombeetotem',
         num: 743,
         types: [ 'Bug', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 55, def: 60, spa: 95, spd: 70, spe: 124,
         },
@@ -16753,6 +17301,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'rockruff',
         num: 744,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 65, def: 40, spa: 30, spd: 40, spe: 60,
         },
@@ -16776,6 +17325,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lycanroc',
         num: 745,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 115, def: 65, spa: 55, spd: 65, spe: 112,
         },
@@ -16793,9 +17343,10 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
     [
       'lycanrocmidnight',
       {
-        species: 'lycanroc-midnight',
+        species: 'lycanrocmidnight',
         num: 745,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 115, def: 75, spa: 55, spd: 75, spe: 82,
         },
@@ -16814,9 +17365,10 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
     [
       'lycanrocdusk',
       {
-        species: 'lycanroc-dusk',
+        species: 'lycanrocdusk',
         num: 745,
         types: [ 'Rock' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 117, def: 65, spa: 55, spd: 65, spe: 110,
         },
@@ -16838,6 +17390,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wishiwashi',
         num: 746,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 20, def: 20, spa: 25, spd: 25, spe: 40,
         },
@@ -16856,6 +17409,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wishiwashischool',
         num: 746,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 140, def: 130, spa: 140, spd: 135, spe: 30,
         },
@@ -16875,6 +17429,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mareanie',
         num: 747,
         types: [ 'Poison', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 53, def: 62, spa: 43, spd: 52, spe: 45,
         },
@@ -16892,6 +17447,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'toxapex',
         num: 748,
         types: [ 'Poison', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 63, def: 152, spa: 53, spd: 142, spe: 35,
         },
@@ -16910,6 +17466,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mudbray',
         num: 749,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 100, def: 70, spa: 45, spd: 55, spe: 45,
         },
@@ -16927,6 +17484,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mudsdale',
         num: 750,
         types: [ 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 125, def: 100, spa: 55, spd: 85, spe: 35,
         },
@@ -16945,6 +17503,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'dewpider',
         num: 751,
         types: [ 'Water', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 38, atk: 40, def: 52, spa: 40, spd: 72, spe: 27,
         },
@@ -16962,6 +17521,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'araquanid',
         num: 752,
         types: [ 'Water', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 70, def: 92, spa: 50, spd: 132, spe: 42,
         },
@@ -16981,6 +17541,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'araquanidtotem',
         num: 752,
         types: [ 'Water', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 70, def: 92, spa: 50, spd: 132, spe: 42,
         },
@@ -17000,6 +17561,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'fomantis',
         num: 753,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 55, def: 35, spa: 50, spd: 35, spe: 35,
         },
@@ -17017,6 +17579,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lurantis',
         num: 754,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 105, def: 90, spa: 80, spd: 90, spe: 45,
         },
@@ -17036,6 +17599,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'lurantistotem',
         num: 754,
         types: [ 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 105, def: 90, spa: 80, spd: 90, spe: 45,
         },
@@ -17055,6 +17619,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'morelull',
         num: 755,
         types: [ 'Grass', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 35, def: 55, spa: 65, spd: 75, spe: 15,
         },
@@ -17072,6 +17637,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'shiinotic',
         num: 756,
         types: [ 'Grass', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 45, def: 80, spa: 90, spd: 100, spe: 30,
         },
@@ -17148,6 +17714,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'stufful',
         num: 759,
         types: [ 'Normal', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 75, def: 50, spa: 45, spd: 50, spe: 50,
         },
@@ -17165,6 +17732,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bewear',
         num: 760,
         types: [ 'Normal', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 120, atk: 125, def: 80, spa: 55, spd: 60, spe: 60,
         },
@@ -17240,7 +17808,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'comfey',
         num: 764,
         types: [ 'Fairy' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 51, atk: 52, def: 90, spa: 82, spd: 110, spe: 100,
         },
@@ -17257,6 +17825,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'oranguru',
         num: 765,
         types: [ 'Normal', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 60, def: 80, spa: 90, spd: 110, spe: 60,
         },
@@ -17273,6 +17842,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'passimian',
         num: 766,
         types: [ 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 120, def: 90, spa: 40, spd: 60, spe: 80,
         },
@@ -17289,6 +17859,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'wimpod',
         num: 767,
         types: [ 'Bug', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 25, atk: 35, def: 40, spa: 20, spd: 30, spe: 80,
         },
@@ -17306,6 +17877,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'golisopod',
         num: 768,
         types: [ 'Bug', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 125, def: 140, spa: 60, spd: 90, spe: 40,
         },
@@ -17324,6 +17896,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'sandygast',
         num: 769,
         types: [ 'Ghost', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 55, def: 80, spa: 70, spd: 45, spe: 15,
         },
@@ -17341,6 +17914,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'palossand',
         num: 770,
         types: [ 'Ghost', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 85, atk: 75, def: 110, spa: 100, spd: 75, spe: 35,
         },
@@ -17359,6 +17933,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pyukumuku',
         num: 771,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 60, def: 130, spa: 30, spd: 130, spe: 5,
         },
@@ -17845,6 +18420,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'komala',
         num: 775,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 115, def: 65, spa: 75, spd: 95, spe: 65,
         },
@@ -17861,6 +18437,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'turtonator',
         num: 776,
         types: [ 'Fire', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 78, def: 135, spa: 91, spd: 85, spe: 36,
         },
@@ -17877,6 +18454,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'togedemaru',
         num: 777,
         types: [ 'Electric', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 98, def: 63, spa: 40, spd: 73, spe: 96,
         },
@@ -17894,6 +18472,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'togedemarutotem',
         num: 777,
         types: [ 'Electric', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 98, def: 63, spa: 40, spd: 73, spe: 96,
         },
@@ -17913,6 +18492,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mimikyu',
         num: 778,
         types: [ 'Ghost', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96,
         },
@@ -17930,6 +18510,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mimikyubusted',
         num: 778,
         types: [ 'Ghost', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96,
         },
@@ -17949,6 +18530,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mimikyutotem',
         num: 778,
         types: [ 'Ghost', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96,
         },
@@ -17968,6 +18550,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mimikyubustedtotem',
         num: 778,
         types: [ 'Ghost', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96,
         },
@@ -17987,6 +18570,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'bruxish',
         num: 779,
         types: [ 'Water', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 68, atk: 105, def: 70, spa: 70, spd: 70, spe: 92,
         },
@@ -18003,6 +18587,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'drampa',
         num: 780,
         types: [ 'Normal', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 78, atk: 60, def: 85, spa: 135, spd: 91, spe: 36,
         },
@@ -18036,6 +18621,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'jangmoo',
         num: 782,
         types: [ 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 45, atk: 55, def: 65, spa: 45, spd: 45, spe: 45,
         },
@@ -18053,6 +18639,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hakamoo',
         num: 783,
         types: [ 'Dragon', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 75, def: 90, spa: 65, spd: 70, spe: 65,
         },
@@ -18072,6 +18659,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kommoo',
         num: 784,
         types: [ 'Dragon', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 110, def: 125, spa: 100, spd: 105, spe: 85,
         },
@@ -18091,6 +18679,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kommoototem',
         num: 784,
         types: [ 'Dragon', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 75, atk: 110, def: 125, spa: 100, spd: 105, spe: 85,
         },
@@ -19566,7 +20155,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hatenna',
         num: 856,
         types: [ 'Psychic' ],
-        genderRatio: { male: 0.50, female: 0.50 },
+        genderRatio: { male: 0, female: 1 },
         baseStats: {
           hp: 42, atk: 30, def: 45, spa: 56, spd: 53, spe: 39,
         },
@@ -19584,7 +20173,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hattrem',
         num: 857,
         types: [ 'Psychic' ],
-        genderRatio: { male: 0.50, female: 0.50 },
+        genderRatio: { male: 0, female: 1 },
         baseStats: {
           hp: 57, atk: 40, def: 65, spa: 86, spd: 73, spe: 49,
         },
@@ -19603,7 +20192,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'hatterene',
         num: 858,
         types: [ 'Psychic', 'Fairy' ],
-        genderRatio: { male: 0.50, female: 0.50 },
+        genderRatio: { male: 0, female: 1 },
         baseStats: {
           hp: 57, atk: 90, def: 95, spa: 136, spd: 103, spe: 29,
         },
@@ -19956,7 +20545,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'indeedeef',
         num: 876,
         types: [ 'Psychic', 'Normal' ],
-        gender: 'F',
+        genderRatio: { male: 0, female: 1 },
         baseStats: {
           hp: 70, atk: 55, def: 65, spa: 95, spd: 105, spe: 85,
         },
@@ -19973,7 +20562,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'indeedeem',
         num: 876,
         types: [ 'Psychic', 'Normal' ],
-        gender: 'M',
+        genderRatio: { male: 1, female: 0 },
         baseStats: {
           hp: 70, atk: 55, def: 65, spa: 95, spd: 105, spe: 85,
         },
@@ -20203,7 +20792,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zacian',
         num: 888,
         types: [ 'Fairy' ],
-        gender: 'N',
+        genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 92, atk: 130, def: 115, spa: 80, spd: 115, spe: 138,
         },
@@ -20221,7 +20810,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zaciansword',
         num: 888,
         types: [ 'Fairy', 'Steel' ],
-        gender: 'N',
+        genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 92, atk: 170, def: 115, spa: 80, spd: 115, spe: 148,
         },
@@ -20238,7 +20827,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zamazenta',
         num: 889,
         types: [ 'Fighting' ],
-        gender: 'N',
+        genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 92, atk: 130, def: 115, spa: 80, spd: 115, spe: 138,
         },
@@ -20256,7 +20845,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'zamazentashield',
         num: 889,
         types: [ 'Fighting', 'Steel' ],
-        gender: 'N',
+        genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 92, atk: 130, def: 145, spa: 80, spd: 145, spe: 128,
         },
@@ -20273,7 +20862,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'eternatus',
         num: 890,
         types: [ 'Poison', 'Dragon' ],
-        gender: 'N',
+        genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 140, atk: 85, def: 95, spa: 145, spd: 95, spe: 130,
         },
@@ -20290,7 +20879,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'eternatus2',
         num: 890,
         types: [ 'Poison', 'Dragon' ],
-        gender: 'N',
+        genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 255, atk: 115, def: 250, spa: 125, spd: 250, spe: 130,
         },
@@ -20307,6 +20896,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'syclant',
         num: -1,
         types: [ 'Ice', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 70, atk: 116, def: 70, spa: 114, spd: 64, spe: 121,
         },
@@ -20325,6 +20915,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'revenankh',
         num: -2,
         types: [ 'Ghost', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 105, def: 90, spa: 65, spd: 110, spe: 65,
         },
@@ -20341,6 +20932,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pyroak',
         num: -3,
         types: [ 'Fire', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 120, atk: 70, def: 105, spa: 95, spd: 90, spe: 60,
         },
@@ -20359,6 +20951,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'fidgit',
         num: -4,
         types: [ 'Poison', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 76, def: 109, spa: 90, spd: 80, spe: 105,
         },
@@ -20396,6 +20989,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'arghonaut',
         num: -6,
         types: [ 'Water', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 110, def: 95, spa: 70, spd: 100, spe: 75,
         },
@@ -20414,6 +21008,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kitsunoh',
         num: -7,
         types: [ 'Steel', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 103, def: 85, spa: 55, spd: 80, spe: 110,
         },
@@ -20430,6 +21025,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cyclohm',
         num: -8,
         types: [ 'Electric', 'Dragon' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 108, atk: 60, def: 118, spa: 112, spd: 70, spe: 80,
         },
@@ -20446,6 +21042,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'colossoil',
         num: -9,
         types: [ 'Dark', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 133, atk: 122, def: 72, spa: 71, spd: 72, spe: 95,
         },
@@ -20462,6 +21059,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'krilowatt',
         num: -10,
         types: [ 'Electric', 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 151, atk: 84, def: 73, spa: 83, spd: 74, spe: 105,
         },
@@ -20478,6 +21076,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'voodoom',
         num: -11,
         types: [ 'Fighting', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 85, def: 80, spa: 105, spd: 80, spe: 110,
         },
@@ -20496,6 +21095,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'tomohawk',
         num: -12,
         types: [ 'Flying', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 105, atk: 60, def: 90, spa: 115, spd: 80, spe: 85,
         },
@@ -20533,6 +21133,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mollux',
         num: -14,
         types: [ 'Fire', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 95, atk: 45, def: 83, spa: 131, spd: 105, spe: 76,
         },
@@ -20549,6 +21150,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'aurumoth',
         num: -15,
         types: [ 'Bug', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 110, atk: 120, def: 99, spa: 117, spd: 60, spe: 94,
         },
@@ -20567,6 +21169,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'malaconda',
         num: -16,
         types: [ 'Dark', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 115, atk: 100, def: 60, spa: 40, spd: 130, spe: 55,
         },
@@ -20585,6 +21188,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cawmodore',
         num: -17,
         types: [ 'Steel', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 92, def: 130, spa: 65, spd: 75, spe: 118,
         },
@@ -20603,6 +21207,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'volkraken',
         num: -18,
         types: [ 'Water', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 45, def: 80, spa: 135, spd: 100, spe: 95,
         },
@@ -20621,6 +21226,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'plasmanta',
         num: -19,
         types: [ 'Electric', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 57, def: 119, spa: 131, spd: 98, spe: 100,
         },
@@ -20639,6 +21245,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'naviathan',
         num: -20,
         types: [ 'Water', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 103, atk: 110, def: 90, spa: 95, spd: 65, spe: 97,
         },
@@ -20657,7 +21264,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crucibelle',
         num: -21,
         types: [ 'Rock', 'Poison' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 106, atk: 105, def: 65, spa: 75, spd: 85, spe: 104,
         },
@@ -20675,7 +21282,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'crucibellemega',
         num: -21,
         types: [ 'Rock', 'Poison' ],
-        genderRatio: { male: 0.25, female: 0.25 },
+        genderRatio: { male: 0.25, female: 0.75 },
         baseStats: {
           hp: 106, atk: 135, def: 75, spa: 91, spd: 125, spe: 108,
         },
@@ -20695,6 +21302,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'kerfluffle',
         num: -22,
         types: [ 'Fairy', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 84, atk: 78, def: 86, spa: 115, spd: 88, spe: 119,
         },
@@ -20713,6 +21321,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pajantom',
         num: -23,
         types: [ 'Dragon', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 84, atk: 133, def: 71, spa: 51, spd: 111, spe: 101,
         },
@@ -20729,6 +21338,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'jumbao',
         num: -24,
         types: [ 'Grass', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 92, atk: 63, def: 97, spa: 124, spd: 104, spe: 96,
         },
@@ -20819,6 +21429,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'syclar',
         num: -101,
         types: [ 'Ice', 'Bug' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 76, def: 45, spa: 74, spd: 39, spe: 91,
         },
@@ -20836,6 +21447,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'embirch',
         num: -102,
         types: [ 'Fire', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 40, def: 55, spa: 65, spd: 40, spe: 60,
         },
@@ -20853,6 +21465,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'flarelm',
         num: -103,
         types: [ 'Fire', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 90, atk: 50, def: 95, spa: 75, spd: 70, spe: 40,
         },
@@ -20872,6 +21485,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'breezi',
         num: -104,
         types: [ 'Poison', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 46, def: 69, spa: 60, spd: 50, spe: 75,
         },
@@ -20889,6 +21503,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'scratchet',
         num: -105,
         types: [ 'Normal', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 85, def: 80, spa: 20, spd: 70, spe: 40,
         },
@@ -20924,6 +21539,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cupra',
         num: -107,
         types: [ 'Bug', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 50, atk: 60, def: 49, spa: 67, spd: 30, spe: 44,
         },
@@ -20941,6 +21557,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'argalis',
         num: -108,
         types: [ 'Bug', 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 90, def: 89, spa: 87, spd: 40, spe: 54,
         },
@@ -20960,6 +21577,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'brattler',
         num: -109,
         types: [ 'Dark', 'Grass' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 80, atk: 70, def: 40, spa: 20, spd: 90, spe: 30,
         },
@@ -20977,6 +21595,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'cawdet',
         num: -110,
         types: [ 'Steel', 'Flying' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 35, atk: 72, def: 85, spa: 40, spd: 55, spe: 88,
         },
@@ -20994,6 +21613,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'volkritter',
         num: -111,
         types: [ 'Water', 'Fire' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 60, atk: 30, def: 50, spa: 80, spd: 60, spe: 70,
         },
@@ -21011,6 +21631,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'snugglow',
         num: -112,
         types: [ 'Electric', 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 40, atk: 37, def: 79, spa: 91, spd: 68, spe: 70,
         },
@@ -21028,6 +21649,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'floatoy',
         num: -113,
         types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 48, atk: 70, def: 40, spa: 70, spd: 30, spe: 77,
         },
@@ -21045,6 +21667,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'caimanoe',
         num: -114,
         types: [ 'Water', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 73, atk: 85, def: 65, spa: 80, spd: 40, spe: 87,
         },
@@ -21064,6 +21687,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pluffle',
         num: -115,
         types: [ 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 74, atk: 38, def: 51, spa: 65, spd: 78, spe: 49,
         },
@@ -21119,6 +21743,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'privatyke',
         num: -118,
         types: [ 'Water', 'Fighting' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 65, atk: 75, def: 65, spa: 40, spd: 60, spe: 45,
         },
@@ -21136,6 +21761,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'voodoll',
         num: -119,
         types: [ 'Normal', 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 40, def: 55, spa: 75, spd: 50, spe: 70,
         },
@@ -21153,6 +21779,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'mumbao',
         num: -120,
         types: [ 'Grass', 'Fairy' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 30, def: 64, spa: 87, spd: 73, spe: 66,
         },
@@ -21278,6 +21905,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pokestarsmeargle',
         num: -5000,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 55, atk: 20, def: 35, spa: 20, spd: 45, spe: 75,
         },
@@ -21422,6 +22050,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pokestarhumanoid',
         num: -5007,
         types: [ 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100,
         },
@@ -21439,6 +22068,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pokestarmonster',
         num: -5008,
         types: [ 'Dark' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100,
         },
@@ -21456,6 +22086,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pokestar f00',
         num: -5009,
         types: [ 'Steel', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100,
         },
@@ -21473,6 +22104,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pokestarf002',
         num: -5010,
         types: [ 'Steel', 'Normal' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100,
         },
@@ -21490,6 +22122,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'pokestarspirit',
         num: -5011,
         types: [ 'Dark', 'Ghost' ],
+        genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
           hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100,
         },

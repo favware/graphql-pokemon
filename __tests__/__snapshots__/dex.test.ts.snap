@@ -141,6 +141,10 @@ Object {
       "Dragon",
     ],
     "evoLevel": 55,
+    "genderRatio": Object {
+      "female": 0.5,
+      "male": 0.5,
+    },
     "heightm": 2.2,
     "num": 149,
     "prevo": "dragonair",

@@ -62,13 +62,11 @@ export default class DexResolver {
     const entry = this.dexService.findBySpecies(pokemon);
 
     if (!entry) {
-      const fuzzyEntry = this.dexService.findByFuzzy({
-        pokemon, skip, take, reverse,
-      });
+      const fuzzyEntry = this.dexService.getByFuzzy({pokemon, skip, take});
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = fuzzyEntry[0].species;
+      pokemon = fuzzyEntry[0].species.toLowerCase();
     }
 
     const detailsEntry = this.dexService.findBySpeciesWithDetails({

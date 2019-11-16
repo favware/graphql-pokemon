@@ -22,36 +22,10 @@ export default class DexService {
     return pokedex.get(species);
   }
 
-  public findByFuzzy(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    if (pokemon.split(' ')[0] === 'mega') {
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
-    }
+  public findByFuzzy(@Args() {pokemon, skip, take}: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    const paginatedFuzzyResult = this.getByFuzzy({pokemon, skip, take}, fuseOptions);
 
     const queryResults: DexEntry[] = [];
-    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
-
-    let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
-
-    if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).runFuzzy(pokemon);
-
-      if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].name);
-      }
-    }
-
-    if (!fuzzyResult.length) {
-      throw new Error(`No Pokémon found ${pokemon}`);
-    }
-
-    if (reverse) {
-      fuzzyResult.reverse();
-    }
-
-    const paginatedFuzzyResult = fuzzyResult.slice(skip, skip + take);
-
     for (const page of paginatedFuzzyResult) {
       const dexEntry = new DexEntry();
 
@@ -232,6 +206,37 @@ export default class DexService {
     pokemonData.evolutions = await Promise.all(evolutionChain);
 
     return pokemonData;
+  }
+
+  public getByFuzzy(@Args() {pokemon, skip, take}: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    if (pokemon.split(' ')[0] === 'mega') {
+      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
+    }
+
+    if (pokemon.length < 5) {
+      const potentialAlias = pokedexAliases.get(pokemon);
+      if (potentialAlias) {
+        pokemon = potentialAlias.name;
+      }
+    }
+
+    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
+
+    let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
+
+    if (!fuzzyResult.length) {
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).runFuzzy(pokemon);
+
+      if (fuzzyAliasResult.length) {
+        fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].name);
+      }
+    }
+
+    if (!fuzzyResult.length) {
+      throw new Error(`No Pokémon found ${pokemon}`);
+    }
+
+    return fuzzyResult.slice(skip, skip + take);
   }
 
   private parseSpeciesForBulbapedia(pokemonName: string, baseForme?: string) {

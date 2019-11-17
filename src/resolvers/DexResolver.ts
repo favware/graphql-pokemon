@@ -5,6 +5,7 @@ import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
 import ExactPokemonPaginatedArgs, { Pokemon } from '../arguments/ExactPokemonPaginatedArgs';
+import Util from '../utils/util';
 
 @Resolver(DexDetails)
 export default class DexResolver {
@@ -66,7 +67,7 @@ export default class DexResolver {
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = fuzzyEntry[0].species.toLowerCase();
+      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].species);
     }
 
     const detailsEntry = this.dexService.findBySpeciesWithDetails({

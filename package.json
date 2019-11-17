@@ -5,6 +5,7 @@
   "author": "@favware",
   "license": "MIT",
   "types": "dist/client.d.ts",
+  "main": "dist/client.d.ts",
   "homepage": "https://favware.tech/api",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",

@@ -2,7 +2,7 @@ import { formatResponse, gCall } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
 import { GraphQLError } from 'graphql';
 
-const dexDetailsFragment = 'fragment dexdetails on DexDetails { num species }';
+const dexDetailsFragment = 'fragment dexdetails on DexDetails { num species baseStatsTotal }';
 const dexEntriesFragment = 'fragment dexentries on DexEntry { num species }';
 
 describe('getPokemonDetailsByName', () => {
@@ -23,6 +23,7 @@ describe('getPokemonDetailsByName', () => {
 
     expect(data.getPokemonDetailsByName.species).toBe('dragonite');
     expect(data.getPokemonDetailsByName.num).toBe(149);
+    expect(data.getPokemonDetailsByName.baseStatsTotal).toBe(600);
     expect(data).toMatchSnapshot();
   });
 

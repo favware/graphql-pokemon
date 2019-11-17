@@ -40,12 +40,6 @@ describe('getAbilityDetailsByFuzzy', () => {
   }`;
 
   test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
-    console.log(
-      await gCall({
-        source: getAbilityDetailsByFuzzy,
-        variableValues: { ability: 'multiscaale' },
-      })
-    );
     const { data } = await gCall({
       source: getAbilityDetailsByFuzzy,
       variableValues: { ability: 'multiscaale' },

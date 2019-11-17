@@ -12,7 +12,7 @@ export default abstract class PaginatedArgs {
   @Max(50)
   take: number;
 
-  @Field(() => Boolean, { defaultValue: false, description: 'Reverses the dataset before paginating' })
+  @Field(() => Boolean, { nullable: true, defaultValue: false, description: 'Reverses the dataset before paginating' })
   @IsBoolean()
-  reverse: boolean;
+  reverse?: boolean;
 }

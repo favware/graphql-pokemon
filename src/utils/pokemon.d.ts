@@ -68,19 +68,16 @@ export namespace Pokemon {
     desc?: string;
     shortDesc: string;
     name: string;
-    num: number;
   }
 
   export interface Item {
     name: string;
     desc: string;
     gen: number;
-    num: number;
     shortDesc?: string;
   }
 
   export interface Move {
-    num: number;
     name: string;
     shortDesc: string;
     type: string;

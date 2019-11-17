@@ -15,7 +15,7 @@ export default class ItemService {
   public findByFuzzy(@Args() {
     item, skip, take, reverse,
   }: ItemPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const fuzzyItem = new FuzzySearch(items, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
+    const fuzzyItem = new FuzzySearch(items, [ 'name' ], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyItem.runFuzzy(item);
 
@@ -44,7 +44,6 @@ export default class ItemService {
     const itemEntry = new ItemEntry();
     itemEntry.desc = itemData.desc;
     itemEntry.name = itemData.name;
-    itemEntry.num = itemData.num;
     itemEntry.shortDesc = itemData.shortDesc;
     itemEntry.bulbapediaPage = `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(itemData.name)}`;
     itemEntry.serebiiPage = `https://www.serebii.net/itemdex/${Util.toLowerSingleWordCase(itemData.name)}.shtml`;

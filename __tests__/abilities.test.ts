@@ -7,7 +7,6 @@ describe('getAbilityDetailsByName', () => {
   query ($ability: Abilities!) {
     getAbilityDetailsByName(ability: $ability) {
       name
-      num
     }
   }`;
 
@@ -18,7 +17,6 @@ describe('getAbilityDetailsByName', () => {
     }).then(formatResponse) as DataResponse<'getAbilityDetailsByName'>;
 
     expect(data.getAbilityDetailsByName.name).toBe('Multiscale');
-    expect(data.getAbilityDetailsByName.num).toBe(136);
     expect(data).toMatchSnapshot();
   });
 
@@ -38,11 +36,16 @@ describe('getAbilityDetailsByFuzzy', () => {
   query ($ability: String! $skip: Int $take: Int $reverse: Boolean) {
     getAbilityDetailsByFuzzy(ability: $ability skip: $skip take: $take reverse: $reverse) {
       name
-      num
     }
   }`;
 
   test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
+    console.log(
+      await gCall({
+        source: getAbilityDetailsByFuzzy,
+        variableValues: { ability: 'multiscaale' },
+      })
+    );
     const { data } = await gCall({
       source: getAbilityDetailsByFuzzy,
       variableValues: { ability: 'multiscaale' },
@@ -180,7 +183,6 @@ describe('getAbilityByName', () => {
     }).then(formatResponse) as DataResponse<'getAbilityByName'>;
 
     expect(data.getAbilityByName.name).toBe('Multiscale');
-    expect(data.getAbilityByName.num).toBe(136);
     expect(data).toMatchSnapshot();
   });
 

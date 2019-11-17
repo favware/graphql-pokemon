@@ -7,7 +7,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'crucibellite',
       {
         name: 'Crucibellite',
-        num: -1,
         gen: 6,
         desc: 'If held by a Crucibelle, this item allows it to Mega Evolve in battle.',
       }
@@ -16,7 +15,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mail',
       {
         name: 'Mail',
-        num: 0,
         gen: 2,
         desc: 'Cannot be given to or taken from a Pokemon, except by Covet/Knock Off/Thief.',
       }
@@ -25,7 +23,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'berserkgene',
       {
         name: 'Berserk Gene',
-        num: 0,
         gen: 2,
         desc: '(Gen 2) On switch-in, raises holder\'s Attack by 2 and confuses it. Single use.',
       }
@@ -34,7 +31,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'masterball',
       {
         name: 'Master Ball',
-        num: 1,
         gen: 1,
         desc: 'The best Ball with the ultimate performance. It will catch any wild Pokemon.',
       }
@@ -43,7 +39,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ultraball',
       {
         name: 'Ultra Ball',
-        num: 2,
         gen: 1,
         desc: 'An ultra-performance Ball that provides a higher catch rate than a Great Ball.',
       }
@@ -52,7 +47,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'greatball',
       {
         name: 'Great Ball',
-        num: 3,
         gen: 1,
         desc: 'A high-performance Ball that provides a higher catch rate than a Poke Ball.',
       }
@@ -61,7 +55,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pokeball',
       {
         name: 'Poke Ball',
-        num: 4,
         gen: 1,
         desc: 'A device for catching wild Pokemon. It is designed as a capsule system.',
       }
@@ -70,7 +63,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'safariball',
       {
         name: 'Safari Ball',
-        num: 5,
         gen: 1,
         desc: 'A special Poke Ball that is used only in the Safari Zone and Great Marsh.',
       }
@@ -79,7 +71,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'netball',
       {
         name: 'Net Ball',
-        num: 6,
         gen: 3,
         desc: 'A Poke Ball that works especially well on Water- and Bug-type Pokemon.',
       }
@@ -88,7 +79,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'diveball',
       {
         name: 'Dive Ball',
-        num: 7,
         gen: 3,
         desc: 'A Poke Ball that works especially well on Pokemon that live underwater.',
       }
@@ -97,7 +87,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'nestball',
       {
         name: 'Nest Ball',
-        num: 8,
         gen: 3,
         desc: 'A Poke Ball that works especially well on weaker Pokemon in the wild.',
       }
@@ -106,7 +95,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'repeatball',
       {
         name: 'Repeat Ball',
-        num: 9,
         gen: 3,
         desc: 'A Poke Ball that works well on Pokemon species that were previously caught.',
       }
@@ -115,7 +103,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'timerball',
       {
         name: 'Timer Ball',
-        num: 10,
         gen: 3,
         desc: 'A Poke Ball that becomes better the more turns there are in a battle.',
       }
@@ -124,7 +111,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'luxuryball',
       {
         name: 'Luxury Ball',
-        num: 11,
         gen: 3,
         desc: 'A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.',
       }
@@ -133,7 +119,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'premierball',
       {
         name: 'Premier Ball',
-        num: 12,
         gen: 3,
         desc: 'A rare Poke Ball that has been crafted to commemorate an event.',
       }
@@ -142,7 +127,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'duskball',
       {
         name: 'Dusk Ball',
-        num: 13,
         gen: 4,
         desc: 'A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.',
       }
@@ -151,7 +135,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'healball',
       {
         name: 'Heal Ball',
-        num: 14,
         gen: 4,
         desc: 'A remedial Poke Ball that restores the caught Pokemon\'s HP and status problem.',
       }
@@ -160,7 +143,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'quickball',
       {
         name: 'Quick Ball',
-        num: 15,
         gen: 4,
         desc: 'A Poke Ball that provides a better catch rate at the start of a wild encounter.',
       }
@@ -169,7 +151,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'cherishball',
       {
         name: 'Cherish Ball',
-        num: 16,
         gen: 4,
         desc: 'A rare Poke Ball that has been crafted to commemorate an occasion.',
       }
@@ -178,7 +159,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'energypowder',
       {
         name: 'Energy Powder',
-        num: 34,
         gen: 2,
         desc: 'Restores 50 HP to one Pokemon but lowers Happiness.',
       }
@@ -187,7 +167,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'berryjuice',
       {
         name: 'Berry Juice',
-        num: 43,
         gen: 2,
         desc: 'Restores 20 HP when at 1/2 max HP or less. Single use.',
       }
@@ -196,7 +175,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sunstone',
       {
         name: 'Sun Stone',
-        num: 80,
         gen: 2,
         desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -206,7 +184,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'moonstone',
       {
         name: 'Moon Stone',
-        num: 81,
         gen: 1,
         desc: 'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -216,7 +193,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'firestone',
       {
         name: 'Fire Stone',
-        num: 82,
         gen: 1,
         desc: 'Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -226,7 +202,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'thunderstone',
       {
         name: 'Thunder Stone',
-        num: 83,
         gen: 1,
         desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, and Eelektrik into Eelektross when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -236,7 +211,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'waterstone',
       {
         name: 'Water Stone',
-        num: 84,
         gen: 1,
         desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -246,7 +220,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'leafstone',
       {
         name: 'Leaf Stone',
-        num: 85,
         gen: 1,
         desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -256,7 +229,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rootfossil',
       {
         name: 'Root Fossil',
-        num: 99,
         gen: 3,
         desc: 'Can be revived into Lileep.',
       }
@@ -265,7 +237,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'clawfossil',
       {
         name: 'Claw Fossil',
-        num: 100,
         gen: 3,
         desc: 'Can be revived into Anorith.',
       }
@@ -274,7 +245,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'helixfossil',
       {
         name: 'Helix Fossil',
-        num: 101,
         gen: 3,
         desc: 'Can be revived into Omanyte.',
       }
@@ -283,7 +253,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'domefossil',
       {
         name: 'Dome Fossil',
-        num: 102,
         gen: 3,
         desc: 'Can be revived into Kabuto.',
       }
@@ -292,7 +261,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'oldamber',
       {
         name: 'Old Amber',
-        num: 103,
         gen: 3,
         desc: 'Can be revived into Aerodactyl.',
       }
@@ -301,7 +269,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'armorfossil',
       {
         name: 'Armor Fossil',
-        num: 104,
         gen: 4,
         desc: 'Can be revived into Shieldon.',
       }
@@ -310,7 +277,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'skullfossil',
       {
         name: 'Skull Fossil',
-        num: 105,
         gen: 4,
         desc: 'Can be revived into Cranidos.',
       }
@@ -319,7 +285,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rarebone',
       {
         name: 'Rare Bone',
-        num: 106,
         gen: 4,
         desc: 'No competitive use other than when used with Fling.',
       }
@@ -328,7 +293,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'shinystone',
       {
         name: 'Shiny Stone',
-        num: 107,
         gen: 4,
         desc: 'Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -338,7 +302,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'duskstone',
       {
         name: 'Dusk Stone',
-        num: 108,
         gen: 4,
         desc: 'Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -348,7 +311,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dawnstone',
       {
         name: 'Dawn Stone',
-        num: 109,
         gen: 4,
         desc: 'Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -358,7 +320,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ovalstone',
       {
         name: 'Oval Stone',
-        num: 110,
         gen: 4,
         desc: 'Evolves Happiny into Chansey when held and leveled up during the day.',
       }
@@ -367,7 +328,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'griseousorb',
       {
         name: 'Griseous Orb',
-        num: 112,
         gen: 4,
         desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       }
@@ -376,7 +336,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dousedrive',
       {
         name: 'Douse Drive',
-        num: 116,
         gen: 5,
         desc: 'Holder\'s Techno Blast is Water type.',
       }
@@ -385,7 +344,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'shockdrive',
       {
         name: 'Shock Drive',
-        num: 117,
         gen: 5,
         desc: 'Holder\'s Techno Blast is Electric type.',
       }
@@ -394,7 +352,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'burndrive',
       {
         name: 'Burn Drive',
-        num: 118,
         gen: 5,
         desc: 'Holder\'s Techno Blast is Fire type.',
       }
@@ -403,7 +360,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'chilldrive',
       {
         name: 'Chill Drive',
-        num: 119,
         gen: 5,
         desc: 'Holder\'s Techno Blast is Ice type.',
       }
@@ -412,7 +368,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'adamantorb',
       {
         name: 'Adamant Orb',
-        num: 135,
         gen: 4,
         desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       }
@@ -421,7 +376,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lustrousorb',
       {
         name: 'Lustrous Orb',
-        num: 136,
         gen: 4,
         desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       }
@@ -430,7 +384,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'cheriberry',
       {
         name: 'Cheri Berry',
-        num: 149,
         gen: 3,
         desc: 'Holder cures itself if it is paralyzed. Single use.',
       }
@@ -439,7 +392,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'przcureberry',
       {
         name: 'PRZ Cure Berry',
-        num: 149,
         gen: 2,
         desc: '(Gen 2) Holder cures itself if it is paralyzed. Single use.',
       }
@@ -448,7 +400,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'chestoberry',
       {
         name: 'Chesto Berry',
-        num: 150,
         gen: 3,
         desc: 'Holder wakes up if it is asleep. Single use.',
       }
@@ -457,7 +408,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mintberry',
       {
         name: 'Mint Berry',
-        num: 150,
         gen: 2,
         desc: '(Gen 2) Holder wakes up if it is asleep. Single use.',
       }
@@ -466,7 +416,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pechaberry',
       {
         name: 'Pecha Berry',
-        num: 151,
         gen: 3,
         desc: 'Holder is cured if it is poisoned. Single use.',
       }
@@ -475,7 +424,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'psncureberry',
       {
         name: 'PSN Cure Berry',
-        num: 151,
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is poisoned. Single use.',
       }
@@ -484,7 +432,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rawstberry',
       {
         name: 'Rawst Berry',
-        num: 152,
         gen: 3,
         desc: 'Holder is cured if it is burned. Single use.',
       }
@@ -493,7 +440,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'iceberry',
       {
         name: 'Ice Berry',
-        num: 152,
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is burned. Single use.',
       }
@@ -502,7 +448,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'aspearberry',
       {
         name: 'Aspear Berry',
-        num: 153,
         gen: 3,
         desc: 'Holder is cured if it is frozen. Single use.',
       }
@@ -511,7 +456,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'burntberry',
       {
         name: 'Burnt Berry',
-        num: 153,
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is frozen. Single use.',
       }
@@ -520,7 +464,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'leppaberry',
       {
         name: 'Leppa Berry',
-        num: 154,
         gen: 3,
         desc: 'Restores 10 PP to the first of the holder\'s moves to reach 0 PP. Single use.',
       }
@@ -529,7 +472,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mysteryberry',
       {
         name: 'Mystery Berry',
-        num: 154,
         gen: 2,
         desc: '(Gen 2) Restores 5 PP to the first of the holder\'s moves to reach 0 PP. Single use.',
       }
@@ -538,7 +480,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'oranberry',
       {
         name: 'Oran Berry',
-        num: 155,
         gen: 3,
         desc: 'Restores 10 HP when at 1/2 max HP or less. Single use.',
       }
@@ -547,7 +488,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'berry',
       {
         name: 'Berry',
-        num: 155,
         gen: 2,
         desc: '(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.',
       }
@@ -556,7 +496,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'persimberry',
       {
         name: 'Persim Berry',
-        num: 156,
         gen: 3,
         desc: 'Holder is cured if it is confused. Single use.',
       }
@@ -565,7 +504,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'bitterberry',
       {
         name: 'Bitter Berry',
-        num: 156,
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is confused. Single use.',
       }
@@ -574,7 +512,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lumberry',
       {
         name: 'Lum Berry',
-        num: 157,
         gen: 3,
         desc: 'Holder cures itself if it is confused or has a major status condition. Single use.',
       }
@@ -583,7 +520,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'miracleberry',
       {
         name: 'Miracle Berry',
-        num: 157,
         gen: 2,
         desc: '(Gen 2) Holder cures itself if it is confused or has a status condition. Single use.',
       }
@@ -592,7 +528,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sitrusberry',
       {
         name: 'Sitrus Berry',
-        num: 158,
         gen: 3,
         desc: 'Restores 1/4 max HP when at 1/2 max HP or less. Single use.',
       }
@@ -601,7 +536,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'goldberry',
       {
         name: 'Gold Berry',
-        num: 158,
         gen: 2,
         desc: '(Gen 2) Restores 30 HP when at 1/2 max HP or less. Single use.',
       }
@@ -610,7 +544,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'figyberry',
       {
         name: 'Figy Berry',
-        num: 159,
         gen: 3,
         desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.',
       }
@@ -619,7 +552,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'wikiberry',
       {
         name: 'Wiki Berry',
-        num: 160,
         gen: 3,
         desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.',
       }
@@ -628,7 +560,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'magoberry',
       {
         name: 'Mago Berry',
-        num: 161,
         gen: 3,
         desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.',
       }
@@ -637,7 +568,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'aguavberry',
       {
         name: 'Aguav Berry',
-        num: 162,
         gen: 3,
         desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.',
       }
@@ -646,7 +576,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'iapapaberry',
       {
         name: 'Iapapa Berry',
-        num: 163,
         gen: 3,
         desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.',
       }
@@ -655,7 +584,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'razzberry',
       {
         name: 'Razz Berry',
-        num: 164,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -664,7 +592,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blukberry',
       {
         name: 'Bluk Berry',
-        num: 165,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -673,7 +600,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'nanabberry',
       {
         name: 'Nanab Berry',
-        num: 166,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -682,7 +608,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'wepearberry',
       {
         name: 'Wepear Berry',
-        num: 167,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -691,7 +616,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pinapberry',
       {
         name: 'Pinap Berry',
-        num: 168,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -700,7 +624,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pomegberry',
       {
         name: 'Pomeg Berry',
-        num: 169,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -709,7 +632,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'kelpsyberry',
       {
         name: 'Kelpsy Berry',
-        num: 170,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -718,7 +640,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'qualotberry',
       {
         name: 'Qualot Berry',
-        num: 171,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -727,7 +648,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'hondewberry',
       {
         name: 'Hondew Berry',
-        num: 172,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -736,7 +656,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'grepaberry',
       {
         name: 'Grepa Berry',
-        num: 173,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -745,7 +664,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'tamatoberry',
       {
         name: 'Tamato Berry',
-        num: 174,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -754,7 +672,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'cornnberry',
       {
         name: 'Cornn Berry',
-        num: 175,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -763,7 +680,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'magostberry',
       {
         name: 'Magost Berry',
-        num: 176,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -772,7 +688,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rabutaberry',
       {
         name: 'Rabuta Berry',
-        num: 177,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -781,7 +696,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'nomelberry',
       {
         name: 'Nomel Berry',
-        num: 178,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -790,7 +704,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'spelonberry',
       {
         name: 'Spelon Berry',
-        num: 179,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -799,7 +712,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pamtreberry',
       {
         name: 'Pamtre Berry',
-        num: 180,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -808,7 +720,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'watmelberry',
       {
         name: 'Watmel Berry',
-        num: 181,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -817,7 +728,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'durinberry',
       {
         name: 'Durin Berry',
-        num: 182,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -826,7 +736,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'belueberry',
       {
         name: 'Belue Berry',
-        num: 183,
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       }
@@ -835,7 +744,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'occaberry',
       {
         name: 'Occa Berry',
-        num: 184,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Fire-type attack. Single use.',
       }
@@ -844,7 +752,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'passhoberry',
       {
         name: 'Passho Berry',
-        num: 185,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Water-type attack. Single use.',
       }
@@ -853,7 +760,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'wacanberry',
       {
         name: 'Wacan Berry',
-        num: 186,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.',
       }
@@ -862,7 +768,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rindoberry',
       {
         name: 'Rindo Berry',
-        num: 187,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Grass-type attack. Single use.',
       }
@@ -871,7 +776,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'yacheberry',
       {
         name: 'Yache Berry',
-        num: 188,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
       }
@@ -880,7 +784,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'chopleberry',
       {
         name: 'Chople Berry',
-        num: 189,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Fighting-type attack. Single use.',
       }
@@ -889,7 +792,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'kebiaberry',
       {
         name: 'Kebia Berry',
-        num: 190,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Poison-type attack. Single use.',
       }
@@ -898,7 +800,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'shucaberry',
       {
         name: 'Shuca Berry',
-        num: 191,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Ground-type attack. Single use.',
       }
@@ -907,7 +808,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'cobaberry',
       {
         name: 'Coba Berry',
-        num: 192,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Flying-type attack. Single use.',
       }
@@ -916,7 +816,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'payapaberry',
       {
         name: 'Payapa Berry',
-        num: 193,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Psychic-type attack. Single use.',
       }
@@ -925,7 +824,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'tangaberry',
       {
         name: 'Tanga Berry',
-        num: 194,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Bug-type attack. Single use.',
       }
@@ -934,7 +832,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'chartiberry',
       {
         name: 'Charti Berry',
-        num: 195,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Rock-type attack. Single use.',
       }
@@ -943,7 +840,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'kasibberry',
       {
         name: 'Kasib Berry',
-        num: 196,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Ghost-type attack. Single use.',
       }
@@ -952,7 +848,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'habanberry',
       {
         name: 'Haban Berry',
-        num: 197,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Dragon-type attack. Single use.',
       }
@@ -961,7 +856,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'colburberry',
       {
         name: 'Colbur Berry',
-        num: 198,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Dark-type attack. Single use.',
       }
@@ -970,7 +864,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'babiriberry',
       {
         name: 'Babiri Berry',
-        num: 199,
         gen: 4,
         desc: 'Halves damage taken from a supereffective Steel-type attack. Single use.',
       }
@@ -979,7 +872,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'chilanberry',
       {
         name: 'Chilan Berry',
-        num: 200,
         gen: 4,
         desc: 'Halves damage taken from a Normal-type attack. Single use.',
       }
@@ -988,7 +880,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'liechiberry',
       {
         name: 'Liechi Berry',
-        num: 201,
         gen: 3,
         desc: 'Raises holder\'s Attack by 1 stage when at 1/4 max HP or less. Single use.',
       }
@@ -997,7 +888,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ganlonberry',
       {
         name: 'Ganlon Berry',
-        num: 202,
         gen: 3,
         desc: 'Raises holder\'s Defense by 1 stage when at 1/4 max HP or less. Single use.',
       }
@@ -1006,7 +896,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'petayaberry',
       {
         name: 'Petaya Berry',
-        num: 204,
         gen: 3,
         desc: 'Raises holder\'s Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.',
       }
@@ -1015,7 +904,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'apicotberry',
       {
         name: 'Apicot Berry',
-        num: 205,
         gen: 3,
         desc: 'Raises holder\'s Sp. Def by 1 stage when at 1/4 max HP or less. Single use.',
       }
@@ -1024,7 +912,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lansatberry',
       {
         name: 'Lansat Berry',
-        num: 206,
         gen: 3,
         desc: 'Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.',
       }
@@ -1033,7 +920,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'starfberry',
       {
         name: 'Starf Berry',
-        num: 207,
         gen: 3,
         desc: 'Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.',
       }
@@ -1042,7 +928,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'enigmaberry',
       {
         name: 'Enigma Berry',
-        num: 208,
         gen: 3,
         desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.',
       }
@@ -1051,7 +936,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'micleberry',
       {
         name: 'Micle Berry',
-        num: 209,
         gen: 4,
         desc: 'Holder\'s next move has 1.2x accuracy when at 1/4 max HP or less. Single use.',
       }
@@ -1060,7 +944,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'custapberry',
       {
         name: 'Custap Berry',
-        num: 210,
         gen: 4,
         desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
       }
@@ -1069,7 +952,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'jabocaberry',
       {
         name: 'Jaboca Berry',
-        num: 211,
         gen: 4,
         desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
       }
@@ -1078,7 +960,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rowapberry',
       {
         name: 'Rowap Berry',
-        num: 212,
         gen: 4,
         desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
       }
@@ -1087,7 +968,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'brightpowder',
       {
         name: 'BrightPowder',
-        num: 213,
         gen: 2,
         desc: 'The accuracy of attacks against the holder is 0.9x.',
       }
@@ -1096,7 +976,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'whiteherb',
       {
         name: 'White Herb',
-        num: 214,
         gen: 3,
         desc: 'Restores all lowered stat stages to 0 when one is less than 0. Single use.',
       }
@@ -1105,7 +984,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'machobrace',
       {
         name: 'Macho Brace',
-        num: 215,
         gen: 3,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1114,7 +992,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'quickclaw',
       {
         name: 'Quick Claw',
-        num: 217,
         gen: 2,
         desc: 'Each turn, holder has a 20% chance to move first in its priority bracket.',
       }
@@ -1123,7 +1000,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mentalherb',
       {
         name: 'Mental Herb',
-        num: 219,
         gen: 3,
         desc: 'Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.',
       }
@@ -1132,7 +1008,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'choiceband',
       {
         name: 'Choice Band',
-        num: 220,
         gen: 3,
         desc: 'Holder\'s Attack is 1.5x, but it can only select the first move it executes.',
       }
@@ -1141,7 +1016,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'kingsrock',
       {
         name: 'King\'s Rock',
-        num: 221,
         gen: 2,
         desc: 'Holder\'s attacks without a chance to flinch gain a 10% chance to flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.',
         shortDesc: 'Holder\'s attacks without a chance to flinch gain a 10% chance to flinch.',
@@ -1151,7 +1025,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'silverpowder',
       {
         name: 'SilverPowder',
-        num: 222,
         gen: 2,
         desc: 'Holder\'s Bug-type attacks have 1.2x power.',
       }
@@ -1160,7 +1033,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'souldew',
       {
         name: 'Soul Dew',
-        num: 225,
         gen: 3,
         desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
       }
@@ -1169,7 +1041,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'deepseatooth',
       {
         name: 'Deep Sea Tooth',
-        num: 226,
         gen: 3,
         desc: 'If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.',
         shortDesc: 'If held by a Clamperl, its Sp. Atk is doubled.',
@@ -1179,7 +1050,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'deepseascale',
       {
         name: 'Deep Sea Scale',
-        num: 227,
         gen: 3,
         desc: 'If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.',
         shortDesc: 'If held by a Clamperl, its Sp. Def is doubled.',
@@ -1189,7 +1059,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'focusband',
       {
         name: 'Focus Band',
-        num: 230,
         gen: 2,
         desc: 'Holder has a 10% chance to survive an attack that would KO it with 1 HP.',
       }
@@ -1198,7 +1067,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'scopelens',
       {
         name: 'Scope Lens',
-        num: 232,
         gen: 2,
         desc: 'Holder\'s critical hit ratio is raised by 1 stage.',
       }
@@ -1207,7 +1075,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'metalcoat',
       {
         name: 'Metal Coat',
-        num: 233,
         gen: 2,
         desc: 'Holder\'s Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.',
         shortDesc: 'Holder\'s Steel-type attacks have 1.2x power.',
@@ -1217,7 +1084,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'leftovers',
       {
         name: 'Leftovers',
-        num: 234,
         gen: 2,
         desc: 'At the end of every turn, holder restores 1/16 of its max HP.',
       }
@@ -1226,7 +1092,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lightball',
       {
         name: 'Light Ball',
-        num: 236,
         gen: 2,
         desc: 'If held by a Pikachu, its Attack and Sp. Atk are doubled.',
       }
@@ -1235,7 +1100,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'softsand',
       {
         name: 'Soft Sand',
-        num: 237,
         gen: 2,
         desc: 'Holder\'s Ground-type attacks have 1.2x power.',
       }
@@ -1244,7 +1108,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'hardstone',
       {
         name: 'Hard Stone',
-        num: 238,
         gen: 2,
         desc: 'Holder\'s Rock-type attacks have 1.2x power.',
       }
@@ -1253,7 +1116,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'miracleseed',
       {
         name: 'Miracle Seed',
-        num: 239,
         gen: 2,
         desc: 'Holder\'s Grass-type attacks have 1.2x power.',
       }
@@ -1262,7 +1124,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blackglasses',
       {
         name: 'Black Glasses',
-        num: 240,
         gen: 2,
         desc: 'Holder\'s Dark-type attacks have 1.2x power.',
       }
@@ -1271,7 +1132,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blackbelt',
       {
         name: 'Black Belt',
-        num: 241,
         gen: 2,
         desc: 'Holder\'s Fighting-type attacks have 1.2x power.',
       }
@@ -1280,7 +1140,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'magnet',
       {
         name: 'Magnet',
-        num: 242,
         gen: 2,
         desc: 'Holder\'s Electric-type attacks have 1.2x power.',
       }
@@ -1289,7 +1148,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mysticwater',
       {
         name: 'Mystic Water',
-        num: 243,
         gen: 2,
         desc: 'Holder\'s Water-type attacks have 1.2x power.',
       }
@@ -1298,7 +1156,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sharpbeak',
       {
         name: 'Sharp Beak',
-        num: 244,
         gen: 2,
         desc: 'Holder\'s Flying-type attacks have 1.2x power.',
       }
@@ -1307,7 +1164,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'poisonbarb',
       {
         name: 'Poison Barb',
-        num: 245,
         gen: 2,
         desc: 'Holder\'s Poison-type attacks have 1.2x power.',
       }
@@ -1316,7 +1172,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'nevermeltice',
       {
         name: 'Never-Melt Ice',
-        num: 246,
         gen: 2,
         desc: 'Holder\'s Ice-type attacks have 1.2x power.',
       }
@@ -1325,7 +1180,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'spelltag',
       {
         name: 'Spell Tag',
-        num: 247,
         gen: 2,
         desc: 'Holder\'s Ghost-type attacks have 1.2x power.',
       }
@@ -1334,7 +1188,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'twistedspoon',
       {
         name: 'Twisted Spoon',
-        num: 248,
         gen: 2,
         desc: 'Holder\'s Psychic-type attacks have 1.2x power.',
       }
@@ -1343,7 +1196,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'charcoal',
       {
         name: 'Charcoal',
-        num: 249,
         gen: 2,
         desc: 'Holder\'s Fire-type attacks have 1.2x power.',
       }
@@ -1352,7 +1204,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dragonfang',
       {
         name: 'Dragon Fang',
-        num: 250,
         gen: 2,
         desc: 'Holder\'s Dragon-type attacks have 1.2x power.',
       }
@@ -1361,7 +1212,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dragonscale',
       {
         name: 'Dragon Scale',
-        num: 250,
         gen: 2,
         desc: 'Evolves Seadra into Kingdra when traded.',
       }
@@ -1370,7 +1220,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'silkscarf',
       {
         name: 'Silk Scarf',
-        num: 251,
         gen: 3,
         desc: 'Holder\'s Normal-type attacks have 1.2x power.',
       }
@@ -1379,7 +1228,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pinkbow',
       {
         name: 'Pink Bow',
-        num: 251,
         gen: 2,
         desc: '(Gen 2) Holder\'s Normal-type attacks have 1.1x power.',
       }
@@ -1388,7 +1236,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'polkadotbow',
       {
         name: 'Polkadot Bow',
-        num: 251,
         gen: 2,
         desc: '(Gen 2) Holder\'s Normal-type attacks have 1.1x power.',
       }
@@ -1397,7 +1244,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'upgrade',
       {
         name: 'Up-Grade',
-        num: 252,
         gen: 2,
         desc: 'Evolves Porygon into Porygon2 when traded.',
       }
@@ -1406,7 +1252,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'shellbell',
       {
         name: 'Shell Bell',
-        num: 253,
         gen: 3,
         desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.',
       }
@@ -1415,7 +1260,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'seaincense',
       {
         name: 'Sea Incense',
-        num: 254,
         gen: 3,
         desc: 'Holder\'s Water-type attacks have 1.2x power.',
       }
@@ -1424,7 +1268,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'laxincense',
       {
         name: 'Lax Incense',
-        num: 255,
         gen: 3,
         desc: 'The accuracy of attacks against the holder is 0.9x.',
       }
@@ -1433,7 +1276,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'luckypunch',
       {
         name: 'Lucky Punch',
-        num: 256,
         gen: 2,
         desc: 'If held by a Chansey, its critical hit ratio is raised by 2 stages.',
       }
@@ -1442,7 +1284,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'metalpowder',
       {
         name: 'Metal Powder',
-        num: 257,
         gen: 2,
         desc: 'If held by a Ditto that hasn\'t Transformed, its Defense is doubled.',
       }
@@ -1451,7 +1292,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'thickclub',
       {
         name: 'Thick Club',
-        num: 258,
         gen: 2,
         desc: 'If held by a Cubone or a Marowak, its Attack is doubled.',
       }
@@ -1460,7 +1300,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'stick',
       {
         name: 'Stick',
-        num: 259,
         gen: 2,
         desc: 'If held by a Farfetch\'d, its critical hit ratio is raised by 2 stages.',
       }
@@ -1469,7 +1308,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'widelens',
       {
         name: 'Wide Lens',
-        num: 265,
         gen: 4,
         desc: 'The accuracy of attacks by the holder is 1.1x.',
       }
@@ -1478,7 +1316,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'muscleband',
       {
         name: 'Muscle Band',
-        num: 266,
         gen: 4,
         desc: 'Holder\'s physical attacks have 1.1x power.',
       }
@@ -1487,7 +1324,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'wiseglasses',
       {
         name: 'Wise Glasses',
-        num: 267,
         gen: 4,
         desc: 'Holder\'s special attacks have 1.1x power.',
       }
@@ -1496,7 +1332,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'expertbelt',
       {
         name: 'Expert Belt',
-        num: 268,
         gen: 4,
         desc: 'Holder\'s attacks that are super effective against the target do 1.2x damage.',
       }
@@ -1505,7 +1340,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lightclay',
       {
         name: 'Light Clay',
-        num: 269,
         gen: 4,
         desc: 'Holder\'s use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.',
       }
@@ -1514,7 +1348,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lifeorb',
       {
         name: 'Life Orb',
-        num: 270,
         gen: 4,
         desc: 'Holder\'s attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.',
       }
@@ -1523,7 +1356,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'powerherb',
       {
         name: 'Power Herb',
-        num: 271,
         gen: 4,
         desc: 'Holder\'s two-turn moves complete in one turn (except Sky Drop). Single use.',
       }
@@ -1532,7 +1364,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'toxicorb',
       {
         name: 'Toxic Orb',
-        num: 272,
         gen: 4,
         desc: 'At the end of every turn, this item attempts to badly poison the holder.',
       }
@@ -1541,7 +1372,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'flameorb',
       {
         name: 'Flame Orb',
-        num: 273,
         gen: 4,
         desc: 'At the end of every turn, this item attempts to burn the holder.',
       }
@@ -1550,7 +1380,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'quickpowder',
       {
         name: 'Quick Powder',
-        num: 274,
         gen: 4,
         desc: 'If held by a Ditto that hasn\'t Transformed, its Speed is doubled.',
       }
@@ -1559,7 +1388,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'focussash',
       {
         name: 'Focus Sash',
-        num: 275,
         gen: 4,
         desc: 'If holder\'s HP is full, will survive an attack that would KO it with 1 HP. Single use.',
       }
@@ -1568,7 +1396,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'zoomlens',
       {
         name: 'Zoom Lens',
-        num: 276,
         gen: 4,
         desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
       }
@@ -1577,7 +1404,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'metronome',
       {
         name: 'Metronome',
-        num: 277,
         gen: 4,
         desc: 'Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.',
       }
@@ -1586,7 +1412,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ironball',
       {
         name: 'Iron Ball',
-        num: 278,
         gen: 4,
         desc: 'Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.',
       }
@@ -1595,7 +1420,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'laggingtail',
       {
         name: 'Lagging Tail',
-        num: 279,
         gen: 4,
         desc: 'Holder moves last in its priority bracket.',
       }
@@ -1604,7 +1428,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'destinyknot',
       {
         name: 'Destiny Knot',
-        num: 280,
         gen: 4,
         desc: 'If holder becomes infatuated, the other Pokemon also becomes infatuated.',
       }
@@ -1613,7 +1436,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blacksludge',
       {
         name: 'Black Sludge',
-        num: 281,
         gen: 4,
         desc: 'Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.',
       }
@@ -1622,7 +1444,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'icyrock',
       {
         name: 'Icy Rock',
-        num: 282,
         gen: 4,
         desc: 'Holder\'s use of Hail lasts 8 turns instead of 5.',
       }
@@ -1631,7 +1452,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'smoothrock',
       {
         name: 'Smooth Rock',
-        num: 283,
         gen: 4,
         desc: 'Holder\'s use of Sandstorm lasts 8 turns instead of 5.',
       }
@@ -1640,7 +1460,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'heatrock',
       {
         name: 'Heat Rock',
-        num: 284,
         gen: 4,
         desc: 'Holder\'s use of Sunny Day lasts 8 turns instead of 5.',
       }
@@ -1649,7 +1468,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'damprock',
       {
         name: 'Damp Rock',
-        num: 285,
         gen: 4,
         desc: 'Holder\'s use of Rain Dance lasts 8 turns instead of 5.',
       }
@@ -1658,7 +1476,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'gripclaw',
       {
         name: 'Grip Claw',
-        num: 286,
         gen: 4,
         desc: 'Holder\'s partial-trapping moves always last 7 turns.',
       }
@@ -1667,7 +1484,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'choicescarf',
       {
         name: 'Choice Scarf',
-        num: 287,
         gen: 4,
         desc: 'Holder\'s Speed is 1.5x, but it can only select the first move it executes.',
       }
@@ -1676,7 +1492,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'stickybarb',
       {
         name: 'Sticky Barb',
-        num: 288,
         gen: 4,
         desc: 'Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.',
       }
@@ -1685,7 +1500,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'powerbracer',
       {
         name: 'Power Bracer',
-        num: 289,
         gen: 4,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1694,7 +1508,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'powerbelt',
       {
         name: 'Power Belt',
-        num: 290,
         gen: 4,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1703,7 +1516,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'powerlens',
       {
         name: 'Power Lens',
-        num: 291,
         gen: 4,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1712,7 +1524,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'powerband',
       {
         name: 'Power Band',
-        num: 292,
         gen: 4,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1721,7 +1532,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'poweranklet',
       {
         name: 'Power Anklet',
-        num: 293,
         gen: 4,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1730,7 +1540,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'powerweight',
       {
         name: 'Power Weight',
-        num: 294,
         gen: 4,
         desc: 'Holder\'s Speed is halved. The Ability Klutz does not ignore this effect.',
       }
@@ -1739,7 +1548,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'shedshell',
       {
         name: 'Shed Shell',
-        num: 295,
         gen: 4,
         desc: 'Holder may switch out even when trapped by another Pokemon, or by Ingrain.',
       }
@@ -1748,7 +1556,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'bigroot',
       {
         name: 'Big Root',
-        num: 296,
         gen: 4,
         desc: 'Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.',
       }
@@ -1757,7 +1564,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'choicespecs',
       {
         name: 'Choice Specs',
-        num: 297,
         gen: 4,
         desc: 'Holder\'s Sp. Atk is 1.5x, but it can only select the first move it executes.',
       }
@@ -1766,7 +1572,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'flameplate',
       {
         name: 'Flame Plate',
-        num: 298,
         gen: 4,
         desc: 'Holder\'s Fire-type attacks have 1.2x power. Judgment is Fire type.',
       }
@@ -1775,7 +1580,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'splashplate',
       {
         name: 'Splash Plate',
-        num: 299,
         gen: 4,
         desc: 'Holder\'s Water-type attacks have 1.2x power. Judgment is Water type.',
       }
@@ -1784,7 +1588,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'zapplate',
       {
         name: 'Zap Plate',
-        num: 300,
         gen: 4,
         desc: 'Holder\'s Electric-type attacks have 1.2x power. Judgment is Electric type.',
       }
@@ -1793,7 +1596,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'meadowplate',
       {
         name: 'Meadow Plate',
-        num: 301,
         gen: 4,
         desc: 'Holder\'s Grass-type attacks have 1.2x power. Judgment is Grass type.',
       }
@@ -1802,7 +1604,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'icicleplate',
       {
         name: 'Icicle Plate',
-        num: 302,
         gen: 4,
         desc: 'Holder\'s Ice-type attacks have 1.2x power. Judgment is Ice type.',
       }
@@ -1811,7 +1612,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fistplate',
       {
         name: 'Fist Plate',
-        num: 303,
         gen: 4,
         desc: 'Holder\'s Fighting-type attacks have 1.2x power. Judgment is Fighting type.',
       }
@@ -1820,7 +1620,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'toxicplate',
       {
         name: 'Toxic Plate',
-        num: 304,
         gen: 4,
         desc: 'Holder\'s Poison-type attacks have 1.2x power. Judgment is Poison type.',
       }
@@ -1829,7 +1628,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'earthplate',
       {
         name: 'Earth Plate',
-        num: 305,
         gen: 4,
         desc: 'Holder\'s Ground-type attacks have 1.2x power. Judgment is Ground type.',
       }
@@ -1838,7 +1636,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'skyplate',
       {
         name: 'Sky Plate',
-        num: 306,
         gen: 4,
         desc: 'Holder\'s Flying-type attacks have 1.2x power. Judgment is Flying type.',
       }
@@ -1847,7 +1644,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mindplate',
       {
         name: 'Mind Plate',
-        num: 307,
         gen: 4,
         desc: 'Holder\'s Psychic-type attacks have 1.2x power. Judgment is Psychic type.',
       }
@@ -1856,7 +1652,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'insectplate',
       {
         name: 'Insect Plate',
-        num: 308,
         gen: 4,
         desc: 'Holder\'s Bug-type attacks have 1.2x power. Judgment is Bug type.',
       }
@@ -1865,7 +1660,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'stoneplate',
       {
         name: 'Stone Plate',
-        num: 309,
         gen: 4,
         desc: 'Holder\'s Rock-type attacks have 1.2x power. Judgment is Rock type.',
       }
@@ -1874,7 +1668,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'spookyplate',
       {
         name: 'Spooky Plate',
-        num: 310,
         gen: 4,
         desc: 'Holder\'s Ghost-type attacks have 1.2x power. Judgment is Ghost type.',
       }
@@ -1883,7 +1676,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dracoplate',
       {
         name: 'Draco Plate',
-        num: 311,
         gen: 4,
         desc: 'Holder\'s Dragon-type attacks have 1.2x power. Judgment is Dragon type.',
       }
@@ -1892,7 +1684,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dreadplate',
       {
         name: 'Dread Plate',
-        num: 312,
         gen: 4,
         desc: 'Holder\'s Dark-type attacks have 1.2x power. Judgment is Dark type.',
       }
@@ -1901,7 +1692,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ironplate',
       {
         name: 'Iron Plate',
-        num: 313,
         gen: 4,
         desc: 'Holder\'s Steel-type attacks have 1.2x power. Judgment is Steel type.',
       }
@@ -1910,7 +1700,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'oddincense',
       {
         name: 'Odd Incense',
-        num: 314,
         gen: 4,
         desc: 'Holder\'s Psychic-type attacks have 1.2x power.',
       }
@@ -1919,7 +1708,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rockincense',
       {
         name: 'Rock Incense',
-        num: 315,
         gen: 4,
         desc: 'Holder\'s Rock-type attacks have 1.2x power.',
       }
@@ -1928,7 +1716,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fullincense',
       {
         name: 'Full Incense',
-        num: 316,
         gen: 4,
         desc: 'Holder moves last in its priority bracket.',
       }
@@ -1937,7 +1724,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'waveincense',
       {
         name: 'Wave Incense',
-        num: 317,
         gen: 4,
         desc: 'Holder\'s Water-type attacks have 1.2x power.',
       }
@@ -1946,7 +1732,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'roseincense',
       {
         name: 'Rose Incense',
-        num: 318,
         gen: 4,
         desc: 'Holder\'s Grass-type attacks have 1.2x power.',
       }
@@ -1955,7 +1740,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'protector',
       {
         name: 'Protector',
-        num: 321,
         gen: 4,
         desc: 'Evolves Rhydon into Rhyperior when traded.',
       }
@@ -1964,7 +1748,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'electirizer',
       {
         name: 'Electirizer',
-        num: 322,
         gen: 4,
         desc: 'Evolves Electabuzz into Electivire when traded.',
       }
@@ -1973,7 +1756,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'magmarizer',
       {
         name: 'Magmarizer',
-        num: 323,
         gen: 4,
         desc: 'Evolves Magmar into Magmortar when traded.',
       }
@@ -1982,7 +1764,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dubiousdisc',
       {
         name: 'Dubious Disc',
-        num: 324,
         gen: 4,
         desc: 'Evolves Porygon2 into Porygon-Z when traded.',
       }
@@ -1991,7 +1772,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'reapercloth',
       {
         name: 'Reaper Cloth',
-        num: 325,
         gen: 4,
         desc: 'Evolves Dusclops into Dusknoir when traded.',
       }
@@ -2000,7 +1780,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'razorclaw',
       {
         name: 'Razor Claw',
-        num: 326,
         gen: 4,
         desc: 'Holder\'s critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.',
         shortDesc: 'Holder\'s critical hit ratio is raised by 1 stage.',
@@ -2010,7 +1789,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'razorfang',
       {
         name: 'Razor Fang',
-        num: 327,
         gen: 4,
         desc: 'Holder\'s attacks without a chance to flinch gain a 10% chance to flinch. Evolves Gligar into Gliscor when held and leveled up during the night.',
         shortDesc: 'Holder\'s attacks without a chance to flinch gain a 10% chance to flinch.',
@@ -2020,7 +1798,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fastball',
       {
         name: 'Fast Ball',
-        num: 492,
         gen: 2,
         desc: 'A Poke Ball that makes it easier to catch Pokemon which are quick to run away.',
       }
@@ -2029,7 +1806,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'levelball',
       {
         name: 'Level Ball',
-        num: 493,
         gen: 2,
         desc: 'A Poke Ball for catching Pokemon that are a lower level than your own.',
       }
@@ -2038,7 +1814,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lureball',
       {
         name: 'Lure Ball',
-        num: 494,
         gen: 2,
         desc: 'A Poke Ball for catching Pokemon hooked by a Rod when fishing.',
       }
@@ -2047,7 +1822,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'heavyball',
       {
         name: 'Heavy Ball',
-        num: 495,
         gen: 2,
         desc: 'A Poke Ball for catching very heavy Pokemon.',
       }
@@ -2056,7 +1830,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'loveball',
       {
         name: 'Love Ball',
-        num: 496,
         gen: 2,
         desc: 'Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.',
       }
@@ -2065,7 +1838,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'friendball',
       {
         name: 'Friend Ball',
-        num: 497,
         gen: 2,
         desc: 'A Poke Ball that makes caught Pokemon more friendly.',
       }
@@ -2074,7 +1846,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'moonball',
       {
         name: 'Moon Ball',
-        num: 498,
         gen: 2,
         desc: 'A Poke Ball for catching Pokemon that evolve using the Moon Stone.',
       }
@@ -2083,7 +1854,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sportball',
       {
         name: 'Sport Ball',
-        num: 499,
         gen: 2,
         desc: 'A special Poke Ball for the Bug-Catching Contest.',
       }
@@ -2092,7 +1862,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'parkball',
       {
         name: 'Park Ball',
-        num: 500,
         gen: 4,
         desc: 'A special Poke Ball for the Pal Park.',
       }
@@ -2101,7 +1870,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'redorb',
       {
         name: 'Red Orb',
-        num: 534,
         gen: 6,
         desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
       }
@@ -2110,7 +1878,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blueorb',
       {
         name: 'Blue Orb',
-        num: 535,
         gen: 6,
         desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
       }
@@ -2119,7 +1886,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'prismscale',
       {
         name: 'Prism Scale',
-        num: 537,
         gen: 5,
         desc: 'Evolves Feebas into Milotic when traded.',
       }
@@ -2128,7 +1894,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'eviolite',
       {
         name: 'Eviolite',
-        num: 538,
         gen: 5,
         desc: 'If holder\'s species can evolve, its Defense and Sp. Def are 1.5x.',
       }
@@ -2137,7 +1902,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'floatstone',
       {
         name: 'Float Stone',
-        num: 539,
         gen: 5,
         desc: 'Holder\'s weight is halved.',
       }
@@ -2146,7 +1910,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rockyhelmet',
       {
         name: 'Rocky Helmet',
-        num: 540,
         gen: 5,
         desc: 'If holder is hit by a contact move, the attacker loses 1/6 of its max HP.',
       }
@@ -2155,7 +1918,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'airballoon',
       {
         name: 'Air Balloon',
-        num: 541,
         gen: 5,
         desc: 'Holder is immune to Ground-type attacks. Pops when holder is hit.',
       }
@@ -2164,7 +1926,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'redcard',
       {
         name: 'Red Card',
-        num: 542,
         gen: 5,
         desc: 'If holder survives a hit, attacker is forced to switch to a random ally. Single use.',
       }
@@ -2173,7 +1934,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ringtarget',
       {
         name: 'Ring Target',
-        num: 543,
         gen: 5,
         desc: 'The holder\'s type immunities granted solely by its typing are negated.',
       }
@@ -2182,7 +1942,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'bindingband',
       {
         name: 'Binding Band',
-        num: 544,
         gen: 5,
         desc: 'Holder\'s partial-trapping moves deal 1/6 max HP per turn instead of 1/8.',
       }
@@ -2191,7 +1950,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'absorbbulb',
       {
         name: 'Absorb Bulb',
-        num: 545,
         gen: 5,
         desc: 'Raises holder\'s Sp. Atk by 1 stage if hit by a Water-type attack. Single use.',
       }
@@ -2200,7 +1958,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'cellbattery',
       {
         name: 'Cell Battery',
-        num: 546,
         gen: 5,
         desc: 'Raises holder\'s Attack by 1 if hit by an Electric-type attack. Single use.',
       }
@@ -2209,7 +1966,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ejectbutton',
       {
         name: 'Eject Button',
-        num: 547,
         gen: 5,
         desc: 'If holder survives a hit, it immediately switches out to a chosen ally. Single use.',
       }
@@ -2218,7 +1974,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'firegem',
       {
         name: 'Fire Gem',
-        num: 548,
         gen: 5,
         desc: 'Holder\'s first successful Fire-type attack will have 1.3x power. Single use.',
       }
@@ -2227,7 +1982,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'watergem',
       {
         name: 'Water Gem',
-        num: 549,
         gen: 5,
         desc: 'Holder\'s first successful Water-type attack will have 1.3x power. Single use.',
       }
@@ -2236,7 +1990,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'electricgem',
       {
         name: 'Electric Gem',
-        num: 550,
         gen: 5,
         desc: 'Holder\'s first successful Electric-type attack will have 1.3x power. Single use.',
       }
@@ -2245,7 +1998,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'grassgem',
       {
         name: 'Grass Gem',
-        num: 551,
         gen: 5,
         desc: 'Holder\'s first successful Grass-type attack will have 1.3x power. Single use.',
       }
@@ -2254,7 +2006,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'icegem',
       {
         name: 'Ice Gem',
-        num: 552,
         gen: 5,
         desc: 'Holder\'s first successful Ice-type attack will have 1.3x power. Single use.',
       }
@@ -2263,7 +2014,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fightinggem',
       {
         name: 'Fighting Gem',
-        num: 553,
         gen: 5,
         desc: 'Holder\'s first successful Fighting-type attack will have 1.3x power. Single use.',
       }
@@ -2272,7 +2022,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'poisongem',
       {
         name: 'Poison Gem',
-        num: 554,
         gen: 5,
         desc: 'Holder\'s first successful Poison-type attack will have 1.3x power. Single use.',
       }
@@ -2281,7 +2030,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'groundgem',
       {
         name: 'Ground Gem',
-        num: 555,
         gen: 5,
         desc: 'Holder\'s first successful Ground-type attack will have 1.3x power. Single use.',
       }
@@ -2290,7 +2038,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'flyinggem',
       {
         name: 'Flying Gem',
-        num: 556,
         gen: 5,
         desc: 'Holder\'s first successful Flying-type attack will have 1.3x power. Single use.',
       }
@@ -2299,7 +2046,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'psychicgem',
       {
         name: 'Psychic Gem',
-        num: 557,
         gen: 5,
         desc: 'Holder\'s first successful Psychic-type attack will have 1.3x power. Single use.',
       }
@@ -2308,7 +2054,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'buggem',
       {
         name: 'Bug Gem',
-        num: 558,
         gen: 5,
         desc: 'Holder\'s first successful Bug-type attack will have 1.3x power. Single use.',
       }
@@ -2317,7 +2062,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rockgem',
       {
         name: 'Rock Gem',
-        num: 559,
         gen: 5,
         desc: 'Holder\'s first successful Rock-type attack will have 1.3x power. Single use.',
       }
@@ -2326,7 +2070,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ghostgem',
       {
         name: 'Ghost Gem',
-        num: 560,
         gen: 5,
         desc: 'Holder\'s first successful Ghost-type attack will have 1.3x power. Single use.',
       }
@@ -2335,7 +2078,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dragongem',
       {
         name: 'Dragon Gem',
-        num: 561,
         gen: 5,
         desc: 'Holder\'s first successful Dragon-type attack will have 1.3x power. Single use.',
       }
@@ -2344,7 +2086,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'darkgem',
       {
         name: 'Dark Gem',
-        num: 562,
         gen: 5,
         desc: 'Holder\'s first successful Dark-type attack will have 1.3x power. Single use.',
       }
@@ -2353,7 +2094,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'steelgem',
       {
         name: 'Steel Gem',
-        num: 563,
         gen: 5,
         desc: 'Holder\'s first successful Steel-type attack will have 1.3x power. Single use.',
       }
@@ -2362,7 +2102,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'normalgem',
       {
         name: 'Normal Gem',
-        num: 564,
         gen: 5,
         desc: 'Holder\'s first successful Normal-type attack will have 1.3x power. Single use.',
       }
@@ -2371,7 +2110,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'coverfossil',
       {
         name: 'Cover Fossil',
-        num: 572,
         gen: 5,
         desc: 'Can be revived into Tirtouga.',
       }
@@ -2380,7 +2118,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'plumefossil',
       {
         name: 'Plume Fossil',
-        num: 573,
         gen: 5,
         desc: 'Can be revived into Archen.',
       }
@@ -2389,7 +2126,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dreamball',
       {
         name: 'Dream Ball',
-        num: 576,
         gen: 5,
         desc: 'A special Poke Ball that appears out of nowhere in a bag at the Entree Forest.',
       }
@@ -2398,7 +2134,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'weaknesspolicy',
       {
         name: 'Weakness Policy',
-        num: 639,
         gen: 6,
         desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.',
       }
@@ -2407,7 +2142,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'assaultvest',
       {
         name: 'Assault Vest',
-        num: 640,
         gen: 6,
         desc: 'Holder\'s Sp. Def is 1.5x, but it can only select damaging moves.',
       }
@@ -2416,7 +2150,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pixieplate',
       {
         name: 'Pixie Plate',
-        num: 644,
         gen: 6,
         desc: 'Holder\'s Fairy-type attacks have 1.2x power. Judgment is Fairy type.',
       }
@@ -2425,7 +2158,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'whippeddream',
       {
         name: 'Whipped Dream',
-        num: 646,
         gen: 6,
         desc: 'Evolves Swirlix into Slurpuff when traded.',
       }
@@ -2434,7 +2166,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sachet',
       {
         name: 'Sachet',
-        num: 647,
         gen: 6,
         desc: 'Evolves Spritzee into Aromatisse when traded.',
       }
@@ -2443,7 +2174,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'luminousmoss',
       {
         name: 'Luminous Moss',
-        num: 648,
         gen: 6,
         desc: 'Raises holder\'s Sp. Def by 1 stage if hit by a Water-type attack. Single use.',
       }
@@ -2452,7 +2182,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'snowball',
       {
         name: 'Snowball',
-        num: 649,
         gen: 6,
         desc: 'Raises holder\'s Attack by 1 if hit by an Ice-type attack. Single use.',
       }
@@ -2461,7 +2190,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'safetygoggles',
       {
         name: 'Safety Goggles',
-        num: 650,
         gen: 6,
         desc: 'Holder is immune to powder moves and damage from Sandstorm or Hail.',
       }
@@ -2470,7 +2198,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'gengarite',
       {
         name: 'Gengarite',
-        num: 656,
         gen: 6,
         desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
       }
@@ -2479,7 +2206,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'gardevoirite',
       {
         name: 'Gardevoirite',
-        num: 657,
         gen: 6,
         desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
       }
@@ -2488,7 +2214,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ampharosite',
       {
         name: 'Ampharosite',
-        num: 658,
         gen: 6,
         desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
       }
@@ -2497,7 +2222,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'venusaurite',
       {
         name: 'Venusaurite',
-        num: 659,
         gen: 6,
         desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
       }
@@ -2506,7 +2230,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'charizarditex',
       {
         name: 'Charizardite X',
-        num: 660,
         gen: 6,
         desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       }
@@ -2515,7 +2238,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blastoisinite',
       {
         name: 'Blastoisinite',
-        num: 661,
         gen: 6,
         desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
       }
@@ -2524,7 +2246,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mewtwonitex',
       {
         name: 'Mewtwonite X',
-        num: 662,
         gen: 6,
         desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       }
@@ -2533,7 +2254,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mewtwonitey',
       {
         name: 'Mewtwonite Y',
-        num: 663,
         gen: 6,
         desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       }
@@ -2542,7 +2262,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'blazikenite',
       {
         name: 'Blazikenite',
-        num: 664,
         gen: 6,
         desc: 'If held by a Blaziken, this item allows it to Mega Evolve in battle.',
       }
@@ -2551,7 +2270,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'medichamite',
       {
         name: 'Medichamite',
-        num: 665,
         gen: 6,
         desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
       }
@@ -2560,7 +2278,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'houndoominite',
       {
         name: 'Houndoominite',
-        num: 666,
         gen: 6,
         desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
       }
@@ -2569,7 +2286,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'aggronite',
       {
         name: 'Aggronite',
-        num: 667,
         gen: 6,
         desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
       }
@@ -2578,7 +2294,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'banettite',
       {
         name: 'Banettite',
-        num: 668,
         gen: 6,
         desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
       }
@@ -2587,7 +2302,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'tyranitarite',
       {
         name: 'Tyranitarite',
-        num: 669,
         gen: 6,
         desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
       }
@@ -2596,7 +2310,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'scizorite',
       {
         name: 'Scizorite',
-        num: 670,
         gen: 6,
         desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
       }
@@ -2605,7 +2318,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pinsirite',
       {
         name: 'Pinsirite',
-        num: 671,
         gen: 6,
         desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
       }
@@ -2614,7 +2326,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'aerodactylite',
       {
         name: 'Aerodactylite',
-        num: 672,
         gen: 6,
         desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
       }
@@ -2623,7 +2334,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lucarionite',
       {
         name: 'Lucarionite',
-        num: 673,
         gen: 6,
         desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
       }
@@ -2632,7 +2342,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'abomasite',
       {
         name: 'Abomasite',
-        num: 674,
         gen: 6,
         desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
       }
@@ -2641,7 +2350,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'kangaskhanite',
       {
         name: 'Kangaskhanite',
-        num: 675,
         gen: 6,
         desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
       }
@@ -2650,7 +2358,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'gyaradosite',
       {
         name: 'Gyaradosite',
-        num: 676,
         gen: 6,
         desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
       }
@@ -2659,7 +2366,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'absolite',
       {
         name: 'Absolite',
-        num: 677,
         gen: 6,
         desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
       }
@@ -2668,7 +2374,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'charizarditey',
       {
         name: 'Charizardite Y',
-        num: 678,
         gen: 6,
         desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       }
@@ -2677,7 +2382,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'alakazite',
       {
         name: 'Alakazite',
-        num: 679,
         gen: 6,
         desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
       }
@@ -2686,7 +2390,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'heracronite',
       {
         name: 'Heracronite',
-        num: 680,
         gen: 6,
         desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
       }
@@ -2695,7 +2398,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mawilite',
       {
         name: 'Mawilite',
-        num: 681,
         gen: 6,
         desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
       }
@@ -2704,7 +2406,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'manectite',
       {
         name: 'Manectite',
-        num: 682,
         gen: 6,
         desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
       }
@@ -2713,7 +2414,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'garchompite',
       {
         name: 'Garchompite',
-        num: 683,
         gen: 6,
         desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
       }
@@ -2722,7 +2422,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'latiasite',
       {
         name: 'Latiasite',
-        num: 684,
         gen: 6,
         desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
       }
@@ -2731,7 +2430,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'latiosite',
       {
         name: 'Latiosite',
-        num: 685,
         gen: 6,
         desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
       }
@@ -2740,7 +2438,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'roseliberry',
       {
         name: 'Roseli Berry',
-        num: 686,
         gen: 6,
         desc: 'Halves damage taken from a supereffective Fairy-type attack. Single use.',
       }
@@ -2749,7 +2446,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'keeberry',
       {
         name: 'Kee Berry',
-        num: 687,
         gen: 6,
         desc: 'Raises holder\'s Defense by 1 stage after it is hit by a physical attack. Single use.',
       }
@@ -2758,7 +2454,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'marangaberry',
       {
         name: 'Maranga Berry',
-        num: 688,
         gen: 6,
         desc: 'Raises holder\'s Sp. Def by 1 stage after it is hit by a special attack. Single use.',
       }
@@ -2767,7 +2462,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'jawfossil',
       {
         name: 'Jaw Fossil',
-        num: 710,
         gen: 6,
         desc: 'Can be revived into Tyrunt.',
       }
@@ -2776,7 +2470,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sailfossil',
       {
         name: 'Sail Fossil',
-        num: 711,
         gen: 6,
         desc: 'Can be revived into Amaura.',
       }
@@ -2785,7 +2478,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fairygem',
       {
         name: 'Fairy Gem',
-        num: 715,
         gen: 6,
         desc: 'Holder\'s first successful Fairy-type attack will have 1.3x power. Single use.',
       }
@@ -2794,7 +2486,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'swampertite',
       {
         name: 'Swampertite',
-        num: 752,
         gen: 6,
         desc: 'If held by a Swampert, this item allows it to Mega Evolve in battle.',
       }
@@ -2803,7 +2494,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sceptilite',
       {
         name: 'Sceptilite',
-        num: 753,
         gen: 6,
         desc: 'If held by a Sceptile, this item allows it to Mega Evolve in battle.',
       }
@@ -2812,7 +2502,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sablenite',
       {
         name: 'Sablenite',
-        num: 754,
         gen: 6,
         desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
       }
@@ -2821,7 +2510,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'altarianite',
       {
         name: 'Altarianite',
-        num: 755,
         gen: 6,
         desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
       }
@@ -2830,7 +2518,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'galladite',
       {
         name: 'Galladite',
-        num: 756,
         gen: 6,
         desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
       }
@@ -2839,7 +2526,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'audinite',
       {
         name: 'Audinite',
-        num: 757,
         gen: 6,
         desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
       }
@@ -2848,7 +2534,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'metagrossite',
       {
         name: 'Metagrossite',
-        num: 758,
         gen: 6,
         desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
       }
@@ -2857,7 +2542,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'sharpedonite',
       {
         name: 'Sharpedonite',
-        num: 759,
         gen: 6,
         desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
       }
@@ -2866,7 +2550,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'slowbronite',
       {
         name: 'Slowbronite',
-        num: 760,
         gen: 6,
         desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
       }
@@ -2875,7 +2558,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'steelixite',
       {
         name: 'Steelixite',
-        num: 761,
         gen: 6,
         desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
       }
@@ -2884,7 +2566,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pidgeotite',
       {
         name: 'Pidgeotite',
-        num: 762,
         gen: 6,
         desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
       }
@@ -2893,7 +2574,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'glalitite',
       {
         name: 'Glalitite',
-        num: 763,
         gen: 6,
         desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
       }
@@ -2902,7 +2582,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'diancite',
       {
         name: 'Diancite',
-        num: 764,
         gen: 6,
         desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
       }
@@ -2911,7 +2590,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'cameruptite',
       {
         name: 'Cameruptite',
-        num: 767,
         gen: 6,
         desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
       }
@@ -2920,7 +2598,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lopunnite',
       {
         name: 'Lopunnite',
-        num: 768,
         gen: 6,
         desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
       }
@@ -2929,7 +2606,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'salacberry',
       {
         name: 'Salac Berry',
-        num: 769,
         gen: 6,
         desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       }
@@ -2938,7 +2614,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'salamencite',
       {
         name: 'Salamencite',
-        num: 769,
         gen: 6,
         desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       }
@@ -2947,7 +2622,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'beedrillite',
       {
         name: 'Beedrillite',
-        num: 770,
         gen: 6,
         desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
       }
@@ -2956,7 +2630,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'normaliumz',
       {
         name: 'Normalium Z',
-        num: 776,
         gen: 7,
         desc: 'If holder has a Normal move, this item allows it to use a Normal Z-Move.',
       }
@@ -2965,7 +2638,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'firiumz',
       {
         name: 'Firium Z',
-        num: 777,
         gen: 7,
         desc: 'If holder has a Fire move, this item allows it to use a Fire Z-Move.',
       }
@@ -2974,7 +2646,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'wateriumz',
       {
         name: 'Waterium Z',
-        num: 778,
         gen: 7,
         desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
       }
@@ -2983,7 +2654,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'electriumz',
       {
         name: 'Electrium Z',
-        num: 779,
         gen: 7,
         desc: 'If holder has an Electric move, this item allows it to use an Electric Z-Move.',
       }
@@ -2992,7 +2662,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'grassiumz',
       {
         name: 'Grassium Z',
-        num: 780,
         gen: 7,
         desc: 'If holder has a Grass move, this item allows it to use a Grass Z-Move.',
       }
@@ -3001,7 +2670,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'iciumz',
       {
         name: 'Icium Z',
-        num: 781,
         gen: 7,
         desc: 'If holder has an Ice move, this item allows it to use an Ice Z-Move.',
       }
@@ -3010,7 +2678,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fightiniumz',
       {
         name: 'Fightinium Z',
-        num: 782,
         gen: 7,
         desc: 'If holder has a Fighting move, this item allows it to use a Fighting Z-Move.',
       }
@@ -3019,7 +2686,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'poisoniumz',
       {
         name: 'Poisonium Z',
-        num: 783,
         gen: 7,
         desc: 'If holder has a Poison move, this item allows it to use a Poison Z-Move.',
       }
@@ -3028,7 +2694,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'groundiumz',
       {
         name: 'Groundium Z',
-        num: 784,
         gen: 7,
         desc: 'If holder has a Ground move, this item allows it to use a Ground Z-Move.',
       }
@@ -3037,7 +2702,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'flyiniumz',
       {
         name: 'Flyinium Z',
-        num: 785,
         gen: 7,
         desc: 'If holder has a Flying move, this item allows it to use a Flying Z-Move.',
       }
@@ -3046,7 +2710,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'psychiumz',
       {
         name: 'Psychium Z',
-        num: 786,
         gen: 7,
         desc: 'If holder has a Psychic move, this item allows it to use a Psychic Z-Move.',
       }
@@ -3055,7 +2718,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'buginiumz',
       {
         name: 'Buginium Z',
-        num: 787,
         gen: 7,
         desc: 'If holder has a Bug move, this item allows it to use a Bug Z-Move.',
       }
@@ -3064,7 +2726,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rockiumz',
       {
         name: 'Rockium Z',
-        num: 788,
         gen: 7,
         desc: 'If holder has a Rock move, this item allows it to use a Rock Z-Move.',
       }
@@ -3073,7 +2734,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ghostiumz',
       {
         name: 'Ghostium Z',
-        num: 789,
         gen: 7,
         desc: 'If holder has a Ghost move, this item allows it to use a Ghost Z-Move.',
       }
@@ -3082,7 +2742,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dragoniumz',
       {
         name: 'Dragonium Z',
-        num: 790,
         gen: 7,
         desc: 'If holder has a Dragon move, this item allows it to use a Dragon Z-Move.',
       }
@@ -3091,7 +2750,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'darkiniumz',
       {
         name: 'Darkinium Z',
-        num: 791,
         gen: 7,
         desc: 'If holder has a Dark move, this item allows it to use a Dark Z-Move.',
       }
@@ -3100,7 +2758,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'steeliumz',
       {
         name: 'Steelium Z',
-        num: 792,
         gen: 7,
         desc: 'If holder has a Steel move, this item allows it to use a Steel Z-Move.',
       }
@@ -3109,7 +2766,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fairiumz',
       {
         name: 'Fairium Z',
-        num: 793,
         gen: 7,
         desc: 'If holder has a Fairy move, this item allows it to use a Fairy Z-Move.',
       }
@@ -3118,7 +2774,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pikaniumz',
       {
         name: 'Pikanium Z',
-        num: 794,
         gen: 7,
         desc: 'If held by a Pikachu with Volt Tackle, it can use Catastropika.',
       }
@@ -3127,7 +2782,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'bottlecap',
       {
         name: 'Bottle Cap',
-        num: 795,
         gen: 7,
         desc: 'Used for Hyper Training. One of a Pokemon\'s stats is calculated with an IV of 31.',
       }
@@ -3136,7 +2790,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'goldbottlecap',
       {
         name: 'Gold Bottle Cap',
-        num: 796,
         gen: 7,
         desc: 'Used for Hyper Training. All of a Pokemon\'s stats are calculated with an IV of 31.',
       }
@@ -3145,7 +2798,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'decidiumz',
       {
         name: 'Decidium Z',
-        num: 798,
         gen: 7,
         desc: 'If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.',
       }
@@ -3154,7 +2806,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'inciniumz',
       {
         name: 'Incinium Z',
-        num: 799,
         gen: 7,
         desc: 'If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.',
       }
@@ -3163,7 +2814,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'primariumz',
       {
         name: 'Primarium Z',
-        num: 800,
         gen: 7,
         desc: 'If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.',
       }
@@ -3172,7 +2822,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'tapuniumz',
       {
         name: 'Tapunium Z',
-        num: 801,
         gen: 7,
         desc: 'If held by a Tapu with Nature\'s Madness, it can use Guardian of Alola.',
       }
@@ -3181,7 +2830,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'marshadiumz',
       {
         name: 'Marshadium Z',
-        num: 802,
         gen: 7,
         desc: 'If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.',
       }
@@ -3190,7 +2838,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'aloraichiumz',
       {
         name: 'Aloraichium Z',
-        num: 803,
         gen: 7,
         desc: 'If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.',
       }
@@ -3199,7 +2846,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'snorliumz',
       {
         name: 'Snorlium Z',
-        num: 804,
         gen: 7,
         desc: 'If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.',
       }
@@ -3208,7 +2854,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'eeviumz',
       {
         name: 'Eevium Z',
-        num: 805,
         gen: 7,
         desc: 'If held by an Eevee with Last Resort, it can use Extreme Evoboost.',
       }
@@ -3217,7 +2862,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mewniumz',
       {
         name: 'Mewnium Z',
-        num: 806,
         gen: 7,
         desc: 'If held by a Mew with Psychic, it can use Genesis Supernova.',
       }
@@ -3226,7 +2870,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'pikashuniumz',
       {
         name: 'Pikashunium Z',
-        num: 836,
         gen: 7,
         desc: 'If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.',
       }
@@ -3235,7 +2878,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'adrenalineorb',
       {
         name: 'Adrenaline Orb',
-        num: 846,
         gen: 7,
         desc: 'Raises holder\'s Speed by 1 stage if it gets affected by Intimidate. Single use.',
       }
@@ -3244,7 +2886,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'icestone',
       {
         name: 'Ice Stone',
-        num: 849,
         gen: 7,
         desc: 'Evolves Alolan Sandshrew into Alolan Sandslash and Alolan Vulpix into Alolan Ninetales when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
@@ -3254,7 +2895,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'beastball',
       {
         name: 'Beast Ball',
-        num: 851,
         gen: 7,
         desc: 'A special Poke Ball designed to catch Ultra Beasts.',
       }
@@ -3263,7 +2903,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'terrainextender',
       {
         name: 'Terrain Extender',
-        num: 879,
         gen: 7,
         desc: 'Holder\'s use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.',
       }
@@ -3272,7 +2911,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'protectivepads',
       {
         name: 'Protective Pads',
-        num: 880,
         gen: 7,
         desc: 'Holder\'s moves are protected from adverse contact effects, except Pickpocket.',
       }
@@ -3281,7 +2919,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'electricseed',
       {
         name: 'Electric Seed',
-        num: 881,
         gen: 7,
         desc: 'If the terrain is Electric Terrain, raises holder\'s Defense by 1 stage. Single use.',
       }
@@ -3290,7 +2927,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'psychicseed',
       {
         name: 'Psychic Seed',
-        num: 882,
         gen: 7,
         desc: 'If the terrain is Psychic Terrain, raises holder\'s Sp. Def by 1 stage. Single use.',
       }
@@ -3299,7 +2935,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mistyseed',
       {
         name: 'Misty Seed',
-        num: 883,
         gen: 7,
         desc: 'If the terrain is Misty Terrain, raises holder\'s Sp. Def by 1 stage. Single use.',
       }
@@ -3308,7 +2943,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'grassyseed',
       {
         name: 'Grassy Seed',
-        num: 884,
         gen: 7,
         desc: 'If the terrain is Grassy Terrain, raises holder\'s Defense by 1 stage. Single use.',
       }
@@ -3317,7 +2951,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fightingmemory',
       {
         name: 'Fighting Memory',
-        num: 904,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Fighting type.',
       }
@@ -3326,7 +2959,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'flyingmemory',
       {
         name: 'Flying Memory',
-        num: 905,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Flying type.',
       }
@@ -3335,7 +2967,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'poisonmemory',
       {
         name: 'Poison Memory',
-        num: 906,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Poison type.',
       }
@@ -3344,7 +2975,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'groundmemory',
       {
         name: 'Ground Memory',
-        num: 907,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Ground type.',
       }
@@ -3353,7 +2983,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'rockmemory',
       {
         name: 'Rock Memory',
-        num: 908,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Rock type.',
       }
@@ -3362,7 +2991,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'bugmemory',
       {
         name: 'Bug Memory',
-        num: 909,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Bug type.',
       }
@@ -3371,7 +2999,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ghostmemory',
       {
         name: 'Ghost Memory',
-        num: 910,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Ghost type.',
       }
@@ -3380,7 +3007,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'steelmemory',
       {
         name: 'Steel Memory',
-        num: 911,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Steel type.',
       }
@@ -3389,7 +3015,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'firememory',
       {
         name: 'Fire Memory',
-        num: 912,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Fire type.',
       }
@@ -3398,7 +3023,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'watermemory',
       {
         name: 'Water Memory',
-        num: 913,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Water type.',
       }
@@ -3407,7 +3031,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'grassmemory',
       {
         name: 'Grass Memory',
-        num: 914,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Grass type.',
       }
@@ -3416,7 +3039,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'electricmemory',
       {
         name: 'Electric Memory',
-        num: 915,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Electric type.',
       }
@@ -3425,7 +3047,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'psychicmemory',
       {
         name: 'Psychic Memory',
-        num: 916,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Psychic type.',
       }
@@ -3434,7 +3055,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'icememory',
       {
         name: 'Ice Memory',
-        num: 917,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Ice type.',
       }
@@ -3443,7 +3063,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'dragonmemory',
       {
         name: 'Dragon Memory',
-        num: 918,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Dragon type.',
       }
@@ -3452,7 +3071,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'darkmemory',
       {
         name: 'Dark Memory',
-        num: 919,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Dark type.',
       }
@@ -3461,7 +3079,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'fairymemory',
       {
         name: 'Fairy Memory',
-        num: 920,
         gen: 7,
         desc: 'Holder\'s Multi-Attack is Fairy type.',
       }
@@ -3470,7 +3087,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'solganiumz',
       {
         name: 'Solganium Z',
-        num: 921,
         gen: 7,
         desc: 'Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.',
       }
@@ -3479,7 +3095,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lunaliumz',
       {
         name: 'Lunalium Z',
-        num: 922,
         gen: 7,
         desc: 'Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.',
       }
@@ -3488,7 +3103,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'ultranecroziumz',
       {
         name: 'Ultranecrozium Z',
-        num: 923,
         gen: 7,
         desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
       }
@@ -3497,7 +3111,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'mimikiumz',
       {
         name: 'Mimikium Z',
-        num: 924,
         gen: 7,
         desc: 'If held by a Mimikyu with Play Rough, it can use Let\'s Snuggle Forever.',
       }
@@ -3506,7 +3119,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'lycaniumz',
       {
         name: 'Lycanium Z',
-        num: 925,
         gen: 7,
         desc: 'If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.',
       }
@@ -3515,7 +3127,6 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       'kommoniumz',
       {
         name: 'Kommonium Z',
-        num: 926,
         gen: 7,
         desc: 'If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.',
       }

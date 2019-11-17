@@ -2108,7 +2108,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 90, atk: 130, def: 80, spa: 65, spd: 85, spe: 55,
         },
         abilities: { first: 'Guts', second: 'No Guard', hidden: 'Steadfast' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Gray',
@@ -2835,7 +2835,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 60, atk: 65, def: 60, spa: 130, spd: 75, spe: 110,
         },
         abilities: { first: 'Cursed Body' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Purple',
@@ -2949,7 +2949,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75,
         },
         abilities: { first: 'Hyper Cutter', second: 'Shell Armor', hidden: 'Sheer Force' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Red',
@@ -3714,7 +3714,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 130, atk: 85, def: 80, spa: 85, spd: 95, spe: 60,
         },
         abilities: { first: 'Water Absorb', second: 'Shell Armor', hidden: 'Hydration' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Blue',
@@ -4023,7 +4023,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 160, atk: 110, def: 65, spa: 65, spd: 110, spe: 30,
         },
         abilities: { first: 'Immunity', second: 'Thick Fat', hidden: 'Gluttony' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Black',
@@ -13579,7 +13579,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 80, atk: 95, def: 82, spa: 60, spd: 82, spe: 75,
         },
         abilities: { first: 'Stench', second: 'Weak Armor', hidden: 'Aftermath' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Green',
@@ -19487,7 +19487,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 135, atk: 143, def: 143, spa: 80, spd: 65, spe: 34,
         },
         abilities: { first: 'Iron Fist' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Gray',
@@ -19852,7 +19852,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 60, atk: 45, def: 110, spa: 80, spd: 120, spe: 90,
         },
         abilities: { first: 'Swarm', second: 'Frisk', hidden: 'Telepathy' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Red',
@@ -20195,7 +20195,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 70, atk: 110, def: 80, spa: 95, spd: 60, spe: 70,
         },
         abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Hustle' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Green',
@@ -20236,7 +20236,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 110, atk: 85, def: 80, spa: 100, spd: 80, spe: 30,
         },
         abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Thick Fat' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Green',
@@ -20435,7 +20435,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 75, atk: 98, def: 70, spa: 114, spd: 70, spe: 75,
         },
         abilities: { first: 'Punk Rock', second: 'Plus', hidden: 'Technician' },
-        // TODO
+        // TODO -kuno (2019-11-17)- Height and Weight as of yet unknown
         heightm: 0,
         weightkg: 0,
         color: 'Purple',

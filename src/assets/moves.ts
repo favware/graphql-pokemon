@@ -7,7 +7,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'paleowave',
       {
-        num: 0,
         accuracy: 100,
         basePower: '85',
         category: 'Special',
@@ -24,7 +23,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowstrike',
       {
-        num: 0,
         accuracy: 95,
         basePower: '80',
         category: 'Physical',
@@ -41,7 +39,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magikarpsrevenge',
       {
-        num: 0,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -57,7 +54,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pound',
       {
-        num: 1,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -74,7 +70,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'karatechop',
       {
-        num: 2,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -91,7 +86,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doubleslap',
       {
-        num: 3,
         accuracy: 85,
         basePower: '15',
         category: 'Physical',
@@ -107,7 +101,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'cometpunch',
       {
-        num: 4,
         accuracy: 85,
         basePower: '18',
         category: 'Physical',
@@ -123,7 +116,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'megapunch',
       {
-        num: 5,
         accuracy: 85,
         basePower: '80',
         category: 'Physical',
@@ -140,7 +132,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'payday',
       {
-        num: 6,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -157,7 +148,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'firepunch',
       {
-        num: 7,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -174,7 +164,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'icepunch',
       {
-        num: 8,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -191,7 +180,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thunderpunch',
       {
-        num: 9,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -208,7 +196,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'scratch',
       {
-        num: 10,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -225,7 +212,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'vicegrip',
       {
-        num: 11,
         accuracy: 100,
         basePower: '55',
         category: 'Physical',
@@ -242,7 +228,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'guillotine',
       {
-        num: 12,
         accuracy: 30,
         basePower: '0',
         category: 'Physical',
@@ -258,7 +243,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'razorwind',
       {
-        num: 13,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -274,7 +258,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'swordsdance',
       {
-        num: 14,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -291,7 +274,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'cut',
       {
-        num: 15,
         accuracy: 95,
         basePower: '50',
         category: 'Physical',
@@ -308,7 +290,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gust',
       {
-        num: 16,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -325,7 +306,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wingattack',
       {
-        num: 17,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -342,7 +322,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'whirlwind',
       {
-        num: 18,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -358,7 +337,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fly',
       {
-        num: 19,
         accuracy: 95,
         basePower: '90',
         category: 'Physical',
@@ -374,7 +352,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bind',
       {
-        num: 20,
         accuracy: 85,
         basePower: '15',
         category: 'Physical',
@@ -390,7 +367,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'slam',
       {
-        num: 21,
         accuracy: 75,
         basePower: '80',
         category: 'Physical',
@@ -407,7 +383,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'vinewhip',
       {
-        num: 22,
         accuracy: 100,
         basePower: '45',
         category: 'Physical',
@@ -424,7 +399,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stomp',
       {
-        num: 23,
         accuracy: 100,
         basePower: '65',
         category: 'Physical',
@@ -440,7 +414,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doublekick',
       {
-        num: 24,
         accuracy: 100,
         basePower: '30',
         category: 'Physical',
@@ -456,7 +429,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'megakick',
       {
-        num: 25,
         accuracy: 75,
         basePower: '120',
         category: 'Physical',
@@ -473,7 +445,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'jumpkick',
       {
-        num: 26,
         accuracy: 95,
         basePower: '100',
         category: 'Physical',
@@ -489,7 +460,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rollingkick',
       {
-        num: 27,
         accuracy: 85,
         basePower: '60',
         category: 'Physical',
@@ -506,7 +476,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sandattack',
       {
-        num: 28,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -523,7 +492,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'headbutt',
       {
-        num: 29,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -540,7 +508,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hornattack',
       {
-        num: 30,
         accuracy: 100,
         basePower: '65',
         category: 'Physical',
@@ -557,7 +524,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'furyattack',
       {
-        num: 31,
         accuracy: 85,
         basePower: '15',
         category: 'Physical',
@@ -573,7 +539,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'horndrill',
       {
-        num: 32,
         accuracy: 30,
         basePower: '0',
         category: 'Physical',
@@ -589,7 +554,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tackle',
       {
-        num: 33,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -606,7 +570,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bodyslam',
       {
-        num: 34,
         accuracy: 100,
         basePower: '85',
         category: 'Physical',
@@ -622,7 +585,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wrap',
       {
-        num: 35,
         accuracy: 90,
         basePower: '15',
         category: 'Physical',
@@ -638,7 +600,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'takedown',
       {
-        num: 36,
         accuracy: 85,
         basePower: '90',
         category: 'Physical',
@@ -654,7 +615,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thrash',
       {
-        num: 37,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -670,7 +630,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doubleedge',
       {
-        num: 38,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -686,7 +645,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tailwhip',
       {
-        num: 39,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -703,7 +661,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poisonsting',
       {
-        num: 40,
         accuracy: 100,
         basePower: '15',
         category: 'Physical',
@@ -720,7 +677,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'twineedle',
       {
-        num: 41,
         accuracy: 100,
         basePower: '25',
         category: 'Physical',
@@ -736,7 +692,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pinmissile',
       {
-        num: 42,
         accuracy: 95,
         basePower: '25',
         category: 'Physical',
@@ -752,7 +707,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leer',
       {
-        num: 43,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -769,7 +723,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bite',
       {
-        num: 44,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -786,7 +739,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'growl',
       {
-        num: 45,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -803,7 +755,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'roar',
       {
-        num: 46,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -819,7 +770,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sing',
       {
-        num: 47,
         accuracy: 55,
         basePower: '0',
         category: 'Status',
@@ -836,7 +786,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'supersonic',
       {
-        num: 48,
         accuracy: 55,
         basePower: '0',
         category: 'Status',
@@ -853,7 +802,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sonicboom',
       {
-        num: 49,
         accuracy: 90,
         basePower: '20',
         category: 'Special',
@@ -870,7 +818,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'disable',
       {
-        num: 50,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -886,7 +833,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'acid',
       {
-        num: 51,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -902,7 +848,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'ember',
       {
-        num: 52,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -919,7 +864,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flamethrower',
       {
-        num: 53,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -936,7 +880,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mist',
       {
-        num: 54,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -952,7 +895,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'watergun',
       {
-        num: 55,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -969,7 +911,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hydropump',
       {
-        num: 56,
         accuracy: 80,
         basePower: '110',
         category: 'Special',
@@ -986,7 +927,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'surf',
       {
-        num: 57,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -1003,7 +943,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'icebeam',
       {
-        num: 58,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -1020,7 +959,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'blizzard',
       {
-        num: 59,
         accuracy: 70,
         basePower: '110',
         category: 'Special',
@@ -1036,7 +974,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psybeam',
       {
-        num: 60,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -1053,7 +990,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bubblebeam',
       {
-        num: 61,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -1070,7 +1006,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aurorabeam',
       {
-        num: 62,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -1087,7 +1022,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hyperbeam',
       {
-        num: 63,
         accuracy: 90,
         basePower: '150',
         category: 'Special',
@@ -1103,7 +1037,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'peck',
       {
-        num: 64,
         accuracy: 100,
         basePower: '35',
         category: 'Physical',
@@ -1120,7 +1053,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'drillpeck',
       {
-        num: 65,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -1137,7 +1069,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'submission',
       {
-        num: 66,
         accuracy: 80,
         basePower: '80',
         category: 'Physical',
@@ -1153,7 +1084,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lowkick',
       {
-        num: 67,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -1169,7 +1099,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'counter',
       {
-        num: 68,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -1185,7 +1114,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'seismictoss',
       {
-        num: 69,
         accuracy: 100,
         basePower: 'level',
         category: 'Physical',
@@ -1202,7 +1130,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'strength',
       {
-        num: 70,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -1219,7 +1146,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'absorb',
       {
-        num: 71,
         accuracy: 100,
         basePower: '20',
         category: 'Special',
@@ -1235,7 +1161,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'megadrain',
       {
-        num: 72,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -1251,7 +1176,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leechseed',
       {
-        num: 73,
         accuracy: 90,
         basePower: '0',
         category: 'Status',
@@ -1267,7 +1191,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'growth',
       {
-        num: 74,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1283,7 +1206,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'razorleaf',
       {
-        num: 75,
         accuracy: 95,
         basePower: '55',
         category: 'Physical',
@@ -1300,7 +1222,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'solarbeam',
       {
-        num: 76,
         accuracy: 100,
         basePower: '120',
         category: 'Special',
@@ -1316,7 +1237,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poisonpowder',
       {
-        num: 77,
         accuracy: 75,
         basePower: '0',
         category: 'Status',
@@ -1333,7 +1253,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stunspore',
       {
-        num: 78,
         accuracy: 75,
         basePower: '0',
         category: 'Status',
@@ -1350,7 +1269,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sleeppowder',
       {
-        num: 79,
         accuracy: 75,
         basePower: '0',
         category: 'Status',
@@ -1367,7 +1285,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'petaldance',
       {
-        num: 80,
         accuracy: 100,
         basePower: '120',
         category: 'Special',
@@ -1383,7 +1300,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stringshot',
       {
-        num: 81,
         accuracy: 95,
         basePower: '0',
         category: 'Status',
@@ -1400,7 +1316,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonrage',
       {
-        num: 82,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -1417,7 +1332,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'firespin',
       {
-        num: 83,
         accuracy: 85,
         basePower: '35',
         category: 'Special',
@@ -1433,7 +1347,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thundershock',
       {
-        num: 84,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -1450,7 +1363,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thunderbolt',
       {
-        num: 85,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -1467,7 +1379,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thunderwave',
       {
-        num: 86,
         accuracy: 90,
         basePower: '0',
         category: 'Status',
@@ -1484,7 +1395,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thunder',
       {
-        num: 87,
         accuracy: 70,
         basePower: '110',
         category: 'Special',
@@ -1500,7 +1410,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rockthrow',
       {
-        num: 88,
         accuracy: 90,
         basePower: '50',
         category: 'Physical',
@@ -1517,7 +1426,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'earthquake',
       {
-        num: 89,
         accuracy: 100,
         basePower: '100',
         category: 'Physical',
@@ -1534,7 +1442,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fissure',
       {
-        num: 90,
         accuracy: 30,
         basePower: '0',
         category: 'Physical',
@@ -1550,7 +1457,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dig',
       {
-        num: 91,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -1566,7 +1472,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'toxic',
       {
-        num: 92,
         accuracy: 90,
         basePower: '0',
         category: 'Status',
@@ -1582,7 +1487,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'confusion',
       {
-        num: 93,
         accuracy: 100,
         basePower: '50',
         category: 'Special',
@@ -1599,7 +1503,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychic',
       {
-        num: 94,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -1615,7 +1518,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hypnosis',
       {
-        num: 95,
         accuracy: 60,
         basePower: '0',
         category: 'Status',
@@ -1632,7 +1534,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'meditate',
       {
-        num: 96,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1649,7 +1550,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'agility',
       {
-        num: 97,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1666,7 +1566,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'quickattack',
       {
-        num: 98,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -1683,7 +1582,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rage',
       {
-        num: 99,
         accuracy: 100,
         basePower: '20',
         category: 'Physical',
@@ -1699,7 +1597,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'teleport',
       {
-        num: 100,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1716,7 +1613,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nightshade',
       {
-        num: 101,
         accuracy: 100,
         basePower: 'level',
         category: 'Special',
@@ -1733,7 +1629,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mimic',
       {
-        num: 102,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1749,7 +1644,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'screech',
       {
-        num: 103,
         accuracy: 85,
         basePower: '0',
         category: 'Status',
@@ -1766,7 +1660,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doubleteam',
       {
-        num: 104,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1783,7 +1676,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'recover',
       {
-        num: 105,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1800,7 +1692,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'harden',
       {
-        num: 106,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1817,7 +1708,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'minimize',
       {
-        num: 107,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1833,7 +1723,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'smokescreen',
       {
-        num: 108,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1850,7 +1739,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'confuseray',
       {
-        num: 109,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1867,7 +1755,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'withdraw',
       {
-        num: 110,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1884,7 +1771,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'defensecurl',
       {
-        num: 111,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1900,7 +1786,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'barrier',
       {
-        num: 112,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1917,7 +1802,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lightscreen',
       {
-        num: 113,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1933,7 +1817,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'haze',
       {
-        num: 114,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1950,7 +1833,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'reflect',
       {
-        num: 115,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1966,7 +1848,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'focusenergy',
       {
-        num: 116,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -1982,7 +1863,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bide',
       {
-        num: 117,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -1998,7 +1878,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'metronome',
       {
-        num: 118,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2014,7 +1893,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mirrormove',
       {
-        num: 119,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2030,7 +1908,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'selfdestruct',
       {
-        num: 120,
         accuracy: 100,
         basePower: '200',
         category: 'Physical',
@@ -2046,7 +1923,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'eggbomb',
       {
-        num: 121,
         accuracy: 75,
         basePower: '100',
         category: 'Physical',
@@ -2063,7 +1939,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lick',
       {
-        num: 122,
         accuracy: 100,
         basePower: '30',
         category: 'Physical',
@@ -2080,7 +1955,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'smog',
       {
-        num: 123,
         accuracy: 70,
         basePower: '30',
         category: 'Special',
@@ -2097,7 +1971,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sludge',
       {
-        num: 124,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -2114,7 +1987,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'boneclub',
       {
-        num: 125,
         accuracy: 85,
         basePower: '65',
         category: 'Physical',
@@ -2131,7 +2003,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fireblast',
       {
-        num: 126,
         accuracy: 85,
         basePower: '110',
         category: 'Special',
@@ -2148,7 +2019,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'waterfall',
       {
-        num: 127,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -2165,7 +2035,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'clamp',
       {
-        num: 128,
         accuracy: 85,
         basePower: '35',
         category: 'Physical',
@@ -2181,7 +2050,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'swift',
       {
-        num: 129,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -2198,7 +2066,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'skullbash',
       {
-        num: 130,
         accuracy: 100,
         basePower: '130',
         category: 'Physical',
@@ -2214,7 +2081,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spikecannon',
       {
-        num: 131,
         accuracy: 100,
         basePower: '20',
         category: 'Physical',
@@ -2230,7 +2096,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'constrict',
       {
-        num: 132,
         accuracy: 100,
         basePower: '10',
         category: 'Physical',
@@ -2247,7 +2112,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'amnesia',
       {
-        num: 133,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2264,7 +2128,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'kinesis',
       {
-        num: 134,
         accuracy: 80,
         basePower: '0',
         category: 'Status',
@@ -2281,7 +2144,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'softboiled',
       {
-        num: 135,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2298,7 +2160,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'highjumpkick',
       {
-        num: 136,
         accuracy: 90,
         basePower: '130',
         category: 'Physical',
@@ -2314,7 +2175,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'glare',
       {
-        num: 137,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2331,7 +2191,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dreameater',
       {
-        num: 138,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -2347,7 +2206,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poisongas',
       {
-        num: 139,
         accuracy: 90,
         basePower: '0',
         category: 'Status',
@@ -2364,7 +2222,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'barrage',
       {
-        num: 140,
         accuracy: 85,
         basePower: '15',
         category: 'Physical',
@@ -2380,7 +2237,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leechlife',
       {
-        num: 141,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -2396,7 +2252,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lovelykiss',
       {
-        num: 142,
         accuracy: 75,
         basePower: '0',
         category: 'Status',
@@ -2413,7 +2268,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'skyattack',
       {
-        num: 143,
         accuracy: 90,
         basePower: '140',
         category: 'Physical',
@@ -2429,7 +2283,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'transform',
       {
-        num: 144,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2445,7 +2298,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bubble',
       {
-        num: 145,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -2462,7 +2314,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dizzypunch',
       {
-        num: 146,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -2479,7 +2330,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spore',
       {
-        num: 147,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2496,7 +2346,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flash',
       {
-        num: 148,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2513,7 +2362,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psywave',
       {
-        num: 149,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -2529,7 +2377,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'splash',
       {
-        num: 150,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2546,7 +2393,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'acidarmor',
       {
-        num: 151,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2563,7 +2409,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'crabhammer',
       {
-        num: 152,
         accuracy: 90,
         basePower: '100',
         category: 'Physical',
@@ -2580,7 +2425,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'explosion',
       {
-        num: 153,
         accuracy: 100,
         basePower: '250',
         category: 'Physical',
@@ -2596,7 +2440,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'furyswipes',
       {
-        num: 154,
         accuracy: 80,
         basePower: '18',
         category: 'Physical',
@@ -2612,7 +2455,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bonemerang',
       {
-        num: 155,
         accuracy: 90,
         basePower: '50',
         category: 'Physical',
@@ -2628,7 +2470,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rest',
       {
-        num: 156,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2644,7 +2485,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rockslide',
       {
-        num: 157,
         accuracy: 90,
         basePower: '75',
         category: 'Physical',
@@ -2661,7 +2501,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hyperfang',
       {
-        num: 158,
         accuracy: 90,
         basePower: '80',
         category: 'Physical',
@@ -2678,7 +2517,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sharpen',
       {
-        num: 159,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2695,7 +2533,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'conversion',
       {
-        num: 160,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2711,7 +2548,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'triattack',
       {
-        num: 161,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -2727,7 +2563,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'superfang',
       {
-        num: 162,
         accuracy: 90,
         basePower: '0',
         category: 'Physical',
@@ -2743,7 +2578,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'slash',
       {
-        num: 163,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -2760,7 +2594,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'substitute',
       {
-        num: 164,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2776,7 +2609,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'struggle',
       {
-        num: 165,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -2792,7 +2624,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sketch',
       {
-        num: 166,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2808,7 +2639,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'triplekick',
       {
-        num: 167,
         accuracy: 90,
         basePower: '10',
         category: 'Physical',
@@ -2824,7 +2654,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thief',
       {
-        num: 168,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -2840,7 +2669,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spiderweb',
       {
-        num: 169,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2856,7 +2684,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mindreader',
       {
-        num: 170,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2872,7 +2699,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nightmare',
       {
-        num: 171,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2888,7 +2714,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flamewheel',
       {
-        num: 172,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -2905,7 +2730,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'snore',
       {
-        num: 173,
         accuracy: 100,
         basePower: '50',
         category: 'Special',
@@ -2921,7 +2745,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'curse',
       {
-        num: 174,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2937,7 +2760,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flail',
       {
-        num: 175,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -2953,7 +2775,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'conversion2',
       {
-        num: 176,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -2969,7 +2790,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aeroblast',
       {
-        num: 177,
         accuracy: 95,
         basePower: '100',
         category: 'Special',
@@ -2986,7 +2806,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'cottonspore',
       {
-        num: 178,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3003,7 +2822,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'reversal',
       {
-        num: 179,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -3019,7 +2837,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spite',
       {
-        num: 180,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3035,7 +2852,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powdersnow',
       {
-        num: 181,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -3052,7 +2868,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'protect',
       {
-        num: 182,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3068,7 +2883,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'machpunch',
       {
-        num: 183,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -3085,7 +2899,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'scaryface',
       {
-        num: 184,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3102,7 +2915,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'feintattack',
       {
-        num: 185,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -3119,7 +2931,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sweetkiss',
       {
-        num: 186,
         accuracy: 75,
         basePower: '0',
         category: 'Status',
@@ -3136,7 +2947,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bellydrum',
       {
-        num: 187,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3152,7 +2962,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sludgebomb',
       {
-        num: 188,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -3169,7 +2978,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mudslap',
       {
-        num: 189,
         accuracy: 100,
         basePower: '20',
         category: 'Special',
@@ -3186,7 +2994,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'octazooka',
       {
-        num: 190,
         accuracy: 85,
         basePower: '65',
         category: 'Special',
@@ -3203,7 +3010,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spikes',
       {
-        num: 191,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3219,7 +3025,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'zapcannon',
       {
-        num: 192,
         accuracy: 50,
         basePower: '120',
         category: 'Special',
@@ -3236,7 +3041,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'foresight',
       {
-        num: 193,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3252,7 +3056,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'destinybond',
       {
-        num: 194,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3268,7 +3071,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'perishsong',
       {
-        num: 195,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3284,7 +3086,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'icywind',
       {
-        num: 196,
         accuracy: 95,
         basePower: '55',
         category: 'Special',
@@ -3301,7 +3102,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'detect',
       {
-        num: 197,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3317,7 +3117,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bonerush',
       {
-        num: 198,
         accuracy: 90,
         basePower: '25',
         category: 'Physical',
@@ -3333,7 +3132,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lockon',
       {
-        num: 199,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3349,7 +3147,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'outrage',
       {
-        num: 200,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -3365,7 +3162,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sandstorm',
       {
-        num: 201,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3381,7 +3177,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gigadrain',
       {
-        num: 202,
         accuracy: 100,
         basePower: '75',
         category: 'Special',
@@ -3397,7 +3192,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'endure',
       {
-        num: 203,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3413,7 +3207,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'charm',
       {
-        num: 204,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3430,7 +3223,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rollout',
       {
-        num: 205,
         accuracy: 90,
         basePower: '30',
         category: 'Physical',
@@ -3446,7 +3238,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'falseswipe',
       {
-        num: 206,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -3463,7 +3254,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'swagger',
       {
-        num: 207,
         accuracy: 85,
         basePower: '0',
         category: 'Status',
@@ -3480,7 +3270,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'milkdrink',
       {
-        num: 208,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3497,7 +3286,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spark',
       {
-        num: 209,
         accuracy: 100,
         basePower: '65',
         category: 'Physical',
@@ -3514,7 +3302,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'furycutter',
       {
-        num: 210,
         accuracy: 95,
         basePower: '40',
         category: 'Physical',
@@ -3530,7 +3317,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'steelwing',
       {
-        num: 211,
         accuracy: 90,
         basePower: '70',
         category: 'Physical',
@@ -3547,7 +3333,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'meanlook',
       {
-        num: 212,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3563,7 +3348,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'attract',
       {
-        num: 213,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3579,7 +3363,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sleeptalk',
       {
-        num: 214,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3596,7 +3379,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'healbell',
       {
-        num: 215,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3612,7 +3394,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'return',
       {
-        num: 216,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -3628,7 +3409,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'present',
       {
-        num: 217,
         accuracy: 90,
         basePower: '0',
         category: 'Physical',
@@ -3644,7 +3424,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'frustration',
       {
-        num: 218,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -3660,7 +3439,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'safeguard',
       {
-        num: 219,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3676,7 +3454,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'painsplit',
       {
-        num: 220,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3692,7 +3469,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sacredfire',
       {
-        num: 221,
         accuracy: 95,
         basePower: '100',
         category: 'Physical',
@@ -3709,7 +3485,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magnitude',
       {
-        num: 222,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -3725,7 +3500,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dynamicpunch',
       {
-        num: 223,
         accuracy: 50,
         basePower: '100',
         category: 'Physical',
@@ -3742,7 +3516,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'megahorn',
       {
-        num: 224,
         accuracy: 85,
         basePower: '120',
         category: 'Physical',
@@ -3759,7 +3532,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonbreath',
       {
-        num: 225,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -3776,7 +3548,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'batonpass',
       {
-        num: 226,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3792,7 +3563,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'encore',
       {
-        num: 227,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3808,7 +3578,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pursuit',
       {
-        num: 228,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -3824,7 +3593,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rapidspin',
       {
-        num: 229,
         accuracy: 100,
         basePower: '20',
         category: 'Physical',
@@ -3840,7 +3608,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sweetscent',
       {
-        num: 230,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3857,7 +3624,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'irontail',
       {
-        num: 231,
         accuracy: 75,
         basePower: '100',
         category: 'Physical',
@@ -3874,7 +3640,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'metalclaw',
       {
-        num: 232,
         accuracy: 95,
         basePower: '50',
         category: 'Physical',
@@ -3891,7 +3656,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'vitalthrow',
       {
-        num: 233,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -3908,7 +3672,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'morningsun',
       {
-        num: 234,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3924,7 +3687,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'synthesis',
       {
-        num: 235,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3940,7 +3702,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'moonlight',
       {
-        num: 236,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -3956,7 +3717,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hiddenpower',
       {
-        num: 237,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -3973,7 +3733,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'crosschop',
       {
-        num: 238,
         accuracy: 80,
         basePower: '100',
         category: 'Physical',
@@ -3990,7 +3749,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'twister',
       {
-        num: 239,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -4006,7 +3764,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'raindance',
       {
-        num: 240,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4022,7 +3779,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sunnyday',
       {
-        num: 241,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4038,7 +3794,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'crunch',
       {
-        num: 242,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -4055,7 +3810,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mirrorcoat',
       {
-        num: 243,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -4071,7 +3825,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychup',
       {
-        num: 244,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4088,7 +3841,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'extremespeed',
       {
-        num: 245,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -4105,7 +3857,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'ancientpower',
       {
-        num: 246,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -4121,7 +3872,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowball',
       {
-        num: 247,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -4137,7 +3887,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'futuresight',
       {
-        num: 248,
         accuracy: 100,
         basePower: '120',
         category: 'Special',
@@ -4153,7 +3902,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rocksmash',
       {
-        num: 249,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -4170,7 +3918,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'whirlpool',
       {
-        num: 250,
         accuracy: 85,
         basePower: '35',
         category: 'Special',
@@ -4186,7 +3933,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'beatup',
       {
-        num: 251,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -4202,7 +3948,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fakeout',
       {
-        num: 252,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -4218,7 +3963,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'uproar',
       {
-        num: 253,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -4234,7 +3978,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stockpile',
       {
-        num: 254,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4250,7 +3993,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spitup',
       {
-        num: 255,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -4266,7 +4008,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'swallow',
       {
-        num: 256,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4282,7 +4023,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'heatwave',
       {
-        num: 257,
         accuracy: 90,
         basePower: '95',
         category: 'Special',
@@ -4299,7 +4039,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hail',
       {
-        num: 258,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4315,7 +4054,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'torment',
       {
-        num: 259,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4331,7 +4069,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flatter',
       {
-        num: 260,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4348,7 +4085,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'willowisp',
       {
-        num: 261,
         accuracy: 85,
         basePower: '0',
         category: 'Status',
@@ -4365,7 +4101,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'memento',
       {
-        num: 262,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4381,7 +4116,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'facade',
       {
-        num: 263,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -4397,7 +4131,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'focuspunch',
       {
-        num: 264,
         accuracy: 100,
         basePower: '150',
         category: 'Physical',
@@ -4413,7 +4146,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'smellingsalts',
       {
-        num: 265,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -4429,7 +4161,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'followme',
       {
-        num: 266,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4445,7 +4176,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'naturepower',
       {
-        num: 267,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4461,7 +4191,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'charge',
       {
-        num: 268,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4477,7 +4206,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'taunt',
       {
-        num: 269,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4493,7 +4221,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'helpinghand',
       {
-        num: 270,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4509,7 +4236,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'trick',
       {
-        num: 271,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4525,7 +4251,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'roleplay',
       {
-        num: 272,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4541,7 +4266,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wish',
       {
-        num: 273,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4557,7 +4281,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'assist',
       {
-        num: 274,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4574,7 +4297,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'ingrain',
       {
-        num: 275,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4590,7 +4312,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'superpower',
       {
-        num: 276,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -4607,7 +4328,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magiccoat',
       {
-        num: 277,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4623,7 +4343,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'recycle',
       {
-        num: 278,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4639,7 +4358,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'revenge',
       {
-        num: 279,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -4656,7 +4374,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'brickbreak',
       {
-        num: 280,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -4672,7 +4389,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'yawn',
       {
-        num: 281,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4688,7 +4404,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'knockoff',
       {
-        num: 282,
         accuracy: 100,
         basePower: '65',
         category: 'Physical',
@@ -4704,7 +4419,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'endeavor',
       {
-        num: 283,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -4720,7 +4434,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'eruption',
       {
-        num: 284,
         accuracy: 100,
         basePower: '150',
         category: 'Special',
@@ -4736,7 +4449,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'skillswap',
       {
-        num: 285,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4753,7 +4465,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'imprison',
       {
-        num: 286,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4769,7 +4480,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'refresh',
       {
-        num: 287,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4786,7 +4496,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'grudge',
       {
-        num: 288,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4802,7 +4511,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'snatch',
       {
-        num: 289,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4818,7 +4526,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'secretpower',
       {
-        num: 290,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -4834,7 +4541,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dive',
       {
-        num: 291,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -4850,7 +4556,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'armthrust',
       {
-        num: 292,
         accuracy: 100,
         basePower: '15',
         category: 'Physical',
@@ -4866,7 +4571,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'camouflage',
       {
-        num: 293,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4882,7 +4586,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tailglow',
       {
-        num: 294,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4899,7 +4602,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lusterpurge',
       {
-        num: 295,
         accuracy: 100,
         basePower: '70',
         category: 'Special',
@@ -4915,7 +4617,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mistball',
       {
-        num: 296,
         accuracy: 100,
         basePower: '70',
         category: 'Special',
@@ -4931,7 +4632,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'featherdance',
       {
-        num: 297,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4948,7 +4648,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'teeterdance',
       {
-        num: 298,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4965,7 +4664,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'blazekick',
       {
-        num: 299,
         accuracy: 90,
         basePower: '85',
         category: 'Physical',
@@ -4981,7 +4679,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mudsport',
       {
-        num: 300,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -4997,7 +4694,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'iceball',
       {
-        num: 301,
         accuracy: 90,
         basePower: '30',
         category: 'Physical',
@@ -5013,7 +4709,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'needlearm',
       {
-        num: 302,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -5030,7 +4725,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'slackoff',
       {
-        num: 303,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5047,7 +4741,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hypervoice',
       {
-        num: 304,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -5064,7 +4757,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poisonfang',
       {
-        num: 305,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -5081,7 +4773,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'crushclaw',
       {
-        num: 306,
         accuracy: 95,
         basePower: '75',
         category: 'Physical',
@@ -5098,7 +4789,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'blastburn',
       {
-        num: 307,
         accuracy: 90,
         basePower: '150',
         category: 'Special',
@@ -5115,7 +4805,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hydrocannon',
       {
-        num: 308,
         accuracy: 90,
         basePower: '150',
         category: 'Special',
@@ -5131,7 +4820,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'meteormash',
       {
-        num: 309,
         accuracy: 90,
         basePower: '90',
         category: 'Physical',
@@ -5148,7 +4836,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'astonish',
       {
-        num: 310,
         accuracy: 100,
         basePower: '30',
         category: 'Physical',
@@ -5165,7 +4852,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'weatherball',
       {
-        num: 311,
         accuracy: 100,
         basePower: '50',
         category: 'Special',
@@ -5181,7 +4867,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aromatherapy',
       {
-        num: 312,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5197,7 +4882,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'faketears',
       {
-        num: 313,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5214,7 +4898,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aircutter',
       {
-        num: 314,
         accuracy: 95,
         basePower: '60',
         category: 'Special',
@@ -5231,7 +4914,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'overheat',
       {
-        num: 315,
         accuracy: 90,
         basePower: '130',
         category: 'Special',
@@ -5248,7 +4930,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'odorsleuth',
       {
-        num: 316,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5264,7 +4945,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rocktomb',
       {
-        num: 317,
         accuracy: 95,
         basePower: '60',
         category: 'Physical',
@@ -5281,7 +4961,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'silverwind',
       {
-        num: 318,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -5297,7 +4976,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'metalsound',
       {
-        num: 319,
         accuracy: 85,
         basePower: '0',
         category: 'Status',
@@ -5314,7 +4992,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'grasswhistle',
       {
-        num: 320,
         accuracy: 55,
         basePower: '0',
         category: 'Status',
@@ -5331,7 +5008,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tickle',
       {
-        num: 321,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5348,7 +5024,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'cosmicpower',
       {
-        num: 322,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5365,7 +5040,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'waterspout',
       {
-        num: 323,
         accuracy: 100,
         basePower: '150',
         category: 'Special',
@@ -5381,7 +5055,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'signalbeam',
       {
-        num: 324,
         accuracy: 100,
         basePower: '75',
         category: 'Special',
@@ -5398,7 +5071,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowpunch',
       {
-        num: 325,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -5415,7 +5087,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'extrasensory',
       {
-        num: 326,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -5432,7 +5103,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'skyuppercut',
       {
-        num: 327,
         accuracy: 90,
         basePower: '85',
         category: 'Physical',
@@ -5449,7 +5119,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sandtomb',
       {
-        num: 328,
         accuracy: 85,
         basePower: '35',
         category: 'Physical',
@@ -5465,7 +5134,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sheercold',
       {
-        num: 329,
         accuracy: 30,
         basePower: '0',
         category: 'Special',
@@ -5481,7 +5149,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'muddywater',
       {
-        num: 330,
         accuracy: 85,
         basePower: '90',
         category: 'Special',
@@ -5498,7 +5165,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bulletseed',
       {
-        num: 331,
         accuracy: 100,
         basePower: '25',
         category: 'Physical',
@@ -5514,7 +5180,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aerialace',
       {
-        num: 332,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -5531,7 +5196,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'iciclespear',
       {
-        num: 333,
         accuracy: 100,
         basePower: '25',
         category: 'Physical',
@@ -5547,7 +5211,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'irondefense',
       {
-        num: 334,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5564,7 +5227,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'block',
       {
-        num: 335,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5580,7 +5242,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'howl',
       {
-        num: 336,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5597,7 +5258,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonclaw',
       {
-        num: 337,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -5614,7 +5274,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'frenzyplant',
       {
-        num: 338,
         accuracy: 90,
         basePower: '150',
         category: 'Special',
@@ -5630,7 +5289,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bulkup',
       {
-        num: 339,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5647,7 +5305,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bounce',
       {
-        num: 340,
         accuracy: 85,
         basePower: '85',
         category: 'Physical',
@@ -5663,7 +5320,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mudshot',
       {
-        num: 341,
         accuracy: 95,
         basePower: '55',
         category: 'Special',
@@ -5680,7 +5336,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poisontail',
       {
-        num: 342,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -5696,7 +5351,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'covet',
       {
-        num: 343,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -5712,7 +5366,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'volttackle',
       {
-        num: 344,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -5728,7 +5381,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magicalleaf',
       {
-        num: 345,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -5745,7 +5397,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'watersport',
       {
-        num: 346,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5761,7 +5412,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'calmmind',
       {
-        num: 347,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5777,7 +5427,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leafblade',
       {
-        num: 348,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -5794,7 +5443,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragondance',
       {
-        num: 349,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5811,7 +5459,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rockblast',
       {
-        num: 350,
         accuracy: 90,
         basePower: '25',
         category: 'Physical',
@@ -5827,7 +5474,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shockwave',
       {
-        num: 351,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -5844,7 +5490,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'waterpulse',
       {
-        num: 352,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -5861,7 +5506,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doomdesire',
       {
-        num: 353,
         accuracy: 100,
         basePower: '140',
         category: 'Special',
@@ -5877,7 +5521,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychoboost',
       {
-        num: 354,
         accuracy: 90,
         basePower: '140',
         category: 'Special',
@@ -5894,7 +5537,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'roost',
       {
-        num: 355,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5910,7 +5552,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gravity',
       {
-        num: 356,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5926,7 +5567,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'miracleeye',
       {
-        num: 357,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -5942,7 +5582,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wakeupslap',
       {
-        num: 358,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -5958,7 +5597,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hammerarm',
       {
-        num: 359,
         accuracy: 90,
         basePower: '100',
         category: 'Physical',
@@ -5975,7 +5613,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gyroball',
       {
-        num: 360,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -5991,7 +5628,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'healingwish',
       {
-        num: 361,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6007,7 +5643,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'brine',
       {
-        num: 362,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -6023,7 +5658,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'naturalgift',
       {
-        num: 363,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -6039,7 +5673,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'feint',
       {
-        num: 364,
         accuracy: 100,
         basePower: '30',
         category: 'Physical',
@@ -6055,7 +5688,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pluck',
       {
-        num: 365,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -6071,7 +5703,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tailwind',
       {
-        num: 366,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6087,7 +5718,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'acupressure',
       {
-        num: 367,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6103,7 +5733,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'metalburst',
       {
-        num: 368,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -6119,7 +5748,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'uturn',
       {
-        num: 369,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -6135,7 +5763,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'closecombat',
       {
-        num: 370,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -6152,7 +5779,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'payback',
       {
-        num: 371,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -6168,7 +5794,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'assurance',
       {
-        num: 372,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -6184,7 +5809,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'embargo',
       {
-        num: 373,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6200,7 +5824,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fling',
       {
-        num: 374,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -6216,7 +5839,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychoshift',
       {
-        num: 375,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6232,7 +5854,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'trumpcard',
       {
-        num: 376,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -6248,7 +5869,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'healblock',
       {
-        num: 377,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6264,7 +5884,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wringout',
       {
-        num: 378,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -6280,7 +5899,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powertrick',
       {
-        num: 379,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6296,7 +5914,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gastroacid',
       {
-        num: 380,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6313,7 +5930,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'luckychant',
       {
-        num: 381,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6329,7 +5945,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mefirst',
       {
-        num: 382,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6345,7 +5960,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'copycat',
       {
-        num: 383,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6362,7 +5976,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powerswap',
       {
-        num: 384,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6378,7 +5991,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'guardswap',
       {
-        num: 385,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6394,7 +6006,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'punishment',
       {
-        num: 386,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -6410,7 +6021,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lastresort',
       {
-        num: 387,
         accuracy: 100,
         basePower: '140',
         category: 'Physical',
@@ -6426,7 +6036,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'worryseed',
       {
-        num: 388,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6443,7 +6052,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'suckerpunch',
       {
-        num: 389,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -6459,7 +6067,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'toxicspikes',
       {
-        num: 390,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6475,7 +6082,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'heartswap',
       {
-        num: 391,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6492,7 +6098,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aquaring',
       {
-        num: 392,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6508,7 +6113,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magnetrise',
       {
-        num: 393,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6524,7 +6128,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flareblitz',
       {
-        num: 394,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -6540,7 +6143,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'forcepalm',
       {
-        num: 395,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -6557,7 +6159,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aurasphere',
       {
-        num: 396,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -6574,7 +6175,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rockpolish',
       {
-        num: 397,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6591,7 +6191,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poisonjab',
       {
-        num: 398,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -6608,7 +6207,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'darkpulse',
       {
-        num: 399,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -6625,7 +6223,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nightslash',
       {
-        num: 400,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -6642,7 +6239,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aquatail',
       {
-        num: 401,
         accuracy: 90,
         basePower: '90',
         category: 'Physical',
@@ -6659,7 +6255,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'seedbomb',
       {
-        num: 402,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -6676,7 +6271,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'airslash',
       {
-        num: 403,
         accuracy: 95,
         basePower: '75',
         category: 'Special',
@@ -6693,7 +6287,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'xscissor',
       {
-        num: 404,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -6710,7 +6303,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bugbuzz',
       {
-        num: 405,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -6726,7 +6318,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonpulse',
       {
-        num: 406,
         accuracy: 100,
         basePower: '85',
         category: 'Special',
@@ -6743,7 +6334,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonrush',
       {
-        num: 407,
         accuracy: 75,
         basePower: '100',
         category: 'Physical',
@@ -6759,7 +6349,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powergem',
       {
-        num: 408,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -6776,7 +6365,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'drainpunch',
       {
-        num: 409,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -6792,7 +6380,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'vacuumwave',
       {
-        num: 410,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -6809,7 +6396,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'focusblast',
       {
-        num: 411,
         accuracy: 70,
         basePower: '120',
         category: 'Special',
@@ -6825,7 +6411,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'energyball',
       {
-        num: 412,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -6841,7 +6426,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bravebird',
       {
-        num: 413,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -6857,7 +6441,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'earthpower',
       {
-        num: 414,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -6873,7 +6456,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'switcheroo',
       {
-        num: 415,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6889,7 +6471,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gigaimpact',
       {
-        num: 416,
         accuracy: 90,
         basePower: '150',
         category: 'Physical',
@@ -6905,7 +6486,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nastyplot',
       {
-        num: 417,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -6922,7 +6502,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bulletpunch',
       {
-        num: 418,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -6939,7 +6518,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'avalanche',
       {
-        num: 419,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -6956,7 +6534,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'iceshard',
       {
-        num: 420,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -6973,7 +6550,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowclaw',
       {
-        num: 421,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -6990,7 +6566,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thunderfang',
       {
-        num: 422,
         accuracy: 95,
         basePower: '65',
         category: 'Physical',
@@ -7006,7 +6581,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'icefang',
       {
-        num: 423,
         accuracy: 95,
         basePower: '65',
         category: 'Physical',
@@ -7022,7 +6596,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'firefang',
       {
-        num: 424,
         accuracy: 95,
         basePower: '65',
         category: 'Physical',
@@ -7038,7 +6611,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowsneak',
       {
-        num: 425,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -7055,7 +6627,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mudbomb',
       {
-        num: 426,
         accuracy: 85,
         basePower: '65',
         category: 'Special',
@@ -7072,7 +6643,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychocut',
       {
-        num: 427,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -7089,7 +6659,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'zenheadbutt',
       {
-        num: 428,
         accuracy: 90,
         basePower: '80',
         category: 'Physical',
@@ -7106,7 +6675,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mirrorshot',
       {
-        num: 429,
         accuracy: 85,
         basePower: '65',
         category: 'Special',
@@ -7123,7 +6691,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flashcannon',
       {
-        num: 430,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -7139,7 +6706,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rockclimb',
       {
-        num: 431,
         accuracy: 85,
         basePower: '90',
         category: 'Physical',
@@ -7156,7 +6722,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'defog',
       {
-        num: 432,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7172,7 +6737,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'trickroom',
       {
-        num: 433,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7189,7 +6753,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dracometeor',
       {
-        num: 434,
         accuracy: 90,
         basePower: '130',
         category: 'Special',
@@ -7206,7 +6769,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'discharge',
       {
-        num: 435,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -7223,7 +6785,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lavaplume',
       {
-        num: 436,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -7240,7 +6801,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leafstorm',
       {
-        num: 437,
         accuracy: 90,
         basePower: '130',
         category: 'Special',
@@ -7257,7 +6817,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powerwhip',
       {
-        num: 438,
         accuracy: 85,
         basePower: '120',
         category: 'Physical',
@@ -7274,7 +6833,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rockwrecker',
       {
-        num: 439,
         accuracy: 90,
         basePower: '150',
         category: 'Physical',
@@ -7290,7 +6848,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'crosspoison',
       {
-        num: 440,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -7306,7 +6863,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gunkshot',
       {
-        num: 441,
         accuracy: 80,
         basePower: '120',
         category: 'Physical',
@@ -7323,7 +6879,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'ironhead',
       {
-        num: 442,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -7340,7 +6895,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magnetbomb',
       {
-        num: 443,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -7357,7 +6911,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stoneedge',
       {
-        num: 444,
         accuracy: 80,
         basePower: '100',
         category: 'Physical',
@@ -7374,7 +6927,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'captivate',
       {
-        num: 445,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7390,7 +6942,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stealthrock',
       {
-        num: 446,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7406,7 +6957,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'grassknot',
       {
-        num: 447,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -7422,7 +6972,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'chatter',
       {
-        num: 448,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -7439,7 +6988,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'judgment',
       {
-        num: 449,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -7456,7 +7004,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bugbite',
       {
-        num: 450,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -7472,7 +7019,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'chargebeam',
       {
-        num: 451,
         accuracy: 90,
         basePower: '50',
         category: 'Special',
@@ -7489,7 +7035,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'woodhammer',
       {
-        num: 452,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -7505,7 +7050,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aquajet',
       {
-        num: 453,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -7522,7 +7066,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'attackorder',
       {
-        num: 454,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -7539,7 +7082,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'defendorder',
       {
-        num: 455,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7556,7 +7098,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'healorder',
       {
-        num: 456,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7573,7 +7114,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'headsmash',
       {
-        num: 457,
         accuracy: 80,
         basePower: '150',
         category: 'Physical',
@@ -7589,7 +7129,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doublehit',
       {
-        num: 458,
         accuracy: 90,
         basePower: '35',
         category: 'Physical',
@@ -7605,7 +7144,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'roaroftime',
       {
-        num: 459,
         accuracy: 90,
         basePower: '150',
         category: 'Special',
@@ -7621,7 +7159,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spacialrend',
       {
-        num: 460,
         accuracy: 95,
         basePower: '100',
         category: 'Special',
@@ -7638,7 +7175,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lunardance',
       {
-        num: 461,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7654,7 +7190,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'crushgrip',
       {
-        num: 462,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -7670,7 +7205,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magmastorm',
       {
-        num: 463,
         accuracy: 75,
         basePower: '100',
         category: 'Special',
@@ -7686,7 +7220,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'darkvoid',
       {
-        num: 464,
         accuracy: 50,
         basePower: '0',
         category: 'Status',
@@ -7702,7 +7235,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'seedflare',
       {
-        num: 465,
         accuracy: 85,
         basePower: '120',
         category: 'Special',
@@ -7718,7 +7250,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'ominouswind',
       {
-        num: 466,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -7734,7 +7265,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowforce',
       {
-        num: 467,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -7750,7 +7280,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'honeclaws',
       {
-        num: 468,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7767,7 +7296,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wideguard',
       {
-        num: 469,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7783,7 +7311,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'guardsplit',
       {
-        num: 470,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7799,7 +7326,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powersplit',
       {
-        num: 471,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7815,7 +7341,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wonderroom',
       {
-        num: 472,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7831,7 +7356,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psyshock',
       {
-        num: 473,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -7847,7 +7371,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'venoshock',
       {
-        num: 474,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -7864,7 +7387,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'autotomize',
       {
-        num: 475,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7880,7 +7402,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'ragepowder',
       {
-        num: 476,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7896,7 +7417,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'telekinesis',
       {
-        num: 477,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7912,7 +7432,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magicroom',
       {
-        num: 478,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -7928,7 +7447,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'smackdown',
       {
-        num: 479,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -7944,7 +7462,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stormthrow',
       {
-        num: 480,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -7960,7 +7477,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flameburst',
       {
-        num: 481,
         accuracy: 100,
         basePower: '70',
         category: 'Special',
@@ -7976,7 +7492,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sludgewave',
       {
-        num: 482,
         accuracy: 100,
         basePower: '95',
         category: 'Special',
@@ -7993,7 +7508,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'quiverdance',
       {
-        num: 483,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8009,7 +7523,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'heavyslam',
       {
-        num: 484,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -8025,7 +7538,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'synchronoise',
       {
-        num: 485,
         accuracy: 100,
         basePower: '120',
         category: 'Special',
@@ -8042,7 +7554,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'electroball',
       {
-        num: 486,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -8058,7 +7569,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'soak',
       {
-        num: 487,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8074,7 +7584,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flamecharge',
       {
-        num: 488,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -8091,7 +7600,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'coil',
       {
-        num: 489,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8108,7 +7616,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lowsweep',
       {
-        num: 490,
         accuracy: 100,
         basePower: '65',
         category: 'Physical',
@@ -8125,7 +7632,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'acidspray',
       {
-        num: 491,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -8141,7 +7647,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'foulplay',
       {
-        num: 492,
         accuracy: 100,
         basePower: '95',
         category: 'Physical',
@@ -8157,7 +7662,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'simplebeam',
       {
-        num: 493,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8174,7 +7678,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'entrainment',
       {
-        num: 494,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8190,7 +7693,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'afteryou',
       {
-        num: 495,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8206,7 +7708,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'round',
       {
-        num: 496,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -8222,7 +7723,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'echoedvoice',
       {
-        num: 497,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -8238,7 +7738,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'chipaway',
       {
-        num: 498,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -8255,7 +7754,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'clearsmog',
       {
-        num: 499,
         accuracy: 100,
         basePower: '50',
         category: 'Special',
@@ -8272,7 +7770,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'storedpower',
       {
-        num: 500,
         accuracy: 100,
         basePower: '20',
         category: 'Special',
@@ -8288,7 +7785,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'quickguard',
       {
-        num: 501,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8304,7 +7800,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'allyswitch',
       {
-        num: 502,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8320,7 +7815,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'scald',
       {
-        num: 503,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -8336,7 +7830,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shellsmash',
       {
-        num: 504,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8352,7 +7845,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'healpulse',
       {
-        num: 505,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8368,7 +7860,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hex',
       {
-        num: 506,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -8385,7 +7876,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'skydrop',
       {
-        num: 507,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -8401,7 +7891,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shiftgear',
       {
-        num: 508,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8418,7 +7907,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'circlethrow',
       {
-        num: 509,
         accuracy: 90,
         basePower: '60',
         category: 'Physical',
@@ -8434,7 +7922,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'incinerate',
       {
-        num: 510,
         accuracy: 100,
         basePower: '60',
         category: 'Special',
@@ -8450,7 +7937,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'quash',
       {
-        num: 511,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8466,7 +7952,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'acrobatics',
       {
-        num: 512,
         accuracy: 100,
         basePower: '55',
         category: 'Physical',
@@ -8483,7 +7968,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'reflecttype',
       {
-        num: 513,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8499,7 +7983,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'retaliate',
       {
-        num: 514,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -8515,7 +7998,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'finalgambit',
       {
-        num: 515,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -8531,7 +8013,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bestow',
       {
-        num: 516,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8547,7 +8028,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'inferno',
       {
-        num: 517,
         accuracy: 50,
         basePower: '100',
         category: 'Special',
@@ -8564,7 +8044,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'waterpledge',
       {
-        num: 518,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -8580,7 +8059,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'firepledge',
       {
-        num: 519,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -8596,7 +8074,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'grasspledge',
       {
-        num: 520,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -8612,7 +8089,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'voltswitch',
       {
-        num: 521,
         accuracy: 100,
         basePower: '70',
         category: 'Special',
@@ -8628,7 +8104,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'strugglebug',
       {
-        num: 522,
         accuracy: 100,
         basePower: '50',
         category: 'Special',
@@ -8644,7 +8119,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bulldoze',
       {
-        num: 523,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -8661,7 +8135,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'frostbreath',
       {
-        num: 524,
         accuracy: 90,
         basePower: '60',
         category: 'Special',
@@ -8677,7 +8150,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragontail',
       {
-        num: 525,
         accuracy: 90,
         basePower: '60',
         category: 'Physical',
@@ -8693,7 +8165,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'workup',
       {
-        num: 526,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8710,7 +8181,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'electroweb',
       {
-        num: 527,
         accuracy: 95,
         basePower: '55',
         category: 'Special',
@@ -8727,7 +8197,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'wildcharge',
       {
-        num: 528,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -8743,7 +8212,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'drillrun',
       {
-        num: 529,
         accuracy: 95,
         basePower: '80',
         category: 'Physical',
@@ -8760,7 +8228,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dualchop',
       {
-        num: 530,
         accuracy: 90,
         basePower: '40',
         category: 'Physical',
@@ -8776,7 +8243,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'heartstamp',
       {
-        num: 531,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -8793,7 +8259,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hornleech',
       {
-        num: 532,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -8809,7 +8274,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sacredsword',
       {
-        num: 533,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -8826,7 +8290,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'razorshell',
       {
-        num: 534,
         accuracy: 95,
         basePower: '75',
         category: 'Physical',
@@ -8843,7 +8306,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'heatcrash',
       {
-        num: 535,
         accuracy: 100,
         basePower: '0',
         category: 'Physical',
@@ -8859,7 +8321,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leaftornado',
       {
-        num: 536,
         accuracy: 90,
         basePower: '65',
         category: 'Special',
@@ -8876,7 +8337,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'steamroller',
       {
-        num: 537,
         accuracy: 100,
         basePower: '65',
         category: 'Physical',
@@ -8892,7 +8352,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'cottonguard',
       {
-        num: 538,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -8909,7 +8368,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nightdaze',
       {
-        num: 539,
         accuracy: 95,
         basePower: '85',
         category: 'Special',
@@ -8926,7 +8384,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psystrike',
       {
-        num: 540,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -8942,7 +8399,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tailslap',
       {
-        num: 541,
         accuracy: 85,
         basePower: '25',
         category: 'Physical',
@@ -8958,7 +8414,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hurricane',
       {
-        num: 542,
         accuracy: 70,
         basePower: '110',
         category: 'Special',
@@ -8974,7 +8429,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'headcharge',
       {
-        num: 543,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -8990,7 +8444,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'geargrind',
       {
-        num: 544,
         accuracy: 85,
         basePower: '50',
         category: 'Physical',
@@ -9006,7 +8459,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'searingshot',
       {
-        num: 545,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -9023,7 +8475,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'technoblast',
       {
-        num: 546,
         accuracy: 100,
         basePower: '120',
         category: 'Special',
@@ -9040,7 +8491,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'relicsong',
       {
-        num: 547,
         accuracy: 100,
         basePower: '75',
         category: 'Special',
@@ -9056,7 +8506,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'secretsword',
       {
-        num: 548,
         accuracy: 100,
         basePower: '85',
         category: 'Special',
@@ -9072,7 +8521,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'glaciate',
       {
-        num: 549,
         accuracy: 95,
         basePower: '65',
         category: 'Special',
@@ -9089,7 +8537,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'boltstrike',
       {
-        num: 550,
         accuracy: 85,
         basePower: '130',
         category: 'Physical',
@@ -9106,7 +8553,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'blueflare',
       {
-        num: 551,
         accuracy: 85,
         basePower: '130',
         category: 'Special',
@@ -9123,7 +8569,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fierydance',
       {
-        num: 552,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -9140,7 +8585,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'freezeshock',
       {
-        num: 553,
         accuracy: 90,
         basePower: '140',
         category: 'Physical',
@@ -9156,7 +8600,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'iceburn',
       {
-        num: 554,
         accuracy: 90,
         basePower: '140',
         category: 'Special',
@@ -9172,7 +8615,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'snarl',
       {
-        num: 555,
         accuracy: 95,
         basePower: '55',
         category: 'Special',
@@ -9188,7 +8630,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'iciclecrash',
       {
-        num: 556,
         accuracy: 90,
         basePower: '85',
         category: 'Physical',
@@ -9205,7 +8646,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'vcreate',
       {
-        num: 557,
         accuracy: 95,
         basePower: '180',
         category: 'Physical',
@@ -9221,7 +8661,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fusionflare',
       {
-        num: 558,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -9237,7 +8676,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fusionbolt',
       {
-        num: 559,
         accuracy: 100,
         basePower: '100',
         category: 'Physical',
@@ -9253,7 +8691,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flyingpress',
       {
-        num: 560,
         accuracy: 95,
         basePower: '100',
         category: 'Physical',
@@ -9269,7 +8706,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'matblock',
       {
-        num: 561,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9285,7 +8721,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'belch',
       {
-        num: 562,
         accuracy: 90,
         basePower: '120',
         category: 'Special',
@@ -9301,7 +8736,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'rototiller',
       {
-        num: 563,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9317,7 +8751,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stickyweb',
       {
-        num: 564,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9333,7 +8766,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fellstinger',
       {
-        num: 565,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -9349,7 +8781,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'phantomforce',
       {
-        num: 566,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -9365,7 +8796,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'trickortreat',
       {
-        num: 567,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9381,7 +8811,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nobleroar',
       {
-        num: 568,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9398,7 +8827,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'iondeluge',
       {
-        num: 569,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9415,7 +8843,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'paraboliccharge',
       {
-        num: 570,
         accuracy: 100,
         basePower: '65',
         category: 'Special',
@@ -9431,7 +8858,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'forestscurse',
       {
-        num: 571,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9447,7 +8873,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'petalblizzard',
       {
-        num: 572,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -9464,7 +8889,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'freezedry',
       {
-        num: 573,
         accuracy: 100,
         basePower: '70',
         category: 'Special',
@@ -9480,7 +8904,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'disarmingvoice',
       {
-        num: 574,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -9497,7 +8920,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'partingshot',
       {
-        num: 575,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9513,7 +8935,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'topsyturvy',
       {
-        num: 576,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9529,7 +8950,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'drainingkiss',
       {
-        num: 577,
         accuracy: 100,
         basePower: '50',
         category: 'Special',
@@ -9545,7 +8965,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'craftyshield',
       {
-        num: 578,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9561,7 +8980,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'flowershield',
       {
-        num: 579,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9577,7 +8995,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'grassyterrain',
       {
-        num: 580,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9593,7 +9010,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mistyterrain',
       {
-        num: 581,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9609,7 +9025,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'electrify',
       {
-        num: 582,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9625,7 +9040,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'playrough',
       {
-        num: 583,
         accuracy: 90,
         basePower: '90',
         category: 'Physical',
@@ -9642,7 +9056,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fairywind',
       {
-        num: 584,
         accuracy: 100,
         basePower: '40',
         category: 'Special',
@@ -9659,7 +9072,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'moonblast',
       {
-        num: 585,
         accuracy: 100,
         basePower: '95',
         category: 'Special',
@@ -9675,7 +9087,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'boomburst',
       {
-        num: 586,
         accuracy: 100,
         basePower: '140',
         category: 'Special',
@@ -9692,7 +9103,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fairylock',
       {
-        num: 587,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9708,7 +9118,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'kingsshield',
       {
-        num: 588,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9724,7 +9133,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'playnice',
       {
-        num: 589,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9741,7 +9149,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'confide',
       {
-        num: 590,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9758,7 +9165,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'diamondstorm',
       {
-        num: 591,
         accuracy: 95,
         basePower: '100',
         category: 'Physical',
@@ -9775,7 +9181,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'steameruption',
       {
-        num: 592,
         accuracy: 95,
         basePower: '110',
         category: 'Special',
@@ -9791,7 +9196,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hyperspacehole',
       {
-        num: 593,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -9807,7 +9211,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'watershuriken',
       {
-        num: 594,
         accuracy: 100,
         basePower: '15',
         category: 'Special',
@@ -9823,7 +9226,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mysticalfire',
       {
-        num: 595,
         accuracy: 100,
         basePower: '75',
         category: 'Special',
@@ -9839,7 +9241,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spikyshield',
       {
-        num: 596,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9855,7 +9256,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aromaticmist',
       {
-        num: 597,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9871,7 +9271,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'eerieimpulse',
       {
-        num: 598,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9888,7 +9287,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'venomdrench',
       {
-        num: 599,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9904,7 +9302,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powder',
       {
-        num: 600,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9920,7 +9317,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'geomancy',
       {
-        num: 601,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9936,7 +9332,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'magneticflux',
       {
-        num: 602,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9952,7 +9347,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'happyhour',
       {
-        num: 603,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9969,7 +9363,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'electricterrain',
       {
-        num: 604,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -9985,7 +9378,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dazzlinggleam',
       {
-        num: 605,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -10002,7 +9394,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'celebrate',
       {
-        num: 606,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10019,7 +9410,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'babydolleyes',
       {
-        num: 608,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10036,7 +9426,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'nuzzle',
       {
-        num: 609,
         accuracy: 100,
         basePower: '20',
         category: 'Physical',
@@ -10053,7 +9442,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'holdback',
       {
-        num: 610,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -10070,7 +9458,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'infestation',
       {
-        num: 611,
         accuracy: 100,
         basePower: '20',
         category: 'Special',
@@ -10086,7 +9473,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'poweruppunch',
       {
-        num: 612,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -10103,7 +9489,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'oblivionwing',
       {
-        num: 613,
         accuracy: 100,
         basePower: '80',
         category: 'Special',
@@ -10119,7 +9504,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thousandarrows',
       {
-        num: 614,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -10135,7 +9519,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'holdhands',
       {
-        num: 615,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10151,7 +9534,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'thousandwaves',
       {
-        num: 615,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -10167,7 +9549,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'landswrath',
       {
-        num: 616,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -10184,7 +9565,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lightofruin',
       {
-        num: 617,
         accuracy: 90,
         basePower: '140',
         category: 'Special',
@@ -10200,7 +9580,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'originpulse',
       {
-        num: 618,
         accuracy: 85,
         basePower: '110',
         category: 'Special',
@@ -10217,7 +9596,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'precipiceblades',
       {
-        num: 619,
         accuracy: 85,
         basePower: '120',
         category: 'Physical',
@@ -10234,7 +9612,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonascent',
       {
-        num: 620,
         accuracy: 100,
         basePower: '120',
         category: 'Physical',
@@ -10251,7 +9628,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hyperspacefury',
       {
-        num: 621,
         accuracy: 100,
         basePower: '100',
         category: 'Physical',
@@ -10267,7 +9643,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'breakneckblitz',
       {
-        num: 622,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10284,7 +9659,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'alloutpummeling',
       {
-        num: 624,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10301,7 +9675,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'supersonicskystrike',
       {
-        num: 626,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10318,7 +9691,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'aciddownpour',
       {
-        num: 628,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10335,7 +9707,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tectonicrage',
       {
-        num: 630,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10352,7 +9723,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'continentalcrush',
       {
-        num: 632,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10369,7 +9739,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'savagespinout',
       {
-        num: 634,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10386,7 +9755,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'neverendingnightmare',
       {
-        num: 636,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10403,7 +9771,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'corkscrewcrash',
       {
-        num: 638,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10420,7 +9787,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'infernooverdrive',
       {
-        num: 640,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10437,7 +9803,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'hydrovortex',
       {
-        num: 642,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10454,7 +9819,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bloomdoom',
       {
-        num: 644,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10471,7 +9835,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gigavolthavoc',
       {
-        num: 646,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10488,7 +9851,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shatteredpsyche',
       {
-        num: 648,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10505,7 +9867,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'subzeroslammer',
       {
-        num: 650,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10522,7 +9883,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'devastatingdrake',
       {
-        num: 652,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10539,7 +9899,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'blackholeeclipse',
       {
-        num: 654,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10556,7 +9915,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'twinkletackle',
       {
-        num: 656,
         accuracy: 100,
         basePower: '1',
         category: 'Physical',
@@ -10573,7 +9931,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'catastropika',
       {
-        num: 658,
         accuracy: 100,
         basePower: '210',
         category: 'Physical',
@@ -10591,7 +9948,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shoreup',
       {
-        num: 659,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10607,7 +9963,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'firstimpression',
       {
-        num: 660,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -10624,7 +9979,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'banefulbunker',
       {
-        num: 661,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10640,7 +9994,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spiritshackle',
       {
-        num: 662,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -10656,7 +10009,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'darkestlariat',
       {
-        num: 663,
         accuracy: 100,
         basePower: '85',
         category: 'Physical',
@@ -10673,7 +10025,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sparklingaria',
       {
-        num: 664,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -10690,7 +10041,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'icehammer',
       {
-        num: 665,
         accuracy: 90,
         basePower: '100',
         category: 'Physical',
@@ -10707,7 +10057,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'floralhealing',
       {
-        num: 666,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10723,7 +10072,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'highhorsepower',
       {
-        num: 667,
         accuracy: 95,
         basePower: '95',
         category: 'Physical',
@@ -10740,7 +10088,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'strengthsap',
       {
-        num: 668,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10756,7 +10103,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'solarblade',
       {
-        num: 669,
         accuracy: 100,
         basePower: '125',
         category: 'Physical',
@@ -10772,7 +10118,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'leafage',
       {
-        num: 670,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -10789,7 +10134,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spotlight',
       {
-        num: 671,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10805,7 +10149,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'toxicthread',
       {
-        num: 672,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10822,7 +10165,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'laserfocus',
       {
-        num: 673,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10838,7 +10180,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'gearup',
       {
-        num: 674,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10854,7 +10195,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'throatchop',
       {
-        num: 675,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -10871,7 +10211,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pollenpuff',
       {
-        num: 676,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -10887,7 +10226,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'anchorshot',
       {
-        num: 677,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -10903,7 +10241,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychicterrain',
       {
-        num: 678,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -10919,7 +10256,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lunge',
       {
-        num: 679,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -10936,7 +10272,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'firelash',
       {
-        num: 680,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -10953,7 +10288,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'powertrip',
       {
-        num: 681,
         accuracy: 100,
         basePower: '20',
         category: 'Physical',
@@ -10969,7 +10303,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'burnup',
       {
-        num: 682,
         accuracy: 100,
         basePower: '130',
         category: 'Special',
@@ -10985,7 +10318,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'speedswap',
       {
-        num: 683,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -11002,7 +10334,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'smartstrike',
       {
-        num: 684,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -11019,7 +10350,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'purify',
       {
-        num: 685,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -11035,7 +10365,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'revelationdance',
       {
-        num: 686,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11052,7 +10381,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'coreenforcer',
       {
-        num: 687,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -11069,7 +10397,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tropkick',
       {
-        num: 688,
         accuracy: 100,
         basePower: '70',
         category: 'Physical',
@@ -11086,7 +10413,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'instruct',
       {
-        num: 689,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -11103,7 +10429,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'beakblast',
       {
-        num: 690,
         accuracy: 100,
         basePower: '100',
         category: 'Physical',
@@ -11119,7 +10444,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'clangingscales',
       {
-        num: 691,
         accuracy: 100,
         basePower: '110',
         category: 'Special',
@@ -11136,7 +10460,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'dragonhammer',
       {
-        num: 692,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -11153,7 +10476,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'brutalswing',
       {
-        num: 693,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',
@@ -11170,7 +10492,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'auroraveil',
       {
-        num: 694,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -11186,7 +10507,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sinisterarrowraid',
       {
-        num: 695,
         accuracy: 100,
         basePower: '180',
         category: 'Physical',
@@ -11204,7 +10524,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'maliciousmoonsault',
       {
-        num: 696,
         accuracy: 100,
         basePower: '180',
         category: 'Physical',
@@ -11221,7 +10540,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'oceanicoperetta',
       {
-        num: 697,
         accuracy: 100,
         basePower: '195',
         category: 'Special',
@@ -11239,7 +10557,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'guardianofalola',
       {
-        num: 698,
         accuracy: 100,
         basePower: '0',
         category: 'Special',
@@ -11256,7 +10573,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'soulstealing7starstrike',
       {
-        num: 699,
         accuracy: 100,
         basePower: '195',
         category: 'Physical',
@@ -11274,7 +10590,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stokedsparksurfer',
       {
-        num: 700,
         accuracy: 100,
         basePower: '175',
         category: 'Special',
@@ -11292,7 +10607,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pulverizingpancake',
       {
-        num: 701,
         accuracy: 100,
         basePower: '210',
         category: 'Physical',
@@ -11310,7 +10624,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'extremeevoboost',
       {
-        num: 702,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -11327,7 +10640,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'genesissupernova',
       {
-        num: 703,
         accuracy: 100,
         basePower: '185',
         category: 'Special',
@@ -11345,7 +10657,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shelltrap',
       {
-        num: 704,
         accuracy: 100,
         basePower: '150',
         category: 'Special',
@@ -11361,7 +10672,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'fleurcannon',
       {
-        num: 705,
         accuracy: 90,
         basePower: '130',
         category: 'Special',
@@ -11378,7 +10688,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'psychicfangs',
       {
-        num: 706,
         accuracy: 100,
         basePower: '85',
         category: 'Physical',
@@ -11394,7 +10703,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'stompingtantrum',
       {
-        num: 707,
         accuracy: 100,
         basePower: '75',
         category: 'Physical',
@@ -11410,7 +10718,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'shadowbone',
       {
-        num: 708,
         accuracy: 100,
         basePower: '85',
         category: 'Physical',
@@ -11427,7 +10734,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'accelerock',
       {
-        num: 709,
         accuracy: 100,
         basePower: '40',
         category: 'Physical',
@@ -11444,7 +10750,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'liquidation',
       {
-        num: 710,
         accuracy: 100,
         basePower: '85',
         category: 'Physical',
@@ -11461,7 +10766,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'prismaticlaser',
       {
-        num: 711,
         accuracy: 100,
         basePower: '160',
         category: 'Special',
@@ -11477,7 +10781,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'spectralthief',
       {
-        num: 712,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -11493,7 +10796,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sunsteelstrike',
       {
-        num: 713,
         accuracy: 100,
         basePower: '100',
         category: 'Physical',
@@ -11509,7 +10811,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'moongeistbeam',
       {
-        num: 714,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -11525,7 +10826,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'tearfullook',
       {
-        num: 715,
         accuracy: 100,
         basePower: '0',
         category: 'Status',
@@ -11542,7 +10842,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'zingzap',
       {
-        num: 716,
         accuracy: 100,
         basePower: '80',
         category: 'Physical',
@@ -11559,7 +10858,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'naturesmadness',
       {
-        num: 717,
         accuracy: 90,
         basePower: '0',
         category: 'Special',
@@ -11575,7 +10873,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'multiattack',
       {
-        num: 718,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -11592,7 +10889,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       '10000000voltthunderbolt',
       {
-        num: 719,
         accuracy: 100,
         basePower: '195',
         category: 'Special',
@@ -11610,7 +10906,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'mindblown',
       {
-        num: 720,
         accuracy: 100,
         basePower: '150',
         category: 'Special',
@@ -11626,7 +10921,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'plasmafists',
       {
-        num: 721,
         accuracy: 100,
         basePower: '100',
         category: 'Physical',
@@ -11642,7 +10936,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'photongeyser',
       {
-        num: 722,
         accuracy: 100,
         basePower: '100',
         category: 'Special',
@@ -11658,7 +10951,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'lightthatburnsthesky',
       {
-        num: 723,
         accuracy: 100,
         basePower: '200',
         category: 'Special',
@@ -11675,7 +10967,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'searingsunrazesmash',
       {
-        num: 724,
         accuracy: 100,
         basePower: '200',
         category: 'Physical',
@@ -11692,7 +10983,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'menacingmoonrazemaelstrom',
       {
-        num: 725,
         accuracy: 100,
         basePower: '200',
         category: 'Special',
@@ -11709,7 +10999,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'letssnuggleforever',
       {
-        num: 726,
         accuracy: 100,
         basePower: '190',
         category: 'Physical',
@@ -11727,7 +11016,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'splinteredstormshards',
       {
-        num: 727,
         accuracy: 100,
         basePower: '190',
         category: 'Physical',
@@ -11744,7 +11032,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'clangoroussoulblaze',
       {
-        num: 728,
         accuracy: 100,
         basePower: '185',
         category: 'Special',
@@ -11761,7 +11048,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'zippyzap',
       {
-        num: 729,
         accuracy: 100,
         basePower: '50',
         category: 'Physical',
@@ -11778,7 +11064,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'splishysplash',
       {
-        num: 730,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11795,7 +11080,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'floatyfall',
       {
-        num: 731,
         accuracy: 95,
         basePower: '90',
         category: 'Physical',
@@ -11812,7 +11096,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'pikapapow',
       {
-        num: 732,
         accuracy: 100,
         basePower: '(happiness * 10) / 25',
         category: 'Special',
@@ -11828,7 +11111,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'bouncybubble',
       {
-        num: 733,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11844,7 +11126,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'buzzybuzz',
       {
-        num: 734,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11861,7 +11142,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sizzlyslide',
       {
-        num: 735,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -11878,7 +11158,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'glitzyglow',
       {
-        num: 736,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11895,7 +11174,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'baddybad',
       {
-        num: 737,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11912,7 +11190,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sappyseed',
       {
-        num: 738,
         accuracy: 100,
         basePower: '90',
         category: 'Physical',
@@ -11929,7 +11206,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'freezyfrost',
       {
-        num: 739,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11946,7 +11222,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'sparklyswirl',
       {
-        num: 740,
         accuracy: 100,
         basePower: '90',
         category: 'Special',
@@ -11962,7 +11237,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'veeveevolley',
       {
-        num: 741,
         accuracy: 100,
         basePower: '(happiness * 10) / 25',
         category: 'Physical',
@@ -11978,7 +11252,6 @@ const moves = new GraphQLCollection<string, Pokemon.Move>(
     [
       'doubleironbash',
       {
-        num: 742,
         accuracy: 100,
         basePower: '60',
         category: 'Physical',

@@ -10,7 +10,6 @@ Object {
       "contestType": "Cool",
       "desc": "Deals 40 HP of damage to the target.",
       "name": "Dragon Rage",
-      "num": 82,
       "pp": 10,
       "priority": 0,
       "shortDesc": "Always does 40 HP of damage.",
@@ -24,7 +23,6 @@ Object {
       "contestType": "Cool",
       "desc": "Has a 30% chance to paralyze the target.",
       "name": "Dragon Breath",
-      "num": 225,
       "pp": 20,
       "priority": 0,
       "shortDesc": "30% chance to paralyze the target.",
@@ -38,7 +36,6 @@ Object {
       "contestType": "Cool",
       "desc": "No additional effect.",
       "name": "Dragon Claw",
-      "num": 337,
       "pp": 15,
       "priority": 0,
       "shortDesc": "No additional effect.",
@@ -52,7 +49,6 @@ Object {
       "contestType": "Cool",
       "desc": "Raises the user's Attack and Speed by 1 stage.",
       "name": "Dragon Dance",
-      "num": 349,
       "pp": 20,
       "priority": 0,
       "shortDesc": "Raises the user's Attack and Speed by 1.",
@@ -66,7 +62,6 @@ Object {
       "contestType": "Beautiful",
       "desc": "No additional effect.",
       "name": "Dragon Pulse",
-      "num": 406,
       "pp": 10,
       "priority": 0,
       "shortDesc": "No additional effect.",
@@ -79,7 +74,6 @@ Object {
       "category": "Physical",
       "contestType": "Tough",
       "name": "Dragon Rush",
-      "num": 407,
       "pp": 10,
       "priority": 0,
       "shortDesc": "20% chance to flinch the target.",
@@ -92,7 +86,6 @@ Object {
       "category": "Physical",
       "contestType": "Tough",
       "name": "Dragon Tail",
-      "num": 525,
       "pp": 10,
       "priority": -6,
       "shortDesc": "Forces the target to switch to a random ally.",
@@ -106,7 +99,6 @@ Object {
       "contestType": "Beautiful",
       "desc": "Lowers the user's Defense and Special Defense by 1 stage.",
       "name": "Dragon Ascent",
-      "num": 620,
       "pp": 5,
       "priority": 0,
       "shortDesc": "Lowers the user's Defense and Sp. Def by 1.",
@@ -120,7 +112,6 @@ Object {
       "contestType": "Tough",
       "desc": "No additional effect.",
       "name": "Dragon Hammer",
-      "num": 692,
       "pp": 15,
       "priority": 0,
       "shortDesc": "No additional effect.",
@@ -140,7 +131,6 @@ Object {
       "category": "Physical",
       "contestType": "Tough",
       "name": "Dragon Tail",
-      "num": 525,
       "pp": 10,
       "priority": -6,
       "shortDesc": "Forces the target to switch to a random ally.",
@@ -161,7 +151,6 @@ Object {
       "contestType": "Cool",
       "desc": "Raises the user's Attack and Speed by 1 stage.",
       "name": "Dragon Dance",
-      "num": 349,
       "pp": 20,
       "priority": 0,
       "shortDesc": "Raises the user's Attack and Speed by 1.",
@@ -175,7 +164,6 @@ Object {
       "contestType": "Beautiful",
       "desc": "Lowers the user's Defense and Special Defense by 1 stage.",
       "name": "Dragon Ascent",
-      "num": 620,
       "pp": 5,
       "priority": 0,
       "shortDesc": "Lowers the user's Defense and Sp. Def by 1.",
@@ -207,7 +195,6 @@ Object {
     "contestType": "Cool",
     "desc": "Raises the user's Attack and Speed by 1 stage.",
     "name": "Dragon Dance",
-    "num": 349,
     "pp": 20,
     "priority": 0,
     "shortDesc": "Raises the user's Attack and Speed by 1.",
@@ -229,7 +216,6 @@ exports[`getMoveDetailsByFuzzy GIVEN a fuzzy move THEN returns MoveEntry 1`] = `
 Object {
   "getMoveDetailsByFuzzy": Object {
     "name": "Dragon Rage",
-    "num": 82,
   },
 }
 `;
@@ -238,7 +224,6 @@ exports[`getMoveDetailsByFuzzy GIVEN a fuzzy move and pagination THEN returns Mo
 Object {
   "getMoveDetailsByFuzzy": Object {
     "name": "Dragon Tail",
-    "num": 525,
   },
 }
 `;
@@ -247,7 +232,6 @@ exports[`getMoveDetailsByFuzzy GIVEN a valid move THEN returns MoveEntry 1`] = `
 Object {
   "getMoveDetailsByFuzzy": Object {
     "name": "Dragon Dance",
-    "num": 349,
   },
 }
 `;
@@ -274,7 +258,6 @@ exports[`getMoveDetailsByName GIVEN a valid move THEN returns MoveEntry 1`] = `
 Object {
   "getMoveDetailsByName": Object {
     "name": "Dragon Dance",
-    "num": 349,
   },
 }
 `;

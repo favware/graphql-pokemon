@@ -7,7 +7,6 @@ describe('getMoveDetailsByName', () => {
   query ($move: Moves!) {
     getMoveDetailsByName(move: $move) {
       name
-      num
     }
   }`;
 
@@ -18,7 +17,6 @@ describe('getMoveDetailsByName', () => {
     }).then(formatResponse) as DataResponse<'getMoveDetailsByName'>;
 
     expect(data.getMoveDetailsByName.name).toBe('Dragon Dance');
-    expect(data.getMoveDetailsByName.num).toBe(349);
     expect(data).toMatchSnapshot();
   });
 
@@ -38,7 +36,6 @@ describe('getMoveDetailsByFuzzy', () => {
   query ($move: String! $skip: Int $take: Int $reverse: Boolean) {
     getMoveDetailsByFuzzy(move: $move skip: $skip take: $take reverse: $reverse) {
       name
-      num
     }
   }`;
 
@@ -177,7 +174,6 @@ describe('getMoveByName', () => {
       variableValues: { move: 'dragondance' },
     }).then(formatResponse) as DataResponse<'getMoveByName'>;
 
-    expect(data.getMoveByName.num).toBe(349);
     expect(data.getMoveByName.name).toBe('Dragon Dance');
     expect(data).toMatchSnapshot();
   });

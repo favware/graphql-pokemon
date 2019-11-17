@@ -1,4 +1,4 @@
-import { Field, Int, ObjectType } from 'type-graphql';
+import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single item entry' })
 export default class ItemEntry {
@@ -10,9 +10,6 @@ export default class ItemEntry {
 
   @Field(() => String, { description: 'The name for an item' })
   name: string;
-
-  @Field(() => Int, { description: 'The index number for an item' })
-  num: number;
 
   @Field(() => String, { description: 'Bulbapedia page for an item' })
   bulbapediaPage: string;

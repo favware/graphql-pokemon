@@ -7,7 +7,6 @@ describe('getItemDetailsByName', () => {
   query ($item: Items!) {
     getItemDetailsByName(item: $item) {
       name
-      num
     }
   }`;
 
@@ -18,7 +17,6 @@ describe('getItemDetailsByName', () => {
     }).then(formatResponse) as DataResponse<'getItemDetailsByName'>;
 
     expect(data.getItemDetailsByName.name).toBe('Life Orb');
-    expect(data.getItemDetailsByName.num).toBe(270);
     expect(data).toMatchSnapshot();
   });
 
@@ -38,7 +36,6 @@ describe('getItemDetailsByFuzzy', () => {
   query ($item: String! $skip: Int $take: Int $reverse: Boolean) {
     getItemDetailsByFuzzy(item: $item skip: $skip take: $take reverse: $reverse) {
       name
-      num
     }
   }`;
 
@@ -180,7 +177,6 @@ describe('getItemByName', () => {
     }).then(formatResponse) as DataResponse<'getItemByName'>;
 
     expect(data.getItemByName.name).toBe('Life Orb');
-    expect(data.getItemByName.num).toBe(270);
     expect(data).toMatchSnapshot();
   });
 

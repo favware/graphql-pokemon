@@ -4,9 +4,6 @@ import { MoveCategoryUnion } from './RegularExpression';
 
 @ObjectType({ description: 'A single Pokémon move entry' })
 export default class MoveEntry {
-  @Field(() => Int, { description: 'The index number for a move' })
-  num: number;
-
   @Field(() => String, { description: 'The name for a move' })
   name: string;
 

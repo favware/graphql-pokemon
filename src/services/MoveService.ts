@@ -15,7 +15,7 @@ export default class MoveService {
   public findByFuzzy(@Args() {
     move, skip, take, reverse,
   }: MovePaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const fuzzyMove = new FuzzySearch(moves, [ 'name', 'num' ], { threshold: 0.3, ...fuseOptions });
+    const fuzzyMove = new FuzzySearch(moves, [ 'name' ], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyMove.runFuzzy(move);
     if (!fuzzyResult.length) {
@@ -41,7 +41,6 @@ export default class MoveService {
     }
 
     const moveEntry = new MoveEntry();
-    moveEntry.num = moveData.num;
     moveEntry.name = moveData.name;
     moveEntry.shortDesc = moveData.shortDesc;
     moveEntry.type = moveData.type;

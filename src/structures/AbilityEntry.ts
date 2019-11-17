@@ -1,4 +1,4 @@
-import { Field, Int, ObjectType } from 'type-graphql';
+import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single Pokémon ability entry' })
 export default class AbilityEntry {
@@ -10,9 +10,6 @@ export default class AbilityEntry {
 
   @Field(() => String, { description: 'The name for an ability' })
   name: string;
-
-  @Field(() => Int, { description: 'The index number for an ability' })
-  num: number;
 
   @Field(() => String, { description: 'Bulbapedia page for an ability' })
   bulbapediaPage: string;

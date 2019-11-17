@@ -5,27 +5,27 @@ Object {
   "getDexEntries": Array [
     Object {
       "num": 149,
-      "species": "dragonite",
+      "species": "Dragonite",
     },
     Object {
       "num": 148,
-      "species": "dragonair",
+      "species": "Dragonair",
     },
     Object {
       "num": 493,
-      "species": "arceusdragon",
+      "species": "Arceus-Dragon",
     },
     Object {
       "num": 773,
-      "species": "silvallydragon",
+      "species": "Silvally-Dragon",
     },
     Object {
       "num": 147,
-      "species": "dratini",
+      "species": "Dratini",
     },
     Object {
       "num": 882,
-      "species": "dracovish",
+      "species": "Dracovish",
     },
   ],
 }
@@ -36,15 +36,15 @@ Object {
   "getDexEntries": Array [
     Object {
       "num": 773,
-      "species": "silvallydragon",
+      "species": "Silvally-Dragon",
     },
     Object {
       "num": 493,
-      "species": "arceusdragon",
+      "species": "Arceus-Dragon",
     },
     Object {
       "num": 148,
-      "species": "dragonair",
+      "species": "Dragonair",
     },
   ],
 }
@@ -102,7 +102,7 @@ Object {
       "arceussteel",
       "arceuswater",
     ],
-    "species": "arceus",
+    "species": "Arceus",
     "types": Array [
       "Normal",
     ],
@@ -148,7 +148,7 @@ Object {
     "heightm": 2.2,
     "num": 149,
     "prevo": "dragonair",
-    "species": "dragonite",
+    "species": "Dragonite",
     "types": Array [
       "Dragon",
       "Flying",

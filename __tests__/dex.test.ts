@@ -110,7 +110,7 @@ describe('getPokemonDetailsByFuzzy', () => {
       },
     }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
 
-    expect(data.getPokemonDetailsByFuzzy.species).toBe('silvallydragon');
+    expect(data.getPokemonDetailsByFuzzy.species).toBe('silvally-dragon');
     expect(data.getPokemonDetailsByFuzzy.num).toBe(773);
     expect(data).toMatchSnapshot();
   });
@@ -156,7 +156,7 @@ describe('getDexEntries', () => {
       },
     }).then(formatResponse) as DataResponse<'getDexEntries'>;
 
-    expect(data.getDexEntries[0].species).toBe('silvallydragon');
+    expect(data.getDexEntries[0].species).toBe('silvally-dragon');
     expect(data.getDexEntries[0].num).toBe(773);
     expect(data.getDexEntries).toContainEqual({ num: 148, species: 'dragonair' });
     expect(data).toMatchSnapshot();
@@ -213,7 +213,7 @@ describe('getDexEntryByDexNumber', () => {
       variableValues: { pokemonNr: 493 },
     }).then(formatResponse) as DataResponse<'getDexEntryByDexNumber'>;
 
-    expect(data.getDexEntryByDexNumber.species).toBe('arceus');
+    expect(data.getDexEntryByDexNumber.species).toBe('Arceus');
     expect(data).toMatchSnapshot();
   });
 

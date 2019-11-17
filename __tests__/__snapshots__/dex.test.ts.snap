@@ -5,27 +5,27 @@ Object {
   "getDexEntries": Array [
     Object {
       "num": 149,
-      "species": "Dragonite",
+      "species": "dragonite",
     },
     Object {
       "num": 148,
-      "species": "Dragonair",
+      "species": "dragonair",
     },
     Object {
       "num": 493,
-      "species": "Arceus-Dragon",
+      "species": "arceus-dragon",
     },
     Object {
       "num": 773,
-      "species": "Silvally-Dragon",
+      "species": "silvally-dragon",
     },
     Object {
       "num": 147,
-      "species": "Dratini",
+      "species": "dratini",
     },
     Object {
       "num": 882,
-      "species": "Dracovish",
+      "species": "dracovish",
     },
   ],
 }
@@ -35,16 +35,16 @@ exports[`getDexEntries GIVEN a fuzzy pokemon and pagination THEN returns DexEntr
 Object {
   "getDexEntries": Array [
     Object {
-      "num": 773,
-      "species": "Silvally-Dragon",
-    },
-    Object {
       "num": 493,
-      "species": "Arceus-Dragon",
+      "species": "arceus-dragon",
     },
     Object {
-      "num": 148,
-      "species": "Dragonair",
+      "num": 773,
+      "species": "silvally-dragon",
+    },
+    Object {
+      "num": 147,
+      "species": "dratini",
     },
   ],
 }
@@ -102,7 +102,7 @@ Object {
       "arceussteel",
       "arceuswater",
     ],
-    "species": "Arceus",
+    "species": "arceus",
     "types": Array [
       "Normal",
     ],
@@ -148,7 +148,7 @@ Object {
     "heightm": 2.2,
     "num": 149,
     "prevo": "dragonair",
-    "species": "Dragonite",
+    "species": "dragonite",
     "types": Array [
       "Dragon",
       "Flying",
@@ -196,7 +196,7 @@ exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon and pagination THEN retu
 Object {
   "getPokemonDetailsByFuzzy": Object {
     "num": 773,
-    "species": "silvallydragon",
+    "species": "silvally-dragon",
   },
 }
 `;

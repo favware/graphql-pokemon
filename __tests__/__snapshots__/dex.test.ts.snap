@@ -23,6 +23,10 @@ Object {
       "num": 147,
       "species": "dratini",
     },
+    Object {
+      "num": 882,
+      "species": "dracovish",
+    },
   ],
 }
 `;
@@ -35,12 +39,12 @@ Object {
       "species": "arceus-dragon",
     },
     Object {
-      "num": 148,
-      "species": "dragonair",
+      "num": 773,
+      "species": "silvally-dragon",
     },
     Object {
-      "num": 149,
-      "species": "dragonite",
+      "num": 147,
+      "species": "dratini",
     },
   ],
 }
@@ -137,6 +141,10 @@ Object {
       "Dragon",
     ],
     "evoLevel": 55,
+    "genderRatio": Object {
+      "female": 0.5,
+      "male": 0.5,
+    },
     "heightm": 2.2,
     "num": 149,
     "prevo": "dragonair",

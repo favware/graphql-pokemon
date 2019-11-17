@@ -180,11 +180,11 @@ export default class DexService {
       const prevoPokemon = this.findBySpecies(basePokemonData.prevo);
       if (prevoPokemon) {
         preevolutionChain.push(this.findBySpeciesWithDetails({
-          pokemon: prevoPokemon.species,
+          pokemon: Util.toLowerSingleWordCase(prevoPokemon.species),
           skip,
           take,
           reverse,
-        }, basePokemonData.species));
+        }, basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species));
       }
     }
 
@@ -197,7 +197,7 @@ export default class DexService {
             skip,
             take,
             reverse,
-          }, basePokemonData.species));
+          }, basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species));
         }
       }
     }

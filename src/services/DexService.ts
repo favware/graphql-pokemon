@@ -137,6 +137,7 @@ export default class DexService {
     pokemonData.baseForme = basePokemonData.baseForme;
     pokemonData.baseSpecies = basePokemonData.baseSpecies;
     pokemonData.otherFormes = basePokemonData.otherFormes;
+    pokemonData.baseStatsTotal = this.parseBaseStatsTotal(basePokemonData.baseStats);
     pokemonData.flavorTexts = [];
     pokemonData.serebiiPage = basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '';
     pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
@@ -256,5 +257,9 @@ export default class DexService {
     if (pokemonName.match(/^(.+)-(x|y)$/g)) pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
 
     return `https://play.pokemonshowdown.com/sprites/${shiny ? 'ani-shiny' : 'ani'}/${pokemonName}.gif`;
+  }
+
+  private parseBaseStatsTotal(baseStats: Pokemon.Stats) {
+    return baseStats.hp + baseStats.atk + baseStats.def + baseStats.spa + baseStats.spd + baseStats.spe;
   }
 }

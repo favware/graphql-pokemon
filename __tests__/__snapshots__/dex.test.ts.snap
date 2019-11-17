@@ -169,6 +169,7 @@ Object {
 exports[`getPokemonDetails GIVEN a valid pokemon THEN returns DexDetails 1`] = `
 Object {
   "getPokemonDetails": Object {
+    "baseStatsTotal": 600,
     "num": 149,
     "species": "dragonite",
   },
@@ -186,6 +187,7 @@ Object {
 exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon THEN returns DexDetails 1`] = `
 Object {
   "getPokemonDetailsByFuzzy": Object {
+    "baseStatsTotal": 600,
     "num": 149,
     "species": "dragonite",
   },
@@ -195,6 +197,7 @@ Object {
 exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon and pagination THEN returns DexDetails 1`] = `
 Object {
   "getPokemonDetailsByFuzzy": Object {
+    "baseStatsTotal": 570,
     "num": 773,
     "species": "silvally-dragon",
   },
@@ -204,6 +207,7 @@ Object {
 exports[`getPokemonDetailsByFuzzy GIVEN a valid pokemon THEN returns DexDetails 1`] = `
 Object {
   "getPokemonDetailsByFuzzy": Object {
+    "baseStatsTotal": 600,
     "num": 149,
     "species": "dragonite",
   },
@@ -221,6 +225,7 @@ Object {
 exports[`getPokemonDetailsByName GIVEN a valid pokemon THEN returns DexDetails 1`] = `
 Object {
   "getPokemonDetailsByName": Object {
+    "baseStatsTotal": 600,
     "num": 149,
     "species": "dragonite",
   },

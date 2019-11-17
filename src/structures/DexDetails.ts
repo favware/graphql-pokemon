@@ -1,9 +1,12 @@
-import { Field, ObjectType } from 'type-graphql';
+import { Field, ObjectType, Int } from 'type-graphql';
 import DexEntry from './DexEntry';
 import FlavorEntry from './FlavorEntry';
 
 @ObjectType({ description: 'A Pokémon\'s details entry' })
 export default class DexDetails extends DexEntry {
+  @Field(() => Int, { description: 'The total of all base stats for a Pokémon'})
+  baseStatsTotal: number;
+
   @Field(() => [ DexDetails ], { nullable: true, description: 'The evolutions for a Pokémon, if any ' })
   evolutions?: this[];
 

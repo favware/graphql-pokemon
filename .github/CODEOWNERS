@@ -1,0 +1,4 @@
+# Favna
+/src/**/* @favna
+/__tests__/**/* @favna
+/scripts/**/* @favna

@@ -4625,6 +4625,8 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 2,
         color: 'Yellow',
         eggGroups: [ 'Undiscovered' ],
+        specialSprite: 'https://play.pokemonshowdown.com/sprites/gen4/pichu-spikyeared.png',
+        specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen4-shiny/pichu-spikyeared.png',
       }
     ],
     [

@@ -60,6 +60,8 @@ export namespace Pokemon {
     species: string;
     types: string[];
     weightkg: number;
+    specialShinySprite?: string;
+    specialSprite?: string;
   }
 
   export interface Ability {

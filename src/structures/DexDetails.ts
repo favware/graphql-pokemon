@@ -13,10 +13,10 @@ export default class DexDetails extends DexEntry {
   @Field(() => [ FlavorEntry ], { description: 'The flavortexts for a Pokémon' })
   flavorTexts: FlavorEntry[];
 
-  @Field({ description: 'The sprite for a Pokémon' })
+  @Field({ description: 'The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive' })
   sprite: string;
 
-  @Field({ description: 'The shiny sprite for a Pokémon' })
+  @Field({ description: 'The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive' })
   shinySprite: string;
 
   @Field({ description: 'The smogon tier a Pokémon falls under' })

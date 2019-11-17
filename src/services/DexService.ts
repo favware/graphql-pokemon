@@ -22,8 +22,8 @@ export default class DexService {
     return pokedex.get(species);
   }
 
-  public findByFuzzy(@Args() {pokemon, skip, take}: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const paginatedFuzzyResult = this.getByFuzzy({pokemon, skip, take}, fuseOptions);
+  public findByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    const paginatedFuzzyResult = this.getByFuzzy({ pokemon, skip, take }, fuseOptions);
 
     const queryResults: DexEntry[] = [];
     for (const page of paginatedFuzzyResult) {
@@ -140,8 +140,8 @@ export default class DexService {
     pokemonData.flavorTexts = [];
     pokemonData.serebiiPage = basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '';
     pokemonData.bulbapediaPage = basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies) : '';
-    pokemonData.sprite = this.parseSpeciesForSprite(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies);
-    pokemonData.shinySprite = this.parseSpeciesForSprite(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies, true);
+    pokemonData.sprite = this.parseSpeciesForSprite(basePokemonData.species, basePokemonData.baseSpecies, basePokemonData.specialSprite, basePokemonData.specialShinySprite);
+    pokemonData.shinySprite = this.parseSpeciesForSprite(basePokemonData.species, basePokemonData.baseSpecies, basePokemonData.specialSprite, basePokemonData.specialShinySprite, true);
     pokemonData.smogonPage = basePokemonData.num >= 1 ? `https://www.smogon.com/dex/sm/pokemon/${Util.toLowerHyphenCase(basePokemonData.species)}` : '';
 
     if (basePokemonData.num >= 0) {
@@ -208,7 +208,7 @@ export default class DexService {
     return pokemonData;
   }
 
-  public getByFuzzy(@Args() {pokemon, skip, take}: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+  public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
     if (pokemon.split(' ')[0] === 'mega') {
       pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
     }
@@ -247,14 +247,13 @@ export default class DexService {
     return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;
   }
 
-  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, shiny = false) {
-    if (!baseForme) {
-      pokemonName = Util.toLowerSingleWordCase(pokemonName);
-    }
+  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
+    if (specialShinySprite && shiny === true) return specialShinySprite;
+    if (specialSprite && shiny === false) return specialSprite;
 
-    if (pokemonName.match(/^(.+)-(x|y)$/g)) {
-      pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
-    }
+    if (!baseForme) pokemonName = Util.toLowerSingleWordCase(pokemonName);
+
+    if (pokemonName.match(/^(.+)-(x|y)$/g)) pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
 
     return `https://play.pokemonshowdown.com/sprites/${shiny ? 'ani-shiny' : 'ani'}/${pokemonName}.gif`;
   }

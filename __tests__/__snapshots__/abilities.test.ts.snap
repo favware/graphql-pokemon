@@ -4,12 +4,12 @@ exports[`getAbilityByFuzzy GIVEN a fuzzy ability THEN returns JSONObject 1`] = `
 Object {
   "getAbilityByFuzzy": Array [
     Object {
-      "name": "Multitype",
-      "shortDesc": "If this Pokemon is an Arceus, its type changes to match its held Plate or Z-Crystal.",
-    },
-    Object {
       "name": "Multiscale",
       "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    },
+    Object {
+      "name": "Multitype",
+      "shortDesc": "If this Pokemon is an Arceus, its type changes to match its held Plate or Z-Crystal.",
     },
   ],
 }
@@ -19,8 +19,8 @@ exports[`getAbilityByFuzzy GIVEN a fuzzy ability and pagination THEN returns JSO
 Object {
   "getAbilityByFuzzy": Array [
     Object {
-      "name": "Multitype",
-      "shortDesc": "If this Pokemon is an Arceus, its type changes to match its held Plate or Z-Crystal.",
+      "name": "Multiscale",
+      "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
     },
   ],
 }
@@ -69,7 +69,7 @@ Object {
 exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability THEN returns AbilityEntry 1`] = `
 Object {
   "getAbilityDetailsByFuzzy": Object {
-    "name": "Multitype",
+    "name": "Multiscale",
   },
 }
 `;
@@ -77,7 +77,7 @@ Object {
 exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability and pagination THEN returns AbilityEntry 1`] = `
 Object {
   "getAbilityDetailsByFuzzy": Object {
-    "name": "Multiscale",
+    "name": "Multitype",
   },
 }
 `;

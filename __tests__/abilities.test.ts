@@ -55,7 +55,7 @@ describe('getAbilityDetailsByFuzzy', () => {
       variableValues: { ability: 'multi' },
     }).then(formatResponse) as DataResponse<'getAbilityDetailsByFuzzy'>;
 
-    expect(data.getAbilityDetailsByFuzzy.name).toBe('Multitype');
+    expect(data.getAbilityDetailsByFuzzy.name).toBe('Multiscale');
     expect(data).toMatchSnapshot();
   });
 
@@ -70,7 +70,7 @@ describe('getAbilityDetailsByFuzzy', () => {
       },
     }).then(formatResponse) as DataResponse<'getAbilityDetailsByFuzzy'>;
 
-    expect(data.getAbilityDetailsByFuzzy.name).toBe('Multiscale');
+    expect(data.getAbilityDetailsByFuzzy.name).toBe('Multitype');
     expect(data).toMatchSnapshot();
   });
 

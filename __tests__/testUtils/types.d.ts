@@ -341,6 +341,8 @@ export interface ItemEntry {
   desc: Scalars['String'];
   shortDesc?: Maybe<Scalars['String']>;
   name: Scalars['String'];
+  isNonstandard?: Maybe<Scalars['String']>;
+  sprite: Scalars['String'];
   bulbapediaPage: Scalars['String'];
   serebiiPage: Scalars['String'];
   smogonPage: Scalars['String'];

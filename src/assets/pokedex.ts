@@ -873,7 +873,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -893,7 +893,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -913,7 +913,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -933,7 +933,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -953,7 +953,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -973,7 +973,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -993,7 +993,7 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
-        abilities: { first: 'Static' },
+        abilities: { first: 'Static', hidden: 'Lightning Rod' },
         heightm: 0.4,
         weightkg: 6,
         color: 'Yellow',
@@ -3221,10 +3221,32 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 65, atk: 90, def: 120, spa: 85, spd: 70, spe: 60,
         },
-        abilities: { first: 'Levitate' },
+        abilities: { first: 'Levitate', second: 'Neutralizing Gas', hidden: 'Stench' },
         heightm: 1.2,
         weightkg: 9.5,
         color: 'Purple',
+        prevo: 'koffing',
+        evoLevel: 35,
+        eggGroups: [ 'Amorphous' ],
+      }
+    ],
+    [
+      'weezinggalar',
+      {
+        species: 'weezing-galar',
+        baseSpecies: 'Weezing',
+        forme: 'Galar',
+        formeLetter: 'G',
+        num: 110,
+        types: [ 'Poison' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 65, atk: 90, def: 120, spa: 85, spd: 70, spe: 60,
+        },
+        abilities: { first: 'Levitate', second: 'Neutralizing Gas', hidden: 'Misty Surge' },
+        heightm: 3,
+        weightkg: 16,
+        color: 'Gray',
         prevo: 'koffing',
         evoLevel: 35,
         eggGroups: [ 'Amorphous' ],
@@ -13196,9 +13218,9 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 70, atk: 90, def: 45, spa: 15, spd: 45, spe: 50,
         },
-        abilities: { first: 'Hustle', second: 'Hustle', hidden: 'Inner Focus' },
-        heightm: 0.70,
-        weightkg: 40.0,
+        abilities: { first: 'Hustle', hidden: 'Inner Focus' },
+        heightm: 0.7,
+        weightkg: 40,
         color: 'White',
         evos: [ 'darmanitangalar' ],
         eggGroups: [ 'Field' ],
@@ -13238,11 +13260,11 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 105, atk: 140, def: 55, spa: 30, spd: 55, spe: 95,
         },
-        abilities: { first: 'Gorilla Tactics', second: 'Gorilla Tactics', hidden: 'Zen Mode' },
-        heightm: 1.70,
-        weightkg: 120.0,
+        abilities: { first: 'Gorilla Tactics', hidden: 'Zen Mode' },
+        heightm: 1.7,
+        weightkg: 120,
         color: 'White',
-        prevo: 'darumaka-galar',
+        prevo: 'darumakagalar',
         evoLevel: 'use Ice Stone',
         eggGroups: [ 'Field' ],
       }
@@ -13279,12 +13301,12 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 105, atk: 160, def: 55, spa: 30, spd: 55, spe: 135,
         },
-        baseSpecies: 'Darmanitan',
+        baseSpecies: 'Darmanitan-galar',
         forme: 'Zen-Galar',
         formeLetter: 'Z',
-        abilities: { first: 'Gorilla Tactics', second: 'Gorilla Tactics', hidden: 'Zen Mode' },
+        abilities: { first: 'Gorilla Tactics', hidden: 'Zen Mode' },
         heightm: 1.7,
-        weightkg: 120.0,
+        weightkg: 120,
         color: 'White',
         prevo: 'darumakagalar',
         evoLevel: 'use Ice Stone',
@@ -21237,6 +21259,27 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'copperajahgmax',
+      {
+        species: 'copperajah-gmax',
+        baseSpecies: 'Copperajah',
+        forme: 'Gmax',
+        formeLetter: 'G',
+        num: 879,
+        types: [ 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 122, atk: 130, def: 69, spa: 80, spd: 69, spe: 30,
+        },
+        abilities: { first: 'Sheer Force', hidden: 'Heavy Metal' },
+        // TODO -favna 2019-11-21- Copperajah-GMax base stats, height and weight will probably be available in due time
+        heightm: 0,
+        weightkg: 0,
+        color: 'Green',
+        eggGroups: [ 'Field', 'Mineral' ],
+      }
+    ],
+    [
       'dracozolt',
       {
         species: 'dracozolt',
@@ -21326,8 +21369,8 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       {
         species: 'duraludon-gmax',
         baseSpecies: 'duraludon',
-        form: 'Gmax',
-        formLetter: 'G',
+        forme: 'Gmax',
+        formeLetter: 'G',
         num: 884,
         types: [ 'Steel', 'Dragon' ],
         genderRatio: { male: 0.50, female: 0.50 },

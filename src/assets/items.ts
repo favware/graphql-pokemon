@@ -1445,7 +1445,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Ice Stone',
         gen: 7,
-        desc: 'Evolves Alolan Sandshrew into Alolan Sandslash and Alolan Vulpix into Alolan Ninetales when used.',
+        desc: 'Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, and Eevee into Glaceon when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
       }
     ],
@@ -1629,7 +1629,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Leaf Stone',
         gen: 1,
-        desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
+        desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
       }
     ],
@@ -3189,7 +3189,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Thunder Stone',
         gen: 1,
-        desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, and Eelektrik into Eelektross when used.',
+        desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
       }
     ],

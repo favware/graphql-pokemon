@@ -346,6 +346,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Bug Gem',
         gen: 5,
         desc: 'Holder\'s first successful Bug-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -598,6 +599,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Dark Gem',
         gen: 5,
         desc: 'Holder\'s first successful Dark-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -716,6 +718,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Dragon Gem',
         gen: 5,
         desc: 'Holder\'s first successful Dragon-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -839,6 +842,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Electric Gem',
         gen: 5,
         desc: 'Holder\'s first successful Electric-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -913,6 +917,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Fairy Gem',
         gen: 6,
         desc: 'Holder\'s first successful Fairy-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -937,6 +942,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Fighting Gem',
         gen: 5,
         desc: 'Holder\'s first successful Fighting-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -970,6 +976,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Fire Gem',
         gen: 5,
         desc: 'Holder\'s first successful Fire-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1044,6 +1051,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Flying Gem',
         gen: 5,
         desc: 'Holder\'s first successful Flying-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1181,6 +1189,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ghost Gem',
         gen: 5,
         desc: 'Holder\'s first successful Ghost-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1232,6 +1241,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Grass Gem',
         gen: 5,
         desc: 'Holder\'s first successful Grass-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1297,6 +1307,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ground Gem',
         gen: 5,
         desc: 'Holder\'s first successful Ground-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1430,6 +1441,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ice Gem',
         gen: 5,
         desc: 'Holder\'s first successful Ice-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2113,6 +2125,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Normal Gem',
         gen: 5,
         desc: 'Holder\'s first successful Normal-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2321,6 +2334,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Poison Gem',
         gen: 5,
         desc: 'Holder\'s first successful Poison-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2468,6 +2482,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Psychic Gem',
         gen: 5,
         desc: 'Holder\'s first successful Psychic-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2640,6 +2655,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Rock Gem',
         gen: 5,
         desc: 'Holder\'s first successful Rock-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -3033,6 +3049,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Steel Gem',
         gen: 5,
         desc: 'Holder\'s first successful Steel-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -3282,6 +3299,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Water Gem',
         gen: 5,
         desc: 'Holder\'s first successful Water-type attack will have 1.3x power. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [

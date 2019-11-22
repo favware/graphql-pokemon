@@ -18,6 +18,6 @@ export default class FuzzySearch<K extends string, V> {
 
     const fuzzyFuse = new Fuse(this.collectionArray, this.fuseOptions);
 
-    return fuzzyFuse.search(locquery);
+    return fuzzyFuse.search(locquery) as V[];
   }
 }

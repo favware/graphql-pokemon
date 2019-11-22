@@ -94,7 +94,7 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'ballfetch',
       {
-        desc: 'A Pokémon with Ball Fetch will collect the first Poké Ball thrown that fails to catch a Pokémon if they are not holding anything.',
+        desc: 'At any time after the first Poké Ball is thrown and fails to catch a Pokémon, at the end of a turn, if a Pokémon with Ball Fetch is on the field and not holding another item, it will pick up the same type of ball as the first one thrown. This can only occur once in a battle.',
         shortDesc: 'If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle.',
         name: 'Ball Fetch',
       }
@@ -236,6 +236,14 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'cottondown',
+      {
+        desc: 'When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pokémon except itself.',
+        shortDesc: 'Lowers Speed of all Pokémon except itself when hit by an attack.',
+        name: 'Cotton Down',
+      }
+    ],
+    [
       'cursedbody',
       {
         desc: 'If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker\'s moves is already disabled.',
@@ -273,6 +281,13 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
         desc: 'While this Pokemon is active, the power of Dark-type moves used by active Pokemon is multiplied by 1.33.',
         shortDesc: 'While this Pokemon is active, a Dark move used by any Pokemon has 1.33x power.',
         name: 'Dark Aura',
+      }
+    ],
+    [
+      'dauntlessshield',
+      {
+        shortDesc: 'Boosts the Pokémon\'s Defense stat when the Pokémon enters a battle',
+        name: 'Dauntless Shield',
       }
     ],
     [
@@ -318,7 +333,7 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'disguise',
       {
-        desc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken and it changes to Busted Form. Confusion damage also breaks the disguise.',
+        desc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/10 of its max HP. Confusion damage also breaks the disguise.',
         shortDesc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage.',
         name: 'Disguise',
       }
@@ -517,9 +532,16 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'gorillatactics',
+      {
+        shortDesc: 'Boosts the Pokémon\'s Attack stat but only allows the use of the first selected move.',
+        name: 'Gorilla Tactics',
+      }
+    ],
+    [
       'grasspelt',
       {
-        shortDesc: 'If Grassy Terrain is active, this Pokemon\'s Defense is multiplied by 1.5.',
+        shortDesc: 'Boosts the Pokémon\'s Attack stat but only allows the use of the first selected move.',
         name: 'Grass Pelt',
       }
     ],
@@ -528,6 +550,14 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       {
         shortDesc: 'On switch-in, this Pokemon summons Grassy Terrain.',
         name: 'Grassy Surge',
+      }
+    ],
+    [
+      'gulpmissile',
+      {
+        desc: 'When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack.',
+        shortDesc: 'Get prey with Surf/Dive. When taking damage, prey is used to attack.',
+        name: 'Gulp Missile',
       }
     ],
     [
@@ -581,6 +611,14 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'hungerswitch',
+      {
+        desc: 'The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn.',
+        shortDesc: 'Changes between Full Belly and Hangry Mode at the end of each turn.',
+        name: 'Hunger Switch',
+      }
+    ],
+    [
       'hustle',
       {
         desc: 'This Pokemon\'s Attack is multiplied by 1.5 and the accuracy of its physical attacks is multiplied by 0.8.',
@@ -612,8 +650,26 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'iceface',
+      {
+        desc: 'The Pokémon\'s ice head can take a physical attack as a substitute, but the attack also changes the Pokémon\'s appearance. The ice will be restored when it hails.',
+        shortDesc: 'Pokémon\'s head functions as substitute for a physical attack. Restored in hail.',
+        name: 'Ice Face',
+      }
+    ],
+    [
+      'icescales',
+      {
+        shortDesc: 'The Pokémon is protected by ice scales, which halve the damage taken from special moves.',
+        name: 'Ice Scales',
+      }
+    ],
+    [
       'illuminate',
-      { shortDesc: 'No competitive use.', name: 'Illuminate' }
+      {
+        shortDesc: 'No competitive use.',
+        name: 'Illuminate',
+      }
     ],
     [
       'illusion',
@@ -657,7 +713,7 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'innerfocus',
       {
-        shortDesc: 'This Pokemon cannot be made to flinch.',
+        shortDesc: 'This Pokemon cannot be made to flinch. Immune to Intimidate.',
         name: 'Inner Focus',
       }
     ],
@@ -671,9 +727,16 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'intimidate',
       {
-        desc: 'On switch-in, this Pokemon lowers the Attack of adjacent opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.',
+        desc: 'On switch-in, this Pokemon lowers the Attack of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.',
         shortDesc: 'On switch-in, this Pokemon lowers the Attack of adjacent opponents by 1 stage.',
         name: 'Intimidate',
+      }
+    ],
+    [
+      'intrepidsword',
+      {
+        shortDesc: 'Boosts the Pokémon’s Attack stat when the Pokémon enters a battle.',
+        name: 'Intrepid Sword',
       }
     ],
     [
@@ -729,6 +792,14 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
         desc: 'This Pokemon is immune to Ground. Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity.',
         shortDesc: 'This Pokemon is immune to Ground; Gravity/Ingrain/Smack Down/Iron Ball nullify it.',
         name: 'Levitate',
+      }
+    ],
+    [
+      'libero',
+      {
+        desc: 'This Pokemon\'s type changes to match the type of the move it is about to use. This effect comes after all effects that change a move\'s type.',
+        shortDesc: 'This Pokemon\'s type changes to match the type of the move it is about to use.',
+        name: 'Libero',
       }
     ],
     [
@@ -838,11 +909,25 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'mimicry',
+      {
+        shortDesc: 'Changes the Pokémon\'s type depending on the terrain.',
+        name: 'Mimicry',
+      }
+    ],
+    [
       'minus',
       {
         desc: 'If an active ally has this Ability or the Ability Plus, this Pokemon\'s Special Attack is multiplied by 1.5.',
         shortDesc: 'If an active ally has this Ability or the Ability Plus, this Pokemon\'s Sp. Atk is 1.5x.',
         name: 'Minus',
+      }
+    ],
+    [
+      'mirrorarmor',
+      {
+        shortDesc: 'Bounces back only the stat-lowering effects that the Pokémon receives.',
+        name: 'Mirror Armor',
       }
     ],
     [
@@ -862,7 +947,7 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'moody',
       {
-        desc: 'This Pokemon has a random stat raised by 2 stages and another stat lowered by 1 stage at the end of each turn.',
+        desc: 'This Pokemon has a random stat other than accuracy or evasion raised by 2 stages and another stat lowered by 1 stage at the end of each turn.',
         shortDesc: 'Raises a random stat by 2 and lowers another stat by 1 at the end of each turn.',
         name: 'Moody',
       }
@@ -931,6 +1016,14 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       { shortDesc: 'Does nothing.', name: 'No Ability' }
     ],
     [
+      'neutralizinggas',
+      {
+        desc: 'If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon\'s Abilities will be nullified or will not be triggered.',
+        shortDesc: 'Nullifies abilities while on the field.',
+        name: 'Neutralizing Gas',
+      }
+    ],
+    [
       'noguard',
       {
         shortDesc: 'Every move used by or against this Pokemon will always hit.',
@@ -948,8 +1041,8 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'oblivious',
       {
-        desc: 'This Pokemon cannot be infatuated or taunted. Gaining this Ability while affected cures it.',
-        shortDesc: 'This Pokemon cannot be infatuated or taunted. Gaining this Ability cures it.',
+        desc: 'This Pokemon cannot be infatuated or taunted. Gaining this Ability while affected cures it. Immune to Intimidate.',
+        shortDesc: 'This Pokemon cannot be infatuated or taunted. Immune to Intimidate.',
         name: 'Oblivious',
       }
     ],
@@ -971,7 +1064,8 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'owntempo',
       {
-        shortDesc: 'This Pokemon cannot be confused. Gaining this Ability while confused cures it.',
+        desc: 'This Pokemon cannot be confused. Gaining this Ability while confused cures it. Immune to Intimidate.',
+        shortDesc: 'This Pokemon cannot be confused. Immune to Intimidate.',
         name: 'Own Tempo',
       }
     ],
@@ -989,6 +1083,22 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
         desc: 'The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon.',
         shortDesc: 'When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.',
         name: 'Persistent',
+      }
+    ],
+    [
+      'pastelveil',
+      {
+        desc: 'Pastel Veil prevents the Pokémon with this Ability and its allies from being afflicted by poison. It also heals the poisoned status condition of allies if a Pokémon with this Ability is sent out into battle.',
+        shortDesc: 'Protects the Pokémon and its ally Pokémon from being poisoned.',
+        name: 'Pastel Veil',
+      }
+    ],
+    [
+      'perishbody',
+      {
+        desc: 'When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.',
+        shortDesc: 'When hit by a contact move, the Pokémon and the attacker faint in 3 turns.',
+        name: 'Perish Body',
       }
     ],
     [
@@ -1061,6 +1171,13 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'powerspot',
+      {
+        shortDesc: 'This Pokemon\'s allies have the base power of their moves multiplied by 1.3.',
+        name: 'Power Spot',
+      }
+    ],
+    [
       'prankster',
       {
         shortDesc: 'This Pokemon\'s Status moves have priority raised by 1, but Dark types are immune.',
@@ -1092,6 +1209,13 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'propellertail',
+      {
+        shortDesc: 'Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.',
+        name: 'Propeller Tail',
+      }
+    ],
+    [
       'protean',
       {
         desc: 'This Pokemon\'s type changes to match the type of the move it is about to use. This effect comes after all effects that change a move\'s type.',
@@ -1107,9 +1231,17 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'punkrock',
+      {
+        desc: 'When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.',
+        shortDesc: 'Removes Screens and Veil Effects on switchin.',
+        name: 'Punk Rock',
+      }
+    ],
+    [
       'purepower',
       {
-        shortDesc: 'This Pokemon\'s Attack is doubled.',
+        shortDesc: 'Boosts the power of sound-based moves. The Pokémon also takes half the damage from sound-based moves.',
         name: 'Pure Power',
       }
     ],
@@ -1147,8 +1279,8 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'rattled',
       {
-        desc: 'This Pokemon\'s Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack.',
-        shortDesc: 'This Pokemon\'s Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack.',
+        desc: 'This Pokemon\'s Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidate.',
+        shortDesc: 'Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.',
         name: 'Rattled',
       }
     ],
@@ -1189,6 +1321,13 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       {
         shortDesc: 'This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.',
         name: 'Regenerator',
+      }
+    ],
+    [
+      'ripen',
+      {
+        shortDesc: 'Ripens Berries and doubles their effect.',
+        name: 'Ripen',
       }
     ],
     [
@@ -1236,6 +1375,13 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'sandspit',
+      {
+        shortDesc: 'The Pokémon creates a sandstorm when it\'s hit by an attack.',
+        name: 'Sand Spit',
+      }
+    ],
+    [
       'sandstream',
       {
         shortDesc: 'On switch-in, this Pokemon summons Sandstorm.',
@@ -1269,8 +1415,16 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'scrappy',
       {
-        shortDesc: 'This Pokemon can hit Ghost types with Normal- and Fighting-type moves.',
+        desc: 'This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Immune to Intimidate.',
+        shortDesc: 'Fighting, Normal moves hit Ghost. Immune to Intimidate.',
         name: 'Scrappy',
+      }
+    ],
+    [
+      'screencleaner',
+      {
+        shortDesc: 'When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.',
+        name: 'Screen Cleaner',
       }
     ],
     [
@@ -1438,6 +1592,13 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'stalwart',
+      {
+        shortDesc: 'Ignores the effects of opposing Pokémon\'s Abilities and moves that draw in moves.',
+        name: 'Stalwart',
+      }
+    ],
+    [
       'stamina',
       {
         shortDesc: 'This Pokemon\'s Defense is raised by 1 stage after it is damaged by a move.',
@@ -1467,10 +1628,25 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'steamengine',
+      {
+        desc: 'When a Pokémon with Steam Engine is hit by a Fire-type or Water-type move, its Speed stat is increased by six stages.',
+        shortDesc: 'This Pokemon\'s Speed is raised by 6 stages after it is damaged by Fire/Water moves.',
+        name: 'Steam Engine',
+      }
+    ],
+    [
       'steelworker',
       {
         shortDesc: 'This Pokemon\'s attacking stat is multiplied by 1.5 while using a Steel-type attack.',
         name: 'Steelworker',
+      }
+    ],
+    [
+      'steelyspirit',
+      {
+        shortDesc: 'This Pokemon and its allies\' Steel-type moves have their BP mutiplied by 1.5.',
+        name: 'Steely Spirit',
       }
     ],
     [
@@ -1720,6 +1896,14 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
       }
     ],
     [
+      'wanderingspirit',
+      {
+        desc: 'The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact.',
+        shortDesc: 'Exchanges abilities when hitting a Pokémon with a contact move.',
+        name: 'Wandering Spirit',
+      }
+    ],
+    [
       'waterabsorb',
       {
         desc: 'This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move.',
@@ -1790,7 +1974,7 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     [
       'zenmode',
       {
-        desc: 'If this Pokemon is a Darmanitan, it changes to Zen Mode if it has 1/2 or less of its maximum HP at the end of a turn. If Darmanitan\'s HP is above 1/2 of its maximum HP at the end of a turn, it changes back to Standard Mode. This Ability cannot be removed or suppressed.',
+        desc: 'If this Pokemon is a Darmanitan or Darmanitan-Galar, it changes to Zen Mode if it has 1/2 or less of its maximum HP at the end of a turn. If Darmanitan\'s HP is above 1/2 of its maximum HP at the end of a turn, it changes back to Standard Mode. This Ability cannot be removed or suppressed.',
         shortDesc: 'If Darmanitan, at end of turn changes Mode to Standard if > 1/2 max HP, else Zen.',
         name: 'Zen Mode',
       }

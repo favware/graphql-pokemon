@@ -11,6 +11,12 @@ export default class ItemEntry {
   @Field(() => String, { description: 'The name for an item' })
   name: string;
 
+  @Field(() => String, { nullable: true, description: 'Whether an item is non-standard, and if it is why' })
+  isNonstandard?: string;
+
+  @Field(() => String, { description: 'The sprite for an item' })
+  sprite: string;
+
   @Field(() => String, { description: 'Bulbapedia page for an item' })
   bulbapediaPage: string;
 

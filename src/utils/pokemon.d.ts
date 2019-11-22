@@ -74,6 +74,7 @@ export namespace Pokemon {
     name: string;
     desc: string;
     gen: number;
+    isNonstandard?: string;
     shortDesc?: string;
   }
 

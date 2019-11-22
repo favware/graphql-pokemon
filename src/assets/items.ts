@@ -9,6 +9,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Abomasite',
         gen: 6,
         desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -17,6 +18,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Absolite',
         gen: 6,
         desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -49,6 +51,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Aerodactylite',
         gen: 6,
         desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -57,6 +60,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Aggronite',
         gen: 6,
         desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -64,7 +68,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Aguav Berry',
         gen: 3,
-        desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.',
+        desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.',
       }
     ],
     [
@@ -81,6 +85,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Alakazite',
         gen: 6,
         desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -89,6 +94,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Aloraichium Z',
         gen: 7,
         desc: 'If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -97,6 +103,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Altarianite',
         gen: 6,
         desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -105,6 +112,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ampharosite',
         gen: 6,
         desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -145,6 +153,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Audinite',
         gen: 6,
         desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -161,6 +170,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Banettite',
         gen: 6,
         desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -177,6 +187,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Beedrillite',
         gen: 6,
         desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -193,6 +204,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Berry',
         gen: 2,
         desc: '(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -204,11 +216,20 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'berrysweet',
+      {
+        name: 'Berry Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
+      }
+    ],
+    [
       'berserkgene',
       {
         name: 'Berserk Gene',
         gen: 2,
         desc: '(Gen 2) On switch-in, raises holder\'s Attack by 2 and confuses it. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -233,6 +254,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Bitter Berry',
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is confused. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -265,6 +287,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Blastoisinite',
         gen: 6,
         desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -273,6 +296,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Blazikenite',
         gen: 6,
         desc: 'If held by a Blaziken, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -281,6 +305,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Blue Orb',
         gen: 6,
         desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -289,6 +314,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Bluk Berry',
         gen: 3,
         desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      }
+    ],
+    [
+      'blunderpolicy',
+      {
+        name: 'Blunder Policy',
+        gen: 8,
+        desc: 'If the holder misses because of accuracy, it raises Speed by 2 stages. Single use.',
       }
     ],
     [
@@ -329,6 +362,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Buginium Z',
         gen: 7,
         desc: 'If holder has a Bug move, this item allows it to use a Bug Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -345,6 +379,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Burnt Berry',
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is frozen. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -353,6 +388,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Cameruptite',
         gen: 6,
         desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -377,6 +413,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Charizardite X',
         gen: 6,
         desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -385,6 +422,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Charizardite Y',
         gen: 6,
         desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -436,6 +474,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'chippedpot',
+      {
+        name: 'Chipped Pot',
+        gen: 8,
+        desc: 'Evolves Sinistea into Polteageist when used.',
+      }
+    ],
+    [
       'choiceband',
       {
         name: 'Choice Band',
@@ -472,6 +518,13 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Claw Fossil',
         gen: 3,
         desc: 'Can be revived into Anorith.',
+      }
+    ],
+    [
+      'cloversweet', {
+        name: 'Clover Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
       }
     ],
     [
@@ -512,6 +565,15 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Crucibellite',
         gen: 6,
         desc: 'If held by a Crucibelle, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
+      }
+    ],
+    [
+      'crackedpot',
+      {
+        name: 'Cracked Pot',
+        gen: 8,
+        desc: 'Evolves Sinistea into Polteageist when used.',
       }
     ],
     [
@@ -552,6 +614,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Darkinium Z',
         gen: 7,
         desc: 'If holder has a Dark move, this item allows it to use a Dark Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -569,6 +632,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Decidium Z',
         gen: 7,
         desc: 'If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -603,6 +667,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Diancite',
         gen: 6,
         desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -675,6 +740,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Dragonium Z',
         gen: 7,
         desc: 'If holder has a Dragon move, this item allows it to use a Dragon Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -740,6 +806,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Eevium Z',
         gen: 7,
         desc: 'If held by an Eevee with Last Resort, it can use Extreme Evoboost.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -748,6 +815,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Eject Button',
         gen: 5,
         desc: 'If holder survives a hit, it immediately switches out to a chosen ally. Single use.',
+      }
+    ],
+    [
+      'ejectpack',
+      {
+        name: 'Eject Pack',
+        gen: 8,
+        desc: 'When the holder\'s stats are lowered, it will be switched out of battle.',
       }
     ],
     [
@@ -788,6 +863,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Electrium Z',
         gen: 7,
         desc: 'If holder has an Electric move, this item allows it to use an Electric Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -828,6 +904,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Fairium Z',
         gen: 7,
         desc: 'If holder has a Fairy move, this item allows it to use a Fairy Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -876,6 +953,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Fightinium Z',
         gen: 7,
         desc: 'If holder has a Fighting move, this item allows it to use a Fighting Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -883,7 +961,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Figy Berry',
         gen: 3,
-        desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.',
+        desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.',
       }
     ],
     [
@@ -917,6 +995,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Firium Z',
         gen: 7,
         desc: 'If holder has a Fire move, this item allows it to use a Fire Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -952,6 +1031,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'flowersweet',
+      {
+        name: 'Flower Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
+      }
+    ],
+    [
       'flyinggem',
       {
         name: 'Flying Gem',
@@ -973,6 +1060,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Flyinium Z',
         gen: 7,
         desc: 'If holder has a Flying move, this item allows it to use a Flying Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -989,6 +1077,42 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Focus Sash',
         gen: 4,
         desc: 'If holder\'s HP is full, will survive an attack that would KO it with 1 HP. Single use.',
+      }
+    ],
+    [
+      'fossilizedbird',
+      {
+        name: 'Fossilized Bird',
+        gen: 8,
+        desc: 'Can be revived into Arctovish with Fossilized Fish or Arctozolt with Fossilized Dino.',
+        shortDesc: 'Can be combined with certain fossils.',
+      }
+    ],
+    [
+      'fossilizeddino',
+      {
+        name: 'Fossilized Dino',
+        gen: 8,
+        desc: 'Can be revived into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Bird.',
+        shortDesc: 'Can be combined with certain fossils.',
+      }
+    ],
+    [
+      'fossilizeddrake',
+      {
+        name: 'Fossilized Drake',
+        gen: 8,
+        desc: 'Can be revived into Dracozolt with Fossilized Dino or Dracovish with Fossilized Fish.',
+        shortDesc: 'Can be combined with certain fossils.',
+      }
+    ],
+    [
+      'fossilizedfish',
+      {
+        name: 'Fossilized Fish',
+        gen: 8,
+        desc: 'Can be revived into Dracovish with Fossilized Drake or Arctovish with Fossilized Bird.',
+        shortDesc: 'Can be combined with certain fossils.',
       }
     ],
     [
@@ -1013,6 +1137,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Galladite',
         gen: 6,
         desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1029,6 +1154,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Garchompite',
         gen: 6,
         desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1037,6 +1163,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Gardevoirite',
         gen: 6,
         desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1045,6 +1172,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Gengarite',
         gen: 6,
         desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1069,6 +1197,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ghostium Z',
         gen: 7,
         desc: 'If holder has a Ghost move, this item allows it to use a Ghost Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1077,6 +1206,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Glalitite',
         gen: 6,
         desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1085,6 +1215,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Gold Berry',
         gen: 2,
         desc: '(Gen 2) Restores 30 HP when at 1/2 max HP or less. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1117,6 +1248,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Grassium Z',
         gen: 7,
         desc: 'If holder has a Grass move, this item allows it to use a Grass Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1181,6 +1313,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Groundium Z',
         gen: 7,
         desc: 'If holder has a Ground move, this item allows it to use a Ground Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1189,6 +1322,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Gyaradosite',
         gen: 6,
         desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1232,6 +1366,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'heavydutyboots',
+      {
+        name: 'Heavy-Duty Boots',
+        gen: 8,
+        desc: 'Prevents the effects of traps set on the battlefield.',
+      }
+    ],
+    [
       'helixfossil',
       {
         name: 'Helix Fossil',
@@ -1245,6 +1387,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Heracronite',
         gen: 6,
         desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1261,6 +1404,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Houndoominite',
         gen: 6,
         desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1268,7 +1412,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Iapapa Berry',
         gen: 3,
-        desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.',
+        desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.',
       }
     ],
     [
@@ -1277,6 +1421,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ice Berry',
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is burned. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1300,7 +1445,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Ice Stone',
         gen: 7,
-        desc: 'Evolves Alolan Sandshrew into Alolan Sandslash and Alolan Vulpix into Alolan Ninetales when used.',
+        desc: 'Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, and Eevee into Glaceon when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
       }
     ],
@@ -1318,6 +1463,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Icium Z',
         gen: 7,
         desc: 'If holder has an Ice move, this item allows it to use an Ice Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1334,6 +1480,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Incinium Z',
         gen: 7,
         desc: 'If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1382,6 +1529,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Kangaskhanite',
         gen: 6,
         desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1431,6 +1579,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Kommonium Z',
         gen: 7,
         desc: 'If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1455,6 +1604,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Latiasite',
         gen: 6,
         desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1463,6 +1613,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Latiosite',
         gen: 6,
         desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1478,7 +1629,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Leaf Stone',
         gen: 1,
-        desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
+        desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
       }
     ],
@@ -1544,6 +1695,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Lopunnite',
         gen: 6,
         desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1555,11 +1707,20 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'lovesweet',
+      {
+        name: 'Love Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
+      }
+    ],
+    [
       'lucarionite',
       {
         name: 'Lucarionite',
         gen: 6,
         desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1592,6 +1753,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Lunalium Z',
         gen: 7,
         desc: 'Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1624,6 +1786,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Lycanium Z',
         gen: 7,
         desc: 'If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1655,7 +1818,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Mago Berry',
         gen: 3,
-        desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.',
+        desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.',
       }
     ],
     [
@@ -1680,6 +1843,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Manectite',
         gen: 6,
         desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1696,6 +1860,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Marshadium Z',
         gen: 7,
         desc: 'If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1712,6 +1877,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mawilite',
         gen: 6,
         desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1728,6 +1894,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Medichamite',
         gen: 6,
         desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1744,6 +1911,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Metagrossite',
         gen: 6,
         desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1777,6 +1945,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mewnium Z',
         gen: 7,
         desc: 'If held by a Mew with Psychic, it can use Genesis Supernova.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1785,6 +1954,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mewtwonite X',
         gen: 6,
         desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1793,6 +1963,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mewtwonite Y',
         gen: 6,
         desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1809,6 +1980,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mimikium Z',
         gen: 7,
         desc: 'If held by a Mimikyu with Play Rough, it can use Let\'s Snuggle Forever.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1825,6 +1997,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mint Berry',
         gen: 2,
         desc: '(Gen 2) Holder wakes up if it is asleep. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1833,6 +2006,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Miracle Berry',
         gen: 2,
         desc: '(Gen 2) Holder cures itself if it is confused or has a status condition. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1882,6 +2056,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Mystery Berry',
         gen: 2,
         desc: '(Gen 2) Restores 5 PP to the first of the holder\'s moves to reach 0 PP. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1946,6 +2121,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Normalium Z',
         gen: 7,
         desc: 'If holder has a Normal move, this item allows it to use a Normal Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -1994,6 +2170,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'PRZ Cure Berry',
         gen: 2,
         desc: '(Gen 2) Holder cures itself if it is paralyzed. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2002,6 +2179,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'PSN Cure Berry',
         gen: 2,
         desc: '(Gen 2) Holder is cured if it is poisoned. Single use.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2066,6 +2244,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Pidgeotite',
         gen: 6,
         desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2074,6 +2253,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Pikanium Z',
         gen: 7,
         desc: 'If held by a Pikachu with Volt Tackle, it can use Catastropika.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2082,6 +2262,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Pikashunium Z',
         gen: 7,
         desc: 'If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2098,6 +2279,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Pink Bow',
         gen: 2,
         desc: '(Gen 2) Holder\'s Normal-type attacks have 1.1x power.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2106,6 +2288,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Pinsirite',
         gen: 6,
         desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2154,6 +2337,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Poisonium Z',
         gen: 7,
         desc: 'If holder has a Poison move, this item allows it to use a Poison Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2170,6 +2354,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Polkadot Bow',
         gen: 2,
         desc: '(Gen 2) Holder\'s Normal-type attacks have 1.1x power.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2250,6 +2435,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Primarium Z',
         gen: 7,
         desc: 'If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2306,6 +2492,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Psychium Z',
         gen: 7,
         desc: 'If holder has a Psychic move, this item allows it to use a Psychic Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2412,6 +2599,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Red Orb',
         gen: 6,
         desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2420,6 +2608,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Repeat Ball',
         gen: 3,
         desc: 'A Poke Ball that works well on Pokemon species that were previously caught.',
+      }
+    ],
+    [
+      'ribbonsweet',
+      {
+        name: 'Ribbon Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
       }
     ],
     [
@@ -2468,6 +2664,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Rockium Z',
         gen: 7,
         desc: 'If holder has a Rock move, this item allows it to use a Rock Z-Move.',
+        isNonstandard: 'Past',
+      }
+    ],
+    [ 'roseincense',
+      {
+        name: 'Rose Incense',
+        gen: 4,
+        desc: 'Holder\'s Grass-type attacks have 1.2x power.',
       }
     ],
     [
@@ -2479,18 +2683,19 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'roomservice',
+      {
+        name: 'Room Service',
+        gen: 8,
+        desc: 'If Trick Room is active, lowers holder\'s Speed by 1 stage. Single use.',
+      }
+    ],
+    [
       'rootfossil',
       {
         name: 'Root Fossil',
         gen: 3,
         desc: 'Can be revived into Lileep.',
-      }
-    ],
-    [ 'roseincense',
-      {
-        name: 'Rose Incense',
-        gen: 4,
-        desc: 'Holder\'s Grass-type attacks have 1.2x power.',
       }
     ],
     [
@@ -2510,11 +2715,28 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'rustedshield',
+      {
+        name: 'Rusted Shield',
+        gen: 8,
+        desc: 'If held by a Zamazenta, this item changes it to Crowned Forme.',
+      }
+    ],
+    [
+      'rustedsword',
+      {
+        name: 'Rusted Sword',
+        gen: 8,
+        desc: 'If held by a Zacian, this item changes it to Crowned Forme.',
+      }
+    ],
+    [
       'sablenite',
       {
         name: 'Sablenite',
         gen: 6,
         desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2563,6 +2785,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Salamencite',
         gen: 6,
         desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2571,6 +2794,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Sceptilite',
         gen: 6,
         desc: 'If held by a Sceptile, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2579,6 +2803,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Scizorite',
         gen: 6,
         desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2611,6 +2836,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Sharpedonite',
         gen: 6,
         desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2700,6 +2926,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Slowbronite',
         gen: 6,
         desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2716,6 +2943,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Snorlium Z',
         gen: 7,
         desc: 'If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2740,6 +2968,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Solganium Z',
         gen: 7,
         desc: 'Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2820,6 +3049,15 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Steelium Z',
         gen: 7,
         desc: 'If holder has a Steel move, this item allows it to use a Steel Z-Move.',
+        isNonstandard: 'Past',
+      }
+    ],
+    [
+      'starsweet',
+      {
+        name: 'Star Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
       }
     ],
     [
@@ -2828,6 +3066,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Steelixite',
         gen: 6,
         desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2855,6 +3094,14 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'strawberrysweet',
+      {
+        name: 'Strawberry Sweet',
+        gen: 8,
+        desc: 'Evolves Milcery into Alcremie when held and spun around.',
+      }
+    ],
+    [
       'sunstone',
       {
         name: 'Sun Stone',
@@ -2869,6 +3116,15 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Swampertite',
         gen: 6,
         desc: 'If held by a Swampert, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
+      }
+    ],
+    [
+      'sweetapple',
+      {
+        name: 'Sweet Apple',
+        gen: 8,
+        desc: 'Evolves Applin into Appletun when used.',
       }
     ],
     [
@@ -2893,6 +3149,15 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Tapunium Z',
         gen: 7,
         desc: 'If held by a Tapu with Nature\'s Madness, it can use Guardian of Alola.',
+        isNonstandard: 'Past',
+      }
+    ],
+    [
+      'tartapple',
+      {
+        name: 'Tart Apple',
+        gen: 8,
+        desc: 'Evolves Applin into Flapple when used.',
       }
     ],
     [
@@ -2912,11 +3177,19 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'throatspray',
+      {
+        name: 'Throat Spray',
+        gen: 8,
+        desc: 'Raises holder\'s Special Attack by 1 stage after using a sound move. Single use.',
+      }
+    ],
+    [
       'thunderstone',
       {
         name: 'Thunder Stone',
         gen: 1,
-        desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, and Eelektrik into Eelektross when used.',
+        desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.',
         shortDesc: 'Evolves certain species of Pokemon when used.',
       }
     ],
@@ -2958,6 +3231,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Tyranitarite',
         gen: 6,
         desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2974,6 +3248,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Ultranecrozium Z',
         gen: 7,
         desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -2990,6 +3265,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Venusaurite',
         gen: 6,
         desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -3031,6 +3307,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
         name: 'Waterium Z',
         gen: 7,
         desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
+        isNonstandard: 'Past',
       }
     ],
     [
@@ -3093,7 +3370,7 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Wiki Berry',
         gen: 3,
-        desc: 'Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.',
+        desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.',
       }
     ],
     [

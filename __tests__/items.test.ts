@@ -20,6 +20,16 @@ describe('getItemDetailsByName', () => {
     expect(data).toMatchSnapshot();
   });
 
+  test('GIVEN a valid generation 8 item THEN returns ItemEntry', async () => {
+    const { data } = await gCall({
+      source: getItemDetailsByName,
+      variableValues: { item: 'flowersweet' },
+    }).then(formatResponse) as DataResponse<'getItemDetailsByName'>;
+
+    expect(data.getItemDetailsByName.name).toBe('Flower Sweet');
+    expect(data).toMatchSnapshot();
+  });
+
   test('GIVEN an invalid item THEN returns error', async () => {
     const data = await gCall({
       source: getItemDetailsByName,
@@ -35,7 +45,7 @@ describe('getItemDetailsByFuzzy', () => {
   const getItemDetailsByFuzzy = `
   query ($item: String! $skip: Int $take: Int $reverse: Boolean) {
     getItemDetailsByFuzzy(item: $item skip: $skip take: $take reverse: $reverse) {
-      name
+      name sprite
     }
   }`;
 
@@ -46,6 +56,7 @@ describe('getItemDetailsByFuzzy', () => {
     }).then(formatResponse) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Specs');
+    expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-specs.png');
     expect(data).toMatchSnapshot();
   });
 
@@ -56,6 +67,7 @@ describe('getItemDetailsByFuzzy', () => {
     }).then(formatResponse) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Band');
+    expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png');
     expect(data).toMatchSnapshot();
   });
 
@@ -71,6 +83,7 @@ describe('getItemDetailsByFuzzy', () => {
     }).then(formatResponse) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Scarf');
+    expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-scarf.png');
     expect(data).toMatchSnapshot();
   });
 

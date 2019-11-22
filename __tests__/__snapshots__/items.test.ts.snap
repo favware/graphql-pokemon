@@ -80,6 +80,7 @@ exports[`getItemDetailsByFuzzy GIVEN a fuzzy item THEN returns ItemEntry 1`] = `
 Object {
   "getItemDetailsByFuzzy": Object {
     "name": "Choice Band",
+    "sprite": "https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png",
   },
 }
 `;
@@ -88,6 +89,7 @@ exports[`getItemDetailsByFuzzy GIVEN a fuzzy item and pagination THEN returns It
 Object {
   "getItemDetailsByFuzzy": Object {
     "name": "Choice Scarf",
+    "sprite": "https://play.pokemonshowdown.com/sprites/itemicons/choice-scarf.png",
   },
 }
 `;
@@ -96,6 +98,7 @@ exports[`getItemDetailsByFuzzy GIVEN a valid item THEN returns ItemEntry 1`] = `
 Object {
   "getItemDetailsByFuzzy": Object {
     "name": "Choice Specs",
+    "sprite": "https://play.pokemonshowdown.com/sprites/itemicons/choice-specs.png",
   },
 }
 `;
@@ -115,6 +118,14 @@ Object {
   "errors": Array [
     [GraphQLError: Failed to get data for item: totally_invalid_item],
   ],
+}
+`;
+
+exports[`getItemDetailsByName GIVEN a valid generation 8 item THEN returns ItemEntry 1`] = `
+Object {
+  "getItemDetailsByName": Object {
+    "name": "Flower Sweet",
+  },
 }
 `;
 

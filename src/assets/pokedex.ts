@@ -14529,6 +14529,25 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'stunfiskgalar',
+      {
+        species: 'stunfisk-galar',
+        forme: 'Galar',
+        formeLetter: 'G',
+        num: 618,
+        types: [ 'Ground', 'Steel' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 109, atk: 81, def: 99, spa: 66, spd: 84, spe: 32,
+        },
+        abilities: { first: 'Mimicry' },
+        heightm: 0.7,
+        weightkg: 20.5,
+        color: 'Green',
+        eggGroups: [ 'Water 1', 'Amorphous' ],
+      }
+    ],
+    [
       'mienfoo',
       {
         species: 'mienfoo',

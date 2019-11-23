@@ -46,6 +46,7 @@ export default class ItemService {
     itemEntry.name = itemData.name;
     itemEntry.shortDesc = itemData.shortDesc;
     itemEntry.isNonstandard = itemData.isNonstandard;
+    itemEntry.generationIntroduced = itemData.gen;
     itemEntry.sprite = `https://play.pokemonshowdown.com/sprites/itemicons/${Util.toLowerHyphenCase(itemData.name)}.png`;
     itemEntry.bulbapediaPage = `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(itemData.name)}`;
     itemEntry.serebiiPage = `https://www.serebii.net/itemdex/${Util.toLowerSingleWordCase(itemData.name)}.shtml`;

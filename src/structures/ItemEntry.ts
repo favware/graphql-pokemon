@@ -1,4 +1,4 @@
-import { Field, ObjectType } from 'type-graphql';
+import { Field, ObjectType, Int } from 'type-graphql';
 
 @ObjectType({ description: 'A single item entry' })
 export default class ItemEntry {
@@ -16,6 +16,9 @@ export default class ItemEntry {
 
   @Field(() => String, { description: 'The sprite for an item' })
   sprite: string;
+
+  @Field(() => Int, { description: 'The generation in which this item was introduced' })
+  generationIntroduced: number;
 
   @Field(() => String, { description: 'Bulbapedia page for an item' })
   bulbapediaPage: string;

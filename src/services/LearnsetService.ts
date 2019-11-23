@@ -2,10 +2,13 @@ import { Args } from 'type-graphql';
 import LearnsetArgs from '../arguments/LearnsetArgs';
 import learnsets from '../assets/learnsets';
 import LearnsetEntry, { LearnsetLevelUpMove, LearnsetMove } from '../structures/LearnsetEntry';
+import pokedex from '../assets/pokedex';
+import Util from '../utils/util';
 
 export default class LearnsetService {
   public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs) {
     const learnset = learnsets.get(pokemon);
+    const pokemonEntry = pokedex.get(pokemon);
 
     if (!learnset) {
       throw new Error(`No Pokémon found for ${pokemon}`);
@@ -63,6 +66,11 @@ export default class LearnsetService {
     learnsetEntry.eggMoves = eggMoves;
     learnsetEntry.eventMoves = eventMoves;
     learnsetEntry.dreamworldMoves = dreamworldMoves;
+    if (pokemonEntry) {
+      learnsetEntry.sprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite);
+      learnsetEntry.shinySprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite, true);
+      learnsetEntry.color = pokemonEntry.color;
+    }
 
     return learnsetEntry;
   }
@@ -94,6 +102,17 @@ export default class LearnsetService {
 
   private getMethodType(method: string) {
     return method.slice(1, 2) as MethodTypes;
+  }
+
+  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
+    if (specialShinySprite && shiny === true) return specialShinySprite;
+    if (specialSprite && shiny === false) return specialSprite;
+
+    if (!baseForme) pokemonName = Util.toLowerSingleWordCase(pokemonName);
+
+    if (pokemonName.match(/^(.+)-(x|y)$/g)) pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
+
+    return `https://play.pokemonshowdown.com/sprites/${shiny ? 'ani-shiny' : 'ani'}/${pokemonName}.gif`;
   }
 }
 

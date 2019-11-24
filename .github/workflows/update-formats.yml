@@ -29,5 +29,6 @@ jobs:
         GITHUB_REPO_URL="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git";
         git config --local user.email "favwarebot@gmail.com";
         git config --local user.name "Favware-bot";
-        git commit -sam "feat: update smogon formats"
-        git push "${GITHUB_REPO_URL}" HEAD:master;
+        git checkout --branch favware-bot/feat/update-smogon-formats;
+        git commit -sam "feat: update smogon formats";
+        git push "${GITHUB_REPO_URL}" HEAD:favware-bot/feat/update-smogon-formats;

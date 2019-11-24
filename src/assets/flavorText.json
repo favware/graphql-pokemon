@@ -21803,7 +21803,20 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "The hair on Zigzagoon’s back is bristly. It rubs the hard back hair against trees to leave its territorial markings. This Pokémon may play dead to fool foes in battle."
+	}, {
+        "version_id": "Sword",
+        "flavor_text": "It marks its territory by rubbing its bristly fur on trees. This variety of Zigzagoon is friendlier and calmer than the kind native to Galar."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Zigzagoon that adapted to regions outside Galar acquired this appearance. If you've lost something, this Pokémon can likely find it."
 	}],
+	"263galar": [{
+        "version_id": "Sword",
+        "flavor_text": "Its restlessness has it constantly running around. If it sees another Pokémon, it will purposely run into them in order to start a fight."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Thought to be the oldest form of Zigzagoon, it moves in zigzags and wreaks havoc upon its surroundings."
+    }],
 	"264": [{
 		"version_id": "Ruby",
 		"flavor_text": "LINOONE always runs full speed and only in straight lines. If facing an obstacle, it makes a right-angle turn to evade it. This Pokémon is very challenged by gently curving roads."
@@ -21858,7 +21871,20 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "When hunting, Linoone will make a beeline straight for the prey at a full run. While this Pokémon is capable of topping 60 mph, it has to come to a screeching halt before it can turn."
+	}, {
+        "version_id": "Sword",
+        "flavor_text": "Its fur is strong and supple. Shaving brushes made with shed Linoone hairs are highly prized."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It uses its explosive speed and razor-sharp claws to bring down prey. Running along winding paths is not its strong suit."
 	}],
+    "264galar": [{
+        "version_id": "Sword",
+        "flavor_text": "It uses its long tongue to taunt opponents. Once the opposition is enraged, this Pokémon hurls itself at the opponent, tackling them forcefully."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "This very aggressive Pokémon will recklessly challenge opponents stronger than itself."
+    }],
 	"265": [{
 		"version_id": "Ruby",
 		"flavor_text": "Using the spikes on its rear end,   WURMPLE peels the bark off trees and feeds on the sap that oozes out. This Pokémon’s feet are tipped with suction pads that allow it to cling to glass without slipping."
@@ -28439,7 +28465,7 @@
 		"flavor_text": "Anyone standing in its path gets sliced right in two, while this Pokémon continues its flight without interruption."
 	}, {
 		"version_id": "Moon",
-		"flavor_text": "\"Mega Evolution fuels its brutality, and it may even turn on the Trainer who raised it. It's been dubbed \"\"the blood-soaked crescent.\"\"\""
+		"flavor_text": "\"Mega Evolution fuels its brutality, and it may even turn on the Trainer who raised it. It's been dubbed \"the blood-soaked crescent.\""
 	}, {
 		"version_id": "Ultra Sun",
 		"flavor_text": "The stress of its two proud wings becoming misshapen and stuck together because of strong energy makes it go on a rampage."
@@ -35813,7 +35839,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Each of them carries a mask that used to be its face when it was human. Sometimes they look at it and cry."
-	}],
+	}, {
+        "version_id": "Sword",
+        "flavor_text": "A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask's dark power."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It's said that this Pokémon was formed when an ancient clay tablet was drawn to a vengeful spirit."
+    }],
 	"563": [{
 		"version_id": "Black",
 		"flavor_text": "It has been said that they swallow those who get too close and turn them into mummies. They like to eat gold nuggets."
@@ -37699,7 +37731,7 @@
 		"flavor_text": "They fight for their friends without any thought about danger to themselves. One can carry a car while flying."
 	}, {
 		"version_id": "Sun",
-		"flavor_text": "\"With its brave disposition, it fears nothing—not even death. Ancient Alolan people respected it, referring to it as \"\"the hero of the sky.\"\"\""
+		"flavor_text": "With its brave disposition, it fears nothing—not even death. Ancient Alolan people respected it, referring to it as \"the hero of the sky.\""
 	}, {
 		"version_id": "Moon",
 		"flavor_text": "It’s thought that people disturbed their habitats in the past, so Braviary banded together to fight back."
@@ -39722,6 +39754,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It spits a sticky thread to stop opponents in their tracks, and then it grabs them in its sharp, sturdy mandibles to take them down."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "Its natural enemies, like Rookidee, may flee rather than risk getting caught in its large mandibles that can snap thick tree branches."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "It uses its big jaws to dig nests into the forest floor, and it loves to feed on sweet tree sap."
   }],
 	"737": [{
 		"version_id": "Sun",
@@ -39735,6 +39773,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its body is capable of storing electricity. On camping trips, people are grateful to have one around."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "While its durable shell protects it from attacks, Charjabug strikes at enemies with jolts of electricity discharged from the tips of its jaws."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its digestive processes convert the leaves it eats into electricity. An electric sac in its belly stores the electricity for later use."
 	}],
 	"738": [{
 		"version_id": "Sun",
@@ -39748,6 +39792,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Vikavolt flusters opponents with acrobatic flying maneuvers. This creates an opening for it to deliver an electric beam attack."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "It builds up electricity in its abdomen, focuses it through its jaws, and then fires the electricity off in concentrated beams."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "If it carries a Charjabug to use as a spare battery, a flying Vikavolt can rapidly fire high-powered beams of electricity."
   }],
 	"739": [{
 		"version_id": "Sun",
@@ -40985,86 +41035,737 @@
 	}],
 	"810": [{
 		"version_id": "Sword",
-		"flavor_text": "A mischievous Chimp Pokémon that is full of boundless curiosity."
+		"flavor_text": "When it uses its special stick to strike up a beat, the sound waves produced carry revitalizing energy to the plants and flowers in the area."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A mischievous Chimp Pokémon that is full of boundless curiosity."
+		"flavor_text": "It attacks with rapid beats of its stick. As it strikes with amazing speed, it gets more and more pumped."
+	}],
+	"811": [{
+		"version_id": "Sword",
+		"flavor_text": "The faster a Thwackey can beat out a rhythm with its two sticks, the more respect it wins from its peers."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When it's drumming out rapid beats in battle, it gets so caught up in the rhythm that it won't even notice that it's already knocked out its opponent."
+	}],
+	"812": [{
+		"version_id": "Sword",
+		"flavor_text": "By drumming, it taps into the power of its special tree stump. The roots of the stump follow its direction in battle."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The one with the best drumming techniques becomes the boss of the troop. It has a gentle disposition and values harmony among its group."
 	}],
 	"813": [{
 		"version_id": "Sword",
-		"flavor_text": "A Rabbit Pokémon that is always running about, bursting with energy."
+		"flavor_text": "A warm-up of running around gets fire energy coursing through this Pokémon's body. Once that happens, it's ready to fight at full power."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A Rabbit Pokémon that is always running about, bursting with energy."
+		"flavor_text": "It has special pads on the backs of its feet, and one on its nose. Once it's raring to fight, these pads radiate tremendous heat."
+	}],
+	"814": [{
+		"version_id": "Sword",
+		"flavor_text": "Its thick and fluffy fur protects it from the cold and enables it to use hotter fire moves."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork."
+	}],
+	"815": [{
+		"version_id": "Sword",
+		"flavor_text": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It's skilled at both offense and defense, and it gets pumped up when cheered on. But if it starts showboating, it could put itself in a tough spot."
 	}],
 	"816": [{
 		"version_id": "Sword",
-		"flavor_text": "A somewhat timid Water Lizard Pokémon that shoots out attacks as it hides itself in the water."
+		"flavor_text": "When scared, this Pokémon cries. Its tears pack the chemical punch of 100 onions, and attackers won't be able to resist weeping."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A somewhat timid Water Lizard Pokémon that shoots out attacks as it hides itself in the water."
+		"flavor_text": "When it gets wet, its skin changes color, and this Pokémon becomes invisible as if it were camouflaged."
+	}],
+	"817": [{
+		"version_id": "Sword",
+		"flavor_text": "A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Highly intelligent but also very lazy, it keeps enemies out of its territory by laying traps everywhere."
+	}],
+	"818": [{
+		"version_id": "Sword",
+		"flavor_text": "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its nictitating membranes let it pick out foes' weak points so it can precisely blast them with water that shoots from its fingertips at Mach 3."
 	}],
 	"819": [{
 		"version_id": "Sword",
-		"flavor_text": "A mysterious flower Pokémon"
+		"flavor_text": "Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A mysterious flower Pokémon"
+		"flavor_text": "It eats berries nonstop—a habit that has made it more resilient than it looks. It'll show up on farms, searching for yet more berries."
 	}],
 	"820": [{
 		"version_id": "Sword",
-		"flavor_text": "A mysterious pollen Pokémon"
+		"flavor_text": "It stashes berries in its tail—so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn't notice the loss."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A mysterious pollen Pokémon"
+		"flavor_text": "Common throughout the Galar region, this Pokémon has strong teeth and can chew through the toughest of berry shells."
 	}],
 	"821": [{
 		"version_id": "Sword",
-		"flavor_text": "A way too cute sheep Pokémon"
+		"flavor_text": "It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle—even a defeat increases its strength a bit."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A way too cute sheep Pokémon"
+		"flavor_text": "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents."
 	}],
 	"822": [{
 		"version_id": "Sword",
-		"flavor_text": "A strong jawed turtle Pokémon"
+		"flavor_text": "Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A strong jawed turtle Pokémon"
+		"flavor_text": "The lessons of many harsh battles have taught it how to accurately judge an opponent's strength."
 	}],
 	"823": [{
 		"version_id": "Sword",
-		"flavor_text": "A big raven Pokémon"
+		"flavor_text": "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A big raven Pokémon"
+		"flavor_text": "With their great intellect and flying skills, these Pokémon very successfully act as the Galar region's airborne taxi service."
+	}],
+	"823gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Imbued with Gigantamax energy, its wings can whip up winds more forceful than any a hurricane could muster. The gusts blow everything away."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The eight feathers on its back are called blade birds, and they can launch off its body to attack foes independently."
 	}],
 	"824": [{
 		"version_id": "Sword",
-		"flavor_text": "A way too adorable electric corgi Pokémon"
+		"flavor_text": "A constant collector of information, this Pokémon is very smart. Very strong is what it isn't."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "A way too adorable electric corgi Pokémon"
+		"flavor_text": "Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings."
 	}],
 	"825": [{
 		"version_id": "Sword",
-		"flavor_text": "Looks more like a Digimon tbh"
+		"flavor_text": "It barely moves, but it's still alive. Hiding in its shell without food or water seems to have awakened its psychic powers."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "Looks more like a Digimon tbh"
+		"flavor_text": "As it grows inside its shell, it uses its psychic abilities to monitor the outside world and prepare for evolution."
 	}],
-	"899": [{
+	"826": [{
 		"version_id": "Sword",
-		"flavor_text": "Zacian attacks so gracefully that its movements can even captivate its opponents. It holds what appears to be a sword in its mouth."
+		"flavor_text": "It's famous for its high level of intelligence, and the large size of its brain is proof that it also possesses immense psychic power."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "Zacian attacks so gracefully that its movements can even captivate its opponents. It holds what appears to be a sword in its mouth."
+		"flavor_text": "It emits psychic energy to observe and study what's around it—and what's around it can include things over six miles away."
 	}],
-	"900": [{
+	"826gmax": [{
 		"version_id": "Sword",
-		"flavor_text": "Zamazenta’s regal and majestic movements overwhelm any opponents that dare face it. Its body is covered in what seems to be a shield."
+		"flavor_text": "Its brain has grown to a gargantuan size, as has the rest of its body. This Pokémon's intellect and psychic abilities are overpowering."
 	}, {
 		"version_id": "Shield",
-		"flavor_text": "Zamazenta’s regal and majestic movements overwhelm any opponents that dare face it. Its body is covered in what seems to be a shield."
-	}]
+		"flavor_text": "If it were to utilize every last bit of its power, it could control the minds of every living being in its vicinity."
+	}],
+	"827": [{
+		"version_id": "Sword",
+		"flavor_text": "Aided by the soft pads on its feet, it silently raids the food stores of other Pokémon. It survives off its ill-gotten gains."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Cunning and cautious, this Pokémon survives by stealing food from others. It erases its tracks with swipes of its tail as it makes off with its plunder."
+	}],
+	"828": [{
+		"version_id": "Sword",
+		"flavor_text": "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "With a lithe body and sharp claws, it goes around stealing food and eggs. Boltund is its natural enemy."
+	}],
+	"829": [{
+		"version_id": "Sword",
+		"flavor_text": "It anchors itself in the ground with its single leg, then basks in the sun. After absorbing enough sunlight, its petals spread as it blooms brilliantly."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon."
+	}],
+	"830": [{
+		"version_id": "Sword",
+		"flavor_text": "The seeds attached to its cotton fluff are full of nutrients. It spreads them on the wind so that plants and other Pokémon can benefit from them."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The cotton on the head of this Pokémon can be spun into a glossy, gorgeous yarn—a Galar regional specialty."
+	}],
+	"831": [{
+		"version_id": "Sword",
+		"flavor_text": "Its curly fleece is such an effective cushion that this Pokémon could fall off a cliff and stand right back up at the bottom, unharmed."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "If its fleece grows too long, Wooloo won't be able to move. Cloth made with the wool of this Pokémon is surprisingly strong."
+	}],
+	"832": [{
+		"version_id": "Sword",
+		"flavor_text": "Weave a carpet from its springy wool, and you end up with something closer to a trampoline. You'll start to bounce the moment you set foot on it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its majestic horns are meant only to impress the opposite gender. They never see use in battle."
+	}],
+	"833": [{
+		"version_id": "Sword",
+		"flavor_text": "Apparently the itch of its teething impels it to snap its jaws at anything in front of it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It starts off battles by attacking with its rock-hard horn, but as soon as the opponent flinches, this Pokémon bites down and never lets go."
+	}],
+	"834": [{
+		"version_id": "Sword",
+		"flavor_text": "With jaws that can shear through steel rods, this highly aggressive Pokémon chomps down on its unfortunate prey."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down."
+	}],
+	"834gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "It responded to Gigantamax energy by becoming bipedal. First it comes crashing down on foes, and then it finishes them off with its massive jaws."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "In the Galar region, there's a tale about this Pokémon chewing up a mountain and using the rubble to stop a flood."
+	}],
+	"835": [{
+		"version_id": "Sword",
+		"flavor_text": "This Pokémon is very popular as a herding dog in the Galar region. As it runs, it generates electricity from the base of its tail."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This gluttonous Pokémon only assists people with their work because it wants treats. As it runs, it crackles with electricity."
+	}],
+	"836": [{
+		"version_id": "Sword",
+		"flavor_text": "This Pokémon generates electricity and channels it into its legs to keep them going strong. Boltund can run nonstop for three full days."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It sends electricity through its legs to boost their strength. Running at top speed, it easily breaks 50 mph."
+	}],
+	"837": [{
+		"version_id": "Sword",
+		"flavor_text": "Most of its body has the same composition as coal. Fittingly, this Pokémon was first discovered in coal mines about 400 years ago."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It can race around like a unicycle, even on rough, rocky terrain. Burning coal sustains it."
+	}],
+	"838": [{
+		"version_id": "Sword",
+		"flavor_text": "It forms coal inside its body. Coal dropped by this Pokémon once helped fuel the lives of people in the Galar region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "By rapidly rolling its legs, it can travel at over 18 mph. The temperature of the flames it breathes exceeds 1,800 degrees Fahrenheit."
+	}],
+	"839": [{
+		"version_id": "Sword",
+		"flavor_text": "It's usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "While it's engaged in battle, its mountain of coal will burn bright red, sending off sparks that scorch the surrounding area."
+	}],
+	"839gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Its body is a colossal stove. With Gigantamax energy stoking the fire, this Pokémon's flame burns hotter than 3,600 degrees Fahrenheit."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When Galar was hit by a harsh cold wave, this Pokémon served as a giant heating stove and saved many lives."
+	}],
+	"840": [{
+		"version_id": "Sword",
+		"flavor_text": "It spends its entire life inside an apple. It hides from its natural enemies, bird Pokémon, by pretending it's just an apple and nothing more."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "As soon as it's born, it burrows into an apple. Not only does the apple serve as its food source, but the flavor of the fruit determines its evolution."
+	}],
+	"841": [{
+		"version_id": "Sword",
+		"flavor_text": "It ate a sour apple, and that induced its evolution. In its cheeks, it stores an acid capable of causing chemical burns."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It flies on wings of apple skin and spits a powerful acid. It can also change its shape into that of an apple."
+	}],
+	"841gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Under the influence of Gigantamax energy, it produces much more sweet nectar, and its shape has changed to resemble a giant apple."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "If it stretches its neck, the strong aroma of its nectar pours out. The scent is so sickeningly sweet that one whiff makes other Pokémon faint."
+	}],
+	"842": [{
+		"version_id": "Sword",
+		"flavor_text": "Eating a sweet apple caused its evolution. A nectarous scent wafts from its body, luring in the bug Pokémon it preys on."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its body is covered in sweet nectar, and the skin on its back is especially yummy. Children used to have it as a snack."
+	}],
+	"842gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "It blasts its opponents with massive amounts of sweet, sticky nectar, drowning them under the deluge."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Due to Gigantamax energy, this Pokémon's nectar has thickened. The increased viscosity lets the nectar absorb more damage than before."
+	}],
+	"843": [{
+		"version_id": "Sword",
+		"flavor_text": "As it digs, it swallows sand and stores it in its neck pouch. The pouch can hold more than 17 pounds of sand."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hide."
+	}],
+	"844": [{
+		"version_id": "Sword",
+		"flavor_text": "When it contracts its body, over 220 pounds of sand sprays from its nose. If it ever runs out of sand, it becomes disheartened."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its unique style of coiling allows it to blast sand out of its sand sac more efficiently."
+	}],
+	"844gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Its sand pouch has grown to tremendous proportions. More than 1,000,000 tons of sand now swirl around its body."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Sand swirls around its body with such speed and power that it could pulverize a skyscraper."
+	}],
+	"845": [{
+		"version_id": "Sword",
+		"flavor_text": "It's so strong that it can knock out some opponents in a single hit, but it also may forget what it's battling midfight."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This hungry Pokémon swallows Arrokuda whole. Occasionally, it makes a mistake and tries to swallow a Pokémon other than its preferred prey."
+	}],
+	"845gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Cramorant's gluttony led it to try to swallow an Arrokuda whole, which in turn led to Cramorant getting an Arrokuda stuck in its throat."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The slightest shock is sometimes enough to get this Pokémon to spit out the Arrokuda lodged in its throat."
+	}],
+	"846": [{
+		"version_id": "Sword",
+		"flavor_text": "If it sees any movement around it, this Pokémon charges for it straightaway, leading with its sharply pointed jaw. It's very proud of that jaw."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "After it's eaten its fill, its movements become extremely sluggish. That's when Cramorant swallows it up."
+	}],
+	"847": [{
+		"version_id": "Sword",
+		"flavor_text": "This Pokémon has a jaw that's as sharp as a spear and as strong as steel. Apparently Barraskewda's flesh is surprisingly tasty, too."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It spins its tail fins to propel itself, surging forward at speeds of over 100 knots before ramming prey and spearing into them."
+	}],
+	"848": [{
+		"version_id": "Sword",
+		"flavor_text": "It stores poison in an internal poison sac and secretes that poison through its skin. If you touch this Pokémon, a tingling sensation follows."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It manipulates the chemical makeup of its poison to produce electricity. The voltage is weak, but it can cause a tingling paralysis."
+	}],
+	"849": [{
+        "version_id": "Sword",
+        "flavor_text": "When this Pokémon sounds as if it's strumming a guitar, it's actually clawing at the protrusions on its chest to generate electricity."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "This short-tempered and aggressive Pokémon chugs stagnant water to absorb any toxins it might contain."
+    }],
+    "849lowkey": [{
+        "version_id": "Sword",
+        "flavor_text": "Capable of generating 15,000 volts of electricity, this Pokémon looks down on all that would challenge it."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It has an electrical organ on its chest. While generating electricity, it fills its surroundings with what sounds like the strumming of a bass guitar."
+    }],
+    "849gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "Its excessive electric energy is its weapon. This Pokémon can build up more electricity than any thundercloud."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Out of control after its own poison penetrated its brain, it tears across the land in a rampage, contaminating the earth with toxic sweat."
+    }],
+    "850": [{
+        "version_id": "Sword",
+        "flavor_text": "It stores flammable gas in its body and uses it to generate heat. The yellow sections on its belly get particularly hot."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It wraps prey up with its heated body, cooking them in its coils. Once they're well-done, it will voraciously nibble them down to the last morsel."
+    }],
+    "851": [{
+        "version_id": "Sword",
+        "flavor_text": "When it heats up, its body temperature reaches about 1,500 degrees Fahrenheit. It lashes its body like a whip and launches itself at enemies."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "While its burning body is already dangerous on its own, this excessively hostile Pokémon also has large and very sharp fangs."
+    }],
+    "851gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "Gigantamax energy has evoked a rise in its body temperature, now reaching over 1,800 degrees Fahrenheit. Its heat waves incinerate its enemies."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The heat that comes off a Gigantamax Centiskorch may destabilize air currents. Sometimes it can even cause storms."
+    }],
+    "852": [{
+        "version_id": "Sword",
+        "flavor_text": "It's very curious, but its means of investigating things is to try to punch them with its tentacles. The search for food is what brings it onto land."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Its tentacles tear off easily, but it isn't alarmed when that happens—it knows they'll grow back. It's about as smart as a three-year-old."
+    }],
+    "853": [{
+        "version_id": "Sword",
+        "flavor_text": "A body made up of nothing but muscle makes the grappling moves this Pokémon performs with its tentacles tremendously powerful."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Searching for an opponent to test its skills against, it emerges onto land. Once the battle is over, it returns to the sea."
+    }],
+    "854": [{
+        "version_id": "Sword",
+        "flavor_text": "This Pokémon is said to have been born when a lonely spirit possessed a cold, leftover cup of tea."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The teacup in which this Pokémon makes its home is a famous piece of antique tableware. Many forgeries are in circulation."
+    }],
+    "854chipped": [{
+        "version_id": "Sword",
+        "flavor_text": "The swirl pattern in this Pokémon's body is its weakness. If it gets stirred, the swirl loses its shape, and Sinistea gets dizzy."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It absorbs the life-force of those who drink it. It waits patiently, but opportunities are fleeting—it tastes so bad that it gets spat out immediately."
+    }],
+    "855": [{
+        "version_id": "Sword",
+        "flavor_text": "This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Leaving leftover black tea unattended is asking for this Pokémon to come along and pour itself into it, turning the tea into a new Polteageist."
+    }],
+    "855chipped": [{
+        "version_id": "Sword",
+        "flavor_text": "Trainers Polteageist trusts will be allowed to experience its distinctive flavor and aroma firsthand by sampling just a tiny bit of its tea."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "When angered, it launches tea from its body at the offender's mouth. The tea causes strong chills if swallowed."
+    }],
+    "856": [{
+        "version_id": "Sword",
+        "flavor_text": "Via the protrusion on its head, it senses other creatures' emotions. If you don't have a calm disposition, it will never warm up to you."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "If this Pokémon senses a strong emotion, it will run away as fast as it can. It prefers areas without people."
+    }],
+    "857": [{
+        "version_id": "Sword",
+        "flavor_text": "No matter who you are, if you bring strong emotions near this Pokémon, it will silence you violently."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Using the braids on its head, it pummels foes to get them to quiet down. One blow from those braids would knock out a professional boxer."
+    }],
+    "858": [{
+        "version_id": "Sword",
+        "flavor_text": "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "If you're too loud around it, you risk being torn apart by the claws on its tentacle. This Pokémon is also known as the Forest Witch."
+    }],
+    "858gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "This Pokémon can read the emotions of creatures over 30 miles away. The minute it senses hostility, it goes on the attack."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Beams like lightning shoot down from its tentacles. It's known to some as the Raging Goddess."
+    }],
+    "859": [{
+        "version_id": "Sword",
+        "flavor_text": "Through its nose, it sucks in the emanations produced by people and Pokémon when they feel annoyed. It thrives off this negative energy."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It sneaks into people's homes, stealing things and feasting on the negative energy of the frustrated occupants."
+    }],
+    "860": [{
+        "version_id": "Sword",
+        "flavor_text": "When it gets down on all fours as if to beg for forgiveness, its trying to lure opponents in so that it can stab them with its spear-like hair."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "With sly cunning, it tries to lure people into the woods. Some believe it to have the power to make crops grow."
+    }],
+    "861": [{
+        "version_id": "Sword",
+        "flavor_text": "With the hair wrapped around its body helping to enhance its muscles, this Pokémon can overwhelm even Machamp."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+    }],
+    "861gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "By transforming its leg hair, this Pokémon delivers power-packed drill kicks that can bore huge holes in Galar's terrain."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Gigantamax energy has caused more hair to sprout all over its body. With the added strength, it can jump over the world's tallest building."
+    }],
+    "862": [{
+        "version_id": "Sword",
+        "flavor_text": "Its voice is staggering in volume. Obstagoon has a tendency to take on a threatening posture and shout—this move is known as Obstruct."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch."
+    }],
+    "863": [{
+        "version_id": "Sword",
+        "flavor_text": "What appears to be an iron helmet is actually hardened hair. This Pokémon lives for the thrill of battle."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "After many battles, it evolved dangerous claws that come together to form daggers when extended."
+    }],
+    "864": [{
+        "version_id": "Sword",
+        "flavor_text": "Its shell is overflowing with its heightened otherworldly energy. The ectoplasm serves as protection for this Pokémon's core spirit."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Be cautious of the ectoplasmic body surrounding its soul. You'll become stiff as stone if you touch it."
+    }],
+    "865": [{
+        "version_id": "Sword",
+        "flavor_text": "Only Farfetch'd that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "After deflecting attacks with its hard leaf shield, it strikes back with its sharp leek stalk. The leek stalk is both weapon and food."
+    }],
+    "866": [{
+        "version_id": "Sword",
+        "flavor_text": "It's highly skilled at tap-dancing. It waves its cane of ice in time with its graceful movements."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Its amusing movements make it very popular. It releases its psychic power from the pattern on its belly."
+    }],
+    "867": [{
+        "version_id": "Sword",
+        "flavor_text": "A powerful curse was woven into an ancient painting. After absorbing the spirit of a Yamask, the painting began to move."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Never touch its shadowlike body, or you'll be shown the horrific memories behind the picture carved into it."
+    }],
+    "868": [{
+        "version_id": "Sword",
+        "flavor_text": "This Pokémon was born from sweet-smelling particles in the air. Its body is made of cream."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "They say that any patisserie visited by Milcery is guaranteed success and good fortune."
+    }],
+    "869": [{
+        "version_id": "Sword",
+        "flavor_text": "When it trusts a Trainer, it will treat them to berries it's decorated with cream."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer."
+    }],
+    "869gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "Cream pours endlessly from this Pokémon's body. The cream stiffens when compressed by an impact. A harder impact results in harder cream."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It launches swarms of missiles, each made of cream and loaded with 100,000 kilocalories. Get hit by one of these, and your head will swim."
+    }],
+    "870": [{
+        "version_id": "Sword",
+        "flavor_text": "Five of them are troopers, and one is the brass. The brass's orders are absolute."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The six of them work together as one Pokémon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+    }],
+    "871": [{
+        "version_id": "Sword",
+        "flavor_text": "It feeds on seaweed, using its teeth to scrape it off rocks. Electric current flows from the tips of its spines."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It stores electricity in each spine. Even if one gets broken off, it still continues to emit electricity for at least three hours."
+    }],
+    "872": [{
+        "version_id": "Sword",
+        "flavor_text": "It spits out thread imbued with a frigid sort of energy and uses it to tie its body to branches, disguising itself as an icicle while it sleeps."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It eats snow that piles up on the ground. The more snow it eats, the bigger and more impressive the spikes on its back grow."
+    }],
+    "873": [{
+        "version_id": "Sword",
+        "flavor_text": "Icy scales fall from its wings like snow as it flies over fields and mountains. The temperature of its wings is less than −290 degrees Fahrenheit."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+    }],
+    "874": [{
+        "version_id": "Sword",
+        "flavor_text": "It stands in grasslands, watching the sun's descent from zenith to horizon. This Pokémon has a talent for delivering dynamic kicks."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Once a year, on a specific date and at a specific time, they gather out of nowhere and form up in a circle."
+    }],
+    "875": [{
+        "version_id": "Sword",
+        "flavor_text": "It drifted in on the flow of ocean waters from a frigid place. It keeps its head iced constantly to make sure it stays nice and cold."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "This Pokémon keeps its heat-sensitive head cool with ice. It fishes for its food, dangling its single hair into the sea to lure in prey."
+    }],
+    "875noice": [{
+        "version_id": "Sword",
+        "flavor_text": "The ice covering this Pokémon's face has shattered, revealing a slightly worried expression that many people are enamored with."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The hair on its head connects to the surface of its brain. When this Pokémon has something on its mind, its hair chills the air around it."
+    }],
+    "876male": [{
+        "version_id": "Sword",
+        "flavor_text": "It uses the horns on its head to sense the emotions of others. Males will act as valets for those they serve, looking after their every need."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Through its horns, it can pick up on the emotions of creatures around it. Positive emotions are the source of its strength."
+    }],
+    "876female": [{
+        "version_id": "Sword",
+        "flavor_text": "These intelligent Pokémon touch horns with each other to share information between them."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "They diligently serve people and Pokémon so they can gather feelings of gratitude. The females are particularly good at babysitting."
+    }],
+    "877": [{
+        "version_id": "Sword",
+        "flavor_text": "As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It carries electrically roasted seeds with it as if they're precious treasures. No matter how much it eats, it always gets hungry again in short order."
+    }],
+    "877hangry": [{
+        "version_id": "Sword",
+        "flavor_text": "Intense hunger drives it to extremes of violence, and the electricity in its cheek sacs has converted into a Dark-type energy."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Hunger hormones affect its temperament. Until its hunger is appeased, it gets up to all manner of evil deeds."
+    }],
+    "878": [{
+        "version_id": "Sword",
+        "flavor_text": "It digs up the ground with its trunk. It's also very strong, being able to carry loads of over five tons without any problem at all."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "If a job requires serious strength, this Pokémon will excel at it. Its copper body tarnishes in the rain, turning a vibrant green color."
+    }],
+    "879": [{
+        "version_id": "Sword",
+        "flavor_text": "They came over from another region long ago and worked together with humans. Their green skin is resistant to water."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "These Pokémon live in herds. Their trunks have incredible grip strength, strong enough to crush giant rocks into powder."
+    }],
+    "879gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "So much power is packed within its trunk that if it were to unleash that power, the resulting blast could level mountains and change the landscape."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "After this Pokémon has Gigantamaxed, its massive nose can utterly demolish large structures with a single smashing blow."
+    }],
+    "880": [{
+        "version_id": "Sword",
+        "flavor_text": "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The powerful muscles in its tail generate its electricity. Compared to its lower body, its upper half is entirely too small."
+    }],
+    "881": [{
+        "version_id": "Sword",
+        "flavor_text": "The shaking of its freezing upper half is what generates its electricity. It has a hard time walking around."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "This Pokémon lived on prehistoric seashores and was able to preserve food with the ice on its body. It went extinct because it moved so slowly."
+    }],
+    "882": [{
+        "version_id": "Sword",
+        "flavor_text": "Powerful legs and jaws made it the apex predator of its time. Its own overhunting of its prey was what drove it to extinction."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Its mighty legs are capable of running at speeds exceeding 40 mph, but this Pokémon can't breathe unless it's underwater."
+    }],
+    "883": [{
+        "version_id": "Sword",
+        "flavor_text": "Though it's able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The skin on its face is impervious to attack, but breathing difficulties made this Pokémon go extinct anyway."
+    }],
+    "884": [{
+        "version_id": "Sword",
+        "flavor_text": "Its body resembles polished metal, and it's both lightweight and strong. The only drawback is that it rusts easily."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The special metal that composes its body is very light, so this Pokémon has considerable agility. It lives in caves because it dislikes the rain."
+    }],
+    "884gmax": [{
+        "version_id": "Sword",
+        "flavor_text": "It's grown to resemble a skyscraper. Parts of its towering body glow due to a profusion of energy."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "The hardness of its cells is exceptional, even among Steel types. It also has a body structure that's resistant to earthquakes."
+    }],
+    "885": [{
+        "version_id": "Sword",
+        "flavor_text": "After being reborn as a ghost Pokémon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "If this weak Pokémon is by itself, a mere child could defeat it. But if Dreepy has friends to help it train, it can evolve and become much stronger."
+    }],
+    "886": [{
+        "version_id": "Sword",
+        "flavor_text": "It's capable of flying faster than 120 mph. It battles alongside Dreepy and dotes on them until they successfully evolve."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Without a Dreepy to place on its head and care for, it gets so uneasy it'll try to substitute any Pokémon it finds for the missing Dreepy."
+    }],
+    "887": [{
+        "version_id": "Sword",
+        "flavor_text": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Apparently the Dreepy inside Dragapult's horns eagerly look forward to being launched out at Mach speeds."
+    }],
+    "888": [{
+        "version_id": "Sword",
+        "flavor_text": "Known as a legendary hero, this Pokémon absorbs metal particles, transforming them into a weapon it uses to battle."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "This Pokémon has slumbered for many years. Some say it's Zamazenta's elder sister—others say the two Pokémon are rivals."
+    }],
+    "888crowned": [{
+        "version_id": "Sword",
+        "flavor_text": "Now armed with a weapon it used in ancient times, this Pokémon needs only a single strike to fell even Gigantamax Pokémon."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Able to cut down anything with a single strike, it became known as the Fairy King's Sword, and it inspired awe in friend and foe alike."
+    }],
+    "889": [{
+        "version_id": "Sword",
+        "flavor_text": "In times past, it worked together with a king of the people to save the Galar region. It absorbs metal that it then uses in battle."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "This Pokémon slept for aeons while in the form of a statue. It was asleep for so long, people forgot that it ever existed."
+    }],
+    "889crowned": [{
+        "version_id": "Sword",
+        "flavor_text": "Its ability to deflect any attack led to it being known as the Fighting Master's Shield. It was feared and respected by all."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Now that it's equipped with its shield, it can shrug off impressive blows, including the attacks of Dynamax Pokémon."
+    }],
+    "890": [{
+        "version_id": "Sword",
+        "flavor_text": "The core on its chest absorbs energy emanating from the lands of the Galar region. This energy is what allows Eternatus to stay active."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "It was inside a meteorite that fell 20,000 years ago. There seems to be a connection between this Pokémon and the Dynamax phenomenon."
+    }],
+    "890eternamax": [{
+        "version_id": "Sword",
+        "flavor_text": "As a result of Rose's meddling, Eternatus absorbed all the energy in the Galar region. It's now in a state of power overload."
+    }, {
+        "version_id": "Shield",
+        "flavor_text": "Infinite amounts of energy pour from this Pokémon's enlarged core, warping the surrounding space-time."
+    }]
 }

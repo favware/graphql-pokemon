@@ -1,13 +1,8 @@
 name: Update Showdown Formats
 
 on:
-  push:
-    branches:
-      - master
-
-# on:
-#   schedule:
-#     - cron: '0 2 * * *'
+  schedule:
+    - cron: '0 2 * * *'
 
 jobs:
   UpdateFormats:
@@ -41,7 +36,7 @@ jobs:
         git config --local user.name "${GITHUB_USER}";
         git checkout -b favware-bot/update-smogon-tierlists/`date +%F-%H-%M`;
         git commit -sam "feat: update smogon tierlists";
-        hub pull-request -p -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna";
+        hub pull-request -p -m "feat: update smogon tierlists" -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna";
       env:
         GITHUB_USER: Favware-bot
         GITHUB_EMAIL: favwarebot@gmail.com

@@ -23,6 +23,9 @@
 **Project Status**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/master/LICENSE.md)
+[![Code Quality](https://github.com/favware/graphql-pokemon/workflows/Code%20Quality/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Code+Quality")
+[![Unit Tests](https://github.com/favware/graphql-pokemon/workflows/Unit%20Tests/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Unit+Tests")
+[![Showdown Tierlists](https://github.com/favware/graphql-pokemon/workflows/Update%20Showdown%20Tierlists/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Update+Showdown+Formats")
 
 **Social Media and Donations**
 
@@ -41,8 +44,13 @@ __***Query for Pokemon data using GraphQL***__
 
 **Key Features**
 - Fully generated client-side type information published to npm under `@favware/graphql-pokemon`
-  - Has TypeScript and FlowJS Typings
-- Provides information about not just Pokemon. See supported queries below.
+- Provides information about various assets in Pokémon
+  - Pokédex
+  - Items
+  - Abilities
+  - Moves
+  - Learnsets
+  - Type matchups
 
 # Install
 

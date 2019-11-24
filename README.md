@@ -23,6 +23,9 @@
 **Project Status**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/master/LICENSE.md)
+[![Code Quality](https://github.com/favware/graphql-pokemon/workflows/Code%20Quality/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Code+Quality")
+[![Unit Tests](https://github.com/favware/graphql-pokemon/workflows/Unit%20Tests/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Unit+Tests")
+[![Showdown Tierlists](https://github.com/favware/graphql-pokemon/workflows/Update%20Showdown%20Tierlists/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Update+Showdown+Formats")
 
 **Social Media and Donations**
 
@@ -33,8 +36,6 @@
 
 **Typings**
 
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@favware/graphql-pokemon?label=graphql-pokemon%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/graphql-pokemon)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@favware/graphql-pokemon?label=graphql-pokemon%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/graphql-pokemon)
 [![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=graphql-pokemon%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
 
 ---
@@ -43,8 +44,13 @@ __***Query for Pokemon data using GraphQL***__
 
 **Key Features**
 - Fully generated client-side type information published to npm under `@favware/graphql-pokemon`
-  - Has TypeScript and FlowJS Typings
-- Provides information about not just Pokemon. See supported queries below.
+- Provides information about various assets in Pokémon
+  - Pokédex
+  - Items
+  - Abilities
+  - Moves
+  - Learnsets
+  - Type matchups
 
 # Install
 
@@ -86,4 +92,4 @@ fetch('https://favware.tech/api', {
 
 For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api).
 
-**Please note that if you visited my site normally before a cache-clear refresh (Control + F5) might be required due to the Service Worker caching the regular site data!**
+**Please note that if you visited my site normally before a cache-clear refresh (Control + F5 / Command + Shift + R) might be required due to the Service Worker caching the regular site data!**

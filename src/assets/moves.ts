@@ -15,6 +15,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: '10,000,000 Volt Thunderbolt',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'pikashuniumz',
         target: 'Normal',
         type: 'Electric',
@@ -93,6 +94,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Acid Downpour',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'poisoniumz',
         target: 'Normal',
         type: 'Poison',
@@ -250,6 +252,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'All-Out Pummeling',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'fightiniumz',
         target: 'Normal',
         type: 'Fighting',
@@ -315,6 +318,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Normal',
         type: 'Rock',
         contestType: 'Tough',
+      }
+    ],
+    [
+      'appleacid',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Special',
+        desc: 'Has a 100% chance to lower the target\'s Special Defense by 1 stage.',
+        shortDesc: '100% chance to lower the target\'s Sp. Def by 1.',
+        name: 'Apple Acid',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Grass',
       }
     ],
     [
@@ -389,7 +407,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Aromatherapy',
         pp: 5,
         priority: 0,
-        target: 'allyTeam',
+        target: 'Ally\'s side',
         type: 'Grass',
         contestType: 'Clever',
       }
@@ -420,6 +438,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Assist',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
@@ -501,6 +520,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Any',
         type: 'Fighting',
         contestType: 'Beautiful',
+      }
+    ],
+    [
+      'aurawheel',
+      {
+        accuracy: 100,
+        basePower: '110',
+        category: 'Physical',
+        desc: 'If the user is a Morpeko, this move will be Electric type. If the user is a Morpeko-Hangry, this move will be Dark type. Has a 100% chance to raise the users Speed by 1 stage. This move fails if the user is not a Morpeko or Morpeko-Hangry.',
+        shortDesc: 'Morpeko: Electric; Hangry: Dark; 100% +1 Spe.',
+        name: 'Aura Wheel',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Electric',
       }
     ],
     [
@@ -622,6 +656,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Barrage',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -638,6 +673,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Barrier',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Psychic',
         contestType: 'Cool',
@@ -704,6 +740,36 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'behemothbash',
+      {
+        accuracy: 100,
+        basePower: '100',
+        category: 'Physical',
+        desc: 'Deals double damage against Dynamax and Gigantamax Pokemon.',
+        shortDesc: 'Double damage against Dynamax/Gigantamax.',
+        name: 'Behemoth Bash',
+        pp: 5,
+        priority: 0,
+        target: 'Normal',
+        type: 'Steel',
+      }
+    ],
+    [
+      'behemothblade',
+      {
+        accuracy: 100,
+        basePower: '100',
+        category: 'Physical',
+        desc: 'Deals double damage against Dynamax and Gigantamax Pokemon.',
+        shortDesc: 'Double damage against Dynamax/Gigantamax.',
+        name: 'Behemoth Blade',
+        pp: 5,
+        priority: 0,
+        target: 'Normal',
+        type: 'Steel',
+      }
+    ],
+    [
       'bellydrum',
       {
         accuracy: 100,
@@ -728,6 +794,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Bestow',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -743,6 +810,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Bide',
         pp: 10,
         priority: 1,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Normal',
         contestType: 'Tough',
@@ -789,6 +857,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Black Hole Eclipse',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'darkiniumz',
         target: 'Normal',
         type: 'Dark',
@@ -866,6 +935,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Bloom Doom',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'grassiumz',
         target: 'Normal',
         type: 'Grass',
@@ -889,6 +959,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'bodypress',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Physical',
+        desc: 'Damage is calculated using the user\'s Defense stat instead of Attack, including stat stage changes. The user\'s Ability is used as normal.',
+        shortDesc: 'Uses Def instead of Atk in damage calculation.',
+        name: 'Body Press',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fighting',
+      }
+    ],
+    [
       'bodyslam',
       {
         accuracy: 100,
@@ -901,6 +986,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
+      }
+    ],
+    [
+      'boltbeak',
+      {
+        accuracy: 100,
+        basePower: '85',
+        category: 'Physical',
+        desc: 'If the user moves before the target, this move\'s power is doubled.',
+        shortDesc: 'Double power if the user moves first.',
+        name: 'Bolt Beak',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Electric',
       }
     ],
     [
@@ -930,6 +1030,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Bone Club',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Ground',
         contestType: 'Tough',
@@ -1027,6 +1128,36 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'branchpoke',
+      {
+        accuracy: 100,
+        basePower: '40',
+        category: 'Physical',
+        desc: 'No additional effect.',
+        shortDesc: 'No additional effect.',
+        name: 'Branch Poke',
+        pp: 40,
+        priority: 0,
+        target: 'Normal',
+        type: 'Grass',
+      }
+    ],
+    [
+      'breakingswipe',
+      {
+        accuracy: 100,
+        basePower: '60',
+        category: 'Physical',
+        desc: '100% chance to lower the foe\'s Attack by 1 stage. Hits all adjecent foes.',
+        shortDesc: '100% chance to lower adjacent foes\' Atk by 1.',
+        name: 'Breaking Swipe',
+        pp: 15,
+        priority: 0,
+        target: 'All adjacent foes',
+        type: 'Dragon',
+      }
+    ],
+    [
       'breakneckblitz',
       {
         accuracy: 100,
@@ -1036,6 +1167,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Breakneck Blitz',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'normaliumz',
         target: 'Normal',
         type: 'Normal',
@@ -1099,6 +1231,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Bubble',
         pp: 30,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All adjacent foes',
         type: 'Water',
         contestType: 'Cute',
@@ -1269,6 +1402,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Camouflage',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Normal',
         contestType: 'Clever',
@@ -1284,6 +1418,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Captivate',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cute',
@@ -1300,6 +1435,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Catastropika',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'pikaniumz',
         target: 'Normal',
         type: 'Electric',
@@ -1396,6 +1532,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Chip Away',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
@@ -1426,6 +1563,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Clamp',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Water',
         contestType: 'Tough',
@@ -1448,6 +1586,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'clangoroussoul',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Raises the user\'s Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 1/3 of its maximum HP, rounded down. Fails if the user would faint or if its Attack, Defense, Special Attack, Special Defense, and Speed stat stages are 6.',
+        shortDesc: 'User loses 33% max HP. Raises all stats by 1.',
+        name: 'Clangorous Soul',
+        pp: 5,
+        priority: 0,
+        target: 'Self',
+        type: 'Dragon',
+      }
+    ],
+    [
       'clangoroussoulblaze',
       {
         accuracy: 100,
@@ -1457,6 +1610,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Clangorous Soulblaze',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'kommoniumz',
         target: 'All adjacent foes',
         type: 'Dragon',
@@ -1521,6 +1675,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Comet Punch',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
@@ -1585,6 +1740,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Constrict',
         pp: 35,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
@@ -1600,6 +1756,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Continental Crush',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'rockiumz',
         target: 'Normal',
         type: 'Rock',
@@ -1678,6 +1835,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Corkscrew Crash',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'steeliumz',
         target: 'Normal',
         type: 'Steel',
@@ -1745,6 +1903,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'scripted',
         type: 'Fighting',
         contestType: 'Tough',
+      }
+    ],
+    [
+      'courtchange',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Switches the Spikes, Toxic Spikes, Stealth Rock, Sticky Web, Light Screen, Reflect, Aurora Veil, and Tailwind from the user\'s side to the target\'s side and vice versa.',
+        shortDesc: 'Switches sides of field effects',
+        name: 'Court Change',
+        pp: 10,
+        priority: 0,
+        target: 'All',
+        type: 'Normal',
       }
     ],
     [
@@ -1966,6 +2139,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'decorate',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Sharply raises the target\'s Attack and Special Attack stats.',
+        shortDesc: 'Raises the target\'s Atk and Sp. Atk by 2.',
+        name: 'Decorate',
+        pp: 15,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fairy',
+      }
+    ],
+    [
       'defendorder',
       {
         accuracy: 100,
@@ -2051,6 +2239,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Devastating Drake',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'dragoniumz',
         target: 'Normal',
         type: 'Dragon',
@@ -2161,6 +2350,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Dizzy Punch',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -2236,6 +2426,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Double Slap',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -2353,6 +2544,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'dragondarts',
+      {
+        accuracy: 100,
+        basePower: '50',
+        category: 'Physical',
+        desc: 'In singles, this move hits the target twice. In doubles, this move hits each target once.',
+        shortDesc: 'Singles: Hits twice. Doubles: Hits each once.',
+        name: 'Dragon Darts',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Dragon',
+      }
+    ],
+    [
       'dragonhammer',
       {
         accuracy: 100,
@@ -2395,6 +2601,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Dragon Rage',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Dragon',
         contestType: 'Cool',
@@ -2508,6 +2715,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'drumbeating',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Physical',
+        desc: 'Has a 100% chance to lower the target\'s Speed by 1 stage.',
+        shortDesc: '100% chance to lower the target\'s Speed by 1.',
+        name: 'Drum Beating',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Grass',
+      }
+    ],
+    [
       'dualchop',
       {
         accuracy: 90,
@@ -2536,6 +2758,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
+      }
+    ],
+    [
+      'dynamaxcannon',
+      {
+        accuracy: 100,
+        basePower: '100',
+        category: 'Special',
+        desc: 'Deals double damage against Dynamax and Gigantamax Pokemon.',
+        shortDesc: 'Double damage against Dynamax/Gigantamax.',
+        name: 'Dynamax Cannon',
+        pp: 5,
+        priority: 0,
+        target: 'Normal',
+        type: 'Dragon',
       }
     ],
     [
@@ -2611,6 +2848,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Egg Bomb',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -2687,6 +2925,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Embargo',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
@@ -2799,6 +3038,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'eternabeam',
+      {
+        accuracy: 90,
+        basePower: '160',
+        category: 'Special',
+        desc: 'If this move is successful, the user must recharge on the following turn and cannot select a move.',
+        shortDesc: 'User cannot move next turn.',
+        name: 'Eternabeam',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Dragon',
+      }
+    ],
+    [
       'explosion',
       {
         accuracy: 100,
@@ -2839,6 +3093,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Extreme Evoboost',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'eeviumz',
         target: 'Self',
         type: 'Normal',
@@ -2939,6 +3194,20 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'falsesurrender',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Physical',
+        shortDesc: 'This move does not check accuracy.',
+        name: 'False Surrender',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Dark',
+      }
+    ],
+    [
       'falseswipe',
       {
         accuracy: 100,
@@ -2996,6 +3265,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Feint Attack',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
@@ -3141,6 +3411,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'fishiousrend',
+      {
+        accuracy: 100,
+        basePower: '85',
+        category: 'Physical',
+        desc: 'If the user moves before the target, this move\'s power is doubled.',
+        shortDesc: 'Double power if the user moves first.',
+        name: 'Fishious Rend',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Water',
+      }
+    ],
+    [
       'firstimpression',
       {
         accuracy: 100,
@@ -3196,6 +3481,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Flame Burst',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Fire',
         contestType: 'Beautiful',
@@ -3275,6 +3561,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Flash',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Beautiful',
@@ -3504,6 +3791,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Foresight',
         pp: 40,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
@@ -3625,6 +3913,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Frustration',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -3777,6 +4066,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Genesis Supernova',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'mewniumz',
         target: 'Normal',
         type: 'Psychic',
@@ -3838,6 +4128,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Gigavolt Havoc',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'electriumz',
         target: 'Normal',
         type: 'Electric',
@@ -3893,6 +4184,445 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'gmaxbefuddle',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        desc: 'Sleeps, poisons, or paralyzes opponent(s). Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'Foes: SLP/PSN/PAR. BP scales with base move.',
+        name: 'G-Max Befuddle',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Butterfree',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Bug',
+      }
+    ],
+    [
+      'gmaxcentiferno',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        desc: 'Traps and damages the opponent(s) for 4-5 turns. Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'Traps/damages foes. BP scales with base move.',
+        name: 'G-Max Centiferno',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Centiskorch',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fire',
+      }
+    ],
+    [
+      'gmaxcentiferno',
+      {
+        accuracy: 100,
+        basePower: '1',
+        category: 'Physical',
+        shortDesc: 'Traps and damages opponents. BP scales with base move.',
+        name: 'G-Max Centiferno',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Centiskorch',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fire',
+      }
+    ],
+    [
+      'gmaxchistrike',
+      {
+        accuracy: 100,
+        basePower: '1',
+        category: 'Physical',
+        desc: 'Applies Focus Energy to the user and its allies. Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'User side: Focus Energy. BP scales with base move.',
+        name: 'G-Max Chi Strike',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Machamp',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fighting',
+      }
+    ],
+    [
+      'gmaxcuddle',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Infatuates opponents. BP scales with base move.',
+        name: 'G-Max Cuddle',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Eevee',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Normal',
+      }
+    ],
+    [
+      'gmaxdepletion',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        desc: 'Lowers the PP of the opponent(s) last used move. Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'Foe: Lowers PP of last move. BP scales with base move.',
+        name: 'G-Max Depletion',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Duraludon',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Dragon',
+      }
+    ],
+    [
+      'gmaxfinale',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Heals user and allies. BP scales with base move.',
+        name: 'G-Max Finale',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Alcremie',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fairy',
+      }
+    ],
+    [
+      'gmaxtartness',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foe(s): -1 evasion. BP scales with base move.',
+        name: 'G-Max Tartness',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Flapple',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Grass',
+      }
+    ],
+    [
+      'gmaxvolcalith',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        desc: 'Damages opponent(s) by 1/8 of their maximum HP for four turns. Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'Damages foes for 4 turns. BP scales with base move.',
+        name: 'G-Max Volcalith',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Coalossal',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Ghost',
+      }
+    ],
+    [
+      'gmaxvoltcrash',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Paralyzes foe(s). BP scales with base move.',
+        name: 'G-Max Volt Crash',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Pikachu',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Electric',
+      }
+    ],
+    [
+      'gmaxwildfire',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        desc: 'Damages opponent(s) by 1/8 of their maximum HP for four turns. Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'Damages foes for 4 turns. BP scales with base move.',
+        name: 'G-Max Wildfire',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Charizard',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fire',
+      }
+    ],
+    [
+      'gmaxwindrage',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        desc: 'Removes Reflect, Light Screen, Aurora Veil, Spikes, Toxic Spikes, Stealth Rock, Sticky Web, Mist, Safeguard, G-Max Steelsurge, and Terrains from the field. This move\'s Base Power scales with the base move\'s Base Power.',
+        shortDesc: 'Clears field. BP scales with base move.',
+        name: 'G-Max Wind Rage',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Corviknight',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Flying',
+      }
+    ],
+    [
+      'gmaxfoamburst',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foes: -2 Speed. BP scales with base move.',
+        name: 'G-Max Foam Burst',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Kingler',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Water',
+      }
+    ],
+    [
+      'gmaxgoldrush',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Confuses foes. BP scales with base move.',
+        name: 'G-Max Gold Rush',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Meowth',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Normal',
+      }
+    ],
+    [
+      'gmaxgravitas',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Summons Gravity. BP scales with base move.',
+        name: 'G-Max Gravitas',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Orbeetle',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Psychic',
+      }
+    ],
+    [
+      'gmaxmalodor',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Poisons opponents. BP scales with base move.',
+        name: 'G-Max Malodor',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Garbodor',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Poison',
+      }
+    ],
+    [
+      'gmaxmeltdown',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Applies Torment to foes. BP scales with base move.',
+        name: 'G-Max Meltdown',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Melmetal',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Steel',
+      }
+    ],
+    [
+      'gmaxstonesurge',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Stealth Rock. BP scales with base move.',
+        name: 'G-Max Stonesurge',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Drednaw',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Water',
+      }
+    ],
+    [
+      'gmaxstunshock',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foe(s): Par/Psn. BP scales with base move.',
+        name: 'G-Max Stun Shock',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Toxtricity',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Electric',
+      }
+    ],
+    [
+      'gmaxsweetness',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foe(s): -1 evasion. BP scales with base move.',
+        name: 'G-Max Sweetness',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Toxtricity',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Grass',
+      }
+    ],
+    [
+      'gmaxterror',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Traps foe(s). BP scales with base move.',
+        name: 'G-Max Terror',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Gengar',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Ghost',
+      }
+    ],
+    [
+      'gmaxreplenish',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Restores user-side berries. BP scales with base move.',
+        name: 'G-Max Replenish',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Snorlax',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Normal',
+      }
+    ],
+    [
+      'gmaxresonance',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Summons Aurora Veil. BP scales with base move.',
+        name: 'G-Max Resonance',
+        pp: 10,
+        priority: 0,
+        isGMax: 'Lapras',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Ice',
+      }
+    ],
+    [
+      'gmaxsandblast',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Traps and damages foes. BP scales with base move.',
+        name: 'G-Max Sandblast',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Sandaconda',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Ground',
+      }
+    ],
+    [
+      'gmaxsmite',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Confuses opponents. BP scales with base move.',
+        name: 'G-Max Smite',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Hatterene',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fairy',
+      }
+    ],
+    [
+      'gmaxsnooze',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Afflicts foes with Yawn. BP scales with base move.',
+        name: 'G-Max Snooze',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Grimmsnarl',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Fairy',
+      }
+    ],
+    [
+      'gmaxsteelsurge',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Steel entry hazard. BP scales with base move.',
+        name: 'G-Max Steelsurge',
+        pp: 5,
+        priority: 0,
+        isGMax: 'Copperajah',
+        isNonstandard: 'Custom',
+        target: 'Adjacent foes',
+        type: 'Steel',
+      }
+    ],
+    [
       'grassknot',
       {
         accuracy: 100,
@@ -3902,7 +4632,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Grass Knot',
         pp: 20,
         priority: 0,
-        target: 'Normal',
+        target: 'Adjacent foes',
         type: 'Grass',
         contestType: 'Cute',
       }
@@ -3933,6 +4663,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Grass Whistle',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
@@ -3951,6 +4682,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'All',
         type: 'Grass',
         contestType: 'Beautiful',
+      }
+    ],
+    [
+      'gravapple',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Physical',
+        desc: 'Has a 100% chance to lower the target\'s Defense by 1 stage.',
+        shortDesc: '100% chance to lower the target\'s Defense by 1.',
+        name: 'Grav Apple',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Grass',
       }
     ],
     [
@@ -4054,6 +4800,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Guardian of Alola',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'tapuniumz',
         target: 'Normal',
         type: 'Fairy',
@@ -4257,7 +5004,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Heal Bell',
         pp: 5,
         priority: 0,
-        target: 'allyTeam',
+        target: 'Ally\'s side',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -4272,6 +5019,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Heal Block',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All adjacent foes',
         type: 'Psychic',
         contestType: 'Clever',
@@ -4288,6 +5036,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Heal Order',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Bug',
         contestType: 'Clever',
@@ -4334,6 +5083,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Heart Stamp',
         pp: 25,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Psychic',
         contestType: 'Cute',
@@ -4443,6 +5193,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Hidden Power Water',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Water',
         contestType: 'Clever',
@@ -4578,12 +5329,12 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         accuracy: 100,
         basePower: '0',
         category: 'Status',
-        desc: 'Raises the user\'s Attack by 1 stage.',
-        shortDesc: 'Raises the user\'s Attack by 1.',
+        desc: 'Raises the Attack of the user and all allies 1 stage.',
+        shortDesc: 'Raises the user\'s and ally\'s Attack by 1.',
         name: 'Howl',
         pp: 40,
         priority: 0,
-        target: 'Self',
+        target: 'Ally\'s side',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -4644,6 +5395,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Hydro Vortex',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'wateriumz',
         target: 'Normal',
         type: 'Water',
@@ -4753,6 +5505,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Ice Ball',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Ice',
         contestType: 'Beautiful',
@@ -4955,6 +5708,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Inferno Overdrive',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'firiumz',
         target: 'Normal',
         type: 'Fire',
@@ -5018,6 +5772,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Ion Deluge',
         pp: 25,
         priority: 1,
+        isNonstandard: 'Past',
         target: 'All',
         type: 'Electric',
         contestType: 'Beautiful',
@@ -5072,6 +5827,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'jawlock',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Physical',
+        desc: 'Prevents the user and the target from switching out. The user and the target can still switch out if either of them is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if either Pokemon faints.',
+        shortDesc: 'Prevents the user and the target from switching out.',
+        name: 'Jaw Lock',
+        pp: 15,
+        priority: 0,
+        target: 'Normal',
+        type: 'Dark',
+      }
+    ],
+    [
       'judgment',
       {
         accuracy: 100,
@@ -5097,6 +5867,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Jump Kick',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
@@ -5113,6 +5884,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Karate Chop',
         pp: 25,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
@@ -5129,6 +5901,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Kinesis',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
@@ -5140,7 +5913,8 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         accuracy: 100,
         basePower: '0',
         category: 'Status',
-        shortDesc: 'Protects from attacks. Contact: lowers Atk by 2.',
+        desc: 'The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user\'s last move used is not Baneful Bunker, Detect, Endure, King\'s Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user\'s protection was broken. Fails if the user moves last this turn.',
+        shortDesc: 'Protects from attacks. Contact: lowers Atk by 1.',
         name: 'King\'s Shield',
         pp: 10,
         priority: 4,
@@ -5347,6 +6121,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Let\'s Snuggle Forever',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'mimikiumz',
         target: 'Normal',
         type: 'Fairy',
@@ -5394,10 +6169,26 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Light That Burns the Sky',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'ultranecroziumz',
         target: 'Normal',
         type: 'Psychic',
         contestType: 'Cool',
+      }
+    ],
+    [
+      'lifedew',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'The user restores 1/4 of its maximum HP, rounded half up. If there is an adjacent ally, the user restores 1/4 of both its and its ally\'s maximum HP, rounded up.',
+        shortDesc: 'Heals the user (and allies) by 1/4 amount.',
+        name: 'Life Dew',
+        pp: 10,
+        priority: 0,
+        target: 'Ally\'s Side',
+        type: 'Water',
       }
     ],
     [
@@ -5503,6 +6294,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Lucky Chant',
         pp: 30,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Ally\'s side',
         type: 'Normal',
         contestType: 'Cute',
@@ -5586,6 +6378,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'magicpowder',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Causes the target to become a Psychic type. Fails if the target is an Arceus or a Silvally, or if the target is already purely Psychic type.',
+        shortDesc: 'Changes the target\'s type to Psychic.',
+        name: 'Magic Powder',
+        pp: 20,
+        priority: 0,
+        target: 'Normal',
+        type: 'Psychic',
+      }
+    ],
+    [
       'magicroom',
       {
         accuracy: 100,
@@ -5595,6 +6402,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Magic Room',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All',
         type: 'Psychic',
         contestType: 'Clever',
@@ -5702,6 +6510,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Magnitude',
         pp: 30,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All adjacent',
         type: 'Ground',
         contestType: 'Tough',
@@ -5717,6 +6526,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Malicious Moonsault',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'inciniumz',
         target: 'Normal',
         type: 'Dark',
@@ -5748,9 +6558,94 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Me First',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Adjacent foe',
         type: 'Normal',
         contestType: 'Clever',
+      }
+    ],
+    [
+      'maxairstream',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'User: +1 Speed. BP scales with base move.',
+        name: 'Max Airstream',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Flying',
+      }
+    ],
+    [
+      'maxdarkness',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foes: -1 Sp.Def. BP scales with base move.',
+        name: 'Max Darkness',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Dark',
+      }
+    ],
+    [
+      'maxflare',
+      {
+        accuracy: 100,
+        basePower: '100',
+        category: 'Physical',
+        shortDesc: 'Sets Sun. BP scales with base move.',
+        name: 'Max Flare',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Fire',
+      }
+    ],
+    [
+      'maxflutterby',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foes: -1 Sp.Atk. BP scales with base move.',
+        name: 'Max Flutterby',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Bug',
+      }
+    ],
+    [
+      'maxgeyser',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Rain. BP scales with base move.',
+        name: 'Max Geyser',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Water',
+      }
+    ],
+    [
+      'maxguard',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        shortDesc: 'Prevents all moves from affecting the user this turn.',
+        name: 'Max Guard',
+        pp: 5,
+        priority: 0,
+        target: 'Self',
+        type: 'Normal',
       }
     ],
     [
@@ -5763,9 +6658,191 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Mean Look',
         pp: 5,
         priority: 0,
-        target: 'Normal',
+        target: 'Adjacent foes',
         type: 'Normal',
         contestType: 'Beautiful',
+      }
+    ],
+    [
+      'maxhailstorm',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Hail. BP scales with base move.',
+        name: 'Max Hailstorm',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Ice',
+      }
+    ],
+    [
+      'maxknuckle',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'User: +1 Attack. BP scales with base move.',
+        name: 'Max Knuckle',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Fighting',
+      }
+    ],
+    [
+      'maxlightning',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Electric Terrain. BP scales with base move.',
+        name: 'Max Lightning',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Electric',
+      }
+    ],
+    [
+      'maxmindstorm',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Psychic Terrain. BP scales with base move.',
+        name: 'Max Mindstorm',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Psychic',
+      }
+    ],
+    [
+      'maxooze',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'User: +1 Sp.Atk. BP scales with base move.',
+        name: 'Max Ooze',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Poison',
+      }
+    ],
+    [
+      'maxovergrowth',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Grassy Terrain. BP scales with base move.',
+        name: 'Max Overgrowth',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Grass',
+      }
+    ],
+    [
+      'maxphantasm',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foes: -1  Defense. BP scales with base move.',
+        name: 'Max Phantasm',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Ghost',
+      }
+    ],
+    [
+      'maxquake',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'User: +1 Sp.Def. BP scales with base move.',
+        name: 'Max Quake',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Groudon',
+      }
+    ],
+    [
+      'maxrockfall',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Sandstorm. BP scales with base move.',
+        name: 'Max Rockfall',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Rock',
+      }
+    ],
+    [
+      'maxstarfall',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Sets Misty Terrain. BP scales with base move.',
+        name: 'Max Starfall',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Fairy',
+      }
+    ],
+    [
+      'maxsteelspike',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'User: +1 Defense. BP scales with base move.',
+        name: 'Max Steelspike',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Steel',
+      }
+    ],
+    [
+      'maxstrike',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foes: -1 Speed. BP scales with base move.',
+        name: 'Max Strike',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Normal',
+      }
+    ],
+    [
+      'maxwyrmwind',
+      {
+        accuracy: 100,
+        basePower: '10',
+        category: 'Physical',
+        shortDesc: 'Foes: -1 Attack. BP scales with base move.',
+        name: 'Max Wyrmwind',
+        pp: 5,
+        priority: 0,
+        target: 'Adjacent foes',
+        type: 'Dragon',
       }
     ],
     [
@@ -5779,6 +6856,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Meditate',
         pp: 40,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Psychic',
         contestType: 'Beautiful',
@@ -5872,6 +6950,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Menacing Moonraze Maelstrom',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'lunaliumz',
         target: 'Normal',
         type: 'Ghost',
@@ -5923,6 +7002,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Normal',
         type: 'Steel',
         contestType: 'Clever',
+      }
+    ],
+    [
+      'meteorassault',
+      {
+        accuracy: 100,
+        basePower: '150',
+        category: 'Physical',
+        desc: 'If this move is successful, the user must recharge on the following turn and cannot select a move.',
+        shortDesc: 'User cannot move next turn.',
+        name: 'Meteor Assault',
+        pp: 5,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fighting',
       }
     ],
     [
@@ -6042,6 +7136,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Miracle Eye',
         pp: 40,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
@@ -6072,6 +7167,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Mirror Move',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Flying',
         contestType: 'Clever',
@@ -6088,6 +7184,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Mirror Shot',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Steel',
         contestType: 'Beautiful',
@@ -6209,6 +7306,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Mud Bomb',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Ground',
         contestType: 'Cute',
@@ -6240,6 +7338,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Mud Sport',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All',
         type: 'Ground',
         contestType: 'Cute',
@@ -6281,7 +7380,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       'multiattack',
       {
         accuracy: 100,
-        basePower: '90',
+        basePower: '120',
         category: 'Physical',
         desc: 'This move\'s type depends on the user\'s held Memory.',
         shortDesc: 'Type varies based on the held Memory.',
@@ -6334,6 +7433,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Natural Gift',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
@@ -6380,6 +7480,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Needle Arm',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Grass',
         contestType: 'Clever',
@@ -6395,6 +7496,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Never-Ending Nightmare',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'ghostiumz',
         target: 'Normal',
         type: 'Ghost',
@@ -6481,6 +7583,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'noretreat',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'The user raises each of its stats by one stage, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped. Can only be used once while on the field.',
+        shortDesc: 'Raises all stats by 1 (not acc/eva). Traps user.',
+        name: 'No Retreat',
+        pp: 5,
+        priority: 0,
+        target: 'Self',
+        type: 'Fighting',
+      }
+    ],
+    [
       'nuzzle',
       {
         accuracy: 100,
@@ -6512,6 +7629,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'obstruct',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'The user is protected from attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Defense lowered by 2 stages. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user\'s last move used is not Baneful Bunker, Detect, Endure, King\'s Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user\'s protection was broken. Fails if the user moves last this turn.',
+        shortDesc: 'Protects from attacks. Contact: lowers Def by 2.',
+        name: 'Obstruct',
+        pp: 10,
+        priority: 4,
+        target: 'Self',
+        type: 'Dark',
+      }
+    ],
+    [
       'oceanicoperetta',
       {
         accuracy: 100,
@@ -6522,6 +7654,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Oceanic Operetta',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'primariumz',
         target: 'Normal',
         type: 'Water',
@@ -6545,6 +7678,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'octolock',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field. At the end of every turn, the target\'s Defense and Special defense stats are lowered by 1 stage.',
+        shortDesc: 'Foe can\'t switch. Lowers Def and SpD every turn.',
+        name: 'Octolock',
+        pp: 15,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fighting',
+      }
+    ],
+    [
       'odorsleuth',
       {
         accuracy: 100,
@@ -6554,6 +7702,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Odor Sleuth',
         pp: 40,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
@@ -6569,6 +7718,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Ominous Wind',
         pp: 5,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Ghost',
         contestType: 'Beautiful',
@@ -6603,6 +7753,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'randomNormal',
         type: 'Dragon',
         contestType: 'Cool',
+      }
+    ],
+    [
+      'overdrive',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Special',
+        desc: 'No additional effect.',
+        shortDesc: 'No additional effect.',
+        name: 'Overdrive',
+        pp: 10,
+        priority: 0,
+        target: 'All adjacent foes',
+        type: 'Electric',
       }
     ],
     [
@@ -7387,6 +8552,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Psywave',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
@@ -7403,6 +8569,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Pulverizing Pancake',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'snorliumz',
         target: 'Normal',
         type: 'Normal',
@@ -7419,6 +8586,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Punishment',
         pp: 5,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Dark',
         contestType: 'Cool',
@@ -7449,9 +8617,25 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Pursuit',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Dark',
         contestType: 'Clever',
+      }
+    ],
+    [
+      'pyroball',
+      {
+        accuracy: 90,
+        basePower: '120',
+        category: 'Physical',
+        desc: 'Has a 10% chance to burn the target.',
+        shortDesc: '10% chance to burn the target.',
+        name: 'Pyro Ball',
+        pp: 5,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fire',
       }
     ],
     [
@@ -7525,6 +8709,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Rage',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
@@ -7564,9 +8749,10 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       'rapidspin',
       {
         accuracy: 100,
-        basePower: '20',
+        basePower: '50',
         category: 'Physical',
-        shortDesc: 'Frees user from hazards/partial trap/Leech Seed.',
+        desc: 'If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user\'s side of the field. Has a 100% chance to raise the user\'s Speed by 1 stage.',
+        shortDesc: 'Free user from hazards/binding/Leech Seed;+1 Spe.',
         name: 'Rapid Spin',
         pp: 40,
         priority: 0,
@@ -7617,6 +8803,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Razor Wind',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All adjacent foes',
         type: 'Normal',
         contestType: 'Cool',
@@ -7694,6 +8881,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Refresh',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
@@ -7754,6 +8942,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Return',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cute',
@@ -7862,6 +9051,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Rock Climb',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
@@ -7988,6 +9178,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Rolling Kick',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
@@ -8033,6 +9224,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Rototiller',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All',
         type: 'Ground',
         contestType: 'Tough',
@@ -8172,6 +9364,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Savage Spin-Out',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'buginiumz',
         target: 'Normal',
         type: 'Bug',
@@ -8267,6 +9460,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Searing Sunraze Smash',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'solganiumz',
         target: 'Normal',
         type: 'Steel',
@@ -8283,6 +9477,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Secret Power',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Clever',
@@ -8486,6 +9681,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Sharpen',
         pp: 30,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Self',
         type: 'Normal',
         contestType: 'Cute',
@@ -8501,6 +9697,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Shattered Psyche',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'psychiumz',
         target: 'Normal',
         type: 'Psychic',
@@ -8610,6 +9807,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Signal Beam',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Bug',
         contestType: 'Beautiful',
@@ -8625,6 +9823,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Silver Wind',
         pp: 5,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Bug',
         contestType: 'Beautiful',
@@ -8673,6 +9872,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Sinister Arrow Raid',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'decidiumz',
         target: 'Normal',
         type: 'Ghost',
@@ -8766,6 +9966,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Sky Drop',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Any',
         type: 'Flying',
         contestType: 'Tough',
@@ -8782,6 +9983,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Sky Uppercut',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Fighting',
         contestType: 'Cool',
@@ -8956,6 +10158,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Smelling Salts',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',
@@ -8994,6 +10197,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'snaptrap',
+      {
+        accuracy: 100,
+        basePower: '35',
+        category: 'Physical',
+        desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
+        shortDesc: 'Traps and damages the target for 4-5 turns.',
+        name: 'Snap Trap',
+        pp: 15,
+        priority: 0,
+        target: 'Normal',
+        type: 'Grass',
+      }
+    ],
+    [
       'snarl',
       {
         accuracy: 95,
@@ -9021,6 +10239,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Self',
         type: 'Dark',
         contestType: 'Clever',
+      }
+    ],
+    [
+      'snipeshot',
+      {
+        accuracy: 100,
+        basePower: '80',
+        category: 'Special',
+        desc: 'Has a higher chance for a critical hit.',
+        shortDesc: 'High critical hit ratio.',
+        name: 'Snipe Shot',
+        pp: 15,
+        priority: 0,
+        target: 'Normal',
+        type: 'Water',
       }
     ],
     [
@@ -9110,6 +10343,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Sonic Boom',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
@@ -9126,6 +10360,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Soul-Stealing 7-Star Strike',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'marshadiumz',
         target: 'Normal',
         type: 'Ghost',
@@ -9236,6 +10471,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Spider Web',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Bug',
         contestType: 'Clever',
@@ -9251,6 +10487,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Spike Cannon',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
@@ -9284,6 +10521,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Self',
         type: 'Grass',
         contestType: 'Tough',
+      }
+    ],
+    [
+      'spiritbreak',
+      {
+        accuracy: 100,
+        basePower: '75',
+        category: 'Physical',
+        desc: 'Has a 100% chance to lower the target\'s Special Attack by 1 stage.',
+        shortDesc: '100% chance to lower the target\'s Sp. Atk by 1.',
+        name: 'Spirit Break',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fairy',
       }
     ],
     [
@@ -9357,6 +10609,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Splintered Stormshards',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'lycaniumz',
         target: 'Normal',
         type: 'Rock',
@@ -9450,9 +10703,25 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Steamroller',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Bug',
         contestType: 'Tough',
+      }
+    ],
+    [
+      'steelbeam',
+      {
+        accuracy: 95,
+        basePower: '140',
+        category: 'Special',
+        desc: 'If this move is successful, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
+        shortDesc: 'User loses 50% max HP. Hits adjacent Pokemon.',
+        name: 'Steel Beam',
+        pp: 5,
+        priority: 0,
+        target: 'All Adjacent',
+        type: 'Steel',
       }
     ],
     [
@@ -9512,6 +10781,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Stoked Sparksurfer',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'aloraichiumz',
         target: 'Normal',
         type: 'Electric',
@@ -9595,6 +10865,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'strangesteam',
+      {
+        accuracy: 95,
+        basePower: '90',
+        category: 'Special',
+        desc: 'Has a 20% chance to confuse the target.',
+        shortDesc: '20% chance to confuse the target.',
+        name: 'Strange Steam',
+        pp: 10,
+        priority: 0,
+        target: 'Normal',
+        type: 'Fairy',
+      }
+    ],
+    [
       'strength',
       {
         accuracy: 100,
@@ -9672,6 +10957,22 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'stuffcheeks',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Consumes berry and raises the user\'s Defense by 2 stages.',
+        shortDesc: 'Consumes berry and raises the user\'s Def. by 2.',
+        name: 'Stuff Cheeks',
+        pp: 10,
+        priority: 0,
+        target: 'Self',
+        type: 'Normal',
+        contestType: 'Cute',
+      }
+    ],
+    [
       'stunspore',
       {
         accuracy: 75,
@@ -9727,6 +11028,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Subzero Slammer',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'iciumz',
         target: 'Normal',
         type: 'Ice',
@@ -9835,6 +11137,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Supersonic Skystrike',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'flyiniumz',
         target: 'Normal',
         type: 'Flying',
@@ -9978,6 +11281,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Synchronoise',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All adjacent',
         type: 'Psychic',
         contestType: 'Clever',
@@ -10092,6 +11396,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'tarshot',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Lowers the target\'s Speed by 1 stage. Until the target switches out, its effectiveness against Fire type moves is changed.',
+        shortDesc: 'Target gets -1 Spe and becomes weaker to Fire.',
+        name: 'Tar Shot',
+        pp: 20,
+        priority: 0,
+        target: 'Normal',
+        type: 'Rock',
+      }
+    ],
+    [
       'taunt',
       {
         accuracy: 100,
@@ -10123,6 +11442,21 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
+      'teatime',
+      {
+        accuracy: 100,
+        basePower: '0',
+        category: 'Status',
+        desc: 'Forces all active Pokemon to consume their held berries. This move bypasses Substitutes.',
+        shortDesc: 'All active Pokemon consume held Berries.',
+        name: 'Teatime',
+        pp: 10,
+        priority: 0,
+        target: 'Any',
+        type: 'Normal',
+      }
+    ],
+    [
       'technoblast',
       {
         accuracy: 100,
@@ -10133,6 +11467,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Techno Blast',
         pp: 5,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
@@ -10180,6 +11515,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Telekinesis',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Psychic',
         contestType: 'Clever',
@@ -10191,11 +11527,11 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         accuracy: 100,
         basePower: '0',
         category: 'Status',
-        desc: 'Fails when used.',
-        shortDesc: 'Flee from wild Pokemon battles.',
+        desc: 'If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.',
+        shortDesc: 'User switches out.',
         name: 'Teleport',
         pp: 20,
-        priority: 0,
+        priority: -6,
         target: 'Self',
         type: 'Psychic',
         contestType: 'Cool',
@@ -10580,6 +11916,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Trump Card',
         pp: 5,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Cool',
@@ -10595,6 +11932,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Twineedle',
         pp: 20,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Bug',
         contestType: 'Cool',
@@ -10610,6 +11948,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Twinkle Tackle',
         pp: 1,
         priority: 0,
+        isNonstandard: 'Past',
         isZ: 'fairiumz',
         target: 'Normal',
         type: 'Fairy',
@@ -10739,22 +12078,6 @@ export default new GraphQLCollection<string, Pokemon.Move>(
       }
     ],
     [
-      'vicegrip',
-      {
-        accuracy: 100,
-        basePower: '55',
-        category: 'Physical',
-        desc: 'No additional effect.',
-        shortDesc: 'No additional effect.',
-        name: 'Vice Grip',
-        pp: 30,
-        priority: 0,
-        target: 'Normal',
-        type: 'Normal',
-        contestType: 'Tough',
-      }
-    ],
-    [
       'vinewhip',
       {
         accuracy: 100,
@@ -10768,6 +12091,22 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         target: 'Normal',
         type: 'Grass',
         contestType: 'Cool',
+      }
+    ],
+    [
+      'visegrip',
+      {
+        accuracy: 100,
+        basePower: '55',
+        category: 'Physical',
+        desc: 'No additional effect.',
+        shortDesc: 'No additional effect.',
+        name: 'Vise Grip',
+        pp: 30,
+        priority: 0,
+        target: 'Normal',
+        type: 'Normal',
+        contestType: 'Tough',
       }
     ],
     [
@@ -10826,6 +12165,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Wake-Up Slap',
         pp: 10,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Fighting',
         contestType: 'Tough',
@@ -10903,6 +12243,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Water Sport',
         pp: 15,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'All',
         type: 'Water',
         contestType: 'Cute',
@@ -11164,6 +12505,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Wring Out',
         pp: 5,
         priority: 0,
+        isNonstandard: 'Past',
         target: 'Normal',
         type: 'Normal',
         contestType: 'Tough',

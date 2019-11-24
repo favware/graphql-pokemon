@@ -56,6 +56,8 @@ export default class MoveService {
     moveEntry.smogonPage = `https://www.smogon.com/dex/sm/moves/${Util.toLowerHyphenCase(moveData.name)}`;
     moveEntry.isZ = Util.parseZCrystal(moveData.isZ) || undefined;
     moveEntry.desc = moveData.desc;
+    moveEntry.isNonstandard = moveData.isNonstandard;
+    moveEntry.isGMax = moveData.isGMax;
 
     return moveEntry;
   }

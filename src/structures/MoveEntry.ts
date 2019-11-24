@@ -31,8 +31,8 @@ export default class MoveEntry {
   @Field(() => String, { description: 'The target for a move' })
   target: string;
 
-  @Field(() => String, { description: 'The contest type for a move' })
-  contestType: string;
+  @Field(() => String, { nullable: true, description: 'The contest type for a move' })
+  contestType?: string;
 
   @Field(() => String, { description: 'Bulbapedia page for a move' })
   bulbapediaPage: string;
@@ -43,11 +43,20 @@ export default class MoveEntry {
   @Field(() => String, { description: 'Smogon page for a move' })
   smogonPage: string;
 
+  @Field(() => String, { nullable: true, description: 'Whether a move is non-standard, and if it is why' })
+  isNonstandard?: string;
+
   @Field(() => String, {
     nullable: true,
     description: 'Whether this move is a Z-Move, and if it is the Z-Crystal required to trigger it',
   })
   isZ?: string;
+
+  @Field(() => String, {
+    nullable: true,
+    description: 'Whether this move is a G-MAX move, and if it is which Gigantamaxed Pokémon can use it',
+  })
+  isGMax?: string;
 
   @Field(() => String, { nullable: true, description: 'The long description for a move' })
   desc?: string;

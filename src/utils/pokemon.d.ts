@@ -88,7 +88,9 @@ export namespace Pokemon {
     accuracy: number;
     priority: number;
     target: string;
-    contestType: string;
+    contestType?: string;
+    isNonstandard?: string;
+    isGMax?: string;
     isZ?: string;
     desc?: string;
   }

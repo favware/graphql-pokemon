@@ -1647,6 +1647,14 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'leek',
+      {
+        name: 'Leek',
+        gen: 8,
+        desc: 'If held by a Farfetch\'d or Sirfetch\'d, its critical hit ratio is raised by 2 stages.',
+      }
+    ],
+    [
       'leftovers',
       {
         name: 'Leftovers',
@@ -3093,6 +3101,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
         name: 'Stick',
         gen: 2,
         desc: 'If held by a Farfetch\'d, its critical hit ratio is raised by 2 stages.',
+        isNonstandard: 'Past',
       }
     ],
     [

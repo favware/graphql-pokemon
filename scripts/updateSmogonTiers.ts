@@ -5,7 +5,7 @@ import { join } from 'path';
 import { constants, Timestamp } from '@klasa/timestamp';
 import { needFile, Formats, DataJSON } from './utils';
 
-const DATA_FILE = join(__dirname, 'updateFormatsData.json');
+const DATA_FILE = join(__dirname, 'smogonTiersData.json');
 const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
 const UPDATED_FORMATS_DATA = readJSON(DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - (10 * constants.DAY);

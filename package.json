@@ -4,8 +4,8 @@
   "description": "Expansive Pokemon GraphQL API",
   "author": "@favware",
   "license": "MIT",
-  "types": "dist/client.d.ts",
-  "main": "dist/client.d.ts",
+  "types": "dist/graphql-pokemon.ts",
+  "main": "dist/graphql-pokemon.ts",
   "homepage": "https://favware.tech/api",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",
@@ -23,7 +23,7 @@
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "scripts:validateNoOnly": "yarn scripts:runner scripts/validateNoOnly",
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull",
-    "scripts:formatsupdater": "yarn scripts:runner scripts/updateFormats"
+    "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers"
   },
   "dependencies": {
     "graphql": "^14.5.8"
@@ -69,7 +69,7 @@
     "typescript": "^3.7.2"
   },
   "files": [
-    "dist/client.d.ts"
+    "dist/graphql-pokemon.ts"
   ],
   "engines": {
     "node": ">=10",

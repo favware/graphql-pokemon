@@ -1,12 +1,12 @@
-name: Update Showdown Formats
+name: Update Showdown Tierlists
 
 on:
   schedule:
     - cron: '0 2 * * *'
 
 jobs:
-  UpdateFormats:
-    name: Update Showdown Formats
+  UpdateTierlists:
+    name: Update Showdown Tierlists
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Project
@@ -23,7 +23,7 @@ jobs:
     - name: Install Deps
       run: yarn
     - name: Run Updater
-      run: yarn scripts:formatsupdater
+      run: yarn scripts:smogontiersupdater
     - name: Install Hub
       run: sudo snap install hub --classic
     - name: Commit any changes

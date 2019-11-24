@@ -1212,7 +1212,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'propellertail',
       {
-        shortDesc: 'Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves.',
+        shortDesc: 'Ignores the effects of opposing Pokémon\'s moves/Abilities that redirect move targets.',
         name: 'Propeller Tail',
       }
     ],

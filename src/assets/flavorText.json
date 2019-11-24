@@ -2456,6 +2456,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It unleashes electric shocks that can reach 100,000 volts. When agitated, it can knock out even an Indian elephant."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When electricity builds up inside its body, it becomes feisty. It also glows in the dark."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When electricity builds up inside its body, it becomes feisty. It also glows in the dark."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "Its long tail serves as a ground to protect itself from its own high-voltage power."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Its long tail serves as a ground to protect itself from its own high-voltage power."
   }],
   "26alola": [{
 		"version_id": "Sun",
@@ -2469,7 +2481,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It focuses psychic energy into its tail and rides it like it's surfing. Another name for this Pokémon is “hodad.”"
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It loves pancakes prepared with a secret Alolan recipe. Some wonder whether that recipe holds the key to this Pokémon's evolution."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It loves pancakes prepared with a secret Alolan recipe. Some wonder whether that recipe holds the key to this Pokémon's evolution."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It’s believed that the weather, climate, and food of the Alola region all play a part in causing Pikachu to evolve into this form of Raichu."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "This Pokémon rides on its tail while it uses its psychic powers to levitate. It attacks with star-shaped thunderbolts."
+  }],
 	"27": [{
 		"version_id": "Red",
 		"flavor_text": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food."
@@ -2554,6 +2578,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When its skin gets wrinkled from moisture, it heads for a volcano. It lies flat on a spot with a lot of geothermal heat and dries itself out."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew."
   }],
   "27alola": [{
 		"version_id": "Sun",
@@ -2567,7 +2597,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its ice-covered body lets it slide across the ground with bullet-like speed, sending its enemies flying when it hits them."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its ice-covered body lets it slide across the ground with bullet-like speed, sending its enemies flying when it hits them."
+  }],
 	"28": [{
 		"version_id": "Red",
 		"flavor_text": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape."
@@ -2652,6 +2688,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Thanks to its thick claws, it's good at climbing trees. There are plenty of Sandslash that park themselves in trees and go right to sleep."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day."
   }],
   "28alola": [{
 		"version_id": "Ultra Sun",
@@ -2665,7 +2707,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "iceberg without slipping."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day."
+  }],
 	"29": [{
 		"version_id": "Red",
 		"flavor_text": "Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns."
@@ -2738,7 +2786,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom."
+  }],
 	"30": [{
 		"version_id": "Red",
 		"flavor_text": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting."
@@ -2811,7 +2865,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+  }],
 	"31": [{
 		"version_id": "Red",
 		"flavor_text": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves."
@@ -2884,7 +2944,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Nidoqueen’s body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+  }],
 	"32": [{
 		"version_id": "Red",
 		"flavor_text": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom."
@@ -2957,7 +3023,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Nidoran♂ has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon’s notice."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+  }],
 	"33": [{
 		"version_id": "Red",
 		"flavor_text": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom."
@@ -3030,7 +3102,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Nidorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+  }],
 	"34": [{
 		"version_id": "Red",
 		"flavor_text": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones."
@@ -3103,7 +3181,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Nidoking’s thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its steel-like hide adds to its powerful tackle. Its horns are so hard, they can pierce a diamond."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its steel-like hide adds to its powerful tackle. Its horns are so hard, they can pierce a diamond."
+  }],
 	"35": [{
 		"version_id": "Red",
 		"flavor_text": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
@@ -3188,7 +3272,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Bathed in moonlight, its wings glow faintly. Without even flapping, Clefairy rises into the air, where it dances around."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Adored for their cute looks and playfulness. They are thought to be rare, as they do not appear often."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Adored for their cute looks and playfulness. They are thought to be rare, as they do not appear often."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon."
+  }],
 	"36": [{
 		"version_id": "Red",
 		"flavor_text": "A timid fairy Pokémon that is rarely seen. It will run and hide the moment it senses people."
@@ -3273,7 +3369,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Some scientists believe that it gazes intently at the sky on nights with a full moon because it's homesick."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "They appear to be very protective of their own world. It is a kind of fairy, rarely seen by people."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "They appear to be very protective of their own world. It is a kind of fairy, rarely seen by people."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "They appear to be very protective of their own world. It is a kind of fairy, rarely seen by people."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Their ears are sensitive enough to hear a pin drop from over a mile away, so they’re usually found in quiet places."
+  }],
 	"37": [{
 		"version_id": "Red",
 		"flavor_text": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older."
@@ -3358,6 +3466,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It manipulates balls of fire to catch its prey. If you raise one from when it's young, it will grow close to you like a puppy Pokémon."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Both its fur and its tails are beautiful. As it grows, the tails split and form more tails."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Both its fur and its tails are beautiful. As it grows, the tails split and form more tails."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "While young, it has six gorgeous tails. When it grows, several new tails are sprouted."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "As each tail grows, its fur becomes more lustrous. When held, it feels slightly warm."
   }],
   "37alola": [{
 		"version_id": "Sun",
@@ -3371,7 +3491,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "They live together in a skulk, helping one another. Before eating their prey, they freeze it solid with their –58 degree Fahrenheit breath."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It looks like snow come to life, and the breath it exhales is –58 degrees Fahrenheit. Another name for it is Keokeo."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It looks like snow come to life, and the breath it exhales is –58 degrees Fahrenheit. Another name for it is Keokeo."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "After long years in the ever-snowcapped mountains of Alola, this Vulpix has gained power over ice."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "If you observe its curly hairs through a microscope, you’ll see small ice particles springing up."
+  }],
 	"38": [{
 		"version_id": "Red",
 		"flavor_text": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse."
@@ -3456,6 +3588,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The flickering flames it spews from its mouth leave its opponents hypnotized. Then, this extremely intelligent Pokémon attacks."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "According to an enduring legend, nine noble saints were united and reincarnated as this Pokémon."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "According to an enduring legend, nine noble saints were united and reincarnated as this Pokémon."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It is said to live 1,000 years, and each of its tails is loaded with supernatural powers."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1,000-year curse."
   }],
   "38alola": [{
 		"version_id": "Sun",
@@ -3469,7 +3613,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Some said that deities visited mountains where Ninetales live, so in times long past, no one was allowed to go into those mountains."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It lives on mountains perpetually covered in snow and is revered as a deity incarnate. It appears draped in a blizzard."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It lives on mountains perpetually covered in snow and is revered as a deity incarnate. It appears draped in a blizzard."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "A deity resides in the snowy mountains where this Pokémon lives. In ancient times, it was worshiped as that deity’s incarnation."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "While it will guide travelers who get lost on a snowy mountain down to the mountain’s base, it won’t forgive anyone who harms nature."
+  }],
 	"39": [{
 		"version_id": "Red",
 		"flavor_text": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
@@ -3554,7 +3710,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The songs they sing are totally different depending on the region they live in. Some even sound like they're shouting!"
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Uses its cute round eyes to enrapture its foe. It then sings a pleasing melody that lulls the foe to sleep."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Uses its cute round eyes to enrapture its foe. It then sings a pleasing melody that lulls the foe to sleep."
+  }],
 	"40": [{
 		"version_id": "Red",
 		"flavor_text": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size."
@@ -3639,7 +3801,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When it gets angry, it inhales with all its might, and its body gradually inflates. Sometimes they can grow 20 times larger!"
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its body is very elastic. By inhaling deeply, it can continue to inflate itself without limit."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its body is very elastic. By inhaling deeply, it can continue to inflate itself without limit."
+  }],
 	"41": [{
 		"version_id": "Red",
 		"flavor_text": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets."
@@ -3724,7 +3892,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Their skin is so thin that they'll be burned if sunlight hits them. When it gets cold out, they gather together to warm one another's bodies."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Emits ultrasonic cries while it flies. They act as a sonar used to check for objects in its way."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Emits ultrasonic cries while it flies. They act as a sonar used to check for objects in its way."
+  }],
 	"42": [{
 		"version_id": "Red",
 		"flavor_text": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
@@ -3809,7 +3983,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "They can suck down over 10 ounces of blood in one go. They have been known to drink so much blood that they can no longer fly."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and to suck blood."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and to suck blood."
+  }],
 	"43": [{
 		"version_id": "Red",
 		"flavor_text": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
@@ -3882,7 +4062,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Oddish searches for fertile, nutrient-rich soil, then plants itself. During the daytime, while it is planted, this Pokémon’s feet are thought to change shape and become similar to the roots of trees."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It may be mistaken for a clump of weeds. If you try to yank it out of the ground, it shrieks horribly."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It may be mistaken for a clump of weeds. If you try to yank it out of the ground, it shrieks horribly."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "During the day, it stays in the cold underground to avoid the sun. It grows by bathing in moonlight."
+  }],
 	"44": [{
 		"version_id": "Red",
 		"flavor_text": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey."
@@ -3955,7 +4147,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "From its mouth Gloom drips honey that smells absolutely horrible. Apparently, it loves the horrid stench. It sniffs the noxious fumes and then drools even more of its honey."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Smells incredibly foul! However, around one out of a thousand people enjoy sniffing its nose-bending stink."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Smells incredibly foul! However, around one out of a thousand people enjoy sniffing its nose-bending stink."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "What appears to be drool is actually sweet honey. It is very sticky and clings stubbornly if touched."
+  }],
 	"45": [{
 		"version_id": "Red",
 		"flavor_text": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up."
@@ -4028,7 +4232,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Vileplume has the world’s largest petals. They are used to attract prey that are then doused with toxic spores. Once the prey are immobilized, this Pokémon catches and devours them."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Flaps its broad flower petals to scatter its poisonous pollen. The flapping sound is very loud."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Flaps its broad flower petals to scatter its poisonous pollen. The flapping sound is very loud."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up."
+  }],
 	"46": [{
 		"version_id": "Red",
 		"flavor_text": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host."
@@ -4113,7 +4329,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition."
+  }],
 	"47": [{
 		"version_id": "Red",
 		"flavor_text": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places."
@@ -4198,7 +4420,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its poisonous spores are also used in traditional medicine. Apparently, spores produced in Alola are not of very good quality."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The bug host is drained of energy by the mushrooms on its back. The mushroom appears to do all the thinking."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The bug host is drained of energy by the mushrooms on its back. The mushroom appears to do all the thinking."
+  }],
 	"48": [{
 		"version_id": "Red",
 		"flavor_text": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night."
@@ -4271,7 +4499,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Venonat is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even minuscule prey."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its large eyes act as a radar. In a bright place, you can see that they are clusters of many tiny eyes."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its large eyes act as a radar. In a bright place, you can see that they are clusters of many tiny eyes."
+  }],
 	"49": [{
 		"version_id": "Red",
 		"flavor_text": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has."
@@ -4344,7 +4578,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Venomoth is nocturnal—it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact."
+  }],
 	"50": [{
 		"version_id": "Red",
 		"flavor_text": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground."
@@ -4429,6 +4669,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Around their crops, farmers plant the kind of tree that Diglett like to eat as a way of getting Diglett to plow the fields for them."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It prefers dark places. It spends most of its time underground, though it may pop up in caves."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It prefers dark places. It spends most of its time underground, though it may pop up in caves."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "It burrows through the ground at a shallow depth. It leaves raised earth in its wake, making it easy to spot."
   }],
   "50alola": [{
 		"version_id": "Sun",
@@ -4442,7 +4694,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The need to dig through volcanic rock in the ground has made them more powerful than the Diglett of other regions."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "After living in soil with high iron content for some time, three steel whiskers sprouted from the top of its head."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "After living in soil with high iron content for some time, three steel whiskers sprouted from the top of its head."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "The metal-rich geology of this Pokémon’s habitat caused it to develop steel whiskers on its head."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Its three hairs change shape depending on Diglett’s mood. They’re a useful communication tool among these Pokémon."
+  }],
 	"51": [{
 		"version_id": "Red",
 		"flavor_text": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground."
@@ -4527,6 +4791,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Dugtrio's heads are sleek and smooth and incredibly hard. It can dig through any soil with its headbutts."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "A team of triplets that can burrow to a depth of 60 miles. It's reported that this triggers an earthquake."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "A team of triplets that can burrow to a depth of 60 miles. It's reported that this triggers an earthquake."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "These Diglett triplets dig over 60 miles below sea level. No one knows what it’s like underground."
   }],
   "51alola": [{
 		"version_id": "Sun",
@@ -4540,7 +4816,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its shining gold whiskers are advanced sensors that can detect vibrations from sounds several miles away."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "They're referred to as triplets, but they're not identical–the metallic elements in their bodies differ slightly. The proof shows in their whiskers!"
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "They're referred to as triplets, but they're not identical–the metallic elements in their bodies differ slightly. The proof shows in their whiskers!"
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "Their beautiful, metallic whiskers create a sort of protective helmet on their heads, and they also function as highly precise sensors."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "The three of them get along very well. Through their formidable teamwork, they defeat powerful opponents."
+  }],
 	"52": [{
 		"version_id": "Red",
 		"flavor_text": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change."
@@ -4625,6 +4913,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It loves coins, so if you give it one, you can make friends with Meowth easily. But it's fickle, so you can't count on that friendship lasting."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Appears to be more active at night. It loves round and shiny things. It can't stop itself from picking them up."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Appears to be more active at night. It loves round and shiny things. It can't stop itself from picking them up."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It loves to collect shiny things. If it's in a good mood, it might even let its Trainer have a look at its hoard of treasures."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "It washes its face regularly to keep the coin on its forehead spotless. It doesn't get along with Galarian Meowth."
   }],
   "52alola": [{
 		"version_id": "Sun",
@@ -4638,7 +4938,33 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "A royal house that flourished in the distant past brought it here from another region. Meowth is both selfish"
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Highly intelligent and prideful, it's famously difficult to handle–but that's also a reason for its popularity."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Highly intelligent and prideful, it's famously difficult to handle–but that's also a reason for its popularity."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It's accustomed to luxury because it used to live with Alolan royalty. As a result, it's very picky about food."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Deeply proud and keenly smart, this Pokémon moves with cunning during battle and relentlessly attacks enemies' weak points."
+  }],
+  "52galar": [{
+    "version_id": "Sword",
+    "flavor_text": "Living with a savage, seafaring people has toughened this Pokémon's body so much that parts of it have turned to iron."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "These daring Pokémon have coins on their foreheads. Darker coins are harder, and harder coins garner more respect among Meowth."
+  }],
+  "52gmax": [{
+    "version_id": "Sword",
+    "flavor_text": "The pattern that has appeared on its giant coin is thought to be the key to unlocking the secrets of the Dynamax phenomenon."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Its body has grown incredibly long and the coin on its forehead has grown incredibly large—all thanks to Gigantamax power."
+  }],
 	"53": [{
 		"version_id": "Red",
 		"flavor_text": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness."
@@ -4723,6 +5049,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This Pokémon is popular with rich people. It's also targeted by hunters who are after the jewel in its forehead."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The gem in its forehead glows on its own! It walks with all the grace and elegance of a proud queen."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The gem in its forehead glows on its own! It walks with all the grace and elegance of a proud queen."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "Getting this prideful Pokémon to warm up to you takes a lot of effort, and it will claw at you the moment it gets annoyed."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Its elegant and refined behavior clashes with that of the barbaric Perrserker. The relationship between the two is one of mutual disdain."
   }],
   "53alola": [{
 		"version_id": "Sun",
@@ -4736,7 +5074,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its round face is a symbol of wealth. Persian that have bigger, plumper faces are considered more beautiful."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It has the classiest coat. The rippling of its fur in the heat of battle has a beauty all its own."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It has the classiest coat. The rippling of its fur in the heat of battle has a beauty all its own."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "The round face of Alolan Persian is considered to be a symbol of prosperity in the Alola region, so these Pokémon are very well cared for."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "This Pokémon is one tough opponent. Not only does it have formidable physical abilities, but it’s also not above fighting dirty."
+  }],
 	"54": [{
 		"version_id": "Red",
 		"flavor_text": "While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers."
@@ -4821,7 +5171,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It has been found that its brain cells are 10 times more active when Psyduck is experiencing a headache."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Always tormented by headaches. It uses psychic powers, but whether it intends to do so is not known."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Always tormented by headaches. It uses psychic powers, but whether it intends to do so is not known."
+  }],
 	"55": [{
 		"version_id": "Red",
 		"flavor_text": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
@@ -4906,7 +5262,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "A professional swimmer, it can continue swimming for two days straight by waving its long tail skillfully."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its long, slim limbs end in broad flippers. They are used for swimming gracefully in lakes."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its long, slim limbs end in broad flippers. They are used for swimming gracefully in lakes."
+  }],
 	"56": [{
 		"version_id": "Red",
 		"flavor_text": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant."
@@ -4991,7 +5353,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "If one gets angry, all the others around it will get angry, so silence is a rare visitor in a troop of Mankey."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "An agile Pokémon that lives in trees. It angers easily and will not hesitate to attack anything."
+  }],
 	"57": [{
 		"version_id": "Red",
 		"flavor_text": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught."
@@ -5076,7 +5444,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The blood vessels in its brain are sturdier than those of other Pokémon, so it can stay healthy despite its constant raging."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It stops being angry only when nobody else is around. To view this moment is very difficult."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It stops being angry only when nobody else is around. To view this moment is very difficult."
+  }],
 	"58": [{
 		"version_id": "Red",
 		"flavor_text": "Very protective of its territory. It will bark and bite to repel intruders from its space."
@@ -5161,7 +5535,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It has lived alongside humans since ages ago. Its bones have been found in excavations of ruins from the Stone Age."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "A Pokémon with a friendly nature. However, it will bark fiercely at anything invading its territory."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "A Pokémon with a friendly nature. However, it will bark fiercely at anything invading its territory."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Extremely loyal, it will fearlessly bark at any opponent to protect its own Trainer from harm."
+  }],
 	"59": [{
 		"version_id": "Red",
 		"flavor_text": "A Pokémon that has been admired since the past for its beauty. It runs agilely as if on wings."
@@ -5246,7 +5632,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "There are so many old tales about them that they're called legendary Pokémon, but there are way more of them around than you'd expect."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "A legendary Pokémon in the East. Many people are charmed by the grace and beauty of its running."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "A legendary Pokémon in the East. Many people are charmed by the grace and beauty of its running."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "The sight of it running over 6,200 miles in a single day and night has captivated many people."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "A Pokémon that has long been admired for its beauty. It runs agilely as if on wings."
+  }],
 	"60": [{
 		"version_id": "Red",
 		"flavor_text": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
@@ -5331,7 +5729,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The direction of the swirl on their stomachs differs depending on where they live. Poliwag aficionados can tell them apart at a glance."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The direction of the spiral on the belly differs by area. It is more adept at swimming than walking."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The direction of the spiral on the belly differs by area. It is more adept at swimming than walking."
+  }],
 	"61": [{
 		"version_id": "Red",
 		"flavor_text": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy."
@@ -5416,7 +5820,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its health suffers when its skin dries out, so be sure to moisturize it diligently."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Under attack, it uses its belly spiral to put the foe to sleep. It then makes its escape."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Under attack, it uses its belly spiral to put the foe to sleep. It then makes its escape."
+  }],
 	"62": [{
 		"version_id": "Red",
 		"flavor_text": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
@@ -5501,7 +5911,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The muscles it has developed through swimming are thick and powerful. When it lands a square punch, it can turn huge boulders to dust."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Swims powerfully using all the muscles in its body. It can even overtake world-class swimmers."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Swims powerfully using all the muscles in its body. It can even overtake world-class swimmers."
+  }],
 	"63": [{
 		"version_id": "Red",
 		"flavor_text": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety."
@@ -5586,7 +6002,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It can read others' minds and will teleport away when danger approaches. You must clear your mind if you want to catch it."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Sleeps 18 hours a day. If it senses danger, it will teleport itself to safety even as it sleeps."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Sleeps 18 hours a day. If it senses danger, it will teleport itself to safety even as it sleeps."
+  }],
 	"64": [{
 		"version_id": "Red",
 		"flavor_text": "It emits special alpha waves from its body that induce headaches just by being close by."
@@ -5671,7 +6093,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It possesses strong mental capabilities, but its psychic powers are halved when it's not holding a silver spoon."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Many odd things happen if this Pokémon is close by. For example, it makes clocks run backward."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Many odd things happen if this Pokémon is close by. For example, it makes clocks run backward."
+  }],
 	"65": [{
 		"version_id": "Red",
 		"flavor_text": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000."
@@ -5756,6 +6184,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "If it trusts someone deeply, it will let them have one of its spoons. Anything you eat with that spoon is apparently delicious."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "A Pokémon that can memorize anything. It never forgets what it learns—that's why this Pokémon is smart."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "A Pokémon that can memorize anything. It never forgets what it learns—that's why this Pokémon is smart."
   }],
   "65mega": [{
 		"version_id": "Sun",
@@ -5769,7 +6203,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Having traded away its muscles, Alakazam's true power has been unleashed. With its psychic powers, it can foresee all things."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It's adept at precognition. When attacks completely miss Alakazam, that's because it's seeing the future."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It's adept at precognition. When attacks completely miss Alakazam, that's because it's seeing the future."
+  }],
 	"66": [{
 		"version_id": "Red",
 		"flavor_text": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger."
@@ -5854,7 +6294,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It likes food that's highly nutritious because its instincts drive it to build muscle efficiently."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Very powerful in spite of its small size. Its mastery of many types of martial arts makes it very tough."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Very powerful in spite of its small size. Its mastery of many types of martial arts makes it very tough."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "Its muscular body is so powerful, it must wear a power-save belt to be able to regulate its motions."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Its formidable body never gets tired. It helps people by doing work such as the moving of heavy goods."
+  }],
 	"67": [{
 		"version_id": "Red",
 		"flavor_text": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions."
@@ -5939,7 +6391,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "A popular motif for sculptures, its incredibly well-developed muscles have captured the imagination of many an artist."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The belt around its waist holds back its energy. Without it, this Pokémon would be unstoppable."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The belt around its waist holds back its energy. Without it, this Pokémon would be unstoppable."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "With four arms that react more quickly than it can think, it can execute many punches at once."
+  }],
 	"68": [{
 		"version_id": "Red",
 		"flavor_text": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
@@ -6024,7 +6488,26 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "With four arms, it can attack and defend simultaneously. It's said to have mastered every martial art in the world."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "One arm alone can move mountains. Using all four arms, this Pokémon fires off awesome punches."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "One arm alone can move mountains. Using all four arms, this Pokémon fires off awesome punches."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "With four arms that react more quickly than it can think, it can execute many punches at once."
+  }],
+  "68gmax": [{
+    "version_id": "Sword",
+    "flavor_text": "The Gigantamax energy coursing through its arms makes its punches hit as hard as bomb blasts."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "One of these Pokémon once used its immeasurable strength to lift a large ship that was in trouble. It then carried the ship to port."
+  }],
 	"69": [{
 		"version_id": "Red",
 		"flavor_text": "A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture."
@@ -6097,7 +6580,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Bellsprout’s thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive fluid that melts even iron."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Prefers hot and humid places. It ensnares tiny bugs with its vines and devours them."
+  }],
 	"70": [{
 		"version_id": "Red",
 		"flavor_text": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID."
@@ -6170,7 +6659,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When hungry, it swallows anything that moves. Its hapless prey is dissolved by strong acids."
+  }],
 	"71": [{
 		"version_id": "Red",
 		"flavor_text": "Said to live in huge colonies deep in jungles, although no one has ever returned from there."
@@ -6243,7 +6738,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Lures prey with the sweet aroma of honey. Swallowed whole, the prey is dissolved in a day, bones and all."
+  }],
 	"72": [{
 		"version_id": "Red",
 		"flavor_text": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid."
@@ -6328,7 +6829,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its body is 99% water. The remaining 1% contains the organ that makes its poison."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It can sometimes be found all dry and shriveled up on a beach. Toss it back into the sea to revive it."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It can sometimes be found all dry and shriveled up on a beach. Toss it back into the sea to revive it."
+  }],
 	"73": [{
 		"version_id": "Red",
 		"flavor_text": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey."
@@ -6413,7 +6920,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It communicates with others of its kind by lighting up the red orbs on its head. When the orbs are blinking, it's a warning sign."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its 80 tentacles can stretch and contract freely. They wrap around prey and weaken it with poison."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its 80 tentacles can stretch and contract freely. They wrap around prey and weaken it with poison."
+  }],
 	"74": [{
 		"version_id": "Red",
 		"flavor_text": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them."
@@ -6498,6 +7011,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It uses both hands to climb precipitous cliffs. People who see it in action have been known to take up bouldering."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Commonly found near mountain trails and the like. If you step on one by accident, it gets angry."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Commonly found near mountain trails and the like. If you step on one by accident, it gets angry."
   }],
   "74alola": [{
 		"version_id": "Sun",
@@ -6511,7 +7030,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Geodude compete against each other with headbutts. The iron sand on their heads will stick to whichever one has stronger magnetism."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its stone head is imbued with electricity and magnetism. If you carelessly step on one, you'll be in for a painful shock."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its stone head is imbued with electricity and magnetism. If you carelessly step on one, you'll be in for a painful shock."
+  }],
 	"75": [{
 		"version_id": "Red",
 		"flavor_text": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction."
@@ -6596,6 +7121,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It travels by rolling down cliffs. If it falls into a river, it will explode with its last gasp."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid."
   }],
   "75alola": [{
 		"version_id": "Sun",
@@ -6609,7 +7140,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Graveler's entire body is tinged with electricity due to the stones it likes to eat. It's very quick-tempered."
-	}],
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When it comes rolling down a mountain path, anything in its way gets zapped by electricity and sent flying."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When it comes rolling down a mountain path, anything in its way gets zapped by electricity and sent flying."
+  }],
 	"76": [{
 		"version_id": "Red",
 		"flavor_text": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage."
@@ -6694,6 +7231,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It detonates its own body. The power from that explosion can propel it up steep mountain paths with amazing speed."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it's exposed to air."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it's exposed to air."
   }],
   "76alola": [{
 		"version_id": "Sun",
@@ -6707,7 +7250,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It shoots large rocks that are charged with electricity. Tremendous electric shocks are flung out across the whole area of impact."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It uses magnetism to accelerate and fire off rocks tinged with electricity. Even if it doesn't score a direct hit, the jolt of electricity will do the job."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It uses magnetism to accelerate and fire off rocks tinged with electricity. Even if it doesn't score a direct hit, the jolt of electricity will do the job."
+  }],
 	"77": [{
 		"version_id": "Red",
 		"flavor_text": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time."
@@ -6780,7 +7329,26 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Capable of jumping incredibly high. Its hooves and sturdy legs absorb the impact of a hard landing."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Capable of jumping incredibly high. Its hooves and sturdy legs absorb the impact of a hard landing."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It can't run properly when it's newly born. As it races around with others of its kind, its legs grow stronger."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "If you've been accepted by Ponyta, its burning mane is mysteriously no longer hot to the touch."
+  }],
+  "77galar": [{
+    "version_id": "Sword",
+    "flavor_text": "Its small horn hides a healing power. With a few rubs from this Pokémon's horn, any slight wound you have will be healed."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "This Pokémon will look into your eyes and read the contents of your heart. If it finds evil there, it promptly hides away."
+  }],
 	"78": [{
 		"version_id": "Red",
 		"flavor_text": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it."
@@ -6853,7 +7421,26 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Just loves to run. If it sees something faster than itself, it will give chase at top speed."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Just loves to run. If it sees something faster than itself, it will give chase at top speed."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "This Pokémon can be seen galloping through fields at speeds of up to 150 mph, its fiery mane fluttering in the wind."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "The fastest runner becomes the leader, and it decides the herds pace and direction of travel."
+  }],
+  "78galar": [{
+   "version_id": "Sword",
+   "flavor_text": "Little can stand up to its psycho cut. Unleashed from this Pokémon's horn, the move will punch a hole right through a thick metal sheet."
+ }, {
+   "version_id": "Shield",
+   "flavor_text": "Brave and prideful, this Pokémon dashes airily through the forest, its steps aided by the psychic power stored in the fur on its fetlocks."
+ }],
 	"79": [{
 		"version_id": "Red",
 		"flavor_text": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
@@ -6938,7 +7525,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Although their tails, which fall off naturally, can easily be found lying around, they're a precious ingredient for cooking."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Incredibly slow and sluggish. It is quite content to loll about without worrying about the time."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Incredibly slow and sluggish. It is quite content to loll about without worrying about the time."
+  }],
 	"80": [{
 		"version_id": "Red",
 		"flavor_text": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps."
@@ -7023,6 +7616,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Shellder, in its greed to suck out more and more sweetness from Slowbro's tail, has metamorphosed into a spiral-shaped shell."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Lives lazily by the sea. If the Shellder on its tail comes off, it becomes a Slowpoke again."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Lives lazily by the sea. If the Shellder on its tail comes off, it becomes a Slowpoke again."
   }],
   "80mega": [{
 		"version_id": "Sun",
@@ -7036,7 +7635,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Tremendous energy strengthened the power of the Shellder on its tail, but it doesn't really affect Slowpoke."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power–and a little motivation to boot."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power–and a little motivation to boot."
+  }],
 	"81": [{
 		"version_id": "Red",
 		"flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves."
@@ -7121,7 +7726,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Perhaps because electrical lines are often buried these days, the number of Magnemite attacks on power plants has increased."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It is hatched with the ability to defy gravity. It floats while emitting powerful electromagnetic waves."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It is hatched with the ability to defy gravity. It floats while emitting powerful electromagnetic waves."
+  }],
 	"82": [{
 		"version_id": "Red",
 		"flavor_text": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up."
@@ -7206,7 +7817,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When rain clouds form, many Magneton gather in high places to wait for lightning to strike."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet."
+  }],
 	"83": [{
 		"version_id": "Red",
 		"flavor_text": "The sprig of green onions it holds is its weapon. It is used much like a metal sword."
@@ -7279,7 +7896,26 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Farfetch’d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "They live where reedy plants grow. Farfetch'd are rarely seen, so it's thought their numbers are decreasing."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "They live where reedy plants grow. Farfetch'd are rarely seen, so it's thought their numbers are decreasing."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "The stalk this Pokémon carries in its wings serves as a sword to cut down opponents. In a dire situation, the stalk can also serve as food."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed."
+  }],
+  "83galar": [{
+	 "version_id": "Sword",
+	 "flavor_text": "The Farfetch'd of the Galar region are brave warriors, and they wield thick, tough leeks in battle."
+ }, {
+	 "version_id": "Shield",
+	 "flavor_text": "The stalks of leeks are thicker and longer in the Galar region. Farfetch'd that adapted to these stalks took on a unique form."
+ }],
 	"84": [{
 		"version_id": "Red",
 		"flavor_text": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints."
@@ -7352,6 +7988,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Doduo’s two heads contain completely identical brains. A scientific study reported that on rare occasions, there will be examples of this Pokémon possessing different sets of brains."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its short wings make flying difficult. Instead, this Pokémon runs at high speed on developed legs."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its short wings make flying difficult. Instead, this Pokémon runs at high speed on developed legs."
 	}],
 	"85": [{
 		"version_id": "Red",
@@ -7425,6 +8067,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Apparently, the heads aren’t the only parts of the body that Dodrio has three of. It has three sets of hearts and lungs as well, so it is capable of running long distances without rest."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "One of Doduo's two heads splits to form a unique species. It runs close to 40 mph in prairies."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "One of Doduo's two heads splits to form a unique species. It runs close to 40 mph in prairies."
 	}],
 	"86": [{
 		"version_id": "Red",
@@ -7504,6 +8152,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Thanks to its thick fat, cold seas don't bother it at all, but it gets tired pretty easily in warm waters."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Loves freezing-cold conditions. Relishes swimming in a frigid climate of around 14 degrees Fahrenheit."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Loves freezing-cold conditions. Relishes swimming in a frigid climate of around 14 degrees Fahrenheit."
 	}],
 	"87": [{
 		"version_id": "Red",
@@ -7583,6 +8237,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It sunbathes on the beach after meals. The rise in its body temperature helps its digestion."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its entire body is a snowy white. Unharmed by even intense cold, it swims powerfully in icy waters."
 	}],
 	"88": [{
 		"version_id": "Red",
@@ -7668,6 +8328,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The wastewater coming from factories is clean these days, so Grimer have nothing to eat. They're said to be on the verge of extinction."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Made of congealed sludge. It smells too putrid to touch. Even weeds won't grow in its path."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Made of congealed sludge. It smells too putrid to touch. Even weeds won't grow in its path."
   }],
   	"88alola": [{
 		"version_id": "Sun",
@@ -7681,6 +8347,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Brought to Alola to solve the garbage problem, Grimer seems to relish any and all kinds of trash."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It has a passion for trash above all else, speedily digesting it and creating brilliant crystals of sparkling poison."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It has a passion for trash above all else, speedily digesting it and creating brilliant crystals of sparkling poison."
 	}],
 	"89": [{
 		"version_id": "Red",
@@ -7766,6 +8438,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Because they scatter germs everywhere, they've long been targeted for extermination, leading to a steep decline in their population."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell."
   }],
   "89alola": [{
 		"version_id": "Sun",
@@ -7779,6 +8457,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "What look like fangs and claws are actually crystallized poison that will afflict you at a mere touch, so don't get too close."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Muk's coloration becomes increasingly vivid the more it feasts on its favorite dish–trash."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Muk's coloration becomes increasingly vivid the more it feasts on its favorite dish–trash."
 	}],
 	"90": [{
 		"version_id": "Red",
@@ -7864,6 +8548,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Even when its shell is closed, its tongue still hangs out. If you give its tongue a good yank, the shock will cause Shellder to open its shell."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "The shell can withstand any attack. However, when it is open, the tender body is exposed."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "The shell can withstand any attack. However, when it is open, the tender body is exposed."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It swims facing backward by opening and closing its two-piece shell. It is surprisingly fast."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open."
 	}],
 	"91": [{
 		"version_id": "Red",
@@ -7949,6 +8645,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Slowpoke tails are its favorite food. It has even been known to come up on land to look for Slowpoke from time to time."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "For protection, it uses its harder-than-diamonds shell. It also shoots spikes from the shell."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "For protection, it uses its harder-than-diamonds shell. It also shoots spikes from the shell."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Once it slams its shell shut, it is impossible to open, even by those with superior strength."
 	}],
 	"92": [{
 		"version_id": "Red",
@@ -8034,6 +8742,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Poisonous gas comprises 95% of its body. It's said that the remaining 5% is made up of the souls of those who died from the gas."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Said to appear in decrepit, deserted buildings. It has no real shape, as it appears to be made of a gas."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Said to appear in decrepit, deserted buildings. It has no real shape, as it appears to be made of a gas."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Born from gases, anyone would faint if engulfed by its gaseous body, which contains poison."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "With its gas-like body, it can sneak into any place it desires. However, it can be blown away by wind."
 	}],
 	"93": [{
 		"version_id": "Red",
@@ -8119,6 +8839,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It's dangerous to go outside alone on nights when you're feeling sad. Haunter will catch you, and you won't be able to go back home."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "By licking, it saps the victim's life. It causes shaking that won't stop until the victim's demise."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "By licking, it saps the victim's life. It causes shaking that won't stop until the victim's demise."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its tongue is made of gas. If licked, its victim starts shaking constantly until death eventually comes."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "If you get the feeling of being watched in darkness when nobody is around, Haunter is there."
 	}],
 	"94": [{
 		"version_id": "Red",
@@ -8204,6 +8936,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Even your home isn't safe. Gengar will lurk in whatever dark corner of a room it can find and wait for its chance to catch its prey."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "A Gengar is close by if you feel a sudden chill. It may be trying to lay a curse on you."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "A Gengar is close by if you feel a sudden chill. It may be trying to lay a curse on you."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "On the night of a full moon, if shadows move on their own and laugh, it must be Gengar's doing."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "It is said to emerge from darkness to steal the lives of those who become lost in mountains."
   }],
   "94mega": [{
 		"version_id": "Sun",
@@ -8217,6 +8961,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Mega Evolution has made it possible for Gengar to access other dimensions. Its entire body is brimming with strange power."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It can pass through other dimensions and can appear anywhere. It caused a stir one time when it stuck just one leg out of a wall."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It can pass through other dimensions and can appear anywhere. It caused a stir one time when it stuck just one leg out of a wall."
+	}],
+	"94gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Rumor has it that its gigantic mouth leads not into its body, filled with cursed energy, but instead directly to the afterlife."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It lays traps, hoping to steal the lives of those it catches. If you stand in front of its mouth, you'll hear your loved ones' voices calling out to you."
 	}],
 	"95": [{
 		"version_id": "Red",
@@ -8290,6 +9047,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Onix has a magnet in its brain. It acts as a compass so that this Pokémon does not lose direction while it is tunneling. As it grows older, its body becomes increasingly rounder and smoother."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Burrows at high speed in search of food. The tunnels it leaves are used as homes by Diglett."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Burrows at high speed in search of food. The tunnels it leaves are used as homes by Diglett."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "As it digs through the ground, it absorbs many hard objects. This is what makes its body so solid."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It rapidly bores through the ground at 50 mph by squirming and twisting its massive, rugged body."
 	}],
 	"96": [{
 		"version_id": "Red",
@@ -8375,6 +9144,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It puts its prey to sleep and devours their dreams. It seems that bad dreams taste sour, so Drowzee doesn't particularly like eating them."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "If you sleep by it all the time, it will sometimes show you dreams it had eaten in the past."
 	}],
 	"97": [{
 		"version_id": "Red",
@@ -8460,6 +9235,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "There are some Hypno that assist doctors with patients who can't sleep at night in hospitals."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Avoid eye contact if you come across one. It will try to put you to sleep by using its pendulum."
 	}],
 	"98": [{
 		"version_id": "Red",
@@ -8533,6 +9314,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Krabby live on beaches, burrowed inside holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its pincers are superb weapons. They sometimes break off during battle, but they grow back fast."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its pincers are superb weapons. They sometimes break off during battle, but they grow back fast."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It can be found near the sea. The large pincers grow back if they are torn out of their sockets."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "If it senses danger approaching, it cloaks itself with bubbles from its mouth so it will look bigger."
 	}],
 	"99": [{
 		"version_id": "Red",
@@ -8606,7 +9399,26 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Kingler has an enormous, oversized claw. It waves this huge claw in the air to communicate with others. However, because the claw is so heavy, the Pokémon quickly tires."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "One claw grew massively and is as hard as steel. It has 10,000-horsepower strength. However, it is too heavy."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "One claw grew massively and is as hard as steel. It has 10,000-horsepower strength. However, it is too heavy."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its large and hard pincer has 10,000-horsepower strength. However, being so big, it is unwieldy to move."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its oversized claw is very powerful, but when it's not in battle, the claw just gets in the way."
 	}],
+	"99gmax": [{
+	"version_id": "Sword",
+	"flavor_text": "The flow of Gigantamax energy has spurred this Pokémon's left pincer to grow to an enormous size. That claw can pulverize anything."
+}, {
+	"version_id": "Shield",
+	"flavor_text": "The bubbles it spews out are strongly alkaline. Any opponents hit by them will have their bodies quickly melted away."
+}],
 	"100": [{
 		"version_id": "Red",
 		"flavor_text": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people."
@@ -8679,6 +9491,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Voltorb is extremely sensitive—it explodes at the slightest of shocks. It is rumored that it was first created when a Poké Ball was exposed to a powerful pulse of energy."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus."
 	}],
 	"101": [{
 		"version_id": "Red",
@@ -8752,6 +9570,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "One of Electrode’s characteristics is its attraction to electricity. It is a problematical Pokémon that congregates mostly at electrical power plants to feed on electricity that has just been generated."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Stores electrical energy inside its body. Even the slightest shock could trigger a huge explosion."
 	}],
 	"102": [{
 		"version_id": "Red",
@@ -8837,6 +9661,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Although they are the same size as other Exeggcute, the ones produced in Alola are quite heavy. Their shells are packed full."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "The heads attract each other and spin around. There must be six heads for it to maintain balance."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "The heads attract each other and spin around. There must be six heads for it to maintain balance."
 	}],
 	"103": [{
 		"version_id": "Red",
@@ -8922,6 +9752,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Each of its three heads has its own thoughts. When they want to go in different directions, Exeggutor becomes unable to move."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Its cries are very noisy. This is because each of the three heads thinks about whatever it likes."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Its cries are very noisy. This is because each of the three heads thinks about whatever it likes."
   }],
   "103alola": [{
 		"version_id": "Sun",
@@ -8935,7 +9771,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It swings its long neck like a whip and smacks its opponents. This makes Exeggutor itself dizzy, too."
-	}],
+		}, {
+			"version_id": "Let's Go Pikachu",
+			"flavor_text": "The strong sunlight of the Alola region has awakened the power hidden within Exeggcute. This is the result."
+		}, {
+			"version_id": "Let's Go Eevee",
+			"flavor_text": "The strong sunlight of the Alola region has awakened the power hidden within Exeggcute. This is the result."
+		}],
 	"104": [{
 		"version_id": "Red",
 		"flavor_text": "Because it never removes its skull helmet, no one has ever seen this Pokémon's real face."
@@ -9020,6 +9862,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It wears its mother's skull on its head, so no one knows what its bare face looks like. However, it's clear that it's always crying."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody."
 	}],
 	"105": [{
 		"version_id": "Red",
@@ -9105,6 +9953,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "They thump their bones rhythmically to communicate among themselves. There are nearly 50 different rhythmic patterns."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Small and weak, this Pokémon is adept with its bone club. It has grown more vicious over the ages."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Small and weak, this Pokémon is adept with its bone club. It has grown more vicious over the ages."
   }],
   "105alola": [{
 		"version_id": "Sun",
@@ -9118,6 +9972,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It has transformed the spirit of its dear departed mother into flames, and tonight it will once again dance in mourning of others of its kind."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It has transformed the spirit of its dear departed mother into flames, and tonight it will once again dance in mourning of others of its kind."
 	}],
 	"105alola-totem": [{
 		"version_id": "Sun",
@@ -9131,6 +9991,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It has transformed the spirit of its dear departed mother into flames, and tonight it will once again dance in mourning of others of its kind."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It has transformed the spirit of its dear departed mother into flames, and tonight it will once again dance in mourning of others of its kind."
 	}],
 	"106": [{
 		"version_id": "Red",
@@ -9204,6 +10070,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Hitmonlee’s legs freely contract and stretch. Using these springlike legs, it bowls over foes with devastating kicks. After battle, it rubs down its legs and loosens the muscles to overcome fatigue."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "When kicking, the sole of its foot turns as hard as a diamond on impact and destroys its enemy."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "When kicking, the sole of its foot turns as hard as a diamond on impact and destroys its enemy."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This amazing Pokémon has an awesome sense of balance. It can kick in succession from any position."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The legs freely contract and stretch. The stretchy legs allow it to hit a distant foe with a rising kick."
 	}],
 	"107": [{
 		"version_id": "Red",
@@ -9277,6 +10155,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Punches in corkscrew fashion. It can punch its way through a concrete wall like a drill."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Punches in corkscrew fashion. It can punch its way through a concrete wall like a drill."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its punches slice the air. However, it seems to need a short break after fighting for three minutes."
 	}],
 	"108": [{
 		"version_id": "Red",
@@ -9356,6 +10246,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It licks filth clean with its tongue. Whatever it licks always stinks afterward, so whether it's really clean is...questionable."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its tongue spans almost seven feet and moves more freely than its forelegs. Its licks can cause paralysis."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its tongue spans almost seven feet and moves more freely than its forelegs. Its licks can cause paralysis."
 	}],
 	"109": [{
 		"version_id": "Red",
@@ -9429,6 +10325,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Koffing embodies toxic substances. It mixes the toxins with raw garbage to set off a chemical reaction that results in a terribly powerful poison gas. The higher the temperature, the more gas is concocted by this Pokémon."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "In hot places, its internal gases could expand and explode without any warning. Be very careful!"
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "In hot places, its internal gases could expand and explode without any warning. Be very careful!"
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its body is full of poisonous gas. It floats into garbage dumps, seeking out the fumes of raw, rotting trash."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It adores polluted air. Some claim that Koffing used to be more plentiful in the Galar region than they are now."
 	}],
 	"110": [{
 		"version_id": "Red",
@@ -9502,6 +10410,25 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Weezing alternately shrinks and inflates its twin bodies to mix together toxic gases inside. The more the gases are mixed, the more powerful the toxins become. The Pokémon also becomes more putrid."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "This Pokémon lives and grows by absorbing poison gas, dust, and germs that exist inside garbage."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "This Pokémon lives and grows by absorbing poison gas, dust, and germs that exist inside garbage."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It mixes gases between its two bodies. It's said that these Pokémon were seen all over the Galar region back in the day."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It can't suck in air quite as well as a Galarian Weezing, but the toxins it creates are more potent than those of its counterpart."
+	}],
+	"110galar": [{
+		"version_id": "Sword",
+		"flavor_text": "This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Long ago, during a time when droves of factories fouled the air with pollution, Weezing changed into this form for some reason."
 	}],
 	"111": [{
 		"version_id": "Red",
@@ -9575,6 +10502,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Rhyhorn’s brain is very small. It is so dense, while on a run it forgets why it started running in the first place. It apparently remembers sometimes if it demolishes something."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A Pokémon with a one-track mind. Once it charges, it won't stop running until it falls asleep."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A Pokémon with a one-track mind. Once it charges, it won't stop running until it falls asleep."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging tackles."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It can remember only one thing at a time. Once it starts rushing, it forgets why it started."
 	}],
 	"112": [{
 		"version_id": "Red",
@@ -9648,6 +10587,18 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Rhydon has a horn that serves as a drill. It is used for destroying rocks and boulders. This Pokémon occasionally rams into streams of magma, but the armor-like hide prevents it from feeling the heat."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its brain developed when it began walking on its hind legs. Its armor-like hide even repels molten lava."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its brain developed when it began walking on its hind legs. Its armor-like hide even repels molten lava."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It begins walking on its hind legs after evolution. It can punch holes through boulders with its horn."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees Fahrenheit."
 	}],
 	"113": [{
 		"version_id": "Red",
@@ -9733,6 +10684,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Because the eggs on their bellies have been overharvested by people in the past, the Chansey population remains very small."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A gentle and kindhearted Pokémon that shares its nutritious eggs if it sees an injured Pokémon."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A gentle and kindhearted Pokémon that shares its nutritious eggs if it sees an injured Pokémon."
 	}],
 	"114": [{
 		"version_id": "Red",
@@ -9806,6 +10763,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Tangela’s vines snap off easily if they are grabbed. This happens without pain, allowing it to make a quick getaway. The lost vines are replaced by newly grown vines the very next day."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its identity is obscured by masses of thick blue vines. The vines are said to never stop growing."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its identity is obscured by masses of thick blue vines. The vines are said to never stop growing."
 	}],
 	"115": [{
 		"version_id": "Red",
@@ -9891,6 +10854,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "You shouldn't get close to the child when it's playing outside its mother's pouch. Its mother is always nearby watching over it."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Raises its young in its belly pouch. Won't run from any fight to keep its young protected."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Raises its young in its belly pouch. Won't run from any fight to keep its young protected."
   }],
   "115mega": [{
 		"version_id": "Sun",
@@ -9904,6 +10873,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When the mother sees the back of her Mega- Evolved child, it makes her think of the day when her child will inevitably leave her."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its child has grown rapidly, thanks to the energy of Mega Evolution. Mother and child show their harmonious teamwork in battle."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its child has grown rapidly, thanks to the energy of Mega Evolution. Mother and child show their harmonious teamwork in battle."
 	}],
 	"116": [{
 		"version_id": "Red",
@@ -9977,6 +10952,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "If Horsea senses danger, it will reflexively spray a dense black ink from its mouth and try to escape. This Pokémon swims by cleverly flapping the fin on its back."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "If it senses any danger, it will vigorously spray water or a special type of ink from its mouth."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "If it senses any danger, it will vigorously spray water or a special type of ink from its mouth."
 	}],
 	"117": [{
 		"version_id": "Red",
@@ -10050,6 +11031,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Seadra generates whirlpools by spinning its body. The whirlpools are strong enough to swallow even fishing boats. This Pokémon weakens prey with these currents, then swallows it whole."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Touching the back fin causes numbness. It hooks its tail to coral to stay in place while sleeping."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Touching the back fin causes numbness. It hooks its tail to coral to stay in place while sleeping."
 	}],
 	"118": [{
 		"version_id": "Red",
@@ -10135,6 +11122,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The way it swims along fluttering its dress-like fins has earned it the name “princess of the water.”"
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "When it is time for them to lay eggs, they can be seen swimming up rivers and falls in large groups."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "When it is time for them to lay eggs, they can be seen swimming up rivers and falls in large groups."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its dorsal, pectoral, and tail fins wave elegantly in water. That is why it is known as the Water Dancer."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its dorsal and pectoral fins are strongly developed like muscles. It can swim at a speed of five knots."
 	}],
 	"119": [{
 		"version_id": "Red",
@@ -10220,6 +11219,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "To attract females, males dance on the river's floor. The females gather around the male that dances most gracefully."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It is the male's job to make a nest by carving out boulders in a stream using the horn on its head."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It is the male's job to make a nest by carving out boulders in a stream using the horn on its head."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "In autumn, its body becomes more fatty in preparing to propose to a mate. It takes on beautiful colors."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Using its horn, it bores holes in riverbed boulders, making nests to prevent its eggs from washing away."
 	}],
 	"120": [{
 		"version_id": "Red",
@@ -10305,6 +11316,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "No number of injuries can bother Staryu. Its amazing regenerative powers return it to its previous state in half a day!"
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "As long as the center section is unharmed, this Pokémon can grow back fully even if it is chopped to bits."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "As long as the center section is unharmed, this Pokémon can grow back fully even if it is chopped to bits."
 	}],
 	"121": [{
 		"version_id": "Red",
@@ -10390,6 +11407,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It rotates its geometrically shaped body to swim through the water. It always seems to be sending out mysterious radio waves."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "The center section is named the core. People think it is communicating when it glows in seven colors."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "The center section is named the core. People think it is communicating when it glows in seven colors."
 	}],
 	"122": [{
 		"version_id": "Red",
@@ -10469,6 +11492,25 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It creates invisible walls with its pantomiming. If you don't act impressed, it will attack you with a double slap!"
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Always practices its pantomime act. It makes enemies believe something exists that really doesn't."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Always practices its pantomime act. It makes enemies believe something exists that really doesn't."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The broadness of its hands may be no coincidence—many scientists believe its palms became enlarged specifically for pantomiming."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It's known for its top-notch pantomime skills. It protects itself from all sorts of attacks by emitting auras from its fingers to create walls."
+	}],
+	"122galar": [{
+		"version_id": "Sword",
+		"flavor_text": "Its talent is tap-dancing. It can also manipulate temperatures to create a floor of ice, which this Pokémon can kick up to use as a barrier."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It can radiate chilliness from the bottoms of its feet. It'll spend the whole day tap-dancing on a frozen floor."
 	}],
 	"123": [{
 		"version_id": "Red",
@@ -10554,6 +11596,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Some call it a ninja. Its movements— imperceptibly quick—are sufficient to cleave the air in two. It's very popular in Alola."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Leaps out of tall grass and slices prey with its scythes. The movement looks like that of a ninja."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Leaps out of tall grass and slices prey with its scythes. The movement looks like that of a ninja."
 	}],
 	"124": [{
 		"version_id": "Red",
@@ -10633,6 +11681,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its strange cries sound like human language. There are some musicians who compose songs for Jynx to sing."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Appears to move to a rhythm of its own, as if it were dancing. It wiggles its hips as it walks."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Appears to move to a rhythm of its own, as if it were dancing. It wiggles its hips as it walks."
 	}],
 	"125": [{
 		"version_id": "Red",
@@ -10718,6 +11772,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "While it's often blamed for power outages, the truth is the cause of outages is more often an error on the part of the electric company."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "If a major power outage occurs, it is certain that this Pokémon has eaten electricity at a power plant."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "If a major power outage occurs, it is certain that this Pokémon has eaten electricity at a power plant."
 	}],
 	"126": [{
 		"version_id": "Red",
@@ -10803,6 +11863,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The hotter the place, the better they feel. Magmar in Alola are said to be hardier than those in other areas."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Born in an active volcano. Its body is always cloaked in flames, so it looks like a big ball of fire."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Born in an active volcano. Its body is always cloaked in flames, so it looks like a big ball of fire."
 	}],
 	"127": [{
 		"version_id": "Red",
@@ -10888,6 +11954,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Although it's tough, it can't handle cold well. When night falls, it buries itself in leafage and sleeps."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Grips its prey in its pincers and squeezes hard! It can't move if it's cold, so it lives in warm places."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Grips its prey in its pincers and squeezes hard! It can't move if it's cold, so it lives in warm places."
   }],
   "127mega": [{
 		"version_id": "Sun",
@@ -10901,7 +11973,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It zips around at blistering speeds, looking for an opening to skewer its opponent on its giant pincers."
-	}],
+		}, {
+			"version_id": "Let's Go Pikachu",
+			"flavor_text": "With its vaunted horns, it can lift an opponent 10 times heavier than itself and fly about with ease."
+		}, {
+			"version_id": "Let's Go Eevee",
+			"flavor_text": "With its vaunted horns, it can lift an opponent 10 times heavier than itself and fly about with ease."
+		}],
 	"128": [{
 		"version_id": "Red",
 		"flavor_text": "When it targets an enemy, it charges furiously while whipping its body with its long tails."
@@ -10986,6 +12064,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The climate seems to be related to the reason Tauros in Alola are a little calmer than those in other regions."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A rowdy Pokémon with a lot of stamina. Once running, it won't stop until it hits something."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A rowdy Pokémon with a lot of stamina. Once running, it won't stop until it hits something."
 	}],
 	"129": [{
 		"version_id": "Red",
@@ -11071,6 +12155,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Thanks to their strong hold on life, dirty water doesn't bother them at all. They live in waters all over the world!"
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Famous for being very unreliable. It can be found swimming in seas, lakes, rivers and shallow puddles."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Famous for being very unreliable. It can be found swimming in seas, lakes, rivers and shallow puddles."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It is virtually worthless in terms of both power and speed. It is the most weak and pathetic Pokémon in the world."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This weak and pathetic Pokémon gets easily pushed along rivers when there are strong currents."
 	}],
 	"130": [{
 		"version_id": "Red",
@@ -11156,6 +12252,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The energy from evolution stimulated its brain cells strongly, causing it to become very ferocious."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "Once it begins to rampage, a Gyarados will burn everything down, even in a harsh storm."
   }],
   "130mega": [{
 		"version_id": "Sun",
@@ -11169,6 +12277,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It zooms out of the water at Mach speeds. Even large ships caught in its path are split cleanly in two!"
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Although it obeys its instinctive drive to destroy everything within its reach, it will respond to orders from a Trainer it truly trusts."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Although it obeys its instinctive drive to destroy everything within its reach, it will respond to orders from a Trainer it truly trusts."
 	}],
 	"131": [{
 		"version_id": "Red",
@@ -11254,6 +12368,25 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "They've been so cherished that there's now an overabundance. The fish Pokémon population has declined in waters with too many Lapras."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A gentle soul that can understand human speech. It can ferry people across the sea on its back."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A gentle soul that can understand human speech. It can ferry people across the sea on its back."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Crossing icy seas is no issue for this cold-resistant Pokémon. Its smooth skin is a little cool to the touch."
+	}],
+	"131gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Over 5,000 people can ride on its shell at once. And it's a very comfortable ride, without the slightest shaking or swaying."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It surrounds itself with a huge ring of gathered ice particles. It uses the ring to smash any icebergs that might impede its graceful swimming."
 	}],
 	"132": [{
 		"version_id": "Red",
@@ -11339,6 +12472,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It transforms into whatever it sees. If the thing it's transforming into isn't right in front of it, Ditto relies on its memory—so sometimes it fails."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "When it spots an enemy, its body transfigures into an almost-perfect copy of its opponent."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "When it spots an enemy, its body transfigures into an almost-perfect copy of its opponent."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When it encounters another Ditto, it will move faster than normal to duplicate that opponent exactly."
 	}],
 	"133": [{
 		"version_id": "Red",
@@ -11424,10 +12569,29 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its genes are easily influenced by its surroundings. Even its face starts to look like that of its Trainer."
+  }, {
+	  "version_id": "Let's Go Pikachu",
+	  "flavor_text": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution."
+  }, {
+	  "version_id": "Let's Go Eevee",
+	  "flavor_text": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "It has the ability to alter the composition of its body to suit its surrounding environment."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions."
   }],
   "133starter": [{
 		"version_id": "Let's Go",
 		"flavor_text": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution."
+	}],
+	"133gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Gigantamax energy upped the fluffiness of the fur around Eevee's neck. The fur will envelop a foe, capturing its body and captivating its mind."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Having gotten even friendlier and more innocent, Eevee tries to play with anyone around, only to end up crushing them with its immense body."
 	}],
 	"134": [{
 		"version_id": "Red",
@@ -11513,6 +12677,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It detects nearby moisture with its fin. When its fin begins trembling rapidly, that means rain will fall in a few hours."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its cell structure is similar to water molecules. It melts into the water and becomes invisible."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its cell structure is similar to water molecules. It melts into the water and becomes invisible."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its body’s cellular structure is similar to the molecular composition of water. It can melt invisibly in water."
 	}],
 	"135": [{
 		"version_id": "Red",
@@ -11598,6 +12774,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its fur stands on end, becoming like needles it fires at enemies. Once they're weakened, it finishes them off with a 10,000 volt shock."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A sensitive Pokémon that easily becomes sad or angry. Every time its mood changes, it charges power."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A sensitive Pokémon that easily becomes sad or angry. Every time its mood changes, it charges power."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "If it is angered or startled, the fur all over its body bristles like sharp needles that pierce foes."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts."
 	}],
 	"136": [{
 		"version_id": "Red",
@@ -11683,6 +12871,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The flame chamber inside its body ignites when Flareon gets agitated, reaching temperatures of up to 1,650 degrees Fahrenheit."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It has a flame chamber inside its body. It inhales, then breathes out fire that is over 3,000 degrees Fahrenheit."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It has a flame chamber inside its body. It inhales, then breathes out fire that is over 3,000 degrees Fahrenheit."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Once it has stored up enough heat, this Pokémon’s body temperature can reach up to 1,700 degrees Fahrenheit."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees Fahrenheit."
 	}],
 	"137": [{
 		"version_id": "Red",
@@ -11768,6 +12968,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It was built 20 years ago by scientists who dreamed of exploring space. Their dreams have yet to come true."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "The only Pokémon that people anticipate can fly into space. None has managed the feat yet, however."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "The only Pokémon that people anticipate can fly into space. None has managed the feat yet, however."
 	}],
 	"138": [{
 		"version_id": "Red",
@@ -11847,6 +13053,18 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It was restored from an ancient fossil. Those Helix Fossils are excavated from areas that were once oceans long, long ago."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Omanyte lived in the seas of antiquity. Its fossils have been found bearing bite marks from Archeops, so apparently Archeops preyed on it."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Omanyte lived in the seas of antiquity. Its fossils have been found bearing bite marks from Archeops, so apparently Archeops preyed on it."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It was restored from an ancient fossil. Those Helix Fossils are excavated from areas that were once oceans long, long ago."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "An ancient Pokémon that was recovered from a fossil. It swam by cleverly twisting its 10 tentacles about."
 	}],
 	"139": [{
 		"version_id": "Red",
@@ -11926,6 +13144,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It wraps its prey in its tentacles to immobilize them and then finishes them off with its sharp fangs."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its sharp beak rings its mouth. Its shell was too big for it to move freely, so it became extinct."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its sharp beak rings its mouth. Its shell was too big for it to move freely, so it became extinct."
 	}],
 	"140": [{
 		"version_id": "Red",
@@ -12005,6 +13229,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This Pokémon became extinct everywhere, except in a few areas. It protects itself with its hard shell."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A Pokémon that was recovered from a fossil. It used the eyes on its back while hiding on the seafloor."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A Pokémon that was recovered from a fossil. It used the eyes on its back while hiding on the seafloor."
 	}],
 	"141": [{
 		"version_id": "Red",
@@ -12084,6 +13314,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It swims at speeds of roughly 29 knots, quickly closing in on its prey and slashing into them with its scythes to finish them off."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A slim and fast swimmer. It sliced its prey with its sharp sickles and drank the body fluids."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A slim and fast swimmer. It sliced its prey with its sharp sickles and drank the body fluids."
 	}],
 	"142": [{
 		"version_id": "Red",
@@ -12169,6 +13405,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It flew through the open skies over the ancient continent as if they were its own. When it touched ground, its walk was weak and slow."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A savage Pokémon that died out in ancient times. It was resurrected using DNA taken from amber."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A savage Pokémon that died out in ancient times. It was resurrected using DNA taken from amber."
 	}],
 	"142mega": [{
 		"version_id": "Sun",
@@ -12182,7 +13424,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Mega Evolution awakened some dormant genes, bringing back the sharp rocks that once covered Aerodactyl's entire body."
-	}],
+		}, {
+			"version_id": "Let's Go Pikachu",
+			"flavor_text": "The power of Mega Evolution has completely restored its genes. The rocks on its body are harder than diamond."
+		}, {
+			"version_id": "Let's Go Eevee",
+			"flavor_text": "The power of Mega Evolution has completely restored its genes. The rocks on its body are harder than diamond."
+		}],
 	"143": [{
 		"version_id": "Red",
 		"flavor_text": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
@@ -12267,6 +13515,25 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It has no interest in anything other than eating. Even if you climb up on its stomach while it's napping, it doesn't seem to mind at all!"
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Will eat anything, even if the food happens to be a little moldy. It never gets an upset stomach."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Will eat anything, even if the food happens to be a little moldy. It never gets an upset stomach."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pokémon's stomach is so strong, even eating moldy or rotten food will not affect it."
+	}],
+	"143gmax": [{
+		"version_id": "Sword",
+		"flavor_text": "Gigantamax energy has affected stray seeds and even pebbles that got stuck to Snorlax, making them grow to a huge size."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Terrifyingly strong, this Pokémon is the size of a mountain—and moves about as much as one as well."
 	}],
 	"144": [{
 		"version_id": "Red",
@@ -12340,6 +13607,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow."
 	}],
 	"145": [{
 		"version_id": "Red",
@@ -12413,6 +13686,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down."
 	}],
 	"146": [{
 		"version_id": "Red",
@@ -12486,6 +13765,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red."
 	}],
 	"147": [{
 		"version_id": "Red",
@@ -12571,6 +13856,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It sheds its skin—almost on a daily basis—and grows larger. Its skin is soft just after it's been shed."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Long thought to be a myth, this Pokémon's existence was only recently confirmed by a fisherman who caught one."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Long thought to be a myth, this Pokémon's existence was only recently confirmed by a fisherman who caught one."
 	}],
 	"148": [{
 		"version_id": "Red",
@@ -12656,6 +13947,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Some say that if you see it at the start of the year, flying through the sky and twisting its body, you'll be healthy all year long."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "According to a witness, its body was surrounded by a strange aura that gave it a mystical look."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "According to a witness, its body was surrounded by a strange aura that gave it a mystical look."
 	}],
 	"149": [{
 		"version_id": "Red",
@@ -12741,6 +14038,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "You'll often hear tales of this kindhearted Pokémon rescuing people or Pokémon that are drowning."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It is said that this Pokémon lives somewhere in the sea and that it flies. However, these are only rumors."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It is said that this Pokémon lives somewhere in the sea and that it flies. However, these are only rumors."
 	}],
 	"150": [{
 		"version_id": "Red",
@@ -12814,6 +14117,26 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon’s body, they failed to endow Mewtwo with a compassionate heart."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its DNA is almost the same as Mew's. However, its size and disposition are vastly different."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its DNA is almost the same as Mew's. However, its size and disposition are vastly different."
+	}],
+	"150mega-x": [{
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint a hundred meters in two seconds flat!"
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint a hundred meters in two seconds flat!"
+	}],
+	"150mega-y": [{
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens."
 	}],
 	"151": [{
 		"version_id": "Red",
@@ -12887,6 +14210,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "When viewed through a microscope, this Pokémon's short, fine, delicate hair can be seen."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "When viewed through a microscope, this Pokémon's short, fine, delicate hair can be seen."
 	}],
 	"152": [{
 		"version_id": "Gold",

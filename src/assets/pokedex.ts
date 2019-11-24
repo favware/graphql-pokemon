@@ -20694,6 +20694,9 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'polteageist-chipped',
         num: 855,
         types: [ 'Ghost' ],
+        baseSpecies: 'polteageist',
+        forme: 'chipped',
+        formeLetter: 'C',
         genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 60, atk: 65, def: 65, spa: 134, spd: 114, spe: 70,
@@ -21157,6 +21160,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       {
         species: 'eiscue-noice',
         baseSpecies: 'Eiscue',
+        forme: 'noice',
+        formeLetter: 'N',
         num: 875,
         types: [ 'Ice' ],
         genderRatio: { male: 0.50, female: 0.50 },

@@ -33,17 +33,17 @@ jobs:
       run: sudo snap install hub --classic
     - name: Commit any changes
       run: |
-        GITHUB_REPO_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+        GITHUB_REPO_URL="https://${GITHUB_ACTOR}:${{ secrets.BOT_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git";
+        hub config --global hub.protocol https;
+        hub config --global user.email "${GITHUB_EMAIL}";
+        hub config --global user.name "${GITHUB_USER}";
+        hub remote set-url origin "https://github.com/favware/graphql-pokemon";
         git config --local user.email "${GITHUB_EMAIL}";
         git config --local user.name "${GITHUB_USER}";
-        git checkout -b favware-bot/update-smogon-formats/`date +%F-%H-%M`;
-        git commit -sam "feat: update smogon formats";
-        hub config --global hub.protocol https;
-        hub config --global user.email ${GITHUB_EMAIL};
-        hub config --global user.name ${GITHUB_USER};
-        hub remote set-url origin ${GITHUB_REPO_URL}
+        git checkout -b favware-bot/update-smogon-tierlists/`date +%F-%H-%M`;
+        git commit -sam "feat: update smogon tierlists";
         hub pull-request -p -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna";
       env:
-        GITHUB_USER: ${GITHUB_ACTOR}
+        GITHUB_USER: Favware-bot
         GITHUB_EMAIL: favwarebot@gmail.com
         GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}

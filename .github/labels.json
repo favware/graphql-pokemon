@@ -70,6 +70,11 @@
     "color": "4cce4a"
   },
   {
+    "name": "Meta: Smogon Tier Update",
+    "description": "PRs update the Smogon tier list.",
+    "color": "4cce4a"
+  },
+  {
     "name": "Bug: Fixed",
     "description": "Issues that report bugs and have been fixed.",
     "color": "00fa9a"

@@ -24,11 +24,18 @@ jobs:
       run: yarn
     - name: Run Updater
       run: yarn scripts:formatsupdater
+    - name: Install Hub
+      run: sudo apt install hub -y
     - name: Commit any changes
       run: |
-        GITHUB_REPO_URL="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git";
-        git config --local user.email "favwarebot@gmail.com";
-        git config --local user.name "Favware-bot";
+        GITHUB_REPO_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+        git config --local user.email "${GITHUB_EMAIL}";
+        git config --local user.name "${GITHUB_USER}";
         git checkout --branch favware-bot/feat/update-smogon-formats;
         git commit -sam "feat: update smogon formats";
         git push "${GITHUB_REPO_URL}" HEAD:favware-bot/feat/update-smogon-formats;
+        hub pull-request -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna"
+      env:
+        GITHUB_USER: ${GITHUB_ACTOR}
+        GITHUB_EMAIL: favwarebot@gmail.com
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

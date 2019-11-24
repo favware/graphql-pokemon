@@ -30,7 +30,7 @@ jobs:
     - name: Run Updater
       run: yarn scripts:formatsupdater
     - name: Install Hub
-      run: snap install hub --classic
+      run: sudo snap install hub --classic
     - name: Commit any changes
       run: |
         GITHUB_REPO_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";

@@ -57,11 +57,9 @@ __***Query for Pokemon data using GraphQL***__
 Install client side typings with [yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com/):
 
 ```sh
-# graphql is a peer dependency for type information
+yarn add -D @favware/graphql-pokemon
 
-yarn add -D graphql @favware/graphql-pokemon
-
-# npm install -D graphql @favware/graphql-pokemon
+# npm install -D @favware/graphql-pokemon
 ```
 
 * * *
@@ -69,10 +67,11 @@ yarn add -D graphql @favware/graphql-pokemon
 # Usage
 
 ```ts
-import { DetailsEntry, Query } from '@favware/graphql-pokemon';
+import { Query } from '@favware/graphql-pokemon';
+// const { Query } = require('@favware/graphql-pokemon');
 
-type fetchResponse<T> = {
-  data: Record<keyof Query, T>
+interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
+	data: Record<K, Omit<Query[K], '__typename'>>;
 }
 
 fetch('https://favware.tech/api', {
@@ -81,10 +80,19 @@ fetch('https://favware.tech/api', {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    query: '{getPokemonDetails(pokemon:pikachu skip:0 take:4 reverse:true)}'
+    query: `
+      {
+        getPokemonDetails(pokemon: dragonite skip: 0 take: 2 reverse: true) {
+            sprite
+            num
+            species
+            color
+        }
+      }
+    `
   })
 })
-.then(res => res.json() as fetchResponse<DetailsEntry>)
+.then(res => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
 .then(json => console.log(json.data))
 ```
 
@@ -92,4 +100,4 @@ fetch('https://favware.tech/api', {
 
 For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api).
 
-**Please note that if you visited my site normally before a cache-clear refresh (Control + F5 / Command + Shift + R) might be required due to the Service Worker caching the regular site data!**
+**Please note that if you visited my site normally before a cache-clear refresh (`Control + F5` / `Command + Shift + R`) might be required due to the Service Worker caching the regular site data!**

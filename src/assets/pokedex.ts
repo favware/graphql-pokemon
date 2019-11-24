@@ -1,7 +1,8 @@
 import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
 
-const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
+/** The entire PokéDex of Pokémon */
+export default new GraphQLCollection<string, Pokemon.DexEntry>(
   [
     [
       'bulbasaur',
@@ -22895,5 +22896,3 @@ const pokedex = new GraphQLCollection<string, Pokemon.DexEntry>(
     ]
   ],
 );
-
-export default pokedex;

@@ -1,9 +1,10 @@
 // @ts-nocheck
+/*eslint max-len: ["error", { "code": 350 }]*/
 
 import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
 
-/*eslint max-len: ["error", { "code": 350 }]*/
+/** The learnsets in Pokémon */
 export default new GraphQLCollection<string, Pokemon.RecordStringArray>(
   [
     [

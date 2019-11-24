@@ -2,7 +2,8 @@
 import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
 
-const abilities = new GraphQLCollection<string, Pokemon.Ability>(
+/** The abilities in Pokémon */
+export default new GraphQLCollection<string, Pokemon.Ability>(
   [
     [
       'adaptability',
@@ -1981,5 +1982,3 @@ const abilities = new GraphQLCollection<string, Pokemon.Ability>(
     ]
   ],
 );
-
-export default abilities;

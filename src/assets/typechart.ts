@@ -1,7 +1,8 @@
 import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
 
-const typechart = new GraphQLCollection<string, Pokemon.TypeMatchups>(
+/** The type effectiveness typechart in Pokémon */
+export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
   [
     [
       'bug', {
@@ -763,5 +764,3 @@ const typechart = new GraphQLCollection<string, Pokemon.TypeMatchups>(
     } ]
   ]
 );
-
-export default typechart;

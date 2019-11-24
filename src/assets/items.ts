@@ -1,7 +1,8 @@
 import GraphQLCollection from '../utils/GraphQLCollection';
 import { Pokemon } from '../utils/pokemon';
 
-const items = new GraphQLCollection<string, Pokemon.Item>(
+/** The item in Pokémon */
+export default new GraphQLCollection<string, Pokemon.Item>(
   [
     [
       'abomasite',
@@ -3425,5 +3426,3 @@ const items = new GraphQLCollection<string, Pokemon.Item>(
     ]
   ],
 );
-
-export default items;

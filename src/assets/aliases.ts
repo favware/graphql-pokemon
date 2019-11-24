@@ -1,6 +1,7 @@
 import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
 
+/** Aliases for Smogon tiers */
 export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>(
   [
     [ 'randbats', { alias: 'randbats', tier: 'randombattle' } ],
@@ -90,6 +91,7 @@ export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>(
   ]
 );
 
+/** Aliases for Pokémon */
 export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
   [
     [ 'maero', { alias: 'maero', name: 'Aerodactyl-Mega' } ],
@@ -1741,6 +1743,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
   ]
 );
 
+/** Aliases for Pokémon abilities */
 export const abilityAliases = new GraphQLCollection<string, Pokemon.AbilityAlias>(
   [
     [ 'ph', { alias: 'ph', ability: 'Poison Heal' } ],
@@ -1748,6 +1751,7 @@ export const abilityAliases = new GraphQLCollection<string, Pokemon.AbilityAlias
   ]
 );
 
+/** Aliases for Pokémon items */
 export const itemAliases = new GraphQLCollection<string, Pokemon.ItemAlias>(
   [
     [ 'assvest', { alias: 'assvest', item: 'Assault Vest' } ],
@@ -1778,7 +1782,7 @@ export const itemAliases = new GraphQLCollection<string, Pokemon.ItemAlias>(
   ]
 );
 
-
+/** Aliases for Pokémon moves */
 export const moveAliases = new GraphQLCollection<string, Pokemon.MoveAlias>(
   [
     [ 'bb', { alias: 'bb', move: 'Brave Bird' } ],

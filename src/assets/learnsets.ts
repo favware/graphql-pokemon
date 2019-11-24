@@ -75852,5 +75852,9 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>(
         workup: [ '7M' ],
       }
     ]
+<<<<<<< HEAD
   ]
 );
+=======
+  ]);
+>>>>>>> feat: add gen8 moves

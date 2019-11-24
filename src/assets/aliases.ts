@@ -1839,6 +1839,7 @@ export const moveAliases = new GraphQLCollection<string, Pokemon.MoveAlias>(
     [ 'tbolt', { alias: 'tbolt', move: 'Thunderbolt' } ],
     [ 'tspikes', { alias: 'tspikes', move: 'Toxic Spikes' } ],
     [ 'twave', { alias: 'twave', move: 'Thunder Wave' } ],
+    [ 'vicegrip', { alias: 'vicegrip', move: 'Vise Grip' } ],
     [ 'web', { alias: 'web', move: 'Sticky Web' } ],
     [ 'wow', { alias: 'wow', move: 'Will-O-Wisp' } ],
     [ '10mv', { alias: '10mv', move: '10,000,000 Volt Thunderbolt' } ],

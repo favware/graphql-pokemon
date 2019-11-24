@@ -14216,6 +14216,12 @@
 	}, {
 		"version_id": "Let's Go Eevee",
 		"flavor_text": "When viewed through a microscope, this Pokémon's short, fine, delicate hair can be seen."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It's very intelligent and can use an incredible variety of moves. Many believe that all other Pokémon are descendants of this one."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This mythical Pokémon is said to be extinct, but sightings of it are still being reported to this day."
 	}],
 	"152": [{
 		"version_id": "Gold",
@@ -18357,6 +18363,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Qwilfish sucks in water, inflating itself. This Pokémon uses the pressure of the water it swallowed to shoot toxic quills all at once from all over its body. It finds swimming somewhat challenging."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "When faced with a larger opponent, it swallows as much water as it can to match the opponent’s size."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The small spikes covering its body developed from scales. They inject a toxin that causes fainting."
 	}],
 	"212": [{
 		"version_id": "Gold",
@@ -19409,6 +19421,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Many people have taken up surfing because they admire how magnificently Mantine swims."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "If it builds up enough speed swimming, it can jump out above the waves and glide for over 300 feet."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "As it majestically swims, it doesn't care if Remoraid attach to it to scavenge for its leftovers."
 	}],
 	"227": [{
 		"version_id": "Gold",
@@ -25154,6 +25172,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Due to their memories of when they once lived on land, pods of them will, very rarely, wash up on shore."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It shows off by spraying jets of seawater from the nostrils above its eyes. It eats a solid ton of Wishiwashi every day."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When it sucks in a large volume of seawater, it becomes like a big, bouncy ball. It eats a ton of food daily."
 	}],
 	"321": [{
 		"version_id": "Ruby",
@@ -25221,6 +25245,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When a small Wailmer is attacked by Sharpedo or Dhelmise, its whole pod works together to protect it."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It can sometimes knock out opponents with the shock created by breaching and crashing its big body onto the water."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its immense size is the reason for its popularity. Wailord watching is a favorite sightseeing activity in various parts of the world."
 	}],
 	"322": [{
 		"version_id": "Ruby",
@@ -25642,6 +25672,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It builds nests that double as traps, lying in wait for its prey to get caught. When night falls, it digs itself a spot beneath the sand to sleep."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its nest is a sloped, bowl-like pit in the desert. Once something has fallen in, there is no escape."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It makes an inescapable conical pit and lies in wait at the bottom for prey to come tumbling down."
 	}],
 	"329": [{
 		"version_id": "Ruby",
@@ -25709,6 +25745,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It vibrates its wings to send out odd sound waves. Trainers who are with it need earplugs."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The ultrasonic waves it generates by rubbing its two wings together cause severe headaches."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "To help make its wings grow, it dissolves quantities of prey in its digestive juices and guzzles them down every day."
 	}],
 	"330": [{
 		"version_id": "Ruby",
@@ -25776,6 +25818,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "People continue to have their hearts stolen by its enchanting songs and find themselves stranded in the desert."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pokémon hides in the heart of sandstorms it creates and seldom appears where people can see it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It is nicknamed the Desert Spirit because the flapping of its wings sounds like a woman singing."
 	}],
 	"331": [{
 		"version_id": "Ruby",
@@ -26161,6 +26209,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Lunatone becomes active around the time of the full moon. Instead of walking, it moves by floating in midair. The Pokémon’s intimidating red eyes cause all those who see it to become transfixed with fear."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The phase of the moon apparently has some effect on its power. It's active on the night of a full moon."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It was discovered at the site of a meteor strike 40 years ago. Its stare can lull its foes to sleep."
 	}],
 	"338": [{
 		"version_id": "Ruby",
@@ -26216,6 +26270,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Sunlight is the source of Solrock’s power. It is said to possess the ability to read the emotions of others. This Pokémon gives off intense heat while rotating its body."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "When it rotates itself, it gives off light similar to the sun, thus blinding its foes."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Solar energy is the source of its power, so it is strong during the daytime. When it spins, its body shines."
 	}],
 	"339": [{
 		"version_id": "Ruby",
@@ -30938,6 +30998,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "There was once an incident in which a man took a trip riding a Drifblim, only to go missing."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Born deep underground, it comes aboveground and becomes a pupa once it has finished eating the surrounding soil."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow."
 	}],
 	"427": [{
 		"version_id": "Diamond",
@@ -30984,6 +31050,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The reason it keeps one ear rolled up is so it can launch a swift counterattack if it's attacked by an enemy."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Even sealed in its shell, it can move freely. Hard and fast, it has outstanding destructive power."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It will not stay still, even while it's a pupa. It already has arms and legs under its solid shell."
 	}],
 	"428": [{
 		"version_id": "Diamond",
@@ -31030,6 +31102,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It's notably wary and has a dislike of fighting, but at the same time, it can deliver powerful kicks with its lithe legs."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "The quakes caused when it walks make even great mountains crumble and change the surrounding terrain."
   }],
   "428mega": [{
 		"version_id": "Ultra Sun",
@@ -31519,6 +31597,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When this gifted mimic surprises an opponent, Mime Jr. feels so happy that it ends up forgetting it was imitating something."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It mimics everyone it sees, but it puts extra effort into copying the graceful dance steps of Mr. Rime as practice."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It looks for a Mr. Rime that's a good dancer and carefully copies the Mr. Rime's steps like an apprentice."
 	}],
 	"440": [{
 		"version_id": "Diamond",
@@ -32029,6 +32113,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "It enshrouds itself with sand to protect itself from germs. It does not enjoy getting wet."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It moves through the sands with its mouth open, swallowing sand along with its prey. It gets rid of the sand by spouting it from its nose."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pokémon is active during the day and passes the cold desert nights burrowed snugly into the sand."
 	}],
 	"450": [{
 		"version_id": "Diamond",
@@ -32069,6 +32159,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "It blasts internally stored sand from ports on its body to create a towering twister for attack."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Stones can get stuck in the ports on their bodies. Dwebble help dislodge such stones, so Hippowdon look after these Pokémon."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When roused to violence by its rage, it spews out the quantities of sand it has swallowed and whips up a sandstorm."
 	}],
 	"451": [{
 		"version_id": "Diamond",
@@ -32419,6 +32515,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Mantyke are friendly toward people and will approach boats closely. The patterns on their backs differ depending on their habitat."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Mantyke living in Galar seem to be somewhat sluggish. The colder waters of the seas in this region may be the cause."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It swims along with a school of Remoraid, and they'll all fight together to repel attackers."
 	}],
 	"459": [{
 		"version_id": "Diamond",
@@ -33373,6 +33475,47 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "One boy’s invention led to the development of many different machines that take advantage of Rotom’s unique capabilities."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "With a body made of plasma, it can inhabit all sorts of machines. It loves to surprise others."
+	}],
+	"479heat": [{
+		"version_id": "Sword",
+		"flavor_text": "This Rotom has possessed a convection microwave oven that uses a special motor. It also has a flair for manipulating flames."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This form of Rotom enjoys making mischief by turning up the heat. It will gleefully burn your favorite outfit."
+	}],
+	"479wash": [{
+		"version_id": "Sword",
+		"flavor_text": "This form of Rotom enjoys coming up with water-based pranks. Be careful with it if you don’t want your room flooded."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Rotom has possessed a washing machine that uses a special motor. It blasts out water to get enemies to back down."
+	}],
+	"479frost": [{
+		"version_id": "Sword",
+		"flavor_text": "Rotom assumes this form when it takes over a refrigerator powered by a special motor. It battles by spewing cold air."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When it’s like this, Rotom likes to play pranks that are freezing cold. You may find it’s turned the bath you just filled to solid ice!"
+	}],
+	"479fan": [{
+		"version_id": "Sword",
+		"flavor_text": "In this form, Rotom applies its new power over wind to its love of pranks. It will happily blow away any important documents it can find."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Rotom has taken over a fan that has a special motor. Its gusts of wind blow its opponents away!"
+	}],
+	"479mow": [{
+		"version_id": "Sword",
+		"flavor_text": "This is Rotom after it’s seized control of a lawn mower that has a special motor. As it mows down grass, it scatters the clippings everywhere."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "In this form, Rotom focuses its antics on plants. Any flowers you were growing are going to get mowed down."
 	}],
 	"480": [{
 		"version_id": "Diamond",
@@ -35627,6 +35770,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100 degrees Fahrenheit."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It derives its power from fire burning inside its body. If the fire dwindles, this Pokémon will immediately fall asleep."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This popular symbol of good fortune will never fall over in its sleep, no matter how it's pushed or pulled."
+	}],
+	"554galar": [{
+		"version_id": "Sword",
+		"flavor_text": "It lived in snowy areas for so long that its fire sac cooled off and atrophied. It now has an organ that generates cold instead."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The colder they get, the more energetic they are. They freeze their breath to make snowballs, using them as ammo for playful snowball fights."
 	}],
 	"555": [{
 		"version_id": "Black",
@@ -35652,6 +35808,33 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Its internal fire burns at 2,500 degrees Fahrenheit, making enough power that it can destroy a dump truck with one punch."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The thick arms of this hot-blooded Pokémon can deliver punches capable of obliterating a dump truck."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pokémon's power level rises along with the temperature of its fire, which can reach 2,500 degrees Fahrenheit."
+	}],
+	"555zen": [{
+		"version_id": "Sword",
+		"flavor_text": "Through meditation, it calms its raging spirit and hones its psychic powers."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When wounded, it stops moving. It goes as still as stone to meditate, sharpening its mind and spirit."
+	}],
+	"555galar": [{
+		"version_id": "Sword",
+		"flavor_text": "On days when blizzards blow through, it comes down to where people live. It stashes food in the snowball on its head, taking it home for later."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Though it has a gentle disposition, it's also very strong. It will quickly freeze the snowball on its head before going for a headbutt."
+	}],
+	"555zen-galar": [{
+		"version_id": "Sword",
+		"flavor_text": "Anger has reignited its atrophied flame sac. This Pokémon spews fire everywhere as it rampages indiscriminately."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Darmanitan takes this form when enraged. It won’t stop spewing flames until its rage has settled, even if its body starts to melt."
 	}],
 	"556": [{
 		"version_id": "Black",
@@ -35845,7 +36028,20 @@
     }, {
         "version_id": "Shield",
         "flavor_text": "It's said that this Pokémon was formed when an ancient clay tablet was drawn to a vengeful spirit."
-    }],
+    }, {
+		"version_id": "Sword",
+		"flavor_text": "It wanders through ruins by night, carrying a mask that's said to have been the face it had when it was still human."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The spirit of a person from a bygone age became this Pokémon. It rambles through ruins, searching for someone who knows its face."
+	}],
+	"562galar": [{
+		"version_id": "Sword",
+		"flavor_text": "A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask's dark power."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It's said that this Pokémon was formed when an ancient clay tablet was drawn to a vengeful spirit."
+	}],
 	"563": [{
 		"version_id": "Black",
 		"flavor_text": "It has been said that they swallow those who get too close and turn them into mummies. They like to eat gold nuggets."
@@ -35870,6 +36066,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Grave robbers who mistake them for real coffins and get too close end up trapped inside their bodies."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pokémon has a body of sparkling gold. People say it no longer remembers that it was once human."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "There are many depictions of Cofagrigus decorating ancient tombs. They're symbols of the wealth that kings of bygone eras had."
 	}],
 	"564": [{
 		"version_id": "Black",
@@ -36745,6 +36947,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Using the invisible poison spikes on its veillike arms and legs, it paralyzes its enemies and causes them to drown."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It envelops its prey in its veillike arms and draws it down to the deeps, five miles below the ocean's surface."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Legend has it that the residents of a sunken ancient city changed into these Pokémon."
+	}],
+	"592female": [{
+		"version_id": "Sword",
+		"flavor_text": "It envelops its prey in its veillike arms and draws it down to the deeps, five miles below the ocean's surface."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its thin, veillike arms have tens of thousands of poisonous stingers. Females have slightly longer stingers."
 	}],
 	"593": [{
 		"version_id": "Black",
@@ -36776,6 +36991,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Fishermen are terrified of Jellicent. It's rumored to drag them into the sea and steal their lives away."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Most of this Pokémon's body composition is identical to sea water. It makes sunken ships its lair."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Whenever a full moon hangs in the night sky, schools of Jellicent gather near the surface of the sea, waiting for their prey to appear."
+	}],
+	"593female": [{
+		"version_id": "Sword",
+		"flavor_text": "These Pokémon have body compositions that are mostly identical to seawater. They make their lairs from sunken ships."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The crown on its head gets bigger and bigger as it absorbs more and more of the life-force of other creatures."
 	}],
 	"594": [{
 		"version_id": "Black",
@@ -37225,6 +37453,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "They mark their territory by leaving gashes in trees with their tusks. If a tusk breaks, a new one grows in quickly."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "These Pokémon nest in the ground and use their tusks to crush hard berries. Crushing berries is also how they test each other's strength."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "They play with each other by knocking their large tusks together. Their tusks break sometimes, but they grow back so quickly that it isn't a concern."
 	}],
 	"611": [{
 		"version_id": "Black",
@@ -37250,6 +37484,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "A broken tusk will not grow back, so it diligently sharpens its tusks on river rocks after the end of a battle."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "After battle, this Pokémon carefully sharpens its tusks on river rocks. It needs to take care of its tusks—if one breaks, it will never grow back."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its skin is as hard as a suit of armor. Fraxure's favorite strategy is to tackle its opponents, stabbing them with its tusks at the same time."
 	}],
 	"612": [{
 		"version_id": "Black",
@@ -37275,6 +37515,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Their sturdy tusks will stay sharp even if used to cut steel beams. These Pokémon are covered in hard armor."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its resilient tusks are its pride and joy. It licks up dirt to take in the minerals it needs to keep its tusks in top condition."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "While usually kindhearted, it can be terrifying if angered. Tusks that can slice through steel beams are how Haxorus deals with its adversaries."
 	}],
 	"613": [{
 		"version_id": "Black",
@@ -37840,6 +38086,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "It draws in air through its tail, transforms it into fire, and uses it like a tongue. It melts Durant and eats them."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "There's a hole in its tail that allows it to draw in the air it needs to keep its fire burning. If the hole gets blocked, this Pokémon will fall ill."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "A flame serves as its tongue, melting through the hard shell of Durant so that Heatmor can devour their insides."
 	}],
 	"632": [{
 		"version_id": "Black",
@@ -37865,6 +38117,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "They attack in groups, covering themselves in steel armor to protect themselves from Heatmor."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "They lay their eggs deep inside their nests. When attacked by Heatmor, they retaliate using their massive mandibles."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "With their large mandibles, these Pokémon can crunch their way through rock. They work together to protect their eggs from Sandaconda."
 	}],
 	"633": [{
 		"version_id": "Black",
@@ -37890,6 +38148,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Lacking sight, it’s unaware of its surroundings, so it bumps into things and eats anything that moves."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "When it encounters something, its first urge is usually to bite it. If it likes what it tastes, it will commit the associated scent to memory."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Because it can't see, this Pokémon is constantly biting at everything it touches, trying to keep track of its surroundings."
 	}],
 	"634": [{
 		"version_id": "Black",
@@ -37915,6 +38179,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "After it has eaten up all the food in its territory, it moves to another area. Its two heads do not get along."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "While hunting for prey, Zweilous wanders its territory, its two heads often bickering over which way to go."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Their two heads will fight each other over a single piece of food. Zweilous are covered in scars even without battling others."
 	}],
 	"635": [{
 		"version_id": "Black",
@@ -37940,6 +38210,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "It responds to movement by attacking. This scary, three-headed Pokémon devours everything in its path!"
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "There are a slew of stories about villages that were destroyed by Hydreigon. It bites anything that moves."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The three heads take turns sinking their teeth into the opponent. Their attacks won't slow until their target goes down."
 	}],
 	"636": [{
 		"version_id": "Black",
@@ -38795,6 +39071,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "If anyone dares to grab its hilt, it wraps a blue cloth around that person’s arm and drains that person’s life energy completely."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Honedge's soul once belonged to a person who was killed a long time ago by the sword that makes up Honedge's body."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The blue eye on the sword's handguard is the true body of Honedge. With its old cloth, it drains people's lives away."
 	}],
 	"680": [{
 		"version_id": "X",
@@ -38808,6 +39090,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "The complex attack patterns of its two swords are unstoppable, even for an opponent greatly accomplished at swordplay."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Honedge evolves into twins. The two blades rub together to emit a metallic sound that unnerves opponents."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The two swords employ a strategy of rapidly alternating between offense and defense to bring down their prey."
 	}],
 	"681": [{
 		"version_id": "X",
@@ -38821,6 +39109,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Apparently, it can detect the innate qualities of leadership. According to legend, whoever it recognizes is destined to become king."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its potent spectral powers allow it to manipulate others. It once used its powers to force people and Pokémon to build a kingdom to its liking."
+	}],
+	"681blade": [{
+		"version_id": "Sword",
+		"flavor_text": "This stance is dedicated to offense. It can cleave any opponent with the strength and weight of its steel blade."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Once upon a time, a king with an Aegislash reigned over the land. His Pokémon eventually drained him of life, and his kingdom fell with him."
 	}],
 	"682": [{
 		"version_id": "X",
@@ -39026,6 +39327,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "The frills on either side of its head have cells that generate electricity when exposed to sunlight."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "When spread, the frills on its head act like solar panels, generating the power behind this Pokémon's electric moves."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The sun powers this Pokémon's electricity generation. Interruption of that process stresses Helioptile to the point of weakness."
 	}],
 	"695": [{
 		"version_id": "X",
@@ -39039,6 +39346,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "It stimulates its muscles with electricity, boosting the strength in its legs and enabling it to run 100 yards in five seconds."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "A now-vanished desert culture treasured these Pokémon. Appropriately, when Heliolisk came to the Galar region, treasure came with them."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "One Heliolisk basking in the sun with its frill outspread is all it would take to produce enough electricity to power a city."
 	}],
 	"696": [{
 		"version_id": "X",
@@ -39159,6 +39472,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "In combat, Hawlucha leaps nimbly about, taking advantage of its opponents' blind spots. It's also skilled at using superb submission holds."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It drives its opponents to exhaustion with its agile maneuvers, then ends the fight with a flashy finishing move."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It always strikes a pose before going for its finishing move. Sometimes opponents take advantage of that time to counterattack."
 	}],
 	"702": [{
 		"version_id": "X",
@@ -39228,6 +39547,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its body is mostly water. If it dries out, it will die, so it's always sitting with perfect stillness in the shade."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Because most of its body is water, it will dry up if the weather becomes too arid. It's considered the weakest dragon Pokémon."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Their horns are powerful sensors. As soon as Goomy pick up any sign of enemies, they go into hiding. This is how they've survived."
 	}],
 	"705": [{
 		"version_id": "X",
@@ -39253,6 +39578,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its entire body is covered with gooey mucus that can dissolve anything. Be sure to put gloves on if you're going to touch it."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Although this Pokémon isn't very strong, its body is coated in a caustic slime that can melt through anything, so predators steer clear of it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "The lump on its back contains its tiny brain. It thinks only of food and escaping its enemies."
 	}],
 	"706": [{
 		"version_id": "X",
@@ -39278,6 +39609,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Underneath its slimy skin is a thick layer of fat, and the combination of the two makes enemies' attacks slide right off."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Sometimes it misunderstands instructions and appears dazed or bewildered. Many Trainers don't mind, finding this behavior to be adorable."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its form of offense is forcefully stretching out its horns. The strikes land 100 times harder than any blow from a heavyweight boxer."
 	}],
 	"707": [{
 		"version_id": "X",
@@ -39328,6 +39665,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "An unknown spirit came to lodge in a tree stump, creating this Pokémon. A cure-all can be made from an infusion of its green leaves."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "After a lost child perished in the forest, their spirit possessed a tree stump, causing the spirit's rebirth as this Pokémon."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "With a voice like a human child's, it cries out to lure adults deep into the forest, getting them lost among the trees."
 	}],
 	"709": [{
 		"version_id": "X",
@@ -39353,6 +39696,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This Pokémon controls trees via roots stretching from its feet, and it will attack anyone that dares to ravage the forest."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "People fear it due to a belief that it devours any who try to cut down trees in its forest, but to the Pokémon it shares its woods with, it's kind."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Small roots that extend from the tips of this Pokémon's feet can tie into the trees of the forest and give Trevenant control over them."
 	}],
 	"710": [{
 		"version_id": "X",
@@ -39392,6 +39741,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Using air of -150 degrees Fahrenheit, they freeze opponents solid. They live in herds above the snow line on mountains."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "They chill the air around them to ?150 degrees Fahrenheit, freezing the water in the air into ice that they use as armor."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pokémon lives in areas of frigid cold. It secures itself to the back of an Avalugg by freezing its feet in place."
 	}],
 	"713": [{
 		"version_id": "X",
@@ -39405,6 +39760,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "The way several Bergmite huddle on its back makes it look like an aircraft carrier made of ice."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "At high latitudes, this Pokémon can be found with clusters of Bergmite on its back as it swims among the icebergs."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "As Avalugg moves about during the day, the cracks in its body deepen. The Pokémon's body returns to a pristine state overnight."
 	}],
 	"714": [{
 		"version_id": "X",
@@ -39987,6 +40348,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Aside from its head, its body parts regenerate quickly if they're cut off. After a good night's sleep, Mareanie is back to normal."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The first symptom of its sting is numbness. The next is an itching sensation so intense that it's impossible to resist the urge to claw at your skin."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Unlike their Alolan counterparts, the Mareanie of the Galar region have not yet figured out that the branches of Corsola are delicious."
 	}],
 	"748": [{
 		"version_id": "Sun",
@@ -40000,6 +40367,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "With its 12 legs, it creates a dome to shelter within. The flow of the tides doesn't affect Toxapex in there, so it's very comfortable."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "To survive in the cold waters of Galar, this Pokémon forms a dome with its legs, enclosing its body so it can capture its own body heat."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Within the poison sac in its body is a poison so toxic that Pokémon as large as Wailord will still be suffering three days after it first takes effect."
 	}],
 	"749": [{
 		"version_id": "Sun",
@@ -40091,6 +40464,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It likes damp dark places. When night falls, the spores filling the caps of its mushrooms glow."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Pokémon living in the forest eat the delicious caps on Morelull's head. The caps regrow overnight."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Morelull live in forests that stay dark even during the day. They scatter flickering spores that put enemies to sleep."
 	}],
 	"756": [{
 		"version_id": "Sun",
@@ -40104,6 +40483,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When it starts fighting for territory with Parasect, the entire area gets completely coated in spores!"
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Its flickering spores lure in prey and put them to sleep. Once this Pokémon has its prey snoozing, it drains their vitality with its fingertips."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "If you see a light deep in a forest at night, don't go near. Shiinotic will make you fall fast asleep."
 	}],
 	"757": [{
 		"version_id": "Sun",
@@ -40221,6 +40606,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Oranguru don't get along with each other, so they're always engaging in battles of wits to decide which one is superior."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "With waves of its fan—made from leaves and its own fur—Oranguru skillfully gives instructions to other Pokémon."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It knows the forest inside and out. If it comes across a wounded Pokémon, Oranguru will gather medicinal herbs to treat it."
 	}],
 	"766": [{
 		"version_id": "Sun",
@@ -40234,6 +40625,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Berries are its weapons as well as the staple of its diet. The one that can throw a berry the farthest is the boss of the troop."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Displaying amazing teamwork, they follow the orders of their boss as they all help out in the search for their favorite berries."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Passimian live in groups of about 20, with each member performing an assigned role. Through cooperation, the group survives."
 	}],
 	"767": [{
 		"version_id": "Sun",
@@ -40312,6 +40709,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "There's danger of its going on a rampage, so its true power is sealed away beneath its control mask."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Rumor has it that the theft of top-secret research notes led to a new instance of this Pokémon being created in the Galar region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It was modeled after a mighty Pokémon of myth. The mask placed upon it limits its power in order to keep it under control."
 	}],
 	"773": [{
 		"version_id": "Sun",
@@ -40325,6 +40728,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Through the bond it formed with its Trainer, its will was strengthened, and it was able to destroy its control mask."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "A solid bond of trust between this Pokémon and its Trainer awakened the strength hidden within Silvally. It can change its type at will."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "The final factor needed to release this Pokémon's true power was a strong bond with a Trainer it trusts."
   }],
   "773bug": [{
 		"version_id": "Sun",
@@ -40338,6 +40747,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Bug type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Bug-type form."
 	}],
 	"773dark": [{
 		"version_id": "Sun",
@@ -40351,6 +40766,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Dark type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Dark-type form."
 	}],
 	"773dragon": [{
 		"version_id": "Sun",
@@ -40364,6 +40785,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Dragon type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Dragon-type form."
 	}],
 	"773electric": [{
 		"version_id": "Sun",
@@ -40377,6 +40804,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Electric type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Electric-type form"
 	}],
 	"773fairy": [{
 		"version_id": "Sun",
@@ -40390,6 +40823,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Fairy type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Fairy-type form."
 	}],
 	"773fighting": [{
 		"version_id": "Sun",
@@ -40403,6 +40842,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Fighting type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Fighting-type form."
 	}],
 	"773fire": [{
 		"version_id": "Sun",
@@ -40416,6 +40861,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Fire type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Fire-type form."
 	}],
 	"773flying": [{
 		"version_id": "Sun",
@@ -40429,6 +40880,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Flying type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Flying-type form."
 	}],
 	"773ghost": [{
 		"version_id": "Sun",
@@ -40442,6 +40899,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Ghost type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Ghost-type form."
 	}],
 	"773grass": [{
 		"version_id": "Sun",
@@ -40455,6 +40918,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Grass type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Grass-type form."
 	}],
 	"773ground": [{
 		"version_id": "Sun",
@@ -40468,6 +40937,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Ground type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Ground-type form."
 	}],
 	"773ice": [{
 		"version_id": "Sun",
@@ -40481,6 +40956,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Ice type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Ice-type form."
 	}],
 	"773poison": [{
 		"version_id": "Sun",
@@ -40494,6 +40975,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Poison type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Poison-type form."
 	}],
 	"773psychic": [{
 		"version_id": "Sun",
@@ -40507,6 +40994,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Psychic type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Psychic-type form."
 	}],
 	"773rock": [{
 		"version_id": "Sun",
@@ -40520,6 +41013,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Rock type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Rock-type form."
 	}],
 	"773steel": [{
 		"version_id": "Sun",
@@ -40533,6 +41032,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Steel type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Steel-type form."
 	}],
 	"773water": [{
 		"version_id": "Sun",
@@ -40546,6 +41051,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Thanks to its awakened powers, it can change to the Water type to match the memory it has equipped."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "It has the ability to change its type based on the memory it's holding. This is its Water-type form."
 	}],
 	"774": [{
 		"version_id": "Sun",
@@ -40585,6 +41096,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its exploding shell poses a real danger but is sensitive to moisture. On rainy days, Turtonator takes silent refuge in caves."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "Explosive substances coat the shell on its back. Enemies that dare attack it will be blown away by an immense detonation."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Eating sulfur in its volcanic habitat is what causes explosive compounds to develop in its shell. Its droppings are also dangerously explosive."
 	}],
 	"777": [{
 		"version_id": "Sun",
@@ -40598,6 +41115,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its capacity to produce electricity is somewhat limited, so it gets charged up by letting lightning strike it!"
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "With the long hairs on its back, this Pokémon takes in electricity from other electric Pokémon. It stores what it absorbs in an electric sac."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "When it's in trouble, it curls up into a ball, makes its fur spikes stand on end, and then discharges electricity indiscriminately."
 	}],
 	"778": [{
 		"version_id": "Sun",
@@ -40611,6 +41134,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "A gust of wind revealed what hides under this Pokémon's rag to a passing Trainer, who went home and died painfully that very night."
+  }, {
+	  "version_id": "Sword",
+	  "flavor_text": "It wears a rag fashioned into a Pikachu costume in an effort to look less scary. Unfortunately, the costume only makes it creepier."
+  }, {
+	  "version_id": "Shield",
+	  "flavor_text": "There was a scientist who peeked under Mimikyu's old rag in the name of research. The scientist died of a mysterious disease."
   }],
   "778busted": [{
 		"version_id": "Sun",
@@ -40624,6 +41153,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "There will be no forgiveness for any who reveal that it was pretending to be Pikachu. It will bring the culprit down, even at the cost of its own life."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Its disguise made from an old rag allowed it to avoid an attack, but the impact broke the neck of the disguise. Now everyone knows it's a Mimikyu."
 	}],
 	"778busted-totem": [{
 		"version_id": "Sun",
@@ -40663,6 +41198,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It appears in towns and plays with the children. Drampa will protect kids when they're in danger, so their moms don't have to worry."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The mountains it calls home are nearly two miles in height. On rare occasions, it descends to play with the children living in the towns below."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Drampa is a kind and friendly Pokémon—up until it's angered. When that happens, it stirs up a gale and flattens everything around."
 	}],
 	"781": [{
 		"version_id": "Sun",
@@ -40676,6 +41217,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its chain-like green seaweed can stretch outward for hundreds of yards. For some reason, it gets along well with Skrelp."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "After a piece of seaweed merged with debris from a sunken ship, it was reborn as this ghost Pokémon."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "After lowering its anchor, it waits for its prey. It catches large Wailord and drains their life-force."
 	}],
 	"782": [{
 		"version_id": "Sun",
@@ -40689,6 +41236,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It will never show an enemy its back in battle. Ancient warriors liked Jangmo-o for its valiant disposition and made it one of their own."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "They learn to fight by smashing their head scales together. The dueling strengthens both their skills and their spirits."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Jangmo-o strikes its scales to communicate with others of its kind. Its scales are actually fur that's become as hard as metal."
 	}],
 	"783": [{
 		"version_id": "Sun",
@@ -40702,6 +41255,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The scales it sheds can be molded and processed to make pots and pans. They conduct heat well, so they're a popular item."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "The scaleless, scarred parts of its body are signs of its strength. It shows them off to defeated opponents."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Before attacking its enemies, it clashes its scales together and roars. Its sharp claws shred the opposition."
 	}],
 	"784": [{
 		"version_id": "Sun",
@@ -40715,6 +41274,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It battles valiantly with its fists, which are armored in steel scales. Kommo-o specializes in uppercuts."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "It clatters its tail scales to unnerve opponents. This Pokémon will battle only those who stand steadfast in the face of this display."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "Certain ruins have paintings of ancient warriors wearing armor made of Kommo-o scales."
 	}],
 	"785": [{
 		"version_id": "Sun",

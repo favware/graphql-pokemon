@@ -14044,6 +14044,31 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         color: 'White',
         evos: [ 'jellicent' ],
         eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'frillishfemale' ],
+      }
+    ],
+    [
+      'frillishfemale',
+      {
+        species: 'frillish-female',
+        num: 592,
+        baseSpecies: 'frillish',
+        forme: 'female',
+        formeLetter: 'F',
+        types: [ 'Water', 'Ghost' ],
+        genderRatio: { male: 0, female: 1 },
+        baseStats: {
+          hp: 55, atk: 40, def: 50, spa: 65, spd: 85, spe: 40,
+        },
+        abilities: { first: 'Water Absorb', second: 'Cursed Body', hidden: 'Damp' },
+        heightm: 1.2,
+        weightkg: 33,
+        color: 'White',
+        evos: [ 'jellicent' ],
+        eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'frillish' ],
+        specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/frillish-f.gif',
+        specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/frillish-f.gif',
       }
     ],
     [
@@ -14063,6 +14088,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         prevo: 'frillish',
         evoLevel: 40,
         eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'jellicentfemale' ],
+      }
+    ],
+    [
+      'jellicentfemale',
+      {
+        species: 'jellicent-female',
+        num: 593,
+        baseSpecies: 'jellicent',
+        forme: 'female',
+        formeLetter: 'F',
+        types: [ 'Water', 'Ghost' ],
+        genderRatio: { male: 0, female: 1 },
+        baseStats: {
+          hp: 100, atk: 60, def: 70, spa: 85, spd: 105, spe: 60,
+        },
+        abilities: { first: 'Water Absorb', second: 'Cursed Body', hidden: 'Damp' },
+        heightm: 2.2,
+        weightkg: 135,
+        color: 'White',
+        prevo: 'frillish',
+        evoLevel: 40,
+        eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'jellicent' ],
+        specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/jellicent-f.gif',
+        specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/jellicent-f.gif',
       }
     ],
     [
@@ -16080,9 +16131,9 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'aegislash',
+      'aegislashblade',
       {
-        species: 'aegislash',
+        species: 'aegislash-blade',
         num: 681,
         types: [ 'Steel', 'Ghost' ],
         genderRatio: { male: 0.50, female: 0.50 },

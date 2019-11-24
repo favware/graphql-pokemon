@@ -41,7 +41,7 @@ export default class LearnsetEntry {
   tutorMoves: LearnsetMove[];
 
   @Field(() => [ LearnsetMove ], {
-    description: 'The moves that can be learned from a TM',
+    description: 'The moves that can be learned from a Technical Machine or Technical Record',
     defaultValue: [ new LearnsetMove() ],
   })
   tmMoves: LearnsetMove[];

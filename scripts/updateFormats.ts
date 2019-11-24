@@ -1,28 +1,15 @@
 /* eslint-disable no-console */
 import fetch from 'node-fetch';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
-import { dirname, join } from 'path';
+import { join } from 'path';
 import { constants, Timestamp } from '@klasa/timestamp';
+import { needFile, Formats, DataJSON } from './utils';
 
 const DATA_FILE = join(__dirname, 'updateFormatsData.json');
 const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
 const UPDATED_FORMATS_DATA = readJSON(DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - (10 * constants.DAY);
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
-
-const needFile = async (url: string) => {
-  const NodeModule: Module = module.constructor as Module;
-  const request = await fetch(url);
-  const body: string = await request.text();
-  const nodeModule = new NodeModule(url, module.parent);
-  nodeModule.fileName = url;
-  /* eslint-disable no-underscore-dangle */
-  nodeModule.paths = NodeModule._nodeModulePaths(dirname(url));
-  nodeModule._compile(body, url);
-
-  /* eslint-enable no-underscore-dangle */
-  return nodeModule.exports;
-};
 
 (async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
@@ -67,21 +54,3 @@ const needFile = async (url: string) => {
 
   return process.exit(0);
 })();
-
-interface Entry {
-  tier: string;
-}
-
-interface DataJSON {
-  lastSha: string;
-}
-
-type Formats = Record<string, Entry>;
-
-interface Module extends Function {
-  /* eslint-disable @typescript-eslint/no-explicit-any */
-  _nodeModulePaths: any;
-
-  new(url: string, parents: NodeModule | null): any;
-  /* eslint-enable @typescript-eslint/no-explicit-any */
-}

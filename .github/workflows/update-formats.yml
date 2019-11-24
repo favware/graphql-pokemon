@@ -36,7 +36,7 @@ jobs:
         GITHUB_REPO_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
         git config --local user.email "${GITHUB_EMAIL}";
         git config --local user.name "${GITHUB_USER}";
-        git checkout -b favware-bot/update-smogon-formats/`date +%F-%H:%M`;
+        git checkout -b favware-bot/update-smogon-formats/`date +%F-%H-%M`;
         git commit -sam "feat: update smogon formats";
         hub pull-request -p -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna"
       env:

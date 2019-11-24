@@ -33,8 +33,6 @@
 
 **Typings**
 
-[![npm bundle size](https://img.shields.io/bundlephobia/min/@favware/graphql-pokemon?label=graphql-pokemon%20-%20minified&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/graphql-pokemon)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@favware/graphql-pokemon?label=graphql-pokemon%20-%20minzipped&logo=webpack&style=flat-square)](https://bundlephobia.com/result?p=@favware/graphql-pokemon)
 [![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=graphql-pokemon%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
 
 ---
@@ -86,4 +84,4 @@ fetch('https://favware.tech/api', {
 
 For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api).
 
-**Please note that if you visited my site normally before a cache-clear refresh (Control + F5) might be required due to the Service Worker caching the regular site data!**
+**Please note that if you visited my site normally before a cache-clear refresh (Control + F5 / Command + Shift + R) might be required due to the Service Worker caching the regular site data!**

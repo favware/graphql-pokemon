@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+# on:
+#   schedule:
+#     - cron: '0 2 * * *'
+
 jobs:
   UpdateFormats:
     name: Update Showdown Formats
@@ -26,7 +30,7 @@ jobs:
     - name: Run Updater
       run: yarn scripts:formatsupdater
     - name: Install Hub
-      run: sudo apt install hub -y
+      run: snap install hub --classic
     - name: Commit any changes
       run: |
         GITHUB_REPO_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";

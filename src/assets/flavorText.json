@@ -75,7 +75,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+  }],
 	"2": [{
 		"version_id": "Red",
 		"flavor_text": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
@@ -145,10 +151,16 @@
 	}, {
 		"version_id": "Omega Ruby",
 		"flavor_text": "There is a bud on this Pokémon’s back. To support its weight, Ivysaur’s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower soon."
-	}, {
-		"version_id": "Alpha Sapphire",
-		"flavor_text": "There is a bud on this Pokémon’s back. To support its weight, Ivysaur’s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower soon."
-	}],
+  }, {
+    "version_id": "Alpha Sapphire",
+    "flavor_text": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower soon."
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom."
+  }],
 	"3": [{
 		"version_id": "Red",
 		"flavor_text": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
@@ -221,7 +233,20 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "There is a large flower on Venusaur’s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people."
-	}],
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The flower on its back catches the sun's rays. The sunlight is then absorbed and used for energy."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The flower on its back catches the sun's rays. The sunlight is then absorbed and used for energy."
+  }],
+  "3mega": [{
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger."
+  }],
 	"4": [{
 		"version_id": "Red",
 		"flavor_text": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
@@ -294,7 +319,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The flame at the tip of its tail makes a sound as it burns. You can only hear it in quiet places."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The flame at the tip of its tail makes a sound as it burns. You can only hear it in quiet places."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out."
+  }],
 	"5": [{
 		"version_id": "Red",
 		"flavor_text": "When it swings its burning tail, it elevates the temperature to unbearably high levels."
@@ -367,7 +404,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color."
-	}],
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Tough fights could excite this Pokémon. When excited, it may breathe out bluish-white flames."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Tough fights could excite this Pokémon. When excited, it may breathe out bluish-white flames."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "If it becomes agitated during battle, it spouts intense flames, incinerating its surroundings."
+  }],
 	"6": [{
 		"version_id": "Red",
 		"flavor_text": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally."
@@ -440,7 +489,40 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When this Pokémon expels a blast of superhot fire, the red flame at the tip of its tails burns more intensely."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When this Pokémon expels a blast of superhot fire, the red flame at the tip of its tails burns more intensely."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Its wings can carry this Pokémon close to an altitude of 4,600 feet. It blows out fire at very high temperatures."
+  }],
+  "6mega-x": [{
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The overwhelming power that fills its entire body causes it to turn black and create intense blue flames."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The overwhelming power that fills its entire body causes it to turn black and create intense blue flames."
+  }],
+  "6mega-y": [{
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet fighter."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet fighter."
+  }],
+  "6gmax": [{
+    "version_id": "Sword",
+    "flavor_text": "This colossal, flame-winged figure of a Charizard was brought about by Gigantamax energy."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "The flame inside its body burns hotter than 3,600 degrees Fahrenheit. When Charizard roars, that temperature climbs even higher."
+  }],
 	"7": [{
 		"version_id": "Red",
 		"flavor_text": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
@@ -461,10 +543,10 @@
 		"flavor_text": "When it feels threatened, it draws its legs inside its shell and sprays water from its mouth."
 	}, {
 		"version_id": "Ruby",
-		"flavor_text": "SQUIRTLE’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds."
+		"flavor_text": "Squirtle’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds."
 	}, {
 		"version_id": "Sapphire",
-		"flavor_text": "SQUIRTLE’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds."
+		"flavor_text": "Squirtle’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds."
 	}, {
 		"version_id": "Emerald",
 		"flavor_text": "Its shell is not just for protection. Its rounded shape and the grooves on its surface minimize resistance in water, enabling SQUIRTLE to swim at high speeds."
@@ -513,7 +595,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Squirtle’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Shoots water at prey while in the water. Withdraws into its shell when in danger."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Shoots water at prey while in the water. Withdraws into its shell when in danger."
+  }],
 	"8": [{
 		"version_id": "Red",
 		"flavor_text": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance."
@@ -586,7 +674,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon’s toughness as a battler."
-	}],
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "When tapped on its head, this Pokémon will pull it in, but its tail will stick out a little bit."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "When tapped on its head, this Pokémon will pull it in, but its tail will stick out a little bit."
+  }],
 	"9": [{
 		"version_id": "Red",
 		"flavor_text": "A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles."
@@ -607,10 +701,10 @@
 		"flavor_text": "It firmly plants its feet on the ground before shooting water from the jets on its back."
 	}, {
 		"version_id": "Ruby",
-		"flavor_text": "BLASTOISE has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet."
+		"flavor_text": "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet."
 	}, {
 		"version_id": "Sapphire",
-		"flavor_text": "BLASTOISE has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet."
+		"flavor_text": "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet."
 	}, {
 		"version_id": "Emerald",
 		"flavor_text": "The waterspouts that protrude from its shell are highly accurate. Their bullets of water can precisely nail tin cans from a distance of over 160 feet."
@@ -659,7 +753,20 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet."
-	}],
+  }, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Once it takes aim at its enemy, it blasts out water with even more force than a fire hose."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Once it takes aim at its enemy, it blasts out water with even more force than a fire hose."
+  }],
+  "9mega": [{
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+  }],
 	"10": [{
 		"version_id": "Red",
 		"flavor_text": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
@@ -744,7 +851,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It's easy to catch, and it grows quickly, making it one of the top recommendations for novice Pokémon Trainers."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "If you touch the feeler on top of its head, it will release a horrible stink to protect itself."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "If you touch the feeler on top of its head, it will release a horrible stink to protect itself."
+  }, {
+    "version_id": "Sword",
+    "flavor_text":  "For protection, it releases a horrible stench from the antenna on its head to drive away enemies."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "For protection, it releases a horrible stench from the antenna on its head to drive away enemies."
+  }],
 	"11": [{
 		"version_id": "Red",
 		"flavor_text": "This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body."
@@ -829,7 +948,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its hard shell doesn't crack a bit even if Pikipek pecks at it, but it will tip over, spilling out its insides."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Hardens its shell to protect itself. However, a large impact may cause it to pop out of its shell."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text":  "Hardens its shell to protect itself. However, a large impact may cause it to pop out of its shell."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack."
+  }, {
+    "version_id": "Shield",
+    "flavor_text":  "Even though it is encased in a sturdy shell, the body inside is tender. It can’t withstand a harsh attack."
+  }],
 	"12": [{
 		"version_id": "Red",
 		"flavor_text": "In battle, it flaps its wings at high speed to release highly toxic dust into the air."
@@ -914,7 +1045,26 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Nectar from pretty flowers is its favorite food. In fields of flowers, it has heated battles with Cutiefly for territory."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its wings, covered with poisonous powder, repel water. This allows it to fly in the "
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "In battle, it flaps its wings at great speed to release highly toxic dust into the air."
+  }, {
+    "version_id": "Sword",
+    "flavor_text": "In battle, it flaps its wings at great speed to release highly toxic dust into the air."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "It collects honey every day. It rubs honey onto the hairs on its legs to carry it back to its nest."
+  }],
+  "12gmax": [{
+    "version_id": "Sword",
+    "flavor_text": "Crystallized Gigantamax energy makes up this Pokémon's blindingly bright and highly toxic scales."
+  }, {
+    "version_id": "Shield",
+    "flavor_text": "Crystallized Gigantamax energy makes up this Pokémon's blindingly bright and highly toxic scales."
+  }],
 	"13": [{
 		"version_id": "Red",
 		"flavor_text": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
@@ -987,7 +1137,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose)."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Crystallized Gigantamax energy makes up this Pokémon's blindingly bright and highly toxic scales."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Crystallized Gigantamax energy makes up this Pokémon's blindingly bright and highly toxic scales."
+  }],
 	"14": [{
 		"version_id": "Red",
 		"flavor_text": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators."
@@ -1060,7 +1216,13 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy."
+  }],
 	"15": [{
 		"version_id": "Red",
 		"flavor_text": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail."
@@ -1133,7 +1295,20 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm."
-	}],
+	}, {
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly."
+  }],
+  "15mega": [{
+    "version_id": "Let's Go Pikachu",
+    "flavor_text": "Its legs have become poison stingers. It stabs its prey repeatedly with the stingers on its limbs, dealing the final blow with the stinger on its rear."
+  }, {
+    "version_id": "Let's Go Eevee",
+    "flavor_text": "Its legs have become poison stingers. It stabs its prey repeatedly with the stingers on its limbs, dealing the final blow with the stinger on its rear."
+  }],
 	"16": [{
 		"version_id": "Red",
 		"flavor_text": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
@@ -1206,6 +1381,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back."
 	}],
 	"17": [{
 		"version_id": "Red",
@@ -1279,6 +1460,12 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey."
 	}],
 	"18": [{
 		"version_id": "Red",
@@ -1352,6 +1539,19 @@
 	}, {
 		"version_id": "Alpha Sapphire",
 		"flavor_text": "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons."
+	}],
+	"18mega": [{
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "With its muscular strength now greatly increased, it can fly continuously for two weeks without resting."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "With its muscular strength now greatly increased, it can fly continuously for two weeks without resting."
 	}],
 	"19": [{
 		"version_id": "Red",
@@ -1437,6 +1637,31 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This Pokémon is common but hazardous. Its sharp incisors can easily cut right through hard wood."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area."
+  }],
+	"19alola": [{
+		"version_id": "Sun",
+		"flavor_text": "When the sun goes down, it becomes active. It runs around town on a chase for good food for the boss of its nest—Raticate."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "With its incisors, it gnaws through doors and infiltrates people’s homes. Then, with a twitch of its whiskers, it steals whatever food it finds."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It shows no interest in anything that isn't fresh. If you take it shopping with you, it will help you pick out ingredients."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Night after night, they sneak into people's homes seeking food. A massive outbreak of them has become an issue of public concern."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its whiskers provide it with a keen sense of smell, enabling it to pick up the scent of hidden food and locate it instantly."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its whiskers provide it with a keen sense of smell, enabling it to pick up the scent of hidden food and locate it instantly."
 	}],
 	"20": [{
 		"version_id": "Red",
@@ -1522,6 +1747,44 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Its hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey."
+	}],
+	"20alola": [{
+		"version_id": "Sun",
+		"flavor_text": "It forms a group of Rattata, which it assumes command of. Each group has its own territory, and disputes over food happen often."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This gourmet Pokémon is particular about the taste and freshness of its food. Restaurants where Raticate live have a good reputation."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It has an incredibly greedy personality. Its nest is filled with so much food gathered by Rattata at its direction, it can't possibly eat it all."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It commands a nest of Rattata. Different nests don't get along, whipping up severe fights over feeding grounds."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "It makes its Rattata underlings gather food for it, dining solely on the most nutritious and delicious fare."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "It makes its Rattata underlings gather food for it, dining solely on the most nutritious and delicious fare."
+	}],
+	"20alola-totem": [{
+		"version_id": "Sun",
+		"flavor_text": "It forms a group of Rattata, which it assumes command of. Each group has its own territory, and disputes over food happen often."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This gourmet Pokémon is particular about the taste and freshness of its food. Restaurants where Raticate live have a good reputation."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It has an incredibly greedy personality. Its nest is filled with so much food gathered by Rattata at its direction, it can't possibly eat it all."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It commands a nest of Rattata. Different nests don't get along, whipping up severe fights over feeding grounds."
 	}],
 	"21": [{
 		"version_id": "Red",
@@ -1607,6 +1870,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Due to its short wings, it can't fly long distances. It wanders about restlessly and pecks at bug Pokémon."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "Inept at flying high. However, it can fly around very fast to protect its territory."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "Inept at flying high. However, it can fly around very fast to protect its territory."
 	}],
 	"22": [{
 		"version_id": "Red",
@@ -1692,6 +1961,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "In Alola, fish Pokémon are its prey. It can be seen circling above the ocean searching for food."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly."
 	}],
 	"23": [{
 		"version_id": "Red",
@@ -1771,6 +2046,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The eggs of bird Pokémon are its favorite food. It swallows eggs whole, so sometimes an egg gets stuck, and Ekans faints."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest."
 	}],
 	"24": [{
 		"version_id": "Red",
@@ -1850,6 +2131,12 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "After stunning its opponents with the pattern on its stomach, it quickly wraps them up in its body and waits for them to stop moving."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest."
 	}],
 	"25": [{
 		"version_id": "Red",
@@ -1935,6 +2222,155 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "While sleeping, it generates electricity in the sacs in its cheeks. If it's not getting enough sleep, it will be able to use only weak electricity."
+	}, {
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+	}, {
+		"version_id": "Let's Go Eevee",
+		"flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+	}],
+	"25starter": [{
+		"version_id": "Let's Go Pikachu",
+		"flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+	}],
+	"25original": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of traveling through the Kanto and Johto regions."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is proof that the two traveled throughout the Kanto and Johto regions together."
+	}],
+	"25hoenn": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of traveling through the Hoenn region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is proof that the two traveled throughout the Hoenn region together."
+	}],
+	"25sinnoh": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of traveling through the Sinnoh region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is proof that the two traveled throughout the Sinnoh region together."
+	}],
+	"25unova": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of traveling through the Unova region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is proof that the two traveled throughout the Unova region together."
+	}],
+	"25kalos": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of traveling through the Kalos region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is proof that the two traveled throughout the Kalos region together."
+	}],
+	"25alola": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of traveling through the Alola region."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is proof that the two traveled throughout the Alola region together."
+	}],
+	"25partner": [{
+		"version_id": "Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap�����s not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
+	}, {
+		"version_id": "Sword",
+		"flavor_text": "This Pikachu wears its partner's cap."
+	}, {
+		"version_id": "Shield",
+		"flavor_text": "This Pikachu is wearing its Trainer's cap."
 	}],
 	"26": [{
 		"version_id": "Red",
@@ -2020,6 +2456,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It unleashes electric shocks that can reach 100,000 volts. When agitated, it can knock out even an Indian elephant."
+  }],
+  "26alola": [{
+		"version_id": "Sun",
+		"flavor_text": "It only evolves to this form in the Alola region. According to researchers, its diet is one of the causes of this change."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It uses psychokinesis to control electricity. It hops aboard its own tail, using psychic power to lift the tail and move about while riding it."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "When you rub its cheeks, a sweet fragrance comes wafting out. However, you'll also get a light shock!"
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It focuses psychic energy into its tail and rides it like it's surfing. Another name for this Pokémon is “hodad.”"
 	}],
 	"27": [{
 		"version_id": "Red",
@@ -2105,6 +2554,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When its skin gets wrinkled from moisture, it heads for a volcano. It lies flat on a spot with a lot of geothermal heat and dries itself out."
+  }],
+  "27alola": [{
+		"version_id": "Sun",
+		"flavor_text": "It lives on snowy mountains. Its steel shell is very hard—so much so, it can't roll its body up into a ball."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "An ancient tradition of Alolan festivals, still carried on to this day, is a competition to slide Sandshrew across ice as far as one can."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "After fleeing a volcanic eruption, it ended up moving to an area of snowy mountains. Its ice shell is as hard as steel."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately."
 	}],
 	"28": [{
 		"version_id": "Red",
@@ -2190,6 +2652,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Thanks to its thick claws, it's good at climbing trees. There are plenty of Sandslash that park themselves in trees and go right to sleep."
+  }],
+  "28alola": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Fleeing a volcanic eruption, it settled on a snowy mountain. As it races through the snowfields, it sends up a spray of snow."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Pokémon's steel spikes are sheathed in ice. Stabs from these spikes cause deep wounds and severe frostbite as well."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It runs across snow-covered plains at high speeds. It developed thick, sharp claws to plow through the snow."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "iceberg without slipping."
 	}],
 	"29": [{
 		"version_id": "Red",
@@ -2883,6 +3358,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It manipulates balls of fire to catch its prey. If you raise one from when it's young, it will grow close to you like a puppy Pokémon."
+  }],
+  "37alola": [{
+		"version_id": "Sun",
+		"flavor_text": "It exhales air colder than -58 degrees Fahrenheit. Elderly people in Alola call this Pokémon by an older name—Keokeo."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "In hot weather, this Pokémon makes ice shards with its six tails and sprays them around to cool itself off."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "If you carelessly approach it because it's cute, the boss of the pack, Ninetales, will appear and freeze you."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "They live together in a skulk, helping one another. Before eating their prey, they freeze it solid with their –58 degree Fahrenheit breath."
 	}],
 	"38": [{
 		"version_id": "Red",
@@ -2968,6 +3456,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The flickering flames it spews from its mouth leave its opponents hypnotized. Then, this extremely intelligent Pokémon attacks."
+  }],
+  "38alola": [{
+		"version_id": "Sun",
+		"flavor_text": "It creates drops of ice in its coat and showers them over its enemies. Anyone who angers it will be frozen stiff in an instant."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Possessing a calm demeanor, this Pokémon was revered as a deity incarnate before it was identified as a regional variant of Ninetales."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "The reason it guides people all the way down to the mountain's base is that it wants them to hurry up and leave."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Some said that deities visited mountains where Ninetales live, so in times long past, no one was allowed to go into those mountains."
 	}],
 	"39": [{
 		"version_id": "Red",
@@ -3928,6 +4429,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Around their crops, farmers plant the kind of tree that Diglett like to eat as a way of getting Diglett to plow the fields for them."
+  }],
+  "50alola": [{
+		"version_id": "Sun",
+		"flavor_text": "Its head sports an altered form of whiskers made of metal. When in communication with its comrades, its whiskers wobble to and fro."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Its golden hairs function as sensors. It pokes them out of its burrow to monitor its surroundings."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Although it's powerful enough to dig right through volcanic rock, it doesn't allow itself to be seen very often."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "The need to dig through volcanic rock in the ground has made them more powerful than the Diglett of other regions."
 	}],
 	"51": [{
 		"version_id": "Red",
@@ -4013,6 +4527,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Dugtrio's heads are sleek and smooth and incredibly hard. It can dig through any soil with its headbutts."
+  }],
+  "51alola": [{
+		"version_id": "Sun",
+		"flavor_text": "Its shining gold hair provides it with protection. It's reputed that keeping any of its fallen hairs will bring bad luck."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "These Pokémon are cherished in the Alola region, where they are thought to be feminine deities of the land incarnate."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Its metallic whiskers are heavy, so it's not very fast, but it has the power to dig through bedrock."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its shining gold whiskers are advanced sensors that can detect vibrations from sounds several miles away."
 	}],
 	"52": [{
 		"version_id": "Red",
@@ -4098,6 +4625,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It loves coins, so if you give it one, you can make friends with Meowth easily. But it's fickle, so you can't count on that friendship lasting."
+  }],
+  "52alola": [{
+		"version_id": "Sun",
+		"flavor_text": "This Pokémon was not originally found in Alola. Human actions caused a surge in their numbers, and they went feral. They're prideful and crafty."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "When its delicate pride is wounded, or when the gold coin on its forehead is dirtied, it flies into a hysterical rage."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It's impulsive, selfish, and fickle. It's very popular with some Trainers who like giving it the attention it needs."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "A royal house that flourished in the distant past brought it here from another region. Meowth is both selfish"
 	}],
 	"53": [{
 		"version_id": "Red",
@@ -4183,6 +4723,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This Pokémon is popular with rich people. It's also targeted by hunters who are after the jewel in its forehead."
+  }],
+  "53alola": [{
+		"version_id": "Sun",
+		"flavor_text": "Its round face and smooth coat—softer than the most high-class velvet—have made this a very popular Pokémon in Alola."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It looks down on everyone other than itself. Its preferred tactics are sucker punches and blindside attacks."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "In contrast to its lovely face, it's so brutal that it tortures its weakened prey rather than finishing them off."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its round face is a symbol of wealth. Persian that have bigger, plumper faces are considered more beautiful."
 	}],
 	"54": [{
 		"version_id": "Red",
@@ -5203,6 +5756,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "If it trusts someone deeply, it will let them have one of its spoons. Anything you eat with that spoon is apparently delicious."
+  }],
+  "65mega": [{
+		"version_id": "Sun",
+		"flavor_text": "As a result of Mega Evolution, its power has been entirely converted into psychic energy, and it has lost all strength in its muscles."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Its hidden psychic power has been unleashed. A glance at someone gives it knowledge of the course of that person’s life, from birth to death."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It sends out psychic power from the red organ on its forehead to foresee its opponents' every move."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Having traded away its muscles, Alakazam's true power has been unleashed. With its psychic powers, it can foresee all things."
 	}],
 	"66": [{
 		"version_id": "Red",
@@ -5932,6 +6498,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It uses both hands to climb precipitous cliffs. People who see it in action have been known to take up bouldering."
+  }],
+  "74alola": [{
+		"version_id": "Sun",
+		"flavor_text": "Its body is a magnetic stone. Iron sand attaches firmly to the portions of its body that are particularly magnetic."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "If you accidentally step on a Geodude sleeping on the ground, you'll hear a crunching sound and feel a shock ripple through your entire body."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "If you mistake it for a rock and step on it, it will headbutt you in anger. In addition to the pain, it will also zap you with a shock."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Geodude compete against each other with headbutts. The iron sand on their heads will stick to whichever one has stronger magnetism."
 	}],
 	"75": [{
 		"version_id": "Red",
@@ -6017,6 +6596,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It travels by rolling down cliffs. If it falls into a river, it will explode with its last gasp."
+  }],
+  "75alola": [{
+		"version_id": "Sun",
+		"flavor_text": "Its preferred food is dravite. After it has eaten this mineral, crystals form inside the Pokémon, rising to the surface of part of its body."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "They eat rocks and often get into a scrap over them. The shock of Graveler smashing together causes a flash of light and a booming noise."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "When two Graveler fight each other, it fills the surroundings with flashes of light and sound. People call it the “fireworks of the earth.”"
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Graveler's entire body is tinged with electricity due to the stones it likes to eat. It's very quick-tempered."
 	}],
 	"76": [{
 		"version_id": "Red",
@@ -6102,6 +6694,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It detonates its own body. The power from that explosion can propel it up steep mountain paths with amazing speed."
+  }],
+  "76alola": [{
+		"version_id": "Sun",
+		"flavor_text": "It fires rocks charged with electricity. Even if the rock isn't fired that accurately, just grazing an opponent will cause numbness and fainting."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Because it can't fire boulders at a rapid pace, it's been known to seize nearby Geodude and fire them from its back."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It's grumpy and stubborn. If you upset it, it discharges electricity from the surface of its body and growls with a voice like thunder."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It shoots large rocks that are charged with electricity. Tremendous electric shocks are flung out across the whole area of impact."
 	}],
 	"77": [{
 		"version_id": "Red",
@@ -6418,6 +7023,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Shellder, in its greed to suck out more and more sweetness from Slowbro's tail, has metamorphosed into a spiral-shaped shell."
+  }],
+  "80mega": [{
+		"version_id": "Sun",
+		"flavor_text": "All the energy from Mega Evolution poured into the Shellder on its tail, leaving Slowpoke to be swallowed whole."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "When bathed in the energy of Mega Evolution, Shellder converts into impregnable armor. There is virtually no change in Slowpoke."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Tremendous energy strengthened the power of the Shellder on its tail, but it doesn't really affect Slowpoke."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Tremendous energy strengthened the power of the Shellder on its tail, but it doesn't really affect Slowpoke."
 	}],
 	"81": [{
 		"version_id": "Red",
@@ -7050,6 +7668,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The wastewater coming from factories is clean these days, so Grimer have nothing to eat. They're said to be on the verge of extinction."
+  }],
+  	"88alola": [{
+		"version_id": "Sun",
+		"flavor_text": "A Grimer, which had been brought in to solve a problem with garbage, developed over time into this form."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "The crystals on Grimer's body are lumps of toxins. If one falls off, lethal poisons leak out."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "There are a hundred or so of them living in Alola's waste-disposal site. They're all hard workers who eat a lot of trash."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Brought to Alola to solve the garbage problem, Grimer seems to relish any and all kinds of trash."
 	}],
 	"89": [{
 		"version_id": "Red",
@@ -7135,6 +7766,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Because they scatter germs everywhere, they've long been targeted for extermination, leading to a steep decline in their population."
+  }],
+  "89alola": [{
+		"version_id": "Sun",
+		"flavor_text": "The garbage it eats causes continuous chemical changes in its body, which produce its exceedingly vivid coloration."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "While it's unexpectedly quiet and friendly, if it's not fed any trash for a while, it will smash its Trainer's furnishings and eat up the fragments."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "There are over a hundred kinds of poison inside its body. Chemical reactions between different poisons are the source of its vitality."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "What look like fangs and claws are actually crystallized poison that will afflict you at a mere touch, so don't get too close."
 	}],
 	"90": [{
 		"version_id": "Red",
@@ -7560,6 +8204,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Even your home isn't safe. Gengar will lurk in whatever dark corner of a room it can find and wait for its chance to catch its prey."
+  }],
+  "94mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Gengar's relationships are warped. It has no interest in opponents unless it perceives them as prey."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "The energy of Mega Evolution awakened it. It sinks into another dimension, where it keeps a patient watch for its chance to attack."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It tries to take the lives of anyone and everyone. It will even try to curse the Trainer who is its master!"
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Mega Evolution has made it possible for Gengar to access other dimensions. Its entire body is brimming with strange power."
 	}],
 	"95": [{
 		"version_id": "Red",
@@ -8265,6 +8922,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Each of its three heads has its own thoughts. When they want to go in different directions, Exeggutor becomes unable to move."
+  }],
+  "103alola": [{
+		"version_id": "Sun",
+		"flavor_text": "Alola is the best environment for this Pokémon. Local people take pride in its appearance, saying this is how Exeggutor ought to look."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "As it grew taller and taller, it outgrew its reliance on psychic powers, while within it awakened the power of the sleeping dragon."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Exeggutor is the pride of the Alolan people. Its image is carved into historical buildings and murals."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It swings its long neck like a whip and smacks its opponents. This makes Exeggutor itself dizzy, too."
 	}],
 	"104": [{
 		"version_id": "Red",
@@ -8435,6 +9105,32 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "They thump their bones rhythmically to communicate among themselves. There are nearly 50 different rhythmic patterns."
+  }],
+  "105alola": [{
+		"version_id": "Sun",
+		"flavor_text": "The bones it possesses were once its mother's. Its mother's regrets have become like a vengeful spirit protecting this Pokémon."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "The rich greenery of the Alola region is hard on Marowak. It controls fire to stay alive."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning."
+	}],
+	"105alola-totem": [{
+		"version_id": "Sun",
+		"flavor_text": "The bones it possesses were once its mother's. Its mother's regrets have become like a vengeful spirit protecting this Pokémon."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "The rich greenery of the Alola region is hard on Marowak. It controls fire to stay alive."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning."
 	}],
 	"106": [{
 		"version_id": "Red",
@@ -9195,6 +9891,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "You shouldn't get close to the child when it's playing outside its mother's pouch. Its mother is always nearby watching over it."
+  }],
+  "115mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Mega Kangaskhan's strength derives from the mother's happiness about her child's growth. Watching it grow up keeps her spirits high."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Thanks to Mega Evolution, its child grows. But as the child is good only at fighting and nothing else, its mother feels uneasy about its future."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "The explosive energy the child is bathed in causes temporary growth. The mother is beside herself with worry about it."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "When the mother sees the back of her Mega- Evolved child, it makes her think of the day when her child will inevitably leave her."
 	}],
 	"116": [{
 		"version_id": "Red",
@@ -10179,6 +10888,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Although it's tough, it can't handle cold well. When night falls, it buries itself in leafage and sleeps."
+  }],
+  "127mega": [{
+		"version_id": "Sun",
+		"flavor_text": "The influence of Mega Evolution leaves it in a state of constant excitement. It pierces enemies with its two large horns before shredding them."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Bathed in the energy of Mega Evolution, its wings become unusually developed. It flies at speeds of approximately 30 mph."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "After Mega Evolution, it becomes able to fly. Perhaps because it's so happy, it rarely touches the ground."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It zips around at blistering speeds, looking for an opening to skewer its opponent on its giant pincers."
 	}],
 	"128": [{
 		"version_id": "Red",
@@ -10434,6 +11156,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "The energy from evolution stimulated its brain cells strongly, causing it to become very ferocious."
+  }],
+  "130mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Mega Evolution also affects its brain, leaving no other function except its destructive instinct to burn everything to cinders."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Mega Evolution also affects its brain, leaving no other function except its destructive instinct to burn everything to cinders."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Mega Evolution places a burden on its body. The stress causes it to become all the more ferocious."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It zooms out of the water at Mach speeds. Even large ships caught in its path are split cleanly in two!"
 	}],
 	"131": [{
 		"version_id": "Red",
@@ -10689,6 +11424,10 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its genes are easily influenced by its surroundings. Even its face starts to look like that of its Trainer."
+  }],
+  "133starter": [{
+		"version_id": "Let's Go",
+		"flavor_text": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution."
 	}],
 	"134": [{
 		"version_id": "Red",
@@ -11430,6 +12169,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It flew through the open skies over the ancient continent as if they were its own. When it touched ground, its walk was weak and slow."
+	}],
+	"142mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Part of its body has become stone. Some scholars claim that this is Aerodactyl's true appearance."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "When it Mega Evolves, it becomes more vicious than ever before. Some say that's because its excess of power is causing it pain."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "When it Mega Evolves, it becomes more vicious than ever before. Some say that's because its excess of power is causing it pain."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Mega Evolution awakened some dormant genes, bringing back the sharp rocks that once covered Aerodactyl's entire body."
 	}],
 	"143": [{
 		"version_id": "Red",
@@ -14218,6 +14970,13 @@
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its tail shines bright and strong. It has been prized since long ago as a beacon for sailors."
 	}],
+	"181mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Excess energy from Mega Evolution stimulates its genes, and the wool it had lost grows in again."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Massive amounts of energy intensely stimulated Ampharos's cells, apparently awakening its long-sleeping dragon's blood."
+	}],
 	"182": [{
 		"version_id": "Gold",
 		"flavor_text": "BELLOSSOM gather at times and appear to dance. They say that the dance is a ritual to summon the sun."
@@ -16346,6 +17105,19 @@
 		"version_id": "Ultra Moon",
 		"flavor_text": "Once it has identified something as an enemy, it will continue beating them with its steel-hard pincers until there's nothing left but scraps."
 	}],
+	"212mega": [{
+		"version_id": "Sun",
+		"flavor_text": "The excess energy that bathes this Pokémon keeps it in constant danger of overflow. It can't sustain a battle over long periods of time."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Due to the effects of Mega Evolution, its pincers have taken on a more diabolical form, ripping anything they pinch to shreds."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It stores the excess energy from Mega Evolution, so after a long time passes, its body starts to melt."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It's better at beating things than grasping them. When it battles for a long time, the weight of its pincers becomes too much to bear."
+	}],
 	"213": [{
 		"version_id": "Gold",
 		"flavor_text": "The BERRIES it stores in its vase-like shell decompose and become a gooey liquid."
@@ -16479,6 +17251,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It roams through forests searching for sweet nectar. Although it boasts fantastic physical strength, it's not that good at flying."
+	}],
+	"214mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "It can grip things with its two horns and lift 500 times its own body weight."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "A tremendous influx of energy builds it up, but when Mega Evolution ends, Heracross is bothered by terrible soreness in its muscles."
 	}],
 	"215": [{
 		"version_id": "Gold",
@@ -17517,6 +18296,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Identifiable by its eerie howls, people a long time ago thought it was the grim reaper and feared it."
+	}],
+	"229mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Its red claws and the tips of its tail are melting from high internal temperatures that are painful to Houndoom itself."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Houndoom's entire body generates heat when it Mega Evolves. Its fearsome fiery breath turns its opponents to ash."
 	}],
 	"230": [{
 		"version_id": "Gold",
@@ -18829,6 +19615,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This Pokémon is a mobile disaster, leaving mountains crumbled and houses destroyed in its wake."
+	}],
+	"248mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Due to the colossal power poured into it, this Pokémon's back split right open. Its destructive instincts are the only thing keeping it moving."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "The effects of Mega Evolution make it more ferocious than ever. It's unclear whether it can even hear its Trainer's orders."
 	}],
 	"249": [{
 		"version_id": "Gold",
@@ -21923,6 +22716,19 @@
 		"version_id": "Ultra Moon",
 		"flavor_text": "It's a fiend for gemstones, so it stalks Carbink. Unfortunately, Gabite almost always grabs them first."
 	}],
+	"302mega": [{
+		"version_id": "Sun",
+		"flavor_text": "The jewel from its chest, which has grown gigantic due to the effects of Mega Evolution, can turn back any attack."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Supporting a giant heavy jewel, it can't change direction very nimbly and is vulnerable to attack from behind."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Bathed in the energy of Mega Evolution, the gemstone on its chest expands, rips through its skin, and falls out."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It blocks any and all attacks with its giant-sized gemstone. However, the stone's a heavy burden, and it limits Mega Sableye's movements."
+	}],
 	"303": [{
 		"version_id": "Ruby",
 		"flavor_text": "MAWHILE’s huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, MAWHILE chomps it with its gaping jaws."
@@ -21983,6 +22789,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It has two mouths. The big jaws on the back of its head can't taste anything, so that's the mouth it uses to eat foods it doesn't like."
+	}],
+	"303mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "It has an extremely vicious disposition. It grips prey in its two sets of jaws and tears them apart with raw power."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its two sets of jaws thrash about violently as if they each had a will of their own. One gnash from them can turn a boulder to dust."
 	}],
 	"304": [{
 		"version_id": "Ruby",
@@ -22380,6 +23193,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It stimulates its own muscles with electricity, so it can move quickly. It eases its soreness with electricity, too, so it can recover quickly as well."
+	}],
+	"310mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Mega Evolution fills its body with a tremendous amount of electricity, but it's too much for Manectric to fully control."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Too much electricity has built up in its body, irritating Manectric. Its explosive speed is equal to that of a lightning bolt."
 	}],
 	"311": [{
 		"version_id": "Ruby",
@@ -22899,6 +23719,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It drinks in seawater and jets it from its rear to propel itself. It's very sensitive to the scent of blood."
+	}],
+	"319mega": [{
+		"version_id": "Sun",
+		"flavor_text": "The spines sprouting from its head are transformed fangs. If they're injured or broken off, the spines will regenerate countless times."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "As a consequence of Mega Evolution, its combative instincts exploded. The yellow marks it bears are scars from a long history of battles."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "The yellow patterns it bears are old scars. The energy from Mega Evolution runs through them, causing it sharp pain and suffering."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "The moment it charges into its opponent, sharp spikes pop out of Sharpedo's head,"
 	}],
 	"320": [{
 		"version_id": "Ruby",
@@ -24852,6 +25685,45 @@
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its form changes depending on the weather. The rougher conditions get, the rougher Castform's disposition!"
 	}],
+	"351sunny": [{
+		"version_id": "Sun",
+		"flavor_text": "This is the form Castform takes on the brightest of days. Its skin is unexpectedly hot to the touch, so approach with care."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This is Castform's form when basking in fair weather. Its body is warm and toasty."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is the form Castform takes on bright days. In an experiment where Castform was placed in front of a heater, it didn't change to this form."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Castform changes to this form when it basks in bright sunlight. When you touch its glowing skin, it feels all dried out!"
+	}],
+	"351rainy": [{
+		"version_id": "Sun",
+		"flavor_text": "This is the form Castform takes when soaked with rain. When its body is compressed, water will seep out as if from a sponge."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This is Castform's form during a downpour of rain. Its body retains moisture and gets slippery."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Castform changes to this form when rain hits it. Its body is soft and slightly swollen with water."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This is Castform's form when pelted by rain. In an experiment where it was placed in a shower, this Pokémon didn't change to this form."
+	}],
+	"351snowy": [{
+		"version_id": "Sun",
+		"flavor_text": "This is the form Castform takes when covered in snow. Its body becomes an ice-like material, with a temperature near 23 degrees Fahrenheit."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This is Castform's form when caught in a hailstorm. Its cold skin is as smooth as ice."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is the form Castform takes when hit by hail. In an experiment where it was placed in a freezer, it didn't change to this form."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This is Castform's form when caught in a hailstorm. Its whole body is chilled, and its skin is partially frozen!"
+	}],
 	"352": [{
 		"version_id": "Ruby",
 		"flavor_text": "KECLEON is capable of changing its body colors at will to blend in with its surroundings. There is one exception - this Pokémon can’t change the zigzag pattern on its belly."
@@ -25034,6 +25906,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Resentment at being cast off made it spring into being. Some say that treating it well will satisfy it, and it will once more become a stuffed toy."
+	}],
+	"354mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Extraordinary energy amplifies its cursing power to such an extent that it can't help but curse its own Trainer."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Extraordinary energy amplifies its cursing power to such an extent that it can't help but curse its own Trainer."
 	}],
 	"355": [{
 		"version_id": "Ruby",
@@ -25328,6 +26207,19 @@
 		"version_id": "Ultra Moon",
 		"flavor_text": "The elderly call it the disaster Pokémon and detest it, but interest in its power to predict disasters is on the rise."
 	}],
+	"359mega": [{
+		"version_id": "Sun",
+		"flavor_text": "When this Pokémon whips the winglike fur on its back as though beating its wings, it sends an intimidating aura flying at its opponents."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "As the energy of Mega Evolution fills it, its fur bristles. What you see on its back are not true wings, and this Pokémon isn't able to fly."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Normally, it dislikes fighting, so it really hates changing to this form for battles."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It converts the energy from Mega Evolution into an intimidating aura. Fainthearted people expire from shock at the sight of it."
+	}],
 	"360": [{
 		"version_id": "Ruby",
 		"flavor_text": "WYNAUT can always be seen with a big, happy smile on its face. Look at its tail to determine if it is angry. When angered, this Pokémon will be slapping the ground with its tail."
@@ -25516,6 +26408,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its actual body is a rock that isn't particularly hard. Glalie absorbs moisture from the air and drapes itself in an armor of ice."
+  }],
+  "362mega": [{
+		"version_id": "Sun",
+		"flavor_text": "The excess energy from Mega Evolution spilled over from its mouth, breaking its jaw. It spews endless blizzards."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It envelops prey in its mouth, freezing them instantly. But its jaw is dislocated, so it's unable to eat them."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "When it spews stupendously cold air from its broken mouth, the entire area around it gets whited out."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "The power of Mega Evolution was so strong that it smashed Glalie's jaw. Its inability to eat very well leaves Glalie irritated."
 	}],
 	"363": [{
 		"version_id": "Ruby",
@@ -26199,6 +27104,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Thanks to its fervent wishes, the cells in its body finally mutated, and at last it has its heart's desire—wings."
+  }],
+  "373mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Anyone standing in its path gets sliced right in two, while this Pokémon continues its flight without interruption."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "\"Mega Evolution fuels its brutality, and it may even turn on the Trainer who raised it. It's been dubbed \"\"the blood-soaked crescent.\"\"\""
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "The stress of its two proud wings becoming misshapen and stuck together because of strong energy makes it go on a rampage."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It puts its forelegs inside its shell to streamline itself for flight. Salamence flies at high speeds over all kinds of topographical features."
 	}],
 	"374": [{
 		"version_id": "Ruby",
@@ -26400,6 +27318,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It analyzes its opponents with more accuracy than a supercomputer, which enables it to calmly back them into a corner."
+  }],
+  "376mega": [{
+		"version_id": "Sun",
+		"flavor_text": "This form results from one Metagross, one Metang, and two Beldum linking up."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Mega Evolution stimulated its brain. It emerged as a ruthless Pokémon that will clutch at any means of ensuring its victories."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Its intellect surpasses its previous level, resulting in battles so cruel, they'll make you want to cover your eyes."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "When it knows it can't win, it digs the claws on its legs into its opponent and starts the countdown to a big explosion."
 	}],
 	"377": [{
 		"version_id": "Ruby",
@@ -28744,6 +29675,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It's notably wary and has a dislike of fighting, but at the same time, it can deliver powerful kicks with its lithe legs."
+  }],
+  "428mega": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "It swings its ears like whips and strikes its enemies with them. It has an intensely combative disposition."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Mega Evolution awakens its combative instincts. It has shed any fur that got in the way of its attacks."
 	}],
 	"429": [{
 		"version_id": "Diamond",
@@ -29514,6 +30452,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its fine scales don't just reduce wind resistance—their sharp edges also cause injury to any opponent who attacks it."
+  }],
+  "445mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Excess energy melted its arms and wings, transforming them into giant scythes."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Excess energy melted its arms and wings, transforming them into giant scythes."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Its arms and wings melted into something like scythes. Mad with rage, it rampages on and on."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its disposition is more vicious than before its Mega Evolution. Garchomp carves its opponents up with the scythes on both arms."
 	}],
 	"446": [{
 		"version_id": "Diamond",
@@ -29670,6 +30621,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Lucario reads its opponent's feelings with its aura waves. It finds out things it would rather not know, so it gets stressed out easily."
+  }],
+  "448mega": [{
+		"version_id": "Sun",
+		"flavor_text": "Black streaks all over its body show where its auras and the energy of Mega Evolution intermingled and raced through it."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It readies itself to face its enemies by focusing its mental energies. Its fighting style can be summed up in a single word: heartless."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Its aura has expanded due to Mega Evolution. Governed only by its combative instincts, it strikes enemies without mercy."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Bathed in explosive energy, its combative instincts have awakened. For its enemies, it has no mercy whatsoever."
 	}],
 	"449": [{
 		"version_id": "Diamond",
@@ -32384,7 +33348,7 @@
 		"flavor_text": "This ill-tempered Pokémon is dangerous because when it’s angry, it shoots lightning from its mane in all directions."
 	}, {
 		"version_id": "Black 2",
-		"flavor_text": "When this ill-tempered Pokémon runs wild, it shoots lightning from its mane in all directions."
+		"flavor_text": "When this ill-tempered Pok��mon runs wild, it shoots lightning from its mane in all directions."
 	}, {
 		"version_id": "White 2",
 		"flavor_text": "When this ill-tempered Pokémon runs wild, it shoots lightning from its mane in all directions."
@@ -33165,6 +34129,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It's well liked by other Pokémon because of its beauty. The flower on its head needs constant care, or it will soon wither and rot."
+  }],
+  "550blue-striped": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Even Basculin, which devours everything it can with its huge jaws, is nothing more than food to organisms stronger than itself."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Some people call it “the thug of the lake.” Whether the differences in color are meaningful is not yet known."
 	}],
 	"551": [{
 		"version_id": "Black",
@@ -36303,6 +37274,13 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It gives its own power to flowers, pouring its heart into caring for them. Floette never forgives anyone who messes up a flower bed."
+  }],
+  "670eternal": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "The flower it's holding can no longer be found blooming anywhere. It's also thought to contain terrifying power."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Terrifying energy is concealed within its ominous flower, but Floette still swings it about innocently."
 	}],
 	"671": [{
 		"version_id": "X",
@@ -37155,6 +38133,32 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "This is Zygarde's form when it has gathered 50% of its cells. It wipes out all those who oppose it, showing not a shred of mercy."
+  }],
+  "71810%": [{
+		"version_id": "Sun",
+		"flavor_text": "Its sharp fangs make short work of finishing off its enemies, but it's unable to maintain this body indefinitely. After a period of time, it falls apart."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This is Zygarde's form when about 10% of its cells have been gathered. It runs across the land at speeds greater than 60 mph."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is Zygarde's form when about 10% of its cells have been gathered. It runs across the land at speeds greater than 60 mph."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Born when around 10% of Zygarde's cells have been gathered from all over, this form is skilled in close-range combat."
+	}],
+	"718complete": [{
+		"version_id": "Sun",
+		"flavor_text": "This is Zygarde's form at times when it uses its overwhelming power to suppress those who endanger the ecosystem."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This is Zygarde's 100% form. It has enough power to overwhelm even Xerneas or Yveltal."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Born when all of Zygarde's cells have been gathered together, it uses force to neutralize those who harm the ecosystem."
 	}],
 	"719": [{
 		"version_id": "X",
@@ -37389,7 +38393,7 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It spits a sticky thread to stop opponents in their tracks, and then it grabs them in its sharp, sturdy mandibles to take them down."
-	}],
+  }],
 	"737": [{
 		"version_id": "Sun",
 		"flavor_text": "Its body is capable of storing electricity. On camping trips, people are grateful to have one around."
@@ -37415,7 +38419,7 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Vikavolt flusters opponents with acrobatic flying maneuvers. This creates an opening for it to deliver an electric beam attack."
-	}],
+  }],
 	"739": [{
 		"version_id": "Sun",
 		"flavor_text": "While guarding its weak points with its pincers, it looks for an opening and unleashes punches. When it loses, it foams at the mouth and faints."
@@ -37467,6 +38471,45 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "It feeds on the nectar and pollen of flowers. Because it's able to sense auras, it can identify which flowers are about to bloom."
+  }],
+  "741pom-pom": [{
+		"version_id": "Sun",
+		"flavor_text": "This Oricorio has sipped bright yellow nectar. Its bright, cheerful dance melts the hearts of its enemies."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It creates an electric charge by rubbing its feathers together. It dances over to its enemies and delivers shocking electrical punches."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It lifts its opponents' spirits with its cheerful dance moves. When they let their guard down, it electrocutes them with a jolt."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Oricorio has drunk bright yellow nectar. When it sees someone looking glum, it will try to cheer them up with a dance."
+	}],
+	"741pa'u": [{
+		"version_id": "Sun",
+		"flavor_text": "This Oricorio relaxes by swaying gently. This increases its psychic energy, which it then fires at its enemies."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This Oricorio has sipped pink nectar. Its enemies' hearts melt at the sight of its gently swaying hips."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It relaxes its opponents with its elegant dancing. When they let their guard down, it showers them with psychic energy."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Oricorio has sipped pink nectar. It gets so caught up in its dancing that it sometimes doesn't hear its Trainer's orders."
+	}],
+	"741sensu": [{
+		"version_id": "Sun",
+		"flavor_text": "This Oricorio has sipped purple nectar. Its elegant, attractive dance will send the minds and hearts of its enemies to another world."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It summons the dead with its dreamy dancing. From their malice, it draws power with which to curse its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It charms its opponents with its refined dancing. When they let their guard down, it places a curse on them that will bring on their demise."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This Oricorio has sipped purple nectar. Some dancers use its graceful, elegant dancing as inspiration."
 	}],
 	"743": [{
 		"version_id": "Sun",
@@ -37506,6 +38549,26 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Its quick movements confuse its enemies. Well equipped with claws and fangs, it also uses the sharp rocks in its mane as weapons."
+  }],
+  "745midnight": [{
+		"version_id": "Sun",
+		"flavor_text": "The more intimidating the opponent it faces, the more this Pokémon's blood boils. It will attack with no regard for its own safety."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "It goads its enemies into attacking, withstands the hits, and in return, delivers a headbutt, crushing their bones with its rocky mane."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It has no problem ignoring orders it doesn't like. It doesn't seem to mind getting hurt at all—as long as it can finish off its opponent."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "They live alone without forming packs. They will only listen to orders from Trainers who can draw out their true power."
+	}],
+	"745dusk": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Bathed in the setting sun of evening, Lycanroc has undergone a special kind of evolution. An intense fighting spirit underlies its calmness."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This strange form is the result of its evolving at dusk. It's very rare in Alola."
 	}],
 	"746": [{
 		"version_id": "Sun",
@@ -37519,6 +38582,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "When it's in a jam, its shining eyes attract others of its kind. The light from its eyes is visible almost 25 miles away."
+  }],
+  "746school": [{
+		"version_id": "Sun",
+		"flavor_text": "Weak Wishiwashi school together to concentrate their power. Their united force makes them the demon of the sea, feared near and far."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "At their appearance, even Gyarados will flee. When they team up to use Water Gun, its power exceeds that of Hydro Pump."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Wishiwashi assemble in this formation to face off against strong foes. It boasts a strength that earned it the name “demon of the sea.”"
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Called “demon of the sea” by some, when Wishiwashi are injured in battle and their numbers dwindle, they become a regular school."
 	}],
 	"747": [{
 		"version_id": "Sun",
@@ -37870,6 +38946,227 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Through the bond it formed with its Trainer, its will was strengthened, and it was able to destroy its control mask."
+  }],
+  "773bug": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773dark": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773dragon": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773electric": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773fairy": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773fighting": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773fire": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773flying": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773ghost": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773grass": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773ground": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773ice": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773poison": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773psychic": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773rock": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773steel": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
+	}],
+	"773water": [{
+		"version_id": "Sun",
+		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
 	}],
 	"774": [{
 		"version_id": "Sun",
@@ -37935,6 +39232,32 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "A gust of wind revealed what hides under this Pokémon's rag to a passing Trainer, who went home and died painfully that very night."
+  }],
+  "778busted": [{
+		"version_id": "Sun",
+		"flavor_text": "After going to all the effort of disguising itself, its neck was broken. Whatever is inside is probably unharmed, but it's still feeling sad."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "If its neck is broken or its rag torn during an attack, it works through the night to patch it."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It stands in front of a mirror, trying to fix its broken neck as if its life depended on it. It has a hard time getting it right, so it's crying inside."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
+	}],
+	"778busted-totem": [{
+		"version_id": "Sun",
+		"flavor_text": "After going to all the effort of disguising itself, its neck was broken. Whatever is inside is probably unharmed, but it's still feeling sad."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "If its neck is broken or its rag torn during an attack, it works through the night to patch it."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "It stands in front of a mirror, trying to fix its broken neck as if its life depended on it. It has a hard time getting it right, so it's crying inside."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
 	}],
 	"779": [{
 		"version_id": "Sun",
@@ -38221,6 +39544,27 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Light is the source of its energy. If it isn't devouring light, impurities build up in it and on it, and Necrozma darkens and stops moving."
+  }],
+  "800dusk-mane": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is its form while it is devouring the light of Solgaleo. It pounces on foes and then slashes them with the claws on its four limbs and back."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This is Necrozma's form while it's absorbing the power of Solgaleo, making it extremely ferocious and impossible to control."
+	}],
+	"800dawn-wings": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "Lunala no longer has a will of its own. Now under the control of Necrozma, it continuously expels all of its energy."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "This is its form while it's devouring the light of Lunala. It grasps foes in its giant claws and rips them apart with brute force."
+	}],
+	"800ultra": [{
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is its form when it has absorbed overwhelming light energy. It fires laser beams from all over its body."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "The light pouring out from all over its body affects living things and nature, impacting them in various ways."
 	}],
 	"801": [{
 		"version_id": "Sun",
@@ -38234,6 +39578,19 @@
 	}, {
 		"version_id": "Ultra Moon",
 		"flavor_text": "Built roughly 500 years ago by a scientist, the part called the Soul-Heart is the actual life-form."
+  }],
+  "801original": [{
+		"version_id": "Sun",
+		"flavor_text": "This beautiful form reflects Magearna's appearance when first presented to a king's daughter 500 years ago."
+	}, {
+		"version_id": "Moon",
+		"flavor_text": "This gorgeous Magearna looks as it did at the time of its invention. Its luxurious decoration pleased the king's daughter."
+	}, {
+		"version_id": "Ultra Sun",
+		"flavor_text": "This is its form from almost 500 years ago. Its body is nothing more than a container—its artificial heart is the actual life-form."
+	}, {
+		"version_id": "Ultra Moon",
+		"flavor_text": "It functions thanks to its artificial soul. The vivid decoration is proof that it was presented as a gift to royalty."
 	}],
 	"802": [{
 		"version_id": "Sun",
@@ -38380,1099 +39737,5 @@
 	}, {
 		"version_id": "Shield",
 		"flavor_text": "Zamazenta’s regal and majestic movements overwhelm any opponents that dare face it. Its body is covered in what seems to be a shield."
-	}],
-	"25starter": [{
-		"version_id": "Let's Go",
-		"flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
-	}],
-	"133starter": [{
-		"version_id": "Let's Go",
-		"flavor_text": "It can evolve into a variety of forms. Eevee's genes are the key to solving the mysteries of Pokémon evolution."
-	}],
-	"19alola": [{
-		"version_id": "Sun",
-		"flavor_text": "When the sun goes down, it becomes active. It runs around town on a chase for good food for the boss of its nest—Raticate."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "With its incisors, it gnaws through doors and infiltrates people’s homes. Then, with a twitch of its whiskers, it steals whatever food it finds."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It shows no interest in anything that isn't fresh. If you take it shopping with you, it will help you pick out ingredients."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Night after night, they sneak into people's homes seeking food. A massive outbreak of them has become an issue of public concern."
-	}],
-	"20alola": [{
-		"version_id": "Sun",
-		"flavor_text": "It forms a group of Rattata, which it assumes command of. Each group has its own territory, and disputes over food happen often."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This gourmet Pokémon is particular about the taste and freshness of its food. Restaurants where Raticate live have a good reputation."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It has an incredibly greedy personality. Its nest is filled with so much food gathered by Rattata at its direction, it can't possibly eat it all."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It commands a nest of Rattata. Different nests don't get along, whipping up severe fights over feeding grounds."
-	}],
-	"20alola-totem": [{
-		"version_id": "Sun",
-		"flavor_text": "It forms a group of Rattata, which it assumes command of. Each group has its own territory, and disputes over food happen often."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This gourmet Pokémon is particular about the taste and freshness of its food. Restaurants where Raticate live have a good reputation."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It has an incredibly greedy personality. Its nest is filled with so much food gathered by Rattata at its direction, it can't possibly eat it all."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It commands a nest of Rattata. Different nests don't get along, whipping up severe fights over feeding grounds."
-	}],
-	"25original": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"25hoenn": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"25sinnoh": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"25unova": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"25kalos": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"25alola": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"25partner": [{
-		"version_id": "Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer’s cap. Since the cap’s not the right size, the fit is a bit loose."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This form of Pikachu is somewhat rare. It wears the hat of its Trainer, who is also its partner."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Pikachu is wearing its Trainer's cap. Since the cap's not the right size, the fit is a bit loose."
-	}],
-	"26alola": [{
-		"version_id": "Sun",
-		"flavor_text": "It only evolves to this form in the Alola region. According to researchers, its diet is one of the causes of this change."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It uses psychokinesis to control electricity. It hops aboard its own tail, using psychic power to lift the tail and move about while riding it."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "When you rub its cheeks, a sweet fragrance comes wafting out. However, you'll also get a light shock!"
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It focuses psychic energy into its tail and rides it like it's surfing. Another name for this Pokémon is “hodad.”"
-	}],
-	"27alola": [{
-		"version_id": "Sun",
-		"flavor_text": "It lives on snowy mountains. Its steel shell is very hard—so much so, it can't roll its body up into a ball."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "An ancient tradition of Alolan festivals, still carried on to this day, is a competition to slide Sandshrew across ice as far as one can."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "After fleeing a volcanic eruption, it ended up moving to an area of snowy mountains. Its ice shell is as hard as steel."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately."
-	}],
-	"28alola": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Fleeing a volcanic eruption, it settled on a snowy mountain. As it races through the snowfields, it sends up a spray of snow."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Pokémon's steel spikes are sheathed in ice. Stabs from these spikes cause deep wounds and severe frostbite as well."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It runs across snow-covered plains at high speeds. It developed thick, sharp claws to plow through the snow."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "iceberg without slipping."
-	}],
-	"37alola": [{
-		"version_id": "Sun",
-		"flavor_text": "It exhales air colder than -58 degrees Fahrenheit. Elderly people in Alola call this Pokémon by an older name—Keokeo."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "In hot weather, this Pokémon makes ice shards with its six tails and sprays them around to cool itself off."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "If you carelessly approach it because it's cute, the boss of the pack, Ninetales, will appear and freeze you."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "They live together in a skulk, helping one another. Before eating their prey, they freeze it solid with their –58 degree Fahrenheit breath."
-	}],
-	"38alola": [{
-		"version_id": "Sun",
-		"flavor_text": "It creates drops of ice in its coat and showers them over its enemies. Anyone who angers it will be frozen stiff in an instant."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Possessing a calm demeanor, this Pokémon was revered as a deity incarnate before it was identified as a regional variant of Ninetales."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "The reason it guides people all the way down to the mountain's base is that it wants them to hurry up and leave."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Some said that deities visited mountains where Ninetales live, so in times long past, no one was allowed to go into those mountains."
-	}],
-	"50alola": [{
-		"version_id": "Sun",
-		"flavor_text": "Its head sports an altered form of whiskers made of metal. When in communication with its comrades, its whiskers wobble to and fro."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Its golden hairs function as sensors. It pokes them out of its burrow to monitor its surroundings."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Although it's powerful enough to dig right through volcanic rock, it doesn't allow itself to be seen very often."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "The need to dig through volcanic rock in the ground has made them more powerful than the Diglett of other regions."
-	}],
-	"51alola": [{
-		"version_id": "Sun",
-		"flavor_text": "Its shining gold hair provides it with protection. It's reputed that keeping any of its fallen hairs will bring bad luck."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "These Pokémon are cherished in the Alola region, where they are thought to be feminine deities of the land incarnate."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Its metallic whiskers are heavy, so it's not very fast, but it has the power to dig through bedrock."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its shining gold whiskers are advanced sensors that can detect vibrations from sounds several miles away."
-	}],
-	"52alola": [{
-		"version_id": "Sun",
-		"flavor_text": "This Pokémon was not originally found in Alola. Human actions caused a surge in their numbers, and they went feral. They're prideful and crafty."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "When its delicate pride is wounded, or when the gold coin on its forehead is dirtied, it flies into a hysterical rage."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It's impulsive, selfish, and fickle. It's very popular with some Trainers who like giving it the attention it needs."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "A royal house that flourished in the distant past brought it here from another region. Meowth is both selfish"
-	}],
-	"53alola": [{
-		"version_id": "Sun",
-		"flavor_text": "Its round face and smooth coat—softer than the most high-class velvet—have made this a very popular Pokémon in Alola."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It looks down on everyone other than itself. Its preferred tactics are sucker punches and blindside attacks."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "In contrast to its lovely face, it's so brutal that it tortures its weakened prey rather than finishing them off."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its round face is a symbol of wealth. Persian that have bigger, plumper faces are considered more beautiful."
-	}],
-	"65mega": [{
-		"version_id": "Sun",
-		"flavor_text": "As a result of Mega Evolution, its power has been entirely converted into psychic energy, and it has lost all strength in its muscles."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Its hidden psychic power has been unleashed. A glance at someone gives it knowledge of the course of that person’s life, from birth to death."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It sends out psychic power from the red organ on its forehead to foresee its opponents' every move."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Having traded away its muscles, Alakazam's true power has been unleashed. With its psychic powers, it can foresee all things."
-	}],
-	"74alola": [{
-		"version_id": "Sun",
-		"flavor_text": "Its body is a magnetic stone. Iron sand attaches firmly to the portions of its body that are particularly magnetic."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "If you accidentally step on a Geodude sleeping on the ground, you'll hear a crunching sound and feel a shock ripple through your entire body."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "If you mistake it for a rock and step on it, it will headbutt you in anger. In addition to the pain, it will also zap you with a shock."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Geodude compete against each other with headbutts. The iron sand on their heads will stick to whichever one has stronger magnetism."
-	}],
-	"75alola": [{
-		"version_id": "Sun",
-		"flavor_text": "Its preferred food is dravite. After it has eaten this mineral, crystals form inside the Pokémon, rising to the surface of part of its body."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "They eat rocks and often get into a scrap over them. The shock of Graveler smashing together causes a flash of light and a booming noise."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "When two Graveler fight each other, it fills the surroundings with flashes of light and sound. People call it the “fireworks of the earth.”"
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Graveler's entire body is tinged with electricity due to the stones it likes to eat. It's very quick-tempered."
-	}],
-	"76alola": [{
-		"version_id": "Sun",
-		"flavor_text": "It fires rocks charged with electricity. Even if the rock isn't fired that accurately, just grazing an opponent will cause numbness and fainting."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Because it can't fire boulders at a rapid pace, it's been known to seize nearby Geodude and fire them from its back."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It's grumpy and stubborn. If you upset it, it discharges electricity from the surface of its body and growls with a voice like thunder."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It shoots large rocks that are charged with electricity. Tremendous electric shocks are flung out across the whole area of impact."
-	}],
-	"80mega": [{
-		"version_id": "Sun",
-		"flavor_text": "All the energy from Mega Evolution poured into the Shellder on its tail, leaving Slowpoke to be swallowed whole."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "When bathed in the energy of Mega Evolution, Shellder converts into impregnable armor. There is virtually no change in Slowpoke."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Tremendous energy strengthened the power of the Shellder on its tail, but it doesn't really affect Slowpoke."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Tremendous energy strengthened the power of the Shellder on its tail, but it doesn't really affect Slowpoke."
-	}],
-	"88alola": [{
-		"version_id": "Sun",
-		"flavor_text": "A Grimer, which had been brought in to solve a problem with garbage, developed over time into this form."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "The crystals on Grimer's body are lumps of toxins. If one falls off, lethal poisons leak out."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "There are a hundred or so of them living in Alola's waste-disposal site. They're all hard workers who eat a lot of trash."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Brought to Alola to solve the garbage problem, Grimer seems to relish any and all kinds of trash."
-	}],
-	"89alola": [{
-		"version_id": "Sun",
-		"flavor_text": "The garbage it eats causes continuous chemical changes in its body, which produce its exceedingly vivid coloration."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "While it's unexpectedly quiet and friendly, if it's not fed any trash for a while, it will smash its Trainer's furnishings and eat up the fragments."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "There are over a hundred kinds of poison inside its body. Chemical reactions between different poisons are the source of its vitality."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "What look like fangs and claws are actually crystallized poison that will afflict you at a mere touch, so don't get too close."
-	}],
-	"94mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Gengar's relationships are warped. It has no interest in opponents unless it perceives them as prey."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "The energy of Mega Evolution awakened it. It sinks into another dimension, where it keeps a patient watch for its chance to attack."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It tries to take the lives of anyone and everyone. It will even try to curse the Trainer who is its master!"
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Mega Evolution has made it possible for Gengar to access other dimensions. Its entire body is brimming with strange power."
-	}],
-	"103alola": [{
-		"version_id": "Sun",
-		"flavor_text": "Alola is the best environment for this Pokémon. Local people take pride in its appearance, saying this is how Exeggutor ought to look."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "As it grew taller and taller, it outgrew its reliance on psychic powers, while within it awakened the power of the sleeping dragon."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Exeggutor is the pride of the Alolan people. Its image is carved into historical buildings and murals."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It swings its long neck like a whip and smacks its opponents. This makes Exeggutor itself dizzy, too."
-	}],
-	"105alola": [{
-		"version_id": "Sun",
-		"flavor_text": "The bones it possesses were once its mother's. Its mother's regrets have become like a vengeful spirit protecting this Pokémon."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "The rich greenery of the Alola region is hard on Marowak. It controls fire to stay alive."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning."
-	}],
-	"105alola-totem": [{
-		"version_id": "Sun",
-		"flavor_text": "The bones it possesses were once its mother's. Its mother's regrets have become like a vengeful spirit protecting this Pokémon."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "The rich greenery of the Alola region is hard on Marowak. It controls fire to stay alive."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "When it beats opponents with its bone, the cursed flames spread to them. No amount of water will stop those flames from burning."
-	}],
-	"115mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Mega Kangaskhan's strength derives from the mother's happiness about her child's growth. Watching it grow up keeps her spirits high."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Thanks to Mega Evolution, its child grows. But as the child is good only at fighting and nothing else, its mother feels uneasy about its future."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "The explosive energy the child is bathed in causes temporary growth. The mother is beside herself with worry about it."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "When the mother sees the back of her Mega- Evolved child, it makes her think of the day when her child will inevitably leave her."
-	}],
-	"127mega": [{
-		"version_id": "Sun",
-		"flavor_text": "The influence of Mega Evolution leaves it in a state of constant excitement. It pierces enemies with its two large horns before shredding them."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Bathed in the energy of Mega Evolution, its wings become unusually developed. It flies at speeds of approximately 30 mph."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "After Mega Evolution, it becomes able to fly. Perhaps because it's so happy, it rarely touches the ground."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It zips around at blistering speeds, looking for an opening to skewer its opponent on its giant pincers."
-	}],
-	"130mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Mega Evolution also affects its brain, leaving no other function except its destructive instinct to burn everything to cinders."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Mega Evolution also affects its brain, leaving no other function except its destructive instinct to burn everything to cinders."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Mega Evolution places a burden on its body. The stress causes it to become all the more ferocious."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It zooms out of the water at Mach speeds. Even large ships caught in its path are split cleanly in two!"
-	}],
-	"142mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Part of its body has become stone. Some scholars claim that this is Aerodactyl's true appearance."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "When it Mega Evolves, it becomes more vicious than ever before. Some say that's because its excess of power is causing it pain."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "When it Mega Evolves, it becomes more vicious than ever before. Some say that's because its excess of power is causing it pain."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Mega Evolution awakened some dormant genes, bringing back the sharp rocks that once covered Aerodactyl's entire body."
-	}],
-	"181mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Excess energy from Mega Evolution stimulates its genes, and the wool it had lost grows in again."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Massive amounts of energy intensely stimulated Ampharos's cells, apparently awakening its long-sleeping dragon's blood."
-	}],
-	"212mega": [{
-		"version_id": "Sun",
-		"flavor_text": "The excess energy that bathes this Pokémon keeps it in constant danger of overflow. It can't sustain a battle over long periods of time."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Due to the effects of Mega Evolution, its pincers have taken on a more diabolical form, ripping anything they pinch to shreds."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It stores the excess energy from Mega Evolution, so after a long time passes, its body starts to melt."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It's better at beating things than grasping them. When it battles for a long time, the weight of its pincers becomes too much to bear."
-	}],
-	"214mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "It can grip things with its two horns and lift 500 times its own body weight."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "A tremendous influx of energy builds it up, but when Mega Evolution ends, Heracross is bothered by terrible soreness in its muscles."
-	}],
-	"229mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Its red claws and the tips of its tail are melting from high internal temperatures that are painful to Houndoom itself."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Houndoom's entire body generates heat when it Mega Evolves. Its fearsome fiery breath turns its opponents to ash."
-	}],
-	"248mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Due to the colossal power poured into it, this Pokémon's back split right open. Its destructive instincts are the only thing keeping it moving."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "The effects of Mega Evolution make it more ferocious than ever. It's unclear whether it can even hear its Trainer's orders."
-	}],
-	"302mega": [{
-		"version_id": "Sun",
-		"flavor_text": "The jewel from its chest, which has grown gigantic due to the effects of Mega Evolution, can turn back any attack."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Supporting a giant heavy jewel, it can't change direction very nimbly and is vulnerable to attack from behind."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Bathed in the energy of Mega Evolution, the gemstone on its chest expands, rips through its skin, and falls out."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It blocks any and all attacks with its giant-sized gemstone. However, the stone's a heavy burden, and it limits Mega Sableye's movements."
-	}],
-	"303mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "It has an extremely vicious disposition. It grips prey in its two sets of jaws and tears them apart with raw power."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its two sets of jaws thrash about violently as if they each had a will of their own. One gnash from them can turn a boulder to dust."
-	}],
-	"310mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Mega Evolution fills its body with a tremendous amount of electricity, but it's too much for Manectric to fully control."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Too much electricity has built up in its body, irritating Manectric. Its explosive speed is equal to that of a lightning bolt."
-	}],
-	"319mega": [{
-		"version_id": "Sun",
-		"flavor_text": "The spines sprouting from its head are transformed fangs. If they're injured or broken off, the spines will regenerate countless times."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "As a consequence of Mega Evolution, its combative instincts exploded. The yellow marks it bears are scars from a long history of battles."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "The yellow patterns it bears are old scars. The energy from Mega Evolution runs through them, causing it sharp pain and suffering."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "The moment it charges into its opponent, sharp spikes pop out of Sharpedo's head,"
-	}],
-	"351sunny": [{
-		"version_id": "Sun",
-		"flavor_text": "This is the form Castform takes on the brightest of days. Its skin is unexpectedly hot to the touch, so approach with care."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This is Castform's form when basking in fair weather. Its body is warm and toasty."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is the form Castform takes on bright days. In an experiment where Castform was placed in front of a heater, it didn't change to this form."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Castform changes to this form when it basks in bright sunlight. When you touch its glowing skin, it feels all dried out!"
-	}],
-	"351rainy": [{
-		"version_id": "Sun",
-		"flavor_text": "This is the form Castform takes when soaked with rain. When its body is compressed, water will seep out as if from a sponge."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This is Castform's form during a downpour of rain. Its body retains moisture and gets slippery."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Castform changes to this form when rain hits it. Its body is soft and slightly swollen with water."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This is Castform's form when pelted by rain. In an experiment where it was placed in a shower, this Pokémon didn't change to this form."
-	}],
-	"351snowy": [{
-		"version_id": "Sun",
-		"flavor_text": "This is the form Castform takes when covered in snow. Its body becomes an ice-like material, with a temperature near 23 degrees Fahrenheit."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This is Castform's form when caught in a hailstorm. Its cold skin is as smooth as ice."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is the form Castform takes when hit by hail. In an experiment where it was placed in a freezer, it didn't change to this form."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This is Castform's form when caught in a hailstorm. Its whole body is chilled, and its skin is partially frozen!"
-	}],
-	"354mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Extraordinary energy amplifies its cursing power to such an extent that it can't help but curse its own Trainer."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Extraordinary energy amplifies its cursing power to such an extent that it can't help but curse its own Trainer."
-	}],
-	"359mega": [{
-		"version_id": "Sun",
-		"flavor_text": "When this Pokémon whips the winglike fur on its back as though beating its wings, it sends an intimidating aura flying at its opponents."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "As the energy of Mega Evolution fills it, its fur bristles. What you see on its back are not true wings, and this Pokémon isn't able to fly."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Normally, it dislikes fighting, so it really hates changing to this form for battles."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It converts the energy from Mega Evolution into an intimidating aura. Fainthearted people expire from shock at the sight of it."
-	}],
-	"362mega": [{
-		"version_id": "Sun",
-		"flavor_text": "The excess energy from Mega Evolution spilled over from its mouth, breaking its jaw. It spews endless blizzards."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It envelops prey in its mouth, freezing them instantly. But its jaw is dislocated, so it's unable to eat them."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "When it spews stupendously cold air from its broken mouth, the entire area around it gets whited out."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "The power of Mega Evolution was so strong that it smashed Glalie's jaw. Its inability to eat very well leaves Glalie irritated."
-	}],
-	"373mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Anyone standing in its path gets sliced right in two, while this Pokémon continues its flight without interruption."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "\"Mega Evolution fuels its brutality, and it may even turn on the Trainer who raised it. It's been dubbed \"\"the blood-soaked crescent.\"\"\""
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "The stress of its two proud wings becoming misshapen and stuck together because of strong energy makes it go on a rampage."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It puts its forelegs inside its shell to streamline itself for flight. Salamence flies at high speeds over all kinds of topographical features."
-	}],
-	"376mega": [{
-		"version_id": "Sun",
-		"flavor_text": "This form results from one Metagross, one Metang, and two Beldum linking up."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Mega Evolution stimulated its brain. It emerged as a ruthless Pokémon that will clutch at any means of ensuring its victories."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Its intellect surpasses its previous level, resulting in battles so cruel, they'll make you want to cover your eyes."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "When it knows it can't win, it digs the claws on its legs into its opponent and starts the countdown to a big explosion."
-	}],
-	"428mega": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "It swings its ears like whips and strikes its enemies with them. It has an intensely combative disposition."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Mega Evolution awakens its combative instincts. It has shed any fur that got in the way of its attacks."
-	}],
-	"445mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Excess energy melted its arms and wings, transforming them into giant scythes."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Excess energy melted its arms and wings, transforming them into giant scythes."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Its arms and wings melted into something like scythes. Mad with rage, it rampages on and on."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its disposition is more vicious than before its Mega Evolution. Garchomp carves its opponents up with the scythes on both arms."
-	}],
-	"448mega": [{
-		"version_id": "Sun",
-		"flavor_text": "Black streaks all over its body show where its auras and the energy of Mega Evolution intermingled and raced through it."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It readies itself to face its enemies by focusing its mental energies. Its fighting style can be summed up in a single word: heartless."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Its aura has expanded due to Mega Evolution. Governed only by its combative instincts, it strikes enemies without mercy."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Bathed in explosive energy, its combative instincts have awakened. For its enemies, it has no mercy whatsoever."
-	}],
-	"550blue-striped": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Even Basculin, which devours everything it can with its huge jaws, is nothing more than food to organisms stronger than itself."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Some people call it “the thug of the lake.” Whether the differences in color are meaningful is not yet known."
-	}],
-	"670eternal": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "The flower it's holding can no longer be found blooming anywhere. It's also thought to contain terrifying power."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Terrifying energy is concealed within its ominous flower, but Floette still swings it about innocently."
-	}],
-	"71810%": [{
-		"version_id": "Sun",
-		"flavor_text": "Its sharp fangs make short work of finishing off its enemies, but it's unable to maintain this body indefinitely. After a period of time, it falls apart."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This is Zygarde's form when about 10% of its cells have been gathered. It runs across the land at speeds greater than 60 mph."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is Zygarde's form when about 10% of its cells have been gathered. It runs across the land at speeds greater than 60 mph."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Born when around 10% of Zygarde's cells have been gathered from all over, this form is skilled in close-range combat."
-	}],
-	"718complete": [{
-		"version_id": "Sun",
-		"flavor_text": "This is Zygarde's form at times when it uses its overwhelming power to suppress those who endanger the ecosystem."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This is Zygarde's 100% form. It has enough power to overwhelm even Xerneas or Yveltal."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Born when all of Zygarde's cells have been gathered together, it uses force to neutralize those who harm the ecosystem."
-	}],
-	"735totem": [{
-		"version_id": "Sun",
-		"flavor_text": "When it finds a trace of its prey, it patiently stakes out the location...but it's always snoozing by nightfall."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It adores having Rattata and Raticate for dinner, but as it’s diurnal, it never encounters them. This Pokémon boasts incredible patience."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Although it wasn’t originally found in Alola, this Pokémon was brought over a long time ago when there was a huge Rattata outbreak."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Patient by nature, this Pokémon loses control of itself and pounces when it spots its favorite meal—Rattata!"
-	}],
-	"738totem": [{
-		"version_id": "Sun",
-		"flavor_text": "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It produces electricity via an electrical organ in its abdomen. It overwhelms bird Pokémon with shocking beams of electrical energy."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It has an organ that generates electricity in its abdomen. It concentrates energy in its strong jaws and fires off powerful jolts of electricity."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Vikavolt flusters opponents with acrobatic flying maneuvers. This creates an opening for it to deliver an electric beam attack."
-	}],
-	"741pom-pom": [{
-		"version_id": "Sun",
-		"flavor_text": "This Oricorio has sipped bright yellow nectar. Its bright, cheerful dance melts the hearts of its enemies."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It creates an electric charge by rubbing its feathers together. It dances over to its enemies and delivers shocking electrical punches."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It lifts its opponents' spirits with its cheerful dance moves. When they let their guard down, it electrocutes them with a jolt."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Oricorio has drunk bright yellow nectar. When it sees someone looking glum, it will try to cheer them up with a dance."
-	}],
-	"741pa'u": [{
-		"version_id": "Sun",
-		"flavor_text": "This Oricorio relaxes by swaying gently. This increases its psychic energy, which it then fires at its enemies."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This Oricorio has sipped pink nectar. Its enemies' hearts melt at the sight of its gently swaying hips."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It relaxes its opponents with its elegant dancing. When they let their guard down, it showers them with psychic energy."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Oricorio has sipped pink nectar. It gets so caught up in its dancing that it sometimes doesn't hear its Trainer's orders."
-	}],
-	"741sensu": [{
-		"version_id": "Sun",
-		"flavor_text": "This Oricorio has sipped purple nectar. Its elegant, attractive dance will send the minds and hearts of its enemies to another world."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It summons the dead with its dreamy dancing. From their malice, it draws power with which to curse its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It charms its opponents with its refined dancing. When they let their guard down, it places a curse on them that will bring on their demise."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This Oricorio has sipped purple nectar. Some dancers use its graceful, elegant dancing as inspiration."
-	}],
-	"743totem": [{
-		"version_id": "Sun",
-		"flavor_text": "It rolls up pollen into puffs. It makes many different varieties, some used as food and others used in battle."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Some of Ribombee’s pollen puffs are highly nutritious. They are sometimes sold as supplements."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Rain makes pollen damp, so Ribombee hates rain. When it sees ominous clouds, it finds a hollow in a tree, where it waits stock-still."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It can predict the weather from moisture levels and wind direction. Ribombee only reveals itself when there are a few clear days in a row."
-	}],
-	"745midnight": [{
-		"version_id": "Sun",
-		"flavor_text": "The more intimidating the opponent it faces, the more this Pokémon's blood boils. It will attack with no regard for its own safety."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "It goads its enemies into attacking, withstands the hits, and in return, delivers a headbutt, crushing their bones with its rocky mane."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It has no problem ignoring orders it doesn't like. It doesn't seem to mind getting hurt at all—as long as it can finish off its opponent."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "They live alone without forming packs. They will only listen to orders from Trainers who can draw out their true power."
-	}],
-	"745dusk": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Bathed in the setting sun of evening, Lycanroc has undergone a special kind of evolution. An intense fighting spirit underlies its calmness."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This strange form is the result of its evolving at dusk. It's very rare in Alola."
-	}],
-	"746school": [{
-		"version_id": "Sun",
-		"flavor_text": "Weak Wishiwashi school together to concentrate their power. Their united force makes them the demon of the sea, feared near and far."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "At their appearance, even Gyarados will flee. When they team up to use Water Gun, its power exceeds that of Hydro Pump."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Wishiwashi assemble in this formation to face off against strong foes. It boasts a strength that earned it the name “demon of the sea.”"
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Called “demon of the sea” by some, when Wishiwashi are injured in battle and their numbers dwindle, they become a regular school."
-	}],
-	"773bug": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773dark": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773dragon": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773electric": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773fairy": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773fighting": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773fire": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773flying": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773ghost": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773grass": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773ground": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773ice": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773poison": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773psychic": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773rock": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773steel": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"773water": [{
-		"version_id": "Sun",
-		"flavor_text": "It destroyed its own control mask. It has become capable of changing its type by equipping special memories."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "Upon awakening, its RKS System is activated. By employing specific memories, this Pokémon can adapt its type to confound its enemies."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "Having been awakened successfully, it can change its type and battle—just like a certain Pokémon depicted in legends."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Its capacity to change types unleashed, it shines silver due to the energy springing forth from within."
-	}],
-	"778busted": [{
-		"version_id": "Sun",
-		"flavor_text": "After going to all the effort of disguising itself, its neck was broken. Whatever is inside is probably unharmed, but it's still feeling sad."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "If its neck is broken or its rag torn during an attack, it works through the night to patch it."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It stands in front of a mirror, trying to fix its broken neck as if its life depended on it. It has a hard time getting it right, so it's crying inside."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
-	}],
-	"778busted-totem": [{
-		"version_id": "Sun",
-		"flavor_text": "After going to all the effort of disguising itself, its neck was broken. Whatever is inside is probably unharmed, but it's still feeling sad."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "If its neck is broken or its rag torn during an attack, it works through the night to patch it."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "It stands in front of a mirror, trying to fix its broken neck as if its life depended on it. It has a hard time getting it right, so it's crying inside."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
-	}],
-	"800dusk-mane": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is its form while it is devouring the light of Solgaleo. It pounces on foes and then slashes them with the claws on its four limbs and back."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This is Necrozma's form while it's absorbing the power of Solgaleo, making it extremely ferocious and impossible to control."
-	}],
-	"800dawn-wings": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "Lunala no longer has a will of its own. Now under the control of Necrozma, it continuously expels all of its energy."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "This is its form while it's devouring the light of Lunala. It grasps foes in its giant claws and rips them apart with brute force."
-	}],
-	"800ultra": [{
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is its form when it has absorbed overwhelming light energy. It fires laser beams from all over its body."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "The light pouring out from all over its body affects living things and nature, impacting them in various ways."
-	}],
-	"801original": [{
-		"version_id": "Sun",
-		"flavor_text": "This beautiful form reflects Magearna's appearance when first presented to a king's daughter 500 years ago."
-	}, {
-		"version_id": "Moon",
-		"flavor_text": "This gorgeous Magearna looks as it did at the time of its invention. Its luxurious decoration pleased the king's daughter."
-	}, {
-		"version_id": "Ultra Sun",
-		"flavor_text": "This is its form from almost 500 years ago. Its body is nothing more than a container—its artificial heart is the actual life-form."
-	}, {
-		"version_id": "Ultra Moon",
-		"flavor_text": "It functions thanks to its artificial soul. The vivid decoration is proof that it was presented as a gift to royalty."
 	}]
 }

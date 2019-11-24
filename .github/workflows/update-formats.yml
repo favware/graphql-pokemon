@@ -38,8 +38,12 @@ jobs:
         git config --local user.name "${GITHUB_USER}";
         git checkout -b favware-bot/update-smogon-formats/`date +%F-%H-%M`;
         git commit -sam "feat: update smogon formats";
-        hub pull-request -p -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna"
+        hub config --global hub.protocol https;
+        hub config --global user.email ${GITHUB_EMAIL};
+        hub config --global user.name ${GITHUB_USER};
+        hub remote set-url origin ${GITHUB_REPO_URL}
+        hub pull-request -p -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna";
       env:
         GITHUB_USER: ${GITHUB_ACTOR}
         GITHUB_EMAIL: favwarebot@gmail.com
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}

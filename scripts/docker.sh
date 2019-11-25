@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+RED='\033[0;31m'
+LIGHTRED='\033[1;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+DARKGRAY='\033[1;30m'
+YELLOW='\033[1;33m'
+LIGHTBLUE='\033[1;34m'
+LIGHTPURPLE='\033[1;35m'
+NC='\033[0m' # No Color
+
+fancylog() {
+  printf "$1 \n"
+}
+
+function help() {
+    fancylog "All in One script for AIR projects.
+
+Usage:
+    scripts/docker.sh [COMMAND] [SUBCOMMAND]
+    scripts/docker.sh -h | --help
+
+Options:
+    -h, --help          You're looking at it
+
+Commands:
+    gcloud   Accesses the GCloud section of commands
+    hub      Accesses the Dockerhub section of commands
+
+Subcommands:
+    build    Builds the docker image
+    run      Runs the docker image as container in detached state
+    push     Pushes the docker image to the repository
+    deploy   Gcloud only: Deploys the pushed docker image to Google Cloud Functions
+    remove   Removes the Docker image
+
+The answer is always 42"
+}
+
+gcloudDocker() {
+  case $1 in
+  build)  docker build -t gcr.io/data-sunlight-146313/graphql-pokemon . ;;
+  run)    docker container run --name graphql-pokemon -d --expose 8080 -p 8080:8080 -it gcr.io/data-sunlight-146313/graphql-pokemon:latest ;;
+  push)   docker push gcr.io/data-sunlight-146313/graphql-pokemon ;;
+  deploy) gcloud beta run deploy --image gcr.io/data-sunlight-146313/graphql-pokemon ;;
+  remove) docker rmi -f gcr.io/data-sunlight-146313/graphql-pokemon ;;
+  esac
+}
+
+hubDocker() {
+  case $1 in
+  build)  docker build -t favware/graphql-pokemon . ;;
+  run)    docker container run --name graphql-pokemon -d --expose 8080 -p 8080:8080 -it favware/graphql-pokemon:latest ;;
+  push)   docker push favware/graphql-pokemon ;;
+  remove) docker rmi -f favware/graphql-pokemon ;;
+  esac
+}
+
+case $1 in
+-h)     help ;;
+--help) help ;;
+gcloud) gcloudDocker ${@:2:99} ;;
+hub)    hubDocker ${@:2:99} ;;
+*)      help ;;
+esac

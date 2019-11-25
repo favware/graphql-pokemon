@@ -661,7 +661,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'icescales',
       {
-        shortDesc: 'The Pokémon is protected by ice scales, which halve the damage taken from special moves.',
+        desc: 'The Pokémon is protected by ice scales, which halve the damage taken from special moves.',
+        shortDesc: 'This Pokémon\'s Special Defense is doubled.',
         name: 'Ice Scales',
       }
     ],
@@ -949,7 +950,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
       'moody',
       {
         desc: 'This Pokemon has a random stat other than accuracy or evasion raised by 2 stages and another stat lowered by 1 stage at the end of each turn.',
-        shortDesc: 'Raises a random stat by 2 and lowers another stat by 1 at the end of each turn.',
+        shortDesc: 'Raises a random stat (except accuracy/evasion) by 2 and lowers another stat by 1 at the end of each turn.',
         name: 'Moody',
       }
     ],

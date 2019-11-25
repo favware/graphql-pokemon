@@ -10108,7 +10108,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
     [
       'shellos',
       {
-        species: 'sshellos',
+        species: 'shellos',
         num: 422,
         types: [ 'Water' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -10123,6 +10123,29 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         evos: [ 'gastrodon' ],
         eggGroups: [ 'Water 1', 'Amorphous' ],
         otherFormes: [ 'shelloseast' ],
+      }
+    ],
+    [
+      'shelloseast',
+      {
+        species: 'shellos-east',
+        num: 422,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 76, atk: 48, def: 48, spa: 57, spd: 62, spe: 34,
+        },
+        baseSpecies: 'Shellos',
+        forme: 'East',
+        formeLetter: 'E',
+        baseForme: 'West',
+        abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
+        heightm: 0.3,
+        weightkg: 6.3,
+        color: 'Purple',
+        evos: [ 'gastrodon' ],
+        eggGroups: [ 'Water 1', 'Amorphous' ],
+        otherFormes: [ 'shellos' ],
       }
     ],
     [
@@ -10144,6 +10167,30 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         evoLevel: 30,
         eggGroups: [ 'Water 1', 'Amorphous' ],
         otherFormes: [ 'gastrodoneast' ],
+      }
+    ],
+    [
+      'gastrodoneast',
+      {
+        species: 'gastrodon-east',
+        num: 423,
+        types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 111, atk: 83, def: 68, spa: 92, spd: 82, spe: 39,
+        },
+        baseSpecies: 'Gastrodon',
+        forme: 'East',
+        formeLetter: 'E',
+        baseForme: 'West',
+        abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
+        heightm: 0.9,
+        weightkg: 29.9,
+        color: 'Purple',
+        prevo: 'shellos',
+        evoLevel: 30,
+        eggGroups: [ 'Water 1', 'Amorphous' ],
+        otherFormes: [ 'gastrodon' ],
       }
     ],
     [

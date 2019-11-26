@@ -10108,7 +10108,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
     [
       'shellos',
       {
-        species: 'sshellos',
+        species: 'shellos',
         num: 422,
         types: [ 'Water' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -10123,6 +10123,29 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         evos: [ 'gastrodon' ],
         eggGroups: [ 'Water 1', 'Amorphous' ],
         otherFormes: [ 'shelloseast' ],
+      }
+    ],
+    [
+      'shelloseast',
+      {
+        species: 'shellos-east',
+        num: 422,
+        types: [ 'Water' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 76, atk: 48, def: 48, spa: 57, spd: 62, spe: 34,
+        },
+        baseSpecies: 'Shellos',
+        forme: 'East',
+        formeLetter: 'E',
+        baseForme: 'West',
+        abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
+        heightm: 0.3,
+        weightkg: 6.3,
+        color: 'Purple',
+        evos: [ 'gastrodon' ],
+        eggGroups: [ 'Water 1', 'Amorphous' ],
+        otherFormes: [ 'shellos' ],
       }
     ],
     [
@@ -10144,6 +10167,30 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         evoLevel: 30,
         eggGroups: [ 'Water 1', 'Amorphous' ],
         otherFormes: [ 'gastrodoneast' ],
+      }
+    ],
+    [
+      'gastrodoneast',
+      {
+        species: 'gastrodon-east',
+        num: 423,
+        types: [ 'Water', 'Ground' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 111, atk: 83, def: 68, spa: 92, spd: 82, spe: 39,
+        },
+        baseSpecies: 'Gastrodon',
+        forme: 'East',
+        formeLetter: 'E',
+        baseForme: 'West',
+        abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
+        heightm: 0.9,
+        weightkg: 29.9,
+        color: 'Purple',
+        prevo: 'shellos',
+        evoLevel: 30,
+        eggGroups: [ 'Water 1', 'Amorphous' ],
+        otherFormes: [ 'gastrodon' ],
       }
     ],
     [
@@ -14044,6 +14091,31 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         color: 'White',
         evos: [ 'jellicent' ],
         eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'frillishfemale' ],
+      }
+    ],
+    [
+      'frillishfemale',
+      {
+        species: 'frillish-female',
+        num: 592,
+        baseSpecies: 'frillish',
+        forme: 'female',
+        formeLetter: 'F',
+        types: [ 'Water', 'Ghost' ],
+        genderRatio: { male: 0, female: 1 },
+        baseStats: {
+          hp: 55, atk: 40, def: 50, spa: 65, spd: 85, spe: 40,
+        },
+        abilities: { first: 'Water Absorb', second: 'Cursed Body', hidden: 'Damp' },
+        heightm: 1.2,
+        weightkg: 33,
+        color: 'White',
+        evos: [ 'jellicent' ],
+        eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'frillish' ],
+        specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/frillish-f.gif',
+        specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/frillish-f.gif',
       }
     ],
     [
@@ -14063,6 +14135,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         prevo: 'frillish',
         evoLevel: 40,
         eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'jellicentfemale' ],
+      }
+    ],
+    [
+      'jellicentfemale',
+      {
+        species: 'jellicent-female',
+        num: 593,
+        baseSpecies: 'jellicent',
+        forme: 'female',
+        formeLetter: 'F',
+        types: [ 'Water', 'Ghost' ],
+        genderRatio: { male: 0, female: 1 },
+        baseStats: {
+          hp: 100, atk: 60, def: 70, spa: 85, spd: 105, spe: 60,
+        },
+        abilities: { first: 'Water Absorb', second: 'Cursed Body', hidden: 'Damp' },
+        heightm: 2.2,
+        weightkg: 135,
+        color: 'White',
+        prevo: 'frillish',
+        evoLevel: 40,
+        eggGroups: [ 'Amorphous' ],
+        otherFormes: [ 'jellicent' ],
+        specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/jellicent-f.gif',
+        specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/jellicent-f.gif',
       }
     ],
     [
@@ -16080,9 +16178,9 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'aegislash',
+      'aegislashblade',
       {
-        species: 'aegislash',
+        species: 'aegislash-blade',
         num: 681,
         types: [ 'Steel', 'Ghost' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -20694,6 +20792,9 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         species: 'polteageist-chipped',
         num: 855,
         types: [ 'Ghost' ],
+        baseSpecies: 'polteageist',
+        forme: 'chipped',
+        formeLetter: 'C',
         genderRatio: { male: 0, female: 0 },
         baseStats: {
           hp: 60, atk: 65, def: 65, spa: 134, spd: 114, spe: 70,
@@ -21157,6 +21258,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       {
         species: 'eiscue-noice',
         baseSpecies: 'Eiscue',
+        forme: 'noice',
+        formeLetter: 'N',
         num: 875,
         types: [ 'Ice' ],
         genderRatio: { male: 0.50, female: 0.50 },

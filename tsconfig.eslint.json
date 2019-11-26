@@ -6,7 +6,9 @@
   },
   "include": [
     "src/**/*.ts",
-    "scripts/**/*.ts"
+    "scripts/**/*.ts",
+    "__tests__/**/*.ts",
+    "__tests__/**/*.d.ts"
   ],
   "exclude": [
     "**/node_modules",

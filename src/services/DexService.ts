@@ -248,11 +248,11 @@ export default class DexService {
     return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;
   }
 
-  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
+  private parseSpeciesForSprite(pokemonName: string, baseSpecies?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
     if (specialShinySprite && shiny === true) return specialShinySprite;
     if (specialSprite && shiny === false) return specialSprite;
 
-    if (!baseForme) pokemonName = Util.toLowerSingleWordCase(pokemonName);
+    if (!baseSpecies) pokemonName = Util.toLowerSingleWordCase(pokemonName);
 
     if (pokemonName.match(/^(.+)-(x|y)$/g)) pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
 

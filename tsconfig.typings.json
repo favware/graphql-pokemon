@@ -1,0 +1,16 @@
+
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "typings/",
+    "outDir": "build/",
+    "baseUrl": "./",
+    "declaration": true,
+    "sourceMap": true,
+    "strictPropertyInitialization": true
+  },
+  "include": [
+    "./typings/*.ts"
+  ],
+  "exclude": []
+}

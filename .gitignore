@@ -21,7 +21,7 @@ package-lock.json
 # Logs
 logs
 *.log*
-**/tsconfig.tsbuildinfo
+*.tsbuildinfo
 coverage/
 
 # IDE Settings
@@ -32,3 +32,4 @@ coverage/
 # Transpiled files
 dist/
 build/
+typings/

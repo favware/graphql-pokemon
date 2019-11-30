@@ -4,8 +4,8 @@
   "description": "Expansive Pokemon GraphQL API",
   "author": "@favware",
   "license": "MIT",
-  "types": "build/graphql-pokemon.d.ts",
-  "main": "build/graphql-pokemon.js",
+  "types": "dist/graphql-pokemon.d.ts",
+  "main": "dist/graphql-pokemon.js",
   "homepage": "https://favware.tech/api",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",

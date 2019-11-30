@@ -267,3 +267,159 @@ Object {
   ],
 }
 `;
+
+exports[`getPokemonLearnsetByFuzzy GIVEN a fuzzy pokemon and exact move array THEN returns LearnsetEntry 1`] = `
+Object {
+  "getPokemonLearnsetByFuzzy": Object {
+    "dreamworldMoves": Array [],
+    "eggMoves": Array [],
+    "eventMoves": Array [
+      Object {
+        "generation": 6,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 5,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 4,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 3,
+        "name": "dragondance",
+      },
+    ],
+    "levelUpMoves": Array [
+      Object {
+        "generation": 7,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 6,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 5,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 4,
+        "level": 53,
+        "name": "dragondance",
+      },
+    ],
+    "tmMoves": Array [],
+    "tutorMoves": Array [],
+    "virtualTransferMoves": Array [],
+  },
+}
+`;
+
+exports[`getPokemonLearnsetByFuzzy GIVEN a fuzzy pokemon and fuzzy move array THEN returns LearnsetEntry 1`] = `
+Object {
+  "getPokemonLearnsetByFuzzy": Object {
+    "dreamworldMoves": Array [],
+    "eggMoves": Array [],
+    "eventMoves": Array [
+      Object {
+        "generation": 6,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 5,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 4,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 3,
+        "name": "dragondance",
+      },
+    ],
+    "levelUpMoves": Array [
+      Object {
+        "generation": 7,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 6,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 5,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 4,
+        "level": 53,
+        "name": "dragondance",
+      },
+    ],
+    "tmMoves": Array [],
+    "tutorMoves": Array [],
+    "virtualTransferMoves": Array [],
+  },
+}
+`;
+
+exports[`getPokemonLearnsetByFuzzy GIVEN an exact pokemon and fuzzy move array THEN returns LearnsetEntry 1`] = `
+Object {
+  "getPokemonLearnsetByFuzzy": Object {
+    "dreamworldMoves": Array [],
+    "eggMoves": Array [],
+    "eventMoves": Array [
+      Object {
+        "generation": 6,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 5,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 4,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 3,
+        "name": "dragondance",
+      },
+    ],
+    "levelUpMoves": Array [
+      Object {
+        "generation": 7,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 6,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 5,
+        "level": 61,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 4,
+        "level": 53,
+        "name": "dragondance",
+      },
+    ],
+    "tmMoves": Array [],
+    "tutorMoves": Array [],
+    "virtualTransferMoves": Array [],
+  },
+}
+`;

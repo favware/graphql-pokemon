@@ -2770,6 +2770,7 @@ export interface Query {
   getItemByFuzzy: Array<Scalars['JSONObject']>;
   getItemByName: Scalars['JSONObject'];
   getPokemonLearnset: LearnsetEntry;
+  getPokemonLearnsetByFuzzy: LearnsetEntry;
   getMoveDetailsByFuzzy: MoveEntry;
   getMoveDetailsByName: MoveEntry;
   getMoveByFuzzy: Array<Scalars['JSONObject']>;

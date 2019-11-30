@@ -14,6 +14,6 @@ export default class LearnsetArgs {
   moves: string[];
 
   @Field(() => Int, { nullable: true, description: 'The generation filter to apply' })
-  @IsIn([ 1, 2, 3, 4, 5, 6, 7 ])
+  @IsIn([ 1, 2, 3, 4, 5, 6, 7, 8 ])
   generation?: number;
 }

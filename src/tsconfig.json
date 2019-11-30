@@ -7,5 +7,6 @@
     "declarationMap": false,
     "sourceMap": false
   },
-  "include": ["./**/*.ts", "./assets/*.json"]
+  "include": ["./**/*.ts", "./**/*.json"],
+  "exclude": ["./tsconfig.json"]
 }

@@ -4,11 +4,11 @@ import learnsets from '../assets/learnsets';
 import LearnsetEntry, { LearnsetLevelUpMove, LearnsetMove } from '../structures/LearnsetEntry';
 import pokedex from '../assets/pokedex';
 import Util from '../utils/util';
+import Pokemon from '../utils/pokemon';
 
 export default class LearnsetService {
   public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs) {
     const learnset = learnsets.get(pokemon);
-    const pokemonEntry = pokedex.get(pokemon);
 
     if (!learnset) {
       throw new Error(`No Pokémon found for ${pokemon}`);
@@ -66,11 +66,13 @@ export default class LearnsetService {
     learnsetEntry.eggMoves = eggMoves;
     learnsetEntry.eventMoves = eventMoves;
     learnsetEntry.dreamworldMoves = dreamworldMoves;
-    if (pokemonEntry) {
-      learnsetEntry.sprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite);
-      learnsetEntry.shinySprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite, true);
-      learnsetEntry.color = pokemonEntry.color;
-    }
+
+    const pokemonEntry = pokedex.get(pokemon) as Pokemon.DexEntry;
+    learnsetEntry.sprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite);
+    learnsetEntry.shinySprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite, true);
+    learnsetEntry.num = pokemonEntry.num;
+    learnsetEntry.color = pokemonEntry.color;
+    learnsetEntry.species = pokemonEntry.species;
 
     return learnsetEntry;
   }

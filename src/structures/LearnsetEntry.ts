@@ -64,21 +64,18 @@ export default class LearnsetEntry {
   })
   dreamworldMoves: LearnsetMove[];
 
-  @Field(() => String, {
-    nullable: true,
-    description: 'The sprite for the Pokémon, shortcut to the sprite in DexDetails for creating beautiful displays of learnset data',
-  })
+  @Field(() => Int, { description: 'The dex number for a Pokémon' })
+  num: number;
+
+  @Field(() => String, { description: 'The species name for a Pokémon' })
+  species: string;
+
+  @Field(() => String, { description: 'The sprite for the Pokémon' })
   sprite: string;
 
-  @Field(() => String, {
-    nullable: true,
-    description: 'The shiny sprite for the Pokémon, shortcut to the sprite in DexDetails for creating beautiful displays of learnset data',
-  })
+  @Field(() => String, { description: 'The shiny sprite for the Pokémon' })
   shinySprite: string;
 
-  @Field(() => String, {
-    nullable: true,
-    description: 'The PokéDex colour for the Pokémon, shortcut to the colour in DexDetails for creating beautiful displays of the learnset data',
-  })
+  @Field(() => String, { description: 'The PokéDex colour for the Pokémon' })
   color: string;
 }

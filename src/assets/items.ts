@@ -3287,6 +3287,14 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       }
     ],
     [
+      'utilityumbrella',
+      {
+        name: 'Utility Umbrella',
+        gen: 8,
+        desc: 'Blocks the holder from receiving any effects of Sunny Day/Rain Dance.',
+      }
+    ],
+    [
       'venusaurite',
       {
         name: 'Venusaurite',

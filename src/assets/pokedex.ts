@@ -21674,7 +21674,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         },
         abilities: { first: 'Pressure' },
         // TODO -favna 2019-11-21- Eternatus Eternamax base stats, height and weight will probably be available in due time
-        heightm: 100.00,
+        heightm: 100,
         weightkg: 0,
         color: 'Purple',
         eggGroups: [ 'Undiscovered' ],

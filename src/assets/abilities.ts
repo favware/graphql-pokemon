@@ -287,7 +287,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'dauntlessshield',
       {
-        shortDesc: 'Boosts the Pokémon\'s Defense stat when the Pokémon enters a battle',
+        shortDesc: 'On switch-in, this Pokemon\'s Defense is raised by 1 stage.',
         name: 'Dauntless Shield',
       }
     ],
@@ -334,8 +334,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'disguise',
       {
-        desc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/10 of its max HP. Confusion damage also breaks the disguise.',
-        shortDesc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage.',
+        desc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.',
+        shortDesc: '(Mimikyu only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.',
         name: 'Disguise',
       }
     ],
@@ -737,7 +737,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'intrepidsword',
       {
-        shortDesc: 'Boosts the Pokémon’s Attack stat when the Pokémon enters a battle.',
+        shortDesc: 'On switch-in, this Pokemon\'s Attack is raised by 1 stage.',
         name: 'Intrepid Sword',
       }
     ],

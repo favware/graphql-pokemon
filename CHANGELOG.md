@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/favware/graphql-pokemon/compare/v1.2.2...v1.2.3) (2019-11-30)
+
+
+### Bug Fixes
+
+* **learnsetargs:** allow generation 8 as argument for generation ([f7c8867](https://github.com/favware/graphql-pokemon/commit/f7c8867a7c4d5e0dc3f50249f0e9917dcdcd4556))
+
 ### [1.2.2](https://github.com/favware/graphql-pokemon/compare/v1.2.1...v1.2.2) (2019-11-30)
 
 

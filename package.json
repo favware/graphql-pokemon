@@ -10,14 +10,14 @@
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",
     "test": "jest",
-    "build": "tsc",
-    "watch": "tsc -w",
-    "dev": "nodemon dist/index.js",
+    "build": "tsc -b src",
+    "watch": "tsc -w -b src",
+    "dev": "nodemon build/index.js",
     "commit": "git-cz",
     "cz": "git-cz",
     "up": "yarn upgrade-interactive --latest",
     "sversion": "standard-version",
-    "codegen": "graphql-codegen && tsc -p ./tsconfig.typings.json",
+    "codegen": "graphql-codegen && tsc -b typings",
     "cloud:start": "node index.js",
     "prepublishOnly": "yarn build && yarn codegen",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
@@ -69,7 +69,8 @@
     "typescript": "^3.7.2"
   },
   "files": [
-    "build/"
+    "dist/*",
+    "!dist/*.tsbuildinfo"
   ],
   "engines": {
     "node": ">=10",

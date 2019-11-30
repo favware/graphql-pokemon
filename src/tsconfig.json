@@ -3,7 +3,9 @@
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "../build",
-    "composite": true
+    "composite": true,
+    "declarationMap": false,
+    "sourceMap": false
   },
-  "include": ["./**/*.ts", "./**/*.json", "./assets/flavorText.json"]
+  "include": ["./**/*.ts", "./assets/*.json"]
 }

@@ -60,7 +60,7 @@ gcloudDocker() {
 
   case $1 in
   build) docker build -t gcr.io/data-sunlight-146313/graphql-pokemon . ;;
-  run) docker container run --name graphql-pokemon -d --expose 8080 -p 8080:8080 -it gcr.io/data-sunlight-146313/graphql-pokemon:latest ;;
+  run) docker container run --name graphql-pokemon -d --expose 8080 -p 4000:8080 -it gcr.io/data-sunlight-146313/graphql-pokemon:latest ;;
   push) docker push gcr.io/data-sunlight-146313/graphql-pokemon ;;
   deploy) gcloud beta run deploy --image gcr.io/data-sunlight-146313/graphql-pokemon ;;
   remove) docker rmi -f gcr.io/data-sunlight-146313/graphql-pokemon ;;
@@ -72,7 +72,7 @@ hubDocker() {
 
   case $1 in
   build) docker build -t favware/graphql-pokemon . ;;
-  run) docker container run --name graphql-pokemon -d --expose 8080 -p 8080:8080 -it favware/graphql-pokemon:latest ;;
+  run) docker container run --name graphql-pokemon -d --expose 8080 -p 4000:8080 -it favware/graphql-pokemon:latest ;;
   push) docker push favware/graphql-pokemon ;;
   remove) docker rmi -f favware/graphql-pokemon ;;
   esac

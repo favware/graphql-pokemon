@@ -172,6 +172,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'chlorophyll',
       {
+        desc: 'If Sunny Day is active and this Pokemon is not holding Utility Umbrella, this Pokemon\'s Speed is doubled.',
         shortDesc: 'If Sunny Day is active, this Pokemon\'s Speed is doubled.',
         name: 'Chlorophyll',
       }
@@ -287,7 +288,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'dauntlessshield',
       {
-        shortDesc: 'Boosts the Pokémon\'s Defense stat when the Pokémon enters a battle',
+        shortDesc: 'On switch-in, this Pokemon\'s Defense is raised by 1 stage.',
         name: 'Dauntless Shield',
       }
     ],
@@ -334,8 +335,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'disguise',
       {
-        desc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/10 of its max HP. Confusion damage also breaks the disguise.',
-        shortDesc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage.',
+        desc: 'If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken, it changes to Busted Form, and it loses 1/8 of its max HP. Confusion damage also breaks the disguise.',
+        shortDesc: '(Mimikyu only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.',
         name: 'Disguise',
       }
     ],
@@ -364,7 +365,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'dryskin',
       {
-        desc: 'This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokemon. At the end of each turn, this Pokemon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day.',
+        desc: 'This Pokemon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokemon. At the end of each turn, this Pokemon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day. If this Pokemon is holding Utility Umbrella, the effects of weather are nullified.',
         shortDesc: 'This Pokemon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25x by Fire, 1/8 by Sun.',
         name: 'Dry Skin',
       }
@@ -440,7 +441,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'flowergift',
       {
-        desc: 'If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5.',
+        desc: 'If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. If this Pokemon a Cherrim and it is holding Utility Umbrella, it remains in its regular form and the Attack and Special Defense stats of it and its allies are not boosted. If an ally is holding Utility Umbrella while Cherrim is in its Sunshine Form, they will nto receive the Attack and Special Defense boosts.',
         shortDesc: 'If user is Cherrim and Sunny Day is active, it and allies\' Attack and Sp. Def are 1.5x.',
         name: 'Flower Gift',
       }
@@ -737,7 +738,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'intrepidsword',
       {
-        shortDesc: 'Boosts the Pokémon’s Attack stat when the Pokémon enters a battle.',
+        shortDesc: 'On switch-in, this Pokemon\'s Attack is raised by 1 stage.',
         name: 'Intrepid Sword',
       }
     ],
@@ -783,7 +784,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'leafguard',
       {
-        desc: 'If Sunny Day is active, this Pokemon cannot gain a major status condition and Rest will fail for it.',
+        desc: 'If Sunny Day is active and this Pokemon is not holding Utility Umbrella, this Pokemon cannot gain a major status condition and Rest will fail for it.',
         shortDesc: 'If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.',
         name: 'Leaf Guard',
       }
@@ -1273,7 +1274,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'raindish',
       {
-        desc: 'If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.',
+        desc: 'If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. If this Pokemon is holding Utility Umbrella, its HP does not get restored.',
         shortDesc: 'If Rain Dance is active, this Pokemon heals 1/16 of its max HP each turn.',
         name: 'Rain Dish',
       }
@@ -1728,6 +1729,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'swiftswim',
       {
+        desc: 'If Rain Dance is active and this Pokemon is not holding Utility Umbrella, this Pokemon\'s Speed is doubled.',
         shortDesc: 'If Rain Dance is active, this Pokemon\'s Speed is doubled.',
         name: 'Swift Swim',
       }

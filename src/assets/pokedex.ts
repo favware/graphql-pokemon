@@ -16565,7 +16565,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         heightm: 0.8,
         weightkg: 21.5,
         color: 'Green',
-        eggGroups: [ 'Human-Like' ],
+        eggGroups: [ 'Flying', 'Human-Like' ],
       }
     ],
     [
@@ -16898,7 +16898,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 99.5,
         color: 'Blue',
         evos: [ 'avalugg' ],
-        eggGroups: [ 'Monster' ],
+        eggGroups: [ 'Monster', 'Mineral' ],
       }
     ],
     [
@@ -16917,7 +16917,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         color: 'Blue',
         prevo: 'bergmite',
         evoLevel: 37,
-        eggGroups: [ 'Monster' ],
+        eggGroups: [ 'Monster', 'Mineral' ],
       }
     ],
     [
@@ -16935,7 +16935,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 8,
         color: 'Purple',
         evos: [ 'noivern' ],
-        eggGroups: [ 'Flying' ],
+        eggGroups: [ 'Flying', 'Dragon' ],
       }
     ],
     [
@@ -16954,7 +16954,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         color: 'Purple',
         prevo: 'noibat',
         evoLevel: 48,
-        eggGroups: [ 'Flying' ],
+        eggGroups: [ 'Flying', 'Dragon' ],
       }
     ],
     [
@@ -21674,7 +21674,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         },
         abilities: { first: 'Pressure' },
         // TODO -favna 2019-11-21- Eternatus Eternamax base stats, height and weight will probably be available in due time
-        heightm: 100.00,
+        heightm: 100,
         weightkg: 0,
         color: 'Purple',
         eggGroups: [ 'Undiscovered' ],

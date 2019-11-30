@@ -379,6 +379,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'deod', { alias: 'deod', name: 'Deoxys-Defense' } ],
     [ 'deoxyss', { alias: 'deoxyss', name: 'Deoxys-Speed' } ],
     [ 'deos', { alias: 'deos', name: 'Deoxys-Speed' } ],
+    [ 'eiscuen', { alias: 'eiscuen', name: 'Eiscue-Noice' } ],
     [
       'eternalfloette',
       { alias: 'eternalfloette', name: 'Floette-Eternal' }
@@ -409,6 +410,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
       { alias: 'meloettastep', name: 'Meloetta-Pirouette' }
     ],
     [ 'meowsticfemale', { alias: 'meowsticfemale', name: 'Meowstic-F' } ],
+    [ 'morpekoh', { alias: 'morpekoh', name: 'Morpeko-Hangry' } ],
     [
       'pumpkaboohuge',
       { alias: 'pumpkaboohuge', name: 'Pumpkaboo-Super' }
@@ -2025,6 +2027,27 @@ export const moveAliases = new GraphQLCollection<string, Pokemon.MoveAlias>(
       { alias: 'zultranecrozma', move: 'Light That Burns the Sky' }
     ],
     [ 'zvolttackle', { alias: 'zvolttackle', move: 'Catastropika' } ],
-    [ 'zwater', { alias: 'zwater', move: 'Hydro Vortex' } ]
+    [ 'zwater', { alias: 'zwater', move: 'Hydro Vortex' } ],
+
+    [ 'maxbug', { alias: 'maxbug', move: 'Max Flutterby'} ],
+    [ 'maxdark', { alias: 'maxdark', move: 'Max Darkness'} ],
+    [ 'maxdragon', { alias: 'maxdragon', move: 'Max Wyrmwind'} ],
+    [ 'maxelectric', { alias: 'maxelectric', move: 'Max Lightning'} ],
+    [ 'maxfairy', { alias: 'maxfairy', move: 'Max Starfall'} ],
+    [ 'maxfighting', { alias: 'maxfighting', move: 'Max Knuckle'} ],
+    [ 'maxfire', { alias: 'maxfire', move: 'Max Flare'} ],
+    [ 'maxflying', { alias: 'maxflying', move: 'Max Airstream'} ],
+    [ 'maxghost', { alias: 'maxghost', move: 'Max Phantasm'} ],
+    [ 'maxgrass', { alias: 'maxgrass', move: 'Max Overgrowth'} ],
+    [ 'maxground', { alias: 'maxground', move: 'Max Quake'} ],
+    [ 'maxice', { alias: 'maxice', move: 'Max Hailstorm'} ],
+    [ 'maxnormal', { alias: 'maxnormal', move: 'Max Strike'} ],
+    [ 'maxpoison', { alias: 'maxpoison', move: 'Max Ooze'} ],
+    [ 'maxpsychic', { alias: 'maxpsychic', move: 'Max Mindstorm'} ],
+    [ 'maxrock', { alias: 'maxrock', move: 'Max Rockfall'} ],
+    [ 'maxsteel', { alias: 'maxsteel', move: 'Max Steelspike'} ],
+    [ 'maxwater', { alias: 'maxwater', move: 'Max Geyser'} ],
+    [ 'maxstatus', { alias: 'maxstatus', move: 'Max Guard'} ],
+    [ 'maxprotect', { alias: 'maxprotect', move: 'Max Guard'} ]
   ]
 );

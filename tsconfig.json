@@ -1,22 +1,12 @@
 {
   "extends": "@favware/ts-config",
   "compilerOptions": {
-    "outDir": "dist",
-    "rootDir": "src",
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": false,
-    "sourceMap": false,
     "strictPropertyInitialization": false,
     "resolveJsonModule": true
   },
   "include": [
     "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "src/**/*.js",
-    "typings"
   ]
 }

@@ -32,4 +32,5 @@ coverage/
 # Transpiled files
 dist/
 build/
-typings/
+typings/*
+!typings/tsconfig.json

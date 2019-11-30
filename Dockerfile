@@ -7,7 +7,7 @@ COPY yarn.lock ./
 
 RUN yarn install --frozen-lockfile --no-bin-links --link-duplicates
 
-COPY dist .
+COPY build .
 
 ENV PORT 8080
 

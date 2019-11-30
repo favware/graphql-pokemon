@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/favware/graphql-pokemon/compare/v1.2.3...v1.3.0) (2019-11-30)
+
+
+### Features
+
+* **learnset:** expose num and species in learnset calls ([0297b62](https://github.com/favware/graphql-pokemon/commit/0297b623e41af9de9e9284fc507d3c0a33bbfbde))
+
 ### [1.2.3](https://github.com/favware/graphql-pokemon/compare/v1.2.2...v1.2.3) (2019-11-30)
 
 

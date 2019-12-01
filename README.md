@@ -98,6 +98,4 @@ fetch('https://favware.tech/api', {
 
 # API Documentation
 
-For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api).
-
-**Please note that if you visited my site normally before a cache-clear refresh (`Control + F5` / `Command + Shift + R`) might be required due to the Service Worker caching the regular site data!**
+For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api?ngsw-bypass=true).

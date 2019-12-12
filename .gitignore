@@ -34,3 +34,4 @@ dist/
 build/
 typings/*
 !typings/tsconfig.json
+scripts/out.txt

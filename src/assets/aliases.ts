@@ -367,6 +367,10 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
       'darmanitanzenmode',
       { alias: 'darmanitanzenmode', name: 'Darmanitan-Zen' }
     ],
+    [
+      'darmanitangalarzen',
+      { alias: 'darmanitangalarzen', name: 'Darmanitan-Galar-Zen' }
+    ],
     [ 'deoxysnormal', { alias: 'deoxysnormal', name: 'Deoxys' } ],
     [ 'deon', { alias: 'deon', name: 'Deoxys' } ],
     [ 'deoxysa', { alias: 'deoxysa', name: 'Deoxys-Attack' } ],

@@ -194,9 +194,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100,
         },
         abilities: { first: 'Blaze', hidden: 'Solar Power' },
-        // TODO -favna 2019-11-21- Charizard-GMax base stats, height and weight will probably be available in due time
         heightm: 28,
-        weightkg: 0,
+        weightkg: 100.5,
         color: 'Red',
         eggGroups: [ 'Monster', 'Dragon' ],
       }
@@ -351,9 +350,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 60, atk: 45, def: 50, spa: 90, spd: 80, spe: 70,
         },
         abilities: { first: 'Compound Eyes', hidden: 'Tinted Lens' },
-        // TODO -favna 2019-11-21- Butterfree-GMax base stats, height and weight will probably be available in due time
         heightm: 17,
-        weightkg: 0,
+        weightkg: 96,
         color: 'White',
         eggGroups: [ 'Bug' ],
       }
@@ -734,9 +732,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90,
         },
         abilities: { first: 'Static', hidden: 'Lightning Rod' },
-        // TODO -favna 2019-11-21- Pikachu-GMax base stats, height and weight will probably be available in due time
         heightm: 21,
-        weightkg: 0,
+        weightkg: 18,
         color: 'Yellow',
         eggGroups: [ 'Field', 'Fairy' ],
       }
@@ -1746,9 +1743,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 40, atk: 45, def: 35, spa: 40, spd: 40, spe: 90,
         },
         abilities: { first: 'Pickup', second: 'Technician', hidden: 'Unnerve' },
-        // TODO -favna 2019-11-21- Meowth-GMax base stats, height and weight will probably be available in due time
         heightm: 33,
-        weightkg: 0,
+        weightkg: 12.6,
         color: 'Yellow',
         eggGroups: [ 'Field' ],
       }
@@ -2113,9 +2109,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 90, atk: 130, def: 80, spa: 65, spd: 85, spe: 55,
         },
         abilities: { first: 'Guts', second: 'No Guard', hidden: 'Steadfast' },
-        // TODO -favna 2019-11-21- Machamp-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 4.8,
+        weightkg: 390,
         color: 'Gray',
         eggGroups: [ 'Human-Like' ],
       }
@@ -2840,9 +2835,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 60, atk: 65, def: 60, spa: 130, spd: 75, spe: 110,
         },
         abilities: { first: 'Cursed Body' },
-        // TODO -favna 2019-11-21- Gengar-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 4.2,
+        weightkg: 121.5,
         color: 'Purple',
         eggGroups: [ 'Amorphous' ],
       }
@@ -2954,9 +2948,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75,
         },
         abilities: { first: 'Hyper Cutter', second: 'Shell Armor', hidden: 'Sheer Force' },
-        // TODO -favna 2019-11-21- Kingler-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 3.9,
+        weightkg: 180,
         color: 'Red',
         eggGroups: [ 'Water 3' ],
       }
@@ -3741,9 +3734,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 130, atk: 85, def: 80, spa: 85, spd: 95, spe: 60,
         },
         abilities: { first: 'Water Absorb', second: 'Shell Armor', hidden: 'Hydration' },
-        // TODO -favna 2019-11-21- Lapras-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 7.5,
+        weightkg: 660,
         color: 'Blue',
         eggGroups: [ 'Monster', 'Water 1' ],
       }
@@ -3823,9 +3815,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 55, atk: 55, def: 50, spa: 45, spd: 65, spe: 55,
         },
         abilities: { first: 'Run Away', second: 'Adaptability', hidden: 'Anticipation' },
-        // TODO -favna 2019-11-21- Eevee-GMax base stats, height and weight will probably be available in due time
         heightm: 18,
-        weightkg: 0,
+        weightkg: 19.5,
         color: 'Brown',
         eggGroups: [ 'Field' ],
       }
@@ -4051,9 +4042,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 160, atk: 110, def: 65, spa: 65, spd: 110, spe: 30,
         },
         abilities: { first: 'Immunity', second: 'Thick Fat', hidden: 'Gluttony' },
-        // TODO -favna 2019-11-21- Snorlax-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 10,
+        weightkg: 980,
         color: 'Black',
         eggGroups: [ 'Monster' ],
       }
@@ -13292,7 +13282,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         prevo: 'darumaka',
         evoLevel: 35,
         eggGroups: [ 'Field' ],
-        otherFormes: [ 'darmanitanzen', 'darmanitangalar' ],
+        otherFormes: [ 'darmanitanzen', 'darmanitangalar', 'darmanitangalarzen' ],
       }
     ],
     [
@@ -13340,9 +13330,9 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
-      'darmanitanzengalar',
+      'darmanitangalarzen',
       {
-        species: 'darmanitan-zen-galar',
+        species: 'darmanitan-galar-zen',
         num: 555,
         types: [ 'Ice', 'Fire' ],
         genderRatio: { male: 0.50, female: 0.50 },
@@ -13350,7 +13340,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 105, atk: 160, def: 55, spa: 30, spd: 55, spe: 135,
         },
         baseSpecies: 'Darmanitan-galar',
-        forme: 'Zen-Galar',
+        forme: 'Galar-Zen',
         formeLetter: 'Z',
         abilities: { first: 'Gorilla Tactics', hidden: 'Zen Mode' },
         heightm: 1.7,
@@ -13654,9 +13644,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 80, atk: 95, def: 82, spa: 60, spd: 82, spe: 75,
         },
         abilities: { first: 'Stench', second: 'Weak Armor', hidden: 'Aftermath' },
-        // TODO -favna 2019-11-21- Garbodor-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 10,
+        weightkg: 429.2,
         color: 'Green',
         eggGroups: [ 'Mineral' ],
       }
@@ -19632,9 +19621,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 135, atk: 143, def: 143, spa: 80, spd: 65, spe: 34,
         },
         abilities: { first: 'Iron Fist' },
-        // TODO -favna 2019-11-21- Melmetal-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 20,
+        weightkg: 1000,
         color: 'Gray',
         eggGroups: [ 'Undiscovered' ],
       }
@@ -19920,8 +19908,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         },
         abilities: { first: 'Pressure', second: 'Unnerve', hidden: 'Mirror Armor' },
         heightm: 14,
-        // TODO -favna 2019-11-21- Corviknight-GMax base stats, height and weight will probably be available in due time
-        weightkg: 0,
+        weightkg: 350,
         color: 'Blue',
         eggGroups: [ 'Flying' ],
       }
@@ -19998,9 +19985,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 60, atk: 45, def: 110, spa: 80, spd: 120, spe: 90,
         },
         abilities: { first: 'Swarm', second: 'Frisk', hidden: 'Telepathy' },
-        // TODO -favna 2019-11-21- Orbeetle-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 5,
+        weightkg: 122.4,
         color: 'Red',
         eggGroups: [ 'Bug' ],
       }
@@ -20169,8 +20155,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         },
         abilities: { first: 'Strong Jaw', second: 'Shell Armor', hidden: 'Swift Swim' },
         heightm: 24,
-        // TODO -favna 2019-11-21- Drednaw-GMax base stats, height and weight will probably be available in due time
-        weightkg: 0,
+        weightkg: 346.5,
         color: 'Green',
         eggGroups: [ 'Monster', 'Water 1' ],
       }
@@ -20284,9 +20269,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 110, atk: 80, def: 120, spa: 80, spd: 90, spe: 30,
         },
         abilities: { first: 'Steam Engine', second: 'Flame Body', hidden: 'Flash Fire' },
-        // TODO -favna 2019-11-21- Coalossol-GMax  base stats, height and weight will probably be available in due time
         heightm: 42,
-        weightkg: 0,
+        weightkg: 930,
         color: 'Black',
         eggGroups: [ 'Mineral' ],
       }
@@ -20343,9 +20327,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 70, atk: 110, def: 80, spa: 95, spd: 60, spe: 70,
         },
         abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Hustle' },
-        // TODO -favna 2019-11-21- Flapple-GMax base stats, height and weight will probably be available in due time
         heightm: 24,
-        weightkg: 0,
+        weightkg: 1,
         color: 'Green',
         eggGroups: [ 'Grass', 'Dragon' ],
       }
@@ -20384,9 +20367,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 110, atk: 85, def: 80, spa: 100, spd: 80, spe: 30,
         },
         abilities: { first: 'Ripen', second: 'Gluttony', hidden: 'Thick Fat' },
-        // TODO -favna 2019-11-21- Appletun-GMax base stats, height and weight will probably be available in due time
         heightm: 24,
-        weightkg: 0,
+        weightkg: 40,
         color: 'Green',
         prevo: 'applin',
         evoLevel: 'use Sweet Apple',
@@ -20445,9 +20427,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 72, atk: 107, def: 125, spa: 65, spd: 70, spe: 71,
         },
         abilities: { first: 'Sand Spit', second: 'Shed Skin', hidden: 'Sand Veil' },
-        heightm: 3.8,
-        // TODO -favna 2019-11-21- Sandaconda-GMax base stats, height and weight will probably be available in due time
-        weightkg: 0,
+        heightm: 20,
+        weightkg: 197,
         color: 'Green',
         prevo: 'silicobra',
         evoLevel: 36,
@@ -20626,9 +20607,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 75, atk: 98, def: 70, spa: 114, spd: 70, spe: 75,
         },
         abilities: { first: 'Punk Rock', second: 'Plus', hidden: 'Technician' },
-        // TODO -favna 2019-11-21- Toxtricity-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 5,
+        weightkg: 140,
         color: 'Purple',
         eggGroups: [ 'Human-Like' ],
       }
@@ -20684,9 +20664,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 100, atk: 15, def: 65, spa: 90, spd: 90, spe: 65,
         },
         abilities: { first: 'Flash Fire', second: 'White Smoke', hidden: 'Flame Body' },
-        // TODO -favna 2019-11-21- Centiskorch-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 10,
+        weightkg: 360,
         color: 'Red',
         eggGroups: [ 'Bug' ],
       }
@@ -20879,9 +20858,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 57, atk: 90, def: 95, spa: 136, spd: 103, spe: 29,
         },
         abilities: { first: 'Healer', second: 'Anticipation', hidden: 'Magic Bounce' },
-        // TODO -favna 2019-11-21- Melmetal-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 20,
+        weightkg: 15.3,
         color: 'Pink',
         prevo: 'hattrem',
         evoLevel: 42,
@@ -20960,9 +20938,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 95, atk: 120, def: 65, spa: 95, spd: 75, spe: 60,
         },
         abilities: { first: 'Prankster', second: 'Frisk', hidden: 'Pickpocket' },
-        // TODO -favna 2019-11-21- Grimmsnarl-GMax base stats, height and weight will probably be available in due time
-        heightm: 1.5,
-        weightkg: 61,
+        heightm: 12,
+        weightkg: 183,
         color: 'Purple',
         prevo: 'morgrem',
         evoLevel: 42,
@@ -21139,9 +21116,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 65, atk: 60, def: 75, spa: 110, spd: 121, spe: 64,
         },
         abilities: { first: 'Sweet Veil', hidden: 'Aroma Veil' },
-        // TODO -favna 2019-11-21- Alcremeie-GMax base stats, height and weight will probably be available in due time
         heightm: 30,
-        weightkg: 0,
+        weightkg: 3,
         color: 'White',
         eggGroups: [ 'Fairy', 'Amorphous' ],
       }
@@ -21395,9 +21371,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 122, atk: 130, def: 69, spa: 80, spd: 69, spe: 30,
         },
         abilities: { first: 'Sheer Force', hidden: 'Heavy Metal' },
-        // TODO -favna 2019-11-21- Copperajah-GMax base stats, height and weight will probably be available in due time
-        heightm: 0,
-        weightkg: 0,
+        heightm: 20,
+        weightkg: 1950,
         color: 'Green',
         eggGroups: [ 'Field', 'Mineral' ],
       }
@@ -21501,9 +21476,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 70, atk: 95, def: 115, spa: 120, spd: 50, spe: 85,
         },
         abilities: { first: 'Light Metal', second: 'Heavy Metal', hidden: 'Stalwart' },
-        // TODO -favna 2019-11-21- Duraludon-GMax base stats, height and weight will probably be available in due time
-        heightm: 1.8,
-        weightkg: 40,
+        heightm: 6,
+        weightkg: 120,
         color: 'White',
         eggGroups: [ 'Mineral', 'Dragon' ],
       }
@@ -21673,9 +21647,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
           hp: 255, atk: 115, def: 250, spa: 125, spd: 250, spe: 130,
         },
         abilities: { first: 'Pressure' },
-        // TODO -favna 2019-11-21- Eternatus Eternamax base stats, height and weight will probably be available in due time
         heightm: 100,
-        weightkg: 0,
+        weightkg: 950,
         color: 'Purple',
         eggGroups: [ 'Undiscovered' ],
       }

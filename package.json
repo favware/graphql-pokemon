@@ -23,7 +23,8 @@
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "scripts:validateNoOnly": "yarn scripts:runner scripts/validateNoOnly",
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull",
-    "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers"
+    "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers",
+    "scripts:updatelearnsets": "yarn scripts:runner scripts/UpdateLearnsets"
   },
   "dependencies": {
     "graphql": "^14.5.8"

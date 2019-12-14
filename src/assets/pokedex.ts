@@ -5102,7 +5102,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
     [
       'espeon',
       {
-        species: 'eespeon',
+        species: 'espeon',
         num: 196,
         types: [ 'Psychic' ],
         genderRatio: { male: 0.875, female: 0.125 },

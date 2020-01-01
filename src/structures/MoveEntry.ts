@@ -1,6 +1,6 @@
 import { Field, Int, ObjectType } from 'type-graphql';
 import Pokemon from '../utils/pokemon';
-import { MoveCategoryUnion } from './RegularExpression';
+import { MoveCategoryUnion, MoveTargetUnion } from './RegularExpression';
 
 @ObjectType({ description: 'A single Pokémon move entry' })
 export default class MoveEntry {
@@ -20,7 +20,7 @@ export default class MoveEntry {
   pp: number;
 
   @Field(() => MoveCategoryUnion, { description: 'The category for a move' })
-  category: Pokemon.MoveCategoriesUnion;
+  category: Pokemon.MoveCategoryUnion;
 
   @Field(() => Int, { description: 'The accuracy for a move' })
   accuracy: number;
@@ -28,8 +28,8 @@ export default class MoveEntry {
   @Field(() => Int, { description: 'The priority for a move' })
   priority: number;
 
-  @Field(() => String, { description: 'The target for a move' })
-  target: string;
+  @Field(() => MoveTargetUnion, { description: 'The target for a move' })
+  target: Pokemon.MoveTargetUnion;
 
   @Field(() => String, { nullable: true, description: 'The contest type for a move' })
   contestType?: string;

@@ -84,10 +84,10 @@ export namespace Pokemon {
     type: string;
     basePower: string;
     pp: number;
-    category: MoveCategoriesUnion;
+    category: MoveCategoryUnion;
     accuracy: number;
     priority: number;
-    target: string;
+    target: MoveTargetUnion;
     contestType?: string;
     isNonstandard?: string;
     isGMax?: string;
@@ -150,7 +150,22 @@ export namespace Pokemon {
     flavor_text: string;
   }
 
-  export type MoveCategoriesUnion = 'Physical' | 'Special' | 'Status';
+  export type MoveCategoryUnion = 'Physical' | 'Special' | 'Status';
+  export type MoveTargetUnion =
+  | 'Random'
+  | 'Self'
+  | 'Adjacent Ally or Self'
+  | 'Adjacent Foes'
+  | 'Adjacent Foe'
+  | 'All Adjacent Foes'
+  | 'All Adjacent'
+  | 'Adjacent Ally'
+  | 'Any'
+  | 'Foe that last hit user'
+  | 'Foe\'s Side'
+  | 'Ally\'s Side'
+  | 'Normal'
+  | 'All';
 }
 
 export default Pokemon;

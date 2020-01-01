@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/favware/graphql-pokemon/compare/v1.3.0...v1.4.0) (2020-01-01)
+
+
+### Features
+
+* strong type move target property ([5495e84](https://github.com/favware/graphql-pokemon/commit/5495e84f749a66d1300266b7a52cff48c7db80af))
+* update gen8 data ([7a2bc47](https://github.com/favware/graphql-pokemon/commit/7a2bc47a624b68effa70ae3cbd0415b9fb18c8f2))
+* update smogon tierlists ([#61](https://github.com/favware/graphql-pokemon/issues/61)) ([b726be2](https://github.com/favware/graphql-pokemon/commit/b726be2f860c3c0df4caf4394959bd67fd40dd9e))
+* update smogon tierlists ([#62](https://github.com/favware/graphql-pokemon/issues/62)) ([47d2575](https://github.com/favware/graphql-pokemon/commit/47d2575f0dbf64585ad97056e813f406ee9bd513))
+* update smogon tierlists ([#63](https://github.com/favware/graphql-pokemon/issues/63)) ([4d1fe51](https://github.com/favware/graphql-pokemon/commit/4d1fe51fcfe09be9fe87972fee7cfab080a4312b))
+* update smogon tierlists ([#64](https://github.com/favware/graphql-pokemon/issues/64)) ([13c2646](https://github.com/favware/graphql-pokemon/commit/13c2646adbc651b9fdd4a16beab3149ce287d49d))
+* update smogon tierlists ([#65](https://github.com/favware/graphql-pokemon/issues/65)) ([724fe89](https://github.com/favware/graphql-pokemon/commit/724fe894220b55e7a1df64fc87b63c9a0ba82054))
+* update smogon tierlists ([#68](https://github.com/favware/graphql-pokemon/issues/68)) ([6ada314](https://github.com/favware/graphql-pokemon/commit/6ada314b2af6e08cdb57b1cd06a6d2e401e9ddda))
+* update smogon tierlists ([#69](https://github.com/favware/graphql-pokemon/issues/69)) ([f79614a](https://github.com/favware/graphql-pokemon/commit/f79614a13cba6b0ffee4f150b34fcef573d5c24e))
+* update smogon tierlists ([#70](https://github.com/favware/graphql-pokemon/issues/70)) ([e9784d9](https://github.com/favware/graphql-pokemon/commit/e9784d95e3792e898439e78a6de634a1e6fed0cc))
+* update smogon tierlists ([#73](https://github.com/favware/graphql-pokemon/issues/73)) ([7031718](https://github.com/favware/graphql-pokemon/commit/70317180bd75040d3296285ffd7731b5b72fbc87))
+* update smogon tierlists ([#75](https://github.com/favware/graphql-pokemon/issues/75)) ([0ca625b](https://github.com/favware/graphql-pokemon/commit/0ca625be66bb492b4914d7e03c7e68f78c0bd830))
+* update smogon tierlists ([#76](https://github.com/favware/graphql-pokemon/issues/76)) ([f45d602](https://github.com/favware/graphql-pokemon/commit/f45d602bafa53104d9f514254e48b1ced41d4a83))
+* update smogon tierlists ([#77](https://github.com/favware/graphql-pokemon/issues/77)) ([869cbcb](https://github.com/favware/graphql-pokemon/commit/869cbcbf1caf612a395ab0663d48da314d8674f4))
+* update smogon tierlists ([#85](https://github.com/favware/graphql-pokemon/issues/85)) ([59ea50b](https://github.com/favware/graphql-pokemon/commit/59ea50bbdb0925866172cfd9520a7f50cc900ddf))
+* update smogon tierlists ([#86](https://github.com/favware/graphql-pokemon/issues/86)) ([04a2aac](https://github.com/favware/graphql-pokemon/commit/04a2aac9a2abb6486fd39c4f26d754116c0966ae))
+* update smogon tierlists ([#88](https://github.com/favware/graphql-pokemon/issues/88)) ([8103c94](https://github.com/favware/graphql-pokemon/commit/8103c94fd956d218c0cf16933f624b1b337b8420))
+* update smogon tierlists ([#89](https://github.com/favware/graphql-pokemon/issues/89)) ([313ded3](https://github.com/favware/graphql-pokemon/commit/313ded3054919f4ef2ebb81282c17f9e11a7364e))
+
+
+### Bug Fixes
+
+* typo in espeon species name ([e49de3f](https://github.com/favware/graphql-pokemon/commit/e49de3f6f30524e15939c2f18f1445fa1f7e7d24))
+
 ## [1.3.0](https://github.com/favware/graphql-pokemon/compare/v1.2.3...v1.3.0) (2019-11-30)
 
 

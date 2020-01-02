@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/favware/graphql-pokemon/compare/v1.5.1...v1.6.0) (2020-01-02)
+
+
+### Features
+
+* **moveentry:** remove type unions for category and target ([8f8b652](https://github.com/favware/graphql-pokemon/commit/8f8b65252caeba777bcadc196d8a984ee4d99eaa))
+
 ### [1.5.1](https://github.com/favware/graphql-pokemon/compare/v1.5.0...v1.5.1) (2020-01-02)
 
 

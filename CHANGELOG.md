@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/favware/graphql-pokemon/compare/v1.4.1...v1.5.0) (2020-01-02)
+
+
+### Features
+
+* update smogon tierlists ([#90](https://github.com/favware/graphql-pokemon/issues/90)) ([4b0015a](https://github.com/favware/graphql-pokemon/commit/4b0015aa741de6e08e20c067281188e278b460f1))
+
 ### [1.4.1](https://github.com/favware/graphql-pokemon/compare/v1.4.0...v1.4.1) (2020-01-01)
 
 

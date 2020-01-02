@@ -69,5 +69,5 @@ export default class RegularExpression extends GraphQLScalarType {
 export const MoveCategoryUnion = new RegularExpression('MoveCategoryUnion', /^(?:Physical|Special|Status)$/);
 export const MoveTargetUnion = new RegularExpression(
   'MoveTargetUnion',
-  /^(?=randomNormal|Self|Adjacent ally or self|Adjacent Ally|Adjacent foes|Adjacent foe|All adjacent foes|All adjacent|Any|Foe that last hit user|Foe\\'s side|Ally\\'s side|Normal|All)[\w \\']+$/
+  /^(?=randomNormal|Self|Adjacent ally or self|Adjacent Ally|Adjacent foes|All adjacent|Any|Foe that last hit user|Foe\\'s side|Ally\\'s side|Normal|All)[\w \\']+$/
 );

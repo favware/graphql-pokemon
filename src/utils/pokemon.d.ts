@@ -156,8 +156,6 @@ export namespace Pokemon {
   | 'Self'
   | 'Adjacent Ally or Self'
   | 'Adjacent Foes'
-  | 'Adjacent Foe'
-  | 'All Adjacent Foes'
   | 'All Adjacent'
   | 'Adjacent Ally'
   | 'Any'

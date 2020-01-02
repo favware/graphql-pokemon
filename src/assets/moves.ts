@@ -63,7 +63,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Acid',
         pp: 30,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -221,7 +221,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Air Cutter',
         pp: 25,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Flying',
         contestType: 'Cool',
       }
@@ -906,7 +906,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Blizzard',
         pp: 5,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -1154,7 +1154,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Breaking Swipe',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dragon',
       }
     ],
@@ -1233,7 +1233,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         pp: 30,
         priority: 0,
         isNonstandard: 'Past',
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Water',
         contestType: 'Cute',
       }
@@ -1420,7 +1420,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         pp: 20,
         priority: 0,
         isNonstandard: 'Past',
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -1581,7 +1581,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Clanging Scales',
         pp: 5,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -1613,7 +1613,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         priority: 0,
         isNonstandard: 'Past',
         isZ: 'kommoniumz',
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -1821,7 +1821,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Core Enforcer',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dragon',
         contestType: 'Tough',
       }
@@ -1886,7 +1886,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Cotton Spore',
         pp: 40,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Grass',
         contestType: 'Beautiful',
       }
@@ -2102,7 +2102,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Dark Void',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dark',
         contestType: 'Clever',
       }
@@ -2134,7 +2134,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Dazzling Gleam',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Fairy',
         contestType: 'Beautiful',
       }
@@ -2259,7 +2259,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Diamond Storm',
         pp: 5,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Rock',
         contestType: 'Beautiful',
       }
@@ -2305,7 +2305,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Disarming Voice',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Fairy',
         contestType: 'Cute',
       }
@@ -2912,7 +2912,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Electroweb',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Electric',
         contestType: 'Beautiful',
       }
@@ -3035,7 +3035,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Eruption',
         pp: 5,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -4149,7 +4149,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Glaciate',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -4729,7 +4729,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Growl',
         pp: 40,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -5024,7 +5024,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         pp: 15,
         priority: 0,
         isNonstandard: 'Past',
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Psychic',
         contestType: 'Clever',
       }
@@ -5135,7 +5135,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Heat Wave',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Fire',
         contestType: 'Beautiful',
       }
@@ -5448,7 +5448,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Hyper Voice',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -5651,7 +5651,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Icy Wind',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -5681,7 +5681,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Incinerate',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -5953,7 +5953,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Land\'s Wrath',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ground',
         contestType: 'Beautiful',
       }
@@ -6109,7 +6109,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Leer',
         pp: 30,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -6563,7 +6563,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         pp: 20,
         priority: 0,
         isNonstandard: 'Past',
-        target: 'Adjacent Foe',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Clever',
       }
@@ -7395,7 +7395,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Muddy Water',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Water',
         contestType: 'Tough',
       }
@@ -7759,7 +7759,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Origin Pulse',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -7790,7 +7790,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Overdrive',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Electric',
       }
     ],
@@ -8113,7 +8113,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Poison Gas',
         pp: 40,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -8238,7 +8238,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Powder Snow',
         pp: 25,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ice',
         contestType: 'Beautiful',
       }
@@ -8362,7 +8362,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Precipice Blades',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ground',
         contestType: 'Cool',
       }
@@ -8798,7 +8798,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Razor Leaf',
         pp: 25,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Grass',
         contestType: 'Cool',
       }
@@ -8830,7 +8830,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         pp: 10,
         priority: 0,
         isNonstandard: 'Past',
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -8923,7 +8923,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Relic Song',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Beautiful',
       }
@@ -9110,7 +9110,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Rock Slide',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Rock',
         contestType: 'Tough',
       }
@@ -9770,7 +9770,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Shell Trap',
         pp: 5,
         priority: -3,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Fire',
         contestType: 'Tough',
       }
@@ -10247,7 +10247,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Snarl',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dark',
         contestType: 'Tough',
       }
@@ -10656,7 +10656,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Splishy Splash',
         pp: 15,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Water',
         contestType: 'Cool',
       }
@@ -10950,7 +10950,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'String Shot',
         pp: 40,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Bug',
         contestType: 'Clever',
       }
@@ -10980,7 +10980,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Struggle Bug',
         pp: 20,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Bug',
         contestType: 'Cute',
       }
@@ -11247,7 +11247,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Sweet Scent',
         pp: 20,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -11263,7 +11263,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Swift',
         pp: 20,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cool',
       }
@@ -11389,7 +11389,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Tail Whip',
         pp: 30,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Normal',
         contestType: 'Cute',
       }
@@ -11591,7 +11591,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Thousand Arrows',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ground',
         contestType: 'Beautiful',
       }
@@ -11606,7 +11606,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Thousand Waves',
         pp: 10,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Ground',
         contestType: 'Tough',
       }
@@ -11994,7 +11994,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Twister',
         pp: 20,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Dragon',
         contestType: 'Cool',
       }
@@ -12085,7 +12085,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Venom Drench',
         pp: 20,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Poison',
         contestType: 'Clever',
       }
@@ -12288,7 +12288,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         name: 'Water Spout',
         pp: 5,
         priority: 0,
-        target: 'All Adjacent Foes',
+        target: 'Adjacent Foes',
         type: 'Water',
         contestType: 'Beautiful',
       }
@@ -12361,7 +12361,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         accuracy: 100,
         basePower: '0',
         category: 'Status',
-        desc: 'The user and its party members are protected from moves made by other Pokemon, including allies, during this turn that target All Adjacent Foes or All Adjacent Pokemon. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user\'s last move used is not Baneful Bunker, Detect, Endure, King\'s Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user\'s protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user\'s side.',
+        desc: 'The user and its party members are protected from moves made by other Pokemon, including allies, during this turn that target Adjacent Foes or All Adjacent Pokemon. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user\'s last move used is not Baneful Bunker, Detect, Endure, King\'s Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user\'s protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user\'s side.',
         shortDesc: 'Protects allies from multi-target moves this turn.',
         name: 'Wide Guard',
         pp: 10,

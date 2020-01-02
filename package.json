@@ -17,15 +17,14 @@
     "cz": "git-cz",
     "up": "yarn upgrade-interactive --latest",
     "sversion": "standard-version",
-    "codegen": "graphql-codegen && yarn scripts:addunionstotypings && tsc -b typings",
+    "codegen": "graphql-codegen && tsc -b typings",
     "cloud:start": "node index.js",
     "prepublishOnly": "yarn codegen",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "scripts:validateNoOnly": "yarn scripts:runner scripts/validateNoOnly",
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull",
     "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers",
-    "scripts:updatelearnsets": "yarn scripts:runner scripts/UpdateLearnsets",
-    "scripts:addunionstotypings": "yarn scripts:runner scripts/addUnionsToTypings"
+    "scripts:updatelearnsets": "yarn scripts:runner scripts/UpdateLearnsets"
   },
   "dependencies": {
     "graphql": "^14.5.8"

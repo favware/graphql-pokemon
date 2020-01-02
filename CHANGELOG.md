@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/favware/graphql-pokemon/compare/v1.5.0...v1.5.1) (2020-01-02)
+
+
+### Bug Fixes
+
+* fixed union typings script ([a848628](https://github.com/favware/graphql-pokemon/commit/a848628eccce6e2b3772ad7a317272d8d53aa8a9))
+
 ## [1.5.0](https://github.com/favware/graphql-pokemon/compare/v1.4.1...v1.5.0) (2020-01-02)
 
 

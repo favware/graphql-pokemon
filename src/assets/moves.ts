@@ -8000,7 +8000,7 @@ export default new GraphQLCollection<string, Pokemon.Move>(
         accuracy: 100,
         basePower: '(happiness * 10) / 25',
         category: 'Special',
-        shortDesc: 'Max happiness: 102 power. Can\t miss.',
+        shortDesc: 'Max happiness: 102 power. Can\'t miss.',
         name: 'Pika Papow',
         pp: 20,
         priority: 0,

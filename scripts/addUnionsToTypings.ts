@@ -23,8 +23,6 @@ export type MoveTargetUnion =
 | 'Self'
 | 'Adjacent Ally or Self'
 | 'Adjacent Foes'
-| 'Adjacent Foe'
-| 'All Adjacent Foes'
 | 'All Adjacent'
 | 'Adjacent Ally'
 | 'Any'
@@ -47,9 +45,8 @@ export type Scalars = {
   MoveCategoryUnion: MoveCategoryUnion,
   /**
  * A field whose value matches the provided regular expression
-   * /^(?=randomNormal|Self|Adjacent ally or self|Adjacent Ally|Adjacent
-   * foes|Adjacent foe|All adjacent foes|All adjacent|Any|Foe that last hit
-   * user|Foe\\'s side|Ally\\'s side|Normal|All)[\\w \\']+$/.
+   * /^(?=randomNormal|Self|Adjacent ally or self|Adjacent Ally|Adjacent foes|All
+   * adjacent|Any|Foe that last hit user|Foe\\'s side|Ally\\'s side|Normal|All)[\\w \\']+$/.
  */
   MoveTargetUnion: MoveTargetUnion;
 };

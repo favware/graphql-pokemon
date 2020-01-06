@@ -14,6 +14,9 @@ import FlavorEntry from '../structures/FlavorEntry';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 
 export default class DexService {
+  private flavors: Record<string, Pokemon.FlavorText[]>;
+  private tiers: Record<string, string>;
+
   public findByNum(@Arg('num') num: number) {
     return pokedex.find(poke => poke.num === num);
   }
@@ -86,13 +89,13 @@ export default class DexService {
       throw new Error(`No Pokémon found for ${pokemon}`);
     }
 
-    const [ flavorsImport, tiersImport ] = await Promise.all([
-      import('../assets/flavorText.json'),
-      import('../assets/formats.json')
-    ]);
+    if (this.flavors === undefined) {
+      this.flavors = (await import('../assets/flavorText.json')).default;
+    }
 
-    const { default: flavors } = flavorsImport as { default: Record<string, Pokemon.FlavorText[]> };
-    const { default: tiers } = tiersImport as { default: Record<string, string> };
+    if (this.tiers === undefined) {
+      this.tiers = (await import('../assets/formats.json')).default;
+    }
 
     const pokemonData = new DexDetails();
     const genderData = new GenderEntry();
@@ -131,7 +134,7 @@ export default class DexService {
     pokemonData.evolutionLevel = basePokemonData.evoLevel || undefined;
     pokemonData.evos = basePokemonData.evos;
     pokemonData.prevo = basePokemonData.prevo;
-    pokemonData.smogonTier = tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
+    pokemonData.smogonTier = this.tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
     pokemonData.height = basePokemonData.heightm;
     pokemonData.weight = basePokemonData.weightkg;
     pokemonData.baseForme = basePokemonData.baseForme;
@@ -148,7 +151,7 @@ export default class DexService {
     if (basePokemonData.num >= 0) {
       let shouldParseBaseForme = true;
       if (basePokemonData.forme) {
-        const formFlavors = flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
+        const formFlavors = this.flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
         if (formFlavors) {
           shouldParseBaseForme = false;
           for (const formFlavor of formFlavors) {
@@ -161,7 +164,7 @@ export default class DexService {
       }
 
       if (shouldParseBaseForme) {
-        const baseFlavors = flavors[basePokemonData.num];
+        const baseFlavors = this.flavors[basePokemonData.num];
         for (const baseFlavor of baseFlavors) {
           const formFlavorEntry = new FlavorEntry();
           formFlavorEntry.game = baseFlavor.version_id;
@@ -210,8 +213,24 @@ export default class DexService {
   }
 
   public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    if (pokemon.split(' ')[0] === 'mega') {
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
+    switch (pokemon.split(' ')[0]) {
+      case 'mega':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
+        break;
+      case 'gigantamax':
+      case 'gmax':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-gmax`;
+        break;
+      case 'alola':
+      case 'alolan':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-alola`;
+        break;
+      case 'galar':
+      case 'galarian':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-galar`;
+        break;
+      default:
+        break;
     }
 
     if (pokemon.length < 5) {

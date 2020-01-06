@@ -20739,6 +20739,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         abilities: { first: 'Weak Armor', hidden: 'Cursed Body' },
         heightm: 0.1,
         weightkg: 0.2,
+        forme: 'chipped',
+        formeLetter: 'C',
         color: 'Purple',
         evos: [ 'polteageistchipped' ],
         eggGroups: [ 'Mineral', 'Amorphous' ],
@@ -21271,6 +21273,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       {
         species: 'indeedee-f',
         baseSpecies: 'Indeedee',
+        forme: 'female',
+        formeLetter: 'F',
         num: 876,
         types: [ 'Psychic', 'Normal' ],
         genderRatio: { male: 0, female: 1 },
@@ -21313,6 +21317,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         baseStats: {
           hp: 58, atk: 95, def: 58, spa: 70, spd: 58, spe: 97,
         },
+        forme: 'Hangry',
+        formeLetter: 'H',
         abilities: { first: 'Hunger Switch' },
         heightm: 0.3,
         weightkg: 3,
@@ -21712,7 +21718,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       'fidgit',
       {
         species: 'fidgit',
-        num: -4,
+        num: -8,
         types: [ 'Poison', 'Ground' ],
         genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {
@@ -22172,7 +22178,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
     [
       'equilibra',
       {
-        num: -28,
+        num: -54,
         species: 'equilibra',
         types: [ 'Steel', 'Ground' ],
         genderRatio: { male: 0, female: 0 },
@@ -22246,7 +22252,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       'breezi',
       {
         species: 'breezi',
-        num: -8,
+        num: -7,
         types: [ 'Poison', 'Flying' ],
         genderRatio: { male: 0.50, female: 0.50 },
         baseStats: {

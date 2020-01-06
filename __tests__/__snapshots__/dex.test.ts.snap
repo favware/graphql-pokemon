@@ -184,6 +184,16 @@ Object {
 }
 `;
 
+exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy gigantamax pokemon THEN returns DexDetails 1`] = `
+Object {
+  "getPokemonDetailsByFuzzy": Object {
+    "baseStatsTotal": 534,
+    "num": 6,
+    "species": "charizard-gmax",
+  },
+}
+`;
+
 exports[`getPokemonDetailsByFuzzy GIVEN a fuzzy pokemon THEN returns DexDetails 1`] = `
 Object {
   "getPokemonDetailsByFuzzy": Object {

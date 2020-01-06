@@ -103,6 +103,17 @@ describe('getPokemonDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
+  test('GIVEN a fuzzy gigantamax pokemon THEN returns DexDetails', async () => {
+    const { data } = await gCall({
+      source: getPokemonDetailsByFuzzy,
+      variableValues: { pokemon: 'gigantamax charizard' },
+    }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
+
+    expect(data.getPokemonDetailsByFuzzy.species).toBe('charizard-gmax');
+    expect(data.getPokemonDetailsByFuzzy.num).toBe(6);
+    expect(data).toMatchSnapshot();
+  });
+
   test('GIVEN a fuzzy pokemon and pagination THEN returns DexDetails', async () => {
     const { data } = await gCall({
       source: getPokemonDetailsByFuzzy,

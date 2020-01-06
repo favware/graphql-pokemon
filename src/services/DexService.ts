@@ -188,7 +188,7 @@ export default class DexService {
           skip,
           take,
           reverse,
-        }, basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species));
+        }, this.parseDataForEvolutionRecursion(basePokemonData, prevoPokemon)));
       }
     }
 
@@ -201,7 +201,7 @@ export default class DexService {
             skip,
             take,
             reverse,
-          }, basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species));
+          }, this.parseDataForEvolutionRecursion(basePokemonData, evoPokemon)));
         }
       }
     }
@@ -257,6 +257,14 @@ export default class DexService {
     }
 
     return fuzzyResult.slice(skip, skip + take);
+  }
+
+  private parseDataForEvolutionRecursion(basePokemonData: Pokemon.DexEntry, evoChainData: Pokemon.DexEntry) {
+    if (basePokemonData.forme && evoChainData.forme && basePokemonData.forme === evoChainData.forme) {
+      return Util.toLowerSingleWordCase(basePokemonData.species);
+    }
+
+    return basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species;
   }
 
   private parseSpeciesForBulbapedia(pokemonName: string, baseForme?: string) {

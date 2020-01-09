@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/favware/graphql-pokemon/compare/v1.6.0...v1.7.0) (2020-01-09)
+
+
+### Features
+
+* add galarian slowpoke ([389bf09](https://github.com/favware/graphql-pokemon/commit/389bf0948ff9cb81db6b27f39928a84efb5a3792))
+* update smogon tierlists ([#91](https://github.com/favware/graphql-pokemon/issues/91)) ([5aad6be](https://github.com/favware/graphql-pokemon/commit/5aad6be2f19a01afe59d24cf61d34d36a6e89c80))
+* update smogon tierlists ([#98](https://github.com/favware/graphql-pokemon/issues/98)) ([a55f303](https://github.com/favware/graphql-pokemon/commit/a55f3037a8a9040fa9fc9707bf0efc545eddc131))
+* update smogon tierlists ([#99](https://github.com/favware/graphql-pokemon/issues/99)) ([7846573](https://github.com/favware/graphql-pokemon/commit/78465736977af28c2d13904ba596063a3761aa14))
+
+
+### Bug Fixes
+
+* **assets:** update a lot of descriptions and other details on entries ([52ec837](https://github.com/favware/graphql-pokemon/commit/52ec837ac9d6c50c1c3d460c7f62c3d538505ef8))
+* **dexservice:** fixed critical bug when searching regional forms ([8e8355d](https://github.com/favware/graphql-pokemon/commit/8e8355d6081d1c931b216429890dafb0342c2834))
+* fixed gigantamax [pokemon] resolving to proper gmax forme ([8e2aa9e](https://github.com/favware/graphql-pokemon/commit/8e2aa9e51fe929b2f4a97365cae9760008d3946c))
+* **pokedex:** fixed a few duplicate num/forme combinations ([0f3ae45](https://github.com/favware/graphql-pokemon/commit/0f3ae45effe6f159a1cf26a9bf8c5c7f571d6688))
+* pikapapow had an invalid description ([2cb943c](https://github.com/favware/graphql-pokemon/commit/2cb943c07100634b5b3bd408a15619d113ee914a))
+
 ## [1.6.0](https://github.com/favware/graphql-pokemon/compare/v1.5.1...v1.6.0) (2020-01-02)
 
 

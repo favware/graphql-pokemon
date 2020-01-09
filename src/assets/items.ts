@@ -129,6 +129,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Armor Fossil',
         gen: 4,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Shieldon.',
       }
     ],
@@ -519,6 +520,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       'clawfossil', {
         name: 'Claw Fossil',
         gen: 3,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Anorith.',
       }
     ],
@@ -558,6 +560,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Cover Fossil',
         gen: 5,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Tirtouga.',
       }
     ],
@@ -686,6 +689,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Dome Fossil',
         gen: 3,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Kabuto.',
       }
     ],
@@ -760,7 +764,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Dream Ball',
         gen: 5,
-        desc: 'A special Poke Ball that appears out of nowhere in a bag at the Entree Forest.',
+        desc: 'A Poke Ball that makes it easier to catch wild Pokémon while they\'re asleep.',
       }
     ],
     [
@@ -876,7 +880,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Energy Powder',
         gen: 2,
-        desc: 'Restores 50 HP to one Pokemon but lowers Happiness.',
+        desc: 'Restores 60 HP to one Pokemon.',
       }
     ],
     [
@@ -1390,6 +1394,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Helix Fossil',
         gen: 3,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Omanyte.',
       }
     ],
@@ -1533,6 +1538,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Jaw Fossil',
         gen: 6,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Tyrunt.',
       }
     ],
@@ -2167,6 +2173,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Old Amber',
         gen: 3,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Aerodactyl.',
       }
     ],
@@ -2326,6 +2333,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Plume Fossil',
         gen: 5,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Archen.',
       }
     ],
@@ -2720,6 +2728,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Root Fossil',
         gen: 3,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Lileep.',
       }
     ],
@@ -2793,6 +2802,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Sail Fossil',
         gen: 6,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Amaura.',
       }
     ],
@@ -2934,6 +2944,7 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Skull Fossil',
         gen: 4,
+        isNonstandard: 'Past',
         desc: 'Can be revived into Cranidos.',
       }
     ],
@@ -3291,7 +3302,11 @@ export default new GraphQLCollection<string, Pokemon.Item>(
       {
         name: 'Utility Umbrella',
         gen: 8,
-        desc: 'Blocks the holder from receiving any effects of Sunny Day/Rain Dance.',
+        desc: [
+          'The holder is immune to the weather-based modifiers of the attacker\'s moves in the effects of Sunny Day and Rain Dance.',
+          'However, the user\'s Weather Ball and own weather-based abilities will not activate.'
+        ].join(' '),
+        shortDesc: 'Blocks the holder from the effects of sun/rain',
       }
     ],
     [

@@ -441,7 +441,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'flowergift',
       {
-        desc: 'If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. If this Pokemon a Cherrim and it is holding Utility Umbrella, it remains in its regular form and the Attack and Special Defense stats of it and its allies are not boosted. If an ally is holding Utility Umbrella while Cherrim is in its Sunshine Form, they will nto receive the Attack and Special Defense boosts.',
+        desc: 'If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. If this Pokemon is a Cherrim and it is holding Utility Umbrella, it remains in its regular form and the Attack and Special Defense stats of it and its allies are not boosted. If this Pokemon is a Cherrim in its Sunshine form and is given Utility Umbrella, it will immediately switch back to its regular form. If this Pokemon is a Cherrim holding Utility Umbrella and its item is removed while Sunny Day is active, it will transform into its Sunshine Form. If an ally is holding Utility Umbrella while Cherrim is in its Sunshine Form, they will not receive the Attack and Special Defense boosts.',
         shortDesc: 'If user is Cherrim and Sunny Day is active, it and allies\' Attack and Sp. Def are 1.5x.',
         name: 'Flower Gift',
       }
@@ -465,7 +465,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'forecast',
       {
-        desc: 'If this Pokemon is a Castform, its type changes to the current weather condition\'s type, except Sandstorm.',
+        desc: 'If this Pokemon is a Castform, its type changes to the current weather condition\'s type, except Sandstorm. If this Pokemon is holding Utility Umbrella and the weather condition is Sunny Day, Desolate Land, Rain Dance, or Primordial Sea, it will not change types.',
         shortDesc: 'Castform\'s type changes to the current weather condition\'s type, except Sandstorm.',
         name: 'Forecast',
       }
@@ -557,8 +557,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'gulpmissile',
       {
-        desc: 'When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack.',
-        shortDesc: 'Get prey with Surf/Dive. When taking damage, prey is used to attack.',
+        desc: 'If this Pokemon is a Cramorant, it changes forme when it hits a target with Surf or uses the first turn of Dive successfully. It becomes Gulping Form with an Arrokuda in its mouth if it has more than 1/2 of its maximum HP remaining, or Gorging Form with a Pikachu in its mouth if it has 1/2 or less of its maximum HP remaining. If Cramorant gets hit in Gulping or Gorging Form, it spits the Arrokuda or Pikachu at its attacker, even if it has no HP remaining. The projectile deals damage equal to 1/4 of the target\'s maximum HP, rounded down; this damage is blocked by the Magic Guard Ability but not by a substitute. An Arrokuda also lowers the target\'s Defense by 1 stage, and a Pikachu paralyzes the target. Cramorant will return to normal if it spits out a projectile, switches out, or Dynamaxes.',
+        shortDesc: 'When hit after Surf/Dive, attacker takes 1/4 max HP and -1 Defense or paralysis.',
         name: 'Gulp Missile',
       }
     ],
@@ -631,7 +631,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'hydration',
       {
-        desc: 'This Pokemon has its major status condition cured at the end of each turn if Rain Dance is active.',
+        desc: 'This Pokemon has its major status condition cured at the end of each turn if Rain Dance is active. If this Pokemon is holding Utility Umbrella, its major status condition will not be cured.',
         shortDesc: 'This Pokemon has its status cured at the end of each turn if Rain Dance is active.',
         name: 'Hydration',
       }
@@ -654,8 +654,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'iceface',
       {
-        desc: 'The Pokémon\'s ice head can take a physical attack as a substitute, but the attack also changes the Pokémon\'s appearance. The ice will be restored when it hails.',
-        shortDesc: 'Pokémon\'s head functions as substitute for a physical attack. Restored in hail.',
+        desc: 'If this Pokemon is a Eiscue, the first physical hit it takes will deal 0 damage. Its ice head is then broken, it changes to Noice Form. The ice will be restored when hail is summoned or when the Pokemon is switched in while hail is active.',
+        shortDesc: '(Eiscue only) First physical hit deals 0 damage, breaks ice head.',
         name: 'Ice Face',
       }
     ],
@@ -663,7 +663,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
       'icescales',
       {
         desc: 'The Pokémon is protected by ice scales, which halve the damage taken from special moves.',
-        shortDesc: 'This Pokémon\'s Special Defense is doubled.',
+        shortDesc: 'This Pokemon receives 1/2 damage from special moves.',
         name: 'Ice Scales',
       }
     ],
@@ -1426,7 +1426,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'screencleaner',
       {
-        shortDesc: 'When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.',
+        desc: 'On switch-in, this Pokémon ends the effects of Reflect, Light Screen, and Aurora Veil for both the user\'s and the opposing side.',
+        shortDesc: 'Removes Reflect, Light Screen, and Aurora Veil on switch-in.',
         name: 'Screen Cleaner',
       }
     ],
@@ -1545,7 +1546,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>(
     [
       'solarpower',
       {
-        desc: 'If Sunny Day is active, this Pokemon\'s Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn.',
+        desc: 'If Sunny Day is active, this Pokemon\'s Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. If this Pokemon is holding Utility Umbrella, its Special Attack remains the same and it does not lose any HP.',
         shortDesc: 'If Sunny Day is active, this Pokemon\'s Sp. Atk is 1.5x; loses 1/8 max HP per turn.',
         name: 'Solar Power',
       }

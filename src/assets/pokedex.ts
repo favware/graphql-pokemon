@@ -17472,7 +17472,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 45,
         color: 'Blue',
         prevo: 'charjabug',
-        evoLevel: 'Level 21 inside special magnetic field',
+        evoLevel: 'Use Thunder Stone',
         eggGroups: [ 'Bug' ],
         otherFormes: [ 'vikavolttotem' ],
       }
@@ -21093,7 +21093,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
         weightkg: 0.5,
         color: 'White',
         prevo: 'milcery',
-        evoLevel: 45,
+        evoLevel: 'Spin the joystick while Milcery is holding a sweet.',
         eggGroups: [ 'Fairy', 'Amorphous' ],
         otherFormes: [
           'alcremierubycream', 'alcremiematcha',

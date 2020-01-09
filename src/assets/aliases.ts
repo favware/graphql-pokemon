@@ -88,7 +88,7 @@ export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>(
       'almost any ability',
       { alias: 'almost any ability', tier: 'almostanyability' }
     ]
-  ]
+  ],
 );
 
 /** Aliases for Pokémon */
@@ -388,6 +388,9 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
       'eternalfloette',
       { alias: 'eternalfloette', name: 'Floette-Eternal' }
     ],
+    [ 'externamax', { alias: 'externamax', name: 'Eternatus-Externamax' } ],
+    [ 'entermax enternatus', { alias: 'entermax enternatus', name: 'Eternatus-Externamax' } ],
+    [ 'gigantamax enternatus', { alias: 'gigantamax enternatus', name: 'Eternatus-Externamax' } ],
     [ 'girao', { alias: 'girao', name: 'Giratina-Origin' } ],
     [ 'giratinao', { alias: 'giratinao', name: 'Giratina-Origin' } ],
     [ 'gourgeists', { alias: 'gourgeists', name: 'Gourgeist-Small' } ],
@@ -1158,10 +1161,10 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'raichuu', { alias: 'raichuu', name: 'Raichu' } ],
     [ 'sando', { alias: 'sando', name: 'Sandshrew' } ],
     [ 'sandopan', { alias: 'sandopan', name: 'Sandslash' } ],
-    [ 'nidoranmesu', {alias: 'idoranmesu', name: 'Nidoran-F'} ],
+    [ 'nidoranmesu', { alias: 'idoranmesu', name: 'Nidoran-F' } ],
     [ 'nidoriina', { alias: 'nidoriina', name: 'Nidorina' } ],
     [ 'nidokuin', { alias: 'nidokuin', name: 'Nidoqueen' } ],
-    [ 'nidoranosu', {alias: 'nidoranosu', name: 'Nidoran-M' } ],
+    [ 'nidoranosu', { alias: 'nidoranosu', name: 'Nidoran-M' } ],
     [ 'nidoriino', { alias: 'nidoriino', name: 'Nidorino' } ],
     [ 'nidokingu', { alias: 'nidokingu', name: 'Nidoking' } ],
     [ 'pippi', { alias: 'pippi', name: 'Clefairy' } ],
@@ -1212,7 +1215,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'yadoran', { alias: 'yadoran', name: 'Slowbro' } ],
     [ 'koiru', { alias: 'koiru', name: 'Magnemite' } ],
     [ 'reakoiru', { alias: 'reakoiru', name: 'Magneton' } ],
-    [ 'kamonegi', {alias: 'kamonegi', name: 'Farfetch\'d' } ],
+    [ 'kamonegi', { alias: 'kamonegi', name: 'Farfetch\'d' } ],
     [ 'doodoo', { alias: 'doodoo', name: 'Doduo' } ],
     [ 'doodorio', { alias: 'doodorio', name: 'Dodrio' } ],
     [ 'pauwau', { alias: 'pauwau', name: 'Seel' } ],
@@ -1251,7 +1254,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'azumaou', { alias: 'azumaou', name: 'Seaking' } ],
     [ 'hitodeman', { alias: 'hitodeman', name: 'Staryu' } ],
     [ 'sutaamii', { alias: 'sutaamii', name: 'Starmie' } ],
-    [ 'bariyaado', {alias: 'bariyaado', name: 'Mr. Mime' } ],
+    [ 'bariyaado', { alias: 'bariyaado', name: 'Mr. Mime' } ],
     [ 'sutoraiku', { alias: 'sutoraiku', name: 'Scyther' } ],
     [ 'ruujura', { alias: 'ruujura', name: 'Jynx' } ],
     [ 'erebuu', { alias: 'erebuu', name: 'Electabuzz' } ],
@@ -1361,7 +1364,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'kingudora', { alias: 'kingudora', name: 'Kingdra' } ],
     [ 'gomazou', { alias: 'gomazou', name: 'Phanpy' } ],
     [ 'donfuan', { alias: 'donfuan', name: 'Donphan' } ],
-    [ 'porigon2', {alias: 'porigon2', name: 'Porygon2' } ],
+    [ 'porigon2', { alias: 'porigon2', name: 'Porygon2' } ],
     [ 'odoshishi', { alias: 'odoshishi', name: 'Stantler' } ],
     [ 'dooburu', { alias: 'dooburu', name: 'Smeargle' } ],
     [ 'barukii', { alias: 'barukii', name: 'Tyrogue' } ],
@@ -1376,7 +1379,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'sanagirasu', { alias: 'sanagirasu', name: 'Pupitar' } ],
     [ 'bangirasu', { alias: 'bangirasu', name: 'Tyranitar' } ],
     [ 'rugia', { alias: 'rugia', name: 'Lugia' } ],
-    [ 'houou', {alias: 'houou', name: 'Ho-Oh' } ],
+    [ 'houou', { alias: 'houou', name: 'Ho-Oh' } ],
     [ 'sereby', { alias: 'sereby', name: 'Celebi' } ],
     [ 'kimori', { alias: 'kimori', name: 'Treecko' } ],
     [ 'juputoru', { alias: 'juputoru', name: 'Grovyle' } ],
@@ -1564,7 +1567,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'doomiraa', { alias: 'doomiraa', name: 'Bronzor' } ],
     [ 'dootakun', { alias: 'dootakun', name: 'Bronzong' } ],
     [ 'usohachi', { alias: 'usohachi', name: 'Bonsly' } ],
-    [ 'manene', {alias: 'manene', name: 'Mime Jr.' } ],
+    [ 'manene', { alias: 'manene', name: 'Mime Jr.' } ],
     [ 'pinpuku', { alias: 'pinpuku', name: 'Happiny' } ],
     [ 'perappu', { alias: 'perappu', name: 'Chatot' } ],
     [ 'mikaruge', { alias: 'mikaruge', name: 'Spiritomb' } ],
@@ -1599,7 +1602,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'gureishia', { alias: 'gureishia', name: 'Glaceon' } ],
     [ 'guraion', { alias: 'guraion', name: 'Gliscor' } ],
     [ 'manmuu', { alias: 'manmuu', name: 'Mamoswine' } ],
-    [ 'porigonz', {alias: 'porigonz', name: 'Porygon-Z' } ],
+    [ 'porigonz', { alias: 'porigonz', name: 'Porygon-Z' } ],
     [ 'erureido', { alias: 'erureido', name: 'Gallade' } ],
     [ 'dainoozu', { alias: 'dainoozu', name: 'Probopass' } ],
     [ 'yonowaaru', { alias: 'yonowaaru', name: 'Dusknoir' } ],
@@ -1775,7 +1778,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>(
     [ 'torunerosu', { alias: 'torunerosu', name: 'Tornadus' } ],
     [ 'rankurusu', { alias: 'rankurusu', name: 'Reuniclus' } ],
     [ 'borutorosu', { alias: 'borutorosu', name: 'Thundurus' } ]
-  ]
+  ],
 );
 
 /** Aliases for Pokémon abilities */
@@ -1783,7 +1786,7 @@ export const abilityAliases = new GraphQLCollection<string, Pokemon.AbilityAlias
   [
     [ 'ph', { alias: 'ph', ability: 'Poison Heal' } ],
     [ 'stag', { alias: 'stag', ability: 'Shadow Tag' } ]
-  ]
+  ],
 );
 
 /** Aliases for Pokémon items */
@@ -1814,7 +1817,7 @@ export const itemAliases = new GraphQLCollection<string, Pokemon.ItemAlias>(
     [ 'specs', { alias: 'specs', item: 'Choice Specs' } ],
     [ 'wp', { alias: 'wp', item: 'Weakness Policy' } ],
     [ 'yache', { alias: 'yache', item: 'Yache Berry' } ]
-  ]
+  ],
 );
 
 /** Aliases for Pokémon moves */
@@ -2059,25 +2062,25 @@ export const moveAliases = new GraphQLCollection<string, Pokemon.MoveAlias>(
     [ 'zvolttackle', { alias: 'zvolttackle', move: 'Catastropika' } ],
     [ 'zwater', { alias: 'zwater', move: 'Hydro Vortex' } ],
 
-    [ 'maxbug', { alias: 'maxbug', move: 'Max Flutterby'} ],
-    [ 'maxdark', { alias: 'maxdark', move: 'Max Darkness'} ],
-    [ 'maxdragon', { alias: 'maxdragon', move: 'Max Wyrmwind'} ],
-    [ 'maxelectric', { alias: 'maxelectric', move: 'Max Lightning'} ],
-    [ 'maxfairy', { alias: 'maxfairy', move: 'Max Starfall'} ],
-    [ 'maxfighting', { alias: 'maxfighting', move: 'Max Knuckle'} ],
-    [ 'maxfire', { alias: 'maxfire', move: 'Max Flare'} ],
-    [ 'maxflying', { alias: 'maxflying', move: 'Max Airstream'} ],
-    [ 'maxghost', { alias: 'maxghost', move: 'Max Phantasm'} ],
-    [ 'maxgrass', { alias: 'maxgrass', move: 'Max Overgrowth'} ],
-    [ 'maxground', { alias: 'maxground', move: 'Max Quake'} ],
-    [ 'maxice', { alias: 'maxice', move: 'Max Hailstorm'} ],
-    [ 'maxnormal', { alias: 'maxnormal', move: 'Max Strike'} ],
-    [ 'maxpoison', { alias: 'maxpoison', move: 'Max Ooze'} ],
-    [ 'maxpsychic', { alias: 'maxpsychic', move: 'Max Mindstorm'} ],
-    [ 'maxrock', { alias: 'maxrock', move: 'Max Rockfall'} ],
-    [ 'maxsteel', { alias: 'maxsteel', move: 'Max Steelspike'} ],
-    [ 'maxwater', { alias: 'maxwater', move: 'Max Geyser'} ],
-    [ 'maxstatus', { alias: 'maxstatus', move: 'Max Guard'} ],
-    [ 'maxprotect', { alias: 'maxprotect', move: 'Max Guard'} ]
-  ]
+    [ 'maxbug', { alias: 'maxbug', move: 'Max Flutterby' } ],
+    [ 'maxdark', { alias: 'maxdark', move: 'Max Darkness' } ],
+    [ 'maxdragon', { alias: 'maxdragon', move: 'Max Wyrmwind' } ],
+    [ 'maxelectric', { alias: 'maxelectric', move: 'Max Lightning' } ],
+    [ 'maxfairy', { alias: 'maxfairy', move: 'Max Starfall' } ],
+    [ 'maxfighting', { alias: 'maxfighting', move: 'Max Knuckle' } ],
+    [ 'maxfire', { alias: 'maxfire', move: 'Max Flare' } ],
+    [ 'maxflying', { alias: 'maxflying', move: 'Max Airstream' } ],
+    [ 'maxghost', { alias: 'maxghost', move: 'Max Phantasm' } ],
+    [ 'maxgrass', { alias: 'maxgrass', move: 'Max Overgrowth' } ],
+    [ 'maxground', { alias: 'maxground', move: 'Max Quake' } ],
+    [ 'maxice', { alias: 'maxice', move: 'Max Hailstorm' } ],
+    [ 'maxnormal', { alias: 'maxnormal', move: 'Max Strike' } ],
+    [ 'maxpoison', { alias: 'maxpoison', move: 'Max Ooze' } ],
+    [ 'maxpsychic', { alias: 'maxpsychic', move: 'Max Mindstorm' } ],
+    [ 'maxrock', { alias: 'maxrock', move: 'Max Rockfall' } ],
+    [ 'maxsteel', { alias: 'maxsteel', move: 'Max Steelspike' } ],
+    [ 'maxwater', { alias: 'maxwater', move: 'Max Geyser' } ],
+    [ 'maxstatus', { alias: 'maxstatus', move: 'Max Guard' } ],
+    [ 'maxprotect', { alias: 'maxprotect', move: 'Max Guard' } ]
+  ],
 );

@@ -2436,6 +2436,28 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>(
       }
     ],
     [
+      'slowpokegalar',
+      {
+        species: 'slowpoke-galar',
+        baseSpecies: 'Slowpoke',
+        forme: 'Galar',
+        formeLetter: 'G',
+        num: 79,
+        types: [ 'Psychic' ],
+        genderRatio: { male: 0.50, female: 0.50 },
+        baseStats: {
+          hp: 90, atk: 65, def: 65, spa: 40, spd: 40, spe: 15,
+        },
+        abilities: { first: 'Gluttony', second: 'Own Tempo', hidden: 'Regenerator' },
+        heightm: 1.2,
+        weightkg: 36,
+        color: 'Pink',
+        // eslint-disable-next-line
+        // evos: [ 'slowbrogalar', 'slowkinggalar' ], TODO: Remove when Galarian Slowbro and Galarian Slowpoke release
+        eggGroups: [ 'Monster', 'Water 1' ],
+      }
+    ],
+    [
       'slowbro',
       {
         species: 'slowbro',

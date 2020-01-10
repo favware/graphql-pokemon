@@ -740,7 +740,6 @@ export enum Items {
   Kommoniumz = 'kommoniumz'
 }
 
-
 export interface LearnsetEntry {
   __typename?: 'LearnsetEntry';
   levelUpMoves?: Maybe<Array<LearnsetLevelUpMove>>;
@@ -764,7 +763,6 @@ export interface LearnsetMove {
   name?: Maybe<Scalars['String']>;
   generation?: Maybe<Scalars['Int']>;
 }
-
 
 export interface MoveEntry {
   __typename?: 'MoveEntry';

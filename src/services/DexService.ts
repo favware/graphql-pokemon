@@ -37,7 +37,7 @@ export default class DexService {
       const abilitiesData = new AbilitiesEntry();
       const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.genderRatio || {
         male: 0.5,
-        female: 0.5,
+        female: 0.5
       };
 
       genderData.male = `${pageGenderRatio.male * 100}%`;
@@ -80,9 +80,7 @@ export default class DexService {
     return queryResults;
   }
 
-  public async findBySpeciesWithDetails(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs, parsingPokemon = '') {
+  public async findBySpeciesWithDetails(@Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs, parsingPokemon = '') {
     const basePokemonData = this.findBySpecies(pokemon);
 
     if (!basePokemonData) {
@@ -105,7 +103,7 @@ export default class DexService {
     const preevolutionChain: Promise<DexDetails>[] = [];
     const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = basePokemonData.genderRatio || {
       male: 0.5,
-      female: 0.5,
+      female: 0.5
     };
 
     genderData.male = `${basePokemonGenderRatio.male * 100}%`;
@@ -183,12 +181,17 @@ export default class DexService {
     if (basePokemonData.prevo && basePokemonData.prevo !== parsingPokemon) {
       const prevoPokemon = this.findBySpecies(basePokemonData.prevo);
       if (prevoPokemon) {
-        preevolutionChain.push(this.findBySpeciesWithDetails({
-          pokemon: Util.toLowerSingleWordCase(prevoPokemon.species),
-          skip,
-          take,
-          reverse,
-        }, this.parseDataForEvolutionRecursion(basePokemonData, prevoPokemon)));
+        preevolutionChain.push(
+          this.findBySpeciesWithDetails(
+            {
+              pokemon: Util.toLowerSingleWordCase(prevoPokemon.species),
+              skip,
+              take,
+              reverse
+            },
+            this.parseDataForEvolutionRecursion(basePokemonData, prevoPokemon)
+          )
+        );
       }
     }
 
@@ -196,12 +199,17 @@ export default class DexService {
       for (const evo of basePokemonData.evos) {
         const evoPokemon = this.findBySpecies(Util.toLowerSingleWordCase(evo));
         if (evoPokemon) {
-          evolutionChain.push(this.findBySpeciesWithDetails({
-            pokemon: Util.toLowerSingleWordCase(evoPokemon.species),
-            skip,
-            take,
-            reverse,
-          }, this.parseDataForEvolutionRecursion(basePokemonData, evoPokemon)));
+          evolutionChain.push(
+            this.findBySpeciesWithDetails(
+              {
+                pokemon: Util.toLowerSingleWordCase(evoPokemon.species),
+                skip,
+                take,
+                reverse
+              },
+              this.parseDataForEvolutionRecursion(basePokemonData, evoPokemon)
+            )
+          );
         }
       }
     }
@@ -240,12 +248,12 @@ export default class DexService {
       }
     }
 
-    const fuzzyPokemon = new FuzzySearch(pokedex, [ 'num', 'species' ], { threshold: 0.3, ...fuseOptions });
+    const fuzzyPokemon = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, [ 'alias', 'name' ], { threshold: 0.4 }).runFuzzy(pokemon);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, ['alias', 'name'], { threshold: 0.4 }).runFuzzy(pokemon);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].name);

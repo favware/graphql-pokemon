@@ -152,18 +152,18 @@ export namespace Pokemon {
 
   export type MoveCategoryUnion = 'Physical' | 'Special' | 'Status';
   export type MoveTargetUnion =
-  | 'Random'
-  | 'Self'
-  | 'Adjacent Ally or Self'
-  | 'Adjacent Foes'
-  | 'All Adjacent'
-  | 'Adjacent Ally'
-  | 'Any'
-  | 'Foe that last hit user'
-  | 'Foe\'s Side'
-  | 'Ally\'s Side'
-  | 'Normal'
-  | 'All';
+    | 'Random'
+    | 'Self'
+    | 'Adjacent Ally or Self'
+    | 'Adjacent Foes'
+    | 'All Adjacent'
+    | 'Adjacent Ally'
+    | 'Any'
+    | 'Foe that last hit user'
+    | "Foe's Side"
+    | "Ally's Side"
+    | 'Normal'
+    | 'All';
 }
 
 export default Pokemon;

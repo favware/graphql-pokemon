@@ -2,53 +2,55 @@ import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
 
 /** The type effectiveness typechart in Pokémon */
-export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
+export default new GraphQLCollection<string, Pokemon.TypeMatchups>([
   [
-    [
-      'bug', {
-        damageTaken: {
-          bug: 0,
-          dark: 0,
-          dragon: 0,
-          electric: 0,
-          fairy: 0,
-          fighting: 2,
-          fire: 1,
-          flying: 1,
-          ghost: 0,
-          grass: 2,
-          ground: 2,
-          ice: 0,
-          normal: 0,
-          poison: 0,
-          psychic: 0,
-          rock: 1,
-          steel: 0,
-          water: 0,
-        },
-        damageDealt: {
-          bug: 0,
-          dark: 1,
-          dragon: 0,
-          electric: 0,
-          fairy: 2,
-          fighting: 2,
-          fire: 2,
-          flying: 2,
-          ghost: 2,
-          grass: 1,
-          ground: 0,
-          ice: 0,
-          normal: 0,
-          poison: 2,
-          psychic: 1,
-          rock: 0,
-          steel: 2,
-          water: 0,
-        },
+    'bug',
+    {
+      damageTaken: {
+        bug: 0,
+        dark: 0,
+        dragon: 0,
+        electric: 0,
+        fairy: 0,
+        fighting: 2,
+        fire: 1,
+        flying: 1,
+        ghost: 0,
+        grass: 2,
+        ground: 2,
+        ice: 0,
+        normal: 0,
+        poison: 0,
+        psychic: 0,
+        rock: 1,
+        steel: 0,
+        water: 0
+      },
+      damageDealt: {
+        bug: 0,
+        dark: 1,
+        dragon: 0,
+        electric: 0,
+        fairy: 2,
+        fighting: 2,
+        fire: 2,
+        flying: 2,
+        ghost: 2,
+        grass: 1,
+        ground: 0,
+        ice: 0,
+        normal: 0,
+        poison: 2,
+        psychic: 1,
+        rock: 0,
+        steel: 2,
+        water: 0
       }
-    ],
-    [ 'dark', {
+    }
+  ],
+  [
+    'dark',
+    {
       damageTaken: {
         bug: 1,
         dark: 2,
@@ -67,7 +69,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 3,
         rock: 0,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -87,10 +89,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 1,
         rock: 0,
         steel: 0,
-        water: 0,
-      },
-    } ],
-    [ 'dragon', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'dragon',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -109,7 +114,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 0,
-        water: 2,
+        water: 2
       },
       damageDealt: {
         bug: 0,
@@ -129,10 +134,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 2,
-        water: 0,
-      },
-    } ],
-    [ 'electric', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'electric',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -151,7 +159,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 2,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -171,10 +179,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 0,
-        water: 1,
-      },
-    } ],
-    [ 'fairy', {
+        water: 1
+      }
+    }
+  ],
+  [
+    'fairy',
+    {
       damageTaken: {
         bug: 2,
         dark: 2,
@@ -193,7 +204,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 1,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -213,10 +224,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 2,
-        water: 0,
-      },
-    } ],
-    [ 'fighting', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'fighting',
+    {
       damageTaken: {
         bug: 2,
         dark: 2,
@@ -235,7 +249,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 1,
         rock: 2,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 2,
@@ -255,10 +269,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 2,
         rock: 1,
         steel: 1,
-        water: 0,
-      },
-    } ],
-    [ 'fire', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'fire',
+    {
       damageTaken: {
         bug: 2,
         dark: 0,
@@ -277,7 +294,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 2,
-        water: 1,
+        water: 1
       },
       damageDealt: {
         bug: 1,
@@ -297,10 +314,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 2,
         steel: 1,
-        water: 2,
-      },
-    } ],
-    [ 'flying', {
+        water: 2
+      }
+    }
+  ],
+  [
+    'flying',
+    {
       damageTaken: {
         bug: 2,
         dark: 0,
@@ -319,7 +339,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 1,
@@ -339,10 +359,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 2,
         steel: 2,
-        water: 0,
-      },
-    } ],
-    [ 'ghost', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'ghost',
+    {
       damageTaken: {
         bug: 2,
         dark: 1,
@@ -361,7 +384,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -381,10 +404,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 1,
         rock: 0,
         steel: 0,
-        water: 0,
-      },
-    } ],
-    [ 'grass', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'grass',
+    {
       damageTaken: {
         bug: 1,
         dark: 0,
@@ -403,7 +429,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 0,
-        water: 2,
+        water: 2
       },
       damageDealt: {
         bug: 2,
@@ -423,10 +449,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 2,
-        water: 1,
-      },
-    } ],
-    [ 'ground', {
+        water: 1
+      }
+    }
+  ],
+  [
+    'ground',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -445,7 +474,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 2,
         steel: 0,
-        water: 1,
+        water: 1
       },
       damageDealt: {
         bug: 2,
@@ -465,10 +494,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 1,
-        water: 0,
-      },
-    } ],
-    [ 'ice', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'ice',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -487,7 +519,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 1,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -507,10 +539,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 2,
-        water: 2,
-      },
-    } ],
-    [ 'normal', {
+        water: 2
+      }
+    }
+  ],
+  [
+    'normal',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -529,7 +564,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -549,10 +584,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 2,
         steel: 2,
-        water: 0,
-      },
-    } ],
-    [ 'poison', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'poison',
+    {
       damageTaken: {
         bug: 2,
         dark: 0,
@@ -571,7 +609,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 1,
         rock: 0,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -591,10 +629,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 2,
         steel: 3,
-        water: 0,
-      },
-    } ],
-    [ 'psychic', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'psychic',
+    {
       damageTaken: {
         bug: 1,
         dark: 1,
@@ -613,7 +654,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 2,
         rock: 0,
         steel: 0,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -633,10 +674,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 2,
         rock: 0,
         steel: 2,
-        water: 0,
-      },
-    } ],
-    [ 'rock', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'rock',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -655,7 +699,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 1,
-        water: 1,
+        water: 1
       },
       damageDealt: {
         bug: 1,
@@ -675,10 +719,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 2,
-        water: 0,
-      },
-    } ],
-    [ 'steel', {
+        water: 0
+      }
+    }
+  ],
+  [
+    'steel',
+    {
       damageTaken: {
         bug: 2,
         dark: 0,
@@ -697,7 +744,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 2,
         rock: 2,
         steel: 2,
-        water: 0,
+        water: 0
       },
       damageDealt: {
         bug: 0,
@@ -717,10 +764,13 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 2,
-        water: 2,
-      },
-    } ],
-    [ 'water', {
+        water: 2
+      }
+    }
+  ],
+  [
+    'water',
+    {
       damageTaken: {
         bug: 0,
         dark: 0,
@@ -739,7 +789,7 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 0,
         steel: 2,
-        water: 2,
+        water: 2
       },
       damageDealt: {
         bug: 0,
@@ -759,8 +809,8 @@ export default new GraphQLCollection<string, Pokemon.TypeMatchups>(
         psychic: 0,
         rock: 1,
         steel: 0,
-        water: 2,
-      },
-    } ]
+        water: 2
+      }
+    }
   ]
-);
+]);

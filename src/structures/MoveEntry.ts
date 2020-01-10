@@ -46,13 +46,13 @@ export default class MoveEntry {
 
   @Field(() => String, {
     nullable: true,
-    description: 'Whether this move is a Z-Move, and if it is the Z-Crystal required to trigger it',
+    description: 'Whether this move is a Z-Move, and if it is the Z-Crystal required to trigger it'
   })
   isZ?: string;
 
   @Field(() => String, {
     nullable: true,
-    description: 'Whether this move is a G-MAX move, and if it is which Gigantamaxed Pokémon can use it',
+    description: 'Whether this move is a G-MAX move, and if it is which Gigantamaxed Pokémon can use it'
   })
   isGMax?: string;
 

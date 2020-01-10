@@ -6,10 +6,10 @@ export default class FuzzySearch<K extends string, V> {
   private readonly fuseOptions?: FuseOptions<V>;
 
   constructor(collection: Collection<K, V>, keys: (keyof V)[], options?: FuseOptions<V>) {
-    this.collectionArray = [ ...collection.values() ];
+    this.collectionArray = [...collection.values()];
     this.fuseOptions = {
       ...options,
-      keys,
+      keys
     };
   }
 

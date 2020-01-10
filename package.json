@@ -9,6 +9,7 @@
   "homepage": "https://favware.tech/api",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",
+    "style": "yarn pretty-quick",
     "test": "jest",
     "build": "tsc -b src",
     "watch": "tsc -b src -w",
@@ -62,6 +63,8 @@
     "lint-staged": "^9.5.0",
     "node-fetch": "^2.6.0",
     "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "reflect-metadata": "^0.1.13",
     "standard-version": "^7.0.1",
     "ts-jest": "^24.2.0",
@@ -94,7 +97,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn scripts:validateNoOnly && yarn lint-staged",
+      "pre-commit": "yarn scripts:validateNoOnly && pretty-quick --staged && yarn lint-staged",
       "post-merge": "yarn scripts:yarnAfterPull"
     }
   },

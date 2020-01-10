@@ -11,7 +11,7 @@ export default class DexEntry {
   @Field(() => String, { description: 'The species name for a Pokémon' })
   species: string;
 
-  @Field(() => [ String ], { description: 'The types for a Pokémon' })
+  @Field(() => [String], { description: 'The types for a Pokémon' })
   types: string[];
 
   @Field(() => AbilitiesEntry, { description: 'The abilities for a Pokémon' })
@@ -23,13 +23,13 @@ export default class DexEntry {
   @Field(() => String, { description: 'The colour of a Pokémon as listed in the Pokedex' })
   color: string;
 
-  @Field(() => [ String ], { nullable: true, description: 'The egg groups a Pokémon is in' })
+  @Field(() => [String], { nullable: true, description: 'The egg groups a Pokémon is in' })
   eggGroups?: string[];
 
   @Field(() => String || Int, { nullable: true, description: 'The evolution level, or special method, for a Pokémon' })
   evolutionLevel?: string | number;
 
-  @Field(() => [ String ], { nullable: true, description: 'The raw evos of a Pokémon ' })
+  @Field(() => [String], { nullable: true, description: 'The raw evos of a Pokémon ' })
   evos?: string[];
 
   @Field(() => String, { nullable: true, description: 'The raw prevo of a Pokémon ' })
@@ -56,6 +56,6 @@ export default class DexEntry {
   @Field(() => String, { nullable: true, description: 'Base species if this entry describes a special form' })
   baseSpecies?: string;
 
-  @Field(() => [ String ], { nullable: true, description: 'Any other forms for a Pokémon' })
+  @Field(() => [String], { nullable: true, description: 'Any other forms for a Pokémon' })
   otherFormes?: string[];
 }

@@ -18,16 +18,17 @@ export default class ItemResolver {
       'Gets details on a single item based on a fuzzy search.',
       'You can supply skip and take to paginate the fuzzy search and reverse to show teh least likely results on top',
       'Reversal is applied before paginations!'
-    ].join(''),
+    ].join('')
   })
-  getItemDetailsByFuzzy(@Args() {
-    item, skip, take, reverse,
-  }: ItemPaginatedArgs) {
+  getItemDetailsByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs) {
     const entry = this.itemService.findByName(item);
 
     if (!entry) {
       const fuzzyEntry = this.itemService.findByFuzzy({
-        item, skip, take, reverse,
+        item,
+        skip,
+        take,
+        reverse
       });
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for item: ${item}`);
@@ -45,9 +46,7 @@ export default class ItemResolver {
   }
 
   @Query(() => ItemEntry, {
-    description: [
-      'Gets details on a single item based on an exact name match.'
-    ].join(''),
+    description: ['Gets details on a single item based on an exact name match.'].join('')
   })
   getItemDetailsByName(@Arg('item', () => Items) item: string) {
     const entry = this.itemService.findByNameWithDetails(item);
@@ -59,18 +58,19 @@ export default class ItemResolver {
     return entry;
   }
 
-  @Query(() => [ GraphQLJSONObject ], {
+  @Query(() => [GraphQLJSONObject], {
     description: [
       'Gets raw entries of multiple items based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  getItemByFuzzy(@Args() {
-    item, skip, take, reverse,
-  }: ItemPaginatedArgs) {
+  getItemByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs) {
     const itemEntries = this.itemService.findByFuzzy({
-      item, skip, take, reverse,
+      item,
+      skip,
+      take,
+      reverse
     });
 
     if (itemEntries === undefined) {

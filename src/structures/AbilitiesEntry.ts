@@ -1,6 +1,6 @@
 import { Field, ObjectType } from 'type-graphql';
 
-@ObjectType({ description: 'A Pokémon\'s abilities entry' })
+@ObjectType({ description: "A Pokémon's abilities entry" })
 export default class AbilitiesEntry {
   @Field(() => String, { description: 'The first ability of a Pokémon' })
   first: string;

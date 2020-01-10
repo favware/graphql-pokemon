@@ -6,7 +6,7 @@ export const Types = typechart.enumObject();
 
 @ArgsType()
 export default class TypeArgs {
-  @Field(() => [ Types ], { description: 'The types to check' })
+  @Field(() => [Types], { description: 'The types to check' })
   @ArrayUnique()
   @ArrayMinSize(1)
   @ArrayMaxSize(2)

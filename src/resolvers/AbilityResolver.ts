@@ -18,16 +18,17 @@ export default class AbilityResolver {
       'Gets details on a single ability based on a fuzzy search.',
       'You can supply skip and take to paginate the fuzzy search and reverse to show the least likely matched on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  async getAbilityDetailsByFuzzy(@Args() {
-    ability, skip, take, reverse,
-  }: AbilityPaginatedArgs) {
+  async getAbilityDetailsByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs) {
     const entry = this.abilityService.findByName(ability);
 
     if (!entry) {
       const fuzzyEntry = this.abilityService.findByFuzzy({
-        ability, skip, take, reverse,
+        ability,
+        skip,
+        take,
+        reverse
       });
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for ability: ${ability}`);
@@ -44,9 +45,7 @@ export default class AbilityResolver {
   }
 
   @Query(() => AbilityEntry, {
-    description: [
-      'Gets details on a single ability based on an exact name match.'
-    ].join(''),
+    description: ['Gets details on a single ability based on an exact name match.'].join('')
   })
   async getAbilityDetailsByName(@Arg('ability', () => Abilities) ability: string) {
     const entry = this.abilityService.findByNameWithDetails(ability);
@@ -58,18 +57,19 @@ export default class AbilityResolver {
     return entry;
   }
 
-  @Query(() => [ GraphQLJSONObject ], {
+  @Query(() => [GraphQLJSONObject], {
     description: [
       'Gets raw entries of multiple ability based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  getAbilityByFuzzy(@Args() {
-    ability, skip, take, reverse,
-  }: AbilityPaginatedArgs) {
+  getAbilityByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs) {
     const abilityEntries = this.abilityService.findByFuzzy({
-      ability, skip, take, reverse,
+      ability,
+      skip,
+      take,
+      reverse
     });
 
     if (abilityEntries === undefined) {

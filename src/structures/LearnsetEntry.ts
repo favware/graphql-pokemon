@@ -9,7 +9,7 @@ export class LearnsetMove implements Pokemon.LearnsetMove {
   @Field(() => Int, {
     nullable: true,
     description: 'The generation in which this pokemon learned the move this way',
-    defaultValue: null,
+    defaultValue: null
   })
   generation: number | null;
 }
@@ -22,45 +22,45 @@ export class LearnsetLevelUpMove extends LearnsetMove implements Pokemon.Learnse
 
 @ObjectType({ description: 'A learnset entry' })
 export default class LearnsetEntry {
-  @Field(() => [ LearnsetLevelUpMove ], {
+  @Field(() => [LearnsetLevelUpMove], {
     description: 'The moves that can be learned through levelling up',
-    defaultValue: [ new LearnsetLevelUpMove() ],
+    defaultValue: [new LearnsetLevelUpMove()]
   })
   levelUpMoves: LearnsetLevelUpMove[];
 
-  @Field(() => [ LearnsetMove ], {
+  @Field(() => [LearnsetMove], {
     description: 'The moves that can be learned through virtual console transfer',
-    defaultValue: [ new LearnsetMove() ],
+    defaultValue: [new LearnsetMove()]
   })
   virtualTransferMoves: LearnsetMove[];
 
-  @Field(() => [ LearnsetMove ], {
+  @Field(() => [LearnsetMove], {
     description: 'The moves that can be learned from a move tutor',
-    defaultValue: [ new LearnsetMove() ],
+    defaultValue: [new LearnsetMove()]
   })
   tutorMoves: LearnsetMove[];
 
-  @Field(() => [ LearnsetMove ], {
+  @Field(() => [LearnsetMove], {
     description: 'The moves that can be learned from a Technical Machine or Technical Record',
-    defaultValue: [ new LearnsetMove() ],
+    defaultValue: [new LearnsetMove()]
   })
   tmMoves: LearnsetMove[];
 
-  @Field(() => [ LearnsetMove ], {
+  @Field(() => [LearnsetMove], {
     description: 'The moves that can be passed as egg moves',
-    defaultValue: [ new LearnsetMove() ],
+    defaultValue: [new LearnsetMove()]
   })
   eggMoves: LearnsetMove[];
 
-  @Field(() => [ LearnsetMove ], {
+  @Field(() => [LearnsetMove], {
     description: 'The moves that are exclusive to event variants of the Pokémon',
-    defaultValue: [ new LearnsetMove() ],
+    defaultValue: [new LearnsetMove()]
   })
   eventMoves: LearnsetMove[];
 
-  @Field(() => [ LearnsetMove ], {
+  @Field(() => [LearnsetMove], {
     description: 'The moves that are exclusively learned in the Unova Dream World',
-    defaultValue: [ new LearnsetMove() ],
+    defaultValue: [new LearnsetMove()]
   })
   dreamworldMoves: LearnsetMove[];
 

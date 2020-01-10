@@ -8,7 +8,7 @@ import { needFile, Formats, DataJSON } from './utils';
 const DATA_FILE = join(__dirname, 'smogonTiersData.json');
 const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
 const UPDATED_FORMATS_DATA = readJSON(DATA_FILE) as Promise<DataJSON>;
-const TEN_DAYS_AGO = Date.now() - (10 * constants.DAY);
+const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
 (async () => {
@@ -18,7 +18,7 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
   const request = await fetch(url);
 
-  const [ commits, { lastSha } ] = await Promise.all([ request.json(), UPDATED_FORMATS_DATA ]);
+  const [commits, { lastSha }] = await Promise.all([request.json(), UPDATED_FORMATS_DATA]);
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
   const output: Formats = {};
@@ -34,9 +34,7 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
     return process.exit(0);
   }
 
-  const { BattleFormatsData } = await needFile(
-    'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.js',
-  );
+  const { BattleFormatsData } = await needFile('https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.js');
 
   for (const mon in BattleFormatsData) {
     const tier = BattleFormatsData[mon].isNonstandard || BattleFormatsData[mon].tier;

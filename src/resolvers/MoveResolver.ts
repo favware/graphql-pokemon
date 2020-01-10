@@ -18,16 +18,17 @@ export default class MoveResolver {
       'Gets details on a single move based on a fuzzy search.',
       'You can supply skip and take to paginate the fuzzy search and reverse to show teh least likely results on top',
       'Reversal is applied before paginations!'
-    ].join(''),
+    ].join('')
   })
-  getMoveDetailsByFuzzy(@Args() {
-    move, skip, take, reverse,
-  }: MovePaginatedArgs) {
+  getMoveDetailsByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs) {
     const entry = this.moveService.findByName(move);
 
     if (!entry) {
       const fuzzyEntry = this.moveService.findByFuzzy({
-        move, skip, take, reverse,
+        move,
+        skip,
+        take,
+        reverse
       });
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for move: ${move}`);
@@ -44,9 +45,7 @@ export default class MoveResolver {
   }
 
   @Query(() => MoveEntry, {
-    description: [
-      'Gets details on a single move based on an exact name match.'
-    ].join(''),
+    description: ['Gets details on a single move based on an exact name match.'].join('')
   })
   getMoveDetailsByName(@Arg('move', () => Moves) move: string) {
     const entry = this.moveService.findByNameWithDetails(move);
@@ -58,18 +57,19 @@ export default class MoveResolver {
     return entry;
   }
 
-  @Query(() => [ GraphQLJSONObject ], {
+  @Query(() => [GraphQLJSONObject], {
     description: [
       'Gets raw entries of multiple moves based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  getMoveByFuzzy(@Args() {
-    move, skip, take, reverse,
-  }: MovePaginatedArgs) {
+  getMoveByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs) {
     const moveEntries = this.moveService.findByFuzzy({
-      move, skip, take, reverse,
+      move,
+      skip,
+      take,
+      reverse
     });
 
     if (moveEntries === undefined) {

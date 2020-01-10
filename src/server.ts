@@ -16,36 +16,32 @@ import TypeResolver from './resolvers/TypeResolver';
 export const buildGqlSchema = () => {
   registerEnumType(Abilities, {
     name: 'Abilities',
-    description: 'The supported abilities',
+    description: 'The supported abilities'
   });
 
   registerEnumType(Items, {
     name: 'Items',
-    description: 'The supported items',
+    description: 'The supported items'
   });
 
   registerEnumType(Moves, {
     name: 'Moves',
-    description: 'The supported moves',
+    description: 'The supported moves'
   });
 
   registerEnumType(Pokemon, {
     name: 'Pokemon',
-    description: 'The supported Pokémon',
+    description: 'The supported Pokémon'
   });
 
   registerEnumType(Types, {
     name: 'Types',
-    description: 'The types in Pokémon',
+    description: 'The types in Pokémon'
   });
 
-  return buildSchemaSync(
-    {
-      resolvers: [
-        DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver
-      ],
-    }
-  );
+  return buildSchemaSync({
+    resolvers: [DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver]
+  });
 };
 
 const gqlServer = () => {
@@ -54,7 +50,7 @@ const gqlServer = () => {
   const apolloServer = new ApolloServer({
     schema,
     introspection: true,
-    playground: { endpoint: '/api' },
+    playground: { endpoint: '/api' }
   });
 
   apolloServer.applyMiddleware({ app, path: '/', cors: true });

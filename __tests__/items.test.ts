@@ -11,20 +11,20 @@ describe('getItemDetailsByName', () => {
   }`;
 
   test('GIVEN a valid item THEN returns ItemEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemDetailsByName,
-      variableValues: { item: 'lifeorb' },
-    }).then(formatResponse) as DataResponse<'getItemDetailsByName'>;
+      variableValues: { item: 'lifeorb' }
+    }).then(formatResponse)) as DataResponse<'getItemDetailsByName'>;
 
     expect(data.getItemDetailsByName.name).toBe('Life Orb');
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a valid generation 8 item THEN returns ItemEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemDetailsByName,
-      variableValues: { item: 'flowersweet' },
-    }).then(formatResponse) as DataResponse<'getItemDetailsByName'>;
+      variableValues: { item: 'flowersweet' }
+    }).then(formatResponse)) as DataResponse<'getItemDetailsByName'>;
 
     expect(data.getItemDetailsByName.name).toBe('Flower Sweet');
     expect(data).toMatchSnapshot();
@@ -33,7 +33,7 @@ describe('getItemDetailsByName', () => {
   test('GIVEN an invalid item THEN returns error', async () => {
     const data = await gCall({
       source: getItemDetailsByName,
-      variableValues: { item: 'totally_invalid_item' },
+      variableValues: { item: 'totally_invalid_item' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -50,10 +50,10 @@ describe('getItemDetailsByFuzzy', () => {
   }`;
 
   test('GIVEN a valid item THEN returns ItemEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemDetailsByFuzzy,
-      variableValues: { item: 'choicespecs' },
-    }).then(formatResponse) as DataResponse<'getItemDetailsByFuzzy'>;
+      variableValues: { item: 'choicespecs' }
+    }).then(formatResponse)) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Specs');
     expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-specs.png');
@@ -61,10 +61,10 @@ describe('getItemDetailsByFuzzy', () => {
   });
 
   test('GIVEN a fuzzy item THEN returns ItemEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemDetailsByFuzzy,
-      variableValues: { item: 'choice' },
-    }).then(formatResponse) as DataResponse<'getItemDetailsByFuzzy'>;
+      variableValues: { item: 'choice' }
+    }).then(formatResponse)) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Band');
     expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png');
@@ -72,15 +72,15 @@ describe('getItemDetailsByFuzzy', () => {
   });
 
   test('GIVEN a fuzzy item and pagination THEN returns ItemEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemDetailsByFuzzy,
       variableValues: {
         item: 'choice',
         skip: 1,
         take: 1,
-        reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getItemDetailsByFuzzy'>;
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Scarf');
     expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-scarf.png');
@@ -90,7 +90,7 @@ describe('getItemDetailsByFuzzy', () => {
   test('GIVEN an invalid item THEN returns error', async () => {
     const data = await gCall({
       source: getItemDetailsByFuzzy,
-      variableValues: { item: 'totally_invalid_item' },
+      variableValues: { item: 'totally_invalid_item' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -104,8 +104,8 @@ describe('getItemDetailsByFuzzy', () => {
         item: 'totally_invalid_item',
         skip: 0,
         take: 1,
-        reverse: false,
-      },
+        reverse: false
+      }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -120,57 +120,57 @@ describe('getItemByFuzzy', () => {
   }`;
 
   test('GIVEN a valid item THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemByFuzzy,
-      variableValues: { item: 'lifeorb' },
-    }).then(formatResponse) as DataResponse<'getItemByFuzzy'>;
+      variableValues: { item: 'lifeorb' }
+    }).then(formatResponse)) as DataResponse<'getItemByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy item THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemByFuzzy,
-      variableValues: { item: 'choice' },
-    }).then(formatResponse) as DataResponse<'getItemByFuzzy'>;
+      variableValues: { item: 'choice' }
+    }).then(formatResponse)) as DataResponse<'getItemByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy item and pagination THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemByFuzzy,
       variableValues: {
         item: 'choice',
         skip: 2,
         take: 1,
-        reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getItemByFuzzy'>;
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getItemByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid item THEN returns empty array', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemByFuzzy,
-      variableValues: { item: 'totally_invalid_item' },
-    }).then(formatResponse) as DataResponse<'getItemByFuzzy'>;
+      variableValues: { item: 'totally_invalid_item' }
+    }).then(formatResponse)) as DataResponse<'getItemByFuzzy'>;
 
     expect(data.getItemByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid item and pagination THEN returns empty array', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemByFuzzy,
       variableValues: {
         item: 'totally_invalid_item',
         skip: 0,
         take: 1,
-        reverse: false,
-      },
-    }).then(formatResponse) as DataResponse<'getItemByFuzzy'>;
+        reverse: false
+      }
+    }).then(formatResponse)) as DataResponse<'getItemByFuzzy'>;
 
     expect(data.getItemByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
@@ -184,10 +184,10 @@ describe('getItemByName', () => {
   }`;
 
   test('GIVEN a valid item THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getItemByName,
-      variableValues: { item: 'lifeorb' },
-    }).then(formatResponse) as DataResponse<'getItemByName'>;
+      variableValues: { item: 'lifeorb' }
+    }).then(formatResponse)) as DataResponse<'getItemByName'>;
 
     expect(data.getItemByName.name).toBe('Life Orb');
     expect(data).toMatchSnapshot();
@@ -196,7 +196,7 @@ describe('getItemByName', () => {
   test('GIVEN an invalid item THEN returns error', async () => {
     const data = await gCall({
       source: getItemByName,
-      variableValues: { item: 'totally_invalid_item' },
+      variableValues: { item: 'totally_invalid_item' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));

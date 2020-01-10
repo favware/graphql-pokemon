@@ -12,15 +12,13 @@ export default class ItemService {
     return items.get(name);
   }
 
-  public findByFuzzy(@Args() {
-    item, skip, take, reverse,
-  }: ItemPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const fuzzyItem = new FuzzySearch(items, [ 'name' ], { threshold: 0.3, ...fuseOptions });
+  public findByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    const fuzzyItem = new FuzzySearch(items, ['name'], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyItem.runFuzzy(item);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(itemAliases, [ 'alias', 'item' ], { threshold: 0.4 }).runFuzzy(item);
+      const fuzzyAliasResult = new FuzzySearch(itemAliases, ['alias', 'item'], { threshold: 0.4 }).runFuzzy(item);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyItem.runFuzzy(fuzzyAliasResult[0].item);

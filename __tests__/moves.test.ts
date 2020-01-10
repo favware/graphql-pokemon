@@ -11,10 +11,10 @@ describe('getMoveDetailsByName', () => {
   }`;
 
   test('GIVEN a valid move THEN returns MoveEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveDetailsByName,
-      variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByName'>;
+      variableValues: { move: 'dragondance' }
+    }).then(formatResponse)) as DataResponse<'getMoveDetailsByName'>;
 
     expect(data.getMoveDetailsByName.name).toBe('Dragon Dance');
     expect(data).toMatchSnapshot();
@@ -23,7 +23,7 @@ describe('getMoveDetailsByName', () => {
   test('GIVEN an invalid move THEN returns error', async () => {
     const data = await gCall({
       source: getMoveDetailsByName,
-      variableValues: { move: 'totally_invalid_move' },
+      variableValues: { move: 'totally_invalid_move' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -40,34 +40,34 @@ describe('getMoveDetailsByFuzzy', () => {
   }`;
 
   test('GIVEN a valid move THEN returns MoveEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveDetailsByFuzzy,
-      variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy'>;
+      variableValues: { move: 'dragondance' }
+    }).then(formatResponse)) as DataResponse<'getMoveDetailsByFuzzy'>;
 
     expect(data.getMoveDetailsByFuzzy.name).toBe('Dragon Dance');
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy move THEN returns MoveEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveDetailsByFuzzy,
-      variableValues: { move: 'dragon' },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy'>;
+      variableValues: { move: 'dragon' }
+    }).then(formatResponse)) as DataResponse<'getMoveDetailsByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy move and pagination THEN returns MoveEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveDetailsByFuzzy,
       variableValues: {
         move: 'dragon',
         skip: 2,
         take: 1,
-        reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getMoveDetailsByFuzzy'>;
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getMoveDetailsByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
@@ -75,7 +75,7 @@ describe('getMoveDetailsByFuzzy', () => {
   test('GIVEN an invalid move THEN returns error', async () => {
     const data = await gCall({
       source: getMoveDetailsByFuzzy,
-      variableValues: { move: 'totally_invalid_move' },
+      variableValues: { move: 'totally_invalid_move' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -89,8 +89,8 @@ describe('getMoveDetailsByFuzzy', () => {
         move: 'totally_invalid_move',
         skip: 0,
         take: 1,
-        reverse: false,
-      },
+        reverse: false
+      }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -105,57 +105,57 @@ describe('getMoveByFuzzy', () => {
   }`;
 
   test('GIVEN a valid move THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveByFuzzy,
-      variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
+      variableValues: { move: 'dragondance' }
+    }).then(formatResponse)) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy move THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveByFuzzy,
-      variableValues: { move: 'dragon' },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
+      variableValues: { move: 'dragon' }
+    }).then(formatResponse)) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy move and pagination THEN returns MoveEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveByFuzzy,
       variableValues: {
         move: 'dragon',
         skip: 2,
         take: 1,
-        reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid move THEN returns empty array', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveByFuzzy,
-      variableValues: { move: 'totally_invalid_move' },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
+      variableValues: { move: 'totally_invalid_move' }
+    }).then(formatResponse)) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data.getMoveByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid move and pagination THEN returns empty array', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveByFuzzy,
       variableValues: {
         move: 'totally_invalid_move',
         skip: 0,
         take: 1,
-        reverse: false,
-      },
-    }).then(formatResponse) as DataResponse<'getMoveByFuzzy'>;
+        reverse: false
+      }
+    }).then(formatResponse)) as DataResponse<'getMoveByFuzzy'>;
 
     expect(data.getMoveByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
@@ -169,10 +169,10 @@ describe('getMoveByName', () => {
   }`;
 
   test('GIVEN a valid move THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getMoveByName,
-      variableValues: { move: 'dragondance' },
-    }).then(formatResponse) as DataResponse<'getMoveByName'>;
+      variableValues: { move: 'dragondance' }
+    }).then(formatResponse)) as DataResponse<'getMoveByName'>;
 
     expect(data.getMoveByName.name).toBe('Dragon Dance');
     expect(data).toMatchSnapshot();
@@ -181,7 +181,7 @@ describe('getMoveByName', () => {
   test('GIVEN an invalid move THEN returns error', async () => {
     const data = await gCall({
       source: getMoveByName,
-      variableValues: { move: 'totally_invalid_move' },
+      variableValues: { move: 'totally_invalid_move' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));

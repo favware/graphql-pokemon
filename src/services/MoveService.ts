@@ -12,14 +12,12 @@ export default class MoveService {
     return moves.get(name);
   }
 
-  public findByFuzzy(@Args() {
-    move, skip, take, reverse,
-  }: MovePaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
-    const fuzzyMove = new FuzzySearch(moves, [ 'name' ], { threshold: 0.3, ...fuseOptions });
+  public findByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+    const fuzzyMove = new FuzzySearch(moves, ['name'], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyMove.runFuzzy(move);
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(moveAliases, [ 'alias', 'move' ], { threshold: 0.4 }).runFuzzy(move);
+      const fuzzyAliasResult = new FuzzySearch(moveAliases, ['alias', 'move'], { threshold: 0.4 }).runFuzzy(move);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyMove.runFuzzy(fuzzyAliasResult[0].move);

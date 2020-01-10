@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import { dirname } from 'path';
 
-export const mapToJson = (map: Map<string, unknown>) => JSON.stringify([ ...map ]);
+export const mapToJson = (map: Map<string, unknown>) => JSON.stringify([...map]);
 
 export const needFile = async (url: string) => {
   const NodeModule: Module = module.constructor as Module;
@@ -31,7 +31,7 @@ interface Module extends Function {
   /* eslint-disable @typescript-eslint/no-explicit-any */
   _nodeModulePaths: any;
 
-  new(url: string, parents: NodeModule | null): any;
+  new (url: string, parents: NodeModule | null): any;
 
   /* eslint-enable @typescript-eslint/no-explicit-any */
 }

@@ -16,10 +16,10 @@ describe('getPokemonDetailsByName', () => {
   }`;
 
   test('GIVEN a valid pokemon THEN returns DexDetails', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getPokemonDetailsByName,
-      variableValues: { pokemon: 'dragonite' },
-    }).then(formatResponse) as DataResponse<'getPokemonDetailsByName'>;
+      variableValues: { pokemon: 'dragonite' }
+    }).then(formatResponse)) as DataResponse<'getPokemonDetailsByName'>;
 
     expect(data.getPokemonDetailsByName.species).toBe('dragonite');
     expect(data.getPokemonDetailsByName.num).toBe(149);
@@ -30,7 +30,7 @@ describe('getPokemonDetailsByName', () => {
   test('GIVEN an invalid pokemon THEN returns error', async () => {
     const data = await gCall({
       source: getPokemonDetailsByName,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -49,10 +49,10 @@ describe('getPokemonDetails', () => {
   }`;
 
   test('GIVEN a valid pokemon THEN returns DexDetails', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getPokemonDetails,
-      variableValues: { pokemon: 'dragonite' },
-    }).then(formatResponse) as DataResponse<'getPokemonDetails'>;
+      variableValues: { pokemon: 'dragonite' }
+    }).then(formatResponse)) as DataResponse<'getPokemonDetails'>;
 
     expect(data.getPokemonDetails.species).toBe('dragonite');
     expect(data.getPokemonDetails.num).toBe(149);
@@ -62,7 +62,7 @@ describe('getPokemonDetails', () => {
   test('GIVEN an invalid pokemon THEN returns error', async () => {
     const data = await gCall({
       source: getPokemonDetails,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -81,11 +81,10 @@ describe('getPokemonDetailsByFuzzy', () => {
   }`;
 
   test('GIVEN a valid pokemon THEN returns DexDetails', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getPokemonDetailsByFuzzy,
-      variableValues: { pokemon: 'dragonite' },
-
-    }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
+      variableValues: { pokemon: 'dragonite' }
+    }).then(formatResponse)) as DataResponse<'getPokemonDetailsByFuzzy'>;
 
     expect(data.getPokemonDetailsByFuzzy.species).toBe('dragonite');
     expect(data.getPokemonDetailsByFuzzy.num).toBe(149);
@@ -93,10 +92,10 @@ describe('getPokemonDetailsByFuzzy', () => {
   });
 
   test('GIVEN a fuzzy pokemon THEN returns DexDetails', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getPokemonDetailsByFuzzy,
-      variableValues: { pokemon: 'dragoni' },
-    }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
+      variableValues: { pokemon: 'dragoni' }
+    }).then(formatResponse)) as DataResponse<'getPokemonDetailsByFuzzy'>;
 
     expect(data.getPokemonDetailsByFuzzy.species).toBe('dragonite');
     expect(data.getPokemonDetailsByFuzzy.num).toBe(149);
@@ -104,10 +103,10 @@ describe('getPokemonDetailsByFuzzy', () => {
   });
 
   test('GIVEN a fuzzy gigantamax pokemon THEN returns DexDetails', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getPokemonDetailsByFuzzy,
-      variableValues: { pokemon: 'gigantamax charizard' },
-    }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
+      variableValues: { pokemon: 'gigantamax charizard' }
+    }).then(formatResponse)) as DataResponse<'getPokemonDetailsByFuzzy'>;
 
     expect(data.getPokemonDetailsByFuzzy.species).toBe('charizard-gmax');
     expect(data.getPokemonDetailsByFuzzy.num).toBe(6);
@@ -115,12 +114,15 @@ describe('getPokemonDetailsByFuzzy', () => {
   });
 
   test('GIVEN a fuzzy pokemon and pagination THEN returns DexDetails', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getPokemonDetailsByFuzzy,
       variableValues: {
-        pokemon: 'silvallydragon', skip: 1, take: 2, reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getPokemonDetailsByFuzzy'>;
+        pokemon: 'silvallydragon',
+        skip: 1,
+        take: 2,
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getPokemonDetailsByFuzzy'>;
 
     expect(data.getPokemonDetailsByFuzzy.species).toBe('silvally-dragon');
     expect(data.getPokemonDetailsByFuzzy.num).toBe(773);
@@ -130,7 +132,7 @@ describe('getPokemonDetailsByFuzzy', () => {
   test('GIVEN an invalid pokemon THEN returns error', async () => {
     const data = await gCall({
       source: getPokemonDetailsByFuzzy,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -149,10 +151,10 @@ describe('getDexEntries', () => {
   }`;
 
   test('GIVEN a fuzzy pokemon THEN returns DexEntries', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getDexEntries,
-      variableValues: { pokemon: 'dragoni' },
-    }).then(formatResponse) as DataResponse<'getDexEntries'>;
+      variableValues: { pokemon: 'dragoni' }
+    }).then(formatResponse)) as DataResponse<'getDexEntries'>;
 
     expect(data.getDexEntries[0].species).toBe('dragonite');
     expect(data.getDexEntries[0].num).toBe(149);
@@ -161,23 +163,26 @@ describe('getDexEntries', () => {
   });
 
   test('GIVEN a fuzzy pokemon and pagination THEN returns DexEntries', async () => {
-    const {data} = await gCall({
+    const { data } = (await gCall({
       source: getDexEntries,
       variableValues: {
-        pokemon: 'dragoni', skip: 2, take: 3, reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getDexEntries'>;
+        pokemon: 'dragoni',
+        skip: 2,
+        take: 3,
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getDexEntries'>;
 
     expect(data.getDexEntries[0].species).toBe('arceus-dragon');
     expect(data.getDexEntries[0].num).toBe(493);
-    expect(data.getDexEntries).toContainEqual({num: 773, species: 'silvally-dragon'});
+    expect(data.getDexEntries).toContainEqual({ num: 773, species: 'silvally-dragon' });
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid pokemon THEN returns error', async () => {
     const data = await gCall({
       source: getDexEntries,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -192,10 +197,10 @@ describe('getDexEntryBySpeciesName', () => {
   }`;
 
   test('GIVEN a valid pokemon THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getDexEntryBySpeciesName,
-      variableValues: { pokemon: 'dragonite' },
-    }).then(formatResponse) as DataResponse<'getDexEntryBySpeciesName'>;
+      variableValues: { pokemon: 'dragonite' }
+    }).then(formatResponse)) as DataResponse<'getDexEntryBySpeciesName'>;
 
     expect(data.getDexEntryBySpeciesName.species).toBe('dragonite');
     expect(data.getDexEntryBySpeciesName.num).toBe(149);
@@ -205,7 +210,7 @@ describe('getDexEntryBySpeciesName', () => {
   test('GIVEN an invalid pokemon THEN returns error', async () => {
     const data = await gCall({
       source: getDexEntryBySpeciesName,
-      variableValues: { pokemon: 'totally_invalid_pokemon' },
+      variableValues: { pokemon: 'totally_invalid_pokemon' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -220,10 +225,10 @@ describe('getDexEntryByDexNumber', () => {
   }`;
 
   test('GIVEN a valid pokemon number THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getDexEntryByDexNumber,
-      variableValues: { pokemonNr: 493 },
-    }).then(formatResponse) as DataResponse<'getDexEntryByDexNumber'>;
+      variableValues: { pokemonNr: 493 }
+    }).then(formatResponse)) as DataResponse<'getDexEntryByDexNumber'>;
 
     expect(data.getDexEntryByDexNumber.species).toBe('arceus');
     expect(data).toMatchSnapshot();
@@ -232,7 +237,7 @@ describe('getDexEntryByDexNumber', () => {
   test('GIVEN an invalid pokemon number THEN returns error', async () => {
     const data = await gCall({
       source: getDexEntryByDexNumber,
-      variableValues: { pokemonNr: -9999 },
+      variableValues: { pokemonNr: -9999 }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));

@@ -20,13 +20,14 @@ export default class DexResolver {
       'Gets details on a single Pokémon based on species name.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  async getPokemonDetails(@Args() {
-    pokemon, skip, take, reverse,
-  }: ExactPokemonPaginatedArgs) {
+  async getPokemonDetails(@Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs) {
     const detailsEntry = this.dexService.findBySpeciesWithDetails({
-      pokemon, skip, take, reverse,
+      pokemon,
+      skip,
+      take,
+      reverse
     });
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
@@ -40,13 +41,14 @@ export default class DexResolver {
       'Gets details on a single Pokémon based on species name.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  getPokemonDetailsByName(@Args() {
-    pokemon, skip, take, reverse,
-  }: ExactPokemonPaginatedArgs) {
+  getPokemonDetailsByName(@Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs) {
     return this.getPokemonDetails({
-      pokemon, skip, take, reverse,
+      pokemon,
+      skip,
+      take,
+      reverse
     });
   }
 
@@ -55,15 +57,13 @@ export default class DexResolver {
       'Gets details on a single Pokémon based on a fuzzy search.',
       'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  async getPokemonDetailsByFuzzy(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs) {
+  async getPokemonDetailsByFuzzy(@Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs) {
     const entry = this.dexService.findBySpecies(pokemon);
 
     if (!entry) {
-      const fuzzyEntry = this.dexService.getByFuzzy({pokemon, skip, take});
+      const fuzzyEntry = this.dexService.getByFuzzy({ pokemon, skip, take });
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
@@ -71,7 +71,10 @@ export default class DexResolver {
     }
 
     const detailsEntry = this.dexService.findBySpeciesWithDetails({
-      pokemon, skip, take, reverse,
+      pokemon,
+      skip,
+      take,
+      reverse
     });
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
@@ -80,18 +83,19 @@ export default class DexResolver {
     return detailsEntry;
   }
 
-  @Query(() => [ DexEntry ], {
+  @Query(() => [DexEntry], {
     description: [
       'Gets dex entries for Pokémon based on a fuzzy search',
       'You can supply a skip and take to paginate the results and reverse to show the results least to most well matches',
       'Reversal is applied before pagination!'
-    ].join(''),
+    ].join('')
   })
-  getDexEntries(@Args() {
-    pokemon, skip, take, reverse,
-  }: PokemonPaginatedArgs) {
+  getDexEntries(@Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs) {
     const dexEntries = this.dexService.findByFuzzy({
-      pokemon, skip, take, reverse,
+      pokemon,
+      skip,
+      take,
+      reverse
     });
     if (dexEntries === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);

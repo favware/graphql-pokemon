@@ -24,18 +24,14 @@ export default class LearnsetResolver {
       'Gets the learnsets for a given Pokémon and move.',
       'Multiple moves are possible by putting them in an array: [move1, move2].',
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
-    ].join(''),
+    ].join('')
   })
   getPokemonLearnset(@Args() { pokemon, moves, generation }: LearnsetArgs) {
     const entry = this.learnsetService.findLearnsets({ pokemon, moves, generation });
 
     if (entry === undefined) {
       throw new Error(
-        [
-          `Failed to get learnsets for the combination of pokemon "${pokemon}"`,
-          `and move(s) "${moves.join(', ')}"`,
-          generation ? `with generation filter set to ${generation}` : ''
-        ].join(' ')
+        [`Failed to get learnsets for the combination of pokemon "${pokemon}"`, `and move(s) "${moves.join(', ')}"`, generation ? `with generation filter set to ${generation}` : ''].join(' ')
       );
     }
 
@@ -48,7 +44,7 @@ export default class LearnsetResolver {
       'A fuzzy search is performed to find a matching Pokémon and move',
       'Multiple moves are possible by putting them in an array: [move1, move2].',
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
-    ].join(''),
+    ].join('')
   })
   getPokemonLearnsetByFuzzy(@Args() { pokemon, moves, generation }: LearnsetFuzzyArgs) {
     const pokemonEntry = this.dexService.findBySpecies(pokemon);
@@ -61,12 +57,18 @@ export default class LearnsetResolver {
       pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].species);
     }
 
-    for (const [ index, move ] of moves.entries()) {
+    for (const [index, move] of moves.entries()) {
       const moveEntry = this.moveService.findByName(move);
       if (!moveEntry) {
-        const fuzzyEntry = this.moveService.findByFuzzy({
-          move, skip: 0, take: 10, reverse: false,
-        }, { threshold: 0.5 });
+        const fuzzyEntry = this.moveService.findByFuzzy(
+          {
+            move,
+            skip: 0,
+            take: 10,
+            reverse: false
+          },
+          { threshold: 0.5 }
+        );
         if (fuzzyEntry === undefined || !fuzzyEntry.length) {
           throw new Error(`Failed to get data for move: ${move}`);
         }

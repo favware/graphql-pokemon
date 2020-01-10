@@ -16,7 +16,7 @@ export const gCall = async <TData = ExecutionResultDataDefault>({ source, variab
   return graphql<TData>({
     schema,
     source,
-    variableValues,
+    variableValues
   });
 };
 

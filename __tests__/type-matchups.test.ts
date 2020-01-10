@@ -29,42 +29,42 @@ describe('getTypeMatchup', () => {
   }`;
 
   test('GIVEN a one valid type THEN returns TypeMatchups', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getTypeMatchup,
-      variableValues: { types: 'dragon' },
-    }).then(formatResponse) as DataResponse<'getTypeMatchup'>;
+      variableValues: { types: 'dragon' }
+    }).then(formatResponse)) as DataResponse<'getTypeMatchup'>;
 
-    expect(data.getTypeMatchup.attacking.effectiveTypes).toStrictEqual([ 'dragon' ]);
-    expect(data.getTypeMatchup.defending.effectiveTypes).toStrictEqual([ 'dragon', 'fairy', 'ice' ]);
+    expect(data.getTypeMatchup.attacking.effectiveTypes).toStrictEqual(['dragon']);
+    expect(data.getTypeMatchup.defending.effectiveTypes).toStrictEqual(['dragon', 'fairy', 'ice']);
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a one valid type as array THEN returns TypeMatchups', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getTypeMatchup,
-      variableValues: { types: [ 'dragon' ] },
-    }).then(formatResponse) as DataResponse<'getTypeMatchup'>;
+      variableValues: { types: ['dragon'] }
+    }).then(formatResponse)) as DataResponse<'getTypeMatchup'>;
 
-    expect(data.getTypeMatchup.attacking.effectiveTypes).toStrictEqual([ 'dragon' ]);
-    expect(data.getTypeMatchup.defending.effectiveTypes).toStrictEqual([ 'dragon', 'fairy', 'ice' ]);
+    expect(data.getTypeMatchup.attacking.effectiveTypes).toStrictEqual(['dragon']);
+    expect(data.getTypeMatchup.defending.effectiveTypes).toStrictEqual(['dragon', 'fairy', 'ice']);
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a two valid types THEN returns TypeMatchups', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getTypeMatchup,
-      variableValues: { types: [ 'dark', 'ghost' ] },
-    }).then(formatResponse) as DataResponse<'getTypeMatchup'>;
+      variableValues: { types: ['dark', 'ghost'] }
+    }).then(formatResponse)) as DataResponse<'getTypeMatchup'>;
 
-    expect(data.getTypeMatchup.attacking.doubleEffectiveTypes).toStrictEqual([ 'ghost', 'psychic' ]);
-    expect(data.getTypeMatchup.defending.effectiveTypes).toStrictEqual([ 'fairy' ]);
+    expect(data.getTypeMatchup.attacking.doubleEffectiveTypes).toStrictEqual(['ghost', 'psychic']);
+    expect(data.getTypeMatchup.defending.effectiveTypes).toStrictEqual(['fairy']);
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid type matchup THEN returns error', async () => {
     const data = await gCall({
       source: getTypeMatchup,
-      variableValues: { types: 'totally_invalid_type' },
+      variableValues: { types: 'totally_invalid_type' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -79,12 +79,12 @@ describe('getTypeByName', () => {
   }`;
 
   test('GIVEN a valid type THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getTypeByName,
-      variableValues: { type: 'fire' },
-    }).then(formatResponse) as DataResponse<'getTypeByName'>;
+      variableValues: { type: 'fire' }
+    }).then(formatResponse)) as DataResponse<'getTypeByName'>;
 
-    const [ dt, dd ] = [ data.getTypeByName.damageTaken, data.getTypeByName.damageDealt ];
+    const [dt, dd] = [data.getTypeByName.damageTaken, data.getTypeByName.damageDealt];
     const { bug: dtBug, dark: dtDark } = dt;
     const { dragon: ddDragon, grass: ddGrass } = dd;
 
@@ -98,7 +98,7 @@ describe('getTypeByName', () => {
   test('GIVEN an invalid type THEN returns error', async () => {
     const data = await gCall({
       source: getTypeByName,
-      variableValues: { type: 'totally_invalid_type' },
+      variableValues: { type: 'totally_invalid_type' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));

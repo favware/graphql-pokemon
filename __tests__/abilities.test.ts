@@ -11,10 +11,10 @@ describe('getAbilityDetailsByName', () => {
   }`;
 
   test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityDetailsByName,
-      variableValues: { ability: 'multiscale' },
-    }).then(formatResponse) as DataResponse<'getAbilityDetailsByName'>;
+      variableValues: { ability: 'multiscale' }
+    }).then(formatResponse)) as DataResponse<'getAbilityDetailsByName'>;
 
     expect(data.getAbilityDetailsByName.name).toBe('Multiscale');
     expect(data).toMatchSnapshot();
@@ -23,7 +23,7 @@ describe('getAbilityDetailsByName', () => {
   test('GIVEN an invalid ability THEN returns error', async () => {
     const data = await gCall({
       source: getAbilityDetailsByName,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -40,35 +40,35 @@ describe('getAbilityDetailsByFuzzy', () => {
   }`;
 
   test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityDetailsByFuzzy,
-      variableValues: { ability: 'multiscaale' },
-    }).then(formatResponse) as DataResponse<'getAbilityDetailsByFuzzy'>;
+      variableValues: { ability: 'multiscaale' }
+    }).then(formatResponse)) as DataResponse<'getAbilityDetailsByFuzzy'>;
 
     expect(data.getAbilityDetailsByFuzzy.name).toBe('Multiscale');
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy ability THEN returns AbilityEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityDetailsByFuzzy,
-      variableValues: { ability: 'multi' },
-    }).then(formatResponse) as DataResponse<'getAbilityDetailsByFuzzy'>;
+      variableValues: { ability: 'multi' }
+    }).then(formatResponse)) as DataResponse<'getAbilityDetailsByFuzzy'>;
 
     expect(data.getAbilityDetailsByFuzzy.name).toBe('Multiscale');
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy ability and pagination THEN returns AbilityEntry', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityDetailsByFuzzy,
       variableValues: {
         ability: 'multi',
         skip: 1,
         take: 1,
-        reverse: false,
-      },
-    }).then(formatResponse) as DataResponse<'getAbilityDetailsByFuzzy'>;
+        reverse: false
+      }
+    }).then(formatResponse)) as DataResponse<'getAbilityDetailsByFuzzy'>;
 
     expect(data.getAbilityDetailsByFuzzy.name).toBe('Multitype');
     expect(data).toMatchSnapshot();
@@ -77,7 +77,7 @@ describe('getAbilityDetailsByFuzzy', () => {
   test('GIVEN an invalid ability THEN returns error', async () => {
     const data = await gCall({
       source: getAbilityDetailsByFuzzy,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -91,8 +91,8 @@ describe('getAbilityDetailsByFuzzy', () => {
         ability: 'totally_invalid_ability',
         skip: 0,
         take: 1,
-        reverse: false,
-      },
+        reverse: false
+      }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
@@ -107,57 +107,57 @@ describe('getAbilityByFuzzy', () => {
   }`;
 
   test('GIVEN a valid ability THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityByFuzzy,
-      variableValues: { ability: 'multiscale' },
-    }).then(formatResponse) as DataResponse<'getAbilityByFuzzy'>;
+      variableValues: { ability: 'multiscale' }
+    }).then(formatResponse)) as DataResponse<'getAbilityByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy ability THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityByFuzzy,
-      variableValues: { ability: 'multi' },
-    }).then(formatResponse) as DataResponse<'getAbilityByFuzzy'>;
+      variableValues: { ability: 'multi' }
+    }).then(formatResponse)) as DataResponse<'getAbilityByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN a fuzzy ability and pagination THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityByFuzzy,
       variableValues: {
         ability: 'multi',
         skip: 1,
         take: 1,
-        reverse: true,
-      },
-    }).then(formatResponse) as DataResponse<'getAbilityByFuzzy'>;
+        reverse: true
+      }
+    }).then(formatResponse)) as DataResponse<'getAbilityByFuzzy'>;
 
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid ability THEN returns empty array', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityByFuzzy,
-      variableValues: { ability: 'totally_invalid_ability' },
-    }).then(formatResponse) as DataResponse<'getAbilityByFuzzy'>;
+      variableValues: { ability: 'totally_invalid_ability' }
+    }).then(formatResponse)) as DataResponse<'getAbilityByFuzzy'>;
 
     expect(data.getAbilityByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
   });
 
   test('GIVEN an invalid ability and pagination THEN returns empty array', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityByFuzzy,
       variableValues: {
         ability: 'totally_invalid_ability',
         skip: 1,
         take: 2,
-        reverse: false,
-      },
-    }).then(formatResponse) as DataResponse<'getAbilityByFuzzy'>;
+        reverse: false
+      }
+    }).then(formatResponse)) as DataResponse<'getAbilityByFuzzy'>;
 
     expect(data.getAbilityByFuzzy).toStrictEqual([]);
     expect(data).toMatchSnapshot();
@@ -171,10 +171,10 @@ describe('getAbilityByName', () => {
   }`;
 
   test('GIVEN a valid ability THEN returns JSONObject', async () => {
-    const { data } = await gCall({
+    const { data } = (await gCall({
       source: getAbilityByName,
-      variableValues: { ability: 'multiscale' },
-    }).then(formatResponse) as DataResponse<'getAbilityByName'>;
+      variableValues: { ability: 'multiscale' }
+    }).then(formatResponse)) as DataResponse<'getAbilityByName'>;
 
     expect(data.getAbilityByName.name).toBe('Multiscale');
     expect(data).toMatchSnapshot();
@@ -183,7 +183,7 @@ describe('getAbilityByName', () => {
   test('GIVEN an invalid ability THEN returns error', async () => {
     const data = await gCall({
       source: getAbilityByName,
-      variableValues: { ability: 'totally_invalid_ability' },
+      variableValues: { ability: 'totally_invalid_ability' }
     });
 
     data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));

@@ -34,10 +34,10 @@ export default class TypeService {
         psychic: 1,
         rock: 1,
         steel: 1,
-        water: 1,
+        water: 1
       },
       normalTypes: [],
-      resistedTypes: [],
+      resistedTypes: []
     };
     const def: Pokemon.TypeDataset = JSON.parse(JSON.stringify(atk));
 

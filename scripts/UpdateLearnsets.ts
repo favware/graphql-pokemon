@@ -5,11 +5,9 @@ import { mapToJson, needFile } from './utils';
 
 (async () => {
   const res = new Map<string, unknown>();
-  const { BattleLearnsets } = await needFile(
-    'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/learnsets.js',
-  );
+  const { BattleLearnsets } = await needFile('https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/learnsets.js');
 
-  for (const [ pokemon, learnset ] of Object.entries(BattleLearnsets)) {
+  for (const [pokemon, learnset] of Object.entries(BattleLearnsets)) {
     res.set(pokemon, (learnset as Learnset).learnset);
   }
 

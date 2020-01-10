@@ -57,7 +57,7 @@
     "fuse.js": "^3.4.6",
     "glob": "^7.1.6",
     "graphql-type-json": "^0.3.1",
-    "husky": "^4.0.4",
+    "husky": "^4.0.6",
     "jest": "^24.9.0",
     "jest-circus": "^24.9.0",
     "lint-staged": "^9.5.0",
@@ -68,7 +68,7 @@
     "reflect-metadata": "^0.1.13",
     "standard-version": "^7.0.1",
     "ts-jest": "^24.3.0",
-    "ts-node": "^8.5.4",
+    "ts-node": "^8.6.0",
     "type-graphql": "^0.17.6",
     "typescript": "^3.7.4"
   },

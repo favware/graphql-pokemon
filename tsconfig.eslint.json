@@ -1,22 +1,8 @@
-
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "baseUrl": "./"
   },
-  "include": [
-    "src/**/*.ts",
-    "scripts/**/*.ts",
-    "__tests__/**/*.ts",
-    "__tests__/**/*.d.ts",
-    "typings/*.ts"
-  ],
-  "exclude": [
-    "**/node_modules",
-    "**/build",
-    "**/bin",
-    "**/out",
-    "**/dist",
-    "**/coverage"
-  ]
+  "include": ["src/**/*.ts", "scripts/**/*.ts", "__tests__/**/*.ts", "__tests__/**/*.d.ts", "typings/*.ts"],
+  "exclude": ["**/node_modules", "**/build", "**/bin", "**/out", "**/dist", "**/coverage"]
 }

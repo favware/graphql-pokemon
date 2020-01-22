@@ -9,7 +9,5 @@
     "declarationMap": true
   },
 
-  "include": [
-    "./graphql-pokemon.ts"
-  ]
+  "include": ["./graphql-pokemon.ts"]
 }

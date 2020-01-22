@@ -40,9 +40,10 @@
 
 ---
 
-__***Query for Pokemon data using GraphQL***__
+\***\*_Query for Pokemon data using GraphQL_\*\***
 
 **Key Features**
+
 - Fully generated client-side type information published to npm under `@favware/graphql-pokemon`
 - Provides information about various assets in Pokémon
   - Pokédex
@@ -62,7 +63,7 @@ yarn add -D @favware/graphql-pokemon
 # npm install -D @favware/graphql-pokemon
 ```
 
-* * *
+---
 
 # Usage
 
@@ -71,7 +72,7 @@ import { Query } from '@favware/graphql-pokemon';
 // const { Query } = require('@favware/graphql-pokemon');
 
 interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
-	data: Record<K, Omit<Query[K], '__typename'>>;
+  data: Record<K, Omit<Query[K], '__typename'>>;
 }
 
 fetch('https://favware.tech/api', {
@@ -92,8 +93,8 @@ fetch('https://favware.tech/api', {
     `
   })
 })
-.then(res => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
-.then(json => console.log(json.data))
+  .then(res => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
+  .then(json => console.log(json.data));
 ```
 
 # API Documentation

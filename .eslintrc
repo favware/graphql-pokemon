@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "@favware"
-  ],
+  "extends": ["@favware"],
   "rules": {
     "array-bracket-spacing": "off",
     "eol-last": "off",

@@ -51,7 +51,7 @@ gcloudDocker() {
   build) docker build -t gcr.io/data-sunlight-146313/graphql-pokemon . ;;
   run) docker container run --name graphql-pokemon -d --expose 8080 -p 4000:8080 -it gcr.io/data-sunlight-146313/graphql-pokemon:latest ;;
   push) docker push gcr.io/data-sunlight-146313/graphql-pokemon ;;
-  deploy) gcloud beta run deploy --image gcr.io/data-sunlight-146313/graphql-pokemon ;;
+  deploy) gcloud run deploy graphql-pokemon --image gcr.io/data-sunlight-146313/graphql-pokemon ;;
   remove) docker rmi -f gcr.io/data-sunlight-146313/graphql-pokemon ;;
   esac
 }

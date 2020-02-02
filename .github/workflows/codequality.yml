@@ -26,10 +26,6 @@ jobs:
         run: yarn
       - name: Run ESLint
         uses: icrawl/action-eslint@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          job-name: ESLint
 
   Typescript:
     name: Typescript
@@ -45,8 +41,14 @@ jobs:
         uses: actions/cache@v1
         with:
           path: node_modules
-          key: ${{ runner.os }}-10-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
       - name: Install Deps
         run: yarn
       - name: Build Source
-        run: yarn build
+        run: yarn build --pretty
+        # Pending https://github.com/iCrawl/action-tsc/pull/143 and release
+        # uses: icrawl/action-tsc@v1
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # with:
+        #   build: src

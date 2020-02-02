@@ -62,10 +62,8 @@ jobs:
       - name: Configure gcloud
         run: gcloud auth configure-docker
       - name: Build Docker image
-        run: docker build . --tag gcr.io/$GCLOUD_PROJECT/graphql-pokemon
+        run: docker build . --tag gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon
       - name: Push Docker image
-        run: docker push gcr.io/$GCLOUD_PROJECT/graphql-pokemon
+        run: docker push gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon
       - name: Deploy latest image to Google Cloud Run
-        run: gcloud run deploy graphql-pokemon --image gcr.io/$GCLOUD_PROJECT/graphql-pokemon --region=europe-west1 --project=$GCLOUD_PROJECT --platform=managed --allow-unauthenticated
-    env:
-      GCLOUD_PROJECT: ${{ secrets.GCLOUD_PROJECT }}
+        run: gcloud run deploy graphql-pokemon --image gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon --region=europe-west1 --project=${{ secrets.GCLOUD_PROJECT }} --platform=managed --allow-unauthenticated

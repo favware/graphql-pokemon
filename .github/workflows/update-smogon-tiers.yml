@@ -40,7 +40,7 @@ jobs:
             git config --local user.name "${GITHUB_USER}";
             git checkout -b favware-bot/update-smogon-tierlists/`date +%F-%H-%M`;
             git commit -sam "refactor: update smogon tierlists";
-            hub pull-request -p -m "feat: update smogon tierlists" -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna";
+            hub pull-request -p -m "refactor: update smogon tierlists" -m "*bleep bloop* I updated the Smogon tier list" -l "SEM: N/A,Meta: Smogon Tier Update" -a "favna" -r "favna";
           fi
         env:
           GITHUB_USER: Favware-bot

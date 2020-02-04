@@ -1,0 +1,19 @@
+name: buttons
+
+on: repository_dispatch
+name: Run tests
+jobs:
+  republish-google:
+    if: github.event.action == 'Publish image to Google Cloud Platform'
+    name: Run "Publish image to Google Cloud Platform"
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Running your job!"
+  republish-dockerhub:
+    if: github.event.action == 'Publish image to Dockerhub'
+    name: Run "Publish image to Dockerhub"
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Running your job!"

@@ -48,5 +48,3 @@ jobs:
         uses: icrawl/action-tsc@v1
         with:
           build: src
-      - name: Logging
-        run: pwd && ls -al && ls -al build

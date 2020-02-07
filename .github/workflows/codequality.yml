@@ -10,6 +10,7 @@ jobs:
   ESLint:
     name: ESLint
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -30,6 +31,7 @@ jobs:
   Typescript:
     name: Typescript
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

@@ -372,6 +372,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Burn Drive',
       gen: 5,
+      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Fire type."
     }
   ],
@@ -472,6 +473,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Chill Drive',
       gen: 5,
+      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Ice type."
     }
   ],
@@ -699,6 +701,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Douse Drive',
       gen: 5,
+      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Water type."
     }
   ],
@@ -2906,6 +2909,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Shock Drive',
       gen: 5,
+      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Electric type."
     }
   ],
@@ -3308,7 +3312,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
         "The holder is immune to the weather-based modifiers of the attacker's moves in the effects of Sunny Day and Rain Dance.",
         "However, the user's Weather Ball and own weather-based abilities will not activate."
       ].join(' '),
-      shortDesc: 'Blocks the holder from the effects of sun/rain'
+      shortDesc: 'Blocks the holder from the effects of sun/rain.'
     }
   ],
   [

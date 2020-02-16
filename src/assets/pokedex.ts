@@ -26007,7 +26007,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Purple',
       prevo: 'toxel',
       evoLevel: '30 while having a Bashful, Bold, Calm, Careful, Gentle, Lonely, Mild, Modest, Quiet, Relaxed, Serious, or Timid Nature',
-      eggGroups: ['Human-Like']
+      eggGroups: ['Human-Like'],
+      otherFormes: ['toxtricitylowkeygmax']
     }
   ],
   [
@@ -26029,6 +26030,31 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         spe: 75
       },
       abilities: { first: 'Punk Rock', second: 'Plus', hidden: 'Technician' },
+      heightm: 5,
+      weightkg: 140,
+      color: 'Purple',
+      eggGroups: ['Human-Like']
+    }
+  ],
+  [
+    'toxtricitylowkeygmax',
+    {
+      species: 'toxtricity-low-key-gmax',
+      baseSpecies: 'Toxtricity-Low-Key',
+      num: 849,
+      types: ['Electric', 'Poison'],
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.5, female: 0.5 },
+      baseStats: {
+        hp: 75,
+        atk: 98,
+        def: 70,
+        spa: 114,
+        spd: 70,
+        spe: 75
+      },
+      abilities: { first: 'Punk Rock', second: 'Minus', hidden: 'Technician' },
       heightm: 5,
       weightkg: 140,
       color: 'Purple',
@@ -26627,6 +26653,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       num: 869,
       types: ['Fairy'],
       genderRatio: { male: 0, female: 1 },
+      baseForme: 'Vanilla Cream',
       baseStats: {
         hp: 65,
         atk: 60,
@@ -26642,7 +26669,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'milcery',
       evoLevel: 'Spin the joystick while Milcery is holding a sweet.',
       eggGroups: ['Fairy', 'Amorphous'],
-      otherFormes: ['alcremierubycream', 'alcremiematcha', 'alcremiemint', 'alcremielemon', 'alcremiesalted', 'alcremierubyswirl', 'alcremiecaramel', 'alcremierainbow', 'alcremiegmax']
+      otherFormes: ['alcremierubycream', 'alcremiematchacream', 'alcremiemintcream', 'alcremielemoncream', 'alcremiesaltedcream', 'alcremierubyswirl', 'alcremiecaramelswirl', 'alcremierainbowswirl']
     }
   ],
   [

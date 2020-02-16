@@ -40,7 +40,7 @@
 
 ---
 
-\***\*_Query for Pokemon data using GraphQL_\*\***
+**_Query for Pokemon data using GraphQL_**
 
 **Key Features**
 

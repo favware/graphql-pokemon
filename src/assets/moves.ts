@@ -2559,8 +2559,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '50',
       category: 'Physical',
-      desc: 'In singles, this move hits the target twice. In doubles, this move hits each target once.',
-      shortDesc: 'Singles: Hits twice. Doubles: Hits each once.',
+      desc:
+        'Hits two times with smart targeting. In singles, hits the foe twice. In Doubles, if hitting either foe would fail (from immunity, protection moves, semi-invulnerability, absorption abilities, or accuracy), hits the other foe twice. Otherwise, hits the target once, and then the other foe once. Target redirection (Follow Me, etc) causes it to hit that target twice.',
+      shortDesc: 'Hits 2x (hit 2 targets other foe smartly)',
       name: 'Dragon Darts',
       pp: 10,
       priority: 0,
@@ -6694,7 +6695,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from all attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from nearly all attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Prevents all moves from affecting the user this turn.',
       name: 'Max Guard',
       pp: 5,

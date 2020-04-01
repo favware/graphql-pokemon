@@ -36,7 +36,7 @@
     "@discordjs/collection": "^0.1.5",
     "@favware/eslint-config": "^3.3.0",
     "@favware/ts-config": "^1.1.2",
-    "@graphql-codegen/cli": "^1.13.0",
+    "@graphql-codegen/cli": "^1.13.1",
     "@graphql-codegen/typescript": "^1.13.0",
     "@graphql-codegen/typescript-resolvers": "^1.13.0",
     "@klasa/timestamp": "^0.0.1",

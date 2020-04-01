@@ -18,7 +18,7 @@ export default class DexService {
   private tiers: Record<string, string>;
 
   public findByNum(@Arg('num') num: number) {
-    return pokedex.find(poke => poke.num === num);
+    return pokedex.find((poke) => poke.num === num);
   }
 
   public findBySpecies(@Arg('species') species: string) {

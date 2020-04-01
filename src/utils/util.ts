@@ -10,7 +10,7 @@ export default class Util {
    * @param str The string to title case
    */
   public static toTitleCase(str: string): string {
-    return str.replace(TOTITLECASE, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+    return str.replace(TOTITLECASE, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
   }
 
   /**

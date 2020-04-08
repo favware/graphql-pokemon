@@ -24,6 +24,8 @@ jobs:
         run: yarn
       - name: Run Updater
         run: yarn scripts:smogontiersupdater
+      - name: Run prettier on the code
+        run: yarn style
       - name: Install Hub
         run: sudo snap install hub --classic
       - name: Commit any changes

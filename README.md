@@ -101,11 +101,41 @@ fetch('https://favware.tech/api', {
 
 ## With [Apollo Client React](https://www.apollographql.com/docs/react/)
 
+```ts
+// ApolloClient setup
+import { ApolloClient } from 'apollo-client';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { HttpLink } from 'apollo-link-http';
+
+// Instantiate required constructor fields
+const cache = new InMemoryCache();
+const link = new HttpLink({
+  uri: 'https://favware.tech/api',
+});
+
+export const client = new ApolloClient({
+  // Provide required constructor fields
+  cache: cache,
+  link: link,
+
+  // Provide some optional constructor fields
+  name: 'graphql-pokemon-client',
+  version: '1.0',
+  queryDeduplication: false,
+  defaultOptions: {
+    watchQuery: {
+      fetchPolicy: 'cache-and-network',
+    },
+  },
+});
+```
 ```tsx
+// Component
 import React from 'react';
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
 import { Query } from '@favware/graphql-pokemon';
+import { client } from './ApolloClient';
 
 interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
   data: Record<K, Omit<Query[K], '__typename'>>;
@@ -123,7 +153,7 @@ const GET_POKEMON_DETAILS = gql`
 `;
 
 export const Pokemon: React.FC = () => {
-  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS);
+  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS, { client: client } );
 
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;

@@ -67,6 +67,8 @@ yarn add -D @favware/graphql-pokemon
 
 # Usage
 
+## With [browser Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [node-fetch](https://www.npmjs.com/package/node-fetch)
+
 ```ts
 import { Query } from '@favware/graphql-pokemon';
 // const { Query } = require('@favware/graphql-pokemon');
@@ -95,6 +97,41 @@ fetch('https://favware.tech/api', {
 })
   .then(res => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
   .then(json => console.log(json.data));
+```
+
+## With [Apollo Client React](https://www.apollographql.com/docs/react/)
+
+```tsx
+import React from 'react';
+import gql from 'graphql-tag';
+import { useQuery } from '@apollo/react-hooks';
+import { Query } from '@favware/graphql-pokemon';
+
+interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
+  data: Record<K, Omit<Query[K], '__typename'>>;
+}
+
+const GET_POKEMON_DETAILS = gql`
+  {
+    getPokemonDetails(pokemon: dragonite skip: 0 take: 2 reverse: true) {
+      sprite
+      num
+      species
+      color
+    }
+  }
+`;
+
+export const Pokemon: React.FC = () => {
+  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS);
+
+  if (loading) return 'Loading...';
+  if (error) return `Error! ${error.message}`;
+  
+  return (
+    <div> Insert how you want to display the data here </div>
+  )
+}
 ```
 
 # API Documentation

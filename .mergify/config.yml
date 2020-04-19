@@ -1,9 +1,10 @@
 pull_request_rules:
-  - name: Automatic merge ⬇️ on approval ✔
+  - name: Automatic Depfu merging
     conditions:
       - approved-reviews-by=Favna
       - base=master
-      - author=Favware-bot
+      - label~=^Meta:\ Dependencies
+      - title~=Yarn\ dependencies
     actions:
       merge:
         method: squash

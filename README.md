@@ -77,7 +77,7 @@ yarn add -D @favware/graphql-pokemon
 
 Install client side typings with [NuGet](https://www.nuget.org/).
 
-Search `GraphqlPokemon` in your NuGet manager and install it from there
+Search `Favware.Graphqlpokemon` in your NuGet manager and install it from there
 
 ---
 

@@ -1,0 +1,237 @@
+name: Continuous Delivery
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "src/**"
+
+jobs:
+  Linting:
+    name: Linting
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Deps
+        run: yarn
+      - name: Run ESLint
+        uses: icrawl/action-eslint@v1
+
+  Testing:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn
+      - name: Run Jest
+        run: yarn test
+
+  Build:
+    name: Compiling TypeScript
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: [Testing, Linting]
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install NodeJS Dependencies
+        run: yarn
+      - name: Compile TypeScript
+        uses: icrawl/action-tsc@v1
+        with:
+          build: src
+      - name: Upload API bundle to artifacts
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: api_bundle
+          path: generated/api/
+
+  Dockerhub:
+    name: Publish image to Dockerhub
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: Build
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Download build bundle artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: api_bundle
+      - name: Publish to Dockerhub
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: favware/graphql-pokemon
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+  GCloud:
+    name: Publish image to Google Cloud Platform
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: Build
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Download build bundle artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: api_bundle
+      - name: Setup GCloud SDK
+        uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GCLOUD_KEY }}
+      - name: Configure gcloud
+        run: gcloud auth configure-docker
+      - name: Build Docker image
+        run: docker build . --tag gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon
+      - name: Push Docker image
+        run: docker push gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon
+      - name: Deploy latest image to Google Cloud Run
+        run: gcloud run deploy graphql-pokemon --image gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon --region=europe-west1 --project=${{ secrets.GCLOUD_PROJECT }} --platform=managed --allow-unauthenticated
+
+  GitHubPublish:
+    name: Publishing release to GitHub
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: GCloud
+    env:
+      GITHUB_USER: Favware-bot
+      GITHUB_EMAIL: favwarebot@gmail.com
+      GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install NodeJS Dependencies
+        run: yarn
+      - name: Configure Git
+        run: |
+          git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git";
+          git config --local user.email "${GITHUB_EMAIL}";
+          git config --local user.name "${GITHUB_USER}";
+      - name: Bump semver
+        run: yarn sversion
+      - name: Push release to Git
+        run: git push --follow-tags origin master
+
+  GenerateTypings:
+    name: Generate TypeScript, SDL and C# type information
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: GitHubPublish
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install NodeJS Dependencies
+        run: yarn
+      - name: Generate GraphQL Schema code
+        run: yarn codegen
+      - name: Upload typescript bundle to artifacts
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: typescript_bundle
+          path: generated/ts/
+      - name: Upload dotnet bundle to artifacts
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: dotnet_bundle
+          path: generated/dotnet/
+
+  NPMPublish:
+    name: Publishing release to NPM
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: GitHubPublish
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Download generated typings artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: typescript_bundle
+      - name: Publish to NPM
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  NuGetPublish:
+    name: Publishing release to NuGet
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: GitHubPublish
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Download generated typings artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: dotnet_bundle
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.201
+      - name: Publish to NuGet
+        uses: rohith/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: generated/dotnet/GraphqlPokemon.csproj
+          PACKAGE_NAME: Favware.Graphqlpokemon
+          TAG_COMMIT: false
+          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}

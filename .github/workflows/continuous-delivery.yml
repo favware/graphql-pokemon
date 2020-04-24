@@ -147,22 +147,17 @@ jobs:
         run: yarn
       - name: Configure Git
         run: |
+          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
           git config --local user.email "${GITHUB_EMAIL}";
           git config --local user.name "${GITHUB_USER}";
         env:
-          GITHUB_USER: Favna
-          GITHUB_EMAIL: support@favware.tech
+          GITHUB_USER: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       - name: Bump semver
         run: yarn sversion
-      - name: Reset Git to GitHub Action user
-        run: |
-          git config --local user.email "action@github.com";
-          git config --local user.name "GitHub Action";
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.RELEASE_TOKEN }}
-          tags: true  
+        run: git push --follow-tags origin master
 
   GenerateTypings:
     name: Generate TypeScript, SDL and C# type information

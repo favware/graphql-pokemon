@@ -204,7 +204,7 @@ jobs:
   NPMPublish:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip publish]')"
+    # if: "!contains(github.event.head_commit.message, '[skip publish]')"
     needs: GenerateTypings
     steps:
       - name: Checkout Project
@@ -219,25 +219,31 @@ jobs:
         with:
           name: typescript_bundle
           path: generated/ts/
-      - name: Publish to NPM
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Setup Node for publishing to GitHub
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@favware'
-      - name: Publish to GitHub
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.BOT_TOKEN }}
+      - name: Logging
+        run: |
+          cat package.json
+          echo ""
+          ls -al generated/ts
+          echo ""
+      # - name: Publish to NPM
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Setup Node for publishing to GitHub
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 12
+      #     registry-url: 'https://npm.pkg.github.com'
+      #     scope: '@favware'
+      # - name: Publish to GitHub
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.BOT_TOKEN }}
 
   NuGetPublish:
     name: Publishing release to NuGet
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip publish]')"
+    # if: "!contains(github.event.head_commit.message, '[skip publish]')"
     needs: GenerateTypings
     env:
       DOTNET_CLI_TELEMETRY_OPTOUT: true
@@ -253,10 +259,15 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.201
-      - name: Publish to NuGet
-        uses: rohith/publish-nuget@v2
-        with:
-          PROJECT_FILE_PATH: generated/dotnet/Favware.Graphqlpokemon.csproj
-          PACKAGE_NAME: Favware.Graphqlpokemon
-          TAG_COMMIT: false
-          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
+      - name: Logging
+        run: |
+          ls -al generated/dotnet
+          echo ""
+          cat generated/dotnet/Favware.Graphqlpokemon.csproj
+      # - name: Publish to NuGet
+      #   uses: rohith/publish-nuget@v2
+      #   with:
+      #     PROJECT_FILE_PATH: generated/dotnet/Favware.Graphqlpokemon.csproj
+      #     PACKAGE_NAME: Favware.Graphqlpokemon
+      #     TAG_COMMIT: false
+      #     NUGET_KEY: ${{ secrets.NUGET_API_KEY }}

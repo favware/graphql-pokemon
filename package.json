@@ -27,7 +27,7 @@
     "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers",
     "scripts:updatelearnsets": "yarn scripts:runner scripts/UpdateLearnsets",
     "scripts:bumpNugetVersion": "yarn scripts:runner scripts/bumpNugetVersion",
-    "typescript:replace-invalid-code": "replace-in-file /};/g } generated/ts/graphql-pokemon.d.ts --isRegex",
+    "typescript:replace-invalid-code": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
     "dotnet:replace-invalid-code": "replace-in-file /any/g object generated/dotnet/GraphqlPokemon.cs --isRegex",
     "dotnet:bump-version": "yarn scripts:bumpNugetVersion"
   },

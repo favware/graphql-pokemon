@@ -107,6 +107,7 @@ jobs:
           username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
           tags: "latest,stable,master"
+          registry: docker.pkg.github.com
 
   GCloud:
     name: Publish image to Google Cloud Platform
@@ -138,7 +139,7 @@ jobs:
     name: Publishing release to GitHub
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    needs: GCloud
+    needs: [Dockerhub, GCloud]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

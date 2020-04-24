@@ -28,7 +28,7 @@ export default class TypeResolver {
     const typeEntry = this.typeService.findTypeMatchupByName(type);
 
     if (typeEntry === undefined) {
-      throw new Error(`Failed to get data for type: ${type}`);
+      throw new Error(`Failed to get type matchup data for: ${type}`);
     }
 
     return typeEntry;

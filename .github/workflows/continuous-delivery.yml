@@ -103,7 +103,7 @@ jobs:
       - name: Publish to GitHub Docker Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: favware/graphql-pokemon
+          name: favware/graphql-pokemon/graphql-pokemon
           username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
           tags: "latest,stable,master"

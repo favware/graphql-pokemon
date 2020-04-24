@@ -91,6 +91,7 @@ jobs:
         uses: actions/download-artifact@v2-preview
         with:
           name: api_bundle
+          path: generated/api/
       - name: Publish to Dockerhub
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
@@ -110,6 +111,7 @@ jobs:
         uses: actions/download-artifact@v2-preview
         with:
           name: api_bundle
+          path: generated/api/
       - name: Setup GCloud SDK
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
@@ -205,6 +207,7 @@ jobs:
         uses: actions/download-artifact@v2-preview
         with:
           name: typescript_bundle
+          path: generated/ts/
       - name: Publish to NPM
         run: npm publish
         env:
@@ -224,6 +227,7 @@ jobs:
         uses: actions/download-artifact@v2-preview
         with:
           name: dotnet_bundle
+          path: generated/dotnet/
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:

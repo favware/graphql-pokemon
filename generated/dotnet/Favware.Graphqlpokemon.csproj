@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageId>Favware.Graphqlpokemon</PackageId>
+		<Product>Favware.Graphqlpokemon</Product>
+		<Description>Expansive Pokemon GraphQL API</Description>
+		<PackageReleaseNotes>First Release!</PackageReleaseNotes>
+		<Version>0.0.1</Version>
+		<Authors>Jeroen Claassens, Favware</Authors>
+		<PackageTags>pokemon graphql api favware</PackageTags>
+
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Platforms>AnyCPU;x64;x86</Platforms>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<DocumentationFile>bin\Release\Favware.Graphqlpokemon.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(Configuration)' == 'Release' AND '$(TargetFramework)' == 'netcoreapp3.1'">
+		<None Include="bin\Release\netcoreapp3.1\Favware.Graphqlpokemon.dll" Pack="true" PackagePath="lib\netcoreapp3.1"></None>
+		<None Include="bin\Release\netcoreapp3.1\Favware.Graphqlpokemon.pdb" Pack="true" PackagePath="lib\netcoreapp3.1"></None>
+		<None Include="bin\Release\netcoreapp3.1\Favware.Graphqlpokemon.xml" Pack="true" PackagePath="lib\netcoreapp3.1"></None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="GraphQL" Version="2.4.0"></PackageReference>
+		<PackageReference Include="GraphQL-Parser" Version="5.1.0"></PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3"></PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="**\*.cs" Pack="true" PackagePath="src"></None>
+	</ItemGroup>
+
+</Project>

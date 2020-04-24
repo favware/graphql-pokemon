@@ -33,7 +33,7 @@ describe('getPokemonDetailsByName', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -65,7 +65,7 @@ describe('getPokemonDetails', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -135,7 +135,7 @@ describe('getPokemonDetailsByFuzzy', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -185,7 +185,7 @@ describe('getDexEntries', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -213,7 +213,7 @@ describe('getDexEntryBySpeciesName', () => {
       variableValues: { pokemon: 'totally_invalid_pokemon' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -240,7 +240,7 @@ describe('getDexEntryByDexNumber', () => {
       variableValues: { pokemonNr: -9999 }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });

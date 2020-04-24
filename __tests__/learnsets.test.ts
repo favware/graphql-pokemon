@@ -101,7 +101,7 @@ describe('getPokemonLearnset', () => {
       variableValues: { pokemon: 'totally_invalid_pokemon' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 
@@ -111,7 +111,7 @@ describe('getPokemonLearnset', () => {
       variableValues: { pokemon: 'dragonite', moves: 'totally_invalid_move' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 
@@ -121,7 +121,7 @@ describe('getPokemonLearnset', () => {
       variableValues: { pokemon: 'dragonite', moves: 'dragondance', generation: 0 }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });

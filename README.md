@@ -15,14 +15,14 @@
 **Table of Contents**
 
 - [Installation](#installation)
-  * [NodeJS](#nodejs)
-  * [.NET Core](#net-core)
+  - [NodeJS](#nodejs)
+  - [.NET Core](#net-core)
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
-  * [NodeJS](#nodejs-1)
-    + [With browser `Fetch API` or `node-fetch`](#with-browser--fetch-api--or--node-fetch-)
-    + [With `Apollo Client React`](#with--apollo-client-react-)
-  * [.NET Core](#net-core-1)
+  - [NodeJS](#nodejs-1)
+    - [With browser `Fetch API` or `node-fetch`](#with-browser--fetch-api--or--node-fetch-)
+    - [With `Apollo Client React`](#with--apollo-client-react-)
+  - [.NET Core](#net-core-1)
 
 ---
 
@@ -117,8 +117,8 @@ fetch('https://favware.tech/api', {
     `
   })
 })
-  .then(res => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
-  .then(json => console.log(json.data));
+  .then((res) => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
+  .then((json) => console.log(json.data));
 ```
 
 ### With `Apollo Client React`
@@ -132,7 +132,7 @@ import { HttpLink } from 'apollo-link-http';
 // Instantiate required constructor fields
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'https://favware.tech/api',
+  uri: 'https://favware.tech/api'
 });
 
 export const client = new ApolloClient({
@@ -146,11 +146,12 @@ export const client = new ApolloClient({
   queryDeduplication: false,
   defaultOptions: {
     watchQuery: {
-      fetchPolicy: 'cache-and-network',
-    },
-  },
+      fetchPolicy: 'cache-and-network'
+    }
+  }
 });
 ```
+
 ```tsx
 // Component
 import React from 'react';
@@ -165,7 +166,7 @@ interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
 
 const GET_POKEMON_DETAILS = gql`
   {
-    getPokemonDetails(pokemon: dragonite skip: 0 take: 2 reverse: true) {
+    getPokemonDetails(pokemon: dragonite, skip: 0, take: 2, reverse: true) {
       sprite
       num
       species
@@ -175,15 +176,13 @@ const GET_POKEMON_DETAILS = gql`
 `;
 
 export const Pokemon: React.FC = () => {
-  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS, { client: client } );
+  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS, { client: client });
 
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
-  
-  return (
-    <div> Insert how you want to display the data here </div>
-  )
-}
+
+  return <div> Insert how you want to display the data here </div>;
+};
 ```
 
 ## .NET Core

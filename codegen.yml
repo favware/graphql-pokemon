@@ -7,17 +7,17 @@ generates:
       - typescript-resolvers
     config:
       scalars:
-        JSONObject: "Record<PropertyKey, any>"
+        JSONObject: 'Record<PropertyKey, any>'
       constEnums: true
       immutableTypes: true
   ./generated/ts/graphql-pokemon.graphql:
     plugins:
       - schema-ast
-  ./generated/dotnet/GraphqlPokemon.cs:
+  ./generated/dotnet/Favware.Graphqlpokemon.cs:
     plugins:
       - c-sharp
     config:
-      className: GraphqlPokemon
+      className: Favware.Graphqlpokemon
       namingConvention: keep
       enumValues:
         Abilities:

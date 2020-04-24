@@ -5,8 +5,8 @@ on:
     branches:
       - master
     paths:
-      - "src/**"
-      - ".github/**"
+      - 'src/**'
+      - '.github/**'
 
 jobs:
   Linting:
@@ -99,14 +99,14 @@ jobs:
           name: favware/graphql-pokemon
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: "latest,stable,master"
+          tags: 'latest,stable,master'
       - name: Publish to GitHub Docker Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: favware/graphql-pokemon/graphql-pokemon
           username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
-          tags: "latest,stable,master"
+          tags: 'latest,stable,master'
           registry: docker.pkg.github.com
 
   GCloud:
@@ -204,12 +204,12 @@ jobs:
   NPMPublish:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]') || !contains(github.event.head_commit.message, '[skip publish]')"
+    if: "!contains(github.event.head_commit.message, '[skip publish]')"
     needs: GenerateTypings
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 12
+      - name: Setup Node for publishing to NPM
         uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -223,7 +223,7 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Use Node.js 12
+      - name: Setup Node for publishing to GitHub
         uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -232,12 +232,12 @@ jobs:
       - name: Publish to GitHub
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.BOT_TOKEN }}
 
   NuGetPublish:
     name: Publishing release to NuGet
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]') || !contains(github.event.head_commit.message, '[skip publish]')"
+    if: "!contains(github.event.head_commit.message, '[skip publish]')"
     needs: GenerateTypings
     env:
       DOTNET_CLI_TELEMETRY_OPTOUT: true
@@ -256,7 +256,7 @@ jobs:
       - name: Publish to NuGet
         uses: rohith/publish-nuget@v2
         with:
-          PROJECT_FILE_PATH: generated/dotnet/GraphqlPokemon.csproj
+          PROJECT_FILE_PATH: generated/dotnet/Favware.Graphqlpokemon.csproj
           PACKAGE_NAME: Favware.Graphqlpokemon
           TAG_COMMIT: false
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}

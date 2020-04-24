@@ -26,7 +26,7 @@ describe('getMoveDetailsByName', () => {
       variableValues: { move: 'totally_invalid_move' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -78,7 +78,7 @@ describe('getMoveDetailsByFuzzy', () => {
       variableValues: { move: 'totally_invalid_move' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 
@@ -93,7 +93,7 @@ describe('getMoveDetailsByFuzzy', () => {
       }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -184,7 +184,7 @@ describe('getMoveByName', () => {
       variableValues: { move: 'totally_invalid_move' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });

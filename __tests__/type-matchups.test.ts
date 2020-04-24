@@ -67,7 +67,7 @@ describe('getTypeMatchup', () => {
       variableValues: { types: 'totally_invalid_type' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -101,7 +101,7 @@ describe('getTypeByName', () => {
       variableValues: { type: 'totally_invalid_type' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });

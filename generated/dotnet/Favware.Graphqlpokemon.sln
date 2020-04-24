@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphqlPokemon", "GraphqlPokemon.csproj", "{2B80BBD9-B1D5-414A-A994-BB46D7E33F5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Favware.Graphqlpokemon", "Favware.Graphqlpokemon.csproj", "{2B80BBD9-B1D5-414A-A994-BB46D7E33F5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

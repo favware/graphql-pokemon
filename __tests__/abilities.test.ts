@@ -26,7 +26,7 @@ describe('getAbilityDetailsByName', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -80,7 +80,7 @@ describe('getAbilityDetailsByFuzzy', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 
@@ -95,7 +95,7 @@ describe('getAbilityDetailsByFuzzy', () => {
       }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -186,7 +186,7 @@ describe('getAbilityByName', () => {
       variableValues: { ability: 'totally_invalid_ability' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });

@@ -36,7 +36,7 @@ describe('getItemDetailsByName', () => {
       variableValues: { item: 'totally_invalid_item' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -93,7 +93,7 @@ describe('getItemDetailsByFuzzy', () => {
       variableValues: { item: 'totally_invalid_item' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 
@@ -108,7 +108,7 @@ describe('getItemDetailsByFuzzy', () => {
       }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });
@@ -199,7 +199,7 @@ describe('getItemByName', () => {
       variableValues: { item: 'totally_invalid_item' }
     });
 
-    data.errors!.forEach(error => expect(error).toBeInstanceOf(GraphQLError));
+    data.errors!.forEach((error) => expect(error).toBeInstanceOf(GraphQLError));
     expect(data).toMatchSnapshot();
   });
 });

@@ -8,17 +8,12 @@ const NUGET_DIR = resolve(ROOT_DIR, 'generated', 'dotnet');
 const json2xml = new Json2XML({ ignoreAttributes: false });
 
 const main = async () => {
-  const nuspecFile = resolve(NUGET_DIR, '.nuspec');
-  const csprojFile = resolve(NUGET_DIR, 'GraphqlPokemon.csproj');
-  const nuspecXml = await readFile(nuspecFile, 'utf-8');
+  const csprojFile = resolve(NUGET_DIR, 'Favware.Graphqlpokemon.csproj');
   const csprojXml = await readFile(csprojFile, 'utf-8');
-  const nuspecData = xml2json(nuspecXml, { ignoreAttributes: false }) as NuspecXMLData;
   const csprojData = xml2json(csprojXml, { ignoreAttributes: false }) as CsProjXMLData;
 
-  nuspecData.package.metadata.version = version;
-  csprojData.Project.Version = version;
+  csprojData.Project.PropertyGroup.Version = version;
 
-  await writeFile(nuspecFile, json2xml.parse(nuspecData));
   await writeFile(csprojFile, json2xml.parse(csprojData));
 };
 
@@ -26,15 +21,22 @@ main();
 
 interface CsProjXMLData {
   Project: {
-    Version: string;
-  };
-}
-
-interface NuspecXMLData {
-  package: {
-    metadata: {
-      id: string;
-      version: string;
+    PropertyGroup: {
+      PackageId: string;
+      Product: string;
+      Description: string;
+      PackageReleaseNotes: string;
+      Version: string;
+      Authors: string;
+      PackageTags: string;
+      TargetFramework: string;
+      Platforms: string;
+      GeneratePackageOnBuild: string;
+      DocumentationFile: string;
+    };
+    ItemGroup: {
+      None: unknown;
+      PackageReference: unknown;
     };
   };
 }

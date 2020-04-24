@@ -145,6 +145,15 @@ jobs:
           key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
         run: yarn
+      - name: Configure Git
+        run: |
+          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+          git config --local user.email "${GITHUB_EMAIL}";
+          git config --local user.name "${GITHUB_USER}";
+        env:
+          GITHUB_USER: Favna
+          GITHUB_EMAIL: support@favware.tech
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
       - name: Bump semver
         run: yarn sversion
       - name: Push release to Git
@@ -154,9 +163,9 @@ jobs:
           git config --local user.name "${GITHUB_USER}";
           git push --follow-tags origin master;
         env:
-          GITHUB_USER: Favware-bot
-          GITHUB_EMAIL: favwarebot@gmail.com
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GITHUB_USER: Favna
+          GITHUB_EMAIL: support@favware.tech
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
   GenerateTypings:
     name: Generate TypeScript, SDL and C# type information

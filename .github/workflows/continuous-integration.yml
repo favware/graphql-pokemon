@@ -3,19 +3,8 @@ name: Continuous Integration
 on:
   pull_request:
   push:
-    branches:
+    branches-ignore:
       - master
-    paths-ignore:
-      - 'src/**'
-      - 'generated/**'
-      - '.github/**'
-      - '.mergify/**'
-      - '.vscode/**'
-      - 'CHANGELOG.md'
-      - 'codegen.yml'
-      - 'Dockerfile'
-      - 'LICENSE.md'
-      - 'README.md'
 
 jobs:
   Linting:

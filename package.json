@@ -1,6 +1,6 @@
 {
   "name": "@favware/graphql-pokemon",
-  "version": "1.8.2",
+  "version": "1.8.0",
   "description": "Expansive Pokemon GraphQL API",
   "author": "@favware",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "up": "yarn upgrade-interactive --latest",
     "sversion": "standard-version",
     "codegen": "graphql-codegen",
-    "postcodegen": "run-p typescript:** dotnet:**",
+    "postcodegen": "run-s typescript:** dotnet:**",
     "cloud:start": "node index.js",
     "prepublishOnly": "yarn codegen",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",

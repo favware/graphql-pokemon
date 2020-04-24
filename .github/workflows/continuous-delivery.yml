@@ -99,12 +99,14 @@ jobs:
           name: favware/graphql-pokemon
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: "latest,stable,master"
       - name: Publish to GitHub Docker Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: favware/graphql-pokemon
-          username: ${{ github.actor }}
+          username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
+          tags: "latest,stable,master"
 
   GCloud:
     name: Publish image to Google Cloud Platform

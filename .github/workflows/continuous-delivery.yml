@@ -131,10 +131,6 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     needs: GCloud
-    env:
-      GITHUB_USER: Favna
-      GITHUB_EMAIL: support@favware.tech
-      GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -153,10 +149,20 @@ jobs:
         run: |
           git config --local user.email "${GITHUB_EMAIL}";
           git config --local user.name "${GITHUB_USER}";
+        env:
+          GITHUB_USER: Favna
+          GITHUB_EMAIL: support@favware.tech
       - name: Bump semver
         run: yarn sversion
-      - name: Push release to Git
-        run: git push --follow-tags origin master;
+      - name: Reset Git to GitHub Action user
+        run: |
+          git config --local user.email "action@github.com";
+          git config --local user.name "GitHub Action";
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.RELEASE_TOKEN }}
+          tags: true  
 
   GenerateTypings:
     name: Generate TypeScript, SDL and C# type information

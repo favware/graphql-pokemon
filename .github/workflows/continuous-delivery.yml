@@ -151,9 +151,9 @@ jobs:
           git config --local user.email "${GITHUB_EMAIL}";
           git config --local user.name "${GITHUB_USER}";
         env:
-          GITHUB_USER: Favna
-          GITHUB_EMAIL: support@favware.tech
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_USER: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       - name: Bump semver
         run: yarn sversion
       - name: Push release to Git
@@ -163,9 +163,9 @@ jobs:
           git config --local user.name "${GITHUB_USER}";
           git push --follow-tags origin master;
         env:
-          GITHUB_USER: Favna
-          GITHUB_EMAIL: support@favware.tech
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_USER: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
   GenerateTypings:
     name: Generate TypeScript, SDL and C# type information

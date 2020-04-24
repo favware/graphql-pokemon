@@ -29,9 +29,21 @@ coverage/
 .vs/
 *.iml
 
-# Transpiled files
-dist/
-build/
-typings/*
-!typings/tsconfig.json
+# Generated files
+
+## Scripts
 scripts/out.txt
+
+## API Bundle
+generated/api/
+
+## TypeScript Bundle
+generated/ts/graphql-pokemon.d.ts
+generated/ts/graphql-pokemon.graphql
+
+## DotNet bundle
+generated/dotnet/bin/
+generated/dotnet/obj/
+generated/dotnet/*.cs
+generated/dotnet/*.nupkg
+generated/dotnet/*.nuspec

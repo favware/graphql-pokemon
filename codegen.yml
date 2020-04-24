@@ -1,7 +1,26 @@
 overwrite: true
 schema: https://favware.tech/api
 generates:
-  ./typings/graphql-pokemon.ts:
+  ./generated/ts/graphql-pokemon.d.ts:
     plugins:
       - typescript
       - typescript-resolvers
+    config:
+      scalars:
+        JSONObject: "Record<PropertyKey, any>"
+      constEnums: true
+      immutableTypes: true
+  ./generated/ts/graphql-pokemon.graphql:
+    plugins:
+      - schema-ast
+  ./generated/dotnet/GraphqlPokemon.cs:
+    plugins:
+      - c-sharp
+    config:
+      className: GraphqlPokemon
+      namingConvention: keep
+      enumValues:
+        Abilities:
+          static: '_'
+        Moves:
+          return: '_'

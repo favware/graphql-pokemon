@@ -14,17 +14,23 @@
 
 **Table of Contents**
 
-- [Install](#install)
-- [Usage](#usage)
+- [Installation](#installation)
+  * [NodeJS](#nodejs)
+  * [.NET Core](#net-core)
 - [API Documentation](#api-documentation)
+- [Usage](#usage)
+  * [NodeJS](#nodejs-1)
+    + [With browser `Fetch API` or `node-fetch`](#with-browser--fetch-api--or--node-fetch-)
+    + [With `Apollo Client React`](#with--apollo-client-react-)
+  * [.NET Core](#net-core-1)
 
 ---
 
 **Project Status**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/master/LICENSE.md)
-[![Code Quality](https://github.com/favware/graphql-pokemon/workflows/Code%20Quality/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Code+Quality")
-[![Unit Tests](https://github.com/favware/graphql-pokemon/workflows/Unit%20Tests/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Unit+Tests")
+[![Continuous Delivery](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Delivery/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Delivery")
+[![Continuous Integration](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Integration/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Integration")
 [![Showdown Tierlists](https://github.com/favware/graphql-pokemon/workflows/Update%20Showdown%20Tierlists/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Update+Showdown+Formats")
 
 **Social Media and Donations**
@@ -36,7 +42,9 @@
 
 **Typings**
 
-[![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=graphql-pokemon%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
+[![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=TypeScript%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
+
+[![nuget](https://img.shields.io/nuget/v/Favware.Graphqlpokemon?color=blue&label=.NET%20Core%20version&logo=nuget&style=flat-square)](https://www.nuget.org/packages/Favware.Graphqlpokemon/)
 
 ---
 
@@ -53,7 +61,9 @@
   - Learnsets
   - Type matchups
 
-# Install
+# Installation
+
+## NodeJS
 
 Install client side typings with [yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com/):
 
@@ -63,11 +73,23 @@ yarn add -D @favware/graphql-pokemon
 # npm install -D @favware/graphql-pokemon
 ```
 
+## .NET Core
+
+Install client side typings with [NuGet](https://www.nuget.org/).
+
+Search `GraphqlPokemon` in your NuGet manager and install it from there
+
 ---
+
+# API Documentation
+
+For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api?ngsw-bypass=true).
 
 # Usage
 
-## With [browser Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [node-fetch](https://www.npmjs.com/package/node-fetch)
+## NodeJS
+
+### With browser `Fetch API` or `node-fetch`
 
 ```ts
 import { Query } from '@favware/graphql-pokemon';
@@ -99,7 +121,7 @@ fetch('https://favware.tech/api', {
   .then(json => console.log(json.data));
 ```
 
-## With [Apollo Client React](https://www.apollographql.com/docs/react/)
+### With `Apollo Client React`
 
 ```ts
 // ApolloClient setup
@@ -164,6 +186,6 @@ export const Pokemon: React.FC = () => {
 }
 ```
 
-# API Documentation
+## .NET Core
 
-For the full documentation of the deployed version please see [the GraphQL Playground on the API](https://favware.tech/api?ngsw-bypass=true).
+\<This will be written in due time, as I have little experience with .NET Core as of time of writing. If you're willing to contribute then please do.>

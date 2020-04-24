@@ -131,10 +131,6 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     needs: GCloud
-    env:
-      GITHUB_USER: Favware-bot
-      GITHUB_EMAIL: favwarebot@gmail.com
-      GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -149,15 +145,18 @@ jobs:
           key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
         run: yarn
-      - name: Configure Git
-        run: |
-          git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git";
-          git config --local user.email "${GITHUB_EMAIL}";
-          git config --local user.name "${GITHUB_USER}";
       - name: Bump semver
         run: yarn sversion
       - name: Push release to Git
-        run: git push --follow-tags origin master
+        run: |
+          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+          git config --local user.email "${GITHUB_EMAIL}";
+          git config --local user.name "${GITHUB_USER}";
+          git push --follow-tags origin master;
+        env:
+          GITHUB_USER: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
   GenerateTypings:
     name: Generate TypeScript, SDL and C# type information

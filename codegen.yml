@@ -17,7 +17,7 @@ generates:
     plugins:
       - c-sharp
     config:
-      className: Favware.Graphqlpokemon
+      className: Graphqlpokemon
       namingConvention: keep
       enumValues:
         Abilities:

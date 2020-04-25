@@ -7,7 +7,6 @@ on:
     paths:
       - 'src/**'
       - '.github/**'
-      - 'scripts/bumpNugetVersion.ts'
 
 jobs:
   Linting:

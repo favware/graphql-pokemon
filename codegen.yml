@@ -13,6 +13,8 @@ generates:
   ./generated/ts/graphql-pokemon.graphql:
     plugins:
       - schema-ast
+    config:
+      commentDescriptions: true
   ./generated/dotnet/Favware.Graphqlpokemon.cs:
     plugins:
       - c-sharp

@@ -15,7 +15,7 @@
 		<PackageProjectUrl>https://github.com/favware</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
 
-		<Description>Expansive Pokemon GraphQL API</Description>
+		<Description>Extensive Pokemon GraphQL API</Description>
 		<Version>0.0.1</Version>
 		<Authors>Jeroen Claassens, Favware</Authors>
 		<PackageTags>pokemon graphql api favware</PackageTags>

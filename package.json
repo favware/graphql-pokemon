@@ -25,10 +25,10 @@
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull",
     "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers",
     "scripts:updatelearnsets": "yarn scripts:runner scripts/UpdateLearnsets",
-    "scripts:bumpNugetVersion": "yarn scripts:runner scripts/bumpNugetVersion",
+    "scripts:bumpDotNetVersion": "yarn scripts:runner scripts/bumpDotNetVersion",
     "typescript:replace-invalid-code": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
     "dotnet:replace-invalid-code": "replace-in-file /any/g object generated/dotnet/Favware.Graphqlpokemon.cs --isRegex",
-    "dotnet:bump-version": "yarn scripts:bumpNugetVersion"
+    "dotnet:bump-version": "yarn scripts:bumpDotNetVersion"
   },
   "dependencies": {
     "graphql": "^14.6.0"

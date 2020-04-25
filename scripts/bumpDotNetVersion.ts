@@ -3,12 +3,11 @@ import { readFile, writeFile } from 'fs-nextra';
 import { resolve } from 'path';
 import { version } from '../package.json';
 
-const ROOT_DIR = resolve(__dirname, '..');
-const NUGET_DIR = resolve(ROOT_DIR, 'generated', 'dotnet');
+const DOTNET_DIR = resolve(__dirname, '..', 'generated', 'dotnet');
 const json2xml = new Json2XML({ ignoreAttributes: false });
 
 const main = async () => {
-  const csprojFile = resolve(NUGET_DIR, 'Favware.Graphqlpokemon.csproj');
+  const csprojFile = resolve(DOTNET_DIR, 'Favware.Graphqlpokemon.csproj');
   const csprojXml = await readFile(csprojFile, 'utf-8');
   const csprojData = xml2json(csprojXml, { ignoreAttributes: false }) as CsProjXMLData;
 

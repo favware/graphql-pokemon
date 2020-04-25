@@ -3,8 +3,19 @@
 	<PropertyGroup>
 		<PackageId>Favware.Graphqlpokemon</PackageId>
 		<Product>Favware.Graphqlpokemon</Product>
+		<Company>Favware</Company>
+		<Owners>Favware</Owners>
+		<PackageIcon>icon.png</PackageIcon>
+
+		<Copyright>Copyright 2019 © Favware</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+		<RepositoryUrl>https://github.com/favware/graphql-pokemon</RepositoryUrl>
+		<RepositoryBranch>master</RepositoryBranch>
+		<PackageProjectUrl>https://github.com/favware</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+
 		<Description>Expansive Pokemon GraphQL API</Description>
-		<PackageReleaseNotes>First Release!</PackageReleaseNotes>
 		<Version>0.0.1</Version>
 		<Authors>Jeroen Claassens, Favware</Authors>
 		<PackageTags>pokemon graphql api favware</PackageTags>
@@ -16,6 +27,10 @@
 
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<DocumentationFile>bin\Release\Favware.Graphqlpokemon.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<NoWarn>1591</NoWarn>
 	</PropertyGroup>
 
 	<ItemGroup Condition="'$(Configuration)' == 'Release' AND '$(TargetFramework)' == 'netcoreapp3.1'">
@@ -32,6 +47,13 @@
 
 	<ItemGroup>
 		<None Include="**\*.cs" Pack="true" PackagePath="src"></None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" PackagePath="" />
+		<None Include="$(MSBuildThisFileDirectory)..\..\LICENSE.md" Pack="true" PackagePath="" />
+		<None Include="$(MSBuildThisFileDirectory)..\..\README.md" Pack="true" PackagePath="" />
+		<None Include="$(MSBuildThisFileDirectory)..\..\CHANGELOG.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>

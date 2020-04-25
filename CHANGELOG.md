@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.1 (2020-04-25)
+
+
+### Bug Fixes
+
+* references and schema-ast codegen ([#180](https://github.com/favware/graphql-pokemon/issues/180)) ([e3d141a](https://github.com/favware/graphql-pokemon/commit/e3d141ae41c709d037584c9fe6ffe2a5bf9b35be)), closes [#177](https://github.com/favware/graphql-pokemon/issues/177) [#179](https://github.com/favware/graphql-pokemon/issues/179)
+
 ## 3.0.0 (2020-04-25)
 
 

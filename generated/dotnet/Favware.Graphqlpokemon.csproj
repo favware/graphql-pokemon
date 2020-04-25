@@ -16,7 +16,6 @@
 		<RepositoryType>git</RepositoryType>
 
 		<Description>Expansive Pokemon GraphQL API</Description>
-		<PackageReleaseNotes>First Release!</PackageReleaseNotes>
 		<Version>0.0.1</Version>
 		<Authors>Jeroen Claassens, Favware</Authors>
 		<PackageTags>pokemon graphql api favware</PackageTags>
@@ -54,6 +53,7 @@
 		<None Include="$(MSBuildThisFileDirectory)icon.png" Pack="true" PackagePath="" />
 		<None Include="$(MSBuildThisFileDirectory)..\..\LICENSE.md" Pack="true" PackagePath="" />
 		<None Include="$(MSBuildThisFileDirectory)..\..\README.md" Pack="true" PackagePath="" />
+		<None Include="$(MSBuildThisFileDirectory)..\..\CHANGELOG.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>

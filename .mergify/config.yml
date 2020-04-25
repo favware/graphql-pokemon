@@ -2,7 +2,7 @@ pull_request_rules:
   - name: Automatic Depfu merging
     conditions:
       - approved-reviews-by=Favna
-      - base=master
+      - base=staging
       - label~=^Meta:\ Dependencies
       - title~=Yarn\ dependencies
     actions:
@@ -11,7 +11,7 @@ pull_request_rules:
   - name: Automatic Showndown Tier Merging
     conditions:
       - approved-reviews-by=Favna
-      - base=master
+      - base=staging
       - author=Favware-bot
     actions:
       merge:

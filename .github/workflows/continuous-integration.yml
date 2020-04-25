@@ -3,8 +3,8 @@ name: Continuous Integration
 on:
   pull_request:
   push:
-    branches-ignore:
-      - master
+    branches:
+      - staging
 
 jobs:
   Linting:

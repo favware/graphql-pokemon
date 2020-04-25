@@ -58,6 +58,9 @@
 - name: 'Bug: Fixed in master'
   description: Issues that report bugs from stable, but that are fixed in master.
   color: B3E88C
+- name: 'Bug: Fixed in staging'
+  description: Issues that report bugs from stable, but that are fixed in staging.
+  color: B3E88C
 - name: 'Bug: Confirmed'
   description: Issues that report confirmed bugs.
   color: f9d0c4

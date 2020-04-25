@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 3.0.0 (2020-04-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* For the TypeScript typings enums are now replaced with "const enums" and the
+published bundle only includes a .d.ts file.
+
+### Features
+
+* disable Strict Property Initialization ([39b0983](https://github.com/favware/graphql-pokemon/commit/39b098300fa88c3b831606c62031b409b23bea9b))
+
 ### 2.0.2 (2020-04-25)
 
 

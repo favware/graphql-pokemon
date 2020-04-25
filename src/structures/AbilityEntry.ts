@@ -6,17 +6,17 @@ export default class AbilityEntry {
   desc?: string;
 
   @Field(() => String, { description: 'The short description for an ability' })
-  shortDesc: string;
+  shortDesc!: string;
 
   @Field(() => String, { description: 'The name for an ability' })
-  name: string;
+  name!: string;
 
   @Field(() => String, { description: 'Bulbapedia page for an ability' })
-  bulbapediaPage: string;
+  bulbapediaPage!: string;
 
   @Field(() => String, { description: 'Serebii page for an ability' })
-  serebiiPage: string;
+  serebiiPage!: string;
 
   @Field(() => String, { description: 'Smogon page for an ability' })
-  smogonPage: string;
+  smogonPage!: string;
 }

@@ -3,20 +3,20 @@ import { Field, Int, ObjectType } from 'type-graphql';
 @ObjectType({ description: "A Pokémon's stats" })
 export default class StatsEntry {
   @Field(() => Int, { description: 'The base HP stat of a pokemon' })
-  hp: number;
+  hp!: number;
 
   @Field(() => Int, { description: 'The base attack stat of a Pokémon' })
-  attack: number;
+  attack!: number;
 
   @Field(() => Int, { description: 'The base defense stat of a Pokémon' })
-  defense: number;
+  defense!: number;
 
   @Field(() => Int, { description: 'The base special attack stat of a Pokémon' })
-  specialattack: number;
+  specialattack!: number;
 
   @Field(() => Int, { description: 'The base special defense stat of a Pokémon' })
-  specialdefense: number;
+  specialdefense!: number;
 
   @Field(() => Int, { description: 'The base speed stat of a Pokémon' })
-  speed: number;
+  speed!: number;
 }

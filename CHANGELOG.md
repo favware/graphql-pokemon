@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 2.0.2 (2020-04-25)
+
+
+### Bug Fixes
+
+* first remove files before downloading artifacts ([8be290b](https://github.com/favware/graphql-pokemon/commit/8be290b02c96287e55a33a20c2a8c86751a93fe8))
+
+### 2.0.1 (2020-04-25)
+
+
+### Bug Fixes
+
+* ensure latest changelog and package are pulled before publishing ([e291934](https://github.com/favware/graphql-pokemon/commit/e291934e98119086d3fcee087ffd1d9468ad5137))
+
+## 2.0.0 (2020-04-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* For the TypeScript typings enums are now replaced with "const enums" and the
+published bundle only includes a .d.ts file.
+
+### Features
+
+* disable Strict Property Initialization ([cb26714](https://github.com/favware/graphql-pokemon/commit/cb26714d1f679ea90066cce70af3bd1189bde0ee))
+
 ### 1.8.4 (2020-04-25)
 
 ### 1.8.3 (2020-04-25)

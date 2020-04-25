@@ -7,5 +7,5 @@ export const Pokemon = pokedex.enumObject();
 @ArgsType()
 export default class ExactPokemonPaginatedArgs extends PaginatedArgs {
   @Field(() => Pokemon, { description: 'The pokemon to look up' })
-  pokemon: string;
+  pokemon!: string;
 }

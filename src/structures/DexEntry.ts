@@ -6,22 +6,22 @@ import GenderEntry from './GenderEntry';
 @ObjectType({ description: 'A single Pokedex entry' })
 export default class DexEntry {
   @Field(() => Int, { description: 'The dex number for a Pokémon' })
-  num: number;
+  num!: number;
 
   @Field(() => String, { description: 'The species name for a Pokémon' })
-  species: string;
+  species!: string;
 
   @Field(() => [String], { description: 'The types for a Pokémon' })
-  types: string[];
+  types!: string[];
 
   @Field(() => AbilitiesEntry, { description: 'The abilities for a Pokémon' })
-  abilities: AbilitiesEntry;
+  abilities!: AbilitiesEntry;
 
   @Field(() => StatsEntry, { description: 'Base stats for a Pokémon' })
-  baseStats: StatsEntry;
+  baseStats!: StatsEntry;
 
   @Field(() => String, { description: 'The colour of a Pokémon as listed in the Pokedex' })
-  color: string;
+  color!: string;
 
   @Field(() => [String], { nullable: true, description: 'The egg groups a Pokémon is in' })
   eggGroups?: string[];
@@ -42,13 +42,13 @@ export default class DexEntry {
   formeLetter?: string;
 
   @Field(() => GenderEntry, { description: 'The gender data for a Pokémon ' })
-  gender: GenderEntry;
+  gender!: GenderEntry;
 
   @Field(() => Float, { description: 'The height of a Pokémon in meters' })
-  height: number;
+  height!: number;
 
   @Field(() => Float, { description: 'The weight of a Pokémon in kilograms' })
-  weight: number;
+  weight!: number;
 
   @Field(() => String, { nullable: true, description: 'Base form if this entry describes an alternate form' })
   baseForme?: string;

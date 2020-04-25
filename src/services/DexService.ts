@@ -14,8 +14,8 @@ import FlavorEntry from '../structures/FlavorEntry';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 
 export default class DexService {
-  private flavors: Record<string, Pokemon.FlavorText[]>;
-  private tiers: Record<string, string>;
+  private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
+  private tiers: Record<string, string> | undefined = undefined;
 
   public findByNum(@Arg('num') num: number) {
     return pokedex.find((poke) => poke.num === num);

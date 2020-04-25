@@ -165,6 +165,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       - name: Bump semver
         run: yarn sversion
+      - name: Store bumped package.json
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: package_bundle
+          path: package.json
+      - name: Store bumped changelog.md
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: changelog_bundle
+          path: CHANGELOG.md
       - name: Push changes
         if: "!contains(github.event.head_commit.message, '[skip publish]')"
         run: git push --follow-tags origin master
@@ -188,6 +198,14 @@ jobs:
           key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
         run: yarn
+      - name: Download stored package.json
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: package_bundle
+      - name: Download stored changelog.md
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: changelog_bundle
       - name: Generate GraphQL Schema code
         run: yarn codegen
       - name: Upload typescript bundle to artifacts
@@ -219,6 +237,14 @@ jobs:
         with:
           name: typescript_bundle
           path: generated/ts/
+      - name: Download stored package.json
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: package_bundle
+      - name: Download stored changelog.md
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: changelog_bundle
       - name: Publish to NPM
         run: npm publish
         env:
@@ -249,6 +275,14 @@ jobs:
         with:
           name: dotnet_bundle
           path: generated/dotnet/
+      - name: Download stored package.json
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: package_bundle
+      - name: Download stored changelog.md
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: changelog_bundle
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:

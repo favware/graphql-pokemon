@@ -12,7 +12,7 @@ const main = async () => {
   const csprojXml = await readFile(csprojFile, 'utf-8');
   const csprojData = xml2json(csprojXml, { ignoreAttributes: false }) as CsProjXMLData;
 
-  csprojData.Project.PropertyGroup.Version = version;
+  csprojData.Project.PropertyGroup[0].Version = version;
 
   await writeFile(csprojFile, json2xml.parse(csprojData));
 };

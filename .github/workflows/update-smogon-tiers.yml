@@ -33,20 +33,19 @@ jobs:
           curl -sL $(curl -s https://api.github.com/repos/cli/cli/releases/latest | jq ".assets | map(select(.browser_download_url | contains(\"_linux_arm64.tar.gz\")))[0].browser_download_url" | xargs) | tar -xz --wildcards "*gh" \ 
             && mv gh*linux_arm64/bin/gh . \ 
             && rm -r gh_*linux_arm64
-      - name: Commit any changes
+      - name: Commit any changes and create a pull request
         run: |
           git add .;
           if git diff-index --quiet HEAD --; then
             exit 0;
           else
-
             git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git";
             git config --local user.email "${GITHUB_EMAIL}";
             git config --local user.name "${GITHUB_USER}";
             git checkout -b favware-bot/update-smogon-tierlists/$(date +%F-%H-%M);
-            git commit -sam "refactor: update smogon tierlists" -m "*bleep bloop* I updated the Smogon tier list";
+            git commit -sam "refactor: update smogon tierlists";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            gh pr create -f;
+            ./gh pr create -t "refactor: update smogon tierlists" -b "*bleep bloop* I updated the Smogon tier list" -B staging;
           fi
         env:
           GITHUB_USER: Favware-bot

@@ -33,10 +33,10 @@ interface CsProjXMLData {
       Platforms: string;
       GeneratePackageOnBuild: string;
       DocumentationFile: string;
-    };
+    }[];
     ItemGroup: {
       None: unknown;
-      PackageReference: unknown;
-    };
+      PackageReference: unknown[];
+    }[];
   };
 }

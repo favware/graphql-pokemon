@@ -102,7 +102,7 @@ jobs:
           tags: 'latest,stable,master'
 
   Github-Package-Registry-Docker:
-    name: Publish image to Dockerhub
+    name: Publish image to Github Package Registry
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     needs: Build
@@ -114,7 +114,7 @@ jobs:
         with:
           name: api_bundle
           path: generated/api/
-      - name: Publish to GitHub Docker Registry
+      - name: Publish to Github Package Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: favware/graphql-pokemon/graphql-pokemon
@@ -149,8 +149,8 @@ jobs:
       - name: Deploy latest image to Google Cloud Run
         run: gcloud run deploy graphql-pokemon --image gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon --region=europe-west1 --project=${{ secrets.GCLOUD_PROJECT }} --platform=managed --allow-unauthenticated
 
-  GitHubPublish:
-    name: Publishing release to GitHub
+  GithubPublish:
+    name: Publishing release to Github
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     needs: [Dockerhub, GCloud]
@@ -197,7 +197,7 @@ jobs:
     name: Generate TypeScript, SDL and C# type information
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    needs: GitHubPublish
+    needs: GithubPublish
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -272,7 +272,7 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Setup Node for publishing to GitHub
+      - name: Setup Node for publishing to Github
         uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -291,7 +291,7 @@ jobs:
         uses: actions/download-artifact@v2-preview
         with:
           name: changelog_bundle
-      - name: Publish to GitHub
+      - name: Publish to Github
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.BOT_TOKEN }}

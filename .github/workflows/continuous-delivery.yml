@@ -100,6 +100,20 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: 'latest,stable,master'
+
+  Github-Package-Registry-Docker:
+    name: Publish image to Dockerhub
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    needs: Build
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Download build bundle artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: api_bundle
+          path: generated/api/
       - name: Publish to GitHub Docker Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
@@ -249,12 +263,34 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  Github-Package-Registry-Node:
+    name: Publishing release to Github Package Registry
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip publish]')"
+    needs: GenerateTypings
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
       - name: Setup Node for publishing to GitHub
         uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: 'https://npm.pkg.github.com'
           scope: '@favware'
+      - name: Download generated typings artifact
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: typescript_bundle
+          path: generated/ts/
+      - name: Download stored package.json
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: package_bundle
+      - name: Download stored changelog.md
+        uses: actions/download-artifact@v2-preview
+        with:
+          name: changelog_bundle
       - name: Publish to GitHub
         run: npm publish
         env:
@@ -294,3 +330,4 @@ jobs:
           PACKAGE_NAME: Favware.Graphqlpokemon
           TAG_COMMIT: false
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
+          INCLUDE_SYMBOLS: false

@@ -25,9 +25,9 @@ jobs:
       - name: Install Deps
         run: yarn
       - name: Run Smogon Tiers updater
-        run: yarn scripts:smogontiersupdater
+        run: yarn au:tiers
       - name: Run Learnsets updater
-        run: yarn scripts:smogontiersupdater
+        run: yarn au:learnsets
       - name: Run prettier on the code
         run: yarn style
       - name: Install GitHub CLI

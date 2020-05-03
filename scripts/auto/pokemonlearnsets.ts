@@ -21,11 +21,11 @@ const FILE_SUFFIX = [');', ''].join('\n');
 const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
-const LEARNSETS_FILE = join(__dirname, '../src/assets/learnsets.ts');
-const CI_DATA_FILE = join(__dirname, 'ci-data.json');
+const LEARNSETS_FILE = join(__dirname, '../../src/assets/learnsets.ts');
+const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
 const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 
-(async () => {
+const autoUpdateLearnsets = async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
   url.searchParams.append('path', 'data/formats-data.js');
   url.searchParams.append('since', TIMESTAMP);
@@ -69,4 +69,6 @@ const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 
   console.log(chalk.green(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`));
   return process.exit(0);
-})();
+};
+
+autoUpdateLearnsets();

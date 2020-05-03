@@ -6,13 +6,13 @@ import fetch from 'node-fetch';
 import { join } from 'path';
 import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 
-const CI_DATA_FILE = join(__dirname, 'ci-data.json');
-const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
+const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
+const FORMATS_FILE = join(__dirname, '../../src/assets/formats.json');
 const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
-(async () => {
+const autoUpdateSmogonTiers = async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
   url.searchParams.append('path', 'data/formats-data.js');
   url.searchParams.append('since', TIMESTAMP);
@@ -55,4 +55,6 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
   console.log(chalk.green(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`));
   return process.exit(0);
-})();
+};
+
+autoUpdateSmogonTiers();

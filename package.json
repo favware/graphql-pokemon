@@ -25,9 +25,9 @@
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "scripts:validateNoOnly": "yarn scripts:runner scripts/validateNoOnly",
     "scripts:yarnAfterPull": "yarn scripts:runner scripts/yarnAfterPull",
-    "scripts:smogontiersupdater": "yarn scripts:runner scripts/updateSmogonTiers",
-    "scripts:updatelearnsets": "yarn scripts:runner scripts/UpdateLearnsets",
     "scripts:bumpDotNetVersion": "yarn scripts:runner scripts/bumpDotNetVersion",
+    "au:tiers": "yarn scripts:runner scripts/auto/smogontiers",
+    "au:learnsets": "yarn scripts:runner scripts/auto/pokemonlearnsets",
     "typescript:replace-invalid-code": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
     "dotnet:replace-invalid-code": "replace-in-file /any/g object generated/dotnet/Favware.Graphqlpokemon.cs --isRegex",
     "dotnet:bump-version": "yarn scripts:bumpDotNetVersion"

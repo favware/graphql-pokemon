@@ -1,9 +1,11 @@
-import { Resolver, Query, Args, Arg } from 'type-graphql';
-import MoveEntry from '../structures/MoveEntry';
-import MoveService from '../services/MoveService';
-import MovePaginatedArgs, { Moves } from '../arguments/MovePaginatedArgs';
-import Util from '../utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
+import { Arg, Args, Query, Resolver } from 'type-graphql';
+import MovePaginatedArgs, { Moves } from '../arguments/MovePaginatedArgs';
+import MoveService from '../services/MoveService';
+import MoveEntry from '../structures/MoveEntry';
+import { getRequestedFields } from '../utils/getRequestedFields';
+import GraphQLSet from '../utils/GraphQLSet';
+import Util from '../utils/util';
 
 @Resolver(MoveEntry)
 export default class MoveResolver {
@@ -20,7 +22,10 @@ export default class MoveResolver {
       'Reversal is applied before paginations!'
     ].join('')
   })
-  getMoveDetailsByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs) {
+  getMoveDetailsByFuzzy(
+    @Args() { move, skip, take, reverse }: MovePaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
+  ) {
     const entry = this.moveService.findByName(move);
 
     if (!entry) {
@@ -36,7 +41,7 @@ export default class MoveResolver {
       move = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
     }
 
-    const detailsEntry = this.moveService.findByNameWithDetails(move);
+    const detailsEntry = this.moveService.findByNameWithDetails(move, requestedFields);
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for move: ${move}`);
     }
@@ -47,8 +52,11 @@ export default class MoveResolver {
   @Query(() => MoveEntry, {
     description: ['Gets details on a single move based on an exact name match.'].join('')
   })
-  getMoveDetailsByName(@Arg('move', () => Moves) move: string) {
-    const entry = this.moveService.findByNameWithDetails(move);
+  getMoveDetailsByName(
+    @Arg('move', () => Moves) move: string,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
+  ) {
+    const entry = this.moveService.findByNameWithDetails(move, requestedFields);
 
     if (entry === undefined) {
       throw new Error(`Failed to get data for move: ${move}`);

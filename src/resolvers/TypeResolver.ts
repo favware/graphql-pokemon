@@ -3,6 +3,8 @@ import { Arg, Args, Query, Resolver } from 'type-graphql';
 import TypeArgs, { Types } from '../arguments/TypeArgs';
 import TypeService from '../services/TypeService';
 import TypeMatchups from '../structures/TypeMatchups';
+import { getRequestedFields } from '../utils/getRequestedFields';
+import GraphQLSet from '../utils/GraphQLSet';
 
 @Resolver(TypeMatchups)
 export default class TypeResolver {
@@ -13,8 +15,8 @@ export default class TypeResolver {
   }
 
   @Query(() => TypeMatchups, { description: 'Gets the type matchup data for the given type or types' })
-  getTypeMatchup(@Args() { types }: TypeArgs) {
-    const entry = this.typeService.findTypeMatchups({ types });
+  getTypeMatchup(@Args() { types }: TypeArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchups>) {
+    const entry = this.typeService.findTypeMatchups({ types }, requestedFields);
 
     if (entry === undefined) {
       throw new Error(`Failed to get type matchups for: ${types.join(', ')}`);

@@ -1,9 +1,11 @@
+import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
+import ItemPaginatedArgs, { Items } from '../arguments/ItemPaginatedArgs';
 import ItemService from '../services/ItemSerivce';
 import ItemEntry from '../structures/ItemEntry';
-import ItemPaginatedArgs, { Items } from '../arguments/ItemPaginatedArgs';
+import { getRequestedFields } from '../utils/getRequestedFields';
+import GraphQLSet from '../utils/GraphQLSet';
 import Util from '../utils/util';
-import { GraphQLJSONObject } from 'graphql-type-json';
 
 @Resolver(ItemEntry)
 export default class ItemResolver {
@@ -20,7 +22,10 @@ export default class ItemResolver {
       'Reversal is applied before paginations!'
     ].join('')
   })
-  getItemDetailsByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs) {
+  getItemDetailsByFuzzy(
+    @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
+  ) {
     const entry = this.itemService.findByName(item);
 
     if (!entry) {
@@ -37,7 +42,7 @@ export default class ItemResolver {
       item = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
     }
 
-    const detailsEntry = this.itemService.findByNameWithDetails(item);
+    const detailsEntry = this.itemService.findByNameWithDetails(item, requestedFields);
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for item: ${item}`);
     }
@@ -48,8 +53,11 @@ export default class ItemResolver {
   @Query(() => ItemEntry, {
     description: ['Gets details on a single item based on an exact name match.'].join('')
   })
-  getItemDetailsByName(@Arg('item', () => Items) item: string) {
-    const entry = this.itemService.findByNameWithDetails(item);
+  getItemDetailsByName(
+    @Arg('item', () => Items) item: string,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
+  ) {
+    const entry = this.itemService.findByNameWithDetails(item, requestedFields);
 
     if (entry === undefined) {
       throw new Error(`Failed to get data for item: ${item}`);

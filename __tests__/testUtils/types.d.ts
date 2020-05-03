@@ -1,1518 +1,1781 @@
-/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
 export type Maybe<T> = T | null;
-
+export type RequireFields<T, K extends keyof T> = { [X in Exclude<keyof T, K>]?: T[X] } &
+  { [P in K]-?: NonNullable<T[P]> };
+/** All built-in and custom scalars, mapped to their actual values */
 export interface Scalars {
   ID: string;
   String: string;
   Boolean: boolean;
   Int: number;
   Float: number;
-  JSONObject: any;
-  MoveCategoryUnion: any;
+  /** The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
+  JSONObject: Record<PropertyKey, any>;
 }
 
-export enum Abilities {
-  Persistent = 'persistent',
-  Rebound = 'rebound',
-  Mountaineer = 'mountaineer',
-  Noability = 'noability',
-  Stench = 'stench',
-  Drizzle = 'drizzle',
-  Speedboost = 'speedboost',
-  Battlearmor = 'battlearmor',
-  Sturdy = 'sturdy',
-  Damp = 'damp',
-  Limber = 'limber',
-  Sandveil = 'sandveil',
-  Static = 'static',
-  Voltabsorb = 'voltabsorb',
-  Waterabsorb = 'waterabsorb',
-  Oblivious = 'oblivious',
-  Cloudnine = 'cloudnine',
-  Compoundeyes = 'compoundeyes',
-  Insomnia = 'insomnia',
-  Colorchange = 'colorchange',
-  Immunity = 'immunity',
-  Flashfire = 'flashfire',
-  Shielddust = 'shielddust',
-  Owntempo = 'owntempo',
-  Suctioncups = 'suctioncups',
-  Intimidate = 'intimidate',
-  Shadowtag = 'shadowtag',
-  Roughskin = 'roughskin',
-  Wonderguard = 'wonderguard',
-  Levitate = 'levitate',
-  Effectspore = 'effectspore',
-  Synchronize = 'synchronize',
-  Clearbody = 'clearbody',
-  Naturalcure = 'naturalcure',
-  Lightningrod = 'lightningrod',
-  Serenegrace = 'serenegrace',
-  Swiftswim = 'swiftswim',
-  Chlorophyll = 'chlorophyll',
-  Illuminate = 'illuminate',
-  Trace = 'trace',
-  Hugepower = 'hugepower',
-  Poisonpoint = 'poisonpoint',
-  Innerfocus = 'innerfocus',
-  Magmaarmor = 'magmaarmor',
-  Waterveil = 'waterveil',
-  Magnetpull = 'magnetpull',
-  Soundproof = 'soundproof',
-  Raindish = 'raindish',
-  Sandstream = 'sandstream',
-  Pressure = 'pressure',
-  Thickfat = 'thickfat',
-  Earlybird = 'earlybird',
-  Flamebody = 'flamebody',
-  Runaway = 'runaway',
-  Keeneye = 'keeneye',
-  Hypercutter = 'hypercutter',
-  Pickup = 'pickup',
-  Truant = 'truant',
-  Hustle = 'hustle',
-  Cutecharm = 'cutecharm',
-  Plus = 'plus',
-  Minus = 'minus',
-  Forecast = 'forecast',
-  Stickyhold = 'stickyhold',
-  Shedskin = 'shedskin',
-  Guts = 'guts',
-  Marvelscale = 'marvelscale',
-  Liquidooze = 'liquidooze',
-  Overgrow = 'overgrow',
-  Blaze = 'blaze',
-  Torrent = 'torrent',
-  Swarm = 'swarm',
-  Rockhead = 'rockhead',
-  Drought = 'drought',
-  Arenatrap = 'arenatrap',
-  Vitalspirit = 'vitalspirit',
-  Whitesmoke = 'whitesmoke',
-  Purepower = 'purepower',
-  Shellarmor = 'shellarmor',
-  Airlock = 'airlock',
-  Tangledfeet = 'tangledfeet',
-  Motordrive = 'motordrive',
-  Rivalry = 'rivalry',
-  Steadfast = 'steadfast',
-  Snowcloak = 'snowcloak',
-  Gluttony = 'gluttony',
-  Angerpoint = 'angerpoint',
-  Unburden = 'unburden',
-  Heatproof = 'heatproof',
-  Simple = 'simple',
-  Dryskin = 'dryskin',
-  Download = 'download',
-  Ironfist = 'ironfist',
-  Poisonheal = 'poisonheal',
+/** The supported abilities */
+export const enum Abilities {
   Adaptability = 'adaptability',
-  Skilllink = 'skilllink',
-  Hydration = 'hydration',
-  Solarpower = 'solarpower',
-  Quickfeet = 'quickfeet',
-  Normalize = 'normalize',
-  Sniper = 'sniper',
-  Magicguard = 'magicguard',
-  Noguard = 'noguard',
-  Stall = 'stall',
-  Technician = 'technician',
-  Leafguard = 'leafguard',
-  Klutz = 'klutz',
-  Moldbreaker = 'moldbreaker',
-  Superluck = 'superluck',
+  Aerilate = 'aerilate',
   Aftermath = 'aftermath',
-  Anticipation = 'anticipation',
-  Forewarn = 'forewarn',
-  Unaware = 'unaware',
-  Tintedlens = 'tintedlens',
-  Filter = 'filter',
-  Slowstart = 'slowstart',
-  Scrappy = 'scrappy',
-  Stormdrain = 'stormdrain',
-  Icebody = 'icebody',
-  Solidrock = 'solidrock',
-  Snowwarning = 'snowwarning',
-  Honeygather = 'honeygather',
-  Frisk = 'frisk',
-  Reckless = 'reckless',
-  Multitype = 'multitype',
-  Flowergift = 'flowergift',
-  Baddreams = 'baddreams',
-  Pickpocket = 'pickpocket',
-  Sheerforce = 'sheerforce',
-  Contrary = 'contrary',
-  Unnerve = 'unnerve',
-  Defiant = 'defiant',
-  Defeatist = 'defeatist',
-  Cursedbody = 'cursedbody',
-  Healer = 'healer',
-  Friendguard = 'friendguard',
-  Weakarmor = 'weakarmor',
-  Heavymetal = 'heavymetal',
-  Lightmetal = 'lightmetal',
-  Multiscale = 'multiscale',
-  Toxicboost = 'toxicboost',
-  Flareboost = 'flareboost',
-  Harvest = 'harvest',
-  Telepathy = 'telepathy',
-  Moody = 'moody',
-  Overcoat = 'overcoat',
-  Poisontouch = 'poisontouch',
-  Regenerator = 'regenerator',
-  Bigpecks = 'bigpecks',
-  Sandrush = 'sandrush',
-  Wonderskin = 'wonderskin',
+  Airlock = 'airlock',
   Analytic = 'analytic',
+  Angerpoint = 'angerpoint',
+  Anticipation = 'anticipation',
+  Arenatrap = 'arenatrap',
+  Aromaveil = 'aromaveil',
+  Aurabreak = 'aurabreak',
+  Baddreams = 'baddreams',
+  Ballfetch = 'ballfetch',
+  Battery = 'battery',
+  Battlearmor = 'battlearmor',
+  Battlebond = 'battlebond',
+  Beastboost = 'beastboost',
+  Berserk = 'berserk',
+  Bigpecks = 'bigpecks',
+  Blaze = 'blaze',
+  Bulletproof = 'bulletproof',
+  Cheekpouch = 'cheekpouch',
+  Chlorophyll = 'chlorophyll',
+  Clearbody = 'clearbody',
+  Cloudnine = 'cloudnine',
+  Colorchange = 'colorchange',
+  Comatose = 'comatose',
+  Competitive = 'competitive',
+  Compoundeyes = 'compoundeyes',
+  Contrary = 'contrary',
+  Corrosion = 'corrosion',
+  Cottondown = 'cottondown',
+  Cursedbody = 'cursedbody',
+  Cutecharm = 'cutecharm',
+  Damp = 'damp',
+  Dancer = 'dancer',
+  Darkaura = 'darkaura',
+  Dauntlessshield = 'dauntlessshield',
+  Dazzling = 'dazzling',
+  Defeatist = 'defeatist',
+  Defiant = 'defiant',
+  Deltastream = 'deltastream',
+  Desolateland = 'desolateland',
+  Disguise = 'disguise',
+  Download = 'download',
+  Drizzle = 'drizzle',
+  Drought = 'drought',
+  Dryskin = 'dryskin',
+  Earlybird = 'earlybird',
+  Effectspore = 'effectspore',
+  Electricsurge = 'electricsurge',
+  Emergencyexit = 'emergencyexit',
+  Fairyaura = 'fairyaura',
+  Filter = 'filter',
+  Flamebody = 'flamebody',
+  Flareboost = 'flareboost',
+  Flashfire = 'flashfire',
+  Flowergift = 'flowergift',
+  Flowerveil = 'flowerveil',
+  Fluffy = 'fluffy',
+  Forecast = 'forecast',
+  Forewarn = 'forewarn',
+  Friendguard = 'friendguard',
+  Frisk = 'frisk',
+  Fullmetalbody = 'fullmetalbody',
+  Furcoat = 'furcoat',
+  Galewings = 'galewings',
+  Galvanize = 'galvanize',
+  Gluttony = 'gluttony',
+  Gooey = 'gooey',
+  Gorillatactics = 'gorillatactics',
+  Grasspelt = 'grasspelt',
+  Grassysurge = 'grassysurge',
+  Gulpmissile = 'gulpmissile',
+  Guts = 'guts',
+  Harvest = 'harvest',
+  Healer = 'healer',
+  Heatproof = 'heatproof',
+  Heavymetal = 'heavymetal',
+  Honeygather = 'honeygather',
+  Hugepower = 'hugepower',
+  Hungerswitch = 'hungerswitch',
+  Hustle = 'hustle',
+  Hydration = 'hydration',
+  Hypercutter = 'hypercutter',
+  Icebody = 'icebody',
+  Iceface = 'iceface',
+  Icescales = 'icescales',
+  Illuminate = 'illuminate',
   Illusion = 'illusion',
+  Immunity = 'immunity',
   Imposter = 'imposter',
   Infiltrator = 'infiltrator',
-  Mummy = 'mummy',
-  Moxie = 'moxie',
-  Justified = 'justified',
-  Rattled = 'rattled',
-  Magicbounce = 'magicbounce',
-  Sapsipper = 'sapsipper',
-  Prankster = 'prankster',
-  Sandforce = 'sandforce',
-  Ironbarbs = 'ironbarbs',
-  Zenmode = 'zenmode',
-  Victorystar = 'victorystar',
-  Turboblaze = 'turboblaze',
-  Teravolt = 'teravolt',
-  Aromaveil = 'aromaveil',
-  Flowerveil = 'flowerveil',
-  Cheekpouch = 'cheekpouch',
-  Protean = 'protean',
-  Furcoat = 'furcoat',
-  Magician = 'magician',
-  Bulletproof = 'bulletproof',
-  Competitive = 'competitive',
-  Strongjaw = 'strongjaw',
-  Refrigerate = 'refrigerate',
-  Sweetveil = 'sweetveil',
-  Stancechange = 'stancechange',
-  Galewings = 'galewings',
-  Megalauncher = 'megalauncher',
-  Grasspelt = 'grasspelt',
-  Symbiosis = 'symbiosis',
-  Toughclaws = 'toughclaws',
-  Pixilate = 'pixilate',
-  Gooey = 'gooey',
-  Parentalbond = 'parentalbond',
-  Aerilate = 'aerilate',
-  Darkaura = 'darkaura',
-  Fairyaura = 'fairyaura',
-  Aurabreak = 'aurabreak',
-  Primordialsea = 'primordialsea',
-  Desolateland = 'desolateland',
-  Deltastream = 'deltastream',
-  Stamina = 'stamina',
-  Wimpout = 'wimpout',
-  Emergencyexit = 'emergencyexit',
-  Watercompaction = 'watercompaction',
-  Merciless = 'merciless',
-  Shieldsdown = 'shieldsdown',
-  Stakeout = 'stakeout',
-  Waterbubble = 'waterbubble',
-  Steelworker = 'steelworker',
-  Berserk = 'berserk',
-  Slushrush = 'slushrush',
-  Longreach = 'longreach',
-  Liquidvoice = 'liquidvoice',
-  Triage = 'triage',
-  Galvanize = 'galvanize',
-  Surgesurfer = 'surgesurfer',
-  Schooling = 'schooling',
-  Disguise = 'disguise',
-  Battlebond = 'battlebond',
-  Powerconstruct = 'powerconstruct',
-  Corrosion = 'corrosion',
-  Comatose = 'comatose',
-  Queenlymajesty = 'queenlymajesty',
   Innardsout = 'innardsout',
-  Dancer = 'dancer',
-  Battery = 'battery',
-  Fluffy = 'fluffy',
-  Dazzling = 'dazzling',
-  Soulheart = 'soulheart',
-  Tanglinghair = 'tanglinghair',
-  Receiver = 'receiver',
-  Powerofalchemy = 'powerofalchemy',
-  Beastboost = 'beastboost',
-  Rkssystem = 'rkssystem',
-  Electricsurge = 'electricsurge',
-  Psychicsurge = 'psychicsurge',
+  Innerfocus = 'innerfocus',
+  Insomnia = 'insomnia',
+  Intimidate = 'intimidate',
+  Intrepidsword = 'intrepidsword',
+  Ironbarbs = 'ironbarbs',
+  Ironfist = 'ironfist',
+  Justified = 'justified',
+  Keeneye = 'keeneye',
+  Klutz = 'klutz',
+  Leafguard = 'leafguard',
+  Levitate = 'levitate',
+  Libero = 'libero',
+  Lightmetal = 'lightmetal',
+  Lightningrod = 'lightningrod',
+  Limber = 'limber',
+  Liquidooze = 'liquidooze',
+  Liquidvoice = 'liquidvoice',
+  Longreach = 'longreach',
+  Magicbounce = 'magicbounce',
+  Magicguard = 'magicguard',
+  Magician = 'magician',
+  Magmaarmor = 'magmaarmor',
+  Magnetpull = 'magnetpull',
+  Marvelscale = 'marvelscale',
+  Megalauncher = 'megalauncher',
+  Merciless = 'merciless',
+  Mimicry = 'mimicry',
+  Minus = 'minus',
+  Mirrorarmor = 'mirrorarmor',
   Mistysurge = 'mistysurge',
-  Grassysurge = 'grassysurge',
-  Fullmetalbody = 'fullmetalbody',
-  Shadowshield = 'shadowshield',
-  Prismarmor = 'prismarmor',
+  Moldbreaker = 'moldbreaker',
+  Moody = 'moody',
+  Motordrive = 'motordrive',
+  Mountaineer = 'mountaineer',
+  Moxie = 'moxie',
+  Multiscale = 'multiscale',
+  Multitype = 'multitype',
+  Mummy = 'mummy',
+  Naturalcure = 'naturalcure',
   Neuroforce = 'neuroforce',
-  Ballfetch = 'ballfetch'
+  Noability = 'noability',
+  Neutralizinggas = 'neutralizinggas',
+  Noguard = 'noguard',
+  Normalize = 'normalize',
+  Oblivious = 'oblivious',
+  Overcoat = 'overcoat',
+  Overgrow = 'overgrow',
+  Owntempo = 'owntempo',
+  Parentalbond = 'parentalbond',
+  Persistent = 'persistent',
+  Pastelveil = 'pastelveil',
+  Perishbody = 'perishbody',
+  Pickpocket = 'pickpocket',
+  Pickup = 'pickup',
+  Pixilate = 'pixilate',
+  Plus = 'plus',
+  Poisonheal = 'poisonheal',
+  Poisonpoint = 'poisonpoint',
+  Poisontouch = 'poisontouch',
+  Powerconstruct = 'powerconstruct',
+  Powerofalchemy = 'powerofalchemy',
+  Powerspot = 'powerspot',
+  Prankster = 'prankster',
+  Pressure = 'pressure',
+  Primordialsea = 'primordialsea',
+  Prismarmor = 'prismarmor',
+  Propellertail = 'propellertail',
+  Protean = 'protean',
+  Psychicsurge = 'psychicsurge',
+  Punkrock = 'punkrock',
+  Purepower = 'purepower',
+  Queenlymajesty = 'queenlymajesty',
+  Quickfeet = 'quickfeet',
+  Rkssystem = 'rkssystem',
+  Raindish = 'raindish',
+  Rattled = 'rattled',
+  Rebound = 'rebound',
+  Receiver = 'receiver',
+  Reckless = 'reckless',
+  Refrigerate = 'refrigerate',
+  Regenerator = 'regenerator',
+  Ripen = 'ripen',
+  Rivalry = 'rivalry',
+  Rockhead = 'rockhead',
+  Roughskin = 'roughskin',
+  Runaway = 'runaway',
+  Sandforce = 'sandforce',
+  Sandrush = 'sandrush',
+  Sandspit = 'sandspit',
+  Sandstream = 'sandstream',
+  Sandveil = 'sandveil',
+  Sapsipper = 'sapsipper',
+  Schooling = 'schooling',
+  Scrappy = 'scrappy',
+  Screencleaner = 'screencleaner',
+  Serenegrace = 'serenegrace',
+  Shadowshield = 'shadowshield',
+  Shadowtag = 'shadowtag',
+  Shedskin = 'shedskin',
+  Sheerforce = 'sheerforce',
+  Shellarmor = 'shellarmor',
+  Shielddust = 'shielddust',
+  Shieldsdown = 'shieldsdown',
+  Simple = 'simple',
+  Skilllink = 'skilllink',
+  Slowstart = 'slowstart',
+  Slushrush = 'slushrush',
+  Sniper = 'sniper',
+  Snowcloak = 'snowcloak',
+  Snowwarning = 'snowwarning',
+  Solarpower = 'solarpower',
+  Solidrock = 'solidrock',
+  Soulheart = 'soulheart',
+  Soundproof = 'soundproof',
+  Speedboost = 'speedboost',
+  Stakeout = 'stakeout',
+  Stall = 'stall',
+  Stalwart = 'stalwart',
+  Stamina = 'stamina',
+  Stancechange = 'stancechange',
+  Static = 'static',
+  Steadfast = 'steadfast',
+  Steamengine = 'steamengine',
+  Steelworker = 'steelworker',
+  Steelyspirit = 'steelyspirit',
+  Stench = 'stench',
+  Stickyhold = 'stickyhold',
+  Stormdrain = 'stormdrain',
+  Strongjaw = 'strongjaw',
+  Sturdy = 'sturdy',
+  Suctioncups = 'suctioncups',
+  Superluck = 'superluck',
+  Surgesurfer = 'surgesurfer',
+  Swarm = 'swarm',
+  Sweetveil = 'sweetveil',
+  Swiftswim = 'swiftswim',
+  Symbiosis = 'symbiosis',
+  Synchronize = 'synchronize',
+  Tangledfeet = 'tangledfeet',
+  Tanglinghair = 'tanglinghair',
+  Technician = 'technician',
+  Telepathy = 'telepathy',
+  Teravolt = 'teravolt',
+  Thickfat = 'thickfat',
+  Tintedlens = 'tintedlens',
+  Torrent = 'torrent',
+  Toughclaws = 'toughclaws',
+  Toxicboost = 'toxicboost',
+  Trace = 'trace',
+  Triage = 'triage',
+  Truant = 'truant',
+  Turboblaze = 'turboblaze',
+  Unaware = 'unaware',
+  Unburden = 'unburden',
+  Unnerve = 'unnerve',
+  Victorystar = 'victorystar',
+  Vitalspirit = 'vitalspirit',
+  Voltabsorb = 'voltabsorb',
+  Wanderingspirit = 'wanderingspirit',
+  Waterabsorb = 'waterabsorb',
+  Waterbubble = 'waterbubble',
+  Watercompaction = 'watercompaction',
+  Waterveil = 'waterveil',
+  Weakarmor = 'weakarmor',
+  Whitesmoke = 'whitesmoke',
+  Wimpout = 'wimpout',
+  Wonderguard = 'wonderguard',
+  Wonderskin = 'wonderskin',
+  Zenmode = 'zenmode'
 }
 
+/** A Pokémon's abilities entry */
 export interface AbilitiesEntry {
-  __typename?: 'AbilitiesEntry';
-  first: Scalars['String'];
-  second?: Maybe<Scalars['String']>;
-  hidden?: Maybe<Scalars['String']>;
-  special?: Maybe<Scalars['String']>;
+  readonly __typename?: 'AbilitiesEntry';
+  /** The first ability of a Pokémon */
+  readonly first: Scalars['String'];
+  /** The second ability of a Pokémon */
+  readonly second?: Maybe<Scalars['String']>;
+  /** The hidden ability of a Pokémon */
+  readonly hidden?: Maybe<Scalars['String']>;
+  /** The special ability of a Pokémon */
+  readonly special?: Maybe<Scalars['String']>;
 }
 
+/** A single Pokémon ability entry */
 export interface AbilityEntry {
-  __typename?: 'AbilityEntry';
-  desc?: Maybe<Scalars['String']>;
-  shortDesc: Scalars['String'];
-  name: Scalars['String'];
-  bulbapediaPage: Scalars['String'];
-  serebiiPage: Scalars['String'];
-  smogonPage: Scalars['String'];
+  readonly __typename?: 'AbilityEntry';
+  /** The long description for an ability */
+  readonly desc?: Maybe<Scalars['String']>;
+  /** The short description for an ability */
+  readonly shortDesc: Scalars['String'];
+  /** The name for an ability */
+  readonly name: Scalars['String'];
+  /** Bulbapedia page for an ability */
+  readonly bulbapediaPage: Scalars['String'];
+  /** Serebii page for an ability */
+  readonly serebiiPage: Scalars['String'];
+  /** Smogon page for an ability */
+  readonly smogonPage: Scalars['String'];
 }
 
+/** A Pokémon's details entry */
 export interface DexDetails {
-  __typename?: 'DexDetails';
-  num: Scalars['Int'];
-  species: Scalars['String'];
-  types: Array<Scalars['String']>;
-  abilities: AbilitiesEntry;
-  baseStats: StatsEntry;
-  color: Scalars['String'];
-  eggGroups?: Maybe<Array<Scalars['String']>>;
-  evolutionLevel?: Maybe<Scalars['String']>;
-  evos?: Maybe<Array<Scalars['String']>>;
-  prevo?: Maybe<Scalars['String']>;
-  forme?: Maybe<Scalars['String']>;
-  formeLetter?: Maybe<Scalars['String']>;
-  gender: GenderEntry;
-  height: Scalars['Float'];
-  weight: Scalars['Float'];
-  baseForme?: Maybe<Scalars['String']>;
-  baseSpecies?: Maybe<Scalars['String']>;
-  otherFormes?: Maybe<Array<Scalars['String']>>;
-  baseStatsTotal: Scalars['Int'];
-  evolutions?: Maybe<Array<DexDetails>>;
-  preevolutions?: Maybe<Array<DexDetails>>;
-  flavorTexts: Array<FlavorEntry>;
-  sprite: Scalars['String'];
-  shinySprite: Scalars['String'];
-  smogonTier: Scalars['String'];
-  bulbapediaPage: Scalars['String'];
-  serebiiPage: Scalars['String'];
-  smogonPage: Scalars['String'];
+  readonly __typename?: 'DexDetails';
+  /** The dex number for a Pokémon */
+  readonly num: Scalars['Int'];
+  /** The species name for a Pokémon */
+  readonly species: Scalars['String'];
+  /** The types for a Pokémon */
+  readonly types: ReadonlyArray<Scalars['String']>;
+  /** The abilities for a Pokémon */
+  readonly abilities: AbilitiesEntry;
+  /** Base stats for a Pokémon */
+  readonly baseStats: StatsEntry;
+  /** The colour of a Pokémon as listed in the Pokedex */
+  readonly color: Scalars['String'];
+  /** The egg groups a Pokémon is in */
+  readonly eggGroups?: Maybe<ReadonlyArray<Scalars['String']>>;
+  /** The evolution level, or special method, for a Pokémon */
+  readonly evolutionLevel?: Maybe<Scalars['String']>;
+  /** The raw evos of a Pokémon  */
+  readonly evos?: Maybe<ReadonlyArray<Scalars['String']>>;
+  /** The raw prevo of a Pokémon  */
+  readonly prevo?: Maybe<Scalars['String']>;
+  /** The form identifier of a Pokémon  */
+  readonly forme?: Maybe<Scalars['String']>;
+  /** The single letter identifier of the form */
+  readonly formeLetter?: Maybe<Scalars['String']>;
+  /** The gender data for a Pokémon  */
+  readonly gender: GenderEntry;
+  /** The height of a Pokémon in meters */
+  readonly height: Scalars['Float'];
+  /** The weight of a Pokémon in kilograms */
+  readonly weight: Scalars['Float'];
+  /** Base form if this entry describes an alternate form */
+  readonly baseForme?: Maybe<Scalars['String']>;
+  /** Base species if this entry describes a special form */
+  readonly baseSpecies?: Maybe<Scalars['String']>;
+  /** Any other forms for a Pokémon */
+  readonly otherFormes?: Maybe<ReadonlyArray<Scalars['String']>>;
+  /** The total of all base stats for a Pokémon */
+  readonly baseStatsTotal: Scalars['Int'];
+  /** The evolutions for a Pokémon, if any  */
+  readonly evolutions?: Maybe<ReadonlyArray<DexDetails>>;
+  /** The preevolutions for a Pokémon, if any  */
+  readonly preevolutions?: Maybe<ReadonlyArray<DexDetails>>;
+  /** The flavortexts for a Pokémon */
+  readonly flavorTexts: ReadonlyArray<FlavorEntry>;
+  /**
+   * The sprite for a Pokémon. For most Pokémon this will be the animated gif, with
+   * some exceptions that were older-gen exclusive
+   */
+  readonly sprite: Scalars['String'];
+  /**
+   * The shiny sprite for a Pokémon. For most Pokémon this will be the animated
+   * gif, with some exceptions that were older-gen exclusive
+   */
+  readonly shinySprite: Scalars['String'];
+  /** The smogon tier a Pokémon falls under */
+  readonly smogonTier: Scalars['String'];
+  /** Bulbapedia page for a Pokémon */
+  readonly bulbapediaPage: Scalars['String'];
+  /** Serebii page for a Pokémon */
+  readonly serebiiPage: Scalars['String'];
+  /** Smogon page for a Pokémon */
+  readonly smogonPage: Scalars['String'];
 }
 
+/** A single Pokedex entry */
 export interface DexEntry {
-  __typename?: 'DexEntry';
-  num: Scalars['Int'];
-  species: Scalars['String'];
-  types: Array<Scalars['String']>;
-  abilities: AbilitiesEntry;
-  baseStats: StatsEntry;
-  color: Scalars['String'];
-  eggGroups?: Maybe<Array<Scalars['String']>>;
-  evolutionLevel?: Maybe<Scalars['String']>;
-  evos?: Maybe<Array<Scalars['String']>>;
-  prevo?: Maybe<Scalars['String']>;
-  forme?: Maybe<Scalars['String']>;
-  formeLetter?: Maybe<Scalars['String']>;
-  gender: GenderEntry;
-  height: Scalars['Float'];
-  weight: Scalars['Float'];
-  baseForme?: Maybe<Scalars['String']>;
-  baseSpecies?: Maybe<Scalars['String']>;
-  otherFormes?: Maybe<Array<Scalars['String']>>;
+  readonly __typename?: 'DexEntry';
+  /** The dex number for a Pokémon */
+  readonly num: Scalars['Int'];
+  /** The species name for a Pokémon */
+  readonly species: Scalars['String'];
+  /** The types for a Pokémon */
+  readonly types: ReadonlyArray<Scalars['String']>;
+  /** The abilities for a Pokémon */
+  readonly abilities: AbilitiesEntry;
+  /** Base stats for a Pokémon */
+  readonly baseStats: StatsEntry;
+  /** The colour of a Pokémon as listed in the Pokedex */
+  readonly color: Scalars['String'];
+  /** The egg groups a Pokémon is in */
+  readonly eggGroups?: Maybe<ReadonlyArray<Scalars['String']>>;
+  /** The evolution level, or special method, for a Pokémon */
+  readonly evolutionLevel?: Maybe<Scalars['String']>;
+  /** The raw evos of a Pokémon  */
+  readonly evos?: Maybe<ReadonlyArray<Scalars['String']>>;
+  /** The raw prevo of a Pokémon  */
+  readonly prevo?: Maybe<Scalars['String']>;
+  /** The form identifier of a Pokémon  */
+  readonly forme?: Maybe<Scalars['String']>;
+  /** The single letter identifier of the form */
+  readonly formeLetter?: Maybe<Scalars['String']>;
+  /** The gender data for a Pokémon  */
+  readonly gender: GenderEntry;
+  /** The height of a Pokémon in meters */
+  readonly height: Scalars['Float'];
+  /** The weight of a Pokémon in kilograms */
+  readonly weight: Scalars['Float'];
+  /** Base form if this entry describes an alternate form */
+  readonly baseForme?: Maybe<Scalars['String']>;
+  /** Base species if this entry describes a special form */
+  readonly baseSpecies?: Maybe<Scalars['String']>;
+  /** Any other forms for a Pokémon */
+  readonly otherFormes?: Maybe<ReadonlyArray<Scalars['String']>>;
 }
 
+/** A flavor text entry for a Pokémon */
 export interface FlavorEntry {
-  __typename?: 'FlavorEntry';
-  game: Scalars['String'];
-  flavor: Scalars['String'];
+  readonly __typename?: 'FlavorEntry';
+  /** The name of the game this flavor text is from */
+  readonly game: Scalars['String'];
+  /** The flavor text for this entry */
+  readonly flavor: Scalars['String'];
 }
 
+/** A Pokémon gender ratio entry */
 export interface GenderEntry {
-  __typename?: 'GenderEntry';
-  male: Scalars['String'];
-  female: Scalars['String'];
+  readonly __typename?: 'GenderEntry';
+  /** The percentage of male occurrences */
+  readonly male: Scalars['String'];
+  /** The percentage for female occurrences */
+  readonly female: Scalars['String'];
 }
 
+/** A single item entry */
 export interface ItemEntry {
-  __typename?: 'ItemEntry';
-  desc: Scalars['String'];
-  shortDesc?: Maybe<Scalars['String']>;
-  name: Scalars['String'];
-  isNonstandard?: Maybe<Scalars['String']>;
-  sprite: Scalars['String'];
-  bulbapediaPage: Scalars['String'];
-  serebiiPage: Scalars['String'];
-  smogonPage: Scalars['String'];
+  readonly __typename?: 'ItemEntry';
+  /** The long description for an item */
+  readonly desc: Scalars['String'];
+  /** The long description for an item */
+  readonly shortDesc?: Maybe<Scalars['String']>;
+  /** The name for an item */
+  readonly name: Scalars['String'];
+  /** Whether an item is non-standard, and if it is why */
+  readonly isNonstandard?: Maybe<Scalars['String']>;
+  /** The sprite for an item */
+  readonly sprite: Scalars['String'];
+  /** The generation in which this item was introduced */
+  readonly generationIntroduced: Scalars['Int'];
+  /** Bulbapedia page for an item */
+  readonly bulbapediaPage: Scalars['String'];
+  /** Serebii page for an item */
+  readonly serebiiPage: Scalars['String'];
+  /** Smogon page for an item */
+  readonly smogonPage: Scalars['String'];
 }
 
-export enum Items {
-  Crucibellite = 'crucibellite',
-  Mail = 'mail',
-  Berserkgene = 'berserkgene',
-  Masterball = 'masterball',
-  Ultraball = 'ultraball',
-  Greatball = 'greatball',
-  Pokeball = 'pokeball',
-  Safariball = 'safariball',
-  Netball = 'netball',
-  Diveball = 'diveball',
-  Nestball = 'nestball',
-  Repeatball = 'repeatball',
-  Timerball = 'timerball',
-  Luxuryball = 'luxuryball',
-  Premierball = 'premierball',
-  Duskball = 'duskball',
-  Healball = 'healball',
-  Quickball = 'quickball',
-  Cherishball = 'cherishball',
-  Energypowder = 'energypowder',
-  Berryjuice = 'berryjuice',
-  Sunstone = 'sunstone',
-  Moonstone = 'moonstone',
-  Firestone = 'firestone',
-  Thunderstone = 'thunderstone',
-  Waterstone = 'waterstone',
-  Leafstone = 'leafstone',
-  Rootfossil = 'rootfossil',
-  Clawfossil = 'clawfossil',
-  Helixfossil = 'helixfossil',
-  Domefossil = 'domefossil',
-  Oldamber = 'oldamber',
-  Armorfossil = 'armorfossil',
-  Skullfossil = 'skullfossil',
-  Rarebone = 'rarebone',
-  Shinystone = 'shinystone',
-  Duskstone = 'duskstone',
-  Dawnstone = 'dawnstone',
-  Ovalstone = 'ovalstone',
-  Griseousorb = 'griseousorb',
-  Dousedrive = 'dousedrive',
-  Shockdrive = 'shockdrive',
-  Burndrive = 'burndrive',
-  Chilldrive = 'chilldrive',
-  Adamantorb = 'adamantorb',
-  Lustrousorb = 'lustrousorb',
-  Cheriberry = 'cheriberry',
-  Przcureberry = 'przcureberry',
-  Chestoberry = 'chestoberry',
-  Mintberry = 'mintberry',
-  Pechaberry = 'pechaberry',
-  Psncureberry = 'psncureberry',
-  Rawstberry = 'rawstberry',
-  Iceberry = 'iceberry',
-  Aspearberry = 'aspearberry',
-  Burntberry = 'burntberry',
-  Leppaberry = 'leppaberry',
-  Mysteryberry = 'mysteryberry',
-  Oranberry = 'oranberry',
-  Berry = 'berry',
-  Persimberry = 'persimberry',
-  Bitterberry = 'bitterberry',
-  Lumberry = 'lumberry',
-  Miracleberry = 'miracleberry',
-  Sitrusberry = 'sitrusberry',
-  Goldberry = 'goldberry',
-  Figyberry = 'figyberry',
-  Wikiberry = 'wikiberry',
-  Magoberry = 'magoberry',
-  Aguavberry = 'aguavberry',
-  Iapapaberry = 'iapapaberry',
-  Razzberry = 'razzberry',
-  Blukberry = 'blukberry',
-  Nanabberry = 'nanabberry',
-  Wepearberry = 'wepearberry',
-  Pinapberry = 'pinapberry',
-  Pomegberry = 'pomegberry',
-  Kelpsyberry = 'kelpsyberry',
-  Qualotberry = 'qualotberry',
-  Hondewberry = 'hondewberry',
-  Grepaberry = 'grepaberry',
-  Tamatoberry = 'tamatoberry',
-  Cornnberry = 'cornnberry',
-  Magostberry = 'magostberry',
-  Rabutaberry = 'rabutaberry',
-  Nomelberry = 'nomelberry',
-  Spelonberry = 'spelonberry',
-  Pamtreberry = 'pamtreberry',
-  Watmelberry = 'watmelberry',
-  Durinberry = 'durinberry',
-  Belueberry = 'belueberry',
-  Occaberry = 'occaberry',
-  Passhoberry = 'passhoberry',
-  Wacanberry = 'wacanberry',
-  Rindoberry = 'rindoberry',
-  Yacheberry = 'yacheberry',
-  Chopleberry = 'chopleberry',
-  Kebiaberry = 'kebiaberry',
-  Shucaberry = 'shucaberry',
-  Cobaberry = 'cobaberry',
-  Payapaberry = 'payapaberry',
-  Tangaberry = 'tangaberry',
-  Chartiberry = 'chartiberry',
-  Kasibberry = 'kasibberry',
-  Habanberry = 'habanberry',
-  Colburberry = 'colburberry',
-  Babiriberry = 'babiriberry',
-  Chilanberry = 'chilanberry',
-  Liechiberry = 'liechiberry',
-  Ganlonberry = 'ganlonberry',
-  Petayaberry = 'petayaberry',
-  Apicotberry = 'apicotberry',
-  Lansatberry = 'lansatberry',
-  Starfberry = 'starfberry',
-  Enigmaberry = 'enigmaberry',
-  Micleberry = 'micleberry',
-  Custapberry = 'custapberry',
-  Jabocaberry = 'jabocaberry',
-  Rowapberry = 'rowapberry',
-  Brightpowder = 'brightpowder',
-  Whiteherb = 'whiteherb',
-  Machobrace = 'machobrace',
-  Quickclaw = 'quickclaw',
-  Mentalherb = 'mentalherb',
-  Choiceband = 'choiceband',
-  Kingsrock = 'kingsrock',
-  Silverpowder = 'silverpowder',
-  Souldew = 'souldew',
-  Deepseatooth = 'deepseatooth',
-  Deepseascale = 'deepseascale',
-  Focusband = 'focusband',
-  Scopelens = 'scopelens',
-  Metalcoat = 'metalcoat',
-  Leftovers = 'leftovers',
-  Lightball = 'lightball',
-  Softsand = 'softsand',
-  Hardstone = 'hardstone',
-  Miracleseed = 'miracleseed',
-  Blackglasses = 'blackglasses',
-  Blackbelt = 'blackbelt',
-  Magnet = 'magnet',
-  Mysticwater = 'mysticwater',
-  Sharpbeak = 'sharpbeak',
-  Poisonbarb = 'poisonbarb',
-  Nevermeltice = 'nevermeltice',
-  Spelltag = 'spelltag',
-  Twistedspoon = 'twistedspoon',
-  Charcoal = 'charcoal',
-  Dragonfang = 'dragonfang',
-  Dragonscale = 'dragonscale',
-  Silkscarf = 'silkscarf',
-  Pinkbow = 'pinkbow',
-  Polkadotbow = 'polkadotbow',
-  Upgrade = 'upgrade',
-  Shellbell = 'shellbell',
-  Seaincense = 'seaincense',
-  Laxincense = 'laxincense',
-  Luckypunch = 'luckypunch',
-  Metalpowder = 'metalpowder',
-  Thickclub = 'thickclub',
-  Stick = 'stick',
-  Widelens = 'widelens',
-  Muscleband = 'muscleband',
-  Wiseglasses = 'wiseglasses',
-  Expertbelt = 'expertbelt',
-  Lightclay = 'lightclay',
-  Lifeorb = 'lifeorb',
-  Powerherb = 'powerherb',
-  Toxicorb = 'toxicorb',
-  Flameorb = 'flameorb',
-  Quickpowder = 'quickpowder',
-  Focussash = 'focussash',
-  Zoomlens = 'zoomlens',
-  Metronome = 'metronome',
-  Ironball = 'ironball',
-  Laggingtail = 'laggingtail',
-  Destinyknot = 'destinyknot',
-  Blacksludge = 'blacksludge',
-  Icyrock = 'icyrock',
-  Smoothrock = 'smoothrock',
-  Heatrock = 'heatrock',
-  Damprock = 'damprock',
-  Gripclaw = 'gripclaw',
-  Choicescarf = 'choicescarf',
-  Stickybarb = 'stickybarb',
-  Powerbracer = 'powerbracer',
-  Powerbelt = 'powerbelt',
-  Powerlens = 'powerlens',
-  Powerband = 'powerband',
-  Poweranklet = 'poweranklet',
-  Powerweight = 'powerweight',
-  Shedshell = 'shedshell',
-  Bigroot = 'bigroot',
-  Choicespecs = 'choicespecs',
-  Flameplate = 'flameplate',
-  Splashplate = 'splashplate',
-  Zapplate = 'zapplate',
-  Meadowplate = 'meadowplate',
-  Icicleplate = 'icicleplate',
-  Fistplate = 'fistplate',
-  Toxicplate = 'toxicplate',
-  Earthplate = 'earthplate',
-  Skyplate = 'skyplate',
-  Mindplate = 'mindplate',
-  Insectplate = 'insectplate',
-  Stoneplate = 'stoneplate',
-  Spookyplate = 'spookyplate',
-  Dracoplate = 'dracoplate',
-  Dreadplate = 'dreadplate',
-  Ironplate = 'ironplate',
-  Oddincense = 'oddincense',
-  Rockincense = 'rockincense',
-  Fullincense = 'fullincense',
-  Waveincense = 'waveincense',
-  Roseincense = 'roseincense',
-  Protector = 'protector',
-  Electirizer = 'electirizer',
-  Magmarizer = 'magmarizer',
-  Dubiousdisc = 'dubiousdisc',
-  Reapercloth = 'reapercloth',
-  Razorclaw = 'razorclaw',
-  Razorfang = 'razorfang',
-  Fastball = 'fastball',
-  Levelball = 'levelball',
-  Lureball = 'lureball',
-  Heavyball = 'heavyball',
-  Loveball = 'loveball',
-  Friendball = 'friendball',
-  Moonball = 'moonball',
-  Sportball = 'sportball',
-  Parkball = 'parkball',
-  Redorb = 'redorb',
-  Blueorb = 'blueorb',
-  Prismscale = 'prismscale',
-  Eviolite = 'eviolite',
-  Floatstone = 'floatstone',
-  Rockyhelmet = 'rockyhelmet',
-  Airballoon = 'airballoon',
-  Redcard = 'redcard',
-  Ringtarget = 'ringtarget',
-  Bindingband = 'bindingband',
-  Absorbbulb = 'absorbbulb',
-  Cellbattery = 'cellbattery',
-  Ejectbutton = 'ejectbutton',
-  Firegem = 'firegem',
-  Watergem = 'watergem',
-  Electricgem = 'electricgem',
-  Grassgem = 'grassgem',
-  Icegem = 'icegem',
-  Fightinggem = 'fightinggem',
-  Poisongem = 'poisongem',
-  Groundgem = 'groundgem',
-  Flyinggem = 'flyinggem',
-  Psychicgem = 'psychicgem',
-  Buggem = 'buggem',
-  Rockgem = 'rockgem',
-  Ghostgem = 'ghostgem',
-  Dragongem = 'dragongem',
-  Darkgem = 'darkgem',
-  Steelgem = 'steelgem',
-  Normalgem = 'normalgem',
-  Coverfossil = 'coverfossil',
-  Plumefossil = 'plumefossil',
-  Dreamball = 'dreamball',
-  Weaknesspolicy = 'weaknesspolicy',
-  Assaultvest = 'assaultvest',
-  Pixieplate = 'pixieplate',
-  Whippeddream = 'whippeddream',
-  Sachet = 'sachet',
-  Luminousmoss = 'luminousmoss',
-  Snowball = 'snowball',
-  Safetygoggles = 'safetygoggles',
-  Gengarite = 'gengarite',
-  Gardevoirite = 'gardevoirite',
-  Ampharosite = 'ampharosite',
-  Venusaurite = 'venusaurite',
-  Charizarditex = 'charizarditex',
-  Blastoisinite = 'blastoisinite',
-  Mewtwonitex = 'mewtwonitex',
-  Mewtwonitey = 'mewtwonitey',
-  Blazikenite = 'blazikenite',
-  Medichamite = 'medichamite',
-  Houndoominite = 'houndoominite',
-  Aggronite = 'aggronite',
-  Banettite = 'banettite',
-  Tyranitarite = 'tyranitarite',
-  Scizorite = 'scizorite',
-  Pinsirite = 'pinsirite',
-  Aerodactylite = 'aerodactylite',
-  Lucarionite = 'lucarionite',
+/** The supported items */
+export const enum Items {
   Abomasite = 'abomasite',
-  Kangaskhanite = 'kangaskhanite',
-  Gyaradosite = 'gyaradosite',
   Absolite = 'absolite',
-  Charizarditey = 'charizarditey',
+  Absorbbulb = 'absorbbulb',
+  Adamantorb = 'adamantorb',
+  Adrenalineorb = 'adrenalineorb',
+  Aerodactylite = 'aerodactylite',
+  Aggronite = 'aggronite',
+  Aguavberry = 'aguavberry',
+  Airballoon = 'airballoon',
   Alakazite = 'alakazite',
-  Heracronite = 'heracronite',
-  Mawilite = 'mawilite',
-  Manectite = 'manectite',
+  Aloraichiumz = 'aloraichiumz',
+  Altarianite = 'altarianite',
+  Ampharosite = 'ampharosite',
+  Apicotberry = 'apicotberry',
+  Armorfossil = 'armorfossil',
+  Aspearberry = 'aspearberry',
+  Assaultvest = 'assaultvest',
+  Audinite = 'audinite',
+  Babiriberry = 'babiriberry',
+  Banettite = 'banettite',
+  Beastball = 'beastball',
+  Beedrillite = 'beedrillite',
+  Belueberry = 'belueberry',
+  Berry = 'berry',
+  Berryjuice = 'berryjuice',
+  Berrysweet = 'berrysweet',
+  Berserkgene = 'berserkgene',
+  Bigroot = 'bigroot',
+  Bindingband = 'bindingband',
+  Bitterberry = 'bitterberry',
+  Blackbelt = 'blackbelt',
+  Blackglasses = 'blackglasses',
+  Blacksludge = 'blacksludge',
+  Blastoisinite = 'blastoisinite',
+  Blazikenite = 'blazikenite',
+  Blueorb = 'blueorb',
+  Blukberry = 'blukberry',
+  Blunderpolicy = 'blunderpolicy',
+  Bottlecap = 'bottlecap',
+  Brightpowder = 'brightpowder',
+  Buggem = 'buggem',
+  Bugmemory = 'bugmemory',
+  Buginiumz = 'buginiumz',
+  Burndrive = 'burndrive',
+  Burntberry = 'burntberry',
+  Cameruptite = 'cameruptite',
+  Cellbattery = 'cellbattery',
+  Charcoal = 'charcoal',
+  Charizarditex = 'charizarditex',
+  Charizarditey = 'charizarditey',
+  Chartiberry = 'chartiberry',
+  Cheriberry = 'cheriberry',
+  Cherishball = 'cherishball',
+  Chestoberry = 'chestoberry',
+  Chilanberry = 'chilanberry',
+  Chilldrive = 'chilldrive',
+  Chippedpot = 'chippedpot',
+  Choiceband = 'choiceband',
+  Choicescarf = 'choicescarf',
+  Choicespecs = 'choicespecs',
+  Chopleberry = 'chopleberry',
+  Clawfossil = 'clawfossil',
+  Cloversweet = 'cloversweet',
+  Cobaberry = 'cobaberry',
+  Colburberry = 'colburberry',
+  Cornnberry = 'cornnberry',
+  Coverfossil = 'coverfossil',
+  Crucibellite = 'crucibellite',
+  Crackedpot = 'crackedpot',
+  Custapberry = 'custapberry',
+  Damprock = 'damprock',
+  Darkgem = 'darkgem',
+  Darkmemory = 'darkmemory',
+  Darkiniumz = 'darkiniumz',
+  Dawnstone = 'dawnstone',
+  Decidiumz = 'decidiumz',
+  Deepseascale = 'deepseascale',
+  Deepseatooth = 'deepseatooth',
+  Destinyknot = 'destinyknot',
+  Diancite = 'diancite',
+  Diveball = 'diveball',
+  Domefossil = 'domefossil',
+  Dousedrive = 'dousedrive',
+  Dracoplate = 'dracoplate',
+  Dragonfang = 'dragonfang',
+  Dragongem = 'dragongem',
+  Dragonmemory = 'dragonmemory',
+  Dragonscale = 'dragonscale',
+  Dragoniumz = 'dragoniumz',
+  Dreadplate = 'dreadplate',
+  Dreamball = 'dreamball',
+  Dubiousdisc = 'dubiousdisc',
+  Durinberry = 'durinberry',
+  Duskball = 'duskball',
+  Duskstone = 'duskstone',
+  Earthplate = 'earthplate',
+  Eeviumz = 'eeviumz',
+  Ejectbutton = 'ejectbutton',
+  Ejectpack = 'ejectpack',
+  Electirizer = 'electirizer',
+  Electricgem = 'electricgem',
+  Electricmemory = 'electricmemory',
+  Electricseed = 'electricseed',
+  Electriumz = 'electriumz',
+  Energypowder = 'energypowder',
+  Enigmaberry = 'enigmaberry',
+  Eviolite = 'eviolite',
+  Expertbelt = 'expertbelt',
+  Fairiumz = 'fairiumz',
+  Fairygem = 'fairygem',
+  Fairymemory = 'fairymemory',
+  Fastball = 'fastball',
+  Fightinggem = 'fightinggem',
+  Fightingmemory = 'fightingmemory',
+  Fightiniumz = 'fightiniumz',
+  Figyberry = 'figyberry',
+  Firegem = 'firegem',
+  Firememory = 'firememory',
+  Firestone = 'firestone',
+  Firiumz = 'firiumz',
+  Fistplate = 'fistplate',
+  Flameorb = 'flameorb',
+  Flameplate = 'flameplate',
+  Floatstone = 'floatstone',
+  Flowersweet = 'flowersweet',
+  Flyinggem = 'flyinggem',
+  Flyingmemory = 'flyingmemory',
+  Flyiniumz = 'flyiniumz',
+  Focusband = 'focusband',
+  Focussash = 'focussash',
+  Fossilizedbird = 'fossilizedbird',
+  Fossilizeddino = 'fossilizeddino',
+  Fossilizeddrake = 'fossilizeddrake',
+  Fossilizedfish = 'fossilizedfish',
+  Friendball = 'friendball',
+  Fullincense = 'fullincense',
+  Galladite = 'galladite',
+  Ganlonberry = 'ganlonberry',
   Garchompite = 'garchompite',
+  Gardevoirite = 'gardevoirite',
+  Gengarite = 'gengarite',
+  Ghostgem = 'ghostgem',
+  Ghostmemory = 'ghostmemory',
+  Ghostiumz = 'ghostiumz',
+  Glalitite = 'glalitite',
+  Goldberry = 'goldberry',
+  Goldbottlecap = 'goldbottlecap',
+  Grassgem = 'grassgem',
+  Grassmemory = 'grassmemory',
+  Grassiumz = 'grassiumz',
+  Grassyseed = 'grassyseed',
+  Greatball = 'greatball',
+  Grepaberry = 'grepaberry',
+  Gripclaw = 'gripclaw',
+  Griseousorb = 'griseousorb',
+  Groundgem = 'groundgem',
+  Groundmemory = 'groundmemory',
+  Groundiumz = 'groundiumz',
+  Gyaradosite = 'gyaradosite',
+  Habanberry = 'habanberry',
+  Hardstone = 'hardstone',
+  Healball = 'healball',
+  Heatrock = 'heatrock',
+  Heavyball = 'heavyball',
+  Heavydutyboots = 'heavydutyboots',
+  Helixfossil = 'helixfossil',
+  Heracronite = 'heracronite',
+  Hondewberry = 'hondewberry',
+  Houndoominite = 'houndoominite',
+  Iapapaberry = 'iapapaberry',
+  Iceberry = 'iceberry',
+  Icegem = 'icegem',
+  Icememory = 'icememory',
+  Icestone = 'icestone',
+  Icicleplate = 'icicleplate',
+  Iciumz = 'iciumz',
+  Icyrock = 'icyrock',
+  Inciniumz = 'inciniumz',
+  Insectplate = 'insectplate',
+  Ironball = 'ironball',
+  Ironplate = 'ironplate',
+  Jabocaberry = 'jabocaberry',
+  Jawfossil = 'jawfossil',
+  Kangaskhanite = 'kangaskhanite',
+  Kasibberry = 'kasibberry',
+  Kebiaberry = 'kebiaberry',
+  Keeberry = 'keeberry',
+  Kelpsyberry = 'kelpsyberry',
+  Kingsrock = 'kingsrock',
+  Kommoniumz = 'kommoniumz',
+  Laggingtail = 'laggingtail',
+  Lansatberry = 'lansatberry',
   Latiasite = 'latiasite',
   Latiosite = 'latiosite',
-  Roseliberry = 'roseliberry',
-  Keeberry = 'keeberry',
-  Marangaberry = 'marangaberry',
-  Jawfossil = 'jawfossil',
-  Sailfossil = 'sailfossil',
-  Fairygem = 'fairygem',
-  Swampertite = 'swampertite',
-  Sceptilite = 'sceptilite',
-  Sablenite = 'sablenite',
-  Altarianite = 'altarianite',
-  Galladite = 'galladite',
-  Audinite = 'audinite',
-  Metagrossite = 'metagrossite',
-  Sharpedonite = 'sharpedonite',
-  Slowbronite = 'slowbronite',
-  Steelixite = 'steelixite',
-  Pidgeotite = 'pidgeotite',
-  Glalitite = 'glalitite',
-  Diancite = 'diancite',
-  Cameruptite = 'cameruptite',
+  Laxincense = 'laxincense',
+  Leafstone = 'leafstone',
+  Leek = 'leek',
+  Leftovers = 'leftovers',
+  Leppaberry = 'leppaberry',
+  Levelball = 'levelball',
+  Liechiberry = 'liechiberry',
+  Lifeorb = 'lifeorb',
+  Lightball = 'lightball',
+  Lightclay = 'lightclay',
   Lopunnite = 'lopunnite',
+  Loveball = 'loveball',
+  Lovesweet = 'lovesweet',
+  Lucarionite = 'lucarionite',
+  Luckypunch = 'luckypunch',
+  Lumberry = 'lumberry',
+  Luminousmoss = 'luminousmoss',
+  Lunaliumz = 'lunaliumz',
+  Lureball = 'lureball',
+  Lustrousorb = 'lustrousorb',
+  Luxuryball = 'luxuryball',
+  Lycaniumz = 'lycaniumz',
+  Machobrace = 'machobrace',
+  Magmarizer = 'magmarizer',
+  Magnet = 'magnet',
+  Magoberry = 'magoberry',
+  Magostberry = 'magostberry',
+  Mail = 'mail',
+  Manectite = 'manectite',
+  Marangaberry = 'marangaberry',
+  Marshadiumz = 'marshadiumz',
+  Masterball = 'masterball',
+  Mawilite = 'mawilite',
+  Meadowplate = 'meadowplate',
+  Medichamite = 'medichamite',
+  Mentalherb = 'mentalherb',
+  Metagrossite = 'metagrossite',
+  Metalcoat = 'metalcoat',
+  Metalpowder = 'metalpowder',
+  Metronome = 'metronome',
+  Mewniumz = 'mewniumz',
+  Mewtwonitex = 'mewtwonitex',
+  Mewtwonitey = 'mewtwonitey',
+  Micleberry = 'micleberry',
+  Mimikiumz = 'mimikiumz',
+  Mindplate = 'mindplate',
+  Mintberry = 'mintberry',
+  Miracleberry = 'miracleberry',
+  Miracleseed = 'miracleseed',
+  Mistyseed = 'mistyseed',
+  Moonball = 'moonball',
+  Moonstone = 'moonstone',
+  Muscleband = 'muscleband',
+  Mysteryberry = 'mysteryberry',
+  Mysticwater = 'mysticwater',
+  Nanabberry = 'nanabberry',
+  Nestball = 'nestball',
+  Netball = 'netball',
+  Nevermeltice = 'nevermeltice',
+  Nomelberry = 'nomelberry',
+  Normalgem = 'normalgem',
+  Normaliumz = 'normaliumz',
+  Occaberry = 'occaberry',
+  Oddincense = 'oddincense',
+  Oldamber = 'oldamber',
+  Oranberry = 'oranberry',
+  Ovalstone = 'ovalstone',
+  Przcureberry = 'przcureberry',
+  Psncureberry = 'psncureberry',
+  Pamtreberry = 'pamtreberry',
+  Parkball = 'parkball',
+  Passhoberry = 'passhoberry',
+  Payapaberry = 'payapaberry',
+  Pechaberry = 'pechaberry',
+  Persimberry = 'persimberry',
+  Petayaberry = 'petayaberry',
+  Pidgeotite = 'pidgeotite',
+  Pikaniumz = 'pikaniumz',
+  Pikashuniumz = 'pikashuniumz',
+  Pinapberry = 'pinapberry',
+  Pinkbow = 'pinkbow',
+  Pinsirite = 'pinsirite',
+  Pixieplate = 'pixieplate',
+  Plumefossil = 'plumefossil',
+  Poisonbarb = 'poisonbarb',
+  Poisongem = 'poisongem',
+  Poisonmemory = 'poisonmemory',
+  Poisoniumz = 'poisoniumz',
+  Pokeball = 'pokeball',
+  Polkadotbow = 'polkadotbow',
+  Pomegberry = 'pomegberry',
+  Poweranklet = 'poweranklet',
+  Powerband = 'powerband',
+  Powerbelt = 'powerbelt',
+  Powerbracer = 'powerbracer',
+  Powerherb = 'powerherb',
+  Powerlens = 'powerlens',
+  Powerweight = 'powerweight',
+  Premierball = 'premierball',
+  Primariumz = 'primariumz',
+  Prismscale = 'prismscale',
+  Protectivepads = 'protectivepads',
+  Protector = 'protector',
+  Psychicgem = 'psychicgem',
+  Psychicmemory = 'psychicmemory',
+  Psychicseed = 'psychicseed',
+  Psychiumz = 'psychiumz',
+  Qualotberry = 'qualotberry',
+  Quickball = 'quickball',
+  Quickclaw = 'quickclaw',
+  Quickpowder = 'quickpowder',
+  Rabutaberry = 'rabutaberry',
+  Rarebone = 'rarebone',
+  Rawstberry = 'rawstberry',
+  Razorclaw = 'razorclaw',
+  Razorfang = 'razorfang',
+  Razzberry = 'razzberry',
+  Reapercloth = 'reapercloth',
+  Redcard = 'redcard',
+  Redorb = 'redorb',
+  Repeatball = 'repeatball',
+  Ribbonsweet = 'ribbonsweet',
+  Rindoberry = 'rindoberry',
+  Ringtarget = 'ringtarget',
+  Rockgem = 'rockgem',
+  Rockincense = 'rockincense',
+  Rockmemory = 'rockmemory',
+  Rockiumz = 'rockiumz',
+  Roseincense = 'roseincense',
+  Rockyhelmet = 'rockyhelmet',
+  Roomservice = 'roomservice',
+  Rootfossil = 'rootfossil',
+  Roseliberry = 'roseliberry',
+  Rowapberry = 'rowapberry',
+  Rustedshield = 'rustedshield',
+  Rustedsword = 'rustedsword',
+  Sablenite = 'sablenite',
+  Sachet = 'sachet',
+  Safariball = 'safariball',
+  Safetygoggles = 'safetygoggles',
+  Sailfossil = 'sailfossil',
   Salacberry = 'salacberry',
   Salamencite = 'salamencite',
-  Beedrillite = 'beedrillite',
-  Normaliumz = 'normaliumz',
-  Firiumz = 'firiumz',
-  Wateriumz = 'wateriumz',
-  Electriumz = 'electriumz',
-  Grassiumz = 'grassiumz',
-  Iciumz = 'iciumz',
-  Fightiniumz = 'fightiniumz',
-  Poisoniumz = 'poisoniumz',
-  Groundiumz = 'groundiumz',
-  Flyiniumz = 'flyiniumz',
-  Psychiumz = 'psychiumz',
-  Buginiumz = 'buginiumz',
-  Rockiumz = 'rockiumz',
-  Ghostiumz = 'ghostiumz',
-  Dragoniumz = 'dragoniumz',
-  Darkiniumz = 'darkiniumz',
-  Steeliumz = 'steeliumz',
-  Fairiumz = 'fairiumz',
-  Pikaniumz = 'pikaniumz',
-  Bottlecap = 'bottlecap',
-  Goldbottlecap = 'goldbottlecap',
-  Decidiumz = 'decidiumz',
-  Inciniumz = 'inciniumz',
-  Primariumz = 'primariumz',
-  Tapuniumz = 'tapuniumz',
-  Marshadiumz = 'marshadiumz',
-  Aloraichiumz = 'aloraichiumz',
+  Sceptilite = 'sceptilite',
+  Scizorite = 'scizorite',
+  Scopelens = 'scopelens',
+  Seaincense = 'seaincense',
+  Sharpbeak = 'sharpbeak',
+  Sharpedonite = 'sharpedonite',
+  Shedshell = 'shedshell',
+  Shellbell = 'shellbell',
+  Shinystone = 'shinystone',
+  Shockdrive = 'shockdrive',
+  Shucaberry = 'shucaberry',
+  Silkscarf = 'silkscarf',
+  Silverpowder = 'silverpowder',
+  Sitrusberry = 'sitrusberry',
+  Skullfossil = 'skullfossil',
+  Skyplate = 'skyplate',
+  Slowbronite = 'slowbronite',
+  Smoothrock = 'smoothrock',
   Snorliumz = 'snorliumz',
-  Eeviumz = 'eeviumz',
-  Mewniumz = 'mewniumz',
-  Pikashuniumz = 'pikashuniumz',
-  Adrenalineorb = 'adrenalineorb',
-  Icestone = 'icestone',
-  Beastball = 'beastball',
-  Terrainextender = 'terrainextender',
-  Protectivepads = 'protectivepads',
-  Electricseed = 'electricseed',
-  Psychicseed = 'psychicseed',
-  Mistyseed = 'mistyseed',
-  Grassyseed = 'grassyseed',
-  Fightingmemory = 'fightingmemory',
-  Flyingmemory = 'flyingmemory',
-  Poisonmemory = 'poisonmemory',
-  Groundmemory = 'groundmemory',
-  Rockmemory = 'rockmemory',
-  Bugmemory = 'bugmemory',
-  Ghostmemory = 'ghostmemory',
-  Steelmemory = 'steelmemory',
-  Firememory = 'firememory',
-  Watermemory = 'watermemory',
-  Grassmemory = 'grassmemory',
-  Electricmemory = 'electricmemory',
-  Psychicmemory = 'psychicmemory',
-  Icememory = 'icememory',
-  Dragonmemory = 'dragonmemory',
-  Darkmemory = 'darkmemory',
-  Fairymemory = 'fairymemory',
+  Snowball = 'snowball',
+  Softsand = 'softsand',
   Solganiumz = 'solganiumz',
-  Lunaliumz = 'lunaliumz',
+  Souldew = 'souldew',
+  Spelltag = 'spelltag',
+  Spelonberry = 'spelonberry',
+  Splashplate = 'splashplate',
+  Spookyplate = 'spookyplate',
+  Sportball = 'sportball',
+  Starfberry = 'starfberry',
+  Steelgem = 'steelgem',
+  Steelmemory = 'steelmemory',
+  Steeliumz = 'steeliumz',
+  Starsweet = 'starsweet',
+  Steelixite = 'steelixite',
+  Stick = 'stick',
+  Stickybarb = 'stickybarb',
+  Stoneplate = 'stoneplate',
+  Strawberrysweet = 'strawberrysweet',
+  Sunstone = 'sunstone',
+  Swampertite = 'swampertite',
+  Sweetapple = 'sweetapple',
+  Tamatoberry = 'tamatoberry',
+  Tangaberry = 'tangaberry',
+  Tapuniumz = 'tapuniumz',
+  Tartapple = 'tartapple',
+  Terrainextender = 'terrainextender',
+  Thickclub = 'thickclub',
+  Throatspray = 'throatspray',
+  Thunderstone = 'thunderstone',
+  Timerball = 'timerball',
+  Toxicorb = 'toxicorb',
+  Toxicplate = 'toxicplate',
+  Twistedspoon = 'twistedspoon',
+  Tyranitarite = 'tyranitarite',
+  Ultraball = 'ultraball',
   Ultranecroziumz = 'ultranecroziumz',
-  Mimikiumz = 'mimikiumz',
-  Lycaniumz = 'lycaniumz',
-  Kommoniumz = 'kommoniumz'
+  Upgrade = 'upgrade',
+  Utilityumbrella = 'utilityumbrella',
+  Venusaurite = 'venusaurite',
+  Wacanberry = 'wacanberry',
+  Watergem = 'watergem',
+  Watermemory = 'watermemory',
+  Waterstone = 'waterstone',
+  Wateriumz = 'wateriumz',
+  Watmelberry = 'watmelberry',
+  Waveincense = 'waveincense',
+  Weaknesspolicy = 'weaknesspolicy',
+  Wepearberry = 'wepearberry',
+  Whippeddream = 'whippeddream',
+  Whiteherb = 'whiteherb',
+  Widelens = 'widelens',
+  Wikiberry = 'wikiberry',
+  Wiseglasses = 'wiseglasses',
+  Yacheberry = 'yacheberry',
+  Zapplate = 'zapplate',
+  Zoomlens = 'zoomlens'
 }
 
+/** A learnset entry */
 export interface LearnsetEntry {
-  __typename?: 'LearnsetEntry';
-  levelUpMoves?: Maybe<Array<LearnsetLevelUpMove>>;
-  virtualTransferMoves?: Maybe<Array<LearnsetMove>>;
-  tutorMoves?: Maybe<Array<LearnsetMove>>;
-  tmMoves?: Maybe<Array<LearnsetMove>>;
-  eggMoves?: Maybe<Array<LearnsetMove>>;
-  eventMoves?: Maybe<Array<LearnsetMove>>;
-  dreamworldMoves?: Maybe<Array<LearnsetMove>>;
+  readonly __typename?: 'LearnsetEntry';
+  /** The moves that can be learned through levelling up */
+  readonly levelUpMoves?: Maybe<ReadonlyArray<LearnsetLevelUpMove>>;
+  /** The moves that can be learned through virtual console transfer */
+  readonly virtualTransferMoves?: Maybe<ReadonlyArray<LearnsetMove>>;
+  /** The moves that can be learned from a move tutor */
+  readonly tutorMoves?: Maybe<ReadonlyArray<LearnsetMove>>;
+  /** The moves that can be learned from a Technical Machine or Technical Record */
+  readonly tmMoves?: Maybe<ReadonlyArray<LearnsetMove>>;
+  /** The moves that can be passed as egg moves */
+  readonly eggMoves?: Maybe<ReadonlyArray<LearnsetMove>>;
+  /** The moves that are exclusive to event variants of the Pokémon */
+  readonly eventMoves?: Maybe<ReadonlyArray<LearnsetMove>>;
+  /** The moves that are exclusively learned in the Unova Dream World */
+  readonly dreamworldMoves?: Maybe<ReadonlyArray<LearnsetMove>>;
+  /** The dex number for a Pokémon */
+  readonly num: Scalars['Int'];
+  /** The species name for a Pokémon */
+  readonly species: Scalars['String'];
+  /** The sprite for the Pokémon */
+  readonly sprite: Scalars['String'];
+  /** The shiny sprite for the Pokémon */
+  readonly shinySprite: Scalars['String'];
+  /** The PokéDex colour for the Pokémon */
+  readonly color: Scalars['String'];
 }
 
+/** A learnset level up move entry */
 export interface LearnsetLevelUpMove {
-  __typename?: 'LearnsetLevelUpMove';
-  name?: Maybe<Scalars['String']>;
-  generation?: Maybe<Scalars['Int']>;
-  level?: Maybe<Scalars['Int']>;
+  readonly __typename?: 'LearnsetLevelUpMove';
+  /** The name of the move */
+  readonly name?: Maybe<Scalars['String']>;
+  /** The generation in which this pokemon learned the move this way */
+  readonly generation?: Maybe<Scalars['Int']>;
+  /** The level at which the move is learned */
+  readonly level?: Maybe<Scalars['Int']>;
 }
 
+/** A learnset move entry */
 export interface LearnsetMove {
-  __typename?: 'LearnsetMove';
-  name?: Maybe<Scalars['String']>;
-  generation?: Maybe<Scalars['Int']>;
+  readonly __typename?: 'LearnsetMove';
+  /** The name of the move */
+  readonly name?: Maybe<Scalars['String']>;
+  /** The generation in which this pokemon learned the move this way */
+  readonly generation?: Maybe<Scalars['Int']>;
 }
 
+/** A single Pokémon move entry */
 export interface MoveEntry {
-  __typename?: 'MoveEntry';
-  name: Scalars['String'];
-  shortDesc: Scalars['String'];
-  type: Scalars['String'];
-  basePower: Scalars['String'];
-  pp: Scalars['Int'];
-  category: Scalars['MoveCategoryUnion'];
-  accuracy: Scalars['Int'];
-  priority: Scalars['Int'];
-  target: Scalars['String'];
-  contestType: Scalars['String'];
-  bulbapediaPage: Scalars['String'];
-  serebiiPage: Scalars['String'];
-  smogonPage: Scalars['String'];
-  isZ?: Maybe<Scalars['String']>;
-  desc?: Maybe<Scalars['String']>;
+  readonly __typename?: 'MoveEntry';
+  /** The name for a move */
+  readonly name: Scalars['String'];
+  /** The short description for a move */
+  readonly shortDesc: Scalars['String'];
+  /** The type for a move */
+  readonly type: Scalars['String'];
+  /** The base power for a move */
+  readonly basePower: Scalars['String'];
+  /** The power points for a move */
+  readonly pp: Scalars['Int'];
+  /** The category for a move */
+  readonly category: Scalars['String'];
+  /** The accuracy for a move */
+  readonly accuracy: Scalars['Int'];
+  /** The priority for a move */
+  readonly priority: Scalars['Int'];
+  /** The target for a move */
+  readonly target: Scalars['String'];
+  /** The contest type for a move */
+  readonly contestType?: Maybe<Scalars['String']>;
+  /** Bulbapedia page for a move */
+  readonly bulbapediaPage: Scalars['String'];
+  /** Serebii page for a move */
+  readonly serebiiPage: Scalars['String'];
+  /** Smogon page for a move */
+  readonly smogonPage: Scalars['String'];
+  /** Whether a move is non-standard, and if it is why */
+  readonly isNonstandard?: Maybe<Scalars['String']>;
+  /** Whether this move is a Z-Move, and if it is the Z-Crystal required to trigger it */
+  readonly isZ?: Maybe<Scalars['String']>;
+  /** Whether this move is a G-MAX move, and if it is which Gigantamaxed Pokémon can use it */
+  readonly isGMax?: Maybe<Scalars['String']>;
+  /** The long description for a move */
+  readonly desc?: Maybe<Scalars['String']>;
 }
 
-export enum Moves {
-  Paleowave = 'paleowave',
-  Shadowstrike = 'shadowstrike',
-  Magikarpsrevenge = 'magikarpsrevenge',
-  Pound = 'pound',
-  Karatechop = 'karatechop',
-  Doubleslap = 'doubleslap',
-  Cometpunch = 'cometpunch',
-  Megapunch = 'megapunch',
-  Payday = 'payday',
-  Firepunch = 'firepunch',
-  Icepunch = 'icepunch',
-  Thunderpunch = 'thunderpunch',
-  Scratch = 'scratch',
-  Vicegrip = 'vicegrip',
-  Guillotine = 'guillotine',
-  Razorwind = 'razorwind',
-  Swordsdance = 'swordsdance',
-  Cut = 'cut',
-  Gust = 'gust',
-  Wingattack = 'wingattack',
-  Whirlwind = 'whirlwind',
-  Fly = 'fly',
-  Bind = 'bind',
-  Slam = 'slam',
-  Vinewhip = 'vinewhip',
-  Stomp = 'stomp',
-  Doublekick = 'doublekick',
-  Megakick = 'megakick',
-  Jumpkick = 'jumpkick',
-  Rollingkick = 'rollingkick',
-  Sandattack = 'sandattack',
-  Headbutt = 'headbutt',
-  Hornattack = 'hornattack',
-  Furyattack = 'furyattack',
-  Horndrill = 'horndrill',
-  Tackle = 'tackle',
-  Bodyslam = 'bodyslam',
-  Wrap = 'wrap',
-  Takedown = 'takedown',
-  Thrash = 'thrash',
-  Doubleedge = 'doubleedge',
-  Tailwhip = 'tailwhip',
-  Poisonsting = 'poisonsting',
-  Twineedle = 'twineedle',
-  Pinmissile = 'pinmissile',
-  Leer = 'leer',
-  Bite = 'bite',
-  Growl = 'growl',
-  Roar = 'roar',
-  Sing = 'sing',
-  Supersonic = 'supersonic',
-  Sonicboom = 'sonicboom',
-  Disable = 'disable',
-  Acid = 'acid',
-  Ember = 'ember',
-  Flamethrower = 'flamethrower',
-  Mist = 'mist',
-  Watergun = 'watergun',
-  Hydropump = 'hydropump',
-  Surf = 'surf',
-  Icebeam = 'icebeam',
-  Blizzard = 'blizzard',
-  Psybeam = 'psybeam',
-  Bubblebeam = 'bubblebeam',
-  Aurorabeam = 'aurorabeam',
-  Hyperbeam = 'hyperbeam',
-  Peck = 'peck',
-  Drillpeck = 'drillpeck',
-  Submission = 'submission',
-  Lowkick = 'lowkick',
-  Counter = 'counter',
-  Seismictoss = 'seismictoss',
-  Strength = 'strength',
+/** The supported moves */
+export const enum Moves {
   Absorb = 'absorb',
-  Megadrain = 'megadrain',
-  Leechseed = 'leechseed',
-  Growth = 'growth',
-  Razorleaf = 'razorleaf',
-  Solarbeam = 'solarbeam',
-  Poisonpowder = 'poisonpowder',
-  Stunspore = 'stunspore',
-  Sleeppowder = 'sleeppowder',
-  Petaldance = 'petaldance',
-  Stringshot = 'stringshot',
-  Dragonrage = 'dragonrage',
-  Firespin = 'firespin',
-  Thundershock = 'thundershock',
-  Thunderbolt = 'thunderbolt',
-  Thunderwave = 'thunderwave',
-  Thunder = 'thunder',
-  Rockthrow = 'rockthrow',
-  Earthquake = 'earthquake',
-  Fissure = 'fissure',
-  Dig = 'dig',
-  Toxic = 'toxic',
-  Confusion = 'confusion',
-  Psychic = 'psychic',
-  Hypnosis = 'hypnosis',
-  Meditate = 'meditate',
-  Agility = 'agility',
-  Quickattack = 'quickattack',
-  Rage = 'rage',
-  Teleport = 'teleport',
-  Nightshade = 'nightshade',
-  Mimic = 'mimic',
-  Screech = 'screech',
-  Doubleteam = 'doubleteam',
-  Recover = 'recover',
-  Harden = 'harden',
-  Minimize = 'minimize',
-  Smokescreen = 'smokescreen',
-  Confuseray = 'confuseray',
-  Withdraw = 'withdraw',
-  Defensecurl = 'defensecurl',
-  Barrier = 'barrier',
-  Lightscreen = 'lightscreen',
-  Haze = 'haze',
-  Reflect = 'reflect',
-  Focusenergy = 'focusenergy',
-  Bide = 'bide',
-  Metronome = 'metronome',
-  Mirrormove = 'mirrormove',
-  Selfdestruct = 'selfdestruct',
-  Eggbomb = 'eggbomb',
-  Lick = 'lick',
-  Smog = 'smog',
-  Sludge = 'sludge',
-  Boneclub = 'boneclub',
-  Fireblast = 'fireblast',
-  Waterfall = 'waterfall',
-  Clamp = 'clamp',
-  Swift = 'swift',
-  Skullbash = 'skullbash',
-  Spikecannon = 'spikecannon',
-  Constrict = 'constrict',
-  Amnesia = 'amnesia',
-  Kinesis = 'kinesis',
-  Softboiled = 'softboiled',
-  Highjumpkick = 'highjumpkick',
-  Glare = 'glare',
-  Dreameater = 'dreameater',
-  Poisongas = 'poisongas',
-  Barrage = 'barrage',
-  Leechlife = 'leechlife',
-  Lovelykiss = 'lovelykiss',
-  Skyattack = 'skyattack',
-  Transform = 'transform',
-  Bubble = 'bubble',
-  Dizzypunch = 'dizzypunch',
-  Spore = 'spore',
-  Flash = 'flash',
-  Psywave = 'psywave',
-  Splash = 'splash',
-  Acidarmor = 'acidarmor',
-  Crabhammer = 'crabhammer',
-  Explosion = 'explosion',
-  Furyswipes = 'furyswipes',
-  Bonemerang = 'bonemerang',
-  Rest = 'rest',
-  Rockslide = 'rockslide',
-  Hyperfang = 'hyperfang',
-  Sharpen = 'sharpen',
-  Conversion = 'conversion',
-  Triattack = 'triattack',
-  Superfang = 'superfang',
-  Slash = 'slash',
-  Substitute = 'substitute',
-  Struggle = 'struggle',
-  Sketch = 'sketch',
-  Triplekick = 'triplekick',
-  Thief = 'thief',
-  Spiderweb = 'spiderweb',
-  Mindreader = 'mindreader',
-  Nightmare = 'nightmare',
-  Flamewheel = 'flamewheel',
-  Snore = 'snore',
-  Curse = 'curse',
-  Flail = 'flail',
-  Conversion2 = 'conversion2',
-  Aeroblast = 'aeroblast',
-  Cottonspore = 'cottonspore',
-  Reversal = 'reversal',
-  Spite = 'spite',
-  Powdersnow = 'powdersnow',
-  Protect = 'protect',
-  Machpunch = 'machpunch',
-  Scaryface = 'scaryface',
-  Feintattack = 'feintattack',
-  Sweetkiss = 'sweetkiss',
-  Bellydrum = 'bellydrum',
-  Sludgebomb = 'sludgebomb',
-  Mudslap = 'mudslap',
-  Octazooka = 'octazooka',
-  Spikes = 'spikes',
-  Zapcannon = 'zapcannon',
-  Foresight = 'foresight',
-  Destinybond = 'destinybond',
-  Perishsong = 'perishsong',
-  Icywind = 'icywind',
-  Detect = 'detect',
-  Bonerush = 'bonerush',
-  Lockon = 'lockon',
-  Outrage = 'outrage',
-  Sandstorm = 'sandstorm',
-  Gigadrain = 'gigadrain',
-  Endure = 'endure',
-  Charm = 'charm',
-  Rollout = 'rollout',
-  Falseswipe = 'falseswipe',
-  Swagger = 'swagger',
-  Milkdrink = 'milkdrink',
-  Spark = 'spark',
-  Furycutter = 'furycutter',
-  Steelwing = 'steelwing',
-  Meanlook = 'meanlook',
-  Attract = 'attract',
-  Sleeptalk = 'sleeptalk',
-  Healbell = 'healbell',
-  Return = 'return',
-  Present = 'present',
-  Frustration = 'frustration',
-  Safeguard = 'safeguard',
-  Painsplit = 'painsplit',
-  Sacredfire = 'sacredfire',
-  Magnitude = 'magnitude',
-  Dynamicpunch = 'dynamicpunch',
-  Megahorn = 'megahorn',
-  Dragonbreath = 'dragonbreath',
-  Batonpass = 'batonpass',
-  Encore = 'encore',
-  Pursuit = 'pursuit',
-  Rapidspin = 'rapidspin',
-  Sweetscent = 'sweetscent',
-  Irontail = 'irontail',
-  Metalclaw = 'metalclaw',
-  Vitalthrow = 'vitalthrow',
-  Morningsun = 'morningsun',
-  Synthesis = 'synthesis',
-  Moonlight = 'moonlight',
-  Hiddenpower = 'hiddenpower',
-  Crosschop = 'crosschop',
-  Twister = 'twister',
-  Raindance = 'raindance',
-  Sunnyday = 'sunnyday',
-  Crunch = 'crunch',
-  Mirrorcoat = 'mirrorcoat',
-  Psychup = 'psychup',
-  Extremespeed = 'extremespeed',
-  Ancientpower = 'ancientpower',
-  Shadowball = 'shadowball',
-  Futuresight = 'futuresight',
-  Rocksmash = 'rocksmash',
-  Whirlpool = 'whirlpool',
-  Beatup = 'beatup',
-  Fakeout = 'fakeout',
-  Uproar = 'uproar',
-  Stockpile = 'stockpile',
-  Spitup = 'spitup',
-  Swallow = 'swallow',
-  Heatwave = 'heatwave',
-  Hail = 'hail',
-  Torment = 'torment',
-  Flatter = 'flatter',
-  Willowisp = 'willowisp',
-  Memento = 'memento',
-  Facade = 'facade',
-  Focuspunch = 'focuspunch',
-  Smellingsalts = 'smellingsalts',
-  Followme = 'followme',
-  Naturepower = 'naturepower',
-  Charge = 'charge',
-  Taunt = 'taunt',
-  Helpinghand = 'helpinghand',
-  Trick = 'trick',
-  Roleplay = 'roleplay',
-  Wish = 'wish',
-  Assist = 'assist',
-  Ingrain = 'ingrain',
-  Superpower = 'superpower',
-  Magiccoat = 'magiccoat',
-  Recycle = 'recycle',
-  Revenge = 'revenge',
-  Brickbreak = 'brickbreak',
-  Yawn = 'yawn',
-  Knockoff = 'knockoff',
-  Endeavor = 'endeavor',
-  Eruption = 'eruption',
-  Skillswap = 'skillswap',
-  Imprison = 'imprison',
-  Refresh = 'refresh',
-  Grudge = 'grudge',
-  Snatch = 'snatch',
-  Secretpower = 'secretpower',
-  Dive = 'dive',
-  Armthrust = 'armthrust',
-  Camouflage = 'camouflage',
-  Tailglow = 'tailglow',
-  Lusterpurge = 'lusterpurge',
-  Mistball = 'mistball',
-  Featherdance = 'featherdance',
-  Teeterdance = 'teeterdance',
-  Blazekick = 'blazekick',
-  Mudsport = 'mudsport',
-  Iceball = 'iceball',
-  Needlearm = 'needlearm',
-  Slackoff = 'slackoff',
-  Hypervoice = 'hypervoice',
-  Poisonfang = 'poisonfang',
-  Crushclaw = 'crushclaw',
-  Blastburn = 'blastburn',
-  Hydrocannon = 'hydrocannon',
-  Meteormash = 'meteormash',
-  Astonish = 'astonish',
-  Weatherball = 'weatherball',
-  Aromatherapy = 'aromatherapy',
-  Faketears = 'faketears',
-  Aircutter = 'aircutter',
-  Overheat = 'overheat',
-  Odorsleuth = 'odorsleuth',
-  Rocktomb = 'rocktomb',
-  Silverwind = 'silverwind',
-  Metalsound = 'metalsound',
-  Grasswhistle = 'grasswhistle',
-  Tickle = 'tickle',
-  Cosmicpower = 'cosmicpower',
-  Waterspout = 'waterspout',
-  Signalbeam = 'signalbeam',
-  Shadowpunch = 'shadowpunch',
-  Extrasensory = 'extrasensory',
-  Skyuppercut = 'skyuppercut',
-  Sandtomb = 'sandtomb',
-  Sheercold = 'sheercold',
-  Muddywater = 'muddywater',
-  Bulletseed = 'bulletseed',
-  Aerialace = 'aerialace',
-  Iciclespear = 'iciclespear',
-  Irondefense = 'irondefense',
-  Block = 'block',
-  Howl = 'howl',
-  Dragonclaw = 'dragonclaw',
-  Frenzyplant = 'frenzyplant',
-  Bulkup = 'bulkup',
-  Bounce = 'bounce',
-  Mudshot = 'mudshot',
-  Poisontail = 'poisontail',
-  Covet = 'covet',
-  Volttackle = 'volttackle',
-  Magicalleaf = 'magicalleaf',
-  Watersport = 'watersport',
-  Calmmind = 'calmmind',
-  Leafblade = 'leafblade',
-  Dragondance = 'dragondance',
-  Rockblast = 'rockblast',
-  Shockwave = 'shockwave',
-  Waterpulse = 'waterpulse',
-  Doomdesire = 'doomdesire',
-  Psychoboost = 'psychoboost',
-  Roost = 'roost',
-  Gravity = 'gravity',
-  Miracleeye = 'miracleeye',
-  Wakeupslap = 'wakeupslap',
-  Hammerarm = 'hammerarm',
-  Gyroball = 'gyroball',
-  Healingwish = 'healingwish',
-  Brine = 'brine',
-  Naturalgift = 'naturalgift',
-  Feint = 'feint',
-  Pluck = 'pluck',
-  Tailwind = 'tailwind',
-  Acupressure = 'acupressure',
-  Metalburst = 'metalburst',
-  Uturn = 'uturn',
-  Closecombat = 'closecombat',
-  Payback = 'payback',
-  Assurance = 'assurance',
-  Embargo = 'embargo',
-  Fling = 'fling',
-  Psychoshift = 'psychoshift',
-  Trumpcard = 'trumpcard',
-  Healblock = 'healblock',
-  Wringout = 'wringout',
-  Powertrick = 'powertrick',
-  Gastroacid = 'gastroacid',
-  Luckychant = 'luckychant',
-  Mefirst = 'mefirst',
-  Copycat = 'copycat',
-  Powerswap = 'powerswap',
-  Guardswap = 'guardswap',
-  Punishment = 'punishment',
-  Lastresort = 'lastresort',
-  Worryseed = 'worryseed',
-  Suckerpunch = 'suckerpunch',
-  Toxicspikes = 'toxicspikes',
-  Heartswap = 'heartswap',
-  Aquaring = 'aquaring',
-  Magnetrise = 'magnetrise',
-  Flareblitz = 'flareblitz',
-  Forcepalm = 'forcepalm',
-  Aurasphere = 'aurasphere',
-  Rockpolish = 'rockpolish',
-  Poisonjab = 'poisonjab',
-  Darkpulse = 'darkpulse',
-  Nightslash = 'nightslash',
-  Aquatail = 'aquatail',
-  Seedbomb = 'seedbomb',
-  Airslash = 'airslash',
-  Xscissor = 'xscissor',
-  Bugbuzz = 'bugbuzz',
-  Dragonpulse = 'dragonpulse',
-  Dragonrush = 'dragonrush',
-  Powergem = 'powergem',
-  Drainpunch = 'drainpunch',
-  Vacuumwave = 'vacuumwave',
-  Focusblast = 'focusblast',
-  Energyball = 'energyball',
-  Bravebird = 'bravebird',
-  Earthpower = 'earthpower',
-  Switcheroo = 'switcheroo',
-  Gigaimpact = 'gigaimpact',
-  Nastyplot = 'nastyplot',
-  Bulletpunch = 'bulletpunch',
-  Avalanche = 'avalanche',
-  Iceshard = 'iceshard',
-  Shadowclaw = 'shadowclaw',
-  Thunderfang = 'thunderfang',
-  Icefang = 'icefang',
-  Firefang = 'firefang',
-  Shadowsneak = 'shadowsneak',
-  Mudbomb = 'mudbomb',
-  Psychocut = 'psychocut',
-  Zenheadbutt = 'zenheadbutt',
-  Mirrorshot = 'mirrorshot',
-  Flashcannon = 'flashcannon',
-  Rockclimb = 'rockclimb',
-  Defog = 'defog',
-  Trickroom = 'trickroom',
-  Dracometeor = 'dracometeor',
-  Discharge = 'discharge',
-  Lavaplume = 'lavaplume',
-  Leafstorm = 'leafstorm',
-  Powerwhip = 'powerwhip',
-  Rockwrecker = 'rockwrecker',
-  Crosspoison = 'crosspoison',
-  Gunkshot = 'gunkshot',
-  Ironhead = 'ironhead',
-  Magnetbomb = 'magnetbomb',
-  Stoneedge = 'stoneedge',
-  Captivate = 'captivate',
-  Stealthrock = 'stealthrock',
-  Grassknot = 'grassknot',
-  Chatter = 'chatter',
-  Judgment = 'judgment',
-  Bugbite = 'bugbite',
-  Chargebeam = 'chargebeam',
-  Woodhammer = 'woodhammer',
-  Aquajet = 'aquajet',
-  Attackorder = 'attackorder',
-  Defendorder = 'defendorder',
-  Healorder = 'healorder',
-  Headsmash = 'headsmash',
-  Doublehit = 'doublehit',
-  Roaroftime = 'roaroftime',
-  Spacialrend = 'spacialrend',
-  Lunardance = 'lunardance',
-  Crushgrip = 'crushgrip',
-  Magmastorm = 'magmastorm',
-  Darkvoid = 'darkvoid',
-  Seedflare = 'seedflare',
-  Ominouswind = 'ominouswind',
-  Shadowforce = 'shadowforce',
-  Honeclaws = 'honeclaws',
-  Wideguard = 'wideguard',
-  Guardsplit = 'guardsplit',
-  Powersplit = 'powersplit',
-  Wonderroom = 'wonderroom',
-  Psyshock = 'psyshock',
-  Venoshock = 'venoshock',
-  Autotomize = 'autotomize',
-  Ragepowder = 'ragepowder',
-  Telekinesis = 'telekinesis',
-  Magicroom = 'magicroom',
-  Smackdown = 'smackdown',
-  Stormthrow = 'stormthrow',
-  Flameburst = 'flameburst',
-  Sludgewave = 'sludgewave',
-  Quiverdance = 'quiverdance',
-  Heavyslam = 'heavyslam',
-  Synchronoise = 'synchronoise',
-  Electroball = 'electroball',
-  Soak = 'soak',
-  Flamecharge = 'flamecharge',
-  Coil = 'coil',
-  Lowsweep = 'lowsweep',
-  Acidspray = 'acidspray',
-  Foulplay = 'foulplay',
-  Simplebeam = 'simplebeam',
-  Entrainment = 'entrainment',
-  Afteryou = 'afteryou',
-  Round = 'round',
-  Echoedvoice = 'echoedvoice',
-  Chipaway = 'chipaway',
-  Clearsmog = 'clearsmog',
-  Storedpower = 'storedpower',
-  Quickguard = 'quickguard',
-  Allyswitch = 'allyswitch',
-  Scald = 'scald',
-  Shellsmash = 'shellsmash',
-  Healpulse = 'healpulse',
-  Hex = 'hex',
-  Skydrop = 'skydrop',
-  Shiftgear = 'shiftgear',
-  Circlethrow = 'circlethrow',
-  Incinerate = 'incinerate',
-  Quash = 'quash',
-  Acrobatics = 'acrobatics',
-  Reflecttype = 'reflecttype',
-  Retaliate = 'retaliate',
-  Finalgambit = 'finalgambit',
-  Bestow = 'bestow',
-  Inferno = 'inferno',
-  Waterpledge = 'waterpledge',
-  Firepledge = 'firepledge',
-  Grasspledge = 'grasspledge',
-  Voltswitch = 'voltswitch',
-  Strugglebug = 'strugglebug',
-  Bulldoze = 'bulldoze',
-  Frostbreath = 'frostbreath',
-  Dragontail = 'dragontail',
-  Workup = 'workup',
-  Electroweb = 'electroweb',
-  Wildcharge = 'wildcharge',
-  Drillrun = 'drillrun',
-  Dualchop = 'dualchop',
-  Heartstamp = 'heartstamp',
-  Hornleech = 'hornleech',
-  Sacredsword = 'sacredsword',
-  Razorshell = 'razorshell',
-  Heatcrash = 'heatcrash',
-  Leaftornado = 'leaftornado',
-  Steamroller = 'steamroller',
-  Cottonguard = 'cottonguard',
-  Nightdaze = 'nightdaze',
-  Psystrike = 'psystrike',
-  Tailslap = 'tailslap',
-  Hurricane = 'hurricane',
-  Headcharge = 'headcharge',
-  Geargrind = 'geargrind',
-  Searingshot = 'searingshot',
-  Technoblast = 'technoblast',
-  Relicsong = 'relicsong',
-  Secretsword = 'secretsword',
-  Glaciate = 'glaciate',
-  Boltstrike = 'boltstrike',
-  Blueflare = 'blueflare',
-  Fierydance = 'fierydance',
-  Freezeshock = 'freezeshock',
-  Iceburn = 'iceburn',
-  Snarl = 'snarl',
-  Iciclecrash = 'iciclecrash',
-  Vcreate = 'vcreate',
-  Fusionflare = 'fusionflare',
-  Fusionbolt = 'fusionbolt',
-  Flyingpress = 'flyingpress',
-  Matblock = 'matblock',
-  Belch = 'belch',
-  Rototiller = 'rototiller',
-  Stickyweb = 'stickyweb',
-  Fellstinger = 'fellstinger',
-  Phantomforce = 'phantomforce',
-  Trickortreat = 'trickortreat',
-  Nobleroar = 'nobleroar',
-  Iondeluge = 'iondeluge',
-  Paraboliccharge = 'paraboliccharge',
-  Forestscurse = 'forestscurse',
-  Petalblizzard = 'petalblizzard',
-  Freezedry = 'freezedry',
-  Disarmingvoice = 'disarmingvoice',
-  Partingshot = 'partingshot',
-  Topsyturvy = 'topsyturvy',
-  Drainingkiss = 'drainingkiss',
-  Craftyshield = 'craftyshield',
-  Flowershield = 'flowershield',
-  Grassyterrain = 'grassyterrain',
-  Mistyterrain = 'mistyterrain',
-  Electrify = 'electrify',
-  Playrough = 'playrough',
-  Fairywind = 'fairywind',
-  Moonblast = 'moonblast',
-  Boomburst = 'boomburst',
-  Fairylock = 'fairylock',
-  Kingsshield = 'kingsshield',
-  Playnice = 'playnice',
-  Confide = 'confide',
-  Diamondstorm = 'diamondstorm',
-  Steameruption = 'steameruption',
-  Hyperspacehole = 'hyperspacehole',
-  Watershuriken = 'watershuriken',
-  Mysticalfire = 'mysticalfire',
-  Spikyshield = 'spikyshield',
-  Aromaticmist = 'aromaticmist',
-  Eerieimpulse = 'eerieimpulse',
-  Venomdrench = 'venomdrench',
-  Powder = 'powder',
-  Geomancy = 'geomancy',
-  Magneticflux = 'magneticflux',
-  Happyhour = 'happyhour',
-  Electricterrain = 'electricterrain',
-  Dazzlinggleam = 'dazzlinggleam',
-  Celebrate = 'celebrate',
-  Babydolleyes = 'babydolleyes',
-  Nuzzle = 'nuzzle',
-  Holdback = 'holdback',
-  Infestation = 'infestation',
-  Poweruppunch = 'poweruppunch',
-  Oblivionwing = 'oblivionwing',
-  Thousandarrows = 'thousandarrows',
-  Holdhands = 'holdhands',
-  Thousandwaves = 'thousandwaves',
-  Landswrath = 'landswrath',
-  Lightofruin = 'lightofruin',
-  Originpulse = 'originpulse',
-  Precipiceblades = 'precipiceblades',
-  Dragonascent = 'dragonascent',
-  Hyperspacefury = 'hyperspacefury',
-  Breakneckblitz = 'breakneckblitz',
-  Alloutpummeling = 'alloutpummeling',
-  Supersonicskystrike = 'supersonicskystrike',
-  Aciddownpour = 'aciddownpour',
-  Tectonicrage = 'tectonicrage',
-  Continentalcrush = 'continentalcrush',
-  Savagespinout = 'savagespinout',
-  Neverendingnightmare = 'neverendingnightmare',
-  Corkscrewcrash = 'corkscrewcrash',
-  Infernooverdrive = 'infernooverdrive',
-  Hydrovortex = 'hydrovortex',
-  Bloomdoom = 'bloomdoom',
-  Gigavolthavoc = 'gigavolthavoc',
-  Shatteredpsyche = 'shatteredpsyche',
-  Subzeroslammer = 'subzeroslammer',
-  Devastatingdrake = 'devastatingdrake',
-  Blackholeeclipse = 'blackholeeclipse',
-  Twinkletackle = 'twinkletackle',
-  Catastropika = 'catastropika',
-  Shoreup = 'shoreup',
-  Firstimpression = 'firstimpression',
-  Banefulbunker = 'banefulbunker',
-  Spiritshackle = 'spiritshackle',
-  Darkestlariat = 'darkestlariat',
-  Sparklingaria = 'sparklingaria',
-  Icehammer = 'icehammer',
-  Floralhealing = 'floralhealing',
-  Highhorsepower = 'highhorsepower',
-  Strengthsap = 'strengthsap',
-  Solarblade = 'solarblade',
-  Leafage = 'leafage',
-  Spotlight = 'spotlight',
-  Toxicthread = 'toxicthread',
-  Laserfocus = 'laserfocus',
-  Gearup = 'gearup',
-  Throatchop = 'throatchop',
-  Pollenpuff = 'pollenpuff',
-  Anchorshot = 'anchorshot',
-  Psychicterrain = 'psychicterrain',
-  Lunge = 'lunge',
-  Firelash = 'firelash',
-  Powertrip = 'powertrip',
-  Burnup = 'burnup',
-  Speedswap = 'speedswap',
-  Smartstrike = 'smartstrike',
-  Purify = 'purify',
-  Revelationdance = 'revelationdance',
-  Coreenforcer = 'coreenforcer',
-  Tropkick = 'tropkick',
-  Instruct = 'instruct',
-  Beakblast = 'beakblast',
-  Clangingscales = 'clangingscales',
-  Dragonhammer = 'dragonhammer',
-  Brutalswing = 'brutalswing',
-  Auroraveil = 'auroraveil',
-  Sinisterarrowraid = 'sinisterarrowraid',
-  Maliciousmoonsault = 'maliciousmoonsault',
-  Oceanicoperetta = 'oceanicoperetta',
-  Guardianofalola = 'guardianofalola',
-  Soulstealing7starstrike = 'soulstealing7starstrike',
-  Stokedsparksurfer = 'stokedsparksurfer',
-  Pulverizingpancake = 'pulverizingpancake',
-  Extremeevoboost = 'extremeevoboost',
-  Genesissupernova = 'genesissupernova',
-  Shelltrap = 'shelltrap',
-  Fleurcannon = 'fleurcannon',
-  Psychicfangs = 'psychicfangs',
-  Stompingtantrum = 'stompingtantrum',
-  Shadowbone = 'shadowbone',
   Accelerock = 'accelerock',
-  Liquidation = 'liquidation',
-  Prismaticlaser = 'prismaticlaser',
-  Spectralthief = 'spectralthief',
-  Sunsteelstrike = 'sunsteelstrike',
-  Moongeistbeam = 'moongeistbeam',
-  Tearfullook = 'tearfullook',
-  Zingzap = 'zingzap',
-  Naturesmadness = 'naturesmadness',
-  Multiattack = 'multiattack',
-  Mindblown = 'mindblown',
-  Plasmafists = 'plasmafists',
-  Photongeyser = 'photongeyser',
-  Lightthatburnsthesky = 'lightthatburnsthesky',
-  Searingsunrazesmash = 'searingsunrazesmash',
-  Menacingmoonrazemaelstrom = 'menacingmoonrazemaelstrom',
-  Letssnuggleforever = 'letssnuggleforever',
-  Splinteredstormshards = 'splinteredstormshards',
-  Clangoroussoulblaze = 'clangoroussoulblaze',
-  Zippyzap = 'zippyzap',
-  Splishysplash = 'splishysplash',
-  Floatyfall = 'floatyfall',
-  Pikapapow = 'pikapapow',
-  Bouncybubble = 'bouncybubble',
-  Buzzybuzz = 'buzzybuzz',
-  Sizzlyslide = 'sizzlyslide',
-  Glitzyglow = 'glitzyglow',
+  Acid = 'acid',
+  Acidarmor = 'acidarmor',
+  Aciddownpour = 'aciddownpour',
+  Acidspray = 'acidspray',
+  Acrobatics = 'acrobatics',
+  Acupressure = 'acupressure',
+  Aerialace = 'aerialace',
+  Aeroblast = 'aeroblast',
+  Afteryou = 'afteryou',
+  Agility = 'agility',
+  Aircutter = 'aircutter',
+  Airslash = 'airslash',
+  Alloutpummeling = 'alloutpummeling',
+  Allyswitch = 'allyswitch',
+  Amnesia = 'amnesia',
+  Anchorshot = 'anchorshot',
+  Ancientpower = 'ancientpower',
+  Appleacid = 'appleacid',
+  Aquajet = 'aquajet',
+  Aquaring = 'aquaring',
+  Aquatail = 'aquatail',
+  Armthrust = 'armthrust',
+  Aromatherapy = 'aromatherapy',
+  Aromaticmist = 'aromaticmist',
+  Assist = 'assist',
+  Assurance = 'assurance',
+  Astonish = 'astonish',
+  Attackorder = 'attackorder',
+  Attract = 'attract',
+  Aurasphere = 'aurasphere',
+  Aurawheel = 'aurawheel',
+  Aurorabeam = 'aurorabeam',
+  Auroraveil = 'auroraveil',
+  Autotomize = 'autotomize',
+  Avalanche = 'avalanche',
+  Babydolleyes = 'babydolleyes',
   Baddybad = 'baddybad',
-  Sappyseed = 'sappyseed',
+  Banefulbunker = 'banefulbunker',
+  Barrage = 'barrage',
+  Barrier = 'barrier',
+  Batonpass = 'batonpass',
+  Beakblast = 'beakblast',
+  Beatup = 'beatup',
+  Belch = 'belch',
+  Behemothbash = 'behemothbash',
+  Behemothblade = 'behemothblade',
+  Bellydrum = 'bellydrum',
+  Bestow = 'bestow',
+  Bide = 'bide',
+  Bind = 'bind',
+  Bite = 'bite',
+  Blackholeeclipse = 'blackholeeclipse',
+  Blastburn = 'blastburn',
+  Blazekick = 'blazekick',
+  Blizzard = 'blizzard',
+  Block = 'block',
+  Bloomdoom = 'bloomdoom',
+  Blueflare = 'blueflare',
+  Bodypress = 'bodypress',
+  Bodyslam = 'bodyslam',
+  Boltbeak = 'boltbeak',
+  Boltstrike = 'boltstrike',
+  Boneclub = 'boneclub',
+  Bonerush = 'bonerush',
+  Bonemerang = 'bonemerang',
+  Boomburst = 'boomburst',
+  Bounce = 'bounce',
+  Bouncybubble = 'bouncybubble',
+  Bravebird = 'bravebird',
+  Branchpoke = 'branchpoke',
+  Breakingswipe = 'breakingswipe',
+  Breakneckblitz = 'breakneckblitz',
+  Brickbreak = 'brickbreak',
+  Brine = 'brine',
+  Brutalswing = 'brutalswing',
+  Bubble = 'bubble',
+  Bubblebeam = 'bubblebeam',
+  Bugbite = 'bugbite',
+  Bugbuzz = 'bugbuzz',
+  Bulkup = 'bulkup',
+  Bulldoze = 'bulldoze',
+  Bulletpunch = 'bulletpunch',
+  Bulletseed = 'bulletseed',
+  Burnup = 'burnup',
+  Buzzybuzz = 'buzzybuzz',
+  Calmmind = 'calmmind',
+  Camouflage = 'camouflage',
+  Captivate = 'captivate',
+  Catastropika = 'catastropika',
+  Celebrate = 'celebrate',
+  Charge = 'charge',
+  Chargebeam = 'chargebeam',
+  Charm = 'charm',
+  Chatter = 'chatter',
+  Chipaway = 'chipaway',
+  Circlethrow = 'circlethrow',
+  Clamp = 'clamp',
+  Clangingscales = 'clangingscales',
+  Clangoroussoul = 'clangoroussoul',
+  Clangoroussoulblaze = 'clangoroussoulblaze',
+  Clearsmog = 'clearsmog',
+  Closecombat = 'closecombat',
+  Coil = 'coil',
+  Cometpunch = 'cometpunch',
+  Confide = 'confide',
+  Confuseray = 'confuseray',
+  Confusion = 'confusion',
+  Constrict = 'constrict',
+  Continentalcrush = 'continentalcrush',
+  Conversion = 'conversion',
+  Conversion2 = 'conversion2',
+  Copycat = 'copycat',
+  Coreenforcer = 'coreenforcer',
+  Corkscrewcrash = 'corkscrewcrash',
+  Cosmicpower = 'cosmicpower',
+  Cottonguard = 'cottonguard',
+  Cottonspore = 'cottonspore',
+  Counter = 'counter',
+  Courtchange = 'courtchange',
+  Covet = 'covet',
+  Crabhammer = 'crabhammer',
+  Craftyshield = 'craftyshield',
+  Crosschop = 'crosschop',
+  Crosspoison = 'crosspoison',
+  Crunch = 'crunch',
+  Crushclaw = 'crushclaw',
+  Crushgrip = 'crushgrip',
+  Curse = 'curse',
+  Cut = 'cut',
+  Darkpulse = 'darkpulse',
+  Darkvoid = 'darkvoid',
+  Darkestlariat = 'darkestlariat',
+  Dazzlinggleam = 'dazzlinggleam',
+  Decorate = 'decorate',
+  Defendorder = 'defendorder',
+  Defensecurl = 'defensecurl',
+  Defog = 'defog',
+  Destinybond = 'destinybond',
+  Detect = 'detect',
+  Devastatingdrake = 'devastatingdrake',
+  Diamondstorm = 'diamondstorm',
+  Dig = 'dig',
+  Disable = 'disable',
+  Disarmingvoice = 'disarmingvoice',
+  Discharge = 'discharge',
+  Dive = 'dive',
+  Dizzypunch = 'dizzypunch',
+  Doomdesire = 'doomdesire',
+  Doublehit = 'doublehit',
+  Doubleironbash = 'doubleironbash',
+  Doublekick = 'doublekick',
+  Doubleslap = 'doubleslap',
+  Doubleteam = 'doubleteam',
+  Doubleedge = 'doubleedge',
+  Dracometeor = 'dracometeor',
+  Dragonascent = 'dragonascent',
+  Dragonbreath = 'dragonbreath',
+  Dragonclaw = 'dragonclaw',
+  Dragondance = 'dragondance',
+  Dragondarts = 'dragondarts',
+  Dragonhammer = 'dragonhammer',
+  Dragonpulse = 'dragonpulse',
+  Dragonrage = 'dragonrage',
+  Dragonrush = 'dragonrush',
+  Dragontail = 'dragontail',
+  Drainpunch = 'drainpunch',
+  Drainingkiss = 'drainingkiss',
+  Dreameater = 'dreameater',
+  Drillpeck = 'drillpeck',
+  Drillrun = 'drillrun',
+  Drumbeating = 'drumbeating',
+  Dualchop = 'dualchop',
+  Dynamicpunch = 'dynamicpunch',
+  Dynamaxcannon = 'dynamaxcannon',
+  Earthpower = 'earthpower',
+  Earthquake = 'earthquake',
+  Echoedvoice = 'echoedvoice',
+  Eerieimpulse = 'eerieimpulse',
+  Eggbomb = 'eggbomb',
+  Electricterrain = 'electricterrain',
+  Electrify = 'electrify',
+  Electroball = 'electroball',
+  Electroweb = 'electroweb',
+  Embargo = 'embargo',
+  Ember = 'ember',
+  Encore = 'encore',
+  Endeavor = 'endeavor',
+  Endure = 'endure',
+  Energyball = 'energyball',
+  Entrainment = 'entrainment',
+  Eruption = 'eruption',
+  Eternabeam = 'eternabeam',
+  Explosion = 'explosion',
+  Extrasensory = 'extrasensory',
+  Extremeevoboost = 'extremeevoboost',
+  Extremespeed = 'extremespeed',
+  Facade = 'facade',
+  Fairylock = 'fairylock',
+  Fairywind = 'fairywind',
+  Fakeout = 'fakeout',
+  Faketears = 'faketears',
+  Falsesurrender = 'falsesurrender',
+  Falseswipe = 'falseswipe',
+  Featherdance = 'featherdance',
+  Feint = 'feint',
+  Feintattack = 'feintattack',
+  Fellstinger = 'fellstinger',
+  Fierydance = 'fierydance',
+  Finalgambit = 'finalgambit',
+  Fireblast = 'fireblast',
+  Firefang = 'firefang',
+  Firelash = 'firelash',
+  Firepledge = 'firepledge',
+  Firepunch = 'firepunch',
+  Firespin = 'firespin',
+  Fishiousrend = 'fishiousrend',
+  Firstimpression = 'firstimpression',
+  Fissure = 'fissure',
+  Flail = 'flail',
+  Flameburst = 'flameburst',
+  Flamecharge = 'flamecharge',
+  Flamewheel = 'flamewheel',
+  Flamethrower = 'flamethrower',
+  Flareblitz = 'flareblitz',
+  Flash = 'flash',
+  Flashcannon = 'flashcannon',
+  Flatter = 'flatter',
+  Fleurcannon = 'fleurcannon',
+  Fling = 'fling',
+  Floatyfall = 'floatyfall',
+  Floralhealing = 'floralhealing',
+  Flowershield = 'flowershield',
+  Fly = 'fly',
+  Flyingpress = 'flyingpress',
+  Focusblast = 'focusblast',
+  Focusenergy = 'focusenergy',
+  Focuspunch = 'focuspunch',
+  Followme = 'followme',
+  Forcepalm = 'forcepalm',
+  Foresight = 'foresight',
+  Forestscurse = 'forestscurse',
+  Foulplay = 'foulplay',
+  Freezeshock = 'freezeshock',
+  Freezedry = 'freezedry',
   Freezyfrost = 'freezyfrost',
+  Frenzyplant = 'frenzyplant',
+  Frostbreath = 'frostbreath',
+  Frustration = 'frustration',
+  Furyattack = 'furyattack',
+  Furycutter = 'furycutter',
+  Furyswipes = 'furyswipes',
+  Fusionbolt = 'fusionbolt',
+  Fusionflare = 'fusionflare',
+  Futuresight = 'futuresight',
+  Gastroacid = 'gastroacid',
+  Geargrind = 'geargrind',
+  Gearup = 'gearup',
+  Genesissupernova = 'genesissupernova',
+  Geomancy = 'geomancy',
+  Gigadrain = 'gigadrain',
+  Gigaimpact = 'gigaimpact',
+  Gigavolthavoc = 'gigavolthavoc',
+  Glaciate = 'glaciate',
+  Glare = 'glare',
+  Glitzyglow = 'glitzyglow',
+  Gmaxbefuddle = 'gmaxbefuddle',
+  Gmaxcentiferno = 'gmaxcentiferno',
+  Gmaxchistrike = 'gmaxchistrike',
+  Gmaxcuddle = 'gmaxcuddle',
+  Gmaxdepletion = 'gmaxdepletion',
+  Gmaxfinale = 'gmaxfinale',
+  Gmaxtartness = 'gmaxtartness',
+  Gmaxvolcalith = 'gmaxvolcalith',
+  Gmaxvoltcrash = 'gmaxvoltcrash',
+  Gmaxwildfire = 'gmaxwildfire',
+  Gmaxwindrage = 'gmaxwindrage',
+  Gmaxfoamburst = 'gmaxfoamburst',
+  Gmaxgoldrush = 'gmaxgoldrush',
+  Gmaxgravitas = 'gmaxgravitas',
+  Gmaxmalodor = 'gmaxmalodor',
+  Gmaxmeltdown = 'gmaxmeltdown',
+  Gmaxstonesurge = 'gmaxstonesurge',
+  Gmaxstunshock = 'gmaxstunshock',
+  Gmaxsweetness = 'gmaxsweetness',
+  Gmaxterror = 'gmaxterror',
+  Gmaxreplenish = 'gmaxreplenish',
+  Gmaxresonance = 'gmaxresonance',
+  Gmaxsandblast = 'gmaxsandblast',
+  Gmaxsmite = 'gmaxsmite',
+  Gmaxsnooze = 'gmaxsnooze',
+  Gmaxsteelsurge = 'gmaxsteelsurge',
+  Grassknot = 'grassknot',
+  Grasspledge = 'grasspledge',
+  Grasswhistle = 'grasswhistle',
+  Grassyterrain = 'grassyterrain',
+  Gravapple = 'gravapple',
+  Gravity = 'gravity',
+  Growl = 'growl',
+  Growth = 'growth',
+  Grudge = 'grudge',
+  Guardsplit = 'guardsplit',
+  Guardswap = 'guardswap',
+  Guardianofalola = 'guardianofalola',
+  Guillotine = 'guillotine',
+  Gunkshot = 'gunkshot',
+  Gust = 'gust',
+  Gyroball = 'gyroball',
+  Hail = 'hail',
+  Hammerarm = 'hammerarm',
+  Happyhour = 'happyhour',
+  Harden = 'harden',
+  Haze = 'haze',
+  Headcharge = 'headcharge',
+  Headsmash = 'headsmash',
+  Headbutt = 'headbutt',
+  Healbell = 'healbell',
+  Healblock = 'healblock',
+  Healorder = 'healorder',
+  Healpulse = 'healpulse',
+  Healingwish = 'healingwish',
+  Heartstamp = 'heartstamp',
+  Heartswap = 'heartswap',
+  Heatcrash = 'heatcrash',
+  Heatwave = 'heatwave',
+  Heavyslam = 'heavyslam',
+  Helpinghand = 'helpinghand',
+  Hex = 'hex',
+  Hiddenpower = 'hiddenpower',
+  Highhorsepower = 'highhorsepower',
+  Highjumpkick = 'highjumpkick',
+  Holdback = 'holdback',
+  Holdhands = 'holdhands',
+  Honeclaws = 'honeclaws',
+  Hornattack = 'hornattack',
+  Horndrill = 'horndrill',
+  Hornleech = 'hornleech',
+  Howl = 'howl',
+  Hurricane = 'hurricane',
+  Hydrocannon = 'hydrocannon',
+  Hydropump = 'hydropump',
+  Hydrovortex = 'hydrovortex',
+  Hyperbeam = 'hyperbeam',
+  Hyperfang = 'hyperfang',
+  Hypervoice = 'hypervoice',
+  Hyperspacefury = 'hyperspacefury',
+  Hyperspacehole = 'hyperspacehole',
+  Hypnosis = 'hypnosis',
+  Iceball = 'iceball',
+  Icebeam = 'icebeam',
+  Iceburn = 'iceburn',
+  Icefang = 'icefang',
+  Icehammer = 'icehammer',
+  Icepunch = 'icepunch',
+  Iceshard = 'iceshard',
+  Iciclecrash = 'iciclecrash',
+  Iciclespear = 'iciclespear',
+  Icywind = 'icywind',
+  Imprison = 'imprison',
+  Incinerate = 'incinerate',
+  Inferno = 'inferno',
+  Infernooverdrive = 'infernooverdrive',
+  Infestation = 'infestation',
+  Ingrain = 'ingrain',
+  Instruct = 'instruct',
+  Iondeluge = 'iondeluge',
+  Irondefense = 'irondefense',
+  Ironhead = 'ironhead',
+  Irontail = 'irontail',
+  Jawlock = 'jawlock',
+  Judgment = 'judgment',
+  Jumpkick = 'jumpkick',
+  Karatechop = 'karatechop',
+  Kinesis = 'kinesis',
+  Kingsshield = 'kingsshield',
+  Knockoff = 'knockoff',
+  Landswrath = 'landswrath',
+  Laserfocus = 'laserfocus',
+  Lastresort = 'lastresort',
+  Lavaplume = 'lavaplume',
+  Leafblade = 'leafblade',
+  Leafstorm = 'leafstorm',
+  Leaftornado = 'leaftornado',
+  Leafage = 'leafage',
+  Leechlife = 'leechlife',
+  Leechseed = 'leechseed',
+  Leer = 'leer',
+  Letssnuggleforever = 'letssnuggleforever',
+  Lick = 'lick',
+  Lightscreen = 'lightscreen',
+  Lightthatburnsthesky = 'lightthatburnsthesky',
+  Lifedew = 'lifedew',
+  Lightofruin = 'lightofruin',
+  Liquidation = 'liquidation',
+  Lockon = 'lockon',
+  Lovelykiss = 'lovelykiss',
+  Lowkick = 'lowkick',
+  Lowsweep = 'lowsweep',
+  Luckychant = 'luckychant',
+  Lunardance = 'lunardance',
+  Lunge = 'lunge',
+  Lusterpurge = 'lusterpurge',
+  Machpunch = 'machpunch',
+  Magiccoat = 'magiccoat',
+  Magicpowder = 'magicpowder',
+  Magicroom = 'magicroom',
+  Magicalleaf = 'magicalleaf',
+  Magikarpsrevenge = 'magikarpsrevenge',
+  Magmastorm = 'magmastorm',
+  Magnetbomb = 'magnetbomb',
+  Magnetrise = 'magnetrise',
+  Magneticflux = 'magneticflux',
+  Magnitude = 'magnitude',
+  Maliciousmoonsault = 'maliciousmoonsault',
+  Matblock = 'matblock',
+  Mefirst = 'mefirst',
+  Maxairstream = 'maxairstream',
+  Maxdarkness = 'maxdarkness',
+  Maxflare = 'maxflare',
+  Maxflutterby = 'maxflutterby',
+  Maxgeyser = 'maxgeyser',
+  Maxguard = 'maxguard',
+  Meanlook = 'meanlook',
+  Maxhailstorm = 'maxhailstorm',
+  Maxknuckle = 'maxknuckle',
+  Maxlightning = 'maxlightning',
+  Maxmindstorm = 'maxmindstorm',
+  Maxooze = 'maxooze',
+  Maxovergrowth = 'maxovergrowth',
+  Maxphantasm = 'maxphantasm',
+  Maxquake = 'maxquake',
+  Maxrockfall = 'maxrockfall',
+  Maxstarfall = 'maxstarfall',
+  Maxsteelspike = 'maxsteelspike',
+  Maxstrike = 'maxstrike',
+  Maxwyrmwind = 'maxwyrmwind',
+  Meditate = 'meditate',
+  Megadrain = 'megadrain',
+  Megakick = 'megakick',
+  Megapunch = 'megapunch',
+  Megahorn = 'megahorn',
+  Memento = 'memento',
+  Menacingmoonrazemaelstrom = 'menacingmoonrazemaelstrom',
+  Metalburst = 'metalburst',
+  Metalclaw = 'metalclaw',
+  Metalsound = 'metalsound',
+  Meteorassault = 'meteorassault',
+  Meteormash = 'meteormash',
+  Metronome = 'metronome',
+  Milkdrink = 'milkdrink',
+  Mimic = 'mimic',
+  Mindblown = 'mindblown',
+  Mindreader = 'mindreader',
+  Minimize = 'minimize',
+  Miracleeye = 'miracleeye',
+  Mirrorcoat = 'mirrorcoat',
+  Mirrormove = 'mirrormove',
+  Mirrorshot = 'mirrorshot',
+  Mist = 'mist',
+  Mistball = 'mistball',
+  Mistyterrain = 'mistyterrain',
+  Moonblast = 'moonblast',
+  Moongeistbeam = 'moongeistbeam',
+  Moonlight = 'moonlight',
+  Morningsun = 'morningsun',
+  Mudbomb = 'mudbomb',
+  Mudshot = 'mudshot',
+  Mudsport = 'mudsport',
+  Mudslap = 'mudslap',
+  Muddywater = 'muddywater',
+  Multiattack = 'multiattack',
+  Mysticalfire = 'mysticalfire',
+  Nastyplot = 'nastyplot',
+  Naturalgift = 'naturalgift',
+  Naturepower = 'naturepower',
+  Naturesmadness = 'naturesmadness',
+  Needlearm = 'needlearm',
+  Neverendingnightmare = 'neverendingnightmare',
+  Nightdaze = 'nightdaze',
+  Nightshade = 'nightshade',
+  Nightslash = 'nightslash',
+  Nightmare = 'nightmare',
+  Nobleroar = 'nobleroar',
+  Noretreat = 'noretreat',
+  Nuzzle = 'nuzzle',
+  Oblivionwing = 'oblivionwing',
+  Obstruct = 'obstruct',
+  Oceanicoperetta = 'oceanicoperetta',
+  Octazooka = 'octazooka',
+  Octolock = 'octolock',
+  Odorsleuth = 'odorsleuth',
+  Ominouswind = 'ominouswind',
+  Originpulse = 'originpulse',
+  Outrage = 'outrage',
+  Overdrive = 'overdrive',
+  Overheat = 'overheat',
+  Painsplit = 'painsplit',
+  Paleowave = 'paleowave',
+  Paraboliccharge = 'paraboliccharge',
+  Partingshot = 'partingshot',
+  Payday = 'payday',
+  Payback = 'payback',
+  Peck = 'peck',
+  Perishsong = 'perishsong',
+  Petalblizzard = 'petalblizzard',
+  Petaldance = 'petaldance',
+  Phantomforce = 'phantomforce',
+  Photongeyser = 'photongeyser',
+  Pikapapow = 'pikapapow',
+  Pinmissile = 'pinmissile',
+  Plasmafists = 'plasmafists',
+  Playnice = 'playnice',
+  Playrough = 'playrough',
+  Pluck = 'pluck',
+  Poisonfang = 'poisonfang',
+  Poisongas = 'poisongas',
+  Poisonjab = 'poisonjab',
+  Poisonpowder = 'poisonpowder',
+  Poisonsting = 'poisonsting',
+  Poisontail = 'poisontail',
+  Pollenpuff = 'pollenpuff',
+  Pound = 'pound',
+  Powder = 'powder',
+  Powdersnow = 'powdersnow',
+  Powergem = 'powergem',
+  Powersplit = 'powersplit',
+  Powerswap = 'powerswap',
+  Powertrick = 'powertrick',
+  Powertrip = 'powertrip',
+  Powerwhip = 'powerwhip',
+  Poweruppunch = 'poweruppunch',
+  Precipiceblades = 'precipiceblades',
+  Present = 'present',
+  Prismaticlaser = 'prismaticlaser',
+  Protect = 'protect',
+  Psybeam = 'psybeam',
+  Psychup = 'psychup',
+  Psychic = 'psychic',
+  Psychicfangs = 'psychicfangs',
+  Psychicterrain = 'psychicterrain',
+  Psychoboost = 'psychoboost',
+  Psychocut = 'psychocut',
+  Psychoshift = 'psychoshift',
+  Psyshock = 'psyshock',
+  Psystrike = 'psystrike',
+  Psywave = 'psywave',
+  Pulverizingpancake = 'pulverizingpancake',
+  Punishment = 'punishment',
+  Purify = 'purify',
+  Pursuit = 'pursuit',
+  Pyroball = 'pyroball',
+  Quash = 'quash',
+  Quickattack = 'quickattack',
+  Quickguard = 'quickguard',
+  Quiverdance = 'quiverdance',
+  Rage = 'rage',
+  Ragepowder = 'ragepowder',
+  Raindance = 'raindance',
+  Rapidspin = 'rapidspin',
+  Razorleaf = 'razorleaf',
+  Razorshell = 'razorshell',
+  Razorwind = 'razorwind',
+  Recover = 'recover',
+  Recycle = 'recycle',
+  Reflect = 'reflect',
+  Reflecttype = 'reflecttype',
+  Refresh = 'refresh',
+  Relicsong = 'relicsong',
+  Rest = 'rest',
+  Retaliate = 'retaliate',
+  Return = 'return',
+  Revelationdance = 'revelationdance',
+  Revenge = 'revenge',
+  Reversal = 'reversal',
+  Roar = 'roar',
+  Roaroftime = 'roaroftime',
+  Rockblast = 'rockblast',
+  Rockclimb = 'rockclimb',
+  Rockpolish = 'rockpolish',
+  Rockslide = 'rockslide',
+  Rocksmash = 'rocksmash',
+  Rockthrow = 'rockthrow',
+  Rocktomb = 'rocktomb',
+  Rockwrecker = 'rockwrecker',
+  Roleplay = 'roleplay',
+  Rollingkick = 'rollingkick',
+  Rollout = 'rollout',
+  Roost = 'roost',
+  Rototiller = 'rototiller',
+  Round = 'round',
+  Sacredfire = 'sacredfire',
+  Sacredsword = 'sacredsword',
+  Safeguard = 'safeguard',
+  Sandattack = 'sandattack',
+  Sandtomb = 'sandtomb',
+  Sandstorm = 'sandstorm',
+  Sappyseed = 'sappyseed',
+  Savagespinout = 'savagespinout',
+  Scald = 'scald',
+  Scaryface = 'scaryface',
+  Scratch = 'scratch',
+  Screech = 'screech',
+  Searingshot = 'searingshot',
+  Searingsunrazesmash = 'searingsunrazesmash',
+  Secretpower = 'secretpower',
+  Secretsword = 'secretsword',
+  Seedbomb = 'seedbomb',
+  Seedflare = 'seedflare',
+  Seismictoss = 'seismictoss',
+  Selfdestruct = 'selfdestruct',
+  Shadowball = 'shadowball',
+  Shadowbone = 'shadowbone',
+  Shadowclaw = 'shadowclaw',
+  Shadowforce = 'shadowforce',
+  Shadowpunch = 'shadowpunch',
+  Shadowsneak = 'shadowsneak',
+  Shadowstrike = 'shadowstrike',
+  Sharpen = 'sharpen',
+  Shatteredpsyche = 'shatteredpsyche',
+  Sheercold = 'sheercold',
+  Shellsmash = 'shellsmash',
+  Shelltrap = 'shelltrap',
+  Shiftgear = 'shiftgear',
+  Shockwave = 'shockwave',
+  Shoreup = 'shoreup',
+  Signalbeam = 'signalbeam',
+  Silverwind = 'silverwind',
+  Simplebeam = 'simplebeam',
+  Sing = 'sing',
+  Sinisterarrowraid = 'sinisterarrowraid',
+  Sizzlyslide = 'sizzlyslide',
+  Sketch = 'sketch',
+  Skillswap = 'skillswap',
+  Skullbash = 'skullbash',
+  Skyattack = 'skyattack',
+  Skydrop = 'skydrop',
+  Skyuppercut = 'skyuppercut',
+  Slackoff = 'slackoff',
+  Slam = 'slam',
+  Slash = 'slash',
+  Sleeppowder = 'sleeppowder',
+  Sleeptalk = 'sleeptalk',
+  Sludge = 'sludge',
+  Sludgebomb = 'sludgebomb',
+  Sludgewave = 'sludgewave',
+  Smackdown = 'smackdown',
+  Smartstrike = 'smartstrike',
+  Smellingsalts = 'smellingsalts',
+  Smog = 'smog',
+  Smokescreen = 'smokescreen',
+  Snaptrap = 'snaptrap',
+  Snarl = 'snarl',
+  Snatch = 'snatch',
+  Snipeshot = 'snipeshot',
+  Snore = 'snore',
+  Soak = 'soak',
+  Softboiled = 'softboiled',
+  Solarbeam = 'solarbeam',
+  Solarblade = 'solarblade',
+  Sonicboom = 'sonicboom',
+  Soulstealing7starstrike = 'soulstealing7starstrike',
+  Spacialrend = 'spacialrend',
+  Spark = 'spark',
+  Sparklingaria = 'sparklingaria',
   Sparklyswirl = 'sparklyswirl',
+  Spectralthief = 'spectralthief',
+  Speedswap = 'speedswap',
+  Spiderweb = 'spiderweb',
+  Spikecannon = 'spikecannon',
+  Spikes = 'spikes',
+  Spikyshield = 'spikyshield',
+  Spiritbreak = 'spiritbreak',
+  Spiritshackle = 'spiritshackle',
+  Spitup = 'spitup',
+  Spite = 'spite',
+  Splash = 'splash',
+  Splinteredstormshards = 'splinteredstormshards',
+  Splishysplash = 'splishysplash',
+  Spore = 'spore',
+  Spotlight = 'spotlight',
+  Stealthrock = 'stealthrock',
+  Steameruption = 'steameruption',
+  Steamroller = 'steamroller',
+  Steelbeam = 'steelbeam',
+  Steelwing = 'steelwing',
+  Stickyweb = 'stickyweb',
+  Stockpile = 'stockpile',
+  Stokedsparksurfer = 'stokedsparksurfer',
+  Stomp = 'stomp',
+  Stompingtantrum = 'stompingtantrum',
+  Stoneedge = 'stoneedge',
+  Storedpower = 'storedpower',
+  Stormthrow = 'stormthrow',
+  Strangesteam = 'strangesteam',
+  Strength = 'strength',
+  Strengthsap = 'strengthsap',
+  Stringshot = 'stringshot',
+  Struggle = 'struggle',
+  Strugglebug = 'strugglebug',
+  Stuffcheeks = 'stuffcheeks',
+  Stunspore = 'stunspore',
+  Submission = 'submission',
+  Substitute = 'substitute',
+  Subzeroslammer = 'subzeroslammer',
+  Suckerpunch = 'suckerpunch',
+  Sunnyday = 'sunnyday',
+  Sunsteelstrike = 'sunsteelstrike',
+  Superfang = 'superfang',
+  Superpower = 'superpower',
+  Supersonic = 'supersonic',
+  Supersonicskystrike = 'supersonicskystrike',
+  Surf = 'surf',
+  Swagger = 'swagger',
+  Swallow = 'swallow',
+  Sweetkiss = 'sweetkiss',
+  Sweetscent = 'sweetscent',
+  Swift = 'swift',
+  Switcheroo = 'switcheroo',
+  Swordsdance = 'swordsdance',
+  Synchronoise = 'synchronoise',
+  Synthesis = 'synthesis',
+  Tackle = 'tackle',
+  Tailglow = 'tailglow',
+  Tailslap = 'tailslap',
+  Tailwhip = 'tailwhip',
+  Tailwind = 'tailwind',
+  Takedown = 'takedown',
+  Tarshot = 'tarshot',
+  Taunt = 'taunt',
+  Tearfullook = 'tearfullook',
+  Teatime = 'teatime',
+  Technoblast = 'technoblast',
+  Tectonicrage = 'tectonicrage',
+  Teeterdance = 'teeterdance',
+  Telekinesis = 'telekinesis',
+  Teleport = 'teleport',
+  Thief = 'thief',
+  Thousandarrows = 'thousandarrows',
+  Thousandwaves = 'thousandwaves',
+  Thrash = 'thrash',
+  Throatchop = 'throatchop',
+  Thunder = 'thunder',
+  Thunderfang = 'thunderfang',
+  Thunderpunch = 'thunderpunch',
+  Thundershock = 'thundershock',
+  Thunderwave = 'thunderwave',
+  Thunderbolt = 'thunderbolt',
+  Tickle = 'tickle',
+  Topsyturvy = 'topsyturvy',
+  Torment = 'torment',
+  Toxic = 'toxic',
+  Toxicspikes = 'toxicspikes',
+  Toxicthread = 'toxicthread',
+  Transform = 'transform',
+  Triattack = 'triattack',
+  Trick = 'trick',
+  Trickroom = 'trickroom',
+  Trickortreat = 'trickortreat',
+  Triplekick = 'triplekick',
+  Tropkick = 'tropkick',
+  Trumpcard = 'trumpcard',
+  Twineedle = 'twineedle',
+  Twinkletackle = 'twinkletackle',
+  Twister = 'twister',
+  Uturn = 'uturn',
+  Uproar = 'uproar',
+  Vcreate = 'vcreate',
+  Vacuumwave = 'vacuumwave',
   Veeveevolley = 'veeveevolley',
-  Doubleironbash = 'doubleironbash'
+  Venomdrench = 'venomdrench',
+  Venoshock = 'venoshock',
+  Vinewhip = 'vinewhip',
+  Visegrip = 'visegrip',
+  Vitalthrow = 'vitalthrow',
+  Voltswitch = 'voltswitch',
+  Volttackle = 'volttackle',
+  Wakeupslap = 'wakeupslap',
+  Watergun = 'watergun',
+  Waterpledge = 'waterpledge',
+  Waterpulse = 'waterpulse',
+  Watershuriken = 'watershuriken',
+  Watersport = 'watersport',
+  Waterspout = 'waterspout',
+  Waterfall = 'waterfall',
+  Weatherball = 'weatherball',
+  Whirlpool = 'whirlpool',
+  Whirlwind = 'whirlwind',
+  Wideguard = 'wideguard',
+  Wildcharge = 'wildcharge',
+  Willowisp = 'willowisp',
+  Wingattack = 'wingattack',
+  Wish = 'wish',
+  Withdraw = 'withdraw',
+  Wonderroom = 'wonderroom',
+  Woodhammer = 'woodhammer',
+  Workup = 'workup',
+  Worryseed = 'worryseed',
+  Wrap = 'wrap',
+  Wringout = 'wringout',
+  Xscissor = 'xscissor',
+  Yawn = 'yawn',
+  Zapcannon = 'zapcannon',
+  Zenheadbutt = 'zenheadbutt',
+  Zingzap = 'zingzap',
+  Zippyzap = 'zippyzap'
 }
 
-export enum Pokemon {
+/** The supported Pokémon */
+export const enum Pokemon {
   Bulbasaur = 'bulbasaur',
   Ivysaur = 'ivysaur',
   Venusaur = 'venusaur',
@@ -1636,6 +1899,7 @@ export enum Pokemon {
   Rapidash = 'rapidash',
   Rapidashgalar = 'rapidashgalar',
   Slowpoke = 'slowpoke',
+  Slowpokegalar = 'slowpokegalar',
   Slowbro = 'slowbro',
   Slowbromega = 'slowbromega',
   Magnemite = 'magnemite',
@@ -1677,6 +1941,7 @@ export enum Pokemon {
   Lickitung = 'lickitung',
   Koffing = 'koffing',
   Weezing = 'weezing',
+  Weezinggalar = 'weezinggalar',
   Rhyhorn = 'rhyhorn',
   Rhydon = 'rhydon',
   Chansey = 'chansey',
@@ -2041,7 +2306,9 @@ export enum Pokemon {
   Cherrim = 'cherrim',
   Cherrimsunshine = 'cherrimsunshine',
   Shellos = 'shellos',
+  Shelloseast = 'shelloseast',
   Gastrodon = 'gastrodon',
+  Gastrodoneast = 'gastrodoneast',
   Ambipom = 'ambipom',
   Drifloon = 'drifloon',
   Drifblim = 'drifblim',
@@ -2208,7 +2475,7 @@ export enum Pokemon {
   Darmanitan = 'darmanitan',
   Darmanitangalar = 'darmanitangalar',
   Darmanitanzen = 'darmanitanzen',
-  Darmanitanzengalar = 'darmanitanzengalar',
+  Darmanitangalarzen = 'darmanitangalarzen',
   Maractus = 'maractus',
   Dwebble = 'dwebble',
   Crustle = 'crustle',
@@ -2248,7 +2515,9 @@ export enum Pokemon {
   Foongus = 'foongus',
   Amoonguss = 'amoonguss',
   Frillish = 'frillish',
+  Frillishfemale = 'frillishfemale',
   Jellicent = 'jellicent',
+  Jellicentfemale = 'jellicentfemale',
   Alomomola = 'alomomola',
   Joltik = 'joltik',
   Galvantula = 'galvantula',
@@ -2274,6 +2543,7 @@ export enum Pokemon {
   Shelmet = 'shelmet',
   Accelgor = 'accelgor',
   Stunfisk = 'stunfisk',
+  Stunfiskgalar = 'stunfiskgalar',
   Mienfoo = 'mienfoo',
   Mienshao = 'mienshao',
   Druddigon = 'druddigon',
@@ -2353,6 +2623,7 @@ export enum Pokemon {
   Honedge = 'honedge',
   Doublade = 'doublade',
   Aegislash = 'aegislash',
+  Aegislashblade = 'aegislashblade',
   Spritzee = 'spritzee',
   Aromatisse = 'aromatisse',
   Swirlix = 'swirlix',
@@ -2575,26 +2846,32 @@ export enum Pokemon {
   Sandaconda = 'sandaconda',
   Sandacondagmax = 'sandacondagmax',
   Cramorant = 'cramorant',
+  Cramorantgulping = 'cramorantgulping',
+  Cramorantgorging = 'cramorantgorging',
   Arrokuda = 'arrokuda',
   Barraskewda = 'barraskewda',
   Toxel = 'toxel',
   Toxtricity = 'toxtricity',
   Toxtricitylowkey = 'toxtricitylowkey',
   Toxtricitygmax = 'toxtricitygmax',
+  Toxtricitylowkeygmax = 'toxtricitylowkeygmax',
   Sizzlipede = 'sizzlipede',
   Centiskorch = 'centiskorch',
+  Centiskorchgmax = 'centiskorchgmax',
   Clobbopus = 'clobbopus',
   Grapploct = 'grapploct',
   Sinistea = 'sinistea',
-  Sinisteachipped = 'sinisteachipped',
+  Sinisteaantique = 'sinisteaantique',
   Polteageist = 'polteageist',
-  Polteageistchipped = 'polteageistchipped',
+  Polteageistantique = 'polteageistantique',
   Hatenna = 'hatenna',
   Hattrem = 'hattrem',
   Hatterene = 'hatterene',
+  Hatterenegmax = 'hatterenegmax',
   Impidimp = 'impidimp',
   Morgrem = 'morgrem',
   Grimmsnarl = 'grimmsnarl',
+  Grimmsnarlgmax = 'grimmsnarlgmax',
   Obstagoon = 'obstagoon',
   Perrserker = 'perrserker',
   Cursola = 'cursola',
@@ -2603,6 +2880,7 @@ export enum Pokemon {
   Runerigus = 'runerigus',
   Milcery = 'milcery',
   Alcremie = 'alcremie',
+  Alcremiegmax = 'alcremiegmax',
   Falinks = 'falinks',
   Pincurchin = 'pincurchin',
   Snom = 'snom',
@@ -2610,17 +2888,19 @@ export enum Pokemon {
   Stonjourner = 'stonjourner',
   Eiscue = 'eiscue',
   Eiscuenoice = 'eiscuenoice',
+  Indeedee = 'indeedee',
   Indeedeef = 'indeedeef',
-  Indeedeem = 'indeedeem',
   Morpeko = 'morpeko',
   Morpekohangry = 'morpekohangry',
   Cufant = 'cufant',
   Copperajah = 'copperajah',
+  Copperajahgmax = 'copperajahgmax',
   Dracozolt = 'dracozolt',
   Arctozolt = 'arctozolt',
   Dracovish = 'dracovish',
   Arctovish = 'arctovish',
   Duraludon = 'duraludon',
+  Duraludongmax = 'duraludongmax',
   Dreepy = 'dreepy',
   Drakloak = 'drakloak',
   Dragapult = 'dragapult',
@@ -2704,33 +2984,271 @@ export enum Pokemon {
   Pokestarufopropu2 = 'pokestarufopropu2'
 }
 
+export interface Query {
+  readonly __typename?: 'Query';
+  /**
+   * Gets details on a single ability based on a fuzzy search.You can supply skip
+   * and take to paginate the fuzzy search and reverse to show the least likely
+   * matched on top.Reversal is applied before pagination!
+   */
+  readonly getAbilityDetailsByFuzzy: AbilityEntry;
+  /** Gets details on a single ability based on an exact name match. */
+  readonly getAbilityDetailsByName: AbilityEntry;
+  /**
+   * Gets raw entries of multiple ability based on a fuzzy search.You can supply
+   * skip and take to limit the amount of flavour texts to return and reverse to
+   * show latest games on top.Reversal is applied before pagination!
+   */
+  readonly getAbilityByFuzzy: ReadonlyArray<Scalars['JSONObject']>;
+  /** Gets the raw entry of a single ability by name. */
+  readonly getAbilityByName: Scalars['JSONObject'];
+  /**
+   * Gets details on a single Pokémon based on species name.You can supply skip and
+   * take to limit the amount of flavour texts to return and reverse to show latest
+   * games on top.Reversal is applied before pagination!
+   */
+  readonly getPokemonDetails: DexDetails;
+  /**
+   * Gets details on a single Pokémon based on species name.You can supply skip and
+   * take to limit the amount of flavour texts to return and reverse to show latest
+   * games on top.Reversal is applied before pagination!
+   */
+  readonly getPokemonDetailsByName: DexDetails;
+  /**
+   * Gets details on a single Pokémon based on a fuzzy search.You can supply skip
+   * and take to limit the amount of flavour texts to return and reverse to show
+   * latest games on top.Reversal is applied before pagination!
+   */
+  readonly getPokemonDetailsByFuzzy: DexDetails;
+  /**
+   * Gets dex entries for Pokémon based on a fuzzy searchYou can supply a skip and
+   * take to paginate the results and reverse to show the results least to most
+   * well matchesReversal is applied before pagination!
+   */
+  readonly getDexEntries: ReadonlyArray<DexEntry>;
+  /** Gets the dex entry for a Pokémon based on their species name */
+  readonly getDexEntryBySpeciesName: Scalars['JSONObject'];
+  /** Gets the dex entry for a Pokémon based on their dex number */
+  readonly getDexEntryByDexNumber: Scalars['JSONObject'];
+  /**
+   * Gets details on a single item based on a fuzzy search.You can supply skip and
+   * take to paginate the fuzzy search and reverse to show teh least likely results
+   * on topReversal is applied before paginations!
+   */
+  readonly getItemDetailsByFuzzy: ItemEntry;
+  /** Gets details on a single item based on an exact name match. */
+  readonly getItemDetailsByName: ItemEntry;
+  /**
+   * Gets raw entries of multiple items based on a fuzzy search.You can supply skip
+   * and take to limit the amount of flavour texts to return and reverse to show
+   * latest games on top.Reversal is applied before pagination!
+   */
+  readonly getItemByFuzzy: ReadonlyArray<Scalars['JSONObject']>;
+  /** Gets the raw entry of a single item based on name. */
+  readonly getItemByName: Scalars['JSONObject'];
+  /**
+   * Gets the learnsets for a given Pokémon and move.Multiple moves are possible by
+   * putting them in an array: [move1, move2].You can also apply a generation
+   * filter (only results for the given generation will be returned) with the
+   * generation argument
+   */
+  readonly getPokemonLearnset: LearnsetEntry;
+  /**
+   * Gets the learnset for a given Pokémon and move.A fuzzy search is performed to
+   * find a matching Pokémon and moveMultiple moves are possible by putting them in
+   * an array: [move1, move2].You can also apply a generation filter (only results
+   * for the given generation will be returned) with the generation argument
+   */
+  readonly getPokemonLearnsetByFuzzy: LearnsetEntry;
+  /**
+   * Gets details on a single move based on a fuzzy search.You can supply skip and
+   * take to paginate the fuzzy search and reverse to show teh least likely results
+   * on topReversal is applied before paginations!
+   */
+  readonly getMoveDetailsByFuzzy: MoveEntry;
+  /** Gets details on a single move based on an exact name match. */
+  readonly getMoveDetailsByName: MoveEntry;
+  /**
+   * Gets raw entries of multiple moves based on a fuzzy search.You can supply skip
+   * and take to limit the amount of flavour texts to return and reverse to show
+   * latest games on top.Reversal is applied before pagination!
+   */
+  readonly getMoveByFuzzy: ReadonlyArray<Scalars['JSONObject']>;
+  /** Gets the raw entry of a single move based on name. */
+  readonly getMoveByName: Scalars['JSONObject'];
+  /** Gets the type matchup data for the given type or types */
+  readonly getTypeMatchup: TypeMatchups;
+  /** Gets the raw type matchup data for any one given type */
+  readonly getTypeByName: Scalars['JSONObject'];
+}
+
+export interface QueryGetAbilityDetailsByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  ability: Scalars['String'];
+}
+
+export interface QueryGetAbilityDetailsByNameArgs {
+  ability: Abilities;
+}
+
+export interface QueryGetAbilityByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  ability: Scalars['String'];
+}
+
+export interface QueryGetAbilityByNameArgs {
+  ability: Abilities;
+}
+
+export interface QueryGetPokemonDetailsArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  pokemon: Pokemon;
+}
+
+export interface QueryGetPokemonDetailsByNameArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  pokemon: Pokemon;
+}
+
+export interface QueryGetPokemonDetailsByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  pokemon: Scalars['String'];
+}
+
+export interface QueryGetDexEntriesArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  pokemon: Scalars['String'];
+}
+
+export interface QueryGetDexEntryBySpeciesNameArgs {
+  pokemon: Pokemon;
+}
+
+export interface QueryGetDexEntryByDexNumberArgs {
+  num: Scalars['Float'];
+}
+
+export interface QueryGetItemDetailsByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  item: Scalars['String'];
+}
+
+export interface QueryGetItemDetailsByNameArgs {
+  item: Items;
+}
+
+export interface QueryGetItemByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  item: Scalars['String'];
+}
+
+export interface QueryGetItemByNameArgs {
+  item: Items;
+}
+
+export interface QueryGetPokemonLearnsetArgs {
+  pokemon: Pokemon;
+  moves: ReadonlyArray<Moves>;
+  generation?: Maybe<Scalars['Int']>;
+}
+
+export interface QueryGetPokemonLearnsetByFuzzyArgs {
+  pokemon: Scalars['String'];
+  moves: ReadonlyArray<Scalars['String']>;
+  generation?: Maybe<Scalars['Int']>;
+}
+
+export interface QueryGetMoveDetailsByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  move: Scalars['String'];
+}
+
+export interface QueryGetMoveDetailsByNameArgs {
+  move: Moves;
+}
+
+export interface QueryGetMoveByFuzzyArgs {
+  skip?: Maybe<Scalars['Int']>;
+  take?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  move: Scalars['String'];
+}
+
+export interface QueryGetMoveByNameArgs {
+  move: Moves;
+}
+
+export interface QueryGetTypeMatchupArgs {
+  types: ReadonlyArray<Types>;
+}
+
+export interface QueryGetTypeByNameArgs {
+  type: Types;
+}
+
+/** A Pokémon's stats */
 export interface StatsEntry {
-  __typename?: 'StatsEntry';
-  hp: Scalars['Int'];
-  attack: Scalars['Int'];
-  defense: Scalars['Int'];
-  specialattack: Scalars['Int'];
-  specialdefense: Scalars['Int'];
-  speed: Scalars['Int'];
+  readonly __typename?: 'StatsEntry';
+  /** The base HP stat of a pokemon */
+  readonly hp: Scalars['Int'];
+  /** The base attack stat of a Pokémon */
+  readonly attack: Scalars['Int'];
+  /** The base defense stat of a Pokémon */
+  readonly defense: Scalars['Int'];
+  /** The base special attack stat of a Pokémon */
+  readonly specialattack: Scalars['Int'];
+  /** The base special defense stat of a Pokémon */
+  readonly specialdefense: Scalars['Int'];
+  /** The base speed stat of a Pokémon */
+  readonly speed: Scalars['Int'];
 }
 
+/** A type matchup entry */
 export interface TypeEntry {
-  __typename?: 'TypeEntry';
-  doubleEffectiveTypes: Array<Scalars['String']>;
-  effectiveTypes: Array<Scalars['String']>;
-  normalTypes: Array<Scalars['String']>;
-  resistedTypes: Array<Scalars['String']>;
-  doubleResistedTypes: Array<Scalars['String']>;
-  effectlessTypes: Array<Scalars['String']>;
+  readonly __typename?: 'TypeEntry';
+  /** The types with 4x effectiveness */
+  readonly doubleEffectiveTypes: ReadonlyArray<Scalars['String']>;
+  /** The types with 2x effectiveness */
+  readonly effectiveTypes: ReadonlyArray<Scalars['String']>;
+  /** The types with 1x effectiveness */
+  readonly normalTypes: ReadonlyArray<Scalars['String']>;
+  /** The types with 0.5x effectiveness */
+  readonly resistedTypes: ReadonlyArray<Scalars['String']>;
+  /** The types with 0.25x effectiveness */
+  readonly doubleResistedTypes: ReadonlyArray<Scalars['String']>;
+  /** The types with 0x effectiveness */
+  readonly effectlessTypes: ReadonlyArray<Scalars['String']>;
 }
 
+/** The type matchups for any one or two given types */
 export interface TypeMatchups {
-  __typename?: 'TypeMatchups';
-  attacking: TypeEntry;
-  defending: TypeEntry;
+  readonly __typename?: 'TypeMatchups';
+  /** The type matchups when attacking */
+  readonly attacking: TypeEntry;
+  /** The type matchups when defending */
+  readonly defending: TypeEntry;
 }
 
-export enum Types {
+/** The types in Pokémon */
+export const enum Types {
   Bug = 'bug',
   Dark = 'dark',
   Dragon = 'dragon',
@@ -2751,31 +3269,513 @@ export enum Types {
   Water = 'water'
 }
 
-export interface Query {
-  __typename?: 'Query';
-  getAbilityDetailsByFuzzy: AbilityEntry;
-  getAbilityDetailsByName: AbilityEntry;
-  getAbilityByFuzzy: Array<Scalars['JSONObject']>;
-  getAbilityByName: Scalars['JSONObject'];
-  getPokemonDetails: DexDetails;
-  getPokemonDetailsByName: DexDetails;
-  getPokemonDetailsByFuzzy: DexDetails;
-  getDexEntries: Array<DexEntry>;
-  getDexEntryBySpeciesName: Scalars['JSONObject'];
-  getDexEntryByDexNumber: Scalars['JSONObject'];
-  getItemDetailsByFuzzy: ItemEntry;
-  getItemDetailsByName: ItemEntry;
-  getItemByFuzzy: Array<Scalars['JSONObject']>;
-  getItemByName: Scalars['JSONObject'];
-  getPokemonLearnset: LearnsetEntry;
-  getPokemonLearnsetByFuzzy: LearnsetEntry;
-  getMoveDetailsByFuzzy: MoveEntry;
-  getMoveDetailsByName: MoveEntry;
-  getMoveByFuzzy: Array<Scalars['JSONObject']>;
-  getMoveByName: Scalars['JSONObject'];
-  getTypeMatchup: TypeMatchups;
-  getTypeByName: Scalars['JSONObject'];
+export type ResolverTypeWrapper<T> = Promise<T> | T;
+
+export interface StitchingResolver<TResult, TParent, TContext, TArgs> {
+  fragment: string;
+  resolve: ResolverFn<TResult, TParent, TContext, TArgs>;
 }
+
+export type Resolver<TResult, TParent = {}, TContext = {}, TArgs = {}> =
+  | ResolverFn<TResult, TParent, TContext, TArgs>
+  | StitchingResolver<TResult, TParent, TContext, TArgs>;
+
+export type ResolverFn<TResult, TParent, TContext, TArgs> = (
+  parent: TParent,
+  args: TArgs,
+  context: TContext,
+  info: GraphQLResolveInfo
+) => Promise<TResult> | TResult;
+
+export type SubscriptionSubscribeFn<TResult, TParent, TContext, TArgs> = (
+  parent: TParent,
+  args: TArgs,
+  context: TContext,
+  info: GraphQLResolveInfo
+) => AsyncIterator<TResult> | Promise<AsyncIterator<TResult>>;
+
+export type SubscriptionResolveFn<TResult, TParent, TContext, TArgs> = (
+  parent: TParent,
+  args: TArgs,
+  context: TContext,
+  info: GraphQLResolveInfo
+) => TResult | Promise<TResult>;
+
+export interface SubscriptionSubscriberObject<TResult, TKey extends string, TParent, TContext, TArgs> {
+  subscribe: SubscriptionSubscribeFn<{ [key in TKey]: TResult }, TParent, TContext, TArgs>;
+  resolve?: SubscriptionResolveFn<TResult, { [key in TKey]: TResult }, TContext, TArgs>;
+}
+
+export interface SubscriptionResolverObject<TResult, TParent, TContext, TArgs> {
+  subscribe: SubscriptionSubscribeFn<any, TParent, TContext, TArgs>;
+  resolve: SubscriptionResolveFn<TResult, any, TContext, TArgs>;
+}
+
+export type SubscriptionObject<TResult, TKey extends string, TParent, TContext, TArgs> =
+  | SubscriptionSubscriberObject<TResult, TKey, TParent, TContext, TArgs>
+  | SubscriptionResolverObject<TResult, TParent, TContext, TArgs>;
+
+export type SubscriptionResolver<TResult, TKey extends string, TParent = {}, TContext = {}, TArgs = {}> =
+  | ((...args: any[]) => SubscriptionObject<TResult, TKey, TParent, TContext, TArgs>)
+  | SubscriptionObject<TResult, TKey, TParent, TContext, TArgs>;
+
+export type TypeResolveFn<TTypes, TParent = {}, TContext = {}> = (
+  parent: TParent,
+  context: TContext,
+  info: GraphQLResolveInfo
+) => Maybe<TTypes> | Promise<Maybe<TTypes>>;
+
+export type isTypeOfResolverFn<T = {}> = (obj: T, info: GraphQLResolveInfo) => boolean | Promise<boolean>;
+
+export type NextResolverFn<T> = () => Promise<T>;
+
+export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs = {}> = (
+  next: NextResolverFn<TResult>,
+  parent: TParent,
+  args: TArgs,
+  context: TContext,
+  info: GraphQLResolveInfo
+) => TResult | Promise<TResult>;
+
+/** Mapping between all available schema types and the resolvers types */
+export interface ResolversTypes {
+  Query: ResolverTypeWrapper<{}>;
+  Int: ResolverTypeWrapper<Scalars['Int']>;
+  Boolean: ResolverTypeWrapper<Scalars['Boolean']>;
+  String: ResolverTypeWrapper<Scalars['String']>;
+  AbilityEntry: ResolverTypeWrapper<AbilityEntry>;
+  Abilities: Abilities;
+  JSONObject: ResolverTypeWrapper<Scalars['JSONObject']>;
+  Pokemon: Pokemon;
+  DexDetails: ResolverTypeWrapper<DexDetails>;
+  AbilitiesEntry: ResolverTypeWrapper<AbilitiesEntry>;
+  StatsEntry: ResolverTypeWrapper<StatsEntry>;
+  GenderEntry: ResolverTypeWrapper<GenderEntry>;
+  Float: ResolverTypeWrapper<Scalars['Float']>;
+  FlavorEntry: ResolverTypeWrapper<FlavorEntry>;
+  DexEntry: ResolverTypeWrapper<DexEntry>;
+  ItemEntry: ResolverTypeWrapper<ItemEntry>;
+  Items: Items;
+  Moves: Moves;
+  LearnsetEntry: ResolverTypeWrapper<LearnsetEntry>;
+  LearnsetLevelUpMove: ResolverTypeWrapper<LearnsetLevelUpMove>;
+  LearnsetMove: ResolverTypeWrapper<LearnsetMove>;
+  MoveEntry: ResolverTypeWrapper<MoveEntry>;
+  Types: Types;
+  TypeMatchups: ResolverTypeWrapper<TypeMatchups>;
+  TypeEntry: ResolverTypeWrapper<TypeEntry>;
+}
+
+/** Mapping between all available schema types and the resolvers parents */
+export interface ResolversParentTypes {
+  Query: {};
+  Int: Scalars['Int'];
+  Boolean: Scalars['Boolean'];
+  String: Scalars['String'];
+  AbilityEntry: AbilityEntry;
+  Abilities: Abilities;
+  JSONObject: Scalars['JSONObject'];
+  Pokemon: Pokemon;
+  DexDetails: DexDetails;
+  AbilitiesEntry: AbilitiesEntry;
+  StatsEntry: StatsEntry;
+  GenderEntry: GenderEntry;
+  Float: Scalars['Float'];
+  FlavorEntry: FlavorEntry;
+  DexEntry: DexEntry;
+  ItemEntry: ItemEntry;
+  Items: Items;
+  Moves: Moves;
+  LearnsetEntry: LearnsetEntry;
+  LearnsetLevelUpMove: LearnsetLevelUpMove;
+  LearnsetMove: LearnsetMove;
+  MoveEntry: MoveEntry;
+  Types: Types;
+  TypeMatchups: TypeMatchups;
+  TypeEntry: TypeEntry;
+}
+
+export interface AbilitiesEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['AbilitiesEntry'] = ResolversParentTypes['AbilitiesEntry']
+> {
+  first?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  second?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  hidden?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  special?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface AbilityEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['AbilityEntry'] = ResolversParentTypes['AbilityEntry']
+> {
+  desc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  shortDesc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface DexDetailsResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['DexDetails'] = ResolversParentTypes['DexDetails']
+> {
+  num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  types?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  abilities?: Resolver<ResolversTypes['AbilitiesEntry'], ParentType, ContextType>;
+  baseStats?: Resolver<ResolversTypes['StatsEntry'], ParentType, ContextType>;
+  color?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  eggGroups?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  evolutionLevel?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  evos?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  prevo?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  forme?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  formeLetter?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  gender?: Resolver<ResolversTypes['GenderEntry'], ParentType, ContextType>;
+  height?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  weight?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  baseForme?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  baseSpecies?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  otherFormes?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  baseStatsTotal?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  evolutions?: Resolver<Maybe<ReadonlyArray<ResolversTypes['DexDetails']>>, ParentType, ContextType>;
+  preevolutions?: Resolver<Maybe<ReadonlyArray<ResolversTypes['DexDetails']>>, ParentType, ContextType>;
+  flavorTexts?: Resolver<ReadonlyArray<ResolversTypes['FlavorEntry']>, ParentType, ContextType>;
+  sprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  shinySprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  smogonTier?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface DexEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['DexEntry'] = ResolversParentTypes['DexEntry']
+> {
+  num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  types?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  abilities?: Resolver<ResolversTypes['AbilitiesEntry'], ParentType, ContextType>;
+  baseStats?: Resolver<ResolversTypes['StatsEntry'], ParentType, ContextType>;
+  color?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  eggGroups?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  evolutionLevel?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  evos?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  prevo?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  forme?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  formeLetter?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  gender?: Resolver<ResolversTypes['GenderEntry'], ParentType, ContextType>;
+  height?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  weight?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  baseForme?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  baseSpecies?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  otherFormes?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface FlavorEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['FlavorEntry'] = ResolversParentTypes['FlavorEntry']
+> {
+  game?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  flavor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface GenderEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['GenderEntry'] = ResolversParentTypes['GenderEntry']
+> {
+  male?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  female?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface ItemEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['ItemEntry'] = ResolversParentTypes['ItemEntry']
+> {
+  desc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  shortDesc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  isNonstandard?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  sprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  generationIntroduced?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface JsonObjectScalarConfig extends GraphQLScalarTypeConfig<ResolversTypes['JSONObject'], any> {
+  name: 'JSONObject';
+}
+
+export interface LearnsetEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['LearnsetEntry'] = ResolversParentTypes['LearnsetEntry']
+> {
+  levelUpMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetLevelUpMove']>>, ParentType, ContextType>;
+  virtualTransferMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
+  tutorMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
+  tmMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
+  eggMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
+  eventMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
+  dreamworldMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
+  num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  sprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  shinySprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  color?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface LearnsetLevelUpMoveResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['LearnsetLevelUpMove'] = ResolversParentTypes['LearnsetLevelUpMove']
+> {
+  name?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  generation?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  level?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface LearnsetMoveResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['LearnsetMove'] = ResolversParentTypes['LearnsetMove']
+> {
+  name?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  generation?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface MoveEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['MoveEntry'] = ResolversParentTypes['MoveEntry']
+> {
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  shortDesc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  type?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  basePower?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  pp?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  category?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  accuracy?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  priority?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  target?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  contestType?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  isNonstandard?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  isZ?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  isGMax?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  desc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface QueryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']
+> {
+  getAbilityDetailsByFuzzy?: Resolver<
+    ResolversTypes['AbilityEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetAbilityDetailsByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'ability'>
+  >;
+  getAbilityDetailsByName?: Resolver<
+    ResolversTypes['AbilityEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetAbilityDetailsByNameArgs, 'ability'>
+  >;
+  getAbilityByFuzzy?: Resolver<
+    ReadonlyArray<ResolversTypes['JSONObject']>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetAbilityByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'ability'>
+  >;
+  getAbilityByName?: Resolver<
+    ResolversTypes['JSONObject'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetAbilityByNameArgs, 'ability'>
+  >;
+  getPokemonDetails?: Resolver<
+    ResolversTypes['DexDetails'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetPokemonDetailsArgs, 'skip' | 'take' | 'reverse' | 'pokemon'>
+  >;
+  getPokemonDetailsByName?: Resolver<
+    ResolversTypes['DexDetails'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetPokemonDetailsByNameArgs, 'skip' | 'take' | 'reverse' | 'pokemon'>
+  >;
+  getPokemonDetailsByFuzzy?: Resolver<
+    ResolversTypes['DexDetails'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetPokemonDetailsByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'pokemon'>
+  >;
+  getDexEntries?: Resolver<
+    ReadonlyArray<ResolversTypes['DexEntry']>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetDexEntriesArgs, 'skip' | 'take' | 'reverse' | 'pokemon'>
+  >;
+  getDexEntryBySpeciesName?: Resolver<
+    ResolversTypes['JSONObject'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetDexEntryBySpeciesNameArgs, 'pokemon'>
+  >;
+  getDexEntryByDexNumber?: Resolver<
+    ResolversTypes['JSONObject'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetDexEntryByDexNumberArgs, 'num'>
+  >;
+  getItemDetailsByFuzzy?: Resolver<
+    ResolversTypes['ItemEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetItemDetailsByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'item'>
+  >;
+  getItemDetailsByName?: Resolver<
+    ResolversTypes['ItemEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetItemDetailsByNameArgs, 'item'>
+  >;
+  getItemByFuzzy?: Resolver<
+    ReadonlyArray<ResolversTypes['JSONObject']>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetItemByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'item'>
+  >;
+  getItemByName?: Resolver<
+    ResolversTypes['JSONObject'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetItemByNameArgs, 'item'>
+  >;
+  getPokemonLearnset?: Resolver<
+    ResolversTypes['LearnsetEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetPokemonLearnsetArgs, 'pokemon' | 'moves'>
+  >;
+  getPokemonLearnsetByFuzzy?: Resolver<
+    ResolversTypes['LearnsetEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetPokemonLearnsetByFuzzyArgs, 'pokemon' | 'moves'>
+  >;
+  getMoveDetailsByFuzzy?: Resolver<
+    ResolversTypes['MoveEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetMoveDetailsByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'move'>
+  >;
+  getMoveDetailsByName?: Resolver<
+    ResolversTypes['MoveEntry'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetMoveDetailsByNameArgs, 'move'>
+  >;
+  getMoveByFuzzy?: Resolver<
+    ReadonlyArray<ResolversTypes['JSONObject']>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetMoveByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'move'>
+  >;
+  getMoveByName?: Resolver<
+    ResolversTypes['JSONObject'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetMoveByNameArgs, 'move'>
+  >;
+  getTypeMatchup?: Resolver<
+    ResolversTypes['TypeMatchups'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetTypeMatchupArgs, 'types'>
+  >;
+  getTypeByName?: Resolver<
+    ResolversTypes['JSONObject'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetTypeByNameArgs, 'type'>
+  >;
+}
+
+export interface StatsEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['StatsEntry'] = ResolversParentTypes['StatsEntry']
+> {
+  hp?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  attack?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  defense?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  specialattack?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  specialdefense?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  speed?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface TypeEntryResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['TypeEntry'] = ResolversParentTypes['TypeEntry']
+> {
+  doubleEffectiveTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  effectiveTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  normalTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  resistedTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  doubleResistedTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  effectlessTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface TypeMatchupsResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes['TypeMatchups'] = ResolversParentTypes['TypeMatchups']
+> {
+  attacking?: Resolver<ResolversTypes['TypeEntry'], ParentType, ContextType>;
+  defending?: Resolver<ResolversTypes['TypeEntry'], ParentType, ContextType>;
+  __isTypeOf?: isTypeOfResolverFn<ParentType>;
+}
+
+export interface Resolvers<ContextType = any> {
+  AbilitiesEntry?: AbilitiesEntryResolvers<ContextType>;
+  AbilityEntry?: AbilityEntryResolvers<ContextType>;
+  DexDetails?: DexDetailsResolvers<ContextType>;
+  DexEntry?: DexEntryResolvers<ContextType>;
+  FlavorEntry?: FlavorEntryResolvers<ContextType>;
+  GenderEntry?: GenderEntryResolvers<ContextType>;
+  ItemEntry?: ItemEntryResolvers<ContextType>;
+  JSONObject?: GraphQLScalarType;
+  LearnsetEntry?: LearnsetEntryResolvers<ContextType>;
+  LearnsetLevelUpMove?: LearnsetLevelUpMoveResolvers<ContextType>;
+  LearnsetMove?: LearnsetMoveResolvers<ContextType>;
+  MoveEntry?: MoveEntryResolvers<ContextType>;
+  Query?: QueryResolvers<ContextType>;
+  StatsEntry?: StatsEntryResolvers<ContextType>;
+  TypeEntry?: TypeEntryResolvers<ContextType>;
+  TypeMatchups?: TypeMatchupsResolvers<ContextType>;
+}
+
+/**
+ * @deprecated
+ * Use "Resolvers" root object instead. If you wish to get "IResolvers", add "typesPrefix: I" to your config.
+ */
+export type IResolvers<ContextType = any> = Resolvers<ContextType>;
 
 export interface DataResponse<K extends keyof Omit<Query, '__typename'>> {
   data: Record<K, Omit<Query[K], '__typename'>>;

@@ -1,13 +1,18 @@
 import { Args } from 'type-graphql';
 import LearnsetArgs from '../arguments/LearnsetArgs';
 import learnsets from '../assets/learnsets';
-import LearnsetEntry, { LearnsetLevelUpMove, LearnsetMove } from '../structures/LearnsetEntry';
 import pokedex from '../assets/pokedex';
-import Util from '../utils/util';
+import LearnsetEntry, { LearnsetLevelUpMove, LearnsetMove } from '../structures/LearnsetEntry';
+import { addPropertyToClass } from '../utils/addPropertyToClass';
+import GraphQLSet from '../utils/GraphQLSet';
 import Pokemon from '../utils/pokemon';
+import Util from '../utils/util';
 
 export default class LearnsetService {
-  public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs) {
+  public findLearnsets(
+    @Args() { pokemon, moves, generation }: LearnsetArgs,
+    requestedFields: GraphQLSet<keyof LearnsetEntry>
+  ) {
     const learnset = learnsets.get(pokemon);
 
     if (!learnset) {
@@ -34,25 +39,41 @@ export default class LearnsetService {
 
             switch (this.getMethodType(method)) {
               case 'L':
-                levelupMoves.push(this.createLevelupMove(move, this.getMethodLevel(method), this.getMethodGeneration(method)));
+                if (requestedFields.has('levelUpMoves')) {
+                  levelupMoves.push(
+                    this.createLevelupMove(move, this.getMethodLevel(method), this.getMethodGeneration(method))
+                  );
+                }
                 break;
               case 'V':
-                virtualTransferMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                if (requestedFields.has('virtualTransferMoves')) {
+                  virtualTransferMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                }
                 break;
               case 'T':
-                tutorMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                if (requestedFields.has('tutorMoves')) {
+                  tutorMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                }
                 break;
               case 'M':
-                tmMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                if (requestedFields.has('tmMoves')) {
+                  tmMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                }
                 break;
               case 'E':
-                eggMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                if (requestedFields.has('eggMoves')) {
+                  eggMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                }
                 break;
               case 'S':
-                eventMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                if (requestedFields.has('eventMoves')) {
+                  eventMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                }
                 break;
               case 'D':
-                dreamworldMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                if (requestedFields.has('dreamworldMoves')) {
+                  dreamworldMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                }
                 break;
               default:
                 break;
@@ -61,21 +82,46 @@ export default class LearnsetService {
         }
       }
 
-      learnsetEntry.levelUpMoves = levelupMoves;
-      learnsetEntry.virtualTransferMoves = virtualTransferMoves;
-      learnsetEntry.tutorMoves = tutorMoves;
-      learnsetEntry.tmMoves = tmMoves;
-      learnsetEntry.eggMoves = eggMoves;
-      learnsetEntry.eventMoves = eventMoves;
-      learnsetEntry.dreamworldMoves = dreamworldMoves;
+      addPropertyToClass(learnsetEntry, 'levelUpMoves', levelupMoves, requestedFields);
+      addPropertyToClass(learnsetEntry, 'virtualTransferMoves', virtualTransferMoves, requestedFields);
+      addPropertyToClass(learnsetEntry, 'tutorMoves', tutorMoves, requestedFields);
+      addPropertyToClass(learnsetEntry, 'tmMoves', tmMoves, requestedFields);
+      addPropertyToClass(learnsetEntry, 'eggMoves', eggMoves, requestedFields);
+      addPropertyToClass(learnsetEntry, 'eventMoves', eventMoves, requestedFields);
+      addPropertyToClass(learnsetEntry, 'dreamworldMoves', dreamworldMoves, requestedFields);
     }
 
-    const pokemonEntry = pokedex.get(pokemon) as Pokemon.DexEntry;
-    learnsetEntry.sprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite);
-    learnsetEntry.shinySprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite, true);
-    learnsetEntry.num = pokemonEntry.num;
-    learnsetEntry.color = pokemonEntry.color;
-    learnsetEntry.species = pokemonEntry.species;
+    if (this.shouldIncludePokemonDetails(requestedFields)) {
+      const pokemonEntry = pokedex.get(pokemon) as Pokemon.DexEntry;
+
+      addPropertyToClass(
+        learnsetEntry,
+        'sprite',
+        this.parseSpeciesForSprite(
+          pokemonEntry.species,
+          pokemonEntry.baseSpecies,
+          pokemonEntry.specialSprite,
+          pokemonEntry.specialShinySprite
+        ),
+        requestedFields
+      );
+      addPropertyToClass(
+        learnsetEntry,
+        'shinySprite',
+        this.parseSpeciesForSprite(
+          pokemonEntry.species,
+          pokemonEntry.baseSpecies,
+          pokemonEntry.specialSprite,
+          pokemonEntry.specialShinySprite,
+          true
+        ),
+        requestedFields
+      );
+
+      addPropertyToClass(learnsetEntry, 'num', pokemonEntry.num, requestedFields);
+      addPropertyToClass(learnsetEntry, 'color', pokemonEntry.color, requestedFields);
+      addPropertyToClass(learnsetEntry, 'species', pokemonEntry.species, requestedFields);
+    }
 
     return learnsetEntry;
   }
@@ -109,7 +155,13 @@ export default class LearnsetService {
     return method.slice(1, 2) as MethodTypes;
   }
 
-  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
+  private parseSpeciesForSprite(
+    pokemonName: string,
+    baseForme?: string,
+    specialSprite?: string,
+    specialShinySprite?: string,
+    shiny = false
+  ) {
     if (specialShinySprite && shiny === true) return specialShinySprite;
     if (specialSprite && shiny === false) return specialSprite;
 
@@ -118,6 +170,16 @@ export default class LearnsetService {
     if (pokemonName.match(/^(.+)-(x|y)$/g)) pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
 
     return `https://play.pokemonshowdown.com/sprites/${shiny ? 'ani-shiny' : 'ani'}/${pokemonName}.gif`;
+  }
+
+  private shouldIncludePokemonDetails(requestedFields: GraphQLSet<keyof LearnsetEntry>) {
+    return (
+      requestedFields.has('sprite') ||
+      requestedFields.has('shinySprite') ||
+      requestedFields.has('num') ||
+      requestedFields.has('color') ||
+      requestedFields.has('species')
+    );
   }
 }
 

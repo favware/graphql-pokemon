@@ -1,10 +1,12 @@
-import { Arg, Args } from 'type-graphql';
-import moves from '../assets/moves';
-import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
 import { GraphQLJSONObject } from 'graphql-type-json';
-import FuzzySearch from '../utils/FuzzySearch';
+import { Arg, Args } from 'type-graphql';
+import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
 import { moveAliases } from '../assets/aliases';
+import moves from '../assets/moves';
 import MoveEntry from '../structures/MoveEntry';
+import { addPropertyToClass } from '../utils/addPropertyToClass';
+import FuzzySearch from '../utils/FuzzySearch';
+import GraphQLSet from '../utils/GraphQLSet';
 import Util, { SimpleFuseOptions } from '../utils/util';
 
 export default class MoveService {
@@ -12,12 +14,17 @@ export default class MoveService {
     return moves.get(name);
   }
 
-  public findByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs, @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions) {
+  public findByFuzzy(
+    @Args() { move, skip, take, reverse }: MovePaginatedArgs,
+    @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions
+  ) {
     const fuzzyMove = new FuzzySearch(moves, ['name'], { threshold: 0.3, ...fuseOptions });
 
     let fuzzyResult = fuzzyMove.runFuzzy(move);
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(moveAliases, ['alias', 'move'], { threshold: 0.4 }).runFuzzy(move);
+      const fuzzyAliasResult = new FuzzySearch(moveAliases, ['alias', 'move'], {
+        threshold: 0.4
+      }).runFuzzy(move);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyMove.runFuzzy(fuzzyAliasResult[0].move);
@@ -31,7 +38,7 @@ export default class MoveService {
     return fuzzyResult.slice(skip, skip + take);
   }
 
-  public findByNameWithDetails(@Arg('move') move: string) {
+  public findByNameWithDetails(@Arg('move') move: string, requestedFields: GraphQLSet<keyof MoveEntry>) {
     const moveData = this.findByName(move);
 
     if (!moveData) {
@@ -39,23 +46,38 @@ export default class MoveService {
     }
 
     const moveEntry = new MoveEntry();
-    moveEntry.name = moveData.name;
-    moveEntry.shortDesc = moveData.shortDesc;
-    moveEntry.type = moveData.type;
-    moveEntry.contestType = moveData.contestType;
-    moveEntry.basePower = moveData.basePower;
-    moveEntry.pp = moveData.pp;
-    moveEntry.category = moveData.category;
-    moveEntry.accuracy = moveData.accuracy;
-    moveEntry.priority = moveData.priority;
-    moveEntry.target = moveData.target;
-    moveEntry.serebiiPage = `https://www.serebii.net/attackdex-sm/${Util.toLowerSingleWordCase(moveData.name)}.shtml`;
-    moveEntry.bulbapediaPage = `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(moveData.name)}_(move)`;
-    moveEntry.smogonPage = `https://www.smogon.com/dex/sm/moves/${Util.toLowerHyphenCase(moveData.name)}`;
-    moveEntry.isZ = Util.parseZCrystal(moveData.isZ) || undefined;
-    moveEntry.desc = moveData.desc;
-    moveEntry.isNonstandard = moveData.isNonstandard;
-    moveEntry.isGMax = moveData.isGMax;
+    addPropertyToClass(moveEntry, 'name', moveData.name, requestedFields);
+    addPropertyToClass(moveEntry, 'desc', moveData.desc, requestedFields);
+    addPropertyToClass(moveEntry, 'shortDesc', moveData.shortDesc, requestedFields);
+    addPropertyToClass(moveEntry, 'type', moveData.type, requestedFields);
+    addPropertyToClass(moveEntry, 'contestType', moveData.contestType, requestedFields);
+    addPropertyToClass(moveEntry, 'basePower', moveData.basePower, requestedFields);
+    addPropertyToClass(moveEntry, 'pp', moveData.pp, requestedFields);
+    addPropertyToClass(moveEntry, 'category', moveData.category, requestedFields);
+    addPropertyToClass(moveEntry, 'accuracy', moveData.accuracy, requestedFields);
+    addPropertyToClass(moveEntry, 'priority', moveData.priority, requestedFields);
+    addPropertyToClass(moveEntry, 'target', moveData.target, requestedFields);
+    addPropertyToClass(moveEntry, 'isNonstandard', moveData.isNonstandard, requestedFields);
+    addPropertyToClass(moveEntry, 'isGMax', moveData.isGMax, requestedFields);
+    addPropertyToClass(moveEntry, 'isZ', Util.parseZCrystal(moveData.isZ), requestedFields);
+    addPropertyToClass(
+      moveEntry,
+      'serebiiPage',
+      `https://www.serebii.net/attackdex-sm/${Util.toLowerSingleWordCase(moveData.name)}.shtml`,
+      requestedFields
+    );
+    addPropertyToClass(
+      moveEntry,
+      'bulbapediaPage',
+      `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(moveData.name)}_(move)`,
+      requestedFields
+    );
+    addPropertyToClass(
+      moveEntry,
+      'smogonPage',
+      `https://www.smogon.com/dex/sm/moves/${Util.toLowerHyphenCase(moveData.name)}`,
+      requestedFields
+    );
 
     return moveEntry;
   }

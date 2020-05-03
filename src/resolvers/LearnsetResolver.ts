@@ -6,6 +6,8 @@ import DexService from '../services/DexService';
 import MoveService from '../services/MoveService';
 import Util from '../utils/util';
 import LearnsetFuzzyArgs from '../arguments/LearnsetFuzzyArgs';
+import { getRequestedFields } from '../utils/getRequestedFields';
+import GraphQLSet from '../utils/GraphQLSet';
 
 @Resolver(LearnsetEntry)
 export default class LearnsetResolver {
@@ -26,12 +28,19 @@ export default class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  getPokemonLearnset(@Args() { pokemon, moves, generation }: LearnsetArgs) {
-    const entry = this.learnsetService.findLearnsets({ pokemon, moves, generation });
+  getPokemonLearnset(
+    @Args() { pokemon, moves, generation }: LearnsetArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof LearnsetEntry>
+  ) {
+    const entry = this.learnsetService.findLearnsets({ pokemon, moves, generation }, requestedFields);
 
     if (entry === undefined) {
       throw new Error(
-        [`Failed to get learnsets for the combination of pokemon "${pokemon}"`, `and move(s) "${moves.join(', ')}"`, generation ? `with generation filter set to ${generation}` : ''].join(' ')
+        [
+          `Failed to get learnsets for the combination of pokemon "${pokemon}"`,
+          `and move(s) "${moves.join(', ')}"`,
+          generation ? `with generation filter set to ${generation}` : ''
+        ].join(' ')
       );
     }
 
@@ -46,7 +55,10 @@ export default class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  getPokemonLearnsetByFuzzy(@Args() { pokemon, moves, generation }: LearnsetFuzzyArgs) {
+  getPokemonLearnsetByFuzzy(
+    @Args() { pokemon, moves, generation }: LearnsetFuzzyArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof LearnsetEntry>
+  ) {
     const pokemonEntry = this.dexService.findBySpecies(pokemon);
 
     if (!pokemonEntry) {
@@ -76,6 +88,6 @@ export default class LearnsetResolver {
       }
     }
 
-    return this.getPokemonLearnset({ pokemon, moves, generation });
+    return this.getPokemonLearnset({ pokemon, moves, generation }, requestedFields);
   }
 }

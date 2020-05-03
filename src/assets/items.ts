@@ -34,7 +34,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Adamant Orb',
       gen: 4,
-      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.'
+      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -196,7 +197,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Belue Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -322,7 +324,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Blunder Policy',
       gen: 8,
-      desc: 'If the holder misses because of accuracy, it raises Speed by 2 stages. Single use.'
+      desc: 'If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.'
     }
   ],
   [
@@ -482,7 +484,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Chipped Pot',
       gen: 8,
-      desc: 'Evolves Sinistea into Polteageist when used.'
+      desc: 'Evolves Sinistea-Antique into Polteageist-Antique when used.'
     }
   ],
   [
@@ -555,7 +557,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Cornn Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -581,7 +584,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Cracked Pot',
       gen: 8,
-      desc: 'Evolves Sinistea into Polteageist when used.'
+      desc: 'Evolves Sinistea-Chipped into Polteageist-Chipped when used.'
     }
   ],
   [
@@ -589,7 +592,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Custap Berry',
       gen: 4,
-      desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.'
+      desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
+      isNonstandard: 'Unobtainable'
     }
   ],
   [
@@ -710,7 +714,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Draco Plate',
       gen: 4,
-      desc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type."
+      desc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -760,7 +765,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Dread Plate',
       gen: 4,
-      desc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type."
+      desc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -784,7 +790,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Durin Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -809,7 +816,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Earth Plate',
       gen: 4,
-      desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type."
+      desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -834,7 +842,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Eject Pack',
       gen: 8,
-      desc: "When the holder's stats are lowered, it will be switched out of battle."
+      desc: "If the holder's stat stages are lowered, it switches to a chosen ally. Single use."
     }
   ],
   [
@@ -892,7 +900,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Enigma Berry',
       gen: 3,
-      desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.'
+      desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.',
+      isNonstandard: 'Unobtainable'
     }
   ],
   [
@@ -1019,7 +1028,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fist Plate',
       gen: 4,
-      desc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type."
+      desc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1035,7 +1045,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Flame Plate',
       gen: 4,
-      desc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type."
+      desc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1101,8 +1112,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fossilized Bird',
       gen: 8,
-      desc: 'Can be revived into Arctovish with Fossilized Fish or Arctozolt with Fossilized Dino.',
-      shortDesc: 'Can be combined with certain fossils.'
+      desc: 'Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Dino.'
     }
   ],
   [
@@ -1110,8 +1120,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fossilized Dino',
       gen: 8,
-      desc: 'Can be revived into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Bird.',
-      shortDesc: 'Can be combined with certain fossils.'
+      desc: 'Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Bird.'
     }
   ],
   [
@@ -1119,8 +1128,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fossilized Drake',
       gen: 8,
-      desc: 'Can be revived into Dracozolt with Fossilized Dino or Dracovish with Fossilized Fish.',
-      shortDesc: 'Can be combined with certain fossils.'
+      desc: 'Can revive into Dracozolt with Fossilized Dino or Dracovish with Fossilized Fish.'
     }
   ],
   [
@@ -1128,8 +1136,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fossilized Fish',
       gen: 8,
-      desc: 'Can be revived into Dracovish with Fossilized Drake or Arctovish with Fossilized Bird.',
-      shortDesc: 'Can be combined with certain fossils.'
+      desc: 'Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Bird.'
     }
   ],
   [
@@ -1307,7 +1314,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Griseous Orb',
       gen: 4,
-      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.'
+      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1390,7 +1398,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Heavy-Duty Boots',
       gen: 8,
-      desc: 'Prevents the effects of traps set on the battlefield.'
+      desc: 'When switching in, the holder is unaffected by hazards on its side of the field.'
     }
   ],
   [
@@ -1476,7 +1484,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Icicle Plate',
       gen: 4,
-      desc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type."
+      desc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1510,7 +1519,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Insect Plate',
       gen: 4,
-      desc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type."
+      desc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1526,7 +1536,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Iron Plate',
       gen: 4,
-      desc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type."
+      desc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1534,7 +1545,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Jaboca Berry',
       gen: 4,
-      desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.'
+      desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
+      isNonstandard: 'Unobtainable'
     }
   ],
   [
@@ -1759,7 +1771,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Lucky Punch',
       gen: 2,
-      desc: 'If held by a Chansey, its critical hit ratio is raised by 2 stages.'
+      desc: 'If held by a Chansey, its critical hit ratio is raised by 2 stages.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1800,7 +1813,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Lustrous Orb',
       gen: 4,
-      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.'
+      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1857,7 +1871,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Magost Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -1916,7 +1931,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Meadow Plate',
       gen: 4,
-      desc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type."
+      desc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2002,7 +2018,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Micle Berry',
       gen: 4,
-      desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use."
+      desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+      isNonstandard: 'Unobtainable'
     }
   ],
   [
@@ -2019,7 +2036,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Mind Plate',
       gen: 4,
-      desc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type."
+      desc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2103,7 +2121,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Nanab Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2135,7 +2154,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Nomel Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2220,7 +2240,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Pamtre Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2568,7 +2589,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Rabuta Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2602,7 +2624,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Razor Fang',
       gen: 4,
       desc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
-      shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
+      shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2610,7 +2633,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Razz Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -2725,7 +2749,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Room Service',
       gen: 8,
-      desc: "If Trick Room is active, lowers holder's Speed by 1 stage. Single use."
+      desc: "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use."
     }
   ],
   [
@@ -2750,7 +2774,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Rowap Berry',
       gen: 4,
-      desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.'
+      desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
+      isNonstandard: 'Unobtainable'
     }
   ],
   [
@@ -2758,7 +2783,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Rusted Shield',
       gen: 8,
-      desc: 'If held by a Zamazenta, this item changes it to Crowned Forme.'
+      desc: 'If held by a Zamazenta, this item changes its forme to Crowned Shield.'
     }
   ],
   [
@@ -2766,7 +2791,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Rusted Sword',
       gen: 8,
-      desc: 'If held by a Zacian, this item changes it to Crowned Forme.'
+      desc: 'If held by a Zacian, this item changes its forme to Crowned Sword.'
     }
   ],
   [
@@ -2959,7 +2984,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Sky Plate',
       gen: 4,
-      desc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type."
+      desc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3018,7 +3044,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Soul Dew',
       gen: 3,
-      desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.'
+      desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3034,7 +3061,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Spelon Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3042,7 +3070,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Splash Plate',
       gen: 4,
-      desc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type."
+      desc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3050,7 +3079,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Spooky Plate',
       gen: 4,
-      desc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type."
+      desc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3134,7 +3164,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Stone Plate',
       gen: 4,
-      desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type."
+      desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3225,7 +3256,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Throat Spray',
       gen: 8,
-      desc: "Raises holder's Special Attack by 1 stage after using a sound move. Single use."
+      desc: "Raises holder's Special Attack by 1 stage after it uses a sound move. Single use."
     }
   ],
   [
@@ -3258,7 +3289,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Toxic Plate',
       gen: 4,
-      desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type."
+      desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3308,11 +3340,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Utility Umbrella',
       gen: 8,
-      desc: [
-        "The holder is immune to the weather-based modifiers of the attacker's moves in the effects of Sunny Day and Rain Dance.",
-        "However, the user's Weather Ball and own weather-based abilities will not activate."
-      ].join(' '),
-      shortDesc: 'Blocks the holder from the effects of sun/rain.'
+      desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
+      shortDesc: 'The holder ignores rain- and sun-based effects.'
     }
   ],
   [
@@ -3372,7 +3401,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Watmel Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3396,7 +3426,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Wepear Berry',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3452,7 +3483,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Zap Plate',
       gen: 4,
-      desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type."
+      desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+      isNonstandard: 'Past'
     }
   ],
   [

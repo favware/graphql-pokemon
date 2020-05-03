@@ -247,8 +247,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'cottondown',
     {
-      desc: 'When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pokémon except itself.',
-      shortDesc: 'Lowers Speed of all Pokémon except itself when hit by an attack.',
+      desc: 'When this Pokemon is hit by an attack, the Speed of all other Pokemon on the field is lowered by 1 stage.',
+      shortDesc: 'If this Pokemon is hit, it lowers the Speed of all other Pokemon on the field 1 stage.',
       name: 'Cotton Down'
     }
   ],
@@ -550,7 +550,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'gorillatactics',
     {
-      shortDesc: "Boosts the Pokémon's Attack stat but only allows the use of the first selected move.",
+      shortDesc: "This Pokemon's Attack is 1.5x, but it can only select the first move it executes.",
       name: 'Gorilla Tactics'
     }
   ],
@@ -627,8 +627,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'hungerswitch',
     {
-      desc: 'The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn.',
-      shortDesc: 'Changes between Full Belly and Hangry Mode at the end of each turn.',
+      shortDesc: 'If Morpeko, it changes between Full Belly and Hangry Mode at the end of each turn.',
       name: 'Hunger Switch'
     }
   ],
@@ -668,8 +667,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'iceface',
     {
       desc:
-        'If this Pokemon is a Eiscue, the first physical hit it takes will deal 0 damage. Its ice head is then broken, it changes to Noice Form. The ice will be restored when hail is summoned or when the Pokemon is switched in while hail is active.',
-      shortDesc: '(Eiscue only) First physical hit deals 0 damage, breaks ice head.',
+        'If this Pokemon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Hail begins or when Eiscue switches in while Hail is active. Confusion damage also breaks the ice face.',
+      shortDesc: 'If Eiscue, the first physical hit it takes deals 0 damage. This effect is restored in Hail.',
       name: 'Ice Face'
     }
   ],
@@ -677,7 +676,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'icescales',
     {
       desc: 'The Pokémon is protected by ice scales, which halve the damage taken from special moves.',
-      shortDesc: 'This Pokemon receives 1/2 damage from special moves.',
+      shortDesc: 'This Pokemon receives 1/2 damage from special attacks.',
       name: 'Ice Scales'
     }
   ],
@@ -931,7 +930,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'mimicry',
     {
-      shortDesc: "Changes the Pokémon's type depending on the terrain.",
+      shortDesc: "This Pokemon's type changes to match the Terrain. Type reverts when Terrain ends.",
       name: 'Mimicry'
     }
   ],
@@ -946,7 +945,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'mirrorarmor',
     {
-      shortDesc: 'Bounces back only the stat-lowering effects that the Pokémon receives.',
+      desc:
+        "When one of this Pokemon's stat stages would be lowered by another Pokemon, that Pokemon's stat stage is lowered instead. This effect does not happen if this Pokemon's stat stage was already -6.",
+      shortDesc: "If this Pokemon's stat stages would be lowered, the attacker's are lowered instead.",
       name: 'Mirror Armor'
     }
   ],
@@ -1036,8 +1037,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'neutralizinggas',
     {
-      desc: "If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon's Abilities will be nullified or will not be triggered.",
-      shortDesc: 'Nullifies abilities while on the field.',
+      desc:
+        'While this Pokemon is active, Abilities have no effect. Does not affect the Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.',
+      shortDesc: 'While this Pokemon is active, Abilities have no effect.',
       name: 'Neutralizing Gas'
     }
   ],
@@ -1108,15 +1110,15 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc:
         'Pastel Veil prevents the Pokémon with this Ability and its allies from being afflicted by poison. It also heals the poisoned status condition of allies if a Pokémon with this Ability is sent out into battle.',
-      shortDesc: 'Protects the Pokémon and its ally Pokémon from being poisoned.',
+      shortDesc: 'This Pokemon and its allies cannot be poisoned. On switch-in, cures poisoned allies.',
       name: 'Pastel Veil'
     }
   ],
   [
     'perishbody',
     {
-      desc: 'When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.',
-      shortDesc: 'When hit by a contact move, the Pokémon and the attacker faint in 3 turns.',
+      desc: 'Making contact with this Pokemon starts the Perish Song effect for it and the attacker. This effect does not happen if this Pokemon already has a perish count.',
+      shortDesc: 'Making contact with this Pokemon starts the Perish Song effect for it and the attacker.',
       name: 'Perish Body'
     }
   ],
@@ -1124,8 +1126,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'pickpocket',
     {
       desc:
-        'If this Pokemon has no item, it steals the item off a Pokemon that makes contact with it. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect.',
-      shortDesc: 'If this Pokemon has no item, it steals the item off a Pokemon making contact with it.',
+        "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect.",
+      shortDesc: "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item.",
       name: 'Pickpocket'
     }
   ],
@@ -1195,7 +1197,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'powerspot',
     {
-      shortDesc: "This Pokemon's allies have the base power of their moves multiplied by 1.3.",
+      shortDesc: "This Pokemon's allies have the power of their moves multiplied by 1.3.",
       name: 'Power Spot'
     }
   ],
@@ -1234,7 +1236,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'propellertail',
     {
-      shortDesc: "Ignores the effects of opposing Pokémon's moves/Abilities that redirect move targets.",
+      shortDesc: "This Pokemon's moves cannot be redirected to a different target by any effect.",
       name: 'Propeller Tail'
     }
   ],
@@ -1256,8 +1258,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'punkrock',
     {
-      desc: 'When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.',
-      shortDesc: 'Removes Screens and Veil Effects on switchin.',
+      desc: "This Pokemon's sound-based moves have their power multiplied by 1.3. This Pokemon takes halved damage from sound-based moves.",
+      shortDesc: 'This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.',
       name: 'Punk Rock'
     }
   ],
@@ -1351,7 +1353,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'ripen',
     {
-      shortDesc: 'Ripens Berries and doubles their effect.',
+      shortDesc: 'When this Pokemon eats a Berry, its effect is doubled.',
       name: 'Ripen'
     }
   ],
@@ -1400,7 +1402,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'sandspit',
     {
-      shortDesc: "The Pokémon creates a sandstorm when it's hit by an attack.",
+      desc: 'When this Pokemon is hit by an attack, Sandstorm begins. This effect happens after the effects of Max and G-Max Moves.',
+      shortDesc: 'When this Pokemon is hit, Sandstorm begins.',
       name: 'Sand Spit'
     }
   ],
@@ -1447,8 +1450,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'screencleaner',
     {
-      desc: "On switch-in, this Pokémon ends the effects of Reflect, Light Screen, and Aurora Veil for both the user's and the opposing side.",
-      shortDesc: 'Removes Reflect, Light Screen, and Aurora Veil on switch-in.',
+      shortDesc: 'On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.',
       name: 'Screen Cleaner'
     }
   ],
@@ -1622,7 +1624,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'stalwart',
     {
-      shortDesc: "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves.",
+      shortDesc: "This Pokemon's moves cannot be redirected to a different target by any effect.",
       name: 'Stalwart'
     }
   ],
@@ -1673,7 +1675,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'steelyspirit',
     {
-      shortDesc: "This Pokemon and its allies' Steel-type moves have their BP mutiplied by 1.5.",
+      shortDesc: "This Pokemon and its allies' Steel-type moves have their power multiplied by 1.5.",
       name: 'Steely Spirit'
     }
   ],
@@ -1930,8 +1932,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'wanderingspirit',
     {
-      desc: 'The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact.',
-      shortDesc: 'Exchanges abilities when hitting a Pokémon with a contact move.',
+      shortDesc: 'Pokemon making contact with this Pokemon have their Ability swapped with this one.',
       name: 'Wandering Spirit'
     }
   ],

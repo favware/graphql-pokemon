@@ -19927,6 +19927,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       species: 'vivillon',
       num: 666,
       types: ['Bug', 'Flying'],
+      baseForme: 'Meadow',
       genderRatio: { male: 0.5, female: 0.5 },
       baseStats: {
         hp: 80,
@@ -20266,6 +20267,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       species: 'furfrou',
       num: 676,
       types: ['Normal'],
+      baseForme: 'Natural',
       genderRatio: { male: 0.5, female: 0.5 },
       baseStats: {
         hp: 75,
@@ -23825,6 +23827,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       species: 'mimikyu',
       num: 778,
       types: ['Ghost', 'Fairy'],
+      baseForme: 'Disguised',
       genderRatio: { male: 0.5, female: 0.5 },
       baseStats: {
         hp: 55,
@@ -26186,6 +26189,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       species: 'sinistea',
       num: 854,
       types: ['Ghost'],
+      baseForme: 'Phony',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
         hp: 40,
@@ -26201,13 +26205,13 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Purple',
       evos: ['polteageist'],
       eggGroups: ['Mineral', 'Amorphous'],
-      otherFormes: ['sinisteachipped']
+      otherFormes: ['sinisteaantique']
     }
   ],
   [
-    'sinisteachipped',
+    'sinisteaantique',
     {
-      species: 'sinistea-chipped',
+      species: 'sinistea-antique',
       num: 854,
       types: ['Ghost'],
       genderRatio: { male: 0, female: 0 },
@@ -26222,10 +26226,10 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       abilities: { first: 'Weak Armor', hidden: 'Cursed Body' },
       heightm: 0.1,
       weightkg: 0.2,
-      forme: 'chipped',
-      formeLetter: 'C',
+      forme: 'antique',
+      formeLetter: 'A',
       color: 'Purple',
-      evos: ['polteageistchipped'],
+      evos: ['polteageistantique'],
       eggGroups: ['Mineral', 'Amorphous'],
       otherFormes: ['sinistea']
     }
@@ -26236,6 +26240,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       species: 'polteageist',
       num: 855,
       types: ['Ghost'],
+      baseForme: 'Phony',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
         hp: 60,
@@ -26252,18 +26257,18 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'sinistea',
       evoLevel: 'use Cracked Pot',
       eggGroups: ['Mineral', 'Amorphous'],
-      otherFormes: ['polteageistchipped']
+      otherFormes: ['polteageistantique']
     }
   ],
   [
-    'polteageistchipped',
+    'polteageistantique',
     {
-      species: 'polteageist-chipped',
+      species: 'polteageist-antique',
       num: 855,
       types: ['Ghost'],
       baseSpecies: 'polteageist',
-      forme: 'chipped',
-      formeLetter: 'C',
+      forme: 'antique',
+      formeLetter: 'A',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
         hp: 60,
@@ -26277,7 +26282,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 0.2,
       weightkg: 0.4,
       color: 'Purple',
-      prevo: 'sinisteachipped',
+      prevo: 'sinisteaantique',
       evoLevel: 'use Chipped Pot',
       eggGroups: ['Mineral', 'Amorphous'],
       otherFormes: ['polteageist']

@@ -4,7 +4,7 @@ import fs from 'fs';
 import chalk from 'chalk';
 
 let files = glob.sync('**/*.test.?(j|t)s?(x)', { cwd: path.join(__dirname, '../__tests__') });
-files = files.map(file => path.join(__dirname, '../__tests__', file));
+files = files.map((file) => path.join(__dirname, '../__tests__', file));
 const onlyPattern = new RegExp(/(?:describe\.only|it\.only|test\.only)/, 'gm');
 
 let shouldError = false;
@@ -29,7 +29,12 @@ if (shouldError) {
   console.error(
     [
       `${chalk.red('\nLooks like you left focused tests, I found these hits:')}`,
-      `${badPatterns.map((pattern, index) => `- ${chalk.cyan(pattern)} \t${pattern.includes('describe') ? '' : '\t'}  in \t ${badFiles[index]}`).join('\n')}`,
+      `${badPatterns
+        .map(
+          (pattern, index) =>
+            `- ${chalk.cyan(pattern)} \t${pattern.includes('describe') ? '' : '\t'}  in \t ${badFiles[index]}`
+        )
+        .join('\n')}`,
       `${chalk.cyan('Please remove all the focused tests!\n')}`
     ].join('\n')
   );

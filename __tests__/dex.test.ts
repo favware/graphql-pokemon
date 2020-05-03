@@ -1,19 +1,31 @@
+import { GraphQLError } from 'graphql';
 import { formatResponse, gCall } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
-import { GraphQLError } from 'graphql';
 
-const dexDetailsFragment = 'fragment dexdetails on DexDetails { num species baseStatsTotal }';
-const dexEntriesFragment = 'fragment dexentries on DexEntry { num species }';
+const dexDetailsFragment = /* GraphQL */ `
+  fragment dexdetails on DexDetails {
+    num
+    species
+    baseStatsTotal
+  }
+`;
+const dexEntriesFragment = /* GraphQL */ `
+  fragment dexentries on DexEntry {
+    num
+    species
+  }
+`;
 
 describe('getPokemonDetailsByName', () => {
-  const getPokemonDetailsByName = `
-  ${dexDetailsFragment}
+  const getPokemonDetailsByName = /* GraphQL */ `
+    ${dexDetailsFragment}
 
-  query ($pokemon: Pokemon!) {
-    getPokemonDetailsByName(pokemon: $pokemon) {
-      ...dexdetails
+    query($pokemon: Pokemon!) {
+      getPokemonDetailsByName(pokemon: $pokemon) {
+        ...dexdetails
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid pokemon THEN returns DexDetails', async () => {
     const { data } = (await gCall({
@@ -39,14 +51,15 @@ describe('getPokemonDetailsByName', () => {
 });
 
 describe('getPokemonDetails', () => {
-  const getPokemonDetails = `
-  ${dexDetailsFragment}
+  const getPokemonDetails = /* GraphQL */ `
+    ${dexDetailsFragment}
 
-  query ($pokemon: Pokemon!) {
-    getPokemonDetails(pokemon: $pokemon) {
-      ...dexdetails
+    query($pokemon: Pokemon!) {
+      getPokemonDetails(pokemon: $pokemon) {
+        ...dexdetails
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid pokemon THEN returns DexDetails', async () => {
     const { data } = (await gCall({
@@ -71,14 +84,15 @@ describe('getPokemonDetails', () => {
 });
 
 describe('getPokemonDetailsByFuzzy', () => {
-  const getPokemonDetailsByFuzzy = `
-  ${dexDetailsFragment}
+  const getPokemonDetailsByFuzzy = /* GraphQL */ `
+    ${dexDetailsFragment}
 
-  query ($pokemon: String! $skip: Int $take: Int $reverse: Boolean) {
-    getPokemonDetailsByFuzzy(pokemon: $pokemon skip: $skip take: $take reverse: $reverse) {
-      ...dexdetails
+    query($pokemon: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+      getPokemonDetailsByFuzzy(pokemon: $pokemon, skip: $skip, take: $take, reverse: $reverse) {
+        ...dexdetails
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid pokemon THEN returns DexDetails', async () => {
     const { data } = (await gCall({
@@ -141,14 +155,15 @@ describe('getPokemonDetailsByFuzzy', () => {
 });
 
 describe('getDexEntries', () => {
-  const getDexEntries = `
-  ${dexEntriesFragment}
+  const getDexEntries = /* GraphQL */ `
+    ${dexEntriesFragment}
 
-  query ($skip: Int $take: Int $reverse: Boolean $pokemon: String!) {
-    getDexEntries(pokemon: $pokemon skip: $skip take: $take reverse: $reverse) {
-      ...dexentries
+    query($skip: Int, $take: Int, $reverse: Boolean, $pokemon: String!) {
+      getDexEntries(pokemon: $pokemon, skip: $skip, take: $take, reverse: $reverse) {
+        ...dexentries
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a fuzzy pokemon THEN returns DexEntries', async () => {
     const { data } = (await gCall({
@@ -191,10 +206,11 @@ describe('getDexEntries', () => {
 });
 
 describe('getDexEntryBySpeciesName', () => {
-  const getDexEntryBySpeciesName = `
-  query ($pokemon: Pokemon!) {
-    getDexEntryBySpeciesName(pokemon: $pokemon)
-  }`;
+  const getDexEntryBySpeciesName = /* GraphQL */ `
+    query($pokemon: Pokemon!) {
+      getDexEntryBySpeciesName(pokemon: $pokemon)
+    }
+  `;
 
   test('GIVEN a valid pokemon THEN returns JSONObject', async () => {
     const { data } = (await gCall({
@@ -219,10 +235,11 @@ describe('getDexEntryBySpeciesName', () => {
 });
 
 describe('getDexEntryByDexNumber', () => {
-  const getDexEntryByDexNumber = `
-  query ($pokemonNr: Float!) {
-    getDexEntryByDexNumber(num: $pokemonNr)
-  }`;
+  const getDexEntryByDexNumber = /* GraphQL */ `
+    query($pokemonNr: Float!) {
+      getDexEntryByDexNumber(num: $pokemonNr)
+    }
+  `;
 
   test('GIVEN a valid pokemon number THEN returns JSONObject', async () => {
     const { data } = (await gCall({

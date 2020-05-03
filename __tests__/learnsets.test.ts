@@ -1,32 +1,58 @@
+import { GraphQLError } from 'graphql';
 import { formatResponse, gCall } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
-import { GraphQLError } from 'graphql';
 
-const lvlmovesFragment = 'fragment lvlmoves on LearnsetLevelUpMove { name generation level }';
-const movesFragment = 'fragment moves on LearnsetMove { name generation }';
-const entryFragment = `
-    fragment entry on LearnsetEntry {
-      levelUpMoves { ...lvlmoves }
-      virtualTransferMoves { ...moves }
-      tutorMoves { ...moves }
-      tmMoves { ...moves }
-      eggMoves { ...moves }
-      eventMoves { ...moves }
-      dreamworldMoves { ...moves }
+const lvlmovesFragment = /* GraphQL */ `
+  fragment lvlmoves on LearnsetLevelUpMove {
+    name
+    generation
+    level
+  }
+`;
+const movesFragment = /* GraphQL */ `
+  fragment moves on LearnsetMove {
+    name
+    generation
+  }
+`;
+const entryFragment = /* GraphQL */ `
+  fragment entry on LearnsetEntry {
+    levelUpMoves {
+      ...lvlmoves
     }
-  `;
+    virtualTransferMoves {
+      ...moves
+    }
+    tutorMoves {
+      ...moves
+    }
+    tmMoves {
+      ...moves
+    }
+    eggMoves {
+      ...moves
+    }
+    eventMoves {
+      ...moves
+    }
+    dreamworldMoves {
+      ...moves
+    }
+  }
+`;
 
 describe('getPokemonLearnset', () => {
-  const getPokemonLearnset = `
-  ${lvlmovesFragment}
-  ${movesFragment}
-  ${entryFragment}
+  const getPokemonLearnset = /* GraphQL */ `
+    ${lvlmovesFragment}
+    ${movesFragment}
+    ${entryFragment}
 
-  query ($pokemon: Pokemon! $moves: [Moves!]! $generation: Int) {
-    getPokemonLearnset(pokemon: $pokemon moves: $moves generation: $generation) {
-      ...entry
+    query($pokemon: Pokemon!, $moves: [Moves!]!, $generation: Int) {
+      getPokemonLearnset(pokemon: $pokemon, moves: $moves, generation: $generation) {
+        ...entry
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid pokemon and move array THEN returns LearnsetEntry', async () => {
     const { data } = (await gCall({
@@ -127,16 +153,17 @@ describe('getPokemonLearnset', () => {
 });
 
 describe('getPokemonLearnsetByFuzzy', () => {
-  const getPokemonLearnsetByFuzzy = `
-  ${lvlmovesFragment}
-  ${movesFragment}
-  ${entryFragment}
+  const getPokemonLearnsetByFuzzy = /* GraphQL */ `
+    ${lvlmovesFragment}
+    ${movesFragment}
+    ${entryFragment}
 
-  query ($pokemon: String! $moves: [String!]! $generation: Int) {
-    getPokemonLearnsetByFuzzy(pokemon: $pokemon moves: $moves generation: $generation) {
-      ...entry
+    query($pokemon: String!, $moves: [String!]!, $generation: Int) {
+      getPokemonLearnsetByFuzzy(pokemon: $pokemon, moves: $moves, generation: $generation) {
+        ...entry
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a fuzzy pokemon and exact move array THEN returns LearnsetEntry', async () => {
     const { data } = (await gCall({
@@ -144,7 +171,11 @@ describe('getPokemonLearnsetByFuzzy', () => {
       variableValues: { pokemon: 'dragoni', moves: ['dragondance'] }
     }).then(formatResponse)) as DataResponse<'getPokemonLearnsetByFuzzy'>;
 
-    expect(data.getPokemonLearnsetByFuzzy.levelUpMoves).toContainEqual({ name: 'dragondance', generation: 7, level: 61 });
+    expect(data.getPokemonLearnsetByFuzzy.levelUpMoves).toContainEqual({
+      name: 'dragondance',
+      generation: 7,
+      level: 61
+    });
     expect(data.getPokemonLearnsetByFuzzy.eventMoves).toContainEqual({ name: 'dragondance', generation: 6 });
     expect(data).toMatchSnapshot();
   });
@@ -155,7 +186,11 @@ describe('getPokemonLearnsetByFuzzy', () => {
       variableValues: { pokemon: 'dragonite', moves: ['dragondan'] }
     }).then(formatResponse)) as DataResponse<'getPokemonLearnsetByFuzzy'>;
 
-    expect(data.getPokemonLearnsetByFuzzy.levelUpMoves).toContainEqual({ name: 'dragondance', generation: 7, level: 61 });
+    expect(data.getPokemonLearnsetByFuzzy.levelUpMoves).toContainEqual({
+      name: 'dragondance',
+      generation: 7,
+      level: 61
+    });
     expect(data.getPokemonLearnsetByFuzzy.eventMoves).toContainEqual({ name: 'dragondance', generation: 6 });
     expect(data).toMatchSnapshot();
   });
@@ -166,7 +201,11 @@ describe('getPokemonLearnsetByFuzzy', () => {
       variableValues: { pokemon: 'dragoni', moves: ['dragondan'] }
     }).then(formatResponse)) as DataResponse<'getPokemonLearnsetByFuzzy'>;
 
-    expect(data.getPokemonLearnsetByFuzzy.levelUpMoves).toContainEqual({ name: 'dragondance', generation: 7, level: 61 });
+    expect(data.getPokemonLearnsetByFuzzy.levelUpMoves).toContainEqual({
+      name: 'dragondance',
+      generation: 7,
+      level: 61
+    });
     expect(data.getPokemonLearnsetByFuzzy.eventMoves).toContainEqual({ name: 'dragondance', generation: 6 });
     expect(data).toMatchSnapshot();
   });

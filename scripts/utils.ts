@@ -1,11 +1,11 @@
-import { writeFileAtomic, remove } from 'fs-nextra';
+import { remove, writeFileAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { resolve } from 'path';
 import ts from 'typescript';
 
 export const mapToJson = (map: Map<string, unknown>) => JSON.stringify([...map]);
 
-export const needFile = async (url: string) => {
+export const importFileFromWeb = async <R>({ url, temporaryFileName }: { url: string; temporaryFileName: string }) => {
   const request = await fetch(url);
   const body = await request.text();
 
@@ -24,10 +24,10 @@ export const needFile = async (url: string) => {
     }
   });
 
-  const temporaryOutputFile = resolve(__dirname, 'tiers.ts');
+  const temporaryOutputFile = resolve(__dirname, temporaryFileName);
 
   await writeFileAtomic(temporaryOutputFile, result.outputText);
-  const TiersData = (await import(resolve(__dirname, 'tiers.ts'))) as { BattleFormatsData: Record<string, SpeciesFormatsData> };
+  const TiersData = (await import(temporaryOutputFile)) as R;
 
   await remove(temporaryOutputFile);
 
@@ -35,8 +35,12 @@ export const needFile = async (url: string) => {
 };
 
 export interface DataJSON {
-  lastSha: string;
+  tiersLastSha: string;
+  learnsetsLastSha: string;
 }
+
+export type SmogonTiersData = Record<'BattleFormatsData', Record<string, SpeciesFormatsData>>;
+export type SmogonLearnsetData = Record<'BattleLearnsets', Record<string, LearnsetData>>;
 
 interface SpeciesFormatsData {
   comboMoves?: readonly string[];
@@ -51,7 +55,6 @@ interface SpeciesFormatsData {
   tier?: string;
   unreleasedHidden?: boolean | 'Past';
 }
-
 type Nonstandard = 'Past' | 'Future' | 'Unobtainable' | 'CAP' | 'LGPE' | 'Custom';
 interface Gen2RandomSet {
   chance: number;
@@ -65,3 +68,32 @@ interface Gen2RandomSet {
   fillerMoves3?: string[];
   fillerMoves4?: string[];
 }
+interface LearnsetData {
+  learnset?: { [moveid: string]: string[] };
+  eventData?: EventInfo[];
+  eventOnly?: boolean;
+  encounters?: EventInfo[];
+  exists?: boolean;
+}
+interface EventInfo {
+  generation: number;
+  level?: number;
+  /** true: always shiny, 1: sometimes shiny, false | undefined: never shiny */
+  shiny?: boolean | 1;
+  gender?: GenderName;
+  nature?: string;
+  ivs?: SparseStatsTable;
+  perfectIVs?: number;
+  /** true: has hidden ability, false | undefined: never has hidden ability */
+  isHidden?: boolean;
+  abilities?: string[];
+  maxEggMoves?: number;
+  moves?: string[];
+  pokeball?: string;
+  from?: string;
+}
+type GenderName = 'M' | 'F' | 'N' | '';
+type SparseStatsTable = Partial<StatsTable>;
+type StatNameExceptHP = 'atk' | 'def' | 'spa' | 'spd' | 'spe';
+type StatName = 'hp' | StatNameExceptHP;
+type StatsTable = { [stat in StatName]: number };

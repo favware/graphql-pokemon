@@ -1,13 +1,14 @@
 /* eslint-disable no-console */
 import { constants, Timestamp } from '@klasa/timestamp';
+import chalk from 'chalk';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import { DataJSON, needFile } from './utils';
+import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 
-const DATA_FILE = join(__dirname, 'smogonTiersData.json');
+const CI_DATA_FILE = join(__dirname, 'ci-data.json');
 const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
-const UPDATED_FORMATS_DATA = readJSON(DATA_FILE) as Promise<DataJSON>;
+const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
@@ -18,24 +19,28 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
   const request = await fetch(url);
 
-  const [commits, { lastSha }] = await Promise.all([request.json(), UPDATED_FORMATS_DATA]);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [commits, ciData] = await Promise.all([request.json() as Record<string, any>, UPDATED_FORMATS_DATA]);
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
-  const output: Record<string, string> = {};
   if (!data) {
-    console.log('no data from request');
+    console.log(chalk.red('no data from request'));
 
     return process.exit(1);
   }
 
-  if (data.sha === lastSha) {
-    console.log('Fetched data but no new commit was available');
+  if (data.sha === ciData.tiersLastSha) {
+    console.log(chalk.yellow('Fetched data but no new commit was available'));
 
     return process.exit(0);
   }
 
-  const { BattleFormatsData } = await needFile('https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.ts');
+  const { BattleFormatsData } = await importFileFromWeb<SmogonTiersData>({
+    url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.ts',
+    temporaryFileName: 'tiers.ts'
+  });
 
+  const output: Record<string, string> = {};
   for (const mon in BattleFormatsData) {
     const tier = BattleFormatsData[mon].isNonstandard || BattleFormatsData[mon].tier;
     output[mon] = tier || 'Refer to base form / unknown';
@@ -43,12 +48,11 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
   const writePromises: Promise<void>[] = [];
 
-  if (data.sha) writePromises.push(writeJSONAtomic(DATA_FILE, { lastSha: data.sha }));
+  if (data.sha) writePromises.push(writeJSONAtomic(CI_DATA_FILE, { ...ciData, tiersLastSha: data.sha }));
   if (output && Object.entries(output).length) writePromises.push(writeJSONAtomic(FORMATS_FILE, output));
 
   await Promise.all(writePromises);
 
-  console.log(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`);
-
+  console.log(chalk.green(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`));
   return process.exit(0);
 })();

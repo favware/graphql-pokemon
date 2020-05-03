@@ -31,11 +31,10 @@ coverage/
 
 # Generated files
 
-## Download gh cli binary
-gh
-
 ## Scripts
-scripts/out.txt
+gh
+scripts/tiers.ts
+scripts/learnsets.ts
 
 ## API Bundle
 generated/api/

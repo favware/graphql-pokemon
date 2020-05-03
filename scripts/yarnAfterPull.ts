@@ -9,7 +9,7 @@ import chalk from 'chalk';
   const { stdout } = await execa('git', ['show', '--name-only'], { cwd: ROOT_DIR });
   const lastCommitFiles = stdout.split('\n').slice(6);
 
-  const hasLockfileInCommit = lastCommitFiles.some(commitFile => commitFile.toLowerCase() === 'yarn.lock');
+  const hasLockfileInCommit = lastCommitFiles.some((commitFile) => commitFile.toLowerCase() === 'yarn.lock');
 
   if (hasLockfileInCommit) {
     log(chalk.cyan('Yarn lockfile was updated, running Yarn for you'));

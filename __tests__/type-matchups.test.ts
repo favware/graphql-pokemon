@@ -1,9 +1,9 @@
+import { GraphQLError } from 'graphql';
 import { formatResponse, gCall } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
-import { GraphQLError } from 'graphql';
 
 describe('getTypeMatchup', () => {
-  const typeEntryFragment = `
+  const typeEntryFragment = /* GraphQL */ `
     fragment typeentry on TypeEntry {
       doubleEffectiveTypes
       effectiveTypes
@@ -14,19 +14,20 @@ describe('getTypeMatchup', () => {
     }
   `;
 
-  const getTypeMatchup = `
-  ${typeEntryFragment}
+  const getTypeMatchup = /* GraphQL */ `
+    ${typeEntryFragment}
 
-  query ($types: [Types!]!) {
-    getTypeMatchup(types: $types) {
-      attacking {
-        ...typeentry
-      }
-      defending {
-        ...typeentry
+    query($types: [Types!]!) {
+      getTypeMatchup(types: $types) {
+        attacking {
+          ...typeentry
+        }
+        defending {
+          ...typeentry
+        }
       }
     }
-  }`;
+  `;
 
   test('GIVEN a one valid type THEN returns TypeMatchups', async () => {
     const { data } = (await gCall({
@@ -73,10 +74,11 @@ describe('getTypeMatchup', () => {
 });
 
 describe('getTypeByName', () => {
-  const getTypeByName = `
-  query ($type: Types!) {
-    getTypeByName(type: $type)
-  }`;
+  const getTypeByName = /* GraphQL */ `
+    query($type: Types!) {
+      getTypeByName(type: $type)
+    }
+  `;
 
   test('GIVEN a valid type THEN returns JSONObject', async () => {
     const { data } = (await gCall({

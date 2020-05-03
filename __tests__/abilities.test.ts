@@ -3,12 +3,13 @@ import { DataResponse } from './testUtils/types';
 import { GraphQLError } from 'graphql';
 
 describe('getAbilityDetailsByName', () => {
-  const getAbilityDetailsByName = `
-  query ($ability: Abilities!) {
-    getAbilityDetailsByName(ability: $ability) {
-      name
+  const getAbilityDetailsByName = /* GraphQL */ `
+    query($ability: Abilities!) {
+      getAbilityDetailsByName(ability: $ability) {
+        name
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
     const { data } = (await gCall({
@@ -32,12 +33,13 @@ describe('getAbilityDetailsByName', () => {
 });
 
 describe('getAbilityDetailsByFuzzy', () => {
-  const getAbilityDetailsByFuzzy = `
-  query ($ability: String! $skip: Int $take: Int $reverse: Boolean) {
-    getAbilityDetailsByFuzzy(ability: $ability skip: $skip take: $take reverse: $reverse) {
-      name
+  const getAbilityDetailsByFuzzy = /* GraphQL */ `
+    query($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+      getAbilityDetailsByFuzzy(ability: $ability, skip: $skip, take: $take, reverse: $reverse) {
+        name
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
     const { data } = (await gCall({
@@ -101,10 +103,11 @@ describe('getAbilityDetailsByFuzzy', () => {
 });
 
 describe('getAbilityByFuzzy', () => {
-  const getAbilityByFuzzy = `
-  query ($ability: String! $skip: Int $take: Int $reverse: Boolean) {
-    getAbilityByFuzzy(ability: $ability skip: $skip take: $take reverse: $reverse)
-  }`;
+  const getAbilityByFuzzy = /* GraphQL */ `
+    query($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+      getAbilityByFuzzy(ability: $ability, skip: $skip, take: $take, reverse: $reverse)
+    }
+  `;
 
   test('GIVEN a valid ability THEN returns JSONObject', async () => {
     const { data } = (await gCall({
@@ -165,10 +168,11 @@ describe('getAbilityByFuzzy', () => {
 });
 
 describe('getAbilityByName', () => {
-  const getAbilityByName = `
-  query ($ability: Abilities!) {
-    getAbilityByName(ability: $ability)
-  }`;
+  const getAbilityByName = /* GraphQL */ `
+    query($ability: Abilities!) {
+      getAbilityByName(ability: $ability)
+    }
+  `;
 
   test('GIVEN a valid ability THEN returns JSONObject', async () => {
     const { data } = (await gCall({

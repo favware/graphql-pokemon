@@ -1,14 +1,15 @@
+import { GraphQLError } from 'graphql';
 import { formatResponse, gCall } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
-import { GraphQLError } from 'graphql';
 
 describe('getMoveDetailsByName', () => {
-  const getMoveDetailsByName = `
-  query ($move: Moves!) {
-    getMoveDetailsByName(move: $move) {
-      name
+  const getMoveDetailsByName = /* GraphQL */ `
+    query($move: Moves!) {
+      getMoveDetailsByName(move: $move) {
+        name
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid move THEN returns MoveEntry', async () => {
     const { data } = (await gCall({
@@ -32,12 +33,13 @@ describe('getMoveDetailsByName', () => {
 });
 
 describe('getMoveDetailsByFuzzy', () => {
-  const getMoveDetailsByFuzzy = `
-  query ($move: String! $skip: Int $take: Int $reverse: Boolean) {
-    getMoveDetailsByFuzzy(move: $move skip: $skip take: $take reverse: $reverse) {
-      name
+  const getMoveDetailsByFuzzy = /* GraphQL */ `
+    query($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+      getMoveDetailsByFuzzy(move: $move, skip: $skip, take: $take, reverse: $reverse) {
+        name
+      }
     }
-  }`;
+  `;
 
   test('GIVEN a valid move THEN returns MoveEntry', async () => {
     const { data } = (await gCall({
@@ -99,10 +101,11 @@ describe('getMoveDetailsByFuzzy', () => {
 });
 
 describe('getMoveByFuzzy', () => {
-  const getMoveByFuzzy = `
-  query ($move: String! $skip: Int $take: Int $reverse: Boolean) {
-    getMoveByFuzzy(move: $move skip: $skip take: $take reverse: $reverse)
-  }`;
+  const getMoveByFuzzy = /* GraphQL */ `
+    query($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+      getMoveByFuzzy(move: $move, skip: $skip, take: $take, reverse: $reverse)
+    }
+  `;
 
   test('GIVEN a valid move THEN returns JSONObject', async () => {
     const { data } = (await gCall({
@@ -163,10 +166,11 @@ describe('getMoveByFuzzy', () => {
 });
 
 describe('getMoveByName', () => {
-  const getMoveByName = `
-  query ($move: Moves!) {
-    getMoveByName(move: $move)
-  }`;
+  const getMoveByName = /* GraphQL */ `
+    query($move: Moves!) {
+      getMoveByName(move: $move)
+    }
+  `;
 
   test('GIVEN a valid move THEN returns JSONObject', async () => {
     const { data } = (await gCall({

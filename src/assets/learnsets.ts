@@ -9,31 +9,32 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
   [
     'missingno',
     {
-      blizzard: ['5L1'],
-      bubblebeam: ['5L1'],
-      cut: ['5L1'],
-      doubleedge: ['5L1'],
-      earthquake: ['5L1'],
-      fissure: ['5L1'],
-      fly: ['5L1'],
-      icebeam: ['5L1'],
-      megakick: ['5L1'],
-      megapunch: ['5L1'],
-      psychic: ['5L1'],
-      rage: ['5L1'],
-      razorwind: ['5L1'],
-      rest: ['5L1'],
-      seismictoss: ['5L1'],
-      skyattack: ['5L1'],
-      submission: ['5L1'],
-      swordsdance: ['5L1'],
-      takedown: ['5L1'],
-      teleport: ['5L1'],
-      thunder: ['5L1'],
-      thunderwave: ['5L1'],
-      toxic: ['5L1'],
-      triattack: ['5L1'],
-      watergun: ['5L1']
+      blizzard: ['3L1'],
+      bubblebeam: ['3L1'],
+      cut: ['3L1'],
+      doubleedge: ['3L1'],
+      earthquake: ['3L1'],
+      fissure: ['3L1'],
+      fly: ['3L1'],
+      icebeam: ['3L1'],
+      megakick: ['3L1'],
+      megapunch: ['3L1'],
+      psychic: ['3L1'],
+      rage: ['3L1'],
+      razorwind: ['3L1'],
+      rest: ['3L1'],
+      seismictoss: ['3L1'],
+      skyattack: ['3L1'],
+      submission: ['3L1'],
+      substitute: ['3L1'],
+      swordsdance: ['3L1'],
+      takedown: ['3L1'],
+      teleport: ['3L1'],
+      thunder: ['3L1'],
+      thunderwave: ['3L1'],
+      toxic: ['3L1'],
+      triattack: ['3L1'],
+      watergun: ['3L1']
     }
   ],
   [
@@ -39051,6 +39052,9 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '7L49', '6T', '6L49', '5T', '5L65', '4T', '4L65']
     }
   ],
+  ['deoxysattack', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['deoxysdefense', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['deoxysspeed', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'turtwig',
     {
@@ -44537,6 +44541,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       willowisp: ['7M', '6M', '5M', '4M']
     }
   ],
+  ['giratinaorigin', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'cresselia',
     {
@@ -44898,6 +44903,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '6T', '5T', '4T']
     }
   ],
+  ['shayminsky', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'arceus',
     {
@@ -45036,6 +45042,23 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '6T', '5T', '4T']
     }
   ],
+  ['arceusbug', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusdark', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusdragon', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuselectric', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusfairy', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusfighting', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusfire', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusflying', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusghost', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusgrass', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusground', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusice', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuspoison', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuspsychic', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusrock', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceussteel', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuswater', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'victini',
     {
@@ -55697,6 +55720,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       uturn: ['7M', '6M', '5M']
     }
   ],
+  ['tornadustherian', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'thundurus',
     {
@@ -55773,6 +55797,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       wildcharge: ['7M', '6M', '5M', '5S2']
     }
   ],
+  ['thundurustherian', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'reshiram',
     {
@@ -56011,6 +56036,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       uturn: ['7M', '6M', '6S3', '5M']
     }
   ],
+  ['landorustherian', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'kyurem',
     {
@@ -56329,6 +56355,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       xscissor: ['8M', '7M', '6M', '5M']
     }
   ],
+  ['keldeoresolute', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'meloetta',
     {
@@ -56508,6 +56535,10 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '6T', '5T']
     }
   ],
+  ['genesectburn', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['genesectchill', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['genesectdouse', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['genesectshock', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'chespin',
     {
@@ -61598,6 +61629,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '6T']
     }
   ],
+  ['zygarde10', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'diancie',
     {
@@ -61754,6 +61786,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '7L46', '6T', '6L46']
     }
   ],
+  ['hoopaunbound', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'volcanion',
     {
@@ -61965,7 +61998,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       falseswipe: ['8M', '7M'],
       featherdance: ['8L51', '7L49'],
       foresight: ['7L19'],
-      frenzyplant: ['7T'],
+      frenzyplant: ['8T', '7T'],
       frustration: ['7M'],
       furyattack: ['7L33'],
       gigadrain: ['8M', '7T'],
@@ -62158,7 +62191,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bind: ['7T'],
       bite: ['8L15', '7L24'],
-      blastburn: ['7T'],
+      blastburn: ['8T', '7T'],
       blazekick: ['8M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
@@ -62409,7 +62442,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       hail: ['8M', '7M'],
       helpinghand: ['8M', '7T'],
       hiddenpower: ['7M'],
-      hydrocannon: ['7T'],
+      hydrocannon: ['8T', '7T'],
       hydropump: ['8M', '8L58', '7L55'],
       hyperbeam: ['8M'],
       hypervoice: ['8M', '8L44', '7T', '7L38', '7S0'],
@@ -71863,7 +71896,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       brickbreak: ['8M'],
       brutalswing: ['8M'],
       closecombat: ['8M', '8L77'],
-      crunch: ['8M', '8L55'],
+      crunch: ['8M', '8L55', '8S0'],
       dig: ['8M'],
       endure: ['8M'],
       facade: ['8M'],
@@ -71878,7 +71911,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       hypervoice: ['8M'],
       icefang: ['8M'],
       imprison: ['8M'],
-      ironhead: ['8M', '8L33'],
+      ironhead: ['8M', '8L33', '8S0'],
       irontail: ['8M'],
       laserfocus: ['8L44'],
       metalclaw: ['8L1'],
@@ -71894,7 +71927,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       revenge: ['8M'],
       reversal: ['8M'],
       round: ['8M'],
-      sacredsword: ['8L1'],
+      sacredsword: ['8L1', '8S0'],
       scaryface: ['8M'],
       slash: ['8L11'],
       sleeptalk: ['8M'],
@@ -71904,7 +71937,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       steelbeam: ['8M'],
       substitute: ['8M'],
       swift: ['8M'],
-      swordsdance: ['8M', '8L22'],
+      swordsdance: ['8M', '8L22', '8S0'],
       tailslap: ['8M'],
       thunderfang: ['8M'],
       wildcharge: ['8M'],
@@ -71918,7 +71951,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       agility: ['8M'],
       bite: ['8L1'],
       closecombat: ['8M', '8L77'],
-      crunch: ['8M', '8L55'],
+      crunch: ['8M', '8L55', '8S0'],
       dazzlinggleam: ['8M'],
       dig: ['8M'],
       endure: ['8M'],
@@ -71935,8 +71968,8 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       hypervoice: ['8M'],
       icefang: ['8M'],
       imprison: ['8M'],
-      irondefense: ['8M', '8L22'],
-      ironhead: ['8M', '8L33'],
+      irondefense: ['8M', '8L22', '8S0'],
+      ironhead: ['8M', '8L33', '8S0'],
       irontail: ['8M'],
       laserfocus: ['8L44'],
       lightscreen: ['8M'],
@@ -71957,7 +71990,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       round: ['8M'],
       safeguard: ['8M'],
       scaryface: ['8M'],
-      slash: ['8L11'],
+      slash: ['8L11', '8S0'],
       sleeptalk: ['8M'],
       snarl: ['8M'],
       snore: ['8M'],
@@ -71981,16 +72014,16 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       brutalswing: ['8M'],
       confuseray: ['8L1'],
       cosmicpower: ['8M', '8L64'],
-      crosspoison: ['8M', '8L32'],
+      crosspoison: ['8M', '8L32', '8S0'],
       dracometeor: ['8T'],
       dragondance: ['8M', '8L24'],
-      dragonpulse: ['8M', '8L40'],
+      dragonpulse: ['8M', '8L40', '8S0'],
       dragontail: ['8L1'],
-      dynamaxcannon: ['8L56'],
+      dynamaxcannon: ['8L56', '8S0'],
       endure: ['8M'],
       eternabeam: ['8L88'],
       facade: ['8M'],
-      flamethrower: ['8M', '8L48'],
+      flamethrower: ['8M', '8L48', '8S0'],
       flashcannon: ['8M'],
       fly: ['8M'],
       gigaimpact: ['8M'],

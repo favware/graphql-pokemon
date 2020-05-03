@@ -4,6 +4,5 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true
-  },
-  "include": ["src"]
+  }
 }

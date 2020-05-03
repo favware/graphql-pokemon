@@ -32,7 +32,9 @@ coverage/
 # Generated files
 
 ## Scripts
-scripts/out.txt
+gh
+scripts/auto/tiers.ts
+scripts/auto/learnsets.ts
 
 ## API Bundle
 generated/api/

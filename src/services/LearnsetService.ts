@@ -15,57 +15,60 @@ export default class LearnsetService {
     }
 
     const learnsetEntry = new LearnsetEntry();
-    const levelupMoves: LearnsetLevelUpMove[] = [];
-    const virtualTransferMoves: LearnsetMove[] = [];
-    const tutorMoves: LearnsetMove[] = [];
-    const tmMoves: LearnsetMove[] = [];
-    const eggMoves: LearnsetMove[] = [];
-    const eventMoves: LearnsetMove[] = [];
-    const dreamworldMoves: LearnsetMove[] = [];
 
-    for (const move of moves) {
-      if (move in learnset) {
-        const methods = learnset[move] as string[];
+    if (learnset.eventOnly === undefined) {
+      const levelupMoves: LearnsetLevelUpMove[] = [];
+      const virtualTransferMoves: LearnsetMove[] = [];
+      const tutorMoves: LearnsetMove[] = [];
+      const tmMoves: LearnsetMove[] = [];
+      const eggMoves: LearnsetMove[] = [];
+      const eventMoves: LearnsetMove[] = [];
+      const dreamworldMoves: LearnsetMove[] = [];
 
-        for (const method of methods) {
-          if (generation && this.getMethodGeneration(method) !== generation) continue;
+      for (const move of moves) {
+        if (Reflect.has(learnset, move)) {
+          const methods = learnset[move] as string[];
 
-          switch (this.getMethodType(method)) {
-            case 'L':
-              levelupMoves.push(this.createLevelupMove(move, this.getMethodLevel(method), this.getMethodGeneration(method)));
-              break;
-            case 'V':
-              virtualTransferMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
-              break;
-            case 'T':
-              tutorMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
-              break;
-            case 'M':
-              tmMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
-              break;
-            case 'E':
-              eggMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
-              break;
-            case 'S':
-              eventMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
-              break;
-            case 'D':
-              dreamworldMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
-              break;
-            default:
-              break;
+          for (const method of methods) {
+            if (generation && this.getMethodGeneration(method) !== generation) continue;
+
+            switch (this.getMethodType(method)) {
+              case 'L':
+                levelupMoves.push(this.createLevelupMove(move, this.getMethodLevel(method), this.getMethodGeneration(method)));
+                break;
+              case 'V':
+                virtualTransferMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                break;
+              case 'T':
+                tutorMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                break;
+              case 'M':
+                tmMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                break;
+              case 'E':
+                eggMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                break;
+              case 'S':
+                eventMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                break;
+              case 'D':
+                dreamworldMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
+                break;
+              default:
+                break;
+            }
           }
         }
       }
-    }
 
-    learnsetEntry.levelUpMoves = levelupMoves;
-    learnsetEntry.virtualTransferMoves = virtualTransferMoves;
-    learnsetEntry.tutorMoves = tutorMoves;
-    learnsetEntry.tmMoves = tmMoves;
-    learnsetEntry.eggMoves = eggMoves;
-    learnsetEntry.eventMoves = eventMoves;
-    learnsetEntry.dreamworldMoves = dreamworldMoves;
+      learnsetEntry.levelUpMoves = levelupMoves;
+      learnsetEntry.virtualTransferMoves = virtualTransferMoves;
+      learnsetEntry.tutorMoves = tutorMoves;
+      learnsetEntry.tmMoves = tmMoves;
+      learnsetEntry.eggMoves = eggMoves;
+      learnsetEntry.eventMoves = eventMoves;
+      learnsetEntry.dreamworldMoves = dreamworldMoves;
+    }
 
     const pokemonEntry = pokedex.get(pokemon) as Pokemon.DexEntry;
     learnsetEntry.sprite = this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite);

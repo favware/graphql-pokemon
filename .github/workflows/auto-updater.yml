@@ -1,12 +1,12 @@
-name: Update Showdown Tierlists
+name: Automatic Data Update
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: "0 2 * * *"
 
 jobs:
-  UpdateTierlists:
-    name: Update Showdown Tierlists
+  DataUpdater:
+    name: Automatic Data Update
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
@@ -24,12 +24,14 @@ jobs:
           key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
       - name: Install Deps
         run: yarn
-      - name: Run Updater
-        run: yarn scripts:smogontiersupdater
+      - name: Run Smogon Tiers updater
+        run: yarn au:tiers
+      - name: Run Learnsets updater
+        run: yarn au:learnsets
       - name: Run prettier on the code
         run: yarn style
       - name: Install GitHub CLI
-        run: curl -sL $(curl -s https://api.github.com/repos/cli/cli/releases/latest | jq ".assets | map(select(.browser_download_url | contains(\"_linux_arm64.tar.gz\")))[0].browser_download_url" | xargs) | tar -xz --wildcards "*gh" && mv gh*linux_arm64/bin/gh . && rm -r gh_*linux_arm64
+        run: curl -sL $(curl -s https://api.github.com/repos/cli/cli/releases/latest | jq ".assets | map(select(.browser_download_url | contains(\"_linux_amd64.tar.gz\")))[0].browser_download_url" | xargs) | tar -xz --wildcards "*gh" && mv gh*linux_amd64/bin/gh . && rm -r gh_*linux_amd64
       - name: Commit any changes and create a pull request
         run: |
           git add .;
@@ -39,10 +41,10 @@ jobs:
             git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git";
             git config --local user.email "${GITHUB_EMAIL}";
             git config --local user.name "${GITHUB_USER}";
-            git checkout -b favware-bot/update-smogon-tierlists/$(date +%F-%H-%M);
-            git commit -sam "refactor: update smogon tierlists";
+            git checkout -b favware-bot/update-data/$(date +%F-%H-%M);
+            git commit -sam "refactor: update data";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            ./gh pr create -t "refactor: update smogon tierlists" -b "*bleep bloop* I updated the Smogon tier list" -B staging;
+            ./gh pr create -t "refactor: update data" -b "*bleep bloop* I updated the data files" -B staging;
           fi
         env:
           GITHUB_USER: Favware-bot

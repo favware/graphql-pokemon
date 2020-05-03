@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
-import fetch from 'node-fetch';
-import { readJSON, writeJSONAtomic } from 'fs-nextra';
-import { join } from 'path';
 import { constants, Timestamp } from '@klasa/timestamp';
-import { needFile, Formats, DataJSON } from './utils';
+import { readJSON, writeJSONAtomic } from 'fs-nextra';
+import fetch from 'node-fetch';
+import { join } from 'path';
+import { DataJSON, needFile } from './utils';
 
 const DATA_FILE = join(__dirname, 'smogonTiersData.json');
 const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
@@ -21,7 +21,7 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
   const [commits, { lastSha }] = await Promise.all([request.json(), UPDATED_FORMATS_DATA]);
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
-  const output: Formats = {};
+  const output: Record<string, string> = {};
   if (!data) {
     console.log('no data from request');
 
@@ -34,11 +34,11 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
     return process.exit(0);
   }
 
-  const { BattleFormatsData } = await needFile('https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.js');
+  const { BattleFormatsData } = await needFile('https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.ts');
 
   for (const mon in BattleFormatsData) {
     const tier = BattleFormatsData[mon].isNonstandard || BattleFormatsData[mon].tier;
-    output[mon] = tier;
+    output[mon] = tier || 'Refer to base form / unknown';
   }
 
   const writePromises: Promise<void>[] = [];

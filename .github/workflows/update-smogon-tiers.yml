@@ -29,7 +29,7 @@ jobs:
       - name: Run prettier on the code
         run: yarn style
       - name: Install GitHub CLI
-        run: curl -sL $(curl -s https://api.github.com/repos/cli/cli/releases/latest | jq ".assets | map(select(.browser_download_url | contains(\"_linux_arm64.tar.gz\")))[0].browser_download_url" | xargs) | tar -xz --wildcards "*gh" && mv gh*linux_arm64/bin/gh . && rm -r gh_*linux_arm64
+        run: curl -sL $(curl -s https://api.github.com/repos/cli/cli/releases/latest | jq ".assets | map(select(.browser_download_url | contains(\"_linux_amd64.tar.gz\")))[0].browser_download_url" | xargs) | tar -xz --wildcards "*gh" && mv gh*linux_amd64/bin/gh . && rm -r gh_*linux_amd64
       - name: Commit any changes and create a pull request
         run: |
           git add .;

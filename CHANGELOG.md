@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 3.1.0 (2020-05-03)
+
+
+### Features
+
+* various updates and fixes ([#184](https://github.com/favware/graphql-pokemon/issues/184)) ([c05c736](https://github.com/favware/graphql-pokemon/commit/c05c7369eaaacfc0356b82039ca9f16d23644e8a))
+
 ### 3.0.3 (2020-05-02)
 
 ### 3.0.2 (2020-05-02)

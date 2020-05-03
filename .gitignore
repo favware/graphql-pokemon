@@ -31,6 +31,9 @@ coverage/
 
 # Generated files
 
+## Download gh cli binary
+gh
+
 ## Scripts
 gh
 scripts/auto/tiers.ts

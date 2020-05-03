@@ -1,9 +1,11 @@
-import { Arg, Args, Query, Resolver } from 'type-graphql';
-import AbilityEntry from '../structures/AbilityEntry';
-import AbilityService from '../services/AbilityService';
-import AbilityPaginatedArgs, { Abilities } from '../arguments/AbilityPaginatedArgs';
-import Util from '../utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
+import { Arg, Args, Query, Resolver } from 'type-graphql';
+import AbilityPaginatedArgs, { Abilities } from '../arguments/AbilityPaginatedArgs';
+import AbilityService from '../services/AbilityService';
+import AbilityEntry from '../structures/AbilityEntry';
+import { getRequestedFields } from '../utils/getRequestedFields';
+import GraphQLSet from '../utils/GraphQLSet';
+import Util from '../utils/util';
 
 @Resolver(AbilityEntry)
 export default class AbilityResolver {
@@ -20,7 +22,10 @@ export default class AbilityResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  async getAbilityDetailsByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs) {
+  async getAbilityDetailsByFuzzy(
+    @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
+  ) {
     const entry = this.abilityService.findByName(ability);
 
     if (!entry) {
@@ -36,7 +41,7 @@ export default class AbilityResolver {
       ability = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
     }
 
-    const detailsEntry = this.abilityService.findByNameWithDetails(ability);
+    const detailsEntry = this.abilityService.findByNameWithDetails(ability, requestedFields);
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for ability: ${ability}`);
     }
@@ -47,8 +52,11 @@ export default class AbilityResolver {
   @Query(() => AbilityEntry, {
     description: ['Gets details on a single ability based on an exact name match.'].join('')
   })
-  async getAbilityDetailsByName(@Arg('ability', () => Abilities) ability: string) {
-    const entry = this.abilityService.findByNameWithDetails(ability);
+  async getAbilityDetailsByName(
+    @Arg('ability', () => Abilities) ability: string,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
+  ) {
+    const entry = this.abilityService.findByNameWithDetails(ability, requestedFields);
 
     if (entry === undefined) {
       throw new Error(`Failed to get data for ability: ${ability}`);

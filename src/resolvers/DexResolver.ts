@@ -1,10 +1,12 @@
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
+import ExactPokemonPaginatedArgs, { Pokemon } from '../arguments/ExactPokemonPaginatedArgs';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
-import ExactPokemonPaginatedArgs, { Pokemon } from '../arguments/ExactPokemonPaginatedArgs';
+import { getRequestedFields } from '../utils/getRequestedFields';
+import GraphQLSet from '../utils/GraphQLSet';
 import Util from '../utils/util';
 
 @Resolver(DexDetails)
@@ -22,13 +24,19 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  async getPokemonDetails(@Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs) {
-    const detailsEntry = this.dexService.findBySpeciesWithDetails({
-      pokemon,
-      skip,
-      take,
-      reverse
-    });
+  async getPokemonDetails(
+    @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<unknown>
+  ) {
+    const detailsEntry = this.dexService.findBySpeciesWithDetails(
+      {
+        pokemon,
+        skip,
+        take,
+        reverse
+      },
+      requestedFields
+    );
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
@@ -43,13 +51,19 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getPokemonDetailsByName(@Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs) {
-    return this.getPokemonDetails({
-      pokemon,
-      skip,
-      take,
-      reverse
-    });
+  getPokemonDetailsByName(
+    @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
+  ) {
+    return this.getPokemonDetails(
+      {
+        pokemon,
+        skip,
+        take,
+        reverse
+      },
+      requestedFields
+    );
   }
 
   @Query(() => DexDetails, {
@@ -59,7 +73,10 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  async getPokemonDetailsByFuzzy(@Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs) {
+  async getPokemonDetailsByFuzzy(
+    @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<unknown>
+  ) {
     const entry = this.dexService.findBySpecies(pokemon);
 
     if (!entry) {
@@ -70,12 +87,15 @@ export default class DexResolver {
       pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].species);
     }
 
-    const detailsEntry = this.dexService.findBySpeciesWithDetails({
-      pokemon,
-      skip,
-      take,
-      reverse
-    });
+    const detailsEntry = this.dexService.findBySpeciesWithDetails(
+      {
+        pokemon,
+        skip,
+        take,
+        reverse
+      },
+      requestedFields
+    );
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
@@ -90,13 +110,19 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getDexEntries(@Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs) {
-    const dexEntries = this.dexService.findByFuzzy({
-      pokemon,
-      skip,
-      take,
-      reverse
-    });
+  getDexEntries(
+    @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<unknown>
+  ) {
+    const dexEntries = this.dexService.findByFuzzy(
+      {
+        pokemon,
+        skip,
+        take,
+        reverse
+      },
+      requestedFields
+    );
     if (dexEntries === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }

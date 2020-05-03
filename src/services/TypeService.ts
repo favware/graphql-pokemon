@@ -1,16 +1,18 @@
 import { Arg, Args } from 'type-graphql';
 import TypeArgs, { Types } from '../arguments/TypeArgs';
 import typechart from '../assets/typechart';
-import Pokemon from '../utils/pokemon';
 import TypeEntry from '../structures/TypeEntry';
 import TypeMatchups from '../structures/TypeMatchups';
+import { addPropertyToClass } from '../utils/addPropertyToClass';
+import GraphQLSet from '../utils/GraphQLSet';
+import Pokemon from '../utils/pokemon';
 
 export default class TypeService {
   public findTypeMatchupByName(@Arg('name', () => Types) name: string) {
     return typechart.get(name);
   }
 
-  public findTypeMatchups(@Args(() => Types) { types }: TypeArgs) {
+  public findTypeMatchups(@Args(() => Types) { types }: TypeArgs, requestedFields: GraphQLSet<keyof TypeMatchups>) {
     const atk: Pokemon.TypeDataset = {
       doubleEffectiveTypes: [],
       doubleResistedTypes: [],
@@ -78,76 +80,158 @@ export default class TypeService {
       }
     }
 
-    for (const attack in def.multi) {
-      switch (atk.multi[attack]) {
-        case 0:
-          atk.effectlessTypes.push(attack);
-          break;
-        case 0.25:
-          atk.doubleResistedTypes.push(attack);
-          break;
-        case 0.5:
-          atk.resistedTypes.push(attack);
-          break;
-        case 1:
-          atk.normalTypes.push(attack);
-          break;
-        case 2:
-          atk.effectiveTypes.push(attack);
-          break;
-        case 4:
-          atk.doubleEffectiveTypes.push(attack);
-          break;
-        default:
-          break;
-      }
-    }
-
-    for (const defense in def.multi) {
-      switch (def.multi[defense]) {
-        case 0:
-          def.effectlessTypes.push(defense);
-          break;
-        case 0.25:
-          def.doubleResistedTypes.push(defense);
-          break;
-        case 0.5:
-          def.resistedTypes.push(defense);
-          break;
-        case 1:
-          def.normalTypes.push(defense);
-          break;
-        case 2:
-          def.effectiveTypes.push(defense);
-          break;
-        case 4:
-          def.doubleEffectiveTypes.push(defense);
-          break;
-        default:
-          break;
-      }
-    }
-
     const attackingTypeEntry = new TypeEntry();
     const defendingTypeEntry = new TypeEntry();
 
-    attackingTypeEntry.doubleEffectiveTypes = atk.doubleEffectiveTypes;
-    attackingTypeEntry.doubleResistedTypes = atk.doubleResistedTypes;
-    attackingTypeEntry.effectiveTypes = atk.effectiveTypes;
-    attackingTypeEntry.effectlessTypes = atk.effectlessTypes;
-    attackingTypeEntry.normalTypes = atk.normalTypes;
-    attackingTypeEntry.resistedTypes = atk.resistedTypes;
+    if (requestedFields.has('attacking')) {
+      for (const attack in def.multi) {
+        switch (atk.multi[attack]) {
+          case 0:
+            atk.effectlessTypes.push(attack);
+            break;
+          case 0.25:
+            atk.doubleResistedTypes.push(attack);
+            break;
+          case 0.5:
+            atk.resistedTypes.push(attack);
+            break;
+          case 1:
+            atk.normalTypes.push(attack);
+            break;
+          case 2:
+            atk.effectiveTypes.push(attack);
+            break;
+          case 4:
+            atk.doubleEffectiveTypes.push(attack);
+            break;
+          default:
+            break;
+        }
+      }
 
-    defendingTypeEntry.doubleEffectiveTypes = def.doubleEffectiveTypes;
-    defendingTypeEntry.doubleResistedTypes = def.doubleResistedTypes;
-    defendingTypeEntry.effectiveTypes = def.effectiveTypes;
-    defendingTypeEntry.effectlessTypes = def.effectlessTypes;
-    defendingTypeEntry.normalTypes = def.normalTypes;
-    defendingTypeEntry.resistedTypes = def.resistedTypes;
+      const attackingTypeEntryFields = requestedFields.filter<GraphQLSet<keyof TypeEntry>>((val) =>
+        val.startsWith('attacking.')
+      );
+      addPropertyToClass(
+        attackingTypeEntry,
+        'doubleEffectiveTypes',
+        atk.doubleEffectiveTypes,
+        attackingTypeEntryFields,
+        'attacking.doubleEffectiveTypes'
+      );
+      addPropertyToClass(
+        attackingTypeEntry,
+        'doubleResistedTypes',
+        atk.doubleResistedTypes,
+        attackingTypeEntryFields,
+        'attacking.doubleResistedTypes'
+      );
+      addPropertyToClass(
+        attackingTypeEntry,
+        'effectiveTypes',
+        atk.effectiveTypes,
+        attackingTypeEntryFields,
+        'attacking.effectiveTypes'
+      );
+      addPropertyToClass(
+        attackingTypeEntry,
+        'effectlessTypes',
+        atk.effectlessTypes,
+        attackingTypeEntryFields,
+        'attacking.effectlessTypes'
+      );
+      addPropertyToClass(
+        attackingTypeEntry,
+        'normalTypes',
+        atk.normalTypes,
+        attackingTypeEntryFields,
+        'attacking.normalTypes'
+      );
+      addPropertyToClass(
+        attackingTypeEntry,
+        'resistedTypes',
+        atk.resistedTypes,
+        attackingTypeEntryFields,
+        'attacking.resistedTypes'
+      );
+    }
+
+    if (requestedFields.has('defending')) {
+      for (const defense in def.multi) {
+        switch (def.multi[defense]) {
+          case 0:
+            def.effectlessTypes.push(defense);
+            break;
+          case 0.25:
+            def.doubleResistedTypes.push(defense);
+            break;
+          case 0.5:
+            def.resistedTypes.push(defense);
+            break;
+          case 1:
+            def.normalTypes.push(defense);
+            break;
+          case 2:
+            def.effectiveTypes.push(defense);
+            break;
+          case 4:
+            def.doubleEffectiveTypes.push(defense);
+            break;
+          default:
+            break;
+        }
+      }
+
+      const defendingTypeEntryFields = requestedFields.filter<GraphQLSet<keyof TypeEntry>>((val) =>
+        val.startsWith('defending.')
+      );
+      addPropertyToClass(
+        defendingTypeEntry,
+        'doubleEffectiveTypes',
+        def.doubleEffectiveTypes,
+        defendingTypeEntryFields,
+        'defending.doubleEffectiveTypes'
+      );
+      addPropertyToClass(
+        defendingTypeEntry,
+        'doubleResistedTypes',
+        def.doubleResistedTypes,
+        defendingTypeEntryFields,
+        'defending.doubleResistedTypes'
+      );
+      addPropertyToClass(
+        defendingTypeEntry,
+        'effectiveTypes',
+        def.effectiveTypes,
+        defendingTypeEntryFields,
+        'defending.effectiveTypes'
+      );
+      addPropertyToClass(
+        defendingTypeEntry,
+        'effectlessTypes',
+        def.effectlessTypes,
+        defendingTypeEntryFields,
+        'defending.effectlessTypes'
+      );
+      addPropertyToClass(
+        defendingTypeEntry,
+        'normalTypes',
+        def.normalTypes,
+        defendingTypeEntryFields,
+        'defending.normalTypes'
+      );
+      addPropertyToClass(
+        defendingTypeEntry,
+        'resistedTypes',
+        def.resistedTypes,
+        defendingTypeEntryFields,
+        'defending.resistedTypes'
+      );
+    }
 
     const typeMatchups = new TypeMatchups();
-    typeMatchups.attacking = attackingTypeEntry;
-    typeMatchups.defending = defendingTypeEntry;
+    addPropertyToClass(typeMatchups, 'attacking', attackingTypeEntry, requestedFields);
+    addPropertyToClass(typeMatchups, 'defending', defendingTypeEntry, requestedFields);
 
     return typeMatchups;
   }

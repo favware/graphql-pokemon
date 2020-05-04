@@ -34,7 +34,7 @@ export default class GraphQLSet<V> extends Set<V> {
   public filter<T>(fn: (this: T, value: V, set: this) => boolean, thisArg: T): this;
   public filter<T, R>(fn: (this: T, value: V, set: this) => boolean, thisArg: T): R;
   public filter(fn: (value: V, set: this) => boolean, thisArg?: unknown): this {
-    if (typeof thisArg !== undefined) fn = fn.bind(thisArg);
+    if (typeof thisArg !== 'undefined') fn = fn.bind(thisArg);
     const results = new this.constructor[Symbol.species]<V>() as this;
 
     for (const val of this) {

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.1.1 (2020-05-04)
+
+
+### Bug Fixes
+
+* **graphqlset:** fixed LGTM error ([72a748e](https://github.com/favware/graphql-pokemon/commit/72a748e32daa366bab503617bafa45c35278fa9c))
+
 ## 3.1.0 (2020-05-03)
 
 

@@ -27,7 +27,7 @@ const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 
 const autoUpdateLearnsets = async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
-  url.searchParams.append('path', 'data/formats-data.js');
+  url.searchParams.append('path', 'data/formats-data.ts');
   url.searchParams.append('since', TIMESTAMP);
 
   const request = await fetch(url);

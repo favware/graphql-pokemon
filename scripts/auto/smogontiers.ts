@@ -14,7 +14,7 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
 const autoUpdateSmogonTiers = async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
-  url.searchParams.append('path', 'data/formats-data.js');
+  url.searchParams.append('path', 'data/formats-data.ts');
   url.searchParams.append('since', TIMESTAMP);
 
   const request = await fetch(url);

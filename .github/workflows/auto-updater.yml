@@ -38,6 +38,10 @@ jobs:
           if git diff-index --quiet HEAD --; then
             exit 0;
           else
+            mkdir -p $HOME/.config/gh
+            echo "github.com:
+              - user: ${GITHUB_USER}
+                oauth_token: ${GITHUB_TOKEN}" >> $HOME/.config/gh/config.yml
             git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git";
             git config --local user.email "${GITHUB_EMAIL}";
             git config --local user.name "${GITHUB_USER}";

@@ -40,8 +40,8 @@
 - name: "Meta: BugFix"
   description: PRs that fix bugs or issues.
   color: 4cce4a
-- name: "Meta: Smogon Tier Update"
-  description: PRs update the Smogon tier list.
+- name: "Meta: Data Update"
+  description: PRs update the data.
   color: 4C254F
 - name: "Bug: Fixed"
   description: Issues that report bugs and have been fixed.

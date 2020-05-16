@@ -1,4 +1,3 @@
-import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args } from 'type-graphql';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import { pokedexAliases } from '../assets/aliases';
@@ -13,7 +12,7 @@ import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
 import GraphQLSet from '../utils/GraphQLSet';
 import Pokemon from '../utils/pokemon';
-import Util, { SimpleFuseOptions } from '../utils/util';
+import Util from '../utils/util';
 
 export default class DexService {
   private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
@@ -27,12 +26,8 @@ export default class DexService {
     return pokedex.get(species);
   }
 
-  public findByFuzzy(
-    @Args() { pokemon, skip, take }: PokemonPaginatedArgs,
-    requestedFields: GraphQLSet<unknown>,
-    @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions
-  ) {
-    const paginatedFuzzyResult = this.getByFuzzy({ pokemon, skip, take }, fuseOptions);
+  public findByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, requestedFields: GraphQLSet<unknown>) {
+    const paginatedFuzzyResult = this.getByFuzzy({ pokemon, skip, take });
 
     const queryResults: DexEntry[] = [];
     for (const page of paginatedFuzzyResult) {
@@ -41,7 +36,7 @@ export default class DexService {
       const genderData = new GenderEntry();
       const baseStatsData = new StatsEntry();
       const abilitiesData = new AbilitiesEntry();
-      const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.genderRatio || {
+      const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.item.genderRatio || {
         male: 0.5,
         female: 0.5
       };
@@ -64,42 +59,42 @@ export default class DexService {
       addPropertyToClass(
         baseStatsData,
         'hp',
-        page.baseStats.hp,
+        page.item.baseStats.hp,
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.hp'
       );
       addPropertyToClass(
         baseStatsData,
         'attack',
-        page.baseStats.atk,
+        page.item.baseStats.atk,
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.attack'
       );
       addPropertyToClass(
         baseStatsData,
         'defense',
-        page.baseStats.def,
+        page.item.baseStats.def,
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.defense'
       );
       addPropertyToClass(
         baseStatsData,
         'specialattack',
-        page.baseStats.spa,
+        page.item.baseStats.spa,
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.specialattack'
       );
       addPropertyToClass(
         baseStatsData,
         'specialdefense',
-        page.baseStats.spd,
+        page.item.baseStats.spd,
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.specialdefense'
       );
       addPropertyToClass(
         baseStatsData,
         'speed',
-        page.baseStats.spe,
+        page.item.baseStats.spe,
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.speed'
       );
@@ -107,28 +102,28 @@ export default class DexService {
       addPropertyToClass(
         abilitiesData,
         'first',
-        page.abilities.first,
+        page.item.abilities.first,
         requestedFields as GraphQLSet<keyof AbilitiesEntry>,
         'abilities.first'
       );
       addPropertyToClass(
         abilitiesData,
         'second',
-        page.abilities.second,
+        page.item.abilities.second,
         requestedFields as GraphQLSet<keyof AbilitiesEntry>,
         'abilities.second'
       );
       addPropertyToClass(
         abilitiesData,
         'hidden',
-        page.abilities.hidden,
+        page.item.abilities.hidden,
         requestedFields as GraphQLSet<keyof AbilitiesEntry>,
         'abilities.hidden'
       );
       addPropertyToClass(
         abilitiesData,
         'special',
-        page.abilities.special,
+        page.item.abilities.special,
         requestedFields as GraphQLSet<keyof AbilitiesEntry>,
         'abilities.special'
       );
@@ -137,21 +132,21 @@ export default class DexService {
       addPropertyToClass(dexEntry, 'abilities', abilitiesData, dexEntryFields);
       addPropertyToClass(dexEntry, 'gender', genderData, dexEntryFields);
       addPropertyToClass(dexEntry, 'baseStats', baseStatsData, dexEntryFields);
-      addPropertyToClass(dexEntry, 'num', page.num, dexEntryFields);
-      addPropertyToClass(dexEntry, 'species', page.species, dexEntryFields);
-      addPropertyToClass(dexEntry, 'types', page.types, dexEntryFields);
-      addPropertyToClass(dexEntry, 'color', page.color, dexEntryFields);
-      addPropertyToClass(dexEntry, 'eggGroups', page.eggGroups, dexEntryFields);
-      addPropertyToClass(dexEntry, 'evolutionLevel', page.evoLevel, dexEntryFields);
-      addPropertyToClass(dexEntry, 'evos', page.evos, dexEntryFields);
-      addPropertyToClass(dexEntry, 'prevo', page.prevo, dexEntryFields);
-      addPropertyToClass(dexEntry, 'forme', page.forme, dexEntryFields);
-      addPropertyToClass(dexEntry, 'formeLetter', page.formeLetter, dexEntryFields);
-      addPropertyToClass(dexEntry, 'height', page.heightm, dexEntryFields);
-      addPropertyToClass(dexEntry, 'weight', page.weightkg, dexEntryFields);
-      addPropertyToClass(dexEntry, 'baseForme', page.baseForme, dexEntryFields);
-      addPropertyToClass(dexEntry, 'baseSpecies', page.baseSpecies, dexEntryFields);
-      addPropertyToClass(dexEntry, 'otherFormes', page.otherFormes, dexEntryFields);
+      addPropertyToClass(dexEntry, 'num', page.item.num, dexEntryFields);
+      addPropertyToClass(dexEntry, 'species', page.item.species, dexEntryFields);
+      addPropertyToClass(dexEntry, 'types', page.item.types, dexEntryFields);
+      addPropertyToClass(dexEntry, 'color', page.item.color, dexEntryFields);
+      addPropertyToClass(dexEntry, 'eggGroups', page.item.eggGroups, dexEntryFields);
+      addPropertyToClass(dexEntry, 'evolutionLevel', page.item.evoLevel, dexEntryFields);
+      addPropertyToClass(dexEntry, 'evos', page.item.evos, dexEntryFields);
+      addPropertyToClass(dexEntry, 'prevo', page.item.prevo, dexEntryFields);
+      addPropertyToClass(dexEntry, 'forme', page.item.forme, dexEntryFields);
+      addPropertyToClass(dexEntry, 'formeLetter', page.item.formeLetter, dexEntryFields);
+      addPropertyToClass(dexEntry, 'height', page.item.heightm, dexEntryFields);
+      addPropertyToClass(dexEntry, 'weight', page.item.weightkg, dexEntryFields);
+      addPropertyToClass(dexEntry, 'baseForme', page.item.baseForme, dexEntryFields);
+      addPropertyToClass(dexEntry, 'baseSpecies', page.item.baseSpecies, dexEntryFields);
+      addPropertyToClass(dexEntry, 'otherFormes', page.item.otherFormes, dexEntryFields);
 
       queryResults.push(dexEntry);
     }
@@ -568,10 +563,7 @@ export default class DexService {
     return pokemonData;
   }
 
-  public getByFuzzy(
-    @Args() { pokemon, skip, take }: PokemonPaginatedArgs,
-    @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions
-  ) {
+  public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs) {
     switch (pokemon.split(' ')[0]) {
       case 'mega':
         pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
@@ -599,7 +591,7 @@ export default class DexService {
       }
     }
 
-    const fuzzyPokemon = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3, ...fuseOptions });
+    const fuzzyPokemon = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3 });
 
     let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
 
@@ -607,7 +599,7 @@ export default class DexService {
       const fuzzyAliasResult = new FuzzySearch(pokedexAliases, ['alias', 'name'], { threshold: 0.4 }).runFuzzy(pokemon);
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].name);
+        fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].item.name);
       }
     }
 

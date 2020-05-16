@@ -39,7 +39,7 @@ export default class ItemResolver {
         throw new Error(`Failed to get data for item: ${item}`);
       }
 
-      item = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
+      item = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
     }
 
     const detailsEntry = this.itemService.findByNameWithDetails(item, requestedFields);

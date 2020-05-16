@@ -1,7 +1,6 @@
 import { graphql, GraphQLSchema } from 'graphql';
 import { buildGqlSchema } from '../../src/server';
 import Maybe from 'graphql/tsutils/Maybe';
-import { ExecutionResultDataDefault } from 'graphql/execution/execute';
 
 interface GCallOptions {
   source: string;
@@ -10,10 +9,10 @@ interface GCallOptions {
 
 let schema: GraphQLSchema;
 
-export const gCall = async <TData = ExecutionResultDataDefault>({ source, variableValues }: GCallOptions) => {
+export const gCall = async ({ source, variableValues }: GCallOptions) => {
   if (!schema) schema = buildGqlSchema();
 
-  return graphql<TData>({
+  return graphql({
     schema,
     source,
     variableValues

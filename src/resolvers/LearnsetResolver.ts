@@ -66,7 +66,7 @@ export default class LearnsetResolver {
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].species);
+      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].item.species);
     }
 
     for (const [index, move] of moves.entries()) {
@@ -78,13 +78,13 @@ export default class LearnsetResolver {
             skip: 0,
             take: 10,
             reverse: false
-          },
-          { threshold: 0.5 }
+          }
+          // { threshold: 0.5 }
         );
         if (fuzzyEntry === undefined || !fuzzyEntry.length) {
           throw new Error(`Failed to get data for move: ${move}`);
         }
-        moves[index] = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
+        moves[index] = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
       }
     }
 

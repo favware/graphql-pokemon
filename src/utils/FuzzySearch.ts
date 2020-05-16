@@ -1,11 +1,11 @@
 import Collection from '@discordjs/collection';
-import Fuse, { FuseOptions } from 'fuse.js';
+import Fuse from 'fuse.js/dist/fuse.basic.min.js';
 
 export default class FuzzySearch<K extends string, V> {
   private readonly collectionArray: ReadonlyArray<V>;
-  private readonly fuseOptions?: FuseOptions<V>;
+  private readonly fuseOptions?: Fuse.IFuseOptions<V>;
 
-  constructor(collection: Collection<K, V>, keys: (keyof V)[], options?: FuseOptions<V>) {
+  constructor(collection: Collection<K, V>, keys: string[], options?: Fuse.IFuseOptions<V>) {
     this.collectionArray = [...collection.values()];
     this.fuseOptions = {
       ...options,
@@ -18,6 +18,6 @@ export default class FuzzySearch<K extends string, V> {
 
     const fuzzyFuse = new Fuse(this.collectionArray, this.fuseOptions);
 
-    return fuzzyFuse.search(locquery) as V[];
+    return fuzzyFuse.search(locquery);
   }
 }

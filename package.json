@@ -133,8 +133,8 @@
     "access": "public"
   },
   "resolutions": {
-    "acorn": "^7.1.1",
-    "minimist": "^1.2.2",
+    "acorn": "^7.2.0",
+    "minimist": "^1.2.5",
     "kind-of": "^6.0.3"
   }
 }

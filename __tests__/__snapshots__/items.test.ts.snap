@@ -4,19 +4,28 @@ exports[`getItemByFuzzy GIVEN a fuzzy item THEN returns JSONObject 1`] = `
 Object {
   "getItemByFuzzy": Array [
     Object {
-      "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
-      "gen": 3,
-      "name": "Choice Band",
+      "item": Object {
+        "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+        "gen": 3,
+        "name": "Choice Band",
+      },
+      "refIndex": 57,
     },
     Object {
-      "desc": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
-      "gen": 4,
-      "name": "Choice Scarf",
+      "item": Object {
+        "desc": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
+        "gen": 4,
+        "name": "Choice Scarf",
+      },
+      "refIndex": 58,
     },
     Object {
-      "desc": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
-      "gen": 4,
-      "name": "Choice Specs",
+      "item": Object {
+        "desc": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
+        "gen": 4,
+        "name": "Choice Specs",
+      },
+      "refIndex": 59,
     },
   ],
 }
@@ -26,9 +35,12 @@ exports[`getItemByFuzzy GIVEN a fuzzy item and pagination THEN returns JSONObjec
 Object {
   "getItemByFuzzy": Array [
     Object {
-      "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
-      "gen": 3,
-      "name": "Choice Band",
+      "item": Object {
+        "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+        "gen": 3,
+        "name": "Choice Band",
+      },
+      "refIndex": 57,
     },
   ],
 }
@@ -38,9 +50,12 @@ exports[`getItemByFuzzy GIVEN a valid item THEN returns JSONObject 1`] = `
 Object {
   "getItemByFuzzy": Array [
     Object {
-      "desc": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
-      "gen": 4,
-      "name": "Life Orb",
+      "item": Object {
+        "desc": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+        "gen": 4,
+        "name": "Life Orb",
+      },
+      "refIndex": 201,
     },
   ],
 }
@@ -71,7 +86,7 @@ Object {
 exports[`getItemByName GIVEN an invalid item THEN returns error 1`] = `
 Object {
   "errors": Array [
-    [GraphQLError: Variable "$item" got invalid value "totally_invalid_item"; Expected type Items.],
+    [GraphQLError: Variable "$item" got invalid value "totally_invalid_item"; Value "totally_invalid_item" does not exist in "Items" enum.],
   ],
 }
 `;
@@ -140,7 +155,7 @@ Object {
 exports[`getItemDetailsByName GIVEN an invalid item THEN returns error 1`] = `
 Object {
   "errors": Array [
-    [GraphQLError: Variable "$item" got invalid value "totally_invalid_item"; Expected type Items.],
+    [GraphQLError: Variable "$item" got invalid value "totally_invalid_item"; Value "totally_invalid_item" does not exist in "Items" enum.],
   ],
 }
 `;

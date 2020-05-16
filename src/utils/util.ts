@@ -1,5 +1,3 @@
-import { FuseOptions } from 'fuse.js';
-
 const TOTITLECASE = /[A-Za-zÀ-ÖØ-öø-ÿ]\S*/g;
 const COMMON_SYMBOLS = /[$-/:-?{-~!"^_`[\] .]/g;
 
@@ -61,5 +59,3 @@ export default class Util {
     return str.replace(COMMON_SYMBOLS, replacement) as T;
   }
 }
-
-export type SimpleFuseOptions = Exclude<FuseOptions<unknown>, 'id'>;

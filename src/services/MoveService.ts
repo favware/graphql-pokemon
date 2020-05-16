@@ -1,4 +1,3 @@
-import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args } from 'type-graphql';
 import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
 import { moveAliases } from '../assets/aliases';
@@ -7,18 +6,15 @@ import MoveEntry from '../structures/MoveEntry';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
 import GraphQLSet from '../utils/GraphQLSet';
-import Util, { SimpleFuseOptions } from '../utils/util';
+import Util from '../utils/util';
 
 export default class MoveService {
   public findByName(@Arg('name') name: string) {
     return moves.get(name);
   }
 
-  public findByFuzzy(
-    @Args() { move, skip, take, reverse }: MovePaginatedArgs,
-    @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions
-  ) {
-    const fuzzyMove = new FuzzySearch(moves, ['name'], { threshold: 0.3, ...fuseOptions });
+  public findByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs) {
+    const fuzzyMove = new FuzzySearch(moves, ['name'], { threshold: 0.3 });
 
     let fuzzyResult = fuzzyMove.runFuzzy(move);
     if (!fuzzyResult.length) {
@@ -27,7 +23,7 @@ export default class MoveService {
       }).runFuzzy(move);
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyMove.runFuzzy(fuzzyAliasResult[0].move);
+        fuzzyResult = fuzzyMove.runFuzzy(fuzzyAliasResult[0].item.move);
       }
     }
 

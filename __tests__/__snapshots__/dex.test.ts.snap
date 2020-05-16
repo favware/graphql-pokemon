@@ -161,7 +161,7 @@ Object {
 exports[`getDexEntryBySpeciesName GIVEN an invalid pokemon THEN returns error 1`] = `
 Object {
   "errors": Array [
-    [GraphQLError: Variable "$pokemon" got invalid value "totally_invalid_pokemon"; Expected type Pokemon.],
+    [GraphQLError: Variable "$pokemon" got invalid value "totally_invalid_pokemon"; Value "totally_invalid_pokemon" does not exist in "Pokemon" enum.],
   ],
 }
 `;

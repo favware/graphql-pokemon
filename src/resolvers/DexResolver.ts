@@ -84,7 +84,7 @@ export default class DexResolver {
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].species);
+      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].item.species);
     }
 
     const detailsEntry = this.dexService.findBySpeciesWithDetails(

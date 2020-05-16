@@ -38,7 +38,7 @@ export default class MoveResolver {
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for move: ${move}`);
       }
-      move = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
+      move = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
     }
 
     const detailsEntry = this.moveService.findByNameWithDetails(move, requestedFields);

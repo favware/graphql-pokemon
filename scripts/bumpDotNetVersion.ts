@@ -1,5 +1,5 @@
 import { j2xParser as Json2XML, parse as xml2json } from 'fast-xml-parser';
-import { readFile, writeFile } from 'fs-nextra';
+import { promises as fsp } from 'fs';
 import { resolve } from 'path';
 import { version } from '../package.json';
 
@@ -8,12 +8,12 @@ const json2xml = new Json2XML({ ignoreAttributes: false });
 
 const main = async () => {
   const csprojFile = resolve(DOTNET_DIR, 'Favware.Graphqlpokemon.csproj');
-  const csprojXml = await readFile(csprojFile, 'utf-8');
+  const csprojXml = await fsp.readFile(csprojFile, 'utf-8');
   const csprojData = xml2json(csprojXml, { ignoreAttributes: false }) as CsProjXMLData;
 
   csprojData.Project.PropertyGroup[0].Version = version;
 
-  await writeFile(csprojFile, json2xml.parse(csprojData));
+  await fsp.writeFile(csprojFile, json2xml.parse(csprojData));
 };
 
 main();

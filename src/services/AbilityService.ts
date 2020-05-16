@@ -1,4 +1,3 @@
-import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args } from 'type-graphql';
 import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
 import abilities from '../assets/abilities';
@@ -7,18 +6,15 @@ import AbilityEntry from '../structures/AbilityEntry';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
 import GraphQLSet from '../utils/GraphQLSet';
-import Util, { SimpleFuseOptions } from '../utils/util';
+import Util from '../utils/util';
 
 export default class AbilityService {
   public findByName(@Arg('name') name: string) {
     return abilities.get(name);
   }
 
-  public findByFuzzy(
-    @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
-    @Arg('fuseOptions', () => GraphQLJSONObject) fuseOptions?: SimpleFuseOptions
-  ) {
-    const fuzzyAbility = new FuzzySearch(abilities, ['name'], { threshold: 0.3, ...fuseOptions });
+  public findByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs) {
+    const fuzzyAbility = new FuzzySearch(abilities, ['name'], { threshold: 0.3 });
 
     let fuzzyResult = fuzzyAbility.runFuzzy(ability);
 
@@ -28,7 +24,7 @@ export default class AbilityService {
       );
 
       if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyAbility.runFuzzy(fuzzyAliasResult[0].ability);
+        fuzzyResult = fuzzyAbility.runFuzzy(fuzzyAliasResult[0].item.ability);
       }
     }
 

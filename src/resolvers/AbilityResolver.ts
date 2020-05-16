@@ -38,7 +38,7 @@ export default class AbilityResolver {
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for ability: ${ability}`);
       }
-      ability = Util.toLowerSingleWordCase(fuzzyEntry[0].name);
+      ability = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
     }
 
     const detailsEntry = this.abilityService.findByNameWithDetails(ability, requestedFields);

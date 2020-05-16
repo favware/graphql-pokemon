@@ -79,7 +79,6 @@ export default class LearnsetResolver {
             take: 10,
             reverse: false
           }
-          // { threshold: 0.5 }
         );
         if (fuzzyEntry === undefined || !fuzzyEntry.length) {
           throw new Error(`Failed to get data for move: ${move}`);

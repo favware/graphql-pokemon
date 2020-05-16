@@ -48,7 +48,7 @@ jobs:
             git checkout -b favware-bot/update-data/$(date +%F-%H-%M);
             git commit -sam "refactor: update data";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            ./gh pr create -t "refactor: update data" -b "*bleep bloop* I updated the data files" -B staging;
+            ./gh pr create -t "refactor: update data" -b "*bleep bloop* I updated the data files" -l "Meta: Data Update" -r "Favna" -B staging;
           fi
         env:
           GITHUB_USER: Favware-bot

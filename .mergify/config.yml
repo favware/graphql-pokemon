@@ -8,11 +8,12 @@ pull_request_rules:
     actions:
       merge:
         method: squash
-  - name: Automatic Showndown Tier Merging
+  - name: Automatic Updater Merging
     conditions:
       - approved-reviews-by=Favna
       - base=staging
       - author=Favware-bot
+      - label~=^Meta:\ Data\ Update
     actions:
       merge:
         method: squash

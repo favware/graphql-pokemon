@@ -72,14 +72,12 @@ export default class LearnsetResolver {
     for (const [index, move] of moves.entries()) {
       const moveEntry = this.moveService.findByName(move);
       if (!moveEntry) {
-        const fuzzyEntry = this.moveService.findByFuzzy(
-          {
-            move,
-            skip: 0,
-            take: 10,
-            reverse: false
-          }
-        );
+        const fuzzyEntry = this.moveService.findByFuzzy({
+          move,
+          skip: 0,
+          take: 10,
+          reverse: false
+        });
         if (fuzzyEntry === undefined || !fuzzyEntry.length) {
           throw new Error(`Failed to get data for move: ${move}`);
         }

@@ -32,7 +32,7 @@ export default class LearnsetService {
 
       for (const move of moves) {
         if (Reflect.has(learnset, move)) {
-          const methods = learnset[move] as string[];
+          const methods = learnset[move];
 
           for (const method of methods) {
             if (generation && this.getMethodGeneration(method) !== generation) continue;

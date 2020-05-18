@@ -197,7 +197,7 @@ jobs:
   GenerateTypings:
     name: Generate TypeScript, SDL and C# type information
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
     needs: GithubPublish
     steps:
       - name: Checkout Project
@@ -237,7 +237,7 @@ jobs:
   NPMPublish:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip publish]')"
+    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
     needs: GenerateTypings
     steps:
       - name: Checkout Project
@@ -268,7 +268,7 @@ jobs:
   Github-Package-Registry-Node:
     name: Publishing release to Github Package Registry
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip publish]')"
+    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
     needs: GenerateTypings
     steps:
       - name: Checkout Project
@@ -300,7 +300,7 @@ jobs:
   NuGetPublish:
     name: Publishing release to NuGet
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip publish]')"
+    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
     needs: GenerateTypings
     env:
       DOTNET_CLI_TELEMETRY_OPTOUT: true

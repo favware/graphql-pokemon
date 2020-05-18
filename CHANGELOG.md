@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/favware/graphql-pokemon/compare/v3.1.1...v4.0.0) (2020-05-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* TypeGraphQL no longer supports NodeJS versions
+lower than 10.3 so the engine fields in this library have been
+adjusted similarly. You will now need at least NodeJS v12 to
+run this API locally.
+* FuseJS now returns data for their fuzzy searches
+differently. Before the data would be directly on the result, now you'll
+need to access it on the "items" property. This affects all queries for
+this API that return `[JSONObject!]!` as type.
+
+### Features
+
+* bump FuseJS, TypeGraphql & GraphQL deps ([e9626a1](https://github.com/favware/graphql-pokemon/commit/e9626a171507c60aeab1915cc6801419dcbc9057))
+
 ### 3.1.2 (2020-05-16)
 
 ### 3.1.1 (2020-05-04)

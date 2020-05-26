@@ -805,7 +805,7 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>([
   ['yadoran', { alias: 'yadoran', name: 'Slowbro' }],
   ['koiru', { alias: 'koiru', name: 'Magnemite' }],
   ['reakoiru', { alias: 'reakoiru', name: 'Magneton' }],
-  ['kamonegi', { alias: 'kamonegi', name: "Farfetch'd" }],
+  ['kamonegi', { alias: 'kamonegi', name: 'Farfetch\u2019d' }],
   ['doodoo', { alias: 'doodoo', name: 'Doduo' }],
   ['doodorio', { alias: 'doodorio', name: 'Dodrio' }],
   ['pauwau', { alias: 'pauwau', name: 'Seel' }],

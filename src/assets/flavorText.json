@@ -10540,11 +10540,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "FARFETCH’D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
+      "flavor_text": "FARFETCH\u2019D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "FARFETCH’D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
+      "flavor_text": "FARFETCH\u2019D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
     },
     {
       "version_id": "Emerald",
@@ -10604,19 +10604,19 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "Farfetch’d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
+      "flavor_text": "Farfetch\u2019d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "Farfetch’d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
+      "flavor_text": "Farfetch\u2019d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "They live where reedy plants grow. Farfetch'd are rarely seen, so it's thought their numbers are decreasing."
+      "flavor_text": "They live where reedy plants grow. Farfetch\u2019d are rarely seen, so it's thought their numbers are decreasing."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "They live where reedy plants grow. Farfetch'd are rarely seen, so it's thought their numbers are decreasing."
+      "flavor_text": "They live where reedy plants grow. Farfetch\u2019d are rarely seen, so it's thought their numbers are decreasing."
     },
     {
       "version_id": "Sword",
@@ -10630,11 +10630,11 @@
   "83galar": [
     {
       "version_id": "Sword",
-      "flavor_text": "The Farfetch'd of the Galar region are brave warriors, and they wield thick, tough leeks in battle."
+      "flavor_text": "The Farfetch\u2019d of the Galar region are brave warriors, and they wield thick, tough leeks in battle."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "The stalks of leeks are thicker and longer in the Galar region. Farfetch'd that adapted to these stalks took on a unique form."
+      "flavor_text": "The stalks of leeks are thicker and longer in the Galar region. Farfetch\u2019d that adapted to these stalks took on a unique form."
     }
   ],
   "84": [
@@ -50632,7 +50632,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It charges its enemies, lances at the ready. An image of one of its duels is captured in a famous painting of Escavalier clashing with Sirfetch'd."
+      "flavor_text": "It charges its enemies, lances at the ready. An image of one of its duels is captured in a famous painting of Escavalier clashing with Sirfetch\u2019d."
     }
   ],
   "590": [
@@ -58376,7 +58376,7 @@
   "865": [
     {
       "version_id": "Sword",
-      "flavor_text": "Only Farfetch'd that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
+      "flavor_text": "Only Farfetch\u2019d that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
     },
     {
       "version_id": "Shield",

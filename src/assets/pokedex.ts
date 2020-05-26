@@ -3184,7 +3184,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'farfetchd',
     {
-      species: "farfetch'd",
+      species: 'farfetch\u2019d',
       num: 83,
       types: ['Normal', 'Flying'],
       genderRatio: { male: 0.5, female: 0.5 },
@@ -3207,10 +3207,10 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'farfetchdgalar',
     {
-      species: "farfetch'd-galar",
+      species: 'farfetch\u2019d-galar',
       num: 83,
       types: ['Fighting'],
-      baseSpecies: "Farfetch'd",
+      baseSpecies: 'Farfetch\u2019d',
       forme: 'Galar',
       formeLetter: 'G',
       baseStats: {
@@ -26560,7 +26560,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'sirfetchd',
     {
-      species: "sirfetch'd",
+      species: 'sirfetch\u2019d',
       num: 865,
       types: ['Fighting'],
       genderRatio: { male: 0.5, female: 0.5 },

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/favware/graphql-pokemon/compare/v4.0.0...v4.0.1) (2020-05-26)
+
+
+### Bug Fixes
+
+* **data:** properly format farfetch'd and sirfetch'd names ([95a527c](https://github.com/favware/graphql-pokemon/commit/95a527c5b729cc26e908a92ee90b9eff5025eb56))
+
 ## [4.0.0](https://github.com/favware/graphql-pokemon/compare/v3.1.1...v4.0.0) (2020-05-18)
 
 

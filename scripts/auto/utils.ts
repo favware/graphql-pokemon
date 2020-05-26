@@ -1,7 +1,12 @@
+import { Colors } from '@klasa/console';
 import { remove, writeFileAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { resolve } from 'path';
 import ts from 'typescript';
+
+export const yellowColour = new Colors({ text: 'yellow' });
+export const redColour = new Colors({ text: 'red' });
+export const greenColour = new Colors({ text: 'green' });
 
 export const mapToJson = (map: Map<string, unknown>) => JSON.stringify([...map]);
 
@@ -55,7 +60,6 @@ interface SpeciesFormatsData {
   tier?: string;
   unreleasedHidden?: boolean | 'Past';
 }
-type Nonstandard = 'Past' | 'Future' | 'Unobtainable' | 'CAP' | 'LGPE' | 'Custom';
 interface Gen2RandomSet {
   chance: number;
   item?: string[];
@@ -92,6 +96,8 @@ interface EventInfo {
   pokeball?: string;
   from?: string;
 }
+
+type Nonstandard = 'Past' | 'Future' | 'Unobtainable' | 'CAP' | 'LGPE' | 'Custom';
 type GenderName = 'M' | 'F' | 'N' | '';
 type SparseStatsTable = Partial<StatsTable>;
 type StatNameExceptHP = 'atk' | 'def' | 'spa' | 'spd' | 'spe';

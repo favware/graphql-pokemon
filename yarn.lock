@@ -1169,10 +1169,23 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@klasa/console@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@klasa/console/-/console-0.0.1.tgz#8b689eeaaced6d57513cc6ccded0f009cffd3c8a"
+  integrity sha512-EKW7hgyAZmS/v0KJKvHym8G6ta7X5f8xbJ861T7aibS4nRC9kdhFhYTmsdgL3pmKpUjOVtjNxSNqFRtlteNWgQ==
+  dependencies:
+    "@klasa/timestamp" "^0.0.1"
+    "@klasa/utils" "^0.0.8"
+
 "@klasa/timestamp@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@klasa/timestamp/-/timestamp-0.0.1.tgz#f7e2171438563affc1e082e9ff6cb013468062a1"
   integrity sha512-Oreeh+YawFcLvF5SWREBYQie8Net+KihA15ZRG8hOPYqCLRkkeRcf1xrPUdZelsXFGKV3lqpbdTvhyGOau92mA==
+
+"@klasa/utils@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@klasa/utils/-/utils-0.0.8.tgz#8b017d8f7a771e5c1894b85f8dafefc219fc9d76"
+  integrity sha512-6G/P9/HM8fTanKUFPrODFmmD3ff8Jwr7gG//2BsTeWfGBBulDn/H8ObWRJjIu81nLKX1I4iQ1jNcK5uOfso6ug==
 
 "@marionebl/sander@^0.6.0":
   version "0.6.1"

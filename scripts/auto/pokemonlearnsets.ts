@@ -1,10 +1,17 @@
 /* eslint-disable no-console */
 import { constants, Timestamp } from '@klasa/timestamp';
-import chalk from 'chalk';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './utils';
+import {
+  DataJSON,
+  importFileFromWeb,
+  mapToJson,
+  SmogonLearnsetData,
+  redColour,
+  yellowColour,
+  greenColour
+} from './utils';
 
 const FILE_PREFIX = [
   '// @ts-nocheck',
@@ -37,13 +44,13 @@ const autoUpdateLearnsets = async () => {
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
   if (!data) {
-    console.log(chalk.red('no data from request'));
+    console.log(redColour.format('no data from request'));
 
     return process.exit(1);
   }
 
   if (data.sha === ciData.learnsetsLastSha) {
-    console.log(chalk.yellow('Fetched data but no new commit was available'));
+    console.log(yellowColour.format('Fetched data but no new commit was available'));
 
     return process.exit(0);
   }
@@ -69,7 +76,7 @@ const autoUpdateLearnsets = async () => {
 
   await Promise.all(writePromises);
 
-  console.log(chalk.green(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`));
+  console.log(greenColour.format(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`));
   return process.exit(0);
 };
 

@@ -1,6 +1,6 @@
 import path from 'path';
 import execa from 'execa';
-import chalk from 'chalk';
+import { greenColour, yellowColour } from './auto/utils';
 
 (async () => {
   const ROOT_DIR = path.join(__dirname, '..');
@@ -12,10 +12,10 @@ import chalk from 'chalk';
   const hasLockfileInCommit = lastCommitFiles.some((commitFile) => commitFile.toLowerCase() === 'yarn.lock');
 
   if (hasLockfileInCommit) {
-    log(chalk.cyan('Yarn lockfile was updated, running Yarn for you'));
+    log(yellowColour.format('Yarn lockfile was updated, running Yarn for you'));
 
     execa('yarn', { cwd: ROOT_DIR }).stdout!.pipe(process.stdout);
 
-    log(chalk.green('Successfully ran yarn for you!'));
+    log(greenColour.format('Successfully ran yarn for you!'));
   }
 })();

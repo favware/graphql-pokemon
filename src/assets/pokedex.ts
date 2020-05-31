@@ -1870,7 +1870,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Blue',
       prevo: 'oddish',
       evos: ['vileplume', 'bellossom'],
-      evoLevel: 'use Leaf Stone ',
+      evoLevel: 21,
       eggGroups: ['Grass']
     }
   ],
@@ -1894,7 +1894,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 18.6,
       color: 'Red',
       prevo: 'gloom',
-      evoLevel: 21,
+      evoLevel: 'use Leaf Stone',
       eggGroups: ['Grass']
     }
   ],

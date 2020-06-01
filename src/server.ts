@@ -6,6 +6,7 @@ import { Pokemon } from './arguments/ExactPokemonPaginatedArgs';
 import { Items } from './arguments/ItemPaginatedArgs';
 import { Moves } from './arguments/MovePaginatedArgs';
 import { Types } from './arguments/TypeArgs';
+import tabs from './defaultPlaygroundTabs';
 import AbilityResolver from './resolvers/AbilityResolver';
 import DexResolver from './resolvers/DexResolver';
 import ItemResolver from './resolvers/ItemResolver';
@@ -50,7 +51,15 @@ const gqlServer = () => {
   const apolloServer = new ApolloServer({
     schema,
     introspection: true,
-    playground: { endpoint: '/api' }
+    playground: {
+      endpoint: '/api',
+      settings: {
+        'editor.theme': 'dark',
+        'editor.fontFamily': '"Fira Code", "MesloLGS NF", "Menlo", Consolas, Courier New, monospace',
+        'editor.reuseHeaders': true
+      },
+      tabs
+    }
   });
 
   apolloServer.applyMiddleware({ app, path: '/', cors: true });

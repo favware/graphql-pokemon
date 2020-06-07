@@ -15,14 +15,17 @@
 **Table of Contents**
 
 - [Installation](#installation)
-  * [NodeJS](#nodejs)
-  * [.NET Core](#net-core)
+  - [NodeJS](#nodejs)
+  - [.NET Core](#net-core)
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
-  * [NodeJS](#nodejs-1)
-    + [With browser \[`Fetch API`\] or \[`node-fetch`\]](#with-browser---fetch-api---or---node-fetch--)
-    + [With \[`Apollo Client React`\]](#with---apollo-client-react--)
-  * [.NET Core](#net-core-1)
+  - [NodeJS](#nodejs-1)
+    - [With browser [`Fetch API`] or [`node-fetch`]](#with-browser-fetch-api-or-node-fetch)
+    - [With [`Apollo Client React`]](#with-apollo-client-react)
+  - [.NET Core](#net-core-1)
+- [Meta](#meta)
+  - [License](#license)
+  - [Buy us a donut](#buy-us-a-donut)
 
 ---
 
@@ -51,7 +54,7 @@
 
 **Key Features**
 
-- Fully generated client-side TypeScript typings published to 
+- Fully generated client-side TypeScript typings published to
   - [npm] as `@favware/graphql-pokemon`
   - [GitHub Package Registry] as `@favware/graphql-pokemon`
 - Fully generated client-side .NET Core typings published to [nuget]
@@ -183,7 +186,9 @@ const GET_POKEMON_DETAILS = gql`
 `;
 
 export const Pokemon: React.FC = () => {
-  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS, { client: client });
+  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS, {
+    client: client
+  });
 
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
@@ -206,18 +211,39 @@ namespace MyProject.Consumer
     private Graphqlpokemon.Abilities Abilities;
   }
 }
-
 ```
+
+# Meta
+
+## License
+
+Copyright © 2019, [Favware](https://github.com/favware).
+Released under the [MIT License](LICENSE).
+
+## Buy us a donut
+
+Favware projects are open source and always will be, even if there are no donations. That said, we also know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
+
+You can contribute in a multitude of ways:
+
+- [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)
+- [Patreon](https://www.patreon.com/favna)
+- [Ko-Fi](https://ko-fi.com/favna)
+- [GitHub Sponsors Favware](https://github.com/sponsors/favware)
+- [GitHub Sponsors Favna](https://github.com/sponsors/Favna)
+- Bitcoin: `1E643TNif2MTh75rugepmXuq35Tck4TnE5`
+- Ethereum: `0xF653F666903cd8739030D2721bF01095896F5D6E`
+- LiteCoin: `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`
 
 <!-- LINK DUMP -->
 
-[`Apollo Client React`]: https://www.apollographql.com/docs/react/
+[`apollo client react`]: https://www.apollographql.com/docs/react/
 [`node-fetch`]: https://github.com/node-fetch/node-fetch
 [`fetch api`]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [the graphql playground on the api]: https://favware.tech/api?ngsw-bypass=true
 [nuget]: https://www.nuget.org/packages/Favware.Graphqlpokemon/
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
-[GitHub Package Registry]: https://github.com/favware/graphql-pokemon/packages
-[Dockerhub]: https://hub.docker.com/r/favware/graphql-pokemon
-[Google Cloud Container Registry]: https://gcr.io/data-sunlight-146313/graphql-pokemon
+[github package registry]: https://github.com/favware/graphql-pokemon/packages
+[dockerhub]: https://hub.docker.com/r/favware/graphql-pokemon
+[google cloud container registry]: https://gcr.io/data-sunlight-146313/graphql-pokemon

@@ -218,7 +218,7 @@ namespace MyProject.Consumer
 ## License
 
 Copyright © 2019, [Favware](https://github.com/favware).
-Released under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE.md).
 
 ## Buy us a donut
 

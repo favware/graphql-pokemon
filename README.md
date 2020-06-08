@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-  <a href="https://favware.tech/api"><img style="height: 200px" src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-project-icons/favware-graphql.png" height="200" alt="logo"/></a>
+  <a href="https://graphqlpokemon.favware.tech/"><img style="height: 200px" src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-project-icons/favware-graphql.png" height="200" alt="logo"/></a>
   </p>
 
   <p>
@@ -38,10 +38,10 @@
 
 **Social Media and Donations**
 
-[![Join Discord server](https://img.shields.io/discord/512303595966824458?color=697EC4&label=Join%20Discord%20Server&logo=discord&logoColor=FDFEFE&style=flat-square)](https://favware.tech/redirect/server)
+[![Join Discord server](https://img.shields.io/discord/512303595966824458?color=697EC4&label=Join%20Discord%20Server&logo=discord&logoColor=FDFEFE&style=flat-square)](https://join.favware.tech)
 [![Twitter Follow](https://img.shields.io/twitter/follow/favna_?label=Follow%20@Favna_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/Favna_/follow)
-[![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://www.patreon.com/bePatron?u=9336537)](https://www.patreon.com/bePatron?u=9336537)
-[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)](https://www.patreon.com/bePatron?u=9336537)
+[![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://donate.favware.tech/patreon)](https://donate.favware.tech/patreon)
+[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://donate.favware.tech/paypal)](https://donate.favware.tech/patreon)
 
 **Typings**
 
@@ -109,7 +109,7 @@ interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
   data: Record<K, Omit<Query[K], '__typename'>>;
 }
 
-fetch('https://favware.tech/api', {
+fetch('https://graphqlpokemon.favware.tech/', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -142,7 +142,7 @@ import { HttpLink } from 'apollo-link-http';
 // Instantiate required constructor fields
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'https://favware.tech/api'
+  uri: 'https://graphqlpokemon.favware.tech/'
 });
 
 export const client = new ApolloClient({
@@ -226,7 +226,7 @@ Favware projects are open source and always will be, even if there are no donati
 
 You can contribute in a multitude of ways:
 
-- [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)
+- [PayPal](https://donate.favware.tech/paypal)
 - [Patreon](https://www.patreon.com/favna)
 - [Ko-Fi](https://ko-fi.com/favna)
 - [GitHub Sponsors Favware](https://github.com/sponsors/favware)
@@ -240,7 +240,7 @@ You can contribute in a multitude of ways:
 [`apollo client react`]: https://www.apollographql.com/docs/react/
 [`node-fetch`]: https://github.com/node-fetch/node-fetch
 [`fetch api`]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-[the graphql playground on the api]: https://favware.tech/api?ngsw-bypass=true
+[the graphql playground on the api]: https://graphqlpokemon.favware.tech/?ngsw-bypass=true
 [nuget]: https://www.nuget.org/packages/Favware.Graphqlpokemon/
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon

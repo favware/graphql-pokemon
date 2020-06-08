@@ -1,5 +1,5 @@
 overwrite: true
-schema: https://favware.tech/api
+schema: https://graphqlpokemon.favware.tech/
 generates:
   ./generated/ts/graphql-pokemon.d.ts:
     plugins:
@@ -7,7 +7,7 @@ generates:
       - typescript-resolvers
     config:
       scalars:
-        JSONObject: 'Record<PropertyKey, any>'
+        JSONObject: "Record<PropertyKey, any>"
       constEnums: true
       immutableTypes: true
   ./generated/ts/graphql-pokemon.graphql:
@@ -23,6 +23,6 @@ generates:
       namingConvention: keep
       enumValues:
         Abilities:
-          static: '_'
+          static: "_"
         Moves:
-          return: '_'
+          return: "_"

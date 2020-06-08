@@ -6,7 +6,7 @@
   "license": "MIT",
   "types": "generated/ts/graphql-pokemon.d.ts",
   "main": "generated/ts/graphql-pokemon.d.ts",
-  "homepage": "https://favware.tech/api",
+  "homepage": "https://graphqlpokemon.favware.tech/",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",
     "style": "prettier --write --loglevel=warn src/**/*.{ts,json}",

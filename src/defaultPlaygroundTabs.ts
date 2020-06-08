@@ -3,7 +3,7 @@ import { MiddlewareOptions } from '@apollographql/graphql-playground-html';
 const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   {
     name: 'Get Pokemon Details simple',
-    endpoint: 'https://favware.tech/api',
+    endpoint: 'https://graphqlpokemon.favware.tech/',
     query: [
       '{',
       '  getPokemonDetailsByName(pokemon: dragonite reverse: true take: 1) {',
@@ -28,7 +28,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   },
   {
     name: 'Pokemon Details with variables',
-    endpoint: 'https://favware.tech/api',
+    endpoint: 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "mewtwo"', '}'].join('\n'),
     query: [
       'query($pokemon: Pokemon!) {',
@@ -54,7 +54,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   },
   {
     name: 'Pokemon Details with fragments and variables',
-    endpoint: 'https://favware.tech/api',
+    endpoint: 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "arceus",', '  "reverse": true,', '  "take": 1', '}'].join('\n'),
     query: [
       'fragment data on DexDetails {',

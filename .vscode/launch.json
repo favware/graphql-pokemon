@@ -7,9 +7,15 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\build\\index.js"
+      "name": "Debug",
+      "args": ["${workspaceFolder}\\generated\\api\\index.js"],
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "outputCapture": "std"
     }
   ]
 }

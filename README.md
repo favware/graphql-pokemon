@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-  <a href="https://graphqlpokemon.favware.tech/"><img style="height: 200px" src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-project-icons/favware-graphql.png" height="200" alt="logo"/></a>
+  <a href="https://graphqlpokemon.favware.tech/"><img style="height: 200px" src="https://cdn.favware.tech/img/gqlp.png" height="200" alt="logo"/></a>
   </p>
 
   <p>
@@ -41,7 +41,7 @@
 [![Join Discord server](https://img.shields.io/discord/512303595966824458?color=697EC4&label=Join%20Discord%20Server&logo=discord&logoColor=FDFEFE&style=flat-square)](https://join.favware.tech)
 [![Twitter Follow](https://img.shields.io/twitter/follow/favna_?label=Follow%20@Favna_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/Favna_/follow)
 [![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://donate.favware.tech/patreon)](https://donate.favware.tech/patreon)
-[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://donate.favware.tech/paypal)](https://donate.favware.tech/patreon)
+[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://donate.favware.tech/paypal)](https://donate.favware.tech/paypal)
 
 **Typings**
 
@@ -240,7 +240,7 @@ You can contribute in a multitude of ways:
 [`apollo client react`]: https://www.apollographql.com/docs/react/
 [`node-fetch`]: https://github.com/node-fetch/node-fetch
 [`fetch api`]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-[the graphql playground on the api]: https://graphqlpokemon.favware.tech/?ngsw-bypass=true
+[the graphql playground on the api]: https://graphqlpokemon.favware.tech
 [nuget]: https://www.nuget.org/packages/Favware.Graphqlpokemon/
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon

@@ -351,10 +351,11 @@ export default class DexService {
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}prevo`
     );
+    const smogonTier = this.tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
     addPropertyToClass(
       pokemonData,
       'smogonTier',
-      this.tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered',
+      smogonTier,
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}smogonTier`
     );
@@ -410,7 +411,7 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'serebiiPage',
-      basePokemonData.num >= 1 ? `https://www.serebii.net/pokedex-sm/${basePokemonData.num}.shtml` : '',
+      this.parseSpeciesForSerebiiPage(basePokemonData.species, basePokemonData.num, smogonTier),
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}serebiiPage`
     );
@@ -429,9 +430,7 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'smogonPage',
-      basePokemonData.num >= 1
-        ? `https://www.smogon.com/dex/sm/pokemon/${Util.toLowerHyphenCase(basePokemonData.species)}`
-        : '',
+      this.parseSpeciesForSmogonPage(basePokemonData.species, basePokemonData.num, smogonTier),
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}smogonPage`
     );
@@ -624,6 +623,46 @@ export default class DexService {
     }
 
     return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;
+  }
+
+  /**
+   * Parses data from a Pokémon into a valid Serebii URL
+   * @param pokemonName The name of the Pokémon to parse, required for new Serebii pages
+   * @param pokemonNumber The number of the Pokémon to parse, required for old Serebii pages
+   * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 8
+   */
+  private parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
+    // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
+    if (pokemonNumber <= 0) return '';
+
+    const baseUrl = 'https://www.serebii.net/pokedex';
+    if (pokemonTier.toLowerCase() === 'past') {
+      // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
+      return `${baseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
+    }
+
+    // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
+    return `${baseUrl}-swsh/${pokemonName}`;
+  }
+
+  /**
+   * Parses data from a Pokémon into a valid Smogon Dex URL
+   * @param pokemonName The name of the Pokémon to parse
+   * @param pokemonNumber The number of the Pokémon to parse
+   * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 8
+   */
+  private parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
+    // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
+    if (pokemonNumber <= 0) return '';
+
+    const baseUrl = 'https://www.smogon.com/dex';
+    if (pokemonTier.toLowerCase() === 'past') {
+      // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
+      return `${baseUrl}/sm/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
+    }
+
+    // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
+    return `${baseUrl}/ss/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
   }
 
   private parseSpeciesForSprite(

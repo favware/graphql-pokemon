@@ -296,6 +296,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       shortDesc: 'Prevents the target from switching out.',
       name: 'Anchor Shot',
       pp: 20,
@@ -824,6 +826,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 85,
       basePower: '15',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Bind',
       pp: 20,
@@ -918,6 +922,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      desc:
+        'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       shortDesc: 'The target cannot switch out.',
       name: 'Block',
       pp: 5,
@@ -1561,6 +1567,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 85,
       basePower: '35',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Clamp',
       pp: 15,
@@ -1594,8 +1602,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 1/3 of its maximum HP, rounded down. Fails if the user would faint or if its Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
-      shortDesc: 'User loses 1/3 its max HP. Raises all stats by 1.',
+        "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 33% of its maximum HP, rounded down. Fails if the user would faint or if its Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
+      shortDesc: 'User loses 33% of its max HP. +1 to all stats.',
       name: 'Clangorous Soul',
       pp: 5,
       priority: 0,
@@ -2060,7 +2068,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       name: 'Curse',
       pp: 10,
       priority: 0,
-      target: 'Normal',
+      target: 'Random',
       type: 'Ghost',
       contestType: 'Tough'
     }
@@ -2196,7 +2204,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      shortDesc: "-1 evasion; clears user and target side's hazards.",
+      desc:
+        "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.",
+      shortDesc: '-1 evasion; clears terrain and hazards on both sides.',
       name: 'Defog',
       pp: 15,
       priority: 0,
@@ -3155,6 +3165,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      desc:
+        'Prevents all active Pokemon from switching next turn. A Pokemon can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the effect is already active.',
       shortDesc: 'Prevents all Pokemon from switching next turn.',
       name: 'Fairy Lock',
       pp: 10,
@@ -3419,6 +3431,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 85,
       basePower: '35',
       category: 'Special',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Fire Spin',
       pp: 15,
@@ -4259,8 +4273,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '1',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the user's side gains the Focus Energy effect, even if they have a substitute.",
-      shortDesc: 'Base move affects power. Allies: Focus Energy.',
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the user's side has their critical hit ratio raised by 1 stage, even if they have a substitute.",
+      shortDesc: 'Base move affects power. Allies: Crit Ratio +1.',
       name: 'G-Max Chi Strike',
       pp: 5,
       priority: 0,
@@ -4537,7 +4552,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side is prevented from switching out, even if they have a substitute. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, U-turn, or Volt Switch. If a target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side is prevented from switching out, even if they have a substitute. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If a target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
       shortDesc: 'Base move affects power. Foes: trapped.',
       name: 'G-Max Terror',
       pp: 10,
@@ -5028,6 +5043,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      desc: "Every Pokemon in the user's party is cured of its major status condition. Active Pokemon with the Soundproof Ability are not cured, unless they are the user.",
       shortDesc: "Cures the user's party of all status conditions.",
       name: 'Heal Bell',
       pp: 5,
@@ -5753,6 +5769,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '20',
       category: 'Special',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Infestation',
       pp: 20,
@@ -5768,6 +5786,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      desc:
+        'The user has 1/16 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped and still receive the healing effect. During the effect, the user can be hit normally by Ground-type attacks and be affected by Spikes, Toxic Spikes, and Sticky Web, even if the user is a Flying type or has the Levitate Ability.',
       shortDesc: 'Traps/grounds user; heals 1/16 max HP per turn.',
       name: 'Ingrain',
       pp: 20,
@@ -5866,7 +5886,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '80',
       category: 'Physical',
       desc:
-        'Prevents the user and the target from switching out. The user and the target can still switch out if either of them is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if either the user or the target leaves the field.',
+        'Prevents the user and the target from switching out. The user and the target can still switch out if either of them is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if either the user or the target leaves the field.',
       shortDesc: 'Prevents both user and target from switching out.',
       name: 'Jaw Lock',
       pp: 15,
@@ -6482,6 +6502,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 75,
       basePower: '100',
       category: 'Special',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Magma Storm',
       pp: 5,
@@ -6700,6 +6722,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      desc:
+        'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       shortDesc: 'The target cannot switch out.',
       name: 'Mean Look',
       pp: 5,
@@ -7655,7 +7679,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped. Fails if the user has already been prevented from switching by this effect.",
+        "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped. Fails if the user has already been prevented from switching by this effect.",
       shortDesc: 'Raises all stats by 1 (not acc/eva). Traps user.',
       name: 'No Retreat',
       pp: 5,
@@ -7752,7 +7776,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Prevents the target from switching out. At the end of each turn during effect, the target's Defense and Special Defense are lowered by 1 stage. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
+        "Prevents the target from switching out. At the end of each turn during effect, the target's Defense and Special Defense are lowered by 1 stage. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
       shortDesc: 'Traps target, lowers Def and SpD by 1 each turn.',
       name: 'Octolock',
       pp: 15,
@@ -8686,7 +8710,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '40',
       category: 'Physical',
-      shortDesc: 'Power doubles if a foe is switching out.',
+      shortDesc: 'If a foe is switching out, hits it at 2x power.',
       name: 'Pursuit',
       pp: 20,
       priority: 0,
@@ -9392,6 +9416,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 85,
       basePower: '35',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Sand Tomb',
       pp: 15,
@@ -10284,7 +10310,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '35',
       category: 'Physical',
       desc:
-        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Snap Trap',
       pp: 15,
@@ -10554,6 +10580,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      desc:
+        'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       shortDesc: 'The target cannot switch out.',
       name: 'Spider Web',
       pp: 10,
@@ -10633,6 +10661,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       shortDesc: 'Prevents the target from switching out.',
       name: 'Spirit Shackle',
       pp: 10,
@@ -10804,7 +10834,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 95,
       basePower: '140',
       category: 'Special',
-      desc: 'If this move is successful, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
+      desc: 'Whether or not this move is successful and even if it would cause fainting, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
       shortDesc: 'User loses 50% max HP. Hits adjacent Pokemon.',
       name: 'Steel Beam',
       pp: 5,
@@ -11667,6 +11697,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '90',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       shortDesc: 'Hits adjacent foes. Prevents them from switching.',
       name: 'Thousand Waves',
       pp: 10,
@@ -12400,6 +12432,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 85,
       basePower: '35',
       category: 'Special',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Whirlpool',
       pp: 15,
@@ -12588,6 +12622,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 90,
       basePower: '15',
       category: 'Physical',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       name: 'Wrap',
       pp: 20,

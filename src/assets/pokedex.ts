@@ -21367,6 +21367,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       species: 'xerneas',
       num: 716,
       types: ['Fairy'],
+      baseForme: 'Active', // Neutral is technically the base, but it can't be used in battle
       genderRatio: { male: 0, female: 0 },
       baseStats: {
         hp: 126,
@@ -21377,6 +21378,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         spe: 99
       },
       abilities: { first: 'Fairy Aura' },
+      heightm: 3,
+      weightkg: 215,
+      color: 'Blue',
+      otherFormes: ['Xerneas-Neutral'],
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'xerneasneutral',
+    {
+      species: 'xerneas-neutral',
+      num: 716,
+      types: ['Fairy'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 126,
+        atk: 131,
+        def: 95,
+        spa: 131,
+        spd: 98,
+        spe: 99
+      },
+      abilities: { first: 'Fairy Aura' },
+      baseSpecies: 'Xerneas',
+      forme: 'Neutral',
+      formeLetter: 'N',
       heightm: 3,
       weightkg: 215,
       color: 'Blue',

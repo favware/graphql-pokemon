@@ -84,7 +84,7 @@ export default class TypeService {
     const defendingTypeEntry = new TypeEntry();
 
     if (requestedFields.has('attacking')) {
-      for (const [attack, multiplier] of Object.entries(def.multi) as [keyof Pokemon.Types, number][]) {
+      for (const [attack, multiplier] of Object.entries(atk.multi) as [keyof Pokemon.Types, number][]) {
         switch (multiplier) {
           case 0:
             atk.effectlessTypes.push(attack);

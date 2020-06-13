@@ -1,7 +1,7 @@
-import { Field, Int, ObjectType, Float } from 'type-graphql';
+import { Field, Float, Int, ObjectType } from 'type-graphql';
 import AbilitiesEntry from './AbilitiesEntry';
-import StatsEntry from './StatsEntry';
 import GenderEntry from './GenderEntry';
+import StatsEntry from './StatsEntry';
 
 @ObjectType({ description: 'A single Pokedex entry' })
 export default class DexEntry {
@@ -58,4 +58,14 @@ export default class DexEntry {
 
   @Field(() => [String], { nullable: true, description: 'Any other forms for a Pokémon' })
   otherFormes?: string[];
+
+  @Field(() => [String], {
+    nullable: true,
+    description: [
+      'Any other *cosmetic* forms for a Pokémon,',
+      'distinguished from other formes as cosmetic formes only change the look of the Pokémon,',
+      'while other formes might also change an ability, moveset or other data.'
+    ].join(' ')
+  })
+  cosmeticFormes?: string[];
 }

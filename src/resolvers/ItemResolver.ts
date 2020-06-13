@@ -1,10 +1,12 @@
+import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import ItemPaginatedArgs, { Items } from '../arguments/ItemPaginatedArgs';
+import ItemPaginatedArgs, { items } from '../arguments/ItemPaginatedArgs';
 import ItemService from '../services/ItemSerivce';
 import ItemEntry from '../structures/ItemEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 @Resolver(ItemEntry)
@@ -25,7 +27,7 @@ export default class ItemResolver {
   getItemDetailsByFuzzy(
     @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
-  ) {
+  ): ItemEntry {
     const entry = this.itemService.findByName(item);
 
     if (!entry) {
@@ -54,9 +56,9 @@ export default class ItemResolver {
     description: ['Gets details on a single item based on an exact name match.'].join('')
   })
   getItemDetailsByName(
-    @Arg('item', () => Items) item: string,
+    @Arg('item', () => items) item: string,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
-  ) {
+  ): ItemEntry {
     const entry = this.itemService.findByNameWithDetails(item, requestedFields);
 
     if (entry === undefined) {
@@ -73,7 +75,7 @@ export default class ItemResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getItemByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs) {
+  getItemByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs): Fuse.FuseResult<Pokemon.Item>[] {
     const itemEntries = this.itemService.findByFuzzy({
       item,
       skip,
@@ -89,7 +91,7 @@ export default class ItemResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single item based on name.' })
-  getItemByName(@Arg('item', () => Items) item: string) {
+  getItemByName(@Arg('item', () => items) item: string): Pokemon.Item {
     const itemEntry = this.itemService.findByName(item);
 
     if (itemEntry === undefined) {

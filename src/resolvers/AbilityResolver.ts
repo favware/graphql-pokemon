@@ -1,10 +1,12 @@
+import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import AbilityPaginatedArgs, { Abilities } from '../arguments/AbilityPaginatedArgs';
+import AbilityPaginatedArgs, { abilities } from '../arguments/AbilityPaginatedArgs';
 import AbilityService from '../services/AbilityService';
 import AbilityEntry from '../structures/AbilityEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 @Resolver(AbilityEntry)
@@ -25,7 +27,7 @@ export default class AbilityResolver {
   async getAbilityDetailsByFuzzy(
     @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
-  ) {
+  ): Promise<AbilityEntry> {
     const entry = this.abilityService.findByName(ability);
 
     if (!entry) {
@@ -53,9 +55,9 @@ export default class AbilityResolver {
     description: ['Gets details on a single ability based on an exact name match.'].join('')
   })
   async getAbilityDetailsByName(
-    @Arg('ability', () => Abilities) ability: string,
+    @Arg('ability', () => abilities) ability: string,
     @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
-  ) {
+  ): Promise<AbilityEntry> {
     const entry = this.abilityService.findByNameWithDetails(ability, requestedFields);
 
     if (entry === undefined) {
@@ -72,7 +74,9 @@ export default class AbilityResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getAbilityByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs) {
+  getAbilityByFuzzy(
+    @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs
+  ): Fuse.FuseResult<Pokemon.Ability>[] {
     const abilityEntries = this.abilityService.findByFuzzy({
       ability,
       skip,
@@ -88,7 +92,7 @@ export default class AbilityResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single ability by name.' })
-  getAbilityByName(@Arg('ability', () => Abilities) ability: string) {
+  getAbilityByName(@Arg('ability', () => abilities) ability: string): Pokemon.Ability {
     const abilityEntry = this.abilityService.findByName(ability);
 
     if (abilityEntry === undefined) {

@@ -1,3 +1,4 @@
+import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
 import { moveAliases } from '../assets/aliases';
@@ -6,14 +7,15 @@ import MoveEntry from '../structures/MoveEntry';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 export default class MoveService {
-  public findByName(@Arg('name') name: string) {
+  public findByName(@Arg('name') name: string): Pokemon.Move | undefined {
     return moves.get(name);
   }
 
-  public findByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs) {
+  public findByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs): Fuse.FuseResult<Pokemon.Move>[] {
     const fuzzyMove = new FuzzySearch(moves, ['name'], { threshold: 0.3 });
 
     let fuzzyResult = fuzzyMove.runFuzzy(move);
@@ -34,7 +36,7 @@ export default class MoveService {
     return fuzzyResult.slice(skip, skip + take);
   }
 
-  public findByNameWithDetails(@Arg('move') move: string, requestedFields: GraphQLSet<keyof MoveEntry>) {
+  public findByNameWithDetails(@Arg('move') move: string, requestedFields: GraphQLSet<keyof MoveEntry>): MoveEntry {
     const moveData = this.findByName(move);
 
     if (!moveData) {

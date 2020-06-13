@@ -1,12 +1,13 @@
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import ExactPokemonPaginatedArgs, { Pokemon } from '../arguments/ExactPokemonPaginatedArgs';
+import ExactPokemonPaginatedArgs, { pokemons } from '../arguments/ExactPokemonPaginatedArgs';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 @Resolver(DexDetails)
@@ -27,7 +28,7 @@ export default class DexResolver {
   async getPokemonDetails(
     @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
-  ) {
+  ): Promise<DexDetails> {
     const detailsEntry = this.dexService.findBySpeciesWithDetails(
       {
         pokemon,
@@ -54,7 +55,7 @@ export default class DexResolver {
   getPokemonDetailsByName(
     @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
-  ) {
+  ): Promise<DexDetails> {
     return this.getPokemonDetails(
       {
         pokemon,
@@ -76,7 +77,7 @@ export default class DexResolver {
   async getPokemonDetailsByFuzzy(
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
-  ) {
+  ): Promise<DexDetails> {
     const entry = this.dexService.findBySpecies(pokemon);
 
     if (!entry) {
@@ -113,7 +114,7 @@ export default class DexResolver {
   getDexEntries(
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
-  ) {
+  ): DexEntry[] {
     const dexEntries = this.dexService.findByFuzzy(
       {
         pokemon,
@@ -131,7 +132,7 @@ export default class DexResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their species name' })
-  getDexEntryBySpeciesName(@Arg('pokemon', () => Pokemon) pokemon: string) {
+  getDexEntryBySpeciesName(@Arg('pokemon', () => pokemons) pokemon: string): Pokemon.DexEntry {
     const dexEntry = this.dexService.findBySpecies(pokemon);
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
@@ -141,7 +142,7 @@ export default class DexResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
-  getDexEntryByDexNumber(@Arg('num') num: number) {
+  getDexEntryByDexNumber(@Arg('num') num: number): Pokemon.DexEntry {
     const dexEntry = this.dexService.findByNum(num);
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon with dex number: ${num}`);

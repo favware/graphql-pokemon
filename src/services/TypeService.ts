@@ -1,18 +1,21 @@
 import { Arg, Args } from 'type-graphql';
-import TypeArgs, { Types } from '../arguments/TypeArgs';
+import TypeArgs, { types } from '../arguments/TypeArgs';
 import typechart from '../assets/typechart';
 import TypeEntry from '../structures/TypeEntry';
 import TypeMatchups from '../structures/TypeMatchups';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import GraphQLSet from '../utils/GraphQLSet';
-import Pokemon from '../utils/pokemon';
+import type Pokemon from '../utils/pokemon';
 
 export default class TypeService {
-  public findTypeMatchupByName(@Arg('name', () => Types) name: string) {
+  public findTypeMatchupByName(@Arg('name', () => types) name: string): Pokemon.TypeMatchups | undefined {
     return typechart.get(name);
   }
 
-  public findTypeMatchups(@Args(() => Types) { types }: TypeArgs, requestedFields: GraphQLSet<keyof TypeMatchups>) {
+  public findTypeMatchups(
+    @Args(() => types) { types }: TypeArgs,
+    requestedFields: GraphQLSet<keyof TypeMatchups>
+  ): TypeMatchups {
     const atk: Pokemon.TypeDataset = {
       doubleEffectiveTypes: [],
       doubleResistedTypes: [],

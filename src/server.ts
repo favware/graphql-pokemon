@@ -1,11 +1,12 @@
 import { ApolloServer } from 'apollo-server-express';
 import express from 'express';
+import type { GraphQLSchema } from 'graphql';
 import { buildSchemaSync, registerEnumType } from 'type-graphql';
-import { Abilities } from './arguments/AbilityPaginatedArgs';
-import { Pokemon } from './arguments/ExactPokemonPaginatedArgs';
-import { Items } from './arguments/ItemPaginatedArgs';
-import { Moves } from './arguments/MovePaginatedArgs';
-import { Types } from './arguments/TypeArgs';
+import { abilities } from './arguments/AbilityPaginatedArgs';
+import { pokemons } from './arguments/ExactPokemonPaginatedArgs';
+import { items } from './arguments/ItemPaginatedArgs';
+import { moves } from './arguments/MovePaginatedArgs';
+import { types } from './arguments/TypeArgs';
 import tabs from './defaultPlaygroundTabs';
 import AbilityResolver from './resolvers/AbilityResolver';
 import DexResolver from './resolvers/DexResolver';
@@ -14,28 +15,28 @@ import LearnsetResolver from './resolvers/LearnsetResolver';
 import MoveResolver from './resolvers/MoveResolver';
 import TypeResolver from './resolvers/TypeResolver';
 
-export const buildGqlSchema = () => {
-  registerEnumType(Abilities, {
+export const buildGqlSchema = (): GraphQLSchema => {
+  registerEnumType(abilities, {
     name: 'Abilities',
     description: 'The supported abilities'
   });
 
-  registerEnumType(Items, {
+  registerEnumType(items, {
     name: 'Items',
     description: 'The supported items'
   });
 
-  registerEnumType(Moves, {
+  registerEnumType(moves, {
     name: 'Moves',
     description: 'The supported moves'
   });
 
-  registerEnumType(Pokemon, {
+  registerEnumType(pokemons, {
     name: 'Pokemon',
     description: 'The supported Pokémon'
   });
 
-  registerEnumType(Types, {
+  registerEnumType(types, {
     name: 'Types',
     description: 'The types in Pokémon'
   });
@@ -45,7 +46,7 @@ export const buildGqlSchema = () => {
   });
 };
 
-const gqlServer = () => {
+const gqlServer = (): ReturnType<typeof express> => {
   const schema = buildGqlSchema();
   const app = express();
   const apolloServer = new ApolloServer({

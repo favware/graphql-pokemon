@@ -1,11 +1,12 @@
 import fs from 'fs';
 import glob from 'glob';
 import path from 'path';
-import { redColour, yellowColour, greenColour } from './auto/utils';
+import { kConsole } from './auto/utils';
 
-let files = glob.sync('**/*.test.?(j|t)s?(x)', { cwd: path.join(__dirname, '../__tests__') });
-files = files.map((file) => path.join(__dirname, '../__tests__', file));
 const onlyPattern = new RegExp(/(?:describe\.only|it\.only|test\.only)/, 'gm');
+const files = glob
+  .sync('**/*.test.?(j|t)s?(x)', { cwd: path.join(__dirname, '../__tests__') })
+  .map((file) => path.join(__dirname, '../__tests__', file));
 
 let shouldError = false;
 const badFiles: string[] = [];
@@ -25,22 +26,8 @@ for (const file of files) {
 }
 
 if (shouldError) {
-  // eslint-disable-next-line no-console
-  console.error(
-    [
-      `${redColour.format('\nLooks like you left focused tests, I found these hits:')}`,
-      `${badPatterns
-        .map(
-          (pattern, index) =>
-            `- ${yellowColour.format(pattern)} \t${pattern.includes('describe') ? '' : '\t'}  in \t ${badFiles[index]}`
-        )
-        .join('\n')}`,
-      `${redColour.format('Please remove all the focused tests!\n')}`
-    ].join('\n')
-  );
+  kConsole.error('Looks like you left focused tests, I found these hits:');
+  kConsole.error(badPatterns.map((pattern, index) => `- ${pattern}\t→\t${badFiles[index]}`).join('\n'));
+  kConsole.error('Please remove all the focused tests!');
   process.exit(1);
-} else {
-  console.log(greenColour.format('Awesome, all tests are running!'));
 }
-
-process.exit(0);

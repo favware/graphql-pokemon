@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
 export type Maybe<T> = T | null;
 export type RequireFields<T, K extends keyof T> = { [X in Exclude<keyof T, K>]?: T[X] } &
   { [P in K]-?: NonNullable<T[P]> };
 /** All built-in and custom scalars, mapped to their actual values */
-export interface Scalars {
+export type Scalars = {
   ID: string;
   String: string;
   Boolean: boolean;
@@ -12,9 +11,9 @@ export interface Scalars {
   Float: number;
   /** The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
   JSONObject: Record<PropertyKey, any>;
-}
+};
 
-export interface Query {
+export type Query = {
   readonly __typename?: 'Query';
   /** Gets details on a single ability based on a fuzzy search.You can supply skip and take to paginate the fuzzy search and reverse to show the least likely matched on top.Reversal is applied before pagination! */
   readonly getAbilityDetailsByFuzzy: AbilityEntry;
@@ -60,132 +59,132 @@ export interface Query {
   readonly getTypeMatchup: TypeMatchups;
   /** Gets the raw type matchup data for any one given type */
   readonly getTypeByName: Scalars['JSONObject'];
-}
+};
 
-export interface QueryGetAbilityDetailsByFuzzyArgs {
+export type QueryGetAbilityDetailsByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   ability: Scalars['String'];
-}
+};
 
-export interface QueryGetAbilityDetailsByNameArgs {
+export type QueryGetAbilityDetailsByNameArgs = {
   ability: Abilities;
-}
+};
 
-export interface QueryGetAbilityByFuzzyArgs {
+export type QueryGetAbilityByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   ability: Scalars['String'];
-}
+};
 
-export interface QueryGetAbilityByNameArgs {
+export type QueryGetAbilityByNameArgs = {
   ability: Abilities;
-}
+};
 
-export interface QueryGetPokemonDetailsArgs {
+export type QueryGetPokemonDetailsArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   pokemon: Pokemon;
-}
+};
 
-export interface QueryGetPokemonDetailsByNameArgs {
+export type QueryGetPokemonDetailsByNameArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   pokemon: Pokemon;
-}
+};
 
-export interface QueryGetPokemonDetailsByFuzzyArgs {
+export type QueryGetPokemonDetailsByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   pokemon: Scalars['String'];
-}
+};
 
-export interface QueryGetDexEntriesArgs {
+export type QueryGetDexEntriesArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   pokemon: Scalars['String'];
-}
+};
 
-export interface QueryGetDexEntryBySpeciesNameArgs {
+export type QueryGetDexEntryBySpeciesNameArgs = {
   pokemon: Pokemon;
-}
+};
 
-export interface QueryGetDexEntryByDexNumberArgs {
+export type QueryGetDexEntryByDexNumberArgs = {
   num: Scalars['Float'];
-}
+};
 
-export interface QueryGetItemDetailsByFuzzyArgs {
+export type QueryGetItemDetailsByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   item: Scalars['String'];
-}
+};
 
-export interface QueryGetItemDetailsByNameArgs {
+export type QueryGetItemDetailsByNameArgs = {
   item: Items;
-}
+};
 
-export interface QueryGetItemByFuzzyArgs {
+export type QueryGetItemByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   item: Scalars['String'];
-}
+};
 
-export interface QueryGetItemByNameArgs {
+export type QueryGetItemByNameArgs = {
   item: Items;
-}
+};
 
-export interface QueryGetPokemonLearnsetArgs {
+export type QueryGetPokemonLearnsetArgs = {
   pokemon: Pokemon;
   moves: ReadonlyArray<Moves>;
   generation?: Maybe<Scalars['Int']>;
-}
+};
 
-export interface QueryGetPokemonLearnsetByFuzzyArgs {
+export type QueryGetPokemonLearnsetByFuzzyArgs = {
   pokemon: Scalars['String'];
   moves: ReadonlyArray<Scalars['String']>;
   generation?: Maybe<Scalars['Int']>;
-}
+};
 
-export interface QueryGetMoveDetailsByFuzzyArgs {
+export type QueryGetMoveDetailsByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   move: Scalars['String'];
-}
+};
 
-export interface QueryGetMoveDetailsByNameArgs {
+export type QueryGetMoveDetailsByNameArgs = {
   move: Moves;
-}
+};
 
-export interface QueryGetMoveByFuzzyArgs {
+export type QueryGetMoveByFuzzyArgs = {
   skip?: Maybe<Scalars['Int']>;
   take?: Maybe<Scalars['Int']>;
   reverse?: Maybe<Scalars['Boolean']>;
   move: Scalars['String'];
-}
+};
 
-export interface QueryGetMoveByNameArgs {
+export type QueryGetMoveByNameArgs = {
   move: Moves;
-}
+};
 
-export interface QueryGetTypeMatchupArgs {
+export type QueryGetTypeMatchupArgs = {
   types: ReadonlyArray<Types>;
-}
+};
 
-export interface QueryGetTypeByNameArgs {
+export type QueryGetTypeByNameArgs = {
   type: Types;
-}
+};
 
 /** A single Pokémon ability entry */
-export interface AbilityEntry {
+export type AbilityEntry = {
   readonly __typename?: 'AbilityEntry';
   /** The long description for an ability */
   readonly desc?: Maybe<Scalars['String']>;
@@ -199,7 +198,7 @@ export interface AbilityEntry {
   readonly serebiiPage: Scalars['String'];
   /** Smogon page for an ability */
   readonly smogonPage: Scalars['String'];
-}
+};
 
 /** The supported abilities */
 export const enum Abilities {
@@ -468,7 +467,7 @@ export const enum Abilities {
 }
 
 /** A Pokémon's details entry */
-export interface DexDetails {
+export type DexDetails = {
   readonly __typename?: 'DexDetails';
   /** The dex number for a Pokémon */
   readonly num: Scalars['Int'];
@@ -506,6 +505,8 @@ export interface DexDetails {
   readonly baseSpecies?: Maybe<Scalars['String']>;
   /** Any other forms for a Pokémon */
   readonly otherFormes?: Maybe<ReadonlyArray<Scalars['String']>>;
+  /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, moveset or other data. */
+  readonly cosmeticFormes?: Maybe<ReadonlyArray<Scalars['String']>>;
   /** The total of all base stats for a Pokémon */
   readonly baseStatsTotal: Scalars['Int'];
   /** The evolutions for a Pokémon, if any  */
@@ -526,10 +527,10 @@ export interface DexDetails {
   readonly serebiiPage: Scalars['String'];
   /** Smogon page for a Pokémon */
   readonly smogonPage: Scalars['String'];
-}
+};
 
 /** A Pokémon's abilities entry */
-export interface AbilitiesEntry {
+export type AbilitiesEntry = {
   readonly __typename?: 'AbilitiesEntry';
   /** The first ability of a Pokémon */
   readonly first: Scalars['String'];
@@ -539,10 +540,10 @@ export interface AbilitiesEntry {
   readonly hidden?: Maybe<Scalars['String']>;
   /** The special ability of a Pokémon */
   readonly special?: Maybe<Scalars['String']>;
-}
+};
 
 /** A Pokémon's stats */
-export interface StatsEntry {
+export type StatsEntry = {
   readonly __typename?: 'StatsEntry';
   /** The base HP stat of a pokemon */
   readonly hp: Scalars['Int'];
@@ -556,25 +557,25 @@ export interface StatsEntry {
   readonly specialdefense: Scalars['Int'];
   /** The base speed stat of a Pokémon */
   readonly speed: Scalars['Int'];
-}
+};
 
 /** A Pokémon gender ratio entry */
-export interface GenderEntry {
+export type GenderEntry = {
   readonly __typename?: 'GenderEntry';
   /** The percentage of male occurrences */
   readonly male: Scalars['String'];
   /** The percentage for female occurrences */
   readonly female: Scalars['String'];
-}
+};
 
 /** A flavor text entry for a Pokémon */
-export interface FlavorEntry {
+export type FlavorEntry = {
   readonly __typename?: 'FlavorEntry';
   /** The name of the game this flavor text is from */
   readonly game: Scalars['String'];
   /** The flavor text for this entry */
   readonly flavor: Scalars['String'];
-}
+};
 
 /** The supported Pokémon */
 export const enum Pokemon {
@@ -1108,9 +1109,7 @@ export const enum Pokemon {
   Cherrim = 'cherrim',
   Cherrimsunshine = 'cherrimsunshine',
   Shellos = 'shellos',
-  Shelloseast = 'shelloseast',
   Gastrodon = 'gastrodon',
-  Gastrodoneast = 'gastrodoneast',
   Ambipom = 'ambipom',
   Drifloon = 'drifloon',
   Drifblim = 'drifblim',
@@ -1467,6 +1466,7 @@ export const enum Pokemon {
   Noibat = 'noibat',
   Noivern = 'noivern',
   Xerneas = 'xerneas',
+  Xerneasneutral = 'xerneasneutral',
   Yveltal = 'yveltal',
   Zygarde = 'zygarde',
   Zygarde10 = 'zygarde10',
@@ -1741,6 +1741,7 @@ export const enum Pokemon {
   Smokomodo = 'smokomodo',
   Snaelstrom = 'snaelstrom',
   Equilibra = 'equilibra',
+  Astrolotl = 'astrolotl',
   Syclar = 'syclar',
   Embirch = 'embirch',
   Flarelm = 'flarelm',
@@ -1787,7 +1788,7 @@ export const enum Pokemon {
 }
 
 /** A single Pokedex entry */
-export interface DexEntry {
+export type DexEntry = {
   readonly __typename?: 'DexEntry';
   /** The dex number for a Pokémon */
   readonly num: Scalars['Int'];
@@ -1825,10 +1826,12 @@ export interface DexEntry {
   readonly baseSpecies?: Maybe<Scalars['String']>;
   /** Any other forms for a Pokémon */
   readonly otherFormes?: Maybe<ReadonlyArray<Scalars['String']>>;
-}
+  /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, moveset or other data. */
+  readonly cosmeticFormes?: Maybe<ReadonlyArray<Scalars['String']>>;
+};
 
 /** A single item entry */
-export interface ItemEntry {
+export type ItemEntry = {
   readonly __typename?: 'ItemEntry';
   /** The long description for an item */
   readonly desc: Scalars['String'];
@@ -1848,7 +1851,7 @@ export interface ItemEntry {
   readonly serebiiPage: Scalars['String'];
   /** Smogon page for an item */
   readonly smogonPage: Scalars['String'];
-}
+};
 
 /** The supported items */
 export const enum Items {
@@ -2268,7 +2271,7 @@ export const enum Items {
 }
 
 /** A learnset entry */
-export interface LearnsetEntry {
+export type LearnsetEntry = {
   readonly __typename?: 'LearnsetEntry';
   /** The moves that can be learned through levelling up */
   readonly levelUpMoves?: Maybe<ReadonlyArray<LearnsetLevelUpMove>>;
@@ -2294,10 +2297,10 @@ export interface LearnsetEntry {
   readonly shinySprite: Scalars['String'];
   /** The PokéDex colour for the Pokémon */
   readonly color: Scalars['String'];
-}
+};
 
 /** A learnset level up move entry */
-export interface LearnsetLevelUpMove {
+export type LearnsetLevelUpMove = {
   readonly __typename?: 'LearnsetLevelUpMove';
   /** The name of the move */
   readonly name?: Maybe<Scalars['String']>;
@@ -2305,16 +2308,16 @@ export interface LearnsetLevelUpMove {
   readonly generation?: Maybe<Scalars['Int']>;
   /** The level at which the move is learned */
   readonly level?: Maybe<Scalars['Int']>;
-}
+};
 
 /** A learnset move entry */
-export interface LearnsetMove {
+export type LearnsetMove = {
   readonly __typename?: 'LearnsetMove';
   /** The name of the move */
   readonly name?: Maybe<Scalars['String']>;
   /** The generation in which this pokemon learned the move this way */
   readonly generation?: Maybe<Scalars['Int']>;
-}
+};
 
 /** The supported moves */
 export const enum Moves {
@@ -3127,7 +3130,7 @@ export const enum Moves {
 }
 
 /** A single Pokémon move entry */
-export interface MoveEntry {
+export type MoveEntry = {
   readonly __typename?: 'MoveEntry';
   /** The name for a move */
   readonly name: Scalars['String'];
@@ -3163,19 +3166,19 @@ export interface MoveEntry {
   readonly isGMax?: Maybe<Scalars['String']>;
   /** The long description for a move */
   readonly desc?: Maybe<Scalars['String']>;
-}
+};
 
 /** The type matchups for any one or two given types */
-export interface TypeMatchups {
+export type TypeMatchups = {
   readonly __typename?: 'TypeMatchups';
   /** The type matchups when attacking */
   readonly attacking: TypeEntry;
   /** The type matchups when defending */
   readonly defending: TypeEntry;
-}
+};
 
 /** A type matchup entry */
-export interface TypeEntry {
+export type TypeEntry = {
   readonly __typename?: 'TypeEntry';
   /** The types with 4x effectiveness */
   readonly doubleEffectiveTypes: ReadonlyArray<Scalars['String']>;
@@ -3189,7 +3192,7 @@ export interface TypeEntry {
   readonly doubleResistedTypes: ReadonlyArray<Scalars['String']>;
   /** The types with 0x effectiveness */
   readonly effectlessTypes: ReadonlyArray<Scalars['String']>;
-}
+};
 
 /** The types in Pokémon */
 export const enum Types {
@@ -3215,11 +3218,18 @@ export const enum Types {
 
 export type ResolverTypeWrapper<T> = Promise<T> | T;
 
-export interface StitchingResolver<TResult, TParent, TContext, TArgs> {
+export type LegacyStitchingResolver<TResult, TParent, TContext, TArgs> = {
   fragment: string;
   resolve: ResolverFn<TResult, TParent, TContext, TArgs>;
-}
+};
 
+export type NewStitchingResolver<TResult, TParent, TContext, TArgs> = {
+  selectionSet: string;
+  resolve: ResolverFn<TResult, TParent, TContext, TArgs>;
+};
+export type StitchingResolver<TResult, TParent, TContext, TArgs> =
+  | LegacyStitchingResolver<TResult, TParent, TContext, TArgs>
+  | NewStitchingResolver<TResult, TParent, TContext, TArgs>;
 export type Resolver<TResult, TParent = {}, TContext = {}, TArgs = {}> =
   | ResolverFn<TResult, TParent, TContext, TArgs>
   | StitchingResolver<TResult, TParent, TContext, TArgs>;
@@ -3269,7 +3279,7 @@ export type TypeResolveFn<TTypes, TParent = {}, TContext = {}> = (
   info: GraphQLResolveInfo
 ) => Maybe<TTypes> | Promise<Maybe<TTypes>>;
 
-export type isTypeOfResolverFn<T = {}> = (obj: T, info: GraphQLResolveInfo) => boolean | Promise<boolean>;
+export type IsTypeOfResolverFn<T = {}> = (obj: T, info: GraphQLResolveInfo) => boolean | Promise<boolean>;
 
 export type NextResolverFn<T> = () => Promise<T>;
 
@@ -3282,11 +3292,11 @@ export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs
 ) => TResult | Promise<TResult>;
 
 /** Mapping between all available schema types and the resolvers types */
-export interface ResolversTypes {
-  String: ResolverTypeWrapper<Scalars['String']>;
-  Boolean: ResolverTypeWrapper<Scalars['Boolean']>;
+export type ResolversTypes = {
   Query: ResolverTypeWrapper<{}>;
   Int: ResolverTypeWrapper<Scalars['Int']>;
+  Boolean: ResolverTypeWrapper<Scalars['Boolean']>;
+  String: ResolverTypeWrapper<Scalars['String']>;
   Float: ResolverTypeWrapper<Scalars['Float']>;
   AbilityEntry: ResolverTypeWrapper<AbilityEntry>;
   Abilities: Abilities;
@@ -3308,41 +3318,36 @@ export interface ResolversTypes {
   TypeMatchups: ResolverTypeWrapper<TypeMatchups>;
   TypeEntry: ResolverTypeWrapper<TypeEntry>;
   Types: Types;
-}
+};
 
 /** Mapping between all available schema types and the resolvers parents */
-export interface ResolversParentTypes {
-  String: Scalars['String'];
-  Boolean: Scalars['Boolean'];
+export type ResolversParentTypes = {
   Query: {};
   Int: Scalars['Int'];
+  Boolean: Scalars['Boolean'];
+  String: Scalars['String'];
   Float: Scalars['Float'];
   AbilityEntry: AbilityEntry;
-  Abilities: Abilities;
   JSONObject: Scalars['JSONObject'];
   DexDetails: DexDetails;
   AbilitiesEntry: AbilitiesEntry;
   StatsEntry: StatsEntry;
   GenderEntry: GenderEntry;
   FlavorEntry: FlavorEntry;
-  Pokemon: Pokemon;
   DexEntry: DexEntry;
   ItemEntry: ItemEntry;
-  Items: Items;
   LearnsetEntry: LearnsetEntry;
   LearnsetLevelUpMove: LearnsetLevelUpMove;
   LearnsetMove: LearnsetMove;
-  Moves: Moves;
   MoveEntry: MoveEntry;
   TypeMatchups: TypeMatchups;
   TypeEntry: TypeEntry;
-  Types: Types;
-}
+};
 
-export interface QueryResolvers<
+export type QueryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']
-> {
+> = {
   getAbilityDetailsByFuzzy?: Resolver<
     ResolversTypes['AbilityEntry'],
     ParentType,
@@ -3475,29 +3480,29 @@ export interface QueryResolvers<
     ContextType,
     RequireFields<QueryGetTypeByNameArgs, 'type'>
   >;
-}
+};
 
-export interface AbilityEntryResolvers<
+export type AbilityEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['AbilityEntry'] = ResolversParentTypes['AbilityEntry']
-> {
+> = {
   desc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   shortDesc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
 export interface JsonObjectScalarConfig extends GraphQLScalarTypeConfig<ResolversTypes['JSONObject'], any> {
   name: 'JSONObject';
 }
 
-export interface DexDetailsResolvers<
+export type DexDetailsResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['DexDetails'] = ResolversParentTypes['DexDetails']
-> {
+> = {
   num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   types?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
@@ -3516,6 +3521,7 @@ export interface DexDetailsResolvers<
   baseForme?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   baseSpecies?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   otherFormes?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  cosmeticFormes?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
   baseStatsTotal?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   evolutions?: Resolver<Maybe<ReadonlyArray<ResolversTypes['DexDetails']>>, ParentType, ContextType>;
   preevolutions?: Resolver<Maybe<ReadonlyArray<ResolversTypes['DexDetails']>>, ParentType, ContextType>;
@@ -3526,55 +3532,55 @@ export interface DexDetailsResolvers<
   bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface AbilitiesEntryResolvers<
+export type AbilitiesEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['AbilitiesEntry'] = ResolversParentTypes['AbilitiesEntry']
-> {
+> = {
   first?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   second?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   hidden?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   special?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface StatsEntryResolvers<
+export type StatsEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['StatsEntry'] = ResolversParentTypes['StatsEntry']
-> {
+> = {
   hp?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   attack?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   defense?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   specialattack?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   specialdefense?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   speed?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface GenderEntryResolvers<
+export type GenderEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['GenderEntry'] = ResolversParentTypes['GenderEntry']
-> {
+> = {
   male?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   female?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface FlavorEntryResolvers<
+export type FlavorEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['FlavorEntry'] = ResolversParentTypes['FlavorEntry']
-> {
+> = {
   game?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   flavor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface DexEntryResolvers<
+export type DexEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['DexEntry'] = ResolversParentTypes['DexEntry']
-> {
+> = {
   num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   types?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
@@ -3593,13 +3599,14 @@ export interface DexEntryResolvers<
   baseForme?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   baseSpecies?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   otherFormes?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  cosmeticFormes?: Resolver<Maybe<ReadonlyArray<ResolversTypes['String']>>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface ItemEntryResolvers<
+export type ItemEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['ItemEntry'] = ResolversParentTypes['ItemEntry']
-> {
+> = {
   desc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shortDesc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
@@ -3609,13 +3616,13 @@ export interface ItemEntryResolvers<
   bulbapediaPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   serebiiPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface LearnsetEntryResolvers<
+export type LearnsetEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['LearnsetEntry'] = ResolversParentTypes['LearnsetEntry']
-> {
+> = {
   levelUpMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetLevelUpMove']>>, ParentType, ContextType>;
   virtualTransferMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
   tutorMoves?: Resolver<Maybe<ReadonlyArray<ResolversTypes['LearnsetMove']>>, ParentType, ContextType>;
@@ -3628,32 +3635,32 @@ export interface LearnsetEntryResolvers<
   sprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shinySprite?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   color?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface LearnsetLevelUpMoveResolvers<
+export type LearnsetLevelUpMoveResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['LearnsetLevelUpMove'] = ResolversParentTypes['LearnsetLevelUpMove']
-> {
+> = {
   name?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   generation?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
   level?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface LearnsetMoveResolvers<
+export type LearnsetMoveResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['LearnsetMove'] = ResolversParentTypes['LearnsetMove']
-> {
+> = {
   name?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   generation?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface MoveEntryResolvers<
+export type MoveEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['MoveEntry'] = ResolversParentTypes['MoveEntry']
-> {
+> = {
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shortDesc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   type?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
@@ -3671,32 +3678,32 @@ export interface MoveEntryResolvers<
   isZ?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   isGMax?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   desc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface TypeMatchupsResolvers<
+export type TypeMatchupsResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['TypeMatchups'] = ResolversParentTypes['TypeMatchups']
-> {
+> = {
   attacking?: Resolver<ResolversTypes['TypeEntry'], ParentType, ContextType>;
   defending?: Resolver<ResolversTypes['TypeEntry'], ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface TypeEntryResolvers<
+export type TypeEntryResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes['TypeEntry'] = ResolversParentTypes['TypeEntry']
-> {
+> = {
   doubleEffectiveTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   effectiveTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   normalTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   resistedTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   doubleResistedTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   effectlessTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
-  __isTypeOf?: isTypeOfResolverFn<ParentType>;
-}
+  __isTypeOf?: IsTypeOfResolverFn<ParentType>;
+};
 
-export interface Resolvers<ContextType = any> {
+export type Resolvers<ContextType = any> = {
   Query?: QueryResolvers<ContextType>;
   AbilityEntry?: AbilityEntryResolvers<ContextType>;
   JSONObject?: GraphQLScalarType;
@@ -3713,7 +3720,7 @@ export interface Resolvers<ContextType = any> {
   MoveEntry?: MoveEntryResolvers<ContextType>;
   TypeMatchups?: TypeMatchupsResolvers<ContextType>;
   TypeEntry?: TypeEntryResolvers<ContextType>;
-}
+};
 
 /**
  * @deprecated

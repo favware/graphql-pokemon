@@ -1,3 +1,4 @@
+import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import { pokedexAliases } from '../assets/aliases';
@@ -11,22 +12,25 @@ import StatsEntry from '../structures/StatsEntry';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
 import GraphQLSet from '../utils/GraphQLSet';
-import Pokemon from '../utils/pokemon';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 export default class DexService {
   private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
   private tiers: Record<string, string> | undefined = undefined;
 
-  public findByNum(@Arg('num') num: number) {
+  public findByNum(@Arg('num') num: number): Pokemon.DexEntry | undefined {
     return pokedex.find((poke) => poke.num === num);
   }
 
-  public findBySpecies(@Arg('species') species: string) {
+  public findBySpecies(@Arg('species') species: string): Pokemon.DexEntry | undefined {
     return pokedex.get(species);
   }
 
-  public findByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, requestedFields: GraphQLSet<unknown>) {
+  public findByFuzzy(
+    @Args() { pokemon, skip, take }: PokemonPaginatedArgs,
+    requestedFields: GraphQLSet<unknown>
+  ): DexEntry[] {
     const paginatedFuzzyResult = this.getByFuzzy({ pokemon, skip, take });
 
     const queryResults: DexEntry[] = [];
@@ -159,7 +163,7 @@ export default class DexService {
     requestedFields: GraphQLSet<unknown>,
     parsingPokemon = '',
     recursingAs: 'preevolutions' | 'evolutions' | false = false
-  ) {
+  ): Promise<DexDetails> {
     const basePokemonData = this.findBySpecies(pokemon);
 
     if (!basePokemonData) {
@@ -569,7 +573,7 @@ export default class DexService {
     return pokemonData;
   }
 
-  public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs) {
+  public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs): Fuse.FuseResult<Pokemon.DexEntry>[] {
     switch (pokemon.split(' ')[0]) {
       case 'mega':
         pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
@@ -602,7 +606,9 @@ export default class DexService {
     let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
 
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, ['alias', 'name'], { threshold: 0.4 }).runFuzzy(pokemon);
+      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, ['alias', 'name'], {
+        threshold: 0.4
+      }).runFuzzy(pokemon);
 
       if (fuzzyAliasResult.length) {
         fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].item.name);

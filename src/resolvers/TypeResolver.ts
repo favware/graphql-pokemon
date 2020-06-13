@@ -1,10 +1,11 @@
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import TypeArgs, { Types } from '../arguments/TypeArgs';
+import TypeArgs, { types } from '../arguments/TypeArgs';
 import TypeService from '../services/TypeService';
 import TypeMatchups from '../structures/TypeMatchups';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 
 @Resolver(TypeMatchups)
 export default class TypeResolver {
@@ -15,7 +16,10 @@ export default class TypeResolver {
   }
 
   @Query(() => TypeMatchups, { description: 'Gets the type matchup data for the given type or types' })
-  getTypeMatchup(@Args() { types }: TypeArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchups>) {
+  getTypeMatchup(
+    @Args() { types }: TypeArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchups>
+  ): TypeMatchups {
     const entry = this.typeService.findTypeMatchups({ types }, requestedFields);
 
     if (entry === undefined) {
@@ -26,7 +30,7 @@ export default class TypeResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw type matchup data for any one given type' })
-  getTypeByName(@Arg('type', () => Types) type: string) {
+  getTypeByName(@Arg('type', () => types) type: string): Pokemon.TypeMatchups {
     const typeEntry = this.typeService.findTypeMatchupByName(type);
 
     if (typeEntry === undefined) {

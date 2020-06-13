@@ -5,7 +5,8 @@
     "outDir": "../generated/api",
     "composite": true,
     "declarationMap": false,
-    "sourceMap": false
+    "sourceMap": false,
+    "importsNotUsedAsValues": "error"
   },
   "include": ["./**/*.ts", "./**/*.json"],
   "exclude": ["./tsconfig.json"]

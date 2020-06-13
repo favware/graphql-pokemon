@@ -1,16 +1,18 @@
-import { Colors } from '@klasa/console';
+import { KlasaConsole } from '@klasa/console';
 import { remove, writeFileAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { resolve } from 'path';
 import ts from 'typescript';
 
-export const yellowColour = new Colors({ text: 'yellow' });
-export const redColour = new Colors({ text: 'red' });
-export const greenColour = new Colors({ text: 'green' });
+export const kConsole = new KlasaConsole({
+  useColor: true,
+  timestamps: true,
+  utc: false
+});
 
-export const mapToJson = (map: Map<string, unknown>) => JSON.stringify([...map]);
+export const mapToJson = (map: Map<string, unknown>): string => JSON.stringify([...map]);
 
-export const importFileFromWeb = async <R>({ url, temporaryFileName }: { url: string; temporaryFileName: string }) => {
+export const importFileFromWeb = async <R>({ url, temporaryFileName }: ImportFileFromWebArgs): Promise<R> => {
   const request = await fetch(url);
   const body = await request.text();
 
@@ -32,12 +34,17 @@ export const importFileFromWeb = async <R>({ url, temporaryFileName }: { url: st
   const temporaryOutputFile = resolve(__dirname, temporaryFileName);
 
   await writeFileAtomic(temporaryOutputFile, result.outputText);
-  const TiersData = (await import(temporaryOutputFile)) as R;
+  const tiersData = (await import(temporaryOutputFile)) as R;
 
   await remove(temporaryOutputFile);
 
-  return TiersData;
+  return tiersData;
 };
+
+interface ImportFileFromWebArgs {
+  url: string;
+  temporaryFileName: string;
+}
 
 export interface DataJSON {
   tiersLastSha: string;

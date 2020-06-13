@@ -396,6 +396,13 @@ export default class DexService {
     );
     addPropertyToClass(
       pokemonData,
+      'cosmeticFormes',
+      basePokemonData.cosmeticFormes,
+      dexDetailsFields,
+      `${recursingAs ? `${recursingAs}.` : ''}cosmeticFormes`
+    );
+    addPropertyToClass(
+      pokemonData,
       'baseStatsTotal',
       this.parseBaseStatsTotal(basePokemonData.baseStats),
       dexDetailsFields,

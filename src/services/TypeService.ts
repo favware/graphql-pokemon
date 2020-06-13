@@ -47,32 +47,32 @@ export default class TypeService {
       const dDealt = typechart.get(curType)!.damageDealt;
       const dTaken = typechart.get(curType)!.damageTaken;
 
-      for (const multiplier in dTaken) {
-        switch (dTaken[multiplier]) {
+      for (const [type, multiplier] of Object.entries(dTaken) as [keyof Pokemon.Types, number][]) {
+        switch (multiplier) {
           case 1:
-            def.multi[multiplier] *= 2;
+            def.multi[type] *= 2;
             break;
           case 2:
-            def.multi[multiplier] *= 0.5;
+            def.multi[type] *= 0.5;
             break;
           case 3:
-            def.multi[multiplier] = 0;
+            def.multi[type] = 0;
             break;
           default:
             break;
         }
       }
 
-      for (const multiplier in dDealt) {
-        switch (dDealt[multiplier]) {
+      for (const [type, multiplier] of Object.entries(dDealt) as [keyof Pokemon.Types, number][]) {
+        switch (multiplier) {
           case 1:
-            atk.multi[multiplier] *= 2;
+            atk.multi[type] *= 2;
             break;
           case 2:
-            atk.multi[multiplier] *= 0.5;
+            atk.multi[type] *= 0.5;
             break;
           case 3:
-            atk.multi[multiplier] = 0;
+            atk.multi[type] = 0;
             break;
           default:
             break;
@@ -84,8 +84,8 @@ export default class TypeService {
     const defendingTypeEntry = new TypeEntry();
 
     if (requestedFields.has('attacking')) {
-      for (const attack in def.multi) {
-        switch (atk.multi[attack]) {
+      for (const [attack, multiplier] of Object.entries(def.multi) as [keyof Pokemon.Types, number][]) {
+        switch (multiplier) {
           case 0:
             atk.effectlessTypes.push(attack);
             break;
@@ -157,8 +157,8 @@ export default class TypeService {
     }
 
     if (requestedFields.has('defending')) {
-      for (const defense in def.multi) {
-        switch (def.multi[defense]) {
+      for (const [defense, multiplier] of Object.entries(def.multi) as [keyof Pokemon.Types, number][]) {
+        switch (multiplier) {
           case 0:
             def.effectlessTypes.push(defense);
             break;

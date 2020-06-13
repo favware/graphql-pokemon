@@ -6581,34 +6581,34 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 5,
       color: 'Black',
       eggGroups: ['Undiscovered'],
-      otherFormes: [
-        'unownb',
-        'unownc',
-        'unownd',
-        'unowne',
-        'unownf',
-        'unowng',
-        'unownh',
-        'unowni',
-        'unownj',
-        'unownk',
-        'unownl',
-        'unownm',
-        'unownn',
-        'unowno',
-        'unownp',
-        'unownq',
-        'unownr',
-        'unowns',
-        'unownt',
-        'unownu',
-        'unownv',
-        'unownw',
-        'unownx',
-        'unowny',
-        'unownz',
-        'unownexclamation',
-        'unownquestion'
+      cosmeticFormes: [
+        'Unown-B',
+        'Unown-C',
+        'Unown-D',
+        'Unown-E',
+        'Unown-F',
+        'Unown-G',
+        'Unown-H',
+        'Unown-I',
+        'Unown-J',
+        'Unown-K',
+        'Unown-L',
+        'Unown-M',
+        'Unown-N',
+        'Unown-O',
+        'Unown-P',
+        'Unown-Q',
+        'Unown-R',
+        'Unown-S',
+        'Unown-T',
+        'Unown-U',
+        'Unown-V',
+        'Unown-W',
+        'Unown-X',
+        'Unown-Y',
+        'Unown-Z',
+        'Unown-Exclamation',
+        'Unown-Question'
       ]
     }
   ],
@@ -12477,7 +12477,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Green',
       evos: ['wormadam', 'wormadamsandy', 'wormadamtrash', 'mothim'],
       eggGroups: ['Bug'],
-      otherFormes: ['burmysandy', 'burmytrash']
+      cosmeticFormes: ['Burmy-Sandy', 'Burmy-Trash']
     }
   ],
   [
@@ -12798,35 +12798,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Purple',
       evos: ['gastrodon'],
       eggGroups: ['Water 1', 'Amorphous'],
-      otherFormes: ['shelloseast']
-    }
-  ],
-  [
-    'shelloseast',
-    {
-      species: 'shellos-east',
-      num: 422,
-      types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 76,
-        atk: 48,
-        def: 48,
-        spa: 57,
-        spd: 62,
-        spe: 34
-      },
-      baseSpecies: 'Shellos',
-      forme: 'East',
-      formeLetter: 'E',
-      baseForme: 'West',
-      abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
-      heightm: 0.3,
-      weightkg: 6.3,
-      color: 'Purple',
-      evos: ['gastrodon'],
-      eggGroups: ['Water 1', 'Amorphous'],
-      otherFormes: ['shellos']
+      cosmeticFormes: ['Shellos-East']
     }
   ],
   [
@@ -12852,36 +12824,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'shellos',
       evoLevel: 30,
       eggGroups: ['Water 1', 'Amorphous'],
-      otherFormes: ['gastrodoneast']
-    }
-  ],
-  [
-    'gastrodoneast',
-    {
-      species: 'gastrodon-east',
-      num: 423,
-      types: ['Water', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 111,
-        atk: 83,
-        def: 68,
-        spa: 92,
-        spd: 82,
-        spe: 39
-      },
-      baseSpecies: 'Gastrodon',
-      forme: 'East',
-      formeLetter: 'E',
-      baseForme: 'West',
-      abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
-      heightm: 0.9,
-      weightkg: 29.9,
-      color: 'Purple',
-      prevo: 'shellos',
-      evoLevel: 30,
-      eggGroups: ['Water 1', 'Amorphous'],
-      otherFormes: ['gastrodon']
+      cosmeticFormes: ['Gastrodon-East']
     }
   ],
   [
@@ -17653,7 +17596,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Pink',
       evos: ['sawsbuck'],
       eggGroups: ['Field'],
-      otherFormes: ['deerlingsummer', 'deerlingautumn', 'deerlingwinter']
+      cosmeticFormes: ['Deerling-Summer', 'Deerling-Autumn', 'Deerling-Winter']
     }
   ],
   [
@@ -17679,7 +17622,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'deerling',
       evoLevel: 34,
       eggGroups: ['Field'],
-      otherFormes: ['sawsbucksummer', 'sawsbuckautumn', 'sawsbuckwinter']
+      cosmeticFormes: ['Sawsbuck-Summer', 'Sawsbuck-Autumn', 'Sawsbuck-Winter']
     }
   ],
   [
@@ -19944,26 +19887,24 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'spewpa',
       evoLevel: 12,
       eggGroups: ['Bug'],
-      otherFormes: [
-        'vivillonarchipelago',
-        'vivilloncontinental',
-        'vivillonelegant',
-        'vivillongarden',
-        'vivillonhighplains',
-        'vivillonicysnow',
-        'vivillonjungle',
-        'vivillonmarine',
-        'vivillonmodern',
-        'vivillonmonsoon',
-        'vivillonocean',
-        'vivillonpolar',
-        'vivillonriver',
-        'vivillonsandstorm',
-        'vivillonsavanna',
-        'vivillonsun',
-        'vivillontundra',
-        'vivillonfancy',
-        'vivillonpokeball'
+      cosmeticFormes: [
+        'Vivillon-Archipelago',
+        'Vivillon-Continental',
+        'Vivillon-Elegant',
+        'Vivillon-Garden',
+        'Vivillon-High Plains',
+        'Vivillon-Icy Snow',
+        'Vivillon-Jungle',
+        'Vivillon-Marine',
+        'Vivillon-Modern',
+        'Vivillon-Monsoon',
+        'Vivillon-Ocean',
+        'Vivillon-Polar',
+        'Vivillon-River',
+        'Vivillon-Sandstorm',
+        'Vivillon-Savanna',
+        'Vivillon-Sun',
+        'Vivillon-Tundra'
       ]
     }
   ],
@@ -20086,7 +20027,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'White',
       evos: ['floette'],
       eggGroups: ['Fairy'],
-      otherFormes: ['flabebeblue', 'flabebeorange', 'flabebewhite', 'flabebeyellow']
+      cosmeticFormes: ['Flabe\u0301be\u0301-Blue', 'Flabe\u0301be\u0301-Orange', 'Flabe\u0301be\u0301-White', 'Flabe\u0301be\u0301-Yellow']
     }
   ],
   [
@@ -20113,7 +20054,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       evos: ['florges'],
       evoLevel: 19,
       eggGroups: ['Fairy'],
-      otherFormes: ['floetteblue', 'floetteorange', 'floettewhite', 'floetteyellow', 'floetteeternal']
+      cosmeticFormes: ['Floette-Blue', 'Floette-Orange', 'Floette-White', 'Floette-Yellow']
     }
   ],
   [
@@ -20164,7 +20105,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'floette',
       evoLevel: 19,
       eggGroups: ['Fairy'],
-      otherFormes: ['florgesblue', 'florgesorange', 'florgeswhite', 'florgesyellow']
+      cosmeticFormes: ['Florges-Blue', 'Florges-Orange', 'Florges-White', 'Florges-Yellow']
     }
   ],
   [
@@ -20282,7 +20223,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 28,
       color: 'White',
       eggGroups: ['Field'],
-      otherFormes: ['furfroudandy', 'furfroudebutante', 'furfroudiamond', 'furfrouheart', 'furfroukabuki', 'furfroulareine', 'furfroumatron', 'furfroupharaoh', 'furfroustar']
+      cosmeticFormes: ['Furfrou-Dandy', 'Furfrou-Debutante', 'Furfrou-Diamond', 'Furfrou-Heart', 'Furfrou-Kabuki', 'Furfrou-La Reine', 'Furfrou-Matron', 'Furfrou-Pharaoh', 'Furfrou-Star']
     }
   ],
   [
@@ -23701,7 +23642,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 0.3,
       color: 'Red',
       eggGroups: ['Mineral'],
-      otherFormes: ['miniormeteor', 'miniororange', 'minioryellow', 'miniorgreen', 'miniorblue', 'miniorindigo', 'miniorviolet']
+      cosmeticFormes: ['Minior-Orange', 'Minior-Yellow', 'Minior-Green', 'Minior-Blue', 'Minior-Indigo', 'Minior-Violet']
     }
   ],
   [
@@ -26674,7 +26615,16 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'milcery',
       evoLevel: 'Spin the joystick while Milcery is holding a sweet.',
       eggGroups: ['Fairy', 'Amorphous'],
-      otherFormes: ['alcremierubycream', 'alcremiematchacream', 'alcremiemintcream', 'alcremielemoncream', 'alcremiesaltedcream', 'alcremierubyswirl', 'alcremiecaramelswirl', 'alcremierainbowswirl']
+      cosmeticFormes: [
+        'Alcremie-Ruby-Cream',
+        'Alcremie-Matcha-Cream',
+        'Alcremie-Mint-Cream',
+        'Alcremie-Lemon-Cream',
+        'Alcremie-Salted-Cream',
+        'Alcremie-Ruby-Swirl',
+        'Alcremie-Caramel-Swirl',
+        'Alcremie-Rainbow-Swirl'
+      ]
     }
   ],
   [
@@ -28041,7 +27991,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'equilibra',
     {
-      num: -54,
+      num: -55,
       species: 'equilibra',
       types: ['Steel', 'Ground'],
       genderRatio: { male: 0, female: 0 },
@@ -28058,6 +28008,28 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 51.3,
       color: 'Brown',
       eggGroups: ['Mineral']
+    }
+  ],
+  [
+    'astrolotl',
+    {
+      num: -57,
+      species: 'astrolotl',
+      types: ['Fire', 'Dragon'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 108,
+        atk: 108,
+        def: 74,
+        spa: 92,
+        spd: 64,
+        spe: 114
+      },
+      abilities: { first: 'Regenerator', second: 'Vital Spirit', hidden: 'Magician' },
+      heightm: 1.9,
+      weightkg: 50,
+      color: 'Red',
+      eggGroups: ['Dragon', 'Fairy']
     }
   ],
   [
@@ -28714,7 +28686,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarufopropu1', 'pokestarufo2', 'pokestarufopropu2']
+      otherFormes: ['Pokestar UFO-2', 'Pokestar UFO-PropU2'],
+      cosmeticFormes: ['Pokestar UFO-PropU1']
     }
   ],
   [
@@ -28762,7 +28735,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarbrycenmanprop']
+      cosmeticFormes: ['Pokestar Brycen-Man-Prop']
     }
   ],
   [
@@ -28785,7 +28758,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarmtprop']
+      cosmeticFormes: ['Pokestar MT-Prop']
     }
   ],
   [
@@ -28808,7 +28781,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarmt2prop']
+      cosmeticFormes: ['Pokestar MT2-Prop']
     }
   ],
   [
@@ -28831,7 +28804,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestartransportprop']
+      cosmeticFormes: ['Pokestar Transport-Prop']
     }
   ],
   [
@@ -28854,7 +28827,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestargiant2', 'pokestargiantpropo1', 'pokestargiantpropo2']
+      cosmeticFormes: ['Pokestar Giant-2', 'Pokestar Giant-PropO1', 'Pokestar Giant-PropO2']
     }
   ],
   [
@@ -28877,7 +28850,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarhumanoidprop']
+      cosmeticFormes: ['Pokestar Humanoid-Prop']
     }
   ],
   [
@@ -28900,7 +28873,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarmonsterprop']
+      cosmeticFormes: ['Pokestar Monster-Prop']
     }
   ],
   [
@@ -28923,7 +28896,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarf00prop']
+      cosmeticFormes: ['Pokestar F-00-Prop']
     }
   ],
   [
@@ -28946,7 +28919,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarf002prop']
+      cosmeticFormes: ['Pokestar F-002-Prop']
     }
   ],
   [
@@ -28969,7 +28942,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarspiritprop']
+      cosmeticFormes: ['Pokestar Spirit-Prop']
     }
   ],
   [
@@ -28992,7 +28965,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarblackdoorprop']
+      cosmeticFormes: ['Pokestar Black Door-Prop']
     }
   ],
   [
@@ -29015,7 +28988,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarwhitedoorprop']
+      cosmeticFormes: ['Pokestar White Door-Prop']
     }
   ],
   [
@@ -29038,7 +29011,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 61,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pokestarblackbeltprop']
+      cosmeticFormes: ['Pokestar Black Belt-Prop']
     }
   ],
   [

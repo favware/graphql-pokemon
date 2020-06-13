@@ -1,5 +1,5 @@
 export namespace Pokemon {
-  export interface Types extends Record<string, number> {
+  export interface Types {
     bug: number;
     dark: number;
     dragon: number;
@@ -25,7 +25,7 @@ export namespace Pokemon {
     female: number;
   }
 
-  export interface Stats extends Record<string, number> {
+  export interface Stats {
     hp: number;
     atk: number;
     def: number;
@@ -34,7 +34,7 @@ export namespace Pokemon {
     spe: number;
   }
 
-  export interface Abilities extends Record<string, string | undefined> {
+  export interface Abilities {
     first: string;
     second?: string;
     hidden?: string;
@@ -62,6 +62,7 @@ export namespace Pokemon {
     weightkg: number;
     specialShinySprite?: string;
     specialSprite?: string;
+    cosmeticFormes?: string[];
   }
 
   export interface Ability {
@@ -131,13 +132,13 @@ export namespace Pokemon {
   export type RecordStringArray = Record<string, string[]>;
 
   export interface TypeDataset {
-    doubleEffectiveTypes: string[];
-    doubleResistedTypes: string[];
-    effectiveTypes: string[];
-    effectlessTypes: string[];
+    doubleEffectiveTypes: (keyof Types)[];
+    doubleResistedTypes: (keyof Types)[];
+    effectiveTypes: (keyof Types)[];
+    effectlessTypes: (keyof Types)[];
     multi: Types;
-    normalTypes: string[];
-    resistedTypes: string[];
+    normalTypes: (keyof Types)[];
+    resistedTypes: (keyof Types)[];
   }
 
   export interface TypeMatchups {

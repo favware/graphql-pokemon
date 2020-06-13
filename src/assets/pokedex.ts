@@ -1,5 +1,5 @@
-import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
+import type { Pokemon } from '../utils/pokemon';
 
 /** The entire PokéDex of Pokémon */
 export default new GraphQLCollection<string, Pokemon.DexEntry>([
@@ -3078,8 +3078,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.2,
       weightkg: 36,
       color: 'Pink',
-      // eslint-disable-next-line
-      // evos: [ 'slowbrogalar', 'slowkinggalar' ], TODO: Remove when Galarian Slowbro and Galarian Slowpoke release
+      // TODO: Remove when Galarian Slowbro and Galarian Slowpoke release
+      // evos: [ 'slowbrogalar', 'slowkinggalar' ],
       eggGroups: ['Monster', 'Water 1']
     }
   ],

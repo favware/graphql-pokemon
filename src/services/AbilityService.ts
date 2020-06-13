@@ -1,3 +1,4 @@
+import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
 import abilities from '../assets/abilities';
@@ -6,14 +7,17 @@ import AbilityEntry from '../structures/AbilityEntry';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 export default class AbilityService {
-  public findByName(@Arg('name') name: string) {
+  public findByName(@Arg('name') name: string): Pokemon.Ability | undefined {
     return abilities.get(name);
   }
 
-  public findByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs) {
+  public findByFuzzy(
+    @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs
+  ): Fuse.FuseResult<Pokemon.Ability>[] {
     const fuzzyAbility = new FuzzySearch(abilities, ['name'], { threshold: 0.3 });
 
     let fuzzyResult = fuzzyAbility.runFuzzy(ability);
@@ -35,7 +39,10 @@ export default class AbilityService {
     return fuzzyResult.slice(skip, skip + take);
   }
 
-  public findByNameWithDetails(@Arg('ability') ability: string, requestedFields: GraphQLSet<keyof AbilityEntry>) {
+  public findByNameWithDetails(
+    @Arg('ability') ability: string,
+    requestedFields: GraphQLSet<keyof AbilityEntry>
+  ): AbilityEntry {
     const abilityData = this.findByName(ability);
 
     if (!abilityData) {

@@ -1,4 +1,4 @@
-import { MiddlewareOptions } from '@apollographql/graphql-playground-html';
+import type { MiddlewareOptions } from '@apollographql/graphql-playground-html';
 
 const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   {

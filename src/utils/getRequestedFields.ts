@@ -10,7 +10,7 @@ function collectRequestedFields(
   fieldsToParse: Record<string, ResolveTree>,
   collectedFields: GraphQLSet<string> = new GraphQLSet(),
   parent = ''
-) {
+): GraphQLSet<string> {
   for (const fieldValue of Object.values(fieldsToParse)) {
     if (Object.keys(fieldValue.fieldsByTypeName).length === 0) {
       if (parent && collectedFields.has(parent) === false) collectedFields.add(parent);

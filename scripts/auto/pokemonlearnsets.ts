@@ -1,36 +1,26 @@
-/* eslint-disable no-console */
 import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import {
-  DataJSON,
-  importFileFromWeb,
-  mapToJson,
-  SmogonLearnsetData,
-  redColour,
-  yellowColour,
-  greenColour
-} from './utils';
+import { DataJSON, importFileFromWeb, kConsole, mapToJson, SmogonLearnsetData } from './utils';
 
 const FILE_PREFIX = [
-  '// @ts-nocheck',
+  '// @ts-nocheck TS checking this file causes major delays in developing',
   '/* eslint-disable max-len */',
   '',
-  "import { Pokemon } from '../utils/pokemon';",
   "import GraphQLCollection from '../utils/GraphQLCollection';",
+  "import type { Pokemon } from '../utils/pokemon';",
   '',
   '/** The learnsets in Pokémon */',
   'export default new GraphQLCollection<string, Pokemon.RecordStringArray>('
 ].join('\n');
 const FILE_SUFFIX = [');', ''].join('\n');
 
+const Ci_DATA_FILE = join(__dirname, 'sha-tracker.json');
+const LEARNSETS_FILE = join(__dirname, '../../src/assets/learnsets.ts');
+const UPDATED_FORMATS_DATA = readJSON(Ci_DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
-
-const LEARNSETS_FILE = join(__dirname, '../../src/assets/learnsets.ts');
-const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
-const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 
 const autoUpdateLearnsets = async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
@@ -44,13 +34,13 @@ const autoUpdateLearnsets = async () => {
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
   if (!data) {
-    console.log(redColour.format('no data from request'));
+    kConsole.error('no data from request');
 
     return process.exit(1);
   }
 
   if (data.sha === ciData.learnsetsLastSha) {
-    console.log(yellowColour.format('Fetched data but no new commit was available'));
+    kConsole.info('Fetched data but no new commit was available');
 
     return process.exit(0);
   }
@@ -70,13 +60,13 @@ const autoUpdateLearnsets = async () => {
 
   const writePromises: Promise<void>[] = [];
 
-  if (data.sha) writePromises.push(writeJSONAtomic(CI_DATA_FILE, { ...ciData, learnsetsLastSha: data.sha }));
+  if (data.sha) writePromises.push(writeJSONAtomic(Ci_DATA_FILE, { ...ciData, learnsetsLastSha: data.sha }));
   if (output.size)
     writePromises.push(writeFileAtomic(LEARNSETS_FILE, `${FILE_PREFIX}${mapToJson(output)}${FILE_SUFFIX}`));
 
   await Promise.all(writePromises);
 
-  console.log(greenColour.format(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`));
+  kConsole.log(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`);
   return process.exit(0);
 };
 

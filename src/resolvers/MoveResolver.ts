@@ -1,10 +1,12 @@
+import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import MovePaginatedArgs, { Moves } from '../arguments/MovePaginatedArgs';
+import MovePaginatedArgs, { moves } from '../arguments/MovePaginatedArgs';
 import MoveService from '../services/MoveService';
 import MoveEntry from '../structures/MoveEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
+import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 @Resolver(MoveEntry)
@@ -25,7 +27,7 @@ export default class MoveResolver {
   getMoveDetailsByFuzzy(
     @Args() { move, skip, take, reverse }: MovePaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
-  ) {
+  ): MoveEntry {
     const entry = this.moveService.findByName(move);
 
     if (!entry) {
@@ -53,9 +55,9 @@ export default class MoveResolver {
     description: ['Gets details on a single move based on an exact name match.'].join('')
   })
   getMoveDetailsByName(
-    @Arg('move', () => Moves) move: string,
+    @Arg('move', () => moves) move: string,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
-  ) {
+  ): MoveEntry {
     const entry = this.moveService.findByNameWithDetails(move, requestedFields);
 
     if (entry === undefined) {
@@ -72,7 +74,7 @@ export default class MoveResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getMoveByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs) {
+  getMoveByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs): Fuse.FuseResult<Pokemon.Move>[] {
     const moveEntries = this.moveService.findByFuzzy({
       move,
       skip,
@@ -88,7 +90,7 @@ export default class MoveResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single move based on name.' })
-  getMoveByName(@Arg('move', () => Moves) move: string) {
+  getMoveByName(@Arg('move', () => moves) move: string): Pokemon.Move {
     const moveEntry = this.moveService.findByName(move);
 
     if (moveEntry === undefined) {

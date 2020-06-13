@@ -1,13 +1,13 @@
 import { Args, Query, Resolver } from 'type-graphql';
-import LearnsetEntry from '../structures/LearnsetEntry';
-import LearnsetService from '../services/LearnsetService';
 import LearnsetArgs from '../arguments/LearnsetArgs';
-import DexService from '../services/DexService';
-import MoveService from '../services/MoveService';
-import Util from '../utils/util';
 import LearnsetFuzzyArgs from '../arguments/LearnsetFuzzyArgs';
+import DexService from '../services/DexService';
+import LearnsetService from '../services/LearnsetService';
+import MoveService from '../services/MoveService';
+import LearnsetEntry from '../structures/LearnsetEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
+import Util from '../utils/util';
 
 @Resolver(LearnsetEntry)
 export default class LearnsetResolver {
@@ -31,7 +31,7 @@ export default class LearnsetResolver {
   getPokemonLearnset(
     @Args() { pokemon, moves, generation }: LearnsetArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof LearnsetEntry>
-  ) {
+  ): LearnsetEntry {
     const entry = this.learnsetService.findLearnsets({ pokemon, moves, generation }, requestedFields);
 
     if (entry === undefined) {
@@ -58,7 +58,7 @@ export default class LearnsetResolver {
   getPokemonLearnsetByFuzzy(
     @Args() { pokemon, moves, generation }: LearnsetFuzzyArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof LearnsetEntry>
-  ) {
+  ): LearnsetEntry {
     const pokemonEntry = this.dexService.findBySpecies(pokemon);
 
     if (!pokemonEntry) {

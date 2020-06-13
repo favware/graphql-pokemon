@@ -1,5 +1,5 @@
-import { Pokemon } from '../utils/pokemon';
 import GraphQLCollection from '../utils/GraphQLCollection';
+import type { Pokemon } from '../utils/pokemon';
 
 /** Aliases for Smogon tiers */
 export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>([

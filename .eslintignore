@@ -1,1 +1,2 @@
 **/*.js
+__tests__/testUtils/types.d.ts

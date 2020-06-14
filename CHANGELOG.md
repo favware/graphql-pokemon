@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.4](https://github.com/favware/graphql-pokemon/compare/v4.0.3...v4.0.4) (2020-06-14)
+
+
+### Bug Fixes
+
+* add cosmeticFormes to DexEntry ([9ea20c0](https://github.com/favware/graphql-pokemon/commit/9ea20c0777fbe8f7b872cfe77254ec74acdeede7))
+* target GCP url for schema generation ([1f2174a](https://github.com/favware/graphql-pokemon/commit/1f2174ab1b687ce9a3d2d5f870fcffd0a4da8711))
+
 ### [4.0.3](https://github.com/favware/graphql-pokemon/compare/v4.0.2...v4.0.3) (2020-06-13)
 
 

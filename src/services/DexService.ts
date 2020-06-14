@@ -151,6 +151,7 @@ export default class DexService {
       addPropertyToClass(dexEntry, 'baseForme', page.item.baseForme, dexEntryFields);
       addPropertyToClass(dexEntry, 'baseSpecies', page.item.baseSpecies, dexEntryFields);
       addPropertyToClass(dexEntry, 'otherFormes', page.item.otherFormes, dexEntryFields);
+      addPropertyToClass(dexEntry, 'cosmeticFormes', page.item.cosmeticFormes, dexEntryFields);
 
       queryResults.push(dexEntry);
     }

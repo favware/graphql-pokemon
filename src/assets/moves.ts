@@ -34,7 +34,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Grass',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 90
     }
   ],
   [
@@ -50,7 +51,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 1,
       target: 'Normal',
       type: 'Rock',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 90
     }
   ],
   [
@@ -65,7 +67,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Poison',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 70
     }
   ],
   [
@@ -113,7 +116,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Poison',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 70
     }
   ],
   [
@@ -129,7 +133,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 110
     }
   ],
   [
@@ -160,7 +165,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 110
     }
   ],
   [
@@ -176,7 +182,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -223,7 +230,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 110
     }
   ],
   [
@@ -239,7 +247,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -304,7 +313,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Steel',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -319,7 +329,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Rock',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 110
     }
   ],
   [
@@ -334,7 +345,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 10,
       priority: 0,
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      maxMovePower: 130
     }
   ],
   [
@@ -350,7 +362,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 1,
       target: 'Normal',
       type: 'Water',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 90
     }
   ],
   [
@@ -381,7 +394,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Water',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -396,7 +410,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 70
     }
   ],
   [
@@ -459,7 +474,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dark',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 110
     }
   ],
   [
@@ -475,7 +491,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Ghost',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 90
     }
   ],
   [
@@ -491,7 +508,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Bug',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 130
     }
   ],
   [
@@ -522,7 +540,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Fighting',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 90
     }
   ],
   [
@@ -538,7 +557,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 10,
       priority: 0,
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      maxMovePower: 140
     }
   ],
   [
@@ -554,7 +574,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Ice',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 120
     }
   ],
   [
@@ -600,7 +621,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -4,
       target: 'Normal',
       type: 'Ice',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 110
     }
   ],
   [
@@ -712,7 +734,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -3,
       target: 'Normal',
       type: 'Flying',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -727,7 +750,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dark',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 100
     }
   ],
   [
@@ -756,7 +780,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 5,
       priority: 0,
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      maxMovePower: 130
     }
   ],
   [
@@ -770,7 +795,25 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 5,
       priority: 0,
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      maxMovePower: 130
+    }
+  ],
+  [
+    'belch',
+    {
+      accuracy: 90,
+      basePower: '120',
+      category: 'Special',
+      desc:
+        'This move cannot be selected until the user eats a Berry, either by eating one that was held, stealing and eating one off another Pokemon with Bug Bite or Pluck, or eating one that was thrown at it with Fling. Once the condition is met, this move can be selected and used for the rest of the battle even if the user gains or uses another item or switches out. Consuming a Berry with Natural Gift does not count for the purposes of eating one.',
+      shortDesc: 'Cannot be selected until the user eats a Berry.',
+      name: 'Belch',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Poison',
+      maxMovePower: 95
     }
   ],
   [
@@ -834,7 +877,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 90
     }
   ],
   [
@@ -850,7 +894,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dark',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 110
     }
   ],
   [
@@ -883,7 +928,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fire',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 150
     }
   ],
   [
@@ -898,7 +944,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fire',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -913,7 +960,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Ice',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 140
     }
   ],
   [
@@ -963,7 +1011,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fire',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 140
     }
   ],
   [
@@ -978,7 +1027,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 10,
       priority: 0,
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      maxMovePower: 90
     }
   ],
   [
@@ -993,7 +1043,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -1008,7 +1059,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 10,
       priority: 0,
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      maxMovePower: 130
     }
   ],
   [
@@ -1024,7 +1076,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Electric',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 140
     }
   ],
   [
@@ -1056,7 +1109,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Ground',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -1071,7 +1125,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Ground',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -1087,7 +1142,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'All Adjacent',
       type: 'Normal',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 140
     }
   ],
   [
@@ -1102,7 +1158,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 130
     }
   ],
   [
@@ -1132,7 +1189,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 140
     }
   ],
   [
@@ -1147,7 +1205,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 40,
       priority: 0,
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      maxMovePower: 90
     }
   ],
   [
@@ -1162,7 +1221,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 15,
       priority: 0,
       target: 'Adjacent Foes',
-      type: 'Dragon'
+      type: 'Dragon',
+      maxMovePower: 110
     }
   ],
   [
@@ -1194,7 +1254,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 90
     }
   ],
   [
@@ -1209,7 +1270,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Water',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 120
     }
   ],
   [
@@ -1225,7 +1287,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'All Adjacent',
       type: 'Dark',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 110
     }
   ],
   [
@@ -1258,7 +1321,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Water',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 120
     }
   ],
   [
@@ -1273,7 +1337,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Bug',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 110
     }
   ],
   [
@@ -1288,7 +1353,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Bug',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -1320,7 +1386,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'All Adjacent',
       type: 'Ground',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 110
     }
   ],
   [
@@ -1336,7 +1403,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 1,
       target: 'Normal',
       type: 'Steel',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 90
     }
   ],
   [
@@ -1351,7 +1419,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Grass',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -1366,7 +1435,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fire',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 140
     }
   ],
   [
@@ -1494,7 +1564,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Electric',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 100
     }
   ],
   [
@@ -1526,7 +1597,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 120
     }
   ],
   [
@@ -1558,7 +1630,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -6,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 80
     }
   ],
   [
@@ -1592,7 +1665,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Dragon',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 140
     }
   ],
   [
@@ -1641,7 +1715,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Poison',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 75
     }
   ],
   [
@@ -1657,7 +1732,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 95
     }
   ],
   [
@@ -1737,7 +1813,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Psychic',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 100
     }
   ],
   [
@@ -1835,7 +1912,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Dragon',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -1915,7 +1993,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -5,
       target: 'Foe that last hit user',
       type: 'Fighting',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 75
     }
   ],
   [
@@ -1946,7 +2025,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 110
     }
   ],
   [
@@ -1962,7 +2042,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Water',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -1993,7 +2074,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 90
     }
   ],
   [
@@ -2008,7 +2090,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Poison',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 85
     }
   ],
   [
@@ -2024,7 +2107,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dark',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -2040,7 +2124,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -2055,7 +2140,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 140
     }
   ],
   [
@@ -2086,7 +2172,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 100
     }
   ],
   [
@@ -2102,7 +2189,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Dark',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -2133,7 +2221,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dark',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -2149,7 +2238,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Fairy',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -2277,7 +2367,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Rock',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -2292,7 +2383,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Ground',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -2325,7 +2417,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Fairy',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 90
     }
   ],
   [
@@ -2341,7 +2434,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'All Adjacent',
       type: 'Electric',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -2356,7 +2450,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Water',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -2388,7 +2483,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Steel',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 140
     }
   ],
   [
@@ -2403,7 +2499,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 120
     }
   ],
   [
@@ -2418,7 +2515,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Steel',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 140
     }
   ],
   [
@@ -2433,7 +2531,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 80
     }
   ],
   [
@@ -2480,7 +2579,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 140
     }
   ],
   [
@@ -2496,7 +2596,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 140
     }
   ],
   [
@@ -2512,7 +2613,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 140
     }
   ],
   [
@@ -2528,7 +2630,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 110
     }
   ],
   [
@@ -2544,7 +2647,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -2576,7 +2680,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 10,
       priority: 0,
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      maxMovePower: 130
     }
   ],
   [
@@ -2592,7 +2697,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -2608,7 +2714,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Dragon',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      maxMovePower: 130
     }
   ],
   [
@@ -2640,7 +2747,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -2655,7 +2763,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -6,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 110
     }
   ],
   [
@@ -2670,7 +2779,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 90
     }
   ],
   [
@@ -2685,7 +2795,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fairy',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      maxMovePower: 100
     }
   ],
   [
@@ -2700,7 +2811,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Psychic',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 130
     }
   ],
   [
@@ -2716,7 +2828,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Any',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 130
     }
   ],
   [
@@ -2732,7 +2845,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Ground',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -2747,7 +2861,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 10,
       priority: 0,
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      maxMovePower: 130
     }
   ],
   [
@@ -2762,7 +2877,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Dragon',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      maxMovePower: 130
     }
   ],
   [
@@ -2778,7 +2894,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Fighting',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      maxMovePower: 90
     }
   ],
   [
@@ -2792,7 +2909,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 5,
       priority: 0,
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      maxMovePower: 140
     }
   ],
   [

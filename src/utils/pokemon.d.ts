@@ -94,6 +94,8 @@ export namespace Pokemon {
     isGMax?: string;
     isZ?: string;
     desc?: string;
+    maxMovePower?: number;
+    zMovePower?: number;
   }
 
   export interface Alias {

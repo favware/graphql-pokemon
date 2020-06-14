@@ -2,9 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### 4.0.3 (2020-06-13)
+### [4.0.3](https://github.com/favware/graphql-pokemon/compare/v4.0.2...v4.0.3) (2020-06-13)
 
-### 4.0.2 (2020-06-08)
+
+### Features
+
+* **dex:** implement cosmeticFormes ([45c503a](https://github.com/favware/graphql-pokemon/commit/45c503aed920b6e9bcf7f43f0dcdea5de308ad0c))
+
+
+### Bug Fixes
+
+* **dexservice:** properly parse data for smogon and serebii page links ([1ca99d8](https://github.com/favware/graphql-pokemon/commit/1ca99d81c4d8a1d8d729cc08fcca54e9a086b95b))
+* **pokedex:** properly add Xerneas Neutral ([dbc579b](https://github.com/favware/graphql-pokemon/commit/dbc579b2f058d4d93ccbfd38a95565f77c9e80fc))
+* **typeservice:** fixed parsing of attacking matchups ([08364b6](https://github.com/favware/graphql-pokemon/commit/08364b64041794ea2ed8c46f5352fbc1213b180a))
+
+### [4.0.2](https://github.com/favware/graphql-pokemon/compare/v4.0.1...v4.0.2) (2020-06-08)
+
+### Features
+
+* update urls across code ([#213](https://github.com/favware/graphql-pokemon/issues/213)) ([4fa2b21](https://github.com/favware/graphql-pokemon/commit/4fa2b21c1eb712dcf13bfcdb4aa807a52a0e3c85))
+
+
+### Bug Fixes
+
+* **dexdata:** gloom evolution conditions ([#201](https://github.com/favware/graphql-pokemon/issues/201)) ([#202](https://github.com/favware/graphql-pokemon/issues/202)) ([7fe907d](https://github.com/favware/graphql-pokemon/commit/7fe907d57f264636649ccd7c66ebfb612fa69824))
 
 ### [4.0.1](https://github.com/favware/graphql-pokemon/compare/v4.0.0...v4.0.1) (2020-05-26)
 

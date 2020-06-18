@@ -1,9 +1,9 @@
-import { formatResponse, gCall } from './testUtils/testUtils';
-import { DataResponse } from './testUtils/types';
 import { GraphQLError } from 'graphql';
+import { formatResponse, gCall, gql } from './testUtils/testUtils';
+import { DataResponse } from './testUtils/types';
 
 describe('getItemDetailsByName', () => {
-  const getItemDetailsByName = /* GraphQL */ `
+  const getItemDetailsByName = gql`
     query($item: Items!) {
       getItemDetailsByName(item: $item) {
         name
@@ -43,7 +43,7 @@ describe('getItemDetailsByName', () => {
 });
 
 describe('getItemDetailsByFuzzy', () => {
-  const getItemDetailsByFuzzy = /* GraphQL */ `
+  const getItemDetailsByFuzzy = gql`
     query($item: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getItemDetailsByFuzzy(item: $item, skip: $skip, take: $take, reverse: $reverse) {
         name
@@ -123,7 +123,7 @@ describe('getItemDetailsByFuzzy', () => {
 });
 
 describe('getItemByFuzzy', () => {
-  const getItemByFuzzy = /* GraphQL */ `
+  const getItemByFuzzy = gql`
     query($item: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getItemByFuzzy(item: $item, skip: $skip, take: $take, reverse: $reverse)
     }
@@ -188,7 +188,7 @@ describe('getItemByFuzzy', () => {
 });
 
 describe('getItemByName', () => {
-  const getItemByName = /* GraphQL */ `
+  const getItemByName = gql`
     query($item: Items!) {
       getItemByName(item: $item)
     }

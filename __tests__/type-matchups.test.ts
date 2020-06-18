@@ -1,9 +1,9 @@
 import { GraphQLError } from 'graphql';
-import { formatResponse, gCall } from './testUtils/testUtils';
+import { formatResponse, gCall, gql } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
 
 describe('getTypeMatchup', () => {
-  const typeEntryFragment = /* GraphQL */ `
+  const typeEntryFragment = gql`
     fragment typeentry on TypeEntry {
       doubleEffectiveTypes
       effectiveTypes
@@ -14,7 +14,7 @@ describe('getTypeMatchup', () => {
     }
   `;
 
-  const getTypeMatchup = /* GraphQL */ `
+  const getTypeMatchup = gql`
     ${typeEntryFragment}
 
     query($types: [Types!]!) {
@@ -74,7 +74,7 @@ describe('getTypeMatchup', () => {
 });
 
 describe('getTypeByName', () => {
-  const getTypeByName = /* GraphQL */ `
+  const getTypeByName = gql`
     query($type: Types!) {
       getTypeByName(type: $type)
     }

@@ -1,15 +1,15 @@
 import { GraphQLError } from 'graphql';
-import { formatResponse, gCall } from './testUtils/testUtils';
+import { formatResponse, gCall, gql } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
 
-const dexDetailsFragment = /* GraphQL */ `
+const dexDetailsFragment = gql`
   fragment dexdetails on DexDetails {
     num
     species
     baseStatsTotal
   }
 `;
-const dexEntriesFragment = /* GraphQL */ `
+const dexEntriesFragment = gql`
   fragment dexentries on DexEntry {
     num
     species
@@ -17,7 +17,7 @@ const dexEntriesFragment = /* GraphQL */ `
 `;
 
 describe('getPokemonDetailsByName', () => {
-  const getPokemonDetailsByName = /* GraphQL */ `
+  const getPokemonDetailsByName = gql`
     ${dexDetailsFragment}
 
     query($pokemon: Pokemon!) {
@@ -51,7 +51,7 @@ describe('getPokemonDetailsByName', () => {
 });
 
 describe('getPokemonDetails', () => {
-  const getPokemonDetails = /* GraphQL */ `
+  const getPokemonDetails = gql`
     ${dexDetailsFragment}
 
     query($pokemon: Pokemon!) {
@@ -84,7 +84,7 @@ describe('getPokemonDetails', () => {
 });
 
 describe('getPokemonDetailsByFuzzy', () => {
-  const getPokemonDetailsByFuzzy = /* GraphQL */ `
+  const getPokemonDetailsByFuzzy = gql`
     ${dexDetailsFragment}
 
     query($pokemon: String!, $skip: Int, $take: Int, $reverse: Boolean) {
@@ -155,7 +155,7 @@ describe('getPokemonDetailsByFuzzy', () => {
 });
 
 describe('getDexEntries', () => {
-  const getDexEntries = /* GraphQL */ `
+  const getDexEntries = gql`
     ${dexEntriesFragment}
 
     query($skip: Int, $take: Int, $reverse: Boolean, $pokemon: String!) {
@@ -206,7 +206,7 @@ describe('getDexEntries', () => {
 });
 
 describe('getDexEntryBySpeciesName', () => {
-  const getDexEntryBySpeciesName = /* GraphQL */ `
+  const getDexEntryBySpeciesName = gql`
     query($pokemon: Pokemon!) {
       getDexEntryBySpeciesName(pokemon: $pokemon)
     }
@@ -235,7 +235,7 @@ describe('getDexEntryBySpeciesName', () => {
 });
 
 describe('getDexEntryByDexNumber', () => {
-  const getDexEntryByDexNumber = /* GraphQL */ `
+  const getDexEntryByDexNumber = gql`
     query($pokemonNr: Float!) {
       getDexEntryByDexNumber(num: $pokemonNr)
     }

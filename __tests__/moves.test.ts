@@ -1,9 +1,9 @@
 import { GraphQLError } from 'graphql';
-import { formatResponse, gCall } from './testUtils/testUtils';
+import { formatResponse, gCall, gql } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
 
 describe('getMoveDetailsByName', () => {
-  const getMoveDetailsByName = /* GraphQL */ `
+  const getMoveDetailsByName = gql`
     query($move: Moves!) {
       getMoveDetailsByName(move: $move) {
         name
@@ -33,7 +33,7 @@ describe('getMoveDetailsByName', () => {
 });
 
 describe('getMoveDetailsByFuzzy', () => {
-  const getMoveDetailsByFuzzy = /* GraphQL */ `
+  const getMoveDetailsByFuzzy = gql`
     query($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getMoveDetailsByFuzzy(move: $move, skip: $skip, take: $take, reverse: $reverse) {
         name
@@ -101,7 +101,7 @@ describe('getMoveDetailsByFuzzy', () => {
 });
 
 describe('getMoveByFuzzy', () => {
-  const getMoveByFuzzy = /* GraphQL */ `
+  const getMoveByFuzzy = gql`
     query($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getMoveByFuzzy(move: $move, skip: $skip, take: $take, reverse: $reverse)
     }
@@ -166,7 +166,7 @@ describe('getMoveByFuzzy', () => {
 });
 
 describe('getMoveByName', () => {
-  const getMoveByName = /* GraphQL */ `
+  const getMoveByName = gql`
     query($move: Moves!) {
       getMoveByName(move: $move)
     }

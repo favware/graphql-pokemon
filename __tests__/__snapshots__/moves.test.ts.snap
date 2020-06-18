@@ -18,7 +18,7 @@ Object {
         "target": "Any",
         "type": "Flying",
       },
-      "refIndex": 158,
+      "refIndex": 161,
     },
     Object {
       "item": Object {
@@ -35,7 +35,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 159,
+      "refIndex": 162,
     },
     Object {
       "item": Object {
@@ -52,7 +52,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 160,
+      "refIndex": 163,
     },
     Object {
       "item": Object {
@@ -68,7 +68,7 @@ Object {
         "target": "Self",
         "type": "Dragon",
       },
-      "refIndex": 161,
+      "refIndex": 164,
     },
     Object {
       "item": Object {
@@ -84,7 +84,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 162,
+      "refIndex": 165,
     },
     Object {
       "item": Object {
@@ -101,7 +101,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 163,
+      "refIndex": 166,
     },
     Object {
       "item": Object {
@@ -118,7 +118,7 @@ Object {
         "target": "Any",
         "type": "Dragon",
       },
-      "refIndex": 164,
+      "refIndex": 167,
     },
     Object {
       "item": Object {
@@ -135,7 +135,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 165,
+      "refIndex": 168,
     },
     Object {
       "item": Object {
@@ -151,7 +151,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 166,
+      "refIndex": 169,
     },
     Object {
       "item": Object {
@@ -167,7 +167,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 167,
+      "refIndex": 170,
     },
   ],
 }
@@ -191,7 +191,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 165,
+      "refIndex": 168,
     },
   ],
 }
@@ -214,7 +214,7 @@ Object {
         "target": "Self",
         "type": "Dragon",
       },
-      "refIndex": 161,
+      "refIndex": 164,
     },
     Object {
       "item": Object {
@@ -231,7 +231,7 @@ Object {
         "target": "Any",
         "type": "Flying",
       },
-      "refIndex": 158,
+      "refIndex": 161,
     },
   ],
 }

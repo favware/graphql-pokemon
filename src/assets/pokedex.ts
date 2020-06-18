@@ -73,7 +73,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'ivysaur',
       evoLevel: 32,
       eggGroups: ['Monster', 'Grass'],
-      otherFormes: ['venusaurmega']
+      otherFormes: ['venusaurmega', 'venusaurgmax']
+    }
+  ],
+  [
+    'venusaurgmax',
+    {
+      species: 'venusaur-gmax',
+      num: 3,
+      types: ['Grass', 'Poison'],
+      baseSpecies: 'Venusaur',
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 80,
+        atk: 82,
+        def: 83,
+        spa: 100,
+        spd: 100,
+        spe: 80
+      },
+      abilities: { first: 'Overgrow', hidden: 'Chlorophyll' },
+      heightm: 2,
+      weightkg: 100,
+      color: 'Green',
+      eggGroups: ['Monster', 'Grass']
     }
   ],
   [
@@ -319,7 +344,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'wartortle',
       evoLevel: 36,
       eggGroups: ['Monster', 'Water 1'],
-      otherFormes: ['blastoisemega']
+      otherFormes: ['blastoisemega', 'blastoisegmax']
+    }
+  ],
+  [
+    'blastoisegmax',
+    {
+      species: 'blastoise-gmax',
+      num: 9,
+      types: ['Water'],
+      baseSpecies: 'Blastoise',
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 79,
+        atk: 83,
+        def: 100,
+        spa: 85,
+        spd: 105,
+        spe: 78
+      },
+      abilities: { first: 'Torrent', hidden: 'Rain Dish' },
+      heightm: 1.6,
+      weightkg: 85.5,
+      color: 'Blue',
+      eggGroups: ['Monster', 'Water 1']
     }
   ],
   [
@@ -900,7 +950,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         'pikachualola',
         'pikachupartner',
         'pikachustarter',
-        'pikachugmax'
+        'pikachugmax',
+        'pikachuworld'
       ]
     }
   ],
@@ -1271,6 +1322,31 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         spa: 75,
         spd: 60,
         spe: 120
+      },
+      abilities: { first: 'Static', hidden: 'Lightning Rod' },
+      heightm: 0.4,
+      weightkg: 6,
+      color: 'Yellow',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'pikachuworld',
+    {
+      species: 'pikachu-world',
+      num: 25,
+      baseSpecies: 'Pikachu',
+      forme: 'World',
+      formeLetter: 'W',
+      types: ['Electric'],
+      genderRatio: { male: 1, female: 0 },
+      baseStats: {
+        hp: 35,
+        atk: 55,
+        def: 40,
+        spa: 50,
+        spd: 50,
+        spe: 90
       },
       abilities: { first: 'Static', hidden: 'Lightning Rod' },
       heightm: 0.4,
@@ -3078,8 +3154,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.2,
       weightkg: 36,
       color: 'Pink',
-      // TODO: Remove when Galarian Slowbro and Galarian Slowpoke release
-      // evos: [ 'slowbrogalar', 'slowkinggalar' ],
+      evos: ['slowbrogalar'],
       eggGroups: ['Monster', 'Water 1']
     }
   ],
@@ -3106,6 +3181,33 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       evoLevel: 37,
       eggGroups: ['Monster', 'Water 1'],
       otherFormes: ['slowbromega']
+    }
+  ],
+  [
+    'slowbrogalar',
+    {
+      species: 'slowbro-galar',
+      num: 80,
+      baseSpecies: 'Slowbro',
+      forme: 'Galar',
+      formeLetter: 'G',
+      types: ['Poison', 'Psychic'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      baseStats: {
+        hp: 95,
+        atk: 100,
+        def: 95,
+        spa: 100,
+        spd: 70,
+        spe: 30
+      },
+      abilities: { first: 'Quick Draw', second: 'Own Tempo', hidden: 'Regenerator' },
+      heightm: 1.6,
+      weightkg: 70.5,
+      color: 'Pink',
+      prevo: 'slowpokegalar',
+      evoLevel: 'use Galarica Cuff',
+      eggGroups: ['Monster', 'Water 1']
     }
   ],
   [
@@ -13840,7 +13942,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 180,
       color: 'Gray',
       prevo: 'magneton',
-      evoLevel: 'Level 31 inside special magnetic field',
+      evoLevel: 'use Thunder Stone',
       eggGroups: ['Mineral']
     }
   ],
@@ -22408,7 +22510,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 25,
       color: 'Brown',
       prevo: 'rockruff',
-      evoLevel: 'Level 25 between 5:00 PM and 5:59 PM',
+      evoLevel: 'from a special Rockruff',
       eggGroups: ['Field']
     }
   ],
@@ -24836,6 +24938,33 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Green',
       prevo: 'thwackey',
       evoLevel: 35,
+      otherFormes: ['rillaboomgmax'],
+      eggGroups: ['Field', 'Grass']
+    }
+  ],
+  [
+    'rillaboomgmax',
+    {
+      species: 'rillaboom-gmax',
+      num: 812,
+      types: ['Grass'],
+      baseSpecies: 'Rillaboom',
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 100,
+        atk: 125,
+        def: 90,
+        spa: 60,
+        spd: 70,
+        spe: 85
+      },
+      abilities: { first: 'Overgrow', hidden: 'Grassy Surge' },
+      heightm: 3,
+      weightkg: 90,
+      color: 'Green',
+      evoLevel: 35,
       eggGroups: ['Field', 'Grass']
     }
   ],
@@ -24908,6 +25037,33 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'White',
       prevo: 'raboot',
       evoLevel: 35,
+      otherFormes: ['cinderace-gmax'],
+      eggGroups: ['Field', 'Human-Like']
+    }
+  ],
+  [
+    'cinderacegmax',
+    {
+      species: 'cinderace-gmax',
+      num: 815,
+      types: ['Fire'],
+      baseSpecies: 'Cinderace',
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 80,
+        atk: 116,
+        def: 75,
+        spa: 65,
+        spd: 75,
+        spe: 119
+      },
+      abilities: { first: 'Blaze', hidden: 'Libero' },
+      heightm: 3,
+      weightkg: 33,
+      color: 'White',
+      evoLevel: 35,
       eggGroups: ['Field', 'Human-Like']
     }
   ],
@@ -24979,6 +25135,33 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 45.2,
       color: 'Blue',
       prevo: 'drizzile',
+      evoLevel: 35,
+      otherFormes: ['inteleon-gmax'],
+      eggGroups: ['Water 1', 'Field']
+    }
+  ],
+  [
+    'inteleongmax',
+    {
+      species: 'inteleon-gmax',
+      num: 818,
+      types: ['Water'],
+      baseSpecies: 'Inteleon',
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 70,
+        atk: 85,
+        def: 65,
+        spa: 125,
+        spd: 65,
+        spe: 120
+      },
+      abilities: { first: 'Torrent', hidden: 'Sniper' },
+      heightm: 3,
+      weightkg: 45.2,
+      color: 'Blue',
       evoLevel: 35,
       eggGroups: ['Water 1', 'Field']
     }
@@ -26016,8 +26199,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       baseSpecies: 'Toxtricity-Low-Key',
       num: 849,
       types: ['Electric', 'Poison'],
-      forme: 'Gmax',
-      formeLetter: 'G',
+      forme: 'Low-Key-Gmax',
+      formeLetter: 'LKG',
       genderRatio: { male: 0.5, female: 0.5 },
       baseStats: {
         hp: 75,
@@ -27358,6 +27541,180 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 100,
       weightkg: 950,
       color: 'Purple',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'kubfu',
+    {
+      species: 'Kubfu',
+      num: 891,
+      types: ['Fighting'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 60,
+        atk: 90,
+        def: 60,
+        spa: 53,
+        spd: 50,
+        spe: 72
+      },
+      abilities: { first: 'Inner Focus' },
+      heightm: 0.6,
+      weightkg: 12,
+      color: 'Gray',
+      evos: ['urshifu', 'urshifu-rapid-strike'],
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'urshifu',
+    {
+      species: 'Urshifu',
+      num: 892,
+      types: ['Fighting', 'Dark'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 100,
+        atk: 130,
+        def: 100,
+        spa: 63,
+        spd: 60,
+        spe: 97
+      },
+      abilities: { first: 'Unseen Fist' },
+      heightm: 1.9,
+      weightkg: 105,
+      color: 'Gray',
+      prevo: 'Kubfu',
+      evoLevel: 'Defeat the Single Strike Tower',
+      otherFormes: ['urshifu-rapid-strike', 'urshifu-gmax'],
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'urshifurapidstrike',
+    {
+      species: 'Urshifu-Rapid-Strike',
+      num: 892,
+      types: ['Fighting', 'Water'],
+      baseSpecies: 'Urshifu',
+      forme: 'Rapid-Strike',
+      formeLetter: 'RS',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 100,
+        atk: 130,
+        def: 100,
+        spa: 63,
+        spd: 60,
+        spe: 97
+      },
+      abilities: { first: 'Unseen Fist' },
+      heightm: 1.9,
+      weightkg: 105,
+      color: 'Gray',
+      prevo: 'Kubfu',
+      evoLevel: 'Defeat the Rapid Strike Tower',
+      otherFormes: ['urshifu', 'urshifu-rapid-strike-gmax'],
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'urshifugmax',
+    {
+      species: 'urshifu-gmax',
+      num: 892,
+      types: ['Fighting', 'Dark'],
+      baseSpecies: 'Urshifu',
+      forme: 'Gmax',
+      formeLetter: 'G',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 100,
+        atk: 130,
+        def: 100,
+        spa: 63,
+        spd: 60,
+        spe: 97
+      },
+      abilities: { first: 'Unseen Fist' },
+      heightm: 3,
+      weightkg: 105,
+      color: 'Gray',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'urshifurapidstrikegmax',
+    {
+      species: 'urshifu-rapid-strike-gmax',
+      num: 892,
+      types: ['Fighting', 'Water'],
+      baseSpecies: 'Urshifu-Rapid-Strike',
+      forme: 'Rapid-Strike-Gmax',
+      formeLetter: 'RSG',
+      genderRatio: { male: 0.875, female: 0.125 },
+      baseStats: {
+        hp: 100,
+        atk: 130,
+        def: 100,
+        spa: 63,
+        spd: 60,
+        spe: 97
+      },
+      abilities: { first: 'Unseen Fist' },
+      heightm: 3,
+      weightkg: 105,
+      color: 'Gray',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'zarude',
+    {
+      species: 'Zarude',
+      num: 893,
+      types: ['Dark', 'Grass'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 105,
+        atk: 120,
+        def: 105,
+        spa: 70,
+        spd: 95,
+        spe: 105
+      },
+      abilities: { first: 'Leaf Guard' },
+      heightm: 1.8,
+      weightkg: 70,
+      color: 'Green',
+      otherFormes: ['zarude-dada'],
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'zarudedada',
+    {
+      species: 'Zarude-Dada',
+      num: 893,
+      types: ['Dark', 'Grass'],
+      baseSpecies: 'zarude',
+      forme: 'Dada',
+      formeLetter: 'D',
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 105,
+        atk: 120,
+        def: 105,
+        spa: 70,
+        spd: 95,
+        spe: 105
+      },
+      abilities: { first: 'Leaf Guard' },
+      heightm: 1.8,
+      weightkg: 70,
+      color: 'Green',
       eggGroups: ['Undiscovered']
     }
   ],

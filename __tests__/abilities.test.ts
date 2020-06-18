@@ -1,9 +1,9 @@
-import { formatResponse, gCall } from './testUtils/testUtils';
-import { DataResponse } from './testUtils/types';
 import { GraphQLError } from 'graphql';
+import { formatResponse, gCall, gql } from './testUtils/testUtils';
+import { DataResponse } from './testUtils/types';
 
 describe('getAbilityDetailsByName', () => {
-  const getAbilityDetailsByName = /* GraphQL */ `
+  const getAbilityDetailsByName = gql`
     query($ability: Abilities!) {
       getAbilityDetailsByName(ability: $ability) {
         name
@@ -33,7 +33,7 @@ describe('getAbilityDetailsByName', () => {
 });
 
 describe('getAbilityDetailsByFuzzy', () => {
-  const getAbilityDetailsByFuzzy = /* GraphQL */ `
+  const getAbilityDetailsByFuzzy = gql`
     query($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getAbilityDetailsByFuzzy(ability: $ability, skip: $skip, take: $take, reverse: $reverse) {
         name
@@ -103,7 +103,7 @@ describe('getAbilityDetailsByFuzzy', () => {
 });
 
 describe('getAbilityByFuzzy', () => {
-  const getAbilityByFuzzy = /* GraphQL */ `
+  const getAbilityByFuzzy = gql`
     query($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getAbilityByFuzzy(ability: $ability, skip: $skip, take: $take, reverse: $reverse)
     }
@@ -168,7 +168,7 @@ describe('getAbilityByFuzzy', () => {
 });
 
 describe('getAbilityByName', () => {
-  const getAbilityByName = /* GraphQL */ `
+  const getAbilityByName = gql`
     query($ability: Abilities!) {
       getAbilityByName(ability: $ability)
     }

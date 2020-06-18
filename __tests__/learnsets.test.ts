@@ -1,21 +1,21 @@
 import { GraphQLError } from 'graphql';
-import { formatResponse, gCall } from './testUtils/testUtils';
+import { formatResponse, gCall, gql } from './testUtils/testUtils';
 import { DataResponse } from './testUtils/types';
 
-const lvlmovesFragment = /* GraphQL */ `
+const lvlmovesFragment = gql`
   fragment lvlmoves on LearnsetLevelUpMove {
     name
     generation
     level
   }
 `;
-const movesFragment = /* GraphQL */ `
+const movesFragment = gql`
   fragment moves on LearnsetMove {
     name
     generation
   }
 `;
-const entryFragment = /* GraphQL */ `
+const entryFragment = gql`
   fragment entry on LearnsetEntry {
     levelUpMoves {
       ...lvlmoves
@@ -42,7 +42,7 @@ const entryFragment = /* GraphQL */ `
 `;
 
 describe('getPokemonLearnset', () => {
-  const getPokemonLearnset = /* GraphQL */ `
+  const getPokemonLearnset = gql`
     ${lvlmovesFragment}
     ${movesFragment}
     ${entryFragment}
@@ -153,7 +153,7 @@ describe('getPokemonLearnset', () => {
 });
 
 describe('getPokemonLearnsetByFuzzy', () => {
-  const getPokemonLearnsetByFuzzy = /* GraphQL */ `
+  const getPokemonLearnsetByFuzzy = gql`
     ${lvlmovesFragment}
     ${movesFragment}
     ${entryFragment}

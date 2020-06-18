@@ -1279,6 +1279,13 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     }
   ],
   [
+    'quickdraw',
+    {
+      shortDesc: 'This Pokemon has a 20% chance to move first in its priority bracket with attacking moves.',
+      name: 'Quick Draw'
+    }
+  ],
+  [
     'quickfeet',
     {
       desc: 'If this Pokemon has a major status condition, its Speed is multiplied by 1.5; the Speed drop from paralysis is ignored.',
@@ -1905,6 +1912,14 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: "While this Pokemon is active, it prevents opposing Pokemon from using their Berries. Activation message broadcasts before other Abilities regardless of the Pokemon's Speed tiers.",
       shortDesc: 'While this Pokemon is active, it prevents opposing Pokemon from using their Berries.',
       name: 'Unnerve'
+    }
+  ],
+  [
+    'unseenfist',
+    {
+      desc: "All of this Pokemon's moves that make contact bypass protection.",
+      shortDesc: 'All contact moves hit through protection.',
+      name: 'Unseen Fist'
     }
   ],
   [

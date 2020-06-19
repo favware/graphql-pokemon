@@ -14,10 +14,16 @@ export default class MoveEntry {
   @Field(() => String, { description: 'The base power for a move' })
   basePower!: string;
 
-  @Field(() => Int, { description: 'The power this move will have when used with its Z-move equivalent' })
+  @Field(() => Int, {
+    nullable: true,
+    description: 'The power this move will have when used with its Z-move equivalent'
+  })
   zMovePower!: number;
 
-  @Field(() => Int, { description: 'The power this move will have when used with its Max Move equivalent' })
+  @Field(() => Int, {
+    nullable: true,
+    description: 'The power this move will have when used with its Max Move equivalent'
+  })
   maxMovePower!: number;
 
   @Field(() => Int, { description: 'The power points for a move' })

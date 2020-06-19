@@ -24689,7 +24689,9 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 3,
       weightkg: 1590.8,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/afd/missingno.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/afd-shiny/missingno.png'
     }
   ],
   [

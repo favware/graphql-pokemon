@@ -1,6 +1,6 @@
 import { ArgsType, Field } from 'type-graphql';
-import PaginatedArgs from './PaginatedArgs';
 import pokedex from '../assets/pokedex';
+import PaginatedArgs from './PaginatedArgs';
 
 export const pokemons = pokedex.enumObject();
 

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/favware/graphql-pokemon/compare/v4.0.4...v4.1.0) (2020-06-19)
+
+
+### Features
+
+* add z-move power ([875b196](https://github.com/favware/graphql-pokemon/commit/875b1968bff6e53158b589b4b35709ca37463c76))
+* max move basepowers ([169eccf](https://github.com/favware/graphql-pokemon/commit/169eccf3eedd1395c8857cc9d950071a52f74f12))
+
+
+### Bug Fixes
+
+* target gen8 dex for ability/item/move pages ([d256511](https://github.com/favware/graphql-pokemon/commit/d25651130039471fca163bc3ed449af1687f66c6))
+* **pokedex:** added missingno sprites ([063ae0f](https://github.com/favware/graphql-pokemon/commit/063ae0fd83046ae21a09de0293ddb0823668a7d8))
+
 ### [4.0.4](https://github.com/favware/graphql-pokemon/compare/v4.0.3...v4.0.4) (2020-06-14)
 
 

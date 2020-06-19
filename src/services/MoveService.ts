@@ -58,6 +58,13 @@ export default class MoveService {
     addPropertyToClass(moveEntry, 'isNonstandard', moveData.isNonstandard, requestedFields);
     addPropertyToClass(moveEntry, 'isGMax', moveData.isGMax, requestedFields);
     addPropertyToClass(moveEntry, 'isZ', Util.parseZCrystal(moveData.isZ), requestedFields);
+    addPropertyToClass(moveEntry, 'maxMovePower', moveData.maxMovePower, requestedFields);
+    addPropertyToClass(
+      moveEntry,
+      'zMovePower',
+      this.parseZMovePower(moveData.basePower, moveData.zMovePower),
+      requestedFields
+    );
     addPropertyToClass(
       moveEntry,
       'serebiiPage',
@@ -78,5 +85,48 @@ export default class MoveService {
     );
 
     return moveEntry;
+  }
+
+  /**
+   * Converts basePower and zMovePower to the correct Z-Move power, using datamined convertion table seen below.
+   *
+   * | Base move power 	| Z-Move power 	|
+   * |-----------------	|--------------	|
+   * | 0-55            	| 100          	|
+   * | 60-65           	| 120          	|
+   * | 70-75           	| 140          	|
+   * | 80-85           	| 160          	|
+   * | 90-95           	| 175          	|
+   * | 100             	| 180          	|
+   * | 110             	| 185          	|
+   * | 120-125         	| 190          	|
+   * | 130             	| 195          	|
+   * | 140+            	| 200          	|
+   * @param basePower The basepower of a move
+   * @param zMovePower The z-move power of a move, if specified it is preferred.
+   */
+  private parseZMovePower(basePower: string, zMovePower: number | undefined): number {
+    // If zMovePower was defined on the move data then just return that value
+    if (typeof zMovePower === 'number') return zMovePower;
+
+    // If the basePower is 0 (status moves) then return 0
+    if (basePower === '0') return 0;
+
+    const basePowerAsNumber = Number(basePower);
+
+    if (basePowerAsNumber >= 0 && basePowerAsNumber <= 55) return 100;
+    if (basePowerAsNumber >= 60 && basePowerAsNumber <= 65) return 120;
+
+    if (basePowerAsNumber >= 70 && basePowerAsNumber <= 75) return 140;
+    if (basePowerAsNumber >= 80 && basePowerAsNumber <= 85) return 160;
+    if (basePowerAsNumber >= 90 && basePowerAsNumber <= 95) return 175;
+    if (basePowerAsNumber === 100) return 180;
+    if (basePowerAsNumber === 110) return 185;
+    if (basePowerAsNumber >= 120 && basePowerAsNumber <= 125) return 190;
+    if (basePowerAsNumber === 130) return 195;
+    if (basePowerAsNumber >= 140) return 200;
+
+    // If somehow none of these cases matched we return Infinity, just to ensure it gets caught more easily
+    return Infinity;
   }
 }

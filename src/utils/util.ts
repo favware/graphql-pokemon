@@ -1,7 +1,15 @@
+import { KlasaConsole } from '@klasa/console';
+
 const TO_TITLE_CASE = /[A-Za-zÀ-ÖØ-öø-ÿ]\S*/g;
 const COMMON_SYMBOLS = /[$-/:-?{-~!"^_`[\] .]/g;
 
 export default class Util {
+  public static kConsole = new KlasaConsole({
+    useColor: true,
+    timestamps: true,
+    utc: false
+  });
+
   /**
    * Converts a string to Title Case
    * @since 1.0.0

@@ -72,7 +72,7 @@ export default class ItemService {
     addPropertyToClass(
       itemEntry,
       'smogonPage',
-      `https://www.smogon.com/dex/sm/items/${Util.toLowerHyphenCase(itemData.name)}`,
+      `https://www.smogon.com/dex/ss/items/${Util.toLowerHyphenCase(itemData.name)}`,
       requestedFields
     );
 

@@ -68,7 +68,7 @@ export default class AbilityService {
     addPropertyToClass(
       abilityEntry,
       'smogonPage',
-      `https://www.smogon.com/dex/sm/abilities/${abilityData.name.toLowerCase().replace(/ /g, '_')}`,
+      `https://www.smogon.com/dex/ss/abilities/${abilityData.name.toLowerCase().replace(/ /g, '_')}`,
       requestedFields
     );
 

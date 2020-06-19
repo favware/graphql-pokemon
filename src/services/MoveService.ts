@@ -68,7 +68,7 @@ export default class MoveService {
     addPropertyToClass(
       moveEntry,
       'serebiiPage',
-      `https://www.serebii.net/attackdex-sm/${Util.toLowerSingleWordCase(moveData.name)}.shtml`,
+      `https://www.serebii.net/attackdex-swsh/${Util.toLowerSingleWordCase(moveData.name)}.shtml`,
       requestedFields
     );
     addPropertyToClass(
@@ -80,7 +80,7 @@ export default class MoveService {
     addPropertyToClass(
       moveEntry,
       'smogonPage',
-      `https://www.smogon.com/dex/sm/moves/${Util.toLowerHyphenCase(moveData.name)}`,
+      `https://www.smogon.com/dex/ss/moves/${Util.toLowerHyphenCase(moveData.name)}`,
       requestedFields
     );
 

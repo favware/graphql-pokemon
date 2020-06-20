@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.1](https://github.com/favware/graphql-pokemon/compare/v4.2.0...v4.2.1) (2020-06-20)
+
+
+### Bug Fixes
+
+* **moves:** fixed zMovePower for Struggle ([f54cda0](https://github.com/favware/graphql-pokemon/commit/f54cda08f92bb7b87cc99e57cb18be3a35de25a1))
+
 ## [4.2.0](https://github.com/favware/graphql-pokemon/compare/v4.1.0...v4.2.0) (2020-06-20)
 
 

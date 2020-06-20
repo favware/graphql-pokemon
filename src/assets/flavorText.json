@@ -109,6 +109,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It can go for days without eating a single morsel. In the bulb on its back, it stores energy."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow."
     }
   ],
   "2": [
@@ -215,6 +223,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The bud on its back grows by drawing energy. It gives off an aroma when it is ready to bloom."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Exposure to sunlight adds to its strength. Sunlight also makes the bud on its back grow larger."
     }
   ],
   "3": [
@@ -321,6 +337,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The flower on its back catches the sun's rays. The sunlight is then absorbed and used for energy."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle."
     }
   ],
   "3mega": [
@@ -331,6 +355,16 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "In order to support its flower, which has grown larger due to Mega Evolution, its back and legs have become stronger."
+    }
+  ],
+  "3gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "In battle, this Pokémon swings around two thick vines. If these vines slammed into a 10-story building, they could easily topple it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Huge amounts of pollen burst from it with the force of a volcanic eruption. Breathing in too much of the pollen can cause fainting."
     }
   ],
   "4": [
@@ -809,6 +843,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Shoots water at prey while in the water. Withdraws into its shell when in danger."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When it retracts its long neck into its shell, it squirts out water with vigorous force."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When it feels threatened, it draws its limbs inside its shell and sprays water from its mouth."
     }
   ],
   "8": [
@@ -915,6 +957,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "When tapped on its head, this Pokémon will pull it in, but its tail will stick out a little bit."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It cleverly controls its furry ears and tail to maintain its balance while swimming."
     }
   ],
   "9": [
@@ -1021,6 +1071,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Once it takes aim at its enemy, it blasts out water with even more force than a fire hose."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The rocket cannons on its shell fire jets of water capable of punching holes through thick steel."
     }
   ],
   "9mega": [
@@ -1031,6 +1089,16 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+    }
+  ],
+  "9gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "It's not very good at precision shooting. When attacking, it just fires its 31 cannons over and over and over."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Water fired from this Pokémon's central main cannon has enough power to blast a hole into a mountain."
     }
   ],
   "10": [
@@ -2998,11 +3066,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+      "flavor_text": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "This forest-dwelling Pokémon stores electricity in its cheeks, so you'll feel a tingly shock if you touch it."
+      "flavor_text": "When Pikachu meet, they'll touch their tails together and exchange electricity through them as a form of greeting."
     }
   ],
   "25starter": [
@@ -3186,11 +3254,21 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "This Pikachu wears its partner's cap."
+      "flavor_text": "This Pikachu wears its partner's cap, which is brimming with memories of when they first met."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "This Pikachu is wearing its Trainer's cap."
+      "flavor_text": "This Pikachu is wearing its Trainer's cap. The cap is a precious symbol of a fateful encounter."
+    }
+  ],
+  "25gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its Gigantamax power expanded, forming its supersized body and towering tail."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When it smashes its opponents with its bolt-shaped tail, it delivers a surge of electricity equivalent to a lightning strike."
     }
   ],
   "26": [
@@ -5029,6 +5107,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Uses its cute round eyes to enrapture its foe. It then sings a pleasing melody that lulls the foe to sleep."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won't stop singing its lullabies until its foes fall asleep."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "By freely changing the wavelength of its voice, Jigglypuff sings a mysterious melody sure to make any listener sleepy."
     }
   ],
   "40": [
@@ -5151,6 +5237,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its body is very elastic. By inhaling deeply, it can continue to inflate itself without limit."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It's proud of its fur, which is fine and delicate. In particular, the curl on its forehead has a texture that's perfectly heavenly."
     }
   ],
   "41": [
@@ -8145,6 +8239,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Sleeps 18 hours a day. If it senses danger, it will teleport itself to safety even as it sleeps."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon uses its psychic powers while it sleeps. The contents of Abra's dreams affect the powers that the Pokémon wields."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Abra can teleport in its sleep. Apparently the more deeply Abra sleeps, the farther its teleportations go."
     }
   ],
   "64": [
@@ -8267,6 +8369,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Many odd things happen if this Pokémon is close by. For example, it makes clocks run backward."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Using its psychic power, Kadabra levitates as it sleeps. It uses its springy tail as a pillow."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon's telekinesis is immensely powerful. To prepare for evolution, Kadabra stores up psychic energy in the star on its forehead."
     }
   ],
   "65": [
@@ -8389,6 +8499,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A Pokémon that can memorize anything. It never forgets what it learns—that's why this Pokémon is smart."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It has an incredibly high level of intelligence. Some say that Alakazam remembers everything that ever happens to it, from birth till death."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Alakazam wields potent psychic powers. It's said that this Pokémon used these powers to create the spoons it holds."
     }
   ],
   "65mega": [
@@ -9255,6 +9373,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It can sometimes be found all dry and shriveled up on a beach. Toss it back into the sea to revive it."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is mostly made of water. A Tentacool out in the ocean is very hard to spot, because its body blends in with the sea."
     }
   ],
   "73": [
@@ -9377,6 +9503,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its 80 tentacles can stretch and contract freely. They wrap around prey and weaken it with poison."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When the red orbs on Tentacruel's head glow brightly, watch out. The Pokémon is about to fire off a burst of ultrasonic waves."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its 80 tentacles can stretch and shrink freely. Tentacruel ensnares prey in a net of spread-out tentacles, delivering venomous stings to its catch."
     }
   ],
   "74": [
@@ -10191,6 +10325,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Incredibly slow and sluggish. It is quite content to loll about without worrying about the time."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Slow-witted and oblivious, this Pokémon won't feel any pain if its tail gets eaten. It won't notice when its tail grows back, either."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When this Pokémon's tail is soaked in water, sweetness seeps from it. Slowpoke uses this trait to lure in and fish up other Pokémon."
+    }
+  ],
+  "79galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Although this Pokémon is normally zoned out, its expression abruptly sharpens on occasion. The cause for this seems to lie in Slowpoke's diet."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Because Galarian Slowpoke eat the seeds of a plant that grows only in Galar, their tails have developed a spicy flavor."
     }
   ],
   "80": [
@@ -10313,6 +10465,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Lives lazily by the sea. If the Shellder on its tail comes off, it becomes a Slowpoke again."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Slowpoke became Slowbro when a Shellder bit on to its tail. Sweet flavors seeping from the tail make the Shellder feel as if its life is a dream."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Being bitten by a Shellder shocked this Pokémon into standing on two legs. If the Shellder lets go, it seems Slowbro will turn back into a Slowpoke."
     }
   ],
   "80mega": [
@@ -10339,6 +10499,16 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power–and a little motivation to boot."
+    }
+  ],
+  "80galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "A Shellder bite set off a chemical reaction with the spices inside Slowbro's body, causing Slowbro to become a Poison-type Pokémon."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "If this Pokémon squeezes the tongue of the Shellder biting it, the Shellder will launch a toxic liquid from the tip of its shell."
     }
   ],
   "81": [
@@ -10461,6 +10631,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It is hatched with the ability to defy gravity. It floats while emitting powerful electromagnetic waves."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "At times, Magnemite runs out of electricity and ends up on the ground. If you give batteries to a grounded Magnemite, it'll start moving again."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It subsists on electricity. As Magnemite flies, it emits electromagnetic waves from the units on each side of its body."
     }
   ],
   "82": [
@@ -13901,6 +14079,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its tongue spans almost seven feet and moves more freely than its forelegs. Its licks can cause paralysis."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "If this Pokémon's sticky saliva gets on you and you don't clean it off, an intense itch will set in. The itch won't go away, either.        "
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Bug Pokémon are Lickitung's main food source. This Pokémon paralyzes its prey with a lick from its long tongue, then swallows the prey whole.        "
     }
   ],
   "109": [
@@ -14505,6 +14691,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A gentle and kindhearted Pokémon that shares its nutritious eggs if it sees an injured Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The egg Chansey carries is not only delicious but also packed with nutrition. It's used as a high-class cooking ingredient."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This species was once very slow. To protect their eggs from other creatures, these Pokémon became able to flee quickly."
     }
   ],
   "114": [
@@ -14611,6 +14805,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its identity is obscured by masses of thick blue vines. The vines are said to never stop growing."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon's true appearance remains a mystery."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The vines of Tangela have a distinct scent. In some parts of Galar, Tangela vines are used as herbs"
     }
   ],
   "115": [
@@ -15377,6 +15579,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "As long as the center section is unharmed, this Pokémon can grow back fully even if it is chopped to bits."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "If you visit a beach at the end of summer, you'll be able to see groups of Staryu lighting up in a steady rhythm."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Fish Pokémon nibble at it, but Staryu isn't bothered. Its body regenerates quickly, even if part of it is completely torn off."
     }
   ],
   "121": [
@@ -15499,6 +15709,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The center section is named the core. People think it is communicating when it glows in seven colors."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon has an organ known as its core. The organ glows in seven colors when Starmie is unleashing its potent psychic powers."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Starmie swims by spinning its body at high speed. As this Pokémon cruises through the ocean, it absorbs tiny plankton."
     }
   ],
   "122": [
@@ -21505,6 +21723,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Left to its own devices, it will constantly practice singing. You should make it take a break so it doesn't hurt its throat."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Igglybuff loves to sing. Its marshmallow-like body gives off a faint sweet smell."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Taking advantage of the softness of its body, Igglybuff moves as if bouncing. Its body turns a deep pink when its temperature rises."
     }
   ],
   "175": [
@@ -23913,6 +24139,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It's called “the sage of the sea.” It engages in battles of wits with Oranguru, but the result is usually a draw."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Miraculously, this former Slowpoke's latent intelligence was drawn out when Shellder poison raced through its brain."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Slowking can solve any problem present to it, but no one can understand a thing Slowking says."
     }
   ],
   "200": [
@@ -24563,6 +24797,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When it sees a person, it digs a hole with its tail to make its escape. If you happen to find one, consider yourself lucky."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon's tiny wings have some scientists saying that Dunsparce used to fly through the sky in ancient times."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The nests Dunsparce live in are mazes of tunnels. They never get lost in their own nests—they can tell where they are by the scent of the dirt."
     }
   ],
   "207": [
@@ -26325,6 +26567,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It usually sleeps in caves. The pitch-black ink that Octillery spits is also used for cooking."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It has a tendency to want to be in holes. It prefers rock crags or pots and sprays ink from them before attacking."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It traps enemies with its suction-cupped tentacles, then smashes them with its rock-hard head."
     }
   ],
   "225": [
@@ -28107,6 +28357,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This Pokémon is overflowing with love. Only Chansey that share a strong bond with their Trainer can evolve, so people say."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Whenever a Blissey finds a weakened Pokémon, it will share its egg and offer its care until the other Pokémon is all better."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Blissey lays mysterious eggs that are filled with happiness. It's said that anyone who eats a Blissey egg will start acting kindly to all others."
     }
   ],
   "243": [
@@ -41043,6 +41301,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon generates electricity by contracting its muscles. Excited trembling is a sign that Shinx is generating a tremendous amount of electricity."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Electricity makes this Pokémon's fur glow. Shinx sends signals to others of its kind by shaking the tip of its tail while the tail tip is shining brightly."
     }
   ],
   "404": [
@@ -41097,6 +41363,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Strong electricity courses through the tips of its sharp claws. A light scratch causes fainting in foes."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "By joining its tail with that of another Luxio, this Pokémon can receive some of the other Luxio's electricity and power up its own electric blasts."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Upon encountering an opponent, this Pokémon prepares for battle by extending its claws, which can put out 1,000,000 volts of electricity."
     }
   ],
   "405": [
@@ -41151,6 +41425,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Luxray’s ability to see through objects comes in handy when it’s scouting for danger."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Luxray can see through solid objects. It will instantly spot prey trying to hide behind walls, even if the walls are thick."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Seeing through solid objects uses up a lot of Luxray's electricity, so the Pokémon sleeps for long periods of time to store up energy."
     }
   ],
   "406": [
@@ -43447,6 +43729,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When it sees something round and white, Happiny puts it into the pouch on its stomach. It sometimes becomes overloaded and can't move."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Mimicking Chansey, Happiny will place an egg-shaped stone in its belly pouch. Happiny will treasure this stone."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Happiny's willing to lend its precious round stone to those it's friendly with, but if the stone isn't returned, Happiny will cry and throw a tantrum."
     }
   ],
   "441": [
@@ -45013,6 +45303,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It uses its tongue much more skillfully than its hands or its feet. It can deftly pick up a single small bean with its tongue."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Lickilicky's strange tongue can stretch to many times the length of its body. No one has figured out how Lickilicky's tongue can stretch so far."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Lickilicky can do just about anything with its tongue, which is as dexterous as the human hand. In contrast, Lickilicky's use of it's fingers is clumsy."
     }
   ],
   "464": [
@@ -45129,6 +45427,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Its vines grow so profusely that, in the warm season, you can’t even see its eyes."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Tangrowth has two arms that it can extend as it pleases. Recent research has shown that these arms are, in fact, bundles of vines."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Vine growth is accelerated for Tangrowth living in warm climates. If the vines grow long, Tangrowth shortens them by tearing parts of them off."
     }
   ],
   "466": [
@@ -48823,6 +49129,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Its bite injects a potent poison, enough to paralyze large bird Pokémon that try to prey on it."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Venipede and Sizzlipede are similar species, but when the two meet, a huge fight ensues."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its fangs are highly venomous. If this Pokémon finds prey it thinks it can eat, it leaps for them without any thought of how things might turn out."
     }
   ],
   "544": [
@@ -48857,6 +49171,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It is usually motionless, but when attacked, it rotates at high speed and then crashes into its opponent."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon spins itself rapidly and charges into its opponents. Its top speed is just over 60 mph."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Whirlipede protects itself with a sturdy shell and poisonous spikes while it stores up the energy it'll need for evolution."
     }
   ],
   "545": [
@@ -48891,6 +49213,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "With quick movements, it chases down its foes, attacking relentlessly with its horns until it prevails."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Scolipede latches on to its prey with the claws on its neck before slamming them into the ground and jabbing them with its claw's toxic spikes."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Scolipede engage in fierce territorial battles with Centiskorch. At the end of one of these battles, the victor makes a meal of the loser."
     }
   ],
   "546": [
@@ -50227,6 +50557,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "If a normally talkative child suddenly stops talking, it may have been replaced by Zorua."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Zorua is a timid Pokémon. This disposition seems to be what led to the development of Zorua's ability to take on the forms of other creatures."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Zorua sometimes transforms into a person and goes into cities to search for food. When Zorua does this, it usually takes on the form of a child."
     }
   ],
   "571": [
@@ -50269,6 +50607,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "If it thinks humans are going to discover its den, Zoroark shows them visions that make them wander around in the woods."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon cares deeply about others of its kind, and it will conjure terrifying illusions to keep its den and pack safe."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Seeking to ease the burden of solitude, lonely Trainers tell Zoroark to show illusions to them."
     }
   ],
   "572": [
@@ -50965,6 +51311,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "As it flies, it scatters electricity around, so bird Pokémon keep their distance. That's why Emolga can keep all its food to itself."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "As Emolga flutters through the air, it crackles with electricity. This Pokémon is cute, but it can cause a lot of trouble."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon absolutely loves sweet berries. Sometimes it stuffs its cheeks full of so much food that it can't fly properly."
     }
   ],
   "588": [
@@ -51083,6 +51437,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It lures Pokémon with its pattern that looks just like a Poké Ball, then releases poison spores."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "No one knows what the Poké Ball-like pattern on Foongus means or why Foongus has it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The spores released from this Pokémon's hands are highly poisonous, but when thoroughly dried, the spores can be used as stomach medicine."
     }
   ],
   "591": [
@@ -52431,6 +52793,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It infiltrates tunnels that Pokémon like Diglett and Dugtrio have dug and quietly waits for prey to pass through."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Druddigon lives in caves, but it never skips sunbathing—it won't be able to move if its body gets too cold."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Druddigon are vicious and cunning. They take up residence in nests dug out by other Pokémon, treating the stolen nests as their own lairs."
     }
   ],
   "622": [
@@ -52665,6 +53035,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Their fluffy fur absorbs damage, even if they strike foes with a fierce headbutt."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "These Pokémon can crush a car with no more than a headbutt. Bouffalant with more hair on their heads hold higher positions within the herd."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon live in herds of about 20 individuals. Bouffalant that betray the herd will lose the hair on their heads for some reason."
     }
   ],
   "627": [
@@ -53847,6 +54225,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its body is always warm. Trainers who live in cold areas apparently sleep with it in their bed."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its melodious cries are actually warnings. Fletchling will mercilessly peck at anything that enters its territory."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When this Pokémon gets excited, its body temperature increases sharply. If you touch a Fletchling with bare hands, you might get burned."
     }
   ],
   "662": [
@@ -53881,6 +54267,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its speed right after takeoff already puts it in the top speed class of all bird Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Fletchinder launches embers into the den of its prey. When the prey comes leaping out, Fletchinder's sharp talons finish it off."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Fletchinder are exceedingly territorial and aggressive. These Pokémon fight among themselves over feeding grounds."
     }
   ],
   "663": [
@@ -53915,6 +54309,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Bird Pokémon make up most of its diet. It approaches at high speeds and smacks them down to the ground with its powerful kick."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Talonflame mainly preys upon other bird Pokémon. To intimidate opponents, it sends embers spewing from gaps between its feathers."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Talonflame dives toward prey at speeds of up to 310mph and assaults them with powerful kicks, giving the prey no chance to escape."
     }
   ],
   "664": [
@@ -55023,6 +55425,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its upper whiskers are sensors that survey its surroundings. Its lower whiskers are organs that shoot electricity."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "A Dedenne's whiskers pick up electrical waves other Dedenne send out. These Pokémon share locations of food or electricity with one another."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Since Dedenne can't generate as much electricity on its own, it steals electricity from outlets or other electric Pokémon."
     }
   ],
   "703": [
@@ -55217,6 +55627,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This even-tempered Pokémon has a habit of collecting keys. It will sneak into people's homes to steal their keys."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is constantly collecting keys. Etrust a Klefki with important keys, and the Pokémon will protect them no matter what."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Klefki sucks in metal ions with the horn topping its head. It seems this Pokémon loves keys so much that its head needed to look like one, too."
     }
   ],
   "708": [
@@ -56505,6 +56923,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It loves the sunshine. When it basks in the sunlight regularly, it grows up with vivid coloration."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When bathed in sunlight, this Pokémon emits a pleasantly sweet scent, which causes bug Pokémon to gather around it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "During the day, Fomantis basks in sunlight and sleeps peacefully. It wakes and moves around at night."
     }
   ],
   "754": [
@@ -56523,6 +56949,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "As it slashes into its enemies, it looks like it's dancing. Its elegant appearance has led some to call it the most glamorous Grass Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon resembles a beautiful flower. A properly raised Lurantis will have gorgeous, brilliant colors."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The petals on this Pokémon's arms are thin and super sharp, and they can fire laser beams if Lurantis gathers light first."
     }
   ],
   "755": [
@@ -56775,6 +57209,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It picks flowers and sticks them to its body with fluids it produces. The aroma that wafts from its petals has a healing effect."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Comfey picks flowers with its vine and decorates itself with them. For some reason, flowers won't wither once they're attached to a Comfey."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon smell very nice. All Comfey wear different flowers, so each of these Pokémon has its own individual scent."
     }
   ],
   "765": [
@@ -59249,6 +59691,56 @@
     {
       "version_id": "Shield",
       "flavor_text": "Infinite amounts of energy pour from this Pokémon's enlarged core, warping the surrounding space-time."
+    }
+  ],
+  "891": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Kubfu trains hard to perfect its moves. The moves it masters will determine which form it takes when it evolves."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "If Kubfu pulls the long white hair on its head, its fighting spirit heightens and power wells up from the depths of its belly."
+    }
+  ],
+  "892": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "This form of Urshifu is a strong believer in the one-hit KO. Its strategy is to leap in close to foes and land a devastating blow with a hardened fist."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Inhabiting the mountains of a distant region, this Pokémon races across sheer cliffs, training its legs and refining its moves."
+    }
+  ],
+  "892rapid-strike": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "It's believed that this Pokémon modeled its fighting style on the flow of a river — sometimes rapid, sometimes calm."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This form of Urshifu is a strong believer in defeating foes by raining many blows down on them. Its strikes are nonstop, flowing like a river."
+    }
+  ],
+  "892gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "People call it the embodiment of rage. It's said that this Pokémon's terrifying expression and shout will rid the world of malevolence."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The energy released by this Pokémon's fists forms shock waves that can blow away Dynamax Pokémon in just one hit."
+    }
+  ],
+  "892rapid-strike-gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "As it waits for the right moment to unleash its Gigantamax power, this Pokémon maintains a perfect one-legged stance. It won't even twitch."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "All it takes is a glare from this Pokémon to take the lives of those with evil in their hearts — or so they say."
     }
   ],
   "893": [

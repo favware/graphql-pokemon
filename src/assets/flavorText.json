@@ -3477,6 +3477,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It loves to bathe in the grit of dry, sandy areas. By sand bathing, this Pokémon rids itself of dirt and moisture clinging to its body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It burrows into the ground to create its nest. If hard stones impede its tunneling, it uses its sharp claws to scatter them and then carries on digging."
     }
   ],
   "27alola": [
@@ -3503,6 +3511,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its ice-covered body lets it slide across the ground with bullet-like speed, sending its enemies flying when it hits them."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Life on mountains covered with deep snow has granted this Pokémon a body of ice that's as hard as steel."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It lives in snowy mountains on southern islands. When a blizzard rolls in, this Pokémon hunkers down in the snow to avoid getting blown away."
     }
   ],
   "28": [
@@ -3625,6 +3641,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The drier the area Sandslash lives in, the harder and smoother the Pokémon's spikes feel when touched."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It climbs trees by hooking on with its sharp claws. Sandslash shares the berries it gathers, dropping them down to Sandshrew waiting below the tree."
     }
   ],
   "28alola": [
@@ -3651,6 +3675,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It is skilled at slashing enemies with its claws. If broken, they start to grow back in a day."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It uses large, hooked claws to cut a path through deep snow as it runs. On snowy mountains, this Sandslash is faster than any other Pokémon."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Many people climb snowy mountains, hoping to see the icy spikes of these Pokémon glistening in the light of dawn."
     }
   ],
   "29": [
@@ -6959,6 +6991,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Always tormented by headaches. It uses psychic powers, but whether it intends to do so is not known."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Psyduck is constantly beset by headaches. If the Pokémon lets its strange power erupt, apparently the pain subsides for a while."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "As Psyduck gets stressed out, its headache gets progressively worse. It uses intense psychic energy to overwhelm those around it."
     }
   ],
   "55": [
@@ -7081,6 +7121,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its long, slim limbs end in broad flippers. They are used for swimming gracefully in lakes."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon lives in gently flowing rivers. It paddles through the water with its long limbs, putting its graceful swimming skills on display."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Old tales tell of Golduck punishing those that defiled its river. The guilty were dragged into the water and taken away."
     }
   ],
   "56": [
@@ -7707,6 +7755,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The direction of the spiral on the belly differs by area. It is more adept at swimming than walking."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "For Poliwag, swimming is easier than walking. The swirl pattern on its belly is actually part of the Pokémon's innards showing through the skin."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "In rivers with fast-flowing water, this Pokémon will cling to a rock by using its thick lips, which act like a suction cup."
     }
   ],
   "61": [
@@ -7829,6 +7885,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Under attack, it uses its belly spiral to put the foe to sleep. It then makes its escape."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Staring at the swirl on its belly causes drowsiness. This trait of Poliwhirl's has been used in place of lullabies to get children to go to sleep."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon's sweat is a slimy mucus. When captured, Poliwhirl can slither from its enemies' grasp and escape."
     }
   ],
   "62": [
@@ -7951,6 +8015,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Swims powerfully using all the muscles in its body. It can even overtake world-class swimmers."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its body is solid muscle. When swimming through cold seas, Poliwrath uses its impressive arms to smash through drift ice and plow forward."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Poliwrath is skilled at both swimming and martial arts. It uses its well-trained arms to dish out powerful punches."
     }
   ],
   "63": [
@@ -10511,6 +10583,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is three Magnemite that have linked together. Magneton sends out powerful radio waves to study its surroundings."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is constantly putting out a powerful magnetic force. Most computers go haywire when a Magneton approaches."
     }
   ],
   "83": [
@@ -12987,6 +13067,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The heads attract each other and spin around. There must be six heads for it to maintain balance."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Though it may look like it's just a bunch of eggs, it's a proper Pokémon. Exeggcute communicates with others of its kind via telepathy, apparently."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon get nervous when they're not in a group of six. The minute even one member of the group goes missing, Exeggcute become cowardly."
     }
   ],
   "103": [
@@ -13109,6 +13197,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its cries are very noisy. This is because each of the three heads thinks about whatever it likes."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Each of Exeggutor's three heads is thinking different thoughts. The three don't seem to be very interested in one another."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When they work together, Exeggutor's three heads can put out powerful psychic energy. Cloudy days make this Pokémon sluggish."
     }
   ],
   "103alola": [
@@ -13135,6 +13231,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The strong sunlight of the Alola region has awakened the power hidden within Exeggcute. This is the result."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Blazing sunlight has brought out the true form and powers of this Pokémon."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon's psychic powers aren't as strong as they once were. The head on this Exeggutor's tail scans surrounding areas with weak telepathy."
     }
   ],
   "104": [
@@ -13257,6 +13361,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When the memory of its departed mother brings it to tears, its cries echo mournfully within the skull it wears on its head."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon wears the skull of its deceased mother. Sometimes Cubone's dreams make it cry, but each tear Cubone sheds makes it stronger."
     }
   ],
   "105": [
@@ -13379,6 +13491,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Small and weak, this Pokémon is adept with its bone club. It has grown more vicious over the ages."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When this Pokémon evolved, the skull of its mother fused to it. Marowak's temperament also turned vicious at the same time."
     }
   ],
   "105alola": [
@@ -13405,6 +13525,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It has transformed the spirit of its dear departed mother into flames, and tonight it will once again dance in mourning of others of its kind."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon sets the bone it holds on fire and dances through the night as a way to mourn its fallen allies."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The cursed flames that light up the bone carried by this Pokémon are said to cause both mental and physical pain that will never fade."
     }
   ],
   "105alola-totem": [
@@ -14125,6 +14253,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It can remember only one thing at a time. Once it starts rushing, it forgets why it started."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Strong, but not too bright, this Pokémon can shatter even a skyscraper with its charging tackles."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It can remember only one thing at a time. Once it starts rushing, it forgets why it started."
     }
   ],
   "112": [
@@ -14231,6 +14367,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its brain developed when it began walking on its hind legs. Its armor-like hide even repels molten lava."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It begins walking on its hind legs after evolution. It can punch holes through boulders with its horn."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees Fahrenheit."
     },
     {
       "version_id": "Sword",
@@ -14589,6 +14733,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Raises its young in its belly pouch. Won't run from any fight to keep its young protected."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Although it's carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "There are records of a lost human child being raised by a childless Kangaskhan."
     }
   ],
   "115mega": [
@@ -14721,6 +14873,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "If it senses any danger, it will vigorously spray water or a special type of ink from its mouth."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Horsea makes its home in oceans with gentle currents. If this Pokémon is under attack, it spits out pitch-black ink and escapes."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "They swim with dance-like motions and cause whirlpools to form. Horsea compete to see which of them can generate the biggest whirlpool."
     }
   ],
   "117": [
@@ -14827,6 +14987,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Touching the back fin causes numbness. It hooks its tail to coral to stay in place while sleeping."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It's the males that raise the offspring. While Seadra are raising young, the spines on their backs secrete thicker and stronger poison."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Seadra's mouth is slender, but its suction power is strong. In an instant, Seadra can suck in food that's larger than the opening of its mouth."
     }
   ],
   "118": [
@@ -15585,6 +15753,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Leaps out of tall grass and slices prey with its scythes. The movement looks like that of a ninja."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "As Scyther fights more and more battles, its scythes become sharper and sharper. With a single slice, Scyther can fell a massive tree."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "If you come across an area in a forest where a lot of the trees have been cut down, what you've found is a Scyther's territory."
     }
   ],
   "124": [
@@ -16065,6 +16241,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Grips its prey in its pincers and squeezes hard! It can't move if it's cold, so it lives in warm places."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "These Pokémon judge one another based on pincers. Thicker, more impressive pincers make for more popularity with the opposite gender."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon clamps its pincers down on its prey and then either splits the prey in half or flings it away."
     }
   ],
   "127mega": [
@@ -16213,6 +16397,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A rowdy Pokémon with a lot of stamina. Once running, it won't stop until it hits something."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When Tauros begins whipping itself with its tails, it's a warning that the Pokémon is about to charge with astounding speed."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The Tauros of Galar are volatile in nature, and they won't allow people to ride on their backs."
     }
   ],
   "129": [
@@ -17427,6 +17619,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The only Pokémon that people anticipate can fly into space. None has managed the feat yet, however."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "State-of-the-art technology was used to create Porygon. It was the first artificial Pokémon to be created via computer programming."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "n recent years, this species has been very helpful in cyberspace. These Pokémon will go around checking to make sure no suspicious data exists."
     }
   ],
   "138": [
@@ -20857,6 +21057,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "On the dark ocean floor, its only means of communication is its constantly flashing lights."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its antennae, which evolved from a fin, have both positive and negative charges flowing through them."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "On the dark ocean floor, its only means of communication is its constantly flashing lights."
     }
   ],
   "171": [
@@ -20963,6 +21171,14 @@
     {
       "version_id": "Sword",
       "flavor_text": "The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon flashes a bright light that blinds its prey. This creates an opening for it to deliver an electrical attack."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles"
     },
     {
       "version_id": "Shield",
@@ -22153,6 +22369,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "When fishing for food at the edge of a fast-running stream, Marill wraps its tail around the trunk of a tree. This Pokémon’s tail is flexible and configured to stretch."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon uses its round tail as a float. The ball of Marill's tail is filled with nutrients that have been turned into an oil."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Even after Marill swims in a cold sea, its water-repellent fur dries almost as soon as Marill leaves the water. That's why this Pokémon is never cold."
     }
   ],
   "184": [
@@ -22239,6 +22463,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Azumarill can make balloons out of air. It makes these air balloons if it spots a drowning Pokémon. The air balloons enable the Pokémon in trouble to breathe."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It spends most of its time in the water. On sunny days, Azumarill floats on the surface of the water and sunbathes."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon create air-filled bubbles. When Azurill play in rivers, Azumarill will cover them with these bubbles."
     }
   ],
   "185": [
@@ -22451,6 +22683,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The longer and more luxurious the curled hair on its head, the greater the number of Poliwag and Poliwhirl that will obey it."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "At nightfall, these Pokémon appear on the shores of lakes. They announce their territorial claims by letting out cries that sound like shouting."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The cry of a male is louder than that of a female. Male Politoed with deep, menacing voices find more popularity with the opposite gender."
     }
   ],
   "187": [
@@ -24895,6 +25135,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Once it has identified something as an enemy, it will continue beating them with its steel-hard pincers until there's nothing left but scraps."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Bulky pincers account for one third of Scizor's body weight. A single swing of one of these pincers will crush a boulder completely."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Though its body is slim, Scizor has tremendous attacking power. Even Scizor's muscles are made of metal."
     }
   ],
   "212mega": [
@@ -25101,6 +25349,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It roams through forests searching for sweet nectar. Although it boasts fantastic physical strength, it's not that good at flying."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Heracross loves sweet sap and will go looking through forests for it. The Pokémon uses its two antennae to pick up scents as it searches."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon takes pride in its strength, which allows it to lift things 100 times heavier than itself with no trouble at all."
     }
   ],
   "214mega": [
@@ -26383,6 +26639,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its feathers, which fall off as it grows, are thin and sharp. In times long past, warriors used them as swords."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The pointed feathers of these Pokémon are sharper than swords. Skarmory and Corviknight fight viciously over territory."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "People fashion swords from Skarmory's shed feathers, so this Pokémon is a popular element in heraldic designs."
     }
   ],
   "228": [
@@ -26667,6 +26931,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Kingdra sleeps on the seafloor where it is otherwise devoid of life. When a storm arrives, the Pokémon is said to awaken and wander about in search of prey."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With the arrival of a storm at sea, this Pokémon will show itself on the surface. When a Kingdra and a Dragonite meet, a fierce battle ensues."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Scales shed by this Pokémon have such a splendorous gleam to them that they've been given to royalty as gifts."
     }
   ],
   "231": [
@@ -26941,6 +27213,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Even though it doesn't die in the vacuum of space, it can't move around very well in zero gravity."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This is a Porygon that was updated with special data. Porygon2 develops itself by learning about many different subjects all on its own."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "After artificial intelligence was implemented in Porygon2, the Pokémon began using a strange language that only other Porygon2 understand."
     }
   ],
   "234": [
@@ -27717,6 +27997,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its milk is high in calories and packed with nutrients. Therefore, if you drink too much of it, you may wind up with a body like Miltank's."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Miltank produces highly nutritious milk, so it's been supporting the lives of people and other Pokémon since ancient times."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon needs to milked every day, or else it will fall ill. The flavor of Miltank milk changes with the seasons."
     }
   ],
   "242": [
@@ -31899,6 +32187,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Whismur is very timid. If it starts to cry loudly, it becomes startled by its own crying and cries even harder. When it finally stops crying, the Pokémon goes to sleep, all tired out."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The cry of a Whismur is over 100 decibels. If you're close to a Whismur when it lets out a cry, you'll be stuck with an all-day headache."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When Whismur cries, the sound of its own voice startles it, making the Pokémon cry even louder. It cries until its exhausted, then it falls asleep."
     }
   ],
   "294": [
@@ -31973,6 +32269,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Loudred shouts while stamping its feet. After it finishes shouting, this Pokémon becomes incapable of hearing anything for a while. This is considered to be a weak point."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Loudred's ears serve as speakers, and they can put out sound waves powerful enough to blow away a house."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The force of this Pokémon's loud voice isn't just the sound—it's also the wave of air pressure that blows opponents away and damages them."
     }
   ],
   "295": [
@@ -32047,6 +32351,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Exploud communicates its feelings to the others by emitting whistle-like sounds from the tubes on its body. This Pokémon only raises its voice when it is in battle."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "In the past, people would use the loud voices of these Pokémon as a means of communication between distant cities."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon can do more than just shout. To communicate with others of its kind, it'll emit all sorts of sounds from the holes in its body."
     }
   ],
   "296": [
@@ -32301,6 +32613,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Azurill’s tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow. Azurill can be seen bouncing and playing on its big, rubbery tail."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The ball on Azurill's tail bounces like a rubber ball, and it's full of the nutrients the Pokémon needs to grow."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Although Azurill are normally docile, an angry one will swing around the big ball on its tail and try to smash its opponents."
     }
   ],
   "299": [
@@ -33931,6 +34251,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "With its sturdy jaws and fangs, it can easily chomp wooden boats to splinters. It fights with Basculin over food."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It won't attack while it's alone—not even if it spots prey. Instead, it waits for other Carvanha to join it, and then the Pokémon attack as a group."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon have sharp fangs and powerful jaws. Sailors avoid Carvanha dents at all costs."
     }
   ],
   "319": [
@@ -34021,6 +34349,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It drinks in seawater and jets it from its rear to propel itself. It's very sensitive to the scent of blood."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "As soon as it catches the scent of its prey, Sharpedo will jet seawater from its backside, hurtling toward the target to attack at 75 mph."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is known a the Bully of the Sea. Any ship entering the waters Sharpedo calls home will be attacked-no exceptions."
     }
   ],
   "319mega": [
@@ -44607,6 +44943,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "There are still people who believe that this Pokémon came from outer space. It emanates a powerful magnetic field."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Some say that Magnezone receives signals from space via the antenna on its head and that it's being controlled by some mysterious being."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It's thought that a special magnetic field changed the molecular structure of this Pokémon's body, and that's what caused the Pokémon's evolution."
     }
   ],
   "463": [
@@ -45383,6 +45727,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "A faulty update was added to its programming. Its behavior is noticeably strange, so the experiment may have been a failure."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Porygon-Z had a program installed to allow it to move between dimensions, but the program also caused instability in Porygon-Z's behavior."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Some say an additional program made this Pokémon evolve, but even academics can't agree on whether Porygon-Z is really an evolution."
     }
   ],
   "475": [
@@ -46981,6 +47333,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Because it doesn't yelp, it's extremely popular with Trainers who live in apartment buildings."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is courageous but also cautious. It uses the soft fur covering its face to collect information about it surroundings."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is far brighter than the average child, and Lillipup won't forget the love it receives or any abuse it suffers."
     }
   ],
   "507": [
@@ -47031,6 +47391,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It has been living with people for so long that portrayals of it can be found on the walls of caves from long, long ago."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Herdier is a very smart and friendly Pokémon. So much so that there's a theory that Herdier was the first Pokémon to partner with people."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The black fur that covers this Pokémon's body is dense and springy. Even sharp fangs bounce right off."
     }
   ],
   "508": [
@@ -47081,6 +47449,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its fur is long and thick. A long time ago in cold regions, every household kept a Stoutland."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "These Pokémon seem to enjoy living with humans. Even a Stoutland caught in the wild will warm up to people in about three days."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Stoutland is immensely proud of its impressive moustache. It's said that moustache length is what determines social standing among this species."
     }
   ],
   "509": [
@@ -48681,6 +49057,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "They prefer clean water and soil. When the environment they live in turns bad, the whole bunch will up and move to a new area."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Petilil appears around sources of clean water. Boiling leaves from this Pokémon's head results in a liquid that's sometimes used as a bug repellent."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The deeper the color of a Petilil's leaves, the healthier the Pokémon is. Petilil sometimes make its home in a well-tended field or flowerbed."
     }
   ],
   "549": [
@@ -48731,6 +49115,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It's well liked by other Pokémon because of its beauty. The flower on its head needs constant care, or it will soon wither and rot."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It's believed that even first-rate gardeners have a hard time getting the flower on a Lilligant's head to bloom."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Essential oils made from Lilligant flowers have a sublime scent, but they're also staggeringly expensive."
     }
   ],
   "550": [
@@ -48849,6 +49241,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Sandile's still not good at hunting, so it mostly eats things that have collapsed in the desert. It's called “the cleaner of the desert.”"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The desert gets cold at night, so when the sun sets, this Pokémon burrows deep into the sand and sleeps until sunrise."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Sandile is small, but its legs and lower body are powerful. Pushing sand aside as it goes, Sandile moves through the desert as if it's swimming."
     }
   ],
   "552": [
@@ -48899,6 +49299,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It buries some of its prey in the sand to use as emergency meals when its hunts are unsuccessful."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Krokorok has specialized eyes that enable it to see in the dark. This ability lets Krokorok hunt in the dead of night without getting lost."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Although this Pokémon has specialized eyes that allow it to see in the dark, Krokorok won't move much at night—the desert gets cold after sunset."
     }
   ],
   "553": [
@@ -48949,6 +49357,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It conceals itself in sandstorms that Flygon whip up and waits patiently for prey to appear."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is known as the Bully of the Sands. Krookodile's mighty jaws can bite through heavy plates of iron with almost no effort at all."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While terribly aggressive, Krookodile also has the patience to stay hidden under sand for days, lying in wait for prey."
     }
   ],
   "554": [
@@ -51915,6 +52331,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "They seclude themselves in the mountains and devote themselves to training. The form of their kicks and chops differs from pack to pack."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "In one minute, a well-trained Mienfoo can chop with its arms more than 100 times."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Though small, Mienfoo's temperament is fierce. Any creature that approaches Mienfoo carelessly will be met with a flurry of attacks."
     }
   ],
   "620": [
@@ -51957,6 +52381,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When Mienshao lets out a bizarre wail, you're in danger. A flurry of kicks and chops too fast to see is about to be unleashed!"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When Mienshao comes across a truly challenging opponent, it will lighten itself by bighting off the fur on its arms."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Delivered at blinding speeds, kicks from this Pokémon can shatter massive boulders into tiny pieces."
     }
   ],
   "621": [
@@ -52717,6 +53149,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It protects itself with flame. Long years ago, people believed Larvesta had a nest on the sun."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The people of ancient times believed that Larvesta fell from the sun."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Larvesta's body is warm all over. It spouts fire from the tips of its horns to intimidate predators and scare prey."
     }
   ],
   "637": [
@@ -52759,6 +53199,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "According to legends, it was hatched from a flaming cocoon to save people and Pokémon that were suffering from the cold."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Volcarona scatters burning scales. Some say it does this to start fires. Others say it's trying to rescue those that suffer in the cold."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon emerges from a cocoon formed of raging flames. Ancient murals depict Volcarona as a deity of fire."
     }
   ],
   "638": [
@@ -54207,6 +54655,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It's not good at swimming, so it clings to the seaweed. In the Alola region, it's often found near Dhelmise."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It drifts in the ocean, blending in with floating seaweed. When other Pokémon come to feast on the seaweed, Skrelp feasts on them instead."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Skrelp looks like a piece of rotten seaweed, so it can blend in with seaweed drifting on the ocean and avoid being detected by enemies."
     }
   ],
   "691": [
@@ -54233,6 +54689,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It blends in with seaweed to ambush its prey and then takes them down with a poisonous liquid strong enough to melt metal."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Dragalge uses a poisonous liquid capable of corroding metal to send tankers that enter its territory to the bottom of the sea."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Dragalge generates dragon energy by sticking the plume on its head out above the ocean's surface and bathing it in sunlight."
     }
   ],
   "692": [
@@ -54259,6 +54723,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It moves around by jetting water from its right pincer. It has a poor sense of balance, so it's terrible at swimming straight."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Clauncher's claws can fall off during battle, but they'll regenerate. The meat inside the claws is popular as a delicacy in Galar."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "By detonating gas that accumulates in its right claw, this Pokémon launches water like a bullet. This is how Clauncher defeats its enemies."
     }
   ],
   "693": [
@@ -54285,6 +54757,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its right arm is packed with meat. When its pincer falls off, it's exported to be used as a cooking ingredient."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "After using the feelers on its oversized claw to detect the location of prey, Clawitzer launches a cannonball of water at its target."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Clawitzer's right arm is a cannon that launches projectiles made of seawater. Shots from a Clawitzer's cannon arm can sink a tanker."
     }
   ],
   "694": [
@@ -55721,6 +56201,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When it rubs the rocks on its neck against you, that's proof of its love for you. However, the rocks are sharp, so the gesture is quite painful!"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon can bond very strongly with its Trainer, but it also has a habit of biting. Raising a Rockruff for a long time can be challenging."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon intimidates opponents by striking the ground with the rocks on its neck. The moment an opponent flinches, Rockruff attacks."
     }
   ],
   "745": [
@@ -55739,6 +56227,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its quick movements confuse its enemies. Well equipped with claws and fangs, it also uses the sharp rocks in its mane as weapons."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Lycanroc is calm and cautious. The rocks jutting from its mane are razor sharp."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "With swift movements, this Pokémon gradually backs its prey into a corner. Lycanroc's fangs are always aimed toward opponents' weak spots."
     }
   ],
   "745midnight": [
@@ -55757,6 +56253,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "They live alone without forming packs. They will only listen to orders from Trainers who can draw out their true power."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This form of Lycanroc is reckless. It charges headlong at its opponents, attacking without any care about what injuries it might receive."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It's invigorated by powerful opponents–the stronger the better. A full-force headbutt from one of these Lycanroc can shatter giant boulders."
     }
   ],
   "745dusk": [
@@ -55767,6 +56271,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This strange form is the result of its evolving at dusk. It's very rare in Alola."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This form of Lycanroc is normally calm and quiet. Once a battle begins, however, this Pokémon displays a ferocious fighting spirit."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon have both calm and ferocious qualities. Their temperamental nature makes them a difficult species to raise."
     }
   ],
   "746": [
@@ -56385,6 +56897,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "If you build sand mounds when you're playing, destroy them before you go home, or they may get possessed and become Sandygast."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Grudges of the dead have possessed a mound of sand and become a Pokémon. Sandygast is fond of the shovel on its head."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Sandygast mainly inhabits beaches. It takes control of anyone who puts their hand into its mouth, forcing them to make its body bigger."
     }
   ],
   "770": [
@@ -56403,6 +56923,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Once it has whipped up a sandstorm to halt its opponents in their tracks, this terrifying Pokémon snatches away their vitality."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Palossand is known as the Beach Nightmare. It pulls its prey down into the sand by controlling the sand itself, and then it sucks out their souls."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon lives on beaches, but it hates water. Palossand can't maintain its castle-like shape if it gets drenched by a heavy rain."
     }
   ],
   "771": [
@@ -58721,6 +59249,26 @@
     {
       "version_id": "Shield",
       "flavor_text": "Infinite amounts of energy pour from this Pokémon's enlarged core, warping the surrounding space-time."
+    }
+  ],
+  "893": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Within dense forests, this Pokémon lives in a pack with others of its kind. It’s incredibly aggressive, and the other Pokémon of the forest fear it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Once the vines on Zarude’s body tear off, they become nutrients in the soil. This helps the plants of the forest grow."
+    }
+  ],
+  "893dada": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Zarude left its pack to raise a human child. The cloth Zarude would wrap the child with has a comforting scent that calmed the child's crying."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Zarude's special strength stems from its love and care for an orphaned human child that the Pokémon has raised since the child's infancy."
     }
   ]
 }

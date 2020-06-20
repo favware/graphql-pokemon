@@ -11832,7 +11832,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Random',
       type: 'Normal',
       contestType: 'Tough',
-      maxMovePower: 1
+      maxMovePower: 1,
+      zMovePower: 1
     }
   ],
   [

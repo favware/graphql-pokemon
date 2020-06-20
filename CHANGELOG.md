@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/favware/graphql-pokemon/compare/v4.1.0...v4.2.0) (2020-06-20)
+
+
+### Features
+
+* **data:** add flavour texts for Isle of Armor Pokemon (part 1) ([#224](https://github.com/favware/graphql-pokemon/issues/224)) ([558c7c2](https://github.com/favware/graphql-pokemon/commit/558c7c2442b1a35c4987e204a55e86b56767abff))
+* **data:** add flavour texts for Isle of Armor Pokemon (part 2) ([#223](https://github.com/favware/graphql-pokemon/issues/223)) ([46f3a67](https://github.com/favware/graphql-pokemon/commit/46f3a676c22a1b9217de4348483b5d2f084b2484))
+* **data:** add Isle of Armor data ([edaa401](https://github.com/favware/graphql-pokemon/commit/edaa401bfc5d6a54a2a945ebd904fbbd8bcf2366))
+
+
+### Bug Fixes
+
+* **abilities:** fixed coaching description ([f480ded](https://github.com/favware/graphql-pokemon/commit/f480ded2cbf02e3da925003ae729bcf5cde0cb30))
+
 ## [4.1.0](https://github.com/favware/graphql-pokemon/compare/v4.0.4...v4.1.0) (2020-06-19)
 
 

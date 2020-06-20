@@ -199,7 +199,7 @@ export const Pokemon: React.FC = () => {
 
 ## .NET Core
 
-_**More will be added here in due time, once I get more familiarized with .NET. Or if anyone wants to contribute usage then please do**_
+_**More can be added here in due time, this is open for contribution by someone who is more familiarized with .NET.**_
 
 ```cs
 using GraphQLCodeGen;

@@ -10522,8 +10522,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '90',
       category: 'Special',
-      desc: "This move becomes a physical attack if the target's Defense is lower than its Special Defense, including stat stage changes. This move has a 20% chance to poison the target.",
-      shortDesc: 'Physical if target Def < Sp. Def. 20% poison chance.',
+      desc:
+        "Has a 20% chance to poison the target. This move becomes a physical attack that makes contact if the value of ((((2 * the user's level / 5 + 2) * 90 * X) / Y) / 50), where X is the user's Attack stat and Y is the target's Defense stat, is greater than the same value where X is the user's Special Attack stat and Y is the target's Special Defense stat. No stat modifiers other than stat stage changes are considered for this purpose. If the two values are equal, this move chooses a damage category at random.",
+      shortDesc: '20% poison. Physical, contact if more damaging.',
       name: 'Shell Side Arm',
       pp: 10,
       priority: 0,
@@ -12074,7 +12075,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       pp: 5,
       priority: 0,
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      maxMovePower: 130
     }
   ],
   [

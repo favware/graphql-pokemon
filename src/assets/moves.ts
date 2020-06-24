@@ -12076,7 +12076,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Water',
-      maxMovePower: 130
+      maxMovePower: 130,
+      zMovePower: 140
     }
   ],
   [

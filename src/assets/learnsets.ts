@@ -71211,7 +71211,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       willowisp: ['8M']
     }
   ],
-  ['applin', { astonish: ['8L1'], attract: ['8M'], defensecurl: ['8E'], dracometeor: ['8T'], recycle: ['8E'], rollout: ['8E'], suckerpunch: ['8E'], withdraw: ['8L1'] }],
+  ['applin', { astonish: ['8L1'], attract: ['8M'], defensecurl: ['8E'], dracometeor: ['8T'], grassyglide: ['8T'], recycle: ['8E'], rollout: ['8E'], suckerpunch: ['8E'], withdraw: ['8L1'] }],
   [
     'flapple',
     {

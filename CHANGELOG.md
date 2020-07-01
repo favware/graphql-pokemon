@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.2](https://github.com/favware/graphql-pokemon/compare/v4.2.1...v4.2.2) (2020-07-01)
+
+
+### Bug Fixes
+
+* **moves:** add z-move baser power for surging strikes ([f98e274](https://github.com/favware/graphql-pokemon/commit/f98e27435b516b74a2bbe805e9a18602f2c6a99e))
+* **moves:** fixed descr for Shell Side Arm ([a66fb8a](https://github.com/favware/graphql-pokemon/commit/a66fb8a403ab6e62d847ae9a205da0736b04fab2))
+
 ### [4.2.1](https://github.com/favware/graphql-pokemon/compare/v4.2.0...v4.2.1) (2020-06-20)
 
 

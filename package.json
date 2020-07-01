@@ -56,7 +56,6 @@
     "apollo-server-express": "^2.15.1",
     "class-validator": "^0.12.2",
     "cz-conventional-changelog": "^3.2.0",
-    "execa": "^4.0.2",
     "express": "^4.17.1",
     "fast-xml-parser": "^3.17.4",
     "fs-nextra": "^0.5.1",

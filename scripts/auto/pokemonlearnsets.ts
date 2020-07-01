@@ -2,7 +2,8 @@ import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import { DataJSON, importFileFromWeb, kConsole, mapToJson, SmogonLearnsetData } from './utils';
+import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './utils';
+import Util from '../../src/utils/util';
 
 const FILE_PREFIX = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
@@ -34,13 +35,13 @@ const autoUpdateLearnsets = async () => {
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
   if (!data) {
-    kConsole.error('no data from request');
+    Util.kConsole.error('no data from request');
 
     return process.exit(1);
   }
 
   if (data.sha === ciData.learnsetsLastSha) {
-    kConsole.info('Fetched data but no new commit was available');
+    Util.kConsole.info('Fetched data but no new commit was available');
 
     return process.exit(0);
   }
@@ -66,7 +67,7 @@ const autoUpdateLearnsets = async () => {
 
   await Promise.all(writePromises);
 
-  kConsole.log(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`);
+  Util.kConsole.log(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`);
   return process.exit(0);
 };
 

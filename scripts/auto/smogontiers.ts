@@ -2,7 +2,8 @@ import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import { DataJSON, importFileFromWeb, kConsole, SmogonTiersData } from './utils';
+import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
+import Util from '../../src/utils/util';
 
 const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
 const FORMATS_FILE = join(__dirname, '../../src/assets/formats.json');
@@ -22,13 +23,13 @@ const autoUpdateSmogonTiers = async () => {
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
   if (!data) {
-    kConsole.error('no data from request');
+    Util.kConsole.error('no data from request');
 
     return process.exit(1);
   }
 
   if (data.sha === ciData.tiersLastSha) {
-    kConsole.info('Fetched data but no new commit was available');
+    Util.kConsole.info('Fetched data but no new commit was available');
 
     return process.exit(0);
   }
@@ -51,7 +52,7 @@ const autoUpdateSmogonTiers = async () => {
 
   await Promise.all(writePromises);
 
-  kConsole.log(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`);
+  Util.kConsole.log(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`);
 
   return process.exit(0);
 };

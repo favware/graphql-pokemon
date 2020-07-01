@@ -1,14 +1,7 @@
-import { KlasaConsole } from '@klasa/console';
 import { remove, writeFileAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { resolve } from 'path';
 import ts from 'typescript';
-
-export const kConsole = new KlasaConsole({
-  useColor: true,
-  timestamps: true,
-  utc: false
-});
 
 export const mapToJson = (map: Map<string, unknown>): string => JSON.stringify([...map]);
 

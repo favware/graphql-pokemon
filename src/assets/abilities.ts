@@ -1281,7 +1281,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'quickdraw',
     {
-      shortDesc: 'This Pokemon has a 20% chance to move first in its priority bracket with attacking moves.',
+      shortDesc: 'This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.',
       name: 'Quick Draw'
     }
   ],

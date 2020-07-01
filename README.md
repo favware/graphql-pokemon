@@ -32,9 +32,9 @@
 **Project Status**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/master/LICENSE.md)
-[![Continuous Delivery](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Delivery/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Delivery")
+[![Continuous Deployment](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Deployment/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Deployment")
 [![Continuous Integration](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Integration/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Integration")
-[![Showdown Tierlists](https://github.com/favware/graphql-pokemon/workflows/Update%20Showdown%20Tierlists/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Update+Showdown+Formats")
+[![Automatic Data Update](https://github.com/favware/graphql-pokemon/workflows/Automatic%20Data%20Update/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Automatic+Data+Update")
 
 **Social Media and Donations**
 

@@ -350,6 +350,8 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>([
   ['rime', { alias: 'rime', name: 'Mr. Rime' }],
   ['zanianc', { alias: 'zanianc', name: 'Zacian-Crowned' }],
   ['zamazentac', { alias: 'zamazentac', name: 'Zamazenta-Crowned' }],
+  ['urshifurs', { alias: 'urshifurs', name: 'Urshifu-Rapid-Style' }],
+  ['urshifurapid', { alias: 'urshifurapid', name: 'Urshifu-Rapid-Style' }],
   ['nidoranfemale', { alias: 'nidoranfemale', name: 'Nidoran-F' }],
   ['nidoranmale', { alias: 'nidoranmale', name: 'Nidoran-M' }],
   ['wormadamgrass', { alias: 'wormadamgrass', name: 'Wormadam' }],

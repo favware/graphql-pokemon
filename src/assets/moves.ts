@@ -1,9 +1,9 @@
 /* eslint-disable max-len*/
-import GraphQLCollection from '../utils/GraphQLCollection';
+import GraphQLCache from '../utils/GraphQLCache';
 import type { Pokemon } from '../utils/pokemon';
 
 /** The moves in Pokémon */
-export default new GraphQLCollection<string, Pokemon.Move>([
+export default new GraphQLCache<string, Pokemon.Move>([
   [
     '10000000voltthunderbolt',
     {

@@ -20,7 +20,7 @@ export default class DexService {
   private tiers: Record<string, string> | undefined = undefined;
 
   public findByNum(@Arg('num') num: number): Pokemon.DexEntry | undefined {
-    return pokedex.find((poke) => poke.num === num);
+    return pokedex.findValue((poke) => poke.num === num);
   }
 
   public findBySpecies(@Arg('species') species: string): Pokemon.DexEntry | undefined {

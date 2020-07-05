@@ -1,8 +1,8 @@
-import GraphQLCollection from '../utils/GraphQLCollection';
+import GraphQLCache from '../utils/GraphQLCache';
 import type { Pokemon } from '../utils/pokemon';
 
 /** Aliases for Smogon tiers */
-export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>([
+export const tierAliases = new GraphQLCache<string, Pokemon.TierAlias>([
   ['randbats', { alias: 'randbats', tier: 'randombattle' }],
   ['randoms', { alias: 'randoms', tier: 'randombattle' }],
   ['random battles', { alias: 'random battles', tier: 'randombattle' }],
@@ -63,7 +63,7 @@ export const tierAliases = new GraphQLCollection<string, Pokemon.TierAlias>([
 ]);
 
 /** Aliases for Pokémon */
-export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>([
+export const pokedexAliases = new GraphQLCache<string, Pokemon.DexAlias>([
   ['maero', { alias: 'maero', name: 'Aerodactyl-Mega' }],
   ['megaaero', { alias: 'megaaero', name: 'Aerodactyl-Mega' }],
   ['megabee', { alias: 'megabee', name: 'Beedrill-Mega' }],
@@ -1375,13 +1375,13 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>([
 ]);
 
 /** Aliases for Pokémon abilities */
-export const abilityAliases = new GraphQLCollection<string, Pokemon.AbilityAlias>([
+export const abilityAliases = new GraphQLCache<string, Pokemon.AbilityAlias>([
   ['ph', { alias: 'ph', ability: 'Poison Heal' }],
   ['stag', { alias: 'stag', ability: 'Shadow Tag' }]
 ]);
 
 /** Aliases for Pokémon items */
-export const itemAliases = new GraphQLCollection<string, Pokemon.ItemAlias>([
+export const itemAliases = new GraphQLCache<string, Pokemon.ItemAlias>([
   ['assvest', { alias: 'assvest', item: 'Assault Vest' }],
   ['av', { alias: 'av', item: 'Assault Vest' }],
   ['band', { alias: 'band', item: 'Choice Band' }],
@@ -1412,7 +1412,7 @@ export const itemAliases = new GraphQLCollection<string, Pokemon.ItemAlias>([
 ]);
 
 /** Aliases for Pokémon moves */
-export const moveAliases = new GraphQLCollection<string, Pokemon.MoveAlias>([
+export const moveAliases = new GraphQLCache<string, Pokemon.MoveAlias>([
   ['bb', { alias: 'bb', move: 'Brave Bird' }],
   ['bd', { alias: 'bd', move: 'Belly Drum' }],
   ['bpass', { alias: 'bpass', move: 'Baton Pass' }],

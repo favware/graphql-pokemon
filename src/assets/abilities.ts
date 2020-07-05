@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
-import GraphQLCollection from '../utils/GraphQLCollection';
+import GraphQLCache from '../utils/GraphQLCache';
 import type { Pokemon } from '../utils/pokemon';
 
 /** The abilities in Pokémon */
-export default new GraphQLCollection<string, Pokemon.Ability>([
+export default new GraphQLCache<string, Pokemon.Ability>([
   [
     'adaptability',
     {

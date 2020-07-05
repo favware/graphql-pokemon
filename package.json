@@ -38,7 +38,6 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@discordjs/collection": "^0.1.5",
     "@favware/eslint-config": "^5.1.0",
     "@favware/ts-config": "^3.0.2",
     "@graphql-codegen/c-sharp": "^1.16.0",
@@ -46,6 +45,7 @@
     "@graphql-codegen/schema-ast": "^1.16.0",
     "@graphql-codegen/typescript": "^1.16.0",
     "@graphql-codegen/typescript-resolvers": "^1.16.0",
+    "@klasa/cache": "^0.0.3",
     "@klasa/console": "^0.0.3",
     "@klasa/timestamp": "^0.0.1",
     "@types/express": "^4.17.6",

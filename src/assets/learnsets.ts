@@ -1,11 +1,11 @@
 // @ts-nocheck TS checking this file causes major delays in developing
 /* eslint-disable max-len */
 
-import GraphQLCache from '../utils/GraphQLCache';
+import GraphQLCollection from '../utils/GraphQLCollection';
 import type { Pokemon } from '../utils/pokemon';
 
 /** The learnsets in Pokémon */
-export default new GraphQLCache<string, Pokemon.RecordStringArray>([
+export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
   [
     'missingno',
     {
@@ -2756,11 +2756,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -2771,7 +2773,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -2791,6 +2795,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -2818,11 +2823,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [
@@ -2832,11 +2839,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -2847,7 +2856,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -2867,6 +2878,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -2894,11 +2906,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [
@@ -2908,11 +2922,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -2923,7 +2939,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -2943,6 +2961,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -2970,11 +2989,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T', '7S0'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [
@@ -2984,11 +3005,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -2999,7 +3022,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -3019,6 +3044,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -3046,11 +3072,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T', '7S0'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [
@@ -3060,11 +3088,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -3075,7 +3105,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -3095,6 +3127,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -3122,11 +3155,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [
@@ -3136,11 +3171,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -3151,7 +3188,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -3171,6 +3210,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -3198,11 +3238,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [
@@ -3212,11 +3254,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       attract: ['8M', '7M'],
       bodyslam: ['8M'],
       brickbreak: ['8M', '7M'],
+      charge: ['8E'],
       chargebeam: ['7M'],
       charm: ['8M', '8L1'],
       confide: ['7M'],
       covet: ['7T'],
       dig: ['8M'],
+      disarmingvoice: ['8E'],
       discharge: ['8L32', '7L34'],
       doubleteam: ['8L8', '7M', '7L23'],
       drainingkiss: ['8M'],
@@ -3227,7 +3271,9 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       encore: ['8M'],
       endure: ['8M'],
       facade: ['8M', '7M'],
+      fakeout: ['8E'],
       feint: ['8L16', '7L21'],
+      flail: ['8E'],
       fling: ['8M', '7M'],
       focuspunch: ['7T'],
       frustration: ['7M'],
@@ -3247,6 +3293,7 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       payday: ['8M'],
       playnice: ['8L1', '7L7'],
       playrough: ['8M'],
+      present: ['8E'],
       protect: ['8M', '7M'],
       quickattack: ['8L1', '7L10', '7S0'],
       raindance: ['8M', '7M'],
@@ -3274,11 +3321,13 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       thunderpunch: ['8M', '7T'],
       thundershock: ['8L1', '7L1'],
       thunderwave: ['8M', '8L4', '7M', '7L18'],
+      tickle: ['8E'],
       toxic: ['7M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M'],
       volttackle: ['7T'],
-      wildcharge: ['8M', '7M', '7L50']
+      wildcharge: ['8M', '7M', '7L50'],
+      wish: ['8E']
     }
   ],
   [

@@ -9,11 +9,11 @@ const FILE_PREFIX = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
   '/* eslint-disable max-len */',
   '',
-  "import GraphQLCollection from '../utils/GraphQLCollection';",
+  "import GraphQLCache from '../utils/GraphQLCache';",
   "import type { Pokemon } from '../utils/pokemon';",
   '',
   '/** The learnsets in Pokémon */',
-  'export default new GraphQLCollection<string, Pokemon.RecordStringArray>('
+  'export default new GraphQLCache<string, Pokemon.RecordStringArray>('
 ].join('\n');
 const FILE_SUFFIX = [');', ''].join('\n');
 
@@ -25,7 +25,7 @@ const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
 const autoUpdateLearnsets = async () => {
   const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
-  url.searchParams.append('path', 'data/formats-data.ts');
+  url.searchParams.append('path', 'data/learnsets.ts');
   url.searchParams.append('since', TIMESTAMP);
 
   const request = await fetch(url);

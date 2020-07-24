@@ -3366,7 +3366,6 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       zippyzap: ['8V', '7T']
     }
   ],
-  ['pikachugmax', { doubleteam: ['8S0'], growl: ['8S0'], quickattack: ['8S0'], thunderwave: ['8S0'] }],
   [
     'raichu',
     {
@@ -7025,7 +7024,6 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       workup: ['8M']
     }
   ],
-  ['meowthgmax', { fakeout: ['8S0'], growl: ['8S0'], payday: ['8S0'], slash: ['8S0'] }],
   [
     'persian',
     {
@@ -17629,7 +17627,6 @@ export default new GraphQLCache<string, Pokemon.RecordStringArray>([
       veeveevolley: ['8V', '7T']
     }
   ],
-  ['eeveegmax', { growl: ['8S0'], quickattack: ['8S0'], sandattack: ['8S0'], tailwhip: ['8S0'] }],
   [
     'vaporeon',
     {

@@ -271,8 +271,8 @@ export default new GraphQLCache<string, Pokemon.Ability>([
   [
     'damp',
     {
-      desc: 'While this Pokemon is active, Explosion, Mind Blown, Self-Destruct, and the Ability Aftermath are prevented from having an effect.',
-      shortDesc: 'Prevents Explosion/Mind Blown/Self-Destruct/Aftermath while this Pokemon is active.',
+      desc: 'While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.',
+      shortDesc: 'Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.',
       name: 'Damp'
     }
   ],

@@ -2035,7 +2035,9 @@ export default new GraphQLCache<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Physical',
-      shortDesc: 'If hit by physical attack, returns double damage.',
+      desc:
+        "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
+      shortDesc: 'If hit by Normal/Fighting move, deals 2x damage.',
       name: 'Counter',
       pp: 20,
       priority: -5,
@@ -4611,10 +4613,10 @@ export default new GraphQLCache<string, Pokemon.Move>([
     'gmaxdrumsolo',
     {
       accuracy: 100,
-      basePower: '10',
+      basePower: '160',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. This move ignores the abilities of opposing Pokemon.",
-      shortDesc: 'Base move affects power. Ignores abilities.',
+      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokemon.',
+      shortDesc: 'Stronger than other Max Moves. Ignores abilities.',
       name: 'G-Max Drum Solo',
       pp: 5,
       priority: 0,
@@ -4743,11 +4745,11 @@ export default new GraphQLCache<string, Pokemon.Move>([
     'gmaxfireball',
     {
       accuracy: 100,
-      basePower: '10',
+      basePower: '160',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. This move ignores the abilities of opposing Pokemon.",
-      shortDesc: 'Base move affects power. Ignores abilities.',
-      name: 'G-Max Fire Ball',
+      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokemon.',
+      shortDesc: 'Stronger than other Max Moves. Ignores abilities.',
+      name: 'G-Max Fireball',
       pp: 5,
       priority: 0,
       isGMax: 'Cinderace',
@@ -4807,10 +4809,10 @@ export default new GraphQLCache<string, Pokemon.Move>([
     'gmaxhydrosnipe',
     {
       accuracy: 100,
-      basePower: '10',
+      basePower: '160',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. This move ignores the abilities of opposing Pokemon.",
-      shortDesc: 'Base move affects power. Ignores abilities.',
+      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokemon.',
+      shortDesc: 'Stronger than other Max Moves. Ignores abilities.',
       name: 'G-Max Hydrosnipe',
       pp: 5,
       priority: 0,
@@ -5153,7 +5155,7 @@ export default new GraphQLCache<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      shortDesc: 'For 5 turns, negates all Ground immunities.',
+      shortDesc: '5 turns: no Ground immunities, 1.67x accuracy.',
       name: 'Gravity',
       pp: 5,
       priority: 0,
@@ -5662,7 +5664,8 @@ export default new GraphQLCache<string, Pokemon.Move>([
       isNonstandard: 'Past',
       target: 'Normal',
       type: 'Water',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      maxMovePower: 80
     }
   ],
   [
@@ -10523,7 +10526,7 @@ export default new GraphQLCache<string, Pokemon.Move>([
       category: 'Special',
       desc:
         "Has a 20% chance to poison the target. This move becomes a physical attack that makes contact if the value of ((((2 * the user's level / 5 + 2) * 90 * X) / Y) / 50), where X is the user's Attack stat and Y is the target's Defense stat, is greater than the same value where X is the user's Special Attack stat and Y is the target's Special Defense stat. No stat modifiers other than stat stage changes are considered for this purpose. If the two values are equal, this move chooses a damage category at random.",
-      shortDesc: '20% poison. Physical, contact if more damaging.',
+      shortDesc: '20% poison. Phys+contact if it would be stronger.',
       name: 'Shell Side Arm',
       pp: 10,
       priority: 0,

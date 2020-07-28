@@ -2957,7 +2957,7 @@ export default new GraphQLCache<string, Pokemon.Item>([
   [
     'silverpowder',
     {
-      name: 'SilverPowder',
+      name: 'Silver Powder',
       gen: 2,
       desc: "Holder's Bug-type attacks have 1.2x power."
     }

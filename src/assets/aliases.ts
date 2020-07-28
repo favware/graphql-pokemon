@@ -675,6 +675,7 @@ export const pokedexAliases = new GraphQLCache<string, Pokemon.DexAlias>([
   ['ttar', { alias: 'ttar', name: 'Tyranitar' }],
   ['venu', { alias: 'venu', name: 'Venusaur' }],
   ['viriz', { alias: 'viriz', name: 'Virizion' }],
+  ['watershifu', { alias: 'watershifu', name: 'Urshifu-Rapid-Strike' }],
   ['whimsi', { alias: 'whimsi', name: 'Whimsicott' }],
   ['xern', { alias: 'xern', name: 'Xerneas' }],
   ['xurk', { alias: 'xurk', name: 'Xurkitree' }],
@@ -1415,6 +1416,7 @@ export const itemAliases = new GraphQLCache<string, Pokemon.ItemAlias>([
 export const moveAliases = new GraphQLCache<string, Pokemon.MoveAlias>([
   ['bb', { alias: 'bb', move: 'Brave Bird' }],
   ['bd', { alias: 'bd', move: 'Belly Drum' }],
+  ['bde', { alias: 'bde', move: 'Baby-Doll Eyes' }],
   ['bpass', { alias: 'bpass', move: 'Baton Pass' }],
   ['bp', { alias: 'bp', move: 'Baton Pass' }],
   ['cc', { alias: 'cc', move: 'Close Combat' }],

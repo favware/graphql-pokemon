@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.4](https://github.com/favware/graphql-pokemon/compare/v4.2.3...v4.2.4) (2020-08-06)
+
+
+### Bug Fixes
+
+* cover data changes ([1fa2f7f](https://github.com/favware/graphql-pokemon/commit/1fa2f7f0d3a27fc8fffadee3dbaf814bb1d54243))
+* resolve security vulnerability CVE-2020-8203 ([9133413](https://github.com/favware/graphql-pokemon/commit/91334135c40a58094225b7033f87337e0d6722f8))
+
 ### [4.2.3](https://github.com/favware/graphql-pokemon/compare/v4.2.2...v4.2.3) (2020-07-05)
 
 ### [4.2.2](https://github.com/favware/graphql-pokemon/compare/v4.2.1...v4.2.2) (2020-07-01)

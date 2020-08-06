@@ -201,9 +201,9 @@ jobs:
         run: yarn
       - name: Configure Git
         run: |
+          git config --global user.email "${GITHUB_EMAIL}";
+          git config --global user.name "${GITHUB_ACTOR}";
           git remote set-url origin "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
-          git config --local user.email "${GITHUB_EMAIL}";
-          git config --local user.name "${GITHUB_USER}";
         env:
           GITHUB_ACTOR: Favware-bot
           GITHUB_EMAIL: favwarebot@gmail.com

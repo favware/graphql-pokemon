@@ -46,13 +46,13 @@ const autoUpdateLearnsets = async () => {
     return process.exit(0);
   }
 
-  const { BattleLearnsets } = await importFileFromWeb<SmogonLearnsetData>({
+  const { Learnsets } = await importFileFromWeb<SmogonLearnsetData>({
     url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/learnsets.ts',
     temporaryFileName: 'learnsets.ts'
   });
 
   const output = new Map<string, unknown>();
-  for (const [pokemon, learnset] of Object.entries(BattleLearnsets)) {
+  for (const [pokemon, learnset] of Object.entries(Learnsets)) {
     if (learnset.eventOnly === undefined && learnset.learnset === undefined) continue;
     if (learnset.eventOnly !== undefined && learnset.learnset === undefined)
       output.set(pokemon, { eventOnly: ['See base forme of this Pokémon'] });

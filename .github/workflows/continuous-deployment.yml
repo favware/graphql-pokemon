@@ -201,11 +201,11 @@ jobs:
         run: yarn
       - name: Configure Git
         run: |
-          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+          git remote set-url origin "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
           git config --local user.email "${GITHUB_EMAIL}";
           git config --local user.name "${GITHUB_USER}";
         env:
-          GITHUB_USER: Favware-bot
+          GITHUB_ACTOR: Favware-bot
           GITHUB_EMAIL: favwarebot@gmail.com
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       - name: Bump semver

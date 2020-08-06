@@ -44,8 +44,8 @@ export interface DataJSON {
   learnsetsLastSha: string;
 }
 
-export type SmogonTiersData = Record<'BattleFormatsData', Record<string, SpeciesFormatsData>>;
-export type SmogonLearnsetData = Record<'BattleLearnsets', Record<string, LearnsetData>>;
+export type SmogonTiersData = Record<'FormatsData', Record<string, SpeciesFormatsData>>;
+export type SmogonLearnsetData = Record<'Learnsets', Record<string, LearnsetData>>;
 
 interface SpeciesFormatsData {
   comboMoves?: readonly string[];

@@ -9729,7 +9729,8 @@ export default new GraphQLCache<string, Pokemon.Move>([
       pp: 20,
       priority: 0,
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      maxMovePower: 140
     }
   ],
   [
@@ -11604,7 +11605,7 @@ export default new GraphQLCache<string, Pokemon.Move>([
       basePower: '130',
       category: 'Physical',
       desc: 'Fails if there is no terrain active. Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.',
-      shortDesc: 'Fails if there is no terrain active. Ends the effects of terrain.',
+      shortDesc: 'Ends the effects of terrain; fails if none is active.',
       name: 'Steel Roller',
       pp: 5,
       priority: 0,

@@ -27865,7 +27865,7 @@ export default new GraphQLCache<string, Pokemon.DexEntry>([
     {
       species: 'kitsunoh',
       num: -14,
-      types: ['Steel', 'Ghost'],
+      types: ['Ghost', 'Steel'],
       genderRatio: { male: 0.5, female: 0.5 },
       baseStats: {
         hp: 80,
@@ -28375,6 +28375,22 @@ export default new GraphQLCache<string, Pokemon.DexEntry>([
     }
   ],
   [
+    'justyke',
+    {
+      num: -54,
+      species: 'Justyke',
+      types: ['Steel', 'Ground'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: { hp: 72, atk: 70, def: 56, spa: 83, spd: 68, spe: 30 },
+      abilities: { first: 'Levitate', second: 'Bulletproof', hidden: 'Justified' },
+      heightm: 0.4,
+      weightkg: 36.5,
+      color: 'Brown',
+      evos: ['equilibra'],
+      eggGroups: ['Mineral']
+    }
+  ],
+  [
     'equilibra',
     {
       num: -55,
@@ -28392,8 +28408,26 @@ export default new GraphQLCache<string, Pokemon.DexEntry>([
       abilities: { first: 'Levitate', second: 'Bulletproof', hidden: 'Justified' },
       heightm: 0.8,
       weightkg: 51.3,
+      prevo: 'justyke',
+      evoLevel: '32',
       color: 'Brown',
       eggGroups: ['Mineral']
+    }
+  ],
+  [
+    'solotl',
+    {
+      num: -56,
+      species: 'Solotl',
+      types: ['Fire', 'Dragon'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: { hp: 68, atk: 48, def: 34, spa: 72, spd: 24, spe: 84 },
+      abilities: { first: 'Regenerator', second: 'Vital Spirit', hidden: 'Magician' },
+      heightm: 0.6,
+      weightkg: 11.8,
+      evos: ['astrolotl'],
+      color: 'Red',
+      eggGroups: ['Dragon', 'Fairy']
     }
   ],
   [
@@ -28414,6 +28448,8 @@ export default new GraphQLCache<string, Pokemon.DexEntry>([
       abilities: { first: 'Regenerator', second: 'Vital Spirit', hidden: 'Magician' },
       heightm: 1.9,
       weightkg: 50,
+      prevo: 'solotl',
+      evoLevel: '36',
       color: 'Red',
       eggGroups: ['Dragon', 'Fairy']
     }

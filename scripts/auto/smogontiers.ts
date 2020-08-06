@@ -34,14 +34,14 @@ const autoUpdateSmogonTiers = async () => {
     return process.exit(0);
   }
 
-  const { BattleFormatsData } = await importFileFromWeb<SmogonTiersData>({
+  const { FormatsData } = await importFileFromWeb<SmogonTiersData>({
     url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.ts',
     temporaryFileName: 'tiers.ts'
   });
 
   const output: Record<string, string> = {};
-  for (const mon in BattleFormatsData) {
-    const tier = BattleFormatsData[mon].isNonstandard || BattleFormatsData[mon].tier;
+  for (const mon in FormatsData) {
+    const tier = FormatsData[mon].isNonstandard || FormatsData[mon].tier;
     output[mon] = tier || 'Refer to base form / unknown';
   }
 

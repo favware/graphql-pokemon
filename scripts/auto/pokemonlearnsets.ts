@@ -2,8 +2,8 @@ import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './utils';
 import Util from '../../src/utils/util';
+import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './utils';
 
 const FILE_PREFIX = [
   '// @ts-nocheck TS checking this file causes major delays in developing',

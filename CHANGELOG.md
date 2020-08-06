@@ -6,120 +6,106 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [4.2.2](https://github.com/favware/graphql-pokemon/compare/v4.2.1...v4.2.2) (2020-07-01)
 
-
 ### Bug Fixes
 
-* **moves:** add z-move baser power for surging strikes ([f98e274](https://github.com/favware/graphql-pokemon/commit/f98e27435b516b74a2bbe805e9a18602f2c6a99e))
-* **moves:** fixed descr for Shell Side Arm ([a66fb8a](https://github.com/favware/graphql-pokemon/commit/a66fb8a403ab6e62d847ae9a205da0736b04fab2))
+- **moves:** add z-move baser power for surging strikes ([f98e274](https://github.com/favware/graphql-pokemon/commit/f98e27435b516b74a2bbe805e9a18602f2c6a99e))
+- **moves:** fixed descr for Shell Side Arm ([a66fb8a](https://github.com/favware/graphql-pokemon/commit/a66fb8a403ab6e62d847ae9a205da0736b04fab2))
 
 ### [4.2.1](https://github.com/favware/graphql-pokemon/compare/v4.2.0...v4.2.1) (2020-06-20)
 
-
 ### Bug Fixes
 
-* **moves:** fixed zMovePower for Struggle ([f54cda0](https://github.com/favware/graphql-pokemon/commit/f54cda08f92bb7b87cc99e57cb18be3a35de25a1))
+- **moves:** fixed zMovePower for Struggle ([f54cda0](https://github.com/favware/graphql-pokemon/commit/f54cda08f92bb7b87cc99e57cb18be3a35de25a1))
 
 ## [4.2.0](https://github.com/favware/graphql-pokemon/compare/v4.1.0...v4.2.0) (2020-06-20)
 
-
 ### Features
 
-* **data:** add flavour texts for Isle of Armor Pokemon (part 1) ([#224](https://github.com/favware/graphql-pokemon/issues/224)) ([558c7c2](https://github.com/favware/graphql-pokemon/commit/558c7c2442b1a35c4987e204a55e86b56767abff))
-* **data:** add flavour texts for Isle of Armor Pokemon (part 2) ([#223](https://github.com/favware/graphql-pokemon/issues/223)) ([46f3a67](https://github.com/favware/graphql-pokemon/commit/46f3a676c22a1b9217de4348483b5d2f084b2484))
-* **data:** add Isle of Armor data ([edaa401](https://github.com/favware/graphql-pokemon/commit/edaa401bfc5d6a54a2a945ebd904fbbd8bcf2366))
-
+- **data:** add flavour texts for Isle of Armor Pokemon (part 1) ([#224](https://github.com/favware/graphql-pokemon/issues/224)) ([558c7c2](https://github.com/favware/graphql-pokemon/commit/558c7c2442b1a35c4987e204a55e86b56767abff))
+- **data:** add flavour texts for Isle of Armor Pokemon (part 2) ([#223](https://github.com/favware/graphql-pokemon/issues/223)) ([46f3a67](https://github.com/favware/graphql-pokemon/commit/46f3a676c22a1b9217de4348483b5d2f084b2484))
+- **data:** add Isle of Armor data ([edaa401](https://github.com/favware/graphql-pokemon/commit/edaa401bfc5d6a54a2a945ebd904fbbd8bcf2366))
 
 ### Bug Fixes
 
-* **abilities:** fixed coaching description ([f480ded](https://github.com/favware/graphql-pokemon/commit/f480ded2cbf02e3da925003ae729bcf5cde0cb30))
+- **abilities:** fixed coaching description ([f480ded](https://github.com/favware/graphql-pokemon/commit/f480ded2cbf02e3da925003ae729bcf5cde0cb30))
 
 ## [4.1.0](https://github.com/favware/graphql-pokemon/compare/v4.0.4...v4.1.0) (2020-06-19)
 
-
 ### Features
 
-* add z-move power ([875b196](https://github.com/favware/graphql-pokemon/commit/875b1968bff6e53158b589b4b35709ca37463c76))
-* max move basepowers ([169eccf](https://github.com/favware/graphql-pokemon/commit/169eccf3eedd1395c8857cc9d950071a52f74f12))
-
+- add z-move power ([875b196](https://github.com/favware/graphql-pokemon/commit/875b1968bff6e53158b589b4b35709ca37463c76))
+- max move basepowers ([169eccf](https://github.com/favware/graphql-pokemon/commit/169eccf3eedd1395c8857cc9d950071a52f74f12))
 
 ### Bug Fixes
 
-* target gen8 dex for ability/item/move pages ([d256511](https://github.com/favware/graphql-pokemon/commit/d25651130039471fca163bc3ed449af1687f66c6))
-* **pokedex:** added missingno sprites ([063ae0f](https://github.com/favware/graphql-pokemon/commit/063ae0fd83046ae21a09de0293ddb0823668a7d8))
+- target gen8 dex for ability/item/move pages ([d256511](https://github.com/favware/graphql-pokemon/commit/d25651130039471fca163bc3ed449af1687f66c6))
+- **pokedex:** added missingno sprites ([063ae0f](https://github.com/favware/graphql-pokemon/commit/063ae0fd83046ae21a09de0293ddb0823668a7d8))
 
 ### [4.0.4](https://github.com/favware/graphql-pokemon/compare/v4.0.3...v4.0.4) (2020-06-14)
 
-
 ### Bug Fixes
 
-* add cosmeticFormes to DexEntry ([9ea20c0](https://github.com/favware/graphql-pokemon/commit/9ea20c0777fbe8f7b872cfe77254ec74acdeede7))
-* target GCP url for schema generation ([1f2174a](https://github.com/favware/graphql-pokemon/commit/1f2174ab1b687ce9a3d2d5f870fcffd0a4da8711))
+- add cosmeticFormes to DexEntry ([9ea20c0](https://github.com/favware/graphql-pokemon/commit/9ea20c0777fbe8f7b872cfe77254ec74acdeede7))
+- target GCP url for schema generation ([1f2174a](https://github.com/favware/graphql-pokemon/commit/1f2174ab1b687ce9a3d2d5f870fcffd0a4da8711))
 
 ### [4.0.3](https://github.com/favware/graphql-pokemon/compare/v4.0.2...v4.0.3) (2020-06-13)
 
-
 ### Features
 
-* **dex:** implement cosmeticFormes ([45c503a](https://github.com/favware/graphql-pokemon/commit/45c503aed920b6e9bcf7f43f0dcdea5de308ad0c))
-
+- **dex:** implement cosmeticFormes ([45c503a](https://github.com/favware/graphql-pokemon/commit/45c503aed920b6e9bcf7f43f0dcdea5de308ad0c))
 
 ### Bug Fixes
 
-* **dexservice:** properly parse data for smogon and serebii page links ([1ca99d8](https://github.com/favware/graphql-pokemon/commit/1ca99d81c4d8a1d8d729cc08fcca54e9a086b95b))
-* **pokedex:** properly add Xerneas Neutral ([dbc579b](https://github.com/favware/graphql-pokemon/commit/dbc579b2f058d4d93ccbfd38a95565f77c9e80fc))
-* **typeservice:** fixed parsing of attacking matchups ([08364b6](https://github.com/favware/graphql-pokemon/commit/08364b64041794ea2ed8c46f5352fbc1213b180a))
+- **dexservice:** properly parse data for smogon and serebii page links ([1ca99d8](https://github.com/favware/graphql-pokemon/commit/1ca99d81c4d8a1d8d729cc08fcca54e9a086b95b))
+- **pokedex:** properly add Xerneas Neutral ([dbc579b](https://github.com/favware/graphql-pokemon/commit/dbc579b2f058d4d93ccbfd38a95565f77c9e80fc))
+- **typeservice:** fixed parsing of attacking matchups ([08364b6](https://github.com/favware/graphql-pokemon/commit/08364b64041794ea2ed8c46f5352fbc1213b180a))
 
 ### [4.0.2](https://github.com/favware/graphql-pokemon/compare/v4.0.1...v4.0.2) (2020-06-08)
 
 ### Features
 
-* update urls across code ([#213](https://github.com/favware/graphql-pokemon/issues/213)) ([4fa2b21](https://github.com/favware/graphql-pokemon/commit/4fa2b21c1eb712dcf13bfcdb4aa807a52a0e3c85))
-
+- update urls across code ([#213](https://github.com/favware/graphql-pokemon/issues/213)) ([4fa2b21](https://github.com/favware/graphql-pokemon/commit/4fa2b21c1eb712dcf13bfcdb4aa807a52a0e3c85))
 
 ### Bug Fixes
 
-* **dexdata:** gloom evolution conditions ([#201](https://github.com/favware/graphql-pokemon/issues/201)) ([#202](https://github.com/favware/graphql-pokemon/issues/202)) ([7fe907d](https://github.com/favware/graphql-pokemon/commit/7fe907d57f264636649ccd7c66ebfb612fa69824))
+- **dexdata:** gloom evolution conditions ([#201](https://github.com/favware/graphql-pokemon/issues/201)) ([#202](https://github.com/favware/graphql-pokemon/issues/202)) ([7fe907d](https://github.com/favware/graphql-pokemon/commit/7fe907d57f264636649ccd7c66ebfb612fa69824))
 
 ### [4.0.1](https://github.com/favware/graphql-pokemon/compare/v4.0.0...v4.0.1) (2020-05-26)
 
-
 ### Bug Fixes
 
-* **data:** properly format farfetch'd and sirfetch'd names ([95a527c](https://github.com/favware/graphql-pokemon/commit/95a527c5b729cc26e908a92ee90b9eff5025eb56))
+- **data:** properly format farfetch'd and sirfetch'd names ([95a527c](https://github.com/favware/graphql-pokemon/commit/95a527c5b729cc26e908a92ee90b9eff5025eb56))
 
 ## [4.0.0](https://github.com/favware/graphql-pokemon/compare/v3.1.1...v4.0.0) (2020-05-18)
 
-
 ### ⚠ BREAKING CHANGES
 
-* TypeGraphQL no longer supports NodeJS versions
-lower than 10.3 so the engine fields in this library have been
-adjusted similarly. You will now need at least NodeJS v12 to
-run this API locally.
-* FuseJS now returns data for their fuzzy searches
-differently. Before the data would be directly on the result, now you'll
-need to access it on the "items" property. This affects all queries for
-this API that return `[JSONObject!]!` as type.
+- TypeGraphQL no longer supports NodeJS versions
+  lower than 10.3 so the engine fields in this library have been
+  adjusted similarly. You will now need at least NodeJS v12 to
+  run this API locally.
+- FuseJS now returns data for their fuzzy searches
+  differently. Before the data would be directly on the result, now you'll
+  need to access it on the "items" property. This affects all queries for
+  this API that return `[JSONObject!]!` as type.
 
 ### Features
 
-* bump FuseJS, TypeGraphql & GraphQL deps ([e9626a1](https://github.com/favware/graphql-pokemon/commit/e9626a171507c60aeab1915cc6801419dcbc9057))
+- bump FuseJS, TypeGraphql & GraphQL deps ([e9626a1](https://github.com/favware/graphql-pokemon/commit/e9626a171507c60aeab1915cc6801419dcbc9057))
 
 ### 3.1.2 (2020-05-16)
 
 ### 3.1.1 (2020-05-04)
 
-
 ### Bug Fixes
 
-* **graphqlset:** fixed LGTM error ([72a748e](https://github.com/favware/graphql-pokemon/commit/72a748e32daa366bab503617bafa45c35278fa9c))
+- **graphqlset:** fixed LGTM error ([72a748e](https://github.com/favware/graphql-pokemon/commit/72a748e32daa366bab503617bafa45c35278fa9c))
 
 ## 3.1.0 (2020-05-03)
 
-
 ### Features
 
-* various updates and fixes ([#184](https://github.com/favware/graphql-pokemon/issues/184)) ([c05c736](https://github.com/favware/graphql-pokemon/commit/c05c7369eaaacfc0356b82039ca9f16d23644e8a))
+- various updates and fixes ([#184](https://github.com/favware/graphql-pokemon/issues/184)) ([c05c736](https://github.com/favware/graphql-pokemon/commit/c05c7369eaaacfc0356b82039ca9f16d23644e8a))
 
 ### 3.0.3 (2020-05-02)
 
@@ -127,22 +113,20 @@ this API that return `[JSONObject!]!` as type.
 
 ### 3.0.1 (2020-04-25)
 
-
 ### Bug Fixes
 
-* references and schema-ast codegen ([#180](https://github.com/favware/graphql-pokemon/issues/180)) ([e3d141a](https://github.com/favware/graphql-pokemon/commit/e3d141ae41c709d037584c9fe6ffe2a5bf9b35be)), closes [#177](https://github.com/favware/graphql-pokemon/issues/177) [#179](https://github.com/favware/graphql-pokemon/issues/179)
+- references and schema-ast codegen ([#180](https://github.com/favware/graphql-pokemon/issues/180)) ([e3d141a](https://github.com/favware/graphql-pokemon/commit/e3d141ae41c709d037584c9fe6ffe2a5bf9b35be)), closes [#177](https://github.com/favware/graphql-pokemon/issues/177) [#179](https://github.com/favware/graphql-pokemon/issues/179)
 
 ## 3.0.0 (2020-04-25)
 
-
 ### ⚠ BREAKING CHANGES
 
-* For the TypeScript typings enums are now replaced with "const enums" and the
-published bundle only includes a .d.ts file.
+- For the TypeScript typings enums are now replaced with "const enums" and the
+  published bundle only includes a .d.ts file.
 
 ### Features
 
-* disable Strict Property Initialization ([39b0983](https://github.com/favware/graphql-pokemon/commit/39b098300fa88c3b831606c62031b409b23bea9b))
+- disable Strict Property Initialization ([39b0983](https://github.com/favware/graphql-pokemon/commit/39b098300fa88c3b831606c62031b409b23bea9b))
 
 ## [1.8.0](https://github.com/favware/graphql-pokemon/compare/v1.7.0...v1.8.0) (2020-02-16)
 

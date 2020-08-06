@@ -1,4 +1,1 @@
-# Favna
-/src/**/* @favna
-/__tests__/**/* @favna
-/scripts/**/* @favna
+/ @favna # Favna is the core developer and is codeowner of all the sourcecode

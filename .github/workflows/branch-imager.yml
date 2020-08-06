@@ -3,7 +3,7 @@ name: Branch Imager
 on:
   push:
     branches-ignore:
-      - master
+      - main
 
 jobs:
   Build:
@@ -55,7 +55,7 @@ jobs:
           name: favware/graphql-pokemon
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: "${{ env.GITHUB_BRANCH_NAME }}"
+          tags: '${{ env.GITHUB_BRANCH_NAME }}'
 
   Github-Package-Registry-Docker:
     name: Publish image to Github Package Registry
@@ -78,5 +78,5 @@ jobs:
           name: favware/graphql-pokemon/graphql-pokemon
           username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
-          tags: "${{ env.GITHUB_BRANCH_NAME }}"
+          tags: '${{ env.GITHUB_BRANCH_NAME }}'
           registry: docker.pkg.github.com

@@ -2,8 +2,8 @@ import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 import Util from '../../src/utils/util';
+import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 
 const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
 const FORMATS_FILE = join(__dirname, '../../src/assets/formats.json');

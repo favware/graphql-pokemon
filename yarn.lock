@@ -860,16 +860,6 @@
     fs-extra "9.0.1"
     tslib "~2.0.0"
 
-"@graphql-tools/delegate@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-6.0.16.tgz#3c6d74d91421c2bf43a8524f63dc15722f3b6f1a"
-  integrity sha512-mq/vTHaBGOWxqKqjkj8KJpH+hg6Y096nZYTLpUZcPf6eX1OhxEIkdw5NDN99ii2/NGAyw7ApoY7BWFEEneiiTg==
-  dependencies:
-    "@ardatan/aggregate-error" "0.0.1"
-    "@graphql-tools/schema" "6.0.16"
-    "@graphql-tools/utils" "6.0.16"
-    tslib "~2.0.0"
-
 "@graphql-tools/delegate@6.0.18":
   version "6.0.18"
   resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-6.0.18.tgz#093e335e346cd26791222e066a3e5929bc38b79c"
@@ -920,14 +910,6 @@
   optionalDependencies:
     vue-template-compiler "^2.6.11"
 
-"@graphql-tools/import@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.0.16.tgz#996aec516d0f9c6272572ac980631ecd524f4e62"
-  integrity sha512-zZRxJwAtUsyIckjfiscteFwpaIuEh3EjuhXEaNviMuwhOSrYT0oWmelcPgp/VHT6N4NZD1/y5jxQ4KHK4MrAfg==
-  dependencies:
-    fs-extra "9.0.1"
-    resolve-from "5.0.0"
-
 "@graphql-tools/import@6.0.18":
   version "6.0.18"
   resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.0.18.tgz#37d434ca2130ee3360446ce3cb0e35d9dc62f68c"
@@ -959,15 +941,6 @@
     tslib "~2.0.0"
     unixify "1.0.0"
     valid-url "1.0.9"
-
-"@graphql-tools/merge@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-6.0.16.tgz#48c38a99c02c1cb93848892b75d7b9b59732187d"
-  integrity sha512-QWeTru5IAON9ruTqs48X3WndRjz4pamTfA90M/RICkgog1LsFbIFhHM2QF+hogoMqxhlhmjgfMjQl7xXtDT+9Q==
-  dependencies:
-    "@graphql-tools/schema" "6.0.16"
-    "@graphql-tools/utils" "6.0.16"
-    tslib "~2.0.0"
 
 "@graphql-tools/merge@6.0.18", "@graphql-tools/merge@^6.0.0", "@graphql-tools/merge@^6.0.18":
   version "6.0.18"
@@ -1016,14 +989,6 @@
     "@graphql-tools/utils" "6.0.18"
     relay-compiler "10.0.1"
 
-"@graphql-tools/schema@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-6.0.16.tgz#778e6eefbc48052538d1f8976b1ecf50e2330e1b"
-  integrity sha512-e5jqE13L5eywCc0Uqlf2ThgScj1KgrCQmwvm+giVK0Dh9goMbwLZt/ciEJSr/LYn/vsH5sec9Qu5Jml6IX7zLA==
-  dependencies:
-    "@graphql-tools/utils" "6.0.16"
-    tslib "~2.0.0"
-
 "@graphql-tools/schema@6.0.18":
   version "6.0.18"
   resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-6.0.18.tgz#243eb370e4cded00767202bbabf0893f65c3f5b9"
@@ -1047,14 +1012,6 @@
     valid-url "1.0.9"
     websocket "1.0.31"
 
-"@graphql-tools/utils@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.16.tgz#f36cadb2638771ff111270711b30daa31be5d6d6"
-  integrity sha512-WSYVqiIpda0CzXgHuKBJkqE0zZs4aruoVxn5KVMmqDoZbPVJ4f/pATVgKYyelOlBlx5gOfs8PCFpWcQhDB39LA==
-  dependencies:
-    "@ardatan/aggregate-error" "0.0.1"
-    camel-case "4.1.1"
-
 "@graphql-tools/utils@6.0.18", "@graphql-tools/utils@^6.0.0", "@graphql-tools/utils@^6.0.18":
   version "6.0.18"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.18.tgz#bba960f0ab327c8304089d41da0b7a3e00fe430f"
@@ -1062,17 +1019,6 @@
   dependencies:
     "@ardatan/aggregate-error" "0.0.1"
     camel-case "4.1.1"
-
-"@graphql-tools/wrap@6.0.16":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-6.0.16.tgz#4a0903a936772599d1c14c4f0f1f1c5d5142fa7f"
-  integrity sha512-Q1VECNmmRygX1qdlGEF6dimAiuX9rauqalJif2zL9Fa4uORSvPr3VxOA8A0+4ypz2QYL+PjqQ88rCATUZxpY9g==
-  dependencies:
-    "@graphql-tools/delegate" "6.0.16"
-    "@graphql-tools/schema" "6.0.16"
-    "@graphql-tools/utils" "6.0.16"
-    aggregate-error "3.0.1"
-    tslib "~2.0.0"
 
 "@graphql-tools/wrap@6.0.18":
   version "6.0.18"
@@ -1272,7 +1218,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@jest/types@^26.2.0", "@jest/types@^26.3.0":
+"@jest/types@^26.3.0":
   version "26.3.0"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-26.3.0.tgz#97627bf4bdb72c55346eef98e3b3f7ddc4941f71"
   integrity sha512-BDPG23U0qDeAvU4f99haztXwdAg3hz4El95LkAM+tHAqqhiVzRpEGHHU8EDxT/AnxOrA65YjLBwDahdJ9pTLJQ==

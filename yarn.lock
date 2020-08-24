@@ -591,7 +591,7 @@
     "@commitlint/types" "^9.1.2"
     lodash "^4.17.19"
 
-"@commitlint/execute-rule@^9.1.1", "@commitlint/execute-rule@^9.1.2":
+"@commitlint/execute-rule@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-9.1.2.tgz#74a77eae50c8d2e5766822061ddf0df1b4f08027"
   integrity sha512-NGbeo0KCVYo1yj9vVPFHv6RGFpIF6wcQxpFYUKGIzZVV9Vz1WyiKS689JXa99Dt1aN0cZlEJJLnTNDIgYls0Vg==
@@ -657,7 +657,7 @@
     fs-extra "^8.1.0"
     git-raw-commits "^2.0.0"
 
-"@commitlint/resolve-extends@^9.1.1", "@commitlint/resolve-extends@^9.1.2":
+"@commitlint/resolve-extends@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-9.1.2.tgz#222dcb73b139b6645cf3ce3bd55db429a98600b3"
   integrity sha512-HcoL+qFGmWEu9VM4fY0HI+VzF4yHcg3x+9Hx6pYFZ+r2wLbnKs964y0v68oyMO/mS/46MVoLNXZGR8U3adpadg==
@@ -689,7 +689,7 @@
   dependencies:
     find-up "^4.0.0"
 
-"@commitlint/types@^9.1.1", "@commitlint/types@^9.1.2":
+"@commitlint/types@^9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.1.2.tgz#d05f66db03e3a3638a654e8badf2deb489eb220d"
   integrity sha512-r3fwVbVH+M8W0qYlBBZFsUwKe6NT5qvz+EmU7sr8VeN1cQ63z+3cfXyTo7WGGEMEgKiT0jboNAK3b1FZp8k9LQ==

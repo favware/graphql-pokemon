@@ -42069,6 +42069,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       whirlpool: ['8M', '4M']
     }
   ],
+  ['gastrodoneast', { earthpower: ['8S0'], icebeam: ['8S0'], protect: ['8S0'], surf: ['8S0'] }],
   [
     'drifloon',
     {

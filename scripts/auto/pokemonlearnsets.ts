@@ -9,11 +9,11 @@ const FILE_PREFIX = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
   '/* eslint-disable max-len */',
   '',
-  "import GraphQLCache from '../utils/GraphQLCache';",
+  "import GraphQLCollection from '../utils/GraphQLCollection';",
   "import type { Pokemon } from '../utils/pokemon';",
   '',
   '/** The learnsets in Pokémon */',
-  'export default new GraphQLCache<string, Pokemon.RecordStringArray>('
+  'export default new GraphQLCollection<string, Pokemon.RecordStringArray>('
 ].join('\n');
 const FILE_SUFFIX = [');', ''].join('\n');
 

@@ -1,8 +1,8 @@
-import GraphQLCache from '../utils/GraphQLCache';
+import GraphQLCollection from '../utils/GraphQLCollection';
 import type { Pokemon } from '../utils/pokemon';
 
 /** The entire PokéDex of Pokémon */
-export default new GraphQLCache<string, Pokemon.DexEntry>([
+export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'bulbasaur',
     {

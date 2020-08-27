@@ -1,7 +1,7 @@
-import { Cache } from '@klasa/cache';
+import Collection from '@discordjs/collection';
 import Util from './util';
 
-export default class GraphQLCache<K extends string, V> extends Cache<K, V> {
+export default class GraphQLCollection<K extends string, V> extends Collection<K, V> {
   private cachedEnumObj!: Record<K, K> | null;
   private cachedSimplifiedEnumObj!: Record<K, K> | null;
 

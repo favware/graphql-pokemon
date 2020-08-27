@@ -1,8 +1,8 @@
-import GraphQLCache from '../utils/GraphQLCache';
+import GraphQLCollection from '../utils/GraphQLCollection';
 import type { Pokemon } from '../utils/pokemon';
 
 /** The item in Pokémon */
-export default new GraphQLCache<string, Pokemon.Item>([
+export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'abomasite',
     {

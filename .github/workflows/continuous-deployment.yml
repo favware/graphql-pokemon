@@ -238,11 +238,6 @@ jobs:
         with:
           name: typescript_bundle
           path: generated/ts/
-      - name: Upload dotnet bundle to artifacts
-        uses: actions/upload-artifact@v2-preview
-        with:
-          name: dotnet_bundle
-          path: generated/dotnet/
 
   NPMPublish:
     name: Publishing release to NPM
@@ -306,39 +301,3 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.BOT_TOKEN }}
-
-  NuGetPublish:
-    name: Publishing release to NuGet
-    runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
-    needs: GenerateTypings
-    env:
-      DOTNET_CLI_TELEMETRY_OPTOUT: true
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Download generated typings artifact
-        uses: actions/download-artifact@v2-preview
-        with:
-          name: dotnet_bundle
-          path: generated/dotnet/
-      - name: Download stored package.json
-        uses: actions/download-artifact@v2-preview
-        with:
-          name: package_bundle
-      - name: Download stored changelog.md
-        uses: actions/download-artifact@v2-preview
-        with:
-          name: changelog_bundle
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 3.1.201
-      - name: Publish to NuGet
-        uses: rohith/publish-nuget@v2
-        with:
-          PROJECT_FILE_PATH: generated/dotnet/Favware.Graphqlpokemon.csproj
-          PACKAGE_NAME: Favware.Graphqlpokemon
-          TAG_COMMIT: false
-          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
-          INCLUDE_SYMBOLS: false

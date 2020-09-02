@@ -20,15 +20,12 @@
     "update": "yarn upgrade-interactive --latest",
     "sversion": "standard-version",
     "codegen": "graphql-codegen",
-    "postcodegen": "run-s typescript:** dotnet:**",
+    "postcodegen": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
     "cloud:start": "node index.js",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
-    "scripts:bumpDotNetVersion": "yarn scripts:runner scripts/bumpDotNetVersion",
+    "au:tiers": "yarn scripts:runner scripts/smogontiers",
     "au:tiers": "yarn scripts:runner scripts/auto/smogontiers",
     "au:learnsets": "yarn scripts:runner scripts/auto/pokemonlearnsets",
-    "typescript:replace-invalid-code": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
-    "dotnet:replace-invalid-code": "replace-in-file /any/g object generated/dotnet/Favware.Graphqlpokemon.cs --isRegex",
-    "dotnet:bump-version": "yarn scripts:bumpDotNetVersion"
   },
   "dependencies": {
     "graphql": "^15.3.0"
@@ -38,7 +35,6 @@
     "@commitlint/config-conventional": "^9.1.2",
     "@favware/eslint-config": "^5.1.2",
     "@favware/ts-config": "^3.0.3",
-    "@graphql-codegen/c-sharp": "^1.17.9",
     "@graphql-codegen/cli": "^1.17.8",
     "@graphql-codegen/schema-ast": "^1.17.8",
     "@graphql-codegen/typescript": "^1.17.9",

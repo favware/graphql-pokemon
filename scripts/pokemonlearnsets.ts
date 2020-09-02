@@ -2,7 +2,7 @@ import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import Util from '../../src/utils/util';
+import Util from '../src/utils/util';
 import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './utils';
 
 const FILE_PREFIX = [
@@ -17,9 +17,9 @@ const FILE_PREFIX = [
 ].join('\n');
 const FILE_SUFFIX = [');', ''].join('\n');
 
-const Ci_DATA_FILE = join(__dirname, 'sha-tracker.json');
-const LEARNSETS_FILE = join(__dirname, '../../src/assets/learnsets.ts');
-const UPDATED_FORMATS_DATA = readJSON(Ci_DATA_FILE) as Promise<DataJSON>;
+const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
+const LEARNSETS_FILE = join(__dirname, '../src/assets/learnsets.ts');
+const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
@@ -61,7 +61,7 @@ const autoUpdateLearnsets = async () => {
 
   const writePromises: Promise<void>[] = [];
 
-  if (data.sha) writePromises.push(writeJSONAtomic(Ci_DATA_FILE, { ...ciData, learnsetsLastSha: data.sha }));
+  if (data.sha) writePromises.push(writeJSONAtomic(CI_DATA_FILE, { ...ciData, learnsetsLastSha: data.sha }));
   if (output.size)
     writePromises.push(writeFileAtomic(LEARNSETS_FILE, `${FILE_PREFIX}${mapToJson(output)}${FILE_SUFFIX}`));
 

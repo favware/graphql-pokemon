@@ -24,8 +24,7 @@
     "cloud:start": "node index.js",
     "scripts:runner": "ts-node -P tsconfig.eslint.json",
     "au:tiers": "yarn scripts:runner scripts/smogontiers",
-    "au:tiers": "yarn scripts:runner scripts/auto/smogontiers",
-    "au:learnsets": "yarn scripts:runner scripts/auto/pokemonlearnsets",
+    "au:learnsets": "yarn scripts:runner scripts/pokemonlearnsets"
   },
   "dependencies": {
     "graphql": "^15.3.0"

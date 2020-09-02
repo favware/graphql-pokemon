@@ -2,11 +2,11 @@ import { constants, Timestamp } from '@klasa/timestamp';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import Util from '../../src/utils/util';
+import Util from '../src/utils/util';
 import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 
 const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
-const FORMATS_FILE = join(__dirname, '../../src/assets/formats.json');
+const FORMATS_FILE = join(__dirname, '../src/assets/formats.json');
 const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
 const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);

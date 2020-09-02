@@ -1,5 +1,5 @@
 overwrite: true
-schema: https://graphql-pokemon-3zp3jiiega-ew.a.run.app/
+schema: http://localhost:4000
 generates:
   ./generated/ts/graphql-pokemon.d.ts:
     plugins:

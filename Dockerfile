@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY package.json ./
 COPY yarn.lock ./
 
-RUN yarn install --frozen-lockfile --no-bin-links --link-duplicates
+RUN yarn install --frozen-lockfile --link-duplicates
 
 COPY generated/api .
 

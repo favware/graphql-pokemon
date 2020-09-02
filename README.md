@@ -61,7 +61,6 @@
 - Docker images of the API for private hosting published to
   - [Dockerhub] as `favware/graphql-pokemon`
   - [GitHub Package Registry] as `docker.pkg.github.com/favware/graphql-pokemon/graphql-pokemon`
-  - [Google Cloud Container Registry] as `gcr.io/data-sunlight-146313/graphql-pokemon:latest`
 - Provides information about various assets in Pokémon
   - Pokédex
   - Items
@@ -271,4 +270,3 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
 [github package registry]: https://github.com/favware/graphql-pokemon/packages
 [dockerhub]: https://hub.docker.com/r/favware/graphql-pokemon
-[google cloud container registry]: https://gcr.io/data-sunlight-146313/graphql-pokemon

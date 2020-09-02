@@ -104,10 +104,11 @@ jobs:
         with:
           build: src
       - name: Upload API bundle to artifacts
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: api_bundle
           path: generated/api/
+          if-no-files-found: error
 
   Dockerhub:
     name: Publish image to Dockerhub
@@ -118,7 +119,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Download build bundle artifact
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: api_bundle
           path: generated/api/
@@ -139,7 +140,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Download build bundle artifact
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: api_bundle
           path: generated/api/
@@ -179,10 +180,11 @@ jobs:
           && sleep 5 \
           && yarn codegen
       - name: Upload typescript bundle to artifacts
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: typescript_bundle
           path: generated/ts/
+          if-no-files-found: error
 
   GithubPublish:
     name: Publishing release to Github
@@ -218,15 +220,17 @@ jobs:
         if: "!contains(github.event.head_commit.message, '[skip bump]')"
         run: yarn sversion
       - name: Store bumped package.json
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: package_bundle
           path: package.json
+          if-no-files-found: error
       - name: Store bumped changelog.md
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: changelog_bundle
           path: CHANGELOG.md
+          if-no-files-found: error
       - name: Push changes
         if: "!contains(github.event.head_commit.message, '[skip bump]')"
         run: git push --follow-tags origin main
@@ -245,16 +249,16 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - name: Download generated typings artifact
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: typescript_bundle
           path: generated/ts/
       - name: Download stored package.json
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: changelog_bundle
       - name: Publish to NPM
@@ -277,16 +281,16 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@favware'
       - name: Download generated typings artifact
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: typescript_bundle
           path: generated/ts/
       - name: Download stored package.json
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: changelog_bundle
       - name: Publish to Github

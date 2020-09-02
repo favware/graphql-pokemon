@@ -29,10 +29,11 @@ jobs:
         with:
           build: src
       - name: Upload API bundle to artifacts
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: api_bundle
           path: generated/api/
+          if-no-files-found: error
 
   Dockerhub:
     name: Publish image to Dockerhub

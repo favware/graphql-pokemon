@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0](https://github.com/favware/graphql-pokemon/compare/v4.2.5...v4.3.0) (2020-09-02)
+
+
+### Features
+
+* remove nuget publish ([6db4d4c](https://github.com/favware/graphql-pokemon/commit/6db4d4ce3cd1891e1ac3a27dd9e30711fa472e54))
+
 ### [4.2.5](https://github.com/favware/graphql-pokemon/compare/v4.2.4...v4.2.5) (2020-08-20)
 
 ### [4.2.4](https://github.com/favware/graphql-pokemon/compare/v4.2.3...v4.2.4) (2020-08-06)

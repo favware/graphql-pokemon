@@ -152,11 +152,43 @@ jobs:
           tags: 'latest,stable,master,main'
           registry: docker.pkg.github.com
 
+  GenerateTypings:
+    name: Generate TypeScript, SDL and C# type information
+    runs-on: ubuntu-latest
+    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
+    needs: [Dockerhub, Github-Package-Registry-Docker]
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Install NodeJS Dependencies
+        run: yarn
+      - name: Generate GraphQL Schema code
+        run: yarn
+      - name: Generate GraphQL Schema code
+        run: |
+          docker container run --name pokedex -d --expose 4000 -p 4000:8080 -it favware/graphql-pokemon:latest \
+          && sleep 5 \
+          && yarn codegen
+      - name: Upload typescript bundle to artifacts
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: typescript_bundle
+          path: generated/ts/
+
   GithubPublish:
     name: Publishing release to Github
     runs-on: ubuntu-latest
     if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
-    needs: [Dockerhub]
+    needs: GenerateTypings
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -199,51 +231,11 @@ jobs:
         if: "!contains(github.event.head_commit.message, '[skip bump]')"
         run: git push --follow-tags origin main
 
-  GenerateTypings:
-    name: Generate TypeScript, SDL and C# type information
-    runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
-    needs: GithubPublish
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Use Node.js 12
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Restore CI Cache
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
-      - name: Install NodeJS Dependencies
-        run: yarn
-      - name: Download stored package.json
-        uses: actions/download-artifact@v2-preview
-        with:
-          name: package_bundle
-      - name: Download stored changelog.md
-        uses: actions/download-artifact@v2-preview
-        with:
-          name: changelog_bundle
-      - name: Generate GraphQL Schema code
-        run: yarn
-      - name: Generate GraphQL Schema code
-        run: |
-          docker container run --name pokedex -d --expose 8080 -p 8080:8080 -it favware/graphql-pokemon:latest \
-          && sleep 5 \
-          && yarn codegen
-      - name: Upload typescript bundle to artifacts
-        uses: actions/upload-artifact@v2-preview
-        with:
-          name: typescript_bundle
-          path: generated/ts/
-
   NPMPublish:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
     if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
-    needs: GenerateTypings
+    needs: GithubPublish
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -274,7 +266,7 @@ jobs:
     name: Publishing release to Github Package Registry
     runs-on: ubuntu-latest
     if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
-    needs: GenerateTypings
+    needs: GithubPublish
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

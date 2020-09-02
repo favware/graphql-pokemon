@@ -15,14 +15,3 @@ generates:
       - schema-ast
     config:
       commentDescriptions: true
-  ./generated/dotnet/Favware.Graphqlpokemon.cs:
-    plugins:
-      - c-sharp
-    config:
-      className: Graphqlpokemon
-      namingConvention: keep
-      enumValues:
-        Abilities:
-          static: '_'
-        Moves:
-          return: '_'

@@ -46,7 +46,6 @@
 **Typings**
 
 [![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=TypeScript%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
-[![nuget](https://img.shields.io/nuget/v/Favware.Graphqlpokemon?color=blue&label=.NET%20Core%20version&logo=nuget&style=flat-square)](https://www.nuget.org/packages/Favware.Graphqlpokemon/)
 
 ---
 
@@ -57,7 +56,6 @@
 - Fully generated client-side TypeScript typings published to
   - [npm] as `@favware/graphql-pokemon`
   - [GitHub Package Registry] as `@favware/graphql-pokemon`
-- Fully generated client-side .NET Core typings published to [nuget]
 - Docker images of the API for private hosting published to
   - [Dockerhub] as `favware/graphql-pokemon`
   - [GitHub Package Registry] as `docker.pkg.github.com/favware/graphql-pokemon/graphql-pokemon`
@@ -71,8 +69,6 @@
 
 # Installation
 
-## NodeJS
-
 Install client side typings from [yarn] or [npm]:
 
 ```sh
@@ -82,12 +78,6 @@ yarn add -D @favware/graphql-pokemon
 ```sh
 npm install -D @favware/graphql-pokemon
 ```
-
-## .NET Core
-
-Install client side typings from [NuGet].
-
-Search `Favware.Graphqlpokemon` in your NuGet manager and install it from there
 
 ---
 
@@ -196,22 +186,6 @@ export const Pokemon: React.FC = () => {
 };
 ```
 
-## .NET Core
-
-_**More can be added here in due time, this is open for contribution by someone who is more familiarized with .NET.**_
-
-```cs
-using GraphQLCodeGen;
-
-namespace MyProject.Consumer
-{
-  public class GraphqlConsumer
-  {
-    private Graphqlpokemon.Abilities Abilities;
-  }
-}
-```
-
 # Meta
 
 ## License
@@ -265,7 +239,6 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [`node-fetch`]: https://github.com/node-fetch/node-fetch
 [`fetch api`]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [the graphql playground on the api]: https://graphqlpokemon.favware.tech
-[nuget]: https://www.nuget.org/packages/Favware.Graphqlpokemon/
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
 [github package registry]: https://github.com/favware/graphql-pokemon/packages

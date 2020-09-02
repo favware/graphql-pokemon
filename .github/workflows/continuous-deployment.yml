@@ -152,37 +152,11 @@ jobs:
           tags: 'latest,stable,master,main'
           registry: docker.pkg.github.com
 
-  GCloud:
-    name: Publish image to Google Cloud Platform
-    runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip ci]') ||contains(github.event.head_commit.message, '[skip docker]'))"
-    needs: Build
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Download build bundle artifact
-        uses: actions/download-artifact@v2-preview
-        with:
-          name: api_bundle
-          path: generated/api/
-      - name: Setup GCloud SDK
-        uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
-        with:
-          service_account_key: ${{ secrets.GCLOUD_KEY }}
-      - name: Configure gcloud
-        run: gcloud auth configure-docker
-      - name: Build Docker image
-        run: docker build . --tag gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon
-      - name: Push Docker image
-        run: docker push gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon
-      - name: Deploy latest image to Google Cloud Run
-        run: gcloud run deploy graphql-pokemon --image gcr.io/${{ secrets.GCLOUD_PROJECT }}/graphql-pokemon --region=europe-west1 --project=${{ secrets.GCLOUD_PROJECT }} --platform=managed --allow-unauthenticated
-
   GithubPublish:
     name: Publishing release to Github
     runs-on: ubuntu-latest
     if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip publish]'))"
-    needs: [Dockerhub, GCloud]
+    needs: [Dockerhub]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

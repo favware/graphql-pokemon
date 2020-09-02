@@ -227,7 +227,12 @@ jobs:
         with:
           name: changelog_bundle
       - name: Generate GraphQL Schema code
-        run: yarn codegen
+        run: yarn
+      - name: Generate GraphQL Schema code
+        run: |
+          docker container run --name pokedex -d --expose 8080 -p 8080:8080 -it favware/graphql-pokemon:latest \
+          && sleep 5 \
+          && yarn codegen
       - name: Upload typescript bundle to artifacts
         uses: actions/upload-artifact@v2-preview
         with:

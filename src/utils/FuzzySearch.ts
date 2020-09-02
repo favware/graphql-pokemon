@@ -1,4 +1,4 @@
-import Collection from '@discordjs/collection';
+import type Collection from '@discordjs/collection';
 import Fuse from 'fuse.js/dist/fuse.basic.min.js';
 
 export default class FuzzySearch<K extends string, V> {

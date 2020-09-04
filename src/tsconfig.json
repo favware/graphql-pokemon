@@ -8,6 +8,5 @@
     "sourceMap": false,
     "importsNotUsedAsValues": "error"
   },
-  "include": ["./**/*.ts", "./**/*.json"],
-  "exclude": ["./tsconfig.json"]
+  "include": ["./**/*.ts", "./assets/**/*.json"]
 }

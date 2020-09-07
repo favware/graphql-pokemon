@@ -1,8 +1,8 @@
 import { constants, Timestamp } from '@klasa/timestamp';
+import { green, red, yellow } from 'colorette';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
-import Util from '../src/utils/util';
 import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 
 const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
@@ -23,13 +23,13 @@ const autoUpdateSmogonTiers = async () => {
 
   const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
   if (!data) {
-    Util.kConsole.error('no data from request');
+    console.error(red('no data from request'));
 
     return process.exit(1);
   }
 
   if (data.sha === ciData.tiersLastSha) {
-    Util.kConsole.info('Fetched data but no new commit was available');
+    console.info(yellow('Fetched data but no new commit was available'));
 
     return process.exit(0);
   }
@@ -52,7 +52,7 @@ const autoUpdateSmogonTiers = async () => {
 
   await Promise.all(writePromises);
 
-  Util.kConsole.log(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`);
+  console.log(green(`Successfully wrote updated formats data to file; Latest SHA ${data.sha}`));
 
   return process.exit(0);
 };

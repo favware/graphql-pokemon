@@ -173,8 +173,6 @@ jobs:
       - name: Install NodeJS Dependencies
         run: yarn
       - name: Generate GraphQL Schema code
-        run: yarn
-      - name: Generate GraphQL Schema code
         run: |
           docker container run --name pokedex -d --expose 4000 -p 4000:8080 -it favware/graphql-pokemon:latest \
           && sleep 5 \

@@ -1,6 +1,6 @@
-import { ApolloServer } from 'apollo-server-express';
-import express from 'express';
+import { ApolloServer } from 'apollo-server-koa';
 import type { GraphQLSchema } from 'graphql';
+import Koa from 'koa';
 import { buildSchemaSync, registerEnumType } from 'type-graphql';
 import { abilities } from './arguments/AbilityPaginatedArgs';
 import { pokemons } from './arguments/ExactPokemonPaginatedArgs';
@@ -46,9 +46,9 @@ export const buildGqlSchema = (): GraphQLSchema => {
   });
 };
 
-const gqlServer = (): ReturnType<typeof express> => {
+const gqlServer = (): Koa<Koa.DefaultState, Koa.DefaultContext> => {
   const schema = buildGqlSchema();
-  const app = express();
+  const app = new Koa();
   const apolloServer = new ApolloServer({
     schema,
     introspection: true,

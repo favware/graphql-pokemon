@@ -15,17 +15,15 @@
 **Table of Contents**
 
 - [Installation](#installation)
-  - [NodeJS](#nodejs)
-  - [.NET Core](#net-core)
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
-  - [NodeJS](#nodejs-1)
-    - [With browser Fetch API or node-fetch](#with-browser-fetch-api-or-node-fetch)
-    - [With Apollo Client React](#with-apollo-client-react)
-  - [.NET Core](#net-core-1)
+  - [NodeJS](#nodejs)
+    - [With browser [`Fetch API`] or [`node-fetch`]](#with-browser-fetch-api-or-node-fetch)
+    - [With [`Apollo Client React`]](#with-apollo-client-react)
 - [Meta](#meta)
   - [License](#license)
   - [Buy us a donut](#buy-us-a-donut)
+  - [Contributors ✨](#contributors-%E2%9C%A8)
 
 ---
 

@@ -6253,7 +6253,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The target immediately uses its last used move. Fails if the target has not made a move, if the move has 0 PP, if the target is preparing to use Beak Blast, Focus Punch, or Shell Trap, or if the move is Assist, Beak Blast, Belch, Bide, Celebrate, Copycat, Dynamax Cannon, Focus Punch, Ice Ball, Instruct, King's Shield, Me First, Metronome, Mimic, Mirror Move, Nature Power, Outrage, Petal Dance, Rollout, Shell Trap, Sketch, Sleep Talk, Struggle, Thrash, Transform, Uproar, any two-turn move, any recharge move, or any Z-Move.",
+        "The target immediately uses its last used move. Fails if the target has not made a move, if the move has 0 PP, if the target is Dynamaxed, if the target is preparing to use Beak Blast, Focus Punch, or Shell Trap, or if the move is Assist, Beak Blast, Belch, Bide, Celebrate, Copycat, Dynamax Cannon, Focus Punch, Ice Ball, Instruct, King's Shield, Me First, Metronome, Mimic, Mirror Move, Nature Power, Outrage, Petal Dance, Rollout, Shell Trap, Sketch, Sleep Talk, Struggle, Thrash, Transform, Uproar, any two-turn move, any recharge move, any Z-Move, or any Max or G-Max Move.",
       shortDesc: 'The target immediately uses its last used move.',
       name: 'Instruct',
       pp: 15,
@@ -11528,6 +11528,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       category: 'Status',
       shortDesc: "Target's foes' moves are redirected to it this turn.",
       name: 'Spotlight',
+      isNonstandard: 'Past',
       pp: 15,
       priority: 3,
       target: 'Normal',
@@ -11863,8 +11864,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'The user eats its Berry and raises its Defense by 2 stages. This effect is not prevented by the Klutz or Unnerve Abilities, or the effects of Embargo or Magic Room. Fails if the user is not holding a Berry.',
-      shortDesc: 'User eats its Berry and raises its Defense by 2.',
+        'This move cannot be selected unless the user is holding a Berry. The user eats its Berry and raises its Defense by 2 stages. This effect is not prevented by the Klutz or Unnerve Abilities, or the effects of Embargo or Magic Room. Fails if the user is not holding a Berry.',
+      shortDesc: 'Must hold Berry to use. User eats Berry, Def +2.',
       name: 'Stuff Cheeks',
       pp: 10,
       priority: 0,

@@ -1,8 +1,9 @@
 ---
 name: Question / General support request
 about: Ask for help in Discord instead - https://join.favware.tech
-title: ''
-assignees: ''
+title: 'Question: '
+labels: 'Type: Question'
+assignees: 'favna'
 ---
 
 Seriously, we only use this issue tracker for bugs in the library itself and feature requests for it.

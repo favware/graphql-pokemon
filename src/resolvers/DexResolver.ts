@@ -29,7 +29,7 @@ export default class DexResolver {
     @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
-    const detailsEntry = this.dexService.findBySpeciesWithDetails(
+    const detailsEntry = await this.dexService.findBySpeciesWithDetails(
       {
         pokemon,
         skip,
@@ -88,7 +88,7 @@ export default class DexResolver {
       pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].item.species);
     }
 
-    const detailsEntry = this.dexService.findBySpeciesWithDetails(
+    const detailsEntry = await this.dexService.findBySpeciesWithDetails(
       {
         pokemon,
         skip,

@@ -1,11 +1,17 @@
-name: Label Sync
+name: Automatic Label Sync
 
 on:
   issues:
   label:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/labels.yml'
 
 jobs:
-  labeler:
+  label_sync:
+    name: Automatic Label Synchronization
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project

@@ -1593,10 +1593,24 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa@*", "@types/koa@^2.0.46", "@types/koa@^2.11.4":
+"@types/koa@*", "@types/koa@^2.0.46":
   version "2.11.4"
   resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.11.4.tgz#8af02a069a9f8e08fa47b8da28d982e652f69cfb"
   integrity sha512-Etqs0kdqbuAsNr5k6mlZQelpZKVwMu9WPRHVVTLnceZlhr0pYmblRNJbCgoCMzKWWePldydU0AYEOX4Q9fnGUQ==
+  dependencies:
+    "@types/accepts" "*"
+    "@types/content-disposition" "*"
+    "@types/cookies" "*"
+    "@types/http-assert" "*"
+    "@types/http-errors" "*"
+    "@types/keygrip" "*"
+    "@types/koa-compose" "*"
+    "@types/node" "*"
+
+"@types/koa@^2.11.5":
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.11.5.tgz#a2b81382bf65d72bdc3bd906abdee259fefdebc2"
+  integrity sha512-egP+ceD3+v9PnFW+DLTFO8mt6wa5sDqfGOBIwOAZ61Wzsq4bGZc5kMpJgcCwq7ARGIBfHBY+KkK/1RsMftV/qQ==
   dependencies:
     "@types/accepts" "*"
     "@types/content-disposition" "*"
@@ -1642,7 +1656,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^14.11.8", "@types/node@^14.6.0":
+"@types/node@*":
   version "14.11.8"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.8.tgz#fe2012f2355e4ce08bca44aeb3abbb21cf88d33f"
   integrity sha512-KPcKqKm5UKDkaYPTuXSx8wEP7vE9GnuaXIZKijwRYcePpZFDVuy2a57LarFKiORbHOuTOOwYzxVxcUzsh2P2Pw==
@@ -1651,6 +1665,11 @@
   version "10.17.39"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.39.tgz#ce1122758d0608de8303667cebf171f44192629b"
   integrity sha512-dJLCxrpQmgyxYGcl0Ae9MTsQgI22qHHcGFj/8VKu7McJA5zQpnuGjoksnxbo1JxSjW/Nahnl13W8MYZf01CZHA==
+
+"@types/node@^14.11.10", "@types/node@^14.11.2":
+  version "14.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.10.tgz#8c102aba13bf5253f35146affbf8b26275069bef"
+  integrity sha512-yV1nWZPlMFpoXyoknm4S56y2nlTAuFYaJuQtYRAOU7xA/FJ9RY0Xm7QOkaYMMmr8ESdHIuUb6oQgR/0+2NqlyA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -5967,10 +5986,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.4.0:
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.4.0.tgz#d18628f737328e0bbbf87d183f4020930e9a984e"
-  integrity sha512-uaiX4U5yERUSiIEQc329vhCTDDwUcSvKdRLsNomkYLRzijk3v8V9GWm2Nz0RMVB87VcuzLvtgy6OsjoH++QHIg==
+lint-staged@^10.4.2:
+  version "10.4.2"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.4.2.tgz#9fee4635c4b5ddb845746f237c6d43494ccd21c1"
+  integrity sha512-OLCA9K1hS+Sl179SO6kX0JtnsaKj/MZalEhUj5yAgXsb63qPI/Gfn6Ua1KuZdbfkZNEu3/n5C/obYCu70IMt9g==
   dependencies:
     chalk "^4.1.0"
     cli-truncate "^2.1.0"
@@ -7179,10 +7198,10 @@ pretty-format@^26.5.2:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-pretty-quick@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/pretty-quick/-/pretty-quick-3.0.2.tgz#7ed460f7e43a647b1044ad8b7f41a0c8a7f1c51c"
-  integrity sha512-4rWOs/Ifdkg7G/YX7Xbco4jZkuXPx445KdhuMI6REnl3nXRDb9+zysb29c76R59jsJzcnkcpAaGi8D/RjAVfSQ==
+pretty-quick@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pretty-quick/-/pretty-quick-3.1.0.tgz#cb172e9086deb57455dea7c7e8f136cd0a4aef6c"
+  integrity sha512-DtxIxksaUWCgPFN7E1ZZk4+Aav3CCuRdhrDSFZENb404sYMtuo9Zka823F+Mgeyt8Zt3bUiCjFzzWYE9LYqkmQ==
   dependencies:
     chalk "^3.0.0"
     execa "^4.0.0"
@@ -8595,13 +8614,13 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-type-graphql@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/type-graphql/-/type-graphql-1.0.0.tgz#7413fd5ff959f1a738615ecfad6e2ca2d68572bf"
-  integrity sha512-ejXSEmqewrv9MX/0XOSKBc7utjrF6N0UeZJQ0w/R/Ene4Or9/cA+8iLQnuqgBDlNpXIdcq4rSvrk3mUMAIqOQA==
+type-graphql@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/type-graphql/-/type-graphql-1.1.0.tgz#e6b04853d65458621a3001f04e44965b09127f5d"
+  integrity sha512-dsh8C0uhbHiFHLJAc9uCWDRMLTHarCNNfYOEz46WJFkVP+eYOV311DKfH8yPtM5xQpHP+B4l49AQpFebkItVHw==
   dependencies:
     "@types/glob" "^7.1.3"
-    "@types/node" "^14.6.0"
+    "@types/node" "^14.11.2"
     "@types/semver" "^7.3.3"
     glob "^7.1.6"
     graphql-query-complexity "^0.7.0"

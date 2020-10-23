@@ -6714,6 +6714,34 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Pink',
       prevo: 'slowpoke',
       evoLevel: "Trade while holding King's Rock",
+      eggGroups: ['Monster', 'Water 1'],
+      otherFormes: ['slowking-galar']
+    }
+  ],
+  [
+    'slowkinggalar',
+    {
+      species: 'slowking-galar',
+      baseSpecies: 'Slowking',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 145,
+      types: ['Poison', 'Psychic'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      baseStats: {
+        hp: 95,
+        atk: 65,
+        def: 80,
+        spa: 110,
+        spd: 110,
+        spe: 30
+      },
+      abilities: { first: 'Curious Medicine', second: 'Own Tempo', hidden: 'Regenerator' },
+      heightm: 1.8,
+      weightkg: 79.5,
+      color: 'Pink',
+      prevo: 'slowpokegalar',
+      evoLevel: "Trade while holding King's Rock",
       eggGroups: ['Monster', 'Water 1']
     }
   ],

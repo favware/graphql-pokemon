@@ -34,8 +34,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Adamant Orb',
       gen: 4,
-      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
-      isNonstandard: 'Past'
+      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.'
     }
   ],
   [
@@ -374,7 +373,6 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Burn Drive',
       gen: 5,
-      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Fire type."
     }
   ],
@@ -475,7 +473,6 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Chill Drive',
       gen: 5,
-      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Ice type."
     }
   ],
@@ -592,8 +589,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Custap Berry',
       gen: 4,
-      desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
-      isNonstandard: 'Unobtainable'
+      desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.'
     }
   ],
   [
@@ -705,7 +701,6 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Douse Drive',
       gen: 5,
-      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Water type."
     }
   ],
@@ -900,8 +895,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Enigma Berry',
       gen: 3,
-      desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.',
-      isNonstandard: 'Unobtainable'
+      desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.'
     }
   ],
   [
@@ -1322,8 +1316,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Griseous Orb',
       gen: 4,
-      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
-      isNonstandard: 'Past'
+      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.'
     }
   ],
   [
@@ -1553,8 +1546,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Jaboca Berry',
       gen: 4,
-      desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
-      isNonstandard: 'Unobtainable'
+      desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.'
     }
   ],
   [
@@ -1821,8 +1813,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Lustrous Orb',
       gen: 4,
-      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
-      isNonstandard: 'Past'
+      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.'
     }
   ],
   [
@@ -2782,8 +2773,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Rowap Berry',
       gen: 4,
-      desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
-      isNonstandard: 'Unobtainable'
+      desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.'
     }
   ],
   [
@@ -2942,7 +2932,6 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Shock Drive',
       gen: 5,
-      isNonstandard: 'Past',
       desc: "Holder's Techno Blast is Electric type."
     }
   ],

@@ -479,6 +479,20 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'astralbarrage',
+    {
+      accuracy: 100,
+      basePower: '120',
+      category: 'Special',
+      shortDesc: 'No additional effect. Hits adjacent foes.',
+      name: 'Astral Barrage',
+      pp: 5,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Ghost'
+    }
+  ],
+  [
     'astonish',
     {
       accuracy: 100,
@@ -2766,6 +2780,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'dragonenergy',
+    {
+      accuracy: 100,
+      basePower: '150',
+      category: 'Special',
+      desc: "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+      shortDesc: "Less power as user's HP decreases. Hits foe(s).",
+      name: 'Dragon Energy',
+      pp: 5,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Dragon'
+    }
+  ],
+  [
     'dragonhammer',
     {
       accuracy: 100,
@@ -3087,6 +3116,20 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Electric',
       contestType: 'Clever'
+    }
+  ],
+  [
+    'eeriespell',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      shortDesc: "Removes 3 PP from the target's last move.",
+      name: 'Eerie Spell',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Psychic'
     }
   ],
   [
@@ -3610,6 +3653,20 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Fire',
       contestType: 'Beautiful',
       maxMovePower: 130
+    }
+  ],
+  [
+    'fierywrath',
+    {
+      accuracy: 100,
+      basePower: '90',
+      category: 'Special',
+      shortDesc: 'Hits foe(s). 20% chance to flinch each foe.',
+      name: 'Fiery Wrath',
+      pp: 10,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Dark'
     }
   ],
   [
@@ -4231,6 +4288,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'freezingglare',
+    {
+      accuracy: 100,
+      basePower: '90',
+      category: 'Special',
+      desc: 'Has a 10% chance to freeze the target.',
+      shortDesc: '10% chance to freeze the target.',
+      name: 'Freezing Glare',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Psychic'
+    }
+  ],
+  [
     'freezyfrost',
     {
       accuracy: 90,
@@ -4519,6 +4591,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Electric',
       contestType: 'Cool'
+    }
+  ],
+  [
+    'glaciallance',
+    {
+      accuracy: 100,
+      basePower: '130',
+      category: 'Physical',
+      desc: 'No additional effect.',
+      shortDesc: 'No additional effect. Hits adjacent foes.',
+      name: 'Glacial Lance',
+      pp: 5,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Ice'
     }
   ],
   [
@@ -7745,7 +7832,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "A random move is selected for use, other than After You, Apple Acid, Assist, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Clangorous Soul, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Double Iron Bash, Dragon Ascent, Drum Beating, Dynamax Cannon, Endure, Eternabeam, False Surrender, Feint, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Grav Apple, Helping Hand, Hold Hands, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, King's Shield, Life Dew, Light of Ruin, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Obstruct, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Shell Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Spectral Thief, Spiky Shield, Spirit Break, Spotlight, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Switcheroo, Techno Blast, Thief, Thousand Arrows, Thousand Waves, Transform, Trick, V-create, or Wide Guard.",
+        "A random move is selected for use, other than After You, Apple Acid, Assist, Astral Barrage, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Clangorous Soul, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Double Iron Bash, Dragon Ascent, Dragon Energy, Drum Beating, Dynamax Cannon, Endure, Eternabeam, False Surrender, Feint, Fiery Wrath, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Freezing Glare, Glacial Lance, Grav Apple, Helping Hand, Hold Hands, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, Jungle Healing, King's Shield, Life Dew, Light of Ruin, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Obstruct, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Shell Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Spectral Thief, Spiky Shield, Spirit Break, Spotlight, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Surging Strikes, Switcheroo, Techno Blast, Thief, Thousand Arrows, Thousand Waves, Thunder Cage, Thunderous Kick, Transform, Trick, V-create, Wicked Blow, Wide Guard",
       shortDesc: 'Picks a random move.',
       name: 'Metronome',
       pp: 10,
@@ -12589,7 +12676,6 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       name: 'Techno Blast',
       pp: 5,
       priority: 0,
-      isNonstandard: 'Past',
       target: 'Normal',
       type: 'Normal',
       contestType: 'Cool',
@@ -12779,6 +12865,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'thundercage',
+    {
+      accuracy: 90,
+      basePower: '80',
+      category: 'Special',
+      desc:
+        'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
+      shortDesc: 'Traps and damages the target for 4-5 turns.',
+      name: 'Thunder Cage',
+      pp: 15,
+      priority: 0,
+      target: 'Normal',
+      type: 'Electric'
+    }
+  ],
+  [
     'thunderfang',
     {
       accuracy: 95,
@@ -12792,6 +12894,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Electric',
       contestType: 'Cool',
       maxMovePower: 120
+    }
+  ],
+  [
+    'thunderouskick',
+    {
+      accuracy: 100,
+      basePower: '90',
+      category: 'Physical',
+      desc: "Has a 100% chance to lower the target's Defense by 1 stage.",
+      shortDesc: "Lowers the target's Defense by 1.",
+      name: 'Thunderous Kick',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fighting'
     }
   ],
   [

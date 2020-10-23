@@ -27954,7 +27954,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         spd: 130,
         spe: 50
       },
-      abilities: { first: 'As One' },
+      abilities: { first: 'As One (Glastrier)' },
       heightm: 2.4,
       weightkg: 809.1,
       color: 'White',
@@ -27980,7 +27980,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         spd: 100,
         spe: 150
       },
-      abilities: { first: 'As One' },
+      abilities: { first: 'As One (Spectrier)' },
       heightm: 2.4,
       weightkg: 53.6,
       color: 'Black',

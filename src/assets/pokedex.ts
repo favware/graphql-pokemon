@@ -3154,7 +3154,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.2,
       weightkg: 36,
       color: 'Pink',
-      evos: ['slowbrogalar'],
+      evos: ['slowbrogalar', 'slowkinggalar'],
       eggGroups: ['Monster', 'Water 1']
     }
   ],
@@ -5232,6 +5232,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.7,
       weightkg: 55.4,
       color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['articunogalar']
+    }
+  ],
+  [
+    'articunogalar',
+    {
+      species: 'articuno-galar',
+      baseSpecies: 'Articuno',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 144,
+      types: ['Psychic', 'Flying'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 90,
+        atk: 85,
+        def: 85,
+        spa: 125,
+        spd: 100,
+        spe: 95
+      },
+      abilities: { first: 'Competitive' },
+      heightm: 1.7,
+      weightkg: 50.9,
+      color: 'Purple',
       eggGroups: ['Undiscovered']
     }
   ],
@@ -5253,6 +5279,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       abilities: { first: 'Pressure', hidden: 'Static' },
       heightm: 1.6,
       weightkg: 52.6,
+      color: 'Yellow',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['zapdos-galar']
+    }
+  ],
+  [
+    'zapdosgalar',
+    {
+      species: 'zapdos-galar',
+      baseSpecies: 'Zapdos',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 145,
+      types: ['Fighting', 'Flying'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 90,
+        atk: 125,
+        def: 90,
+        spa: 85,
+        spd: 90,
+        spe: 100
+      },
+      abilities: { first: 'Defiant' },
+      heightm: 1.6,
+      weightkg: 58.2,
       color: 'Yellow',
       eggGroups: ['Undiscovered']
     }
@@ -5276,6 +5328,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 2,
       weightkg: 60,
       color: 'Yellow',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['moltres-galar']
+    }
+  ],
+  [
+    'moltresgalar',
+    {
+      species: 'moltres-galar',
+      baseSpecies: 'Moltres',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 146,
+      types: ['Dark', 'Flying'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 90,
+        atk: 85,
+        def: 90,
+        spa: 100,
+        spd: 125,
+        spe: 90
+      },
+      abilities: { first: 'Berserk' },
+      heightm: 2,
+      weightkg: 66,
+      color: 'Red',
       eggGroups: ['Undiscovered']
     }
   ],

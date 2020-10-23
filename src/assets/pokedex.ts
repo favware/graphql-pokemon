@@ -27930,7 +27930,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       abilities: { first: 'Unnerve' },
       heightm: 1.1,
       weightkg: 7.7,
-      color: 'Yellow',
+      color: 'Calyrex',
       eggGroups: ['Undiscovered'],
       otherFormes: ['calyrex-ice', 'calyrex-shadow']
     }
@@ -27969,7 +27969,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       types: ['Psychic', 'Ghost'],
       baseSpecies: 'Calyrex',
       formeLetter: 'CS',
-      forme: 'Ice',
+      forme: 'Shadow',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
         hp: 100,

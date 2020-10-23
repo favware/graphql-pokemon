@@ -350,8 +350,10 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>([
   ['rime', { alias: 'rime', name: 'Mr. Rime' }],
   ['zanianc', { alias: 'zanianc', name: 'Zacian-Crowned' }],
   ['zamazentac', { alias: 'zamazentac', name: 'Zamazenta-Crowned' }],
-  ['urshifurs', { alias: 'urshifurs', name: 'Urshifu-Rapid-Style' }],
-  ['urshifurapid', { alias: 'urshifurapid', name: 'Urshifu-Rapid-Style' }],
+  ['urshifurs', { alias: 'urshifurs', name: 'Urshifu-Rapid-Strike' }],
+  ['urshifurapid', { alias: 'urshifurapid', name: 'Urshifu-Rapid-Strike' }],
+  ['calyrexir', { alias: 'calyrexir', name: 'Calyrex-Ice' }],
+  ['calyrexsr', { alias: 'calyrexsr', name: 'Calyrex-Shadow' }],
   ['nidoranfemale', { alias: 'nidoranfemale', name: 'Nidoran-F' }],
   ['nidoranmale', { alias: 'nidoranmale', name: 'Nidoran-M' }],
   ['wormadamgrass', { alias: 'wormadamgrass', name: 'Wormadam' }],
@@ -1377,6 +1379,8 @@ export const pokedexAliases = new GraphQLCollection<string, Pokemon.DexAlias>([
 
 /** Aliases for Pokémon abilities */
 export const abilityAliases = new GraphQLCollection<string, Pokemon.AbilityAlias>([
+  ['asoneglastrier', { alias: 'asoneglastrier', ability: 'As One (Glastrier)' }],
+  ['asonespectrier', { alias: 'asonespectrier', ability: 'As One (Spectrier)' }],
   ['ph', { alias: 'ph', ability: 'Poison Heal' }],
   ['stag', { alias: 'stag', ability: 'Shadow Tag' }]
 ]);

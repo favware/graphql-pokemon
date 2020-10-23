@@ -78,13 +78,6 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     }
   ],
   [
-    'asone',
-    {
-      shortDesc: 'The combination of Unnerve and Chilling/Grim Neigh.',
-      name: 'As One'
-    }
-  ],
-  [
     'asoneasoneglastrier',
     {
       shortDesc: 'The combination of Unnerve and Chilling Neigh.',

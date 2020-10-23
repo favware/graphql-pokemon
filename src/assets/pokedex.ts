@@ -28618,6 +28618,28 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
     }
   ],
   [
+    'miasmaw',
+    {
+      num: -57,
+      species: 'miasmaw',
+      types: ['Bug', 'Dragon'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 85,
+        atk: 135,
+        def: 60,
+        spa: 115,
+        spd: 85,
+        spe: 89
+      },
+      abilities: { first: 'Neutralizing Gas', hidden: 'Compound Eyes' },
+      heightm: 1.2,
+      weightkg: 57,
+      color: 'Green',
+      eggGroups: ['Bug', 'Dragon']
+    }
+  ],
+  [
     'syclar',
     {
       species: 'syclar',

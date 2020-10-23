@@ -27719,6 +27719,167 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
     }
   ],
   [
+    'regieleki',
+    {
+      species: 'Regieleki',
+      num: 894,
+      types: ['Electric'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 80,
+        atk: 100,
+        def: 50,
+        spa: 100,
+        spd: 50,
+        spe: 200
+      },
+      abilities: { first: 'Transistor' },
+      heightm: 1.2,
+      weightkg: 145,
+      color: 'Yellow',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'regidrago',
+    {
+      species: 'Regidrago',
+      num: 895,
+      types: ['Dragon'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 200,
+        atk: 100,
+        def: 50,
+        spa: 100,
+        spd: 50,
+        spe: 80
+      },
+      abilities: { first: "Dragon's Maw" },
+      heightm: 2.1,
+      weightkg: 200,
+      color: 'Green',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'glastrier',
+    {
+      species: 'Glastrier',
+      num: 896,
+      types: ['Ice'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 145,
+        def: 130,
+        spa: 65,
+        spd: 110,
+        spe: 30
+      },
+      abilities: { first: 'Chilling Neigh' },
+      heightm: 2.2,
+      weightkg: 800,
+      color: 'White',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'spectrier',
+    {
+      species: 'Spectrier',
+      num: 897,
+      types: ['Ghost'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 65,
+        def: 60,
+        spa: 145,
+        spd: 80,
+        spe: 130
+      },
+      abilities: { first: 'Grim Neigh' },
+      heightm: 2,
+      weightkg: 44.5,
+      color: 'Black',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'calyrex',
+    {
+      species: 'Calyrex',
+      num: 898,
+      types: ['Psychic', 'Grass'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 80,
+        def: 80,
+        spa: 80,
+        spd: 80,
+        spe: 80
+      },
+      abilities: { first: 'Unnerve' },
+      heightm: 1.1,
+      weightkg: 7.7,
+      color: 'Yellow',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['Calyrex-Ice', 'Calyrex-Shadow']
+    }
+  ],
+  [
+    'calyrexice',
+    {
+      species: 'Calyrex-Ice',
+      num: 898,
+      types: ['Psychic', 'Ice'],
+      baseSpecies: 'Calyrex',
+      forme: 'Ice',
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 165,
+        def: 150,
+        spa: 85,
+        spd: 130,
+        spe: 50
+      },
+      abilities: { first: 'As One' },
+      heightm: 2.4,
+      weightkg: 809.1,
+      color: 'White',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['Calyrex-Shadow']
+    }
+  ],
+  [
+    'calyrexshadow',
+    {
+      species: 'Calyrex-Shadow',
+      num: 898,
+      types: ['Psychic', 'Ghost'],
+      baseSpecies: 'Calyrex',
+      forme: 'Ice',
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 85,
+        def: 80,
+        spa: 165,
+        spd: 100,
+        spe: 150
+      },
+      abilities: { first: 'As One' },
+      heightm: 2.4,
+      weightkg: 53.6,
+      color: 'Black',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['Calyrex-Ice']
+    }
+  ],
+  [
     'syclant',
     {
       species: 'syclant',

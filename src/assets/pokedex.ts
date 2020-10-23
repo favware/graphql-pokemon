@@ -5281,7 +5281,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 52.6,
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['zapdos-galar']
+      otherFormes: ['zapdosgalar']
     }
   ],
   [
@@ -5329,7 +5329,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 60,
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['moltres-galar']
+      otherFormes: ['moltresgalar']
     }
   ],
   [
@@ -6715,7 +6715,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'slowpoke',
       evoLevel: "Trade while holding King's Rock",
       eggGroups: ['Monster', 'Water 1'],
-      otherFormes: ['slowking-galar']
+      otherFormes: ['slowkinggalar']
     }
   ],
   [
@@ -27669,7 +27669,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 0.6,
       weightkg: 12,
       color: 'Gray',
-      evos: ['urshifu', 'urshifu-rapid-strike'],
+      evos: ['urshifu', 'urshifurapidstrike'],
       eggGroups: ['Undiscovered']
     }
   ],
@@ -27694,7 +27694,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Gray',
       prevo: 'Kubfu',
       evoLevel: 'Defeat the Single Strike Tower',
-      otherFormes: ['urshifu-rapid-strike', 'urshifu-gmax'],
+      otherFormes: ['urshifurapidstrike', 'urshifugmax'],
       eggGroups: ['Undiscovered']
     }
   ],
@@ -27722,7 +27722,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Gray',
       prevo: 'Kubfu',
       evoLevel: 'Defeat the Rapid Strike Tower',
-      otherFormes: ['urshifu', 'urshifu-rapid-strike-gmax'],
+      otherFormes: ['urshifu', 'urshifurapidstrikegmax'],
       eggGroups: ['Undiscovered']
     }
   ],
@@ -27802,7 +27802,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'zarudedada',
     {
-      species: 'zarudedada',
+      species: 'zarude-dada',
       num: 893,
       types: ['Dark', 'Grass'],
       baseSpecies: 'zarude',
@@ -27932,7 +27932,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 7.7,
       color: 'Calyrex',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['calyrex-ice', 'calyrex-shadow']
+      otherFormes: ['calyrexice', 'calyrexshadow']
     }
   ],
   [
@@ -27958,7 +27958,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 809.1,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['calyrex-shadow']
+      otherFormes: ['calyrexshadow']
     }
   ],
   [
@@ -27984,7 +27984,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 53.6,
       color: 'Black',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['calyrex-ice']
+      otherFormes: ['calyrexice']
     }
   ],
   [

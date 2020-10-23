@@ -27547,7 +27547,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'kubfu',
     {
-      species: 'Kubfu',
+      species: 'kubfu',
       num: 891,
       types: ['Fighting'],
       genderRatio: { male: 0.875, female: 0.125 },
@@ -27570,7 +27570,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'urshifu',
     {
-      species: 'Urshifu',
+      species: 'urshifu',
       num: 892,
       types: ['Fighting', 'Dark'],
       genderRatio: { male: 0.875, female: 0.125 },
@@ -27595,7 +27595,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'urshifurapidstrike',
     {
-      species: 'Urshifu-Rapid-Strike',
+      species: 'urshifu-rapid-strike',
       num: 892,
       types: ['Fighting', 'Water'],
       baseSpecies: 'Urshifu',
@@ -27673,7 +27673,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'zarude',
     {
-      species: 'Zarude',
+      species: 'zarude',
       num: 893,
       types: ['Dark', 'Grass'],
       genderRatio: { male: 0, female: 0 },
@@ -27689,14 +27689,14 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.8,
       weightkg: 70,
       color: 'Green',
-      otherFormes: ['zarude-dada'],
+      otherFormes: ['zarudedada'],
       eggGroups: ['Undiscovered']
     }
   ],
   [
     'zarudedada',
     {
-      species: 'Zarude-Dada',
+      species: 'zarudedada',
       num: 893,
       types: ['Dark', 'Grass'],
       baseSpecies: 'zarude',
@@ -27721,7 +27721,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'regieleki',
     {
-      species: 'Regieleki',
+      species: 'regieleki',
       num: 894,
       types: ['Electric'],
       genderRatio: { male: 0, female: 0 },
@@ -27743,7 +27743,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'regidrago',
     {
-      species: 'Regidrago',
+      species: 'regidrago',
       num: 895,
       types: ['Dragon'],
       genderRatio: { male: 0, female: 0 },
@@ -27765,7 +27765,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'glastrier',
     {
-      species: 'Glastrier',
+      species: 'glastrier',
       num: 896,
       types: ['Ice'],
       genderRatio: { male: 0, female: 0 },
@@ -27787,7 +27787,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'spectrier',
     {
-      species: 'Spectrier',
+      species: 'spectrier',
       num: 897,
       types: ['Ghost'],
       genderRatio: { male: 0, female: 0 },
@@ -27809,7 +27809,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'calyrex',
     {
-      species: 'Calyrex',
+      species: 'calyrex',
       num: 898,
       types: ['Psychic', 'Grass'],
       genderRatio: { male: 0, female: 0 },
@@ -27826,16 +27826,17 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 7.7,
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['Calyrex-Ice', 'Calyrex-Shadow']
+      otherFormes: ['calyrex-ice', 'calyrex-shadow']
     }
   ],
   [
     'calyrexice',
     {
-      species: 'Calyrex-Ice',
+      species: 'calyrex-ice',
       num: 898,
       types: ['Psychic', 'Ice'],
       baseSpecies: 'Calyrex',
+      formeLetter: 'CI',
       forme: 'Ice',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
@@ -27851,16 +27852,17 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 809.1,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['Calyrex-Shadow']
+      otherFormes: ['calyrex-shadow']
     }
   ],
   [
     'calyrexshadow',
     {
-      species: 'Calyrex-Shadow',
+      species: 'calyrex-shadow',
       num: 898,
       types: ['Psychic', 'Ghost'],
       baseSpecies: 'Calyrex',
+      formeLetter: 'CS',
       forme: 'Ice',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
@@ -27876,7 +27878,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 53.6,
       color: 'Black',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['Calyrex-Ice']
+      otherFormes: ['calyrex-ice']
     }
   ],
   [

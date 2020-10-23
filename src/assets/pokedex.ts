@@ -20113,7 +20113,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         'Vivillon-Savanna',
         'Vivillon-Sun',
         'Vivillon-Tundra'
-      ]
+      ],
+      otherFormes: ['vivillonfancy', 'vivillonpokeball']
     }
   ],
   [

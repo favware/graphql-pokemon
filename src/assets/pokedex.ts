@@ -28620,7 +28620,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'miasmaw',
     {
-      num: -57,
+      num: -59,
       species: 'miasmaw',
       types: ['Bug', 'Dragon'],
       genderRatio: { male: 0, female: 0 },

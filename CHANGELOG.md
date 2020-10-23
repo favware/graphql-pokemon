@@ -4,20 +4,18 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [4.3.0](https://github.com/favware/graphql-pokemon/compare/v4.2.5...v4.3.0) (2020-09-02)
 
-
 ### Features
 
-* remove nuget publish ([6db4d4c](https://github.com/favware/graphql-pokemon/commit/6db4d4ce3cd1891e1ac3a27dd9e30711fa472e54))
+- remove nuget publish ([6db4d4c](https://github.com/favware/graphql-pokemon/commit/6db4d4ce3cd1891e1ac3a27dd9e30711fa472e54))
 
 ### [4.2.5](https://github.com/favware/graphql-pokemon/compare/v4.2.4...v4.2.5) (2020-08-20)
 
 ### [4.2.4](https://github.com/favware/graphql-pokemon/compare/v4.2.3...v4.2.4) (2020-08-06)
 
-
 ### Bug Fixes
 
-* cover data changes ([1fa2f7f](https://github.com/favware/graphql-pokemon/commit/1fa2f7f0d3a27fc8fffadee3dbaf814bb1d54243))
-* resolve security vulnerability CVE-2020-8203 ([9133413](https://github.com/favware/graphql-pokemon/commit/91334135c40a58094225b7033f87337e0d6722f8))
+- cover data changes ([1fa2f7f](https://github.com/favware/graphql-pokemon/commit/1fa2f7f0d3a27fc8fffadee3dbaf814bb1d54243))
+- resolve security vulnerability CVE-2020-8203 ([9133413](https://github.com/favware/graphql-pokemon/commit/91334135c40a58094225b7033f87337e0d6722f8))
 
 ### [4.2.3](https://github.com/favware/graphql-pokemon/compare/v4.2.2...v4.2.3) (2020-07-05)
 

@@ -1440,6 +1440,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'burningjealousy',
+    {
+      accuracy: 100,
+      basePower: '70',
+      category: 'Special',
+      desc: 'Has a 100% chance to burn the target if it had a stat stage raised this turn.',
+      shortDesc: '100% burns a target that had a stat rise this turn.',
+      name: 'Burning Jealousy',
+      pp: 5,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Fire',
+      contestType: 'Tough'
+    }
+  ],
+  [
     'burnup',
     {
       accuracy: 100,
@@ -1750,6 +1766,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Fighting',
       contestType: 'Tough',
       maxMovePower: 95
+    }
+  ],
+  [
+    'coaching',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      desc: "Raises the target's Attack and Defense by 1 stage. Fails if there is no ally adjacent to the user.",
+      shortDesc: "Raises an ally's Attack and Defense by 1.",
+      name: 'Coaching',
+      pp: 10,
+      priority: 0,
+      target: 'Adjacent Ally',
+      type: 'Fighting'
     }
   ],
   [
@@ -2964,6 +2995,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'dualwingbeat',
+    {
+      accuracy: 90,
+      basePower: '40',
+      category: 'Physical',
+      desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+      shortDesc: 'Hits 2 times in one turn.',
+      name: 'Dual Wingbeat',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Flying'
+    }
+  ],
+  [
     'dynamaxcannon',
     {
       accuracy: 100,
@@ -3271,6 +3317,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Dragon',
       maxMovePower: 150
+    }
+  ],
+  [
+    'expandingforce',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokemon and has its power multiplied by 1.5.',
+      shortDesc: 'User on Psychic Terrain: 1.5x power, hits foes.',
+      name: 'Expanding Force',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Psychic'
     }
   ],
   [
@@ -3898,6 +3959,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Dark',
       contestType: 'Cute',
       maxMovePower: 100
+    }
+  ],
+  [
+    'flipturn',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Physical',
+      desc:
+        'If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.',
+      shortDesc: 'User switches out after damaging the target.',
+      name: 'Flip Turn',
+      pp: 20,
+      priority: 0,
+      target: 'Normal',
+      type: 'Water'
     }
   ],
   [
@@ -7629,6 +7706,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'meteorbeam',
+    {
+      accuracy: 90,
+      basePower: '120',
+      category: 'Special',
+      desc:
+        "This attack charges on the first turn and executes on the second. Raises the user's Special Attack by 1 stage on the first turn. If the user is holding a Power Herb, the move completes in one turn.",
+      shortDesc: "Raises user's Sp. Atk by 1 on turn 1. Hits turn 2.",
+      name: 'Meteor Beam',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Rock'
+    }
+  ],
+  [
     'meteormash',
     {
       accuracy: 90,
@@ -7833,6 +7926,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Psychic',
       contestType: 'Clever',
       maxMovePower: 120
+    }
+  ],
+  [
+    'mistyexplosion',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Special',
+      desc:
+        "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+      shortDesc: 'User faints. User on Misty Terrain: 1.5x power.',
+      name: 'Misty Explosion',
+      pp: 5,
+      priority: 0,
+      target: 'All Adjacent',
+      type: 'Fairy'
     }
   ],
   [
@@ -8861,6 +8970,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'poltergeist',
+    {
+      accuracy: 90,
+      basePower: '110',
+      category: 'Physical',
+      desc:
+        "This move fails if the target doesn't have an item or is afflicted with Embargo. Additionally, this move fails if Magic Room is up, or the target has the ability Klutz and is not holding an item that ignores Klutz.",
+      shortDesc: 'Fails if the target has no item.',
+      name: 'Poltergeist',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Ghost'
+    }
+  ],
+  [
     'pound',
     {
       accuracy: 100,
@@ -9734,6 +9859,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'risingvoltage',
+    {
+      accuracy: 100,
+      basePower: '70',
+      category: 'Special',
+      desc: "If the current terrain is Electric Terrain and the target is grounded, this move's power is doubled.",
+      shortDesc: '2x power if target is grounded in Electric Terrain.',
+      name: 'Rising Voltage',
+      pp: 20,
+      priority: 0,
+      target: 'Normal',
+      type: 'Electric',
+      maxMovePower: 140
+    }
+  ],
+  [
     'roar',
     {
       accuracy: 100,
@@ -10158,6 +10299,22 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'scaleshot',
+    {
+      accuracy: 90,
+      basePower: '25',
+      category: 'Physical',
+      desc:
+        "Hits two to five times. Lowers the user's Defense by 1 stage and raises the user's Speed by 1 stage after the last hit. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+      shortDesc: 'Hits 2-5 times. User: -1 Def, +1 Spe after last hit.',
+      name: 'Scale Shot',
+      pp: 20,
+      priority: 0,
+      target: 'Normal',
+      type: 'Dragon'
+    }
+  ],
+  [
     'scaryface',
     {
       accuracy: 100,
@@ -10517,6 +10674,23 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Ice',
       contestType: 'Beautiful',
       maxMovePower: 130
+    }
+  ],
+  [
+    'shellsidearm',
+    {
+      accuracy: 100,
+      basePower: '90',
+      category: 'Special',
+      desc:
+        "Has a 20% chance to poison the target. This move becomes a physical attack that makes contact if the value of ((((2 * the user's level / 5 + 2) * 90 * X) / Y) / 50), where X is the user's Attack stat and Y is the target's Defense stat, is greater than the same value where X is the user's Special Attack stat and Y is the target's Special Defense stat. No stat modifiers other than stat stage changes are considered for this purpose. If the two values are equal, this move chooses a damage category at random.",
+      shortDesc: '20% poison. Phys+contact if it would be stronger.',
+      name: 'Shell Side Arm',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Poison',
+      contestType: 'Tough'
     }
   ],
   [
@@ -11615,6 +11789,21 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     }
   ],
   [
+    'steelroller',
+    {
+      accuracy: 100,
+      basePower: '130',
+      category: 'Physical',
+      desc: 'Fails if there is no terrain active. Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.',
+      shortDesc: 'Ends the effects of terrain; fails if none is active.',
+      name: 'Steel Roller',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Steel'
+    }
+  ],
+  [
     'steelwing',
     {
       accuracy: 90,
@@ -12065,6 +12254,23 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Water',
       contestType: 'Beautiful',
       maxMovePower: 130
+    }
+  ],
+  [
+    'surgingstrikes',
+    {
+      accuracy: 100,
+      basePower: '25',
+      category: 'Physical',
+      desc: 'Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
+      shortDesc: 'Always results in a critical hit. Hits 3 times.',
+      name: 'Surging Strikes',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Water',
+      maxMovePower: 130,
+      zMovePower: 140
     }
   ],
   [

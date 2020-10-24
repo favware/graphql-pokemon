@@ -58833,6 +58833,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Whether or not it's a Pokémon from this world is a mystery. When it's in a jam, it warps away to a safe place to hide."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon came from another universe. Its gaseous body is so light that even a gentle breeze can blow it away."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Cosmog is very curious but not very cautious, often placing itself in danger. If things start to look dicey, it teleports away."
     }
   ],
   "790": [
@@ -58851,6 +58859,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "As it absorbs light, Cosmoem continues to grow. Its golden shell is surprisingly solid."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The absorption of starlight fuels this Pokémon's growth. The shell that encases it is harder than any known material."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It sucks in dust from the air at an astounding rate, frantically building up energy within its core as preparation for evolution."
     }
   ],
   "791": [
@@ -58869,6 +58885,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "In writings from the distant past, it's called by the name “the beast that devours the sun.”"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When light radiates from its body, this Pokémon could almost appear to be the sun. It will dispel any darkness and light up the world."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Solgaleo was once known as the Beast That Devours the Sun. Energy in the form of light radiates boundlessly from it."
     }
   ],
   "792": [
@@ -58887,6 +58911,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sometimes summons unknown powers and life-forms here to this world from holes that lead to other worlds."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Known as the Beast That Calls the Moon, this Pokémon lives by taking in any and all light and converting it into its own energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It steals the light from its surroundings and then becomes the full moon, showering its own light across the night sky."
     }
   ],
   "793": [
@@ -59031,6 +59063,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Light is the source of its energy. If it isn't devouring light, impurities build up in it and on it, and Necrozma darkens and stops moving."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It survives by absorbing light. After a long time spent slumbering underground, impurities accumulated within it, causing its body to darken."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It needs light to survive, and it goes on a rampage seeking it out. Its laser beams will cut anything to pieces."
     }
   ],
   "800dusk-mane": [
@@ -59041,6 +59081,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This is Necrozma's form while it's absorbing the power of Solgaleo, making it extremely ferocious and impossible to control."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When it dominates Solgaleo, it takes on this form. It's a vicious Pokémon, mangling prey with its many claws, including those on its back."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Necrozma has attached itself to Solgaleo. It siphons away its host's limitless energy, exploiting that energy to fuel a rampage."
     }
   ],
   "800dawn-wings": [
@@ -59051,6 +59099,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This is its form while it's devouring the light of Lunala. It grasps foes in its giant claws and rips them apart with brute force."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Necrozma has subjugated Lunala entirely, forcing the unfortunate Pokémon to emit its light energy for Necrozma to consume."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When Necrozma latches on to Lunala, it becomes vicious, seeing enemies everywhere it looks. It will burn the world with lasers."
     }
   ],
   "800ultra": [
@@ -59115,6 +59171,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sinks into the shadows of people and Pokémon, where it can understand their feelings and copy their capabilities."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "By slipping into the shadow of a martial arts master and copying their movements, this Pokémon learned the ultimate techniques."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon can conceal itself in any shadow, so it went undiscovered for a long time."
     }
   ],
   "803": [
@@ -59165,6 +59229,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It runs as fast as lightning strikes, shredding its opponents with its high-voltage claws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Electricity sparks from the pads on its limbs. Wherever Zeraora runs, lightning flashes and thunder echoes."
     }
   ],
   "808": [

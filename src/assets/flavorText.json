@@ -3867,6 +3867,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It uses its hard incisor teeth to crush and eat berries. The tip of a female Nidoran’s horn is a bit more rounded than the tip of a male’s horn."
     }
   ],
   "30": [
@@ -3973,6 +3981,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "If the group is threatened, these Pokémon will band together to assault enemies with a chorus of ultrasonic waves."
     }
   ],
   "31": [
@@ -4079,6 +4095,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It pacifies offspring by placing them in the gaps between the spines on its back. The spines will never secrete poison while young are present."
     }
   ],
   "32": [
@@ -4185,6 +4209,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Small but brave, this Pokémon will hold its ground and even risk its life in battle to protect the female it’s friendly with."
     }
   ],
   "33": [
@@ -4291,6 +4323,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s nervous and quick to act aggressively. The potency of its poison increases along with the level of adrenaline present in its body."
     }
   ],
   "34": [
@@ -5367,6 +5407,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Emits ultrasonic cries while it flies. They act as a sonar used to check for objects in its way."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Zubat live in caves, down where the sun’s light won’t reach. In the morning, they gather together to keep each other warm as they sleep."
     }
   ],
   "42": [
@@ -5489,6 +5537,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and to suck blood."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its feet are tiny, but this Pokémon walks skillfully. It sneaks up on sleeping prey before sinking in its fangs and slurping up blood."
     }
   ],
   "43": [
@@ -16093,6 +16149,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Appears to move to a rhythm of its own, as if it were dancing. It wiggles its hips as it walks."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The Jynx of Galar often have beautiful and delicate voices. Some of these Pokémon have even gathered a fan base."
     }
   ],
   "125": [
@@ -16215,6 +16279,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "If a major power outage occurs, it is certain that this Pokémon has eaten electricity at a power plant."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Many power plants keep Ground-type Pokémon around as a defense against Electabuzz that come seeking electricity."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "With the coming of a storm, many of these Pokémon will gather under tall trees and sit there waiting for lightning to strike."
     }
   ],
   "126": [
@@ -16337,6 +16409,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Born in an active volcano. Its body is always cloaked in flames, so it looks like a big ball of fire."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Magmar dispatches its prey with fire. But it regrets this habit once it realizes that it has burned its intended prey to a charred crisp."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon’s bodies are constantly burning. Magmar are feared as one of the causes behind fires."
     }
   ],
   "127": [
@@ -18195,6 +18275,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A Pokémon that was recovered from a fossil. It used the eyes on its back while hiding on the seafloor."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This species is almost entirely extinct. Kabuto molt every three days, making their shells harder and harder."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While some say this species has gone extinct, Kabuto sightings are apparently fairly common in some places."
     }
   ],
   "141": [
@@ -18309,6 +18397,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A slim and fast swimmer. It sliced its prey with its sharp sickles and drank the body fluids."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Kabutops slices its prey apart and sucks out the fluids. The discarded body parts become food for other Pokémon."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The cause behind the extinction of this species is unknown. Kabutops were aggressive Pokémon that inhabited warm seas."
     }
   ],
   "142": [
@@ -18431,6 +18527,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A savage Pokémon that died out in ancient times. It was resurrected using DNA taken from amber."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Aerodactyl’s sawlike fangs can shred skin to tatters—even the skin of Steel-type Pokémon."
     }
   ],
   "142mega": [
@@ -18703,6 +18807,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon can control ice at will. Articuno is said to live in snowy mountains riddled with permafrost."
+    }
+  ],
+  "144galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its feather-like blades are composed of psychic energy and can shear through thick iron sheets as if they were paper."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Known as Articuno, this Pokémon fires beams that can immobilize opponents as if they had been frozen solid."
     }
   ],
   "145": [
@@ -18809,6 +18931,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Zapdos is a legendary bird Pokémon. It’s said that when Zapdos rubs its feathers together, lightning will fall immediately after."
+    }
+  ],
+  "145galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "When its feathers rub together, they produce a crackling sound like the zapping of electricity. That’s why this Pokémon is called Zapdos."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "One kick from its powerful legs will pulverize a dump truck. Supposedly, this Pokémon runs through the mountains at over 180 mph."
     }
   ],
   "146": [
@@ -18915,6 +19055,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "There are stories of this Pokémon using its radiant, flame-cloaked wings to light up paths for those lost in the mountains."
+    }
+  ],
+  "146galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon’s sinister, flame-like aura will consume the spirit of any creature it hits. Victims become burned-out shadows of themselves."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The sinister aura that blazes like molten fire around this Pokémon is what inspired the name Moltres."
     }
   ],
   "147": [
@@ -19037,6 +19195,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Long thought to be a myth, this Pokémon's existence was only recently confirmed by a fisherman who caught one."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon was long considered to be no more than a myth. The small lump on a Dratini’s forehead is actually a horn that’s still coming in."
     }
   ],
   "148": [
@@ -19159,6 +19325,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "According to a witness, its body was surrounded by a strange aura that gave it a mystical look."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon gathers power in the orbs on its tail and controls the weather. When enshrouded by an aura, Dragonair has a mystical appearance."
     }
   ],
   "149": [
@@ -19281,6 +19455,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It is said that this Pokémon lives somewhere in the sea and that it flies. However, these are only rumors."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is known as the Sea Incarnate. Figureheads that resemble Dragonite decorate the bows of many ships."
     }
   ],
   "150": [
@@ -21165,6 +21347,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It feeds on the blood of living people and Pokémon. If it can't drink any blood for even a short while, it becomes weak and unable to fly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Both of its legs have turned into wings. Without a sound, Crobat flies swiftly toward its prey and sinks its fangs into the nape of its target’s neck."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon flaps its four wings skillfully. Crobat can fly through cramped caves without needing to slow down."
     }
   ],
   "170": [
@@ -24147,6 +24337,16 @@
     {
       "version_id": "Shield",
       "flavor_text": "Slowking can solve any problem present to it, but no one can understand a thing Slowking says."
+    }
+  ],
+  "199galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "A combination of toxins and the shock of evolving has increased Shellder’s intelligence to the point that Shellder now controls Slowking."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While chanting strange spells, this Pokémon combines its internal toxins with what it’s eaten, creating strange potions."
     }
   ],
   "200": [
@@ -27941,6 +28141,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Highly perceptive sensors, Smoochum's lips are kept moist by its daily application of tree sap."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "If its face gets even slightly dirty, Smoochum will bathe immediately. But if its body gets dirty, Smoochum doesn’t really seem to care."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This is a very curious Pokémon. Smoochum decides what it likes and dislikes by touching things with its lips."
     }
   ],
   "239": [
@@ -28043,6 +28251,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When its horns shine a bluish white, that's the sign it's fully charged. You'll get a shocking jolt if you touch it!"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When a storm approaches, this Pokémon gets restless. Once Elekid hears the sound of thunder, it gets full-on rowdy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s not good at storing electricity yet. This Pokémon sneaks into people’s homes, looking for electrical outlets to eat electricity from."
     }
   ],
   "240": [
@@ -28145,6 +28361,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its body temperature is always around 1,100 degrees Fahrenheit. If Magby falls into a small- enough pond, the whole thing will dry up."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is still small and timid. Whenever Magby gets excited or surprised, flames leak from its mouth and its nose."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon makes its home near volcanoes. At the end of the day, Magby soaks in magma, resting and recovering from the day’s fatigue."
     }
   ],
   "241": [

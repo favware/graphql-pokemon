@@ -59247,6 +59247,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It melts particles of iron and other metals found in the subsoil, so it can absorb them into its body of molten steel."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It dissolves and eats metal. Circulating liquid metal within its body is how it generates energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "They live as a group, but when the time comes, one strong Meltan will absorb all the others and evolve."
     }
   ],
   "809": [
@@ -59257,6 +59265,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Revered long ago for its capacity to create iron from nothing, for some reason it has come back to life after 3,000 years"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "At the end of its life-span, Melmetal will rust and fall apart. The small shards left behind will eventually be reborn as Meltan."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Centrifugal force is behind the punches of Melmetal's heavy hex-nut arms. Melmetal is said to deliver the strongest punches of all Pokémon."
+    }
+  ],
+  "809gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "In a distant land, there are legends about a cyclopean giant. In fact, the giant was a Melmetal that was flooded with Gigantamax energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It can send electric beams streaking out from the hole in its belly. The beams' tremendous energy can vaporize an opponent in one shot."
     }
   ],
   "810": [

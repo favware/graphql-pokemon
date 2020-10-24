@@ -55749,6 +55749,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Tyrunt is spoiled and selfish. It may just be trying to frolic, but sometimes the ones it's trying to frolic with are gravely injured."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This is an ancient Pokémon, revived in modern times. It has a violent disposition, and it’ll tear apart anything it gets between its hefty jaws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is selfish and likes to be pampered. It can also inflict grievous wounds on its Trainer just by playing around."
     }
   ],
   "697": [
@@ -55775,6 +55783,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The king of the ancient world, it can easily crunch a car with the devastating strength of its enormous jaws."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is from about 100,000,000 years ago. It has the presence of a king, vicious but magnificent."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "A single bite of Tyrantrum’s massive jaws will demolish a car. This Pokémon was the king of the ancient world."
     }
   ],
   "698": [
@@ -55801,6 +55817,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Amaura was restored successfully, but it's not expected to live long because of the heat of the current environment."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was successfully restored from a fossil. In the past, it lived with others of its kind in cold lands where there were fewer predators."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Amaura is an ancient Pokémon that has gone extinct. Specimens of this species can sometimes be found frozen in ice."
     }
   ],
   "699": [
@@ -55827,6 +55851,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around –240 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Aurorus was restored from a fossil. It’s said that when this Pokémon howls, auroras appear in the night sky."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When gripped by rage, Aurorus will emanate freezing air, covering everything around it in ice."
     }
   ],
   "700": [
@@ -55971,6 +56003,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "To keep the jewels on their bodies free of tarnish, packs of Carbink use their soft manes to polish one another's jewels."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When beset by attackers, Carbink wipes them all out by firing high-energy beams from the gems embedded in its body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s said that somewhere in the world, there’s a mineral vein housing a large pack of slumbering Carbink. It’s also said that this pack has a queen."
     }
   ],
   "704": [

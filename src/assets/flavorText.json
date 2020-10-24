@@ -60404,5 +60404,75 @@
       "version_id": "Shield",
       "flavor_text": "This Zarude's special strength stems from its love and care for an orphaned human child that the Pokémon has raised since the child's infancy."
     }
+  ],
+  "894": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is a cluster of electrical energy. It’s said that removing the rings on Regieleki’s body will unleash the Pokémon’s latent power."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its entire body is made up of a single organ that generates electrical energy. Regieleki is capable of creating all Galar’s electricity."
+    }
+  ],
+  "895": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "An academic theory proposes that Regidrago’s arms were once the head of an ancient dragon Pokémon. The theory remains unproven."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its body is composed of crystallized dragon energy. Regidrago is said to have the powers of every dragon Pokémon."
+    }
+  ],
+  "896": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Glastrier emits intense cold from its hooves. It’s also a belligerent Pokémon—anything it wants, it takes by force."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Glastrier has tremendous physical strength, and the mask of ice covering its face is 100 times harder than diamond."
+    }
+  ],
+  "897": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "It probes its surroundings with all its senses save one—it doesn’t use its sense of sight. Spectrier’s kicks are said to separate soul from body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "As it dashes through the night, Spectrier absorbs the life-force of sleeping creatures. It craves silence and solitude."
+    }
+  ],
+  "898": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Calyrex is a merciful Pokémon, capable of providing healing and blessings. It reigned over the Galar region in times of yore."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Calyrex is known in legend as a king that ruled over Galar in ancient times. It has the power to cause hearts to mend and plants to spring forth."
+    }
+  ],
+  "898ice": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "According to lore, this Pokémon showed no mercy to those who got in its way, yet it would heal its opponents’ wounds after battle."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s said that this Pokémon once moved a large forest—and all the Pokémon living there—to a new location overnight."
+    }
+  ],
+  "898shadow": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s said that Calyrex and a Pokémon that had bonded with it ran all across the Galar region to bring green to the wastelands."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Legend says that by using its power to see all events from past to future, this Pokémon saved the creatures of a forest from a meteorite strike."
+    }
   ]
 }

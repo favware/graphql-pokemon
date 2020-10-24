@@ -33631,6 +33631,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Aron has a body of steel. With one all-out charge, this Pokémon can demolish even a heavy dump truck. The destroyed dump truck then becomes a handy meal for the Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It eats iron ore—and sometimes railroad tracks— to build up the steel armor that protects its body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When Aron evolves, its steel armor peels off. In ancient times, people would collect Aron’s shed armor and make good use of it in their daily lives."
     }
   ],
   "305": [
@@ -33705,6 +33713,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Lairon feeds on iron contained in rocks and water. It makes its nest on mountains where iron ore is buried. As a result, the Pokémon often clashes with humans mining the iron ore."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Lairon live in mountains brimming with spring water and iron ore, so these Pokémon often came into conflict with humans in the past."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "During territorial disputes, Lairon fight by slamming into each other. Close inspection of their steel armor reveals scratches and dents."
     }
   ],
   "306": [
@@ -33779,6 +33795,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Aggron is protective of its environment. If its mountain is ravaged by a landslide or a fire, this Pokémon will haul topsoil to the area, plant trees, and beautifully restore its own territory."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Aggron has a horn sharp enough to perforate thick iron sheets. It brings down its opponents by ramming into them horn first."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Long ago, there was a king who wore a helmet meant to resemble the head of an Aggron. He was trying to channel the Pokémon’s strength."
     }
   ],
   "307": [
@@ -36053,6 +36077,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Swablu loves to make things clean. If it spots something dirty, it will wipe and polish it with its cottony wings. If its wings become dirty, this Pokémon finds a stream and showers itself."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its cottony wings are full of air, making them light and fluffy to the touch. Swablu takes diligent care of its wings."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Since Swablu looks like a cumulus cloud, foes can have a hard time finding it. Apparently its wings turned white over many generations."
     }
   ],
   "334": [
@@ -36127,6 +36159,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Altaria sings in a gorgeous soprano. Its wings are like cotton clouds. This Pokémon catches updrafts with its buoyant wings and soars way up into the wild blue yonder."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "As it flies in a calm and relaxed manner, Altaria performs a humming song that would enrapture any audience."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon has a kind disposition, but if it’s provoked, it will threaten opponents with shrill cries before attacking them without mercy."
     }
   ],
   "335": [
@@ -37077,6 +37117,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sticks to rocks with its powerful suckers and can't be washed away no matter how rough the surf gets."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was restored from a fossil. Lileep once lived in warm seas that existed approximately 100,000,000 years ago."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Lileep clings to rocks on the seabed. When prey comes close, this Pokémon entangles it with petallike tentacles."
     }
   ],
   "346": [
@@ -37159,6 +37207,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This carnivorous Pokémon lived in primordial seas. It catches prey in its eight tentacles and dissolves them with digestive fluid as it eats."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It has short legs and can’t walk very fast, but its neck and tentacles can extend to over three times their usual length to nab distant prey."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Once Cradily catches prey in its tentacles, it digests them whole and absorbs their nutrients."
     }
   ],
   "347": [
@@ -37241,6 +37297,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This is one kind of primeval bug Pokémon. With eight wings, it could apparently swim a lot faster than you'd expect."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was restored from a fossil. Anorith lived in the ocean about 100,000,000 years ago, hunting with its pair of claws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Anorith can swim swiftly by pulling its eight wings through the water like oars on a boat. This Pokémon is an ancestor of modern bug Pokémon."
     }
   ],
   "348": [
@@ -37323,6 +37387,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Armaldo adapted from living in water to living on land. It has been determined that it is the ancestor of some bug Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "After evolution, this Pokémon emerged onto land. Its lower body has become stronger, and blows from its tail are devastating."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Though it lives on land, it’s also a good swimmer. It dives into the ocean in search of prey, using its sharp claws to take down its quarry."
     }
   ],
   "349": [
@@ -38329,6 +38401,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The elderly call it the disaster Pokémon and detest it, but interest in its power to predict disasters is on the rise."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Because of this Pokémon’s ability to detect danger, people mistook Absol as a bringer of doom."
     }
   ],
   "359mega": [
@@ -38717,6 +38797,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Spheal always travels by rolling around on its ball-like body. When the season for ice floes arrives, this Pokémon can be seen rolling about on ice and crossing the sea."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon’s body is covered in blubber and impressively round. It’s faster for Spheal to roll around than walk."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "As it drifts among the waves, Spheal probes the sea. As soon as it spots prey, it informs the Walrein in its herd."
     }
   ],
   "364": [
@@ -38791,6 +38879,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Sealeo often balances and rolls things on the tip of its nose. While the Pokémon is rolling something, it checks the object’s aroma and texture to determine whether it likes the object or not."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Sealeo live on top of drift ice. They go swimming when they’re on the hunt, seeking out their prey by scent."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon has a habit of spinning round things on its nose, whether those things are Poké Balls or Spheal."
     }
   ],
   "365": [
@@ -38865,6 +38961,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Walrein swims all over in frigid seawater while crushing icebergs with its grand, imposing tusks. Its thick layer of blubber makes enemy attacks bounce off harmlessly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Walrein form herds of 20 to 30 individuals. When a threat appears, the herd’s leader will protect the group with its life."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Walrein’s tusks keep growing throughout its life. Tusks broken in battle will grow back to their usual impressive size in a year."
     }
   ],
   "366": [
@@ -39201,6 +39305,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The reason it hasn't changed at all in a hundred million years is that it's apparently already a perfect life-form."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Rock-hard scales and oil-filled swim bladders allow this Pokémon to survive the intense water pressure of the deep sea."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon was discovered during deep-sea exploration. Its appearance hasn’t changed in 100,000,000 years, so it’s called a living fossil."
     }
   ],
   "370": [
@@ -39381,6 +39493,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Some theories suggest that its behavior of forcefully bashing its head into things stimulates cells that affect its evolution."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Bagon jumps off cliffs every day, trying to grow stronger so that someday it will be able to fly."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Bagon is a solitary Pokémon that doesn’t form groups with others of its kind. It also has a head hard enough to cleave a boulder in one strike."
     }
   ],
   "372": [
@@ -39471,6 +39591,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Shelgon lives deep within caves. It stays shut up in its hard shell, dreaming of the day it will be able to fly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon has covered its body in a hard shell that has the same composition as bone. Shelgon stores energy for evolution."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Shelgon ignores its hunger entirely, never eating any food. Apparently, Shelgon will evolve once all its energy stores are used up."
     }
   ],
   "373": [
@@ -39561,6 +39689,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Thanks to its fervent wishes, the cells in its body finally mutated, and at last it has its heart's desire—wings."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Salamence is an unusual Pokémon in that it was able to evolve a body with wings just by constantly wishing to be able to fly."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While basking in the joy of flight generally keeps this Pokémon in high spirits, Salamence turns into an uncontrollable menace if something angers it."
     }
   ],
   "373mega": [
@@ -39669,6 +39805,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its cells are all magnets. It uses magnetism to communicate with others of its kind."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "From its rear, Beldum emits a magnetic force that rapidly pulls opponents in. They get skewered on Beldum’s sharp claws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The cells in this Pokémon’s body are composed of magnetic material. Instead of blood, magnetic forces flow through Beldum’s body."
     }
   ],
   "375": [
@@ -39759,6 +39903,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It flies at high speeds around the skies. When it finds its prey, Metang takes a firm grip with its sharp claws and never lets go."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Two Beldum have become stuck together via their own magnetic forces. With two brains, the resulting Metang has doubled psychic powers."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Using magnetic forces to stay aloft, this Pokémon flies at high speeds, weaving through harsh mountain terrain in pursuit of prey."
     }
   ],
   "376": [
@@ -39849,6 +40001,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It analyzes its opponents with more accuracy than a supercomputer, which enables it to calmly back them into a corner."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Because the magnetic powers of these Pokémon get stronger in freezing temperatures, Metagross living on snowy mountains are full of energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Metagross is the result of the fusion of two Metang. This Pokémon defeats its opponents through use of its supercomputer-level brain."
     }
   ],
   "376mega": [
@@ -39941,6 +40101,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Regirock’s body is composed entirely of rocks. Recently, a study made the startling discovery that the rocks were all unearthed from different locations."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Every bit of Regirock’s body is made of stone. As parts of its body erode, this Pokémon sticks rocks to itself to repair what’s been lost."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Cutting-edge technology was used to study the internals of this Pokémon’s rock body, but nothing was found—not even a brain or a heart."
     }
   ],
   "378": [
@@ -40015,6 +40183,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Regice cloaks itself with frigid air of -328 degrees Fahrenheit. Things will freeze solid just by going near this Pokémon. Its icy body is so cold, it will not melt even if it is immersed in magma."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With cold air that can reach temperatures as low as −328 degrees Fahrenheit, Regice instantly freezes any creature that approaches it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon’s body is made of solid ice. It’s said that Regice was born beneath thick ice in the ice age."
     }
   ],
   "379": [
@@ -40089,6 +40265,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Registeel was imprisoned by people in ancient times. The metal composing its body is thought to be a curious substance that is not of this earth."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Registeel’s body is made of a strange material that is flexible enough to stretch and shrink but also more durable than any metal."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s rumored that this Pokémon was born deep underground in the planet’s mantle and that it emerged onto the surface 10,000 years ago."
     }
   ],
   "380": [

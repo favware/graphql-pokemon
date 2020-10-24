@@ -44253,6 +44253,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It was bound to a fissure in an odd keystone as punishment for misdeeds 500 years ago."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Exactly 108 spirits gathered to become this Pokémon. Apparently there are some ill-natured spirits in the mix."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "All Spiritomb’s mischief and misdeeds compelled a traveler to use a mysterious spell to bind Spiritomb to an odd keystone."
     }
   ],
   "443": [
@@ -44323,6 +44331,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its original home is an area much hotter than Alola. If you're planning to live with one, your heating bill will soar."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Gible prefers to stay in narrow holes in the sides of caves heated by geothermal energy. This way, Gible can stay warm even during a blizzard."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Gible attacks anything that moves, and it drags whatever it catches into the crevice that is its lair. Despite the big mouth, Gible’s stomach is small."
     }
   ],
   "444": [
@@ -44393,6 +44409,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sheds its skin and gradually grows larger. Its scales can be ground into a powder and used as raw materials for traditional medicine."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon emits ultrasonic waves from a protrusion on either side of its head to probe pitch-dark caves."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Jewels are buried in the caves these Pokémon nest in, but you’ll be torn apart by claws and fangs the moment you enter one of these caves."
     }
   ],
   "445": [
@@ -44463,6 +44487,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its fine scales don't just reduce wind resistance—their sharp edges also cause injury to any opponent who attacks it."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Garchomp makes its home in volcanic mountains. It flies through the sky as fast as a jet airplane, hunting down as much prey as it can."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Garchomp is fast both underground and above. It can bring down prey and return to its den before its body has chilled from being outside."
     }
   ],
   "445mega": [
@@ -45913,6 +45945,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "A single Electivire can provide enough electricity for all the buildings in a big city for a year."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The amount of electrical energy this Pokémon produces is proportional to the rate of its pulse. The voltage jumps while Electivire is battling."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "In terms of electrical-energy output, Electivire is one of the best among all Electric Pokémon. It discharges high-voltage currents from its tails."
     }
   ],
   "467": [
@@ -45983,6 +46023,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Magmortar takes down its enemies by shooting fireballs, which burn them to a blackened crisp. It avoids this method when hunting prey."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When Magmortar inhales deeply, the fire burning in its belly intensifies, rising in temperature to over 3,600 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Living in the crater of a volcano has caused this Pokémon’s body to resemble its environment— it has an organ similar to a magma chamber."
     }
   ],
   "468": [

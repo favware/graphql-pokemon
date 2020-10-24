@@ -49113,6 +49113,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It touches others with the feelers on its ears, using the sound of their heartbeats to tell how they are feeling."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Audino’s sense of hearing is superb. Not even a pebble rolling along over a mile away will escape Audino’s ears."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon has a kind heart. By touching with its feelers, Audino can gauge other creatures’ feelings and physical conditions."
     }
   ],
   "532": [
@@ -50695,6 +50703,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its hunting grounds encompassed a broad area, from the land to more than half a mile deep in the ocean."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon inhabited ancient seas. Although it can only crawl, it still comes up onto land in search of prey."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Tirtouga is considered to be the ancestor of many turtle Pokémon. It was restored to life from a fossil."
     }
   ],
   "565": [
@@ -50745,6 +50761,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Carracosta eats every last bit of the prey it catches, even the shells and bones, to further strengthen its sturdy shell."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Carracosta completely devours its prey—bones, shells, and all. Because of this, Carracosta’s own shell grows thick and sturdy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon emerges from the water in search of prey despite the fact that it moves more slowly on land."
     }
   ],
   "566": [
@@ -50795,6 +50819,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Restored from a fossil, this ancient bird Pokémon has wings but can't yet fly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was successfully restored from a fossil. As research suggested, Archen is unable to fly. But it’s very good at jumping."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Archen is said to be the ancestor of bird Pokémon. It lived in treetops, eating berries and bug Pokémon."
     }
   ],
   "567": [
@@ -50845,6 +50877,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Said to be an ancestor of bird Pokémon, the muscles it uses to flap its wings are still weak, so it needs a long runway in order to take off."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It needs a running start to take off. If Archeops wants to fly, it first needs to run nearly 25 mph, building speed over a course of about 2.5 miles."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Though capable of flight, Archeops was apparently better at hunting on the ground."
     }
   ],
   "568": [
@@ -52971,6 +53011,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With its icy chains, Cryogonal freezes those it encounters. It then takes its victims away to somewhere unknown."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When the weather gets hot, these Pokémon turn into water vapor. Cryogonal are almost never seen during summer."
     }
   ],
   "616": [

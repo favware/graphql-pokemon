@@ -3867,6 +3867,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It uses its hard incisor teeth to crush and eat berries. The tip of a female Nidoran’s horn is a bit more rounded than the tip of a male’s horn."
     }
   ],
   "30": [
@@ -3973,6 +3981,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "If the group is threatened, these Pokémon will band together to assault enemies with a chorus of ultrasonic waves."
     }
   ],
   "31": [
@@ -4079,6 +4095,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "When resting deep in its burrow, its barbs always retract. This is proof that it is relaxed"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It pacifies offspring by placing them in the gaps between the spines on its back. The spines will never secrete poison while young are present."
     }
   ],
   "32": [
@@ -4185,6 +4209,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Small but brave, this Pokémon will hold its ground and even risk its life in battle to protect the female it’s friendly with."
     }
   ],
   "33": [
@@ -4291,6 +4323,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its large ears are always kept upright. If it senses danger, it will attack with a poisonous sting."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s nervous and quick to act aggressively. The potency of its poison increases along with the level of adrenaline present in its body."
     }
   ],
   "34": [
@@ -5367,6 +5407,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Emits ultrasonic cries while it flies. They act as a sonar used to check for objects in its way."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Zubat live in caves, down where the sun’s light won’t reach. In the morning, they gather together to keep each other warm as they sleep."
     }
   ],
   "42": [
@@ -5489,6 +5537,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and to suck blood."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its feet are tiny, but this Pokémon walks skillfully. It sneaks up on sleeping prey before sinking in its fangs and slurping up blood."
     }
   ],
   "43": [
@@ -16093,6 +16149,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Appears to move to a rhythm of its own, as if it were dancing. It wiggles its hips as it walks."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "In certain parts of Galar, Jynx was once feared and worshiped as the Queen of Ice."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The Jynx of Galar often have beautiful and delicate voices. Some of these Pokémon have even gathered a fan base."
     }
   ],
   "125": [
@@ -16215,6 +16279,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "If a major power outage occurs, it is certain that this Pokémon has eaten electricity at a power plant."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Many power plants keep Ground-type Pokémon around as a defense against Electabuzz that come seeking electricity."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "With the coming of a storm, many of these Pokémon will gather under tall trees and sit there waiting for lightning to strike."
     }
   ],
   "126": [
@@ -16337,6 +16409,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Born in an active volcano. Its body is always cloaked in flames, so it looks like a big ball of fire."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Magmar dispatches its prey with fire. But it regrets this habit once it realizes that it has burned its intended prey to a charred crisp."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "These Pokémon’s bodies are constantly burning. Magmar are feared as one of the causes behind fires."
     }
   ],
   "127": [
@@ -18195,6 +18275,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A Pokémon that was recovered from a fossil. It used the eyes on its back while hiding on the seafloor."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This species is almost entirely extinct. Kabuto molt every three days, making their shells harder and harder."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While some say this species has gone extinct, Kabuto sightings are apparently fairly common in some places."
     }
   ],
   "141": [
@@ -18309,6 +18397,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A slim and fast swimmer. It sliced its prey with its sharp sickles and drank the body fluids."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Kabutops slices its prey apart and sucks out the fluids. The discarded body parts become food for other Pokémon."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The cause behind the extinction of this species is unknown. Kabutops were aggressive Pokémon that inhabited warm seas."
     }
   ],
   "142": [
@@ -18431,6 +18527,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A savage Pokémon that died out in ancient times. It was resurrected using DNA taken from amber."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This is a ferocious Pokémon from ancient times. Apparently even modern technology is incapable of producing a perfectly restored specimen."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Aerodactyl’s sawlike fangs can shred skin to tatters—even the skin of Steel-type Pokémon."
     }
   ],
   "142mega": [
@@ -18703,6 +18807,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon can control ice at will. Articuno is said to live in snowy mountains riddled with permafrost."
+    }
+  ],
+  "144galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its feather-like blades are composed of psychic energy and can shear through thick iron sheets as if they were paper."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Known as Articuno, this Pokémon fires beams that can immobilize opponents as if they had been frozen solid."
     }
   ],
   "145": [
@@ -18809,6 +18931,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Zapdos is a legendary bird Pokémon. It’s said that when Zapdos rubs its feathers together, lightning will fall immediately after."
+    }
+  ],
+  "145galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "When its feathers rub together, they produce a crackling sound like the zapping of electricity. That’s why this Pokémon is called Zapdos."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "One kick from its powerful legs will pulverize a dump truck. Supposedly, this Pokémon runs through the mountains at over 180 mph."
     }
   ],
   "146": [
@@ -18915,6 +19055,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s one of the legendary bird Pokémon. When Moltres flaps its flaming wings, they glimmer with a dazzling red glow."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "There are stories of this Pokémon using its radiant, flame-cloaked wings to light up paths for those lost in the mountains."
+    }
+  ],
+  "146galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon’s sinister, flame-like aura will consume the spirit of any creature it hits. Victims become burned-out shadows of themselves."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The sinister aura that blazes like molten fire around this Pokémon is what inspired the name Moltres."
     }
   ],
   "147": [
@@ -19037,6 +19195,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Long thought to be a myth, this Pokémon's existence was only recently confirmed by a fisherman who caught one."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Dratini dwells near bodies of rapidly flowing water, such as the plunge pools of waterfalls. As it grows, Dratini will shed its skin many times."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon was long considered to be no more than a myth. The small lump on a Dratini’s forehead is actually a horn that’s still coming in."
     }
   ],
   "148": [
@@ -19159,6 +19325,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "According to a witness, its body was surrounded by a strange aura that gave it a mystical look."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon lives in pristine oceans and lakes. It can control the weather, and it uses this power to fly into the sky, riding on the wind."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon gathers power in the orbs on its tail and controls the weather. When enshrouded by an aura, Dragonair has a mystical appearance."
     }
   ],
   "149": [
@@ -19281,6 +19455,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It is said that this Pokémon lives somewhere in the sea and that it flies. However, these are only rumors."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s a kindhearted Pokémon. If it spots a drowning person or Pokémon, Dragonite simply must help them."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is known as the Sea Incarnate. Figureheads that resemble Dragonite decorate the bows of many ships."
     }
   ],
   "150": [
@@ -21165,6 +21347,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It feeds on the blood of living people and Pokémon. If it can't drink any blood for even a short while, it becomes weak and unable to fly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Both of its legs have turned into wings. Without a sound, Crobat flies swiftly toward its prey and sinks its fangs into the nape of its target’s neck."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon flaps its four wings skillfully. Crobat can fly through cramped caves without needing to slow down."
     }
   ],
   "170": [
@@ -24147,6 +24337,16 @@
     {
       "version_id": "Shield",
       "flavor_text": "Slowking can solve any problem present to it, but no one can understand a thing Slowking says."
+    }
+  ],
+  "199galar": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "A combination of toxins and the shock of evolving has increased Shellder’s intelligence to the point that Shellder now controls Slowking."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While chanting strange spells, this Pokémon combines its internal toxins with what it’s eaten, creating strange potions."
     }
   ],
   "200": [
@@ -27941,6 +28141,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Highly perceptive sensors, Smoochum's lips are kept moist by its daily application of tree sap."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "If its face gets even slightly dirty, Smoochum will bathe immediately. But if its body gets dirty, Smoochum doesn’t really seem to care."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This is a very curious Pokémon. Smoochum decides what it likes and dislikes by touching things with its lips."
     }
   ],
   "239": [
@@ -28043,6 +28251,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When its horns shine a bluish white, that's the sign it's fully charged. You'll get a shocking jolt if you touch it!"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When a storm approaches, this Pokémon gets restless. Once Elekid hears the sound of thunder, it gets full-on rowdy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s not good at storing electricity yet. This Pokémon sneaks into people’s homes, looking for electrical outlets to eat electricity from."
     }
   ],
   "240": [
@@ -28145,6 +28361,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its body temperature is always around 1,100 degrees Fahrenheit. If Magby falls into a small- enough pond, the whole thing will dry up."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is still small and timid. Whenever Magby gets excited or surprised, flames leak from its mouth and its nose."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon makes its home near volcanoes. At the end of the day, Magby soaks in magma, resting and recovering from the day’s fatigue."
     }
   ],
   "241": [
@@ -33407,6 +33631,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Aron has a body of steel. With one all-out charge, this Pokémon can demolish even a heavy dump truck. The destroyed dump truck then becomes a handy meal for the Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It eats iron ore—and sometimes railroad tracks— to build up the steel armor that protects its body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When Aron evolves, its steel armor peels off. In ancient times, people would collect Aron’s shed armor and make good use of it in their daily lives."
     }
   ],
   "305": [
@@ -33481,6 +33713,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Lairon feeds on iron contained in rocks and water. It makes its nest on mountains where iron ore is buried. As a result, the Pokémon often clashes with humans mining the iron ore."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Lairon live in mountains brimming with spring water and iron ore, so these Pokémon often came into conflict with humans in the past."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "During territorial disputes, Lairon fight by slamming into each other. Close inspection of their steel armor reveals scratches and dents."
     }
   ],
   "306": [
@@ -33555,6 +33795,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Aggron is protective of its environment. If its mountain is ravaged by a landslide or a fire, this Pokémon will haul topsoil to the area, plant trees, and beautifully restore its own territory."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Aggron has a horn sharp enough to perforate thick iron sheets. It brings down its opponents by ramming into them horn first."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Long ago, there was a king who wore a helmet meant to resemble the head of an Aggron. He was trying to channel the Pokémon’s strength."
     }
   ],
   "307": [
@@ -35829,6 +36077,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Swablu loves to make things clean. If it spots something dirty, it will wipe and polish it with its cottony wings. If its wings become dirty, this Pokémon finds a stream and showers itself."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its cottony wings are full of air, making them light and fluffy to the touch. Swablu takes diligent care of its wings."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Since Swablu looks like a cumulus cloud, foes can have a hard time finding it. Apparently its wings turned white over many generations."
     }
   ],
   "334": [
@@ -35903,6 +36159,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Altaria sings in a gorgeous soprano. Its wings are like cotton clouds. This Pokémon catches updrafts with its buoyant wings and soars way up into the wild blue yonder."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "As it flies in a calm and relaxed manner, Altaria performs a humming song that would enrapture any audience."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon has a kind disposition, but if it’s provoked, it will threaten opponents with shrill cries before attacking them without mercy."
     }
   ],
   "335": [
@@ -36853,6 +37117,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sticks to rocks with its powerful suckers and can't be washed away no matter how rough the surf gets."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was restored from a fossil. Lileep once lived in warm seas that existed approximately 100,000,000 years ago."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Lileep clings to rocks on the seabed. When prey comes close, this Pokémon entangles it with petallike tentacles."
     }
   ],
   "346": [
@@ -36935,6 +37207,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This carnivorous Pokémon lived in primordial seas. It catches prey in its eight tentacles and dissolves them with digestive fluid as it eats."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It has short legs and can’t walk very fast, but its neck and tentacles can extend to over three times their usual length to nab distant prey."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Once Cradily catches prey in its tentacles, it digests them whole and absorbs their nutrients."
     }
   ],
   "347": [
@@ -37017,6 +37297,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This is one kind of primeval bug Pokémon. With eight wings, it could apparently swim a lot faster than you'd expect."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was restored from a fossil. Anorith lived in the ocean about 100,000,000 years ago, hunting with its pair of claws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Anorith can swim swiftly by pulling its eight wings through the water like oars on a boat. This Pokémon is an ancestor of modern bug Pokémon."
     }
   ],
   "348": [
@@ -37099,6 +37387,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Armaldo adapted from living in water to living on land. It has been determined that it is the ancestor of some bug Pokémon."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "After evolution, this Pokémon emerged onto land. Its lower body has become stronger, and blows from its tail are devastating."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Though it lives on land, it’s also a good swimmer. It dives into the ocean in search of prey, using its sharp claws to take down its quarry."
     }
   ],
   "349": [
@@ -38105,6 +38401,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The elderly call it the disaster Pokémon and detest it, but interest in its power to predict disasters is on the rise."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Because of this Pokémon’s ability to detect danger, people mistook Absol as a bringer of doom."
     }
   ],
   "359mega": [
@@ -38493,6 +38797,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Spheal always travels by rolling around on its ball-like body. When the season for ice floes arrives, this Pokémon can be seen rolling about on ice and crossing the sea."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon’s body is covered in blubber and impressively round. It’s faster for Spheal to roll around than walk."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "As it drifts among the waves, Spheal probes the sea. As soon as it spots prey, it informs the Walrein in its herd."
     }
   ],
   "364": [
@@ -38567,6 +38879,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Sealeo often balances and rolls things on the tip of its nose. While the Pokémon is rolling something, it checks the object’s aroma and texture to determine whether it likes the object or not."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Sealeo live on top of drift ice. They go swimming when they’re on the hunt, seeking out their prey by scent."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon has a habit of spinning round things on its nose, whether those things are Poké Balls or Spheal."
     }
   ],
   "365": [
@@ -38641,6 +38961,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Walrein swims all over in frigid seawater while crushing icebergs with its grand, imposing tusks. Its thick layer of blubber makes enemy attacks bounce off harmlessly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Walrein form herds of 20 to 30 individuals. When a threat appears, the herd’s leader will protect the group with its life."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Walrein’s tusks keep growing throughout its life. Tusks broken in battle will grow back to their usual impressive size in a year."
     }
   ],
   "366": [
@@ -38977,6 +39305,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The reason it hasn't changed at all in a hundred million years is that it's apparently already a perfect life-form."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Rock-hard scales and oil-filled swim bladders allow this Pokémon to survive the intense water pressure of the deep sea."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon was discovered during deep-sea exploration. Its appearance hasn’t changed in 100,000,000 years, so it’s called a living fossil."
     }
   ],
   "370": [
@@ -39157,6 +39493,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Some theories suggest that its behavior of forcefully bashing its head into things stimulates cells that affect its evolution."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Bagon jumps off cliffs every day, trying to grow stronger so that someday it will be able to fly."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Bagon is a solitary Pokémon that doesn’t form groups with others of its kind. It also has a head hard enough to cleave a boulder in one strike."
     }
   ],
   "372": [
@@ -39247,6 +39591,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Shelgon lives deep within caves. It stays shut up in its hard shell, dreaming of the day it will be able to fly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon has covered its body in a hard shell that has the same composition as bone. Shelgon stores energy for evolution."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Shelgon ignores its hunger entirely, never eating any food. Apparently, Shelgon will evolve once all its energy stores are used up."
     }
   ],
   "373": [
@@ -39337,6 +39689,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Thanks to its fervent wishes, the cells in its body finally mutated, and at last it has its heart's desire—wings."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Salamence is an unusual Pokémon in that it was able to evolve a body with wings just by constantly wishing to be able to fly."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "While basking in the joy of flight generally keeps this Pokémon in high spirits, Salamence turns into an uncontrollable menace if something angers it."
     }
   ],
   "373mega": [
@@ -39445,6 +39805,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its cells are all magnets. It uses magnetism to communicate with others of its kind."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "From its rear, Beldum emits a magnetic force that rapidly pulls opponents in. They get skewered on Beldum’s sharp claws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "The cells in this Pokémon’s body are composed of magnetic material. Instead of blood, magnetic forces flow through Beldum’s body."
     }
   ],
   "375": [
@@ -39535,6 +39903,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It flies at high speeds around the skies. When it finds its prey, Metang takes a firm grip with its sharp claws and never lets go."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Two Beldum have become stuck together via their own magnetic forces. With two brains, the resulting Metang has doubled psychic powers."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Using magnetic forces to stay aloft, this Pokémon flies at high speeds, weaving through harsh mountain terrain in pursuit of prey."
     }
   ],
   "376": [
@@ -39625,6 +40001,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It analyzes its opponents with more accuracy than a supercomputer, which enables it to calmly back them into a corner."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Because the magnetic powers of these Pokémon get stronger in freezing temperatures, Metagross living on snowy mountains are full of energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Metagross is the result of the fusion of two Metang. This Pokémon defeats its opponents through use of its supercomputer-level brain."
     }
   ],
   "376mega": [
@@ -39717,6 +40101,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Regirock’s body is composed entirely of rocks. Recently, a study made the startling discovery that the rocks were all unearthed from different locations."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Every bit of Regirock’s body is made of stone. As parts of its body erode, this Pokémon sticks rocks to itself to repair what’s been lost."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Cutting-edge technology was used to study the internals of this Pokémon’s rock body, but nothing was found—not even a brain or a heart."
     }
   ],
   "378": [
@@ -39791,6 +40183,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Regice cloaks itself with frigid air of -328 degrees Fahrenheit. Things will freeze solid just by going near this Pokémon. Its icy body is so cold, it will not melt even if it is immersed in magma."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With cold air that can reach temperatures as low as −328 degrees Fahrenheit, Regice instantly freezes any creature that approaches it."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon’s body is made of solid ice. It’s said that Regice was born beneath thick ice in the ice age."
     }
   ],
   "379": [
@@ -39865,6 +40265,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Registeel was imprisoned by people in ancient times. The metal composing its body is thought to be a curious substance that is not of this earth."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Registeel’s body is made of a strange material that is flexible enough to stretch and shrink but also more durable than any metal."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s rumored that this Pokémon was born deep underground in the planet’s mantle and that it emerged onto the surface 10,000 years ago."
     }
   ],
   "380": [
@@ -43845,6 +44253,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It was bound to a fissure in an odd keystone as punishment for misdeeds 500 years ago."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Exactly 108 spirits gathered to become this Pokémon. Apparently there are some ill-natured spirits in the mix."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "All Spiritomb’s mischief and misdeeds compelled a traveler to use a mysterious spell to bind Spiritomb to an odd keystone."
     }
   ],
   "443": [
@@ -43915,6 +44331,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its original home is an area much hotter than Alola. If you're planning to live with one, your heating bill will soar."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Gible prefers to stay in narrow holes in the sides of caves heated by geothermal energy. This way, Gible can stay warm even during a blizzard."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Gible attacks anything that moves, and it drags whatever it catches into the crevice that is its lair. Despite the big mouth, Gible’s stomach is small."
     }
   ],
   "444": [
@@ -43985,6 +44409,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sheds its skin and gradually grows larger. Its scales can be ground into a powder and used as raw materials for traditional medicine."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon emits ultrasonic waves from a protrusion on either side of its head to probe pitch-dark caves."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Jewels are buried in the caves these Pokémon nest in, but you’ll be torn apart by claws and fangs the moment you enter one of these caves."
     }
   ],
   "445": [
@@ -44055,6 +44487,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its fine scales don't just reduce wind resistance—their sharp edges also cause injury to any opponent who attacks it."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Garchomp makes its home in volcanic mountains. It flies through the sky as fast as a jet airplane, hunting down as much prey as it can."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Garchomp is fast both underground and above. It can bring down prey and return to its den before its body has chilled from being outside."
     }
   ],
   "445mega": [
@@ -45505,6 +45945,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "A single Electivire can provide enough electricity for all the buildings in a big city for a year."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The amount of electrical energy this Pokémon produces is proportional to the rate of its pulse. The voltage jumps while Electivire is battling."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "In terms of electrical-energy output, Electivire is one of the best among all Electric Pokémon. It discharges high-voltage currents from its tails."
     }
   ],
   "467": [
@@ -45575,6 +46023,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Magmortar takes down its enemies by shooting fireballs, which burn them to a blackened crisp. It avoids this method when hunting prey."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When Magmortar inhales deeply, the fire burning in its belly intensifies, rising in temperature to over 3,600 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Living in the crater of a volcano has caused this Pokémon’s body to resemble its environment— it has an organ similar to a magma chamber."
     }
   ],
   "468": [
@@ -48657,6 +49113,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It touches others with the feelers on its ears, using the sound of their heartbeats to tell how they are feeling."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Audino’s sense of hearing is superb. Not even a pebble rolling along over a mile away will escape Audino’s ears."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon has a kind heart. By touching with its feelers, Audino can gauge other creatures’ feelings and physical conditions."
     }
   ],
   "532": [
@@ -50239,6 +50703,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its hunting grounds encompassed a broad area, from the land to more than half a mile deep in the ocean."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon inhabited ancient seas. Although it can only crawl, it still comes up onto land in search of prey."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Tirtouga is considered to be the ancestor of many turtle Pokémon. It was restored to life from a fossil."
     }
   ],
   "565": [
@@ -50289,6 +50761,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Carracosta eats every last bit of the prey it catches, even the shells and bones, to further strengthen its sturdy shell."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Carracosta completely devours its prey—bones, shells, and all. Because of this, Carracosta’s own shell grows thick and sturdy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon emerges from the water in search of prey despite the fact that it moves more slowly on land."
     }
   ],
   "566": [
@@ -50339,6 +50819,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Restored from a fossil, this ancient bird Pokémon has wings but can't yet fly."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was successfully restored from a fossil. As research suggested, Archen is unable to fly. But it’s very good at jumping."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Archen is said to be the ancestor of bird Pokémon. It lived in treetops, eating berries and bug Pokémon."
     }
   ],
   "567": [
@@ -50389,6 +50877,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Said to be an ancestor of bird Pokémon, the muscles it uses to flap its wings are still weak, so it needs a long runway in order to take off."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It needs a running start to take off. If Archeops wants to fly, it first needs to run nearly 25 mph, building speed over a course of about 2.5 miles."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Though capable of flight, Archeops was apparently better at hunting on the ground."
     }
   ],
   "568": [
@@ -52515,6 +53011,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "With its icy chains, Cryogonal freezes those it encounters. It then takes its victims away to somewhere unknown."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When the weather gets hot, these Pokémon turn into water vapor. Cryogonal are almost never seen during summer."
     }
   ],
   "616": [
@@ -55245,6 +55749,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Tyrunt is spoiled and selfish. It may just be trying to frolic, but sometimes the ones it's trying to frolic with are gravely injured."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This is an ancient Pokémon, revived in modern times. It has a violent disposition, and it’ll tear apart anything it gets between its hefty jaws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon is selfish and likes to be pampered. It can also inflict grievous wounds on its Trainer just by playing around."
     }
   ],
   "697": [
@@ -55271,6 +55783,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The king of the ancient world, it can easily crunch a car with the devastating strength of its enormous jaws."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is from about 100,000,000 years ago. It has the presence of a king, vicious but magnificent."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "A single bite of Tyrantrum’s massive jaws will demolish a car. This Pokémon was the king of the ancient world."
     }
   ],
   "698": [
@@ -55297,6 +55817,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Amaura was restored successfully, but it's not expected to live long because of the heat of the current environment."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon was successfully restored from a fossil. In the past, it lived with others of its kind in cold lands where there were fewer predators."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Amaura is an ancient Pokémon that has gone extinct. Specimens of this species can sometimes be found frozen in ice."
     }
   ],
   "699": [
@@ -55323,6 +55851,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around –240 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Aurorus was restored from a fossil. It’s said that when this Pokémon howls, auroras appear in the night sky."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When gripped by rage, Aurorus will emanate freezing air, covering everything around it in ice."
     }
   ],
   "700": [
@@ -55467,6 +56003,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "To keep the jewels on their bodies free of tarnish, packs of Carbink use their soft manes to polish one another's jewels."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When beset by attackers, Carbink wipes them all out by firing high-energy beams from the gems embedded in its body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s said that somewhere in the world, there’s a mineral vein housing a large pack of slumbering Carbink. It’s also said that this pack has a queen."
     }
   ],
   "704": [
@@ -58289,6 +58833,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Whether or not it's a Pokémon from this world is a mystery. When it's in a jam, it warps away to a safe place to hide."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon came from another universe. Its gaseous body is so light that even a gentle breeze can blow it away."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Cosmog is very curious but not very cautious, often placing itself in danger. If things start to look dicey, it teleports away."
     }
   ],
   "790": [
@@ -58307,6 +58859,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "As it absorbs light, Cosmoem continues to grow. Its golden shell is surprisingly solid."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "The absorption of starlight fuels this Pokémon's growth. The shell that encases it is harder than any known material."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It sucks in dust from the air at an astounding rate, frantically building up energy within its core as preparation for evolution."
     }
   ],
   "791": [
@@ -58325,6 +58885,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "In writings from the distant past, it's called by the name “the beast that devours the sun.”"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When light radiates from its body, this Pokémon could almost appear to be the sun. It will dispel any darkness and light up the world."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Solgaleo was once known as the Beast That Devours the Sun. Energy in the form of light radiates boundlessly from it."
     }
   ],
   "792": [
@@ -58343,6 +58911,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sometimes summons unknown powers and life-forms here to this world from holes that lead to other worlds."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Known as the Beast That Calls the Moon, this Pokémon lives by taking in any and all light and converting it into its own energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It steals the light from its surroundings and then becomes the full moon, showering its own light across the night sky."
     }
   ],
   "793": [
@@ -58487,6 +59063,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Light is the source of its energy. If it isn't devouring light, impurities build up in it and on it, and Necrozma darkens and stops moving."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It survives by absorbing light. After a long time spent slumbering underground, impurities accumulated within it, causing its body to darken."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It needs light to survive, and it goes on a rampage seeking it out. Its laser beams will cut anything to pieces."
     }
   ],
   "800dusk-mane": [
@@ -58497,6 +59081,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This is Necrozma's form while it's absorbing the power of Solgaleo, making it extremely ferocious and impossible to control."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "When it dominates Solgaleo, it takes on this form. It's a vicious Pokémon, mangling prey with its many claws, including those on its back."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Necrozma has attached itself to Solgaleo. It siphons away its host's limitless energy, exploiting that energy to fuel a rampage."
     }
   ],
   "800dawn-wings": [
@@ -58507,6 +59099,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "This is its form while it's devouring the light of Lunala. It grasps foes in its giant claws and rips them apart with brute force."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "Necrozma has subjugated Lunala entirely, forcing the unfortunate Pokémon to emit its light energy for Necrozma to consume."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "When Necrozma latches on to Lunala, it becomes vicious, seeing enemies everywhere it looks. It will burn the world with lasers."
     }
   ],
   "800ultra": [
@@ -58571,6 +59171,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It sinks into the shadows of people and Pokémon, where it can understand their feelings and copy their capabilities."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "By slipping into the shadow of a martial arts master and copying their movements, this Pokémon learned the ultimate techniques."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "This Pokémon can conceal itself in any shadow, so it went undiscovered for a long time."
     }
   ],
   "803": [
@@ -58621,6 +59229,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It runs as fast as lightning strikes, shredding its opponents with its high-voltage claws."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Electricity sparks from the pads on its limbs. Wherever Zeraora runs, lightning flashes and thunder echoes."
     }
   ],
   "808": [
@@ -58631,6 +59247,14 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It melts particles of iron and other metals found in the subsoil, so it can absorb them into its body of molten steel."
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "It dissolves and eats metal. Circulating liquid metal within its body is how it generates energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "They live as a group, but when the time comes, one strong Meltan will absorb all the others and evolve."
     }
   ],
   "809": [
@@ -58641,6 +59265,24 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Revered long ago for its capacity to create iron from nothing, for some reason it has come back to life after 3,000 years"
+    },
+    {
+      "version_id": "Sword",
+      "flavor_text": "At the end of its life-span, Melmetal will rust and fall apart. The small shards left behind will eventually be reborn as Meltan."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Centrifugal force is behind the punches of Melmetal's heavy hex-nut arms. Melmetal is said to deliver the strongest punches of all Pokémon."
+    }
+  ],
+  "809gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "In a distant land, there are legends about a cyclopean giant. In fact, the giant was a Melmetal that was flooded with Gigantamax energy."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It can send electric beams streaking out from the hole in its belly. The beams' tremendous energy can vaporize an opponent in one shot."
     }
   ],
   "810": [
@@ -59761,6 +60403,76 @@
     {
       "version_id": "Shield",
       "flavor_text": "This Zarude's special strength stems from its love and care for an orphaned human child that the Pokémon has raised since the child's infancy."
+    }
+  ],
+  "894": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "This Pokémon is a cluster of electrical energy. It’s said that removing the rings on Regieleki’s body will unleash the Pokémon’s latent power."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its entire body is made up of a single organ that generates electrical energy. Regieleki is capable of creating all Galar’s electricity."
+    }
+  ],
+  "895": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "An academic theory proposes that Regidrago’s arms were once the head of an ancient dragon Pokémon. The theory remains unproven."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Its body is composed of crystallized dragon energy. Regidrago is said to have the powers of every dragon Pokémon."
+    }
+  ],
+  "896": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Glastrier emits intense cold from its hooves. It’s also a belligerent Pokémon—anything it wants, it takes by force."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Glastrier has tremendous physical strength, and the mask of ice covering its face is 100 times harder than diamond."
+    }
+  ],
+  "897": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "It probes its surroundings with all its senses save one—it doesn’t use its sense of sight. Spectrier’s kicks are said to separate soul from body."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "As it dashes through the night, Spectrier absorbs the life-force of sleeping creatures. It craves silence and solitude."
+    }
+  ],
+  "898": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Calyrex is a merciful Pokémon, capable of providing healing and blessings. It reigned over the Galar region in times of yore."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Calyrex is known in legend as a king that ruled over Galar in ancient times. It has the power to cause hearts to mend and plants to spring forth."
+    }
+  ],
+  "898ice": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "According to lore, this Pokémon showed no mercy to those who got in its way, yet it would heal its opponents’ wounds after battle."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "It’s said that this Pokémon once moved a large forest—and all the Pokémon living there—to a new location overnight."
+    }
+  ],
+  "898shadow": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "It’s said that Calyrex and a Pokémon that had bonded with it ran all across the Galar region to bring green to the wastelands."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Legend says that by using its power to see all events from past to future, this Pokémon saved the creatures of a forest from a meteorite strike."
     }
   ]
 }

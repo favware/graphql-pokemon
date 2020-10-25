@@ -78,6 +78,20 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     }
   ],
   [
+    'asoneasoneglastrier',
+    {
+      shortDesc: 'The combination of Unnerve and Chilling Neigh.',
+      name: 'As One (Glastrier)'
+    }
+  ],
+  [
+    'asonespectrier',
+    {
+      shortDesc: 'The combination of Unnerve and Grim Neigh.',
+      name: 'As One (Spectrier)'
+    }
+  ],
+  [
     'aurabreak',
     {
       desc:
@@ -175,6 +189,14 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     }
   ],
   [
+    'chillingneigh',
+    {
+      desc: "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+      shortDesc: "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+      name: 'Chilling Neigh'
+    }
+  ],
+  [
     'chlorophyll',
     {
       desc: "If Sunny Day is active and this Pokemon is not holding Utility Umbrella, this Pokemon's Speed is doubled.",
@@ -250,6 +272,13 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: 'When this Pokemon is hit by an attack, the Speed of all other Pokemon on the field is lowered by 1 stage.',
       shortDesc: 'If this Pokemon is hit, it lowers the Speed of all other Pokemon on the field 1 stage.',
       name: 'Cotton Down'
+    }
+  ],
+  [
+    'curiousmedicine',
+    {
+      shortDesc: 'On switch-in, allies stat changes are reset to 0.',
+      name: 'Curious Medicine'
     }
   ],
   [
@@ -357,6 +386,13 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
         "On switch-in, this Pokemon's Attack or Special Attack is raised by 1 stage based on the weaker combined defensive stat of all opposing Pokemon. Attack is raised if their Defense is lower, and Special Attack is raised if their Special Defense is the same or lower.",
       shortDesc: "On switch-in, Attack or Sp. Atk is raised 1 stage based on the foes' weaker Defense.",
       name: 'Download'
+    }
+  ],
+  [
+    'dragonsmaw',
+    {
+      shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using an Dragon-type attack.",
+      name: "Dragon's Maw"
     }
   ],
   [
@@ -566,6 +602,14 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       shortDesc: 'On switch-in, this Pokemon summons Grassy Terrain.',
       name: 'Grassy Surge'
+    }
+  ],
+  [
+    'grimneigh',
+    {
+      desc: "This Pokemon's Special Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+      shortDesc: "This Pokemon's Sp. Atk is raised by 1 stage if it attacks and KOes another Pokemon.",
+      name: 'Grim Neigh'
     }
   ],
   [
@@ -1867,6 +1911,13 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
         'On switch-in, or when this Pokemon acquires this ability, this Pokemon copies a random adjacent opposing Pokemon\'s Ability. However, if one or more adjacent Pokemon has the Ability "No Ability", Trace won\'t copy anything even if there is another valid Ability it could normally copy. Otherwise, if there is no Ability that can be copied at that time, this Ability will activate as soon as an Ability can be copied. Abilities that cannot be copied are the previously mentioned "No Ability", as well as Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, and Zen Mode.',
       shortDesc: "On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.",
       name: 'Trace'
+    }
+  ],
+  [
+    'transistor',
+    {
+      shortDesc: "This Pokemon's attacking stat is multiplied by 1.5 while using an Electric-type attack.",
+      name: 'Transistor'
     }
   ],
   [

@@ -3154,7 +3154,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.2,
       weightkg: 36,
       color: 'Pink',
-      evos: ['slowbrogalar'],
+      evos: ['slowbrogalar', 'slowkinggalar'],
       eggGroups: ['Monster', 'Water 1']
     }
   ],
@@ -5232,6 +5232,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.7,
       weightkg: 55.4,
       color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['articunogalar']
+    }
+  ],
+  [
+    'articunogalar',
+    {
+      species: 'articuno-galar',
+      baseSpecies: 'Articuno',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 144,
+      types: ['Psychic', 'Flying'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 90,
+        atk: 85,
+        def: 85,
+        spa: 125,
+        spd: 100,
+        spe: 95
+      },
+      abilities: { first: 'Competitive' },
+      heightm: 1.7,
+      weightkg: 50.9,
+      color: 'Purple',
       eggGroups: ['Undiscovered']
     }
   ],
@@ -5253,6 +5279,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       abilities: { first: 'Pressure', hidden: 'Static' },
       heightm: 1.6,
       weightkg: 52.6,
+      color: 'Yellow',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['zapdosgalar']
+    }
+  ],
+  [
+    'zapdosgalar',
+    {
+      species: 'zapdos-galar',
+      baseSpecies: 'Zapdos',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 145,
+      types: ['Fighting', 'Flying'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 90,
+        atk: 125,
+        def: 90,
+        spa: 85,
+        spd: 90,
+        spe: 100
+      },
+      abilities: { first: 'Defiant' },
+      heightm: 1.6,
+      weightkg: 58.2,
       color: 'Yellow',
       eggGroups: ['Undiscovered']
     }
@@ -5276,6 +5328,32 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 2,
       weightkg: 60,
       color: 'Yellow',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['moltresgalar']
+    }
+  ],
+  [
+    'moltresgalar',
+    {
+      species: 'moltres-galar',
+      baseSpecies: 'Moltres',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 146,
+      types: ['Dark', 'Flying'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 90,
+        atk: 85,
+        def: 90,
+        spa: 100,
+        spd: 125,
+        spe: 90
+      },
+      abilities: { first: 'Berserk' },
+      heightm: 2,
+      weightkg: 66,
+      color: 'Red',
       eggGroups: ['Undiscovered']
     }
   ],
@@ -6635,6 +6713,34 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 79.5,
       color: 'Pink',
       prevo: 'slowpoke',
+      evoLevel: "Trade while holding King's Rock",
+      eggGroups: ['Monster', 'Water 1'],
+      otherFormes: ['slowkinggalar']
+    }
+  ],
+  [
+    'slowkinggalar',
+    {
+      species: 'slowking-galar',
+      baseSpecies: 'Slowking',
+      forme: 'Galar',
+      formeLetter: 'G',
+      num: 145,
+      types: ['Poison', 'Psychic'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      baseStats: {
+        hp: 95,
+        atk: 65,
+        def: 80,
+        spa: 110,
+        spd: 110,
+        spe: 30
+      },
+      abilities: { first: 'Curious Medicine', second: 'Own Tempo', hidden: 'Regenerator' },
+      heightm: 1.8,
+      weightkg: 79.5,
+      color: 'Pink',
+      prevo: 'slowpokegalar',
       evoLevel: "Trade while holding King's Rock",
       eggGroups: ['Monster', 'Water 1']
     }
@@ -20007,7 +20113,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
         'Vivillon-Savanna',
         'Vivillon-Sun',
         'Vivillon-Tundra'
-      ]
+      ],
+      otherFormes: ['vivillonfancy', 'vivillonpokeball']
     }
   ],
   [
@@ -27547,7 +27654,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'kubfu',
     {
-      species: 'Kubfu',
+      species: 'kubfu',
       num: 891,
       types: ['Fighting'],
       genderRatio: { male: 0.875, female: 0.125 },
@@ -27563,14 +27670,14 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 0.6,
       weightkg: 12,
       color: 'Gray',
-      evos: ['urshifu', 'urshifu-rapid-strike'],
+      evos: ['urshifu', 'urshifurapidstrike'],
       eggGroups: ['Undiscovered']
     }
   ],
   [
     'urshifu',
     {
-      species: 'Urshifu',
+      species: 'urshifu',
       num: 892,
       types: ['Fighting', 'Dark'],
       genderRatio: { male: 0.875, female: 0.125 },
@@ -27588,14 +27695,14 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Gray',
       prevo: 'Kubfu',
       evoLevel: 'Defeat the Single Strike Tower',
-      otherFormes: ['urshifu-rapid-strike', 'urshifu-gmax'],
+      otherFormes: ['urshifurapidstrike', 'urshifugmax'],
       eggGroups: ['Undiscovered']
     }
   ],
   [
     'urshifurapidstrike',
     {
-      species: 'Urshifu-Rapid-Strike',
+      species: 'urshifu-rapid-strike',
       num: 892,
       types: ['Fighting', 'Water'],
       baseSpecies: 'Urshifu',
@@ -27616,7 +27723,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Gray',
       prevo: 'Kubfu',
       evoLevel: 'Defeat the Rapid Strike Tower',
-      otherFormes: ['urshifu', 'urshifu-rapid-strike-gmax'],
+      otherFormes: ['urshifu', 'urshifurapidstrikegmax'],
       eggGroups: ['Undiscovered']
     }
   ],
@@ -27673,7 +27780,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
   [
     'zarude',
     {
-      species: 'Zarude',
+      species: 'zarude',
       num: 893,
       types: ['Dark', 'Grass'],
       genderRatio: { male: 0, female: 0 },
@@ -27689,14 +27796,14 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       heightm: 1.8,
       weightkg: 70,
       color: 'Green',
-      otherFormes: ['zarude-dada'],
+      otherFormes: ['zarudedada'],
       eggGroups: ['Undiscovered']
     }
   ],
   [
     'zarudedada',
     {
-      species: 'Zarude-Dada',
+      species: 'zarude-dada',
       num: 893,
       types: ['Dark', 'Grass'],
       baseSpecies: 'zarude',
@@ -27716,6 +27823,169 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 70,
       color: 'Green',
       eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'regieleki',
+    {
+      species: 'regieleki',
+      num: 894,
+      types: ['Electric'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 80,
+        atk: 100,
+        def: 50,
+        spa: 100,
+        spd: 50,
+        spe: 200
+      },
+      abilities: { first: 'Transistor' },
+      heightm: 1.2,
+      weightkg: 145,
+      color: 'Yellow',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'regidrago',
+    {
+      species: 'regidrago',
+      num: 895,
+      types: ['Dragon'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 200,
+        atk: 100,
+        def: 50,
+        spa: 100,
+        spd: 50,
+        spe: 80
+      },
+      abilities: { first: "Dragon's Maw" },
+      heightm: 2.1,
+      weightkg: 200,
+      color: 'Green',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'glastrier',
+    {
+      species: 'glastrier',
+      num: 896,
+      types: ['Ice'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 145,
+        def: 130,
+        spa: 65,
+        spd: 110,
+        spe: 30
+      },
+      abilities: { first: 'Chilling Neigh' },
+      heightm: 2.2,
+      weightkg: 800,
+      color: 'White',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'spectrier',
+    {
+      species: 'spectrier',
+      num: 897,
+      types: ['Ghost'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 65,
+        def: 60,
+        spa: 145,
+        spd: 80,
+        spe: 130
+      },
+      abilities: { first: 'Grim Neigh' },
+      heightm: 2,
+      weightkg: 44.5,
+      color: 'Black',
+      eggGroups: ['Undiscovered']
+    }
+  ],
+  [
+    'calyrex',
+    {
+      species: 'calyrex',
+      num: 898,
+      types: ['Psychic', 'Grass'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 80,
+        def: 80,
+        spa: 80,
+        spd: 80,
+        spe: 80
+      },
+      abilities: { first: 'Unnerve' },
+      heightm: 1.1,
+      weightkg: 7.7,
+      color: 'Calyrex',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['calyrexice', 'calyrexshadow']
+    }
+  ],
+  [
+    'calyrexice',
+    {
+      species: 'calyrex-ice',
+      num: 898,
+      types: ['Psychic', 'Ice'],
+      baseSpecies: 'Calyrex',
+      formeLetter: 'CI',
+      forme: 'Ice',
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 165,
+        def: 150,
+        spa: 85,
+        spd: 130,
+        spe: 50
+      },
+      abilities: { first: 'As One (Glastrier)' },
+      heightm: 2.4,
+      weightkg: 809.1,
+      color: 'White',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['calyrexshadow']
+    }
+  ],
+  [
+    'calyrexshadow',
+    {
+      species: 'calyrex-shadow',
+      num: 898,
+      types: ['Psychic', 'Ghost'],
+      baseSpecies: 'Calyrex',
+      formeLetter: 'CS',
+      forme: 'Shadow',
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 100,
+        atk: 85,
+        def: 80,
+        spa: 165,
+        spd: 100,
+        spe: 150
+      },
+      abilities: { first: 'As One (Spectrier)' },
+      heightm: 2.4,
+      weightkg: 53.6,
+      color: 'Black',
+      eggGroups: ['Undiscovered'],
+      otherFormes: ['calyrexice']
     }
   ],
   [
@@ -28452,6 +28722,28 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       evoLevel: '36',
       color: 'Red',
       eggGroups: ['Dragon', 'Fairy']
+    }
+  ],
+  [
+    'miasmaw',
+    {
+      num: -59,
+      species: 'miasmaw',
+      types: ['Bug', 'Dragon'],
+      genderRatio: { male: 0, female: 0 },
+      baseStats: {
+        hp: 85,
+        atk: 135,
+        def: 60,
+        spa: 115,
+        spd: 85,
+        spe: 89
+      },
+      abilities: { first: 'Neutralizing Gas', hidden: 'Compound Eyes' },
+      heightm: 1.2,
+      weightkg: 57,
+      color: 'Green',
+      eggGroups: ['Bug', 'Dragon']
     }
   ],
   [

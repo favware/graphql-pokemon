@@ -2017,8 +2017,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Micle Berry',
       gen: 4,
-      desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
-      isNonstandard: 'Unobtainable'
+      desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use."
     }
   ],
   [
@@ -3041,8 +3040,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Soul Dew',
       gen: 3,
-      desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
-      isNonstandard: 'Past'
+      desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.'
     }
   ],
   [

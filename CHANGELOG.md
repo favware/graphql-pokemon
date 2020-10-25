@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.4.0](https://github.com/favware/graphql-pokemon/compare/v4.3.0...v4.4.0) (2020-10-25)
+
+
+### Features
+
+* add Crown Tundra ([#316](https://github.com/favware/graphql-pokemon/issues/316)) ([66987c7](https://github.com/favware/graphql-pokemon/commit/66987c7bdfaa15b7d3316b59648e53d3890538f9))
+
 ## [4.3.0](https://github.com/favware/graphql-pokemon/compare/v4.2.5...v4.3.0) (2020-09-02)
 
 ### Features

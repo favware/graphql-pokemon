@@ -25,6 +25,11 @@ Object {
     ],
     "levelUpMoves": Array [
       Object {
+        "generation": 8,
+        "level": 62,
+        "name": "dragondance",
+      },
+      Object {
         "generation": 7,
         "level": 61,
         "name": "dragondance",
@@ -45,7 +50,12 @@ Object {
         "name": "dragondance",
       },
     ],
-    "tmMoves": Array [],
+    "tmMoves": Array [
+      Object {
+        "generation": 8,
+        "name": "dragondance",
+      },
+    ],
     "tutorMoves": Array [],
     "virtualTransferMoves": Array [],
   },
@@ -77,6 +87,11 @@ Object {
     ],
     "levelUpMoves": Array [
       Object {
+        "generation": 8,
+        "level": 62,
+        "name": "dragondance",
+      },
+      Object {
         "generation": 7,
         "level": 61,
         "name": "dragondance",
@@ -98,6 +113,14 @@ Object {
       },
     ],
     "tmMoves": Array [
+      Object {
+        "generation": 8,
+        "name": "dragondance",
+      },
+      Object {
+        "generation": 8,
+        "name": "dragonclaw",
+      },
       Object {
         "generation": 7,
         "name": "dragonclaw",
@@ -150,6 +173,11 @@ Object {
     ],
     "levelUpMoves": Array [
       Object {
+        "generation": 8,
+        "level": 62,
+        "name": "dragondance",
+      },
+      Object {
         "generation": 7,
         "level": 61,
         "name": "dragondance",
@@ -170,7 +198,12 @@ Object {
         "name": "dragondance",
       },
     ],
-    "tmMoves": Array [],
+    "tmMoves": Array [
+      Object {
+        "generation": 8,
+        "name": "dragondance",
+      },
+    ],
     "tutorMoves": Array [],
     "virtualTransferMoves": Array [],
   },
@@ -293,6 +326,11 @@ Object {
     ],
     "levelUpMoves": Array [
       Object {
+        "generation": 8,
+        "level": 62,
+        "name": "dragondance",
+      },
+      Object {
         "generation": 7,
         "level": 61,
         "name": "dragondance",
@@ -313,7 +351,12 @@ Object {
         "name": "dragondance",
       },
     ],
-    "tmMoves": Array [],
+    "tmMoves": Array [
+      Object {
+        "generation": 8,
+        "name": "dragondance",
+      },
+    ],
     "tutorMoves": Array [],
     "virtualTransferMoves": Array [],
   },
@@ -345,6 +388,11 @@ Object {
     ],
     "levelUpMoves": Array [
       Object {
+        "generation": 8,
+        "level": 62,
+        "name": "dragondance",
+      },
+      Object {
         "generation": 7,
         "level": 61,
         "name": "dragondance",
@@ -365,7 +413,12 @@ Object {
         "name": "dragondance",
       },
     ],
-    "tmMoves": Array [],
+    "tmMoves": Array [
+      Object {
+        "generation": 8,
+        "name": "dragondance",
+      },
+    ],
     "tutorMoves": Array [],
     "virtualTransferMoves": Array [],
   },
@@ -397,6 +450,11 @@ Object {
     ],
     "levelUpMoves": Array [
       Object {
+        "generation": 8,
+        "level": 62,
+        "name": "dragondance",
+      },
+      Object {
         "generation": 7,
         "level": 61,
         "name": "dragondance",
@@ -417,7 +475,12 @@ Object {
         "name": "dragondance",
       },
     ],
-    "tmMoves": Array [],
+    "tmMoves": Array [
+      Object {
+        "generation": 8,
+        "name": "dragondance",
+      },
+    ],
     "tutorMoves": Array [],
     "virtualTransferMoves": Array [],
   },

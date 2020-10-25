@@ -18,7 +18,7 @@ Object {
         "target": "Any",
         "type": "Flying",
       },
-      "refIndex": 161,
+      "refIndex": 162,
     },
     Object {
       "item": Object {
@@ -35,7 +35,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 162,
+      "refIndex": 163,
     },
     Object {
       "item": Object {
@@ -52,7 +52,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 163,
+      "refIndex": 164,
     },
     Object {
       "item": Object {
@@ -68,7 +68,7 @@ Object {
         "target": "Self",
         "type": "Dragon",
       },
-      "refIndex": 164,
+      "refIndex": 165,
     },
     Object {
       "item": Object {
@@ -84,7 +84,22 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 165,
+      "refIndex": 166,
+    },
+    Object {
+      "item": Object {
+        "accuracy": 100,
+        "basePower": "150",
+        "category": "Special",
+        "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+        "name": "Dragon Energy",
+        "pp": 5,
+        "priority": 0,
+        "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
+        "target": "Adjacent Foes",
+        "type": "Dragon",
+      },
+      "refIndex": 167,
     },
     Object {
       "item": Object {
@@ -101,7 +116,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 166,
+      "refIndex": 168,
     },
     Object {
       "item": Object {
@@ -118,7 +133,7 @@ Object {
         "target": "Any",
         "type": "Dragon",
       },
-      "refIndex": 167,
+      "refIndex": 169,
     },
     Object {
       "item": Object {
@@ -135,7 +150,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 168,
+      "refIndex": 170,
     },
     Object {
       "item": Object {
@@ -151,23 +166,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 169,
-    },
-    Object {
-      "item": Object {
-        "accuracy": 90,
-        "basePower": "60",
-        "category": "Physical",
-        "contestType": "Tough",
-        "maxMovePower": 110,
-        "name": "Dragon Tail",
-        "pp": 10,
-        "priority": -6,
-        "shortDesc": "Forces the target to switch to a random ally.",
-        "target": "Normal",
-        "type": "Dragon",
-      },
-      "refIndex": 170,
+      "refIndex": 171,
     },
   ],
 }
@@ -191,7 +190,7 @@ Object {
         "target": "Normal",
         "type": "Dragon",
       },
-      "refIndex": 168,
+      "refIndex": 170,
     },
   ],
 }
@@ -214,7 +213,7 @@ Object {
         "target": "Self",
         "type": "Dragon",
       },
-      "refIndex": 164,
+      "refIndex": 165,
     },
     Object {
       "item": Object {
@@ -231,7 +230,22 @@ Object {
         "target": "Any",
         "type": "Flying",
       },
-      "refIndex": 161,
+      "refIndex": 162,
+    },
+    Object {
+      "item": Object {
+        "accuracy": 100,
+        "basePower": "150",
+        "category": "Special",
+        "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+        "name": "Dragon Energy",
+        "pp": 5,
+        "priority": 0,
+        "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
+        "target": "Adjacent Foes",
+        "type": "Dragon",
+      },
+      "refIndex": 167,
     },
   ],
 }

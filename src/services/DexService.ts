@@ -636,7 +636,7 @@ export default class DexService {
       pokemonName = Util.toTitleSnakeCase(baseForme);
     }
 
-    return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokemon)`;
+    return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokémon)`;
   }
 
   /**

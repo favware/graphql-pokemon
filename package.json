@@ -33,7 +33,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@discordjs/collection": "^0.1.6",
-    "@favware/eslint-config": "^6.0.1",
+    "@favware/eslint-config": "^6.0.2",
     "@favware/ts-config": "^3.0.4",
     "@graphql-codegen/cli": "^1.19.0",
     "@graphql-codegen/schema-ast": "^1.17.8",

@@ -2443,7 +2443,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
     }
   ],
-  
+
   [
     'poweranklet',
     {

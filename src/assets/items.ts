@@ -1150,6 +1150,14 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     }
   ],
   [
+    'fullrestore',
+    {
+      name: 'Full Restore',
+      gen: 1,
+      desc: 'A medicine that can be used to fully restore the HP of a single Pokémon and heal any status conditions it has. '
+    }
+  ],
+  [
     'galaricacuff',
     {
       name: 'Galarica Cuff',
@@ -1435,6 +1443,14 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 6,
       desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
       isNonstandard: 'Past'
+    }
+  ],
+  [
+    'hyperpotion',
+    {
+      name: 'Hyper Potion',
+      gen: 1,
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pokémon.'
     }
   ],
   [
@@ -1923,6 +1939,14 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 6,
       desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
       isNonstandard: 'Past'
+    }
+  ],
+  [
+    'maxpotion',
+    {
+      name: 'Max Potion',
+      gen: 1,
+      desc: 'A spray-type medicine for treating wounds. It can be used to completely restore the max HP of a single Pokémon.'
     }
   ],
   [
@@ -2419,6 +2443,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
     }
   ],
+
   [
     'poweranklet',
     {
@@ -2433,6 +2458,14 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Power Band',
       gen: 4,
       desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+    }
+  ],
+  [
+    'potion',
+    {
+      name: 'Potion',
+      gen: 1,
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon.'
     }
   ],
   [
@@ -3178,6 +3211,14 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 2,
       desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
       shortDesc: 'Evolves certain species of Pokemon when used.'
+    }
+  ],
+  [
+    'superpotion',
+    {
+      name: 'Super Potion',
+      gen: 1,
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon. '
     }
   ],
   [

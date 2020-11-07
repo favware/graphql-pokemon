@@ -17,9 +17,9 @@
 - [Installation](#installation)
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
-  - [NodeJS](#nodejs)
-    - [Using `Fetch`](#using-fetch)
-    - [Using `Apollo Client React`](#using-apollo-client-react)
+  - [Using `Fetch`](#using-fetch)
+  - [Using `Apollo Boost`](#using-apollo-boost)
+  - [Using `Apollo Client React`](#using-apollo-client-react)
 - [Meta](#meta)
   - [License](#license)
   - [Buy us a donut](#buy-us-a-donut)
@@ -85,9 +85,7 @@ For the full documentation of the deployed version please see [the GraphQL Playg
 
 # Usage
 
-## NodeJS
-
-### Using `Fetch`
+## Using `Fetch`
 
 ```ts
 import { Query } from '@favware/graphql-pokemon';
@@ -118,7 +116,45 @@ fetch('https://graphqlpokemon.favware.tech/', {
   .then((json) => console.log(json.data));
 ```
 
-### Using `Apollo Client React`
+## Using `Apollo Boost`
+
+_note: for a working example see [dexa]_
+
+```ts
+import { Query, QueryGetPokemonDetailsByFuzzyArgs } from '@favware/graphql-pokemon';
+import ApolloClient from 'apollo-boost';
+import fetch from 'cross-fetch';
+import gql from 'graphql-tag';
+
+type GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> = Record<K, Omit<Query[K], '__typename'>>;
+
+const getPokemonDetailsByFuzzy = gql`
+  query pokemonDetails($pokemon: String!) {
+    getPokemonDetailsByFuzzy(pokemon: $pokemon, skip: 0, take: 1, reverse: true) {
+      sprite
+      num
+      species
+      color
+    }
+  }
+`;
+
+const apolloClient = new ApolloClient({
+  uri: 'https://graphqlpokemon.favware.tech/',
+  fetch
+});
+
+const {
+  data: { getPokemonDetailsByFuzzy: pokemonData }
+} = await apolloClient.query<GraphQLPokemonResponse<'getPokemonDetailsByFuzzy'>, QueryGetPokemonDetailsByFuzzyArgs>({
+  query: getPokemonDetailsByFuzzy,
+  variables: { pokemon: 'dragonite' }
+});
+
+console.log(pokemonData);
+```
+
+## Using `Apollo Client React`
 
 ```ts
 // ApolloClient setup
@@ -226,6 +262,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
@@ -237,3 +274,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
 [github package registry]: https://github.com/favware/graphql-pokemon/packages
 [dockerhub]: https://hub.docker.com/r/favware/graphql-pokemon
+[dexa]: https://github.com/favware/dexa

@@ -18,8 +18,8 @@
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
   - [NodeJS](#nodejs)
-    - [With browser [`Fetch API`] or [`node-fetch`]](#with-browser-fetch-api-or-node-fetch)
-    - [With [`Apollo Client React`]](#with-apollo-client-react)
+    - [Using `Fetch`](#using-fetch)
+    - [Using `Apollo Client React`](#using-apollo-client-react)
 - [Meta](#meta)
   - [License](#license)
   - [Buy us a donut](#buy-us-a-donut)
@@ -87,7 +87,7 @@ For the full documentation of the deployed version please see [the GraphQL Playg
 
 ## NodeJS
 
-### With browser [`Fetch API`] or [`node-fetch`]
+### Using `Fetch`
 
 ```ts
 import { Query } from '@favware/graphql-pokemon';
@@ -114,11 +114,11 @@ fetch('https://graphqlpokemon.favware.tech/', {
     `
   })
 })
-  .then((res) => res.json() as GraphQLPokemonResponse<'getPokemonDetails'>)
+  .then((res) => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
   .then((json) => console.log(json.data));
 ```
 
-### With [`Apollo Client React`]
+### Using `Apollo Client React`
 
 ```ts
 // ApolloClient setup
@@ -200,8 +200,7 @@ You can contribute in a multitude of ways:
 - [PayPal](https://donate.favware.tech/paypal)
 - [Patreon](https://donate.favware.tech/patreon)
 - [Ko-Fi](https://donate.favware.tech/kofi)
-- [GitHub Sponsors Favware](https://github.com/sponsors/favware)
-- [GitHub Sponsors Favna](https://github.com/sponsors/Favna)
+- [GitHub Sponsors](https://github.com/sponsors/Favna)
 - Bitcoin: `1E643TNif2MTh75rugepmXuq35Tck4TnE5`
 - Ethereum: `0xF653F666903cd8739030D2721bF01095896F5D6E`
 - LiteCoin: `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`
@@ -233,9 +232,6 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 <!-- LINK DUMP -->
 
-[`apollo client react`]: https://www.apollographql.com/docs/react/
-[`node-fetch`]: https://github.com/node-fetch/node-fetch
-[`fetch api`]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [the graphql playground on the api]: https://graphqlpokemon.favware.tech
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon

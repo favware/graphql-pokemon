@@ -92,7 +92,7 @@ _These examples are written as based on TypeScript. For JavaScript simply change
 ## Using `Fetch`
 
 ```ts
-import { Query } from '@favware/graphql-pokemon';
+import type { Query } from '@favware/graphql-pokemon';
 
 interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
   data: Record<K, Omit<Query[K], '__typename'>>;
@@ -125,7 +125,7 @@ fetch('https://graphqlpokemon.favware.tech/', {
 _note: for a working example see [dexa]_
 
 ```ts
-import { Query, QueryGetPokemonDetailsByFuzzyArgs } from '@favware/graphql-pokemon';
+import type { Query, QueryGetPokemonDetailsByFuzzyArgs } from '@favware/graphql-pokemon';
 import ApolloClient from 'apollo-boost';
 import fetch from 'cross-fetch';
 import gql from 'graphql-tag';
@@ -194,7 +194,7 @@ export const client = new ApolloClient({
 import React from 'react';
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
-import { Query } from '@favware/graphql-pokemon';
+import type { Query } from '@favware/graphql-pokemon';
 import { client } from './ApolloClient';
 
 interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {

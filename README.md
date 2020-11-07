@@ -67,6 +67,8 @@
 
 # Installation
 
+**_Note: This is only needed if you are writing TypeScript, or if you're using a GraphQL schema validator. If you're using neither of these, you do not need to install this package. The package does NOT include the actual API, ONLY type information._**
+
 Install client side typings from [yarn] or [npm]:
 
 ```sh
@@ -84,6 +86,8 @@ npm install -D @favware/graphql-pokemon
 For the full documentation of the deployed version please see [the GraphQL Playground on the API].
 
 # Usage
+
+_These examples are written as based on TypeScript. For JavaScript simply change out the imports to `require` syntax and remove any type information._
 
 ## Using `Fetch`
 
@@ -227,19 +231,21 @@ export const Pokemon: React.FC = () => {
 Copyright © 2019, [Favware](https://github.com/favware).
 Released under the [MIT License](LICENSE.md).
 
-## Buy us a donut
+## Buy us some doughnuts
 
-Favware projects are open source and always will be, even if there are no donations. That said, we also know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
+Favware projects is and always will be open source, even if we don't get donations. That being said, we know there are amazing people who may still want to donate just to show their appreciation. Thank you very much in advance!
 
-You can contribute in a multitude of ways:
+We accept donations through Ko-fi, Paypal, Patreon, GitHub Sponsorships, and various crypto currencies. You can use the buttons below to donate through your method of choice.
 
-- [PayPal](https://donate.favware.tech/paypal)
-- [Patreon](https://donate.favware.tech/patreon)
-- [Ko-Fi](https://donate.favware.tech/kofi)
-- [GitHub Sponsors](https://github.com/sponsors/Favna)
-- Bitcoin: `1E643TNif2MTh75rugepmXuq35Tck4TnE5`
-- Ethereum: `0xF653F666903cd8739030D2721bF01095896F5D6E`
-- LiteCoin: `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`
+|   Donate With   |                      Address                      |
+| :-------------: | :-----------------------------------------------: |
+|      Ko-fi      |  [Click Here](https://donate.favware.tech/kofi)   |
+|     Patreon     | [Click Here](https://donate.favware.tech/patreon) |
+|     PayPal      | [Click Here](https://donate.favware.tech/paypal)  |
+| GitHub Sponsors |  [Click Here](https://github.com/sponsors/Favna)  |
+|     Bitcoin     |       `1E643TNif2MTh75rugepmXuq35Tck4TnE5`        |
+|    Ethereum     |   `0xF653F666903cd8739030D2721bF01095896F5D6E`    |
+|    LiteCoin     |       `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`        |
 
 ## Contributors ✨
 

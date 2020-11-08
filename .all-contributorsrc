@@ -78,7 +78,17 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "mudkipscience",
+      "name": "Emily",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/37792540?v=4",
+      "profile": "https://github.com/mudkipscience",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }

@@ -66,7 +66,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'Prevents adjacent opposing Pokemon from choosing to switch out unless they are immune to trapping or are airborne.',
       shortDesc: 'Prevents adjacent foes from choosing to switch unless they are airborne.',
-      name: 'Arena Trap'
+      name: 'Arena Trap',
+      isFieldAbility: 'From Pokemon Emerald onwards, having a Pokemon with Arena Trap at the front of your party will double the encounter rate of all wild pokemon (even if fainted)'
     }
   ],
   [
@@ -247,7 +248,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'compoundeyes',
     {
       shortDesc: "This Pokemon's moves have their accuracy multiplied by 1.3.",
-      name: 'Compound Eyes'
+      name: 'Compound Eyes',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, having a Pokemon with Compound Eyes at the front of your party increases the chances of finding a wild Pokemon holding an item increase from 50%/5% to 60%/20%. In dark grass in Generation V, the chances increase from 50%/5%/1% to 60%/20%/5%.'
     }
   ],
   [
@@ -294,7 +297,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender.',
       shortDesc: '30% chance of infatuating Pokemon of the opposite gender if they make contact.',
-      name: 'Cute Charm'
+      name: 'Cute Charm',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, if a Pokemon with Cute Charm is at the front of the party (even if fainted), there is a 66.7% chance that a Pokemon of the opposite gender to the Pokemon with Cute Charm will be encountered. This does not affect swarming Pokemon species (except in Generation IV) or Pokemon found in Hidden Grottos.'
     }
   ],
   [
@@ -468,7 +473,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'flamebody',
     {
       shortDesc: '30% chance a Pokemon making contact with this Pokemon will be burned.',
-      name: 'Flame Body'
+      name: 'Flame Body',
+      isFieldAbility: 'From Pokemon Emerald onward, having a Pokemon with Flame Body in your party will halve the number of cycles it takes for all eggs in the party to hatch.'
     }
   ],
   [
@@ -485,7 +491,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc:
         'This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its attacking stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks.',
       shortDesc: "This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.",
-      name: 'Flash Fire'
+      name: 'Flash Fire',
+      isFieldAbility:
+        'In Generation VIII, If you have a Pokemon with Flash Fire at the front of your party (even if fainted), there is a 50% chance an encounter with a Fire-type Pokemon will be forced, if possible.'
     }
   ],
   [
@@ -634,7 +642,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'If the last item this Pokemon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.',
       shortDesc: 'If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun.',
-      name: 'Harvest'
+      name: 'Harvest',
+      isFieldAbility:
+        'In Generation VIII, If you have a Pokemon with Harvest at the front of your party (even if fainted), there is a 50% chance an encounter with a Grass-type Pokemon will be forced, if possible.'
     }
   ],
   [
@@ -660,7 +670,15 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       name: 'Heavy Metal'
     }
   ],
-  ['honeygather', { shortDesc: 'No competitive use.', name: 'Honey Gather' }],
+  [
+    'honeygather',
+    {
+      shortDesc: 'No competitive use.',
+      name: 'Honey Gather',
+      isFieldAbility:
+        'A Pokemon with Honey Gather may collect Honey after a battle if it is not already holding an item. The chance for a Pokémon with Honey Gather to pick up Honey depends on its level, starting at 5% if the Pokémon is between levels 1 and 10, and going up by 5% every ten levels, ending at a 50% chance from levels 91-100.'
+    }
+  ],
   [
     'hugepower',
     {
@@ -680,7 +698,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: "This Pokemon's Attack is multiplied by 1.5 and the accuracy of its physical attacks is multiplied by 0.8.",
       shortDesc: "This Pokemon's Attack is 1.5x and accuracy of its physical attacks is 0.8x.",
-      name: 'Hustle'
+      name: 'Hustle',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, if you have a Pokemon with Hustle at the front of your party (even if fainted), there is a 50% chance that a Pokemon will be forced to the upper bound of their encounter level range.'
     }
   ],
   [
@@ -696,7 +716,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'hypercutter',
     {
       shortDesc: "Prevents other Pokemon from lowering this Pokemon's Attack stat stage.",
-      name: 'Hyper Cutter'
+      name: 'Hyper Cutter',
+      isFieldAbility:
+        "In Pokemon Emerald only, if a Pokemon with Hyper CUtter uses cut in the overworld, it will remove all tall grass within a two-square radius of the player's position, as opposed to a one-square radius without this Ability."
     }
   ],
   [
@@ -728,7 +750,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'illuminate',
     {
       shortDesc: 'No competitive use.',
-      name: 'Illuminate'
+      name: 'Illuminate',
+      isFieldAbility: 'From Pokémon Emerald onwards, if a Pokémon with Illuminate is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.'
     }
   ],
   [
@@ -744,7 +767,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'immunity',
     {
       shortDesc: 'This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it.',
-      name: 'Immunity'
+      name: 'Immunity',
+      isFieldAbility: 'In Generations III and IV, Pokemon with Immunity cannot take damage from poison outside of battle.'
     }
   ],
   [
@@ -760,7 +784,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: "This Pokemon's moves ignore substitutes and the opposing side's Reflect, Light Screen, Safeguard, Mist and Aurora Veil.",
       shortDesc: "Moves ignore substitutes and foe's Reflect/Light Screen/Safeguard/Mist/Aurora Veil.",
-      name: 'Infiltrator'
+      name: 'Infiltrator',
+      isFieldAbility: 'In Generation VIII, if a Pokemon with Infiltrator is placed at the front of the party, wild Pokemon are less likely to appear.'
     }
   ],
   [
@@ -790,7 +815,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'On switch-in, this Pokemon lowers the Attack of adjacent opposing Pokemon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokemon behind a substitute are immune.',
       shortDesc: 'On switch-in, this Pokemon lowers the Attack of adjacent opponents by 1 stage.',
-      name: 'Intimidate'
+      name: 'Intimidate',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, if a Pokemon with Intimidate is at the front of your party (even if fainted), there is a 50% chance it will prevent a random wild encounter that would have occurred if the wild Pokémon would be at least 5 levels lower than the Pokémon with Intimidate.'
     }
   ],
   [
@@ -828,7 +855,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
       shortDesc: "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.",
-      name: 'Keen Eye'
+      name: 'Keen Eye',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, if a Pokemon with Keen Eye is at the front of your party (even if fainted), there is a 50% chance it will prevent a random wild encounter that would have occurred if the wild Pokémon would be at least 5 levels lower than the Pokémon with Keen Eye.'
     }
   ],
   [
@@ -878,7 +907,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc:
         'This Pokemon is immune to Electric-type moves and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move.',
       shortDesc: 'This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.',
-      name: 'Lightning Rod'
+      name: 'Lightning Rod',
+      isFieldAbility:
+        "In Pokémon Emerald, Trainers registered with the PokéNav's Match Call function will call twice as often if a Pokémon with Lightning Rod is in the first place in the party (even if fainted).\nIn Pokémon Sword and Shield, if a Pokémon with Lightning Rod is in the first place in the party, there is a 50% chance the game will force an encounter with an Electric-type Pokémon, if one is possible."
     }
   ],
   [
@@ -938,7 +969,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'magmaarmor',
     {
       shortDesc: 'This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.',
-      name: 'Magma Armor'
+      name: 'Magma Armor',
+      isFieldAbility: 'From Pokemon Emerald onward, having a Pokemon with Magma Armor in your party will halve the number of cycles it takes for all eggs in the party to hatch.'
     }
   ],
   [
@@ -1092,7 +1124,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'noguard',
     {
       shortDesc: 'Every move used by or against this Pokemon will always hit.',
-      name: 'No Guard'
+      name: 'No Guard',
+      isFieldAbility: 'From Pokémon Emerald onwards, if a Pokémon with No Guard is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.'
     }
   ],
   [
@@ -1180,7 +1213,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'pickup',
     {
       shortDesc: 'If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn.',
-      name: 'Pickup'
+      name: 'Pickup',
+      isFieldAbility: 'After winning a battle, there is a 10% chance that a Pokemon with Pickup will create a held item for itself, even if fainted.'
     }
   ],
   [
@@ -1258,7 +1292,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP.",
       shortDesc: "If this Pokemon is the target of a foe's move, that move loses one additional PP.",
-      name: 'Pressure'
+      name: 'Pressure',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, if you have a Pokemon with Pressure at the front of your party (even if fainted), there is a 50% chance that a Pokemon will be forced to the upper bound of their encounter level range.'
     }
   ],
   [
@@ -1335,7 +1371,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'If this Pokemon has a major status condition, its Speed is multiplied by 1.5; the Speed drop from paralysis is ignored.',
       shortDesc: 'If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.',
-      name: 'Quick Feet'
+      name: 'Quick Feet',
+      isFieldAbility: 'If a Pokémon with Quick Feet is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1471,7 +1508,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: "If Sandstorm is active, this Pokemon's evasiveness is multiplied by 1.25. This Pokemon takes no damage from Sandstorm.",
       shortDesc: "If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm.",
-      name: 'Sand Veil'
+      name: 'Sand Veil',
+      isFieldAbility:
+        'From Pokémon Emerald onwards, if a Pokémon with Sand Veil is in the first place in the party (even if fainted) in an area with a sandstorm, the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1610,7 +1649,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: "If Hail is active, this Pokemon's evasiveness is multiplied by 1.25. This Pokemon takes no damage from Hail.",
       shortDesc: "If Hail is active, this Pokemon's evasiveness is 1.25x; immunity to Hail.",
-      name: 'Snow Cloak'
+      name: 'Snow Cloak',
+      isFieldAbility: 'If a Pokémon with Snow Cloak is in the first place in the party (even if fainted) in an area with hail, the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1699,7 +1739,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'static',
     {
       shortDesc: '30% chance a Pokemon making contact with this Pokemon will be paralyzed.',
-      name: 'Static'
+      name: 'Static',
+      isFieldAbility:
+        'In Pokémon Sword and Shield, if a Pokémon with Static is in the first place in the party, there is a 50% chance the game will force an encounter with an Electric-type Pokémon, if one is possible.'
     }
   ],
   [
@@ -1714,7 +1756,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'When a Pokémon with Steam Engine is hit by a Fire-type or Water-type move, its Speed stat is increased by six stages.',
       shortDesc: "This Pokemon's Speed is raised by 6 stages after it is damaged by Fire/Water moves.",
-      name: 'Steam Engine'
+      name: 'Steam Engine',
+      isFieldAbility: 'From Pokemon Emerald onward, having a Pokemon with Steam Engine in your party will halve the number of cycles it takes for all eggs in the party to hatch.'
     }
   ],
   [
@@ -1735,14 +1778,16 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'stench',
     {
       shortDesc: "This Pokemon's attacks without a chance to flinch have a 10% chance to flinch.",
-      name: 'Stench'
+      name: 'Stench',
+      isFieldAbility: 'If a Pokémon with Stench is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
     'stickyhold',
     {
       shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's attack.",
-      name: 'Sticky Hold'
+      name: 'Sticky Hold',
+      isFieldAbility: 'From Pokémon Emerald onwards, if a Pokémon with Sticky Hold is in the first place in the party (even if fainted), bites will occur more often while fishing.'
     }
   ],
   [
@@ -1751,7 +1796,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc:
         'This Pokemon is immune to Water-type moves and raises its Special Attack by 1 stage when hit by a Water-type move. If this Pokemon is not the target of a single-target Water-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move.',
       shortDesc: 'This Pokemon draws Water moves to itself to raise Sp. Atk by 1; Water immunity.',
-      name: 'Storm Drain'
+      name: 'Storm Drain',
+      isFieldAbility:
+        'In Pokémon Sword and Shield, if a Pokémon with Storm Drain is in the first place in the party (even if fainted), then there is a 50% chance the game will force an encounter with a Water-type Pokémon, if one is possible.'
     }
   ],
   [
@@ -1774,14 +1821,16 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'suctioncups',
     {
       shortDesc: "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
-      name: 'Suction Cups'
+      name: 'Suction Cups',
+      isFieldAbility: 'From Pokémon Emerald onwards, if a Pokémon with Suction Cups is in the first place in the party (even if fainted), bites will occur more often while fishing.'
     }
   ],
   [
     'superluck',
     {
       shortDesc: "This Pokemon's critical hit ratio is raised by 1 stage.",
-      name: 'Super Luck'
+      name: 'Super Luck',
+      isFieldAbility: 'In Generation VIII, if a Pokémon with this Ability leads the party, the chances of finding a wild Pokémon holding an item increase.'
     }
   ],
   [
@@ -1796,7 +1845,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.',
       shortDesc: "At 1/3 or less of its max HP, this Pokemon's attacking stat is 1.5x with Bug attacks.",
-      name: 'Swarm'
+      name: 'Swarm',
+      isFieldAbility: 'In Pokémon Emerald, this Ability also increases the frequency cries of wild Pokémon that are heard in the overworld.'
     }
   ],
   [
@@ -1827,7 +1877,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same major status condition.',
       shortDesc: 'If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status.',
-      name: 'Synchronize'
+      name: 'Synchronize',
+      isFieldAbility:
+        'From Pokemon Emerald up to Generation VII, if a Pokemon with Synchronize in the first slot in the party (even if fainted), chance of encountering a wild Pokémon with the same nature will be 50%. In Generation VIII, all wild Pokemon are guaranteed to have the same nature as the Pokemon with Synchronize, exluding gift Pokemon and Pokemon obtained from max raid battles. Roaming Pokemon, Gift Pokemon (excluding Pokemon obtained via mystery gift or eggs in Omega Ruby and Alpha Sapphire to Ultra Sun/Moon), Stationary Pokemon in Pokemon Emerald, Pokemon in the Pokewalker and Pokemon found in Entree Forest are also not affected by this ability.'
     }
   ],
   [
@@ -1985,7 +2037,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'vitalspirit',
     {
       shortDesc: 'This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.',
-      name: 'Vital Spirit'
+      name: 'Vital Spirit',
+      isFieldAbility:
+        'From Pokemon Emerald onwards, if you have a Pokemon with Vital Spirit at the front of your party (even if fainted), there is a 50% chance that a Pokemon will be forced to the upper bound of their encounter level range. In Generation V, Vital Spirit also prevented a Pokémon from visiting the Dream World before it was shut down.'
     }
   ],
   [
@@ -2046,7 +2100,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'whitesmoke',
     {
       shortDesc: "Prevents other Pokemon from lowering this Pokemon's stat stages.",
-      name: 'White Smoke'
+      name: 'White Smoke',
+      isFieldAbility: 'If a Pokémon with White Smoke is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [

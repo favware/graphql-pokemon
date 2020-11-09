@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/favware/graphql-pokemon/compare/v4.4.0...v4.5.0) (2020-11-09)
+
+
+### Features
+
+* add information on out-of-battle effects to move & ability info ([#336](https://github.com/favware/graphql-pokemon/issues/336)) ([f7e8d11](https://github.com/favware/graphql-pokemon/commit/f7e8d11a7368f4d643ed0e8b94c7d5103cb71d6d))
+
+
+### Bug Fixes
+
+* **items:** add info for potions ([#332](https://github.com/favware/graphql-pokemon/issues/332)) ([b52f151](https://github.com/favware/graphql-pokemon/commit/b52f1513a7a5ce600333777caa21443a353ef2d9))
+* **items:** add obtainable items ([#321](https://github.com/favware/graphql-pokemon/issues/321)) ([65e1cc7](https://github.com/favware/graphql-pokemon/commit/65e1cc70f03a8b3810d8bb8be53650a6942d40f0))
+
 ## [4.4.0](https://github.com/favware/graphql-pokemon/compare/v4.3.0...v4.4.0) (2020-10-25)
 
 

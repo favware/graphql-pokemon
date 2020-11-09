@@ -280,7 +280,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'curiousmedicine',
     {
-      shortDesc: 'On switch-in, allies stat changes are reset to 0.',
+      shortDesc: "On switch-in, this Pokémon's allies have their stat stages reset to 0.",
       name: 'Curious Medicine'
     }
   ],
@@ -396,7 +396,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'dragonsmaw',
     {
-      shortDesc: "This Pokémon's attacking stat is multiplied by 1.5 while using an Dragon-type attack.",
+      shortDesc: "This Pokémon's attacking stat is multiplied by 1.5 while using a Dragon-type attack.",
       name: "Dragon's Maw"
     }
   ],
@@ -1090,7 +1090,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'mummy',
     {
       desc:
-        'Pokémon making contact with this Pokémon have their Ability changed to Mummy. Does not affect the Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, and Zen Mode Abilities.',
+        'Pokémon making contact with this Pokémon have their Ability changed to Mummy. Does not affect a Pokémon which already has Mummy or the Abilities As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, and Zen Mode.',
       shortDesc: 'Pokémon making contact with this Pokémon have their Ability changed to Mummy.',
       name: 'Mummy'
     }
@@ -1114,7 +1114,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'neutralizinggas',
     {
       desc:
-        'While this Pokémon is active, Abilities have no effect. Does not affect the Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.',
+        'While this Pokémon is active, Abilities have no effect. Does not affect the Abilities As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.',
       shortDesc: 'While this Pokémon is active, Abilities have no effect.',
       name: 'Neutralizing Gas'
     }
@@ -1267,7 +1267,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'powerofalchemy',
     {
       desc:
-        'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Stance Change, Trace, Wonder Guard, and Zen Mode.',
+        'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are "No Ability", As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.',
       shortDesc: 'This Pokémon copies the Ability of an ally that faints.',
       name: 'Power of Alchemy'
     }
@@ -1409,7 +1409,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'receiver',
     {
       desc:
-        'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Stance Change, Trace, Wonder Guard, and Zen Mode.',
+        'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are "No Ability", As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.',
       shortDesc: 'This Pokémon copies the Ability of an ally that faints.',
       name: 'Receiver'
     }
@@ -1958,7 +1958,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'trace',
     {
       desc:
-        'On switch-in, or when this Pokémon acquires this ability, this Pokémon copies a random adjacent opposing Pokémon\'s Ability. However, if one or more adjacent Pokémon has the Ability "No Ability", Trace won\'t copy anything even if there is another valid Ability it could normally copy. Otherwise, if there is no Ability that can be copied at that time, this Ability will activate as soon as an Ability can be copied. Abilities that cannot be copied are the previously mentioned "No Ability", as well as Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, and Zen Mode.',
+        'On switch-in, or when this Pokémon acquires this ability, this Pokémon copies a random adjacent opposing Pokémon\'s Ability. However, if one or more adjacent Pokémon has the Ability "No Ability", Trace won\'t copy anything even if there is another valid Ability it could normally copy. Otherwise, if there is no Ability that can be copied at that time, this Ability will activate as soon as an Ability can be copied. Abilities that cannot be copied are the previously mentioned "No Ability", as well as As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, and Zen Mode.',
       shortDesc: "On switch-in, or when it can, this Pokémon copies a random adjacent foe's Ability.",
       name: 'Trace'
     }
@@ -2051,6 +2051,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'wanderingspirit',
     {
+      desc:
+        'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect a Pokémon which has the Ability As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.',
       shortDesc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one.',
       name: 'Wandering Spirit'
     }

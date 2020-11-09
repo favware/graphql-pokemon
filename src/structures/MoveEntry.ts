@@ -68,6 +68,12 @@ export default class MoveEntry {
   })
   isGMax?: string;
 
+  @Field(() => String, {
+    nullable: true,
+    description: 'Whether this move can be used outside of battle, and if it can what the effect of the field move is'
+  })
+  isFieldMove?: string;
+
   @Field(() => String, { nullable: true, description: 'The long description for a move' })
   desc?: string;
 }

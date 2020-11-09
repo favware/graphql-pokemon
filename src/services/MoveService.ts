@@ -58,6 +58,7 @@ export default class MoveService {
     addPropertyToClass(moveEntry, 'isNonstandard', moveData.isNonstandard, requestedFields);
     addPropertyToClass(moveEntry, 'isGMax', moveData.isGMax, requestedFields);
     addPropertyToClass(moveEntry, 'isZ', Util.parseZCrystal(moveData.isZ), requestedFields);
+    addPropertyToClass(moveEntry, 'isFieldMove', moveData.isFieldMove, requestedFields);
     addPropertyToClass(moveEntry, 'maxMovePower', moveData.maxMovePower, requestedFields);
     addPropertyToClass(
       moveEntry,

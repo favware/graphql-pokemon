@@ -69,6 +69,7 @@ export namespace Pokemon {
     desc?: string;
     shortDesc: string;
     name: string;
+    isFieldAbility?: string;
   }
 
   export interface Item {
@@ -93,6 +94,7 @@ export namespace Pokemon {
     isNonstandard?: string;
     isGMax?: string;
     isZ?: string;
+    isFieldMove?: string;
     desc?: string;
     maxMovePower?: number;
     zMovePower?: number;

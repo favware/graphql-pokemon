@@ -53,6 +53,7 @@ export default class AbilityService {
     addPropertyToClass(abilityEntry, 'desc', abilityData.desc, requestedFields);
     addPropertyToClass(abilityEntry, 'shortDesc', abilityData.shortDesc, requestedFields);
     addPropertyToClass(abilityEntry, 'name', abilityData.name, requestedFields);
+    addPropertyToClass(abilityEntry, 'isFieldAbility', abilityData.isFieldAbility, requestedFields);
     addPropertyToClass(
       abilityEntry,
       'bulbapediaPage',

@@ -11,6 +11,12 @@ export default class AbilityEntry {
   @Field(() => String, { description: 'The name for an ability' })
   name!: string;
 
+  @Field(() => String, {
+    nullable: true,
+    description: 'Whether this ability has effects outside of battle, and if so what the effect is'
+  })
+  isFieldAbility?: string;
+
   @Field(() => String, { description: 'Bulbapedia page for an ability' })
   bulbapediaPage!: string;
 

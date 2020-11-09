@@ -1644,7 +1644,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Any',
       type: 'Flying',
       contestType: 'Cute',
-      maxMovePower: 120
+      maxMovePower: 120,
+      isFieldMove:
+        "It can be used to record and temporarily alter the battle cry of a Chatot. It does not function correctly with other Pokémon. The recorded audio is reset to Chatot's default cry when it is deposited into a box."
     }
   ],
   [
@@ -2268,7 +2270,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Cool',
-      maxMovePower: 100
+      maxMovePower: 100,
+      isFieldMove: 'The Pokemon is able to cut down small trees, and prior to gen 4, tall grass. It is taught to Pokemon with HM01 in all generations.'
     }
   ],
   [
@@ -2397,7 +2400,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Normal',
       type: 'Flying',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      isFieldMove: 'The Pokemon can clear out fog on the field. Defog can be taught to a Pokemon by using HM05 in Diamond, Pearl, and Platinum. Since Generation V, it has lost its HM status.'
     }
   ],
   [
@@ -2479,7 +2483,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Ground',
       contestType: 'Tough',
-      maxMovePower: 130
+      maxMovePower: 130,
+      isFieldMove:
+        'The Pokémon can dig the player out of a cavern to the place where the player entered it, similar to an Escape Rope. It can be taught to a Pokémon by using TM28 in all generations. Several Pokémon can also learn the move by leveling up.'
     }
   ],
   [
@@ -2546,7 +2552,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Water',
       contestType: 'Beautiful',
-      maxMovePower: 130
+      maxMovePower: 130,
+      isFieldMove:
+        "The player can dive underwater on the Pokemon's back while surfing over deep waters. It can be taught to a Pokemon by using HM08 in Ruby, Sapphire, and Emerald. Since Generation IV it has been a regular level-up move. In Generation V, it has regained HM status as HM06; in Pokemon X and Y, it again lost its HM status; in Omega Ruby and Alpha Sapphire, it again regained HM status as HM07."
     }
   ],
   [
@@ -3950,7 +3958,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       isNonstandard: 'Past',
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Beautiful'
+      contestType: 'Beautiful',
+      isFieldMove: 'The Pokemon is able to light up dark caverns. Flash is taught to Pokemon with HM05 in the first three generations, and with TM70 since Generation IV.'
     }
   ],
   [
@@ -4109,7 +4118,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Any',
       type: 'Flying',
       contestType: 'Clever',
-      maxMovePower: 130
+      maxMovePower: 130,
+      isFieldMove: 'The Pokemon can fly the player to any previously visited town/landmark. Fly can be taught to Pokemon with HM02 in all generations.'
     }
   ],
   [
@@ -5615,7 +5625,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Tough',
-      maxMovePower: 120
+      maxMovePower: 120,
+      isFieldMove:
+        "The Pokémon can shake a small tree which may cause a wild Pokémon to fall down. It can be taught to a Pokémon by using TM02 in Generation II. Though available as a level up move in Generation I and future generations, it only had status as a field move in Generation II and Generation IV's HeartGold and SoulSilver."
     }
   ],
   [
@@ -7855,7 +7867,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Self',
       type: 'Normal',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      isFieldMove: "Tthe Pokémon cuts some of its HP to recover another Pokémon's HP. It can be learned by Miltank, Skiddo and Gogoat by leveling up."
     }
   ],
   [
@@ -10022,7 +10035,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       isNonstandard: 'Past',
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Tough'
+      contestType: 'Tough',
+      isFieldMove: 'The Pokemon can climb up rocky walls. Rock climb can be taught to a Pokemon by using HM08 in Generation IV. Since Generation V, it has lost its HM status.'
     }
   ],
   [
@@ -10072,7 +10086,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Fighting',
       contestType: 'Tough',
-      maxMovePower: 70
+      maxMovePower: 70,
+      isFieldMove:
+        'The Pokemon can smash small boulders. Rock smash can be taught to a Pokemon by using TM08 in Generation II, by using HM06 in Generations III and IV, TM94 in Generation V and Pokemon X and Y, and HM06 in Omega Ruby and Alpha Sapphire.'
     }
   ],
   [
@@ -10512,7 +10528,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       isNonstandard: 'Past',
       target: 'Normal',
       type: 'Normal',
-      contestType: 'Clever'
+      contestType: 'Clever',
+      isFieldMove:
+        "The Pokémon can clear an entrance into a big tree, a bush or an indent in a wall in order to create a Secret Base in Generation III's Ruby, Sapphire and Emerald and Generation VI's Omega Ruby and Alpha Sapphire. It is taught to Pokemon using TM43 in Generations III and IV, and TM94 in Generation VI."
     }
   ],
   [
@@ -11413,7 +11431,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Self',
       type: 'Normal',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      isFieldMove:
+        "The Pokémon cuts 20% of its HP to recover another Pokémon's HP. It can be taught to a Pokémon by using TM41 in Generation I, and it can be learned via level-up by Chansey and Blissey as well as certain Pokémon via a Move Tutor in Pokémon FireRed and LeafGreen."
     }
   ],
   [
@@ -12051,7 +12071,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Tough',
-      maxMovePower: 130
+      maxMovePower: 130,
+      isFieldMove: 'The Pokemon is able to push certain types of boulders around. Strength can be taught to Pokemon with HM04 in all generations.'
     }
   ],
   [
@@ -12325,7 +12346,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'All Adjacent',
       type: 'Water',
       contestType: 'Beautiful',
-      maxMovePower: 130
+      maxMovePower: 130,
+      isFieldMove: "The player can travel across water on the Pokemon's back. Surf can be taught to Pokemon with HMO3 in all generations."
     }
   ],
   [
@@ -12422,7 +12444,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       target: 'Adjacent Foes',
       type: 'Normal',
-      contestType: 'Cute'
+      contestType: 'Cute',
+      isFieldMove:
+        'The Pokémon can activate a wild Pokémon battle in tall grass, caves, and water. It can be taught to a Pokémon by using TM12 in Generation II, and it can be learned by many Grass-type Pokémon.'
     }
   ],
   [
@@ -12744,7 +12768,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -6,
       target: 'Self',
       type: 'Psychic',
-      contestType: 'Cool'
+      contestType: 'Cool',
+      isFieldMove:
+        'The Pokémon can teleport the player to the front of the last visited Pokémon Center by using telekinesis. It can be taught to a Pokémon by using TM30 in Generation I, and it can be learned by many Psychic-type Pokémon.'
     }
   ],
   [
@@ -13586,7 +13612,9 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Water',
       contestType: 'Tough',
-      maxMovePower: 130
+      maxMovePower: 130,
+      isFieldMove:
+        "The player can climb up waterfalls on the Pokemon's back. Waterfall can be taught to Pokemon with HM07 in generations II, III and IV, and HM05 in generation 5 onwards. It was available in generation I as a level-up move, but did not have any out-of-battle effects."
     }
   ],
   [
@@ -13623,7 +13651,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Water',
       contestType: 'Beautiful',
-      maxMovePower: 90
+      maxMovePower: 90,
+      isFieldMove: "The Pokemon can dismiss small whirlpools in the water. Whirlpool is taught to Pokemon with HM06 in generation II and generation IV's HeartGold and SoulSilver as HM05"
     }
   ],
   [

@@ -1166,6 +1166,14 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     }
   ],
   [
+    'galaricawreath',
+    {
+      name: 'Galarica Wreath',
+      gen: 8,
+      desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.'
+    }
+  ],
+  [
     'galladite',
     {
       name: 'Galladite',

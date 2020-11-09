@@ -1983,7 +1983,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '100',
       category: 'Special',
       desc:
-        "If the user moves after the target, the target's Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.",
+        "If the user moves after the target, the target's Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.",
       shortDesc: 'Nullifies the foe(s) Ability if the target moves first.',
       name: 'Core Enforcer',
       pp: 10,
@@ -3132,6 +3132,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Special',
+      desc: 'If this move is successful and the user has not fainted, the target loses 3 PP from its last move.',
       shortDesc: "Removes 3 PP from the target's last move.",
       name: 'Eerie Spell',
       pp: 5,
@@ -3328,7 +3329,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or the same Ability as the user, or if the user's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode.",
+        "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode, or the same Ability as the user, or if the user's Ability is As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, or Zen Mode.",
       shortDesc: "The target's Ability changes to match the user's.",
       name: 'Entrainment',
       pp: 15,
@@ -3669,7 +3670,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '90',
       category: 'Special',
-      shortDesc: 'Hits foe(s). 20% chance to flinch each foe.',
+      desc: 'Has a 20% chance to flinch the target.',
+      shortDesc: '20% chance to flinch the foe(s).',
       name: 'Fiery Wrath',
       pp: 10,
       priority: 0,
@@ -4479,7 +4481,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this move fails, and receiving the effect through Baton Pass ends the effect immediately.",
+        "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this move fails, and receiving the effect through Baton Pass ends the effect immediately.",
       shortDesc: "Nullifies the target's Ability.",
       name: 'Gastro Acid',
       pp: 10,
@@ -6429,7 +6431,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The target immediately uses its last used move. Fails if the target has not made a move, if the move has 0 PP, if the target is Dynamaxed, if the target is preparing to use Beak Blast, Focus Punch, or Shell Trap, or if the move is Assist, Beak Blast, Belch, Bide, Celebrate, Copycat, Dynamax Cannon, Focus Punch, Ice Ball, Instruct, King's Shield, Me First, Metronome, Mimic, Mirror Move, Nature Power, Outrage, Petal Dance, Rollout, Shell Trap, Sketch, Sleep Talk, Struggle, Thrash, Transform, Uproar, any two-turn move, any recharge move, any Z-Move, or any Max or G-Max Move.",
+        "A random move is selected for use, other than After You, Apple Acid, Assist, Astral Barrage, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Clangorous Soul, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Double Iron Bash, Dragon Ascent, Dragon Energy, Drum Beating, Dynamax Cannon, Endure, Eternabeam, False Surrender, Feint, Fiery Wrath, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Freezing Glare, Glacial Lance, Grav Apple, Helping Hand, Hold Hands, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, Jungle Healing, King's Shield, Life Dew, Light of Ruin, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Obstruct, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Shell Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Spectral Thief, Spiky Shield, Spirit Break, Spotlight, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Surging Strikes, Switcheroo, Techno Blast, Thief, Thousand Arrows, Thousand Waves, Thunder Cage, Thunderous Kick, Transform, Trick, V-create, Wicked Blow, or Wide Guard.",
       shortDesc: 'The target immediately uses its last used move.',
       name: 'Instruct',
       pp: 15,
@@ -10148,7 +10150,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user's Ability changes to match the target's Ability. Fails if the user's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or already matches the target, or if the target's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, or Zen Mode.",
+        "The user's Ability changes to match the target's Ability. Fails if the user's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Zen Mode, or already matches the target, or if the target's Ability is As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, or Zen Mode.",
       shortDesc: "User replaces its Ability with the target's.",
       name: 'Role Play',
       pp: 10,
@@ -10934,7 +10936,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Causes the target's Ability to become Simple. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Simple, Stance Change, Truant, or Zen Mode.",
+        "Causes the target's Ability to become Simple. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Simple, Stance Change, Truant, or Zen Mode.",
       shortDesc: "The target's Ability becomes Simple.",
       name: 'Simple Beam',
       pp: 15,
@@ -11016,7 +11018,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user swaps its Ability with the target's Ability. Fails if either the user or the target's Ability is Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode.",
+        "The user swaps its Ability with the target's Ability. Fails if either the user or the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.",
       shortDesc: 'The user and the target trade Abilities.',
       name: 'Skill Swap',
       pp: 10,
@@ -12929,7 +12931,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '90',
       category: 'Physical',
       desc: "Has a 100% chance to lower the target's Defense by 1 stage.",
-      shortDesc: "Lowers the target's Defense by 1.",
+      shortDesc: "100% chance to lower the target's Defense by 1.",
       name: 'Thunderous Kick',
       pp: 10,
       priority: 0,
@@ -13836,7 +13838,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode.",
+        "Causes the target's Ability to become Insomnia. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode.",
       shortDesc: "The target's Ability becomes Insomnia.",
       name: 'Worry Seed',
       pp: 10,

@@ -678,7 +678,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user become poisoned. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon making contact with the user become poisoned. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Protects from moves. Contact: poison.',
       name: 'Baneful Bunker',
       pp: 10,
@@ -820,7 +820,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '120',
       category: 'Special',
       desc:
-        'This move cannot be selected until the user eats a Berry, either by eating one that was held, stealing and eating one off another Pokemon with Bug Bite or Pluck, or eating one that was thrown at it with Fling. Once the condition is met, this move can be selected and used for the rest of the battle even if the user gains or uses another item or switches out. Consuming a Berry with Natural Gift does not count for the purposes of eating one.',
+        'This move cannot be selected until the user eats a Berry, either by eating one that was held, stealing and eating one off another Pokémon with Bug Bite or Pluck, or eating one that was thrown at it with Fling. Once the condition is met, this move can be selected and used for the rest of the battle even if the user gains or uses another item or switches out. Consuming a Berry with Natural Gift does not count for the purposes of eating one.',
       shortDesc: 'Cannot be selected until the user eats a Berry.',
       name: 'Belch',
       pp: 10,
@@ -1150,7 +1150,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '140',
       category: 'Special',
       desc: 'No additional effect.',
-      shortDesc: 'No additional effect. Hits adjacent Pokemon.',
+      shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       name: 'Boomburst',
       pp: 10,
       priority: 0,
@@ -1295,7 +1295,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '60',
       category: 'Physical',
       desc: 'No additional effect.',
-      shortDesc: 'No additional effect. Hits adjacent Pokemon.',
+      shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       name: 'Brutal Swing',
       pp: 20,
       priority: 0,
@@ -1966,7 +1966,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user uses the last move used by any Pokemon, including itself. The base move of Max and G-Max Moves is considered for this purpose. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Crafty Shield, Destiny Bond, Detect, Dragon Tail, Dynamax Cannon, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Obstruct, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, or Whirlwind.",
+        "The user uses the last move used by any Pokémon, including itself. The base move of Max and G-Max Moves is considered for this purpose. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Crafty Shield, Destiny Bond, Detect, Dragon Tail, Dynamax Cannon, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Obstruct, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, or Whirlwind.",
       shortDesc: 'Uses the last move used in the battle.',
       name: 'Copycat',
       pp: 20,
@@ -2019,8 +2019,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'The target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.',
-      shortDesc: "Removes adjacent Pokemon's held items.",
+        'The target loses its held item. This move cannot cause Pokémon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.',
+      shortDesc: "Removes adjacent Pokémon's held items.",
       name: 'Corrosive Gas',
       pp: 40,
       priority: 0,
@@ -2083,7 +2083,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Physical',
       desc:
-        "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
+        "Deals damage to the opposing Pokémon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
       shortDesc: 'If hit by Normal/Fighting move, deals 2x damage.',
       name: 'Counter',
       pp: 20,
@@ -2271,7 +2271,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Normal',
       contestType: 'Cool',
       maxMovePower: 100,
-      isFieldMove: 'The Pokemon is able to cut down small trees, and prior to gen 4, tall grass. It is taught to Pokemon with HM01 in all generations.'
+      isFieldMove: 'The Pokémon is able to cut down small trees, and prior to gen 4, tall grass. It is taught to Pokémon with HM01 in all generations.'
     }
   ],
   [
@@ -2401,7 +2401,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Flying',
       contestType: 'Cool',
-      isFieldMove: 'The Pokemon can clear out fog on the field. Defog can be taught to a Pokemon by using HM05 in Diamond, Pearl, and Platinum. Since Generation V, it has lost its HM status.'
+      isFieldMove: 'The Pokémon can clear out fog on the field. Defog can be taught to a Pokémon by using HM05 in Diamond, Pearl, and Platinum. Since Generation V, it has lost its HM status.'
     }
   ],
   [
@@ -2426,7 +2426,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Prevents moves from affecting the user this turn.',
       name: 'Detect',
       pp: 5,
@@ -2529,7 +2529,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '80',
       category: 'Special',
       desc: 'Has a 30% chance to paralyze the target.',
-      shortDesc: '30% chance to paralyze adjacent Pokemon.',
+      shortDesc: '30% chance to paralyze adjacent Pokémon.',
       name: 'Discharge',
       pp: 15,
       priority: 0,
@@ -2554,7 +2554,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       contestType: 'Beautiful',
       maxMovePower: 130,
       isFieldMove:
-        "The player can dive underwater on the Pokemon's back while surfing over deep waters. It can be taught to a Pokemon by using HM08 in Ruby, Sapphire, and Emerald. Since Generation IV it has been a regular level-up move. In Generation V, it has regained HM status as HM06; in Pokemon X and Y, it again lost its HM status; in Omega Ruby and Alpha Sapphire, it again regained HM status as HM07."
+        "The player can dive underwater on the Pokémon's back while surfing over deep waters. It can be taught to a Pokémon by using HM08 in Ruby, Sapphire, and Emerald. Since Generation IV it has been a regular level-up move. In Generation V, it has regained HM status as HM06; in Pokémon X and Y, it again lost its HM status; in Omega Ruby and Alpha Sapphire, it again regained HM status as HM07."
     }
   ],
   [
@@ -2777,7 +2777,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '50',
       category: 'Physical',
       desc:
-        "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. In Double Battles, this move attempts to hit the targeted Pokemon and its ally once each. If hitting one of these Pokemon would be prevented by immunity, protection, semi-invulnerability, an Ability, or accuracy, it attempts to hit the other Pokemon twice instead. If this move is redirected, it hits that target twice.",
+        "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. In Double Battles, this move attempts to hit the targeted Pokémon and its ally once each. If hitting one of these Pokémon would be prevented by immunity, protection, semi-invulnerability, an Ability, or accuracy, it attempts to hit the other Pokémon twice instead. If this move is redirected, it hits that target twice.",
       shortDesc: 'Hits twice. Doubles: Tries to hit each foe once.',
       name: 'Dragon Darts',
       pp: 10,
@@ -3084,7 +3084,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '100',
       category: 'Physical',
       desc: 'Damage doubles if the target is using Dig.',
-      shortDesc: 'Hits adjacent Pokemon. Power doubles on Dig.',
+      shortDesc: 'Hits adjacent Pokémon. Power doubles on Dig.',
       name: 'Earthquake',
       pp: 10,
       priority: 0,
@@ -3165,7 +3165,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot fall asleep; Pokemon already asleep do not wake up. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.',
+        'For 5 turns, the terrain becomes Electric Terrain. During the effect, the power of Electric-type attacks made by grounded Pokémon is multiplied by 1.3 and grounded Pokémon cannot fall asleep; Pokémon already asleep do not wake up. Camouflage transforms the user into an Electric type, Nature Power becomes Thunderbolt, and Secret Power has a 30% chance to cause paralysis. Fails if the current terrain is Electric Terrain.',
       shortDesc: "5 turns. Grounded: +Electric power, can't sleep.",
       name: 'Electric Terrain',
       pp: 10,
@@ -3296,7 +3296,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user will survive attacks made by other Pokemon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user will survive attacks made by other Pokémon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'The user survives the next hit with at least 1 HP.',
       name: 'Endure',
       pp: 10,
@@ -3377,7 +3377,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Special',
-      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokemon and has its power multiplied by 1.5.',
+      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokémon and has its power multiplied by 1.5.',
       shortDesc: 'User on Psychic Terrain: 1.5x power, hits foes.',
       name: 'Expanding Force',
       pp: 10,
@@ -3392,7 +3392,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Special',
-      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokemon and has its power multiplied by 1.5.',
+      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokémon and has its power multiplied by 1.5.',
       shortDesc: 'User on Psychic Terrain: 1.5x power, hits foes.',
       name: 'Expanding Force',
       pp: 10,
@@ -3407,7 +3407,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '250',
       category: 'Physical',
-      shortDesc: 'Hits adjacent Pokemon. The user faints.',
+      shortDesc: 'Hits adjacent Pokémon. The user faints.',
       name: 'Explosion',
       pp: 5,
       priority: 0,
@@ -3491,8 +3491,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'Prevents all active Pokemon from switching next turn. A Pokemon can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the effect is already active.',
-      shortDesc: 'Prevents all Pokemon from switching next turn.',
+        'Prevents all active Pokémon from switching next turn. A Pokémon can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the effect is already active.',
+      shortDesc: 'Prevents all Pokémon from switching next turn.',
       name: 'Fairy Lock',
       pp: 10,
       priority: 0,
@@ -3869,7 +3869,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '70',
       category: 'Special',
-      shortDesc: 'Damages Pokemon next to the target as well.',
+      shortDesc: 'Damages Pokémon next to the target as well.',
       name: 'Flame Burst',
       pp: 15,
       priority: 0,
@@ -3961,7 +3961,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Beautiful',
-      isFieldMove: 'The Pokemon is able to light up dark caverns. Flash is taught to Pokemon with HM05 in the first three generations, and with TM70 since Generation IV.'
+      isFieldMove: 'The Pokémon is able to light up dark caverns. Flash is taught to Pokémon with HM05 in the first three generations, and with TM70 since Generation IV.'
     }
   ],
   [
@@ -4121,7 +4121,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Flying',
       contestType: 'Clever',
       maxMovePower: 130,
-      isFieldMove: 'The Pokemon can fly the player to any previously visited town/landmark. Fly can be taught to Pokemon with HM02 in all generations.'
+      isFieldMove: 'The Pokémon can fly the player to any previously visited town/landmark. Fly can be taught to Pokémon with HM02 in all generations.'
     }
   ],
   [
@@ -4320,7 +4320,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 90,
       basePower: '100',
       category: 'Special',
-      desc: 'Resets the stat stages of all active Pokemon to 0.',
+      desc: 'Resets the stat stages of all active Pokémon to 0.',
       shortDesc: 'Eliminates all stat changes.',
       name: 'Freezy Frost',
       pp: 20,
@@ -4676,7 +4676,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side either falls asleep, becomes poisoned, or becomes paralyzed, even if they have a substitute.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side either falls asleep, becomes poisoned, or becomes paralyzed, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: slp or psn or par.',
       name: 'G-Max Befuddle',
       pp: 5,
@@ -4693,7 +4693,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Water-type Pokemon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
+        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Water-type Pokémon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       name: 'G-Max Cannonade',
       pp: 10,
@@ -4710,7 +4710,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side is prevented from switching for four or five turns (seven turns if the user is holding Grip Claw), even if they have a substitute. Causes damage equal to 1/8 of their maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends for a target if it leaves the field, or if it uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side is prevented from switching for four or five turns (seven turns if the user is holding Grip Claw), even if they have a substitute. Causes damage equal to 1/8 of their maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends for a target if it leaves the field, or if it uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
       shortDesc: 'Base move affects power. Foes: bound 4-5 turns.',
       name: 'G-Max Centiferno',
       pp: 5,
@@ -4742,7 +4742,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '1',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the user's side has their critical hit ratio raised by 1 stage, even if they have a substitute.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side has their critical hit ratio raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: Crit Ratio +1.',
       name: 'G-Max Chi Strike',
       pp: 5,
@@ -4759,7 +4759,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side becomes infatuated, even if they have a substitute. This effect does not happen for a target if both it and the user are the same gender, if either is genderless, or if the target is already infatuated.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes infatuated, even if they have a substitute. This effect does not happen for a target if both it and the user are the same gender, if either is genderless, or if the target is already infatuated.",
       shortDesc: 'Base move affects power. Foes: infatuated.',
       name: 'G-Max Cuddle',
       pp: 5,
@@ -4775,7 +4775,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side loses 2 PP from its last move used, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side loses 2 PP from its last move used, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: last move -2 PP.',
       name: 'G-Max Depletion',
       pp: 5,
@@ -4791,7 +4791,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '160',
       category: 'Physical',
-      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokemon.',
+      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokémon.',
       shortDesc: 'Stronger than other Max Moves. Ignores abilities.',
       name: 'G-Max Drum Solo',
       pp: 5,
@@ -4807,7 +4807,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the user's side restores 1/6 of its current maximum HP, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side restores 1/6 of its current maximum HP, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1/6 max HP.',
       name: 'G-Max Finale',
       pp: 5,
@@ -4823,7 +4823,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the evasiveness of each Pokemon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the evasiveness of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 evasiveness.',
       name: 'G-Max Tartness',
       pp: 5,
@@ -4840,7 +4840,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Grass-type Pokemon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
+        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Grass-type Pokémon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       name: 'G-Max Vine Lash',
       pp: 10,
@@ -4857,7 +4857,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Rock-type Pokemon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
+        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Rock-type Pokémon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       name: 'G-Max Volcalith',
       pp: 5,
@@ -4873,7 +4873,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side becomes paralyzed, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes paralyzed, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: paralyzed.',
       name: 'G-Max Volt Crash',
       pp: 10,
@@ -4890,7 +4890,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Fire-type Pokemon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
+        "Power is equal to the base move's Max Move power. If this move is successful, for 4 turns each non-Fire-type Pokémon on the opposing side takes damage equal to 1/6 of its maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       name: 'G-Max Wildfire',
       pp: 10,
@@ -4923,7 +4923,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '160',
       category: 'Physical',
-      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokemon.',
+      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokémon.',
       shortDesc: 'Stronger than other Max Moves. Ignores abilities.',
       name: 'G-Max Fireball',
       pp: 5,
@@ -4939,7 +4939,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokemon on the opposing side is lowered by 2 stages, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 2 stages, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -2 Speed.',
       name: 'G-Max Foam Burst',
       pp: 5,
@@ -4955,7 +4955,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side becomes confused, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes confused, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: confused.',
       name: 'G-Max Gold Rush',
       pp: 5,
@@ -4987,7 +4987,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '160',
       category: 'Physical',
-      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokemon.',
+      desc: 'This move will always have 160 Base Power, and it ignores the abilities of opposing Pokémon.',
       shortDesc: 'Stronger than other Max Moves. Ignores abilities.',
       name: 'G-Max Hydrosnipe',
       pp: 5,
@@ -5003,7 +5003,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side becomes poisoned, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes poisoned, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: poisoned.',
       name: 'G-Max Malodor',
       pp: 5,
@@ -5019,7 +5019,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Torment begins for each Pokemon on the opposing side, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Torment begins for each Pokémon on the opposing side, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: Tormented.',
       name: 'G-Max Meltdown',
       pp: 5,
@@ -5036,7 +5036,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+        "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Rapid Spin or Defog successfully, or is hit by Defog.",
       shortDesc: 'Base move affects power. Foes: Stealth Rock.',
       name: 'G-Max Stonesurge',
       pp: 5,
@@ -5052,7 +5052,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side either becomes poisoned or paralyzed, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side either becomes poisoned or paralyzed, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: psn or par.',
       name: 'G-Max Stun Shock',
       pp: 10,
@@ -5068,7 +5068,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the user's side has its status condition cured, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side has its status condition cured, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: status cured.',
       name: 'G-Max Sweetness',
       pp: 10,
@@ -5085,7 +5085,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side is prevented from switching out, even if they have a substitute. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If a target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side is prevented from switching out, even if they have a substitute. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If a target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
       shortDesc: 'Base move affects power. Foes: trapped.',
       name: 'G-Max Terror',
       pp: 10,
@@ -5102,7 +5102,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful and any Pokemon on the opposing side is using Baneful Bunker, Detect, King's Shield, Mat Block, Max Guard, Obstruct, Protect, or Spiky Shield, this move will fully break the protection.",
+        "Power is equal to the base move's Max Move power. If this move is successful and any Pokémon on the opposing side is using Baneful Bunker, Detect, King's Shield, Mat Block, Max Guard, Obstruct, Protect, or Spiky Shield, this move will fully break the protection.",
       shortDesc: 'Base move affects power. Breaks all protection.',
       name: 'G-Max One Blow',
       pp: 5,
@@ -5119,7 +5119,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful and any Pokemon on the opposing side is using Baneful Bunker, Detect, King's Shield, Mat Block, Max Guard, Obstruct, Protect, or Spiky Shield, this move will fully break the protection.",
+        "Power is equal to the base move's Max Move power. If this move is successful and any Pokémon on the opposing side is using Baneful Bunker, Detect, King's Shield, Mat Block, Max Guard, Obstruct, Protect, or Spiky Shield, this move will fully break the protection.",
       shortDesc: 'Base move affects power. Breaks all protection.',
       name: 'G-Max Rapid Flow',
       pp: 5,
@@ -5136,7 +5136,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, there is a 50% chance every Pokemon on the user's side has its Berry restored, even if they have a substitute.",
+        "Power is equal to the base move's Max Move power. If this move is successful, there is a 50% chance every Pokémon on the user's side has its Berry restored, even if they have a substitute.",
       shortDesc: 'Base move affects power. 50% restores Berries.',
       name: 'G-Max Replenish',
       pp: 5,
@@ -5169,7 +5169,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side is prevented from switching for four or five turns (seven turns if the user is holding Grip Claw), even if they have a substitute. Causes damage equal to 1/8 of their maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends for a target if it leaves the field, or if it uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side is prevented from switching for four or five turns (seven turns if the user is holding Grip Claw), even if they have a substitute. Causes damage equal to 1/8 of their maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. They can still switch out if they are holding Shed Shell or use Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends for a target if it leaves the field, or if it uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
       shortDesc: 'Base move affects power. Foes: bound 4-5 turns.',
       name: 'G-Max Sandblast',
       pp: 5,
@@ -5185,7 +5185,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokemon on the opposing side becomes confused, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes confused, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: confused.',
       name: 'G-Max Smite',
       pp: 5,
@@ -5218,7 +5218,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+        "Power is equal to the base move's Max Move power. If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Steel type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Rapid Spin or Defog successfully, or is hit by Defog.",
       shortDesc: 'Base move affects power. Foes: Steel hazard.',
       name: 'G-Max Steelsurge',
       pp: 5,
@@ -5299,7 +5299,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'For 5 turns, the terrain becomes Grassy Terrain. During the effect, the power of Grass-type attacks used by grounded Pokemon is multiplied by 1.3, the power of Bulldoze, Earthquake, and Magnitude used against grounded Pokemon is multiplied by 0.5, and grounded Pokemon have 1/16 of their maximum HP, rounded down, restored at the end of each turn, including the last turn. Camouflage transforms the user into a Grass type, Nature Power becomes Energy Ball, and Secret Power has a 30% chance to cause sleep. Fails if the current terrain is Grassy Terrain.',
+        'For 5 turns, the terrain becomes Grassy Terrain. During the effect, the power of Grass-type attacks used by grounded Pokémon is multiplied by 1.3, the power of Bulldoze, Earthquake, and Magnitude used against grounded Pokémon is multiplied by 0.5, and grounded Pokémon have 1/16 of their maximum HP, rounded down, restored at the end of each turn, including the last turn. Camouflage transforms the user into a Grass type, Nature Power becomes Energy Ball, and Secret Power has a 30% chance to cause sleep. Fails if the current terrain is Grassy Terrain.',
       shortDesc: '5 turns. Grounded: +Grass power,+1/16 max HP.',
       name: 'Grassy Terrain',
       pp: 10,
@@ -5571,7 +5571,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: 'Resets the stat stages of all active Pokemon to 0.',
+      desc: 'Resets the stat stages of all active Pokémon to 0.',
       shortDesc: 'Eliminates all stat changes.',
       name: 'Haze',
       pp: 30,
@@ -5638,7 +5638,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: "Every Pokemon in the user's party is cured of its major status condition. Active Pokemon with the Soundproof Ability are not cured, unless they are the user.",
+      desc: "Every Pokémon in the user's party is cured of its major status condition. Active Pokémon with the Soundproof Ability are not cured, unless they are the user.",
       shortDesc: "Cures the user's party of all status conditions.",
       name: 'Heal Bell',
       pp: 5,
@@ -5703,8 +5703,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'The user faints and the next injured or statused Pokemon brought in has its HP fully restored along with having any major status condition cured. The healing happens before hazards take effect. Is not consumed if the Pokemon sent out is not injured or statused. Fails if the user is the last unfainted Pokemon in its party.',
-      shortDesc: 'User faints. Next hurt Pokemon is fully healed.',
+        'The user faints and the next injured or statused Pokémon brought in has its HP fully restored along with having any major status condition cured. The healing happens before hazards take effect. Is not consumed if the Pokémon sent out is not injured or statused. Fails if the user is the last unfainted Pokémon in its party.',
+      shortDesc: 'User faints. Next hurt Pokémon is fully healed.',
       name: 'Healing Wish',
       pp: 10,
       priority: 0,
@@ -5999,7 +5999,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '110',
       category: 'Special',
       desc:
-        "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
+        "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokémon holding Utility Umbrella, this move's accuracy remains at 70%.",
       shortDesc: "30% chance to confuse target. Can't miss in rain.",
       name: 'Hurricane',
       pp: 10,
@@ -6414,7 +6414,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'The user has 1/16 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped and still receive the healing effect. During the effect, the user can be hit normally by Ground-type attacks and be affected by Spikes, Toxic Spikes, and Sticky Web, even if the user is a Flying type or has the Levitate Ability.',
+        'The user has 1/16 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokémon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped and still receive the healing effect. During the effect, the user can be hit normally by Ground-type attacks and be affected by Spikes, Toxic Spikes, and Sticky Web, even if the user is a Flying type or has the Levitate Ability.',
       shortDesc: 'Traps/grounds user; heals 1/16 max HP per turn.',
       name: 'Ingrain',
       pp: 20,
@@ -6564,7 +6564,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: "Each Pokemon on the user's side restores 1/4 of its maximum HP, rounded half up, and has its status condition cured.",
+      desc: "Each Pokémon on the user's side restores 1/4 of its maximum HP, rounded half up, and has its status condition cured.",
       shortDesc: 'User and allies: healed 1/4 max HP, status cured.',
       name: 'Jungle Healing',
       pp: 10,
@@ -6613,7 +6613,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Protects from damaging attacks. Contact: -1 Atk.',
       name: "King's Shield",
       pp: 10,
@@ -6630,7 +6630,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '65',
       category: 'Physical',
       desc:
-        "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokemon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+        "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokémon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
       shortDesc: '1.5x damage if foe holds an item. Removes item.',
       name: 'Knock Off',
       pp: 20,
@@ -6711,7 +6711,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '80',
       category: 'Special',
       desc: 'Has a 30% chance to burn the target.',
-      shortDesc: '30% chance to burn adjacent Pokemon.',
+      shortDesc: '30% chance to burn adjacent Pokémon.',
       name: 'Lava Plume',
       pp: 15,
       priority: 0,
@@ -6909,7 +6909,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: "Each Pokemon on the user's side restores 1/4 of its maximum HP, rounded half up.",
+      desc: "Each Pokémon on the user's side restores 1/4 of its maximum HP, rounded half up.",
       shortDesc: 'Heals the user and its allies by 1/4 their max HP.',
       name: 'Life Dew',
       pp: 10,
@@ -7244,7 +7244,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Physical',
-      shortDesc: 'Hits adjacent Pokemon. Power varies; 2x on Dig.',
+      shortDesc: 'Hits adjacent Pokémon. Power varies; 2x on Dig.',
       name: 'Magnitude',
       pp: 30,
       priority: 0,
@@ -7308,7 +7308,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokemon on the user's side is raised by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Speed.',
       name: 'Max Airstream',
       pp: 5,
@@ -7324,7 +7324,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, the Special Defense of each Pokemon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+        "Power is equal to the base move's Max Move power. If this move is successful, the Special Defense of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Sp. Def.',
       name: 'Max Darkness',
       pp: 5,
@@ -7355,7 +7355,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokemon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+        "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Sp. Atk.',
       name: 'Max Flutterby',
       pp: 5,
@@ -7386,7 +7386,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from nearly all attacks made by other Pokemon during this turn, including Max and G-Max Moves. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from nearly all attacks made by other Pokémon during this turn, including Max and G-Max Moves. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Protects user from moves & Max Moves this turn.',
       name: 'Max Guard',
       pp: 5,
@@ -7478,7 +7478,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokemon on the user's side is raised by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Sp. Atk.',
       name: 'Max Ooze',
       pp: 5,
@@ -7508,7 +7508,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokemon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Defense.',
       name: 'Max Phantasm',
       pp: 5,
@@ -7524,7 +7524,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '10',
       category: 'Physical',
       desc:
-        "Power is equal to the base move's Max Move power. If this move is successful, the Special Defense of each Pokemon on the user's side is raised by 1 stage, even if they have a substitute.",
+        "Power is equal to the base move's Max Move power. If this move is successful, the Special Defense of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Sp. Def.',
       name: 'Max Quake',
       pp: 5,
@@ -7569,7 +7569,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokemon on the user's side is raised by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Defense.',
       name: 'Max Steelspike',
       pp: 5,
@@ -7584,7 +7584,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokemon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Speed.',
       name: 'Max Strike',
       pp: 5,
@@ -7599,7 +7599,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Attack of each Pokemon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Attack of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Attack.',
       name: 'Max Wyrmwind',
       pp: 5,
@@ -7714,7 +7714,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '200',
       category: 'Special',
-      shortDesc: 'Ignores the Abilities of other Pokemon.',
+      shortDesc: 'Ignores the Abilities of other Pokémon.',
       name: 'Menacing Moonraze Maelstrom',
       pp: 1,
       priority: 0,
@@ -7894,7 +7894,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '150',
       category: 'Special',
-      shortDesc: 'User loses 50% max HP. Hits adjacent Pokemon.',
+      shortDesc: 'User loses 50% max HP. Hits adjacent Pokémon.',
       name: 'Mind Blown',
       pp: 5,
       priority: 0,
@@ -8037,7 +8037,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '100',
       category: 'Special',
       desc:
-        "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+        "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokémon has the Damp Ability.",
       shortDesc: 'User faints. User on Misty Terrain: 1.5x power.',
       name: 'Misty Explosion',
       pp: 5,
@@ -8053,7 +8053,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '100',
       category: 'Special',
       desc:
-        "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+        "If the current terrain is Misty Terrain and the user is grounded, this move's power is multiplied by 1.5. The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokémon has the Damp Ability.",
       shortDesc: 'User faints. User on Misty Terrain: 1.5x power.',
       name: 'Misty Explosion',
       pp: 5,
@@ -8099,7 +8099,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '100',
       category: 'Special',
-      shortDesc: 'Ignores the Abilities of other Pokemon.',
+      shortDesc: 'Ignores the Abilities of other Pokémon.',
       name: 'Moongeist Beam',
       pp: 5,
       priority: 0,
@@ -8495,7 +8495,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Defense lowered by 2 stages. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon trying to make contact with the user have their Defense lowered by 2 stages. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Protects from damaging attacks. Contact: -2 Def.',
       name: 'Obstruct',
       pp: 10,
@@ -8770,7 +8770,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      shortDesc: 'All active Pokemon will faint in 3 turns.',
+      shortDesc: 'All active Pokémon will faint in 3 turns.',
       name: 'Perish Song',
       pp: 5,
       priority: 0,
@@ -8786,7 +8786,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '90',
       category: 'Physical',
       desc: 'No additional effect.',
-      shortDesc: 'No additional effect. Hits adjacent Pokemon.',
+      shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       name: 'Petal Blizzard',
       pp: 15,
       priority: 0,
@@ -9305,7 +9305,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Prevents moves from affecting the user this turn.',
       name: 'Protect',
       pp: 10,
@@ -9387,7 +9387,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "For 5 turns, the terrain becomes Psychic Terrain. During the effect, the power of Psychic-type attacks made by grounded Pokemon is multiplied by 1.3 and grounded Pokemon cannot be hit by moves with priority greater than 0, unless the target is an ally. Camouflage transforms the user into a Psychic type, Nature Power becomes Psychic, and Secret Power has a 30% chance to lower the target's Speed by 1 stage. Fails if the current terrain is Psychic Terrain.",
+        "For 5 turns, the terrain becomes Psychic Terrain. During the effect, the power of Psychic-type attacks made by grounded Pokémon is multiplied by 1.3 and grounded Pokémon cannot be hit by moves with priority greater than 0, unless the target is an ally. Camouflage transforms the user into a Psychic type, Nature Power becomes Psychic, and Secret Power has a 30% chance to lower the target's Speed by 1 stage. Fails if the current terrain is Psychic Terrain.",
       shortDesc: '5 turns. Grounded: +Psychic power, priority-safe.',
       name: 'Psychic Terrain',
       pp: 10,
@@ -9613,7 +9613,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user and its party members are protected from attacks with original or altered priority greater than 0 made by other Pokemon, including allies, during this turn. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
+        "The user and its party members are protected from attacks with original or altered priority greater than 0 made by other Pokémon, including allies, during this turn. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
       shortDesc: 'Protects allies from priority attacks this turn.',
       name: 'Quick Guard',
       pp: 15,
@@ -10038,7 +10038,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Tough',
-      isFieldMove: 'The Pokemon can climb up rocky walls. Rock climb can be taught to a Pokemon by using HM08 in Generation IV. Since Generation V, it has lost its HM status.'
+      isFieldMove: 'The Pokémon can climb up rocky walls. Rock climb can be taught to a Pokémon by using HM08 in Generation IV. Since Generation V, it has lost its HM status.'
     }
   ],
   [
@@ -10090,7 +10090,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       contestType: 'Tough',
       maxMovePower: 70,
       isFieldMove:
-        'The Pokemon can smash small boulders. Rock smash can be taught to a Pokemon by using TM08 in Generation II, by using HM06 in Generations III and IV, TM94 in Generation V and Pokemon X and Y, and HM06 in Omega Ruby and Alpha Sapphire.'
+        'The Pokémon can smash small boulders. Rock smash can be taught to a Pokémon by using TM08 in Generation II, by using HM06 in Generations III and IV, TM94 in Generation V and Pokémon X and Y, and HM06 in Omega Ruby and Alpha Sapphire.'
     }
   ],
   [
@@ -10490,7 +10490,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '100',
       category: 'Special',
       desc: 'Has a 30% chance to burn the target.',
-      shortDesc: '30% chance to burn adjacent Pokemon.',
+      shortDesc: '30% chance to burn adjacent Pokémon.',
       name: 'Searing Shot',
       pp: 5,
       priority: 0,
@@ -10506,7 +10506,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '200',
       category: 'Physical',
-      shortDesc: 'Ignores the Abilities of other Pokemon.',
+      shortDesc: 'Ignores the Abilities of other Pokémon.',
       name: 'Searing Sunraze Smash',
       pp: 1,
       priority: 0,
@@ -10532,7 +10532,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Normal',
       contestType: 'Clever',
       isFieldMove:
-        "The Pokémon can clear an entrance into a big tree, a bush or an indent in a wall in order to create a Secret Base in Generation III's Ruby, Sapphire and Emerald and Generation VI's Omega Ruby and Alpha Sapphire. It is taught to Pokemon using TM43 in Generations III and IV, and TM94 in Generation VI."
+        "The Pokémon can clear an entrance into a big tree, a bush or an indent in a wall in order to create a Secret Base in Generation III's Ruby, Sapphire and Emerald and Generation VI's Omega Ruby and Alpha Sapphire. It is taught to Pokémon using TM43 in Generations III and IV, and TM94 in Generation VI."
     }
   ],
   [
@@ -10607,7 +10607,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '200',
       category: 'Physical',
-      shortDesc: 'Hits adjacent Pokemon. The user faints.',
+      shortDesc: 'Hits adjacent Pokémon. The user faints.',
       name: 'Self-Destruct',
       pp: 5,
       priority: 0,
@@ -11098,7 +11098,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '85',
       category: 'Physical',
       desc: 'This move can hit a target using Bounce, Fly, or Sky Drop.',
-      shortDesc: 'Can hit Pokemon using Bounce, Fly, or Sky Drop.',
+      shortDesc: 'Can hit Pokémon using Bounce, Fly, or Sky Drop.',
       name: 'Sky Uppercut',
       pp: 15,
       priority: 0,
@@ -11232,7 +11232,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '95',
       category: 'Special',
       desc: 'Has a 10% chance to poison the target.',
-      shortDesc: '10% chance to poison adjacent Pokemon.',
+      shortDesc: '10% chance to poison adjacent Pokémon.',
       name: 'Sludge Wave',
       pp: 10,
       priority: 0,
@@ -11663,7 +11663,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user lose 1/8 of their maximum HP, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+        "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon making contact with the user lose 1/8 of their maximum HP, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       shortDesc: 'Protects from moves. Contact: loses 1/8 max HP.',
       name: 'Spiky Shield',
       pp: 10,
@@ -11873,7 +11873,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '140',
       category: 'Special',
       desc: 'Whether or not this move is successful and even if it would cause fainting, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
-      shortDesc: 'User loses 50% max HP. Hits adjacent Pokemon.',
+      shortDesc: 'User loses 50% max HP. Hits adjacent Pokémon.',
       name: 'Steel Beam',
       pp: 5,
       priority: 0,
@@ -12074,7 +12074,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Normal',
       contestType: 'Tough',
       maxMovePower: 130,
-      isFieldMove: 'The Pokemon is able to push certain types of boulders around. Strength can be taught to Pokemon with HM04 in all generations.'
+      isFieldMove: 'The Pokémon is able to push certain types of boulders around. Strength can be taught to Pokémon with HM04 in all generations.'
     }
   ],
   [
@@ -12259,7 +12259,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '100',
       category: 'Physical',
-      shortDesc: 'Ignores the Abilities of other Pokemon.',
+      shortDesc: 'Ignores the Abilities of other Pokémon.',
       name: 'Sunsteel Strike',
       pp: 5,
       priority: 0,
@@ -12341,7 +12341,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '90',
       category: 'Special',
       desc: 'Damage doubles if the target is using Dive.',
-      shortDesc: 'Hits adjacent Pokemon. Power doubles on Dive.',
+      shortDesc: 'Hits adjacent Pokémon. Power doubles on Dive.',
       name: 'Surf',
       pp: 15,
       priority: 0,
@@ -12349,7 +12349,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Water',
       contestType: 'Beautiful',
       maxMovePower: 130,
-      isFieldMove: "The player can travel across water on the Pokemon's back. Surf can be taught to Pokemon with HMO3 in all generations."
+      isFieldMove: "The player can travel across water on the Pokémon's back. Surf can be taught to Pokémon with HMO3 in all generations."
     }
   ],
   [
@@ -12506,7 +12506,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '120',
       category: 'Special',
       desc: 'The target is immune if it does not share a type with the user.',
-      shortDesc: "Hits adjacent Pokemon sharing the user's type.",
+      shortDesc: "Hits adjacent Pokémon sharing the user's type.",
       name: 'Synchronoise',
       pp: 10,
       priority: 0,
@@ -12682,8 +12682,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        'All active Pokemon consume their held Berries. This effect is not prevented by substitutes, the Klutz or Unnerve Abilities, or the effects of Embargo or Magic Room. Fails if no active Pokemon is holding a Berry.',
-      shortDesc: 'All active Pokemon consume held Berries.',
+        'All active Pokémon consume their held Berries. This effect is not prevented by substitutes, the Klutz or Unnerve Abilities, or the effects of Embargo or Magic Room. Fails if no active Pokémon is holding a Berry.',
+      shortDesc: 'All active Pokémon consume held Berries.',
       name: 'Teatime',
       pp: 10,
       priority: 0,
@@ -12731,7 +12731,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc: 'Causes the target to become confused.',
-      shortDesc: 'Confuses adjacent Pokemon.',
+      shortDesc: 'Confuses adjacent Pokémon.',
       name: 'Teeter Dance',
       pp: 20,
       priority: 0,
@@ -12881,7 +12881,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '110',
       category: 'Special',
       desc:
-        "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 70%.",
+        "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokémon holding Utility Umbrella, this move's accuracy remains at 70%.",
       shortDesc: "30% chance to paralyze target. Can't miss in rain.",
       name: 'Thunder',
       pp: 10,
@@ -13151,7 +13151,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "For 5 turns, the Speed of every Pokemon is recalculated for the purposes of determining turn order. During the effect, each Pokemon's Speed is considered to be (10000 - its normal Speed), and if this value is greater than 8191, 8192 is subtracted from it. If this move is used during the effect, the effect ends.",
+        "For 5 turns, the Speed of every Pokémon is recalculated for the purposes of determining turn order. During the effect, each Pokémon's Speed is considered to be (10000 - its normal Speed), and if this value is greater than 8191, 8192 is subtracted from it. If this move is used during the effect, the effect ends.",
       shortDesc: 'Goes last. For 5 turns, turn order is reversed.',
       name: 'Trick Room',
       pp: 5,
@@ -13312,7 +13312,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '90',
       category: 'Special',
-      shortDesc: 'Lasts 3 turns. Active Pokemon cannot fall asleep.',
+      shortDesc: 'Lasts 3 turns. Active Pokémon cannot fall asleep.',
       name: 'Uproar',
       pp: 10,
       priority: 0,
@@ -13616,7 +13616,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       contestType: 'Tough',
       maxMovePower: 130,
       isFieldMove:
-        "The player can climb up waterfalls on the Pokemon's back. Waterfall can be taught to Pokemon with HM07 in generations II, III and IV, and HM05 in generation 5 onwards. It was available in generation I as a level-up move, but did not have any out-of-battle effects."
+        "The player can climb up waterfalls on the Pokémon's back. Waterfall can be taught to Pokémon with HM07 in generations II, III and IV, and HM05 in generation 5 onwards. It was available in generation I as a level-up move, but did not have any out-of-battle effects."
     }
   ],
   [
@@ -13654,7 +13654,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Water',
       contestType: 'Beautiful',
       maxMovePower: 90,
-      isFieldMove: "The Pokemon can dismiss small whirlpools in the water. Whirlpool is taught to Pokemon with HM06 in generation II and generation IV's HeartGold and SoulSilver as HM05"
+      isFieldMove: "The Pokémon can dismiss small whirlpools in the water. Whirlpool is taught to Pokémon with HM06 in generation II and generation IV's HeartGold and SoulSilver as HM05"
     }
   ],
   [
@@ -13694,7 +13694,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '0',
       category: 'Status',
       desc:
-        "The user and its party members are protected from moves made by other Pokemon, including allies, during this turn that target Adjacent Foes or All Adjacent Pokemon. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
+        "The user and its party members are protected from moves made by other Pokémon, including allies, during this turn that target Adjacent Foes or All Adjacent Pokémon. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
       shortDesc: 'Protects allies from multi-target damage this turn.',
       name: 'Wide Guard',
       pp: 10,

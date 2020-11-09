@@ -331,7 +331,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Bottle Cap',
       gen: 7,
-      desc: "Used for Hyper Training. One of a Pokemon's stats is calculated with an IV of 31."
+      desc: "Used for Hyper Training. One of a Pokémon's stats is calculated with an IV of 31."
     }
   ],
   [
@@ -632,7 +632,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Dawn Stone',
       gen: 4,
       desc: 'Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -667,7 +667,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Destiny Knot',
       gen: 4,
-      desc: 'If holder becomes infatuated, the other Pokemon also becomes infatuated.'
+      desc: 'If holder becomes infatuated, the other Pokémon also becomes infatuated.'
     }
   ],
   [
@@ -684,7 +684,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Dive Ball',
       gen: 3,
-      desc: 'A Poke Ball that works especially well on Pokemon that live underwater.'
+      desc: 'A Poke Ball that works especially well on Pokémon that live underwater.'
     }
   ],
   [
@@ -794,7 +794,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Dusk Ball',
       gen: 4,
-      desc: 'A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.'
+      desc: 'A Poke Ball that makes it easier to catch wild Pokémon at night or in caves.'
     }
   ],
   [
@@ -803,7 +803,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Dusk Stone',
       gen: 4,
       desc: 'Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -887,7 +887,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Energy Powder',
       gen: 2,
-      desc: 'Restores 60 HP to one Pokemon.'
+      desc: 'Restores 60 HP to one Pokémon.'
     }
   ],
   [
@@ -945,7 +945,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fast Ball',
       gen: 2,
-      desc: 'A Poke Ball that makes it easier to catch Pokemon which are quick to run away.'
+      desc: 'A Poke Ball that makes it easier to catch Pokémon which are quick to run away.'
     }
   ],
   [
@@ -1005,7 +1005,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Fire Stone',
       gen: 1,
       desc: 'Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -1138,7 +1138,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Friend Ball',
       gen: 2,
-      desc: 'A Poke Ball that makes caught Pokemon more friendly.'
+      desc: 'A Poke Ball that makes caught Pokémon more friendly.'
     }
   ],
   [
@@ -1266,7 +1266,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Gold Bottle Cap',
       gen: 7,
-      desc: "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31."
+      desc: "Used for Hyper Training. All of a Pokémon's stats are calculated with an IV of 31."
     }
   ],
   [
@@ -1391,7 +1391,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Heal Ball',
       gen: 4,
-      desc: "A remedial Poke Ball that restores the caught Pokemon's HP and status problem."
+      desc: "A remedial Poke Ball that restores the caught Pokémon's HP and status problem."
     }
   ],
   [
@@ -1407,7 +1407,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Heavy Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching very heavy Pokemon.'
+      desc: 'A Poke Ball for catching very heavy Pokémon.'
     }
   ],
   [
@@ -1501,7 +1501,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Ice Stone',
       gen: 7,
       desc: 'Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, and Eevee into Glaceon when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -1689,7 +1689,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Leaf Stone',
       gen: 1,
       desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -1721,7 +1721,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Level Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching Pokemon that are a lower level than your own.'
+      desc: 'A Poke Ball for catching Pokémon that are a lower level than your own.'
     }
   ],
   [
@@ -1770,7 +1770,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Love Ball',
       gen: 2,
-      desc: 'Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.'
+      desc: 'Poke Ball for catching Pokémon that are the opposite gender of your Pokémon.'
     }
   ],
   [
@@ -1829,7 +1829,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Lure Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching Pokemon hooked by a Rod when fishing.'
+      desc: 'A Poke Ball for catching Pokémon hooked by a Rod when fishing.'
     }
   ],
   [
@@ -1845,7 +1845,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Luxury Ball',
       gen: 3,
-      desc: 'A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.'
+      desc: 'A comfortable Poke Ball that makes a caught wild Pokémon quickly grow friendly.'
     }
   ],
   [
@@ -1903,7 +1903,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Mail',
       gen: 2,
-      desc: 'Cannot be given to or taken from a Pokemon, except by Covet/Knock Off/Thief.'
+      desc: 'Cannot be given to or taken from a Pokémon, except by Covet/Knock Off/Thief.'
     }
   ],
   [
@@ -1937,7 +1937,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Master Ball',
       gen: 1,
-      desc: 'The best Ball with the ultimate performance. It will catch any wild Pokemon.'
+      desc: 'The best Ball with the ultimate performance. It will catch any wild Pokémon.'
     }
   ],
   [
@@ -2109,7 +2109,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Moon Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching Pokemon that evolve using the Moon Stone.'
+      desc: 'A Poke Ball for catching Pokémon that evolve using the Moon Stone.'
     }
   ],
   [
@@ -2118,7 +2118,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Moon Stone',
       gen: 1,
       desc: 'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -2160,7 +2160,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Nest Ball',
       gen: 3,
-      desc: 'A Poke Ball that works especially well on weaker Pokemon in the wild.'
+      desc: 'A Poke Ball that works especially well on weaker Pokémon in the wild.'
     }
   ],
   [
@@ -2168,7 +2168,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Net Ball',
       gen: 3,
-      desc: 'A Poke Ball that works especially well on Water- and Bug-type Pokemon.'
+      desc: 'A Poke Ball that works especially well on Water- and Bug-type Pokémon.'
     }
   ],
   [
@@ -2431,7 +2431,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Poke Ball',
       gen: 1,
-      desc: 'A device for catching wild Pokemon. It is designed as a capsule system.'
+      desc: 'A device for catching wild Pokémon. It is designed as a capsule system.'
     }
   ],
   [
@@ -2706,7 +2706,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Repeat Ball',
       gen: 3,
-      desc: 'A Poke Ball that works well on Pokemon species that were previously caught.'
+      desc: 'A Poke Ball that works well on Pokémon species that were previously caught.'
     }
   ],
   [
@@ -2947,7 +2947,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Shed Shell',
       gen: 4,
-      desc: 'Holder may switch out even when trapped by another Pokemon, or by Ingrain.'
+      desc: 'Holder may switch out even when trapped by another Pokémon, or by Ingrain.'
     }
   ],
   [
@@ -2955,7 +2955,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Shell Bell',
       gen: 3,
-      desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.'
+      desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pokémon.'
     }
   ],
   [
@@ -2964,7 +2964,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Shiny Stone',
       gen: 4,
       desc: 'Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -3218,7 +3218,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Sun Stone',
       gen: 2,
       desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -3309,7 +3309,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Thunder Stone',
       gen: 1,
       desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -3428,7 +3428,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Water Stone',
       gen: 1,
       desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
-      shortDesc: 'Evolves certain species of Pokemon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [

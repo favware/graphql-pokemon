@@ -5,7 +5,7 @@
 
   <p>
 <h1> GraphQL-Pokemon </h1>
-<h3> Extensive Pokemon GraphQL API!</h3>
+<h3> Extensive Pokémon GraphQL API!</h3>
   </p>
 
 </div>
@@ -47,7 +47,7 @@
 
 ---
 
-**_Query for Pokemon data using GraphQL_**
+**_Query for Pokémon data using GraphQL_**
 
 **Key Features**
 

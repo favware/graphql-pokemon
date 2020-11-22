@@ -508,7 +508,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'flowerveil',
     {
-      desc: "Grass-type Pokémon on this Pokémon's side cannot have their stat stages lowered by other Pokémon or have a major status condition inflicted on them by other Pokémon.",
+      desc: "Grass-type Pokemon on this Pokemon's side cannot have their stat stages lowered by other Pokemon or have a non-volatile status condition inflicted on them by other Pokemon.",
       shortDesc: "This side's Grass types can't have stats lowered or status inflicted by other Pokémon.",
       name: 'Flower Veil'
     }
@@ -632,7 +632,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'guts',
     {
-      desc: "If this Pokémon has a major status condition, its Attack is multiplied by 1.5; burn's physical damage halving is ignored.",
+      desc: "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5; burn's physical damage halving is ignored.",
+
       shortDesc: 'If this Pokémon is statused, its Attack is 1.5x; ignores burn halving physical damage.',
       name: 'Guts'
     }
@@ -650,7 +651,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'healer',
     {
-      desc: "There is a 30% chance of curing an adjacent ally's major status condition at the end of each turn.",
+      desc: "There is a 30% chance of curing an adjacent ally's non-volatile status condition at the end of each turn.",
+
       shortDesc: "30% chance of curing an adjacent ally's status at the end of each turn.",
       name: 'Healer'
     }
@@ -707,7 +709,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'hydration',
     {
       desc:
-        'This Pokémon has its major status condition cured at the end of each turn if Rain Dance is active. If this Pokémon is holding Utility Umbrella, its major status condition will not be cured.',
+        'This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. If this Pokemon is holding Utility Umbrella, its non-volatile status condition will not be cured.',
+
       shortDesc: 'This Pokémon has its status cured at the end of each turn if Rain Dance is active.',
       name: 'Hydration'
     }
@@ -871,7 +874,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'leafguard',
     {
-      desc: 'If Sunny Day is active and this Pokémon is not holding Utility Umbrella, this Pokémon cannot gain a major status condition and Rest will fail for it.',
+      desc: 'If Sunny Day is active and this Pokemon is not holding Utility Umbrella, this Pokemon cannot gain a non-volatile status condition and Rest will fail for it.',
+
       shortDesc: 'If Sunny Day is active, this Pokémon cannot be statused and Rest will fail for it.',
       name: 'Leaf Guard'
     }
@@ -983,7 +987,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'marvelscale',
     {
-      desc: 'If this Pokémon has a major status condition, its Defense is multiplied by 1.5.',
+      desc: 'If this Pokémon has a non-volatile status condition, its Defense is multiplied by 1.5.',
       shortDesc: 'If this Pokémon is statused, its Defense is 1.5x.',
       name: 'Marvel Scale'
     }
@@ -1098,7 +1102,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'naturalcure',
     {
-      shortDesc: 'This Pokémon has its major status condition cured when it switches out.',
+      shortDesc: 'This Pokémon has its non-volatile status condition cured when it switches out.',
       name: 'Natural Cure'
     }
   ],
@@ -1368,7 +1372,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'quickfeet',
     {
-      desc: 'If this Pokémon has a major status condition, its Speed is multiplied by 1.5; the Speed drop from paralysis is ignored.',
+      desc: 'If this Pokémon has a non-volatile status condition, its Speed is multiplied by 1.5; the Speed drop from paralysis is ignored.',
       shortDesc: 'If this Pokémon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.',
       name: 'Quick Feet',
       isFieldAbility: 'If a Pokémon with Quick Feet is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
@@ -1569,7 +1573,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'shedskin',
     {
-      desc: 'This Pokémon has a 33% chance to have its major status condition cured at the end of each turn.',
+      desc: 'This Pokémon has a 33% chance to have its non-volatile status condition cured at the end of each turn.',
       shortDesc: 'This Pokémon has a 33% chance to have its status cured at the end of each turn.',
       name: 'Shed Skin'
     }
@@ -1577,8 +1581,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'sheerforce',
     {
-      desc: "This Pokémon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed.",
-      shortDesc: "This Pokémon's attacks with secondary effects have 1.3x power; nullifies the effects.",
+      desc:
+        "This Pokemon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
+      shortDesc: "This Pokemon's attacks with secondary effects have 1.3x power; nullifies the effects.",
       name: 'Sheer Force'
     }
   ],
@@ -1600,7 +1605,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'shieldsdown',
     {
       desc:
-        'If this Pokémon is a Minior, it changes to its Core forme if it has 1/2 or less of its maximum HP, and changes to Meteor Form if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. While in its Meteor Form, it cannot become affected by major status conditions. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
+        'If this Pokémon is a Minior, it changes to its Core forme if it has 1/2 or less of its maximum HP, and changes to Meteor Form if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. While in its Meteor Form, it cannot become affected by non-volatile status conditions. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
       shortDesc: 'If Minior, switch-in/end of turn it changes to Core at 1/2 max HP or less, else Meteor.',
       name: 'Shields Down'
     }
@@ -1775,7 +1780,9 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'stench',
     {
-      shortDesc: "This Pokémon's attacks without a chance to flinch have a 10% chance to flinch.",
+      desc: "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
+      shortDesc: "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.",
+
       name: 'Stench',
       isFieldAbility: 'If a Pokémon with Stench is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
@@ -1873,7 +1880,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'synchronize',
     {
-      desc: 'If another Pokémon burns, paralyzes, poisons, or badly poisons this Pokémon, that Pokémon receives the same major status condition.',
+      desc: 'If another Pokémon burns, paralyzes, poisons, or badly poisons this Pokémon, that Pokémon receives the same non-volatile status condition.',
       shortDesc: 'If another Pokémon burns/poisons/paralyzes this Pokémon, it also gets that status.',
       name: 'Synchronize',
       isFieldAbility:

@@ -54,7 +54,7 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
     "fs-nextra": "^0.5.1",
-    "fuse.js": "^6.4.2",
+    "fuse.js": "^6.4.3",
     "graphql-parse-resolve-info": "^4.9.0",
     "graphql-type-json": "^0.3.2",
     "husky": "^4.3.0",

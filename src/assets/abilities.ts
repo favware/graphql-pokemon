@@ -508,7 +508,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'flowerveil',
     {
-      desc: "Grass-type Pokemon on this Pokemon's side cannot have their stat stages lowered by other Pokemon or have a non-volatile status condition inflicted on them by other Pokemon.",
+      desc: "Grass-type Pokémon on this Pokémon's side cannot have their stat stages lowered by other Pokémon or have a non-volatile status condition inflicted on them by other Pokémon.",
       shortDesc: "This side's Grass types can't have stats lowered or status inflicted by other Pokémon.",
       name: 'Flower Veil'
     }
@@ -632,7 +632,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'guts',
     {
-      desc: "If this Pokemon has a non-volatile status condition, its Attack is multiplied by 1.5; burn's physical damage halving is ignored.",
+      desc: "If this Pokémon has a non-volatile status condition, its Attack is multiplied by 1.5; burn's physical damage halving is ignored.",
 
       shortDesc: 'If this Pokémon is statused, its Attack is 1.5x; ignores burn halving physical damage.',
       name: 'Guts'
@@ -709,7 +709,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'hydration',
     {
       desc:
-        'This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. If this Pokemon is holding Utility Umbrella, its non-volatile status condition will not be cured.',
+        'This Pokémon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. If this Pokémon is holding Utility Umbrella, its non-volatile status condition will not be cured.',
 
       shortDesc: 'This Pokémon has its status cured at the end of each turn if Rain Dance is active.',
       name: 'Hydration'
@@ -874,7 +874,7 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'leafguard',
     {
-      desc: 'If Sunny Day is active and this Pokemon is not holding Utility Umbrella, this Pokemon cannot gain a non-volatile status condition and Rest will fail for it.',
+      desc: 'If Sunny Day is active and this Pokémon is not holding Utility Umbrella, this Pokémon cannot gain a non-volatile status condition and Rest will fail for it.',
 
       shortDesc: 'If Sunny Day is active, this Pokémon cannot be statused and Rest will fail for it.',
       name: 'Leaf Guard'
@@ -1582,8 +1582,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     'sheerforce',
     {
       desc:
-        "This Pokemon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
-      shortDesc: "This Pokemon's attacks with secondary effects have 1.3x power; nullifies the effects.",
+        "This Pokémon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
+      shortDesc: "This Pokémon's attacks with secondary effects have 1.3x power; nullifies the effects.",
       name: 'Sheer Force'
     }
   ],
@@ -1780,8 +1780,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'stench',
     {
-      desc: "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
-      shortDesc: "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.",
+      desc: "This Pokémon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
+      shortDesc: "This Pokémon's attacks without a chance to flinch gain a 10% chance to flinch.",
 
       name: 'Stench',
       isFieldAbility: 'If a Pokémon with Stench is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'

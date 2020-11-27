@@ -4,9 +4,9 @@
     "rootDir": "./",
     "outDir": "../generated/api",
     "composite": true,
-    "declarationMap": false,
-    "sourceMap": false,
-    "importsNotUsedAsValues": "error"
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
   },
   "include": ["./**/*.ts", "./assets/**/*.json"]
 }

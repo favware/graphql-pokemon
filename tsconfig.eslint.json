@@ -1,15 +1,5 @@
 {
   "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "baseUrl": "./"
-  },
-  "include": [
-    "src/**/*.ts",
-    "scripts/**/*.ts",
-    "__tests__/**/*.ts",
-    "__tests__/**/*.d.ts",
-    "typings/*.ts",
-    "jest.config.ts"
-  ],
+  "include": ["src/**/*.ts", "scripts/**/*.ts", "__tests__/**/*.ts", "jest.config.ts"],
   "exclude": ["**/node_modules", "**/build", "**/bin", "**/out", "**/dist", "**/coverage"]
 }

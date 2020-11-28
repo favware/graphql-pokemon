@@ -2,11 +2,10 @@ import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
 import abilities from '../assets/abilities';
-import { abilityAliases } from '../assets/aliases';
 import AbilityEntry from '../structures/AbilityEntry';
 import { addPropertyToClass } from '../utils/addPropertyToClass';
 import FuzzySearch from '../utils/FuzzySearch';
-import GraphQLSet from '../utils/GraphQLSet';
+import type GraphQLSet from '../utils/GraphQLSet';
 import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
@@ -18,19 +17,7 @@ export default class AbilityService {
   public findByFuzzy(
     @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs
   ): Fuse.FuseResult<Pokemon.Ability>[] {
-    const fuzzyAbility = new FuzzySearch(abilities, ['name'], { threshold: 0.3 });
-
-    let fuzzyResult = fuzzyAbility.runFuzzy(ability);
-
-    if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(abilityAliases, ['alias', 'ability'], { threshold: 0.4 }).runFuzzy(
-        ability
-      );
-
-      if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyAbility.runFuzzy(fuzzyAliasResult[0].item.ability);
-      }
-    }
+    const fuzzyResult = new FuzzySearch(abilities, ['name'], { threshold: 0.3 }).runFuzzy(ability);
 
     if (reverse) {
       fuzzyResult.reverse();
@@ -40,15 +27,9 @@ export default class AbilityService {
   }
 
   public findByNameWithDetails(
-    @Arg('ability') ability: string,
+    abilityData: Pokemon.Ability,
     requestedFields: GraphQLSet<keyof AbilityEntry>
   ): AbilityEntry {
-    const abilityData = this.findByName(ability);
-
-    if (!abilityData) {
-      throw new Error(`No ability found for ${ability}`);
-    }
-
     const abilityEntry = new AbilityEntry();
     addPropertyToClass(abilityEntry, 'desc', abilityData.desc, requestedFields);
     addPropertyToClass(abilityEntry, 'shortDesc', abilityData.shortDesc, requestedFields);

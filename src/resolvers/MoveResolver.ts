@@ -5,9 +5,10 @@ import MovePaginatedArgs, { moves } from '../arguments/MovePaginatedArgs';
 import MoveService from '../services/MoveService';
 import MoveEntry from '../structures/MoveEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
-import GraphQLSet from '../utils/GraphQLSet';
+import type GraphQLSet from '../utils/GraphQLSet';
 import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
+import { moveAliases } from '../assets/aliases';
 
 @Resolver(MoveEntry)
 export default class MoveResolver {
@@ -28,7 +29,8 @@ export default class MoveResolver {
     @Args() { move, skip, take, reverse }: MovePaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
   ): MoveEntry {
-    const entry = this.moveService.findByName(move);
+    const lowerCasedMove = move.toLowerCase();
+    let entry = this.moveService.findByName(moveAliases.get(lowerCasedMove) ?? lowerCasedMove);
 
     if (!entry) {
       const fuzzyEntry = this.moveService.findByFuzzy({
@@ -37,13 +39,21 @@ export default class MoveResolver {
         take,
         reverse
       });
+
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for move: ${move}`);
       }
-      move = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
+
+      entry = this.moveService.findByName(Util.toLowerSingleWordCase(fuzzyEntry[0].item.name));
+
+      // If there is still no entry then throw an error
+      if (!entry) {
+        throw new Error(`No Move found for ${move}`);
+      }
     }
 
-    const detailsEntry = this.moveService.findByNameWithDetails(move, requestedFields);
+    const detailsEntry = this.moveService.findByNameWithDetails(entry, requestedFields);
+
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for move: ${move}`);
     }
@@ -58,13 +68,19 @@ export default class MoveResolver {
     @Arg('move', () => moves) move: string,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
   ): MoveEntry {
-    const entry = this.moveService.findByNameWithDetails(move, requestedFields);
+    const entry = this.moveService.findByName(move);
 
-    if (entry === undefined) {
+    if (!entry) {
+      throw new Error(`No Move found for ${move}`);
+    }
+
+    const details = this.moveService.findByNameWithDetails(entry, requestedFields);
+
+    if (details === undefined) {
       throw new Error(`Failed to get data for move: ${move}`);
     }
 
-    return entry;
+    return details;
   }
 
   @Query(() => [GraphQLJSONObject], {

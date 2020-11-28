@@ -8,6 +8,7 @@ import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
 import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
+import { abilityAliases } from '../assets/aliases';
 
 @Resolver(AbilityEntry)
 export default class AbilityResolver {
@@ -28,8 +29,10 @@ export default class AbilityResolver {
     @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
   ): Promise<AbilityEntry> {
-    const entry = this.abilityService.findByName(ability);
+    const lowerCasedAbility = ability.toLowerCase();
+    let entry = this.abilityService.findByName(abilityAliases.get(lowerCasedAbility) ?? lowerCasedAbility);
 
+    // If there is no entry from a direct match then try a fuzzy match
     if (!entry) {
       const fuzzyEntry = this.abilityService.findByFuzzy({
         ability,
@@ -37,13 +40,21 @@ export default class AbilityResolver {
         take,
         reverse
       });
+
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for ability: ${ability}`);
       }
-      ability = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
+
+      entry = this.abilityService.findByName(Util.toLowerSingleWordCase(fuzzyEntry[0].item.name));
+
+      // If there is still no entry then throw an error
+      if (!entry) {
+        throw new Error(`No Ability found for ${ability}`);
+      }
     }
 
-    const detailsEntry = this.abilityService.findByNameWithDetails(ability, requestedFields);
+    const detailsEntry = this.abilityService.findByNameWithDetails(entry, requestedFields);
+
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for ability: ${ability}`);
     }
@@ -58,13 +69,19 @@ export default class AbilityResolver {
     @Arg('ability', () => abilities) ability: string,
     @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
   ): Promise<AbilityEntry> {
-    const entry = this.abilityService.findByNameWithDetails(ability, requestedFields);
+    const entry = this.abilityService.findByName(ability);
 
-    if (entry === undefined) {
+    if (!entry) {
+      throw new Error(`No Ability found for ${ability}`);
+    }
+
+    const details = this.abilityService.findByNameWithDetails(entry, requestedFields);
+
+    if (details === undefined) {
       throw new Error(`Failed to get data for ability: ${ability}`);
     }
 
-    return entry;
+    return details;
   }
 
   @Query(() => [GraphQLJSONObject], {

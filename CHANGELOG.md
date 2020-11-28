@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/favware/graphql-pokemon/compare/v4.5.0...v5.0.0) (2020-11-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* While this should not be a breaking change to a lot of people, the types for
+aliasses have drastically changed so this should be considered a breaking change.
+
+### Features
+
+* rework parsing of aliases ([9fb32bc](https://github.com/favware/graphql-pokemon/commit/9fb32bcb903afc7bfd761723d1b8a3530f124d6c))
+
 ## [4.5.0](https://github.com/favware/graphql-pokemon/compare/v4.4.0...v4.5.0) (2020-11-09)
 
 

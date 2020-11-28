@@ -8,6 +8,7 @@ import { getRequestedFields } from '../utils/getRequestedFields';
 import GraphQLSet from '../utils/GraphQLSet';
 import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
+import { itemAliases } from '../assets/aliases';
 
 @Resolver(ItemEntry)
 export default class ItemResolver {
@@ -28,8 +29,10 @@ export default class ItemResolver {
     @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
   ): ItemEntry {
-    const entry = this.itemService.findByName(item);
+    const lowerCasedItem = item.toLowerCase();
+    let entry = this.itemService.findByName(itemAliases.get(lowerCasedItem) ?? lowerCasedItem);
 
+    // If there is no entry from a direct match then try a fuzzy match
     if (!entry) {
       const fuzzyEntry = this.itemService.findByFuzzy({
         item,
@@ -37,14 +40,21 @@ export default class ItemResolver {
         take,
         reverse
       });
+
       if (fuzzyEntry === undefined || !fuzzyEntry.length) {
         throw new Error(`Failed to get data for item: ${item}`);
       }
 
-      item = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
+      entry = this.itemService.findByName(Util.toLowerSingleWordCase(fuzzyEntry[0].item.name));
+
+      // If there is still no entry then throw an error
+      if (!entry) {
+        throw new Error(`No Item found for ${item}`);
+      }
     }
 
-    const detailsEntry = this.itemService.findByNameWithDetails(item, requestedFields);
+    const detailsEntry = this.itemService.findByNameWithDetails(entry, requestedFields);
+
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for item: ${item}`);
     }
@@ -59,13 +69,19 @@ export default class ItemResolver {
     @Arg('item', () => items) item: string,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
   ): ItemEntry {
-    const entry = this.itemService.findByNameWithDetails(item, requestedFields);
+    const entry = this.itemService.findByName(item);
 
-    if (entry === undefined) {
+    if (!entry) {
+      throw new Error(`No Item found for ${item}`);
+    }
+
+    const details = this.itemService.findByNameWithDetails(entry, requestedFields);
+
+    if (details === undefined) {
       throw new Error(`Failed to get data for item: ${item}`);
     }
 
-    return entry;
+    return details;
   }
 
   @Query(() => [GraphQLJSONObject], {

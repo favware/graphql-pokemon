@@ -2,6 +2,7 @@ import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 import ExactPokemonPaginatedArgs, { pokemons } from '../arguments/ExactPokemonPaginatedArgs';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
+import { pokedexAliases } from '../assets/aliases';
 import DexService from '../services/DexService';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
@@ -29,15 +30,14 @@ export default class DexResolver {
     @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
-    const detailsEntry = await this.dexService.findBySpeciesWithDetails(
-      {
-        pokemon,
-        skip,
-        take,
-        reverse
-      },
-      requestedFields
-    );
+    const entry = this.dexService.findBySpecies(pokemon);
+
+    if (!entry) {
+      throw new Error(`No Pokémon found for ${pokemon}`);
+    }
+
+    const detailsEntry = await this.dexService.findBySpeciesWithDetails(entry, skip, take, requestedFields, reverse);
+
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
@@ -78,25 +78,28 @@ export default class DexResolver {
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
-    const entry = this.dexService.findBySpecies(pokemon);
+    const lowerCasedPokemon = pokemon.toLowerCase();
+    let entry = this.dexService.findBySpecies(pokedexAliases.get(lowerCasedPokemon) ?? lowerCasedPokemon);
 
+    // If there is no entry from a direct match then try a fuzzy match
     if (!entry) {
       const fuzzyEntry = this.dexService.getByFuzzy({ pokemon, skip, take });
+
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].item.species);
+
+      entry = this.dexService.findBySpecies(Util.toLowerSingleWordCase(fuzzyEntry[0].item.species));
+
+      // If there is still no entry then throw an error
+      if (!entry) {
+        throw new Error(`No Pokémon found for ${pokemon}`);
+      }
     }
 
-    const detailsEntry = await this.dexService.findBySpeciesWithDetails(
-      {
-        pokemon,
-        skip,
-        take,
-        reverse
-      },
-      requestedFields
-    );
+    // Get all the details
+    const detailsEntry = await this.dexService.findBySpeciesWithDetails(entry, skip, take, requestedFields, reverse);
+
     if (detailsEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }

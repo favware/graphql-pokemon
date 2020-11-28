@@ -1,7 +1,6 @@
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
-import { pokedexAliases } from '../assets/aliases';
 import pokedex from '../assets/pokedex';
 import AbilitiesEntry from '../structures/AbilitiesEntry';
 import DexDetails from '../structures/DexDetails';
@@ -160,17 +159,14 @@ export default class DexService {
   }
 
   public async findBySpeciesWithDetails(
-    @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
+    basePokemonData: Pokemon.DexEntry,
+    skip: number,
+    take: number,
     requestedFields: GraphQLSet<unknown>,
+    reverse?: boolean,
     parsingPokemon = '',
     recursingAs: 'preevolutions' | 'evolutions' | false = false
   ): Promise<DexDetails> {
-    const basePokemonData = this.findBySpecies(pokemon);
-
-    if (!basePokemonData) {
-      throw new Error(`No Pokémon found for ${pokemon}`);
-    }
-
     if (this.flavors === undefined) {
       this.flavors = (await import('../assets/flavorText.json')).default;
     }
@@ -356,7 +352,7 @@ export default class DexService {
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}prevo`
     );
-    const smogonTier = this.tiers[pokemon.replace(/([-% ])/gm, '')] || 'Undiscovered';
+    const smogonTier = this.tiers[Util.toLowerSingleWordCase(basePokemonData.species)] || 'Undiscovered';
     addPropertyToClass(
       pokemonData,
       'smogonTier',
@@ -516,13 +512,11 @@ export default class DexService {
       if (prevoPokemon) {
         preevolutionChain.push(
           this.findBySpeciesWithDetails(
-            {
-              pokemon: Util.toLowerSingleWordCase(prevoPokemon.species),
-              skip,
-              take,
-              reverse
-            },
+            this.findBySpecies(Util.toLowerSingleWordCase(prevoPokemon.species))!,
+            skip,
+            take,
             requestedFields,
+            reverse,
             this.parseDataForEvolutionRecursion(basePokemonData, prevoPokemon),
             'preevolutions'
           )
@@ -548,13 +542,11 @@ export default class DexService {
         if (evoPokemon) {
           evolutionChain.push(
             this.findBySpeciesWithDetails(
-              {
-                pokemon: Util.toLowerSingleWordCase(evoPokemon.species),
-                skip,
-                take,
-                reverse
-              },
+              this.findBySpecies(Util.toLowerSingleWordCase(evoPokemon.species))!,
+              skip,
+              take,
               requestedFields,
+              reverse,
               this.parseDataForEvolutionRecursion(basePokemonData, evoPokemon),
               'evolutions'
             )
@@ -595,29 +587,9 @@ export default class DexService {
         break;
     }
 
-    if (pokemon.length < 5) {
-      const potentialAlias = pokedexAliases.get(pokemon);
-      if (potentialAlias) {
-        pokemon = potentialAlias.name;
-      }
-    }
-
-    const fuzzyPokemon = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3 });
-
-    let fuzzyResult = fuzzyPokemon.runFuzzy(pokemon);
-
+    const fuzzyResult = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3 }).runFuzzy(pokemon);
     if (!fuzzyResult.length) {
-      const fuzzyAliasResult = new FuzzySearch(pokedexAliases, ['alias', 'name'], {
-        threshold: 0.4
-      }).runFuzzy(pokemon);
-
-      if (fuzzyAliasResult.length) {
-        fuzzyResult = fuzzyPokemon.runFuzzy(fuzzyAliasResult[0].item.name);
-      }
-    }
-
-    if (!fuzzyResult.length) {
-      throw new Error(`No Pokémon found ${pokemon}`);
+      throw new Error(`No Pokémon found for ${pokemon}`);
     }
 
     return fuzzyResult.slice(skip, skip + take);

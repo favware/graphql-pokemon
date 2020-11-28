@@ -18,6 +18,7 @@
     "start": "node generated/api",
     "build": "tsc -b src",
     "watch": "tsc -b src -w",
+    "clean": "tsc -b src --clean",
     "dev": "yarn build && yarn start",
     "commit": "git-cz",
     "cz": "git-cz",

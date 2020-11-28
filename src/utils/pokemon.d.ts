@@ -100,30 +100,6 @@ export namespace Pokemon {
     zMovePower?: number;
   }
 
-  export interface Alias {
-    alias: string;
-  }
-
-  export interface AbilityAlias extends Alias {
-    ability: string;
-  }
-
-  export interface TierAlias extends Alias {
-    tier: string;
-  }
-
-  export interface DexAlias extends Alias {
-    name: string;
-  }
-
-  export interface ItemAlias extends Alias {
-    item: string;
-  }
-
-  export interface MoveAlias extends Alias {
-    move: string;
-  }
-
   export interface LearnsetMove {
     name: string | null;
     generation: number | null;

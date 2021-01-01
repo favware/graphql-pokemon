@@ -2214,7 +2214,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       brickbreak: ['8M', '8V', '7M', '6M', '5M', '5S26', '4M', '3M'],
       calmmind: ['8V'],
       captivate: ['4M'],
-      celebrate: ['8S50', '7S43', '7S48', '6S31', '6S41'],
+      celebrate: ['8S50', '8S51', '7S43', '7S48', '6S31', '6S41'],
       chargebeam: ['7M', '6M', '5M', '4M'],
       charm: ['8M', '8L1', '6S36'],
       confide: ['7M', '6M'],
@@ -2331,7 +2331,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       swagger: ['7M', '7V', '6M', '5M', '4M', '3T'],
       sweetkiss: ['8L1', '6S36'],
       sweetscent: ['7S48'],
-      swift: ['8M', '7V', '4T', '3T'],
+      swift: ['8M', '8S51', '7V', '4T', '3T'],
       tailwhip: ['8L1', '8V', '7L1', '7V', '6L1', '6S38', '5L5', '5S28', '4L5', '4S9', '4S12', '4S15', '4S17', '4S20', '4S22', '3L6', '3S1', '3S2', '3S3', '3S4', '3S10'],
       takedown: ['7V'],
       teeterdance: ['7S45', '6S38', '5S23'],
@@ -2341,6 +2341,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
         '8M',
         '8L36',
         '8V',
+        '8S51',
         '7M',
         '7L42',
         '7V',
@@ -2376,6 +2377,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       voltswitch: ['8M', '7M', '6M', '5M', '5S29'],
       volttackle: ['7T', '6S39', '5S25', '5S29', '4S9', '4S21'],
       wildcharge: ['8M', '7M', '7L50', '6M', '6L50', '5M'],
+      wish: ['8S51'],
       yawn: ['4S19'],
       zapcannon: ['7V']
     }

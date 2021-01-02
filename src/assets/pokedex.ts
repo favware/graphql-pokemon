@@ -933,7 +933,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Yellow',
       prevo: 'pichu',
       evos: ['raichu', 'raichualola'],
-      evoLevel: 'Level up with High Friendship',
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Field', 'Fairy'],
       otherFormes: [
         'pikachucosplay',
@@ -1675,7 +1675,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Pink',
       prevo: 'cleffa',
       evos: ['clefable'],
-      evoLevel: 'Level up with High Friendship',
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Fairy']
     }
   ],
@@ -1826,7 +1826,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Pink',
       prevo: 'igglybuff',
       evos: ['wigglytuff'],
-      evoLevel: 'Level up with High Friendship',
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Fairy']
     }
   ],
@@ -5183,7 +5183,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 460,
       color: 'Black',
       prevo: 'munchlax',
-      evoLevel: 'Level up with High Friendship',
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Monster'],
       otherFormes: ['snorlaxgmax']
     }
@@ -6334,7 +6334,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Blue',
       prevo: 'azurill',
       evos: ['azumarill'],
-      evoLevel: 'Level up with High Friendship',
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Water 1', 'Fairy']
     }
   ],
@@ -6642,7 +6642,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 26.5,
       color: 'Purple',
       prevo: 'eevee',
-      evoLevel: 'Level up during Daytime with High Friendship',
+      evoLevel: 'Level up during Daytime with happiness of at least 220',
       eggGroups: ['Field']
     }
   ],
@@ -6666,7 +6666,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 27,
       color: 'Black',
       prevo: 'eevee',
-      evoLevel: 'Level up during Nighttime with High Friendship',
+      evoLevel: 'Level up during Nighttime with happiness of at least 220',
       eggGroups: ['Field']
     }
   ],
@@ -9930,7 +9930,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Green',
       prevo: 'budew',
       evos: ['roserade'],
-      evoLevel: 'Level up during Daytime with High Friendship',
+      evoLevel: 'Level up during Daytime with happiness of at least 220',
       eggGroups: ['Fairy', 'Grass']
     }
   ],
@@ -11110,7 +11110,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 1,
       color: 'Blue',
       prevo: 'chingling',
-      evoLevel: 'Level up during Nighttime with High Friendship',
+      evoLevel: 'Level up during Nighttime with happiness of at least 220',
       eggGroups: ['Amorphous']
     }
   ],
@@ -13668,7 +13668,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 54,
       color: 'Blue',
       prevo: 'riolu',
-      evoLevel: 'Level up during Daytime with High Friendship',
+      evoLevel: 'Level up during Daytime with happiness of at least 220',
       eggGroups: ['Field', 'Human-Like'],
       otherFormes: ['lucariomega']
     }
@@ -16243,7 +16243,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 10.5,
       color: 'Blue',
       prevo: 'woobat',
-      evoLevel: 2,
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Flying', 'Field']
     }
   ],
@@ -23375,7 +23375,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 100.5,
       color: 'Gray',
       prevo: 'typenull',
-      evoLevel: 'Level up with High Friendship',
+      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Undiscovered'],
       otherFormes: [
         'silvallybug',
@@ -27059,7 +27059,7 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'White',
       prevo: 'snom',
       evos: ['frosmoth'],
-      evoLevel: 'level with high friendship at night',
+      evoLevel: 'Level up during Nighttime with happiness of at least 220',
       eggGroups: ['Bug']
     }
   ],

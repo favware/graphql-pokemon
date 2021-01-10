@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.1](https://github.com/favware/graphql-pokemon/compare/v5.0.0...v5.0.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* **pokedex:** assign proper evolution conditions for happiness evolutions ([a802dc6](https://github.com/favware/graphql-pokemon/commit/a802dc691c1b33811953a2c2a16603ce2263efa1))
+
 ## [5.0.0](https://github.com/favware/graphql-pokemon/compare/v4.5.0...v5.0.0) (2020-11-28)
 
 

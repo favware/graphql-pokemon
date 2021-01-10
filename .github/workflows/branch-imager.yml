@@ -34,6 +34,11 @@ jobs:
           name: api_bundle
           path: generated/api/
           if-no-files-found: error
+      - name: Get GitHub Branch Name
+        id: get_branch_name
+        run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
+    outputs:
+      branch_name: ${{ steps.get_branch_name.outputs.branch_name }}
 
   Dockerhub:
     name: Publish image to Dockerhub
@@ -48,15 +53,13 @@ jobs:
         with:
           name: api_bundle
           path: generated/api/
-      - name: Get GitHub Branch Name
-        run: echo "GITHUB_BRANCH_NAME=$(echo ${{ github.ref }} | cut -c12- | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')" >> $GITHUB_ENV
       - name: Publish to Dockerhub
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: favware/graphql-pokemon
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: '${{ env.GITHUB_BRANCH_NAME }}'
+          tags: '${{ needs.build.outputs.branch_name }}'
 
   Github-Package-Registry-Docker:
     name: Publish image to Github Package Registry
@@ -71,13 +74,11 @@ jobs:
         with:
           name: api_bundle
           path: generated/api/
-      - name: Get GitHub Branch Name
-        run: echo "GITHUB_BRANCH_NAME=$(echo ${{ github.ref }} | cut -c12- | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')" >> $GITHUB_ENV
       - name: Publish to Github Package Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: favware/graphql-pokemon/graphql-pokemon
           username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
-          tags: '${{ env.GITHUB_BRANCH_NAME }}'
+          tags: '${{ needs.build.outputs.branch_name }}'
           registry: docker.pkg.github.com

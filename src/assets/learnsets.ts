@@ -67802,7 +67802,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       explosion: ['8L1', '7M'],
       facade: ['8M', '7M'],
       firefang: ['8M', '8L1', '7L1'],
-      firepledge: ['8T'],
       flamecharge: ['7M'],
       flamethrower: ['8M', '7M'],
       flashcannon: ['8M', '7M'],
@@ -67870,7 +67869,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       toxic: ['7M'],
       triattack: ['8M', '8L35', '7L75'],
       uturn: ['8M', '7M'],
-      waterpledge: ['8T'],
       workup: ['8M', '7M'],
       xscissor: ['8M', '8L40', '7M', '7L35'],
       zenheadbutt: ['8M', '7T']

@@ -6,10 +6,34 @@ on:
       - main
 
 jobs:
+  pre_ci:
+    name: Prepare CI environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - name: '[Push] Get commit message'
+        if: github.event_name == 'push'
+        id: push_get_commit_message
+        run: echo ::set-output name=push_commit_message::$(git log --format=%B -n 1 HEAD)
+      - name: '[Pull Request] Get commit message'
+        if: github.event_name == 'pull_request'
+        id: pr_get_commit_message
+        run: echo ::set-output name=pr_commit_message::$(git log --format=%B -n 1 HEAD^2)
+      - name: Add problem matchers
+        run: |
+          echo "::add-matcher::.github/problemMatchers/tsc.json"
+          echo "::add-matcher::.github/problemMatchers/eslint-stylish.json"
+    outputs:
+      commit_message: $( [ -z "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" ] && echo "${{ steps.push_get_commit_message.outputs.push_commit_message }}" || echo "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" )
+
   Build:
     name: Compiling TypeScript
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    if: "!contains(needs.pre_ci.outputs.commit_message, '[skip ci]')"
+    needs: pre_ci
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -24,10 +48,8 @@ jobs:
           key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
         run: yarn
-      - name: Compile TypeScript
-        uses: icrawl/action-tsc@v1
-        with:
-          build: src
+      - name: Build Code
+        run: yarn build
       - name: Upload API bundle to artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -43,8 +65,8 @@ jobs:
   Dockerhub:
     name: Publish image to Dockerhub
     runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip ci]') ||contains(github.event.head_commit.message, '[skip docker]'))"
-    needs: Build
+    if: "!(contains(needs.pre_ci.outputs.commit_message, '[skip ci]') ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))"
+    needs: [pre_ci, Build]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -64,8 +86,8 @@ jobs:
   Github-Package-Registry-Docker:
     name: Publish image to Github Package Registry
     runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip ci]') ||contains(github.event.head_commit.message, '[skip docker]'))"
-    needs: Build
+    if: "!(contains(needs.pre_ci.outputs.commit_message, '[skip ci]') ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))"
+    needs: [pre_ci, Build]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

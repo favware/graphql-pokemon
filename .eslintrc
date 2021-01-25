@@ -1,14 +1,12 @@
 {
-  "extends": ["@favware"],
-  "rules": {
-    "array-bracket-spacing": "off",
-    "eol-last": "off",
-    "comma-dangle": "off",
-    "no-useless-escape": "off",
-    "quotes": "off",
-    "no-invalid-this": "off",
-    "object-curly-newline": "off",
-    "no-mixed-operators": "off",
-    "new-cap": "off"
-  }
+  "extends": ["@sapphire"],
+  "overrides": [
+    {
+      "files": ["src/assets/learnsets.ts"],
+      "rules": {
+        "max-len": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+      }
+    }
+  ]
 }

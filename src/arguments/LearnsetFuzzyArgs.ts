@@ -5,10 +5,10 @@ import LearnsetArgs from './LearnsetArgs';
 @ArgsType()
 export default class LearnsetFuzzyArgs extends LearnsetArgs {
   @Field(() => String, { description: 'The Pokémon for which to get the learnset' })
-  pokemon!: string;
+  public declare pokemon: string;
 
   @Field(() => [String], { description: 'The moves to match against the Pokémon' })
   @ArrayUnique()
   @ArrayMinSize(1)
-  moves!: string[];
+  public declare moves: string[];
 }

@@ -14,7 +14,7 @@ import { itemAliases } from '../assets/aliases';
 export default class ItemResolver {
   private itemService: ItemService;
 
-  constructor() {
+  public constructor() {
     this.itemService = new ItemService();
   }
 
@@ -25,7 +25,7 @@ export default class ItemResolver {
       'Reversal is applied before paginations!'
     ].join('')
   })
-  getItemDetailsByFuzzy(
+  public getItemDetailsByFuzzy(
     @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
   ): ItemEntry {
@@ -65,10 +65,7 @@ export default class ItemResolver {
   @Query(() => ItemEntry, {
     description: ['Gets details on a single item based on an exact name match.'].join('')
   })
-  getItemDetailsByName(
-    @Arg('item', () => items) item: string,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
-  ): ItemEntry {
+  public getItemDetailsByName(@Arg('item', () => items) item: string, @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>): ItemEntry {
     const entry = this.itemService.findByName(item);
 
     if (!entry) {
@@ -91,7 +88,7 @@ export default class ItemResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getItemByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs): Fuse.FuseResult<Pokemon.Item>[] {
+  public getItemByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs): Fuse.FuseResult<Pokemon.Item>[] {
     const itemEntries = this.itemService.findByFuzzy({
       item,
       skip,
@@ -107,7 +104,7 @@ export default class ItemResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single item based on name.' })
-  getItemByName(@Arg('item', () => items) item: string): Pokemon.Item {
+  public getItemByName(@Arg('item', () => items) item: string): Pokemon.Item {
     const itemEntry = this.itemService.findByName(item);
 
     if (itemEntry === undefined) {

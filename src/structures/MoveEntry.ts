@@ -3,77 +3,77 @@ import { Field, Int, ObjectType } from 'type-graphql';
 @ObjectType({ description: 'A single Pokémon move entry' })
 export default class MoveEntry {
   @Field(() => String, { description: 'The name for a move' })
-  name!: string;
+  public name!: string;
 
   @Field(() => String, { description: 'The short description for a move' })
-  shortDesc!: string;
+  public shortDesc!: string;
 
   @Field(() => String, { description: 'The type for a move' })
-  type!: string;
+  public type!: string;
 
   @Field(() => String, { description: 'The base power for a move' })
-  basePower!: string;
+  public basePower!: string;
 
   @Field(() => Int, {
     nullable: true,
     description: 'The power this move will have when used with its Z-move equivalent'
   })
-  zMovePower!: number;
+  public zMovePower!: number;
 
   @Field(() => Int, {
     nullable: true,
     description: 'The power this move will have when used with its Max Move equivalent'
   })
-  maxMovePower!: number;
+  public maxMovePower!: number;
 
   @Field(() => Int, { description: 'The power points for a move' })
-  pp!: number;
+  public pp!: number;
 
   @Field(() => String, { description: 'The category for a move' })
-  category!: string;
+  public category!: string;
 
   @Field(() => Int, { description: 'The accuracy for a move' })
-  accuracy!: number;
+  public accuracy!: number;
 
   @Field(() => Int, { description: 'The priority for a move' })
-  priority!: number;
+  public priority!: number;
 
   @Field(() => String, { description: 'The target for a move' })
-  target!: string;
+  public target!: string;
 
   @Field(() => String, { nullable: true, description: 'The contest type for a move' })
-  contestType?: string;
+  public contestType?: string;
 
   @Field(() => String, { description: 'Bulbapedia page for a move' })
-  bulbapediaPage!: string;
+  public bulbapediaPage!: string;
 
   @Field(() => String, { description: 'Serebii page for a move' })
-  serebiiPage!: string;
+  public serebiiPage!: string;
 
   @Field(() => String, { description: 'Smogon page for a move' })
-  smogonPage!: string;
+  public smogonPage!: string;
 
   @Field(() => String, { nullable: true, description: 'Whether a move is non-standard, and if it is why' })
-  isNonstandard?: string;
+  public isNonstandard?: string;
 
   @Field(() => String, {
     nullable: true,
     description: 'Whether this move is a Z-Move, and if it is the Z-Crystal required to trigger it'
   })
-  isZ?: string;
+  public isZ?: string;
 
   @Field(() => String, {
     nullable: true,
     description: 'Whether this move is a G-MAX move, and if it is which Gigantamaxed Pokémon can use it'
   })
-  isGMax?: string;
+  public isGMax?: string;
 
   @Field(() => String, {
     nullable: true,
     description: 'Whether this move can be used outside of battle, and if it can what the effect of the field move is'
   })
-  isFieldMove?: string;
+  public isFieldMove?: string;
 
   @Field(() => String, { nullable: true, description: 'The long description for a move' })
-  desc?: string;
+  public desc?: string;
 }

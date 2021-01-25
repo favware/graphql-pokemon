@@ -6,58 +6,58 @@ import StatsEntry from './StatsEntry';
 @ObjectType({ description: 'A single Pokedex entry' })
 export default class DexEntry {
   @Field(() => Int, { description: 'The dex number for a Pokémon' })
-  num!: number;
+  public num!: number;
 
   @Field(() => String, { description: 'The species name for a Pokémon' })
-  species!: string;
+  public species!: string;
 
   @Field(() => [String], { description: 'The types for a Pokémon' })
-  types!: string[];
+  public types!: string[];
 
   @Field(() => AbilitiesEntry, { description: 'The abilities for a Pokémon' })
-  abilities!: AbilitiesEntry;
+  public abilities!: AbilitiesEntry;
 
   @Field(() => StatsEntry, { description: 'Base stats for a Pokémon' })
-  baseStats!: StatsEntry;
+  public baseStats!: StatsEntry;
 
   @Field(() => String, { description: 'The colour of a Pokémon as listed in the Pokedex' })
-  color!: string;
+  public color!: string;
 
   @Field(() => [String], { nullable: true, description: 'The egg groups a Pokémon is in' })
-  eggGroups?: string[];
+  public eggGroups?: string[];
 
   @Field(() => String || Int, { nullable: true, description: 'The evolution level, or special method, for a Pokémon' })
-  evolutionLevel?: string | number;
+  public evolutionLevel?: string | number;
 
   @Field(() => [String], { nullable: true, description: 'The raw evos of a Pokémon ' })
-  evos?: string[];
+  public evos?: string[];
 
   @Field(() => String, { nullable: true, description: 'The raw prevo of a Pokémon ' })
-  prevo?: string;
+  public prevo?: string;
 
   @Field(() => String, { nullable: true, description: 'The form identifier of a Pokémon ' })
-  forme?: string;
+  public forme?: string;
 
   @Field(() => String, { nullable: true, description: 'The single letter identifier of the form' })
-  formeLetter?: string;
+  public formeLetter?: string;
 
   @Field(() => GenderEntry, { description: 'The gender data for a Pokémon ' })
-  gender!: GenderEntry;
+  public gender!: GenderEntry;
 
   @Field(() => Float, { description: 'The height of a Pokémon in meters' })
-  height!: number;
+  public height!: number;
 
   @Field(() => Float, { description: 'The weight of a Pokémon in kilograms' })
-  weight!: number;
+  public weight!: number;
 
   @Field(() => String, { nullable: true, description: 'Base form if this entry describes an alternate form' })
-  baseForme?: string;
+  public baseForme?: string;
 
   @Field(() => String, { nullable: true, description: 'Base species if this entry describes a special form' })
-  baseSpecies?: string;
+  public baseSpecies?: string;
 
   @Field(() => [String], { nullable: true, description: 'Any other forms for a Pokémon' })
-  otherFormes?: string[];
+  public otherFormes?: string[];
 
   @Field(() => [String], {
     nullable: true,
@@ -67,5 +67,5 @@ export default class DexEntry {
       'while other formes might also change an ability, moveset or other data.'
     ].join(' ')
   })
-  cosmeticFormes?: string[];
+  public cosmeticFormes?: string[];
 }

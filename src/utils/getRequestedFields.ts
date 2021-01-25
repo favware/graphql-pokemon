@@ -13,14 +13,10 @@ function collectRequestedFields(
 ): GraphQLSet<string> {
   for (const fieldValue of Object.values(fieldsToParse)) {
     if (Object.keys(fieldValue.fieldsByTypeName).length === 0) {
-      if (parent && collectedFields.has(parent) === false) collectedFields.add(parent);
+      if (parent && !collectedFields.has(parent)) collectedFields.add(parent);
       collectedFields.add(`${parent ? `${parent}.` : ''}${fieldValue.name}`);
     } else {
-      collectRequestedFields(
-        Object.values(fieldValue.fieldsByTypeName)[0],
-        collectedFields,
-        `${parent ? `${parent}.` : ''}${fieldValue.name}`
-      );
+      collectRequestedFields(Object.values(fieldValue.fieldsByTypeName)[0], collectedFields, `${parent ? `${parent}.` : ''}${fieldValue.name}`);
     }
   }
   return collectedFields;

@@ -1628,7 +1628,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: "King's Rock",
       gen: 2,
-      desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
+      desc:
+        "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
 
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
     }
@@ -1689,7 +1690,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Leaf Stone',
       gen: 1,
-      desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
+      desc:
+        'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -2118,7 +2120,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Moon Stone',
       gen: 1,
-      desc: 'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
+      desc:
+        'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -2663,7 +2666,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Razor Fang',
       gen: 4,
-      desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
+      desc:
+        "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
       isNonstandard: 'Past'
     }
@@ -3218,7 +3222,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Sun Stone',
       gen: 2,
-      desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
+      desc:
+        'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -3385,7 +3390,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Utility Umbrella',
       gen: 8,
-      desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
+      desc:
+        'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
       shortDesc: 'The holder ignores rain- and sun-based effects.'
     }
   ],
@@ -3428,7 +3434,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Water Stone',
       gen: 1,
-      desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
+      desc:
+        'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],

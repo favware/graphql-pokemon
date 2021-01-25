@@ -7,5 +7,5 @@ export const moves = moveData.enumObject();
 @ArgsType()
 export default class MovePaginatedArgs extends PaginatedArgs {
   @Field(() => String, { description: 'The move to look up' })
-  move!: string;
+  public move!: string;
 }

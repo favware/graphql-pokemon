@@ -26,10 +26,7 @@ export default class DexService {
     return pokedex.get(species);
   }
 
-  public findByFuzzy(
-    @Args() { pokemon, skip, take }: PokemonPaginatedArgs,
-    requestedFields: GraphQLSet<unknown>
-  ): DexEntry[] {
+  public findByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, requestedFields: GraphQLSet<unknown>): DexEntry[] {
     const paginatedFuzzyResult = this.getByFuzzy({ pokemon, skip, take });
 
     const queryResults: DexEntry[] = [];
@@ -44,42 +41,12 @@ export default class DexService {
         female: 0.5
       };
 
-      addPropertyToClass(
-        genderData,
-        'male',
-        `${pageGenderRatio.male * 100}%`,
-        requestedFields as GraphQLSet<keyof GenderEntry>,
-        'gender.male'
-      );
-      addPropertyToClass(
-        genderData,
-        'female',
-        `${pageGenderRatio.female * 100}%`,
-        requestedFields as GraphQLSet<keyof GenderEntry>,
-        'gender.female'
-      );
+      addPropertyToClass(genderData, 'male', `${pageGenderRatio.male * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.male');
+      addPropertyToClass(genderData, 'female', `${pageGenderRatio.female * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.female');
 
-      addPropertyToClass(
-        baseStatsData,
-        'hp',
-        page.item.baseStats.hp,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.hp'
-      );
-      addPropertyToClass(
-        baseStatsData,
-        'attack',
-        page.item.baseStats.atk,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.attack'
-      );
-      addPropertyToClass(
-        baseStatsData,
-        'defense',
-        page.item.baseStats.def,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.defense'
-      );
+      addPropertyToClass(baseStatsData, 'hp', page.item.baseStats.hp, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.hp');
+      addPropertyToClass(baseStatsData, 'attack', page.item.baseStats.atk, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.attack');
+      addPropertyToClass(baseStatsData, 'defense', page.item.baseStats.def, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.defense');
       addPropertyToClass(
         baseStatsData,
         'specialattack',
@@ -94,21 +61,9 @@ export default class DexService {
         requestedFields as GraphQLSet<keyof StatsEntry>,
         'baseStats.specialdefense'
       );
-      addPropertyToClass(
-        baseStatsData,
-        'speed',
-        page.item.baseStats.spe,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.speed'
-      );
+      addPropertyToClass(baseStatsData, 'speed', page.item.baseStats.spe, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.speed');
 
-      addPropertyToClass(
-        abilitiesData,
-        'first',
-        page.item.abilities.first,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.first'
-      );
+      addPropertyToClass(abilitiesData, 'first', page.item.abilities.first, requestedFields as GraphQLSet<keyof AbilitiesEntry>, 'abilities.first');
       addPropertyToClass(
         abilitiesData,
         'second',
@@ -275,62 +230,14 @@ export default class DexService {
 
     const dexDetailsFields = requestedFields as GraphQLSet<keyof DexDetails>;
 
-    addPropertyToClass(
-      pokemonData,
-      'abilities',
-      abilitiesData,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}abilities`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'gender',
-      genderData,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}gender`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'baseStats',
-      baseStatsData,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}baseStats`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'num',
-      basePokemonData.num,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}num`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'species',
-      basePokemonData.species,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}species`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'types',
-      basePokemonData.types,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}types`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'color',
-      basePokemonData.color,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}color`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'eggGroups',
-      basePokemonData.eggGroups,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}eggGroups`
-    );
+    addPropertyToClass(pokemonData, 'abilities', abilitiesData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
+    addPropertyToClass(pokemonData, 'gender', genderData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
+    addPropertyToClass(pokemonData, 'baseStats', baseStatsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
+    addPropertyToClass(pokemonData, 'num', basePokemonData.num, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
+    addPropertyToClass(pokemonData, 'species', basePokemonData.species, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
+    addPropertyToClass(pokemonData, 'types', basePokemonData.types, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}types`);
+    addPropertyToClass(pokemonData, 'color', basePokemonData.color, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}color`);
+    addPropertyToClass(pokemonData, 'eggGroups', basePokemonData.eggGroups, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}eggGroups`);
     addPropertyToClass(
       pokemonData,
       'evolutionLevel',
@@ -338,49 +245,13 @@ export default class DexService {
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}evolutionLevel`
     );
-    addPropertyToClass(
-      pokemonData,
-      'evos',
-      basePokemonData.evos,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}evos`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'prevo',
-      basePokemonData.prevo,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}prevo`
-    );
+    addPropertyToClass(pokemonData, 'evos', basePokemonData.evos, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}evos`);
+    addPropertyToClass(pokemonData, 'prevo', basePokemonData.prevo, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}prevo`);
     const smogonTier = this.tiers[Util.toLowerSingleWordCase(basePokemonData.species)] || 'Undiscovered';
-    addPropertyToClass(
-      pokemonData,
-      'smogonTier',
-      smogonTier,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}smogonTier`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'height',
-      basePokemonData.heightm,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}height`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'weight',
-      basePokemonData.weightkg,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}weight`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'baseForme',
-      basePokemonData.baseForme,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}baseForme`
-    );
+    addPropertyToClass(pokemonData, 'smogonTier', smogonTier, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}smogonTier`);
+    addPropertyToClass(pokemonData, 'height', basePokemonData.heightm, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}height`);
+    addPropertyToClass(pokemonData, 'weight', basePokemonData.weightkg, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}weight`);
+    addPropertyToClass(pokemonData, 'baseForme', basePokemonData.baseForme, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseForme`);
     addPropertyToClass(
       pokemonData,
       'baseSpecies',
@@ -409,13 +280,7 @@ export default class DexService {
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStatsTotal`
     );
-    addPropertyToClass(
-      pokemonData,
-      'flavorTexts',
-      [],
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}flavorTexts`
-    );
+    addPropertyToClass(pokemonData, 'flavorTexts', [], dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}flavorTexts`);
     addPropertyToClass(
       pokemonData,
       'serebiiPage',
@@ -427,10 +292,7 @@ export default class DexService {
       pokemonData,
       'bulbapediaPage',
       basePokemonData.num >= 1
-        ? this.parseSpeciesForBulbapedia(
-            basePokemonData.species,
-            basePokemonData.baseForme || basePokemonData.baseSpecies
-          )
+        ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies)
         : '',
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}bulbapediaPage`
@@ -468,10 +330,7 @@ export default class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}shinySprite`
     );
 
-    if (
-      (requestedFields as GraphQLSet<string>).has(`${recursingAs ? `${recursingAs}.` : ''}flavorTexts`) &&
-      basePokemonData.num >= 0
-    ) {
+    if ((requestedFields as GraphQLSet<string>).has(`${recursingAs ? `${recursingAs}.` : ''}flavorTexts`) && basePokemonData.num >= 0) {
       let shouldParseBaseForme = true;
       if (basePokemonData.forme) {
         const formFlavors = this.flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
@@ -651,15 +510,9 @@ export default class DexService {
     return `${baseUrl}/ss/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
   }
 
-  private parseSpeciesForSprite(
-    pokemonName: string,
-    baseSpecies?: string,
-    specialSprite?: string,
-    specialShinySprite?: string,
-    shiny = false
-  ) {
-    if (specialShinySprite && shiny === true) return specialShinySprite;
-    if (specialSprite && shiny === false) return specialSprite;
+  private parseSpeciesForSprite(pokemonName: string, baseSpecies?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
+    if (specialShinySprite && shiny) return specialShinySprite;
+    if (specialSprite && !shiny) return specialSprite;
 
     if (!baseSpecies) pokemonName = Util.toLowerSingleWordCase(pokemonName);
 

@@ -54,16 +54,14 @@ const autoUpdateLearnsets = async () => {
   const output = new Map<string, unknown>();
   for (const [pokemon, learnset] of Object.entries(Learnsets)) {
     if (learnset.eventOnly === undefined && learnset.learnset === undefined) continue;
-    if (learnset.eventOnly !== undefined && learnset.learnset === undefined)
-      output.set(pokemon, { eventOnly: ['See base forme of this Pokémon'] });
+    if (learnset.eventOnly !== undefined && learnset.learnset === undefined) output.set(pokemon, { eventOnly: ['See base forme of this Pokémon'] });
     else output.set(pokemon, learnset.learnset);
   }
 
   const writePromises: Promise<void>[] = [];
 
   if (data.sha) writePromises.push(writeJSONAtomic(CI_DATA_FILE, { ...ciData, learnsetsLastSha: data.sha }));
-  if (output.size)
-    writePromises.push(writeFileAtomic(LEARNSETS_FILE, `${FILE_PREFIX}${mapToJson(output)}${FILE_SUFFIX}`));
+  if (output.size) writePromises.push(writeFileAtomic(LEARNSETS_FILE, `${FILE_PREFIX}${mapToJson(output)}${FILE_SUFFIX}`));
 
   await Promise.all(writePromises);
 
@@ -71,4 +69,4 @@ const autoUpdateLearnsets = async () => {
   return process.exit(0);
 };
 
-autoUpdateLearnsets();
+void autoUpdateLearnsets();

@@ -9,10 +9,7 @@ import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
 
 export default class LearnsetService {
-  public findLearnsets(
-    @Args() { pokemon, moves, generation }: LearnsetArgs,
-    requestedFields: GraphQLSet<keyof LearnsetEntry>
-  ): LearnsetEntry {
+  public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs, requestedFields: GraphQLSet<keyof LearnsetEntry>): LearnsetEntry {
     const learnset = learnsets.get(pokemon);
 
     if (!learnset) {
@@ -40,9 +37,7 @@ export default class LearnsetService {
             switch (this.getMethodType(method)) {
               case 'L':
                 if (requestedFields.has('levelUpMoves')) {
-                  levelupMoves.push(
-                    this.createLevelupMove(move, this.getMethodLevel(method), this.getMethodGeneration(method))
-                  );
+                  levelupMoves.push(this.createLevelupMove(move, this.getMethodLevel(method), this.getMethodGeneration(method)));
                 }
                 break;
               case 'V':
@@ -97,24 +92,13 @@ export default class LearnsetService {
       addPropertyToClass(
         learnsetEntry,
         'sprite',
-        this.parseSpeciesForSprite(
-          pokemonEntry.species,
-          pokemonEntry.baseSpecies,
-          pokemonEntry.specialSprite,
-          pokemonEntry.specialShinySprite
-        ),
+        this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite),
         requestedFields
       );
       addPropertyToClass(
         learnsetEntry,
         'shinySprite',
-        this.parseSpeciesForSprite(
-          pokemonEntry.species,
-          pokemonEntry.baseSpecies,
-          pokemonEntry.specialSprite,
-          pokemonEntry.specialShinySprite,
-          true
-        ),
+        this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite, true),
         requestedFields
       );
 
@@ -144,26 +128,20 @@ export default class LearnsetService {
   }
 
   private getMethodGeneration(method: string) {
-    return parseInt(method.slice(0, 1));
+    return parseInt(method.slice(0, 1), 10);
   }
 
   private getMethodLevel(method: string) {
-    return parseInt(method.slice(2));
+    return parseInt(method.slice(2), 10);
   }
 
   private getMethodType(method: string) {
     return method.slice(1, 2) as MethodTypes;
   }
 
-  private parseSpeciesForSprite(
-    pokemonName: string,
-    baseForme?: string,
-    specialSprite?: string,
-    specialShinySprite?: string,
-    shiny = false
-  ) {
-    if (specialShinySprite && shiny === true) return specialShinySprite;
-    if (specialSprite && shiny === false) return specialSprite;
+  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
+    if (specialShinySprite && shiny) return specialShinySprite;
+    if (specialSprite && !shiny) return specialSprite;
 
     if (!baseForme) pokemonName = Util.toLowerSingleWordCase(pokemonName);
 

@@ -10,5 +10,5 @@ export default class TypeArgs {
   @ArrayUnique()
   @ArrayMinSize(1)
   @ArrayMaxSize(2)
-  types!: string[];
+  public types!: string[];
 }

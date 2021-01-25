@@ -1,5 +1,4 @@
 // @ts-nocheck TS checking this file causes major delays in developing
-/* eslint-disable max-len */
 
 import GraphQLCollection from '../utils/GraphQLCollection';
 import type { Pokemon } from '../utils/pokemon';
@@ -1073,7 +1072,16 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       stringshot: ['8V', '7L1', '7V', '6L1', '5L1', '4T', '4L1', '3L1']
     }
   ],
-  ['kakuna', { bugbite: ['7T', '6T', '5T', '4T'], electroweb: ['7T', '6T', '5T'], harden: ['8V', '7L1', '7V', '6L1', '5L1', '4L1', '3L1'], irondefense: ['7T', '6T', '5T', '4T'], stringshot: ['4T'] }],
+  [
+    'kakuna',
+    {
+      bugbite: ['7T', '6T', '5T', '4T'],
+      electroweb: ['7T', '6T', '5T'],
+      harden: ['8V', '7L1', '7V', '6L1', '5L1', '4L1', '3L1'],
+      irondefense: ['7T', '6T', '5T', '4T'],
+      stringshot: ['4T']
+    }
+  ],
   [
     'beedrill',
     {
@@ -2258,7 +2266,27 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       knockoff: ['7T', '6T', '5T', '4T'],
       laserfocus: ['7T'],
       lastresort: ['4S18'],
-      lightscreen: ['8M', '8L40', '8V', '7M', '7L53', '7V', '6M', '6L45', '5M', '5L45', '4M', '4L42', '4S11', '3M', '3L50', '3S0', '3S6', '3S7', '3S8'],
+      lightscreen: [
+        '8M',
+        '8L40',
+        '8V',
+        '7M',
+        '7L53',
+        '7V',
+        '6M',
+        '6L45',
+        '5M',
+        '5L45',
+        '4M',
+        '4L42',
+        '4S11',
+        '3M',
+        '3L50',
+        '3S0',
+        '3S6',
+        '3S7',
+        '3S8'
+      ],
       magnetrise: ['7T', '6T', '5T', '4T'],
       megakick: ['8M', '7V', '6S32', '3T'],
       megapunch: ['8M', '7V', '3T'],
@@ -2332,11 +2360,56 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       sweetkiss: ['8L1', '6S36'],
       sweetscent: ['7S48'],
       swift: ['8M', '8S51', '7V', '4T', '3T'],
-      tailwhip: ['8L1', '8V', '7L1', '7V', '6L1', '6S38', '5L5', '5S28', '4L5', '4S9', '4S12', '4S15', '4S17', '4S20', '4S22', '3L6', '3S1', '3S2', '3S3', '3S4', '3S10'],
+      tailwhip: [
+        '8L1',
+        '8V',
+        '7L1',
+        '7V',
+        '6L1',
+        '6S38',
+        '5L5',
+        '5S28',
+        '4L5',
+        '4S9',
+        '4S12',
+        '4S15',
+        '4S17',
+        '4S20',
+        '4S22',
+        '3L6',
+        '3S1',
+        '3S2',
+        '3S3',
+        '3S4',
+        '3S10'
+      ],
       takedown: ['7V'],
       teeterdance: ['7S45', '6S38', '5S23'],
       thief: ['8M'],
-      thunder: ['8M', '8L44', '8V', '7M', '7L58', '7V', '6M', '6L50', '6S35', '5M', '5L50', '5S25', '4M', '4L45', '4S14', '4S16', '3M', '3L41', '3S0', '3S6', '3S7', '3S8'],
+      thunder: [
+        '8M',
+        '8L44',
+        '8V',
+        '7M',
+        '7L58',
+        '7V',
+        '6M',
+        '6L50',
+        '6S35',
+        '5M',
+        '5L50',
+        '5S25',
+        '4M',
+        '4L45',
+        '4S14',
+        '4S16',
+        '3M',
+        '3L41',
+        '3S0',
+        '3S6',
+        '3S7',
+        '3S8'
+      ],
       thunderbolt: [
         '8M',
         '8L36',
@@ -2370,8 +2443,51 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
         '3S8'
       ],
       thunderpunch: ['8M', '8V', '7T', '7V', '6T', '5T', '4T', '3T'],
-      thundershock: ['8L1', '8V', '8S50', '7L1', '7V', '7S46', '6L1', '5L1', '5S28', '4L1', '4S12', '4S15', '4S20', '4S22', '3L1', '3S1', '3S5', '3S10'],
-      thunderwave: ['8M', '8L4', '8V', '7M', '7L18', '7V', '6M', '6L13', '5M', '5L10', '5S28', '4M', '4L10', '4S9', '4S17', '3T', '3L8', '3S1', '3S2', '3S3', '3S4', '3S5', '3S10'],
+      thundershock: [
+        '8L1',
+        '8V',
+        '8S50',
+        '7L1',
+        '7V',
+        '7S46',
+        '6L1',
+        '5L1',
+        '5S28',
+        '4L1',
+        '4S12',
+        '4S15',
+        '4S20',
+        '4S22',
+        '3L1',
+        '3S1',
+        '3S5',
+        '3S10'
+      ],
+      thunderwave: [
+        '8M',
+        '8L4',
+        '8V',
+        '7M',
+        '7L18',
+        '7V',
+        '6M',
+        '6L13',
+        '5M',
+        '5L10',
+        '5S28',
+        '4M',
+        '4L10',
+        '4S9',
+        '4S17',
+        '3T',
+        '3L8',
+        '3S1',
+        '3S2',
+        '3S3',
+        '3S4',
+        '3S5',
+        '3S10'
+      ],
       toxic: ['8V', '7M', '7V', '6M', '5M', '4M', '3M'],
       uproar: ['8M'],
       voltswitch: ['8M', '7M', '6M', '5M', '5S29'],
@@ -19246,7 +19362,30 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       hiddenpower: ['7M', '7V', '6M', '5M', '4M', '3M'],
       hurricane: ['8M', '8L55', '8S8', '7L92', '6L1', '5L92'],
       hyperbeam: ['8M', '8V', '7M', '7V', '6M', '5M', '4M', '3M'],
-      icebeam: ['8M', '8L45', '8V', '8S8', '7M', '7L71', '7V', '6M', '6L43', '6S5', '6S6', '5M', '5L43', '4M', '4L43', '4S3', '4S4', '3M', '3L49', '3S0', '3S1', '3S2'],
+      icebeam: [
+        '8M',
+        '8L45',
+        '8V',
+        '8S8',
+        '7M',
+        '7L71',
+        '7V',
+        '6M',
+        '6L43',
+        '6S5',
+        '6S6',
+        '5M',
+        '5L43',
+        '4M',
+        '4L43',
+        '4S3',
+        '4S4',
+        '3M',
+        '3L49',
+        '3S0',
+        '3S1',
+        '3S2'
+      ],
       iceshard: ['8L15', '8V', '7L15', '6L15', '5L15', '4L15'],
       iciclespear: ['8M'],
       icywind: ['8M', '7T', '7V', '6T', '5T', '4T', '3T'],
@@ -19518,7 +19657,27 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       fireblast: ['8M', '8V', '7M', '7V', '6M', '5M', '4M', '3M'],
       firespin: ['8M', '8V', '8S8', '7L8', '7V', '6L8', '5L8', '4L8', '4S4', '3L13', '3S0'],
       flamecharge: ['7M', '6M', '5M'],
-      flamethrower: ['8M', '8V', '7M', '7L36', '7V', '7S7', '6M', '6L36', '5M', '5L36', '4M', '4L36', '4S3', '4S4', '3M', '3L49', '3S0', '3S1', '3S2'],
+      flamethrower: [
+        '8M',
+        '8V',
+        '7M',
+        '7L36',
+        '7V',
+        '7S7',
+        '6M',
+        '6L36',
+        '5M',
+        '5L36',
+        '4M',
+        '4L36',
+        '4S3',
+        '4S4',
+        '3M',
+        '3L49',
+        '3S0',
+        '3S1',
+        '3S2'
+      ],
       flareblitz: ['8M'],
       fly: ['8M', '8V', '7M', '7V', '6M', '5M', '4M', '3M'],
       frustration: ['7M', '7V', '6M', '5M', '4M', '3M'],
@@ -20259,7 +20418,26 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       megakick: ['8M', '7V', '3T'],
       megapunch: ['8M', '8V', '7L10', '7V', '6L10', '5L10', '4L10', '4S16', '3T', '3L20', '3S0'],
       meteorbeam: ['8T'],
-      metronome: ['8M', '8L60', '8V', '7L20', '7V', '7S24', '6L20', '5L20', '4L20', '4S14', '4S15', '4S16', '4S17', '4S18', '4S19', '3T', '3L30', '3S0'],
+      metronome: [
+        '8M',
+        '8L60',
+        '8V',
+        '7L20',
+        '7V',
+        '7S24',
+        '6L20',
+        '5L20',
+        '4L20',
+        '4S14',
+        '4S15',
+        '4S16',
+        '4S17',
+        '4S18',
+        '4S19',
+        '3T',
+        '3L30',
+        '3S0'
+      ],
       mimic: ['8V', '7V', '3T'],
       mistyexplosion: ['8T'],
       mistyterrain: ['8M'],
@@ -29753,7 +29931,16 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       tackle: ['7L1', '6L1', '5L1', '4L1', '3L1']
     }
   ],
-  ['silcoon', { bugbite: ['7T', '6T', '5T', '4T'], electroweb: ['7T', '6T', '5T'], harden: ['7L1', '6L1', '5L1', '4L1', '3L1'], irondefense: ['7T', '6T', '5T', '4T'], stringshot: ['4T'] }],
+  [
+    'silcoon',
+    {
+      bugbite: ['7T', '6T', '5T', '4T'],
+      electroweb: ['7T', '6T', '5T'],
+      harden: ['7L1', '6L1', '5L1', '4L1', '3L1'],
+      irondefense: ['7T', '6T', '5T', '4T'],
+      stringshot: ['4T']
+    }
+  ],
   [
     'beautifly',
     {
@@ -29819,7 +30006,16 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       whirlwind: ['7L30', '6L27', '5L27', '4L27', '3L27']
     }
   ],
-  ['cascoon', { bugbite: ['7T', '6T', '5T', '4T'], electroweb: ['7T', '6T', '5T'], harden: ['7L1', '6L1', '5L1', '4L1', '3L1'], irondefense: ['7T', '6T', '5T', '4T'], stringshot: ['4T'] }],
+  [
+    'cascoon',
+    {
+      bugbite: ['7T', '6T', '5T', '4T'],
+      electroweb: ['7T', '6T', '5T'],
+      harden: ['7L1', '6L1', '5L1', '4L1', '3L1'],
+      irondefense: ['7T', '6T', '5T', '4T'],
+      stringshot: ['4T']
+    }
+  ],
   [
     'dustox',
     {
@@ -39747,7 +39943,30 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       hiddenpower: ['7M', '6M', '5M', '4M', '3M'],
       hydropump: ['8M', '8L72', '7L75', '6L75', '5L90', '4L45', '3L45', '3S0', '3S1'],
       hyperbeam: ['8M', '7M', '6M', '5M', '4M', '3M'],
-      icebeam: ['8M', '8L36', '7M', '7L35', '7S7', '7S8', '7S9', '7S10', '6M', '6L35', '6S5', '6S6', '5M', '5L35', '5S3', '5S4', '4M', '4L35', '4S2', '3M', '3L35', '3S0'],
+      icebeam: [
+        '8M',
+        '8L36',
+        '7M',
+        '7L35',
+        '7S7',
+        '7S8',
+        '7S9',
+        '7S10',
+        '6M',
+        '6L35',
+        '6S5',
+        '6S6',
+        '5M',
+        '5L35',
+        '5S3',
+        '5S4',
+        '4M',
+        '4L35',
+        '4S2',
+        '3M',
+        '3L35',
+        '3S0'
+      ],
       icywind: ['8M', '7T', '6T', '5T', '4T', '3T'],
       ironhead: ['8M', '7T', '6T', '5T', '4T'],
       liquidation: ['8M', '7T'],
@@ -39814,7 +40033,28 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       dragontail: ['7M', '6M', '5M'],
       dynamicpunch: ['3T'],
       earthpower: ['8M', '8L9', '7T', '7L15', '7S10', '6T', '6L15', '5T', '5L65', '5S4', '4T', '4L65'],
-      earthquake: ['8M', '8L27', '8S11', '7M', '7L35', '7S7', '7S8', '7S9', '6M', '6L35', '6S5', '5M', '5L35', '5S3', '4M', '4L35', '4S2', '3M', '3L35', '3S0'],
+      earthquake: [
+        '8M',
+        '8L27',
+        '8S11',
+        '7M',
+        '7L35',
+        '7S7',
+        '7S8',
+        '7S9',
+        '6M',
+        '6L35',
+        '6S5',
+        '5M',
+        '5L35',
+        '5S3',
+        '4M',
+        '4L35',
+        '4S2',
+        '3M',
+        '3L35',
+        '3S0'
+      ],
       endure: ['8M', '4M', '3T'],
       eruption: ['8L90', '7L90', '6L50', '5L50', '5S3', '5S4', '4L50', '4S2', '3L75'],
       facade: ['8M', '7M', '6M', '5M', '4M', '3M'],
@@ -39872,7 +40112,27 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       sleeptalk: ['8M', '7M', '6M', '5T', '4M', '3T'],
       smackdown: ['7M', '6M', '5M'],
       snore: ['8M', '7T', '6T', '5T', '4T', '3T'],
-      solarbeam: ['8M', '8L81', '7M', '7L60', '7S7', '7S8', '7S9', '6M', '6L60', '6S6', '5M', '5L80', '5S3', '5S4', '4M', '4L65', '3M', '3L65', '3S1'],
+      solarbeam: [
+        '8M',
+        '8L81',
+        '7M',
+        '7L60',
+        '7S7',
+        '7S8',
+        '7S9',
+        '6M',
+        '6L60',
+        '6S6',
+        '5M',
+        '5L80',
+        '5S3',
+        '5S4',
+        '4M',
+        '4L65',
+        '3M',
+        '3L65',
+        '3S1'
+      ],
       stealthrock: ['8M', '7T', '6T', '5T', '4M'],
       stompingtantrum: ['8M', '7T'],
       stoneedge: ['8M', '7M', '6M', '5M', '4M'],
@@ -40009,7 +40269,29 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       chargebeam: ['7M', '6M', '5M', '4M'],
       charm: ['8M'],
       confide: ['7M', '6M'],
-      confusion: ['8L1', '7L1', '6L1', '6S18', '6S20', '6S21', '5L1', '4L1', '4S11', '4S12', '3L1', '3S0', '3S1', '3S2', '3S3', '3S4', '3S5', '3S6', '3S7', '3S8', '3S9'],
+      confusion: [
+        '8L1',
+        '7L1',
+        '6L1',
+        '6S18',
+        '6S20',
+        '6S21',
+        '5L1',
+        '4L1',
+        '4S11',
+        '4S12',
+        '3L1',
+        '3S0',
+        '3S1',
+        '3S2',
+        '3S3',
+        '3S4',
+        '3S5',
+        '3S6',
+        '3S7',
+        '3S8',
+        '3S9'
+      ],
       cosmicpower: ['8M', '8L84', '7L60', '6L60', '6S19', '5L60', '5S15', '4L60', '3L45'],
       dazzlinggleam: ['8M', '7M', '6M'],
       defensecurl: ['3T'],
@@ -54463,7 +54745,13 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
   ],
   [
     'tynamo',
-    { chargebeam: ['7M', '7L1', '6M', '6L1', '5L1'], magnetrise: ['7T', '6T', '5T'], spark: ['7L1', '6L1', '5L1'], tackle: ['7L1', '6L1', '5L1'], thunderwave: ['7M', '7L1', '6M', '6L1', '5L1'] }
+    {
+      chargebeam: ['7M', '7L1', '6M', '6L1', '5L1'],
+      magnetrise: ['7T', '6T', '5T'],
+      spark: ['7L1', '6L1', '5L1'],
+      tackle: ['7L1', '6L1', '5L1'],
+      thunderwave: ['7M', '7L1', '6M', '6L1', '5L1']
+    }
   ],
   [
     'eelektrik',
@@ -59443,9 +59731,19 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
   ],
   [
     'scatterbug',
-    { bugbite: ['7T', '7L15', '6T', '6L15'], poisonpowder: ['7E', '6E'], ragepowder: ['7E', '6E'], stringshot: ['7L1', '6L1'], stunspore: ['7L6', '7E', '6L6', '6E'], tackle: ['7L1', '6L1'] }
+    {
+      bugbite: ['7T', '7L15', '6T', '6L15'],
+      poisonpowder: ['7E', '6E'],
+      ragepowder: ['7E', '6E'],
+      stringshot: ['7L1', '6L1'],
+      stunspore: ['7L6', '7E', '6L6', '6E'],
+      tackle: ['7L1', '6L1']
+    }
   ],
-  ['spewpa', { bugbite: ['7T', '6T'], electroweb: ['7T', '6T'], harden: ['7L1', '6L1'], irondefense: ['7T', '6T'], protect: ['7M', '7L1', '6M', '6L9'] }],
+  [
+    'spewpa',
+    { bugbite: ['7T', '6T'], electroweb: ['7T', '6T'], harden: ['7L1', '6L1'], irondefense: ['7T', '6T'], protect: ['7M', '7L1', '6M', '6L9'] }
+  ],
   [
     'vivillon',
     {
@@ -72139,7 +72437,20 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       willowisp: ['8M']
     }
   ],
-  ['applin', { astonish: ['8L1'], attract: ['8M'], defensecurl: ['8E'], dracometeor: ['8T'], grassyglide: ['8T'], recycle: ['8E'], rollout: ['8E'], suckerpunch: ['8E'], withdraw: ['8L1'] }],
+  [
+    'applin',
+    {
+      astonish: ['8L1'],
+      attract: ['8M'],
+      defensecurl: ['8E'],
+      dracometeor: ['8T'],
+      grassyglide: ['8T'],
+      recycle: ['8E'],
+      rollout: ['8E'],
+      suckerpunch: ['8E'],
+      withdraw: ['8L1']
+    }
+  ],
   [
     'flapple',
     {

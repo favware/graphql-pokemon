@@ -423,7 +423,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: "Every Pokémon in the user's party is cured of its non-volatile status condition. Active Pokémon with the Sap Sipper Ability are not cured, unless they are the user.",
+      desc:
+        "Every Pokémon in the user's party is cured of its non-volatile status condition. Active Pokémon with the Sap Sipper Ability are not cured, unless they are the user.",
 
       shortDesc: "Cures the user's party of all status conditions.",
       name: 'Aromatherapy',
@@ -1045,7 +1046,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Physical',
-      desc: "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+      desc:
+        "Damage is calculated using the user's Defense stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
       shortDesc: "Uses user's Def stat as Atk in damage calculation.",
       name: 'Body Press',
       pp: 10,
@@ -2287,7 +2289,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Normal',
       contestType: 'Cool',
       maxMovePower: 100,
-      isFieldMove: 'The Pokémon is able to cut down small trees, and prior to gen 4, tall grass. It is taught to Pokémon with HM01 in all generations.'
+      isFieldMove:
+        'The Pokémon is able to cut down small trees, and prior to gen 4, tall grass. It is taught to Pokémon with HM01 in all generations.'
     }
   ],
   [
@@ -2417,7 +2420,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Flying',
       contestType: 'Cool',
-      isFieldMove: 'The Pokémon can clear out fog on the field. Defog can be taught to a Pokémon by using HM05 in Diamond, Pearl, and Platinum. Since Generation V, it has lost its HM status.'
+      isFieldMove:
+        'The Pokémon can clear out fog on the field. Defog can be taught to a Pokémon by using HM05 in Diamond, Pearl, and Platinum. Since Generation V, it has lost its HM status.'
     }
   ],
   [
@@ -2628,7 +2632,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '60',
       category: 'Physical',
-      desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 30% chance to make the target flinch.",
+      desc:
+        "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 30% chance to make the target flinch.",
       shortDesc: 'Hits twice. 30% chance to make the target flinch.',
       name: 'Double Iron Bash',
       pp: 5,
@@ -3397,7 +3402,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Special',
-      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokémon and has its power multiplied by 1.5.',
+      desc:
+        'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokémon and has its power multiplied by 1.5.',
       shortDesc: 'User on Psychic Terrain: 1.5x power, hits foes.',
       name: 'Expanding Force',
       pp: 10,
@@ -3412,7 +3418,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Special',
-      desc: 'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokémon and has its power multiplied by 1.5.',
+      desc:
+        'If the current terrain is Psychic Terrain and the user is grounded, this move hits all opposing Pokémon and has its power multiplied by 1.5.',
       shortDesc: 'User on Psychic Terrain: 1.5x power, hits foes.',
       name: 'Expanding Force',
       pp: 10,
@@ -3983,7 +3990,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Beautiful',
-      isFieldMove: 'The Pokémon is able to light up dark caverns. Flash is taught to Pokémon with HM05 in the first three generations, and with TM70 since Generation IV.'
+      isFieldMove:
+        'The Pokémon is able to light up dark caverns. Flash is taught to Pokémon with HM05 in the first three generations, and with TM70 since Generation IV.'
     }
   ],
   [
@@ -4143,7 +4151,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Flying',
       contestType: 'Clever',
       maxMovePower: 130,
-      isFieldMove: 'The Pokémon can fly the player to any previously visited town/landmark. Fly can be taught to Pokémon with HM02 in all generations.'
+      isFieldMove:
+        'The Pokémon can fly the player to any previously visited town/landmark. Fly can be taught to Pokémon with HM02 in all generations.'
     }
   ],
   [
@@ -4802,7 +4811,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side loses 2 PP from its last move used, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side loses 2 PP from its last move used, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: last move -2 PP.',
       name: 'G-Max Depletion',
       pp: 5,
@@ -4834,7 +4844,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side restores 1/6 of its current maximum HP, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side restores 1/6 of its current maximum HP, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1/6 max HP.',
       name: 'G-Max Finale',
       pp: 5,
@@ -4850,7 +4861,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the evasiveness of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the evasiveness of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 evasiveness.',
       name: 'G-Max Tartness',
       pp: 5,
@@ -4900,7 +4912,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes paralyzed, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes paralyzed, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: paralyzed.',
       name: 'G-Max Volt Crash',
       pp: 10,
@@ -4966,7 +4979,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 2 stages, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 2 stages, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -2 Speed.',
       name: 'G-Max Foam Burst',
       pp: 5,
@@ -4982,7 +4996,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes confused, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes confused, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: confused.',
       name: 'G-Max Gold Rush',
       pp: 5,
@@ -5030,7 +5045,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes poisoned, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes poisoned, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: poisoned.',
       name: 'G-Max Malodor',
       pp: 5,
@@ -5046,7 +5062,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Torment begins for each Pokémon on the opposing side, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the effect of Torment begins for each Pokémon on the opposing side, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: Tormented.',
       name: 'G-Max Meltdown',
       pp: 5,
@@ -5079,7 +5096,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side either becomes poisoned or paralyzed, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side either becomes poisoned or paralyzed, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: psn or par.',
       name: 'G-Max Stun Shock',
       pp: 10,
@@ -5095,7 +5113,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side has its status condition cured, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the user's side has its status condition cured, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: status cured.',
       name: 'G-Max Sweetness',
       pp: 10,
@@ -5213,7 +5232,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes confused, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side becomes confused, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: confused.',
       name: 'G-Max Smite',
       pp: 5,
@@ -5229,7 +5249,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, there is a 50% chance the effect of Yawn begins on the target, even if it has a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, there is a 50% chance the effect of Yawn begins on the target, even if it has a substitute.",
       shortDesc: 'Base move affects power. Target: 50% Yawn.',
       name: 'G-Max Snooze',
       pp: 5,
@@ -5666,7 +5687,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: "Every Pokémon in the user's party is cured of its non-volatile status condition. Active Pokémon with the Soundproof Ability are not cured, unless they are the user.",
+      desc:
+        "Every Pokémon in the user's party is cured of its non-volatile status condition. Active Pokémon with the Soundproof Ability are not cured, unless they are the user.",
       shortDesc: "Cures the user's party of all status conditions.",
       name: 'Heal Bell',
       pp: 5,
@@ -7154,7 +7176,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: 'Causes the target to become a Psychic type. Fails if the target is an Arceus or a Silvally, or if the target is already purely Psychic type.',
+      desc:
+        'Causes the target to become a Psychic type. Fails if the target is an Arceus or a Silvally, or if the target is already purely Psychic type.',
       shortDesc: "Changes the target's type to Psychic.",
       name: 'Magic Powder',
       pp: 20,
@@ -7345,7 +7368,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Speed.',
       name: 'Max Airstream',
       pp: 5,
@@ -7516,7 +7540,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Sp. Atk.',
       name: 'Max Ooze',
       pp: 5,
@@ -7546,7 +7571,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Defense.',
       name: 'Max Phantasm',
       pp: 5,
@@ -7607,7 +7633,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Allies: +1 Defense.',
       name: 'Max Steelspike',
       pp: 5,
@@ -7622,7 +7649,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Speed.',
       name: 'Max Strike',
       pp: 5,
@@ -7637,7 +7665,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, the Attack of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
+      desc:
+        "Power is equal to the base move's Max Move power. If this move is successful, the Attack of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute.",
       shortDesc: 'Base move affects power. Foes: -1 Attack.',
       name: 'Max Wyrmwind',
       pp: 5,
@@ -9580,7 +9609,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: 'The target is cured if it has a non-volatile status condition. If the target was cured, the user restores 1/2 of its maximum HP, rounded half up.',
+      desc:
+        'The target is cured if it has a non-volatile status condition. If the target was cured, the user restores 1/2 of its maximum HP, rounded half up.',
 
       shortDesc: "Cures target's status; heals user 1/2 maxHP if so.",
       name: 'Purify',
@@ -10090,7 +10120,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       target: 'Normal',
       type: 'Normal',
       contestType: 'Tough',
-      isFieldMove: 'The Pokémon can climb up rocky walls. Rock climb can be taught to a Pokémon by using HM08 in Generation IV. Since Generation V, it has lost its HM status.'
+      isFieldMove:
+        'The Pokémon can climb up rocky walls. Rock climb can be taught to a Pokémon by using HM08 in Generation IV. Since Generation V, it has lost its HM status.'
     }
   ],
   [
@@ -11921,7 +11952,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 95,
       basePower: '140',
       category: 'Special',
-      desc: 'Whether or not this move is successful and even if it would cause fainting, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
+      desc:
+        'Whether or not this move is successful and even if it would cause fainting, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
       shortDesc: 'User loses 50% max HP. Hits adjacent Pokémon.',
       name: 'Steel Beam',
       pp: 5,
@@ -12408,7 +12440,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '25',
       category: 'Physical',
-      desc: 'Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
+      desc:
+        'Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
       shortDesc: 'Always results in a critical hit. Hits 3 times.',
       name: 'Surging Strikes',
       pp: 5,
@@ -12425,7 +12458,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '25',
       category: 'Physical',
-      desc: 'Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
+      desc:
+        'Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
       shortDesc: 'Always results in a critical hit. Hits 3 times.',
       name: 'Surging Strikes',
       pp: 5,
@@ -13335,7 +13369,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '40',
       category: 'Special',
-      desc: 'Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.',
+      desc:
+        'Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.',
       shortDesc: '20% chance to make the foe(s) flinch.',
       name: 'Twister',
       pp: 20,
@@ -13713,7 +13748,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       type: 'Water',
       contestType: 'Beautiful',
       maxMovePower: 90,
-      isFieldMove: "The Pokémon can dismiss small whirlpools in the water. Whirlpool is taught to Pokémon with HM06 in generation II and generation IV's HeartGold and SoulSilver as HM05"
+      isFieldMove:
+        "The Pokémon can dismiss small whirlpools in the water. Whirlpool is taught to Pokémon with HM06 in generation II and generation IV's HeartGold and SoulSilver as HM05"
     }
   ],
   [
@@ -13737,7 +13773,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Physical',
-      desc: 'This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
+      desc:
+        'This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.',
       shortDesc: 'Always results in a critical hit.',
       name: 'Wicked Blow',
       pp: 5,

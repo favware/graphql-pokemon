@@ -2,19 +2,19 @@ import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 import MovePaginatedArgs, { moves } from '../arguments/MovePaginatedArgs';
+import { moveAliases } from '../assets/aliases';
 import MoveService from '../services/MoveService';
 import MoveEntry from '../structures/MoveEntry';
 import { getRequestedFields } from '../utils/getRequestedFields';
 import type GraphQLSet from '../utils/GraphQLSet';
 import type Pokemon from '../utils/pokemon';
 import Util from '../utils/util';
-import { moveAliases } from '../assets/aliases';
 
 @Resolver(MoveEntry)
 export default class MoveResolver {
   private moveService: MoveService;
 
-  constructor() {
+  public constructor() {
     this.moveService = new MoveService();
   }
 
@@ -25,7 +25,7 @@ export default class MoveResolver {
       'Reversal is applied before paginations!'
     ].join('')
   })
-  getMoveDetailsByFuzzy(
+  public getMoveDetailsByFuzzy(
     @Args() { move, skip, take, reverse }: MovePaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
   ): MoveEntry {
@@ -64,10 +64,7 @@ export default class MoveResolver {
   @Query(() => MoveEntry, {
     description: ['Gets details on a single move based on an exact name match.'].join('')
   })
-  getMoveDetailsByName(
-    @Arg('move', () => moves) move: string,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
-  ): MoveEntry {
+  public getMoveDetailsByName(@Arg('move', () => moves) move: string, @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>): MoveEntry {
     const entry = this.moveService.findByName(move);
 
     if (!entry) {
@@ -90,7 +87,7 @@ export default class MoveResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getMoveByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs): Fuse.FuseResult<Pokemon.Move>[] {
+  public getMoveByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs): Fuse.FuseResult<Pokemon.Move>[] {
     const moveEntries = this.moveService.findByFuzzy({
       move,
       skip,
@@ -106,7 +103,7 @@ export default class MoveResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single move based on name.' })
-  getMoveByName(@Arg('move', () => moves) move: string): Pokemon.Move {
+  public getMoveByName(@Arg('move', () => moves) move: string): Pokemon.Move {
     const moveEntry = this.moveService.findByName(move);
 
     if (moveEntry === undefined) {

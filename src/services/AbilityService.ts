@@ -14,9 +14,7 @@ export default class AbilityService {
     return abilities.get(name);
   }
 
-  public findByFuzzy(
-    @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs
-  ): Fuse.FuseResult<Pokemon.Ability>[] {
+  public findByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs): Fuse.FuseResult<Pokemon.Ability>[] {
     const fuzzyResult = new FuzzySearch(abilities, ['name'], { threshold: 0.3 }).runFuzzy(ability);
 
     if (reverse) {
@@ -26,10 +24,7 @@ export default class AbilityService {
     return fuzzyResult.slice(skip, skip + take);
   }
 
-  public findByNameWithDetails(
-    abilityData: Pokemon.Ability,
-    requestedFields: GraphQLSet<keyof AbilityEntry>
-  ): AbilityEntry {
+  public findByNameWithDetails(abilityData: Pokemon.Ability, requestedFields: GraphQLSet<keyof AbilityEntry>): AbilityEntry {
     const abilityEntry = new AbilityEntry();
     addPropertyToClass(abilityEntry, 'desc', abilityData.desc, requestedFields);
     addPropertyToClass(abilityEntry, 'shortDesc', abilityData.shortDesc, requestedFields);

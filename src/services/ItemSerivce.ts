@@ -50,12 +50,7 @@ export default class ItemService {
       `https://www.serebii.net/itemdex/${Util.toLowerSingleWordCase(itemData.name)}.shtml`,
       requestedFields
     );
-    addPropertyToClass(
-      itemEntry,
-      'smogonPage',
-      `https://www.smogon.com/dex/ss/items/${Util.toLowerHyphenCase(itemData.name)}`,
-      requestedFields
-    );
+    addPropertyToClass(itemEntry, 'smogonPage', `https://www.smogon.com/dex/ss/items/${Util.toLowerHyphenCase(itemData.name)}`, requestedFields);
 
     return itemEntry;
   }

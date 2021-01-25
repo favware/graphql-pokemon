@@ -24,7 +24,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'aftermath',
     {
-      desc: "If this Pokémon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokémon has the Ability Damp, this effect is prevented.",
+      desc:
+        "If this Pokémon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokémon has the Ability Damp, this effect is prevented.",
       shortDesc: "If this Pokémon is KOed with a contact move, that move's user loses 1/4 its max HP.",
       name: 'Aftermath'
     }
@@ -39,7 +40,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'analytic',
     {
-      desc: "The power of this Pokémon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
+      desc:
+        "The power of this Pokémon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
       shortDesc: "This Pokémon's attacks have 1.3x power if it is the last to move in a turn.",
       name: 'Analytic'
     }
@@ -67,7 +69,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: 'Prevents adjacent opposing Pokémon from choosing to switch out unless they are immune to trapping or are airborne.',
       shortDesc: 'Prevents adjacent foes from choosing to switch unless they are airborne.',
       name: 'Arena Trap',
-      isFieldAbility: 'Having a Pokémon with Arena Trap at the front of your party will double the encounter rate of all wild Pokémon, even if the Pokémon with Arena Trap has fainted.'
+      isFieldAbility:
+        'Having a Pokémon with Arena Trap at the front of your party will double the encounter rate of all wild Pokémon, even if the Pokémon with Arena Trap has fainted.'
     }
   ],
   [
@@ -135,7 +138,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'battlebond',
     {
-      desc: 'If this Pokémon is a Greninja, it transforms into Ash-Greninja after knocking out a Pokémon. As Ash-Greninja, its Water Shuriken has 20 base power and always hits 3 times.',
+      desc:
+        'If this Pokémon is a Greninja, it transforms into Ash-Greninja after knocking out a Pokémon. As Ash-Greninja, its Water Shuriken has 20 base power and always hits 3 times.',
       shortDesc: 'After KOing a Pokémon: becomes Ash-Greninja, Water Shuriken: 20 power, hits 3x.',
       name: 'Battle Bond'
     }
@@ -167,7 +171,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'blaze',
     {
-      desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Fire-type attack.',
+      desc:
+        'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Fire-type attack.',
       shortDesc: "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Fire attacks.",
       name: 'Blaze'
     }
@@ -231,7 +236,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'comatose',
     {
-      desc: 'This Pokémon cannot be statused, and is considered to be asleep. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
+      desc:
+        'This Pokémon cannot be statused, and is considered to be asleep. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
       shortDesc: 'This Pokémon cannot be statused, and is considered to be asleep.',
       name: 'Comatose'
     }
@@ -287,7 +293,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'cursedbody',
     {
-      desc: "If this Pokémon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled.",
+      desc:
+        "If this Pokémon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled.",
       shortDesc: 'If this Pokémon is hit by an attack, there is a 30% chance that move gets disabled.',
       name: 'Cursed Body'
     }
@@ -305,7 +312,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'damp',
     {
-      desc: 'While this Pokémon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.',
+      desc:
+        'While this Pokémon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.',
       shortDesc: 'Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.',
       name: 'Damp'
     }
@@ -508,7 +516,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'flowerveil',
     {
-      desc: "Grass-type Pokémon on this Pokémon's side cannot have their stat stages lowered by other Pokémon or have a non-volatile status condition inflicted on them by other Pokémon.",
+      desc:
+        "Grass-type Pokémon on this Pokémon's side cannot have their stat stages lowered by other Pokémon or have a non-volatile status condition inflicted on them by other Pokémon.",
       shortDesc: "This side's Grass types can't have stats lowered or status inflicted by other Pokémon.",
       name: 'Flower Veil'
     }
@@ -555,7 +564,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'fullmetalbody',
     {
-      desc: "Prevents other Pokémon from lowering this Pokémon's stat stages. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.",
+      desc:
+        "Prevents other Pokémon from lowering this Pokémon's stat stages. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.",
       shortDesc: "Prevents other Pokémon from lowering this Pokémon's stat stages.",
       name: 'Full Metal Body'
     }
@@ -641,7 +651,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'harvest',
     {
-      desc: 'If the last item this Pokémon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.',
+      desc:
+        'If the last item this Pokémon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.',
       shortDesc: 'If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun.',
       name: 'Harvest',
       isFieldAbility:
@@ -727,7 +738,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'icebody',
     {
-      desc: 'If Hail is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This Pokémon takes no damage from Hail.',
+      desc:
+        'If Hail is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This Pokémon takes no damage from Hail.',
       shortDesc: 'If Hail is active, this Pokémon heals 1/16 of its max HP each turn; immunity to Hail.',
       name: 'Ice Body'
     }
@@ -754,7 +766,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       shortDesc: 'No competitive use.',
       name: 'Illuminate',
-      isFieldAbility: 'If a Pokémon with Illuminate is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.'
+      isFieldAbility:
+        'If a Pokémon with Illuminate is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.'
     }
   ],
   [
@@ -776,7 +789,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'imposter',
     {
-      desc: 'On switch-in, this Pokémon Transforms into the opposing Pokémon that is facing it. If there is no Pokémon at that position, this Pokémon does not Transform.',
+      desc:
+        'On switch-in, this Pokémon Transforms into the opposing Pokémon that is facing it. If there is no Pokémon at that position, this Pokémon does not Transform.',
       shortDesc: 'On switch-in, this Pokémon Transforms into the opposing Pokémon that is facing it.',
       name: 'Imposter'
     }
@@ -787,7 +801,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: "This Pokémon's moves ignore substitutes and the opposing side's Reflect, Light Screen, Safeguard, Mist and Aurora Veil.",
       shortDesc: "Moves ignore substitutes and foe's Reflect/Light Screen/Safeguard/Mist/Aurora Veil.",
       name: 'Infiltrator',
-      isFieldAbility: 'In Pokémon Sword and Shield, if a Pokémon with Infiltrator is placed at the front of the party, wild Pokémon are less likely to appear.'
+      isFieldAbility:
+        'In Pokémon Sword and Shield, if a Pokémon with Infiltrator is placed at the front of the party, wild Pokémon are less likely to appear.'
     }
   ],
   [
@@ -815,7 +830,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'intimidate',
     {
-      desc: 'On switch-in, this Pokémon lowers the Attack of adjacent opposing Pokémon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokémon behind a substitute are immune.',
+      desc:
+        'On switch-in, this Pokémon lowers the Attack of adjacent opposing Pokémon by 1 stage. Inner Focus, Oblivious, Own Tempo, Scrappy, and Pokémon behind a substitute are immune.',
       shortDesc: 'On switch-in, this Pokémon lowers the Attack of adjacent opponents by 1 stage.',
       name: 'Intimidate',
       isFieldAbility:
@@ -874,7 +890,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'leafguard',
     {
-      desc: 'If Sunny Day is active and this Pokémon is not holding Utility Umbrella, this Pokémon cannot gain a non-volatile status condition and Rest will fail for it.',
+      desc:
+        'If Sunny Day is active and this Pokémon is not holding Utility Umbrella, this Pokémon cannot gain a non-volatile status condition and Rest will fail for it.',
 
       shortDesc: 'If Sunny Day is active, this Pokémon cannot be statused and Rest will fail for it.',
       name: 'Leaf Guard'
@@ -892,7 +909,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'libero',
     {
-      desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
+      desc:
+        "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
       shortDesc: "This Pokémon's type changes to match the type of the move it is about to use.",
       name: 'Libero'
     }
@@ -932,7 +950,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'liquidvoice',
     {
-      desc: "This Pokémon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+      desc:
+        "This Pokémon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
       shortDesc: "This Pokémon's sound-based moves become Water type.",
       name: 'Liquid Voice'
     }
@@ -955,7 +974,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'magicguard',
     {
-      desc: 'This Pokémon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.',
+      desc:
+        'This Pokémon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.',
       shortDesc: 'This Pokémon can only be damaged by direct attacks.',
       name: 'Magic Guard'
     }
@@ -1048,7 +1068,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'moody',
     {
-      desc: 'This Pokémon has a random stat other than accuracy or evasion raised by 2 stages and another stat lowered by 1 stage at the end of each turn.',
+      desc:
+        'This Pokémon has a random stat other than accuracy or evasion raised by 2 stages and another stat lowered by 1 stage at the end of each turn.',
       shortDesc: 'Raises a random stat (except accuracy/evasion) by 2 and lowers another stat by 1 at the end of each turn.',
       name: 'Moody'
     }
@@ -1128,13 +1149,15 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       shortDesc: 'Every move used by or against this Pokémon will always hit.',
       name: 'No Guard',
-      isFieldAbility: 'If a Pokémon with No Guard is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.'
+      isFieldAbility:
+        'If a Pokémon with No Guard is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.'
     }
   ],
   [
     'normalize',
     {
-      desc: "This Pokémon's moves are changed to be Normal type and have their power multiplied by 1.2. This effect comes before other effects that change a move's type.",
+      desc:
+        "This Pokémon's moves are changed to be Normal type and have their power multiplied by 1.2. This effect comes before other effects that change a move's type.",
       shortDesc: "This Pokémon's moves are changed to be Normal type and have 1.2x power.",
       name: 'Normalize'
     }
@@ -1157,7 +1180,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'overgrow',
     {
-      desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Grass-type attack.',
+      desc:
+        'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Grass-type attack.',
       shortDesc: "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Grass attacks.",
       name: 'Overgrow'
     }
@@ -1173,7 +1197,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'parentalbond',
     {
-      desc: "This Pokémon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
+      desc:
+        "This Pokémon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
       shortDesc: "This Pokémon's damaging moves hit twice. The second hit has its damage quartered.",
       name: 'Parental Bond'
     }
@@ -1181,7 +1206,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'persistent',
     {
-      desc: 'The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokémon.',
+      desc:
+        'The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokémon.',
       shortDesc: 'When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.',
       name: 'Persistent'
     }
@@ -1198,7 +1224,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'perishbody',
     {
-      desc: 'Making contact with this Pokémon starts the Perish Song effect for it and the attacker. This effect does not happen if this Pokémon already has a perish count.',
+      desc:
+        'Making contact with this Pokémon starts the Perish Song effect for it and the attacker. This effect does not happen if this Pokémon already has a perish count.',
       shortDesc: 'Making contact with this Pokémon starts the Perish Song effect for it and the attacker.',
       name: 'Perish Body'
     }
@@ -1262,7 +1289,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'powerconstruct',
     {
-      desc: 'If this Pokémon is a Zygarde in its 10% or 50% Forme, it changes to Complete Forme when it has 1/2 or less of its maximum HP at the end of the turn.',
+      desc:
+        'If this Pokémon is a Zygarde in its 10% or 50% Forme, it changes to Complete Forme when it has 1/2 or less of its maximum HP at the end of the turn.',
       shortDesc: 'If Zygarde 10%/50%, changes to Complete if at 1/2 max HP or less at end of turn.',
       name: 'Power Construct'
     }
@@ -1312,7 +1340,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'prismarmor',
     {
-      desc: 'This Pokémon receives 3/4 damage from supereffective attacks. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
+      desc:
+        'This Pokémon receives 3/4 damage from supereffective attacks. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
       shortDesc: 'This Pokémon receives 3/4 damage from supereffective attacks.',
       name: 'Prism Armor'
     }
@@ -1327,7 +1356,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'protean',
     {
-      desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
+      desc:
+        "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
       shortDesc: "This Pokémon's type changes to match the type of the move it is about to use.",
       name: 'Protean'
     }
@@ -1375,7 +1405,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: 'If this Pokémon has a non-volatile status condition, its Speed is multiplied by 1.5; the Speed drop from paralysis is ignored.',
       shortDesc: 'If this Pokémon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.',
       name: 'Quick Feet',
-      isFieldAbility: 'If a Pokémon with Quick Feet is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
+      isFieldAbility:
+        'If a Pokémon with Quick Feet is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1388,7 +1419,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'raindish',
     {
-      desc: 'If Rain Dance is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. If this Pokémon is holding Utility Umbrella, its HP does not get restored.',
+      desc:
+        'If Rain Dance is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. If this Pokémon is holding Utility Umbrella, its HP does not get restored.',
       shortDesc: 'If Rain Dance is active, this Pokémon heals 1/16 of its max HP each turn.',
       name: 'Rain Dish'
     }
@@ -1478,7 +1510,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'sandforce',
     {
-      desc: "If Sandstorm is active, this Pokémon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokémon takes no damage from Sandstorm.",
+      desc:
+        "If Sandstorm is active, this Pokémon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokémon takes no damage from Sandstorm.",
       shortDesc: "This Pokémon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
       name: 'Sand Force'
     }
@@ -1512,7 +1545,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: "If Sandstorm is active, this Pokémon's evasiveness is multiplied by 1.25. This Pokémon takes no damage from Sandstorm.",
       shortDesc: "If Sandstorm is active, this Pokémon's evasiveness is 1.25x; immunity to Sandstorm.",
       name: 'Sand Veil',
-      isFieldAbility: 'If a Pokémon with Sand Veil is in the first place in the party (even if fainted) in an area with a sandstorm, the chance of encountering a wild Pokémon is decreased by 50%.'
+      isFieldAbility:
+        'If a Pokémon with Sand Veil is in the first place in the party (even if fainted) in an area with a sandstorm, the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1557,7 +1591,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'shadowshield',
     {
-      desc: 'If this Pokémon is at full HP, damage taken from attacks is halved. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
+      desc:
+        'If this Pokémon is at full HP, damage taken from attacks is halved. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.',
       shortDesc: 'If this Pokémon is at full HP, damage taken from attacks is halved.',
       name: 'Shadow Shield'
     }
@@ -1653,7 +1688,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       desc: "If Hail is active, this Pokémon's evasiveness is multiplied by 1.25. This Pokémon takes no damage from Hail.",
       shortDesc: "If Hail is active, this Pokémon's evasiveness is 1.25x; immunity to Hail.",
       name: 'Snow Cloak',
-      isFieldAbility: 'If a Pokémon with Snow Cloak is in the first place in the party (even if fainted) in an area with hail, the chance of encountering a wild Pokémon is decreased by 50%.'
+      isFieldAbility:
+        'If a Pokémon with Snow Cloak is in the first place in the party (even if fainted) in an area with hail, the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1733,7 +1769,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'stancechange',
     {
-      desc: "If this Pokémon is an Aegislash, it changes to Blade Forme before attempting to use an attacking move, and changes to Shield Forme before attempting to use King's Shield.",
+      desc:
+        "If this Pokémon is an Aegislash, it changes to Blade Forme before attempting to use an attacking move, and changes to Shield Forme before attempting to use King's Shield.",
       shortDesc: "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield.",
       name: 'Stance Change'
     }
@@ -1784,7 +1821,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
       shortDesc: "This Pokémon's attacks without a chance to flinch gain a 10% chance to flinch.",
 
       name: 'Stench',
-      isFieldAbility: 'If a Pokémon with Stench is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
+      isFieldAbility:
+        'If a Pokémon with Stench is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -1827,7 +1865,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       shortDesc: "This Pokémon cannot be forced to switch out by another Pokémon's attack or item.",
       name: 'Suction Cups',
-      isFieldAbility: 'If a Pokémon with Suction Cups is in the first place in the party (even if fainted), bites will occur more often while fishing.'
+      isFieldAbility:
+        'If a Pokémon with Suction Cups is in the first place in the party (even if fainted), bites will occur more often while fishing.'
     }
   ],
   [
@@ -1835,7 +1874,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       shortDesc: "This Pokémon's critical hit ratio is raised by 1 stage.",
       name: 'Super Luck',
-      isFieldAbility: 'In Pokémon Sword and Shield, if a Pokémon with this Ability leads the party, the chances of finding a wild Pokémon holding an item increase.'
+      isFieldAbility:
+        'In Pokémon Sword and Shield, if a Pokémon with this Ability leads the party, the chances of finding a wild Pokémon holding an item increase.'
     }
   ],
   [
@@ -1848,7 +1888,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'swarm',
     {
-      desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.',
+      desc:
+        'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.',
       shortDesc: "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Bug attacks.",
       name: 'Swarm',
       isFieldAbility: 'In Pokémon Emerald, this Ability also increases the frequency cries of wild Pokémon that are heard in the overworld.'
@@ -1872,7 +1913,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'symbiosis',
     {
-      desc: "If an ally uses its item, this Pokémon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off.",
+      desc:
+        "If an ally uses its item, this Pokémon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off.",
       shortDesc: 'If an ally uses its item, this Pokémon gives its item to that ally immediately.',
       name: 'Symbiosis'
     }
@@ -1880,7 +1922,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'synchronize',
     {
-      desc: 'If another Pokémon burns, paralyzes, poisons, or badly poisons this Pokémon, that Pokémon receives the same non-volatile status condition.',
+      desc:
+        'If another Pokémon burns, paralyzes, poisons, or badly poisons this Pokémon, that Pokémon receives the same non-volatile status condition.',
       shortDesc: 'If another Pokémon burns/poisons/paralyzes this Pokémon, it also gets that status.',
       name: 'Synchronize',
       isFieldAbility:
@@ -1926,7 +1969,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'thickfat',
     {
-      desc: "If a Pokémon uses a Fire- or Ice-type attack against this Pokémon, that Pokémon's attacking stat is halved when calculating the damage to this Pokémon.",
+      desc:
+        "If a Pokémon uses a Fire- or Ice-type attack against this Pokémon, that Pokémon's attacking stat is halved when calculating the damage to this Pokémon.",
       shortDesc: 'Fire/Ice-type moves against this Pokémon deal damage with a halved attacking stat.',
       name: 'Thick Fat'
     }
@@ -1941,7 +1985,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'torrent',
     {
-      desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Water-type attack.',
+      desc:
+        'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Water-type attack.',
       shortDesc: "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Water attacks.",
       name: 'Torrent'
     }
@@ -2010,7 +2055,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'unburden',
     {
-      desc: 'If this Pokémon loses its held item for any reason, its Speed is doubled. This boost is lost if it switches out or gains a new item or Ability.',
+      desc:
+        'If this Pokémon loses its held item for any reason, its Speed is doubled. This boost is lost if it switches out or gains a new item or Ability.',
       shortDesc: 'Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability.',
       name: 'Unburden'
     }
@@ -2018,7 +2064,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'unnerve',
     {
-      desc: "While this Pokémon is active, it prevents opposing Pokémon from using their Berries. Activation message broadcasts before other Abilities regardless of the Pokémon's Speed tiers.",
+      desc:
+        "While this Pokémon is active, it prevents opposing Pokémon from using their Berries. Activation message broadcasts before other Abilities regardless of the Pokémon's Speed tiers.",
       shortDesc: 'While this Pokémon is active, it prevents opposing Pokémon from using their Berries.',
       name: 'Unnerve'
     }
@@ -2108,7 +2155,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       shortDesc: "Prevents other Pokémon from lowering this Pokémon's stat stages.",
       name: 'White Smoke',
-      isFieldAbility: 'If a Pokémon with White Smoke is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
+      isFieldAbility:
+        'If a Pokémon with White Smoke is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.'
     }
   ],
   [
@@ -2130,7 +2178,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
   [
     'wonderskin',
     {
-      desc: 'All non-damaging moves that check accuracy have their accuracy changed to 50% when used on this Pokémon. This change is done before any other accuracy modifying effects.',
+      desc:
+        'All non-damaging moves that check accuracy have their accuracy changed to 50% when used on this Pokémon. This change is done before any other accuracy modifying effects.',
       shortDesc: 'Status moves with accuracy checks are 50% accurate when used on this Pokémon.',
       name: 'Wonder Skin'
     }

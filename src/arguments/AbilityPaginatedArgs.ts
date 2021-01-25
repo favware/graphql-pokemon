@@ -7,5 +7,5 @@ export const abilities = abilitiesData.enumObject();
 @ArgsType()
 export default class AbilityPaginatedArgs extends PaginatedArgs {
   @Field(() => String, { description: 'The ability to look up' })
-  ability!: string;
+  public ability!: string;
 }

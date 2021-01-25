@@ -15,7 +15,7 @@ export default class LearnsetResolver {
   private dexService: DexService;
   private moveService: MoveService;
 
-  constructor() {
+  public constructor() {
     this.learnsetService = new LearnsetService();
     this.dexService = new DexService();
     this.moveService = new MoveService();
@@ -28,7 +28,7 @@ export default class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  getPokemonLearnset(
+  public getPokemonLearnset(
     @Args() { pokemon, moves, generation }: LearnsetArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof LearnsetEntry>
   ): LearnsetEntry {
@@ -55,7 +55,7 @@ export default class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  getPokemonLearnsetByFuzzy(
+  public getPokemonLearnsetByFuzzy(
     @Args() { pokemon, moves, generation }: LearnsetFuzzyArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof LearnsetEntry>
   ): LearnsetEntry {

@@ -1,7 +1,6 @@
 import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
 export type Maybe<T> = T | null;
-export type RequireFields<T, K extends keyof T> = { [X in Exclude<keyof T, K>]?: T[X] } &
-  { [P in K]-?: NonNullable<T[P]> };
+export type RequireFields<T, K extends keyof T> = { [X in Exclude<keyof T, K>]?: T[X] } & { [P in K]-?: NonNullable<T[P]> };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: string;
@@ -3344,10 +3343,7 @@ export type ResolversParentTypes = {
   TypeEntry: TypeEntry;
 };
 
-export type QueryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']
-> = {
+export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   getAbilityDetailsByFuzzy?: Resolver<
     ResolversTypes['AbilityEntry'],
     ParentType,
@@ -3366,12 +3362,7 @@ export type QueryResolvers<
     ContextType,
     RequireFields<QueryGetAbilityByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'ability'>
   >;
-  getAbilityByName?: Resolver<
-    ResolversTypes['JSONObject'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetAbilityByNameArgs, 'ability'>
-  >;
+  getAbilityByName?: Resolver<ResolversTypes['JSONObject'], ParentType, ContextType, RequireFields<QueryGetAbilityByNameArgs, 'ability'>>;
   getPokemonDetails?: Resolver<
     ResolversTypes['DexDetails'],
     ParentType,
@@ -3402,36 +3393,21 @@ export type QueryResolvers<
     ContextType,
     RequireFields<QueryGetDexEntryBySpeciesNameArgs, 'pokemon'>
   >;
-  getDexEntryByDexNumber?: Resolver<
-    ResolversTypes['JSONObject'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetDexEntryByDexNumberArgs, 'num'>
-  >;
+  getDexEntryByDexNumber?: Resolver<ResolversTypes['JSONObject'], ParentType, ContextType, RequireFields<QueryGetDexEntryByDexNumberArgs, 'num'>>;
   getItemDetailsByFuzzy?: Resolver<
     ResolversTypes['ItemEntry'],
     ParentType,
     ContextType,
     RequireFields<QueryGetItemDetailsByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'item'>
   >;
-  getItemDetailsByName?: Resolver<
-    ResolversTypes['ItemEntry'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetItemDetailsByNameArgs, 'item'>
-  >;
+  getItemDetailsByName?: Resolver<ResolversTypes['ItemEntry'], ParentType, ContextType, RequireFields<QueryGetItemDetailsByNameArgs, 'item'>>;
   getItemByFuzzy?: Resolver<
     ReadonlyArray<ResolversTypes['JSONObject']>,
     ParentType,
     ContextType,
     RequireFields<QueryGetItemByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'item'>
   >;
-  getItemByName?: Resolver<
-    ResolversTypes['JSONObject'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetItemByNameArgs, 'item'>
-  >;
+  getItemByName?: Resolver<ResolversTypes['JSONObject'], ParentType, ContextType, RequireFields<QueryGetItemByNameArgs, 'item'>>;
   getPokemonLearnset?: Resolver<
     ResolversTypes['LearnsetEntry'],
     ParentType,
@@ -3450,36 +3426,16 @@ export type QueryResolvers<
     ContextType,
     RequireFields<QueryGetMoveDetailsByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'move'>
   >;
-  getMoveDetailsByName?: Resolver<
-    ResolversTypes['MoveEntry'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetMoveDetailsByNameArgs, 'move'>
-  >;
+  getMoveDetailsByName?: Resolver<ResolversTypes['MoveEntry'], ParentType, ContextType, RequireFields<QueryGetMoveDetailsByNameArgs, 'move'>>;
   getMoveByFuzzy?: Resolver<
     ReadonlyArray<ResolversTypes['JSONObject']>,
     ParentType,
     ContextType,
     RequireFields<QueryGetMoveByFuzzyArgs, 'skip' | 'take' | 'reverse' | 'move'>
   >;
-  getMoveByName?: Resolver<
-    ResolversTypes['JSONObject'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetMoveByNameArgs, 'move'>
-  >;
-  getTypeMatchup?: Resolver<
-    ResolversTypes['TypeMatchups'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetTypeMatchupArgs, 'types'>
-  >;
-  getTypeByName?: Resolver<
-    ResolversTypes['JSONObject'],
-    ParentType,
-    ContextType,
-    RequireFields<QueryGetTypeByNameArgs, 'type'>
-  >;
+  getMoveByName?: Resolver<ResolversTypes['JSONObject'], ParentType, ContextType, RequireFields<QueryGetMoveByNameArgs, 'move'>>;
+  getTypeMatchup?: Resolver<ResolversTypes['TypeMatchups'], ParentType, ContextType, RequireFields<QueryGetTypeMatchupArgs, 'types'>>;
+  getTypeByName?: Resolver<ResolversTypes['JSONObject'], ParentType, ContextType, RequireFields<QueryGetTypeByNameArgs, 'type'>>;
 };
 
 export type AbilityEntryResolvers<
@@ -3499,10 +3455,7 @@ export interface JsonObjectScalarConfig extends GraphQLScalarTypeConfig<Resolver
   name: 'JSONObject';
 }
 
-export type DexDetailsResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['DexDetails'] = ResolversParentTypes['DexDetails']
-> = {
+export type DexDetailsResolvers<ContextType = any, ParentType extends ResolversParentTypes['DexDetails'] = ResolversParentTypes['DexDetails']> = {
   num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   types?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
@@ -3546,10 +3499,7 @@ export type AbilitiesEntryResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type StatsEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['StatsEntry'] = ResolversParentTypes['StatsEntry']
-> = {
+export type StatsEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['StatsEntry'] = ResolversParentTypes['StatsEntry']> = {
   hp?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   attack?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   defense?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
@@ -3559,28 +3509,19 @@ export type StatsEntryResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type GenderEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['GenderEntry'] = ResolversParentTypes['GenderEntry']
-> = {
+export type GenderEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['GenderEntry'] = ResolversParentTypes['GenderEntry']> = {
   male?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   female?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type FlavorEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['FlavorEntry'] = ResolversParentTypes['FlavorEntry']
-> = {
+export type FlavorEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['FlavorEntry'] = ResolversParentTypes['FlavorEntry']> = {
   game?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   flavor?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type DexEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['DexEntry'] = ResolversParentTypes['DexEntry']
-> = {
+export type DexEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['DexEntry'] = ResolversParentTypes['DexEntry']> = {
   num?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   species?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   types?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
@@ -3603,10 +3544,7 @@ export type DexEntryResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type ItemEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['ItemEntry'] = ResolversParentTypes['ItemEntry']
-> = {
+export type ItemEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['ItemEntry'] = ResolversParentTypes['ItemEntry']> = {
   desc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shortDesc?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
@@ -3657,10 +3595,7 @@ export type LearnsetMoveResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type MoveEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['MoveEntry'] = ResolversParentTypes['MoveEntry']
-> = {
+export type MoveEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['MoveEntry'] = ResolversParentTypes['MoveEntry']> = {
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   shortDesc?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   type?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
@@ -3690,10 +3625,7 @@ export type TypeMatchupsResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType>;
 };
 
-export type TypeEntryResolvers<
-  ContextType = any,
-  ParentType extends ResolversParentTypes['TypeEntry'] = ResolversParentTypes['TypeEntry']
-> = {
+export type TypeEntryResolvers<ContextType = any, ParentType extends ResolversParentTypes['TypeEntry'] = ResolversParentTypes['TypeEntry']> = {
   doubleEffectiveTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   effectiveTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;
   normalTypes?: Resolver<ReadonlyArray<ResolversTypes['String']>, ParentType, ContextType>;

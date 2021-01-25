@@ -4,42 +4,37 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [5.0.1](https://github.com/favware/graphql-pokemon/compare/v5.0.0...v5.0.1) (2021-01-10)
 
-
 ### Bug Fixes
 
-* **pokedex:** assign proper evolution conditions for happiness evolutions ([a802dc6](https://github.com/favware/graphql-pokemon/commit/a802dc691c1b33811953a2c2a16603ce2263efa1))
+- **pokedex:** assign proper evolution conditions for happiness evolutions ([a802dc6](https://github.com/favware/graphql-pokemon/commit/a802dc691c1b33811953a2c2a16603ce2263efa1))
 
 ## [5.0.0](https://github.com/favware/graphql-pokemon/compare/v4.5.0...v5.0.0) (2020-11-28)
 
-
 ### ⚠ BREAKING CHANGES
 
-* While this should not be a breaking change to a lot of people, the types for
-aliasses have drastically changed so this should be considered a breaking change.
+- While this should not be a breaking change to a lot of people, the types for
+  aliasses have drastically changed so this should be considered a breaking change.
 
 ### Features
 
-* rework parsing of aliases ([9fb32bc](https://github.com/favware/graphql-pokemon/commit/9fb32bcb903afc7bfd761723d1b8a3530f124d6c))
+- rework parsing of aliases ([9fb32bc](https://github.com/favware/graphql-pokemon/commit/9fb32bcb903afc7bfd761723d1b8a3530f124d6c))
 
 ## [4.5.0](https://github.com/favware/graphql-pokemon/compare/v4.4.0...v4.5.0) (2020-11-09)
 
-
 ### Features
 
-* add information on out-of-battle effects to move & ability info ([#336](https://github.com/favware/graphql-pokemon/issues/336)) ([f7e8d11](https://github.com/favware/graphql-pokemon/commit/f7e8d11a7368f4d643ed0e8b94c7d5103cb71d6d))
-
+- add information on out-of-battle effects to move & ability info ([#336](https://github.com/favware/graphql-pokemon/issues/336)) ([f7e8d11](https://github.com/favware/graphql-pokemon/commit/f7e8d11a7368f4d643ed0e8b94c7d5103cb71d6d))
 
 ### Bug Fixes
 
-* **items:** add info for potions ([#332](https://github.com/favware/graphql-pokemon/issues/332)) ([b52f151](https://github.com/favware/graphql-pokemon/commit/b52f1513a7a5ce600333777caa21443a353ef2d9))
-* **items:** add obtainable items ([#321](https://github.com/favware/graphql-pokemon/issues/321)) ([65e1cc7](https://github.com/favware/graphql-pokemon/commit/65e1cc70f03a8b3810d8bb8be53650a6942d40f0))
+- **items:** add info for potions ([#332](https://github.com/favware/graphql-pokemon/issues/332)) ([b52f151](https://github.com/favware/graphql-pokemon/commit/b52f1513a7a5ce600333777caa21443a353ef2d9))
+- **items:** add obtainable items ([#321](https://github.com/favware/graphql-pokemon/issues/321)) ([65e1cc7](https://github.com/favware/graphql-pokemon/commit/65e1cc70f03a8b3810d8bb8be53650a6942d40f0))
 
 ## [4.4.0](https://github.com/favware/graphql-pokemon/compare/v4.3.0...v4.4.0) (2020-10-25)
 
-
 ### Features
 
-* add Crown Tundra ([#316](https://github.com/favware/graphql-pokemon/issues/316)) ([66987c7](https://github.com/favware/graphql-pokemon/commit/66987c7bdfaa15b7d3316b59648e53d3890538f9))
+- add Crown Tundra ([#316](https://github.com/favware/graphql-pokemon/issues/316)) ([66987c7](https://github.com/favware/graphql-pokemon/commit/66987c7bdfaa15b7d3316b59648e53d3890538f9))
 
 ## [4.3.0](https://github.com/favware/graphql-pokemon/compare/v4.2.5...v4.3.0) (2020-09-02)
 

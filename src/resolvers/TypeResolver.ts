@@ -11,15 +11,12 @@ import type Pokemon from '../utils/pokemon';
 export default class TypeResolver {
   private typeService: TypeService;
 
-  constructor() {
+  public constructor() {
     this.typeService = new TypeService();
   }
 
   @Query(() => TypeMatchups, { description: 'Gets the type matchup data for the given type or types' })
-  getTypeMatchup(
-    @Args() { types }: TypeArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchups>
-  ): TypeMatchups {
+  public getTypeMatchup(@Args() { types }: TypeArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchups>): TypeMatchups {
     const entry = this.typeService.findTypeMatchups({ types }, requestedFields);
 
     if (entry === undefined) {
@@ -30,7 +27,7 @@ export default class TypeResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the raw type matchup data for any one given type' })
-  getTypeByName(@Arg('type', () => types) type: string): Pokemon.TypeMatchups {
+  public getTypeByName(@Arg('type', () => types) type: string): Pokemon.TypeMatchups {
     const typeEntry = this.typeService.findTypeMatchupByName(type);
 
     if (typeEntry === undefined) {

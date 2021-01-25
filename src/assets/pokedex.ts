@@ -20432,7 +20432,17 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 28,
       color: 'White',
       eggGroups: ['Field'],
-      cosmeticFormes: ['Furfrou-Dandy', 'Furfrou-Debutante', 'Furfrou-Diamond', 'Furfrou-Heart', 'Furfrou-Kabuki', 'Furfrou-La Reine', 'Furfrou-Matron', 'Furfrou-Pharaoh', 'Furfrou-Star']
+      cosmeticFormes: [
+        'Furfrou-Dandy',
+        'Furfrou-Debutante',
+        'Furfrou-Diamond',
+        'Furfrou-Heart',
+        'Furfrou-Kabuki',
+        'Furfrou-La Reine',
+        'Furfrou-Matron',
+        'Furfrou-Pharaoh',
+        'Furfrou-Star'
+      ]
     }
   ],
   [

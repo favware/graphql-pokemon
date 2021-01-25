@@ -42,12 +42,7 @@ export default class MoveService {
     addPropertyToClass(moveEntry, 'isZ', Util.parseZCrystal(moveData.isZ), requestedFields);
     addPropertyToClass(moveEntry, 'isFieldMove', moveData.isFieldMove, requestedFields);
     addPropertyToClass(moveEntry, 'maxMovePower', moveData.maxMovePower, requestedFields);
-    addPropertyToClass(
-      moveEntry,
-      'zMovePower',
-      this.parseZMovePower(moveData.basePower, moveData.zMovePower),
-      requestedFields
-    );
+    addPropertyToClass(moveEntry, 'zMovePower', this.parseZMovePower(moveData.basePower, moveData.zMovePower), requestedFields);
     addPropertyToClass(
       moveEntry,
       'serebiiPage',
@@ -60,12 +55,7 @@ export default class MoveService {
       `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(moveData.name)}_(move)`,
       requestedFields
     );
-    addPropertyToClass(
-      moveEntry,
-      'smogonPage',
-      `https://www.smogon.com/dex/ss/moves/${Util.toLowerHyphenCase(moveData.name)}`,
-      requestedFields
-    );
+    addPropertyToClass(moveEntry, 'smogonPage', `https://www.smogon.com/dex/ss/moves/${Util.toLowerHyphenCase(moveData.name)}`, requestedFields);
 
     return moveEntry;
   }

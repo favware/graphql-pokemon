@@ -1,9 +1,7 @@
 {
-  "extends": "@favware/ts-config",
+  "extends": "@sapphire/ts-config",
   "compilerOptions": {
     "target": "ES2020",
-    "importsNotUsedAsValues": "error",
-    "resolveJsonModule": true,
     "declarationMap": false,
     "sourceMap": false
   }

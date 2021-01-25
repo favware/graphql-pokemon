@@ -59,9 +59,7 @@ describe('getItemDetailsByFuzzy', () => {
     }).then(formatResponse)) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Specs');
-    expect(data.getItemDetailsByFuzzy.sprite).toBe(
-      'https://play.pokemonshowdown.com/sprites/itemicons/choice-specs.png'
-    );
+    expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-specs.png');
     expect(data).toMatchSnapshot();
   });
 
@@ -72,9 +70,7 @@ describe('getItemDetailsByFuzzy', () => {
     }).then(formatResponse)) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Band');
-    expect(data.getItemDetailsByFuzzy.sprite).toBe(
-      'https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png'
-    );
+    expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png');
     expect(data).toMatchSnapshot();
   });
 
@@ -90,9 +86,7 @@ describe('getItemDetailsByFuzzy', () => {
     }).then(formatResponse)) as DataResponse<'getItemDetailsByFuzzy'>;
 
     expect(data.getItemDetailsByFuzzy.name).toBe('Choice Scarf');
-    expect(data.getItemDetailsByFuzzy.sprite).toBe(
-      'https://play.pokemonshowdown.com/sprites/itemicons/choice-scarf.png'
-    );
+    expect(data.getItemDetailsByFuzzy.sprite).toBe('https://play.pokemonshowdown.com/sprites/itemicons/choice-scarf.png');
     expect(data).toMatchSnapshot();
   });
 

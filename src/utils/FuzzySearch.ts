@@ -5,7 +5,7 @@ export default class FuzzySearch<K extends string, V> {
   private readonly CollectionArray: ReadonlyArray<V>;
   private readonly FuseOptions?: Fuse.IFuseOptions<V>;
 
-  constructor(collection: Collection<K, V>, keys: string[], options?: Fuse.IFuseOptions<V>) {
+  public constructor(collection: Collection<K, V>, keys: string[], options?: Fuse.IFuseOptions<V>) {
     this.CollectionArray = [...collection.values()];
     this.FuseOptions = {
       ...options,

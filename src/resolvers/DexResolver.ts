@@ -15,7 +15,7 @@ import Util from '../utils/util';
 export default class DexResolver {
   private dexService: DexService;
 
-  constructor() {
+  public constructor() {
     this.dexService = new DexService();
   }
 
@@ -26,7 +26,7 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  async getPokemonDetails(
+  public async getPokemonDetails(
     @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
@@ -52,7 +52,7 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getPokemonDetailsByName(
+  public getPokemonDetailsByName(
     @Args() { pokemon, skip, take, reverse }: ExactPokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
   ): Promise<DexDetails> {
@@ -74,7 +74,7 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  async getPokemonDetailsByFuzzy(
+  public async getPokemonDetailsByFuzzy(
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
@@ -114,7 +114,7 @@ export default class DexResolver {
       'Reversal is applied before pagination!'
     ].join('')
   })
-  getDexEntries(
+  public getDexEntries(
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): DexEntry[] {
@@ -135,7 +135,7 @@ export default class DexResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their species name' })
-  getDexEntryBySpeciesName(@Arg('pokemon', () => pokemons) pokemon: string): Pokemon.DexEntry {
+  public getDexEntryBySpeciesName(@Arg('pokemon', () => pokemons) pokemon: string): Pokemon.DexEntry {
     const dexEntry = this.dexService.findBySpecies(pokemon);
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
@@ -145,7 +145,7 @@ export default class DexResolver {
   }
 
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
-  getDexEntryByDexNumber(@Arg('num') num: number): Pokemon.DexEntry {
+  public getDexEntryByDexNumber(@Arg('num') num: number): Pokemon.DexEntry {
     const dexEntry = this.dexService.findByNum(num);
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon with dex number: ${num}`);

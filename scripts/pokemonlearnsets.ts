@@ -3,6 +3,7 @@ import { green, red, yellow } from 'colorette';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
+import { URL } from 'url';
 import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './utils';
 
 const FILE_PREFIX = [

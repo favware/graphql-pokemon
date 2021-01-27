@@ -3,6 +3,7 @@ import { green, red, yellow } from 'colorette';
 import { readJSON, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
 import { join } from 'path';
+import { URL } from 'url';
 import { DataJSON, importFileFromWeb, SmogonTiersData } from './utils';
 
 const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');

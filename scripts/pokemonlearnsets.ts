@@ -8,7 +8,6 @@ import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './ut
 
 const FILE_PREFIX = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
-  '/* eslint-disable max-len */',
   '',
   "import GraphQLCollection from '../utils/GraphQLCollection';",
   "import type { Pokemon } from '../utils/pokemon';",

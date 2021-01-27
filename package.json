@@ -13,7 +13,7 @@
   "homepage": "https://graphqlpokemon.favware.tech/",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",
-    "format": "prettier --write --loglevel=warn src/**/*.{ts,json}",
+    "format": "prettier --write --loglevel=warn {src,scripts}/**/*.{ts,json}",
     "test": "jest",
     "start": "node generated/api",
     "build": "tsc -b src",

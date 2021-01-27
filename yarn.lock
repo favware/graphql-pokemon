@@ -1288,11 +1288,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@klasa/timestamp@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@klasa/timestamp/-/timestamp-0.0.1.tgz#f7e2171438563affc1e082e9ff6cb013468062a1"
-  integrity sha512-Oreeh+YawFcLvF5SWREBYQie8Net+KihA15ZRG8hOPYqCLRkkeRcf1xrPUdZelsXFGKV3lqpbdTvhyGOau92mA==
-
 "@koa/cors@^2.2.1":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@koa/cors/-/cors-2.2.3.tgz#c32a9907acbee1e72fedfb0b9ac840d2e6f9be57"
@@ -1391,10 +1386,22 @@
   resolved "https://registry.yarnpkg.com/@sapphire/prettier-config/-/prettier-config-1.0.6.tgz#b561377518f4781626605197bb5651034596d4e4"
   integrity sha512-wI5qf/rk0EJGoyBg/PPT4EutH79JpnEtXWRSnGWopk8e4s9vHKHjOvgSAUgQJm5eD7bcU2NdAFRvQtPrTcCIcw==
 
+"@sapphire/time-utilities@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@sapphire/time-utilities/-/time-utilities-1.2.8.tgz#4d6e6d93b7a936c8b9d8f2229c89a9ffd442453a"
+  integrity sha512-y6L28Mv9d7txXUS+VAmy8KHsEyGtYrNTm63K45tnBFsKJWtifi5T9kCN3+67+FPq1xbC9IEaDiAook1lovImFg==
+  dependencies:
+    "@sapphire/utilities" "^1.4.4"
+
 "@sapphire/ts-config@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@sapphire/ts-config/-/ts-config-2.0.0.tgz#414f47a134e8016193e1685c7ca999dfdcd54bf2"
   integrity sha512-gYjOTGZ9jMOWJoCbxbMZo7hspBDzz7gX2CJnt7iB4C4xR8gOXA2EpZLFD8e9b8EWmwclQWiQjdZYGGRqMEVovw==
+
+"@sapphire/utilities@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.4.4.tgz#3774c79b573d8af68c838b52813b55cd24c2a0b6"
+  integrity sha512-RMEEOlykuYRde4hdH2T03or24EsjtTU1OdN+gw6aJdf+1GEcL6VqyN9B56tyU6CGF5PXLUOYZJiEgM6TiYcp1Q==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"

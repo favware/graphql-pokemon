@@ -1,4 +1,4 @@
-import { constants, Timestamp } from '@klasa/timestamp';
+import { Time, Timestamp } from '@sapphire/time-utilities';
 import { green, red, yellow } from 'colorette';
 import { readJSON, writeFileAtomic, writeJSONAtomic } from 'fs-nextra';
 import fetch from 'node-fetch';
@@ -21,7 +21,7 @@ const FILE_SUFFIX = [');', ''].join('\n');
 const CI_DATA_FILE = join(__dirname, 'sha-tracker.json');
 const LEARNSETS_FILE = join(__dirname, '../src/assets/learnsets.ts');
 const UPDATED_FORMATS_DATA = readJSON(CI_DATA_FILE) as Promise<DataJSON>;
-const TEN_DAYS_AGO = Date.now() - 10 * constants.DAY;
+const TEN_DAYS_AGO = Date.now() - 10 * Time.Day;
 const TIMESTAMP = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(TEN_DAYS_AGO);
 
 const autoUpdateLearnsets = async () => {

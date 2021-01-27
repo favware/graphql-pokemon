@@ -268,7 +268,7 @@ export const pokedexAliases = new GraphQLCollection<string, string>([
   ['kommoot', 'kommoototem'],
   ['kou', 'raikou'],
   ['krook', 'krookodile'],
-  ['kyra', 'victiny'],
+  ['kyra', 'victini'],
   ['kyub', 'kyuremblack'],
   ['kyuremb', 'kyuremblack'],
   ['kyuremw', 'kyuremwhite'],

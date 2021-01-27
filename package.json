@@ -27,7 +27,7 @@
     "codegen": "graphql-codegen",
     "postcodegen": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
     "cloud:start": "node index.js",
-    "scripts:runner": "ts-node -P tsconfig.eslint.json",
+    "scripts:runner": "ts-node -P scripts/tsconfig.json",
     "au:tiers": "yarn scripts:runner scripts/smogontiers",
     "au:learnsets": "yarn scripts:runner scripts/pokemonlearnsets"
   },

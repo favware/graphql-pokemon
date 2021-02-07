@@ -33776,7 +33776,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       metronome: ['3T'],
       mimic: ['3T'],
       mudslap: ['4T', '3T'],
-      mudsport: ['3S0'],
       nastyplot: ['7L46', '6L1', '5L56', '4L51'],
       naturalgift: ['4M'],
       nuzzle: ['7L1', '6L1'],
@@ -33808,6 +33807,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       toxic: ['7M', '6M', '5M', '4M', '3M'],
       uproar: ['7T', '6T', '5T', '4T'],
       voltswitch: ['7M', '6M', '5M'],
+      watersport: ['3S0'],
       wildcharge: ['7M', '6M', '5M'],
       wish: ['7E', '6E', '5E', '4E', '3E']
     }
@@ -33858,6 +33858,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       metronome: ['3T'],
       mimic: ['3T'],
       mudslap: ['4T', '3T'],
+      mudsport: ['3S0'],
       nastyplot: ['7L46', '6L1', '5L56', '4L51'],
       naturalgift: ['4M'],
       nuzzle: ['7L1', '6L1'],
@@ -33891,7 +33892,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       trumpcard: ['7L40', '6L40', '5L51', '4L48'],
       uproar: ['7T', '6T', '5T', '4T'],
       voltswitch: ['7M', '6M', '5M'],
-      watersport: ['3S0'],
       wildcharge: ['7M', '6M', '5M'],
       wish: ['7E', '6E', '5E', '4E', '3E']
     }

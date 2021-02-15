@@ -79,6 +79,7 @@ export namespace Pokemon {
     specialSprite?: string;
     isNonstandard?: string;
     shortDesc?: string;
+    keyItem?: boolean;
   }
 
   export interface Move {

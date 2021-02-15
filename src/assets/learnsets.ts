@@ -77003,7 +77003,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       helpinghand: ['8M'],
       hyperbeam: ['8M'],
       imprison: ['8M'],
-      knockoff: ['8L1'],
       lifedew: ['8E'],
       lightscreen: ['8M'],
       magicalleaf: ['8M'],
@@ -77034,7 +77033,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       thunderwave: ['8M'],
       twister: ['8E'],
       willowisp: ['8M'],
-      wish: ['8L43'],
       workup: ['8M'],
       yawn: ['8E']
     }
@@ -80063,7 +80061,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       thunderwave: ['8M'],
       twister: ['8E'],
       willowisp: ['8M'],
-      wish: ['8L41'],
       workup: ['8M'],
       yawn: ['8E']
     }

@@ -4083,15 +4083,6 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     }
   ],
   [
-    'Good Rod',
-    {
-      name: 'Good Rod',
-      gen: 1,
-      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/goodrod.png'
-    }
-  ],
-  [
     'gracidea',
     {
       name: 'Gracidea',

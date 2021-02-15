@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.1.1](https://github.com/favware/graphql-pokemon/compare/v5.1.0...v5.1.1) (2021-02-15)
+
+
+### Bug Fixes
+
+* **itementry:** smogon page is nullable ([4efeb36](https://github.com/favware/graphql-pokemon/commit/4efeb36e5764151c6b19bbd3278c535c336d9955))
+* **items:** add non-standard to items not in gen 8 ([0c30822](https://github.com/favware/graphql-pokemon/commit/0c3082261851de38bc7906e783348c9a5ac5405f))
+* **items:** mark all key items as key items ([48a89bf](https://github.com/favware/graphql-pokemon/commit/48a89bf903387eb522733745d5b53b58520e6065))
+* never set smogon page for key items ([65200d7](https://github.com/favware/graphql-pokemon/commit/65200d748d40074a8a685360deb49dc63ec4387b))
+
 ## [5.1.0](https://github.com/favware/graphql-pokemon/compare/v5.0.1...v5.1.0) (2021-02-15)
 
 

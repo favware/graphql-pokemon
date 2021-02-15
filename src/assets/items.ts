@@ -4074,7 +4074,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     }
   ],
   [
-    'Good Rod',
+    'goodrod',
     {
       name: 'Good Rod',
       gen: 1,

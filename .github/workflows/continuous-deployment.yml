@@ -41,7 +41,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Use Node.js 15
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
       - name: Restore CI Cache
@@ -93,7 +93,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Use Node.js v15
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
       - name: Restore CI Cache
@@ -115,7 +115,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Use Node.js 15
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
       - name: Restore CI Cache
@@ -186,7 +186,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Use Node.js 15
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
       - name: Restore CI Cache
@@ -219,7 +219,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Use Node.js 15
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
       - name: Restore CI Cache
@@ -266,7 +266,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Setup Node for publishing to NPM
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
           registry-url: https://registry.npmjs.org/
@@ -304,7 +304,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Setup Node for publishing to Github
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
           registry-url: 'https://npm.pkg.github.com'

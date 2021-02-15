@@ -49,8 +49,8 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Deps
-        run: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Run ESLint
         run: yarn lint --fix=false
 
@@ -102,7 +102,7 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
-        run: yarn
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Run Jest
         run: yarn test
 
@@ -123,8 +123,8 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install NodeJS Dependencies
-        run: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Build Code
         run: yarn build
       - name: Upload API bundle to artifacts
@@ -194,8 +194,8 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install NodeJS Dependencies
-        run: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Generate GraphQL Schema code
         run: |
           docker container run --name pokedex -d --expose 4000 -p 4000:8080 -it favware/graphql-pokemon:latest \
@@ -227,8 +227,8 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install NodeJS Dependencies
-        run: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Configure Git
         run: |
           git config --global user.email "${GITHUB_EMAIL}";
@@ -283,6 +283,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: changelog_bundle
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Publish to NPM
         run: npm publish
         env:
@@ -315,6 +322,13 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: changelog_bundle
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --ignore-scripts
       - name: Publish to Github
         run: npm publish
         env:

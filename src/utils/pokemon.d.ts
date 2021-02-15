@@ -75,7 +75,8 @@ export namespace Pokemon {
   export interface Item {
     name: string;
     desc: string;
-    gen: number;
+    gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+    specialSprite?: string;
     isNonstandard?: string;
     shortDesc?: string;
   }

@@ -179,7 +179,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Beast Ball',
       gen: 7,
-      desc: 'A special Poke Ball designed to catch Ultra Beasts.'
+      desc: 'A special Poké Ball designed to catch Ultra Beasts.'
     }
   ],
   [
@@ -449,7 +449,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Cherish Ball',
       gen: 4,
-      desc: 'A rare Poke Ball that has been crafted to commemorate an occasion.'
+      desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.'
     }
   ],
   [
@@ -684,7 +684,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Dive Ball',
       gen: 3,
-      desc: 'A Poke Ball that works especially well on Pokémon that live underwater.'
+      desc: 'A Poké Ball that works especially well on Pokémon that live underwater.'
     }
   ],
   [
@@ -769,7 +769,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Dream Ball',
       gen: 5,
-      desc: "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep."
+      desc: "A Poké Ball that makes it easier to catch wild Pokémon while they're asleep."
     }
   ],
   [
@@ -794,7 +794,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Dusk Ball',
       gen: 4,
-      desc: 'A Poke Ball that makes it easier to catch wild Pokémon at night or in caves.'
+      desc: 'A Poké Ball that makes it easier to catch wild Pokémon at night or in caves.'
     }
   ],
   [
@@ -945,7 +945,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Fast Ball',
       gen: 2,
-      desc: 'A Poke Ball that makes it easier to catch Pokémon which are quick to run away.'
+      desc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.'
     }
   ],
   [
@@ -1138,7 +1138,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Friend Ball',
       gen: 2,
-      desc: 'A Poke Ball that makes caught Pokémon more friendly.'
+      desc: 'A Poké Ball that makes caught Pokémon more friendly.'
     }
   ],
   [
@@ -1162,7 +1162,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Galarica Cuff',
       gen: 8,
-      desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.'
+      desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png'
     }
   ],
   [
@@ -1170,7 +1171,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Galarica Wreath',
       gen: 8,
-      desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.'
+      desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png'
     }
   ],
   [
@@ -1308,7 +1310,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Great Ball',
       gen: 1,
-      desc: 'A high-performance Ball that provides a higher catch rate than a Poke Ball.'
+      desc: 'A high-performance Ball that provides a higher catch rate than a Poké Ball.'
     }
   ],
   [
@@ -1391,7 +1393,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Heal Ball',
       gen: 4,
-      desc: "A remedial Poke Ball that restores the caught Pokémon's HP and status problem."
+      desc: "A remedial Poké Ball that restores the caught Pokémon's HP and status problem."
     }
   ],
   [
@@ -1407,7 +1409,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Heavy Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching very heavy Pokémon.'
+      desc: 'A Poké Ball for catching very heavy Pokémon.'
     }
   ],
   [
@@ -1724,7 +1726,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Level Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching Pokémon that are a lower level than your own.'
+      desc: 'A Poké Ball for catching Pokémon that are a lower level than your own.'
     }
   ],
   [
@@ -1773,7 +1775,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Love Ball',
       gen: 2,
-      desc: 'Poke Ball for catching Pokémon that are the opposite gender of your Pokémon.'
+      desc: 'Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.'
     }
   ],
   [
@@ -1832,7 +1834,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Lure Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching Pokémon hooked by a Rod when fishing.'
+      desc: 'A Poké Ball for catching Pokémon hooked by a Rod when fishing.'
     }
   ],
   [
@@ -1848,7 +1850,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Luxury Ball',
       gen: 3,
-      desc: 'A comfortable Poke Ball that makes a caught wild Pokémon quickly grow friendly.'
+      desc: 'A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.'
     }
   ],
   [
@@ -2112,7 +2114,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Moon Ball',
       gen: 2,
-      desc: 'A Poke Ball for catching Pokémon that evolve using the Moon Stone.'
+      desc: 'A Poké Ball for catching Pokémon that evolve using the Moon Stone.'
     }
   ],
   [
@@ -2164,7 +2166,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Nest Ball',
       gen: 3,
-      desc: 'A Poke Ball that works especially well on weaker Pokémon in the wild.'
+      desc: 'A Poké Ball that works especially well on weaker Pokémon in the wild.'
     }
   ],
   [
@@ -2172,7 +2174,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Net Ball',
       gen: 3,
-      desc: 'A Poke Ball that works especially well on Water- and Bug-type Pokémon.'
+      desc: 'A Poké Ball that works especially well on Water- and Bug-type Pokémon.'
     }
   ],
   [
@@ -2283,7 +2285,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Park Ball',
       gen: 4,
-      desc: 'A special Poke Ball for the Pal Park.'
+      desc: 'A special Poké Ball for the Pal Park.'
     }
   ],
   [
@@ -2433,7 +2435,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'pokeball',
     {
-      name: 'Poke Ball',
+      name: 'Poké Ball',
       gen: 1,
       desc: 'A device for catching wild Pokémon. It is designed as a capsule system.'
     }
@@ -2525,7 +2527,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Premier Ball',
       gen: 3,
-      desc: 'A rare Poke Ball that has been crafted to commemorate an event.'
+      desc: 'A rare Poké Ball that has been crafted to commemorate an event.'
     }
   ],
   [
@@ -2608,7 +2610,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Quick Ball',
       gen: 4,
-      desc: 'A Poke Ball that provides a better catch rate at the start of a wild encounter.'
+      desc: 'A Poké Ball that provides a better catch rate at the start of a wild encounter.'
     }
   ],
   [
@@ -2711,7 +2713,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Repeat Ball',
       gen: 3,
-      desc: 'A Poke Ball that works well on Pokémon species that were previously caught.'
+      desc: 'A Poké Ball that works well on Pokémon species that were previously caught.'
     }
   ],
   [
@@ -2859,7 +2861,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Safari Ball',
       gen: 1,
-      desc: 'A special Poke Ball that is used only in the Safari Zone and Great Marsh.'
+      desc: 'A special Poké Ball that is used only in the Safari Zone and Great Marsh.'
     }
   ],
   [
@@ -3129,7 +3131,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Sport Ball',
       gen: 2,
-      desc: 'A special Poke Ball for the Bug-Catching Contest.'
+      desc: 'A special Poké Ball for the Bug-Catching Contest.'
     }
   ],
   [
@@ -3323,7 +3325,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Timer Ball',
       gen: 3,
-      desc: 'A Poke Ball that becomes better the more turns there are in a battle.'
+      desc: 'A Poké Ball that becomes better the more turns there are in a battle.'
     }
   ],
   [
@@ -3545,6 +3547,1773 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       name: 'Zoom Lens',
       gen: 4,
       desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.'
+    }
+  ],
+  [
+    'acrobike',
+    {
+      name: 'Acro Bike',
+      gen: 3,
+      desc: 'This folding bike allows you to perform actions such as wheelies and bunny hops.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png'
+    }
+  ],
+  [
+    'adventureguide',
+    {
+      name: 'Adventure Guide',
+      gen: 6,
+      desc: 'A compact device that automatically collects and records advice when a Trainer is out on an adventure.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/adventureguide.png'
+    }
+  ],
+  [
+    'apricornbox',
+    {
+      name: 'Apricorn Box',
+      gen: 4,
+      desc: 'A handy box where you can store up to 99 of each kind of Apricorn.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/apricornbox.png'
+    }
+  ],
+  [
+    'aquasuit',
+    {
+      name: 'Aqua Suit',
+      gen: 6,
+      desc: 'A suit made with the collective technological know-how of Team Aqua. It can withstand any impact.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/aquasuit.png'
+    }
+  ],
+  [
+    'auroraticket',
+    {
+      name: 'Aurora Ticket',
+      gen: 3,
+      desc: 'A ticket required to board the ship to Birth Island. It glows beautifully.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png'
+    }
+  ],
+  [
+    'autograph',
+    {
+      name: 'Autograph',
+      gen: 7,
+      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, “Good luck!”'
+    }
+  ],
+  [
+    'azureflute',
+    {
+      name: 'Azure Flute',
+      gen: 4,
+      desc: 'A flute that puts out echoing sounds that do not seem to be of this world. No one knows who made it.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/azureflute.png'
+    }
+  ],
+  [
+    'bandautograph',
+    {
+      name: 'Band Autograph',
+      gen: 8,
+      desc: "It's signed by all members of the Galar region's most charismatic band, the Maximizers.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bandautograph.png'
+    }
+  ],
+  [
+    'basementkey',
+    {
+      name: 'Basement Key',
+      gen: 2,
+      desc: 'A key that opens a door in the Goldenrod Tunnel.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/basementkey.png'
+    }
+  ],
+  [
+    'berrypots',
+    {
+      name: 'Berry Pots',
+      gen: 4,
+      desc: 'Handy containers for cultivating Berries wherever you go.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypots.png'
+    }
+  ],
+  [
+    'berrypouch',
+    {
+      name: 'Berry Pouch',
+      gen: 3,
+      desc: "A pouch for carrying Berries. It is attached to the bag's compartment for important items.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png'
+    }
+  ],
+  [
+    'bicycle',
+    {
+      name: 'Bicycle',
+      gen: 1,
+      desc: 'A folding bike that enables a rider to get around much faster than with Running Shoes.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bicycle.png'
+    }
+  ],
+  [
+    'bikevoucher',
+    {
+      name: 'Bike Voucher',
+      gen: 3,
+      desc: 'Take this voucher to the BIKE SHOP in CERULEAN CITY and exchange it for a bicycle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png'
+    }
+  ],
+  [
+    'bluecard',
+    {
+      name: 'Blue Card',
+      gen: 2,
+      desc: "A card to save points for the Buena's Password show.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluecard.png'
+    }
+  ],
+  [
+    'blueorb',
+    {
+      name: 'Blue Orb',
+      desc: "A shiny blue orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
+      gen: 3,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png'
+    }
+  ],
+  [
+    'bluepetal',
+    {
+      name: 'Blue Petal',
+      desc: "A pressed flower petal you receive from Lana during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluepetal.png'
+    }
+  ],
+  [
+    'campinggear',
+    {
+      name: 'Camping Gear',
+      desc: 'Everything you need to set up a tent and get cooking in a Wild Area or at a camping spot.',
+      gen: 8,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/campinggear.png'
+    }
+  ],
+  [
+    'cardkey',
+    {
+      name: 'Card Key',
+      desc: 'A card key that opens a shutter in the Radio Tower.',
+      gen: 1,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cardkey.png'
+    }
+  ],
+  [
+    'catchingcharm',
+    {
+      name: 'Catching Charm',
+      desc: "Holding it is said to increase the chance of getting a critical catch. Curiously, the charm doesn't shake much.",
+      gen: 8,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/catchingcharm.png'
+    }
+  ],
+  [
+    'clearbell',
+    {
+      name: 'Clear Bell',
+      desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
+      gen: 2,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png'
+    }
+  ],
+  [
+    'coincase',
+    {
+      name: 'Coin Case',
+      desc: 'A case for holding coins obtained at the Game Corner. It can hold up to 50,000 coins.',
+      gen: 1,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coincase.png'
+    }
+  ],
+  [
+    'colressmchn',
+    {
+      name: 'Colress MCHN',
+      desc: "A special device that wrings out the potential of Pokémon. It's an imperfect prototype.",
+      gen: 5,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/colressmchn.png'
+    }
+  ],
+  [
+    'contestcostume',
+    {
+      name: 'Contest Costume',
+      desc: 'A very cool suit to be worn during the Contest Spectacular.',
+      gen: 6,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestcostume.png'
+    }
+  ],
+  [
+    'contestpass',
+    {
+      name: 'Contest Pass',
+      desc: 'A pass required for entering Pokémon Contests. It has a drawing of an award ribbon on its front.',
+      gen: 3,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestpass.png'
+    }
+  ],
+  [
+    'coupon1',
+    {
+      name: 'Coupon 1',
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      gen: 4,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon1.png'
+    }
+  ],
+  [
+    'coupon2',
+    {
+      name: 'Coupon 2',
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      gen: 4,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon2.png'
+    }
+  ],
+  [
+    'coupon3',
+    {
+      name: 'Coupon 3',
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      gen: 4,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon3.png'
+    }
+  ],
+  [
+    'dnasplicers',
+    {
+      name: 'DNA Splicers',
+      desc: 'A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.',
+      gen: 5,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dnasplicers.png'
+    }
+  ],
+  [
+    'darkstone',
+    {
+      name: 'Dark Stone',
+      desc: "Zekrom's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
+      gen: 5,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/darkstone.png'
+    }
+  ],
+  [
+    'devongoods',
+    {
+      name: 'Devon Goods',
+      desc: "A package that contains DEVON's machine parts.",
+      gen: 3,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png'
+    }
+  ],
+  [
+    'devonparts',
+    {
+      name: 'Devon Parts',
+      desc: 'A case that contains mechanical parts of some sort made by the Devon Corporation.',
+      gen: 6,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonparts.png'
+    }
+  ],
+  [
+    'devonscope',
+    {
+      name: 'Devon Scope',
+      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
+      gen: 6,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png'
+    }
+  ],
+  [
+    'devonscubagear',
+    {
+      name: 'Devon Scuba Gear',
+      desc: 'A device made by Devon Corporation that provides oxygen to users during the use of Dive.',
+      gen: 6,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png'
+    }
+  ],
+  [
+    'dowsingmchn',
+    {
+      name: 'Dowsing MCHN',
+      desc: "A high-tech machine that shows the location of invisible items. It's attached to the head when in use.",
+      gen: 4,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmchn.png'
+    }
+  ],
+  [
+    'dowsingmachine',
+    {
+      name: 'Dowsing Machine',
+      desc: "This high-tech machine shows the location of invisible items. It's attached to the head when in use.",
+      gen: 6,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png'
+    }
+  ],
+  [
+    'dragonskull',
+    {
+      name: 'Dragon Skull',
+      desc: 'A skull of a Pokémon that was said to have braved the angry waters to fly around the world.',
+      gen: 5,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonskull.png'
+    }
+  ],
+  [
+    'droppeditem',
+    {
+      name: 'Dropped Item',
+      desc:
+        "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
+      shortDesc: 'The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a boy or girl.',
+      gen: 5,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/droppeditem.png'
+    }
+  ],
+  [
+    'dynamaxband',
+    {
+      name: 'Dynamax Band',
+      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pokémon to Dynamax when at a Power Spot.',
+      gen: 8,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dynamaxband.png'
+    }
+  ],
+  [
+    'eggcard',
+    {
+      name: 'Egg Card',
+      desc:
+        'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
+      shortDesc: 'Might be used at the Pokémon Communication Centre.',
+      gen: 2
+    }
+  ],
+  [
+    'elevatorkey',
+    {
+      name: 'Elevator Key',
+      desc: "A card key that activates the elevator in Lysandre Labs. It is emblazoned with Team Flare's logo.",
+      gen: 7,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png'
+    }
+  ],
+  [
+    'endorsement',
+    {
+      name: 'Endorsement',
+      desc: "A letter of recommendation that you'll need in order to participate in the Gym Challenge.",
+      gen: 8,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/endorsement.png'
+    }
+  ],
+  [
+    'enigmastone',
+    {
+      name: 'Enigma Stone',
+      desc: "A crystal ball that was excavated from the ground. It's a very beautiful stone that is covered with bits of rock and earth.",
+      gen: 4,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmastone.png'
+    }
+  ],
+  [
+    'enigmaticcard',
+    {
+      name: 'Enigmatic Card',
+      desc: 'A mysterious card. Written on it is a request for you to go to a guest room in an Akala motel on Route 8.',
+      gen: 7,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmaticcard.png'
+    }
+  ],
+  [
+    'eonflute',
+    {
+      name: 'Eon Flute',
+      desc: 'A flute that can be used to summon Latios or Latias no matter where you are.',
+      gen: 6,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonflute.png'
+    }
+  ],
+  [
+    'eonticket',
+    {
+      name: 'Eon Ticket',
+      desc: 'The ticket required for sailing on a ferry to the Southern Island. Does Norman, the Petalburg Gym Leader, know a secret?!',
+      gen: 3,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png'
+    }
+  ],
+  [
+    'escaperope',
+    {
+      name: 'Escape Rope',
+      desc: 'A long and durable rope. Use it to escape instantly from locations like caves or dungeons. It can be used any number of times.',
+      gen: 8,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/escaperope.png'
+    }
+  ],
+  [
+    'expshare',
+    {
+      name: 'Exp. Share',
+      desc: 'Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.',
+      gen: 2,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/exp.share.png'
+    }
+  ],
+  [
+    'explorerkit',
+    {
+      name: 'Explorer Kit',
+      desc: 'A bag filled with convenient tools for exploring. It provides access to the Underground in the Sinnoh region.',
+      gen: 4,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/explorerkit.png'
+    }
+  ],
+  [
+    'famechecker',
+    {
+      name: 'Fame Checker',
+      desc: "A device that enables you to recall what you've heard and seen about famous people.",
+      gen: 3,
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png'
+    }
+  ],
+  [
+    'fashioncase',
+    {
+      name: 'Fashion Case',
+      gen: 4,
+      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fashioncase.png'
+    }
+  ],
+  [
+    'fishingrod',
+    {
+      name: 'Fishing Rod',
+      gen: 1,
+      desc: 'Use it by the water to fish up various kinds of Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fishingrod.png'
+    }
+  ],
+  [
+    'foragebag',
+    {
+      name: 'foragebag',
+      gen: 7,
+      desc: '	A bag to carry ingredients gathered during Mallow’s trial in the jungle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/foragebag.png'
+    }
+  ],
+  [
+    'gbsounds',
+    {
+      name: 'GB Sounds',
+      gen: 4,
+      desc: "A music player that allows you to listen to nostalgic songs. It's operated with the flip of a single switch.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gbsounds.png'
+    }
+  ],
+  [
+    'gsball',
+    {
+      name: 'GS Ball',
+      gen: 2,
+      desc: 'The mysterious BALL.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png'
+    }
+  ],
+  [
+    'galactickey',
+    {
+      name: 'GS Ball',
+      gen: 4,
+      desc: 'A card key for disengaging the security systems in the Galactic HQ. Losing it can result in punishment, apparently.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galactickey.png'
+    }
+  ],
+  [
+    'gogoggles',
+    {
+      name: 'Go-Goggles',
+      gen: 3,
+      desc: 'Nifty goggles to protect eyes from desert sandstorms.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png'
+    }
+  ],
+  [
+    'godstone',
+    {
+      name: 'God Stone',
+      gen: 5,
+      desc: 'A rare stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/godstone.png'
+    }
+  ],
+  [
+    'goldteeth',
+    {
+      name: 'Gold Teeth',
+      gen: 1,
+      desc: "A set of golden false teeth lost by the Safari Zone's warden. They make his smile sparkle.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/goldteeth.png'
+    }
+  ],
+  [
+    'goodrod',
+    {
+      name: 'Good Rod',
+      gen: 1,
+      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/goodrod.png'
+    }
+  ],
+  [
+    'gracidea',
+    {
+      name: 'Gracidea',
+      gen: 4,
+      desc: 'A flower sometimes bundled in bouquets to convey gratitude on special occasions, such as birthdays.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gracidea.png'
+    }
+  ],
+  [
+    'gram1',
+    {
+      name: 'Gram 1',
+      gen: 5,
+      desc: 'An important letter that Wingull delivers.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram1.png'
+    }
+  ],
+  [
+    'gram2',
+    {
+      name: 'Gram 2',
+      gen: 5,
+      desc: 'An important letter that Wingull delivers.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram2.png'
+    }
+  ],
+  [
+    'gram3',
+    {
+      name: 'Gram 3',
+      gen: 5,
+      desc: 'An important letter that Wingull delivers.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram3.png'
+    }
+  ],
+  [
+    'greenpetal',
+    {
+      name: 'Green Petal',
+      gen: 7,
+      desc: "A pressed flower petal you receive from Mallow during Mina's trial. The goal is to collect seven different kinds of petals.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/greenpetal.png'
+    }
+  ],
+  [
+    'grubbyhanky',
+    {
+      name: 'Grubby Hanky',
+      gen: 5,
+      desc: 'A handkerchief dropped by a regular at Café Warehouse. It smells faintly like a Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/grubbyhanky.png'
+    }
+  ],
+  [
+    'hitechearbuds',
+    {
+      name: 'Hi-tech Earbuds',
+      gen: 8,
+      desc: 'Strange earbuds that allow you to freely control the volume of various sounds.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/hi-techearbuds.png'
+    }
+  ],
+  [
+    'holocaster',
+    {
+      name: 'Holo Caster',
+      gen: 6,
+      desc: "A device that allows users to receive and view hologram clips at any time. It's also used to chat with others.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/holocaster.png'
+    }
+  ],
+  [
+    'honorofkalos',
+    {
+      name: 'Honor of Kalos',
+      gen: 6,
+      desc: 'A precious symbol that is awarded only to an individual who has done great things for the Kalos region.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/honorofkalos.png'
+    }
+  ],
+  [
+    'ilimasnormaliumz',
+    {
+      name: "Ilima's Normalium Z",
+      gen: 7,
+      desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
+      specialSprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
+    }
+  ],
+  [
+    'intriguingstone',
+    {
+      name: 'Intriguing Stone',
+      gen: 6,
+      desc: "A rather curious stone that might appear valuable to some. It's all in the eye of the beholder.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/intriguingstone.png'
+    }
+  ],
+  [
+    'itemfinder',
+    {
+      name: 'itemfinder',
+      gen: 1,
+      desc: 'A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png'
+    }
+  ],
+  [
+    'jadeorb',
+    {
+      name: 'Jade Orb',
+      gen: 4,
+      desc: "A shiny green orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/jadeorb.png'
+    }
+  ],
+  [
+    'journal',
+    {
+      name: 'journal',
+      gen: 4,
+      desc: 'A notebook that keeps a day-to-day record of your adventure so far.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/journal.png'
+    }
+  ],
+  [
+    'keystone',
+    {
+      name: 'Key Stone',
+      gen: 6,
+      desc: 'A stone filled with an unexplained power. It makes Pokémon that battle with a Mega Stone Mega Evolve.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keystone.png'
+    }
+  ],
+  [
+    'keytoroom1',
+    {
+      name: 'Key to Room 1',
+      gen: 6,
+      desc: 'A key that opens a door inside Sea Mauville',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom1.png'
+    }
+  ],
+  [
+    'keytoroom2',
+    {
+      name: 'Key to Room 2',
+      gen: 6,
+      desc: 'A key that opens a door inside Sea Mauville',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom2.png'
+    }
+  ],
+  [
+    'keytoroom4',
+    {
+      name: 'Key to Room 4',
+      gen: 6,
+      desc: 'A key that opens a door inside Sea Mauville',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom4.png'
+    }
+  ],
+  [
+    'keytoroom6',
+    {
+      name: 'Key to Room 6',
+      gen: 6,
+      desc: 'A key that opens a door inside Sea Mauville',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom6.png'
+    }
+  ],
+  [
+    'leftpokeball',
+    {
+      name: 'Left Poké Ball',
+      gen: 7,
+      desc: "A Poké Ball with a Pokémon that lost its Trainer inside. It seems to be from Ula'ula Island.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png'
+    }
+  ],
+  [
+    'lenscase',
+    {
+      name: 'Lens Case',
+      gen: 6,
+      desc: 'A rather chic-looking case for carrying contact lenses.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lenscase.png'
+    }
+  ],
+  [
+    'letter',
+    {
+      name: 'Letter',
+      gen: 3,
+      desc: 'An extremely important letter to Steven from the President of Devon Corporation.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png'
+    }
+  ],
+  [
+    'libertypass',
+    {
+      name: 'Liberty Pass',
+      gen: 5,
+      desc: 'A special pass to go to Liberty Garden. Board the ship in Castelia City.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/libertypass.png'
+    }
+  ],
+  [
+    'liftkey',
+    {
+      name: 'Lift Key',
+      gen: 1,
+      desc: 'A key that operates the elevator in the Team Rocket Hideout. It bears the Team Rocket logo.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/liftkey.png'
+    }
+  ],
+  [
+    'lightstone',
+    {
+      name: 'Light Stone',
+      gen: 5,
+      desc: "Reshiram's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lightstone.png'
+    }
+  ],
+  [
+    'lockcapsule',
+    {
+      name: 'Lock Capsule',
+      gen: 4,
+      desc: 'A sturdy Capsule that can only be opened with a special key.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lockcapsule.png'
+    }
+  ],
+  [
+    'lookerticket',
+    {
+      name: 'Looker Ticket',
+      gen: 6,
+      desc: "A ticket that was handmade by Looker. It's decorated with a liberal amount of glittery paint.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lookerticket.png'
+    }
+  ],
+  [
+    'lootsack',
+    {
+      name: 'Loot Sack',
+      gen: 4,
+      desc: 'A sturdy, spacious bag that is used to carry any treasures or loot obtained in the coal mine.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lootsack.png'
+    }
+  ],
+  [
+    'lostitem',
+    {
+      name: 'Lost Item',
+      gen: 2,
+      desc: 'The Clefairy doll that was lost by the Copycat.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lostitem.png'
+    }
+  ],
+  [
+    'lunarwing',
+    {
+      name: 'Lunar Wing',
+      gen: 4,
+      desc: "A feather that glows like the moon. It's said to possess the power to dispel nightmares.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lunarwing.png'
+    }
+  ],
+  [
+    'machbike',
+    {
+      name: 'Mach Bike',
+      gen: 3,
+      desc: 'This folding Bike more than doubles your movement speed.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png'
+    }
+  ],
+  [
+    'machinepart',
+    {
+      name: 'Machine Part',
+      gen: 2,
+      desc: 'An important part of a machine that was stolen from the Power Plant.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/machinepart.png'
+    }
+  ],
+  [
+    'magmaemblem',
+    {
+      name: 'Magma Emblem',
+      gen: 3,
+      desc: "A medal-like item in the same shape as Team Magma's mark.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png'
+    }
+  ],
+  [
+    'magmastone',
+    {
+      name: 'Magma Stone',
+      gen: 4,
+      desc: 'A stone formed by boulders melting in intensely hot magma, then hardening. Magma remains sealed inside it.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmastone.png'
+    }
+  ],
+  [
+    'magmasuit',
+    {
+      name: 'Magma Suit',
+      gen: 6,
+      desc: 'A suit made with the collective technological know-how of Team Magma. It can withstand any impact.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmasuit.png'
+    }
+  ],
+  [
+    'makeupbag',
+    {
+      name: 'Make-Up Bag',
+      gen: 7,
+      desc: 'A rather chic-looking case for carrying lipsticks.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/make-upbag.png'
+    }
+  ],
+  [
+    'medalbox',
+    {
+      name: 'Medal Box',
+      gen: 5,
+      desc: 'A box-shaped machine that stores Medals and Medal information.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/medalbox.png'
+    }
+  ],
+  [
+    'megabracelet',
+    {
+      name: 'Mega Bracelet',
+      gen: 6,
+      desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
+    }
+  ],
+  [
+    'megaring',
+    {
+      name: 'Mega Ring',
+      gen: 6,
+      desc: 'This ring contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/megaring.png'
+    }
+  ],
+  [
+    'membercard',
+    {
+      name: 'Member Card',
+      gen: 4,
+      desc: 'A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/membercard.png'
+    }
+  ],
+  [
+    'meteorite',
+    {
+      name: 'Meteorite',
+      gen: 3,
+      desc: "A meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it's shining with seven colors of light.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png'
+    }
+  ],
+  [
+    'meteoriteshard',
+    {
+      name: 'Meteorite Shard',
+      gen: 6,
+      desc: "One of the fragments of a Meteorite from Granite Cave. It's faintly warm to the touch.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteoriteshard.png'
+    }
+  ],
+  [
+    'moonflute',
+    {
+      name: 'Moon Flute',
+      gen: 7,
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the moon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/moonflute.png'
+    }
+  ],
+  [
+    'mysteryegg',
+    {
+      name: 'Mystery Egg',
+      gen: 2,
+      desc: "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysteryegg.png'
+    }
+  ],
+  [
+    'mysticticket',
+    {
+      name: 'MysticTicket',
+      gen: 3,
+      desc: '	A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png'
+    }
+  ],
+  [
+    'nlunarizer',
+    {
+      name: 'N-Lunarizer',
+      gen: 7,
+      desc: 'A machine to fuse and separate Necrozma, which needs light, and Lunala.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-lunarizer.png'
+    }
+  ],
+  [
+    'nsolarizer',
+    {
+      name: 'N-Solarizer',
+      gen: 7,
+      desc: 'A machine to fuse and separate Necrozma, which needs light, and Solgaleo.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-solarizer.png'
+    }
+  ],
+  [
+    'oaksletter',
+    {
+      name: "Oak's Letter",
+      gen: 4,
+      desc: 'A letter from Professor Oak. Written in it is a request for you to go to Route 224.',
+      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sletter.png"
+    }
+  ],
+  [
+    'oaksparcel',
+    {
+      name: "Oak's Parcel",
+      gen: 1,
+      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png"
+    }
+  ],
+  [
+    'oldcharm',
+    {
+      name: 'Old Charm',
+      gen: 4,
+      desc: 'An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldcharm.png'
+    }
+  ],
+  [
+    'oldletter',
+    {
+      name: 'Old Letter',
+      gen: 8,
+      desc: 'A letter entrusted to you by a girl, to be delivered to a boy. Strangely, it looks old to you.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldletter.png'
+    }
+  ],
+  [
+    'oldrod',
+    {
+      name: 'Old Rod',
+      gen: 1,
+      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldrod.png'
+    }
+  ],
+  [
+    'oldseamap',
+    {
+      name: 'Old Sea Map',
+      gen: 3,
+      desc: 'A chart that can take you to Faraway Island.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png'
+    }
+  ],
+  [
+    'orangepetal',
+    {
+      name: 'Orange Petal',
+      gen: 7,
+      desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/orangepetal.png'
+    }
+  ],
+  [
+    'ovalcharm',
+    {
+      name: 'Oval Charm',
+      gen: 5,
+      desc: 'An oval charm said to increase the chance of Pokémon Eggs being found at the Nursery.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ovalcharm.png'
+    }
+  ],
+  [
+    'pairoftickets',
+    {
+      name: 'Pair of Tickets',
+      gen: 6,
+      desc: 'Tickets for two to the astronomical show being held at the Mossdeep Space Center.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pairoftickets.png'
+    }
+  ],
+  [
+    'palpad',
+    {
+      name: 'palpad',
+      gen: 4,
+      desc: 'A convenient notepad that is used to register your friends and friend codes and keep a record of your gameplay.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/palpad.png'
+    }
+  ],
+  [
+    'parcel',
+    {
+      name: 'Parcel',
+      gen: 4,
+      desc: "A parcel entrusted into your care. You're supposed to deliver it to your childhood friend who left Twinleaf Town.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/parcel.png'
+    }
+  ],
+  [
+    'pass',
+    {
+      name: 'Pass',
+      gen: 2,
+      desc: "A pass required for riding the Magnet Train. It allows you to ride whenever and however much you'd like.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pass.png'
+    }
+  ],
+  [
+    'permit',
+    {
+      name: 'Permit',
+      gen: 5,
+      desc: 'A permit that is needed to enter the Nature Preserve. Not many know about it.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/permit.png'
+    }
+  ],
+  [
+    'photoalbum',
+    {
+      name: 'Photo Album',
+      gen: 4,
+      desc: 'A nice photo album for storing all the photos taken along your adventure.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/photoalbum.png'
+    }
+  ],
+  [
+    'pinkpetal',
+    {
+      name: 'Pink Petal',
+      gen: 7,
+      desc: "A pressed flower petal you receive from Mina during Mina's trial. The goal is to collect seven different kinds of petals.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pinkpetal.png'
+    }
+  ],
+  [
+    'plasmacard',
+    {
+      name: 'Plasma Card',
+      gen: 5,
+      desc: 'A card key needed to enter the password inside the Plasma Frigate.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/plasmacard.png'
+    }
+  ],
+  [
+    'poffincase',
+    {
+      name: 'Poffin Case',
+      gen: 4,
+      desc: 'A case for storing Poffins cooked from Berries.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/poffincase.png'
+    }
+  ],
+  [
+    'pointcard',
+    {
+      name: 'Point Card',
+      gen: 4,
+      desc: 'A card that lists how many Battle Points you have earned.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pointcard.png'
+    }
+  ],
+  [
+    'pokeradar',
+    {
+      name: 'Poké Radar',
+      gen: 4,
+      desc: 'A tool that can search out Pokémon that are hiding in the tall grass. Its battery is recharged as you walk.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeradar.png'
+    }
+  ],
+  [
+    'pokeblockkit',
+    {
+      name: 'Pokéblock Kit',
+      gen: 6,
+      desc: 'A set containing a Berry Blender for making Pokéblocks and a Pokéblock Case for storing Pokéblocks.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockkit.png'
+    }
+  ],
+  [
+    'pokeblockcase',
+    {
+      name: 'Pokéblock Case',
+      gen: 3,
+      desc: 'A case for holding Pokéblock made with a Berry Blender.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png'
+    }
+  ],
+  [
+    'pokeflute',
+    {
+      name: 'Poké Flute',
+      gen: 1,
+      desc: 'A flute that can play with such a beautiful tone that even sleeping Pokémon find themselves woken up.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeflute.png'
+    }
+  ],
+  [
+    'pokemonboxlink',
+    {
+      name: 'Pokémon Box Link',
+      gen: 8,
+      desc: "A device that allows you to access the Pokémon storage system. There are some places where it won't work.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png'
+    }
+  ],
+  [
+    'powderjar',
+    {
+      name: 'Powder Jar',
+      gen: 3,
+      desc: 'A jar for storing Berry Powder made using a Berry Crusher.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png'
+    }
+  ],
+  [
+    'powerplantpass',
+    {
+      name: 'Power Plant Pass',
+      gen: 6,
+      desc: 'This pass serves as an ID card for gaining access to the Power Plant that lies along Route 13.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/powerplantpass.png'
+    }
+  ],
+  [
+    'prisonbottle',
+    {
+      name: 'Prison Bottle',
+      gen: 6,
+      desc: 'A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/prisonbottle.png'
+    }
+  ],
+  [
+    'profsletter',
+    {
+      name: "Prof's Letter",
+      gen: 6,
+      desc: 'A letter that Professor Sycamore wrote to your mother. A faint but pleasant perfume seems to cling to the paper.',
+      specialSprite: "https://www.serebii.net/itemdex/sprites/prof'sletter.png"
+    }
+  ],
+  [
+    'professorsmask',
+    {
+      name: "Professor's Mask",
+      gen: 7,
+      desc: 'The mask that belongs to The Masked Royal. This pro wrestler apparently sews his mask on a machine himself.',
+      specialSprite: "https://www.serebii.net/itemdex/sprites/professor'smask.png"
+    }
+  ],
+  [
+    'propcase',
+    {
+      name: 'Prop Case',
+      gen: 5,
+      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/propcase.png'
+    }
+  ],
+  [
+    'purplepetal',
+    {
+      name: 'Purple Petal',
+      gen: 7,
+      desc: "A pressed flower petal you receive from Nanu during Mina's trial. The goal is to collect seven different kinds of petals.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/purplepetal.png'
+    }
+  ],
+  [
+    'ragecandybar',
+    {
+      name: 'Rage Candy Bar',
+      gen: 2,
+      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pokémon.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ragecandybar.png'
+    }
+  ],
+  [
+    'rainbowflower',
+    {
+      name: 'Rainbow Flower',
+      gen: 7,
+      desc: "A flower made of the petals you received from captains. It's proof that your growth has been recognized by them.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowflower.png'
+    }
+  ],
+  [
+    'rainbowpass',
+    {
+      name: 'Rainbow Pass',
+      gen: 3,
+      desc: 'A pass for ferries between Vermilion and the Sevii Islands. It features a drawing of a rainbow.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png'
+    }
+  ],
+  [
+    'rainbowwing',
+    {
+      name: 'Rainbow Wing',
+      gen: 2,
+      desc: 'A mystical rainbow feather that sparkles.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowwing.png'
+    }
+  ],
+  [
+    'redchain',
+    {
+      name: 'Red Chain',
+      gen: 4,
+      desc: 'A mythical chain that is said to link the Legendary Pokémon that created the Sinnoh region.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redchain.png'
+    }
+  ],
+  [
+    'redorb',
+    {
+      name: 'Red Orb',
+      gen: 3,
+      desc: "A shiny red orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png'
+    }
+  ],
+  [
+    'redpetal',
+    {
+      name: 'Red Petal',
+      gen: 7,
+      desc: "A pressed flower petal you receive from Kiawe during Mina's trial. The goal is to collect seven different kinds of petals.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redpetal.png'
+    }
+  ],
+  [
+    'redscale',
+    {
+      name: 'Red Scale',
+      gen: 2,
+      desc: 'A scale from a red Gyarados. It glows red like a flame.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redscale.png'
+    }
+  ],
+  [
+    'revealglass',
+    {
+      name: 'Reveal Glass',
+      gen: 5,
+      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pokémon to its original shape.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/revealglass.png'
+    }
+  ],
+  [
+    'ridepager',
+    {
+      name: 'Ride Pager',
+      gen: 7,
+      desc: 'By entering certain numbers on this pager, you can summon Ride Pokémon in an instant.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ridepager.png'
+    }
+  ],
+  [
+    'rm1key',
+    {
+      name: 'Rm. 1 Key',
+      gen: 3,
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png'
+    }
+  ],
+  [
+    'rm2key',
+    {
+      name: 'Rm. 2 Key',
+      gen: 3,
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png'
+    }
+  ],
+  [
+    'rm4key',
+    {
+      name: 'Rm. 4 Key',
+      gen: 3,
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png'
+    }
+  ],
+  [
+    'rm6key',
+    {
+      name: 'Rm. 6 Key',
+      gen: 3,
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png'
+    }
+  ],
+  [
+    'rollerskates',
+    {
+      name: 'Roller Skates',
+      gen: 6,
+      desc: 'Attaches roller skates to the bottom of your shoes, allowing you to glide quickly around and perform tricks.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rollerskates.png'
+    }
+  ],
+  [
+    'rotombike',
+    {
+      name: 'Rotom Bike',
+      gen: 8,
+      desc: 'This bike can be combined with the Pokémon Rotom to not only do a turbo boost but also run on the water.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotombike.png'
+    }
+  ],
+  [
+    'rotomcatalog',
+    {
+      name: 'Rotom Catalog',
+      gen: 8,
+      desc: 'A catalog of devices that Rotom like. Use the catalog to have Rotom hop in and out of the various devices listed within.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotomcatalog.png'
+    }
+  ],
+  [
+    'ruby',
+    {
+      name: 'Ruby',
+      gen: 3,
+      desc: 'An exquisitely beautiful gem that has a red glow. It symbolizes passion.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png'
+    }
+  ],
+  [
+    'rulebook',
+    {
+      name: 'Rule Book',
+      gen: 4,
+      desc: 'It lists the rules for holding battles. For Link Battles, you may choose which set of rules you wish to use.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rulebook.png'
+    }
+  ],
+  [
+    'ssticket',
+    {
+      name: 'S.S. Ticket',
+      gen: 1,
+      desc: 'A ticket required for sailing on the ferry S.S. Aqua. It has a drawing of a ship on its front.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/s.s.ticket.png'
+    }
+  ],
+  [
+    'sapphire',
+    {
+      name: 'Sapphire',
+      gen: 3,
+      desc: 'An exquisitely beautiful gem that has a blue glow. It symbolizes honesty.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png'
+    }
+  ],
+  [
+    'scanner',
+    {
+      name: 'Scanner',
+      gen: 6,
+      desc: 'A device found inside Sea Mauville.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png'
+    }
+  ],
+  [
+    'sealbag',
+    {
+      name: 'Seal Bag',
+      gen: 4,
+      desc: 'A tiny bag that can hold 10 Seals for decorating Poké Balls.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealbag.png'
+    }
+  ],
+  [
+    'sealcase',
+    {
+      name: 'Seal Case',
+      gen: 4,
+      desc: 'A case for storing Seals that can be applied to the exteriors of Poké Balls.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealcase.png'
+    }
+  ],
+  [
+    'secretkey',
+    {
+      name: 'Secret Key',
+      gen: 1,
+      desc: 'A high-tech key that has to be used at a specific location. It emits a special electronic signal to open a door.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretkey.png'
+    }
+  ],
+  [
+    'secretpotion',
+    {
+      name: 'SecretPotion',
+      gen: 2,
+      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretpotion.png'
+    }
+  ],
+  [
+    'shinycharm',
+    {
+      name: 'Shiny Charm',
+      gen: 5,
+      desc: 'A shiny charm said to increase the chance of finding a Shiny Pokémon in the wild.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/shinycharm.png'
+    }
+  ],
+  [
+    'silphscope',
+    {
+      name: 'Silph Scope',
+      gen: 1,
+      desc: 'A scope that lets you see what cannot usually be seen. It is made by Silph Co.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/silphscope.png'
+    }
+  ],
+  [
+    'silverwing',
+    {
+      name: 'Silver Wing',
+      gen: 2,
+      desc: 'A strange, silvery feather that sparkles.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/silverwing.png'
+    }
+  ],
+  [
+    'slowpoketail',
+    {
+      name: 'Slowpoketail',
+      gen: 2,
+      desc: 'A very tasty tail of something. It can be sold at a high price to shops.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/slowpoketail.png'
+    }
+  ],
+  [
+    'soniasbook',
+    {
+      name: "Sonia's Book",
+      gen: 8,
+      desc: "Professor Sonia's published writings. Her new discoveries about the Galar region's legends are recorded in this enjoyable read.",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/sonia'sbook.png"
+    }
+  ],
+  [
+    'sootsack',
+    {
+      name: 'sootsack',
+      gen: 3,
+      desc: '	A sack used to gather and hold volcanic ash.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png'
+    }
+  ],
+  [
+    'sparklingstone',
+    {
+      name: 'Sparkling Stone',
+      gen: 7,
+      desc:
+        'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sparklingstone.png'
+    }
+  ],
+  [
+    'sprayduck',
+    {
+      name: 'Sprayduck',
+      gen: 4,
+      desc: 'A watering can shaped like a Psyduck. It helps promote the healthy growth of any Berries planted in good, soft soil.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprayduck.png'
+    }
+  ],
+  [
+    'sprinklotad',
+    {
+      name: 'Sprinklotad',
+      gen: 6,
+      desc: 'A watering can shaped like a Lotad. It helps promote the healthy growth of any Berries planted in good, soft soil.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprinklotad.png'
+    }
+  ],
+  [
+    'squirtbottle',
+    {
+      name: 'Squirtbottle',
+      gen: 2,
+      desc: 'A bottle used for watering plants in the Berry Pots.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/squirtbottle.png'
+    }
+  ],
+  [
+    'storagekey',
+    {
+      name: 'Storage Key',
+      gen: 4,
+      desc: "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/storagekey.png'
+    }
+  ],
+  [
+    'suitekey',
+    {
+      name: 'Suite Key',
+      gen: 4,
+      desc: 'A key to one of the suites at a certain luxury hotel by a lake. For some odd reason, it often disappears.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/suitekey.png'
+    }
+  ],
+  [
+    'sunflute',
+    {
+      name: 'Sun Flute',
+      gen: 7,
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the sun.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sunflute.png'
+    }
+  ],
+  [
+    'superrod',
+    {
+      name: 'Super Rod',
+      gen: 1,
+      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/superrod.png'
+    }
+  ],
+  [
+    'surgebadge',
+    {
+      name: 'Surge Badge',
+      gen: 7,
+      desc: 'A novelty badge that you can receive at the Kantonian Gym. Rumor has it that it imitates the Badge of a Gym somewhere.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/surgebadge.png'
+    }
+  ],
+  [
+    'tmcase',
+    {
+      name: 'TM Case',
+      gen: 3,
+      desc: "A case that holds TMs and HMs. It is attached to the Bag's compartment for important items.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png'
+    }
+  ],
+  [
+    'tmvpass',
+    {
+      name: 'TMV Pass',
+      gen: 6,
+      desc: 'A commuter pass that allows the holder to ride the TMV between Lumiose City and Kiloude City at any time.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmvpass.png'
+    }
+  ],
+  [
+    'tea',
+    {
+      name: 'tea',
+      gen: 3,
+      desc: 'Aromatic tea that has a slightly bitter taste. It soothes a dry throat.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tea.png'
+    }
+  ],
+  [
+    'teachytv',
+    {
+      name: 'Teachy TV',
+      gen: 3,
+      desc: 'A television set that is tuned to a program with useful tips for novice Trainers.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png'
+    }
+  ],
+  [
+    'tidalbell',
+    {
+      name: 'Tidal Bell',
+      gen: 1,
+      desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tidalbell.png'
+    }
+  ],
+  [
+    'townmap',
+    {
+      name: 'Town Map',
+      gen: 1,
+      desc: 'A very convenient map that can be viewed anytime. It even shows you your present location in the region.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/townmap.png'
+    }
+  ],
+  [
+    'traveltrunk',
+    {
+      name: 'Travel Trunk',
+      gen: 6,
+      desc: 'A light and yet incredibly effective trunk, which can contain every last piece of clothing that can be bought.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png'
+    }
+  ],
+  [
+    'tripass',
+    {
+      name: 'tripass',
+      gen: 3,
+      desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
+    }
+  ],
+  [
+    'unownreport',
+    {
+      name: 'Unown Report',
+      gen: 4,
+      desc: 'A report of all the discovered kinds of Unown.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png'
+    }
+  ],
+  [
+    'vsrecorder',
+    {
+      name: 'Vs. Recorder',
+      gen: 5,
+      desc: 'An amazing device that can record a battle between friends or the battles at certain special battle facilities.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png'
+    }
+  ],
+  [
+    'vsseeker',
+    {
+      name: 'Vs. Seeker',
+      gen: 3,
+      desc: 'A device that indicates Trainers who want to battle. Its battery charges while you walk.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png'
+    }
+  ],
+  [
+    'wailmerpail',
+    {
+      name: 'Wailmer Pail',
+      gen: 3,
+      desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'
+    }
+  ],
+  [
+    'wishingstar',
+    {
+      name: 'Wishing Star',
+      gen: 8,
+      desc: "A stone found in the Galar region with a mysterious power. It's said that your dreams come true if you find one.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wishingstar.png'
+    }
+  ],
+  [
+    'workskey',
+    {
+      name: 'Works Key',
+      gen: 4,
+      desc: 'A large key for operating the doors of the Valley Windworks in the canyon. It was held by a Team Galactic Grunt.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/workskey.png'
+    }
+  ],
+  [
+    'xtransceiver',
+    {
+      name: 'Xtransceiver',
+      gen: 5,
+      desc: 'A high-tech transceiver with a camera function. It allows up to four-way calls.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/xtransceiver.png'
+    }
+  ],
+  [
+    'yellowpetal',
+    {
+      name: 'Yellow Petal',
+      gen: 7,
+      desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/yellowpetal.png'
+    }
+  ],
+  [
+    'zpowering',
+    {
+      name: 'Z-Power Ring',
+      gen: 7,
+      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-powerring.png'
+    }
+  ],
+  [
+    'zring',
+    {
+      name: 'Z-Ring',
+      gen: 7,
+      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-ring.png'
+    }
+  ],
+  [
+    'zygardecube',
+    {
+      name: 'Zygarde Cube',
+      gen: 7,
+      desc: 'An item to store Zygarde Cores and Cells. You can also use it to teach Zygarde moves.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
     }
   ]
 ]);

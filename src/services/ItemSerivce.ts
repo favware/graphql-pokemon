@@ -35,7 +35,7 @@ export default class ItemService {
     addPropertyToClass(
       itemEntry,
       'sprite',
-      `https://play.pokemonshowdown.com/sprites/itemicons/${Util.toLowerHyphenCase(itemData.name)}.png`,
+      itemData.specialSprite ?? `https://play.pokemonshowdown.com/sprites/itemicons/${Util.toLowerHyphenCase(itemData.name)}.png`,
       requestedFields
     );
     addPropertyToClass(

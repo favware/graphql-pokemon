@@ -3556,7 +3556,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'This folding bike allows you to perform actions such as wheelies and bunny hops.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3596,7 +3597,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A ticket required to board the ship to Birth Island. It glows beautifully.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3655,7 +3657,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: "A pouch for carrying Berries. It is attached to the bag's compartment for important items.",
       specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3675,7 +3678,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'Take this voucher to the BIKE SHOP in CERULEAN CITY and exchange it for a bicycle.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3845,7 +3849,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: "A package that contains DEVON's machine parts.",
       gen: 3,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3865,7 +3870,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
       gen: 6,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3875,7 +3881,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'A device made by Devon Corporation that provides oxygen to users during the use of Dive.',
       gen: 6,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3895,7 +3902,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: "This high-tech machine shows the location of invisible items. It's attached to the head when in use.",
       gen: 6,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3938,7 +3946,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
         'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
       shortDesc: 'Might be used at the Pokémon Communication Centre.',
       gen: 2,
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -3998,7 +4007,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'The ticket required for sailing on a ferry to the Southern Island. Does Norman, the Petalburg Gym Leader, know a secret?!',
       gen: 3,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4038,7 +4048,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: "A device that enables you to recall what you've heard and seen about famous people.",
       gen: 3,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4088,7 +4099,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 2,
       desc: 'The mysterious BALL.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4108,7 +4120,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'Nifty goggles to protect eyes from desert sandstorms.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4258,7 +4271,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 1,
       desc: 'A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4358,7 +4372,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'An extremely important letter to Steven from the President of Devon Corporation.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4448,7 +4463,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'This folding Bike more than doubles your movement speed.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4468,7 +4484,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: "A medal-like item in the same shape as Team Magma's mark.",
       specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4518,7 +4535,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 6,
       desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4548,7 +4566,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: "A meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it's shining with seven colors of light.",
       specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4588,7 +4607,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: '	A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4627,7 +4647,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 1,
       desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
       specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png",
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4667,7 +4688,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A chart that can take you to Faraway Island.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4817,7 +4839,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A case for holding Pokéblock made with a Berry Blender.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4847,7 +4870,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A jar for storing Berry Powder made using a Berry Crusher.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -4937,7 +4961,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A pass for ferries between Vermilion and the Sevii Islands. It features a drawing of a rainbow.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5017,7 +5042,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5027,7 +5053,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5037,7 +5064,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5047,7 +5075,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5087,7 +5116,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'An exquisitely beautiful gem that has a red glow. It symbolizes passion.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5117,7 +5147,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'An exquisitely beautiful gem that has a blue glow. It symbolizes honesty.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5127,7 +5158,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 6,
       desc: 'A device found inside Sea Mauville.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5227,7 +5259,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: '	A sack used to gather and hold volcanic ash.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5328,7 +5361,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: "A case that holds TMs and HMs. It is attached to the Bag's compartment for important items.",
       specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5358,7 +5392,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A television set that is tuned to a program with useful tips for novice Trainers.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5398,7 +5433,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [
@@ -5438,7 +5474,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       gen: 3,
       desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png',
-      keyItem: true
+      keyItem: true,
+      isNonstandard: 'Past'
     }
   ],
   [

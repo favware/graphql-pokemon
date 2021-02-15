@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/favware/graphql-pokemon/compare/v5.0.1...v5.1.0) (2021-02-15)
+
+
+### Features
+
+* add key items ([#397](https://github.com/favware/graphql-pokemon/issues/397)) ([8152383](https://github.com/favware/graphql-pokemon/commit/815238359d38fb6e60c265f097f254a56e79d5e2))
+
+
+### Bug Fixes
+
+* fixed victiny -> victini in aliases ([931d1b4](https://github.com/favware/graphql-pokemon/commit/931d1b4f976dbd5afbd9ddd3f008cfac8db00200))
+
 ### [5.0.1](https://github.com/favware/graphql-pokemon/compare/v5.0.0...v5.0.1) (2021-01-10)
 
 ### Bug Fixes

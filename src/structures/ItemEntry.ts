@@ -26,6 +26,6 @@ export default class ItemEntry {
   @Field(() => String, { description: 'Serebii page for an item' })
   public serebiiPage!: string;
 
-  @Field(() => String, { description: 'Smogon page for an item' })
-  public smogonPage!: string;
+  @Field(() => String, { nullable: true, description: 'Smogon page for an item' })
+  public smogonPage?: string;
 }

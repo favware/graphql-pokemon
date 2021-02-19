@@ -28020,7 +28020,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'syclar',
       evoLevel: 30,
       eggGroups: ['Bug'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/syclant.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/syclant.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/syclant.png'
     }
   ],
   [
@@ -28043,7 +28044,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 44,
       color: 'White',
       eggGroups: ['Amorphous', 'Human-Like'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/revenankh.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/revenankh.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/revenankh.png'
     }
   ],
   [
@@ -28068,7 +28070,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'flarelm',
       evoLevel: 38,
       eggGroups: ['Monster', 'Dragon'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pyroak.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pyroak.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/pyroak.png'
     }
   ],
   [
@@ -28093,7 +28096,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'breezi',
       evoLevel: 33,
       eggGroups: ['Field'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/fidgit.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/fidgit.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/fidgit.png'
     }
   ],
   [
@@ -28118,7 +28122,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'tactite',
       evoLevel: 28,
       eggGroups: ['Undiscovered'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/stratagem.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/stratagem.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/stratagem.png'
     }
   ],
   [
@@ -28143,7 +28148,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'privatyke',
       evoLevel: 37,
       eggGroups: ['Water 1', 'Water 3'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/arghonaut.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/arghonaut.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/arghonaut.png'
     }
   ],
   [
@@ -28166,7 +28172,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 51,
       color: 'Gray',
       eggGroups: ['Field'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/kitsunoh.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/kitsunoh.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/kitsunoh.png'
     }
   ],
   [
@@ -28189,7 +28196,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 59,
       color: 'Yellow',
       eggGroups: ['Dragon', 'Monster'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cyclohm.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cyclohm.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/cyclohm.png'
     }
   ],
   [
@@ -28212,7 +28220,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 683.6,
       color: 'Brown',
       eggGroups: ['Water 2', 'Field'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/colossoil.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/colossoil.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/colossoil.png'
     }
   ],
   [
@@ -28235,7 +28244,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 10.6,
       color: 'Red',
       eggGroups: ['Water 1', 'Fairy'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/krillowatt.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/krillowatt.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/krillowatt.png'
     }
   ],
   [
@@ -28260,7 +28270,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'voodoll',
       evoLevel: 32,
       eggGroups: ['Human-Like', 'Ground'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/voodoom.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/voodoom.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/voodoom.png'
     }
   ],
   [
@@ -28285,7 +28296,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'scratchet',
       evoLevel: 23,
       eggGroups: ['Field', 'Flying'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tomohawk.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tomohawk.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/tomohawk.png'
     }
   ],
   [
@@ -28310,7 +28322,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'necturine',
       evoLevel: 31,
       eggGroups: ['Grass', 'Field'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/necturna.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/necturna.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/necturna.png'
     }
   ],
   [
@@ -28333,7 +28346,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 41,
       color: 'Pink',
       eggGroups: ['Fairy', 'Field'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/mollux.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/mollux.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/mollux.png'
     }
   ],
   [
@@ -28358,7 +28372,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'argalis',
       evoLevel: 50,
       eggGroups: ['Bug'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/aurumoth.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/aurumoth.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/aurumoth.png'
     }
   ],
   [
@@ -28383,7 +28398,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'brattler',
       evoLevel: 33,
       eggGroups: ['Grass', 'Dragon'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/malaconda.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/malaconda.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/malaconda.png'
     }
   ],
   [
@@ -28408,7 +28424,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'cawdet',
       evoLevel: 33,
       eggGroups: ['Flying'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cawmodore.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cawmodore.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/cawmodore.png'
     }
   ],
   [
@@ -28433,7 +28450,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'volkritter',
       evoLevel: 34,
       eggGroups: ['Water 1', 'Water 2'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/volkraken.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/volkraken.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/volkraken.png'
     }
   ],
   [
@@ -28458,7 +28476,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'snugglow',
       evoLevel: 29,
       eggGroups: ['Water 1', 'Water 2'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/plasmanta.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/plasmanta.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/plasmanta.png'
     }
   ],
   [
@@ -28483,7 +28502,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'caimanoe',
       evoLevel: 40,
       eggGroups: ['Water 1', 'Field'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/naviathan.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/naviathan.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/naviathan.png'
     }
   ],
   [
@@ -28507,7 +28527,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       color: 'Purple',
       eggGroups: ['Amorphous', 'Mineral'],
       otherFormes: ['crucibellemega'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/crucibelle.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/crucibelle.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/crucibelle.png'
     }
   ],
   [
@@ -28533,7 +28554,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       weightkg: 22.5,
       color: 'Purple',
       eggGroups: ['Amorphous', 'Mineral'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/crucibelle-mega.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/crucibelle-mega.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/crucibelle-mega.png'
     }
   ],
   [
@@ -28558,7 +28580,8 @@ export default new GraphQLCollection<string, Pokemon.DexEntry>([
       prevo: 'pluffle',
       evoLevel: 2,
       eggGroups: ['Fairy', 'Human-Like'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/kerfluffle.png'
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/kerfluffle.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5/gen5-shiny/kerfluffle.png'
     }
   ],
   [

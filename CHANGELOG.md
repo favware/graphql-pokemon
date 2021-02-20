@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.1.2](https://github.com/favware/graphql-pokemon/compare/v5.1.1...v5.1.2) (2021-02-20)
+
+
+### Bug Fixes
+
+* add CAP specialSprite for remaining pokemons ([6b4eab3](https://github.com/favware/graphql-pokemon/commit/6b4eab30a6da6efeacd23994912be0f4323b375a))
+* add specialShinySprites to CAP Pokémon ([bf74695](https://github.com/favware/graphql-pokemon/commit/bf74695fda9052022605f016eebf9bcac1be2351))
+* add specialSprites for CAP Pokémon ([180d8ab](https://github.com/favware/graphql-pokemon/commit/180d8ab93ab38b6857a032d5a97ce1bb13dd9ff0))
+
 ### [5.1.1](https://github.com/favware/graphql-pokemon/compare/v5.1.0...v5.1.1) (2021-02-15)
 
 

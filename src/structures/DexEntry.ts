@@ -1,5 +1,6 @@
 import { Field, Float, Int, ObjectType } from 'type-graphql';
 import AbilitiesEntry from './AbilitiesEntry';
+import EvYieldsEntry from './EvYieldsEntry';
 import GenderEntry from './GenderEntry';
 import StatsEntry from './StatsEntry';
 
@@ -19,6 +20,9 @@ export default class DexEntry {
 
   @Field(() => StatsEntry, { description: 'Base stats for a Pokémon' })
   public baseStats!: StatsEntry;
+
+  @Field(() => EvYieldsEntry, { nullable: true, description: 'EV yields for a Pokémon' })
+  public evYields?: EvYieldsEntry;
 
   @Field(() => String, { description: 'The colour of a Pokémon as listed in the Pokedex' })
   public color!: string;

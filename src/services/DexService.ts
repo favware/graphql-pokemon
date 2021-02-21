@@ -5,6 +5,7 @@ import pokedex from '../assets/pokedex';
 import AbilitiesEntry from '../structures/AbilitiesEntry';
 import DexDetails from '../structures/DexDetails';
 import DexEntry from '../structures/DexEntry';
+import EvYieldsEntry from '../structures/EvYieldsEntry';
 import FlavorEntry from '../structures/FlavorEntry';
 import GenderEntry from '../structures/GenderEntry';
 import StatsEntry from '../structures/StatsEntry';
@@ -35,61 +36,44 @@ export default class DexService {
 
       const genderData = new GenderEntry();
       const baseStatsData = new StatsEntry();
+      const evYieldsData = new EvYieldsEntry();
       const abilitiesData = new AbilitiesEntry();
       const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.item.genderRatio || {
         male: 0.5,
         female: 0.5
       };
 
-      addPropertyToClass(genderData, 'male', `${pageGenderRatio.male * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.male');
-      addPropertyToClass(genderData, 'female', `${pageGenderRatio.female * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.female');
+      const genderEntryRequestedFields = Util.cast<GraphQLSet<keyof GenderEntry>>(requestedFields);
+      addPropertyToClass(genderData, 'male', `${pageGenderRatio.male * 100}%`, genderEntryRequestedFields, 'gender.male');
+      addPropertyToClass(genderData, 'female', `${pageGenderRatio.female * 100}%`, genderEntryRequestedFields, 'gender.female');
 
-      addPropertyToClass(baseStatsData, 'hp', page.item.baseStats.hp, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.hp');
-      addPropertyToClass(baseStatsData, 'attack', page.item.baseStats.atk, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.attack');
-      addPropertyToClass(baseStatsData, 'defense', page.item.baseStats.def, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.defense');
-      addPropertyToClass(
-        baseStatsData,
-        'specialattack',
-        page.item.baseStats.spa,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.specialattack'
-      );
-      addPropertyToClass(
-        baseStatsData,
-        'specialdefense',
-        page.item.baseStats.spd,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.specialdefense'
-      );
-      addPropertyToClass(baseStatsData, 'speed', page.item.baseStats.spe, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.speed');
+      const baseStatsRequestedFields = Util.cast<GraphQLSet<keyof StatsEntry>>(requestedFields);
+      addPropertyToClass(baseStatsData, 'hp', page.item.baseStats.hp, baseStatsRequestedFields, 'baseStats.hp');
+      addPropertyToClass(baseStatsData, 'attack', page.item.baseStats.atk, baseStatsRequestedFields, 'baseStats.attack');
+      addPropertyToClass(baseStatsData, 'defense', page.item.baseStats.def, baseStatsRequestedFields, 'baseStats.defense');
+      addPropertyToClass(baseStatsData, 'specialattack', page.item.baseStats.spa, baseStatsRequestedFields, 'baseStats.specialattack');
+      addPropertyToClass(baseStatsData, 'specialdefense', page.item.baseStats.spd, baseStatsRequestedFields, 'baseStats.specialdefense');
+      addPropertyToClass(baseStatsData, 'speed', page.item.baseStats.spe, baseStatsRequestedFields, 'baseStats.speed');
 
-      addPropertyToClass(abilitiesData, 'first', page.item.abilities.first, requestedFields as GraphQLSet<keyof AbilitiesEntry>, 'abilities.first');
-      addPropertyToClass(
-        abilitiesData,
-        'second',
-        page.item.abilities.second,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.second'
-      );
-      addPropertyToClass(
-        abilitiesData,
-        'hidden',
-        page.item.abilities.hidden,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.hidden'
-      );
-      addPropertyToClass(
-        abilitiesData,
-        'special',
-        page.item.abilities.special,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.special'
-      );
+      const evYieldsRequestedFields = Util.cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
+      addPropertyToClass(evYieldsData, 'hp', page.item.evYields?.hp ?? 0, evYieldsRequestedFields, 'evYields.hp');
+      addPropertyToClass(evYieldsData, 'attack', page.item.evYields?.atk ?? 0, evYieldsRequestedFields, 'evYields.attack');
+      addPropertyToClass(evYieldsData, 'defense', page.item.evYields?.def ?? 0, evYieldsRequestedFields, 'evYields.defense');
+      addPropertyToClass(evYieldsData, 'specialattack', page.item.evYields?.spa ?? 0, evYieldsRequestedFields, 'evYields.specialattack');
+      addPropertyToClass(evYieldsData, 'specialdefense', page.item.evYields?.spd ?? 0, evYieldsRequestedFields, 'evYields.specialdefense');
+      addPropertyToClass(evYieldsData, 'speed', page.item.evYields?.spe ?? 0, evYieldsRequestedFields, 'evYields.speed');
 
-      const dexEntryFields = requestedFields as GraphQLSet<keyof DexEntry>;
+      const abilitiesRequestedFields = Util.cast<GraphQLSet<keyof AbilitiesEntry>>(requestedFields);
+      addPropertyToClass(abilitiesData, 'first', page.item.abilities.first, abilitiesRequestedFields, 'abilities.first');
+      addPropertyToClass(abilitiesData, 'second', page.item.abilities.second, abilitiesRequestedFields, 'abilities.second');
+      addPropertyToClass(abilitiesData, 'hidden', page.item.abilities.hidden, abilitiesRequestedFields, 'abilities.hidden');
+      addPropertyToClass(abilitiesData, 'special', page.item.abilities.special, abilitiesRequestedFields, 'abilities.special');
+
+      const dexEntryFields = Util.cast<GraphQLSet<keyof DexEntry>>(requestedFields);
       addPropertyToClass(dexEntry, 'abilities', abilitiesData, dexEntryFields);
       addPropertyToClass(dexEntry, 'gender', genderData, dexEntryFields);
       addPropertyToClass(dexEntry, 'baseStats', baseStatsData, dexEntryFields);
+      addPropertyToClass(dexEntry, 'evYields', evYieldsData, dexEntryFields);
       addPropertyToClass(dexEntry, 'num', page.item.num, dexEntryFields);
       addPropertyToClass(dexEntry, 'species', page.item.species, dexEntryFields);
       addPropertyToClass(dexEntry, 'types', page.item.types, dexEntryFields);
@@ -133,6 +117,7 @@ export default class DexService {
     const pokemonData = new DexDetails();
     const genderData = new GenderEntry();
     const baseStatsData = new StatsEntry();
+    const evYieldsData = new EvYieldsEntry();
     const abilitiesData = new AbilitiesEntry();
     const evolutionChain: Promise<DexDetails>[] = [];
     const preevolutionChain: Promise<DexDetails>[] = [];
@@ -141,98 +126,145 @@ export default class DexService {
       female: 0.5
     };
 
+    const genderEntryRequestedFields = Util.cast<GraphQLSet<keyof GenderEntry>>(requestedFields);
     addPropertyToClass(
       genderData,
       'male',
       `${basePokemonGenderRatio.male * 100}%`,
-      requestedFields as GraphQLSet<keyof GenderEntry>,
+      genderEntryRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}gender.male`
     );
     addPropertyToClass(
       genderData,
       'female',
       `${basePokemonGenderRatio.female * 100}%`,
-      requestedFields as GraphQLSet<keyof GenderEntry>,
+      genderEntryRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}gender.female`
     );
 
+    const baseStatsRequestedFields = Util.cast<GraphQLSet<keyof StatsEntry>>(requestedFields);
     addPropertyToClass(
       baseStatsData,
       'hp',
       basePokemonData.baseStats.hp,
-      requestedFields as GraphQLSet<keyof StatsEntry>,
+      baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.hp`
     );
     addPropertyToClass(
       baseStatsData,
       'attack',
       basePokemonData.baseStats.atk,
-      requestedFields as GraphQLSet<keyof StatsEntry>,
+      baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.attack`
     );
     addPropertyToClass(
       baseStatsData,
       'defense',
       basePokemonData.baseStats.def,
-      requestedFields as GraphQLSet<keyof StatsEntry>,
+      baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.defense`
     );
     addPropertyToClass(
       baseStatsData,
       'specialattack',
       basePokemonData.baseStats.spa,
-      requestedFields as GraphQLSet<keyof StatsEntry>,
+      baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.specialattack`
     );
     addPropertyToClass(
       baseStatsData,
       'specialdefense',
       basePokemonData.baseStats.spd,
-      requestedFields as GraphQLSet<keyof StatsEntry>,
+      baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.specialdefense`
     );
     addPropertyToClass(
       baseStatsData,
       'speed',
       basePokemonData.baseStats.spe,
-      requestedFields as GraphQLSet<keyof StatsEntry>,
+      baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.speed`
     );
 
+    const evYieldsRequestedFields = Util.cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
+    addPropertyToClass(
+      evYieldsData,
+      'hp',
+      basePokemonData.evYields?.hp ?? 0,
+      evYieldsRequestedFields,
+      `${recursingAs ? `${recursingAs}.` : ''}evYields.hp`
+    );
+    addPropertyToClass(
+      evYieldsData,
+      'attack',
+      basePokemonData.evYields?.atk ?? 0,
+      evYieldsRequestedFields,
+      `${recursingAs ? `${recursingAs}.` : ''}evYields.attack`
+    );
+    addPropertyToClass(
+      evYieldsData,
+      'defense',
+      basePokemonData.evYields?.def ?? 0,
+      evYieldsRequestedFields,
+      `${recursingAs ? `${recursingAs}.` : ''}evYields.defense`
+    );
+    addPropertyToClass(
+      evYieldsData,
+      'specialattack',
+      basePokemonData.evYields?.spa ?? 0,
+      evYieldsRequestedFields,
+      `${recursingAs ? `${recursingAs}.` : ''}evYields.specialattack`
+    );
+    addPropertyToClass(
+      evYieldsData,
+      'specialdefense',
+      basePokemonData.evYields?.spd ?? 0,
+      evYieldsRequestedFields,
+      `${recursingAs ? `${recursingAs}.` : ''}evYields.specialdefense`
+    );
+    addPropertyToClass(
+      evYieldsData,
+      'speed',
+      basePokemonData.evYields?.spe ?? 0,
+      evYieldsRequestedFields,
+      `${recursingAs ? `${recursingAs}.` : ''}evYields.speed`
+    );
+
+    const abilitiesRequestedFields = Util.cast<GraphQLSet<keyof AbilitiesEntry>>(requestedFields);
     addPropertyToClass(
       abilitiesData,
       'first',
       basePokemonData.abilities.first,
-      requestedFields as GraphQLSet<keyof AbilitiesEntry>,
+      abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.first`
     );
     addPropertyToClass(
       abilitiesData,
       'second',
       basePokemonData.abilities.second,
-      requestedFields as GraphQLSet<keyof AbilitiesEntry>,
+      abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.second`
     );
     addPropertyToClass(
       abilitiesData,
       'hidden',
       basePokemonData.abilities.hidden,
-      requestedFields as GraphQLSet<keyof AbilitiesEntry>,
+      abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.hidden`
     );
     addPropertyToClass(
       abilitiesData,
       'special',
       basePokemonData.abilities.special,
-      requestedFields as GraphQLSet<keyof AbilitiesEntry>,
+      abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.special`
     );
 
-    const dexDetailsFields = requestedFields as GraphQLSet<keyof DexDetails>;
-
+    const dexDetailsFields = Util.cast<GraphQLSet<keyof DexDetails>>(requestedFields);
     addPropertyToClass(pokemonData, 'abilities', abilitiesData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
     addPropertyToClass(pokemonData, 'gender', genderData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
     addPropertyToClass(pokemonData, 'baseStats', baseStatsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
+    addPropertyToClass(pokemonData, 'evYields', evYieldsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}evYields`);
     addPropertyToClass(pokemonData, 'num', basePokemonData.num, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
     addPropertyToClass(pokemonData, 'species', basePokemonData.species, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
     addPropertyToClass(pokemonData, 'types', basePokemonData.types, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}types`);

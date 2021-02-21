@@ -25,13 +25,13 @@ export namespace Pokemon {
     female: number;
   }
 
-  export interface Stats {
-    hp: number;
-    atk: number;
-    def: number;
-    spa: number;
-    spd: number;
-    spe: number;
+  export interface Stats<T extends number = number> {
+    hp: T;
+    atk: T;
+    def: T;
+    spa: T;
+    spd: T;
+    spe: T;
   }
 
   export interface Abilities {
@@ -60,6 +60,7 @@ export namespace Pokemon {
     species: string;
     types: string[];
     weightkg: number;
+    evYields?: Stats<0 | 1 | 2 | 3>;
     specialShinySprite?: string;
     specialSprite?: string;
     cosmeticFormes?: string[];

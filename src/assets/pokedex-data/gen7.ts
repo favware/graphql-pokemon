@@ -20,6 +20,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Overgrow', hidden: 'Long Reach' },
       heightm: 0.3,
       weightkg: 1.5,
+      evYields: {
+        hp: 1,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       evos: ['dartrix'],
       eggGroups: ['Flying'],
@@ -50,6 +58,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Overgrow', hidden: 'Long Reach' },
       heightm: 0.7,
       weightkg: 16,
+      evYields: {
+        hp: 2,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       prevo: 'rowlet',
       evos: ['decidueye'],
@@ -82,6 +98,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Overgrow', hidden: 'Long Reach' },
       heightm: 1.6,
       weightkg: 36.6,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       prevo: 'dartrix',
       evoLevel: 34,
@@ -113,6 +137,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Blaze', hidden: 'Intimidate' },
       heightm: 0.4,
       weightkg: 4.3,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 1
+      },
       color: 'Red',
       evos: ['torracat'],
       eggGroups: ['Field'],
@@ -143,6 +175,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Blaze', hidden: 'Intimidate' },
       heightm: 0.7,
       weightkg: 25,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 2
+      },
       color: 'Red',
       prevo: 'litten',
       evos: ['incineroar'],
@@ -175,6 +215,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Blaze', hidden: 'Intimidate' },
       heightm: 1.8,
       weightkg: 83,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Red',
       prevo: 'torracat',
       evoLevel: 34,
@@ -206,6 +254,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Torrent', hidden: 'Liquid Voice' },
       heightm: 0.4,
       weightkg: 7.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 1,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       evos: ['brionne'],
       eggGroups: ['Water 1', 'Field'],
@@ -236,6 +292,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Torrent', hidden: 'Liquid Voice' },
       heightm: 0.6,
       weightkg: 17.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 2,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       prevo: 'popplio',
       evos: ['primarina'],
@@ -268,6 +332,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Torrent', hidden: 'Liquid Voice' },
       heightm: 1.8,
       weightkg: 44,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       prevo: 'brionne',
       evoLevel: 34,
@@ -299,6 +371,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Keen Eye', second: 'Skill Link', hidden: 'Pickup' },
       heightm: 0.3,
       weightkg: 1.2,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Black',
       evos: ['trumbeak'],
       eggGroups: ['Flying'],
@@ -329,6 +409,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Keen Eye', second: 'Skill Link', hidden: 'Pickup' },
       heightm: 0.6,
       weightkg: 14.8,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Black',
       prevo: 'pikipek',
       evos: ['toucannon'],
@@ -361,6 +449,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Keen Eye', second: 'Skill Link', hidden: 'Sheer Force' },
       heightm: 1.1,
       weightkg: 26,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Black',
       prevo: 'trumbeak',
       evoLevel: 28,
@@ -392,6 +488,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Stakeout', second: 'Strong Jaw', hidden: 'Adaptability' },
       heightm: 0.4,
       weightkg: 6,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       evos: ['gumshoos'],
       eggGroups: ['Field'],
@@ -422,6 +526,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Stakeout', second: 'Strong Jaw', hidden: 'Adaptability' },
       heightm: 0.7,
       weightkg: 14.2,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       prevo: 'yungoos',
       evoLevel: 20,
@@ -486,6 +598,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Swarm' },
       heightm: 0.4,
       weightkg: 4.4,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       evos: ['charjabug'],
       eggGroups: ['Bug'],
@@ -516,6 +636,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Battery' },
       heightm: 0.5,
       weightkg: 10.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Green',
       prevo: 'grubbin',
       evos: ['vikavolt'],
@@ -548,6 +676,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Levitate' },
       heightm: 1.5,
       weightkg: 45,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       prevo: 'charjabug',
       evoLevel: 'Use Thunder Stone',
@@ -612,6 +748,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Hyper Cutter', second: 'Iron Fist', hidden: 'Anger Point' },
       heightm: 0.6,
       weightkg: 7,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Purple',
       evos: ['crabominable'],
       eggGroups: ['Water 3'],
@@ -642,6 +786,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Hyper Cutter', second: 'Iron Fist', hidden: 'Anger Point' },
       heightm: 1.7,
       weightkg: 180,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'White',
       prevo: 'crabrawler',
       evoLevel: 'Level up in extreme cold',
@@ -674,6 +826,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Dancer' },
       heightm: 0.6,
       weightkg: 3.4,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 2,
+        spd: 0,
+        spe: 0
+      },
       color: 'Red',
       eggGroups: ['Flying'],
       otherFormes: ['oricoriopompom', 'oricoriopau', 'oricoriosensu'],
@@ -800,6 +960,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Honey Gather', second: 'Shield Dust', hidden: 'Sweet Veil' },
       heightm: 0.1,
       weightkg: 0.2,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 1
+      },
       color: 'Yellow',
       evos: ['ribombee'],
       eggGroups: ['Bug', 'Fairy'],
@@ -830,6 +998,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Honey Gather', second: 'Shield Dust', hidden: 'Sweet Veil' },
       heightm: 0.2,
       weightkg: 0.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 2
+      },
       color: 'Yellow',
       prevo: 'cutiefly',
       evoLevel: 25,
@@ -895,6 +1071,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Keen Eye', second: 'Vital Spirit', hidden: 'Steadfast', special: 'Own Tempo' },
       heightm: 0.5,
       weightkg: 9.2,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       evos: ['lycanroc', 'lycanrocmidnight', 'lycanrocdusk'],
       eggGroups: ['Field'],
@@ -926,6 +1110,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Keen Eye', second: 'Sand Rush', hidden: 'Steadfast' },
       heightm: 0.8,
       weightkg: 25,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       prevo: 'rockruff',
       evoLevel: 'Level 25 during Daytime',
@@ -1027,6 +1219,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Schooling' },
       heightm: 0.2,
       weightkg: 0.3,
+      evYields: {
+        hp: 1,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       eggGroups: ['Water 2'],
       otherFormes: ['wishiwashischool'],
@@ -1060,6 +1260,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Schooling' },
       heightm: 8.2,
       weightkg: 78.6,
+      evYields: {
+        hp: 1,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       eggGroups: ['Water 2'],
       catchRate: {
@@ -1089,6 +1297,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Merciless', second: 'Limber', hidden: 'Regenerator' },
       heightm: 0.4,
       weightkg: 8,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 1,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       evos: ['toxapex'],
       eggGroups: ['Water 1'],
@@ -1119,6 +1335,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Merciless', second: 'Limber', hidden: 'Regenerator' },
       heightm: 0.7,
       weightkg: 14.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       prevo: 'mareanie',
       evoLevel: 38,
@@ -1150,6 +1374,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Own Tempo', second: 'Stamina', hidden: 'Inner Focus' },
       heightm: 1,
       weightkg: 110,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       evos: ['mudsdale'],
       eggGroups: ['Field'],
@@ -1180,6 +1412,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Own Tempo', second: 'Stamina', hidden: 'Inner Focus' },
       heightm: 2.5,
       weightkg: 920,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       prevo: 'mudbray',
       evoLevel: 30,
@@ -1211,6 +1451,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Water Bubble', hidden: 'Water Absorb' },
       heightm: 0.3,
       weightkg: 4,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 1,
+        spe: 0
+      },
       color: 'Green',
       evos: ['araquanid'],
       eggGroups: ['Water 1', 'Bug'],
@@ -1241,6 +1489,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Water Bubble', hidden: 'Water Absorb' },
       heightm: 1.8,
       weightkg: 82,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 2,
+        spe: 0
+      },
       color: 'Green',
       prevo: 'dewpider',
       evoLevel: 22,
@@ -1305,6 +1561,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Leaf Guard', hidden: 'Contrary' },
       heightm: 0.3,
       weightkg: 1.5,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Pink',
       evos: ['lurantis'],
       eggGroups: ['Grass'],
@@ -1335,6 +1599,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Leaf Guard', hidden: 'Contrary' },
       heightm: 0.9,
       weightkg: 18.5,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Pink',
       prevo: 'fomantis',
       evoLevel: 34,
@@ -1399,6 +1671,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Illuminate', second: 'Effect Spore', hidden: 'Rain Dish' },
       heightm: 0.2,
       weightkg: 1.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 1,
+        spe: 0
+      },
       color: 'Purple',
       evos: ['shiinotic'],
       eggGroups: ['Grass'],
@@ -1429,6 +1709,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Illuminate', second: 'Effect Spore', hidden: 'Rain Dish' },
       heightm: 1,
       weightkg: 11.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 2,
+        spe: 0
+      },
       color: 'Purple',
       prevo: 'morelull',
       evoLevel: 24,
@@ -1460,6 +1748,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Corrosion', hidden: 'Oblivious' },
       heightm: 0.6,
       weightkg: 4.8,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 1
+      },
       color: 'Black',
       evos: ['salazzle'],
       eggGroups: ['Monster', 'Dragon'],
@@ -1490,6 +1786,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Corrosion', hidden: 'Oblivious' },
       heightm: 1.2,
       weightkg: 22.2,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 2
+      },
       color: 'Black',
       prevo: 'salandit',
       evoLevel: 'Level 33, Female only',
@@ -1554,6 +1858,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Fluffy', second: 'Klutz', hidden: 'Cute Charm' },
       heightm: 0.5,
       weightkg: 6.8,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Pink',
       evos: ['bewear'],
       eggGroups: ['Field'],
@@ -1584,6 +1896,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Fluffy', second: 'Klutz', hidden: 'Unnerve' },
       heightm: 2.1,
       weightkg: 135,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Pink',
       prevo: 'stufful',
       evoLevel: 27,
@@ -1615,6 +1935,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Leaf Guard', second: 'Oblivious', hidden: 'Sweet Veil' },
       heightm: 0.3,
       weightkg: 3.2,
+      evYields: {
+        hp: 1,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
+
       color: 'Purple',
       evos: ['steenee'],
       eggGroups: ['Grass'],
@@ -1645,6 +1974,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Leaf Guard', second: 'Oblivious', hidden: 'Sweet Veil' },
       heightm: 0.7,
       weightkg: 8.2,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 2
+      },
+
       color: 'Purple',
       prevo: 'bounsweet',
       evos: ['tsareena'],
@@ -1677,6 +2015,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Leaf Guard', second: 'Queenly Majesty', hidden: 'Sweet Veil' },
       heightm: 1.2,
       weightkg: 21.4,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
+
       color: 'Purple',
       prevo: 'steenee',
       evoLevel: 'Level 19 while knowing Stomp',
@@ -1708,6 +2055,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Flower Veil', second: 'Triage', hidden: 'Natural Cure' },
       heightm: 0.1,
       weightkg: 0.3,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 2,
+        spe: 0
+      },
+
       color: 'Green',
       eggGroups: ['Grass'],
       catchRate: {
@@ -1737,6 +2093,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Inner Focus', second: 'Telepathy', hidden: 'Symbiosis' },
       heightm: 1.5,
       weightkg: 76,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 2,
+        spe: 0
+      },
       color: 'White',
       eggGroups: ['Field'],
       catchRate: {
@@ -1766,6 +2130,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Receiver', hidden: 'Defiant' },
       heightm: 2,
       weightkg: 82.8,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'White',
       eggGroups: ['Field'],
       catchRate: {
@@ -1795,6 +2167,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Wimp Out' },
       heightm: 0.5,
       weightkg: 12,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 1
+      },
       color: 'Gray',
       evos: ['golisopod'],
       eggGroups: ['Bug', 'Water 3'],
@@ -1825,6 +2205,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Emergency Exit' },
       heightm: 2,
       weightkg: 108,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       prevo: 'wimpod',
       evoLevel: 30,
@@ -1856,6 +2244,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Water Compaction', hidden: 'Sand Veil' },
       heightm: 0.5,
       weightkg: 70,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 1,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       evos: ['palossand'],
       eggGroups: ['Amorphous'],
@@ -1886,6 +2282,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Water Compaction', hidden: 'Sand Veil' },
       heightm: 1.3,
       weightkg: 250,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Brown',
       prevo: 'sandygast',
       evoLevel: 42,
@@ -1917,6 +2321,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Innards Out', hidden: 'Unaware' },
       heightm: 0.3,
       weightkg: 1.2,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 2,
+        spe: 0
+      },
       color: 'Black',
       eggGroups: ['Water 1'],
       catchRate: {
@@ -1947,6 +2359,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Battle Armor' },
       heightm: 1.9,
       weightkg: 120.5,
+      evYields: {
+        hp: 2,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       evos: ['silvally'],
       eggGroups: ['Undiscovered'],
@@ -1977,6 +2397,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'RKS System' },
       heightm: 2.3,
       weightkg: 100.5,
+      evYields: {
+        hp: 3,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       prevo: 'typenull',
       evoLevel: 'Level up with happiness of at least 220',
@@ -2606,9 +3034,18 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Shields Down' },
       heightm: 0.3,
       weightkg: 0.3,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 1,
+        spd: 0,
+        spe: 0
+      },
       color: 'Red',
       eggGroups: ['Mineral'],
       cosmeticFormes: ['Minior-Orange', 'Minior-Yellow', 'Minior-Green', 'Minior-Blue', 'Minior-Indigo', 'Minior-Violet'],
+      otherFormes: ['miniormeteor'],
       catchRate: {
         base: 30,
         percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
@@ -2639,6 +3076,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Shields Down' },
       heightm: 0.3,
       weightkg: 40,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 1,
+        spa: 0,
+        spd: 1,
+        spe: 0
+      },
       color: 'Brown',
       eggGroups: ['Mineral'],
       catchRate: {
@@ -2668,6 +3113,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Comatose' },
       heightm: 0.4,
       weightkg: 19.9,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       eggGroups: ['Field'],
       catchRate: {
@@ -2697,6 +3150,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Shell Armor' },
       heightm: 2,
       weightkg: 212,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Red',
       eggGroups: ['Monster', 'Dragon'],
       catchRate: {
@@ -2726,6 +3187,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Iron Barbs', second: 'Lightning Rod', hidden: 'Sturdy' },
       heightm: 0.3,
       weightkg: 3.3,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       eggGroups: ['Field', 'Fairy'],
       otherFormes: ['togedemarutotem'],
@@ -2789,6 +3258,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Disguise' },
       heightm: 0.2,
       weightkg: 0.7,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 2,
+        spe: 0
+      },
       color: 'Yellow',
       eggGroups: ['Amorphous'],
       otherFormes: ['mimikyubusted', 'mimikyutotem', 'mimikyubustedtotem'],
@@ -2915,6 +3392,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Dazzling', second: 'Strong Jaw', hidden: 'Wonder Skin' },
       heightm: 0.9,
       weightkg: 19,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Pink',
       eggGroups: ['Water 2'],
       catchRate: {
@@ -2944,6 +3429,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Berserk', second: 'Sap Sipper', hidden: 'Cloud Nine' },
       heightm: 3,
       weightkg: 185,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 2,
+        spd: 0,
+        spe: 0
+      },
       color: 'White',
       eggGroups: ['Monster', 'Dragon'],
       catchRate: {
@@ -2973,6 +3466,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Steelworker' },
       heightm: 3.9,
       weightkg: 210,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Green',
       eggGroups: ['Mineral'],
       catchRate: {
@@ -3002,6 +3503,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Bulletproof', second: 'Soundproof', hidden: 'Overcoat' },
       heightm: 0.6,
       weightkg: 29.7,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 1,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       evos: ['hakamoo'],
       eggGroups: ['Dragon'],
@@ -3032,6 +3541,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Bulletproof', second: 'Soundproof', hidden: 'Overcoat' },
       heightm: 1.2,
       weightkg: 47,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       prevo: 'jangmoo',
       evos: ['kommoo'],
@@ -3064,6 +3581,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Bulletproof', second: 'Soundproof', hidden: 'Overcoat' },
       heightm: 1.6,
       weightkg: 78.2,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 3,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       prevo: 'hakamoo',
       evoLevel: 45,
@@ -3128,6 +3653,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Electric Surge', hidden: 'Telepathy' },
       heightm: 1.8,
       weightkg: 20.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 3
+      },
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3157,6 +3690,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Psychic Surge', hidden: 'Telepathy' },
       heightm: 1.2,
       weightkg: 18.6,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Pink',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3186,6 +3727,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Grassy Surge', hidden: 'Telepathy' },
       heightm: 1.9,
       weightkg: 45.5,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Red',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3215,6 +3764,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Misty Surge', hidden: 'Telepathy' },
       heightm: 1.3,
       weightkg: 21.2,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 3,
+        spe: 0
+      },
       color: 'Purple',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3244,6 +3801,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Unaware' },
       heightm: 0.2,
       weightkg: 0.1,
+      evYields: {
+        hp: 1,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       evos: ['cosmoem'],
       eggGroups: ['Undiscovered'],
@@ -3274,6 +3839,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Sturdy' },
       heightm: 0.1,
       weightkg: 999.9,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 1,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       prevo: 'cosmog',
       evos: ['solgaleo', 'lunala'],
@@ -3306,6 +3879,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Full Metal Body' },
       heightm: 3.4,
       weightkg: 230,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'White',
       prevo: 'cosmoem',
       evoLevel: 53,
@@ -3337,6 +3918,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Shadow Shield' },
       heightm: 4,
       weightkg: 120,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Purple',
       prevo: 'cosmoem',
       evoLevel: 53,
@@ -3368,6 +3957,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 1.2,
       weightkg: 55.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 3,
+        spe: 0
+      },
       color: 'White',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3397,6 +3994,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 2.4,
       weightkg: 333.6,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 2,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Red',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3426,6 +4031,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 1.8,
       weightkg: 25,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 3
+      },
       color: 'White',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3455,6 +4068,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 3.8,
       weightkg: 100,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Black',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3484,6 +4105,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 9.2,
       weightkg: 999.9,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 1,
+        spa: 1,
+        spd: 0,
+        spe: 0
+      },
       color: 'Green',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3513,6 +4142,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 0.3,
       weightkg: 0.1,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'White',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3542,6 +4179,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 5.5,
       weightkg: 888,
+      evYields: {
+        hp: 3,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Black',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3571,6 +4216,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Prism Armor' },
       heightm: 2.4,
       weightkg: 230,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 2,
+        spd: 0,
+        spe: 0
+      },
       color: 'Black',
       eggGroups: ['Undiscovered'],
       otherFormes: ['necrozmaduskmane', 'necrozmadawnwings', 'necrozmaultra'],
@@ -3604,6 +4257,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Prism Armor' },
       heightm: 3.8,
       weightkg: 460,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3636,6 +4297,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Prism Armor' },
       heightm: 4.2,
       weightkg: 350,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3668,6 +4337,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Neuroforce' },
       heightm: 7.5,
       weightkg: 230,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 1,
+        spd: 0,
+        spe: 1
+      },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3697,6 +4374,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Soul-Heart' },
       heightm: 1,
       weightkg: 80.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       eggGroups: ['Undiscovered'],
       otherFormes: ['magearnaoriginal'],
@@ -3759,6 +4444,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Technician' },
       heightm: 0.7,
       weightkg: 22.2,
+      evYields: {
+        hp: 0,
+        atk: 2,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 1
+      },
       color: 'Gray',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3788,6 +4481,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 0.6,
       weightkg: 1.8,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 1
+      },
       color: 'Purple',
       evos: ['naganadel'],
       eggGroups: ['Undiscovered'],
@@ -3818,6 +4519,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 3.6,
       weightkg: 150,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'Purple',
       prevo: 'poipole',
       evoLevel: 41,
@@ -3849,6 +4558,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 5.5,
       weightkg: 820,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 3,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3878,6 +4595,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Beast Boost' },
       heightm: 1.8,
       weightkg: 13,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 3,
+        spd: 0,
+        spe: 0
+      },
       color: 'White',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3907,6 +4632,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Volt Absorb' },
       heightm: 1.5,
       weightkg: 44.5,
+      evYields: {
+        hp: 0,
+        atk: 0,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 3
+      },
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
       catchRate: {
@@ -3936,6 +4669,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Magnet Pull' },
       heightm: 0.2,
       weightkg: 8,
+      evYields: {
+        hp: 0,
+        atk: 1,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       evos: ['melmetal'],
       eggGroups: ['Undiscovered'],
@@ -3966,6 +4707,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       abilities: { first: 'Iron Fist' },
       heightm: 2.5,
       weightkg: 800,
+      evYields: {
+        hp: 0,
+        atk: 3,
+        def: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      },
       color: 'Gray',
       prevo: 'meltan',
       evoLevel: 'feed 400 Meltan Candy in Pokémon GO',

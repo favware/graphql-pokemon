@@ -93,7 +93,6 @@
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",
     "esbenp.prettier-vscode",
-    "tabnine.tabnine-vscode",
     "redhat.vscode-yaml",
     "akamud.vscode-theme-onedark"
   ],

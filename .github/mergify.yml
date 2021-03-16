@@ -7,6 +7,14 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+  - name: Automatic Dependabot merging
+    conditions:
+      - author=dependabot[bot]
+      - base=master
+      - label~=^Meta:\ Dependencies
+    actions:
+      merge:
+        method: squash
   - name: Automatic Updater Merging
     conditions:
       - approved-reviews-by=Favna

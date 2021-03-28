@@ -1,6 +1,7 @@
 pull_request_rules:
   - name: Automatic Depfu merging
     conditions:
+      - approved-reviews-by=Favna
       - author=depfu[bot]
       - base=staging
       - label~=^Meta:\ Dependencies
@@ -9,6 +10,7 @@ pull_request_rules:
         method: squash
   - name: Automatic Dependabot merging
     conditions:
+      - approved-reviews-by=Favna
       - author=dependabot[bot]
       - base=master
       - label~=^Meta:\ Dependencies

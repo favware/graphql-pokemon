@@ -1,9 +1,8 @@
 pull_request_rules:
   - name: Automatic Depfu merging
     conditions:
-      - approved-reviews-by=Favna
       - author=depfu[bot]
-      - base=staging
+      - base=main
       - label~=^Meta:\ Dependencies
     actions:
       merge:
@@ -12,15 +11,14 @@ pull_request_rules:
     conditions:
       - approved-reviews-by=Favna
       - author=dependabot[bot]
-      - base=master
+      - base=main
       - label~=^Meta:\ Dependencies
     actions:
       merge:
         method: squash
   - name: Automatic Updater Merging
     conditions:
-      - approved-reviews-by=Favna
-      - base=staging
+      - base=main
       - author=Favware-bot
       - label~=^Meta:\ Data\ Update
     actions:

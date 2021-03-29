@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-        with:
-          ref: staging
       - name: Use Node.js 15
         uses: actions/setup-node@v2
         with:
@@ -55,7 +53,7 @@ jobs:
             git config --local user.email "${GITHUB_EMAIL}";
             git config --local user.name "${GITHUB_USER}";
             git checkout -b favware-bot/update-data/$(date +%F-%H-%M);
-            git commit -sam "refactor: update data";
+            git commit -sam "refactor: update data [skip publish]";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            ./gh pr create -t "refactor: update data" -b "*bleep bloop* I updated the data files" -l "Meta: Data Update" -r "Favna" -B staging;
+            ./gh pr create -t "refactor: update data [skip publish]" -b "*bleep bloop* I updated the data files" -l "Meta: Data Update" -B main;
           fi

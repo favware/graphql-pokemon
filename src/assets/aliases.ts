@@ -231,6 +231,8 @@ export const pokedexAliases = new GraphQLCollection<string, string>([
   ['giratinaa', 'giratina'],
   ['giratinaaltered', 'giratina'],
   ['giratinao', 'giratinaorigin'],
+  ['gmime', 'mrmimegalar'],
+  ['gmrmime', 'mrmimegalar'],
   ['golema', 'golemalola'],
   ['goon', 'obstagoon'],
   ['gourgeistaverage', 'gourgeist'],

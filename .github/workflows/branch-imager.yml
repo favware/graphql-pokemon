@@ -26,7 +26,11 @@ jobs:
         run: |
           echo "::add-matcher::.github/problemMatchers/tsc.json"
           echo "::add-matcher::.github/problemMatchers/eslint-stylish.json"
+      - name: Get GitHub Branch Name
+        id: get_branch_name
+        run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
     outputs:
+      branch_name: ${{ steps.get_branch_name.outputs.branch_name }}
       commit_message: $( [ -z "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" ] && echo "${{ steps.push_get_commit_message.outputs.push_commit_message }}" || echo "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" )
 
   Build:
@@ -37,7 +41,7 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 15
+      - name: Use Node.js v15
         uses: actions/setup-node@v2
         with:
           node-version: 15
@@ -45,9 +49,9 @@ jobs:
         uses: actions/cache@v2.1.4
         with:
           path: node_modules
-          key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
       - name: Build Code
         run: yarn build
       - name: Upload API bundle to artifacts
@@ -56,16 +60,13 @@ jobs:
           name: api_bundle
           path: generated/api/
           if-no-files-found: error
-      - name: Get GitHub Branch Name
-        id: get_branch_name
-        run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
-    outputs:
-      branch_name: ${{ steps.get_branch_name.outputs.branch_name }}
 
-  Dockerhub:
-    name: Publish image to Dockerhub
+  Publish:
+    name: Publish image to container registries
     runs-on: ubuntu-latest
-    if: "!(contains(needs.pre_ci.outputs.commit_message, '[skip ci]') ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))"
+    if: >-
+      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
+      ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))
     needs: [pre_ci, Build]
     steps:
       - name: Checkout Project
@@ -75,32 +76,25 @@ jobs:
         with:
           name: api_bundle
           path: generated/api/
-      - name: Publish to Dockerhub
-        uses: elgohr/Publish-Docker-Github-Action@master
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v1.1.2
+      - name: Login to DockerHub
+        uses: docker/login-action@v1.8.0
         with:
-          name: favware/graphql-pokemon
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: '${{ needs.build.outputs.branch_name }}'
-
-  Github-Package-Registry-Docker:
-    name: Publish image to Github Package Registry
-    runs-on: ubuntu-latest
-    if: "!(contains(needs.pre_ci.outputs.commit_message, '[skip ci]') ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))"
-    needs: [pre_ci, Build]
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Download build bundle artifact
-        uses: actions/download-artifact@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
         with:
-          name: api_bundle
-          path: generated/api/
-      - name: Publish to Github Package Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push Docker image
+        id: docker_build
+        uses: docker/build-push-action@v2.4.0
         with:
-          name: favware/graphql-pokemon/graphql-pokemon
-          username: Favware-bot
-          password: ${{ secrets.BOT_TOKEN }}
-          tags: '${{ needs.build.outputs.branch_name }}'
-          registry: docker.pkg.github.com
+          push: true
+          context: .
+          tags: |
+            favware/graphql-pokemon:${{ needs.pre_ci.outputs.branch_name }}
+            ghcr.io/favware/graphql-pokemon:${{ needs.pre_ci.outputs.branch_name }}

@@ -36,8 +36,8 @@
     "graphql": "^15.5.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.0.1",
-    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@discordjs/collection": "^0.1.6",
     "@graphql-codegen/cli": "^1.21.3",
     "@graphql-codegen/schema-ast": "^1.18.1",
@@ -50,7 +50,7 @@
     "@types/jest": "^26.0.22",
     "@types/koa": "^2.13.1",
     "@types/node": "^14.14.37",
-    "@types/node-fetch": "^2.5.8",
+    "@types/node-fetch": "^2.5.10",
     "apollo-server-koa": "^2.22.2",
     "class-validator": "^0.13.1",
     "colorette": "^1.2.2",

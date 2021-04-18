@@ -47,7 +47,7 @@ jobs:
         with:
           node-version: 15
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
@@ -99,7 +99,7 @@ jobs:
         with:
           node-version: 15
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
@@ -121,7 +121,7 @@ jobs:
         with:
           node-version: 15
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
@@ -196,7 +196,7 @@ jobs:
         with:
           node-version: 15
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
@@ -231,7 +231,7 @@ jobs:
         with:
           node-version: 15
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
@@ -294,7 +294,7 @@ jobs:
         with:
           name: changelog_bundle
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
@@ -335,7 +335,7 @@ jobs:
         with:
           name: changelog_bundle
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.4
+        uses: actions/cache@v2.1.5
         with:
           path: node_modules
           key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}

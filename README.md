@@ -53,10 +53,10 @@
 
 - Fully generated client-side TypeScript typings published to
   - [npm] as `@favware/graphql-pokemon`
-  - [GitHub Package Registry] as `@favware/graphql-pokemon`
+  - [GitHub Package Registry][ghcr_npm] as `@favware/graphql-pokemon`
 - Docker images of the API for private hosting published to
   - [Dockerhub] as `favware/graphql-pokemon`
-  - [GitHub Package Registry] as `docker.pkg.github.com/favware/graphql-pokemon/graphql-pokemon`
+  - [GitHub Package Registry][ghcr_docker] as `ghcr.io/favware/graphql-pokemon:latest`
 - Provides information about various assets in Pokémon
   - Pokédex
   - Items
@@ -281,6 +281,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [the graphql playground on the api]: https://graphqlpokemon.favware.tech
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
-[github package registry]: https://github.com/favware/graphql-pokemon/packages
+[ghcr_npm]: https://github.com/favware/graphql-pokemon/packages/199047
+[ghcr_docker]: https://github.com/orgs/favware/packages/container/package/graphql-pokemon
 [dockerhub]: https://hub.docker.com/r/favware/graphql-pokemon
 [dexa]: https://github.com/favware/dexa

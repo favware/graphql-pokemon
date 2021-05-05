@@ -1,12 +1,20 @@
 <div align="center">
-  <p>
-  <a href="https://graphqlpokemon.favware.tech/"><img style="height: 200px" src="https://cdn.favware.tech/img/gqlp.png" height="200" alt="logo"/></a>
-  </p>
 
-  <p>
-<h1> GraphQL-Pokemon </h1>
-<h3> Extensive Pokémon GraphQL API!</h3>
-  </p>
+<img height="200" src="https://cdn.favware.tech/img/gqlp.png" alt="ArchAngel"/>
+
+# GraphQL-Pokemon
+
+**Extensive Pokémon GraphQL API!**
+
+[![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon)](https://github.com/favware/graphql-pokemon/blob/main/LICENSE)
+[![Depfu](https://badges.depfu.com/badges/5c35c8f7e714ce96c424120a1a5f5b1b/count.svg)](https://depfu.com/github/favware/graphql-pokemon?project_id=11729)
+
+[![Continuous Deployment](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Deployment/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Deployment")
+[![Continuous Integration](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Integration/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Integration")
+[![Automatic Data Update](https://github.com/favware/graphql-pokemon/workflows/Automatic%20Data%20Update/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Automatic+Data+Update")
+[![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=TypeScript%20API%20Typings%20Version&logo=npm)](https://www.npmjs.com/package/@favware/graphql-pokemon)
+
+[![Support Server](https://discord.com/api/guilds/512303595966824458/embed.png?style=banner2)](https://join.favware.tech)
 
 </div>
 
@@ -14,6 +22,7 @@
 
 **Table of Contents**
 
+- [GraphQL-Pokemon](#graphql-pokemon)
 - [Installation](#installation)
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
@@ -22,28 +31,8 @@
   - [Using `Apollo Client React`](#using-apollo-client-react)
 - [Meta](#meta)
   - [License](#license)
-  - [Buy us a donut](#buy-us-a-donut)
+  - [Buy us some doughnuts](#buy-us-some-doughnuts)
   - [Contributors ✨](#contributors-%E2%9C%A8)
-
----
-
-**Project Status**
-
-[![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon?logo=github&style=flat-square)](https://github.com/favware/graphql-pokemon/blob/main/LICENSE.md)
-[![Continuous Deployment](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Deployment/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Deployment")
-[![Continuous Integration](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Integration/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Integration")
-[![Automatic Data Update](https://github.com/favware/graphql-pokemon/workflows/Automatic%20Data%20Update/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Automatic+Data+Update")
-
-**Social Media and Donations**
-
-[![Join Discord server](https://img.shields.io/discord/512303595966824458?color=697EC4&label=Join%20Discord%20Server&logo=discord&logoColor=FDFEFE&style=flat-square)](https://join.favware.tech)
-[![Twitter Follow](https://img.shields.io/twitter/follow/favna_?label=Follow%20@Favna_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/Favna_/follow)
-[![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://donate.favware.tech/patreon)](https://donate.favware.tech/patreon)
-[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://donate.favware.tech/paypal)](https://donate.favware.tech/paypal)
-
-**Typings**
-
-[![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=TypeScript%20version&logo=npm&style=flat-square)](https://www.npmjs.com/package/@favware/graphql-pokemon)
 
 ---
 

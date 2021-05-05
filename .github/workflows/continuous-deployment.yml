@@ -138,9 +138,11 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Configure Git
         run: |
-          git remote set-url origin "https://${GITHUB_USER}:${{ secrets.BOT_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --local user.email ${{ secrets.BOT_EMAIL }}
           git config --local user.name ${{ secrets.BOT_USERNAME }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
       - name: Bump semver
         if: "!contains(needs.pre_ci.outputs.commit_message, '[skip bump]')"
         run: yarn sversion

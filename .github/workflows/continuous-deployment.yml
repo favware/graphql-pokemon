@@ -87,11 +87,6 @@ jobs:
       ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]')
       ||github.event.inputs.skip-publish == true)
     needs: [pre_ci, Publish]
-    services:
-      graphql-pokemon:
-        image: ghcr.io/favware/graphql-pokemon:latest
-        ports:
-          - 4000:4000
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -107,7 +102,10 @@ jobs:
       - name: Install NodeJS Dependencies
         run: yarn --frozen-lockfile
       - name: Generate GraphQL Schema code
-        run: yarn codegen
+        run: |
+          docker container run --rm --name pokedex -d --expose 4000 -p 4000:8080 ghcr.io/favware/graphql-pokemon:latest \
+          && sleep 5 \
+          && yarn codegen
       - name: Upload typescript bundle to artifacts
         uses: actions/upload-artifact@v2
         with:

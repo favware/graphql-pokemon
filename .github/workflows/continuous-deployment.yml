@@ -181,7 +181,7 @@ jobs:
       !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
       ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]')
       ||github.event.inputs.skip-publish == true)
-    needs: [pre_ci, Publish]
+    needs: [pre_ci]
     services:
       postgres:
         image: ghcr.io/favware/graphql-pokemon:latest

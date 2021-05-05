@@ -88,15 +88,15 @@ jobs:
       ||github.event.inputs.skip-publish == true)
     needs: [pre_ci, Publish]
     services:
-      postgres:
+      graphql-pokemon:
         image: ghcr.io/favware/graphql-pokemon:latest
         options: >-
-          --health-cmd "curl --fail http://localhost:8080 || exit 1"
+          --health-cmd "curl --fail http://localhost:4000 || exit 1"
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
         ports:
-          - 8080:8080
+          - 4000:4000
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

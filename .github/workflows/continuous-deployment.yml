@@ -9,6 +9,11 @@ on:
       - '.github/workflows/continuous-deployment.yml'
       - 'README.md'
       - 'Dockerfile'
+  workflow_dispatch:
+    inputs:
+      skip-publish:
+        description: 'Whether to skip publishing typings to NPM'
+        required: false
 
 jobs:
   pre_ci:
@@ -174,7 +179,8 @@ jobs:
     runs-on: ubuntu-latest
     if: >-
       !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]'))
+      ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]')
+      ||github.event.inputs.skip-publish == true)
     needs: [pre_ci, Publish]
     steps:
       - name: Checkout Project

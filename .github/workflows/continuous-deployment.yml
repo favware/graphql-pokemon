@@ -231,18 +231,17 @@ jobs:
           key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
         run: yarn --frozen-lockfile
-      - name: Configure Git
-        run: |
-          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
-          git config --global user.email "${GITHUB_EMAIL}";
-          git config --global user.name "${GITHUB_USER}";
+      - name: Bump semver
+        if: "!contains(needs.pre_ci.outputs.commit_message, '[skip bump]')"
         env:
           GITHUB_ACTOR: Favware-bot
           GITHUB_EMAIL: favwarebot@gmail.com
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
-      - name: Bump semver
-        if: "!contains(needs.pre_ci.outputs.commit_message, '[skip bump]')"
-        run: yarn sversion
+        run: |
+          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+          git config --local user.email "${GITHUB_EMAIL}";
+          git config --local user.name "${GITHUB_USER}";
+          yarn sversion
       - name: Store bumped package.json
         uses: actions/upload-artifact@v2
         with:
@@ -257,7 +256,15 @@ jobs:
           if-no-files-found: error
       - name: Push changes
         if: "!contains(needs.pre_ci.outputs.commit_message, '[skip bump]')"
-        run: git push --follow-tags origin main
+        run: |
+          git remote set-url origin "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git";
+          git config --local user.email "${GITHUB_EMAIL}";
+          git config --local user.name "${GITHUB_USER}";
+          git push --follow-tags origin main
+        env:
+          GITHUB_ACTOR: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
   NPMPublish:
     name: Publishing release to NPM

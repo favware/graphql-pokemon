@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.2.0](https://github.com/favware/graphql-pokemon/compare/v5.1.2...v5.2.0) (2021-05-05)
+
+
+### Features
+
+* add gmime and gmrmime as aliases for Galarian Mr. Mime ([7a750a7](https://github.com/favware/graphql-pokemon/commit/7a750a76084e27bd428c9b490469aef9f2b70f21))
+
 ### [5.1.2](https://github.com/favware/graphql-pokemon/compare/v5.1.1...v5.1.2) (2021-02-20)
 
 

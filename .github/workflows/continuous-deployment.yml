@@ -90,11 +90,6 @@ jobs:
     services:
       graphql-pokemon:
         image: ghcr.io/favware/graphql-pokemon:latest
-        options: >-
-          --health-cmd "curl --fail http://localhost:4000 || exit 1"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
         ports:
           - 4000:4000
     steps:

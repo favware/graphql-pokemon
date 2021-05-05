@@ -105,7 +105,7 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
       - name: Install NodeJS Dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
       - name: Generate GraphQL Schema code
         run: yarn codegen
       - name: Upload typescript bundle to artifacts

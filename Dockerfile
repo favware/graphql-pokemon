@@ -13,9 +13,6 @@ RUN yarn install --production=false --frozen-lockfile --link-duplicates
 
 RUN yarn build
 
-ENV PORT 8080
-EXPOSE ${PORT}
-
 USER node
 
 CMD [ "dumb-init", "yarn", "start"]

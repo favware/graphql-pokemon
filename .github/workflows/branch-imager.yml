@@ -47,10 +47,12 @@ jobs:
           node-version: 16
       - name: Restore CI Cache
         uses: actions/cache@v2.1.5
+        id: cache-restore
         with:
           path: node_modules
           key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
-      - name: Install NodeJS Dependencies
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn --frozen-lockfile
       - name: Build Code
         run: yarn build

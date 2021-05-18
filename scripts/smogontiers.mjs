@@ -38,10 +38,10 @@ const { FormatsData } = await importFileFromWeb({
 });
 
 const output = {};
-// eslint-disable-next-line guard-for-in
-for (const mon in FormatsData) {
-  const tier = FormatsData[mon].isNonstandard || FormatsData[mon].tier;
-  output[mon] = tier || 'Refer to base form / unknown';
+
+for (const [pokemon, data] of Object.entries(FormatsData)) {
+  const tier = data.isNonstandard || data.tier;
+  output[pokemon] = tier || 'Refer to base form / unknown';
 }
 
 const writePromises = [];

@@ -20,7 +20,7 @@ describe('getPokemonDetailsByName', () => {
   const getPokemonDetailsByName = gql`
     ${dexDetailsFragment}
 
-    query($pokemon: Pokemon!) {
+    query ($pokemon: Pokemon!) {
       getPokemonDetailsByName(pokemon: $pokemon) {
         ...dexdetails
       }
@@ -54,7 +54,7 @@ describe('getPokemonDetails', () => {
   const getPokemonDetails = gql`
     ${dexDetailsFragment}
 
-    query($pokemon: Pokemon!) {
+    query ($pokemon: Pokemon!) {
       getPokemonDetails(pokemon: $pokemon) {
         ...dexdetails
       }
@@ -87,7 +87,7 @@ describe('getPokemonDetailsByFuzzy', () => {
   const getPokemonDetailsByFuzzy = gql`
     ${dexDetailsFragment}
 
-    query($pokemon: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($pokemon: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getPokemonDetailsByFuzzy(pokemon: $pokemon, skip: $skip, take: $take, reverse: $reverse) {
         ...dexdetails
       }
@@ -158,7 +158,7 @@ describe('getDexEntries', () => {
   const getDexEntries = gql`
     ${dexEntriesFragment}
 
-    query($skip: Int, $take: Int, $reverse: Boolean, $pokemon: String!) {
+    query ($skip: Int, $take: Int, $reverse: Boolean, $pokemon: String!) {
       getDexEntries(pokemon: $pokemon, skip: $skip, take: $take, reverse: $reverse) {
         ...dexentries
       }
@@ -207,7 +207,7 @@ describe('getDexEntries', () => {
 
 describe('getDexEntryBySpeciesName', () => {
   const getDexEntryBySpeciesName = gql`
-    query($pokemon: Pokemon!) {
+    query ($pokemon: Pokemon!) {
       getDexEntryBySpeciesName(pokemon: $pokemon)
     }
   `;
@@ -236,7 +236,7 @@ describe('getDexEntryBySpeciesName', () => {
 
 describe('getDexEntryByDexNumber', () => {
   const getDexEntryByDexNumber = gql`
-    query($pokemonNr: Float!) {
+    query ($pokemonNr: Float!) {
       getDexEntryByDexNumber(num: $pokemonNr)
     }
   `;

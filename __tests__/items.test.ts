@@ -4,7 +4,7 @@ import type { DataResponse } from './testUtils/types';
 
 describe('getItemDetailsByName', () => {
   const getItemDetailsByName = gql`
-    query($item: Items!) {
+    query ($item: Items!) {
       getItemDetailsByName(item: $item) {
         name
       }
@@ -44,7 +44,7 @@ describe('getItemDetailsByName', () => {
 
 describe('getItemDetailsByFuzzy', () => {
   const getItemDetailsByFuzzy = gql`
-    query($item: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($item: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getItemDetailsByFuzzy(item: $item, skip: $skip, take: $take, reverse: $reverse) {
         name
         sprite
@@ -118,7 +118,7 @@ describe('getItemDetailsByFuzzy', () => {
 
 describe('getItemByFuzzy', () => {
   const getItemByFuzzy = gql`
-    query($item: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($item: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getItemByFuzzy(item: $item, skip: $skip, take: $take, reverse: $reverse)
     }
   `;
@@ -183,7 +183,7 @@ describe('getItemByFuzzy', () => {
 
 describe('getItemByName', () => {
   const getItemByName = gql`
-    query($item: Items!) {
+    query ($item: Items!) {
       getItemByName(item: $item)
     }
   `;

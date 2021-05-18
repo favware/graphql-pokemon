@@ -4,7 +4,7 @@ import type { DataResponse } from './testUtils/types';
 
 describe('getMoveDetailsByName', () => {
   const getMoveDetailsByName = gql`
-    query($move: Moves!) {
+    query ($move: Moves!) {
       getMoveDetailsByName(move: $move) {
         name
       }
@@ -34,7 +34,7 @@ describe('getMoveDetailsByName', () => {
 
 describe('getMoveDetailsByFuzzy', () => {
   const getMoveDetailsByFuzzy = gql`
-    query($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getMoveDetailsByFuzzy(move: $move, skip: $skip, take: $take, reverse: $reverse) {
         name
       }
@@ -102,7 +102,7 @@ describe('getMoveDetailsByFuzzy', () => {
 
 describe('getMoveByFuzzy', () => {
   const getMoveByFuzzy = gql`
-    query($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($move: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getMoveByFuzzy(move: $move, skip: $skip, take: $take, reverse: $reverse)
     }
   `;
@@ -167,7 +167,7 @@ describe('getMoveByFuzzy', () => {
 
 describe('getMoveByName', () => {
   const getMoveByName = gql`
-    query($move: Moves!) {
+    query ($move: Moves!) {
       getMoveByName(move: $move)
     }
   `;

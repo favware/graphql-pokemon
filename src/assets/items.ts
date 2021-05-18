@@ -1630,8 +1630,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: "King's Rock",
       gen: 2,
-      desc:
-        "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
+      desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
 
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
     }
@@ -1692,8 +1691,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Leaf Stone',
       gen: 1,
-      desc:
-        'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
+      desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -2122,8 +2120,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Moon Stone',
       gen: 1,
-      desc:
-        'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
+      desc: 'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -2668,8 +2665,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Razor Fang',
       gen: 4,
-      desc:
-        "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
+      desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
       isNonstandard: 'Past'
     }
@@ -3224,8 +3220,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Sun Stone',
       gen: 2,
-      desc:
-        'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
+      desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -3392,8 +3387,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Utility Umbrella',
       gen: 8,
-      desc:
-        'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
+      desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
       shortDesc: 'The holder ignores rain- and sun-based effects.'
     }
   ],
@@ -3436,8 +3430,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Water Stone',
       gen: 1,
-      desc:
-        'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
+      desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
       shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
@@ -3920,8 +3913,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     'droppeditem',
     {
       name: 'Dropped Item',
-      desc:
-        "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
+      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
       shortDesc: 'The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a boy or girl.',
       gen: 5,
       specialSprite: 'https://www.serebii.net/itemdex/sprites/droppeditem.png',
@@ -3942,8 +3934,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     'eggcard',
     {
       name: 'Egg Card',
-      desc:
-        'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
+      desc: 'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
       shortDesc: 'Might be used at the Pokémon Communication Centre.',
       gen: 2,
       keyItem: true,
@@ -5268,8 +5259,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       name: 'Sparkling Stone',
       gen: 7,
-      desc:
-        'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
+      desc: 'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/sparklingstone.png',
       keyItem: true
     }

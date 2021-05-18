@@ -4,7 +4,7 @@ import type { DataResponse } from './testUtils/types';
 
 describe('getAbilityDetailsByName', () => {
   const getAbilityDetailsByName = gql`
-    query($ability: Abilities!) {
+    query ($ability: Abilities!) {
       getAbilityDetailsByName(ability: $ability) {
         name
       }
@@ -34,7 +34,7 @@ describe('getAbilityDetailsByName', () => {
 
 describe('getAbilityDetailsByFuzzy', () => {
   const getAbilityDetailsByFuzzy = gql`
-    query($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getAbilityDetailsByFuzzy(ability: $ability, skip: $skip, take: $take, reverse: $reverse) {
         name
       }
@@ -104,7 +104,7 @@ describe('getAbilityDetailsByFuzzy', () => {
 
 describe('getAbilityByFuzzy', () => {
   const getAbilityByFuzzy = gql`
-    query($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
+    query ($ability: String!, $skip: Int, $take: Int, $reverse: Boolean) {
       getAbilityByFuzzy(ability: $ability, skip: $skip, take: $take, reverse: $reverse)
     }
   `;
@@ -169,7 +169,7 @@ describe('getAbilityByFuzzy', () => {
 
 describe('getAbilityByName', () => {
   const getAbilityByName = gql`
-    query($ability: Abilities!) {
+    query ($ability: Abilities!) {
       getAbilityByName(ability: $ability)
     }
   `;

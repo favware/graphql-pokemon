@@ -47,7 +47,7 @@ describe('getPokemonLearnset', () => {
     ${movesFragment}
     ${entryFragment}
 
-    query($pokemon: Pokemon!, $moves: [Moves!]!, $generation: Int) {
+    query ($pokemon: Pokemon!, $moves: [Moves!]!, $generation: Int) {
       getPokemonLearnset(pokemon: $pokemon, moves: $moves, generation: $generation) {
         ...entry
       }
@@ -158,7 +158,7 @@ describe('getPokemonLearnsetByFuzzy', () => {
     ${movesFragment}
     ${entryFragment}
 
-    query($pokemon: String!, $moves: [String!]!, $generation: Int) {
+    query ($pokemon: String!, $moves: [String!]!, $generation: Int) {
       getPokemonLearnsetByFuzzy(pokemon: $pokemon, moves: $moves, generation: $generation) {
         ...entry
       }

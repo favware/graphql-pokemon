@@ -17,7 +17,7 @@ describe('getTypeMatchup', () => {
   const getTypeMatchup = gql`
     ${typeEntryFragment}
 
-    query($types: [Types!]!) {
+    query ($types: [Types!]!) {
       getTypeMatchup(types: $types) {
         attacking {
           ...typeentry
@@ -75,7 +75,7 @@ describe('getTypeMatchup', () => {
 
 describe('getTypeByName', () => {
   const getTypeByName = gql`
-    query($type: Types!) {
+    query ($type: Types!) {
       getTypeByName(type: $type)
     }
   `;

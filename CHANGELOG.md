@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.3.0](https://github.com/favware/graphql-pokemon/compare/v5.2.0...v5.3.0) (2021-05-18)
+
+
+### Features
+
+* **dex:** add `getPokemonDetailsByNumber` query ([ec861fa](https://github.com/favware/graphql-pokemon/commit/ec861fae6f4db53623a28a55e1297de137379076))
+
+
+### Bug Fixes
+
+* **cap data:** add missing `miasmite` ([16624d1](https://github.com/favware/graphql-pokemon/commit/16624d1cd1788eeb60cb6c2e0a4175b891df4240))
+* **data:** move missingno to Gen 1 ([bb2a13b](https://github.com/favware/graphql-pokemon/commit/bb2a13be9370dd818d80012d2c47b7dd3c2a66dc))
+* **data:** update descriptions for various moves and abilities ([5b628a4](https://github.com/favware/graphql-pokemon/commit/5b628a403e0e84375ca1a07d4a6a0540c3eb1485))
+* **dex:** ensure common form prefixes are also resolved ([d2fbd3e](https://github.com/favware/graphql-pokemon/commit/d2fbd3e0461febb71a504cdbc62b5108b3886c05))
+
 ## [5.2.0](https://github.com/favware/graphql-pokemon/compare/v5.1.2...v5.2.0) (2021-05-05)
 
 

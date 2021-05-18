@@ -1,6 +1,7 @@
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 import ExactPokemonPaginatedArgs, { pokemons } from '../arguments/ExactPokemonPaginatedArgs';
+import PokemonNumberPaginatedArgs from '../arguments/PokemonNumberPaginatedArgs';
 import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
 import { pokedexAliases } from '../assets/aliases';
 import DexService from '../services/DexService';
@@ -17,6 +18,32 @@ export default class DexResolver {
 
   public constructor() {
     this.dexService = new DexService();
+  }
+
+  @Query(() => DexDetails, {
+    description: [
+      'Gets details on a single Pokémon based on National Pokédex number',
+      'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
+      'Reversal is applied before pagination!'
+    ].join('\n')
+  })
+  public async getPokemonDetailsByNumber(
+    @Args() { pokemon, skip, take, reverse }: PokemonNumberPaginatedArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<unknown>
+  ): Promise<DexDetails> {
+    const entry = this.dexService.findByNum(pokemon);
+
+    if (!entry) {
+      throw new Error(`No Pokémon found for ${pokemon}`);
+    }
+
+    const detailsEntry = await this.dexService.findBySpeciesWithDetails(entry, skip, take, requestedFields, reverse);
+
+    if (detailsEntry === undefined) {
+      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
+    }
+
+    return detailsEntry;
   }
 
   @Query(() => DexDetails, {

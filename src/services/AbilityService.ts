@@ -1,13 +1,13 @@
+import AbilityPaginatedArgs from '#arguments/AbilityPaginatedArgs';
+import abilities from '#assets/abilities';
+import AbilityEntry from '#structures/AbilityEntry';
+import { addPropertyToClass } from '#utils/addPropertyToClass';
+import FuzzySearch from '#utils/FuzzySearch';
+import type GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
+import Util from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
-import AbilityPaginatedArgs from '../arguments/AbilityPaginatedArgs';
-import abilities from '../assets/abilities';
-import AbilityEntry from '../structures/AbilityEntry';
-import { addPropertyToClass } from '../utils/addPropertyToClass';
-import FuzzySearch from '../utils/FuzzySearch';
-import type GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
-import Util from '../utils/util';
 
 export default class AbilityService {
   public findByName(@Arg('name') name: string): Pokemon.Ability | undefined {

@@ -1,5 +1,5 @@
+import PaginatedArgs from '#arguments/PaginatedArgs';
 import { ArgsType, Field } from 'type-graphql';
-import PaginatedArgs from './PaginatedArgs';
 
 @ArgsType()
 export default class PokemonPaginatedArgs extends PaginatedArgs {

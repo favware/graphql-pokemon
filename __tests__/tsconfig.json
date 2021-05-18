@@ -2,7 +2,19 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "noEmit": true,
-    "incremental": false
+    "incremental": false,
+    "baseUrl": ".",
+    "paths": {
+      "#arguments/*": ["../src/arguments/*"],
+      "#assets/*": ["../src/assets/*"],
+      "#jsonAssets/*.json": ["../src/assets/*.json"],
+      "#dexdata/*": ["../src/assets/pokedex-data/*"],
+      "#resolvers/*": ["../src/resolvers/*"],
+      "#services/*": ["../src/services/*"],
+      "#structures/*": ["../src/structures/*"],
+      "#utils/*": ["../src/utils/*.js"],
+      "#root/*": ["../src/*"]
+    }
   },
   "references": [{ "path": "../src" }],
   "include": ["./**/*.ts"]

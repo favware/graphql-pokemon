@@ -1,4 +1,4 @@
-import GraphQLCollection from '../utils/GraphQLCollection';
+import GraphQLCollection from '#utils/GraphQLCollection';
 
 /** Aliases for Pokémon */
 export const pokedexAliases = new GraphQLCollection<string, string>([

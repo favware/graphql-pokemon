@@ -1,13 +1,13 @@
+import MovePaginatedArgs from '#arguments/MovePaginatedArgs';
+import moves from '#assets/moves';
+import MoveEntry from '#structures/MoveEntry';
+import { addPropertyToClass } from '#utils/addPropertyToClass';
+import FuzzySearch from '#utils/FuzzySearch';
+import type GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
+import Util from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
-import MovePaginatedArgs from '../arguments/MovePaginatedArgs';
-import moves from '../assets/moves';
-import MoveEntry from '../structures/MoveEntry';
-import { addPropertyToClass } from '../utils/addPropertyToClass';
-import FuzzySearch from '../utils/FuzzySearch';
-import type GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
-import Util from '../utils/util';
 
 export default class MoveService {
   public findByName(@Arg('name') name: string): Pokemon.Move | undefined {
@@ -63,18 +63,18 @@ export default class MoveService {
   /**
    * Converts basePower and zMovePower to the correct Z-Move power, using datamined convertion table seen below.
    *
-   * | Base move power  | Z-Move power  |
-   * |-----------------  |--------------  |
-   * | 0-55              | 100            |
-   * | 60-65            | 120            |
-   * | 70-75            | 140            |
-   * | 80-85            | 160            |
-   * | 90-95            | 175            |
-   * | 100              | 180            |
-   * | 110              | 185            |
-   * | 120-125          | 190            |
-   * | 130              | 195            |
-   * | 140+              | 200            |
+   * | Base move power  | Z-Move power |
+   * |------------------|--------------|
+   * | 0-55             | 100          |
+   * | 60-65            | 120          |
+   * | 70-75            | 140          |
+   * | 80-85            | 160          |
+   * | 90-95            | 175          |
+   * | 100              | 180          |
+   * | 110              | 185          |
+   * | 120-125          | 190          |
+   * | 130              | 195          |
+   * | 140+             | 200          |
    * @param basePower The basepower of a move
    * @param zMovePower The z-move power of a move, if specified it is preferred.
    */

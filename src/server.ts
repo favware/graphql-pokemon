@@ -1,19 +1,19 @@
+import { abilities } from '#arguments/AbilityPaginatedArgs';
+import { pokemons } from '#arguments/ExactPokemonPaginatedArgs';
+import { items } from '#arguments/ItemPaginatedArgs';
+import { moves } from '#arguments/MovePaginatedArgs';
+import { types } from '#arguments/TypeArgs';
+import AbilityResolver from '#resolvers/AbilityResolver';
+import DexResolver from '#resolvers/DexResolver';
+import ItemResolver from '#resolvers/ItemResolver';
+import LearnsetResolver from '#resolvers/LearnsetResolver';
+import MoveResolver from '#resolvers/MoveResolver';
+import TypeResolver from '#resolvers/TypeResolver';
+import tabs from '#root/defaultPlaygroundTabs';
 import { ApolloServer } from 'apollo-server-koa';
 import type { GraphQLSchema } from 'graphql';
 import Koa from 'koa';
 import { buildSchemaSync, registerEnumType } from 'type-graphql';
-import { abilities } from './arguments/AbilityPaginatedArgs';
-import { pokemons } from './arguments/ExactPokemonPaginatedArgs';
-import { items } from './arguments/ItemPaginatedArgs';
-import { moves } from './arguments/MovePaginatedArgs';
-import { types } from './arguments/TypeArgs';
-import tabs from './defaultPlaygroundTabs';
-import AbilityResolver from './resolvers/AbilityResolver';
-import DexResolver from './resolvers/DexResolver';
-import ItemResolver from './resolvers/ItemResolver';
-import LearnsetResolver from './resolvers/LearnsetResolver';
-import MoveResolver from './resolvers/MoveResolver';
-import TypeResolver from './resolvers/TypeResolver';
 
 export const buildGqlSchema = (): GraphQLSchema => {
   registerEnumType(abilities, {

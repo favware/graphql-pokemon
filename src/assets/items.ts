@@ -1,5 +1,5 @@
-import GraphQLCollection from '../utils/GraphQLCollection';
-import type { Pokemon } from '../utils/pokemon';
+import GraphQLCollection from '#utils/GraphQLCollection';
+import type { Pokemon } from '#utils/pokemon';
 
 /** The item in Pokémon */
 export default new GraphQLCollection<string, Pokemon.Item>([

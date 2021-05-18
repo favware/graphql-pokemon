@@ -6,16 +6,28 @@
   "license": "MIT",
   "types": "generated/ts/graphql-pokemon.d.ts",
   "main": "generated/ts/graphql-pokemon.d.ts",
+  "type": "module",
   "exports": {
     "import": "./generated/ts/graphql-pokemon.d.ts",
     "require": "./generated/ts/graphql-pokemon.d.ts"
+  },
+  "imports": {
+    "#arguments/*": "./generated/api/arguments/*.js",
+    "#assets/*": "./generated/api/assets/*.js",
+    "#jsonAssets/*": "./generated/api/assets/*",
+    "#dexdata/*": "./generated/api/assets/pokedex-data/*.js",
+    "#resolvers/*": "./generated/api/resolvers/*.js",
+    "#services/*": "./generated/api/services/*.js",
+    "#structures/*": "./generated/api/structures/*.js",
+    "#utils/*": "./generated/api/utils/*.js",
+    "#root/*": "./generated/api/*.js"
   },
   "homepage": "https://graphqlpokemon.favware.tech/",
   "scripts": {
     "lint": "eslint src scripts __tests__ --ext ts --fix",
     "format": "prettier --write --loglevel=warn {src,scripts}/**/*.{ts,json}",
     "test": "jest",
-    "start": "node generated/api",
+    "start": "node --experimental-json-modules generated/api/index.js",
     "build": "tsc -b src",
     "watch": "tsc -b src -w",
     "clean": "node scripts/clean.mjs",

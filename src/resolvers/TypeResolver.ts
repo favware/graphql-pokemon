@@ -1,11 +1,11 @@
+import TypeArgs, { types } from '#arguments/TypeArgs';
+import TypeService from '#services/TypeService';
+import TypeMatchups from '#structures/TypeMatchups';
+import { getRequestedFields } from '#utils/getRequestedFields';
+import GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import TypeArgs, { types } from '../arguments/TypeArgs';
-import TypeService from '../services/TypeService';
-import TypeMatchups from '../structures/TypeMatchups';
-import { getRequestedFields } from '../utils/getRequestedFields';
-import GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
 
 @Resolver(TypeMatchups)
 export default class TypeResolver {

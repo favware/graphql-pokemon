@@ -1,13 +1,13 @@
+import LearnsetArgs from '#arguments/LearnsetArgs';
+import LearnsetFuzzyArgs from '#arguments/LearnsetFuzzyArgs';
+import DexService from '#services/DexService';
+import LearnsetService from '#services/LearnsetService';
+import MoveService from '#services/MoveService';
+import LearnsetEntry from '#structures/LearnsetEntry';
+import { getRequestedFields } from '#utils/getRequestedFields';
+import GraphQLSet from '#utils/GraphQLSet';
+import Util from '#utils/util';
 import { Args, Query, Resolver } from 'type-graphql';
-import LearnsetArgs from '../arguments/LearnsetArgs';
-import LearnsetFuzzyArgs from '../arguments/LearnsetFuzzyArgs';
-import DexService from '../services/DexService';
-import LearnsetService from '../services/LearnsetService';
-import MoveService from '../services/MoveService';
-import LearnsetEntry from '../structures/LearnsetEntry';
-import { getRequestedFields } from '../utils/getRequestedFields';
-import GraphQLSet from '../utils/GraphQLSet';
-import Util from '../utils/util';
 
 @Resolver(LearnsetEntry)
 export default class LearnsetResolver {

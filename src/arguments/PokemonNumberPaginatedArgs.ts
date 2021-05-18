@@ -1,6 +1,6 @@
-import { Min, Max } from 'class-validator';
+import PaginatedArgs from '#arguments/PaginatedArgs';
+import { Max, Min } from 'class-validator';
 import { ArgsType, Field, Int } from 'type-graphql';
-import PaginatedArgs from './PaginatedArgs';
 
 @ArgsType()
 export default class PokemonNumberPaginatedArgs extends PaginatedArgs {

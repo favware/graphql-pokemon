@@ -1,11 +1,11 @@
+import TypeArgs, { types } from '#arguments/TypeArgs';
+import typechart from '#assets/typechart';
+import TypeEntry from '#structures/TypeEntry';
+import TypeMatchups from '#structures/TypeMatchups';
+import { addPropertyToClass } from '#utils/addPropertyToClass';
+import GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
 import { Arg, Args } from 'type-graphql';
-import TypeArgs, { types } from '../arguments/TypeArgs';
-import typechart from '../assets/typechart';
-import TypeEntry from '../structures/TypeEntry';
-import TypeMatchups from '../structures/TypeMatchups';
-import { addPropertyToClass } from '../utils/addPropertyToClass';
-import GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
 
 export default class TypeService {
   public findTypeMatchupByName(@Arg('name', () => types) name: string): Pokemon.TypeMatchups | undefined {

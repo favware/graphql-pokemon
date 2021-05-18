@@ -1,6 +1,6 @@
+import PaginatedArgs from '#arguments/PaginatedArgs';
+import itemData from '#assets/items';
 import { ArgsType, Field } from 'type-graphql';
-import itemData from '../assets/items';
-import PaginatedArgs from './PaginatedArgs';
 
 export const items = itemData.enumObject();
 

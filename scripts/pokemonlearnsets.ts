@@ -9,8 +9,8 @@ import { DataJSON, importFileFromWeb, mapToJson, SmogonLearnsetData } from './ut
 const FILE_PREFIX = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
   '',
-  "import GraphQLCollection from '../utils/GraphQLCollection';",
-  "import type { Pokemon } from '../utils/pokemon';",
+  "import GraphQLCollection from '#utils/GraphQLCollection';",
+  "import type { Pokemon } from '#utils/pokemon';",
   '',
   '/** The learnsets in Pokémon */',
   'export default new GraphQLCollection<string, Pokemon.RecordStringArray>('

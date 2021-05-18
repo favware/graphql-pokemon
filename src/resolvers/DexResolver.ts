@@ -1,16 +1,16 @@
+import ExactPokemonPaginatedArgs, { pokemons } from '#arguments/ExactPokemonPaginatedArgs';
+import PokemonNumberPaginatedArgs from '#arguments/PokemonNumberPaginatedArgs';
+import PokemonPaginatedArgs from '#arguments/PokemonPaginatedArgs';
+import { pokedexAliases } from '#assets/aliases';
+import DexService from '#services/DexService';
+import DexDetails from '#structures/DexDetails';
+import DexEntry from '#structures/DexEntry';
+import { getRequestedFields } from '#utils/getRequestedFields';
+import GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
+import Util from '#utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import ExactPokemonPaginatedArgs, { pokemons } from '../arguments/ExactPokemonPaginatedArgs';
-import PokemonNumberPaginatedArgs from '../arguments/PokemonNumberPaginatedArgs';
-import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
-import { pokedexAliases } from '../assets/aliases';
-import DexService from '../services/DexService';
-import DexDetails from '../structures/DexDetails';
-import DexEntry from '../structures/DexEntry';
-import { getRequestedFields } from '../utils/getRequestedFields';
-import GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
-import Util from '../utils/util';
 
 @Resolver(DexDetails)
 export default class DexResolver {

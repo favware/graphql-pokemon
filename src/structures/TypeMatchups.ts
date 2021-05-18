@@ -1,5 +1,5 @@
+import TypeEntry from '#structures/TypeEntry';
 import { Field, ObjectType } from 'type-graphql';
-import TypeEntry from './TypeEntry';
 
 @ObjectType({ description: 'The type matchups for any one or two given types' })
 export default class TypeMatchups {

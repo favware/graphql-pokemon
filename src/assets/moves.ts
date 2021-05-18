@@ -1,6 +1,6 @@
 /* eslint-disable max-len*/
-import GraphQLCollection from '../utils/GraphQLCollection';
-import type { Pokemon } from '../utils/pokemon';
+import GraphQLCollection from '#utils/GraphQLCollection';
+import type { Pokemon } from '#utils/pokemon';
 
 /** The moves in Pokémon */
 export default new GraphQLCollection<string, Pokemon.Move>([

@@ -1,14 +1,14 @@
+import MovePaginatedArgs, { moves } from '#arguments/MovePaginatedArgs';
+import { moveAliases } from '#assets/aliases';
+import MoveService from '#services/MoveService';
+import MoveEntry from '#structures/MoveEntry';
+import { getRequestedFields } from '#utils/getRequestedFields';
+import type GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
+import Util from '#utils/util';
 import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
-import MovePaginatedArgs, { moves } from '../arguments/MovePaginatedArgs';
-import { moveAliases } from '../assets/aliases';
-import MoveService from '../services/MoveService';
-import MoveEntry from '../structures/MoveEntry';
-import { getRequestedFields } from '../utils/getRequestedFields';
-import type GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
-import Util from '../utils/util';
 
 @Resolver(MoveEntry)
 export default class MoveResolver {

@@ -1,15 +1,15 @@
-import { Pokedex } from './pokedex-data';
+import { Pokedex } from '#dexdata/pokedex';
 
-import './pokedex-data/cap';
-import './pokedex-data/gen1';
-import './pokedex-data/gen2';
-import './pokedex-data/gen3';
-import './pokedex-data/gen4';
-import './pokedex-data/gen5';
-import './pokedex-data/gen6';
-import './pokedex-data/gen7';
-import './pokedex-data/gen8';
-import './pokedex-data/pokestar';
+import '#dexdata/cap';
+import '#dexdata/gen1';
+import '#dexdata/gen2';
+import '#dexdata/gen3';
+import '#dexdata/gen4';
+import '#dexdata/gen5';
+import '#dexdata/gen6';
+import '#dexdata/gen7';
+import '#dexdata/gen8';
+import '#dexdata/pokestar';
 
 /** The entire PokéDex of Pokémon */
 export default Pokedex;

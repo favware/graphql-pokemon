@@ -1,18 +1,18 @@
+import PokemonPaginatedArgs from '#arguments/PokemonPaginatedArgs';
+import pokedex from '#assets/pokedex';
+import AbilitiesEntry from '#structures/AbilitiesEntry';
+import DexDetails from '#structures/DexDetails';
+import DexEntry from '#structures/DexEntry';
+import FlavorEntry from '#structures/FlavorEntry';
+import GenderEntry from '#structures/GenderEntry';
+import StatsEntry from '#structures/StatsEntry';
+import { addPropertyToClass } from '#utils/addPropertyToClass';
+import FuzzySearch from '#utils/FuzzySearch';
+import GraphQLSet from '#utils/GraphQLSet';
+import type Pokemon from '#utils/pokemon';
+import Util from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
-import PokemonPaginatedArgs from '../arguments/PokemonPaginatedArgs';
-import pokedex from '../assets/pokedex';
-import AbilitiesEntry from '../structures/AbilitiesEntry';
-import DexDetails from '../structures/DexDetails';
-import DexEntry from '../structures/DexEntry';
-import FlavorEntry from '../structures/FlavorEntry';
-import GenderEntry from '../structures/GenderEntry';
-import StatsEntry from '../structures/StatsEntry';
-import { addPropertyToClass } from '../utils/addPropertyToClass';
-import FuzzySearch from '../utils/FuzzySearch';
-import GraphQLSet from '../utils/GraphQLSet';
-import type Pokemon from '../utils/pokemon';
-import Util from '../utils/util';
 
 export default class DexService {
   private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
@@ -123,11 +123,11 @@ export default class DexService {
     recursingAs: 'preevolutions' | 'evolutions' | false = false
   ): Promise<DexDetails> {
     if (this.flavors === undefined) {
-      this.flavors = (await import('../assets/flavorText.json')).default;
+      this.flavors = (await import('#jsonAssets/flavorText.json')).default;
     }
 
     if (this.tiers === undefined) {
-      this.tiers = (await import('../assets/formats.json')).default;
+      this.tiers = (await import('#jsonAssets/formats.json')).default;
     }
 
     const pokemonData = new DexDetails();

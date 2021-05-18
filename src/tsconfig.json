@@ -3,7 +3,19 @@
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "../generated/api",
+    "baseUrl": ".",
+    "paths": {
+      "#arguments/*": ["./arguments/*"],
+      "#assets/*": ["./assets/*"],
+      "#jsonAssets/*.json": ["./assets/*.json"],
+      "#dexdata/*": ["./assets/pokedex-data/*"],
+      "#resolvers/*": ["./resolvers/*"],
+      "#services/*": ["./services/*"],
+      "#structures/*": ["./structures/*"],
+      "#utils/*": ["./utils/*.js"],
+      "#root/*": ["*"]
+    },
     "composite": true
   },
-  "include": ["./**/*.ts", "./assets/**/*.json"]
+  "include": [".", "./assets/**/*.json"]
 }

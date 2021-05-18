@@ -1,5 +1,5 @@
-import { Pokedex } from './';
-import type { Pokemon } from '../../utils/pokemon';
+import { Pokedex } from '#dexdata/pokedex';
+import type { Pokemon } from '#utils/pokemon';
 
 const entries: [string, Pokemon.DexEntry][] = [
   [

@@ -1,7 +1,7 @@
+import AbilitiesEntry from '#structures/AbilitiesEntry';
+import GenderEntry from '#structures/GenderEntry';
+import StatsEntry from '#structures/StatsEntry';
 import { Field, Float, Int, ObjectType } from 'type-graphql';
-import AbilitiesEntry from './AbilitiesEntry';
-import GenderEntry from './GenderEntry';
-import StatsEntry from './StatsEntry';
 
 @ObjectType({ description: 'A single Pokedex entry' })
 export default class DexEntry {

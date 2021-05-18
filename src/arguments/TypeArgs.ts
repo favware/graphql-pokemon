@@ -1,6 +1,6 @@
+import typechart from '#assets/typechart';
 import { ArrayMaxSize, ArrayMinSize, ArrayUnique } from 'class-validator';
 import { ArgsType, Field } from 'type-graphql';
-import typechart from '../assets/typechart';
 
 export const types = typechart.enumObject();
 

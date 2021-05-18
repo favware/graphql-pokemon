@@ -1,6 +1,6 @@
+import PaginatedArgs from '#arguments/PaginatedArgs';
+import moveData from '#assets/moves';
 import { ArgsType, Field } from 'type-graphql';
-import moveData from '../assets/moves';
-import PaginatedArgs from './PaginatedArgs';
 
 export const moves = moveData.enumObject();
 

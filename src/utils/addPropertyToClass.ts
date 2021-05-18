@@ -1,5 +1,5 @@
 import type { SetIntersection, ValuesType } from 'utility-types';
-import type GraphQLSet from './GraphQLSet';
+import type GraphQLSet from '#utils/GraphQLSet';
 
 export function addPropertyToClass<T, K extends keyof T>(
   classTarget: T,

@@ -1,6 +1,6 @@
 import { Field, Int, ObjectType } from 'type-graphql';
-import DexEntry from './DexEntry';
-import FlavorEntry from './FlavorEntry';
+import DexEntry from '#structures/DexEntry';
+import FlavorEntry from '#structures/FlavorEntry';
 
 @ObjectType({ description: "A Pokémon's details entry" })
 export default class DexDetails extends DexEntry {

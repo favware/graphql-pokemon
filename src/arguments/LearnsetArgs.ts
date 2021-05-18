@@ -1,7 +1,7 @@
+import { pokemons } from '#arguments/ExactPokemonPaginatedArgs';
+import { moves } from '#arguments/MovePaginatedArgs';
 import { ArrayMinSize, ArrayUnique, IsIn } from 'class-validator';
 import { ArgsType, Field, Int } from 'type-graphql';
-import { pokemons } from './ExactPokemonPaginatedArgs';
-import { moves } from './MovePaginatedArgs';
 
 @ArgsType()
 export default class LearnsetArgs {

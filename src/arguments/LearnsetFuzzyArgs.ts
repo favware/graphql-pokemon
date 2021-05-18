@@ -1,6 +1,6 @@
+import LearnsetArgs from '#arguments/LearnsetArgs';
 import { ArrayMinSize, ArrayUnique } from 'class-validator';
 import { ArgsType, Field } from 'type-graphql';
-import LearnsetArgs from './LearnsetArgs';
 
 @ArgsType()
 export default class LearnsetFuzzyArgs extends LearnsetArgs {

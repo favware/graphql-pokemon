@@ -1,5 +1,5 @@
+import { buildGqlSchema } from '#root/server';
 import { graphql, GraphQLSchema } from 'graphql';
-import { buildGqlSchema } from '../../src/server';
 
 type Maybe<T> = T | null;
 

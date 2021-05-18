@@ -1,6 +1,6 @@
+import { formatResponse, gCall, gql } from '#test-utils/testUtils';
+import type { DataResponse } from '#test-utils/types';
 import { GraphQLError } from 'graphql';
-import { formatResponse, gCall, gql } from './testUtils/testUtils';
-import type { DataResponse } from './testUtils/types';
 
 describe('getItemDetailsByName', () => {
   const getItemDetailsByName = gql`

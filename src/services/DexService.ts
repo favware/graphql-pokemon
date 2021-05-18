@@ -426,25 +426,7 @@ export default class DexService {
   }
 
   public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs): Fuse.FuseResult<Pokemon.DexEntry>[] {
-    switch (pokemon.split(' ')[0]) {
-      case 'mega':
-        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
-        break;
-      case 'gigantamax':
-      case 'gmax':
-        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-gmax`;
-        break;
-      case 'alola':
-      case 'alolan':
-        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-alola`;
-        break;
-      case 'galar':
-      case 'galarian':
-        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-galar`;
-        break;
-      default:
-        break;
-    }
+    pokemon = this.parseFormeIdentifiers(pokemon);
 
     const fuzzyResult = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3 }).runFuzzy(pokemon);
     if (!fuzzyResult.length) {
@@ -523,5 +505,34 @@ export default class DexService {
 
   private parseBaseStatsTotal(baseStats: Pokemon.Stats) {
     return baseStats.hp + baseStats.atk + baseStats.def + baseStats.spa + baseStats.spd + baseStats.spe;
+  }
+
+  private parseFormeIdentifiers(pokemon: string) {
+    switch (pokemon.split(' ')[0]) {
+      case 'mega':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
+        break;
+      case 'gigantamax':
+      case 'gmax':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-gmax`;
+        break;
+      case 'alola':
+      case 'alolan':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-alola`;
+        break;
+      case 'galar':
+      case 'galarian':
+        pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-galar`;
+        break;
+      default:
+        break;
+    }
+
+    if (pokemon.startsWith('mega')) pokemon = `${pokemon.substring(4, pokemon.length)}mega`;
+    if (pokemon.startsWith('gmax') || pokemon.startsWith('gigantamax')) pokemon = `${pokemon.substring(4, pokemon.length)}gmax`;
+    if (pokemon.startsWith('alola') || pokemon.startsWith('alolan')) pokemon = `${pokemon.substring(4, pokemon.length)}alola`;
+    if (pokemon.startsWith('galar') || pokemon.startsWith('galarian')) pokemon = `${pokemon.substring(4, pokemon.length)}galar`;
+
+    return pokemon;
   }
 }

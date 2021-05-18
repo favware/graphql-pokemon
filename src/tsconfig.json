@@ -12,7 +12,7 @@
       "#resolvers/*": ["./resolvers/*"],
       "#services/*": ["./services/*"],
       "#structures/*": ["./structures/*"],
-      "#utils/*": ["./utils/*.js"],
+      "#utils/*": ["./utils/*"],
       "#root/*": ["*"]
     },
     "composite": true

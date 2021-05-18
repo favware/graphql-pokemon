@@ -12,10 +12,11 @@
       "#resolvers/*": ["../src/resolvers/*"],
       "#services/*": ["../src/services/*"],
       "#structures/*": ["../src/structures/*"],
-      "#utils/*": ["../src/utils/*.js"],
+      "#utils/*": ["../src/utils/*"],
+      "#test-utils/*": ["./testUtils/*"],
       "#root/*": ["../src/*"]
     }
   },
-  "references": [{ "path": "../src" }],
-  "include": ["./**/*.ts"]
+  "include": [".", "../src/**/*"],
+  "references": [{ "path": "../src" }]
 }

@@ -3049,29 +3049,6 @@ const entries: [string, Pokemon.DexEntry][] = [
     }
   ],
   [
-    'missingno',
-    {
-      species: 'missingno.',
-      num: 0,
-      types: ['Bird', 'Normal'],
-      baseStats: {
-        hp: 33,
-        atk: 136,
-        def: 0,
-        spa: 6,
-        spd: 6,
-        spe: 29
-      },
-      abilities: { first: 'Breaking Your Game' },
-      heightm: 3,
-      weightkg: 1590.8,
-      color: 'Gray',
-      eggGroups: ['Undiscovered'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/afd/missingno.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/afd-shiny/missingno.png'
-    }
-  ],
-  [
     'meltan',
     {
       species: 'meltan',

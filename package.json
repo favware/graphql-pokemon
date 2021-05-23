@@ -61,7 +61,7 @@
     "@sapphire/ts-config": "^2.2.1",
     "@types/jest": "^26.0.23",
     "@types/koa": "^2.13.1",
-    "@types/node": "^15.3.0",
+    "@types/node": "^15.6.0",
     "@types/node-fetch": "^2.5.10",
     "apollo-server-koa": "^2.24.0",
     "class-validator": "^0.13.1",

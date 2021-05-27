@@ -3007,7 +3007,7 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'blacephalon',
     {
-      species: 'bblacephalon',
+      species: 'blacephalon',
       num: 806,
       types: ['Fire', 'Ghost'],
       genderRatio: { male: 0, female: 0 },

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.0](https://github.com/favware/graphql-pokemon/compare/v5.3.0...v5.4.0) (2021-05-27)
+
+
+### Features
+
+* add a whole slew of extra pokemon aliases based on pokemon showdown data ([592e19d](https://github.com/favware/graphql-pokemon/commit/592e19d050b836752a81e65aa82a1ef771c276a4))
+
+
+### Bug Fixes
+
+* ensure spaces are trimmed before and after fuzzy search input for better matches ([0af6583](https://github.com/favware/graphql-pokemon/commit/0af65834b8fccab61a478b88cfab59747ababcbe))
+* **blacephalon:** fixed species name, now fuzzy searching its number will work ([ebe4611](https://github.com/favware/graphql-pokemon/commit/ebe46114302be4b874f53d2cbd53596e2ca3ffd6))
+
 ## [5.3.0](https://github.com/favware/graphql-pokemon/compare/v5.2.0...v5.3.0) (2021-05-18)
 
 

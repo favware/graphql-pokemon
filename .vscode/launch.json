@@ -1,21 +1,19 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "type": "pwa-node",
       "request": "launch",
-      "name": "Debug",
-      "args": ["${workspaceFolder}\\generated\\api\\index.js"],
-      "protocol": "inspector",
+      "runtimeArgs": ["run-script", "start"],
+      "name": "Debugger",
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**", "node_modules/tslib/**"],
       "internalConsoleOptions": "openOnSessionStart",
       "env": {
         "NODE_ENV": "development"
       },
       "console": "internalConsole",
-      "outputCapture": "std"
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/generated/api/**/*.js"]
     }
   ]
 }

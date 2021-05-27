@@ -51,6 +51,15 @@ export default class Util {
   }
 
   /**
+   * Lowercases string and trims spaces
+   * @param str The string to preParse
+   * @returns The same string, lowercased and trimmed of spaces
+   */
+  public static preParseInput(str: string): string {
+    return str.toLowerCase().trim();
+  }
+
+  /**
    * Removes common symbols and spaces from any string replacing it with something else
    * @since 1.0.0
    * @param str The string to get symbols removed from

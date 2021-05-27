@@ -105,8 +105,8 @@ export default class DexResolver {
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
-    const lowerCasedPokemon = pokemon.toLowerCase();
-    let entry = this.dexService.findBySpecies(pokedexAliases.get(lowerCasedPokemon) ?? lowerCasedPokemon);
+    const preParsedPokemon = Util.preParseInput(pokemon);
+    let entry = this.dexService.findBySpecies(pokedexAliases.get(preParsedPokemon) ?? preParsedPokemon);
 
     // If there is no entry from a direct match then try a fuzzy match
     if (!entry) {
@@ -164,6 +164,7 @@ export default class DexResolver {
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their species name' })
   public getDexEntryBySpeciesName(@Arg('pokemon', () => pokemons) pokemon: string): Pokemon.DexEntry {
     const dexEntry = this.dexService.findBySpecies(pokemon);
+
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
     }
@@ -174,6 +175,7 @@ export default class DexResolver {
   @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
   public getDexEntryByDexNumber(@Arg('num') num: number): Pokemon.DexEntry {
     const dexEntry = this.dexService.findByNum(num);
+
     if (dexEntry === undefined) {
       throw new Error(`Failed to get data for Pokémon with dex number: ${num}`);
     }

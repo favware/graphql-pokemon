@@ -29,8 +29,8 @@ export default class AbilityResolver {
     @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
   ): AbilityEntry {
-    const lowerCasedAbility = ability.toLowerCase();
-    let entry = this.abilityService.findByName(abilityAliases.get(lowerCasedAbility) ?? lowerCasedAbility);
+    const preParsedAbility = Util.preParseInput(ability);
+    let entry = this.abilityService.findByName(abilityAliases.get(preParsedAbility) ?? preParsedAbility);
 
     // If there is no entry from a direct match then try a fuzzy match
     if (!entry) {

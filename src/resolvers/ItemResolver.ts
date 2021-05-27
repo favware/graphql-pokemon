@@ -29,8 +29,8 @@ export default class ItemResolver {
     @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
   ): ItemEntry {
-    const lowerCasedItem = item.toLowerCase();
-    let entry = this.itemService.findByName(itemAliases.get(lowerCasedItem) ?? lowerCasedItem);
+    const preParsedItem = Util.preParseInput(item);
+    let entry = this.itemService.findByName(itemAliases.get(preParsedItem) ?? preParsedItem);
 
     // If there is no entry from a direct match then try a fuzzy match
     if (!entry) {

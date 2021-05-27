@@ -29,8 +29,8 @@ export default class MoveResolver {
     @Args() { move, skip, take, reverse }: MovePaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
   ): MoveEntry {
-    const lowerCasedMove = move.toLowerCase();
-    let entry = this.moveService.findByName(moveAliases.get(lowerCasedMove) ?? lowerCasedMove);
+    const preParsedMove = Util.preParseInput(move);
+    let entry = this.moveService.findByName(moveAliases.get(preParsedMove) ?? preParsedMove);
 
     if (!entry) {
       const fuzzyEntry = this.moveService.findByFuzzy({

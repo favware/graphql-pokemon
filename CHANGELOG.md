@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.5.1](https://github.com/favware/graphql-pokemon/compare/v5.5.0...v5.5.1) (2021-05-29)
+
+
+### Bug Fixes
+
+* add back sprite support to learnset queries ([c02f2fc](https://github.com/favware/graphql-pokemon/commit/c02f2fc3804203c19b4b27e0ce45eecf3206d943))
+
 ## [5.5.0](https://github.com/favware/graphql-pokemon/compare/v5.4.0...v5.5.0) (2021-05-29)
 
 

@@ -1,7 +1,5 @@
-import type { Config } from '@jest/types';
-
 // eslint-disable-next-line @typescript-eslint/require-await
-export default async (): Promise<Config.InitialOptions> => ({
+export default async () => ({
   coverageProvider: 'v8',
   preset: 'ts-jest',
   testEnvironment: 'node',

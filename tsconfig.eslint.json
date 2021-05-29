@@ -1,4 +1,4 @@
 {
   "extends": "./tsconfig.base.json",
-  "include": ["src", "scripts", "__tests__", "jest.config.ts", ".prettierrc.cjs"]
+  "include": ["src", "scripts", "__tests__", "jest.config.mjs", ".prettierrc.cjs"]
 }

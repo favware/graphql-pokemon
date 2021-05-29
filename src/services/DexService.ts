@@ -10,29 +10,10 @@ import { addPropertyToClass } from '#utils/addPropertyToClass';
 import FuzzySearch from '#utils/FuzzySearch';
 import GraphQLSet from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
+import { parseSpeciesForSprite } from '#utils/spriteParser';
 import Util from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
-
-interface ParseSpeciesForSpriteParams {
-  pokemonName: string;
-  baseSpecies?: string;
-  specialSprite?: string;
-  specialShinySprite?: string;
-  specialBackSprite?: string;
-  specialShinyBackSprite?: string;
-  shiny?: boolean;
-  backSprite?: boolean;
-}
-
-const SpriteRegexReplaceMatch = /^(.+)-(x|y)$/g;
-const SpriteUrls = {
-  baseUrl: 'https://play.pokemonshowdown.com/sprites/',
-  animatedShinyBackSprites: 'ani-back-shiny/',
-  animatedBackSprites: 'ani-back/',
-  animatedSprites: 'ani/',
-  animatedShinySprites: 'ani-shiny/'
-};
 
 export default class DexService {
   private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
@@ -327,7 +308,7 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'sprite',
-      this.parseSpeciesForSprite({
+      parseSpeciesForSprite({
         pokemonName: basePokemonData.species,
         baseSpecies: basePokemonData.baseSpecies,
         specialSprite: basePokemonData.specialSprite,
@@ -341,7 +322,7 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'shinySprite',
-      this.parseSpeciesForSprite({
+      parseSpeciesForSprite({
         pokemonName: basePokemonData.species,
         baseSpecies: basePokemonData.baseSpecies,
         specialSprite: basePokemonData.specialSprite,
@@ -356,7 +337,7 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'backSprite',
-      this.parseSpeciesForSprite({
+      parseSpeciesForSprite({
         pokemonName: basePokemonData.species,
         baseSpecies: basePokemonData.baseSpecies,
         specialSprite: basePokemonData.specialSprite,
@@ -371,7 +352,7 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'shinyBackSprite',
-      this.parseSpeciesForSprite({
+      parseSpeciesForSprite({
         pokemonName: basePokemonData.species,
         baseSpecies: basePokemonData.baseSpecies,
         specialSprite: basePokemonData.specialSprite,
@@ -545,33 +526,6 @@ export default class DexService {
 
     // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
     return `${baseUrl}/ss/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
-  }
-
-  private parseSpeciesForSprite({
-    pokemonName,
-    baseSpecies,
-    specialSprite,
-    specialShinySprite,
-    specialBackSprite,
-    specialShinyBackSprite,
-    shiny = false,
-    backSprite = false
-  }: ParseSpeciesForSpriteParams) {
-    if (shiny && backSprite && specialShinyBackSprite) return specialShinyBackSprite;
-    if (backSprite && specialBackSprite) return specialBackSprite;
-    if (shiny && specialShinySprite) return specialShinySprite;
-    if (specialSprite) return specialSprite;
-
-    if (!baseSpecies) pokemonName = Util.toLowerSingleWordCase(pokemonName);
-
-    if (pokemonName.match(SpriteRegexReplaceMatch)) pokemonName = pokemonName.replace(SpriteRegexReplaceMatch, '$1$2');
-
-    const pokemonGif = `${pokemonName}.gif`;
-
-    if (shiny && backSprite) return SpriteUrls.baseUrl + SpriteUrls.animatedShinyBackSprites + pokemonGif;
-    if (backSprite) return SpriteUrls.baseUrl + SpriteUrls.animatedBackSprites + pokemonGif;
-    if (shiny) return SpriteUrls.baseUrl + SpriteUrls.animatedShinySprites + pokemonGif;
-    return SpriteUrls.baseUrl + SpriteUrls.animatedSprites + pokemonGif;
   }
 
   private parseBaseStatsTotal(baseStats: Pokemon.Stats) {

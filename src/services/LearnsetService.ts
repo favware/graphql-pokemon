@@ -8,6 +8,26 @@ import type Pokemon from '#utils/pokemon';
 import Util from '#utils/util';
 import { Args } from 'type-graphql';
 
+interface ParseSpeciesForSpriteParams {
+  pokemonName: string;
+  baseSpecies?: string;
+  specialSprite?: string;
+  specialShinySprite?: string;
+  specialBackSprite?: string;
+  specialShinyBackSprite?: string;
+  shiny?: boolean;
+  backSprite?: boolean;
+}
+
+const SpriteRegexReplaceMatch = /^(.+)-(x|y)$/g;
+const SpriteUrls = {
+  baseUrl: 'https://play.pokemonshowdown.com/sprites/',
+  animatedShinyBackSprites: 'ani-back-shiny/',
+  animatedBackSprites: 'ani-back/',
+  animatedSprites: 'ani/',
+  animatedShinySprites: 'ani-shiny/'
+};
+
 export default class LearnsetService {
   public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs, requestedFields: GraphQLSet<keyof LearnsetEntry>): LearnsetEntry {
     const learnset = learnsets.get(pokemon);
@@ -92,13 +112,57 @@ export default class LearnsetService {
       addPropertyToClass(
         learnsetEntry,
         'sprite',
-        this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite),
+        this.parseSpeciesForSprite({
+          pokemonName: pokemonEntry.species,
+          baseSpecies: pokemonEntry.baseSpecies,
+          specialSprite: pokemonEntry.specialSprite,
+          specialShinySprite: pokemonEntry.specialShinySprite,
+          specialBackSprite: pokemonEntry.specialBackSprite,
+          specialShinyBackSprite: pokemonEntry.specialShinyBackSprite
+        }),
         requestedFields
       );
       addPropertyToClass(
         learnsetEntry,
         'shinySprite',
-        this.parseSpeciesForSprite(pokemonEntry.species, pokemonEntry.baseSpecies, pokemonEntry.specialSprite, pokemonEntry.specialShinySprite, true),
+        this.parseSpeciesForSprite({
+          pokemonName: pokemonEntry.species,
+          baseSpecies: pokemonEntry.baseSpecies,
+          specialSprite: pokemonEntry.specialSprite,
+          specialShinySprite: pokemonEntry.specialShinySprite,
+          specialBackSprite: pokemonEntry.specialBackSprite,
+          specialShinyBackSprite: pokemonEntry.specialShinyBackSprite,
+          shiny: true
+        }),
+        requestedFields
+      );
+      addPropertyToClass(
+        learnsetEntry,
+        'backSprite',
+        this.parseSpeciesForSprite({
+          pokemonName: pokemonEntry.species,
+          baseSpecies: pokemonEntry.baseSpecies,
+          specialSprite: pokemonEntry.specialSprite,
+          specialShinySprite: pokemonEntry.specialShinySprite,
+          specialBackSprite: pokemonEntry.specialBackSprite,
+          specialShinyBackSprite: pokemonEntry.specialShinyBackSprite,
+          backSprite: true
+        }),
+        requestedFields
+      );
+      addPropertyToClass(
+        learnsetEntry,
+        'shinyBackSprite',
+        this.parseSpeciesForSprite({
+          pokemonName: pokemonEntry.species,
+          baseSpecies: pokemonEntry.baseSpecies,
+          specialSprite: pokemonEntry.specialSprite,
+          specialShinySprite: pokemonEntry.specialShinySprite,
+          specialBackSprite: pokemonEntry.specialBackSprite,
+          specialShinyBackSprite: pokemonEntry.specialShinyBackSprite,
+          shiny: true,
+          backSprite: true
+        }),
         requestedFields
       );
 
@@ -139,15 +203,31 @@ export default class LearnsetService {
     return method.slice(1, 2) as MethodTypes;
   }
 
-  private parseSpeciesForSprite(pokemonName: string, baseForme?: string, specialSprite?: string, specialShinySprite?: string, shiny = false) {
-    if (specialShinySprite && shiny) return specialShinySprite;
-    if (specialSprite && !shiny) return specialSprite;
+  private parseSpeciesForSprite({
+    pokemonName,
+    baseSpecies,
+    specialSprite,
+    specialShinySprite,
+    specialBackSprite,
+    specialShinyBackSprite,
+    shiny = false,
+    backSprite = false
+  }: ParseSpeciesForSpriteParams) {
+    if (shiny && backSprite && specialShinyBackSprite) return specialShinyBackSprite;
+    if (backSprite && specialBackSprite) return specialBackSprite;
+    if (shiny && specialShinySprite) return specialShinySprite;
+    if (specialSprite) return specialSprite;
 
-    if (!baseForme) pokemonName = Util.toLowerSingleWordCase(pokemonName);
+    if (!baseSpecies) pokemonName = Util.toLowerSingleWordCase(pokemonName);
 
-    if (pokemonName.match(/^(.+)-(x|y)$/g)) pokemonName = pokemonName.replace(/^(.+)-(x|y)$/g, '$1$2');
+    if (pokemonName.match(SpriteRegexReplaceMatch)) pokemonName = pokemonName.replace(SpriteRegexReplaceMatch, '$1$2');
 
-    return `https://play.pokemonshowdown.com/sprites/${shiny ? 'ani-shiny' : 'ani'}/${pokemonName}.gif`;
+    const pokemonGif = `${pokemonName}.gif`;
+
+    if (shiny && backSprite) return SpriteUrls.baseUrl + SpriteUrls.animatedShinyBackSprites + pokemonGif;
+    if (backSprite) return SpriteUrls.baseUrl + SpriteUrls.animatedBackSprites + pokemonGif;
+    if (shiny) return SpriteUrls.baseUrl + SpriteUrls.animatedShinySprites + pokemonGif;
+    return SpriteUrls.baseUrl + SpriteUrls.animatedSprites + pokemonGif;
   }
 
   private shouldIncludePokemonDetails(requestedFields: GraphQLSet<keyof LearnsetEntry>) {

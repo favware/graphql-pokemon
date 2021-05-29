@@ -70,11 +70,26 @@ export default class LearnsetEntry {
   @Field(() => String, { description: 'The species name for a Pokémon' })
   public species!: string;
 
-  @Field(() => String, { description: 'The sprite for the Pokémon' })
+  @Field({
+    description: 'The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
   public sprite!: string;
 
-  @Field(() => String, { description: 'The shiny sprite for the Pokémon' })
+  @Field({
+    description: 'The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
   public shinySprite!: string;
+
+  @Field({
+    description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
+  public backSprite!: string;
+
+  @Field({
+    description:
+      'The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
+  public shinyBackSprite!: string;
 
   @Field(() => String, { description: 'The PokéDex colour for the Pokémon' })
   public color!: string;

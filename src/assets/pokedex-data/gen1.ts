@@ -22,7 +22,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Gray',
       eggGroups: ['Undiscovered'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/afd/missingno.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/afd-shiny/missingno.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/afd-shiny/missingno.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/afd-back/missingno.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/afd-back-shiny/missingno.png'
     }
   ],
   [

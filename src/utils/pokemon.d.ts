@@ -62,6 +62,8 @@ export namespace Pokemon {
     weightkg: number;
     specialShinySprite?: string;
     specialSprite?: string;
+    specialShinyBackSprite?: string;
+    specialBackSprite?: string;
     cosmeticFormes?: string[];
   }
 

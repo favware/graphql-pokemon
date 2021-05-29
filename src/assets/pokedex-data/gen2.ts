@@ -525,7 +525,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen4/pichu-spikyeared.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen4-shiny/pichu-spikyeared.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen4-shiny/pichu-spikyeared.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen4-back/pichu-spikyeared.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen4-back-shiny/pichu-spikyeared.png'
     }
   ],
   [

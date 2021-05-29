@@ -2584,7 +2584,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       eggGroups: ['Amorphous'],
       otherFormes: ['frillish'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/frillish-f.gif',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/frillish-f.gif'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/frillish-f.gif',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/frillish-f.gif',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/frillish-f.gif'
     }
   ],
   [
@@ -2639,7 +2641,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       eggGroups: ['Amorphous'],
       otherFormes: ['jellicent'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/jellicent-f.gif',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/jellicent-f.gif'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/jellicent-f.gif',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/jellicent-f.gif',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/jellicent-f.gif'
     }
   ],
   [

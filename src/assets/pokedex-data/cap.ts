@@ -21,7 +21,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['syclant'],
       eggGroups: ['Bug'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/syclar.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclar.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclar.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/syclar.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclar.png'
     }
   ],
   [
@@ -44,7 +46,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 30,
       eggGroups: ['Bug'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/syclant.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclant.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclant.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/syclant.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclant.png'
     }
   ],
   [
@@ -61,7 +65,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'White',
       eggGroups: ['Amorphous', 'Human-Like'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/revenankh.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/revenankh.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/revenankh.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/revenankh.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/revenankh.png'
     }
   ],
   [
@@ -83,7 +89,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['flarelm'],
       eggGroups: ['Monster', 'Dragon'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/embirch.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/embirch.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/embirch.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/embirch.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/embirch.png'
     }
   ],
   [
@@ -107,7 +115,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 24,
       eggGroups: ['Monster', 'Dragon'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/flarelm.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/flarelm.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/flarelm.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/flarelm.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/flarelm.png'
     }
   ],
   [
@@ -130,7 +140,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 38,
       eggGroups: ['Monster', 'Dragon'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pyroak.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pyroak.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pyroak.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pyroak.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pyroak.png'
     }
   ],
   [
@@ -148,7 +160,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['fidgit'],
       eggGroups: ['Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/breezi.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/breezi.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/breezi.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/breezi.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/breezi.png'
     }
   ],
   [
@@ -167,7 +181,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 33,
       eggGroups: ['Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/fidgit.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/fidgit.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/fidgit.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/fidgit.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/fidgit.png'
     }
   ],
   [
@@ -185,7 +201,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['tactite'],
       eggGroups: ['Undiscovered'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/rebble.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/rebble.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/rebble.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/rebble.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/rebble.png'
     }
   ],
   [
@@ -205,7 +223,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 28,
       eggGroups: ['Undiscovered'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tactite.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tactite.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tactite.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tactite.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tactite.png'
     }
   ],
   [
@@ -224,7 +244,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 28,
       eggGroups: ['Undiscovered'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/stratagem.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/stratagem.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/stratagem.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/stratagem.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/stratagem.png'
     }
   ],
   [
@@ -242,7 +264,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['arghonaut'],
       eggGroups: ['Water 1', 'Water 3'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/privatyke.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/privatyke.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/privatyke.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/privatyke.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/privatyke.png'
     }
   ],
   [
@@ -261,7 +285,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 37,
       eggGroups: ['Water 1', 'Water 3'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/arghonaut.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/arghonaut.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/arghonaut.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/arghonaut.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/arghonaut.png'
     }
   ],
   [
@@ -278,7 +304,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Gray',
       eggGroups: ['Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/kitsunoh.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/kitsunoh.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/kitsunoh.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/kitsunoh.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/kitsunoh.png'
     }
   ],
   [
@@ -295,7 +323,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Yellow',
       eggGroups: ['Dragon', 'Monster'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cyclohm.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cyclohm.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cyclohm.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cyclohm.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cyclohm.png'
     }
   ],
   [
@@ -312,7 +342,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       eggGroups: ['Water 2', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/colossoil.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/colossoil.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/colossoil.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/colossoil.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/colossoil.png'
     }
   ],
   [
@@ -329,7 +361,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Red',
       eggGroups: ['Water 1', 'Fairy'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/krillowatt.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/krillowatt.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/krillowatt.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/krillowatt.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/krillowatt.png'
     }
   ],
   [
@@ -351,7 +385,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['voodoom'],
       eggGroups: ['Human-Like', 'Ground'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/voodoll.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/voodoll.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/voodoll.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/voodoll.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/voodoll.png'
     }
   ],
   [
@@ -374,7 +410,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 32,
       eggGroups: ['Human-Like', 'Ground'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/voodoom.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/voodoom.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/voodoom.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/voodoom.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/voodoom.png'
     }
   ],
   [
@@ -392,7 +430,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['tomohawk'],
       eggGroups: ['Field', 'Flying'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/scratchet.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/scratchet.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/scratchet.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/scratchet.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/scratchet.png'
     }
   ],
   [
@@ -411,7 +451,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 23,
       eggGroups: ['Field', 'Flying'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tomohawk.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tomohawk.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tomohawk.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tomohawk.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tomohawk.png'
     }
   ],
   [
@@ -429,7 +471,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['necturna'],
       eggGroups: ['Grass', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/necturine.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/necturine.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/necturine.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/necturine.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/necturine.png'
     }
   ],
   [
@@ -448,7 +492,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 31,
       eggGroups: ['Grass', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/necturna.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/necturna.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/necturna.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/necturna.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/necturna.png'
     }
   ],
   [
@@ -465,7 +511,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Pink',
       eggGroups: ['Fairy', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/mollux.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/mollux.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/mollux.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/mollux.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/mollux.png'
     }
   ],
   [
@@ -487,7 +535,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['argalis'],
       eggGroups: ['Bug'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cupra.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cupra.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cupra.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cupra.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cupra.png'
     }
   ],
   [
@@ -511,7 +561,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 30,
       eggGroups: ['Bug'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/argalis.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/argalis.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/argalis.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/argalis.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/argalis.png'
     }
   ],
   [
@@ -534,7 +586,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 50,
       eggGroups: ['Bug'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/aurumoth.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/aurumoth.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/aurumoth.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/aurumoth.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/aurumoth.png'
     }
   ],
   [
@@ -552,7 +606,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['malaconda'],
       eggGroups: ['Grass', 'Dragon'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/brattler.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/brattler.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/brattler.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/brattler.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/brattler.png'
     }
   ],
   [
@@ -571,7 +627,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 33,
       eggGroups: ['Grass', 'Dragon'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/malaconda.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/malaconda.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/malaconda.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/malaconda.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/malaconda.png'
     }
   ],
   [
@@ -589,7 +647,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['cawmodore'],
       eggGroups: ['Flying'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cawdet.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cawdet.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cawdet.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cawdet.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cawdet.png'
     }
   ],
   [
@@ -612,7 +672,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 33,
       eggGroups: ['Flying'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cawmodore.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cawmodore.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cawmodore.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cawmodore.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cawmodore.png'
     }
   ],
   [
@@ -634,7 +696,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['volkraken'],
       eggGroups: ['Water 1', 'Water 2'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/volkritter.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/volkritter.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/volkritter.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/volkritter.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/volkritter.png'
     }
   ],
   [
@@ -653,7 +717,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 34,
       eggGroups: ['Water 1', 'Water 2'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/volkraken.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/volkraken.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/volkraken.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/volkraken.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/volkraken.png'
     }
   ],
   [
@@ -675,7 +741,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['plasmanta'],
       eggGroups: ['Water 1', 'Water 2'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/snugglow.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/snugglow.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/snugglow.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/snugglow.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/snugglow.png'
     }
   ],
   [
@@ -698,7 +766,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 29,
       eggGroups: ['Water 1', 'Water 2'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/plasmanta.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/plasmanta.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/plasmanta.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/plasmanta.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/plasmanta.png'
     }
   ],
   [
@@ -720,7 +790,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['caimanoe'],
       eggGroups: ['Water 1', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/floatoy.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/floatoy.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/floatoy.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/floatoy.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/floatoy.png'
     }
   ],
   [
@@ -744,7 +816,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 21,
       eggGroups: ['Water 1', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/caimanoe.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/caimanoe.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/caimanoe.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/caimanoe.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/caimanoe.png'
     }
   ],
   [
@@ -763,7 +837,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 40,
       eggGroups: ['Water 1', 'Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/naviathan.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/naviathan.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/naviathan.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/naviathan.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/naviathan.png'
     }
   ],
   [
@@ -785,7 +861,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       eggGroups: ['Amorphous', 'Mineral'],
       otherFormes: ['crucibellemega'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/crucibelle.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/crucibelle.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/crucibelle.png'
     }
   ],
   [
@@ -805,7 +883,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Purple',
       eggGroups: ['Amorphous', 'Mineral'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/crucibelle-mega.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle-mega.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle-mega.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/crucibelle-mega.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/crucibelle-mega.png'
     }
   ],
   [
@@ -827,7 +907,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['kerfluffle'],
       eggGroups: ['Fairy', 'Human-Like'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pluffle.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pluffle.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pluffle.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pluffle.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pluffle.png'
     }
   ],
   [
@@ -850,7 +932,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 2,
       eggGroups: ['Fairy', 'Human-Like'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/kerfluffle.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/kerfluffle.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/kerfluffle.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/kerfluffle.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/kerfluffle.png'
     }
   ],
   [
@@ -867,7 +951,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Purple',
       eggGroups: ['Dragon', 'Monster'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pajantom.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pajantom.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pajantom.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pajantom.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pajantom.png'
     }
   ],
   [
@@ -885,7 +971,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['jumbao'],
       eggGroups: ['Grass'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/mumbao.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/mumbao.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/mumbao.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/mumbao.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/mumbao.png'
     }
   ],
   [
@@ -902,7 +990,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       eggGroups: ['Grass'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/jumbao.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/jumbao.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/jumbao.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/jumbao.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/jumbao.png'
     }
   ],
   [
@@ -920,7 +1010,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['electrelk'],
       eggGroups: ['Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/fawnifer.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/fawnifer.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/fawnifer.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/fawnifer.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/fawnifer.png'
     }
   ],
   [
@@ -940,7 +1032,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['caribolt'],
       eggGroups: ['Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/electrelk.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/electrelk.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/electrelk.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/electrelk.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/electrelk.png'
     }
   ],
   [
@@ -959,7 +1053,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 34,
       eggGroups: ['Field'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/caribolt.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/caribolt.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/caribolt.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/caribolt.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/caribolt.png'
     }
   ],
   [
@@ -977,7 +1073,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['smoguana'],
       eggGroups: ['Field', 'Monster'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/smogecko.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smogecko.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smogecko.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/smogecko.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/smogecko.png'
     }
   ],
   [
@@ -997,7 +1095,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['smokomodo'],
       eggGroups: ['Field', 'Monster'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/smoguana.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smoguana.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smoguana.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/smoguana.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/smoguana.png'
     }
   ],
   [
@@ -1016,7 +1116,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 36,
       eggGroups: ['Field', 'Monster'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/smokomodo.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smokomodo.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smokomodo.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/smokomodo.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/smokomodo.png'
     }
   ],
   [
@@ -1034,7 +1136,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['coribalis'],
       eggGroups: ['Water 1', 'Fairy'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/swirlpool.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/swirlpool.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/swirlpool.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/swirlpool.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/swirlpool.png'
     }
   ],
   [
@@ -1054,7 +1158,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['snaelstrom'],
       eggGroups: ['Water 1', 'Fairy'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/coribalis.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/coribalis.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/coribalis.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/coribalis.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/coribalis.png'
     }
   ],
   [
@@ -1073,7 +1179,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 34,
       eggGroups: ['Water 1', 'Fairy'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/snaelstrom.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/snaelstrom.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/snaelstrom.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/snaelstrom.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/snaelstrom.png'
     }
   ],
   [
@@ -1091,7 +1199,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['equilibra'],
       eggGroups: ['Mineral'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/justyke.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/justyke.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/justyke.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/justyke.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/justyke.png'
     }
   ],
   [
@@ -1110,7 +1220,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       eggGroups: ['Mineral'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/equilibra.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/equilibra.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/equilibra.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/equilibra.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/equilibra.png'
     }
   ],
   [
@@ -1132,7 +1244,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Red',
       eggGroups: ['Dragon', 'Fairy'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/solotl.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/solotl.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/solotl.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/solotl.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/solotl.png'
     }
   ],
   [
@@ -1155,7 +1269,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Red',
       eggGroups: ['Dragon', 'Fairy'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/astrolotl.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/astrolotl.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/astrolotl.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/astrolotl.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/astrolotl.png'
     }
   ],
   [
@@ -1177,7 +1293,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       eggGroups: ['Bug', 'Dragon'],
       evos: ['miasmaw'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/miasmite.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/miasmite.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/miasmite.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/miasmite.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/miasmite.png'
     }
   ],
   [
@@ -1200,7 +1318,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'miasmite',
       evoLevel: 30,
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/miasmaw.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/miasmaw.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/miasmaw.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/miasmaw.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/miasmaw.png'
     }
   ],
   [
@@ -1219,7 +1339,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Purple',
       eggGroups: ['Undiscovered'],
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/chromera.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/chromera.png'
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/chromera.png',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/chromera.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/chromera.png'
     }
   ]
 ];

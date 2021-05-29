@@ -1,6 +1,6 @@
-import { Field, Int, ObjectType } from 'type-graphql';
 import DexEntry from '#structures/DexEntry';
 import FlavorEntry from '#structures/FlavorEntry';
+import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's details entry" })
 export default class DexDetails extends DexEntry {
@@ -25,6 +25,17 @@ export default class DexDetails extends DexEntry {
     description: 'The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
   })
   public shinySprite!: string;
+
+  @Field({
+    description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
+  public backSprite!: string;
+
+  @Field({
+    description:
+      'The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
+  public shinyBackSprite!: string;
 
   @Field({ description: 'The smogon tier a Pokémon falls under' })
   public smogonTier!: string | 'none';

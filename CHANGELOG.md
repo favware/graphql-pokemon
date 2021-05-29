@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.5.0](https://github.com/favware/graphql-pokemon/compare/v5.4.0...v5.5.0) (2021-05-29)
+
+
+### Features
+
+* add support for back sprites ([2891254](https://github.com/favware/graphql-pokemon/commit/289125496f4ef1289be0aa791ac897cfe16eabdb))
+
 ## [5.4.0](https://github.com/favware/graphql-pokemon/compare/v5.3.0...v5.4.0) (2021-05-27)
 
 

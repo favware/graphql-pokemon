@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v2.1.6
         id: cache-restore
         with:
           path: node_modules
@@ -85,7 +85,7 @@ jobs:
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v2.1.6
         id: cache-restore
         with:
           path: node_modules
@@ -109,7 +109,7 @@ jobs:
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v2.1.6
         id: cache-restore
         with:
           path: node_modules

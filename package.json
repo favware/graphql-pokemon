@@ -54,16 +54,16 @@
     "@graphql-codegen/schema-ast": "^1.18.3",
     "@graphql-codegen/typescript": "^1.22.1",
     "@graphql-codegen/typescript-resolvers": "^1.19.2",
-    "@sapphire/eslint-config": "^3.1.3",
-    "@sapphire/fetch": "^1.0.2",
-    "@sapphire/prettier-config": "^1.1.2",
-    "@sapphire/time-utilities": "^1.3.2",
-    "@sapphire/ts-config": "^2.2.2",
+    "@sapphire/eslint-config": "^3.1.4",
+    "@sapphire/fetch": "^1.0.3",
+    "@sapphire/prettier-config": "^1.1.3",
+    "@sapphire/time-utilities": "^1.3.3",
+    "@sapphire/ts-config": "^2.2.3",
     "@types/jest": "^26.0.23",
     "@types/koa": "^2.13.3",
-    "@types/node": "^15.6.1",
+    "@types/node": "^15.12.2",
     "@types/node-fetch": "^2.5.10",
-    "apollo-server-koa": "^2.25.0",
+    "apollo-server-koa": "^2.25.1",
     "class-validator": "^0.13.1",
     "colorette": "^1.2.2",
     "cz-conventional-changelog": "^3.3.0",
@@ -125,11 +125,12 @@
     "access": "public"
   },
   "resolutions": {
-    "acorn": "^8.2.4",
+    "acorn": "^8.4.0",
     "minimist": "^1.2.5",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.21",
     "dot-prop": "^6.0.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "trim-newlines": "^3.0.1"
   }
 }

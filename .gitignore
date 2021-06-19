@@ -36,9 +36,5 @@ gh
 scripts/tiers.ts
 scripts/learnsets.ts
 
-## API Bundle
-generated/api/
-
-## TypeScript Bundle
-generated/ts/graphql-pokemon.d.ts
-generated/ts/graphql-pokemon.graphql
+## API and TS Bundle
+generated/

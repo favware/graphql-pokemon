@@ -4,12 +4,13 @@
   "description": "Extensive Pokemon GraphQL API",
   "author": "@favware",
   "license": "MIT",
-  "types": "generated/ts/graphql-pokemon.d.ts",
-  "main": "generated/ts/graphql-pokemon.d.ts",
   "type": "module",
+  "main": "generated/ts/graphql-pokemon.cjs",
+  "module": "generated/ts/graphql-pokemon.mjs",
+  "types": "generated/ts/graphql-pokemon.d.ts",
   "exports": {
-    "import": "./generated/ts/graphql-pokemon.d.ts",
-    "require": "./generated/ts/graphql-pokemon.d.ts"
+    "import": "./generated/ts/graphql-pokemon.cjs",
+    "require": "./generated/ts/graphql-pokemon.mjs"
   },
   "imports": {
     "#arguments/*": "./generated/api/arguments/*.js",
@@ -37,8 +38,13 @@
     "cz": "git-cz",
     "update": "yarn upgrade-interactive --latest",
     "sversion": "standard-version",
+    "precodegen": "node scripts/clean-generated.mjs",
     "codegen": "graphql-codegen",
-    "postcodegen": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.d.ts --isRegex",
+    "postcodegen": "run-s typescript:*",
+    "typescript:replace-invalid-code": "replace-in-file /}\\;/g } generated/ts/graphql-pokemon.ts --isRegex",
+    "typescript:use-type-import": "replace-in-file /import/g \"import type\" generated/ts/graphql-pokemon.ts --isRegex",
+    "typescript:compile": "rollup -c scripts/rollup.config.mjs",
+    "typescript:cleanup": "node scripts/postcodegen.mjs",
     "au:tiers": "node --experimental-json-modules scripts/smogontiers.mjs",
     "au:learnsets": "node --experimental-json-modules scripts/pokemonlearnsets.mjs",
     "prepare": "husky install .github/husky"
@@ -75,10 +81,13 @@
     "jest-circus": "^27.0.4",
     "koa": "^2.13.1",
     "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
     "pretty-quick": "^3.1.0",
     "reflect-metadata": "^0.1.13",
     "replace-in-file": "^6.2.0",
+    "rollup": "^2.52.1",
+    "rollup-plugin-typescript2": "^0.30.0",
     "standard-version": "^9.3.0",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
@@ -87,8 +96,7 @@
     "utility-types": "^3.10.0"
   },
   "files": [
-    "generated/ts/graphql-pokemon.d.ts",
-    "generated/ts/graphql-pokemon.graphql"
+    "generated/ts"
   ],
   "engines": {
     "node": ">=12",

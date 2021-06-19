@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.5.4](https://github.com/favware/graphql-pokemon/compare/v5.5.3...v5.5.4) (2021-06-19)
+
+
+### Bug Fixes
+
+* swap import and require in export paths ([5689ae0](https://github.com/favware/graphql-pokemon/commit/5689ae0adf9030195ccb2b74356dc891c7b3e676))
+
 ### [5.5.3](https://github.com/favware/graphql-pokemon/compare/v5.5.2...v5.5.3) (2021-06-19)
 
 

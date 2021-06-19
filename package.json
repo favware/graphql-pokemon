@@ -9,8 +9,8 @@
   "module": "generated/ts/graphql-pokemon.mjs",
   "types": "generated/ts/graphql-pokemon.d.ts",
   "exports": {
-    "import": "./generated/ts/graphql-pokemon.cjs",
-    "require": "./generated/ts/graphql-pokemon.mjs"
+    "import": "./generated/ts/graphql-pokemon.mjs",
+    "require": "./generated/ts/graphql-pokemon.cjs"
   },
   "imports": {
     "#arguments/*": "./generated/api/arguments/*.js",

@@ -16,36 +16,10 @@ on:
         required: false
 
 jobs:
-  pre_ci:
-    name: Prepare CI environment
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
-      - name: '[Push] Get commit message'
-        if: github.event_name == 'push'
-        id: push_get_commit_message
-        run: echo ::set-output name=push_commit_message::$(git log --format=%B -n 1 HEAD)
-      - name: '[Pull Request] Get commit message'
-        if: github.event_name == 'pull_request'
-        id: pr_get_commit_message
-        run: echo ::set-output name=pr_commit_message::$(git log --format=%B -n 1 HEAD^2)
-      - name: Add problem matchers
-        run: |
-          echo "::add-matcher::.github/problemMatchers/tsc.json"
-          echo "::add-matcher::.github/problemMatchers/eslint-stylish.json"
-    outputs:
-      commit_message: $( [ -z "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" ] && echo "${{ steps.push_get_commit_message.outputs.push_commit_message }}" || echo "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" )
-
   Publish:
     name: Publish image to container registries
     runs-on: ubuntu-latest
-    if: >-
-      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))
-    needs: [pre_ci]
+    if: "!contains(github.event.head_commit.message, '[skip docker]')"
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -83,10 +57,9 @@ jobs:
     name: Generate TypeScript, and SDL type information
     runs-on: ubuntu-latest
     if: >-
-      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]')
+      !(contains(github.event.head_commit.message, '[skip publish]')
       ||github.event.inputs.skip-publish == true)
-    needs: [pre_ci, Publish]
+    needs: Publish
     services:
       pokedex:
         image: ghcr.io/favware/graphql-pokemon:latest
@@ -101,6 +74,8 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
+      - name: Add problem matchers
+        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
@@ -127,9 +102,8 @@ jobs:
     name: Publishing release to Github
     runs-on: ubuntu-latest
     if: >-
-      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]'))
-    needs: [pre_ci, GenerateTypings]
+      !(contains(github.event.head_commit.message, '[skip publish]'))
+    needs: GenerateTypings
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -153,7 +127,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
       - name: Bump semver
-        if: "!contains(needs.pre_ci.outputs.commit_message, '[skip bump]')"
+        if: "!contains(github.event.head_commit.message, '[skip bump]')"
         run: yarn sversion
       - name: Store bumped package.json
         uses: actions/upload-artifact@v2
@@ -168,16 +142,15 @@ jobs:
           path: CHANGELOG.md
           if-no-files-found: error
       - name: Push changes
-        if: "!contains(needs.pre_ci.outputs.commit_message, '[skip bump]')"
+        if: "!contains(github.event.head_commit.message, '[skip bump]')"
         run: git push --follow-tags origin main
 
   NPMPublish:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
     if: >-
-      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]'))
-    needs: [pre_ci, GithubPublish]
+      !(contains(github.event.head_commit.message, '[skip publish]'))
+    needs: GithubPublish
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -217,9 +190,8 @@ jobs:
     name: Publishing release to Github Package Registry
     runs-on: ubuntu-latest
     if: >-
-      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip publish]'))
-    needs: [pre_ci, GithubPublish]
+      !(contains(github.event.head_commit.message, '[skip publish]'))
+    needs: GithubPublish
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2

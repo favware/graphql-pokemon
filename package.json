@@ -12,6 +12,7 @@
     "import": "./generated/ts/graphql-pokemon.mjs",
     "require": "./generated/ts/graphql-pokemon.cjs"
   },
+  "sideEffects": false,
   "imports": {
     "#arguments/*": "./generated/api/arguments/*.js",
     "#assets/*": "./generated/api/assets/*.js",

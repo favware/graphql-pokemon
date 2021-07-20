@@ -1,3 +1,2 @@
+import 'jest-extended';
 import 'reflect-metadata';
-
-jest.retryTimes(2);

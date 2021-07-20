@@ -1,17 +1,26 @@
 import { buildGqlSchema } from '#root/server';
+import type { Query } from '#test-utils/types/types';
 import { graphql, GraphQLSchema } from 'graphql';
+import type { Maybe } from 'type-graphql';
 
-type Maybe<T> = T | null;
+export interface DataResponse<K extends keyof Omit<Query, '__typename'>> {
+  data: Record<K, Omit<Query[K], '__typename'>>;
+}
 
 interface GCallOptions {
   source: string;
   variableValues?: Maybe<Record<string, unknown>>;
 }
 
-let schema: GraphQLSchema;
+/**
+ * Cached GraphQL schema so it only has to be build once
+ */
+let schema: GraphQLSchema | null = null;
 
 export const gCall = async ({ source, variableValues }: GCallOptions) => {
-  if (!schema) schema = buildGqlSchema();
+  if (schema === null) {
+    schema = await buildGqlSchema();
+  }
 
   return graphql({
     schema,
@@ -20,6 +29,11 @@ export const gCall = async ({ source, variableValues }: GCallOptions) => {
   });
 };
 
+/**
+ * Formats the response data so it can be parsed by Jest
+ * @param data The data to format
+ * @returns Formatted data
+ */
 export const formatResponse = (data: unknown) => JSON.parse(JSON.stringify(data));
 
 /**

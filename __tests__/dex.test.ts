@@ -1,5 +1,4 @@
-import { formatResponse, gCall, gql } from '#test-utils/testUtils';
-import type { DataResponse } from '#test-utils/types';
+import { DataResponse, formatResponse, gCall, gql } from '#test-utils/testUtils';
 import { GraphQLError } from 'graphql';
 
 const dexDetailsFragment = gql`

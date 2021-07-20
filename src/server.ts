@@ -10,12 +10,13 @@ import LearnsetResolver from '#resolvers/LearnsetResolver';
 import MoveResolver from '#resolvers/MoveResolver';
 import TypeResolver from '#resolvers/TypeResolver';
 import tabs from '#root/defaultPlaygroundTabs';
+import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
 import { ApolloServer } from 'apollo-server-koa';
 import type { GraphQLSchema } from 'graphql';
 import Koa from 'koa';
-import { buildSchemaSync, registerEnumType } from 'type-graphql';
+import { buildSchema, registerEnumType } from 'type-graphql';
 
-export const buildGqlSchema = (): GraphQLSchema => {
+export const buildGqlSchema = (): Promise<GraphQLSchema> => {
   registerEnumType(abilities, {
     name: 'Abilities',
     description: 'The supported abilities'
@@ -41,26 +42,27 @@ export const buildGqlSchema = (): GraphQLSchema => {
     description: 'The types in Pokémon'
   });
 
-  return buildSchemaSync({
+  return buildSchema({
     resolvers: [DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver]
   });
 };
 
-const gqlServer = (): Koa<Koa.DefaultState, Koa.DefaultContext> => {
-  const schema = buildGqlSchema();
+const gqlServer = async (): Promise<Koa<Koa.DefaultState, Koa.DefaultContext>> => {
+  const schema = await buildGqlSchema();
   const app = new Koa();
   const apolloServer = new ApolloServer({
     schema,
     introspection: true,
-    playground: {
-      endpoint: '/api',
-      settings: {
-        'editor.theme': 'dark',
-        'editor.fontFamily': '"Fira Code", "MesloLGS NF", "Menlo", Consolas, Courier New, monospace',
-        'editor.reuseHeaders': true
-      },
-      tabs
-    }
+    plugins: [
+      ApolloServerPluginLandingPageGraphQLPlayground({
+        settings: {
+          'editor.theme': 'dark',
+          'editor.fontFamily': '"Fira Code", "MesloLGS NF", "Menlo", Consolas, Courier New, monospace',
+          'editor.reuseHeaders': true
+        },
+        tabs
+      })
+    ]
   });
 
   apolloServer.applyMiddleware({ app, path: '/', cors: true });

@@ -34913,10 +34913,10 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       amnesia: ['8M', '8L52', '7L40', '6L40', '5L49', '4L49', '3L40'],
       ancientpower: ['8E'],
       attract: ['8M', '7M', '6M', '5M', '4M', '3M'],
-      bodypress: ['8M'],
+      bodypress: ['8M', '8S0'],
       bodyslam: ['8M', '8L32', '7L27', '6L27', '5L33', '4L33', '3T', '3L20'],
       bulldoze: ['8M', '7M', '6M', '5M'],
-      burningjealousy: ['8T'],
+      burningjealousy: ['8T', '8S0'],
       captivate: ['4M'],
       clearsmog: ['8L16', '7E', '6E', '5E'],
       confide: ['7M', '6M'],
@@ -34956,7 +34956,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       naturalgift: ['4M'],
       naturepower: ['7M', '6M'],
       overheat: ['8M', '7M', '6M', '5M', '4M', '3M'],
-      protect: ['8M', '8L24', '7M', '7L30', '6M', '6L1', '5M', '5L36', '4M', '4L36', '3M', '3L27'],
+      protect: ['8M', '8L24', '8S0', '7M', '7L30', '6M', '6L1', '5M', '5L36', '4M', '4L36', '3M', '3L27'],
       rapidspin: ['8L8', '7L10', '6L10', '5L23', '4L23'],
       rest: ['8M', '7M', '6M', '5M', '4M', '3M'],
       return: ['7M', '6M', '5M', '4M', '3M'],
@@ -34988,7 +34988,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       weatherball: ['8M'],
       willowisp: ['8M', '7M', '6M', '5M', '4M'],
       withdraw: ['8L4', '7L7', '6L7', '5L7', '4L7'],
-      yawn: ['8E', '7E', '6E', '5E', '4E', '3E']
+      yawn: ['8E', '8S0', '7E', '6E', '5E', '4E', '3E']
     }
   ],
   [

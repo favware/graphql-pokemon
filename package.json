@@ -59,7 +59,7 @@
     "@discordjs/collection": "^0.2.0",
     "@graphql-codegen/cli": "^1.21.7",
     "@graphql-codegen/schema-ast": "^2.0.0",
-    "@graphql-codegen/typescript": "^1.23.0",
+    "@graphql-codegen/typescript": "^2.0.0",
     "@graphql-codegen/typescript-resolvers": "^2.0.0",
     "@sapphire/eslint-config": "^3.2.3",
     "@sapphire/fetch": "^1.0.5",

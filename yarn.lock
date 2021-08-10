@@ -833,14 +833,25 @@
     lodash "~4.17.0"
     tslib "~2.3.0"
 
-"@graphql-codegen/schema-ast@^1.18.3":
-  version "1.18.3"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/schema-ast/-/schema-ast-1.18.3.tgz#7ba7422df716ff2038b1281c503e5751a8414ef2"
-  integrity sha512-D0uheH039ztSG3mboW5enmyaFwTcevLSR8yNrdN+NEKoQJJoDWsb9P/G6NTdFu5Bb03IvNhIFTpG1ttWtRP/aQ==
+"@graphql-codegen/plugin-helpers@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.0.0.tgz#8c66be320f63a69760112c46fc7c23c2de53382b"
+  integrity sha512-SkJeDIpSZbQA+t86t7y5yHn7uN6W/lDxiOi/JWxZRPW5Y5pZY+SP1GMOQgKUkwcS9jF3+ISSxBcE+KDVqluqCg==
   dependencies:
-    "@graphql-codegen/plugin-helpers" "^1.18.7"
-    "@graphql-tools/utils" "^7.9.1"
-    tslib "~2.2.0"
+    "@graphql-tools/utils" "^8.0.1"
+    common-tags "1.8.0"
+    import-from "4.0.0"
+    lodash "~4.17.0"
+    tslib "~2.3.0"
+
+"@graphql-codegen/schema-ast@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/schema-ast/-/schema-ast-2.0.0.tgz#2c06186886ed3afa4db3cc72f7d1264aef471370"
+  integrity sha512-9aq3nuxIST1X2O8UgvxaW7qhwqv9H/FRPEqp+4yV7Csj6brg/kdp8VNfsqmECRspdYGdJMAXyQKgzarZJpwNeA==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.0.0"
+    "@graphql-tools/utils" "^8.0.1"
+    tslib "~2.3.0"
 
 "@graphql-codegen/typescript-resolvers@^1.20.0":
   version "1.20.0"
@@ -1096,6 +1107,13 @@
     "@ardatan/aggregate-error" "0.0.6"
     camel-case "4.1.2"
     tslib "~2.2.0"
+
+"@graphql-tools/utils@^8.0.1":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.0.2.tgz#795a8383cdfdc89855707d62491c576f439f3c51"
+  integrity sha512-gzkavMOgbhnwkHJYg32Adv6f+LxjbQmmbdD5Hty0+CWxvaiuJq+nU6tzb/7VSU4cwhbNLx/lGu2jbCPEW1McZQ==
+  dependencies:
+    tslib "~2.3.0"
 
 "@graphql-tools/wrap@^7.0.4":
   version "7.0.8"

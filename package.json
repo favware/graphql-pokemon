@@ -58,7 +58,7 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@discordjs/collection": "^0.2.0",
     "@graphql-codegen/cli": "^1.21.7",
-    "@graphql-codegen/schema-ast": "^1.18.3",
+    "@graphql-codegen/schema-ast": "^2.0.0",
     "@graphql-codegen/typescript": "^1.23.0",
     "@graphql-codegen/typescript-resolvers": "^1.20.0",
     "@sapphire/eslint-config": "^3.2.3",

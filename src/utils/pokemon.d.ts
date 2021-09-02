@@ -73,7 +73,7 @@ export namespace Pokemon {
     catchRate?: CatchRate;
     levellingRate?: LevellingRateUnion;
     minimumHatchTime?: number;
-    isEggObtainable?: boolean;
+    isEggObtainable: boolean;
   }
 
   export interface Ability {

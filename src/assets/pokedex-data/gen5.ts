@@ -58,7 +58,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -90,7 +90,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -121,7 +121,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -151,7 +151,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -183,7 +183,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -214,7 +214,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -244,7 +244,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -276,7 +276,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -307,7 +307,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -337,7 +337,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -368,7 +368,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -398,7 +398,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -430,7 +430,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -461,7 +461,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -491,7 +491,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -522,7 +522,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -552,7 +552,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -583,7 +583,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -613,7 +613,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -644,7 +644,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -674,7 +674,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -705,7 +705,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -735,7 +735,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -766,7 +766,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -796,7 +796,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -828,7 +828,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -859,7 +859,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -889,7 +889,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -920,7 +920,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -950,7 +950,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -982,7 +982,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1013,7 +1013,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1043,7 +1043,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1074,7 +1074,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1104,7 +1104,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1135,7 +1135,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1165,7 +1165,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1197,7 +1197,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1227,7 +1227,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1259,7 +1259,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1290,7 +1290,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1320,7 +1320,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1352,7 +1352,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1383,7 +1383,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1412,7 +1412,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1441,7 +1441,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1471,7 +1471,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1503,7 +1503,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1534,7 +1534,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1564,7 +1564,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1596,7 +1596,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1627,7 +1627,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1657,7 +1657,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1688,7 +1688,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1718,7 +1718,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1749,7 +1749,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1780,7 +1780,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1812,7 +1812,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1842,7 +1842,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1874,7 +1874,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1905,7 +1905,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1936,7 +1936,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -1969,7 +1969,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2002,7 +2002,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2036,7 +2036,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2070,7 +2070,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2104,7 +2104,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2133,7 +2133,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2163,7 +2163,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2194,7 +2194,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2224,7 +2224,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2255,7 +2255,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2284,7 +2284,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2315,7 +2315,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2348,7 +2348,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2379,7 +2379,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2409,7 +2409,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 7710,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2440,7 +2440,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 7710,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2470,7 +2470,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 7710,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2501,7 +2501,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 7710,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2531,7 +2531,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2563,7 +2563,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2595,7 +2595,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2625,7 +2625,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2656,7 +2656,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2686,7 +2686,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2717,7 +2717,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2747,7 +2747,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2779,7 +2779,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2810,7 +2810,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2840,7 +2840,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2872,7 +2872,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2903,7 +2903,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2933,7 +2933,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2964,7 +2964,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -2994,7 +2994,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3026,7 +3026,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3057,7 +3057,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3089,7 +3089,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3122,7 +3122,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3151,7 +3151,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3181,7 +3181,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3212,7 +3212,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3242,7 +3242,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3273,7 +3273,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3304,7 +3304,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3342,7 +3342,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3374,7 +3374,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3413,7 +3413,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3442,7 +3442,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Fast',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3472,7 +3472,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3503,7 +3503,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3533,7 +3533,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3564,7 +3564,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3594,7 +3594,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3626,7 +3626,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3657,7 +3657,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3687,7 +3687,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3719,7 +3719,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3750,7 +3750,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3780,7 +3780,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3811,7 +3811,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3841,7 +3841,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3873,7 +3873,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3904,7 +3904,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3934,7 +3934,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3966,7 +3966,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -3997,7 +3997,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4027,7 +4027,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4058,7 +4058,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4087,7 +4087,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4117,7 +4117,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4148,7 +4148,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4177,7 +4177,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4208,7 +4208,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4238,7 +4238,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4269,7 +4269,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4298,7 +4298,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 7710,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4328,7 +4328,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4359,7 +4359,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4389,7 +4389,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4420,7 +4420,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4449,7 +4449,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4479,7 +4479,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4510,7 +4510,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4540,7 +4540,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4571,7 +4571,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4600,7 +4600,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4629,7 +4629,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4659,7 +4659,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4691,7 +4691,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4722,7 +4722,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4752,7 +4752,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [
@@ -4783,7 +4783,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: false
+      isEggObtainable: true
     }
   ],
   [

@@ -159,7 +159,6 @@ export namespace Pokemon {
     | "Ally's Side"
     | 'Normal'
     | 'All';
-
 }
 
 export default Pokemon;

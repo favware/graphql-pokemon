@@ -22,7 +22,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 9,
       color: 'Green',
       evos: ['quilladin'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -47,7 +54,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'chespin',
       evos: ['chesnaught'],
       evoLevel: 16,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -71,7 +85,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Green',
       prevo: 'quilladin',
       evoLevel: 36,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -94,7 +115,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 9.4,
       color: 'Red',
       evos: ['braixen'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -119,7 +147,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'fennekin',
       evos: ['delphox'],
       evoLevel: 16,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -143,7 +178,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Red',
       prevo: 'braixen',
       evoLevel: 36,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -166,7 +208,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 7,
       color: 'Blue',
       evos: ['frogadier'],
-      eggGroups: ['Water 1']
+      eggGroups: ['Water 1'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -191,7 +240,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'froakie',
       evos: ['greninja'],
       evoLevel: 16,
-      eggGroups: ['Water 1']
+      eggGroups: ['Water 1'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -216,7 +272,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'frogadier',
       evoLevel: 36,
       eggGroups: ['Water 1'],
-      otherFormes: ['greninjaash']
+      otherFormes: ['greninjaash'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -241,7 +304,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 1.5,
       weightkg: 40,
       color: 'Blue',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -264,7 +334,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 5,
       color: 'Brown',
       evos: ['diggersby'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -288,7 +365,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'bunnelby',
       evoLevel: 20,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 127,
+        percentageWithOrdinaryPokeballAtFullHealth: '26%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -311,7 +395,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 1.7,
       color: 'Red',
       evos: ['fletchinder'],
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -336,7 +427,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'fletchling',
       evos: ['talonflame'],
       evoLevel: 17,
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -360,7 +458,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Red',
       prevo: 'fletchinder',
       evoLevel: 35,
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -383,7 +488,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 2.5,
       color: 'Black',
       evos: ['spewpa'],
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -408,7 +520,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'scatterbug',
       evos: ['vivillon'],
       evoLevel: 9,
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -453,7 +572,14 @@ const entries: [string, Pokemon.DexEntry][] = [
         'Vivillon-Sun',
         'Vivillon-Tundra'
       ],
-      otherFormes: ['vivillonfancy', 'vivillonpokeball']
+      otherFormes: ['vivillonfancy', 'vivillonpokeball'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -478,7 +604,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 1.2,
       weightkg: 17,
       color: 'Black',
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -503,7 +636,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 1.2,
       weightkg: 17,
       color: 'Black',
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -526,7 +666,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 13.5,
       color: 'Brown',
       evos: ['pyroar'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 220,
+        percentageWithOrdinaryPokeballAtFullHealth: '39.3%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -550,7 +697,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'litleo',
       evoLevel: 35,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 65,
+        percentageWithOrdinaryPokeballAtFullHealth: '15.7%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -575,7 +729,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'White',
       evos: ['floette'],
       eggGroups: ['Fairy'],
-      cosmeticFormes: ['Flabe\u0301be\u0301-Blue', 'Flabe\u0301be\u0301-Orange', 'Flabe\u0301be\u0301-White', 'Flabe\u0301be\u0301-Yellow']
+      cosmeticFormes: ['Flabébé-Blue', 'Flabébé-Orange', 'Flabébé-White', 'Flabébé-Yellow'],
+      catchRate: {
+        base: 225,
+        percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -602,7 +763,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       evos: ['florges'],
       evoLevel: 19,
       eggGroups: ['Fairy'],
-      cosmeticFormes: ['Floette-Blue', 'Floette-Orange', 'Floette-White', 'Floette-Yellow']
+      cosmeticFormes: ['Floette-Blue', 'Floette-Orange', 'Floette-White', 'Floette-Yellow'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -627,7 +795,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 0.2,
       weightkg: 0.9,
       color: 'White',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -653,7 +828,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'floette',
       evoLevel: 19,
       eggGroups: ['Fairy'],
-      cosmeticFormes: ['Florges-Blue', 'Florges-Orange', 'Florges-White', 'Florges-Yellow']
+      cosmeticFormes: ['Florges-Blue', 'Florges-Orange', 'Florges-White', 'Florges-Yellow'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -676,7 +858,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 31,
       color: 'Brown',
       evos: ['gogoat'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 200,
+        percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -700,7 +889,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'skiddo',
       evoLevel: 32,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -723,7 +919,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 8,
       color: 'White',
       evos: ['pangoro'],
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 220,
+        percentageWithOrdinaryPokeballAtFullHealth: '39.3%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: false
     }
   ],
   [
@@ -747,7 +950,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'White',
       prevo: 'pancham',
       evoLevel: 'Level 32 with Dark Type in Party',
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 65,
+        percentageWithOrdinaryPokeballAtFullHealth: '15.7%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: false
     }
   ],
   [
@@ -781,7 +991,14 @@ const entries: [string, Pokemon.DexEntry][] = [
         'Furfrou-Matron',
         'Furfrou-Pharaoh',
         'Furfrou-Star'
-      ]
+      ],
+      catchRate: {
+        base: 160,
+        percentageWithOrdinaryPokeballAtFullHealth: '30.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -804,7 +1021,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 3.5,
       color: 'Gray',
       evos: ['meowstic'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -830,7 +1054,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'espurr',
       evoLevel: 25,
       eggGroups: ['Field'],
-      otherFormes: ['meowsticf']
+      otherFormes: ['meowsticf'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -857,7 +1088,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'White',
       prevo: 'espurr',
       evoLevel: 25,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -880,7 +1118,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 2,
       color: 'Brown',
       evos: ['doublade'],
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 180,
+        percentageWithOrdinaryPokeballAtFullHealth: '33.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -905,7 +1150,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'honedge',
       evos: ['aegislash'],
       evoLevel: 35,
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 90,
+        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -931,7 +1183,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'doublade',
       evoLevel: 35,
       eggGroups: ['Mineral'],
-      otherFormes: ['aegislashblade']
+      otherFormes: ['aegislashblade'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -958,7 +1217,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'doublade',
       evoLevel: 35,
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -981,7 +1247,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 0.5,
       color: 'Pink',
       evos: ['aromatisse'],
-      eggGroups: ['Fairy']
+      eggGroups: ['Fairy'],
+      catchRate: {
+        base: 200,
+        percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1005,7 +1278,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Pink',
       prevo: 'spritzee',
       evoLevel: 'Trade while holding Sachet',
-      eggGroups: ['Fairy']
+      eggGroups: ['Fairy'],
+      catchRate: {
+        base: 140,
+        percentageWithOrdinaryPokeballAtFullHealth: '28%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1028,7 +1308,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 3.5,
       color: 'White',
       evos: ['slurpuff'],
-      eggGroups: ['Fairy']
+      eggGroups: ['Fairy'],
+      catchRate: {
+        base: 200,
+        percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1052,7 +1339,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'White',
       prevo: 'swirlix',
       evoLevel: 'Trade while holding Whipped Dream',
-      eggGroups: ['Fairy']
+      eggGroups: ['Fairy'],
+      catchRate: {
+        base: 140,
+        percentageWithOrdinaryPokeballAtFullHealth: '28%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1075,7 +1369,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 3.5,
       color: 'Blue',
       evos: ['malamar'],
-      eggGroups: ['Water 1', 'Water 2']
+      eggGroups: ['Water 1', 'Water 2'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1099,7 +1400,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Blue',
       prevo: 'inkay',
       evoLevel: 'Level 30, Flip device upside down',
-      eggGroups: ['Water 1', 'Water 2']
+      eggGroups: ['Water 1', 'Water 2'],
+      catchRate: {
+        base: 80,
+        percentageWithOrdinaryPokeballAtFullHealth: '18.4%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1122,7 +1430,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 31,
       color: 'Brown',
       evos: ['barbaracle'],
-      eggGroups: ['Water 3']
+      eggGroups: ['Water 3'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1146,7 +1461,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'binacle',
       evoLevel: 39,
-      eggGroups: ['Water 3']
+      eggGroups: ['Water 3'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1169,7 +1491,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 7.3,
       color: 'Brown',
       evos: ['dragalge'],
-      eggGroups: ['Water 1', 'Dragon']
+      eggGroups: ['Water 1', 'Dragon'],
+      catchRate: {
+        base: 225,
+        percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1193,7 +1522,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'skrelp',
       evoLevel: 48,
-      eggGroups: ['Water 1', 'Dragon']
+      eggGroups: ['Water 1', 'Dragon'],
+      catchRate: {
+        base: 55,
+        percentageWithOrdinaryPokeballAtFullHealth: '13.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1216,7 +1552,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 8.3,
       color: 'Blue',
       evos: ['clawitzer'],
-      eggGroups: ['Water 1', 'Water 3']
+      eggGroups: ['Water 1', 'Water 3'],
+      catchRate: {
+        base: 225,
+        percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -1240,7 +1583,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Blue',
       prevo: 'clauncher',
       evoLevel: 37,
-      eggGroups: ['Water 1', 'Water 3']
+      eggGroups: ['Water 1', 'Water 3'],
+      catchRate: {
+        base: 55,
+        percentageWithOrdinaryPokeballAtFullHealth: '13.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: false
     }
   ],
   [
@@ -1263,7 +1613,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 6,
       color: 'Yellow',
       evos: ['heliolisk'],
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1287,7 +1644,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Yellow',
       prevo: 'helioptile',
       evoLevel: 'use Sun Stone',
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1310,7 +1674,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 26,
       color: 'Brown',
       evos: ['tyrantrum'],
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 7710,
+      isEggObtainable: false
     }
   ],
   [
@@ -1334,7 +1705,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Red',
       prevo: 'tyrunt',
       evoLevel: '39 Daytime',
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 7710,
+      isEggObtainable: false
     }
   ],
   [
@@ -1357,7 +1735,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 25.2,
       color: 'Blue',
       evos: ['aurorus'],
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 7710,
+      isEggObtainable: false
     }
   ],
   [
@@ -1381,7 +1766,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Blue',
       prevo: 'amaura',
       evoLevel: '39 Nighttime',
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 7710,
+      isEggObtainable: false
     }
   ],
   [
@@ -1405,7 +1797,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Pink',
       prevo: 'eevee',
       evoLevel: 'Level up while having high Affection and knowing a Fairy type move',
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 8995,
+      isEggObtainable: false
     }
   ],
   [
@@ -1427,7 +1826,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 0.8,
       weightkg: 21.5,
       color: 'Green',
-      eggGroups: ['Flying', 'Human-Like']
+      eggGroups: ['Flying', 'Human-Like'],
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1449,7 +1855,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 0.2,
       weightkg: 2.2,
       color: 'Yellow',
-      eggGroups: ['Field', 'Fairy']
+      eggGroups: ['Field', 'Fairy'],
+      catchRate: {
+        base: 180,
+        percentageWithOrdinaryPokeballAtFullHealth: '33.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1471,7 +1884,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 0.3,
       weightkg: 5.7,
       color: 'Gray',
-      eggGroups: ['Fairy', 'Mineral']
+      eggGroups: ['Fairy', 'Mineral'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: false
     }
   ],
   [
@@ -1494,7 +1914,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 2.8,
       color: 'Purple',
       evos: ['sliggoo'],
-      eggGroups: ['Dragon']
+      eggGroups: ['Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: false
     }
   ],
   [
@@ -1519,7 +1946,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'goomy',
       evos: ['goodra'],
       evoLevel: 40,
-      eggGroups: ['Dragon']
+      eggGroups: ['Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: false
     }
   ],
   [
@@ -1543,7 +1977,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Purple',
       prevo: 'sliggoo',
       evoLevel: 'Level 50 In Rain',
-      eggGroups: ['Dragon']
+      eggGroups: ['Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: false
     }
   ],
   [
@@ -1565,7 +2006,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 0.2,
       weightkg: 3,
       color: 'Gray',
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1588,7 +2036,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 7,
       color: 'Brown',
       evos: ['trevenant'],
-      eggGroups: ['Grass', 'Amorphous']
+      eggGroups: ['Grass', 'Amorphous'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1612,7 +2067,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'phantump',
       evoLevel: 'Trade',
-      eggGroups: ['Grass', 'Amorphous']
+      eggGroups: ['Grass', 'Amorphous'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1637,7 +2099,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       evos: ['gourgeist'],
       eggGroups: ['Amorphous'],
-      otherFormes: ['pumpkaboosmall', 'pumpkaboolarge', 'pumpkaboosuper']
+      otherFormes: ['pumpkaboosmall', 'pumpkaboolarge', 'pumpkaboosuper'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1663,7 +2132,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 3.5,
       color: 'Brown',
       evos: ['gourgeistsmall'],
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1689,7 +2165,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 7.5,
       color: 'Brown',
       evos: ['gourgeistlarge'],
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1715,7 +2198,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 15,
       color: 'Brown',
       evos: ['gourgeistsuper'],
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1741,7 +2231,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       prevo: 'pumpkaboo',
       evoLevel: 'Trade',
       eggGroups: ['Amorphous'],
-      otherFormes: ['gourgeistsmall', 'gourgeistlarge', 'gourgeistsuper']
+      otherFormes: ['gourgeistsmall', 'gourgeistlarge', 'gourgeistsuper'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1768,7 +2265,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'pumpkaboosmall',
       evoLevel: 'Trade',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1795,7 +2299,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'pumpkaboolarge',
       evoLevel: 'Trade',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1822,7 +2333,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Brown',
       prevo: 'pumpkaboosuper',
       evoLevel: 'Trade',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1845,7 +2363,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 99.5,
       color: 'Blue',
       evos: ['avalugg'],
-      eggGroups: ['Monster', 'Mineral']
+      eggGroups: ['Monster', 'Mineral'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1869,7 +2394,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Blue',
       prevo: 'bergmite',
       evoLevel: 37,
-      eggGroups: ['Monster', 'Mineral']
+      eggGroups: ['Monster', 'Mineral'],
+      catchRate: {
+        base: 55,
+        percentageWithOrdinaryPokeballAtFullHealth: '13.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1892,7 +2424,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 8,
       color: 'Purple',
       evos: ['noivern'],
-      eggGroups: ['Flying', 'Dragon']
+      eggGroups: ['Flying', 'Dragon'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1916,7 +2455,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       color: 'Purple',
       prevo: 'noibat',
       evoLevel: 48,
-      eggGroups: ['Flying', 'Dragon']
+      eggGroups: ['Flying', 'Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: false
     }
   ],
   [
@@ -1925,7 +2471,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'xerneas',
       num: 716,
       types: ['Fairy'],
-      baseForme: 'Active', // Neutral is technically the base, but it can't be used in battle
+      baseForme: 'Active',
       genderRatio: { male: 0, female: 0 },
       baseStats: {
         hp: 126,
@@ -1940,7 +2486,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 215,
       color: 'Blue',
       otherFormes: ['Xerneas-Neutral'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -1965,7 +2518,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 3,
       weightkg: 215,
       color: 'Blue',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -1987,7 +2547,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 5.8,
       weightkg: 203,
       color: 'Red',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2011,7 +2578,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 305,
       color: 'Green',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['zygarde10', 'zygardecomplete']
+      otherFormes: ['zygarde10', 'zygardecomplete'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2036,7 +2610,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 1.2,
       weightkg: 33.5,
       color: 'Green',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2061,7 +2642,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 4.5,
       weightkg: 610,
       color: 'Green',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2084,7 +2672,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 8.8,
       color: 'Pink',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['dianciemega']
+      otherFormes: ['dianciemega'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: false
     }
   ],
   [
@@ -2109,7 +2704,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 1.1,
       weightkg: 27.8,
       color: 'Pink',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: false
     }
   ],
   [
@@ -2133,7 +2735,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       weightkg: 9,
       color: 'Purple',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['hoopaunbound']
+      otherFormes: ['hoopaunbound'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2158,7 +2767,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 6.5,
       weightkg: 490,
       color: 'Purple',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2180,7 +2796,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 1.7,
       weightkg: 195,
       color: 'Brown',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ]
 ];

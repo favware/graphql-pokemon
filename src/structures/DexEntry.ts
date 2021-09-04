@@ -1,4 +1,5 @@
 import AbilitiesEntry from '#structures/AbilitiesEntry';
+import CatchRateEntry from '#structures/CatchRateEntry';
 import GenderEntry from '#structures/GenderEntry';
 import StatsEntry from '#structures/StatsEntry';
 import { Field, Float, Int, ObjectType } from 'type-graphql';
@@ -50,6 +51,9 @@ export default class DexEntry {
   @Field(() => Float, { description: 'The weight of a Pokémon in kilograms' })
   public weight!: number;
 
+  @Field(() => Boolean, { description: 'Whether the egg of a Pokémon is obtainable' })
+  public isEggObtainable!: boolean;
+
   @Field(() => String, { nullable: true, description: 'Base form if this entry describes an alternate form' })
   public baseForme?: string;
 
@@ -68,4 +72,13 @@ export default class DexEntry {
     ].join(' ')
   })
   public cosmeticFormes?: string[];
+
+  @Field(() => CatchRateEntry, { nullable: true, description: 'The catch rate data for a Pokémon' })
+  public catchRate?: CatchRateEntry;
+
+  @Field(() => String, { nullable: true, description: 'The levelling rate of a Pokémon ' })
+  public levellingRate?: string;
+
+  @Field(() => Int, { nullable: true, description: 'The minimum number of steps required for the egg of a Pokémon to hatch' })
+  public minimumHatchTime?: number;
 }

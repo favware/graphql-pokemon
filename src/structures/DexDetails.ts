@@ -48,4 +48,7 @@ export default class DexDetails extends DexEntry {
 
   @Field(() => String, { description: 'Smogon page for a Pokémon' })
   public smogonPage!: string;
+
+  @Field(() => Int, { nullable: true, description: 'The maximum number of steps required for the egg of a Pokémon to hatch' })
+  public maximumHatchTime?: number;
 }

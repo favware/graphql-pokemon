@@ -106,6 +106,7 @@ export default class DexService {
       addPropertyToClass(dexEntry, 'abilities', abilitiesData, dexEntryFields);
       addPropertyToClass(dexEntry, 'gender', genderData, dexEntryFields);
       addPropertyToClass(dexEntry, 'baseStats', baseStatsData, dexEntryFields);
+      addPropertyToClass(dexEntry, 'catchRate', catchRateData, dexEntryFields);
       addPropertyToClass(dexEntry, 'num', page.item.num, dexEntryFields);
       addPropertyToClass(dexEntry, 'species', page.item.species, dexEntryFields);
       addPropertyToClass(dexEntry, 'types', page.item.types, dexEntryFields);
@@ -272,6 +273,7 @@ export default class DexService {
     addPropertyToClass(pokemonData, 'abilities', abilitiesData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
     addPropertyToClass(pokemonData, 'gender', genderData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
     addPropertyToClass(pokemonData, 'baseStats', baseStatsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
+    addPropertyToClass(pokemonData, 'catchRate', catchRateData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}catchRate`);
     addPropertyToClass(pokemonData, 'num', basePokemonData.num, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
     addPropertyToClass(pokemonData, 'species', basePokemonData.species, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
     addPropertyToClass(pokemonData, 'types', basePokemonData.types, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}types`);

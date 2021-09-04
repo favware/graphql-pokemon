@@ -41,7 +41,7 @@ export namespace Pokemon {
     special?: string;
   }
 
-  export interface CatchRate {
+  export interface CatchRateEntry {
     base: number;
     percentageWithOrdinaryPokeballAtFullHealth: string;
   }
@@ -70,7 +70,7 @@ export namespace Pokemon {
     specialShinyBackSprite?: string;
     specialBackSprite?: string;
     cosmeticFormes?: string[];
-    catchRate?: CatchRate;
+    catchRate?: CatchRateEntry;
     levellingRate?: LevellingRateUnion;
     minimumHatchTime?: number;
     isEggObtainable: boolean;

@@ -73,6 +73,10 @@ Object {
       "spd": 120,
       "spe": 120,
     },
+    "catchRate": Object {
+      "base": 3,
+      "percentageWithOrdinaryPokeballAtFullHealth": "1.6%",
+    },
     "color": "White",
     "eggGroups": Array [
       "Undiscovered",
@@ -82,6 +86,9 @@ Object {
       "male": 0,
     },
     "heightm": 3.2,
+    "isEggObtainable": false,
+    "levellingRate": "Slow",
+    "minimumHatchTime": 30840,
     "num": 493,
     "otherFormes": Array [
       "arceusbug",
@@ -135,6 +142,10 @@ Object {
       "spd": 100,
       "spe": 80,
     },
+    "catchRate": Object {
+      "base": 45,
+      "percentageWithOrdinaryPokeballAtFullHealth": "11.9%",
+    },
     "color": "Brown",
     "eggGroups": Array [
       "Water 1",
@@ -146,6 +157,9 @@ Object {
       "male": 0.5,
     },
     "heightm": 2.2,
+    "isEggObtainable": true,
+    "levellingRate": "Slow",
+    "minimumHatchTime": 10280,
     "num": 149,
     "prevo": "dragonair",
     "species": "dragonite",

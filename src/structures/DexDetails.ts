@@ -7,10 +7,10 @@ export default class DexDetails extends DexEntry {
   @Field(() => Int, { description: 'The total of all base stats for a Pokémon' })
   public baseStatsTotal!: number;
 
-  @Field(() => [DexDetails], { nullable: true, description: 'The evolutions for a Pokémon, if any ' })
+  @Field(() => [DexDetails], { nullable: true, description: 'The evolutions for a Pokémon, if any' })
   public evolutions?: this[];
 
-  @Field(() => [DexDetails], { nullable: true, description: 'The preevolutions for a Pokémon, if any ' })
+  @Field(() => [DexDetails], { nullable: true, description: 'The preevolutions for a Pokémon, if any' })
   public preevolutions?: this[];
 
   @Field(() => [FlavorEntry], { description: 'The flavortexts for a Pokémon' })
@@ -48,4 +48,7 @@ export default class DexDetails extends DexEntry {
 
   @Field(() => String, { description: 'Smogon page for a Pokémon' })
   public smogonPage!: string;
+
+  @Field(() => Int, { nullable: true, description: 'The maximum number of steps required for the egg of a Pokémon to hatch' })
+  public maximumHatchTime?: number;
 }

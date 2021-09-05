@@ -1,6 +1,7 @@
 import PokemonPaginatedArgs from '#arguments/PokemonPaginatedArgs';
 import pokedex from '#assets/pokedex';
 import AbilitiesEntry from '#structures/AbilitiesEntry';
+import CatchRateEntry from '#structures/CatchRateEntry';
 import DexDetails from '#structures/DexDetails';
 import DexEntry from '#structures/DexEntry';
 import FlavorEntry from '#structures/FlavorEntry';
@@ -37,9 +38,14 @@ export default class DexService {
       const genderData = new GenderEntry();
       const baseStatsData = new StatsEntry();
       const abilitiesData = new AbilitiesEntry();
+      const catchRateData = new CatchRateEntry();
       const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.item.genderRatio || {
         male: 0.5,
         female: 0.5
+      };
+      const pageCatchRate: Pokemon.DexEntry['catchRate'] = page.item.catchRate || {
+        base: 0,
+        percentageWithOrdinaryPokeballAtFullHealth: '0%'
       };
 
       addPropertyToClass(genderData, 'male', `${pageGenderRatio.male * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.male');
@@ -87,10 +93,20 @@ export default class DexService {
         'abilities.special'
       );
 
+      addPropertyToClass(catchRateData, 'base', pageCatchRate.base, requestedFields as GraphQLSet<keyof CatchRateEntry>, 'catchRate.base');
+      addPropertyToClass(
+        catchRateData,
+        'percentageWithOrdinaryPokeballAtFullHealth',
+        pageCatchRate.percentageWithOrdinaryPokeballAtFullHealth,
+        requestedFields as GraphQLSet<keyof CatchRateEntry>,
+        'catchRate.percentageWithOrdinaryPokeballAtFullHealth'
+      );
+
       const dexEntryFields = requestedFields as GraphQLSet<keyof DexEntry>;
       addPropertyToClass(dexEntry, 'abilities', abilitiesData, dexEntryFields);
       addPropertyToClass(dexEntry, 'gender', genderData, dexEntryFields);
       addPropertyToClass(dexEntry, 'baseStats', baseStatsData, dexEntryFields);
+      addPropertyToClass(dexEntry, 'catchRate', catchRateData, dexEntryFields);
       addPropertyToClass(dexEntry, 'num', page.item.num, dexEntryFields);
       addPropertyToClass(dexEntry, 'species', page.item.species, dexEntryFields);
       addPropertyToClass(dexEntry, 'types', page.item.types, dexEntryFields);
@@ -107,6 +123,9 @@ export default class DexService {
       addPropertyToClass(dexEntry, 'baseSpecies', page.item.baseSpecies, dexEntryFields);
       addPropertyToClass(dexEntry, 'otherFormes', page.item.otherFormes, dexEntryFields);
       addPropertyToClass(dexEntry, 'cosmeticFormes', page.item.cosmeticFormes, dexEntryFields);
+      addPropertyToClass(dexEntry, 'levellingRate', page.item.levellingRate, dexEntryFields);
+      addPropertyToClass(dexEntry, 'minimumHatchTime', page.item.minimumHatchTime, dexEntryFields);
+      addPropertyToClass(dexEntry, 'isEggObtainable', page.item.isEggObtainable, dexEntryFields);
 
       queryResults.push(dexEntry);
     }
@@ -135,11 +154,16 @@ export default class DexService {
     const genderData = new GenderEntry();
     const baseStatsData = new StatsEntry();
     const abilitiesData = new AbilitiesEntry();
+    const catchRateData = new CatchRateEntry();
     const evolutionChain: Promise<DexDetails>[] = [];
     const preevolutionChain: Promise<DexDetails>[] = [];
     const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = basePokemonData.genderRatio || {
       male: 0.5,
       female: 0.5
+    };
+    const basePokemonCatchRate: Pokemon.DexEntry['catchRate'] = basePokemonData.catchRate || {
+      base: 0,
+      percentageWithOrdinaryPokeballAtFullHealth: '0%'
     };
 
     addPropertyToClass(
@@ -229,11 +253,27 @@ export default class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}abilities.special`
     );
 
+    addPropertyToClass(
+      catchRateData,
+      'base',
+      basePokemonCatchRate.base,
+      requestedFields as GraphQLSet<keyof CatchRateEntry>,
+      `${recursingAs ? `${recursingAs}.` : ''}catchRate.base`
+    );
+    addPropertyToClass(
+      catchRateData,
+      'percentageWithOrdinaryPokeballAtFullHealth',
+      basePokemonCatchRate.percentageWithOrdinaryPokeballAtFullHealth,
+      requestedFields as GraphQLSet<keyof CatchRateEntry>,
+      `${recursingAs ? `${recursingAs}.` : ''}catchRate.percentageWithOrdinaryPokeballAtFullHealth`
+    );
+
     const dexDetailsFields = requestedFields as GraphQLSet<keyof DexDetails>;
 
     addPropertyToClass(pokemonData, 'abilities', abilitiesData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
     addPropertyToClass(pokemonData, 'gender', genderData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
     addPropertyToClass(pokemonData, 'baseStats', baseStatsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
+    addPropertyToClass(pokemonData, 'catchRate', catchRateData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}catchRate`);
     addPropertyToClass(pokemonData, 'num', basePokemonData.num, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
     addPropertyToClass(pokemonData, 'species', basePokemonData.species, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
     addPropertyToClass(pokemonData, 'types', basePokemonData.types, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}types`);
@@ -280,6 +320,34 @@ export default class DexService {
       this.parseBaseStatsTotal(basePokemonData.baseStats),
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStatsTotal`
+    );
+    addPropertyToClass(
+      pokemonData,
+      'levellingRate',
+      basePokemonData.levellingRate,
+      dexDetailsFields,
+      `${recursingAs ? `${recursingAs}.` : ''}levellingRate`
+    );
+    addPropertyToClass(
+      pokemonData,
+      'minimumHatchTime',
+      basePokemonData.minimumHatchTime,
+      dexDetailsFields,
+      `${recursingAs ? `${recursingAs}.` : ''}minimumHatchTime`
+    );
+    addPropertyToClass(
+      pokemonData,
+      'maximumHatchTime',
+      this.parseMinimumHatchTimeForMaximumHatchTime(basePokemonData.minimumHatchTime),
+      dexDetailsFields,
+      `${recursingAs ? `${recursingAs}.` : ''}maximumHatchTime`
+    );
+    addPropertyToClass(
+      pokemonData,
+      'isEggObtainable',
+      basePokemonData.isEggObtainable,
+      dexDetailsFields,
+      `${recursingAs ? `${recursingAs}.` : ''}isEggObtainable`
     );
     addPropertyToClass(pokemonData, 'flavorTexts', [], dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}flavorTexts`);
     addPropertyToClass(
@@ -530,6 +598,10 @@ export default class DexService {
 
   private parseBaseStatsTotal(baseStats: Pokemon.Stats) {
     return baseStats.hp + baseStats.atk + baseStats.def + baseStats.spa + baseStats.spd + baseStats.spe;
+  }
+
+  private parseMinimumHatchTimeForMaximumHatchTime(minimumHatchTime?: number) {
+    return minimumHatchTime ? minimumHatchTime + 256 : undefined;
   }
 
   private parseFormeIdentifiers(pokemon: string) {

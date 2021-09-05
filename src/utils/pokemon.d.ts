@@ -41,6 +41,11 @@ export namespace Pokemon {
     special?: string;
   }
 
+  export interface CatchRateEntry {
+    base: number;
+    percentageWithOrdinaryPokeballAtFullHealth: string;
+  }
+
   export interface DexEntry {
     abilities: Abilities;
     baseForme?: string;
@@ -65,6 +70,10 @@ export namespace Pokemon {
     specialShinyBackSprite?: string;
     specialBackSprite?: string;
     cosmeticFormes?: string[];
+    catchRate?: CatchRateEntry;
+    levellingRate?: LevellingRateUnion;
+    minimumHatchTime?: number;
+    isEggObtainable: boolean;
   }
 
   export interface Ability {
@@ -135,6 +144,7 @@ export namespace Pokemon {
     flavor_text: string;
   }
 
+  export type LevellingRateUnion = 'Slow' | 'Medium Slow' | 'Medium Fast' | 'Fast' | 'Erratic' | 'Fluctuating';
   export type MoveCategoryUnion = 'Physical' | 'Special' | 'Status';
   export type MoveTargetUnion =
     | 'Random'

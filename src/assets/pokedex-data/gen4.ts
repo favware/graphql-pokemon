@@ -8,7 +8,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'turtwig',
       num: 387,
       types: ['Grass'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 55,
         atk: 68,
@@ -17,12 +20,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 55,
         spe: 31
       },
-      abilities: { first: 'Overgrow', hidden: 'Shell Armor' },
+      abilities: {
+        first: 'Overgrow',
+        hidden: 'Shell Armor'
+      },
       heightm: 0.4,
       weightkg: 10.2,
       color: 'Green',
       evos: ['grotle'],
-      eggGroups: ['Monster', 'Grass']
+      eggGroups: ['Monster', 'Grass'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -31,7 +44,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'grotle',
       num: 388,
       types: ['Grass'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 75,
         atk: 89,
@@ -40,14 +56,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 65,
         spe: 36
       },
-      abilities: { first: 'Overgrow', hidden: 'Shell Armor' },
+      abilities: {
+        first: 'Overgrow',
+        hidden: 'Shell Armor'
+      },
       heightm: 1.1,
       weightkg: 97,
       color: 'Green',
       prevo: 'turtwig',
       evos: ['torterra'],
       evoLevel: 18,
-      eggGroups: ['Monster', 'Grass']
+      eggGroups: ['Monster', 'Grass'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -56,7 +82,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'torterra',
       num: 389,
       types: ['Grass', 'Ground'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 95,
         atk: 109,
@@ -65,13 +94,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 85,
         spe: 56
       },
-      abilities: { first: 'Overgrow', hidden: 'Shell Armor' },
+      abilities: {
+        first: 'Overgrow',
+        hidden: 'Shell Armor'
+      },
       heightm: 2.2,
       weightkg: 310,
       color: 'Green',
       prevo: 'grotle',
       evoLevel: 32,
-      eggGroups: ['Monster', 'Grass']
+      eggGroups: ['Monster', 'Grass'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -80,7 +119,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'chimchar',
       num: 390,
       types: ['Fire'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 44,
         atk: 58,
@@ -89,12 +131,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 44,
         spe: 61
       },
-      abilities: { first: 'Blaze', hidden: 'Iron Fist' },
+      abilities: {
+        first: 'Blaze',
+        hidden: 'Iron Fist'
+      },
       heightm: 0.5,
       weightkg: 6.2,
       color: 'Brown',
       evos: ['monferno'],
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -103,7 +155,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'monferno',
       num: 391,
       types: ['Fire', 'Fighting'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 64,
         atk: 78,
@@ -112,14 +167,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 52,
         spe: 81
       },
-      abilities: { first: 'Blaze', hidden: 'Iron Fist' },
+      abilities: {
+        first: 'Blaze',
+        hidden: 'Iron Fist'
+      },
       heightm: 0.9,
       weightkg: 22,
       color: 'Brown',
       prevo: 'chimchar',
       evos: ['infernape'],
       evoLevel: 14,
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -128,7 +193,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'infernape',
       num: 392,
       types: ['Fire', 'Fighting'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 76,
         atk: 104,
@@ -137,13 +205,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 71,
         spe: 108
       },
-      abilities: { first: 'Blaze', hidden: 'Iron Fist' },
+      abilities: {
+        first: 'Blaze',
+        hidden: 'Iron Fist'
+      },
       heightm: 1.2,
       weightkg: 55,
       color: 'Brown',
       prevo: 'monferno',
       evoLevel: 36,
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -152,7 +230,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'piplup',
       num: 393,
       types: ['Water'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 53,
         atk: 51,
@@ -161,12 +242,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 56,
         spe: 40
       },
-      abilities: { first: 'Torrent', hidden: 'Defiant' },
+      abilities: {
+        first: 'Torrent',
+        hidden: 'Defiant'
+      },
       heightm: 0.4,
       weightkg: 5.2,
       color: 'Blue',
       evos: ['prinplup'],
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -175,7 +266,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'prinplup',
       num: 394,
       types: ['Water'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 64,
         atk: 66,
@@ -184,14 +278,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 76,
         spe: 50
       },
-      abilities: { first: 'Torrent', hidden: 'Defiant' },
+      abilities: {
+        first: 'Torrent',
+        hidden: 'Defiant'
+      },
       heightm: 0.8,
       weightkg: 23,
       color: 'Blue',
       prevo: 'piplup',
       evos: ['empoleon'],
       evoLevel: 16,
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -200,7 +304,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'empoleon',
       num: 395,
       types: ['Water', 'Steel'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 84,
         atk: 86,
@@ -209,13 +316,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 101,
         spe: 60
       },
-      abilities: { first: 'Torrent', hidden: 'Defiant' },
+      abilities: {
+        first: 'Torrent',
+        hidden: 'Defiant'
+      },
       heightm: 1.7,
       weightkg: 84.5,
       color: 'Blue',
       prevo: 'prinplup',
       evoLevel: 36,
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -224,7 +341,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'starly',
       num: 396,
       types: ['Normal', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 40,
         atk: 55,
@@ -233,12 +353,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 30,
         spe: 60
       },
-      abilities: { first: 'Keen Eye', hidden: 'Reckless' },
+      abilities: {
+        first: 'Keen Eye',
+        hidden: 'Reckless'
+      },
       heightm: 0.3,
       weightkg: 2,
       color: 'Brown',
       evos: ['staravia'],
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -247,7 +377,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'staravia',
       num: 397,
       types: ['Normal', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 55,
         atk: 75,
@@ -256,14 +389,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 40,
         spe: 80
       },
-      abilities: { first: 'Intimidate', hidden: 'Reckless' },
+      abilities: {
+        first: 'Intimidate',
+        hidden: 'Reckless'
+      },
       heightm: 0.6,
       weightkg: 15.5,
       color: 'Brown',
       prevo: 'starly',
       evos: ['staraptor'],
       evoLevel: 14,
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -272,7 +415,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'staraptor',
       num: 398,
       types: ['Normal', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 85,
         atk: 120,
@@ -281,13 +427,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 60,
         spe: 100
       },
-      abilities: { first: 'Intimidate', hidden: 'Reckless' },
+      abilities: {
+        first: 'Intimidate',
+        hidden: 'Reckless'
+      },
       heightm: 1.2,
       weightkg: 24.9,
       color: 'Brown',
       prevo: 'staravia',
       evoLevel: 34,
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -296,7 +452,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'bidoof',
       num: 399,
       types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 59,
         atk: 45,
@@ -305,12 +464,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 40,
         spe: 31
       },
-      abilities: { first: 'Simple', second: 'Unaware', hidden: 'Moody' },
+      abilities: {
+        first: 'Simple',
+        second: 'Unaware',
+        hidden: 'Moody'
+      },
       heightm: 0.5,
       weightkg: 20,
       color: 'Brown',
       evos: ['bibarel'],
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -319,7 +489,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'bibarel',
       num: 400,
       types: ['Normal', 'Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 79,
         atk: 85,
@@ -328,13 +501,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 60,
         spe: 71
       },
-      abilities: { first: 'Simple', second: 'Unaware', hidden: 'Moody' },
+      abilities: {
+        first: 'Simple',
+        second: 'Unaware',
+        hidden: 'Moody'
+      },
       heightm: 1,
       weightkg: 31.5,
       color: 'Brown',
       prevo: 'bidoof',
       evoLevel: 15,
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 127,
+        percentageWithOrdinaryPokeballAtFullHealth: '26%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -343,7 +527,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'kricketot',
       num: 401,
       types: ['Bug'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 37,
         atk: 25,
@@ -352,12 +539,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 41,
         spe: 25
       },
-      abilities: { first: 'Shed Skin', hidden: 'Run Away' },
+      abilities: {
+        first: 'Shed Skin',
+        hidden: 'Run Away'
+      },
       heightm: 0.3,
       weightkg: 2.2,
       color: 'Red',
       evos: ['kricketune'],
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -366,7 +563,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'kricketune',
       num: 402,
       types: ['Bug'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 77,
         atk: 85,
@@ -375,13 +575,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 51,
         spe: 65
       },
-      abilities: { first: 'Swarm', hidden: 'Technician' },
+      abilities: {
+        first: 'Swarm',
+        hidden: 'Technician'
+      },
       heightm: 1,
       weightkg: 25.5,
       color: 'Red',
       prevo: 'kricketot',
       evoLevel: 10,
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -390,7 +600,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'shinx',
       num: 403,
       types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 45,
         atk: 65,
@@ -399,12 +612,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 34,
         spe: 45
       },
-      abilities: { first: 'Rivalry', second: 'Intimidate', hidden: 'Guts' },
+      abilities: {
+        first: 'Rivalry',
+        second: 'Intimidate',
+        hidden: 'Guts'
+      },
       heightm: 0.5,
       weightkg: 9.5,
       color: 'Blue',
       evos: ['luxio'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 235,
+        percentageWithOrdinaryPokeballAtFullHealth: '41.3%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -413,7 +637,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'luxio',
       num: 404,
       types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 60,
         atk: 85,
@@ -422,14 +649,25 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 49,
         spe: 60
       },
-      abilities: { first: 'Rivalry', second: 'Intimidate', hidden: 'Guts' },
+      abilities: {
+        first: 'Rivalry',
+        second: 'Intimidate',
+        hidden: 'Guts'
+      },
       heightm: 0.9,
       weightkg: 30.5,
       color: 'Blue',
       prevo: 'shinx',
       evos: ['luxray'],
       evoLevel: 15,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -438,7 +676,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'luxray',
       num: 405,
       types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 80,
         atk: 120,
@@ -447,13 +688,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 79,
         spe: 70
       },
-      abilities: { first: 'Rivalry', second: 'Intimidate', hidden: 'Guts' },
+      abilities: {
+        first: 'Rivalry',
+        second: 'Intimidate',
+        hidden: 'Guts'
+      },
       heightm: 1.4,
       weightkg: 42,
       color: 'Blue',
       prevo: 'luxio',
       evoLevel: 30,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -462,7 +714,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'budew',
       num: 406,
       types: ['Grass', 'Poison'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 40,
         atk: 30,
@@ -471,12 +726,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 70,
         spe: 55
       },
-      abilities: { first: 'Natural Cure', second: 'Poison Point', hidden: 'Leaf Guard' },
+      abilities: {
+        first: 'Natural Cure',
+        second: 'Poison Point',
+        hidden: 'Leaf Guard'
+      },
       heightm: 0.2,
       weightkg: 1.2,
       color: 'Green',
       evos: ['roselia'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -485,7 +751,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'roserade',
       num: 407,
       types: ['Grass', 'Poison'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 60,
         atk: 70,
@@ -494,13 +763,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 105,
         spe: 90
       },
-      abilities: { first: 'Natural Cure', second: 'Poison Point', hidden: 'Technician' },
+      abilities: {
+        first: 'Natural Cure',
+        second: 'Poison Point',
+        hidden: 'Technician'
+      },
       heightm: 0.9,
       weightkg: 14.5,
       color: 'Green',
       prevo: 'roselia',
       evoLevel: 'use Shiny Stone',
-      eggGroups: ['Fairy', 'Grass']
+      eggGroups: ['Fairy', 'Grass'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -509,7 +789,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'cranidos',
       num: 408,
       types: ['Rock'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 67,
         atk: 125,
@@ -518,12 +801,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 30,
         spe: 58
       },
-      abilities: { first: 'Mold Breaker', hidden: 'Sheer Force' },
+      abilities: {
+        first: 'Mold Breaker',
+        hidden: 'Sheer Force'
+      },
       heightm: 0.9,
       weightkg: 31.5,
       color: 'Blue',
       evos: ['rampardos'],
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Erratic',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -532,7 +825,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rampardos',
       num: 409,
       types: ['Rock'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 97,
         atk: 165,
@@ -541,13 +837,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 50,
         spe: 58
       },
-      abilities: { first: 'Mold Breaker', hidden: 'Sheer Force' },
+      abilities: {
+        first: 'Mold Breaker',
+        hidden: 'Sheer Force'
+      },
       heightm: 1.6,
       weightkg: 102.5,
       color: 'Blue',
       prevo: 'cranidos',
       evoLevel: 30,
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Erratic',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -556,7 +862,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'shieldon',
       num: 410,
       types: ['Rock', 'Steel'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 30,
         atk: 42,
@@ -565,12 +874,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 88,
         spe: 30
       },
-      abilities: { first: 'Sturdy', hidden: 'Soundproof' },
+      abilities: {
+        first: 'Sturdy',
+        hidden: 'Soundproof'
+      },
       heightm: 0.5,
       weightkg: 57,
       color: 'Gray',
       evos: ['bastiodon'],
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Erratic',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -579,7 +898,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'bastiodon',
       num: 411,
       types: ['Rock', 'Steel'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 60,
         atk: 52,
@@ -588,13 +910,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 138,
         spe: 30
       },
-      abilities: { first: 'Sturdy', hidden: 'Soundproof' },
+      abilities: {
+        first: 'Sturdy',
+        hidden: 'Soundproof'
+      },
       heightm: 1.3,
       weightkg: 149.5,
       color: 'Gray',
       prevo: 'shieldon',
       evoLevel: 30,
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Erratic',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -603,7 +935,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'burmy',
       num: 412,
       types: ['Bug'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 40,
         atk: 29,
@@ -613,13 +948,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 36
       },
       baseForme: 'Plant',
-      abilities: { first: 'Shed Skin', hidden: 'Overcoat' },
+      abilities: {
+        first: 'Shed Skin',
+        hidden: 'Overcoat'
+      },
       heightm: 0.2,
       weightkg: 3.4,
       color: 'Green',
       evos: ['wormadam', 'wormadamsandy', 'wormadamtrash', 'mothim'],
       eggGroups: ['Bug'],
-      cosmeticFormes: ['Burmy-Sandy', 'Burmy-Trash']
+      cosmeticFormes: ['Burmy-Sandy', 'Burmy-Trash'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -628,7 +973,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'wormadam',
       num: 413,
       types: ['Bug', 'Grass'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 60,
         atk: 59,
@@ -638,14 +986,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 36
       },
       baseForme: 'Plant',
-      abilities: { first: 'Anticipation', hidden: 'Overcoat' },
+      abilities: {
+        first: 'Anticipation',
+        hidden: 'Overcoat'
+      },
       heightm: 0.5,
       weightkg: 6.5,
       color: 'Green',
       prevo: 'burmy',
       evoLevel: 'Level 20, Female only',
       eggGroups: ['Bug'],
-      otherFormes: ['wormadamsandy', 'wormadamtrash']
+      otherFormes: ['wormadamsandy', 'wormadamtrash'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -654,7 +1012,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'wormadam-sandy',
       num: 413,
       types: ['Bug', 'Ground'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 60,
         atk: 79,
@@ -666,13 +1027,23 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Wormadam',
       forme: 'Sandy',
       formeLetter: 'G',
-      abilities: { first: 'Anticipation', hidden: 'Overcoat' },
+      abilities: {
+        first: 'Anticipation',
+        hidden: 'Overcoat'
+      },
       heightm: 0.5,
       weightkg: 6.5,
       color: 'Brown',
       prevo: 'burmy',
       evoLevel: 20,
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -681,7 +1052,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'wormadam-trash',
       num: 413,
       types: ['Bug', 'Steel'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 60,
         atk: 69,
@@ -693,13 +1067,23 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Wormadam',
       forme: 'Trash',
       formeLetter: 'S',
-      abilities: { first: 'Anticipation', hidden: 'Overcoat' },
+      abilities: {
+        first: 'Anticipation',
+        hidden: 'Overcoat'
+      },
       heightm: 0.5,
       weightkg: 6.5,
       color: 'Red',
       prevo: 'burmy',
       evoLevel: 20,
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -708,7 +1092,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'mothim',
       num: 414,
       types: ['Bug', 'Flying'],
-      genderRatio: { male: 1, female: 0 },
+      genderRatio: {
+        male: 1,
+        female: 0
+      },
       baseStats: {
         hp: 70,
         atk: 94,
@@ -717,13 +1104,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 50,
         spe: 66
       },
-      abilities: { first: 'Swarm', hidden: 'Tinted Lens' },
+      abilities: {
+        first: 'Swarm',
+        hidden: 'Tinted Lens'
+      },
       heightm: 0.9,
       weightkg: 23.3,
       color: 'Yellow',
       prevo: 'burmy',
       evoLevel: 'Level 20, Male only',
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -732,7 +1129,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'combee',
       num: 415,
       types: ['Bug', 'Flying'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 30,
         atk: 30,
@@ -741,12 +1141,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 42,
         spe: 70
       },
-      abilities: { first: 'Honey Gather', hidden: 'Hustle' },
+      abilities: {
+        first: 'Honey Gather',
+        hidden: 'Hustle'
+      },
       heightm: 0.3,
       weightkg: 5.5,
       color: 'Yellow',
       evos: ['vespiquen'],
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -755,7 +1165,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'vespiquen',
       num: 416,
       types: ['Bug', 'Flying'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 70,
         atk: 80,
@@ -764,13 +1177,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 102,
         spe: 40
       },
-      abilities: { first: 'Pressure', hidden: 'Unnerve' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Unnerve'
+      },
       heightm: 1.2,
       weightkg: 38.5,
       color: 'Yellow',
       prevo: 'combee',
       evoLevel: 'Level 21, Female only',
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      isEggObtainable: true
     }
   ],
   [
@@ -779,7 +1202,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'pachirisu',
       num: 417,
       types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 60,
         atk: 45,
@@ -788,11 +1214,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 90,
         spe: 95
       },
-      abilities: { first: 'Run Away', second: 'Pickup', hidden: 'Volt Absorb' },
+      abilities: {
+        first: 'Run Away',
+        second: 'Pickup',
+        hidden: 'Volt Absorb'
+      },
       heightm: 0.4,
       weightkg: 3.9,
       color: 'White',
-      eggGroups: ['Field', 'Fairy']
+      eggGroups: ['Field', 'Fairy'],
+      catchRate: {
+        base: 200,
+        percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 2570,
+      isEggObtainable: true
     }
   ],
   [
@@ -801,7 +1238,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'buizel',
       num: 418,
       types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 55,
         atk: 65,
@@ -810,12 +1250,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 30,
         spe: 85
       },
-      abilities: { first: 'Swift Swim', hidden: 'Water Veil' },
+      abilities: {
+        first: 'Swift Swim',
+        hidden: 'Water Veil'
+      },
       heightm: 0.7,
       weightkg: 29.5,
       color: 'Brown',
       evos: ['floatzel'],
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -824,7 +1274,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'floatzel',
       num: 419,
       types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 85,
         atk: 105,
@@ -833,13 +1286,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 50,
         spe: 115
       },
-      abilities: { first: 'Swift Swim', hidden: 'Water Veil' },
+      abilities: {
+        first: 'Swift Swim',
+        hidden: 'Water Veil'
+      },
       heightm: 1.1,
       weightkg: 33.5,
       color: 'Brown',
       prevo: 'buizel',
       evoLevel: 26,
-      eggGroups: ['Water 1', 'Field']
+      eggGroups: ['Water 1', 'Field'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -848,7 +1311,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'cherubi',
       num: 420,
       types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 45,
         atk: 35,
@@ -857,12 +1323,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 53,
         spe: 35
       },
-      abilities: { first: 'Chlorophyll' },
+      abilities: {
+        first: 'Chlorophyll'
+      },
       heightm: 0.4,
       weightkg: 3.3,
       color: 'Pink',
       evos: ['cherrim'],
-      eggGroups: ['Fairy', 'Grass']
+      eggGroups: ['Fairy', 'Grass'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -871,7 +1346,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'cherrim',
       num: 421,
       types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 70,
         atk: 60,
@@ -881,14 +1359,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 85
       },
       baseForme: 'Overcast',
-      abilities: { first: 'Flower Gift' },
+      abilities: {
+        first: 'Flower Gift'
+      },
       heightm: 0.5,
       weightkg: 9.3,
       color: 'Purple',
       prevo: 'cherubi',
       evoLevel: 25,
       eggGroups: ['Fairy', 'Grass'],
-      otherFormes: ['cherrimsunshine']
+      otherFormes: ['cherrimsunshine'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -897,7 +1384,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'cherrim-sunshine',
       num: 421,
       types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 70,
         atk: 60,
@@ -909,13 +1399,22 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Cherrim',
       forme: 'Sunshine',
       formeLetter: 'S',
-      abilities: { first: 'Flower Gift' },
+      abilities: {
+        first: 'Flower Gift'
+      },
       heightm: 0.5,
       weightkg: 9.3,
       color: 'Pink',
       prevo: 'cherubi',
       evoLevel: 25,
-      eggGroups: ['Fairy', 'Grass']
+      eggGroups: ['Fairy', 'Grass'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -924,7 +1423,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'shellos',
       num: 422,
       types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 76,
         atk: 48,
@@ -934,13 +1436,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 34
       },
       baseForme: 'West',
-      abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
+      abilities: {
+        first: 'Sticky Hold',
+        second: 'Storm Drain',
+        hidden: 'Sand Force'
+      },
       heightm: 0.3,
       weightkg: 6.3,
       color: 'Purple',
       evos: ['gastrodon'],
       eggGroups: ['Water 1', 'Amorphous'],
-      cosmeticFormes: ['Shellos-East']
+      cosmeticFormes: ['Shellos-East'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -949,7 +1462,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'gastrodon',
       num: 423,
       types: ['Water', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 111,
         atk: 83,
@@ -959,14 +1475,25 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 39
       },
       baseForme: 'West',
-      abilities: { first: 'Sticky Hold', second: 'Storm Drain', hidden: 'Sand Force' },
+      abilities: {
+        first: 'Sticky Hold',
+        second: 'Storm Drain',
+        hidden: 'Sand Force'
+      },
       heightm: 0.9,
       weightkg: 29.9,
       color: 'Purple',
       prevo: 'shellos',
       evoLevel: 30,
       eggGroups: ['Water 1', 'Amorphous'],
-      cosmeticFormes: ['Gastrodon-East']
+      cosmeticFormes: ['Gastrodon-East'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -975,7 +1502,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'ambipom',
       num: 424,
       types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 75,
         atk: 100,
@@ -984,13 +1514,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 66,
         spe: 115
       },
-      abilities: { first: 'Technician', second: 'Pickup', hidden: 'Skill Link' },
+      abilities: {
+        first: 'Technician',
+        second: 'Pickup',
+        hidden: 'Skill Link'
+      },
       heightm: 1.2,
       weightkg: 20.3,
       color: 'Purple',
       prevo: 'aipom',
       evoLevel: 'Level up while knowing Double Hit',
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -999,7 +1540,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'drifloon',
       num: 425,
       types: ['Ghost', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 90,
         atk: 50,
@@ -1008,12 +1552,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 44,
         spe: 70
       },
-      abilities: { first: 'Aftermath', second: 'Unburden', hidden: 'Flare Boost' },
+      abilities: {
+        first: 'Aftermath',
+        second: 'Unburden',
+        hidden: 'Flare Boost'
+      },
       heightm: 0.4,
       weightkg: 1.2,
       color: 'Purple',
       evos: ['drifblim'],
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 125,
+        percentageWithOrdinaryPokeballAtFullHealth: '25.7%'
+      },
+      levellingRate: 'Fluctuating',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -1022,7 +1577,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'drifblim',
       num: 426,
       types: ['Ghost', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 150,
         atk: 80,
@@ -1031,13 +1589,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 54,
         spe: 80
       },
-      abilities: { first: 'Aftermath', second: 'Unburden', hidden: 'Flare Boost' },
+      abilities: {
+        first: 'Aftermath',
+        second: 'Unburden',
+        hidden: 'Flare Boost'
+      },
       heightm: 1.2,
       weightkg: 15,
       color: 'Purple',
       prevo: 'drifloon',
       evoLevel: 28,
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Fluctuating',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -1046,7 +1615,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'buneary',
       num: 427,
       types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 55,
         atk: 66,
@@ -1055,12 +1627,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 56,
         spe: 85
       },
-      abilities: { first: 'Run Away', second: 'Klutz', hidden: 'Limber' },
+      abilities: {
+        first: 'Run Away',
+        second: 'Klutz',
+        hidden: 'Limber'
+      },
       heightm: 0.4,
       weightkg: 5.5,
       color: 'Brown',
       evos: ['lopunny'],
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1069,7 +1652,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'lopunny',
       num: 428,
       types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 65,
         atk: 76,
@@ -1078,14 +1664,25 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 96,
         spe: 105
       },
-      abilities: { first: 'Cute Charm', second: 'Klutz', hidden: 'Limber' },
+      abilities: {
+        first: 'Cute Charm',
+        second: 'Klutz',
+        hidden: 'Limber'
+      },
       heightm: 1.2,
       weightkg: 33.3,
       color: 'Brown',
       prevo: 'buneary',
       evoLevel: 2,
       eggGroups: ['Field', 'Human-Like'],
-      otherFormes: ['lopunnymega']
+      otherFormes: ['lopunnymega'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1094,7 +1691,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'lopunny-mega',
       num: 428,
       types: ['Normal', 'Fighting'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 65,
         atk: 136,
@@ -1106,11 +1706,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Lopunny',
       forme: 'Mega',
       formeLetter: 'M',
-      abilities: { first: 'Scrappy' },
+      abilities: {
+        first: 'Scrappy'
+      },
       heightm: 1.3,
       weightkg: 28.3,
       color: 'Brown',
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1119,7 +1728,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'mismagius',
       num: 429,
       types: ['Ghost'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 60,
         atk: 60,
@@ -1128,13 +1740,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 105,
         spe: 105
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.9,
       weightkg: 4.4,
       color: 'Purple',
       prevo: 'misdreavus',
       evoLevel: 'use Dusk Stone',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1143,7 +1764,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'honchkrow',
       num: 430,
       types: ['Dark', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 100,
         atk: 125,
@@ -1152,13 +1776,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 52,
         spe: 71
       },
-      abilities: { first: 'Insomnia', second: 'Super Luck', hidden: 'Moxie' },
+      abilities: {
+        first: 'Insomnia',
+        second: 'Super Luck',
+        hidden: 'Moxie'
+      },
       heightm: 0.9,
       weightkg: 27.3,
       color: 'Black',
       prevo: 'murkrow',
       evoLevel: 'use Dusk Stone',
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1167,7 +1802,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'glameow',
       num: 431,
       types: ['Normal'],
-      genderRatio: { male: 0.25, female: 0.75 },
+      genderRatio: {
+        male: 0.25,
+        female: 0.75
+      },
       baseStats: {
         hp: 49,
         atk: 55,
@@ -1176,12 +1814,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 37,
         spe: 85
       },
-      abilities: { first: 'Limber', second: 'Own Tempo', hidden: 'Keen Eye' },
+      abilities: {
+        first: 'Limber',
+        second: 'Own Tempo',
+        hidden: 'Keen Eye'
+      },
       heightm: 0.5,
       weightkg: 3.9,
       color: 'Gray',
       evos: ['purugly'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1190,7 +1839,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'purugly',
       num: 432,
       types: ['Normal'],
-      genderRatio: { male: 0.25, female: 0.75 },
+      genderRatio: {
+        male: 0.25,
+        female: 0.75
+      },
       baseStats: {
         hp: 71,
         atk: 82,
@@ -1199,13 +1851,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 59,
         spe: 112
       },
-      abilities: { first: 'Thick Fat', second: 'Own Tempo', hidden: 'Defiant' },
+      abilities: {
+        first: 'Thick Fat',
+        second: 'Own Tempo',
+        hidden: 'Defiant'
+      },
       heightm: 1,
       weightkg: 43.8,
       color: 'Gray',
       prevo: 'glameow',
       evoLevel: 38,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1214,7 +1877,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'chingling',
       num: 433,
       types: ['Psychic'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 45,
         atk: 30,
@@ -1223,12 +1889,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 50,
         spe: 45
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.2,
       weightkg: 0.6,
       color: 'Yellow',
       evos: ['chimecho'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1237,7 +1912,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'stunky',
       num: 434,
       types: ['Poison', 'Dark'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 63,
         atk: 63,
@@ -1246,12 +1924,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 41,
         spe: 74
       },
-      abilities: { first: 'Stench', second: 'Aftermath', hidden: 'Keen Eye' },
+      abilities: {
+        first: 'Stench',
+        second: 'Aftermath',
+        hidden: 'Keen Eye'
+      },
       heightm: 0.4,
       weightkg: 19.2,
       color: 'Purple',
       evos: ['skuntank'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 225,
+        percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1260,7 +1949,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'skuntank',
       num: 435,
       types: ['Poison', 'Dark'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 103,
         atk: 93,
@@ -1269,13 +1961,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 61,
         spe: 84
       },
-      abilities: { first: 'Stench', second: 'Aftermath', hidden: 'Keen Eye' },
+      abilities: {
+        first: 'Stench',
+        second: 'Aftermath',
+        hidden: 'Keen Eye'
+      },
       heightm: 1,
       weightkg: 38,
       color: 'Purple',
       prevo: 'stunky',
       evoLevel: 34,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1284,7 +1987,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'bronzor',
       num: 436,
       types: ['Steel', 'Psychic'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 57,
         atk: 24,
@@ -1293,12 +1999,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 86,
         spe: 23
       },
-      abilities: { first: 'Levitate', second: 'Heatproof', hidden: 'Heavy Metal' },
+      abilities: {
+        first: 'Levitate',
+        second: 'Heatproof',
+        hidden: 'Heavy Metal'
+      },
       heightm: 0.5,
       weightkg: 60.5,
       color: 'Green',
       evos: ['bronzong'],
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1307,7 +2024,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'bronzong',
       num: 437,
       types: ['Steel', 'Psychic'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 67,
         atk: 89,
@@ -1316,13 +2036,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 116,
         spe: 33
       },
-      abilities: { first: 'Levitate', second: 'Heatproof', hidden: 'Heavy Metal' },
+      abilities: {
+        first: 'Levitate',
+        second: 'Heatproof',
+        hidden: 'Heavy Metal'
+      },
       heightm: 1.3,
       weightkg: 187,
       color: 'Green',
       prevo: 'bronzor',
       evoLevel: 33,
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 90,
+        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1331,7 +2062,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'bonsly',
       num: 438,
       types: ['Rock'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 50,
         atk: 80,
@@ -1340,12 +2074,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 45,
         spe: 10
       },
-      abilities: { first: 'Sturdy', second: 'Rock Head', hidden: 'Rattled' },
+      abilities: {
+        first: 'Sturdy',
+        second: 'Rock Head',
+        hidden: 'Rattled'
+      },
       heightm: 0.5,
       weightkg: 15,
       color: 'Brown',
       evos: ['sudowoodo'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1354,7 +2099,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'Mime Jr.',
       num: 439,
       types: ['Psychic', 'Fairy'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 20,
         atk: 25,
@@ -1363,12 +2111,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 90,
         spe: 60
       },
-      abilities: { first: 'Soundproof', second: 'Filter', hidden: 'Technician' },
+      abilities: {
+        first: 'Soundproof',
+        second: 'Filter',
+        hidden: 'Technician'
+      },
       heightm: 0.6,
       weightkg: 13,
       color: 'Pink',
       evos: ['mrmime'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 145,
+        percentageWithOrdinaryPokeballAtFullHealth: '28.7%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1377,7 +2136,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'happiny',
       num: 440,
       types: ['Normal'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 100,
         atk: 5,
@@ -1386,12 +2148,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 65,
         spe: 30
       },
-      abilities: { first: 'Natural Cure', second: 'Serene Grace', hidden: 'Friend Guard' },
+      abilities: {
+        first: 'Natural Cure',
+        second: 'Serene Grace',
+        hidden: 'Friend Guard'
+      },
       heightm: 0.6,
       weightkg: 24.4,
       color: 'Pink',
       evos: ['chansey'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 130,
+        percentageWithOrdinaryPokeballAtFullHealth: '26.5%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -1400,7 +2173,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'chatot',
       num: 441,
       types: ['Normal', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 76,
         atk: 65,
@@ -1409,11 +2185,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 42,
         spe: 91
       },
-      abilities: { first: 'Keen Eye', second: 'Tangled Feet', hidden: 'Big Pecks' },
+      abilities: {
+        first: 'Keen Eye',
+        second: 'Tangled Feet',
+        hidden: 'Big Pecks'
+      },
       heightm: 0.5,
       weightkg: 1.9,
       color: 'Black',
-      eggGroups: ['Flying']
+      eggGroups: ['Flying'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1422,7 +2209,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'spiritomb',
       num: 442,
       types: ['Ghost', 'Dark'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 50,
         atk: 92,
@@ -1431,11 +2221,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 108,
         spe: 35
       },
-      abilities: { first: 'Pressure', hidden: 'Infiltrator' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Infiltrator'
+      },
       heightm: 1,
       weightkg: 108,
       color: 'Purple',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -1444,7 +2244,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'gible',
       num: 443,
       types: ['Dragon', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 58,
         atk: 70,
@@ -1453,12 +2256,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 45,
         spe: 42
       },
-      abilities: { first: 'Sand Veil', hidden: 'Rough Skin' },
+      abilities: {
+        first: 'Sand Veil',
+        hidden: 'Rough Skin'
+      },
       heightm: 0.7,
       weightkg: 20.5,
       color: 'Blue',
       evos: ['gabite'],
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -1467,7 +2280,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'gabite',
       num: 444,
       types: ['Dragon', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 68,
         atk: 90,
@@ -1476,14 +2292,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 55,
         spe: 82
       },
-      abilities: { first: 'Sand Veil', hidden: 'Rough Skin' },
+      abilities: {
+        first: 'Sand Veil',
+        hidden: 'Rough Skin'
+      },
       heightm: 1.4,
       weightkg: 56,
       color: 'Blue',
       prevo: 'gible',
       evos: ['garchomp'],
       evoLevel: 24,
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -1492,7 +2318,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'garchomp',
       num: 445,
       types: ['Dragon', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 108,
         atk: 130,
@@ -1501,14 +2330,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 85,
         spe: 102
       },
-      abilities: { first: 'Sand Veil', hidden: 'Rough Skin' },
+      abilities: {
+        first: 'Sand Veil',
+        hidden: 'Rough Skin'
+      },
       heightm: 1.9,
       weightkg: 95,
       color: 'Blue',
       prevo: 'gabite',
       evoLevel: 48,
       eggGroups: ['Monster', 'Dragon'],
-      otherFormes: ['garchompmega']
+      otherFormes: ['garchompmega'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -1517,7 +2356,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'garchomp-mega',
       num: 445,
       types: ['Dragon', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 108,
         atk: 170,
@@ -1529,11 +2371,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Garchomp',
       forme: 'Mega',
       formeLetter: 'M',
-      abilities: { first: 'Sand Force' },
+      abilities: {
+        first: 'Sand Force'
+      },
       heightm: 1.9,
       weightkg: 95,
       color: 'Blue',
-      eggGroups: ['Monster', 'Dragon']
+      eggGroups: ['Monster', 'Dragon'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -1542,7 +2393,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'munchlax',
       num: 446,
       types: ['Normal'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 135,
         atk: 85,
@@ -1551,12 +2405,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 85,
         spe: 5
       },
-      abilities: { first: 'Pickup', second: 'Thick Fat', hidden: 'Gluttony' },
+      abilities: {
+        first: 'Pickup',
+        second: 'Thick Fat',
+        hidden: 'Gluttony'
+      },
       heightm: 0.6,
       weightkg: 105,
       color: 'Black',
       evos: ['snorlax'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 50,
+        percentageWithOrdinaryPokeballAtFullHealth: '12.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -1565,7 +2430,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'riolu',
       num: 447,
       types: ['Fighting'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 40,
         atk: 70,
@@ -1574,12 +2442,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 40,
         spe: 60
       },
-      abilities: { first: 'Steadfast', second: 'Inner Focus', hidden: 'Prankster' },
+      abilities: {
+        first: 'Steadfast',
+        second: 'Inner Focus',
+        hidden: 'Prankster'
+      },
       heightm: 0.7,
       weightkg: 20.2,
       color: 'Blue',
       evos: ['lucario'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1588,7 +2467,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'lucario',
       num: 448,
       types: ['Fighting', 'Steel'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 70,
         atk: 110,
@@ -1597,14 +2479,25 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 70,
         spe: 90
       },
-      abilities: { first: 'Steadfast', second: 'Inner Focus', hidden: 'Justified' },
+      abilities: {
+        first: 'Steadfast',
+        second: 'Inner Focus',
+        hidden: 'Justified'
+      },
       heightm: 1.2,
       weightkg: 54,
       color: 'Blue',
       prevo: 'riolu',
       evoLevel: 'Level up during Daytime with happiness of at least 220',
       eggGroups: ['Field', 'Human-Like'],
-      otherFormes: ['lucariomega']
+      otherFormes: ['lucariomega'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1613,7 +2506,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'lucario-mega',
       num: 448,
       types: ['Fighting', 'Steel'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 70,
         atk: 145,
@@ -1625,11 +2521,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Lucario',
       forme: 'Mega',
       formeLetter: 'M',
-      abilities: { first: 'Adaptability' },
+      abilities: {
+        first: 'Adaptability'
+      },
       heightm: 1.3,
       weightkg: 57.5,
       color: 'Blue',
-      eggGroups: ['Field', 'Human-Like']
+      eggGroups: ['Field', 'Human-Like'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1638,7 +2543,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'hippopotas',
       num: 449,
       types: ['Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 68,
         atk: 72,
@@ -1647,12 +2555,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 42,
         spe: 32
       },
-      abilities: { first: 'Sand Stream', hidden: 'Sand Force' },
+      abilities: {
+        first: 'Sand Stream',
+        hidden: 'Sand Force'
+      },
       heightm: 0.8,
       weightkg: 49.5,
       color: 'Brown',
       evos: ['hippowdon'],
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 140,
+        percentageWithOrdinaryPokeballAtFullHealth: '28%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -1661,7 +2579,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'hippowdon',
       num: 450,
       types: ['Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 108,
         atk: 112,
@@ -1670,13 +2591,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 72,
         spe: 47
       },
-      abilities: { first: 'Sand Stream', hidden: 'Sand Force' },
+      abilities: {
+        first: 'Sand Stream',
+        hidden: 'Sand Force'
+      },
       heightm: 2,
       weightkg: 300,
       color: 'Brown',
       prevo: 'hippopotas',
       evoLevel: 34,
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 7710,
+      isEggObtainable: true
     }
   ],
   [
@@ -1685,7 +2616,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'skorupi',
       num: 451,
       types: ['Poison', 'Bug'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 40,
         atk: 50,
@@ -1694,12 +2628,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 55,
         spe: 65
       },
-      abilities: { first: 'Battle Armor', second: 'Sniper', hidden: 'Keen Eye' },
+      abilities: {
+        first: 'Battle Armor',
+        second: 'Sniper',
+        hidden: 'Keen Eye'
+      },
       heightm: 0.8,
       weightkg: 12,
       color: 'Purple',
       evos: ['drapion'],
-      eggGroups: ['Bug', 'Water 3']
+      eggGroups: ['Bug', 'Water 3'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1708,7 +2653,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'drapion',
       num: 452,
       types: ['Poison', 'Dark'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 70,
         atk: 90,
@@ -1717,13 +2665,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 75,
         spe: 95
       },
-      abilities: { first: 'Battle Armor', second: 'Sniper', hidden: 'Keen Eye' },
+      abilities: {
+        first: 'Battle Armor',
+        second: 'Sniper',
+        hidden: 'Keen Eye'
+      },
       heightm: 1.3,
       weightkg: 61.5,
       color: 'Purple',
       prevo: 'skorupi',
       evoLevel: 40,
-      eggGroups: ['Bug', 'Water 3']
+      eggGroups: ['Bug', 'Water 3'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1732,7 +2691,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'croagunk',
       num: 453,
       types: ['Poison', 'Fighting'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 48,
         atk: 61,
@@ -1741,12 +2703,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 40,
         spe: 50
       },
-      abilities: { first: 'Anticipation', second: 'Dry Skin', hidden: 'Poison Touch' },
+      abilities: {
+        first: 'Anticipation',
+        second: 'Dry Skin',
+        hidden: 'Poison Touch'
+      },
       heightm: 0.7,
       weightkg: 23,
       color: 'Blue',
       evos: ['toxicroak'],
-      eggGroups: ['Human-Like']
+      eggGroups: ['Human-Like'],
+      catchRate: {
+        base: 140,
+        percentageWithOrdinaryPokeballAtFullHealth: '28%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 2570,
+      isEggObtainable: true
     }
   ],
   [
@@ -1755,7 +2728,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'toxicroak',
       num: 454,
       types: ['Poison', 'Fighting'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 83,
         atk: 106,
@@ -1764,13 +2740,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 65,
         spe: 85
       },
-      abilities: { first: 'Anticipation', second: 'Dry Skin', hidden: 'Poison Touch' },
+      abilities: {
+        first: 'Anticipation',
+        second: 'Dry Skin',
+        hidden: 'Poison Touch'
+      },
       heightm: 1.3,
       weightkg: 44.4,
       color: 'Blue',
       prevo: 'croagunk',
       evoLevel: 37,
-      eggGroups: ['Human-Like']
+      eggGroups: ['Human-Like'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1779,7 +2766,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'carnivine',
       num: 455,
       types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 74,
         atk: 100,
@@ -1788,11 +2778,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 72,
         spe: 46
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 1.4,
       weightkg: 27,
       color: 'Green',
-      eggGroups: ['Grass']
+      eggGroups: ['Grass'],
+      catchRate: {
+        base: 200,
+        percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1801,7 +2800,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'finneon',
       num: 456,
       types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 49,
         atk: 49,
@@ -1810,12 +2812,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 61,
         spe: 66
       },
-      abilities: { first: 'Swift Swim', second: 'Storm Drain', hidden: 'Water Veil' },
+      abilities: {
+        first: 'Swift Swim',
+        second: 'Storm Drain',
+        hidden: 'Water Veil'
+      },
       heightm: 0.4,
       weightkg: 7,
       color: 'Blue',
       evos: ['lumineon'],
-      eggGroups: ['Water 2']
+      eggGroups: ['Water 2'],
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
+      levellingRate: 'Erratic',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1824,7 +2837,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'lumineon',
       num: 457,
       types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 69,
         atk: 69,
@@ -1833,13 +2849,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 86,
         spe: 91
       },
-      abilities: { first: 'Swift Swim', second: 'Storm Drain', hidden: 'Water Veil' },
+      abilities: {
+        first: 'Swift Swim',
+        second: 'Storm Drain',
+        hidden: 'Water Veil'
+      },
       heightm: 1.2,
       weightkg: 24,
       color: 'Blue',
       prevo: 'finneon',
       evoLevel: 31,
-      eggGroups: ['Water 2']
+      eggGroups: ['Water 2'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Erratic',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1848,7 +2875,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'mantyke',
       num: 458,
       types: ['Water', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 45,
         atk: 20,
@@ -1857,12 +2887,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 120,
         spe: 50
       },
-      abilities: { first: 'Swift Swim', second: 'Water Absorb', hidden: 'Water Veil' },
+      abilities: {
+        first: 'Swift Swim',
+        second: 'Water Absorb',
+        hidden: 'Water Veil'
+      },
       heightm: 1,
       weightkg: 65,
       color: 'Blue',
       evos: ['mantine'],
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 25,
+        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -1871,7 +2912,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'snover',
       num: 459,
       types: ['Grass', 'Ice'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 60,
         atk: 62,
@@ -1880,12 +2924,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 60,
         spe: 40
       },
-      abilities: { first: 'Snow Warning', hidden: 'Soundproof' },
+      abilities: {
+        first: 'Snow Warning',
+        hidden: 'Soundproof'
+      },
       heightm: 1,
       weightkg: 50.5,
       color: 'White',
       evos: ['abomasnow'],
-      eggGroups: ['Monster', 'Grass']
+      eggGroups: ['Monster', 'Grass'],
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1894,7 +2948,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'abomasnow',
       num: 460,
       types: ['Grass', 'Ice'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 90,
         atk: 92,
@@ -1903,14 +2960,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 85,
         spe: 60
       },
-      abilities: { first: 'Snow Warning', hidden: 'Soundproof' },
+      abilities: {
+        first: 'Snow Warning',
+        hidden: 'Soundproof'
+      },
       heightm: 2.2,
       weightkg: 135.5,
       color: 'White',
       prevo: 'snover',
       evoLevel: 40,
       eggGroups: ['Monster', 'Grass'],
-      otherFormes: ['abomasnowmega']
+      otherFormes: ['abomasnowmega'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1919,7 +2986,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'abomasnow-mega',
       num: 460,
       types: ['Grass', 'Ice'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 90,
         atk: 132,
@@ -1931,11 +3001,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Abomasnow',
       forme: 'Mega',
       formeLetter: 'M',
-      abilities: { first: 'Snow Warning' },
+      abilities: {
+        first: 'Snow Warning'
+      },
       heightm: 2.7,
       weightkg: 185,
       color: 'White',
-      eggGroups: ['Monster', 'Grass']
+      eggGroups: ['Monster', 'Grass'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1944,7 +3023,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'weavile',
       num: 461,
       types: ['Dark', 'Ice'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 70,
         atk: 120,
@@ -1953,13 +3035,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 85,
         spe: 125
       },
-      abilities: { first: 'Pressure', hidden: 'Pickpocket' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Pickpocket'
+      },
       heightm: 1.1,
       weightkg: 34,
       color: 'Black',
       prevo: 'sneasel',
       evoLevel: 'Hold Razor Claw Nighttime',
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1968,7 +3060,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'magnezone',
       num: 462,
       types: ['Electric', 'Steel'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 70,
         atk: 70,
@@ -1977,13 +3072,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 90,
         spe: 60
       },
-      abilities: { first: 'Magnet Pull', second: 'Sturdy', hidden: 'Analytic' },
+      abilities: {
+        first: 'Magnet Pull',
+        second: 'Sturdy',
+        hidden: 'Analytic'
+      },
       heightm: 1.2,
       weightkg: 180,
       color: 'Gray',
       prevo: 'magneton',
       evoLevel: 'use Thunder Stone',
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -1992,7 +3098,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'lickilicky',
       num: 463,
       types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 110,
         atk: 85,
@@ -2001,13 +3110,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 95,
         spe: 50
       },
-      abilities: { first: 'Own Tempo', second: 'Oblivious', hidden: 'Cloud Nine' },
+      abilities: {
+        first: 'Own Tempo',
+        second: 'Oblivious',
+        hidden: 'Cloud Nine'
+      },
       heightm: 1.7,
       weightkg: 140,
       color: 'Pink',
       prevo: 'lickitung',
       evoLevel: 'Level up while knowing Rollout',
-      eggGroups: ['Monster']
+      eggGroups: ['Monster'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2016,7 +3136,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rhyperior',
       num: 464,
       types: ['Ground', 'Rock'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 115,
         atk: 140,
@@ -2025,13 +3148,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 55,
         spe: 40
       },
-      abilities: { first: 'Lightning Rod', second: 'Solid Rock', hidden: 'Reckless' },
+      abilities: {
+        first: 'Lightning Rod',
+        second: 'Solid Rock',
+        hidden: 'Reckless'
+      },
       heightm: 2.4,
       weightkg: 282.8,
       color: 'Gray',
       prevo: 'rhydon',
       evoLevel: 'Trade while holding Protector',
-      eggGroups: ['Monster', 'Field']
+      eggGroups: ['Monster', 'Field'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2040,7 +3174,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'tangrowth',
       num: 465,
       types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 100,
         atk: 100,
@@ -2049,13 +3186,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 50,
         spe: 50
       },
-      abilities: { first: 'Chlorophyll', second: 'Leaf Guard', hidden: 'Regenerator' },
+      abilities: {
+        first: 'Chlorophyll',
+        second: 'Leaf Guard',
+        hidden: 'Regenerator'
+      },
       heightm: 2,
       weightkg: 128.6,
       color: 'Blue',
       prevo: 'tangela',
       evoLevel: 'Level up while knowing Ancient Power',
-      eggGroups: ['Grass']
+      eggGroups: ['Grass'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2064,7 +3212,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'electivire',
       num: 466,
       types: ['Electric'],
-      genderRatio: { male: 0.75, female: 0.25 },
+      genderRatio: {
+        male: 0.75,
+        female: 0.25
+      },
       baseStats: {
         hp: 75,
         atk: 123,
@@ -2073,13 +3224,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 85,
         spe: 95
       },
-      abilities: { first: 'Motor Drive', hidden: 'Vital Spirit' },
+      abilities: {
+        first: 'Motor Drive',
+        hidden: 'Vital Spirit'
+      },
       heightm: 1.8,
       weightkg: 138.6,
       color: 'Yellow',
       prevo: 'electabuzz',
       evoLevel: 'Trade while holding Electirizer',
-      eggGroups: ['Human-Like']
+      eggGroups: ['Human-Like'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -2088,7 +3249,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'magmortar',
       num: 467,
       types: ['Fire'],
-      genderRatio: { male: 0.75, female: 0.25 },
+      genderRatio: {
+        male: 0.75,
+        female: 0.25
+      },
       baseStats: {
         hp: 75,
         atk: 95,
@@ -2097,13 +3261,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 95,
         spe: 83
       },
-      abilities: { first: 'Flame Body', hidden: 'Vital Spirit' },
+      abilities: {
+        first: 'Flame Body',
+        hidden: 'Vital Spirit'
+      },
       heightm: 1.6,
       weightkg: 68,
       color: 'Red',
       prevo: 'magmar',
       evoLevel: 'Trade while holding Magmarizer',
-      eggGroups: ['Human-Like']
+      eggGroups: ['Human-Like'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -2112,7 +3286,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'togekiss',
       num: 468,
       types: ['Fairy', 'Flying'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 85,
         atk: 50,
@@ -2121,13 +3298,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 115,
         spe: 80
       },
-      abilities: { first: 'Hustle', second: 'Serene Grace', hidden: 'Super Luck' },
+      abilities: {
+        first: 'Hustle',
+        second: 'Serene Grace',
+        hidden: 'Super Luck'
+      },
       heightm: 1.5,
       weightkg: 38,
       color: 'White',
       prevo: 'togetic',
       evoLevel: 'use Shiny Stone',
-      eggGroups: ['Flying', 'Fairy']
+      eggGroups: ['Flying', 'Fairy'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 2570,
+      isEggObtainable: true
     }
   ],
   [
@@ -2136,7 +3324,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'yanmega',
       num: 469,
       types: ['Bug', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 86,
         atk: 76,
@@ -2145,13 +3336,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 56,
         spe: 95
       },
-      abilities: { first: 'Speed Boost', second: 'Tinted Lens', hidden: 'Frisk' },
+      abilities: {
+        first: 'Speed Boost',
+        second: 'Tinted Lens',
+        hidden: 'Frisk'
+      },
       heightm: 1.9,
       weightkg: 51.5,
       color: 'Green',
       prevo: 'yanma',
       evoLevel: 'Level up while knowing Ancient Power',
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2160,7 +3362,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'leafeon',
       num: 470,
       types: ['Grass'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 65,
         atk: 110,
@@ -2169,13 +3374,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 65,
         spe: 95
       },
-      abilities: { first: 'Leaf Guard', hidden: 'Chlorophyll' },
+      abilities: {
+        first: 'Leaf Guard',
+        hidden: 'Chlorophyll'
+      },
       heightm: 1,
       weightkg: 25.5,
       color: 'Green',
       prevo: 'eevee',
       evoLevel: 'use Leaf Stone',
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 8995,
+      isEggObtainable: true
     }
   ],
   [
@@ -2184,7 +3399,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'glaceon',
       num: 471,
       types: ['Ice'],
-      genderRatio: { male: 0.875, female: 0.125 },
+      genderRatio: {
+        male: 0.875,
+        female: 0.125
+      },
       baseStats: {
         hp: 65,
         atk: 60,
@@ -2193,13 +3411,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 95,
         spe: 65
       },
-      abilities: { first: 'Snow Cloak', hidden: 'Ice Body' },
+      abilities: {
+        first: 'Snow Cloak',
+        hidden: 'Ice Body'
+      },
       heightm: 0.8,
       weightkg: 25.9,
       color: 'Blue',
       prevo: 'eevee',
       evoLevel: 'use Ice Stone',
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 8995,
+      isEggObtainable: true
     }
   ],
   [
@@ -2208,7 +3436,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'gliscor',
       num: 472,
       types: ['Ground', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 75,
         atk: 95,
@@ -2217,13 +3448,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 75,
         spe: 95
       },
-      abilities: { first: 'Hyper Cutter', second: 'Sand Veil', hidden: 'Poison Heal' },
+      abilities: {
+        first: 'Hyper Cutter',
+        second: 'Sand Veil',
+        hidden: 'Poison Heal'
+      },
       heightm: 2,
       weightkg: 42.5,
       color: 'Purple',
       prevo: 'gligar',
       evoLevel: 'Hold Razor Fang Nighttime',
-      eggGroups: ['Bug']
+      eggGroups: ['Bug'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2232,7 +3474,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'mamoswine',
       num: 473,
       types: ['Ice', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 110,
         atk: 130,
@@ -2241,13 +3486,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 60,
         spe: 80
       },
-      abilities: { first: 'Oblivious', second: 'Snow Cloak', hidden: 'Thick Fat' },
+      abilities: {
+        first: 'Oblivious',
+        second: 'Snow Cloak',
+        hidden: 'Thick Fat'
+      },
       heightm: 2.5,
       weightkg: 291,
       color: 'Brown',
       prevo: 'piloswine',
       evoLevel: 'Level up while knowing Ancient Power',
-      eggGroups: ['Field']
+      eggGroups: ['Field'],
+      catchRate: {
+        base: 50,
+        percentageWithOrdinaryPokeballAtFullHealth: '12.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2256,7 +3512,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'porygon-z',
       num: 474,
       types: ['Normal'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 85,
         atk: 80,
@@ -2265,13 +3524,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 75,
         spe: 90
       },
-      abilities: { first: 'Adaptability', second: 'Download', hidden: 'Analytic' },
+      abilities: {
+        first: 'Adaptability',
+        second: 'Download',
+        hidden: 'Analytic'
+      },
       heightm: 0.9,
       weightkg: 34,
       color: 'Red',
       prevo: 'porygon2',
       evoLevel: 'Trade while holding Dubious Disc',
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2280,7 +3550,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'gallade',
       num: 475,
       types: ['Psychic', 'Fighting'],
-      genderRatio: { male: 1, female: 0 },
+      genderRatio: {
+        male: 1,
+        female: 0
+      },
       baseStats: {
         hp: 68,
         atk: 125,
@@ -2289,14 +3562,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 115,
         spe: 80
       },
-      abilities: { first: 'Steadfast', hidden: 'Justified' },
+      abilities: {
+        first: 'Steadfast',
+        hidden: 'Justified'
+      },
       heightm: 1.6,
       weightkg: 52,
       color: 'White',
       prevo: 'kirlia',
       evoLevel: 'Male + use Dawn Stone',
       eggGroups: ['Amorphous'],
-      otherFormes: ['gallademega']
+      otherFormes: ['gallademega'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2305,7 +3588,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'gallade-mega',
       num: 475,
       types: ['Psychic', 'Fighting'],
-      genderRatio: { male: 1, female: 0 },
+      genderRatio: {
+        male: 1,
+        female: 0
+      },
       baseStats: {
         hp: 68,
         atk: 165,
@@ -2317,11 +3603,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Gallade',
       forme: 'Mega',
       formeLetter: 'M',
-      abilities: { first: 'Inner Focus' },
+      abilities: {
+        first: 'Inner Focus'
+      },
       heightm: 1.6,
       weightkg: 56.4,
       color: 'White',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2330,7 +3625,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'probopass',
       num: 476,
       types: ['Rock', 'Steel'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 60,
         atk: 55,
@@ -2339,13 +3637,24 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 150,
         spe: 40
       },
-      abilities: { first: 'Sturdy', second: 'Magnet Pull', hidden: 'Sand Force' },
+      abilities: {
+        first: 'Sturdy',
+        second: 'Magnet Pull',
+        hidden: 'Sand Force'
+      },
       heightm: 1.4,
       weightkg: 340,
       color: 'Gray',
       prevo: 'nosepass',
       evoLevel: 'Level up in special magnetic field',
-      eggGroups: ['Mineral']
+      eggGroups: ['Mineral'],
+      catchRate: {
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2354,7 +3663,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'dusknoir',
       num: 477,
       types: ['Ghost'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 45,
         atk: 100,
@@ -2363,13 +3675,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 135,
         spe: 45
       },
-      abilities: { first: 'Pressure', hidden: 'Frisk' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Frisk'
+      },
       heightm: 2.2,
       weightkg: 106.6,
       color: 'Black',
       prevo: 'dusclops',
       evoLevel: 'Trade while holding Reaper Cloth',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Fast',
+      minimumHatchTime: 6425,
+      isEggObtainable: true
     }
   ],
   [
@@ -2378,7 +3700,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'froslass',
       num: 478,
       types: ['Ice', 'Ghost'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 70,
         atk: 80,
@@ -2387,13 +3712,23 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 70,
         spe: 110
       },
-      abilities: { first: 'Snow Cloak', hidden: 'Cursed Body' },
+      abilities: {
+        first: 'Snow Cloak',
+        hidden: 'Cursed Body'
+      },
       heightm: 1.3,
       weightkg: 26.6,
       color: 'White',
       prevo: 'snorunt',
       evoLevel: 'Female + use Dawn Stone',
-      eggGroups: ['Fairy', 'Mineral']
+      eggGroups: ['Fairy', 'Mineral'],
+      catchRate: {
+        base: 75,
+        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2402,7 +3737,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rotom',
       num: 479,
       types: ['Electric', 'Ghost'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 50,
         atk: 50,
@@ -2411,12 +3749,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 77,
         spe: 91
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Red',
       eggGroups: ['Amorphous'],
-      otherFormes: ['rotomheat', 'rotomwash', 'rotomfrost', 'rotomfan', 'rotommow']
+      otherFormes: ['rotomheat', 'rotomwash', 'rotomfrost', 'rotomfan', 'rotommow'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2425,7 +3772,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rotom-heat',
       num: 479,
       types: ['Electric', 'Fire'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 50,
         atk: 65,
@@ -2437,11 +3787,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Rotom',
       forme: 'Heat',
       formeLetter: 'H',
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Red',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2450,7 +3809,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rotom-wash',
       num: 479,
       types: ['Electric', 'Water'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 50,
         atk: 65,
@@ -2462,11 +3824,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Rotom',
       forme: 'Wash',
       formeLetter: 'W',
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Red',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2475,7 +3846,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rotom-frost',
       num: 479,
       types: ['Electric', 'Ice'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 50,
         atk: 65,
@@ -2487,11 +3861,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Rotom',
       forme: 'Frost',
       formeLetter: 'F',
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Red',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2500,7 +3883,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rotom-fan',
       num: 479,
       types: ['Electric', 'Flying'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 50,
         atk: 65,
@@ -2512,11 +3898,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Rotom',
       forme: 'Fan',
       formeLetter: 'S',
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Red',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2525,7 +3920,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'rotom-mow',
       num: 479,
       types: ['Electric', 'Grass'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 50,
         atk: 65,
@@ -2537,11 +3935,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Rotom',
       forme: 'Mow',
       formeLetter: 'C',
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Red',
-      eggGroups: ['Amorphous']
+      eggGroups: ['Amorphous'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      isEggObtainable: true
     }
   ],
   [
@@ -2550,7 +3957,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'uxie',
       num: 480,
       types: ['Psychic'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 75,
         atk: 75,
@@ -2559,11 +3969,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 130,
         spe: 95
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Yellow',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 20560,
+      isEggObtainable: false
     }
   ],
   [
@@ -2572,7 +3991,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'mesprit',
       num: 481,
       types: ['Psychic'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 80,
         atk: 105,
@@ -2581,11 +4003,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 105,
         spe: 80
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Pink',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 20560,
+      isEggObtainable: false
     }
   ],
   [
@@ -2594,7 +4025,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'azelf',
       num: 482,
       types: ['Psychic'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 75,
         atk: 125,
@@ -2603,11 +4037,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 70,
         spe: 115
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 0.3,
       weightkg: 0.3,
       color: 'Blue',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 20560,
+      isEggObtainable: false
     }
   ],
   [
@@ -2616,7 +4059,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'dialga',
       num: 483,
       types: ['Steel', 'Dragon'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 100,
         atk: 120,
@@ -2625,11 +4071,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 100,
         spe: 90
       },
-      abilities: { first: 'Pressure', hidden: 'Telepathy' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Telepathy'
+      },
       heightm: 5.4,
       weightkg: 683,
       color: 'White',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2638,7 +4094,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'palkia',
       num: 484,
       types: ['Water', 'Dragon'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 90,
         atk: 120,
@@ -2647,11 +4106,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 120,
         spe: 100
       },
-      abilities: { first: 'Pressure', hidden: 'Telepathy' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Telepathy'
+      },
       heightm: 4.2,
       weightkg: 336,
       color: 'Purple',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2660,7 +4129,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'heatran',
       num: 485,
       types: ['Fire', 'Steel'],
-      genderRatio: { male: 0.5, female: 0.5 },
+      genderRatio: {
+        male: 0.5,
+        female: 0.5
+      },
       baseStats: {
         hp: 91,
         atk: 90,
@@ -2669,11 +4141,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 106,
         spe: 77
       },
-      abilities: { first: 'Flash Fire', hidden: 'Flame Body' },
+      abilities: {
+        first: 'Flash Fire',
+        hidden: 'Flame Body'
+      },
       heightm: 1.7,
       weightkg: 430,
       color: 'Brown',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 2570,
+      isEggObtainable: false
     }
   ],
   [
@@ -2682,7 +4164,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'regigigas',
       num: 486,
       types: ['Normal'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 110,
         atk: 160,
@@ -2691,11 +4176,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 110,
         spe: 100
       },
-      abilities: { first: 'Slow Start' },
+      abilities: {
+        first: 'Slow Start'
+      },
       heightm: 3.7,
       weightkg: 420,
       color: 'White',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2705,7 +4199,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       num: 487,
       baseForme: 'Altered',
       types: ['Ghost', 'Dragon'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 150,
         atk: 100,
@@ -2714,12 +4211,22 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 120,
         spe: 90
       },
-      abilities: { first: 'Pressure', hidden: 'Telepathy' },
+      abilities: {
+        first: 'Pressure',
+        hidden: 'Telepathy'
+      },
       heightm: 4.5,
       weightkg: 750,
       color: 'Black',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['giratinaorigin']
+      otherFormes: ['giratinaorigin'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2728,7 +4235,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'giratina-origin',
       num: 487,
       types: ['Ghost', 'Dragon'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 150,
         atk: 120,
@@ -2740,11 +4250,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Giratina',
       forme: 'Origin',
       formeLetter: 'O',
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 6.9,
       weightkg: 650,
       color: 'Black',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2753,7 +4272,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'cresselia',
       num: 488,
       types: ['Psychic'],
-      genderRatio: { male: 0, female: 1 },
+      genderRatio: {
+        male: 0,
+        female: 1
+      },
       baseStats: {
         hp: 120,
         atk: 70,
@@ -2762,11 +4284,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 130,
         spe: 85
       },
-      abilities: { first: 'Levitate' },
+      abilities: {
+        first: 'Levitate'
+      },
       heightm: 1.5,
       weightkg: 85.6,
       color: 'Yellow',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2775,7 +4306,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'phione',
       num: 489,
       types: ['Water'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 80,
         atk: 80,
@@ -2784,11 +4318,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 80,
         spe: 80
       },
-      abilities: { first: 'Hydration' },
+      abilities: {
+        first: 'Hydration'
+      },
       heightm: 0.4,
       weightkg: 3.1,
       color: 'Blue',
-      eggGroups: ['Water 1', 'Fairy']
+      eggGroups: ['Water 1', 'Fairy'],
+      catchRate: {
+        base: 30,
+        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      isEggObtainable: true
     }
   ],
   [
@@ -2797,7 +4340,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'manaphy',
       num: 490,
       types: ['Water'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 100,
         atk: 100,
@@ -2806,11 +4352,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 100,
         spe: 100
       },
-      abilities: { first: 'Hydration' },
+      abilities: {
+        first: 'Hydration'
+      },
       heightm: 0.3,
       weightkg: 1.4,
       color: 'Blue',
-      eggGroups: ['Water 1', 'Fairy']
+      eggGroups: ['Water 1', 'Fairy'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 2570,
+      isEggObtainable: true
     }
   ],
   [
@@ -2819,7 +4374,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'darkrai',
       num: 491,
       types: ['Dark'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 70,
         atk: 90,
@@ -2828,11 +4386,20 @@ const entries: [string, Pokemon.DexEntry][] = [
         spd: 90,
         spe: 125
       },
-      abilities: { first: 'Bad Dreams' },
+      abilities: {
+        first: 'Bad Dreams'
+      },
       heightm: 1.5,
       weightkg: 50.5,
       color: 'Black',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2841,7 +4408,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'shaymin',
       num: 492,
       types: ['Grass'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 100,
         atk: 100,
@@ -2851,12 +4421,21 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 100
       },
       baseForme: 'Land',
-      abilities: { first: 'Natural Cure' },
+      abilities: {
+        first: 'Natural Cure'
+      },
       heightm: 0.2,
       weightkg: 2.1,
       color: 'Green',
       eggGroups: ['Undiscovered'],
-      otherFormes: ['shayminsky']
+      otherFormes: ['shayminsky'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2865,7 +4444,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'shaymin-sky',
       num: 492,
       types: ['Grass', 'Flying'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 100,
         atk: 103,
@@ -2877,11 +4459,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Shaymin',
       forme: 'Sky',
       formeLetter: 'S',
-      abilities: { first: 'Serene Grace' },
+      abilities: {
+        first: 'Serene Grace'
+      },
       heightm: 0.4,
       weightkg: 5.2,
       color: 'Green',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 45,
+        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+      },
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2890,7 +4481,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus',
       num: 493,
       types: ['Normal'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -2900,7 +4494,9 @@ const entries: [string, Pokemon.DexEntry][] = [
         spe: 120
       },
       baseForme: 'Normal',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'White',
@@ -2923,7 +4519,14 @@ const entries: [string, Pokemon.DexEntry][] = [
         'arceusrock',
         'arceussteel',
         'arceuswater'
-      ]
+      ],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2932,7 +4535,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-bug',
       num: 493,
       types: ['Bug'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -2944,11 +4550,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Bug',
       formeLetter: 'B',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2957,7 +4572,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-dark',
       num: 493,
       types: ['Dark'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -2969,11 +4587,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Dark',
       formeLetter: 'D',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -2982,7 +4609,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-dragon',
       num: 493,
       types: ['Dragon'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -2994,11 +4624,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Dragon',
       formeLetter: 'D',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3007,7 +4646,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-electric',
       num: 493,
       types: ['Electric'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3019,11 +4661,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Electric',
       formeLetter: 'E',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3032,7 +4683,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-fairy',
       num: 493,
       types: ['Fairy'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3044,11 +4698,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Fairy',
       formeLetter: 'F',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3057,7 +4720,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-fighting',
       num: 493,
       types: ['Fighting'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3069,11 +4735,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Fighting',
       formeLetter: 'F',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3082,7 +4757,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-fire',
       num: 493,
       types: ['Fire'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3094,11 +4772,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Fire',
       formeLetter: 'F',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3107,7 +4794,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-flying',
       num: 493,
       types: ['Flying'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3119,11 +4809,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Flying',
       formeLetter: 'F',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3132,7 +4831,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-ghost',
       num: 493,
       types: ['Ghost'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3144,11 +4846,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Ghost',
       formeLetter: 'G',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3157,7 +4868,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-grass',
       num: 493,
       types: ['Grass'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3169,11 +4883,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Grass',
       formeLetter: 'G',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3182,7 +4905,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-ground',
       num: 493,
       types: ['Ground'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3194,11 +4920,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Ground',
       formeLetter: 'G',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3207,7 +4942,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-ice',
       num: 493,
       types: ['Ice'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3219,11 +4957,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Ice',
       formeLetter: 'I',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3232,7 +4979,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-poison',
       num: 493,
       types: ['Poison'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3244,11 +4994,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Poison',
       formeLetter: 'P',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3257,7 +5016,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-psychic',
       num: 493,
       types: ['Psychic'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3269,11 +5031,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Psychic',
       formeLetter: 'P',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3282,7 +5053,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-rock',
       num: 493,
       types: ['Rock'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3294,11 +5068,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Rock',
       formeLetter: 'R',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3307,7 +5090,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       species: 'arceus-steel',
       num: 493,
       types: ['Steel'],
-      genderRatio: { male: 0, female: 0 },
+      genderRatio: {
+        male: 0,
+        female: 0
+      },
       baseStats: {
         hp: 120,
         atk: 120,
@@ -3319,11 +5105,20 @@ const entries: [string, Pokemon.DexEntry][] = [
       baseSpecies: 'Arceus',
       forme: 'Steel',
       formeLetter: 'S',
-      abilities: { first: 'Multitype' },
+      abilities: {
+        first: 'Multitype'
+      },
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ],
   [
@@ -3348,7 +5143,14 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 3.2,
       weightkg: 320,
       color: 'Gray',
-      eggGroups: ['Undiscovered']
+      eggGroups: ['Undiscovered'],
+      catchRate: {
+        base: 3,
+        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+      },
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      isEggObtainable: false
     }
   ]
 ];

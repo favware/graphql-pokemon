@@ -25,7 +25,7 @@ jobs:
       - name: Add problem matchers
         run: |
           echo "::add-matcher::.github/problemMatchers/tsc.json"
-          echo "::add-matcher::.github/problemMatchers/eslint-stylish.json"
+          echo "::add-matcher::.github/problemMatchers/eslint.json"
       - name: Get GitHub Branch Name
         id: get_branch_name
         run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')

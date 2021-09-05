@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.6.0](https://github.com/favware/graphql-pokemon/compare/v5.5.9...v5.6.0) (2021-09-05)
+
+
+### Features
+
+* add growth rate catch rate and hatch time ([#509](https://github.com/favware/graphql-pokemon/issues/509)) ([f4da2b6](https://github.com/favware/graphql-pokemon/commit/f4da2b690f1e2b13239aaf897b4bf70fc00846b4))
+
 ### [5.5.9](https://github.com/favware/graphql-pokemon/compare/v5.5.8...v5.5.9) (2021-07-18)
 
 

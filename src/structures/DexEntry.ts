@@ -30,19 +30,19 @@ export default class DexEntry {
   @Field(() => String || Int, { nullable: true, description: 'The evolution level, or special method, for a Pokémon' })
   public evolutionLevel?: string | number;
 
-  @Field(() => [String], { nullable: true, description: 'The raw evos of a Pokémon ' })
+  @Field(() => [String], { nullable: true, description: 'The raw evos of a Pokémon' })
   public evos?: string[];
 
-  @Field(() => String, { nullable: true, description: 'The raw prevo of a Pokémon ' })
+  @Field(() => String, { nullable: true, description: 'The raw prevo of a Pokémon' })
   public prevo?: string;
 
-  @Field(() => String, { nullable: true, description: 'The form identifier of a Pokémon ' })
+  @Field(() => String, { nullable: true, description: 'The form identifier of a Pokémon' })
   public forme?: string;
 
   @Field(() => String, { nullable: true, description: 'The single letter identifier of the form' })
   public formeLetter?: string;
 
-  @Field(() => GenderEntry, { description: 'The gender data for a Pokémon ' })
+  @Field(() => GenderEntry, { description: 'The gender data for a Pokémon' })
   public gender!: GenderEntry;
 
   @Field(() => Float, { description: 'The height of a Pokémon in meters' })
@@ -76,7 +76,7 @@ export default class DexEntry {
   @Field(() => CatchRateEntry, { nullable: true, description: 'The catch rate data for a Pokémon' })
   public catchRate?: CatchRateEntry;
 
-  @Field(() => String, { nullable: true, description: 'The levelling rate of a Pokémon ' })
+  @Field(() => String, { nullable: true, description: 'The levelling rate of a Pokémon' })
   public levellingRate?: string;
 
   @Field(() => Int, { nullable: true, description: 'The minimum number of steps required for the egg of a Pokémon to hatch' })

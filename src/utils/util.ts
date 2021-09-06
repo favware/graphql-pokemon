@@ -50,6 +50,10 @@ export default class Util {
     return `${Util.toTitleCase(str.substr(0, str.length - 1))} Z`;
   }
 
+  public static cast<R>(castable: unknown) {
+    return castable as R;
+  }
+
   /**
    * Lowercases string and trims spaces
    * @param str The string to preParse

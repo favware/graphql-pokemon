@@ -5,2050 +5,1201 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'chikorita',
     {
-      species: 'chikorita',
-      num: 152,
-      types: ['Grass'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 45,
-        atk: 49,
-        def: 65,
-        spa: 49,
-        spd: 65,
-        spe: 45
-      },
       abilities: { first: 'Overgrow', hidden: 'Leaf Guard' },
-      heightm: 0.9,
-      weightkg: 6.4,
+      baseStats: { hp: 45, atk: 49, def: 65, spa: 49, spd: 65, spe: 45 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      evos: ['bayleef'],
       eggGroups: ['Monster', 'Grass'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
+      evos: ['bayleef'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.9,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 152,
+      species: 'chikorita',
+      types: ['Grass'],
+      weightkg: 6.4
     }
   ],
   [
     'bayleef',
     {
-      species: 'bayleef',
-      num: 153,
-      types: ['Grass'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 60,
-        atk: 62,
-        def: 80,
-        spa: 63,
-        spd: 80,
-        spe: 60
-      },
       abilities: { first: 'Overgrow', hidden: 'Leaf Guard' },
-      heightm: 1.2,
-      weightkg: 15.8,
+      baseStats: { hp: 60, atk: 62, def: 80, spa: 63, spd: 80, spe: 60 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      prevo: 'chikorita',
-      evos: ['meganium'],
-      evoLevel: 16,
       eggGroups: ['Monster', 'Grass'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 1, spe: 0 },
+      evoLevel: 16,
+      evos: ['meganium'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 153,
+      prevo: 'chikorita',
+      species: 'bayleef',
+      types: ['Grass'],
+      weightkg: 15.8
     }
   ],
   [
     'meganium',
     {
-      species: 'meganium',
-      num: 154,
-      types: ['Grass'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 80,
-        atk: 82,
-        def: 100,
-        spa: 83,
-        spd: 100,
-        spe: 80
-      },
       abilities: { first: 'Overgrow', hidden: 'Leaf Guard' },
-      heightm: 1.8,
-      weightkg: 100.5,
+      baseStats: { hp: 80, atk: 82, def: 100, spa: 83, spd: 100, spe: 80 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      prevo: 'bayleef',
-      evoLevel: 32,
       eggGroups: ['Monster', 'Grass'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 2, spe: 0 },
+      evoLevel: 32,
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 1.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 154,
+      prevo: 'bayleef',
+      species: 'meganium',
+      types: ['Grass'],
+      weightkg: 100.5
     }
   ],
   [
     'cyndaquil',
     {
-      species: 'cyndaquil',
-      num: 155,
-      types: ['Fire'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 39,
-        atk: 52,
-        def: 43,
-        spa: 60,
-        spd: 50,
-        spe: 65
-      },
       abilities: { first: 'Blaze', hidden: 'Flash Fire' },
-      heightm: 0.5,
-      weightkg: 7.9,
+      baseStats: { hp: 39, atk: 52, def: 43, spa: 60, spd: 50, spe: 65 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
-      evos: ['quilava'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['quilava'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 155,
+      species: 'cyndaquil',
+      types: ['Fire'],
+      weightkg: 7.9
     }
   ],
   [
     'quilava',
     {
-      species: 'quilava',
-      num: 156,
-      types: ['Fire'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 58,
-        atk: 64,
-        def: 58,
-        spa: 80,
-        spd: 65,
-        spe: 80
-      },
       abilities: { first: 'Blaze', hidden: 'Flash Fire' },
-      heightm: 0.9,
-      weightkg: 19,
+      baseStats: { hp: 58, atk: 64, def: 58, spa: 80, spd: 65, spe: 80 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
-      prevo: 'cyndaquil',
-      evos: ['typhlosion'],
-      evoLevel: 14,
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 1 },
+      evoLevel: 14,
+      evos: ['typhlosion'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.9,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 1
-      }
+      num: 156,
+      prevo: 'cyndaquil',
+      species: 'quilava',
+      types: ['Fire'],
+      weightkg: 19
     }
   ],
   [
     'typhlosion',
     {
-      species: 'typhlosion',
-      num: 157,
-      types: ['Fire'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 78,
-        atk: 84,
-        def: 78,
-        spa: 109,
-        spd: 85,
-        spe: 100
-      },
       abilities: { first: 'Blaze', hidden: 'Flash Fire' },
-      heightm: 1.7,
-      weightkg: 79.5,
+      baseStats: { hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
-      prevo: 'quilava',
-      evoLevel: 36,
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      evoLevel: 36,
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 1.7,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 3,
-        spd: 0,
-        spe: 0
-      }
+      num: 157,
+      prevo: 'quilava',
+      species: 'typhlosion',
+      types: ['Fire'],
+      weightkg: 79.5
     }
   ],
   [
     'totodile',
     {
-      species: 'totodile',
-      num: 158,
-      types: ['Water'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 50,
-        atk: 65,
-        def: 64,
-        spa: 44,
-        spd: 48,
-        spe: 43
-      },
       abilities: { first: 'Torrent', hidden: 'Sheer Force' },
-      heightm: 0.6,
-      weightkg: 9.5,
+      baseStats: { hp: 50, atk: 65, def: 64, spa: 44, spd: 48, spe: 43 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
-      evos: ['croconaw'],
       eggGroups: ['Monster', 'Water 1'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['croconaw'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 158,
+      species: 'totodile',
+      types: ['Water'],
+      weightkg: 9.5
     }
   ],
   [
     'croconaw',
     {
-      species: 'croconaw',
-      num: 159,
-      types: ['Water'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 65,
-        atk: 80,
-        def: 80,
-        spa: 59,
-        spd: 63,
-        spe: 58
-      },
       abilities: { first: 'Torrent', hidden: 'Sheer Force' },
-      heightm: 1.1,
-      weightkg: 25,
+      baseStats: { hp: 65, atk: 80, def: 80, spa: 59, spd: 63, spe: 58 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
-      prevo: 'totodile',
-      evos: ['feraligatr'],
-      evoLevel: 18,
       eggGroups: ['Monster', 'Water 1'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 1, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 18,
+      evos: ['feraligatr'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 1.1,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 1,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 159,
+      prevo: 'totodile',
+      species: 'croconaw',
+      types: ['Water'],
+      weightkg: 25
     }
   ],
   [
     'feraligatr',
     {
-      species: 'feraligatr',
-      num: 160,
-      types: ['Water'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 85,
-        atk: 105,
-        def: 100,
-        spa: 79,
-        spd: 83,
-        spe: 78
-      },
       abilities: { first: 'Torrent', hidden: 'Sheer Force' },
-      heightm: 2.3,
-      weightkg: 88.8,
+      baseStats: { hp: 85, atk: 105, def: 100, spa: 79, spd: 83, spe: 78 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
-      prevo: 'croconaw',
-      evoLevel: 30,
       eggGroups: ['Monster', 'Water 1'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 2, def: 1, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 30,
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 2.3,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 1,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 160,
+      prevo: 'croconaw',
+      species: 'feraligatr',
+      types: ['Water'],
+      weightkg: 88.8
     }
   ],
   [
     'sentret',
     {
-      species: 'sentret',
-      num: 161,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 35,
-        atk: 46,
-        def: 34,
-        spa: 35,
-        spd: 45,
-        spe: 20
-      },
       abilities: { first: 'Run Away', second: 'Keen Eye', hidden: 'Frisk' },
-      heightm: 0.8,
-      weightkg: 6,
+      baseStats: { hp: 35, atk: 46, def: 34, spa: 35, spd: 45, spe: 20 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Brown',
-      evos: ['furret'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 255,
-        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['furret'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 161,
+      species: 'sentret',
+      types: ['Normal'],
+      weightkg: 6
     }
   ],
   [
     'furret',
     {
-      species: 'furret',
-      num: 162,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 85,
-        atk: 76,
-        def: 64,
-        spa: 45,
-        spd: 55,
-        spe: 90
-      },
       abilities: { first: 'Run Away', second: 'Keen Eye', hidden: 'Frisk' },
-      heightm: 1.8,
-      weightkg: 32.5,
+      baseStats: { hp: 85, atk: 76, def: 64, spa: 45, spd: 55, spe: 90 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Brown',
-      prevo: 'sentret',
-      evoLevel: 15,
       eggGroups: ['Field'],
-      catchRate: {
-        base: 90,
-        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 2 },
+      evoLevel: 15,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 2
-      }
+      num: 162,
+      prevo: 'sentret',
+      species: 'furret',
+      types: ['Normal'],
+      weightkg: 32.5
     }
   ],
   [
     'hoothoot',
     {
-      species: 'hoothoot',
-      num: 163,
-      types: ['Normal', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 60,
-        atk: 30,
-        def: 30,
-        spa: 36,
-        spd: 56,
-        spe: 50
-      },
       abilities: { first: 'Insomnia', second: 'Keen Eye', hidden: 'Tinted Lens' },
-      heightm: 0.7,
-      weightkg: 21.2,
+      baseStats: { hp: 60, atk: 30, def: 30, spa: 36, spd: 56, spe: 50 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Brown',
-      evos: ['noctowl'],
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 255,
-        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
-      },
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['noctowl'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.7,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 163,
+      species: 'hoothoot',
+      types: ['Normal', 'Flying'],
+      weightkg: 21.2
     }
   ],
   [
     'noctowl',
     {
-      species: 'noctowl',
-      num: 164,
-      types: ['Normal', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 100,
-        atk: 50,
-        def: 50,
-        spa: 86,
-        spd: 96,
-        spe: 70
-      },
       abilities: { first: 'Insomnia', second: 'Keen Eye', hidden: 'Tinted Lens' },
-      heightm: 1.6,
-      weightkg: 40.8,
+      baseStats: { hp: 100, atk: 50, def: 50, spa: 86, spd: 96, spe: 70 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Brown',
-      prevo: 'hoothoot',
-      evoLevel: 20,
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 90,
-        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
-      },
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 20,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 2,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 164,
+      prevo: 'hoothoot',
+      species: 'noctowl',
+      types: ['Normal', 'Flying'],
+      weightkg: 40.8
     }
   ],
   [
     'ledyba',
     {
-      species: 'ledyba',
-      num: 165,
-      types: ['Bug', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 40,
-        atk: 20,
-        def: 30,
-        spa: 40,
-        spd: 80,
-        spe: 55
-      },
       abilities: { first: 'Swarm', second: 'Early Bird', hidden: 'Rattled' },
-      heightm: 1,
-      weightkg: 10.8,
+      baseStats: { hp: 40, atk: 20, def: 30, spa: 40, spd: 80, spe: 55 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Red',
-      evos: ['ledian'],
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 255,
-        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
+      evos: ['ledian'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 165,
+      species: 'ledyba',
+      types: ['Bug', 'Flying'],
+      weightkg: 10.8
     }
   ],
   [
     'ledian',
     {
-      species: 'ledian',
-      num: 166,
-      types: ['Bug', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 35,
-        def: 50,
-        spa: 55,
-        spd: 110,
-        spe: 85
-      },
       abilities: { first: 'Swarm', second: 'Early Bird', hidden: 'Iron Fist' },
-      heightm: 1.4,
-      weightkg: 35.6,
+      baseStats: { hp: 55, atk: 35, def: 50, spa: 55, spd: 110, spe: 85 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Red',
-      prevo: 'ledyba',
-      evoLevel: 18,
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 90,
-        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 2, spe: 0 },
+      evoLevel: 18,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 166,
+      prevo: 'ledyba',
+      species: 'ledian',
+      types: ['Bug', 'Flying'],
+      weightkg: 35.6
     }
   ],
   [
     'spinarak',
     {
-      species: 'spinarak',
-      num: 167,
-      types: ['Bug', 'Poison'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 40,
-        atk: 60,
-        def: 40,
-        spa: 40,
-        spd: 40,
-        spe: 30
-      },
       abilities: { first: 'Swarm', second: 'Insomnia', hidden: 'Sniper' },
-      heightm: 0.5,
-      weightkg: 8.5,
+      baseStats: { hp: 40, atk: 60, def: 40, spa: 40, spd: 40, spe: 30 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Green',
-      evos: ['ariados'],
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 255,
-        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['ariados'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.5,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 167,
+      species: 'spinarak',
+      types: ['Bug', 'Poison'],
+      weightkg: 8.5
     }
   ],
   [
     'ariados',
     {
-      species: 'ariados',
-      num: 168,
-      types: ['Bug', 'Poison'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 90,
-        def: 70,
-        spa: 60,
-        spd: 70,
-        spe: 40
-      },
       abilities: { first: 'Swarm', second: 'Insomnia', hidden: 'Sniper' },
-      heightm: 1.1,
-      weightkg: 33.5,
+      baseStats: { hp: 70, atk: 90, def: 70, spa: 60, spd: 70, spe: 40 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Red',
-      prevo: 'spinarak',
-      evoLevel: 22,
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 90,
-        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 22,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.1,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 168,
+      prevo: 'spinarak',
+      species: 'ariados',
+      types: ['Bug', 'Poison'],
+      weightkg: 33.5
     }
   ],
   [
     'crobat',
     {
-      species: 'crobat',
-      num: 169,
-      types: ['Poison', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 85,
-        atk: 90,
-        def: 80,
-        spa: 70,
-        spd: 80,
-        spe: 130
-      },
       abilities: { first: 'Inner Focus', hidden: 'Infiltrator' },
-      heightm: 1.8,
-      weightkg: 75,
+      baseStats: { hp: 85, atk: 90, def: 80, spa: 70, spd: 80, spe: 130 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Purple',
-      prevo: 'golbat',
-      evoLevel: 23,
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 90,
-        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 3 },
+      evoLevel: 23,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 3
-      }
+      num: 169,
+      prevo: 'golbat',
+      species: 'crobat',
+      types: ['Poison', 'Flying'],
+      weightkg: 75
     }
   ],
   [
     'chinchou',
     {
-      species: 'chinchou',
-      num: 170,
-      types: ['Water', 'Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 38,
-        def: 38,
-        spa: 56,
-        spd: 56,
-        spe: 67
+      abilities: {
+        first: 'Volt Absorb',
+        second: 'Illuminate',
+        hidden: 'Water Absorb'
       },
-      abilities: { first: 'Volt Absorb', second: 'Illuminate', hidden: 'Water Absorb' },
-      heightm: 0.5,
-      weightkg: 12,
+      baseStats: { hp: 75, atk: 38, def: 38, spa: 56, spd: 56, spe: 67 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Blue',
-      evos: ['lanturn'],
       eggGroups: ['Water 2'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['lanturn'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.5,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 170,
+      species: 'chinchou',
+      types: ['Water', 'Electric'],
+      weightkg: 12
     }
   ],
   [
     'lanturn',
     {
-      species: 'lanturn',
-      num: 171,
-      types: ['Water', 'Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 125,
-        atk: 58,
-        def: 58,
-        spa: 76,
-        spd: 76,
-        spe: 67
+      abilities: {
+        first: 'Volt Absorb',
+        second: 'Illuminate',
+        hidden: 'Water Absorb'
       },
-      abilities: { first: 'Volt Absorb', second: 'Illuminate', hidden: 'Water Absorb' },
-      heightm: 1.2,
-      weightkg: 22.5,
+      baseStats: { hp: 125, atk: 58, def: 58, spa: 76, spd: 76, spe: 67 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Blue',
-      prevo: 'chinchou',
-      evoLevel: 27,
       eggGroups: ['Water 2'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 27,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 2,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 171,
+      prevo: 'chinchou',
+      species: 'lanturn',
+      types: ['Water', 'Electric'],
+      weightkg: 22.5
     }
   ],
   [
     'pichu',
     {
-      species: 'pichu',
-      num: 172,
-      types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 20,
-        atk: 40,
-        def: 15,
-        spa: 35,
-        spd: 35,
-        spe: 60
-      },
       abilities: { first: 'Static', hidden: 'Lightning Rod' },
-      heightm: 0.3,
-      weightkg: 2,
+      baseStats: { hp: 20, atk: 40, def: 15, spa: 35, spd: 35, spe: 60 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
-      evos: ['pikachu'],
       eggGroups: ['Undiscovered'],
-      otherFormes: ['pichuspikyeared'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['pikachu'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.3,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 172,
+      otherFormes: ['pichuspikyeared'],
+      species: 'pichu',
+      types: ['Electric'],
+      weightkg: 2
     }
   ],
   [
     'pichuspikyeared',
     {
-      species: 'pichu-spiky-eared',
-      num: 172,
-      types: ['Electric'],
-      genderRatio: { male: 0, female: 1 },
-      baseStats: {
-        hp: 20,
-        atk: 40,
-        def: 15,
-        spa: 35,
-        spd: 35,
-        spe: 60
-      },
-      baseSpecies: 'Pichu',
-      forme: 'Spiky-eared',
-      formeLetter: 'S',
       abilities: { first: 'Static' },
-      heightm: 0.3,
-      weightkg: 2,
+      baseSpecies: 'Pichu',
+      baseStats: { hp: 20, atk: 40, def: 15, spa: 35, spd: 35, spe: 60 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen4/pichu-spikyeared.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen4-shiny/pichu-spikyeared.png',
-      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen4-back/pichu-spikyeared.png',
-      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen4-back-shiny/pichu-spikyeared.png',
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      forme: 'Spiky-eared',
+      formeLetter: 'S',
+      genderRatio: { male: 0, female: 1 },
+      heightm: 0.3,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 172,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen4-back/pichu-spikyeared.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen4-back-shiny/pichu-spikyeared.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen4-shiny/pichu-spikyeared.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen4/pichu-spikyeared.png',
+      species: 'pichu-spiky-eared',
+      types: ['Electric'],
+      weightkg: 2
     }
   ],
   [
     'cleffa',
     {
-      species: 'cleffa',
-      num: 173,
-      types: ['Fairy'],
-      genderRatio: { male: 0.25, female: 0.75 },
-      baseStats: {
-        hp: 50,
-        atk: 25,
-        def: 28,
-        spa: 45,
-        spd: 55,
-        spe: 15
+      abilities: {
+        first: 'Cute Charm',
+        second: 'Magic Guard',
+        hidden: 'Friend Guard'
       },
-      abilities: { first: 'Cute Charm', second: 'Magic Guard', hidden: 'Friend Guard' },
-      heightm: 0.3,
-      weightkg: 3,
+      baseStats: { hp: 50, atk: 25, def: 28, spa: 45, spd: 55, spe: 15 },
+      catchRate: { base: 150, percentageWithOrdinaryPokeballAtFullHealth: '29.5%' },
       color: 'Pink',
-      evos: ['clefairy'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 150,
-        percentageWithOrdinaryPokeballAtFullHealth: '29.5%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
+      evos: ['clefairy'],
+      genderRatio: { male: 0.25, female: 0.75 },
+      heightm: 0.3,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 173,
+      species: 'cleffa',
+      types: ['Fairy'],
+      weightkg: 3
     }
   ],
   [
     'igglybuff',
     {
-      species: 'igglybuff',
-      num: 174,
-      types: ['Normal', 'Fairy'],
-      genderRatio: { male: 0.25, female: 0.75 },
-      baseStats: {
-        hp: 90,
-        atk: 30,
-        def: 15,
-        spa: 40,
-        spd: 20,
-        spe: 15
+      abilities: {
+        first: 'Cute Charm',
+        second: 'Competitive',
+        hidden: 'Friend Guard'
       },
-      abilities: { first: 'Cute Charm', second: 'Competitive', hidden: 'Friend Guard' },
-      heightm: 0.3,
-      weightkg: 1,
+      baseStats: { hp: 90, atk: 30, def: 15, spa: 40, spd: 20, spe: 15 },
+      catchRate: { base: 170, percentageWithOrdinaryPokeballAtFullHealth: '32.4%' },
       color: 'Pink',
-      evos: ['jigglypuff'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 170,
-        percentageWithOrdinaryPokeballAtFullHealth: '32.4%'
-      },
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['jigglypuff'],
+      genderRatio: { male: 0.25, female: 0.75 },
+      heightm: 0.3,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 174,
+      species: 'igglybuff',
+      types: ['Normal', 'Fairy'],
+      weightkg: 1
     }
   ],
   [
     'togepi',
     {
-      species: 'togepi',
-      num: 175,
-      types: ['Fairy'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 35,
-        atk: 20,
-        def: 65,
-        spa: 40,
-        spd: 65,
-        spe: 20
-      },
       abilities: { first: 'Hustle', second: 'Serene Grace', hidden: 'Super Luck' },
-      heightm: 0.3,
-      weightkg: 1.5,
+      baseStats: { hp: 35, atk: 20, def: 65, spa: 40, spd: 65, spe: 20 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'White',
-      evos: ['togetic'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
+      evos: ['togetic'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.3,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 175,
+      species: 'togepi',
+      types: ['Fairy'],
+      weightkg: 1.5
     }
   ],
   [
     'togetic',
     {
-      species: 'togetic',
-      num: 176,
-      types: ['Fairy', 'Flying'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 55,
-        atk: 40,
-        def: 85,
-        spa: 80,
-        spd: 105,
-        spe: 40
-      },
       abilities: { first: 'Hustle', second: 'Serene Grace', hidden: 'Super Luck' },
-      heightm: 0.6,
-      weightkg: 3.2,
+      baseStats: { hp: 55, atk: 40, def: 85, spa: 80, spd: 105, spe: 40 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'White',
-      prevo: 'togepi',
-      evos: ['togekiss'],
-      evoLevel: 2,
       eggGroups: ['Flying', 'Fairy'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 2, spe: 0 },
+      evoLevel: 2,
+      evos: ['togekiss'],
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 176,
+      prevo: 'togepi',
+      species: 'togetic',
+      types: ['Fairy', 'Flying'],
+      weightkg: 3.2
     }
   ],
   [
     'natu',
     {
-      species: 'natu',
-      num: 177,
-      types: ['Psychic', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 40,
-        atk: 50,
-        def: 45,
-        spa: 70,
-        spd: 45,
-        spe: 70
+      abilities: {
+        first: 'Synchronize',
+        second: 'Early Bird',
+        hidden: 'Magic Bounce'
       },
-      abilities: { first: 'Synchronize', second: 'Early Bird', hidden: 'Magic Bounce' },
-      heightm: 0.2,
-      weightkg: 2,
+      baseStats: { hp: 40, atk: 50, def: 45, spa: 70, spd: 45, spe: 70 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Green',
-      evos: ['xatu'],
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['xatu'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 177,
+      species: 'natu',
+      types: ['Psychic', 'Flying'],
+      weightkg: 2
     }
   ],
   [
     'xatu',
     {
-      species: 'xatu',
-      num: 178,
-      types: ['Psychic', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 65,
-        atk: 75,
-        def: 70,
-        spa: 95,
-        spd: 70,
-        spe: 95
+      abilities: {
+        first: 'Synchronize',
+        second: 'Early Bird',
+        hidden: 'Magic Bounce'
       },
-      abilities: { first: 'Synchronize', second: 'Early Bird', hidden: 'Magic Bounce' },
-      heightm: 1.5,
-      weightkg: 15,
+      baseStats: { hp: 65, atk: 75, def: 70, spa: 95, spd: 70, spe: 95 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Green',
-      prevo: 'natu',
-      evoLevel: 25,
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 1 },
+      evoLevel: 25,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 1
-      }
+      num: 178,
+      prevo: 'natu',
+      species: 'xatu',
+      types: ['Psychic', 'Flying'],
+      weightkg: 15
     }
   ],
   [
     'mareep',
     {
-      species: 'mareep',
-      num: 179,
-      types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 40,
-        def: 40,
-        spa: 65,
-        spd: 45,
-        spe: 35
-      },
       abilities: { first: 'Static', hidden: 'Plus' },
-      heightm: 0.6,
-      weightkg: 7.8,
+      baseStats: { hp: 55, atk: 40, def: 40, spa: 65, spd: 45, spe: 35 },
+      catchRate: { base: 235, percentageWithOrdinaryPokeballAtFullHealth: '41.3%' },
       color: 'White',
-      evos: ['flaaffy'],
       eggGroups: ['Monster', 'Field'],
-      catchRate: {
-        base: 235,
-        percentageWithOrdinaryPokeballAtFullHealth: '41.3%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['flaaffy'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 179,
+      species: 'mareep',
+      types: ['Electric'],
+      weightkg: 7.8
     }
   ],
   [
     'flaaffy',
     {
-      species: 'flaaffy',
-      num: 180,
-      types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 55,
-        def: 55,
-        spa: 80,
-        spd: 60,
-        spe: 45
-      },
       abilities: { first: 'Static', hidden: 'Plus' },
-      heightm: 0.8,
-      weightkg: 13.3,
+      baseStats: { hp: 70, atk: 55, def: 55, spa: 80, spd: 60, spe: 45 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Pink',
-      prevo: 'mareep',
-      evos: ['ampharos'],
-      evoLevel: 15,
       eggGroups: ['Monster', 'Field'],
-      catchRate: {
-        base: 120,
-        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 15,
+      evos: ['ampharos'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 180,
+      prevo: 'mareep',
+      species: 'flaaffy',
+      types: ['Electric'],
+      weightkg: 13.3
     }
   ],
   [
     'ampharos',
     {
-      species: 'ampharos',
-      num: 181,
-      types: ['Electric'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 90,
-        atk: 75,
-        def: 85,
-        spa: 115,
-        spd: 90,
-        spe: 55
-      },
       abilities: { first: 'Static', hidden: 'Plus' },
-      heightm: 1.4,
-      weightkg: 61.5,
+      baseStats: { hp: 90, atk: 75, def: 85, spa: 115, spd: 90, spe: 55 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
-      prevo: 'flaaffy',
-      evoLevel: 30,
       eggGroups: ['Monster', 'Field'],
-      otherFormes: ['ampharosmega'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      evoLevel: 30,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 3,
-        spd: 0,
-        spe: 0
-      }
+      num: 181,
+      otherFormes: ['ampharosmega'],
+      prevo: 'flaaffy',
+      species: 'ampharos',
+      types: ['Electric'],
+      weightkg: 61.5
     }
   ],
   [
     'ampharosmega',
     {
-      species: 'ampharos-mega',
-      num: 181,
-      types: ['Electric', 'Dragon'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 90,
-        atk: 95,
-        def: 105,
-        spa: 165,
-        spd: 110,
-        spe: 45
-      },
-      baseSpecies: 'Ampharos',
-      forme: 'Mega',
-      formeLetter: 'M',
       abilities: { first: 'Mold Breaker' },
-      heightm: 1.4,
-      weightkg: 61.5,
+      baseSpecies: 'Ampharos',
+      baseStats: { hp: 90, atk: 95, def: 105, spa: 165, spd: 110, spe: 45 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
       eggGroups: ['Monster', 'Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 3,
-        spd: 0,
-        spe: 0
-      }
+      num: 181,
+      species: 'ampharos-mega',
+      types: ['Electric', 'Dragon'],
+      weightkg: 61.5
     }
   ],
   [
     'bellossom',
     {
-      species: 'bellossom',
-      num: 182,
-      types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 80,
-        def: 95,
-        spa: 90,
-        spd: 100,
-        spe: 50
-      },
       abilities: { first: 'Chlorophyll', hidden: 'Healer' },
-      heightm: 0.4,
-      weightkg: 5.8,
+      baseStats: { hp: 75, atk: 80, def: 95, spa: 90, spd: 100, spe: 50 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      prevo: 'gloom',
-      evoLevel: 'use Sun Stone',
       eggGroups: ['Grass'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 3, spe: 0 },
+      evoLevel: 'use Sun Stone',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 3,
-        spe: 0
-      }
+      num: 182,
+      prevo: 'gloom',
+      species: 'bellossom',
+      types: ['Grass'],
+      weightkg: 5.8
     }
   ],
   [
     'marill',
     {
-      species: 'marill',
-      num: 183,
-      types: ['Water', 'Fairy'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 20,
-        def: 50,
-        spa: 20,
-        spd: 50,
-        spe: 40
-      },
       abilities: { first: 'Thick Fat', second: 'Huge Power', hidden: 'Sap Sipper' },
-      heightm: 0.4,
-      weightkg: 8.5,
+      baseStats: { hp: 70, atk: 20, def: 50, spa: 20, spd: 50, spe: 40 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Blue',
-      prevo: 'azurill',
-      evos: ['azumarill'],
-      evoLevel: 'Level up with happiness of at least 220',
       eggGroups: ['Water 1', 'Fairy'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'Level up with happiness of at least 220',
+      evos: ['azumarill'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.4,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 2,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 183,
+      prevo: 'azurill',
+      species: 'marill',
+      types: ['Water', 'Fairy'],
+      weightkg: 8.5
     }
   ],
   [
     'azumarill',
     {
-      species: 'azumarill',
-      num: 184,
-      types: ['Water', 'Fairy'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 100,
-        atk: 50,
-        def: 80,
-        spa: 60,
-        spd: 80,
-        spe: 50
-      },
       abilities: { first: 'Thick Fat', second: 'Huge Power', hidden: 'Sap Sipper' },
-      heightm: 0.8,
-      weightkg: 28.5,
+      baseStats: { hp: 100, atk: 50, def: 80, spa: 60, spd: 80, spe: 50 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Blue',
-      prevo: 'marill',
-      evoLevel: 18,
       eggGroups: ['Water 1', 'Fairy'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 18,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      isEggObtainable: true,
-      evYields: {
-        hp: 3,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 184,
+      prevo: 'marill',
+      species: 'azumarill',
+      types: ['Water', 'Fairy'],
+      weightkg: 28.5
     }
   ],
   [
     'sudowoodo',
     {
-      species: 'sudowoodo',
-      num: 185,
-      types: ['Rock'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 100,
-        def: 115,
-        spa: 30,
-        spd: 65,
-        spe: 30
-      },
       abilities: { first: 'Sturdy', second: 'Rock Head', hidden: 'Rattled' },
-      heightm: 1.2,
-      weightkg: 38,
+      baseStats: { hp: 70, atk: 100, def: 115, spa: 30, spd: 65, spe: 30 },
+      catchRate: { base: 65, percentageWithOrdinaryPokeballAtFullHealth: '15.7%' },
       color: 'Brown',
-      prevo: 'bonsly',
-      evoLevel: 'Level up while knowing Mimic',
       eggGroups: ['Mineral'],
-      catchRate: {
-        base: 65,
-        percentageWithOrdinaryPokeballAtFullHealth: '15.7%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'Level up while knowing Mimic',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 185,
+      prevo: 'bonsly',
+      species: 'sudowoodo',
+      types: ['Rock'],
+      weightkg: 38
     }
   ],
   [
     'politoed',
     {
-      species: 'politoed',
-      num: 186,
-      types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 90,
-        atk: 75,
-        def: 75,
-        spa: 90,
-        spd: 100,
-        spe: 70
-      },
       abilities: { first: 'Water Absorb', second: 'Damp', hidden: 'Drizzle' },
-      heightm: 1.1,
-      weightkg: 33.9,
+      baseStats: { hp: 90, atk: 75, def: 75, spa: 90, spd: 100, spe: 70 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      prevo: 'poliwhirl',
-      evoLevel: "Trade while holding King's Rock",
       eggGroups: ['Water 1'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 3, spe: 0 },
+      evoLevel: "Trade while holding King's Rock",
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.1,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 3,
-        spe: 0
-      }
+      num: 186,
+      prevo: 'poliwhirl',
+      species: 'politoed',
+      types: ['Water'],
+      weightkg: 33.9
     }
   ],
   [
     'hoppip',
     {
-      species: 'hoppip',
-      num: 187,
-      types: ['Grass', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 35,
-        atk: 35,
-        def: 40,
-        spa: 35,
-        spd: 55,
-        spe: 50
+      abilities: {
+        first: 'Chlorophyll',
+        second: 'Leaf Guard',
+        hidden: 'Infiltrator'
       },
-      abilities: { first: 'Chlorophyll', second: 'Leaf Guard', hidden: 'Infiltrator' },
-      heightm: 0.4,
-      weightkg: 0.5,
+      baseStats: { hp: 35, atk: 35, def: 40, spa: 35, spd: 55, spe: 50 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Pink',
-      evos: ['skiploom'],
       eggGroups: ['Fairy', 'Grass'],
-      catchRate: {
-        base: 255,
-        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
+      evos: ['skiploom'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 187,
+      species: 'hoppip',
+      types: ['Grass', 'Flying'],
+      weightkg: 0.5
     }
   ],
   [
     'skiploom',
     {
-      species: 'skiploom',
-      num: 188,
-      types: ['Grass', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 45,
-        def: 50,
-        spa: 45,
-        spd: 65,
-        spe: 80
+      abilities: {
+        first: 'Chlorophyll',
+        second: 'Leaf Guard',
+        hidden: 'Infiltrator'
       },
-      abilities: { first: 'Chlorophyll', second: 'Leaf Guard', hidden: 'Infiltrator' },
-      heightm: 0.6,
-      weightkg: 1,
+      baseStats: { hp: 55, atk: 45, def: 50, spa: 45, spd: 65, spe: 80 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Green',
-      prevo: 'hoppip',
-      evos: ['jumpluff'],
-      evoLevel: 18,
       eggGroups: ['Fairy', 'Grass'],
-      catchRate: {
-        base: 120,
-        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 2 },
+      evoLevel: 18,
+      evos: ['jumpluff'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 2
-      }
+      num: 188,
+      prevo: 'hoppip',
+      species: 'skiploom',
+      types: ['Grass', 'Flying'],
+      weightkg: 1
     }
   ],
   [
     'jumpluff',
     {
-      species: 'jumpluff',
-      num: 189,
-      types: ['Grass', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 55,
-        def: 70,
-        spa: 55,
-        spd: 95,
-        spe: 110
+      abilities: {
+        first: 'Chlorophyll',
+        second: 'Leaf Guard',
+        hidden: 'Infiltrator'
       },
-      abilities: { first: 'Chlorophyll', second: 'Leaf Guard', hidden: 'Infiltrator' },
-      heightm: 0.8,
-      weightkg: 3,
+      baseStats: { hp: 75, atk: 55, def: 70, spa: 55, spd: 95, spe: 110 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
-      prevo: 'skiploom',
-      evoLevel: 27,
       eggGroups: ['Fairy', 'Grass'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 3 },
+      evoLevel: 27,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 3
-      }
+      num: 189,
+      prevo: 'skiploom',
+      species: 'jumpluff',
+      types: ['Grass', 'Flying'],
+      weightkg: 3
     }
   ],
   [
     'aipom',
     {
-      species: 'aipom',
-      num: 190,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 70,
-        def: 55,
-        spa: 40,
-        spd: 55,
-        spe: 85
-      },
       abilities: { first: 'Run Away', second: 'Pickup', hidden: 'Skill Link' },
-      heightm: 0.8,
-      weightkg: 11.5,
+      baseStats: { hp: 55, atk: 70, def: 55, spa: 40, spd: 55, spe: 85 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
-      evos: ['ambipom'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['ambipom'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 190,
+      species: 'aipom',
+      types: ['Normal'],
+      weightkg: 11.5
     }
   ],
   [
     'sunkern',
     {
-      species: 'sunkern',
-      num: 191,
-      types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 30,
-        atk: 30,
-        def: 30,
-        spa: 30,
-        spd: 30,
-        spe: 30
+      abilities: {
+        first: 'Chlorophyll',
+        second: 'Solar Power',
+        hidden: 'Early Bird'
       },
-      abilities: { first: 'Chlorophyll', second: 'Solar Power', hidden: 'Early Bird' },
-      heightm: 0.3,
-      weightkg: 1.8,
+      baseStats: { hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30 },
+      catchRate: { base: 235, percentageWithOrdinaryPokeballAtFullHealth: '41.3%' },
       color: 'Yellow',
-      evos: ['sunflora'],
       eggGroups: ['Grass'],
-      catchRate: {
-        base: 235,
-        percentageWithOrdinaryPokeballAtFullHealth: '41.3%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['sunflora'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.3,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 191,
+      species: 'sunkern',
+      types: ['Grass'],
+      weightkg: 1.8
     }
   ],
   [
     'sunflora',
     {
-      species: 'sunflora',
-      num: 192,
-      types: ['Grass'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 75,
-        def: 55,
-        spa: 105,
-        spd: 85,
-        spe: 30
+      abilities: {
+        first: 'Chlorophyll',
+        second: 'Solar Power',
+        hidden: 'Early Bird'
       },
-      abilities: { first: 'Chlorophyll', second: 'Solar Power', hidden: 'Early Bird' },
-      heightm: 0.8,
-      weightkg: 8.5,
+      baseStats: { hp: 75, atk: 75, def: 55, spa: 105, spd: 85, spe: 30 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Yellow',
-      prevo: 'sunkern',
-      evoLevel: 'use Sun Stone',
       eggGroups: ['Grass'],
-      catchRate: {
-        base: 120,
-        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 'use Sun Stone',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 192,
+      prevo: 'sunkern',
+      species: 'sunflora',
+      types: ['Grass'],
+      weightkg: 8.5
     }
   ],
   [
     'yanma',
     {
-      species: 'yanma',
-      num: 193,
-      types: ['Bug', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 65,
-        atk: 65,
-        def: 45,
-        spa: 75,
-        spd: 45,
-        spe: 95
-      },
       abilities: { first: 'Speed Boost', second: 'Compound Eyes', hidden: 'Frisk' },
-      heightm: 1.2,
-      weightkg: 38,
+      baseStats: { hp: 65, atk: 65, def: 45, spa: 75, spd: 45, spe: 95 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Red',
-      evos: ['yanmega'],
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['yanmega'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 193,
+      species: 'yanma',
+      types: ['Bug', 'Flying'],
+      weightkg: 38
     }
   ],
   [
     'wooper',
     {
-      species: 'wooper',
-      num: 194,
-      types: ['Water', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 45,
-        def: 45,
-        spa: 25,
-        spd: 25,
-        spe: 15
-      },
       abilities: { first: 'Damp', second: 'Water Absorb', hidden: 'Unaware' },
-      heightm: 0.4,
-      weightkg: 8.5,
+      baseStats: { hp: 55, atk: 45, def: 45, spa: 25, spd: 25, spe: 15 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Blue',
-      evos: ['quagsire'],
       eggGroups: ['Water 1', 'Field'],
-      catchRate: {
-        base: 255,
-        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
-      },
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['quagsire'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 194,
+      species: 'wooper',
+      types: ['Water', 'Ground'],
+      weightkg: 8.5
     }
   ],
   [
     'quagsire',
     {
-      species: 'quagsire',
-      num: 195,
-      types: ['Water', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 95,
-        atk: 85,
-        def: 85,
-        spa: 65,
-        spd: 65,
-        spe: 35
-      },
       abilities: { first: 'Damp', second: 'Water Absorb', hidden: 'Unaware' },
-      heightm: 1.4,
-      weightkg: 75,
+      baseStats: { hp: 95, atk: 85, def: 85, spa: 65, spd: 65, spe: 35 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Blue',
-      prevo: 'wooper',
-      evoLevel: 20,
       eggGroups: ['Water 1', 'Field'],
-      catchRate: {
-        base: 90,
-        percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
-      },
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 20,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 2,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 195,
+      prevo: 'wooper',
+      species: 'quagsire',
+      types: ['Water', 'Ground'],
+      weightkg: 75
     }
   ],
   [
     'espeon',
     {
-      species: 'espeon',
-      num: 196,
-      types: ['Psychic'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 65,
-        atk: 65,
-        def: 60,
-        spa: 130,
-        spd: 95,
-        spe: 110
-      },
       abilities: { first: 'Synchronize', hidden: 'Magic Bounce' },
-      heightm: 0.9,
-      weightkg: 26.5,
+      baseStats: { hp: 65, atk: 65, def: 60, spa: 130, spd: 95, spe: 110 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
-      prevo: 'eevee',
-      evoLevel: 'Level up during Daytime with happiness of at least 220',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 'Level up during Daytime with happiness of at least 220',
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 0.9,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 8995,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 196,
+      prevo: 'eevee',
+      species: 'espeon',
+      types: ['Psychic'],
+      weightkg: 26.5
     }
   ],
   [
     'umbreon',
     {
-      species: 'umbreon',
-      num: 197,
-      types: ['Dark'],
-      genderRatio: { male: 0.875, female: 0.125 },
-      baseStats: {
-        hp: 95,
-        atk: 65,
-        def: 110,
-        spa: 60,
-        spd: 130,
-        spe: 65
-      },
       abilities: { first: 'Synchronize', hidden: 'Inner Focus' },
-      heightm: 1,
-      weightkg: 27,
+      baseStats: { hp: 95, atk: 65, def: 110, spa: 60, spd: 130, spe: 65 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
-      prevo: 'eevee',
-      evoLevel: 'Level up during Nighttime with happiness of at least 220',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 2, spe: 0 },
+      evoLevel: 'Level up during Nighttime with happiness of at least 220',
+      genderRatio: { male: 0.875, female: 0.125 },
+      heightm: 1,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 8995,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 197,
+      prevo: 'eevee',
+      species: 'umbreon',
+      types: ['Dark'],
+      weightkg: 27
     }
   ],
   [
     'murkrow',
     {
-      species: 'murkrow',
-      num: 198,
-      types: ['Dark', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 60,
-        atk: 85,
-        def: 42,
-        spa: 85,
-        spd: 42,
-        spe: 91
-      },
       abilities: { first: 'Insomnia', second: 'Super Luck', hidden: 'Prankster' },
-      heightm: 0.5,
-      weightkg: 2.1,
+      baseStats: { hp: 60, atk: 85, def: 42, spa: 85, spd: 42, spe: 91 },
+      catchRate: { base: 30, percentageWithOrdinaryPokeballAtFullHealth: '8.8%' },
       color: 'Black',
-      evos: ['honchkrow'],
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 30,
-        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['honchkrow'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 198,
+      species: 'murkrow',
+      types: ['Dark', 'Flying'],
+      weightkg: 2.1
     }
   ],
   [
     'slowking',
     {
-      species: 'slowking',
-      num: 199,
-      types: ['Water', 'Psychic'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 95,
-        atk: 75,
-        def: 80,
-        spa: 100,
-        spd: 110,
-        spe: 30
-      },
       abilities: { first: 'Oblivious', second: 'Own Tempo', hidden: 'Regenerator' },
-      heightm: 2,
-      weightkg: 79.5,
+      baseStats: { hp: 95, atk: 75, def: 80, spa: 100, spd: 110, spe: 30 },
+      catchRate: { base: 70, percentageWithOrdinaryPokeballAtFullHealth: '16.6%' },
       color: 'Pink',
-      prevo: 'slowpoke',
-      evoLevel: "Trade while holding King's Rock",
       eggGroups: ['Monster', 'Water 1'],
-      otherFormes: ['slowkinggalar'],
-      catchRate: {
-        base: 70,
-        percentageWithOrdinaryPokeballAtFullHealth: '16.6%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 2, spe: 0 },
+      evoLevel: "Trade while holding King's Rock",
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 199,
+      otherFormes: ['slowkinggalar'],
+      prevo: 'slowpoke',
+      species: 'slowking',
+      types: ['Water', 'Psychic'],
+      weightkg: 79.5
     }
   ],
   [
     'slowkinggalar',
     {
-      species: 'slowking-galar',
+      abilities: {
+        first: 'Curious Medicine',
+        second: 'Own Tempo',
+        hidden: 'Regenerator'
+      },
       baseSpecies: 'Slowking',
+      baseStats: { hp: 95, atk: 65, def: 80, spa: 110, spd: 110, spe: 30 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+      color: 'Pink',
+      eggGroups: ['Monster', 'Water 1'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      evoLevel: "Trade while holding King's Rock",
       forme: 'Galar',
       formeLetter: 'G',
-      num: 145,
-      types: ['Poison', 'Psychic'],
       genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 95,
-        atk: 65,
-        def: 80,
-        spa: 110,
-        spd: 110,
-        spe: 30
-      },
-      abilities: { first: 'Curious Medicine', second: 'Own Tempo', hidden: 'Regenerator' },
       heightm: 1.8,
-      weightkg: 79.5,
-      color: 'Pink',
-      prevo: 'slowpokegalar',
-      evoLevel: "Trade while holding King's Rock",
-      eggGroups: ['Monster', 'Water 1'],
-      catchRate: {
-        base: 3,
-        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-      },
+      isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 20560,
-      isEggObtainable: false,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 3,
-        spd: 0,
-        spe: 0
-      }
+      num: 145,
+      prevo: 'slowpokegalar',
+      species: 'slowking-galar',
+      types: ['Poison', 'Psychic'],
+      weightkg: 79.5
     }
   ],
   [
     'misdreavus',
     {
-      species: 'misdreavus',
-      num: 200,
-      types: ['Ghost'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 60,
-        atk: 60,
-        def: 60,
-        spa: 85,
-        spd: 85,
-        spe: 85
-      },
       abilities: { first: 'Levitate' },
-      heightm: 0.7,
-      weightkg: 1,
+      baseStats: { hp: 60, atk: 60, def: 60, spa: 85, spd: 85, spe: 85 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
-      evos: ['mismagius'],
       eggGroups: ['Amorphous'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
+      evos: ['mismagius'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.7,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 200,
+      species: 'misdreavus',
+      types: ['Ghost'],
+      weightkg: 1
     }
   ],
   [
     'unown',
     {
-      species: 'unown',
-      num: 201,
-      types: ['Psychic'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 48,
-        atk: 72,
-        def: 48,
-        spa: 72,
-        spd: 48,
-        spe: 48
-      },
-      baseForme: 'A',
       abilities: { first: 'Levitate' },
-      heightm: 0.5,
-      weightkg: 5,
+      baseForme: 'A',
+      baseStats: { hp: 48, atk: 72, def: 48, spa: 72, spd: 48, spe: 48 },
+      catchRate: { base: 225, percentageWithOrdinaryPokeballAtFullHealth: '39.9%' },
       color: 'Black',
-      eggGroups: ['Undiscovered'],
       cosmeticFormes: [
         'Unown-B',
         'Unown-C',
@@ -2078,2173 +1229,1241 @@ const entries: [string, Pokemon.DexEntry][] = [
         'Unown-Exclamation',
         'Unown-Question'
       ],
-      catchRate: {
-        base: 225,
-        percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
-      },
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 1, def: 0, spa: 1, spd: 0, spe: 0 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 0.5,
+      isEggObtainable: false,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 10280,
-      isEggObtainable: false,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 201,
+      species: 'unown',
+      types: ['Psychic'],
+      weightkg: 5
     }
   ],
   [
     'wobbuffet',
     {
-      species: 'wobbuffet',
-      num: 202,
-      types: ['Psychic'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 190,
-        atk: 33,
-        def: 58,
-        spa: 33,
-        spd: 58,
-        spe: 33
-      },
       abilities: { first: 'Shadow Tag', hidden: 'Telepathy' },
-      heightm: 1.3,
-      weightkg: 28.5,
+      baseStats: { hp: 190, atk: 33, def: 58, spa: 33, spd: 58, spe: 33 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
-      prevo: 'wynaut',
-      evoLevel: 15,
       eggGroups: ['Amorphous'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 15,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.3,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 2,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 202,
+      prevo: 'wynaut',
+      species: 'wobbuffet',
+      types: ['Psychic'],
+      weightkg: 28.5
     }
   ],
   [
     'girafarig',
     {
-      species: 'girafarig',
-      num: 203,
-      types: ['Normal', 'Psychic'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 80,
-        def: 65,
-        spa: 90,
-        spd: 65,
-        spe: 85
+      abilities: {
+        first: 'Inner Focus',
+        second: 'Early Bird',
+        hidden: 'Sap Sipper'
       },
-      abilities: { first: 'Inner Focus', second: 'Early Bird', hidden: 'Sap Sipper' },
-      heightm: 1.5,
-      weightkg: 41.5,
+      baseStats: { hp: 70, atk: 80, def: 65, spa: 90, spd: 65, spe: 85 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Yellow',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 203,
+      species: 'girafarig',
+      types: ['Normal', 'Psychic'],
+      weightkg: 41.5
     }
   ],
   [
     'pineco',
     {
-      species: 'pineco',
-      num: 204,
-      types: ['Bug'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 50,
-        atk: 65,
-        def: 90,
-        spa: 35,
-        spd: 35,
-        spe: 15
-      },
       abilities: { first: 'Sturdy', hidden: 'Overcoat' },
-      heightm: 0.6,
-      weightkg: 7.2,
+      baseStats: { hp: 50, atk: 65, def: 90, spa: 35, spd: 35, spe: 15 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Gray',
-      evos: ['forretress'],
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 0, spe: 0 },
+      evos: ['forretress'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 204,
+      species: 'pineco',
+      types: ['Bug'],
+      weightkg: 7.2
     }
   ],
   [
     'forretress',
     {
-      species: 'forretress',
-      num: 205,
-      types: ['Bug', 'Steel'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 90,
-        def: 140,
-        spa: 60,
-        spd: 60,
-        spe: 40
-      },
       abilities: { first: 'Sturdy', hidden: 'Overcoat' },
-      heightm: 1.2,
-      weightkg: 125.8,
+      baseStats: { hp: 75, atk: 90, def: 140, spa: 60, spd: 60, spe: 40 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Purple',
-      prevo: 'pineco',
-      evoLevel: 31,
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 31,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 205,
+      prevo: 'pineco',
+      species: 'forretress',
+      types: ['Bug', 'Steel'],
+      weightkg: 125.8
     }
   ],
   [
     'dunsparce',
     {
-      species: 'dunsparce',
-      num: 206,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 100,
-        atk: 70,
-        def: 70,
-        spa: 65,
-        spd: 65,
-        spe: 45
-      },
       abilities: { first: 'Serene Grace', second: 'Run Away', hidden: 'Rattled' },
-      heightm: 1.5,
-      weightkg: 14,
+      baseStats: { hp: 100, atk: 70, def: 70, spa: 65, spd: 65, spe: 45 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 206,
+      species: 'dunsparce',
+      types: ['Normal'],
+      weightkg: 14
     }
   ],
   [
     'gligar',
     {
-      species: 'gligar',
-      num: 207,
-      types: ['Ground', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 65,
-        atk: 75,
-        def: 105,
-        spa: 35,
-        spd: 65,
-        spe: 85
-      },
       abilities: { first: 'Hyper Cutter', second: 'Sand Veil', hidden: 'Immunity' },
-      heightm: 1.1,
-      weightkg: 64.8,
+      baseStats: { hp: 65, atk: 75, def: 105, spa: 35, spd: 65, spe: 85 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Purple',
-      evos: ['gliscor'],
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 0, spe: 0 },
+      evos: ['gliscor'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.1,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 207,
+      species: 'gligar',
+      types: ['Ground', 'Flying'],
+      weightkg: 64.8
     }
   ],
   [
     'steelix',
     {
-      species: 'steelix',
-      num: 208,
-      types: ['Steel', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 85,
-        def: 200,
-        spa: 55,
-        spd: 65,
-        spe: 30
-      },
       abilities: { first: 'Rock Head', second: 'Sturdy', hidden: 'Sheer Force' },
-      heightm: 9.2,
-      weightkg: 400,
+      baseStats: { hp: 75, atk: 85, def: 200, spa: 55, spd: 65, spe: 30 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Gray',
-      prevo: 'onix',
-      evoLevel: 'Trade while holding Metal Coat',
       eggGroups: ['Mineral'],
-      otherFormes: ['steelixmega'],
-      catchRate: {
-        base: 25,
-        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'Trade while holding Metal Coat',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 9.2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 208,
+      otherFormes: ['steelixmega'],
+      prevo: 'onix',
+      species: 'steelix',
+      types: ['Steel', 'Ground'],
+      weightkg: 400
     }
   ],
   [
     'steelixmega',
     {
-      species: 'steelix-mega',
-      num: 208,
-      types: ['Steel', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 125,
-        def: 230,
-        spa: 55,
-        spd: 95,
-        spe: 30
-      },
-      baseSpecies: 'Steelix',
-      forme: 'Mega',
-      formeLetter: 'M',
       abilities: { first: 'Sand Force' },
-      heightm: 10.5,
-      weightkg: 740,
+      baseSpecies: 'Steelix',
+      baseStats: { hp: 75, atk: 125, def: 230, spa: 55, spd: 95, spe: 30 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Gray',
       eggGroups: ['Mineral'],
-      catchRate: {
-        base: 25,
-        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 10.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 208,
+      species: 'steelix-mega',
+      types: ['Steel', 'Ground'],
+      weightkg: 740
     }
   ],
   [
     'snubbull',
     {
-      species: 'snubbull',
-      num: 209,
-      types: ['Fairy'],
-      genderRatio: { male: 0.25, female: 0.75 },
-      baseStats: {
-        hp: 60,
-        atk: 80,
-        def: 50,
-        spa: 40,
-        spd: 40,
-        spe: 30
-      },
       abilities: { first: 'Intimidate', second: 'Run Away', hidden: 'Rattled' },
-      heightm: 0.6,
-      weightkg: 7.8,
+      baseStats: { hp: 60, atk: 80, def: 50, spa: 40, spd: 40, spe: 30 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Pink',
-      evos: ['granbull'],
       eggGroups: ['Field', 'Fairy'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['granbull'],
+      genderRatio: { male: 0.25, female: 0.75 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 209,
+      species: 'snubbull',
+      types: ['Fairy'],
+      weightkg: 7.8
     }
   ],
   [
     'granbull',
     {
-      species: 'granbull',
-      num: 210,
-      types: ['Fairy'],
-      genderRatio: { male: 0.25, female: 0.75 },
-      baseStats: {
-        hp: 90,
-        atk: 120,
-        def: 75,
-        spa: 60,
-        spd: 60,
-        spe: 45
-      },
       abilities: { first: 'Intimidate', second: 'Quick Feet', hidden: 'Rattled' },
-      heightm: 1.4,
-      weightkg: 48.7,
+      baseStats: { hp: 90, atk: 120, def: 75, spa: 60, spd: 60, spe: 45 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Purple',
-      prevo: 'snubbull',
-      evoLevel: 23,
       eggGroups: ['Field', 'Fairy'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 23,
+      genderRatio: { male: 0.25, female: 0.75 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 210,
+      prevo: 'snubbull',
+      species: 'granbull',
+      types: ['Fairy'],
+      weightkg: 48.7
     }
   ],
   [
     'qwilfish',
     {
-      species: 'qwilfish',
-      num: 211,
-      types: ['Water', 'Poison'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 65,
-        atk: 95,
-        def: 85,
-        spa: 55,
-        spd: 55,
-        spe: 85
+      abilities: {
+        first: 'Poison Point',
+        second: 'Swift Swim',
+        hidden: 'Intimidate'
       },
-      abilities: { first: 'Poison Point', second: 'Swift Swim', hidden: 'Intimidate' },
-      heightm: 0.5,
-      weightkg: 3.9,
+      baseStats: { hp: 65, atk: 95, def: 85, spa: 55, spd: 55, spe: 85 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
       eggGroups: ['Water 2'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 211,
+      species: 'qwilfish',
+      types: ['Water', 'Poison'],
+      weightkg: 3.9
     }
   ],
   [
     'scizor',
     {
-      species: 'scizor',
-      num: 212,
-      types: ['Bug', 'Steel'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 130,
-        def: 100,
-        spa: 55,
-        spd: 80,
-        spe: 65
-      },
       abilities: { first: 'Swarm', second: 'Technician', hidden: 'Light Metal' },
-      heightm: 1.8,
-      weightkg: 118,
+      baseStats: { hp: 70, atk: 130, def: 100, spa: 55, spd: 80, spe: 65 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Red',
-      prevo: 'scyther',
-      evoLevel: 'Trade while holding Metal Coat',
       eggGroups: ['Bug'],
-      otherFormes: ['scizormega'],
-      catchRate: {
-        base: 25,
-        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'Trade while holding Metal Coat',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 212,
+      otherFormes: ['scizormega'],
+      prevo: 'scyther',
+      species: 'scizor',
+      types: ['Bug', 'Steel'],
+      weightkg: 118
     }
   ],
   [
     'scizormega',
     {
-      species: 'scizor-mega',
-      num: 212,
-      types: ['Bug', 'Steel'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseSpecies: 'Scizor',
-      forme: 'Mega',
-      formeLetter: 'M',
-      baseStats: {
-        hp: 70,
-        atk: 150,
-        def: 140,
-        spa: 65,
-        spd: 100,
-        spe: 75
-      },
       abilities: { first: 'Technician' },
-      heightm: 2,
-      weightkg: 125,
+      baseSpecies: 'Scizor',
+      baseStats: { hp: 70, atk: 150, def: 140, spa: 65, spd: 100, spe: 75 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Red',
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 25,
-        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 2,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 212,
+      species: 'scizor-mega',
+      types: ['Bug', 'Steel'],
+      weightkg: 125
     }
   ],
   [
     'shuckle',
     {
-      species: 'shuckle',
-      num: 213,
-      types: ['Bug', 'Rock'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 20,
-        atk: 10,
-        def: 230,
-        spa: 10,
-        spd: 230,
-        spe: 5
-      },
       abilities: { first: 'Sturdy', second: 'Gluttony', hidden: 'Contrary' },
-      heightm: 0.6,
-      weightkg: 20.5,
+      baseStats: { hp: 20, atk: 10, def: 230, spa: 10, spd: 230, spe: 5 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 1, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 213,
+      species: 'shuckle',
+      types: ['Bug', 'Rock'],
+      weightkg: 20.5
     }
   ],
   [
     'heracross',
     {
-      species: 'heracross',
-      num: 214,
-      types: ['Bug', 'Fighting'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 80,
-        atk: 125,
-        def: 75,
-        spa: 40,
-        spd: 95,
-        spe: 85
-      },
       abilities: { first: 'Swarm', second: 'Guts', hidden: 'Moxie' },
-      heightm: 1.5,
-      weightkg: 54,
+      baseStats: { hp: 80, atk: 125, def: 75, spa: 40, spd: 95, spe: 85 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
       eggGroups: ['Bug'],
-      otherFormes: ['heracrossmega'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.5,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 214,
+      otherFormes: ['heracrossmega'],
+      species: 'heracross',
+      types: ['Bug', 'Fighting'],
+      weightkg: 54
     }
   ],
   [
     'heracrossmega',
     {
-      species: 'heracross-mega',
-      num: 214,
-      baseSpecies: 'Heracross',
-      forme: 'Mega',
-      formeLetter: 'M',
-      types: ['Bug', 'Fighting'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 80,
-        atk: 185,
-        def: 115,
-        spa: 40,
-        spd: 105,
-        spe: 75
-      },
       abilities: { first: 'Skill Link' },
-      heightm: 1.7,
-      weightkg: 62.5,
+      baseSpecies: 'Heracross',
+      baseStats: { hp: 80, atk: 185, def: 115, spa: 40, spd: 105, spe: 75 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
       eggGroups: ['Bug'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.7,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 214,
+      species: 'heracross-mega',
+      types: ['Bug', 'Fighting'],
+      weightkg: 62.5
     }
   ],
   [
     'sneasel',
     {
-      species: 'sneasel',
-      num: 215,
-      types: ['Dark', 'Ice'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 95,
-        def: 55,
-        spa: 35,
-        spd: 75,
-        spe: 115
-      },
       abilities: { first: 'Inner Focus', second: 'Keen Eye', hidden: 'Pickpocket' },
-      heightm: 0.9,
-      weightkg: 28,
+      baseStats: { hp: 55, atk: 95, def: 55, spa: 35, spd: 75, spe: 115 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Black',
-      evos: ['weavile'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['weavile'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.9,
+      isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 215,
+      species: 'sneasel',
+      types: ['Dark', 'Ice'],
+      weightkg: 28
     }
   ],
   [
     'teddiursa',
     {
-      species: 'teddiursa',
-      num: 216,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 60,
-        atk: 80,
-        def: 50,
-        spa: 50,
-        spd: 50,
-        spe: 40
-      },
       abilities: { first: 'Pickup', second: 'Quick Feet', hidden: 'Honey Gather' },
-      heightm: 0.6,
-      weightkg: 8.8,
+      baseStats: { hp: 60, atk: 80, def: 50, spa: 50, spd: 50, spe: 40 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Brown',
-      evos: ['ursaring'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 120,
-        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['ursaring'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 216,
+      species: 'teddiursa',
+      types: ['Normal'],
+      weightkg: 8.8
     }
   ],
   [
     'ursaring',
     {
-      species: 'ursaring',
-      num: 217,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 90,
-        atk: 130,
-        def: 75,
-        spa: 75,
-        spd: 75,
-        spe: 55
-      },
       abilities: { first: 'Guts', second: 'Quick Feet', hidden: 'Unnerve' },
-      heightm: 1.8,
-      weightkg: 125.8,
+      baseStats: { hp: 90, atk: 130, def: 75, spa: 75, spd: 75, spe: 55 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Brown',
-      prevo: 'teddiursa',
-      evoLevel: 30,
       eggGroups: ['Field'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 30,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 217,
+      prevo: 'teddiursa',
+      species: 'ursaring',
+      types: ['Normal'],
+      weightkg: 125.8
     }
   ],
   [
     'slugma',
     {
-      species: 'slugma',
-      num: 218,
-      types: ['Fire'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 40,
-        atk: 40,
-        def: 40,
-        spa: 70,
-        spd: 40,
-        spe: 20
+      abilities: {
+        first: 'Magma Armor',
+        second: 'Flame Body',
+        hidden: 'Weak Armor'
       },
-      abilities: { first: 'Magma Armor', second: 'Flame Body', hidden: 'Weak Armor' },
-      heightm: 0.7,
-      weightkg: 35,
+      baseStats: { hp: 40, atk: 40, def: 40, spa: 70, spd: 40, spe: 20 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Red',
-      evos: ['magcargo'],
       eggGroups: ['Amorphous'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['magcargo'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.7,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 218,
+      species: 'slugma',
+      types: ['Fire'],
+      weightkg: 35
     }
   ],
   [
     'magcargo',
     {
-      species: 'magcargo',
-      num: 219,
-      types: ['Fire', 'Rock'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 60,
-        atk: 50,
-        def: 120,
-        spa: 90,
-        spd: 80,
-        spe: 30
+      abilities: {
+        first: 'Magma Armor',
+        second: 'Flame Body',
+        hidden: 'Weak Armor'
       },
-      abilities: { first: 'Magma Armor', second: 'Flame Body', hidden: 'Weak Armor' },
-      heightm: 0.8,
-      weightkg: 55,
+      baseStats: { hp: 60, atk: 50, def: 120, spa: 90, spd: 80, spe: 30 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Red',
-      prevo: 'slugma',
-      evoLevel: 38,
       eggGroups: ['Amorphous'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 38,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 219,
+      prevo: 'slugma',
+      species: 'magcargo',
+      types: ['Fire', 'Rock'],
+      weightkg: 55
     }
   ],
   [
     'swinub',
     {
-      species: 'swinub',
-      num: 220,
-      types: ['Ice', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 50,
-        atk: 50,
-        def: 40,
-        spa: 30,
-        spd: 30,
-        spe: 50
-      },
       abilities: { first: 'Oblivious', second: 'Snow Cloak', hidden: 'Thick Fat' },
-      heightm: 0.4,
-      weightkg: 6.5,
+      baseStats: { hp: 50, atk: 50, def: 40, spa: 30, spd: 30, spe: 50 },
+      catchRate: { base: 225, percentageWithOrdinaryPokeballAtFullHealth: '39.9%' },
       color: 'Brown',
-      evos: ['piloswine'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 225,
-        percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['piloswine'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.4,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 220,
+      species: 'swinub',
+      types: ['Ice', 'Ground'],
+      weightkg: 6.5
     }
   ],
   [
     'piloswine',
     {
-      species: 'piloswine',
-      num: 221,
-      types: ['Ice', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 100,
-        atk: 100,
-        def: 80,
-        spa: 60,
-        spd: 60,
-        spe: 50
-      },
       abilities: { first: 'Oblivious', second: 'Snow Cloak', hidden: 'Thick Fat' },
-      heightm: 1.1,
-      weightkg: 55.8,
+      baseStats: { hp: 100, atk: 100, def: 80, spa: 60, spd: 60, spe: 50 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Brown',
-      prevo: 'swinub',
-      evos: ['mamoswine'],
-      evoLevel: 33,
       eggGroups: ['Field'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 1, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 33,
+      evos: ['mamoswine'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.1,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 221,
+      prevo: 'swinub',
+      species: 'piloswine',
+      types: ['Ice', 'Ground'],
+      weightkg: 55.8
     }
   ],
   [
     'corsola',
     {
-      species: 'corsola',
-      num: 222,
-      types: ['Water', 'Rock'],
-      genderRatio: { male: 0.25, female: 0.75 },
-      baseStats: {
-        hp: 65,
-        atk: 55,
-        def: 95,
-        spa: 65,
-        spd: 95,
-        spe: 35
-      },
       abilities: { first: 'Hustle', second: 'Natural Cure', hidden: 'Regenerator' },
-      heightm: 0.6,
-      weightkg: 5,
+      baseStats: { hp: 65, atk: 55, def: 95, spa: 65, spd: 95, spe: 35 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Pink',
       eggGroups: ['Water 1', 'Water 3'],
-      otherFormes: ['corsolagalar'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 1, spe: 0 },
+      genderRatio: { male: 0.25, female: 0.75 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 222,
+      otherFormes: ['corsolagalar'],
+      species: 'corsola',
+      types: ['Water', 'Rock'],
+      weightkg: 5
     }
   ],
   [
     'corsolagalar',
     {
-      species: 'corsola-galar',
-      num: 222,
-      types: ['Ghost'],
-      genderRatio: { male: 0.25, female: 0.75 },
+      abilities: {
+        first: 'Weak Armor',
+        second: 'Weak Armor',
+        hidden: 'Cursed Body'
+      },
       baseSpecies: 'Corsola',
+      baseStats: { hp: 60, atk: 55, def: 100, spa: 65, spd: 100, spe: 30 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
+      color: 'White',
+      eggGroups: ['Water 1', 'Water 3'],
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 1, spe: 0 },
+      evos: ['cursola'],
       forme: 'Galar',
       formeLetter: 'G',
-      baseStats: {
-        hp: 60,
-        atk: 55,
-        def: 100,
-        spa: 65,
-        spd: 100,
-        spe: 30
-      },
-      abilities: { first: 'Weak Armor', second: 'Weak Armor', hidden: 'Cursed Body' },
+      genderRatio: { male: 0.25, female: 0.75 },
       heightm: 0.6,
-      weightkg: 0.5,
-      color: 'White',
-      evos: ['cursola'],
-      eggGroups: ['Water 1', 'Water 3'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 1,
-        spe: 0
-      }
+      num: 222,
+      species: 'corsola-galar',
+      types: ['Ghost'],
+      weightkg: 0.5
     }
   ],
   [
     'remoraid',
     {
-      species: 'remoraid',
-      num: 223,
-      types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 35,
-        atk: 65,
-        def: 35,
-        spa: 65,
-        spd: 35,
-        spe: 65
-      },
       abilities: { first: 'Hustle', second: 'Sniper', hidden: 'Moody' },
-      heightm: 0.6,
-      weightkg: 12,
+      baseStats: { hp: 35, atk: 65, def: 35, spa: 65, spd: 35, spe: 65 },
+      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Gray',
-      evos: ['octillery'],
       eggGroups: ['Water 1', 'Water 2'],
-      catchRate: {
-        base: 190,
-        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['octillery'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 223,
+      species: 'remoraid',
+      types: ['Water'],
+      weightkg: 12
     }
   ],
   [
     'octillery',
     {
-      species: 'octillery',
-      num: 224,
-      types: ['Water'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 105,
-        def: 75,
-        spa: 105,
-        spd: 75,
-        spe: 45
-      },
       abilities: { first: 'Suction Cups', second: 'Sniper', hidden: 'Moody' },
-      heightm: 0.9,
-      weightkg: 28.5,
+      baseStats: { hp: 75, atk: 105, def: 75, spa: 105, spd: 75, spe: 45 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Red',
-      prevo: 'remoraid',
-      evoLevel: 25,
       eggGroups: ['Water 1', 'Water 2'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 1, spd: 0, spe: 0 },
+      evoLevel: 25,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.9,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 224,
+      prevo: 'remoraid',
+      species: 'octillery',
+      types: ['Water'],
+      weightkg: 28.5
     }
   ],
   [
     'delibird',
     {
-      species: 'delibird',
-      num: 225,
-      types: ['Ice', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 45,
-        atk: 55,
-        def: 45,
-        spa: 65,
-        spd: 45,
-        spe: 75
-      },
       abilities: { first: 'Vital Spirit', second: 'Hustle', hidden: 'Insomnia' },
-      heightm: 0.9,
-      weightkg: 16,
+      baseStats: { hp: 45, atk: 55, def: 45, spa: 65, spd: 45, spe: 75 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
       eggGroups: ['Water 1', 'Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.9,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 225,
+      species: 'delibird',
+      types: ['Ice', 'Flying'],
+      weightkg: 16
     }
   ],
   [
     'mantine',
     {
-      species: 'mantine',
-      num: 226,
-      types: ['Water', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 85,
-        atk: 40,
-        def: 70,
-        spa: 80,
-        spd: 140,
-        spe: 70
+      abilities: {
+        first: 'Swift Swim',
+        second: 'Water Absorb',
+        hidden: 'Water Veil'
       },
-      abilities: { first: 'Swift Swim', second: 'Water Absorb', hidden: 'Water Veil' },
-      heightm: 2.1,
-      weightkg: 220,
+      baseStats: { hp: 85, atk: 40, def: 70, spa: 80, spd: 140, spe: 70 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Purple',
-      prevo: 'mantyke',
-      evoLevel: 'Level up with Remoraid in party',
       eggGroups: ['Water 1'],
-      catchRate: {
-        base: 25,
-        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 2, spe: 0 },
+      evoLevel: 'Level up with Remoraid in party',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 2.1,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 226,
+      prevo: 'mantyke',
+      species: 'mantine',
+      types: ['Water', 'Flying'],
+      weightkg: 220
     }
   ],
   [
     'skarmory',
     {
-      species: 'skarmory',
-      num: 227,
-      types: ['Steel', 'Flying'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 65,
-        atk: 80,
-        def: 140,
-        spa: 40,
-        spd: 70,
-        spe: 70
-      },
       abilities: { first: 'Keen Eye', second: 'Sturdy', hidden: 'Weak Armor' },
-      heightm: 1.7,
-      weightkg: 50.5,
+      baseStats: { hp: 65, atk: 80, def: 140, spa: 40, spd: 70, spe: 70 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Gray',
       eggGroups: ['Flying'],
-      catchRate: {
-        base: 25,
-        percentageWithOrdinaryPokeballAtFullHealth: '7.7%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.7,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 227,
+      species: 'skarmory',
+      types: ['Steel', 'Flying'],
+      weightkg: 50.5
     }
   ],
   [
     'houndour',
     {
-      species: 'houndour',
-      num: 228,
-      types: ['Dark', 'Fire'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 45,
-        atk: 60,
-        def: 30,
-        spa: 80,
-        spd: 50,
-        spe: 65
-      },
       abilities: { first: 'Early Bird', second: 'Flash Fire', hidden: 'Unnerve' },
-      heightm: 0.6,
-      weightkg: 10.8,
+      baseStats: { hp: 45, atk: 60, def: 30, spa: 80, spd: 50, spe: 65 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Black',
-      evos: ['houndoom'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 120,
-        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['houndoom'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 228,
+      species: 'houndour',
+      types: ['Dark', 'Fire'],
+      weightkg: 10.8
     }
   ],
   [
     'houndoom',
     {
-      species: 'houndoom',
-      num: 229,
-      types: ['Dark', 'Fire'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 90,
-        def: 50,
-        spa: 110,
-        spd: 80,
-        spe: 95
-      },
       abilities: { first: 'Early Bird', second: 'Flash Fire', hidden: 'Unnerve' },
-      heightm: 1.4,
-      weightkg: 35,
+      baseStats: { hp: 75, atk: 90, def: 50, spa: 110, spd: 80, spe: 95 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
-      prevo: 'houndour',
-      evoLevel: 24,
       eggGroups: ['Field'],
-      otherFormes: ['houndoommega'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 24,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 229,
+      otherFormes: ['houndoommega'],
+      prevo: 'houndour',
+      species: 'houndoom',
+      types: ['Dark', 'Fire'],
+      weightkg: 35
     }
   ],
   [
     'houndoommega',
     {
-      species: 'houndoom-mega',
-      num: 229,
-      types: ['Dark', 'Fire'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseSpecies: 'Houndoom',
-      forme: 'Mega',
-      formeLetter: 'M',
-      baseStats: {
-        hp: 75,
-        atk: 90,
-        def: 90,
-        spa: 140,
-        spd: 90,
-        spe: 115
-      },
       abilities: { first: 'Solar Power' },
-      heightm: 1.9,
-      weightkg: 49.5,
+      baseSpecies: 'Houndoom',
+      baseStats: { hp: 75, atk: 90, def: 90, spa: 140, spd: 90, spe: 115 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.9,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 229,
+      species: 'houndoom-mega',
+      types: ['Dark', 'Fire'],
+      weightkg: 49.5
     }
   ],
   [
     'kingdra',
     {
-      species: 'kingdra',
-      num: 230,
-      types: ['Water', 'Dragon'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 75,
-        atk: 95,
-        def: 95,
-        spa: 95,
-        spd: 95,
-        spe: 85
-      },
       abilities: { first: 'Swift Swim', second: 'Sniper', hidden: 'Damp' },
-      heightm: 1.8,
-      weightkg: 152,
+      baseStats: { hp: 75, atk: 95, def: 95, spa: 95, spd: 95, spe: 85 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
-      prevo: 'seadra',
-      evoLevel: 'Trade while holding Dragon Scale',
       eggGroups: ['Water 1', 'Dragon'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 1, spd: 1, spe: 0 },
+      evoLevel: 'Trade while holding Dragon Scale',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.8,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 1,
-        spd: 1,
-        spe: 0
-      }
+      num: 230,
+      prevo: 'seadra',
+      species: 'kingdra',
+      types: ['Water', 'Dragon'],
+      weightkg: 152
     }
   ],
   [
     'phanpy',
     {
-      species: 'phanpy',
-      num: 231,
-      types: ['Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 90,
-        atk: 60,
-        def: 60,
-        spa: 40,
-        spd: 40,
-        spe: 40
-      },
       abilities: { first: 'Pickup', hidden: 'Sand Veil' },
-      heightm: 0.5,
-      weightkg: 33.5,
+      baseStats: { hp: 90, atk: 60, def: 60, spa: 40, spd: 40, spe: 40 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Blue',
-      evos: ['donphan'],
       eggGroups: ['Field'],
-      catchRate: {
-        base: 120,
-        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
-      },
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['donphan'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.5,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 1,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 231,
+      species: 'phanpy',
+      types: ['Ground'],
+      weightkg: 33.5
     }
   ],
   [
     'donphan',
     {
-      species: 'donphan',
-      num: 232,
-      types: ['Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 90,
-        atk: 120,
-        def: 120,
-        spa: 60,
-        spd: 60,
-        spe: 50
-      },
       abilities: { first: 'Sturdy', hidden: 'Sand Veil' },
-      heightm: 1.1,
-      weightkg: 120,
+      baseStats: { hp: 90, atk: 120, def: 120, spa: 60, spd: 60, spe: 50 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
-      prevo: 'phanpy',
-      evoLevel: 25,
       eggGroups: ['Field'],
-      catchRate: {
-        base: 60,
-        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
-      },
+      evYields: { hp: 0, atk: 1, def: 1, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 25,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.1,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 1,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 232,
+      prevo: 'phanpy',
+      species: 'donphan',
+      types: ['Ground'],
+      weightkg: 120
     }
   ],
   [
     'porygon2',
     {
-      species: 'porygon2',
-      num: 233,
-      types: ['Normal'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 85,
-        atk: 80,
-        def: 90,
-        spa: 105,
-        spd: 95,
-        spe: 60
-      },
       abilities: { first: 'Trace', second: 'Download', hidden: 'Analytic' },
-      heightm: 0.6,
-      weightkg: 32.5,
+      baseStats: { hp: 85, atk: 80, def: 90, spa: 105, spd: 95, spe: 60 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
-      prevo: 'porygon',
-      evos: ['porygonz'],
-      evoLevel: 'Trade while holding Up-Grade',
       eggGroups: ['Mineral'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 'Trade while holding Up-Grade',
+      evos: ['porygonz'],
+      genderRatio: { male: 0, female: 0 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 2,
-        spd: 0,
-        spe: 0
-      }
+      num: 233,
+      prevo: 'porygon',
+      species: 'porygon2',
+      types: ['Normal'],
+      weightkg: 32.5
     }
   ],
   [
     'stantler',
     {
-      species: 'stantler',
-      num: 234,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 73,
-        atk: 95,
-        def: 62,
-        spa: 85,
-        spd: 65,
-        spe: 85
-      },
       abilities: { first: 'Intimidate', second: 'Frisk', hidden: 'Sap Sipper' },
-      heightm: 1.4,
-      weightkg: 71.2,
+      baseStats: { hp: 73, atk: 95, def: 62, spa: 85, spd: 65, spe: 85 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 234,
+      species: 'stantler',
+      types: ['Normal'],
+      weightkg: 71.2
     }
   ],
   [
     'smeargle',
     {
-      species: 'smeargle',
-      num: 235,
-      types: ['Normal'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 55,
-        atk: 20,
-        def: 35,
-        spa: 20,
-        spd: 45,
-        spe: 75
-      },
       abilities: { first: 'Own Tempo', second: 'Technician', hidden: 'Moody' },
-      heightm: 1.2,
-      weightkg: 58,
+      baseStats: { hp: 55, atk: 20, def: 35, spa: 20, spd: 45, spe: 75 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'White',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 235,
+      species: 'smeargle',
+      types: ['Normal'],
+      weightkg: 58
     }
   ],
   [
     'tyrogue',
     {
-      species: 'tyrogue',
-      num: 236,
-      types: ['Fighting'],
-      genderRatio: { male: 1, female: 0 },
-      baseStats: {
-        hp: 35,
-        atk: 35,
-        def: 35,
-        spa: 35,
-        spd: 35,
-        spe: 35
-      },
       abilities: { first: 'Guts', second: 'Steadfast', hidden: 'Vital Spirit' },
-      heightm: 0.7,
-      weightkg: 21,
+      baseStats: { hp: 35, atk: 35, def: 35, spa: 35, spd: 35, spe: 35 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Purple',
-      evos: ['hitmonlee', 'hitmonchan', 'hitmontop'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['hitmonlee', 'hitmonchan', 'hitmontop'],
+      genderRatio: { male: 1, female: 0 },
+      heightm: 0.7,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 236,
+      species: 'tyrogue',
+      types: ['Fighting'],
+      weightkg: 21
     }
   ],
   [
     'hitmontop',
     {
-      species: 'hitmontop',
-      num: 237,
-      types: ['Fighting'],
-      genderRatio: { male: 1, female: 0 },
-      baseStats: {
-        hp: 50,
-        atk: 95,
-        def: 95,
-        spa: 35,
-        spd: 110,
-        spe: 70
-      },
       abilities: { first: 'Intimidate', second: 'Technician', hidden: 'Steadfast' },
-      heightm: 1.4,
-      weightkg: 48,
+      baseStats: { hp: 50, atk: 95, def: 95, spa: 35, spd: 110, spe: 70 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
-      prevo: 'tyrogue',
-      evoLevel: 'Level 20 with Attack = Defense',
       eggGroups: ['Human-Like'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 2, spe: 0 },
+      evoLevel: 'Level 20 with Attack = Defense',
+      genderRatio: { male: 1, female: 0 },
+      heightm: 1.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 237,
+      prevo: 'tyrogue',
+      species: 'hitmontop',
+      types: ['Fighting'],
+      weightkg: 48
     }
   ],
   [
     'smoochum',
     {
-      species: 'smoochum',
-      num: 238,
-      types: ['Ice', 'Psychic'],
-      genderRatio: { male: 0, female: 1 },
-      baseStats: {
-        hp: 45,
-        atk: 30,
-        def: 15,
-        spa: 85,
-        spd: 65,
-        spe: 65
-      },
       abilities: { first: 'Oblivious', second: 'Forewarn', hidden: 'Hydration' },
-      heightm: 0.4,
-      weightkg: 6,
+      baseStats: { hp: 45, atk: 30, def: 15, spa: 85, spd: 65, spe: 65 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Pink',
-      evos: ['jynx'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['jynx'],
+      genderRatio: { male: 0, female: 1 },
+      heightm: 0.4,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 0
-      }
+      num: 238,
+      species: 'smoochum',
+      types: ['Ice', 'Psychic'],
+      weightkg: 6
     }
   ],
   [
     'elekid',
     {
-      species: 'elekid',
-      num: 239,
-      types: ['Electric'],
-      genderRatio: { male: 0.75, female: 0.25 },
-      baseStats: {
-        hp: 45,
-        atk: 63,
-        def: 37,
-        spa: 65,
-        spd: 55,
-        spe: 95
-      },
       abilities: { first: 'Static', hidden: 'Vital Spirit' },
-      heightm: 0.6,
-      weightkg: 23.5,
+      baseStats: { hp: 45, atk: 63, def: 37, spa: 65, spd: 55, spe: 95 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
-      evos: ['electabuzz'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['electabuzz'],
+      genderRatio: { male: 0.75, female: 0.25 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 239,
+      species: 'elekid',
+      types: ['Electric'],
+      weightkg: 23.5
     }
   ],
   [
     'magby',
     {
-      species: 'magby',
-      num: 240,
-      types: ['Fire'],
-      genderRatio: { male: 0.75, female: 0.25 },
-      baseStats: {
-        hp: 45,
-        atk: 75,
-        def: 37,
-        spa: 70,
-        spd: 55,
-        spe: 83
-      },
       abilities: { first: 'Flame Body', hidden: 'Vital Spirit' },
-      heightm: 0.7,
-      weightkg: 21.4,
+      baseStats: { hp: 45, atk: 75, def: 37, spa: 70, spd: 55, spe: 83 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
-      evos: ['magmar'],
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 1 },
+      evos: ['magmar'],
+      genderRatio: { male: 0.75, female: 0.25 },
+      heightm: 0.7,
+      isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 6425,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 1
-      }
+      num: 240,
+      species: 'magby',
+      types: ['Fire'],
+      weightkg: 21.4
     }
   ],
   [
     'miltank',
     {
-      species: 'miltank',
-      num: 241,
-      types: ['Normal'],
-      genderRatio: { male: 0, female: 1 },
-      baseStats: {
-        hp: 95,
-        atk: 80,
-        def: 105,
-        spa: 40,
-        spd: 70,
-        spe: 100
-      },
       abilities: { first: 'Thick Fat', second: 'Scrappy', hidden: 'Sap Sipper' },
-      heightm: 1.2,
-      weightkg: 75.5,
+      baseStats: { hp: 95, atk: 80, def: 105, spa: 40, spd: 70, spe: 100 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Pink',
       eggGroups: ['Field'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0, female: 1 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 241,
+      species: 'miltank',
+      types: ['Normal'],
+      weightkg: 75.5
     }
   ],
   [
     'blissey',
     {
-      species: 'blissey',
-      num: 242,
-      types: ['Normal'],
-      genderRatio: { male: 0, female: 1 },
-      baseStats: {
-        hp: 255,
-        atk: 10,
-        def: 10,
-        spa: 75,
-        spd: 135,
-        spe: 55
-      },
       abilities: { first: 'Natural Cure', second: 'Serene Grace', hidden: 'Healer' },
-      heightm: 1.5,
-      weightkg: 46.8,
+      baseStats: { hp: 255, atk: 10, def: 10, spa: 75, spd: 135, spe: 55 },
+      catchRate: { base: 30, percentageWithOrdinaryPokeballAtFullHealth: '8.8%' },
       color: 'Pink',
-      prevo: 'chansey',
-      evoLevel: 2,
       eggGroups: ['Fairy'],
-      catchRate: {
-        base: 30,
-        percentageWithOrdinaryPokeballAtFullHealth: '8.8%'
-      },
+      evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 2,
+      genderRatio: { male: 0, female: 1 },
+      heightm: 1.5,
+      isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 10280,
-      isEggObtainable: true,
-      evYields: {
-        hp: 3,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 242,
+      prevo: 'chansey',
+      species: 'blissey',
+      types: ['Normal'],
+      weightkg: 46.8
     }
   ],
   [
     'raikou',
     {
-      species: 'raikou',
-      num: 243,
-      types: ['Electric'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 90,
-        atk: 85,
-        def: 75,
-        spa: 115,
-        spd: 100,
-        spe: 115
-      },
       abilities: { first: 'Pressure', hidden: 'Inner Focus' },
-      heightm: 1.9,
-      weightkg: 178,
+      baseStats: { hp: 90, atk: 85, def: 75, spa: 115, spd: 100, spe: 115 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 3,
-        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 2 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 1.9,
+      isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 20560,
-      isEggObtainable: false,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 2
-      }
+      num: 243,
+      species: 'raikou',
+      types: ['Electric'],
+      weightkg: 178
     }
   ],
   [
     'entei',
     {
-      species: 'entei',
-      num: 244,
-      types: ['Fire'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 115,
-        atk: 115,
-        def: 85,
-        spa: 90,
-        spd: 75,
-        spe: 100
-      },
       abilities: { first: 'Pressure', hidden: 'Inner Focus' },
-      heightm: 2.1,
-      weightkg: 198,
+      baseStats: { hp: 115, atk: 115, def: 85, spa: 90, spd: 75, spe: 100 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Brown',
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 3,
-        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-      },
+      evYields: { hp: 1, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 2.1,
+      isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 20560,
-      isEggObtainable: false,
-      evYields: {
-        hp: 1,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 244,
+      species: 'entei',
+      types: ['Fire'],
+      weightkg: 198
     }
   ],
   [
     'suicune',
     {
-      species: 'suicune',
-      num: 245,
-      types: ['Water'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 100,
-        atk: 75,
-        def: 115,
-        spa: 90,
-        spd: 115,
-        spe: 85
-      },
       abilities: { first: 'Pressure', hidden: 'Inner Focus' },
-      heightm: 2,
-      weightkg: 187,
+      baseStats: { hp: 100, atk: 75, def: 115, spa: 90, spd: 115, spe: 85 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 3,
-        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-      },
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 2, spe: 0 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 2,
+      isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 20560,
-      isEggObtainable: false,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 1,
-        spa: 0,
-        spd: 2,
-        spe: 0
-      }
+      num: 245,
+      species: 'suicune',
+      types: ['Water'],
+      weightkg: 187
     }
   ],
   [
     'larvitar',
     {
-      species: 'larvitar',
-      num: 246,
-      types: ['Rock', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 50,
-        atk: 64,
-        def: 50,
-        spa: 45,
-        spd: 50,
-        spe: 41
-      },
       abilities: { first: 'Guts', hidden: 'Sand Veil' },
-      heightm: 0.6,
-      weightkg: 72,
+      baseStats: { hp: 50, atk: 64, def: 50, spa: 45, spd: 50, spe: 41 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      evos: ['pupitar'],
       eggGroups: ['Monster'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['pupitar'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 0.6,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 246,
+      species: 'larvitar',
+      types: ['Rock', 'Ground'],
+      weightkg: 72
     }
   ],
   [
     'pupitar',
     {
-      species: 'pupitar',
-      num: 247,
-      types: ['Rock', 'Ground'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 70,
-        atk: 84,
-        def: 70,
-        spa: 65,
-        spd: 70,
-        spe: 51
-      },
       abilities: { first: 'Shed Skin' },
-      heightm: 1.2,
-      weightkg: 152,
+      baseStats: { hp: 70, atk: 84, def: 70, spa: 65, spd: 70, spe: 51 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
-      prevo: 'larvitar',
-      evos: ['tyranitar'],
-      evoLevel: 30,
       eggGroups: ['Monster'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 30,
+      evos: ['tyranitar'],
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 1.2,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 2,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 247,
+      prevo: 'larvitar',
+      species: 'pupitar',
+      types: ['Rock', 'Ground'],
+      weightkg: 152
     }
   ],
   [
     'tyranitar',
     {
-      species: 'tyranitar',
-      num: 248,
-      types: ['Rock', 'Dark'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 100,
-        atk: 134,
-        def: 110,
-        spa: 95,
-        spd: 100,
-        spe: 61
-      },
       abilities: { first: 'Sand Stream', hidden: 'Unnerve' },
-      heightm: 2,
-      weightkg: 202,
+      baseStats: { hp: 100, atk: 134, def: 110, spa: 95, spd: 100, spe: 61 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
-      prevo: 'pupitar',
-      evoLevel: 55,
       eggGroups: ['Monster'],
-      otherFormes: ['tyranitarmega'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 55,
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 2,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 3,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 248,
+      otherFormes: ['tyranitarmega'],
+      prevo: 'pupitar',
+      species: 'tyranitar',
+      types: ['Rock', 'Dark'],
+      weightkg: 202
     }
   ],
   [
     'tyranitarmega',
     {
-      species: 'tyranitar-mega',
-      num: 248,
-      types: ['Rock', 'Dark'],
-      genderRatio: { male: 0.5, female: 0.5 },
-      baseStats: {
-        hp: 100,
-        atk: 164,
-        def: 150,
-        spa: 95,
-        spd: 120,
-        spe: 71
-      },
-      baseSpecies: 'Tyranitar',
-      forme: 'Mega',
-      formeLetter: 'M',
       abilities: { first: 'Sand Stream' },
-      heightm: 2.5,
-      weightkg: 255,
+      baseSpecies: 'Tyranitar',
+      baseStats: { hp: 100, atk: 164, def: 150, spa: 95, spd: 120, spe: 71 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
       eggGroups: ['Monster'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: 0.5, female: 0.5 },
+      heightm: 2.5,
+      isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true,
-      evYields: {
-        hp: 0,
-        atk: 3,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 248,
+      species: 'tyranitar-mega',
+      types: ['Rock', 'Dark'],
+      weightkg: 255
     }
   ],
   [
     'lugia',
     {
-      species: 'lugia',
-      num: 249,
-      types: ['Psychic', 'Flying'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 106,
-        atk: 90,
-        def: 130,
-        spa: 90,
-        spd: 154,
-        spe: 110
-      },
       abilities: { first: 'Pressure', hidden: 'Multiscale' },
-      heightm: 5.2,
-      weightkg: 216,
+      baseStats: { hp: 106, atk: 90, def: 130, spa: 90, spd: 154, spe: 110 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'White',
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 3,
-        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 3, spe: 0 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 5.2,
+      isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 30840,
-      isEggObtainable: false,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 3,
-        spe: 0
-      }
+      num: 249,
+      species: 'lugia',
+      types: ['Psychic', 'Flying'],
+      weightkg: 216
     }
   ],
   [
     'hooh',
     {
-      species: 'ho-oh',
-      num: 250,
-      types: ['Fire', 'Flying'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 106,
-        atk: 130,
-        def: 90,
-        spa: 110,
-        spd: 154,
-        spe: 90
-      },
       abilities: { first: 'Pressure', hidden: 'Regenerator' },
-      heightm: 3.8,
-      weightkg: 199,
+      baseStats: { hp: 106, atk: 130, def: 90, spa: 110, spd: 154, spe: 90 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Red',
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 3,
-        percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 3, spe: 0 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 3.8,
+      isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 30840,
-      isEggObtainable: false,
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 3,
-        spe: 0
-      },
-      specialBulbapediaUrl: 'Ho-Oh'
+      num: 250,
+      specialBulbapediaUrl: 'Ho-Oh',
+      species: 'ho-oh',
+      types: ['Fire', 'Flying'],
+      weightkg: 199
     }
   ],
   [
     'celebi',
     {
-      species: 'celebi',
-      num: 251,
-      types: ['Psychic', 'Grass'],
-      genderRatio: { male: 0, female: 0 },
-      baseStats: {
-        hp: 100,
-        atk: 100,
-        def: 100,
-        spa: 100,
-        spd: 100,
-        spe: 100
-      },
       abilities: { first: 'Natural Cure' },
-      heightm: 0.6,
-      weightkg: 5,
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
       eggGroups: ['Undiscovered'],
-      catchRate: {
-        base: 45,
-        percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-      },
+      evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: 0, female: 0 },
+      heightm: 0.6,
+      isEggObtainable: false,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 30840,
-      isEggObtainable: false,
-      evYields: {
-        hp: 3,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      }
+      num: 251,
+      species: 'celebi',
+      types: ['Psychic', 'Grass'],
+      weightkg: 5
     }
   ]
 ];

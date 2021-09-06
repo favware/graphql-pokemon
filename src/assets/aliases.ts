@@ -380,7 +380,7 @@ export const pokedexAliases = new GraphQLCollection<string, string>([
   ['fukamaru', 'gible'],
   ['fukusuroo', 'dartrix'],
   ['furaajesu', 'florges'],
-  ['furabebe', 'flab├®b├®'],
+  ['furabebe', 'flabébé'],
   ['furaette', 'floette'],
   ['furaigon', 'flygon'],
   ['furefuwan', 'aromatisse'],

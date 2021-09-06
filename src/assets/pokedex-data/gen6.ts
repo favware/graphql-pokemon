@@ -535,7 +535,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
       num: 669,
-      specialBulbapediaUrl: 'Flab├®b├®',
+      specialBulbapediaUrl: 'Flabébé',
       species: 'flabebe',
       types: ['Fairy'],
       weightkg: 0.1

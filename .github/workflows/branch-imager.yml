@@ -6,78 +6,13 @@ on:
       - main
 
 jobs:
-  pre_ci:
-    name: Prepare CI environment
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
-      - name: '[Push] Get commit message'
-        if: github.event_name == 'push'
-        id: push_get_commit_message
-        run: echo ::set-output name=push_commit_message::$(git log --format=%B -n 1 HEAD)
-      - name: '[Pull Request] Get commit message'
-        if: github.event_name == 'pull_request'
-        id: pr_get_commit_message
-        run: echo ::set-output name=pr_commit_message::$(git log --format=%B -n 1 HEAD^2)
-      - name: Add problem matchers
-        run: |
-          echo "::add-matcher::.github/problemMatchers/tsc.json"
-          echo "::add-matcher::.github/problemMatchers/eslint.json"
-      - name: Get GitHub Branch Name
-        id: get_branch_name
-        run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
-    outputs:
-      branch_name: ${{ steps.get_branch_name.outputs.branch_name }}
-      commit_message: $( [ -z "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" ] && echo "${{ steps.push_get_commit_message.outputs.push_commit_message }}" || echo "${{ steps.pr_get_commit_message.outputs.pr_commit_message }}" )
-
-  Build:
-    name: Compiling TypeScript
-    runs-on: ubuntu-latest
-    if: "!contains(needs.pre_ci.outputs.commit_message, '[skip ci]')"
-    needs: pre_ci
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Use Node.js v16
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - name: Restore CI Cache
-        uses: actions/cache@v2.1.6
-        id: cache-restore
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies if Cache Miss
-        if: ${{ !steps.cache-restore.outputs.cache-hit }}
-        run: yarn --immutable
-      - name: Build Code
-        run: yarn build
-      - name: Upload API bundle to artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: api_bundle
-          path: generated/api/
-          if-no-files-found: error
-
   Publish:
     name: Publish image to container registries
     runs-on: ubuntu-latest
-    if: >-
-      !(contains(needs.pre_ci.outputs.commit_message, '[skip ci]')
-      ||contains(needs.pre_ci.outputs.commit_message, '[skip docker]'))
-    needs: [pre_ci, Build]
+    if: "!(contains(github.event.head_commit.message, '[skip docker]'))"
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Download build bundle artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: api_bundle
-          path: generated/api/
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v1.6.0
       - name: Login to DockerHub
@@ -91,6 +26,9 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get GitHub Branch Name
+        id: get_branch_name
+        run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
       - name: Build and push Docker image
         id: docker_build
         uses: docker/build-push-action@v2.7.0
@@ -98,5 +36,5 @@ jobs:
           push: true
           context: .
           tags: |
-            favware/graphql-pokemon:${{ needs.pre_ci.outputs.branch_name }}
-            ghcr.io/favware/graphql-pokemon:${{ needs.pre_ci.outputs.branch_name }}
+            favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}
+            ghcr.io/favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}

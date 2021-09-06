@@ -177,7 +177,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'beastball',
     {
-      desc: 'A special Pok├® Ball designed to catch Ultra Beasts.',
+      desc: 'A special Poké Ball designed to catch Ultra Beasts.',
       gen: 7,
       name: 'Beast Ball'
     }
@@ -330,7 +330,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'bottlecap',
     {
-      desc: "Used for Hyper Training. One of a Pok├®mon's stats is calculated with an IV of 31.",
+      desc: "Used for Hyper Training. One of a Pokémon's stats is calculated with an IV of 31.",
       gen: 7,
       name: 'Bottle Cap'
     }
@@ -448,7 +448,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'cherishball',
     {
-      desc: 'A rare Pok├® Ball that has been crafted to commemorate an occasion.',
+      desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.',
       gen: 4,
       name: 'Cherish Ball'
     }
@@ -633,7 +633,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.',
       gen: 4,
       name: 'Dawn Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -666,7 +666,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'destinyknot',
     {
-      desc: 'If holder becomes infatuated, the other Pok├®mon also becomes infatuated.',
+      desc: 'If holder becomes infatuated, the other Pokémon also becomes infatuated.',
       gen: 4,
       name: 'Destiny Knot'
     }
@@ -683,7 +683,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'diveball',
     {
-      desc: 'A Pok├® Ball that works especially well on Pok├®mon that live underwater.',
+      desc: 'A Poké Ball that works especially well on Pokémon that live underwater.',
       gen: 3,
       name: 'Dive Ball'
     }
@@ -768,7 +768,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'dreamball',
     {
-      desc: "A Pok├® Ball that makes it easier to catch wild Pok├®mon while they're asleep.",
+      desc: "A Poké Ball that makes it easier to catch wild Pokémon while they're asleep.",
       gen: 5,
       name: 'Dream Ball'
     }
@@ -793,7 +793,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'duskball',
     {
-      desc: 'A Pok├® Ball that makes it easier to catch wild Pok├®mon at night or in caves.',
+      desc: 'A Poké Ball that makes it easier to catch wild Pokémon at night or in caves.',
       gen: 4,
       name: 'Dusk Ball'
     }
@@ -804,7 +804,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.',
       gen: 4,
       name: 'Dusk Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -886,7 +886,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'energypowder',
     {
-      desc: 'Restores 60 HP to one Pok├®mon.',
+      desc: 'Restores 60 HP to one Pokémon.',
       gen: 2,
       name: 'Energy Powder'
     }
@@ -944,7 +944,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'fastball',
     {
-      desc: 'A Pok├® Ball that makes it easier to catch Pok├®mon which are quick to run away.',
+      desc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.',
       gen: 2,
       name: 'Fast Ball'
     }
@@ -1006,7 +1006,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.',
       gen: 1,
       name: 'Fire Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -1130,7 +1130,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'friendball',
     {
-      desc: 'A Pok├® Ball that makes caught Pok├®mon more friendly.',
+      desc: 'A Poké Ball that makes caught Pokémon more friendly.',
       gen: 2,
       name: 'Friend Ball'
     }
@@ -1146,7 +1146,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'fullrestore',
     {
-      desc: 'A medicine that can be used to fully restore the HP of a single Pok├®mon and heal any status conditions it has. ',
+      desc: 'A medicine that can be used to fully restore the HP of a single Pokémon and heal any status conditions it has. ',
       gen: 1,
       name: 'Full Restore'
     }
@@ -1260,7 +1260,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'goldbottlecap',
     {
-      desc: "Used for Hyper Training. All of a Pok├®mon's stats are calculated with an IV of 31.",
+      desc: "Used for Hyper Training. All of a Pokémon's stats are calculated with an IV of 31.",
       gen: 7,
       name: 'Gold Bottle Cap'
     }
@@ -1302,7 +1302,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'greatball',
     {
-      desc: 'A high-performance Ball that provides a higher catch rate than a Pok├® Ball.',
+      desc: 'A high-performance Ball that provides a higher catch rate than a Poké Ball.',
       gen: 1,
       name: 'Great Ball'
     }
@@ -1385,7 +1385,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'healball',
     {
-      desc: "A remedial Pok├® Ball that restores the caught Pok├®mon's HP and status problem.",
+      desc: "A remedial Poké Ball that restores the caught Pokémon's HP and status problem.",
       gen: 4,
       name: 'Heal Ball'
     }
@@ -1401,7 +1401,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'heavyball',
     {
-      desc: 'A Pok├® Ball for catching very heavy Pok├®mon.',
+      desc: 'A Poké Ball for catching very heavy Pokémon.',
       gen: 2,
       name: 'Heavy Ball'
     }
@@ -1452,7 +1452,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'hyperpotion',
     {
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pok├®mon.',
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pokémon.',
       gen: 1,
       name: 'Hyper Potion'
     }
@@ -1497,7 +1497,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, and Eevee into Glaceon when used.',
       gen: 7,
       name: 'Ice Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -1685,7 +1685,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
       gen: 1,
       name: 'Leaf Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -1715,7 +1715,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'levelball',
     {
-      desc: 'A Pok├® Ball for catching Pok├®mon that are a lower level than your own.',
+      desc: 'A Poké Ball for catching Pokémon that are a lower level than your own.',
       gen: 2,
       name: 'Level Ball'
     }
@@ -1764,7 +1764,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'loveball',
     {
-      desc: 'Pok├® Ball for catching Pok├®mon that are the opposite gender of your Pok├®mon.',
+      desc: 'Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.',
       gen: 2,
       name: 'Love Ball'
     }
@@ -1823,7 +1823,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'lureball',
     {
-      desc: 'A Pok├® Ball for catching Pok├®mon hooked by a Rod when fishing.',
+      desc: 'A Poké Ball for catching Pokémon hooked by a Rod when fishing.',
       gen: 2,
       name: 'Lure Ball'
     }
@@ -1839,7 +1839,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'luxuryball',
     {
-      desc: 'A comfortable Pok├® Ball that makes a caught wild Pok├®mon quickly grow friendly.',
+      desc: 'A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.',
       gen: 3,
       name: 'Luxury Ball'
     }
@@ -1897,7 +1897,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'mail',
     {
-      desc: 'Cannot be given to or taken from a Pok├®mon, except by Covet/Knock Off/Thief.',
+      desc: 'Cannot be given to or taken from a Pokémon, except by Covet/Knock Off/Thief.',
       gen: 2,
       name: 'Mail'
     }
@@ -1931,7 +1931,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'masterball',
     {
-      desc: 'The best Ball with the ultimate performance. It will catch any wild Pok├®mon.',
+      desc: 'The best Ball with the ultimate performance. It will catch any wild Pokémon.',
       gen: 1,
       name: 'Master Ball'
     }
@@ -1948,7 +1948,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'maxpotion',
     {
-      desc: 'A spray-type medicine for treating wounds. It can be used to completely restore the max HP of a single Pok├®mon.',
+      desc: 'A spray-type medicine for treating wounds. It can be used to completely restore the max HP of a single Pokémon.',
       gen: 1,
       name: 'Max Potion'
     }
@@ -2103,7 +2103,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'moonball',
     {
-      desc: 'A Pok├® Ball for catching Pok├®mon that evolve using the Moon Stone.',
+      desc: 'A Poké Ball for catching Pokémon that evolve using the Moon Stone.',
       gen: 2,
       name: 'Moon Ball'
     }
@@ -2114,7 +2114,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
       gen: 1,
       name: 'Moon Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -2154,7 +2154,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'nestball',
     {
-      desc: 'A Pok├® Ball that works especially well on weaker Pok├®mon in the wild.',
+      desc: 'A Poké Ball that works especially well on weaker Pokémon in the wild.',
       gen: 3,
       name: 'Nest Ball'
     }
@@ -2162,7 +2162,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'netball',
     {
-      desc: 'A Pok├® Ball that works especially well on Water- and Bug-type Pok├®mon.',
+      desc: 'A Poké Ball that works especially well on Water- and Bug-type Pokémon.',
       gen: 3,
       name: 'Net Ball'
     }
@@ -2273,7 +2273,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'parkball',
     {
-      desc: 'A special Pok├® Ball for the Pal Park.',
+      desc: 'A special Poké Ball for the Pal Park.',
       gen: 4,
       name: 'Park Ball'
     }
@@ -2425,9 +2425,9 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'pokeball',
     {
-      desc: 'A device for catching wild Pok├®mon. It is designed as a capsule system.',
+      desc: 'A device for catching wild Pokémon. It is designed as a capsule system.',
       gen: 1,
-      name: 'Pok├® Ball'
+      name: 'Poké Ball'
     }
   ],
   [
@@ -2466,7 +2466,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'potion',
     {
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pok├®mon.',
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon.',
       gen: 1,
       name: 'Potion'
     }
@@ -2514,7 +2514,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'premierball',
     {
-      desc: 'A rare Pok├® Ball that has been crafted to commemorate an event.',
+      desc: 'A rare Poké Ball that has been crafted to commemorate an event.',
       gen: 3,
       name: 'Premier Ball'
     }
@@ -2597,7 +2597,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'quickball',
     {
-      desc: 'A Pok├® Ball that provides a better catch rate at the start of a wild encounter.',
+      desc: 'A Poké Ball that provides a better catch rate at the start of a wild encounter.',
       gen: 4,
       name: 'Quick Ball'
     }
@@ -2700,7 +2700,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'repeatball',
     {
-      desc: 'A Pok├® Ball that works well on Pok├®mon species that were previously caught.',
+      desc: 'A Poké Ball that works well on Pokémon species that were previously caught.',
       gen: 3,
       name: 'Repeat Ball'
     }
@@ -2848,7 +2848,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'safariball',
     {
-      desc: 'A special Pok├® Ball that is used only in the Safari Zone and Great Marsh.',
+      desc: 'A special Poké Ball that is used only in the Safari Zone and Great Marsh.',
       gen: 1,
       name: 'Safari Ball'
     }
@@ -2941,7 +2941,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'shedshell',
     {
-      desc: 'Holder may switch out even when trapped by another Pok├®mon, or by Ingrain.',
+      desc: 'Holder may switch out even when trapped by another Pokémon, or by Ingrain.',
       gen: 4,
       name: 'Shed Shell'
     }
@@ -2949,7 +2949,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'shellbell',
     {
-      desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pok├®mon.',
+      desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pokémon.',
       gen: 3,
       name: 'Shell Bell'
     }
@@ -2960,7 +2960,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.',
       gen: 4,
       name: 'Shiny Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -3118,7 +3118,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'sportball',
     {
-      desc: 'A special Pok├® Ball for the Bug-Catching Contest.',
+      desc: 'A special Poké Ball for the Bug-Catching Contest.',
       gen: 2,
       name: 'Sport Ball'
     }
@@ -3214,13 +3214,13 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
       gen: 2,
       name: 'Sun Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
     'superpotion',
     {
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pok├®mon. ',
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon. ',
       gen: 1,
       name: 'Super Potion'
     }
@@ -3305,13 +3305,13 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.',
       gen: 1,
       name: 'Thunder Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
     'timerball',
     {
-      desc: 'A Pok├® Ball that becomes better the more turns there are in a battle.',
+      desc: 'A Poké Ball that becomes better the more turns there are in a battle.',
       gen: 3,
       name: 'Timer Ball'
     }
@@ -3424,7 +3424,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
       gen: 1,
       name: 'Water Stone',
-      shortDesc: 'Evolves certain species of Pok├®mon when used.'
+      shortDesc: 'Evolves certain species of Pokémon when used.'
     }
   ],
   [
@@ -3741,7 +3741,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'colressmchn',
     {
-      desc: "A special device that wrings out the potential of Pok├®mon. It's an imperfect prototype.",
+      desc: "A special device that wrings out the potential of Pokémon. It's an imperfect prototype.",
       gen: 5,
       keyItem: true,
       name: 'Colress MCHN',
@@ -3761,7 +3761,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'contestpass',
     {
-      desc: 'A pass required for entering Pok├®mon Contests. It has a drawing of an award ribbon on its front.',
+      desc: 'A pass required for entering Pokémon Contests. It has a drawing of an award ribbon on its front.',
       gen: 3,
       keyItem: true,
       name: 'Contest Pass',
@@ -3771,7 +3771,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'coupon1',
     {
-      desc: 'A coupon to be exchanged for a Pok├®mon Watch (Pok├®tch for short). Three coupons are needed.',
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
       gen: 4,
       keyItem: true,
       name: 'Coupon 1',
@@ -3781,7 +3781,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'coupon2',
     {
-      desc: 'A coupon to be exchanged for a Pok├®mon Watch (Pok├®tch for short). Three coupons are needed.',
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
       gen: 4,
       keyItem: true,
       name: 'Coupon 2',
@@ -3791,7 +3791,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'coupon3',
     {
-      desc: 'A coupon to be exchanged for a Pok├®mon Watch (Pok├®tch for short). Three coupons are needed.',
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
       gen: 4,
       keyItem: true,
       name: 'Coupon 3',
@@ -3801,7 +3801,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'dnasplicers',
     {
-      desc: 'A splicer that fuses Kyurem and a certain Pok├®mon. They are said to have been one in the beginning.',
+      desc: 'A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.',
       gen: 5,
       keyItem: true,
       name: 'DNA Splicers',
@@ -3842,7 +3842,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'devonscope',
     {
-      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pok├®mon.',
+      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
       gen: 6,
       isNonstandard: 'Past',
       keyItem: true,
@@ -3885,7 +3885,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'dragonskull',
     {
-      desc: 'A skull of a Pok├®mon that was said to have braved the angry waters to fly around the world.',
+      desc: 'A skull of a Pokémon that was said to have braved the angry waters to fly around the world.',
       gen: 5,
       keyItem: true,
       name: 'Dragon Skull',
@@ -3895,7 +3895,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'droppeditem',
     {
-      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pok├®mon. This can be repeated each day to go through all of their Pok├®mon. The Pok├®mon you receive varies based on your gender",
+      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
       gen: 5,
       keyItem: true,
       name: 'Dropped Item',
@@ -3906,7 +3906,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'dynamaxband',
     {
-      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pok├®mon to Dynamax when at a Power Spot.',
+      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pokémon to Dynamax when at a Power Spot.',
       gen: 8,
       keyItem: true,
       name: 'Dynamax Band',
@@ -3921,7 +3921,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       isNonstandard: 'Past',
       keyItem: true,
       name: 'Egg Card',
-      shortDesc: 'Might be used at the Pok├®mon Communication Centre.'
+      shortDesc: 'Might be used at the Pokémon Communication Centre.'
     }
   ],
   [
@@ -3998,7 +3998,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'expshare',
     {
-      desc: 'Turning on this special device will allow all the Pok├®mon on your team to receive Exp. Points from battles.',
+      desc: 'Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.',
       gen: 2,
       keyItem: true,
       name: 'Exp. Share',
@@ -4029,7 +4029,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'fashioncase',
     {
-      desc: 'A lovely case to store colorful Props for your Pok├®mon to wear in a musical.',
+      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
       gen: 4,
       keyItem: true,
       name: 'Fashion Case',
@@ -4039,7 +4039,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'fishingrod',
     {
-      desc: 'Use it by the water to fish up various kinds of Pok├®mon.',
+      desc: 'Use it by the water to fish up various kinds of Pokémon.',
       gen: 1,
       keyItem: true,
       name: 'Fishing Rod',
@@ -4121,7 +4121,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'goodrod',
     {
-      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pok├®mon.',
+      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
       gen: 1,
       keyItem: true,
       name: 'Good Rod',
@@ -4181,7 +4181,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'grubbyhanky',
     {
-      desc: 'A handkerchief dropped by a regular at Caf├® Warehouse. It smells faintly like a Pok├®mon.',
+      desc: 'A handkerchief dropped by a regular at Café Warehouse. It smells faintly like a Pokémon.',
       gen: 5,
       keyItem: true,
       name: 'Grubby Hanky',
@@ -4272,7 +4272,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'keystone',
     {
-      desc: 'A stone filled with an unexplained power. It makes Pok├®mon that battle with a Mega Stone Mega Evolve.',
+      desc: 'A stone filled with an unexplained power. It makes Pokémon that battle with a Mega Stone Mega Evolve.',
       gen: 6,
       keyItem: true,
       name: 'Key Stone',
@@ -4322,10 +4322,10 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'leftpokeball',
     {
-      desc: "A Pok├® Ball with a Pok├®mon that lost its Trainer inside. It seems to be from Ula'ula Island.",
+      desc: "A Poké Ball with a Pokémon that lost its Trainer inside. It seems to be from Ula'ula Island.",
       gen: 7,
       keyItem: true,
-      name: 'Left Pok├® Ball',
+      name: 'Left Poké Ball',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png'
     }
   ],
@@ -4505,7 +4505,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'megabracelet',
     {
-      desc: 'This cuff contains an untold power that somehow enables Pok├®mon carrying a Mega Stone to Mega Evolve in battle.',
+      desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
       gen: 6,
       isNonstandard: 'Past',
       keyItem: true,
@@ -4516,7 +4516,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'megaring',
     {
-      desc: 'This ring contains an untold power that somehow enables Pok├®mon carrying a Mega Stone to Mega Evolve in battle.',
+      desc: 'This ring contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
       gen: 6,
       keyItem: true,
       name: 'Mega Ring',
@@ -4557,7 +4557,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'moonflute',
     {
-      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pok├®mon of the moon.',
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the moon.',
       gen: 7,
       keyItem: true,
       name: 'Moon Flute',
@@ -4567,7 +4567,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'mysteryegg',
     {
-      desc: "A mysterious Egg obtained from Mr. Pok├®mon. What's in the Egg is unknown.",
+      desc: "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown.",
       gen: 2,
       keyItem: true,
       name: 'Mystery Egg',
@@ -4617,7 +4617,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'oaksparcel',
     {
-      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pok├®mon Mart.",
+      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
       gen: 1,
       isNonstandard: 'Past',
       keyItem: true,
@@ -4628,7 +4628,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'oldcharm',
     {
-      desc: 'An ancient good-luck charm made of Pok├®mon bones to be taken to the elder of Celestic Town.',
+      desc: 'An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town.',
       gen: 4,
       keyItem: true,
       name: 'Old Charm',
@@ -4648,7 +4648,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'oldrod',
     {
-      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pok├®mon.',
+      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
       gen: 1,
       keyItem: true,
       name: 'Old Rod',
@@ -4679,7 +4679,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'ovalcharm',
     {
-      desc: 'An oval charm said to increase the chance of Pok├®mon Eggs being found at the Nursery.',
+      desc: 'An oval charm said to increase the chance of Pokémon Eggs being found at the Nursery.',
       gen: 5,
       keyItem: true,
       name: 'Oval Charm',
@@ -4789,51 +4789,51 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'pokeradar',
     {
-      desc: 'A tool that can search out Pok├®mon that are hiding in the tall grass. Its battery is recharged as you walk.',
+      desc: 'A tool that can search out Pokémon that are hiding in the tall grass. Its battery is recharged as you walk.',
       gen: 4,
       keyItem: true,
-      name: 'Pok├® Radar',
+      name: 'Poké Radar',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeradar.png'
     }
   ],
   [
     'pokeblockkit',
     {
-      desc: 'A set containing a Berry Blender for making Pok├®blocks and a Pok├®block Case for storing Pok├®blocks.',
+      desc: 'A set containing a Berry Blender for making Pokéblocks and a Pokéblock Case for storing Pokéblocks.',
       gen: 6,
       keyItem: true,
-      name: 'Pok├®block Kit',
+      name: 'Pokéblock Kit',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockkit.png'
     }
   ],
   [
     'pokeblockcase',
     {
-      desc: 'A case for holding Pok├®block made with a Berry Blender.',
+      desc: 'A case for holding Pokéblock made with a Berry Blender.',
       gen: 3,
       isNonstandard: 'Past',
       keyItem: true,
-      name: 'Pok├®block Case',
+      name: 'Pokéblock Case',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png'
     }
   ],
   [
     'pokeflute',
     {
-      desc: 'A flute that can play with such a beautiful tone that even sleeping Pok├®mon find themselves woken up.',
+      desc: 'A flute that can play with such a beautiful tone that even sleeping Pokémon find themselves woken up.',
       gen: 1,
       keyItem: true,
-      name: 'Pok├® Flute',
+      name: 'Poké Flute',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeflute.png'
     }
   ],
   [
     'pokemonboxlink',
     {
-      desc: "A device that allows you to access the Pok├®mon storage system. There are some places where it won't work.",
+      desc: "A device that allows you to access the Pokémon storage system. There are some places where it won't work.",
       gen: 8,
       keyItem: true,
-      name: 'Pok├®mon Box Link',
+      name: 'Pokémon Box Link',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png'
     }
   ],
@@ -4861,7 +4861,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'prisonbottle',
     {
-      desc: 'A bottle believed to have been used to seal away the power of a certain Pok├®mon long, long ago.',
+      desc: 'A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.',
       gen: 6,
       keyItem: true,
       name: 'Prison Bottle',
@@ -4891,7 +4891,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'propcase',
     {
-      desc: 'A lovely case to store colorful Props for your Pok├®mon to wear in a musical.',
+      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
       gen: 5,
       keyItem: true,
       name: 'Prop Case',
@@ -4911,7 +4911,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'ragecandybar',
     {
-      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pok├®mon.",
+      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pokémon.",
       gen: 2,
       keyItem: true,
       name: 'Rage Candy Bar',
@@ -4952,7 +4952,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'redchain',
     {
-      desc: 'A mythical chain that is said to link the Legendary Pok├®mon that created the Sinnoh region.',
+      desc: 'A mythical chain that is said to link the Legendary Pokémon that created the Sinnoh region.',
       gen: 4,
       keyItem: true,
       name: 'Red Chain',
@@ -4982,7 +4982,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'revealglass',
     {
-      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pok├®mon to its original shape.",
+      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pokémon to its original shape.",
       gen: 5,
       keyItem: true,
       name: 'Reveal Glass',
@@ -4992,7 +4992,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'ridepager',
     {
-      desc: 'By entering certain numbers on this pager, you can summon Ride Pok├®mon in an instant.',
+      desc: 'By entering certain numbers on this pager, you can summon Ride Pokémon in an instant.',
       gen: 7,
       keyItem: true,
       name: 'Ride Pager',
@@ -5056,7 +5056,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'rotombike',
     {
-      desc: 'This bike can be combined with the Pok├®mon Rotom to not only do a turbo boost but also run on the water.',
+      desc: 'This bike can be combined with the Pokémon Rotom to not only do a turbo boost but also run on the water.',
       gen: 8,
       keyItem: true,
       name: 'Rotom Bike',
@@ -5129,7 +5129,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'sealbag',
     {
-      desc: 'A tiny bag that can hold 10 Seals for decorating Pok├® Balls.',
+      desc: 'A tiny bag that can hold 10 Seals for decorating Poké Balls.',
       gen: 4,
       keyItem: true,
       name: 'Seal Bag',
@@ -5139,7 +5139,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'sealcase',
     {
-      desc: 'A case for storing Seals that can be applied to the exteriors of Pok├® Balls.',
+      desc: 'A case for storing Seals that can be applied to the exteriors of Poké Balls.',
       gen: 4,
       keyItem: true,
       name: 'Seal Case',
@@ -5159,7 +5159,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'secretpotion',
     {
-      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pok├®mon of any ailment.',
+      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment.',
       gen: 2,
       keyItem: true,
       name: 'SecretPotion',
@@ -5169,7 +5169,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'shinycharm',
     {
-      desc: 'A shiny charm said to increase the chance of finding a Shiny Pok├®mon in the wild.',
+      desc: 'A shiny charm said to increase the chance of finding a Shiny Pokémon in the wild.',
       gen: 5,
       keyItem: true,
       name: 'Shiny Charm',
@@ -5230,7 +5230,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'sparklingstone',
     {
-      desc: 'A stone entrusted by a Pok├®mon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
+      desc: 'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
       gen: 7,
       keyItem: true,
       name: 'Sparkling Stone',
@@ -5290,7 +5290,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'sunflute',
     {
-      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pok├®mon of the sun.',
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the sun.',
       gen: 7,
       keyItem: true,
       name: 'Sun Flute',
@@ -5300,7 +5300,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'superrod',
     {
-      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pok├®mon.',
+      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
       gen: 1,
       keyItem: true,
       name: 'Super Rod',
@@ -5484,7 +5484,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'zpowering',
     {
-      desc: 'A mysterious ring that enables Pok├®mon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
+      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
       gen: 7,
       keyItem: true,
       name: 'Z-Power Ring',
@@ -5494,7 +5494,7 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'zring',
     {
-      desc: 'A mysterious ring that enables Pok├®mon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
+      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
       gen: 7,
       keyItem: true,
       name: 'Z-Ring',

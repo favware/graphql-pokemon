@@ -40577,9 +40577,9 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '7L49', '6T', '6L49', '5T', '5L65', '4T', '4L65']
     }
   ],
-  ['deoxysattack', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['deoxysdefense', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['deoxysspeed', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['deoxysattack', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['deoxysdefense', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['deoxysspeed', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'turtwig',
     {
@@ -46259,7 +46259,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       willowisp: ['8M', '7M', '6M', '5M', '4M']
     }
   ],
-  ['giratinaorigin', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['giratinaorigin', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'cresselia',
     {
@@ -46627,7 +46627,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '6T', '5T', '4T']
     }
   ],
-  ['shayminsky', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['shayminsky', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'arceus',
     {
@@ -46766,23 +46766,23 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '6T', '5T', '4T']
     }
   ],
-  ['arceusbug', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusdark', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusdragon', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceuselectric', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusfairy', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusfighting', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusfire', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusflying', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusghost', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusgrass', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusground', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusice', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceuspoison', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceuspsychic', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceusrock', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceussteel', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['arceuswater', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['arceusbug', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusdark', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusdragon', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuselectric', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusfairy', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusfighting', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusfire', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusflying', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusghost', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusgrass', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusground', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusice', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuspoison', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuspsychic', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceusrock', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceussteel', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['arceuswater', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'victini',
     {
@@ -57798,7 +57798,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       weatherball: ['8M']
     }
   ],
-  ['tornadustherian', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['tornadustherian', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'thundurus',
     {
@@ -57885,7 +57885,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       wildcharge: ['8M', '7M', '6M', '5M', '5S2']
     }
   ],
-  ['thundurustherian', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['thundurustherian', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'reshiram',
     {
@@ -58137,7 +58137,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       weatherball: ['8M']
     }
   ],
-  ['landorustherian', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['landorustherian', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'kyurem',
     {
@@ -58464,7 +58464,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       xscissor: ['8M', '7M', '6M', '5M']
     }
   ],
-  ['keldeoresolute', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['keldeoresolute', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'meloetta',
     {
@@ -58649,10 +58649,10 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['8M', '7T', '6T', '5T']
     }
   ],
-  ['genesectburn', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['genesectchill', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['genesectdouse', { eventOnly: ['See base forme of this Pok├®mon'] }],
-  ['genesectshock', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['genesectburn', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['genesectchill', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['genesectdouse', { eventOnly: ['See base forme of this Pokémon'] }],
+  ['genesectshock', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'chespin',
     {
@@ -64124,7 +64124,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['7T', '7L46', '6T', '6L46']
     }
   ],
-  ['hoopaunbound', { eventOnly: ['See base forme of this Pok├®mon'] }],
+  ['hoopaunbound', { eventOnly: ['See base forme of this Pokémon'] }],
   [
     'volcanion',
     {

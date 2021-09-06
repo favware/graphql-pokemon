@@ -65,7 +65,7 @@ export namespace Pokemon {
     species: string;
     types: string[];
     weightkg: number;
-    evYields?: Stats<0 | 1 | 2 | 3>;
+    evYields: Stats<0 | 1 | 2 | 3>;
     specialShinySprite?: string;
     specialSprite?: string;
     specialShinyBackSprite?: string;

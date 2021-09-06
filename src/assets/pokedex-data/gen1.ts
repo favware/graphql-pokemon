@@ -25,7 +25,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/afd-shiny/missingno.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/afd-back/missingno.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/afd-back-shiny/missingno.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [

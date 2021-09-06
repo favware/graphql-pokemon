@@ -73,12 +73,12 @@ export default class DexService {
       addPropertyToClass(baseStatsData, 'speed', page.item.baseStats.spe, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.speed');
 
       const evYieldsRequestedFields = Util.cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
-      addPropertyToClass(evYieldsData, 'hp', page.item.evYields?.hp ?? 0, evYieldsRequestedFields, 'evYields.hp');
-      addPropertyToClass(evYieldsData, 'attack', page.item.evYields?.atk ?? 0, evYieldsRequestedFields, 'evYields.attack');
-      addPropertyToClass(evYieldsData, 'defense', page.item.evYields?.def ?? 0, evYieldsRequestedFields, 'evYields.defense');
-      addPropertyToClass(evYieldsData, 'specialattack', page.item.evYields?.spa ?? 0, evYieldsRequestedFields, 'evYields.specialattack');
-      addPropertyToClass(evYieldsData, 'specialdefense', page.item.evYields?.spd ?? 0, evYieldsRequestedFields, 'evYields.specialdefense');
-      addPropertyToClass(evYieldsData, 'speed', page.item.evYields?.spe ?? 0, evYieldsRequestedFields, 'evYields.speed');
+      addPropertyToClass(evYieldsData, 'hp', page.item.evYields.hp, evYieldsRequestedFields, 'evYields.hp');
+      addPropertyToClass(evYieldsData, 'attack', page.item.evYields.atk, evYieldsRequestedFields, 'evYields.attack');
+      addPropertyToClass(evYieldsData, 'defense', page.item.evYields.def, evYieldsRequestedFields, 'evYields.defense');
+      addPropertyToClass(evYieldsData, 'specialattack', page.item.evYields.spa, evYieldsRequestedFields, 'evYields.specialattack');
+      addPropertyToClass(evYieldsData, 'specialdefense', page.item.evYields.spd, evYieldsRequestedFields, 'evYields.specialdefense');
+      addPropertyToClass(evYieldsData, 'speed', page.item.evYields.spe, evYieldsRequestedFields, 'evYields.speed');
 
       addPropertyToClass(abilitiesData, 'first', page.item.abilities.first, requestedFields as GraphQLSet<keyof AbilitiesEntry>, 'abilities.first');
       addPropertyToClass(
@@ -241,42 +241,42 @@ export default class DexService {
     addPropertyToClass(
       evYieldsData,
       'hp',
-      basePokemonData.evYields?.hp ?? 0,
+      basePokemonData.evYields.hp,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.hp`
     );
     addPropertyToClass(
       evYieldsData,
       'attack',
-      basePokemonData.evYields?.atk ?? 0,
+      basePokemonData.evYields.atk,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.attack`
     );
     addPropertyToClass(
       evYieldsData,
       'defense',
-      basePokemonData.evYields?.def ?? 0,
+      basePokemonData.evYields.def,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.defense`
     );
     addPropertyToClass(
       evYieldsData,
       'specialattack',
-      basePokemonData.evYields?.spa ?? 0,
+      basePokemonData.evYields.spa,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.specialattack`
     );
     addPropertyToClass(
       evYieldsData,
       'specialdefense',
-      basePokemonData.evYields?.spd ?? 0,
+      basePokemonData.evYields.spd,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.specialdefense`
     );
     addPropertyToClass(
       evYieldsData,
       'speed',
-      basePokemonData.evYields?.spe ?? 0,
+      basePokemonData.evYields.spe,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.speed`
     );

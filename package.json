@@ -30,7 +30,7 @@
     "lint": "eslint src scripts __tests__ --ext ts,mjs --fix",
     "format": "prettier --write --loglevel=warn {src,scripts}/**/*.{ts,json}",
     "test": "jest",
-    "start": "node --experimental-json-modules generated/api/index.js",
+    "start": "node --enable-source-maps --experimental-json-modules generated/api/index.js",
     "build": "tsc -b src",
     "watch": "tsc -b src -w",
     "clean": "node scripts/clean.mjs",
@@ -74,6 +74,7 @@
     "class-validator": "^0.13.1",
     "colorette": "^1.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
     "fuse.js": "^6.4.6",
     "graphql-parse-resolve-info": "^4.12.0",
     "graphql-type-json": "^0.3.2",
@@ -101,8 +102,8 @@
     "generated/ts"
   ],
   "engines": {
-    "node": ">=12",
-    "npm": ">=6"
+    "node": ">=16",
+    "npm": ">=7"
   },
   "repository": {
     "type": "git",
@@ -142,5 +143,6 @@
     "dot-prop": "^6.0.1",
     "node-fetch": "^2.6.1",
     "trim-newlines": "^3.0.1"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }

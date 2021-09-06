@@ -1,17 +1,17 @@
-import AbilityPaginatedArgs, { abilities } from '#arguments/AbilityPaginatedArgs';
+import { abilities, AbilityPaginatedArgs } from '#arguments/AbilityPaginatedArgs';
 import { abilityAliases } from '#assets/aliases';
-import AbilityService from '#services/AbilityService';
-import AbilityEntry from '#structures/AbilityEntry';
+import { AbilityService } from '#services/AbilityService';
+import { AbilityEntry } from '#structures/AbilityEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
-import GraphQLSet from '#utils/GraphQLSet';
+import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import Util from '#utils/util';
+import { Util } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(AbilityEntry)
-export default class AbilityResolver {
+export class AbilityResolver {
   private abilityService: AbilityService;
 
   public constructor() {

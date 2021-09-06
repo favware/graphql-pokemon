@@ -2,7 +2,7 @@ const TO_TITLE_CASE = /[A-Za-zÀ-ÖØ-öø-ÿ]\S*/g;
 const COMMON_SYMBOLS = /[$-/:-?{-~!"^_`[\] .']/g;
 
 // eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export default class Util {
+export class Util {
   /** Converts a string to Title Case */
   public static toTitleCase(str: string): string {
     return str.replace(TO_TITLE_CASE, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());

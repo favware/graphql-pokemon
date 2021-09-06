@@ -21,7 +21,7 @@ export class LearnsetLevelUpMove extends LearnsetMove implements Pokemon.Learnse
 }
 
 @ObjectType({ description: 'A learnset entry' })
-export default class LearnsetEntry {
+export class LearnsetEntry {
   @Field(() => [LearnsetLevelUpMove], {
     description: 'The moves that can be learned through levelling up',
     defaultValue: [new LearnsetLevelUpMove()]

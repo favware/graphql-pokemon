@@ -4,7 +4,7 @@ import { ArrayMinSize, ArrayUnique, IsIn } from 'class-validator';
 import { ArgsType, Field, Int } from 'type-graphql';
 
 @ArgsType()
-export default class LearnsetArgs {
+export class LearnsetArgs {
   @Field(() => pokemons, { description: 'The Pokémon for which to get the learnset' })
   public pokemon!: string;
 

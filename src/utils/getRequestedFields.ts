@@ -1,6 +1,6 @@
+import { GraphQLSet } from '#utils/GraphQLSet';
 import { FieldsByTypeName, parseResolveInfo, ResolveTree } from 'graphql-parse-resolve-info';
 import { createParamDecorator } from 'type-graphql';
-import GraphQLSet from '#utils/GraphQLSet';
 
 function infoIsResolveTree(info: ResolveTree | FieldsByTypeName): info is ResolveTree {
   return (info as ResolveTree).fieldsByTypeName !== undefined;

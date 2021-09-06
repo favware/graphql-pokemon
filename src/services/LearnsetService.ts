@@ -1,14 +1,14 @@
-import LearnsetArgs from '#arguments/LearnsetArgs';
+import { LearnsetArgs } from '#arguments/LearnsetArgs';
 import learnsets from '#assets/learnsets';
 import pokedex from '#assets/pokedex';
-import LearnsetEntry, { LearnsetLevelUpMove, LearnsetMove } from '#structures/LearnsetEntry';
+import { LearnsetEntry, LearnsetLevelUpMove, LearnsetMove } from '#structures/LearnsetEntry';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
-import GraphQLSet from '#utils/GraphQLSet';
+import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { Args } from 'type-graphql';
 
-export default class LearnsetService {
+export class LearnsetService {
   public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs, requestedFields: GraphQLSet<keyof LearnsetEntry>): LearnsetEntry {
     const learnset = learnsets.get(pokemon);
 

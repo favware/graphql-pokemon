@@ -1,7 +1,7 @@
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single item entry' })
-export default class ItemEntry {
+export class ItemEntry {
   @Field(() => String, { description: 'The long description for an item' })
   public desc!: string;
 

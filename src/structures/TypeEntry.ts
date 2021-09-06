@@ -2,7 +2,7 @@ import type Pokemon from '#utils/pokemon';
 import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A type matchup entry' })
-export default class TypeEntry {
+export class TypeEntry {
   @Field(() => [String], { description: 'The types with 4x effectiveness' })
   public doubleEffectiveTypes!: (keyof Pokemon.Types)[];
 

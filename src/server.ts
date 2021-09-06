@@ -3,12 +3,12 @@ import { pokemons } from '#arguments/ExactPokemonPaginatedArgs';
 import { items } from '#arguments/ItemPaginatedArgs';
 import { moves } from '#arguments/MovePaginatedArgs';
 import { types } from '#arguments/TypeArgs';
-import AbilityResolver from '#resolvers/AbilityResolver';
-import DexResolver from '#resolvers/DexResolver';
-import ItemResolver from '#resolvers/ItemResolver';
-import LearnsetResolver from '#resolvers/LearnsetResolver';
-import MoveResolver from '#resolvers/MoveResolver';
-import TypeResolver from '#resolvers/TypeResolver';
+import { AbilityResolver } from '#resolvers/AbilityResolver';
+import { DexResolver } from '#resolvers/DexResolver';
+import { ItemResolver } from '#resolvers/ItemResolver';
+import { LearnsetResolver } from '#resolvers/LearnsetResolver';
+import { MoveResolver } from '#resolvers/MoveResolver';
+import { TypeResolver } from '#resolvers/TypeResolver';
 import tabs from '#root/defaultPlaygroundTabs';
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
 import { ApolloServer } from 'apollo-server-koa';
@@ -43,7 +43,8 @@ export const buildGqlSchema = (): Promise<GraphQLSchema> => {
   });
 
   return buildSchema({
-    resolvers: [DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver]
+    resolvers: [DexResolver, AbilityResolver, ItemResolver, MoveResolver, TypeResolver, LearnsetResolver],
+    dateScalarMode: 'isoDate'
   });
 };
 

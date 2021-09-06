@@ -2,7 +2,7 @@ import { IsBoolean, Max, Min } from 'class-validator';
 import { ArgsType, Field, Int } from 'type-graphql';
 
 @ArgsType()
-export default abstract class PaginatedArgs {
+export abstract class PaginatedArgs {
   @Field(() => Int, { defaultValue: 0, description: 'Sets the offset where to start' })
   @Min(0)
   public skip!: number;

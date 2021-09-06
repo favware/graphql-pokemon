@@ -1,15 +1,15 @@
-import MovePaginatedArgs from '#arguments/MovePaginatedArgs';
+import { MovePaginatedArgs } from '#arguments/MovePaginatedArgs';
 import moves from '#assets/moves';
-import MoveEntry from '#structures/MoveEntry';
+import { MoveEntry } from '#structures/MoveEntry';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
-import FuzzySearch from '#utils/FuzzySearch';
-import type GraphQLSet from '#utils/GraphQLSet';
+import { FuzzySearch } from '#utils/FuzzySearch';
+import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import Util from '#utils/util';
+import { Util } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
-export default class MoveService {
+export class MoveService {
   public findByName(@Arg('name') name: string): Pokemon.Move | undefined {
     return moves.get(name);
   }

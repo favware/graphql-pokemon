@@ -1,9 +1,9 @@
-import DexEntry from '#structures/DexEntry';
-import FlavorEntry from '#structures/FlavorEntry';
+import { DexEntry } from '#structures/DexEntry';
+import { FlavorEntry } from '#structures/FlavorEntry';
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's details entry" })
-export default class DexDetails extends DexEntry {
+export class DexDetails extends DexEntry {
   @Field(() => Int, { description: 'The total of all base stats for a Pokémon' })
   public baseStatsTotal!: number;
 

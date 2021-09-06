@@ -8,7 +8,7 @@ import { URL } from 'node:url';
 const filePrefix = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
   '',
-  "import GraphQLCollection from '#utils/GraphQLCollection';",
+  "import { GraphQLCollection } from '#utils/GraphQLCollection';",
   "import type { Pokemon } from '#utils/pokemon';",
   '',
   '/** The learnsets in Pokémon */',

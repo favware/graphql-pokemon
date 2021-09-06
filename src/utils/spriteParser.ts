@@ -1,4 +1,4 @@
-import Util from '#utils/util';
+import { Util } from '#utils/util';
 
 interface ParseSpeciesForSpriteParams {
   backSprite?: boolean;

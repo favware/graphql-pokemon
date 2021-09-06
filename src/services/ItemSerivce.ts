@@ -1,15 +1,15 @@
-import ItemPaginatedArgs from '#arguments/ItemPaginatedArgs';
+import { ItemPaginatedArgs } from '#arguments/ItemPaginatedArgs';
 import items from '#assets/items';
-import ItemEntry from '#structures/ItemEntry';
+import { ItemEntry } from '#structures/ItemEntry';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
-import FuzzySearch from '#utils/FuzzySearch';
-import type GraphQLSet from '#utils/GraphQLSet';
+import { FuzzySearch } from '#utils/FuzzySearch';
+import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import Util from '#utils/util';
+import { Util } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
-export default class ItemService {
+export class ItemService {
   public findByName(@Arg('name') name: string): Pokemon.Item | undefined {
     return items.get(name);
   }

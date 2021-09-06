@@ -1,12 +1,12 @@
-import AbilitiesEntry from '#structures/AbilitiesEntry';
-import CatchRateEntry from '#structures/CatchRateEntry';
-import EvYieldsEntry from '#structures/EvYieldsEntry';
-import GenderEntry from '#structures/GenderEntry';
-import StatsEntry from '#structures/StatsEntry';
+import { AbilitiesEntry } from '#structures/AbilitiesEntry';
+import { CatchRateEntry } from '#structures/CatchRateEntry';
+import { EvYieldsEntry } from '#structures/EvYieldsEntry';
+import { GenderEntry } from '#structures/GenderEntry';
+import { StatsEntry } from '#structures/StatsEntry';
 import { Field, Float, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single Pokedex entry' })
-export default class DexEntry {
+export class DexEntry {
   @Field(() => Int, { description: 'The dex number for a Pokémon' })
   public num!: number;
 

@@ -1,4 +1,4 @@
-import GraphQLCollection from '#utils/GraphQLCollection';
+import { GraphQLCollection } from '#utils/GraphQLCollection';
 import type { Pokemon } from '#utils/pokemon';
 
 /** The item in Pokémon */

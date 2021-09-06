@@ -1,23 +1,23 @@
-import PokemonPaginatedArgs from '#arguments/PokemonPaginatedArgs';
+import { PokemonPaginatedArgs } from '#arguments/PokemonPaginatedArgs';
 import pokedex from '#assets/pokedex';
-import AbilitiesEntry from '#structures/AbilitiesEntry';
-import CatchRateEntry from '#structures/CatchRateEntry';
-import DexDetails from '#structures/DexDetails';
-import DexEntry from '#structures/DexEntry';
-import EvYieldsEntry from '#structures/EvYieldsEntry';
-import FlavorEntry from '#structures/FlavorEntry';
-import GenderEntry from '#structures/GenderEntry';
-import StatsEntry from '#structures/StatsEntry';
+import { AbilitiesEntry } from '#structures/AbilitiesEntry';
+import { CatchRateEntry } from '#structures/CatchRateEntry';
+import { DexDetails } from '#structures/DexDetails';
+import { DexEntry } from '#structures/DexEntry';
+import { EvYieldsEntry } from '#structures/EvYieldsEntry';
+import { FlavorEntry } from '#structures/FlavorEntry';
+import { GenderEntry } from '#structures/GenderEntry';
+import { StatsEntry } from '#structures/StatsEntry';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
-import FuzzySearch from '#utils/FuzzySearch';
-import GraphQLSet from '#utils/GraphQLSet';
+import { FuzzySearch } from '#utils/FuzzySearch';
+import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
-import Util from '#utils/util';
+import { Util } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
-export default class DexService {
+export class DexService {
   private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
   private tiers: Record<string, string> | undefined = undefined;
   private readonly bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/wiki/';

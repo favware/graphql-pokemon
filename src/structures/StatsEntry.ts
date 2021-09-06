@@ -1,7 +1,7 @@
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's stats" })
-export default class StatsEntry {
+export class StatsEntry {
   @Field(() => Int, { description: 'The base HP stat of a pokémon' })
   public hp!: number;
 

@@ -16,7 +16,7 @@ export interface GraphQLSetConstructor {
  * @extends {Set}
  * @property size - The amount of elements in this GraphQLSet.
  */
-export default class GraphQLSet<V> extends Set<V> {
+export class GraphQLSet<V> extends Set<V> {
   public ['constructor']: typeof GraphQLSet;
 
   public constructor(entries?: ReadonlyArray<V> | null) {
@@ -24,24 +24,24 @@ export default class GraphQLSet<V> extends Set<V> {
   }
 
   /**
-   * Identical to
+   * Similar to
    * [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter),
    * but returns a GraphQLSet instead of an Array.
-   * @param fn The function to test with (should return boolean)
-   * @param [thisArg] Value to use as `this` when executing function
-   * @returns {GraphQLSet}
-   * @example graphqlset.filter((v) => v.startsWith('parentKey'));
+   * Also instead of receiving a callback predicate this will use {@link String.startsWith}.
+   *
+   * If the value starts with the given {@link checkString} then that {@link checkString}
+   * is removed from the start of the value and the remaining value is added to the result.
+   *
+   * @param checkString The string that will be used in the `.startsWith` check
+   * @example graphqlSet.filter('parentKey.');
    */
-  public filter(fn: (value: V, set: this) => boolean): this;
-  public filter<R>(fn: (value: V, set: this) => boolean): R;
-  public filter<T>(fn: (this: T, value: V, set: this) => boolean, thisArg: T): this;
-  public filter<T, R>(fn: (this: T, value: V, set: this) => boolean, thisArg: T): R;
-  public filter(fn: (value: V, set: this) => boolean, thisArg?: unknown): this {
-    if (typeof thisArg !== 'undefined') fn = fn.bind(thisArg);
-    const results = new this.constructor[Symbol.species]<V>() as this;
+  public filterStartsWith<R extends GraphQLSet<unknown>>(checkString: string): R {
+    const results = new this.constructor[Symbol.species]<V>() as R;
 
     for (const val of this) {
-      if (fn(val, this)) results.add(val);
+      if (typeof val === 'string' && val.startsWith(checkString)) {
+        results.add(val.replace(checkString, '') as unknown as V);
+      }
     }
 
     return results;

@@ -1,13 +1,13 @@
-import TypeArgs, { types } from '#arguments/TypeArgs';
+import { TypeArgs, types } from '#arguments/TypeArgs';
 import typechart from '#assets/typechart';
-import TypeEntry from '#structures/TypeEntry';
-import TypeMatchups from '#structures/TypeMatchups';
+import { TypeEntry } from '#structures/TypeEntry';
+import { TypeMatchups } from '#structures/TypeMatchups';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
-import GraphQLSet from '#utils/GraphQLSet';
+import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
 import { Arg, Args } from 'type-graphql';
 
-export default class TypeService {
+export class TypeService {
   public findTypeMatchupByName(@Arg('name', () => types) name: string): Pokemon.TypeMatchups | undefined {
     return typechart.get(name);
   }
@@ -109,7 +109,7 @@ export default class TypeService {
         }
       }
 
-      const attackingTypeEntryFields = requestedFields.filter<GraphQLSet<keyof TypeEntry>>((val) => val.startsWith('attacking.'));
+      const attackingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof TypeEntry>>('attacking.');
       addPropertyToClass(
         attackingTypeEntry,
         'doubleEffectiveTypes',
@@ -156,7 +156,7 @@ export default class TypeService {
         }
       }
 
-      const defendingTypeEntryFields = requestedFields.filter<GraphQLSet<keyof TypeEntry>>((val) => val.startsWith('defending.'));
+      const defendingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof TypeEntry>>('defending.');
       addPropertyToClass(
         defendingTypeEntry,
         'doubleEffectiveTypes',

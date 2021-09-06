@@ -9,6 +9,7 @@ export interface DataResponse<K extends keyof Omit<Query, '__typename'>> {
 
 interface GCallOptions {
   source: string;
+
   variableValues?: Maybe<Record<string, unknown>>;
 }
 

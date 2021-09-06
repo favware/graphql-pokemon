@@ -1,9 +1,13 @@
 export interface GraphQLSetConstructor {
   new (): GraphQLSet<unknown>;
+
   new <V>(entries?: ReadonlyArray<V> | null): GraphQLSet<V>;
+
   new <V>(iterable: Iterable<V>): GraphQLSet<V>;
-  readonly prototype: GraphQLSet<unknown>;
+
   readonly [Symbol.species]: GraphQLSetConstructor;
+
+  readonly prototype: GraphQLSet<unknown>;
 }
 
 /**

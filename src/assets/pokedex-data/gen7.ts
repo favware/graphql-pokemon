@@ -939,7 +939,11 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 2,
         spd: 0,
         spe: 0
-      }
+      },
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/oricorio-pau.gif',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/oricorio-pau.gif',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/oricorio-pau.gif',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/oricorio-pau.gif'
     }
   ],
   [
@@ -3740,7 +3744,7 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'jangmoo',
     {
-      species: 'jangmoo',
+      species: 'jangmo-o',
       num: 782,
       types: ['Dragon'],
       genderRatio: { male: 0.5, female: 0.5 },
@@ -3772,7 +3776,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true
+      isEggObtainable: true,
+      specialBulbapediaUrl: 'Jangmo-o'
     }
   ],
   [
@@ -3812,7 +3817,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true
+      isEggObtainable: true,
+      specialBulbapediaUrl: 'Hakamo-o'
     }
   ],
   [
@@ -3852,7 +3858,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       },
       levellingRate: 'Slow',
       minimumHatchTime: 10280,
-      isEggObtainable: true
+      isEggObtainable: true,
+      specialBulbapediaUrl: 'Kommo-o'
     }
   ],
   [

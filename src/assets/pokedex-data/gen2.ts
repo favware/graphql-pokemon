@@ -4206,7 +4206,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 0,
         spd: 3,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: 'Ho-Oh'
     }
   ],
   [

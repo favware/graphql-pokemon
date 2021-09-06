@@ -920,7 +920,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 0,
         spd: 1,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: 'Flabébé'
     }
   ],
   [

@@ -70,6 +70,7 @@ export namespace Pokemon {
     specialSprite?: string;
     specialShinyBackSprite?: string;
     specialBackSprite?: string;
+    specialBulbapediaUrl?: string;
     cosmeticFormes?: string[];
     catchRate?: CatchRateEntry;
     levellingRate?: LevellingRateUnion;

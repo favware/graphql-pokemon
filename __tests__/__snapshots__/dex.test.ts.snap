@@ -81,6 +81,14 @@ Object {
     "eggGroups": Array [
       "Undiscovered",
     ],
+    "evYields": Object {
+      "atk": 0,
+      "def": 0,
+      "hp": 3,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0,
+    },
     "genderRatio": Object {
       "female": 0,
       "male": 0,
@@ -151,6 +159,14 @@ Object {
       "Water 1",
       "Dragon",
     ],
+    "evYields": Object {
+      "atk": 3,
+      "def": 0,
+      "hp": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0,
+    },
     "evoLevel": 55,
     "genderRatio": Object {
       "female": 0.5,

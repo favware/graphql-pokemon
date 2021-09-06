@@ -27,7 +27,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclar.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/syclar.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclar.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -56,7 +64,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclant.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/syclant.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclant.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -83,7 +99,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/revenankh.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/revenankh.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/revenankh.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -111,7 +135,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/embirch.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/embirch.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/embirch.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -141,7 +173,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/flarelm.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/flarelm.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/flarelm.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -170,7 +210,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pyroak.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pyroak.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pyroak.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -198,7 +246,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/breezi.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/breezi.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/breezi.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -227,7 +283,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/fidgit.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/fidgit.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/fidgit.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -255,7 +319,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/rebble.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/rebble.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/rebble.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -285,7 +357,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tactite.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tactite.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tactite.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -314,7 +394,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/stratagem.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/stratagem.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/stratagem.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -342,7 +430,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/privatyke.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/privatyke.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/privatyke.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -371,7 +467,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/arghonaut.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/arghonaut.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/arghonaut.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -398,7 +502,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/kitsunoh.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/kitsunoh.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/kitsunoh.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -425,7 +537,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cyclohm.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cyclohm.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cyclohm.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -452,7 +572,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/colossoil.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/colossoil.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/colossoil.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -479,7 +607,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/krillowatt.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/krillowatt.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/krillowatt.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -507,7 +643,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/voodoll.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/voodoll.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/voodoll.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -536,7 +680,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/voodoom.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/voodoom.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/voodoom.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -564,7 +716,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/scratchet.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/scratchet.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/scratchet.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -593,7 +753,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tomohawk.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tomohawk.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tomohawk.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -621,7 +789,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/necturine.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/necturine.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/necturine.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -650,7 +826,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/necturna.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/necturna.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/necturna.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -677,7 +861,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/mollux.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/mollux.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/mollux.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -705,7 +897,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cupra.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cupra.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cupra.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -735,7 +935,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/argalis.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/argalis.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/argalis.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -764,7 +972,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/aurumoth.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/aurumoth.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/aurumoth.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -792,7 +1008,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/brattler.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/brattler.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/brattler.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -821,7 +1045,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/malaconda.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/malaconda.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/malaconda.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -849,7 +1081,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cawdet.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cawdet.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cawdet.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -878,7 +1118,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cawmodore.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cawmodore.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cawmodore.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -906,7 +1154,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/volkritter.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/volkritter.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/volkritter.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -935,7 +1191,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/volkraken.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/volkraken.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/volkraken.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -963,7 +1227,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/snugglow.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/snugglow.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/snugglow.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -992,7 +1264,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/plasmanta.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/plasmanta.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/plasmanta.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1020,7 +1300,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/floatoy.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/floatoy.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/floatoy.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1050,7 +1338,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/caimanoe.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/caimanoe.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/caimanoe.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1079,7 +1375,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/naviathan.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/naviathan.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/naviathan.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1107,7 +1411,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/crucibelle.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/crucibelle.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1137,7 +1449,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle-mega.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/crucibelle-mega.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/crucibelle-mega.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1165,7 +1485,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pluffle.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pluffle.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pluffle.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1194,7 +1522,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/kerfluffle.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/kerfluffle.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/kerfluffle.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1221,7 +1557,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pajantom.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pajantom.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pajantom.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1249,7 +1593,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/mumbao.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/mumbao.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/mumbao.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1276,7 +1628,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/jumbao.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/jumbao.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/jumbao.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1304,7 +1664,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/fawnifer.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/fawnifer.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/fawnifer.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1334,7 +1702,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/electrelk.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/electrelk.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/electrelk.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1363,7 +1739,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/caribolt.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/caribolt.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/caribolt.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1391,7 +1775,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smogecko.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/smogecko.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/smogecko.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1421,7 +1813,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smoguana.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/smoguana.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/smoguana.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1450,7 +1850,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/smokomodo.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/smokomodo.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/smokomodo.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1478,7 +1886,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/swirlpool.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/swirlpool.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/swirlpool.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1508,7 +1924,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/coribalis.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/coribalis.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/coribalis.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1537,7 +1961,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/snaelstrom.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/snaelstrom.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/snaelstrom.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1565,7 +1997,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/justyke.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/justyke.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/justyke.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1594,7 +2034,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/equilibra.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/equilibra.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/equilibra.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1622,7 +2070,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/solotl.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/solotl.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/solotl.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1651,7 +2107,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/astrolotl.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/astrolotl.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/astrolotl.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1679,7 +2143,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/miasmite.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/miasmite.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/miasmite.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1708,7 +2180,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/miasmaw.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/miasmaw.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/miasmaw.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ],
   [
@@ -1735,7 +2215,15 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/chromera.png',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/chromera.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/chromera.png',
-      isEggObtainable: false
+      isEggObtainable: false,
+      evYields: {
+        atk: 0,
+        def: 0,
+        hp: 0,
+        spa: 0,
+        spd: 0,
+        spe: 0
+      }
     }
   ]
 ];

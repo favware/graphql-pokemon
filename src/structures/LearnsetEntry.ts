@@ -8,7 +8,7 @@ export class LearnsetMove implements Pokemon.LearnsetMove {
 
   @Field(() => Int, {
     nullable: true,
-    description: 'The generation in which this pokemon learned the move this way',
+    description: 'The generation in which this pokémon learned the move this way',
     defaultValue: null
   })
   public generation!: number | null;

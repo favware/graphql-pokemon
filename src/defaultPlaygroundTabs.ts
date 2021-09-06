@@ -4,7 +4,7 @@ const isDev = process.platform === 'win32' || process.platform === 'darwin';
 
 const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   {
-    name: 'Get Pokemon Details simple',
+    name: 'Get Pokémon Details simple',
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     query: [
       '{',
@@ -31,7 +31,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
     ].join('\n')
   },
   {
-    name: 'Pokemon Details with variables',
+    name: 'Pokémon Details with variables',
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "mewtwo"', '}'].join('\n'),
     query: [
@@ -59,7 +59,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
     ].join('\n')
   },
   {
-    name: 'Pokemon Details with fragments and variables',
+    name: 'Pokémon Details with fragments and variables',
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "arceus",', '  "reverse": true,', '  "take": 1', '}'].join('\n'),
     query: [

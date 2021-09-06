@@ -6,5536 +6,5509 @@ export default new GraphQLCollection<string, Pokemon.Item>([
   [
     'abomasite',
     {
-      name: 'Abomasite',
-      gen: 6,
       desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Abomasite'
     }
   ],
   [
     'absolite',
     {
-      name: 'Absolite',
-      gen: 6,
       desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Absolite'
     }
   ],
   [
     'absorbbulb',
     {
-      name: 'Absorb Bulb',
+      desc: "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
       gen: 5,
-      desc: "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use."
+      name: 'Absorb Bulb'
     }
   ],
   [
     'adamantorb',
     {
-      name: 'Adamant Orb',
+      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.'
+      name: 'Adamant Orb'
     }
   ],
   [
     'adrenalineorb',
     {
-      name: 'Adrenaline Orb',
+      desc: "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
       gen: 7,
-      desc: "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use."
+      name: 'Adrenaline Orb'
     }
   ],
   [
     'aerodactylite',
     {
-      name: 'Aerodactylite',
-      gen: 6,
       desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Aerodactylite'
     }
   ],
   [
     'aggronite',
     {
-      name: 'Aggronite',
-      gen: 6,
       desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Aggronite'
     }
   ],
   [
     'aguavberry',
     {
-      name: 'Aguav Berry',
+      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.',
       gen: 3,
-      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.'
+      name: 'Aguav Berry'
     }
   ],
   [
     'airballoon',
     {
-      name: 'Air Balloon',
+      desc: 'Holder is immune to Ground-type attacks. Pops when holder is hit.',
       gen: 5,
-      desc: 'Holder is immune to Ground-type attacks. Pops when holder is hit.'
+      name: 'Air Balloon'
     }
   ],
   [
     'alakazite',
     {
-      name: 'Alakazite',
-      gen: 6,
       desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Alakazite'
     }
   ],
   [
     'aloraichiumz',
     {
-      name: 'Aloraichium Z',
-      gen: 7,
       desc: 'If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Aloraichium Z'
     }
   ],
   [
     'altarianite',
     {
-      name: 'Altarianite',
-      gen: 6,
       desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Altarianite'
     }
   ],
   [
     'ampharosite',
     {
-      name: 'Ampharosite',
-      gen: 6,
       desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Ampharosite'
     }
   ],
   [
     'apicotberry',
     {
-      name: 'Apicot Berry',
+      desc: "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 3,
-      desc: "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use."
+      name: 'Apicot Berry'
     }
   ],
   [
     'armorfossil',
     {
-      name: 'Armor Fossil',
+      desc: 'Can be revived into Shieldon.',
       gen: 4,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Shieldon.'
+      name: 'Armor Fossil'
     }
   ],
   [
     'aspearberry',
     {
-      name: 'Aspear Berry',
+      desc: 'Holder is cured if it is frozen. Single use.',
       gen: 3,
-      desc: 'Holder is cured if it is frozen. Single use.'
+      name: 'Aspear Berry'
     }
   ],
   [
     'assaultvest',
     {
-      name: 'Assault Vest',
+      desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
       gen: 6,
-      desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves."
+      name: 'Assault Vest'
     }
   ],
   [
     'audinite',
     {
-      name: 'Audinite',
-      gen: 6,
       desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Audinite'
     }
   ],
   [
     'babiriberry',
     {
-      name: 'Babiri Berry',
+      desc: 'Halves damage taken from a supereffective Steel-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Steel-type attack. Single use.'
+      name: 'Babiri Berry'
     }
   ],
   [
     'banettite',
     {
-      name: 'Banettite',
-      gen: 6,
       desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Banettite'
     }
   ],
   [
     'beastball',
     {
-      name: 'Beast Ball',
+      desc: 'A special Pok├® Ball designed to catch Ultra Beasts.',
       gen: 7,
-      desc: 'A special Poké Ball designed to catch Ultra Beasts.'
+      name: 'Beast Ball'
     }
   ],
   [
     'beedrillite',
     {
-      name: 'Beedrillite',
-      gen: 6,
       desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Beedrillite'
     }
   ],
   [
     'belueberry',
     {
-      name: 'Belue Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Belue Berry'
     }
   ],
   [
     'berry',
     {
-      name: 'Berry',
-      gen: 2,
       desc: '(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Berry'
     }
   ],
   [
     'berryjuice',
     {
-      name: 'Berry Juice',
+      desc: 'Restores 20 HP when at 1/2 max HP or less. Single use.',
       gen: 2,
-      desc: 'Restores 20 HP when at 1/2 max HP or less. Single use.'
+      name: 'Berry Juice'
     }
   ],
   [
     'berrysweet',
     {
-      name: 'Berry Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Berry Sweet'
     }
   ],
   [
     'berserkgene',
     {
-      name: 'Berserk Gene',
-      gen: 2,
       desc: "(Gen 2) On switch-in, raises holder's Attack by 2 and confuses it. Single use.",
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Berserk Gene'
     }
   ],
   [
     'bigroot',
     {
-      name: 'Big Root',
+      desc: 'Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.',
       gen: 4,
-      desc: 'Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.'
+      name: 'Big Root'
     }
   ],
   [
     'bindingband',
     {
-      name: 'Binding Band',
+      desc: "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
       gen: 5,
-      desc: "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8."
+      name: 'Binding Band'
     }
   ],
   [
     'bitterberry',
     {
-      name: 'Bitter Berry',
-      gen: 2,
       desc: '(Gen 2) Holder is cured if it is confused. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Bitter Berry'
     }
   ],
   [
     'blackbelt',
     {
-      name: 'Black Belt',
+      desc: "Holder's Fighting-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Fighting-type attacks have 1.2x power."
+      name: 'Black Belt'
     }
   ],
   [
     'blackglasses',
     {
-      name: 'Black Glasses',
+      desc: "Holder's Dark-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Dark-type attacks have 1.2x power."
+      name: 'Black Glasses'
     }
   ],
   [
     'blacksludge',
     {
-      name: 'Black Sludge',
+      desc: 'Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.',
       gen: 4,
-      desc: 'Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.'
+      name: 'Black Sludge'
     }
   ],
   [
     'blastoisinite',
     {
-      name: 'Blastoisinite',
-      gen: 6,
       desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Blastoisinite'
     }
   ],
   [
     'blazikenite',
     {
-      name: 'Blazikenite',
-      gen: 6,
       desc: 'If held by a Blaziken, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Blazikenite'
     }
   ],
   [
     'blueorb',
     {
+      desc: "A shiny blue orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
+      gen: 3,
+      keyItem: true,
       name: 'Blue Orb',
-      gen: 6,
-      desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
-      isNonstandard: 'Past'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png'
     }
   ],
   [
     'blukberry',
     {
-      name: 'Bluk Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Bluk Berry'
     }
   ],
   [
     'blunderpolicy',
     {
-      name: 'Blunder Policy',
+      desc: 'If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.',
       gen: 8,
-      desc: 'If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.'
+      name: 'Blunder Policy'
     }
   ],
   [
     'bottlecap',
     {
-      name: 'Bottle Cap',
+      desc: "Used for Hyper Training. One of a Pok├®mon's stats is calculated with an IV of 31.",
       gen: 7,
-      desc: "Used for Hyper Training. One of a Pokémon's stats is calculated with an IV of 31."
+      name: 'Bottle Cap'
     }
   ],
   [
     'brightpowder',
     {
-      name: 'BrightPowder',
+      desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 2,
-      desc: 'The accuracy of attacks against the holder is 0.9x.'
+      name: 'BrightPowder'
     }
   ],
   [
     'buggem',
     {
-      name: 'Bug Gem',
-      gen: 5,
       desc: "Holder's first successful Bug-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Bug Gem'
     }
   ],
   [
     'bugmemory',
     {
-      name: 'Bug Memory',
+      desc: "Holder's Multi-Attack is Bug type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Bug type."
+      name: 'Bug Memory'
     }
   ],
   [
     'buginiumz',
     {
-      name: 'Buginium Z',
-      gen: 7,
       desc: 'If holder has a Bug move, this item allows it to use a Bug Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Buginium Z'
     }
   ],
   [
     'burndrive',
     {
-      name: 'Burn Drive',
+      desc: "Holder's Techno Blast is Fire type.",
       gen: 5,
-      desc: "Holder's Techno Blast is Fire type."
+      name: 'Burn Drive'
     }
   ],
   [
     'burntberry',
     {
-      name: 'Burnt Berry',
-      gen: 2,
       desc: '(Gen 2) Holder is cured if it is frozen. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Burnt Berry'
     }
   ],
   [
     'cameruptite',
     {
-      name: 'Cameruptite',
-      gen: 6,
       desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Cameruptite'
     }
   ],
   [
     'cellbattery',
     {
-      name: 'Cell Battery',
+      desc: "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
       gen: 5,
-      desc: "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use."
+      name: 'Cell Battery'
     }
   ],
   [
     'charcoal',
     {
-      name: 'Charcoal',
+      desc: "Holder's Fire-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Fire-type attacks have 1.2x power."
+      name: 'Charcoal'
     }
   ],
   [
     'charizarditex',
     {
-      name: 'Charizardite X',
-      gen: 6,
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Charizardite X'
     }
   ],
   [
     'charizarditey',
     {
-      name: 'Charizardite Y',
-      gen: 6,
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Charizardite Y'
     }
   ],
   [
     'chartiberry',
     {
-      name: 'Charti Berry',
+      desc: 'Halves damage taken from a supereffective Rock-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Rock-type attack. Single use.'
+      name: 'Charti Berry'
     }
   ],
   [
     'cheriberry',
     {
-      name: 'Cheri Berry',
+      desc: 'Holder cures itself if it is paralyzed. Single use.',
       gen: 3,
-      desc: 'Holder cures itself if it is paralyzed. Single use.'
+      name: 'Cheri Berry'
     }
   ],
   [
     'cherishball',
     {
-      name: 'Cherish Ball',
+      desc: 'A rare Pok├® Ball that has been crafted to commemorate an occasion.',
       gen: 4,
-      desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.'
+      name: 'Cherish Ball'
     }
   ],
   [
     'chestoberry',
     {
-      name: 'Chesto Berry',
+      desc: 'Holder wakes up if it is asleep. Single use.',
       gen: 3,
-      desc: 'Holder wakes up if it is asleep. Single use.'
+      name: 'Chesto Berry'
     }
   ],
   [
     'chilanberry',
     {
-      name: 'Chilan Berry',
+      desc: 'Halves damage taken from a Normal-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a Normal-type attack. Single use.'
+      name: 'Chilan Berry'
     }
   ],
   [
     'chilldrive',
     {
-      name: 'Chill Drive',
+      desc: "Holder's Techno Blast is Ice type.",
       gen: 5,
-      desc: "Holder's Techno Blast is Ice type."
+      name: 'Chill Drive'
     }
   ],
   [
     'chippedpot',
     {
-      name: 'Chipped Pot',
+      desc: 'Evolves Sinistea-Antique into Polteageist-Antique when used.',
       gen: 8,
-      desc: 'Evolves Sinistea-Antique into Polteageist-Antique when used.'
+      name: 'Chipped Pot'
     }
   ],
   [
     'choiceband',
     {
-      name: 'Choice Band',
+      desc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
       gen: 3,
-      desc: "Holder's Attack is 1.5x, but it can only select the first move it executes."
+      name: 'Choice Band'
     }
   ],
   [
     'choicescarf',
     {
-      name: 'Choice Scarf',
+      desc: "Holder's Speed is 1.5x, but it can only select the first move it executes.",
       gen: 4,
-      desc: "Holder's Speed is 1.5x, but it can only select the first move it executes."
+      name: 'Choice Scarf'
     }
   ],
   [
     'choicespecs',
     {
-      name: 'Choice Specs',
+      desc: "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
       gen: 4,
-      desc: "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes."
+      name: 'Choice Specs'
     }
   ],
   [
     'chopleberry',
     {
-      name: 'Chople Berry',
+      desc: 'Halves damage taken from a supereffective Fighting-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Fighting-type attack. Single use.'
+      name: 'Chople Berry'
     }
   ],
   [
     'clawfossil',
     {
-      name: 'Claw Fossil',
+      desc: 'Can be revived into Anorith.',
       gen: 3,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Anorith.'
+      name: 'Claw Fossil'
     }
   ],
   [
     'cloversweet',
     {
-      name: 'Clover Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Clover Sweet'
     }
   ],
   [
     'cobaberry',
     {
-      name: 'Coba Berry',
+      desc: 'Halves damage taken from a supereffective Flying-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Flying-type attack. Single use.'
+      name: 'Coba Berry'
     }
   ],
   [
     'colburberry',
     {
-      name: 'Colbur Berry',
+      desc: 'Halves damage taken from a supereffective Dark-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Dark-type attack. Single use.'
+      name: 'Colbur Berry'
     }
   ],
   [
     'cornnberry',
     {
-      name: 'Cornn Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Cornn Berry'
     }
   ],
   [
     'coverfossil',
     {
-      name: 'Cover Fossil',
+      desc: 'Can be revived into Tirtouga.',
       gen: 5,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Tirtouga.'
+      name: 'Cover Fossil'
     }
   ],
   [
     'crucibellite',
     {
-      name: 'Crucibellite',
-      gen: 6,
       desc: 'If held by a Crucibelle, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Crucibellite'
     }
   ],
   [
     'crackedpot',
     {
-      name: 'Cracked Pot',
+      desc: 'Evolves Sinistea-Chipped into Polteageist-Chipped when used.',
       gen: 8,
-      desc: 'Evolves Sinistea-Chipped into Polteageist-Chipped when used.'
+      name: 'Cracked Pot'
     }
   ],
   [
     'custapberry',
     {
-      name: 'Custap Berry',
+      desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
       gen: 4,
-      desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.'
+      name: 'Custap Berry'
     }
   ],
   [
     'damprock',
     {
-      name: 'Damp Rock',
+      desc: "Holder's use of Rain Dance lasts 8 turns instead of 5.",
       gen: 4,
-      desc: "Holder's use of Rain Dance lasts 8 turns instead of 5."
+      name: 'Damp Rock'
     }
   ],
   [
     'darkgem',
     {
-      name: 'Dark Gem',
-      gen: 5,
       desc: "Holder's first successful Dark-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Dark Gem'
     }
   ],
   [
     'darkmemory',
     {
-      name: 'Dark Memory',
+      desc: "Holder's Multi-Attack is Dark type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Dark type."
+      name: 'Dark Memory'
     }
   ],
   [
     'darkiniumz',
     {
-      name: 'Darkinium Z',
-      gen: 7,
       desc: 'If holder has a Dark move, this item allows it to use a Dark Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Darkinium Z'
     }
   ],
   [
     'dawnstone',
     {
-      name: 'Dawn Stone',
-      gen: 4,
       desc: 'Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 4,
+      name: 'Dawn Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'decidiumz',
     {
-      name: 'Decidium Z',
-      gen: 7,
       desc: 'If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Decidium Z'
     }
   ],
   [
     'deepseascale',
     {
-      name: 'Deep Sea Scale',
-      gen: 3,
       desc: 'If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.',
+      gen: 3,
+      name: 'Deep Sea Scale',
       shortDesc: 'If held by a Clamperl, its Sp. Def is doubled.'
     }
   ],
   [
     'deepseatooth',
     {
-      name: 'Deep Sea Tooth',
-      gen: 3,
       desc: 'If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.',
+      gen: 3,
+      name: 'Deep Sea Tooth',
       shortDesc: 'If held by a Clamperl, its Sp. Atk is doubled.'
     }
   ],
   [
     'destinyknot',
     {
-      name: 'Destiny Knot',
+      desc: 'If holder becomes infatuated, the other Pok├®mon also becomes infatuated.',
       gen: 4,
-      desc: 'If holder becomes infatuated, the other Pokémon also becomes infatuated.'
+      name: 'Destiny Knot'
     }
   ],
   [
     'diancite',
     {
-      name: 'Diancite',
-      gen: 6,
       desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Diancite'
     }
   ],
   [
     'diveball',
     {
-      name: 'Dive Ball',
+      desc: 'A Pok├® Ball that works especially well on Pok├®mon that live underwater.',
       gen: 3,
-      desc: 'A Poké Ball that works especially well on Pokémon that live underwater.'
+      name: 'Dive Ball'
     }
   ],
   [
     'domefossil',
     {
-      name: 'Dome Fossil',
+      desc: 'Can be revived into Kabuto.',
       gen: 3,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Kabuto.'
+      name: 'Dome Fossil'
     }
   ],
   [
     'dousedrive',
     {
-      name: 'Douse Drive',
+      desc: "Holder's Techno Blast is Water type.",
       gen: 5,
-      desc: "Holder's Techno Blast is Water type."
+      name: 'Douse Drive'
     }
   ],
   [
     'dracoplate',
     {
-      name: 'Draco Plate',
-      gen: 4,
       desc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Draco Plate'
     }
   ],
   [
     'dragonfang',
     {
-      name: 'Dragon Fang',
+      desc: "Holder's Dragon-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Dragon-type attacks have 1.2x power."
+      name: 'Dragon Fang'
     }
   ],
   [
     'dragongem',
     {
-      name: 'Dragon Gem',
-      gen: 5,
       desc: "Holder's first successful Dragon-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Dragon Gem'
     }
   ],
   [
     'dragonmemory',
     {
-      name: 'Dragon Memory',
+      desc: "Holder's Multi-Attack is Dragon type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Dragon type."
+      name: 'Dragon Memory'
     }
   ],
   [
     'dragonscale',
     {
-      name: 'Dragon Scale',
+      desc: 'Evolves Seadra into Kingdra when traded.',
       gen: 2,
-      desc: 'Evolves Seadra into Kingdra when traded.'
+      name: 'Dragon Scale'
     }
   ],
   [
     'dragoniumz',
     {
-      name: 'Dragonium Z',
-      gen: 7,
       desc: 'If holder has a Dragon move, this item allows it to use a Dragon Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Dragonium Z'
     }
   ],
   [
     'dreadplate',
     {
-      name: 'Dread Plate',
-      gen: 4,
       desc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Dread Plate'
     }
   ],
   [
     'dreamball',
     {
-      name: 'Dream Ball',
+      desc: "A Pok├® Ball that makes it easier to catch wild Pok├®mon while they're asleep.",
       gen: 5,
-      desc: "A Poké Ball that makes it easier to catch wild Pokémon while they're asleep."
+      name: 'Dream Ball'
     }
   ],
   [
     'dubiousdisc',
     {
-      name: 'Dubious Disc',
+      desc: 'Evolves Porygon2 into Porygon-Z when traded.',
       gen: 4,
-      desc: 'Evolves Porygon2 into Porygon-Z when traded.'
+      name: 'Dubious Disc'
     }
   ],
   [
     'durinberry',
     {
-      name: 'Durin Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Durin Berry'
     }
   ],
   [
     'duskball',
     {
-      name: 'Dusk Ball',
+      desc: 'A Pok├® Ball that makes it easier to catch wild Pok├®mon at night or in caves.',
       gen: 4,
-      desc: 'A Poké Ball that makes it easier to catch wild Pokémon at night or in caves.'
+      name: 'Dusk Ball'
     }
   ],
   [
     'duskstone',
     {
-      name: 'Dusk Stone',
-      gen: 4,
       desc: 'Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 4,
+      name: 'Dusk Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'earthplate',
     {
-      name: 'Earth Plate',
-      gen: 4,
       desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Earth Plate'
     }
   ],
   [
     'eeviumz',
     {
-      name: 'Eevium Z',
-      gen: 7,
       desc: 'If held by an Eevee with Last Resort, it can use Extreme Evoboost.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Eevium Z'
     }
   ],
   [
     'ejectbutton',
     {
-      name: 'Eject Button',
+      desc: 'If holder survives a hit, it immediately switches out to a chosen ally. Single use.',
       gen: 5,
-      desc: 'If holder survives a hit, it immediately switches out to a chosen ally. Single use.'
+      name: 'Eject Button'
     }
   ],
   [
     'ejectpack',
     {
-      name: 'Eject Pack',
+      desc: "If the holder's stat stages are lowered, it switches to a chosen ally. Single use.",
       gen: 8,
-      desc: "If the holder's stat stages are lowered, it switches to a chosen ally. Single use."
+      name: 'Eject Pack'
     }
   ],
   [
     'electirizer',
     {
-      name: 'Electirizer',
+      desc: 'Evolves Electabuzz into Electivire when traded.',
       gen: 4,
-      desc: 'Evolves Electabuzz into Electivire when traded.'
+      name: 'Electirizer'
     }
   ],
   [
     'electricgem',
     {
-      name: 'Electric Gem',
-      gen: 5,
       desc: "Holder's first successful Electric-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Electric Gem'
     }
   ],
   [
     'electricmemory',
     {
-      name: 'Electric Memory',
+      desc: "Holder's Multi-Attack is Electric type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Electric type."
+      name: 'Electric Memory'
     }
   ],
   [
     'electricseed',
     {
-      name: 'Electric Seed',
+      desc: "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
       gen: 7,
-      desc: "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use."
+      name: 'Electric Seed'
     }
   ],
   [
     'electriumz',
     {
-      name: 'Electrium Z',
-      gen: 7,
       desc: 'If holder has an Electric move, this item allows it to use an Electric Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Electrium Z'
     }
   ],
   [
     'energypowder',
     {
-      name: 'Energy Powder',
+      desc: 'Restores 60 HP to one Pok├®mon.',
       gen: 2,
-      desc: 'Restores 60 HP to one Pokémon.'
+      name: 'Energy Powder'
     }
   ],
   [
     'enigmaberry',
     {
-      name: 'Enigma Berry',
+      desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.',
       gen: 3,
-      desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.'
+      name: 'Enigma Berry'
     }
   ],
   [
     'eviolite',
     {
-      name: 'Eviolite',
+      desc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
       gen: 5,
-      desc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x."
+      name: 'Eviolite'
     }
   ],
   [
     'expertbelt',
     {
-      name: 'Expert Belt',
+      desc: "Holder's attacks that are super effective against the target do 1.2x damage.",
       gen: 4,
-      desc: "Holder's attacks that are super effective against the target do 1.2x damage."
+      name: 'Expert Belt'
     }
   ],
   [
     'fairiumz',
     {
-      name: 'Fairium Z',
-      gen: 7,
       desc: 'If holder has a Fairy move, this item allows it to use a Fairy Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Fairium Z'
     }
   ],
   [
     'fairygem',
     {
-      name: 'Fairy Gem',
-      gen: 6,
       desc: "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Fairy Gem'
     }
   ],
   [
     'fairymemory',
     {
-      name: 'Fairy Memory',
+      desc: "Holder's Multi-Attack is Fairy type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Fairy type."
+      name: 'Fairy Memory'
     }
   ],
   [
     'fastball',
     {
-      name: 'Fast Ball',
+      desc: 'A Pok├® Ball that makes it easier to catch Pok├®mon which are quick to run away.',
       gen: 2,
-      desc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.'
+      name: 'Fast Ball'
     }
   ],
   [
     'fightinggem',
     {
-      name: 'Fighting Gem',
-      gen: 5,
       desc: "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Fighting Gem'
     }
   ],
   [
     'fightingmemory',
     {
-      name: 'Fighting Memory',
+      desc: "Holder's Multi-Attack is Fighting type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Fighting type."
+      name: 'Fighting Memory'
     }
   ],
   [
     'fightiniumz',
     {
-      name: 'Fightinium Z',
-      gen: 7,
       desc: 'If holder has a Fighting move, this item allows it to use a Fighting Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Fightinium Z'
     }
   ],
   [
     'figyberry',
     {
-      name: 'Figy Berry',
+      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.',
       gen: 3,
-      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.'
+      name: 'Figy Berry'
     }
   ],
   [
     'firegem',
     {
-      name: 'Fire Gem',
-      gen: 5,
       desc: "Holder's first successful Fire-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Fire Gem'
     }
   ],
   [
     'firememory',
     {
-      name: 'Fire Memory',
+      desc: "Holder's Multi-Attack is Fire type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Fire type."
+      name: 'Fire Memory'
     }
   ],
   [
     'firestone',
     {
-      name: 'Fire Stone',
-      gen: 1,
       desc: 'Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 1,
+      name: 'Fire Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'firiumz',
     {
-      name: 'Firium Z',
-      gen: 7,
       desc: 'If holder has a Fire move, this item allows it to use a Fire Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Firium Z'
     }
   ],
   [
     'fistplate',
     {
-      name: 'Fist Plate',
-      gen: 4,
       desc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Fist Plate'
     }
   ],
   [
     'flameorb',
     {
-      name: 'Flame Orb',
+      desc: 'At the end of every turn, this item attempts to burn the holder.',
       gen: 4,
-      desc: 'At the end of every turn, this item attempts to burn the holder.'
+      name: 'Flame Orb'
     }
   ],
   [
     'flameplate',
     {
-      name: 'Flame Plate',
-      gen: 4,
       desc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Flame Plate'
     }
   ],
-  [
-    'floatstone',
-    {
-      name: 'Float Stone',
-      gen: 5,
-      desc: "Holder's weight is halved."
-    }
-  ],
+  ['floatstone', { desc: "Holder's weight is halved.", gen: 5, name: 'Float Stone' }],
   [
     'flowersweet',
     {
-      name: 'Flower Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Flower Sweet'
     }
   ],
   [
     'flyinggem',
     {
-      name: 'Flying Gem',
-      gen: 5,
       desc: "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Flying Gem'
     }
   ],
   [
     'flyingmemory',
     {
-      name: 'Flying Memory',
+      desc: "Holder's Multi-Attack is Flying type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Flying type."
+      name: 'Flying Memory'
     }
   ],
   [
     'flyiniumz',
     {
-      name: 'Flyinium Z',
-      gen: 7,
       desc: 'If holder has a Flying move, this item allows it to use a Flying Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Flyinium Z'
     }
   ],
   [
     'focusband',
     {
-      name: 'Focus Band',
+      desc: 'Holder has a 10% chance to survive an attack that would KO it with 1 HP.',
       gen: 2,
-      desc: 'Holder has a 10% chance to survive an attack that would KO it with 1 HP.'
+      name: 'Focus Band'
     }
   ],
   [
     'focussash',
     {
-      name: 'Focus Sash',
+      desc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
       gen: 4,
-      desc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use."
+      name: 'Focus Sash'
     }
   ],
   [
     'fossilizedbird',
     {
-      name: 'Fossilized Bird',
+      desc: 'Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Dino.',
       gen: 8,
-      desc: 'Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Dino.'
+      name: 'Fossilized Bird'
     }
   ],
   [
     'fossilizeddino',
     {
-      name: 'Fossilized Dino',
+      desc: 'Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Bird.',
       gen: 8,
-      desc: 'Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Bird.'
+      name: 'Fossilized Dino'
     }
   ],
   [
     'fossilizeddrake',
     {
-      name: 'Fossilized Drake',
+      desc: 'Can revive into Dracozolt with Fossilized Dino or Dracovish with Fossilized Fish.',
       gen: 8,
-      desc: 'Can revive into Dracozolt with Fossilized Dino or Dracovish with Fossilized Fish.'
+      name: 'Fossilized Drake'
     }
   ],
   [
     'fossilizedfish',
     {
-      name: 'Fossilized Fish',
+      desc: 'Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Bird.',
       gen: 8,
-      desc: 'Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Bird.'
+      name: 'Fossilized Fish'
     }
   ],
   [
     'friendball',
     {
-      name: 'Friend Ball',
+      desc: 'A Pok├® Ball that makes caught Pok├®mon more friendly.',
       gen: 2,
-      desc: 'A Poké Ball that makes caught Pokémon more friendly.'
+      name: 'Friend Ball'
     }
   ],
   [
     'fullincense',
     {
-      name: 'Full Incense',
+      desc: 'Holder moves last in its priority bracket.',
       gen: 4,
-      desc: 'Holder moves last in its priority bracket.'
+      name: 'Full Incense'
     }
   ],
   [
     'fullrestore',
     {
-      name: 'Full Restore',
+      desc: 'A medicine that can be used to fully restore the HP of a single Pok├®mon and heal any status conditions it has. ',
       gen: 1,
-      desc: 'A medicine that can be used to fully restore the HP of a single Pokémon and heal any status conditions it has. '
+      name: 'Full Restore'
     }
   ],
   [
     'galaricacuff',
     {
-      name: 'Galarica Cuff',
-      gen: 8,
       desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.',
+      gen: 8,
+      name: 'Galarica Cuff',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png'
     }
   ],
   [
     'galaricawreath',
     {
-      name: 'Galarica Wreath',
-      gen: 8,
       desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.',
+      gen: 8,
+      name: 'Galarica Wreath',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png'
     }
   ],
   [
     'galladite',
     {
-      name: 'Galladite',
-      gen: 6,
       desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Galladite'
     }
   ],
   [
     'ganlonberry',
     {
-      name: 'Ganlon Berry',
+      desc: "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 3,
-      desc: "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use."
+      name: 'Ganlon Berry'
     }
   ],
   [
     'garchompite',
     {
-      name: 'Garchompite',
-      gen: 6,
       desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Garchompite'
     }
   ],
   [
     'gardevoirite',
     {
-      name: 'Gardevoirite',
-      gen: 6,
       desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Gardevoirite'
     }
   ],
   [
     'gengarite',
     {
-      name: 'Gengarite',
-      gen: 6,
       desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Gengarite'
     }
   ],
   [
     'ghostgem',
     {
-      name: 'Ghost Gem',
-      gen: 5,
       desc: "Holder's first successful Ghost-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Ghost Gem'
     }
   ],
   [
     'ghostmemory',
     {
-      name: 'Ghost Memory',
+      desc: "Holder's Multi-Attack is Ghost type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Ghost type."
+      name: 'Ghost Memory'
     }
   ],
   [
     'ghostiumz',
     {
-      name: 'Ghostium Z',
-      gen: 7,
       desc: 'If holder has a Ghost move, this item allows it to use a Ghost Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Ghostium Z'
     }
   ],
   [
     'glalitite',
     {
-      name: 'Glalitite',
-      gen: 6,
       desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Glalitite'
     }
   ],
   [
     'goldberry',
     {
-      name: 'Gold Berry',
-      gen: 2,
       desc: '(Gen 2) Restores 30 HP when at 1/2 max HP or less. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Gold Berry'
     }
   ],
   [
     'goldbottlecap',
     {
-      name: 'Gold Bottle Cap',
+      desc: "Used for Hyper Training. All of a Pok├®mon's stats are calculated with an IV of 31.",
       gen: 7,
-      desc: "Used for Hyper Training. All of a Pokémon's stats are calculated with an IV of 31."
+      name: 'Gold Bottle Cap'
     }
   ],
   [
     'grassgem',
     {
-      name: 'Grass Gem',
-      gen: 5,
       desc: "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Grass Gem'
     }
   ],
   [
     'grassmemory',
     {
-      name: 'Grass Memory',
+      desc: "Holder's Multi-Attack is Grass type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Grass type."
+      name: 'Grass Memory'
     }
   ],
   [
     'grassiumz',
     {
-      name: 'Grassium Z',
-      gen: 7,
       desc: 'If holder has a Grass move, this item allows it to use a Grass Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Grassium Z'
     }
   ],
   [
     'grassyseed',
     {
-      name: 'Grassy Seed',
+      desc: "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
       gen: 7,
-      desc: "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use."
+      name: 'Grassy Seed'
     }
   ],
   [
     'greatball',
     {
-      name: 'Great Ball',
+      desc: 'A high-performance Ball that provides a higher catch rate than a Pok├® Ball.',
       gen: 1,
-      desc: 'A high-performance Ball that provides a higher catch rate than a Poké Ball.'
+      name: 'Great Ball'
     }
   ],
   [
     'grepaberry',
     {
-      name: 'Grepa Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Grepa Berry'
     }
   ],
   [
     'gripclaw',
     {
-      name: 'Grip Claw',
+      desc: "Holder's partial-trapping moves always last 7 turns.",
       gen: 4,
-      desc: "Holder's partial-trapping moves always last 7 turns."
+      name: 'Grip Claw'
     }
   ],
   [
     'griseousorb',
     {
-      name: 'Griseous Orb',
+      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.'
+      name: 'Griseous Orb'
     }
   ],
   [
     'groundgem',
     {
-      name: 'Ground Gem',
-      gen: 5,
       desc: "Holder's first successful Ground-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Ground Gem'
     }
   ],
   [
     'groundmemory',
     {
-      name: 'Ground Memory',
+      desc: "Holder's Multi-Attack is Ground type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Ground type."
+      name: 'Ground Memory'
     }
   ],
   [
     'groundiumz',
     {
-      name: 'Groundium Z',
-      gen: 7,
       desc: 'If holder has a Ground move, this item allows it to use a Ground Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Groundium Z'
     }
   ],
   [
     'gyaradosite',
     {
-      name: 'Gyaradosite',
-      gen: 6,
       desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Gyaradosite'
     }
   ],
   [
     'habanberry',
     {
-      name: 'Haban Berry',
+      desc: 'Halves damage taken from a supereffective Dragon-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Dragon-type attack. Single use.'
+      name: 'Haban Berry'
     }
   ],
   [
     'hardstone',
     {
-      name: 'Hard Stone',
+      desc: "Holder's Rock-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Rock-type attacks have 1.2x power."
+      name: 'Hard Stone'
     }
   ],
   [
     'healball',
     {
-      name: 'Heal Ball',
+      desc: "A remedial Pok├® Ball that restores the caught Pok├®mon's HP and status problem.",
       gen: 4,
-      desc: "A remedial Poké Ball that restores the caught Pokémon's HP and status problem."
+      name: 'Heal Ball'
     }
   ],
   [
     'heatrock',
     {
-      name: 'Heat Rock',
+      desc: "Holder's use of Sunny Day lasts 8 turns instead of 5.",
       gen: 4,
-      desc: "Holder's use of Sunny Day lasts 8 turns instead of 5."
+      name: 'Heat Rock'
     }
   ],
   [
     'heavyball',
     {
-      name: 'Heavy Ball',
+      desc: 'A Pok├® Ball for catching very heavy Pok├®mon.',
       gen: 2,
-      desc: 'A Poké Ball for catching very heavy Pokémon.'
+      name: 'Heavy Ball'
     }
   ],
   [
     'heavydutyboots',
     {
-      name: 'Heavy-Duty Boots',
+      desc: 'When switching in, the holder is unaffected by hazards on its side of the field.',
       gen: 8,
-      desc: 'When switching in, the holder is unaffected by hazards on its side of the field.'
+      name: 'Heavy-Duty Boots'
     }
   ],
   [
     'helixfossil',
     {
-      name: 'Helix Fossil',
+      desc: 'Can be revived into Omanyte.',
       gen: 3,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Omanyte.'
+      name: 'Helix Fossil'
     }
   ],
   [
     'heracronite',
     {
-      name: 'Heracronite',
-      gen: 6,
       desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Heracronite'
     }
   ],
   [
     'hondewberry',
     {
-      name: 'Hondew Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Hondew Berry'
     }
   ],
   [
     'houndoominite',
     {
-      name: 'Houndoominite',
-      gen: 6,
       desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Houndoominite'
     }
   ],
   [
     'hyperpotion',
     {
-      name: 'Hyper Potion',
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pok├®mon.',
       gen: 1,
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 120 HP to a single Pokémon.'
+      name: 'Hyper Potion'
     }
   ],
   [
     'iapapaberry',
     {
-      name: 'Iapapa Berry',
+      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.',
       gen: 3,
-      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.'
+      name: 'Iapapa Berry'
     }
   ],
   [
     'iceberry',
     {
-      name: 'Ice Berry',
-      gen: 2,
       desc: '(Gen 2) Holder is cured if it is burned. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Ice Berry'
     }
   ],
   [
     'icegem',
     {
-      name: 'Ice Gem',
-      gen: 5,
       desc: "Holder's first successful Ice-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Ice Gem'
     }
   ],
   [
     'icememory',
     {
-      name: 'Ice Memory',
+      desc: "Holder's Multi-Attack is Ice type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Ice type."
+      name: 'Ice Memory'
     }
   ],
   [
     'icestone',
     {
-      name: 'Ice Stone',
-      gen: 7,
       desc: 'Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, and Eevee into Glaceon when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 7,
+      name: 'Ice Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'icicleplate',
     {
-      name: 'Icicle Plate',
-      gen: 4,
       desc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Icicle Plate'
     }
   ],
   [
     'iciumz',
     {
-      name: 'Icium Z',
-      gen: 7,
       desc: 'If holder has an Ice move, this item allows it to use an Ice Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Icium Z'
     }
   ],
   [
     'icyrock',
     {
-      name: 'Icy Rock',
+      desc: "Holder's use of Hail lasts 8 turns instead of 5.",
       gen: 4,
-      desc: "Holder's use of Hail lasts 8 turns instead of 5."
+      name: 'Icy Rock'
     }
   ],
   [
     'inciniumz',
     {
-      name: 'Incinium Z',
-      gen: 7,
       desc: 'If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Incinium Z'
     }
   ],
   [
     'insectplate',
     {
-      name: 'Insect Plate',
-      gen: 4,
       desc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Insect Plate'
     }
   ],
   [
     'ironball',
     {
-      name: 'Iron Ball',
+      desc: 'Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.',
       gen: 4,
-      desc: 'Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.'
+      name: 'Iron Ball'
     }
   ],
   [
     'ironplate',
     {
-      name: 'Iron Plate',
-      gen: 4,
       desc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Iron Plate'
     }
   ],
   [
     'jabocaberry',
     {
-      name: 'Jaboca Berry',
+      desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
       gen: 4,
-      desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.'
+      name: 'Jaboca Berry'
     }
   ],
   [
     'jawfossil',
     {
-      name: 'Jaw Fossil',
+      desc: 'Can be revived into Tyrunt.',
       gen: 6,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Tyrunt.'
+      name: 'Jaw Fossil'
     }
   ],
   [
     'kangaskhanite',
     {
-      name: 'Kangaskhanite',
-      gen: 6,
       desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Kangaskhanite'
     }
   ],
   [
     'kasibberry',
     {
-      name: 'Kasib Berry',
+      desc: 'Halves damage taken from a supereffective Ghost-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Ghost-type attack. Single use.'
+      name: 'Kasib Berry'
     }
   ],
   [
     'kebiaberry',
     {
-      name: 'Kebia Berry',
+      desc: 'Halves damage taken from a supereffective Poison-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Poison-type attack. Single use.'
+      name: 'Kebia Berry'
     }
   ],
   [
     'keeberry',
     {
-      name: 'Kee Berry',
+      desc: "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
       gen: 6,
-      desc: "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use."
+      name: 'Kee Berry'
     }
   ],
   [
     'kelpsyberry',
     {
-      name: 'Kelpsy Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Kelpsy Berry'
     }
   ],
   [
     'kingsrock',
     {
-      name: "King's Rock",
-      gen: 2,
       desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
-
+      gen: 2,
+      name: "King's Rock",
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
     }
   ],
   [
     'kommoniumz',
     {
-      name: 'Kommonium Z',
-      gen: 7,
       desc: 'If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Kommonium Z'
     }
   ],
   [
     'laggingtail',
     {
-      name: 'Lagging Tail',
+      desc: 'Holder moves last in its priority bracket.',
       gen: 4,
-      desc: 'Holder moves last in its priority bracket.'
+      name: 'Lagging Tail'
     }
   ],
   [
     'lansatberry',
     {
-      name: 'Lansat Berry',
+      desc: 'Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.',
       gen: 3,
-      desc: 'Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.'
+      name: 'Lansat Berry'
     }
   ],
   [
     'latiasite',
     {
-      name: 'Latiasite',
-      gen: 6,
       desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Latiasite'
     }
   ],
   [
     'latiosite',
     {
-      name: 'Latiosite',
-      gen: 6,
       desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Latiosite'
     }
   ],
   [
     'laxincense',
     {
-      name: 'Lax Incense',
+      desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 3,
-      desc: 'The accuracy of attacks against the holder is 0.9x.'
+      name: 'Lax Incense'
     }
   ],
   [
     'leafstone',
     {
-      name: 'Leaf Stone',
-      gen: 1,
       desc: 'Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 1,
+      name: 'Leaf Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'leek',
     {
-      name: 'Leek',
+      desc: 'If held by a FarfetchÔÇÖd or SirfetchÔÇÖd, its critical hit ratio is raised by 2 stages.',
       gen: 8,
-      desc: 'If held by a Farfetch\u2019d or Sirfetch\u2019d, its critical hit ratio is raised by 2 stages.'
+      name: 'Leek'
     }
   ],
   [
     'leftovers',
     {
-      name: 'Leftovers',
+      desc: 'At the end of every turn, holder restores 1/16 of its max HP.',
       gen: 2,
-      desc: 'At the end of every turn, holder restores 1/16 of its max HP.'
+      name: 'Leftovers'
     }
   ],
   [
     'leppaberry',
     {
-      name: 'Leppa Berry',
+      desc: "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
       gen: 3,
-      desc: "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use."
+      name: 'Leppa Berry'
     }
   ],
   [
     'levelball',
     {
-      name: 'Level Ball',
+      desc: 'A Pok├® Ball for catching Pok├®mon that are a lower level than your own.',
       gen: 2,
-      desc: 'A Poké Ball for catching Pokémon that are a lower level than your own.'
+      name: 'Level Ball'
     }
   ],
   [
     'liechiberry',
     {
-      name: 'Liechi Berry',
+      desc: "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 3,
-      desc: "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use."
+      name: 'Liechi Berry'
     }
   ],
   [
     'lifeorb',
     {
-      name: 'Life Orb',
+      desc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
       gen: 4,
-      desc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack."
+      name: 'Life Orb'
     }
   ],
   [
     'lightball',
     {
-      name: 'Light Ball',
+      desc: 'If held by a Pikachu, its Attack and Sp. Atk are doubled.',
       gen: 2,
-      desc: 'If held by a Pikachu, its Attack and Sp. Atk are doubled.'
+      name: 'Light Ball'
     }
   ],
   [
     'lightclay',
     {
-      name: 'Light Clay',
+      desc: "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
       gen: 4,
-      desc: "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5."
+      name: 'Light Clay'
     }
   ],
   [
     'lopunnite',
     {
-      name: 'Lopunnite',
-      gen: 6,
       desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Lopunnite'
     }
   ],
   [
     'loveball',
     {
-      name: 'Love Ball',
+      desc: 'Pok├® Ball for catching Pok├®mon that are the opposite gender of your Pok├®mon.',
       gen: 2,
-      desc: 'Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.'
+      name: 'Love Ball'
     }
   ],
   [
     'lovesweet',
     {
-      name: 'Love Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Love Sweet'
     }
   ],
   [
     'lucarionite',
     {
-      name: 'Lucarionite',
-      gen: 6,
       desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Lucarionite'
     }
   ],
   [
     'luckypunch',
     {
-      name: 'Lucky Punch',
-      gen: 2,
       desc: 'If held by a Chansey, its critical hit ratio is raised by 2 stages.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Lucky Punch'
     }
   ],
   [
     'lumberry',
     {
-      name: 'Lum Berry',
+      desc: 'Holder cures itself if it has a non-volatile status or is confused. Single use.',
       gen: 3,
-      desc: 'Holder cures itself if it has a non-volatile status or is confused. Single use.'
+      name: 'Lum Berry'
     }
   ],
   [
     'luminousmoss',
     {
-      name: 'Luminous Moss',
+      desc: "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.",
       gen: 6,
-      desc: "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use."
+      name: 'Luminous Moss'
     }
   ],
   [
     'lunaliumz',
     {
-      name: 'Lunalium Z',
-      gen: 7,
       desc: 'Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Lunalium Z'
     }
   ],
   [
     'lureball',
     {
-      name: 'Lure Ball',
+      desc: 'A Pok├® Ball for catching Pok├®mon hooked by a Rod when fishing.',
       gen: 2,
-      desc: 'A Poké Ball for catching Pokémon hooked by a Rod when fishing.'
+      name: 'Lure Ball'
     }
   ],
   [
     'lustrousorb',
     {
-      name: 'Lustrous Orb',
+      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.'
+      name: 'Lustrous Orb'
     }
   ],
   [
     'luxuryball',
     {
-      name: 'Luxury Ball',
+      desc: 'A comfortable Pok├® Ball that makes a caught wild Pok├®mon quickly grow friendly.',
       gen: 3,
-      desc: 'A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.'
+      name: 'Luxury Ball'
     }
   ],
   [
     'lycaniumz',
     {
-      name: 'Lycanium Z',
-      gen: 7,
       desc: 'If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Lycanium Z'
     }
   ],
   [
     'machobrace',
     {
-      name: 'Macho Brace',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 3,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Macho Brace'
     }
   ],
   [
     'magmarizer',
     {
-      name: 'Magmarizer',
+      desc: 'Evolves Magmar into Magmortar when traded.',
       gen: 4,
-      desc: 'Evolves Magmar into Magmortar when traded.'
+      name: 'Magmarizer'
     }
   ],
   [
     'magnet',
     {
-      name: 'Magnet',
+      desc: "Holder's Electric-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Electric-type attacks have 1.2x power."
+      name: 'Magnet'
     }
   ],
   [
     'magoberry',
     {
-      name: 'Mago Berry',
+      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.',
       gen: 3,
-      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.'
+      name: 'Mago Berry'
     }
   ],
   [
     'magostberry',
     {
-      name: 'Magost Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Magost Berry'
     }
   ],
   [
     'mail',
     {
-      name: 'Mail',
+      desc: 'Cannot be given to or taken from a Pok├®mon, except by Covet/Knock Off/Thief.',
       gen: 2,
-      desc: 'Cannot be given to or taken from a Pokémon, except by Covet/Knock Off/Thief.'
+      name: 'Mail'
     }
   ],
   [
     'manectite',
     {
-      name: 'Manectite',
-      gen: 6,
       desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Manectite'
     }
   ],
   [
     'marangaberry',
     {
-      name: 'Maranga Berry',
+      desc: "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
       gen: 6,
-      desc: "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use."
+      name: 'Maranga Berry'
     }
   ],
   [
     'marshadiumz',
     {
-      name: 'Marshadium Z',
-      gen: 7,
       desc: 'If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Marshadium Z'
     }
   ],
   [
     'masterball',
     {
-      name: 'Master Ball',
+      desc: 'The best Ball with the ultimate performance. It will catch any wild Pok├®mon.',
       gen: 1,
-      desc: 'The best Ball with the ultimate performance. It will catch any wild Pokémon.'
+      name: 'Master Ball'
     }
   ],
   [
     'mawilite',
     {
-      name: 'Mawilite',
-      gen: 6,
       desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Mawilite'
     }
   ],
   [
     'maxpotion',
     {
-      name: 'Max Potion',
+      desc: 'A spray-type medicine for treating wounds. It can be used to completely restore the max HP of a single Pok├®mon.',
       gen: 1,
-      desc: 'A spray-type medicine for treating wounds. It can be used to completely restore the max HP of a single Pokémon.'
+      name: 'Max Potion'
     }
   ],
   [
     'meadowplate',
     {
-      name: 'Meadow Plate',
-      gen: 4,
       desc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Meadow Plate'
     }
   ],
   [
     'medichamite',
     {
-      name: 'Medichamite',
-      gen: 6,
       desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Medichamite'
     }
   ],
   [
     'mentalherb',
     {
-      name: 'Mental Herb',
+      desc: 'Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.',
       gen: 3,
-      desc: 'Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.'
+      name: 'Mental Herb'
     }
   ],
   [
     'metagrossite',
     {
-      name: 'Metagrossite',
-      gen: 6,
       desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Metagrossite'
     }
   ],
   [
     'metalcoat',
     {
-      name: 'Metal Coat',
-      gen: 2,
       desc: "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
+      gen: 2,
+      name: 'Metal Coat',
       shortDesc: "Holder's Steel-type attacks have 1.2x power."
     }
   ],
   [
     'metalpowder',
     {
-      name: 'Metal Powder',
+      desc: "If held by a Ditto that hasn't Transformed, its Defense is doubled.",
       gen: 2,
-      desc: "If held by a Ditto that hasn't Transformed, its Defense is doubled."
+      name: 'Metal Powder'
     }
   ],
   [
     'metronome',
     {
-      name: 'Metronome',
+      desc: 'Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.',
       gen: 4,
-      desc: 'Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.'
+      name: 'Metronome'
     }
   ],
   [
     'mewniumz',
     {
-      name: 'Mewnium Z',
-      gen: 7,
       desc: 'If held by a Mew with Psychic, it can use Genesis Supernova.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Mewnium Z'
     }
   ],
   [
     'mewtwonitex',
     {
-      name: 'Mewtwonite X',
-      gen: 6,
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Mewtwonite X'
     }
   ],
   [
     'mewtwonitey',
     {
-      name: 'Mewtwonite Y',
-      gen: 6,
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Mewtwonite Y'
     }
   ],
   [
     'micleberry',
     {
-      name: 'Micle Berry',
+      desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
       gen: 4,
-      desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use."
+      name: 'Micle Berry'
     }
   ],
   [
     'mimikiumz',
     {
-      name: 'Mimikium Z',
-      gen: 7,
       desc: "If held by a Mimikyu with Play Rough, it can use Let's Snuggle Forever.",
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Mimikium Z'
     }
   ],
   [
     'mindplate',
     {
-      name: 'Mind Plate',
-      gen: 4,
       desc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Mind Plate'
     }
   ],
   [
     'mintberry',
     {
-      name: 'Mint Berry',
-      gen: 2,
       desc: '(Gen 2) Holder wakes up if it is asleep. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Mint Berry'
     }
   ],
   [
     'miracleberry',
     {
-      name: 'Miracle Berry',
-      gen: 2,
       desc: '(Gen 2) Holder cures itself if it is confused or has a status condition. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Miracle Berry'
     }
   ],
   [
     'miracleseed',
     {
-      name: 'Miracle Seed',
+      desc: "Holder's Grass-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Grass-type attacks have 1.2x power."
+      name: 'Miracle Seed'
     }
   ],
   [
     'mistyseed',
     {
-      name: 'Misty Seed',
+      desc: "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
       gen: 7,
-      desc: "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use."
+      name: 'Misty Seed'
     }
   ],
   [
     'moonball',
     {
-      name: 'Moon Ball',
+      desc: 'A Pok├® Ball for catching Pok├®mon that evolve using the Moon Stone.',
       gen: 2,
-      desc: 'A Poké Ball for catching Pokémon that evolve using the Moon Stone.'
+      name: 'Moon Ball'
     }
   ],
   [
     'moonstone',
     {
-      name: 'Moon Stone',
-      gen: 1,
       desc: 'Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 1,
+      name: 'Moon Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'muscleband',
     {
-      name: 'Muscle Band',
+      desc: "Holder's physical attacks have 1.1x power.",
       gen: 4,
-      desc: "Holder's physical attacks have 1.1x power."
+      name: 'Muscle Band'
     }
   ],
   [
     'mysteryberry',
     {
-      name: 'Mystery Berry',
-      gen: 2,
       desc: "(Gen 2) Restores 5 PP to the first of the holder's moves to reach 0 PP. Single use.",
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Mystery Berry'
     }
   ],
   [
     'mysticwater',
     {
-      name: 'Mystic Water',
+      desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Water-type attacks have 1.2x power."
+      name: 'Mystic Water'
     }
   ],
   [
     'nanabberry',
     {
-      name: 'Nanab Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Nanab Berry'
     }
   ],
   [
     'nestball',
     {
-      name: 'Nest Ball',
+      desc: 'A Pok├® Ball that works especially well on weaker Pok├®mon in the wild.',
       gen: 3,
-      desc: 'A Poké Ball that works especially well on weaker Pokémon in the wild.'
+      name: 'Nest Ball'
     }
   ],
   [
     'netball',
     {
-      name: 'Net Ball',
+      desc: 'A Pok├® Ball that works especially well on Water- and Bug-type Pok├®mon.',
       gen: 3,
-      desc: 'A Poké Ball that works especially well on Water- and Bug-type Pokémon.'
+      name: 'Net Ball'
     }
   ],
   [
     'nevermeltice',
     {
-      name: 'Never-Melt Ice',
+      desc: "Holder's Ice-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Ice-type attacks have 1.2x power."
+      name: 'Never-Melt Ice'
     }
   ],
   [
     'nomelberry',
     {
-      name: 'Nomel Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Nomel Berry'
     }
   ],
   [
     'normalgem',
     {
-      name: 'Normal Gem',
-      gen: 5,
       desc: "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Normal Gem'
     }
   ],
   [
     'normaliumz',
     {
-      name: 'Normalium Z',
-      gen: 7,
       desc: 'If holder has a Normal move, this item allows it to use a Normal Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Normalium Z'
     }
   ],
   [
     'occaberry',
     {
-      name: 'Occa Berry',
+      desc: 'Halves damage taken from a supereffective Fire-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Fire-type attack. Single use.'
+      name: 'Occa Berry'
     }
   ],
   [
     'oddincense',
     {
-      name: 'Odd Incense',
+      desc: "Holder's Psychic-type attacks have 1.2x power.",
       gen: 4,
-      desc: "Holder's Psychic-type attacks have 1.2x power."
+      name: 'Odd Incense'
     }
   ],
   [
     'oldamber',
     {
-      name: 'Old Amber',
+      desc: 'Can be revived into Aerodactyl.',
       gen: 3,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Aerodactyl.'
+      name: 'Old Amber'
     }
   ],
   [
     'oranberry',
     {
-      name: 'Oran Berry',
+      desc: 'Restores 10 HP when at 1/2 max HP or less. Single use.',
       gen: 3,
-      desc: 'Restores 10 HP when at 1/2 max HP or less. Single use.'
+      name: 'Oran Berry'
     }
   ],
   [
     'ovalstone',
     {
-      name: 'Oval Stone',
+      desc: 'Evolves Happiny into Chansey when held and leveled up during the day.',
       gen: 4,
-      desc: 'Evolves Happiny into Chansey when held and leveled up during the day.'
+      name: 'Oval Stone'
     }
   ],
   [
     'przcureberry',
     {
-      name: 'PRZ Cure Berry',
-      gen: 2,
       desc: '(Gen 2) Holder cures itself if it is paralyzed. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'PRZ Cure Berry'
     }
   ],
   [
     'psncureberry',
     {
-      name: 'PSN Cure Berry',
-      gen: 2,
       desc: '(Gen 2) Holder is cured if it is poisoned. Single use.',
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'PSN Cure Berry'
     }
   ],
   [
     'pamtreberry',
     {
-      name: 'Pamtre Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Pamtre Berry'
     }
   ],
   [
     'parkball',
     {
-      name: 'Park Ball',
+      desc: 'A special Pok├® Ball for the Pal Park.',
       gen: 4,
-      desc: 'A special Poké Ball for the Pal Park.'
+      name: 'Park Ball'
     }
   ],
   [
     'passhoberry',
     {
-      name: 'Passho Berry',
+      desc: 'Halves damage taken from a supereffective Water-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Water-type attack. Single use.'
+      name: 'Passho Berry'
     }
   ],
   [
     'payapaberry',
     {
-      name: 'Payapa Berry',
+      desc: 'Halves damage taken from a supereffective Psychic-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Psychic-type attack. Single use.'
+      name: 'Payapa Berry'
     }
   ],
   [
     'pechaberry',
     {
-      name: 'Pecha Berry',
+      desc: 'Holder is cured if it is poisoned. Single use.',
       gen: 3,
-      desc: 'Holder is cured if it is poisoned. Single use.'
+      name: 'Pecha Berry'
     }
   ],
   [
     'persimberry',
     {
-      name: 'Persim Berry',
+      desc: 'Holder is cured if it is confused. Single use.',
       gen: 3,
-      desc: 'Holder is cured if it is confused. Single use.'
+      name: 'Persim Berry'
     }
   ],
   [
     'petayaberry',
     {
-      name: 'Petaya Berry',
+      desc: "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 3,
-      desc: "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use."
+      name: 'Petaya Berry'
     }
   ],
   [
     'pidgeotite',
     {
-      name: 'Pidgeotite',
-      gen: 6,
       desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Pidgeotite'
     }
   ],
   [
     'pikaniumz',
     {
-      name: 'Pikanium Z',
-      gen: 7,
       desc: 'If held by a Pikachu with Volt Tackle, it can use Catastropika.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Pikanium Z'
     }
   ],
   [
     'pikashuniumz',
     {
-      name: 'Pikashunium Z',
-      gen: 7,
       desc: 'If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Pikashunium Z'
     }
   ],
   [
     'pinapberry',
     {
-      name: 'Pinap Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Pinap Berry'
     }
   ],
   [
     'pinkbow',
     {
-      name: 'Pink Bow',
-      gen: 2,
       desc: "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Pink Bow'
     }
   ],
   [
     'pinsirite',
     {
-      name: 'Pinsirite',
-      gen: 6,
       desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Pinsirite'
     }
   ],
   [
     'pixieplate',
     {
-      name: 'Pixie Plate',
+      desc: "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
       gen: 6,
-      desc: "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type."
+      name: 'Pixie Plate'
     }
   ],
   [
     'plumefossil',
     {
-      name: 'Plume Fossil',
+      desc: 'Can be revived into Archen.',
       gen: 5,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Archen.'
+      name: 'Plume Fossil'
     }
   ],
   [
     'poisonbarb',
     {
-      name: 'Poison Barb',
+      desc: "Holder's Poison-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Poison-type attacks have 1.2x power."
+      name: 'Poison Barb'
     }
   ],
   [
     'poisongem',
     {
-      name: 'Poison Gem',
-      gen: 5,
       desc: "Holder's first successful Poison-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Poison Gem'
     }
   ],
   [
     'poisonmemory',
     {
-      name: 'Poison Memory',
+      desc: "Holder's Multi-Attack is Poison type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Poison type."
+      name: 'Poison Memory'
     }
   ],
   [
     'poisoniumz',
     {
-      name: 'Poisonium Z',
-      gen: 7,
       desc: 'If holder has a Poison move, this item allows it to use a Poison Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Poisonium Z'
     }
   ],
   [
     'pokeball',
     {
-      name: 'Poké Ball',
+      desc: 'A device for catching wild Pok├®mon. It is designed as a capsule system.',
       gen: 1,
-      desc: 'A device for catching wild Pokémon. It is designed as a capsule system.'
+      name: 'Pok├® Ball'
     }
   ],
   [
     'polkadotbow',
     {
-      name: 'Polkadot Bow',
-      gen: 2,
       desc: "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
-      isNonstandard: 'Past'
+      gen: 2,
+      isNonstandard: 'Past',
+      name: 'Polkadot Bow'
     }
   ],
   [
     'pomegberry',
     {
-      name: 'Pomeg Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Pomeg Berry'
     }
   ],
-
   [
     'poweranklet',
     {
-      name: 'Power Anklet',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 4,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Power Anklet'
     }
   ],
   [
     'powerband',
     {
-      name: 'Power Band',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 4,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Power Band'
     }
   ],
   [
     'potion',
     {
-      name: 'Potion',
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pok├®mon.',
       gen: 1,
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon.'
+      name: 'Potion'
     }
   ],
   [
     'powerbelt',
     {
-      name: 'Power Belt',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 4,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Power Belt'
     }
   ],
   [
     'powerbracer',
     {
-      name: 'Power Bracer',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 4,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Power Bracer'
     }
   ],
   [
     'powerherb',
     {
-      name: 'Power Herb',
+      desc: "Holder's two-turn moves complete in one turn (except Sky Drop). Single use.",
       gen: 4,
-      desc: "Holder's two-turn moves complete in one turn (except Sky Drop). Single use."
+      name: 'Power Herb'
     }
   ],
   [
     'powerlens',
     {
-      name: 'Power Lens',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 4,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Power Lens'
     }
   ],
   [
     'powerweight',
     {
-      name: 'Power Weight',
+      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect.",
       gen: 4,
-      desc: "Holder's Speed is halved. The Ability Klutz does not ignore this effect."
+      name: 'Power Weight'
     }
   ],
   [
     'premierball',
     {
-      name: 'Premier Ball',
+      desc: 'A rare Pok├® Ball that has been crafted to commemorate an event.',
       gen: 3,
-      desc: 'A rare Poké Ball that has been crafted to commemorate an event.'
+      name: 'Premier Ball'
     }
   ],
   [
     'primariumz',
     {
-      name: 'Primarium Z',
-      gen: 7,
       desc: 'If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Primarium Z'
     }
   ],
   [
     'prismscale',
     {
-      name: 'Prism Scale',
+      desc: 'Evolves Feebas into Milotic when traded.',
       gen: 5,
-      desc: 'Evolves Feebas into Milotic when traded.'
+      name: 'Prism Scale'
     }
   ],
   [
     'protectivepads',
     {
-      name: 'Protective Pads',
+      desc: "Holder's moves are protected from adverse contact effects, except Pickpocket.",
       gen: 7,
-      desc: "Holder's moves are protected from adverse contact effects, except Pickpocket."
+      name: 'Protective Pads'
     }
   ],
   [
     'protector',
     {
-      name: 'Protector',
+      desc: 'Evolves Rhydon into Rhyperior when traded.',
       gen: 4,
-      desc: 'Evolves Rhydon into Rhyperior when traded.'
+      name: 'Protector'
     }
   ],
   [
     'psychicgem',
     {
-      name: 'Psychic Gem',
-      gen: 5,
       desc: "Holder's first successful Psychic-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Psychic Gem'
     }
   ],
   [
     'psychicmemory',
     {
-      name: 'Psychic Memory',
+      desc: "Holder's Multi-Attack is Psychic type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Psychic type."
+      name: 'Psychic Memory'
     }
   ],
   [
     'psychicseed',
     {
-      name: 'Psychic Seed',
+      desc: "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
       gen: 7,
-      desc: "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use."
+      name: 'Psychic Seed'
     }
   ],
   [
     'psychiumz',
     {
-      name: 'Psychium Z',
-      gen: 7,
       desc: 'If holder has a Psychic move, this item allows it to use a Psychic Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Psychium Z'
     }
   ],
   [
     'qualotberry',
     {
-      name: 'Qualot Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Qualot Berry'
     }
   ],
   [
     'quickball',
     {
-      name: 'Quick Ball',
+      desc: 'A Pok├® Ball that provides a better catch rate at the start of a wild encounter.',
       gen: 4,
-      desc: 'A Poké Ball that provides a better catch rate at the start of a wild encounter.'
+      name: 'Quick Ball'
     }
   ],
   [
     'quickclaw',
     {
-      name: 'Quick Claw',
+      desc: 'Each turn, holder has a 20% chance to move first in its priority bracket.',
       gen: 2,
-      desc: 'Each turn, holder has a 20% chance to move first in its priority bracket.'
+      name: 'Quick Claw'
     }
   ],
   [
     'quickpowder',
     {
-      name: 'Quick Powder',
+      desc: "If held by a Ditto that hasn't Transformed, its Speed is doubled.",
       gen: 4,
-      desc: "If held by a Ditto that hasn't Transformed, its Speed is doubled."
+      name: 'Quick Powder'
     }
   ],
   [
     'rabutaberry',
     {
-      name: 'Rabuta Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Rabuta Berry'
     }
   ],
   [
     'rarebone',
     {
-      name: 'Rare Bone',
+      desc: 'No competitive use other than when used with Fling.',
       gen: 4,
-      desc: 'No competitive use other than when used with Fling.'
+      name: 'Rare Bone'
     }
   ],
   [
     'rawstberry',
     {
-      name: 'Rawst Berry',
+      desc: 'Holder is cured if it is burned. Single use.',
       gen: 3,
-      desc: 'Holder is cured if it is burned. Single use.'
+      name: 'Rawst Berry'
     }
   ],
   [
     'razorclaw',
     {
-      name: 'Razor Claw',
-      gen: 4,
       desc: "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
+      gen: 4,
+      name: 'Razor Claw',
       shortDesc: "Holder's critical hit ratio is raised by 1 stage."
     }
   ],
   [
     'razorfang',
     {
-      name: 'Razor Fang',
-      gen: 4,
       desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
-      shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Razor Fang',
+      shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
     }
   ],
   [
     'razzberry',
     {
-      name: 'Razz Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Razz Berry'
     }
   ],
   [
     'reapercloth',
     {
-      name: 'Reaper Cloth',
+      desc: 'Evolves Dusclops into Dusknoir when traded.',
       gen: 4,
-      desc: 'Evolves Dusclops into Dusknoir when traded.'
+      name: 'Reaper Cloth'
     }
   ],
   [
     'redcard',
     {
-      name: 'Red Card',
+      desc: 'If holder survives a hit, attacker is forced to switch to a random ally. Single use.',
       gen: 5,
-      desc: 'If holder survives a hit, attacker is forced to switch to a random ally. Single use.'
+      name: 'Red Card'
     }
   ],
   [
     'redorb',
     {
+      desc: "A shiny red orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
+      gen: 3,
+      keyItem: true,
       name: 'Red Orb',
-      gen: 6,
-      desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
-      isNonstandard: 'Past'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png'
     }
   ],
   [
     'repeatball',
     {
-      name: 'Repeat Ball',
+      desc: 'A Pok├® Ball that works well on Pok├®mon species that were previously caught.',
       gen: 3,
-      desc: 'A Poké Ball that works well on Pokémon species that were previously caught.'
+      name: 'Repeat Ball'
     }
   ],
   [
     'ribbonsweet',
     {
-      name: 'Ribbon Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Ribbon Sweet'
     }
   ],
   [
     'rindoberry',
     {
-      name: 'Rindo Berry',
+      desc: 'Halves damage taken from a supereffective Grass-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Grass-type attack. Single use.'
+      name: 'Rindo Berry'
     }
   ],
   [
     'ringtarget',
     {
-      name: 'Ring Target',
+      desc: "The holder's type immunities granted solely by its typing are negated.",
       gen: 5,
-      desc: "The holder's type immunities granted solely by its typing are negated."
+      name: 'Ring Target'
     }
   ],
   [
     'rockgem',
     {
-      name: 'Rock Gem',
-      gen: 5,
       desc: "Holder's first successful Rock-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Rock Gem'
     }
   ],
   [
     'rockincense',
     {
-      name: 'Rock Incense',
+      desc: "Holder's Rock-type attacks have 1.2x power.",
       gen: 4,
-      desc: "Holder's Rock-type attacks have 1.2x power."
+      name: 'Rock Incense'
     }
   ],
   [
     'rockmemory',
     {
-      name: 'Rock Memory',
+      desc: "Holder's Multi-Attack is Rock type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Rock type."
+      name: 'Rock Memory'
     }
   ],
   [
     'rockiumz',
     {
-      name: 'Rockium Z',
-      gen: 7,
       desc: 'If holder has a Rock move, this item allows it to use a Rock Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Rockium Z'
     }
   ],
   [
     'roseincense',
     {
-      name: 'Rose Incense',
+      desc: "Holder's Grass-type attacks have 1.2x power.",
       gen: 4,
-      desc: "Holder's Grass-type attacks have 1.2x power."
+      name: 'Rose Incense'
     }
   ],
   [
     'rockyhelmet',
     {
-      name: 'Rocky Helmet',
+      desc: 'If holder is hit by a contact move, the attacker loses 1/6 of its max HP.',
       gen: 5,
-      desc: 'If holder is hit by a contact move, the attacker loses 1/6 of its max HP.'
+      name: 'Rocky Helmet'
     }
   ],
   [
     'roomservice',
     {
-      name: 'Room Service',
+      desc: "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use.",
       gen: 8,
-      desc: "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use."
+      name: 'Room Service'
     }
   ],
   [
     'rootfossil',
     {
-      name: 'Root Fossil',
+      desc: 'Can be revived into Lileep.',
       gen: 3,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Lileep.'
+      name: 'Root Fossil'
     }
   ],
   [
     'roseliberry',
     {
-      name: 'Roseli Berry',
+      desc: 'Halves damage taken from a supereffective Fairy-type attack. Single use.',
       gen: 6,
-      desc: 'Halves damage taken from a supereffective Fairy-type attack. Single use.'
+      name: 'Roseli Berry'
     }
   ],
   [
     'rowapberry',
     {
-      name: 'Rowap Berry',
+      desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
       gen: 4,
-      desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.'
+      name: 'Rowap Berry'
     }
   ],
   [
     'rustedshield',
     {
-      name: 'Rusted Shield',
+      desc: 'If held by a Zamazenta, this item changes its forme to Crowned Shield.',
       gen: 8,
-      desc: 'If held by a Zamazenta, this item changes its forme to Crowned Shield.'
+      name: 'Rusted Shield'
     }
   ],
   [
     'rustedsword',
     {
-      name: 'Rusted Sword',
+      desc: 'If held by a Zacian, this item changes its forme to Crowned Sword.',
       gen: 8,
-      desc: 'If held by a Zacian, this item changes its forme to Crowned Sword.'
+      name: 'Rusted Sword'
     }
   ],
   [
     'sablenite',
     {
-      name: 'Sablenite',
-      gen: 6,
       desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Sablenite'
     }
   ],
   [
     'sachet',
     {
-      name: 'Sachet',
+      desc: 'Evolves Spritzee into Aromatisse when traded.',
       gen: 6,
-      desc: 'Evolves Spritzee into Aromatisse when traded.'
+      name: 'Sachet'
     }
   ],
   [
     'safariball',
     {
-      name: 'Safari Ball',
+      desc: 'A special Pok├® Ball that is used only in the Safari Zone and Great Marsh.',
       gen: 1,
-      desc: 'A special Poké Ball that is used only in the Safari Zone and Great Marsh.'
+      name: 'Safari Ball'
     }
   ],
   [
     'safetygoggles',
     {
-      name: 'Safety Goggles',
+      desc: 'Holder is immune to powder moves and damage from Sandstorm or Hail.',
       gen: 6,
-      desc: 'Holder is immune to powder moves and damage from Sandstorm or Hail.'
+      name: 'Safety Goggles'
     }
   ],
   [
     'sailfossil',
     {
-      name: 'Sail Fossil',
+      desc: 'Can be revived into Amaura.',
       gen: 6,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Amaura.'
+      name: 'Sail Fossil'
     }
   ],
   [
     'salacberry',
     {
-      name: 'Salac Berry',
+      desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.'
+      name: 'Salac Berry'
     }
   ],
   [
     'salamencite',
     {
-      name: 'Salamencite',
-      gen: 6,
       desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Salamencite'
     }
   ],
   [
     'sceptilite',
     {
-      name: 'Sceptilite',
-      gen: 6,
       desc: 'If held by a Sceptile, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Sceptilite'
     }
   ],
   [
     'scizorite',
     {
-      name: 'Scizorite',
-      gen: 6,
       desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Scizorite'
     }
   ],
   [
     'scopelens',
     {
-      name: 'Scope Lens',
+      desc: "Holder's critical hit ratio is raised by 1 stage.",
       gen: 2,
-      desc: "Holder's critical hit ratio is raised by 1 stage."
+      name: 'Scope Lens'
     }
   ],
   [
     'seaincense',
     {
-      name: 'Sea Incense',
+      desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 3,
-      desc: "Holder's Water-type attacks have 1.2x power."
+      name: 'Sea Incense'
     }
   ],
   [
     'sharpbeak',
     {
-      name: 'Sharp Beak',
+      desc: "Holder's Flying-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Flying-type attacks have 1.2x power."
+      name: 'Sharp Beak'
     }
   ],
   [
     'sharpedonite',
     {
-      name: 'Sharpedonite',
-      gen: 6,
       desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Sharpedonite'
     }
   ],
   [
     'shedshell',
     {
-      name: 'Shed Shell',
+      desc: 'Holder may switch out even when trapped by another Pok├®mon, or by Ingrain.',
       gen: 4,
-      desc: 'Holder may switch out even when trapped by another Pokémon, or by Ingrain.'
+      name: 'Shed Shell'
     }
   ],
   [
     'shellbell',
     {
-      name: 'Shell Bell',
+      desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pok├®mon.',
       gen: 3,
-      desc: 'After an attack, holder gains 1/8 of the damage in HP dealt to other Pokémon.'
+      name: 'Shell Bell'
     }
   ],
   [
     'shinystone',
     {
-      name: 'Shiny Stone',
-      gen: 4,
       desc: 'Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 4,
+      name: 'Shiny Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'shockdrive',
     {
-      name: 'Shock Drive',
+      desc: "Holder's Techno Blast is Electric type.",
       gen: 5,
-      desc: "Holder's Techno Blast is Electric type."
+      name: 'Shock Drive'
     }
   ],
   [
     'shucaberry',
     {
-      name: 'Shuca Berry',
+      desc: 'Halves damage taken from a supereffective Ground-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Ground-type attack. Single use.'
+      name: 'Shuca Berry'
     }
   ],
   [
     'silkscarf',
     {
-      name: 'Silk Scarf',
+      desc: "Holder's Normal-type attacks have 1.2x power.",
       gen: 3,
-      desc: "Holder's Normal-type attacks have 1.2x power."
+      name: 'Silk Scarf'
     }
   ],
   [
     'silverpowder',
     {
-      name: 'Silver Powder',
+      desc: "Holder's Bug-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Bug-type attacks have 1.2x power."
+      name: 'Silver Powder'
     }
   ],
   [
     'sitrusberry',
     {
-      name: 'Sitrus Berry',
+      desc: 'Restores 1/4 max HP when at 1/2 max HP or less. Single use.',
       gen: 3,
-      desc: 'Restores 1/4 max HP when at 1/2 max HP or less. Single use.'
+      name: 'Sitrus Berry'
     }
   ],
   [
     'skullfossil',
     {
-      name: 'Skull Fossil',
+      desc: 'Can be revived into Cranidos.',
       gen: 4,
       isNonstandard: 'Past',
-      desc: 'Can be revived into Cranidos.'
+      name: 'Skull Fossil'
     }
   ],
   [
     'skyplate',
     {
-      name: 'Sky Plate',
-      gen: 4,
       desc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Sky Plate'
     }
   ],
   [
     'slowbronite',
     {
-      name: 'Slowbronite',
-      gen: 6,
       desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Slowbronite'
     }
   ],
   [
     'smoothrock',
     {
-      name: 'Smooth Rock',
+      desc: "Holder's use of Sandstorm lasts 8 turns instead of 5.",
       gen: 4,
-      desc: "Holder's use of Sandstorm lasts 8 turns instead of 5."
+      name: 'Smooth Rock'
     }
   ],
   [
     'snorliumz',
     {
-      name: 'Snorlium Z',
-      gen: 7,
       desc: 'If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Snorlium Z'
     }
   ],
   [
     'snowball',
     {
-      name: 'Snowball',
+      desc: "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
       gen: 6,
-      desc: "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use."
+      name: 'Snowball'
     }
   ],
   [
     'softsand',
     {
-      name: 'Soft Sand',
+      desc: "Holder's Ground-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Ground-type attacks have 1.2x power."
+      name: 'Soft Sand'
     }
   ],
   [
     'solganiumz',
     {
-      name: 'Solganium Z',
-      gen: 7,
       desc: 'Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Solganium Z'
     }
   ],
   [
     'souldew',
     {
-      name: 'Soul Dew',
+      desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
       gen: 3,
-      desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.'
+      name: 'Soul Dew'
     }
   ],
   [
     'spelltag',
     {
-      name: 'Spell Tag',
+      desc: "Holder's Ghost-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Ghost-type attacks have 1.2x power."
+      name: 'Spell Tag'
     }
   ],
   [
     'spelonberry',
     {
-      name: 'Spelon Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Spelon Berry'
     }
   ],
   [
     'splashplate',
     {
-      name: 'Splash Plate',
-      gen: 4,
       desc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Splash Plate'
     }
   ],
   [
     'spookyplate',
     {
-      name: 'Spooky Plate',
-      gen: 4,
       desc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Spooky Plate'
     }
   ],
   [
     'sportball',
     {
-      name: 'Sport Ball',
+      desc: 'A special Pok├® Ball for the Bug-Catching Contest.',
       gen: 2,
-      desc: 'A special Poké Ball for the Bug-Catching Contest.'
+      name: 'Sport Ball'
     }
   ],
   [
     'starfberry',
     {
-      name: 'Starf Berry',
+      desc: 'Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.',
       gen: 3,
-      desc: 'Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.'
+      name: 'Starf Berry'
     }
   ],
   [
     'steelgem',
     {
-      name: 'Steel Gem',
-      gen: 5,
       desc: "Holder's first successful Steel-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Steel Gem'
     }
   ],
   [
     'steelmemory',
     {
-      name: 'Steel Memory',
+      desc: "Holder's Multi-Attack is Steel type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Steel type."
+      name: 'Steel Memory'
     }
   ],
   [
     'steeliumz',
     {
-      name: 'Steelium Z',
-      gen: 7,
       desc: 'If holder has a Steel move, this item allows it to use a Steel Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Steelium Z'
     }
   ],
   [
     'starsweet',
     {
-      name: 'Star Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Star Sweet'
     }
   ],
   [
     'steelixite',
     {
-      name: 'Steelixite',
-      gen: 6,
       desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Steelixite'
     }
   ],
   [
     'stick',
     {
-      name: 'Stick',
+      desc: 'If held by a FarfetchÔÇÖd, its critical hit ratio is raised by 2 stages.',
       gen: 2,
-      desc: 'If held by a Farfetch\u2019d, its critical hit ratio is raised by 2 stages.',
-      isNonstandard: 'Past'
+      isNonstandard: 'Past',
+      name: 'Stick'
     }
   ],
   [
     'stickybarb',
     {
-      name: 'Sticky Barb',
+      desc: 'Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.',
       gen: 4,
-      desc: 'Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.'
+      name: 'Sticky Barb'
     }
   ],
   [
     'stoneplate',
     {
-      name: 'Stone Plate',
-      gen: 4,
       desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Stone Plate'
     }
   ],
   [
     'strawberrysweet',
     {
-      name: 'Strawberry Sweet',
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      desc: 'Evolves Milcery into Alcremie when held and spun around.'
+      name: 'Strawberry Sweet'
     }
   ],
   [
     'sunstone',
     {
-      name: 'Sun Stone',
-      gen: 2,
       desc: 'Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 2,
+      name: 'Sun Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'superpotion',
     {
-      name: 'Super Potion',
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pok├®mon. ',
       gen: 1,
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon. '
+      name: 'Super Potion'
     }
   ],
   [
     'swampertite',
     {
-      name: 'Swampertite',
-      gen: 6,
       desc: 'If held by a Swampert, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Swampertite'
     }
   ],
   [
     'sweetapple',
     {
-      name: 'Sweet Apple',
+      desc: 'Evolves Applin into Appletun when used.',
       gen: 8,
-      desc: 'Evolves Applin into Appletun when used.'
+      name: 'Sweet Apple'
     }
   ],
   [
     'tamatoberry',
     {
-      name: 'Tamato Berry',
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.'
+      name: 'Tamato Berry'
     }
   ],
   [
     'tangaberry',
     {
-      name: 'Tanga Berry',
+      desc: 'Halves damage taken from a supereffective Bug-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Bug-type attack. Single use.'
+      name: 'Tanga Berry'
     }
   ],
   [
     'tapuniumz',
     {
-      name: 'Tapunium Z',
-      gen: 7,
       desc: "If held by a Tapu with Nature's Madness, it can use Guardian of Alola.",
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Tapunium Z'
     }
   ],
   [
     'tartapple',
     {
-      name: 'Tart Apple',
+      desc: 'Evolves Applin into Flapple when used.',
       gen: 8,
-      desc: 'Evolves Applin into Flapple when used.'
+      name: 'Tart Apple'
     }
   ],
   [
     'terrainextender',
     {
-      name: 'Terrain Extender',
+      desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
       gen: 7,
-      desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5."
+      name: 'Terrain Extender'
     }
   ],
   [
     'thickclub',
     {
-      name: 'Thick Club',
+      desc: 'If held by a Cubone or a Marowak, its Attack is doubled.',
       gen: 2,
-      desc: 'If held by a Cubone or a Marowak, its Attack is doubled.'
+      name: 'Thick Club'
     }
   ],
   [
     'throatspray',
     {
-      name: 'Throat Spray',
+      desc: "Raises holder's Special Attack by 1 stage after it uses a sound move. Single use.",
       gen: 8,
-      desc: "Raises holder's Special Attack by 1 stage after it uses a sound move. Single use."
+      name: 'Throat Spray'
     }
   ],
   [
     'thunderstone',
     {
-      name: 'Thunder Stone',
-      gen: 1,
       desc: 'Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 1,
+      name: 'Thunder Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'timerball',
     {
-      name: 'Timer Ball',
+      desc: 'A Pok├® Ball that becomes better the more turns there are in a battle.',
       gen: 3,
-      desc: 'A Poké Ball that becomes better the more turns there are in a battle.'
+      name: 'Timer Ball'
     }
   ],
   [
     'toxicorb',
     {
-      name: 'Toxic Orb',
+      desc: 'At the end of every turn, this item attempts to badly poison the holder.',
       gen: 4,
-      desc: 'At the end of every turn, this item attempts to badly poison the holder.'
+      name: 'Toxic Orb'
     }
   ],
   [
     'toxicplate',
     {
-      name: 'Toxic Plate',
-      gen: 4,
       desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Toxic Plate'
     }
   ],
   [
     'twistedspoon',
     {
-      name: 'Twisted Spoon',
+      desc: "Holder's Psychic-type attacks have 1.2x power.",
       gen: 2,
-      desc: "Holder's Psychic-type attacks have 1.2x power."
+      name: 'Twisted Spoon'
     }
   ],
   [
     'tyranitarite',
     {
-      name: 'Tyranitarite',
-      gen: 6,
       desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Tyranitarite'
     }
   ],
   [
     'ultraball',
     {
-      name: 'Ultra Ball',
+      desc: 'An ultra-performance Ball that provides a higher catch rate than a Great Ball.',
       gen: 1,
-      desc: 'An ultra-performance Ball that provides a higher catch rate than a Great Ball.'
+      name: 'Ultra Ball'
     }
   ],
   [
     'ultranecroziumz',
     {
-      name: 'Ultranecrozium Z',
-      gen: 7,
       desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Ultranecrozium Z'
     }
   ],
   [
     'upgrade',
     {
-      name: 'Up-Grade',
+      desc: 'Evolves Porygon into Porygon2 when traded.',
       gen: 2,
-      desc: 'Evolves Porygon into Porygon2 when traded.'
+      name: 'Up-Grade'
     }
   ],
   [
     'utilityumbrella',
     {
-      name: 'Utility Umbrella',
-      gen: 8,
       desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
+      gen: 8,
+      name: 'Utility Umbrella',
       shortDesc: 'The holder ignores rain- and sun-based effects.'
     }
   ],
   [
     'venusaurite',
     {
-      name: 'Venusaurite',
-      gen: 6,
       desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
-      isNonstandard: 'Past'
+      gen: 6,
+      isNonstandard: 'Past',
+      name: 'Venusaurite'
     }
   ],
   [
     'wacanberry',
     {
-      name: 'Wacan Berry',
+      desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.'
+      name: 'Wacan Berry'
     }
   ],
   [
     'watergem',
     {
-      name: 'Water Gem',
-      gen: 5,
       desc: "Holder's first successful Water-type attack will have 1.3x power. Single use.",
-      isNonstandard: 'Past'
+      gen: 5,
+      isNonstandard: 'Past',
+      name: 'Water Gem'
     }
   ],
   [
     'watermemory',
     {
-      name: 'Water Memory',
+      desc: "Holder's Multi-Attack is Water type.",
       gen: 7,
-      desc: "Holder's Multi-Attack is Water type."
+      name: 'Water Memory'
     }
   ],
   [
     'waterstone',
     {
-      name: 'Water Stone',
-      gen: 1,
       desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
+      gen: 1,
+      name: 'Water Stone',
+      shortDesc: 'Evolves certain species of Pok├®mon when used.'
     }
   ],
   [
     'wateriumz',
     {
-      name: 'Waterium Z',
-      gen: 7,
       desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
-      isNonstandard: 'Past'
+      gen: 7,
+      isNonstandard: 'Past',
+      name: 'Waterium Z'
     }
   ],
   [
     'watmelberry',
     {
-      name: 'Watmel Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Watmel Berry'
     }
   ],
   [
     'waveincense',
     {
-      name: 'Wave Incense',
+      desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 4,
-      desc: "Holder's Water-type attacks have 1.2x power."
+      name: 'Wave Incense'
     }
   ],
   [
     'weaknesspolicy',
     {
-      name: 'Weakness Policy',
+      desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.',
       gen: 6,
-      desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.'
+      name: 'Weakness Policy'
     }
   ],
   [
     'wepearberry',
     {
-      name: 'Wepear Berry',
-      gen: 3,
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      isNonstandard: 'Past'
+      gen: 3,
+      isNonstandard: 'Past',
+      name: 'Wepear Berry'
     }
   ],
   [
     'whippeddream',
     {
-      name: 'Whipped Dream',
+      desc: 'Evolves Swirlix into Slurpuff when traded.',
       gen: 6,
-      desc: 'Evolves Swirlix into Slurpuff when traded.'
+      name: 'Whipped Dream'
     }
   ],
   [
     'whiteherb',
     {
-      name: 'White Herb',
+      desc: 'Restores all lowered stat stages to 0 when one is less than 0. Single use.',
       gen: 3,
-      desc: 'Restores all lowered stat stages to 0 when one is less than 0. Single use.'
+      name: 'White Herb'
     }
   ],
   [
     'widelens',
     {
-      name: 'Wide Lens',
+      desc: 'The accuracy of attacks by the holder is 1.1x.',
       gen: 4,
-      desc: 'The accuracy of attacks by the holder is 1.1x.'
+      name: 'Wide Lens'
     }
   ],
   [
     'wikiberry',
     {
-      name: 'Wiki Berry',
+      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.',
       gen: 3,
-      desc: 'Restores 33% max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.'
+      name: 'Wiki Berry'
     }
   ],
   [
     'wiseglasses',
     {
-      name: 'Wise Glasses',
+      desc: "Holder's special attacks have 1.1x power.",
       gen: 4,
-      desc: "Holder's special attacks have 1.1x power."
+      name: 'Wise Glasses'
     }
   ],
   [
     'yacheberry',
     {
-      name: 'Yache Berry',
+      desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
       gen: 4,
-      desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.'
+      name: 'Yache Berry'
     }
   ],
   [
     'zapplate',
     {
-      name: 'Zap Plate',
-      gen: 4,
       desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
-      isNonstandard: 'Past'
+      gen: 4,
+      isNonstandard: 'Past',
+      name: 'Zap Plate'
     }
   ],
   [
     'zoomlens',
     {
-      name: 'Zoom Lens',
+      desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
       gen: 4,
-      desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.'
+      name: 'Zoom Lens'
     }
   ],
   [
     'acrobike',
     {
-      name: 'Acro Bike',
-      gen: 3,
       desc: 'This folding bike allows you to perform actions such as wheelies and bunny hops.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Acro Bike',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png'
     }
   ],
   [
     'adventureguide',
     {
-      name: 'Adventure Guide',
-      gen: 6,
       desc: 'A compact device that automatically collects and records advice when a Trainer is out on an adventure.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/adventureguide.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Adventure Guide',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/adventureguide.png'
     }
   ],
   [
     'apricornbox',
     {
-      name: 'Apricorn Box',
-      gen: 4,
       desc: 'A handy box where you can store up to 99 of each kind of Apricorn.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/apricornbox.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Apricorn Box',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/apricornbox.png'
     }
   ],
   [
     'aquasuit',
     {
-      name: 'Aqua Suit',
-      gen: 6,
       desc: 'A suit made with the collective technological know-how of Team Aqua. It can withstand any impact.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/aquasuit.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Aqua Suit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/aquasuit.png'
     }
   ],
   [
     'auroraticket',
     {
-      name: 'Aurora Ticket',
-      gen: 3,
       desc: 'A ticket required to board the ship to Birth Island. It glows beautifully.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Aurora Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png'
     }
   ],
   [
     'autograph',
     {
-      name: 'Autograph',
+      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, ÔÇ£Good luck!ÔÇØ',
       gen: 7,
-      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, “Good luck!”',
-      keyItem: true
+      keyItem: true,
+      name: 'Autograph'
     }
   ],
   [
     'azureflute',
     {
-      name: 'Azure Flute',
-      gen: 4,
       desc: 'A flute that puts out echoing sounds that do not seem to be of this world. No one knows who made it.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/azureflute.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Azure Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/azureflute.png'
     }
   ],
   [
     'bandautograph',
     {
-      name: 'Band Autograph',
-      gen: 8,
       desc: "It's signed by all members of the Galar region's most charismatic band, the Maximizers.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bandautograph.png',
-      keyItem: true
+      gen: 8,
+      keyItem: true,
+      name: 'Band Autograph',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bandautograph.png'
     }
   ],
   [
     'basementkey',
     {
-      name: 'Basement Key',
-      gen: 2,
       desc: 'A key that opens a door in the Goldenrod Tunnel.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/basementkey.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Basement Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/basementkey.png'
     }
   ],
   [
     'berrypots',
     {
-      name: 'Berry Pots',
-      gen: 4,
       desc: 'Handy containers for cultivating Berries wherever you go.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypots.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Berry Pots',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypots.png'
     }
   ],
   [
     'berrypouch',
     {
-      name: 'Berry Pouch',
-      gen: 3,
       desc: "A pouch for carrying Berries. It is attached to the bag's compartment for important items.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Berry Pouch',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png'
     }
   ],
   [
     'bicycle',
     {
-      name: 'Bicycle',
-      gen: 1,
       desc: 'A folding bike that enables a rider to get around much faster than with Running Shoes.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bicycle.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Bicycle',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bicycle.png'
     }
   ],
   [
     'bikevoucher',
     {
-      name: 'Bike Voucher',
-      gen: 3,
       desc: 'Take this voucher to the BIKE SHOP in CERULEAN CITY and exchange it for a bicycle.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Bike Voucher',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png'
     }
   ],
   [
     'bluecard',
     {
-      name: 'Blue Card',
-      gen: 2,
       desc: "A card to save points for the Buena's Password show.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluecard.png',
-      keyItem: true
-    }
-  ],
-  [
-    'blueorb',
-    {
-      name: 'Blue Orb',
-      desc: "A shiny blue orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
-      gen: 3,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Blue Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluecard.png'
     }
   ],
   [
     'bluepetal',
     {
-      name: 'Blue Petal',
       desc: "A pressed flower petal you receive from Lana during Mina's trial. The goal is to collect seven different kinds of petals.",
       gen: 7,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluepetal.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Blue Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluepetal.png'
     }
   ],
   [
     'campinggear',
     {
-      name: 'Camping Gear',
       desc: 'Everything you need to set up a tent and get cooking in a Wild Area or at a camping spot.',
       gen: 8,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/campinggear.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Camping Gear',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/campinggear.png'
     }
   ],
   [
     'cardkey',
     {
-      name: 'Card Key',
       desc: 'A card key that opens a shutter in the Radio Tower.',
       gen: 1,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/cardkey.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Card Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cardkey.png'
     }
   ],
   [
     'catchingcharm',
     {
-      name: 'Catching Charm',
       desc: "Holding it is said to increase the chance of getting a critical catch. Curiously, the charm doesn't shake much.",
       gen: 8,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/catchingcharm.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Catching Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/catchingcharm.png'
     }
   ],
   [
     'clearbell',
     {
-      name: 'Clear Bell',
       desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
       gen: 2,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Clear Bell',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png'
     }
   ],
   [
     'coincase',
     {
-      name: 'Coin Case',
       desc: 'A case for holding coins obtained at the Game Corner. It can hold up to 50,000 coins.',
       gen: 1,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coincase.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Coin Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coincase.png'
     }
   ],
   [
     'colressmchn',
     {
-      name: 'Colress MCHN',
-      desc: "A special device that wrings out the potential of Pokémon. It's an imperfect prototype.",
+      desc: "A special device that wrings out the potential of Pok├®mon. It's an imperfect prototype.",
       gen: 5,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/colressmchn.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Colress MCHN',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/colressmchn.png'
     }
   ],
   [
     'contestcostume',
     {
-      name: 'Contest Costume',
       desc: 'A very cool suit to be worn during the Contest Spectacular.',
       gen: 6,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestcostume.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Contest Costume',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestcostume.png'
     }
   ],
   [
     'contestpass',
     {
-      name: 'Contest Pass',
-      desc: 'A pass required for entering Pokémon Contests. It has a drawing of an award ribbon on its front.',
+      desc: 'A pass required for entering Pok├®mon Contests. It has a drawing of an award ribbon on its front.',
       gen: 3,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestpass.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Contest Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestpass.png'
     }
   ],
   [
     'coupon1',
     {
-      name: 'Coupon 1',
-      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      desc: 'A coupon to be exchanged for a Pok├®mon Watch (Pok├®tch for short). Three coupons are needed.',
       gen: 4,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon1.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Coupon 1',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon1.png'
     }
   ],
   [
     'coupon2',
     {
-      name: 'Coupon 2',
-      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      desc: 'A coupon to be exchanged for a Pok├®mon Watch (Pok├®tch for short). Three coupons are needed.',
       gen: 4,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon2.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Coupon 2',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon2.png'
     }
   ],
   [
     'coupon3',
     {
-      name: 'Coupon 3',
-      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      desc: 'A coupon to be exchanged for a Pok├®mon Watch (Pok├®tch for short). Three coupons are needed.',
       gen: 4,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon3.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Coupon 3',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon3.png'
     }
   ],
   [
     'dnasplicers',
     {
-      name: 'DNA Splicers',
-      desc: 'A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.',
+      desc: 'A splicer that fuses Kyurem and a certain Pok├®mon. They are said to have been one in the beginning.',
       gen: 5,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dnasplicers.png',
-      keyItem: true
+      keyItem: true,
+      name: 'DNA Splicers',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dnasplicers.png'
     }
   ],
   [
     'darkstone',
     {
-      name: 'Dark Stone',
       desc: "Zekrom's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
       gen: 5,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/darkstone.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Dark Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/darkstone.png'
     }
   ],
   [
     'devongoods',
     {
-      name: 'Devon Goods',
       desc: "A package that contains DEVON's machine parts.",
       gen: 3,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Devon Goods',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png'
     }
   ],
   [
     'devonparts',
     {
-      name: 'Devon Parts',
       desc: 'A case that contains mechanical parts of some sort made by the Devon Corporation.',
       gen: 6,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonparts.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Devon Parts',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonparts.png'
     }
   ],
   [
     'devonscope',
     {
-      name: 'Devon Scope',
-      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
+      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pok├®mon.',
       gen: 6,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Devon Scope',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png'
     }
   ],
   [
     'devonscubagear',
     {
-      name: 'Devon Scuba Gear',
       desc: 'A device made by Devon Corporation that provides oxygen to users during the use of Dive.',
       gen: 6,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Devon Scuba Gear',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png'
     }
   ],
   [
     'dowsingmchn',
     {
-      name: 'Dowsing MCHN',
       desc: "A high-tech machine that shows the location of invisible items. It's attached to the head when in use.",
       gen: 4,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmchn.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Dowsing MCHN',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmchn.png'
     }
   ],
   [
     'dowsingmachine',
     {
-      name: 'Dowsing Machine',
       desc: "This high-tech machine shows the location of invisible items. It's attached to the head when in use.",
       gen: 6,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Dowsing Machine',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png'
     }
   ],
   [
     'dragonskull',
     {
-      name: 'Dragon Skull',
-      desc: 'A skull of a Pokémon that was said to have braved the angry waters to fly around the world.',
+      desc: 'A skull of a Pok├®mon that was said to have braved the angry waters to fly around the world.',
       gen: 5,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonskull.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Dragon Skull',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonskull.png'
     }
   ],
   [
     'droppeditem',
     {
-      name: 'Dropped Item',
-      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
-      shortDesc: 'The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a boy or girl.',
+      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pok├®mon. This can be repeated each day to go through all of their Pok├®mon. The Pok├®mon you receive varies based on your gender",
       gen: 5,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/droppeditem.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Dropped Item',
+      shortDesc: 'The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a boy or girl.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/droppeditem.png'
     }
   ],
   [
     'dynamaxband',
     {
-      name: 'Dynamax Band',
-      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pokémon to Dynamax when at a Power Spot.',
+      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pok├®mon to Dynamax when at a Power Spot.',
       gen: 8,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dynamaxband.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Dynamax Band',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dynamaxband.png'
     }
   ],
   [
     'eggcard',
     {
-      name: 'Egg Card',
       desc: 'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
-      shortDesc: 'Might be used at the Pokémon Communication Centre.',
       gen: 2,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Egg Card',
+      shortDesc: 'Might be used at the Pok├®mon Communication Centre.'
     }
   ],
   [
     'elevatorkey',
     {
-      name: 'Elevator Key',
       desc: "A card key that activates the elevator in Lysandre Labs. It is emblazoned with Team Flare's logo.",
       gen: 7,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Elevator Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png'
     }
   ],
   [
     'endorsement',
     {
-      name: 'Endorsement',
       desc: "A letter of recommendation that you'll need in order to participate in the Gym Challenge.",
       gen: 8,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/endorsement.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Endorsement',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/endorsement.png'
     }
   ],
   [
     'enigmastone',
     {
-      name: 'Enigma Stone',
       desc: "A crystal ball that was excavated from the ground. It's a very beautiful stone that is covered with bits of rock and earth.",
       gen: 4,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmastone.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Enigma Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmastone.png'
     }
   ],
   [
     'enigmaticcard',
     {
-      name: 'Enigmatic Card',
       desc: 'A mysterious card. Written on it is a request for you to go to a guest room in an Akala motel on Route 8.',
       gen: 7,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmaticcard.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Enigmatic Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmaticcard.png'
     }
   ],
   [
     'eonflute',
     {
-      name: 'Eon Flute',
       desc: 'A flute that can be used to summon Latios or Latias no matter where you are.',
       gen: 6,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonflute.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Eon Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonflute.png'
     }
   ],
   [
     'eonticket',
     {
-      name: 'Eon Ticket',
       desc: 'The ticket required for sailing on a ferry to the Southern Island. Does Norman, the Petalburg Gym Leader, know a secret?!',
       gen: 3,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Eon Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png'
     }
   ],
   [
     'escaperope',
     {
-      name: 'Escape Rope',
       desc: 'A long and durable rope. Use it to escape instantly from locations like caves or dungeons. It can be used any number of times.',
       gen: 8,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/escaperope.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Escape Rope',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/escaperope.png'
     }
   ],
   [
     'expshare',
     {
-      name: 'Exp. Share',
-      desc: 'Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.',
+      desc: 'Turning on this special device will allow all the Pok├®mon on your team to receive Exp. Points from battles.',
       gen: 2,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/exp.share.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Exp. Share',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/exp.share.png'
     }
   ],
   [
     'explorerkit',
     {
-      name: 'Explorer Kit',
       desc: 'A bag filled with convenient tools for exploring. It provides access to the Underground in the Sinnoh region.',
       gen: 4,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/explorerkit.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Explorer Kit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/explorerkit.png'
     }
   ],
   [
     'famechecker',
     {
-      name: 'Fame Checker',
       desc: "A device that enables you to recall what you've heard and seen about famous people.",
       gen: 3,
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Fame Checker',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png'
     }
   ],
   [
     'fashioncase',
     {
-      name: 'Fashion Case',
+      desc: 'A lovely case to store colorful Props for your Pok├®mon to wear in a musical.',
       gen: 4,
-      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/fashioncase.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Fashion Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fashioncase.png'
     }
   ],
   [
     'fishingrod',
     {
-      name: 'Fishing Rod',
+      desc: 'Use it by the water to fish up various kinds of Pok├®mon.',
       gen: 1,
-      desc: 'Use it by the water to fish up various kinds of Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/fishingrod.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Fishing Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fishingrod.png'
     }
   ],
   [
     'foragebag',
     {
-      name: 'foragebag',
+      desc: '\tA bag to carry ingredients gathered during MallowÔÇÖs trial in the jungle.',
       gen: 7,
-      desc: '	A bag to carry ingredients gathered during Mallow’s trial in the jungle.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/foragebag.png',
-      keyItem: true
+      keyItem: true,
+      name: 'foragebag',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/foragebag.png'
     }
   ],
   [
     'gbsounds',
     {
-      name: 'GB Sounds',
-      gen: 4,
       desc: "A music player that allows you to listen to nostalgic songs. It's operated with the flip of a single switch.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gbsounds.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'GB Sounds',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gbsounds.png'
     }
   ],
   [
     'gsball',
     {
-      name: 'GS Ball',
-      gen: 2,
       desc: 'The mysterious BALL.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png',
+      gen: 2,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'GS Ball',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png'
     }
   ],
   [
     'galactickey',
     {
-      name: 'GS Ball',
-      gen: 4,
       desc: 'A card key for disengaging the security systems in the Galactic HQ. Losing it can result in punishment, apparently.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/galactickey.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'GS Ball',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galactickey.png'
     }
   ],
   [
     'gogoggles',
     {
-      name: 'Go-Goggles',
-      gen: 3,
       desc: 'Nifty goggles to protect eyes from desert sandstorms.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Go-Goggles',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png'
     }
   ],
   [
     'godstone',
     {
-      name: 'God Stone',
-      gen: 5,
       desc: 'A rare stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/godstone.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'God Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/godstone.png'
     }
   ],
   [
     'goldteeth',
     {
-      name: 'Gold Teeth',
-      gen: 1,
       desc: "A set of golden false teeth lost by the Safari Zone's warden. They make his smile sparkle.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/goldteeth.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Gold Teeth',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/goldteeth.png'
     }
   ],
   [
     'goodrod',
     {
-      name: 'Good Rod',
+      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pok├®mon.',
       gen: 1,
-      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/goodrod.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Good Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/goodrod.png'
     }
   ],
   [
     'gracidea',
     {
-      name: 'Gracidea',
-      gen: 4,
       desc: 'A flower sometimes bundled in bouquets to convey gratitude on special occasions, such as birthdays.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gracidea.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Gracidea',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gracidea.png'
     }
   ],
   [
     'gram1',
     {
-      name: 'Gram 1',
-      gen: 5,
       desc: 'An important letter that Wingull delivers.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram1.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Gram 1',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram1.png'
     }
   ],
   [
     'gram2',
     {
-      name: 'Gram 2',
-      gen: 5,
       desc: 'An important letter that Wingull delivers.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram2.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Gram 2',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram2.png'
     }
   ],
   [
     'gram3',
     {
-      name: 'Gram 3',
-      gen: 5,
       desc: 'An important letter that Wingull delivers.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram3.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Gram 3',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram3.png'
     }
   ],
   [
     'greenpetal',
     {
-      name: 'Green Petal',
-      gen: 7,
       desc: "A pressed flower petal you receive from Mallow during Mina's trial. The goal is to collect seven different kinds of petals.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/greenpetal.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Green Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/greenpetal.png'
     }
   ],
   [
     'grubbyhanky',
     {
-      name: 'Grubby Hanky',
+      desc: 'A handkerchief dropped by a regular at Caf├® Warehouse. It smells faintly like a Pok├®mon.',
       gen: 5,
-      desc: 'A handkerchief dropped by a regular at Café Warehouse. It smells faintly like a Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/grubbyhanky.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Grubby Hanky',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/grubbyhanky.png'
     }
   ],
   [
     'hitechearbuds',
     {
-      name: 'Hi-tech Earbuds',
-      gen: 8,
       desc: 'Strange earbuds that allow you to freely control the volume of various sounds.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/hi-techearbuds.png',
-      keyItem: true
+      gen: 8,
+      keyItem: true,
+      name: 'Hi-tech Earbuds',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/hi-techearbuds.png'
     }
   ],
   [
     'holocaster',
     {
-      name: 'Holo Caster',
-      gen: 6,
       desc: "A device that allows users to receive and view hologram clips at any time. It's also used to chat with others.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/holocaster.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Holo Caster',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/holocaster.png'
     }
   ],
   [
     'honorofkalos',
     {
-      name: 'Honor of Kalos',
-      gen: 6,
       desc: 'A precious symbol that is awarded only to an individual who has done great things for the Kalos region.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/honorofkalos.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Honor of Kalos',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/honorofkalos.png'
     }
   ],
   [
     'ilimasnormaliumz',
     {
-      name: "Ilima's Normalium Z",
-      gen: 7,
       desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
-      specialSprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png",
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: "Ilima's Normalium Z",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
     }
   ],
   [
     'intriguingstone',
     {
-      name: 'Intriguing Stone',
-      gen: 6,
       desc: "A rather curious stone that might appear valuable to some. It's all in the eye of the beholder.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/intriguingstone.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Intriguing Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/intriguingstone.png'
     }
   ],
   [
     'itemfinder',
     {
-      name: 'itemfinder',
-      gen: 1,
       desc: 'A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png',
+      gen: 1,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'itemfinder',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png'
     }
   ],
   [
     'jadeorb',
     {
-      name: 'Jade Orb',
-      gen: 4,
       desc: "A shiny green orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/jadeorb.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Jade Orb',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/jadeorb.png'
     }
   ],
   [
     'journal',
     {
-      name: 'journal',
-      gen: 4,
       desc: 'A notebook that keeps a day-to-day record of your adventure so far.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/journal.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'journal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/journal.png'
     }
   ],
   [
     'keystone',
     {
-      name: 'Key Stone',
+      desc: 'A stone filled with an unexplained power. It makes Pok├®mon that battle with a Mega Stone Mega Evolve.',
       gen: 6,
-      desc: 'A stone filled with an unexplained power. It makes Pokémon that battle with a Mega Stone Mega Evolve.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keystone.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Key Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keystone.png'
     }
   ],
   [
     'keytoroom1',
     {
-      name: 'Key to Room 1',
-      gen: 6,
       desc: 'A key that opens a door inside Sea Mauville',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom1.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 1',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom1.png'
     }
   ],
   [
     'keytoroom2',
     {
-      name: 'Key to Room 2',
-      gen: 6,
       desc: 'A key that opens a door inside Sea Mauville',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom2.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 2',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom2.png'
     }
   ],
   [
     'keytoroom4',
     {
-      name: 'Key to Room 4',
-      gen: 6,
       desc: 'A key that opens a door inside Sea Mauville',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom4.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 4',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom4.png'
     }
   ],
   [
     'keytoroom6',
     {
-      name: 'Key to Room 6',
-      gen: 6,
       desc: 'A key that opens a door inside Sea Mauville',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom6.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 6',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom6.png'
     }
   ],
   [
     'leftpokeball',
     {
-      name: 'Left Poké Ball',
+      desc: "A Pok├® Ball with a Pok├®mon that lost its Trainer inside. It seems to be from Ula'ula Island.",
       gen: 7,
-      desc: "A Poké Ball with a Pokémon that lost its Trainer inside. It seems to be from Ula'ula Island.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Left Pok├® Ball',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png'
     }
   ],
   [
     'lenscase',
     {
-      name: 'Lens Case',
-      gen: 6,
       desc: 'A rather chic-looking case for carrying contact lenses.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lenscase.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Lens Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lenscase.png'
     }
   ],
   [
     'letter',
     {
-      name: 'Letter',
-      gen: 3,
       desc: 'An extremely important letter to Steven from the President of Devon Corporation.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Letter',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png'
     }
   ],
   [
     'libertypass',
     {
-      name: 'Liberty Pass',
-      gen: 5,
       desc: 'A special pass to go to Liberty Garden. Board the ship in Castelia City.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/libertypass.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Liberty Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/libertypass.png'
     }
   ],
   [
     'liftkey',
     {
-      name: 'Lift Key',
-      gen: 1,
       desc: 'A key that operates the elevator in the Team Rocket Hideout. It bears the Team Rocket logo.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/liftkey.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Lift Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/liftkey.png'
     }
   ],
   [
     'lightstone',
     {
-      name: 'Light Stone',
-      gen: 5,
       desc: "Reshiram's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lightstone.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Light Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lightstone.png'
     }
   ],
   [
     'lockcapsule',
     {
-      name: 'Lock Capsule',
-      gen: 4,
       desc: 'A sturdy Capsule that can only be opened with a special key.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lockcapsule.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Lock Capsule',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lockcapsule.png'
     }
   ],
   [
     'lookerticket',
     {
-      name: 'Looker Ticket',
-      gen: 6,
       desc: "A ticket that was handmade by Looker. It's decorated with a liberal amount of glittery paint.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lookerticket.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Looker Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lookerticket.png'
     }
   ],
   [
     'lootsack',
     {
-      name: 'Loot Sack',
-      gen: 4,
       desc: 'A sturdy, spacious bag that is used to carry any treasures or loot obtained in the coal mine.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lootsack.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Loot Sack',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lootsack.png'
     }
   ],
   [
     'lostitem',
     {
-      name: 'Lost Item',
-      gen: 2,
       desc: 'The Clefairy doll that was lost by the Copycat.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lostitem.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Lost Item',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lostitem.png'
     }
   ],
   [
     'lunarwing',
     {
-      name: 'Lunar Wing',
-      gen: 4,
       desc: "A feather that glows like the moon. It's said to possess the power to dispel nightmares.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lunarwing.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Lunar Wing',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lunarwing.png'
     }
   ],
   [
     'machbike',
     {
-      name: 'Mach Bike',
-      gen: 3,
       desc: 'This folding Bike more than doubles your movement speed.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Mach Bike',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png'
     }
   ],
   [
     'machinepart',
     {
-      name: 'Machine Part',
-      gen: 2,
       desc: 'An important part of a machine that was stolen from the Power Plant.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/machinepart.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Machine Part',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/machinepart.png'
     }
   ],
   [
     'magmaemblem',
     {
-      name: 'Magma Emblem',
-      gen: 3,
       desc: "A medal-like item in the same shape as Team Magma's mark.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Magma Emblem',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png'
     }
   ],
   [
     'magmastone',
     {
-      name: 'Magma Stone',
-      gen: 4,
       desc: 'A stone formed by boulders melting in intensely hot magma, then hardening. Magma remains sealed inside it.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmastone.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Magma Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmastone.png'
     }
   ],
   [
     'magmasuit',
     {
-      name: 'Magma Suit',
-      gen: 6,
       desc: 'A suit made with the collective technological know-how of Team Magma. It can withstand any impact.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmasuit.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Magma Suit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmasuit.png'
     }
   ],
   [
     'makeupbag',
     {
-      name: 'Make-Up Bag',
-      gen: 7,
       desc: 'A rather chic-looking case for carrying lipsticks.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/make-upbag.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Make-Up Bag',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/make-upbag.png'
     }
   ],
   [
     'medalbox',
     {
-      name: 'Medal Box',
-      gen: 5,
       desc: 'A box-shaped machine that stores Medals and Medal information.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/medalbox.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Medal Box',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/medalbox.png'
     }
   ],
   [
     'megabracelet',
     {
-      name: 'Mega Bracelet',
+      desc: 'This cuff contains an untold power that somehow enables Pok├®mon carrying a Mega Stone to Mega Evolve in battle.',
       gen: 6,
-      desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Mega Bracelet',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
     }
   ],
   [
     'megaring',
     {
-      name: 'Mega Ring',
+      desc: 'This ring contains an untold power that somehow enables Pok├®mon carrying a Mega Stone to Mega Evolve in battle.',
       gen: 6,
-      desc: 'This ring contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/megaring.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Mega Ring',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/megaring.png'
     }
   ],
   [
     'membercard',
     {
-      name: 'Member Card',
-      gen: 4,
       desc: 'A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/membercard.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Member Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/membercard.png'
     }
   ],
   [
     'meteorite',
     {
-      name: 'Meteorite',
-      gen: 3,
       desc: "A meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it's shining with seven colors of light.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Meteorite',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png'
     }
   ],
   [
     'meteoriteshard',
     {
-      name: 'Meteorite Shard',
-      gen: 6,
       desc: "One of the fragments of a Meteorite from Granite Cave. It's faintly warm to the touch.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteoriteshard.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Meteorite Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteoriteshard.png'
     }
   ],
   [
     'moonflute',
     {
-      name: 'Moon Flute',
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pok├®mon of the moon.',
       gen: 7,
-      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the moon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/moonflute.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Moon Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/moonflute.png'
     }
   ],
   [
     'mysteryegg',
     {
-      name: 'Mystery Egg',
+      desc: "A mysterious Egg obtained from Mr. Pok├®mon. What's in the Egg is unknown.",
       gen: 2,
-      desc: "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysteryegg.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Mystery Egg',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysteryegg.png'
     }
   ],
   [
     'mysticticket',
     {
-      name: 'MysticTicket',
+      desc: '\tA ticket required to board the ship to Navel Rock. It glows with a mystic light.',
       gen: 3,
-      desc: '	A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'MysticTicket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png'
     }
   ],
   [
     'nlunarizer',
     {
-      name: 'N-Lunarizer',
-      gen: 7,
       desc: 'A machine to fuse and separate Necrozma, which needs light, and Lunala.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-lunarizer.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'N-Lunarizer',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-lunarizer.png'
     }
   ],
   [
     'nsolarizer',
     {
-      name: 'N-Solarizer',
-      gen: 7,
       desc: 'A machine to fuse and separate Necrozma, which needs light, and Solgaleo.',
+      gen: 7,
+      name: 'N-Solarizer',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/n-solarizer.png'
     }
   ],
   [
     'oaksletter',
     {
-      name: "Oak's Letter",
-      gen: 4,
       desc: 'A letter from Professor Oak. Written in it is a request for you to go to Route 224.',
-      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sletter.png",
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: "Oak's Letter",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sletter.png"
     }
   ],
   [
     'oaksparcel',
     {
-      name: "Oak's Parcel",
+      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pok├®mon Mart.",
       gen: 1,
-      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png",
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: "Oak's Parcel",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png"
     }
   ],
   [
     'oldcharm',
     {
-      name: 'Old Charm',
+      desc: 'An ancient good-luck charm made of Pok├®mon bones to be taken to the elder of Celestic Town.',
       gen: 4,
-      desc: 'An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldcharm.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Old Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldcharm.png'
     }
   ],
   [
     'oldletter',
     {
-      name: 'Old Letter',
-      gen: 8,
       desc: 'A letter entrusted to you by a girl, to be delivered to a boy. Strangely, it looks old to you.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldletter.png',
-      keyItem: true
+      gen: 8,
+      keyItem: true,
+      name: 'Old Letter',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldletter.png'
     }
   ],
   [
     'oldrod',
     {
-      name: 'Old Rod',
+      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pok├®mon.',
       gen: 1,
-      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldrod.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Old Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldrod.png'
     }
   ],
   [
     'oldseamap',
     {
-      name: 'Old Sea Map',
-      gen: 3,
       desc: 'A chart that can take you to Faraway Island.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Old Sea Map',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png'
     }
   ],
   [
     'orangepetal',
     {
-      name: 'Orange Petal',
-      gen: 7,
       desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/orangepetal.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Orange Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/orangepetal.png'
     }
   ],
   [
     'ovalcharm',
     {
-      name: 'Oval Charm',
+      desc: 'An oval charm said to increase the chance of Pok├®mon Eggs being found at the Nursery.',
       gen: 5,
-      desc: 'An oval charm said to increase the chance of Pokémon Eggs being found at the Nursery.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ovalcharm.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Oval Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ovalcharm.png'
     }
   ],
   [
     'pairoftickets',
     {
-      name: 'Pair of Tickets',
-      gen: 6,
       desc: 'Tickets for two to the astronomical show being held at the Mossdeep Space Center.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pairoftickets.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Pair of Tickets',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pairoftickets.png'
     }
   ],
   [
     'palpad',
     {
-      name: 'palpad',
-      gen: 4,
       desc: 'A convenient notepad that is used to register your friends and friend codes and keep a record of your gameplay.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/palpad.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'palpad',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/palpad.png'
     }
   ],
   [
     'parcel',
     {
-      name: 'Parcel',
-      gen: 4,
       desc: "A parcel entrusted into your care. You're supposed to deliver it to your childhood friend who left Twinleaf Town.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/parcel.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Parcel',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/parcel.png'
     }
   ],
   [
     'pass',
     {
-      name: 'Pass',
-      gen: 2,
       desc: "A pass required for riding the Magnet Train. It allows you to ride whenever and however much you'd like.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pass.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pass.png'
     }
   ],
   [
     'permit',
     {
-      name: 'Permit',
-      gen: 5,
       desc: 'A permit that is needed to enter the Nature Preserve. Not many know about it.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/permit.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Permit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/permit.png'
     }
   ],
   [
     'photoalbum',
     {
-      name: 'Photo Album',
-      gen: 4,
       desc: 'A nice photo album for storing all the photos taken along your adventure.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/photoalbum.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Photo Album',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/photoalbum.png'
     }
   ],
   [
     'pinkpetal',
     {
-      name: 'Pink Petal',
-      gen: 7,
       desc: "A pressed flower petal you receive from Mina during Mina's trial. The goal is to collect seven different kinds of petals.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pinkpetal.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Pink Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pinkpetal.png'
     }
   ],
   [
     'plasmacard',
     {
-      name: 'Plasma Card',
-      gen: 5,
       desc: 'A card key needed to enter the password inside the Plasma Frigate.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/plasmacard.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Plasma Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/plasmacard.png'
     }
   ],
   [
     'poffincase',
     {
-      name: 'Poffin Case',
-      gen: 4,
       desc: 'A case for storing Poffins cooked from Berries.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/poffincase.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Poffin Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/poffincase.png'
     }
   ],
   [
     'pointcard',
     {
-      name: 'Point Card',
-      gen: 4,
       desc: 'A card that lists how many Battle Points you have earned.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pointcard.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Point Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pointcard.png'
     }
   ],
   [
     'pokeradar',
     {
-      name: 'Poké Radar',
+      desc: 'A tool that can search out Pok├®mon that are hiding in the tall grass. Its battery is recharged as you walk.',
       gen: 4,
-      desc: 'A tool that can search out Pokémon that are hiding in the tall grass. Its battery is recharged as you walk.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeradar.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Pok├® Radar',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeradar.png'
     }
   ],
   [
     'pokeblockkit',
     {
-      name: 'Pokéblock Kit',
+      desc: 'A set containing a Berry Blender for making Pok├®blocks and a Pok├®block Case for storing Pok├®blocks.',
       gen: 6,
-      desc: 'A set containing a Berry Blender for making Pokéblocks and a Pokéblock Case for storing Pokéblocks.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockkit.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Pok├®block Kit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockkit.png'
     }
   ],
   [
     'pokeblockcase',
     {
-      name: 'Pokéblock Case',
+      desc: 'A case for holding Pok├®block made with a Berry Blender.',
       gen: 3,
-      desc: 'A case for holding Pokéblock made with a Berry Blender.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Pok├®block Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png'
     }
   ],
   [
     'pokeflute',
     {
-      name: 'Poké Flute',
+      desc: 'A flute that can play with such a beautiful tone that even sleeping Pok├®mon find themselves woken up.',
       gen: 1,
-      desc: 'A flute that can play with such a beautiful tone that even sleeping Pokémon find themselves woken up.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeflute.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Pok├® Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeflute.png'
     }
   ],
   [
     'pokemonboxlink',
     {
-      name: 'Pokémon Box Link',
+      desc: "A device that allows you to access the Pok├®mon storage system. There are some places where it won't work.",
       gen: 8,
-      desc: "A device that allows you to access the Pokémon storage system. There are some places where it won't work.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Pok├®mon Box Link',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png'
     }
   ],
   [
     'powderjar',
     {
-      name: 'Powder Jar',
-      gen: 3,
       desc: 'A jar for storing Berry Powder made using a Berry Crusher.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Powder Jar',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png'
     }
   ],
   [
     'powerplantpass',
     {
-      name: 'Power Plant Pass',
-      gen: 6,
       desc: 'This pass serves as an ID card for gaining access to the Power Plant that lies along Route 13.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/powerplantpass.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Power Plant Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/powerplantpass.png'
     }
   ],
   [
     'prisonbottle',
     {
-      name: 'Prison Bottle',
+      desc: 'A bottle believed to have been used to seal away the power of a certain Pok├®mon long, long ago.',
       gen: 6,
-      desc: 'A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/prisonbottle.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Prison Bottle',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/prisonbottle.png'
     }
   ],
   [
     'profsletter',
     {
-      name: "Prof's Letter",
-      gen: 6,
       desc: 'A letter that Professor Sycamore wrote to your mother. A faint but pleasant perfume seems to cling to the paper.',
-      specialSprite: "https://www.serebii.net/itemdex/sprites/prof'sletter.png",
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: "Prof's Letter",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/prof'sletter.png"
     }
   ],
   [
     'professorsmask',
     {
-      name: "Professor's Mask",
-      gen: 7,
       desc: 'The mask that belongs to The Masked Royal. This pro wrestler apparently sews his mask on a machine himself.',
-      specialSprite: "https://www.serebii.net/itemdex/sprites/professor'smask.png",
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: "Professor's Mask",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/professor'smask.png"
     }
   ],
   [
     'propcase',
     {
-      name: 'Prop Case',
+      desc: 'A lovely case to store colorful Props for your Pok├®mon to wear in a musical.',
       gen: 5,
-      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/propcase.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Prop Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/propcase.png'
     }
   ],
   [
     'purplepetal',
     {
-      name: 'Purple Petal',
-      gen: 7,
       desc: "A pressed flower petal you receive from Nanu during Mina's trial. The goal is to collect seven different kinds of petals.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/purplepetal.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Purple Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/purplepetal.png'
     }
   ],
   [
     'ragecandybar',
     {
-      name: 'Rage Candy Bar',
+      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pok├®mon.",
       gen: 2,
-      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pokémon.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ragecandybar.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Rage Candy Bar',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ragecandybar.png'
     }
   ],
   [
     'rainbowflower',
     {
-      name: 'Rainbow Flower',
-      gen: 7,
       desc: "A flower made of the petals you received from captains. It's proof that your growth has been recognized by them.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowflower.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Rainbow Flower',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowflower.png'
     }
   ],
   [
     'rainbowpass',
     {
-      name: 'Rainbow Pass',
-      gen: 3,
       desc: 'A pass for ferries between Vermilion and the Sevii Islands. It features a drawing of a rainbow.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Rainbow Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png'
     }
   ],
   [
     'rainbowwing',
     {
-      name: 'Rainbow Wing',
-      gen: 2,
       desc: 'A mystical rainbow feather that sparkles.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowwing.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Rainbow Wing',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowwing.png'
     }
   ],
   [
     'redchain',
     {
-      name: 'Red Chain',
+      desc: 'A mythical chain that is said to link the Legendary Pok├®mon that created the Sinnoh region.',
       gen: 4,
-      desc: 'A mythical chain that is said to link the Legendary Pokémon that created the Sinnoh region.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redchain.png',
-      keyItem: true
-    }
-  ],
-  [
-    'redorb',
-    {
-      name: 'Red Orb',
-      gen: 3,
-      desc: "A shiny red orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Red Chain',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redchain.png'
     }
   ],
   [
     'redpetal',
     {
-      name: 'Red Petal',
-      gen: 7,
       desc: "A pressed flower petal you receive from Kiawe during Mina's trial. The goal is to collect seven different kinds of petals.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redpetal.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Red Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redpetal.png'
     }
   ],
   [
     'redscale',
     {
-      name: 'Red Scale',
-      gen: 2,
       desc: 'A scale from a red Gyarados. It glows red like a flame.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redscale.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Red Scale',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redscale.png'
     }
   ],
   [
     'revealglass',
     {
-      name: 'Reveal Glass',
+      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pok├®mon to its original shape.",
       gen: 5,
-      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pokémon to its original shape.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/revealglass.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Reveal Glass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/revealglass.png'
     }
   ],
   [
     'ridepager',
     {
-      name: 'Ride Pager',
+      desc: 'By entering certain numbers on this pager, you can summon Ride Pok├®mon in an instant.',
       gen: 7,
-      desc: 'By entering certain numbers on this pager, you can summon Ride Pokémon in an instant.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ridepager.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Ride Pager',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ridepager.png'
     }
   ],
   [
     'rm1key',
     {
-      name: 'Rm. 1 Key',
-      gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Rm. 1 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png'
     }
   ],
   [
     'rm2key',
     {
-      name: 'Rm. 2 Key',
-      gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Rm. 2 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png'
     }
   ],
   [
     'rm4key',
     {
-      name: 'Rm. 4 Key',
-      gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Rm. 4 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png'
     }
   ],
   [
     'rm6key',
     {
-      name: 'Rm. 6 Key',
-      gen: 3,
       desc: 'A key that opens a door inside the Abandoned Ship.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Rm. 6 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png'
     }
   ],
   [
     'rollerskates',
     {
-      name: 'Roller Skates',
-      gen: 6,
       desc: 'Attaches roller skates to the bottom of your shoes, allowing you to glide quickly around and perform tricks.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rollerskates.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Roller Skates',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rollerskates.png'
     }
   ],
   [
     'rotombike',
     {
-      name: 'Rotom Bike',
+      desc: 'This bike can be combined with the Pok├®mon Rotom to not only do a turbo boost but also run on the water.',
       gen: 8,
-      desc: 'This bike can be combined with the Pokémon Rotom to not only do a turbo boost but also run on the water.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotombike.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Rotom Bike',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotombike.png'
     }
   ],
   [
     'rotomcatalog',
     {
-      name: 'Rotom Catalog',
-      gen: 8,
       desc: 'A catalog of devices that Rotom like. Use the catalog to have Rotom hop in and out of the various devices listed within.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotomcatalog.png',
-      keyItem: true
+      gen: 8,
+      keyItem: true,
+      name: 'Rotom Catalog',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotomcatalog.png'
     }
   ],
   [
     'ruby',
     {
-      name: 'Ruby',
-      gen: 3,
       desc: 'An exquisitely beautiful gem that has a red glow. It symbolizes passion.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Ruby',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png'
     }
   ],
   [
     'rulebook',
     {
-      name: 'Rule Book',
-      gen: 4,
       desc: 'It lists the rules for holding battles. For Link Battles, you may choose which set of rules you wish to use.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rulebook.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Rule Book',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rulebook.png'
     }
   ],
   [
     'ssticket',
     {
-      name: 'S.S. Ticket',
-      gen: 1,
       desc: 'A ticket required for sailing on the ferry S.S. Aqua. It has a drawing of a ship on its front.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/s.s.ticket.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'S.S. Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/s.s.ticket.png'
     }
   ],
   [
     'sapphire',
     {
-      name: 'Sapphire',
-      gen: 3,
       desc: 'An exquisitely beautiful gem that has a blue glow. It symbolizes honesty.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Sapphire',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png'
     }
   ],
   [
     'scanner',
     {
-      name: 'Scanner',
-      gen: 6,
       desc: 'A device found inside Sea Mauville.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png',
+      gen: 6,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Scanner',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png'
     }
   ],
   [
     'sealbag',
     {
-      name: 'Seal Bag',
+      desc: 'A tiny bag that can hold 10 Seals for decorating Pok├® Balls.',
       gen: 4,
-      desc: 'A tiny bag that can hold 10 Seals for decorating Poké Balls.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealbag.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Seal Bag',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealbag.png'
     }
   ],
   [
     'sealcase',
     {
-      name: 'Seal Case',
+      desc: 'A case for storing Seals that can be applied to the exteriors of Pok├® Balls.',
       gen: 4,
-      desc: 'A case for storing Seals that can be applied to the exteriors of Poké Balls.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealcase.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Seal Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealcase.png'
     }
   ],
   [
     'secretkey',
     {
-      name: 'Secret Key',
-      gen: 1,
       desc: 'A high-tech key that has to be used at a specific location. It emits a special electronic signal to open a door.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretkey.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Secret Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretkey.png'
     }
   ],
   [
     'secretpotion',
     {
-      name: 'SecretPotion',
+      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pok├®mon of any ailment.',
       gen: 2,
-      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretpotion.png',
-      keyItem: true
+      keyItem: true,
+      name: 'SecretPotion',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretpotion.png'
     }
   ],
   [
     'shinycharm',
     {
-      name: 'Shiny Charm',
+      desc: 'A shiny charm said to increase the chance of finding a Shiny Pok├®mon in the wild.',
       gen: 5,
-      desc: 'A shiny charm said to increase the chance of finding a Shiny Pokémon in the wild.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/shinycharm.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Shiny Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/shinycharm.png'
     }
   ],
   [
     'silphscope',
     {
-      name: 'Silph Scope',
-      gen: 1,
       desc: 'A scope that lets you see what cannot usually be seen. It is made by Silph Co.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/silphscope.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Silph Scope',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/silphscope.png'
     }
   ],
   [
     'silverwing',
     {
-      name: 'Silver Wing',
-      gen: 2,
       desc: 'A strange, silvery feather that sparkles.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/silverwing.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Silver Wing',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/silverwing.png'
     }
   ],
   [
     'slowpoketail',
     {
-      name: 'Slowpoketail',
-      gen: 2,
       desc: 'A very tasty tail of something. It can be sold at a high price to shops.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/slowpoketail.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Slowpoketail',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/slowpoketail.png'
     }
   ],
   [
     'soniasbook',
     {
-      name: "Sonia's Book",
-      gen: 8,
       desc: "Professor Sonia's published writings. Her new discoveries about the Galar region's legends are recorded in this enjoyable read.",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/sonia'sbook.png",
-      keyItem: true
+      gen: 8,
+      keyItem: true,
+      name: "Sonia's Book",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/sonia'sbook.png"
     }
   ],
   [
     'sootsack',
     {
-      name: 'sootsack',
+      desc: '\tA sack used to gather and hold volcanic ash.',
       gen: 3,
-      desc: '	A sack used to gather and hold volcanic ash.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png',
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'sootsack',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png'
     }
   ],
   [
     'sparklingstone',
     {
-      name: 'Sparkling Stone',
+      desc: 'A stone entrusted by a Pok├®mon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
       gen: 7,
-      desc: 'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sparklingstone.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Sparkling Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sparklingstone.png'
     }
   ],
   [
     'sprayduck',
     {
-      name: 'Sprayduck',
-      gen: 4,
       desc: 'A watering can shaped like a Psyduck. It helps promote the healthy growth of any Berries planted in good, soft soil.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprayduck.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Sprayduck',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprayduck.png'
     }
   ],
   [
     'sprinklotad',
     {
-      name: 'Sprinklotad',
-      gen: 6,
       desc: 'A watering can shaped like a Lotad. It helps promote the healthy growth of any Berries planted in good, soft soil.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprinklotad.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Sprinklotad',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprinklotad.png'
     }
   ],
   [
     'squirtbottle',
     {
-      name: 'Squirtbottle',
-      gen: 2,
       desc: 'A bottle used for watering plants in the Berry Pots.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/squirtbottle.png',
-      keyItem: true
+      gen: 2,
+      keyItem: true,
+      name: 'Squirtbottle',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/squirtbottle.png'
     }
   ],
   [
     'storagekey',
     {
-      name: 'Storage Key',
-      gen: 4,
       desc: "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/storagekey.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Storage Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/storagekey.png'
     }
   ],
   [
     'suitekey',
     {
-      name: 'Suite Key',
-      gen: 4,
       desc: 'A key to one of the suites at a certain luxury hotel by a lake. For some odd reason, it often disappears.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/suitekey.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Suite Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/suitekey.png'
     }
   ],
   [
     'sunflute',
     {
-      name: 'Sun Flute',
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pok├®mon of the sun.',
       gen: 7,
-      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the sun.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sunflute.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Sun Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sunflute.png'
     }
   ],
   [
     'superrod',
     {
-      name: 'Super Rod',
+      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pok├®mon.',
       gen: 1,
-      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/superrod.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Super Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/superrod.png'
     }
   ],
   [
     'surgebadge',
     {
-      name: 'Surge Badge',
-      gen: 7,
       desc: 'A novelty badge that you can receive at the Kantonian Gym. Rumor has it that it imitates the Badge of a Gym somewhere.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/surgebadge.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Surge Badge',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/surgebadge.png'
     }
   ],
   [
     'tmcase',
     {
-      name: 'TM Case',
-      gen: 3,
       desc: "A case that holds TMs and HMs. It is attached to the Bag's compartment for important items.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'TM Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png'
     }
   ],
   [
     'tmvpass',
     {
-      name: 'TMV Pass',
-      gen: 6,
       desc: 'A commuter pass that allows the holder to ride the TMV between Lumiose City and Kiloude City at any time.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmvpass.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'TMV Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmvpass.png'
     }
   ],
   [
     'tea',
     {
-      name: 'tea',
-      gen: 3,
       desc: 'Aromatic tea that has a slightly bitter taste. It soothes a dry throat.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tea.png',
-      keyItem: true
+      gen: 3,
+      keyItem: true,
+      name: 'tea',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tea.png'
     }
   ],
   [
     'teachytv',
     {
-      name: 'Teachy TV',
-      gen: 3,
       desc: 'A television set that is tuned to a program with useful tips for novice Trainers.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Teachy TV',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png'
     }
   ],
   [
     'tidalbell',
     {
-      name: 'Tidal Bell',
-      gen: 1,
       desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tidalbell.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Tidal Bell',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tidalbell.png'
     }
   ],
   [
     'townmap',
     {
-      name: 'Town Map',
-      gen: 1,
       desc: 'A very convenient map that can be viewed anytime. It even shows you your present location in the region.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/townmap.png',
-      keyItem: true
+      gen: 1,
+      keyItem: true,
+      name: 'Town Map',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/townmap.png'
     }
   ],
   [
     'traveltrunk',
     {
-      name: 'Travel Trunk',
-      gen: 6,
       desc: 'A light and yet incredibly effective trunk, which can contain every last piece of clothing that can be bought.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png',
-      keyItem: true
+      gen: 6,
+      keyItem: true,
+      name: 'Travel Trunk',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png'
     }
   ],
   [
     'tripass',
     {
-      name: 'tripass',
-      gen: 3,
       desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'tripass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
     }
   ],
   [
     'unownreport',
     {
-      name: 'Unown Report',
-      gen: 4,
       desc: 'A report of all the discovered kinds of Unown.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Unown Report',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png'
     }
   ],
   [
     'vsrecorder',
     {
-      name: 'Vs. Recorder',
-      gen: 5,
       desc: 'An amazing device that can record a battle between friends or the battles at certain special battle facilities.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Vs. Recorder',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png'
     }
   ],
   [
     'vsseeker',
     {
-      name: 'Vs. Seeker',
-      gen: 3,
       desc: 'A device that indicates Trainers who want to battle. Its battery charges while you walk.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png',
-      keyItem: true
+      gen: 3,
+      keyItem: true,
+      name: 'Vs. Seeker',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png'
     }
   ],
   [
     'wailmerpail',
     {
-      name: 'Wailmer Pail',
-      gen: 3,
       desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png',
+      gen: 3,
+      isNonstandard: 'Past',
       keyItem: true,
-      isNonstandard: 'Past'
+      name: 'Wailmer Pail',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'
     }
   ],
   [
     'wishingstar',
     {
-      name: 'Wishing Star',
-      gen: 8,
       desc: "A stone found in the Galar region with a mysterious power. It's said that your dreams come true if you find one.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/wishingstar.png',
-      keyItem: true
+      gen: 8,
+      keyItem: true,
+      name: 'Wishing Star',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wishingstar.png'
     }
   ],
   [
     'workskey',
     {
-      name: 'Works Key',
-      gen: 4,
       desc: 'A large key for operating the doors of the Valley Windworks in the canyon. It was held by a Team Galactic Grunt.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/workskey.png',
-      keyItem: true
+      gen: 4,
+      keyItem: true,
+      name: 'Works Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/workskey.png'
     }
   ],
   [
     'xtransceiver',
     {
-      name: 'Xtransceiver',
-      gen: 5,
       desc: 'A high-tech transceiver with a camera function. It allows up to four-way calls.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/xtransceiver.png',
-      keyItem: true
+      gen: 5,
+      keyItem: true,
+      name: 'Xtransceiver',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/xtransceiver.png'
     }
   ],
   [
     'yellowpetal',
     {
-      name: 'Yellow Petal',
-      gen: 7,
       desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/yellowpetal.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Yellow Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/yellowpetal.png'
     }
   ],
   [
     'zpowering',
     {
-      name: 'Z-Power Ring',
+      desc: 'A mysterious ring that enables Pok├®mon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
       gen: 7,
-      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-powerring.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Z-Power Ring',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-powerring.png'
     }
   ],
   [
     'zring',
     {
-      name: 'Z-Ring',
+      desc: 'A mysterious ring that enables Pok├®mon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
       gen: 7,
-      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-ring.png',
-      keyItem: true
+      keyItem: true,
+      name: 'Z-Ring',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-ring.png'
     }
   ],
   [
     'zygardecube',
     {
-      name: 'Zygarde Cube',
-      gen: 7,
       desc: 'An item to store Zygarde Cores and Cells. You can also use it to teach Zygarde moves.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png',
-      keyItem: true
+      gen: 7,
+      keyItem: true,
+      name: 'Zygarde Cube',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
     }
   ]
 ]);

@@ -2445,7 +2445,7 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'nidoranf',
     {
-      species: 'nidoran-f',
+      species: 'nidoranf',
       num: 29,
       types: ['Poison'],
       genderRatio: { male: 0, female: 1 },
@@ -2477,7 +2477,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 0,
         spd: 0,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: 'Nidoran♀'
     }
   ],
   [
@@ -2562,7 +2563,7 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'nidoranm',
     {
-      species: 'nidoran-m',
+      species: 'nidoranm',
       num: 32,
       types: ['Poison'],
       genderRatio: { male: 1, female: 0 },
@@ -2594,7 +2595,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 0,
         spd: 0,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: 'Nidoran♂'
     }
   ],
   [
@@ -5330,7 +5332,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 0,
         spd: 0,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: "Farfetch'd"
     }
   ],
   [
@@ -5370,7 +5373,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 0,
         spd: 0,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: "Farfetch'd"
     }
   ],
   [

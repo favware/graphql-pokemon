@@ -3696,7 +3696,8 @@ const entries: [string, Pokemon.DexEntry][] = [
         spa: 3,
         spd: 0,
         spe: 0
-      }
+      },
+      specialBulbapediaUrl: 'Porygon-Z'
     }
   ],
   [

@@ -20,6 +20,10 @@ import { Arg, Args } from 'type-graphql';
 export default class DexService {
   private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
   private tiers: Record<string, string> | undefined = undefined;
+  private readonly bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/wiki/';
+  private readonly bulbapediaBaseUrlPostfix = '_(Pokémon)';
+  private readonly serebiiBaseUrl = 'https://www.serebii.net/pokedex';
+  private readonly smogonBaseUrl = 'https://www.smogon.com/dex';
 
   public findByNum(@Arg('num') num: number): Pokemon.DexEntry | undefined {
     return pokedex.find((poke) => poke.num === num);
@@ -411,16 +415,14 @@ export default class DexService {
     addPropertyToClass(
       pokemonData,
       'serebiiPage',
-      this.parseSpeciesForSerebiiPage(basePokemonData.species, basePokemonData.num, smogonTier),
+      this.parseSpeciesForSerebiiPage(basePokemonData.baseSpecies ?? basePokemonData.species, basePokemonData.num, smogonTier),
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}serebiiPage`
     );
     addPropertyToClass(
       pokemonData,
       'bulbapediaPage',
-      basePokemonData.num >= 1
-        ? this.parseSpeciesForBulbapedia(basePokemonData.species, basePokemonData.baseForme || basePokemonData.baseSpecies)
-        : '',
+      basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData) : '',
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}bulbapediaPage`
     );
@@ -606,12 +608,16 @@ export default class DexService {
     return basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species;
   }
 
-  private parseSpeciesForBulbapedia(pokemonName: string, baseForme?: string) {
-    if (baseForme) {
-      pokemonName = Util.toTitleSnakeCase(baseForme);
+  private parseSpeciesForBulbapedia(pokemonData: Pokemon.DexEntry) {
+    if (pokemonData.specialBulbapediaUrl) {
+      return this.bulbapediaBaseUrlPrefix + pokemonData.specialBulbapediaUrl + this.bulbapediaBaseUrlPostfix;
     }
 
-    return `https://bulbapedia.bulbagarden.net/wiki/${pokemonName}_(Pokémon)`;
+    if (pokemonData.baseSpecies) {
+      return this.bulbapediaBaseUrlPrefix + pokemonData.baseSpecies + this.bulbapediaBaseUrlPostfix;
+    }
+
+    return this.bulbapediaBaseUrlPrefix + pokemonData.species + this.bulbapediaBaseUrlPostfix;
   }
 
   /**
@@ -624,14 +630,13 @@ export default class DexService {
     // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
     if (pokemonNumber <= 0) return '';
 
-    const baseUrl = 'https://www.serebii.net/pokedex';
     if (pokemonTier.toLowerCase() === 'past') {
       // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
-      return `${baseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
+      return `${this.serebiiBaseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
     }
 
     // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
-    return `${baseUrl}-swsh/${pokemonName}`;
+    return `${this.serebiiBaseUrl}-swsh/${pokemonName.replace(/ /g, '').toLowerCase()}`;
   }
 
   /**
@@ -644,14 +649,13 @@ export default class DexService {
     // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
     if (pokemonNumber <= 0) return '';
 
-    const baseUrl = 'https://www.smogon.com/dex';
     if (pokemonTier.toLowerCase() === 'past') {
       // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
-      return `${baseUrl}/sm/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
+      return `${this.smogonBaseUrl}/sm/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
     }
 
     // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
-    return `${baseUrl}/ss/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
+    return `${this.smogonBaseUrl}/ss/pokemon/${Util.toLowerHyphenCase(pokemonName.replace(/:/g, ''))}`;
   }
 
   private parseBaseStatsTotal(baseStats: Pokemon.Stats) {

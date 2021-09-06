@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.7.0](https://github.com/favware/graphql-pokemon/compare/v5.6.0...v5.7.0) (2021-09-06)
+
+
+### Features
+
+* add Effort Value yields to all Pokémon ([#444](https://github.com/favware/graphql-pokemon/issues/444)) ([dd69b57](https://github.com/favware/graphql-pokemon/commit/dd69b57f4562a8265b1655a4c3b16ab6177fbdc7))
+
+
+### Bug Fixes
+
+* fixed pre-evolution parsing for sirfetch'd ([09b03ff](https://github.com/favware/graphql-pokemon/commit/09b03ffe4518a652241c6d91a02fb5b6028ae8b4))
+* fixed some pokemon -> pokémon ([b9a9ffb](https://github.com/favware/graphql-pokemon/commit/b9a9ffbc4a743128cd55f530538440fba331264a))
+* fixed various bulbapedia, smogon, serebii and sprite urls ([8193ed3](https://github.com/favware/graphql-pokemon/commit/8193ed39ea1ffa5e8ef73893976a46f154cdcc4f))
+* fixed various incorrect symbols in flavour texts ([307a256](https://github.com/favware/graphql-pokemon/commit/307a25686296ecfae48d3d59a917f03f13e3f2f3))
+
 ## [5.6.0](https://github.com/favware/graphql-pokemon/compare/v5.5.9...v5.6.0) (2021-09-05)
 
 

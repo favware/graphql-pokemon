@@ -13,7 +13,7 @@ import { FuzzySearch } from '#utils/FuzzySearch';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
-import { Util } from '#utils/util';
+import { cast, toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
@@ -76,7 +76,7 @@ export class DexService {
       );
       addPropertyToClass(baseStatsData, 'speed', page.item.baseStats.spe, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.speed');
 
-      const evYieldsRequestedFields = Util.cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
+      const evYieldsRequestedFields = cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
       addPropertyToClass(evYieldsData, 'hp', page.item.evYields.hp, evYieldsRequestedFields, 'evYields.hp');
       addPropertyToClass(evYieldsData, 'attack', page.item.evYields.atk, evYieldsRequestedFields, 'evYields.attack');
       addPropertyToClass(evYieldsData, 'defense', page.item.evYields.def, evYieldsRequestedFields, 'evYields.defense');
@@ -181,7 +181,7 @@ export class DexService {
       percentageWithOrdinaryPokeballAtFullHealth: '0%'
     };
 
-    const genderEntryRequestedFields = Util.cast<GraphQLSet<keyof GenderEntry>>(requestedFields);
+    const genderEntryRequestedFields = cast<GraphQLSet<keyof GenderEntry>>(requestedFields);
     addPropertyToClass(
       genderData,
       'male',
@@ -197,7 +197,7 @@ export class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}gender.female`
     );
 
-    const baseStatsRequestedFields = Util.cast<GraphQLSet<keyof StatsEntry>>(requestedFields);
+    const baseStatsRequestedFields = cast<GraphQLSet<keyof StatsEntry>>(requestedFields);
     addPropertyToClass(
       baseStatsData,
       'hp',
@@ -241,7 +241,7 @@ export class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.speed`
     );
 
-    const evYieldsRequestedFields = Util.cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
+    const evYieldsRequestedFields = cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
     addPropertyToClass(
       evYieldsData,
       'hp',
@@ -285,7 +285,7 @@ export class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}evYields.speed`
     );
 
-    const abilitiesRequestedFields = Util.cast<GraphQLSet<keyof AbilitiesEntry>>(requestedFields);
+    const abilitiesRequestedFields = cast<GraphQLSet<keyof AbilitiesEntry>>(requestedFields);
     addPropertyToClass(
       abilitiesData,
       'first',
@@ -330,7 +330,7 @@ export class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}catchRate.percentageWithOrdinaryPokeballAtFullHealth`
     );
 
-    const dexDetailsFields = Util.cast<GraphQLSet<keyof DexDetails>>(requestedFields);
+    const dexDetailsFields = cast<GraphQLSet<keyof DexDetails>>(requestedFields);
     addPropertyToClass(pokemonData, 'abilities', abilitiesData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
     addPropertyToClass(pokemonData, 'gender', genderData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
     addPropertyToClass(pokemonData, 'baseStats', baseStatsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
@@ -350,7 +350,7 @@ export class DexService {
     );
     addPropertyToClass(pokemonData, 'evos', basePokemonData.evos, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}evos`);
     addPropertyToClass(pokemonData, 'prevo', basePokemonData.prevo, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}prevo`);
-    const smogonTier = this.tiers[Util.toLowerSingleWordCase(basePokemonData.species)] || 'Undiscovered';
+    const smogonTier = this.tiers[toLowerSingleWordCase(basePokemonData.species)] || 'Undiscovered';
     addPropertyToClass(pokemonData, 'smogonTier', smogonTier, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}smogonTier`);
     addPropertyToClass(pokemonData, 'height', basePokemonData.heightm, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}height`);
     addPropertyToClass(pokemonData, 'weight', basePokemonData.weightkg, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}weight`);
@@ -535,7 +535,7 @@ export class DexService {
       if (prevoPokemon) {
         preevolutionChain.push(
           this.findBySpeciesWithDetails(
-            this.findBySpecies(Util.toLowerSingleWordCase(prevoPokemon.species))!,
+            this.findBySpecies(toLowerSingleWordCase(prevoPokemon.species))!,
             skip,
             take,
             requestedFields,
@@ -561,11 +561,11 @@ export class DexService {
       basePokemonData.evos[0] !== parsingPokemon
     ) {
       for (const evo of basePokemonData.evos) {
-        const evoPokemon = this.findBySpecies(Util.toLowerSingleWordCase(evo));
+        const evoPokemon = this.findBySpecies(toLowerSingleWordCase(evo));
         if (evoPokemon) {
           evolutionChain.push(
             this.findBySpeciesWithDetails(
-              this.findBySpecies(Util.toLowerSingleWordCase(evoPokemon.species))!,
+              this.findBySpecies(toLowerSingleWordCase(evoPokemon.species))!,
               skip,
               take,
               requestedFields,
@@ -602,7 +602,7 @@ export class DexService {
 
   private parseDataForEvolutionRecursion(basePokemonData: Pokemon.DexEntry, evoChainData: Pokemon.DexEntry) {
     if (basePokemonData.forme && evoChainData.forme && basePokemonData.forme === evoChainData.forme) {
-      return Util.toLowerSingleWordCase(basePokemonData.species);
+      return toLowerSingleWordCase(basePokemonData.species);
     }
 
     return basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species;
@@ -651,11 +651,11 @@ export class DexService {
 
     if (pokemonTier.toLowerCase() === 'past') {
       // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
-      return `${this.smogonBaseUrl}/sm/pokemon/${Util.toLowerHyphenCase(pokemonName)}`;
+      return `${this.smogonBaseUrl}/sm/pokemon/${toLowerHyphenCase(pokemonName)}`;
     }
 
     // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
-    return `${this.smogonBaseUrl}/ss/pokemon/${Util.toLowerHyphenCase(pokemonName.replace(/:/g, ''))}`;
+    return `${this.smogonBaseUrl}/ss/pokemon/${toLowerHyphenCase(pokemonName.replace(/:/g, ''))}`;
   }
 
   private parseBaseStatsTotal(baseStats: Pokemon.Stats) {

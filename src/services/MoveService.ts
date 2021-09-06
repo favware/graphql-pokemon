@@ -5,7 +5,7 @@ import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { parseZCrystal, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
@@ -39,23 +39,23 @@ export class MoveService {
     addPropertyToClass(moveEntry, 'target', moveData.target, requestedFields);
     addPropertyToClass(moveEntry, 'isNonstandard', moveData.isNonstandard, requestedFields);
     addPropertyToClass(moveEntry, 'isGMax', moveData.isGMax, requestedFields);
-    addPropertyToClass(moveEntry, 'isZ', Util.parseZCrystal(moveData.isZ), requestedFields);
+    addPropertyToClass(moveEntry, 'isZ', parseZCrystal(moveData.isZ), requestedFields);
     addPropertyToClass(moveEntry, 'isFieldMove', moveData.isFieldMove, requestedFields);
     addPropertyToClass(moveEntry, 'maxMovePower', moveData.maxMovePower, requestedFields);
     addPropertyToClass(moveEntry, 'zMovePower', this.parseZMovePower(moveData.basePower, moveData.zMovePower), requestedFields);
     addPropertyToClass(
       moveEntry,
       'serebiiPage',
-      `https://www.serebii.net/attackdex-swsh/${Util.toLowerSingleWordCase(moveData.name)}.shtml`,
+      `https://www.serebii.net/attackdex-swsh/${toLowerSingleWordCase(moveData.name)}.shtml`,
       requestedFields
     );
     addPropertyToClass(
       moveEntry,
       'bulbapediaPage',
-      `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(moveData.name)}_(move)`,
+      `https://bulbapedia.bulbagarden.net/wiki/${toTitleSnakeCase(moveData.name)}_(move)`,
       requestedFields
     );
-    addPropertyToClass(moveEntry, 'smogonPage', `https://www.smogon.com/dex/ss/moves/${Util.toLowerHyphenCase(moveData.name)}`, requestedFields);
+    addPropertyToClass(moveEntry, 'smogonPage', `https://www.smogon.com/dex/ss/moves/${toLowerHyphenCase(moveData.name)}`, requestedFields);
 
     return moveEntry;
   }

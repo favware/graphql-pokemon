@@ -5,7 +5,7 @@ import { ItemEntry } from '#structures/ItemEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { preParseInput, toLowerSingleWordCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
@@ -29,7 +29,7 @@ export class ItemResolver {
     @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
   ): ItemEntry {
-    const preParsedItem = Util.preParseInput(item);
+    const preParsedItem = preParseInput(item);
     let entry = this.itemService.findByName(itemAliases.get(preParsedItem) ?? preParsedItem);
 
     // If there is no entry from a direct match then try a fuzzy match
@@ -45,7 +45,7 @@ export class ItemResolver {
         throw new Error(`Failed to get data for item: ${item}`);
       }
 
-      entry = this.itemService.findByName(Util.toLowerSingleWordCase(fuzzyEntry[0].item.name));
+      entry = this.itemService.findByName(toLowerSingleWordCase(fuzzyEntry[0].item.name));
 
       // If there is still no entry then throw an error
       if (!entry) {

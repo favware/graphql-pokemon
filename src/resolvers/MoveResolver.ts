@@ -5,7 +5,7 @@ import { MoveEntry } from '#structures/MoveEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { preParseInput, toLowerSingleWordCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
@@ -29,7 +29,7 @@ export class MoveResolver {
     @Args() { move, skip, take, reverse }: MovePaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
   ): MoveEntry {
-    const preParsedMove = Util.preParseInput(move);
+    const preParsedMove = preParseInput(move);
     let entry = this.moveService.findByName(moveAliases.get(preParsedMove) ?? preParsedMove);
 
     if (!entry) {
@@ -44,7 +44,7 @@ export class MoveResolver {
         throw new Error(`Failed to get data for move: ${move}`);
       }
 
-      entry = this.moveService.findByName(Util.toLowerSingleWordCase(fuzzyEntry[0].item.name));
+      entry = this.moveService.findByName(toLowerSingleWordCase(fuzzyEntry[0].item.name));
 
       // If there is still no entry then throw an error
       if (!entry) {

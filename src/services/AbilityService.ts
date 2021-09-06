@@ -5,7 +5,7 @@ import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { toTitleCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
@@ -33,7 +33,7 @@ export class AbilityService {
     addPropertyToClass(
       abilityEntry,
       'bulbapediaPage',
-      `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleCase(abilityData.name).replace(/ /g, '_')}_(Ability)`,
+      `https://bulbapedia.bulbagarden.net/wiki/${toTitleCase(abilityData.name).replace(/ /g, '_')}_(Ability)`,
       requestedFields
     );
     addPropertyToClass(

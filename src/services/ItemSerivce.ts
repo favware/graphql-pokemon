@@ -5,7 +5,7 @@ import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Arg, Args } from 'type-graphql';
 
@@ -35,23 +35,13 @@ export class ItemService {
     addPropertyToClass(
       itemEntry,
       'sprite',
-      itemData.specialSprite ?? `https://play.pokemonshowdown.com/sprites/itemicons/${Util.toLowerHyphenCase(itemData.name)}.png`,
+      itemData.specialSprite ?? `https://play.pokemonshowdown.com/sprites/itemicons/${toLowerHyphenCase(itemData.name)}.png`,
       requestedFields
     );
-    addPropertyToClass(
-      itemEntry,
-      'bulbapediaPage',
-      `https://bulbapedia.bulbagarden.net/wiki/${Util.toTitleSnakeCase(itemData.name)}`,
-      requestedFields
-    );
-    addPropertyToClass(
-      itemEntry,
-      'serebiiPage',
-      `https://www.serebii.net/itemdex/${Util.toLowerSingleWordCase(itemData.name)}.shtml`,
-      requestedFields
-    );
+    addPropertyToClass(itemEntry, 'bulbapediaPage', `https://bulbapedia.bulbagarden.net/wiki/${toTitleSnakeCase(itemData.name)}`, requestedFields);
+    addPropertyToClass(itemEntry, 'serebiiPage', `https://www.serebii.net/itemdex/${toLowerSingleWordCase(itemData.name)}.shtml`, requestedFields);
     if (!itemData.keyItem) {
-      addPropertyToClass(itemEntry, 'smogonPage', `https://www.smogon.com/dex/ss/items/${Util.toLowerHyphenCase(itemData.name)}`, requestedFields);
+      addPropertyToClass(itemEntry, 'smogonPage', `https://www.smogon.com/dex/ss/items/${toLowerHyphenCase(itemData.name)}`, requestedFields);
     }
 
     return itemEntry;

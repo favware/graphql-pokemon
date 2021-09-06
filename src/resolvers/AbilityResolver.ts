@@ -5,7 +5,7 @@ import { AbilityEntry } from '#structures/AbilityEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { preParseInput, toLowerSingleWordCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
@@ -29,7 +29,7 @@ export class AbilityResolver {
     @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
   ): AbilityEntry {
-    const preParsedAbility = Util.preParseInput(ability);
+    const preParsedAbility = preParseInput(ability);
     let entry = this.abilityService.findByName(abilityAliases.get(preParsedAbility) ?? preParsedAbility);
 
     // If there is no entry from a direct match then try a fuzzy match
@@ -45,7 +45,7 @@ export class AbilityResolver {
         throw new Error(`Failed to get data for ability: ${ability}`);
       }
 
-      entry = this.abilityService.findByName(Util.toLowerSingleWordCase(fuzzyEntry[0].item.name));
+      entry = this.abilityService.findByName(toLowerSingleWordCase(fuzzyEntry[0].item.name));
 
       // If there is still no entry then throw an error
       if (!entry) {

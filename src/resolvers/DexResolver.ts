@@ -8,7 +8,7 @@ import { DexEntry } from '#structures/DexEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Util } from '#utils/util';
+import { preParseInput, toLowerSingleWordCase } from '#utils/util';
 import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 
@@ -105,7 +105,7 @@ export class DexResolver {
     @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
     @getRequestedFields() requestedFields: GraphQLSet<unknown>
   ): Promise<DexDetails> {
-    const preParsedPokemon = Util.preParseInput(pokemon);
+    const preParsedPokemon = preParseInput(pokemon);
     let entry = this.dexService.findBySpecies(pokedexAliases.get(preParsedPokemon) ?? preParsedPokemon);
 
     // If there is no entry from a direct match then try a fuzzy match
@@ -116,7 +116,7 @@ export class DexResolver {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
 
-      entry = this.dexService.findBySpecies(Util.toLowerSingleWordCase(fuzzyEntry[0].item.species));
+      entry = this.dexService.findBySpecies(toLowerSingleWordCase(fuzzyEntry[0].item.species));
 
       // If there is still no entry then throw an error
       if (!entry) {

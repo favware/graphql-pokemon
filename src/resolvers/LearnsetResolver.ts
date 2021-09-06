@@ -6,7 +6,7 @@ import { MoveService } from '#services/MoveService';
 import { LearnsetEntry } from '#structures/LearnsetEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import { Util } from '#utils/util';
+import { toLowerSingleWordCase } from '#utils/util';
 import { Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(LearnsetEntry)
@@ -66,7 +66,7 @@ export class LearnsetResolver {
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = Util.toLowerSingleWordCase(fuzzyEntry[0].item.species);
+      pokemon = toLowerSingleWordCase(fuzzyEntry[0].item.species);
     }
 
     for (const [index, move] of moves.entries()) {
@@ -81,7 +81,7 @@ export class LearnsetResolver {
         if (fuzzyEntry === undefined || !fuzzyEntry.length) {
           throw new Error(`Failed to get data for move: ${move}`);
         }
-        moves[index] = Util.toLowerSingleWordCase(fuzzyEntry[0].item.name);
+        moves[index] = toLowerSingleWordCase(fuzzyEntry[0].item.name);
       }
     }
 

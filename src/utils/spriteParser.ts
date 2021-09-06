@@ -1,4 +1,4 @@
-import { Util } from '#utils/util';
+import { toLowerSingleWordCase } from '#utils/util';
 
 interface ParseSpeciesForSpriteParams {
   backSprite?: boolean;
@@ -44,7 +44,7 @@ export const parseSpeciesForSprite = ({
   if (specialSprite) return specialSprite;
 
   if (!baseSpecies) {
-    pokemonName = Util.toLowerSingleWordCase(pokemonName);
+    pokemonName = toLowerSingleWordCase(pokemonName);
   }
 
   if (pokemonName.match(MegaSpriteRegex)) {

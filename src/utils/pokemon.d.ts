@@ -1,123 +1,204 @@
 export namespace Pokemon {
   export interface Types {
     bug: number;
+
     dark: number;
+
     dragon: number;
+
     electric: number;
+
     fairy: number;
+
     fighting: number;
+
     fire: number;
+
     flying: number;
+
     ghost: number;
+
     grass: number;
+
     ground: number;
+
     ice: number;
+
     normal: number;
+
     poison: number;
+
     psychic: number;
+
     rock: number;
+
     steel: number;
+
     water: number;
   }
 
   export interface GenderEntry {
-    male: number;
     female: number;
+
+    male: number;
   }
 
   export interface Stats<T extends number = number> {
-    hp: T;
     atk: T;
+
     def: T;
+
+    hp: T;
+
     spa: T;
+
     spd: T;
+
     spe: T;
   }
 
   export interface Abilities {
     first: string;
-    second?: string;
+
     hidden?: string;
+
+    second?: string;
+
     special?: string;
   }
 
   export interface CatchRateEntry {
     base: number;
+
     percentageWithOrdinaryPokeballAtFullHealth: string;
   }
 
   export interface DexEntry {
     abilities: Abilities;
+
     baseForme?: string;
+
     baseSpecies?: string;
+
     baseStats: Stats;
-    color: string;
-    eggGroups?: string[];
-    evoLevel?: string | number;
-    evos?: string[];
-    forme?: string;
-    formeLetter?: string;
-    genderRatio?: GenderEntry;
-    heightm: number;
-    num: number;
-    otherFormes?: string[];
-    prevo?: string;
-    species: string;
-    types: string[];
-    weightkg: number;
-    evYields: Stats<0 | 1 | 2 | 3>;
-    specialShinySprite?: string;
-    specialSprite?: string;
-    specialShinyBackSprite?: string;
-    specialBackSprite?: string;
-    specialBulbapediaUrl?: string;
-    cosmeticFormes?: string[];
+
     catchRate?: CatchRateEntry;
-    levellingRate?: LevellingRateUnion;
-    minimumHatchTime?: number;
+
+    color: string;
+
+    cosmeticFormes?: string[];
+
+    eggGroups?: string[];
+
+    evoLevel?: string | number;
+
+    evos?: string[];
+
+    evYields: Stats<0 | 1 | 2 | 3>;
+
+    forme?: string;
+
+    formeLetter?: string;
+
+    genderRatio?: GenderEntry;
+
+    heightm: number;
+
     isEggObtainable: boolean;
+
+    levellingRate?: LevellingRateUnion;
+
+    minimumHatchTime?: number;
+
+    num: number;
+
+    otherFormes?: string[];
+
+    prevo?: string;
+
+    specialBackSprite?: string;
+
+    specialBulbapediaUrl?: string;
+
+    specialShinyBackSprite?: string;
+
+    specialShinySprite?: string;
+
+    specialSprite?: string;
+
+    species: string;
+
+    types: string[];
+
+    weightkg: number;
   }
 
   export interface Ability {
     desc?: string;
-    shortDesc: string;
-    name: string;
+
     isFieldAbility?: string;
+
+    name: string;
+
+    shortDesc: string;
   }
 
   export interface Item {
-    name: string;
     desc: string;
+
     gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
-    specialSprite?: string;
+
     isNonstandard?: string;
-    shortDesc?: string;
+
     keyItem?: boolean;
+
+    name: string;
+
+    shortDesc?: string;
+
+    specialSprite?: string;
   }
 
   export interface Move {
-    name: string;
-    shortDesc: string;
-    type: string;
-    basePower: string;
-    pp: number;
-    category: MoveCategoryUnion;
     accuracy: number;
-    priority: number;
-    target: MoveTargetUnion;
+
+    basePower: string;
+
+    category: MoveCategoryUnion;
+
     contestType?: string;
-    isNonstandard?: string;
-    isGMax?: string;
-    isZ?: string;
-    isFieldMove?: string;
+
     desc?: string;
+
+    isFieldMove?: string;
+
+    isGMax?: string;
+
+    isNonstandard?: string;
+
+    isZ?: string;
+
     maxMovePower?: number;
+
+    name: string;
+
+    pp: number;
+
+    priority: number;
+
+    shortDesc: string;
+
+    target: MoveTargetUnion;
+
+    type: string;
+
     zMovePower?: number;
   }
 
   export interface LearnsetMove {
-    name: string | null;
     generation: number | null;
+
+    name: string | null;
   }
 
   export interface LearnsetLevelupMove extends LearnsetMove {
@@ -128,22 +209,30 @@ export namespace Pokemon {
 
   export interface TypeDataset {
     doubleEffectiveTypes: (keyof Types)[];
+
     doubleResistedTypes: (keyof Types)[];
+
     effectiveTypes: (keyof Types)[];
+
     effectlessTypes: (keyof Types)[];
+
     multi: Types;
+
     normalTypes: (keyof Types)[];
+
     resistedTypes: (keyof Types)[];
   }
 
   export interface TypeMatchups {
-    damageTaken: Types;
     damageDealt: Types;
+
+    damageTaken: Types;
   }
 
   export interface FlavorText {
-    version_id: string;
     flavor_text: string;
+
+    version_id: string;
   }
 
   export type LevellingRateUnion = 'Slow' | 'Medium Slow' | 'Medium Fast' | 'Fast' | 'Erratic' | 'Fluctuating';

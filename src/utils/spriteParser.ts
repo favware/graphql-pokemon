@@ -1,14 +1,21 @@
 import Util from '#utils/util';
 
 interface ParseSpeciesForSpriteParams {
-  pokemonName: string;
-  baseSpecies?: string;
-  specialSprite?: string;
-  specialShinySprite?: string;
-  specialBackSprite?: string;
-  specialShinyBackSprite?: string;
-  shiny?: boolean;
   backSprite?: boolean;
+
+  baseSpecies?: string;
+
+  pokemonName: string;
+
+  shiny?: boolean;
+
+  specialBackSprite?: string;
+
+  specialShinyBackSprite?: string;
+
+  specialShinySprite?: string;
+
+  specialSprite?: string;
 }
 
 const MegaSpriteRegex = /^(.+)-(x|y)$/g;

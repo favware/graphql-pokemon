@@ -2971,7 +2971,7 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'sirfetchd',
     {
-      species: 'sirfetch’d',
+      species: "sirfetch'd",
       num: 865,
       types: ['Fighting'],
       genderRatio: { male: 0.5, female: 0.5 },

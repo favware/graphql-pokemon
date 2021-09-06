@@ -1523,10 +1523,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: true,
       evYields: {
         hp: 0,
-        atk: 0,
-        def: 2,
-        spa: 0,
-        spd: 1,
+        atk: 2,
+        def: 0,
+        spa: 1,
+        spd: 0,
         spe: 0
       }
     }

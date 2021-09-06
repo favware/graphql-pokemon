@@ -2529,7 +2529,7 @@ const entries: [string, Pokemon.DexEntry][] = [
     'darmanitangalar',
     {
       species: 'darmanitan-galar',
-      num: 55,
+      num: 555,
       types: ['Ice'],
       genderRatio: { male: 0.5, female: 0.5 },
       baseSpecies: 'Darmanitan',
@@ -2551,17 +2551,17 @@ const entries: [string, Pokemon.DexEntry][] = [
       evoLevel: 'use Ice Stone',
       eggGroups: ['Field'],
       catchRate: {
-        base: 75,
-        percentageWithOrdinaryPokeballAtFullHealth: '17.5%'
+        base: 60,
+        percentageWithOrdinaryPokeballAtFullHealth: '14.8%'
       },
-      levellingRate: 'Medium Fast',
+      levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
       isEggObtainable: true,
       evYields: {
         hp: 0,
-        atk: 0,
+        atk: 2,
         def: 0,
-        spa: 2,
+        spa: 0,
         spd: 0,
         spe: 0
       }
@@ -2601,9 +2601,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: true,
       evYields: {
         hp: 0,
-        atk: 2,
+        atk: 0,
         def: 0,
-        spa: 0,
+        spa: 2,
         spd: 0,
         spe: 0
       }
@@ -2643,9 +2643,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: true,
       evYields: {
         hp: 0,
-        atk: 2,
+        atk: 0,
         def: 0,
-        spa: 0,
+        spa: 2,
         spd: 0,
         spe: 0
       }
@@ -6208,11 +6208,11 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 3,
+        atk: 0,
         def: 0,
         spa: 0,
         spd: 0,
-        spe: 0
+        spe: 3
       }
     }
   ],
@@ -6287,9 +6287,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 3,
+        atk: 0,
         def: 0,
-        spa: 0,
+        spa: 3,
         spd: 0,
         spe: 0
       }
@@ -6440,9 +6440,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 0,
+        atk: 3,
         def: 0,
-        spa: 3,
+        spa: 0,
         spd: 0,
         spe: 0
       }
@@ -6517,10 +6517,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       minimumHatchTime: 30840,
       isEggObtainable: false,
       evYields: {
-        hp: 1,
-        atk: 1,
+        hp: 0,
+        atk: 3,
         def: 0,
-        spa: 1,
+        spa: 0,
         spd: 0,
         spe: 0
       }
@@ -6557,10 +6557,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       minimumHatchTime: 30840,
       isEggObtainable: false,
       evYields: {
-        hp: 1,
-        atk: 1,
+        hp: 0,
+        atk: 0,
         def: 0,
-        spa: 1,
+        spa: 3,
         spd: 0,
         spe: 0
       }
@@ -6716,10 +6716,10 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 1,
-        spd: 1,
+        atk: 1,
+        def: 1,
+        spa: 0,
+        spd: 0,
         spe: 1
       }
     }

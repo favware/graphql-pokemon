@@ -1088,9 +1088,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evYields: {
         hp: 0,
         atk: 0,
-        def: 0,
+        def: 2,
         spa: 0,
-        spd: 2,
+        spd: 0,
         spe: 0
       }
     }
@@ -1130,9 +1130,9 @@ const entries: [string, Pokemon.DexEntry][] = [
       evYields: {
         hp: 0,
         atk: 0,
-        def: 0,
+        def: 1,
         spa: 0,
-        spd: 2,
+        spd: 1,
         spe: 0
       }
     }
@@ -4690,12 +4690,12 @@ const entries: [string, Pokemon.DexEntry][] = [
       minimumHatchTime: 30840,
       isEggObtainable: false,
       evYields: {
-        hp: 3,
+        hp: 0,
         atk: 0,
         def: 0,
         spa: 0,
         spd: 0,
-        spe: 0
+        spe: 3
       }
     }
   ],

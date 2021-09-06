@@ -6326,11 +6326,11 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 1,
+        atk: 2,
         def: 0,
         spa: 1,
         spd: 0,
-        spe: 1
+        spe: 0
       }
     }
   ],
@@ -6366,11 +6366,11 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 1,
-        def: 0,
-        spa: 1,
-        spd: 0,
-        spe: 1
+        atk: 0,
+        def: 2,
+        spa: 0,
+        spd: 1,
+        spe: 0
       }
     }
   ],
@@ -6406,11 +6406,11 @@ const entries: [string, Pokemon.DexEntry][] = [
       isEggObtainable: false,
       evYields: {
         hp: 0,
-        atk: 1,
+        atk: 0,
         def: 0,
-        spa: 1,
+        spa: 0,
         spd: 0,
-        spe: 1
+        spe: 3
       }
     }
   ]

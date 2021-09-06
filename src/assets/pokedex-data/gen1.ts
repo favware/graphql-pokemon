@@ -5298,7 +5298,7 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'farfetchd',
     {
-      species: 'farfetch’d',
+      species: "farfetch'd",
       num: 83,
       types: ['Normal', 'Flying'],
       genderRatio: { male: 0.5, female: 0.5 },
@@ -5336,10 +5336,10 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'farfetchdgalar',
     {
-      species: 'farfetch’d-galar',
+      species: "farfetch'd-galar",
       num: 83,
       types: ['Fighting'],
-      baseSpecies: 'Farfetch’d',
+      baseSpecies: "Farfetch'd",
       forme: 'Galar',
       formeLetter: 'G',
       baseStats: {
@@ -5354,7 +5354,7 @@ const entries: [string, Pokemon.DexEntry][] = [
       heightm: 0.8,
       weightkg: 42,
       color: 'Brown',
-      evos: ['sirfetchdgalar'],
+      evos: ['sirfetchd'],
       eggGroups: ['Flying', 'Field'],
       catchRate: {
         base: 45,

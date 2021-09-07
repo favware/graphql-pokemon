@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { GraphQLCollection } from '#utils/GraphQLCollection';
 import type { Pokemon } from '#utils/pokemon';
 

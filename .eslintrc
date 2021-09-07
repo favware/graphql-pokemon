@@ -4,8 +4,13 @@
     {
       "files": ["src/assets/learnsets.ts"],
       "rules": {
-        "max-len": "off",
         "@typescript-eslint/ban-ts-comment": "off"
+      }
+    },
+    {
+      "files": ["src/assets/abilities.ts", "src/assets/moves.ts", "src/assets/learnsets.ts"],
+      "rules": {
+        "max-len": "off"
       }
     }
   ]

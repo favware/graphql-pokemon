@@ -3,15 +3,15 @@ import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A learnset move entry' })
 export class LearnsetMove implements Pokemon.LearnsetMove {
-  @Field(() => String, { nullable: true, description: 'The name of the move', defaultValue: null })
-  public name!: string | null;
-
   @Field(() => Int, {
     nullable: true,
     description: 'The generation in which this pokémon learned the move this way',
     defaultValue: null
   })
   public generation!: number | null;
+
+  @Field(() => String, { nullable: true, description: 'The name of the move', defaultValue: null })
+  public name!: string | null;
 }
 
 @ObjectType({ description: 'A learnset level up move entry' })
@@ -22,29 +22,19 @@ export class LearnsetLevelUpMove extends LearnsetMove implements Pokemon.Learnse
 
 @ObjectType({ description: 'A learnset entry' })
 export class LearnsetEntry {
-  @Field(() => [LearnsetLevelUpMove], {
-    description: 'The moves that can be learned through levelling up',
-    defaultValue: [new LearnsetLevelUpMove()]
+  @Field({
+    description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
   })
-  public levelUpMoves!: LearnsetLevelUpMove[];
+  public backSprite!: string;
+
+  @Field(() => String, { description: 'The PokéDex colour for the Pokémon' })
+  public color!: string;
 
   @Field(() => [LearnsetMove], {
-    description: 'The moves that can be learned through virtual console transfer',
+    description: 'The moves that are exclusively learned in the Unova Dream World',
     defaultValue: [new LearnsetMove()]
   })
-  public virtualTransferMoves!: LearnsetMove[];
-
-  @Field(() => [LearnsetMove], {
-    description: 'The moves that can be learned from a move tutor',
-    defaultValue: [new LearnsetMove()]
-  })
-  public tutorMoves!: LearnsetMove[];
-
-  @Field(() => [LearnsetMove], {
-    description: 'The moves that can be learned from a Technical Machine or Technical Record',
-    defaultValue: [new LearnsetMove()]
-  })
-  public tmMoves!: LearnsetMove[];
+  public dreamworldMoves!: LearnsetMove[];
 
   @Field(() => [LearnsetMove], {
     description: 'The moves that can be passed as egg moves',
@@ -58,14 +48,25 @@ export class LearnsetEntry {
   })
   public eventMoves!: LearnsetMove[];
 
-  @Field(() => [LearnsetMove], {
-    description: 'The moves that are exclusively learned in the Unova Dream World',
-    defaultValue: [new LearnsetMove()]
+  @Field(() => [LearnsetLevelUpMove], {
+    description: 'The moves that can be learned through levelling up',
+    defaultValue: [new LearnsetLevelUpMove()]
   })
-  public dreamworldMoves!: LearnsetMove[];
+  public levelUpMoves!: LearnsetLevelUpMove[];
 
   @Field(() => Int, { description: 'The dex number for a Pokémon' })
   public num!: number;
+
+  @Field({
+    description:
+      'The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
+  public shinyBackSprite!: string;
+
+  @Field({
+    description: 'The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  })
+  public shinySprite!: string;
 
   @Field(() => String, { description: 'The species name for a Pokémon' })
   public species!: string;
@@ -75,22 +76,21 @@ export class LearnsetEntry {
   })
   public sprite!: string;
 
-  @Field({
-    description: 'The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  @Field(() => [LearnsetMove], {
+    description: 'The moves that can be learned from a Technical Machine or Technical Record',
+    defaultValue: [new LearnsetMove()]
   })
-  public shinySprite!: string;
+  public tmMoves!: LearnsetMove[];
 
-  @Field({
-    description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  @Field(() => [LearnsetMove], {
+    description: 'The moves that can be learned from a move tutor',
+    defaultValue: [new LearnsetMove()]
   })
-  public backSprite!: string;
+  public tutorMoves!: LearnsetMove[];
 
-  @Field({
-    description:
-      'The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
+  @Field(() => [LearnsetMove], {
+    description: 'The moves that can be learned through virtual console transfer',
+    defaultValue: [new LearnsetMove()]
   })
-  public shinyBackSprite!: string;
-
-  @Field(() => String, { description: 'The PokéDex colour for the Pokémon' })
-  public color!: string;
+  public virtualTransferMoves!: LearnsetMove[];
 }

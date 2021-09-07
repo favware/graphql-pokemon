@@ -3,6 +3,10 @@ import { ArgsType, Field, Int } from 'type-graphql';
 
 @ArgsType()
 export abstract class PaginatedArgs {
+  @Field(() => Boolean, { nullable: true, defaultValue: false, description: 'Reverses the dataset before paginating' })
+  @IsBoolean()
+  public reverse?: boolean;
+
   @Field(() => Int, { defaultValue: 0, description: 'Sets the offset where to start' })
   @Min(0)
   public skip!: number;
@@ -11,8 +15,4 @@ export abstract class PaginatedArgs {
   @Min(1)
   @Max(50)
   public take!: number;
-
-  @Field(() => Boolean, { nullable: true, defaultValue: false, description: 'Reverses the dataset before paginating' })
-  @IsBoolean()
-  public reverse?: boolean;
 }

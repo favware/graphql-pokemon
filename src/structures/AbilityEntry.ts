@@ -2,14 +2,11 @@ import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single Pokémon ability entry' })
 export class AbilityEntry {
+  @Field(() => String, { description: 'Bulbapedia page for an ability' })
+  public bulbapediaPage!: string;
+
   @Field(() => String, { nullable: true, description: 'The long description for an ability' })
   public desc?: string;
-
-  @Field(() => String, { description: 'The short description for an ability' })
-  public shortDesc!: string;
-
-  @Field(() => String, { description: 'The name for an ability' })
-  public name!: string;
 
   @Field(() => String, {
     nullable: true,
@@ -17,11 +14,14 @@ export class AbilityEntry {
   })
   public isFieldAbility?: string;
 
-  @Field(() => String, { description: 'Bulbapedia page for an ability' })
-  public bulbapediaPage!: string;
+  @Field(() => String, { description: 'The name for an ability' })
+  public name!: string;
 
   @Field(() => String, { description: 'Serebii page for an ability' })
   public serebiiPage!: string;
+
+  @Field(() => String, { description: 'The short description for an ability' })
+  public shortDesc!: string;
 
   @Field(() => String, { description: 'Smogon page for an ability' })
   public smogonPage!: string;

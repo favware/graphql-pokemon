@@ -1,16 +1,13 @@
-import { ExactPokemonPaginatedArgs, pokemons } from '#arguments/ExactPokemonPaginatedArgs';
+import { ExactPokemonPaginatedArgs } from '#arguments/ExactPokemonPaginatedArgs';
 import { PokemonNumberPaginatedArgs } from '#arguments/PokemonNumberPaginatedArgs';
 import { PokemonPaginatedArgs } from '#arguments/PokemonPaginatedArgs';
 import { pokedexAliases } from '#assets/aliases';
 import { DexService } from '#services/DexService';
 import { DexDetails } from '#structures/DexDetails';
-import { DexEntry } from '#structures/DexEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
 import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import { GraphQLJSONObject } from 'graphql-type-json';
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import { Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(DexDetails)
 export class DexResolver {
@@ -132,54 +129,5 @@ export class DexResolver {
     }
 
     return detailsEntry;
-  }
-
-  @Query(() => [DexEntry], {
-    description: [
-      'Gets dex entries for Pokémon based on a fuzzy search',
-      'You can supply a skip and take to paginate the results and reverse to show the results least to most well matches',
-      'Reversal is applied before pagination!'
-    ].join('')
-  })
-  public getDexEntries(
-    @Args() { pokemon, skip, take, reverse }: PokemonPaginatedArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<unknown>
-  ): DexEntry[] {
-    const dexEntries = this.dexService.findByFuzzy(
-      {
-        pokemon,
-        skip,
-        take,
-        reverse
-      },
-      requestedFields
-    );
-    if (dexEntries === undefined) {
-      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
-    }
-
-    return dexEntries;
-  }
-
-  @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their species name' })
-  public getDexEntryBySpeciesName(@Arg('pokemon', () => pokemons) pokemon: string): Pokemon.DexEntry {
-    const dexEntry = this.dexService.findBySpecies(pokemon);
-
-    if (dexEntry === undefined) {
-      throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
-    }
-
-    return dexEntry;
-  }
-
-  @Query(() => GraphQLJSONObject, { description: 'Gets the dex entry for a Pokémon based on their dex number' })
-  public getDexEntryByDexNumber(@Arg('num') num: number): Pokemon.DexEntry {
-    const dexEntry = this.dexService.findByNum(num);
-
-    if (dexEntry === undefined) {
-      throw new Error(`Failed to get data for Pokémon with dex number: ${num}`);
-    }
-
-    return dexEntry;
   }
 }

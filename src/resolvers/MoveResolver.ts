@@ -4,10 +4,7 @@ import { MoveService } from '#services/MoveService';
 import { MoveEntry } from '#structures/MoveEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
 import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import type Fuse from 'fuse.js';
-import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(MoveEntry)
@@ -78,38 +75,5 @@ export class MoveResolver {
     }
 
     return details;
-  }
-
-  @Query(() => [GraphQLJSONObject], {
-    description: [
-      'Gets raw entries of multiple moves based on a fuzzy search.',
-      'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
-      'Reversal is applied before pagination!'
-    ].join('')
-  })
-  public getMoveByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs): Fuse.FuseResult<Pokemon.Move>[] {
-    const moveEntries = this.moveService.findByFuzzy({
-      move,
-      skip,
-      take,
-      reverse
-    });
-
-    if (moveEntries === undefined) {
-      throw new Error(`Failed to get data for move: ${move}`);
-    }
-
-    return moveEntries;
-  }
-
-  @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single move based on name.' })
-  public getMoveByName(@Arg('move', () => moves) move: string): Pokemon.Move {
-    const moveEntry = this.moveService.findByName(move);
-
-    if (moveEntry === undefined) {
-      throw new Error(`Failed to get data for move: ${move}`);
-    }
-
-    return moveEntry;
   }
 }

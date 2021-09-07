@@ -4,10 +4,7 @@ import { ItemService } from '#services/ItemSerivce';
 import { ItemEntry } from '#structures/ItemEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
 import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import type Fuse from 'fuse.js';
-import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(ItemEntry)
@@ -79,38 +76,5 @@ export class ItemResolver {
     }
 
     return details;
-  }
-
-  @Query(() => [GraphQLJSONObject], {
-    description: [
-      'Gets raw entries of multiple items based on a fuzzy search.',
-      'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
-      'Reversal is applied before pagination!'
-    ].join('')
-  })
-  public getItemByFuzzy(@Args() { item, skip, take, reverse }: ItemPaginatedArgs): Fuse.FuseResult<Pokemon.Item>[] {
-    const itemEntries = this.itemService.findByFuzzy({
-      item,
-      skip,
-      take,
-      reverse
-    });
-
-    if (itemEntries === undefined) {
-      throw new Error(`Failed to get data for item: ${item}`);
-    }
-
-    return itemEntries;
-  }
-
-  @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single item based on name.' })
-  public getItemByName(@Arg('item', () => items) item: string): Pokemon.Item {
-    const itemEntry = this.itemService.findByName(item);
-
-    if (itemEntry === undefined) {
-      throw new Error(`Failed to get data for item: ${item}`);
-    }
-
-    return itemEntry;
   }
 }

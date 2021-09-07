@@ -4,10 +4,7 @@ import { AbilityService } from '#services/AbilityService';
 import { AbilityEntry } from '#structures/AbilityEntry';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
 import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import type Fuse from 'fuse.js';
-import { GraphQLJSONObject } from 'graphql-type-json';
 import { Arg, Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(AbilityEntry)
@@ -82,38 +79,5 @@ export class AbilityResolver {
     }
 
     return details;
-  }
-
-  @Query(() => [GraphQLJSONObject], {
-    description: [
-      'Gets raw entries of multiple ability based on a fuzzy search.',
-      'You can supply skip and take to limit the amount of flavour texts to return and reverse to show latest games on top.',
-      'Reversal is applied before pagination!'
-    ].join('')
-  })
-  public getAbilityByFuzzy(@Args() { ability, skip, take, reverse }: AbilityPaginatedArgs): Fuse.FuseResult<Pokemon.Ability>[] {
-    const abilityEntries = this.abilityService.findByFuzzy({
-      ability,
-      skip,
-      take,
-      reverse
-    });
-
-    if (abilityEntries === undefined) {
-      throw new Error(`Failed to get data for ability: ${ability}`);
-    }
-
-    return abilityEntries;
-  }
-
-  @Query(() => GraphQLJSONObject, { description: 'Gets the raw entry of a single ability by name.' })
-  public getAbilityByName(@Arg('ability', () => abilities) ability: string): Pokemon.Ability {
-    const abilityEntry = this.abilityService.findByName(ability);
-
-    if (abilityEntry === undefined) {
-      throw new Error(`Failed to get data for ability: ${ability}`);
-    }
-
-    return abilityEntry;
   }
 }

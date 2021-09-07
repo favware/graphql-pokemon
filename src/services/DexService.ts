@@ -3,14 +3,13 @@ import pokedex from '#assets/pokedex';
 import { AbilitiesEntry } from '#structures/AbilitiesEntry';
 import { CatchRateEntry } from '#structures/CatchRateEntry';
 import { DexDetails } from '#structures/DexDetails';
-import { DexEntry } from '#structures/DexEntry';
 import { EvYieldsEntry } from '#structures/EvYieldsEntry';
 import { FlavorEntry } from '#structures/FlavorEntry';
 import { GenderEntry } from '#structures/GenderEntry';
 import { StatsEntry } from '#structures/StatsEntry';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
-import { GraphQLSet } from '#utils/GraphQLSet';
+import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { cast, toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
@@ -31,120 +30,6 @@ export class DexService {
 
   public findBySpecies(@Arg('species') species: string): Pokemon.DexEntry | undefined {
     return pokedex.get(species);
-  }
-
-  public findByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs, requestedFields: GraphQLSet<unknown>): DexEntry[] {
-    const paginatedFuzzyResult = this.getByFuzzy({ pokemon, skip, take });
-
-    const queryResults: DexEntry[] = [];
-    for (const page of paginatedFuzzyResult) {
-      const dexEntry = new DexEntry();
-
-      const genderData = new GenderEntry();
-      const baseStatsData = new StatsEntry();
-      const evYieldsData = new EvYieldsEntry();
-      const abilitiesData = new AbilitiesEntry();
-      const catchRateData = new CatchRateEntry();
-      const pageGenderRatio: Pokemon.DexEntry['genderRatio'] = page.item.genderRatio || {
-        male: 0.5,
-        female: 0.5
-      };
-      const pageCatchRate: Pokemon.DexEntry['catchRate'] = page.item.catchRate || {
-        base: 0,
-        percentageWithOrdinaryPokeballAtFullHealth: '0%'
-      };
-
-      addPropertyToClass(genderData, 'male', `${pageGenderRatio.male * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.male');
-      addPropertyToClass(genderData, 'female', `${pageGenderRatio.female * 100}%`, requestedFields as GraphQLSet<keyof GenderEntry>, 'gender.female');
-
-      addPropertyToClass(baseStatsData, 'hp', page.item.baseStats.hp, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.hp');
-      addPropertyToClass(baseStatsData, 'attack', page.item.baseStats.atk, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.attack');
-      addPropertyToClass(baseStatsData, 'defense', page.item.baseStats.def, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.defense');
-      addPropertyToClass(
-        baseStatsData,
-        'specialattack',
-        page.item.baseStats.spa,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.specialattack'
-      );
-      addPropertyToClass(
-        baseStatsData,
-        'specialdefense',
-        page.item.baseStats.spd,
-        requestedFields as GraphQLSet<keyof StatsEntry>,
-        'baseStats.specialdefense'
-      );
-      addPropertyToClass(baseStatsData, 'speed', page.item.baseStats.spe, requestedFields as GraphQLSet<keyof StatsEntry>, 'baseStats.speed');
-
-      const evYieldsRequestedFields = cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
-      addPropertyToClass(evYieldsData, 'hp', page.item.evYields.hp, evYieldsRequestedFields, 'evYields.hp');
-      addPropertyToClass(evYieldsData, 'attack', page.item.evYields.atk, evYieldsRequestedFields, 'evYields.attack');
-      addPropertyToClass(evYieldsData, 'defense', page.item.evYields.def, evYieldsRequestedFields, 'evYields.defense');
-      addPropertyToClass(evYieldsData, 'specialattack', page.item.evYields.spa, evYieldsRequestedFields, 'evYields.specialattack');
-      addPropertyToClass(evYieldsData, 'specialdefense', page.item.evYields.spd, evYieldsRequestedFields, 'evYields.specialdefense');
-      addPropertyToClass(evYieldsData, 'speed', page.item.evYields.spe, evYieldsRequestedFields, 'evYields.speed');
-
-      addPropertyToClass(abilitiesData, 'first', page.item.abilities.first, requestedFields as GraphQLSet<keyof AbilitiesEntry>, 'abilities.first');
-      addPropertyToClass(
-        abilitiesData,
-        'second',
-        page.item.abilities.second,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.second'
-      );
-      addPropertyToClass(
-        abilitiesData,
-        'hidden',
-        page.item.abilities.hidden,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.hidden'
-      );
-      addPropertyToClass(
-        abilitiesData,
-        'special',
-        page.item.abilities.special,
-        requestedFields as GraphQLSet<keyof AbilitiesEntry>,
-        'abilities.special'
-      );
-
-      addPropertyToClass(catchRateData, 'base', pageCatchRate.base, requestedFields as GraphQLSet<keyof CatchRateEntry>, 'catchRate.base');
-      addPropertyToClass(
-        catchRateData,
-        'percentageWithOrdinaryPokeballAtFullHealth',
-        pageCatchRate.percentageWithOrdinaryPokeballAtFullHealth,
-        requestedFields as GraphQLSet<keyof CatchRateEntry>,
-        'catchRate.percentageWithOrdinaryPokeballAtFullHealth'
-      );
-
-      const dexEntryFields = requestedFields as GraphQLSet<keyof DexEntry>;
-      addPropertyToClass(dexEntry, 'abilities', abilitiesData, dexEntryFields);
-      addPropertyToClass(dexEntry, 'gender', genderData, dexEntryFields);
-      addPropertyToClass(dexEntry, 'baseStats', baseStatsData, dexEntryFields);
-      addPropertyToClass(dexEntry, 'catchRate', catchRateData, dexEntryFields);
-      addPropertyToClass(dexEntry, 'num', page.item.num, dexEntryFields);
-      addPropertyToClass(dexEntry, 'species', page.item.species, dexEntryFields);
-      addPropertyToClass(dexEntry, 'types', page.item.types, dexEntryFields);
-      addPropertyToClass(dexEntry, 'color', page.item.color, dexEntryFields);
-      addPropertyToClass(dexEntry, 'eggGroups', page.item.eggGroups, dexEntryFields);
-      addPropertyToClass(dexEntry, 'evolutionLevel', page.item.evoLevel, dexEntryFields);
-      addPropertyToClass(dexEntry, 'evos', page.item.evos, dexEntryFields);
-      addPropertyToClass(dexEntry, 'prevo', page.item.prevo, dexEntryFields);
-      addPropertyToClass(dexEntry, 'forme', page.item.forme, dexEntryFields);
-      addPropertyToClass(dexEntry, 'formeLetter', page.item.formeLetter, dexEntryFields);
-      addPropertyToClass(dexEntry, 'height', page.item.heightm, dexEntryFields);
-      addPropertyToClass(dexEntry, 'weight', page.item.weightkg, dexEntryFields);
-      addPropertyToClass(dexEntry, 'baseForme', page.item.baseForme, dexEntryFields);
-      addPropertyToClass(dexEntry, 'baseSpecies', page.item.baseSpecies, dexEntryFields);
-      addPropertyToClass(dexEntry, 'otherFormes', page.item.otherFormes, dexEntryFields);
-      addPropertyToClass(dexEntry, 'cosmeticFormes', page.item.cosmeticFormes, dexEntryFields);
-      addPropertyToClass(dexEntry, 'levellingRate', page.item.levellingRate, dexEntryFields);
-      addPropertyToClass(dexEntry, 'minimumHatchTime', page.item.minimumHatchTime, dexEntryFields);
-      addPropertyToClass(dexEntry, 'isEggObtainable', page.item.isEggObtainable, dexEntryFields);
-
-      queryResults.push(dexEntry);
-    }
-
-    return queryResults;
   }
 
   public async findBySpeciesWithDetails(
@@ -348,8 +233,7 @@ export class DexService {
       dexDetailsFields,
       `${recursingAs ? `${recursingAs}.` : ''}evolutionLevel`
     );
-    addPropertyToClass(pokemonData, 'evos', basePokemonData.evos, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}evos`);
-    addPropertyToClass(pokemonData, 'prevo', basePokemonData.prevo, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}prevo`);
+
     const smogonTier = this.tiers[toLowerSingleWordCase(basePokemonData.species)] || 'Undiscovered';
     addPropertyToClass(pokemonData, 'smogonTier', smogonTier, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}smogonTier`);
     addPropertyToClass(pokemonData, 'height', basePokemonData.heightm, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}height`);

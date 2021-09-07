@@ -1,11 +1,9 @@
-import { TypeArgs, types } from '#arguments/TypeArgs';
+import { TypeArgs } from '#arguments/TypeArgs';
 import { TypeService } from '#services/TypeService';
 import { TypeMatchups } from '#structures/TypeMatchups';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
-import { GraphQLJSONObject } from 'graphql-type-json';
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import { Args, Query, Resolver } from 'type-graphql';
 
 @Resolver(TypeMatchups)
 export class TypeResolver {
@@ -24,16 +22,5 @@ export class TypeResolver {
     }
 
     return entry;
-  }
-
-  @Query(() => GraphQLJSONObject, { description: 'Gets the raw type matchup data for any one given type' })
-  public getTypeByName(@Arg('type', () => types) type: string): Pokemon.TypeMatchups {
-    const typeEntry = this.typeService.findTypeMatchupByName(type);
-
-    if (typeEntry === undefined) {
-      throw new Error(`Failed to get type matchup data for: ${type}`);
-    }
-
-    return typeEntry;
   }
 }

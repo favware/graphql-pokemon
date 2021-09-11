@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.7.1](https://github.com/favware/graphql-pokemon/compare/v5.7.0...v5.7.1) (2021-09-11)
+
+
+### Bug Fixes
+
+* fixed the published bundle ([312915d](https://github.com/favware/graphql-pokemon/commit/312915dff492a7076df29f8ef6a1155b8b77dc1c))
+
 ## [5.7.0](https://github.com/favware/graphql-pokemon/compare/v5.6.0...v5.7.0) (2021-09-06)
 
 

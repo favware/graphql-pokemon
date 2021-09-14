@@ -55,7 +55,7 @@ Object {
 }
 `;
 
-exports[`getTypeMatchup GIVEN a one valid type THEN returns TypeMatchups 1`] = `
+exports[`getTypeMatchup GIVEN a one valid type THEN returns TypeMatchup 1`] = `
 Object {
   "getTypeMatchup": Object {
     "attacking": Object {
@@ -121,7 +121,7 @@ Object {
 }
 `;
 
-exports[`getTypeMatchup GIVEN a one valid type as array THEN returns TypeMatchups 1`] = `
+exports[`getTypeMatchup GIVEN a one valid type as array THEN returns TypeMatchup 1`] = `
 Object {
   "getTypeMatchup": Object {
     "attacking": Object {
@@ -187,7 +187,7 @@ Object {
 }
 `;
 
-exports[`getTypeMatchup GIVEN a two valid types THEN returns TypeMatchups 1`] = `
+exports[`getTypeMatchup GIVEN a two valid types THEN returns TypeMatchup 1`] = `
 Object {
   "getTypeMatchup": Object {
     "attacking": Object {

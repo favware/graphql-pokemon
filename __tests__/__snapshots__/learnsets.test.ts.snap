@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`getPokemonLearnset GIVEN a valid pokemon and move array THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnset GIVEN a valid pokemon and move array THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnset": Object {
     "dreamworldMoves": Array [],
@@ -62,7 +62,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnset GIVEN a valid pokemon and multiple moves THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnset GIVEN a valid pokemon and multiple moves THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnset": Object {
     "dreamworldMoves": Array [],
@@ -148,7 +148,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnset GIVEN a valid pokemon and single move THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnset GIVEN a valid pokemon and single move THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnset": Object {
     "dreamworldMoves": Array [],
@@ -210,7 +210,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnset GIVEN a valid pokemon, a single move and generation THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnset GIVEN a valid pokemon, a single move and generation THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnset": Object {
     "dreamworldMoves": Array [],
@@ -230,7 +230,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnset GIVEN a valid pokemon, move array and generation THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnset GIVEN a valid pokemon, move array and generation THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnset": Object {
     "dreamworldMoves": Array [],
@@ -250,7 +250,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnset GIVEN a valid pokemon, multiple moves and generation THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnset GIVEN a valid pokemon, multiple moves and generation THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnset": Object {
     "dreamworldMoves": Array [],
@@ -301,7 +301,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnsetByFuzzy GIVEN a fuzzy pokemon and exact move array THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnsetByFuzzy GIVEN a fuzzy pokemon and exact move array THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnsetByFuzzy": Object {
     "dreamworldMoves": Array [],
@@ -363,7 +363,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnsetByFuzzy GIVEN a fuzzy pokemon and fuzzy move array THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnsetByFuzzy GIVEN a fuzzy pokemon and fuzzy move array THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnsetByFuzzy": Object {
     "dreamworldMoves": Array [],
@@ -425,7 +425,7 @@ Object {
 }
 `;
 
-exports[`getPokemonLearnsetByFuzzy GIVEN an exact pokemon and fuzzy move array THEN returns LearnsetEntry 1`] = `
+exports[`getPokemonLearnsetByFuzzy GIVEN an exact pokemon and fuzzy move array THEN returns Laernset 1`] = `
 Object {
   "getPokemonLearnsetByFuzzy": Object {
     "dreamworldMoves": Array [],

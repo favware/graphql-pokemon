@@ -1,7 +1,7 @@
 import { LearnsetArgs } from '#arguments/LearnsetArgs';
 import learnsets from '#assets/learnsets';
 import pokedex from '#assets/pokedex';
-import { LearnsetEntry, LearnsetLevelUpMove, LearnsetMove } from '#structures/LearnsetEntry';
+import { Learnset, LearnsetLevelUpMove, LearnsetMove } from '#structures/Learnset';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
@@ -9,14 +9,17 @@ import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { Args } from 'type-graphql';
 
 export class LearnsetService {
-  public findLearnsets(@Args() { pokemon, moves, generation }: LearnsetArgs, requestedFields: GraphQLSet<keyof LearnsetEntry>): LearnsetEntry {
+  public static mapPokemonAndMovesToLearnsetGraphQL(
+    @Args() { pokemon, moves, generation }: LearnsetArgs,
+    requestedFields: GraphQLSet<keyof Learnset>
+  ): Learnset {
     const learnset = learnsets.get(pokemon);
 
     if (!learnset) {
       throw new Error(`No Pokémon found for ${pokemon}`);
     }
 
-    const learnsetEntry = new LearnsetEntry();
+    const learnsetEntry = new Learnset();
 
     if (learnset.eventOnly === undefined) {
       const levelupMoves: LearnsetLevelUpMove[] = [];
@@ -154,7 +157,7 @@ export class LearnsetService {
     return learnsetEntry;
   }
 
-  private createLearnsetMove(move: string, generation: number) {
+  private static createLearnsetMove(move: string, generation: number) {
     const learnsetMove = new LearnsetMove();
     learnsetMove.name = move;
     learnsetMove.generation = generation;
@@ -162,7 +165,7 @@ export class LearnsetService {
     return learnsetMove;
   }
 
-  private createLevelupMove(move: string, level: number, generation: number) {
+  private static createLevelupMove(move: string, level: number, generation: number) {
     const levelUpMove = new LearnsetLevelUpMove();
     levelUpMove.name = move;
     levelUpMove.generation = generation;
@@ -171,19 +174,19 @@ export class LearnsetService {
     return levelUpMove;
   }
 
-  private getMethodGeneration(method: string) {
+  private static getMethodGeneration(method: string) {
     return parseInt(method.slice(0, 1), 10);
   }
 
-  private getMethodLevel(method: string) {
+  private static getMethodLevel(method: string) {
     return parseInt(method.slice(2), 10);
   }
 
-  private getMethodType(method: string) {
+  private static getMethodType(method: string) {
     return method.slice(1, 2) as MethodTypes;
   }
 
-  private shouldIncludePokemonDetails(requestedFields: GraphQLSet<keyof LearnsetEntry>) {
+  private static shouldIncludePokemonDetails(requestedFields: GraphQLSet<keyof Learnset>) {
     return (
       requestedFields.has('sprite') ||
       requestedFields.has('shinySprite') ||

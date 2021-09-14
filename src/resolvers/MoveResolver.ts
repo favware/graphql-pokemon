@@ -1,79 +1,55 @@
-import { MovePaginatedArgs, moves } from '#arguments/MovePaginatedArgs';
-import { moveAliases } from '#assets/aliases';
+import { FuzzyMoveArgs } from '#arguments/FuzzyArgs/FuzzyMoveArgs';
+import type { MoveArgs } from '#arguments/MoveArgs';
 import { MoveService } from '#services/MoveService';
-import { MoveEntry } from '#structures/MoveEntry';
+import { Move } from '#structures/Move';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import { Args, Query, Resolver } from 'type-graphql';
 
-@Resolver(MoveEntry)
+@Resolver(Move)
 export class MoveResolver {
-  private moveService: MoveService;
+  @Query(() => Move, {
+    description: 'Gets the details on a Pokémon move, using the move name'
+  })
+  public getMove(@Args() args: MoveArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Move>): Move {
+    const moveData = MoveService.getByMoveName(args);
 
-  public constructor() {
-    this.moveService = new MoveService();
+    if (!moveData) {
+      throw new Error(`No move found for ${args.move}`);
+    }
+
+    const graphqlObject = MoveService.mapMoveDataToMoveGraphQL({
+      data: moveData,
+      requestedFields
+    });
+
+    if (!graphqlObject) {
+      throw new Error(`Failed to get data for move: ${args.move}`);
+    }
+
+    return graphqlObject;
   }
 
-  @Query(() => MoveEntry, {
+  @Query(() => [Move], {
     description: [
-      'Gets details on a single move based on a fuzzy search.',
-      'You can supply skip and take to paginate the fuzzy search and reverse to show teh least likely results on top',
-      'Reversal is applied before paginations!'
-    ].join('')
+      'Gets details on a Pokémon move, using a fuzzy search on name',
+      'This can be used to find multiple results based on the query',
+      'By default only 1 result is returned. You can provide the arguments "take", "offset", and "reverse" to modify this behaviour.'
+    ].join('\n')
   })
-  public getMoveDetailsByFuzzy(
-    @Args() { move, skip, take, reverse }: MovePaginatedArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>
-  ): MoveEntry {
-    const preParsedMove = preParseInput(move);
-    let entry = this.moveService.findByName(moveAliases.get(preParsedMove) ?? preParsedMove);
+  public getFuzzyMove(@Args() args: FuzzyMoveArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Move>): Move[] {
+    const fuzzyEntry = MoveService.findByFuzzy(args);
 
-    if (!entry) {
-      const fuzzyEntry = this.moveService.findByFuzzy({
-        move,
-        skip,
-        take,
-        reverse
-      });
-
-      if (fuzzyEntry === undefined || !fuzzyEntry.length) {
-        throw new Error(`Failed to get data for move: ${move}`);
-      }
-
-      entry = this.moveService.findByName(toLowerSingleWordCase(fuzzyEntry[0].item.name));
-
-      // If there is still no entry then throw an error
-      if (!entry) {
-        throw new Error(`No Move found for ${move}`);
-      }
+    if (!fuzzyEntry.length) {
+      throw new Error(`No moves found for: ${args.move}`);
     }
 
-    const detailsEntry = this.moveService.findByNameWithDetails(entry, requestedFields);
+    const graphqlObjects = fuzzyEntry.map((moveData) => MoveService.mapMoveDataToMoveGraphQL({ data: moveData.item, requestedFields }));
 
-    if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for move: ${move}`);
+    if (!graphqlObjects.length) {
+      throw new Error(`Failed to get data for move: ${args.move}`);
     }
 
-    return detailsEntry;
-  }
-
-  @Query(() => MoveEntry, {
-    description: ['Gets details on a single move based on an exact name match.'].join('')
-  })
-  public getMoveDetailsByName(@Arg('move', () => moves) move: string, @getRequestedFields() requestedFields: GraphQLSet<keyof MoveEntry>): MoveEntry {
-    const entry = this.moveService.findByName(move);
-
-    if (!entry) {
-      throw new Error(`No Move found for ${move}`);
-    }
-
-    const details = this.moveService.findByNameWithDetails(entry, requestedFields);
-
-    if (details === undefined) {
-      throw new Error(`Failed to get data for move: ${move}`);
-    }
-
-    return details;
+    return graphqlObjects;
   }
 }

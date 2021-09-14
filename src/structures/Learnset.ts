@@ -21,7 +21,7 @@ export class LearnsetLevelUpMove extends LearnsetMove implements Pokemon.Learnse
 }
 
 @ObjectType({ description: 'A learnset entry' })
-export class LearnsetEntry {
+export class Learnset {
   @Field({
     description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
   })

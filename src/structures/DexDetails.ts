@@ -1,15 +1,15 @@
-import { AbilitiesEntry } from '#structures/AbilitiesEntry';
-import { CatchRateEntry } from '#structures/CatchRateEntry';
-import { EvYieldsEntry } from '#structures/EvYieldsEntry';
-import { FlavorEntry } from '#structures/FlavorEntry';
-import { GenderEntry } from '#structures/GenderEntry';
-import { StatsEntry } from '#structures/StatsEntry';
+import { Abilities } from '#structures/Abilities';
+import { CatchRate } from '#structures/CatchRate';
+import { EvYields } from '#structures/EvYields';
+import { Flavor } from '#structures/Flavor';
+import { Gender } from '#structures/Gender';
+import { Stats } from '#structures/Stats';
 import { Field, Float, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's entry" })
 export class DexDetails {
-  @Field(() => AbilitiesEntry, { description: 'The abilities for a Pokémon' })
-  public abilities!: AbilitiesEntry;
+  @Field(() => Abilities, { description: 'The abilities for a Pokémon' })
+  public abilities!: Abilities;
 
   @Field({
     description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
@@ -22,8 +22,8 @@ export class DexDetails {
   @Field(() => String, { nullable: true, description: 'Base species if this entry describes a special form' })
   public baseSpecies?: string;
 
-  @Field(() => StatsEntry, { description: 'Base stats for a Pokémon' })
-  public baseStats!: StatsEntry;
+  @Field(() => Stats, { description: 'Base stats for a Pokémon' })
+  public baseStats!: Stats;
 
   @Field(() => Int, { description: 'The total of all base stats for a Pokémon' })
   public baseStatsTotal!: number;
@@ -31,8 +31,8 @@ export class DexDetails {
   @Field(() => String, { description: 'Bulbapedia page for a Pokémon' })
   public bulbapediaPage!: string;
 
-  @Field(() => CatchRateEntry, { nullable: true, description: 'The catch rate data for a Pokémon' })
-  public catchRate?: CatchRateEntry;
+  @Field(() => CatchRate, { nullable: true, description: 'The catch rate data for a Pokémon' })
+  public catchRate?: CatchRate;
 
   @Field(() => String, { description: 'The colour of a Pokémon as listed in the Pokedex' })
   public color!: string;
@@ -56,11 +56,11 @@ export class DexDetails {
   @Field(() => [DexDetails], { nullable: true, description: 'The evolutions for a Pokémon, if any' })
   public evolutions?: this[];
 
-  @Field(() => EvYieldsEntry, { description: 'EV yields for a Pokémon' })
-  public evYields!: EvYieldsEntry;
+  @Field(() => EvYields, { description: 'EV yields for a Pokémon' })
+  public evYields!: EvYields;
 
-  @Field(() => [FlavorEntry], { description: 'The flavortexts for a Pokémon' })
-  public flavorTexts!: FlavorEntry[];
+  @Field(() => [Flavor], { description: 'The flavor texts for a Pokémon' })
+  public flavorTexts!: Flavor[];
 
   @Field(() => String, { nullable: true, description: 'The form identifier of a Pokémon' })
   public forme?: string;
@@ -68,8 +68,8 @@ export class DexDetails {
   @Field(() => String, { nullable: true, description: 'The single letter identifier of the form' })
   public formeLetter?: string;
 
-  @Field(() => GenderEntry, { description: 'The gender data for a Pokémon' })
-  public gender!: GenderEntry;
+  @Field(() => Gender, { description: 'The gender data for a Pokémon' })
+  public gender!: Gender;
 
   @Field(() => Float, { description: 'The height of a Pokémon in meters' })
   public height!: number;

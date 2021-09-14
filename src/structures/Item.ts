@@ -1,7 +1,7 @@
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single item entry' })
-export class ItemEntry {
+export class Item {
   @Field(() => String, { description: 'Bulbapedia page for an item' })
   public bulbapediaPage!: string;
 

@@ -10,7 +10,7 @@ describe('getAbilityDetailsByName', () => {
     }
   `;
 
-  test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
+  test('GIVEN a valid ability THEN returns Ability', async () => {
     const { data } = (await gCall({
       source: getAbilityDetailsByName,
       variableValues: { ability: 'multiscale' }
@@ -40,7 +40,7 @@ describe('getAbilityDetailsByFuzzy', () => {
     }
   `;
 
-  test('GIVEN a valid ability THEN returns AbilityEntry', async () => {
+  test('GIVEN a valid ability THEN returns Ability', async () => {
     const { data } = (await gCall({
       source: getAbilityDetailsByFuzzy,
       variableValues: { ability: 'multiscaale' }
@@ -50,7 +50,7 @@ describe('getAbilityDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy ability THEN returns AbilityEntry', async () => {
+  test('GIVEN a fuzzy ability THEN returns Ability', async () => {
     const { data } = (await gCall({
       source: getAbilityDetailsByFuzzy,
       variableValues: { ability: 'multi' }
@@ -60,7 +60,7 @@ describe('getAbilityDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy ability and pagination THEN returns AbilityEntry', async () => {
+  test('GIVEN a fuzzy ability and pagination THEN returns Ability', async () => {
     const { data } = (await gCall({
       source: getAbilityDetailsByFuzzy,
       variableValues: {

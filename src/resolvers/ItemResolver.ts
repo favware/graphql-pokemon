@@ -1,80 +1,55 @@
-import { ItemPaginatedArgs, items } from '#arguments/ItemPaginatedArgs';
-import { itemAliases } from '#assets/aliases';
+import { FuzzyItemArgs } from '#arguments/FuzzyArgs/FuzzyItemArgs';
+import type { ItemArgs } from '#arguments/ItemArgs';
 import { ItemService } from '#services/ItemSerivce';
-import { ItemEntry } from '#structures/ItemEntry';
+import { Item } from '#structures/Item';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import { Args, Query, Resolver } from 'type-graphql';
 
-@Resolver(ItemEntry)
+@Resolver(Item)
 export class ItemResolver {
-  private itemService: ItemService;
+  @Query(() => Item, {
+    description: 'Gets the details on a Pokémon item, using the item name'
+  })
+  public getItem(@Args() args: ItemArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Item>): Item {
+    const itemData = ItemService.getByItemName(args);
 
-  public constructor() {
-    this.itemService = new ItemService();
+    if (!itemData) {
+      throw new Error(`No item found for ${args.item}`);
+    }
+
+    const graphqlObject = ItemService.mapItemDataToItemGraphQL({
+      data: itemData,
+      requestedFields
+    });
+
+    if (!graphqlObject) {
+      throw new Error(`Failed to get data for item: ${args.item}`);
+    }
+
+    return graphqlObject;
   }
 
-  @Query(() => ItemEntry, {
+  @Query(() => [Item], {
     description: [
-      'Gets details on a single item based on a fuzzy search.',
-      'You can supply skip and take to paginate the fuzzy search and reverse to show teh least likely results on top',
-      'Reversal is applied before paginations!'
-    ].join('')
+      'Gets details on a Pokémon item, using a fuzzy search on name',
+      'This can be used to find multiple results based on the query',
+      'By default only 1 result is returned. You can provide the arguments "take", "offset", and "reverse" to modify this behaviour.'
+    ].join('\n')
   })
-  public getItemDetailsByFuzzy(
-    @Args() { item, skip, take, reverse }: ItemPaginatedArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>
-  ): ItemEntry {
-    const preParsedItem = preParseInput(item);
-    let entry = this.itemService.findByName(itemAliases.get(preParsedItem) ?? preParsedItem);
+  public getFuzzyItem(@Args() args: FuzzyItemArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Item>): Item[] {
+    const fuzzyEntry = ItemService.findByFuzzy(args);
 
-    // If there is no entry from a direct match then try a fuzzy match
-    if (!entry) {
-      const fuzzyEntry = this.itemService.findByFuzzy({
-        item,
-        skip,
-        take,
-        reverse
-      });
-
-      if (fuzzyEntry === undefined || !fuzzyEntry.length) {
-        throw new Error(`Failed to get data for item: ${item}`);
-      }
-
-      entry = this.itemService.findByName(toLowerSingleWordCase(fuzzyEntry[0].item.name));
-
-      // If there is still no entry then throw an error
-      if (!entry) {
-        throw new Error(`No Item found for ${item}`);
-      }
+    if (!fuzzyEntry.length) {
+      throw new Error(`No items found for: ${args.item}`);
     }
 
-    const detailsEntry = this.itemService.findByNameWithDetails(entry, requestedFields);
+    const graphqlObjects = fuzzyEntry.map((itemData) => ItemService.mapItemDataToItemGraphQL({ data: itemData.item, requestedFields }));
 
-    if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for item: ${item}`);
+    if (!graphqlObjects.length) {
+      throw new Error(`Failed to get data for item: ${args.item}`);
     }
 
-    return detailsEntry;
-  }
-
-  @Query(() => ItemEntry, {
-    description: ['Gets details on a single item based on an exact name match.'].join('')
-  })
-  public getItemDetailsByName(@Arg('item', () => items) item: string, @getRequestedFields() requestedFields: GraphQLSet<keyof ItemEntry>): ItemEntry {
-    const entry = this.itemService.findByName(item);
-
-    if (!entry) {
-      throw new Error(`No Item found for ${item}`);
-    }
-
-    const details = this.itemService.findByNameWithDetails(entry, requestedFields);
-
-    if (details === undefined) {
-      throw new Error(`Failed to get data for item: ${item}`);
-    }
-
-    return details;
+    return graphqlObjects;
   }
 }

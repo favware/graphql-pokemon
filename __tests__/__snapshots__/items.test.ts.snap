@@ -91,7 +91,7 @@ Object {
 }
 `;
 
-exports[`getItemDetailsByFuzzy GIVEN a fuzzy item THEN returns ItemEntry 1`] = `
+exports[`getItemDetailsByFuzzy GIVEN a fuzzy item THEN returns Item 1`] = `
 Object {
   "getItemDetailsByFuzzy": Object {
     "name": "Choice Band",
@@ -100,7 +100,7 @@ Object {
 }
 `;
 
-exports[`getItemDetailsByFuzzy GIVEN a fuzzy item and pagination THEN returns ItemEntry 1`] = `
+exports[`getItemDetailsByFuzzy GIVEN a fuzzy item and pagination THEN returns Item 1`] = `
 Object {
   "getItemDetailsByFuzzy": Object {
     "name": "Choice Scarf",
@@ -109,7 +109,7 @@ Object {
 }
 `;
 
-exports[`getItemDetailsByFuzzy GIVEN a valid item THEN returns ItemEntry 1`] = `
+exports[`getItemDetailsByFuzzy GIVEN a valid item THEN returns Item 1`] = `
 Object {
   "getItemDetailsByFuzzy": Object {
     "name": "Choice Specs",
@@ -136,7 +136,7 @@ Object {
 }
 `;
 
-exports[`getItemDetailsByName GIVEN a valid generation 8 item THEN returns ItemEntry 1`] = `
+exports[`getItemDetailsByName GIVEN a valid generation 8 item THEN returns Item 1`] = `
 Object {
   "getItemDetailsByName": Object {
     "name": "Flower Sweet",
@@ -144,7 +144,7 @@ Object {
 }
 `;
 
-exports[`getItemDetailsByName GIVEN a valid item THEN returns ItemEntry 1`] = `
+exports[`getItemDetailsByName GIVEN a valid item THEN returns Item 1`] = `
 Object {
   "getItemDetailsByName": Object {
     "name": "Life Orb",

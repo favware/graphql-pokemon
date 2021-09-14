@@ -1,18 +1,14 @@
-import { TypeArgs, types } from '#arguments/TypeArgs';
+import { TypeArgs } from '#arguments/TypeArgs';
 import typechart from '#assets/typechart';
-import { TypeEntry } from '#structures/TypeEntry';
-import { TypeMatchups } from '#structures/TypeMatchups';
+import { Type } from '#structures/Type';
+import { TypeMatchup } from '#structures/TypeMatchup';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { Arg, Args } from 'type-graphql';
+import { Args } from 'type-graphql';
 
 export class TypeService {
-  public findTypeMatchupByName(@Arg('name', () => types) name: string): Pokemon.TypeMatchups | undefined {
-    return typechart.get(name);
-  }
-
-  public findTypeMatchups(@Args(() => types) { types }: TypeArgs, requestedFields: GraphQLSet<keyof TypeMatchups>): TypeMatchups {
+  public static mapTypesToTypeMatchupGraphQL(@Args(() => TypeArgs) { types }: TypeArgs, requestedFields: GraphQLSet<keyof TypeMatchup>): TypeMatchup {
     const atk: Pokemon.TypeDataset = {
       doubleEffectiveTypes: [],
       doubleResistedTypes: [],
@@ -80,8 +76,8 @@ export class TypeService {
       }
     }
 
-    const attackingTypeEntry = new TypeEntry();
-    const defendingTypeEntry = new TypeEntry();
+    const attackingTypeEntry = new Type();
+    const defendingTypeEntry = new Type();
 
     if (requestedFields.has('attacking')) {
       for (const [attack, multiplier] of Object.entries(atk.multi) as [keyof Pokemon.Types, number][]) {
@@ -109,7 +105,7 @@ export class TypeService {
         }
       }
 
-      const attackingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof TypeEntry>>('attacking.');
+      const attackingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof Type>>('attacking.');
       addPropertyToClass(
         attackingTypeEntry,
         'doubleEffectiveTypes',
@@ -156,7 +152,7 @@ export class TypeService {
         }
       }
 
-      const defendingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof TypeEntry>>('defending.');
+      const defendingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof Type>>('defending.');
       addPropertyToClass(
         defendingTypeEntry,
         'doubleEffectiveTypes',
@@ -177,7 +173,7 @@ export class TypeService {
       addPropertyToClass(defendingTypeEntry, 'resistedTypes', def.resistedTypes, defendingTypeEntryFields, 'defending.resistedTypes');
     }
 
-    const typeMatchups = new TypeMatchups();
+    const typeMatchups = new TypeMatchup();
     addPropertyToClass(typeMatchups, 'attacking', attackingTypeEntry, requestedFields);
     addPropertyToClass(typeMatchups, 'defending', defendingTypeEntry, requestedFields);
 

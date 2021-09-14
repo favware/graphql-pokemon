@@ -173,7 +173,7 @@ Object {
 }
 `;
 
-exports[`getMoveByFuzzy GIVEN a fuzzy move and pagination THEN returns MoveEntry 1`] = `
+exports[`getMoveByFuzzy GIVEN a fuzzy move and pagination THEN returns Move 1`] = `
 Object {
   "getMoveByFuzzy": Array [
     Object {
@@ -290,7 +290,7 @@ Object {
 }
 `;
 
-exports[`getMoveDetailsByFuzzy GIVEN a fuzzy move THEN returns MoveEntry 1`] = `
+exports[`getMoveDetailsByFuzzy GIVEN a fuzzy move THEN returns Move 1`] = `
 Object {
   "getMoveDetailsByFuzzy": Object {
     "name": "Dragon Ascent",
@@ -298,7 +298,7 @@ Object {
 }
 `;
 
-exports[`getMoveDetailsByFuzzy GIVEN a fuzzy move and pagination THEN returns MoveEntry 1`] = `
+exports[`getMoveDetailsByFuzzy GIVEN a fuzzy move and pagination THEN returns Move 1`] = `
 Object {
   "getMoveDetailsByFuzzy": Object {
     "name": "Dragon Rage",
@@ -306,7 +306,7 @@ Object {
 }
 `;
 
-exports[`getMoveDetailsByFuzzy GIVEN a valid move THEN returns MoveEntry 1`] = `
+exports[`getMoveDetailsByFuzzy GIVEN a valid move THEN returns Move 1`] = `
 Object {
   "getMoveDetailsByFuzzy": Object {
     "name": "Dragon Dance",
@@ -332,7 +332,7 @@ Object {
 }
 `;
 
-exports[`getMoveDetailsByName GIVEN a valid move THEN returns MoveEntry 1`] = `
+exports[`getMoveDetailsByName GIVEN a valid move THEN returns Move 1`] = `
 Object {
   "getMoveDetailsByName": Object {
     "name": "Dragon Dance",

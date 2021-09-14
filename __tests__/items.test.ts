@@ -10,7 +10,7 @@ describe('getItemDetailsByName', () => {
     }
   `;
 
-  test('GIVEN a valid item THEN returns ItemEntry', async () => {
+  test('GIVEN a valid item THEN returns Item', async () => {
     const { data } = (await gCall({
       source: getItemDetailsByName,
       variableValues: { item: 'lifeorb' }
@@ -20,7 +20,7 @@ describe('getItemDetailsByName', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a valid generation 8 item THEN returns ItemEntry', async () => {
+  test('GIVEN a valid generation 8 item THEN returns Item', async () => {
     const { data } = (await gCall({
       source: getItemDetailsByName,
       variableValues: { item: 'flowersweet' }
@@ -51,7 +51,7 @@ describe('getItemDetailsByFuzzy', () => {
     }
   `;
 
-  test('GIVEN a valid item THEN returns ItemEntry', async () => {
+  test('GIVEN a valid item THEN returns Item', async () => {
     const { data } = (await gCall({
       source: getItemDetailsByFuzzy,
       variableValues: { item: 'choicespecs' }
@@ -62,7 +62,7 @@ describe('getItemDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy item THEN returns ItemEntry', async () => {
+  test('GIVEN a fuzzy item THEN returns Item', async () => {
     const { data } = (await gCall({
       source: getItemDetailsByFuzzy,
       variableValues: { item: 'choice' }
@@ -73,7 +73,7 @@ describe('getItemDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy item and pagination THEN returns ItemEntry', async () => {
+  test('GIVEN a fuzzy item and pagination THEN returns Item', async () => {
     const { data } = (await gCall({
       source: getItemDetailsByFuzzy,
       variableValues: {

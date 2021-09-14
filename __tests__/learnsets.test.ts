@@ -53,7 +53,7 @@ describe('getPokemonLearnset', () => {
     }
   `;
 
-  test('GIVEN a valid pokemon and move array THEN returns LearnsetEntry', async () => {
+  test('GIVEN a valid pokemon and move array THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnset,
       variableValues: { pokemon: 'dragonite', moves: ['dragondance'] }
@@ -64,7 +64,7 @@ describe('getPokemonLearnset', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a valid pokemon and single move THEN returns LearnsetEntry', async () => {
+  test('GIVEN a valid pokemon and single move THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnset,
       variableValues: { pokemon: 'dragonite', moves: 'dragondance' }
@@ -75,7 +75,7 @@ describe('getPokemonLearnset', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a valid pokemon, move array and generation THEN returns LearnsetEntry', async () => {
+  test('GIVEN a valid pokemon, move array and generation THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnset,
       variableValues: { pokemon: 'dragonite', moves: ['dragondance'], generation: 7 }
@@ -86,7 +86,7 @@ describe('getPokemonLearnset', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a valid pokemon, a single move and generation THEN returns LearnsetEntry', async () => {
+  test('GIVEN a valid pokemon, a single move and generation THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnset,
       variableValues: { pokemon: 'dragonite', moves: 'dragondance', generation: 7 }
@@ -97,7 +97,7 @@ describe('getPokemonLearnset', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a valid pokemon and multiple moves THEN returns LearnsetEntry', async () => {
+  test('GIVEN a valid pokemon and multiple moves THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnset,
       variableValues: { pokemon: 'dragonite', moves: ['dragondance', 'dragonclaw'] }
@@ -109,7 +109,7 @@ describe('getPokemonLearnset', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a valid pokemon, multiple moves and generation THEN returns LearnsetEntry', async () => {
+  test('GIVEN a valid pokemon, multiple moves and generation THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnset,
       variableValues: { pokemon: 'dragonite', moves: ['dragondance', 'dragonclaw'], generation: 7 }
@@ -164,7 +164,7 @@ describe('getPokemonLearnsetByFuzzy', () => {
     }
   `;
 
-  test('GIVEN a fuzzy pokemon and exact move array THEN returns LearnsetEntry', async () => {
+  test('GIVEN a fuzzy pokemon and exact move array THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnsetByFuzzy,
       variableValues: { pokemon: 'dragoni', moves: ['dragondance'] }
@@ -179,7 +179,7 @@ describe('getPokemonLearnsetByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN an exact pokemon and fuzzy move array THEN returns LearnsetEntry', async () => {
+  test('GIVEN an exact pokemon and fuzzy move array THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnsetByFuzzy,
       variableValues: { pokemon: 'dragonite', moves: ['dragondan'] }
@@ -194,7 +194,7 @@ describe('getPokemonLearnsetByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy pokemon and fuzzy move array THEN returns LearnsetEntry', async () => {
+  test('GIVEN a fuzzy pokemon and fuzzy move array THEN returns Laernset', async () => {
     const { data } = (await gCall({
       source: getPokemonLearnsetByFuzzy,
       variableValues: { pokemon: 'dragoni', moves: ['dragondan'] }

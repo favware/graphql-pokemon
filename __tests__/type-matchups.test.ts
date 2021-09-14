@@ -28,7 +28,7 @@ describe('getTypeMatchup', () => {
     }
   `;
 
-  test('GIVEN a one valid type THEN returns TypeMatchups', async () => {
+  test('GIVEN a one valid type THEN returns TypeMatchup', async () => {
     const { data } = (await gCall({
       source: getTypeMatchup,
       variableValues: { types: 'dragon' }
@@ -39,7 +39,7 @@ describe('getTypeMatchup', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a one valid type as array THEN returns TypeMatchups', async () => {
+  test('GIVEN a one valid type as array THEN returns TypeMatchup', async () => {
     const { data } = (await gCall({
       source: getTypeMatchup,
       variableValues: { types: ['dragon'] }
@@ -50,7 +50,7 @@ describe('getTypeMatchup', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a two valid types THEN returns TypeMatchups', async () => {
+  test('GIVEN a two valid types THEN returns TypeMatchup', async () => {
     const { data } = (await gCall({
       source: getTypeMatchup,
       variableValues: { types: ['dark', 'ghost'] }

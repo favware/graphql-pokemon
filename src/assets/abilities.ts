@@ -1212,7 +1212,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'If this Pokémon is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP.',
       name: 'Poison Heal',
-      shortDesc: 'This Pokémon is healed by 1/8 of its max HP each turn when poisoned; no HP loss.'
+      shortDesc: 'This Pokémon is healed by 1/8 of its max HP each turn when poisoned; no HP loss.',
+      aliases: ['ph']
     }
   ],
   [
@@ -1533,7 +1534,8 @@ export default new GraphQLCollection<string, Pokemon.Ability>([
     {
       desc: 'Prevents adjacent opposing Pokémon from choosing to switch out unless they are immune to trapping or also have this Ability.',
       name: 'Shadow Tag',
-      shortDesc: 'Prevents adjacent foes from choosing to switch unless they also have this Ability.'
+      shortDesc: 'Prevents adjacent foes from choosing to switch unless they also have this Ability.',
+      aliases: ['stag']
     }
   ],
   [

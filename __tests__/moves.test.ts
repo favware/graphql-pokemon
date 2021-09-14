@@ -10,7 +10,7 @@ describe('getMoveDetailsByName', () => {
     }
   `;
 
-  test('GIVEN a valid move THEN returns MoveEntry', async () => {
+  test('GIVEN a valid move THEN returns Move', async () => {
     const { data } = (await gCall({
       source: getMoveDetailsByName,
       variableValues: { move: 'dragondance' }
@@ -40,7 +40,7 @@ describe('getMoveDetailsByFuzzy', () => {
     }
   `;
 
-  test('GIVEN a valid move THEN returns MoveEntry', async () => {
+  test('GIVEN a valid move THEN returns Move', async () => {
     const { data } = (await gCall({
       source: getMoveDetailsByFuzzy,
       variableValues: { move: 'dragondance' }
@@ -50,7 +50,7 @@ describe('getMoveDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy move THEN returns MoveEntry', async () => {
+  test('GIVEN a fuzzy move THEN returns Move', async () => {
     const { data } = (await gCall({
       source: getMoveDetailsByFuzzy,
       variableValues: { move: 'dragon' }
@@ -59,7 +59,7 @@ describe('getMoveDetailsByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy move and pagination THEN returns MoveEntry', async () => {
+  test('GIVEN a fuzzy move and pagination THEN returns Move', async () => {
     const { data } = (await gCall({
       source: getMoveDetailsByFuzzy,
       variableValues: {
@@ -124,7 +124,7 @@ describe('getMoveByFuzzy', () => {
     expect(data).toMatchSnapshot();
   });
 
-  test('GIVEN a fuzzy move and pagination THEN returns MoveEntry', async () => {
+  test('GIVEN a fuzzy move and pagination THEN returns Move', async () => {
     const { data } = (await gCall({
       source: getMoveByFuzzy,
       variableValues: {

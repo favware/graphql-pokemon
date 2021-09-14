@@ -1,83 +1,57 @@
-import { abilities, AbilityPaginatedArgs } from '#arguments/AbilityPaginatedArgs';
-import { abilityAliases } from '#assets/aliases';
+import { FuzzyAbilityArgs } from '#arguments/FuzzyArgs/FuzzyAbilityArgs';
 import { AbilityService } from '#services/AbilityService';
-import { AbilityEntry } from '#structures/AbilityEntry';
+import { Ability } from '#structures/Ability';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput, toLowerSingleWordCase } from '#utils/util';
-import { Arg, Args, Query, Resolver } from 'type-graphql';
+import { Args, Query, Resolver } from 'type-graphql';
+import { AbilityArgs } from '#arguments/AbilityArgs';
 
-@Resolver(AbilityEntry)
+@Resolver(Ability)
 export class AbilityResolver {
-  private abilityService: AbilityService;
+  @Query(() => Ability, {
+    description: 'Gets the details on a Pokémon ability, using the ability name'
+  })
+  public getAbility(@Args() args: AbilityArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Ability>): Ability {
+    const abilityData = AbilityService.getByAbilityName(args);
 
-  public constructor() {
-    this.abilityService = new AbilityService();
+    if (!abilityData) {
+      throw new Error(`No ability found for ${args.ability}`);
+    }
+
+    const graphqlObject = AbilityService.mapAbilityDataToAbilityGraphQL({
+      data: abilityData,
+      requestedFields
+    });
+
+    if (!graphqlObject) {
+      throw new Error(`Failed to get data for ability: ${args.ability}`);
+    }
+
+    return graphqlObject;
   }
 
-  @Query(() => AbilityEntry, {
+  @Query(() => [Ability], {
     description: [
-      'Gets details on a single ability based on a fuzzy search.',
-      'You can supply skip and take to paginate the fuzzy search and reverse to show the least likely matched on top.',
-      'Reversal is applied before pagination!'
-    ].join('')
+      'Gets details on a Pokémon ability, using a fuzzy search on name',
+      'This can be used to find multiple results based on the query',
+      'By default only 1 result is returned. You can provide the arguments "take", "offset", and "reverse" to modify this behaviour.'
+    ].join('\n')
   })
-  public getAbilityDetailsByFuzzy(
-    @Args() { ability, skip, take, reverse }: AbilityPaginatedArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
-  ): AbilityEntry {
-    const preParsedAbility = preParseInput(ability);
-    let entry = this.abilityService.findByName(abilityAliases.get(preParsedAbility) ?? preParsedAbility);
+  public getFuzzyAbility(@Args() args: FuzzyAbilityArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Ability>): Ability[] {
+    const fuzzyEntry = AbilityService.findByFuzzy(args);
 
-    // If there is no entry from a direct match then try a fuzzy match
-    if (!entry) {
-      const fuzzyEntry = this.abilityService.findByFuzzy({
-        ability,
-        skip,
-        take,
-        reverse
-      });
-
-      if (fuzzyEntry === undefined || !fuzzyEntry.length) {
-        throw new Error(`Failed to get data for ability: ${ability}`);
-      }
-
-      entry = this.abilityService.findByName(toLowerSingleWordCase(fuzzyEntry[0].item.name));
-
-      // If there is still no entry then throw an error
-      if (!entry) {
-        throw new Error(`No Ability found for ${ability}`);
-      }
+    if (!fuzzyEntry.length) {
+      throw new Error(`No abilities found for: ${args.ability}`);
     }
 
-    const detailsEntry = this.abilityService.findByNameWithDetails(entry, requestedFields);
+    const graphqlObjects = fuzzyEntry.map((abilityData) =>
+      AbilityService.mapAbilityDataToAbilityGraphQL({ data: abilityData.item, requestedFields })
+    );
 
-    if (detailsEntry === undefined) {
-      throw new Error(`Failed to get data for ability: ${ability}`);
+    if (!graphqlObjects.length) {
+      throw new Error(`Failed to get data for ability: ${args.ability}`);
     }
 
-    return detailsEntry;
-  }
-
-  @Query(() => AbilityEntry, {
-    description: ['Gets details on a single ability based on an exact name match.'].join('')
-  })
-  public getAbilityDetailsByName(
-    @Arg('ability', () => abilities) ability: string,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof AbilityEntry>
-  ): AbilityEntry {
-    const entry = this.abilityService.findByName(ability);
-
-    if (!entry) {
-      throw new Error(`No Ability found for ${ability}`);
-    }
-
-    const details = this.abilityService.findByNameWithDetails(entry, requestedFields);
-
-    if (details === undefined) {
-      throw new Error(`Failed to get data for ability: ${ability}`);
-    }
-
-    return details;
+    return graphqlObjects;
   }
 }

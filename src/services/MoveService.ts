@@ -1,63 +1,57 @@
-import { MovePaginatedArgs } from '#arguments/MovePaginatedArgs';
+import { FuzzyMoveArgs } from '#arguments/FuzzyArgs/FuzzyMoveArgs';
+import { MoveArgs } from '#arguments/MoveArgs';
 import moves from '#assets/moves';
-import { MoveEntry } from '#structures/MoveEntry';
+import { Move } from '#structures/Move';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
-import { parseZCrystal, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
+import { parseZCrystal, preParseInput, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
 import type Fuse from 'fuse.js';
-import { Arg, Args } from 'type-graphql';
+import { Args } from 'type-graphql';
 
 export class MoveService {
-  public findByName(@Arg('name') name: string): Pokemon.Move | undefined {
-    return moves.get(name);
+  public static getByMoveName(@Args(() => MoveArgs) { move }: MoveArgs): Pokemon.Move | undefined {
+    return moves.get(move);
   }
 
-  public findByFuzzy(@Args() { move, skip, take, reverse }: MovePaginatedArgs): Fuse.FuseResult<Pokemon.Move>[] {
-    const fuzzyResult = new FuzzySearch(moves, ['name'], { threshold: 0.3 }).runFuzzy(move);
+  public static mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataToMoveGraphQLParameters): Move {
+    const move = new Move();
+
+    addPropertyToClass(move, 'name', data.name, requestedFields);
+    addPropertyToClass(move, 'desc', data.desc, requestedFields);
+    addPropertyToClass(move, 'shortDesc', data.shortDesc, requestedFields);
+    addPropertyToClass(move, 'type', data.type, requestedFields);
+    addPropertyToClass(move, 'contestType', data.contestType, requestedFields);
+    addPropertyToClass(move, 'basePower', data.basePower, requestedFields);
+    addPropertyToClass(move, 'pp', data.pp, requestedFields);
+    addPropertyToClass(move, 'category', data.category, requestedFields);
+    addPropertyToClass(move, 'accuracy', data.accuracy, requestedFields);
+    addPropertyToClass(move, 'priority', data.priority, requestedFields);
+    addPropertyToClass(move, 'target', data.target, requestedFields);
+    addPropertyToClass(move, 'isNonstandard', data.isNonstandard, requestedFields);
+    addPropertyToClass(move, 'isGMax', data.isGMax, requestedFields);
+    addPropertyToClass(move, 'isZ', parseZCrystal(data.isZ), requestedFields);
+    addPropertyToClass(move, 'isFieldMove', data.isFieldMove, requestedFields);
+    addPropertyToClass(move, 'maxMovePower', data.maxMovePower, requestedFields);
+    addPropertyToClass(move, 'zMovePower', this.parseZMovePower(data.basePower, data.zMovePower), requestedFields);
+    addPropertyToClass(move, 'serebiiPage', `https://www.serebii.net/attackdex-swsh/${toLowerSingleWordCase(data.name)}.shtml`, requestedFields);
+    addPropertyToClass(move, 'bulbapediaPage', `https://bulbapedia.bulbagarden.net/wiki/${toTitleSnakeCase(data.name)}_(move)`, requestedFields);
+    addPropertyToClass(move, 'smogonPage', `https://www.smogon.com/dex/ss/moves/${toLowerHyphenCase(data.name)}`, requestedFields);
+
+    return move;
+  }
+
+  public static findByFuzzy(@Args(() => FuzzyMoveArgs) { move, offset, reverse, take }: FuzzyMoveArgs): Fuse.FuseResult<Pokemon.Move>[] {
+    move = preParseInput(move);
+
+    const fuzzyResult = new FuzzySearch(moves, ['name', 'aliases'], { threshold: 0.3 }).runFuzzy(move);
 
     if (reverse) {
       fuzzyResult.reverse();
     }
 
-    return fuzzyResult.slice(skip, skip + take);
-  }
-
-  public findByNameWithDetails(moveData: Pokemon.Move, requestedFields: GraphQLSet<keyof MoveEntry>): MoveEntry {
-    const moveEntry = new MoveEntry();
-    addPropertyToClass(moveEntry, 'name', moveData.name, requestedFields);
-    addPropertyToClass(moveEntry, 'desc', moveData.desc, requestedFields);
-    addPropertyToClass(moveEntry, 'shortDesc', moveData.shortDesc, requestedFields);
-    addPropertyToClass(moveEntry, 'type', moveData.type, requestedFields);
-    addPropertyToClass(moveEntry, 'contestType', moveData.contestType, requestedFields);
-    addPropertyToClass(moveEntry, 'basePower', moveData.basePower, requestedFields);
-    addPropertyToClass(moveEntry, 'pp', moveData.pp, requestedFields);
-    addPropertyToClass(moveEntry, 'category', moveData.category, requestedFields);
-    addPropertyToClass(moveEntry, 'accuracy', moveData.accuracy, requestedFields);
-    addPropertyToClass(moveEntry, 'priority', moveData.priority, requestedFields);
-    addPropertyToClass(moveEntry, 'target', moveData.target, requestedFields);
-    addPropertyToClass(moveEntry, 'isNonstandard', moveData.isNonstandard, requestedFields);
-    addPropertyToClass(moveEntry, 'isGMax', moveData.isGMax, requestedFields);
-    addPropertyToClass(moveEntry, 'isZ', parseZCrystal(moveData.isZ), requestedFields);
-    addPropertyToClass(moveEntry, 'isFieldMove', moveData.isFieldMove, requestedFields);
-    addPropertyToClass(moveEntry, 'maxMovePower', moveData.maxMovePower, requestedFields);
-    addPropertyToClass(moveEntry, 'zMovePower', this.parseZMovePower(moveData.basePower, moveData.zMovePower), requestedFields);
-    addPropertyToClass(
-      moveEntry,
-      'serebiiPage',
-      `https://www.serebii.net/attackdex-swsh/${toLowerSingleWordCase(moveData.name)}.shtml`,
-      requestedFields
-    );
-    addPropertyToClass(
-      moveEntry,
-      'bulbapediaPage',
-      `https://bulbapedia.bulbagarden.net/wiki/${toTitleSnakeCase(moveData.name)}_(move)`,
-      requestedFields
-    );
-    addPropertyToClass(moveEntry, 'smogonPage', `https://www.smogon.com/dex/ss/moves/${toLowerHyphenCase(moveData.name)}`, requestedFields);
-
-    return moveEntry;
+    return fuzzyResult.slice(offset, offset + take);
   }
 
   /**
@@ -78,7 +72,7 @@ export class MoveService {
    * @param basePower The basepower of a move
    * @param zMovePower The z-move power of a move, if specified it is preferred.
    */
-  private parseZMovePower(basePower: string, zMovePower: number | undefined): number {
+  private static parseZMovePower(basePower: string, zMovePower: number | undefined): number {
     // If zMovePower was defined on the move data then just return that value
     if (typeof zMovePower === 'number') return zMovePower;
 
@@ -102,4 +96,9 @@ export class MoveService {
     // If somehow none of these cases matched we return Infinity, just to ensure it gets caught more easily
     return Infinity;
   }
+}
+
+interface MapMoveDataToMoveGraphQLParameters {
+  data: Pokemon.Move;
+  requestedFields: GraphQLSet<keyof Move>;
 }

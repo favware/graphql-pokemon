@@ -1,7 +1,7 @@
 import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single Pokémon ability entry' })
-export class AbilityEntry {
+export class Ability {
   @Field(() => String, { description: 'Bulbapedia page for an ability' })
   public bulbapediaPage!: string;
 

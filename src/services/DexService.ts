@@ -1,46 +1,70 @@
-import { PokemonPaginatedArgs } from '#arguments/PokemonPaginatedArgs';
+import { FuzzyPokemonArgs } from '#arguments/FuzzyArgs/FuzzyPokemonArgs';
+import { PokemonArgs } from '#arguments/PokemonArgs/PokemonArgs';
+import type { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs';
 import pokedex from '#assets/pokedex';
-import { AbilitiesEntry } from '#structures/AbilitiesEntry';
-import { CatchRateEntry } from '#structures/CatchRateEntry';
+import { Abilities } from '#structures/Abilities';
+import { CatchRate } from '#structures/CatchRate';
 import { DexDetails } from '#structures/DexDetails';
-import { EvYieldsEntry } from '#structures/EvYieldsEntry';
-import { FlavorEntry } from '#structures/FlavorEntry';
-import { GenderEntry } from '#structures/GenderEntry';
-import { StatsEntry } from '#structures/StatsEntry';
+import { EvYields } from '#structures/EvYields';
+import { Flavor } from '#structures/Flavor';
+import { Gender } from '#structures/Gender';
+import { Stats } from '#structures/Stats';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type Pokemon from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
-import { cast, toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
+import { cast, preParseInput, toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
 import type Fuse from 'fuse.js';
-import { Arg, Args } from 'type-graphql';
+import { Args } from 'type-graphql';
 
 export class DexService {
-  private flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
-  private tiers: Record<string, string> | undefined = undefined;
-  private readonly bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/wiki/';
-  private readonly bulbapediaBaseUrlPostfix = '_(Pokémon)';
-  private readonly serebiiBaseUrl = 'https://www.serebii.net/pokedex';
-  private readonly smogonBaseUrl = 'https://www.smogon.com/dex';
+  private static flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
+  private static tiers: Record<string, string> | undefined = undefined;
+  private static readonly bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/wiki/';
+  private static readonly bulbapediaBaseUrlPostfix = '_(Pokémon)';
+  private static readonly serebiiBaseUrl = 'https://www.serebii.net/pokedex';
+  private static readonly smogonBaseUrl = 'https://www.smogon.com/dex';
 
-  public findByNum(@Arg('num') num: number): Pokemon.DexEntry | undefined {
-    return pokedex.find((poke) => poke.num === num);
+  public static getBySpecies(@Args(() => PokemonArgs) { pokemon }: PokemonArgs): Pokemon.DexEntry | undefined {
+    return pokedex.get(pokemon);
   }
 
-  public findBySpecies(@Arg('species') species: string): Pokemon.DexEntry | undefined {
-    return pokedex.get(species);
+  public static getByNationalDexNumber(@Args(() => PokemonArgs) { number }: PokemonNumberArgs): Pokemon.DexEntry | undefined {
+    return pokedex.find((pokemon) => pokemon.num === number);
   }
 
-  public async findBySpeciesWithDetails(
-    basePokemonData: Pokemon.DexEntry,
-    skip: number,
-    take: number,
-    requestedFields: GraphQLSet<unknown>,
-    reverse?: boolean,
+  public static findByFuzzy(@Args() { pokemon, offset, take, reverse }: FuzzyPokemonArgs): Fuse.FuseResult<Pokemon.DexEntry>[] {
+    pokemon = this.parseFormeIdentifiers(preParseInput(pokemon));
+
+    const fuzzyResult = new FuzzySearch(pokedex, ['num', 'species', 'aliases'], { threshold: 0.3 }).runFuzzy(pokemon);
+
+    if (!fuzzyResult.length) {
+      throw new Error(`No Pokémon found for ${pokemon}`);
+    }
+
+    if (reverse) {
+      fuzzyResult.reverse();
+    }
+
+    return fuzzyResult.slice(offset, offset + take);
+  }
+
+  public static async mapPokemonDataToPokemonGraphQL({
+    data,
+    requestedFields,
     parsingPokemon = '',
-    recursingAs: 'preevolutions' | 'evolutions' | false = false
-  ): Promise<DexDetails> {
+    recursingAs = false,
+    takeFlavorTexts = 1,
+    offsetFlavorTexts = 0,
+    reverseFlavorTexts = false
+  }: MapPokemonDataToPokemonGraphQLParameters): Promise<DexDetails> {
+    const basePokemonArgs = {
+      offsetFlavorTexts,
+      takeFlavorTexts,
+      reverseFlavorTexts
+    };
+
     if (this.flavors === undefined) {
       this.flavors = (await import('#jsonAssets/flavorText.json')).default;
     }
@@ -49,24 +73,20 @@ export class DexService {
       this.tiers = (await import('#jsonAssets/formats.json')).default;
     }
 
-    const pokemonData = new DexDetails();
-    const genderData = new GenderEntry();
-    const baseStatsData = new StatsEntry();
-    const evYieldsData = new EvYieldsEntry();
-    const abilitiesData = new AbilitiesEntry();
-    const catchRateData = new CatchRateEntry();
     const evolutionChain: Promise<DexDetails>[] = [];
     const preevolutionChain: Promise<DexDetails>[] = [];
-    const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = basePokemonData.genderRatio || {
+
+    const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = data.genderRatio || {
       male: 0.5,
       female: 0.5
     };
-    const basePokemonCatchRate: Pokemon.DexEntry['catchRate'] = basePokemonData.catchRate || {
+    const basePokemonCatchRate: Pokemon.DexEntry['catchRate'] = data.catchRate || {
       base: 0,
       percentageWithOrdinaryPokeballAtFullHealth: '0%'
     };
 
-    const genderEntryRequestedFields = cast<GraphQLSet<keyof GenderEntry>>(requestedFields);
+    const genderEntryRequestedFields = cast<GraphQLSet<keyof Gender>>(requestedFields);
+    const genderData = new Gender();
     addPropertyToClass(
       genderData,
       'male',
@@ -82,310 +102,267 @@ export class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}gender.female`
     );
 
-    const baseStatsRequestedFields = cast<GraphQLSet<keyof StatsEntry>>(requestedFields);
-    addPropertyToClass(
-      baseStatsData,
-      'hp',
-      basePokemonData.baseStats.hp,
-      baseStatsRequestedFields,
-      `${recursingAs ? `${recursingAs}.` : ''}baseStats.hp`
-    );
+    const baseStatsRequestedFields = cast<GraphQLSet<keyof Stats>>(requestedFields);
+    const baseStatsData = new Stats();
+    addPropertyToClass(baseStatsData, 'hp', data.baseStats.hp, baseStatsRequestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats.hp`);
     addPropertyToClass(
       baseStatsData,
       'attack',
-      basePokemonData.baseStats.atk,
+      data.baseStats.atk,
       baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.attack`
     );
     addPropertyToClass(
       baseStatsData,
       'defense',
-      basePokemonData.baseStats.def,
+      data.baseStats.def,
       baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.defense`
     );
     addPropertyToClass(
       baseStatsData,
       'specialattack',
-      basePokemonData.baseStats.spa,
+      data.baseStats.spa,
       baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.specialattack`
     );
     addPropertyToClass(
       baseStatsData,
       'specialdefense',
-      basePokemonData.baseStats.spd,
+      data.baseStats.spd,
       baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.specialdefense`
     );
     addPropertyToClass(
       baseStatsData,
       'speed',
-      basePokemonData.baseStats.spe,
+      data.baseStats.spe,
       baseStatsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStats.speed`
     );
 
-    const evYieldsRequestedFields = cast<GraphQLSet<keyof EvYieldsEntry>>(requestedFields);
-    addPropertyToClass(
-      evYieldsData,
-      'hp',
-      basePokemonData.evYields.hp,
-      evYieldsRequestedFields,
-      `${recursingAs ? `${recursingAs}.` : ''}evYields.hp`
-    );
-    addPropertyToClass(
-      evYieldsData,
-      'attack',
-      basePokemonData.evYields.atk,
-      evYieldsRequestedFields,
-      `${recursingAs ? `${recursingAs}.` : ''}evYields.attack`
-    );
+    const evYieldsRequestedFields = cast<GraphQLSet<keyof EvYields>>(requestedFields);
+    const evYieldsData = new EvYields();
+    addPropertyToClass(evYieldsData, 'hp', data.evYields.hp, evYieldsRequestedFields, `${recursingAs ? `${recursingAs}.` : ''}evYields.hp`);
+    addPropertyToClass(evYieldsData, 'attack', data.evYields.atk, evYieldsRequestedFields, `${recursingAs ? `${recursingAs}.` : ''}evYields.attack`);
     addPropertyToClass(
       evYieldsData,
       'defense',
-      basePokemonData.evYields.def,
+      data.evYields.def,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.defense`
     );
     addPropertyToClass(
       evYieldsData,
       'specialattack',
-      basePokemonData.evYields.spa,
+      data.evYields.spa,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.specialattack`
     );
     addPropertyToClass(
       evYieldsData,
       'specialdefense',
-      basePokemonData.evYields.spd,
+      data.evYields.spd,
       evYieldsRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}evYields.specialdefense`
     );
-    addPropertyToClass(
-      evYieldsData,
-      'speed',
-      basePokemonData.evYields.spe,
-      evYieldsRequestedFields,
-      `${recursingAs ? `${recursingAs}.` : ''}evYields.speed`
-    );
+    addPropertyToClass(evYieldsData, 'speed', data.evYields.spe, evYieldsRequestedFields, `${recursingAs ? `${recursingAs}.` : ''}evYields.speed`);
 
-    const abilitiesRequestedFields = cast<GraphQLSet<keyof AbilitiesEntry>>(requestedFields);
+    const abilitiesRequestedFields = cast<GraphQLSet<keyof Abilities>>(requestedFields);
+    const abilitiesData = new Abilities();
     addPropertyToClass(
       abilitiesData,
       'first',
-      basePokemonData.abilities.first,
+      data.abilities.first,
       abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.first`
     );
     addPropertyToClass(
       abilitiesData,
       'second',
-      basePokemonData.abilities.second,
+      data.abilities.second,
       abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.second`
     );
     addPropertyToClass(
       abilitiesData,
       'hidden',
-      basePokemonData.abilities.hidden,
+      data.abilities.hidden,
       abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.hidden`
     );
     addPropertyToClass(
       abilitiesData,
       'special',
-      basePokemonData.abilities.special,
+      data.abilities.special,
       abilitiesRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}abilities.special`
     );
 
+    const catchRateRequestedFields = cast<GraphQLSet<keyof CatchRate>>(requestedFields);
+    const catchRateData = new CatchRate();
     addPropertyToClass(
       catchRateData,
       'base',
       basePokemonCatchRate.base,
-      requestedFields as GraphQLSet<keyof CatchRateEntry>,
+      catchRateRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}catchRate.base`
     );
     addPropertyToClass(
       catchRateData,
       'percentageWithOrdinaryPokeballAtFullHealth',
       basePokemonCatchRate.percentageWithOrdinaryPokeballAtFullHealth,
-      requestedFields as GraphQLSet<keyof CatchRateEntry>,
+      catchRateRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}catchRate.percentageWithOrdinaryPokeballAtFullHealth`
     );
 
-    const dexDetailsFields = cast<GraphQLSet<keyof DexDetails>>(requestedFields);
-    addPropertyToClass(pokemonData, 'abilities', abilitiesData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
-    addPropertyToClass(pokemonData, 'gender', genderData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
-    addPropertyToClass(pokemonData, 'baseStats', baseStatsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
-    addPropertyToClass(pokemonData, 'evYields', evYieldsData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}evYields`);
-    addPropertyToClass(pokemonData, 'catchRate', catchRateData, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}catchRate`);
-    addPropertyToClass(pokemonData, 'num', basePokemonData.num, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
-    addPropertyToClass(pokemonData, 'species', basePokemonData.species, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
-    addPropertyToClass(pokemonData, 'types', basePokemonData.types, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}types`);
-    addPropertyToClass(pokemonData, 'color', basePokemonData.color, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}color`);
-    addPropertyToClass(pokemonData, 'eggGroups', basePokemonData.eggGroups, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}eggGroups`);
-    addPropertyToClass(
-      pokemonData,
-      'evolutionLevel',
-      basePokemonData.evoLevel,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}evolutionLevel`
-    );
+    const pokemonData = new DexDetails();
+    addPropertyToClass(pokemonData, 'abilities', abilitiesData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
+    addPropertyToClass(pokemonData, 'gender', genderData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
+    addPropertyToClass(pokemonData, 'baseStats', baseStatsData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
+    addPropertyToClass(pokemonData, 'evYields', evYieldsData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}evYields`);
+    addPropertyToClass(pokemonData, 'catchRate', catchRateData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}catchRate`);
+    addPropertyToClass(pokemonData, 'num', data.num, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
+    addPropertyToClass(pokemonData, 'species', data.species, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
+    addPropertyToClass(pokemonData, 'types', data.types, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}types`);
+    addPropertyToClass(pokemonData, 'color', data.color, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}color`);
+    addPropertyToClass(pokemonData, 'eggGroups', data.eggGroups, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}eggGroups`);
+    addPropertyToClass(pokemonData, 'evolutionLevel', data.evoLevel, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}evolutionLevel`);
 
-    const smogonTier = this.tiers[toLowerSingleWordCase(basePokemonData.species)] || 'Undiscovered';
-    addPropertyToClass(pokemonData, 'smogonTier', smogonTier, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}smogonTier`);
-    addPropertyToClass(pokemonData, 'height', basePokemonData.heightm, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}height`);
-    addPropertyToClass(pokemonData, 'weight', basePokemonData.weightkg, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}weight`);
-    addPropertyToClass(pokemonData, 'baseForme', basePokemonData.baseForme, dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}baseForme`);
-    addPropertyToClass(
-      pokemonData,
-      'baseSpecies',
-      basePokemonData.baseSpecies,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}baseSpecies`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'otherFormes',
-      basePokemonData.otherFormes,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}otherFormes`
-    );
-    addPropertyToClass(
-      pokemonData,
-      'cosmeticFormes',
-      basePokemonData.cosmeticFormes,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}cosmeticFormes`
-    );
+    const smogonTier = this.tiers[toLowerSingleWordCase(data.species)] || 'Undiscovered';
+    addPropertyToClass(pokemonData, 'smogonTier', smogonTier, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}smogonTier`);
+
+    addPropertyToClass(pokemonData, 'height', data.heightm, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}height`);
+    addPropertyToClass(pokemonData, 'weight', data.weightkg, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}weight`);
+    addPropertyToClass(pokemonData, 'baseForme', data.baseForme, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseForme`);
+    addPropertyToClass(pokemonData, 'baseSpecies', data.baseSpecies, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseSpecies`);
+    addPropertyToClass(pokemonData, 'otherFormes', data.otherFormes, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}otherFormes`);
+    addPropertyToClass(pokemonData, 'cosmeticFormes', data.cosmeticFormes, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}cosmeticFormes`);
     addPropertyToClass(
       pokemonData,
       'baseStatsTotal',
-      this.parseBaseStatsTotal(basePokemonData.baseStats),
-      dexDetailsFields,
+      this.parseBaseStatsTotal(data.baseStats),
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}baseStatsTotal`
     );
-    addPropertyToClass(
-      pokemonData,
-      'levellingRate',
-      basePokemonData.levellingRate,
-      dexDetailsFields,
-      `${recursingAs ? `${recursingAs}.` : ''}levellingRate`
-    );
+    addPropertyToClass(pokemonData, 'levellingRate', data.levellingRate, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}levellingRate`);
     addPropertyToClass(
       pokemonData,
       'minimumHatchTime',
-      basePokemonData.minimumHatchTime,
-      dexDetailsFields,
+      data.minimumHatchTime,
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}minimumHatchTime`
     );
     addPropertyToClass(
       pokemonData,
       'maximumHatchTime',
-      this.parseMinimumHatchTimeForMaximumHatchTime(basePokemonData.minimumHatchTime),
-      dexDetailsFields,
+      this.parseMinimumHatchTimeForMaximumHatchTime(data.minimumHatchTime),
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}maximumHatchTime`
     );
     addPropertyToClass(
       pokemonData,
       'isEggObtainable',
-      basePokemonData.isEggObtainable,
-      dexDetailsFields,
+      data.isEggObtainable,
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}isEggObtainable`
     );
-    addPropertyToClass(pokemonData, 'flavorTexts', [], dexDetailsFields, `${recursingAs ? `${recursingAs}.` : ''}flavorTexts`);
+
     addPropertyToClass(
       pokemonData,
       'serebiiPage',
-      this.parseSpeciesForSerebiiPage(basePokemonData.baseSpecies ?? basePokemonData.species, basePokemonData.num, smogonTier),
-      dexDetailsFields,
+      this.parseSpeciesForSerebiiPage(data.baseSpecies ?? data.species, data.num, smogonTier),
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}serebiiPage`
     );
     addPropertyToClass(
       pokemonData,
       'bulbapediaPage',
-      basePokemonData.num >= 1 ? this.parseSpeciesForBulbapedia(basePokemonData) : '',
-      dexDetailsFields,
+      data.num >= 1 ? this.parseSpeciesForBulbapedia(data) : '',
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}bulbapediaPage`
     );
     addPropertyToClass(
       pokemonData,
       'smogonPage',
-      this.parseSpeciesForSmogonPage(basePokemonData.species, basePokemonData.num, smogonTier),
-      dexDetailsFields,
+      this.parseSpeciesForSmogonPage(data.species, data.num, smogonTier),
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}smogonPage`
     );
     addPropertyToClass(
       pokemonData,
       'sprite',
       parseSpeciesForSprite({
-        pokemonName: basePokemonData.species,
-        baseSpecies: basePokemonData.baseSpecies,
-        specialSprite: basePokemonData.specialSprite,
-        specialShinySprite: basePokemonData.specialShinySprite,
-        specialBackSprite: basePokemonData.specialBackSprite,
-        specialShinyBackSprite: basePokemonData.specialShinyBackSprite
+        pokemonName: data.species,
+        baseSpecies: data.baseSpecies,
+        specialSprite: data.specialSprite,
+        specialShinySprite: data.specialShinySprite,
+        specialBackSprite: data.specialBackSprite,
+        specialShinyBackSprite: data.specialShinyBackSprite
       }),
-      dexDetailsFields,
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}sprite`
     );
     addPropertyToClass(
       pokemonData,
       'shinySprite',
       parseSpeciesForSprite({
-        pokemonName: basePokemonData.species,
-        baseSpecies: basePokemonData.baseSpecies,
-        specialSprite: basePokemonData.specialSprite,
-        specialShinySprite: basePokemonData.specialShinySprite,
-        specialBackSprite: basePokemonData.specialBackSprite,
-        specialShinyBackSprite: basePokemonData.specialShinyBackSprite,
+        pokemonName: data.species,
+        baseSpecies: data.baseSpecies,
+        specialSprite: data.specialSprite,
+        specialShinySprite: data.specialShinySprite,
+        specialBackSprite: data.specialBackSprite,
+        specialShinyBackSprite: data.specialShinyBackSprite,
         shiny: true
       }),
-      dexDetailsFields,
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}shinySprite`
     );
     addPropertyToClass(
       pokemonData,
       'backSprite',
       parseSpeciesForSprite({
-        pokemonName: basePokemonData.species,
-        baseSpecies: basePokemonData.baseSpecies,
-        specialSprite: basePokemonData.specialSprite,
-        specialShinySprite: basePokemonData.specialShinySprite,
-        specialBackSprite: basePokemonData.specialBackSprite,
-        specialShinyBackSprite: basePokemonData.specialShinyBackSprite,
+        pokemonName: data.species,
+        baseSpecies: data.baseSpecies,
+        specialSprite: data.specialSprite,
+        specialShinySprite: data.specialShinySprite,
+        specialBackSprite: data.specialBackSprite,
+        specialShinyBackSprite: data.specialShinyBackSprite,
         backSprite: true
       }),
-      dexDetailsFields,
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}backSprite`
     );
     addPropertyToClass(
       pokemonData,
       'shinyBackSprite',
       parseSpeciesForSprite({
-        pokemonName: basePokemonData.species,
-        baseSpecies: basePokemonData.baseSpecies,
-        specialSprite: basePokemonData.specialSprite,
-        specialShinySprite: basePokemonData.specialShinySprite,
-        specialBackSprite: basePokemonData.specialBackSprite,
-        specialShinyBackSprite: basePokemonData.specialShinyBackSprite,
+        pokemonName: data.species,
+        baseSpecies: data.baseSpecies,
+        specialSprite: data.specialSprite,
+        specialShinySprite: data.specialShinySprite,
+        specialBackSprite: data.specialBackSprite,
+        specialShinyBackSprite: data.specialShinyBackSprite,
         shiny: true,
         backSprite: true
       }),
-      dexDetailsFields,
+      requestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}shinyBackSprite`
     );
 
-    if ((requestedFields as GraphQLSet<string>).has(`${recursingAs ? `${recursingAs}.` : ''}flavorTexts`) && basePokemonData.num >= 0) {
+    addPropertyToClass(pokemonData, 'flavorTexts', [], requestedFields, `${recursingAs ? `${recursingAs}.` : ''}flavorTexts`);
+
+    if ((requestedFields as GraphQLSet<string>).has(`${recursingAs ? `${recursingAs}.` : ''}flavorTexts`) && data.num >= 0) {
       let shouldParseBaseForme = true;
-      if (basePokemonData.forme) {
-        const formFlavors = this.flavors[`${basePokemonData.num}${basePokemonData.forme.toLowerCase()}`];
+
+      if (data.forme) {
+        const formFlavors = this.flavors[`${data.num}${data.forme.toLowerCase()}`];
+
         if (formFlavors) {
           shouldParseBaseForme = false;
+
           for (const formFlavor of formFlavors) {
-            const formFlavorEntry = new FlavorEntry();
+            const formFlavorEntry = new Flavor();
             formFlavorEntry.game = formFlavor.version_id;
             formFlavorEntry.flavor = formFlavor.flavor_text;
             pokemonData.flavorTexts.push(formFlavorEntry);
@@ -394,39 +371,38 @@ export class DexService {
       }
 
       if (shouldParseBaseForme) {
-        const baseFlavors = this.flavors[basePokemonData.num];
+        const baseFlavors = this.flavors[data.num];
+
         for (const baseFlavor of baseFlavors) {
-          const formFlavorEntry = new FlavorEntry();
+          const formFlavorEntry = new Flavor();
           formFlavorEntry.game = baseFlavor.version_id;
           formFlavorEntry.flavor = baseFlavor.flavor_text;
           pokemonData.flavorTexts.push(formFlavorEntry);
         }
       }
 
-      if (reverse) {
+      if (reverseFlavorTexts) {
         pokemonData.flavorTexts.reverse();
       }
 
-      pokemonData.flavorTexts = pokemonData.flavorTexts.slice(skip, skip + take);
+      pokemonData.flavorTexts = pokemonData.flavorTexts.slice(offsetFlavorTexts, offsetFlavorTexts + takeFlavorTexts);
     }
 
     if (
       (requestedFields as GraphQLSet<string>).has(`${recursingAs ? `${recursingAs}.` : ''}preevolutions`) &&
-      basePokemonData.prevo &&
-      basePokemonData.prevo !== parsingPokemon
+      data.prevo &&
+      data.prevo !== parsingPokemon
     ) {
-      const prevoPokemon = this.findBySpecies(basePokemonData.prevo);
+      const prevoPokemon = this.getBySpecies({ pokemon: data.prevo, ...basePokemonArgs });
       if (prevoPokemon) {
         preevolutionChain.push(
-          this.findBySpeciesWithDetails(
-            this.findBySpecies(toLowerSingleWordCase(prevoPokemon.species))!,
-            skip,
-            take,
+          this.mapPokemonDataToPokemonGraphQL({
+            data: this.getBySpecies({ pokemon: toLowerSingleWordCase(prevoPokemon.species), ...basePokemonArgs })!,
             requestedFields,
-            reverse,
-            this.parseDataForEvolutionRecursion(basePokemonData, prevoPokemon),
-            'preevolutions'
-          )
+            ...basePokemonArgs,
+            parsingPokemon: this.parseDataForEvolutionRecursion(data, prevoPokemon),
+            recursingAs: 'preevolutions'
+          })
         );
       }
 
@@ -434,29 +410,27 @@ export class DexService {
         pokemonData,
         'preevolutions',
         await Promise.all(preevolutionChain),
-        dexDetailsFields,
+        requestedFields,
         `${recursingAs ? `${recursingAs}.` : ''}preevolutions`
       );
     }
 
     if (
       (requestedFields as GraphQLSet<string>).has(`${recursingAs ? `${recursingAs}.` : ''}evolutions`) &&
-      basePokemonData.evos &&
-      basePokemonData.evos[0] !== parsingPokemon
+      data.evos &&
+      data.evos[0] !== parsingPokemon
     ) {
-      for (const evo of basePokemonData.evos) {
-        const evoPokemon = this.findBySpecies(toLowerSingleWordCase(evo));
+      for (const evo of data.evos) {
+        const evoPokemon = this.getBySpecies({ pokemon: toLowerSingleWordCase(evo), ...basePokemonArgs });
         if (evoPokemon) {
           evolutionChain.push(
-            this.findBySpeciesWithDetails(
-              this.findBySpecies(toLowerSingleWordCase(evoPokemon.species))!,
-              skip,
-              take,
+            this.mapPokemonDataToPokemonGraphQL({
+              data: this.getBySpecies({ pokemon: toLowerSingleWordCase(evoPokemon.species), ...basePokemonArgs })!,
               requestedFields,
-              reverse,
-              this.parseDataForEvolutionRecursion(basePokemonData, evoPokemon),
-              'evolutions'
-            )
+              ...basePokemonArgs,
+              parsingPokemon: this.parseDataForEvolutionRecursion(data, evoPokemon),
+              recursingAs: 'evolutions'
+            })
           );
         }
       }
@@ -465,7 +439,7 @@ export class DexService {
         pokemonData,
         'evolutions',
         await Promise.all(evolutionChain),
-        dexDetailsFields,
+        requestedFields,
         `${recursingAs ? `${recursingAs}.` : ''}evolutions`
       );
     }
@@ -473,18 +447,7 @@ export class DexService {
     return pokemonData;
   }
 
-  public getByFuzzy(@Args() { pokemon, skip, take }: PokemonPaginatedArgs): Fuse.FuseResult<Pokemon.DexEntry>[] {
-    pokemon = this.parseFormeIdentifiers(pokemon);
-
-    const fuzzyResult = new FuzzySearch(pokedex, ['num', 'species'], { threshold: 0.3 }).runFuzzy(pokemon);
-    if (!fuzzyResult.length) {
-      throw new Error(`No Pokémon found for ${pokemon}`);
-    }
-
-    return fuzzyResult.slice(skip, skip + take);
-  }
-
-  private parseDataForEvolutionRecursion(basePokemonData: Pokemon.DexEntry, evoChainData: Pokemon.DexEntry) {
+  private static parseDataForEvolutionRecursion(basePokemonData: Pokemon.DexEntry, evoChainData: Pokemon.DexEntry) {
     if (basePokemonData.forme && evoChainData.forme && basePokemonData.forme === evoChainData.forme) {
       return toLowerSingleWordCase(basePokemonData.species);
     }
@@ -492,7 +455,7 @@ export class DexService {
     return basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species;
   }
 
-  private parseSpeciesForBulbapedia(pokemonData: Pokemon.DexEntry) {
+  private static parseSpeciesForBulbapedia(pokemonData: Pokemon.DexEntry) {
     if (pokemonData.specialBulbapediaUrl) {
       return this.bulbapediaBaseUrlPrefix + pokemonData.specialBulbapediaUrl + this.bulbapediaBaseUrlPostfix;
     }
@@ -510,7 +473,7 @@ export class DexService {
    * @param pokemonNumber The number of the Pokémon to parse, required for old Serebii pages
    * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 8
    */
-  private parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
+  private static parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
     // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
     if (pokemonNumber <= 0) return '';
 
@@ -529,7 +492,7 @@ export class DexService {
    * @param pokemonNumber The number of the Pokémon to parse
    * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 8
    */
-  private parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
+  private static parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
     // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
     if (pokemonNumber <= 0) return '';
 
@@ -542,15 +505,15 @@ export class DexService {
     return `${this.smogonBaseUrl}/ss/pokemon/${toLowerHyphenCase(pokemonName.replace(/:/g, ''))}`;
   }
 
-  private parseBaseStatsTotal(baseStats: Pokemon.Stats) {
+  private static parseBaseStatsTotal(baseStats: Pokemon.Stats) {
     return baseStats.hp + baseStats.atk + baseStats.def + baseStats.spa + baseStats.spd + baseStats.spe;
   }
 
-  private parseMinimumHatchTimeForMaximumHatchTime(minimumHatchTime?: number) {
+  private static parseMinimumHatchTimeForMaximumHatchTime(minimumHatchTime?: number) {
     return minimumHatchTime ? minimumHatchTime + 256 : undefined;
   }
 
-  private parseFormeIdentifiers(pokemon: string) {
+  private static parseFormeIdentifiers(pokemon: string) {
     switch (pokemon.split(' ')[0]) {
       case 'mega':
         pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
@@ -578,4 +541,14 @@ export class DexService {
 
     return pokemon;
   }
+}
+
+interface MapPokemonDataToPokemonGraphQLParameters {
+  data: Pokemon.DexEntry;
+  requestedFields: GraphQLSet<keyof DexDetails>;
+  offsetFlavorTexts: number;
+  takeFlavorTexts: number;
+  reverseFlavorTexts: boolean;
+  parsingPokemon?: string;
+  recursingAs?: 'preevolutions' | 'evolutions' | false;
 }

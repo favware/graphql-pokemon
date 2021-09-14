@@ -1545,45 +1545,6 @@ export const pokedexAliases = new GraphQLCollection<string, string>([
   ['zygod', 'zygardecomplete']
 ]);
 
-/** Aliases for Pokémon abilities */
-export const abilityAliases = new GraphQLCollection<string, string>([
-  ['asoneglastrier', 'asoneasoneglastrier'],
-  ['asonespectrier', 'asonespectrier'],
-  ['ph', 'poisonheal'],
-  ['stag', 'shadowtag']
-]);
-
-/** Aliases for Pokémon items */
-export const itemAliases = new GraphQLCollection<string, string>([
-  ['assvest', 'assaultvest'],
-  ['av', 'assaultvest'],
-  ['band', 'choiceband'],
-  ['boots', 'heavydutyboots'],
-  ['cb', 'choiceband'],
-  ['chesto', 'chestoberry'],
-  ['chople', 'chopleberry'],
-  ['custap', 'custapberry'],
-  ['ebelt', 'expertbelt'],
-  ['fightgem', 'fightinggem'],
-  ['flightgem', 'flyinggem'],
-  ['goggles', 'safetygoggles'],
-  ['hdb', 'heavydutyboots'],
-  ['lefties', 'leftovers'],
-  ['leppa', 'leppaberry'],
-  ['lo', 'lifeorb'],
-  ['lorb', 'lifeorb'],
-  ['lum', 'lumberry'],
-  ['occa', 'occaberry'],
-  ['petaya', 'petayaberry'],
-  ['salac', 'salacberry'],
-  ['sash', 'focussash'],
-  ['scarf', 'choicescarf'],
-  ['sitrus', 'sitrusberry'],
-  ['specs', 'choicespecs'],
-  ['wp', 'weaknesspolicy'],
-  ['yache', 'yacheberry']
-]);
-
 /** Aliases for Pokémon moves */
 export const moveAliases = new GraphQLCollection<string, string>([
   ['10mv', '10000000voltthunderbolt'],

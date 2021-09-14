@@ -12,6 +12,12 @@
       "rules": {
         "max-len": "off"
       }
+    },
+    {
+      "files": ["src/services/*.ts"],
+      "rules": {
+        "@typescript-eslint/no-extraneous-class": "off"
+      }
     }
   ]
 }

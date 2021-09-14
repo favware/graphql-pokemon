@@ -1,8 +1,6 @@
-import typechart from '#assets/typechart';
-import { ArrayMaxSize, ArrayMinSize, ArrayUnique } from 'class-validator';
+import { types } from '#utils/enums';
+import { ArrayMaxSize, ArrayMinSize, ArrayUnique, IsIn } from 'class-validator';
 import { ArgsType, Field } from 'type-graphql';
-
-export const types = typechart.enumObject();
 
 @ArgsType()
 export class TypeArgs {
@@ -10,5 +8,6 @@ export class TypeArgs {
   @ArrayUnique()
   @ArrayMinSize(1)
   @ArrayMaxSize(2)
+  @IsIn(Object.values(types))
   public types!: string[];
 }

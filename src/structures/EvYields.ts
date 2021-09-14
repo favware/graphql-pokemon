@@ -1,7 +1,7 @@
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's EV yields" })
-export class EvYieldsEntry {
+export class EvYields {
   @Field(() => Int, { description: 'The attack EV yield of a Pokémon' })
   public attack!: number;
 

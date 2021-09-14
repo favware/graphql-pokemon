@@ -78,7 +78,7 @@ Object {
 }
 `;
 
-exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability THEN returns AbilityEntry 1`] = `
+exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability THEN returns Ability 1`] = `
 Object {
   "getAbilityDetailsByFuzzy": Object {
     "name": "Multiscale",
@@ -86,7 +86,7 @@ Object {
 }
 `;
 
-exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability and pagination THEN returns AbilityEntry 1`] = `
+exports[`getAbilityDetailsByFuzzy GIVEN a fuzzy ability and pagination THEN returns Ability 1`] = `
 Object {
   "getAbilityDetailsByFuzzy": Object {
     "name": "Multitype",
@@ -94,7 +94,7 @@ Object {
 }
 `;
 
-exports[`getAbilityDetailsByFuzzy GIVEN a valid ability THEN returns AbilityEntry 1`] = `
+exports[`getAbilityDetailsByFuzzy GIVEN a valid ability THEN returns Ability 1`] = `
 Object {
   "getAbilityDetailsByFuzzy": Object {
     "name": "Multiscale",
@@ -120,7 +120,7 @@ Object {
 }
 `;
 
-exports[`getAbilityDetailsByName GIVEN a valid ability THEN returns AbilityEntry 1`] = `
+exports[`getAbilityDetailsByName GIVEN a valid ability THEN returns Ability 1`] = `
 Object {
   "getAbilityDetailsByName": Object {
     "name": "Multiscale",

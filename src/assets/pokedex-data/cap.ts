@@ -79,7 +79,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'embirch',
     {
-      abilities: { first: 'Reckless', second: 'Leaf Guard', hidden: 'Chlorophyll' },
+      abilities: {
+        first: 'Reckless',
+        second: 'Leaf Guard',
+        hidden: 'Chlorophyll'
+      },
       baseStats: { hp: 60, atk: 40, def: 55, spa: 65, spd: 40, spe: 60 },
       color: 'Brown',
       eggGroups: ['Monster', 'Dragon'],
@@ -563,7 +567,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'cupra',
     {
-      abilities: { first: 'Shield Dust', second: 'Keen Eye', hidden: 'Magic Guard' },
+      abilities: {
+        first: 'Shield Dust',
+        second: 'Keen Eye',
+        hidden: 'Magic Guard'
+      },
       baseStats: { hp: 50, atk: 60, def: 49, spa: 67, spd: 30, spe: 44 },
       color: 'Brown',
       eggGroups: ['Bug'],
@@ -585,7 +593,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'argalis',
     {
-      abilities: { first: 'Shed Skin', second: 'Compound Eyes', hidden: 'Overcoat' },
+      abilities: {
+        first: 'Shed Skin',
+        second: 'Compound Eyes',
+        hidden: 'Overcoat'
+      },
       baseStats: { hp: 60, atk: 90, def: 89, spa: 87, spd: 40, spe: 54 },
       color: 'Gray',
       eggGroups: ['Bug'],
@@ -609,7 +621,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'aurumoth',
     {
-      abilities: { first: 'Weak Armor', second: 'No Guard', hidden: 'Light Metal' },
+      abilities: {
+        first: 'Weak Armor',
+        second: 'No Guard',
+        hidden: 'Light Metal'
+      },
       baseStats: { hp: 110, atk: 120, def: 99, spa: 117, spd: 60, spe: 94 },
       color: 'Purple',
       eggGroups: ['Bug'],
@@ -699,7 +715,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'cawmodore',
     {
-      abilities: { first: 'Intimidate', second: 'Volt Absorb', hidden: 'Big Pecks' },
+      abilities: {
+        first: 'Intimidate',
+        second: 'Volt Absorb',
+        hidden: 'Big Pecks'
+      },
       baseStats: { hp: 50, atk: 92, def: 130, spa: 65, spd: 75, spe: 118 },
       color: 'Black',
       eggGroups: ['Flying'],
@@ -722,7 +742,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'volkritter',
     {
-      abilities: { first: 'Anticipation', second: 'Infiltrator', hidden: 'Unnerve' },
+      abilities: {
+        first: 'Anticipation',
+        second: 'Infiltrator',
+        hidden: 'Unnerve'
+      },
       baseStats: { hp: 60, atk: 30, def: 50, spa: 80, spd: 60, spe: 70 },
       color: 'Red',
       eggGroups: ['Water 1', 'Water 2'],
@@ -814,13 +838,18 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/plasmanta.png',
       species: 'plasmanta',
       types: ['Electric', 'Poison'],
-      weightkg: 460
+      weightkg: 460,
+      aliases: ['ohmagod']
     }
   ],
   [
     'floatoy',
     {
-      abilities: { first: 'Water Veil', second: 'Heatproof', hidden: 'Swift Swim' },
+      abilities: {
+        first: 'Water Veil',
+        second: 'Heatproof',
+        hidden: 'Swift Swim'
+      },
       baseStats: { hp: 48, atk: 70, def: 40, spa: 70, spd: 30, spe: 77 },
       color: 'White',
       eggGroups: ['Water 1', 'Field'],
@@ -842,7 +871,11 @@ const entries: [string, Pokemon.DexEntry][] = [
   [
     'caimanoe',
     {
-      abilities: { first: 'Water Veil', second: 'Heatproof', hidden: 'Light Metal' },
+      abilities: {
+        first: 'Water Veil',
+        second: 'Heatproof',
+        hidden: 'Light Metal'
+      },
       baseStats: { hp: 73, atk: 85, def: 65, spa: 80, spd: 40, spe: 87 },
       color: 'Gray',
       eggGroups: ['Water 1', 'Field'],

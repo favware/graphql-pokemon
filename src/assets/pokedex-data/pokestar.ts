@@ -43,7 +43,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarufo.png',
       species: 'Pokestar UFO',
       types: ['Flying', 'Electric'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['pokestarpropu1', 'pokestarufof', 'pokestarufoflying', 'pokestarufopropu1', 'propu1', 'ufo', 'ufof', 'ufoflying', 'ufopropu1']
     }
   ],
   [
@@ -67,7 +68,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarufo2.png',
       species: 'Pokestar UFO-2',
       types: ['Psychic', 'Electric'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['pokestarpropu2', 'propu2', 'ufo2', 'ufop', 'ufopropu2', 'ufopsychic']
     }
   ],
   [
@@ -89,7 +91,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarbrycenman.png',
       species: 'Pokestar Brycen-Man',
       types: ['Dark', 'Psychic'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['brycen', 'brycenman', 'brycenmanprop', 'pokestarbrycenmanprop', 'pokestarproph1', 'proph1']
     }
   ],
   [
@@ -111,7 +114,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarmt.png',
       species: 'Pokestar MT',
       types: ['Steel'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['mechatyranitar', 'mt', 'mtprop', 'pokestarmtprop', 'pokestarpropm1', 'propm1']
     }
   ],
   [
@@ -133,7 +137,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarmt2.png',
       species: 'Pokestar MT2',
       types: ['Steel', 'Electric'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['mechatyranitar2', 'mt2', 'mt2prop', 'pokestarmt2prop', 'pokestarpropm2', 'propm2']
     }
   ],
   [
@@ -155,7 +160,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestartransport.png',
       species: 'Pokestar Transport',
       types: ['Steel'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['pokestarpropt1', 'pokestartransportprop', 'propt1', 'transport', 'transportprop']
     }
   ],
   [
@@ -177,7 +183,23 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestargiant.png',
       species: 'Pokestar Giant',
       types: ['Normal'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: [
+        'giant',
+        'giant2',
+        'giantpropo1',
+        'giantpropo2',
+        'monica',
+        'monica2',
+        'pokestargiant2',
+        'pokestargiantpropo1',
+        'pokestargiantpropo2',
+        'pokestarmonica2',
+        'pokestarpropo1',
+        'pokestarpropo2',
+        'propo1',
+        'propo2'
+      ]
     }
   ],
   [
@@ -199,7 +221,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarhumanoid.png',
       species: 'Pokestar Humanoid',
       types: ['Normal'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['humanoidprop', 'pokestarhumanoidprop', 'pokestarpropc1', 'propc1']
     }
   ],
   [
@@ -221,7 +244,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarmonster.png',
       species: 'Pokestar Monster',
       types: ['Dark'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['monsterprop', 'pokestarmonsterprop', 'pokestarpropc2', 'propc2']
     }
   ],
   [
@@ -243,7 +267,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarf00.png',
       species: 'Pokestar F-00',
       types: ['Steel', 'Normal'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['f00', 'f00prop', 'pokestarf00prop', 'pokestarpropr1', 'propr1']
     }
   ],
   [
@@ -265,7 +290,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarf002.png',
       species: 'Pokestar F-002',
       types: ['Steel', 'Normal'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['f002', 'f002prop', 'pokestarf002prop', 'pokestarpropr2', 'propr2']
     }
   ],
   [
@@ -287,7 +313,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarspirit.png',
       species: 'Pokestar Spirit',
       types: ['Dark', 'Ghost'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['majin', 'pokestarpropg1', 'pokestarspiritprop', 'propg1', 'spirit', 'spiritprop']
     }
   ],
   [
@@ -309,7 +336,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarblackdoor.png',
       species: 'Pokestar Black Door',
       types: ['Grass'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['blackdoor', 'blackdoorprop', 'pokestarblackdoorprop', 'pokestarpropw1', 'propw1']
     }
   ],
   [
@@ -331,7 +359,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarwhitedoor.png',
       species: 'Pokestar White Door',
       types: ['Fire'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['pokestarpropw2', 'pokestarwhitedoorprop', 'propw2', 'whitedoor', 'whitedoorprop']
     }
   ],
   [
@@ -353,7 +382,8 @@ const entries: [string, Pokemon.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarblackbelt.png',
       species: 'Pokestar Black Belt',
       types: ['Fighting'],
-      weightkg: 61
+      weightkg: 61,
+      aliases: ['blackbeltprop', 'pokestarblackbeltprop', 'pokestarpropk1', 'propk1']
     }
   ],
   [

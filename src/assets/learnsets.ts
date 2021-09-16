@@ -17604,12 +17604,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       zenheadbutt: ['8M', '7T', '6T', '5T', '4T']
     }
   ],
-  [
-    'ditto',
-    {
-      transform: ['8L1', '8V', '7L1', '7V', '7S0', '6L1', '5L1', '4L1', '3L1']
-    }
-  ],
+  ['ditto', { transform: ['8L1', '8V', '7L1', '7V', '7S0', '6L1', '5L1', '4L1', '3L1'] }],
   [
     'eevee',
     {
@@ -24524,12 +24519,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       wonderroom: ['7T', '6T', '5T']
     }
   ],
-  [
-    'unown',
-    {
-      hiddenpower: ['7M', '7L1', '7V', '6L1', '5L1', '4L1', '3L1']
-    }
-  ],
+  ['unown', { hiddenpower: ['7M', '7L1', '7V', '6L1', '5L1', '4L1', '3L1'] }],
   [
     'wynaut',
     {
@@ -43104,15 +43094,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       whirlpool: ['8M', '4M']
     }
   ],
-  [
-    'gastrodoneast',
-    {
-      earthpower: ['8S0'],
-      icebeam: ['8S0'],
-      protect: ['8S0'],
-      surf: ['8S0']
-    }
-  ],
+  ['gastrodoneast', { earthpower: ['8S0'], icebeam: ['8S0'], protect: ['8S0'], surf: ['8S0'] }],
   [
     'drifloon',
     {
@@ -59760,13 +59742,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
   ],
   [
     'spewpa',
-    {
-      bugbite: ['7T', '6T'],
-      electroweb: ['7T', '6T'],
-      harden: ['7L1', '6L1'],
-      irondefense: ['7T', '6T'],
-      protect: ['7M', '7L1', '6M', '6L9']
-    }
+    { bugbite: ['7T', '6T'], electroweb: ['7T', '6T'], harden: ['7L1', '6L1'], irondefense: ['7T', '6T'], protect: ['7M', '7L1', '6M', '6L9'] }
   ],
   [
     'vivillon',
@@ -63331,15 +63307,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       worryseed: ['8L28', '7T', '7L11', '6T', '6L11']
     }
   ],
-  [
-    'pumpkaboosuper',
-    {
-      astonish: ['6S0'],
-      scaryface: ['6S0'],
-      shadowsneak: ['6S0'],
-      trickortreat: ['6S0']
-    }
-  ],
+  ['pumpkaboosuper', { astonish: ['6S0'], scaryface: ['6S0'], shadowsneak: ['6S0'], trickortreat: ['6S0'] }],
   [
     'gourgeist',
     {
@@ -69593,13 +69561,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       wonderroom: ['8M', '7T']
     }
   ],
-  [
-    'cosmog',
-    {
-      splash: ['8L1', '8S1', '7L1', '7S0'],
-      teleport: ['8L1', '8S1', '7L23']
-    }
-  ],
+  ['cosmog', { splash: ['8L1', '8S1', '7L1', '7S0'], teleport: ['8L1', '8S1', '7L23'] }],
   ['cosmoem', { cosmicpower: ['8M', '8L0', '7L1'], teleport: ['8L1', '7L1'] }],
   [
     'solgaleo',
@@ -71764,16 +71726,7 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       workup: ['8M']
     }
   ],
-  [
-    'blipbug',
-    {
-      infestation: ['8E'],
-      recover: ['8E'],
-      stickyweb: ['8E'],
-      strugglebug: ['8L1'],
-      supersonic: ['8E']
-    }
-  ],
+  ['blipbug', { infestation: ['8E'], recover: ['8E'], stickyweb: ['8E'], strugglebug: ['8L1'], supersonic: ['8E'] }],
   [
     'dottler',
     {

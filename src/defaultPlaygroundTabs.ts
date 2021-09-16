@@ -1,6 +1,6 @@
 import type { MiddlewareOptions } from '@apollographql/graphql-playground-html';
 
-const isDev = process.platform === 'win32' || process.platform === 'darwin';
+const isDev = process.env.NODE_ENV !== 'production';
 
 const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   {

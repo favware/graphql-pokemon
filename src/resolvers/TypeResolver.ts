@@ -8,7 +8,7 @@ import { Args, Query, Resolver } from 'type-graphql';
 @Resolver(TypeMatchup)
 export class TypeResolver {
   @Query(() => TypeMatchup, { description: 'Gets the type matchup data for the given type or types' })
-  public getTypeMatchup(@Args() args: TypeArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchup>): TypeMatchup {
+  public getTypeMatchup(@Args(() => TypeArgs) args: TypeArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof TypeMatchup>): TypeMatchup {
     const entry = TypeService.mapTypesToTypeMatchupGraphQL(args, requestedFields);
 
     if (entry === undefined) {

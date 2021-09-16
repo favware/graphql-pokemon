@@ -20,7 +20,7 @@ export class DexResolver {
     ].join('\n')
   })
   public async getPokemonByDexNumber(
-    @Args() args: PokemonNumberArgs,
+    @Args(() => PokemonNumberArgs) args: PokemonNumberArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
   ): Promise<DexDetails> {
     const pokemonData = DexService.getByNationalDexNumber(args);
@@ -51,7 +51,10 @@ export class DexResolver {
       'Reversal is applied before pagination!'
     ].join('\n')
   })
-  public async getPokemon(@Args() args: PokemonArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>): Promise<DexDetails> {
+  public async getPokemon(
+    @Args(() => PokemonArgs) args: PokemonArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
+  ): Promise<DexDetails> {
     const pokemonData = DexService.getBySpecies(args);
 
     if (!pokemonData) {

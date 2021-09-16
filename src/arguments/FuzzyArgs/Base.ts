@@ -2,7 +2,7 @@ import { IsBoolean, IsNumber, Max, Min } from 'class-validator';
 import { decorate } from 'ts-mixer';
 import { ArgsType, Field, Int } from 'type-graphql';
 
-@decorate(ArgsType())
+@ArgsType()
 export abstract class BaseFuzzyArgs {
   @decorate(Field(() => Int, { nullable: true, defaultValue: 0, description: 'Sets the offset where to start' }))
   @decorate(IsNumber())

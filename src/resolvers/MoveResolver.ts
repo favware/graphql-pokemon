@@ -1,5 +1,5 @@
 import { FuzzyMoveArgs } from '#arguments/FuzzyArgs/FuzzyMoveArgs';
-import type { MoveArgs } from '#arguments/MoveArgs';
+import { MoveArgs } from '#arguments/MoveArgs';
 import { MoveService } from '#services/MoveService';
 import { Move } from '#structures/Move';
 import { getRequestedFields } from '#utils/getRequestedFields';
@@ -11,7 +11,7 @@ export class MoveResolver {
   @Query(() => Move, {
     description: 'Gets the details on a Pokémon move, using the move name'
   })
-  public getMove(@Args() args: MoveArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Move>): Move {
+  public getMove(@Args(() => MoveArgs) args: MoveArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Move>): Move {
     const moveData = MoveService.getByMoveName(args);
 
     if (!moveData) {
@@ -37,7 +37,7 @@ export class MoveResolver {
       'By default only 1 result is returned. You can provide the arguments "take", "offset", and "reverse" to modify this behaviour.'
     ].join('\n')
   })
-  public getFuzzyMove(@Args() args: FuzzyMoveArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Move>): Move[] {
+  public getFuzzyMove(@Args(() => FuzzyMoveArgs) args: FuzzyMoveArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Move>): Move[] {
     const fuzzyEntry = MoveService.findByFuzzy(args);
 
     if (!fuzzyEntry.length) {

@@ -14,27 +14,27 @@ import { buildSchema, registerEnumType } from 'type-graphql';
 
 export const buildGqlSchema = (): Promise<GraphQLSchema> => {
   registerEnumType(abilities, {
-    name: 'Abilities',
+    name: 'AbilitiesEnum',
     description: 'The supported abilities'
   });
 
   registerEnumType(items, {
-    name: 'Items',
+    name: 'ItemsEnum',
     description: 'The supported items'
   });
 
   registerEnumType(moves, {
-    name: 'Moves',
+    name: 'MovesEnum',
     description: 'The supported moves'
   });
 
   registerEnumType(pokemons, {
-    name: 'Pokemon',
+    name: 'PokemonEnum',
     description: 'The supported Pokémon'
   });
 
   registerEnumType(types, {
-    name: 'Types',
+    name: 'TypesEnum',
     description: 'The types in Pokémon'
   });
 

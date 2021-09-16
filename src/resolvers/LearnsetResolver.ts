@@ -1,5 +1,7 @@
-import { LearnsetArgs } from '#arguments/LearnsetArgs';
+import type { BaseFuzzyArgs } from '#arguments/FuzzyArgs/Base';
 import { FuzzyLearnsetArgs } from '#arguments/FuzzyArgs/FuzzyLearnsetArgs';
+import { LearnsetArgs } from '#arguments/LearnsetArgs';
+import type { BasePokemonArgs } from '#arguments/PokemonArgs/Base';
 import { DexService } from '#services/DexService';
 import { LearnsetService } from '#services/LearnsetService';
 import { MoveService } from '#services/MoveService';
@@ -9,8 +11,6 @@ import { GraphQLSet } from '#utils/GraphQLSet';
 import { toLowerSingleWordCase } from '#utils/util';
 import { Args, Query, Resolver } from 'type-graphql';
 import type { NonFunctionKeys } from 'utility-types';
-import type { BaseFuzzyArgs } from '#arguments/FuzzyArgs/Base';
-import type { BasePokemonArgs } from '#arguments/PokemonArgs/Base';
 
 @Resolver(Learnset)
 export class LearnsetResolver {
@@ -21,7 +21,10 @@ export class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  public getPokemonLearnset(@Args() args: LearnsetArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Learnset>): Learnset {
+  public getPokemonLearnset(
+    @Args(() => LearnsetArgs) args: LearnsetArgs,
+    @getRequestedFields() requestedFields: GraphQLSet<keyof Learnset>
+  ): Learnset {
     const graphqlObject = LearnsetService.mapPokemonAndMovesToLearnsetGraphQL(args, requestedFields);
 
     if (graphqlObject === undefined) {
@@ -44,7 +47,7 @@ export class LearnsetResolver {
     ].join('')
   })
   public getPokemonLearnsetByFuzzy(
-    @Args() { pokemon, moves, generation }: FuzzyLearnsetArgs,
+    @Args(() => FuzzyLearnsetArgs) { pokemon, moves, generation }: FuzzyLearnsetArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof Learnset>
   ): Learnset {
     // Try and get an exactly matching Pokémon

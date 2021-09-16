@@ -1,5 +1,5 @@
 import { FuzzyItemArgs } from '#arguments/FuzzyArgs/FuzzyItemArgs';
-import type { ItemArgs } from '#arguments/ItemArgs';
+import { ItemArgs } from '#arguments/ItemArgs';
 import { ItemService } from '#services/ItemSerivce';
 import { Item } from '#structures/Item';
 import { getRequestedFields } from '#utils/getRequestedFields';
@@ -11,7 +11,7 @@ export class ItemResolver {
   @Query(() => Item, {
     description: 'Gets the details on a Pokémon item, using the item name'
   })
-  public getItem(@Args() args: ItemArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Item>): Item {
+  public getItem(@Args(() => ItemArgs) args: ItemArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Item>): Item {
     const itemData = ItemService.getByItemName(args);
 
     if (!itemData) {
@@ -37,7 +37,7 @@ export class ItemResolver {
       'By default only 1 result is returned. You can provide the arguments "take", "offset", and "reverse" to modify this behaviour.'
     ].join('\n')
   })
-  public getFuzzyItem(@Args() args: FuzzyItemArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Item>): Item[] {
+  public getFuzzyItem(@Args(() => FuzzyItemArgs) args: FuzzyItemArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Item>): Item[] {
     const fuzzyEntry = ItemService.findByFuzzy(args);
 
     if (!fuzzyEntry.length) {

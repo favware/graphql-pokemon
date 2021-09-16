@@ -2,7 +2,7 @@ import { IsBoolean, IsNumber, Max, Min } from 'class-validator';
 import { decorate } from 'ts-mixer';
 import { ArgsType, Field, Int } from 'type-graphql';
 
-@decorate(ArgsType())
+@ArgsType()
 export abstract class BasePokemonArgs {
   @decorate(
     Field(() => Int, {

@@ -21,10 +21,7 @@ export class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  public getPokemonLearnset(
-    @Args(() => LearnsetArgs) args: LearnsetArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof Learnset>
-  ): Learnset {
+  public getLearnset(@Args(() => LearnsetArgs) args: LearnsetArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Learnset>): Learnset {
     const graphqlObject = LearnsetService.mapPokemonAndMovesToLearnsetGraphQL(args, requestedFields);
 
     if (graphqlObject === undefined) {
@@ -46,7 +43,7 @@ export class LearnsetResolver {
       'You can also apply a generation filter (only results for the given generation will be returned) with the generation argument'
     ].join('')
   })
-  public getPokemonLearnsetByFuzzy(
+  public getFuzzyLearnset(
     @Args(() => FuzzyLearnsetArgs) { pokemon, moves, generation }: FuzzyLearnsetArgs,
     @getRequestedFields() requestedFields: GraphQLSet<keyof Learnset>
   ): Learnset {
@@ -79,7 +76,7 @@ export class LearnsetResolver {
       }
     }
 
-    return this.getPokemonLearnset({ pokemon, moves, generation }, requestedFields);
+    return this.getLearnset({ pokemon, moves, generation }, requestedFields);
   }
 }
 

@@ -95,7 +95,7 @@ fetch('https://graphqlpokemon.favware.tech/', {
   body: JSON.stringify({
     query: `
       {
-        getPokemonDetails(pokemon: dragonite skip: 0 take: 2 reverse: true) {
+        getPokemon(pokemon: dragonite) {
             sprite
             num
             species
@@ -105,7 +105,7 @@ fetch('https://graphqlpokemon.favware.tech/', {
     `
   })
 })
-  .then((res) => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
+  .then((res) => res.json() as Promise<GraphQLPokemonResponse<'getPokemon'>>)
   .then((json) => console.log(json.data));
 ```
 
@@ -114,16 +114,16 @@ fetch('https://graphqlpokemon.favware.tech/', {
 _note: for a working example see [dexa]_
 
 ```ts
-import type { Query, QueryGetPokemonDetailsByFuzzyArgs } from '@favware/graphql-pokemon';
+import type { Query, QueryGetFuzzyPokemonArgs } from '@favware/graphql-pokemon';
 import ApolloClient from 'apollo-boost';
 import fetch from 'cross-fetch';
 import gql from 'graphql-tag';
 
 type GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> = Record<K, Omit<Query[K], '__typename'>>;
 
-const getPokemonDetailsByFuzzy = gql`
-  query pokemonDetails($pokemon: String!) {
-    getPokemonDetailsByFuzzy(pokemon: $pokemon, skip: 0, take: 1, reverse: true) {
+const getFuzzyPokemon = gql`
+  query getFuzzyPokemon($pokemon: String!) {
+    getFuzzyPokemon(pokemon: $pokemon) {
       sprite
       num
       species
@@ -138,9 +138,9 @@ const apolloClient = new ApolloClient({
 });
 
 const {
-  data: { getPokemonDetailsByFuzzy: pokemonData }
-} = await apolloClient.query<GraphQLPokemonResponse<'getPokemonDetailsByFuzzy'>, QueryGetPokemonDetailsByFuzzyArgs>({
-  query: getPokemonDetailsByFuzzy,
+  data: { getFuzzyPokemon: pokemonData }
+} = await apolloClient.query<GraphQLPokemonResponse<'getFuzzyPokemon'>, QueryGetFuzzyPokemonArgs>({
+  query: getFuzzyPokemon,
   variables: { pokemon: 'dragonite' }
 });
 
@@ -192,7 +192,7 @@ interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
 
 const GET_POKEMON_DETAILS = gql`
   {
-    getPokemonDetails(pokemon: dragonite, skip: 0, take: 2, reverse: true) {
+    getPokemon(pokemon: dragonite) {
       sprite
       num
       species
@@ -202,7 +202,7 @@ const GET_POKEMON_DETAILS = gql`
 `;
 
 export const Pokemon: React.FC = () => {
-  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemonDetails'>>(GET_POKEMON_DETAILS, {
+  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemon'>>(GET_POKEMON_DETAILS, {
     client: client
   });
 

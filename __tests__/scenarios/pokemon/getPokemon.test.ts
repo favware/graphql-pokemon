@@ -59,7 +59,7 @@ describe('getPokemon', () => {
         flavorTexts: [
           {
             flavor:
-              'It appears and vanishes with a ninja’s grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water.',
+              "It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water.",
             game: 'Alpha Sapphire'
           }
         ],
@@ -101,7 +101,7 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Water Stone',
             flavorTexts: [
               {
-                flavor: 'Its body’s cellular structure is similar to the molecular composition of water. It can melt invisibly in water.',
+                flavor: "Its body's cellular structure is similar to the molecular composition of water. It can melt invisibly in water.",
                 game: 'Shield'
               }
             ],
@@ -288,7 +288,7 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Leaf Stone',
             flavorTexts: [
               {
-                flavor: 'This Pokémon’s tail is blade sharp, with a fantastic cutting edge that can slice right though large trees.',
+                flavor: "This Pokémon's tail is blade sharp, with a fantastic cutting edge that can slice right though large trees.",
                 game: 'Shield'
               }
             ],
@@ -366,7 +366,7 @@ describe('getPokemon', () => {
             evolutionLevel: 'Level up while having high Affection and knowing a Fairy type move',
             flavorTexts: [
               {
-                flavor: 'There’s a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pokémon.',
+                flavor: "There's a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pokémon.",
                 game: 'Shield'
               }
             ],

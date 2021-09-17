@@ -1,0 +1,2 @@
+schema: 'generated/ts/graphql-pokemon.graphql'
+documents: '__tests__/testUtils/queriess/*.ts'

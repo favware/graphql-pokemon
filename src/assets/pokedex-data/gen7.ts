@@ -3105,7 +3105,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       eggGroups: ['Undiscovered'],
       evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
-      evoLevel: 'feed 400 Meltan Candy in Pok├®mon GO',
+      evoLevel: 'feed 400 Meltan Candy in Pokémon GO',
       genderRatio: { male: 0, female: 0 },
       heightm: 2.5,
       isEggObtainable: false,

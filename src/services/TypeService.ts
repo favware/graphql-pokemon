@@ -106,24 +106,12 @@ export class TypeService {
       }
 
       const attackingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof Type>>('attacking.');
-      addPropertyToClass(
-        attackingTypeEntry,
-        'doubleEffectiveTypes',
-        atk.doubleEffectiveTypes,
-        attackingTypeEntryFields,
-        'attacking.doubleEffectiveTypes'
-      );
-      addPropertyToClass(
-        attackingTypeEntry,
-        'doubleResistedTypes',
-        atk.doubleResistedTypes,
-        attackingTypeEntryFields,
-        'attacking.doubleResistedTypes'
-      );
-      addPropertyToClass(attackingTypeEntry, 'effectiveTypes', atk.effectiveTypes, attackingTypeEntryFields, 'attacking.effectiveTypes');
-      addPropertyToClass(attackingTypeEntry, 'effectlessTypes', atk.effectlessTypes, attackingTypeEntryFields, 'attacking.effectlessTypes');
-      addPropertyToClass(attackingTypeEntry, 'normalTypes', atk.normalTypes, attackingTypeEntryFields, 'attacking.normalTypes');
-      addPropertyToClass(attackingTypeEntry, 'resistedTypes', atk.resistedTypes, attackingTypeEntryFields, 'attacking.resistedTypes');
+      addPropertyToClass(attackingTypeEntry, 'doubleEffectiveTypes', atk.doubleEffectiveTypes, attackingTypeEntryFields, 'doubleEffectiveTypes');
+      addPropertyToClass(attackingTypeEntry, 'doubleResistedTypes', atk.doubleResistedTypes, attackingTypeEntryFields, 'doubleResistedTypes');
+      addPropertyToClass(attackingTypeEntry, 'effectiveTypes', atk.effectiveTypes, attackingTypeEntryFields, 'effectiveTypes');
+      addPropertyToClass(attackingTypeEntry, 'effectlessTypes', atk.effectlessTypes, attackingTypeEntryFields, 'effectlessTypes');
+      addPropertyToClass(attackingTypeEntry, 'normalTypes', atk.normalTypes, attackingTypeEntryFields, 'normalTypes');
+      addPropertyToClass(attackingTypeEntry, 'resistedTypes', atk.resistedTypes, attackingTypeEntryFields, 'resistedTypes');
     }
 
     if (requestedFields.has('defending')) {
@@ -153,24 +141,12 @@ export class TypeService {
       }
 
       const defendingTypeEntryFields = requestedFields.filterStartsWith<GraphQLSet<keyof Type>>('defending.');
-      addPropertyToClass(
-        defendingTypeEntry,
-        'doubleEffectiveTypes',
-        def.doubleEffectiveTypes,
-        defendingTypeEntryFields,
-        'defending.doubleEffectiveTypes'
-      );
-      addPropertyToClass(
-        defendingTypeEntry,
-        'doubleResistedTypes',
-        def.doubleResistedTypes,
-        defendingTypeEntryFields,
-        'defending.doubleResistedTypes'
-      );
-      addPropertyToClass(defendingTypeEntry, 'effectiveTypes', def.effectiveTypes, defendingTypeEntryFields, 'defending.effectiveTypes');
-      addPropertyToClass(defendingTypeEntry, 'effectlessTypes', def.effectlessTypes, defendingTypeEntryFields, 'defending.effectlessTypes');
-      addPropertyToClass(defendingTypeEntry, 'normalTypes', def.normalTypes, defendingTypeEntryFields, 'defending.normalTypes');
-      addPropertyToClass(defendingTypeEntry, 'resistedTypes', def.resistedTypes, defendingTypeEntryFields, 'defending.resistedTypes');
+      addPropertyToClass(defendingTypeEntry, 'doubleEffectiveTypes', def.doubleEffectiveTypes, defendingTypeEntryFields, 'doubleEffectiveTypes');
+      addPropertyToClass(defendingTypeEntry, 'doubleResistedTypes', def.doubleResistedTypes, defendingTypeEntryFields, 'doubleResistedTypes');
+      addPropertyToClass(defendingTypeEntry, 'effectiveTypes', def.effectiveTypes, defendingTypeEntryFields, 'effectiveTypes');
+      addPropertyToClass(defendingTypeEntry, 'effectlessTypes', def.effectlessTypes, defendingTypeEntryFields, 'effectlessTypes');
+      addPropertyToClass(defendingTypeEntry, 'normalTypes', def.normalTypes, defendingTypeEntryFields, 'normalTypes');
+      addPropertyToClass(defendingTypeEntry, 'resistedTypes', def.resistedTypes, defendingTypeEntryFields, 'resistedTypes');
     }
 
     const typeMatchups = new TypeMatchup();

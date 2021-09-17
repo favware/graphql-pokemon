@@ -1064,7 +1064,6 @@ __metadata:
     rollup-plugin-typescript2: ^0.30.0
     standard-version: ^9.3.1
     ts-jest: ^27.0.5
-    ts-mixer: ^6.0.0
     ts-node: ^10.2.1
     type-graphql: ^1.1.1
     typescript: ^4.4.3
@@ -11427,13 +11426,6 @@ __metadata:
   version: 2.2.3
   resolution: "ts-log@npm:2.2.3"
   checksum: 8aa34a2724d7915ddc6de8d0c27eb48f67206b52c42656f1ea2a7ffb080fa664db5fb22b42bd3c72b5b95cc6eb4612196b7d1e28f4bc146191ebc2a9683af548
-  languageName: node
-  linkType: hard
-
-"ts-mixer@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "ts-mixer@npm:6.0.0"
-  checksum: 791a513c9ca318a979928f5265fd6029858fa21595153a9386063c11239a6b1c352db1e277c19f0544d017a67cf78d120a7438b86b2c828b1115eb607538eff8
   languageName: node
   linkType: hard
 

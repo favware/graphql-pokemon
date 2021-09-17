@@ -57,7 +57,7 @@ export class DexService {
     recursingAs = false,
     takeFlavorTexts = 1,
     offsetFlavorTexts = 0,
-    reverseFlavorTexts = false
+    reverseFlavorTexts = true
   }: MapPokemonDataToPokemonGraphQLParameters): Promise<Pokemon> {
     const basePokemonArgs = {
       offsetFlavorTexts,

@@ -30,7 +30,7 @@ export abstract class BasePokemonArgs {
   @decorate(
     Field(() => Boolean, {
       nullable: true,
-      defaultValue: false,
+      defaultValue: true,
       description: [
         'Whether to reverse the list of games from which to get the data.',
         'By default Generation 1 is considered for "take" first, when setting this to true that is instead Generation 8.'
@@ -38,5 +38,5 @@ export abstract class BasePokemonArgs {
     })
   )
   @decorate(IsBoolean())
-  public reverseFlavorTexts = false;
+  public reverseFlavorTexts = true;
 }

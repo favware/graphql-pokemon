@@ -1,8 +1,8 @@
 import { GraphQLCollection } from '#utils/GraphQLCollection';
-import type { Pokemon } from '#utils/pokemon';
+import type { PokemonTypes } from '#utils/pokemon';
 
 /** The abilities in Pokémon */
-export default new GraphQLCollection<string, Pokemon.Ability>([
+export default new GraphQLCollection<string, PokemonTypes.Ability>([
   [
     'adaptability',
     {

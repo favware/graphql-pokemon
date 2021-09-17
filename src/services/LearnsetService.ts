@@ -4,7 +4,7 @@ import pokedex from '#assets/pokedex';
 import { Learnset, LearnsetLevelUpMove, LearnsetMove } from '#structures/Learnset';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
+import type PokemonTypes from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { Args } from 'type-graphql';
 
@@ -90,7 +90,7 @@ export class LearnsetService {
     }
 
     if (this.shouldIncludePokemonDetails(requestedFields)) {
-      const pokemonEntry = pokedex.get(pokemon) as Pokemon.DexEntry;
+      const pokemonEntry = pokedex.get(pokemon) as PokemonTypes.DexEntry;
 
       addPropertyToClass(
         learnsetEntry,

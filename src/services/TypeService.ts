@@ -4,12 +4,12 @@ import { Type } from '#structures/Type';
 import { TypeMatchup } from '#structures/TypeMatchup';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
+import type PokemonTypes from '#utils/pokemon';
 import { Args } from 'type-graphql';
 
 export class TypeService {
   public static mapTypesToTypeMatchupGraphQL(@Args(() => TypeArgs) { types }: TypeArgs, requestedFields: GraphQLSet<keyof TypeMatchup>): TypeMatchup {
-    const atk: Pokemon.TypeDataset = {
+    const atk: PokemonTypes.TypeDataset = {
       doubleEffectiveTypes: [],
       doubleResistedTypes: [],
       effectiveTypes: [],
@@ -37,13 +37,13 @@ export class TypeService {
       normalTypes: [],
       resistedTypes: []
     };
-    const def: Pokemon.TypeDataset = JSON.parse(JSON.stringify(atk));
+    const def: PokemonTypes.TypeDataset = JSON.parse(JSON.stringify(atk));
 
     for (const curType of types) {
       const dDealt = typechart.get(curType)!.damageDealt;
       const dTaken = typechart.get(curType)!.damageTaken;
 
-      for (const [type, multiplier] of Object.entries(dTaken) as [keyof Pokemon.Types, number][]) {
+      for (const [type, multiplier] of Object.entries(dTaken) as [keyof PokemonTypes.Types, number][]) {
         switch (multiplier) {
           case 1:
             def.multi[type] *= 2;
@@ -59,7 +59,7 @@ export class TypeService {
         }
       }
 
-      for (const [type, multiplier] of Object.entries(dDealt) as [keyof Pokemon.Types, number][]) {
+      for (const [type, multiplier] of Object.entries(dDealt) as [keyof PokemonTypes.Types, number][]) {
         switch (multiplier) {
           case 1:
             atk.multi[type] *= 2;
@@ -80,7 +80,7 @@ export class TypeService {
     const defendingTypeEntry = new Type();
 
     if (requestedFields.has('attacking')) {
-      for (const [attack, multiplier] of Object.entries(atk.multi) as [keyof Pokemon.Types, number][]) {
+      for (const [attack, multiplier] of Object.entries(atk.multi) as [keyof PokemonTypes.Types, number][]) {
         switch (multiplier) {
           case 0:
             atk.effectlessTypes.push(attack);
@@ -127,7 +127,7 @@ export class TypeService {
     }
 
     if (requestedFields.has('defending')) {
-      for (const [defense, multiplier] of Object.entries(def.multi) as [keyof Pokemon.Types, number][]) {
+      for (const [defense, multiplier] of Object.entries(def.multi) as [keyof PokemonTypes.Types, number][]) {
         switch (multiplier) {
           case 0:
             def.effectlessTypes.push(defense);

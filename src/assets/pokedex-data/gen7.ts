@@ -1,7 +1,7 @@
 import { Pokedex } from '#dexdata/pokedex';
-import type { Pokemon } from '#utils/pokemon';
+import type { PokemonTypes } from '#utils/pokemon';
 
-const entries: [string, Pokemon.DexEntry][] = [
+const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'rowlet',
     {

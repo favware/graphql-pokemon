@@ -7,7 +7,7 @@ import { Stats } from '#structures/Stats';
 import { Field, Float, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's entry" })
-export class DexDetails {
+export class Pokemon {
   @Field(() => Abilities, { description: 'The abilities for a Pokémon' })
   public abilities!: Abilities;
 
@@ -53,7 +53,7 @@ export class DexDetails {
   @Field(() => String || Int, { nullable: true, description: 'The evolution level, or special method, for a Pokémon' })
   public evolutionLevel?: string | number;
 
-  @Field(() => [DexDetails], { nullable: true, description: 'The evolutions for a Pokémon, if any' })
+  @Field(() => [Pokemon], { nullable: true, description: 'The evolutions for a Pokémon, if any' })
   public evolutions?: this[];
 
   @Field(() => EvYields, { description: 'EV yields for a Pokémon' })
@@ -92,7 +92,7 @@ export class DexDetails {
   @Field(() => [String], { nullable: true, description: 'Any other forms for a Pokémon' })
   public otherFormes?: string[];
 
-  @Field(() => [DexDetails], { nullable: true, description: 'The preevolutions for a Pokémon, if any' })
+  @Field(() => [Pokemon], { nullable: true, description: 'The preevolutions for a Pokémon, if any' })
   public preevolutions?: this[];
 
   @Field(() => String, { description: 'Serebii page for a Pokémon' })

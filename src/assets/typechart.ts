@@ -1,8 +1,8 @@
 import { GraphQLCollection } from '#utils/GraphQLCollection';
-import type { Pokemon } from '#utils/pokemon';
+import type { PokemonTypes } from '#utils/pokemon';
 
 /** The type effectiveness typechart in Pokémon */
-export default new GraphQLCollection<string, Pokemon.TypeMatchups>([
+export default new GraphQLCollection<string, PokemonTypes.TypeMatchups>([
   [
     'bug',
     {

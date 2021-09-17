@@ -1,8 +1,8 @@
-import type Pokemon from '#utils/pokemon';
+import type PokemonTypes from '#utils/pokemon';
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A learnset move entry' })
-export class LearnsetMove implements Pokemon.LearnsetMove {
+export class LearnsetMove implements PokemonTypes.LearnsetMove {
   @Field(() => Int, {
     nullable: true,
     description: 'The generation in which this pokémon learned the move this way',
@@ -15,7 +15,7 @@ export class LearnsetMove implements Pokemon.LearnsetMove {
 }
 
 @ObjectType({ description: 'A learnset level up move entry' })
-export class LearnsetLevelUpMove extends LearnsetMove implements Pokemon.LearnsetLevelupMove {
+export class LearnsetLevelUpMove extends LearnsetMove implements PokemonTypes.LearnsetLevelupMove {
   @Field(() => Int, { nullable: true, description: 'The level at which the move is learned', defaultValue: null })
   public level!: number | null;
 }

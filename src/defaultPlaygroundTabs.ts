@@ -73,7 +73,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "arceus",', '  "reverse": true,', '  "take": 1', '}'].join('\n'),
     query: [
-      'fragment data on DexDetails {',
+      'fragment data on Pokemon {',
       '\t\tnum',
       '\t\tspecies',
       '\t\ttypes',

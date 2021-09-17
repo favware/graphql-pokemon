@@ -1,4 +1,4 @@
-export namespace Pokemon {
+export namespace PokemonTypes {
   interface AliasEntry {
     aliases?: string[];
   }
@@ -256,4 +256,4 @@ export namespace Pokemon {
     | 'All';
 }
 
-export default Pokemon;
+export default PokemonTypes;

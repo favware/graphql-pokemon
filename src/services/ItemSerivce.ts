@@ -5,13 +5,13 @@ import { Item } from '#structures/Item';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
+import type PokemonTypes from '#utils/pokemon';
 import { preParseInput, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
 export class ItemService {
-  public static getByItemName(@Args(() => ItemArgs) { item }: ItemArgs): Pokemon.Item | undefined {
+  public static getByItemName(@Args(() => ItemArgs) { item }: ItemArgs): PokemonTypes.Item | undefined {
     return items.get(item);
   }
 
@@ -38,7 +38,7 @@ export class ItemService {
     return item;
   }
 
-  public static findByFuzzy(@Args(() => FuzzyItemArgs) { item, offset, reverse, take }: FuzzyItemArgs): Fuse.FuseResult<Pokemon.Item>[] {
+  public static findByFuzzy(@Args(() => FuzzyItemArgs) { item, offset, reverse, take }: FuzzyItemArgs): Fuse.FuseResult<PokemonTypes.Item>[] {
     item = preParseInput(item);
 
     const fuzzyResult = new FuzzySearch(items, ['name', 'aliases'], { threshold: 0.3 }).runFuzzy(item);
@@ -52,6 +52,6 @@ export class ItemService {
 }
 
 interface MapItemDataToItemGraphQLParameters {
-  data: Pokemon.Item;
+  data: PokemonTypes.Item;
   requestedFields: GraphQLSet<keyof Item>;
 }

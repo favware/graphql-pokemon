@@ -4,7 +4,7 @@ import type { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs
 import pokedex from '#assets/pokedex';
 import { Abilities } from '#structures/Abilities';
 import { CatchRate } from '#structures/CatchRate';
-import { DexDetails } from '#structures/DexDetails';
+import { Pokemon } from '#structures/Pokemon';
 import { EvYields } from '#structures/EvYields';
 import { Flavor } from '#structures/Flavor';
 import { Gender } from '#structures/Gender';
@@ -12,29 +12,29 @@ import { Stats } from '#structures/Stats';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import type Pokemon from '#utils/pokemon';
+import type PokemonTypes from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { cast, preParseInput, toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
 export class DexService {
-  private static flavors: Record<string, Pokemon.FlavorText[]> | undefined = undefined;
+  private static flavors: Record<string, PokemonTypes.FlavorText[]> | undefined = undefined;
   private static tiers: Record<string, string> | undefined = undefined;
   private static readonly bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/wiki/';
   private static readonly bulbapediaBaseUrlPostfix = '_(Pokémon)';
   private static readonly serebiiBaseUrl = 'https://www.serebii.net/pokedex';
   private static readonly smogonBaseUrl = 'https://www.smogon.com/dex';
 
-  public static getBySpecies(@Args(() => PokemonArgs) { pokemon }: PokemonArgs): Pokemon.DexEntry | undefined {
+  public static getBySpecies(@Args(() => PokemonArgs) { pokemon }: PokemonArgs): PokemonTypes.DexEntry | undefined {
     return pokedex.get(pokemon);
   }
 
-  public static getByNationalDexNumber(@Args(() => PokemonArgs) { number }: PokemonNumberArgs): Pokemon.DexEntry | undefined {
+  public static getByNationalDexNumber(@Args(() => PokemonArgs) { number }: PokemonNumberArgs): PokemonTypes.DexEntry | undefined {
     return pokedex.find((pokemon) => pokemon.num === number);
   }
 
-  public static findByFuzzy(@Args() { pokemon, offset, take, reverse }: FuzzyPokemonArgs): Fuse.FuseResult<Pokemon.DexEntry>[] {
+  public static findByFuzzy(@Args() { pokemon, offset, take, reverse }: FuzzyPokemonArgs): Fuse.FuseResult<PokemonTypes.DexEntry>[] {
     pokemon = this.parseFormeIdentifiers(preParseInput(pokemon));
 
     const fuzzyResult = new FuzzySearch(pokedex, ['num', 'species', 'aliases'], { threshold: 0.3 }).runFuzzy(pokemon);
@@ -58,7 +58,7 @@ export class DexService {
     takeFlavorTexts = 1,
     offsetFlavorTexts = 0,
     reverseFlavorTexts = false
-  }: MapPokemonDataToPokemonGraphQLParameters): Promise<DexDetails> {
+  }: MapPokemonDataToPokemonGraphQLParameters): Promise<Pokemon> {
     const basePokemonArgs = {
       offsetFlavorTexts,
       takeFlavorTexts,
@@ -73,14 +73,14 @@ export class DexService {
       this.tiers = (await import('#jsonAssets/formats.json')).default;
     }
 
-    const evolutionChain: Promise<DexDetails>[] = [];
-    const preevolutionChain: Promise<DexDetails>[] = [];
+    const evolutionChain: Promise<Pokemon>[] = [];
+    const preevolutionChain: Promise<Pokemon>[] = [];
 
-    const basePokemonGenderRatio: Pokemon.DexEntry['genderRatio'] = data.genderRatio || {
+    const basePokemonGenderRatio: PokemonTypes.DexEntry['genderRatio'] = data.genderRatio || {
       male: 0.5,
       female: 0.5
     };
-    const basePokemonCatchRate: Pokemon.DexEntry['catchRate'] = data.catchRate || {
+    const basePokemonCatchRate: PokemonTypes.DexEntry['catchRate'] = data.catchRate || {
       base: 0,
       percentageWithOrdinaryPokeballAtFullHealth: '0%'
     };
@@ -216,7 +216,7 @@ export class DexService {
       `${recursingAs ? `${recursingAs}.` : ''}catchRate.percentageWithOrdinaryPokeballAtFullHealth`
     );
 
-    const pokemonData = new DexDetails();
+    const pokemonData = new Pokemon();
     addPropertyToClass(pokemonData, 'abilities', abilitiesData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}abilities`);
     addPropertyToClass(pokemonData, 'gender', genderData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}gender`);
     addPropertyToClass(pokemonData, 'baseStats', baseStatsData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
@@ -447,7 +447,7 @@ export class DexService {
     return pokemonData;
   }
 
-  private static parseDataForEvolutionRecursion(basePokemonData: Pokemon.DexEntry, evoChainData: Pokemon.DexEntry) {
+  private static parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, evoChainData: PokemonTypes.DexEntry) {
     if (basePokemonData.forme && evoChainData.forme && basePokemonData.forme === evoChainData.forme) {
       return toLowerSingleWordCase(basePokemonData.species);
     }
@@ -455,7 +455,7 @@ export class DexService {
     return basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species;
   }
 
-  private static parseSpeciesForBulbapedia(pokemonData: Pokemon.DexEntry) {
+  private static parseSpeciesForBulbapedia(pokemonData: PokemonTypes.DexEntry) {
     if (pokemonData.specialBulbapediaUrl) {
       return this.bulbapediaBaseUrlPrefix + pokemonData.specialBulbapediaUrl + this.bulbapediaBaseUrlPostfix;
     }
@@ -505,7 +505,7 @@ export class DexService {
     return `${this.smogonBaseUrl}/ss/pokemon/${toLowerHyphenCase(pokemonName.replace(/:/g, ''))}`;
   }
 
-  private static parseBaseStatsTotal(baseStats: Pokemon.Stats) {
+  private static parseBaseStatsTotal(baseStats: PokemonTypes.Stats) {
     return baseStats.hp + baseStats.atk + baseStats.def + baseStats.spa + baseStats.spd + baseStats.spe;
   }
 
@@ -544,8 +544,8 @@ export class DexService {
 }
 
 interface MapPokemonDataToPokemonGraphQLParameters {
-  data: Pokemon.DexEntry;
-  requestedFields: GraphQLSet<keyof DexDetails>;
+  data: PokemonTypes.DexEntry;
+  requestedFields: GraphQLSet<keyof Pokemon>;
   offsetFlavorTexts: number;
   takeFlavorTexts: number;
   reverseFlavorTexts: boolean;

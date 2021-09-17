@@ -1,8 +1,8 @@
 import { GraphQLCollection } from '#utils/GraphQLCollection';
-import type { Pokemon } from '#utils/pokemon';
+import type { PokemonTypes } from '#utils/pokemon';
 
 /** The moves in Pokémon */
-export default new GraphQLCollection<string, Pokemon.Move>([
+export default new GraphQLCollection<string, PokemonTypes.Move>([
   [
     '10000000voltthunderbolt',
     {

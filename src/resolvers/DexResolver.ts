@@ -2,17 +2,17 @@ import { FuzzyPokemonArgs } from '#arguments/FuzzyArgs/FuzzyPokemonArgs';
 import { PokemonArgs } from '#arguments/PokemonArgs/PokemonArgs';
 import { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs';
 import { DexService } from '#services/DexService';
-import { DexDetails } from '#structures/DexDetails';
+import { Pokemon } from '#structures/Pokemon';
 import { getRequestedFields } from '#utils/getRequestedFields';
 import { GraphQLSet } from '#utils/GraphQLSet';
 import { Args, Query, Resolver } from 'type-graphql';
 
-@Resolver(DexDetails)
+@Resolver(Pokemon)
 export class DexResolver {
   public getPokemonByName = this.getPokemon.bind(this);
   public getPokemonBySpecies = this.getPokemon.bind(this);
 
-  @Query(() => DexDetails, {
+  @Query(() => Pokemon, {
     description: [
       'Gets details on a single Pokémon based on National Pokédex number',
       'You can provide "takeFlavorTexts" to limit the amount of flavour texts to return, set the offset of where to start with "offsetFlavorTexts", and reverse the entire array with "reverseFlavorTexts".',
@@ -21,8 +21,8 @@ export class DexResolver {
   })
   public async getPokemonByDexNumber(
     @Args(() => PokemonNumberArgs) args: PokemonNumberArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
-  ): Promise<DexDetails> {
+    @getRequestedFields() requestedFields: GraphQLSet<keyof Pokemon>
+  ): Promise<Pokemon> {
     const pokemonData = DexService.getByNationalDexNumber(args);
 
     if (!pokemonData) {
@@ -44,7 +44,7 @@ export class DexResolver {
     return graphqlObject;
   }
 
-  @Query(() => DexDetails, {
+  @Query(() => Pokemon, {
     description: [
       'Gets details on a single Pokémon based on species name',
       'You can provide "takeFlavorTexts" to limit the amount of flavour texts to return, set the offset of where to start with "offsetFlavorTexts", and reverse the entire array with "reverseFlavorTexts".',
@@ -53,8 +53,8 @@ export class DexResolver {
   })
   public async getPokemon(
     @Args(() => PokemonArgs) args: PokemonArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
-  ): Promise<DexDetails> {
+    @getRequestedFields() requestedFields: GraphQLSet<keyof Pokemon>
+  ): Promise<Pokemon> {
     const pokemonData = DexService.getBySpecies(args);
 
     if (!pokemonData) {
@@ -76,7 +76,7 @@ export class DexResolver {
     return graphqlObject;
   }
 
-  @Query(() => [DexDetails], {
+  @Query(() => [Pokemon], {
     description: [
       'Gets details on one or more Pokémon based on species name',
       'You can provide "take" to limit the amount of Pokémon to return (default: 1), set the offset of where to start with "offset", and reverse the entire array with "reverse".',
@@ -84,17 +84,14 @@ export class DexResolver {
       'Reversal is applied before pagination!'
     ].join('\n')
   })
-  public async getFuzzyPokemon(
-    @Args() args: FuzzyPokemonArgs,
-    @getRequestedFields() requestedFields: GraphQLSet<keyof DexDetails>
-  ): Promise<DexDetails[]> {
+  public async getFuzzyPokemon(@Args() args: FuzzyPokemonArgs, @getRequestedFields() requestedFields: GraphQLSet<keyof Pokemon>): Promise<Pokemon[]> {
     const fuzzyEntry = DexService.findByFuzzy(args);
 
     if (!fuzzyEntry.length) {
       throw new Error(`No Pokémon found for: ${args.pokemon}`);
     }
 
-    const DexDetailPromises: Promise<DexDetails>[] = [];
+    const DexDetailPromises: Promise<Pokemon>[] = [];
 
     for (const pokemonData of fuzzyEntry) {
       DexDetailPromises.push(

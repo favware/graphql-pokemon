@@ -22,7 +22,7 @@ export const getMoveWithFullData = gql`
   }
 `;
 
-export const getFuzzyMoveSpecies = gql`
+export const getFuzzyMoveName = gql`
   query ($move: String!, $take: Int, $reverse: Boolean) {
     getFuzzyMove(move: $move, take: $take, reverse: $reverse) {
       name
@@ -30,7 +30,7 @@ export const getFuzzyMoveSpecies = gql`
   }
 `;
 
-export const getFuzzyMoveFullData = gql`
+export const getFuzzyMoveWithFullData = gql`
   query ($move: String!, $take: Int, $reverse: Boolean) {
     getFuzzyMove(move: $move, take: $take, reverse: $reverse) {
       desc

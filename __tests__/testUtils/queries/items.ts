@@ -24,7 +24,7 @@ export const getItemWithFullData = gql`
   }
 `;
 
-export const getFuzzyItemSpecies = gql`
+export const getFuzzyItemName = gql`
   query ($item: String!, $take: Int, $reverse: Boolean) {
     getFuzzyItem(item: $item, take: $take, reverse: $reverse) {
       name
@@ -32,7 +32,7 @@ export const getFuzzyItemSpecies = gql`
   }
 `;
 
-export const getFuzzyItemFullData = gql`
+export const getFuzzyItemWithFullData = gql`
   query ($item: String!, $take: Int, $reverse: Boolean) {
     getFuzzyItem(item: $item, take: $take, reverse: $reverse) {
       bulbapediaPage

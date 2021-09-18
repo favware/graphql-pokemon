@@ -22,7 +22,7 @@ export const getAbilityWithFullData = gql`
   }
 `;
 
-export const getFuzzyAbilitySpecies = gql`
+export const getFuzzyAbilityName = gql`
   query ($ability: String!, $take: Int, $reverse: Boolean) {
     getFuzzyAbility(ability: $ability, take: $take, reverse: $reverse) {
       name
@@ -30,7 +30,7 @@ export const getFuzzyAbilitySpecies = gql`
   }
 `;
 
-export const getFuzzyAbilityFullData = gql`
+export const getFuzzyAbilityWithFullData = gql`
   query ($ability: String!, $take: Int, $reverse: Boolean) {
     getFuzzyAbility(ability: $ability, take: $take, reverse: $reverse) {
       desc

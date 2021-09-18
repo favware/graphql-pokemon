@@ -166,7 +166,7 @@ export const getFuzzyPokemonSpecies = gql`
   }
 `;
 
-export const getFuzzyPokemonFullData = gql`
+export const getFuzzyPokemonWithFullData = gql`
   query ($pokemon: String!, $take: Int, $reverse: Boolean) {
     getFuzzyPokemon(pokemon: $pokemon, take: $take, reverse: $reverse) {
       abilities {
@@ -234,7 +234,7 @@ export const getFuzzyPokemonFullData = gql`
   }
 `;
 
-export const getFuzzyPokemonFullDataWithEvolutions = gql`
+export const getFuzzyPokemonWithFullDataAndEvolutions = gql`
   fragment FullDataFragment on Pokemon {
     abilities {
       first

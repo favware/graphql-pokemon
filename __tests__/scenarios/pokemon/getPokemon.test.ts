@@ -205,6 +205,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 2, attack: 0, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
             evolutionLevel: 'use Water Stone',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: "Its body's cellular structure is similar to the molecular composition of water. It can melt invisibly in water.",
@@ -222,6 +223,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 134,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/vaporeon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/vaporeon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/vaporeon.gif',
@@ -244,6 +246,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 0, speed: 2 },
             evolutionLevel: 'use Thunder Stone',
+            evolutions: null,
             flavorTexts: [{ flavor: 'It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts.', game: 'Shield' }],
             forme: null,
             formeLetter: null,
@@ -256,6 +259,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 135,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/jolteon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/jolteon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/jolteon.gif',
@@ -278,6 +282,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 2, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
             evolutionLevel: 'use Fire Stone',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: 'It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees Fahrenheit.',
@@ -295,6 +300,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 136,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/flareon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/flareon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/flareon.gif',
@@ -317,6 +323,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 0, defense: 0, specialattack: 2, specialdefense: 0, speed: 0 },
             evolutionLevel: 'Level up during Daytime with happiness of at least 220',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: 'It unleashes psychic power from the orb on its forehead. When its power is exhausted, the orb grows dull and dark.',
@@ -334,6 +341,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 196,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/espeon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/espeon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/espeon.gif',
@@ -356,6 +364,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 2, speed: 0 },
             evolutionLevel: 'Level up during Nighttime with happiness of at least 220',
+            evolutions: null,
             flavorTexts: [
               { flavor: 'On the night of a full moon, or when it gets excited, the ring patterns on its body glow yellow.', game: 'Shield' }
             ],
@@ -370,6 +379,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 197,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/umbreon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/umbreon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/umbreon.gif',
@@ -392,6 +402,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 0, defense: 2, specialattack: 0, specialdefense: 0, speed: 0 },
             evolutionLevel: 'use Leaf Stone',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: "This Pokémon's tail is blade sharp, with a fantastic cutting edge that can slice right though large trees.",
@@ -409,6 +420,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 470,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/leafeon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/leafeon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/leafeon.gif',
@@ -431,6 +443,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 0, defense: 0, specialattack: 2, specialdefense: 0, speed: 0 },
             evolutionLevel: 'use Ice Stone',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: 'The coldness emanating from Glaceon causes powdery snow to form, making it quite a popular Pokémon at ski resorts.',
@@ -448,6 +461,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 471,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/glaceon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/glaceon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/glaceon.gif',
@@ -470,6 +484,7 @@ describe('getPokemon', () => {
             eggGroups: ['Field'],
             evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 2, speed: 0 },
             evolutionLevel: 'Level up while having high Affection and knowing a Fairy type move',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: "There's a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pokémon.",
@@ -487,6 +502,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 700,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/sylveon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/sylveon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/sylveon.gif',
@@ -622,6 +638,7 @@ describe('getPokemon', () => {
               speed: 0
             },
             evolutionLevel: '30',
+            evolutions: null,
             flavorTexts: [],
             forme: null,
             formeLetter: null,
@@ -636,6 +653,7 @@ describe('getPokemon', () => {
             minimumHatchTime: null,
             num: -2,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: '',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclant.png',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/syclant.png',
@@ -669,6 +687,147 @@ describe('getPokemon', () => {
         species: 'syclar',
         sprite: 'https://play.pokemonshowdown.com/sprites/gen5/syclar.png',
         types: ['Ice', 'Bug']
+      });
+    });
+
+    test('GIVEN Pokémon with evolution form THEN returns Pokemon WITH all data', async () => {
+      const { data } = await gCall<'getPokemon'>({
+        source: getPokemonWithFullDataAndEvolutions,
+        variableValues: { pokemon: 'rattataalola' }
+      });
+
+      expect(data.getPokemon).toEqual({
+        abilities: {
+          first: 'Gluttony',
+          hidden: 'Thick Fat',
+          second: 'Hustle',
+          special: null
+        },
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/rattata-alola.gif',
+        baseForme: null,
+        baseSpecies: 'Rattata',
+        baseStats: {
+          attack: 56,
+          defense: 35,
+          hp: 30,
+          specialattack: 25,
+          specialdefense: 35,
+          speed: 72
+        },
+        baseStatsTotal: 253,
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pokémon)',
+        catchRate: {
+          base: 255,
+          percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+        },
+        color: 'Black',
+        cosmeticFormes: null,
+        eggGroups: ['Field'],
+        evYields: {
+          attack: 0,
+          defense: 0,
+          hp: 0,
+          specialattack: 0,
+          specialdefense: 0,
+          speed: 1
+        },
+        evolutionLevel: null,
+        evolutions: [
+          {
+            abilities: {
+              first: 'Gluttony',
+              hidden: 'Thick Fat',
+              second: 'Hustle',
+              special: null
+            },
+            backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/raticate-alola.gif',
+            baseForme: null,
+            baseSpecies: 'Raticate',
+            baseStats: {
+              attack: 71,
+              defense: 70,
+              hp: 75,
+              specialattack: 40,
+              specialdefense: 80,
+              speed: 77
+            },
+            baseStatsTotal: 413,
+            bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pokémon)',
+            catchRate: {
+              base: 127,
+              percentageWithOrdinaryPokeballAtFullHealth: '26%'
+            },
+            color: 'Black',
+            cosmeticFormes: null,
+            eggGroups: ['Field'],
+            evYields: {
+              attack: 0,
+              defense: 0,
+              hp: 0,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 2
+            },
+            evolutionLevel: '20',
+            evolutions: null,
+            flavorTexts: [
+              {
+                flavor: 'It makes its Rattata underlings gather food for it, dining solely on the most nutritious and delicious fare.',
+                game: "Let's Go Eevee"
+              }
+            ],
+            forme: null,
+            formeLetter: null,
+            gender: {
+              female: '50%',
+              male: '50%'
+            },
+            height: 0.7,
+            isEggObtainable: true,
+            levellingRate: 'Medium Fast',
+            maximumHatchTime: 4111,
+            minimumHatchTime: 3855,
+            num: 20,
+            otherFormes: null,
+            preevolutions: null,
+            serebiiPage: 'https://www.serebii.net/pokedex-sm/020.shtml',
+            shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/raticate-alola.gif',
+            shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/raticate-alola.gif',
+            smogonPage: 'https://www.smogon.com/dex/sm/pokemon/raticate-alola',
+            smogonTier: 'Past',
+            species: 'raticate-alola',
+            sprite: 'https://play.pokemonshowdown.com/sprites/ani/raticate-alola.gif',
+            types: ['Dark', 'Normal']
+          }
+        ],
+        flavorTexts: [
+          {
+            flavor: 'Its whiskers provide it with a keen sense of smell, enabling it to pick up the scent of hidden food and locate it instantly.',
+            game: "Let's Go Eevee"
+          }
+        ],
+        forme: null,
+        formeLetter: null,
+        gender: {
+          female: '50%',
+          male: '50%'
+        },
+        height: 0.3,
+        isEggObtainable: true,
+        levellingRate: 'Medium Fast',
+        maximumHatchTime: 4111,
+        minimumHatchTime: 3855,
+        num: 19,
+        otherFormes: null,
+        preevolutions: null,
+        serebiiPage: 'https://www.serebii.net/pokedex-sm/019.shtml',
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/rattata-alola.gif',
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/rattata-alola.gif',
+        smogonPage: 'https://www.smogon.com/dex/sm/pokemon/rattata-alola',
+        smogonTier: 'Past',
+        species: 'rattata-alola',
+        sprite: 'https://play.pokemonshowdown.com/sprites/ani/rattata-alola.gif',
+        types: ['Dark', 'Normal']
       });
     });
 
@@ -751,6 +910,7 @@ describe('getPokemon', () => {
               speed: 0
             },
             evolutionLevel: '55',
+            evolutions: null,
             flavorTexts: [
               {
                 flavor: 'This Pokémon is known as the Sea Incarnate. Figureheads that resemble Dragonite decorate the bows of many ships.',
@@ -770,6 +930,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 10280,
             num: 149,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/dragonite',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/dragonite.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/dragonite.gif',
@@ -837,6 +998,7 @@ describe('getPokemon', () => {
               speed: 0
             },
             evolutionLevel: null,
+            evolutions: null,
             flavorTexts: [
               {
                 flavor:
@@ -857,6 +1019,7 @@ describe('getPokemon', () => {
             minimumHatchTime: 10280,
             num: 147,
             otherFormes: null,
+            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/dratini',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/dratini.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/dratini.gif',
@@ -885,77 +1048,11 @@ describe('getPokemon', () => {
       });
 
       expect(data.getPokemon).toEqual({
-        abilities: {
-          first: 'Clear Body',
-          hidden: 'Light Metal',
-          second: null,
-          special: null
-        },
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/beldum.gif',
-        baseForme: null,
-        baseSpecies: null,
-        baseStats: {
-          attack: 55,
-          defense: 80,
-          hp: 40,
-          specialattack: 35,
-          specialdefense: 60,
-          speed: 30
-        },
-        baseStatsTotal: 300,
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/beldum_(Pokémon)',
-        catchRate: {
-          base: 3,
-          percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-        },
-        color: 'Blue',
-        cosmeticFormes: null,
-        eggGroups: ['Mineral'],
-        evYields: {
-          attack: 0,
-          defense: 1,
-          hp: 0,
-          specialattack: 0,
-          specialdefense: 0,
-          speed: 0
-        },
-        evolutionLevel: null,
         evolutions: [
           {
-            abilities: {
-              first: 'Clear Body',
-              hidden: 'Light Metal',
-              second: null,
-              special: null
-            },
-            backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/metang.gif',
-            baseForme: null,
-            baseSpecies: null,
-            baseStats: {
-              attack: 75,
-              defense: 100,
-              hp: 60,
-              specialattack: 55,
-              specialdefense: 80,
-              speed: 50
-            },
-            baseStatsTotal: 420,
-            bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/metang_(Pokémon)',
-            catchRate: {
-              base: 3,
-              percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-            },
-            color: 'Blue',
-            cosmeticFormes: null,
+            abilities: { first: 'Clear Body', second: null, hidden: 'Light Metal', special: null },
             eggGroups: ['Mineral'],
-            evYields: {
-              attack: 0,
-              defense: 2,
-              hp: 0,
-              specialattack: 0,
-              specialdefense: 0,
-              speed: 0
-            },
+            evYields: { hp: 0, attack: 0, defense: 2, specialattack: 0, specialdefense: 0, speed: 0 },
             evolutionLevel: '20',
             flavorTexts: [
               {
@@ -966,12 +1063,10 @@ describe('getPokemon', () => {
             ],
             forme: null,
             formeLetter: null,
-            gender: {
-              female: '0%',
-              male: '0%'
-            },
+            gender: { female: '0%', male: '0%' },
             height: 1.2,
             isEggObtainable: true,
+            backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/metang.gif',
             levellingRate: 'Slow',
             maximumHatchTime: 10536,
             minimumHatchTime: 10280,
@@ -981,12 +1076,68 @@ describe('getPokemon', () => {
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/metang.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/metang.gif',
             smogonPage: 'https://www.smogon.com/dex/ss/pokemon/metang',
+            baseForme: null,
             smogonTier: 'NFE',
             species: 'metang',
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/metang.gif',
-            types: ['Steel', 'Psychic']
+            types: ['Steel', 'Psychic'],
+            baseSpecies: null,
+            baseStats: { hp: 60, attack: 75, defense: 100, specialattack: 55, specialdefense: 80, speed: 50 },
+            baseStatsTotal: 420,
+            bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/metang_(Pokémon)',
+            catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+            color: 'Blue',
+            cosmeticFormes: null,
+            evolutions: [
+              {
+                abilities: { first: 'Clear Body', second: null, hidden: 'Light Metal', special: null },
+                eggGroups: ['Mineral'],
+                evYields: { hp: 0, attack: 0, defense: 3, specialattack: 0, specialdefense: 0, speed: 0 },
+                evolutionLevel: '45',
+                flavorTexts: [
+                  {
+                    flavor:
+                      'Metagross is the result of the fusion of two Metang. This Pokémon defeats its opponents through use of its supercomputer-level brain.',
+                    game: 'Shield'
+                  }
+                ],
+                forme: null,
+                formeLetter: null,
+                gender: { female: '0%', male: '0%' },
+                height: 1.6,
+                isEggObtainable: true,
+                backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/metagross.gif',
+                levellingRate: 'Slow',
+                maximumHatchTime: 10536,
+                minimumHatchTime: 10280,
+                num: 376,
+                otherFormes: ['metagrossmega'],
+                serebiiPage: 'https://www.serebii.net/pokedex-swsh/metagross',
+                shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/metagross.gif',
+                shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/metagross.gif',
+                smogonPage: 'https://www.smogon.com/dex/ss/pokemon/metagross',
+                baseForme: null,
+                smogonTier: 'RU',
+                species: 'metagross',
+                sprite: 'https://play.pokemonshowdown.com/sprites/ani/metagross.gif',
+                types: ['Steel', 'Psychic'],
+                baseSpecies: null,
+                baseStats: { hp: 80, attack: 135, defense: 130, specialattack: 95, specialdefense: 90, speed: 70 },
+                baseStatsTotal: 600,
+                bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/metagross_(Pokémon)',
+                catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+                color: 'Blue',
+                cosmeticFormes: null
+              }
+            ],
+            preevolutions: null
           }
         ],
+        preevolutions: null,
+        abilities: { first: 'Clear Body', second: null, hidden: 'Light Metal', special: null },
+        eggGroups: ['Mineral'],
+        evYields: { hp: 0, attack: 0, defense: 1, specialattack: 0, specialdefense: 0, speed: 0 },
+        evolutionLevel: null,
         flavorTexts: [
           {
             flavor:
@@ -996,26 +1147,31 @@ describe('getPokemon', () => {
         ],
         forme: null,
         formeLetter: null,
-        gender: {
-          female: '0%',
-          male: '0%'
-        },
+        gender: { female: '0%', male: '0%' },
         height: 0.6,
         isEggObtainable: true,
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/beldum.gif',
         levellingRate: 'Slow',
         maximumHatchTime: 10536,
         minimumHatchTime: 10280,
         num: 374,
         otherFormes: null,
-        preevolutions: null,
         serebiiPage: 'https://www.serebii.net/pokedex-swsh/beldum',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/beldum.gif',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/beldum.gif',
         smogonPage: 'https://www.smogon.com/dex/ss/pokemon/beldum',
+        baseForme: null,
         smogonTier: 'LC',
         species: 'beldum',
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/beldum.gif',
-        types: ['Steel', 'Psychic']
+        types: ['Steel', 'Psychic'],
+        baseSpecies: null,
+        baseStats: { hp: 40, attack: 55, defense: 80, specialattack: 35, specialdefense: 60, speed: 30 },
+        baseStatsTotal: 300,
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/beldum_(Pokémon)',
+        catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+        color: 'Blue',
+        cosmeticFormes: null
       });
     });
 
@@ -1026,98 +1182,12 @@ describe('getPokemon', () => {
       });
 
       expect(data.getPokemon).toEqual({
-        abilities: {
-          first: 'Intimidate',
-          hidden: 'Moxie',
-          second: null,
-          special: null
-        },
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/salamence.gif',
-        baseForme: null,
-        baseSpecies: null,
-        baseStats: {
-          attack: 135,
-          defense: 80,
-          hp: 95,
-          specialattack: 110,
-          specialdefense: 80,
-          speed: 100
-        },
-        baseStatsTotal: 600,
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/salamence_(Pokémon)',
-        catchRate: {
-          base: 45,
-          percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-        },
-        color: 'Blue',
-        cosmeticFormes: null,
-        eggGroups: ['Dragon'],
-        evYields: {
-          attack: 3,
-          defense: 0,
-          hp: 0,
-          specialattack: 0,
-          specialdefense: 0,
-          speed: 0
-        },
-        evolutionLevel: '50',
         evolutions: null,
-        flavorTexts: [
-          {
-            flavor:
-              'While basking in the joy of flight generally keeps this Pokémon in high spirits, Salamence turns into an uncontrollable menace if something angers it.',
-            game: 'Shield'
-          }
-        ],
-        forme: null,
-        formeLetter: null,
-        gender: {
-          female: '50%',
-          male: '50%'
-        },
-        height: 1.5,
-        isEggObtainable: true,
-        levellingRate: 'Slow',
-        maximumHatchTime: 10536,
-        minimumHatchTime: 10280,
-        num: 373,
-        otherFormes: ['salamencemega'],
         preevolutions: [
           {
-            abilities: {
-              first: 'Rock Head',
-              hidden: 'Overcoat',
-              second: null,
-              special: null
-            },
-            backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/shelgon.gif',
-            baseForme: null,
-            baseSpecies: null,
-            baseStats: {
-              attack: 95,
-              defense: 100,
-              hp: 65,
-              specialattack: 60,
-              specialdefense: 50,
-              speed: 50
-            },
-            baseStatsTotal: 420,
-            bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/shelgon_(Pokémon)',
-            catchRate: {
-              base: 45,
-              percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-            },
-            color: 'White',
-            cosmeticFormes: null,
+            abilities: { first: 'Rock Head', second: null, hidden: 'Overcoat', special: null },
             eggGroups: ['Dragon'],
-            evYields: {
-              attack: 0,
-              defense: 2,
-              hp: 0,
-              specialattack: 0,
-              specialdefense: 0,
-              speed: 0
-            },
+            evYields: { hp: 0, attack: 0, defense: 2, specialattack: 0, specialdefense: 0, speed: 0 },
             evolutionLevel: '30',
             flavorTexts: [
               {
@@ -1128,12 +1198,10 @@ describe('getPokemon', () => {
             ],
             forme: null,
             formeLetter: null,
-            gender: {
-              female: '50%',
-              male: '50%'
-            },
+            gender: { female: '50%', male: '50%' },
             height: 1.1,
             isEggObtainable: true,
+            backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/shelgon.gif',
             levellingRate: 'Slow',
             maximumHatchTime: 10536,
             minimumHatchTime: 10280,
@@ -1143,20 +1211,101 @@ describe('getPokemon', () => {
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/shelgon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/shelgon.gif',
             smogonPage: 'https://www.smogon.com/dex/ss/pokemon/shelgon',
+            baseForme: null,
             smogonTier: 'NFE',
             species: 'shelgon',
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/shelgon.gif',
-            types: ['Dragon']
+            types: ['Dragon'],
+            baseSpecies: null,
+            baseStats: { hp: 65, attack: 95, defense: 100, specialattack: 60, specialdefense: 50, speed: 50 },
+            baseStatsTotal: 420,
+            bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/shelgon_(Pokémon)',
+            catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+            color: 'White',
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: [
+              {
+                abilities: { first: 'Rock Head', second: null, hidden: 'Sheer Force', special: null },
+                eggGroups: ['Dragon'],
+                evYields: { hp: 0, attack: 1, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
+                evolutionLevel: null,
+                flavorTexts: [
+                  {
+                    flavor:
+                      "Bagon is a solitary Pokémon that doesn't form groups with others of its kind. It also has a head hard enough to cleave a boulder in one strike.",
+                    game: 'Shield'
+                  }
+                ],
+                forme: null,
+                formeLetter: null,
+                gender: { female: '50%', male: '50%' },
+                height: 0.6,
+                isEggObtainable: true,
+                backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/bagon.gif',
+                levellingRate: 'Slow',
+                maximumHatchTime: 10536,
+                minimumHatchTime: 10280,
+                num: 371,
+                otherFormes: null,
+                serebiiPage: 'https://www.serebii.net/pokedex-swsh/bagon',
+                shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/bagon.gif',
+                shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/bagon.gif',
+                smogonPage: 'https://www.smogon.com/dex/ss/pokemon/bagon',
+                baseForme: null,
+                smogonTier: 'LC',
+                species: 'bagon',
+                sprite: 'https://play.pokemonshowdown.com/sprites/ani/bagon.gif',
+                types: ['Dragon'],
+                baseSpecies: null,
+                baseStats: { hp: 45, attack: 75, defense: 60, specialattack: 40, specialdefense: 30, speed: 50 },
+                baseStatsTotal: 300,
+                bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/bagon_(Pokémon)',
+                catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+                color: 'Blue',
+                cosmeticFormes: null
+              }
+            ]
           }
         ],
+        abilities: { first: 'Intimidate', second: null, hidden: 'Moxie', special: null },
+        eggGroups: ['Dragon'],
+        evYields: { hp: 0, attack: 3, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
+        evolutionLevel: '50',
+        flavorTexts: [
+          {
+            flavor:
+              'While basking in the joy of flight generally keeps this Pokémon in high spirits, Salamence turns into an uncontrollable menace if something angers it.',
+            game: 'Shield'
+          }
+        ],
+        forme: null,
+        formeLetter: null,
+        gender: { female: '50%', male: '50%' },
+        height: 1.5,
+        isEggObtainable: true,
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/salamence.gif',
+        levellingRate: 'Slow',
+        maximumHatchTime: 10536,
+        minimumHatchTime: 10280,
+        num: 373,
+        otherFormes: ['salamencemega'],
         serebiiPage: 'https://www.serebii.net/pokedex-swsh/salamence',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/salamence.gif',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/salamence.gif',
         smogonPage: 'https://www.smogon.com/dex/ss/pokemon/salamence',
+        baseForme: null,
         smogonTier: 'UU',
         species: 'salamence',
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/salamence.gif',
-        types: ['Dragon', 'Flying']
+        types: ['Dragon', 'Flying'],
+        baseSpecies: null,
+        baseStats: { hp: 95, attack: 135, defense: 80, specialattack: 110, specialdefense: 80, speed: 100 },
+        baseStatsTotal: 600,
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/salamence_(Pokémon)',
+        catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+        color: 'Blue',
+        cosmeticFormes: null
       });
     });
   });

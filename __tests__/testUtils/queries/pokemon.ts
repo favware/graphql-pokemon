@@ -152,9 +152,21 @@ export const getPokemonWithFullDataAndEvolutions = gql`
   fragment FullDataWithEvolutions on Pokemon {
     evolutions {
       ...FullDataFragment
+      evolutions {
+        ...FullDataFragment
+      }
+      preevolutions {
+        ...FullDataFragment
+      }
     }
     preevolutions {
       ...FullDataFragment
+      evolutions {
+        ...FullDataFragment
+      }
+      preevolutions {
+        ...FullDataFragment
+      }
     }
     ...FullDataFragment
   }

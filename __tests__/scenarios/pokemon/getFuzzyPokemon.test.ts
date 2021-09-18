@@ -11,6 +11,136 @@ describe('getFuzzyPokemon', () => {
 
       expect(data.getFuzzyPokemon).toEqual([{ species: 'dragonite' }]);
     });
+
+    describe('GIVEN a pokemon with a forme prefix and a space', () => {
+      test('GIVEN a mega-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'mega salamence' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'salamence-mega' }]);
+      });
+
+      test('GIVEN a gigantamax-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'gigantamax pikachu' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'pikachu-gmax' }]);
+      });
+
+      test('GIVEN a gmax-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'gmax meowth' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'meowth-gmax' }]);
+      });
+
+      test('GIVEN a alola-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'alola marowak' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'marowak-alola' }]);
+      });
+
+      test('GIVEN a alolan-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'alolan vulpix' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'vulpix-alola' }]);
+      });
+
+      test('GIVEN a galar-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'galar ponyta' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'ponyta-galar' }]);
+      });
+
+      test('GIVEN a galarian-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'galarian moltres' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'moltres-galar' }]);
+      });
+    });
+
+    describe('GIVEN a pokemon with a forme prefix WITHOUT a space', () => {
+      test('GIVEN a mega-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'megabeedirll' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'beedrill-mega' }]);
+      });
+
+      test('GIVEN a gigantamax-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'gigantamaxvenusaur' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'venusaur-gmax' }]);
+      });
+
+      test('GIVEN a gmax-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'gmaxlapras' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'lapras-gmax' }]);
+      });
+
+      test('GIVEN a alola-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'alolaexeggutor' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'exeggutor-alola' }]);
+      });
+
+      test('GIVEN a alolan-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'alolangrimer' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'grimer-alola' }]);
+      });
+
+      test('GIVEN a galar-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'galardarumaka' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'darumaka-galar' }]);
+      });
+
+      test('GIVEN a galarian-prefixed query THEN returns Pokemon', async () => {
+        const { data } = await gCall<'getFuzzyPokemon'>({
+          source: getFuzzyPokemonSpecies,
+          variableValues: { pokemon: 'galarianzigzagoon' }
+        });
+
+        expect(data.getFuzzyPokemon).toEqual([{ species: 'zigzagoon-galar' }]);
+      });
+    });
   });
 
   describe('Full data requests', () => {

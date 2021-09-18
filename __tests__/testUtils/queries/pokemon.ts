@@ -8,6 +8,14 @@ export const getPokemonSpecies = gql`
   }
 `;
 
+export const getPokemonByNationalDexNumber = gql`
+  query ($number: Int!) {
+    getPokemonByDexNumber(number: $number) {
+      species
+    }
+  }
+`;
+
 export const getPokemonWithFullData = gql`
   query ($pokemon: PokemonEnum!) {
     getPokemon(pokemon: $pokemon) {

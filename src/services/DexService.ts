@@ -534,10 +534,27 @@ export class DexService {
         break;
     }
 
-    if (pokemon.startsWith('mega')) pokemon = `${pokemon.substring(4, pokemon.length)}mega`;
-    if (pokemon.startsWith('gmax') || pokemon.startsWith('gigantamax')) pokemon = `${pokemon.substring(4, pokemon.length)}gmax`;
-    if (pokemon.startsWith('alola') || pokemon.startsWith('alolan')) pokemon = `${pokemon.substring(4, pokemon.length)}alola`;
-    if (pokemon.startsWith('galar') || pokemon.startsWith('galarian')) pokemon = `${pokemon.substring(4, pokemon.length)}galar`;
+    if (pokemon.startsWith('mega')) {
+      pokemon = `${pokemon.substring(4, pokemon.length)}mega`;
+    }
+
+    if (pokemon.startsWith('gigantamax')) {
+      pokemon = `${pokemon.substring(10, pokemon.length)}gmax`;
+    } else if (pokemon.startsWith('gmax')) {
+      pokemon = `${pokemon.substring(4, pokemon.length)}gmax`;
+    }
+
+    if (pokemon.startsWith('alolan')) {
+      pokemon = `${pokemon.substring(6, pokemon.length)}alola`;
+    } else if (pokemon.startsWith('alola')) {
+      pokemon = `${pokemon.substring(5, pokemon.length)}alola`;
+    }
+
+    if (pokemon.startsWith('galarian')) {
+      pokemon = `${pokemon.substring(8, pokemon.length)}galar`;
+    } else if (pokemon.startsWith('galar')) {
+      pokemon = `${pokemon.substring(5, pokemon.length)}galar`;
+    }
 
     return pokemon;
   }

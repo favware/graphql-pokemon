@@ -4288,16 +4288,18 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
     'frustration',
     {
       accuracy: 100,
-      basePower: '0',
+      basePower: "(255 - user's Happiness) * 2/5",
       category: 'Physical',
       contestType: 'Cute',
+      desc: "Power is equal to the greater of ((255 - user's Happiness) * 2/5), rounded down, or 1.",
       isNonstandard: 'Past',
       name: 'Frustration',
       pp: 20,
       priority: 0,
       shortDesc: 'Max 102 power at minimum Happiness.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      zMovePower: 160
     }
   ],
   [
@@ -8569,7 +8571,8 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Does damage equal to the user's level.",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      zMovePower: 100
     }
   ],
   [
@@ -10050,7 +10053,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
     'return',
     {
       accuracy: 100,
-      basePower: '0',
+      basePower: "(user's Happiness * 2/5)",
       category: 'Physical',
       contestType: 'Cute',
       desc: "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
@@ -10060,7 +10063,8 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Max 102 power at maximum Happiness.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      zMovePower: 160
     }
   ],
   [
@@ -10737,7 +10741,8 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Does damage equal to the user's level.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      zMovePower: 100
     }
   ],
   [

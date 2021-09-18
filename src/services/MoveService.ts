@@ -93,7 +93,9 @@ export class MoveService {
     if (basePowerAsNumber === 130) return 195;
     if (basePowerAsNumber >= 140) return 200;
 
-    // If none of the cases matched (should never be the case) then return 0
+    // If none of the cases matched then we return 0. This can happen if the move cannot be a Z-move
+    // Which is the case for moves that were exclusive to a game that didn't feature Z-Moves
+    // Such as "Pika Papow" and "Veevee Volley"
     return 0;
   }
 }

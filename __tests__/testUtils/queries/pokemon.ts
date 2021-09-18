@@ -309,8 +309,8 @@ export const getFuzzyPokemonWithFullDataAndEvolutions = gql`
     ...FullDataFragment
   }
 
-  query ($pokemon: String!, $take: Int, $reverse: Boolean) {
-    getFuzzyPokemon(pokemon: $pokemon, take: $take, reverse: $reverse) {
+  query ($pokemon: String!, $take: Int, $reverse: Boolean, $takeFlavorTexts: Int, $reverseFlavorTexts: Boolean) {
+    getFuzzyPokemon(pokemon: $pokemon, take: $take, reverse: $reverse, takeFlavorTexts: $takeFlavorTexts, reverseFlavorTexts: $reverseFlavorTexts) {
       ...FullDataWithEvolutions
     }
   }

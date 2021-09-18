@@ -96,6 +96,32 @@ describe('getTypeMatchup', () => {
         }
       });
     });
+
+    test('GIVEN 2 double effective attacking types THEN returns type matchup', async () => {
+      const { data } = await gCall<'getTypeMatchup'>({
+        source: getTypeMatchup,
+        variableValues: { types: ['ice', 'flying'] }
+      });
+
+      expect(data.getTypeMatchup).toEqual({
+        attacking: {
+          doubleEffectiveTypes: ['grass'],
+          doubleResistedTypes: ['steel'],
+          effectiveTypes: ['bug', 'dragon', 'fighting', 'flying', 'ground'],
+          effectlessTypes: [],
+          normalTypes: ['dark', 'fairy', 'ghost', 'normal', 'poison', 'psychic'],
+          resistedTypes: ['electric', 'fire', 'ice', 'rock', 'water']
+        },
+        defending: {
+          doubleEffectiveTypes: ['rock'],
+          doubleResistedTypes: [],
+          effectiveTypes: ['electric', 'fire', 'steel'],
+          effectlessTypes: ['ground'],
+          normalTypes: ['dark', 'dragon', 'fairy', 'fighting', 'flying', 'ghost', 'ice', 'normal', 'poison', 'psychic', 'water'],
+          resistedTypes: ['bug', 'grass']
+        }
+      });
+    });
   });
 
   describe('Error Requests', () => {

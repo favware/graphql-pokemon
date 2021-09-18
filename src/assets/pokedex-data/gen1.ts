@@ -1650,7 +1650,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
       num: 32,
-      specialBulbapediaUrl: 'Nidoran├ö├û├®',
+      specialBulbapediaUrl: 'Nidoran├ö├ûé',
       species: 'nidoranm',
       types: ['Poison'],
       weightkg: 9,

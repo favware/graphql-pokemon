@@ -586,7 +586,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         percentageWithOrdinaryPokeballAtFullHealth: '39.9%'
       },
       color: 'White',
-      cosmeticFormes: ['FlabeÔòá├╝beÔòá├╝-Blue', 'FlabeÔòá├╝beÔòá├╝-Orange', 'FlabeÔòá├╝beÔòá├╝-White', 'FlabeÔòá├╝beÔòá├╝-Yellow'],
+      cosmeticFormes: ['Flabébé-Blue', 'Flabébé-Orange', 'Flabébé-White', 'Flabébé-Yellow'],
       eggGroups: ['Fairy'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
       evos: ['floette'],
@@ -596,7 +596,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
       num: 669,
-      specialBulbapediaUrl: 'Flab├®b├®',
+      specialBulbapediaUrl: 'Flabébé',
       species: 'flabebe',
       types: ['Fairy'],
       weightkg: 0.1,

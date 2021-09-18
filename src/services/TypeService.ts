@@ -43,7 +43,7 @@ export class TypeService {
       const dDealt = typechart.get(curType)!.damageDealt;
       const dTaken = typechart.get(curType)!.damageTaken;
 
-      for (const [type, multiplier] of Object.entries(dTaken) as [keyof PokemonTypes.Types, number][]) {
+      for (const [type, multiplier] of Object.entries(dTaken) as [keyof PokemonTypes.Types, 1 | 2 | 3][]) {
         switch (multiplier) {
           case 1:
             def.multi[type] *= 2;
@@ -54,12 +54,10 @@ export class TypeService {
           case 3:
             def.multi[type] = 0;
             break;
-          default:
-            break;
         }
       }
 
-      for (const [type, multiplier] of Object.entries(dDealt) as [keyof PokemonTypes.Types, number][]) {
+      for (const [type, multiplier] of Object.entries(dDealt) as [keyof PokemonTypes.Types, 1 | 2 | 3][]) {
         switch (multiplier) {
           case 1:
             atk.multi[type] *= 2;
@@ -70,8 +68,6 @@ export class TypeService {
           case 3:
             atk.multi[type] = 0;
             break;
-          default:
-            break;
         }
       }
     }
@@ -80,7 +76,7 @@ export class TypeService {
     const defendingTypeEntry = new Type();
 
     if (requestedFields.has('attacking')) {
-      for (const [attack, multiplier] of Object.entries(atk.multi) as [keyof PokemonTypes.Types, number][]) {
+      for (const [attack, multiplier] of Object.entries(atk.multi) as [keyof PokemonTypes.Types, 0 | 0.25 | 0.5 | 1 | 2 | 4][]) {
         switch (multiplier) {
           case 0:
             atk.effectlessTypes.push(attack);
@@ -100,8 +96,6 @@ export class TypeService {
           case 4:
             atk.doubleEffectiveTypes.push(attack);
             break;
-          default:
-            break;
         }
       }
 
@@ -115,7 +109,7 @@ export class TypeService {
     }
 
     if (requestedFields.has('defending')) {
-      for (const [defense, multiplier] of Object.entries(def.multi) as [keyof PokemonTypes.Types, number][]) {
+      for (const [defense, multiplier] of Object.entries(def.multi) as [keyof PokemonTypes.Types, 0 | 0.25 | 0.5 | 1 | 2 | 4][]) {
         switch (multiplier) {
           case 0:
             def.effectlessTypes.push(defense);
@@ -134,8 +128,6 @@ export class TypeService {
             break;
           case 4:
             def.doubleEffectiveTypes.push(defense);
-            break;
-          default:
             break;
         }
       }

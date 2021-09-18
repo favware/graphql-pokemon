@@ -8,16 +8,37 @@ export const getMoveName = gql`
   }
 `;
 
+export const getMoveZPower = gql`
+  query ($move: MovesEnum!) {
+    getMove(move: $move) {
+      zMovePower
+    }
+  }
+`;
+
 export const getMoveWithFullData = gql`
   query ($move: MovesEnum!) {
     getMove(move: $move) {
+      accuracy
+      maxMovePower
+      name
+      pp
+      priority
+      serebiiPage
+      shortDesc
+      smogonPage
+      target
+      type
+      zMovePower
+      basePower
+      bulbapediaPage
+      category
+      contestType
       desc
       isFieldMove
-      name
-      shortDesc
-      serebiiPage
-      smogonPage
-      bulbapediaPage
+      isGMax
+      isNonstandard
+      isZ
     }
   }
 `;
@@ -33,13 +54,26 @@ export const getFuzzyMoveName = gql`
 export const getFuzzyMoveWithFullData = gql`
   query ($move: String!, $take: Int, $reverse: Boolean) {
     getFuzzyMove(move: $move, take: $take, reverse: $reverse) {
+      accuracy
+      maxMovePower
+      name
+      pp
+      priority
+      serebiiPage
+      shortDesc
+      smogonPage
+      target
+      type
+      zMovePower
+      basePower
+      bulbapediaPage
+      category
+      contestType
       desc
       isFieldMove
-      name
-      shortDesc
-      serebiiPage
-      smogonPage
-      bulbapediaPage
+      isGMax
+      isNonstandard
+      isZ
     }
   }
 `;

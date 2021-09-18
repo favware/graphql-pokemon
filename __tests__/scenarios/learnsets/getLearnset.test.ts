@@ -1,4 +1,13 @@
-import { getLearnset } from '#test-utils/queries/learnsets';
+import {
+  getLearnset,
+  getLearnsetWithPokemonBacksprite,
+  getLearnsetWithPokemonColor,
+  getLearnsetWithPokemonNum,
+  getLearnsetWithPokemonShinyBackSprite,
+  getLearnsetWithPokemonShinySprite,
+  getLearnsetWithPokemonSpecies,
+  getLearnsetWithPokemonSprite
+} from '#test-utils/queries/learnsets';
 import { gCall } from '#test-utils/testUtils';
 
 describe('getLearnset', () => {
@@ -11,12 +20,6 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'charizard',
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/charizard.gif',
-        sprite: 'https://play.pokemonshowdown.com/sprites/ani/charizard.gif',
-        color: 'Red',
-        num: 6,
-        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/charizard.gif',
-        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/charizard.gif',
         tmMoves: [
           { name: 'fireblast', generation: 8 },
           { name: 'fireblast', generation: 7 },
@@ -45,12 +48,6 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'charizard',
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/charizard.gif',
-        sprite: 'https://play.pokemonshowdown.com/sprites/ani/charizard.gif',
-        color: 'Red',
-        num: 6,
-        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/charizard.gif',
-        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/charizard.gif',
         tmMoves: [
           { name: 'fireblast', generation: 8 },
           { name: 'fireblast', generation: 7 },
@@ -98,12 +95,6 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'charizard',
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/charizard.gif',
-        sprite: 'https://play.pokemonshowdown.com/sprites/ani/charizard.gif',
-        color: 'Red',
-        num: 6,
-        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/charizard.gif',
-        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/charizard.gif',
         tmMoves: [
           { name: 'fireblast', generation: 7 },
           { name: 'flamethrower', generation: 7 }
@@ -128,12 +119,6 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'dragonite',
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/dragonite.gif',
-        sprite: 'https://play.pokemonshowdown.com/sprites/ani/dragonite.gif',
-        color: 'Brown',
-        num: 149,
-        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/dragonite.gif',
-        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/dragonite.gif',
         tmMoves: [],
         virtualTransferMoves: [],
         dreamworldMoves: [],
@@ -147,7 +132,25 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and event move and custom generation request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid pokemon and tutor move and custom generation request THEN returns Learnset WITH all data', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnset,
+        variableValues: { pokemon: 'pikachu', moves: ['risingvoltage'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        species: 'pikachu',
+        tmMoves: [],
+        virtualTransferMoves: [],
+        dreamworldMoves: [],
+        eggMoves: [],
+        eventMoves: [],
+        levelUpMoves: [],
+        tutorMoves: [{ name: 'risingvoltage', generation: 8 }]
+      });
+    });
+
+    test('GIVEN valid pokemon and egg move and custom generation request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'bunnelby', moves: ['defensecurl'], generation: 6 }
@@ -155,12 +158,6 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'bunnelby',
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/bunnelby.gif',
-        sprite: 'https://play.pokemonshowdown.com/sprites/ani/bunnelby.gif',
-        color: 'Brown',
-        num: 659,
-        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/bunnelby.gif',
-        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/bunnelby.gif',
         tmMoves: [],
         virtualTransferMoves: [],
         dreamworldMoves: [],
@@ -168,6 +165,152 @@ describe('getLearnset', () => {
         eventMoves: [],
         levelUpMoves: [],
         tutorMoves: []
+      });
+    });
+
+    test('GIVEN valid pokemon and dream world move and custom generation request THEN returns Learnset WITH all data', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnset,
+        variableValues: { pokemon: 'vulpix', moves: ['darkpulse'], generation: 5 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        species: 'vulpix',
+        tmMoves: [],
+        virtualTransferMoves: [],
+        dreamworldMoves: [{ name: 'darkpulse', generation: 5 }],
+        eggMoves: [],
+        eventMoves: [],
+        levelUpMoves: [],
+        tutorMoves: [{ name: 'darkpulse', generation: 5 }]
+      });
+    });
+  });
+
+  describe('Requests with shouldIncludePokemonDetails', () => {
+    test('GIVEN learnset WITH also requesting species THEN returns Learnset AND species', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonSpecies,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        species: 'victini',
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
+      });
+    });
+
+    test('GIVEN learnset WITH also requesting backsprite THEN returns Learnset AND backsprite', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonBacksprite,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/victini.gif',
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
+      });
+    });
+
+    test('GIVEN learnset WITH also requesting sprite THEN returns Learnset AND sprite', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonSprite,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        sprite: 'https://play.pokemonshowdown.com/sprites/ani/victini.gif',
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
+      });
+    });
+
+    test('GIVEN learnset WITH also requesting shiny backsprite THEN returns Learnset AND shiny backsprite', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonShinyBackSprite,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/victini.gif',
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
+      });
+    });
+
+    test('GIVEN learnset WITH also requesting shiny sprite THEN returns Learnset AND shiny sprite', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonShinySprite,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/victini.gif',
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
+      });
+    });
+
+    test('GIVEN learnset WITH also requesting num THEN returns Learnset AND num', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonNum,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        num: 494,
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
+      });
+    });
+
+    test('GIVEN learnset WITH also requesting color THEN returns Learnset AND color', async () => {
+      const { data } = await gCall<'getLearnset'>({
+        source: getLearnsetWithPokemonColor,
+        variableValues: { pokemon: 'victini', moves: ['searingshot'], generation: 8 }
+      });
+
+      expect(data.getLearnset).toEqual({
+        color: 'Yellow',
+        levelUpMoves: [
+          {
+            name: 'searingshot',
+            level: 63,
+            generation: 8
+          }
+        ]
       });
     });
   });

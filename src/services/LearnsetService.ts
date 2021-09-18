@@ -73,8 +73,6 @@ export class LearnsetService {
                   dreamworldMoves.push(this.createLearnsetMove(move, this.getMethodGeneration(method)));
                 }
                 break;
-              default:
-                break;
             }
           }
         }
@@ -189,7 +187,9 @@ export class LearnsetService {
   private static shouldIncludePokemonDetails(requestedFields: GraphQLSet<keyof Learnset>) {
     return (
       requestedFields.has('sprite') ||
+      requestedFields.has('backSprite') ||
       requestedFields.has('shinySprite') ||
+      requestedFields.has('shinyBackSprite') ||
       requestedFields.has('num') ||
       requestedFields.has('color') ||
       requestedFields.has('species')

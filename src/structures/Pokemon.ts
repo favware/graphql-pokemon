@@ -50,8 +50,8 @@ export class Pokemon {
   @Field(() => [String], { nullable: true, description: 'The egg groups a Pokémon is in' })
   public eggGroups?: string[];
 
-  @Field(() => String || Int, { nullable: true, description: 'The evolution level, or special method, for a Pokémon' })
-  public evolutionLevel?: string | number;
+  @Field(() => String, { nullable: true, description: 'The evolution level, or special method, for a Pokémon' })
+  public evolutionLevel?: string;
 
   @Field(() => [Pokemon], { nullable: true, description: 'The evolutions for a Pokémon, if any' })
   public evolutions?: this[];

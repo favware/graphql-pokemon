@@ -1,6 +1,7 @@
 import {
   getPokemonByNationalDexNumber,
   getPokemonSpecies,
+  getPokemonSpeciesWithSprites,
   getPokemonWithFullData,
   getPokemonWithFullDataAndEvolutions
 } from '#test-utils/queries/pokemon';
@@ -15,6 +16,68 @@ describe('getPokemon', () => {
       });
 
       expect(data.getPokemon.species).toEqual('dragonite');
+    });
+  });
+
+  describe('Sprite only requests', () => {
+    test('GIVEN CharizardMegaX THEN returns Species and Sprite', async () => {
+      const { data } = await gCall<'getPokemon'>({
+        source: getPokemonSpeciesWithSprites,
+        variableValues: { pokemon: 'charizardmegax' }
+      });
+
+      expect(data.getPokemon).toEqual({
+        species: 'charizard-mega-x',
+        sprite: 'https://play.pokemonshowdown.com/sprites/ani/charizard-megax.gif',
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/charizard-megax.gif',
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/charizard-megax.gif',
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/charizard-megax.gif'
+      });
+    });
+
+    test('GIVEN CharizardMegaY THEN returns Species and Sprite', async () => {
+      const { data } = await gCall<'getPokemon'>({
+        source: getPokemonSpeciesWithSprites,
+        variableValues: { pokemon: 'charizardmegay' }
+      });
+
+      expect(data.getPokemon).toEqual({
+        species: 'charizard-mega-y',
+        sprite: 'https://play.pokemonshowdown.com/sprites/ani/charizard-megay.gif',
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/charizard-megay.gif',
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/charizard-megay.gif',
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/charizard-megay.gif'
+      });
+    });
+
+    test("GIVEN Farfetch'd THEN returns Species and Sprite", async () => {
+      const { data } = await gCall<'getPokemon'>({
+        source: getPokemonSpeciesWithSprites,
+        variableValues: { pokemon: 'farfetchd' }
+      });
+
+      expect(data.getPokemon).toEqual({
+        species: "farfetch'd",
+        sprite: 'https://play.pokemonshowdown.com/sprites/ani/farfetchd.gif',
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/farfetchd.gif',
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/farfetchd.gif',
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/farfetchd.gif'
+      });
+    });
+
+    test("GIVEN Sirfetch'd THEN returns Species and Sprite", async () => {
+      const { data } = await gCall<'getPokemon'>({
+        source: getPokemonSpeciesWithSprites,
+        variableValues: { pokemon: 'sirfetchd' }
+      });
+
+      expect(data.getPokemon).toEqual({
+        species: "sirfetch'd",
+        sprite: 'https://play.pokemonshowdown.com/sprites/ani/sirfetchd.gif',
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/sirfetchd.gif',
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/sirfetchd.gif',
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/sirfetchd.gif'
+      });
     });
   });
 

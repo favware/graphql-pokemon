@@ -144,6 +144,15 @@ describe('getMove', () => {
 
       expect(data.getMove.zMovePower).toEqual(200);
     });
+
+    test('GIVEN move which cannot be Z-Move THEN returns Z-Power: 0', async () => {
+      const { data } = await gCall<'getMove'>({
+        source: getMoveZPower,
+        variableValues: { move: 'pikapapow' }
+      });
+
+      expect(data.getMove.zMovePower).toEqual(0);
+    });
   });
 
   describe('Error Requests', () => {

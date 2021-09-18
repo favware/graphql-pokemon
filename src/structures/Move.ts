@@ -72,7 +72,6 @@ export class Move {
   public type!: string;
 
   @Field(() => Int, {
-    nullable: true,
     description: 'The power this move will have when used with its Z-move equivalent'
   })
   public zMovePower!: number;

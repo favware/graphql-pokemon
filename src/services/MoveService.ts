@@ -93,8 +93,8 @@ export class MoveService {
     if (basePowerAsNumber === 130) return 195;
     if (basePowerAsNumber >= 140) return 200;
 
-    // If somehow none of these cases matched we return Infinity, just to ensure it gets caught more easily
-    return Infinity;
+    // If none of the cases matched (should never be the case) then return 0
+    return 0;
   }
 }
 

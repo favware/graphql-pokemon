@@ -1703,7 +1703,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'leek',
     {
-      desc: 'If held by a FarfetchÔÇÖd or SirfetchÔÇÖd, its critical hit ratio is raised by 2 stages.',
+      desc: "If held by a Farfetch'd or Sirfetch'd, its critical hit ratio is raised by 2 stages.",
       gen: 8,
       name: 'Leek'
     }
@@ -3198,7 +3198,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'stick',
     {
-      desc: 'If held by a FarfetchÔÇÖd, its critical hit ratio is raised by 2 stages.',
+      desc: "If held by a Farfetch'd, its critical hit ratio is raised by 2 stages.",
       gen: 2,
       isNonstandard: 'Past',
       name: 'Stick'
@@ -3613,7 +3613,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'autograph',
     {
-      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, ÔÇ£Good luck!ÔÇØ',
+      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, "Good luck!"',
       gen: 7,
       keyItem: true,
       name: 'Autograph'
@@ -4072,7 +4072,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'foragebag',
     {
-      desc: '\tA bag to carry ingredients gathered during MallowÔÇÖs trial in the jungle.',
+      desc: "A bag to carry ingredients gathered during Mallow's trial in the jungle.",
       gen: 7,
       keyItem: true,
       name: 'foragebag',
@@ -4600,7 +4600,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'mysticticket',
     {
-      desc: '\tA ticket required to board the ship to Navel Rock. It glows with a mystic light.',
+      desc: 'A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
       gen: 3,
       isNonstandard: 'Past',
       keyItem: true,
@@ -5242,7 +5242,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'sootsack',
     {
-      desc: '\tA sack used to gather and hold volcanic ash.',
+      desc: 'A sack used to gather and hold volcanic ash.',
       gen: 3,
       isNonstandard: 'Past',
       keyItem: true,

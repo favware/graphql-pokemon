@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.0.2](https://github.com/favware/graphql-pokemon/compare/v6.0.1...v6.0.2) (2021-09-19)
+
+
+### Bug Fixes
+
+* **Type:** properly mark properties of `Type` as non-nullable ([467be09](https://github.com/favware/graphql-pokemon/commit/467be09872a8368213a042ee5182fc8734239b91))
+
 ### [6.0.1](https://github.com/favware/graphql-pokemon/compare/v6.0.0...v6.0.1) (2021-09-19)
 
 

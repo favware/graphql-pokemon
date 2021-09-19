@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.0.1](https://github.com/favware/graphql-pokemon/compare/v6.0.0...v6.0.1) (2021-09-19)
+
+
+### Bug Fixes
+
+* fixed 1 remaining `pokemon` -> `Pokémon` ([82d02ef](https://github.com/favware/graphql-pokemon/commit/82d02ef4f4a59b8bc8196d9a9bc262e7aeebfff3))
+* fixed various incorrect characters ([1fe9195](https://github.com/favware/graphql-pokemon/commit/1fe9195e9cf1250131ef880eaa4c587d8be2bbcb))
+
 ## [6.0.0](https://github.com/favware/graphql-pokemon/compare/v5.7.1...v6.0.0) (2021-09-19)
 
 

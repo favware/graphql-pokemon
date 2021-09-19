@@ -26,7 +26,7 @@ export class LearnsetResolver {
 
     if (graphqlObject === undefined) {
       throw new Error(
-        `Failed to get learnsets for the combination of pokemon "${args.pokemon}", and move(s) "${args.moves.join(', ')}" ${
+        `Failed to get learnsets for the combination of Pokémon "${args.pokemon}", and move(s) "${args.moves.join(', ')}" ${
           args.generation ? `with generation filter set to ${args.generation}` : ''
         }`
       );

@@ -1,9 +1,8 @@
-/* eslint-disable max-len*/
-import GraphQLCollection from '#utils/GraphQLCollection';
-import type { Pokemon } from '#utils/pokemon';
+import { GraphQLCollection } from '#utils/GraphQLCollection';
+import type { PokemonTypes } from '#utils/pokemon';
 
 /** The moves in Pokémon */
-export default new GraphQLCollection<string, Pokemon.Move>([
+export default new GraphQLCollection<string, PokemonTypes.Move>([
   [
     '10000000voltthunderbolt',
     {
@@ -19,7 +18,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Very high critical hit ratio.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['10mv', '10mvt', 'zpikachucap', 'zthunderbolt']
     }
   ],
   [
@@ -101,7 +101,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      aliases: ['zpoison']
     }
   ],
   [
@@ -265,7 +266,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      aliases: ['zfighting']
     }
   ],
   [
@@ -651,7 +653,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 1,
       shortDesc: "Lowers the target's Attack by 1.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      aliases: ['bde']
     }
   ],
   [
@@ -732,7 +735,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'User switches, passing stat changes and more.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['bp', 'bpass']
     }
   ],
   [
@@ -826,7 +830,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'User loses 50% max HP. Maximizes Attack.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['bd']
     }
   ],
   [
@@ -909,7 +914,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      aliases: ['zdark']
     }
   ],
   [
@@ -991,7 +997,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      aliases: ['zgrass']
     }
   ],
   [
@@ -1187,7 +1194,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      aliases: ['bb']
     }
   ],
   [
@@ -1236,7 +1244,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['znormal']
     }
   ],
   [
@@ -1481,7 +1490,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk and Sp. Def by 1.",
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      aliases: ['cm']
     }
   ],
   [
@@ -1531,7 +1541,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['zpikachu', 'zvolttackle']
     }
   ],
   [
@@ -1713,7 +1724,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises the user's Atk/Def/SpAtk/SpDef/Spe by 1.",
       target: 'Adjacent Foes',
-      type: 'Dragon'
+      type: 'Dragon',
+      aliases: ['clangorous', 'cs', 'zclangingscales', 'zkommoo']
     }
   ],
   [
@@ -1747,7 +1759,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      aliases: ['cc']
     }
   ],
   [
@@ -1878,7 +1891,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      aliases: ['zrock']
     }
   ],
   [
@@ -1959,7 +1973,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      aliases: ['zsteel']
     }
   ],
   [
@@ -2251,7 +2266,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Darkrai: Puts the foe(s) to sleep.',
       target: 'Adjacent Foes',
-      type: 'Dark'
+      type: 'Dark',
+      aliases: ['dv']
     }
   ],
   [
@@ -2364,7 +2380,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'If an opponent knocks out the user, it also faints.',
       target: 'Self',
-      type: 'Ghost'
+      type: 'Ghost',
+      aliases: ['dbond']
     }
   ],
   [
@@ -2397,7 +2414,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      aliases: ['zdragon']
     }
   ],
   [
@@ -2715,7 +2733,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises the user's Attack and Speed by 1.",
       target: 'Self',
-      type: 'Dragon'
+      type: 'Dragon',
+      aliases: ['dd']
     }
   ],
   [
@@ -3024,7 +3043,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. Power doubles on Dig.',
       target: 'All Adjacent',
-      type: 'Ground'
+      type: 'Ground',
+      aliases: ['eq']
     }
   ],
   [
@@ -3362,7 +3382,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises user's Atk, Def, SpA, SpD, and Spe by 2.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['ee', 'extreme', 'zeevee', 'zevo', 'zlastresort']
     }
   ],
   [
@@ -3379,7 +3400,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 2,
       shortDesc: 'Nearly always goes first.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['espeed']
     }
   ],
   [
@@ -3542,7 +3564,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      aliases: ['faintattack']
     }
   ],
   [
@@ -4265,16 +4288,18 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     'frustration',
     {
       accuracy: 100,
-      basePower: '0',
+      basePower: "(255 - user's Happiness) * 2/5",
       category: 'Physical',
       contestType: 'Cute',
+      desc: "Power is equal to the greater of ((255 - user's Happiness) * 2/5), rounded down, or 1.",
       isNonstandard: 'Past',
       name: 'Frustration',
       pp: 20,
       priority: 0,
       shortDesc: 'Max 102 power at minimum Happiness.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      zMovePower: 160
     }
   ],
   [
@@ -4438,7 +4463,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Summons Psychic Terrain.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      aliases: ['genesis', 'gs', 'zmew']
     }
   ],
   [
@@ -4502,7 +4528,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['zelectric']
     }
   ],
   [
@@ -5299,7 +5326,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Does damage equal to 3/4 target's current HP.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      aliases: ['goa', 'guardian', 'znaturesmadness', 'ztapu']
     }
   ],
   [
@@ -5701,15 +5729,320 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Clever',
-      desc: '',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Normal',
+      aliases: ['hp']
+    }
+  ],
+  [
+    'hiddenpowerbug',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Bug',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Bug',
+      aliases: ['hpbug']
+    }
+  ],
+  [
+    'hiddenpowerdark',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Dark',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Dark',
+      aliases: ['hpdark']
+    }
+  ],
+  [
+    'hiddenpowerdragon',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Dragon',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Dragon',
+      aliases: ['hpdragon']
+    }
+  ],
+  [
+    'hiddenpowerelectric',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Electric',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Electric',
+      aliases: ['hpelectric']
+    }
+  ],
+  [
+    'hiddenpowerfighting',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Fighting',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'fighting',
+      aliases: ['hpfighting']
+    }
+  ],
+  [
+    'hiddenpowerfire',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Fire',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Fire',
+      aliases: ['hpfire']
+    }
+  ],
+  [
+    'hiddenpowerflying',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Flying',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Flying',
+      aliases: ['hpflying']
+    }
+  ],
+  [
+    'hiddenpowerghost',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Ghost',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Ghost',
+      aliases: ['hpghost']
+    }
+  ],
+  [
+    'hiddenpowergrass',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Grass',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Grass',
+      aliases: ['hpgrass']
+    }
+  ],
+  [
+    'hiddenpowerground',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Ground',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Ground',
+      aliases: ['hpground']
+    }
+  ],
+  [
+    'hiddenpowerice',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Ice',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Ice',
+      aliases: ['hpice']
+    }
+  ],
+  [
+    'hiddenpowerpoison',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Poison',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Poison',
+      aliases: ['hppoison']
+    }
+  ],
+  [
+    'hiddenpowerpsychic',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Psychic',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Psychic',
+      aliases: ['hppsychic']
+    }
+  ],
+  [
+    'hiddenpowerrock',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Rock',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Rock',
+      aliases: ['hprock']
+    }
+  ],
+  [
+    'hiddenpowersteel',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
+      isNonstandard: 'Past',
+      maxMovePower: 80,
+      name: 'Hidden Power Steel',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Varies in type based on the user's IVs.",
+      target: 'Normal',
+      type: 'Steel',
+      aliases: ['hpsteel']
+    }
+  ],
+  [
+    'hiddenpowerwater',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      contestType: 'Clever',
+      desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
       isNonstandard: 'Past',
       maxMovePower: 80,
       name: 'Hidden Power Water',
       pp: 15,
       priority: 0,
-      shortDesc: '',
+      shortDesc: "Varies in type based on the user's IVs.",
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      aliases: ['hpwater']
     }
   ],
   [
@@ -5742,7 +6075,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'User is hurt by 50% of its max HP if it misses.',
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      aliases: ['hijumpkick', 'hjk']
     }
   ],
   [
@@ -5922,7 +6256,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      aliases: ['zwater']
     }
   ],
   [
@@ -6253,7 +6588,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      aliases: ['zfire']
     }
   ],
   [
@@ -6712,7 +7048,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      aliases: ['lets', 'lsf', 'zmimikyu', 'zplayrough']
     }
   ],
   [
@@ -6761,7 +7098,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Physical if user's Atk > Sp. Atk. Ignores Abilities.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      aliases: ['light', 'ltbts', 'znecrozma', 'zphotongeyser', 'zultranecrozma']
     }
   ],
   [
@@ -7129,7 +7467,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Damage doubles if the target used Minimize.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      aliases: ['malicious', 'moonsault', 'zdarkestlariat', 'zincineroar']
     }
   ],
   [
@@ -7175,7 +7514,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1 Speed.',
       target: 'Adjacent Foes',
-      type: 'Flying'
+      type: 'Flying',
+      aliases: ['maxflying']
     }
   ],
   [
@@ -7190,7 +7530,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1 Sp. Def.',
       target: 'Adjacent Foes',
-      type: 'Dark'
+      type: 'Dark',
+      aliases: ['maxdark']
     }
   ],
   [
@@ -7205,7 +7546,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Sunny Day.',
       target: 'Adjacent Foes',
-      type: 'Fire'
+      type: 'Fire',
+      aliases: ['maxfire']
     }
   ],
   [
@@ -7220,7 +7562,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1 Sp. Atk.',
       target: 'Adjacent Foes',
-      type: 'Bug'
+      type: 'Bug',
+      aliases: ['maxbug']
     }
   ],
   [
@@ -7235,7 +7578,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Rain Dance.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      aliases: ['maxwater']
     }
   ],
   [
@@ -7250,7 +7594,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Protects user from moves & Max Moves this turn.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['maxprotect', 'maxstatus']
     }
   ],
   [
@@ -7281,7 +7626,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Hail.',
       target: 'Adjacent Foes',
-      type: 'Ice'
+      type: 'Ice',
+      aliases: ['maxice']
     }
   ],
   [
@@ -7296,7 +7642,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1 Attack.',
       target: 'Adjacent Foes',
-      type: 'Fighting'
+      type: 'Fighting',
+      aliases: ['maxfighting']
     }
   ],
   [
@@ -7311,7 +7658,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Electric Terrain.',
       target: 'Adjacent Foes',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['maxelectric']
     }
   ],
   [
@@ -7326,7 +7674,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Psychic Terrain.',
       target: 'Adjacent Foes',
-      type: 'Psychic'
+      type: 'Psychic',
+      aliases: ['maxpsychic']
     }
   ],
   [
@@ -7341,7 +7690,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1 Sp. Atk.',
       target: 'Adjacent Foes',
-      type: 'Poison'
+      type: 'Poison',
+      aliases: ['maxpoison']
     }
   ],
   [
@@ -7356,7 +7706,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Grassy Terrain.',
       target: 'Adjacent Foes',
-      type: 'Grass'
+      type: 'Grass',
+      aliases: ['maxgrass']
     }
   ],
   [
@@ -7371,7 +7722,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1 Defense.',
       target: 'Adjacent Foes',
-      type: 'Ghost'
+      type: 'Ghost',
+      aliases: ['maxghost']
     }
   ],
   [
@@ -7386,7 +7738,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1 Sp. Def.',
       target: 'Adjacent Foes',
-      type: 'Groudon'
+      type: 'Groudon',
+      aliases: ['maxground']
     }
   ],
   [
@@ -7401,7 +7754,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Sandstorm.',
       target: 'Adjacent Foes',
-      type: 'Rock'
+      type: 'Rock',
+      aliases: ['maxrock']
     }
   ],
   [
@@ -7416,7 +7770,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Misty Terrain.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      aliases: ['maxfairy']
     }
   ],
   [
@@ -7431,7 +7786,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1 Defense.',
       target: 'Adjacent Foes',
-      type: 'Steel'
+      type: 'Steel',
+      aliases: ['maxsteel']
     }
   ],
   [
@@ -7446,7 +7802,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1 Speed.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['maxnormal']
     }
   ],
   [
@@ -7461,7 +7818,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1 Attack.',
       target: 'Adjacent Foes',
-      type: 'Dragon'
+      type: 'Dragon',
+      aliases: ['maxdragon']
     }
   ],
   [
@@ -7578,7 +7936,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Ignores the Abilities of other Pokémon.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      aliases: ['menacing', 'mmm', 'zdawnwingsnecrozma', 'zlunala', 'zmoongeistbeam']
     }
   ],
   [
@@ -8095,7 +8454,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk by 2.",
       target: 'Self',
-      type: 'Dark'
+      type: 'Dark',
+      aliases: ['np']
     }
   ],
   [
@@ -8176,7 +8536,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      aliases: ['zghost']
     }
   ],
   [
@@ -8210,7 +8571,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Does damage equal to the user's level.",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      zMovePower: 100
     }
   ],
   [
@@ -8339,7 +8701,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      aliases: ['oceanic', 'oo', 'zprimarina', 'zsparklingaria']
     }
   ],
   [
@@ -8708,7 +9071,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Normal moves become Electric type this turn.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['pfists']
     }
   ],
   [
@@ -8741,7 +9105,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      aliases: ['playaround']
     }
   ],
   [
@@ -9049,7 +9414,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "100% chance to raise the user's Attack by 1.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      aliases: ['glowpunch', 'pup']
     }
   ],
   [
@@ -9311,7 +9677,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['pp', 'pulverizing', 'zgigaimpact', 'zsnorlax']
     }
   ],
   [
@@ -9437,7 +9804,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk, Sp. Def, Speed by 1.",
       target: 'Self',
-      type: 'Bug'
+      type: 'Bug',
+      aliases: ['qd']
     }
   ],
   [
@@ -9500,7 +9868,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Free user from hazards/binding/Leech Seed;+1 Spe.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['spin']
     }
   ],
   [
@@ -9684,7 +10053,7 @@ export default new GraphQLCollection<string, Pokemon.Move>([
     'return',
     {
       accuracy: 100,
-      basePower: '0',
+      basePower: "(user's Happiness * 2/5)",
       category: 'Physical',
       contestType: 'Cute',
       desc: "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
@@ -9694,7 +10063,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Max 102 power at maximum Happiness.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      zMovePower: 160
     }
   ],
   [
@@ -10156,7 +10526,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      aliases: ['zbug']
     }
   ],
   [
@@ -10285,7 +10656,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Ignores the Abilities of other Pokémon.',
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      aliases: ['searing', 'sss', 'zduskmanenecrozma', 'zsolgaleo', 'zsunsteelstrike']
     }
   ],
   [
@@ -10369,7 +10741,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Does damage equal to the user's level.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      zMovePower: 100
     }
   ],
   [
@@ -10535,7 +10908,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      aliases: ['zpsychic']
     }
   ],
   [
@@ -10567,7 +10941,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: '20% poison. Phys+contact if it would be stronger.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      aliases: ['sideshellarm', 'ssa']
     }
   ],
   [
@@ -10729,7 +11104,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      aliases: ['sar', 'sinister', 'zdecidueye', 'zspiritshackle']
     }
   ],
   [
@@ -11255,7 +11631,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      aliases: ['soul', 'soulstealingsevenstarstrike', 'ss7ss', 'sssss', 'zmarshadow', 'zspectralthief']
     }
   ],
   [
@@ -11516,7 +11893,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Ends the effects of terrain.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      aliases: ['splintered', 'stormshards', 'zlycanroc', 'zstoneedge']
     }
   ],
   [
@@ -11579,7 +11957,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Hurts foes on switch-in. Factors Rock weakness.',
       target: "Foe's Side",
-      type: 'Rock'
+      type: 'Rock',
+      aliases: ['rocks', 'sr']
     }
   ],
   [
@@ -11675,7 +12054,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Lowers Speed of grounded foes by 1 on switch-in.',
       target: "Foe's Side",
-      type: 'Bug'
+      type: 'Bug',
+      aliases: ['web']
     }
   ],
   [
@@ -11708,7 +12088,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: '100% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['ss', 'stoked', 'zraichu']
     }
   ],
   [
@@ -11758,7 +12139,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      aliases: ['se']
     }
   ],
   [
@@ -11951,7 +12333,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'User takes 1/4 its max HP to put in a Substitute.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['sub']
     }
   ],
   [
@@ -11968,7 +12351,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      aliases: ['zice']
     }
   ],
   [
@@ -12080,7 +12464,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Flying'
+      type: 'Flying',
+      aliases: ['zflying']
     }
   ],
   [
@@ -12228,7 +12613,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Raises the user's Attack by 2.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['sd']
     }
   ],
   [
@@ -12452,7 +12838,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Ground'
+      type: 'Ground',
+      aliases: ['zground']
     }
   ],
   [
@@ -12713,7 +13100,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['twave']
     }
   ],
   [
@@ -12730,7 +13118,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      aliases: ['tbolt']
     }
   ],
   [
@@ -12806,7 +13195,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Poisons grounded foes on switch-in. Max 2 layers.',
       target: "Foe's Side",
-      type: 'Poison'
+      type: 'Poison',
+      aliases: ['tspikes']
     }
   ],
   [
@@ -12884,7 +13274,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: -7,
       shortDesc: 'Goes last. For 5 turns, turn order is reversed.',
       target: 'All',
-      type: 'Psychic'
+      type: 'Psychic',
+      aliases: ['tr', 'troom']
     }
   ],
   [
@@ -12996,7 +13387,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      aliases: ['zfairy']
     }
   ],
   [
@@ -13160,7 +13552,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      aliases: ['vicegrip']
     }
   ],
   [
@@ -13459,7 +13852,8 @@ export default new GraphQLCollection<string, Pokemon.Move>([
       priority: 0,
       shortDesc: 'Burns the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      aliases: ['wow']
     }
   ],
   [

@@ -1,4 +1,8 @@
-export namespace Pokemon {
+export namespace PokemonTypes {
+  interface AliasEntry {
+    aliases?: string[];
+  }
+
   export interface Types {
     bug: number;
 
@@ -73,7 +77,7 @@ export namespace Pokemon {
     percentageWithOrdinaryPokeballAtFullHealth: string;
   }
 
-  export interface DexEntry {
+  export interface DexEntry extends AliasEntry {
     abilities: Abilities;
 
     baseForme?: string;
@@ -133,7 +137,7 @@ export namespace Pokemon {
     weightkg: number;
   }
 
-  export interface Ability {
+  export interface Ability extends AliasEntry {
     desc?: string;
 
     isFieldAbility?: string;
@@ -143,7 +147,7 @@ export namespace Pokemon {
     shortDesc: string;
   }
 
-  export interface Item {
+  export interface Item extends AliasEntry {
     desc: string;
 
     gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
@@ -159,7 +163,7 @@ export namespace Pokemon {
     specialSprite?: string;
   }
 
-  export interface Move {
+  export interface Move extends AliasEntry {
     accuracy: number;
 
     basePower: string;
@@ -252,4 +256,4 @@ export namespace Pokemon {
     | 'All';
 }
 
-export default Pokemon;
+export default PokemonTypes;

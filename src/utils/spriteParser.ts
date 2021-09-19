@@ -1,4 +1,4 @@
-import Util from '#utils/util';
+import { toLowerSingleWordCase } from '#utils/util';
 
 interface ParseSpeciesForSpriteParams {
   backSprite?: boolean;
@@ -19,7 +19,6 @@ interface ParseSpeciesForSpriteParams {
 }
 
 const MegaSpriteRegex = /^(.+)-(x|y)$/g;
-const LeekDuckRegex = /^(farfetch|sirfetch)'(d)(-galar)?$/g;
 const SpriteUrls = {
   baseUrl: 'https://play.pokemonshowdown.com/sprites/',
   animatedShinyBackSprites: 'ani-back-shiny/',
@@ -44,15 +43,11 @@ export const parseSpeciesForSprite = ({
   if (specialSprite) return specialSprite;
 
   if (!baseSpecies) {
-    pokemonName = Util.toLowerSingleWordCase(pokemonName);
+    pokemonName = toLowerSingleWordCase(pokemonName);
   }
 
   if (pokemonName.match(MegaSpriteRegex)) {
     pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
-  }
-
-  if (pokemonName.match(LeekDuckRegex)) {
-    pokemonName = pokemonName.replace(LeekDuckRegex, '$1$2$3');
   }
 
   const pokemonGif = `${pokemonName}.gif`;

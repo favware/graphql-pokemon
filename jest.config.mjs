@@ -29,5 +29,25 @@ export default async () => ({
     '<rootDir>/src/index.ts',
     '<rootDir>/src/server.ts',
     '<rootDir>/src/defaultPlaygroundTabs.ts'
-  ]
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 99,
+      functions: 99,
+      lines: 99,
+      statements: 99
+    },
+    './src/resolvers/*.ts': {
+      branches: 65,
+      functions: 100,
+      lines: 75,
+      statements: 75
+    },
+    './src/utils/getRequestedFields.ts': {
+      branches: 85,
+      functions: 100,
+      lines: 90,
+      statements: 90
+    }
+  }
 });

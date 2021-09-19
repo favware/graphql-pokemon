@@ -1,6 +1,6 @@
 import type { MiddlewareOptions } from '@apollographql/graphql-playground-html';
 
-const isDev = process.platform === 'win32' || process.platform === 'darwin';
+const isDev = process.env.NODE_ENV !== 'production';
 
 const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
   {
@@ -8,7 +8,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     query: [
       '{',
-      '\tgetPokemonDetailsByName(pokemon: dragonite reverse: true take: 1) {',
+      '\tgetPokemon(pokemon: dragonite reverseFlavorTexts: true takeFlavorTexts: 1) {',
       '\t\tnum',
       '\t\tspecies',
       '\t\ttypes',
@@ -40,8 +40,8 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "mewtwo"', '}'].join('\n'),
     query: [
-      'query($pokemon: Pokemon!) {',
-      '\tgetPokemonDetailsByName(pokemon:$pokemon reverse: true, take:1) {',
+      'query($pokemon: PokemonEnum!) {',
+      '\tgetPokemon(pokemon: $pokemon reverseFlavorTexts: true takeFlavorTexts: 1) {',
       '\t\tnum',
       '\t\tspecies',
       '\t\ttypes',
@@ -73,7 +73,7 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
     endpoint: isDev ? `http://localhost:${process.env.PORT || 4000}` : 'https://graphqlpokemon.favware.tech/',
     variables: ['{', '  "pokemon": "arceus",', '  "reverse": true,', '  "take": 1', '}'].join('\n'),
     query: [
-      'fragment data on DexDetails {',
+      'fragment data on Pokemon {',
       '\t\tnum',
       '\t\tspecies',
       '\t\ttypes',
@@ -98,8 +98,8 @@ const defaultTabs: NonNullable<MiddlewareOptions['tabs']> = [
       '\t\tbulbapediaPage',
       '}',
       '',
-      'query($pokemon: Pokemon! $reverse: Boolean! $take: Int!) {',
-      '\tgetPokemonDetailsByName(pokemon:$pokemon reverse: $reverse, take: $take) {',
+      'query($pokemon: PokemonEnum! $reverse: Boolean! $take: Int!) {',
+      '\tgetPokemon(pokemon: $pokemon reverseFlavorTexts: $reverse takeFlavorTexts: $take) {',
       '\t\t...data',
       '\t}',
       '}'

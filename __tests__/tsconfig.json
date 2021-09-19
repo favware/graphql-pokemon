@@ -17,6 +17,6 @@
       "#root/*": ["../src/*"]
     }
   },
-  "include": [".", "../src/**/*"],
+  "include": ["."],
   "references": [{ "path": "../src" }]
 }

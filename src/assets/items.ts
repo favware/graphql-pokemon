@@ -1,8 +1,8 @@
-import GraphQLCollection from '#utils/GraphQLCollection';
-import type { Pokemon } from '#utils/pokemon';
+import { GraphQLCollection } from '#utils/GraphQLCollection';
+import type { PokemonTypes } from '#utils/pokemon';
 
 /** The item in Pokémon */
-export default new GraphQLCollection<string, Pokemon.Item>([
+export default new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'abomasite',
     {
@@ -145,7 +145,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
       gen: 6,
-      name: 'Assault Vest'
+      name: 'Assault Vest',
+      aliases: ['assvest', 'av']
     }
   ],
   [
@@ -458,7 +459,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Holder wakes up if it is asleep. Single use.',
       gen: 3,
-      name: 'Chesto Berry'
+      name: 'Chesto Berry',
+      aliases: ['chesto']
     }
   ],
   [
@@ -490,7 +492,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
       gen: 3,
-      name: 'Choice Band'
+      name: 'Choice Band',
+      aliases: ['band', 'cb']
     }
   ],
   [
@@ -498,7 +501,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Holder's Speed is 1.5x, but it can only select the first move it executes.",
       gen: 4,
-      name: 'Choice Scarf'
+      name: 'Choice Scarf',
+      aliases: ['scarf']
     }
   ],
   [
@@ -506,7 +510,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
       gen: 4,
-      name: 'Choice Specs'
+      name: 'Choice Specs',
+      aliases: ['specs']
     }
   ],
   [
@@ -514,7 +519,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Halves damage taken from a supereffective Fighting-type attack. Single use.',
       gen: 4,
-      name: 'Chople Berry'
+      name: 'Chople Berry',
+      aliases: ['chople']
     }
   ],
   [
@@ -590,7 +596,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
       gen: 4,
-      name: 'Custap Berry'
+      name: 'Custap Berry',
+      aliases: ['custap']
     }
   ],
   [
@@ -912,7 +919,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Holder's attacks that are super effective against the target do 1.2x damage.",
       gen: 4,
-      name: 'Expert Belt'
+      name: 'Expert Belt',
+      aliases: ['ebelt']
     }
   ],
   [
@@ -955,7 +963,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
       gen: 5,
       isNonstandard: 'Past',
-      name: 'Fighting Gem'
+      name: 'Fighting Gem',
+      aliases: ['fightgem']
     }
   ],
   [
@@ -1059,7 +1068,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
       desc: "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
       gen: 5,
       isNonstandard: 'Past',
-      name: 'Flying Gem'
+      name: 'Flying Gem',
+      aliases: ['flightgem']
     }
   ],
   [
@@ -1092,7 +1102,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
       gen: 4,
-      name: 'Focus Sash'
+      name: 'Focus Sash',
+      aliases: ['sash']
     }
   ],
   [
@@ -1411,7 +1422,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'When switching in, the holder is unaffected by hazards on its side of the field.',
       gen: 8,
-      name: 'Heavy-Duty Boots'
+      name: 'Heavy-Duty Boots',
+      aliases: ['boots', 'hdb']
     }
   ],
   [
@@ -1701,7 +1713,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'At the end of every turn, holder restores 1/16 of its max HP.',
       gen: 2,
-      name: 'Leftovers'
+      name: 'Leftovers',
+      aliases: ['lefties']
     }
   ],
   [
@@ -1709,7 +1722,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
       gen: 3,
-      name: 'Leppa Berry'
+      name: 'Leppa Berry',
+      aliases: ['leppa']
     }
   ],
   [
@@ -1733,7 +1747,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
       gen: 4,
-      name: 'Life Orb'
+      name: 'Life Orb',
+      aliases: ['lo', 'lorb']
     }
   ],
   [
@@ -1800,7 +1815,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Holder cures itself if it has a non-volatile status or is confused. Single use.',
       gen: 3,
-      name: 'Lum Berry'
+      name: 'Lum Berry',
+      aliases: ['lum']
     }
   ],
   [
@@ -2207,7 +2223,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Halves damage taken from a supereffective Fire-type attack. Single use.',
       gen: 4,
-      name: 'Occa Berry'
+      name: 'Occa Berry',
+      aliases: ['occa']
     }
   ],
   [
@@ -2315,7 +2332,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 3,
-      name: 'Petaya Berry'
+      name: 'Petaya Berry',
+      aliases: ['petaya']
     }
   ],
   [
@@ -2858,7 +2876,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Holder is immune to powder moves and damage from Sandstorm or Hail.',
       gen: 6,
-      name: 'Safety Goggles'
+      name: 'Safety Goggles',
+      aliases: ['goggles']
     }
   ],
   [
@@ -2875,7 +2894,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      name: 'Salac Berry'
+      name: 'Salac Berry',
+      aliases: ['salac']
     }
   ],
   [
@@ -3000,7 +3020,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Restores 1/4 max HP when at 1/2 max HP or less. Single use.',
       gen: 3,
-      name: 'Sitrus Berry'
+      name: 'Sitrus Berry',
+      aliases: ['sitrus']
     }
   ],
   [
@@ -3458,7 +3479,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.',
       gen: 6,
-      name: 'Weakness Policy'
+      name: 'Weakness Policy',
+      aliases: ['wp']
     }
   ],
   [
@@ -3515,7 +3537,8 @@ export default new GraphQLCollection<string, Pokemon.Item>([
     {
       desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
       gen: 4,
-      name: 'Yache Berry'
+      name: 'Yache Berry',
+      aliases: ['yache']
     }
   ],
   [

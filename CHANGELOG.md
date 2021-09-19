@@ -2,6 +2,74 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/favware/graphql-pokemon/compare/v5.7.1...v6.0.0) (2021-09-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* removed `DexEntry.evos` property, if you want to get just the evolution names use `evolutions { species }`
+* removed `DexEntry.prevo` property, if you want to get just the evolution names use `preevolutions { species }`
+* removed `DexEntry` structure, most of its properties are merged into `DexDetails`
+* removed `getAbilityByFuzzy`
+* removed `getAbilityByName`
+* removed `getDexEntries`
+* removed `getDexEntryByDexNumber`
+* removed `getDexEntryBySpeciesName`
+* removed `getItemByFuzzy`
+* removed `getItemByName`
+* removed `getMoveByFuzzy`
+* removed `getMoveByName`
+* removed `getTypeByName`
+* removed `take`, `skip` and `reverse` from `getPokemon`. They are renamed to `takeFlavorTexts` (default: 1), `offsetFlavorTexts` (default: 0), and `reverseFlavorTexts` (default: true)
+* renamed `Abilities` enum to `AbilitiesEnum`
+* renamed `AbilityPaginatedArgs` to `FuzzyAbilityArgs`
+* renamed `ExactPokemonPaginatedArgs` to `PokemonArgs`
+* renamed `getAbilityDetailsByFuzzy` to `getFuzzyAbility`
+* renamed `getAbilityDetailsByName` to `getAbility`
+* renamed `getItemDetailsByFuzzy` to `getFuzzyItem`
+* renamed `getItemDetailsByName` to `getItem`
+* renamed `getMoveDetailsByFuzzy` to `getFuzzyMove`
+* renamed `getMoveDetailsByName` to `getMove`
+* renamed `getPokemonDetails` to `getPokemon`
+* renamed `getPokemonDetailsByFuzzy` to `getFuzzyPokemon`
+* renamed `getPokemonDetailsByName` to `getPokemonByName` and `getPokemonBySpecies`
+* renamed `getPokemonDetailsByNumber` to `getPokemonByDexNumber`
+* renamed `getPokemonLearnset` to `getLearnset`
+* renamed `getPokemonLearnsetByFuzzy` to `getFuzzyLearnset`
+* renamed `ItemPaginatedArgs` to `FuzzyItemArgs`
+* renamed `Items` enum to `ItemsEnum`
+* renamed `LearnsetFuzzyArgs` to `FuzzyLearnsetArgs`
+* renamed `MovePaginatedArgs` to `FuzzyMoveArgs`
+* renamed `Moves` enum to `MovesEnum`
+* renamed `Pokemon` enum to `PokemonEnum`
+* renamed `PokemonNumberPaginatedArgs` to `PokemonNumberArgs`
+* renamed `PokemonPaginatedArgs` to `FuzzyPokemonArgs`
+* renamed `Types` enum to `TypesEnum`
+* renamed the `skip` parameter for all `getFuzzy*` queries has been renamed to `offset` to better represent what it does.
+
+### Features
+
+* `getFuzzy*` queries can now return multiple results that match the fuzzy query. By default only 1 result is returned. You can modify this by passing the `take` parameter. Furthermore you can provide the `offset` parameter to skip that many items from the start, and the `reverse` parameter to reverse the array before applying `take` and `offset`. ([1fa1240](https://github.com/favware/graphql-pokemon/commit/1fa1240bfa8b113f411b8a7bd8b50425e276321b))
+* added the missing type-specific hidden powers ([c1a8e83](https://github.com/favware/graphql-pokemon/commit/c1a8e836594c0ee1d96c594cc2ed70d377561aeb))
+* rewrite API to version 6 ([#516](https://github.com/favware/graphql-pokemon/issues/516)) ([#521](https://github.com/favware/graphql-pokemon/issues/521)) ([920a466](https://github.com/favware/graphql-pokemon/commit/920a4664f6f92bd1195ed7e2f174044090d6f478))
+
+
+### Bug Fixes
+
+* also return base Pokémon data for `getLearnset` when only requesting `backSprite` and/or `shinyBackSprite` ([ff8455a](https://github.com/favware/graphql-pokemon/commit/ff8455a88dbc09465277c1dccef31fd1061b6018))
+* fixed `hidden power` being marked as a water type move ([578653c](https://github.com/favware/graphql-pokemon/commit/578653c0b48b3b32273c068aef526230b4e6af6f))
+* fixed the `basePower` for the moves `frustration` and `return` ([32f9d18](https://github.com/favware/graphql-pokemon/commit/32f9d183a729f6d46bee0b30747fbec31335d8ff))
+* fixed the `cosmeticFormes` for `flabébé` ([ae0ee83](https://github.com/favware/graphql-pokemon/commit/ae0ee83464aad40316dc866d7490672511674d08))
+* fixed the `version_id` (game) for Missingno's flavour text ([7855a3c](https://github.com/favware/graphql-pokemon/commit/7855a3c4e7e7aa05529abe007cb30bd08eb5131c))
+* fixed the `zMovePower` for the moves `frustration`, `return`, `seismic toss`, and `night shade` ([b124212](https://github.com/favware/graphql-pokemon/commit/b124212acc1ae74ef4732f7760478fd5bcef41ef))
+* fixed the bulbapedia URL for nidoran-female ([f8a04a9](https://github.com/favware/graphql-pokemon/commit/f8a04a90ad755cf3b064a3f0954490272e7250c1))
+* fixed the bulbapedia URL for nidoran-male ([8bd546f](https://github.com/favware/graphql-pokemon/commit/8bd546f0cbb302b31cbcce655624dd9e92f6257b))
+* fixed the quotes used in the flavour texts ([08c4358](https://github.com/favware/graphql-pokemon/commit/08c43586d241267d23765d77d1d07c9213dfdc12))
+* fixed the registered name for `gengargmax` ([309273e](https://github.com/favware/graphql-pokemon/commit/309273e219d7f70363687c138e87221a81d03c8f))
+* fixed the way prefixed fuzzy queries are parsed. It is now possible to prefix with `galarian`, `alolan`, and `gigantamax` alongside their respective values of `galar`, `alola` and `gmax`. ([a3fe56b](https://github.com/favware/graphql-pokemon/commit/a3fe56becfd6e0a3e99e35c41e53d3b7240ee6dd))
+* fixed various text issues in flavour texts, in particular garbled characters being in the place of the common `é` character ([aa1cd41](https://github.com/favware/graphql-pokemon/commit/aa1cd41c13ce87b20b1deec45ec50561387983e0))
+* when a move's z-move power cannot be computed the value of `0` is now returned, as opposed to `Infinity`, which would cause an error. ([4a07fc3](https://github.com/favware/graphql-pokemon/commit/4a07fc3e9a5b3f65bd9451724b42c4de06405cc6))
+
 ### [5.7.1](https://github.com/favware/graphql-pokemon/compare/v5.7.0...v5.7.1) (2021-09-11)
 
 

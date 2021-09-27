@@ -7,7 +7,6 @@
 **Extensive Pokémon GraphQL API!**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon)](https://github.com/favware/graphql-pokemon/blob/main/LICENSE)
-[![Depfu](https://badges.depfu.com/badges/5c35c8f7e714ce96c424120a1a5f5b1b/count.svg)](https://depfu.com/github/favware/graphql-pokemon?project_id=11729)
 
 [![Continuous Deployment](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Deployment/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Deployment")
 [![Continuous Integration](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Integration/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Integration")

@@ -1052,7 +1052,7 @@ __metadata:
     "@types/node": ^16.9.1
     apollo-server-koa: ^3.3.0
     class-validator: ^0.13.1
-    colorette: ^1.4.0
+    colorette: ^2.0.12
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.32.0
     fuse.js: ^6.4.6
@@ -3815,6 +3815,13 @@ __metadata:
   version: 1.4.0
   resolution: "colorette@npm:1.4.0"
   checksum: 01c3c16058b182a4ab4c126a65a75faa4d38a20fa7c845090b25453acec6c371bb2c5dceb0a2338511f17902b9d1a9af0cadd8509c9403894b79311032c256c3
+  languageName: node
+  linkType: hard
+
+"colorette@npm:^2.0.12":
+  version: 2.0.12
+  resolution: "colorette@npm:2.0.12"
+  checksum: 1df990c6749826694756ecd05a771fb70fd426cf2b264cf496fb93a621fb4554fabfa8adde0923421f3e38b7265d546f6a46caf833f2d7facf45a40042b510b3
   languageName: node
   linkType: hard
 

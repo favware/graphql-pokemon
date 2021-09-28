@@ -136,7 +136,6 @@
     "kind-of": "^6.0.3",
     "lodash": "^4.17.21",
     "dot-prop": "^6.0.1",
-    "node-fetch": "^2.6.5",
     "trim-newlines": "^4.0.2"
   },
   "packageManager": "yarn@3.0.2"

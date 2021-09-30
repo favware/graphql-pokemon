@@ -77,8 +77,8 @@ export class DexService {
     const preevolutionChain: Promise<Pokemon>[] = [];
 
     const basePokemonGenderRatio: PokemonTypes.DexEntry['genderRatio'] = data.genderRatio || {
-      male: 0.5,
-      female: 0.5
+      male: '50%',
+      female: '50%'
     };
     const basePokemonCatchRate: PokemonTypes.DexEntry['catchRate'] = data.catchRate || {
       base: 0,
@@ -90,14 +90,14 @@ export class DexService {
     addPropertyToClass(
       genderData,
       'male',
-      `${basePokemonGenderRatio.male * 100}%`,
+      basePokemonGenderRatio.male,
       genderEntryRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}gender.male`
     );
     addPropertyToClass(
       genderData,
       'female',
-      `${basePokemonGenderRatio.female * 100}%`,
+      basePokemonGenderRatio.female,
       genderEntryRequestedFields,
       `${recursingAs ? `${recursingAs}.` : ''}gender.female`
     );

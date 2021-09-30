@@ -42,9 +42,9 @@ export namespace PokemonTypes {
   }
 
   export interface GenderEntry {
-    female: number;
+    female: string;
 
-    male: number;
+    male: string;
   }
 
   export interface Stats<T extends number = number> {

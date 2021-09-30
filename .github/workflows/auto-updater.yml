@@ -58,5 +58,5 @@ jobs:
             git checkout -b favware-bot/update-data/$(date +%F-%H-%M);
             git commit -sam "refactor: update data [skip publish]";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            ./gh pr create -t "refactor: update data [skip publish]" -b "*bleep bloop* I updated the data files" -l "Meta: Data Update" -B main;
+            ./gh pr create -t "refactor: update data [skip publish]" -b "*bleep bloop* I updated the data files" -B main;
           fi

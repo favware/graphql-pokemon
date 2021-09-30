@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.0.5](https://github.com/favware/graphql-pokemon/compare/v6.0.4...v6.0.5) (2021-09-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to ^15.6.0 ([#532](https://github.com/favware/graphql-pokemon/issues/532)) ([074a10c](https://github.com/favware/graphql-pokemon/commit/074a10cd520bad048e0c830a2de2b8806a59c7f2))
+
 ### [6.0.4](https://github.com/favware/graphql-pokemon/compare/v6.0.3...v6.0.4) (2021-09-27)
 
 ### [6.0.3](https://github.com/favware/graphql-pokemon/compare/v6.0.2...v6.0.3) (2021-09-27)

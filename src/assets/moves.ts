@@ -978,7 +978,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       name: 'Block',
       pp: 5,
       priority: 0,
-      shortDesc: 'The target cannot switch out.',
+      shortDesc: 'Prevents the target from switching out.',
       target: 'Normal',
       type: 'Normal'
     }
@@ -1953,7 +1953,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       name: 'Core Enforcer',
       pp: 10,
       priority: 0,
-      shortDesc: 'Nullifies the foe(s) Ability if the target moves first.',
+      shortDesc: 'Nullifies the foe(s) Ability if the foe(s) move first.',
       target: 'Adjacent Foes',
       type: 'Dragon',
       zMovePower: 140
@@ -3215,7 +3215,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      desc: 'For its next 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, if the move is Assist, Copycat, Encore, Me First, Metronome, Mimic, Mirror Move, Nature Power, Sketch, Sleep Talk, Struggle, or Transform, or if the target is Dynamaxed.',
+      desc: 'For its next 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, if the move is Assist, Copycat, Dynamax Cannon, Encore, Me First, Metronome, Mimic, Mirror Move, Nature Power, Sketch, Sleep Talk, Struggle, or Transform, or if the target is Dynamaxed.',
       name: 'Encore',
       pp: 5,
       priority: 0,
@@ -4634,11 +4634,12 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '1',
       category: 'Physical',
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side is prevented from switching for four or five turns (seven turns if the user is holding Grip Claw), even if they have a substitute. Causes damage equal to 1/8 of their maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. They can still switch out if they are holding Shed Shell or use Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends for a target if it leaves the field, or if it uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
       isGMax: 'Centiskorch',
       name: 'G-Max Centiferno',
       pp: 5,
       priority: 0,
-      shortDesc: 'Traps and damages opponents. BP scales with base move.',
+      shortDesc: 'Base move affects power. Foes: bound 4-5 turns.',
       target: 'Adjacent Foes',
       type: 'Fire'
     }
@@ -5065,12 +5066,12 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '10',
       category: 'Physical',
-      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side is prevented from switching for four or five turns (seven turns if the user is holding Grip Claw), even if they have a substitute. Causes damage equal to 1/8 of their maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. They can still switch out if they are holding Shed Shell or use Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends for a target if it leaves the field, or if it uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+      desc: "Power is equal to the base move's Max Move power. If this move is successful, each Pokémon on the opposing side is prevented from switching out, even if they have a substitute. They can still switch out if they are holding Shed Shell or use Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If a target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
       isGMax: 'Sandaconda',
       name: 'G-Max Sandblast',
       pp: 5,
       priority: 0,
-      shortDesc: 'Base move affects power. Foes: bound 4-5 turns.',
+      shortDesc: 'Base move affects power. Foes: trapped.',
       target: 'Adjacent Foes',
       type: 'Ground'
     }
@@ -6636,7 +6637,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       name: 'Instruct',
       pp: 15,
       priority: 0,
-      shortDesc: 'The target immediately uses its last used move.',
+      shortDesc: 'Picks a random move.',
       target: 'Normal',
       type: 'Psychic'
     }
@@ -6828,7 +6829,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Physical',
       contestType: 'Clever',
-      desc: "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokémon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+      desc: 'The user regains the item it last used. Fails if the user is holding an item, if the user has not held an item, if the item was a popped Air Balloon, if the item was picked up by a Pokémon with the Pickup Ability, or if the item was lost to Bug Bite, Corrosive Gas, Covet, Incinerate, Knock Off, Pluck, or Thief. Items thrown with Fling can be regained.',
       maxMovePower: 120,
       name: 'Knock Off',
       pp: 20,
@@ -7609,7 +7610,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       name: 'Mean Look',
       pp: 5,
       priority: 0,
-      shortDesc: 'The target cannot switch out.',
+      shortDesc: 'Prevents the target from switching out.',
       target: 'Adjacent Foes',
       type: 'Normal'
     }
@@ -7752,7 +7753,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       name: 'Max Rockfall',
       pp: 5,
       priority: 0,
-      shortDesc: 'Base move affects power. Starts Sandstorm.',
+      shortDesc: 'For 5 turns, a sandstorm rages. Rock: 1.5x SpD.',
       target: 'Adjacent Foes',
       type: 'Rock',
       aliases: ['maxrock']
@@ -8079,6 +8080,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      desc: 'While the user remains active, this move is replaced by the last move used by the target. The copied move has the maximum PP for that move. Fails if the target has not made a move, if the user has Transformed, if the user already knows the move, or if the move is Chatter, Dynamax Cannon, Mimic, Sketch, Struggle, Transform, or any Z-Move.',
       name: 'Mimic',
       pp: 10,
       priority: 0,
@@ -9720,6 +9722,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Clever',
+      desc: "If an opposing Pokémon switches out this turn, this move hits that Pokémon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokémon does not become active until the end of the turn.",
       isNonstandard: 'Past',
       name: 'Pursuit',
       pp: 20,
@@ -11746,7 +11749,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
       name: 'Spider Web',
       pp: 10,
       priority: 0,
-      shortDesc: 'The target cannot switch out.',
+      shortDesc: 'Prevents the target from switching out.',
       target: 'Normal',
       type: 'Bug'
     }

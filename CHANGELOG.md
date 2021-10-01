@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/favware/graphql-pokemon/compare/v6.0.5...v6.1.0) (2021-10-01)
+
+
+### Features
+
+* add new CAP pokemon ([#542](https://github.com/favware/graphql-pokemon/issues/542)) ([12cfdc3](https://github.com/favware/graphql-pokemon/commit/12cfdc3f4dac508eeaa6aca9df00c53142a52ead))
+
+
+### Bug Fixes
+
+* fixed evolution criteria for Galarian Slowking ([c653e73](https://github.com/favware/graphql-pokemon/commit/c653e73d88d6e38dbf991c8ba2cdc71134be8358))
+* fixed various descriptions ([c7bcc09](https://github.com/favware/graphql-pokemon/commit/c7bcc0972c71beed69601da1e456826c4e53c286))
+
 ### [6.0.5](https://github.com/favware/graphql-pokemon/compare/v6.0.4...v6.0.5) (2021-09-30)
 
 

@@ -1278,7 +1278,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Pink',
       eggGroups: ['Monster', 'Water 1'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
-      evoLevel: "Trade while holding King's Rock",
+      evoLevel: 'use Galarica Wreath',
       forme: 'Galar',
       formeLetter: 'G',
       genderRatio: { male: '50%', female: '50%' },

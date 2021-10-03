@@ -1053,7 +1053,7 @@ __metadata:
     "@types/node": ^16.9.1
     apollo-server-koa: ^3.3.0
     class-validator: ^0.13.1
-    colorette: ^2.0.12
+    colorette: ^2.0.13
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.32.0
     fuse.js: ^6.4.6
@@ -1069,7 +1069,7 @@ __metadata:
     pretty-quick: ^3.1.1
     reflect-metadata: ^0.1.13
     replace-in-file: ^6.2.0
-    rollup: ^2.57.0
+    rollup: ^2.58.0
     rollup-plugin-typescript2: ^0.30.0
     standard-version: ^9.3.1
     ts-jest: ^27.0.5
@@ -3843,10 +3843,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colorette@npm:^2.0.12":
-  version: 2.0.12
-  resolution: "colorette@npm:2.0.12"
-  checksum: 1df990c6749826694756ecd05a771fb70fd426cf2b264cf496fb93a621fb4554fabfa8adde0923421f3e38b7265d546f6a46caf833f2d7facf45a40042b510b3
+"colorette@npm:^2.0.13":
+  version: 2.0.13
+  resolution: "colorette@npm:2.0.13"
+  checksum: e257bfacd468b0a9a2970fd7160ef150647292da976fe1866336bdb6145dbcb5f8deba970c0d9237d79f5d90299c75164ac13649669cdc47c371e86a71f8b14f
   languageName: node
   linkType: hard
 
@@ -9625,9 +9625,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.57.0":
-  version: 2.57.0
-  resolution: "rollup@npm:2.57.0"
+"rollup@npm:^2.58.0":
+  version: 2.58.0
+  resolution: "rollup@npm:2.58.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -9635,7 +9635,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 72427487d1f956ac1431b0db7a88ea542475630c9f0cc279a2f6be68138107bff00506d49d189780f77f189a17dcf83ee7be712a58145a6a910a3e23deb5f85d
+  checksum: a5e5642f2b1e239e3698eeee93b19d905e55e3012c63978cebc71e76c0a4eb2de5cff06a2a80d68bf87fe6869c57647cccc335daba280a5449a9214abdeca247
   languageName: node
   linkType: hard
 

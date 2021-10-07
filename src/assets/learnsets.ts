@@ -80496,7 +80496,6 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       snatch: ['7M', '4M'],
       snore: ['8M', '7T', '4T'],
       spite: ['8L12', '7T', '4T'],
-      steelbeam: ['8T'],
       substitute: ['8M', '7M', '4M'],
       suckerpunch: ['8E', '7E', '4T'],
       sunnyday: ['8M', '7M', '4M'],

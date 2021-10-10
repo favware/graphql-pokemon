@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.0](https://github.com/favware/graphql-pokemon/compare/v6.1.0...v6.2.0) (2021-10-10)
+
+
+### Features
+
+* add `getAllPokemonSpecies` query to get all Pokémon in the API ([482c28e](https://github.com/favware/graphql-pokemon/commit/482c28eb17c545849c89245b05624693f11864ac))
+
 ## [6.1.0](https://github.com/favware/graphql-pokemon/compare/v6.0.5...v6.1.0) (2021-10-01)
 
 

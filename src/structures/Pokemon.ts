@@ -11,7 +11,7 @@ export class Pokemon {
   @Field(() => Abilities, { description: 'The abilities for a Pokémon' })
   public abilities!: Abilities;
 
-  @Field({
+  @Field(() => String, {
     description: 'The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive'
   })
   public backSprite!: string;

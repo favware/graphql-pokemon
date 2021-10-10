@@ -198,6 +198,12 @@ export const getFuzzyPokemonSpecies = gql`
   }
 `;
 
+export const getAllPokemonSpecies = gql`
+  query ($offset: Int, $take: Int, $reverse: Boolean) {
+    getAllPokemonSpecies(take: $take, offset: $offset, reverse: $reverse)
+  }
+`;
+
 export const getFuzzyPokemonWithFullData = gql`
   query ($pokemon: String!, $take: Int, $reverse: Boolean) {
     getFuzzyPokemon(pokemon: $pokemon, take: $take, reverse: $reverse) {

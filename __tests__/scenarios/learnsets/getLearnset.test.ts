@@ -12,7 +12,7 @@ import { gCall } from '#test-utils/testUtils';
 
 describe('getLearnset', () => {
   describe('Successful requests', () => {
-    test('GIVEN valid pokemon and single move request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and single move request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'charizard', moves: ['fireblast'] }
@@ -40,7 +40,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and 2 moves request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and 2 moves request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'charizard', moves: ['fireblast', 'flamethrower'] }
@@ -87,7 +87,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and 2 moves and custom generation request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and 2 moves and custom generation request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'charizard', moves: ['fireblast', 'flamethrower'], generation: 7 }
@@ -111,7 +111,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and event move and custom generation request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and event move and custom generation request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'dragonite', moves: ['extremespeed'], generation: 5 }
@@ -132,7 +132,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and tutor move and custom generation request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and tutor move and custom generation request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'pikachu', moves: ['risingvoltage'], generation: 8 }
@@ -150,7 +150,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and egg move and custom generation request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and egg move and custom generation request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'bunnelby', moves: ['defensecurl'], generation: 6 }
@@ -168,7 +168,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid pokemon and dream world move and custom generation request THEN returns Learnset WITH all data', async () => {
+    test('GIVEN valid Pokémon and dream world move and custom generation request THEN returns Learnset WITH all data', async () => {
       const { data } = await gCall<'getLearnset'>({
         source: getLearnset,
         variableValues: { pokemon: 'vulpix', moves: ['darkpulse'], generation: 5 }
@@ -316,7 +316,7 @@ describe('getLearnset', () => {
   });
 
   describe('Error Requests', () => {
-    test('GIVEN an invalid pokemon THEN returns error', async () => {
+    test('GIVEN an invalid Pokémon THEN returns error', async () => {
       const data = await gCall({
         source: getLearnset,
         variableValues: { pokemon: 'totally_invalid_pokemon' }

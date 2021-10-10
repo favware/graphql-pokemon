@@ -9,7 +9,7 @@ import { gCall } from '#test-utils/testUtils';
 
 describe('getPokemon', () => {
   describe('Species only requests', () => {
-    test('GIVEN a valid species THEN returns Pokemon', async () => {
+    test('GIVEN a valid species THEN returns Pokémon', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonSpecies,
         variableValues: { pokemon: 'dragonite' }
@@ -82,7 +82,7 @@ describe('getPokemon', () => {
   });
 
   describe('Species only requests By National Dex Number', () => {
-    test('GIVEN a valid number THEN returns Pokemon', async () => {
+    test('GIVEN a valid number THEN returns Pokémon', async () => {
       const { data } = await gCall<'getPokemonByDexNumber'>({
         source: getPokemonByNationalDexNumber,
         variableValues: { number: 1 }
@@ -91,7 +91,7 @@ describe('getPokemon', () => {
       expect(data.getPokemonByDexNumber.species).toEqual('bulbasaur');
     });
 
-    test('GIVEN a valid number THEN returns Pokemon', async () => {
+    test('GIVEN a valid number THEN returns Pokémon', async () => {
       const { data } = await gCall<'getPokemonByDexNumber'>({
         source: getPokemonByNationalDexNumber,
         variableValues: { number: -60 }
@@ -100,7 +100,7 @@ describe('getPokemon', () => {
       expect(data.getPokemonByDexNumber.species).toEqual('chromera');
     });
 
-    test('GIVEN a valid number THEN returns Pokemon', async () => {
+    test('GIVEN a valid number THEN returns Pokémon', async () => {
       const { data } = await gCall<'getPokemonByDexNumber'>({
         source: getPokemonByNationalDexNumber,
         variableValues: { number: 898 }
@@ -111,7 +111,7 @@ describe('getPokemon', () => {
   });
 
   describe('Full data requests', () => {
-    test('GIVEN valid pokemon request THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN valid Pokémon request THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullData,
         variableValues: { pokemon: 'greninja' }
@@ -181,7 +181,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN missingno THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN missingno THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullData,
         variableValues: { pokemon: 'missingno' }
@@ -255,7 +255,7 @@ describe('getPokemon', () => {
   });
 
   describe('Full data requests with evolutions', () => {
-    test('GIVEN valid pokemon request THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN valid Pokémon request THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'eevee' }
@@ -622,7 +622,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN cap Pokémon THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN cap Pokémon THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'syclar' }
@@ -753,7 +753,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN Pokémon with evolution form THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN Pokémon with evolution form THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'rattataalola' }
@@ -894,7 +894,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN Pokémon with 1 evolution and 1 pre-evolution THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN Pokémon with 1 evolution and 1 pre-evolution THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'dragonair' }
@@ -1104,7 +1104,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN Pokémon with 2 evolutions THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN Pokémon with 2 evolutions THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'beldum' }
@@ -1238,7 +1238,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN Pokémon with 2 pre-evolutions THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN Pokémon with 2 pre-evolutions THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'salamence' }
@@ -1374,7 +1374,7 @@ describe('getPokemon', () => {
   });
 
   describe('Error Requests', () => {
-    test('GIVEN an invalid pokemon THEN returns error', async () => {
+    test('GIVEN an invalid Pokémon THEN returns error', async () => {
       const data = await gCall({
         source: getPokemonSpecies,
         variableValues: { pokemon: 'totally_invalid_pokemon' }

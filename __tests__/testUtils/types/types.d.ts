@@ -1102,7 +1102,7 @@ export declare type Move = {
   /** The type for a move */
   readonly type: Scalars['String'];
   /** The power this move will have when used with its Z-move equivalent */
-  readonly zMovePower?: Maybe<Scalars['Int']>;
+  readonly zMovePower: Scalars['Int'];
 };
 /** The supported moves */
 export declare const enum MovesEnum {
@@ -2311,6 +2311,7 @@ export declare const enum PokemonEnum {
   Dodrio = 'dodrio',
   Doduo = 'doduo',
   Donphan = 'donphan',
+  Dorsoil = 'dorsoil',
   Dottler = 'dottler',
   Doublade = 'doublade',
   Dracovish = 'dracovish',
@@ -2337,6 +2338,7 @@ export declare const enum PokemonEnum {
   Dugtrio = 'dugtrio',
   Dugtrioalola = 'dugtrioalola',
   Dunsparce = 'dunsparce',
+  Duohm = 'duohm',
   Duosion = 'duosion',
   Duraludon = 'duraludon',
   Duraludongmax = 'duraludongmax',
@@ -2725,6 +2727,7 @@ export declare const enum PokemonEnum {
   Moltres = 'moltres',
   Moltresgalar = 'moltresgalar',
   Monferno = 'monferno',
+  Monohm = 'monohm',
   Morelull = 'morelull',
   Morgrem = 'morgrem',
   Morpeko = 'morpeko',
@@ -2765,6 +2768,7 @@ export declare const enum PokemonEnum {
   Ninetalesalola = 'ninetalesalola',
   Ninjask = 'ninjask',
   Noctowl = 'noctowl',
+  Nohface = 'nohface',
   Noibat = 'noibat',
   Noivern = 'noivern',
   Nosepass = 'nosepass',
@@ -2879,6 +2883,7 @@ export declare const enum PokemonEnum {
   Prinplup = 'prinplup',
   Privatyke = 'privatyke',
   Probopass = 'probopass',
+  Protowatt = 'protowatt',
   Psyduck = 'psyduck',
   Pumpkaboo = 'pumpkaboo',
   Pumpkaboolarge = 'pumpkaboolarge',
@@ -3283,6 +3288,8 @@ export declare type Query = {
   readonly __typename?: 'Query';
   /** Gets the details on a Pokémon ability, using the ability name */
   readonly getAbility: Ability;
+  /** Returns a list of all the known Pokémon. This query supports no arguments can it be  */
+  readonly getAllPokemonSpecies: ReadonlyArray<Scalars['String']>;
   /**
    * Gets details on a Pokémon ability, using a fuzzy search on name
    * This can be used to find multiple results based on the query
@@ -3333,6 +3340,11 @@ export declare type Query = {
 };
 export declare type QueryGetAbilityArgs = {
   ability: AbilitiesEnum;
+};
+export declare type QueryGetAllPokemonSpeciesArgs = {
+  offset?: Maybe<Scalars['Int']>;
+  reverse?: Maybe<Scalars['Boolean']>;
+  take?: Maybe<Scalars['Int']>;
 };
 export declare type QueryGetFuzzyAbilityArgs = {
   ability: Scalars['String'];
@@ -3684,7 +3696,7 @@ export declare type MoveResolvers<ContextType = any, ParentType extends Resolver
   smogonPage?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   target?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   type?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  zMovePower?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  zMovePower?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 export declare type PokemonResolvers<ContextType = any, ParentType extends ResolversParentTypes['Pokemon'] = ResolversParentTypes['Pokemon']> = {
@@ -3727,6 +3739,12 @@ export declare type PokemonResolvers<ContextType = any, ParentType extends Resol
 };
 export declare type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   getAbility?: Resolver<ResolversTypes['Ability'], ParentType, ContextType, RequireFields<QueryGetAbilityArgs, 'ability'>>;
+  getAllPokemonSpecies?: Resolver<
+    ReadonlyArray<ResolversTypes['String']>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGetAllPokemonSpeciesArgs, 'offset' | 'reverse' | 'take'>
+  >;
   getFuzzyAbility?: Resolver<
     ReadonlyArray<ResolversTypes['Ability']>,
     ParentType,
@@ -3816,3 +3834,4 @@ export declare type Resolvers<ContextType = any> = {
   Type?: TypeResolvers<ContextType>;
   TypeMatchup?: TypeMatchupResolvers<ContextType>;
 };
+//# sourceMappingURL=graphql-pokemon.d.ts.map

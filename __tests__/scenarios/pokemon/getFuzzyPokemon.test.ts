@@ -3,7 +3,7 @@ import { gCall } from '#test-utils/testUtils';
 
 describe('getFuzzyPokemon', () => {
   describe('Species only requests', () => {
-    test('GIVEN a valid species THEN returns Pokemon', async () => {
+    test('GIVEN a valid species THEN returns Pokémon', async () => {
       const { data } = await gCall<'getFuzzyPokemon'>({
         source: getFuzzyPokemonSpecies,
         variableValues: { pokemon: 'dragonite' }
@@ -12,8 +12,8 @@ describe('getFuzzyPokemon', () => {
       expect(data.getFuzzyPokemon).toEqual([{ species: 'dragonite' }]);
     });
 
-    describe('GIVEN a pokemon with a forme prefix and a space', () => {
-      test('GIVEN a mega-prefixed query THEN returns Pokemon', async () => {
+    describe('GIVEN a Pokémon with a forme prefix and a space', () => {
+      test('GIVEN a mega-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'mega salamence' }
@@ -22,7 +22,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'salamence-mega' }]);
       });
 
-      test('GIVEN a gigantamax-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a gigantamax-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'gigantamax pikachu' }
@@ -31,7 +31,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'pikachu-gmax' }]);
       });
 
-      test('GIVEN a gmax-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a gmax-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'gmax meowth' }
@@ -40,7 +40,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'meowth-gmax' }]);
       });
 
-      test('GIVEN a alola-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a alola-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'alola marowak' }
@@ -49,7 +49,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'marowak-alola' }]);
       });
 
-      test('GIVEN a alolan-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a alolan-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'alolan vulpix' }
@@ -58,7 +58,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'vulpix-alola' }]);
       });
 
-      test('GIVEN a galar-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a galar-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'galar ponyta' }
@@ -67,7 +67,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'ponyta-galar' }]);
       });
 
-      test('GIVEN a galarian-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a galarian-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'galarian moltres' }
@@ -77,8 +77,8 @@ describe('getFuzzyPokemon', () => {
       });
     });
 
-    describe('GIVEN a pokemon with a forme prefix WITHOUT a space', () => {
-      test('GIVEN a mega-prefixed query THEN returns Pokemon', async () => {
+    describe('GIVEN a Pokémon with a forme prefix WITHOUT a space', () => {
+      test('GIVEN a mega-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'megabeedirll' }
@@ -87,7 +87,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'beedrill-mega' }]);
       });
 
-      test('GIVEN a gigantamax-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a gigantamax-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'gigantamaxvenusaur' }
@@ -96,7 +96,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'venusaur-gmax' }]);
       });
 
-      test('GIVEN a gmax-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a gmax-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'gmaxlapras' }
@@ -105,7 +105,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'lapras-gmax' }]);
       });
 
-      test('GIVEN a alola-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a alola-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'alolaexeggutor' }
@@ -114,7 +114,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'exeggutor-alola' }]);
       });
 
-      test('GIVEN a alolan-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a alolan-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'alolangrimer' }
@@ -123,7 +123,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'grimer-alola' }]);
       });
 
-      test('GIVEN a galar-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a galar-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'galardarumaka' }
@@ -132,7 +132,7 @@ describe('getFuzzyPokemon', () => {
         expect(data.getFuzzyPokemon).toEqual([{ species: 'darumaka-galar' }]);
       });
 
-      test('GIVEN a galarian-prefixed query THEN returns Pokemon', async () => {
+      test('GIVEN a galarian-prefixed query THEN returns Pokémon', async () => {
         const { data } = await gCall<'getFuzzyPokemon'>({
           source: getFuzzyPokemonSpecies,
           variableValues: { pokemon: 'galarianzigzagoon' }
@@ -144,7 +144,7 @@ describe('getFuzzyPokemon', () => {
   });
 
   describe('Full data requests', () => {
-    test('GIVEN valid pokemon request THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN valid Pokémon request THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getFuzzyPokemon'>({
         source: getFuzzyPokemonWithFullData,
         variableValues: { pokemon: 'greninja' }
@@ -196,7 +196,7 @@ describe('getFuzzyPokemon', () => {
   });
 
   describe('Full data requests with evolutions', () => {
-    test('GIVEN valid pokemon request THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN valid Pokémon request THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getFuzzyPokemon'>({
         source: getFuzzyPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'eevee' }
@@ -731,7 +731,7 @@ describe('getFuzzyPokemon', () => {
       ]);
     });
 
-    test('GIVEN single letter pokemon THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN single letter Pokémon THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getFuzzyPokemon'>({
         source: getFuzzyPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'e', take: 3, takeFlavorTexts: 3, reverseFlavorTexts: false }
@@ -939,7 +939,7 @@ describe('getFuzzyPokemon', () => {
       ]);
     });
 
-    test('GIVEN single letter pokemon WITH reverse:true THEN returns Pokemon WITH all data', async () => {
+    test('GIVEN single letter Pokémon WITH reverse:true THEN returns Pokémon WITH all data', async () => {
       const { data } = await gCall<'getFuzzyPokemon'>({
         source: getFuzzyPokemonWithFullDataAndEvolutions,
         variableValues: { pokemon: 'a', take: 3, reverse: true, takeFlavorTexts: 3, reverseFlavorTexts: false }
@@ -1236,7 +1236,7 @@ describe('getFuzzyPokemon', () => {
   });
 
   describe('Error Requests', () => {
-    test('GIVEN an invalid pokemon THEN returns error', async () => {
+    test('GIVEN an invalid Pokémon THEN returns error', async () => {
       const data = await gCall({
         source: getFuzzyPokemonSpecies,
         variableValues: { pokemon: 'totally_invalid_pokemon' }

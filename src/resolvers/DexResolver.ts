@@ -1,5 +1,6 @@
 import { FuzzyPokemonArgs } from '#arguments/FuzzyArgs/FuzzyPokemonArgs';
 import { PokemonArgs } from '#arguments/PokemonArgs/PokemonArgs';
+import { PokemonListArgs } from '#arguments/PokemonArgs/PokemonListArgs';
 import { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs';
 import { DexService } from '#services/DexService';
 import { Pokemon } from '#structures/Pokemon';
@@ -112,5 +113,12 @@ export class DexResolver {
     }
 
     return graphqlObjects;
+  }
+
+  @Query(() => [String], {
+    description: 'Returns a list of all the known Pokémon. This query supports no arguments can it be '
+  })
+  public getAllPokemonSpecies(@Args(() => PokemonListArgs) args: PokemonListArgs): string[] {
+    return DexService.getPokemonSpecies(args);
   }
 }

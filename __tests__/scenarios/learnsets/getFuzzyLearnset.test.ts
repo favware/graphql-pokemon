@@ -3,7 +3,7 @@ import { gCall } from '#test-utils/testUtils';
 
 describe('getFuzzyLearnset', () => {
   describe('Error Requests', () => {
-    test('GIVEN a pokestar pokemon THEN returns error', async () => {
+    test('GIVEN a pokestar Pokémon THEN returns error', async () => {
       const data = await gCall({
         source: getFuzzyLearnset,
         variableValues: { pokemon: 'pokestarsmeargle', moves: ['dragonclaw'] }

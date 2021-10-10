@@ -1,20 +1,21 @@
 import { FuzzyPokemonArgs } from '#arguments/FuzzyArgs/FuzzyPokemonArgs';
 import { PokemonArgs } from '#arguments/PokemonArgs/PokemonArgs';
-import type { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs';
+import { PokemonListArgs } from '#arguments/PokemonArgs/PokemonListArgs';
+import { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs';
 import pokedex from '#assets/pokedex';
 import { Abilities } from '#structures/Abilities';
 import { CatchRate } from '#structures/CatchRate';
-import { Pokemon } from '#structures/Pokemon';
 import { EvYields } from '#structures/EvYields';
 import { Flavor } from '#structures/Flavor';
 import { Gender } from '#structures/Gender';
+import { Pokemon } from '#structures/Pokemon';
 import { Stats } from '#structures/Stats';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type PokemonTypes from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
-import { cast, preParseInput, toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
+import { cast, preParseInput, toLowerHyphenCase, toLowerSingleWordCase, toTitleCase } from '#utils/util';
 import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
@@ -30,8 +31,18 @@ export class DexService {
     return pokedex.get(pokemon);
   }
 
-  public static getByNationalDexNumber(@Args(() => PokemonArgs) { number }: PokemonNumberArgs): PokemonTypes.DexEntry | undefined {
+  public static getByNationalDexNumber(@Args(() => PokemonNumberArgs) { number }: PokemonNumberArgs): PokemonTypes.DexEntry | undefined {
     return pokedex.find((pokemon) => pokemon.num === number);
+  }
+
+  public static getPokemonSpecies(@Args(() => PokemonListArgs) { offset, reverse, take }: PokemonListArgs): string[] {
+    const allSpecies = pokedex.map((pokemon) => toTitleCase(pokemon.species));
+
+    if (reverse) {
+      allSpecies.reverse();
+    }
+
+    return allSpecies.slice(offset, offset + take);
   }
 
   public static findByFuzzy(@Args() { pokemon, offset, take, reverse }: FuzzyPokemonArgs): Fuse.FuseResult<PokemonTypes.DexEntry>[] {

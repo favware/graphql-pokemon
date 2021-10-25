@@ -1054,7 +1054,7 @@ __metadata:
     pretty-quick: ^3.1.1
     reflect-metadata: ^0.1.13
     replace-in-file: ^6.3.2
-    rollup: ^2.58.0
+    rollup: ^2.58.3
     rollup-plugin-typescript2: ^0.30.0
     standard-version: ^9.3.2
     ts-jest: ^27.0.7
@@ -9509,9 +9509,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.58.0":
-  version: 2.58.0
-  resolution: "rollup@npm:2.58.0"
+"rollup@npm:^2.58.3":
+  version: 2.58.3
+  resolution: "rollup@npm:2.58.3"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -9519,7 +9519,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: a5e5642f2b1e239e3698eeee93b19d905e55e3012c63978cebc71e76c0a4eb2de5cff06a2a80d68bf87fe6869c57647cccc335daba280a5449a9214abdeca247
+  checksum: 20305ac3aea2a62be1728cfd3477419431bad2931532cc136da1904841fa03c318b231027b3a3da077baa0a874c20d72985bf74ed42dad103e88de610eb447a9
   languageName: node
   linkType: hard
 

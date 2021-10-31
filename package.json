@@ -49,16 +49,16 @@
     "prepare": "husky install .github/husky"
   },
   "dependencies": {
-    "graphql": "15.6.1"
+    "graphql": "15.7.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
-    "@discordjs/collection": "^0.2.1",
-    "@graphql-codegen/cli": "^2.2.1",
-    "@graphql-codegen/schema-ast": "^2.2.0",
-    "@graphql-codegen/typescript": "^2.2.4",
-    "@graphql-codegen/typescript-resolvers": "^2.3.2",
+    "@discordjs/collection": "^0.3.2",
+    "@graphql-codegen/cli": "^2.2.2",
+    "@graphql-codegen/schema-ast": "^2.3.0",
+    "@graphql-codegen/typescript": "^2.3.0",
+    "@graphql-codegen/typescript-resolvers": "^2.4.0",
     "@sapphire/eslint-config": "^4.0.2",
     "@sapphire/fetch": "^2.0.2",
     "@sapphire/prettier-config": "^1.2.3",

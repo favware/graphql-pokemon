@@ -45,7 +45,7 @@ export class MoveService {
   public static findByFuzzy(@Args(() => FuzzyMoveArgs) { move, offset, reverse, take }: FuzzyMoveArgs): Fuse.FuseResult<PokemonTypes.Move>[] {
     move = preParseInput(move);
 
-    const fuzzyResult = new FuzzySearch(moves, ['name', 'aliases'], { threshold: 0.3 }).runFuzzy(move);
+    const fuzzyResult = new FuzzySearch(moves, ['name', 'aliases'], { threshold: 0.3, includeScore: true, includeMatches: true }).runFuzzy(move);
 
     if (reverse) {
       fuzzyResult.reverse();
@@ -55,7 +55,7 @@ export class MoveService {
   }
 
   /**
-   * Converts basePower and zMovePower to the correct Z-Move power, using datamined convertion table seen below.
+   * Converts basePower and zMovePower to the correct Z-Move power, using datamined conversion table seen below.
    *
    * | Base move power  | Z-Move power |
    * |------------------|--------------|

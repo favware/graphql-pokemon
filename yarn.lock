@@ -1069,7 +1069,7 @@ __metadata:
     cz-conventional-changelog: ^3.3.0
     eslint: ^8.2.0
     fuse.js: ^6.4.6
-    graphql: ^16.0.1
+    graphql: ^15.7.2
     graphql-parse-resolve-info: ^4.12.0
     husky: ^7.0.4
     jest: ^27.3.1
@@ -5847,10 +5847,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.0.1":
-  version: 16.0.1
-  resolution: "graphql@npm:16.0.1"
-  checksum: e2fbddc78ac93b84af5b1871cdced5ce796102373b91f888983e8bae26856788833aa641f5da15b9e4da05cef2edcc82b744a86a27e7e1ef6c9ce422571ab16c
+"graphql@npm:^15.7.2":
+  version: 15.7.2
+  resolution: "graphql@npm:15.7.2"
+  checksum: eacb746e2981d0c346ef7365601873963af5356f64ce4d890ab89d213c67bf5bc1ae957b93c3902198798774c842b55dff219f38bad858691765e4debc265750
   languageName: node
   linkType: hard
 

@@ -1054,7 +1054,7 @@ __metadata:
     "@graphql-codegen/cli": ^2.2.2
     "@graphql-codegen/schema-ast": ^2.4.0
     "@graphql-codegen/typescript": ^2.3.1
-    "@graphql-codegen/typescript-resolvers": ^2.4.0
+    "@graphql-codegen/typescript-resolvers": ^2.4.1
     "@sapphire/eslint-config": ^4.0.4
     "@sapphire/fetch": ^2.0.3
     "@sapphire/prettier-config": ^1.2.4
@@ -1062,7 +1062,7 @@ __metadata:
     "@sapphire/ts-config": ^3.1.4
     "@types/jest": ^27.0.2
     "@types/koa": ^2.13.4
-    "@types/node": ^16.11.6
+    "@types/node": ^16.11.7
     apollo-server-koa: ^3.5.0
     class-validator: ^0.13.1
     colorette: ^2.0.16
@@ -1081,7 +1081,7 @@ __metadata:
     pretty-quick: ^3.1.1
     reflect-metadata: ^0.1.13
     replace-in-file: ^6.3.2
-    rollup: ^2.59.0
+    rollup: ^2.60.0
     rollup-plugin-typescript2: ^0.30.0
     standard-version: ^9.3.2
     ts-jest: ^27.0.7
@@ -1196,9 +1196,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-resolvers@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "@graphql-codegen/typescript-resolvers@npm:2.4.0"
+"@graphql-codegen/typescript-resolvers@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@graphql-codegen/typescript-resolvers@npm:2.4.1"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^2.3.0
     "@graphql-codegen/typescript": ^2.3.0
@@ -1207,8 +1207,8 @@ __metadata:
     auto-bind: ~4.0.0
     tslib: ~2.3.0
   peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 9ea84e00173b31d4c800f2f388a47436156e3844cc3dde5ab338fd24afc08ccff41be3f3f5485dcb74c273c8e41c833b80718395d123b58e470603691b065ab7
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: 5d7726c9d4f6153a8760113c3e678f147235b1caff04da58115fe9e14abe44b06807fe873bb5c1fadf38feee04320841eeb12385e617916c224e0f521ee92da1
   languageName: node
   linkType: hard
 
@@ -2410,7 +2410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.11.6":
+"@types/node@npm:*, @types/node@npm:^16.11.7":
   version: 16.11.7
   resolution: "@types/node@npm:16.11.7"
   checksum: 2706403e6efc4aa40fdce8f0b5d9884d5600c3c8610aedc7fa5e7e298d30366f7e8b7296028d52898dca3edef4c3e827b03bf20952c4780f13fa4e79864f7a86
@@ -9568,9 +9568,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.59.0":
-  version: 2.59.0
-  resolution: "rollup@npm:2.59.0"
+"rollup@npm:^2.60.0":
+  version: 2.60.0
+  resolution: "rollup@npm:2.60.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -9578,7 +9578,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 9fbaa72b8ff840b366f4da3ba35379a3d115fd52e1dced1693995005a9ff7e1699829ff16d8eb65c0a9eff26b57b4914dca7511f22e4d900af8c757d7129124d
+  checksum: ef267b49a203f3db86d6db8c63de8737d6e3995d988dadf35c1922964c21cafbb95990543cfc716356d31bf6ca3975e58d9195df85b28721ecdc9acd3693acca
   languageName: node
   linkType: hard
 

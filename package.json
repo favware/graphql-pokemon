@@ -66,7 +66,7 @@
     "@sapphire/ts-config": "^3.1.4",
     "@types/jest": "^27.0.3",
     "@types/koa": "^2.13.4",
-    "@types/node": "^16.11.8",
+    "@types/node": "^16.11.9",
     "apollo-server-koa": "^3.5.0",
     "class-validator": "^0.13.1",
     "colorette": "^2.0.16",

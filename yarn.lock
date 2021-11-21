@@ -1058,7 +1058,7 @@ __metadata:
     "@sapphire/eslint-config": ^4.0.5
     "@sapphire/fetch": ^2.0.3
     "@sapphire/prettier-config": ^1.2.4
-    "@sapphire/time-utilities": ^1.4.8
+    "@sapphire/time-utilities": ^1.4.9
     "@sapphire/ts-config": ^3.1.4
     "@types/jest": ^27.0.3
     "@types/koa": ^2.13.4
@@ -2012,12 +2012,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/time-utilities@npm:^1.4.8":
-  version: 1.4.8
-  resolution: "@sapphire/time-utilities@npm:1.4.8"
+"@sapphire/time-utilities@npm:^1.4.9":
+  version: 1.4.9
+  resolution: "@sapphire/time-utilities@npm:1.4.9"
   dependencies:
-    "@sapphire/utilities": ^3.0.8
-  checksum: af9a14140a4590d61a95524e7d91dca1ea7caf3f9825d5897be3e64ae367dda1670c3aa55d99f5fba67b9b7bf28d65c82eb6309b71fa7b979356e633f7db6e12
+    "@sapphire/utilities": ^3.1.0
+  checksum: d3ebd99ce7b99588fefedb60b585707b90b925db683d60a1b6f6b4a44430198c9100ce99d58f781c4e9a86a1b77c0f911bbee6593b189fc568ce198ac6a25512
   languageName: node
   linkType: hard
 
@@ -2031,10 +2031,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@sapphire/utilities@npm:3.0.8"
-  checksum: 44cdb0150a233f974b3c6a877f274f3bcebc3efad3cef6205cba5963ad1f60340d57eff54c8206eb638b881a3c3b33d8d593b6c71307768435da8ff05c9ac730
+"@sapphire/utilities@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@sapphire/utilities@npm:3.1.0"
+  checksum: aa0628352faf8c52774740c53a26ca7154b133ffbe86efaf9684de67c9d8d913732f99108d15babf4e4f9c2bc6e71070466bc8585be9a7add1659533aa2b5716
   languageName: node
   linkType: hard
 

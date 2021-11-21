@@ -62,7 +62,7 @@
     "@sapphire/eslint-config": "^4.0.5",
     "@sapphire/fetch": "^2.0.3",
     "@sapphire/prettier-config": "^1.2.4",
-    "@sapphire/time-utilities": "^1.4.8",
+    "@sapphire/time-utilities": "^1.4.9",
     "@sapphire/ts-config": "^3.1.4",
     "@types/jest": "^27.0.3",
     "@types/koa": "^2.13.4",

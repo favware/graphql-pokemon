@@ -1062,7 +1062,7 @@ __metadata:
     "@sapphire/ts-config": ^3.1.6
     "@types/jest": ^27.0.3
     "@types/koa": ^2.13.4
-    "@types/node": ^16.11.9
+    "@types/node": ^16.11.10
     "@types/validator": ^13.7.0
     apollo-server-koa: ^3.5.0
     class-validator: ^0.13.2
@@ -1076,14 +1076,14 @@ __metadata:
     jest: ^27.3.1
     jest-circus: ^27.3.1
     koa: ^2.13.4
-    lint-staged: ^12.1.1
+    lint-staged: ^12.1.2
     npm-run-all: ^4.1.5
-    prettier: ^2.4.1
+    prettier: ^2.5.0
     pretty-quick: ^3.1.2
     reflect-metadata: ^0.1.13
     replace-in-file: ^6.3.2
-    rollup: ^2.60.0
-    rollup-plugin-typescript2: ^0.31.0
+    rollup: ^2.60.1
+    rollup-plugin-typescript2: ^0.31.1
     standard-version: ^9.3.2
     ts-jest: ^27.0.7
     ts-node: ^10.4.0
@@ -2421,7 +2421,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.11.9":
+"@types/node@npm:*":
   version: 16.11.9
   resolution: "@types/node@npm:16.11.9"
   checksum: baec2e6471ee58fd1e9874e6f47ab95a918a0f46b42424392e4c13e3e07f078f8b72b6b48073b0b14f710ed66c5f1b2e497df43f28151000f11f5f299382cfe2
@@ -2432,6 +2432,13 @@ __metadata:
   version: 10.17.60
   resolution: "@types/node@npm:10.17.60"
   checksum: 2cdb3a77d071ba8513e5e8306fa64bf50e3c3302390feeaeff1fd325dd25c8441369715dfc8e3701011a72fed5958c7dfa94eb9239a81b3c286caa4d97db6eef
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.11.10":
+  version: 16.11.10
+  resolution: "@types/node@npm:16.11.10"
+  checksum: 9c79419c5c3d92d5825bffa30f3668533f598d8b63a73ea7fc24e47f162bdbed92b0f8e4f4261cc3314b39cee050e303366d2aa154abc95c63a572a110b8c160
   languageName: node
   linkType: hard
 
@@ -7639,9 +7646,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.1.1":
-  version: 12.1.1
-  resolution: "lint-staged@npm:12.1.1"
+"lint-staged@npm:^12.1.2":
+  version: 12.1.2
+  resolution: "lint-staged@npm:12.1.2"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -7659,7 +7666,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 1c4ec4cbccac7040b7d676f0e4f99d9e8d69360ec99d69cbfb12b6c27708ba8a076741712f1b45e67099fc640b1049a27cba8866a85a299a6048ab39d8e4faa7
+  checksum: ec84ce4f74d0d8fe314bd0b62fb5e0be64af692d1876f68c457116faef61b4b3b79d72df7819c248bfbb20c46e88fbe994128e7351e84bec7048263e00199925
   languageName: node
   linkType: hard
 
@@ -9615,9 +9622,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-typescript2@npm:^0.31.0":
-  version: 0.31.0
-  resolution: "rollup-plugin-typescript2@npm:0.31.0"
+"rollup-plugin-typescript2@npm:^0.31.1":
+  version: 0.31.1
+  resolution: "rollup-plugin-typescript2@npm:0.31.1"
   dependencies:
     "@rollup/pluginutils": ^4.1.0
     "@yarn-tool/resolve-package": ^1.0.36
@@ -9628,13 +9635,13 @@ __metadata:
   peerDependencies:
     rollup: ">=1.26.3"
     typescript: ">=2.4.0"
-  checksum: ff13ea7bc9f7576cdbb925c6ed9adddcef1a0c3cdb641dfadb8311c4c0e2135c1f7b200e8c559ca67f6f61a20edc5271fc383cb747a841ce93793f821faac8af
+  checksum: 29a809aaf7a8c2f81e033cc3214284c2bbe915c3cbe0e31de5930d51b8b031b7ab46dcef9b3f32fd9e5a82a3ad78c6434f35639fc163c940a6ee71b44548673e
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.60.0":
-  version: 2.60.0
-  resolution: "rollup@npm:2.60.0"
+"rollup@npm:^2.60.1":
+  version: 2.60.1
+  resolution: "rollup@npm:2.60.1"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -9642,7 +9649,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: ef267b49a203f3db86d6db8c63de8737d6e3995d988dadf35c1922964c21cafbb95990543cfc716356d31bf6ca3975e58d9195df85b28721ecdc9acd3693acca
+  checksum: 77d7980bd5e619075c7cc67ccbe63263c4e98bd4cc41d4d77d5d4b743cb954adc81d348e38049546645651e2d0e73feeafdcac4474bd8ea333bf5cb882f0bc0c
   languageName: node
   linkType: hard
 
@@ -10862,11 +10869,11 @@ __metadata:
 
 "typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.2#~builtin<compat/typescript>":
   version: 4.5.2
-  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8"
+  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 24a439e062a05e3285a4f0e8a40644116ecdca89f3e908bed01e5a01b9aee747e3bcf0e85fe9e017e5ebf0c0863437c39479f2616f55a244c2d82d37022cdc4f
+  checksum: 53838d56aba6fcc947d63aa0771e5d966b1b648fddafed6e221d7f38c71219c4e036ece8cfe9e35ed80cf5a35ff4eb958934c993f99c3233773ec4f9ccd53f69
   languageName: node
   linkType: hard
 

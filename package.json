@@ -66,7 +66,7 @@
     "@sapphire/ts-config": "^3.1.6",
     "@types/jest": "^27.0.3",
     "@types/koa": "^2.13.4",
-    "@types/node": "^16.11.9",
+    "@types/node": "^16.11.10",
     "@types/validator": "^13.7.0",
     "apollo-server-koa": "^3.5.0",
     "class-validator": "^0.13.2",
@@ -79,14 +79,14 @@
     "jest": "^27.3.1",
     "jest-circus": "^27.3.1",
     "koa": "^2.13.4",
-    "lint-staged": "^12.1.1",
+    "lint-staged": "^12.1.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.4.1",
+    "prettier": "^2.5.0",
     "pretty-quick": "^3.1.2",
     "reflect-metadata": "^0.1.13",
     "replace-in-file": "^6.3.2",
-    "rollup": "^2.60.0",
-    "rollup-plugin-typescript2": "^0.31.0",
+    "rollup": "^2.60.1",
+    "rollup-plugin-typescript2": "^0.31.1",
     "standard-version": "^9.3.2",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
@@ -131,5 +131,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.1.1"
 }

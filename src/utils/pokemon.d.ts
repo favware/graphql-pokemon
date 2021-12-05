@@ -132,7 +132,7 @@ export namespace PokemonTypes {
 
     species: string;
 
-    types: string[];
+    types: `${Capitalize<keyof Types | 'bird'>}`[];
 
     weightkg: number;
   }

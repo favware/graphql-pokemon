@@ -1585,6 +1585,50 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: ['Electric', 'Water'],
       weightkg: 0.1
     }
+  ],
+  [
+    'venomicon',
+    {
+      abilities: { first: 'Stamina' },
+      baseStats: { hp: 85, atk: 70, def: 113, spa: 118, spd: 90, spe: 64 },
+      color: 'Purple',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.8,
+      isEggObtainable: false,
+      num: -67,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/venomicon.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/venomicon.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/venomicon.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/venomicon.png',
+      species: 'venomicon',
+      types: ['Poison', 'Flying'],
+      weightkg: 11.5
+    }
+  ],
+  [
+    'venomiconepilogue',
+    {
+      abilities: { first: 'Tinted Lens' },
+      baseSpecies: 'Venomicon',
+      baseStats: { hp: 85, atk: 110, def: 85, spa: 55, spd: 85, spe: 120 },
+      color: 'Purple',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Epilogue',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.8,
+      isEggObtainable: false,
+      num: -67,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/venomiconepilogue.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/venomiconepilogue.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/venomiconepilogue.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/venomiconepilogue.png',
+      species: 'venomicon-epilogue',
+      types: ['Poison', 'Flying'],
+      weightkg: 12.4
+    }
   ]
 ];
 

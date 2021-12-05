@@ -108,6 +108,8 @@ describe('getAllPokemonSpecies', () => {
       'Duohm',
       'Dorsoil',
       'Protowatt',
+      'Venomicon',
+      'Venomicon-epilogue',
       'Missingno.',
       'Bulbasaur',
       'Ivysaur',
@@ -1002,9 +1004,7 @@ describe('getAllPokemonSpecies', () => {
       'Bergmite',
       'Avalugg',
       'Noibat',
-      'Noivern',
-      'Xerneas',
-      'Xerneas-neutral'
+      'Noivern'
     ]);
   });
 });

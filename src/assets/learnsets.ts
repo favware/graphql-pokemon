@@ -80794,5 +80794,40 @@ export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
       thundershock: ['8L5', '7L5', '4L5'],
       watergun: ['8L1']
     }
+  ],
+  [
+    'venomicon',
+    {
+      acidarmor: ['8L1'],
+      attract: ['8M'],
+      bodypress: ['8M'],
+      bravebird: ['8M'],
+      coil: ['8L1'],
+      discharge: ['8L1'],
+      drillpeck: ['8L1'],
+      earthpower: ['8M'],
+      endure: ['8M'],
+      facade: ['8M'],
+      gunkshot: ['8M'],
+      hurricane: ['8M'],
+      imprison: ['8M'],
+      knockoff: ['8L1'],
+      mysticalfire: ['8M'],
+      nastyplot: ['8M'],
+      poisonjab: ['8M'],
+      protect: ['8M'],
+      rest: ['8M'],
+      roost: ['8L1'],
+      round: ['8M'],
+      sleeptalk: ['8M'],
+      sludgebomb: ['8M'],
+      snore: ['8M'],
+      stealthrock: ['8M'],
+      substitute: ['8M'],
+      swordsdance: ['8M'],
+      thunderwave: ['8M'],
+      toxic: ['8L1'],
+      uturn: ['8M']
+    }
   ]
 ]);

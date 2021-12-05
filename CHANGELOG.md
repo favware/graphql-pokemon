@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.2.5](https://github.com/favware/graphql-pokemon/compare/v6.2.4...v6.2.5) (2021-12-05)
+
+
+### Bug Fixes
+
+* **cap:** add Venomicon ([#582](https://github.com/favware/graphql-pokemon/issues/582)) ([1f3c8cc](https://github.com/favware/graphql-pokemon/commit/1f3c8ccdedcdc5952ba39961454fb478fcda2a16))
+
 ### [6.2.4](https://github.com/favware/graphql-pokemon/compare/v6.2.3...v6.2.4) (2021-12-05)
 
 ### [6.2.3](https://github.com/favware/graphql-pokemon/compare/v6.2.2...v6.2.3) (2021-11-29)

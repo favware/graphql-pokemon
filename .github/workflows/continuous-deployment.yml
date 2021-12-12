@@ -148,16 +148,16 @@ jobs:
           registry-url: https://registry.npmjs.org/
           cache: yarn
       - name: Download generated typings artifact
-        uses: actions/download-artifact@3be87be14a055c47b01d3bd88f8fe02320a9bb60 # renovate: tag=v2
+        uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: typescript_bundle
           path: generated/ts/
       - name: Download stored package.json
-        uses: actions/download-artifact@3be87be14a055c47b01d3bd88f8fe02320a9bb60 # renovate: tag=v2
+        uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@3be87be14a055c47b01d3bd88f8fe02320a9bb60 # renovate: tag=v2
+        uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: changelog_bundle
       - name: Install Dependencies
@@ -184,16 +184,16 @@ jobs:
           scope: '@favware'
           cache: yarn
       - name: Download generated typings artifact
-        uses: actions/download-artifact@3be87be14a055c47b01d3bd88f8fe02320a9bb60 # renovate: tag=v2
+        uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: typescript_bundle
           path: generated/ts/
       - name: Download stored package.json
-        uses: actions/download-artifact@3be87be14a055c47b01d3bd88f8fe02320a9bb60 # renovate: tag=v2
+        uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@3be87be14a055c47b01d3bd88f8fe02320a9bb60 # renovate: tag=v2
+        uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: changelog_bundle
       - name: Install Dependencies

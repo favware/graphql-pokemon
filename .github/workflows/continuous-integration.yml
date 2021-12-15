@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Run ESLint
@@ -49,6 +50,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Run tests
@@ -67,6 +69,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Build Code

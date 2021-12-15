@@ -80,6 +80,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Generate GraphQL Schema code
@@ -107,6 +108,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Configure Git
@@ -145,8 +147,8 @@ jobs:
         uses: actions/setup-node@04c56d2f954f1e4c69436aa54cfef261a018f458 # renovate: tag=v2
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Download generated typings artifact
         uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:

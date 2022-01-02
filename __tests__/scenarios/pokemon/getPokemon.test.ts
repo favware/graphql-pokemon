@@ -410,7 +410,7 @@ describe('getPokemon', () => {
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/espeon.gif',
             smogonPage: 'https://www.smogon.com/dex/ss/pokemon/espeon',
             baseForme: null,
-            smogonTier: 'NU',
+            smogonTier: 'PU',
             species: 'espeon',
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/espeon.gif',
             types: ['Psychic'],

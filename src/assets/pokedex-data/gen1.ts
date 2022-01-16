@@ -2770,7 +2770,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
       num: 65,
-      species: 'alakazam-mmga',
+      species: 'alakazam-mega',
       types: ['Psychic'],
       weightkg: 48,
       aliases: ['megazam']

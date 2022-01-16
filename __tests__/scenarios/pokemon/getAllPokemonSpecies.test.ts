@@ -216,7 +216,7 @@ describe('getAllPokemonSpecies', () => {
       'Abra',
       'Kadabra',
       'Alakazam',
-      'Alakazam-mmga',
+      'Alakazam-mega',
       'Machop',
       'Machoke',
       'Machamp',

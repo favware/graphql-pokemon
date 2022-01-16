@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.2.9](https://github.com/favware/graphql-pokemon/compare/v6.2.8...v6.2.9) (2022-01-16)
+
+
+### Bug Fixes
+
+* fixed species name for alakazam-mega ([3a41adf](https://github.com/favware/graphql-pokemon/commit/3a41adfe1c14f3962bb271f2c78452cdc7637d96))
+
 ### [6.2.8](https://github.com/favware/graphql-pokemon/compare/v6.2.7...v6.2.8) (2022-01-02)
 
 ### [6.2.7](https://github.com/favware/graphql-pokemon/compare/v6.2.6...v6.2.7) (2021-12-19)

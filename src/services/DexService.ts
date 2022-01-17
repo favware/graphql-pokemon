@@ -2,7 +2,7 @@ import { FuzzyPokemonArgs } from '#arguments/FuzzyArgs/FuzzyPokemonArgs';
 import { PokemonArgs } from '#arguments/PokemonArgs/PokemonArgs';
 import { PokemonListArgs } from '#arguments/PokemonArgs/PokemonListArgs';
 import { PokemonNumberArgs } from '#arguments/PokemonArgs/PokemonNumberArgs';
-import pokedex from '#assets/pokedex';
+import { pokedex } from '#assets/pokedex';
 import { Abilities } from '#structures/Abilities';
 import { CatchRate } from '#structures/CatchRate';
 import { EvYields } from '#structures/EvYields';
@@ -16,7 +16,6 @@ import type { GraphQLSet } from '#utils/GraphQLSet';
 import type PokemonTypes from '#utils/pokemon';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { cast, preParseInput, toLowerHyphenCase, toLowerSingleWordCase, toTitleCase } from '#utils/util';
-import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
 export class DexService {
@@ -26,6 +25,7 @@ export class DexService {
   private static readonly bulbapediaBaseUrlPostfix = '_(Pokémon)';
   private static readonly serebiiBaseUrl = 'https://www.serebii.net/pokedex';
   private static readonly smogonBaseUrl = 'https://www.smogon.com/dex';
+  private static readonly fuzzySearch = new FuzzySearch(pokedex, ['num', 'species', 'aliases']);
 
   public static getBySpecies(@Args(() => PokemonArgs) { pokemon }: PokemonArgs): PokemonTypes.DexEntry | undefined {
     return pokedex.get(pokemon);
@@ -45,10 +45,10 @@ export class DexService {
     return allSpecies.slice(offset, offset + take);
   }
 
-  public static findByFuzzy(@Args() { pokemon, offset, take, reverse }: FuzzyPokemonArgs): Fuse.FuseResult<PokemonTypes.DexEntry>[] {
+  public static findByFuzzy(@Args() { pokemon, offset, take, reverse }: FuzzyPokemonArgs): PokemonTypes.DexEntry[] {
     pokemon = this.parseFormeIdentifiers(preParseInput(pokemon));
 
-    const fuzzyResult = new FuzzySearch(pokedex, ['num', 'species', 'aliases'], { threshold: 0.3 }).runFuzzy(pokemon);
+    const fuzzyResult = this.fuzzySearch.runFuzzy(pokemon);
 
     if (!fuzzyResult.length) {
       throw new Error(`No Pokémon found for ${pokemon}`);
@@ -233,6 +233,8 @@ export class DexService {
     addPropertyToClass(pokemonData, 'baseStats', baseStatsData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseStats`);
     addPropertyToClass(pokemonData, 'evYields', evYieldsData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}evYields`);
     addPropertyToClass(pokemonData, 'catchRate', catchRateData, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}catchRate`);
+
+    addPropertyToClass(pokemonData, 'key', data.key, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}key`);
     addPropertyToClass(pokemonData, 'num', data.num, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}num`);
     addPropertyToClass(pokemonData, 'species', data.species, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}species`);
     addPropertyToClass(pokemonData, 'types', data.types, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}types`);

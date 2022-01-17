@@ -1,16 +1,16 @@
 import { FuzzyMoveArgs } from '#arguments/FuzzyArgs/FuzzyMoveArgs';
 import { MoveArgs } from '#arguments/MoveArgs';
-import moves from '#assets/moves';
+import { moves } from '#assets/moves';
 import { Move } from '#structures/Move';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type PokemonTypes from '#utils/pokemon';
 import { parseZCrystal, preParseInput, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
-import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
 export class MoveService {
+  private static readonly fuzzySearch = new FuzzySearch(moves, ['name', 'aliases']);
   public static getByMoveName(@Args(() => MoveArgs) { move }: MoveArgs): PokemonTypes.Move | undefined {
     return moves.get(move);
   }
@@ -18,6 +18,7 @@ export class MoveService {
   public static mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataToMoveGraphQLParameters): Move {
     const move = new Move();
 
+    addPropertyToClass(move, 'key', data.key, requestedFields);
     addPropertyToClass(move, 'name', data.name, requestedFields);
     addPropertyToClass(move, 'desc', data.desc, requestedFields);
     addPropertyToClass(move, 'shortDesc', data.shortDesc, requestedFields);
@@ -42,10 +43,10 @@ export class MoveService {
     return move;
   }
 
-  public static findByFuzzy(@Args(() => FuzzyMoveArgs) { move, offset, reverse, take }: FuzzyMoveArgs): Fuse.FuseResult<PokemonTypes.Move>[] {
+  public static findByFuzzy(@Args(() => FuzzyMoveArgs) { move, offset, reverse, take }: FuzzyMoveArgs): PokemonTypes.Move[] {
     move = preParseInput(move);
 
-    const fuzzyResult = new FuzzySearch(moves, ['name', 'aliases'], { threshold: 0.3, includeScore: true, includeMatches: true }).runFuzzy(move);
+    const fuzzyResult = this.fuzzySearch.runFuzzy(move);
 
     if (reverse) {
       fuzzyResult.reverse();

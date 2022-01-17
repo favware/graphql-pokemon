@@ -1,6 +1,6 @@
 import { LearnsetArgs } from '#arguments/LearnsetArgs';
-import learnsets from '#assets/learnsets';
-import pokedex from '#assets/pokedex';
+import { learnsets } from '#assets/learnsets';
+import { pokedex } from '#assets/pokedex';
 import { Learnset, LearnsetLevelUpMove, LearnsetMove } from '#structures/Learnset';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { GraphQLSet } from '#utils/GraphQLSet';

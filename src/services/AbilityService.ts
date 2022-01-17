@@ -1,16 +1,17 @@
 import { AbilityArgs } from '#arguments/AbilityArgs';
 import { FuzzyAbilityArgs } from '#arguments/FuzzyArgs/FuzzyAbilityArgs';
-import abilities from '#assets/abilities';
+import { abilities } from '#assets/abilities';
 import { Ability } from '#structures/Ability';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type PokemonTypes from '#utils/pokemon';
 import { preParseInput, toTitleCase } from '#utils/util';
-import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
 export class AbilityService {
+  private static readonly fuzzySearch = new FuzzySearch(abilities, ['name', 'aliases']);
+
   public static getByAbilityName(@Args(() => AbilityArgs) { ability }: AbilityArgs): PokemonTypes.Ability | undefined {
     return abilities.get(ability);
   }
@@ -18,6 +19,7 @@ export class AbilityService {
   public static mapAbilityDataToAbilityGraphQL({ data, requestedFields }: MapAbilityDataToAbilityGraphQLParameters): Ability {
     const ability = new Ability();
 
+    addPropertyToClass(ability, 'key', data.key!, requestedFields);
     addPropertyToClass(ability, 'desc', data.desc, requestedFields);
     addPropertyToClass(ability, 'shortDesc', data.shortDesc, requestedFields);
     addPropertyToClass(ability, 'name', data.name, requestedFields);
@@ -44,12 +46,10 @@ export class AbilityService {
     return ability;
   }
 
-  public static findByFuzzy(
-    @Args(() => FuzzyAbilityArgs) { ability, offset, reverse, take }: FuzzyAbilityArgs
-  ): Fuse.FuseResult<PokemonTypes.Ability>[] {
+  public static findByFuzzy(@Args(() => FuzzyAbilityArgs) { ability, offset, reverse, take }: FuzzyAbilityArgs): PokemonTypes.Ability[] {
     ability = preParseInput(ability);
 
-    const fuzzyResult = new FuzzySearch(abilities, ['name', 'aliases'], { threshold: 0.3 }).runFuzzy(ability);
+    const fuzzyResult = this.fuzzySearch.runFuzzy(ability);
 
     if (reverse) {
       fuzzyResult.reverse();

@@ -1,5 +1,5 @@
 import { TypeArgs } from '#arguments/TypeArgs';
-import typechart from '#assets/typechart';
+import { typechart } from '#assets/typechart';
 import { Type } from '#structures/Type';
 import { TypeMatchup } from '#structures/TypeMatchup';
 import { addPropertyToClass } from '#utils/addPropertyToClass';

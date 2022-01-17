@@ -1,16 +1,17 @@
 import { FuzzyItemArgs } from '#arguments/FuzzyArgs/FuzzyItemArgs';
 import { ItemArgs } from '#arguments/ItemArgs';
-import items from '#assets/items';
+import { items } from '#assets/items';
 import { Item } from '#structures/Item';
 import { addPropertyToClass } from '#utils/addPropertyToClass';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import type PokemonTypes from '#utils/pokemon';
 import { preParseInput, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCase } from '#utils/util';
-import type Fuse from 'fuse.js';
 import { Args } from 'type-graphql';
 
 export class ItemService {
+  private static readonly fuzzySearch = new FuzzySearch(items, ['name', 'aliases']);
+
   public static getByItemName(@Args(() => ItemArgs) { item }: ItemArgs): PokemonTypes.Item | undefined {
     return items.get(item);
   }
@@ -18,6 +19,7 @@ export class ItemService {
   public static mapItemDataToItemGraphQL({ data, requestedFields }: MapItemDataToItemGraphQLParameters): Item {
     const item = new Item();
 
+    addPropertyToClass(item, 'key', data.key, requestedFields);
     addPropertyToClass(item, 'desc', data.desc, requestedFields);
     addPropertyToClass(item, 'name', data.name, requestedFields);
     addPropertyToClass(item, 'shortDesc', data.shortDesc, requestedFields);
@@ -38,10 +40,10 @@ export class ItemService {
     return item;
   }
 
-  public static findByFuzzy(@Args(() => FuzzyItemArgs) { item, offset, reverse, take }: FuzzyItemArgs): Fuse.FuseResult<PokemonTypes.Item>[] {
+  public static findByFuzzy(@Args(() => FuzzyItemArgs) { item, offset, reverse, take }: FuzzyItemArgs): PokemonTypes.Item[] {
     item = preParseInput(item);
 
-    const fuzzyResult = new FuzzySearch(items, ['name', 'aliases'], { threshold: 0.3 }).runFuzzy(item);
+    const fuzzyResult = this.fuzzySearch.runFuzzy(item);
 
     if (reverse) {
       fuzzyResult.reverse();

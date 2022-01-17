@@ -4,10 +4,14 @@ import { EvYields } from '#structures/EvYields';
 import { Flavor } from '#structures/Flavor';
 import { Gender } from '#structures/Gender';
 import { Stats } from '#structures/Stats';
+import { pokemons } from '#utils/enums';
 import { Field, Float, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: "A Pokémon's entry" })
 export class Pokemon {
+  @Field(() => pokemons, { description: 'The key of the Pokémon as stored in the API' })
+  public key!: string;
+
   @Field(() => Abilities, { description: 'The abilities for a Pokémon' })
   public abilities!: Abilities;
 

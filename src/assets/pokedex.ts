@@ -12,4 +12,4 @@ import '#dexdata/gen8';
 import '#dexdata/pokestar';
 
 /** The entire PokéDex of Pokémon */
-export default Pokedex;
+export { Pokedex as pokedex };

@@ -1,7 +1,11 @@
+import { moves } from '#utils/enums';
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single Pokémon move entry' })
 export class Move {
+  @Field(() => moves, { description: 'The key of the move as stored in the API' })
+  public key!: string;
+
   @Field(() => Int, { description: 'The accuracy for a move' })
   public accuracy!: number;
 

@@ -1,7 +1,11 @@
+import { items } from '#utils/enums';
 import { Field, Int, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single item entry' })
 export class Item {
+  @Field(() => items, { description: 'The key of the item as stored in the API' })
+  public key!: string;
+
   @Field(() => String, { description: 'Bulbapedia page for an item' })
   public bulbapediaPage!: string;
 

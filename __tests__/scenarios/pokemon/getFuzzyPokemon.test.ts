@@ -739,201 +739,417 @@ describe('getFuzzyPokemon', () => {
 
       expect(data.getFuzzyPokemon).toEqual([
         {
-          evolutions: [
+          evolutions: null,
+          preevolutions: [
             {
-              abilities: { first: 'Flower Veil', second: null, hidden: 'Symbiosis', special: null },
-              eggGroups: ['Fairy'],
-              evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 2, speed: 0 },
-              evolutionLevel: '19',
+              abilities: {
+                first: 'Run Away',
+                second: 'Adaptability',
+                hidden: 'Anticipation',
+                special: null
+              },
+              eggGroups: ['Field'],
+              evYields: {
+                hp: 0,
+                attack: 0,
+                defense: 0,
+                specialattack: 0,
+                specialdefense: 1,
+                speed: 0
+              },
+              evolutionLevel: null,
               flavorTexts: [
                 {
-                  flavor:
-                    'It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle.',
-                  game: 'X'
+                  flavor: 'Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.',
+                  game: 'Red'
                 },
-                { flavor: 'When the flowers of a well-tended flower bed bloom, it appears and celebrates with an elegant dance.', game: 'Y' },
                 {
-                  flavor:
-                    'It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle.',
-                  game: 'Omega Ruby'
+                  flavor: 'Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.',
+                  game: 'Blue'
+                },
+                {
+                  flavor: 'Its genetic code is unstable, so it could evolve in a variety of ways. There are only a few alive.',
+                  game: 'Yellow'
                 }
               ],
               forme: null,
               formeLetter: null,
-              gender: { female: '100%', male: '0%' },
-              height: 0.2,
+              gender: { female: '12.5%', male: '87.5%' },
+              height: 0.3,
               isEggObtainable: true,
-              backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/floette.gif',
+              backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/eevee.gif',
               levellingRate: 'Medium Fast',
-              maximumHatchTime: 5396,
-              minimumHatchTime: 5140,
-              num: 670,
-              otherFormes: null,
-              serebiiPage: 'https://www.serebii.net/pokedex-sm/670.shtml',
-              shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/floette.gif',
-              shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/floette.gif',
-              smogonPage: 'https://www.smogon.com/dex/sm/pokemon/floette',
-              baseForme: 'Red',
-              smogonTier: 'Past',
-              species: 'floette',
-              sprite: 'https://play.pokemonshowdown.com/sprites/ani/floette.gif',
-              types: ['Fairy'],
+              maximumHatchTime: 9251,
+              minimumHatchTime: 8995,
+              num: 133,
+              otherFormes: ['eeveestarter', 'eeveegmax'],
+              serebiiPage: 'https://www.serebii.net/pokedex-swsh/eevee',
+              shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/eevee.gif',
+              shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/eevee.gif',
+              smogonPage: 'https://www.smogon.com/dex/ss/pokemon/eevee',
+              baseForme: null,
+              smogonTier: 'LC',
+              species: 'eevee',
+              sprite: 'https://play.pokemonshowdown.com/sprites/ani/eevee.gif',
+              types: ['Normal'],
               baseSpecies: null,
-              baseStats: { hp: 54, attack: 45, defense: 47, specialattack: 75, specialdefense: 98, speed: 52 },
-              baseStatsTotal: 371,
-              bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/floette_(Pokémon)',
-              catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
-              color: 'White',
-              cosmeticFormes: ['Floette-Blue', 'Floette-Orange', 'Floette-White', 'Floette-Yellow']
+              baseStats: {
+                hp: 55,
+                attack: 55,
+                defense: 50,
+                specialattack: 45,
+                specialdefense: 65,
+                speed: 55
+              },
+              baseStatsTotal: 325,
+              bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/eevee_(Pokémon)',
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
+              color: 'Brown',
+              cosmeticFormes: null
             }
           ],
-          preevolutions: null,
-          abilities: { first: 'Flower Veil', second: null, hidden: 'Symbiosis', special: null },
-          eggGroups: ['Fairy'],
-          evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 1, speed: 0 },
-          evolutionLevel: null,
+          abilities: {
+            first: 'Synchronize',
+            second: null,
+            hidden: 'Magic Bounce',
+            special: null
+          },
+          eggGroups: ['Field'],
+          evYields: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            specialattack: 2,
+            specialdefense: 0,
+            speed: 0
+          },
+          evolutionLevel: 'Level up during Daytime with happiness of at least 220',
           flavorTexts: [
             {
-              flavor: 'It draws out and controls the hidden power of flowers. The flower Flabébé holds is most likely part of its body.',
-              game: 'X'
+              flavor: "It uses the fine hair that covers its body to sense air currents and predict its enemy's actions.",
+              game: 'Gold'
             },
             {
-              flavor:
-                "When it finds a flower it likes, it dwells on that flower its whole life long. It floats in the wind's embrace with an untroubled heart.",
-              game: 'Y'
+              flavor: "By reading air currents, it can predict things such as the weather or its foe's next move.",
+              game: 'Silver'
             },
             {
-              flavor: 'It draws out and controls the hidden power of flowers. The flower Flabébé holds is most likely part of its body.',
-              game: 'Omega Ruby'
+              flavor: "The tip of its forked tail quivers when it is predicting its opponent's next move.",
+              game: 'Crystal'
             }
           ],
           forme: null,
           formeLetter: null,
-          gender: { female: '100%', male: '0%' },
-          height: 0.1,
+          gender: { female: '12.5%', male: '87.5%' },
+          height: 0.9,
           isEggObtainable: true,
-          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/flabebe.gif',
+          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/espeon.gif',
           levellingRate: 'Medium Fast',
-          maximumHatchTime: 5396,
-          minimumHatchTime: 5140,
-          num: 669,
+          maximumHatchTime: 9251,
+          minimumHatchTime: 8995,
+          num: 196,
           otherFormes: null,
-          serebiiPage: 'https://www.serebii.net/pokedex-sm/669.shtml',
-          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/flabebe.gif',
-          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/flabebe.gif',
-          smogonPage: 'https://www.smogon.com/dex/sm/pokemon/flabebe',
-          baseForme: 'Red',
-          smogonTier: 'Past',
-          species: 'flabebe',
-          sprite: 'https://play.pokemonshowdown.com/sprites/ani/flabebe.gif',
-          types: ['Fairy'],
-          baseSpecies: null,
-          baseStats: { hp: 44, attack: 38, defense: 39, specialattack: 61, specialdefense: 79, speed: 42 },
-          baseStatsTotal: 303,
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Flabébé_(Pokémon)',
-          catchRate: { base: 225, percentageWithOrdinaryPokeballAtFullHealth: '39.9%' },
-          color: 'White',
-          cosmeticFormes: ['Flabébé-Blue', 'Flabébé-Orange', 'Flabébé-White', 'Flabébé-Yellow']
-        },
-        {
-          evolutions: null,
-          preevolutions: null,
-          abilities: { first: 'Prism Armor', second: null, hidden: null, special: null },
-          eggGroups: ['Undiscovered'],
-          evYields: { hp: 0, attack: 3, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
-          evolutionLevel: null,
-          flavorTexts: [
-            {
-              flavor:
-                'This is its form while it is devouring the light of Solgaleo. It pounces on foes and then slashes them with the claws on its four limbs and back.',
-              game: 'Ultra Sun'
-            },
-            {
-              flavor: "This is Necrozma's form while it's absorbing the power of Solgaleo, making it extremely ferocious and impossible to control.",
-              game: 'Ultra Moon'
-            },
-            {
-              flavor:
-                "When it dominates Solgaleo, it takes on this form. It's a vicious Pokémon, mangling prey with its many claws, including those on its back.",
-              game: 'Sword'
-            }
-          ],
-          forme: null,
-          formeLetter: null,
-          gender: { female: '0%', male: '0%' },
-          height: 3.8,
-          isEggObtainable: false,
-          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/necrozma-dusk-mane.gif',
-          levellingRate: 'Slow',
-          maximumHatchTime: 31096,
-          minimumHatchTime: 30840,
-          num: 800,
-          otherFormes: null,
-          serebiiPage: 'https://www.serebii.net/pokedex-swsh/necrozma',
-          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/necrozma-dusk-mane.gif',
-          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/necrozma-dusk-mane.gif',
-          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/necrozma-dusk-mane',
+          serebiiPage: 'https://www.serebii.net/pokedex-swsh/espeon',
+          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/espeon.gif',
+          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/espeon.gif',
+          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/espeon',
           baseForme: null,
-          smogonTier: 'Uber',
-          species: 'necrozma-dusk-mane',
-          sprite: 'https://play.pokemonshowdown.com/sprites/ani/necrozma-dusk-mane.gif',
-          types: ['Psychic', 'Steel'],
-          baseSpecies: 'Necrozma',
-          baseStats: { hp: 97, attack: 157, defense: 127, specialattack: 113, specialdefense: 109, speed: 77 },
-          baseStatsTotal: 680,
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pokémon)',
-          catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
-          color: 'Yellow',
+          smogonTier: 'PU',
+          species: 'espeon',
+          sprite: 'https://play.pokemonshowdown.com/sprites/ani/espeon.gif',
+          types: ['Psychic'],
+          baseSpecies: null,
+          baseStats: {
+            hp: 65,
+            attack: 65,
+            defense: 60,
+            specialattack: 130,
+            specialdefense: 95,
+            speed: 110
+          },
+          baseStatsTotal: 525,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/espeon_(Pokémon)',
+          catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+          color: 'Purple',
           cosmeticFormes: null
         },
         {
           evolutions: null,
-          preevolutions: null,
-          abilities: { first: 'Prism Armor', second: null, hidden: null, special: null },
-          eggGroups: ['Undiscovered'],
-          evYields: { hp: 0, attack: 0, defense: 0, specialattack: 3, specialdefense: 0, speed: 0 },
-          evolutionLevel: null,
+          preevolutions: [
+            {
+              abilities: {
+                first: 'Swarm',
+                second: 'Shed Skin',
+                hidden: 'No Guard',
+                special: null
+              },
+              eggGroups: ['Bug'],
+              evYields: {
+                hp: 0,
+                attack: 1,
+                defense: 0,
+                specialattack: 0,
+                specialdefense: 0,
+                speed: 0
+              },
+              evolutionLevel: null,
+              flavorTexts: [
+                {
+                  flavor: 'These mysterious Pokémon evolve when they receive electrical stimulation while they are in the same place as Shelmet.',
+                  game: 'Black'
+                },
+                {
+                  flavor: 'When they feel threatened, they spit an acidic liquid to drive attackers away. This Pokémon targets Shelmet.',
+                  game: 'White'
+                },
+                {
+                  flavor: 'For some reason they evolve when they receive electrical energy while they are attacking Shelmet.',
+                  game: 'Black 2'
+                }
+              ],
+              forme: null,
+              formeLetter: null,
+              gender: { female: '50%', male: '50%' },
+              height: 0.5,
+              isEggObtainable: true,
+              backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/karrablast.gif',
+              levellingRate: 'Medium Fast',
+              maximumHatchTime: 4111,
+              minimumHatchTime: 3855,
+              num: 588,
+              otherFormes: null,
+              serebiiPage: 'https://www.serebii.net/pokedex-swsh/karrablast',
+              shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/karrablast.gif',
+              shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/karrablast.gif',
+              smogonPage: 'https://www.smogon.com/dex/ss/pokemon/karrablast',
+              baseForme: null,
+              smogonTier: 'LC',
+              species: 'karrablast',
+              sprite: 'https://play.pokemonshowdown.com/sprites/ani/karrablast.gif',
+              types: ['Bug'],
+              baseSpecies: null,
+              baseStats: {
+                hp: 50,
+                attack: 75,
+                defense: 45,
+                specialattack: 40,
+                specialdefense: 45,
+                speed: 60
+              },
+              baseStatsTotal: 315,
+              bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/karrablast_(Pokémon)',
+              catchRate: {
+                base: 200,
+                percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+              },
+              color: 'Blue',
+              cosmeticFormes: null
+            }
+          ],
+          abilities: {
+            first: 'Swarm',
+            second: 'Shell Armor',
+            hidden: 'Overcoat',
+            special: null
+          },
+          eggGroups: ['Bug'],
+          evYields: {
+            hp: 0,
+            attack: 2,
+            defense: 0,
+            specialattack: 0,
+            specialdefense: 0,
+            speed: 0
+          },
+          evolutionLevel: 'Trade for Shelmet',
           flavorTexts: [
             {
-              flavor: 'Lunala no longer has a will of its own. Now under the control of Necrozma, it continuously expels all of its energy.',
-              game: 'Ultra Sun'
+              flavor: 'They fly around at high speed, striking with their pointed spears. Even when in trouble, they face opponents bravely.',
+              game: 'Black'
             },
             {
-              flavor:
-                "This is its form while it's devouring the light of Lunala. It grasps foes in its giant claws and rips them apart with brute force.",
-              game: 'Ultra Moon'
+              flavor: 'These Pokémon evolve by wearing the shell covering of a Shelmet. The steel armor protects their whole body.',
+              game: 'White'
             },
             {
-              flavor: 'Necrozma has subjugated Lunala entirely, forcing the unfortunate Pokémon to emit its light energy for Necrozma to consume.',
-              game: 'Sword'
+              flavor: 'Wearing the shell covering they stole from Shelmet, they defend themselves and attack with two lances.',
+              game: 'Black 2'
             }
           ],
           forme: null,
           formeLetter: null,
-          gender: { female: '0%', male: '0%' },
-          height: 4.2,
-          isEggObtainable: false,
-          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/necrozma-dawn-wings.gif',
-          levellingRate: 'Slow',
-          maximumHatchTime: 31096,
-          minimumHatchTime: 30840,
-          num: 800,
+          gender: { female: '50%', male: '50%' },
+          height: 1,
+          isEggObtainable: true,
+          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/escavalier.gif',
+          levellingRate: 'Medium Fast',
+          maximumHatchTime: 4111,
+          minimumHatchTime: 3855,
+          num: 589,
           otherFormes: null,
-          serebiiPage: 'https://www.serebii.net/pokedex-swsh/necrozma',
-          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/necrozma-dawn-wings.gif',
-          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/necrozma-dawn-wings.gif',
-          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/necrozma-dawn-wings',
+          serebiiPage: 'https://www.serebii.net/pokedex-swsh/escavalier',
+          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/escavalier.gif',
+          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/escavalier.gif',
+          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/escavalier',
           baseForme: null,
-          smogonTier: 'Uber',
-          species: 'necrozma-dawn-wings',
-          sprite: 'https://play.pokemonshowdown.com/sprites/ani/necrozma-dawn-wings.gif',
-          types: ['Psychic', 'Ghost'],
-          baseSpecies: 'Necrozma',
-          baseStats: { hp: 97, attack: 113, defense: 109, specialattack: 157, specialdefense: 127, speed: 77 },
-          baseStatsTotal: 680,
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pokémon)',
+          smogonTier: 'NU',
+          species: 'escavalier',
+          sprite: 'https://play.pokemonshowdown.com/sprites/ani/escavalier.gif',
+          types: ['Bug', 'Steel'],
+          baseSpecies: null,
+          baseStats: {
+            hp: 70,
+            attack: 135,
+            defense: 105,
+            specialattack: 60,
+            specialdefense: 105,
+            speed: 20
+          },
+          baseStatsTotal: 495,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/escavalier_(Pokémon)',
+          catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
+          color: 'Gray',
+          cosmeticFormes: null
+        },
+        {
+          evolutions: [
+            {
+              abilities: {
+                first: 'Intimidate',
+                second: 'Shed Skin',
+                hidden: 'Unnerve',
+                special: null
+              },
+              eggGroups: ['Field', 'Dragon'],
+              evYields: {
+                hp: 0,
+                attack: 2,
+                defense: 0,
+                specialattack: 0,
+                specialdefense: 0,
+                speed: 0
+              },
+              evolutionLevel: '22',
+              flavorTexts: [
+                {
+                  flavor: 'It is rumored that the ferocious warning markings on its belly differ from area to area.',
+                  game: 'Red'
+                },
+                {
+                  flavor: 'It is rumored that the ferocious warning markings on its belly differ from area to area.',
+                  game: 'Blue'
+                },
+                {
+                  flavor: 'The frightening patterns on its belly have been studied. Six variations have been confirmed.',
+                  game: 'Yellow'
+                }
+              ],
+              forme: null,
+              formeLetter: null,
+              gender: { female: '50%', male: '50%' },
+              height: 3.5,
+              isEggObtainable: true,
+              backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/arbok.gif',
+              levellingRate: 'Medium Fast',
+              maximumHatchTime: 5396,
+              minimumHatchTime: 5140,
+              num: 24,
+              otherFormes: null,
+              serebiiPage: 'https://www.serebii.net/pokedex-sm/024.shtml',
+              shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/arbok.gif',
+              shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/arbok.gif',
+              smogonPage: 'https://www.smogon.com/dex/sm/pokemon/arbok',
+              baseForme: null,
+              smogonTier: 'Past',
+              species: 'arbok',
+              sprite: 'https://play.pokemonshowdown.com/sprites/ani/arbok.gif',
+              types: ['Poison'],
+              baseSpecies: null,
+              baseStats: {
+                hp: 60,
+                attack: 95,
+                defense: 69,
+                specialattack: 65,
+                specialdefense: 79,
+                speed: 80
+              },
+              baseStatsTotal: 448,
+              bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/arbok_(Pokémon)',
+              catchRate: {
+                base: 90,
+                percentageWithOrdinaryPokeballAtFullHealth: '20.1%'
+              },
+              color: 'Purple',
+              cosmeticFormes: null
+            }
+          ],
+          preevolutions: null,
+          abilities: {
+            first: 'Intimidate',
+            second: 'Shed Skin',
+            hidden: 'Unnerve',
+            special: null
+          },
+          eggGroups: ['Field', 'Dragon'],
+          evYields: {
+            hp: 0,
+            attack: 1,
+            defense: 0,
+            specialattack: 0,
+            specialdefense: 0,
+            speed: 0
+          },
+          evolutionLevel: null,
+          flavorTexts: [
+            {
+              flavor: 'Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.',
+              game: 'Red'
+            },
+            {
+              flavor: 'Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.',
+              game: 'Blue'
+            },
+            {
+              flavor: 'The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.',
+              game: 'Yellow'
+            }
+          ],
+          forme: null,
+          formeLetter: null,
+          gender: { female: '50%', male: '50%' },
+          height: 2,
+          isEggObtainable: true,
+          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/ekans.gif',
+          levellingRate: 'Medium Fast',
+          maximumHatchTime: 5396,
+          minimumHatchTime: 5140,
+          num: 23,
+          otherFormes: null,
+          serebiiPage: 'https://www.serebii.net/pokedex-sm/023.shtml',
+          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/ekans.gif',
+          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/ekans.gif',
+          smogonPage: 'https://www.smogon.com/dex/sm/pokemon/ekans',
+          baseForme: null,
+          smogonTier: 'Past',
+          species: 'ekans',
+          sprite: 'https://play.pokemonshowdown.com/sprites/ani/ekans.gif',
+          types: ['Poison'],
+          baseSpecies: null,
+          baseStats: {
+            hp: 35,
+            attack: 60,
+            defense: 44,
+            specialattack: 40,
+            specialdefense: 54,
+            speed: 55
+          },
+          baseStatsTotal: 288,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/ekans_(Pokémon)',
           catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
-          color: 'Blue',
+          color: 'Purple',
           cosmeticFormes: null
         }
       ]);
@@ -947,303 +1163,196 @@ describe('getFuzzyPokemon', () => {
 
       expect(data.getFuzzyPokemon).toEqual([
         {
-          abilities: {
-            first: 'Punk Rock',
-            hidden: 'Technician',
-            second: 'Minus',
-            special: null
-          },
-          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/toxtricity-low-key-gmax.gif',
-          baseForme: null,
-          baseSpecies: 'Toxtricity-Low-Key',
-          baseStats: {
-            attack: 98,
-            defense: 70,
-            hp: 75,
-            specialattack: 114,
-            specialdefense: 70,
-            speed: 75
-          },
-          baseStatsTotal: 502,
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Toxtricity-Low-Key_(Pokémon)',
-          catchRate: {
-            base: 45,
-            percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-          },
-          color: 'Purple',
-          cosmeticFormes: null,
-          eggGroups: ['Human-Like'],
-          evYields: {
-            attack: 0,
-            defense: 0,
-            hp: 0,
-            specialattack: 2,
-            specialdefense: 0,
-            speed: 0
-          },
-          evolutionLevel: null,
           evolutions: null,
-          flavorTexts: [
-            {
-              flavor:
-                "When this Pokémon sounds as if it's strumming a guitar, it's actually clawing at the protrusions on its chest to generate electricity.",
-              game: 'Sword'
-            },
-            {
-              flavor: 'This short-tempered and aggressive Pokémon chugs stagnant water to absorb any toxins it might contain.',
-              game: 'Shield'
-            }
-          ],
-          forme: null,
-          formeLetter: null,
-          gender: {
-            female: '50%',
-            male: '50%'
-          },
-          height: 5,
-          isEggObtainable: true,
-          levellingRate: 'Medium Slow',
-          maximumHatchTime: 6681,
-          minimumHatchTime: 6425,
-          num: 849,
-          otherFormes: null,
           preevolutions: null,
-          serebiiPage: 'https://www.serebii.net/pokedex-swsh/toxtricity-low-key',
-          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/toxtricity-low-key-gmax.gif',
-          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/toxtricity-low-key-gmax.gif',
-          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/toxtricity-low-key-gmax',
-          smogonTier: 'Gigantamax',
-          species: 'toxtricity-low-key-gmax',
-          sprite: 'https://play.pokemonshowdown.com/sprites/ani/toxtricity-low-key-gmax.gif',
-          types: ['Electric', 'Poison']
-        },
-        {
-          abilities: {
-            first: 'Vital Spirit',
-            hidden: 'Ice Body',
-            second: 'Screen Cleaner',
-            special: null
-          },
-          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/Mr. Mime-Galar.gif',
-          baseForme: null,
-          baseSpecies: 'Mr. Mime',
-          baseStats: {
-            attack: 65,
-            defense: 65,
-            hp: 50,
-            specialattack: 90,
-            specialdefense: 90,
-            speed: 100
-          },
-          baseStatsTotal: 460,
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Mr. Mime_(Pokémon)',
-          catchRate: {
-            base: 45,
-            percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-          },
-          color: 'White',
-          cosmeticFormes: null,
-          eggGroups: ['Human-Like'],
-          evYields: {
-            attack: 0,
-            defense: 0,
-            hp: 0,
-            specialattack: 0,
-            specialdefense: 2,
-            speed: 0
-          },
-          evolutionLevel: null,
-          evolutions: [
-            {
-              abilities: {
-                first: 'Tangled Feet',
-                hidden: 'Ice Body',
-                second: 'Screen Cleaner',
-                special: null
-              },
-              backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/mrrime.gif',
-              baseForme: null,
-              baseSpecies: null,
-              baseStats: {
-                attack: 85,
-                defense: 75,
-                hp: 80,
-                specialattack: 110,
-                specialdefense: 100,
-                speed: 70
-              },
-              baseStatsTotal: 520,
-              bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Mr. Rime_(Pokémon)',
-              catchRate: {
-                base: 45,
-                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-              },
-              color: 'Purple',
-              cosmeticFormes: null,
-              eggGroups: ['Human-Like'],
-              evYields: {
-                attack: 0,
-                defense: 0,
-                hp: 0,
-                specialattack: 3,
-                specialdefense: 0,
-                speed: 0
-              },
-              evolutionLevel: '42',
-              flavorTexts: [
-                {
-                  flavor: "It's highly skilled at tap-dancing. It waves its cane of ice in time with its graceful movements.",
-                  game: 'Sword'
-                },
-                {
-                  flavor: 'Its amusing movements make it very popular. It releases its psychic power from the pattern on its belly.',
-                  game: 'Shield'
-                }
-              ],
-              forme: null,
-              formeLetter: null,
-              gender: {
-                female: '50%',
-                male: '50%'
-              },
-              height: 1.5,
-              isEggObtainable: true,
-              levellingRate: 'Medium Fast',
-              maximumHatchTime: 6681,
-              minimumHatchTime: 6425,
-              num: 866,
-              otherFormes: null,
-              serebiiPage: 'https://www.serebii.net/pokedex-swsh/mr.rime',
-              shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/mrrime.gif',
-              shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/mrrime.gif',
-              smogonPage: 'https://www.smogon.com/dex/ss/pokemon/mr--rime',
-              smogonTier: '(PU)',
-              species: 'Mr. Rime',
-              sprite: 'https://play.pokemonshowdown.com/sprites/ani/mrrime.gif',
-              types: ['Ice', 'Psychic']
-            }
-          ],
-          flavorTexts: [
-            {
-              flavor:
-                'Its talent is tap-dancing. It can also manipulate temperatures to create a floor of ice, which this Pokémon can kick up to use as a barrier.',
-              game: 'Sword'
-            },
-            {
-              flavor: "It can radiate chilliness from the bottoms of its feet. It'll spend the whole day tap-dancing on a frozen floor.",
-              game: 'Shield'
-            }
-          ],
-          forme: null,
-          formeLetter: null,
-          gender: {
-            female: '50%',
-            male: '50%'
-          },
-          height: 1.4,
-          isEggObtainable: true,
-          levellingRate: 'Medium Fast',
-          maximumHatchTime: 6681,
-          minimumHatchTime: 6425,
-          num: 122,
-          otherFormes: null,
-          preevolutions: null,
-          serebiiPage: 'https://www.serebii.net/pokedex-swsh/mr.mime',
-          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/Mr. Mime-Galar.gif',
-          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/Mr. Mime-Galar.gif',
-          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/mr--mime-galar',
-          smogonTier: 'NFE',
-          species: 'Mr. Mime-Galar',
-          sprite: 'https://play.pokemonshowdown.com/sprites/ani/Mr. Mime-Galar.gif',
-          types: ['Ice', 'Psychic']
-        },
-        {
-          abilities: {
-            first: 'Volt Absorb',
-            hidden: null,
-            second: null,
-            special: null
-          },
-          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/thundurus-therian.gif',
-          baseForme: null,
-          baseSpecies: 'Thundurus',
-          baseStats: {
-            attack: 105,
-            defense: 70,
-            hp: 79,
-            specialattack: 145,
-            specialdefense: 80,
-            speed: 101
-          },
-          baseStatsTotal: 580,
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Thundurus_(Pokémon)',
-          catchRate: {
-            base: 3,
-            percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
-          },
-          color: 'Blue',
-          cosmeticFormes: null,
+          abilities: { first: 'Unseen Fist', second: null, hidden: null, special: null },
           eggGroups: ['Undiscovered'],
           evYields: {
-            attack: 0,
-            defense: 0,
             hp: 0,
-            specialattack: 3,
+            attack: 3,
+            defense: 0,
+            specialattack: 0,
             specialdefense: 0,
             speed: 0
           },
           evolutionLevel: null,
-          evolutions: null,
           flavorTexts: [
             {
-              flavor: 'Countless charred remains mar the landscape of places through which Thundurus has passed.',
-              game: 'Black'
+              flavor:
+                "As it waits for the right moment to unleash its Gigantamax power, this Pokémon maintains a perfect one-legged stance. It won't even twitch.",
+              game: 'Sword'
             },
             {
-              flavor: 'The spikes on its tail discharge immense bolts of lightning. It flies around the Unova region firing off lightning bolts.',
-              game: 'White'
-            },
-            {
-              flavor: 'As it flies around, it shoots lightning all over the place and causes forest fires. It is therefore disliked.',
-              game: 'Black 2'
+              flavor: 'All it takes is a glare from this Pokémon to take the lives of those with evil in their hearts — or so they say.',
+              game: 'Shield'
             }
           ],
           forme: null,
           formeLetter: null,
-          gender: {
-            female: '0%',
-            male: '100%'
-          },
+          gender: { female: '12.5%', male: '87.5%' },
           height: 3,
           isEggObtainable: false,
+          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/urshifu-rapid-strike-gmax.gif',
           levellingRate: 'Slow',
           maximumHatchTime: 31096,
           minimumHatchTime: 30840,
-          num: 642,
+          num: 892,
           otherFormes: null,
+          serebiiPage: 'https://www.serebii.net/pokedex-swsh/urshifu-rapid-strike',
+          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/urshifu-rapid-strike-gmax.gif',
+          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/urshifu-rapid-strike-gmax.gif',
+          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/urshifu-rapid-strike-gmax',
+          baseForme: null,
+          smogonTier: 'Gigantamax',
+          species: 'urshifu-rapid-strike-gmax',
+          sprite: 'https://play.pokemonshowdown.com/sprites/ani/urshifu-rapid-strike-gmax.gif',
+          types: ['Fighting', 'Water'],
+          baseSpecies: 'Urshifu-Rapid-Strike',
+          baseStats: {
+            hp: 100,
+            attack: 130,
+            defense: 100,
+            specialattack: 63,
+            specialdefense: 60,
+            speed: 97
+          },
+          baseStatsTotal: 550,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Urshifu-Rapid-Strike_(Pokémon)',
+          catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+          color: 'Gray',
+          cosmeticFormes: null
+        },
+        {
+          evolutions: null,
           preevolutions: null,
-          serebiiPage: 'https://www.serebii.net/pokedex-swsh/thundurus',
-          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/thundurus-therian.gif',
-          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/thundurus-therian.gif',
-          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/thundurus-therian',
-          smogonTier: 'UU',
-          species: 'thundurus-therian',
-          sprite: 'https://play.pokemonshowdown.com/sprites/ani/thundurus-therian.gif',
-          types: ['Electric', 'Flying']
+          abilities: {
+            first: 'Flash Fire',
+            second: 'White Smoke',
+            hidden: 'Flame Body',
+            special: null
+          },
+          eggGroups: ['Bug'],
+          evYields: {
+            hp: 0,
+            attack: 2,
+            defense: 0,
+            specialattack: 0,
+            specialdefense: 0,
+            speed: 0
+          },
+          evolutionLevel: null,
+          flavorTexts: [
+            {
+              flavor:
+                'Gigantamax energy has evoked a rise in its body temperature, now reaching over 1,800 degrees Fahrenheit. Its heat waves incinerate its enemies.',
+              game: 'Sword'
+            },
+            {
+              flavor: 'The heat that comes off a Gigantamax Centiskorch may destabilize air currents. Sometimes it can even cause storms.',
+              game: 'Shield'
+            }
+          ],
+          forme: null,
+          formeLetter: null,
+          gender: { female: '50%', male: '50%' },
+          height: 10,
+          isEggObtainable: true,
+          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/centiskorch-gmax.gif',
+          levellingRate: 'Medium Fast',
+          maximumHatchTime: 5396,
+          minimumHatchTime: 5140,
+          num: 851,
+          otherFormes: null,
+          serebiiPage: 'https://www.serebii.net/pokedex-swsh/centiskorch',
+          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/centiskorch-gmax.gif',
+          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/centiskorch-gmax.gif',
+          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/centiskorch-gmax',
+          baseForme: null,
+          smogonTier: 'Gigantamax',
+          species: 'centiskorch-gmax',
+          sprite: 'https://play.pokemonshowdown.com/sprites/ani/centiskorch-gmax.gif',
+          types: ['Fire', 'Bug'],
+          baseSpecies: 'Centiskorch',
+          baseStats: {
+            hp: 100,
+            attack: 15,
+            defense: 65,
+            specialattack: 90,
+            specialdefense: 90,
+            speed: 65
+          },
+          baseStatsTotal: 425,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Centiskorch_(Pokémon)',
+          catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
+          color: 'Red',
+          cosmeticFormes: null
+        },
+        {
+          evolutions: null,
+          preevolutions: null,
+          abilities: {
+            first: 'Pressure',
+            second: 'Unnerve',
+            hidden: 'Mirror Armor',
+            special: null
+          },
+          eggGroups: ['Flying'],
+          evYields: {
+            hp: 0,
+            attack: 0,
+            defense: 3,
+            specialattack: 0,
+            specialdefense: 0,
+            speed: 0
+          },
+          evolutionLevel: null,
+          flavorTexts: [
+            {
+              flavor:
+                'Imbued with Gigantamax energy, its wings can whip up winds more forceful than any a hurricane could muster. The gusts blow everything away.',
+              game: 'Sword'
+            },
+            {
+              flavor: 'The eight feathers on its back are called blade birds, and they can launch off its body to attack foes independently.',
+              game: 'Shield'
+            }
+          ],
+          forme: null,
+          formeLetter: null,
+          gender: { female: '50%', male: '50%' },
+          height: 14,
+          isEggObtainable: true,
+          backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/corviknight-gmax.gif',
+          levellingRate: 'Medium Slow',
+          maximumHatchTime: 4111,
+          minimumHatchTime: 3855,
+          num: 823,
+          otherFormes: null,
+          serebiiPage: 'https://www.serebii.net/pokedex-swsh/corviknight',
+          shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/corviknight-gmax.gif',
+          shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/corviknight-gmax.gif',
+          smogonPage: 'https://www.smogon.com/dex/ss/pokemon/corviknight-gmax',
+          baseForme: null,
+          smogonTier: 'Gigantamax',
+          species: 'corviknight-gmax',
+          sprite: 'https://play.pokemonshowdown.com/sprites/ani/corviknight-gmax.gif',
+          types: ['Flying', 'Steel'],
+          baseSpecies: 'Corviknight',
+          baseStats: {
+            hp: 98,
+            attack: 87,
+            defense: 105,
+            specialattack: 53,
+            specialdefense: 85,
+            speed: 67
+          },
+          baseStatsTotal: 495,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Corviknight_(Pokémon)',
+          catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+          color: 'Blue',
+          cosmeticFormes: null
         }
       ]);
-    });
-  });
-
-  describe('Error Requests', () => {
-    test('GIVEN an invalid Pokémon THEN returns error', async () => {
-      const data = await gCall({
-        source: getFuzzyPokemonSpecies,
-        variableValues: { pokemon: 'totally_invalid_pokemon' }
-      });
-
-      expect(data.errors).toHaveLength(1);
-      expect(data.errors[0].message).toBe('No Pokémon found for totally_invalid_pokemon');
     });
   });
 });

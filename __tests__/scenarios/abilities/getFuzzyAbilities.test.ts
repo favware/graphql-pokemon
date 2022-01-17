@@ -45,13 +45,13 @@ describe('getFuzzyAbility', () => {
 
       expect(data.getFuzzyAbility).toEqual([
         {
-          desc: "This Pokémon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
+          desc: 'While this Pokémon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.',
           isFieldAbility: null,
-          name: 'Adaptability',
-          shortDesc: "This Pokémon's same-type attack bonus (STAB) is 2 instead of 1.5.",
-          serebiiPage: 'https://www.serebii.net/abilitydex/adaptability.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/adaptability',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Adaptability_(Ability)'
+          name: 'Damp',
+          shortDesc: 'Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.',
+          serebiiPage: 'https://www.serebii.net/abilitydex/damp.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/damp',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Damp_(Ability)'
         },
         {
           desc: "This Pokémon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
@@ -63,13 +63,13 @@ describe('getFuzzyAbility', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Aerilate_(Ability)'
         },
         {
-          desc: "If this Pokémon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokémon has the Ability Damp, this effect is prevented.",
+          desc: null,
           isFieldAbility: null,
-          name: 'Aftermath',
-          shortDesc: "If this Pokémon is KOed with a contact move, that move's user loses 1/4 its max HP.",
-          serebiiPage: 'https://www.serebii.net/abilitydex/aftermath.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/aftermath',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Aftermath_(Ability)'
+          name: 'Air Lock',
+          shortDesc: 'While this Pokémon is active, the effects of weather conditions are disabled.',
+          serebiiPage: 'https://www.serebii.net/abilitydex/air_lock.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/air_lock',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Air_Lock_(Ability)'
         }
       ]);
     });
@@ -82,45 +82,33 @@ describe('getFuzzyAbility', () => {
 
       expect(data.getFuzzyAbility).toEqual([
         {
-          desc: 'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are "No Ability", As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.',
-          isFieldAbility: null,
-          name: 'Power of Alchemy',
-          shortDesc: 'This Pokémon copies the Ability of an ally that faints.',
-          serebiiPage: 'https://www.serebii.net/abilitydex/power_of_alchemy.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/power_of_alchemy',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Power_Of_Alchemy_(Ability)'
-        },
-        {
-          desc: "Prevents other Pokémon from lowering this Pokémon's stat stages. Moongeist Beam, Sunsteel Strike, and the Abilities Mold Breaker, Teravolt, and Turboblaze cannot ignore this Ability.",
-          isFieldAbility: null,
-          name: 'Full Metal Body',
-          shortDesc: "Prevents other Pokémon from lowering this Pokémon's stat stages.",
-          serebiiPage: 'https://www.serebii.net/abilitydex/full_metal_body.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/full_metal_body',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Full_Metal_Body_(Ability)'
-        },
-        {
           desc: null,
           isFieldAbility: null,
-          name: 'Propeller Tail',
-          shortDesc: "This Pokémon's moves cannot be redirected to a different target by any effect.",
-          serebiiPage: 'https://www.serebii.net/abilitydex/propeller_tail.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/propeller_tail',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Propeller_Tail_(Ability)'
+          name: 'Water Compaction',
+          shortDesc: "This Pokémon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+          serebiiPage: 'https://www.serebii.net/abilitydex/water_compaction.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/water_compaction',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Water_Compaction_(Ability)'
+        },
+        {
+          desc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect a Pokémon which has the Ability As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.',
+          isFieldAbility: null,
+          name: 'Wandering Spirit',
+          shortDesc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one.',
+          serebiiPage: 'https://www.serebii.net/abilitydex/wandering_spirit.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/wandering_spirit',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Wandering_Spirit_(Ability)'
+        },
+        {
+          desc: 'While this Pokémon is active, Abilities have no effect. Does not affect the Abilities As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.',
+          isFieldAbility: null,
+          name: 'Neutralizing Gas',
+          shortDesc: 'While this Pokémon is active, Abilities have no effect.',
+          serebiiPage: 'https://www.serebii.net/abilitydex/neutralizing_gas.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/neutralizing_gas',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Neutralizing_Gas_(Ability)'
         }
       ]);
-    });
-  });
-
-  describe('Error Requests', () => {
-    test('GIVEN an invalid ability THEN returns error', async () => {
-      const data = await gCall({
-        source: getFuzzyAbilityName,
-        variableValues: { ability: 'totally_invalid_ability' }
-      });
-
-      expect(data.errors).toHaveLength(1);
-      expect(data.errors[0].message).toBe('No abilities found for: totally_invalid_ability');
     });
   });
 });

@@ -54,26 +54,26 @@ describe('getFuzzyItem', () => {
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/assault-vest.png'
         },
         {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Salac_Berry',
-          desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
-          generationIntroduced: 6,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Choice_Band',
+          desc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+          generationIntroduced: 3,
           isNonstandard: null,
-          name: 'Salac Berry',
-          serebiiPage: 'https://www.serebii.net/itemdex/salacberry.shtml',
+          name: 'Choice Band',
+          serebiiPage: 'https://www.serebii.net/itemdex/choiceband.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/salac-berry',
-          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/salac-berry.png'
+          smogonPage: 'https://www.smogon.com/dex/ss/items/choice-band',
+          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png'
         },
         {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Yache_Berry',
-          desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Focus_Sash',
+          desc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
           generationIntroduced: 4,
           isNonstandard: null,
-          name: 'Yache Berry',
-          serebiiPage: 'https://www.serebii.net/itemdex/yacheberry.shtml',
+          name: 'Focus Sash',
+          serebiiPage: 'https://www.serebii.net/itemdex/focussash.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/yache-berry',
-          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/yache-berry.png'
+          smogonPage: 'https://www.smogon.com/dex/ss/items/focus-sash',
+          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/focus-sash.png'
         }
       ]);
     });
@@ -86,51 +86,39 @@ describe('getFuzzyItem', () => {
 
       expect(data.getFuzzyItem).toEqual([
         {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Gold_Bottle_Cap',
-          desc: "Used for Hyper Training. All of a Pokémon's stats are calculated with an IV of 31.",
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Ilima_s_Normalium_Z',
+          desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
           generationIntroduced: 7,
           isNonstandard: null,
-          name: 'Gold Bottle Cap',
-          serebiiPage: 'https://www.serebii.net/itemdex/goldbottlecap.shtml',
+          name: "Ilima's Normalium Z",
+          serebiiPage: 'https://www.serebii.net/itemdex/ilimasnormaliumz.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/gold-bottle-cap',
-          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/gold-bottle-cap.png'
+          smogonPage: null,
+          sprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
         },
         {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Left_Poké_Ball',
-          desc: "A Poké Ball with a Pokémon that lost its Trainer inside. It seems to be from Ula'ula Island.",
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Ultranecrozium_Z',
+          desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
+          generationIntroduced: 7,
+          isNonstandard: 'Past',
+          name: 'Ultranecrozium Z',
+          serebiiPage: 'https://www.serebii.net/itemdex/ultranecroziumz.shtml',
+          shortDesc: null,
+          smogonPage: 'https://www.smogon.com/dex/ss/items/ultranecrozium-z',
+          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/ultranecrozium-z.png'
+        },
+        {
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Terrain_Extender',
+          desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
           generationIntroduced: 7,
           isNonstandard: null,
-          name: 'Left Poké Ball',
-          serebiiPage: 'https://www.serebii.net/itemdex/leftpokéball.shtml',
+          name: 'Terrain Extender',
+          serebiiPage: 'https://www.serebii.net/itemdex/terrainextender.shtml',
           shortDesc: null,
-          smogonPage: null,
-          sprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png'
-        },
-        {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Honor_Of_Kalos',
-          desc: 'A precious symbol that is awarded only to an individual who has done great things for the Kalos region.',
-          generationIntroduced: 6,
-          isNonstandard: null,
-          name: 'Honor of Kalos',
-          serebiiPage: 'https://www.serebii.net/itemdex/honorofkalos.shtml',
-          shortDesc: null,
-          smogonPage: null,
-          sprite: 'https://www.serebii.net/itemdex/sprites/honorofkalos.png'
+          smogonPage: 'https://www.smogon.com/dex/ss/items/terrain-extender',
+          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/terrain-extender.png'
         }
       ]);
-    });
-  });
-
-  describe('Error Requests', () => {
-    test('GIVEN an invalid item THEN returns error', async () => {
-      const data = await gCall({
-        source: getFuzzyItemName,
-        variableValues: { item: 'totally_invalid_item' }
-      });
-
-      expect(data.errors).toHaveLength(1);
-      expect(data.errors[0].message).toBe('No items found for: totally_invalid_item');
     });
   });
 });

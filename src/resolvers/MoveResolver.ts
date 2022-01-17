@@ -44,7 +44,7 @@ export class MoveResolver {
       throw new Error(`No moves found for: ${args.move}`);
     }
 
-    const graphqlObjects = fuzzyEntry.map((moveData) => MoveService.mapMoveDataToMoveGraphQL({ data: moveData.item, requestedFields }));
+    const graphqlObjects = fuzzyEntry.map((moveData) => MoveService.mapMoveDataToMoveGraphQL({ data: moveData, requestedFields }));
 
     if (!graphqlObjects.length) {
       throw new Error(`Failed to get data for move: ${args.move}`);

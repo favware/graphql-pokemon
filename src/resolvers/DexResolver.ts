@@ -97,7 +97,7 @@ export class DexResolver {
     for (const pokemonData of fuzzyEntry) {
       DexDetailPromises.push(
         DexService.mapPokemonDataToPokemonGraphQL({
-          data: pokemonData.item,
+          data: pokemonData,
           requestedFields,
           offsetFlavorTexts: args.offsetFlavorTexts,
           reverseFlavorTexts: args.reverseFlavorTexts,

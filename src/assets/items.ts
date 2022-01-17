@@ -2,7 +2,7 @@ import { GraphQLCollection } from '#utils/GraphQLCollection';
 import type { PokemonTypes } from '#utils/pokemon';
 
 /** The item in Pokémon */
-export default new GraphQLCollection<string, PokemonTypes.Item>([
+export const items = new GraphQLCollection<string, PokemonTypes.Item>([
   [
     'abomasite',
     {
@@ -5535,3 +5535,7 @@ export default new GraphQLCollection<string, PokemonTypes.Item>([
     }
   ]
 ]);
+
+for (const [key, value] of items.entries()) {
+  value.key = key;
+}

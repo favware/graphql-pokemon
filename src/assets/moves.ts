@@ -2,7 +2,7 @@ import { GraphQLCollection } from '#utils/GraphQLCollection';
 import type { PokemonTypes } from '#utils/pokemon';
 
 /** The moves in Pokémon */
-export default new GraphQLCollection<string, PokemonTypes.Move>([
+export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
   [
     '10000000voltthunderbolt',
     {
@@ -14105,3 +14105,7 @@ export default new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ]
 ]);
+
+for (const [key, value] of moves.entries()) {
+  value.key = key;
+}

@@ -2,7 +2,7 @@ import { GraphQLCollection } from '#utils/GraphQLCollection';
 import type { PokemonTypes } from '#utils/pokemon';
 
 /** The abilities in Pokémon */
-export default new GraphQLCollection<string, PokemonTypes.Ability>([
+export const abilities = new GraphQLCollection<string, PokemonTypes.Ability>([
   [
     'adaptability',
     {
@@ -2109,3 +2109,7 @@ export default new GraphQLCollection<string, PokemonTypes.Ability>([
     }
   ]
 ]);
+
+for (const [key, value] of abilities.entries()) {
+  value.key = key;
+}

@@ -1,7 +1,11 @@
+import { abilities } from '#utils/enums';
 import { Field, ObjectType } from 'type-graphql';
 
 @ObjectType({ description: 'A single Pokémon ability entry' })
 export class Ability {
+  @Field(() => abilities, { description: 'The key of the ability as stored in the API' })
+  public key!: string;
+
   @Field(() => String, { description: 'Bulbapedia page for an ability' })
   public bulbapediaPage!: string;
 

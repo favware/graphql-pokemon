@@ -44,7 +44,7 @@ export class ItemResolver {
       throw new Error(`No items found for: ${args.item}`);
     }
 
-    const graphqlObjects = fuzzyEntry.map((itemData) => ItemService.mapItemDataToItemGraphQL({ data: itemData.item, requestedFields }));
+    const graphqlObjects = fuzzyEntry.map((itemData) => ItemService.mapItemDataToItemGraphQL({ data: itemData, requestedFields }));
 
     if (!graphqlObjects.length) {
       throw new Error(`Failed to get data for item: ${args.item}`);

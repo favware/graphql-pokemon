@@ -47,9 +47,7 @@ export class AbilityResolver {
       throw new Error(`No abilities found for: ${args.ability}`);
     }
 
-    const graphqlObjects = fuzzyEntry.map((abilityData) =>
-      AbilityService.mapAbilityDataToAbilityGraphQL({ data: abilityData.item, requestedFields })
-    );
+    const graphqlObjects = fuzzyEntry.map((abilityData) => AbilityService.mapAbilityDataToAbilityGraphQL({ data: abilityData, requestedFields }));
 
     if (!graphqlObjects.length) {
       throw new Error(`Failed to get data for ability: ${args.ability}`);

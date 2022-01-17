@@ -56,7 +56,7 @@ export class LearnsetResolver {
       if (fuzzyEntry === undefined) {
         throw new Error(`Failed to get data for Pokémon: ${pokemon}`);
       }
-      pokemon = toLowerSingleWordCase(fuzzyEntry[0].item.species);
+      pokemon = toLowerSingleWordCase(fuzzyEntry[0].species);
     }
 
     for (const [index, move] of moves.entries()) {
@@ -72,7 +72,7 @@ export class LearnsetResolver {
         }
 
         // And overwrite the move at  this index with the proper entry
-        moves[index] = toLowerSingleWordCase(fuzzyEntry[0].item.name);
+        moves[index] = toLowerSingleWordCase(fuzzyEntry[0].name);
       }
     }
 

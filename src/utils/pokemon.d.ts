@@ -1,5 +1,6 @@
 export namespace PokemonTypes {
   interface AliasEntry {
+    key?: string;
     aliases?: string[];
   }
 

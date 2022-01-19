@@ -1,3 +1,4 @@
+import { pokemons } from '#utils/enums';
 import type PokemonTypes from '#utils/pokemon';
 import { Field, Int, ObjectType } from 'type-graphql';
 
@@ -53,6 +54,9 @@ export class Learnset {
     defaultValue: [new LearnsetLevelUpMove()]
   })
   public levelUpMoves!: LearnsetLevelUpMove[];
+
+  @Field(() => pokemons, { description: 'The key of the Pokémon as stored in the API' })
+  public pokemonKey!: string;
 
   @Field(() => Int, { description: 'The dex number for a Pokémon' })
   public num!: number;

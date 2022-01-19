@@ -148,6 +148,7 @@ export class LearnsetService {
       );
 
       addPropertyToClass(learnsetEntry, 'num', pokemonEntry.num, requestedFields);
+      addPropertyToClass(learnsetEntry, 'pokemonKey', pokemonEntry.key!, requestedFields);
       addPropertyToClass(learnsetEntry, 'color', pokemonEntry.color, requestedFields);
       addPropertyToClass(learnsetEntry, 'species', pokemonEntry.species, requestedFields);
     }

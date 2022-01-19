@@ -4,7 +4,7 @@ import type { PokemonTypes } from '#utils/pokemon';
 /** The moves in Pokémon */
 export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
   [
-    '10000000voltthunderbolt',
+    'tenmillionvoltthunderbolt',
     {
       accuracy: 100,
       basePower: '195',
@@ -19,7 +19,7 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: 'Very high critical hit ratio.',
       target: 'Normal',
       type: 'Electric',
-      aliases: ['10mv', '10mvt', 'zpikachucap', 'zthunderbolt']
+      aliases: ['10000000voltthunderbolt', '10mv', '10mvt', 'zpikachucap', 'zthunderbolt']
     }
   ],
   [

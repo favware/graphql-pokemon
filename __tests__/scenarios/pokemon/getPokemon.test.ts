@@ -839,8 +839,8 @@ describe('getPokemon', () => {
                 game: "Let's Go Eevee"
               }
             ],
-            forme: null,
-            formeLetter: null,
+            forme: 'Alola',
+            formeLetter: 'A',
             gender: {
               female: '50%',
               male: '50%'
@@ -869,8 +869,8 @@ describe('getPokemon', () => {
             game: "Let's Go Eevee"
           }
         ],
-        forme: null,
-        formeLetter: null,
+        forme: 'Alola',
+        formeLetter: 'A',
         gender: {
           female: '50%',
           male: '50%'

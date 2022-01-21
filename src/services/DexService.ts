@@ -247,6 +247,8 @@ export class DexService {
 
     addPropertyToClass(pokemonData, 'height', data.heightm, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}height`);
     addPropertyToClass(pokemonData, 'weight', data.weightkg, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}weight`);
+    addPropertyToClass(pokemonData, 'forme', data.forme, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}forme`);
+    addPropertyToClass(pokemonData, 'formeLetter', data.formeLetter, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}formeLetter`);
     addPropertyToClass(pokemonData, 'baseForme', data.baseForme, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseForme`);
     addPropertyToClass(pokemonData, 'baseSpecies', data.baseSpecies, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}baseSpecies`);
     addPropertyToClass(pokemonData, 'otherFormes', data.otherFormes, requestedFields, `${recursingAs ? `${recursingAs}.` : ''}otherFormes`);

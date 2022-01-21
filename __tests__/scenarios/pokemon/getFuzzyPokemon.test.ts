@@ -1187,8 +1187,8 @@ describe('getFuzzyPokemon', () => {
               game: 'Shield'
             }
           ],
-          forme: null,
-          formeLetter: null,
+          forme: 'Rapid-Strike-Gmax',
+          formeLetter: 'RSG',
           gender: { female: '12.5%', male: '87.5%' },
           height: 3,
           isEggObtainable: false,
@@ -1252,8 +1252,8 @@ describe('getFuzzyPokemon', () => {
               game: 'Shield'
             }
           ],
-          forme: null,
-          formeLetter: null,
+          forme: 'Gmax',
+          formeLetter: 'G',
           gender: { female: '50%', male: '50%' },
           height: 10,
           isEggObtainable: true,
@@ -1317,8 +1317,8 @@ describe('getFuzzyPokemon', () => {
               game: 'Shield'
             }
           ],
-          forme: null,
-          formeLetter: null,
+          forme: 'Gmax',
+          formeLetter: 'G',
           gender: { female: '50%', male: '50%' },
           height: 14,
           isEggObtainable: true,

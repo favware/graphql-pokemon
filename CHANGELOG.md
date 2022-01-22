@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.3.0](https://github.com/favware/graphql-pokemon/compare/v6.2.9...v6.3.0) (2022-01-22)
+
+
+### Features
+
+* add `key` property to all primary structures ([82f9ab6](https://github.com/favware/graphql-pokemon/commit/82f9ab66365c3086bc55a4849c086cc4fb217444))
+* add `pokemonKey` to `Learnset` ([ee1ca27](https://github.com/favware/graphql-pokemon/commit/ee1ca27880da754d6dacb551a02ea7aed6f3cab9))
+* migrate from fuse to jaro-winkler ([bc69694](https://github.com/favware/graphql-pokemon/commit/bc6969427f42ec771be398b2d64bec1313d320bf))
+
+
+### Bug Fixes
+
+* ensure `forme` and `formeLetter` are actually mapped ([90f5fc6](https://github.com/favware/graphql-pokemon/commit/90f5fc6989f5a21e0f9e8c2b034d1f608fa2cd84))
+* fixed key for 10,000,000 volt thunderbolt to be supported by GraphQL Enum ([7caedda](https://github.com/favware/graphql-pokemon/commit/7caedda005b20a4ced9f0f1ae15d7d86b3664196))
+
 ### [6.2.9](https://github.com/favware/graphql-pokemon/compare/v6.2.8...v6.2.9) (2022-01-16)
 
 

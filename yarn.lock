@@ -1046,11 +1046,11 @@ __metadata:
     "@graphql-codegen/schema-ast": ^2.4.1
     "@graphql-codegen/typescript": ^2.4.2
     "@graphql-codegen/typescript-resolvers": ^2.4.3
-    "@sapphire/eslint-config": ^4.0.10
+    "@sapphire/eslint-config": ^4.0.11
     "@sapphire/fetch": ^2.0.4
-    "@sapphire/prettier-config": ^1.2.8
-    "@sapphire/time-utilities": ^1.5.1
-    "@sapphire/ts-config": ^3.1.7
+    "@sapphire/prettier-config": ^1.2.9
+    "@sapphire/time-utilities": ^1.5.2
+    "@sapphire/ts-config": ^3.1.8
     "@skyra/jaro-winkler": ^1.0.0
     "@types/jest": ^27.4.0
     "@types/koa": ^2.13.4
@@ -1976,9 +1976,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^4.0.10":
-  version: 4.0.10
-  resolution: "@sapphire/eslint-config@npm:4.0.10"
+"@sapphire/eslint-config@npm:^4.0.11":
+  version: 4.0.11
+  resolution: "@sapphire/eslint-config@npm:4.0.11"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.9.1
     "@typescript-eslint/parser": ^5.9.1
@@ -1987,7 +1987,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     prettier: ^2.5.1
     typescript: ^4.5.4
-  checksum: 7cd426b2893789f9604d3532a7060ff8c3ba63fd241ac1aa04a976d7cfd11d3d5aa33d037eb7740140d70b72166b2b6df37d0611a6e590e5b4a94900702860b3
+  checksum: 2c04c9bb1b5bdeefe89221366c490ac8ec60db111725840138b19d82d2eecffc2727279b84828956d9b3c01b154fc03979cd6a0252c6c423e0589659e344b849
   languageName: node
   linkType: hard
 
@@ -2000,38 +2000,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.2.8":
-  version: 1.2.8
-  resolution: "@sapphire/prettier-config@npm:1.2.8"
+"@sapphire/prettier-config@npm:^1.2.9":
+  version: 1.2.9
+  resolution: "@sapphire/prettier-config@npm:1.2.9"
   dependencies:
     prettier: ^2.5.1
-  checksum: fd574d6f023f882fb63366cfeb6fc7580c3485dd7964ffe4aa3efbf8384b8b6ebba417c425454a4d6d9dc323e716cc4f6477546d0bd7085f980276cae10ff41e
+  checksum: e2bd135c6f18424b1a359a938eb3a30c8e5b2665c42bca1a252899382ac9db4705ec4f596d4ea17ee8441537a67e23d33967559ac93083ef8ae1bae265b3ece8
   languageName: node
   linkType: hard
 
-"@sapphire/time-utilities@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "@sapphire/time-utilities@npm:1.5.1"
+"@sapphire/time-utilities@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "@sapphire/time-utilities@npm:1.5.2"
   dependencies:
-    "@sapphire/utilities": ^3.2.0
-  checksum: 16ebe166ef237c583cbe57bb27b1ca38ebfefe273ce165967b0e4db3303aeaf19e2f34e1a0840c3cb6e57e2921176524046bb365e8e4fc9dcb8bac4c338df0e6
+    "@sapphire/utilities": ^3.2.1
+  checksum: c1aca66637c5875e7ed4a000e9cb1669495ffa8f2b15f183c6a3edc1e1dd7000b8b822bf39f4e5c9a4d7fc3e86489e42a326dab4cf5acd09ceed9c0b6eba588a
   languageName: node
   linkType: hard
 
-"@sapphire/ts-config@npm:^3.1.7":
-  version: 3.1.7
-  resolution: "@sapphire/ts-config@npm:3.1.7"
+"@sapphire/ts-config@npm:^3.1.8":
+  version: 3.1.8
+  resolution: "@sapphire/ts-config@npm:3.1.8"
   dependencies:
     tslib: ^2.3.1
     typescript: ^4.5.4
-  checksum: 53aa17d00eb53dd0828d6a67445fae18f9ff87547dde2155a3b0457c0e161b26364d010aad90cda3e2ed3d75ce65ec11d413c742fc698d2f79a2249a761fd81e
+  checksum: f1fe9015f4590b415c8ad4a4b98104b20ca8d930bf70122408b101490146955e4b8e3f3d328ebcebdf714b5945b63aba25da0230765d77fb738e6053417d7b7c
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "@sapphire/utilities@npm:3.2.0"
-  checksum: cdecc49994a906eebbbe3bb23d61375aa6704ef7f74aee2a3bb348a68eafd54b3785fc5c3853a3951393ddf5d7a205f0a52bbb1a595546e69b82e00061be24fc
+"@sapphire/utilities@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "@sapphire/utilities@npm:3.2.1"
+  checksum: 08b4220f0bfde901aae4877e072046aeb1c10232858eda6103c52b2b52a812185220ee2bec739104078c58a6d6ee2b95f53b8cb5b745c1be589ecd663bdb94ae
   languageName: node
   linkType: hard
 

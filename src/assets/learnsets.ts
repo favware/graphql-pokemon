@@ -4,7 +4,7 @@ import { GraphQLCollection } from '#utils/GraphQLCollection';
 import type { PokemonTypes } from '#utils/pokemon';
 
 /** The learnsets in Pokémon */
-export default new GraphQLCollection<string, Pokemon.RecordStringArray>([
+export const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray>([
   [
     'missingno',
     {

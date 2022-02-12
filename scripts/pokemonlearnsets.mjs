@@ -12,7 +12,7 @@ const filePrefix = [
   "import type { PokemonTypes } from '#utils/pokemon';",
   '',
   '/** The learnsets in Pokémon */',
-  'export default new GraphQLCollection<string, Pokemon.RecordStringArray>('
+  'export const learnsets = GraphQLCollection<string, Pokemon.RecordStringArray>('
 ].join('\n');
 const fileSuffix = [');', ''].join('\n');
 

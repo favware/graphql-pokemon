@@ -77,11 +77,11 @@ export class DexService {
     };
 
     if (this.flavors === undefined) {
-      this.flavors = (await import('#jsonAssets/flavorText.json')).default;
+      this.flavors = (await import('#jsonAssets/flavorText.json', { assert: { type: 'json' } })).default;
     }
 
     if (this.tiers === undefined) {
-      this.tiers = (await import('#jsonAssets/formats.json')).default;
+      this.tiers = (await import('#jsonAssets/formats.json', { assert: { type: 'json' } })).default;
     }
 
     const evolutionChain: Promise<Pokemon>[] = [];

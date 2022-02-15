@@ -6,6 +6,7 @@ export default async () => ({
   testRunner: 'jest-circus/runner',
   testMatch: ['<rootDir>/__tests__/**/*.test.ts'],
   setupFilesAfterEnv: ['<rootDir>/__tests__/testUtils/jest.setup.ts'],
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleNameMapper: {
     '^#arguments/(.*)$': '<rootDir>/src/arguments/$1',
     '^#assets/(.*)$': '<rootDir>/src/assets/$1',
@@ -49,5 +50,27 @@ export default async () => ({
       lines: 90,
       statements: 90
     }
+  },
+  transform: {
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
+      {
+        jsc: {
+          target: 'es2020',
+          parser: {
+            syntax: 'typescript',
+            decorators: true,
+            dynamicImport: true
+          },
+          transform: {
+            legacyDecorator: true,
+            decoratorMetadata: true
+          }
+        },
+        module: {
+          type: 'es6'
+        }
+      }
+    ]
   }
 });

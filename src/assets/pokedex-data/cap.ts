@@ -136,7 +136,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: {
         first: 'Rock Head',
         second: 'Battle Armor',
-        hidden: 'White Smoke'
+        hidden: 'Contrary'
       },
       baseStats: { hp: 120, atk: 70, def: 105, spa: 95, spd: 90, spe: 60 },
       color: 'Brown',
@@ -968,6 +968,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1.4,
       isEggObtainable: false,
       num: -39,
+      otherFormes: ['crucibelle'],
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/crucibelle-mega.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/crucibelle-mega.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/crucibelle-mega.png',

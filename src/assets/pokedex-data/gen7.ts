@@ -34,7 +34,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       eggGroups: ['Flying'],
       evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       evoLevel: 17,
-      evos: ['decidueye'],
+      evos: ['decidueye', 'decidueyehisui'],
       genderRatio: { male: '87.5%', female: '12.5%' },
       heightm: 0.7,
       isEggObtainable: true,
@@ -64,11 +64,38 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 3855,
       num: 724,
+      otherFormes: ['decidueyehisui'],
       prevo: 'dartrix',
       species: 'decidueye',
       types: ['Grass', 'Ghost'],
       weightkg: 36.6,
       aliases: ['junaipaa']
+    }
+  ],
+  [
+    'decidueyehisui',
+    {
+      abilities: { first: 'Overgrow', hidden: 'Long Reach' },
+      baseStats: { hp: 88, atk: 112, def: 80, spa: 95, spd: 95, spe: 60 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+      color: 'Brown',
+      eggGroups: ['Flying'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 36,
+      forme: 'Hisui',
+      formeLetter: 'H',
+      genderRatio: { male: '87.5%', female: '12.5%' },
+      heightm: 1.6,
+      isEggObtainable: true,
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 3855,
+      num: 724,
+      otherFormes: ['decidueye'],
+      prevo: 'dartrix',
+      species: 'decidueye-hisui',
+      types: ['Grass', 'Fighting'],
+      weightkg: 37,
+      aliases: ['hisuiandartrix', 'datrixh']
     }
   ],
   [

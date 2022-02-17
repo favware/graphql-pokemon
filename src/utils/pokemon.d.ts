@@ -89,11 +89,27 @@ export namespace PokemonTypes {
 
     catchRate?: CatchRateEntry;
 
-    color: string;
+    color: `${Capitalize<'Black' | 'Blue' | 'Brown' | 'Gray' | 'Green' | 'Pink' | 'Purple' | 'Red' | 'White' | 'Yellow'>}`;
 
     cosmeticFormes?: string[];
 
-    eggGroups?: string[];
+    eggGroups?: `${Capitalize<
+      | 'Monster'
+      | 'Water 1'
+      | 'Bug'
+      | 'Flying'
+      | 'Field'
+      | 'Fairy'
+      | 'Grass'
+      | 'Human-Like'
+      | 'Water 3'
+      | 'Mineral'
+      | 'Amorphous'
+      | 'Water 2'
+      | 'Ditto'
+      | 'Dragon'
+      | 'Undiscovered'
+    >}`[];
 
     evoLevel?: string | number;
 

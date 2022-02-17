@@ -1,7 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/require-await
 export default async () => ({
   coverageProvider: 'v8',
-  preset: 'ts-jest',
   testEnvironment: 'node',
   testRunner: 'jest-circus/runner',
   testMatch: ['<rootDir>/__tests__/**/*.test.ts'],
@@ -18,11 +17,6 @@ export default async () => ({
     '^#utils/(.*)$': '<rootDir>/src/utils/$1',
     '^#root/(.*)$': '<rootDir>/src/$1',
     '^#test-utils/(.*)$': '<rootDir>/__tests__/testUtils/$1'
-  },
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/__tests__/tsconfig.json'
-    }
   },
   coveragePathIgnorePatterns: [
     '/node_modules/',

@@ -16,7 +16,7 @@ url.searchParams.append('since', timestamp);
 
 const [commits, { default: ciData }] = await Promise.all([
   fetch(url, FetchResultTypes.JSON), //
-  import(shaTrackerFileUrl) //
+  import(shaTrackerFileUrl, { assert: { type: 'json' } }) //
 ]);
 
 const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };

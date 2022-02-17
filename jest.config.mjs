@@ -1,11 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/require-await
 export default async () => ({
   coverageProvider: 'v8',
-  preset: 'ts-jest',
   testEnvironment: 'node',
   testRunner: 'jest-circus/runner',
   testMatch: ['<rootDir>/__tests__/**/*.test.ts'],
   setupFilesAfterEnv: ['<rootDir>/__tests__/testUtils/jest.setup.ts'],
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleNameMapper: {
     '^#arguments/(.*)$': '<rootDir>/src/arguments/$1',
     '^#assets/(.*)$': '<rootDir>/src/assets/$1',
@@ -17,11 +17,6 @@ export default async () => ({
     '^#utils/(.*)$': '<rootDir>/src/utils/$1',
     '^#root/(.*)$': '<rootDir>/src/$1',
     '^#test-utils/(.*)$': '<rootDir>/__tests__/testUtils/$1'
-  },
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/__tests__/tsconfig.json'
-    }
   },
   coveragePathIgnorePatterns: [
     '/node_modules/',
@@ -49,5 +44,27 @@ export default async () => ({
       lines: 90,
       statements: 90
     }
+  },
+  transform: {
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
+      {
+        jsc: {
+          target: 'es2020',
+          parser: {
+            syntax: 'typescript',
+            decorators: true,
+            dynamicImport: true
+          },
+          transform: {
+            legacyDecorator: true,
+            decoratorMetadata: true
+          }
+        },
+        module: {
+          type: 'es6'
+        }
+      }
+    ]
   }
 });

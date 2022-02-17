@@ -328,9 +328,9 @@ export const abilities = new GraphQLCollection<string, PokemonTypes.Ability>([
   [
     'dazzling',
     {
-      desc: 'While this Pokémon is active, priority moves from opposing Pokémon targeted at allies are prevented from having an effect.',
+      desc: 'Priority moves used by opposing Pokémon targeting this Pokémon or its allies are prevented from having an effect.',
       name: 'Dazzling',
-      shortDesc: 'While this Pokémon is active, allies are protected from opposing priority moves.'
+      shortDesc: 'This Pokémon and its allies are protected from opposing priority moves.'
     }
   ],
   [
@@ -1326,9 +1326,9 @@ export const abilities = new GraphQLCollection<string, PokemonTypes.Ability>([
   [
     'queenlymajesty',
     {
-      desc: 'While this Pokémon is active, priority moves from opposing Pokémon targeted at allies are prevented from having an effect.',
+      desc: 'Priority moves used by opposing Pokémon targeting this Pokémon or its allies are prevented from having an effect.',
       name: 'Queenly Majesty',
-      shortDesc: 'While this Pokémon is active, allies are protected from opposing priority moves.'
+      shortDesc: 'This Pokémon and its allies are protected from opposing priority moves.'
     }
   ],
   [

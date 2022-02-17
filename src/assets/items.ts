@@ -3415,6 +3415,15 @@ export const items = new GraphQLCollection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'vilevial',
+    {
+      desc: 'If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.',
+      gen: 8,
+      isNonstandard: 'CAP',
+      name: 'Vile Vial'
+    }
+  ],
+  [
     'wacanberry',
     {
       desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.',

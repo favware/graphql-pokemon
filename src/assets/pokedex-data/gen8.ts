@@ -2964,7 +2964,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'Unnerve' },
       baseStats: { hp: 100, atk: 80, def: 80, spa: 80, spd: 80, spe: 80 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
-      color: 'Calyrex',
+      color: 'Green',
       eggGroups: ['Undiscovered'],
       evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       genderRatio: { male: '0%', female: '0%' },
@@ -3027,6 +3027,181 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: ['Psychic', 'Ghost'],
       weightkg: 53.6,
       aliases: ['calyrexshadow', 'calyrexsr']
+    }
+  ],
+  [
+    'wyrdeer',
+    {
+      abilities: { first: 'Intimidate', second: 'Frisk', hidden: 'Sap Sipper' },
+      baseStats: { hp: 103, atk: 105, def: 72, spa: 105, spd: 75, spe: 65 },
+      color: 'Gray',
+      eggGroups: ['Field'],
+      evoLevel: 'use Agile style Psyshield Bash 20 times',
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.8,
+      isEggObtainable: false,
+      num: 899,
+      prevo: 'stantler',
+      species: 'wyrdeer',
+      types: ['Normal', 'Psychic'],
+      weightkg: 95.1
+    }
+  ],
+  [
+    'kleavor',
+    {
+      abilities: { first: 'Swarm', second: 'Sheer Force', hidden: 'Steadfast' },
+      baseStats: { hp: 70, atk: 135, def: 95, spa: 45, spd: 70, spe: 85 },
+      color: 'Brown',
+      eggGroups: ['Bug'],
+      evoLevel: 'use Black Augurite',
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.8,
+      isEggObtainable: false,
+      num: 900,
+      prevo: 'scyther',
+      species: 'kleavor',
+      types: ['Bug', 'Rock'],
+      weightkg: 89
+    }
+  ],
+  [
+    'ursaluna',
+    {
+      abilities: { first: 'Guts', second: 'Bulletproof', hidden: 'Unnerve' },
+      baseStats: { hp: 130, atk: 140, def: 105, spa: 45, spd: 80, spe: 50 },
+      color: 'Brown',
+      eggGroups: ['Field'],
+      evoLevel: "expose to Peat Block when there's a full moon",
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 2.4,
+      isEggObtainable: false,
+      num: 901,
+      prevo: 'ursaring',
+      species: 'ursaluna',
+      types: ['Ground', 'Normal'],
+      weightkg: 290
+    }
+  ],
+  [
+    'basculegion',
+    {
+      abilities: { first: 'Rattled', second: 'Adaptability', hidden: 'Mold Breaker' },
+      baseStats: { hp: 120, atk: 112, def: 65, spa: 80, spd: 75, spe: 78 },
+      color: 'Green',
+      eggGroups: ['Water 2'],
+      evoLevel: 'receive 294+ recoil from one move without fainting',
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 3,
+      isEggObtainable: false,
+      num: 901,
+      otherFormes: ['basculegionf'],
+      prevo: 'basculinwhitestriped',
+      species: 'basculegion',
+      types: ['Water', 'Ghost'],
+      weightkg: 110
+    }
+  ],
+  [
+    'basculegionf',
+    {
+      abilities: { first: 'Rattled', second: 'Adaptability', hidden: 'Mold Breaker' },
+      baseStats: { hp: 120, atk: 92, def: 65, spa: 100, spd: 75, spe: 78 },
+      color: 'Green',
+      eggGroups: ['Water 2'],
+      evoLevel: 'receive 294+ recoil from one move without fainting',
+      evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Female',
+      formeLetter: 'F',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 3,
+      isEggObtainable: false,
+      num: 902,
+      otherFormes: ['basculegion'],
+      prevo: 'basculinwhitestriped',
+      species: 'basculegion',
+      types: ['Water', 'Ghost'],
+      weightkg: 110
+    }
+  ],
+  [
+    'sneasler',
+    {
+      abilities: { first: 'Pressure', hidden: 'Poison Touch' },
+      baseStats: { hp: 80, atk: 130, def: 60, spa: 40, spd: 80, spe: 120 },
+      color: 'Gray',
+      eggGroups: ['Field'],
+      evoLevel: 'use Razor Claw',
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.3,
+      isEggObtainable: false,
+      num: 903,
+      prevo: 'sneaselhisui',
+      species: 'sneasler',
+      types: ['Fighting', 'Poison'],
+      weightkg: 43
+    }
+  ],
+  [
+    'overqwil',
+    {
+      abilities: { first: 'Poison Point', second: 'Swift Swim', hidden: 'Intimidate' },
+      baseStats: { hp: 85, atk: 115, def: 95, spa: 65, spd: 65, spe: 85 },
+      color: 'Black',
+      eggGroups: ['Water 2'],
+      evoLevel: 'use Strong style Barb Barrage 20 times',
+      evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.5,
+      isEggObtainable: false,
+      num: 904,
+      prevo: 'qwilfishhisui',
+      species: 'overqwil',
+      types: ['Dark', 'Poison'],
+      weightkg: 3.9
+    }
+  ],
+  [
+    'enamorus',
+    {
+      abilities: { first: 'Healer', hidden: 'Contrary' },
+      baseStats: { hp: 74, atk: 115, def: 70, spa: 135, spd: 80, spe: 106 },
+      color: 'Brown',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.6,
+      isEggObtainable: false,
+      num: 905,
+      otherFormes: ['enamorustherian'],
+      species: 'enamorus',
+      types: ['Fairy', 'Flying'],
+      weightkg: 48
+    }
+  ],
+  [
+    'enamorustherian',
+    {
+      abilities: { first: 'Overcoat' },
+      baseStats: { hp: 74, atk: 115, def: 110, spa: 135, spd: 100, spe: 46 },
+      color: 'Brown',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Therian',
+      formeLetter: 'T',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.6,
+      isEggObtainable: false,
+      num: 905,
+      otherFormes: ['enamorus'],
+      species: 'enamorus-therian',
+      types: ['Fairy', 'Flying'],
+      weightkg: 48
     }
   ]
 ];

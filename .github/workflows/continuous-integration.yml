@@ -42,7 +42,6 @@ jobs:
   Testing:
     name: Unit Tests
     runs-on: ubuntu-latest
-    if: github.event == 'not-exists'
     steps:
       - name: Checkout Project
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2

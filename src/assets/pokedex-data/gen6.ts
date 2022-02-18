@@ -1628,7 +1628,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 705,
       otherFormes: ['sliggoo'],
       prevo: 'goomy',
-      species: 'sliggoo',
+      species: 'sliggoo-hisui',
       types: ['Steel', 'Dragon'],
       weightkg: 68.5,
       aliases: ['hisuiansliggoo', 'sliggooh']

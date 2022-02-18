@@ -6,11 +6,11 @@ import { ArgsType, Field, Int } from 'type-graphql';
 export class PokemonListArgs extends BaseFuzzyArgs {
   @Field(() => Int, {
     nullable: true,
-    defaultValue: 963,
+    defaultValue: 1271,
     description: 'Return only this many results, starting from the offset'
   })
   @IsNumber()
   @Min(1)
-  @Max(963)
-  public take = 963;
+  @Max(1271)
+  public take = 1271;
 }

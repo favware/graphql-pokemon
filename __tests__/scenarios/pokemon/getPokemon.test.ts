@@ -82,7 +82,7 @@ describe('getPokemon', () => {
   });
 
   describe('Species only requests By National Dex Number', () => {
-    test('GIVEN a valid number THEN returns Pokémon', async () => {
+    test('GIVEN National Dex Number 1 THEN returns Bulbasaur', async () => {
       const { data } = await gCall<'getPokemonByDexNumber'>({
         source: getPokemonByNationalDexNumber,
         variableValues: { number: 1 }
@@ -91,7 +91,7 @@ describe('getPokemon', () => {
       expect(data.getPokemonByDexNumber.species).toEqual('bulbasaur');
     });
 
-    test('GIVEN a valid number THEN returns Pokémon', async () => {
+    test('GIVEN National Dex Number -60 THEN returns Chromera', async () => {
       const { data } = await gCall<'getPokemonByDexNumber'>({
         source: getPokemonByNationalDexNumber,
         variableValues: { number: -60 }
@@ -100,18 +100,18 @@ describe('getPokemon', () => {
       expect(data.getPokemonByDexNumber.species).toEqual('chromera');
     });
 
-    test('GIVEN a valid number THEN returns Pokémon', async () => {
+    test('GIVEN National Dex Number 905 THEN returns Enamorus', async () => {
       const { data } = await gCall<'getPokemonByDexNumber'>({
         source: getPokemonByNationalDexNumber,
-        variableValues: { number: 898 }
+        variableValues: { number: 905 }
       });
 
-      expect(data.getPokemonByDexNumber.species).toEqual('calyrex');
+      expect(data.getPokemonByDexNumber.species).toEqual('enamorus');
     });
   });
 
   describe('Full data requests', () => {
-    test('GIVEN valid Pokémon request THEN returns Pokémon WITH all data', async () => {
+    test('GIVEN request for Greninja THEN returns all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullData,
         variableValues: { pokemon: 'greninja' }
@@ -181,7 +181,7 @@ describe('getPokemon', () => {
       });
     });
 
-    test('GIVEN missingno THEN returns Pokémon WITH all data', async () => {
+    test('GIVEN missingno THEN returns all data', async () => {
       const { data } = await gCall<'getPokemon'>({
         source: getPokemonWithFullData,
         variableValues: { pokemon: 'missingno' }
@@ -250,6 +250,68 @@ describe('getPokemon', () => {
         species: 'missingno.',
         sprite: 'https://play.pokemonshowdown.com/sprites/afd/missingno.png',
         types: ['Bird', 'Normal']
+      });
+    });
+
+    test('GIVEN Hisuian forme Typhlosion THEN returns all data', async () => {
+      const { data } = await gCall<'getPokemon'>({
+        source: getPokemonWithFullData,
+        variableValues: { pokemon: 'typhlosionhisui' }
+      });
+
+      expect(data.getPokemon).toEqual({
+        abilities: { first: 'Blaze', second: null, hidden: 'Flash Fire', special: null },
+        eggGroups: ['Field'],
+        evYields: {
+          hp: 0,
+          attack: 0,
+          defense: 0,
+          specialattack: 3,
+          specialdefense: 0,
+          speed: 0
+        },
+        evolutionLevel: '36',
+        flavorTexts: [
+          {
+            flavor:
+              'Typhlosion obscures itself behind a shimmering heat haze that it creates using its intensely hot flames. This Pokémon creates blazing explosive blasts that burn everything to cinders.',
+            game: 'Alpha Sapphire'
+          }
+        ],
+        forme: 'Hisui',
+        formeLetter: 'H',
+        gender: { female: '12.5%', male: '87.5%' },
+        height: 1.6,
+        isEggObtainable: true,
+        backSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/typhlosion-hisui.png',
+        levellingRate: 'Medium Slow',
+        maximumHatchTime: 5396,
+        minimumHatchTime: 5140,
+        num: 157,
+        otherFormes: ['typhlosion'],
+        serebiiPage: 'https://www.serebii.net/pokedex-swsh/typhlosion',
+        shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/typhlosion-hisui.png',
+        shinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/typhlosion-hisui.png',
+        smogonPage: 'https://www.smogon.com/dex/ss/pokemon/typhlosion-hisui',
+        baseForme: null,
+        smogonTier: 'Future',
+        species: 'typhlosion-hisui',
+        sprite: 'https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png',
+        types: ['Fire', 'Ghost'],
+        baseSpecies: 'Typhlosion',
+        baseStats: {
+          hp: 73,
+          attack: 84,
+          defense: 78,
+          specialattack: 119,
+          specialdefense: 85,
+          speed: 95
+        },
+        baseStatsTotal: 534,
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pokémon)',
+        catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+        color: 'Yellow',
+        cosmeticFormes: null
       });
     });
   });

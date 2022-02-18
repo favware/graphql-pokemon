@@ -2944,6 +2944,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         second: 'Flash Fire',
         hidden: 'Justified'
       },
+      baseSpecies: 'Arcanine',
       baseStats: { hp: 95, atk: 115, def: 80, spa: 95, spd: 80, spe: 90 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Brown',
@@ -4280,6 +4281,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'gengargmax',
     {
       abilities: { first: 'Cursed Body' },
+      baseSpecies: 'Gengar',
       baseStats: { hp: 60, atk: 65, def: 60, spa: 130, spd: 75, spe: 110 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
@@ -4435,7 +4437,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         second: 'Shell Armor',
         hidden: 'Sheer Force'
       },
-      baseSpecies: 'kingler',
+      baseSpecies: 'Kingler',
       baseStats: { hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Red',
@@ -4486,6 +4488,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'voltorbhisui',
     {
       abilities: { first: 'Soundproof', second: 'Static', hidden: 'Aftermath' },
+      baseSpecies: 'Voltorb',
       baseStats: { hp: 40, atk: 30, def: 50, spa: 55, spd: 55, spe: 100 },
       catchRate: {
         base: 190,
@@ -4538,6 +4541,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'electrodehisui',
     {
       abilities: { first: 'Soundproof', second: 'Static', hidden: 'Aftermath' },
+      baseSpecies: 'Electrode',
       baseStats: { hp: 60, atk: 50, def: 70, spa: 80, spd: 80, spe: 150 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Red',

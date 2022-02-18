@@ -235,6 +235,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'samurotthisui',
     {
       abilities: { first: 'Torrent', hidden: 'Shell Armor' },
+      baseSpecies: 'Samurott',
       baseStats: { hp: 90, atk: 108, def: 80, spa: 100, spd: 65, spe: 85 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -1464,6 +1465,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         second: 'Hustle',
         hidden: 'Leaf Guard'
       },
+      baseSpecies: 'Lilligant',
       baseStats: { hp: 70, atk: 105, def: 75, spa: 50, spd: 75, spe: 105 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Green',
@@ -1780,7 +1782,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'darmanitangalarzen',
     {
       abilities: { first: 'Gorilla Tactics', hidden: 'Zen Mode' },
-      baseSpecies: 'Darmanitan-galar',
+      baseSpecies: 'Darmanitan-Galar',
       baseStats: { hp: 105, atk: 160, def: 55, spa: 30, spd: 55, spe: 135 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'White',
@@ -2224,6 +2226,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'zoruahisui',
     {
       abilities: { first: 'Illusion' },
+      baseSpecies: 'Zorua',
       baseStats: { hp: 40, atk: 65, def: 40, spa: 80, spd: 40, spe: 65 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Gray',
@@ -2273,6 +2276,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'zoroarkhisui',
     {
       abilities: { first: 'Illusion' },
+      baseSpecies: 'Zoroark',
       baseStats: { hp: 55, atk: 100, def: 60, spa: 125, spd: 60, spe: 110 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
@@ -2850,7 +2854,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'frillishfemale',
     {
       abilities: { first: 'Water Absorb', second: 'Cursed Body', hidden: 'Damp' },
-      baseSpecies: 'frillish',
+      baseSpecies: 'Frillish',
       baseStats: { hp: 55, atk: 40, def: 50, spa: 65, spd: 85, spe: 40 },
       catchRate: {
         base: 190,
@@ -2906,7 +2910,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'jellicentfemale',
     {
       abilities: { first: 'Water Absorb', second: 'Cursed Body', hidden: 'Damp' },
-      baseSpecies: 'jellicent',
+      baseSpecies: 'Jellicent',
       baseStats: { hp: 100, atk: 60, def: 70, spa: 85, spd: 105, spe: 60 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'White',
@@ -3809,6 +3813,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'braviaryhisui',
     {
       abilities: { first: 'Keen Eye', second: 'Sheer Force', hidden: 'Defiant' },
+      baseSpecies: 'Braviary',
       baseStats: { hp: 110, atk: 83, def: 70, spa: 112, spd: 70, spe: 65 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Red',

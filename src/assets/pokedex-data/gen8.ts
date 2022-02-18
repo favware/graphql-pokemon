@@ -1277,6 +1277,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'toxtricitylowkey',
     {
       abilities: { first: 'Punk Rock', second: 'Minus', hidden: 'Technician' },
+      baseSpecies: 'Toxtricity',
       baseStats: { hp: 75, atk: 98, def: 70, spa: 114, spd: 70, spe: 75 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
@@ -1506,6 +1507,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'sinisteaantique',
     {
       abilities: { first: 'Weak Armor', hidden: 'Cursed Body' },
+      baseSpecies: 'Sinistea',
       baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
       catchRate: {
         base: 120,
@@ -1565,7 +1567,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         second: 'Weak Armor',
         hidden: 'Cursed Body'
       },
-      baseSpecies: 'polteageist',
+      baseSpecies: 'Polteageist',
       baseStats: { hp: 60, atk: 65, def: 65, spa: 134, spd: 114, spe: 70 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Purple',
@@ -1777,7 +1779,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'grimmsnarlgmax',
     {
       abilities: { first: 'Prankster', second: 'Frisk', hidden: 'Pickpocket' },
-      baseSpecies: 'grimmsnarl',
+      baseSpecies: 'Grimmsnarl',
       baseStats: { hp: 95, atk: 120, def: 65, spa: 95, spd: 75, spe: 60 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
@@ -3130,6 +3132,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'basculegionf',
     {
       abilities: { first: 'Rattled', second: 'Adaptability', hidden: 'Mold Breaker' },
+      baseSpecies: 'Basculegion',
       baseStats: { hp: 120, atk: 92, def: 65, spa: 100, spd: 75, spe: 78 },
       color: 'Green',
       eggGroups: ['Water 2'],

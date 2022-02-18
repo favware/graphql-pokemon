@@ -2707,6 +2707,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'palkia',
     {
       abilities: { first: 'Pressure', hidden: 'Telepathy' },
+      baseSpecies: 'Dialga',
       baseStats: { hp: 90, atk: 120, def: 100, spa: 150, spd: 120, spe: 100 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Purple',
@@ -2729,6 +2730,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'palkiaorigin',
     {
       abilities: { first: 'Pressure', hidden: 'Telepathy' },
+      baseSpecies: 'Palkia',
       baseStats: { hp: 90, atk: 100, def: 100, spa: 150, spd: 120, spe: 120 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Purple',

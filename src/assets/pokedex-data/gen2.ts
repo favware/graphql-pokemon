@@ -145,6 +145,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'typhlosionhisui',
     {
       abilities: { first: 'Blaze', hidden: 'Flash Fire' },
+      baseSpecies: 'Typhlosion',
       baseStats: { hp: 73, atk: 84, def: 78, spa: 119, spd: 85, spe: 95 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
@@ -1704,6 +1705,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         second: 'Swift Swim',
         hidden: 'Intimidate'
       },
+      baseSpecies: 'Qwilfish',
       baseStats: { hp: 65, atk: 95, def: 85, spa: 55, spd: 55, spe: 85 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
@@ -1880,6 +1882,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         second: 'Keen Eye',
         hidden: 'Poison Touch'
       },
+      baseSpecies: 'Sneasel',
       baseStats: { hp: 55, atk: 95, def: 55, spa: 35, spd: 75, spe: 115 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'White',
@@ -1892,7 +1895,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
       num: 215,
-      otherFormes: ['sneaselhisui'],
+      otherFormes: ['sneasel'],
       species: 'sneasel',
       types: ['Fighting', 'Poison'],
       weightkg: 27,

@@ -76,6 +76,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'decidueyehisui',
     {
       abilities: { first: 'Overgrow', hidden: 'Long Reach' },
+      baseSpecies: 'Deicueye',
       baseStats: { hp: 88, atk: 112, def: 80, spa: 95, spd: 95, spe: 60 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',

@@ -7,6 +7,6 @@ export class PokemonNumberArgs extends BasePokemonArgs {
   @Field(() => Int, { description: 'The International PokéDex number of the Pokémon to look up' })
   @IsNumber()
   @Min(-65)
-  @Max(898)
+  @Max(905)
   public number!: number;
 }

@@ -5953,7 +5953,7 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Varies in type based on the user's IVs.",
       target: 'Normal',
-      type: 'fighting',
+      type: 'Fighting',
       aliases: ['hpfighting']
     }
   ],
@@ -7889,7 +7889,7 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1 Sp. Def.',
       target: 'Adjacent Foes',
-      type: 'Groudon',
+      type: 'Ground',
       aliases: ['maxground']
     }
   ],

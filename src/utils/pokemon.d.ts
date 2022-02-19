@@ -211,7 +211,7 @@ export namespace PokemonTypes {
 
     target: MoveTargetUnion;
 
-    type: string;
+    type: `${Capitalize<keyof Types>}`;
 
     zMovePower?: number;
   }

@@ -274,8 +274,8 @@ describe('getPokemon', () => {
         flavorTexts: [
           {
             flavor:
-              'Typhlosion obscures itself behind a shimmering heat haze that it creates using its intensely hot flames. This Pokémon creates blazing explosive blasts that burn everything to cinders.',
-            game: 'Alpha Sapphire'
+              'Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the [[Mount Coron',
+            game: 'Legends Arceus'
           }
         ],
         forme: 'Hisui',
@@ -344,8 +344,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Water Stone',
             flavorTexts: [
               {
-                flavor: 'It has evolved to be suited for an aquatic life. It can become invisible when it melts away into water.',
-                game: 'Shining Pearl'
+                flavor:
+                  'Tests show that its cells closely resemble water molecules, which perhaps explains its ability to conceal its form while submerged. I believe the origins of mermaid folklore lie with this Pokémon.',
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -404,8 +405,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Thunder Stone',
             flavorTexts: [
               {
-                flavor: 'It controls 10,000-volt power. When the fur covering its body stands on end, the fur is hard and sharp, like needles.',
-                game: 'Shining Pearl'
+                flavor:
+                  'Bristles its fur into sharp, needlelike points when enraged. One can hear electricity crackle in its breath when it exhales.',
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -464,8 +466,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Fire Stone',
             flavorTexts: [
               {
-                flavor: 'It has a flame sac in its body. Its body temperature tops 1,650 degrees Fahrenheit before battle.',
-                game: 'Shining Pearl'
+                flavor:
+                  'Flames burn within a saclike organ inside this Pokémon. When Flareon inhales, these flames grow in intensity, reaching a mighty 3,000 degrees Fahrenheit.',
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -524,8 +527,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'Level up during Daytime with happiness of at least 220',
             flavorTexts: [
               {
-                flavor: 'Its fur has the look and feel of velvet. The orb on its forehead glows when it uses psychic power.',
-                game: 'Shining Pearl'
+                flavor:
+                  "Wields an arcane power with which it can predict the weather and even people's thoughts. When bathed in sunshine, the scarlet orb on its brow glows and builds energy.",
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -584,8 +588,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'Level up during Nighttime with happiness of at least 220',
             flavorTexts: [
               {
-                flavor: "The light of the moon changed Eevee's genetic structure. It lurks in the darkness, waiting for prey.",
-                game: 'Shining Pearl'
+                flavor:
+                  'It is most active in the wee hours of the night, when moonlight bathes the land. Its large eyes can pierce the darkness and perceive prey with absolute clarity.',
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -644,8 +649,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Leaf Stone',
             flavorTexts: [
               {
-                flavor: 'Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air.',
-                game: 'Shining Pearl'
+                flavor:
+                  "Cells similar to those of plants have been found in its fur. Its hard tail can fell a large tree with one stroke, and the tail's sharpness exceeds even that of a sword crafted by a master.",
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -704,8 +710,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'use Ice Stone',
             flavorTexts: [
               {
-                flavor: 'As a defense mechanism, it can completely freeze its fur to make its hairs stand out like needles.',
-                game: 'Shining Pearl'
+                flavor:
+                  'Glaceon is able to lower its body temperature very quickly. It freezes the atmosphere, creating diamond dust that glitters like gems while it flutters and dances around.',
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -764,8 +771,9 @@ describe('getPokemon', () => {
             evolutionLevel: 'Level up while having high Affection and knowing a Fairy type move',
             flavorTexts: [
               {
-                flavor: "There's a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pokémon.",
-                game: 'Shield'
+                flavor:
+                  'It emits a soothing aura from its ribbon-shaped organs. It wraps these appendages around quarrelers to instantly restore calm to the situation.',
+                game: 'Legends Arceus'
               }
             ],
             forme: null,
@@ -825,8 +833,9 @@ describe('getPokemon', () => {
         evolutionLevel: null,
         flavorTexts: [
           {
-            flavor: 'It is a rare Pokémon that adapts to harsh environments by changing its appearance and capabilities when it evolves.',
-            game: 'Shining Pearl'
+            flavor:
+              "Harbors the potential to evolve into manifold forms. Within Eevee lies the key to the mysteries of Pokémon evolution—I'm certain of it.",
+            game: 'Legends Arceus'
           }
         ],
         forme: null,

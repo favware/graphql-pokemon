@@ -143,12 +143,6 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # renovate: tag=v2
-      - name: Setup Node for publishing to NPM
-        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # renovate: tag=v2
-        with:
-          node-version: 17
-          cache: yarn
-          registry-url: https://registry.npmjs.org/
       - name: Download generated typings artifact
         uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
@@ -162,6 +156,12 @@ jobs:
         uses: actions/download-artifact@f023be2c48cc18debc3bacd34cb396e0295e2869 # renovate: tag=v2
         with:
           name: changelog_bundle
+      - name: Setup Node for publishing to NPM
+        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # renovate: tag=v2
+        with:
+          node-version: 17
+          cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Publish to NPM

@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.4.0](https://github.com/favware/graphql-pokemon/compare/v6.3.3...v6.4.0) (2022-02-19)
+
+
+### Features
+
+* add BDSP flavor texts ([18dad91](https://github.com/favware/graphql-pokemon/commit/18dad9194358a253936dd61d517415e102f65a89))
+* add flavor texts for hisuian forms ([9a2ffa7](https://github.com/favware/graphql-pokemon/commit/9a2ffa77a11c5ecc44159e58c1c6b00e5ecc8c66))
+* add Legends Arceus data ([14affc4](https://github.com/favware/graphql-pokemon/commit/14affc4cc823ce3ab27dfb1584df3a95118135dd))
+* add Legends Arceus moves ([44d3ea0](https://github.com/favware/graphql-pokemon/commit/44d3ea0ff831420c168196f22ef2b7596d19e7be))
+* add legends arceus pokedex data ([8e02a13](https://github.com/favware/graphql-pokemon/commit/8e02a13c999d044ad544590b8665d831b76b1a5a))
+* add otherFormes to all separate formes ([9a237f6](https://github.com/favware/graphql-pokemon/commit/9a237f6cb6d1bb21afad491c73b6d4cd3e3f2b9d))
+
+
+### Bug Fixes
+
+* add missing `baseSpecies` and `otherFormes` ([8f9c13a](https://github.com/favware/graphql-pokemon/commit/8f9c13ae2413ce9dc4d83328dd09ee5874d4158b))
+* allow `pokemon number` queries to go up to dex number 905 ([82b8178](https://github.com/favware/graphql-pokemon/commit/82b8178925ff305d49a099fd8d882929c65fdf94))
+* allow maximum of all pokemon listing to go up to 1271 ([a6c1a41](https://github.com/favware/graphql-pokemon/commit/a6c1a41d731adc23fef3f9b8bac1f3bc87783d7d))
+* fixed species for hisuian sliggoo ([de56079](https://github.com/favware/graphql-pokemon/commit/de56079c630994516da5d6520c6ca225a7eca9d5))
+* fixed various move types ([6689181](https://github.com/favware/graphql-pokemon/commit/66891818952e352d17cada2b136657e027ebf1d5))
+* use special sprites for hisuian forms ([ab4d0fd](https://github.com/favware/graphql-pokemon/commit/ab4d0fda205cd4afe278317fc63f4d0fa17cb1c0))
+
 ### [6.3.3](https://github.com/favware/graphql-pokemon/compare/v6.3.2...v6.3.3) (2022-02-14)
 
 ### [6.3.2](https://github.com/favware/graphql-pokemon/compare/v6.3.1...v6.3.2) (2022-02-06)

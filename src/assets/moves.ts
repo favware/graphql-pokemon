@@ -690,6 +690,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'barbbarrage',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Physical',
+      desc: 'The user launches countless toxic barbs to inflict damage. This may also poison the target. This move’s power is doubled if the target has a status condition.',
+      name: 'Barb Barrage',
+      pp: 15,
+      priority: 0,
+      shortDesc: '30% chance to poison the target.',
+      target: 'Normal',
+      type: 'Poison'
+    }
+  ],
+  [
     'barrage',
     {
       accuracy: 85,
@@ -901,6 +916,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'bittermalice',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      desc: 'The user attacks its target with spine-chilling resentment. This may also leave the target with frostbite. This move’s power is doubled if the target has a status condition.',
+      name: 'Bitter Malice',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'Has a 30% chance to leave the target with frostbite.',
+      target: 'Normal',
+      type: 'Ghost'
+    }
+  ],
+  [
     'blackholeeclipse',
     {
       accuracy: 100,
@@ -949,6 +979,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: 'High critical hit ratio. 10% chance to burn.',
       target: 'Normal',
       type: 'Fire'
+    }
+  ],
+  [
+    'bleakwindstorm',
+    {
+      accuracy: 80,
+      basePower: '95',
+      category: 'Special',
+      desc: 'The user attacks with savagely cold winds that cause both body and spirit to tremble. This may also leave the target with frostbite.',
+      name: 'Bleakwind Storm',
+      pp: 5,
+      priority: 0,
+      shortDesc: 'Has a 30% chance to leave the target with frostbite.',
+      target: 'Normal',
+      type: 'Flying'
     }
   ],
   [
@@ -1546,6 +1591,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'ceaselessedge',
+    {
+      accuracy: 90,
+      basePower: '65',
+      category: 'Physical',
+      desc: 'The user slashes its shell blade at the target, aiming to land a critical hit. Shell splinters left behind by this attack will continue to damage the target for several turns.',
+      name: 'Ceaseless Edge',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'For 4 turns, deals damage at the end of each turn.',
+      target: 'Normal',
+      type: 'Dark'
+    }
+  ],
+  [
     'celebrate',
     {
       accuracy: 100,
@@ -1643,6 +1703,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: "Ignores the target's stat stage changes.",
       target: 'Normal',
       type: 'Normal'
+    }
+  ],
+  [
+    'chloroblast',
+    {
+      accuracy: 95,
+      basePower: '120',
+      category: 'Special',
+      desc: 'The user launches its amassed chlorophyll to inflict damage on the target. This also damages the user for half of its maximum HP rounded up and lowers the user’s action speed.',
+      name: 'Chloroblast',
+      pp: 5,
+      priority: 0,
+      shortDesc: "User loses 50% of its max HP as recoil and user's action speed is lowered.",
+      target: 'Normal',
+      type: 'Grass'
     }
   ],
   [
@@ -2451,6 +2526,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: 'Digs underground turn 1, strikes turn 2.',
       target: 'Normal',
       type: 'Ground'
+    }
+  ],
+  [
+    'direclaw',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Physical',
+      desc: 'The user lashes out at the target with ruinous claws, aiming to land a critical hit. Has a 50% chance to inflict Poison, Paralyze, or cause Drowsiness on the target',
+      name: 'Dire Claw',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'Has a 50% chance to inflict Poison, Paralyze, or cause Drowsiness on the target',
+      target: 'Normal',
+      type: 'Poison'
     }
   ],
   [
@@ -3302,6 +3392,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: "Less power as user's HP decreases. Hits foe(s).",
       target: 'Adjacent Foes',
       type: 'Fire'
+    }
+  ],
+  [
+    'esperwing',
+    {
+      accuracy: 90,
+      basePower: '75',
+      category: 'Physical',
+      desc: "The user slashes the target with aura-enriched wings. This also raises the user's action speed. This move has a heightened chance of landing a critical hit",
+      name: 'Esper Wing',
+      pp: 10,
+      priority: 0,
+      shortDesc: "High critical hit chance. Raises user's action speed",
+      target: 'Normal',
+      type: 'Psychic'
     }
   ],
   [
@@ -5529,6 +5634,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'headlongrush',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      desc: 'The user smashes into the target in a full-body tackle. This also lowers the user’s defensive stats.',
+      name: 'Headlong Rush',
+      pp: 5,
+      priority: 0,
+      shortDesc: "Lowers the user's defensive stats",
+      target: 'Normal',
+      type: 'Ground'
+    }
+  ],
+  [
     'healbell',
     {
       accuracy: 100,
@@ -6559,6 +6679,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'infernalparade',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Special',
+      desc: "The user attacks with myriad fireballs. This may also leave the target with a burn. This move's power is doubled if the target has a status condition.",
+      name: 'Infernal Parade',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'Has a 30% chance to burn. Power doubled if target has status condition.',
+      target: 'Normal',
+      type: 'Ghost'
+    }
+  ],
+  [
     'inferno',
     {
       accuracy: 50,
@@ -7229,6 +7364,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: "For 5 turns, shields user's party from critical hits.",
       target: "Ally's Side",
       type: 'Normal'
+    }
+  ],
+  [
+    'lunarblessing',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      desc: 'The user heals its own status conditions and restores its HP. Incoming moves also become more likely to miss.',
+      name: 'Lunar Blessing',
+      pp: 10,
+      priority: 0,
+      shortDesc: 'Heals own status condition and increases evasiveness',
+      target: 'Self',
+      type: 'Psychic'
     }
   ],
   [
@@ -8327,6 +8477,20 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'mountaingale',
+    {
+      accuracy: 85,
+      basePower: '100',
+      category: 'Physical',
+      name: 'Mountain Gale',
+      pp: 5,
+      priority: 0,
+      shortDesc: 'The user hurls giant chunks of ice at the target to inflict damage.',
+      target: 'Normal',
+      type: 'Ice'
+    }
+  ],
+  [
     'mudbomb',
     {
       accuracy: 85,
@@ -8441,6 +8605,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
       target: 'Normal',
       type: 'Fire'
+    }
+  ],
+  [
+    'mysticalpower',
+    {
+      accuracy: 90,
+      basePower: '70',
+      category: 'Special',
+      desc: 'The user strengthens itself with a mysterious power. If it excels in offense, its offensive stats are raised. If it excels in defense, its defensive stats are raised.',
+      name: 'Mystical Power',
+      pp: 10,
+      priority: 0,
+      shortDesc: "Offensive or Defensive stats are raised based on the user's higher stat.",
+      target: 'Normal',
+      type: 'Psychic'
     }
   ],
   [
@@ -9325,6 +9504,20 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'powershift',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Power Shift',
+      pp: 10,
+      priority: 0,
+      shortDesc: 'The user swaps its offensive and defensive stats.',
+      target: 'Self',
+      type: 'Normal'
+    }
+  ],
+  [
     'powersplit',
     {
       accuracy: 100,
@@ -9617,6 +9810,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'psyshieldbash',
+    {
+      accuracy: 90,
+      basePower: '70',
+      category: 'Physical',
+      desc: 'Cloaking itself in psychic energy, the user slams into the target. This may also raise the user’s defensive stats.',
+      name: 'Psyshield Bash',
+      pp: 10,
+      priority: 0,
+      shortDesc: "Has a chance to raise user's defensive stats.",
+      target: 'Normal',
+      type: 'Psychic'
+    }
+  ],
+  [
     'psyshock',
     {
       accuracy: 100,
@@ -9840,6 +10048,20 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: "The foes' moves target the user on the turn used.",
       target: 'Self',
       type: 'Bug'
+    }
+  ],
+  [
+    'ragingfury',
+    {
+      accuracy: 85,
+      basePower: '90',
+      category: 'Physical',
+      name: 'Raging Fury',
+      pp: 10,
+      priority: 0,
+      shortDesc: 'The user rampages and spews vicious flames to inflict damage on the target, then becomes fixated on using this move.',
+      target: 'Normal',
+      type: 'Fire'
     }
   ],
   [
@@ -10485,6 +10707,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'sandsearstorm',
+    {
+      accuracy: 80,
+      basePower: '95',
+      category: 'Special',
+      desc: 'The user attacks by wrapping the target in fierce winds and searingly hot sand. This also leaves the target with a burn.',
+      name: 'Sandsear Storm',
+      pp: 5,
+      priority: 0,
+      shortDesc: 'Has a 30% chance of burning the target',
+      target: 'Normal',
+      type: 'Ground'
+    }
+  ],
+  [
     'sandstorm',
     {
       accuracy: 100,
@@ -10977,6 +11214,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: 'User must take physical damage before moving.',
       target: 'Adjacent Foes',
       type: 'Fire'
+    }
+  ],
+  [
+    'shelter',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      desc: 'The user makes its skin as hard as an iron shield, raising its defensive stats. Incoming moves also become more likely to miss.',
+      name: 'Shelter',
+      pp: 10,
+      priority: 0,
+      shortDesc: 'Raises defensive stats and evasiveness',
+      target: 'Self',
+      type: 'Steel'
     }
   ],
   [
@@ -11949,6 +12201,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'springtidestorm',
+    {
+      accuracy: 80,
+      basePower: '95',
+      category: 'Special',
+      desc: "The user attacks by wrapping the target in fierce winds brimming with love and hate. If Enamorus is in its Incarnate Forme, it has a 30% chance of boosting all the user's stats for 3 turns. In its Therian Form, it has a 30% chance of lowering the target's Defenses for 3 turns",
+      name: 'Springtide Storm',
+      pp: 5,
+      priority: 0,
+      shortDesc: "30% chance to boost all stats (Incarnate) or 30% to lower target's defensive stats (Therian)",
+      target: 'Normal',
+      type: 'Fairy'
+    }
+  ],
+  [
     'stealthrock',
     {
       accuracy: 100,
@@ -12126,6 +12393,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: "Power doubles if the user's last move failed.",
       target: 'Normal',
       type: 'Ground'
+    }
+  ],
+  [
+    'stoneaxe',
+    {
+      accuracy: 90,
+      basePower: '65',
+      category: 'Physical',
+      desc: 'The user swings its stone axes at the target, aiming to land a critical hit. Stone splinters left behind by this attack continue to damage the target for 4 turns.',
+      name: 'Stone Axe',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'For 4 turns will deal damage at the end of each turn',
+      target: 'Normal',
+      type: 'Rock'
     }
   ],
   [
@@ -12751,6 +13033,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'takeheart',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      desc: 'The user lifts its spirits, healing its own status conditions and raising its offensive and defensive stats.',
+      name: 'Take Heart',
+      pp: 10,
+      priority: 0,
+      shortDesc: "Heals user's status conditions and raises offensive and defensive stats.",
+      target: 'Self',
+      type: 'Psychic'
+    }
+  ],
+  [
     'tarshot',
     {
       accuracy: 100,
@@ -13297,6 +13594,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'triplearrows',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Physical',
+      desc: "The user delivers an axe kick, then fires three arrows. This raises the chance of its future attacks landing critical hits and also lowers the target's defensive stats.",
+      name: 'Triple Arrows',
+      pp: 15,
+      priority: 0,
+      shortDesc: "Decreases target's defensive stats by 1 stage.",
+      target: 'Normal',
+      type: 'Fighting'
+    }
+  ],
+  [
     'tripleaxel',
     {
       accuracy: 90,
@@ -13525,6 +13837,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'victorydance',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      desc: 'The user performs a dance to usher in victory. This raises the user’s offensive and defensive stats by 1 stage and increases the damage dealt by the user’s moves by 50%.',
+      name: 'Victory Dance',
+      pp: 20,
+      priority: 0,
+      shortDesc: "Raises the user's Attack and Defense stat by 1 stage and boosts damage dealt by user by 50%",
+      target: 'Self',
+      type: 'Fighting'
+    }
+  ],
+  [
     'vinewhip',
     {
       accuracy: 100,
@@ -13744,6 +14071,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'wavecrash',
+    {
+      accuracy: 100,
+      basePower: '75',
+      category: 'Physical',
+      desc: 'The user shrouds itself in water and slams into the target with its whole body to inflict damage. This also damages the user and raises the user’s action speed.',
+      name: 'Wave Crash',
+      pp: 10,
+      priority: 0,
+      shortDesc: "Has 33% recoil and raises user's action speed",
+      target: 'Normal',
+      type: 'Water'
+    }
+  ],
+  [
     'weatherball',
     {
       accuracy: 100,
@@ -13824,6 +14166,21 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       shortDesc: 'Protects allies from multi-target damage this turn.',
       target: "Ally's Side",
       type: 'Rock'
+    }
+  ],
+  [
+    'wildboltstorm',
+    {
+      accuracy: 80,
+      basePower: '95',
+      category: 'Special',
+      desc: 'The user summons a thunderous tempest and savagely attacks with lightning and wind. Has a 30% chance to paralyze the target.',
+      name: 'Wildbolt Storm',
+      pp: 5,
+      priority: 0,
+      shortDesc: 'Has a 30% chance to paralyze the target.',
+      target: 'Normal',
+      type: 'Electric'
     }
   ],
   [

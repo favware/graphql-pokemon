@@ -224,8 +224,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'use Water Stone',
               flavorTexts: [
                 {
-                  flavor: "Its body's cellular structure is similar to the molecular composition of water. It can melt invisibly in water.",
-                  game: 'Shield'
+                  flavor: 'It has evolved to be suited for an aquatic life. It can become invisible when it melts away into water.',
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -259,7 +259,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/vaporeon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Blue',
               cosmeticFormes: null
             },
@@ -282,8 +285,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'use Thunder Stone',
               flavorTexts: [
                 {
-                  flavor: 'It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts.',
-                  game: 'Shield'
+                  flavor: 'It controls 10,000-volt power. When the fur covering its body stands on end, the fur is hard and sharp, like needles.',
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -317,7 +320,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/jolteon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Yellow',
               cosmeticFormes: null
             },
@@ -340,8 +346,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'use Fire Stone',
               flavorTexts: [
                 {
-                  flavor: 'It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees Fahrenheit.',
-                  game: 'Shield'
+                  flavor: 'It has a flame sac in its body. Its body temperature tops 1,650 degrees Fahrenheit before battle.',
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -375,7 +381,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/flareon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Red',
               cosmeticFormes: null
             },
@@ -398,8 +407,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'Level up during Daytime with happiness of at least 220',
               flavorTexts: [
                 {
-                  flavor: 'It unleashes psychic power from the orb on its forehead. When its power is exhausted, the orb grows dull and dark.',
-                  game: 'Shield'
+                  flavor: 'Its fur has the look and feel of velvet. The orb on its forehead glows when it uses psychic power.',
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -433,7 +442,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/espeon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Purple',
               cosmeticFormes: null
             },
@@ -456,8 +468,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'Level up during Nighttime with happiness of at least 220',
               flavorTexts: [
                 {
-                  flavor: 'On the night of a full moon, or when it gets excited, the ring patterns on its body glow yellow.',
-                  game: 'Shield'
+                  flavor: "The light of the moon changed Eevee's genetic structure. It lurks in the darkness, waiting for prey.",
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -491,7 +503,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/umbreon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Black',
               cosmeticFormes: null
             },
@@ -514,8 +529,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'use Leaf Stone',
               flavorTexts: [
                 {
-                  flavor: "This Pokémon's tail is blade sharp, with a fantastic cutting edge that can slice right though large trees.",
-                  game: 'Shield'
+                  flavor: 'Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air.',
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -549,7 +564,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/leafeon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Green',
               cosmeticFormes: null
             },
@@ -572,8 +590,8 @@ describe('getFuzzyPokemon', () => {
               evolutionLevel: 'use Ice Stone',
               flavorTexts: [
                 {
-                  flavor: 'The coldness emanating from Glaceon causes powdery snow to form, making it quite a popular Pokémon at ski resorts.',
-                  game: 'Shield'
+                  flavor: 'As a defense mechanism, it can completely freeze its fur to make its hairs stand out like needles.',
+                  game: 'Shining Pearl'
                 }
               ],
               forme: null,
@@ -607,7 +625,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/glaceon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Blue',
               cosmeticFormes: null
             },
@@ -665,7 +686,10 @@ describe('getFuzzyPokemon', () => {
               },
               baseStatsTotal: 525,
               bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/sylveon_(Pokémon)',
-              catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+              catchRate: {
+                base: 45,
+                percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+              },
               color: 'Pink',
               cosmeticFormes: null
             }
@@ -689,8 +713,8 @@ describe('getFuzzyPokemon', () => {
           evolutionLevel: null,
           flavorTexts: [
             {
-              flavor: 'Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.',
-              game: 'Shield'
+              flavor: 'It is a rare Pokémon that adapts to harsh environments by changing its appearance and capabilities when it evolves.',
+              game: 'Shining Pearl'
             }
           ],
           forme: null,

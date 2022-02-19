@@ -101,6 +101,7 @@ export namespace PokemonTypes {
       | 'Field'
       | 'Fairy'
       | 'Grass'
+      | 'Ground'
       | 'Human-Like'
       | 'Water 3'
       | 'Mineral'

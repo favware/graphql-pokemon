@@ -326,15 +326,26 @@ describe('getPokemon', () => {
       expect(data.getPokemon).toEqual({
         evolutions: [
           {
-            abilities: { first: 'Water Absorb', second: null, hidden: 'Hydration', special: null },
+            abilities: {
+              first: 'Water Absorb',
+              second: null,
+              hidden: 'Hydration',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 2, attack: 0, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 2,
+              attack: 0,
+              defense: 0,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: 'use Water Stone',
-            evolutions: null,
             flavorTexts: [
               {
-                flavor: "Its body's cellular structure is similar to the molecular composition of water. It can melt invisibly in water.",
-                game: 'Shield'
+                flavor: 'It has evolved to be suited for an aquatic life. It can become invisible when it melts away into water.',
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -348,7 +359,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 134,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/vaporeon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/vaporeon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/vaporeon.gif',
@@ -359,20 +369,45 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/vaporeon.gif',
             types: ['Water'],
             baseSpecies: null,
-            baseStats: { hp: 130, attack: 65, defense: 60, specialattack: 110, specialdefense: 95, speed: 65 },
+            baseStats: {
+              hp: 130,
+              attack: 65,
+              defense: 60,
+              specialattack: 110,
+              specialdefense: 95,
+              speed: 65
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/vaporeon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Blue',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Volt Absorb', second: null, hidden: 'Quick Feet', special: null },
+            abilities: {
+              first: 'Volt Absorb',
+              second: null,
+              hidden: 'Quick Feet',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 0, speed: 2 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 0,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 2
+            },
             evolutionLevel: 'use Thunder Stone',
-            evolutions: null,
-            flavorTexts: [{ flavor: 'It accumulates negative ions in the atmosphere to blast out 10,000-volt lightning bolts.', game: 'Shield' }],
+            flavorTexts: [
+              {
+                flavor: 'It controls 10,000-volt power. When the fur covering its body stands on end, the fur is hard and sharp, like needles.',
+                game: 'Shining Pearl'
+              }
+            ],
             forme: null,
             formeLetter: null,
             gender: { female: '12.5%', male: '87.5%' },
@@ -384,7 +419,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 135,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/jolteon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/jolteon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/jolteon.gif',
@@ -395,23 +429,43 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/jolteon.gif',
             types: ['Electric'],
             baseSpecies: null,
-            baseStats: { hp: 65, attack: 65, defense: 60, specialattack: 110, specialdefense: 95, speed: 130 },
+            baseStats: {
+              hp: 65,
+              attack: 65,
+              defense: 60,
+              specialattack: 110,
+              specialdefense: 95,
+              speed: 130
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/jolteon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Yellow',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Flash Fire', second: null, hidden: 'Guts', special: null },
+            abilities: {
+              first: 'Flash Fire',
+              second: null,
+              hidden: 'Guts',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 2, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 2,
+              defense: 0,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: 'use Fire Stone',
-            evolutions: null,
             flavorTexts: [
               {
-                flavor: 'It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees Fahrenheit.',
-                game: 'Shield'
+                flavor: 'It has a flame sac in its body. Its body temperature tops 1,650 degrees Fahrenheit before battle.',
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -425,7 +479,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 136,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/flareon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/flareon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/flareon.gif',
@@ -436,23 +489,43 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/flareon.gif',
             types: ['Fire'],
             baseSpecies: null,
-            baseStats: { hp: 65, attack: 130, defense: 60, specialattack: 95, specialdefense: 110, speed: 65 },
+            baseStats: {
+              hp: 65,
+              attack: 130,
+              defense: 60,
+              specialattack: 95,
+              specialdefense: 110,
+              speed: 65
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/flareon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Red',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Synchronize', second: null, hidden: 'Magic Bounce', special: null },
+            abilities: {
+              first: 'Synchronize',
+              second: null,
+              hidden: 'Magic Bounce',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 0, defense: 0, specialattack: 2, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 0,
+              specialattack: 2,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: 'Level up during Daytime with happiness of at least 220',
-            evolutions: null,
             flavorTexts: [
               {
-                flavor: 'It unleashes psychic power from the orb on its forehead. When its power is exhausted, the orb grows dull and dark.',
-                game: 'Shield'
+                flavor: 'Its fur has the look and feel of velvet. The orb on its forehead glows when it uses psychic power.',
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -466,7 +539,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 196,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/espeon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/espeon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/espeon.gif',
@@ -477,21 +549,44 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/espeon.gif',
             types: ['Psychic'],
             baseSpecies: null,
-            baseStats: { hp: 65, attack: 65, defense: 60, specialattack: 130, specialdefense: 95, speed: 110 },
+            baseStats: {
+              hp: 65,
+              attack: 65,
+              defense: 60,
+              specialattack: 130,
+              specialdefense: 95,
+              speed: 110
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/espeon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Purple',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Synchronize', second: null, hidden: 'Inner Focus', special: null },
+            abilities: {
+              first: 'Synchronize',
+              second: null,
+              hidden: 'Inner Focus',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 2, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 0,
+              specialattack: 0,
+              specialdefense: 2,
+              speed: 0
+            },
             evolutionLevel: 'Level up during Nighttime with happiness of at least 220',
-            evolutions: null,
             flavorTexts: [
-              { flavor: 'On the night of a full moon, or when it gets excited, the ring patterns on its body glow yellow.', game: 'Shield' }
+              {
+                flavor: "The light of the moon changed Eevee's genetic structure. It lurks in the darkness, waiting for prey.",
+                game: 'Shining Pearl'
+              }
             ],
             forme: null,
             formeLetter: null,
@@ -504,7 +599,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 197,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/umbreon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/umbreon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/umbreon.gif',
@@ -515,23 +609,43 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/umbreon.gif',
             types: ['Dark'],
             baseSpecies: null,
-            baseStats: { hp: 95, attack: 65, defense: 110, specialattack: 60, specialdefense: 130, speed: 65 },
+            baseStats: {
+              hp: 95,
+              attack: 65,
+              defense: 110,
+              specialattack: 60,
+              specialdefense: 130,
+              speed: 65
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/umbreon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Black',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Leaf Guard', second: null, hidden: 'Chlorophyll', special: null },
+            abilities: {
+              first: 'Leaf Guard',
+              second: null,
+              hidden: 'Chlorophyll',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 0, defense: 2, specialattack: 0, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 2,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: 'use Leaf Stone',
-            evolutions: null,
             flavorTexts: [
               {
-                flavor: "This Pokémon's tail is blade sharp, with a fantastic cutting edge that can slice right though large trees.",
-                game: 'Shield'
+                flavor: 'Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air.',
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -545,7 +659,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 470,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/leafeon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/leafeon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/leafeon.gif',
@@ -556,23 +669,43 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/leafeon.gif',
             types: ['Grass'],
             baseSpecies: null,
-            baseStats: { hp: 65, attack: 110, defense: 130, specialattack: 60, specialdefense: 65, speed: 95 },
+            baseStats: {
+              hp: 65,
+              attack: 110,
+              defense: 130,
+              specialattack: 60,
+              specialdefense: 65,
+              speed: 95
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/leafeon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Green',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Snow Cloak', second: null, hidden: 'Ice Body', special: null },
+            abilities: {
+              first: 'Snow Cloak',
+              second: null,
+              hidden: 'Ice Body',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 0, defense: 0, specialattack: 2, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 0,
+              specialattack: 2,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: 'use Ice Stone',
-            evolutions: null,
             flavorTexts: [
               {
-                flavor: 'The coldness emanating from Glaceon causes powdery snow to form, making it quite a popular Pokémon at ski resorts.',
-                game: 'Shield'
+                flavor: 'As a defense mechanism, it can completely freeze its fur to make its hairs stand out like needles.',
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -586,7 +719,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 471,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/glaceon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/glaceon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/glaceon.gif',
@@ -597,19 +729,39 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/glaceon.gif',
             types: ['Ice'],
             baseSpecies: null,
-            baseStats: { hp: 65, attack: 60, defense: 110, specialattack: 130, specialdefense: 95, speed: 65 },
+            baseStats: {
+              hp: 65,
+              attack: 60,
+              defense: 110,
+              specialattack: 130,
+              specialdefense: 95,
+              speed: 65
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/glaceon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Blue',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           },
           {
-            abilities: { first: 'Cute Charm', second: null, hidden: 'Pixilate', special: null },
+            abilities: {
+              first: 'Cute Charm',
+              second: null,
+              hidden: 'Pixilate',
+              special: null
+            },
             eggGroups: ['Field'],
-            evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 2, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 0,
+              specialattack: 0,
+              specialdefense: 2,
+              speed: 0
+            },
             evolutionLevel: 'Level up while having high Affection and knowing a Fairy type move',
-            evolutions: null,
             flavorTexts: [
               {
                 flavor: "There's a Galarian fairy tale that describes a beautiful Sylveon vanquishing a dreadful dragon Pokémon.",
@@ -627,7 +779,6 @@ describe('getPokemon', () => {
             minimumHatchTime: 8995,
             num: 700,
             otherFormes: null,
-            preevolutions: null,
             serebiiPage: 'https://www.serebii.net/pokedex-swsh/sylveon',
             shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/sylveon.gif',
             shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/sylveon.gif',
@@ -638,21 +789,45 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/sylveon.gif',
             types: ['Fairy'],
             baseSpecies: null,
-            baseStats: { hp: 95, attack: 65, defense: 65, specialattack: 110, specialdefense: 130, speed: 60 },
+            baseStats: {
+              hp: 95,
+              attack: 65,
+              defense: 65,
+              specialattack: 110,
+              specialdefense: 130,
+              speed: 60
+            },
             baseStatsTotal: 525,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/sylveon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
             color: 'Pink',
-            cosmeticFormes: null
+            cosmeticFormes: null,
+            evolutions: null,
+            preevolutions: null
           }
         ],
         preevolutions: null,
-        abilities: { first: 'Run Away', second: 'Adaptability', hidden: 'Anticipation', special: null },
+        abilities: {
+          first: 'Run Away',
+          second: 'Adaptability',
+          hidden: 'Anticipation',
+          special: null
+        },
         eggGroups: ['Field'],
-        evYields: { hp: 0, attack: 0, defense: 0, specialattack: 0, specialdefense: 1, speed: 0 },
+        evYields: {
+          hp: 0,
+          attack: 0,
+          defense: 0,
+          specialattack: 0,
+          specialdefense: 1,
+          speed: 0
+        },
         evolutionLevel: null,
         flavorTexts: [
-          { flavor: 'Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.', game: 'Shield' }
+          {
+            flavor: 'It is a rare Pokémon that adapts to harsh environments by changing its appearance and capabilities when it evolves.',
+            game: 'Shining Pearl'
+          }
         ],
         forme: null,
         formeLetter: null,
@@ -675,7 +850,14 @@ describe('getPokemon', () => {
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/eevee.gif',
         types: ['Normal'],
         baseSpecies: null,
-        baseStats: { hp: 55, attack: 55, defense: 50, specialattack: 45, specialdefense: 65, speed: 55 },
+        baseStats: {
+          hp: 55,
+          attack: 55,
+          defense: 50,
+          specialattack: 45,
+          specialdefense: 65,
+          speed: 55
+        },
         baseStatsTotal: 325,
         bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/eevee_(Pokémon)',
         catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -1175,15 +1357,26 @@ describe('getPokemon', () => {
       expect(data.getPokemon).toEqual({
         evolutions: [
           {
-            abilities: { first: 'Clear Body', second: null, hidden: 'Light Metal', special: null },
+            abilities: {
+              first: 'Clear Body',
+              second: null,
+              hidden: 'Light Metal',
+              special: null
+            },
             eggGroups: ['Mineral'],
-            evYields: { hp: 0, attack: 0, defense: 2, specialattack: 0, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 2,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: '20',
             flavorTexts: [
               {
-                flavor:
-                  'Using magnetic forces to stay aloft, this Pokémon flies at high speeds, weaving through harsh mountain terrain in pursuit of prey.',
-                game: 'Shield'
+                flavor: "It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet.",
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -1207,7 +1400,14 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/metang.gif',
             types: ['Steel', 'Psychic'],
             baseSpecies: null,
-            baseStats: { hp: 60, attack: 75, defense: 100, specialattack: 55, specialdefense: 80, speed: 50 },
+            baseStats: {
+              hp: 60,
+              attack: 75,
+              defense: 100,
+              specialattack: 55,
+              specialdefense: 80,
+              speed: 50
+            },
             baseStatsTotal: 420,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/metang_(Pokémon)',
             catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
@@ -1215,15 +1415,26 @@ describe('getPokemon', () => {
             cosmeticFormes: null,
             evolutions: [
               {
-                abilities: { first: 'Clear Body', second: null, hidden: 'Light Metal', special: null },
+                abilities: {
+                  first: 'Clear Body',
+                  second: null,
+                  hidden: 'Light Metal',
+                  special: null
+                },
                 eggGroups: ['Mineral'],
-                evYields: { hp: 0, attack: 0, defense: 3, specialattack: 0, specialdefense: 0, speed: 0 },
+                evYields: {
+                  hp: 0,
+                  attack: 0,
+                  defense: 3,
+                  specialattack: 0,
+                  specialdefense: 0,
+                  speed: 0
+                },
                 evolutionLevel: '45',
                 flavorTexts: [
                   {
-                    flavor:
-                      'Metagross is the result of the fusion of two Metang. This Pokémon defeats its opponents through use of its supercomputer-level brain.',
-                    game: 'Shield'
+                    flavor: 'Metang combined to form it. With four brains, it has the intelligence of a supercomputer.',
+                    game: 'Shining Pearl'
                   }
                 ],
                 forme: null,
@@ -1247,10 +1458,20 @@ describe('getPokemon', () => {
                 sprite: 'https://play.pokemonshowdown.com/sprites/ani/metagross.gif',
                 types: ['Steel', 'Psychic'],
                 baseSpecies: null,
-                baseStats: { hp: 80, attack: 135, defense: 130, specialattack: 95, specialdefense: 90, speed: 70 },
+                baseStats: {
+                  hp: 80,
+                  attack: 135,
+                  defense: 130,
+                  specialattack: 95,
+                  specialdefense: 90,
+                  speed: 70
+                },
                 baseStatsTotal: 600,
                 bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/metagross_(Pokémon)',
-                catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+                catchRate: {
+                  base: 3,
+                  percentageWithOrdinaryPokeballAtFullHealth: '1.6%'
+                },
                 color: 'Blue',
                 cosmeticFormes: null
               }
@@ -1259,15 +1480,26 @@ describe('getPokemon', () => {
           }
         ],
         preevolutions: null,
-        abilities: { first: 'Clear Body', second: null, hidden: 'Light Metal', special: null },
+        abilities: {
+          first: 'Clear Body',
+          second: null,
+          hidden: 'Light Metal',
+          special: null
+        },
         eggGroups: ['Mineral'],
-        evYields: { hp: 0, attack: 0, defense: 1, specialattack: 0, specialdefense: 0, speed: 0 },
+        evYields: {
+          hp: 0,
+          attack: 0,
+          defense: 1,
+          specialattack: 0,
+          specialdefense: 0,
+          speed: 0
+        },
         evolutionLevel: null,
         flavorTexts: [
           {
-            flavor:
-              "The cells in this Pokémon's body are composed of magnetic material. Instead of blood, magnetic forces flow through Beldum's body.",
-            game: 'Shield'
+            flavor: 'They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison.',
+            game: 'Shining Pearl'
           }
         ],
         forme: null,
@@ -1291,7 +1523,14 @@ describe('getPokemon', () => {
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/beldum.gif',
         types: ['Steel', 'Psychic'],
         baseSpecies: null,
-        baseStats: { hp: 40, attack: 55, defense: 80, specialattack: 35, specialdefense: 60, speed: 30 },
+        baseStats: {
+          hp: 40,
+          attack: 55,
+          defense: 80,
+          specialattack: 35,
+          specialdefense: 60,
+          speed: 30
+        },
         baseStatsTotal: 300,
         bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/beldum_(Pokémon)',
         catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
@@ -1310,15 +1549,26 @@ describe('getPokemon', () => {
         evolutions: null,
         preevolutions: [
           {
-            abilities: { first: 'Rock Head', second: null, hidden: 'Overcoat', special: null },
+            abilities: {
+              first: 'Rock Head',
+              second: null,
+              hidden: 'Overcoat',
+              special: null
+            },
             eggGroups: ['Dragon'],
-            evYields: { hp: 0, attack: 0, defense: 2, specialattack: 0, specialdefense: 0, speed: 0 },
+            evYields: {
+              hp: 0,
+              attack: 0,
+              defense: 2,
+              specialattack: 0,
+              specialdefense: 0,
+              speed: 0
+            },
             evolutionLevel: '30',
             flavorTexts: [
               {
-                flavor:
-                  'Shelgon ignores its hunger entirely, never eating any food. Apparently, Shelgon will evolve once all its energy stores are used up.',
-                game: 'Shield'
+                flavor: 'Within its rugged shell, its cells have begun changing. The shell peels off the instant the Pokémon evolves.',
+                game: 'Shining Pearl'
               }
             ],
             forme: null,
@@ -1342,7 +1592,14 @@ describe('getPokemon', () => {
             sprite: 'https://play.pokemonshowdown.com/sprites/ani/shelgon.gif',
             types: ['Dragon'],
             baseSpecies: null,
-            baseStats: { hp: 65, attack: 95, defense: 100, specialattack: 60, specialdefense: 50, speed: 50 },
+            baseStats: {
+              hp: 65,
+              attack: 95,
+              defense: 100,
+              specialattack: 60,
+              specialdefense: 50,
+              speed: 50
+            },
             baseStatsTotal: 420,
             bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/shelgon_(Pokémon)',
             catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -1351,15 +1608,26 @@ describe('getPokemon', () => {
             evolutions: null,
             preevolutions: [
               {
-                abilities: { first: 'Rock Head', second: null, hidden: 'Sheer Force', special: null },
+                abilities: {
+                  first: 'Rock Head',
+                  second: null,
+                  hidden: 'Sheer Force',
+                  special: null
+                },
                 eggGroups: ['Dragon'],
-                evYields: { hp: 0, attack: 1, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
+                evYields: {
+                  hp: 0,
+                  attack: 1,
+                  defense: 0,
+                  specialattack: 0,
+                  specialdefense: 0,
+                  speed: 0
+                },
                 evolutionLevel: null,
                 flavorTexts: [
                   {
-                    flavor:
-                      "Bagon is a solitary Pokémon that doesn't form groups with others of its kind. It also has a head hard enough to cleave a boulder in one strike.",
-                    game: 'Shield'
+                    flavor: 'Dreaming of one day flying, it practices by leaping off cliffs every day.',
+                    game: 'Shining Pearl'
                   }
                 ],
                 forme: null,
@@ -1383,10 +1651,20 @@ describe('getPokemon', () => {
                 sprite: 'https://play.pokemonshowdown.com/sprites/ani/bagon.gif',
                 types: ['Dragon'],
                 baseSpecies: null,
-                baseStats: { hp: 45, attack: 75, defense: 60, specialattack: 40, specialdefense: 30, speed: 50 },
+                baseStats: {
+                  hp: 45,
+                  attack: 75,
+                  defense: 60,
+                  specialattack: 40,
+                  specialdefense: 30,
+                  speed: 50
+                },
                 baseStatsTotal: 300,
                 bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/bagon_(Pokémon)',
-                catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+                catchRate: {
+                  base: 45,
+                  percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+                },
                 color: 'Blue',
                 cosmeticFormes: null
               }
@@ -1395,13 +1673,19 @@ describe('getPokemon', () => {
         ],
         abilities: { first: 'Intimidate', second: null, hidden: 'Moxie', special: null },
         eggGroups: ['Dragon'],
-        evYields: { hp: 0, attack: 3, defense: 0, specialattack: 0, specialdefense: 0, speed: 0 },
+        evYields: {
+          hp: 0,
+          attack: 3,
+          defense: 0,
+          specialattack: 0,
+          specialdefense: 0,
+          speed: 0
+        },
         evolutionLevel: '50',
         flavorTexts: [
           {
-            flavor:
-              'While basking in the joy of flight generally keeps this Pokémon in high spirits, Salamence turns into an uncontrollable menace if something angers it.',
-            game: 'Shield'
+            flavor: 'As a result of its long-held dream of flying, its cellular structure changed, and wings grew out.',
+            game: 'Shining Pearl'
           }
         ],
         forme: null,
@@ -1425,7 +1709,14 @@ describe('getPokemon', () => {
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/salamence.gif',
         types: ['Dragon', 'Flying'],
         baseSpecies: null,
-        baseStats: { hp: 95, attack: 135, defense: 80, specialattack: 110, specialdefense: 80, speed: 100 },
+        baseStats: {
+          hp: 95,
+          attack: 135,
+          defense: 80,
+          specialattack: 110,
+          specialdefense: 80,
+          speed: 100
+        },
         baseStatsTotal: 600,
         bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/salamence_(Pokémon)',
         catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },

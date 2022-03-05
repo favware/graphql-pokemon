@@ -6867,7 +6867,7 @@ export const moves = new GraphQLCollection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Special',
       contestType: 'Beautiful',
-      desc: "This move's type depends on the user's held Plate.",
+      desc: "This move's type depends on the user's held Plate. If the user has activated the Legend Plate, automatically changes type to the type that will inflict the most damage on the opponent while making it so the user would take the last damage.",
       maxMovePower: 130,
       name: 'Judgment',
       pp: 10,

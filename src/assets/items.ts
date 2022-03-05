@@ -4362,6 +4362,16 @@ export const items = new GraphQLCollection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'legendplate',
+    {
+      desc: 'A stone tablet imbued with the essence of all creation. When used on a certain Pokémon, it allows that Pokémon to gain the power of every type there is.',
+      gen: 8,
+      keyItem: true,
+      name: 'Legend Plate',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/legendplate.png'
+    }
+  ],
+  [
     'lenscase',
     {
       desc: 'A rather chic-looking case for carrying contact lenses.',

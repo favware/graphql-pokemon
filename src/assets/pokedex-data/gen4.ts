@@ -3006,7 +3006,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'arceuspsychic',
         'arceusrock',
         'arceussteel',
-        'arceuswater'
+        'arceuswater',
+        'arceuslegend'
       ],
       species: 'arceus',
       types: ['Normal'],
@@ -3743,6 +3744,48 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: ['Water'],
       weightkg: 320,
       aliases: ['arcwater', 'waterceus']
+    }
+  ],
+  [
+    'arceuslegend',
+    {
+      abilities: { first: 'Multitype' },
+      baseForme: 'Normal',
+      baseStats: { hp: 120, atk: 120, def: 120, spa: 120, spd: 120, spe: 120 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+      color: 'White',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 3.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 493,
+      otherFormes: [
+        'arceus',
+        'arceusbug',
+        'arceusdark',
+        'arceusdragon',
+        'arceuselectric',
+        'arceusfairy',
+        'arceusfighting',
+        'arceusfire',
+        'arceusflying',
+        'arceusghost',
+        'arceusgrass',
+        'arceusground',
+        'arceusice',
+        'arceuspoison',
+        'arceuspsychic',
+        'arceusrock',
+        'arceussteel',
+        'arceuswater'
+      ],
+      species: 'arceus',
+      types: ['Normal'],
+      weightkg: 320,
+      aliases: ['arceuslegendary', 'plarceus', 'god']
     }
   ]
 ];

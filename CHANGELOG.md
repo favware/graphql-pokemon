@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.5.0](https://github.com/favware/graphql-pokemon/compare/v6.4.0...v6.5.0) (2022-03-05)
+
+
+### Features
+
+* add Legendary Arceus data ([50eedaf](https://github.com/favware/graphql-pokemon/commit/50eedaff08c5d937def4e52ba39b6dd46fe2d8ba))
+
 ## [6.4.0](https://github.com/favware/graphql-pokemon/compare/v6.3.3...v6.4.0) (2022-02-19)
 
 

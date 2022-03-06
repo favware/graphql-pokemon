@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.5.1](https://github.com/favware/graphql-pokemon/compare/v6.5.0...v6.5.1) (2022-03-06)
+
+
+### Bug Fixes
+
+* allow proper maximum amount for `getAllPokemonSpecies` ([397abf1](https://github.com/favware/graphql-pokemon/commit/397abf1bb4a33d116a95195ed7ee8c7a3aff14fb))
+* assign form specific properties to `arceus-legend` ([a9a1879](https://github.com/favware/graphql-pokemon/commit/a9a1879f5371e34594f496e67580c8a3321b95fe))
+
 ## [6.5.0](https://github.com/favware/graphql-pokemon/compare/v6.4.0...v6.5.0) (2022-03-05)
 
 

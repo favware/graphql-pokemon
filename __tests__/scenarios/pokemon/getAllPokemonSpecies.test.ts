@@ -758,6 +758,7 @@ describe('getAllPokemonSpecies', () => {
       'Arceus-rock',
       'Arceus-steel',
       'Arceus-water',
+      'Arceus-legend',
       'Victini',
       'Snivy',
       'Servine',

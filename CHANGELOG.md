@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.5.8](https://github.com/favware/graphql-pokemon/compare/v6.5.7...v6.5.8) (2022-04-17)
+
 ### [6.5.7](https://github.com/favware/graphql-pokemon/compare/v6.5.6...v6.5.7) (2022-04-03)
 
 ### [6.5.6](https://github.com/favware/graphql-pokemon/compare/v6.5.5...v6.5.6) (2022-03-27)

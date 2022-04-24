@@ -7,7 +7,7 @@ services:
     networks:
       - pokedex
     ports:
-      - '8080:8080'
+      - '8080:4000'
     restart: 'no'
 
 networks:

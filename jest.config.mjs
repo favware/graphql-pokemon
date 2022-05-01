@@ -1,11 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/require-await
-export default async () => ({
+/** @type {import('@jest/types').Config.InitialOptions} */
+const config = {
   coverageProvider: 'v8',
-  testEnvironment: 'node',
-  testRunner: 'jest-circus/runner',
   testMatch: ['<rootDir>/__tests__/**/*.test.ts'],
   setupFilesAfterEnv: ['<rootDir>/__tests__/testUtils/jest.setup.ts'],
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  coveragePathIgnorePatterns: ['<rootDir>/src/index.ts', '<rootDir>/src/server.ts', '<rootDir>/src/defaultPlaygroundTabs.ts'],
+  reporters: ['default', 'github-actions'],
   moduleNameMapper: {
     '^#arguments/(.*)$': '<rootDir>/src/arguments/$1',
     '^#assets/(.*)$': '<rootDir>/src/assets/$1',
@@ -18,13 +19,6 @@ export default async () => ({
     '^#root/(.*)$': '<rootDir>/src/$1',
     '^#test-utils/(.*)$': '<rootDir>/__tests__/testUtils/$1'
   },
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-    '<rootDir>/__tests__',
-    '<rootDir>/src/index.ts',
-    '<rootDir>/src/server.ts',
-    '<rootDir>/src/defaultPlaygroundTabs.ts'
-  ],
   coverageThreshold: {
     global: {
       branches: 99,
@@ -67,4 +61,6 @@ export default async () => ({
       }
     ]
   }
-});
+};
+
+export default config;

@@ -74681,7 +74681,7 @@ export const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray
       workup: ['8M']
     }
   ],
-  ['zaciancrowned', { behemothblade: ['8M', '8L33'] }],
+  ['zaciancrowned', { behemothblade: ['8R'] }],
   [
     'zamazenta',
     {
@@ -74743,7 +74743,7 @@ export const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray
       workup: ['8M']
     }
   ],
-  ['zamazentacrowned', { behemothbash: ['8M', '8L33'] }],
+  ['zamazentacrowned', { behemothbash: ['8R'] }],
   [
     'eternatus',
     {

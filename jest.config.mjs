@@ -5,7 +5,12 @@ const config = {
   setupFilesAfterEnv: ['<rootDir>/__tests__/testUtils/jest.setup.ts'],
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
-  coveragePathIgnorePatterns: ['<rootDir>/src/index.ts', '<rootDir>/src/server.ts', '<rootDir>/src/defaultPlaygroundTabs.ts'],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/index.ts',
+    '<rootDir>/src/server.ts',
+    '<rootDir>/src/defaultPlaygroundTabs.ts',
+    '<rootDir>/src/utils/pokemon.d.ts'
+  ],
   reporters: ['default', 'github-actions'],
   moduleNameMapper: {
     '^#arguments/(.*)$': '<rootDir>/src/arguments/$1',
@@ -21,13 +26,13 @@ const config = {
   },
   coverageThreshold: {
     global: {
-      branches: 99,
+      branches: 85,
       functions: 99,
       lines: 99,
       statements: 99
     },
     './src/resolvers/*.ts': {
-      branches: 65,
+      branches: 40,
       functions: 100,
       lines: 75,
       statements: 75

@@ -2218,7 +2218,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 30840,
       num: 718,
       otherFormes: ['zygarde', 'zygardecomplete'],
-      species: 'Zygarde-10%',
+      species: 'zygarde-10',
       types: ['Dragon', 'Ground'],
       weightkg: 33.5,
       aliases: ['zydog', 'zydoge', 'zygardedog']

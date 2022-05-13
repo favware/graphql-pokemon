@@ -107,10 +107,6 @@
   "files": [
     "generated/ts/*"
   ],
-  "engines": {
-    "node": ">=16",
-    "npm": ">=7.24.2"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/favware/graphql-pokemon.git"

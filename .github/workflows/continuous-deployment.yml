@@ -150,7 +150,7 @@ jobs:
           if-no-files-found: error
       - name: Push changes
         if: "!contains(github.event.head_commit.message, '[skip bump]')"
-        run: git push --follow-tags origin main
+        run: git push origin main && git push --tags origin main
 
   NPMPublish:
     name: Publishing release to NPM

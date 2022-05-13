@@ -25,22 +25,11 @@ jobs:
         run: yarn au:learnsets
       - name: Run prettier on the code
         run: yarn format
-      - name: Install GitHub CLI
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl -sL \
-              $(curl -sL \
-                  -H "Authorization: bearer ${GITHUB_TOKEN}" \
-                  -X POST \
-                  --data '{"query":"query { repository(owner: \"cli\", name: \"cli\") { releases(last: 1) { nodes { releaseAssets(first: 20) { nodes { downloadUrl name }}}}}}"}' "https://api.github.com/graphql" |
-                  jq -cr '.data.repository.releases.nodes[0].releaseAssets.nodes[]? | select(.name | contains("linux_amd64.tar.gz")).downloadUrl') |
-              tar -xz --wildcards "*gh" && mv gh*linux_amd64/bin/gh . && rm -r gh_*linux_amd64
       - name: Commit any changes and create a pull request
         env:
-          GITHUB_USER: Favware-bot
-          GITHUB_EMAIL: favwarebot@gmail.com
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GITHUB_USER: github-actions[bot]
+          GITHUB_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add .;
           if git diff-index --quiet HEAD --; then
@@ -53,5 +42,5 @@ jobs:
             git checkout -b favware-bot/update-data/$(date +%F-%H-%M);
             git commit -sam "refactor: update data [skip publish]";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            ./gh pr create -t "refactor: update data [skip publish]" -b "*bleep bloop* I updated the data files" -B main;
+            gh pr create -t "refactor: update data [skip publish]" -b "*bleep bloop* I updated the data files" -B main;
           fi

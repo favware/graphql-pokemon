@@ -75,12 +75,12 @@ jobs:
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
       - name: Add problem matchers
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
-      - name: Use Node.js v17
+      - name: Use Node.js v18
         uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3
         with:
-          node-version: 17
+          node-version: 18
           cache: yarn
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Generate GraphQL Schema code
@@ -103,21 +103,39 @@ jobs:
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
         with:
           fetch-depth: 0
-      - name: Use Node.js v17
+      - name: Use Node.js v18
         uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3
         with:
-          node-version: 17
+          node-version: 18
           cache: yarn
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Configure Git
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+      - name: Install Git Cliff
+        if: "!contains(github.event.head_commit.message, '[skip bump]')"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -o ./git-cliff.tar.gz -sL \
+              $(curl -sL \
+                  -H "Authorization: bearer ${GITHUB_TOKEN}" \
+                  -X POST \
+                  --data '{"query":"query { repository(owner: \"orhun\", name: \"git-cliff\") { releases(last: 1) { nodes { releaseAssets(first: 20) { nodes { downloadUrl name }}}}}}"}' "https://api.github.com/graphql" |
+              jq -cr '.data.repository.releases.nodes[0].releaseAssets.nodes[]? | select(.name | contains("x86_64-unknown-linux-gnu.tar.gz")).downloadUrl')
+          tar -xzf ./git-cliff.tar.gz --wildcards "*git-cliff"
+          mkdir -p ${HOME}/.local/bin
+          mv git-cliff-*/git-cliff ${HOME}/.local/bin/git-cliff
+          rm -r git-cliff-*
+          echo "${HOME}/.local/bin" >> $GITHUB_PATH
       - name: Bump semver
         if: "!contains(github.event.head_commit.message, '[skip bump]')"
-        run: yarn sversion
+        run: yarn bump --no-skip-tag --no-skip-changelog
+        env:
+          CI: false
       - name: Store bumped package.json
         uses: actions/upload-artifact@6673cd052c4cd6fcf4b4e6e60ea986c889389535 # tag=v3
         with:
@@ -159,13 +177,16 @@ jobs:
       - name: Setup Node for publishing to NPM
         uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3
         with:
-          node-version: 17
+          node-version: 18
           cache: yarn
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
       - name: Publish to NPM
-        run: npm publish || true
+        run: |
+          yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
+          yarn config set npmPublishRegistry "https://registry.yarnpkg.com"
+          yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -181,7 +202,7 @@ jobs:
       - name: Setup Node for publishing to Github
         uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3
         with:
-          node-version: 17
+          node-version: 18
           registry-url: 'https://npm.pkg.github.com'
           scope: '@favware'
           cache: yarn
@@ -201,6 +222,9 @@ jobs:
       - name: Install Dependencies
         run: yarn --immutable
       - name: Publish to Github
-        run: npm publish
+        run: |
+          yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
+          yarn config set npmPublishRegistry "https://npm.pkg.github.com"
+          yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

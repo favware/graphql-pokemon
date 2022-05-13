@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
 
 ### [6.5.10](https://github.com/favware/graphql-pokemon/compare/v6.5.9...v6.5.10) (2022-05-01)
 
@@ -22,40 +22,36 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [6.5.1](https://github.com/favware/graphql-pokemon/compare/v6.5.0...v6.5.1) (2022-03-06)
 
-
 ### Bug Fixes
 
-* allow proper maximum amount for `getAllPokemonSpecies` ([397abf1](https://github.com/favware/graphql-pokemon/commit/397abf1bb4a33d116a95195ed7ee8c7a3aff14fb))
-* assign form specific properties to `arceus-legend` ([a9a1879](https://github.com/favware/graphql-pokemon/commit/a9a1879f5371e34594f496e67580c8a3321b95fe))
+- allow proper maximum amount for `getAllPokemonSpecies` ([397abf1](https://github.com/favware/graphql-pokemon/commit/397abf1bb4a33d116a95195ed7ee8c7a3aff14fb))
+- assign form specific properties to `arceus-legend` ([a9a1879](https://github.com/favware/graphql-pokemon/commit/a9a1879f5371e34594f496e67580c8a3321b95fe))
 
 ## [6.5.0](https://github.com/favware/graphql-pokemon/compare/v6.4.0...v6.5.0) (2022-03-05)
 
-
 ### Features
 
-* add Legendary Arceus data ([50eedaf](https://github.com/favware/graphql-pokemon/commit/50eedaff08c5d937def4e52ba39b6dd46fe2d8ba))
+- add Legendary Arceus data ([50eedaf](https://github.com/favware/graphql-pokemon/commit/50eedaff08c5d937def4e52ba39b6dd46fe2d8ba))
 
 ## [6.4.0](https://github.com/favware/graphql-pokemon/compare/v6.3.3...v6.4.0) (2022-02-19)
 
-
 ### Features
 
-* add BDSP flavor texts ([18dad91](https://github.com/favware/graphql-pokemon/commit/18dad9194358a253936dd61d517415e102f65a89))
-* add flavor texts for hisuian forms ([9a2ffa7](https://github.com/favware/graphql-pokemon/commit/9a2ffa77a11c5ecc44159e58c1c6b00e5ecc8c66))
-* add Legends Arceus data ([14affc4](https://github.com/favware/graphql-pokemon/commit/14affc4cc823ce3ab27dfb1584df3a95118135dd))
-* add Legends Arceus moves ([44d3ea0](https://github.com/favware/graphql-pokemon/commit/44d3ea0ff831420c168196f22ef2b7596d19e7be))
-* add legends arceus pokedex data ([8e02a13](https://github.com/favware/graphql-pokemon/commit/8e02a13c999d044ad544590b8665d831b76b1a5a))
-* add otherFormes to all separate formes ([9a237f6](https://github.com/favware/graphql-pokemon/commit/9a237f6cb6d1bb21afad491c73b6d4cd3e3f2b9d))
-
+- add BDSP flavor texts ([18dad91](https://github.com/favware/graphql-pokemon/commit/18dad9194358a253936dd61d517415e102f65a89))
+- add flavor texts for hisuian forms ([9a2ffa7](https://github.com/favware/graphql-pokemon/commit/9a2ffa77a11c5ecc44159e58c1c6b00e5ecc8c66))
+- add Legends Arceus data ([14affc4](https://github.com/favware/graphql-pokemon/commit/14affc4cc823ce3ab27dfb1584df3a95118135dd))
+- add Legends Arceus moves ([44d3ea0](https://github.com/favware/graphql-pokemon/commit/44d3ea0ff831420c168196f22ef2b7596d19e7be))
+- add legends arceus pokedex data ([8e02a13](https://github.com/favware/graphql-pokemon/commit/8e02a13c999d044ad544590b8665d831b76b1a5a))
+- add otherFormes to all separate formes ([9a237f6](https://github.com/favware/graphql-pokemon/commit/9a237f6cb6d1bb21afad491c73b6d4cd3e3f2b9d))
 
 ### Bug Fixes
 
-* add missing `baseSpecies` and `otherFormes` ([8f9c13a](https://github.com/favware/graphql-pokemon/commit/8f9c13ae2413ce9dc4d83328dd09ee5874d4158b))
-* allow `pokemon number` queries to go up to dex number 905 ([82b8178](https://github.com/favware/graphql-pokemon/commit/82b8178925ff305d49a099fd8d882929c65fdf94))
-* allow maximum of all pokemon listing to go up to 1271 ([a6c1a41](https://github.com/favware/graphql-pokemon/commit/a6c1a41d731adc23fef3f9b8bac1f3bc87783d7d))
-* fixed species for hisuian sliggoo ([de56079](https://github.com/favware/graphql-pokemon/commit/de56079c630994516da5d6520c6ca225a7eca9d5))
-* fixed various move types ([6689181](https://github.com/favware/graphql-pokemon/commit/66891818952e352d17cada2b136657e027ebf1d5))
-* use special sprites for hisuian forms ([ab4d0fd](https://github.com/favware/graphql-pokemon/commit/ab4d0fda205cd4afe278317fc63f4d0fa17cb1c0))
+- add missing `baseSpecies` and `otherFormes` ([8f9c13a](https://github.com/favware/graphql-pokemon/commit/8f9c13ae2413ce9dc4d83328dd09ee5874d4158b))
+- allow `pokemon number` queries to go up to dex number 905 ([82b8178](https://github.com/favware/graphql-pokemon/commit/82b8178925ff305d49a099fd8d882929c65fdf94))
+- allow maximum of all pokemon listing to go up to 1271 ([a6c1a41](https://github.com/favware/graphql-pokemon/commit/a6c1a41d731adc23fef3f9b8bac1f3bc87783d7d))
+- fixed species for hisuian sliggoo ([de56079](https://github.com/favware/graphql-pokemon/commit/de56079c630994516da5d6520c6ca225a7eca9d5))
+- fixed various move types ([6689181](https://github.com/favware/graphql-pokemon/commit/66891818952e352d17cada2b136657e027ebf1d5))
+- use special sprites for hisuian forms ([ab4d0fd](https://github.com/favware/graphql-pokemon/commit/ab4d0fda205cd4afe278317fc63f4d0fa17cb1c0))
 
 ### [6.3.3](https://github.com/favware/graphql-pokemon/compare/v6.3.2...v6.3.3) (2022-02-14)
 
@@ -65,25 +61,22 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [6.3.0](https://github.com/favware/graphql-pokemon/compare/v6.2.9...v6.3.0) (2022-01-22)
 
-
 ### Features
 
-* add `key` property to all primary structures ([82f9ab6](https://github.com/favware/graphql-pokemon/commit/82f9ab66365c3086bc55a4849c086cc4fb217444))
-* add `pokemonKey` to `Learnset` ([ee1ca27](https://github.com/favware/graphql-pokemon/commit/ee1ca27880da754d6dacb551a02ea7aed6f3cab9))
-* migrate from fuse to jaro-winkler ([bc69694](https://github.com/favware/graphql-pokemon/commit/bc6969427f42ec771be398b2d64bec1313d320bf))
-
+- add `key` property to all primary structures ([82f9ab6](https://github.com/favware/graphql-pokemon/commit/82f9ab66365c3086bc55a4849c086cc4fb217444))
+- add `pokemonKey` to `Learnset` ([ee1ca27](https://github.com/favware/graphql-pokemon/commit/ee1ca27880da754d6dacb551a02ea7aed6f3cab9))
+- migrate from fuse to jaro-winkler ([bc69694](https://github.com/favware/graphql-pokemon/commit/bc6969427f42ec771be398b2d64bec1313d320bf))
 
 ### Bug Fixes
 
-* ensure `forme` and `formeLetter` are actually mapped ([90f5fc6](https://github.com/favware/graphql-pokemon/commit/90f5fc6989f5a21e0f9e8c2b034d1f608fa2cd84))
-* fixed key for 10,000,000 volt thunderbolt to be supported by GraphQL Enum ([7caedda](https://github.com/favware/graphql-pokemon/commit/7caedda005b20a4ced9f0f1ae15d7d86b3664196))
+- ensure `forme` and `formeLetter` are actually mapped ([90f5fc6](https://github.com/favware/graphql-pokemon/commit/90f5fc6989f5a21e0f9e8c2b034d1f608fa2cd84))
+- fixed key for 10,000,000 volt thunderbolt to be supported by GraphQL Enum ([7caedda](https://github.com/favware/graphql-pokemon/commit/7caedda005b20a4ced9f0f1ae15d7d86b3664196))
 
 ### [6.2.9](https://github.com/favware/graphql-pokemon/compare/v6.2.8...v6.2.9) (2022-01-16)
 
-
 ### Bug Fixes
 
-* fixed species name for alakazam-mega ([3a41adf](https://github.com/favware/graphql-pokemon/commit/3a41adfe1c14f3962bb271f2c78452cdc7637d96))
+- fixed species name for alakazam-mega ([3a41adf](https://github.com/favware/graphql-pokemon/commit/3a41adfe1c14f3962bb271f2c78452cdc7637d96))
 
 ### [6.2.8](https://github.com/favware/graphql-pokemon/compare/v6.2.7...v6.2.8) (2022-01-02)
 
@@ -93,10 +86,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [6.2.5](https://github.com/favware/graphql-pokemon/compare/v6.2.4...v6.2.5) (2021-12-05)
 
-
 ### Bug Fixes
 
-* **cap:** add Venomicon ([#582](https://github.com/favware/graphql-pokemon/issues/582)) ([1f3c8cc](https://github.com/favware/graphql-pokemon/commit/1f3c8ccdedcdc5952ba39961454fb478fcda2a16))
+- **cap:** add Venomicon ([#582](https://github.com/favware/graphql-pokemon/issues/582)) ([1f3c8cc](https://github.com/favware/graphql-pokemon/commit/1f3c8ccdedcdc5952ba39961454fb478fcda2a16))
 
 ### [6.2.4](https://github.com/favware/graphql-pokemon/compare/v6.2.3...v6.2.4) (2021-12-05)
 
@@ -108,30 +100,26 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [6.2.0](https://github.com/favware/graphql-pokemon/compare/v6.1.0...v6.2.0) (2021-10-10)
 
-
 ### Features
 
-* add `getAllPokemonSpecies` query to get all Pokémon in the API ([482c28e](https://github.com/favware/graphql-pokemon/commit/482c28eb17c545849c89245b05624693f11864ac))
+- add `getAllPokemonSpecies` query to get all Pokémon in the API ([482c28e](https://github.com/favware/graphql-pokemon/commit/482c28eb17c545849c89245b05624693f11864ac))
 
 ## [6.1.0](https://github.com/favware/graphql-pokemon/compare/v6.0.5...v6.1.0) (2021-10-01)
 
-
 ### Features
 
-* add new CAP pokemon ([#542](https://github.com/favware/graphql-pokemon/issues/542)) ([12cfdc3](https://github.com/favware/graphql-pokemon/commit/12cfdc3f4dac508eeaa6aca9df00c53142a52ead))
-
+- add new CAP pokemon ([#542](https://github.com/favware/graphql-pokemon/issues/542)) ([12cfdc3](https://github.com/favware/graphql-pokemon/commit/12cfdc3f4dac508eeaa6aca9df00c53142a52ead))
 
 ### Bug Fixes
 
-* fixed evolution criteria for Galarian Slowking ([c653e73](https://github.com/favware/graphql-pokemon/commit/c653e73d88d6e38dbf991c8ba2cdc71134be8358))
-* fixed various descriptions ([c7bcc09](https://github.com/favware/graphql-pokemon/commit/c7bcc0972c71beed69601da1e456826c4e53c286))
+- fixed evolution criteria for Galarian Slowking ([c653e73](https://github.com/favware/graphql-pokemon/commit/c653e73d88d6e38dbf991c8ba2cdc71134be8358))
+- fixed various descriptions ([c7bcc09](https://github.com/favware/graphql-pokemon/commit/c7bcc0972c71beed69601da1e456826c4e53c286))
 
 ### [6.0.5](https://github.com/favware/graphql-pokemon/compare/v6.0.4...v6.0.5) (2021-09-30)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency graphql to ^15.6.0 ([#532](https://github.com/favware/graphql-pokemon/issues/532)) ([074a10c](https://github.com/favware/graphql-pokemon/commit/074a10cd520bad048e0c830a2de2b8806a59c7f2))
+- **deps:** update dependency graphql to ^15.6.0 ([#532](https://github.com/favware/graphql-pokemon/issues/532)) ([074a10c](https://github.com/favware/graphql-pokemon/commit/074a10cd520bad048e0c830a2de2b8806a59c7f2))
 
 ### [6.0.4](https://github.com/favware/graphql-pokemon/compare/v6.0.3...v6.0.4) (2021-09-27)
 
@@ -139,122 +127,113 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [6.0.2](https://github.com/favware/graphql-pokemon/compare/v6.0.1...v6.0.2) (2021-09-19)
 
-
 ### Bug Fixes
 
-* **Type:** properly mark properties of `Type` as non-nullable ([467be09](https://github.com/favware/graphql-pokemon/commit/467be09872a8368213a042ee5182fc8734239b91))
+- **Type:** properly mark properties of `Type` as non-nullable ([467be09](https://github.com/favware/graphql-pokemon/commit/467be09872a8368213a042ee5182fc8734239b91))
 
 ### [6.0.1](https://github.com/favware/graphql-pokemon/compare/v6.0.0...v6.0.1) (2021-09-19)
 
-
 ### Bug Fixes
 
-* fixed 1 remaining `pokemon` -> `Pokémon` ([82d02ef](https://github.com/favware/graphql-pokemon/commit/82d02ef4f4a59b8bc8196d9a9bc262e7aeebfff3))
-* fixed various incorrect characters ([1fe9195](https://github.com/favware/graphql-pokemon/commit/1fe9195e9cf1250131ef880eaa4c587d8be2bbcb))
+- fixed 1 remaining `pokemon` -> `Pokémon` ([82d02ef](https://github.com/favware/graphql-pokemon/commit/82d02ef4f4a59b8bc8196d9a9bc262e7aeebfff3))
+- fixed various incorrect characters ([1fe9195](https://github.com/favware/graphql-pokemon/commit/1fe9195e9cf1250131ef880eaa4c587d8be2bbcb))
 
 ## [6.0.0](https://github.com/favware/graphql-pokemon/compare/v5.7.1...v6.0.0) (2021-09-19)
 
-
 ### ⚠ BREAKING CHANGES
 
-* removed `DexEntry.evos` property, if you want to get just the evolution names use `evolutions { species }`
-* removed `DexEntry.prevo` property, if you want to get just the evolution names use `preevolutions { species }`
-* removed `DexEntry` structure, most of its properties are merged into `DexDetails`
-* removed `getAbilityByFuzzy`
-* removed `getAbilityByName`
-* removed `getDexEntries`
-* removed `getDexEntryByDexNumber`
-* removed `getDexEntryBySpeciesName`
-* removed `getItemByFuzzy`
-* removed `getItemByName`
-* removed `getMoveByFuzzy`
-* removed `getMoveByName`
-* removed `getTypeByName`
-* removed `take`, `skip` and `reverse` from `getPokemon`. They are renamed to `takeFlavorTexts` (default: 1), `offsetFlavorTexts` (default: 0), and `reverseFlavorTexts` (default: true)
-* renamed `Abilities` enum to `AbilitiesEnum`
-* renamed `AbilityPaginatedArgs` to `FuzzyAbilityArgs`
-* renamed `ExactPokemonPaginatedArgs` to `PokemonArgs`
-* renamed `getAbilityDetailsByFuzzy` to `getFuzzyAbility`
-* renamed `getAbilityDetailsByName` to `getAbility`
-* renamed `getItemDetailsByFuzzy` to `getFuzzyItem`
-* renamed `getItemDetailsByName` to `getItem`
-* renamed `getMoveDetailsByFuzzy` to `getFuzzyMove`
-* renamed `getMoveDetailsByName` to `getMove`
-* renamed `getPokemonDetails` to `getPokemon`
-* renamed `getPokemonDetailsByFuzzy` to `getFuzzyPokemon`
-* renamed `getPokemonDetailsByName` to `getPokemonByName` and `getPokemonBySpecies`
-* renamed `getPokemonDetailsByNumber` to `getPokemonByDexNumber`
-* renamed `getPokemonLearnset` to `getLearnset`
-* renamed `getPokemonLearnsetByFuzzy` to `getFuzzyLearnset`
-* renamed `ItemPaginatedArgs` to `FuzzyItemArgs`
-* renamed `Items` enum to `ItemsEnum`
-* renamed `LearnsetFuzzyArgs` to `FuzzyLearnsetArgs`
-* renamed `MovePaginatedArgs` to `FuzzyMoveArgs`
-* renamed `Moves` enum to `MovesEnum`
-* renamed `Pokemon` enum to `PokemonEnum`
-* renamed `PokemonNumberPaginatedArgs` to `PokemonNumberArgs`
-* renamed `PokemonPaginatedArgs` to `FuzzyPokemonArgs`
-* renamed `Types` enum to `TypesEnum`
-* renamed the `skip` parameter for all `getFuzzy*` queries has been renamed to `offset` to better represent what it does.
+- removed `DexEntry.evos` property, if you want to get just the evolution names use `evolutions { species }`
+- removed `DexEntry.prevo` property, if you want to get just the evolution names use `preevolutions { species }`
+- removed `DexEntry` structure, most of its properties are merged into `DexDetails`
+- removed `getAbilityByFuzzy`
+- removed `getAbilityByName`
+- removed `getDexEntries`
+- removed `getDexEntryByDexNumber`
+- removed `getDexEntryBySpeciesName`
+- removed `getItemByFuzzy`
+- removed `getItemByName`
+- removed `getMoveByFuzzy`
+- removed `getMoveByName`
+- removed `getTypeByName`
+- removed `take`, `skip` and `reverse` from `getPokemon`. They are renamed to `takeFlavorTexts` (default: 1), `offsetFlavorTexts` (default: 0), and `reverseFlavorTexts` (default: true)
+- renamed `Abilities` enum to `AbilitiesEnum`
+- renamed `AbilityPaginatedArgs` to `FuzzyAbilityArgs`
+- renamed `ExactPokemonPaginatedArgs` to `PokemonArgs`
+- renamed `getAbilityDetailsByFuzzy` to `getFuzzyAbility`
+- renamed `getAbilityDetailsByName` to `getAbility`
+- renamed `getItemDetailsByFuzzy` to `getFuzzyItem`
+- renamed `getItemDetailsByName` to `getItem`
+- renamed `getMoveDetailsByFuzzy` to `getFuzzyMove`
+- renamed `getMoveDetailsByName` to `getMove`
+- renamed `getPokemonDetails` to `getPokemon`
+- renamed `getPokemonDetailsByFuzzy` to `getFuzzyPokemon`
+- renamed `getPokemonDetailsByName` to `getPokemonByName` and `getPokemonBySpecies`
+- renamed `getPokemonDetailsByNumber` to `getPokemonByDexNumber`
+- renamed `getPokemonLearnset` to `getLearnset`
+- renamed `getPokemonLearnsetByFuzzy` to `getFuzzyLearnset`
+- renamed `ItemPaginatedArgs` to `FuzzyItemArgs`
+- renamed `Items` enum to `ItemsEnum`
+- renamed `LearnsetFuzzyArgs` to `FuzzyLearnsetArgs`
+- renamed `MovePaginatedArgs` to `FuzzyMoveArgs`
+- renamed `Moves` enum to `MovesEnum`
+- renamed `Pokemon` enum to `PokemonEnum`
+- renamed `PokemonNumberPaginatedArgs` to `PokemonNumberArgs`
+- renamed `PokemonPaginatedArgs` to `FuzzyPokemonArgs`
+- renamed `Types` enum to `TypesEnum`
+- renamed the `skip` parameter for all `getFuzzy*` queries has been renamed to `offset` to better represent what it does.
 
 ### Features
 
-* `getFuzzy*` queries can now return multiple results that match the fuzzy query. By default only 1 result is returned. You can modify this by passing the `take` parameter. Furthermore you can provide the `offset` parameter to skip that many items from the start, and the `reverse` parameter to reverse the array before applying `take` and `offset`. ([1fa1240](https://github.com/favware/graphql-pokemon/commit/1fa1240bfa8b113f411b8a7bd8b50425e276321b))
-* added the missing type-specific hidden powers ([c1a8e83](https://github.com/favware/graphql-pokemon/commit/c1a8e836594c0ee1d96c594cc2ed70d377561aeb))
-* rewrite API to version 6 ([#516](https://github.com/favware/graphql-pokemon/issues/516)) ([#521](https://github.com/favware/graphql-pokemon/issues/521)) ([920a466](https://github.com/favware/graphql-pokemon/commit/920a4664f6f92bd1195ed7e2f174044090d6f478))
-
+- `getFuzzy*` queries can now return multiple results that match the fuzzy query. By default only 1 result is returned. You can modify this by passing the `take` parameter. Furthermore you can provide the `offset` parameter to skip that many items from the start, and the `reverse` parameter to reverse the array before applying `take` and `offset`. ([1fa1240](https://github.com/favware/graphql-pokemon/commit/1fa1240bfa8b113f411b8a7bd8b50425e276321b))
+- added the missing type-specific hidden powers ([c1a8e83](https://github.com/favware/graphql-pokemon/commit/c1a8e836594c0ee1d96c594cc2ed70d377561aeb))
+- rewrite API to version 6 ([#516](https://github.com/favware/graphql-pokemon/issues/516)) ([#521](https://github.com/favware/graphql-pokemon/issues/521)) ([920a466](https://github.com/favware/graphql-pokemon/commit/920a4664f6f92bd1195ed7e2f174044090d6f478))
 
 ### Bug Fixes
 
-* also return base Pokémon data for `getLearnset` when only requesting `backSprite` and/or `shinyBackSprite` ([ff8455a](https://github.com/favware/graphql-pokemon/commit/ff8455a88dbc09465277c1dccef31fd1061b6018))
-* fixed `hidden power` being marked as a water type move ([578653c](https://github.com/favware/graphql-pokemon/commit/578653c0b48b3b32273c068aef526230b4e6af6f))
-* fixed the `basePower` for the moves `frustration` and `return` ([32f9d18](https://github.com/favware/graphql-pokemon/commit/32f9d183a729f6d46bee0b30747fbec31335d8ff))
-* fixed the `cosmeticFormes` for `flabébé` ([ae0ee83](https://github.com/favware/graphql-pokemon/commit/ae0ee83464aad40316dc866d7490672511674d08))
-* fixed the `version_id` (game) for Missingno's flavour text ([7855a3c](https://github.com/favware/graphql-pokemon/commit/7855a3c4e7e7aa05529abe007cb30bd08eb5131c))
-* fixed the `zMovePower` for the moves `frustration`, `return`, `seismic toss`, and `night shade` ([b124212](https://github.com/favware/graphql-pokemon/commit/b124212acc1ae74ef4732f7760478fd5bcef41ef))
-* fixed the bulbapedia URL for nidoran-female ([f8a04a9](https://github.com/favware/graphql-pokemon/commit/f8a04a90ad755cf3b064a3f0954490272e7250c1))
-* fixed the bulbapedia URL for nidoran-male ([8bd546f](https://github.com/favware/graphql-pokemon/commit/8bd546f0cbb302b31cbcce655624dd9e92f6257b))
-* fixed the quotes used in the flavour texts ([08c4358](https://github.com/favware/graphql-pokemon/commit/08c43586d241267d23765d77d1d07c9213dfdc12))
-* fixed the registered name for `gengargmax` ([309273e](https://github.com/favware/graphql-pokemon/commit/309273e219d7f70363687c138e87221a81d03c8f))
-* fixed the way prefixed fuzzy queries are parsed. It is now possible to prefix with `galarian`, `alolan`, and `gigantamax` alongside their respective values of `galar`, `alola` and `gmax`. ([a3fe56b](https://github.com/favware/graphql-pokemon/commit/a3fe56becfd6e0a3e99e35c41e53d3b7240ee6dd))
-* fixed various text issues in flavour texts, in particular garbled characters being in the place of the common `é` character ([aa1cd41](https://github.com/favware/graphql-pokemon/commit/aa1cd41c13ce87b20b1deec45ec50561387983e0))
-* when a move's z-move power cannot be computed the value of `0` is now returned, as opposed to `Infinity`, which would cause an error. ([4a07fc3](https://github.com/favware/graphql-pokemon/commit/4a07fc3e9a5b3f65bd9451724b42c4de06405cc6))
+- also return base Pokémon data for `getLearnset` when only requesting `backSprite` and/or `shinyBackSprite` ([ff8455a](https://github.com/favware/graphql-pokemon/commit/ff8455a88dbc09465277c1dccef31fd1061b6018))
+- fixed `hidden power` being marked as a water type move ([578653c](https://github.com/favware/graphql-pokemon/commit/578653c0b48b3b32273c068aef526230b4e6af6f))
+- fixed the `basePower` for the moves `frustration` and `return` ([32f9d18](https://github.com/favware/graphql-pokemon/commit/32f9d183a729f6d46bee0b30747fbec31335d8ff))
+- fixed the `cosmeticFormes` for `flabébé` ([ae0ee83](https://github.com/favware/graphql-pokemon/commit/ae0ee83464aad40316dc866d7490672511674d08))
+- fixed the `version_id` (game) for Missingno's flavour text ([7855a3c](https://github.com/favware/graphql-pokemon/commit/7855a3c4e7e7aa05529abe007cb30bd08eb5131c))
+- fixed the `zMovePower` for the moves `frustration`, `return`, `seismic toss`, and `night shade` ([b124212](https://github.com/favware/graphql-pokemon/commit/b124212acc1ae74ef4732f7760478fd5bcef41ef))
+- fixed the bulbapedia URL for nidoran-female ([f8a04a9](https://github.com/favware/graphql-pokemon/commit/f8a04a90ad755cf3b064a3f0954490272e7250c1))
+- fixed the bulbapedia URL for nidoran-male ([8bd546f](https://github.com/favware/graphql-pokemon/commit/8bd546f0cbb302b31cbcce655624dd9e92f6257b))
+- fixed the quotes used in the flavour texts ([08c4358](https://github.com/favware/graphql-pokemon/commit/08c43586d241267d23765d77d1d07c9213dfdc12))
+- fixed the registered name for `gengargmax` ([309273e](https://github.com/favware/graphql-pokemon/commit/309273e219d7f70363687c138e87221a81d03c8f))
+- fixed the way prefixed fuzzy queries are parsed. It is now possible to prefix with `galarian`, `alolan`, and `gigantamax` alongside their respective values of `galar`, `alola` and `gmax`. ([a3fe56b](https://github.com/favware/graphql-pokemon/commit/a3fe56becfd6e0a3e99e35c41e53d3b7240ee6dd))
+- fixed various text issues in flavour texts, in particular garbled characters being in the place of the common `é` character ([aa1cd41](https://github.com/favware/graphql-pokemon/commit/aa1cd41c13ce87b20b1deec45ec50561387983e0))
+- when a move's z-move power cannot be computed the value of `0` is now returned, as opposed to `Infinity`, which would cause an error. ([4a07fc3](https://github.com/favware/graphql-pokemon/commit/4a07fc3e9a5b3f65bd9451724b42c4de06405cc6))
 
 ### [5.7.1](https://github.com/favware/graphql-pokemon/compare/v5.7.0...v5.7.1) (2021-09-11)
 
-
 ### Bug Fixes
 
-* fixed the published bundle ([312915d](https://github.com/favware/graphql-pokemon/commit/312915dff492a7076df29f8ef6a1155b8b77dc1c))
+- fixed the published bundle ([312915d](https://github.com/favware/graphql-pokemon/commit/312915dff492a7076df29f8ef6a1155b8b77dc1c))
 
 ## [5.7.0](https://github.com/favware/graphql-pokemon/compare/v5.6.0...v5.7.0) (2021-09-06)
 
-
 ### Features
 
-* add Effort Value yields to all Pokémon ([#444](https://github.com/favware/graphql-pokemon/issues/444)) ([dd69b57](https://github.com/favware/graphql-pokemon/commit/dd69b57f4562a8265b1655a4c3b16ab6177fbdc7))
-
+- add Effort Value yields to all Pokémon ([#444](https://github.com/favware/graphql-pokemon/issues/444)) ([dd69b57](https://github.com/favware/graphql-pokemon/commit/dd69b57f4562a8265b1655a4c3b16ab6177fbdc7))
 
 ### Bug Fixes
 
-* fixed pre-evolution parsing for sirfetch'd ([09b03ff](https://github.com/favware/graphql-pokemon/commit/09b03ffe4518a652241c6d91a02fb5b6028ae8b4))
-* fixed some pokemon -> pokémon ([b9a9ffb](https://github.com/favware/graphql-pokemon/commit/b9a9ffbc4a743128cd55f530538440fba331264a))
-* fixed various bulbapedia, smogon, serebii and sprite urls ([8193ed3](https://github.com/favware/graphql-pokemon/commit/8193ed39ea1ffa5e8ef73893976a46f154cdcc4f))
-* fixed various incorrect symbols in flavour texts ([307a256](https://github.com/favware/graphql-pokemon/commit/307a25686296ecfae48d3d59a917f03f13e3f2f3))
+- fixed pre-evolution parsing for sirfetch'd ([09b03ff](https://github.com/favware/graphql-pokemon/commit/09b03ffe4518a652241c6d91a02fb5b6028ae8b4))
+- fixed some pokemon -> pokémon ([b9a9ffb](https://github.com/favware/graphql-pokemon/commit/b9a9ffbc4a743128cd55f530538440fba331264a))
+- fixed various bulbapedia, smogon, serebii and sprite urls ([8193ed3](https://github.com/favware/graphql-pokemon/commit/8193ed39ea1ffa5e8ef73893976a46f154cdcc4f))
+- fixed various incorrect symbols in flavour texts ([307a256](https://github.com/favware/graphql-pokemon/commit/307a25686296ecfae48d3d59a917f03f13e3f2f3))
 
 ## [5.6.0](https://github.com/favware/graphql-pokemon/compare/v5.5.9...v5.6.0) (2021-09-05)
 
-
 ### Features
 
-* add growth rate catch rate and hatch time ([#509](https://github.com/favware/graphql-pokemon/issues/509)) ([f4da2b6](https://github.com/favware/graphql-pokemon/commit/f4da2b690f1e2b13239aaf897b4bf70fc00846b4))
+- add growth rate catch rate and hatch time ([#509](https://github.com/favware/graphql-pokemon/issues/509)) ([f4da2b6](https://github.com/favware/graphql-pokemon/commit/f4da2b690f1e2b13239aaf897b4bf70fc00846b4))
 
 ### [5.5.9](https://github.com/favware/graphql-pokemon/compare/v5.5.8...v5.5.9) (2021-07-18)
 
-
 ### Bug Fixes
 
-* mark package as side effect free ([5a924c4](https://github.com/favware/graphql-pokemon/commit/5a924c47842672a36841f5554bd4a35e56362e3f))
+- mark package as side effect free ([5a924c4](https://github.com/favware/graphql-pokemon/commit/5a924c47842672a36841f5554bd4a35e56362e3f))
 
 ### [5.5.8](https://github.com/favware/graphql-pokemon/compare/v5.5.7...v5.5.8) (2021-07-04)
 
@@ -266,99 +245,86 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [5.5.4](https://github.com/favware/graphql-pokemon/compare/v5.5.3...v5.5.4) (2021-06-19)
 
-
 ### Bug Fixes
 
-* swap import and require in export paths ([5689ae0](https://github.com/favware/graphql-pokemon/commit/5689ae0adf9030195ccb2b74356dc891c7b3e676))
+- swap import and require in export paths ([5689ae0](https://github.com/favware/graphql-pokemon/commit/5689ae0adf9030195ccb2b74356dc891c7b3e676))
 
 ### [5.5.3](https://github.com/favware/graphql-pokemon/compare/v5.5.2...v5.5.3) (2021-06-19)
 
-
 ### Bug Fixes
 
-* bundle with rollup to output proper JS files ([3163171](https://github.com/favware/graphql-pokemon/commit/3163171a5323533edb29f6bc69d76047832106f5))
+- bundle with rollup to output proper JS files ([3163171](https://github.com/favware/graphql-pokemon/commit/3163171a5323533edb29f6bc69d76047832106f5))
 
 ### [5.5.2](https://github.com/favware/graphql-pokemon/compare/v5.5.1...v5.5.2) (2021-05-30)
 
 ### [5.5.1](https://github.com/favware/graphql-pokemon/compare/v5.5.0...v5.5.1) (2021-05-29)
 
-
 ### Bug Fixes
 
-* add back sprite support to learnset queries ([c02f2fc](https://github.com/favware/graphql-pokemon/commit/c02f2fc3804203c19b4b27e0ce45eecf3206d943))
+- add back sprite support to learnset queries ([c02f2fc](https://github.com/favware/graphql-pokemon/commit/c02f2fc3804203c19b4b27e0ce45eecf3206d943))
 
 ## [5.5.0](https://github.com/favware/graphql-pokemon/compare/v5.4.0...v5.5.0) (2021-05-29)
 
-
 ### Features
 
-* add support for back sprites ([2891254](https://github.com/favware/graphql-pokemon/commit/289125496f4ef1289be0aa791ac897cfe16eabdb))
+- add support for back sprites ([2891254](https://github.com/favware/graphql-pokemon/commit/289125496f4ef1289be0aa791ac897cfe16eabdb))
 
 ## [5.4.0](https://github.com/favware/graphql-pokemon/compare/v5.3.0...v5.4.0) (2021-05-27)
 
-
 ### Features
 
-* add a whole slew of extra pokemon aliases based on pokemon showdown data ([592e19d](https://github.com/favware/graphql-pokemon/commit/592e19d050b836752a81e65aa82a1ef771c276a4))
-
+- add a whole slew of extra pokemon aliases based on pokemon showdown data ([592e19d](https://github.com/favware/graphql-pokemon/commit/592e19d050b836752a81e65aa82a1ef771c276a4))
 
 ### Bug Fixes
 
-* ensure spaces are trimmed before and after fuzzy search input for better matches ([0af6583](https://github.com/favware/graphql-pokemon/commit/0af65834b8fccab61a478b88cfab59747ababcbe))
-* **blacephalon:** fixed species name, now fuzzy searching its number will work ([ebe4611](https://github.com/favware/graphql-pokemon/commit/ebe46114302be4b874f53d2cbd53596e2ca3ffd6))
+- ensure spaces are trimmed before and after fuzzy search input for better matches ([0af6583](https://github.com/favware/graphql-pokemon/commit/0af65834b8fccab61a478b88cfab59747ababcbe))
+- **blacephalon:** fixed species name, now fuzzy searching its number will work ([ebe4611](https://github.com/favware/graphql-pokemon/commit/ebe46114302be4b874f53d2cbd53596e2ca3ffd6))
 
 ## [5.3.0](https://github.com/favware/graphql-pokemon/compare/v5.2.0...v5.3.0) (2021-05-18)
 
-
 ### Features
 
-* **dex:** add `getPokemonDetailsByNumber` query ([ec861fa](https://github.com/favware/graphql-pokemon/commit/ec861fae6f4db53623a28a55e1297de137379076))
-
+- **dex:** add `getPokemonDetailsByNumber` query ([ec861fa](https://github.com/favware/graphql-pokemon/commit/ec861fae6f4db53623a28a55e1297de137379076))
 
 ### Bug Fixes
 
-* **cap data:** add missing `miasmite` ([16624d1](https://github.com/favware/graphql-pokemon/commit/16624d1cd1788eeb60cb6c2e0a4175b891df4240))
-* **data:** move missingno to Gen 1 ([bb2a13b](https://github.com/favware/graphql-pokemon/commit/bb2a13be9370dd818d80012d2c47b7dd3c2a66dc))
-* **data:** update descriptions for various moves and abilities ([5b628a4](https://github.com/favware/graphql-pokemon/commit/5b628a403e0e84375ca1a07d4a6a0540c3eb1485))
-* **dex:** ensure common form prefixes are also resolved ([d2fbd3e](https://github.com/favware/graphql-pokemon/commit/d2fbd3e0461febb71a504cdbc62b5108b3886c05))
+- **cap data:** add missing `miasmite` ([16624d1](https://github.com/favware/graphql-pokemon/commit/16624d1cd1788eeb60cb6c2e0a4175b891df4240))
+- **data:** move missingno to Gen 1 ([bb2a13b](https://github.com/favware/graphql-pokemon/commit/bb2a13be9370dd818d80012d2c47b7dd3c2a66dc))
+- **data:** update descriptions for various moves and abilities ([5b628a4](https://github.com/favware/graphql-pokemon/commit/5b628a403e0e84375ca1a07d4a6a0540c3eb1485))
+- **dex:** ensure common form prefixes are also resolved ([d2fbd3e](https://github.com/favware/graphql-pokemon/commit/d2fbd3e0461febb71a504cdbc62b5108b3886c05))
 
 ## [5.2.0](https://github.com/favware/graphql-pokemon/compare/v5.1.2...v5.2.0) (2021-05-05)
 
-
 ### Features
 
-* add gmime and gmrmime as aliases for Galarian Mr. Mime ([7a750a7](https://github.com/favware/graphql-pokemon/commit/7a750a76084e27bd428c9b490469aef9f2b70f21))
+- add gmime and gmrmime as aliases for Galarian Mr. Mime ([7a750a7](https://github.com/favware/graphql-pokemon/commit/7a750a76084e27bd428c9b490469aef9f2b70f21))
 
 ### [5.1.2](https://github.com/favware/graphql-pokemon/compare/v5.1.1...v5.1.2) (2021-02-20)
 
-
 ### Bug Fixes
 
-* add CAP specialSprite for remaining pokemons ([6b4eab3](https://github.com/favware/graphql-pokemon/commit/6b4eab30a6da6efeacd23994912be0f4323b375a))
-* add specialShinySprites to CAP Pokémon ([bf74695](https://github.com/favware/graphql-pokemon/commit/bf74695fda9052022605f016eebf9bcac1be2351))
-* add specialSprites for CAP Pokémon ([180d8ab](https://github.com/favware/graphql-pokemon/commit/180d8ab93ab38b6857a032d5a97ce1bb13dd9ff0))
+- add CAP specialSprite for remaining pokemons ([6b4eab3](https://github.com/favware/graphql-pokemon/commit/6b4eab30a6da6efeacd23994912be0f4323b375a))
+- add specialShinySprites to CAP Pokémon ([bf74695](https://github.com/favware/graphql-pokemon/commit/bf74695fda9052022605f016eebf9bcac1be2351))
+- add specialSprites for CAP Pokémon ([180d8ab](https://github.com/favware/graphql-pokemon/commit/180d8ab93ab38b6857a032d5a97ce1bb13dd9ff0))
 
 ### [5.1.1](https://github.com/favware/graphql-pokemon/compare/v5.1.0...v5.1.1) (2021-02-15)
 
-
 ### Bug Fixes
 
-* **itementry:** smogon page is nullable ([4efeb36](https://github.com/favware/graphql-pokemon/commit/4efeb36e5764151c6b19bbd3278c535c336d9955))
-* **items:** add non-standard to items not in gen 8 ([0c30822](https://github.com/favware/graphql-pokemon/commit/0c3082261851de38bc7906e783348c9a5ac5405f))
-* **items:** mark all key items as key items ([48a89bf](https://github.com/favware/graphql-pokemon/commit/48a89bf903387eb522733745d5b53b58520e6065))
-* never set smogon page for key items ([65200d7](https://github.com/favware/graphql-pokemon/commit/65200d748d40074a8a685360deb49dc63ec4387b))
+- **itementry:** smogon page is nullable ([4efeb36](https://github.com/favware/graphql-pokemon/commit/4efeb36e5764151c6b19bbd3278c535c336d9955))
+- **items:** add non-standard to items not in gen 8 ([0c30822](https://github.com/favware/graphql-pokemon/commit/0c3082261851de38bc7906e783348c9a5ac5405f))
+- **items:** mark all key items as key items ([48a89bf](https://github.com/favware/graphql-pokemon/commit/48a89bf903387eb522733745d5b53b58520e6065))
+- never set smogon page for key items ([65200d7](https://github.com/favware/graphql-pokemon/commit/65200d748d40074a8a685360deb49dc63ec4387b))
 
 ## [5.1.0](https://github.com/favware/graphql-pokemon/compare/v5.0.1...v5.1.0) (2021-02-15)
 
-
 ### Features
 
-* add key items ([#397](https://github.com/favware/graphql-pokemon/issues/397)) ([8152383](https://github.com/favware/graphql-pokemon/commit/815238359d38fb6e60c265f097f254a56e79d5e2))
-
+- add key items ([#397](https://github.com/favware/graphql-pokemon/issues/397)) ([8152383](https://github.com/favware/graphql-pokemon/commit/815238359d38fb6e60c265f097f254a56e79d5e2))
 
 ### Bug Fixes
 
-* fixed victiny -> victini in aliases ([931d1b4](https://github.com/favware/graphql-pokemon/commit/931d1b4f976dbd5afbd9ddd3f008cfac8db00200))
+- fixed victiny -> victini in aliases ([931d1b4](https://github.com/favware/graphql-pokemon/commit/931d1b4f976dbd5afbd9ddd3f008cfac8db00200))
 
 ### [5.0.1](https://github.com/favware/graphql-pokemon/compare/v5.0.0...v5.0.1) (2021-01-10)
 

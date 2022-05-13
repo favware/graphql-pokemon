@@ -36,10 +36,9 @@
     "watch:start": "tsc-watch -b src --onSuccess \"yarn start\"",
     "clean": "node scripts/clean.mjs",
     "dev": "yarn build && yarn start",
-    "commit": "git-cz",
-    "cz": "git-cz",
     "update": "yarn upgrade-interactive",
-    "sversion": "standard-version",
+    "bump": "cliff-jumper",
+    "check-update": "cliff-jumper --dry-run",
     "codegen": "node scripts/clean-generated.mjs && graphql-codegen && npm-run-all -s \"typescript:*\"",
     "typescript:replace-invalid-code": "replace-in-file /\\}\\;/g \"}\" generated/ts/graphql-pokemon.ts --isRegex",
     "typescript:use-type-import": "replace-in-file /import/g \"import type\" generated/ts/graphql-pokemon.ts --isRegex",
@@ -56,6 +55,7 @@
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@discordjs/collection": "^0.6.0",
+    "@favware/cliff-jumper": "^1.8.0",
     "@graphql-codegen/cli": "^2.6.2",
     "@graphql-codegen/schema-ast": "^2.4.1",
     "@graphql-codegen/typescript": "^2.4.11",
@@ -94,7 +94,6 @@
     "replace-in-file": "^6.3.2",
     "rollup": "^2.73.0",
     "rollup-plugin-typescript2": "^0.31.2",
-    "standard-version": "^9.3.2",
     "ts-node": "^10.7.0",
     "tsc-watch": "^5.0.3",
     "type-graphql": "^1.1.1",
@@ -106,7 +105,7 @@
     "minimist": "^1.2.6"
   },
   "files": [
-    "generated/ts"
+    "generated/ts/*"
   ],
   "engines": {
     "node": ">=16",

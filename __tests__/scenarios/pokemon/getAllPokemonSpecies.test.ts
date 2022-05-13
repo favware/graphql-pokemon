@@ -1028,7 +1028,7 @@ describe('getAllPokemonSpecies', () => {
       'Xerneas-neutral',
       'Yveltal',
       'Zygarde',
-      'Zygarde-10%',
+      'Zygarde-10',
       'Zygarde-complete',
       'Diancie',
       'Diancie-mega',

@@ -52,7 +52,7 @@
     "graphql": "^15.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.4",
+    "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
     "@discordjs/collection": "^0.6.0",
     "@favware/cliff-jumper": "^1.8.0",
@@ -137,7 +137,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.1",
   "volta": {
     "node": "18.1.0"
   }

@@ -86,7 +86,7 @@ jobs:
       - name: Generate GraphQL Schema code
         run: yarn codegen
       - name: Upload typescript bundle to artifacts
-        uses: actions/upload-artifact@6673cd052c4cd6fcf4b4e6e60ea986c889389535 # tag=v3
+        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3
         with:
           name: typescript_bundle
           path: generated/ts/
@@ -137,13 +137,13 @@ jobs:
         env:
           CI: false
       - name: Store bumped package.json
-        uses: actions/upload-artifact@6673cd052c4cd6fcf4b4e6e60ea986c889389535 # tag=v3
+        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3
         with:
           name: package_bundle
           path: package.json
           if-no-files-found: error
       - name: Store bumped changelog.md
-        uses: actions/upload-artifact@6673cd052c4cd6fcf4b4e6e60ea986c889389535 # tag=v3
+        uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3
         with:
           name: changelog_bundle
           path: CHANGELOG.md

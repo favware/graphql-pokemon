@@ -17,7 +17,7 @@ export interface GraphQLSetConstructor {
  * @property size - The amount of elements in this GraphQLSet.
  */
 export class GraphQLSet<V> extends Set<V> {
-  public ['constructor']: typeof GraphQLSet;
+  public ['constructor']!: typeof GraphQLSet;
 
   public constructor(entries?: ReadonlyArray<V> | null) {
     super(entries);

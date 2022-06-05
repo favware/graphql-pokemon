@@ -62,7 +62,7 @@
     "@graphql-codegen/schema-ast": "^2.4.1",
     "@graphql-codegen/typescript": "^2.4.11",
     "@graphql-codegen/typescript-resolvers": "^2.6.4",
-    "@sapphire/eslint-config": "^4.3.5",
+    "@sapphire/eslint-config": "^4.3.6",
     "@sapphire/fetch": "^2.3.1",
     "@sapphire/prettier-config": "^1.4.3",
     "@sapphire/time-utilities": "^1.7.4",

@@ -1234,7 +1234,7 @@ __metadata:
     "@skyra/jaro-winkler": ^1.1.0
     "@swc/core": ^1.2.196
     "@swc/jest": ^0.2.21
-    "@types/jest": ^27.5.2
+    "@types/jest": ^28.1.1
     "@types/koa": ^2.13.4
     "@types/node": ^17.0.33
     "@types/validator": ^13.7.2
@@ -2709,13 +2709,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^27.5.2":
-  version: 27.5.2
-  resolution: "@types/jest@npm:27.5.2"
+"@types/jest@npm:^28.1.1":
+  version: 28.1.1
+  resolution: "@types/jest@npm:28.1.1"
   dependencies:
     jest-matcher-utils: ^27.0.0
     pretty-format: ^27.0.0
-  checksum: 7e11c6826aa429ad990dc262e4e4b54aa36573287fddf15773e4137f07d11d3105f0dd9f1baff73252160a057df23f5529bb83b1bf83cd3f45f9460a5ca5c22e
+  checksum: 0a8b045a7b660372decc807c390d3f99a2b12bb1659a1cd593afe04557f4b7c235b0576a5e35b1577710d20e42759d3d8755eb8bed6edc8733f47007e75a5509
   languageName: node
   linkType: hard
 

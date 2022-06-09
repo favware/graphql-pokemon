@@ -10,7 +10,7 @@ body = """
     {% if previous %}\
         {% if previous.version %}\
             (https://github.com/favware/graphql-pokemon/compare/{{ previous.version }}...{{ version }})\
-        {% else %}
+        {% else %}\
             (https://github.com/favware/graphql-pokemon/tree/{{ version }})\
         {% endif %}\
     {% endif %} \

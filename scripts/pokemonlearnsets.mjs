@@ -1,24 +1,23 @@
 import { importFileFromWeb, mapToJson } from '#scripts/utils';
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
 import { Time, Timestamp } from '@sapphire/time-utilities';
-import { green, red, yellow } from 'colorette';
+import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
 
 const filePrefix = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
   '',
-  "import { GraphQLCollection } from '#utils/GraphQLCollection';",
-  "import type { PokemonTypes } from '#utils/pokemon';",
+  "import { Collection } from '@discordjs/collection';",
   '',
   '/** The learnsets in Pokémon */',
-  'export const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray>('
+  'export const learnsets = new Collection<string, Record<string, string[]>>('
 ].join('\n');
 const fileSuffix = [');', ''].join('\n');
 
 const shaTrackerFileUrl = new URL('sha-tracker.json', import.meta.url);
-const learnsetsFileUrl = new URL('../src/assets/learnsets.ts', import.meta.url);
-const oneMonthAgo = Date.now() - Time.Month;
+const learnsetsFileUrl = new URL('../src/lib/assets/learnsets.ts', import.meta.url);
+const oneMonthAgo = Date.now() - Time.Month * 2;
 const timestamp = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(oneMonthAgo);
 
 const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');

@@ -89,14 +89,15 @@ jobs:
         uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8 # tag=v3
         with:
           name: typescript_bundle
-          path: generated/ts/
+          path: dist/
           if-no-files-found: error
 
-  GithubPublish:
-    name: Publishing release to Github
+  GitHubCreateTag:
+    name: Create tag on GitHub
     runs-on: ubuntu-latest
     if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]'))
+      !(contains(github.event.head_commit.message, '[skip publish]')
+      ||github.event.inputs.skip-publish == true)
     needs: GenerateTypings
     steps:
       - name: Checkout Project
@@ -156,8 +157,9 @@ jobs:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
     if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]'))
-    needs: GithubPublish
+      !(contains(github.event.head_commit.message, '[skip publish]')
+      ||github.event.inputs.skip-publish == true)
+    needs: GitHubCreateTag
     steps:
       - name: Checkout Project
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
@@ -165,7 +167,7 @@ jobs:
         uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
         with:
           name: typescript_bundle
-          path: generated/ts/
+          path: dist/
       - name: Download stored package.json
         uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
         with:
@@ -194,8 +196,9 @@ jobs:
     name: Publishing release to Github Package Registry
     runs-on: ubuntu-latest
     if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]'))
-    needs: GithubPublish
+      !(contains(github.event.head_commit.message, '[skip publish]')
+      ||github.event.inputs.skip-publish == true)
+    needs: GitHubCreateTag
     steps:
       - name: Checkout Project
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
@@ -210,7 +213,7 @@ jobs:
         uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
         with:
           name: typescript_bundle
-          path: generated/ts/
+          path: dist/
       - name: Download stored package.json
         uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
         with:

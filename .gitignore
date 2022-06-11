@@ -33,12 +33,11 @@ coverage/
 .vs/
 *.iml
 
-# Generated files
+# Build files
+api/
+dist/
+codegen/
 
 ## Scripts
-gh
 scripts/tiers.ts
 scripts/learnsets.ts
-
-## API and TS Bundle
-generated/

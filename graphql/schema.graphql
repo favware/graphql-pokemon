@@ -1,0 +1,477 @@
+"A single Pokémon ability entry"
+type Ability {
+  "The key of the ability as stored in the API"
+  key: AbilitiesEnum!
+
+  "Bulbapedia page for an ability"
+  bulbapediaPage: String!
+
+  "The long description for an ability"
+  desc: String
+
+  "Whether this ability has effects outside of battle, and if so what the effect is"
+  isFieldAbility: String
+
+  "The name for an ability"
+  name: String!
+
+  """
+  The Pokémon that have this ability.
+  Note that when querying this field and nesting deep into Pokemon.abilities, that the nested list
+  will not have any values to prevent infinite looping data.
+  """
+  pokemonThatHaveThisAbility: [Pokemon]!
+
+  "Serebii page for an ability"
+  serebiiPage: String!
+
+  "The short description for an ability"
+  shortDesc: String!
+
+  "Smogon page for an ability"
+  smogonPage: String!
+}
+
+"A Pokémon's entry"
+type Pokemon {
+  "The key of the Pokémon as stored in the API"
+  key: PokemonEnum!
+
+  "The abilities for a Pokémon"
+  abilities: Abilities!
+
+  "The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  backSprite: String!
+
+  "Base form if this entry describes an alternate form"
+  baseForme: String
+
+  "Base species if this entry describes a special form"
+  baseSpecies: String
+
+  "Base stats for a Pokémon"
+  baseStats: Stats!
+
+  "The total of all base stats for a Pokémon"
+  baseStatsTotal: Int!
+
+  "Bulbapedia page for a Pokémon"
+  bulbapediaPage: String!
+
+  "The catch rate data for a Pokémon"
+  catchRate: CatchRate
+
+  "The colour of a Pokémon as listed in the Pokedex"
+  color: String!
+
+  "Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data."
+  cosmeticFormes: [String!]
+
+  "The egg groups a Pokémon is in"
+  eggGroups: [String!]
+
+  "The evolution level, or special method, for a Pokémon"
+  evolutionLevel: String
+
+  "The evolutions for a Pokémon, if any"
+  evolutions: [Pokemon!]
+
+  "EV yields for a Pokémon"
+  evYields: EvYields!
+
+  "The flavor texts for a Pokémon"
+  flavorTexts: [Flavor!]!
+
+  "The form identifier of a Pokémon"
+  forme: String
+
+  "The single letter identifier of the form"
+  formeLetter: String
+
+  "The gender data for a Pokémon"
+  gender: Gender!
+
+  "The height of a Pokémon in meters"
+  height: Float!
+
+  "Whether the egg of a Pokémon is obtainable"
+  isEggObtainable: Boolean!
+
+  "The levelling rate of a Pokémon"
+  levellingRate: String
+
+  "The maximum number of steps required for the egg of a Pokémon to hatch"
+  maximumHatchTime: Int
+
+  "The minimum number of steps required for the egg of a Pokémon to hatch"
+  minimumHatchTime: Int
+
+  "The dex number for a Pokémon"
+  num: Int!
+
+  "The learnset for this pokemon"
+  learnsets: GenerationalPokemonLearnset
+
+  "Any other forms for a Pokémon"
+  otherFormes: [String!]
+
+  "The preevolutions for a Pokémon, if any"
+  preevolutions: [Pokemon!]
+
+  "Serebii page for a Pokémon"
+  serebiiPage: String!
+
+  "The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  shinyBackSprite: String!
+
+  "The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  shinySprite: String!
+
+  "Smogon page for a Pokémon"
+  smogonPage: String!
+
+  "The smogon tier a Pokémon falls under"
+  smogonTier: String!
+
+  "The species name for a Pokémon"
+  species: String!
+
+  "The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  sprite: String!
+
+  "The types for a Pokémon"
+  types: [PokemonType!]!
+
+  "The weight of a Pokémon in kilograms"
+  weight: Float!
+}
+
+"The type of a Pokémon and that types matchup"
+type PokemonType {
+  "The name of the typ"
+  name: String!
+
+  "The type matchup for this type"
+  matchup: TypeMatchup!
+}
+
+"A Pokémon's abilities entry"
+type Abilities {
+  "The first ability of a Pokémon"
+  first: Ability!
+
+  "The hidden ability of a Pokémon"
+  hidden: Ability
+
+  "The second ability of a Pokémon"
+  second: Ability
+
+  "The special ability of a Pokémon"
+  special: Ability
+}
+
+"A Pokémon's stats"
+type Stats {
+  "The base attack stat of a Pokémon"
+  attack: Int!
+
+  "The base defense stat of a Pokémon"
+  defense: Int!
+
+  "The base HP stat of a pokémon"
+  hp: Int!
+
+  "The base special attack stat of a Pokémon"
+  specialattack: Int!
+
+  "The base special defense stat of a Pokémon"
+  specialdefense: Int!
+
+  "The base speed stat of a Pokémon"
+  speed: Int!
+}
+
+"A Pokémon catch rate entry"
+type CatchRate {
+  "The base catch rate for a Pokémon that will be used to calculate the final catch rate"
+  base: Int!
+
+  "The chance to capture a Pokémon when an ordinary Poké Ball is thrown at full health without any status condition"
+  percentageWithOrdinaryPokeballAtFullHealth: String!
+}
+
+"A Pokémon's EV yields"
+type EvYields {
+  "The attack EV yield of a Pokémon"
+  attack: Int!
+
+  "The defense EV yield of a Pokémon"
+  defense: Int!
+
+  "The HP EV yield of a pokémon"
+  hp: Int!
+
+  "The special attack EV yield of a Pokémon"
+  specialattack: Int!
+
+  "The special defense EV yield of a Pokémon"
+  specialdefense: Int!
+
+  "The speed EV yield of a Pokémon"
+  speed: Int!
+}
+
+"A flavor text entry for a Pokémon"
+type Flavor {
+  "The flavor text for this entry"
+  flavor: String!
+
+  "The name of the game this flavor text is from"
+  game: String!
+}
+
+"A Pokémon gender ratio entry"
+type Gender {
+  "The percentage for female occurrences"
+  female: String!
+
+  "The percentage of male occurrences"
+  male: String!
+}
+
+"A single item entry"
+type Item {
+  "The key of the item as stored in the API"
+  key: ItemsEnum!
+
+  "Bulbapedia page for an item"
+  bulbapediaPage: String!
+
+  "The long description for an item"
+  desc: String!
+
+  "The generation in which this item was introduced"
+  generationIntroduced: Int!
+
+  "Whether an item is non-standard, and if it is why"
+  isNonstandard: String
+
+  "The name for an item"
+  name: String!
+
+  "Serebii page for an item"
+  serebiiPage: String!
+
+  "The long description for an item"
+  shortDesc: String
+
+  "Smogon page for an item"
+  smogonPage: String
+
+  "The sprite for an item"
+  sprite: String!
+}
+
+"The learnset for each Pokémon split by generation"
+type GenerationalPokemonLearnset {
+  "The learnset of this Pokémon in Generation 8"
+  generation8: PokemonLearnset!
+  "The learnset of this Pokémon in Generation 7"
+  generation7: PokemonLearnset!
+  "The learnset of this Pokémon in Generation 6"
+  generation6: PokemonLearnset!
+  "The learnset of this Pokémon in Generation 5"
+  generation5: PokemonLearnset!
+  "The learnset of this Pokémon in Generation 4"
+  generation4: PokemonLearnset!
+  "The learnset of this Pokémon in Generation 3"
+  generation3: PokemonLearnset!
+}
+
+type PokemonLearnset {
+  "The moves that are exclusively learned in the Unova Dream World"
+  dreamworldMoves: [LearnsetMove!]
+
+  "The moves that can be passed as egg moves"
+  eggMoves: [LearnsetMove!]
+
+  "The moves that are exclusive to event variants of the Pokémon"
+  eventMoves: [LearnsetMove!]
+
+  "The moves that can be learned through levelling up"
+  levelUpMoves: [LearnsetLevelUpMove!]
+
+  "The moves that can be learned from a Technical Machine or Technical Record"
+  tmMoves: [LearnsetMove!]
+
+  "The moves that can be learned from a move tutor"
+  tutorMoves: [LearnsetMove!]
+
+  "The moves that can be learned through virtual console transfer"
+  virtualTransferMoves: [LearnsetMove!]
+}
+
+"A learnset entry"
+type Learnset {
+  "The back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  backSprite: String!
+
+  "The PokéDex colour for the Pokémon"
+  color: String!
+
+  "The key of the Pokémon as stored in the API"
+  pokemonKey: PokemonEnum!
+
+  "The dex number for a Pokémon"
+  num: Int!
+
+  "The shiny back sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  shinyBackSprite: String!
+
+  "The shiny sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  shinySprite: String!
+
+  "The species name for a Pokémon"
+  species: String!
+
+  "The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
+  sprite: String!
+
+  "The moves that are exclusively learned in the Unova Dream World"
+  dreamworldMoves: [LearnsetMove!]
+
+  "The moves that can be passed as egg moves"
+  eggMoves: [LearnsetMove!]
+
+  "The moves that are exclusive to event variants of the Pokémon"
+  eventMoves: [LearnsetMove!]
+
+  "The moves that can be learned through levelling up"
+  levelUpMoves: [LearnsetLevelUpMove!]
+
+  "The moves that can be learned from a Technical Machine or Technical Record"
+  tmMoves: [LearnsetMove!]
+
+  "The moves that can be learned from a move tutor"
+  tutorMoves: [LearnsetMove!]
+
+  "The moves that can be learned through virtual console transfer"
+  virtualTransferMoves: [LearnsetMove!]
+}
+
+"A learnset move entry"
+type LearnsetMove {
+  "The generation in which this pokémon learned the move this way"
+  generation: Int!
+
+  "The move"
+  move: Move!
+}
+
+"A learnset level up move entry"
+type LearnsetLevelUpMove {
+  "The generation in which this pokémon learned the move this way"
+  generation: Int!
+
+  "The move"
+  move: Move!
+
+  "The level at which the move is learned"
+  level: Int!
+}
+
+"A single Pokémon move entry"
+type Move {
+  "The key of the move as stored in the API"
+  key: MovesEnum!
+
+  "The accuracy for a move"
+  accuracy: Int!
+
+  "The base power for a move"
+  basePower: String!
+
+  "Bulbapedia page for a move"
+  bulbapediaPage: String!
+
+  "The category for a move"
+  category: String!
+
+  "The contest type for a move"
+  contestType: String
+
+  "The long description for a move"
+  desc: String
+
+  "Whether this move can be used outside of battle, and if it can what the effect of the field move is"
+  isFieldMove: String
+
+  "Whether this move is a G-MAX move, and if it is which Gigantamaxed Pokémon can use it"
+  isGMax: String
+
+  "Whether a move is non-standard, and if it is why"
+  isNonstandard: String
+
+  "Whether this move is a Z-Move, and if it is the Z-Crystal required to trigger it"
+  isZ: String
+
+  "The power this move will have when used with its Max Move equivalent"
+  maxMovePower: Int
+
+  "The name for a move"
+  name: String!
+
+  "The power points for a move"
+  pp: Int!
+
+  "The priority for a move"
+  priority: Int!
+
+  "Serebii page for a move"
+  serebiiPage: String!
+
+  "The short description for a move"
+  shortDesc: String!
+
+  "Smogon page for a move"
+  smogonPage: String!
+
+  "The target for a move"
+  target: String!
+
+  "The type for a move"
+  type: String!
+
+  "The power this move will have when used with its Z-move equivalent"
+  zMovePower: Int!
+}
+
+"The type matchups for any one or two given types"
+type TypeMatchup {
+  "The type matchups when attacking"
+  attacking: TypeEffectiveness!
+
+  "The type matchups when defending"
+  defending: TypeEffectiveness!
+}
+
+"A type matchup entry"
+type TypeEffectiveness {
+  "The types with 4x effectiveness"
+  doubleEffectiveTypes: [String!]!
+
+  "The types with 0.25x effectiveness"
+  doubleResistedTypes: [String!]!
+
+  "The types with 2x effectiveness"
+  effectiveTypes: [String!]!
+
+  "The types with 0x effectiveness"
+  effectlessTypes: [String!]!
+
+  "The types with 1x effectiveness"
+  normalTypes: [String!]!
+
+  "The types with 0.5x effectiveness"
+  resistedTypes: [String!]!
+}

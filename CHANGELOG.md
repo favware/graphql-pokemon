@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+# [@favware/graphql-pokemon@6.5.12](https://github.com/favware/graphql-pokemon/compare/v6.5.11...@favware/graphql-pokemon@6.5.12) - (2022-06-12)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#699) ([2f0e516](https://github.com/favware/graphql-pokemon/commit/2f0e5163900b6a2cee02165ca584ef6c221fc814))
+- Update data [skip publish] (#692) ([bb2a004](https://github.com/favware/graphql-pokemon/commit/bb2a00489e298bfe59875a8697c21d500e990186))
+
+# [6.5.11](https://github.com/favware/graphql-pokemon/compare/v6.5.10...v6.5.11) - (2022-05-13)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#678) ([7ee8dcc](https://github.com/favware/graphql-pokemon/commit/7ee8dcc3db4b75ceeedd08db0c82f117bd583829))
+- Update data [skip publish] (#672) ([ee03e16](https://github.com/favware/graphql-pokemon/commit/ee03e16f1ae615276b1bb55b29bf3c5fd5b8048c))
+- Update data [skip publish] (#670) ([81da5a2](https://github.com/favware/graphql-pokemon/commit/81da5a22e2242c1031a0385bb0d8079aa6a85611))
+
+## 🐛 Bug Fixes
+
+- Remove package engines ([5fc5cdb](https://github.com/favware/graphql-pokemon/commit/5fc5cdbba9fd9329a575f733d3b87224eb288c54))
+- **pokemon:** Fixed species for Zygarde 10% causing an incorrect sprite url to be returned ([8fd689f](https://github.com/favware/graphql-pokemon/commit/8fd689fa113472e3719a2c53d2a37ba13c97e8b5))
+
+## 🧪 Testing
+
+- Resolve coverage threshold issues ([9b7cd5a](https://github.com/favware/graphql-pokemon/commit/9b7cd5a27d425d07be942472d726c5c157dcecf7))
+- Update test for 8fd689f ([0c9b952](https://github.com/favware/graphql-pokemon/commit/0c9b9523f10356eeb5f17e4e4afa7a2d422e859b))
+
+# [6.5.10](https://github.com/favware/graphql-pokemon/compare/v6.5.9...v6.5.10) - (2022-05-01)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#665) ([36a3653](https://github.com/favware/graphql-pokemon/commit/36a3653dbe097a992fffd243b4c235d443be98aa))
+
 # [6.5.11](https://github.com/favware/graphql-pokemon/compare/v6.5.10...v6.5.11) - (2022-05-13)
 
 ## 🏠 Refactor

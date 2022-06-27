@@ -80866,5 +80866,35 @@ export const learnsets = new GraphQLCollection<string, Pokemon.RecordStringArray
       venoshock: ['8M', '8L20'],
       withdraw: ['8L5']
     }
+  ],
+  [
+    'saharaja',
+    {
+      attract: ['8M'],
+      bodypress: ['8M'],
+      diamondstorm: ['8L1'],
+      earthquake: ['8M'],
+      endure: ['8M'],
+      facade: ['8M'],
+      healbell: ['8L1'],
+      hornleech: ['8L1'],
+      leechseed: ['8L1'],
+      painsplit: ['8L1'],
+      poisonjab: ['8M'],
+      powerwhip: ['8M'],
+      protect: ['8M'],
+      rapidspin: ['8L1'],
+      rest: ['8M'],
+      rockslide: ['8M'],
+      round: ['8M'],
+      sleeptalk: ['8M'],
+      snore: ['8M'],
+      stealthrock: ['8M'],
+      substitute: ['8M'],
+      suckerpunch: ['8L1'],
+      swordsdance: ['8M'],
+      taunt: ['8M'],
+      thunderwave: ['8M']
+    }
   ]
 ]);

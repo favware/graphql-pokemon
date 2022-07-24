@@ -1202,10 +1202,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/collection@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "@discordjs/collection@npm:0.7.0"
-  checksum: 141aa35a5433bacba3617b533557b4948388c7b59cdaecee51ccd721c1b9242e50d95bdef53ee2491535a017095f5072ace3c3e9e594193f67a1c5a8a4b7db93
+"@discordjs/collection@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@discordjs/collection@npm:1.0.0"
+  checksum: d8eafd35e782a6a2ee83a22c31679958bc827fce8cd5ffc7e5942cf681c96fd9543334b48c743ecda45179fcefa8d7be7a13f771d7f14effaec8a8ca25077031
   languageName: node
   linkType: hard
 
@@ -1266,7 +1266,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.0.3
     "@commitlint/config-conventional": ^17.0.3
-    "@discordjs/collection": ^0.7.0
+    "@discordjs/collection": ^1.0.0
     "@favware/cliff-jumper": ^1.8.5
     "@graphql-codegen/cli": ^2.8.1
     "@graphql-codegen/schema-ast": ^2.5.0

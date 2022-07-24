@@ -56,7 +56,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@discordjs/collection": "^0.7.0",
+    "@discordjs/collection": "^1.0.0",
     "@favware/cliff-jumper": "^1.8.5",
     "@graphql-codegen/cli": "^2.8.1",
     "@graphql-codegen/schema-ast": "^2.5.0",

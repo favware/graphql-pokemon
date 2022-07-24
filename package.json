@@ -56,26 +56,26 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@discordjs/collection": "^0.7.0",
+    "@discordjs/collection": "^0.8.0",
     "@favware/cliff-jumper": "^1.8.5",
-    "@graphql-codegen/cli": "^2.8.1",
+    "@graphql-codegen/cli": "^2.9.1",
     "@graphql-codegen/schema-ast": "^2.5.0",
-    "@graphql-codegen/typescript": "^2.7.1",
-    "@graphql-codegen/typescript-resolvers": "^2.7.1",
+    "@graphql-codegen/typescript": "^2.7.2",
+    "@graphql-codegen/typescript-resolvers": "^2.7.2",
     "@sapphire/eslint-config": "^4.3.7",
     "@sapphire/fetch": "^2.4.1",
     "@sapphire/prettier-config": "^1.4.3",
     "@sapphire/time-utilities": "^1.7.5",
     "@sapphire/ts-config": "^3.3.4",
     "@skyra/jaro-winkler": "^1.1.0",
-    "@swc/core": "^1.2.215",
-    "@swc/jest": "^0.2.21",
+    "@swc/core": "^1.2.218",
+    "@swc/jest": "^0.2.22",
     "@types/jest": "^28.1.6",
     "@types/koa": "^2.13.5",
     "@types/node": "^17.0.33",
     "@types/validator": "^13.7.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
     "apollo-server-koa": "^3.10.0",
     "class-validator": "^0.13.2",
     "colorette": "^2.0.19",
@@ -140,7 +140,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "volta": {
     "node": "18.1.0"
   }

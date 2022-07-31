@@ -1077,7 +1077,7 @@ __metadata:
     replace-in-file: ^6.3.5
     tsup: ^6.2.1
     typescript: ^4.7.4
-    vitest: ^0.19.1
+    vitest: ^0.20.1
   languageName: unknown
   linkType: soft
 
@@ -8865,7 +8865,7 @@ __metadata:
 
 "typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
   version: 4.7.4
-  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -9085,9 +9085,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^0.19.1":
-  version: 0.19.1
-  resolution: "vitest@npm:0.19.1"
+"vitest@npm:^0.20.1":
+  version: 0.20.1
+  resolution: "vitest@npm:0.20.1"
   dependencies:
     "@types/chai": ^4.3.1
     "@types/chai-subset": ^1.3.3
@@ -9120,7 +9120,7 @@ __metadata:
       optional: true
   bin:
     vitest: vitest.mjs
-  checksum: f5f6bd69f2c196c072d9729805323d31dce06240cd18218e1b4387502d8c0f9cc4d2fad1e1f99a0fcbfe187d5c5e04d4ea2dd352cb99d3f06227b343e5cb4c6d
+  checksum: b070d91a96c5ff59145637b50229214bce2b72010fd49ff6163d724f691f1f023e359cb6c546182fdae51f0c1deb5b75bece36273ca06a78645082fceb5b317d
   languageName: node
   linkType: hard
 

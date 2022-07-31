@@ -91,7 +91,7 @@
     "replace-in-file": "^6.3.5",
     "tsup": "^6.2.1",
     "typescript": "^4.7.4",
-    "vitest": "^0.19.1"
+    "vitest": "^0.20.2"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",

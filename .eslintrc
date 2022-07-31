@@ -2,21 +2,21 @@
   "extends": ["@sapphire"],
   "overrides": [
     {
-      "files": ["src/assets/learnsets.ts"],
+      "files": ["src/lib/assets/learnsets.ts"],
       "rules": {
         "@typescript-eslint/ban-ts-comment": "off"
       }
     },
     {
-      "files": ["src/assets/abilities.ts", "src/assets/moves.ts", "src/assets/learnsets.ts"],
+      "files": ["src/lib/assets/abilities.ts", "src/lib/assets/moves.ts", "src/lib/assets/learnsets.ts"],
       "rules": {
         "max-len": "off"
       }
     },
     {
-      "files": ["src/services/*.ts"],
+      "files": ["vitest.config.ts"],
       "rules": {
-        "@typescript-eslint/no-extraneous-class": "off"
+        "spaced-comment": "off"
       }
     }
   ]

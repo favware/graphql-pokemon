@@ -1,12 +1,12 @@
 import { importFileFromWeb } from '#scripts/utils';
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
 import { Time, Timestamp } from '@sapphire/time-utilities';
-import { green, red, yellow } from 'colorette';
+import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
 
 const shaTrackerFileUrl = new URL('sha-tracker.json', import.meta.url);
-const formatsFileUrl = new URL('../src/assets/formats.json', import.meta.url);
+const formatsFileUrl = new URL('../src/lib/assets/formats.json', import.meta.url);
 const oneMonthAgo = Date.now() - Time.Month;
 const timestamp = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(oneMonthAgo);
 

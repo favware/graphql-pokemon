@@ -1,9 +1,8 @@
 {
-  "extends": "@sapphire/ts-config",
+  "extends": "@sapphire/ts-config/extra-strict-without-decorators",
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
     "target": "ESNext",
-    "module": "ESNext",
-    "useDefineForClassFields": false
+    "module": "ESNext"
   }
 }

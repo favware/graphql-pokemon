@@ -1,7 +1,7 @@
 overwrite: true
 schema: http://localhost:4000
 generates:
-  ./generated/ts/graphql-pokemon.ts:
+  ./codegen/graphql-pokemon.ts:
     plugins:
       - typescript
       - typescript-resolvers
@@ -10,8 +10,5 @@ generates:
         JSONObject: 'Record<PropertyKey, any>'
       constEnums: true
       immutableTypes: true
-  ./generated/ts/graphql-pokemon.graphql:
-    plugins:
-      - schema-ast
-    config:
-      commentDescriptions: true
+      useTypeImports: true
+      skipTypename: true

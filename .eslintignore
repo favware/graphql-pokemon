@@ -1,2 +1,1 @@
-**/*.js
-__tests__/testUtils/types/types.d.ts
+tests/testUtils/types/types.d.ts

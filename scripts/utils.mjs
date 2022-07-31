@@ -1,6 +1,5 @@
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
 import { rm, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
 import ts from 'typescript';
 
 export const mapToJson = (map) => JSON.stringify([...map]);

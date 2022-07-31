@@ -1,0 +1,421 @@
+import type { PokemonTypes } from '#assets/pokemon-source';
+import { Pokedex } from '#dexdata/pokedex';
+import { TypesEnum } from '#utils/pokemonTypes';
+
+const entries: [string, PokemonTypes.DexEntry][] = [
+  [
+    'pokestarsmeargle',
+    {
+      abilities: { first: 'owntempo', second: 'technician', hidden: 'moody' },
+      baseStats: { hp: 55, atk: 20, def: 35, spa: 20, spd: 45, spe: 75 },
+      color: 'White',
+      eggGroups: ['Field'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5000,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarsmeargle.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarsmeargle.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarsmeargle.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarsmeargle.png',
+      species: 'Pokestar Smeargle',
+      types: [TypesEnum.Normal],
+      weightkg: 61
+    }
+  ],
+  [
+    'pokestarufo',
+    {
+      abilities: { first: 'levitate' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar UFO-PropU1'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5001,
+      otherFormes: ['Pokestar UFO-2', 'Pokestar UFO-PropU2'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarufo.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarufo.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarufo.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarufo.png',
+      species: 'Pokestar UFO',
+      types: [TypesEnum.Flying, TypesEnum.Electric],
+      weightkg: 61,
+      aliases: ['pokestarpropu1', 'pokestarufof', 'pokestarufoflying', 'pokestarufopropu1', 'propu1', 'ufo', 'ufof', 'ufoflying', 'ufopropu1']
+    }
+  ],
+  [
+    'pokestarufo2',
+    {
+      abilities: { first: 'levitate' },
+      baseSpecies: 'Pokestar UFO',
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      forme: '2',
+      formeLetter: '2',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5001,
+      otherFormes: ['Pokestar UFO', 'Pokestar UFO-PropU2'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarufo2.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarufo2.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarufo2.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarufo2.png',
+      species: 'Pokestar UFO-2',
+      types: [TypesEnum.Psychic, TypesEnum.Electric],
+      weightkg: 61,
+      aliases: ['pokestarpropu2', 'propu2', 'ufo2', 'ufop', 'ufopropu2', 'ufopsychic']
+    }
+  ],
+  [
+    'pokestarbrycenman',
+    {
+      abilities: { first: 'levitate' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Brycen-Man-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5002,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarbrycenman.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarbrycenman.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarbrycenman.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarbrycenman.png',
+      species: 'Pokestar Brycen-Man',
+      types: [TypesEnum.Dark, TypesEnum.Psychic],
+      weightkg: 61,
+      aliases: ['brycen', 'brycenman', 'brycenmanprop', 'pokestarbrycenmanprop', 'pokestarproph1', 'proph1']
+    }
+  ],
+  [
+    'pokestarmt',
+    {
+      abilities: { first: 'analytic' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar MT-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5003,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarmt.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarmt.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarmt.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarmt.png',
+      species: 'Pokestar MT',
+      types: [TypesEnum.Steel],
+      weightkg: 61,
+      aliases: ['mechatyranitar', 'mt', 'mtprop', 'pokestarmtprop', 'pokestarpropm1', 'propm1']
+    }
+  ],
+  [
+    'pokestarmt2',
+    {
+      abilities: { first: 'flashfire' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar MT2-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5004,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarmt2.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarmt2.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarmt2.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarmt2.png',
+      species: 'Pokestar MT2',
+      types: [TypesEnum.Steel, TypesEnum.Electric],
+      weightkg: 61,
+      aliases: ['mechatyranitar2', 'mt2', 'mt2prop', 'pokestarmt2prop', 'pokestarpropm2', 'propm2']
+    }
+  ],
+  [
+    'pokestartransport',
+    {
+      abilities: { first: 'motordrive' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Transport-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5005,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestartransport.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestartransport.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestartransport.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestartransport.png',
+      species: 'Pokestar Transport',
+      types: [TypesEnum.Steel],
+      weightkg: 61,
+      aliases: ['pokestarpropt1', 'pokestartransportprop', 'propt1', 'transport', 'transportprop']
+    }
+  ],
+  [
+    'pokestargiant',
+    {
+      abilities: { first: 'hugepower' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Giant-2', 'Pokestar Giant-PropO1', 'Pokestar Giant-PropO2'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5006,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestargiant.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestargiant.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestargiant.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestargiant.png',
+      species: 'Pokestar Giant',
+      types: [TypesEnum.Normal],
+      weightkg: 61,
+      aliases: [
+        'giant',
+        'giant2',
+        'giantpropo1',
+        'giantpropo2',
+        'monica',
+        'monica2',
+        'pokestargiant2',
+        'pokestargiantpropo1',
+        'pokestargiantpropo2',
+        'pokestarmonica2',
+        'pokestarpropo1',
+        'pokestarpropo2',
+        'propo1',
+        'propo2'
+      ]
+    }
+  ],
+  [
+    'pokestarhumanoid',
+    {
+      abilities: { first: 'insomnia' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Humanoid-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5007,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarhumanoid.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarhumanoid.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarhumanoid.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarhumanoid.png',
+      species: 'Pokestar Humanoid',
+      types: [TypesEnum.Normal],
+      weightkg: 61,
+      aliases: ['humanoidprop', 'pokestarhumanoidprop', 'pokestarpropc1', 'propc1']
+    }
+  ],
+  [
+    'pokestarmonster',
+    {
+      abilities: { first: 'pressure' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Monster-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5008,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarmonster.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarmonster.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarmonster.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarmonster.png',
+      species: 'Pokestar Monster',
+      types: [TypesEnum.Dark],
+      weightkg: 61,
+      aliases: ['monsterprop', 'pokestarmonsterprop', 'pokestarpropc2', 'propc2']
+    }
+  ],
+  [
+    'pokestarf00',
+    {
+      abilities: { first: 'voltabsorb' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar F-00-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5009,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarf00.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarf00.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarf00.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarf00.png',
+      species: 'Pokestar F-00',
+      types: [TypesEnum.Steel, TypesEnum.Normal],
+      weightkg: 61,
+      aliases: ['f00', 'f00prop', 'pokestarf00prop', 'pokestarpropr1', 'propr1']
+    }
+  ],
+  [
+    'pokestarf002',
+    {
+      abilities: { first: 'reckless' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar F-002-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5010,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarf002.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarf002.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarf002.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarf002.png',
+      species: 'Pokestar F-002',
+      types: [TypesEnum.Steel, TypesEnum.Normal],
+      weightkg: 61,
+      aliases: ['f002', 'f002prop', 'pokestarf002prop', 'pokestarpropr2', 'propr2']
+    }
+  ],
+  [
+    'pokestarspirit',
+    {
+      abilities: { first: 'wonderguard' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Spirit-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5011,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarspirit.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarspirit.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarspirit.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarspirit.png',
+      species: 'Pokestar Spirit',
+      types: [TypesEnum.Dark, TypesEnum.Ghost],
+      weightkg: 61,
+      aliases: ['majin', 'pokestarpropg1', 'pokestarspiritprop', 'propg1', 'spirit', 'spiritprop']
+    }
+  ],
+  [
+    'pokestarblackdoor',
+    {
+      abilities: { first: 'earlybird' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Black Door-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5012,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarblackdoor.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarblackdoor.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarblackdoor.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarblackdoor.png',
+      species: 'Pokestar Black Door',
+      types: [TypesEnum.Grass],
+      weightkg: 61,
+      aliases: ['blackdoor', 'blackdoorprop', 'pokestarblackdoorprop', 'pokestarpropw1', 'propw1']
+    }
+  ],
+  [
+    'pokestarwhitedoor',
+    {
+      abilities: { first: 'blaze' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar White Door-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5013,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarwhitedoor.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarwhitedoor.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarwhitedoor.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarwhitedoor.png',
+      species: 'Pokestar White Door',
+      types: [TypesEnum.Fire],
+      weightkg: 61,
+      aliases: ['pokestarpropw2', 'pokestarwhitedoorprop', 'propw2', 'whitedoor', 'whitedoorprop']
+    }
+  ],
+  [
+    'pokestarblackbelt',
+    {
+      abilities: { first: 'hugepower' },
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      cosmeticFormes: ['Pokestar Black Belt-Prop'],
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5014,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarblackbelt.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarblackbelt.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarblackbelt.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarblackbelt.png',
+      species: 'Pokestar Black Belt',
+      types: [TypesEnum.Fighting],
+      weightkg: 61,
+      aliases: ['blackbeltprop', 'pokestarblackbeltprop', 'pokestarpropk1', 'propk1']
+    }
+  ],
+  [
+    'pokestarufopropu2',
+    {
+      abilities: { first: 'levitate' },
+      baseForme: 'Pokestar UFO',
+      baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
+      color: 'White',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'PropU2',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -5001,
+      otherFormes: ['Pokestar UFO', 'Pokestar UFO-U2'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/pokestarufopropu2.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/pokestarufopropu2.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/pokestarufopropu2.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/pokestarufopropu2.png',
+      species: 'Pokestar UFO-PropU2',
+      types: [TypesEnum.Psychic, TypesEnum.Electric],
+      weightkg: 61
+    }
+  ]
+];
+
+for (const [key, value] of entries) {
+  value.key = key;
+
+  Pokedex.set(key, value);
+}

@@ -2,6 +2,64 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.0.0](https://github.com/favware/graphql-pokemon/compare/v6.5.11...v7.0.0) - (2022-07-31)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#725) ([776ee78](https://github.com/favware/graphql-pokemon/commit/776ee789ddee4b9e9ae098c9461af369ddf1c31d))
+- Update data [skip publish] (#724) ([b721d35](https://github.com/favware/graphql-pokemon/commit/b721d352c2cf0862164460be7e03a1ccaa0ebf2a))
+- Update data [skip publish] (#720) ([31b9c25](https://github.com/favware/graphql-pokemon/commit/31b9c25a1d1a0cfb2c27a042096c10b084d9f6b6))
+- Update data [skip publish] (#715) ([ee2bb31](https://github.com/favware/graphql-pokemon/commit/ee2bb3196424fa238fde377539875c9a1c89b078))
+- Update data [skip publish] (#713) ([e86b0ab](https://github.com/favware/graphql-pokemon/commit/e86b0ab142d5feedb9b713487e60afe69ddd61c6))
+- Update data [skip publish] (#710) ([2458c03](https://github.com/favware/graphql-pokemon/commit/2458c0336a050ed4aa91b2950bad2a8ad0c16484))
+- Update data [skip publish] (#709) ([edec683](https://github.com/favware/graphql-pokemon/commit/edec6833e326ccb5b164c25ab79b6f489c0aff95))
+- Update data [skip publish] (#708) ([71c85c9](https://github.com/favware/graphql-pokemon/commit/71c85c98b511050629fe1651cabe3cacef27543e))
+- Update data [skip publish] (#699) ([2f0e516](https://github.com/favware/graphql-pokemon/commit/2f0e5163900b6a2cee02165ca584ef6c221fc814))
+- Update data [skip publish] (#692) ([bb2a004](https://github.com/favware/graphql-pokemon/commit/bb2a00489e298bfe59875a8697c21d500e990186))
+
+## 🚀 Features
+
+- Complete rewrite, version 7.0.0 (#700) ([06695a6](https://github.com/favware/graphql-pokemon/commit/06695a6b9562061a74609cca9d73e8b21b75187a))
+  - 💥 **feat:** `Pokemon` now have a new field `learnset` to get access to the moves learned by the Pokémon
+  - 💥 **feat:** `Ability` now has a new field `pokemonThatHaveThisAbility` which is a list of Pokémon that get this ability
+  - 💥 **BREAKING CHANGE:** This package now depends on GraphQL v16
+  - 💥 **BREAKING CHANGE:** The schema has changed, please see below for further details
+  - 💥 **BREAKING CHANGE:** your requests MUST now include a `Content-Type` header with `application/json` as value to [prevent CSFR](https://www.apollographql.com/docs/apollo-server/security/cors#:~:text=apollo%20server%203.7%20introduced%20a%20csrf%20prevention%20feature)
+  - 💥 **BREAKING CHANGE:** The property in `name` in `LearnsetMove` and `LearnsetLevelUpMove` is now removed in favour of `move`
+  - 💥 **BREAKING CHANGE:** Every move in a `LearnsetMove` and `LearnsetLevelUpMove` is now a `Move` object instead of just the name of the move
+  - 💥 **BREAKING CHANGE:** Each entry in `Pokemon.abilities` is now an `Ability` type instead of a `string` type. Use `Pokemon.ability[x].name` to get the name.
+  - 💥 **BREAKING CHANGE:** Each entry in `Pokemon.types` is now a `PokemonType` object. Use `Pokemon.types[n].name` to get the type name
+  - 💥 **BREAKING CHANGE:** `getPokemonByName` query has been removed, use `getPokemon` instead.
+  - 💥 **BREAKING CHANGE:** `getPokemonBySpecies` query has been removed, use `getPokemon` instead.
+  - 💥 **BREAKING CHANGE:** `getAllPokemon` now returns a full `Pokemon` object instead of just a string of names
+  - 💥 **BREAKING CHANGE:** The `getTypeMatchup` query now takes 2 parameters, the required `primaryType` and optional `secondaryType`. The replaces the array of `types` which left it ambiguous that the limit was 2 types.
+  - 💥 **BREAKING CHANGE:** The GraphQL type `Type` has been renamed to `TypeEffectiveness` to avoid confusion with the noun `type`.
+  - 💥 **BREAKING CHANGE:** When providing 2 identical types to `getTypeMatchup` the `secondaryType` will be nulled out.
+
+# [6.5.11](https://github.com/favware/graphql-pokemon/compare/v6.5.10...v6.5.11) - (2022-05-13)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#678) ([7ee8dcc](https://github.com/favware/graphql-pokemon/commit/7ee8dcc3db4b75ceeedd08db0c82f117bd583829))
+- Update data [skip publish] (#672) ([ee03e16](https://github.com/favware/graphql-pokemon/commit/ee03e16f1ae615276b1bb55b29bf3c5fd5b8048c))
+- Update data [skip publish] (#670) ([81da5a2](https://github.com/favware/graphql-pokemon/commit/81da5a22e2242c1031a0385bb0d8079aa6a85611))
+
+## 🐛 Bug Fixes
+
+- Remove package engines ([5fc5cdb](https://github.com/favware/graphql-pokemon/commit/5fc5cdbba9fd9329a575f733d3b87224eb288c54))
+- **pokemon:** Fixed species for Zygarde 10% causing an incorrect sprite url to be returned ([8fd689f](https://github.com/favware/graphql-pokemon/commit/8fd689fa113472e3719a2c53d2a37ba13c97e8b5))
+
+## 🧪 Testing
+
+- Resolve coverage threshold issues ([9b7cd5a](https://github.com/favware/graphql-pokemon/commit/9b7cd5a27d425d07be942472d726c5c157dcecf7))
+- Update test for 8fd689f ([0c9b952](https://github.com/favware/graphql-pokemon/commit/0c9b9523f10356eeb5f17e4e4afa7a2d422e859b))
+
+# [6.5.10](https://github.com/favware/graphql-pokemon/compare/v6.5.9...v6.5.10) - (2022-05-01)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#665) ([36a3653](https://github.com/favware/graphql-pokemon/commit/36a3653dbe097a992fffd243b4c235d443be98aa))
+
 # [@favware/graphql-pokemon@6.5.13](https://github.com/favware/graphql-pokemon/compare/v6.5.11...@favware/graphql-pokemon@6.5.13) - (2022-07-17)
 
 ## 🏠 Refactor

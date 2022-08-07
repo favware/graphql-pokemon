@@ -66,7 +66,7 @@
     "@sapphire/shapeshift": "^3.5.1",
     "@sapphire/time-utilities": "^1.7.5",
     "@sapphire/ts-config": "^3.3.4",
-    "@sapphire/utilities": "^3.8.0",
+    "@sapphire/utilities": "^3.9.0",
     "@skyra/jaro-winkler": "^1.1.0",
     "@swc/core": "^1.2.220",
     "@types/koa": "^2.13.5",

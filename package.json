@@ -6,10 +6,10 @@
   "license": "MIT",
   "type": "module",
   "main": "dist/graphql-pokemon.cjs",
-  "module": "dist/graphql-pokemon.mjs",
+  "module": "dist/graphql-pokemon.js",
   "types": "dist/graphql-pokemon.d.ts",
   "exports": {
-    "import": "./dist/graphql-pokemon.mjs",
+    "import": "./dist/graphql-pokemon.js",
     "require": "./dist/graphql-pokemon.cjs",
     "types": "./dist/graphql-pokemon.d.ts"
   },

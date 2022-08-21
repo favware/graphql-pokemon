@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.0.3](https://github.com/favware/graphql-pokemon/compare/v7.0.2...v7.0.3) - (2022-08-21)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#735) ([4338e0b](https://github.com/favware/graphql-pokemon/commit/4338e0b7a3c1c5f8ea330c74610163916583e897))
+
+## 🐛 Bug Fixes
+
+- Fixed export paths for ESM code ([a3df70b](https://github.com/favware/graphql-pokemon/commit/a3df70bef685f30dfd92991018ee8aa056206bde))
+
 # [7.0.0](https://github.com/favware/graphql-pokemon/compare/v6.5.11...v7.0.0) - (2022-07-31)
 
 ## 🏠 Refactor

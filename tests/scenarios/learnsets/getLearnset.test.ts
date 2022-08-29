@@ -220,14 +220,6 @@ describe('getLearnset', () => {
         variables: { pokemon: 'dialgaorigin', moves: ['roaroftime'] }
       });
 
-      (await import('child_process')).execFile('clippy', ['--copy']).stdin?.end(
-        (await import('util')).inspect(data.getLearnset, {
-          depth: Infinity,
-          maxArrayLength: Infinity,
-          showHidden: false
-        })
-      );
-
       expect(data.getLearnset).toEqual({
         species: 'dialga-origin',
         tmMoves: [],
@@ -235,6 +227,10 @@ describe('getLearnset', () => {
         dreamworldMoves: [],
         eggMoves: [],
         eventMoves: [
+          {
+            move: { name: 'Roar of Time' },
+            generation: 8
+          },
           {
             move: { name: 'Roar of Time' },
             generation: 7

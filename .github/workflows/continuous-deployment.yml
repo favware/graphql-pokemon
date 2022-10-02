@@ -76,7 +76,7 @@ jobs:
       - name: Add problem matchers
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v18
-        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # tag=v3
+        uses: actions/setup-node@969bd2663942d722d85b6a8626225850c2f7be4b # tag=v3
         with:
           node-version: 18
           cache: yarn
@@ -105,7 +105,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Use Node.js v18
-        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # tag=v3
+        uses: actions/setup-node@969bd2663942d722d85b6a8626225850c2f7be4b # tag=v3
         with:
           node-version: 18
           cache: yarn
@@ -177,7 +177,7 @@ jobs:
         with:
           name: changelog_bundle
       - name: Setup Node for publishing to NPM
-        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # tag=v3
+        uses: actions/setup-node@969bd2663942d722d85b6a8626225850c2f7be4b # tag=v3
         with:
           node-version: 18
           cache: yarn
@@ -203,7 +203,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
       - name: Setup Node for publishing to Github
-        uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93 # tag=v3
+        uses: actions/setup-node@969bd2663942d722d85b6a8626225850c2f7be4b # tag=v3
         with:
           node-version: 18
           registry-url: 'https://npm.pkg.github.com'

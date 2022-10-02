@@ -1,6 +1,6 @@
 import { importFileFromWeb, mapToJson } from '#scripts/utils';
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
-import { Time, Timestamp } from '@sapphire/time-utilities';
+import { Time, Timestamp } from '@sapphire/timestamp';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';

@@ -77072,6 +77072,7 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       flashcannon: ['8M'],
       focusblast: ['8M'],
       gigaimpact: ['8M', '8L58'],
+      gunkshot: ['8M'],
       haze: ['8L28'],
       highhorsepower: ['8M'],
       hyperbeam: ['8M'],
@@ -77109,6 +77110,8 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       thunderbolt: ['8M'],
       thunderfang: ['8M'],
       uproar: ['8M'],
+      uturn: ['8M'],
+      wildcharge: ['8M'],
       workup: ['8M'],
       xscissor: ['8M']
     }
@@ -80813,7 +80816,6 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       darkpulse: ['8M'],
       drillpeck: ['8L35'],
       dualwingbeat: ['8T'],
-      earthpower: ['8M'],
       endure: ['8M'],
       facade: ['8M'],
       fly: ['8M'],
@@ -80833,7 +80835,6 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       magicalleaf: ['8M'],
       meanlook: ['8E'],
       memento: ['8E'],
-      mysticalfire: ['8M'],
       nastyplot: ['8M'],
       payback: ['8M'],
       peck: ['8L1'],
@@ -80881,23 +80882,17 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       facade: ['8M'],
       healbell: ['8L1'],
       hornleech: ['8L1'],
-      leechseed: ['8L1'],
       painsplit: ['8L1'],
-      poisonjab: ['8M'],
-      powerwhip: ['8M'],
       protect: ['8M'],
       rapidspin: ['8L1'],
       rest: ['8M'],
-      rockslide: ['8M'],
       round: ['8M'],
       sleeptalk: ['8M'],
       snore: ['8M'],
       stealthrock: ['8M'],
       substitute: ['8M'],
-      suckerpunch: ['8L1'],
       swordsdance: ['8M'],
-      taunt: ['8M'],
-      thunderwave: ['8M']
+      taunt: ['8M']
     }
   ]
 ]);

@@ -12,16 +12,16 @@ jobs:
     if: "!(contains(github.event.head_commit.message, '[skip docker]'))"
     steps:
       - name: Checkout Project
-        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # tag=v3
+        uses: actions/checkout@v3
       - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@8c0edbc76e98fa90f69d9a2c020dcb50019dc325 # tag=v2.2.1
+        uses: docker/setup-buildx-action@v2.2.1
       - name: Login to DockerHub
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a # tag=v2.1.0
+        uses: docker/login-action@v2.1.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a # tag=v2.1.0
+        uses: docker/login-action@v2.1.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
@@ -31,7 +31,7 @@ jobs:
         run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
       - name: Build and push Docker image
         id: docker_build
-        uses: docker/build-push-action@c56af957549030174b10d6867f20e78cfd7debc5 # tag=v3.2.0
+        uses: docker/build-push-action@v3.2.0
         with:
           push: true
           context: .

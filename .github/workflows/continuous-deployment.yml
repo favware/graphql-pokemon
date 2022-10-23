@@ -164,16 +164,16 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # tag=v3
       - name: Download generated typings artifact
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # tag=v3
         with:
           name: typescript_bundle
           path: dist/
       - name: Download stored package.json
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # tag=v3
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # tag=v3
         with:
           name: changelog_bundle
       - name: Setup Node for publishing to NPM
@@ -210,16 +210,16 @@ jobs:
           scope: '@favware'
           cache: yarn
       - name: Download generated typings artifact
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # tag=v3
         with:
           name: typescript_bundle
           path: dist/
       - name: Download stored package.json
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # tag=v3
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # tag=v3
+        uses: actions/download-artifact@9782bd6a9848b53b110e712e20e42d89988822b7 # tag=v3
         with:
           name: changelog_bundle
       - name: Install Dependencies

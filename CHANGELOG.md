@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.0.7](https://github.com/favware/graphql-pokemon/tree/v7.0.7) - (2022-10-23)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#772) ([39bd0a8](https://github.com/favware/graphql-pokemon/commit/39bd0a8806a89ed7e96e0fedd13ac181013bae5b))
+
 # [7.0.5](https://github.com/favware/graphql-pokemon/tree/v7.0.5) - (2022-10-16)
 
 ## 🏠 Refactor

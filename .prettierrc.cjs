@@ -11,6 +11,15 @@ module.exports = {
       options: {
         printWidth: 200
       }
+    },
+    {
+      files: ['README.md'],
+      options: {
+        tabWidth: 2,
+        useTabs: false,
+        printWidth: 80,
+        proseWrap: 'always'
+      }
     }
   ]
 };

@@ -1,16 +1,13 @@
 <div align="center">
 
-<img height="200" src="https://cdn.favware.tech/img/gqlp.png" alt="ArchAngel"/>
+[<img height="200" src="https://cdn.favware.tech/img/gqlp.png" alt="ArchAngel"/>][dashboard]
 
-# GraphQL-Pokemon
+# [`GraphQL-Pokemon`][dashboard]
 
 **Extensive Pokémon GraphQL API!**
 
 [![GitHub](https://img.shields.io/github/license/favware/graphql-pokemon)](https://github.com/favware/graphql-pokemon/blob/main/LICENSE)
 
-[![Continuous Deployment](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Deployment/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Deployment")
-[![Continuous Integration](https://github.com/favware/graphql-pokemon/workflows/Continuous%20Integration/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Continuous+Integration")
-[![Automatic Data Update](https://github.com/favware/graphql-pokemon/workflows/Automatic%20Data%20Update/badge.svg)](https://github.com/favware/graphql-pokemon/actions?query=workflow%3A"Automatic+Data+Update")
 [![npm](https://img.shields.io/npm/v/@favware/graphql-pokemon?color=crimson&label=TypeScript%20API%20Typings%20Version&logo=npm)](https://www.npmjs.com/package/@favware/graphql-pokemon)
 
 [![Support Server](https://discord.com/api/guilds/512303595966824458/embed.png?style=banner2)](https://join.favware.tech)
@@ -22,29 +19,39 @@
 **Table of Contents**
 
 - [GraphQL-Pokemon](#graphql-pokemon)
-- [Installation](#installation)
-- [API Documentation](#api-documentation)
-- [Usage](#usage)
-  - [Using `Fetch`](#using-fetch)
-  - [Using `Apollo Boost`](#using-apollo-boost)
-  - [Using `Apollo Client React`](#using-apollo-client-react)
-- [Meta](#meta)
-  - [License](#license)
-  - [Buy us some doughnuts](#buy-us-some-doughnuts)
-  - [Contributors ✨](#contributors-%E2%9C%A8)
+  - [About](#about)
+  - [Key Features](#key-features)
+  - [Installation](#installation)
+  - [API Documentation](#api-documentation)
+  - [Usage](#usage)
+    - [Using `Fetch`](#using-fetch)
+    - [Using `Apollo Boost`](#using-apollo-boost)
+    - [Using `Apollo Client React`](#using-apollo-client-react)
+  - [Meta](#meta)
+    - [License](#license)
+    - [Buy us some doughnuts](#buy-us-some-doughnuts)
+    - [Contributors ✨](#contributors-)
 
 ---
 
-**_Query for Pokémon data using GraphQL_**
+## About
 
-**Key Features**
+[GraphQL-Pokemon][dashboard] is a GraphQL API that provides extensive Pokémon
+data. Unlike contemporary APIs this API focusses on speed, accuracy and data
+quality. New game data is added within relatively short time after release, and
+Smogon tier data is automatically updated after tier shifts. Data used for this
+API is pulled from the [Pokemon Showdown GitHub][showdown-github], [Serebii],
+and [Bulbapedia].
+
+## Key Features
 
 - Fully generated client-side TypeScript typings published to
   - [npm] as `@favware/graphql-pokemon`
   - [GitHub Package Registry][ghcr_npm] as `@favware/graphql-pokemon`
 - Docker images of the API for private hosting published to
   - [Dockerhub] as `favware/graphql-pokemon`
-  - [GitHub Package Registry][ghcr_docker] as `ghcr.io/favware/graphql-pokemon:latest`
+  - [GitHub Package Registry][ghcr_docker] as
+    `ghcr.io/favware/graphql-pokemon:latest`
 - Provides information about various assets in Pokémon
   - Pokédex
   - Items
@@ -53,9 +60,12 @@
   - Learnsets
   - Type matchups
 
-# Installation
+## Installation
 
-**_Note: This is only needed if you are writing TypeScript, or if you're using a GraphQL schema validator. If you're using neither of these, you do not need to install this package. The package does NOT include the actual API, ONLY type information._**
+**_Note: This is only needed if you are writing TypeScript, or if you're using a
+GraphQL schema validator. If you're using neither of these, you do not need to
+install this package. The package does NOT include the actual API, ONLY type
+information._**
 
 Install client side typings from [yarn] or [npm]:
 
@@ -67,17 +77,19 @@ yarn add -D @favware/graphql-pokemon
 npm install -D @favware/graphql-pokemon
 ```
 
----
+## API Documentation
 
-# API Documentation
+For the full documentation of the deployed version please see [the GraphQL
+Playground on the API][dashboard].
 
-For the full documentation of the deployed version please see [the GraphQL Playground on the API].
+## Usage
 
-# Usage
+_These examples are written as based on TypeScript. For JavaScript simply change
+out the imports to `require` syntax and remove any type information._
 
-_These examples are written as based on TypeScript. For JavaScript simply change out the imports to `require` syntax and remove any type information._
+### Using `Fetch`
 
-## Using `Fetch`
+_note: for a working example see [dragonite]_
 
 ```ts
 import type { Query } from '@favware/graphql-pokemon';
@@ -86,7 +98,7 @@ interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
   data: Record<K, Omit<Query[K], '__typename'>>;
 }
 
-fetch('https://graphqlpokemon.favware.tech/', {
+fetch('https://graphqlpokemon.favware.tech/v7', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -108,7 +120,7 @@ fetch('https://graphqlpokemon.favware.tech/', {
   .then((json) => console.log(json.data));
 ```
 
-## Using `Apollo Boost`
+### Using `Apollo Boost`
 
 _note: for a working example see [dexa]_
 
@@ -118,7 +130,10 @@ import ApolloClient from 'apollo-boost';
 import fetch from 'cross-fetch';
 import gql from 'graphql-tag';
 
-type GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> = Record<K, Omit<Query[K], '__typename'>>;
+type GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> = Record<
+  K,
+  Omit<Query[K], '__typename'>
+>;
 
 const getFuzzyPokemon = gql`
   query getFuzzyPokemon($pokemon: String!) {
@@ -132,13 +147,16 @@ const getFuzzyPokemon = gql`
 `;
 
 const apolloClient = new ApolloClient({
-  uri: 'https://graphqlpokemon.favware.tech/',
+  uri: 'https://graphqlpokemon.favware.tech/v7',
   fetch
 });
 
 const {
   data: { getFuzzyPokemon: pokemonData }
-} = await apolloClient.query<GraphQLPokemonResponse<'getFuzzyPokemon'>, QueryGetFuzzyPokemonArgs>({
+} = await apolloClient.query<
+  GraphQLPokemonResponse<'getFuzzyPokemon'>,
+  QueryGetFuzzyPokemonArgs
+>({
   query: getFuzzyPokemon,
   variables: { pokemon: 'dragonite' }
 });
@@ -146,7 +164,7 @@ const {
 console.log(pokemonData);
 ```
 
-## Using `Apollo Client React`
+### Using `Apollo Client React`
 
 ```ts
 // ApolloClient setup
@@ -157,7 +175,7 @@ import { HttpLink } from 'apollo-link-http';
 // Instantiate required constructor fields
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'https://graphqlpokemon.favware.tech/'
+  uri: 'https://graphqlpokemon.favware.tech/v7'
 });
 
 export const client = new ApolloClient({
@@ -201,7 +219,9 @@ const GET_POKEMON_DETAILS = gql`
 `;
 
 export const Pokemon: React.FC = () => {
-  const { loading, error, data } = useQuery<GraphQLPokemonResponse<'getPokemon'>>(GET_POKEMON_DETAILS, {
+  const { loading, error, data } = useQuery<
+    GraphQLPokemonResponse<'getPokemon'>
+  >(GET_POKEMON_DETAILS, {
     client: client
   });
 
@@ -212,18 +232,22 @@ export const Pokemon: React.FC = () => {
 };
 ```
 
-# Meta
+## Meta
 
-## License
+### License
 
-Copyright © 2019, [Favware](https://github.com/favware).
-Released under the [MIT License](LICENSE.md).
+Copyright © 2019, [Favware](https://github.com/favware). Released under the
+[MIT License](LICENSE.md).
 
-## Buy us some doughnuts
+### Buy us some doughnuts
 
-Favware projects is and always will be open source, even if we don't get donations. That being said, we know there are amazing people who may still want to donate just to show their appreciation. Thank you very much in advance!
+Favware projects is and always will be open source, even if we don't get
+donations. That being said, we know there are amazing people who may still want
+to donate just to show their appreciation. Thank you very much in advance!
 
-We accept donations through Ko-fi, Paypal, Patreon, GitHub Sponsorships, and various crypto currencies. You can use the buttons below to donate through your method of choice.
+We accept donations through Ko-fi, Paypal, Patreon, GitHub Sponsorships, and
+various crypto currencies. You can use the buttons below to donate through your
+method of choice.
 
 |   Donate With   |                      Address                      |
 | :-------------: | :-----------------------------------------------: |
@@ -235,9 +259,10 @@ We accept donations through Ko-fi, Paypal, Patreon, GitHub Sponsorships, and var
 |    Ethereum     |   `0xF653F666903cd8739030D2721bF01095896F5D6E`    |
 |    LiteCoin     |       `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`        |
 
-## Contributors ✨
+### Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -267,14 +292,21 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
 
 <!-- LINK DUMP -->
 
-[the graphql playground on the api]: https://graphqlpokemon.favware.tech
+[dashboard]: https://graphqlpokemon.favware.tech/v7
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
 [ghcr_npm]: https://github.com/favware/graphql-pokemon/packages/199047
-[ghcr_docker]: https://github.com/orgs/favware/packages/container/package/graphql-pokemon
+[ghcr_docker]:
+  https://github.com/orgs/favware/packages/container/package/graphql-pokemon
 [dockerhub]: https://hub.docker.com/r/favware/graphql-pokemon
 [dexa]: https://github.com/favware/dexa
+[dragonite]: https://github.com/favware/dragonite
+[showdown-github]: https://github.com/smogon/pokemon-showdown/
+[serebii]: https://www.serebii.net/
+[bulbapedia]: https://bulbapedia.bulbagarden.net/wiki/Main_Page

@@ -77,7 +77,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
-    'asoneasoneglastrier',
+    'asoneglastrier',
     {
       name: 'As One (Glastrier)',
       shortDesc: 'The combination of Unnerve and Chilling Neigh.'

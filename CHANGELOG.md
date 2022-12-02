@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.0.9](https://github.com/favware/graphql-pokemon/compare/v7.0.8...v7.0.9) - (2022-12-02)
+
+## 🏠 Refactor
+
+- Update data [skip publish] (#786) ([a96abdd](https://github.com/favware/graphql-pokemon/commit/a96abdd37f93260397014745e9c8ff9970846b7b))
+- Update data [skip publish] (#783) ([730b131](https://github.com/favware/graphql-pokemon/commit/730b131f38167daf5782e844b41f72cf6e5d78e9))
+- Update data [skip publish] (#782) ([7d26490](https://github.com/favware/graphql-pokemon/commit/7d2649056907595626fa021c139e1745ae09b7a5))
+- Update data [skip publish] (#780) ([a4106f0](https://github.com/favware/graphql-pokemon/commit/a4106f091db4b1e7278c466e449474401f637c02))
+- Update data [skip publish] (#778) ([ee58674](https://github.com/favware/graphql-pokemon/commit/ee586749297025633074fbc41aaaddc884285291))
+- Update data [skip publish] (#777) ([809a868](https://github.com/favware/graphql-pokemon/commit/809a868298f78c188e3dd85a5277eee959b253fd))
+
+## 🐛 Bug Fixes
+
+- Fixed "As One (Glastrier)" causing an unexpected error when querying data for calyrex-ice ([253ae5f](https://github.com/favware/graphql-pokemon/commit/253ae5f03d28e7ec8be03b6cdb068ee754b663ab))
+- Fixed flavor text mapping for `indeedee-male` and `basculegion` ([5729586](https://github.com/favware/graphql-pokemon/commit/5729586f0ed1e5307f77b365003ec9e6f750f963))
+- **docs:** Improved and fixed readme ([6052161](https://github.com/favware/graphql-pokemon/commit/60521610a825ff348b75c723a7c0448113b923dd))
+
 # [7.0.7](https://github.com/favware/graphql-pokemon/tree/v7.0.7) - (2022-10-23)
 
 ## 🏠 Refactor

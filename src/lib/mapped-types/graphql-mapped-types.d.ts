@@ -63,7 +63,13 @@ export interface Pokemon {
   evolutionLevel?: Maybe<string>;
   /** The evolutions for a Pokémon, if any */
   evolutions?: Maybe<Array<Pokemon>>;
-  /** The flavor texts for a Pokémon */
+  /**
+   * The flavor texts for a Pokémon
+   * @remark This can be an empty array if the flavor text is not available for a Pokémon.
+   * An example of when flavor text is not available is when the Pokémon
+   * is part of the [PokéStar](https://bulbapedia.bulbagarden.net/wiki/Pokéstar_Studios) or
+   * [CAP](https://www.smogon.com/cap/) sets.
+   */
   flavorTexts: Array<Flavor>;
   /** The form identifier of a Pokémon */
   forme?: Maybe<string>;

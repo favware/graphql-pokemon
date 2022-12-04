@@ -1165,7 +1165,7 @@ __metadata:
     "@sapphire/eslint-config": ^4.3.8
     "@sapphire/fetch": ^2.4.1
     "@sapphire/prettier-config": ^1.4.4
-    "@sapphire/shapeshift": ^3.7.0
+    "@sapphire/shapeshift": ^3.7.1
     "@sapphire/timestamp": ^1.0.0
     "@sapphire/ts-config": ^3.3.4
     "@sapphire/utilities": ^3.11.0
@@ -2069,13 +2069,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/shapeshift@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "@sapphire/shapeshift@npm:3.7.0"
+"@sapphire/shapeshift@npm:^3.7.1":
+  version: 3.7.1
+  resolution: "@sapphire/shapeshift@npm:3.7.1"
   dependencies:
     fast-deep-equal: ^3.1.3
     lodash.uniqwith: ^4.5.0
-  checksum: 4fed0865abcf3653406cfa1f4a2a7d1c51103cee1c13ec4fd8fbc84bd32d20b2949e2266531c2d81b9b1e3af32787cd1f5d66a3d6146d6afb553ca2c6377beb1
+  checksum: 06afc7015aa51c8f0e1f2aafe07ba1c6d8452ac68b4c86ffd32ba7ab3dad196f2adf5558436bb4cdbdcf1e33112c158777f44ba4b43f0b2cab8cf51f561f72d4
   languageName: node
   linkType: hard
 

@@ -18,7 +18,7 @@ const config = {
     options: {
       appTitle: 'GraphQL Pokémon Docs',
       appFavicon: 'https://cdn.favware.tech/img/gqlp.png',
-      siteRoot: '/favware/graphql-pokemon',
+      siteRoot: '/graphql-pokemon',
       externalLinks: [
         {
           label: 'Github',

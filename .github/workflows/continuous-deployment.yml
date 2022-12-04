@@ -9,6 +9,7 @@ on:
       - '.github/workflows/continuous-deployment.yml'
       - 'README.md'
       - 'Dockerfile'
+      - 'magidoc.mjs'
   workflow_dispatch:
     inputs:
       skip-publish:

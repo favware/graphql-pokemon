@@ -3507,7 +3507,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       baseSpecies: 'Braviary',
       baseStats: { hp: 110, atk: 83, def: 70, spa: 112, spd: 70, spe: 65 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
-      color: 'Red',
+      color: 'White',
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
       evoLevel: 54,

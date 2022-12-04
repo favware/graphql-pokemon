@@ -1872,7 +1872,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Black',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
-      evoLevel: 'Hold Razor Claw Nighttime',
+      evoLevel: 'Hold Razor Claw Nighttime then level up',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.1,
       isEggObtainable: true,

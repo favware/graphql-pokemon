@@ -342,7 +342,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
-      evoLevel: 20,
+      evoLevel: 'level 20 during daytime',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 0.7,
       isEggObtainable: true,

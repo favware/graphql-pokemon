@@ -37,6 +37,7 @@ coverage/
 api/
 dist/
 codegen/
+docs/
 
 ## Scripts
 scripts/tiers.ts

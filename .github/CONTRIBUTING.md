@@ -10,7 +10,7 @@ merged until the formatting is resolved.
 
 To get ready to work on the codebase, please do the following:
 
-1. Fork & clone the repository, and make sure you're on the **staging** branch
+1. Fork & clone the repository, and make sure you're on the **main** branch
 2. Run `yarn install`
 3. Code your heart out!
 4. Ensure your changes compile (`yarn build`) and run by testing them using GraphQL Playground.

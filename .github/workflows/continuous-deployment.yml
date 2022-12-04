@@ -52,6 +52,67 @@ jobs:
           repository: favware/graphql-pokemon
           short-description: Extensive Pokemon GraphQL API
 
+  GenerateDocumentation:
+    name: Generate Static Documentation
+    runs-on: ubuntu-latest
+    needs: Publish
+    services:
+      pokedex:
+        image: ghcr.io/favware/graphql-pokemon:latest
+        options: >-
+          --health-cmd "nc -z localhost 4000"
+          --health-interval 10s
+          --health-timeout 10s
+          --health-retries 6
+          --health-start-period 5s
+        ports:
+          - 4000:4000
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+      - name: Add problem matchers
+        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
+      - name: Use Node.js v18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+          registry-url: https://registry.yarnpkg.com/
+      - name: Install Dependencies
+        run: yarn --immutable
+      - name: Generate Magidoc
+        run: yarn docs
+      - name: Publish Docs
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          echo -e "\n# Checkout the repo in the target branch"
+          TARGET_BRANCH="gh-pages"
+          git clone $REPO out -b $TARGET_BRANCH
+          echo -e "\n# Remove any old files in the out folder"
+          rm -rfv out/_app/*
+          rm -rfv out/introduction/*
+          rm -rfv out/queries/*
+          rm -rfv out/types/*
+          rm -rfv out/*.html
+          rm -rfv out/vite-manifest.json
+          echo -e "\n# Move the generated docs to the newly-checked-out repo, to be committed and pushed"
+          rsync -vaI .all-contributorsrc out/
+          rsync -vaI LICENSE.md out/
+          rsync -vaI README.md out/
+          rsync -vaI docs/ out/
+          echo -e "\n# Commit and push"
+          cd out
+          git add --all .
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_EMAIL}"
+          git commit -m "docs: magidocs docs build for ${GITHUB_SHA}" || true
+          git push origin $TARGET_BRANCH
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GITHUB_ACTOR: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
+
   GenerateTypings:
     name: Generate TypeScript, and SDL type information
     runs-on: ubuntu-latest

@@ -32,11 +32,9 @@ jobs:
           node-version: 18
           cache: yarn
           registry-url: https://registry.yarnpkg.com/
-      - name: Install Dependencies
-        run: yarn --immutable
       - name: Generate Magidoc
-        run: yarn docs
-      - name: Publish Docs
+        run: yarn dlx @magidoc/cli generate -f ./docs/magidoc.mjs
+      - name: Add static files
         run: |
           printf "User-agent: *\nDisallow:" > docs/magidoc/robots.txt
           printf "This file prevents GitHub Pages from using Jekyll." >> docs/magidoc/.nojekyll

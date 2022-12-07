@@ -9,8 +9,8 @@ const CommonURL = 'https://graphqlpokemon.js.org';
  */
 const config = {
   introspection: {
-    type: 'url',
-    url: 'http://localhost:4000'
+    type: 'sdl',
+    paths: ['./graphql/*.graphql']
   },
   website: {
     template: 'carbon-multi-page',

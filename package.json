@@ -25,7 +25,7 @@
     "#root/*": "./api/*.js",
     "#scripts/*": "./scripts/*.mjs"
   },
-  "homepage": "https://graphqlpokemon.favware.tech/",
+  "homepage": "https://graphql-pokemon.js.org/",
   "scripts": {
     "lint": "eslint src tests scripts --ext ts,mjs --fix",
     "format": "prettier --write --loglevel=warn \"{src,tests,scripts}/**/*.{ts,json}\"",

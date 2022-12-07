@@ -56,7 +56,7 @@ jobs:
   GenerateDocumentation:
     name: Generate Static Documentation
     runs-on: ubuntu-latest
-    # needs: Publish
+    needs: Publish
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3

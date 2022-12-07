@@ -1,5 +1,7 @@
 import { fileURLToPath } from 'node:url';
 
+const { pages } = await import('./pages.mjs');
+
 const CommonDescription = 'Extensive Pokémon GraphQL API with data for all generations.';
 const CommonTitle = 'GraphQL Pokémon';
 const CommonURL = 'https://graphqlpokemon.js.org';
@@ -10,14 +12,19 @@ const CommonURL = 'https://graphqlpokemon.js.org';
 const config = {
   introspection: {
     type: 'sdl',
-    paths: ['./graphql/*.graphql']
+    paths: ['./graphql/*.graphql'] // CWD is the root of the project, not the current docs/ directory
+  },
+  dev: {
+    watch: [fileURLToPath(new URL('./pages', import.meta.url)), fileURLToPath(new URL('./pages.mjs', import.meta.url))]
   },
   website: {
     template: 'carbon-multi-page',
-    output: fileURLToPath(new URL('./docs', import.meta.url)),
+    output: fileURLToPath(new URL('./generated-docs', import.meta.url)),
     options: {
+      pages,
       appTitle: 'GraphQL Pokémon Docs',
       appFavicon: 'https://cdn.favware.tech/img/gqlp.png',
+      appLogo: 'https://cdn.favware.tech/img/gqlp-and-name.png',
       siteRoot: '/graphql-pokemon',
       externalLinks: [
         {

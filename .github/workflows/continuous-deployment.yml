@@ -73,10 +73,6 @@ jobs:
         run: yarn docs
       - name: Publish Docs
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        env:
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
-          GITHUB_ACTOR: Favware-bot
-          GITHUB_EMAIL: favwarebot@gmail.com
         run: |
           REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           echo -e "\n# Checkout the repo in the target branch"
@@ -101,6 +97,10 @@ jobs:
           git config user.email "${GITHUB_EMAIL}"
           git commit -m "docs: magidocs docs build for ${GITHUB_SHA}" || true
           git push origin $TARGET_BRANCH
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GITHUB_ACTOR: Favware-bot
+          GITHUB_EMAIL: favwarebot@gmail.com
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

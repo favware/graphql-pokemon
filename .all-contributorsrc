@@ -127,6 +127,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
       "profile": "https://github.com/apps/renovate",
       "contributions": ["maintenance"]
+    },
+    {
+      "login": "pelletier197",
+      "name": "Sunny Pelletier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24528884?v=4",
+      "profile": "https://github.com/pelletier197",
+      "contributions": ["doc"]
     }
   ],
   "contributorsPerLine": 7,

@@ -37,7 +37,7 @@ coverage/
 api/
 dist/
 codegen/
-docs/generated-docs/
+docs/magidoc/
 
 ## Scripts
 scripts/tiers.ts

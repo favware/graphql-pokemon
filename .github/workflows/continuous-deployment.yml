@@ -79,13 +79,13 @@ jobs:
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git config --global user.email "favwarebot@gmail.com"
           git config --global user.name "Favware-bot"
-          printf "User-agent: *\nDisallow:" > docs/robots.txt
-          printf "This file prevents GitHub Pages from using Jekyll." >> docs/.nojekyll
-          cp .all-contributorsrc docs/
-          cp .gitignore docs/
-          cp LICENSE.md docs/
-          cp README.md docs/
-          yarn dlx gh-pages --dist docs --dotfiles true --message "docs: magidocs docs build for ${GITHUB_SHA}"
+          printf "User-agent: *\nDisallow:" > docs/magidoc/robots.txt
+          printf "This file prevents GitHub Pages from using Jekyll." >> docs/magidoc/.nojekyll
+          cp .all-contributorsrc docs/magidoc
+          cp .gitignore docs/magidoc
+          cp LICENSE.md docs/magidoc
+          cp README.md docs/magidoc
+          yarn dlx gh-pages --dist docs/magidoc --dotfiles true --message "docs: magidocs docs build for ${GITHUB_SHA}"
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

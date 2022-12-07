@@ -19,7 +19,7 @@ const config = {
   },
   website: {
     template: 'carbon-multi-page',
-    output: fileURLToPath(new URL('./generated-docs', import.meta.url)),
+    output: fileURLToPath(new URL('./magidoc', import.meta.url)),
     options: {
       pages,
       appTitle: 'GraphQL Pokémon Docs',

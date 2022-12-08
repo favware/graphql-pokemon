@@ -36,6 +36,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 0.9,
       weightkg: 12.2,
       color: 'Green',
+      prevo: 'sprigatito',
+      evoLevel: 16,
       evos: ['meowscarada'],
       eggGroups: ['Field', 'Grass'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -54,6 +56,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1.5,
       weightkg: 31.2,
       color: 'Green',
+      prevo: 'floragato',
+      evoLevel: 36,
       eggGroups: ['Field', 'Grass'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
@@ -89,6 +93,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1,
       weightkg: 30.7,
       color: 'Red',
+      prevo: 'fuecoco',
+      evoLevel: 16,
       evos: ['skeledirge'],
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -107,9 +113,12 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1.6,
       weightkg: 326.5,
       color: 'Red',
+      prevo: 'crocalor',
+      evoLevel: 36,
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-      isEggObtainable: true
+      isEggObtainable: true,
+      aliases: ['LilChubbs v5']
     }
   ],
   [
@@ -143,6 +152,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 21.5,
       color: 'Blue',
       evos: ['quaquaval'],
+      prevo: 'Quaxly',
+      evoLevel: 16,
       eggGroups: ['Flying', 'Water 1'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
@@ -160,6 +171,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1.8,
       weightkg: 61.9,
       color: 'Blue',
+      prevo: 'Quaxwell',
+      evoLevel: 36,
       eggGroups: ['Flying', 'Water 1'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
@@ -176,7 +189,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 0.5,
       weightkg: 10.2,
       color: 'Gray',
-      evos: ['oinkologne', 'oinkologne-f'],
+      evos: ['oinkologne', 'oinkolognef'],
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
@@ -188,8 +201,14 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 916,
       species: 'oinkologne',
       types: [TypesEnum.Normal],
+      evoLevel: 18,
       baseStats: { hp: 110, atk: 100, def: 75, spa: 59, spd: 80, spe: 65 },
       abilities: { first: 'lingeringaroma', second: 'gluttony', hidden: 'thickfat' },
+      forme: 'male',
+      formeLetter: 'M',
+      baseForme: 'M',
+      prevo: 'lechonk',
+      otherFormes: ['oinkolognef'],
       heightm: 1,
       weightkg: 120,
       color: 'Gray',
@@ -202,7 +221,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'oinkolognef',
     {
       num: 916,
-      species: 'oinkolognef',
+      baseSpecies: 'oinkologne',
+      evoLevel: 18,
+      prevo: 'lechonk',
+      species: 'oinkologne-f',
       types: [TypesEnum.Normal],
       baseStats: { hp: 115, atk: 90, def: 70, spa: 59, spd: 90, spe: 65 },
       abilities: { first: 'aromaveil', second: 'gluttony', hidden: 'thickfat' },
@@ -211,6 +233,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'female',
+      baseForme: 'M',
+      formeLetter: 'F',
       isEggObtainable: true
     }
   ],
@@ -224,7 +249,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'serenegrace', second: 'runaway', hidden: 'rattled' },
       heightm: 3.6,
       weightkg: 39.2,
+      baseForme: 'Two-Segment',
       color: 'Yellow',
+      prevo: 'dunsparce',
+      evoLevel: 'Level up while knowing Hyper Drill',
+      otherFormes: ['dudunsparcethreesegment'],
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
@@ -234,6 +263,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'dudunsparcethreesegment',
     {
       num: 917,
+      baseSpecies: 'dudunsparce',
+      forme: 'Three-Segment',
       species: 'dudunsparcethreesegment',
       types: [TypesEnum.Normal],
       baseStats: { hp: 125, atk: 100, def: 80, spa: 85, spd: 75, spe: 55 },
@@ -241,6 +272,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 4.5,
       weightkg: 47.4,
       color: 'Yellow',
+      prevo: 'dunsparce',
+      evoLevel: 'Level up while knowing Hyper Drill',
+      otherFormes: ['dudunsparce'],
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
@@ -850,6 +884,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 8,
       color: 'Pink',
       eggGroups: ['Water 2'],
+      cosmeticFormes: ['Tatsugiri-Droopy', 'Tatsugiri-Stretchy'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }

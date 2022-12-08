@@ -170,7 +170,7 @@ export namespace PokemonTypes {
   export interface Item extends AliasEntry {
     desc: string;
 
-    gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+    gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
     isNonstandard?: string;
 

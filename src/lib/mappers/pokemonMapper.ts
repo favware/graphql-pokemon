@@ -301,7 +301,7 @@ export function mapPokemonDataToPokemonGraphQL({
     propertyValue: () =>
       resolvedNestedLearnset(
         parsingPokemon || toLowerSingleWordCase(data.species),
-        8,
+        9,
         generationalLearnsetsRequestedFields.filterStartsWith<keyof PokemonLearnset>(`${resolvedRecursingAs}learnsets.generation8.`, true)
       ),
     condition: generationalLearnsetsRequestedFields.hasStartsWith(`${resolvedRecursingAs}learnsets.generation8.`)
@@ -769,19 +769,24 @@ function parseSpeciesForBulbapedia(pokemonData: PokemonTypes.DexEntry) {
  * Parses data from a Pokémon into a valid Serebii URL
  * @param pokemonName The name of the Pokémon to parse, required for new Serebii pages
  * @param pokemonNumber The number of the Pokémon to parse, required for old Serebii pages
- * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 8
+ * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 9
  */
 function parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
   // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
   if (pokemonNumber <= 0) return '';
 
+  // If the Pokémon is within the numbers range for generation 8 then build a Generation 8 based URL
+  if (pokemonNumber >= 810 || pokemonNumber <= 905) {
+    return `${serebiiBaseUrl}-swsh/${pokemonName.replace(/ /g, '').toLowerCase()}`;
+  }
+
+  // If the Pokémon is not in Generation 9 then build a Generation 7 based URL
   if (pokemonTier.toLowerCase() === 'past') {
-    // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
     return `${serebiiBaseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
   }
 
-  // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
-  return `${serebiiBaseUrl}-swsh/${pokemonName.replace(/ /g, '').toLowerCase()}`;
+  // If the Pokémon is available in Generation 9 then build a Generation 9 based URL
+  return `${serebiiBaseUrl}-sv/${pokemonName.replace(/ /g, '').toLowerCase()}`;
 }
 
 function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, evoChainData: PokemonTypes.DexEntry) {
@@ -796,19 +801,26 @@ function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, 
  * Parses data from a Pokémon into a valid Smogon Dex URL
  * @param pokemonName The name of the Pokémon to parse
  * @param pokemonNumber The number of the Pokémon to parse
- * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 8
+ * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 9
  */
 function parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
-  // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
+  // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Smogon Dex page
   if (pokemonNumber <= 0) return '';
 
-  if (pokemonTier.toLowerCase() === 'past') {
-    // If the Pokémon is not in Generation 8 then build a Generation 7 based URL
-    return `${smogonBaseUrl}/sm/pokemon/${toLowerHyphenCase(pokemonName)}`;
+  const parsedPokemonName = toLowerHyphenCase(pokemonName.replace(/:/g, ''));
+
+  // If the Pokémon is within the numbers range for generation 8 then build a Generation 8 based URL
+  if (pokemonNumber >= 810 || pokemonNumber <= 905) {
+    return `${smogonBaseUrl}/sv/pokemon/${parsedPokemonName}`;
   }
 
-  // If the Pokémon is available in Generation 8 then build a Generation 8 based URL
-  return `${smogonBaseUrl}/ss/pokemon/${toLowerHyphenCase(pokemonName.replace(/:/g, ''))}`;
+  if (pokemonTier.toLowerCase() === 'past') {
+    // If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
+    return `${smogonBaseUrl}/sm/pokemon/${parsedPokemonName}`;
+  }
+
+  // If the Pokémon is available in Generation 9 then build a Generation 9 based URL
+  return `${smogonBaseUrl}/sv/pokemon/${parsedPokemonName}`;
 }
 
 export const enum PokemonReferencedCallIdentifier {

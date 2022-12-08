@@ -9,4 +9,4 @@ export type NonNullish<T> = {
 
 export type UnwrapArray<T extends unknown[]> = T extends (infer U)[] ? U : never;
 
-export type Generation = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type Generation = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;

@@ -18,8 +18,8 @@ const getLearnsetSchema: SchemaOf<GetLearnsetArgs> = getPokemonSchema.extend({
   moves: s.array(s.string).unique.lengthGreaterThanOrEqual(1),
   generation: s.number.int
     .greaterThanOrEqual(1)
-    .lessThanOrEqual(8)
-    .nullish.transform((v) => v ?? 8)
+    .lessThanOrEqual(9)
+    .nullish.transform((v) => v ?? 9)
 });
 
 export function validateGetLearnsetArgs(args: GetLearnsetArgs): NonNullish<GetLearnsetArgs> {

@@ -216,6 +216,8 @@ export interface Item {
 
 /** The learnset for each Pokémon split by generation */
 export interface GenerationalPokemonLearnset {
+  /** The learnset of this Pokémon in Generation 9 */
+  generation9: PokemonLearnset;
   /** The learnset of this Pokémon in Generation 8 */
   generation8: PokemonLearnset;
   /** The learnset of this Pokémon in Generation 7 */

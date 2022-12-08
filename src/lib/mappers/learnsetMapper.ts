@@ -91,6 +91,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'shinySprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,
@@ -105,6 +106,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'backSprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,
@@ -119,6 +121,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'shinyBackSprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,

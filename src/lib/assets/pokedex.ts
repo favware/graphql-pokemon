@@ -10,6 +10,7 @@ import '#dexdata/gen5';
 import '#dexdata/gen6';
 import '#dexdata/gen7';
 import '#dexdata/gen8';
+import '#dexdata/gen9';
 
 /** The entire PokéDex of Pokémon */
 export { Pokedex as pokedex };

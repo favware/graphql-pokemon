@@ -6,6 +6,7 @@ interface ParseSpeciesForSpriteParams {
   baseSpecies?: string;
 
   pokemonName: string;
+  pokemonNumber: number;
 
   shiny?: boolean;
 
@@ -26,9 +27,16 @@ const SpriteUrls = {
   animatedSprites: 'ani/',
   animatedShinySprites: 'ani-shiny/'
 };
+const Gen9SpriteUrls = {
+  animatedShinyBackSprites: 'gen5-back-shiny/',
+  animatedBackSprites: 'gen5-back/',
+  animatedSprites: 'gen5/',
+  animatedShinySprites: 'gen5-shiny/'
+};
 
 export const parseSpeciesForSprite = ({
   pokemonName,
+  pokemonNumber,
   baseSpecies,
   specialSprite,
   specialShinySprite,
@@ -48,6 +56,17 @@ export const parseSpeciesForSprite = ({
 
   if (pokemonName.match(MegaSpriteRegex)) {
     pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
+  }
+
+  // TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
+  // Parse differently for generation 9 (Number 906 is sprigatito)
+  if (pokemonNumber >= 906) {
+    const pokemonPng = `${pokemonName}.png`;
+
+    if (shiny && backSprite) return SpriteUrls.baseUrl + Gen9SpriteUrls.animatedShinyBackSprites + pokemonPng;
+    if (backSprite) return SpriteUrls.baseUrl + Gen9SpriteUrls.animatedBackSprites + pokemonPng;
+    if (shiny) return SpriteUrls.baseUrl + Gen9SpriteUrls.animatedShinySprites + pokemonPng;
+    return SpriteUrls.baseUrl + Gen9SpriteUrls.animatedSprites + pokemonPng;
   }
 
   const pokemonGif = `${pokemonName}.gif`;

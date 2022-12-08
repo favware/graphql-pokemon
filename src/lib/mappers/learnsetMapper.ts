@@ -77,6 +77,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'sprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,

@@ -557,6 +557,7 @@ export function mapPokemonDataToPokemonGraphQL({
     propertyKey: 'sprite',
     propertyValue: parseSpeciesForSprite({
       pokemonName: data.species,
+      pokemonNumber: data.num,
       baseSpecies: data.baseSpecies,
       specialSprite: data.specialSprite,
       specialShinySprite: data.specialShinySprite,
@@ -571,6 +572,7 @@ export function mapPokemonDataToPokemonGraphQL({
     propertyKey: 'shinySprite',
     propertyValue: parseSpeciesForSprite({
       pokemonName: data.species,
+      pokemonNumber: data.num,
       baseSpecies: data.baseSpecies,
       specialSprite: data.specialSprite,
       specialShinySprite: data.specialShinySprite,
@@ -586,6 +588,7 @@ export function mapPokemonDataToPokemonGraphQL({
     propertyKey: 'backSprite',
     propertyValue: parseSpeciesForSprite({
       pokemonName: data.species,
+      pokemonNumber: data.num,
       baseSpecies: data.baseSpecies,
       specialSprite: data.specialSprite,
       specialShinySprite: data.specialShinySprite,
@@ -601,6 +604,7 @@ export function mapPokemonDataToPokemonGraphQL({
     propertyKey: 'shinyBackSprite',
     propertyValue: parseSpeciesForSprite({
       pokemonName: data.species,
+      pokemonNumber: data.num,
       baseSpecies: data.baseSpecies,
       specialSprite: data.specialSprite,
       specialShinySprite: data.specialShinySprite,

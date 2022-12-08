@@ -2377,7 +2377,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'zacian',
     {
       abilities: { first: 'intrepidsword' },
-      baseStats: { hp: 92, atk: 130, def: 115, spa: 80, spd: 115, spe: 138 },
+      baseStats: { hp: 92, atk: 120, def: 115, spa: 80, spd: 115, spe: 138 },
       catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
@@ -2399,7 +2399,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'intrepidsword' },
       baseSpecies: 'Zacian',
-      baseStats: { hp: 92, atk: 170, def: 115, spa: 80, spd: 115, spe: 148 },
+      baseStats: { hp: 92, atk: 150, def: 115, spa: 80, spd: 115, spe: 148 },
       catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
@@ -2423,7 +2423,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'zamazenta',
     {
       abilities: { first: 'dauntlessshield' },
-      baseStats: { hp: 92, atk: 130, def: 115, spa: 80, spd: 115, spe: 138 },
+      baseStats: { hp: 92, atk: 120, def: 115, spa: 80, spd: 115, spe: 138 },
       catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
       color: 'Red',
       eggGroups: ['Undiscovered'],
@@ -2445,7 +2445,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'dauntlessshield' },
       baseSpecies: 'Zamazenta',
-      baseStats: { hp: 92, atk: 130, def: 145, spa: 80, spd: 145, spe: 128 },
+      baseStats: { hp: 92, atk: 120, def: 140, spa: 80, spd: 140, spe: 128 },
       catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
       color: 'Red',
       eggGroups: ['Undiscovered'],
@@ -2514,7 +2514,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'kubfu',
     {
-      abilities: { first: 'innerfocus' },
+      abilities: { first: 'innerfocus', hidden: 'noguard' },
       baseStats: { hp: 60, atk: 90, def: 60, spa: 53, spd: 50, spe: 72 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Gray',
@@ -2832,7 +2832,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'intimidate', second: 'frisk', hidden: 'sapsipper' },
       baseStats: { hp: 103, atk: 105, def: 72, spa: 105, spd: 75, spe: 65 },
-      color: 'Gray',
+      color: 'White',
       eggGroups: ['Field'],
       evoLevel: 'use Agile style Psyshield Bash 20 times',
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -2849,8 +2849,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'kleavor',
     {
-      abilities: { first: 'swarm', second: 'sheerforce', hidden: 'steadfast' },
-      baseStats: { hp: 70, atk: 135, def: 95, spa: 45, spd: 70, spe: 85 },
+      abilities: { first: 'swarm', second: 'sheerforce', hidden: 'sharpness' },
+      baseStats: { hp: 70, atk: 130, def: 95, spa: 45, spd: 75, spe: 85 },
       color: 'Brown',
       eggGroups: ['Bug'],
       evoLevel: 'use Black Augurite',
@@ -2887,7 +2887,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'basculegion',
     {
-      abilities: { first: 'rattled', second: 'adaptability', hidden: 'moldbreaker' },
+      abilities: { first: 'swiftswim', second: 'adaptability', hidden: 'moldbreaker' },
       baseStats: { hp: 120, atk: 112, def: 65, spa: 80, spd: 75, spe: 78 },
       color: 'Green',
       eggGroups: ['Water 2'],
@@ -2907,7 +2907,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'basculegionf',
     {
-      abilities: { first: 'rattled', second: 'adaptability', hidden: 'moldbreaker' },
+      abilities: { first: 'swiftswim', second: 'adaptability', hidden: 'moldbreaker' },
       baseSpecies: 'Basculegion',
       baseStats: { hp: 120, atk: 92, def: 65, spa: 100, spd: 75, spe: 78 },
       color: 'Green',
@@ -2930,9 +2930,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'sneasler',
     {
-      abilities: { first: 'pressure', hidden: 'poisontouch' },
+      abilities: { first: 'pressure', second: 'unburden', hidden: 'poisontouch' },
       baseStats: { hp: 80, atk: 130, def: 60, spa: 40, spd: 80, spe: 120 },
-      color: 'Blue',
+      color: 'Purple',
       eggGroups: ['Field'],
       evoLevel: 'use Razor Claw during daytime',
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
@@ -2951,7 +2951,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'poisonpoint', second: 'swiftswim', hidden: 'intimidate' },
       baseStats: { hp: 85, atk: 115, def: 95, spa: 65, spd: 65, spe: 85 },
-      color: 'Black',
+      color: 'Gray',
       eggGroups: ['Water 2'],
       evoLevel: 'use Strong style Barb Barrage 20 times',
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -2968,7 +2968,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'enamorus',
     {
-      abilities: { first: 'healer', hidden: 'contrary' },
+      abilities: { first: 'cutecharm', hidden: 'contrary' },
       baseStats: { hp: 74, atk: 115, def: 70, spa: 135, spd: 80, spe: 106 },
       color: 'Pink',
       eggGroups: ['Undiscovered'],

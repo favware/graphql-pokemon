@@ -1513,7 +1513,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'sliggoohisui',
     {
-      abilities: { first: 'sapsipper', second: 'overcoat', hidden: 'gooey' },
+      abilities: { first: 'sapsipper', second: 'shellarmor', hidden: 'gooey' },
       baseSpecies: 'Sliggoo',
       baseStats: { hp: 58, atk: 75, def: 83, spa: 83, spd: 113, spe: 40 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -1569,7 +1569,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'goodrahisui',
     {
-      abilities: { first: 'sapsipper', second: 'overcoat', hidden: 'gooey' },
+      abilities: { first: 'sapsipper', second: 'shellarmor', hidden: 'gooey' },
       baseSpecies: 'Goodra',
       baseStats: { hp: 80, atk: 100, def: 100, spa: 110, spd: 150, spe: 60 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },

@@ -145,7 +145,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'typhlosionhisui',
     {
-      abilities: { first: 'blaze', hidden: 'flashfire' },
+      abilities: { first: 'blaze', hidden: 'frisk' },
       baseSpecies: 'Typhlosion',
       baseStats: { hp: 73, atk: 84, def: 78, spa: 119, spd: 85, spe: 95 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -1062,9 +1062,35 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 194,
       species: 'wooper',
+      otherFormes: ['wooperpaldea'],
       types: [TypesEnum.Water, TypesEnum.Ground],
       weightkg: 8.5,
       aliases: ['upaa']
+    }
+  ],
+  [
+    'wooper',
+    {
+      abilities: { first: 'Poison Point', second: 'Water Absorb', hidden: 'Unaware' },
+      baseStats: { hp: 55, atk: 45, def: 45, spa: 25, spd: 25, spe: 15 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      forme: 'Paldea',
+      formeLetter: 'P',
+      color: 'Brown',
+      eggGroups: ['Water 1', 'Field'],
+      evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['clodsire'],
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.4,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 194,
+      species: 'wooper-paldea',
+      otherFormes: ['wooper'],
+      types: [TypesEnum.Poison, TypesEnum.Ground],
+      weightkg: 8.5,
+      aliases: ['wooperpaldea', 'wooperp']
     }
   ],
   [
@@ -1341,6 +1367,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Yellow',
       eggGroups: ['Field'],
+      evos: ['farigiraf'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.5,
@@ -1405,6 +1432,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'serenegrace', second: 'runaway', hidden: 'rattled' },
       baseStats: { hp: 100, atk: 70, def: 70, spa: 65, spd: 65, spe: 45 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      evos: ['dudunsparce', 'dudunsparcethreesegment'],
       color: 'Yellow',
       eggGroups: ['Field'],
       evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -1730,7 +1758,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'sneaselhisui',
     {
-      abilities: { first: 'innerfocus', second: 'keeneye', hidden: 'poisontouch' },
+      abilities: { first: 'innerfocus', second: 'keeneye', hidden: 'pickpocket' },
       baseSpecies: 'Sneasel',
       baseStats: { hp: 55, atk: 95, def: 55, spa: 35, spd: 75, spe: 115 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },

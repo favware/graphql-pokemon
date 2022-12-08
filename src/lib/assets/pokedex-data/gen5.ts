@@ -235,7 +235,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'samurotthisui',
     {
-      abilities: { first: 'torrent', hidden: 'shellarmor' },
+      abilities: { first: 'torrent', hidden: 'sharpness' },
       baseSpecies: 'Samurott',
       baseStats: { hp: 90, atk: 108, def: 80, spa: 100, spd: 65, spe: 85 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -2102,7 +2102,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'illusion' },
       baseSpecies: 'Zoroark',
-      baseStats: { hp: 55, atk: 100, def: 60, spa: 125, spd: 60, spe: 110 },
+      baseStats: { hp: 60, atk: 105, def: 60, spa: 120, spd: 60, spe: 105 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
       eggGroups: ['Field'],
@@ -3419,6 +3419,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Red',
       eggGroups: ['Human-Like'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['kingambit'],
       evoLevel: 52,
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.6,
@@ -3503,7 +3504,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'braviaryhisui',
     {
-      abilities: { first: 'keeneye', second: 'sheerforce', hidden: 'defiant' },
+      abilities: { first: 'keeneye', second: 'sheerforce', hidden: 'tintedlens' },
       baseSpecies: 'Braviary',
       baseStats: { hp: 110, atk: 83, def: 70, spa: 112, spd: 70, spe: 65 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },

@@ -22,6 +22,7 @@ import type {
 } from '#types';
 import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import type { GraphQLSet } from '#utils/GraphQLSet';
+import { speciesThatAreNotInGeneration8Nor9 } from '#utils/pastGenerationPokemon';
 import type { TypesEnum } from '#utils/pokemonTypes';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
 import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
@@ -772,17 +773,19 @@ function parseSpeciesForBulbapedia(pokemonData: PokemonTypes.DexEntry) {
  * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 9
  */
 function parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
-  // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Serebii page
+  // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP and PokéStar) then it doesn't have a Serebii page
   if (pokemonNumber <= 0) return '';
 
-  // If the Pokémon is within the numbers range for generation 8 then build a Generation 8 based URL
-  if (pokemonNumber >= 810 || pokemonNumber <= 905) {
-    return `${serebiiBaseUrl}-swsh/${pokemonName.replace(/ /g, '').toLowerCase()}`;
+  // If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
+  if (speciesThatAreNotInGeneration8Nor9.includes(pokemonName)) {
+    return `${serebiiBaseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
   }
 
-  // If the Pokémon is not in Generation 9 then build a Generation 7 based URL
-  if (pokemonTier.toLowerCase() === 'past') {
-    return `${serebiiBaseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
+  // If the Pokémon is `'past'` in Generation 9, but was not included in speciesThatAreNotInGeneration8Nor9
+  // or the Pokémon is within the numbers range for generation 8,
+  // then build a Generation 8 based URL
+  if (pokemonTier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905)) {
+    return `${serebiiBaseUrl}-swsh/${pokemonName.replace(/ /g, '').toLowerCase()}`;
   }
 
   // If the Pokémon is available in Generation 9 then build a Generation 9 based URL

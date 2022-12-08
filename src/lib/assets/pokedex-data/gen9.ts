@@ -34,14 +34,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 61,
-        atk: 80,
-        def: 63,
-        spa: 60,
-        spd: 63,
-        spe: 83
-      },
+      baseStats: { hp: 61, atk: 80, def: 63, spa: 60, spd: 63, spe: 83 },
       abilities: {
         first: 'overgrow',
         hidden: 'protean'
@@ -51,14 +44,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Green',
       evos: ['meowscarada'],
       eggGroups: ['Field', 'Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -72,14 +58,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 76,
-        atk: 110,
-        def: 70,
-        spa: 81,
-        spd: 70,
-        spe: 123
-      },
+      baseStats: { hp: 76, atk: 110, def: 70, spa: 81, spd: 70, spe: 123 },
       abilities: {
         first: 'overgrow',
         hidden: 'protean'
@@ -88,14 +67,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 31.2,
       color: 'Green',
       eggGroups: ['Field', 'Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -109,14 +81,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 67,
-        atk: 45,
-        def: 59,
-        spa: 63,
-        spd: 40,
-        spe: 36
-      },
+      baseStats: { hp: 67, atk: 45, def: 59, spa: 63, spd: 40, spe: 36 },
       abilities: {
         first: 'blaze',
         hidden: 'unaware'
@@ -126,14 +91,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Red',
       evos: ['crocalor'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -147,14 +105,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 81,
-        atk: 55,
-        def: 78,
-        spa: 90,
-        spd: 58,
-        spe: 49
-      },
+      baseStats: { hp: 81, atk: 55, def: 78, spa: 90, spd: 58, spe: 49 },
       abilities: {
         first: 'blaze',
         hidden: 'unaware'
@@ -164,14 +115,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Red',
       evos: ['skeledirge'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -185,14 +129,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 104,
-        atk: 75,
-        def: 100,
-        spa: 110,
-        spd: 75,
-        spe: 66
-      },
+      baseStats: { hp: 104, atk: 75, def: 100, spa: 110, spd: 75, spe: 66 },
       abilities: {
         first: 'blaze',
         hidden: 'unaware'
@@ -201,14 +138,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 326.5,
       color: 'Red',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -222,14 +152,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 55,
-        atk: 65,
-        def: 45,
-        spa: 50,
-        spd: 45,
-        spe: 50
-      },
+      baseStats: { hp: 55, atk: 65, def: 45, spa: 50, spd: 45, spe: 50 },
       abilities: {
         first: 'torrent',
         hidden: 'moxie'
@@ -239,14 +162,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       evos: ['quaxwell'],
       eggGroups: ['Flying', 'Water 1'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -260,14 +176,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 70,
-        atk: 85,
-        def: 65,
-        spa: 65,
-        spd: 60,
-        spe: 65
-      },
+      baseStats: { hp: 70, atk: 85, def: 65, spa: 65, spd: 60, spe: 65 },
       abilities: {
         first: 'torrent',
         hidden: 'moxie'
@@ -277,14 +186,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       evos: ['quaquaval'],
       eggGroups: ['Flying', 'Water 1'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -298,14 +200,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         male: '87.5%',
         female: '12.5%'
       },
-      baseStats: {
-        hp: 85,
-        atk: 120,
-        def: 80,
-        spa: 85,
-        spd: 75,
-        spe: 85
-      },
+      baseStats: { hp: 85, atk: 120, def: 80, spa: 85, spd: 75, spe: 85 },
       abilities: {
         first: 'torrent',
         hidden: 'moxie'
@@ -314,14 +209,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 61.9,
       color: 'Blue',
       eggGroups: ['Flying', 'Water 1'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -331,14 +219,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 915,
       species: 'lechonk',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 54,
-        atk: 45,
-        def: 40,
-        spa: 35,
-        spd: 45,
-        spe: 35
-      },
+      baseStats: { hp: 54, atk: 45, def: 40, spa: 35, spd: 45, spe: 35 },
       abilities: {
         first: 'aromaveil',
         second: 'gluttony',
@@ -349,14 +230,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       evos: ['oinkologne', 'oinkologne-f'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -366,14 +240,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 916,
       species: 'oinkologne',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 110,
-        atk: 100,
-        def: 75,
-        spa: 59,
-        spd: 80,
-        spe: 65
-      },
+      baseStats: { hp: 110, atk: 100, def: 75, spa: 59, spd: 80, spe: 65 },
       abilities: {
         first: 'lingeringaroma',
         second: 'gluttony',
@@ -383,14 +250,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 120,
       color: 'Gray',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -400,14 +260,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 916,
       species: 'oinkolognef',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 115,
-        atk: 90,
-        def: 70,
-        spa: 59,
-        spd: 90,
-        spe: 65
-      },
+      baseStats: { hp: 115, atk: 90, def: 70, spa: 59, spd: 90, spe: 65 },
       abilities: {
         first: 'aromaveil',
         second: 'gluttony',
@@ -417,14 +270,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 120,
       color: 'Brown',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -434,14 +280,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 917,
       species: 'dudunsparce',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 125,
-        atk: 100,
-        def: 80,
-        spa: 85,
-        spd: 75,
-        spe: 55
-      },
+      baseStats: { hp: 125, atk: 100, def: 80, spa: 85, spd: 75, spe: 55 },
       abilities: {
         first: 'serenegrace',
         second: 'runaway',
@@ -451,14 +290,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 39.2,
       color: 'Yellow',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -468,14 +300,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 917,
       species: 'dudunsparcethreesegment',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 125,
-        atk: 100,
-        def: 80,
-        spa: 85,
-        spd: 75,
-        spe: 55
-      },
+      baseStats: { hp: 125, atk: 100, def: 80, spa: 85, spd: 75, spe: 55 },
       abilities: {
         first: 'serenegrace',
         second: 'runaway',
@@ -485,14 +310,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 47.4,
       color: 'Yellow',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -502,14 +320,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 918,
       species: 'tarountula',
       types: [TypesEnum.Bug],
-      baseStats: {
-        hp: 35,
-        atk: 41,
-        def: 45,
-        spa: 29,
-        spd: 40,
-        spe: 20
-      },
+      baseStats: { hp: 35, atk: 41, def: 45, spa: 29, spd: 40, spe: 20 },
       abilities: {
         first: 'insomnia',
         hidden: 'stakeout'
@@ -519,14 +330,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'White',
       evos: ['spidops'],
       eggGroups: ['Bug'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -536,14 +340,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 919,
       species: 'spidops',
       types: [TypesEnum.Bug],
-      baseStats: {
-        hp: 60,
-        atk: 79,
-        def: 92,
-        spa: 52,
-        spd: 86,
-        spe: 35
-      },
+      baseStats: { hp: 60, atk: 79, def: 92, spa: 52, spd: 86, spe: 35 },
       abilities: {
         first: 'insomnia',
         hidden: 'stakeout'
@@ -552,14 +349,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 16.5,
       color: 'Green',
       eggGroups: ['Bug'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -569,14 +359,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 920,
       species: 'nymble',
       types: [TypesEnum.Bug],
-      baseStats: {
-        hp: 33,
-        atk: 46,
-        def: 40,
-        spa: 21,
-        spd: 25,
-        spe: 45
-      },
+      baseStats: { hp: 33, atk: 46, def: 40, spa: 21, spd: 25, spe: 45 },
       abilities: {
         first: 'swarm',
         hidden: 'tintedlens'
@@ -586,14 +369,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       evos: ['lokix'],
       eggGroups: ['Bug'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -603,14 +379,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 921,
       species: 'lokix',
       types: [TypesEnum.Bug, TypesEnum.Dark],
-      baseStats: {
-        hp: 71,
-        atk: 102,
-        def: 78,
-        spa: 52,
-        spd: 55,
-        spe: 92
-      },
+      baseStats: { hp: 71, atk: 102, def: 78, spa: 52, spd: 55, spe: 92 },
       abilities: {
         first: 'swarm',
         hidden: 'tintedlens'
@@ -619,14 +388,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 17.5,
       color: 'Gray',
       eggGroups: ['Bug'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -636,14 +398,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 922,
       species: 'rellor',
       types: [TypesEnum.Bug],
-      baseStats: {
-        hp: 41,
-        atk: 50,
-        def: 60,
-        spa: 31,
-        spd: 58,
-        spe: 30
-      },
+      baseStats: { hp: 41, atk: 50, def: 60, spa: 31, spd: 58, spe: 30 },
       abilities: {
         first: 'compoundeyes',
         hidden: 'shedskin'
@@ -653,14 +408,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       evos: ['rabsca'],
       eggGroups: ['Bug'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -670,14 +418,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 923,
       species: 'rabsca',
       types: [TypesEnum.Bug, TypesEnum.Psychic],
-      baseStats: {
-        hp: 75,
-        atk: 50,
-        def: 85,
-        spa: 115,
-        spd: 100,
-        spe: 45
-      },
+      baseStats: { hp: 75, atk: 50, def: 85, spa: 115, spd: 100, spe: 45 },
       abilities: {
         first: 'synchronize',
         hidden: 'telepathy'
@@ -686,14 +427,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 3.5,
       color: 'Green',
       eggGroups: ['Bug'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -703,14 +437,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 924,
       species: 'greavard',
       types: [TypesEnum.Ghost],
-      baseStats: {
-        hp: 50,
-        atk: 61,
-        def: 60,
-        spa: 30,
-        spd: 55,
-        spe: 34
-      },
+      baseStats: { hp: 50, atk: 61, def: 60, spa: 30, spd: 55, spe: 34 },
       abilities: {
         first: 'pickup',
         hidden: 'fluffy'
@@ -720,14 +447,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'White',
       evos: ['houndstone'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -737,14 +457,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 925,
       species: 'houndstone',
       types: [TypesEnum.Ghost],
-      baseStats: {
-        hp: 72,
-        atk: 101,
-        def: 100,
-        spa: 50,
-        spd: 97,
-        spe: 68
-      },
+      baseStats: { hp: 72, atk: 101, def: 100, spa: 50, spd: 97, spe: 68 },
       abilities: {
         first: 'sandrush',
         hidden: 'fluffy'
@@ -753,14 +466,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 15,
       color: 'White',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -770,14 +476,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 926,
       species: 'flittle',
       types: [TypesEnum.Psychic],
-      baseStats: {
-        hp: 30,
-        atk: 35,
-        def: 30,
-        spa: 55,
-        spd: 40,
-        spe: 75
-      },
+      baseStats: { hp: 30, atk: 35, def: 30, spa: 55, spd: 40, spe: 75 },
       abilities: {
         first: 'anticipation',
         second: 'frisk',
@@ -788,14 +487,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Yellow',
       evos: ['espathra'],
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -805,14 +497,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 927,
       species: 'espathra',
       types: [TypesEnum.Psychic],
-      baseStats: {
-        hp: 95,
-        atk: 60,
-        def: 60,
-        spa: 101,
-        spd: 60,
-        spe: 105
-      },
+      baseStats: { hp: 95, atk: 60, def: 60, spa: 101, spd: 60, spe: 105 },
       abilities: {
         first: 'opportunist',
         second: 'frisk',
@@ -822,14 +507,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 90,
       color: 'Yellow',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -839,14 +517,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 928,
       species: 'farigiraf',
       types: [TypesEnum.Normal, TypesEnum.Psychic],
-      baseStats: {
-        hp: 120,
-        atk: 90,
-        def: 70,
-        spa: 110,
-        spd: 70,
-        spe: 60
-      },
+      baseStats: { hp: 120, atk: 90, def: 70, spa: 110, spd: 70, spe: 60 },
       abilities: {
         first: 'cudchew',
         second: 'armortail',
@@ -856,14 +527,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 160,
       color: 'Brown',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -873,14 +537,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 929,
       species: 'wiglett',
       types: [TypesEnum.Water],
-      baseStats: {
-        hp: 10,
-        atk: 55,
-        def: 25,
-        spa: 35,
-        spd: 25,
-        spe: 95
-      },
+      baseStats: { hp: 10, atk: 55, def: 25, spa: 35, spd: 25, spe: 95 },
       abilities: {
         first: 'gooey',
         second: 'rattled',
@@ -891,14 +548,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'White',
       evos: ['wugtrio'],
       eggGroups: ['Water 3'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -908,14 +558,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 930,
       species: 'wugtrio',
       types: [TypesEnum.Water],
-      baseStats: {
-        hp: 35,
-        atk: 100,
-        def: 50,
-        spa: 50,
-        spd: 70,
-        spe: 120
-      },
+      baseStats: { hp: 35, atk: 100, def: 50, spa: 50, spd: 70, spe: 120 },
       abilities: {
         first: 'gooey',
         second: 'rattled',
@@ -925,14 +568,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 5.4,
       color: 'Red',
       eggGroups: ['Water 3'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -942,14 +578,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 931,
       species: 'dondozo',
       types: [TypesEnum.Water],
-      baseStats: {
-        hp: 150,
-        atk: 100,
-        def: 115,
-        spa: 65,
-        spd: 65,
-        spe: 35
-      },
+      baseStats: { hp: 150, atk: 100, def: 115, spa: 65, spd: 65, spe: 35 },
       abilities: {
         first: 'unaware',
         second: 'oblivious',
@@ -959,14 +588,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 220,
       color: 'Blue',
       eggGroups: ['Water 2'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -976,14 +598,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 932,
       species: 'veluza',
       types: [TypesEnum.Water, TypesEnum.Psychic],
-      baseStats: {
-        hp: 90,
-        atk: 102,
-        def: 73,
-        spa: 78,
-        spd: 65,
-        spe: 70
-      },
+      baseStats: { hp: 90, atk: 102, def: 73, spa: 78, spd: 65, spe: 70 },
       abilities: {
         first: 'moldbreaker',
         hidden: 'sharpness'
@@ -992,14 +607,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 90,
       color: 'Gray',
       eggGroups: ['Water 2'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1009,14 +617,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 933,
       species: 'finizen',
       types: [TypesEnum.Water],
-      baseStats: {
-        hp: 70,
-        atk: 45,
-        def: 40,
-        spa: 45,
-        spd: 40,
-        spe: 75
-      },
+      baseStats: { hp: 70, atk: 45, def: 40, spa: 45, spd: 40, spe: 75 },
       abilities: {
         first: 'waterveil'
       },
@@ -1025,14 +626,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       evos: ['palafin'],
       eggGroups: ['Field', 'Water 2'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1042,14 +636,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 934,
       species: 'palafin',
       types: [TypesEnum.Water],
-      baseStats: {
-        hp: 100,
-        atk: 70,
-        def: 72,
-        spa: 53,
-        spd: 62,
-        spe: 100
-      },
+      baseStats: { hp: 100, atk: 70, def: 72, spa: 53, spd: 62, spe: 100 },
       abilities: {
         first: 'zerotohero'
       },
@@ -1057,14 +644,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 60.2,
       color: 'Blue',
       eggGroups: ['Field', 'Water 2'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1074,14 +654,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 934,
       species: 'palafinhero',
       types: [TypesEnum.Water],
-      baseStats: {
-        hp: 100,
-        atk: 160,
-        def: 97,
-        spa: 106,
-        spd: 87,
-        spe: 100
-      },
+      baseStats: { hp: 100, atk: 160, def: 97, spa: 106, spd: 87, spe: 100 },
       abilities: {
         first: 'zerotohero'
       },
@@ -1089,14 +662,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 97.4,
       color: 'Blue',
       eggGroups: ['Field', 'Water 2'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1106,14 +672,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 935,
       species: 'smoliv',
       types: [TypesEnum.Grass, TypesEnum.Normal],
-      baseStats: {
-        hp: 41,
-        atk: 35,
-        def: 45,
-        spa: 58,
-        spd: 51,
-        spe: 30
-      },
+      baseStats: { hp: 41, atk: 35, def: 45, spa: 58, spd: 51, spe: 30 },
       abilities: {
         first: 'earlybird',
         hidden: 'harvest'
@@ -1123,14 +682,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Green',
       evos: ['dolliv'],
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1140,14 +692,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 936,
       species: 'dolliv',
       types: [TypesEnum.Grass, TypesEnum.Normal],
-      baseStats: {
-        hp: 52,
-        atk: 53,
-        def: 60,
-        spa: 78,
-        spd: 78,
-        spe: 33
-      },
+      baseStats: { hp: 52, atk: 53, def: 60, spa: 78, spd: 78, spe: 33 },
       abilities: {
         first: 'earlybird',
         hidden: 'harvest'
@@ -1157,14 +702,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Green',
       evos: ['arboliva'],
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1174,14 +712,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 937,
       species: 'arboliva',
       types: [TypesEnum.Grass, TypesEnum.Normal],
-      baseStats: {
-        hp: 78,
-        atk: 69,
-        def: 90,
-        spa: 125,
-        spd: 109,
-        spe: 39
-      },
+      baseStats: { hp: 78, atk: 69, def: 90, spa: 125, spd: 109, spe: 39 },
       abilities: {
         first: 'seedsower',
         hidden: 'harvest'
@@ -1190,14 +721,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 48.2,
       color: 'Green',
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1207,14 +731,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 938,
       species: 'capsakid',
       types: [TypesEnum.Grass],
-      baseStats: {
-        hp: 52,
-        atk: 62,
-        def: 40,
-        spa: 62,
-        spd: 40,
-        spe: 50
-      },
+      baseStats: { hp: 52, atk: 62, def: 40, spa: 62, spd: 40, spe: 50 },
       abilities: {
         first: 'chlorophyll',
         second: 'insomnia',
@@ -1225,14 +742,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Green',
       evos: ['scovillain'],
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1242,14 +752,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 939,
       species: 'scovillain',
       types: [TypesEnum.Grass, TypesEnum.Fire],
-      baseStats: {
-        hp: 65,
-        atk: 108,
-        def: 65,
-        spa: 108,
-        spd: 65,
-        spe: 75
-      },
+      baseStats: { hp: 65, atk: 108, def: 65, spa: 108, spd: 65, spe: 75 },
       abilities: {
         first: 'chlorophyll',
         second: 'insomnia',
@@ -1259,14 +762,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 15,
       color: 'Green',
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1276,14 +772,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 940,
       species: 'tadbulb',
       types: [TypesEnum.Electric],
-      baseStats: {
-        hp: 61,
-        atk: 31,
-        def: 41,
-        spa: 59,
-        spd: 35,
-        spe: 45
-      },
+      baseStats: { hp: 61, atk: 31, def: 41, spa: 59, spd: 35, spe: 45 },
       abilities: {
         first: 'owntempo',
         second: 'static',
@@ -1294,14 +783,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Yellow',
       evos: ['bellibolt'],
       eggGroups: ['Water 1'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1311,14 +793,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 941,
       species: 'bellibolt',
       types: [TypesEnum.Electric],
-      baseStats: {
-        hp: 109,
-        atk: 64,
-        def: 91,
-        spa: 103,
-        spd: 83,
-        spe: 45
-      },
+      baseStats: { hp: 109, atk: 64, def: 91, spa: 103, spd: 83, spe: 45 },
       abilities: {
         first: 'electromorphosis',
         second: 'static',
@@ -1328,14 +803,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 113,
       color: 'Green',
       eggGroups: ['Water 1'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1345,14 +813,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 942,
       species: 'varoom',
       types: [TypesEnum.Steel, TypesEnum.Poison],
-      baseStats: {
-        hp: 45,
-        atk: 70,
-        def: 63,
-        spa: 30,
-        spd: 45,
-        spe: 47
-      },
+      baseStats: { hp: 45, atk: 70, def: 63, spa: 30, spd: 45, spe: 47 },
       abilities: {
         first: 'overcoat',
         hidden: 'slowstart'
@@ -1362,14 +823,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       evos: ['revavroom'],
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1379,14 +833,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 943,
       species: 'revavroom',
       types: [TypesEnum.Steel, TypesEnum.Poison],
-      baseStats: {
-        hp: 80,
-        atk: 119,
-        def: 90,
-        spa: 54,
-        spd: 67,
-        spe: 90
-      },
+      baseStats: { hp: 80, atk: 119, def: 90, spa: 54, spd: 67, spe: 90 },
       abilities: {
         first: 'overcoat',
         hidden: 'filter'
@@ -1395,14 +842,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 120,
       color: 'Gray',
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1412,14 +852,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 944,
       species: 'orthworm',
       types: [TypesEnum.Steel],
-      baseStats: {
-        hp: 70,
-        atk: 85,
-        def: 145,
-        spa: 60,
-        spd: 55,
-        spe: 65
-      },
+      baseStats: { hp: 70, atk: 85, def: 145, spa: 60, spd: 55, spe: 65 },
       abilities: {
         first: 'eartheater',
         hidden: 'sandveil'
@@ -1428,14 +861,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 310,
       color: 'Pink',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1445,14 +871,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 945,
       species: 'tandemaus',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 50,
-        atk: 50,
-        def: 45,
-        spa: 40,
-        spd: 45,
-        spe: 75
-      },
+      baseStats: { hp: 50, atk: 50, def: 45, spa: 40, spd: 45, spe: 75 },
       abilities: {
         first: 'runaway',
         second: 'pickup',
@@ -1463,14 +882,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'White',
       evos: ['maushold', 'maushold-four'],
       eggGroups: ['Field', 'Fairy'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1480,14 +892,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 946,
       species: 'maushold',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 74,
-        atk: 75,
-        def: 70,
-        spa: 65,
-        spd: 75,
-        spe: 111
-      },
+      baseStats: { hp: 74, atk: 75, def: 70, spa: 65, spd: 75, spe: 111 },
       abilities: {
         first: 'friendguard',
         second: 'cheekpouch',
@@ -1497,14 +902,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 2.3,
       color: 'White',
       eggGroups: ['Field', 'Fairy'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1514,14 +912,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 946,
       species: 'mausholdfour',
       types: [TypesEnum.Normal],
-      baseStats: {
-        hp: 74,
-        atk: 75,
-        def: 70,
-        spa: 65,
-        spd: 75,
-        spe: 111
-      },
+      baseStats: { hp: 74, atk: 75, def: 70, spa: 65, spd: 75, spe: 111 },
       abilities: {
         first: 'friendguard',
         second: 'cheekpouch',
@@ -1531,14 +922,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 2.8,
       color: 'White',
       eggGroups: ['Field', 'Fairy'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1548,14 +932,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 947,
       species: 'cetoddle',
       types: [TypesEnum.Ice],
-      baseStats: {
-        hp: 108,
-        atk: 68,
-        def: 45,
-        spa: 30,
-        spd: 40,
-        spe: 43
-      },
+      baseStats: { hp: 108, atk: 68, def: 45, spa: 30, spd: 40, spe: 43 },
       abilities: {
         first: 'thickfat',
         second: 'snowcloak',
@@ -1566,14 +943,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'White',
       evos: ['cetitan'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1583,14 +953,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 948,
       species: 'cetitan',
       types: [TypesEnum.Ice],
-      baseStats: {
-        hp: 170,
-        atk: 113,
-        def: 65,
-        spa: 45,
-        spd: 55,
-        spe: 73
-      },
+      baseStats: { hp: 170, atk: 113, def: 65, spa: 45, spd: 55, spe: 73 },
       abilities: {
         first: 'thickfat',
         second: 'slushrush',
@@ -1600,14 +963,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 700,
       color: 'White',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1617,14 +973,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 949,
       species: 'frigibax',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
-      baseStats: {
-        hp: 65,
-        atk: 75,
-        def: 45,
-        spa: 35,
-        spd: 45,
-        spe: 55
-      },
+      baseStats: { hp: 65, atk: 75, def: 45, spa: 35, spd: 45, spe: 55 },
       abilities: {
         first: 'thermalexchange',
         hidden: 'icebody'
@@ -1634,14 +983,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       evos: ['arctibax'],
       eggGroups: ['Dragon', 'Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1651,14 +993,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 950,
       species: 'arctibax',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
-      baseStats: {
-        hp: 90,
-        atk: 95,
-        def: 66,
-        spa: 45,
-        spd: 65,
-        spe: 62
-      },
+      baseStats: { hp: 90, atk: 95, def: 66, spa: 45, spd: 65, spe: 62 },
       abilities: {
         first: 'thermalexchange',
         hidden: 'icebody'
@@ -1668,14 +1003,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       evos: ['baxcalibur'],
       eggGroups: ['Dragon', 'Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1685,14 +1013,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 951,
       species: 'baxcalibur',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
-      baseStats: {
-        hp: 115,
-        atk: 145,
-        def: 92,
-        spa: 75,
-        spd: 86,
-        spe: 87
-      },
+      baseStats: { hp: 115, atk: 145, def: 92, spa: 75, spd: 86, spe: 87 },
       abilities: {
         first: 'thermalexchange',
         hidden: 'icebody'
@@ -1701,14 +1022,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 210,
       color: 'Gray',
       eggGroups: ['Dragon', 'Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1718,14 +1032,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 952,
       species: 'tatsugiri',
       types: [TypesEnum.Dragon, TypesEnum.Water],
-      baseStats: {
-        hp: 68,
-        atk: 50,
-        def: 60,
-        spa: 120,
-        spd: 95,
-        spe: 82
-      },
+      baseStats: { hp: 68, atk: 50, def: 60, spa: 120, spd: 95, spe: 82 },
       abilities: {
         first: 'commander',
         hidden: 'stormdrain'
@@ -1734,14 +1041,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 8,
       color: 'Pink',
       eggGroups: ['Water 2'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1751,14 +1051,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 953,
       species: 'cyclizar',
       types: [TypesEnum.Dragon, TypesEnum.Normal],
-      baseStats: {
-        hp: 70,
-        atk: 95,
-        def: 65,
-        spa: 85,
-        spd: 65,
-        spe: 121
-      },
+      baseStats: { hp: 70, atk: 95, def: 65, spa: 85, spd: 65, spe: 121 },
       abilities: {
         first: 'shedskin',
         hidden: 'regenerator'
@@ -1767,14 +1060,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 63,
       color: 'Green',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1784,14 +1070,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 954,
       species: 'pawmi',
       types: [TypesEnum.Electric],
-      baseStats: {
-        hp: 45,
-        atk: 50,
-        def: 20,
-        spa: 40,
-        spd: 25,
-        spe: 60
-      },
+      baseStats: { hp: 45, atk: 50, def: 20, spa: 40, spd: 25, spe: 60 },
       abilities: {
         first: 'static',
         second: 'naturalcure',
@@ -1802,14 +1081,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Yellow',
       evos: ['pawmo'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1819,14 +1091,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 955,
       species: 'pawmo',
       types: [TypesEnum.Electric, TypesEnum.Fighting],
-      baseStats: {
-        hp: 60,
-        atk: 75,
-        def: 40,
-        spa: 50,
-        spd: 40,
-        spe: 85
-      },
+      baseStats: { hp: 60, atk: 75, def: 40, spa: 50, spd: 40, spe: 85 },
       abilities: {
         first: 'voltabsorb',
         second: 'naturalcure',
@@ -1837,14 +1102,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Yellow',
       evos: ['pawmot'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1854,14 +1112,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 956,
       species: 'pawmot',
       types: [TypesEnum.Electric, TypesEnum.Fighting],
-      baseStats: {
-        hp: 70,
-        atk: 115,
-        def: 70,
-        spa: 70,
-        spd: 60,
-        spe: 105
-      },
+      baseStats: { hp: 70, atk: 115, def: 70, spa: 70, spd: 60, spe: 105 },
       abilities: {
         first: 'voltabsorb',
         second: 'naturalcure',
@@ -1871,14 +1122,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 41,
       color: 'Yellow',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1888,14 +1132,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 957,
       species: 'wattrel',
       types: [TypesEnum.Electric, TypesEnum.Flying],
-      baseStats: {
-        hp: 40,
-        atk: 40,
-        def: 35,
-        spa: 55,
-        spd: 40,
-        spe: 70
-      },
+      baseStats: { hp: 40, atk: 40, def: 35, spa: 55, spd: 40, spe: 70 },
       abilities: {
         first: 'windpower',
         second: 'voltabsorb',
@@ -1906,14 +1143,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Black',
       evos: ['kilowattrel'],
       eggGroups: ['Water 1', 'Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1923,14 +1153,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 958,
       species: 'kilowattrel',
       types: [TypesEnum.Electric, TypesEnum.Flying],
-      baseStats: {
-        hp: 70,
-        atk: 70,
-        def: 60,
-        spa: 105,
-        spd: 60,
-        spe: 125
-      },
+      baseStats: { hp: 70, atk: 70, def: 60, spa: 105, spd: 60, spe: 125 },
       abilities: {
         first: 'windpower',
         second: 'voltabsorb',
@@ -1940,14 +1163,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 38.6,
       color: 'Yellow',
       eggGroups: ['Water 1', 'Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1957,14 +1173,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 959,
       species: 'bombirdier',
       types: [TypesEnum.Flying, TypesEnum.Dark],
-      baseStats: {
-        hp: 70,
-        atk: 103,
-        def: 85,
-        spa: 60,
-        spd: 85,
-        spe: 82
-      },
+      baseStats: { hp: 70, atk: 103, def: 85, spa: 60, spd: 85, spe: 82 },
       abilities: {
         first: 'bigpecks',
         second: 'keeneye',
@@ -1974,14 +1183,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 42.9,
       color: 'White',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -1991,14 +1193,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 960,
       species: 'squawkabilly',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      baseStats: {
-        hp: 82,
-        atk: 96,
-        def: 51,
-        spa: 45,
-        spd: 51,
-        spe: 92
-      },
+      baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
       abilities: {
         first: 'intimidate',
         second: 'hustle',
@@ -2008,14 +1203,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 2.4,
       color: 'Green',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2025,14 +1213,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 960,
       species: 'squawkabillyblue',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      baseStats: {
-        hp: 82,
-        atk: 96,
-        def: 51,
-        spa: 45,
-        spd: 51,
-        spe: 92
-      },
+      baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
       abilities: {
         first: 'intimidate',
         second: 'hustle',
@@ -2042,14 +1223,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 2.4,
       color: 'Blue',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2059,14 +1233,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 960,
       species: 'squawkabillyyellow',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      baseStats: {
-        hp: 82,
-        atk: 96,
-        def: 51,
-        spa: 45,
-        spd: 51,
-        spe: 92
-      },
+      baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
       abilities: {
         first: 'intimidate',
         second: 'hustle',
@@ -2076,14 +1243,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 2.4,
       color: 'Yellow',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2093,14 +1253,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 960,
       species: 'squawkabillywhite',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      baseStats: {
-        hp: 82,
-        atk: 96,
-        def: 51,
-        spa: 45,
-        spd: 51,
-        spe: 92
-      },
+      baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
       abilities: {
         first: 'intimidate',
         second: 'hustle',
@@ -2110,14 +1263,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 2.4,
       color: 'White',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2127,14 +1273,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 961,
       species: 'flamigo',
       types: [TypesEnum.Flying, TypesEnum.Fighting],
-      baseStats: {
-        hp: 82,
-        atk: 115,
-        def: 74,
-        spa: 75,
-        spd: 64,
-        spe: 90
-      },
+      baseStats: { hp: 82, atk: 115, def: 74, spa: 75, spd: 64, spe: 90 },
       abilities: {
         first: 'scrappy',
         second: 'tangledfeet',
@@ -2144,14 +1283,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 37,
       color: 'Pink',
       eggGroups: ['Flying'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2161,14 +1293,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 962,
       species: 'klawf',
       types: [TypesEnum.Rock],
-      baseStats: {
-        hp: 70,
-        atk: 100,
-        def: 115,
-        spa: 35,
-        spd: 55,
-        spe: 75
-      },
+      baseStats: { hp: 70, atk: 100, def: 115, spa: 35, spd: 55, spe: 75 },
       abilities: {
         first: 'angershell',
         second: 'shellarmor',
@@ -2178,14 +1303,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 79,
       color: 'Red',
       eggGroups: ['Water 3'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2195,14 +1313,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 963,
       species: 'nacli',
       types: [TypesEnum.Rock],
-      baseStats: {
-        hp: 55,
-        atk: 55,
-        def: 75,
-        spa: 35,
-        spd: 35,
-        spe: 25
-      },
+      baseStats: { hp: 55, atk: 55, def: 75, spa: 35, spd: 35, spe: 25 },
       abilities: {
         first: 'purifyingsalt',
         second: 'sturdy',
@@ -2213,14 +1324,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       evos: ['naclstack'],
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2230,14 +1334,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 964,
       species: 'naclstack',
       types: [TypesEnum.Rock],
-      baseStats: {
-        hp: 60,
-        atk: 60,
-        def: 100,
-        spa: 35,
-        spd: 65,
-        spe: 35
-      },
+      baseStats: { hp: 60, atk: 60, def: 100, spa: 35, spd: 65, spe: 35 },
       abilities: {
         first: 'purifyingsalt',
         second: 'sturdy',
@@ -2248,14 +1345,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       evos: ['garganacl'],
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2265,14 +1355,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 965,
       species: 'garganacl',
       types: [TypesEnum.Rock],
-      baseStats: {
-        hp: 100,
-        atk: 100,
-        def: 130,
-        spa: 45,
-        spd: 90,
-        spe: 35
-      },
+      baseStats: { hp: 100, atk: 100, def: 130, spa: 45, spd: 90, spe: 35 },
       abilities: {
         first: 'purifyingsalt',
         second: 'sturdy',
@@ -2282,14 +1365,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 240,
       color: 'Brown',
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2299,14 +1375,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 966,
       species: 'glimmet',
       types: [TypesEnum.Rock, TypesEnum.Poison],
-      baseStats: {
-        hp: 48,
-        atk: 35,
-        def: 42,
-        spa: 105,
-        spd: 60,
-        spe: 60
-      },
+      baseStats: { hp: 48, atk: 35, def: 42, spa: 105, spd: 60, spe: 60 },
       abilities: {
         first: 'toxicdebris',
         hidden: 'corrosion'
@@ -2316,14 +1385,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       evos: ['glimmora'],
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2333,14 +1395,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 967,
       species: 'glimmora',
       types: [TypesEnum.Rock, TypesEnum.Poison],
-      baseStats: {
-        hp: 83,
-        atk: 55,
-        def: 90,
-        spa: 130,
-        spd: 81,
-        spe: 86
-      },
+      baseStats: { hp: 83, atk: 55, def: 90, spa: 130, spd: 81, spe: 86 },
       abilities: {
         first: 'toxicdebris',
         hidden: 'corrosion'
@@ -2349,14 +1404,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 45,
       color: 'Blue',
       eggGroups: ['Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2366,14 +1414,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 968,
       species: 'shroodle',
       types: [TypesEnum.Poison, TypesEnum.Normal],
-      baseStats: {
-        hp: 40,
-        atk: 65,
-        def: 35,
-        spa: 40,
-        spd: 35,
-        spe: 75
-      },
+      baseStats: { hp: 40, atk: 65, def: 35, spa: 40, spd: 35, spe: 75 },
       abilities: {
         first: 'unburden',
         second: 'pickpocket',
@@ -2384,14 +1425,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       evos: ['grafaiai'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2401,14 +1435,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 969,
       species: 'grafaiai',
       types: [TypesEnum.Poison, TypesEnum.Normal],
-      baseStats: {
-        hp: 63,
-        atk: 95,
-        def: 65,
-        spa: 80,
-        spd: 72,
-        spe: 110
-      },
+      baseStats: { hp: 63, atk: 95, def: 65, spa: 80, spd: 72, spe: 110 },
       abilities: {
         first: 'unburden',
         second: 'poisontouch',
@@ -2418,14 +1445,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 27.2,
       color: 'Gray',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2435,14 +1455,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 970,
       species: 'fidough',
       types: [TypesEnum.Fairy],
-      baseStats: {
-        hp: 37,
-        atk: 55,
-        def: 70,
-        spa: 30,
-        spd: 55,
-        spe: 65
-      },
+      baseStats: { hp: 37, atk: 55, def: 70, spa: 30, spd: 55, spe: 65 },
       abilities: {
         first: 'owntempo',
         hidden: 'klutz'
@@ -2452,14 +1465,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Yellow',
       evos: ['dachsbun'],
       eggGroups: ['Field', 'Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2469,14 +1475,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 971,
       species: 'dachsbun',
       types: [TypesEnum.Fairy],
-      baseStats: {
-        hp: 57,
-        atk: 80,
-        def: 115,
-        spa: 50,
-        spd: 80,
-        spe: 95
-      },
+      baseStats: { hp: 57, atk: 80, def: 115, spa: 50, spd: 80, spe: 95 },
       abilities: {
         first: 'wellbakedbody',
         hidden: 'aromaveil'
@@ -2485,14 +1484,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 14.9,
       color: 'Brown',
       eggGroups: ['Field', 'Mineral'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2502,14 +1494,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 972,
       species: 'maschiff',
       types: [TypesEnum.Dark],
-      baseStats: {
-        hp: 60,
-        atk: 78,
-        def: 60,
-        spa: 40,
-        spd: 51,
-        spe: 51
-      },
+      baseStats: { hp: 60, atk: 78, def: 60, spa: 40, spd: 51, spe: 51 },
       abilities: {
         first: 'intimidate',
         second: 'runaway',
@@ -2520,14 +1505,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       evos: ['mabosstiff'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2537,14 +1515,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 973,
       species: 'mabosstiff',
       types: [TypesEnum.Dark],
-      baseStats: {
-        hp: 80,
-        atk: 120,
-        def: 90,
-        spa: 60,
-        spd: 70,
-        spe: 85
-      },
+      baseStats: { hp: 80, atk: 120, def: 90, spa: 60, spd: 70, spe: 85 },
       abilities: {
         first: 'intimidate',
         second: 'guarddog',
@@ -2554,14 +1525,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 61,
       color: 'Gray',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2571,14 +1535,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 974,
       species: 'bramblin',
       types: [TypesEnum.Grass, TypesEnum.Ghost],
-      baseStats: {
-        hp: 40,
-        atk: 65,
-        def: 30,
-        spa: 45,
-        spd: 35,
-        spe: 60
-      },
+      baseStats: { hp: 40, atk: 65, def: 30, spa: 45, spd: 35, spe: 60 },
       abilities: {
         first: 'windrider',
         hidden: 'infiltrator'
@@ -2588,14 +1545,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       evos: ['brambleghast'],
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2605,14 +1555,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 975,
       species: 'brambleghast',
       types: [TypesEnum.Grass, TypesEnum.Ghost],
-      baseStats: {
-        hp: 55,
-        atk: 115,
-        def: 70,
-        spa: 80,
-        spd: 70,
-        spe: 90
-      },
+      baseStats: { hp: 55, atk: 115, def: 70, spa: 80, spd: 70, spe: 90 },
       abilities: {
         first: 'windrider',
         hidden: 'infiltrator'
@@ -2621,14 +1564,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 6,
       color: 'Brown',
       eggGroups: ['Grass'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2638,14 +1574,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 976,
       species: 'gimmighoul',
       types: [TypesEnum.Ghost],
-      baseStats: {
-        hp: 45,
-        atk: 30,
-        def: 70,
-        spa: 75,
-        spd: 70,
-        spe: 10
-      },
+      baseStats: { hp: 45, atk: 30, def: 70, spa: 75, spd: 70, spe: 10 },
       abilities: {
         first: 'rattled'
       },
@@ -2654,14 +1583,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       evos: ['gholdengo'],
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2671,14 +1593,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 976,
       species: 'gimmighoulroaming',
       types: [TypesEnum.Ghost],
-      baseStats: {
-        hp: 45,
-        atk: 30,
-        def: 25,
-        spa: 75,
-        spd: 45,
-        spe: 80
-      },
+      baseStats: { hp: 45, atk: 30, def: 25, spa: 75, spd: 45, spe: 80 },
       abilities: {
         first: 'runaway'
       },
@@ -2687,14 +1602,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       evos: ['gholdengo'],
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2704,14 +1612,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 977,
       species: 'gholdengo',
       types: [TypesEnum.Steel, TypesEnum.Ghost],
-      baseStats: {
-        hp: 87,
-        atk: 60,
-        def: 95,
-        spa: 133,
-        spd: 91,
-        spe: 84
-      },
+      baseStats: { hp: 87, atk: 60, def: 95, spa: 133, spd: 91, spe: 84 },
       abilities: {
         first: 'goodasgold'
       },
@@ -2719,14 +1620,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 30,
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2736,14 +1630,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 978,
       species: 'greattusk',
       types: [TypesEnum.Ground, TypesEnum.Fighting],
-      baseStats: {
-        hp: 115,
-        atk: 131,
-        def: 131,
-        spa: 53,
-        spd: 53,
-        spe: 87
-      },
+      baseStats: { hp: 115, atk: 131, def: 131, spa: 53, spd: 53, spe: 87 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2751,14 +1638,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 320,
       color: 'Purple',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2768,14 +1648,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 979,
       species: 'brutebonnet',
       types: [TypesEnum.Grass, TypesEnum.Dark],
-      baseStats: {
-        hp: 111,
-        atk: 127,
-        def: 99,
-        spa: 79,
-        spd: 99,
-        spe: 55
-      },
+      baseStats: { hp: 111, atk: 127, def: 99, spa: 79, spd: 99, spe: 55 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2783,14 +1656,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 21,
       color: 'Gray',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2800,14 +1666,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 981,
       species: 'sandyshocks',
       types: [TypesEnum.Electric, TypesEnum.Ground],
-      baseStats: {
-        hp: 85,
-        atk: 81,
-        def: 97,
-        spa: 121,
-        spd: 85,
-        spe: 101
-      },
+      baseStats: { hp: 85, atk: 81, def: 97, spa: 121, spd: 85, spe: 101 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2815,14 +1674,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 60,
       color: 'Gray',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2832,14 +1684,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 982,
       species: 'screamtail',
       types: [TypesEnum.Fairy, TypesEnum.Psychic],
-      baseStats: {
-        hp: 115,
-        atk: 65,
-        def: 99,
-        spa: 65,
-        spd: 115,
-        spe: 111
-      },
+      baseStats: { hp: 115, atk: 65, def: 99, spa: 65, spd: 115, spe: 111 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2847,14 +1692,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 8,
       color: 'Pink',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2864,14 +1702,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 983,
       species: 'fluttermane',
       types: [TypesEnum.Ghost, TypesEnum.Fairy],
-      baseStats: {
-        hp: 55,
-        atk: 55,
-        def: 55,
-        spa: 135,
-        spd: 135,
-        spe: 135
-      },
+      baseStats: { hp: 55, atk: 55, def: 55, spa: 135, spd: 135, spe: 135 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2879,14 +1710,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 4,
       color: 'Gray',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2896,14 +1720,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 984,
       species: 'slitherwing',
       types: [TypesEnum.Bug, TypesEnum.Fighting],
-      baseStats: {
-        hp: 85,
-        atk: 135,
-        def: 79,
-        spa: 85,
-        spd: 105,
-        spe: 81
-      },
+      baseStats: { hp: 85, atk: 135, def: 79, spa: 85, spd: 105, spe: 81 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2911,14 +1728,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 92,
       color: 'Red',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2928,14 +1738,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 985,
       species: 'roaringmoon',
       types: [TypesEnum.Dragon, TypesEnum.Dark],
-      baseStats: {
-        hp: 105,
-        atk: 139,
-        def: 71,
-        spa: 55,
-        spd: 101,
-        spe: 119
-      },
+      baseStats: { hp: 105, atk: 139, def: 71, spa: 55, spd: 101, spe: 119 },
       abilities: {
         first: 'protosynthesis'
       },
@@ -2943,14 +1746,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 380,
       color: 'Green',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2960,14 +1756,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 986,
       species: 'irontreads',
       types: [TypesEnum.Ground, TypesEnum.Steel],
-      baseStats: {
-        hp: 90,
-        atk: 112,
-        def: 120,
-        spa: 72,
-        spd: 70,
-        spe: 106
-      },
+      baseStats: { hp: 90, atk: 112, def: 120, spa: 72, spd: 70, spe: 106 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -2975,14 +1764,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 240,
       color: 'Gray',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -2992,14 +1774,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 988,
       species: 'ironmoth',
       types: [TypesEnum.Fire, TypesEnum.Poison],
-      baseStats: {
-        hp: 80,
-        atk: 70,
-        def: 60,
-        spa: 140,
-        spd: 110,
-        spe: 110
-      },
+      baseStats: { hp: 80, atk: 70, def: 60, spa: 140, spd: 110, spe: 110 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -3007,14 +1782,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 36,
       color: 'Yellow',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3024,14 +1792,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 989,
       species: 'ironhands',
       types: [TypesEnum.Fighting, TypesEnum.Electric],
-      baseStats: {
-        hp: 154,
-        atk: 140,
-        def: 108,
-        spa: 50,
-        spd: 68,
-        spe: 50
-      },
+      baseStats: { hp: 154, atk: 140, def: 108, spa: 50, spd: 68, spe: 50 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -3039,14 +1800,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 380.7,
       color: 'Gray',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3056,14 +1810,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 990,
       species: 'ironjugulis',
       types: [TypesEnum.Dark, TypesEnum.Flying],
-      baseStats: {
-        hp: 94,
-        atk: 80,
-        def: 86,
-        spa: 122,
-        spd: 80,
-        spe: 108
-      },
+      baseStats: { hp: 94, atk: 80, def: 86, spa: 122, spd: 80, spe: 108 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -3071,14 +1818,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 111,
       color: 'Blue',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3088,14 +1828,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 991,
       species: 'ironthorns',
       types: [TypesEnum.Rock, TypesEnum.Electric],
-      baseStats: {
-        hp: 100,
-        atk: 134,
-        def: 110,
-        spa: 70,
-        spd: 84,
-        spe: 72
-      },
+      baseStats: { hp: 100, atk: 134, def: 110, spa: 70, spd: 84, spe: 72 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -3103,14 +1836,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 303,
       color: 'Green',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3120,14 +1846,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 992,
       species: 'ironbundle',
       types: [TypesEnum.Ice, TypesEnum.Water],
-      baseStats: {
-        hp: 56,
-        atk: 80,
-        def: 114,
-        spa: 124,
-        spd: 60,
-        spe: 136
-      },
+      baseStats: { hp: 56, atk: 80, def: 114, spa: 124, spd: 60, spe: 136 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -3135,14 +1854,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 11,
       color: 'Red',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3152,14 +1864,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 993,
       species: 'ironvaliant',
       types: [TypesEnum.Fairy, TypesEnum.Fighting],
-      baseStats: {
-        hp: 74,
-        atk: 130,
-        def: 90,
-        spa: 120,
-        spd: 60,
-        spe: 116
-      },
+      baseStats: { hp: 74, atk: 130, def: 90, spa: 120, spd: 60, spe: 116 },
       abilities: {
         first: 'quarkdrive'
       },
@@ -3167,14 +1872,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 35,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3184,14 +1882,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 994,
       species: 'tinglu',
       types: [TypesEnum.Dark, TypesEnum.Ground],
-      baseStats: {
-        hp: 155,
-        atk: 110,
-        def: 125,
-        spa: 55,
-        spd: 80,
-        spe: 45
-      },
+      baseStats: { hp: 155, atk: 110, def: 125, spa: 55, spd: 80, spe: 45 },
       abilities: {
         first: 'vesselofruin'
       },
@@ -3199,14 +1890,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 699.7,
       color: 'Brown',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3216,14 +1900,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 995,
       species: 'chienpao',
       types: [TypesEnum.Dark, TypesEnum.Ice],
-      baseStats: {
-        hp: 80,
-        atk: 120,
-        def: 80,
-        spa: 90,
-        spd: 65,
-        spe: 135
-      },
+      baseStats: { hp: 80, atk: 120, def: 80, spa: 90, spd: 65, spe: 135 },
       abilities: {
         first: 'swordofruin'
       },
@@ -3231,14 +1908,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 152.2,
       color: 'White',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3248,14 +1918,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 996,
       species: 'wochien',
       types: [TypesEnum.Dark, TypesEnum.Grass],
-      baseStats: {
-        hp: 85,
-        atk: 85,
-        def: 100,
-        spa: 95,
-        spd: 135,
-        spe: 70
-      },
+      baseStats: { hp: 85, atk: 85, def: 100, spa: 95, spd: 135, spe: 70 },
       abilities: {
         first: 'tabletsofruin'
       },
@@ -3263,14 +1926,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 74.2,
       color: 'Brown',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3280,14 +1936,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 997,
       species: 'chiyu',
       types: [TypesEnum.Dark, TypesEnum.Fire],
-      baseStats: {
-        hp: 55,
-        atk: 80,
-        def: 80,
-        spa: 135,
-        spd: 120,
-        spe: 100
-      },
+      baseStats: { hp: 55, atk: 80, def: 80, spa: 135, spd: 120, spe: 100 },
       abilities: {
         first: 'beadsofruin'
       },
@@ -3295,14 +1944,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 4.9,
       color: 'Red',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3312,14 +1954,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 998,
       species: 'koraidon',
       types: [TypesEnum.Fighting, TypesEnum.Dragon],
-      baseStats: {
-        hp: 100,
-        atk: 135,
-        def: 115,
-        spa: 85,
-        spd: 100,
-        spe: 135
-      },
+      baseStats: { hp: 100, atk: 135, def: 115, spa: 85, spd: 100, spe: 135 },
       abilities: {
         first: 'orichalcumpulse'
       },
@@ -3327,14 +1962,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 303,
       color: 'Red',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3344,14 +1972,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 999,
       species: 'miraidon',
       types: [TypesEnum.Electric, TypesEnum.Dragon],
-      baseStats: {
-        hp: 100,
-        atk: 85,
-        def: 100,
-        spa: 135,
-        spd: 115,
-        spe: 135
-      },
+      baseStats: { hp: 100, atk: 85, def: 100, spa: 135, spd: 115, spe: 135 },
       abilities: {
         first: 'hadronengine'
       },
@@ -3359,14 +1980,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 240,
       color: 'Blue',
       eggGroups: ['Undiscovered'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3376,14 +1990,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1000,
       species: 'tinkatink',
       types: [TypesEnum.Fairy, TypesEnum.Steel],
-      baseStats: {
-        hp: 50,
-        atk: 45,
-        def: 45,
-        spa: 35,
-        spd: 64,
-        spe: 58
-      },
+      baseStats: { hp: 50, atk: 45, def: 45, spa: 35, spd: 64, spe: 58 },
       abilities: {
         first: 'moldbreaker',
         second: 'owntempo',
@@ -3394,14 +2001,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Pink',
       evos: ['tinkatuff'],
       eggGroups: ['Fairy'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3411,14 +2011,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1001,
       species: 'tinkatuff',
       types: [TypesEnum.Fairy, TypesEnum.Steel],
-      baseStats: {
-        hp: 65,
-        atk: 55,
-        def: 55,
-        spa: 45,
-        spd: 82,
-        spe: 78
-      },
+      baseStats: { hp: 65, atk: 55, def: 55, spa: 45, spd: 82, spe: 78 },
       abilities: {
         first: 'moldbreaker',
         second: 'owntempo',
@@ -3429,14 +2022,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Pink',
       evos: ['tinkaton'],
       eggGroups: ['Fairy'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3446,14 +2032,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1002,
       species: 'tinkaton',
       types: [TypesEnum.Fairy, TypesEnum.Steel],
-      baseStats: {
-        hp: 85,
-        atk: 75,
-        def: 77,
-        spa: 70,
-        spd: 105,
-        spe: 94
-      },
+      baseStats: { hp: 85, atk: 75, def: 77, spa: 70, spd: 105, spe: 94 },
       abilities: {
         first: 'moldbreaker',
         second: 'owntempo',
@@ -3463,14 +2042,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 112.8,
       color: 'Pink',
       eggGroups: ['Fairy'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3480,14 +2052,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1003,
       species: 'charcadet',
       types: [TypesEnum.Fire],
-      baseStats: {
-        hp: 40,
-        atk: 50,
-        def: 40,
-        spa: 50,
-        spd: 40,
-        spe: 35
-      },
+      baseStats: { hp: 40, atk: 50, def: 40, spa: 50, spd: 40, spe: 35 },
       abilities: {
         first: 'flashfire',
         hidden: 'flamebody'
@@ -3497,14 +2062,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Red',
       evos: ['armarouge', 'ceruledge'],
       eggGroups: ['Human-Like'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3514,14 +2072,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1004,
       species: 'armarouge',
       types: [TypesEnum.Fire, TypesEnum.Psychic],
-      baseStats: {
-        hp: 85,
-        atk: 60,
-        def: 100,
-        spa: 125,
-        spd: 80,
-        spe: 75
-      },
+      baseStats: { hp: 85, atk: 60, def: 100, spa: 125, spd: 80, spe: 75 },
       abilities: {
         first: 'flashfire',
         hidden: 'weakarmor'
@@ -3530,14 +2081,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 85,
       color: 'Red',
       eggGroups: ['Human-Like'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3547,14 +2091,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1005,
       species: 'ceruledge',
       types: [TypesEnum.Fire, TypesEnum.Ghost],
-      baseStats: {
-        hp: 75,
-        atk: 125,
-        def: 80,
-        spa: 60,
-        spd: 100,
-        spe: 85
-      },
+      baseStats: { hp: 75, atk: 125, def: 80, spa: 60, spd: 100, spe: 85 },
       abilities: {
         first: 'flashfire',
         hidden: 'weakarmor'
@@ -3563,14 +2100,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 62,
       color: 'Blue',
       eggGroups: ['Human-Like'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3580,14 +2110,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1006,
       species: 'toedscool',
       types: [TypesEnum.Ground, TypesEnum.Grass],
-      baseStats: {
-        hp: 40,
-        atk: 40,
-        def: 35,
-        spa: 50,
-        spd: 100,
-        spe: 70
-      },
+      baseStats: { hp: 40, atk: 40, def: 35, spa: 50, spd: 100, spe: 70 },
       abilities: {
         first: 'myceliummight'
       },
@@ -3596,14 +2119,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Yellow',
       evos: ['toedscruel'],
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3613,14 +2129,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1007,
       species: 'toedscruel',
       types: [TypesEnum.Ground, TypesEnum.Grass],
-      baseStats: {
-        hp: 80,
-        atk: 70,
-        def: 65,
-        spa: 80,
-        spd: 120,
-        spe: 100
-      },
+      baseStats: { hp: 80, atk: 70, def: 65, spa: 80, spd: 120, spe: 100 },
       abilities: {
         first: 'myceliummight'
       },
@@ -3628,14 +2137,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 58,
       color: 'Black',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3645,14 +2147,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1008,
       species: 'kingambit',
       types: [TypesEnum.Dark, TypesEnum.Steel],
-      baseStats: {
-        hp: 100,
-        atk: 135,
-        def: 120,
-        spa: 60,
-        spd: 85,
-        spe: 50
-      },
+      baseStats: { hp: 100, atk: 135, def: 120, spa: 60, spd: 85, spe: 50 },
       abilities: {
         first: 'defiant',
         second: 'supremeoverlord',
@@ -3662,14 +2157,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 120,
       color: 'Black',
       eggGroups: ['Human-Like'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3679,14 +2167,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1009,
       species: 'clodsire',
       types: [TypesEnum.Poison, TypesEnum.Ground],
-      baseStats: {
-        hp: 130,
-        atk: 75,
-        def: 60,
-        spa: 45,
-        spd: 100,
-        spe: 20
-      },
+      baseStats: { hp: 130, atk: 75, def: 60, spa: 45, spd: 100, spe: 20 },
       abilities: {
         first: 'poisonpoint',
         second: 'waterabsorb',
@@ -3696,14 +2177,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 223,
       color: 'Brown',
       eggGroups: ['Water 1', 'Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ],
@@ -3713,14 +2187,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1010,
       species: 'annihilape',
       types: [TypesEnum.Fighting, TypesEnum.Ghost],
-      baseStats: {
-        hp: 110,
-        atk: 115,
-        def: 80,
-        spa: 50,
-        spd: 90,
-        spe: 90
-      },
+      baseStats: { hp: 110, atk: 115, def: 80, spa: 50, spd: 90, spe: 90 },
       abilities: {
         first: 'vitalspirit',
         second: 'innerfocus',
@@ -3730,14 +2197,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 56,
       color: 'Gray',
       eggGroups: ['Field'],
-      evYields: {
-        hp: 0,
-        atk: 0,
-        def: 0,
-        spa: 0,
-        spd: 0,
-        spe: 0
-      },
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       isEggObtainable: true
     }
   ]

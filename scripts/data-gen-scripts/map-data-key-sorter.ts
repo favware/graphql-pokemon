@@ -1,6 +1,5 @@
 import { entries } from '../../src/lib/assets/pokedex-data/gen9.js';
-import { execFile } from 'node:child_process';
-import { inspect } from 'node:util';
+import { dataToClipboard } from './data-to-clipboard.js';
 
 export function sortObjectByKey<T extends object>(obj: T): T {
   const keys: string[] = [];
@@ -44,10 +43,4 @@ for (let [species, data] of entries.values()) {
   newMap.set(species, data);
 }
 
-execFile('clippy', ['--copy']).stdin?.end(
-  inspect([...newMap.entries()], {
-    depth: Infinity,
-    maxArrayLength: Infinity,
-    showHidden: false
-  })
-);
+dataToClipboard([...newMap.entries()]);

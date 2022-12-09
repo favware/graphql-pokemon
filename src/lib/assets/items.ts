@@ -4,6 +4,14 @@ import { Collection } from '@discordjs/collection';
 /** The item in Pokémon */
 export const items = new Collection<string, PokemonTypes.Item>([
   [
+    'abilityshield',
+    {
+      desc: '',
+      gen: 9,
+      name: ''
+    }
+  ],
+  [
     'abomasite',
     {
       desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
@@ -156,6 +164,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: 'Past',
       name: 'Audinite'
+    }
+  ],
+  [
+    'auspiciousarmor',
+    {
+      desc: '',
+      gen: 9,
+      name: 'Auspicious Armor',
+      shortDesc: ''
     }
   ],
   [
@@ -326,6 +343,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.',
       gen: 8,
       name: 'Blunder Policy'
+    }
+  ],
+  [
+    'boosterenergy',
+    {
+      desc: '',
+      gen: 9,
+      name: 'Booster Energy',
+      shortDesc: ''
     }
   ],
   [
@@ -533,6 +559,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'clearamulet',
+    {
+      desc: '',
+      gen: 9,
+      name: 'Clear Amulet',
+      shortDesc: ''
+    }
+  ],
+  [
     'cloversweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
@@ -581,6 +616,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: 'Past',
       name: 'Crucibellite'
+    }
+  ],
+  [
+    'covertcloak',
+    {
+      desc: '',
+      gen: 9,
+      name: 'Covert Cloak',
+      shortDesc: ''
     }
   ],
   [
@@ -1768,6 +1812,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'loadeddice',
+    {
+      desc: '',
+      gen: 9,
+      name: 'Loaded Dice',
+      shortDesc: ''
+    }
+  ],
+  [
     'lopunnite',
     {
       desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
@@ -1916,6 +1969,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Cannot be given to or taken from a Pokémon, except by Covet/Knock Off/Thief.',
       gen: 2,
       name: 'Mail'
+    }
+  ],
+  [
+    'maliciousarmor',
+    {
+      desc: '',
+      name: 'Malicious Armor',
+      gen: 9,
+      shortDesc: ''
     }
   ],
   [
@@ -2106,6 +2168,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Grass-type attacks have 1.2x power.",
       gen: 2,
       name: 'Miracle Seed'
+    }
+  ],
+  [
+    'mirrorherb',
+    {
+      desc: '',
+      name: 'Mirror Herb',
+      gen: 9,
+      shortDesc: ''
     }
   ],
   [
@@ -2602,6 +2673,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 7,
       isNonstandard: 'Past',
       name: 'Psychium Z'
+    }
+  ],
+  [
+    'punchingglove',
+    {
+      desc: '',
+      name: 'Punching Glove',
+      gen: 9,
+      shortDesc: ''
     }
   ],
   [

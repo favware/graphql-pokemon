@@ -2,7 +2,8 @@ import type { PokemonTypes } from '#assets/pokemon-source';
 import { Pokedex } from '#dexdata/pokedex';
 import { TypesEnum } from '#utils/pokemonTypes';
 
-const entries: [string, PokemonTypes.DexEntry][] = [
+// TODO: Remove export
+export const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'sprigatito',
     {
@@ -1727,7 +1728,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 978,
-      species: 'greattusk',
+      species: 'Great Tusk',
       types: [TypesEnum.Ground, TypesEnum.Fighting],
       weightkg: 320
     }
@@ -1747,7 +1748,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 979,
-      species: 'brutebonnet',
+      species: 'Brute Bonnet',
       types: [TypesEnum.Grass, TypesEnum.Dark],
       weightkg: 21
     }
@@ -1767,7 +1768,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 981,
-      species: 'sandyshocks',
+      species: 'Sandy Shocks',
       types: [TypesEnum.Electric, TypesEnum.Ground],
       weightkg: 60
     }
@@ -1787,7 +1788,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 982,
-      species: 'screamtail',
+      species: 'Scream Tail',
       types: [TypesEnum.Fairy, TypesEnum.Psychic],
       weightkg: 8
     }
@@ -1807,7 +1808,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 983,
-      species: 'fluttermane',
+      species: 'Flutter Mane',
       types: [TypesEnum.Ghost, TypesEnum.Fairy],
       weightkg: 4
     }
@@ -1827,7 +1828,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 984,
-      species: 'slitherwing',
+      species: 'Slither Wing',
       types: [TypesEnum.Bug, TypesEnum.Fighting],
       weightkg: 92
     }
@@ -1847,7 +1848,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 985,
-      species: 'roaringmoon',
+      species: 'Roaring Moon',
       types: [TypesEnum.Dragon, TypesEnum.Dark],
       weightkg: 380
     }
@@ -1867,7 +1868,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 986,
-      species: 'irontreads',
+      species: 'Iron Treads',
       types: [TypesEnum.Ground, TypesEnum.Steel],
       weightkg: 240
     }
@@ -1887,7 +1888,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 988,
-      species: 'ironmoth',
+      species: 'Iron Moth',
       types: [TypesEnum.Fire, TypesEnum.Poison],
       weightkg: 36
     }
@@ -1907,7 +1908,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 989,
-      species: 'ironhands',
+      species: 'Iron Hands',
       types: [TypesEnum.Fighting, TypesEnum.Electric],
       weightkg: 380.7
     }
@@ -1927,7 +1928,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 990,
-      species: 'ironjugulis',
+      species: 'Iron Jugulis',
       types: [TypesEnum.Dark, TypesEnum.Flying],
       weightkg: 111
     }
@@ -1947,7 +1948,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 991,
-      species: 'ironthorns',
+      species: 'Iron Thorns',
       types: [TypesEnum.Rock, TypesEnum.Electric],
       weightkg: 303
     }
@@ -1967,7 +1968,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 992,
-      species: 'ironbundle',
+      species: 'Iron Bundle',
       types: [TypesEnum.Ice, TypesEnum.Water],
       weightkg: 11
     }
@@ -1987,7 +1988,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 993,
-      species: 'ironvaliant',
+      species: 'Iron Valiant',
       types: [TypesEnum.Fairy, TypesEnum.Fighting],
       weightkg: 35
     }
@@ -2007,7 +2008,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 994,
-      species: 'tinglu',
+      species: 'Ting-Lu',
       types: [TypesEnum.Dark, TypesEnum.Ground],
       weightkg: 699.7
     }
@@ -2027,7 +2028,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 995,
-      species: 'chienpao',
+      species: 'Chien-Pao',
       types: [TypesEnum.Dark, TypesEnum.Ice],
       weightkg: 152.2
     }
@@ -2047,7 +2048,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 996,
-      species: 'wochien',
+      species: 'Wo-Chien',
       types: [TypesEnum.Dark, TypesEnum.Grass],
       weightkg: 74.2
     }
@@ -2067,7 +2068,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 12850,
       num: 997,
-      species: 'chiyu',
+      species: 'Chi-Yu',
       types: [TypesEnum.Dark, TypesEnum.Fire],
       weightkg: 4.9
     }
@@ -2204,12 +2205,14 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Red',
       eggGroups: ['Human-Like'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 'use Auspicious Armor',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.5,
       isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 8995,
       num: 1004,
+      prevo: 'charcadet',
       species: 'armarouge',
       types: [TypesEnum.Fire, TypesEnum.Psychic],
       weightkg: 85
@@ -2224,6 +2227,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       eggGroups: ['Human-Like'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'use Malicious Armor',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.6,
       isEggObtainable: true,

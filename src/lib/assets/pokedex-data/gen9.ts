@@ -2328,6 +2328,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ]
 ];
+
 for (const [key, value] of entries) {
   value.key = key;
   Pokedex.set(key, value);

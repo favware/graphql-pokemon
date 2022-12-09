@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["."],
+  "compilerOptions": {
+    "strict": false,
+    "resolveJsonModule": true,
+    "baseUrl": "../../src",
+    "paths": {
+      "#assets/*": ["./lib/assets/*"],
+      "#jsonAssets/*.json": ["./lib/assets/*.json"],
+      "#dexdata/*": ["./lib/assets/pokedex-data/*"],
+      "#resolvers/*": ["./lib/resolvers/*"],
+      "#types": ["./lib/mapped-types/graphql-mapped-types.d.ts"],
+      "#utils/*": ["./lib/utils/*"],
+      "#validations/*": ["./lib/validations/*"],
+      "#mappers/*": ["./lib/mappers/*"],
+      "#root/*": ["*"]
+    }
+  }
+}

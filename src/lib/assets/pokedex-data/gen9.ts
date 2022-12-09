@@ -824,6 +824,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 8995,
       num: 937,
+      prevo: 'charcadet',
       species: 'ceruledge',
       types: [TypesEnum.Fire, TypesEnum.Ghost],
       weightkg: 62

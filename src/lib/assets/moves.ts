@@ -701,7 +701,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       desc: 'The user launches countless toxic barbs to inflict damage. This may also poison the target. This move’s power is doubled if the target has a status condition.',
       name: 'Barb Barrage',
-      pp: 15,
+      pp: 10,
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
@@ -923,11 +923,11 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'bittermalice',
     {
       accuracy: 100,
-      basePower: '60',
+      basePower: '75',
       category: 'Special',
       desc: 'The user attacks its target with spine-chilling resentment. This may also leave the target with frostbite. This move’s power is doubled if the target has a status condition.',
       name: 'Bitter Malice',
-      pp: 15,
+      pp: 10,
       priority: 0,
       shortDesc: 'Has a 30% chance to leave the target with frostbite.',
       target: 'Normal',
@@ -989,14 +989,14 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'bleakwindstorm',
     {
       accuracy: 80,
-      basePower: '95',
+      basePower: '100',
       category: 'Special',
       desc: 'The user attacks with savagely cold winds that cause both body and spirit to tremble. This may also leave the target with frostbite.',
       name: 'Bleakwind Storm',
-      pp: 5,
+      pp: 10,
       priority: 0,
       shortDesc: 'Has a 30% chance to leave the target with frostbite.',
-      target: 'Normal',
+      target: 'Adjacent Foes',
       type: 'Flying'
     }
   ],
@@ -1717,7 +1717,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'chloroblast',
     {
       accuracy: 95,
-      basePower: '120',
+      basePower: '150',
       category: 'Special',
       desc: 'The user launches its amassed chlorophyll to inflict damage on the target. This also damages the user for half of its maximum HP rounded up and lowers the user’s action speed.',
       name: 'Chloroblast',
@@ -2548,7 +2548,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'direclaw',
     {
       accuracy: 100,
-      basePower: '60',
+      basePower: '80',
       category: 'Physical',
       desc: 'The user lashes out at the target with ruinous claws, aiming to land a critical hit. Has a 50% chance to inflict Poison, Paralyze, or cause Drowsiness on the target',
       name: 'Dire Claw',
@@ -3418,9 +3418,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
   [
     'esperwing',
     {
-      accuracy: 90,
-      basePower: '75',
-      category: 'Physical',
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
       desc: "The user slashes the target with aura-enriched wings. This also raises the user's action speed. This move has a heightened chance of landing a critical hit",
       name: 'Esper Wing',
       pp: 10,
@@ -5673,7 +5673,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'headlongrush',
     {
       accuracy: 100,
-      basePower: '100',
+      basePower: '120',
       category: 'Physical',
       desc: 'The user smashes into the target in a full-body tackle. This also lowers the user’s defensive stats.',
       name: 'Headlong Rush',
@@ -8552,7 +8552,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       name: 'Mountain Gale',
-      pp: 5,
+      pp: 10,
       priority: 0,
       shortDesc: 'The user hurls giant chunks of ice at the target to inflict damage.',
       target: 'Normal',
@@ -10133,14 +10133,14 @@ export const moves = new Collection<string, PokemonTypes.Move>([
   [
     'ragingfury',
     {
-      accuracy: 85,
-      basePower: '90',
+      accuracy: 100,
+      basePower: '120',
       category: 'Physical',
       name: 'Raging Fury',
       pp: 10,
       priority: 0,
       shortDesc: 'The user rampages and spews vicious flames to inflict damage on the target, then becomes fixated on using this move.',
-      target: 'Normal',
+      target: 'Random',
       type: 'Fire'
     }
   ],
@@ -10793,14 +10793,14 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'sandsearstorm',
     {
       accuracy: 80,
-      basePower: '95',
+      basePower: '100',
       category: 'Special',
       desc: 'The user attacks by wrapping the target in fierce winds and searingly hot sand. This also leaves the target with a burn.',
       name: 'Sandsear Storm',
-      pp: 5,
+      pp: 10,
       priority: 0,
       shortDesc: 'Has a 30% chance of burning the target',
-      target: 'Normal',
+      target: 'Adjacent Foes',
       type: 'Ground'
     }
   ],
@@ -12293,14 +12293,14 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'springtidestorm',
     {
       accuracy: 80,
-      basePower: '95',
+      basePower: '100',
       category: 'Special',
       desc: "The user attacks by wrapping the target in fierce winds brimming with love and hate. If Enamorus is in its Incarnate Forme, it has a 30% chance of boosting all the user's stats for 3 turns. In its Therian Form, it has a 30% chance of lowering the target's Defenses for 3 turns",
       name: 'Springtide Storm',
       pp: 5,
       priority: 0,
       shortDesc: "30% chance to boost all stats (Incarnate) or 30% to lower target's defensive stats (Therian)",
-      target: 'Normal',
+      target: 'Adjacent Foes',
       type: 'Fairy'
     }
   ],
@@ -13695,11 +13695,11 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'triplearrows',
     {
       accuracy: 100,
-      basePower: '50',
+      basePower: '90',
       category: 'Physical',
       desc: "The user delivers an axe kick, then fires three arrows. This raises the chance of its future attacks landing critical hits and also lowers the target's defensive stats.",
       name: 'Triple Arrows',
-      pp: 15,
+      pp: 10,
       priority: 0,
       shortDesc: "Decreases target's defensive stats by 1 stage.",
       target: 'Normal',
@@ -13944,7 +13944,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       desc: 'The user performs a dance to usher in victory. This raises the user’s offensive and defensive stats by 1 stage and increases the damage dealt by the user’s moves by 50%.',
       name: 'Victory Dance',
-      pp: 20,
+      pp: 10,
       priority: 0,
       shortDesc: "Raises the user's Attack and Defense stat by 1 stage and boosts damage dealt by user by 50%",
       target: 'Self',
@@ -14175,7 +14175,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'wavecrash',
     {
       accuracy: 100,
-      basePower: '75',
+      basePower: '120',
       category: 'Physical',
       desc: 'The user shrouds itself in water and slams into the target with its whole body to inflict damage. This also damages the user and raises the user’s action speed.',
       name: 'Wave Crash',
@@ -14273,14 +14273,14 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     'wildboltstorm',
     {
       accuracy: 80,
-      basePower: '95',
+      basePower: '100',
       category: 'Special',
       desc: 'The user summons a thunderous tempest and savagely attacks with lightning and wind. Has a 30% chance to paralyze the target.',
       name: 'Wildbolt Storm',
-      pp: 5,
+      pp: 10,
       priority: 0,
       shortDesc: 'Has a 30% chance to paralyze the target.',
-      target: 'Normal',
+      target: 'Adjacent Foes',
       type: 'Electric'
     }
   ],
@@ -14560,6 +14560,746 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: "Goes first. Raises user's evasion by 1.",
       target: 'Normal',
       type: 'Electric'
+    }
+  ],
+  [
+    'aquacutter',
+    {
+      accuracy: 100,
+      basePower: '70',
+      category: 'Physical',
+      name: 'Aqua Cutter',
+      pp: 15,
+      priority: 0,
+      target: 'Normal',
+      type: 'Water',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'aquastep',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      name: 'Aqua Step',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Water',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'armorcannon',
+    {
+      accuracy: 100,
+      basePower: '120',
+      category: 'Special',
+      name: 'Armor Cannon',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fire',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'axekick',
+    {
+      accuracy: 90,
+      basePower: '120',
+      category: 'Physical',
+      name: 'Axe Kick',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fighting',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'bitterblade',
+    {
+      accuracy: 100,
+      basePower: '90',
+      category: 'Physical',
+      name: 'Bitter Blade',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fire',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'blazingtorque',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      isNonstandard: 'Unobtainable',
+      name: 'Blazing Torque',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fire',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'chillingwater',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Special',
+      name: 'Chilling Water',
+      pp: 20,
+      priority: 0,
+      target: 'Normal',
+      type: 'Ice',
+      contestType: 'Beautiful',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'chillyreception',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Chilly Reception',
+      pp: 10,
+      priority: 0,
+      target: 'All',
+      type: 'Ice',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'collisioncourse',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      name: 'Collision Course',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fighting',
+      contestType: 'Tough',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'combattorque',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      isNonstandard: 'Unobtainable',
+      name: 'Combat Torque',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fighting',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'comeuppance',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Physical',
+      name: 'Comeuppance',
+      pp: 10,
+      priority: 0,
+      target: 'Self',
+      type: 'Dark',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'doodle',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Doodle',
+      pp: 10,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'doubleshock',
+    {
+      accuracy: 100,
+      basePower: '120',
+      category: 'Physical',
+      name: 'Double Shock',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Electric',
+      contestType: 'Clever',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'electrodrift',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Special',
+      name: 'Electro Drift',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Electric',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'filletaway',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Fillet Away',
+      pp: 10,
+      priority: 0,
+      target: 'Self',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'flowertrick',
+    {
+      accuracy: 100,
+      basePower: '70',
+      category: 'Physical',
+      name: 'Flower Trick',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Grass',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'gigatonhammer',
+    {
+      accuracy: 100,
+      basePower: '160',
+      category: 'Physical',
+      name: 'Gigaton Hammer',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Steel',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'glaiverush',
+    {
+      accuracy: 100,
+      basePower: '120',
+      category: 'Physical',
+      name: 'Glaive Rush',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Dragon',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'hyperdrill',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      name: 'Hyper Drill',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Normal',
+      contestType: 'Clever',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'icespinner',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      name: 'Ice Spinner',
+      pp: 15,
+      priority: 0,
+      target: 'Normal',
+      type: 'Ice',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'jetpunch',
+    {
+      accuracy: 100,
+      basePower: '60',
+      category: 'Physical',
+      name: 'Jet Punch',
+      pp: 15,
+      priority: 1,
+      target: 'Normal',
+      type: 'Water',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'kowtowcleave',
+    {
+      accuracy: 100,
+      basePower: '85',
+      category: 'Physical',
+      name: 'Kowtow Cleave',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Dark',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'lastrespects',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Physical',
+      name: 'Last Respects',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Ghost',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'luminacrash',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      name: 'Lumina Crash',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Psychic',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'magicaltorque',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      isNonstandard: 'Unobtainable',
+      name: 'Magical Torque',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fairy',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'makeitrain',
+    {
+      accuracy: 100,
+      basePower: '120',
+      category: 'Special',
+      name: 'Make It Rain',
+      pp: 5,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Steel',
+      contestType: 'Beautiful',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'mortalspin',
+    {
+      accuracy: 100,
+      basePower: '30',
+      category: 'Physical',
+      name: 'Mortal Spin',
+      pp: 15,
+      priority: 0,
+      target: 'Adjacent Foes',
+      type: 'Poison',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'noxioustorque',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      isNonstandard: 'Unobtainable',
+      name: 'Noxious Torque',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Poison',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'orderup',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      name: 'Order Up',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Dragon',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'populationbomb',
+    {
+      accuracy: 90,
+      basePower: '20',
+      category: 'Physical',
+      name: 'Population Bomb',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'pounce',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Physical',
+      name: 'Pounce',
+      pp: 20,
+      priority: 0,
+      target: 'Normal',
+      type: 'Bug',
+      contestType: 'Cute',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'ragefist',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Physical',
+      name: 'Rage Fist',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Ghost',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'ragingbull',
+    {
+      accuracy: 100,
+      basePower: '90',
+      category: 'Physical',
+      name: 'Raging Bull',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'revivalblessing',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Revival Blessing',
+      pp: 1,
+      priority: 0,
+      target: 'Self',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'ruination',
+    {
+      accuracy: 90,
+      basePower: '0',
+      category: 'Special',
+      name: 'Ruination',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Dark',
+      contestType: 'Tough',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'saltcure',
+    {
+      accuracy: 100,
+      basePower: '40',
+      category: 'Physical',
+      name: 'Salt Cure',
+      pp: 15,
+      priority: 0,
+      target: 'Normal',
+      type: 'Rock',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'shedtail',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Shed Tail',
+      pp: 10,
+      priority: 0,
+      target: 'Self',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'silktrap',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Silk Trap',
+      pp: 10,
+      priority: 4,
+      target: 'Self',
+      type: 'Bug',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'snowscape',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Snowscape',
+      pp: 10,
+      priority: 0,
+      target: 'All',
+      type: 'Ice',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'spicyextract',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Spicy Extract',
+      pp: 15,
+      priority: 0,
+      target: 'Normal',
+      type: 'Grass',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'spinout',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      name: 'Spin Out',
+      pp: 5,
+      priority: 0,
+      target: 'Normal',
+      type: 'Steel',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'terablast',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      name: 'Tera Blast',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'tidyup',
+    {
+      accuracy: 100,
+      basePower: '0',
+      category: 'Status',
+      name: 'Tidy Up',
+      pp: 10,
+      priority: 0,
+      target: 'Self',
+      type: 'Normal',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'torchsong',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      name: 'Torch Song',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Fire',
+      contestType: 'Beautiful',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'trailblaze',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Physical',
+      name: 'Trailblaze',
+      pp: 20,
+      priority: 0,
+      target: 'Normal',
+      type: 'Grass',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'tripledive',
+    {
+      accuracy: 95,
+      basePower: '30',
+      category: 'Physical',
+      name: 'Triple Dive',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Water',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'twinbeam',
+    {
+      accuracy: 100,
+      basePower: '40',
+      category: 'Special',
+      name: 'Twin Beam',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Psychic',
+      contestType: 'Cool',
+      shortDesc: '',
+      desc: ''
+    }
+  ],
+  [
+    'wickedtorque',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      isNonstandard: 'Unobtainable',
+      name: 'Wicked Torque',
+      pp: 10,
+      priority: 0,
+      target: 'Normal',
+      type: 'Dark',
+      shortDesc: '',
+      desc: ''
     }
   ]
 ]);

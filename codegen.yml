@@ -8,7 +8,7 @@ generates:
     config:
       scalars:
         JSONObject: 'Record<PropertyKey, any>'
-      constEnums: true
+      constEnums: false
       immutableTypes: true
       useTypeImports: true
       skipTypename: true

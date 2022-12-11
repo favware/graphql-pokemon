@@ -1,4 +1,5 @@
 import type { TypesEnum } from '#utils/pokemonTypes';
+import type { IsNonStandard } from '#utils/isNonStandardEnum';
 
 export namespace PokemonTypes {
   interface AliasEntry {
@@ -172,7 +173,7 @@ export namespace PokemonTypes {
 
     gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
-    isNonstandard?: string;
+    isNonstandard?: IsNonStandard;
 
     keyItem?: boolean;
 
@@ -198,7 +199,7 @@ export namespace PokemonTypes {
 
     isGMax?: string;
 
-    isNonstandard?: string;
+    isNonstandard?: IsNonStandard;
 
     isZ?: string;
 

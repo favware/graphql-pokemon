@@ -1,4 +1,5 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
+import { IsNonStandard } from '#utils/isNonStandardEnum';
 import { Collection } from '@discordjs/collection';
 
 /** The item in Pokémon */
@@ -16,7 +17,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Abomasite'
     }
   ],
@@ -25,7 +26,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Absolite'
     }
   ],
@@ -42,7 +43,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      name: 'Adamant Orb'
+      name: 'Adamant Orb',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -58,7 +61,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Aerodactylite'
     }
   ],
@@ -67,7 +70,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Aggronite'
     }
   ],
@@ -92,7 +95,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Alakazite'
     }
   ],
@@ -101,7 +104,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Aloraichium Z'
     }
   ],
@@ -110,7 +113,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Altarianite'
     }
   ],
@@ -119,7 +122,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ampharosite'
     }
   ],
@@ -136,7 +139,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Shieldon.',
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Armor Fossil'
     }
   ],
@@ -162,7 +165,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Audinite'
     }
   ],
@@ -188,7 +191,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Banettite'
     }
   ],
@@ -205,7 +208,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Beedrillite'
     }
   ],
@@ -214,7 +217,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Belue Berry'
     }
   ],
@@ -223,7 +226,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Berry'
     }
   ],
@@ -232,6 +235,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Restores 20 HP when at 1/2 max HP or less. Single use.',
       gen: 2,
+      isNonstandard: IsNonStandard.Past,
       name: 'Berry Juice'
     }
   ],
@@ -248,7 +252,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "(Gen 2) On switch-in, raises holder's Attack by 2 and confuses it. Single use.",
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Berserk Gene'
     }
   ],
@@ -273,7 +277,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder is cured if it is confused. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bitter Berry'
     }
   ],
@@ -306,7 +310,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Blastoisinite'
     }
   ],
@@ -315,7 +319,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Blaziken, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Blazikenite'
     }
   ],
@@ -326,7 +330,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       keyItem: true,
       name: 'Blue Orb',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -375,7 +381,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Bug-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bug Gem'
     }
   ],
@@ -384,7 +390,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Bug type.",
       gen: 7,
-      name: 'Bug Memory'
+      name: 'Bug Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -392,7 +400,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Bug move, this item allows it to use a Bug Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Buginium Z'
     }
   ],
@@ -401,7 +409,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Fire type.",
       gen: 5,
-      name: 'Burn Drive'
+      name: 'Burn Drive',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -409,7 +419,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder is cured if it is frozen. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Burnt Berry'
     }
   ],
@@ -418,7 +428,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Cameruptite'
     }
   ],
@@ -443,7 +453,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite X'
     }
   ],
@@ -452,7 +462,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite Y'
     }
   ],
@@ -477,7 +487,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.',
       gen: 4,
-      name: 'Cherish Ball'
+      name: 'Cherish Ball',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -502,7 +514,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Ice type.",
       gen: 5,
-      name: 'Chill Drive'
+      name: 'Chill Drive',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -554,7 +568,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Anorith.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Claw Fossil'
     }
   ],
@@ -596,7 +610,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Cornn Berry'
     }
   ],
@@ -605,7 +619,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Tirtouga.',
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Cover Fossil'
     }
   ],
@@ -614,7 +628,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Crucibelle, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.CAP,
       name: 'Crucibellite'
     }
   ],
@@ -640,6 +654,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
       gen: 4,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Custap Berry',
       aliases: ['custap']
     }
@@ -657,7 +672,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Dark-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dark Gem'
     }
   ],
@@ -666,7 +681,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Dark type.",
       gen: 7,
-      name: 'Dark Memory'
+      name: 'Dark Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -674,7 +691,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Dark move, this item allows it to use a Dark Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Darkinium Z'
     }
   ],
@@ -692,7 +709,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Decidium Z'
     }
   ],
@@ -702,7 +719,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.',
       gen: 3,
       name: 'Deep Sea Scale',
-      shortDesc: 'If held by a Clamperl, its Sp. Def is doubled.'
+      shortDesc: 'If held by a Clamperl, its Sp. Def is doubled.',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -711,7 +730,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.',
       gen: 3,
       name: 'Deep Sea Tooth',
-      shortDesc: 'If held by a Clamperl, its Sp. Atk is doubled.'
+      shortDesc: 'If held by a Clamperl, its Sp. Atk is doubled.',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -727,7 +748,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Diancite'
     }
   ],
@@ -744,7 +765,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Kabuto.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dome Fossil'
     }
   ],
@@ -753,7 +774,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Water type.",
       gen: 5,
-      name: 'Douse Drive'
+      name: 'Douse Drive',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -761,7 +784,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Draco Plate'
     }
   ],
@@ -778,7 +801,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Dragon-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dragon Gem'
     }
   ],
@@ -787,7 +810,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Dragon type.",
       gen: 7,
-      name: 'Dragon Memory'
+      name: 'Dragon Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -795,7 +820,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Seadra into Kingdra when traded.',
       gen: 2,
-      name: 'Dragon Scale'
+      name: 'Dragon Scale',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -803,7 +830,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Dragon move, this item allows it to use a Dragon Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dragonium Z'
     }
   ],
@@ -812,7 +839,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Dread Plate'
     }
   ],
@@ -829,7 +856,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Porygon2 into Porygon-Z when traded.',
       gen: 4,
-      name: 'Dubious Disc'
+      name: 'Dubious Disc',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -837,7 +866,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Durin Berry'
     }
   ],
@@ -863,7 +892,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Earth Plate'
     }
   ],
@@ -872,7 +901,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Eevee with Last Resort, it can use Extreme Evoboost.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Eevium Z'
     }
   ],
@@ -897,7 +926,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Electabuzz into Electivire when traded.',
       gen: 4,
-      name: 'Electirizer'
+      name: 'Electirizer',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -905,7 +936,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Electric-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Electric Gem'
     }
   ],
@@ -914,7 +945,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Electric type.",
       gen: 7,
-      name: 'Electric Memory'
+      name: 'Electric Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -930,7 +963,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has an Electric move, this item allows it to use an Electric Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Electrium Z'
     }
   ],
@@ -947,6 +980,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.',
       gen: 3,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Enigma Berry'
     }
   ],
@@ -972,7 +1006,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Fairy move, this item allows it to use a Fairy Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fairium Z'
     }
   ],
@@ -981,7 +1015,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fairy Gem'
     }
   ],
@@ -990,7 +1024,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Fairy type.",
       gen: 7,
-      name: 'Fairy Memory'
+      name: 'Fairy Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1006,7 +1042,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fighting Gem',
       aliases: ['fightgem']
     }
@@ -1016,7 +1052,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Fighting type.",
       gen: 7,
-      name: 'Fighting Memory'
+      name: 'Fighting Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1024,7 +1062,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Fighting move, this item allows it to use a Fighting Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fightinium Z'
     }
   ],
@@ -1041,7 +1079,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Fire-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fire Gem'
     }
   ],
@@ -1050,7 +1088,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Fire type.",
       gen: 7,
-      name: 'Fire Memory'
+      name: 'Fire Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1067,7 +1107,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Fire move, this item allows it to use a Fire Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Firium Z'
     }
   ],
@@ -1076,7 +1116,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Fist Plate'
     }
   ],
@@ -1093,11 +1133,18 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Flame Plate'
     }
   ],
-  ['floatstone', { desc: "Holder's weight is halved.", gen: 5, name: 'Float Stone' }],
+  [
+    'floatstone',
+    {
+      desc: "Holder's weight is halved.",
+      gen: 5,
+      name: 'Float Stone'
+    }
+  ],
   [
     'flowersweet',
     {
@@ -1111,7 +1158,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Flying Gem',
       aliases: ['flightgem']
     }
@@ -1121,7 +1168,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Flying type.",
       gen: 7,
-      name: 'Flying Memory'
+      name: 'Flying Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1129,7 +1178,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Flying move, this item allows it to use a Flying Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Flyinium Z'
     }
   ],
@@ -1155,7 +1204,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Dino.',
       gen: 8,
-      name: 'Fossilized Bird'
+      name: 'Fossilized Bird',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1163,7 +1214,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Bird.',
       gen: 8,
-      name: 'Fossilized Dino'
+      name: 'Fossilized Dino',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1171,7 +1224,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Dracozolt with Fossilized Dino or Dracovish with Fossilized Fish.',
       gen: 8,
-      name: 'Fossilized Drake'
+      name: 'Fossilized Drake',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1179,7 +1234,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Bird.',
       gen: 8,
-      name: 'Fossilized Fish'
+      name: 'Fossilized Fish',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1195,7 +1252,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Holder moves last in its priority bracket.',
       gen: 4,
-      name: 'Full Incense'
+      name: 'Full Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1212,7 +1271,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.',
       gen: 8,
       name: 'Galarica Cuff',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1221,7 +1282,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.',
       gen: 8,
       name: 'Galarica Wreath',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1229,7 +1292,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Galladite'
     }
   ],
@@ -1246,7 +1309,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Garchompite'
     }
   ],
@@ -1255,7 +1318,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Gardevoirite'
     }
   ],
@@ -1264,7 +1327,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Gengarite'
     }
   ],
@@ -1273,7 +1336,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Ghost-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ghost Gem'
     }
   ],
@@ -1282,7 +1345,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Ghost type.",
       gen: 7,
-      name: 'Ghost Memory'
+      name: 'Ghost Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1290,7 +1355,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Ghost move, this item allows it to use a Ghost Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ghostium Z'
     }
   ],
@@ -1299,7 +1364,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Glalitite'
     }
   ],
@@ -1308,7 +1373,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Restores 30 HP when at 1/2 max HP or less. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Gold Berry'
     }
   ],
@@ -1325,7 +1390,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Grass Gem'
     }
   ],
@@ -1334,7 +1399,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Grass type.",
       gen: 7,
-      name: 'Grass Memory'
+      name: 'Grass Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1342,7 +1409,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Grass move, this item allows it to use a Grass Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Grassium Z'
     }
   ],
@@ -1383,7 +1450,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      name: 'Griseous Orb'
+      name: 'Griseous Orb',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1391,7 +1460,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Ground-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ground Gem'
     }
   ],
@@ -1400,7 +1469,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Ground type.",
       gen: 7,
-      name: 'Ground Memory'
+      name: 'Ground Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1408,7 +1479,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Ground move, this item allows it to use a Ground Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Groundium Z'
     }
   ],
@@ -1417,7 +1488,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Gyaradosite'
     }
   ],
@@ -1475,7 +1546,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Omanyte.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Helix Fossil'
     }
   ],
@@ -1484,7 +1555,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Heracronite'
     }
   ],
@@ -1501,7 +1572,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Houndoominite'
     }
   ],
@@ -1526,7 +1597,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder is cured if it is burned. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ice Berry'
     }
   ],
@@ -1535,7 +1606,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Ice-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ice Gem'
     }
   ],
@@ -1544,7 +1615,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Ice type.",
       gen: 7,
-      name: 'Ice Memory'
+      name: 'Ice Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1561,7 +1634,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Icicle Plate'
     }
   ],
@@ -1570,7 +1643,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has an Ice move, this item allows it to use an Ice Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Icium Z'
     }
   ],
@@ -1587,7 +1660,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Incinium Z'
     }
   ],
@@ -1596,7 +1669,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Insect Plate'
     }
   ],
@@ -1613,7 +1686,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Iron Plate'
     }
   ],
@@ -1622,6 +1695,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
       gen: 4,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Jaboca Berry'
     }
   ],
@@ -1630,7 +1704,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Tyrunt.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Jaw Fossil'
     }
   ],
@@ -1639,7 +1713,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Kangaskhanite'
     }
   ],
@@ -1664,6 +1738,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
       gen: 6,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Kee Berry'
     }
   ],
@@ -1689,7 +1764,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Kommonium Z'
     }
   ],
@@ -1714,7 +1789,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Latiasite'
     }
   ],
@@ -1723,7 +1798,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Latiosite'
     }
   ],
@@ -1732,7 +1807,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 3,
-      name: 'Lax Incense'
+      name: 'Lax Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1749,7 +1826,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "If held by a Farfetch'd or Sirfetch'd, its critical hit ratio is raised by 2 stages.",
       gen: 8,
-      name: 'Leek'
+      name: 'Leek',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1825,7 +1904,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lopunnite'
     }
   ],
@@ -1850,7 +1929,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lucarionite'
     }
   ],
@@ -1859,7 +1938,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Chansey, its critical hit ratio is raised by 2 stages.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lucky Punch'
     }
   ],
@@ -1885,7 +1964,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lunalium Z'
     }
   ],
@@ -1902,7 +1981,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      name: 'Lustrous Orb'
+      name: 'Lustrous Orb',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1918,7 +1999,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lycanium Z'
     }
   ],
@@ -1959,7 +2040,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Magost Berry'
     }
   ],
@@ -1968,7 +2049,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be given to or taken from a Pokémon, except by Covet/Knock Off/Thief.',
       gen: 2,
-      name: 'Mail'
+      name: 'Mail',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1985,7 +2068,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Manectite'
     }
   ],
@@ -1994,6 +2077,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
       gen: 6,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Maranga Berry'
     }
   ],
@@ -2002,7 +2086,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Marshadium Z'
     }
   ],
@@ -2019,7 +2103,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mawilite'
     }
   ],
@@ -2036,7 +2120,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Meadow Plate'
     }
   ],
@@ -2045,7 +2129,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Medichamite'
     }
   ],
@@ -2062,7 +2146,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Metagrossite'
     }
   ],
@@ -2096,7 +2180,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mew with Psychic, it can use Genesis Supernova.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mewnium Z'
     }
   ],
@@ -2105,7 +2189,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite X'
     }
   ],
@@ -2114,7 +2198,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite Y'
     }
   ],
@@ -2123,6 +2207,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
       gen: 4,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Micle Berry'
     }
   ],
@@ -2131,7 +2216,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "If held by a Mimikyu with Play Rough, it can use Let's Snuggle Forever.",
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mimikium Z'
     }
   ],
@@ -2140,7 +2225,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Mind Plate'
     }
   ],
@@ -2149,7 +2234,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder wakes up if it is asleep. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mint Berry'
     }
   ],
@@ -2158,7 +2243,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder cures itself if it is confused or has a status condition. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Miracle Berry'
     }
   ],
@@ -2217,7 +2302,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "(Gen 2) Restores 5 PP to the first of the holder's moves to reach 0 PP. Single use.",
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mystery Berry'
     }
   ],
@@ -2234,7 +2319,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Nanab Berry'
     }
   ],
@@ -2267,7 +2352,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Nomel Berry'
     }
   ],
@@ -2276,7 +2361,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Normal Gem'
     }
   ],
@@ -2285,7 +2370,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Normal move, this item allows it to use a Normal Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Normalium Z'
     }
   ],
@@ -2303,7 +2388,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Psychic-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Odd Incense'
+      name: 'Odd Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2311,7 +2398,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Aerodactyl.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Old Amber'
     }
   ],
@@ -2336,7 +2423,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder cures itself if it is paralyzed. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'PRZ Cure Berry'
     }
   ],
@@ -2345,7 +2432,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: '(Gen 2) Holder is cured if it is poisoned. Single use.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'PSN Cure Berry'
     }
   ],
@@ -2354,7 +2441,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pamtre Berry'
     }
   ],
@@ -2363,7 +2450,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A special Poké Ball for the Pal Park.',
       gen: 4,
-      name: 'Park Ball'
+      name: 'Park Ball',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2412,7 +2501,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pidgeotite'
     }
   ],
@@ -2421,7 +2510,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pikachu with Volt Tackle, it can use Catastropika.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pikanium Z'
     }
   ],
@@ -2430,7 +2519,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pikashunium Z'
     }
   ],
@@ -2447,7 +2536,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pink Bow'
     }
   ],
@@ -2456,7 +2545,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pinsirite'
     }
   ],
@@ -2465,6 +2554,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
       gen: 6,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Pixie Plate'
     }
   ],
@@ -2473,7 +2563,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Archen.',
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Plume Fossil'
     }
   ],
@@ -2490,7 +2580,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Poison-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Poison Gem'
     }
   ],
@@ -2499,7 +2589,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Poison type.",
       gen: 7,
-      name: 'Poison Memory'
+      name: 'Poison Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2507,7 +2599,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Poison move, this item allows it to use a Poison Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Poisonium Z'
     }
   ],
@@ -2524,7 +2616,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Polkadot Bow'
     }
   ],
@@ -2613,7 +2705,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Primarium Z'
     }
   ],
@@ -2622,7 +2714,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Feebas into Milotic when traded.',
       gen: 5,
-      name: 'Prism Scale'
+      name: 'Prism Scale',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2638,7 +2732,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Rhydon into Rhyperior when traded.',
       gen: 4,
-      name: 'Protector'
+      name: 'Protector',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2646,7 +2742,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Psychic-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Psychic Gem'
     }
   ],
@@ -2655,7 +2751,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Psychic type.",
       gen: 7,
-      name: 'Psychic Memory'
+      name: 'Psychic Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2671,7 +2769,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Psychic move, this item allows it to use a Psychic Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Psychium Z'
     }
   ],
@@ -2721,7 +2819,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rabuta Berry'
     }
   ],
@@ -2755,7 +2853,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Razor Fang',
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
     }
@@ -2765,7 +2863,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Razz Berry'
     }
   ],
@@ -2774,7 +2872,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Dusclops into Dusknoir when traded.',
       gen: 4,
-      name: 'Reaper Cloth'
+      name: 'Reaper Cloth',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2792,7 +2892,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       keyItem: true,
       name: 'Red Orb',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2832,7 +2934,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Rock-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rock Gem'
     }
   ],
@@ -2841,7 +2943,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Rock-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Rock Incense'
+      name: 'Rock Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2849,7 +2953,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Rock type.",
       gen: 7,
-      name: 'Rock Memory'
+      name: 'Rock Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2857,7 +2963,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Rock move, this item allows it to use a Rock Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rockium Z'
     }
   ],
@@ -2866,7 +2972,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Grass-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Rose Incense'
+      name: 'Rose Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2890,7 +2998,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Lileep.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Root Fossil'
     }
   ],
@@ -2907,6 +3015,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
       gen: 4,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Rowap Berry'
     }
   ],
@@ -2915,7 +3024,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Zamazenta, this item changes its forme to Crowned Shield.',
       gen: 8,
-      name: 'Rusted Shield'
+      name: 'Rusted Shield',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2923,7 +3034,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Zacian, this item changes its forme to Crowned Sword.',
       gen: 8,
-      name: 'Rusted Sword'
+      name: 'Rusted Sword',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2931,7 +3044,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sablenite'
     }
   ],
@@ -2940,7 +3053,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Spritzee into Aromatisse when traded.',
       gen: 6,
-      name: 'Sachet'
+      name: 'Sachet',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2965,7 +3080,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Amaura.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sail Fossil'
     }
   ],
@@ -2983,7 +3098,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Salamencite'
     }
   ],
@@ -2992,7 +3107,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sceptile, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sceptilite'
     }
   ],
@@ -3001,7 +3116,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Scizorite'
     }
   ],
@@ -3018,7 +3133,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 3,
-      name: 'Sea Incense'
+      name: 'Sea Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -3034,7 +3151,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sharpedonite'
     }
   ],
@@ -3068,7 +3185,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Electric type.",
       gen: 5,
-      name: 'Shock Drive'
+      name: 'Shock Drive',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3109,7 +3228,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Cranidos.',
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Skull Fossil'
     }
   ],
@@ -3118,7 +3237,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Sky Plate'
     }
   ],
@@ -3127,7 +3246,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Slowbronite'
     }
   ],
@@ -3144,7 +3263,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Snorlium Z'
     }
   ],
@@ -3169,7 +3288,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Solganium Z'
     }
   ],
@@ -3178,7 +3297,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
       gen: 3,
-      name: 'Soul Dew'
+      name: 'Soul Dew',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3194,7 +3315,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Spelon Berry'
     }
   ],
@@ -3203,7 +3324,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Splash Plate'
     }
   ],
@@ -3212,7 +3333,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Spooky Plate'
     }
   ],
@@ -3237,7 +3358,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Steel-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Steel Gem'
     }
   ],
@@ -3246,7 +3367,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Steel type.",
       gen: 7,
-      name: 'Steel Memory'
+      name: 'Steel Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3254,7 +3377,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Steel move, this item allows it to use a Steel Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Steelium Z'
     }
   ],
@@ -3271,7 +3394,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Steelixite'
     }
   ],
@@ -3280,7 +3403,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "If held by a Farfetch'd, its critical hit ratio is raised by 2 stages.",
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Stick'
     }
   ],
@@ -3297,7 +3420,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Stone Plate'
     }
   ],
@@ -3331,7 +3454,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Swampert, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Swampertite'
     }
   ],
@@ -3364,7 +3487,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "If held by a Tapu with Nature's Madness, it can use Guardian of Alola.",
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Tapunium Z'
     }
   ],
@@ -3389,7 +3512,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Cubone or a Marowak, its Attack is doubled.',
       gen: 2,
-      name: 'Thick Club'
+      name: 'Thick Club',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3430,7 +3555,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Toxic Plate'
     }
   ],
@@ -3447,7 +3572,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Tyranitarite'
     }
   ],
@@ -3464,7 +3589,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ultranecrozium Z'
     }
   ],
@@ -3473,7 +3598,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Porygon into Porygon2 when traded.',
       gen: 2,
-      name: 'Up-Grade'
+      name: 'Up-Grade',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3490,7 +3617,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Venusaurite'
     }
   ],
@@ -3499,7 +3626,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.',
       gen: 8,
-      isNonstandard: 'CAP',
+      isNonstandard: IsNonStandard.CAP,
       name: 'Vile Vial'
     }
   ],
@@ -3516,7 +3643,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Water-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Water Gem'
     }
   ],
@@ -3525,7 +3652,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Water type.",
       gen: 7,
-      name: 'Water Memory'
+      name: 'Water Memory',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3542,7 +3671,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
       gen: 7,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Waterium Z'
     }
   ],
@@ -3551,7 +3680,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Watmel Berry'
     }
   ],
@@ -3560,7 +3689,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Wave Incense'
+      name: 'Wave Incense',
+
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -3577,7 +3708,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Wepear Berry'
     }
   ],
@@ -3586,7 +3717,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Swirlix into Slurpuff when traded.',
       gen: 6,
-      name: 'Whipped Dream'
+      name: 'Whipped Dream',
+
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -3635,7 +3768,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
       gen: 4,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Zap Plate'
     }
   ],
@@ -3652,7 +3785,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'This folding bike allows you to perform actions such as wheelies and bunny hops.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Acro Bike',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png'
@@ -3693,7 +3826,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A ticket required to board the ship to Birth Island. It glows beautifully.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Aurora Ticket',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png'
@@ -3753,7 +3886,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A pouch for carrying Berries. It is attached to the bag's compartment for important items.",
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Berry Pouch',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png'
@@ -3774,7 +3907,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Take this voucher to the BIKE SHOP in CERULEAN CITY and exchange it for a bicycle.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Bike Voucher',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png'
@@ -3935,7 +4068,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A package that contains DEVON's machine parts.",
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Devon Goods',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png'
@@ -3956,7 +4089,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Devon Scope',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png'
@@ -3967,7 +4100,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A device made by Devon Corporation that provides oxygen to users during the use of Dive.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Devon Scuba Gear',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png'
@@ -3988,7 +4121,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "This high-tech machine shows the location of invisible items. It's attached to the head when in use.",
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Dowsing Machine',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png'
@@ -4030,7 +4163,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Egg Card',
       shortDesc: 'Might be used at the Pokémon Communication Centre.'
@@ -4091,7 +4224,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'The ticket required for sailing on a ferry to the Southern Island. Does Norman, the Petalburg Gym Leader, know a secret?!',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Eon Ticket',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png'
@@ -4132,7 +4265,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A device that enables you to recall what you've heard and seen about famous people.",
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Fame Checker',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png'
@@ -4183,7 +4316,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'The mysterious BALL.',
       gen: 2,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'GS Ball',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png'
@@ -4204,7 +4337,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Nifty goggles to protect eyes from desert sandstorms.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Go-Goggles',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png'
@@ -4355,7 +4488,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.',
       gen: 1,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'itemfinder',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png'
@@ -4466,7 +4599,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'An extremely important letter to Steven from the President of Devon Corporation.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Letter',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png'
@@ -4557,7 +4690,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'This folding Bike more than doubles your movement speed.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Mach Bike',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png'
@@ -4578,7 +4711,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A medal-like item in the same shape as Team Magma's mark.",
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Magma Emblem',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png'
@@ -4629,7 +4762,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Mega Bracelet',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
@@ -4660,7 +4793,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it's shining with seven colors of light.",
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Meteorite',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png'
@@ -4701,7 +4834,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'MysticTicket',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png'
@@ -4741,7 +4874,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
       gen: 1,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: "Oak's Parcel",
       specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png"
@@ -4782,7 +4915,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A chart that can take you to Faraway Island.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Old Sea Map',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png'
@@ -4933,7 +5066,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A case for holding Pokéblock made with a Berry Blender.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Pokéblock Case',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png'
@@ -4964,7 +5097,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A jar for storing Berry Powder made using a Berry Crusher.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Powder Jar',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png'
@@ -5055,7 +5188,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A pass for ferries between Vermilion and the Sevii Islands. It features a drawing of a rainbow.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Rainbow Pass',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png'
@@ -5126,7 +5259,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A key that opens a door inside the Abandoned Ship.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Rm. 1 Key',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png'
@@ -5137,7 +5270,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A key that opens a door inside the Abandoned Ship.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Rm. 2 Key',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png'
@@ -5148,7 +5281,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A key that opens a door inside the Abandoned Ship.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Rm. 4 Key',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png'
@@ -5159,7 +5292,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A key that opens a door inside the Abandoned Ship.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Rm. 6 Key',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png'
@@ -5200,7 +5333,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'An exquisitely beautiful gem that has a red glow. It symbolizes passion.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Ruby',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png'
@@ -5231,7 +5364,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'An exquisitely beautiful gem that has a blue glow. It symbolizes honesty.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Sapphire',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png'
@@ -5242,7 +5375,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A device found inside Sea Mauville.',
       gen: 6,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Scanner',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png'
@@ -5343,7 +5476,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A sack used to gather and hold volcanic ash.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'sootsack',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png'
@@ -5444,7 +5577,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "A case that holds TMs and HMs. It is attached to the Bag's compartment for important items.",
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'TM Case',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png'
@@ -5475,7 +5608,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A television set that is tuned to a program with useful tips for novice Trainers.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Teachy TV',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png'
@@ -5516,7 +5649,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'tripass',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
@@ -5557,7 +5690,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
       gen: 3,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Wailmer Pail',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'

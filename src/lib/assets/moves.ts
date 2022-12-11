@@ -1,4 +1,5 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
+import { IsNonStandard } from '#utils/isNonStandardEnum';
 import { Collection } from '@discordjs/collection';
 
 /** The moves in Pokémon */
@@ -11,7 +12,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'Has a very high chance for a critical hit.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'pikashuniumz',
       name: '10,000,000 Volt Thunderbolt',
       pp: 1,
@@ -94,7 +95,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'poisoniumz',
       name: 'Acid Downpour',
       pp: 1,
@@ -184,7 +185,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -259,7 +261,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'fightiniumz',
       name: 'All-Out Pummeling',
       pp: 1,
@@ -310,7 +312,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Tough',
       desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Anchor Shot',
       pp: 20,
       priority: 0,
@@ -425,7 +427,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: "Every Pokémon in the user's party is cured of its non-volatile status condition. Active Pokémon with the Sap Sipper Ability are not cured, unless they are the user.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Aromatherapy',
       pp: 5,
       priority: 0,
@@ -457,7 +459,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Cute',
       desc: "A random move among those known by the user's party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Assist',
       pp: 20,
       priority: 0,
@@ -570,7 +572,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       desc: "Has a 100% chance to raise the user's Speed by 1 stage. If the user is a Morpeko in Full Belly Mode, this move is Electric type. If the user is a Morpeko in Hangry Mode, this move is Dark type. This move cannot be used successfully unless the user's current form, while considering Transform, is Full Belly or Hangry Mode Morpeko.",
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Aura Wheel',
       pp: 10,
       priority: 0,
@@ -618,7 +620,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Autotomize',
       pp: 15,
       priority: 0,
@@ -674,7 +676,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Summons Reflect.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -705,7 +708,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -716,7 +720,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Barrage',
       pp: 20,
       priority: 0,
@@ -733,7 +737,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Cool',
       desc: "Raises the user's Defense by 2 stages.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Barrier',
       pp: 20,
       priority: 0,
@@ -771,7 +775,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: -3,
       shortDesc: 'Burns on contact with the user before it moves.',
       target: 'Normal',
-      type: 'Flying'
+      type: 'Flying',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -860,7 +865,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bestow',
       pp: 15,
       priority: 0,
@@ -876,7 +881,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bide',
       pp: 10,
       priority: 1,
@@ -931,7 +936,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has a 30% chance to leave the target with frostbite.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -941,7 +947,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'darkiniumz',
       name: 'Black Hole Eclipse',
       pp: 1,
@@ -997,7 +1003,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has a 30% chance to leave the target with frostbite.',
       target: 'Adjacent Foes',
-      type: 'Flying'
+      type: 'Flying',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1039,7 +1046,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'grassiumz',
       name: 'Bloom Doom',
       pp: 1,
@@ -1059,7 +1066,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       desc: 'Has a 20% chance to burn the target.',
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Blue Flare',
       pp: 5,
       priority: 0,
@@ -1108,7 +1115,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       desc: 'Power doubles if the user moves before the target.',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bolt Beak',
       pp: 10,
       priority: 0,
@@ -1126,7 +1133,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       desc: 'Has a 20% chance to paralyze the target.',
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bolt Strike',
       pp: 5,
       priority: 0,
@@ -1143,7 +1150,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: 'Has a 10% chance to make the target flinch.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bone Club',
       pp: 20,
       priority: 0,
@@ -1177,7 +1184,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bonemerang',
       pp: 10,
       priority: 0,
@@ -1231,7 +1238,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -1290,7 +1298,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'normaliumz',
       name: 'Breakneck Blitz',
       pp: 1,
@@ -1358,7 +1366,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cute',
       desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Bubble',
       pp: 30,
       priority: 0,
@@ -1528,7 +1536,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to paralyze the foe.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -1554,7 +1563,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Camouflage',
       pp: 20,
       priority: 0,
@@ -1570,7 +1579,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Captivate',
       pp: 20,
       priority: 0,
@@ -1587,7 +1596,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'pikaniumz',
       name: 'Catastropika',
       pp: 1,
@@ -1610,7 +1619,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'For 4 turns, deals damage at the end of each turn.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1693,7 +1703,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to confuse the target.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -1704,7 +1715,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: "Ignores the target's stat stage changes, including evasiveness.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Chip Away',
       pp: 20,
       priority: 0,
@@ -1725,7 +1736,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "User loses 50% of its max HP as recoil and user's action speed is lowered.",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -1752,7 +1764,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Clamp',
       pp: 15,
       priority: 0,
@@ -1770,7 +1782,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Tough',
       desc: "Lowers the user's Defense by 1 stage.",
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Clanging Scales',
       pp: 5,
       priority: 0,
@@ -1786,7 +1798,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage in exchange for the user losing 33% of its maximum HP, rounded down. Fails if the user would faint or if its Attack, Defense, Special Attack, Special Defense, and Speed stat stages would not change.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Clangorous Soul',
       pp: 5,
       priority: 0,
@@ -1802,7 +1814,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '185',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'kommoniumz',
       name: 'Clangorous Soulblaze',
       pp: 1,
@@ -1887,7 +1899,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Comet Punch',
       pp: 15,
       priority: 0,
@@ -1953,7 +1965,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Constrict',
       pp: 35,
       priority: 0,
@@ -1969,7 +1981,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'rockiumz',
       name: 'Continental Crush',
       pp: 1,
@@ -1987,7 +1999,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Conversion',
       pp: 30,
       priority: 0,
@@ -2003,7 +2015,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Conversion 2',
       pp: 30,
       priority: 0,
@@ -2037,7 +2049,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Tough',
       desc: "If the user moves after the target, the target's Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.",
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Core Enforcer',
       pp: 10,
       priority: 0,
@@ -2054,7 +2066,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'steeliumz',
       name: 'Corkscrew Crash',
       pp: 1,
@@ -2093,7 +2105,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Defense and Sp. Def by 1.",
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2200,7 +2213,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Crafty Shield',
       pp: 10,
       priority: 3,
@@ -2284,7 +2297,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Crush Grip',
       pp: 5,
       priority: 0,
@@ -2357,7 +2370,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: 'Darkrai: Puts the foe(s) to sleep.',
       target: 'Adjacent Foes',
       type: 'Dark',
-      aliases: ['dv']
+      aliases: ['dv'],
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -2401,7 +2415,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       desc: "Raises the target's Attack and Special Attack by 2 stages.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Decorate',
       pp: 15,
       priority: 0,
@@ -2498,7 +2512,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'dragoniumz',
       name: 'Devastating Drake',
       pp: 1,
@@ -2556,7 +2570,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has a 50% chance to inflict Poison, Paralyze, or cause Drowsiness on the target',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -2635,7 +2650,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: 'Has a 20% chance to confuse the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dizzy Punch',
       pp: 10,
       priority: 0,
@@ -2652,7 +2667,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Beautiful',
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Doom Desire',
       pp: 5,
       priority: 0,
@@ -2686,7 +2701,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Clever',
       desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 30% chance to make the target flinch.",
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Double Iron Bash',
       pp: 5,
       priority: 0,
@@ -2719,7 +2734,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Double Slap',
       pp: 10,
       priority: 0,
@@ -2885,7 +2900,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Tough',
       desc: 'No additional effect.',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dragon Hammer',
       pp: 15,
       priority: 0,
@@ -2919,7 +2934,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'Deals 40 HP of damage to the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dragon Rage',
       pp: 10,
       priority: 0,
@@ -3067,7 +3082,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Dual Chop',
       pp: 15,
       priority: 0,
@@ -3212,7 +3227,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Egg Bomb',
       pp: 10,
       priority: 0,
@@ -3244,7 +3259,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Electrify',
       pp: 20,
       priority: 0,
@@ -3293,7 +3308,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Embargo',
       pp: 15,
       priority: 0,
@@ -3427,7 +3442,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "High critical hit chance. Raises user's action speed",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -3438,7 +3454,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       desc: 'If this move is successful, the user must recharge on the following turn and cannot select a move.',
       maxMovePower: 150,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Eternabeam',
       pp: 10,
       priority: 0,
@@ -3502,7 +3518,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'eeviumz',
       name: 'Extreme Evoboost',
       pp: 1,
@@ -3685,7 +3701,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Clever',
       desc: 'This move does not check accuracy.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Feint Attack',
       pp: 20,
       priority: 0,
@@ -3886,7 +3902,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       desc: 'Power doubles if the user moves before the target.',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fishious Rend',
       pp: 10,
       priority: 0,
@@ -3935,7 +3951,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Special',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Flame Burst',
       pp: 15,
       priority: 0,
@@ -4021,7 +4037,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       desc: "Lowers the target's accuracy by 1 stage.",
       isFieldMove:
         'The Pokémon is able to light up dark caverns. Flash is taught to Pokémon with HM05 in the first three generations, and with TM70 since Generation IV.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Flash',
       pp: 20,
       priority: 0,
@@ -4123,7 +4139,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Flying'
+      type: 'Flying',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -4133,7 +4150,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Floral Healing',
       pp: 10,
       priority: 0,
@@ -4149,7 +4166,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Flower Shield',
       pp: 10,
       priority: 0,
@@ -4279,7 +4296,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Foresight',
       pp: 40,
       priority: 0,
@@ -4295,7 +4312,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: "Forest's Curse",
       pp: 20,
       priority: 0,
@@ -4328,7 +4345,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Beautiful',
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Freeze Shock',
       pp: 5,
       priority: 0,
@@ -4381,7 +4398,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Eliminates all stat changes.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -4424,7 +4442,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: "Power is equal to the greater of ((255 - user's Happiness) * 2/5), rounded down, or 1.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Frustration',
       pp: 20,
       priority: 0,
@@ -4492,7 +4510,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fusion Bolt',
       pp: 5,
       priority: 0,
@@ -4509,7 +4527,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Beautiful',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Fusion Flare',
       pp: 5,
       priority: 0,
@@ -4558,7 +4576,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Clever',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Gear Grind',
       pp: 15,
       priority: 0,
@@ -4575,7 +4593,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Gear Up',
       pp: 20,
       priority: 0,
@@ -4592,7 +4610,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'The terrain becomes Psychic Terrain.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'mewniumz',
       name: 'Genesis Supernova',
       pp: 1,
@@ -4610,7 +4628,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Geomancy',
       pp: 10,
       priority: 0,
@@ -4658,7 +4676,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'electriumz',
       name: 'Gigavolt Havoc',
       pp: 1,
@@ -4693,7 +4711,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 120,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Glaciate',
       pp: 10,
       priority: 0,
@@ -4731,7 +4749,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Summons Light Screen.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -4747,7 +4766,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: slp or psn or par.',
       target: 'Adjacent Foes',
-      type: 'Bug'
+      type: 'Bug',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4763,7 +4783,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4779,7 +4800,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: bound 4-5 turns.',
       target: 'Adjacent Foes',
-      type: 'Fire'
+      type: 'Fire',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4795,7 +4817,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: Crit Ratio +1.',
       target: 'Adjacent Foes',
-      type: 'Fighting'
+      type: 'Fighting',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4811,7 +4834,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: infatuated.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4827,7 +4851,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: last move -2 PP.',
       target: 'Adjacent Foes',
-      type: 'Dragon'
+      type: 'Dragon',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4843,7 +4868,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Always 160 power. Ignores Abilities.',
       target: 'Adjacent Foes',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4859,7 +4885,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: +1/6 max HP.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4875,7 +4902,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1 evasiveness.',
       target: 'Adjacent Foes',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4891,7 +4919,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       target: 'Adjacent Foes',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4907,7 +4936,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       target: 'Adjacent Foes',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4923,7 +4953,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: paralyzed.',
       target: 'Adjacent Foes',
-      type: 'Electric'
+      type: 'Electric',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4939,7 +4970,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       target: 'Adjacent Foes',
-      type: 'Fire'
+      type: 'Fire',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4955,7 +4987,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Ends Terrain, hazards.',
       target: 'Adjacent Foes',
-      type: 'Flying'
+      type: 'Flying',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4971,7 +5004,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Always 160 power. Ignores Abilities.',
       target: 'Adjacent Foes',
-      type: 'Fire'
+      type: 'Fire',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -4987,7 +5021,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -2 Speed.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5003,7 +5038,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: confused.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5019,7 +5055,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Starts Gravity.',
       target: 'Adjacent Foes',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5035,7 +5072,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Always 160 power. Ignores Abilities.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5051,7 +5089,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: poisoned.',
       target: 'Adjacent Foes',
-      type: 'Poison'
+      type: 'Poison',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5067,7 +5106,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: Tormented.',
       target: 'Adjacent Foes',
-      type: 'Steel'
+      type: 'Steel',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5083,7 +5123,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: Stealth Rock.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5099,7 +5140,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: psn or par.',
       target: 'Adjacent Foes',
-      type: 'Electric'
+      type: 'Electric',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5115,7 +5157,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: status cured.',
       target: 'Adjacent Foes',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5131,7 +5174,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: trapped.',
       target: 'Adjacent Foes',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5147,7 +5191,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Bypasses Max Guard.',
       target: 'Adjacent Foes',
-      type: 'Dark'
+      type: 'Dark',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5163,7 +5208,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Bypasses Max Guard.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5179,7 +5225,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. 50% restores Berries.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5195,7 +5242,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Allies: Aurora Veil.',
       target: 'Adjacent Foes',
-      type: 'Ice'
+      type: 'Ice',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5211,7 +5259,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: trapped.',
       target: 'Adjacent Foes',
-      type: 'Ground'
+      type: 'Ground',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5227,7 +5276,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: confused.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5243,7 +5293,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Target: 50% Yawn.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5259,7 +5310,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: Steel hazard.',
       target: 'Adjacent Foes',
-      type: 'Steel'
+      type: 'Steel',
+      isNonstandard: IsNonStandard.Gigantamax
     }
   ],
   [
@@ -5303,7 +5355,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: 'Causes the target to fall asleep.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Grass Whistle',
       pp: 15,
       priority: 0,
@@ -5413,7 +5465,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Grudge',
       pp: 5,
       priority: 0,
@@ -5459,7 +5511,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Special',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'tapuniumz',
       name: 'Guardian of Alola',
       pp: 1,
@@ -5543,7 +5595,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Hail',
       pp: 10,
       priority: 0,
@@ -5625,7 +5677,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       maxMovePower: 140,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Head Charge',
       pp: 15,
       priority: 0,
@@ -5697,7 +5749,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Cures the user's party of all status conditions.",
       target: "Ally's Side",
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -5707,7 +5760,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Heal Block',
       pp: 15,
       priority: 0,
@@ -5724,7 +5777,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Heal Order',
       pp: 10,
       priority: 0,
@@ -5772,7 +5825,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: 'Has a 30% chance to make the target flinch.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Heart Stamp',
       pp: 25,
       priority: 0,
@@ -5887,7 +5940,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power',
       pp: 15,
@@ -5906,7 +5959,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Bug',
       pp: 15,
@@ -5925,7 +5978,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Dark',
       pp: 15,
@@ -5944,7 +5997,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Dragon',
       pp: 15,
@@ -5963,7 +6016,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Electric',
       pp: 15,
@@ -5982,7 +6035,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Fighting',
       pp: 15,
@@ -6001,7 +6054,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Fire',
       pp: 15,
@@ -6020,7 +6073,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Flying',
       pp: 15,
@@ -6039,7 +6092,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Ghost',
       pp: 15,
@@ -6058,7 +6111,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Grass',
       pp: 15,
@@ -6077,7 +6130,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Ground',
       pp: 15,
@@ -6096,7 +6149,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Ice',
       pp: 15,
@@ -6115,7 +6168,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Poison',
       pp: 15,
@@ -6134,7 +6187,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Psychic',
       pp: 15,
@@ -6153,7 +6206,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Rock',
       pp: 15,
@@ -6172,7 +6225,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Steel',
       pp: 15,
@@ -6191,7 +6244,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: "This move's type depends on the user's individual values (IVs), and can be any type but Fairy and Normal.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Hidden Power Water',
       pp: 15,
@@ -6406,7 +6459,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'wateriumz',
       name: 'Hydro Vortex',
       pp: 1,
@@ -6447,7 +6500,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -6522,7 +6576,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '30',
       category: 'Physical',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ice Ball',
       pp: 20,
       priority: 0,
@@ -6556,7 +6610,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Beautiful',
       maxMovePower: 130,
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ice Burn',
       pp: 5,
       priority: 0,
@@ -6727,7 +6781,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has a 30% chance to burn. Power doubled if target has status condition.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -6754,7 +6809,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'firiumz',
       name: 'Inferno Overdrive',
       pp: 1,
@@ -6822,7 +6877,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Beautiful',
       desc: 'Causes Normal-type moves to become Electric type this turn.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ion Deluge',
       pp: 25,
       priority: 1,
@@ -6921,7 +6976,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Jump Kick',
       pp: 10,
       priority: 0,
@@ -6953,7 +7008,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: 'Has a higher chance for a critical hit.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Karate Chop',
       pp: 25,
       priority: 0,
@@ -6970,7 +7025,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: "Lowers the target's accuracy by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Kinesis',
       pp: 15,
       priority: 0,
@@ -6987,7 +7042,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Cool',
       desc: "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: "King's Shield",
       pp: 10,
       priority: 4,
@@ -7021,7 +7076,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Beautiful',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: "Land's Wrath",
       pp: 10,
@@ -7038,7 +7093,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Laser Focus',
       pp: 30,
       priority: 0,
@@ -7137,7 +7192,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: "Has a 50% chance to lower the target's accuracy by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 120,
       name: 'Leaf Tornado',
       pp: 10,
@@ -7219,7 +7274,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'mimikiumz',
       name: "Let's Snuggle Forever",
       pp: 1,
@@ -7269,7 +7324,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '200',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'ultranecroziumz',
       name: 'Light That Burns the Sky',
       pp: 1,
@@ -7308,7 +7363,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 1/2 recoil.',
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -7351,7 +7407,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Beautiful',
       desc: 'Causes the target to fall asleep.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lovely Kiss',
       pp: 10,
       priority: 0,
@@ -7400,7 +7456,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lucky Chant',
       pp: 30,
       priority: 0,
@@ -7421,7 +7477,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Heals own status condition and increases evasiveness',
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -7432,7 +7489,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Beautiful',
       desc: "The user faints, and if the Pokémon brought out to replace it does not have full HP or PP, or has a non-volatile status condition, its HP and PP are fully restored along with having any non-volatile status condition cured. The replacement is sent out at the end of the turn, and the healing happens before hazards take effect. This effect continues until a Pokémon that meets any of these conditions switches in at the user's position or gets swapped into the position with Ally Switch. Fails if the user is the last unfainted Pokémon in its party.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Lunar Dance',
       pp: 10,
       priority: 0,
@@ -7471,7 +7528,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "50% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -7498,7 +7556,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Magic Coat',
       pp: 15,
       priority: 4,
@@ -7529,7 +7587,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Magic Room',
       pp: 10,
       priority: 0,
@@ -7600,7 +7658,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -7640,7 +7699,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Magnitude',
       pp: 30,
       priority: 0,
@@ -7656,7 +7715,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '180',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'inciniumz',
       name: 'Malicious Moonsault',
       pp: 1,
@@ -7674,7 +7733,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mat Block',
       pp: 10,
       priority: 0,
@@ -7690,7 +7749,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Me First',
       pp: 20,
       priority: 0,
@@ -7706,7 +7765,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Airstream',
       pp: 5,
       priority: 0,
@@ -7723,7 +7782,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Defense of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Darkness',
       pp: 5,
       priority: 0,
@@ -7740,7 +7799,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Sunny Day begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Flare',
       pp: 5,
       priority: 0,
@@ -7757,7 +7816,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Flutterby',
       pp: 5,
       priority: 0,
@@ -7774,7 +7833,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Rain Dance begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Geyser',
       pp: 5,
       priority: 0,
@@ -7791,7 +7850,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       desc: "The user is protected from nearly all attacks made by other Pokémon during this turn, including Max and G-Max Moves. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Guard',
       pp: 5,
       priority: 0,
@@ -7809,7 +7868,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Beautiful',
       desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mean Look',
       pp: 5,
       priority: 0,
@@ -7825,7 +7884,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Hail begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Hailstorm',
       pp: 5,
       priority: 0,
@@ -7842,7 +7901,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Boosts the user and its allies' Attack by 1 stage. BP scales with the base move's BP. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Knuckle',
       pp: 5,
       priority: 0,
@@ -7859,7 +7918,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Electric Terrain begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Lightning',
       pp: 5,
       priority: 0,
@@ -7876,7 +7935,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Psychic Terrain begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Mindstorm',
       pp: 5,
       priority: 0,
@@ -7893,7 +7952,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Attack of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Ooze',
       pp: 5,
       priority: 0,
@@ -7910,7 +7969,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Grassy Terrain begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Overgrowth',
       pp: 5,
       priority: 0,
@@ -7927,7 +7986,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Phantasm',
       pp: 5,
       priority: 0,
@@ -7944,7 +8003,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Special Defense of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Quake',
       pp: 5,
       priority: 0,
@@ -7961,7 +8020,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Sandstorm begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Rockfall',
       pp: 5,
       priority: 0,
@@ -7978,7 +8037,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Misty Terrain begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Starfall',
       pp: 5,
       priority: 0,
@@ -7995,7 +8054,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Defense of each Pokémon on the user's side is raised by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Steelspike',
       pp: 5,
       priority: 0,
@@ -8012,7 +8071,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Speed of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Strike',
       pp: 5,
       priority: 0,
@@ -8029,7 +8088,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       desc: "Power is equal to the base move's Max Move power. If this move is successful, the Attack of each Pokémon on the opposing side is lowered by 1 stage, even if they have a substitute. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Max Wyrmwind',
       pp: 5,
       priority: 0,
@@ -8047,7 +8106,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Beautiful',
       desc: "Raises the user's Attack by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Meditate',
       pp: 40,
       priority: 0,
@@ -8146,7 +8205,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '200',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'lunaliumz',
       name: 'Menacing Moonraze Maelstrom',
       pp: 1,
@@ -8220,7 +8279,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User cannot move next turn.',
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -8318,7 +8378,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User loses 50% max HP. Hits adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Fire'
+      type: 'Fire',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -8328,7 +8389,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mind Reader',
       pp: 5,
       priority: 0,
@@ -8359,7 +8420,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Miracle Eye',
       pp: 40,
       priority: 0,
@@ -8391,7 +8452,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mirror Move',
       pp: 20,
       priority: 0,
@@ -8408,7 +8469,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Beautiful',
       desc: "Has a 30% chance to lower the target's accuracy by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mirror Shot',
       pp: 10,
       priority: 0,
@@ -8439,7 +8500,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Special',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 120,
       name: 'Mist Ball',
       pp: 5,
@@ -8503,7 +8564,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Moongeist Beam',
       pp: 5,
@@ -8556,7 +8617,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'The user hurls giant chunks of ice at the target to inflict damage.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -8567,7 +8629,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cute',
       desc: "Has a 30% chance to lower the target's accuracy by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mud Bomb',
       pp: 10,
       priority: 0,
@@ -8600,7 +8662,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Mud Sport',
       pp: 15,
       priority: 0,
@@ -8651,7 +8713,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: "This move's type depends on the user's held Memory.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 95,
       name: 'Multi-Attack',
       pp: 10,
@@ -8689,7 +8751,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Offensive or Defensive stats are raised based on the user's higher stat.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -8700,7 +8763,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: "Raises the user's Special Attack by 2 stages.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Nasty Plot',
       pp: 20,
       priority: 0,
@@ -8717,7 +8780,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Natural Gift',
       pp: 15,
       priority: 0,
@@ -8738,7 +8801,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Attack depends on terrain (default Tri Attack).',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -8748,7 +8812,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Special',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 100,
       name: "Nature's Madness",
       pp: 10,
@@ -8766,7 +8830,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Clever',
       desc: 'Has a 30% chance to make the target flinch.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Needle Arm',
       pp: 15,
       priority: 0,
@@ -8782,7 +8846,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'ghostiumz',
       name: 'Never-Ending Nightmare',
       pp: 1,
@@ -8857,7 +8921,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'A sleeping target is hurt by 1/4 max HP per turn.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -8915,7 +8980,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Oblivion Wing',
       pp: 10,
@@ -8932,7 +8997,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       desc: "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon trying to make contact with the user have their Defense lowered by 2 stages. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Obstruct',
       pp: 10,
       priority: 4,
@@ -8949,7 +9014,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'primariumz',
       name: 'Oceanic Operetta',
       pp: 1,
@@ -8968,7 +9033,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Tough',
       desc: "Has a 50% chance to lower the target's accuracy by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 120,
       name: 'Octazooka',
       pp: 10,
@@ -8985,7 +9050,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       desc: "Prevents the target from switching out. At the end of each turn during effect, the target's Defense and Special Defense are lowered by 1 stage. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Octolock',
       pp: 15,
       priority: 0,
@@ -9001,7 +9066,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Odor Sleuth',
       pp: 40,
       priority: 0,
@@ -9017,7 +9082,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Ominous Wind',
       pp: 5,
       priority: 0,
@@ -9119,7 +9184,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "20% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      isNonstandard: IsNonStandard.CAP
     }
   ],
   [
@@ -9280,7 +9346,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Physical if user's Atk > Sp. Atk. Ignores Abilities.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -9295,7 +9362,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Max happiness: 102 power. Can't miss.",
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -9329,7 +9397,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: 'Normal moves become Electric type this turn.',
       target: 'Normal',
       type: 'Electric',
-      aliases: ['pfists']
+      aliases: ['pfists'],
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -9536,7 +9605,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Powder',
       pp: 20,
       priority: 1,
@@ -9590,7 +9659,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'The user swaps its offensive and defensive stats.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -9679,7 +9749,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: "Has a 100% chance to raise the user's Attack by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 70,
       name: 'Power-Up Punch',
       pp: 20,
@@ -9730,7 +9800,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '160',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 150,
       name: 'Prismatic Laser',
       pp: 10,
@@ -9851,7 +9921,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -9879,7 +9950,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: "The user's non-volatile status condition is transferred to the target, and the user is then cured. Fails if the user has no non-volatile status condition or if the target already has one.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Psycho Shift',
       pp: 10,
       priority: 0,
@@ -9895,7 +9966,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       desc: 'Cloaking itself in psychic energy, the user slams into the target. This may also raise the user’s defensive stats.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Psyshield Bash',
       pp: 10,
       priority: 0,
@@ -9943,7 +10014,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Special',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Psywave',
       pp: 15,
       priority: 0,
@@ -9960,7 +10031,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'snorliumz',
       name: 'Pulverizing Pancake',
       pp: 1,
@@ -9978,7 +10049,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Punishment',
       pp: 5,
       priority: 0,
@@ -10000,7 +10071,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Cures target's status; heals user 1/2 max HP if so.",
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -10011,7 +10083,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Clever',
       desc: "If an opposing Pokémon switches out this turn, this move hits that Pokémon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokémon does not become active until the end of the turn.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Pursuit',
       pp: 20,
       priority: 0,
@@ -10106,7 +10178,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '20',
       category: 'Physical',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rage',
       pp: 20,
       priority: 0,
@@ -10141,7 +10213,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'The user rampages and spews vicious flames to inflict damage on the target, then becomes fixated on using this move.',
       target: 'Random',
-      type: 'Fire'
+      type: 'Fire',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -10218,7 +10291,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Razor Wind',
       pp: 10,
       priority: 0,
@@ -10297,7 +10370,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Cute',
       desc: 'The user cures its burn, poison, or paralysis.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Refresh',
       pp: 20,
       priority: 0,
@@ -10362,7 +10435,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cute',
       desc: "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Return',
       pp: 20,
       priority: 0,
@@ -10397,7 +10470,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: 'Power doubles if the user was hit by the target this turn.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Revenge',
       pp: 10,
@@ -10430,7 +10503,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Special',
       desc: "If the current terrain is Electric Terrain and the target is grounded, this move's power is doubled.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 140,
       name: 'Rising Voltage',
       pp: 20,
@@ -10498,7 +10571,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       desc: 'Has a 20% chance to confuse the target.',
       isFieldMove:
         'The Pokémon can climb up rocky walls. Rock climb can be taught to a Pokémon by using HM08 in Generation IV. Since Generation V, it has lost its HM status.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rock Climb',
       pp: 20,
       priority: 0,
@@ -10606,7 +10679,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User cannot move next turn.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -10633,7 +10707,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'Has a 30% chance to make the target flinch.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rolling Kick',
       pp: 15,
       priority: 0,
@@ -10680,7 +10754,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Rototiller',
       pp: 10,
       priority: 0,
@@ -10713,7 +10787,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Beautiful',
       desc: 'Has a 50% chance to burn the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Sacred Fire',
       pp: 5,
@@ -10801,7 +10875,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has a 30% chance of burning the target',
       target: 'Adjacent Foes',
-      type: 'Ground'
+      type: 'Ground',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -10832,7 +10907,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Summons Leech Seed.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -10842,7 +10918,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'buginiumz',
       name: 'Savage Spin-Out',
       pp: 1,
@@ -10956,7 +11032,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'Has a 30% chance to burn the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Searing Shot',
       pp: 5,
@@ -10973,7 +11049,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '200',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'solganiumz',
       name: 'Searing Sunraze Smash',
       pp: 1,
@@ -10993,7 +11069,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Clever',
       isFieldMove:
         "The Pokémon can clear an entrance into a big tree, a bush or an indent in a wall in order to create a Secret Base in Generation III's Ruby, Sapphire and Emerald and Generation VI's Omega Ruby and Alpha Sapphire. It is taught to Pokémon using TM43 in Generations III and IV, and TM94 in Generation VI.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Secret Power',
       pp: 20,
       priority: 0,
@@ -11009,7 +11085,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '85',
       category: 'Special',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 90,
       name: 'Secret Sword',
       pp: 10,
@@ -11049,7 +11125,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "40% chance to lower the target's Sp. Def by 2.",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -11116,7 +11193,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "20% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -11199,7 +11277,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "50% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      isNonstandard: IsNonStandard.CAP
     }
   ],
   [
@@ -11210,7 +11289,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Cute',
       desc: "Raises the user's Attack by 1 stage.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sharpen',
       pp: 30,
       priority: 0,
@@ -11226,7 +11305,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'psychiumz',
       name: 'Shattered Psyche',
       pp: 1,
@@ -11292,7 +11371,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '150',
       category: 'Special',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 150,
       name: 'Shell Trap',
       pp: 5,
@@ -11314,7 +11393,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Raises defensive stats and evasiveness',
       target: 'Self',
-      type: 'Steel'
+      type: 'Steel',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -11373,7 +11453,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Beautiful',
       desc: 'Has a 10% chance to confuse the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Signal Beam',
       pp: 15,
       priority: 0,
@@ -11389,7 +11469,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Silver Wind',
       pp: 5,
       priority: 0,
@@ -11411,7 +11491,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "The target's Ability becomes Simple.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -11438,7 +11519,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'decidiumz',
       name: 'Sinister Arrow Raid',
       pp: 1,
@@ -11462,7 +11543,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to burn the foe.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -11477,7 +11559,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Permanently copies the last move target used.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -11524,7 +11607,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises user's Defense by 1 on turn 1. Hits turn 2.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -11551,7 +11635,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sky Drop',
       pp: 10,
       priority: 0,
@@ -11568,7 +11652,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'This move can hit a target using Bounce, Fly, or Sky Drop.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sky Uppercut',
       pp: 15,
       priority: 0,
@@ -11750,7 +11834,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Smelling Salts',
       pp: 10,
       priority: 0,
@@ -11799,7 +11883,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '35',
       category: 'Physical',
       desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 90,
       name: 'Snap Trap',
       pp: 15,
@@ -11832,7 +11916,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Snatch',
       pp: 10,
       priority: 4,
@@ -11949,7 +12033,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'Deals 20 HP of damage to the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Sonic Boom',
       pp: 20,
       priority: 0,
@@ -11966,7 +12050,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'marshadiumz',
       name: 'Soul-Stealing 7-Star Strike',
       pp: 1,
@@ -12019,7 +12103,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Tough',
       desc: 'If the user has not fainted, the target is cured of its burn.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 30,
       name: 'Sparkling Aria',
       pp: 10,
@@ -12042,7 +12126,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Cures the user's party of all status conditions.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -12052,7 +12137,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Spectral Thief',
       pp: 10,
@@ -12086,7 +12171,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Status',
       contestType: 'Clever',
       desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Spider Web',
       pp: 10,
       priority: 0,
@@ -12103,7 +12188,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Spike Cannon',
       pp: 15,
       priority: 0,
@@ -12230,7 +12315,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '190',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'lycaniumz',
       name: 'Splintered Stormshards',
       pp: 1,
@@ -12254,7 +12339,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Adjacent Foes',
-      type: 'Water'
+      type: 'Water',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -12280,7 +12366,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Spotlight',
       pp: 15,
       priority: 3,
@@ -12301,7 +12387,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "30% chance to boost all stats (Incarnate) or 30% to lower target's defensive stats (Therian)",
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -12344,7 +12431,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: 'Has a 30% chance to make the target flinch. Damage doubles and no accuracy check is done if the target has used Minimize while active.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Steamroller',
       pp: 20,
       priority: 0,
@@ -12440,7 +12527,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: 'Has a 100% chance to paralyze the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'aloraichiumz',
       name: 'Stoked Sparksurfer',
       pp: 1,
@@ -12496,7 +12583,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'For 4 turns will deal damage at the end of each turn',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -12540,7 +12628,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Storm Throw',
       pp: 10,
@@ -12557,7 +12645,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       desc: 'Has a 20% chance to confuse the target.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Strange Steam',
       pp: 10,
@@ -12688,7 +12776,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 90,
       name: 'Submission',
       pp: 20,
@@ -12721,7 +12809,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'iciumz',
       name: 'Subzero Slammer',
       pp: 1,
@@ -12770,7 +12858,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Sunsteel Strike',
       pp: 5,
@@ -12835,7 +12923,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'flyiniumz',
       name: 'Supersonic Skystrike',
       pp: 1,
@@ -13003,7 +13091,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Clever',
       desc: 'The target is immune if it does not share a type with the user.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Synchronoise',
       pp: 10,
       priority: 0,
@@ -13058,7 +13146,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk by 3.",
       target: 'Self',
-      type: 'Bug'
+      type: 'Bug',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -13137,7 +13226,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Heals user's status conditions and raises offensive and defensive stats.",
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -13209,7 +13299,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Special',
       contestType: 'Cool',
       desc: "This move's type depends on the user's held Drive.",
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 140,
       name: 'Techno Blast',
       pp: 5,
@@ -13233,7 +13323,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
       type: 'Ground',
-      aliases: ['zground']
+      aliases: ['zground'],
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -13259,7 +13350,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Telekinesis',
       pp: 15,
       priority: 0,
@@ -13324,7 +13415,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Beautiful',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Thousand Arrows',
       pp: 10,
@@ -13342,7 +13433,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Tough',
       desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Thousand Waves',
       pp: 10,
@@ -13541,7 +13632,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Topsy-Turvy',
       pp: 20,
       priority: 0,
@@ -13609,7 +13700,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Speed by 1 and poisons it.",
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -13682,7 +13774,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Trick-or-Treat',
       pp: 20,
       priority: 0,
@@ -13703,7 +13795,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Decreases target's defensive stats by 1 stage.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -13728,7 +13821,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '10',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 80,
       name: 'Triple Kick',
       pp: 10,
@@ -13762,7 +13855,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Special',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Trump Card',
       pp: 5,
       priority: 0,
@@ -13778,7 +13871,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '25',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Twineedle',
       pp: 20,
       priority: 0,
@@ -13794,7 +13887,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       isZ: 'fairiumz',
       name: 'Twinkle Tackle',
       pp: 1,
@@ -13900,7 +13993,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Max happiness: 102 power. Can't miss.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -13910,7 +14004,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Venom Drench',
       pp: 20,
       priority: 0,
@@ -13948,7 +14042,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Attack and Defense stat by 1 stage and boosts damage dealt by user by 50%",
       target: 'Self',
-      type: 'Fighting'
+      type: 'Fighting',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -13959,7 +14054,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       category: 'Physical',
       contestType: 'Cool',
       desc: 'No additional effect.',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 100,
       name: 'Vine Whip',
       pp: 25,
@@ -14001,7 +14096,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: -1,
       shortDesc: 'This move does not check accuracy. Goes last.',
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      isNonstandard: IsNonStandard.Past
     }
   ],
   [
@@ -14043,7 +14139,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Wake-Up Slap',
       pp: 10,
       priority: 0,
@@ -14127,7 +14223,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Water Sport',
       pp: 15,
       priority: 0,
@@ -14281,7 +14377,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has a 30% chance to paralyze the target.',
       target: 'Adjacent Foes',
-      type: 'Electric'
+      type: 'Electric',
+      isNonstandard: IsNonStandard.Unobtainable
     }
   ],
   [
@@ -14453,7 +14550,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Special',
       contestType: 'Tough',
-      isNonstandard: 'Past',
+      isNonstandard: IsNonStandard.Past,
       name: 'Wring Out',
       pp: 5,
       priority: 0,
@@ -14559,7 +14656,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 2,
       shortDesc: "Goes first. Raises user's evasion by 1.",
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      isNonstandard: IsNonStandard.LGPE
     }
   ],
   [
@@ -14645,7 +14743,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Physical',
-      isNonstandard: 'Unobtainable',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Blazing Torque',
       pp: 10,
       priority: 0,
@@ -14708,7 +14806,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '100',
       category: 'Physical',
-      isNonstandard: 'Unobtainable',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Combat Torque',
       pp: 10,
       priority: 0,
@@ -14939,7 +15037,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '100',
       category: 'Physical',
-      isNonstandard: 'Unobtainable',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Magical Torque',
       pp: 10,
       priority: 0,
@@ -14986,7 +15084,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '100',
       category: 'Physical',
-      isNonstandard: 'Unobtainable',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Noxious Torque',
       pp: 10,
       priority: 0,
@@ -15292,7 +15390,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '80',
       category: 'Physical',
-      isNonstandard: 'Unobtainable',
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Wicked Torque',
       pp: 10,
       priority: 0,

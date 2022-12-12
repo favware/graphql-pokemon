@@ -1,7 +1,7 @@
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
 import { blue, bold, green, red, yellow } from 'colorette';
 import * as cheerio from 'https://cdn.skypack.dev/cheerio';
-import { readFile, writeFile, appendFile } from 'node:fs/promises';
+import { readFile, writeFile, appendFile, access } from 'node:fs/promises';
 import { pokedex } from '../../api/lib/assets/pokedex.js';
 
 const bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/w/index.php?title=';
@@ -14,6 +14,10 @@ const failedPokemon = [];
 const skippedPokemon = [];
 
 const flavorTexts = JSON.parse(await readFile(pathToFlavorTextFile));
+
+await access(logFile) //
+  .then(() => writeFile(logFile, ''))
+  .catch(() => appendFile(logFile, ''));
 
 async function appendToLog(data, indent = true) {
   await appendFile(logFile, `\n${indent ? '\t' : ''}${data}`, { encoding: 'utf-8' });

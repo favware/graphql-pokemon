@@ -155,7 +155,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'beadsofruin',
     {
-      desc: '',
       name: 'Beads of Ruin',
       shortDesc: 'The Sp. Def stat of all other active Pokémon is reduced by 25%.'
     }
@@ -296,7 +295,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'costar',
     {
-      desc: '',
       name: 'Costar',
       shortDesc: "On switch-in, this Pokémon copies an ally's stat changes."
     }
@@ -459,18 +457,18 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'earlybird',
+    {
+      name: 'Early Bird',
+      shortDesc: "This Pokémon's sleep counter drops by 2 instead of 1."
+    }
+  ],
+  [
     'eartheater',
     {
       desc: 'This Pokémon is immune to Ground-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ground-type move.',
       name: 'Earth Eater',
       shortDesc: 'This Pokémon heals 1/4 of its max HP when hit by Ground moves; Ground immunity.'
-    }
-  ],
-  [
-    'earlybird',
-    {
-      name: 'Early Bird',
-      shortDesc: "This Pokémon's sleep counter drops by 2 instead of 1."
     }
   ],
   [
@@ -632,15 +630,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'gluttony',
     {
+      desc: 'When this Pokémon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.',
       name: 'Gluttony',
-      shortDesc: 'This Pokémon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP.',
-      desc: 'When this Pokémon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.'
+      shortDesc: 'This Pokémon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP.'
     }
   ],
   [
     'goodasgold',
     {
-      desc: '',
       name: 'Good as Gold',
       shortDesc: 'This Pokémon is immune to Status moves.'
     }
@@ -655,9 +652,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'gorillatactics',
     {
+      desc: "This Pokémon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokémon is Dynamaxed.",
       name: 'Gorilla Tactics',
-      shortDesc: "This Pokémon's Attack is 1.5x, but it can only select the first move it executes.",
-      desc: "This Pokémon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokémon is Dynamaxed."
+      shortDesc: "This Pokémon's Attack is 1.5x, but it can only select the first move it executes."
     }
   ],
   [
@@ -685,7 +682,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'guarddog',
     {
-      desc: '',
       name: 'Guard Dog',
       shortDesc: 'Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.'
     }
@@ -709,7 +705,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'hadronengine',
     {
-      desc: '',
       name: 'Hadron Engine',
       shortDesc: 'On switch-in, summons Electric Terrain. Sp. Atk is boosted by 30% in Electric Terrain.'
     }
@@ -743,9 +738,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'heavymetal',
     {
+      desc: "This Pokémon's weight is doubled. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone.",
       name: 'Heavy Metal',
-      shortDesc: "This Pokémon's weight is doubled.",
-      desc: "This Pokémon's weight is doubled. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone."
+      shortDesc: "This Pokémon's weight is doubled."
     }
   ],
   [
@@ -767,9 +762,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'hungerswitch',
     {
+      desc: 'If this Pokémon is a Morpeko, it changes formes between its Full Belly Mode and Hangry Mode at the end of each turn.',
       name: 'Hunger Switch',
-      shortDesc: 'If Morpeko, it changes between Full Belly and Hangry Mode at the end of each turn.',
-      desc: 'If this Pokémon is a Morpeko, it changes formes between its Full Belly Mode and Hangry Mode at the end of each turn.'
+      shortDesc: 'If Morpeko, it changes between Full Belly and Hangry Mode at the end of each turn.'
     }
   ],
   [
@@ -876,9 +871,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'innerfocus',
     {
+      desc: 'This Pokémon cannot be made to flinch. This Pokémon is immune to the effect of the Intimidate Ability.',
       name: 'Inner Focus',
-      shortDesc: 'This Pokémon cannot be made to flinch. Immune to Intimidate.',
-      desc: 'This Pokémon cannot be made to flinch. This Pokémon is immune to the effect of the Intimidate Ability.'
+      shortDesc: 'This Pokémon cannot be made to flinch. Immune to Intimidate.'
     }
   ],
   [
@@ -973,9 +968,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'lightmetal',
     {
+      desc: "This Pokémon's weight is halved, rounded down to a tenth of a kilogram. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone. A Pokémon's weight will not drop below 0.1 kg.",
       name: 'Light Metal',
-      shortDesc: "This Pokémon's weight is halved.",
-      desc: "This Pokémon's weight is halved, rounded down to a tenth of a kilogram. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone. A Pokémon's weight will not drop below 0.1 kg."
+      shortDesc: "This Pokémon's weight is halved."
     }
   ],
   [
@@ -990,18 +985,18 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'limber',
+    {
+      name: 'Limber',
+      shortDesc: 'This Pokémon cannot be paralyzed. Gaining this Ability while paralyzed cures it.'
+    }
+  ],
+  [
     'lingeringaroma',
     {
       desc: 'Pokémon making contact with this Pokémon have their Ability changed to Lingering Aroma. Does not affect Pokémon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.',
       name: 'Lingering Aroma',
       shortDesc: 'Pokémon making contact with this Pokémon have their Ability changed to Lingering Aroma.'
-    }
-  ],
-  [
-    'limber',
-    {
-      name: 'Limber',
-      shortDesc: 'This Pokémon cannot be paralyzed. Gaining this Ability while paralyzed cures it.'
     }
   ],
   [
@@ -1092,9 +1087,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'mimicry',
     {
+      desc: "This Pokémon's types change to match the active Terrain when this Pokémon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokémon's types become the original types for its species.",
       name: 'Mimicry',
-      shortDesc: "This Pokémon's types change to match the Terrain. Type reverts when Terrain ends.",
-      desc: "This Pokémon's types change to match the active Terrain when this Pokémon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokémon's types become the original types for its species."
+      shortDesc: "This Pokémon's types change to match the Terrain. Type reverts when Terrain ends."
     }
   ],
   [
@@ -1184,7 +1179,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'myceliummight',
     {
-      desc: '',
       name: 'Mycelium Might',
       shortDesc: "This Pokémon's Status moves go last in their priority bracket and ignore Abilities."
     }
@@ -1199,12 +1193,11 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'neuroforce',
     {
+      desc: "This Pokémon's attacks that are super effective against the target have their damage multiplied by 1.25.",
       name: 'Neuroforce',
-      shortDesc: "This Pokémon's attacks that are super effective against the target do 1.25x damage.",
-      desc: "This Pokémon's attacks that are super effective against the target have their damage multiplied by 1.25."
+      shortDesc: "This Pokémon's attacks that are super effective against the target do 1.25x damage."
     }
   ],
-  ['noability', { name: 'No Ability', shortDesc: 'Does nothing.' }],
   [
     'neutralizinggas',
     {
@@ -1213,6 +1206,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       shortDesc: 'While this Pokémon is active, Abilities have no effect.'
     }
   ],
+  ['noability', { name: 'No Ability', shortDesc: 'Does nothing.' }],
   [
     'noguard',
     {
@@ -1241,7 +1235,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'opportunist',
     {
-      desc: '',
       name: 'Opportunist',
       shortDesc: 'When an opposing Pokémon recieves stat boosts, this Pokémon gets the same boosts.'
     }
@@ -1249,7 +1242,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'orichalcumpulse',
     {
-      desc: '',
       name: 'Orichalcum Pulse',
       shortDesc: 'On switch-in, summons Sunny Day. Attack is boosted by 30% in Sunny Day.'
     }
@@ -1257,9 +1249,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'overcoat',
     {
+      desc: 'This Pokémon is immune to powder moves, damage from Sandstorm, and the effects of Rage Powder and the Effect Spore Ability.',
       name: 'Overcoat',
-      shortDesc: 'This Pokémon is immune to powder moves, Sandstorm damage, and Effect Spore.',
-      desc: 'This Pokémon is immune to powder moves, damage from Sandstorm, and the effects of Rage Powder and the Effect Spore Ability.'
+      shortDesc: 'This Pokémon is immune to powder moves, Sandstorm damage, and Effect Spore.'
     }
   ],
   [
@@ -1287,14 +1279,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
-    'persistent',
-    {
-      desc: 'The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokémon.',
-      name: 'Persistent',
-      shortDesc: 'When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.'
-    }
-  ],
-  [
     'pastelveil',
     {
       desc: 'This Pokémon and its allies cannot be poisoned. Gaining this Ability while this Pokémon or its ally is poisoned cures them. If this Ability is being ignored during an effect that causes poison, this Pokémon is cured immediately but its ally is not.',
@@ -1308,6 +1292,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       desc: 'Making contact with this Pokémon starts the Perish Song effect for it and the attacker. This effect does not happen for this Pokémon if the attacker already has a perish count.',
       name: 'Perish Body',
       shortDesc: 'Making contact with this Pokémon starts the Perish Song effect for it and the attacker.'
+    }
+  ],
+  [
+    'persistent',
+    {
+      desc: 'The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokémon.',
+      name: 'Persistent',
+      shortDesc: 'When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.'
     }
   ],
   [
@@ -1345,10 +1337,10 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'poisonheal',
     {
+      aliases: ['ph'],
       desc: 'If this Pokémon is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn instead of losing HP.',
       name: 'Poison Heal',
-      shortDesc: 'This Pokémon is healed by 1/8 of its max HP each turn when poisoned; no HP loss.',
-      aliases: ['ph']
+      shortDesc: 'This Pokémon is healed by 1/8 of its max HP each turn when poisoned; no HP loss.'
     }
   ],
   [
@@ -1361,9 +1353,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'poisontouch',
     {
+      desc: "This Pokémon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance.",
       name: 'Poison Touch',
-      shortDesc: "This Pokémon's contact moves have a 30% chance of poisoning.",
-      desc: "This Pokémon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance."
+      shortDesc: "This Pokémon's contact moves have a 30% chance of poisoning."
     }
   ],
   [
@@ -1385,17 +1377,17 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'powerspot',
     {
+      desc: "This Pokémon's allies have the power of their moves multiplied by 1.3. This affects Doom Desire and Future Sight, even if the user is not on the field.",
       name: 'Power Spot',
-      shortDesc: "This Pokémon's allies have the power of their moves multiplied by 1.3.",
-      desc: "This Pokémon's allies have the power of their moves multiplied by 1.3. This affects Doom Desire and Future Sight, even if the user is not on the field."
+      shortDesc: "This Pokémon's allies have the power of their moves multiplied by 1.3."
     }
   ],
   [
     'prankster',
     {
+      desc: "This Pokémon's non-damaging moves have their priority increased by 1. Opposing Dark-type Pokémon are immune to these moves, and any move called by these moves, if the resulting user of the move has this Ability.",
       name: 'Prankster',
-      shortDesc: "This Pokémon's Status moves have priority raised by 1, but Dark types are immune.",
-      desc: "This Pokémon's non-damaging moves have their priority increased by 1. Opposing Dark-type Pokémon are immune to these moves, and any move called by these moves, if the resulting user of the move has this Ability."
+      shortDesc: "This Pokémon's Status moves have priority raised by 1, but Dark types are immune."
     }
   ],
   [
@@ -1511,13 +1503,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
-    'rkssystem',
-    {
-      name: 'RKS System',
-      shortDesc: 'If this Pokémon is a Silvally, its type changes to match its held Memory.'
-    }
-  ],
-  [
     'raindish',
     {
       desc: 'If Rain Dance is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
@@ -1575,9 +1560,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'ripen',
     {
+      desc: 'When this Pokémon eats certain Berries, the effects are doubled. Berries that restore HP or PP have the amount doubled, Berries that raise stat stages have the amount doubled, Berries that halve damage taken quarter it instead, and a Jaboca Berry or Rowap Berry has the attacker lose 1/4 of its maximum HP, rounded down.',
       name: 'Ripen',
-      shortDesc: 'When this Pokémon eats certain Berries, the effects are doubled.',
-      desc: 'When this Pokémon eats certain Berries, the effects are doubled. Berries that restore HP or PP have the amount doubled, Berries that raise stat stages have the amount doubled, Berries that halve damage taken quarter it instead, and a Jaboca Berry or Rowap Berry has the attacker lose 1/4 of its maximum HP, rounded down.'
+      shortDesc: 'When this Pokémon eats certain Berries, the effects are doubled.'
     }
   ],
   [
@@ -1586,6 +1571,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       desc: "This Pokémon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokémon or the target is genderless.",
       name: 'Rivalry',
       shortDesc: "This Pokémon's attacks do 1.25x on same gender targets; 0.75x on opposite gender."
+    }
+  ],
+  [
+    'rkssystem',
+    {
+      name: 'RKS System',
+      shortDesc: 'If this Pokémon is a Silvally, its type changes to match its held Memory.'
     }
   ],
   [
@@ -1599,7 +1591,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'rockypayload',
     {
-      desc: '',
       name: 'Rocky Payload',
       shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Rock-type attack."
     }
@@ -1696,9 +1687,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'serenegrace',
     {
+      desc: "This Pokémon's moves have their secondary effect chance doubled. This effect stacks with the Rainbow effect, except for secondary effects that cause the target to flinch.",
       name: 'Serene Grace',
-      shortDesc: "This Pokémon's moves have their secondary effect chance doubled.",
-      desc: "This Pokémon's moves have their secondary effect chance doubled. This effect stacks with the Rainbow effect, except for secondary effects that cause the target to flinch."
+      shortDesc: "This Pokémon's moves have their secondary effect chance doubled."
     }
   ],
   [
@@ -1712,10 +1703,10 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'shadowtag',
     {
+      aliases: ['stag'],
       desc: 'Prevents opposing Pokémon from choosing to switch out, unless they are holding a Shed Shell, are a Ghost type, or also have this Ability.',
       name: 'Shadow Tag',
-      shortDesc: 'Prevents foes from choosing to switch unless they also have this Ability.',
-      aliases: ['stag']
+      shortDesc: 'Prevents foes from choosing to switch unless they also have this Ability.'
     }
   ],
   [
@@ -1775,9 +1766,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'skilllink',
     {
+      desc: "This Pokémon's multi-hit attacks always hit the maximum number of times. Triple Kick and Triple Axel do not check accuracy for the second and third hits.",
       name: 'Skill Link',
-      shortDesc: "This Pokémon's multi-hit attacks always hit the maximum number of times.",
-      desc: "This Pokémon's multi-hit attacks always hit the maximum number of times. Triple Kick and Triple Axel do not check accuracy for the second and third hits."
+      shortDesc: "This Pokémon's multi-hit attacks always hit the maximum number of times."
     }
   ],
   [
@@ -1927,9 +1918,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'steelyspirit',
     {
+      desc: "This Pokémon and its allies' Steel-type moves have their power multiplied by 1.5. This affects Doom Desire even if the user is not on the field.",
       name: 'Steely Spirit',
-      shortDesc: "This Pokémon and its allies' Steel-type moves have their power multiplied by 1.5.",
-      desc: "This Pokémon and its allies' Steel-type moves have their power multiplied by 1.5. This affects Doom Desire even if the user is not on the field."
+      shortDesc: "This Pokémon and its allies' Steel-type moves have their power multiplied by 1.5."
     }
   ],
   [
@@ -1945,11 +1936,11 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'stickyhold',
     {
+      desc: "This Pokémon cannot lose its held item due to another Pokémon's Ability or attack, unless the attack knocks out this Pokémon. A Sticky Barb will be transferred to other Pokémon regardless of this Ability.",
       isFieldAbility:
         'If a Pokémon with Sticky Hold is in the first place in the party (even if fainted), bites will occur more often while fishing.',
       name: 'Sticky Hold',
-      shortDesc: "This Pokémon cannot lose its held item due to another Pokémon's Ability or attack.",
-      desc: "This Pokémon cannot lose its held item due to another Pokémon's Ability or attack, unless the attack knocks out this Pokémon. A Sticky Barb will be transferred to other Pokémon regardless of this Ability."
+      shortDesc: "This Pokémon cannot lose its held item due to another Pokémon's Ability or attack."
     }
   ],
   [
@@ -2023,9 +2014,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'sweetveil',
     {
+      desc: 'This Pokémon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokémon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep.',
       name: 'Sweet Veil',
-      shortDesc: 'This Pokémon and its allies cannot fall asleep; those already asleep do not wake up.',
-      desc: 'This Pokémon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokémon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep.'
+      shortDesc: 'This Pokémon and its allies cannot fall asleep; those already asleep do not wake up.'
     }
   ],
   [
@@ -2034,6 +2025,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       desc: "If Rain Dance is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
       name: 'Swift Swim',
       shortDesc: "If Rain Dance is active, this Pokémon's Speed is doubled."
+    }
+  ],
+  [
+    'swordofruin',
+    {
+      name: 'Sword of Ruin',
+      shortDesc: 'The Defense stat of all other active Pokémon is reduced by 25%.'
     }
   ],
   [
@@ -2055,17 +2053,8 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
-    'swordofruin',
-    {
-      desc: '',
-      name: 'Sword of Ruin',
-      shortDesc: 'The Defense stat of all other active Pokémon is reduced by 25%.'
-    }
-  ],
-  [
     'tabletsofruin',
     {
-      desc: '',
       name: 'Tablets of Ruin',
       shortDesc: 'The Attack stat of all other active Pokémon is reduced by 25%.'
     }
@@ -2233,7 +2222,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'vesselofruin',
     {
-      desc: '',
       name: 'Vessel of Ruin',
       shortDesc: 'The Sp. Atk stat of all other active Pokémon is reduced by 25%.'
     }
@@ -2375,7 +2363,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'zerotohero',
     {
-      desc: '',
       name: 'Zero to Hero',
       shortDesc: 'If this Pokémon is Palafin, it changes to Hero Mode when it switches out.'
     }

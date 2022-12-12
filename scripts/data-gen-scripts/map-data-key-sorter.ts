@@ -1,5 +1,6 @@
-import { entries } from '../../src/lib/assets/pokedex-data/gen9.js';
+import { abilities } from '../../src/lib/assets/abilities.js';
 import { dataToClipboard } from './data-to-clipboard.js';
+import { Collection } from '@discordjs/collection';
 
 export function sortObjectByKey<T extends object>(obj: T): T {
   const keys: string[] = [];
@@ -33,14 +34,26 @@ export function sortObjectByKey<T extends object>(obj: T): T {
   return sortedObj;
 }
 
-const newMap = new Map();
+const abilitiesSortedKeys = abilities.sort((_, __, c, d) => {
+  if (c < d) {
+    return -1;
+  }
 
-for (let [species, data] of entries.values()) {
-  Reflect.deleteProperty(data, 'key');
+  if (c > d) {
+    return 1;
+  }
 
-  data = sortObjectByKey(data);
+  return 0;
+});
 
-  newMap.set(species, data);
+const finalCollection = new Collection<string, any>();
+
+for (let [abilityKey, abilityData] of abilitiesSortedKeys.entries()) {
+  Reflect.deleteProperty(abilityData, 'key');
+
+  abilityData = sortObjectByKey(abilityData);
+
+  finalCollection.set(abilityKey, abilityData);
 }
 
-dataToClipboard([...newMap.entries()]);
+dataToClipboard([...finalCollection.entries()]);

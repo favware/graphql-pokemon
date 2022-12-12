@@ -39,12 +39,23 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'acrobike',
+    {
+      desc: 'This folding bike allows you to perform actions such as wheelies and bunny hops.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Acro Bike',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png'
+    }
+  ],
+  [
     'adamantorb',
     {
       desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      name: 'Adamant Orb',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Adamant Orb'
     }
   ],
   [
@@ -53,6 +64,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
       gen: 7,
       name: 'Adrenaline Orb'
+    }
+  ],
+  [
+    'adventureguide',
+    {
+      desc: 'A compact device that automatically collects and records advice when a Trainer is out on an adventure.',
+      gen: 6,
+      keyItem: true,
+      name: 'Adventure Guide',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/adventureguide.png'
     }
   ],
   [
@@ -134,6 +155,26 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'apricornbox',
+    {
+      desc: 'A handy box where you can store up to 99 of each kind of Apricorn.',
+      gen: 4,
+      keyItem: true,
+      name: 'Apricorn Box',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/apricornbox.png'
+    }
+  ],
+  [
+    'aquasuit',
+    {
+      desc: 'A suit made with the collective technological know-how of Team Aqua. It can withstand any impact.',
+      gen: 6,
+      keyItem: true,
+      name: 'Aqua Suit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/aquasuit.png'
+    }
+  ],
+  [
     'armorfossil',
     {
       desc: 'Can be revived into Shieldon.',
@@ -153,10 +194,10 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'assaultvest',
     {
+      aliases: ['assvest', 'av'],
       desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
       gen: 6,
-      name: 'Assault Vest',
-      aliases: ['assvest', 'av']
+      name: 'Assault Vest'
     }
   ],
   [
@@ -169,12 +210,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'auroraticket',
+    {
+      desc: 'A ticket required to board the ship to Birth Island. It glows beautifully.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Aurora Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png'
+    }
+  ],
+  [
     'auspiciousarmor',
     {
       desc: 'A peculiar set of armor that can make a certain species of Pokémon evolve. Auspicious wishes live within it.',
       gen: 9,
       name: 'Auspicious Armor',
       shortDesc: 'This item can be used to evolve Charcadet into Armarouge.'
+    }
+  ],
+  [
+    'autograph',
+    {
+      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, "Good luck!"',
+      gen: 7,
+      keyItem: true,
+      name: 'Autograph'
+    }
+  ],
+  [
+    'azureflute',
+    {
+      desc: 'A flute that puts out echoing sounds that do not seem to be of this world. No one knows who made it.',
+      gen: 4,
+      keyItem: true,
+      name: 'Azure Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/azureflute.png'
     }
   ],
   [
@@ -186,12 +257,32 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'bandautograph',
+    {
+      desc: "It's signed by all members of the Galar region's most charismatic band, the Maximizers.",
+      gen: 8,
+      keyItem: true,
+      name: 'Band Autograph',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bandautograph.png'
+    }
+  ],
+  [
     'banettite',
     {
       desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Banettite'
+    }
+  ],
+  [
+    'basementkey',
+    {
+      desc: 'A key that opens a door in the Goldenrod Tunnel.',
+      gen: 2,
+      keyItem: true,
+      name: 'Basement Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/basementkey.png'
     }
   ],
   [
@@ -239,6 +330,27 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'berrypots',
+    {
+      desc: 'Handy containers for cultivating Berries wherever you go.',
+      gen: 4,
+      keyItem: true,
+      name: 'Berry Pots',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypots.png'
+    }
+  ],
+  [
+    'berrypouch',
+    {
+      desc: "A pouch for carrying Berries. It is attached to the bag's compartment for important items.",
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Berry Pouch',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png'
+    }
+  ],
+  [
     'berrysweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
@@ -256,11 +368,32 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'bicycle',
+    {
+      desc: 'A folding bike that enables a rider to get around much faster than with Running Shoes.',
+      gen: 1,
+      keyItem: true,
+      name: 'Bicycle',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bicycle.png'
+    }
+  ],
+  [
     'bigroot',
     {
       desc: 'Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.',
       gen: 4,
       name: 'Big Root'
+    }
+  ],
+  [
+    'bikevoucher',
+    {
+      desc: 'Take this voucher to the BIKE SHOP in CERULEAN CITY and exchange it for a bicycle.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Bike Voucher',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png'
     }
   ],
   [
@@ -323,14 +456,34 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'bluecard',
+    {
+      desc: "A card to save points for the Buena's Password show.",
+      gen: 2,
+      keyItem: true,
+      name: 'Blue Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluecard.png'
+    }
+  ],
+  [
     'blueorb',
     {
       desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Blue Orb',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png',
-      isNonstandard: IsNonStandard.Past
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/blueorb.png'
+    }
+  ],
+  [
+    'bluepetal',
+    {
+      desc: "A pressed flower petal you receive from Lana during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Blue Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluepetal.png'
     }
   ],
   [
@@ -383,15 +536,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'bugmemory',
-    {
-      desc: "Holder's Multi-Attack is Bug type.",
-      gen: 7,
-      name: 'Bug Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'buginiumz',
     {
       desc: 'If holder has a Bug move, this item allows it to use a Bug Z-Move.',
@@ -401,12 +545,21 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'bugmemory',
+    {
+      desc: "Holder's Multi-Attack is Bug type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Bug Memory'
+    }
+  ],
+  [
     'burndrive',
     {
       desc: "Holder's Techno Blast is Fire type.",
       gen: 5,
-      name: 'Burn Drive',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Burn Drive'
     }
   ],
   [
@@ -425,6 +578,36 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Cameruptite'
+    }
+  ],
+  [
+    'campinggear',
+    {
+      desc: 'Everything you need to set up a tent and get cooking in a Wild Area or at a camping spot.',
+      gen: 8,
+      keyItem: true,
+      name: 'Camping Gear',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/campinggear.png'
+    }
+  ],
+  [
+    'cardkey',
+    {
+      desc: 'A card key that opens a shutter in the Radio Tower.',
+      gen: 1,
+      keyItem: true,
+      name: 'Card Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cardkey.png'
+    }
+  ],
+  [
+    'catchingcharm',
+    {
+      desc: "Holding it is said to increase the chance of getting a critical catch. Curiously, the charm doesn't shake much.",
+      gen: 8,
+      keyItem: true,
+      name: 'Catching Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/catchingcharm.png'
     }
   ],
   [
@@ -482,17 +665,17 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.',
       gen: 4,
-      name: 'Cherish Ball',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Cherish Ball'
     }
   ],
   [
     'chestoberry',
     {
+      aliases: ['chesto'],
       desc: 'Holder wakes up if it is asleep. Single use.',
       gen: 3,
-      name: 'Chesto Berry',
-      aliases: ['chesto']
+      name: 'Chesto Berry'
     }
   ],
   [
@@ -508,8 +691,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Ice type.",
       gen: 5,
-      name: 'Chill Drive',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Chill Drive'
     }
   ],
   [
@@ -523,37 +706,37 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'choiceband',
     {
+      aliases: ['band', 'cb'],
       desc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
       gen: 3,
-      name: 'Choice Band',
-      aliases: ['band', 'cb']
+      name: 'Choice Band'
     }
   ],
   [
     'choicescarf',
     {
+      aliases: ['scarf'],
       desc: "Holder's Speed is 1.5x, but it can only select the first move it executes.",
       gen: 4,
-      name: 'Choice Scarf',
-      aliases: ['scarf']
+      name: 'Choice Scarf'
     }
   ],
   [
     'choicespecs',
     {
+      aliases: ['specs'],
       desc: "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
       gen: 4,
-      name: 'Choice Specs',
-      aliases: ['specs']
+      name: 'Choice Specs'
     }
   ],
   [
     'chopleberry',
     {
+      aliases: ['chople'],
       desc: 'Halves damage taken from a supereffective Fighting-type attack. Single use.',
       gen: 4,
-      name: 'Chople Berry',
-      aliases: ['chople']
+      name: 'Chople Berry'
     }
   ],
   [
@@ -574,6 +757,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'clearbell',
+    {
+      desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
+      gen: 2,
+      keyItem: true,
+      name: 'Clear Bell',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png'
+    }
+  ],
+  [
     'cloversweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
@@ -590,11 +783,51 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'coincase',
+    {
+      desc: 'A case for holding coins obtained at the Game Corner. It can hold up to 50,000 coins.',
+      gen: 1,
+      keyItem: true,
+      name: 'Coin Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coincase.png'
+    }
+  ],
+  [
     'colburberry',
     {
       desc: 'Halves damage taken from a supereffective Dark-type attack. Single use.',
       gen: 4,
       name: 'Colbur Berry'
+    }
+  ],
+  [
+    'colressmchn',
+    {
+      desc: "A special device that wrings out the potential of Pokémon. It's an imperfect prototype.",
+      gen: 5,
+      keyItem: true,
+      name: 'Colress MCHN',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/colressmchn.png'
+    }
+  ],
+  [
+    'contestcostume',
+    {
+      desc: 'A very cool suit to be worn during the Contest Spectacular.',
+      gen: 6,
+      keyItem: true,
+      name: 'Contest Costume',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestcostume.png'
+    }
+  ],
+  [
+    'contestpass',
+    {
+      desc: 'A pass required for entering Pokémon Contests. It has a drawing of an award ribbon on its front.',
+      gen: 3,
+      keyItem: true,
+      name: 'Contest Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestpass.png'
     }
   ],
   [
@@ -607,21 +840,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'coupon1',
+    {
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      gen: 4,
+      keyItem: true,
+      name: 'Coupon 1',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon1.png'
+    }
+  ],
+  [
+    'coupon2',
+    {
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      gen: 4,
+      keyItem: true,
+      name: 'Coupon 2',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon2.png'
+    }
+  ],
+  [
+    'coupon3',
+    {
+      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
+      gen: 4,
+      keyItem: true,
+      name: 'Coupon 3',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon3.png'
+    }
+  ],
+  [
     'coverfossil',
     {
       desc: 'Can be revived into Tirtouga.',
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Cover Fossil'
-    }
-  ],
-  [
-    'crucibellite',
-    {
-      desc: 'If held by a Crucibelle, this item allows it to Mega Evolve in battle.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Cap,
-      name: 'Crucibellite'
     }
   ],
   [
@@ -641,13 +895,22 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'crucibellite',
+    {
+      desc: 'If held by a Crucibelle, this item allows it to Mega Evolve in battle.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Cap,
+      name: 'Crucibellite'
+    }
+  ],
+  [
     'custapberry',
     {
+      aliases: ['custap'],
       desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
-      name: 'Custap Berry',
-      aliases: ['custap']
+      name: 'Custap Berry'
     }
   ],
   [
@@ -668,21 +931,31 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'darkmemory',
-    {
-      desc: "Holder's Multi-Attack is Dark type.",
-      gen: 7,
-      name: 'Dark Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'darkiniumz',
     {
       desc: 'If holder has a Dark move, this item allows it to use a Dark Z-Move.',
       gen: 7,
       isNonstandard: IsNonStandard.Past,
       name: 'Darkinium Z'
+    }
+  ],
+  [
+    'darkmemory',
+    {
+      desc: "Holder's Multi-Attack is Dark type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Dark Memory'
+    }
+  ],
+  [
+    'darkstone',
+    {
+      desc: "Zekrom's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
+      gen: 5,
+      keyItem: true,
+      name: 'Dark Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/darkstone.png'
     }
   ],
   [
@@ -708,9 +981,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.',
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       name: 'Deep Sea Scale',
-      shortDesc: 'If held by a Clamperl, its Sp. Def is doubled.',
-      isNonstandard: IsNonStandard.Past
+      shortDesc: 'If held by a Clamperl, its Sp. Def is doubled.'
     }
   ],
   [
@@ -718,9 +991,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.',
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       name: 'Deep Sea Tooth',
-      shortDesc: 'If held by a Clamperl, its Sp. Atk is doubled.',
-      isNonstandard: IsNonStandard.Past
+      shortDesc: 'If held by a Clamperl, its Sp. Atk is doubled.'
     }
   ],
   [
@@ -729,6 +1002,49 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If holder becomes infatuated, the other Pokémon also becomes infatuated.',
       gen: 4,
       name: 'Destiny Knot'
+    }
+  ],
+  [
+    'devongoods',
+    {
+      desc: "A package that contains DEVON's machine parts.",
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Devon Goods',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png'
+    }
+  ],
+  [
+    'devonparts',
+    {
+      desc: 'A case that contains mechanical parts of some sort made by the Devon Corporation.',
+      gen: 6,
+      keyItem: true,
+      name: 'Devon Parts',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonparts.png'
+    }
+  ],
+  [
+    'devonscope',
+    {
+      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Devon Scope',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png'
+    }
+  ],
+  [
+    'devonscubagear',
+    {
+      desc: 'A device made by Devon Corporation that provides oxygen to users during the use of Dive.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Devon Scuba Gear',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png'
     }
   ],
   [
@@ -749,6 +1065,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'dnasplicers',
+    {
+      desc: 'A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.',
+      gen: 5,
+      keyItem: true,
+      name: 'DNA Splicers',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dnasplicers.png'
+    }
+  ],
+  [
     'domefossil',
     {
       desc: 'Can be revived into Kabuto.',
@@ -762,8 +1088,29 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Water type.",
       gen: 5,
-      name: 'Douse Drive',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Douse Drive'
+    }
+  ],
+  [
+    'dowsingmachine',
+    {
+      desc: "This high-tech machine shows the location of invisible items. It's attached to the head when in use.",
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Dowsing Machine',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png'
+    }
+  ],
+  [
+    'dowsingmchn',
+    {
+      desc: "A high-tech machine that shows the location of invisible items. It's attached to the head when in use.",
+      gen: 4,
+      keyItem: true,
+      name: 'Dowsing MCHN',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmchn.png'
     }
   ],
   [
@@ -793,12 +1140,21 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'dragoniumz',
+    {
+      desc: 'If holder has a Dragon move, this item allows it to use a Dragon Z-Move.',
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Dragonium Z'
+    }
+  ],
+  [
     'dragonmemory',
     {
       desc: "Holder's Multi-Attack is Dragon type.",
       gen: 7,
-      name: 'Dragon Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Dragon Memory'
     }
   ],
   [
@@ -806,17 +1162,18 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Seadra into Kingdra when traded.',
       gen: 2,
-      name: 'Dragon Scale',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Dragon Scale'
     }
   ],
   [
-    'dragoniumz',
+    'dragonskull',
     {
-      desc: 'If holder has a Dragon move, this item allows it to use a Dragon Z-Move.',
-      gen: 7,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Dragonium Z'
+      desc: 'A skull of a Pokémon that was said to have braved the angry waters to fly around the world.',
+      gen: 5,
+      keyItem: true,
+      name: 'Dragon Skull',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonskull.png'
     }
   ],
   [
@@ -837,12 +1194,23 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'droppeditem',
+    {
+      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
+      gen: 5,
+      keyItem: true,
+      name: 'Dropped Item',
+      shortDesc: 'The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a boy or girl.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/droppeditem.png'
+    }
+  ],
+  [
     'dubiousdisc',
     {
       desc: 'Evolves Porygon2 into Porygon-Z when traded.',
       gen: 4,
-      name: 'Dubious Disc',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Dubious Disc'
     }
   ],
   [
@@ -872,6 +1240,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'dynamaxband',
+    {
+      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pokémon to Dynamax when at a Power Spot.',
+      gen: 8,
+      keyItem: true,
+      name: 'Dynamax Band',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dynamaxband.png'
+    }
+  ],
+  [
     'earthplate',
     {
       desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
@@ -887,6 +1265,17 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 7,
       isNonstandard: IsNonStandard.Past,
       name: 'Eevium Z'
+    }
+  ],
+  [
+    'eggcard',
+    {
+      desc: 'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
+      gen: 2,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Egg Card',
+      shortDesc: 'Might be used at the Pokémon Communication Centre.'
     }
   ],
   [
@@ -910,8 +1299,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Electabuzz into Electivire when traded.',
       gen: 4,
-      name: 'Electirizer',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Electirizer'
     }
   ],
   [
@@ -928,8 +1317,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Electric type.",
       gen: 7,
-      name: 'Electric Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Electric Memory'
     }
   ],
   [
@@ -950,6 +1339,26 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'elevatorkey',
+    {
+      desc: "A card key that activates the elevator in Lysandre Labs. It is emblazoned with Team Flare's logo.",
+      gen: 7,
+      keyItem: true,
+      name: 'Elevator Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png'
+    }
+  ],
+  [
+    'endorsement',
+    {
+      desc: "A letter of recommendation that you'll need in order to participate in the Gym Challenge.",
+      gen: 8,
+      keyItem: true,
+      name: 'Endorsement',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/endorsement.png'
+    }
+  ],
+  [
     'energypowder',
     {
       desc: 'Restores 60 HP to one Pokémon.',
@@ -967,6 +1376,57 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'enigmastone',
+    {
+      desc: "A crystal ball that was excavated from the ground. It's a very beautiful stone that is covered with bits of rock and earth.",
+      gen: 4,
+      keyItem: true,
+      name: 'Enigma Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmastone.png'
+    }
+  ],
+  [
+    'enigmaticcard',
+    {
+      desc: 'A mysterious card. Written on it is a request for you to go to a guest room in an Akala motel on Route 8.',
+      gen: 7,
+      keyItem: true,
+      name: 'Enigmatic Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmaticcard.png'
+    }
+  ],
+  [
+    'eonflute',
+    {
+      desc: 'A flute that can be used to summon Latios or Latias no matter where you are.',
+      gen: 6,
+      keyItem: true,
+      name: 'Eon Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonflute.png'
+    }
+  ],
+  [
+    'eonticket',
+    {
+      desc: 'The ticket required for sailing on a ferry to the Southern Island. Does Norman, the Petalburg Gym Leader, know a secret?!',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Eon Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png'
+    }
+  ],
+  [
+    'escaperope',
+    {
+      desc: 'A long and durable rope. Use it to escape instantly from locations like caves or dungeons. It can be used any number of times.',
+      gen: 8,
+      keyItem: true,
+      name: 'Escape Rope',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/escaperope.png'
+    }
+  ],
+  [
     'eviolite',
     {
       desc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
@@ -977,10 +1437,30 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'expertbelt',
     {
+      aliases: ['ebelt'],
       desc: "Holder's attacks that are super effective against the target do 1.2x damage.",
       gen: 4,
-      name: 'Expert Belt',
-      aliases: ['ebelt']
+      name: 'Expert Belt'
+    }
+  ],
+  [
+    'explorerkit',
+    {
+      desc: 'A bag filled with convenient tools for exploring. It provides access to the Underground in the Sinnoh region.',
+      gen: 4,
+      keyItem: true,
+      name: 'Explorer Kit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/explorerkit.png'
+    }
+  ],
+  [
+    'expshare',
+    {
+      desc: 'Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.',
+      gen: 2,
+      keyItem: true,
+      name: 'Exp. Share',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/exp.share.png'
     }
   ],
   [
@@ -1006,8 +1486,29 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Fairy type.",
       gen: 7,
-      name: 'Fairy Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fairy Memory'
+    }
+  ],
+  [
+    'famechecker',
+    {
+      desc: "A device that enables you to recall what you've heard and seen about famous people.",
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Fame Checker',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png'
+    }
+  ],
+  [
+    'fashioncase',
+    {
+      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
+      gen: 4,
+      keyItem: true,
+      name: 'Fashion Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fashioncase.png'
     }
   ],
   [
@@ -1021,11 +1522,11 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'fightinggem',
     {
+      aliases: ['fightgem'],
       desc: "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
       gen: 5,
       isNonstandard: IsNonStandard.Past,
-      name: 'Fighting Gem',
-      aliases: ['fightgem']
+      name: 'Fighting Gem'
     }
   ],
   [
@@ -1033,8 +1534,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Fighting type.",
       gen: 7,
-      name: 'Fighting Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fighting Memory'
     }
   ],
   [
@@ -1068,8 +1569,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Fire type.",
       gen: 7,
-      name: 'Fire Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fire Memory'
     }
   ],
   [
@@ -1088,6 +1589,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 7,
       isNonstandard: IsNonStandard.Past,
       name: 'Firium Z'
+    }
+  ],
+  [
+    'fishingrod',
+    {
+      desc: 'Use it by the water to fish up various kinds of Pokémon.',
+      gen: 1,
+      keyItem: true,
+      name: 'Fishing Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fishingrod.png'
     }
   ],
   [
@@ -1128,11 +1639,11 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'flyinggem',
     {
+      aliases: ['flightgem'],
       desc: "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
       gen: 5,
       isNonstandard: IsNonStandard.Past,
-      name: 'Flying Gem',
-      aliases: ['flightgem']
+      name: 'Flying Gem'
     }
   ],
   [
@@ -1140,8 +1651,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Flying type.",
       gen: 7,
-      name: 'Flying Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Flying Memory'
     }
   ],
   [
@@ -1164,10 +1675,20 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'focussash',
     {
+      aliases: ['sash'],
       desc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
       gen: 4,
-      name: 'Focus Sash',
-      aliases: ['sash']
+      name: 'Focus Sash'
+    }
+  ],
+  [
+    'foragebag',
+    {
+      desc: "A bag to carry ingredients gathered during Mallow's trial in the jungle.",
+      gen: 7,
+      keyItem: true,
+      name: 'foragebag',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/foragebag.png'
     }
   ],
   [
@@ -1175,8 +1696,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Dino.',
       gen: 8,
-      name: 'Fossilized Bird',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fossilized Bird'
     }
   ],
   [
@@ -1184,8 +1705,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Bird.',
       gen: 8,
-      name: 'Fossilized Dino',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fossilized Dino'
     }
   ],
   [
@@ -1193,8 +1714,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Dracozolt with Fossilized Bird or Dracovish with Fossilized Fish.',
       gen: 8,
-      name: 'Fossilized Drake',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fossilized Drake'
     }
   ],
   [
@@ -1202,8 +1723,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Dino.',
       gen: 8,
-      name: 'Fossilized Fish',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Fossilized Fish'
     }
   ],
   [
@@ -1219,8 +1740,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Holder moves last in its priority bracket.',
       gen: 4,
-      name: 'Full Incense',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Full Incense'
     }
   ],
   [
@@ -1232,13 +1753,23 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'galactickey',
+    {
+      desc: 'A card key for disengaging the security systems in the Galactic HQ. Losing it can result in punishment, apparently.',
+      gen: 4,
+      keyItem: true,
+      name: 'GS Ball',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galactickey.png'
+    }
+  ],
+  [
     'galaricacuff',
     {
       desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Galarica Cuff',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png',
-      isNonstandard: IsNonStandard.Past
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png'
     }
   ],
   [
@@ -1246,9 +1777,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Galarica Wreath',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png',
-      isNonstandard: IsNonStandard.Past
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png'
     }
   ],
   [
@@ -1287,6 +1818,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'gbsounds',
+    {
+      desc: "A music player that allows you to listen to nostalgic songs. It's operated with the flip of a single switch.",
+      gen: 4,
+      keyItem: true,
+      name: 'GB Sounds',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gbsounds.png'
+    }
+  ],
+  [
     'gengarite',
     {
       desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
@@ -1305,15 +1846,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'ghostmemory',
-    {
-      desc: "Holder's Multi-Attack is Ghost type.",
-      gen: 7,
-      name: 'Ghost Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'ghostiumz',
     {
       desc: 'If holder has a Ghost move, this item allows it to use a Ghost Z-Move.',
@@ -1323,12 +1855,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'ghostmemory',
+    {
+      desc: "Holder's Multi-Attack is Ghost type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Ghost Memory'
+    }
+  ],
+  [
     'glalitite',
     {
       desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Glalitite'
+    }
+  ],
+  [
+    'godstone',
+    {
+      desc: 'A rare stone',
+      gen: 5,
+      keyItem: true,
+      name: 'God Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/godstone.png'
+    }
+  ],
+  [
+    'gogoggles',
+    {
+      desc: 'Nifty goggles to protect eyes from desert sandstorms.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Go-Goggles',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png'
     }
   ],
   [
@@ -1349,6 +1911,66 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'goldteeth',
+    {
+      desc: "A set of golden false teeth lost by the Safari Zone's warden. They make his smile sparkle.",
+      gen: 1,
+      keyItem: true,
+      name: 'Gold Teeth',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/goldteeth.png'
+    }
+  ],
+  [
+    'goodrod',
+    {
+      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
+      gen: 1,
+      keyItem: true,
+      name: 'Good Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/goodrod.png'
+    }
+  ],
+  [
+    'gracidea',
+    {
+      desc: 'A flower sometimes bundled in bouquets to convey gratitude on special occasions, such as birthdays.',
+      gen: 4,
+      keyItem: true,
+      name: 'Gracidea',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gracidea.png'
+    }
+  ],
+  [
+    'gram1',
+    {
+      desc: 'An important letter that Wingull delivers.',
+      gen: 5,
+      keyItem: true,
+      name: 'Gram 1',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram1.png'
+    }
+  ],
+  [
+    'gram2',
+    {
+      desc: 'An important letter that Wingull delivers.',
+      gen: 5,
+      keyItem: true,
+      name: 'Gram 2',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram2.png'
+    }
+  ],
+  [
+    'gram3',
+    {
+      desc: 'An important letter that Wingull delivers.',
+      gen: 5,
+      keyItem: true,
+      name: 'Gram 3',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram3.png'
+    }
+  ],
+  [
     'grassgem',
     {
       desc: "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
@@ -1358,21 +1980,21 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'grassmemory',
-    {
-      desc: "Holder's Multi-Attack is Grass type.",
-      gen: 7,
-      name: 'Grass Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'grassiumz',
     {
       desc: 'If holder has a Grass move, this item allows it to use a Grass Z-Move.',
       gen: 7,
       isNonstandard: IsNonStandard.Past,
       name: 'Grassium Z'
+    }
+  ],
+  [
+    'grassmemory',
+    {
+      desc: "Holder's Multi-Attack is Grass type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Grass Memory'
     }
   ],
   [
@@ -1389,6 +2011,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'A high-performance Ball that provides a higher catch rate than a Poké Ball.',
       gen: 1,
       name: 'Great Ball'
+    }
+  ],
+  [
+    'greenpetal',
+    {
+      desc: "A pressed flower petal you receive from Mallow during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Green Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/greenpetal.png'
     }
   ],
   [
@@ -1412,8 +2044,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      name: 'Griseous Orb',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Griseous Orb'
     }
   ],
   [
@@ -1426,21 +2058,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'groundmemory',
-    {
-      desc: "Holder's Multi-Attack is Ground type.",
-      gen: 7,
-      name: 'Ground Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'groundiumz',
     {
       desc: 'If holder has a Ground move, this item allows it to use a Ground Z-Move.',
       gen: 7,
       isNonstandard: IsNonStandard.Past,
       name: 'Groundium Z'
+    }
+  ],
+  [
+    'groundmemory',
+    {
+      desc: "Holder's Multi-Attack is Ground type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Ground Memory'
+    }
+  ],
+  [
+    'grubbyhanky',
+    {
+      desc: 'A handkerchief dropped by a regular at Café Warehouse. It smells faintly like a Pokémon.',
+      gen: 5,
+      keyItem: true,
+      name: 'Grubby Hanky',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/grubbyhanky.png'
+    }
+  ],
+  [
+    'gsball',
+    {
+      desc: 'The mysterious BALL.',
+      gen: 2,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'GS Ball',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png'
     }
   ],
   [
@@ -1495,10 +2148,10 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'heavydutyboots',
     {
+      aliases: ['boots', 'hdb'],
       desc: 'When switching in, the holder is unaffected by hazards on its side of the field.',
       gen: 8,
-      name: 'Heavy-Duty Boots',
-      aliases: ['boots', 'hdb']
+      name: 'Heavy-Duty Boots'
     }
   ],
   [
@@ -1520,11 +2173,41 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'hitechearbuds',
+    {
+      desc: 'Strange earbuds that allow you to freely control the volume of various sounds.',
+      gen: 8,
+      keyItem: true,
+      name: 'Hi-tech Earbuds',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/hi-techearbuds.png'
+    }
+  ],
+  [
+    'holocaster',
+    {
+      desc: "A device that allows users to receive and view hologram clips at any time. It's also used to chat with others.",
+      gen: 6,
+      keyItem: true,
+      name: 'Holo Caster',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/holocaster.png'
+    }
+  ],
+  [
     'hondewberry',
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
       name: 'Hondew Berry'
+    }
+  ],
+  [
+    'honorofkalos',
+    {
+      desc: 'A precious symbol that is awarded only to an individual who has done great things for the Kalos region.',
+      gen: 6,
+      keyItem: true,
+      name: 'Honor of Kalos',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/honorofkalos.png'
     }
   ],
   [
@@ -1575,8 +2258,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Ice type.",
       gen: 7,
-      name: 'Ice Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Ice Memory'
     }
   ],
   [
@@ -1615,6 +2298,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'ilimasnormaliumz',
+    {
+      desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
+      gen: 7,
+      keyItem: true,
+      name: "Ilima's Normalium Z",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
+    }
+  ],
+  [
     'inciniumz',
     {
       desc: 'If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.',
@@ -1630,6 +2323,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Insect Plate'
+    }
+  ],
+  [
+    'intriguingstone',
+    {
+      desc: "A rather curious stone that might appear valuable to some. It's all in the eye of the beholder.",
+      gen: 6,
+      keyItem: true,
+      name: 'Intriguing Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/intriguingstone.png'
     }
   ],
   [
@@ -1650,6 +2353,17 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'itemfinder',
+    {
+      desc: 'A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.',
+      gen: 1,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'itemfinder',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png'
+    }
+  ],
+  [
     'jabocaberry',
     {
       desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
@@ -1659,12 +2373,32 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'jadeorb',
+    {
+      desc: "A shiny green orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
+      gen: 4,
+      keyItem: true,
+      name: 'Jade Orb',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/jadeorb.png'
+    }
+  ],
+  [
     'jawfossil',
     {
       desc: 'Can be revived into Tyrunt.',
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Jaw Fossil'
+    }
+  ],
+  [
+    'journal',
+    {
+      desc: 'A notebook that keeps a day-to-day record of your adventure so far.',
+      gen: 4,
+      keyItem: true,
+      name: 'journal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/journal.png'
     }
   ],
   [
@@ -1707,6 +2441,56 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
       name: 'Kelpsy Berry'
+    }
+  ],
+  [
+    'keystone',
+    {
+      desc: 'A stone filled with an unexplained power. It makes Pokémon that battle with a Mega Stone Mega Evolve.',
+      gen: 6,
+      keyItem: true,
+      name: 'Key Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keystone.png'
+    }
+  ],
+  [
+    'keytoroom1',
+    {
+      desc: 'A key that opens a door inside Sea Mauville',
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 1',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom1.png'
+    }
+  ],
+  [
+    'keytoroom2',
+    {
+      desc: 'A key that opens a door inside Sea Mauville',
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 2',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom2.png'
+    }
+  ],
+  [
+    'keytoroom4',
+    {
+      desc: 'A key that opens a door inside Sea Mauville',
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 4',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom4.png'
+    }
+  ],
+  [
+    'keytoroom6',
+    {
+      desc: 'A key that opens a door inside Sea Mauville',
+      gen: 6,
+      keyItem: true,
+      name: 'Key to Room 6',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom6.png'
     }
   ],
   [
@@ -1766,8 +2550,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 3,
-      name: 'Lax Incense',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Lax Incense'
     }
   ],
   [
@@ -1784,26 +2568,67 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Farfetch’d or Sirfetch’d, its critical hit ratio is raised by 2 stages.',
       gen: 8,
-      name: 'Leek',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Leek'
     }
   ],
   [
     'leftovers',
     {
+      aliases: ['lefties'],
       desc: 'At the end of every turn, holder restores 1/16 of its max HP.',
       gen: 2,
-      name: 'Leftovers',
-      aliases: ['lefties']
+      name: 'Leftovers'
+    }
+  ],
+  [
+    'leftpokeball',
+    {
+      desc: "A Poké Ball with a Pokémon that lost its Trainer inside. It seems to be from Ula'ula Island.",
+      gen: 7,
+      keyItem: true,
+      name: 'Left Poké Ball',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png'
+    }
+  ],
+  [
+    'legendplate',
+    {
+      desc: 'A stone tablet imbued with the essence of all creation. When used on a certain Pokémon, it allows that Pokémon to gain the power of every type there is.',
+      gen: 8,
+      keyItem: true,
+      name: 'Legend Plate',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/legendplate.png'
+    }
+  ],
+  [
+    'lenscase',
+    {
+      desc: 'A rather chic-looking case for carrying contact lenses.',
+      gen: 6,
+      keyItem: true,
+      name: 'Lens Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lenscase.png'
     }
   ],
   [
     'leppaberry',
     {
+      aliases: ['leppa'],
       desc: "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
       gen: 3,
-      name: 'Leppa Berry',
-      aliases: ['leppa']
+      name: 'Leppa Berry'
+    }
+  ],
+  [
+    'letter',
+    {
+      desc: 'An extremely important letter to Steven from the President of Devon Corporation.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Letter',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png'
     }
   ],
   [
@@ -1812,6 +2637,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'A Poké Ball for catching Pokémon that are a lower level than your own.',
       gen: 2,
       name: 'Level Ball'
+    }
+  ],
+  [
+    'libertypass',
+    {
+      desc: 'A special pass to go to Liberty Garden. Board the ship in Castelia City.',
+      gen: 5,
+      keyItem: true,
+      name: 'Liberty Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/libertypass.png'
     }
   ],
   [
@@ -1825,10 +2660,20 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'lifeorb',
     {
+      aliases: ['lo', 'lorb'],
       desc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
       gen: 4,
-      name: 'Life Orb',
-      aliases: ['lo', 'lorb']
+      name: 'Life Orb'
+    }
+  ],
+  [
+    'liftkey',
+    {
+      desc: 'A key that operates the elevator in the Team Rocket Hideout. It bears the Team Rocket logo.',
+      gen: 1,
+      keyItem: true,
+      name: 'Lift Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/liftkey.png'
     }
   ],
   [
@@ -1848,11 +2693,51 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'lightstone',
+    {
+      desc: "Reshiram's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
+      gen: 5,
+      keyItem: true,
+      name: 'Light Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lightstone.png'
+    }
+  ],
+  [
     'loadeddice',
     {
       desc: "Holder's 5 hit multi-hit attacks will always hit at least 4 times.",
       gen: 9,
       name: 'Loaded Dice'
+    }
+  ],
+  [
+    'lockcapsule',
+    {
+      desc: 'A sturdy Capsule that can only be opened with a special key.',
+      gen: 4,
+      keyItem: true,
+      name: 'Lock Capsule',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lockcapsule.png'
+    }
+  ],
+  [
+    'lookerticket',
+    {
+      desc: "A ticket that was handmade by Looker. It's decorated with a liberal amount of glittery paint.",
+      gen: 6,
+      keyItem: true,
+      name: 'Looker Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lookerticket.png'
+    }
+  ],
+  [
+    'lootsack',
+    {
+      desc: 'A sturdy, spacious bag that is used to carry any treasures or loot obtained in the coal mine.',
+      gen: 4,
+      keyItem: true,
+      name: 'Loot Sack',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lootsack.png'
     }
   ],
   [
@@ -1862,6 +2747,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Lopunnite'
+    }
+  ],
+  [
+    'lostitem',
+    {
+      desc: 'The Clefairy doll that was lost by the Copycat.',
+      gen: 2,
+      keyItem: true,
+      name: 'Lost Item',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lostitem.png'
     }
   ],
   [
@@ -1901,10 +2796,10 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'lumberry',
     {
+      aliases: ['lum'],
       desc: 'Holder cures itself if it has a non-volatile status or is confused. Single use.',
       gen: 3,
-      name: 'Lum Berry',
-      aliases: ['lum']
+      name: 'Lum Berry'
     }
   ],
   [
@@ -1925,6 +2820,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'lunarwing',
+    {
+      desc: "A feather that glows like the moon. It's said to possess the power to dispel nightmares.",
+      gen: 4,
+      keyItem: true,
+      name: 'Lunar Wing',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/lunarwing.png'
+    }
+  ],
+  [
     'lureball',
     {
       desc: 'A Poké Ball for catching Pokémon hooked by a Rod when fishing.',
@@ -1937,8 +2842,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      name: 'Lustrous Orb',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Lustrous Orb'
     }
   ],
   [
@@ -1959,6 +2864,27 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'machbike',
+    {
+      desc: 'This folding Bike more than doubles your movement speed.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Mach Bike',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png'
+    }
+  ],
+  [
+    'machinepart',
+    {
+      desc: 'An important part of a machine that was stolen from the Power Plant.',
+      gen: 2,
+      keyItem: true,
+      name: 'Machine Part',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/machinepart.png'
+    }
+  ],
+  [
     'machobrace',
     {
       desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
@@ -1967,11 +2893,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'magmaemblem',
+    {
+      desc: "A medal-like item in the same shape as Team Magma's mark.",
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Magma Emblem',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png'
+    }
+  ],
+  [
     'magmarizer',
     {
       desc: 'Evolves Magmar into Magmortar when traded.',
       gen: 4,
       name: 'Magmarizer'
+    }
+  ],
+  [
+    'magmastone',
+    {
+      desc: 'A stone formed by boulders melting in intensely hot magma, then hardening. Magma remains sealed inside it.',
+      gen: 4,
+      keyItem: true,
+      name: 'Magma Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmastone.png'
+    }
+  ],
+  [
+    'magmasuit',
+    {
+      desc: 'A suit made with the collective technological know-how of Team Magma. It can withstand any impact.',
+      gen: 6,
+      keyItem: true,
+      name: 'Magma Suit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmasuit.png'
     }
   ],
   [
@@ -2004,16 +2961,26 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be given to or taken from a Pokémon, except by Covet/Knock Off/Thief.',
       gen: 2,
-      name: 'Mail',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Mail'
+    }
+  ],
+  [
+    'makeupbag',
+    {
+      desc: 'A rather chic-looking case for carrying lipsticks.',
+      gen: 7,
+      keyItem: true,
+      name: 'Make-Up Bag',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/make-upbag.png'
     }
   ],
   [
     'maliciousarmor',
     {
       desc: 'A peculiar set of armor that can make a certain species of Pokémon evolve. Malicious will lurks within it.',
-      name: 'Malicious Armor',
       gen: 9,
+      name: 'Malicious Armor',
       shortDesc: 'This item can be used to evolve Charcadet into Ceruledge.'
     }
   ],
@@ -2079,12 +3046,53 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'medalbox',
+    {
+      desc: 'A box-shaped machine that stores Medals and Medal information.',
+      gen: 5,
+      keyItem: true,
+      name: 'Medal Box',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/medalbox.png'
+    }
+  ],
+  [
     'medichamite',
     {
       desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Medichamite'
+    }
+  ],
+  [
+    'megabracelet',
+    {
+      desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Mega Bracelet',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
+    }
+  ],
+  [
+    'megaring',
+    {
+      desc: 'This ring contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
+      gen: 6,
+      keyItem: true,
+      name: 'Mega Ring',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/megaring.png'
+    }
+  ],
+  [
+    'membercard',
+    {
+      desc: 'A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago.',
+      gen: 4,
+      keyItem: true,
+      name: 'Member Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/membercard.png'
     }
   ],
   [
@@ -2119,6 +3127,27 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "If held by a Ditto that hasn't Transformed, its Defense is doubled.",
       gen: 2,
       name: 'Metal Powder'
+    }
+  ],
+  [
+    'meteorite',
+    {
+      desc: "A meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it's shining with seven colors of light.",
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Meteorite',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png'
+    }
+  ],
+  [
+    'meteoriteshard',
+    {
+      desc: "One of the fragments of a Meteorite from Granite Cave. It's faintly warm to the touch.",
+      gen: 6,
+      keyItem: true,
+      name: 'Meteorite Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteoriteshard.png'
     }
   ],
   [
@@ -2213,8 +3242,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     'mirrorherb',
     {
       desc: 'When an opposing Pokémon recieves stat boosts, those boosts are copied. Single use.',
-      name: 'Mirror Herb',
-      gen: 9
+      gen: 9,
+      name: 'Mirror Herb'
     }
   ],
   [
@@ -2231,6 +3260,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'A Poké Ball for catching Pokémon that evolve using the Moon Stone.',
       gen: 2,
       name: 'Moon Ball'
+    }
+  ],
+  [
+    'moonflute',
+    {
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the moon.',
+      gen: 7,
+      keyItem: true,
+      name: 'Moon Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/moonflute.png'
     }
   ],
   [
@@ -2257,6 +3296,27 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       isNonstandard: IsNonStandard.Past,
       name: 'Mystery Berry'
+    }
+  ],
+  [
+    'mysteryegg',
+    {
+      desc: "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown.",
+      gen: 2,
+      keyItem: true,
+      name: 'Mystery Egg',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysteryegg.png'
+    }
+  ],
+  [
+    'mysticticket',
+    {
+      desc: 'A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'MysticTicket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png'
     }
   ],
   [
@@ -2301,6 +3361,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'nlunarizer',
+    {
+      desc: 'A machine to fuse and separate Necrozma, which needs light, and Lunala.',
+      gen: 7,
+      keyItem: true,
+      name: 'N-Lunarizer',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-lunarizer.png'
+    }
+  ],
+  [
     'nomelberry',
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
@@ -2328,12 +3398,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'nsolarizer',
+    {
+      desc: 'A machine to fuse and separate Necrozma, which needs light, and Solgaleo.',
+      gen: 7,
+      name: 'N-Solarizer',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-solarizer.png'
+    }
+  ],
+  [
+    'oaksletter',
+    {
+      desc: 'A letter from Professor Oak. Written in it is a request for you to go to Route 224.',
+      gen: 4,
+      keyItem: true,
+      name: "Oak's Letter",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sletter.png"
+    }
+  ],
+  [
+    'oaksparcel',
+    {
+      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
+      gen: 1,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: "Oak's Parcel",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png"
+    }
+  ],
+  [
     'occaberry',
     {
+      aliases: ['occa'],
       desc: 'Halves damage taken from a supereffective Fire-type attack. Single use.',
       gen: 4,
-      name: 'Occa Berry',
-      aliases: ['occa']
+      name: 'Occa Berry'
     }
   ],
   [
@@ -2341,8 +3441,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Psychic-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Odd Incense',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Odd Incense'
     }
   ],
   [
@@ -2355,11 +3455,72 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'oldcharm',
+    {
+      desc: 'An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town.',
+      gen: 4,
+      keyItem: true,
+      name: 'Old Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldcharm.png'
+    }
+  ],
+  [
+    'oldletter',
+    {
+      desc: 'A letter entrusted to you by a girl, to be delivered to a boy. Strangely, it looks old to you.',
+      gen: 8,
+      keyItem: true,
+      name: 'Old Letter',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldletter.png'
+    }
+  ],
+  [
+    'oldrod',
+    {
+      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
+      gen: 1,
+      keyItem: true,
+      name: 'Old Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldrod.png'
+    }
+  ],
+  [
+    'oldseamap',
+    {
+      desc: 'A chart that can take you to Faraway Island.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Old Sea Map',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png'
+    }
+  ],
+  [
     'oranberry',
     {
       desc: 'Restores 10 HP when at 1/2 max HP or less. Single use.',
       gen: 3,
       name: 'Oran Berry'
+    }
+  ],
+  [
+    'orangepetal',
+    {
+      desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Orange Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/orangepetal.png'
+    }
+  ],
+  [
+    'ovalcharm',
+    {
+      desc: 'An oval charm said to increase the chance of Pokémon Eggs being found at the Nursery.',
+      gen: 5,
+      keyItem: true,
+      name: 'Oval Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ovalcharm.png'
     }
   ],
   [
@@ -2371,21 +3532,23 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'przcureberry',
+    'pairoftickets',
     {
-      desc: '(Gen 2) Holder cures itself if it is paralyzed. Single use.',
-      gen: 2,
-      isNonstandard: IsNonStandard.Past,
-      name: 'PRZ Cure Berry'
+      desc: 'Tickets for two to the astronomical show being held at the Mossdeep Space Center.',
+      gen: 6,
+      keyItem: true,
+      name: 'Pair of Tickets',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pairoftickets.png'
     }
   ],
   [
-    'psncureberry',
+    'palpad',
     {
-      desc: '(Gen 2) Holder is cured if it is poisoned. Single use.',
-      gen: 2,
-      isNonstandard: IsNonStandard.Past,
-      name: 'PSN Cure Berry'
+      desc: 'A convenient notepad that is used to register your friends and friend codes and keep a record of your gameplay.',
+      gen: 4,
+      keyItem: true,
+      name: 'palpad',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/palpad.png'
     }
   ],
   [
@@ -2398,12 +3561,32 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'parcel',
+    {
+      desc: "A parcel entrusted into your care. You're supposed to deliver it to your childhood friend who left Twinleaf Town.",
+      gen: 4,
+      keyItem: true,
+      name: 'Parcel',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/parcel.png'
+    }
+  ],
+  [
     'parkball',
     {
       desc: 'A special Poké Ball for the Pal Park.',
       gen: 4,
-      name: 'Park Ball',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Park Ball'
+    }
+  ],
+  [
+    'pass',
+    {
+      desc: "A pass required for riding the Magnet Train. It allows you to ride whenever and however much you'd like.",
+      gen: 2,
+      keyItem: true,
+      name: 'Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pass.png'
     }
   ],
   [
@@ -2431,6 +3614,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'permit',
+    {
+      desc: 'A permit that is needed to enter the Nature Preserve. Not many know about it.',
+      gen: 5,
+      keyItem: true,
+      name: 'Permit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/permit.png'
+    }
+  ],
+  [
     'persimberry',
     {
       desc: 'Holder is cured if it is confused. Single use.',
@@ -2441,10 +3634,20 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'petayaberry',
     {
+      aliases: ['petaya'],
       desc: "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 3,
-      name: 'Petaya Berry',
-      aliases: ['petaya']
+      name: 'Petaya Berry'
+    }
+  ],
+  [
+    'photoalbum',
+    {
+      desc: 'A nice photo album for storing all the photos taken along your adventure.',
+      gen: 4,
+      keyItem: true,
+      name: 'Photo Album',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/photoalbum.png'
     }
   ],
   [
@@ -2492,6 +3695,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'pinkpetal',
+    {
+      desc: "A pressed flower petal you receive from Mina during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Pink Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pinkpetal.png'
+    }
+  ],
+  [
     'pinsirite',
     {
       desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
@@ -2510,12 +3723,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'plasmacard',
+    {
+      desc: 'A card key needed to enter the password inside the Plasma Frigate.',
+      gen: 5,
+      keyItem: true,
+      name: 'Plasma Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/plasmacard.png'
+    }
+  ],
+  [
     'plumefossil',
     {
       desc: 'Can be revived into Archen.',
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Plume Fossil'
+    }
+  ],
+  [
+    'poffincase',
+    {
+      desc: 'A case for storing Poffins cooked from Berries.',
+      gen: 4,
+      keyItem: true,
+      name: 'Poffin Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/poffincase.png'
+    }
+  ],
+  [
+    'pointcard',
+    {
+      desc: 'A card that lists how many Battle Points you have earned.',
+      gen: 4,
+      keyItem: true,
+      name: 'Point Card',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pointcard.png'
     }
   ],
   [
@@ -2536,15 +3779,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'poisonmemory',
-    {
-      desc: "Holder's Multi-Attack is Poison type.",
-      gen: 7,
-      name: 'Poison Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'poisoniumz',
     {
       desc: 'If holder has a Poison move, this item allows it to use a Poison Z-Move.',
@@ -2554,11 +3788,71 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'poisonmemory',
+    {
+      desc: "Holder's Multi-Attack is Poison type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Poison Memory'
+    }
+  ],
+  [
     'pokeball',
     {
       desc: 'A device for catching wild Pokémon. It is designed as a capsule system.',
       gen: 1,
       name: 'Poké Ball'
+    }
+  ],
+  [
+    'pokeblockcase',
+    {
+      desc: 'A case for holding Pokéblock made with a Berry Blender.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Pokéblock Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png'
+    }
+  ],
+  [
+    'pokeblockkit',
+    {
+      desc: 'A set containing a Berry Blender for making Pokéblocks and a Pokéblock Case for storing Pokéblocks.',
+      gen: 6,
+      keyItem: true,
+      name: 'Pokéblock Kit',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockkit.png'
+    }
+  ],
+  [
+    'pokeflute',
+    {
+      desc: 'A flute that can play with such a beautiful tone that even sleeping Pokémon find themselves woken up.',
+      gen: 1,
+      keyItem: true,
+      name: 'Poké Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeflute.png'
+    }
+  ],
+  [
+    'pokemonboxlink',
+    {
+      desc: "A device that allows you to access the Pokémon storage system. There are some places where it won't work.",
+      gen: 8,
+      keyItem: true,
+      name: 'Pokémon Box Link',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png'
+    }
+  ],
+  [
+    'pokeradar',
+    {
+      desc: 'A tool that can search out Pokémon that are hiding in the tall grass. Its battery is recharged as you walk.',
+      gen: 4,
+      keyItem: true,
+      name: 'Poké Radar',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeradar.png'
     }
   ],
   [
@@ -2579,6 +3873,25 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'potion',
+    {
+      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon.',
+      gen: 1,
+      name: 'Potion'
+    }
+  ],
+  [
+    'powderjar',
+    {
+      desc: 'A jar for storing Berry Powder made using a Berry Crusher.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Powder Jar',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png'
+    }
+  ],
+  [
     'poweranklet',
     {
       desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
@@ -2592,14 +3905,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
       gen: 4,
       name: 'Power Band'
-    }
-  ],
-  [
-    'potion',
-    {
-      desc: 'A spray-type medicine for treating wounds. It can be used to restore 20 HP to a single Pokémon.',
-      gen: 1,
-      name: 'Potion'
     }
   ],
   [
@@ -2635,6 +3940,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'powerplantpass',
+    {
+      desc: 'This pass serves as an ID card for gaining access to the Power Plant that lies along Route 13.',
+      gen: 6,
+      keyItem: true,
+      name: 'Power Plant Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/powerplantpass.png'
+    }
+  ],
+  [
     'powerweight',
     {
       desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
@@ -2664,8 +3979,48 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Feebas into Milotic when traded.',
       gen: 5,
-      name: 'Prism Scale',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Prism Scale'
+    }
+  ],
+  [
+    'prisonbottle',
+    {
+      desc: 'A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.',
+      gen: 6,
+      keyItem: true,
+      name: 'Prison Bottle',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/prisonbottle.png'
+    }
+  ],
+  [
+    'professorsmask',
+    {
+      desc: 'The mask that belongs to The Masked Royal. This pro wrestler apparently sews his mask on a machine himself.',
+      gen: 7,
+      keyItem: true,
+      name: "Professor's Mask",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/professor'smask.png"
+    }
+  ],
+  [
+    'profsletter',
+    {
+      desc: 'A letter that Professor Sycamore wrote to your mother. A faint but pleasant perfume seems to cling to the paper.',
+      gen: 6,
+      keyItem: true,
+      name: "Prof's Letter",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/prof'sletter.png"
+    }
+  ],
+  [
+    'propcase',
+    {
+      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
+      gen: 5,
+      keyItem: true,
+      name: 'Prop Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/propcase.png'
     }
   ],
   [
@@ -2681,8 +4036,26 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Rhydon into Rhyperior when traded.',
       gen: 4,
-      name: 'Protector',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Protector'
+    }
+  ],
+  [
+    'przcureberry',
+    {
+      desc: '(Gen 2) Holder cures itself if it is paralyzed. Single use.',
+      gen: 2,
+      isNonstandard: IsNonStandard.Past,
+      name: 'PRZ Cure Berry'
+    }
+  ],
+  [
+    'psncureberry',
+    {
+      desc: '(Gen 2) Holder is cured if it is poisoned. Single use.',
+      gen: 2,
+      isNonstandard: IsNonStandard.Past,
+      name: 'PSN Cure Berry'
     }
   ],
   [
@@ -2699,8 +4072,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Multi-Attack is Psychic type.",
       gen: 7,
-      name: 'Psychic Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Psychic Memory'
     }
   ],
   [
@@ -2724,8 +4097,18 @@ export const items = new Collection<string, PokemonTypes.Item>([
     'punchingglove',
     {
       desc: "Holder's punch-based attacks do 1.1x damage and avoid adverse contact effects.",
-      name: 'Punching Glove',
-      gen: 9
+      gen: 9,
+      name: 'Punching Glove'
+    }
+  ],
+  [
+    'purplepetal',
+    {
+      desc: "A pressed flower petal you receive from Nanu during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Purple Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/purplepetal.png'
     }
   ],
   [
@@ -2767,6 +4150,47 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       isNonstandard: IsNonStandard.Past,
       name: 'Rabuta Berry'
+    }
+  ],
+  [
+    'ragecandybar',
+    {
+      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pokémon.",
+      gen: 2,
+      keyItem: true,
+      name: 'Rage Candy Bar',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ragecandybar.png'
+    }
+  ],
+  [
+    'rainbowflower',
+    {
+      desc: "A flower made of the petals you received from captains. It's proof that your growth has been recognized by them.",
+      gen: 7,
+      keyItem: true,
+      name: 'Rainbow Flower',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowflower.png'
+    }
+  ],
+  [
+    'rainbowpass',
+    {
+      desc: 'A pass for ferries between Vermilion and the Sevii Islands. It features a drawing of a rainbow.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Rainbow Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png'
+    }
+  ],
+  [
+    'rainbowwing',
+    {
+      desc: 'A mystical rainbow feather that sparkles.',
+      gen: 2,
+      keyItem: true,
+      name: 'Rainbow Wing',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowwing.png'
     }
   ],
   [
@@ -2818,8 +4242,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Dusclops into Dusknoir when traded.',
       gen: 4,
-      name: 'Reaper Cloth',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Reaper Cloth'
     }
   ],
   [
@@ -2831,14 +4255,44 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'redchain',
+    {
+      desc: 'A mythical chain that is said to link the Legendary Pokémon that created the Sinnoh region.',
+      gen: 4,
+      keyItem: true,
+      name: 'Red Chain',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redchain.png'
+    }
+  ],
+  [
     'redorb',
     {
       desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Red Orb',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png',
-      isNonstandard: IsNonStandard.Past
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redorb.png'
+    }
+  ],
+  [
+    'redpetal',
+    {
+      desc: "A pressed flower petal you receive from Kiawe during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Red Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redpetal.png'
+    }
+  ],
+  [
+    'redscale',
+    {
+      desc: 'A scale from a red Gyarados. It glows red like a flame.',
+      gen: 2,
+      keyItem: true,
+      name: 'Red Scale',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/redscale.png'
     }
   ],
   [
@@ -2850,11 +4304,31 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'revealglass',
+    {
+      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pokémon to its original shape.",
+      gen: 5,
+      keyItem: true,
+      name: 'Reveal Glass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/revealglass.png'
+    }
+  ],
+  [
     'ribbonsweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
       name: 'Ribbon Sweet'
+    }
+  ],
+  [
+    'ridepager',
+    {
+      desc: 'By entering certain numbers on this pager, you can summon Ride Pokémon in an instant.',
+      gen: 7,
+      keyItem: true,
+      name: 'Ride Pager',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ridepager.png'
     }
   ],
   [
@@ -2874,6 +4348,50 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'rm1key',
+    {
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Rm. 1 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png'
+    }
+  ],
+  [
+    'rm2key',
+    {
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Rm. 2 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png'
+    }
+  ],
+  [
+    'rm4key',
+    {
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Rm. 4 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png'
+    }
+  ],
+  [
+    'rm6key',
+    {
+      desc: 'A key that opens a door inside the Abandoned Ship.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Rm. 6 Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png'
+    }
+  ],
+  [
     'rockgem',
     {
       desc: "Holder's first successful Rock-type attack will have 1.3x power. Single use.",
@@ -2887,17 +4405,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Rock-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Rock Incense',
-      isNonstandard: IsNonStandard.Unobtainable
-    }
-  ],
-  [
-    'rockmemory',
-    {
-      desc: "Holder's Multi-Attack is Rock type.",
-      gen: 7,
-      name: 'Rock Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Rock Incense'
     }
   ],
   [
@@ -2910,12 +4419,12 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'roseincense',
+    'rockmemory',
     {
-      desc: "Holder's Grass-type attacks have 1.2x power.",
-      gen: 4,
-      name: 'Rose Incense',
-      isNonstandard: IsNonStandard.Unobtainable
+      desc: "Holder's Multi-Attack is Rock type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Rock Memory'
     }
   ],
   [
@@ -2924,6 +4433,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If holder is hit by a contact move, the attacker loses 1/6 of its max HP.',
       gen: 5,
       name: 'Rocky Helmet'
+    }
+  ],
+  [
+    'rollerskates',
+    {
+      desc: 'Attaches roller skates to the bottom of your shoes, allowing you to glide quickly around and perform tricks.',
+      gen: 6,
+      keyItem: true,
+      name: 'Roller Skates',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rollerskates.png'
     }
   ],
   [
@@ -2944,11 +4463,40 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'roseincense',
+    {
+      desc: "Holder's Grass-type attacks have 1.2x power.",
+      gen: 4,
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Rose Incense'
+    }
+  ],
+  [
     'roseliberry',
     {
       desc: 'Halves damage taken from a supereffective Fairy-type attack. Single use.',
       gen: 6,
       name: 'Roseli Berry'
+    }
+  ],
+  [
+    'rotombike',
+    {
+      desc: 'This bike can be combined with the Pokémon Rotom to not only do a turbo boost but also run on the water.',
+      gen: 8,
+      keyItem: true,
+      name: 'Rotom Bike',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotombike.png'
+    }
+  ],
+  [
+    'rotomcatalog',
+    {
+      desc: 'A catalog of devices that Rotom like. Use the catalog to have Rotom hop in and out of the various devices listed within.',
+      gen: 8,
+      keyItem: true,
+      name: 'Rotom Catalog',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotomcatalog.png'
     }
   ],
   [
@@ -2961,12 +4509,33 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'ruby',
+    {
+      desc: 'An exquisitely beautiful gem that has a red glow. It symbolizes passion.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Ruby',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png'
+    }
+  ],
+  [
+    'rulebook',
+    {
+      desc: 'It lists the rules for holding battles. For Link Battles, you may choose which set of rules you wish to use.',
+      gen: 4,
+      keyItem: true,
+      name: 'Rule Book',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rulebook.png'
+    }
+  ],
+  [
     'rustedshield',
     {
       desc: 'If held by a Zamazenta, this item changes its forme to Crowned Shield.',
       gen: 8,
-      name: 'Rusted Shield',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Rusted Shield'
     }
   ],
   [
@@ -2974,8 +4543,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Zacian, this item changes its forme to Crowned Sword.',
       gen: 8,
-      name: 'Rusted Sword',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Rusted Sword'
     }
   ],
   [
@@ -2992,8 +4561,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Spritzee into Aromatisse when traded.',
       gen: 6,
-      name: 'Sachet',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Sachet'
     }
   ],
   [
@@ -3007,10 +4576,10 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'safetygoggles',
     {
+      aliases: ['goggles'],
       desc: 'Holder is immune to powder moves and damage from Sandstorm or Hail.',
       gen: 6,
-      name: 'Safety Goggles',
-      aliases: ['goggles']
+      name: 'Safety Goggles'
     }
   ],
   [
@@ -3025,10 +4594,10 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'salacberry',
     {
+      aliases: ['salac'],
       desc: "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
       gen: 6,
-      name: 'Salac Berry',
-      aliases: ['salac']
+      name: 'Salac Berry'
     }
   ],
   [
@@ -3038,6 +4607,28 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Salamencite'
+    }
+  ],
+  [
+    'sapphire',
+    {
+      desc: 'An exquisitely beautiful gem that has a blue glow. It symbolizes honesty.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Sapphire',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png'
+    }
+  ],
+  [
+    'scanner',
+    {
+      desc: 'A device found inside Sea Mauville.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Scanner',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png'
     }
   ],
   [
@@ -3071,8 +4662,48 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 3,
-      name: 'Sea Incense',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Sea Incense'
+    }
+  ],
+  [
+    'sealbag',
+    {
+      desc: 'A tiny bag that can hold 10 Seals for decorating Poké Balls.',
+      gen: 4,
+      keyItem: true,
+      name: 'Seal Bag',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealbag.png'
+    }
+  ],
+  [
+    'sealcase',
+    {
+      desc: 'A case for storing Seals that can be applied to the exteriors of Poké Balls.',
+      gen: 4,
+      keyItem: true,
+      name: 'Seal Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealcase.png'
+    }
+  ],
+  [
+    'secretkey',
+    {
+      desc: 'A high-tech key that has to be used at a specific location. It emits a special electronic signal to open a door.',
+      gen: 1,
+      keyItem: true,
+      name: 'Secret Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretkey.png'
+    }
+  ],
+  [
+    'secretpotion',
+    {
+      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment.',
+      gen: 2,
+      keyItem: true,
+      name: 'SecretPotion',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretpotion.png'
     }
   ],
   [
@@ -3109,6 +4740,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'shinycharm',
+    {
+      desc: 'A shiny charm said to increase the chance of finding a Shiny Pokémon in the wild.',
+      gen: 5,
+      keyItem: true,
+      name: 'Shiny Charm',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/shinycharm.png'
+    }
+  ],
+  [
     'shinystone',
     {
       desc: 'Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.',
@@ -3122,8 +4763,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Electric type.",
       gen: 5,
-      name: 'Shock Drive',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Shock Drive'
     }
   ],
   [
@@ -3143,6 +4784,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'silphscope',
+    {
+      desc: 'A scope that lets you see what cannot usually be seen. It is made by Silph Co.',
+      gen: 1,
+      keyItem: true,
+      name: 'Silph Scope',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/silphscope.png'
+    }
+  ],
+  [
     'silverpowder',
     {
       desc: "Holder's Bug-type attacks have 1.2x power.",
@@ -3151,12 +4802,22 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'silverwing',
+    {
+      desc: 'A strange, silvery feather that sparkles.',
+      gen: 2,
+      keyItem: true,
+      name: 'Silver Wing',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/silverwing.png'
+    }
+  ],
+  [
     'sitrusberry',
     {
+      aliases: ['sitrus'],
       desc: 'Restores 1/4 max HP when at 1/2 max HP or less. Single use.',
       gen: 3,
-      name: 'Sitrus Berry',
-      aliases: ['sitrus']
+      name: 'Sitrus Berry'
     }
   ],
   [
@@ -3184,6 +4845,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Slowbronite'
+    }
+  ],
+  [
+    'slowpoketail',
+    {
+      desc: 'A very tasty tail of something. It can be sold at a high price to shops.',
+      gen: 2,
+      keyItem: true,
+      name: 'Slowpoketail',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/slowpoketail.png'
     }
   ],
   [
@@ -3229,12 +4900,43 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'soniasbook',
+    {
+      desc: "Professor Sonia's published writings. Her new discoveries about the Galar region's legends are recorded in this enjoyable read.",
+      gen: 8,
+      keyItem: true,
+      name: "Sonia's Book",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/sonia'sbook.png"
+    }
+  ],
+  [
+    'sootsack',
+    {
+      desc: 'A sack used to gather and hold volcanic ash.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'sootsack',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png'
+    }
+  ],
+  [
     'souldew',
     {
       desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
       gen: 3,
-      name: 'Soul Dew',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Soul Dew'
+    }
+  ],
+  [
+    'sparklingstone',
+    {
+      desc: 'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
+      gen: 7,
+      keyItem: true,
+      name: 'Sparkling Stone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sparklingstone.png'
     }
   ],
   [
@@ -3281,11 +4983,59 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'sprayduck',
+    {
+      desc: 'A watering can shaped like a Psyduck. It helps promote the healthy growth of any Berries planted in good, soft soil.',
+      gen: 4,
+      keyItem: true,
+      name: 'Sprayduck',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprayduck.png'
+    }
+  ],
+  [
+    'sprinklotad',
+    {
+      desc: 'A watering can shaped like a Lotad. It helps promote the healthy growth of any Berries planted in good, soft soil.',
+      gen: 6,
+      keyItem: true,
+      name: 'Sprinklotad',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprinklotad.png'
+    }
+  ],
+  [
+    'squirtbottle',
+    {
+      desc: 'A bottle used for watering plants in the Berry Pots.',
+      gen: 2,
+      keyItem: true,
+      name: 'Squirtbottle',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/squirtbottle.png'
+    }
+  ],
+  [
+    'ssticket',
+    {
+      desc: 'A ticket required for sailing on the ferry S.S. Aqua. It has a drawing of a ship on its front.',
+      gen: 1,
+      keyItem: true,
+      name: 'S.S. Ticket',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/s.s.ticket.png'
+    }
+  ],
+  [
     'starfberry',
     {
       desc: 'Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.',
       gen: 3,
       name: 'Starf Berry'
+    }
+  ],
+  [
+    'starsweet',
+    {
+      desc: 'Evolves Milcery into Alcremie when held and spun around.',
+      gen: 8,
+      name: 'Star Sweet'
     }
   ],
   [
@@ -3298,15 +5048,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'steelmemory',
-    {
-      desc: "Holder's Multi-Attack is Steel type.",
-      gen: 7,
-      name: 'Steel Memory',
-      isNonstandard: IsNonStandard.Past
-    }
-  ],
-  [
     'steeliumz',
     {
       desc: 'If holder has a Steel move, this item allows it to use a Steel Z-Move.',
@@ -3316,20 +5057,21 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'starsweet',
-    {
-      desc: 'Evolves Milcery into Alcremie when held and spun around.',
-      gen: 8,
-      name: 'Star Sweet'
-    }
-  ],
-  [
     'steelixite',
     {
       desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Steelixite'
+    }
+  ],
+  [
+    'steelmemory',
+    {
+      desc: "Holder's Multi-Attack is Steel type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Steel Memory'
     }
   ],
   [
@@ -3359,11 +5101,41 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'storagekey',
+    {
+      desc: "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City.",
+      gen: 4,
+      keyItem: true,
+      name: 'Storage Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/storagekey.png'
+    }
+  ],
+  [
     'strawberrysweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
       name: 'Strawberry Sweet'
+    }
+  ],
+  [
+    'suitekey',
+    {
+      desc: 'A key to one of the suites at a certain luxury hotel by a lake. For some odd reason, it often disappears.',
+      gen: 4,
+      keyItem: true,
+      name: 'Suite Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/suitekey.png'
+    }
+  ],
+  [
+    'sunflute',
+    {
+      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the sun.',
+      gen: 7,
+      keyItem: true,
+      name: 'Sun Flute',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sunflute.png'
     }
   ],
   [
@@ -3381,6 +5153,26 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon. ',
       gen: 1,
       name: 'Super Potion'
+    }
+  ],
+  [
+    'superrod',
+    {
+      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
+      gen: 1,
+      keyItem: true,
+      name: 'Super Rod',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/superrod.png'
+    }
+  ],
+  [
+    'surgebadge',
+    {
+      desc: 'A novelty badge that you can receive at the Kantonian Gym. Rumor has it that it imitates the Badge of a Gym somewhere.',
+      gen: 7,
+      keyItem: true,
+      name: 'Surge Badge',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/surgebadge.png'
     }
   ],
   [
@@ -3434,6 +5226,27 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'tea',
+    {
+      desc: 'Aromatic tea that has a slightly bitter taste. It soothes a dry throat.',
+      gen: 3,
+      keyItem: true,
+      name: 'tea',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tea.png'
+    }
+  ],
+  [
+    'teachytv',
+    {
+      desc: 'A television set that is tuned to a program with useful tips for novice Trainers.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Teachy TV',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png'
+    }
+  ],
+  [
     'terrainextender',
     {
       desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
@@ -3446,8 +5259,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Cubone or a Marowak, its Attack is doubled.',
       gen: 2,
-      name: 'Thick Club',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Thick Club'
     }
   ],
   [
@@ -3468,11 +5281,52 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'tidalbell',
+    {
+      desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
+      gen: 1,
+      keyItem: true,
+      name: 'Tidal Bell',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tidalbell.png'
+    }
+  ],
+  [
     'timerball',
     {
       desc: 'A Poké Ball that becomes better the more turns there are in a battle.',
       gen: 3,
       name: 'Timer Ball'
+    }
+  ],
+  [
+    'tmcase',
+    {
+      desc: "A case that holds TMs and HMs. It is attached to the Bag's compartment for important items.",
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'TM Case',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png'
+    }
+  ],
+  [
+    'tmvpass',
+    {
+      desc: 'A commuter pass that allows the holder to ride the TMV between Lumiose City and Kiloude City at any time.',
+      gen: 6,
+      keyItem: true,
+      name: 'TMV Pass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmvpass.png'
+    }
+  ],
+  [
+    'townmap',
+    {
+      desc: 'A very convenient map that can be viewed anytime. It even shows you your present location in the region.',
+      gen: 1,
+      keyItem: true,
+      name: 'Town Map',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/townmap.png'
     }
   ],
   [
@@ -3490,6 +5344,27 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Toxic Plate'
+    }
+  ],
+  [
+    'traveltrunk',
+    {
+      desc: 'A light and yet incredibly effective trunk, which can contain every last piece of clothing that can be bought.',
+      gen: 6,
+      keyItem: true,
+      name: 'Travel Trunk',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png'
+    }
+  ],
+  [
+    'tripass',
+    {
+      desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'tripass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
     }
   ],
   [
@@ -3527,12 +5402,22 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'unownreport',
+    {
+      desc: 'A report of all the discovered kinds of Unown.',
+      gen: 4,
+      keyItem: true,
+      name: 'Unown Report',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png'
+    }
+  ],
+  [
     'upgrade',
     {
       desc: 'Evolves Porygon into Porygon2 when traded.',
       gen: 2,
-      name: 'Up-Grade',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Up-Grade'
     }
   ],
   [
@@ -3563,11 +5448,42 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'vsrecorder',
+    {
+      desc: 'An amazing device that can record a battle between friends or the battles at certain special battle facilities.',
+      gen: 5,
+      keyItem: true,
+      name: 'Vs. Recorder',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png'
+    }
+  ],
+  [
+    'vsseeker',
+    {
+      desc: 'A device that indicates Trainers who want to battle. Its battery charges while you walk.',
+      gen: 3,
+      keyItem: true,
+      name: 'Vs. Seeker',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png'
+    }
+  ],
+  [
     'wacanberry',
     {
       desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.',
       gen: 4,
       name: 'Wacan Berry'
+    }
+  ],
+  [
+    'wailmerpail',
+    {
+      desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Wailmer Pail',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'
     }
   ],
   [
@@ -3580,12 +5496,21 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'wateriumz',
+    {
+      desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Waterium Z'
+    }
+  ],
+  [
     'watermemory',
     {
       desc: "Holder's Multi-Attack is Water type.",
       gen: 7,
-      name: 'Water Memory',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Water Memory'
     }
   ],
   [
@@ -3595,15 +5520,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 1,
       name: 'Water Stone',
       shortDesc: 'Evolves certain species of Pokémon when used.'
-    }
-  ],
-  [
-    'wateriumz',
-    {
-      desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
-      gen: 7,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Waterium Z'
     }
   ],
   [
@@ -3620,17 +5536,17 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 4,
-      name: 'Wave Incense',
-      isNonstandard: IsNonStandard.Unobtainable
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Wave Incense'
     }
   ],
   [
     'weaknesspolicy',
     {
+      aliases: ['wp'],
       desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.',
       gen: 6,
-      name: 'Weakness Policy',
-      aliases: ['wp']
+      name: 'Weakness Policy'
     }
   ],
   [
@@ -3647,8 +5563,8 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Swirlix into Slurpuff when traded.',
       gen: 6,
-      name: 'Whipped Dream',
-      isNonstandard: IsNonStandard.Past
+      isNonstandard: IsNonStandard.Past,
+      name: 'Whipped Dream'
     }
   ],
   [
@@ -3684,1948 +5600,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'yacheberry',
-    {
-      desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
-      gen: 4,
-      name: 'Yache Berry',
-      aliases: ['yache']
-    }
-  ],
-  [
-    'zapplate',
-    {
-      desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
-      gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
-      name: 'Zap Plate'
-    }
-  ],
-  [
-    'zoomlens',
-    {
-      desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
-      gen: 4,
-      name: 'Zoom Lens'
-    }
-  ],
-  [
-    'acrobike',
-    {
-      desc: 'This folding bike allows you to perform actions such as wheelies and bunny hops.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Acro Bike',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/acrobike.png'
-    }
-  ],
-  [
-    'adventureguide',
-    {
-      desc: 'A compact device that automatically collects and records advice when a Trainer is out on an adventure.',
-      gen: 6,
-      keyItem: true,
-      name: 'Adventure Guide',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/adventureguide.png'
-    }
-  ],
-  [
-    'apricornbox',
-    {
-      desc: 'A handy box where you can store up to 99 of each kind of Apricorn.',
-      gen: 4,
-      keyItem: true,
-      name: 'Apricorn Box',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/apricornbox.png'
-    }
-  ],
-  [
-    'aquasuit',
-    {
-      desc: 'A suit made with the collective technological know-how of Team Aqua. It can withstand any impact.',
-      gen: 6,
-      keyItem: true,
-      name: 'Aqua Suit',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/aquasuit.png'
-    }
-  ],
-  [
-    'auroraticket',
-    {
-      desc: 'A ticket required to board the ship to Birth Island. It glows beautifully.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Aurora Ticket',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/auroraticket.png'
-    }
-  ],
-  [
-    'autograph',
-    {
-      desc: 'The autograph you got from the Vermilion City Gym Leader, Lt. Surge. He wrote, "Good luck!"',
-      gen: 7,
-      keyItem: true,
-      name: 'Autograph'
-    }
-  ],
-  [
-    'azureflute',
-    {
-      desc: 'A flute that puts out echoing sounds that do not seem to be of this world. No one knows who made it.',
-      gen: 4,
-      keyItem: true,
-      name: 'Azure Flute',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/azureflute.png'
-    }
-  ],
-  [
-    'bandautograph',
-    {
-      desc: "It's signed by all members of the Galar region's most charismatic band, the Maximizers.",
-      gen: 8,
-      keyItem: true,
-      name: 'Band Autograph',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bandautograph.png'
-    }
-  ],
-  [
-    'basementkey',
-    {
-      desc: 'A key that opens a door in the Goldenrod Tunnel.',
-      gen: 2,
-      keyItem: true,
-      name: 'Basement Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/basementkey.png'
-    }
-  ],
-  [
-    'berrypots',
-    {
-      desc: 'Handy containers for cultivating Berries wherever you go.',
-      gen: 4,
-      keyItem: true,
-      name: 'Berry Pots',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypots.png'
-    }
-  ],
-  [
-    'berrypouch',
-    {
-      desc: "A pouch for carrying Berries. It is attached to the bag's compartment for important items.",
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Berry Pouch',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/berrypouch.png'
-    }
-  ],
-  [
-    'bicycle',
-    {
-      desc: 'A folding bike that enables a rider to get around much faster than with Running Shoes.',
-      gen: 1,
-      keyItem: true,
-      name: 'Bicycle',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bicycle.png'
-    }
-  ],
-  [
-    'bikevoucher',
-    {
-      desc: 'Take this voucher to the BIKE SHOP in CERULEAN CITY and exchange it for a bicycle.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Bike Voucher',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bikevoucher.png'
-    }
-  ],
-  [
-    'bluecard',
-    {
-      desc: "A card to save points for the Buena's Password show.",
-      gen: 2,
-      keyItem: true,
-      name: 'Blue Card',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluecard.png'
-    }
-  ],
-  [
-    'bluepetal',
-    {
-      desc: "A pressed flower petal you receive from Lana during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Blue Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/bluepetal.png'
-    }
-  ],
-  [
-    'campinggear',
-    {
-      desc: 'Everything you need to set up a tent and get cooking in a Wild Area or at a camping spot.',
-      gen: 8,
-      keyItem: true,
-      name: 'Camping Gear',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/campinggear.png'
-    }
-  ],
-  [
-    'cardkey',
-    {
-      desc: 'A card key that opens a shutter in the Radio Tower.',
-      gen: 1,
-      keyItem: true,
-      name: 'Card Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/cardkey.png'
-    }
-  ],
-  [
-    'catchingcharm',
-    {
-      desc: "Holding it is said to increase the chance of getting a critical catch. Curiously, the charm doesn't shake much.",
-      gen: 8,
-      keyItem: true,
-      name: 'Catching Charm',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/catchingcharm.png'
-    }
-  ],
-  [
-    'clearbell',
-    {
-      desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
-      gen: 2,
-      keyItem: true,
-      name: 'Clear Bell',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png'
-    }
-  ],
-  [
-    'coincase',
-    {
-      desc: 'A case for holding coins obtained at the Game Corner. It can hold up to 50,000 coins.',
-      gen: 1,
-      keyItem: true,
-      name: 'Coin Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coincase.png'
-    }
-  ],
-  [
-    'colressmchn',
-    {
-      desc: "A special device that wrings out the potential of Pokémon. It's an imperfect prototype.",
-      gen: 5,
-      keyItem: true,
-      name: 'Colress MCHN',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/colressmchn.png'
-    }
-  ],
-  [
-    'contestcostume',
-    {
-      desc: 'A very cool suit to be worn during the Contest Spectacular.',
-      gen: 6,
-      keyItem: true,
-      name: 'Contest Costume',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestcostume.png'
-    }
-  ],
-  [
-    'contestpass',
-    {
-      desc: 'A pass required for entering Pokémon Contests. It has a drawing of an award ribbon on its front.',
-      gen: 3,
-      keyItem: true,
-      name: 'Contest Pass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/contestpass.png'
-    }
-  ],
-  [
-    'coupon1',
-    {
-      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
-      gen: 4,
-      keyItem: true,
-      name: 'Coupon 1',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon1.png'
-    }
-  ],
-  [
-    'coupon2',
-    {
-      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
-      gen: 4,
-      keyItem: true,
-      name: 'Coupon 2',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon2.png'
-    }
-  ],
-  [
-    'coupon3',
-    {
-      desc: 'A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed.',
-      gen: 4,
-      keyItem: true,
-      name: 'Coupon 3',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/coupon3.png'
-    }
-  ],
-  [
-    'dnasplicers',
-    {
-      desc: 'A splicer that fuses Kyurem and a certain Pokémon. They are said to have been one in the beginning.',
-      gen: 5,
-      keyItem: true,
-      name: 'DNA Splicers',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dnasplicers.png'
-    }
-  ],
-  [
-    'darkstone',
-    {
-      desc: "Zekrom's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
-      gen: 5,
-      keyItem: true,
-      name: 'Dark Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/darkstone.png'
-    }
-  ],
-  [
-    'devongoods',
-    {
-      desc: "A package that contains DEVON's machine parts.",
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Devon Goods',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devongoods.png'
-    }
-  ],
-  [
-    'devonparts',
-    {
-      desc: 'A case that contains mechanical parts of some sort made by the Devon Corporation.',
-      gen: 6,
-      keyItem: true,
-      name: 'Devon Parts',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonparts.png'
-    }
-  ],
-  [
-    'devonscope',
-    {
-      desc: 'A special device made by Devon Corporation that signals the presence of any unseen Pokémon.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Devon Scope',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscope.png'
-    }
-  ],
-  [
-    'devonscubagear',
-    {
-      desc: 'A device made by Devon Corporation that provides oxygen to users during the use of Dive.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Devon Scuba Gear',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/devonscubagear.png'
-    }
-  ],
-  [
-    'dowsingmchn',
-    {
-      desc: "A high-tech machine that shows the location of invisible items. It's attached to the head when in use.",
-      gen: 4,
-      keyItem: true,
-      name: 'Dowsing MCHN',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmchn.png'
-    }
-  ],
-  [
-    'dowsingmachine',
-    {
-      desc: "This high-tech machine shows the location of invisible items. It's attached to the head when in use.",
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Dowsing Machine',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dowsingmachine.png'
-    }
-  ],
-  [
-    'dragonskull',
-    {
-      desc: 'A skull of a Pokémon that was said to have braved the angry waters to fly around the world.',
-      gen: 5,
-      keyItem: true,
-      name: 'Dragon Skull',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonskull.png'
-    }
-  ],
-  [
-    'droppeditem',
-    {
-      desc: "This item, when found, causes you to be in contact with the owner who will then request for it to be returned From there, you will be called when you enter random areas by the owner of the item. After the 10th call, the person will call you and tell you to meet in Nimbasa to return their Item. When you do, they will be added to your Xtransceiver. Call them to total 30 times, but you can only call from places which fulfill the conditions. On the 30th call they'll tell you they want to meet at Nimbasa City where they'll ride the Ferris Wheel with you. Call them to total 50 times, in the 40th call they'll be 'SOUND ONLY', in the 50th call they'll be wearing their work clothes, and cut the line in a second or so. Call them a 51st time. wait a day and then call them again and they'll meet you in Nimbasa City and offer to trade, willing to have any Pokémon. This can be repeated each day to go through all of their Pokémon. The Pokémon you receive varies based on your gender",
-      gen: 5,
-      keyItem: true,
-      name: 'Dropped Item',
-      shortDesc: 'The Xtransceiver found at the Nimbasa City amusement park. It seems it belongs to a boy or girl.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/droppeditem.png'
-    }
-  ],
-  [
-    'dynamaxband',
-    {
-      desc: 'A Wishing Star has been affixed to it. It lets out a light that allows Pokémon to Dynamax when at a Power Spot.',
-      gen: 8,
-      keyItem: true,
-      name: 'Dynamax Band',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/dynamaxband.png'
-    }
-  ],
-  [
-    'eggcard',
-    {
-      desc: 'This item is to be taken to the Breeding Centre in Route 34 and exchanged for the Odd Egg which may hold Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.',
-      gen: 2,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Egg Card',
-      shortDesc: 'Might be used at the Pokémon Communication Centre.'
-    }
-  ],
-  [
-    'elevatorkey',
-    {
-      desc: "A card key that activates the elevator in Lysandre Labs. It is emblazoned with Team Flare's logo.",
-      gen: 7,
-      keyItem: true,
-      name: 'Elevator Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png'
-    }
-  ],
-  [
-    'endorsement',
-    {
-      desc: "A letter of recommendation that you'll need in order to participate in the Gym Challenge.",
-      gen: 8,
-      keyItem: true,
-      name: 'Endorsement',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/endorsement.png'
-    }
-  ],
-  [
-    'enigmastone',
-    {
-      desc: "A crystal ball that was excavated from the ground. It's a very beautiful stone that is covered with bits of rock and earth.",
-      gen: 4,
-      keyItem: true,
-      name: 'Enigma Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmastone.png'
-    }
-  ],
-  [
-    'enigmaticcard',
-    {
-      desc: 'A mysterious card. Written on it is a request for you to go to a guest room in an Akala motel on Route 8.',
-      gen: 7,
-      keyItem: true,
-      name: 'Enigmatic Card',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/enigmaticcard.png'
-    }
-  ],
-  [
-    'eonflute',
-    {
-      desc: 'A flute that can be used to summon Latios or Latias no matter where you are.',
-      gen: 6,
-      keyItem: true,
-      name: 'Eon Flute',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonflute.png'
-    }
-  ],
-  [
-    'eonticket',
-    {
-      desc: 'The ticket required for sailing on a ferry to the Southern Island. Does Norman, the Petalburg Gym Leader, know a secret?!',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Eon Ticket',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/eonticket.png'
-    }
-  ],
-  [
-    'escaperope',
-    {
-      desc: 'A long and durable rope. Use it to escape instantly from locations like caves or dungeons. It can be used any number of times.',
-      gen: 8,
-      keyItem: true,
-      name: 'Escape Rope',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/escaperope.png'
-    }
-  ],
-  [
-    'expshare',
-    {
-      desc: 'Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.',
-      gen: 2,
-      keyItem: true,
-      name: 'Exp. Share',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/exp.share.png'
-    }
-  ],
-  [
-    'explorerkit',
-    {
-      desc: 'A bag filled with convenient tools for exploring. It provides access to the Underground in the Sinnoh region.',
-      gen: 4,
-      keyItem: true,
-      name: 'Explorer Kit',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/explorerkit.png'
-    }
-  ],
-  [
-    'famechecker',
-    {
-      desc: "A device that enables you to recall what you've heard and seen about famous people.",
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Fame Checker',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/famechecker.png'
-    }
-  ],
-  [
-    'fashioncase',
-    {
-      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
-      gen: 4,
-      keyItem: true,
-      name: 'Fashion Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/fashioncase.png'
-    }
-  ],
-  [
-    'fishingrod',
-    {
-      desc: 'Use it by the water to fish up various kinds of Pokémon.',
-      gen: 1,
-      keyItem: true,
-      name: 'Fishing Rod',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/fishingrod.png'
-    }
-  ],
-  [
-    'foragebag',
-    {
-      desc: "A bag to carry ingredients gathered during Mallow's trial in the jungle.",
-      gen: 7,
-      keyItem: true,
-      name: 'foragebag',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/foragebag.png'
-    }
-  ],
-  [
-    'gbsounds',
-    {
-      desc: "A music player that allows you to listen to nostalgic songs. It's operated with the flip of a single switch.",
-      gen: 4,
-      keyItem: true,
-      name: 'GB Sounds',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gbsounds.png'
-    }
-  ],
-  [
-    'gsball',
-    {
-      desc: 'The mysterious BALL.',
-      gen: 2,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'GS Ball',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gsball.png'
-    }
-  ],
-  [
-    'galactickey',
-    {
-      desc: 'A card key for disengaging the security systems in the Galactic HQ. Losing it can result in punishment, apparently.',
-      gen: 4,
-      keyItem: true,
-      name: 'GS Ball',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/galactickey.png'
-    }
-  ],
-  [
-    'gogoggles',
-    {
-      desc: 'Nifty goggles to protect eyes from desert sandstorms.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Go-Goggles',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/go-goggles.png'
-    }
-  ],
-  [
-    'godstone',
-    {
-      desc: 'A rare stone',
-      gen: 5,
-      keyItem: true,
-      name: 'God Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/godstone.png'
-    }
-  ],
-  [
-    'goldteeth',
-    {
-      desc: "A set of golden false teeth lost by the Safari Zone's warden. They make his smile sparkle.",
-      gen: 1,
-      keyItem: true,
-      name: 'Gold Teeth',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/goldteeth.png'
-    }
-  ],
-  [
-    'goodrod',
-    {
-      desc: 'A new, good-quality fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      gen: 1,
-      keyItem: true,
-      name: 'Good Rod',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/goodrod.png'
-    }
-  ],
-  [
-    'gracidea',
-    {
-      desc: 'A flower sometimes bundled in bouquets to convey gratitude on special occasions, such as birthdays.',
-      gen: 4,
-      keyItem: true,
-      name: 'Gracidea',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gracidea.png'
-    }
-  ],
-  [
-    'gram1',
-    {
-      desc: 'An important letter that Wingull delivers.',
-      gen: 5,
-      keyItem: true,
-      name: 'Gram 1',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram1.png'
-    }
-  ],
-  [
-    'gram2',
-    {
-      desc: 'An important letter that Wingull delivers.',
-      gen: 5,
-      keyItem: true,
-      name: 'Gram 2',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram2.png'
-    }
-  ],
-  [
-    'gram3',
-    {
-      desc: 'An important letter that Wingull delivers.',
-      gen: 5,
-      keyItem: true,
-      name: 'Gram 3',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/gram3.png'
-    }
-  ],
-  [
-    'greenpetal',
-    {
-      desc: "A pressed flower petal you receive from Mallow during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Green Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/greenpetal.png'
-    }
-  ],
-  [
-    'grubbyhanky',
-    {
-      desc: 'A handkerchief dropped by a regular at Café Warehouse. It smells faintly like a Pokémon.',
-      gen: 5,
-      keyItem: true,
-      name: 'Grubby Hanky',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/grubbyhanky.png'
-    }
-  ],
-  [
-    'hitechearbuds',
-    {
-      desc: 'Strange earbuds that allow you to freely control the volume of various sounds.',
-      gen: 8,
-      keyItem: true,
-      name: 'Hi-tech Earbuds',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/hi-techearbuds.png'
-    }
-  ],
-  [
-    'holocaster',
-    {
-      desc: "A device that allows users to receive and view hologram clips at any time. It's also used to chat with others.",
-      gen: 6,
-      keyItem: true,
-      name: 'Holo Caster',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/holocaster.png'
-    }
-  ],
-  [
-    'honorofkalos',
-    {
-      desc: 'A precious symbol that is awarded only to an individual who has done great things for the Kalos region.',
-      gen: 6,
-      keyItem: true,
-      name: 'Honor of Kalos',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/honorofkalos.png'
-    }
-  ],
-  [
-    'ilimasnormaliumz',
-    {
-      desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
-      gen: 7,
-      keyItem: true,
-      name: "Ilima's Normalium Z",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
-    }
-  ],
-  [
-    'intriguingstone',
-    {
-      desc: "A rather curious stone that might appear valuable to some. It's all in the eye of the beholder.",
-      gen: 6,
-      keyItem: true,
-      name: 'Intriguing Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/intriguingstone.png'
-    }
-  ],
-  [
-    'itemfinder',
-    {
-      desc: 'A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.',
-      gen: 1,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'itemfinder',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/itemfinder.png'
-    }
-  ],
-  [
-    'jadeorb',
-    {
-      desc: "A shiny green orb that is said to have a legend tied to it. It's known to have a deep connection with the Hoenn region.",
-      gen: 4,
-      keyItem: true,
-      name: 'Jade Orb',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/jadeorb.png'
-    }
-  ],
-  [
-    'journal',
-    {
-      desc: 'A notebook that keeps a day-to-day record of your adventure so far.',
-      gen: 4,
-      keyItem: true,
-      name: 'journal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/journal.png'
-    }
-  ],
-  [
-    'keystone',
-    {
-      desc: 'A stone filled with an unexplained power. It makes Pokémon that battle with a Mega Stone Mega Evolve.',
-      gen: 6,
-      keyItem: true,
-      name: 'Key Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keystone.png'
-    }
-  ],
-  [
-    'keytoroom1',
-    {
-      desc: 'A key that opens a door inside Sea Mauville',
-      gen: 6,
-      keyItem: true,
-      name: 'Key to Room 1',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom1.png'
-    }
-  ],
-  [
-    'keytoroom2',
-    {
-      desc: 'A key that opens a door inside Sea Mauville',
-      gen: 6,
-      keyItem: true,
-      name: 'Key to Room 2',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom2.png'
-    }
-  ],
-  [
-    'keytoroom4',
-    {
-      desc: 'A key that opens a door inside Sea Mauville',
-      gen: 6,
-      keyItem: true,
-      name: 'Key to Room 4',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom4.png'
-    }
-  ],
-  [
-    'keytoroom6',
-    {
-      desc: 'A key that opens a door inside Sea Mauville',
-      gen: 6,
-      keyItem: true,
-      name: 'Key to Room 6',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom6.png'
-    }
-  ],
-  [
-    'leftpokeball',
-    {
-      desc: "A Poké Ball with a Pokémon that lost its Trainer inside. It seems to be from Ula'ula Island.",
-      gen: 7,
-      keyItem: true,
-      name: 'Left Poké Ball',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/leftpokeball.png'
-    }
-  ],
-  [
-    'legendplate',
-    {
-      desc: 'A stone tablet imbued with the essence of all creation. When used on a certain Pokémon, it allows that Pokémon to gain the power of every type there is.',
-      gen: 8,
-      keyItem: true,
-      name: 'Legend Plate',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/legendplate.png'
-    }
-  ],
-  [
-    'lenscase',
-    {
-      desc: 'A rather chic-looking case for carrying contact lenses.',
-      gen: 6,
-      keyItem: true,
-      name: 'Lens Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lenscase.png'
-    }
-  ],
-  [
-    'letter',
-    {
-      desc: 'An extremely important letter to Steven from the President of Devon Corporation.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Letter',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/letter.png'
-    }
-  ],
-  [
-    'libertypass',
-    {
-      desc: 'A special pass to go to Liberty Garden. Board the ship in Castelia City.',
-      gen: 5,
-      keyItem: true,
-      name: 'Liberty Pass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/libertypass.png'
-    }
-  ],
-  [
-    'liftkey',
-    {
-      desc: 'A key that operates the elevator in the Team Rocket Hideout. It bears the Team Rocket logo.',
-      gen: 1,
-      keyItem: true,
-      name: 'Lift Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/liftkey.png'
-    }
-  ],
-  [
-    'lightstone',
-    {
-      desc: "Reshiram's body was destroyed and changed into this stone. It is said to be waiting for the emergence of a hero.",
-      gen: 5,
-      keyItem: true,
-      name: 'Light Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lightstone.png'
-    }
-  ],
-  [
-    'lockcapsule',
-    {
-      desc: 'A sturdy Capsule that can only be opened with a special key.',
-      gen: 4,
-      keyItem: true,
-      name: 'Lock Capsule',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lockcapsule.png'
-    }
-  ],
-  [
-    'lookerticket',
-    {
-      desc: "A ticket that was handmade by Looker. It's decorated with a liberal amount of glittery paint.",
-      gen: 6,
-      keyItem: true,
-      name: 'Looker Ticket',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lookerticket.png'
-    }
-  ],
-  [
-    'lootsack',
-    {
-      desc: 'A sturdy, spacious bag that is used to carry any treasures or loot obtained in the coal mine.',
-      gen: 4,
-      keyItem: true,
-      name: 'Loot Sack',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lootsack.png'
-    }
-  ],
-  [
-    'lostitem',
-    {
-      desc: 'The Clefairy doll that was lost by the Copycat.',
-      gen: 2,
-      keyItem: true,
-      name: 'Lost Item',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lostitem.png'
-    }
-  ],
-  [
-    'lunarwing',
-    {
-      desc: "A feather that glows like the moon. It's said to possess the power to dispel nightmares.",
-      gen: 4,
-      keyItem: true,
-      name: 'Lunar Wing',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/lunarwing.png'
-    }
-  ],
-  [
-    'machbike',
-    {
-      desc: 'This folding Bike more than doubles your movement speed.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Mach Bike',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/machbike.png'
-    }
-  ],
-  [
-    'machinepart',
-    {
-      desc: 'An important part of a machine that was stolen from the Power Plant.',
-      gen: 2,
-      keyItem: true,
-      name: 'Machine Part',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/machinepart.png'
-    }
-  ],
-  [
-    'magmaemblem',
-    {
-      desc: "A medal-like item in the same shape as Team Magma's mark.",
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Magma Emblem',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmaemblem.png'
-    }
-  ],
-  [
-    'magmastone',
-    {
-      desc: 'A stone formed by boulders melting in intensely hot magma, then hardening. Magma remains sealed inside it.',
-      gen: 4,
-      keyItem: true,
-      name: 'Magma Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmastone.png'
-    }
-  ],
-  [
-    'magmasuit',
-    {
-      desc: 'A suit made with the collective technological know-how of Team Magma. It can withstand any impact.',
-      gen: 6,
-      keyItem: true,
-      name: 'Magma Suit',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/magmasuit.png'
-    }
-  ],
-  [
-    'makeupbag',
-    {
-      desc: 'A rather chic-looking case for carrying lipsticks.',
-      gen: 7,
-      keyItem: true,
-      name: 'Make-Up Bag',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/make-upbag.png'
-    }
-  ],
-  [
-    'medalbox',
-    {
-      desc: 'A box-shaped machine that stores Medals and Medal information.',
-      gen: 5,
-      keyItem: true,
-      name: 'Medal Box',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/medalbox.png'
-    }
-  ],
-  [
-    'megabracelet',
-    {
-      desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Mega Bracelet',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
-    }
-  ],
-  [
-    'megaring',
-    {
-      desc: 'This ring contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
-      gen: 6,
-      keyItem: true,
-      name: 'Mega Ring',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/megaring.png'
-    }
-  ],
-  [
-    'membercard',
-    {
-      desc: 'A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago.',
-      gen: 4,
-      keyItem: true,
-      name: 'Member Card',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/membercard.png'
-    }
-  ],
-  [
-    'meteorite',
-    {
-      desc: "A meteorite that you got at Mt. Chimney. Some sort of pattern has risen to the surface, and it's shining with seven colors of light.",
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Meteorite',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteorite.png'
-    }
-  ],
-  [
-    'meteoriteshard',
-    {
-      desc: "One of the fragments of a Meteorite from Granite Cave. It's faintly warm to the touch.",
-      gen: 6,
-      keyItem: true,
-      name: 'Meteorite Shard',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/meteoriteshard.png'
-    }
-  ],
-  [
-    'moonflute',
-    {
-      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the moon.',
-      gen: 7,
-      keyItem: true,
-      name: 'Moon Flute',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/moonflute.png'
-    }
-  ],
-  [
-    'mysteryegg',
-    {
-      desc: "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown.",
-      gen: 2,
-      keyItem: true,
-      name: 'Mystery Egg',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysteryegg.png'
-    }
-  ],
-  [
-    'mysticticket',
-    {
-      desc: 'A ticket required to board the ship to Navel Rock. It glows with a mystic light.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'MysticTicket',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/mysticticket.png'
-    }
-  ],
-  [
-    'nlunarizer',
-    {
-      desc: 'A machine to fuse and separate Necrozma, which needs light, and Lunala.',
-      gen: 7,
-      keyItem: true,
-      name: 'N-Lunarizer',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-lunarizer.png'
-    }
-  ],
-  [
-    'nsolarizer',
-    {
-      desc: 'A machine to fuse and separate Necrozma, which needs light, and Solgaleo.',
-      gen: 7,
-      name: 'N-Solarizer',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/n-solarizer.png'
-    }
-  ],
-  [
-    'oaksletter',
-    {
-      desc: 'A letter from Professor Oak. Written in it is a request for you to go to Route 224.',
-      gen: 4,
-      keyItem: true,
-      name: "Oak's Letter",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sletter.png"
-    }
-  ],
-  [
-    'oaksparcel',
-    {
-      desc: "A parcel to be delivered to Prof. Oak from Viridian City's Pokémon Mart.",
-      gen: 1,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: "Oak's Parcel",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/oak'sparcel.png"
-    }
-  ],
-  [
-    'oldcharm',
-    {
-      desc: 'An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town.',
-      gen: 4,
-      keyItem: true,
-      name: 'Old Charm',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldcharm.png'
-    }
-  ],
-  [
-    'oldletter',
-    {
-      desc: 'A letter entrusted to you by a girl, to be delivered to a boy. Strangely, it looks old to you.',
-      gen: 8,
-      keyItem: true,
-      name: 'Old Letter',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldletter.png'
-    }
-  ],
-  [
-    'oldrod',
-    {
-      desc: 'An old and beat-up fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      gen: 1,
-      keyItem: true,
-      name: 'Old Rod',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldrod.png'
-    }
-  ],
-  [
-    'oldseamap',
-    {
-      desc: 'A chart that can take you to Faraway Island.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Old Sea Map',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/oldseamap.png'
-    }
-  ],
-  [
-    'orangepetal',
-    {
-      desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Orange Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/orangepetal.png'
-    }
-  ],
-  [
-    'ovalcharm',
-    {
-      desc: 'An oval charm said to increase the chance of Pokémon Eggs being found at the Nursery.',
-      gen: 5,
-      keyItem: true,
-      name: 'Oval Charm',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ovalcharm.png'
-    }
-  ],
-  [
-    'pairoftickets',
-    {
-      desc: 'Tickets for two to the astronomical show being held at the Mossdeep Space Center.',
-      gen: 6,
-      keyItem: true,
-      name: 'Pair of Tickets',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pairoftickets.png'
-    }
-  ],
-  [
-    'palpad',
-    {
-      desc: 'A convenient notepad that is used to register your friends and friend codes and keep a record of your gameplay.',
-      gen: 4,
-      keyItem: true,
-      name: 'palpad',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/palpad.png'
-    }
-  ],
-  [
-    'parcel',
-    {
-      desc: "A parcel entrusted into your care. You're supposed to deliver it to your childhood friend who left Twinleaf Town.",
-      gen: 4,
-      keyItem: true,
-      name: 'Parcel',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/parcel.png'
-    }
-  ],
-  [
-    'pass',
-    {
-      desc: "A pass required for riding the Magnet Train. It allows you to ride whenever and however much you'd like.",
-      gen: 2,
-      keyItem: true,
-      name: 'Pass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pass.png'
-    }
-  ],
-  [
-    'permit',
-    {
-      desc: 'A permit that is needed to enter the Nature Preserve. Not many know about it.',
-      gen: 5,
-      keyItem: true,
-      name: 'Permit',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/permit.png'
-    }
-  ],
-  [
-    'photoalbum',
-    {
-      desc: 'A nice photo album for storing all the photos taken along your adventure.',
-      gen: 4,
-      keyItem: true,
-      name: 'Photo Album',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/photoalbum.png'
-    }
-  ],
-  [
-    'pinkpetal',
-    {
-      desc: "A pressed flower petal you receive from Mina during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Pink Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pinkpetal.png'
-    }
-  ],
-  [
-    'plasmacard',
-    {
-      desc: 'A card key needed to enter the password inside the Plasma Frigate.',
-      gen: 5,
-      keyItem: true,
-      name: 'Plasma Card',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/plasmacard.png'
-    }
-  ],
-  [
-    'poffincase',
-    {
-      desc: 'A case for storing Poffins cooked from Berries.',
-      gen: 4,
-      keyItem: true,
-      name: 'Poffin Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/poffincase.png'
-    }
-  ],
-  [
-    'pointcard',
-    {
-      desc: 'A card that lists how many Battle Points you have earned.',
-      gen: 4,
-      keyItem: true,
-      name: 'Point Card',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pointcard.png'
-    }
-  ],
-  [
-    'pokeradar',
-    {
-      desc: 'A tool that can search out Pokémon that are hiding in the tall grass. Its battery is recharged as you walk.',
-      gen: 4,
-      keyItem: true,
-      name: 'Poké Radar',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeradar.png'
-    }
-  ],
-  [
-    'pokeblockkit',
-    {
-      desc: 'A set containing a Berry Blender for making Pokéblocks and a Pokéblock Case for storing Pokéblocks.',
-      gen: 6,
-      keyItem: true,
-      name: 'Pokéblock Kit',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockkit.png'
-    }
-  ],
-  [
-    'pokeblockcase',
-    {
-      desc: 'A case for holding Pokéblock made with a Berry Blender.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Pokéblock Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeblockcase.png'
-    }
-  ],
-  [
-    'pokeflute',
-    {
-      desc: 'A flute that can play with such a beautiful tone that even sleeping Pokémon find themselves woken up.',
-      gen: 1,
-      keyItem: true,
-      name: 'Poké Flute',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokeflute.png'
-    }
-  ],
-  [
-    'pokemonboxlink',
-    {
-      desc: "A device that allows you to access the Pokémon storage system. There are some places where it won't work.",
-      gen: 8,
-      keyItem: true,
-      name: 'Pokémon Box Link',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png'
-    }
-  ],
-  [
-    'powderjar',
-    {
-      desc: 'A jar for storing Berry Powder made using a Berry Crusher.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Powder Jar',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/powderjar.png'
-    }
-  ],
-  [
-    'powerplantpass',
-    {
-      desc: 'This pass serves as an ID card for gaining access to the Power Plant that lies along Route 13.',
-      gen: 6,
-      keyItem: true,
-      name: 'Power Plant Pass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/powerplantpass.png'
-    }
-  ],
-  [
-    'prisonbottle',
-    {
-      desc: 'A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.',
-      gen: 6,
-      keyItem: true,
-      name: 'Prison Bottle',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/prisonbottle.png'
-    }
-  ],
-  [
-    'profsletter',
-    {
-      desc: 'A letter that Professor Sycamore wrote to your mother. A faint but pleasant perfume seems to cling to the paper.',
-      gen: 6,
-      keyItem: true,
-      name: "Prof's Letter",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/prof'sletter.png"
-    }
-  ],
-  [
-    'professorsmask',
-    {
-      desc: 'The mask that belongs to The Masked Royal. This pro wrestler apparently sews his mask on a machine himself.',
-      gen: 7,
-      keyItem: true,
-      name: "Professor's Mask",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/professor'smask.png"
-    }
-  ],
-  [
-    'propcase',
-    {
-      desc: 'A lovely case to store colorful Props for your Pokémon to wear in a musical.',
-      gen: 5,
-      keyItem: true,
-      name: 'Prop Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/propcase.png'
-    }
-  ],
-  [
-    'purplepetal',
-    {
-      desc: "A pressed flower petal you receive from Nanu during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Purple Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/purplepetal.png'
-    }
-  ],
-  [
-    'ragecandybar',
-    {
-      desc: "Mahogany Town's famous candy. It can be used once to heal all the status conditions of a Pokémon.",
-      gen: 2,
-      keyItem: true,
-      name: 'Rage Candy Bar',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ragecandybar.png'
-    }
-  ],
-  [
-    'rainbowflower',
-    {
-      desc: "A flower made of the petals you received from captains. It's proof that your growth has been recognized by them.",
-      gen: 7,
-      keyItem: true,
-      name: 'Rainbow Flower',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowflower.png'
-    }
-  ],
-  [
-    'rainbowpass',
-    {
-      desc: 'A pass for ferries between Vermilion and the Sevii Islands. It features a drawing of a rainbow.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Rainbow Pass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowpass.png'
-    }
-  ],
-  [
-    'rainbowwing',
-    {
-      desc: 'A mystical rainbow feather that sparkles.',
-      gen: 2,
-      keyItem: true,
-      name: 'Rainbow Wing',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rainbowwing.png'
-    }
-  ],
-  [
-    'redchain',
-    {
-      desc: 'A mythical chain that is said to link the Legendary Pokémon that created the Sinnoh region.',
-      gen: 4,
-      keyItem: true,
-      name: 'Red Chain',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redchain.png'
-    }
-  ],
-  [
-    'redpetal',
-    {
-      desc: "A pressed flower petal you receive from Kiawe during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Red Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redpetal.png'
-    }
-  ],
-  [
-    'redscale',
-    {
-      desc: 'A scale from a red Gyarados. It glows red like a flame.',
-      gen: 2,
-      keyItem: true,
-      name: 'Red Scale',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/redscale.png'
-    }
-  ],
-  [
-    'revealglass',
-    {
-      desc: "A looking glass that reveals the truth. It's a mysterious glass that returns a Pokémon to its original shape.",
-      gen: 5,
-      keyItem: true,
-      name: 'Reveal Glass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/revealglass.png'
-    }
-  ],
-  [
-    'ridepager',
-    {
-      desc: 'By entering certain numbers on this pager, you can summon Ride Pokémon in an instant.',
-      gen: 7,
-      keyItem: true,
-      name: 'Ride Pager',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ridepager.png'
-    }
-  ],
-  [
-    'rm1key',
-    {
-      desc: 'A key that opens a door inside the Abandoned Ship.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Rm. 1 Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.1key.png'
-    }
-  ],
-  [
-    'rm2key',
-    {
-      desc: 'A key that opens a door inside the Abandoned Ship.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Rm. 2 Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.2key.png'
-    }
-  ],
-  [
-    'rm4key',
-    {
-      desc: 'A key that opens a door inside the Abandoned Ship.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Rm. 4 Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.4key.png'
-    }
-  ],
-  [
-    'rm6key',
-    {
-      desc: 'A key that opens a door inside the Abandoned Ship.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Rm. 6 Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rm.6key.png'
-    }
-  ],
-  [
-    'rollerskates',
-    {
-      desc: 'Attaches roller skates to the bottom of your shoes, allowing you to glide quickly around and perform tricks.',
-      gen: 6,
-      keyItem: true,
-      name: 'Roller Skates',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rollerskates.png'
-    }
-  ],
-  [
-    'rotombike',
-    {
-      desc: 'This bike can be combined with the Pokémon Rotom to not only do a turbo boost but also run on the water.',
-      gen: 8,
-      keyItem: true,
-      name: 'Rotom Bike',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotombike.png'
-    }
-  ],
-  [
-    'rotomcatalog',
-    {
-      desc: 'A catalog of devices that Rotom like. Use the catalog to have Rotom hop in and out of the various devices listed within.',
-      gen: 8,
-      keyItem: true,
-      name: 'Rotom Catalog',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotomcatalog.png'
-    }
-  ],
-  [
-    'ruby',
-    {
-      desc: 'An exquisitely beautiful gem that has a red glow. It symbolizes passion.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Ruby',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/ruby.png'
-    }
-  ],
-  [
-    'rulebook',
-    {
-      desc: 'It lists the rules for holding battles. For Link Battles, you may choose which set of rules you wish to use.',
-      gen: 4,
-      keyItem: true,
-      name: 'Rule Book',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/rulebook.png'
-    }
-  ],
-  [
-    'ssticket',
-    {
-      desc: 'A ticket required for sailing on the ferry S.S. Aqua. It has a drawing of a ship on its front.',
-      gen: 1,
-      keyItem: true,
-      name: 'S.S. Ticket',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/s.s.ticket.png'
-    }
-  ],
-  [
-    'sapphire',
-    {
-      desc: 'An exquisitely beautiful gem that has a blue glow. It symbolizes honesty.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Sapphire',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sapphire.png'
-    }
-  ],
-  [
-    'scanner',
-    {
-      desc: 'A device found inside Sea Mauville.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Scanner',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/scanner.png'
-    }
-  ],
-  [
-    'sealbag',
-    {
-      desc: 'A tiny bag that can hold 10 Seals for decorating Poké Balls.',
-      gen: 4,
-      keyItem: true,
-      name: 'Seal Bag',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealbag.png'
-    }
-  ],
-  [
-    'sealcase',
-    {
-      desc: 'A case for storing Seals that can be applied to the exteriors of Poké Balls.',
-      gen: 4,
-      keyItem: true,
-      name: 'Seal Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sealcase.png'
-    }
-  ],
-  [
-    'secretkey',
-    {
-      desc: 'A high-tech key that has to be used at a specific location. It emits a special electronic signal to open a door.',
-      gen: 1,
-      keyItem: true,
-      name: 'Secret Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretkey.png'
-    }
-  ],
-  [
-    'secretpotion',
-    {
-      desc: 'A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment.',
-      gen: 2,
-      keyItem: true,
-      name: 'SecretPotion',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/secretpotion.png'
-    }
-  ],
-  [
-    'shinycharm',
-    {
-      desc: 'A shiny charm said to increase the chance of finding a Shiny Pokémon in the wild.',
-      gen: 5,
-      keyItem: true,
-      name: 'Shiny Charm',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/shinycharm.png'
-    }
-  ],
-  [
-    'silphscope',
-    {
-      desc: 'A scope that lets you see what cannot usually be seen. It is made by Silph Co.',
-      gen: 1,
-      keyItem: true,
-      name: 'Silph Scope',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/silphscope.png'
-    }
-  ],
-  [
-    'silverwing',
-    {
-      desc: 'A strange, silvery feather that sparkles.',
-      gen: 2,
-      keyItem: true,
-      name: 'Silver Wing',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/silverwing.png'
-    }
-  ],
-  [
-    'slowpoketail',
-    {
-      desc: 'A very tasty tail of something. It can be sold at a high price to shops.',
-      gen: 2,
-      keyItem: true,
-      name: 'Slowpoketail',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/slowpoketail.png'
-    }
-  ],
-  [
-    'soniasbook',
-    {
-      desc: "Professor Sonia's published writings. Her new discoveries about the Galar region's legends are recorded in this enjoyable read.",
-      gen: 8,
-      keyItem: true,
-      name: "Sonia's Book",
-      specialSprite: "https://www.serebii.net/itemdex/sprites/sonia'sbook.png"
-    }
-  ],
-  [
-    'sootsack',
-    {
-      desc: 'A sack used to gather and hold volcanic ash.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'sootsack',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sootsack.png'
-    }
-  ],
-  [
-    'sparklingstone',
-    {
-      desc: 'A stone entrusted by a Pokémon that has been venerated as a guardian deity in the Alola region. There is said to be some secret in how it sparkles.',
-      gen: 7,
-      keyItem: true,
-      name: 'Sparkling Stone',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sparklingstone.png'
-    }
-  ],
-  [
-    'sprayduck',
-    {
-      desc: 'A watering can shaped like a Psyduck. It helps promote the healthy growth of any Berries planted in good, soft soil.',
-      gen: 4,
-      keyItem: true,
-      name: 'Sprayduck',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprayduck.png'
-    }
-  ],
-  [
-    'sprinklotad',
-    {
-      desc: 'A watering can shaped like a Lotad. It helps promote the healthy growth of any Berries planted in good, soft soil.',
-      gen: 6,
-      keyItem: true,
-      name: 'Sprinklotad',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sprinklotad.png'
-    }
-  ],
-  [
-    'squirtbottle',
-    {
-      desc: 'A bottle used for watering plants in the Berry Pots.',
-      gen: 2,
-      keyItem: true,
-      name: 'Squirtbottle',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/squirtbottle.png'
-    }
-  ],
-  [
-    'storagekey',
-    {
-      desc: "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City.",
-      gen: 4,
-      keyItem: true,
-      name: 'Storage Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/storagekey.png'
-    }
-  ],
-  [
-    'suitekey',
-    {
-      desc: 'A key to one of the suites at a certain luxury hotel by a lake. For some odd reason, it often disappears.',
-      gen: 4,
-      keyItem: true,
-      name: 'Suite Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/suitekey.png'
-    }
-  ],
-  [
-    'sunflute',
-    {
-      desc: 'It is said that the tones it produces were offered up as an expression of gratitude to the Legendary Pokémon of the sun.',
-      gen: 7,
-      keyItem: true,
-      name: 'Sun Flute',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/sunflute.png'
-    }
-  ],
-  [
-    'superrod',
-    {
-      desc: 'An awesome, high-tech fishing rod. Use it at any body of water to fish for wild aquatic Pokémon.',
-      gen: 1,
-      keyItem: true,
-      name: 'Super Rod',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/superrod.png'
-    }
-  ],
-  [
-    'surgebadge',
-    {
-      desc: 'A novelty badge that you can receive at the Kantonian Gym. Rumor has it that it imitates the Badge of a Gym somewhere.',
-      gen: 7,
-      keyItem: true,
-      name: 'Surge Badge',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/surgebadge.png'
-    }
-  ],
-  [
-    'tmcase',
-    {
-      desc: "A case that holds TMs and HMs. It is attached to the Bag's compartment for important items.",
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'TM Case',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmcase.png'
-    }
-  ],
-  [
-    'tmvpass',
-    {
-      desc: 'A commuter pass that allows the holder to ride the TMV between Lumiose City and Kiloude City at any time.',
-      gen: 6,
-      keyItem: true,
-      name: 'TMV Pass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tmvpass.png'
-    }
-  ],
-  [
-    'tea',
-    {
-      desc: 'Aromatic tea that has a slightly bitter taste. It soothes a dry throat.',
-      gen: 3,
-      keyItem: true,
-      name: 'tea',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tea.png'
-    }
-  ],
-  [
-    'teachytv',
-    {
-      desc: 'A television set that is tuned to a program with useful tips for novice Trainers.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Teachy TV',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/teachytv.png'
-    }
-  ],
-  [
-    'tidalbell',
-    {
-      desc: 'A very old-fashioned bell that makes a gentle ringing sound.',
-      gen: 1,
-      keyItem: true,
-      name: 'Tidal Bell',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tidalbell.png'
-    }
-  ],
-  [
-    'townmap',
-    {
-      desc: 'A very convenient map that can be viewed anytime. It even shows you your present location in the region.',
-      gen: 1,
-      keyItem: true,
-      name: 'Town Map',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/townmap.png'
-    }
-  ],
-  [
-    'traveltrunk',
-    {
-      desc: 'A light and yet incredibly effective trunk, which can contain every last piece of clothing that can be bought.',
-      gen: 6,
-      keyItem: true,
-      name: 'Travel Trunk',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png'
-    }
-  ],
-  [
-    'tripass',
-    {
-      desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'tripass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
-    }
-  ],
-  [
-    'unownreport',
-    {
-      desc: 'A report of all the discovered kinds of Unown.',
-      gen: 4,
-      keyItem: true,
-      name: 'Unown Report',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png'
-    }
-  ],
-  [
-    'vsrecorder',
-    {
-      desc: 'An amazing device that can record a battle between friends or the battles at certain special battle facilities.',
-      gen: 5,
-      keyItem: true,
-      name: 'Vs. Recorder',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png'
-    }
-  ],
-  [
-    'vsseeker',
-    {
-      desc: 'A device that indicates Trainers who want to battle. Its battery charges while you walk.',
-      gen: 3,
-      keyItem: true,
-      name: 'Vs. Seeker',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png'
-    }
-  ],
-  [
-    'wailmerpail',
-    {
-      desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Wailmer Pail',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'
-    }
-  ],
-  [
     'wishingstar',
     {
       desc: "A stone found in the Galar region with a mysterious power. It's said that your dreams come true if you find one.",
@@ -5656,6 +5630,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'yacheberry',
+    {
+      aliases: ['yache'],
+      desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
+      gen: 4,
+      name: 'Yache Berry'
+    }
+  ],
+  [
     'yellowpetal',
     {
       desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
@@ -5663,6 +5646,23 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Yellow Petal',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/yellowpetal.png'
+    }
+  ],
+  [
+    'zapplate',
+    {
+      desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+      gen: 4,
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Zap Plate'
+    }
+  ],
+  [
+    'zoomlens',
+    {
+      desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
+      gen: 4,
+      name: 'Zoom Lens'
     }
   ],
   [

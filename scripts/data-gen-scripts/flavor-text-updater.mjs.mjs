@@ -93,16 +93,29 @@ for (const pokemon of parsedPokemon) {
     await appendToLog(retrievedSvDataMsg);
 
     if (svData) {
-      flavorTexts[pokemon.number].push(
-        {
-          version_id: 'Scarlet',
-          flavor_text: svData
-        },
-        {
-          version_id: 'Violet',
-          flavor_text: svData
-        }
-      );
+      if (flavorTexts[pokemon.number]) {
+        flavorTexts[pokemon.number].push(
+          {
+            version_id: 'Scarlet',
+            flavor_text: svData
+          },
+          {
+            version_id: 'Violet',
+            flavor_text: svData
+          }
+        );
+      } else {
+        flavorTexts[pokemon.number] = [
+          {
+            version_id: 'Scarlet',
+            flavor_text: svData
+          },
+          {
+            version_id: 'Violet',
+            flavor_text: svData
+          }
+        ];
+      }
       const storedSvMsg = 'Stored new SV Combined entries in flavor texts';
       console.log(green(storedSvMsg));
       await appendToLog(storedSvMsg);
@@ -118,10 +131,19 @@ for (const pokemon of parsedPokemon) {
     await appendToLog(retrievedScarletMsg);
 
     if (scarletData) {
-      flavorTexts[pokemon.number].push({
-        version_id: 'Scarlet',
-        flavor_text: scarletData
-      });
+      if (flavorTexts[pokemon.number]) {
+        flavorTexts[pokemon.number].push({
+          version_id: 'Scarlet',
+          flavor_text: scarletData
+        });
+      } else {
+        flavorTexts[pokemon.number] = [
+          {
+            version_id: 'Scarlet',
+            flavor_text: scarletData
+          }
+        ];
+      }
       const storedScarletMsg = 'Stored new Scarlet Singular entry in flavor texts';
       console.log(green(storedScarletMsg));
       await appendToLog(storedScarletMsg);
@@ -138,10 +160,19 @@ for (const pokemon of parsedPokemon) {
     await appendToLog(retrievedVioletMsg);
 
     if (violetData) {
-      flavorTexts[pokemon.number].push({
-        version_id: 'Violet',
-        flavor_text: violetData
-      });
+      if (flavorTexts[pokemon.number]) {
+        flavorTexts[pokemon.number].push({
+          version_id: 'Violet',
+          flavor_text: violetData
+        });
+      } else {
+        flavorTexts[pokemon.number] = [
+          {
+            version_id: 'Violet',
+            flavor_text: violetData
+          }
+        ];
+      }
       const storedVioletMsg = 'Stored new Violet Singular entry in flavor texts';
       console.log(green(storedVioletMsg));
       await appendToLog(storedVioletMsg);

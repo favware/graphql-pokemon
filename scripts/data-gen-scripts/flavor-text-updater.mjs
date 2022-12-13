@@ -35,13 +35,13 @@ function parseSpeciesForBulbapedia(pokemonData) {
   return bulbapediaBaseUrlPrefix + pokemonData.species + bulbapediaBaseUrlPostfix;
 }
 
-const temperatureExtractionRegex = /(.+){{tt\|[\d,]+ degrees Fahrenheit\|([\d,]+ degrees Celsius)/;
+const metricUnitExtractionRegex = /(.+){{tt\|[\d,]+ (?:degrees Fahrenheit|Miles)\|([\d,]+) (degrees Celsius|Meters)/;
 
 function getTextContent(bit1) {
   return bit1
     ?.split(/\|[a-z]+=/g)
     ?.at(-1)
-    ?.replace(temperatureExtractionRegex, '$1$2')
+    ?.replace(regex, '$1$2 $3')
     ?.replaceAll('}}', '');
 }
 

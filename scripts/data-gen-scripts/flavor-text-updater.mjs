@@ -35,12 +35,14 @@ function parseSpeciesForBulbapedia(pokemonData) {
   return bulbapediaBaseUrlPrefix + pokemonData.species + bulbapediaBaseUrlPostfix;
 }
 
+const temperatureExtractionRegex = /(.+){{tt\|[\d,]+ degrees Fahrenheit\|([\d,]+ degrees Celsius)/;
+
 function getTextContent(bit1) {
   return bit1
-    ?.split('|')
-    ?.find((e) => e.startsWith('entry='))
-    ?.slice(6)
-    ?.slice(0, -2);
+    ?.split(/\|[a-z]+=/g)
+    ?.at(-1)
+    ?.replace(temperatureExtractionRegex, '$1$2')
+    ?.replaceAll('}}', '');
 }
 
 const parsedPokemon = [];
@@ -84,7 +86,7 @@ for (const pokemon of parsedPokemon) {
     const svDataScarletBased = getTextContent(
       text //
         ?.split('\n')
-        ?.find((e) => e.startsWith('{{Dex/Entry2|v=Brilliant Diamond|v2=Shining Pearl'))
+        ?.find((e) => e.startsWith('{{Dex/Entry2|v=Scarlet|v2=Violet'))
     );
     const svDataVioletBased = getTextContent(
       text //

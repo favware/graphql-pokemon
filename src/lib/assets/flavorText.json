@@ -3624,11 +3624,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom."
+      "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware-its small horn secretes venom."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom."
+      "flavor_text": "A mild-mannered Pokémon that does not like to fight. Beware-its small horn secretes venom."
     },
     {
       "version_id": "Sword",
@@ -10712,11 +10712,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "FARFETCH’D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
+      "flavor_text": "FARFETCH'D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "FARFETCH’D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
+      "flavor_text": "FARFETCH'D is always seen with a stick from a plant of some sort. Apparently, there are good sticks and bad sticks. This Pokémon has been known to fight with others over sticks."
     },
     {
       "version_id": "Emerald",
@@ -10776,19 +10776,19 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "Farfetch’d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
+      "flavor_text": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "Farfetch’d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
+      "flavor_text": "Farfetch'd is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks."
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "They live where reedy plants grow. Farfetch’d are rarely seen, so it's thought their numbers are decreasing."
+      "flavor_text": "They live where reedy plants grow. Farfetch'd are rarely seen, so it's thought their numbers are decreasing."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "They live where reedy plants grow. Farfetch’d are rarely seen, so it's thought their numbers are decreasing."
+      "flavor_text": "They live where reedy plants grow. Farfetch'd are rarely seen, so it's thought their numbers are decreasing."
     },
     {
       "version_id": "Sword",
@@ -15832,7 +15832,7 @@
     },
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "The large, wickedly sharp scythes on its forearms are truly fearsome weapons. Prey’s attempts to flee are unfailingly thwarted by this Pokémon's nimble motions."
+      "flavor_text": "The large, wickedly sharp scythes on its forearms are truly fearsome weapons. Prey's attempts to flee are unfailingly thwarted by this Pokémon's nimble motions."
     }
   ],
   "124": [
@@ -20060,7 +20060,7 @@
     },
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the [[Mount Coron"
+      "flavor_text": "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center."
     }
   ],
   "158": [
@@ -47888,7 +47888,7 @@
     },
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "It protects itself by freezing its fur into sharp needles. It can drop its body temperature below –75 degrees Fahrenheit."
+      "flavor_text": "It protects itself by freezing its fur into sharp needles. It can drop its body temperature below -75 degrees Fahrenheit."
     },
     {
       "version_id": "Ultra Moon",
@@ -48932,7 +48932,7 @@
     },
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "Stories tell of this Pokémon being birthed from the boiling magma within [[Mount Coronet]]. Its molten-steel body holds many mysteries."
+      "flavor_text": "Stories tell of this Pokémon being birthed from the boiling magma within Mount Coronet. Its molten-steel body holds many mysteries."
     }
   ],
   "486": [
@@ -49812,7 +49812,7 @@
     },
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "Hard of heart and deft of blade, this rare form of Samurott is a product of the Pokémon's evolution in the region of [[Hisui]]. Its turbulent blows crash into foes like ceaseless pounding waves."
+      "flavor_text": "Hard of heart and deft of blade, this rare form of Samurott is a product of the Pokémon's evolution in the region of Hisui. Its turbulent blows crash into foes like ceaseless pounding waves."
     }
   ],
   "504": [
@@ -53338,7 +53338,7 @@
     },
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "It exhales cold air that is at –58 degrees Fahrenheit. When it's in a warm place, it shrinks little by little."
+      "flavor_text": "It exhales cold air that is at -58 degrees Fahrenheit. When it's in a warm place, it shrinks little by little."
     },
     {
       "version_id": "Ultra Moon",
@@ -53676,7 +53676,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It charges its enemies, lances at the ready. An image of one of its duels is captured in a famous painting of Escavalier clashing with Sirfetch’d."
+      "flavor_text": "It charges its enemies, lances at the ready. An image of one of its duels is captured in a famous painting of Escavalier clashing with Sirfetch'd."
     }
   ],
   "590": [
@@ -57588,7 +57588,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around –240 degrees Fahrenheit."
+      "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around -240 degrees Fahrenheit."
     },
     {
       "version_id": "Sword",
@@ -58386,7 +58386,7 @@
     },
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "The air stored inside the rachises of Decidueye's feathers insulates the Pokémon against [[Hisui]]'s extreme cold. This is firm proof that evolution can be influenced by environment."
+      "flavor_text": "The air stored inside the rachises of Decidueye's feathers insulates the Pokémon against Hisui's extreme cold. This is firm proof that evolution can be influenced by environment."
     }
   ],
   "725": [
@@ -60832,7 +60832,7 @@
   "865": [
     {
       "version_id": "Sword",
-      "flavor_text": "Only Farfetch’d that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
+      "flavor_text": "Only Farfetch'd that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
     },
     {
       "version_id": "Shield",
@@ -61686,15 +61686,15 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "They live together in a skulk, helping one another. Before eating their prey, they freeze it solid with their –58 degree Fahrenheit breath."
+      "flavor_text": "They live together in a skulk, helping one another. Before eating their prey, they freeze it solid with their -58 degree Fahrenheit breath."
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "It looks like snow come to life, and the breath it exhales is –58 degrees Fahrenheit. Another name for it is Keokeo."
+      "flavor_text": "It looks like snow come to life, and the breath it exhales is -58 degrees Fahrenheit. Another name for it is Keokeo."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "It looks like snow come to life, and the breath it exhales is –58 degrees Fahrenheit. Another name for it is Keokeo."
+      "flavor_text": "It looks like snow come to life, and the breath it exhales is -58 degrees Fahrenheit. Another name for it is Keokeo."
     },
     {
       "version_id": "Sword",
@@ -61792,11 +61792,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "They're referred to as triplets, but they're not identical–the metallic elements in their bodies differ slightly. The proof shows in their whiskers!"
+      "flavor_text": "They're referred to as triplets, but they're not identical-the metallic elements in their bodies differ slightly. The proof shows in their whiskers!"
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "They're referred to as triplets, but they're not identical–the metallic elements in their bodies differ slightly. The proof shows in their whiskers!"
+      "flavor_text": "They're referred to as triplets, but they're not identical-the metallic elements in their bodies differ slightly. The proof shows in their whiskers!"
     },
     {
       "version_id": "Sword",
@@ -61826,11 +61826,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "Highly intelligent and prideful, it's famously difficult to handle–but that's also a reason for its popularity."
+      "flavor_text": "Highly intelligent and prideful, it's famously difficult to handle-but that's also a reason for its popularity."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "Highly intelligent and prideful, it's famously difficult to handle–but that's also a reason for its popularity."
+      "flavor_text": "Highly intelligent and prideful, it's famously difficult to handle-but that's also a reason for its popularity."
     },
     {
       "version_id": "Sword",
@@ -62058,11 +62058,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power–and a little motivation to boot."
+      "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power-and a little motivation to boot."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power–and a little motivation to boot."
+      "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power-and a little motivation to boot."
     }
   ],
   "80galar": [
@@ -62078,11 +62078,11 @@
   "83galar": [
     {
       "version_id": "Sword",
-      "flavor_text": "The Farfetch’d of the Galar region are brave warriors, and they wield thick, tough leeks in battle."
+      "flavor_text": "The Farfetch'd of the Galar region are brave warriors, and they wield thick, tough leeks in battle."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "The stalks of leeks are thicker and longer in the Galar region. Farfetch’d that adapted to these stalks took on a unique form."
+      "flavor_text": "The stalks of leeks are thicker and longer in the Galar region. Farfetch'd that adapted to these stalks took on a unique form."
     }
   ],
   "88alola": [
@@ -62130,11 +62130,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "Muk's coloration becomes increasingly vivid the more it feasts on its favorite dish–trash."
+      "flavor_text": "Muk's coloration becomes increasingly vivid the more it feasts on its favorite dish-trash."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "Muk's coloration becomes increasingly vivid the more it feasts on its favorite dish–trash."
+      "flavor_text": "Muk's coloration becomes increasingly vivid the more it feasts on its favorite dish-trash."
     }
   ],
   "94mega": [
@@ -63204,7 +63204,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It's invigorated by powerful opponents–the stronger the better. A full-force headbutt from one of these Lycanroc can shatter giant boulders."
+      "flavor_text": "It's invigorated by powerful opponents-the stronger the better. A full-force headbutt from one of these Lycanroc can shatter giant boulders."
     }
   ],
   "745dusk": [
@@ -64148,7 +64148,7 @@
   "157hisui": [
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the [[Mount Coron"
+      "flavor_text": "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center."
     }
   ],
   "211hisui": [
@@ -64160,7 +64160,7 @@
   "503hisui": [
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "Hard of heart and deft of blade, this rare form of Samurott is a product of the Pokémon's evolution in the region of [[Hisui]]. Its turbulent blows crash into foes like ceaseless pounding waves."
+      "flavor_text": "Hard of heart and deft of blade, this rare form of Samurott is a product of the Pokémon's evolution in the region of Hisui. Its turbulent blows crash into foes like ceaseless pounding waves."
     }
   ],
   "549hisui": [
@@ -64208,7 +64208,7 @@
   "724hisui": [
     {
       "version_id": "Legends Arceus",
-      "flavor_text": "The air stored inside the rachises of Decidueye's feathers insulates the Pokémon against [[Hisui]]'s extreme cold. This is firm proof that evolution can be influenced by environment."
+      "flavor_text": "The air stored inside the rachises of Decidueye's feathers insulates the Pokémon against Hisui's extreme cold. This is firm proof that evolution can be influenced by environment."
     }
   ]
 }

@@ -5007,7 +5007,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'taurospaldeafire',
+    'taurospaldeablaze',
     {
       abilities: { first: 'Intimidate', second: 'Anger Point', hidden: 'Cud Chew' },
       baseSpecies: 'Tauros',
@@ -5016,27 +5016,27 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Black',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
-      forme: 'Paldea-Fire',
-      formeLetter: 'PF',
+      forme: 'Paldea-Blaze',
+      formeLetter: 'PB',
       genderRatio: { male: '10%', female: '0%' },
       heightm: 1.4,
       isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
       num: 128,
-      otherFormes: ['tauros', 'taurospaldea', 'taurospaldeawater'],
+      otherFormes: ['tauros', 'taurospaldea', 'taurospaldeaaqua'],
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeafire.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeafire.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeafire.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeafire.png',
-      species: 'tauros-paldea-fire',
+      species: 'tauros-paldea-blaze',
       types: [TypesEnum.Fighting, TypesEnum.Fire],
       weightkg: 88.4,
-      aliases: ['paldeanfiretauros', 'taurospf', 'paldeantaurosfire']
+      aliases: ['paldeanfiretauros', 'taurospf', 'paldeantaurosfire', 'paldeaonblazetaurus', 'pladeantaurosblaze']
     }
   ],
   [
-    'taurospaldeawater',
+    'taurospaldeaaqua',
     {
       abilities: { first: 'Intimidate', second: 'Anger Point', hidden: 'Cud Chew' },
       baseSpecies: 'Tauros',
@@ -5045,23 +5045,23 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Black',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
-      forme: 'Paldea-Water',
-      formeLetter: 'PW',
+      forme: 'Paldea-Aqua',
+      formeLetter: 'PA',
       genderRatio: { male: '10%', female: '0%' },
       heightm: 1.4,
       isEggObtainable: true,
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
       num: 128,
-      otherFormes: ['tauros', 'taurospaldea', 'taurospaldeafire'],
+      otherFormes: ['tauros', 'taurospaldea', 'taurospaldeablaze'],
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeawater.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeawater.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeawater.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeawater.png',
-      species: 'tauros-paldea-water',
+      species: 'tauros-paldea-aqua',
       types: [TypesEnum.Fighting, TypesEnum.Water],
       weightkg: 88.4,
-      aliases: ['paldeanwatertauros', 'taurospw', 'paldeantauroswater']
+      aliases: ['paldeanwatertauros', 'taurospw', 'paldeantauroswater', 'paldeanaquatauros', 'paldeantaurosaqua']
     }
   ],
   [

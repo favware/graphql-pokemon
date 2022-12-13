@@ -41,7 +41,7 @@ function getTextContent(bit1) {
   return bit1
     ?.split(/\|[a-z]+=/g)
     ?.at(-1)
-    ?.replace(regex, '$1$2 $3')
+    ?.replace(metricUnitExtractionRegex, '$1$2 $3')
     ?.replaceAll('}}', '');
 }
 

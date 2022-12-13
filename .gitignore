@@ -42,3 +42,5 @@ docs/magidoc/
 ## Scripts
 scripts/tiers.ts
 scripts/learnsets.ts
+scripts/data-gen-scripts/failed-pokemon.json
+scripts/data-gen-scripts/skipped-pokemon.json

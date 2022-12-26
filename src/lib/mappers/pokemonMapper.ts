@@ -798,12 +798,12 @@ function parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, 
   return `${serebiiBaseUrl}-sv/${pokemonName.replace(/ /g, '').toLowerCase()}`;
 }
 
-function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, evoChainData: PokemonTypes.DexEntry) {
-  if (basePokemonData.forme && evoChainData.forme && basePokemonData.forme === evoChainData.forme) {
+function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, _: PokemonTypes.DexEntry) {
+  if (basePokemonData.forme) {
     return toLowerSingleWordCase(basePokemonData.species);
   }
 
-  return basePokemonData.baseSpecies?.toLowerCase() || basePokemonData.species;
+  return toLowerSingleWordCase(basePokemonData.baseSpecies || basePokemonData.species);
 }
 
 /**

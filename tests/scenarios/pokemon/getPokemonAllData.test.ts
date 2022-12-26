@@ -18,11 +18,11 @@ describe('Get Pokémon with all data', () => {
   ];
 
   test.each(verifiableData)('GIVEN %s request THEN returns Pokémon WITH all data', async (pokemon, returnedData) => {
-    const { data } = await executeGraphQL<'getPokemon'>({
+    const data = await executeGraphQL<'getPokemon'>({
       query: getPokemonWithFullDataAndEvolutions,
       variables: { pokemon }
     });
 
-    expect(data.getPokemon).toEqual(returnedData);
+    expect(data).toEqual(returnedData);
   });
 });

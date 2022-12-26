@@ -2,7 +2,7 @@ import { getFuzzyItemName, getFuzzyItemWithFullData } from '#test-utils/queries/
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getFuzzyItem', () => {
-  describe('Name only requests', () => {
+  describe('Fuzzy Item name only requests', () => {
     test('GIVEN a valid name THEN returns Item', async () => {
       const { data } = await executeGraphQL<'getFuzzyItem'>({
         query: getFuzzyItemName,
@@ -13,7 +13,7 @@ describe('getFuzzyItem', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Fuzzy Item full data requests', () => {
     test('GIVEN valid item request THEN returns Item WITH all data', async () => {
       const { data } = await executeGraphQL<'getFuzzyItem'>({
         query: getFuzzyItemWithFullData,

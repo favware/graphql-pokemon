@@ -2,7 +2,7 @@ import { getMoveName, getMoveWithFullData, getMoveZPower } from '#test-utils/que
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getMove', () => {
-  describe('Name only requests', () => {
+  describe('Regular Move name only requests', () => {
     test('GIVEN a valid name THEN returns Move', async () => {
       const { data } = await executeGraphQL<'getMove'>({
         query: getMoveName,
@@ -13,7 +13,7 @@ describe('getMove', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Regular Move full data requests', () => {
     test('GIVEN valid move request THEN returns Move WITH all data', async () => {
       const { data } = await executeGraphQL<'getMove'>({
         query: getMoveWithFullData,

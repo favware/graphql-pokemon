@@ -2,7 +2,7 @@ import { getItemName, getItemWithFullData } from '#test-utils/queries/items';
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getItem', () => {
-  describe('Name only requests', () => {
+  describe('Regular Item name only requests', () => {
     test('GIVEN a valid name THEN returns Item', async () => {
       const { data } = await executeGraphQL<'getItem'>({
         query: getItemName,
@@ -13,7 +13,7 @@ describe('getItem', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Regular Item full data requests', () => {
     test('GIVEN valid item request THEN returns Item WITH all data', async () => {
       const { data } = await executeGraphQL<'getItem'>({
         query: getItemWithFullData,

@@ -21,16 +21,44 @@ describe('getLearnset', () => {
       expect(data.getLearnset).toEqual({
         species: 'charizard',
         tmMoves: [
-          { move: { name: 'Fire Blast' }, generation: 8 },
-          { move: { name: 'Fire Blast' }, generation: 7 },
-          { move: { name: 'Fire Blast' }, generation: 6 },
-          { move: { name: 'Fire Blast' }, generation: 5 },
-          { move: { name: 'Fire Blast' }, generation: 4 },
-          { move: { name: 'Fire Blast' }, generation: 3 }
+          {
+            move: { name: 'Fire Blast' },
+            generation: 9
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 8
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 7
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 6
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 5
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 4
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 3
+          }
         ],
         virtualTransferMoves: [
-          { move: { name: 'Fire Blast' }, generation: 8 },
-          { move: { name: 'Fire Blast' }, generation: 7 }
+          {
+            move: { name: 'Fire Blast' },
+            generation: 8
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 7
+          }
         ],
         dreamworldMoves: [],
         eggMoves: [],
@@ -49,39 +77,133 @@ describe('getLearnset', () => {
       expect(data.getLearnset).toEqual({
         species: 'charizard',
         tmMoves: [
-          { move: { name: 'Fire Blast' }, generation: 8 },
-          { move: { name: 'Fire Blast' }, generation: 7 },
-          { move: { name: 'Fire Blast' }, generation: 6 },
-          { move: { name: 'Fire Blast' }, generation: 5 },
-          { move: { name: 'Fire Blast' }, generation: 4 },
-          { move: { name: 'Fire Blast' }, generation: 3 },
-          { move: { name: 'Flamethrower' }, generation: 8 },
-          { move: { name: 'Flamethrower' }, generation: 7 },
-          { move: { name: 'Flamethrower' }, generation: 6 },
-          { move: { name: 'Flamethrower' }, generation: 5 },
-          { move: { name: 'Flamethrower' }, generation: 4 },
-          { move: { name: 'Flamethrower' }, generation: 3 }
+          {
+            move: { name: 'Fire Blast' },
+            generation: 9
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 8
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 7
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 6
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 5
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 4
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 3
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 9
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 8
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 7
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 6
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 5
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 4
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 3
+          }
         ],
         virtualTransferMoves: [
-          { move: { name: 'Fire Blast' }, generation: 8 },
-          { move: { name: 'Fire Blast' }, generation: 7 },
-          { move: { name: 'Flamethrower' }, generation: 8 },
-          { move: { name: 'Flamethrower' }, generation: 7 }
+          {
+            move: { name: 'Fire Blast' },
+            generation: 8
+          },
+          {
+            move: { name: 'Fire Blast' },
+            generation: 7
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 8
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 7
+          }
         ],
         dreamworldMoves: [],
         eggMoves: [],
         eventMoves: [
-          { move: { name: 'Flamethrower' }, generation: 8 },
-          { move: { name: 'Flamethrower' }, generation: 7 },
-          { move: { name: 'Flamethrower' }, generation: 6 }
+          {
+            move: { name: 'Flamethrower' },
+            generation: 8
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 7
+          },
+          {
+            move: { name: 'Flamethrower' },
+            generation: 6
+          }
         ],
         levelUpMoves: [
-          { move: { name: 'Flamethrower' }, level: 30, generation: 8 },
-          { move: { name: 'Flamethrower' }, level: 47, generation: 7 },
-          { move: { name: 'Flamethrower' }, level: 47, generation: 6 },
-          { move: { name: 'Flamethrower' }, level: 47, generation: 5 },
-          { move: { name: 'Flamethrower' }, level: 42, generation: 4 },
-          { move: { name: 'Flamethrower' }, level: 34, generation: 3 }
+          {
+            move: { name: 'Flamethrower' },
+            level: 30,
+            generation: 9
+          },
+          {
+            move: { name: 'Flamethrower' },
+            level: 30,
+            generation: 8
+          },
+          {
+            move: { name: 'Flamethrower' },
+            level: 47,
+            generation: 7
+          },
+          {
+            move: { name: 'Flamethrower' },
+            level: 47,
+            generation: 6
+          },
+          {
+            move: { name: 'Flamethrower' },
+            level: 47,
+            generation: 5
+          },
+          {
+            move: { name: 'Flamethrower' },
+            level: 42,
+            generation: 4
+          },
+          {
+            move: { name: 'Flamethrower' },
+            level: 34,
+            generation: 3
+          }
         ],
         tutorMoves: []
       });
@@ -178,11 +300,21 @@ describe('getLearnset', () => {
         species: 'vulpix',
         tmMoves: [],
         virtualTransferMoves: [],
-        dreamworldMoves: [{ move: { name: 'Dark Pulse' }, generation: 5 }],
+        dreamworldMoves: [
+          {
+            move: { name: 'Dark Pulse' },
+            generation: 5
+          }
+        ],
         eggMoves: [],
         eventMoves: [],
         levelUpMoves: [],
-        tutorMoves: [{ move: { name: 'Dark Pulse' }, generation: 5 }]
+        tutorMoves: [
+          {
+            move: { name: 'Dark Pulse' },
+            generation: 5
+          }
+        ]
       });
     });
 
@@ -194,18 +326,8 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'vulpix',
-        tmMoves: [
-          {
-            move: { name: 'Dark Pulse' },
-            generation: 8
-          }
-        ],
-        virtualTransferMoves: [
-          {
-            move: { name: 'Dark Pulse' },
-            generation: 8
-          }
-        ],
+        tmMoves: [],
+        virtualTransferMoves: [],
         dreamworldMoves: [],
         eggMoves: [],
         eventMoves: [],

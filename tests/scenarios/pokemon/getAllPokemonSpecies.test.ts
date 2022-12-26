@@ -93,12 +93,12 @@ describe('getAllPokemon', () => {
   });
 
   test('GIVEN no parameters THEN returns all Pokémon', async () => {
-    const { data } = await executeGraphQL<'getAllPokemon'>({
+    const response = await executeGraphQL<'getAllPokemon'>({
       query: getAllPokemon,
       variables: {}
     });
 
-    expect(data.getAllPokemon).toEqual([
+    expect(response.data.getAllPokemon).toEqual([
       {
         key: 'pokestarsmeargle',
         species: 'Pokestar Smeargle'
@@ -241,6 +241,7 @@ describe('getAllPokemon', () => {
         key: 'venomiconepilogue',
         species: 'venomicon-epilogue'
       },
+      { key: 'saharascal', species: 'Saharascal' },
       { key: 'saharaja', species: 'Saharaja' },
       { key: 'missingno', species: 'missingno.' },
       { key: 'bulbasaur', species: 'bulbasaur' },
@@ -636,6 +637,18 @@ describe('getAllPokemon', () => {
         species: 'pinsir-mega'
       },
       { key: 'tauros', species: 'tauros' },
+      {
+        key: 'taurospaldea',
+        species: 'tauros-paldea'
+      },
+      {
+        key: 'taurospaldeablaze',
+        species: 'tauros-paldea-blaze'
+      },
+      {
+        key: 'taurospaldeaaqua',
+        species: 'tauros-paldea-aqua'
+      },
       { key: 'magikarp', species: 'magikarp' },
       { key: 'gyarados', species: 'gyarados' },
       {
@@ -754,7 +767,7 @@ describe('getAllPokemon', () => {
       { key: 'sunkern', species: 'sunkern' },
       { key: 'sunflora', species: 'sunflora' },
       { key: 'yanma', species: 'yanma' },
-      { key: 'wooper', species: 'wooper' },
+      { key: 'wooper', species: 'wooper-paldea' },
       { key: 'quagsire', species: 'quagsire' },
       { key: 'espeon', species: 'espeon' },
       { key: 'umbreon', species: 'umbreon' },
@@ -2255,13 +2268,6 @@ describe('getAllPokemon', () => {
       {
         key: 'basculegionf',
         species: 'basculegion'
-      },
-      { key: 'sneasler', species: 'sneasler' },
-      { key: 'overqwil', species: 'overqwil' },
-      { key: 'enamorus', species: 'enamorus' },
-      {
-        key: 'enamorustherian',
-        species: 'enamorus-therian'
       }
     ]);
   });

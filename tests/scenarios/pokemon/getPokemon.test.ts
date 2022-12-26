@@ -164,11 +164,11 @@ describe('getPokemon', () => {
         minimumHatchTime: 5140,
         num: 658,
         otherFormes: ['greninjaash'],
-        serebiiPage: 'https://www.serebii.net/pokedex-sm/658.shtml',
+        serebiiPage: 'https://www.serebii.net/pokedex-sv/greninja',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/greninja.gif',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/greninja.gif',
-        smogonPage: 'https://www.smogon.com/dex/sm/pokemon/greninja',
-        smogonTier: 'Past',
+        smogonPage: 'https://www.smogon.com/dex/sv/pokemon/greninja',
+        smogonTier: 'Unobtainable',
         species: 'greninja',
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/greninja.gif',
         types: [{ name: 'Water' }, { name: 'Dark' }]
@@ -304,7 +304,7 @@ describe('getPokemon', () => {
           speed: 95
         },
         baseStatsTotal: 534,
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pok√©mon)',
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pokémon)',
         catchRate: {
           base: 45,
           percentageWithOrdinaryPokeballAtFullHealth: '11.9%'

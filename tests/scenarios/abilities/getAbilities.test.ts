@@ -2,7 +2,7 @@ import { getAbilityName, getAbilityWithFullData } from '#test-utils/queries/abil
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getAbility', () => {
-  describe('Name only requests', () => {
+  describe('Regular Ability name only requests', () => {
     test('GIVEN a valid name THEN returns Ability', async () => {
       const { data } = await executeGraphQL<'getAbility'>({
         query: getAbilityName,
@@ -13,7 +13,7 @@ describe('getAbility', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Regular Ability full data requests', () => {
     test('GIVEN valid ability request THEN returns Ability WITH all data', async () => {
       const { data } = await executeGraphQL<'getAbility'>({
         query: getAbilityWithFullData,
@@ -37,7 +37,7 @@ describe('getAbility', () => {
               first: {
                 key: 'innerfocus',
                 bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Inner_Focus_(Ability)',
-                desc: null,
+                desc: 'This Pokémon cannot be made to flinch. This Pokémon is immune to the effect of the Intimidate Ability.',
                 isFieldAbility: null,
                 name: 'Inner Focus',
                 serebiiPage: 'https://www.serebii.net/abilitydex/inner_focus.shtml',
@@ -65,7 +65,7 @@ describe('getAbility', () => {
               first: {
                 key: 'pressure',
                 bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Pressure_(Ability)',
-                desc: "If this Pokémon is the target of an opposing Pokémon's move, that move loses one additional PP.",
+                desc: "If this Pokémon is the target of an opposing Pokémon's move, that move loses one additional PP. Imprison and Snatch also lose one additional PP when used by an opposing Pokémon, but Sticky Web does not.",
                 isFieldAbility:
                   'If you have a Pokémon with Pressure at the front of your party (even if fainted), there is a 50% chance that a Pokémon will be forced to the upper bound of their encounter level range.',
                 name: 'Pressure',

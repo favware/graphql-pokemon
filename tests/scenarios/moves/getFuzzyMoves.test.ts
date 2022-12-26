@@ -2,7 +2,7 @@ import { getFuzzyMoveName, getFuzzyMoveWithFullData } from '#test-utils/queries/
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getFuzzyMove', () => {
-  describe('Name only requests', () => {
+  describe('Fuzzy Move name only requests', () => {
     test('GIVEN a valid name THEN returns Move', async () => {
       const { data } = await executeGraphQL<'getFuzzyMove'>({
         query: getFuzzyMoveName,
@@ -13,7 +13,7 @@ describe('getFuzzyMove', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Fuzzy Move full data requests', () => {
     test('GIVEN valid move request THEN returns Move WITH all data', async () => {
       const { data } = await executeGraphQL<'getFuzzyMove'>({
         query: getFuzzyMoveWithFullData,

@@ -251,7 +251,12 @@ describe('getPokemon', () => {
       });
 
       expect(data.getPokemon).toEqual({
-        abilities: { first: { name: 'Blaze' }, second: null, hidden: { name: 'Flash Fire' }, special: null },
+        abilities: {
+          first: { name: 'Blaze' },
+          second: null,
+          hidden: { name: 'Frisk' },
+          special: null
+        },
         eggGroups: ['Field'],
         evYields: {
           hp: 0,
@@ -265,7 +270,7 @@ describe('getPokemon', () => {
         flavorTexts: [
           {
             flavor:
-              'Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the [[Mount Coron',
+              "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center.",
             game: 'Legends Arceus'
           }
         ],
@@ -280,12 +285,12 @@ describe('getPokemon', () => {
         minimumHatchTime: 5140,
         num: 157,
         otherFormes: ['typhlosion'],
-        serebiiPage: 'https://www.serebii.net/pokedex-swsh/typhlosion',
+        serebiiPage: 'https://www.serebii.net/pokedex-sv/typhlosion',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/typhlosion-hisui.png',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/typhlosion-hisui.png',
-        smogonPage: 'https://www.smogon.com/dex/ss/pokemon/typhlosion-hisui',
+        smogonPage: 'https://www.smogon.com/dex/sv/pokemon/typhlosion-hisui',
         baseForme: null,
-        smogonTier: 'Future',
+        smogonTier: 'Unobtainable',
         species: 'typhlosion-hisui',
         sprite: 'https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png',
         types: [{ name: 'Fire' }, { name: 'Ghost' }],
@@ -299,8 +304,11 @@ describe('getPokemon', () => {
           speed: 95
         },
         baseStatsTotal: 534,
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pokémon)',
-        catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pok√©mon)',
+        catchRate: {
+          base: 45,
+          percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+        },
         color: 'Yellow',
         cosmeticFormes: null
       });

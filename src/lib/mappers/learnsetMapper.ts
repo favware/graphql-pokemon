@@ -167,6 +167,11 @@ export function getLearnsetDataset(pokemon: string): Record<string, string[]> | 
 
   let pokemonFromDataset: PokemonTypes.DexEntry | undefined = undefined;
 
+  // If the learnset is event only then overwrite it back to undefined to allow for further parsing
+  if (learnsetFromDataset?.eventOnly?.[0] === 'See base forme of this Pokémon') {
+    learnsetFromDataset = undefined;
+  }
+
   // Attempt to get the learnset from the base species
   if (!learnsetFromDataset) {
     pokemonFromDataset = pokedex.get(toLowerSingleWordCase(pokemon));

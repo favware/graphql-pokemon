@@ -272,6 +272,11 @@ describe('getLearnset', () => {
           {
             move: { name: 'Roar of Time' },
             level: 88,
+            generation: 9
+          },
+          {
+            move: { name: 'Roar of Time' },
+            level: 88,
             generation: 8
           },
           {

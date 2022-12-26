@@ -6,10 +6,12 @@ enum AbilitiesEnum {
   airlock
   analytic
   angerpoint
+  angershell
   anticipation
   arenatrap
+  armortail
   aromaveil
-  asoneasoneglastrier
+  asoneglastrier
   asonespectrier
   aurabreak
   baddreams
@@ -17,6 +19,7 @@ enum AbilitiesEnum {
   battery
   battlearmor
   battlebond
+  beadsofruin
   beastboost
   berserk
   bigpecks
@@ -29,11 +32,14 @@ enum AbilitiesEnum {
   cloudnine
   colorchange
   comatose
+  commander
   competitive
   compoundeyes
   contrary
   corrosion
+  costar
   cottondown
+  cudchew
   curiousmedicine
   cursedbody
   cutecharm
@@ -53,8 +59,10 @@ enum AbilitiesEnum {
   drought
   dryskin
   earlybird
+  eartheater
   effectspore
   electricsurge
+  electromorphosis
   emergencyexit
   fairyaura
   filter
@@ -73,13 +81,16 @@ enum AbilitiesEnum {
   galewings
   galvanize
   gluttony
+  goodasgold
   gooey
   gorillatactics
   grasspelt
   grassysurge
   grimneigh
+  guarddog
   gulpmissile
   guts
+  hadronengine
   harvest
   healer
   heatproof
@@ -114,6 +125,7 @@ enum AbilitiesEnum {
   lightmetal
   lightningrod
   limber
+  lingeringaroma
   liquidooze
   liquidvoice
   longreach
@@ -137,20 +149,23 @@ enum AbilitiesEnum {
   multiscale
   multitype
   mummy
+  myceliummight
   naturalcure
   neuroforce
-  noability
   neutralizinggas
+  noability
   noguard
   normalize
   oblivious
+  opportunist
+  orichalcumpulse
   overcoat
   overgrow
   owntempo
   parentalbond
-  persistent
   pastelveil
   perishbody
+  persistent
   pickpocket
   pickup
   pixilate
@@ -167,13 +182,15 @@ enum AbilitiesEnum {
   prismarmor
   propellertail
   protean
+  protosynthesis
   psychicsurge
   punkrock
   purepower
+  purifyingsalt
+  quarkdrive
   queenlymajesty
   quickdraw
   quickfeet
-  rkssystem
   raindish
   rattled
   rebound
@@ -183,7 +200,9 @@ enum AbilitiesEnum {
   regenerator
   ripen
   rivalry
+  rkssystem
   rockhead
+  rockypayload
   roughskin
   runaway
   sandforce
@@ -195,9 +214,11 @@ enum AbilitiesEnum {
   schooling
   scrappy
   screencleaner
+  seedsower
   serenegrace
   shadowshield
   shadowtag
+  sharpness
   shedskin
   sheerforce
   shellarmor
@@ -232,22 +253,27 @@ enum AbilitiesEnum {
   sturdy
   suctioncups
   superluck
+  supremeoverlord
   surgesurfer
   swarm
   sweetveil
   swiftswim
+  swordofruin
   symbiosis
   synchronize
+  tabletsofruin
   tangledfeet
   tanglinghair
   technician
   telepathy
   teravolt
+  thermalexchange
   thickfat
   tintedlens
   torrent
   toughclaws
   toxicboost
+  toxicdebris
   trace
   transistor
   triage
@@ -257,6 +283,7 @@ enum AbilitiesEnum {
   unburden
   unnerve
   unseenfist
+  vesselofruin
   victorystar
   vitalspirit
   voltabsorb
@@ -266,15 +293,36 @@ enum AbilitiesEnum {
   watercompaction
   waterveil
   weakarmor
+  wellbakedbody
   whitesmoke
   wimpout
+  windpower
+  windrider
   wonderguard
   wonderskin
   zenmode
+  zerotohero
 }
 
 "The supported Pokémon"
 enum PokemonEnum {
+  pokestarsmeargle
+  pokestarufo
+  pokestarufo2
+  pokestarbrycenman
+  pokestarmt
+  pokestarmt2
+  pokestartransport
+  pokestargiant
+  pokestarhumanoid
+  pokestarmonster
+  pokestarf00
+  pokestarf002
+  pokestarspirit
+  pokestarblackdoor
+  pokestarwhitedoor
+  pokestarblackbelt
+  pokestarufopropu2
   syclar
   syclant
   revenankh
@@ -343,6 +391,7 @@ enum PokemonEnum {
   protowatt
   venomicon
   venomiconepilogue
+  saharascal
   saharaja
   missingno
   bulbasaur
@@ -540,6 +589,9 @@ enum PokemonEnum {
   pinsir
   pinsirmega
   tauros
+  taurospaldea
+  taurospaldeablaze
+  taurospaldeaaqua
   magikarp
   gyarados
   gyaradosmega
@@ -1531,32 +1583,129 @@ enum PokemonEnum {
   overqwil
   enamorus
   enamorustherian
-  pokestarsmeargle
-  pokestarufo
-  pokestarufo2
-  pokestarbrycenman
-  pokestarmt
-  pokestarmt2
-  pokestartransport
-  pokestargiant
-  pokestarhumanoid
-  pokestarmonster
-  pokestarf00
-  pokestarf002
-  pokestarspirit
-  pokestarblackdoor
-  pokestarwhitedoor
-  pokestarblackbelt
-  pokestarufopropu2
+  sprigatito
+  floragato
+  meowscarada
+  fuecoco
+  crocalor
+  skeledirge
+  quaxly
+  quaxwell
+  quaquaval
+  lechonk
+  oinkologne
+  oinkolognef
+  tarountula
+  spidops
+  nymble
+  lokix
+  pawmi
+  pawmo
+  pawmot
+  tandemaus
+  maushold
+  mausholdfour
+  fidough
+  dachsbun
+  smoliv
+  dolliv
+  arboliva
+  squawkabilly
+  squawkabillyblue
+  squawkabillyyellow
+  squawkabillywhite
+  nacli
+  naclstack
+  garganacl
+  charcadet
+  armarouge
+  ceruledge
+  tadbulb
+  bellibolt
+  wattrel
+  kilowattrel
+  maschiff
+  mabosstiff
+  shroodle
+  grafaiai
+  bramblin
+  brambleghast
+  toedscool
+  toedscruel
+  klawf
+  capsakid
+  scovillain
+  rellor
+  rabsca
+  flittle
+  espathra
+  tinkatink
+  tinkatuff
+  tinkaton
+  wiglett
+  wugtrio
+  bombirdier
+  finizen
+  palafin
+  palafinhero
+  varoom
+  revavroom
+  cyclizar
+  orthworm
+  glimmet
+  glimmora
+  greavard
+  houndstone
+  flamigo
+  cetoddle
+  cetitan
+  veluza
+  dondozo
+  tatsugiri
+  annihilape
+  clodsire
+  farigiraf
+  dudunsparce
+  dudunsparcethreesegment
+  kingambit
+  greattusk
+  screamtail
+  brutebonnet
+  fluttermane
+  slitherwing
+  sandyshocks
+  irontreads
+  ironbundle
+  ironhands
+  ironjugulis
+  ironmoth
+  ironthorns
+  frigibax
+  arctibax
+  baxcalibur
+  gimmighoul
+  gimmighoulroaming
+  gholdengo
+  wochien
+  chienpao
+  tinglu
+  chiyu
+  roaringmoon
+  ironvaliant
+  koraidon
+  miraidon
 }
 
 "The supported items"
 enum ItemsEnum {
+  abilityshield
   abomasite
   absolite
   absorbbulb
+  acrobike
   adamantorb
   adrenalineorb
+  adventureguide
   aerodactylite
   aggronite
   aguavberry
@@ -1566,20 +1715,32 @@ enum ItemsEnum {
   altarianite
   ampharosite
   apicotberry
+  apricornbox
+  aquasuit
   armorfossil
   aspearberry
   assaultvest
   audinite
+  auroraticket
+  auspiciousarmor
+  autograph
+  azureflute
   babiriberry
+  bandautograph
   banettite
+  basementkey
   beastball
   beedrillite
   belueberry
   berry
   berryjuice
+  berrypots
+  berrypouch
   berrysweet
   berserkgene
+  bicycle
   bigroot
+  bikevoucher
   bindingband
   bitterberry
   blackbelt
@@ -1587,17 +1748,23 @@ enum ItemsEnum {
   blacksludge
   blastoisinite
   blazikenite
+  bluecard
   blueorb
+  bluepetal
   blukberry
   blunderpolicy
+  boosterenergy
   bottlecap
   brightpowder
   buggem
-  bugmemory
   buginiumz
+  bugmemory
   burndrive
   burntberry
   cameruptite
+  campinggear
+  cardkey
+  catchingcharm
   cellbattery
   charcoal
   charizarditex
@@ -1614,41 +1781,63 @@ enum ItemsEnum {
   choicespecs
   chopleberry
   clawfossil
+  clearamulet
+  clearbell
   cloversweet
   cobaberry
+  coincase
   colburberry
+  colressmchn
+  contestcostume
+  contestpass
   cornnberry
+  coupon1
+  coupon2
+  coupon3
   coverfossil
-  crucibellite
+  covertcloak
   crackedpot
+  crucibellite
   custapberry
   damprock
   darkgem
-  darkmemory
   darkiniumz
+  darkmemory
+  darkstone
   dawnstone
   decidiumz
   deepseascale
   deepseatooth
   destinyknot
+  devongoods
+  devonparts
+  devonscope
+  devonscubagear
   diancite
   diveball
+  dnasplicers
   domefossil
   dousedrive
+  dowsingmachine
+  dowsingmchn
   dracoplate
   dragonfang
   dragongem
+  dragoniumz
   dragonmemory
   dragonscale
-  dragoniumz
+  dragonskull
   dreadplate
   dreamball
+  droppeditem
   dubiousdisc
   durinberry
   duskball
   duskstone
+  dynamaxband
   earthplate
   eeviumz
+  eggcard
   ejectbutton
   ejectpack
   electirizer
@@ -1656,13 +1845,24 @@ enum ItemsEnum {
   electricmemory
   electricseed
   electriumz
+  elevatorkey
+  endorsement
   energypowder
   enigmaberry
+  enigmastone
+  enigmaticcard
+  eonflute
+  eonticket
+  escaperope
   eviolite
   expertbelt
+  explorerkit
+  expshare
   fairiumz
   fairygem
   fairymemory
+  famechecker
+  fashioncase
   fastball
   fightinggem
   fightingmemory
@@ -1672,6 +1872,7 @@ enum ItemsEnum {
   firememory
   firestone
   firiumz
+  fishingrod
   fistplate
   flameorb
   flameplate
@@ -1682,6 +1883,7 @@ enum ItemsEnum {
   flyiniumz
   focusband
   focussash
+  foragebag
   fossilizedbird
   fossilizeddino
   fossilizeddrake
@@ -1689,30 +1891,43 @@ enum ItemsEnum {
   friendball
   fullincense
   fullrestore
+  galactickey
   galaricacuff
   galaricawreath
   galladite
   ganlonberry
   garchompite
   gardevoirite
+  gbsounds
   gengarite
   ghostgem
-  ghostmemory
   ghostiumz
+  ghostmemory
   glalitite
+  godstone
+  gogoggles
   goldberry
   goldbottlecap
+  goldteeth
+  goodrod
+  gracidea
+  gram1
+  gram2
+  gram3
   grassgem
-  grassmemory
   grassiumz
+  grassmemory
   grassyseed
   greatball
+  greenpetal
   grepaberry
   gripclaw
   griseousorb
   groundgem
-  groundmemory
   groundiumz
+  groundmemory
+  grubbyhanky
+  gsball
   gyaradosite
   habanberry
   hardstone
@@ -1722,7 +1937,10 @@ enum ItemsEnum {
   heavydutyboots
   helixfossil
   heracronite
+  hitechearbuds
+  holocaster
   hondewberry
+  honorofkalos
   houndoominite
   hyperpotion
   iapapaberry
@@ -1733,17 +1951,27 @@ enum ItemsEnum {
   icicleplate
   iciumz
   icyrock
+  ilimasnormaliumz
   inciniumz
   insectplate
+  intriguingstone
   ironball
   ironplate
+  itemfinder
   jabocaberry
+  jadeorb
   jawfossil
+  journal
   kangaskhanite
   kasibberry
   kebiaberry
   keeberry
   kelpsyberry
+  keystone
+  keytoroom1
+  keytoroom2
+  keytoroom4
+  keytoroom6
   kingsrock
   kommoniumz
   laggingtail
@@ -1754,13 +1982,25 @@ enum ItemsEnum {
   leafstone
   leek
   leftovers
+  leftpokeball
+  legendplate
+  lenscase
   leppaberry
+  letter
   levelball
+  libertypass
   liechiberry
   lifeorb
+  liftkey
   lightball
   lightclay
+  lightstone
+  loadeddice
+  lockcapsule
+  lookerticket
+  lootsack
   lopunnite
+  lostitem
   loveball
   lovesweet
   lucarionite
@@ -1768,16 +2008,24 @@ enum ItemsEnum {
   lumberry
   luminousmoss
   lunaliumz
+  lunarwing
   lureball
   lustrousorb
   luxuryball
   lycaniumz
+  machbike
+  machinepart
   machobrace
+  magmaemblem
   magmarizer
+  magmastone
+  magmasuit
   magnet
   magoberry
   magostberry
   mail
+  makeupbag
+  maliciousarmor
   manectite
   marangaberry
   marshadiumz
@@ -1785,11 +2033,17 @@ enum ItemsEnum {
   mawilite
   maxpotion
   meadowplate
+  medalbox
   medichamite
+  megabracelet
+  megaring
+  membercard
   mentalherb
   metagrossite
   metalcoat
   metalpowder
+  meteorite
+  meteoriteshard
   metronome
   mewniumz
   mewtwonitex
@@ -1800,70 +2054,111 @@ enum ItemsEnum {
   mintberry
   miracleberry
   miracleseed
+  mirrorherb
   mistyseed
   moonball
+  moonflute
   moonstone
   muscleband
   mysteryberry
+  mysteryegg
+  mysticticket
   mysticwater
   nanabberry
   nestball
   netball
   nevermeltice
+  nlunarizer
   nomelberry
   normalgem
   normaliumz
+  nsolarizer
+  oaksletter
+  oaksparcel
   occaberry
   oddincense
   oldamber
+  oldcharm
+  oldletter
+  oldrod
+  oldseamap
   oranberry
+  orangepetal
+  ovalcharm
   ovalstone
-  przcureberry
-  psncureberry
+  pairoftickets
+  palpad
   pamtreberry
+  parcel
   parkball
+  pass
   passhoberry
   payapaberry
   pechaberry
+  permit
   persimberry
   petayaberry
+  photoalbum
   pidgeotite
   pikaniumz
   pikashuniumz
   pinapberry
   pinkbow
+  pinkpetal
   pinsirite
   pixieplate
+  plasmacard
   plumefossil
+  poffincase
+  pointcard
   poisonbarb
   poisongem
-  poisonmemory
   poisoniumz
+  poisonmemory
   pokeball
+  pokeblockcase
+  pokeblockkit
+  pokeflute
+  pokemonboxlink
+  pokeradar
   polkadotbow
   pomegberry
+  potion
+  powderjar
   poweranklet
   powerband
-  potion
   powerbelt
   powerbracer
   powerherb
   powerlens
+  powerplantpass
   powerweight
   premierball
   primariumz
   prismscale
+  prisonbottle
+  professorsmask
+  profsletter
+  propcase
   protectivepads
   protector
+  przcureberry
+  psncureberry
   psychicgem
   psychicmemory
   psychicseed
   psychiumz
+  punchingglove
+  purplepetal
   qualotberry
   quickball
   quickclaw
   quickpowder
   rabutaberry
+  ragecandybar
+  rainbowflower
+  rainbowpass
+  rainbowwing
   rarebone
   rawstberry
   razorclaw
@@ -1871,21 +2166,35 @@ enum ItemsEnum {
   razzberry
   reapercloth
   redcard
+  redchain
   redorb
+  redpetal
+  redscale
   repeatball
+  revealglass
   ribbonsweet
+  ridepager
   rindoberry
   ringtarget
+  rm1key
+  rm2key
+  rm4key
+  rm6key
   rockgem
   rockincense
-  rockmemory
   rockiumz
-  roseincense
+  rockmemory
   rockyhelmet
+  rollerskates
   roomservice
   rootfossil
+  roseincense
   roseliberry
+  rotombike
+  rotomcatalog
   rowapberry
+  ruby
+  rulebook
   rustedshield
   rustedsword
   sablenite
@@ -1895,72 +2204,106 @@ enum ItemsEnum {
   sailfossil
   salacberry
   salamencite
+  sapphire
+  scanner
   sceptilite
   scizorite
   scopelens
   seaincense
+  sealbag
+  sealcase
+  secretkey
+  secretpotion
   sharpbeak
   sharpedonite
   shedshell
   shellbell
+  shinycharm
   shinystone
   shockdrive
   shucaberry
   silkscarf
+  silphscope
   silverpowder
+  silverwing
   sitrusberry
   skullfossil
   skyplate
   slowbronite
+  slowpoketail
   smoothrock
   snorliumz
   snowball
   softsand
   solganiumz
+  soniasbook
+  sootsack
   souldew
+  sparklingstone
   spelltag
   spelonberry
   splashplate
   spookyplate
   sportball
+  sprayduck
+  sprinklotad
+  squirtbottle
+  ssticket
   starfberry
-  steelgem
-  steelmemory
-  steeliumz
   starsweet
+  steelgem
+  steeliumz
   steelixite
+  steelmemory
   stick
   stickybarb
   stoneplate
+  storagekey
   strawberrysweet
+  suitekey
+  sunflute
   sunstone
   superpotion
+  superrod
+  surgebadge
   swampertite
   sweetapple
   tamatoberry
   tangaberry
   tapuniumz
   tartapple
+  tea
+  teachytv
   terrainextender
   thickclub
   throatspray
   thunderstone
+  tidalbell
   timerball
+  tmcase
+  tmvpass
+  townmap
   toxicorb
   toxicplate
+  traveltrunk
+  tripass
   twistedspoon
   tyranitarite
   ultraball
   ultranecroziumz
+  unownreport
   upgrade
   utilityumbrella
   venusaurite
   vilevial
+  vsrecorder
+  vsseeker
   wacanberry
+  wailmerpail
   watergem
+  wateriumz
   watermemory
   waterstone
-  wateriumz
   watmelberry
   waveincense
   weaknesspolicy
@@ -1970,201 +2313,13 @@ enum ItemsEnum {
   widelens
   wikiberry
   wiseglasses
-  yacheberry
-  zapplate
-  zoomlens
-  acrobike
-  adventureguide
-  apricornbox
-  aquasuit
-  auroraticket
-  autograph
-  azureflute
-  bandautograph
-  basementkey
-  berrypots
-  berrypouch
-  bicycle
-  bikevoucher
-  bluecard
-  bluepetal
-  campinggear
-  cardkey
-  catchingcharm
-  clearbell
-  coincase
-  colressmchn
-  contestcostume
-  contestpass
-  coupon1
-  coupon2
-  coupon3
-  dnasplicers
-  darkstone
-  devongoods
-  devonparts
-  devonscope
-  devonscubagear
-  dowsingmchn
-  dowsingmachine
-  dragonskull
-  droppeditem
-  dynamaxband
-  eggcard
-  elevatorkey
-  endorsement
-  enigmastone
-  enigmaticcard
-  eonflute
-  eonticket
-  escaperope
-  expshare
-  explorerkit
-  famechecker
-  fashioncase
-  fishingrod
-  foragebag
-  gbsounds
-  gsball
-  galactickey
-  gogoggles
-  godstone
-  goldteeth
-  goodrod
-  gracidea
-  gram1
-  gram2
-  gram3
-  greenpetal
-  grubbyhanky
-  hitechearbuds
-  holocaster
-  honorofkalos
-  ilimasnormaliumz
-  intriguingstone
-  itemfinder
-  jadeorb
-  journal
-  keystone
-  keytoroom1
-  keytoroom2
-  keytoroom4
-  keytoroom6
-  leftpokeball
-  legendplate
-  lenscase
-  letter
-  libertypass
-  liftkey
-  lightstone
-  lockcapsule
-  lookerticket
-  lootsack
-  lostitem
-  lunarwing
-  machbike
-  machinepart
-  magmaemblem
-  magmastone
-  magmasuit
-  makeupbag
-  medalbox
-  megabracelet
-  megaring
-  membercard
-  meteorite
-  meteoriteshard
-  moonflute
-  mysteryegg
-  mysticticket
-  nlunarizer
-  nsolarizer
-  oaksletter
-  oaksparcel
-  oldcharm
-  oldletter
-  oldrod
-  oldseamap
-  orangepetal
-  ovalcharm
-  pairoftickets
-  palpad
-  parcel
-  pass
-  permit
-  photoalbum
-  pinkpetal
-  plasmacard
-  poffincase
-  pointcard
-  pokeradar
-  pokeblockkit
-  pokeblockcase
-  pokeflute
-  pokemonboxlink
-  powderjar
-  powerplantpass
-  prisonbottle
-  profsletter
-  professorsmask
-  propcase
-  purplepetal
-  ragecandybar
-  rainbowflower
-  rainbowpass
-  rainbowwing
-  redchain
-  redpetal
-  redscale
-  revealglass
-  ridepager
-  rm1key
-  rm2key
-  rm4key
-  rm6key
-  rollerskates
-  rotombike
-  rotomcatalog
-  ruby
-  rulebook
-  ssticket
-  sapphire
-  scanner
-  sealbag
-  sealcase
-  secretkey
-  secretpotion
-  shinycharm
-  silphscope
-  silverwing
-  slowpoketail
-  soniasbook
-  sootsack
-  sparklingstone
-  sprayduck
-  sprinklotad
-  squirtbottle
-  storagekey
-  suitekey
-  sunflute
-  superrod
-  surgebadge
-  tmcase
-  tmvpass
-  tea
-  teachytv
-  tidalbell
-  townmap
-  traveltrunk
-  tripass
-  unownreport
-  vsrecorder
-  vsseeker
-  wailmerpail
   wishingstar
   workskey
   xtransceiver
+  yacheberry
   yellowpetal
+  zapplate
+  zoomlens
   zpowering
   zring
   zygardecube
@@ -2172,7 +2327,6 @@ enum ItemsEnum {
 
 "The supported moves"
 enum MovesEnum {
-  tenmillionvoltthunderbolt
   absorb
   accelerock
   acid
@@ -2193,16 +2347,19 @@ enum MovesEnum {
   anchorshot
   ancientpower
   appleacid
+  aquacutter
   aquajet
   aquaring
+  aquastep
   aquatail
+  armorcannon
   armthrust
   aromatherapy
   aromaticmist
   assist
   assurance
-  astralbarrage
   astonish
+  astralbarrage
   attackorder
   attract
   aurasphere
@@ -2211,6 +2368,7 @@ enum MovesEnum {
   auroraveil
   autotomize
   avalanche
+  axekick
   babydolleyes
   baddybad
   banefulbunker
@@ -2220,18 +2378,20 @@ enum MovesEnum {
   batonpass
   beakblast
   beatup
-  belch
   behemothbash
   behemothblade
+  belch
   bellydrum
   bestow
   bide
   bind
   bite
+  bitterblade
   bittermalice
   blackholeeclipse
   blastburn
   blazekick
+  blazingtorque
   bleakwindstorm
   blizzard
   block
@@ -2242,13 +2402,13 @@ enum MovesEnum {
   boltbeak
   boltstrike
   boneclub
-  bonerush
   bonemerang
+  bonerush
   boomburst
   bounce
   bouncybubble
-  bravebird
   branchpoke
+  bravebird
   breakingswipe
   breakneckblitz
   brickbreak
@@ -2275,6 +2435,8 @@ enum MovesEnum {
   chargebeam
   charm
   chatter
+  chillingwater
+  chillyreception
   chipaway
   chloroblast
   circlethrow
@@ -2286,7 +2448,10 @@ enum MovesEnum {
   closecombat
   coaching
   coil
+  collisioncourse
+  combattorque
   cometpunch
+  comeuppance
   confide
   confuseray
   confusion
@@ -2313,9 +2478,9 @@ enum MovesEnum {
   crushgrip
   curse
   cut
+  darkestlariat
   darkpulse
   darkvoid
-  darkestlariat
   dazzlinggleam
   decorate
   defendorder
@@ -2332,13 +2497,15 @@ enum MovesEnum {
   discharge
   dive
   dizzypunch
+  doodle
   doomdesire
+  doubleedge
   doublehit
   doubleironbash
   doublekick
+  doubleshock
   doubleslap
   doubleteam
-  doubleedge
   dracometeor
   dragonascent
   dragonbreath
@@ -2351,16 +2518,16 @@ enum MovesEnum {
   dragonrage
   dragonrush
   dragontail
-  drainpunch
   drainingkiss
+  drainpunch
   dreameater
   drillpeck
   drillrun
   drumbeating
   dualchop
-  dynamicpunch
   dualwingbeat
   dynamaxcannon
+  dynamicpunch
   earthpower
   earthquake
   echoedvoice
@@ -2370,6 +2537,7 @@ enum MovesEnum {
   electricterrain
   electrify
   electroball
+  electrodrift
   electroweb
   embargo
   ember
@@ -2399,6 +2567,7 @@ enum MovesEnum {
   fellstinger
   fierydance
   fierywrath
+  filletaway
   finalgambit
   fireblast
   firefang
@@ -2412,8 +2581,8 @@ enum MovesEnum {
   flail
   flameburst
   flamecharge
-  flamewheel
   flamethrower
+  flamewheel
   flareblitz
   flash
   flashcannon
@@ -2424,6 +2593,7 @@ enum MovesEnum {
   floatyfall
   floralhealing
   flowershield
+  flowertrick
   fly
   flyingpress
   focusblast
@@ -2434,8 +2604,8 @@ enum MovesEnum {
   foresight
   forestscurse
   foulplay
-  freezeshock
   freezedry
+  freezeshock
   freezingglare
   freezyfrost
   frenzyplant
@@ -2454,9 +2624,11 @@ enum MovesEnum {
   geomancy
   gigadrain
   gigaimpact
+  gigatonhammer
   gigavolthavoc
   glaciallance
   glaciate
+  glaiverush
   glare
   glitzyglow
   gmaxbefuddle
@@ -2467,12 +2639,6 @@ enum MovesEnum {
   gmaxdepletion
   gmaxdrumsolo
   gmaxfinale
-  gmaxtartness
-  gmaxvinelash
-  gmaxvolcalith
-  gmaxvoltcrash
-  gmaxwildfire
-  gmaxwindrage
   gmaxfireball
   gmaxfoamburst
   gmaxgoldrush
@@ -2480,10 +2646,6 @@ enum MovesEnum {
   gmaxhydrosnipe
   gmaxmalodor
   gmaxmeltdown
-  gmaxstonesurge
-  gmaxstunshock
-  gmaxsweetness
-  gmaxterror
   gmaxoneblow
   gmaxrapidflow
   gmaxreplenish
@@ -2492,6 +2654,16 @@ enum MovesEnum {
   gmaxsmite
   gmaxsnooze
   gmaxsteelsurge
+  gmaxstonesurge
+  gmaxstunshock
+  gmaxsweetness
+  gmaxtartness
+  gmaxterror
+  gmaxvinelash
+  gmaxvolcalith
+  gmaxvoltcrash
+  gmaxwildfire
+  gmaxwindrage
   grassknot
   grasspledge
   grasswhistle
@@ -2502,9 +2674,9 @@ enum MovesEnum {
   growl
   growth
   grudge
+  guardianofalola
   guardsplit
   guardswap
-  guardianofalola
   guillotine
   gunkshot
   gust
@@ -2514,15 +2686,15 @@ enum MovesEnum {
   happyhour
   harden
   haze
-  headcharge
-  headsmash
   headbutt
+  headcharge
   headlongrush
+  headsmash
   healbell
   healblock
+  healingwish
   healorder
   healpulse
-  healingwish
   heartstamp
   heartswap
   heatcrash
@@ -2561,10 +2733,11 @@ enum MovesEnum {
   hydropump
   hydrovortex
   hyperbeam
+  hyperdrill
   hyperfang
-  hypervoice
   hyperspacefury
   hyperspacehole
+  hypervoice
   hypnosis
   iceball
   icebeam
@@ -2573,6 +2746,7 @@ enum MovesEnum {
   icehammer
   icepunch
   iceshard
+  icespinner
   iciclecrash
   iciclespear
   icywind
@@ -2589,6 +2763,7 @@ enum MovesEnum {
   ironhead
   irontail
   jawlock
+  jetpunch
   judgment
   jumpkick
   junglehealing
@@ -2596,55 +2771,58 @@ enum MovesEnum {
   kinesis
   kingsshield
   knockoff
+  kowtowcleave
   landswrath
   laserfocus
   lashout
   lastresort
+  lastrespects
   lavaplume
+  leafage
   leafblade
   leafstorm
   leaftornado
-  leafage
   leechlife
   leechseed
   leer
   letssnuggleforever
   lick
-  lightscreen
-  lightthatburnsthesky
   lifedew
   lightofruin
+  lightscreen
+  lightthatburnsthesky
   liquidation
   lockon
   lovelykiss
   lowkick
   lowsweep
   luckychant
+  luminacrash
   lunarblessing
   lunardance
   lunge
   lusterpurge
   machpunch
+  magicalleaf
+  magicaltorque
   magiccoat
   magicpowder
   magicroom
-  magicalleaf
   magikarpsrevenge
   magmastorm
   magnetbomb
-  magnetrise
   magneticflux
+  magnetrise
   magnitude
+  makeitrain
   maliciousmoonsault
   matblock
-  mefirst
   maxairstream
   maxdarkness
   maxflare
   maxflutterby
   maxgeyser
   maxguard
-  meanlook
   maxhailstorm
   maxknuckle
   maxlightning
@@ -2658,11 +2836,13 @@ enum MovesEnum {
   maxsteelspike
   maxstrike
   maxwyrmwind
+  meanlook
   meditate
+  mefirst
   megadrain
+  megahorn
   megakick
   megapunch
-  megahorn
   memento
   menacingmoonrazemaelstrom
   metalburst
@@ -2689,12 +2869,13 @@ enum MovesEnum {
   moongeistbeam
   moonlight
   morningsun
+  mortalspin
   mountaingale
   mudbomb
-  mudshot
-  mudsport
-  mudslap
   muddywater
+  mudshot
+  mudslap
+  mudsport
   multiattack
   mysticalfire
   mysticalpower
@@ -2705,11 +2886,12 @@ enum MovesEnum {
   needlearm
   neverendingnightmare
   nightdaze
+  nightmare
   nightshade
   nightslash
-  nightmare
   nobleroar
   noretreat
+  noxioustorque
   nuzzle
   oblivionwing
   obstruct
@@ -2718,6 +2900,7 @@ enum MovesEnum {
   octolock
   odorsleuth
   ominouswind
+  orderup
   originpulse
   outrage
   overdrive
@@ -2726,8 +2909,8 @@ enum MovesEnum {
   paleowave
   paraboliccharge
   partingshot
-  payday
   payback
+  payday
   peck
   perishsong
   petalblizzard
@@ -2748,6 +2931,8 @@ enum MovesEnum {
   poisontail
   pollenpuff
   poltergeist
+  populationbomb
+  pounce
   pound
   powder
   powdersnow
@@ -2757,20 +2942,20 @@ enum MovesEnum {
   powerswap
   powertrick
   powertrip
-  powerwhip
   poweruppunch
+  powerwhip
   precipiceblades
   present
   prismaticlaser
   protect
   psybeam
-  psychup
   psychic
   psychicfangs
   psychicterrain
   psychoboost
   psychocut
   psychoshift
+  psychup
   psyshieldbash
   psyshock
   psystrike
@@ -2785,7 +2970,9 @@ enum MovesEnum {
   quickguard
   quiverdance
   rage
+  ragefist
   ragepowder
+  ragingbull
   ragingfury
   raindance
   rapidspin
@@ -2804,6 +2991,7 @@ enum MovesEnum {
   revelationdance
   revenge
   reversal
+  revivalblessing
   risingvoltage
   roar
   roaroftime
@@ -2821,13 +3009,15 @@ enum MovesEnum {
   roost
   rototiller
   round
+  ruination
   sacredfire
   sacredsword
   safeguard
+  saltcure
   sandattack
-  sandtomb
   sandsearstorm
   sandstorm
+  sandtomb
   sappyseed
   savagespinout
   scald
@@ -2853,6 +3043,7 @@ enum MovesEnum {
   shadowstrike
   sharpen
   shatteredpsyche
+  shedtail
   sheercold
   shellsidearm
   shellsmash
@@ -2862,6 +3053,7 @@ enum MovesEnum {
   shockwave
   shoreup
   signalbeam
+  silktrap
   silverwind
   simplebeam
   sing
@@ -2892,6 +3084,7 @@ enum MovesEnum {
   snatch
   snipeshot
   snore
+  snowscape
   soak
   softboiled
   solarbeam
@@ -2904,14 +3097,16 @@ enum MovesEnum {
   sparklyswirl
   spectralthief
   speedswap
+  spicyextract
   spiderweb
   spikecannon
   spikes
   spikyshield
+  spinout
   spiritbreak
   spiritshackle
-  spitup
   spite
+  spitup
   splash
   splinteredstormshards
   splishysplash
@@ -2978,6 +3173,8 @@ enum MovesEnum {
   teeterdance
   telekinesis
   teleport
+  tenmillionvoltthunderbolt
+  terablast
   terrainpulse
   thief
   thousandarrows
@@ -2985,36 +3182,41 @@ enum MovesEnum {
   thrash
   throatchop
   thunder
+  thunderbolt
   thundercage
   thunderfang
   thunderouskick
   thunderpunch
   thundershock
   thunderwave
-  thunderbolt
   tickle
+  tidyup
   topsyturvy
+  torchsong
   torment
   toxic
   toxicspikes
   toxicthread
+  trailblaze
   transform
   triattack
   trick
-  trickroom
   trickortreat
+  trickroom
   triplearrows
   tripleaxel
+  tripledive
   triplekick
   tropkick
   trumpcard
+  twinbeam
   twineedle
   twinkletackle
   twister
-  uturn
   uproar
-  vcreate
+  uturn
   vacuumwave
+  vcreate
   veeveevolley
   venomdrench
   venoshock
@@ -3025,18 +3227,19 @@ enum MovesEnum {
   voltswitch
   volttackle
   wakeupslap
+  waterfall
   watergun
   waterpledge
   waterpulse
   watershuriken
   watersport
   waterspout
-  waterfall
   wavecrash
   weatherball
   whirlpool
   whirlwind
   wickedblow
+  wickedtorque
   wideguard
   wildboltstorm
   wildcharge

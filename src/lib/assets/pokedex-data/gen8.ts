@@ -2922,7 +2922,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 902,
       otherFormes: ['basculegion'],
       prevo: 'basculinwhitestriped',
-      species: 'basculegion',
+      species: 'basculegion-f',
       types: [TypesEnum.Water, TypesEnum.Ghost],
       weightkg: 110
     }

@@ -4980,7 +4980,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'taurospaldea',
     {
-      abilities: { first: 'Intimidate', second: 'Anger Point', hidden: 'Cud Chew' },
+      abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',
       baseStats: { hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
@@ -5009,7 +5009,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'taurospaldeablaze',
     {
-      abilities: { first: 'Intimidate', second: 'Anger Point', hidden: 'Cud Chew' },
+      abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',
       baseStats: { hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
@@ -5038,7 +5038,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'taurospaldeaaqua',
     {
-      abilities: { first: 'Intimidate', second: 'Anger Point', hidden: 'Cud Chew' },
+      abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',
       baseStats: { hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },

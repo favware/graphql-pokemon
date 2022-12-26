@@ -1069,7 +1069,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'wooper',
+    'wooperpaldea',
     {
       abilities: { first: 'Poison Point', second: 'Water Absorb', hidden: 'Unaware' },
       baseStats: { hp: 55, atk: 45, def: 45, spa: 25, spd: 25, spe: 15 },

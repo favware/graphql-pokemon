@@ -1768,7 +1768,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 1,
       num: 980,
-      prevo: 'wooper',
+      prevo: 'wooperpaldea',
       species: 'clodsire',
       types: [TypesEnum.Poison, TypesEnum.Ground],
       weightkg: 223

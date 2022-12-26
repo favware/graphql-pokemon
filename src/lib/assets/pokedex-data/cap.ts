@@ -333,7 +333,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1.6,
       isEggObtainable: false,
       num: -15,
-      prevo: 'Duohm',
+      prevo: 'duohm',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cyclohm.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cyclohm.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cyclohm.png',
@@ -356,7 +356,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 2.6,
       isEggObtainable: false,
       num: -16,
-      prevo: 'Dorsoil',
+      prevo: 'dorsoil',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/colossoil.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/colossoil.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/colossoil.png',
@@ -379,7 +379,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 0.7,
       isEggObtainable: false,
       num: -17,
-      prevo: 'Protowatt',
+      prevo: 'protowatt',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/krillowatt.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/krillowatt.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/krillowatt.png',
@@ -1557,7 +1557,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/saharascal.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/saharascal.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/saharascal.png',
-      species: 'Saharascal',
+      species: 'saharascal',
       types: [TypesEnum.Ground],
       weightkg: 48
     }
@@ -1580,7 +1580,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/saharaja.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/saharaja.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/saharaja.png',
-      species: 'Saharaja',
+      species: 'saharaja',
       types: [TypesEnum.Ground],
       weightkg: 303.9
     }

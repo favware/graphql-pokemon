@@ -780,8 +780,10 @@ function parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, 
   // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP and PokéStar) then it doesn't have a Serebii page
   if (pokemonNumber <= 0) return '';
 
+  const parsedPokemonName = toLowerHyphenCase(pokemonName.replace(/:/g, ''));
+
   // If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
-  if (speciesThatAreNotInGeneration8Nor9.includes(pokemonName)) {
+  if (speciesThatAreNotInGeneration8Nor9.includes(parsedPokemonName)) {
     return `${serebiiBaseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
   }
 
@@ -811,19 +813,26 @@ function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, 
  * @param pokemonTier The smogon tier of the Pokémon, required to check if the Pokémon is available in Generation 9
  */
 function parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, pokemonTier: string) {
-  // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP) then it doesn't have a Smogon Dex page
-  if (pokemonNumber <= 0) return '';
+  // If the Pokémon is Missingno, then it doesn't have a Smogon Dex page
+  if (pokemonNumber === 0) return '';
 
   const parsedPokemonName = toLowerHyphenCase(pokemonName.replace(/:/g, ''));
 
-  // If the Pokémon is within the numbers range for generation 8 then build a Generation 8 based URL
-  if (pokemonNumber >= 810 || pokemonNumber <= 905) {
+  // If the Pokémon has a number of lower than 0 then it is CAP so we can always send the latest generation URL
+  if (pokemonNumber < 0) {
     return `${smogonBaseUrl}/sv/pokemon/${parsedPokemonName}`;
   }
 
-  if (pokemonTier.toLowerCase() === 'past') {
-    // If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
+  // If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
+  if (speciesThatAreNotInGeneration8Nor9.includes(parsedPokemonName)) {
     return `${smogonBaseUrl}/sm/pokemon/${parsedPokemonName}`;
+  }
+
+  // If the Pokémon is `'past'` in Generation 9, but was not included in `speciesThatAreNotInGeneration8Nor9`
+  // or the Pokémon is within the numbers range for generation 8,
+  // then build a Generation 8 based URL
+  if (pokemonTier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905)) {
+    return `${smogonBaseUrl}/ss/pokemon/${parsedPokemonName}`;
   }
 
   // If the Pokémon is available in Generation 9 then build a Generation 9 based URL

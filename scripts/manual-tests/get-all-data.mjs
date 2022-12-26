@@ -1,10 +1,10 @@
-// import { createWriteStream } from 'node:fs';
-// import { pipeline as syncPipeline, Readable } from 'node:stream';
-// import { promisify } from 'node:util';
-//
-// const pipeline = promisify(syncPipeline);
-//
-// const outputFile = new URL('./output.json', import.meta.url);
+import { createWriteStream } from 'node:fs';
+import { pipeline as syncPipeline, Readable } from 'node:stream';
+import { promisify } from 'node:util';
+
+const pipeline = promisify(syncPipeline);
+
+const outputFile = new URL('./output.json', import.meta.url);
 
 const res = await fetch('http://localhost:4000', {
   method: 'POST',
@@ -273,6 +273,6 @@ const res = await fetch('http://localhost:4000', {
   })
 });
 
-// const readable = Readable.from(res.body, { encoding: 'utf-8' });
-// const writable = createWriteStream(outputFile);
-// await pipeline(readable, writable);
+const readable = Readable.from(res.body, { encoding: 'utf-8' });
+const writable = createWriteStream(outputFile);
+await pipeline(readable, writable);

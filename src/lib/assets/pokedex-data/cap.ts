@@ -1541,17 +1541,41 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
+    'saharascal',
+    {
+      abilities: { first: 'waterabsorb', second: 'pickpocket', hidden: 'sandspit' },
+      baseStats: { hp: 50, atk: 80, def: 65, spa: 45, spd: 90, spe: 70 },
+      color: 'Brown',
+      eggGroups: ['Field'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['saharaja'],
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      num: -67,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/saharascal.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/saharascal.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/saharascal.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/saharascal.png',
+      species: 'Saharascal',
+      types: [TypesEnum.Ground],
+      weightkg: 48
+    }
+  ],
+  [
     'saharaja',
     {
-      abilities: { first: 'waterabsorb', second: 'serenegrace' },
+      abilities: { first: 'waterabsorb', second: 'serenegrace', hidden: 'sandspit' },
       baseStats: { hp: 70, atk: 112, def: 105, spa: 65, spd: 123, spe: 78 },
       color: 'White',
-      eggGroups: ['Undiscovered'],
+      eggGroups: ['Field'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'use Shiny Stone',
       genderRatio: { male: '0%', female: '0%' },
       heightm: 2.3,
       isEggObtainable: false,
       num: -68,
+      prevo: 'saharascal',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/saharaja.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/saharaja.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/saharaja.png',

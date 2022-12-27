@@ -1760,6 +1760,7 @@ enum ItemsEnum {
   buggem
   buginiumz
   bugmemory
+  bugterashard
   burndrive
   burntberry
   cameruptite
@@ -1805,6 +1806,7 @@ enum ItemsEnum {
   darkiniumz
   darkmemory
   darkstone
+  darkterashard
   dawnstone
   decidiumz
   deepseascale
@@ -1828,6 +1830,7 @@ enum ItemsEnum {
   dragonmemory
   dragonscale
   dragonskull
+  dragonterashard
   dreadplate
   dreamball
   droppeditem
@@ -1845,6 +1848,7 @@ enum ItemsEnum {
   electricgem
   electricmemory
   electricseed
+  electricterashard
   electriumz
   elevatorkey
   endorsement
@@ -1862,16 +1866,19 @@ enum ItemsEnum {
   fairiumz
   fairygem
   fairymemory
+  fairyterashard
   famechecker
   fashioncase
   fastball
   fightinggem
   fightingmemory
+  fightingterashard
   fightiniumz
   figyberry
   firegem
   firememory
   firestone
+  fireterashard
   firiumz
   fishingrod
   fistplate
@@ -1881,6 +1888,7 @@ enum ItemsEnum {
   flowersweet
   flyinggem
   flyingmemory
+  flyingterashard
   flyiniumz
   focusband
   focussash
@@ -1904,6 +1912,7 @@ enum ItemsEnum {
   ghostgem
   ghostiumz
   ghostmemory
+  ghostterashard
   glalitite
   godstone
   gogoggles
@@ -1918,6 +1927,7 @@ enum ItemsEnum {
   grassgem
   grassiumz
   grassmemory
+  grassterashard
   grassyseed
   greatball
   greenpetal
@@ -1927,6 +1937,7 @@ enum ItemsEnum {
   groundgem
   groundiumz
   groundmemory
+  groundterashard
   grubbyhanky
   gsball
   gyaradosite
@@ -1949,6 +1960,7 @@ enum ItemsEnum {
   icegem
   icememory
   icestone
+  iceterashard
   icicleplate
   iciumz
   icyrock
@@ -1974,7 +1986,9 @@ enum ItemsEnum {
   keytoroom4
   keytoroom6
   kingsrock
+  kofuswallet
   kommoniumz
+  koraidonspokeball
   laggingtail
   lansatberry
   latiasite
@@ -2055,6 +2069,7 @@ enum ItemsEnum {
   mintberry
   miracleberry
   miracleseed
+  miraidonspokeball
   mirrorherb
   mistyseed
   moonball
@@ -2073,6 +2088,7 @@ enum ItemsEnum {
   nomelberry
   normalgem
   normaliumz
+  normalterashard
   nsolarizer
   oaksletter
   oaksparcel
@@ -2116,6 +2132,7 @@ enum ItemsEnum {
   poisongem
   poisoniumz
   poisonmemory
+  poisonterashard
   pokeball
   pokeblockcase
   pokeblockkit
@@ -2148,6 +2165,7 @@ enum ItemsEnum {
   psychicgem
   psychicmemory
   psychicseed
+  psychicterashard
   psychiumz
   punchingglove
   purplepetal
@@ -2185,6 +2203,7 @@ enum ItemsEnum {
   rockincense
   rockiumz
   rockmemory
+  rockterashard
   rockyhelmet
   rollerskates
   roomservice
@@ -2193,6 +2212,7 @@ enum ItemsEnum {
   roseliberry
   rotombike
   rotomcatalog
+  rotomphone
   rowapberry
   ruby
   rulebook
@@ -2205,8 +2225,10 @@ enum ItemsEnum {
   sailfossil
   salacberry
   salamencite
+  sandwhich
   sapphire
   scanner
+  scarletbook
   sceptilite
   scizorite
   scopelens
@@ -2256,6 +2278,7 @@ enum ItemsEnum {
   steeliumz
   steelixite
   steelmemory
+  steelterashard
   stick
   stickybarb
   stoneplate
@@ -2275,6 +2298,7 @@ enum ItemsEnum {
   tartapple
   tea
   teachytv
+  teraorb
   terrainextender
   thickclub
   throatspray
@@ -2297,6 +2321,7 @@ enum ItemsEnum {
   utilityumbrella
   venusaurite
   vilevial
+  violetbook
   vsrecorder
   vsseeker
   wacanberry
@@ -2305,6 +2330,7 @@ enum ItemsEnum {
   wateriumz
   watermemory
   waterstone
+  waterterashard
   watmelberry
   waveincense
   weaknesspolicy

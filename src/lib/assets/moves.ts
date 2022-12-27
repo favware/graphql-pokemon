@@ -12090,7 +12090,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: 'The user takes 1/2 of its maximum HP, rounded up, and creates a substitute. The user then switches out, passing the substitute to whichever Pokemon is switched in.',
+      desc: 'The user takes 1/2 of its maximum HP, rounded up, and creates a substitute. The user then switches out, passing the substitute to whichever Pokémon is switched in.',
       name: 'Shed Tail',
       pp: 10,
       priority: 0,

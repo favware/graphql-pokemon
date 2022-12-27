@@ -3372,7 +3372,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'A Poké Ball that can hold the mysterious Pokémon known as Miraidon. A boy named Arven gave it to you.',
       gen: 9,
       keyItem: true,
-      name: "Miraidon's Poke Ball",
+      name: "Miraidon's Poké Ball",
       specialSprite: "https://www.serebii.net/itemdex/sprites/miraidon'spokeball.png"
     }
   ],

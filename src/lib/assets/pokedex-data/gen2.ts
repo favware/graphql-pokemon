@@ -1071,26 +1071,27 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'wooperpaldea',
     {
-      abilities: { first: 'Poison Point', second: 'Water Absorb', hidden: 'Unaware' },
+      abilities: { first: 'poisonpoint', second: 'waterabsorb', hidden: 'unaware' },
+      baseSpecies: 'Wooper',
       baseStats: { hp: 55, atk: 45, def: 45, spa: 25, spd: 25, spe: 15 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
-      forme: 'Paldea',
-      formeLetter: 'P',
       color: 'Brown',
       eggGroups: ['Water 1', 'Field'],
       evYields: { hp: 1, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
       evos: ['clodsire'],
+      forme: 'Paldea',
+      formeLetter: 'P',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 0.4,
       isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
       num: 194,
-      species: 'wooper-paldea',
       otherFormes: ['wooper'],
+      species: 'wooper-paldea',
       types: [TypesEnum.Poison, TypesEnum.Ground],
       weightkg: 8.5,
-      aliases: ['wooperpaldea', 'wooperp']
+      aliases: ['wooperp']
     }
   ],
   [

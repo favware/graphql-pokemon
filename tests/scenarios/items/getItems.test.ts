@@ -28,7 +28,7 @@ describe('getItem', () => {
         name: 'Life Orb',
         serebiiPage: 'https://www.serebii.net/itemdex/lifeorb.shtml',
         shortDesc: null,
-        smogonPage: 'https://www.smogon.com/dex/ss/items/life-orb',
+        smogonPage: 'https://www.smogon.com/dex/sv/items/life-orb',
         sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/life-orb.png'
       });
     });

@@ -29,7 +29,7 @@ describe('getFuzzyItem', () => {
           name: 'Life Orb',
           serebiiPage: 'https://www.serebii.net/itemdex/lifeorb.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/life-orb',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/life-orb',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/life-orb.png'
         }
       ]);
@@ -50,7 +50,7 @@ describe('getFuzzyItem', () => {
           name: 'Assault Vest',
           serebiiPage: 'https://www.serebii.net/itemdex/assaultvest.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/assault-vest',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/assault-vest',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/assault-vest.png'
         },
         {
@@ -61,7 +61,7 @@ describe('getFuzzyItem', () => {
           name: 'Choice Band',
           serebiiPage: 'https://www.serebii.net/itemdex/choiceband.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/choice-band',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/choice-band',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png'
         },
         {
@@ -72,7 +72,7 @@ describe('getFuzzyItem', () => {
           name: 'Focus Sash',
           serebiiPage: 'https://www.serebii.net/itemdex/focussash.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/focus-sash',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/focus-sash',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/focus-sash.png'
         }
       ]);
@@ -86,14 +86,14 @@ describe('getFuzzyItem', () => {
 
       expect(data.getFuzzyItem).toEqual([
         {
-          bulbapediaPage: "https://bulbapedia.bulbagarden.net/wiki/Miraidon's_Poke_Ball",
+          bulbapediaPage: "https://bulbapedia.bulbagarden.net/wiki/Miraidon's_Poké_Ball",
           desc: 'A Poké Ball that can hold the mysterious Pokémon known as Miraidon. A boy named Arven gave it to you.',
           generationIntroduced: 9,
           isNonstandard: null,
-          name: "Miraidon's Poke Ball",
+          name: "Miraidon's Poké Ball",
           serebiiPage: 'https://www.serebii.net/itemdex/miraidonspokeball.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/miraidon-s-poke-ball',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/miraidon-s-poké-ball',
           sprite: "https://www.serebii.net/itemdex/sprites/miraidon'spokeball.png"
         },
         {
@@ -102,9 +102,9 @@ describe('getFuzzyItem', () => {
           generationIntroduced: 9,
           isNonstandard: null,
           name: "Koraidon's Poké Ball",
-          serebiiPage: 'https://www.serebii.net/itemdex/koraidonspokéball.shtml',
+          serebiiPage: 'https://www.serebii.net/itemdex/koraidonspokeball.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/koraidon-s-poké-ball',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/koraidon-s-poké-ball',
           sprite: "https://www.serebii.net/itemdex/sprites/koraidon'spokeball.png"
         },
         {
@@ -115,7 +115,7 @@ describe('getFuzzyItem', () => {
           name: "Ilima's Normalium Z",
           serebiiPage: 'https://www.serebii.net/itemdex/ilimasnormaliumz.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/ilima-s-normalium-z',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/ilima-s-normalium-z',
           sprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
         }
       ]);

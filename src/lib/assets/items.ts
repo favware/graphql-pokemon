@@ -4500,6 +4500,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'rotomphone',
+    {
+      desc: 'The latest model of smartphone. A Pokémon called Rotom lives within it, and it can be used to run all sorts of handy apps.',
+      gen: 9,
+      keyItem: true,
+      name: 'Rotom Phone',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rotomphone.png'
+    }
+  ],
+  [
     'rowapberry',
     {
       desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
@@ -4607,6 +4617,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Salamencite'
+    }
+  ],
+  [
+    'sandwhich',
+    {
+      desc: 'A dish made by sandwiching vegetables, meat, or other ingredients between two pieces of bread. It makes a fantastic meal when out on a picnic.',
+      gen: 9,
+      keyItem: true,
+      name: 'Sandwich',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/sandwich.png'
     }
   ],
   [
@@ -5693,6 +5713,228 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Zygarde Cube',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
+    }
+  ],
+  [
+    'koraidonspokeball',
+    {
+      desc: 'A Poké Ball that can hold the mysterious Pokémon known as Koraidon. A boy named Arven gave it to you.',
+      gen: 9,
+      keyItem: true,
+      name: "Koraidon's Poké Ball",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/koraidon'spokeball.png"
+    }
+  ],
+  [
+    'miraidonspokeball',
+    {
+      desc: 'A Poké Ball that can hold the mysterious Pokémon known as Miraidon. A boy named Arven gave it to you.',
+      gen: 9,
+      keyItem: true,
+      name: "Miraidon's Poke Ball",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/miraidon'spokeball.png"
+    }
+  ],
+  [
+    'teraorb',
+    {
+      desc: 'An orb that holds within it the power to crystallize. When it is charged with energy, it can be used to cause Pokémon to Terastallize.',
+      gen: 9,
+      keyItem: true,
+      name: 'Tera Orb',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/teraorb.png'
+    }
+  ],
+  [
+    'scarletbook',
+    {
+      desc: 'A record of the expedition that the author, Heath, went on within the Great Crater of Paldea. The book has the name "Sada" written on it in clumsy handwriting.',
+      gen: 9,
+      keyItem: true,
+      name: 'Scarlet Book',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/scarletbook.png'
+    }
+  ],
+  [
+    'violetbook',
+    {
+      desc: 'A record of the expedition that the author, Heath, went on within the Great Crater of Paldea. The book has the name "Turo" written on it in clumsy handwriting.',
+      gen: 9,
+      keyItem: true,
+      name: 'Violet Book',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/violetbook.png'
+    }
+  ],
+  [
+    'kofuswallet',
+    {
+      desc: "A wallet that was left behind by Kofu, the Gym Leader at the Cascarrafa Gym. You're to deliver it to him at the market in Porto Marinada.",
+      gen: 9,
+      keyItem: true,
+      name: "Kofu's Wallet",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/kofu'swallet.png"
+    }
+  ],
+  [
+    'normalterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Normal Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/normalterashard.png'
+    }
+  ],
+  [
+    'fireterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Fire Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fireterashard.png'
+    }
+  ],
+  [
+    'waterterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Water Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/waterterashard.png'
+    }
+  ],
+  [
+    'electricterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Electric Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/electricterashard.png'
+    }
+  ],
+  [
+    'grassterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Grass Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/grassterashard.png'
+    }
+  ],
+  [
+    'iceterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Ice Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/iceterashard.png'
+    }
+  ],
+  [
+    'fightingterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Fighting Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fightingterashard.png'
+    }
+  ],
+  [
+    'poisonterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Poison Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/poisonterashard.png'
+    }
+  ],
+  [
+    'groundterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Ground Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/groundterashard.png'
+    }
+  ],
+  [
+    'flyingterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Flying Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/flyingterashard.png'
+    }
+  ],
+  [
+    'psychicterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Psychic Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/psychicterashard.png'
+    }
+  ],
+  [
+    'bugterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Bug Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/bugterashard.png'
+    }
+  ],
+  [
+    'rockterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Rock Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/rockterashard.png'
+    }
+  ],
+  [
+    'ghostterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Ghost Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/ghostterashard.png'
+    }
+  ],
+  [
+    'dragonterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Dragon Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonterashard.png'
+    }
+  ],
+  [
+    'darkterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Dark Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/darkterashard.png'
+    }
+  ],
+  [
+    'steelterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Steel Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/steelterashard.png'
+    }
+  ],
+  [
+    'fairyterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Fairy Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/fairyterashard.png'
     }
   ]
 ]);

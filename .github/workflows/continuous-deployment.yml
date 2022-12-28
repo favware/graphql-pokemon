@@ -114,8 +114,13 @@ jobs:
         run: yarn --immutable
       - name: Configure Git
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.name "${GITHUB_ACTOR}"
+          git config --local user.email "${GITHUB_EMAIL}"
+          git remote set-url origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GITHUB_USER: github-actions[bot]
+          GITHUB_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
       - name: Bump semver

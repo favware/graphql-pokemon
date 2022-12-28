@@ -116,22 +116,8 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-      - name: Install Git Cliff
-        if: "!contains(github.event.head_commit.message, '[skip bump]')"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          curl -o ./git-cliff.tar.gz -sL \
-              $(curl -sL \
-                  -H "Authorization: bearer ${GITHUB_TOKEN}" \
-                  -X POST \
-                  --data '{"query":"query { repository(owner: \"orhun\", name: \"git-cliff\") { releases(last: 1) { nodes { releaseAssets(first: 20) { nodes { downloadUrl name }}}}}}"}' "https://api.github.com/graphql" |
-              jq -cr '.data.repository.releases.nodes[0].releaseAssets.nodes[]? | select(.name | contains("x86_64-unknown-linux-gnu.tar.gz")).downloadUrl')
-          tar -xzf ./git-cliff.tar.gz --wildcards "*git-cliff"
-          mkdir -p ${HOME}/.local/bin
-          mv git-cliff-*/git-cliff ${HOME}/.local/bin/git-cliff
-          rm -r git-cliff-*
-          echo "${HOME}/.local/bin" >> $GITHUB_PATH
+      - name: Set up git-cliff
+        uses: kenji-miyake/setup-git-cliff@v1
       - name: Bump semver
         if: "!contains(github.event.head_commit.message, '[skip bump]')"
         run: yarn bump --no-skip-tag --no-skip-changelog

@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.1.0](https://github.com/favware/graphql-pokemon/compare/v7.0.9...v7.1.0) - (2022-12-28)
+
+## 📝 Documentation
+
+- Actually do what previous commit claimed ([18d55bf](https://github.com/favware/graphql-pokemon/commit/18d55bf0038c54495cacda3784f18b58eea80262))
+- Fix magidoc config now that the site is on `.js.org` ([4c77522](https://github.com/favware/graphql-pokemon/commit/4c7752224a5b2498efc8e4dcfdde67794969f6df))
+- Add CNAME file for `.js.org` [skip publish] ([5787c5a](https://github.com/favware/graphql-pokemon/commit/5787c5a6571744c5fd898c4be01f514359ca8daa))
+- **magidoc:** Add custom pages and appLogo [skip publish] ([4298f01](https://github.com/favware/graphql-pokemon/commit/4298f01f97ef98bfd626b04380380ec39125ca19))
+- Add @pelletier197 as a contributor [skip publish] ([2c0c5d9](https://github.com/favware/graphql-pokemon/commit/2c0c5d91bd5bb17b5ebceedb56092ac35173fb85))
+- Update readme ([90309e0](https://github.com/favware/graphql-pokemon/commit/90309e03d95297dbe7b73d15dfa3ebde31fd2519))
+- Fix robots.txt file [skip publish] ([03a2772](https://github.com/favware/graphql-pokemon/commit/03a277243e5fc10b72116c253bea90365089dba7))
+- Fix deploy [skip publish] ([2c68438](https://github.com/favware/graphql-pokemon/commit/2c684389ec7d3cb2f73f141d9cddac33adcdf64d))
+- Fixed deploy to github pages (#792) [skip publish] ([282e9b8](https://github.com/favware/graphql-pokemon/commit/282e9b88112f3b155da8ece300a4a8510772e31e))
+- Update tsdoc for `flavorTexts` to mention it can be an empty array [skip publish] ([21188cf](https://github.com/favware/graphql-pokemon/commit/21188cfc24ac1b2ebf8fcf53c757acc73d94ae18))
+
+## 🚀 Features
+
+- Add generation 9 data (#795) ([4c3b0af](https://github.com/favware/graphql-pokemon/commit/4c3b0aff122e6b770a8bfde5120f848bca3bda96))
+
 # [7.0.9](https://github.com/favware/graphql-pokemon/compare/v7.0.8...v7.0.9) - (2022-12-02)
 
 ## 🏠 Refactor

@@ -30,13 +30,13 @@ export function mapItemDataToItemGraphQL({ data, requestedFields }: MapItemDataT
   addPropertyToObjectFieldBased({
     objectTarget: itemObject,
     propertyKey: 'serebiiPage',
-    propertyValue: `https://www.serebii.net/itemdex/${toLowerSingleWordCase(data.name)}.shtml`,
+    propertyValue: `https://www.serebii.net/itemdex/${toLowerSingleWordCase(data.name).replaceAll('é', 'e')}.shtml`,
     requestedFields
   });
   addPropertyToObjectFieldBased({
     objectTarget: itemObject,
     propertyKey: 'smogonPage',
-    propertyValue: `https://www.smogon.com/dex/ss/items/${toLowerHyphenCase(data.name)}`,
+    propertyValue: `https://www.smogon.com/dex/sv/items/${toLowerHyphenCase(data.name)}`,
     requestedFields
   });
 

@@ -119,7 +119,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pyroak',
     {
       abilities: { first: 'rockhead', second: 'battlearmor', hidden: 'contrary' },
-      baseStats: { hp: 120, atk: 70, def: 105, spa: 95, spd: 90, spe: 60 },
+      baseStats: { hp: 120, atk: 70, def: 105, spa: 70, spd: 65, spe: 60 },
       color: 'Brown',
       eggGroups: ['Monster', 'Dragon'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
@@ -333,7 +333,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 1.6,
       isEggObtainable: false,
       num: -15,
-      prevo: 'Duohm',
+      prevo: 'duohm',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cyclohm.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cyclohm.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cyclohm.png',
@@ -356,7 +356,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 2.6,
       isEggObtainable: false,
       num: -16,
-      prevo: 'Dorsoil',
+      prevo: 'dorsoil',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/colossoil.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/colossoil.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/colossoil.png',
@@ -379,7 +379,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       heightm: 0.7,
       isEggObtainable: false,
       num: -17,
-      prevo: 'Protowatt',
+      prevo: 'protowatt',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/krillowatt.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/krillowatt.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/krillowatt.png',
@@ -980,7 +980,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'mumbao',
     {
-      abilities: { first: 'solarpower', second: 'trace', hidden: 'overcoat' },
+      abilities: { first: 'trace', second: 'overcoat', hidden: 'solarpower' },
       baseStats: { hp: 55, atk: 30, def: 64, spa: 87, spd: 73, spe: 66 },
       color: 'Brown',
       eggGroups: ['Grass'],
@@ -996,13 +996,13 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/mumbao.png',
       species: 'mumbao',
       types: [TypesEnum.Grass, TypesEnum.Fairy],
-      weightkg: 250
+      weightkg: 83
     }
   ],
   [
     'jumbao',
     {
-      abilities: { first: 'drought', second: 'trace', hidden: 'overcoat' },
+      abilities: { first: 'trace', second: 'overcoat', hidden: 'drought' },
       baseStats: { hp: 92, atk: 63, def: 97, spa: 124, spd: 104, spe: 96 },
       color: 'Brown',
       eggGroups: ['Grass'],
@@ -1017,7 +1017,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/jumbao.png',
       species: 'jumbao',
       types: [TypesEnum.Grass, TypesEnum.Fairy],
-      weightkg: 600
+      weightkg: 200
     }
   ],
   [
@@ -1230,7 +1230,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'justyke',
     {
-      abilities: { first: 'levitate', second: 'stalwart', hidden: 'justified' },
+      abilities: { first: 'levitate', second: 'bulletproof', hidden: 'justified' },
       baseStats: { hp: 72, atk: 70, def: 56, spa: 83, spd: 68, spe: 30 },
       color: 'Brown',
       eggGroups: ['Mineral'],
@@ -1252,8 +1252,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'equilibra',
     {
-      abilities: { first: 'levitate', second: 'stalwart', hidden: 'justified' },
-      baseStats: { hp: 102, atk: 50, def: 96, spa: 121, spd: 118, spe: 60 },
+      abilities: { first: 'levitate', second: 'bulletproof', hidden: 'justified' },
+      baseStats: { hp: 102, atk: 50, def: 96, spa: 133, spd: 118, spe: 60 },
       color: 'Brown',
       eggGroups: ['Mineral'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
@@ -1321,7 +1321,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'miasmite',
     {
       abilities: { first: 'neutralizinggas', second: 'hypercutter', hidden: 'compoundeyes' },
-      baseStats: { hp: 40, atk: 85, def: 60, spa: 52, spd: 52, spe: 44 },
+      baseStats: { hp: 85, atk: 135, def: 60, spa: 88, spd: 105, spe: 99 },
       color: 'Green',
       eggGroups: ['Bug', 'Dragon'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
@@ -1379,7 +1379,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/chromera.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/chromera.png',
       species: 'chromera',
-      types: [TypesEnum.Dark, TypesEnum.Poison],
+      types: [TypesEnum.Dark, TypesEnum.Normal],
       weightkg: 215
     }
   ],
@@ -1499,10 +1499,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'venomicon',
     {
-      abilities: { first: 'stamina' },
-      baseStats: { hp: 85, atk: 70, def: 113, spa: 118, spd: 90, spe: 64 },
+      abilities: { first: 'stamina', hidden: 'powerofalchemy' },
+      baseStats: { hp: 85, atk: 50, def: 113, spa: 118, spd: 90, spe: 64 },
       color: 'Purple',
-      eggGroups: ['Undiscovered'],
+      eggGroups: ['Amorphous'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
       genderRatio: { male: '0%', female: '0%' },
       heightm: 0.8,
@@ -1522,9 +1522,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'tintedlens' },
       baseSpecies: 'Venomicon',
-      baseStats: { hp: 85, atk: 110, def: 85, spa: 55, spd: 85, spe: 120 },
+      baseStats: { hp: 85, atk: 102, def: 85, spa: 62, spd: 85, spe: 101 },
       color: 'Purple',
-      eggGroups: ['Undiscovered'],
+      eggGroups: ['Amorphous'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
       forme: 'Epilogue',
       genderRatio: { male: '0%', female: '0%' },
@@ -1541,22 +1541,46 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
+    'saharascal',
+    {
+      abilities: { first: 'waterabsorb', second: 'pickpocket', hidden: 'sandspit' },
+      baseStats: { hp: 50, atk: 80, def: 65, spa: 45, spd: 90, spe: 70 },
+      color: 'Brown',
+      eggGroups: ['Field'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      evos: ['saharaja'],
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      num: -67,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/saharascal.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/saharascal.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/saharascal.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/saharascal.png',
+      species: 'saharascal',
+      types: [TypesEnum.Ground],
+      weightkg: 48
+    }
+  ],
+  [
     'saharaja',
     {
-      abilities: { first: 'waterabsorb', second: 'serenegrace' },
-      baseStats: { hp: 70, atk: 120, def: 105, spa: 65, spd: 130, spe: 90 },
+      abilities: { first: 'waterabsorb', second: 'serenegrace', hidden: 'sandspit' },
+      baseStats: { hp: 70, atk: 112, def: 105, spa: 65, spd: 123, spe: 78 },
       color: 'White',
-      eggGroups: ['Undiscovered'],
+      eggGroups: ['Field'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'use Shiny Stone',
       genderRatio: { male: '0%', female: '0%' },
       heightm: 2.3,
       isEggObtainable: false,
       num: -68,
+      prevo: 'saharascal',
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/saharaja.png',
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/saharaja.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/saharaja.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/saharaja.png',
-      species: 'Saharaja',
+      species: 'saharaja',
       types: [TypesEnum.Ground],
       weightkg: 303.9
     }

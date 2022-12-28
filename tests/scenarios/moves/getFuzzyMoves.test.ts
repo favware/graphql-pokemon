@@ -2,7 +2,7 @@ import { getFuzzyMoveName, getFuzzyMoveWithFullData } from '#test-utils/queries/
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getFuzzyMove', () => {
-  describe('Name only requests', () => {
+  describe('Fuzzy Move name only requests', () => {
     test('GIVEN a valid name THEN returns Move', async () => {
       const { data } = await executeGraphQL<'getFuzzyMove'>({
         query: getFuzzyMoveName,
@@ -13,7 +13,7 @@ describe('getFuzzyMove', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Fuzzy Move full data requests', () => {
     test('GIVEN valid move request THEN returns Move WITH all data', async () => {
       const { data } = await executeGraphQL<'getFuzzyMove'>({
         query: getFuzzyMoveWithFullData,
@@ -69,7 +69,7 @@ describe('getFuzzyMove', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Acid_(move)',
           category: 'Special',
           contestType: 'Clever',
-          desc: null,
+          desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
@@ -91,7 +91,7 @@ describe('getFuzzyMove', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Absorb_(move)',
           category: 'Special',
           contestType: 'Clever',
-          desc: null,
+          desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
@@ -145,7 +145,7 @@ describe('getFuzzyMove', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Magikarp_s_Revenge_(move)',
           category: 'Physical',
           contestType: 'Cute',
-          desc: null,
+          desc: "Has a 100% chance to confuse the target and lower its Defense and Special Attack by 1 stage. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. The user steals the foe's boosts. If this move is successful, the weather changes to rain unless it is already in effect, and the user gains the effects of Aqua Ring and Magic Coat.",
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,

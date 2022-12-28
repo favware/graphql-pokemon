@@ -2,7 +2,7 @@ import { getFuzzyItemName, getFuzzyItemWithFullData } from '#test-utils/queries/
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getFuzzyItem', () => {
-  describe('Name only requests', () => {
+  describe('Fuzzy Item name only requests', () => {
     test('GIVEN a valid name THEN returns Item', async () => {
       const { data } = await executeGraphQL<'getFuzzyItem'>({
         query: getFuzzyItemName,
@@ -13,7 +13,7 @@ describe('getFuzzyItem', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Fuzzy Item full data requests', () => {
     test('GIVEN valid item request THEN returns Item WITH all data', async () => {
       const { data } = await executeGraphQL<'getFuzzyItem'>({
         query: getFuzzyItemWithFullData,
@@ -29,7 +29,7 @@ describe('getFuzzyItem', () => {
           name: 'Life Orb',
           serebiiPage: 'https://www.serebii.net/itemdex/lifeorb.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/life-orb',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/life-orb',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/life-orb.png'
         }
       ]);
@@ -50,7 +50,7 @@ describe('getFuzzyItem', () => {
           name: 'Assault Vest',
           serebiiPage: 'https://www.serebii.net/itemdex/assaultvest.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/assault-vest',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/assault-vest',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/assault-vest.png'
         },
         {
@@ -61,7 +61,7 @@ describe('getFuzzyItem', () => {
           name: 'Choice Band',
           serebiiPage: 'https://www.serebii.net/itemdex/choiceband.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/choice-band',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/choice-band',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png'
         },
         {
@@ -72,7 +72,7 @@ describe('getFuzzyItem', () => {
           name: 'Focus Sash',
           serebiiPage: 'https://www.serebii.net/itemdex/focussash.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/focus-sash',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/focus-sash',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/focus-sash.png'
         }
       ]);
@@ -86,6 +86,28 @@ describe('getFuzzyItem', () => {
 
       expect(data.getFuzzyItem).toEqual([
         {
+          bulbapediaPage: "https://bulbapedia.bulbagarden.net/wiki/Miraidon's_Poké_Ball",
+          desc: 'A Poké Ball that can hold the mysterious Pokémon known as Miraidon. A boy named Arven gave it to you.',
+          generationIntroduced: 9,
+          isNonstandard: null,
+          name: "Miraidon's Poké Ball",
+          serebiiPage: 'https://www.serebii.net/itemdex/miraidonspokeball.shtml',
+          shortDesc: null,
+          smogonPage: 'https://www.smogon.com/dex/sv/items/miraidon-s-poké-ball',
+          sprite: "https://www.serebii.net/itemdex/sprites/miraidon'spokeball.png"
+        },
+        {
+          bulbapediaPage: "https://bulbapedia.bulbagarden.net/wiki/Koraidon's_Poké_Ball",
+          desc: 'A Poké Ball that can hold the mysterious Pokémon known as Koraidon. A boy named Arven gave it to you.',
+          generationIntroduced: 9,
+          isNonstandard: null,
+          name: "Koraidon's Poké Ball",
+          serebiiPage: 'https://www.serebii.net/itemdex/koraidonspokeball.shtml',
+          shortDesc: null,
+          smogonPage: 'https://www.smogon.com/dex/sv/items/koraidon-s-poké-ball',
+          sprite: "https://www.serebii.net/itemdex/sprites/koraidon'spokeball.png"
+        },
+        {
           bulbapediaPage: "https://bulbapedia.bulbagarden.net/wiki/Ilima's_Normalium_Z",
           desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
           generationIntroduced: 7,
@@ -93,30 +115,8 @@ describe('getFuzzyItem', () => {
           name: "Ilima's Normalium Z",
           serebiiPage: 'https://www.serebii.net/itemdex/ilimasnormaliumz.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/ilima-s-normalium-z',
+          smogonPage: 'https://www.smogon.com/dex/sv/items/ilima-s-normalium-z',
           sprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
-        },
-        {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Ultranecrozium_Z',
-          desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
-          generationIntroduced: 7,
-          isNonstandard: 'Past',
-          name: 'Ultranecrozium Z',
-          serebiiPage: 'https://www.serebii.net/itemdex/ultranecroziumz.shtml',
-          shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/ultranecrozium-z',
-          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/ultranecrozium-z.png'
-        },
-        {
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Terrain_Extender',
-          desc: "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
-          generationIntroduced: 7,
-          isNonstandard: null,
-          name: 'Terrain Extender',
-          serebiiPage: 'https://www.serebii.net/itemdex/terrainextender.shtml',
-          shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/ss/items/terrain-extender',
-          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/terrain-extender.png'
         }
       ]);
     });

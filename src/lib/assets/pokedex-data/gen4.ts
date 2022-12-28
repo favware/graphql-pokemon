@@ -1872,7 +1872,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Black',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
-      evoLevel: 'Hold Razor Claw Nighttime',
+      evoLevel: 'Hold Razor Claw Nighttime then level up',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.1,
       isEggObtainable: true,
@@ -2189,7 +2189,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'gallade',
     {
-      abilities: { first: 'steadfast', hidden: 'justified' },
+      abilities: { first: 'steadfast', second: 'sharpness', hidden: 'justified' },
       baseStats: { hp: 68, atk: 125, def: 65, spa: 65, spd: 115, spe: 80 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'White',
@@ -2701,7 +2701,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'cresselia',
     {
       abilities: { first: 'levitate' },
-      baseStats: { hp: 120, atk: 70, def: 120, spa: 75, spd: 130, spe: 85 },
+      baseStats: { hp: 120, atk: 70, def: 110, spa: 75, spd: 120, spe: 85 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Yellow',
       eggGroups: ['Undiscovered'],

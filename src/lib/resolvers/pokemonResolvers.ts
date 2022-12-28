@@ -220,6 +220,13 @@ export function getFuzzyPokemon(args: NonNullish<GetFuzzyPokemonArgs>, requested
  * // Transforms into
  * 'slowbro-galar'
  * ```
+ * @example
+ * ```ts
+ * // Given
+ * 'paldean tauros'
+ * // Transforms into
+ * 'tauros-paldea'
+ * ```
  */
 function parseFormeIdentifiers(pokemon: string) {
   switch (pokemon.split(' ')[0]) {
@@ -237,6 +244,10 @@ function parseFormeIdentifiers(pokemon: string) {
     case 'galar':
     case 'galarian':
       pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-galar`;
+      break;
+    case 'paldea':
+    case 'paldean':
+      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-paldea`;
       break;
     default:
       break;
@@ -262,6 +273,12 @@ function parseFormeIdentifiers(pokemon: string) {
     pokemon = `${pokemon.substring(8, pokemon.length)}galar`;
   } else if (pokemon.startsWith('galar')) {
     pokemon = `${pokemon.substring(5, pokemon.length)}galar`;
+  }
+
+  if (pokemon.startsWith('paldean')) {
+    pokemon = `${pokemon.substring(7, pokemon.length)}paldea`;
+  } else if (pokemon.startsWith('paldea')) {
+    pokemon = `${pokemon.substring(6, pokemon.length)}paldea`;
   }
 
   return pokemon;

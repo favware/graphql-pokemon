@@ -164,11 +164,11 @@ describe('getPokemon', () => {
         minimumHatchTime: 5140,
         num: 658,
         otherFormes: ['greninjaash'],
-        serebiiPage: 'https://www.serebii.net/pokedex-sm/658.shtml',
+        serebiiPage: 'https://www.serebii.net/pokedex-sv/greninja',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/greninja.gif',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/greninja.gif',
-        smogonPage: 'https://www.smogon.com/dex/sm/pokemon/greninja',
-        smogonTier: 'Past',
+        smogonPage: 'https://www.smogon.com/dex/sv/pokemon/greninja',
+        smogonTier: 'Unobtainable',
         species: 'greninja',
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/greninja.gif',
         types: [{ name: 'Water' }, { name: 'Dark' }]
@@ -251,7 +251,12 @@ describe('getPokemon', () => {
       });
 
       expect(data.getPokemon).toEqual({
-        abilities: { first: { name: 'Blaze' }, second: null, hidden: { name: 'Flash Fire' }, special: null },
+        abilities: {
+          first: { name: 'Blaze' },
+          second: null,
+          hidden: { name: 'Frisk' },
+          special: null
+        },
         eggGroups: ['Field'],
         evYields: {
           hp: 0,
@@ -265,7 +270,7 @@ describe('getPokemon', () => {
         flavorTexts: [
           {
             flavor:
-              'Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the [[Mount Coron',
+              "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center.",
             game: 'Legends Arceus'
           }
         ],
@@ -280,12 +285,12 @@ describe('getPokemon', () => {
         minimumHatchTime: 5140,
         num: 157,
         otherFormes: ['typhlosion'],
-        serebiiPage: 'https://www.serebii.net/pokedex-swsh/typhlosion',
+        serebiiPage: 'https://www.serebii.net/pokedex-sv/typhlosion',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/typhlosion-hisui.png',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/typhlosion-hisui.png',
-        smogonPage: 'https://www.smogon.com/dex/ss/pokemon/typhlosion-hisui',
+        smogonPage: 'https://www.smogon.com/dex/sv/pokemon/typhlosion-hisui',
         baseForme: null,
-        smogonTier: 'Future',
+        smogonTier: 'Unobtainable',
         species: 'typhlosion-hisui',
         sprite: 'https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png',
         types: [{ name: 'Fire' }, { name: 'Ghost' }],
@@ -300,7 +305,10 @@ describe('getPokemon', () => {
         },
         baseStatsTotal: 534,
         bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pokémon)',
-        catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+        catchRate: {
+          base: 45,
+          percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+        },
         color: 'Yellow',
         cosmeticFormes: null
       });

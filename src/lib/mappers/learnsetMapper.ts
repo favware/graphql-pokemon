@@ -77,6 +77,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'sprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,
@@ -90,6 +91,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'shinySprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,
@@ -104,6 +106,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'backSprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,
@@ -118,6 +121,7 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
       propertyKey: 'shinyBackSprite',
       propertyValue: parseSpeciesForSprite({
         pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
         baseSpecies: pokemonEntry.baseSpecies,
         specialSprite: pokemonEntry.specialSprite,
         specialShinySprite: pokemonEntry.specialShinySprite,
@@ -162,6 +166,11 @@ export function getLearnsetDataset(pokemon: string): Record<string, string[]> | 
   let learnsetFromDataset = learnsets.get(pokemon);
 
   let pokemonFromDataset: PokemonTypes.DexEntry | undefined = undefined;
+
+  // If the learnset is event only then overwrite it back to undefined to allow for further parsing
+  if (learnsetFromDataset?.eventOnly?.[0] === 'See base forme of this Pokémon') {
+    learnsetFromDataset = undefined;
+  }
 
   // Attempt to get the learnset from the base species
   if (!learnsetFromDataset) {

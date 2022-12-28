@@ -6,10 +6,17 @@ import type { Nullish } from '@sapphire/utilities';
 
 export interface GetAllPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
   /**
+   * Sets the offset where to start
+   * @default 0
+   * @minimum 0
+   * @maximum 1388
+   */
+  offset: number | Nullish;
+  /**
    * Return only this many results, starting from the offset
-   * @default 1273
+   * @default 1389
    * @minimum 1
-   * @maximum 1273
+   * @maximum 1389
    */
   take: number | Nullish;
 }
@@ -17,9 +24,13 @@ export interface GetAllPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
 const getAllPokemonSchema: SchemaOf<GetAllPokemonArgs> = baseFuzzySchema //
   .extend(basePokemonArgsSchema)
   .extend({
+    offset: s.number
+      .greaterThanOrEqual(0)
+      .lessThanOrEqual(1388)
+      .nullish.transform((v) => v ?? 0),
     take: s.number
       .greaterThanOrEqual(1)
-      .lessThanOrEqual(1273)
+      .lessThanOrEqual(1389)
       .nullish.transform((v) => v ?? 1)
   });
 

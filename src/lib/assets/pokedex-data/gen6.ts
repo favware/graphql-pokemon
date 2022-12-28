@@ -382,7 +382,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       eggGroups: ['Bug'],
       evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
       evoLevel: 9,
-      evos: ['vivillon'],
+      evos: ['vivillon', 'vivillonfancy'],
       genderRatio: { male: '50%', female: '50%' },
       heightm: 0.3,
       isEggObtainable: true,
@@ -463,12 +463,13 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'vivillonfancy',
     {
-      abilities: { first: 'shielddust', second: 'compoundeyes' },
+      abilities: { first: 'shielddust', second: 'compoundeyes', hidden: 'friendguard' },
       baseSpecies: 'Vivillon',
       baseStats: { hp: 80, atk: 52, def: 50, spa: 90, spd: 50, spe: 89 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
       eggGroups: ['Bug'],
+      evoLevel: 12,
       evYields: { hp: 1, atk: 0, def: 0, spa: 1, spd: 0, spe: 1 },
       forme: 'Fancy',
       formeLetter: 'F',
@@ -478,6 +479,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 3855,
       num: 666,
+      prevo: 'spewpa',
       otherFormes: ['vivillon', 'vivillonpokeball'],
       species: 'vivillon-fancy',
       types: [TypesEnum.Bug, TypesEnum.Flying],
@@ -1319,7 +1321,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Red',
       eggGroups: ['Monster', 'Dragon'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
-      evoLevel: '39 Daytime',
+      evoLevel: 'level 39 during daytime',
       genderRatio: { male: '87.5%', female: '12.5%' },
       heightm: 2.5,
       isEggObtainable: true,
@@ -1364,7 +1366,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Blue',
       eggGroups: ['Monster'],
       evYields: { hp: 2, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
-      evoLevel: '39 Nighttime',
+      evoLevel: 'level 39 at night',
       genderRatio: { male: '87.5%', female: '12.5%' },
       heightm: 2.7,
       isEggObtainable: true,
@@ -1513,7 +1515,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'sliggoohisui',
     {
-      abilities: { first: 'sapsipper', second: 'overcoat', hidden: 'gooey' },
+      abilities: { first: 'sapsipper', second: 'shellarmor', hidden: 'gooey' },
       baseSpecies: 'Sliggoo',
       baseStats: { hp: 58, atk: 75, def: 83, spa: 83, spd: 113, spe: 40 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -1569,7 +1571,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'goodrahisui',
     {
-      abilities: { first: 'sapsipper', second: 'overcoat', hidden: 'gooey' },
+      abilities: { first: 'sapsipper', second: 'shellarmor', hidden: 'gooey' },
       baseSpecies: 'Goodra',
       baseStats: { hp: 80, atk: 100, def: 100, spa: 110, spd: 150, spe: 60 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },

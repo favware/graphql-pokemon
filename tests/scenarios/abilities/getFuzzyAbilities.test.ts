@@ -2,7 +2,7 @@ import { getFuzzyAbilityName, getFuzzyAbilityWithFullData } from '#test-utils/qu
 import { executeGraphQL } from '#test-utils/testUtils';
 
 describe('getFuzzyAbility', () => {
-  describe('Name only requests', () => {
+  describe('Fuzzy Ability name only requests', () => {
     test('GIVEN a valid fuzzy name THEN returns Ability', async () => {
       const { data } = await executeGraphQL<'getFuzzyAbility'>({
         query: getFuzzyAbilityName,
@@ -17,7 +17,7 @@ describe('getFuzzyAbility', () => {
     });
   });
 
-  describe('Full data requests', () => {
+  describe('Fuzzy Ability full data requests', () => {
     test('GIVEN valid fuzzy ability request THEN returns Ability WITH all data', async () => {
       const { data } = await executeGraphQL<'getFuzzyAbility'>({
         query: getFuzzyAbilityWithFullData,
@@ -91,7 +91,7 @@ describe('getFuzzyAbility', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Water_Compaction_(Ability)'
         },
         {
-          desc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect a Pokémon which has the Ability As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.',
+          desc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect Pokémon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode Abilities.',
           isFieldAbility: null,
           name: 'Wandering Spirit',
           shortDesc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one.',
@@ -100,13 +100,13 @@ describe('getFuzzyAbility', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Wandering_Spirit_(Ability)'
         },
         {
-          desc: 'While this Pokémon is active, Abilities have no effect. Does not affect the Abilities As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode.',
+          desc: "This Pokémon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokémon cannot be burned.",
           isFieldAbility: null,
-          name: 'Neutralizing Gas',
-          shortDesc: 'While this Pokémon is active, Abilities have no effect.',
-          serebiiPage: 'https://www.serebii.net/abilitydex/neutralizing_gas.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/neutralizing_gas',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Neutralizing_Gas_(Ability)'
+          name: 'Thermal Exchange',
+          shortDesc: "This Pokémon's Attack is raised by 1 stage when hit by Fire moves; it can't be burned.",
+          serebiiPage: 'https://www.serebii.net/abilitydex/thermal_exchange.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/thermal_exchange',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Thermal_Exchange_(Ability)'
         }
       ]);
     });

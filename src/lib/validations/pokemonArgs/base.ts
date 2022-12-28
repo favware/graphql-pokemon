@@ -14,7 +14,7 @@ export interface BasePokemonArgs {
 
   /**
    * Whether to reverse the list of games from which to get the data.
-   * By default Generation 1 is considered for "take" first, when setting this to true that is instead Generation 8.
+   * By default Generation 1 is considered for "take" first, when setting this to true that is instead Generation 9.
    */
   reverseFlavorTexts: boolean | Nullish;
 }

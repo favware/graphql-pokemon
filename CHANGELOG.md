@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.1.1](https://github.com/favware/graphql-pokemon/compare/v7.1.0...v7.1.1) - (2022-12-30)
+
+## 🐛 Bug Fixes
+
+- Fixed an issue with mismatches of Tauron Paldean forms ([b310261](https://github.com/favware/graphql-pokemon/commit/b3102613ad89f3f0df50e18bf6cf92ca07c51ff9))
+
 # [7.1.0](https://github.com/favware/graphql-pokemon/compare/v7.0.9...v7.1.0) - (2022-12-28)
 
 ## 📝 Documentation

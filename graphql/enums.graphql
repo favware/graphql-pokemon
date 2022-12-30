@@ -590,8 +590,8 @@ enum PokemonEnum {
   pinsirmega
   tauros
   taurospaldea
-  taurospaldeablaze
-  taurospaldeaaqua
+  taurospaldeafire
+  taurospaldeawater
   magikarp
   gyarados
   gyaradosmega

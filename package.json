@@ -52,14 +52,14 @@
     "graphql": "^16.6.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.3.0",
-    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/cli": "^17.4.0",
+    "@commitlint/config-conventional": "^17.4.0",
     "@discordjs/collection": "^1.3.0",
     "@favware/cliff-jumper": "^1.9.0",
-    "@graphql-codegen/cli": "^2.16.2",
+    "@graphql-codegen/cli": "^2.16.3",
     "@graphql-codegen/schema-ast": "^2.6.1",
-    "@graphql-codegen/typescript": "^2.8.6",
-    "@graphql-codegen/typescript-resolvers": "^2.7.11",
+    "@graphql-codegen/typescript": "^2.8.7",
+    "@graphql-codegen/typescript-resolvers": "^2.7.12",
     "@sapphire/eslint-config": "^4.3.8",
     "@sapphire/fetch": "^2.4.1",
     "@sapphire/prettier-config": "^1.4.4",
@@ -68,31 +68,31 @@
     "@sapphire/ts-config": "^3.3.4",
     "@sapphire/utilities": "^3.11.0",
     "@skyra/jaro-winkler": "^1.1.0",
-    "@swc/core": "^1.3.24",
+    "@swc/core": "^1.3.25",
     "@types/koa": "^2.13.5",
     "@types/node": "^18.11.18",
-    "@typescript-eslint/eslint-plugin": "^5.47.1",
-    "@typescript-eslint/parser": "^5.47.1",
-    "@vitest/coverage-c8": "^0.26.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "@vitest/coverage-c8": "^0.26.3",
     "apollo-server-koa": "^3.11.1",
     "colorette": "^2.0.19",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "graphql-parse-resolve-info": "^4.12.3",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "koa": "^2.14.1",
     "lint-staged": "^13.1.0",
     "npm-run-all": "^4.1.5",
     "pinst": "^3.0.0",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "pretty-quick": "^3.1.3",
     "replace-in-file": "^6.3.5",
     "ts-node": "^10.9.1",
     "tsup": "^6.5.0",
     "typescript": "^4.9.4",
-    "vitest": "^0.26.2"
+    "vitest": "^0.26.3"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",
@@ -134,6 +134,6 @@
   },
   "packageManager": "yarn@3.3.1",
   "volta": {
-    "node": "18.12.1"
+    "node": "18.13.0"
   }
 }

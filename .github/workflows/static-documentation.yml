@@ -39,7 +39,6 @@ jobs:
           printf "User-agent: *\nDisallow:" > docs/magidoc/robots.txt
           printf "This file prevents GitHub Pages from using Jekyll." >> docs/magidoc/.nojekyll
           printf "graphql-pokemon.js.org" >> docs/magidoc/CNAME
-          cp .all-contributorsrc docs/magidoc
           cp .gitignore docs/magidoc
           cp LICENSE.md docs/magidoc
           cp README.md docs/magidoc

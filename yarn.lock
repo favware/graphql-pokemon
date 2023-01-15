@@ -1355,7 +1355,7 @@ __metadata:
     "@graphql-codegen/typescript-resolvers": ^2.7.12
     "@sapphire/eslint-config": ^4.3.8
     "@sapphire/fetch": ^2.4.1
-    "@sapphire/prettier-config": ^1.4.4
+    "@sapphire/prettier-config": ^1.4.5
     "@sapphire/shapeshift": ^3.8.1
     "@sapphire/timestamp": ^1.0.0
     "@sapphire/ts-config": ^3.3.4
@@ -2336,12 +2336,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.4.4":
-  version: 1.4.4
-  resolution: "@sapphire/prettier-config@npm:1.4.4"
+"@sapphire/prettier-config@npm:^1.4.5":
+  version: 1.4.5
+  resolution: "@sapphire/prettier-config@npm:1.4.5"
   dependencies:
-    prettier: ^2.7.1
-  checksum: bf0f37de120b72b054da8b90ddf08c23210c8b01e42f66c4a6833d55ac78c02e3df7f9af6d35f2574e9c9f5c8b131625730a60bcac055b211789b52101a8921e
+    prettier: ^2.8.2
+  checksum: 241dfda0e73d1cb62d97fc946530041f1515a077572e4fd2da9f0bef80b97fbd8828ad6d36f6c98561b217acce185d111175eb3c889907e2591daf778e800274
   languageName: node
   linkType: hard
 

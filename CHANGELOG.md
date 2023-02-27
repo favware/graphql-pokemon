@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.2.0](https://github.com/favware/graphql-pokemon/compare/v7.1.2...v7.2.0) - (2023-02-27)
+
+## 🚀 Features
+
+- Add `m00` glitch Pokémon ([43c9f09](https://github.com/favware/graphql-pokemon/commit/43c9f0970bf39901843b5808b8674f63d3fc30c9))
+
 # [7.1.1](https://github.com/favware/graphql-pokemon/compare/v7.1.0...v7.1.1) - (2022-12-30)
 
 ## 🐛 Bug Fixes

@@ -8,7 +8,7 @@ export interface Query {
    *
    * For every Pokémon all the data on each requested field is returned.
    *
-   * **_NOTE:_ To skip all CAP Pokémon, PokéStar Pokémon, and Missingno provide an `offset` of 86**
+   * **_NOTE:_ To skip all CAP Pokémon, PokéStar Pokémon, and Missingno provide an `offset` of 89**
    *
    * You can provide `take` to limit the amount of Pokémon to return (default: 1), set the offset of where to start with `offset`, and reverse the entire array with `reverse`.
    *

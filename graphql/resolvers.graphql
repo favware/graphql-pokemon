@@ -102,7 +102,7 @@ type Query {
 
   For every Pokémon all the data on each requested field is returned.
 
-  **_NOTE:_ To skip all CAP Pokémon, PokéStar Pokémon, and Missingno provide an `offset` of 88**
+  **_NOTE:_ To skip all CAP Pokémon, PokéStar Pokémon, Missingno, and 'M (00) provide an `offset` of 89**
 
   You can provide `take` to limit the amount of Pokémon to return (default: 1), set the offset of where to start with `offset`, and reverse the entire array with `reverse`.
 
@@ -117,7 +117,7 @@ type Query {
     offset: Int = 0
 
     "Return only this many results, starting from the offset"
-    take: Int = 1389
+    take: Int = 1390
 
     "Reverses the dataset before paginating"
     reverse: Boolean = false

@@ -11,7 +11,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Gray',
       eggGroups: ['Undiscovered'],
       evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
-      heightm: 3,
+      heightm: 3.3,
       isEggObtainable: false,
       num: 0,
       specialBackSprite: 'https://play.pokemonshowdown.com/sprites/afd-back/missingno.png',
@@ -21,7 +21,29 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'missingno.',
       types: [TypesEnum.Normal],
       weightkg: 1590.8,
-      aliases: ['m00']
+      otherFormes: ['m00']
+    }
+  ],
+  [
+    'm00',
+    {
+      abilities: { first: 'pressure' },
+      baseSpecies: 'MissingNo.',
+      baseStats: { hp: 33, atk: 137, def: 0, spa: 29, spd: 29, spe: 6 },
+      color: 'Gray',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      heightm: 7,
+      isEggObtainable: false,
+      num: 0,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen1/missingno.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen1/missingno.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen1/missingno.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen1/missingno.png',
+      species: "'m (00)",
+      types: [TypesEnum.Normal],
+      weightkg: 399.4,
+      otherFormes: ['missingno']
     }
   ],
   [

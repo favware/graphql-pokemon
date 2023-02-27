@@ -9,14 +9,14 @@ export interface GetAllPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
    * Sets the offset where to start
    * @default 0
    * @minimum 0
-   * @maximum 1388
+   * @maximum 1389
    */
   offset: number | Nullish;
   /**
    * Return only this many results, starting from the offset
-   * @default 1389
+   * @default 1390
    * @minimum 1
-   * @maximum 1389
+   * @maximum 1390
    */
   take: number | Nullish;
 }
@@ -26,11 +26,11 @@ const getAllPokemonSchema: SchemaOf<GetAllPokemonArgs> = baseFuzzySchema //
   .extend({
     offset: s.number
       .greaterThanOrEqual(0)
-      .lessThanOrEqual(1388)
+      .lessThanOrEqual(1389)
       .nullish.transform((v) => v ?? 0),
     take: s.number
       .greaterThanOrEqual(1)
-      .lessThanOrEqual(1389)
+      .lessThanOrEqual(1390)
       .nullish.transform((v) => v ?? 1)
   });
 

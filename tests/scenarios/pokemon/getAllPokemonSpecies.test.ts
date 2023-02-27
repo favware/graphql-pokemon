@@ -262,6 +262,10 @@ describe('getAllPokemon', () => {
         key: 'missingno',
         species: 'missingno.'
       },
+      {
+        key: 'm00',
+        species: "'m (00)"
+      },
       { key: 'bulbasaur', species: 'bulbasaur' },
       { key: 'ivysaur', species: 'ivysaur' },
       { key: 'venusaur', species: 'venusaur' },

@@ -54,7 +54,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "@discordjs/collection": "^1.3.0",
+    "@discordjs/collection": "^1.4.0",
     "@favware/cliff-jumper": "^2.0.0",
     "@graphql-codegen/cli": "^3.2.2",
     "@graphql-codegen/schema-ast": "^3.0.1",
@@ -64,16 +64,16 @@
     "@sapphire/fetch": "^2.4.1",
     "@sapphire/prettier-config": "^1.4.5",
     "@sapphire/shapeshift": "^3.8.1",
-    "@sapphire/timestamp": "^1.0.0",
+    "@sapphire/timestamp": "^1.0.1",
     "@sapphire/ts-config": "^3.3.4",
     "@sapphire/utilities": "^3.11.0",
     "@skyra/jaro-winkler": "^1.1.0",
-    "@swc/core": "^1.3.39",
+    "@swc/core": "^1.3.41",
     "@types/koa": "^2.13.5",
-    "@types/node": "^18.15.0",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
-    "@vitest/coverage-c8": "^0.29.2",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "@vitest/coverage-c8": "^0.29.3",
     "apollo-server-koa": "^3.12.0",
     "colorette": "^2.0.19",
     "cz-conventional-changelog": "^3.3.0",
@@ -92,7 +92,7 @@
     "ts-node": "^10.9.1",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
-    "vitest": "^0.29.2"
+    "vitest": "^0.29.3"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",
@@ -132,7 +132,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@3.4.1",
+  "packageManager": "yarn@3.5.0",
   "volta": {
     "node": "18.15.0"
   }

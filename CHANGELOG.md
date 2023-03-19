@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.2.1](https://github.com/favware/graphql-pokemon/compare/v7.2.0...v7.2.1) - (2023-03-19)
+
+## 🐛 Bug Fixes
+
+- **gen1:** Fixed bulbapedia urls for missingno and m00 ([c35b07e](https://github.com/favware/graphql-pokemon/commit/c35b07e42a0e812bd3b911aecb3798596a1bd6ee))
+
 # [7.2.0](https://github.com/favware/graphql-pokemon/compare/v7.1.2...v7.2.0) - (2023-02-27)
 
 ## 🚀 Features

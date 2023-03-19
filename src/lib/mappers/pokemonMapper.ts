@@ -541,7 +541,7 @@ export function mapPokemonDataToPokemonGraphQL({
   addPropertyToObjectFieldBased({
     objectTarget: pokemonData,
     propertyKey: 'bulbapediaPage',
-    propertyValue: data.num >= 1 ? parseSpeciesForBulbapedia(data) : '',
+    propertyValue: data.num >= 0 ? parseSpeciesForBulbapedia(data) : '',
     requestedFields,
     fieldAccessor: `${resolvedRecursingAs}bulbapediaPage`
   });

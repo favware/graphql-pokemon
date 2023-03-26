@@ -234,7 +234,7 @@ describe('getPokemon', () => {
           speed: 29
         },
         baseStatsTotal: 210,
-        bulbapediaPage: '',
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/MissingNo._(Pokémon)',
         catchRate: {
           base: 0,
           percentageWithOrdinaryPokeballAtFullHealth: '0%'

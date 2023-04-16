@@ -1,4 +1,4 @@
-import type PokemonTypes from '#assets/pokemon-source';
+import type { PokemonTypes } from '#assets/pokemon-source';
 import { typechart } from '#assets/typechart';
 import type { TypeEffectiveness, TypeMatchup } from '#types';
 import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';

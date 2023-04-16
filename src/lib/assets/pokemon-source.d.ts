@@ -276,5 +276,3 @@ export namespace PokemonTypes {
     | 'Normal'
     | 'All';
 }
-
-export default PokemonTypes;

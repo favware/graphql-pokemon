@@ -1,6 +1,6 @@
 import { abilities } from '#assets/abilities';
 import { pokedex } from '#assets/pokedex';
-import type PokemonTypes from '#assets/pokemon-source';
+import type { PokemonTypes } from '#assets/pokemon-source';
 import flavors from '#jsonAssets/flavorText.json' assert { type: 'json' };
 import tiers from '#jsonAssets/formats.json' assert { type: 'json' };
 import { AbilityReferencedCallIdentifier, mapAbilityDataToAbilityGraphQL } from '#mappers/abilityMapper';

@@ -1,6 +1,6 @@
 import type { NonNullish } from '#utils/utilTypes';
 import { baseFuzzySchema, type BaseFuzzyArgs } from '#validations/fuzzyArgs/base.ts';
-import { BasePokemonArgs, basePokemonArgsSchema } from '#validations/pokemonArgs/base';
+import { basePokemonArgsSchema, type BasePokemonArgs } from '#validations/pokemonArgs/base';
 import { s, type SchemaOf } from '@sapphire/shapeshift';
 import type { Nullish } from '@sapphire/utilities';
 

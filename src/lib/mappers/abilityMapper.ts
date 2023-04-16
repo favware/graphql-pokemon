@@ -1,5 +1,5 @@
 import { pokedex } from '#assets/pokedex';
-import type PokemonTypes from '#assets/pokemon-source';
+import type { PokemonTypes } from '#assets/pokemon-source';
 import { mapPokemonDataToPokemonGraphQL, PokemonReferencedCallIdentifier } from '#mappers/pokemonMapper';
 import type { Ability, Pokemon } from '#types';
 import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';

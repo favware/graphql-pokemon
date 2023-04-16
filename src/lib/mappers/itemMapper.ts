@@ -1,4 +1,4 @@
-import type PokemonTypes from '#assets/pokemon-source';
+import type { PokemonTypes } from '#assets/pokemon-source';
 import type { Item } from '#types';
 import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import type { GraphQLSet } from '#utils/GraphQLSet';

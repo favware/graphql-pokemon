@@ -6,15 +6,12 @@
   "license": "MIT",
   "private": true,
   "type": "module",
-  "main": "dist/graphql-pokemon.cjs",
-  "module": "dist/graphql-pokemon.js",
+  "main": "dist/index.mjs",
   "scripts": {
     "lint": "eslint src --ext ts,mjs --fix",
     "format": "prettier --write src",
-    "typecheck": "tsc -b src",
-    "start": "node --enable-source-maps api/index.js",
-    "build": "tsup",
-    "watch": "tsup --watch",
+    "start": "node dist/index.mjs",
+    "build": "tsc -b src",
     "dev": "yarn build && yarn start",
     "postinstall": "husky install .github/husky"
   },
@@ -38,7 +35,6 @@
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "pretty-quick": "^3.1.3",
-    "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
   "resolutions": {

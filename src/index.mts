@@ -31,7 +31,7 @@ fastify.route({
     'LOCK',
     'UNLOCK'
   ],
-  url: '/',
+  url: '*',
   handler: (_, response) => {
     void response //
       .code(410)

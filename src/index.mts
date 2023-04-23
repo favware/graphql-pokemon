@@ -34,7 +34,7 @@ fastify.route({
   url: '/',
   handler: (_, response) => {
     void response //
-      .code(400)
+      .code(410)
       .send({ error: errorMessage });
   }
 });

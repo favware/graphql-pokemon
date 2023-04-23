@@ -16,8 +16,6 @@ COPY --chown=node:node yarn.lock .
 COPY --chown=node:node tsconfig.base.json tsconfig.base.json
 COPY --chown=node:node tsup.config.ts tsup.config.ts
 COPY --chown=node:node src/ src/
-COPY --chown=node:node graphql/ graphql/
-COPY --chown=node:node scripts/on-build-success.mjs scripts/on-build-success.mjs
 COPY --chown=node:node .yarnrc.yml .
 COPY --chown=node:node .yarn/ .yarn/
 

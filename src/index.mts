@@ -1,4 +1,4 @@
-import http from 'node:http';
+import { createServer } from 'node:http';
 
 const errorMessage = [
   'REMOVAL NOTICE! This version of the API is no longer supported. For the latest version please use https://graphqlpokemon.favware.tech/v7.',
@@ -10,12 +10,10 @@ const errorMessage = [
 const port = process.env.PORT || 4000;
 const host = process.env.HOST || '0.0.0.0';
 
-http
-  .createServer((_, res) => {
-    res //
-      .writeHead(410, { 'Content-Type': 'application/json' })
-      .end(JSON.stringify({ error: errorMessage }));
-  })
-  .listen(Number(port), host, () => {
-    console.log(`server started on http://${host}:${port}`);
-  });
+createServer((_, res) => {
+  res //
+    .writeHead(410, { 'Content-Type': 'application/json' })
+    .end(JSON.stringify({ error: errorMessage }));
+}).listen(Number(port), host, () => {
+  console.log(`server started on http://${host}:${port}`);
+});

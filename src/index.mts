@@ -12,8 +12,9 @@ const host = process.env.HOST || '0.0.0.0';
 
 http
   .createServer((_, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ error: errorMessage }));
+    res //
+      .writeHead(410, { 'Content-Type': 'application/json' })
+      .end(JSON.stringify({ error: errorMessage }));
   })
   .listen(Number(port), host, () => {
     console.log(`server started on http://${host}:${port}`);

@@ -7,13 +7,7 @@ module.exports = {
   overrides: [
     ...sapphirePrettierConfig.overrides,
     {
-      files: 'src/assets/*.ts,json',
-      options: {
-        printWidth: 200
-      }
-    },
-    {
-      files: ['README.md', 'docs/pages/**/*.md'],
+      files: ['README.md'],
       options: {
         tabWidth: 2,
         useTabs: false,

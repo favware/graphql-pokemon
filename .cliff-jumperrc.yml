@@ -1,6 +1,0 @@
-name: graphql-pokemon
-packagePath: .
-org: favware
-monoRepo: false
-commitMessageTemplate: 'chore(release): release {{new-version}}'
-tagTemplate: 'v{{new-version}}'

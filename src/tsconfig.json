@@ -4,6 +4,7 @@
     "rootDir": "./",
     "outDir": "../api",
     "baseUrl": ".",
+    "noEmit": true,
     "paths": {
       "#assets/*": ["./lib/assets/*"],
       "#jsonAssets/*.json": ["./lib/assets/*.json"],

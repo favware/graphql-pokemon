@@ -2,11 +2,12 @@ import { learnsets } from '#assets/learnsets';
 import { moves } from '#assets/moves';
 import { pokedex } from '#assets/pokedex';
 import type { PokemonTypes } from '#assets/pokemon-source';
+import tiers from '#jsonAssets/formats.json' assert { type: 'json' };
 import { mapMoveDataToMoveGraphQL } from '#mappers/moveMapper';
 import type { Learnset, LearnsetLevelUpMove, LearnsetMove, Move, PokemonLearnset } from '#types';
-import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { parseSpeciesForSprite } from '#utils/spriteParser';
+import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import { parseSpeciesForSprite, parseSpeciesForHighResSprite } from '#utils/spriteParser';
 import { toLowerSingleWordCase } from '#utils/util';
 import type { Generation, NonNullish } from '#utils/utilTypes';
 import type { GetLearnsetArgs } from '#validations/getLearnsetArgs';
@@ -129,6 +130,33 @@ export function mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields }: M
         specialShinyBackSprite: pokemonEntry.specialShinyBackSprite,
         shiny: true,
         backSprite: true
+      }),
+      requestedFields
+    });
+
+    const smogonTier = tiers[toLowerSingleWordCase(pokemonEntry.species)] || 'Undiscovered';
+    addPropertyToObjectFieldBased({
+      objectTarget: learnset,
+      propertyKey: 'highResSprite',
+      propertyValue: parseSpeciesForHighResSprite({
+        pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
+        baseSpecies: pokemonEntry.baseSpecies,
+        forme: pokemonEntry.forme,
+        tier: smogonTier
+      }),
+      requestedFields
+    });
+    addPropertyToObjectFieldBased({
+      objectTarget: learnset,
+      propertyKey: 'highResShinySprite',
+      propertyValue: parseSpeciesForHighResSprite({
+        pokemonName: pokemonEntry.species,
+        pokemonNumber: pokemonEntry.num,
+        baseSpecies: pokemonEntry.baseSpecies,
+        forme: pokemonEntry.forme,
+        tier: smogonTier,
+        shiny: true
       }),
       requestedFields
     });
@@ -448,6 +476,8 @@ function shouldIncludePokemonDetails(requestedFields: GraphQLSet<keyof Learnset>
     requestedFields.has('backSprite') ||
     requestedFields.has('shinySprite') ||
     requestedFields.has('shinyBackSprite') ||
+    requestedFields.has('highResSprite') ||
+    requestedFields.has('highResShinySprite') ||
     requestedFields.has('num') ||
     requestedFields.has('color') ||
     requestedFields.has('species')

@@ -24,7 +24,7 @@ import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import { speciesThatAreNotInGeneration8Nor9 } from '#utils/pastGenerationPokemon';
 import type { TypesEnum } from '#utils/pokemonTypes';
-import { parseSpeciesForSprite } from '#utils/spriteParser';
+import { parseSpeciesForHighResSprite, parseSpeciesForSprite } from '#utils/spriteParser';
 import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
 import type { Generation, UnwrapArray } from '#utils/utilTypes';
 import { cast, toTitleCase } from '@sapphire/utilities';
@@ -615,6 +615,33 @@ export function mapPokemonDataToPokemonGraphQL({
     }),
     requestedFields,
     fieldAccessor: `${resolvedRecursingAs}shinyBackSprite`
+  });
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
+    propertyKey: 'highResSprite',
+    propertyValue: parseSpeciesForHighResSprite({
+      pokemonName: data.species,
+      pokemonNumber: data.num,
+      baseSpecies: data.baseSpecies,
+      forme: data.forme,
+      tier: smogonTier
+    }),
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}highResSprite`
+  });
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
+    propertyKey: 'highResShinySprite',
+    propertyValue: parseSpeciesForHighResSprite({
+      pokemonName: data.species,
+      pokemonNumber: data.num,
+      baseSpecies: data.baseSpecies,
+      forme: data.forme,
+      tier: smogonTier,
+      shiny: true
+    }),
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}highResShinySprite`
   });
 
   addPropertyToObjectFieldBased({

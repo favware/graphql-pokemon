@@ -165,6 +165,10 @@ interface Learnset {
   species: string;
   /** The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive */
   sprite: string;
+  /** The high res sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii. */
+  highResSprite: string;
+  /** The high res shiny sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii. */
+  highResShinySprite: string;
   /** The moves that can be learned from a Technical Machine or Technical Record */
   tmMoves?: Maybe<Array<LearnsetMove>>;
   /** The moves that can be learned from a move tutor */
@@ -309,6 +313,10 @@ interface Pokemon {
   species: string;
   /** The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive */
   sprite: string;
+  /** The high res sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii. */
+  highResSprite: string;
+  /** The high res shiny sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii. */
+  highResShinySprite: string;
   /** The types for a Pokémon */
   types: Array<PokemonType>;
   /** The weight of a Pokémon in kilograms */

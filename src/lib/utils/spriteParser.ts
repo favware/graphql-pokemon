@@ -1,4 +1,5 @@
-import { toLowerSingleWordCase } from '#utils/util';
+import { speciesThatAreNotInGeneration8Nor9 } from '#utils/pastGenerationPokemon';
+import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
 
 interface ParseSpeciesForSpriteParams {
   backSprite?: boolean;
@@ -6,6 +7,7 @@ interface ParseSpeciesForSpriteParams {
   baseSpecies?: string;
 
   pokemonName: string;
+
   pokemonNumber: number;
 
   shiny?: boolean;
@@ -18,6 +20,14 @@ interface ParseSpeciesForSpriteParams {
 
   specialSprite?: string;
 }
+
+type ParseSpeciesForHighResSpriteParams = Omit<
+  ParseSpeciesForSpriteParams,
+  'backSprite' | 'specialBackSprite' | 'specialShinyBackSprite' | 'specialShinySprite' | 'specialSprite'
+> & {
+  tier: string;
+  forme: string | undefined;
+};
 
 const MegaSpriteRegex = /^(.+)-(x|y)$/g;
 const SpriteUrls = {
@@ -34,7 +44,7 @@ const Gen9SpriteUrls = {
   animatedShinySprites: 'gen5-shiny/'
 };
 
-export const parseSpeciesForSprite = ({
+export function parseSpeciesForSprite({
   pokemonName,
   pokemonNumber,
   baseSpecies,
@@ -44,7 +54,7 @@ export const parseSpeciesForSprite = ({
   specialShinyBackSprite,
   shiny = false,
   backSprite = false
-}: ParseSpeciesForSpriteParams) => {
+}: ParseSpeciesForSpriteParams) {
   if (shiny && backSprite && specialShinyBackSprite) return specialShinyBackSprite;
   if (backSprite && specialBackSprite) return specialBackSprite;
   if (shiny && specialShinySprite) return specialShinySprite;
@@ -75,4 +85,92 @@ export const parseSpeciesForSprite = ({
   if (backSprite) return SpriteUrls.baseUrl + SpriteUrls.animatedBackSprites + pokemonGif;
   if (shiny) return SpriteUrls.baseUrl + SpriteUrls.animatedShinySprites + pokemonGif;
   return SpriteUrls.baseUrl + SpriteUrls.animatedSprites + pokemonGif;
-};
+}
+
+export function parseSpeciesForHighResSprite({
+  pokemonName,
+  pokemonNumber,
+  baseSpecies,
+  tier,
+  forme,
+  shiny = false
+}: ParseSpeciesForHighResSpriteParams) {
+  // If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP and PokéStar) then it doesn't have a Serebii sprite
+  if (pokemonNumber <= 0) return '';
+
+  const paddedPokemonNumber = pokemonNumber.toString().padStart(3, '0');
+
+  const lowercaseForme = forme?.toLowerCase();
+  const formPostfix = forme
+    ?.toLowerCase()
+    .split('-')
+    .map((a) => a.slice(0, 1))
+    .join('');
+
+  switch (lowercaseForme) {
+    case 'gmax': {
+      if (shiny) {
+        return `https://www.serebii.net/Shiny/SWSH/${paddedPokemonNumber}-gi.png`;
+      }
+
+      return `https://www.serebii.net/swordshield/pokemon/${paddedPokemonNumber}-gi.png`;
+    }
+
+    case 'mega': {
+      if (shiny) {
+        return `https://www.serebii.net/Shiny/XY/${paddedPokemonNumber}-${formPostfix}.png`;
+      }
+
+      return `https://www.serebii.net/sunmoon/pokemon/${paddedPokemonNumber}-${formPostfix}.png`;
+    }
+
+    case 'alola': {
+      if (shiny) {
+        return `https://www.serebii.net/Shiny/SM/${paddedPokemonNumber}-${formPostfix}.png`;
+      }
+
+      return `https://www.serebii.net/sunmoon/pokemon/${paddedPokemonNumber}-${formPostfix}.png`;
+    }
+
+    case 'galar': {
+      if (shiny) {
+        return `https://www.serebii.net/Shiny/SWSH/${paddedPokemonNumber}-${formPostfix}.png`;
+      }
+
+      return `https://www.serebii.net/swordshield/pokemon/${paddedPokemonNumber}-${formPostfix}.png`;
+    }
+    // <https://www.serebii.net/scarletviolet/pokemon/new/128-p.png>
+    // <https://www.serebii.net/scarletviolet/pokemon/new/128-b.png>
+    // <https://www.serebii.net/scarletviolet/pokemon/new/128-a.png>
+
+    default: {
+      const parsedPokemonName = toLowerHyphenCase(baseSpecies ?? pokemonName);
+
+      // If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
+      if (speciesThatAreNotInGeneration8Nor9.includes(parsedPokemonName)) {
+        if (shiny) {
+          return `https://www.serebii.net/Shiny/SM/${paddedPokemonNumber}.png`;
+        }
+
+        return `https://www.serebii.net/sunmoon/pokemon/${paddedPokemonNumber}.png`;
+      }
+
+      // If the Pokémon is `'past'` in Generation 9, but was not included in speciesThatAreNotInGeneration8Nor9
+      // or the Pokémon is within the numbers range for generation 8,
+      // then build a Generation 8 based URL
+      if (tier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905)) {
+        if (shiny) {
+          return `https://www.serebii.net/Shiny/SWSH/${paddedPokemonNumber}.png`;
+        }
+
+        return `https://www.serebii.net/swordshield/pokemon/${paddedPokemonNumber}.png`;
+      }
+
+      if (shiny) {
+        return `https://www.serebii.net/Shiny/SV/new/${paddedPokemonNumber}.png`;
+      }
+
+      return `https://www.serebii.net/scarletviolet/pokemon/new/${paddedPokemonNumber}.png`;
+    }
+  }
+}

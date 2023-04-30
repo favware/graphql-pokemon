@@ -139,6 +139,12 @@ type Pokemon {
   "The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
   sprite: String!
 
+  "The high res sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii."
+  highResSprite: String!
+
+  "The high res shiny sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii."
+  highResShinySprite: String!
+
   "The types for a Pokémon"
   types: [PokemonType!]!
 
@@ -336,6 +342,12 @@ type Learnset {
 
   "The sprite for a Pokémon. For most Pokémon this will be the animated gif, with some exceptions that were older-gen exclusive"
   sprite: String!
+
+  "The high res sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii."
+  highResSprite: String!
+
+  "The high res shiny sprite for a Pokémon. Unlike the regular sprites that are sourced from Pokémon Showdown, these are sourced from Serebii."
+  highResShinySprite: String!
 
   "The moves that are exclusively learned in the Unova Dream World"
   dreamworldMoves: [LearnsetMove!]

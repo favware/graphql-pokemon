@@ -590,9 +590,9 @@ enum PokemonEnum {
   pinsir
   pinsirmega
   tauros
-  taurospaldea
-  taurospaldeafire
-  taurospaldeawater
+  taurospaldeacombat
+  taurospaldeablaze
+  taurospaldeaaqua
   magikarp
   gyarados
   gyaradosmega
@@ -1696,6 +1696,8 @@ enum PokemonEnum {
   ironvaliant
   koraidon
   miraidon
+  walkingwake
+  ironleaves
 }
 
 "The supported items"

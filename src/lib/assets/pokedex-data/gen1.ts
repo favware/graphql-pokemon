@@ -5024,7 +5024,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeacombat.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeacombat.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeacombat.png',
-      species: 'tauros-paldea',
+      species: 'tauros-paldea-combat',
       types: [TypesEnum.Fighting],
       weightkg: 115,
       aliases: ['paldeantauros', 'taurosp', 'taurospaldea']
@@ -5060,7 +5060,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'taurospaldeaqua',
+    'taurospaldeaaqua',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',

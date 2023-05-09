@@ -2870,7 +2870,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'kleavor',
     {
       abilities: { first: 'swarm', second: 'sheerforce', hidden: 'sharpness' },
-      baseStats: { hp: 70, atk: 130, def: 95, spa: 45, spd: 75, spe: 85 },
+      baseStats: { hp: 70, atk: 135, def: 95, spa: 45, spd: 70, spe: 85 },
       color: 'Brown',
       eggGroups: ['Bug'],
       evoLevel: 'use Black Augurite',

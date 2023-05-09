@@ -2103,7 +2103,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'illusion' },
       baseSpecies: 'Zoroark',
-      baseStats: { hp: 60, atk: 105, def: 60, spa: 120, spd: 60, spe: 105 },
+      baseStats: { hp: 55, atk: 100, def: 60, spa: 125, spd: 60, spe: 110 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
       eggGroups: ['Field'],

@@ -14,8 +14,7 @@
       "#validations/*": ["./lib/validations/*"],
       "#mappers/*": ["./lib/mappers/*"],
       "#root/*": ["*"]
-    },
-    "composite": true
+    }
   },
   "include": [".", "./lib/assets/**/*.json"]
 }

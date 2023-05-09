@@ -6835,6 +6835,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'hydrosteam',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      desc: "If the current weather is Sunny Day and the user is not holding Utility Umbrella, this move's damage is multiplied by 1.5 instead of halved for being Water type.",
+      name: 'Hydro Steam',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'During Sunny Day: 1.5x damage instead of half.',
+      target: 'Normal',
+      type: 'Water'
+    }
+  ],
+  [
     'hydrovortex',
     {
       accuracy: 100,
@@ -10598,6 +10613,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       pp: 10,
       priority: 0,
       shortDesc: "Transfers the user's status ailment to the target.",
+      target: 'Normal',
+      type: 'Psychic'
+    }
+  ],
+  [
+    'psyblade',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      desc: "If the current terrain is Electric Terrain, this move's power is multiplied by 1.5.",
+      name: 'Psyblade',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'During Electric Terrain: 1.5x power.',
       target: 'Normal',
       type: 'Psychic'
     }

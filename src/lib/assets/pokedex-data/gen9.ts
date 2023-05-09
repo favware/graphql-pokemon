@@ -2025,7 +2025,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 991,
       species: 'Iron Bundle',
       types: [TypesEnum.Ice, TypesEnum.Water],
-      weightkg: 11
+      weightkg: 11,
+      aliases: ['bundlechan']
     }
   ],
   [

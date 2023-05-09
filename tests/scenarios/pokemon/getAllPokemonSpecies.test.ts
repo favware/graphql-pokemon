@@ -699,16 +699,16 @@ describe('getAllPokemon', () => {
       },
       { key: 'tauros', species: 'tauros' },
       {
-        key: 'taurospaldea',
-        species: 'tauros-paldea'
+        key: 'taurospaldeacombat',
+        species: 'tauros-paldea-combat'
       },
       {
-        key: 'taurospaldeafire',
-        species: 'tauros-paldea-fire'
+        key: 'taurospaldeablaze',
+        species: 'tauros-paldea-blaze'
       },
       {
-        key: 'taurospaldeawater',
-        species: 'tauros-paldea-water'
+        key: 'taurospaldeaaqua',
+        species: 'tauros-paldea-aqua'
       },
       { key: 'magikarp', species: 'magikarp' },
       { key: 'gyarados', species: 'gyarados' },
@@ -2742,7 +2742,15 @@ describe('getAllPokemon', () => {
         species: 'Iron Valiant'
       },
       { key: 'koraidon', species: 'koraidon' },
-      { key: 'miraidon', species: 'miraidon' }
+      { key: 'miraidon', species: 'miraidon' },
+      {
+        key: 'walkingwake',
+        species: 'Walking Wake'
+      },
+      {
+        key: 'ironleaves',
+        species: 'Iron Leaves'
+      }
     ]);
   });
 });

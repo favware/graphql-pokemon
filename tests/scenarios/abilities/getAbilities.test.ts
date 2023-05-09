@@ -65,7 +65,7 @@ describe('getAbility', () => {
               first: {
                 key: 'pressure',
                 bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Pressure_(Ability)',
-                desc: "If this Pokémon is the target of an opposing Pokémon's move, that move loses one additional PP. Imprison and Snatch also lose one additional PP when used by an opposing Pokémon, but Sticky Web does not.",
+                desc: "If this Pokémon is the target of an opposing Pokémon's move, that move loses one additional PP. Imprison, Snatch, and Tera Blast also lose one additional PP when used by an opposing Pokémon, but Sticky Web does not.",
                 isFieldAbility:
                   'If you have a Pokémon with Pressure at the front of your party (even if fainted), there is a 50% chance that a Pokémon will be forced to the upper bound of their encounter level range.',
                 name: 'Pressure',

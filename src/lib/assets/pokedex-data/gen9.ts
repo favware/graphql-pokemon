@@ -2410,6 +2410,46 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 240,
       legendary: true
     }
+  ],
+  [
+    'walkingwake',
+    {
+      abilities: { first: 'protosynthesis' },
+      baseStats: { hp: 99, atk: 83, def: 91, spa: 125, spd: 83, spe: 109 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 3.5,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 12850,
+      num: 1009,
+      species: 'Walking Wake',
+      types: [TypesEnum.Water, TypesEnum.Dragon],
+      weightkg: 280
+    }
+  ],
+  [
+    'ironleaves',
+    {
+      abilities: { first: 'quarkdrive' },
+      baseStats: { hp: 90, atk: 130, def: 88, spa: 70, spd: 108, spe: 104 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Green',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 12850,
+      num: 1010,
+      species: 'Iron Leaves',
+      types: [TypesEnum.Grass, TypesEnum.Psychic],
+      weightkg: 125
+    }
   ]
 ];
 

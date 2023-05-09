@@ -218,6 +218,8 @@ export const getPokemonWithFullDataAndEvolutions = gql`
     color
     cosmeticFormes
     weight
+    legendary
+    mythical
   }
 
   fragment FullDataFragment on Pokemon {
@@ -241,6 +243,7 @@ export const getPokemonWithFullDataAndEvolutions = gql`
         ...FullDataFragment
       }
     }
+
     preevolutions {
       ...FullDataFragment
       evolutions {

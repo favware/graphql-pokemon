@@ -21,7 +21,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'victini',
       types: [TypesEnum.Psychic, TypesEnum.Fire],
       weightkg: 4,
-      aliases: ['bikuteini', 'kyra']
+      aliases: ['bikuteini', 'kyra'],
+      mythical: true
     }
   ],
   [
@@ -3751,7 +3752,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cobalion',
       types: [TypesEnum.Steel, TypesEnum.Fighting],
       weightkg: 250,
-      aliases: ['coba', 'kobaruon']
+      aliases: ['coba', 'kobaruon'],
+      legendary: true
     }
   ],
   [
@@ -3772,7 +3774,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'terrakion',
       types: [TypesEnum.Rock, TypesEnum.Fighting],
       weightkg: 260,
-      aliases: ['terakion', 'terra']
+      aliases: ['terakion', 'terra'],
+      legendary: true
     }
   ],
   [
@@ -3793,7 +3796,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'virizion',
       types: [TypesEnum.Grass, TypesEnum.Fighting],
       weightkg: 200,
-      aliases: ['birijion', 'viriz']
+      aliases: ['birijion', 'viriz'],
+      legendary: true
     }
   ],
   [
@@ -3816,7 +3820,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'tornadus',
       types: [TypesEnum.Flying],
       weightkg: 63,
-      aliases: ['torn', 'tornadusi', 'tornadusincarnate', 'tornadusincarnation', 'torunerosu']
+      aliases: ['torn', 'tornadusi', 'tornadusincarnate', 'tornadusincarnation', 'torunerosu'],
+      legendary: true
     }
   ],
   [
@@ -3841,7 +3846,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'tornadus-therian',
       types: [TypesEnum.Flying],
       weightkg: 63,
-      aliases: ['tornadust', 'tornt']
+      aliases: ['tornadust', 'tornt'],
+      legendary: true
     }
   ],
   [
@@ -3864,7 +3870,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'thundurus',
       types: [TypesEnum.Electric, TypesEnum.Flying],
       weightkg: 61,
-      aliases: ['borutorosu', 'thundurusi', 'thundurusincarnate', 'thundurusincarnation', 'thundy']
+      aliases: ['borutorosu', 'thundurusi', 'thundurusincarnate', 'thundurusincarnation', 'thundy'],
+      legendary: true
     }
   ],
   [
@@ -3889,7 +3896,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'thundurus-therian',
       types: [TypesEnum.Electric, TypesEnum.Flying],
       weightkg: 61,
-      aliases: ['thundurust', 'thundyt']
+      aliases: ['thundurust', 'thundyt'],
+      legendary: true
     }
   ],
   [
@@ -3910,7 +3918,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'reshiram',
       types: [TypesEnum.Dragon, TypesEnum.Fire],
       weightkg: 330,
-      aliases: ['reshiramu']
+      aliases: ['reshiramu'],
+      legendary: true
     }
   ],
   [
@@ -3931,7 +3940,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zekrom',
       types: [TypesEnum.Dragon, TypesEnum.Electric],
       weightkg: 345,
-      aliases: ['zekuromu']
+      aliases: ['zekuromu'],
+      legendary: true
     }
   ],
   [
@@ -3954,7 +3964,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'landorus',
       types: [TypesEnum.Ground, TypesEnum.Flying],
       weightkg: 68,
-      aliases: ['lando', 'landoi', 'landorusi', 'landorusincarnate', 'landorusincarnation', 'randorosu']
+      aliases: ['lando', 'landoi', 'landorusi', 'landorusincarnate', 'landorusincarnation', 'randorosu'],
+      legendary: true
     }
   ],
   [
@@ -3979,7 +3990,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'landorus-therian',
       types: [TypesEnum.Ground, TypesEnum.Flying],
       weightkg: 68,
-      aliases: ['landorust', 'landot']
+      aliases: ['landorust', 'landot'],
+      legendary: true
     }
   ],
   [
@@ -4001,7 +4013,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'kyurem',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 325,
-      aliases: ['kyuremu']
+      aliases: ['kyuremu'],
+      legendary: true
     }
   ],
   [
@@ -4026,7 +4039,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'kyurem-black',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 325,
-      aliases: ['cube', 'kyub', 'kyuremb']
+      aliases: ['cube', 'kyub', 'kyuremb'],
+      legendary: true
     }
   ],
   [
@@ -4051,7 +4065,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'kyurem-white',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 325,
-      aliases: ['kyuremw', 'kyuw']
+      aliases: ['kyuremw', 'kyuw'],
+      legendary: true
     }
   ],
   [
@@ -4074,7 +4089,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'keldeo',
       types: [TypesEnum.Water, TypesEnum.Fighting],
       weightkg: 48.5,
-      aliases: ['keld', 'keldeoo', 'keldeoordinary', 'kerudio']
+      aliases: ['keld', 'keldeoo', 'keldeoordinary', 'kerudio'],
+      mythical: true
     }
   ],
   [
@@ -4099,7 +4115,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'keldeo-resolute',
       types: [TypesEnum.Water, TypesEnum.Fighting],
       weightkg: 48.5,
-      aliases: ['keldeor', 'keldeoresolution']
+      aliases: ['keldeor', 'keldeoresolution'],
+      mythical: true
     }
   ],
   [
@@ -4122,7 +4139,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'meloetta',
       types: [TypesEnum.Normal, TypesEnum.Psychic],
       weightkg: 6.5,
-      aliases: ['meloettaa', 'meloettaaria', 'meloettavoice', 'meroetta']
+      aliases: ['meloettaa', 'meloettaaria', 'meloettavoice', 'meroetta'],
+      mythical: true
     }
   ],
   [
@@ -4147,7 +4165,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'meloetta-pirouette',
       types: [TypesEnum.Normal, TypesEnum.Fighting],
       weightkg: 6.5,
-      aliases: ['meloettap', 'meloettas', 'meloettastep']
+      aliases: ['meloettap', 'meloettas', 'meloettastep'],
+      mythical: true
     }
   ],
   [
@@ -4169,7 +4188,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'genesect',
       types: [TypesEnum.Bug, TypesEnum.Steel],
       weightkg: 82.5,
-      aliases: ['gene', 'genosekuto']
+      aliases: ['gene', 'genosekuto'],
+      mythical: true
     }
   ],
   [
@@ -4193,7 +4213,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['genesect', 'genesectshock', 'genesectburn', 'genesectchill'],
       species: 'genesect-douse',
       types: [TypesEnum.Bug, TypesEnum.Steel],
-      weightkg: 82.5
+      weightkg: 82.5,
+      mythical: true
     }
   ],
   [
@@ -4217,7 +4238,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['genesect', 'genesectdouse', 'genesectburn', 'genesectchill'],
       species: 'genesect-shock',
       types: [TypesEnum.Bug, TypesEnum.Steel],
-      weightkg: 82.5
+      weightkg: 82.5,
+      mythical: true
     }
   ],
   [
@@ -4241,7 +4263,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['genesect', 'genesectdouse', 'genesectshock', 'genesectchill'],
       species: 'genesect-burn',
       types: [TypesEnum.Bug, TypesEnum.Steel],
-      weightkg: 82.5
+      weightkg: 82.5,
+      mythical: true
     }
   ],
   [
@@ -4265,7 +4288,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['genesect', 'genesectdouse', 'genesectshock', 'genesectburn'],
       species: 'genesect-chill',
       types: [TypesEnum.Bug, TypesEnum.Steel],
-      weightkg: 82.5
+      weightkg: 82.5,
+      mythical: true
     }
   ]
 ];

@@ -156,6 +156,10 @@ export namespace PokemonTypes {
     types: TypesEnum[];
 
     weightkg: number;
+
+    mythical?: boolean;
+
+    legendary?: boolean;
   }
 
   export interface Ability extends AliasEntry {

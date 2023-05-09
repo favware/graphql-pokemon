@@ -1500,7 +1500,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Type: Null',
       types: [TypesEnum.Normal],
       weightkg: 120.5,
-      aliases: ['taipunuru', 'type null', 'type: null']
+      aliases: ['taipunuru', 'type null', 'type: null'],
+      legendary: true
     }
   ],
   [
@@ -1542,7 +1543,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'silvally',
       types: [TypesEnum.Normal],
       weightkg: 100.5,
-      aliases: ['shiruvuadi']
+      aliases: ['shiruvuadi'],
+      legendary: true
     }
   ],
   [
@@ -1586,7 +1588,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-bug',
       types: [TypesEnum.Bug],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1630,7 +1633,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-dark',
       types: [TypesEnum.Dark],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1674,7 +1678,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-dragon',
       types: [TypesEnum.Dragon],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1718,7 +1723,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-electric',
       types: [TypesEnum.Electric],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1762,7 +1768,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-fairy',
       types: [TypesEnum.Fairy],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1806,7 +1813,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-fighting',
       types: [TypesEnum.Fighting],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1850,7 +1858,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-fire',
       types: [TypesEnum.Fire],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1894,7 +1903,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-flying',
       types: [TypesEnum.Flying],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1938,7 +1948,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-ghost',
       types: [TypesEnum.Ghost],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -1982,7 +1993,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-grass',
       types: [TypesEnum.Grass],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2026,7 +2038,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-ground',
       types: [TypesEnum.Ground],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2070,7 +2083,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-ice',
       types: [TypesEnum.Ice],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2114,7 +2128,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-poison',
       types: [TypesEnum.Poison],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2158,7 +2173,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-psychic',
       types: [TypesEnum.Psychic],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2202,7 +2218,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-rock',
       types: [TypesEnum.Rock],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2246,7 +2263,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-steel',
       types: [TypesEnum.Steel],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2290,7 +2308,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'typenull',
       species: 'silvally-water',
       types: [TypesEnum.Water],
-      weightkg: 100.5
+      weightkg: 100.5,
+      legendary: true
     }
   ],
   [
@@ -2703,7 +2722,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Tapu Koko',
       types: [TypesEnum.Electric, TypesEnum.Fairy],
       weightkg: 20.5,
-      aliases: ['kapukokeko', 'koko', 'tapu koko']
+      aliases: ['kapukokeko', 'koko', 'tapu koko'],
+      legendary: true
     }
   ],
   [
@@ -2724,7 +2744,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Tapu Lele',
       types: [TypesEnum.Psychic, TypesEnum.Fairy],
       weightkg: 18.6,
-      aliases: ['kaputetefu', 'lele', 'tapu lele']
+      aliases: ['kaputetefu', 'lele', 'tapu lele'],
+      legendary: true
     }
   ],
   [
@@ -2745,7 +2766,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Tapu Bulu',
       types: [TypesEnum.Grass, TypesEnum.Fairy],
       weightkg: 45.5,
-      aliases: ['bulu', 'kapubururu', 'tapu bulu']
+      aliases: ['bulu', 'kapubururu', 'tapu bulu'],
+      legendary: true
     }
   ],
   [
@@ -2766,7 +2788,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Tapu Fini',
       types: [TypesEnum.Water, TypesEnum.Fairy],
       weightkg: 21.2,
-      aliases: ['fini', 'kapurehire', 'tapu fini']
+      aliases: ['fini', 'kapurehire', 'tapu fini'],
+      legendary: true
     }
   ],
   [
@@ -2788,7 +2811,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cosmog',
       types: [TypesEnum.Psychic],
       weightkg: 0.1,
-      aliases: ['kosumoggu', 'mene', 'nebby']
+      aliases: ['kosumoggu', 'mene', 'nebby'],
+      legendary: true
     }
   ],
   [
@@ -2812,7 +2836,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cosmoem',
       types: [TypesEnum.Psychic],
       weightkg: 999.9,
-      aliases: ['kosumoumu']
+      aliases: ['kosumoumu'],
+      legendary: true
     }
   ],
   [
@@ -2835,7 +2860,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'solgaleo',
       types: [TypesEnum.Psychic, TypesEnum.Steel],
       weightkg: 230,
-      aliases: ['sorugareo']
+      aliases: ['sorugareo'],
+      legendary: true
     }
   ],
   [
@@ -2858,7 +2884,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'lunala',
       types: [TypesEnum.Psychic, TypesEnum.Ghost],
       weightkg: 120,
-      aliases: ['runaaara']
+      aliases: ['runaaara'],
+      legendary: true
     }
   ],
   [
@@ -3027,7 +3054,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'necrozma',
       types: [TypesEnum.Psychic],
       weightkg: 230,
-      aliases: ['nekurozuma']
+      aliases: ['nekurozuma'],
+      legendary: true
     }
   ],
   [
@@ -3062,7 +3090,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'necrozma-dusk',
         'necrozmadm',
         'necrozmadusk'
-      ]
+      ],
+      legendary: true
     }
   ],
   [
@@ -3097,7 +3126,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'necrozma-dawn',
         'necrozmadawn',
         'necrozmadw'
-      ]
+      ],
+      legendary: true
     }
   ],
   [
@@ -3122,7 +3152,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'necrozma-ultra',
       types: [TypesEnum.Psychic, TypesEnum.Dragon],
       weightkg: 230,
-      aliases: ['necrozmau', 'ultranecrozma', 'unecro']
+      aliases: ['necrozmau', 'ultranecrozma', 'unecro'],
+      legendary: true
     }
   ],
   [
@@ -3144,7 +3175,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'magearna',
       types: [TypesEnum.Steel, TypesEnum.Fairy],
       weightkg: 80.5,
-      aliases: ['mage', 'magiana']
+      aliases: ['mage', 'magiana'],
+      mythical: true
     }
   ],
   [
@@ -3168,7 +3200,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['magearna'],
       species: 'magearna-original',
       types: [TypesEnum.Steel, TypesEnum.Fairy],
-      weightkg: 80.5
+      weightkg: 80.5,
+      mythical: true
     }
   ],
   [
@@ -3189,7 +3222,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'marshadow',
       types: [TypesEnum.Fighting, TypesEnum.Ghost],
       weightkg: 22.2,
-      aliases: ['maashadoo']
+      aliases: ['maashadoo'],
+      mythical: true
     }
   ],
   [
@@ -3296,7 +3330,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 807,
       species: 'zeraora',
       types: [TypesEnum.Electric],
-      weightkg: 44.5
+      weightkg: 44.5,
+      mythical: true
     }
   ],
   [
@@ -3318,7 +3353,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'meltan',
       types: [TypesEnum.Steel],
       weightkg: 8,
-      aliases: ['merutan']
+      aliases: ['merutan'],
+      mythical: true
     }
   ],
   [
@@ -3342,7 +3378,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'melmetal',
       types: [TypesEnum.Steel],
       weightkg: 800,
-      aliases: ['merumetaru']
+      aliases: ['merumetaru'],
+      mythical: true
     }
   ],
   [
@@ -3367,7 +3404,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'melmetal-gmax',
       types: [TypesEnum.Steel],
       weightkg: 1000,
-      aliases: ['gigantamax melmetal']
+      aliases: ['gigantamax melmetal'],
+      mythical: true
     }
   ]
 ];

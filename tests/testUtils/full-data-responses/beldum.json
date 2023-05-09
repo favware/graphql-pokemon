@@ -751,27 +751,14 @@
       },
       "key": "beldum",
       "eggGroups": ["Mineral"],
-      "evYields": {
-        "hp": 0,
-        "attack": 0,
-        "defense": 1,
-        "specialattack": 0,
-        "specialdefense": 0,
-        "speed": 0
-      },
+      "evYields": { "hp": 0, "attack": 0, "defense": 1, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": null,
       "flavorTexts": [
-        {
-          "flavor": "They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison.",
-          "game": "Shining Pearl"
-        }
+        { "flavor": "They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison.", "game": "Shining Pearl" }
       ],
       "forme": null,
       "formeLetter": null,
-      "gender": {
-        "female": "0%",
-        "male": "0%"
-      },
+      "gender": { "female": "0%", "male": "0%" },
       "height": 0.6,
       "isEggObtainable": true,
       "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/beldum.gif",
@@ -847,23 +834,15 @@
         }
       ],
       "baseSpecies": null,
-      "baseStats": {
-        "hp": 40,
-        "attack": 55,
-        "defense": 80,
-        "specialattack": 35,
-        "specialdefense": 60,
-        "speed": 30
-      },
+      "baseStats": { "hp": 40, "attack": 55, "defense": 80, "specialattack": 35, "specialdefense": 60, "speed": 30 },
       "baseStatsTotal": 300,
       "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/beldum_(Pokémon)",
-      "catchRate": {
-        "base": 3,
-        "percentageWithOrdinaryPokeballAtFullHealth": "1.6%"
-      },
+      "catchRate": { "base": 3, "percentageWithOrdinaryPokeballAtFullHealth": "1.6%" },
       "color": "Blue",
       "cosmeticFormes": null,
       "weight": 95.2,
+      "legendary": false,
+      "mythical": false,
       "evolutions": [
         {
           "abilities": {
@@ -1616,14 +1595,7 @@
           },
           "key": "metang",
           "eggGroups": ["Mineral"],
-          "evYields": {
-            "hp": 0,
-            "attack": 0,
-            "defense": 2,
-            "specialattack": 0,
-            "specialdefense": 0,
-            "speed": 0
-          },
+          "evYields": { "hp": 0, "attack": 0, "defense": 2, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": "20",
           "flavorTexts": [
             {
@@ -1633,10 +1605,7 @@
           ],
           "forme": null,
           "formeLetter": null,
-          "gender": {
-            "female": "0%",
-            "male": "0%"
-          },
+          "gender": { "female": "0%", "male": "0%" },
           "height": 1.2,
           "isEggObtainable": true,
           "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/metang.gif",
@@ -1726,23 +1695,15 @@
             }
           ],
           "baseSpecies": null,
-          "baseStats": {
-            "hp": 60,
-            "attack": 75,
-            "defense": 100,
-            "specialattack": 55,
-            "specialdefense": 80,
-            "speed": 50
-          },
+          "baseStats": { "hp": 60, "attack": 75, "defense": 100, "specialattack": 55, "specialdefense": 80, "speed": 50 },
           "baseStatsTotal": 420,
           "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/metang_(Pokémon)",
-          "catchRate": {
-            "base": 3,
-            "percentageWithOrdinaryPokeballAtFullHealth": "1.6%"
-          },
+          "catchRate": { "base": 3, "percentageWithOrdinaryPokeballAtFullHealth": "1.6%" },
           "color": "Blue",
           "cosmeticFormes": null,
           "weight": 202.5,
+          "legendary": false,
+          "mythical": false,
           "evolutions": [
             {
               "abilities": {
@@ -10386,27 +10347,14 @@
               },
               "key": "metagross",
               "eggGroups": ["Mineral"],
-              "evYields": {
-                "hp": 0,
-                "attack": 0,
-                "defense": 3,
-                "specialattack": 0,
-                "specialdefense": 0,
-                "speed": 0
-              },
+              "evYields": { "hp": 0, "attack": 0, "defense": 3, "specialattack": 0, "specialdefense": 0, "speed": 0 },
               "evolutionLevel": "45",
               "flavorTexts": [
-                {
-                  "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
-                  "game": "Shining Pearl"
-                }
+                { "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.", "game": "Shining Pearl" }
               ],
               "forme": null,
               "formeLetter": null,
-              "gender": {
-                "female": "0%",
-                "male": "0%"
-              },
+              "gender": { "female": "0%", "male": "0%" },
               "height": 1.6,
               "isEggObtainable": true,
               "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/metagross.gif",
@@ -10496,23 +10444,15 @@
                 }
               ],
               "baseSpecies": null,
-              "baseStats": {
-                "hp": 80,
-                "attack": 135,
-                "defense": 130,
-                "specialattack": 95,
-                "specialdefense": 90,
-                "speed": 70
-              },
+              "baseStats": { "hp": 80, "attack": 135, "defense": 130, "specialattack": 95, "specialdefense": 90, "speed": 70 },
               "baseStatsTotal": 600,
               "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/metagross_(Pokémon)",
-              "catchRate": {
-                "base": 3,
-                "percentageWithOrdinaryPokeballAtFullHealth": "1.6%"
-              },
+              "catchRate": { "base": 3, "percentageWithOrdinaryPokeballAtFullHealth": "1.6%" },
               "color": "Blue",
               "cosmeticFormes": null,
-              "weight": 550
+              "weight": 550,
+              "legendary": false,
+              "mythical": false
             }
           ],
           "preevolutions": null

@@ -2391,7 +2391,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['zaciancrowned'],
       species: 'zacian',
       types: [TypesEnum.Fairy],
-      weightkg: 110
+      weightkg: 110,
+      legendary: true
     }
   ],
   [
@@ -2416,7 +2417,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zacian-crowned',
       types: [TypesEnum.Fairy, TypesEnum.Steel],
       weightkg: 355,
-      aliases: ['zacianc', 'zanianc']
+      aliases: ['zacianc', 'zanianc'],
+      legendary: true
     }
   ],
   [
@@ -2437,7 +2439,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['zamazentacrowned'],
       species: 'zamazenta',
       types: [TypesEnum.Fighting],
-      weightkg: 210
+      weightkg: 210,
+      legendary: true
     }
   ],
   [
@@ -2462,7 +2465,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zamazenta-crowned',
       types: [TypesEnum.Fighting, TypesEnum.Steel],
       weightkg: 785,
-      aliases: ['zamazentac']
+      aliases: ['zamazentac'],
+      legendary: true
     }
   ],
   [
@@ -2483,7 +2487,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['eternatuseternamax'],
       species: 'eternatus',
       types: [TypesEnum.Poison, TypesEnum.Dragon],
-      weightkg: 950
+      weightkg: 950,
+      legendary: true
     }
   ],
   [
@@ -2508,7 +2513,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'eternatus-eternamax',
       types: [TypesEnum.Poison, TypesEnum.Dragon],
       weightkg: 950,
-      aliases: ['entermax enternatus', 'eternamax', 'gigantamax enternatus']
+      aliases: ['entermax enternatus', 'eternamax', 'gigantamax enternatus'],
+      legendary: true
     }
   ],
   [
@@ -2529,7 +2535,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 891,
       species: 'kubfu',
       types: [TypesEnum.Fighting],
-      weightkg: 12
+      weightkg: 12,
+      legendary: true
     }
   ],
   [
@@ -2553,7 +2560,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'urshifu',
       types: [TypesEnum.Fighting, TypesEnum.Dark],
       weightkg: 105,
-      aliases: ['urshifusingle', 'urshifusinglestrike', 'urshifuss']
+      aliases: ['urshifusingle', 'urshifusinglestrike', 'urshifuss'],
+      legendary: true
     }
   ],
   [
@@ -2580,7 +2588,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'urshifu-rapid-strike',
       types: [TypesEnum.Fighting, TypesEnum.Water],
       weightkg: 105,
-      aliases: ['urshifurapid', 'urshifurs', 'watershifu']
+      aliases: ['urshifurapid', 'urshifurs', 'watershifu'],
+      legendary: true
     }
   ],
   [
@@ -2604,7 +2613,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['urshifu', 'urshifurapidstrike', 'urshifurapidstrikegmax'],
       species: 'urshifu-gmax',
       types: [TypesEnum.Fighting, TypesEnum.Dark],
-      weightkg: 105
+      weightkg: 105,
+      legendary: true
     }
   ],
   [
@@ -2628,7 +2638,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['urshifu', 'urshifugmax', 'urshifurapidstrike'],
       species: 'urshifu-rapid-strike-gmax',
       types: [TypesEnum.Fighting, TypesEnum.Water],
-      weightkg: 105
+      weightkg: 105,
+      legendary: true
     }
   ],
   [
@@ -2649,7 +2660,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['zarudedada'],
       species: 'zarude',
       types: [TypesEnum.Dark, TypesEnum.Grass],
-      weightkg: 70
+      weightkg: 70,
+      mythical: true
     }
   ],
   [
@@ -2673,7 +2685,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['zarude'],
       species: 'zarude-dada',
       types: [TypesEnum.Dark, TypesEnum.Grass],
-      weightkg: 70
+      weightkg: 70,
+      mythical: true
     }
   ],
   [
@@ -2693,7 +2706,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 894,
       species: 'regieleki',
       types: [TypesEnum.Electric],
-      weightkg: 145
+      weightkg: 145,
+      legendary: true
     }
   ],
   [
@@ -2713,7 +2727,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 895,
       species: 'regidrago',
       types: [TypesEnum.Dragon],
-      weightkg: 200
+      weightkg: 200,
+      legendary: true
     }
   ],
   [
@@ -2733,7 +2748,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 896,
       species: 'glastrier',
       types: [TypesEnum.Ice],
-      weightkg: 800
+      weightkg: 800,
+      legendary: true
     }
   ],
   [
@@ -2753,7 +2769,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 897,
       species: 'spectrier',
       types: [TypesEnum.Ghost],
-      weightkg: 44.5
+      weightkg: 44.5,
+      legendary: true
     }
   ],
   [
@@ -2774,7 +2791,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['calyrexice', 'calyrexshadow'],
       species: 'calyrex',
       types: [TypesEnum.Psychic, TypesEnum.Grass],
-      weightkg: 7.7
+      weightkg: 7.7,
+      legendary: true
     }
   ],
   [
@@ -2799,7 +2817,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'calyrex-ice',
       types: [TypesEnum.Psychic, TypesEnum.Ice],
       weightkg: 809.1,
-      aliases: ['calyrexice', 'calyrexir']
+      aliases: ['calyrexice', 'calyrexir'],
+      legendary: true
     }
   ],
   [
@@ -2824,7 +2843,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'calyrex-shadow',
       types: [TypesEnum.Psychic, TypesEnum.Ghost],
       weightkg: 53.6,
-      aliases: ['calyrexshadow', 'calyrexsr']
+      aliases: ['calyrexshadow', 'calyrexsr'],
+      legendary: true
     }
   ],
   [
@@ -2980,7 +3000,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['enamorustherian'],
       species: 'enamorus',
       types: [TypesEnum.Fairy, TypesEnum.Flying],
-      weightkg: 48
+      weightkg: 48,
+      legendary: true
     }
   ],
   [
@@ -3000,7 +3021,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['enamorus'],
       species: 'enamorus-therian',
       types: [TypesEnum.Fairy, TypesEnum.Flying],
-      weightkg: 48
+      weightkg: 48,
+      legendary: true
     }
   ]
 ];

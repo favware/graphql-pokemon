@@ -313,6 +313,10 @@ interface Pokemon {
   types: Array<PokemonType>;
   /** The weight of a Pokémon in kilograms */
   weight: number;
+  /** Whether this Pokémon is a mythical Pokémon. The list is based on what is provided by Bulbapedia. */
+  mythical: boolean;
+  /** Whether this Pokémon is a legendary Pokémon. The list is based on what is provided by Bulbapedia.*/
+  legendary: boolean;
 }
 interface PokemonLearnset {
   /** The moves that are exclusively learned in the Unova Dream World */

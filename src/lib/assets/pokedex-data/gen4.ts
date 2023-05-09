@@ -2468,7 +2468,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'uxie',
       types: [TypesEnum.Psychic],
       weightkg: 0.3,
-      aliases: ['yukushii']
+      aliases: ['yukushii'],
+      legendary: true
     }
   ],
   [
@@ -2489,7 +2490,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'mesprit',
       types: [TypesEnum.Psychic],
       weightkg: 0.3,
-      aliases: ['emuritto']
+      aliases: ['emuritto'],
+      legendary: true
     }
   ],
   [
@@ -2510,7 +2512,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'azelf',
       types: [TypesEnum.Psychic],
       weightkg: 0.3,
-      aliases: ['agunomu']
+      aliases: ['agunomu'],
+      legendary: true
     }
   ],
   [
@@ -2532,7 +2535,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'dialga',
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 683,
-      aliases: ['diaruga']
+      aliases: ['diaruga'],
+      legendary: true
     }
   ],
   [
@@ -2556,7 +2560,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'dialga-origin',
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 850,
-      aliases: ['origindialga', 'dialgao']
+      aliases: ['origindialga', 'dialgao'],
+      legendary: true
     }
   ],
   [
@@ -2579,7 +2584,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'palkia',
       types: [TypesEnum.Water, TypesEnum.Dragon],
       weightkg: 336,
-      aliases: ['parukia']
+      aliases: ['parukia'],
+      legendary: true
     }
   ],
   [
@@ -2604,7 +2610,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'palkia-origin',
       types: [TypesEnum.Water, TypesEnum.Dragon],
       weightkg: 660,
-      aliases: ['originpalkia', 'palkiao']
+      aliases: ['originpalkia', 'palkiao'],
+      legendary: true
     }
   ],
   [
@@ -2625,7 +2632,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'heatran',
       types: [TypesEnum.Fire, TypesEnum.Steel],
       weightkg: 430,
-      aliases: ['hiidoran', 'tran']
+      aliases: ['hiidoran', 'tran'],
+      legendary: true
     }
   ],
   [
@@ -2646,7 +2654,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'regigigas',
       types: [TypesEnum.Normal],
       weightkg: 420,
-      aliases: ['rejigigasu']
+      aliases: ['rejigigasu'],
+      legendary: true
     }
   ],
   [
@@ -2669,7 +2678,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'giratina',
       types: [TypesEnum.Ghost, TypesEnum.Dragon],
       weightkg: 750,
-      aliases: ['gira', 'girateina', 'giratinaa', 'giratinaaltered']
+      aliases: ['gira', 'girateina', 'giratinaa', 'giratinaaltered'],
+      legendary: true
     }
   ],
   [
@@ -2694,7 +2704,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'giratina-origin',
       types: [TypesEnum.Ghost, TypesEnum.Dragon],
       weightkg: 650,
-      aliases: ['origingiratina', 'girao', 'giratinao']
+      aliases: ['origingiratina', 'girao', 'giratinao'],
+      legendary: true
     }
   ],
   [
@@ -2715,7 +2726,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cresselia',
       types: [TypesEnum.Psychic],
       weightkg: 85.6,
-      aliases: ['cress', 'kureseria']
+      aliases: ['cress', 'kureseria'],
+      legendary: true
     }
   ],
   [
@@ -2736,7 +2748,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'phione',
       types: [TypesEnum.Water],
       weightkg: 3.1,
-      aliases: ['fione']
+      aliases: ['fione'],
+      mythical: true
     }
   ],
   [
@@ -2757,7 +2770,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'manaphy',
       types: [TypesEnum.Water],
       weightkg: 1.4,
-      aliases: ['manafi']
+      aliases: ['manafi'],
+      mythical: true
     }
   ],
   [
@@ -2778,7 +2792,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'darkrai',
       types: [TypesEnum.Dark],
       weightkg: 50.5,
-      aliases: ['daakurai']
+      aliases: ['daakurai'],
+      mythical: true
     }
   ],
   [
@@ -2801,7 +2816,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'shaymin',
       types: [TypesEnum.Grass],
       weightkg: 2.1,
-      aliases: ['shayminl', 'shayminland', 'sheimi']
+      aliases: ['shayminl', 'shayminland', 'sheimi'],
+      mythical: true
     }
   ],
   [
@@ -2826,7 +2842,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'shaymin-sky',
       types: [TypesEnum.Grass, TypesEnum.Flying],
       weightkg: 5.2,
-      aliases: ['shaymins', 'skymin']
+      aliases: ['shaymins', 'skymin'],
+      mythical: true
     }
   ],
   [
@@ -2868,7 +2885,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus',
       types: [TypesEnum.Normal],
       weightkg: 320,
-      aliases: ['arc', 'arceusnormal', 'aruseusu', 'ekiller']
+      aliases: ['arc', 'arceusnormal', 'aruseusu', 'ekiller'],
+      mythical: true
     }
   ],
   [
@@ -2911,7 +2929,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-bug',
       types: [TypesEnum.Bug],
       weightkg: 320,
-      aliases: ['arcbug', 'bugceus']
+      aliases: ['arcbug', 'bugceus'],
+      mythical: true
     }
   ],
   [
@@ -2954,7 +2973,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-dark',
       types: [TypesEnum.Dark],
       weightkg: 320,
-      aliases: ['arcdark', 'darkceus']
+      aliases: ['arcdark', 'darkceus'],
+      mythical: true
     }
   ],
   [
@@ -2997,7 +3017,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-dragon',
       types: [TypesEnum.Dragon],
       weightkg: 320,
-      aliases: ['arcdragon', 'dragonceus']
+      aliases: ['arcdragon', 'dragonceus'],
+      mythical: true
     }
   ],
   [
@@ -3040,7 +3061,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-electric',
       types: [TypesEnum.Electric],
       weightkg: 320,
-      aliases: ['arcelectric', 'eleceus']
+      aliases: ['arcelectric', 'eleceus'],
+      mythical: true
     }
   ],
   [
@@ -3083,7 +3105,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-fairy',
       types: [TypesEnum.Fairy],
       weightkg: 320,
-      aliases: ['arcfairy', 'fairyceus']
+      aliases: ['arcfairy', 'fairyceus'],
+      mythical: true
     }
   ],
   [
@@ -3126,7 +3149,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-fighting',
       types: [TypesEnum.Fighting],
       weightkg: 320,
-      aliases: ['arcfighting', 'fightceus']
+      aliases: ['arcfighting', 'fightceus'],
+      mythical: true
     }
   ],
   [
@@ -3169,7 +3193,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-fire',
       types: [TypesEnum.Fire],
       weightkg: 320,
-      aliases: ['arcfire', 'fireceus']
+      aliases: ['arcfire', 'fireceus'],
+      mythical: true
     }
   ],
   [
@@ -3212,7 +3237,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-flying',
       types: [TypesEnum.Flying],
       weightkg: 320,
-      aliases: ['arcflying', 'flyceus']
+      aliases: ['arcflying', 'flyceus'],
+      mythical: true
     }
   ],
   [
@@ -3255,7 +3281,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-ghost',
       types: [TypesEnum.Ghost],
       weightkg: 320,
-      aliases: ['arcghost', 'ghostceus']
+      aliases: ['arcghost', 'ghostceus'],
+      mythical: true
     }
   ],
   [
@@ -3298,7 +3325,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-grass',
       types: [TypesEnum.Grass],
       weightkg: 320,
-      aliases: ['arcgrass', 'grassceus']
+      aliases: ['arcgrass', 'grassceus'],
+      mythical: true
     }
   ],
   [
@@ -3341,7 +3369,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-ground',
       types: [TypesEnum.Ground],
       weightkg: 320,
-      aliases: ['arcground', 'groundceus']
+      aliases: ['arcground', 'groundceus'],
+      mythical: true
     }
   ],
   [
@@ -3384,7 +3413,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-ice',
       types: [TypesEnum.Ice],
       weightkg: 320,
-      aliases: ['arcice', 'iceceus']
+      aliases: ['arcice', 'iceceus'],
+      mythical: true
     }
   ],
   [
@@ -3427,7 +3457,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-poison',
       types: [TypesEnum.Poison],
       weightkg: 320,
-      aliases: ['arcpoison', 'poisonceus']
+      aliases: ['arcpoison', 'poisonceus'],
+      mythical: true
     }
   ],
   [
@@ -3470,7 +3501,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-psychic',
       types: [TypesEnum.Psychic],
       weightkg: 320,
-      aliases: ['arcpsychic', 'psyceus']
+      aliases: ['arcpsychic', 'psyceus'],
+      mythical: true
     }
   ],
   [
@@ -3513,7 +3545,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-rock',
       types: [TypesEnum.Rock],
       weightkg: 320,
-      aliases: ['arcrock', 'rockceus']
+      aliases: ['arcrock', 'rockceus'],
+      mythical: true
     }
   ],
   [
@@ -3556,7 +3589,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-steel',
       types: [TypesEnum.Steel],
       weightkg: 320,
-      aliases: ['arcsteel', 'steelceus']
+      aliases: ['arcsteel', 'steelceus'],
+      mythical: true
     }
   ],
   [
@@ -3599,7 +3633,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-water',
       types: [TypesEnum.Water],
       weightkg: 320,
-      aliases: ['arcwater', 'waterceus']
+      aliases: ['arcwater', 'waterceus'],
+      mythical: true
     }
   ],
   [
@@ -3643,7 +3678,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'arceus-legend',
       types: [TypesEnum.Normal],
       weightkg: 320,
-      aliases: ['arceuslegendary', 'plarceus', 'god']
+      aliases: ['arceuslegendary', 'plarceus', 'god'],
+      mythical: true
     }
   ]
 ];

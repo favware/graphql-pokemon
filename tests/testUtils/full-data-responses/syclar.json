@@ -53,6 +53,32 @@
             {
               "generation": 4,
               "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 4,
+              "move": {
                 "key": "earthpower",
                 "accuracy": 100,
                 "basePower": "90",
@@ -244,7 +270,7 @@
                 "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)",
                 "category": "Special",
                 "contestType": "Beautiful",
-                "desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+                "desc": "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
                 "isFieldMove": null,
                 "isGMax": null,
                 "isNonstandard": null,
@@ -254,7 +280,7 @@
                 "pp": 5,
                 "priority": 0,
                 "serebiiPage": "https://www.serebii.net/attackdex-swsh/blizzard.shtml",
-                "shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+                "shortDesc": "10% chance to freeze foe(s). Can't miss in Snow.",
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/blizzard",
                 "target": "Adjacent Foes",
                 "type": "Ice",
@@ -764,7 +790,7 @@
                 "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Sleep_Talk_(move)",
                 "category": "Status",
                 "contestType": "Cute",
-                "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Max Move.",
+                "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Blazing Torque, Celebrate, Chatter, Combat Torque, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Magical Torque, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, Wicked Torque, or any two-turn move.",
                 "isFieldMove": null,
                 "isGMax": null,
                 "isNonstandard": null,
@@ -1502,7 +1528,86 @@
         },
         "generation5": {
           "dreamworldMoves": [],
-          "eggMoves": [],
+          "eggMoves": [
+            {
+              "generation": 5,
+              "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 5,
+              "move": {
+                "key": "pinmissile",
+                "accuracy": 95,
+                "basePower": "25",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pin_Missile_(move)",
+                "category": "Physical",
+                "contestType": "Cool",
+                "desc": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 130,
+                "name": "Pin Missile",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/pinmissile.shtml",
+                "shortDesc": "Hits 2-5 times in one turn.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/pin-missile",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 100
+              }
+            },
+            {
+              "generation": 5,
+              "move": {
+                "key": "superpower",
+                "accuracy": 100,
+                "basePower": "120",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                "category": "Physical",
+                "contestType": "Tough",
+                "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Superpower",
+                "pp": 5,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                "target": "Normal",
+                "type": "Fighting",
+                "zMovePower": 190
+              }
+            }
+          ],
           "eventMoves": [],
           "tmMoves": [
             {
@@ -1558,7 +1663,60 @@
               }
             }
           ],
-          "tutorMoves": [],
+          "tutorMoves": [
+            {
+              "generation": 5,
+              "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 5,
+              "move": {
+                "key": "superpower",
+                "accuracy": 100,
+                "basePower": "120",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                "category": "Physical",
+                "contestType": "Tough",
+                "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Superpower",
+                "pp": 5,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                "target": "Normal",
+                "type": "Fighting",
+                "zMovePower": 190
+              }
+            }
+          ],
           "virtualTransferMoves": [],
           "levelUpMoves": [
             {
@@ -1592,7 +1750,86 @@
         },
         "generation6": {
           "dreamworldMoves": [],
-          "eggMoves": [],
+          "eggMoves": [
+            {
+              "generation": 6,
+              "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 6,
+              "move": {
+                "key": "pinmissile",
+                "accuracy": 95,
+                "basePower": "25",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pin_Missile_(move)",
+                "category": "Physical",
+                "contestType": "Cool",
+                "desc": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 130,
+                "name": "Pin Missile",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/pinmissile.shtml",
+                "shortDesc": "Hits 2-5 times in one turn.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/pin-missile",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 100
+              }
+            },
+            {
+              "generation": 6,
+              "move": {
+                "key": "superpower",
+                "accuracy": 100,
+                "basePower": "120",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                "category": "Physical",
+                "contestType": "Tough",
+                "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Superpower",
+                "pp": 5,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                "target": "Normal",
+                "type": "Fighting",
+                "zMovePower": 190
+              }
+            }
+          ],
           "eventMoves": [],
           "tmMoves": [
             {
@@ -1678,6 +1915,58 @@
             {
               "generation": 6,
               "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 6,
+              "move": {
+                "key": "superpower",
+                "accuracy": 100,
+                "basePower": "120",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                "category": "Physical",
+                "contestType": "Tough",
+                "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Superpower",
+                "pp": 5,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                "target": "Normal",
+                "type": "Fighting",
+                "zMovePower": 190
+              }
+            },
+            {
+              "generation": 6,
+              "move": {
                 "key": "waterpulse",
                 "accuracy": 100,
                 "basePower": "60",
@@ -1708,6 +1997,32 @@
         "generation7": {
           "dreamworldMoves": [],
           "eggMoves": [
+            {
+              "generation": 7,
+              "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
             {
               "generation": 7,
               "move": {
@@ -1954,7 +2269,7 @@
                 "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)",
                 "category": "Special",
                 "contestType": "Beautiful",
-                "desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+                "desc": "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
                 "isFieldMove": null,
                 "isGMax": null,
                 "isNonstandard": null,
@@ -1964,37 +2279,11 @@
                 "pp": 5,
                 "priority": 0,
                 "serebiiPage": "https://www.serebii.net/attackdex-swsh/blizzard.shtml",
-                "shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+                "shortDesc": "10% chance to freeze foe(s). Can't miss in Snow.",
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/blizzard",
                 "target": "Adjacent Foes",
                 "type": "Ice",
                 "zMovePower": 185
-              }
-            },
-            {
-              "generation": 7,
-              "move": {
-                "key": "bugbite",
-                "accuracy": 100,
-                "basePower": "60",
-                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
-                "category": "Physical",
-                "contestType": "Cute",
-                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-                "isFieldMove": null,
-                "isGMax": null,
-                "isNonstandard": null,
-                "isZ": null,
-                "maxMovePower": 110,
-                "name": "Bug Bite",
-                "pp": 20,
-                "priority": 0,
-                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
-                "shortDesc": "User steals and eats the target's Berry.",
-                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
-                "target": "Normal",
-                "type": "Bug",
-                "zMovePower": 120
               }
             },
             {
@@ -2474,7 +2763,7 @@
                 "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Sleep_Talk_(move)",
                 "category": "Status",
                 "contestType": "Cute",
-                "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Max Move.",
+                "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Blazing Torque, Celebrate, Chatter, Combat Torque, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Magical Torque, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, Wicked Torque, or any two-turn move.",
                 "isFieldMove": null,
                 "isGMax": null,
                 "isNonstandard": null,
@@ -2701,6 +2990,32 @@
             }
           ],
           "tutorMoves": [
+            {
+              "generation": 7,
+              "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
             {
               "generation": 7,
               "move": {
@@ -3220,6 +3535,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "counter",
                 "accuracy": 100,
                 "basePower": "0",
@@ -3298,6 +3639,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "pinmissile",
+                "accuracy": 95,
+                "basePower": "25",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pin_Missile_(move)",
+                "category": "Physical",
+                "contestType": "Cool",
+                "desc": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 130,
+                "name": "Pin Missile",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/pinmissile.shtml",
+                "shortDesc": "Hits 2-5 times in one turn.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/pin-missile",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 100
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "stringshot",
                 "accuracy": 95,
                 "basePower": "0",
@@ -3319,6 +3686,32 @@
                 "target": "Adjacent Foes",
                 "type": "Bug",
                 "zMovePower": 0
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "strugglebug",
+                "accuracy": 100,
+                "basePower": "50",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Struggle_Bug_(move)",
+                "category": "Special",
+                "contestType": "Cute",
+                "desc": "Has a 100% chance to lower the target's Special Attack by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 100,
+                "name": "Struggle Bug",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/strugglebug.shtml",
+                "shortDesc": "100% chance to lower the foe(s) Sp. Atk by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/struggle-bug",
+                "target": "Adjacent Foes",
+                "type": "Bug",
+                "zMovePower": 100
               }
             }
           ],
@@ -3359,7 +3752,7 @@
                 "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)",
                 "category": "Special",
                 "contestType": "Beautiful",
-                "desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+                "desc": "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
                 "isFieldMove": null,
                 "isGMax": null,
                 "isNonstandard": null,
@@ -3369,7 +3762,7 @@
                 "pp": 5,
                 "priority": 0,
                 "serebiiPage": "https://www.serebii.net/attackdex-swsh/blizzard.shtml",
-                "shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+                "shortDesc": "10% chance to freeze foe(s). Can't miss in Snow.",
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/blizzard",
                 "target": "Adjacent Foes",
                 "type": "Ice",
@@ -3613,6 +4006,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "icespinner",
+                "accuracy": 100,
+                "basePower": "80",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Ice_Spinner_(move)",
+                "category": "Physical",
+                "contestType": null,
+                "desc": "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Ice Spinner",
+                "pp": 15,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/icespinner.shtml",
+                "shortDesc": "Ends the effects of terrain.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-spinner",
+                "target": "Normal",
+                "type": "Ice",
+                "zMovePower": 160
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "icywind",
                 "accuracy": 95,
                 "basePower": "55",
@@ -3660,6 +4079,32 @@
                 "target": "Normal",
                 "type": "Bug",
                 "zMovePower": 160
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "pounce",
+                "accuracy": 100,
+                "basePower": "50",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pounce_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "Has a 100% chance to lower the target's Speed by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Pounce",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/pounce.shtml",
+                "shortDesc": "100% chance to lower the target's Speed by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/pounce",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 100
               }
             },
             {
@@ -3749,7 +4194,7 @@
                 "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Sleep_Talk_(move)",
                 "category": "Status",
                 "contestType": "Cute",
-                "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Max Move.",
+                "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Blazing Torque, Celebrate, Chatter, Combat Torque, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Magical Torque, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, Wicked Torque, or any two-turn move.",
                 "isFieldMove": null,
                 "isGMax": null,
                 "isNonstandard": null,
@@ -3972,6 +4417,32 @@
                 "target": "Normal",
                 "type": "Normal",
                 "zMovePower": 160
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "trailblaze",
+                "accuracy": 100,
+                "basePower": "50",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Trailblaze_(move)",
+                "category": "Physical",
+                "contestType": "Cool",
+                "desc": "Has a 100% chance to raise the user's Speed by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Trailblaze",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/trailblaze.shtml",
+                "shortDesc": "100% chance to raise the user's Speed by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/trailblaze",
+                "target": "Normal",
+                "type": "Grass",
+                "zMovePower": 100
               }
             },
             {
@@ -4556,6 +5027,32 @@
                 {
                   "generation": 4,
                   "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 4,
+                  "move": {
                     "key": "earthpower",
                     "accuracy": 100,
                     "basePower": "90",
@@ -4747,7 +5244,7 @@
                     "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)",
                     "category": "Special",
                     "contestType": "Beautiful",
-                    "desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+                    "desc": "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
                     "isFieldMove": null,
                     "isGMax": null,
                     "isNonstandard": null,
@@ -4757,7 +5254,7 @@
                     "pp": 5,
                     "priority": 0,
                     "serebiiPage": "https://www.serebii.net/attackdex-swsh/blizzard.shtml",
-                    "shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+                    "shortDesc": "10% chance to freeze foe(s). Can't miss in Snow.",
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/blizzard",
                     "target": "Adjacent Foes",
                     "type": "Ice",
@@ -5267,7 +5764,7 @@
                     "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Sleep_Talk_(move)",
                     "category": "Status",
                     "contestType": "Cute",
-                    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Max Move.",
+                    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Blazing Torque, Celebrate, Chatter, Combat Torque, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Magical Torque, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, Wicked Torque, or any two-turn move.",
                     "isFieldMove": null,
                     "isGMax": null,
                     "isNonstandard": null,
@@ -6005,7 +6502,86 @@
             },
             "generation5": {
               "dreamworldMoves": [],
-              "eggMoves": [],
+              "eggMoves": [
+                {
+                  "generation": 5,
+                  "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 5,
+                  "move": {
+                    "key": "pinmissile",
+                    "accuracy": 95,
+                    "basePower": "25",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pin_Missile_(move)",
+                    "category": "Physical",
+                    "contestType": "Cool",
+                    "desc": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 130,
+                    "name": "Pin Missile",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/pinmissile.shtml",
+                    "shortDesc": "Hits 2-5 times in one turn.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/pin-missile",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 100
+                  }
+                },
+                {
+                  "generation": 5,
+                  "move": {
+                    "key": "superpower",
+                    "accuracy": 100,
+                    "basePower": "120",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                    "category": "Physical",
+                    "contestType": "Tough",
+                    "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Superpower",
+                    "pp": 5,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                    "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                    "target": "Normal",
+                    "type": "Fighting",
+                    "zMovePower": 190
+                  }
+                }
+              ],
               "eventMoves": [],
               "tmMoves": [
                 {
@@ -6061,7 +6637,60 @@
                   }
                 }
               ],
-              "tutorMoves": [],
+              "tutorMoves": [
+                {
+                  "generation": 5,
+                  "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 5,
+                  "move": {
+                    "key": "superpower",
+                    "accuracy": 100,
+                    "basePower": "120",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                    "category": "Physical",
+                    "contestType": "Tough",
+                    "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Superpower",
+                    "pp": 5,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                    "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                    "target": "Normal",
+                    "type": "Fighting",
+                    "zMovePower": 190
+                  }
+                }
+              ],
               "virtualTransferMoves": [],
               "levelUpMoves": [
                 {
@@ -6095,7 +6724,86 @@
             },
             "generation6": {
               "dreamworldMoves": [],
-              "eggMoves": [],
+              "eggMoves": [
+                {
+                  "generation": 6,
+                  "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 6,
+                  "move": {
+                    "key": "pinmissile",
+                    "accuracy": 95,
+                    "basePower": "25",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pin_Missile_(move)",
+                    "category": "Physical",
+                    "contestType": "Cool",
+                    "desc": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 130,
+                    "name": "Pin Missile",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/pinmissile.shtml",
+                    "shortDesc": "Hits 2-5 times in one turn.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/pin-missile",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 100
+                  }
+                },
+                {
+                  "generation": 6,
+                  "move": {
+                    "key": "superpower",
+                    "accuracy": 100,
+                    "basePower": "120",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                    "category": "Physical",
+                    "contestType": "Tough",
+                    "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Superpower",
+                    "pp": 5,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                    "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                    "target": "Normal",
+                    "type": "Fighting",
+                    "zMovePower": 190
+                  }
+                }
+              ],
               "eventMoves": [],
               "tmMoves": [
                 {
@@ -6181,6 +6889,58 @@
                 {
                   "generation": 6,
                   "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 6,
+                  "move": {
+                    "key": "superpower",
+                    "accuracy": 100,
+                    "basePower": "120",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Superpower_(move)",
+                    "category": "Physical",
+                    "contestType": "Tough",
+                    "desc": "Lowers the user's Attack and Defense by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Superpower",
+                    "pp": 5,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/superpower.shtml",
+                    "shortDesc": "Lowers the user's Attack and Defense by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/superpower",
+                    "target": "Normal",
+                    "type": "Fighting",
+                    "zMovePower": 190
+                  }
+                },
+                {
+                  "generation": 6,
+                  "move": {
                     "key": "waterpulse",
                     "accuracy": 100,
                     "basePower": "60",
@@ -6211,6 +6971,32 @@
             "generation7": {
               "dreamworldMoves": [],
               "eggMoves": [
+                {
+                  "generation": 7,
+                  "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
                 {
                   "generation": 7,
                   "move": {
@@ -6457,7 +7243,7 @@
                     "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)",
                     "category": "Special",
                     "contestType": "Beautiful",
-                    "desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+                    "desc": "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
                     "isFieldMove": null,
                     "isGMax": null,
                     "isNonstandard": null,
@@ -6467,37 +7253,11 @@
                     "pp": 5,
                     "priority": 0,
                     "serebiiPage": "https://www.serebii.net/attackdex-swsh/blizzard.shtml",
-                    "shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+                    "shortDesc": "10% chance to freeze foe(s). Can't miss in Snow.",
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/blizzard",
                     "target": "Adjacent Foes",
                     "type": "Ice",
                     "zMovePower": 185
-                  }
-                },
-                {
-                  "generation": 7,
-                  "move": {
-                    "key": "bugbite",
-                    "accuracy": 100,
-                    "basePower": "60",
-                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
-                    "category": "Physical",
-                    "contestType": "Cute",
-                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-                    "isFieldMove": null,
-                    "isGMax": null,
-                    "isNonstandard": null,
-                    "isZ": null,
-                    "maxMovePower": 110,
-                    "name": "Bug Bite",
-                    "pp": 20,
-                    "priority": 0,
-                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
-                    "shortDesc": "User steals and eats the target's Berry.",
-                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
-                    "target": "Normal",
-                    "type": "Bug",
-                    "zMovePower": 120
                   }
                 },
                 {
@@ -6977,7 +7737,7 @@
                     "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Sleep_Talk_(move)",
                     "category": "Status",
                     "contestType": "Cute",
-                    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Max Move.",
+                    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Blazing Torque, Celebrate, Chatter, Combat Torque, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Magical Torque, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, Wicked Torque, or any two-turn move.",
                     "isFieldMove": null,
                     "isGMax": null,
                     "isNonstandard": null,
@@ -7204,6 +7964,32 @@
                 }
               ],
               "tutorMoves": [
+                {
+                  "generation": 7,
+                  "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
                 {
                   "generation": 7,
                   "move": {
@@ -7723,6 +8509,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "counter",
                     "accuracy": 100,
                     "basePower": "0",
@@ -7801,6 +8613,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "pinmissile",
+                    "accuracy": 95,
+                    "basePower": "25",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pin_Missile_(move)",
+                    "category": "Physical",
+                    "contestType": "Cool",
+                    "desc": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 130,
+                    "name": "Pin Missile",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/pinmissile.shtml",
+                    "shortDesc": "Hits 2-5 times in one turn.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/pin-missile",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 100
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "stringshot",
                     "accuracy": 95,
                     "basePower": "0",
@@ -7822,6 +8660,32 @@
                     "target": "Adjacent Foes",
                     "type": "Bug",
                     "zMovePower": 0
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "strugglebug",
+                    "accuracy": 100,
+                    "basePower": "50",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Struggle_Bug_(move)",
+                    "category": "Special",
+                    "contestType": "Cute",
+                    "desc": "Has a 100% chance to lower the target's Special Attack by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 100,
+                    "name": "Struggle Bug",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/strugglebug.shtml",
+                    "shortDesc": "100% chance to lower the foe(s) Sp. Atk by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/struggle-bug",
+                    "target": "Adjacent Foes",
+                    "type": "Bug",
+                    "zMovePower": 100
                   }
                 }
               ],
@@ -7862,7 +8726,7 @@
                     "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Blizzard_(move)",
                     "category": "Special",
                     "contestType": "Beautiful",
-                    "desc": "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
+                    "desc": "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
                     "isFieldMove": null,
                     "isGMax": null,
                     "isNonstandard": null,
@@ -7872,7 +8736,7 @@
                     "pp": 5,
                     "priority": 0,
                     "serebiiPage": "https://www.serebii.net/attackdex-swsh/blizzard.shtml",
-                    "shortDesc": "10% chance to freeze foe(s). Can't miss in hail.",
+                    "shortDesc": "10% chance to freeze foe(s). Can't miss in Snow.",
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/blizzard",
                     "target": "Adjacent Foes",
                     "type": "Ice",
@@ -8116,6 +8980,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "icespinner",
+                    "accuracy": 100,
+                    "basePower": "80",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Ice_Spinner_(move)",
+                    "category": "Physical",
+                    "contestType": null,
+                    "desc": "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Ice Spinner",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/icespinner.shtml",
+                    "shortDesc": "Ends the effects of terrain.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-spinner",
+                    "target": "Normal",
+                    "type": "Ice",
+                    "zMovePower": 160
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "icywind",
                     "accuracy": 95,
                     "basePower": "55",
@@ -8163,6 +9053,32 @@
                     "target": "Normal",
                     "type": "Bug",
                     "zMovePower": 160
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "pounce",
+                    "accuracy": 100,
+                    "basePower": "50",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Pounce_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "Has a 100% chance to lower the target's Speed by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Pounce",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/pounce.shtml",
+                    "shortDesc": "100% chance to lower the target's Speed by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/pounce",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 100
                   }
                 },
                 {
@@ -8252,7 +9168,7 @@
                     "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Sleep_Talk_(move)",
                     "category": "Status",
                     "contestType": "Cute",
-                    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Max Move.",
+                    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Blazing Torque, Celebrate, Chatter, Combat Torque, Copycat, Dynamax Cannon, Focus Punch, Hold Hands, Magical Torque, Me First, Metronome, Mimic, Mirror Move, Nature Power, Noxious Torque, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, Wicked Torque, or any two-turn move.",
                     "isFieldMove": null,
                     "isGMax": null,
                     "isNonstandard": null,
@@ -8475,6 +9391,32 @@
                     "target": "Normal",
                     "type": "Normal",
                     "zMovePower": 160
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "trailblaze",
+                    "accuracy": 100,
+                    "basePower": "50",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Trailblaze_(move)",
+                    "category": "Physical",
+                    "contestType": "Cool",
+                    "desc": "Has a 100% chance to raise the user's Speed by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Trailblaze",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/trailblaze.shtml",
+                    "shortDesc": "100% chance to raise the user's Speed by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/trailblaze",
+                    "target": "Normal",
+                    "type": "Grass",
+                    "zMovePower": 100
                   }
                 },
                 {

@@ -625,6 +625,22 @@ export function mapPokemonDataToPokemonGraphQL({
     fieldAccessor: `${resolvedRecursingAs}flavorTexts`
   });
 
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
+    propertyKey: 'legendary',
+    propertyValue: data.legendary ?? false,
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}legendary`
+  });
+
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
+    propertyKey: 'mythical',
+    propertyValue: data.mythical ?? false,
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}mythical`
+  });
+
   if ((requestedFields as GraphQLSet<string>).has(`${resolvedRecursingAs}flavorTexts`) && data.num >= 0) {
     let shouldParseBaseForme = true;
 

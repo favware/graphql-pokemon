@@ -2261,7 +2261,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1001,
       species: 'Wo-Chien',
       types: [TypesEnum.Dark, TypesEnum.Grass],
-      weightkg: 74.2
+      weightkg: 74.2,
+      legendary: true
     }
   ],
   [
@@ -2281,7 +2282,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1002,
       species: 'Chien-Pao',
       types: [TypesEnum.Dark, TypesEnum.Ice],
-      weightkg: 152.2
+      weightkg: 152.2,
+      legendary: true
     }
   ],
   [
@@ -2301,7 +2303,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1003,
       species: 'Ting-Lu',
       types: [TypesEnum.Dark, TypesEnum.Ground],
-      weightkg: 699.7
+      weightkg: 699.7,
+      legendary: true
     }
   ],
   [
@@ -2321,7 +2324,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1004,
       species: 'Chi-Yu',
       types: [TypesEnum.Dark, TypesEnum.Fire],
-      weightkg: 4.9
+      weightkg: 4.9,
+      legendary: true
     }
   ],
   [
@@ -2381,7 +2385,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1007,
       species: 'koraidon',
       types: [TypesEnum.Fighting, TypesEnum.Dragon],
-      weightkg: 303
+      weightkg: 303,
+      legendary: true
     }
   ],
   [
@@ -2401,7 +2406,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 1008,
       species: 'miraidon',
       types: [TypesEnum.Electric, TypesEnum.Dragon],
-      weightkg: 240
+      weightkg: 240,
+      legendary: true
     }
   ]
 ];

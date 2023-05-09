@@ -2013,7 +2013,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'xerneas',
       types: [TypesEnum.Fairy],
       weightkg: 215,
-      aliases: ['rudolf', 'xern', 'zeruneasu']
+      aliases: ['rudolf', 'xern', 'zeruneasu'],
+      legendary: true
     }
   ],
   [
@@ -2037,7 +2038,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['xerneas'],
       species: 'xerneas-neutral',
       types: [TypesEnum.Fairy],
-      weightkg: 215
+      weightkg: 215,
+      legendary: true
     }
   ],
   [
@@ -2058,7 +2060,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'yveltal',
       types: [TypesEnum.Dark, TypesEnum.Flying],
       weightkg: 203,
-      aliases: ['baconbird', 'iberutaru', 'ygod']
+      aliases: ['baconbird', 'iberutaru', 'ygod'],
+      legendary: true
     }
   ],
   [
@@ -2081,7 +2084,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zygarde',
       types: [TypesEnum.Dragon, TypesEnum.Ground],
       weightkg: 305,
-      aliases: ['jigarude', 'zyg', 'zygarde50']
+      aliases: ['jigarude', 'zyg', 'zygarde50'],
+      legendary: true
     }
   ],
   [
@@ -2106,7 +2110,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zygarde-10',
       types: [TypesEnum.Dragon, TypesEnum.Ground],
       weightkg: 33.5,
-      aliases: ['zydog', 'zydoge', 'zygardedog']
+      aliases: ['zydog', 'zydoge', 'zygardedog'],
+      legendary: true
     }
   ],
   [
@@ -2131,7 +2136,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zygarde-complete',
       types: [TypesEnum.Dragon, TypesEnum.Ground],
       weightkg: 610,
-      aliases: ['perfectzygarde', 'zyc', 'zygarde100', 'zygardec', 'zygardefull', 'zygod']
+      aliases: ['perfectzygarde', 'zyc', 'zygarde100', 'zygardec', 'zygardefull', 'zygod'],
+      legendary: true
     }
   ],
   [
@@ -2153,7 +2159,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'diancie',
       types: [TypesEnum.Rock, TypesEnum.Fairy],
       weightkg: 8.8,
-      aliases: ['dianshii']
+      aliases: ['dianshii'],
+      mythical: true
     }
   ],
   [
@@ -2177,7 +2184,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['diancie'],
       species: 'diancie-mega',
       types: [TypesEnum.Rock, TypesEnum.Fairy],
-      weightkg: 27.8
+      weightkg: 27.8,
+      mythical: true
     }
   ],
   [
@@ -2200,7 +2208,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'hoopa',
       types: [TypesEnum.Psychic, TypesEnum.Ghost],
       weightkg: 9,
-      aliases: ['fuupa', 'hoopac', 'hoopaconfined']
+      aliases: ['fuupa', 'hoopac', 'hoopaconfined'],
+      mythical: true
     }
   ],
   [
@@ -2225,7 +2234,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'hoopa-unbound',
       types: [TypesEnum.Psychic, TypesEnum.Dark],
       weightkg: 490,
-      aliases: ['hoopau']
+      aliases: ['hoopau'],
+      mythical: true
     }
   ],
   [
@@ -2246,7 +2256,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'volcanion',
       types: [TypesEnum.Fire, TypesEnum.Water],
       weightkg: 195,
-      aliases: ['borukenion']
+      aliases: ['borukenion'],
+      mythical: true
     }
   ]
 ];

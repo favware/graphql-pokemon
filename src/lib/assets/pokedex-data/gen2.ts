@@ -2453,7 +2453,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'raikou',
       types: [TypesEnum.Electric],
       weightkg: 178,
-      aliases: ['kou']
+      aliases: ['kou'],
+      legendary: true
     }
   ],
   [
@@ -2473,7 +2474,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 244,
       species: 'entei',
       types: [TypesEnum.Fire],
-      weightkg: 198
+      weightkg: 198,
+      legendary: true
     }
   ],
   [
@@ -2494,7 +2496,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'suicune',
       types: [TypesEnum.Water],
       weightkg: 187,
-      aliases: ['cune', 'sui', 'suikun']
+      aliases: ['cune', 'sui', 'suikun'],
+      legendary: true
     }
   ],
   [
@@ -2610,7 +2613,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'lugia',
       types: [TypesEnum.Psychic, TypesEnum.Flying],
       weightkg: 216,
-      aliases: ['rugia']
+      aliases: ['rugia'],
+      legendary: true
     }
   ],
   [
@@ -2632,7 +2636,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'ho-oh',
       types: [TypesEnum.Fire, TypesEnum.Flying],
       weightkg: 199,
-      aliases: ['ho-oh', 'houou']
+      aliases: ['ho-oh', 'houou'],
+      legendary: true
     }
   ],
   [
@@ -2653,7 +2658,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'celebi',
       types: [TypesEnum.Psychic, TypesEnum.Grass],
       weightkg: 5,
-      aliases: ['serebii', 'sereby']
+      aliases: ['serebii', 'sereby'],
+      mythical: true
     }
   ]
 ];

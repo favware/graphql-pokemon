@@ -144,6 +144,12 @@ type Pokemon {
 
   "The weight of a Pokémon in kilograms"
   weight: Float!
+
+  "Whether this Pokémon is a mythical Pokémon. The list is based on what is provided by Bulbapedia."
+  mythical: Boolean!
+
+  "Whether this Pokémon is a legendary Pokémon. The list is based on what is provided by Bulbapedia."
+  legendary: Boolean!
 }
 
 "The type of a Pokémon and that types matchup"

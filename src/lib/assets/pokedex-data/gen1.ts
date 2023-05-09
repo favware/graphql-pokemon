@@ -5593,7 +5593,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'articuno',
       types: [TypesEnum.Ice, TypesEnum.Flying],
       weightkg: 55.4,
-      aliases: ['furiizaa']
+      aliases: ['furiizaa'],
+      legendary: true
     }
   ],
   [
@@ -5617,7 +5618,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['articuno'],
       species: 'articuno-galar',
       types: [TypesEnum.Psychic, TypesEnum.Flying],
-      weightkg: 50.9
+      weightkg: 50.9,
+      legendary: true
     }
   ],
   [
@@ -5639,7 +5641,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zapdos',
       types: [TypesEnum.Electric, TypesEnum.Flying],
       weightkg: 52.6,
-      aliases: ['sandaa']
+      aliases: ['sandaa'],
+      legendary: true
     }
   ],
   [
@@ -5663,7 +5666,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['zapdos'],
       species: 'zapdos-galar',
       types: [TypesEnum.Fighting, TypesEnum.Flying],
-      weightkg: 58.2
+      weightkg: 58.2,
+      legendary: true
     }
   ],
   [
@@ -5685,7 +5689,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'moltres',
       types: [TypesEnum.Fire, TypesEnum.Flying],
       weightkg: 60,
-      aliases: ['faiyaa']
+      aliases: ['faiyaa'],
+      legendary: true
     }
   ],
   [
@@ -5709,7 +5714,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['moltres'],
       species: 'moltres-galar',
       types: [TypesEnum.Dark, TypesEnum.Flying],
-      weightkg: 66
+      weightkg: 66,
+      legendary: true
     }
   ],
   [
@@ -5800,7 +5806,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'mewtwo',
       types: [TypesEnum.Psychic],
       weightkg: 122,
-      aliases: ['m2', 'myuutsuu']
+      aliases: ['m2', 'myuutsuu'],
+      legendary: true
     }
   ],
   [
@@ -5825,7 +5832,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'mewtwo-mega-x',
       types: [TypesEnum.Psychic, TypesEnum.Fighting],
       weightkg: 127,
-      aliases: ['megamewtwox', 'mmx']
+      aliases: ['megamewtwox', 'mmx'],
+      legendary: true
     }
   ],
   [
@@ -5850,7 +5858,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'mewtwo-mega-y',
       types: [TypesEnum.Psychic],
       weightkg: 33,
-      aliases: ['megamewtwo', 'megamewtwoy', 'mmy']
+      aliases: ['megamewtwo', 'megamewtwoy', 'mmy'],
+      legendary: true
     }
   ],
   [
@@ -5871,7 +5880,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'mew',
       types: [TypesEnum.Psychic],
       weightkg: 4,
-      aliases: ['myuu']
+      aliases: ['myuu'],
+      mythical: true
     }
   ]
 ];

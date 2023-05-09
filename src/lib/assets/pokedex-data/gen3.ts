@@ -3396,7 +3396,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'regirock',
       types: [TypesEnum.Rock],
       weightkg: 230,
-      aliases: ['rejirokku']
+      aliases: ['rejirokku'],
+      legendary: true
     }
   ],
   [
@@ -3417,7 +3418,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'regice',
       types: [TypesEnum.Ice],
       weightkg: 175,
-      aliases: ['rejiaisu']
+      aliases: ['rejiaisu'],
+      legendary: true
     }
   ],
   [
@@ -3438,7 +3440,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'registeel',
       types: [TypesEnum.Steel],
       weightkg: 205,
-      aliases: ['rejisuchiru']
+      aliases: ['rejisuchiru'],
+      legendary: true
     }
   ],
   [
@@ -3460,7 +3463,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'latias',
       types: [TypesEnum.Dragon, TypesEnum.Psychic],
       weightkg: 40,
-      aliases: ['rateiasu']
+      aliases: ['rateiasu'],
+      legendary: true
     }
   ],
   [
@@ -3484,7 +3488,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['latias'],
       species: 'latias-mega',
       types: [TypesEnum.Dragon, TypesEnum.Psychic],
-      weightkg: 52
+      weightkg: 52,
+      legendary: true
     }
   ],
   [
@@ -3506,7 +3511,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'latios',
       types: [TypesEnum.Dragon, TypesEnum.Psychic],
       weightkg: 60,
-      aliases: ['rateiosu']
+      aliases: ['rateiosu'],
+      legendary: true
     }
   ],
   [
@@ -3530,7 +3536,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['latios'],
       species: 'latios-mega',
       types: [TypesEnum.Dragon, TypesEnum.Psychic],
-      weightkg: 70
+      weightkg: 70,
+      legendary: true
     }
   ],
   [
@@ -3552,7 +3559,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'kyogre',
       types: [TypesEnum.Water],
       weightkg: 352,
-      aliases: ['kaiooga', 'ogre', 'shrek']
+      aliases: ['kaiooga', 'ogre', 'shrek'],
+      legendary: true
     }
   ],
   [
@@ -3577,7 +3585,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'kyogre-primal',
       types: [TypesEnum.Water],
       weightkg: 430,
-      aliases: ['pogre', 'primalogre']
+      aliases: ['pogre', 'primalogre'],
+      legendary: true
     }
   ],
   [
@@ -3599,7 +3608,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'groudon',
       types: [TypesEnum.Ground],
       weightkg: 950,
-      aliases: ['don', 'guraadon']
+      aliases: ['don', 'guraadon'],
+      legendary: true
     }
   ],
   [
@@ -3624,7 +3634,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'groudon-primal',
       types: [TypesEnum.Ground, TypesEnum.Fire],
       weightkg: 999.7,
-      aliases: ['pdon', 'primaldon']
+      aliases: ['pdon', 'primaldon'],
+      legendary: true
     }
   ],
   [
@@ -3646,7 +3657,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rayquaza',
       types: [TypesEnum.Dragon, TypesEnum.Flying],
       weightkg: 206.5,
-      aliases: ['fug', 'ray', 'rekkuuza']
+      aliases: ['fug', 'ray', 'rekkuuza'],
+      legendary: true
     }
   ],
   [
@@ -3671,7 +3683,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rayquaza-mega',
       types: [TypesEnum.Dragon, TypesEnum.Flying],
       weightkg: 392,
-      aliases: ['megaray', 'mray']
+      aliases: ['megaray', 'mray'],
+      legendary: true
     }
   ],
   [
@@ -3692,7 +3705,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'jirachi',
       types: [TypesEnum.Steel, TypesEnum.Psychic],
       weightkg: 1.1,
-      aliases: ['jiraachi', 'rachi']
+      aliases: ['jiraachi', 'rachi'],
+      mythical: true
     }
   ],
   [
@@ -3715,7 +3729,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'deoxys',
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
-      aliases: ['deokishisu', 'deon', 'deoxysnormal']
+      aliases: ['deokishisu', 'deon', 'deoxysnormal'],
+      mythical: true
     }
   ],
   [
@@ -3740,7 +3755,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'deoxys-attack',
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
-      aliases: ['deoa', 'deoxysa']
+      aliases: ['deoa', 'deoxysa'],
+      mythical: true
     }
   ],
   [
@@ -3765,7 +3781,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'deoxys-defense',
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
-      aliases: ['deod', 'deoxysd', 'deoxysdefence']
+      aliases: ['deod', 'deoxysd', 'deoxysdefence'],
+      mythical: true
     }
   ],
   [
@@ -3790,7 +3807,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'deoxys-speed',
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
-      aliases: ['deos', 'deoxyss']
+      aliases: ['deos', 'deoxyss'],
+      mythical: true
     }
   ]
 ];

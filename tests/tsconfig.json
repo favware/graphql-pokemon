@@ -1,8 +1,6 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "noEmit": true,
-    "incremental": false,
     "baseUrl": ".",
     "paths": {
       "#assets/*": ["../src/lib/assets/*"],
@@ -18,6 +16,5 @@
     },
     "types": ["vitest/globals"]
   },
-  "include": ["."],
-  "references": [{ "path": "../src" }]
+  "include": ["."]
 }

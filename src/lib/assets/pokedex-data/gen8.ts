@@ -2520,7 +2520,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'kubfu',
     {
-      abilities: { first: 'innerfocus', hidden: 'noguard' },
+      abilities: { first: 'innerfocus' },
       baseStats: { hp: 60, atk: 90, def: 60, spa: 53, spd: 50, spe: 72 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Gray',

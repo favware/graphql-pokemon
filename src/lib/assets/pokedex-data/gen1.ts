@@ -4994,7 +4994,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
       num: 128,
-      otherFormes: ['taurospaldea', 'taurospaldeafire', 'taurospaldeawater'],
+      otherFormes: ['taurospaldeacombat', 'taurospaldeablaze', 'taurospaldeaaqua'],
       species: 'tauros',
       types: [TypesEnum.Normal],
       weightkg: 88.4,
@@ -5002,7 +5002,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'taurospaldea',
+    'taurospaldeacombat',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',
@@ -5019,19 +5019,19 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
       num: 128,
-      otherFormes: ['tauros', 'taurospaldeafire', 'taurospaldeawater'],
-      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldea.png',
-      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldea.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldea.png',
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldea.png',
+      otherFormes: ['tauros', 'taurospaldeablaze', 'taurospaldeaaqua'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeacombat.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeacombat.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeacombat.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeacombat.png',
       species: 'tauros-paldea',
       types: [TypesEnum.Fighting],
       weightkg: 115,
-      aliases: ['paldeantauros', 'taurosp']
+      aliases: ['paldeantauros', 'taurosp', 'taurospaldea']
     }
   ],
   [
-    'taurospaldeafire',
+    'taurospaldeablaze',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',
@@ -5040,7 +5040,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Black',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 1 },
-      forme: 'Paldea-Fire',
+      forme: 'Paldea-Blaze',
       formeLetter: 'PF',
       genderRatio: { male: '10%', female: '0%' },
       heightm: 1.4,
@@ -5048,19 +5048,19 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
       num: 128,
-      otherFormes: ['tauros', 'taurospaldea', 'taurospaldeawater'],
-      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeafire.png',
-      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeafire.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeafire.png',
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeafire.png',
-      species: 'tauros-paldea-fire',
+      otherFormes: ['tauros', 'taurospaldeacombat', 'taurospaldeaaqua'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeablaze.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeablaze.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeablaze.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeablaze.png',
+      species: 'tauros-paldea-blaze',
       types: [TypesEnum.Fighting, TypesEnum.Fire],
       weightkg: 88.4,
-      aliases: ['paldeanfiretauros', 'taurospf', 'paldeantaurosfire', 'paldeaonblazetaurus', 'pladeantaurosblaze']
+      aliases: ['paldeanfiretauros', 'taurospf', 'paldeantaurosfire', 'paldeaonblazetaurus', 'pladeantaurosblaze', 'taurospaldeafire']
     }
   ],
   [
-    'taurospaldeawater',
+    'taurospaldeaqua',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
       baseSpecies: 'Tauros',
@@ -5077,15 +5077,15 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Slow',
       minimumHatchTime: 5140,
       num: 128,
-      otherFormes: ['tauros', 'taurospaldea', 'taurospaldeafire'],
-      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeawater.png',
-      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeawater.png',
-      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeawater.png',
-      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeawater.png',
-      species: 'tauros-paldea-water',
+      otherFormes: ['tauros', 'taurospaldeacombat', 'taurospaldeablaze'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/tauros-paldeaaqua.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/tauros-paldeaaqua.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/tauros-paldeaaqua.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeaaqua.png',
+      species: 'tauros-paldea-aqua',
       types: [TypesEnum.Fighting, TypesEnum.Water],
       weightkg: 88.4,
-      aliases: ['paldeanwatertauros', 'taurospw', 'paldeantauroswater', 'paldeanaquatauros', 'paldeantaurosaqua']
+      aliases: ['paldeanwatertauros', 'taurospw', 'paldeantauroswater', 'paldeanaquatauros', 'paldeantaurosaqua', 'taurospaldeawater']
     }
   ],
   [

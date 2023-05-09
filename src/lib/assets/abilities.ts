@@ -147,16 +147,16 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'battlebond',
     {
-      desc: 'If this Pokémon is a Greninja, it transforms into Ash-Greninja if it attacks and knocks out another Pokémon. If this Pokémon is an Ash-Greninja, its Water Shuriken has 20 power and always hits three times.',
-      name: 'Battle Bond',
-      shortDesc: 'After KOing a Pokémon: becomes Ash-Greninja, Water Shuriken: 20 power, hits 3x.'
+      desc: 'If this Pokémon is a Greninja, its Attack, Special Attack, and Speed are raised by 1 stage if it attacks and knocks out another Pokémon. This effect can only happen once per battle.',
+      shortDesc: 'After KOing a Pokémon: raises Attack, Sp. Atk, Speed by 1 stage. Once per battle.',
+      name: 'Battle Bond'
     }
   ],
   [
     'beadsofruin',
     {
       name: 'Beads of Ruin',
-      shortDesc: 'The Sp. Def stat of all other active Pokémon is reduced by 25%.'
+      shortDesc: 'Active Pokémon without this Ability have their Special Defense multiplied by 0.75.'
     }
   ],
   [
@@ -368,7 +368,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'dauntlessshield',
     {
       name: 'Dauntless Shield',
-      shortDesc: "On switch-in, this Pokémon's Defense is raised by 1 stage."
+      shortDesc: "On switch-in, this Pokémon's Defense is raised by 1 stage. Once per battle."
     }
   ],
   [
@@ -897,7 +897,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'intrepidsword',
     {
       name: 'Intrepid Sword',
-      shortDesc: "On switch-in, this Pokémon's Attack is raised by 1 stage."
+      shortDesc: "On switch-in, this Pokémon's Attack is raised by 1 stage. Once per battle."
     }
   ],
   [
@@ -960,9 +960,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'libero',
     {
-      desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
-      name: 'Libero',
-      shortDesc: "This Pokémon's type changes to match the type of the move it is about to use."
+      desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokémon is not Terastallized.",
+      shortDesc: "This Pokémon's type changes to the type of the move it is using. Once per switch-in.",
+      name: 'Libero'
     }
   ],
   [
@@ -1273,7 +1273,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'parentalbond',
     {
-      desc: "This Pokémon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect multi-hit moves or moves that have multiple targets.",
+      desc: "This Pokémon's damaging moves become multi-hit moves that hit twice. The second hit has its damage quartered. Does not affect Doom Desire, Dragon Darts, Dynamax Cannon, Endeavor, Explosion, Final Gambit, Fling, Future Sight, Ice Ball, Rollout, Self-Destruct, any multi-hit move, any move that has multiple targets, or any two-turn move.",
       name: 'Parental Bond',
       shortDesc: "This Pokémon's damaging moves hit twice. The second hit has its damage quartered."
     }
@@ -1393,7 +1393,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'pressure',
     {
-      desc: "If this Pokémon is the target of an opposing Pokémon's move, that move loses one additional PP. Imprison and Snatch also lose one additional PP when used by an opposing Pokémon, but Sticky Web does not.",
+      desc: "If this Pokémon is the target of an opposing Pokémon's move, that move loses one additional PP. Imprison, Snatch, and Tera Blast also lose one additional PP when used by an opposing Pokémon, but Sticky Web does not.",
       isFieldAbility:
         'If you have a Pokémon with Pressure at the front of your party (even if fainted), there is a 50% chance that a Pokémon will be forced to the upper bound of their encounter level range.',
       name: 'Pressure',
@@ -1426,9 +1426,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'protean',
     {
-      desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
+      desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokémon is not Terastallized.",
       name: 'Protean',
-      shortDesc: "This Pokémon's type changes to match the type of the move it is about to use."
+      shortDesc: "This Pokémon's type changes to the type of the move it is using. Once per switch-in."
     }
   ],
   [
@@ -1464,9 +1464,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'purifyingsalt',
     {
-      desc: "This Pokémon cannot become affected by a status condition or Yawn. If a Pokémon uses a Ghost-type attack against this Pokémon, that Pokémon's offensive stat is halved when calculating the damage to this Pokémon.",
+      desc: "This Pokémon cannot become affected by a non-volatile status condition or Yawn. If a Pokémon uses a Ghost-type attack against this Pokémon, that Pokémon's offensive stat is halved when calculating the damage to this Pokémon.",
       name: 'Purifying Salt',
-      shortDesc: 'This Pokémon cannot be statused; Ghost power against it is halved.'
+      shortDesc: "Ghost damage to this Pokémon dealt with a halved offensive stat; can't be statused."
     }
   ],
   [
@@ -1728,7 +1728,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'sheerforce',
     {
-      desc: "This Pokémon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
+      desc: "This Pokémon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Anger Shell, Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
       name: 'Sheer Force',
       shortDesc: "This Pokémon's attacks with secondary effects have 1.3x power; nullifies the effects."
     }
@@ -1990,9 +1990,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'supremeoverlord',
     {
-      desc: "This Pokémon's Attack and Special Attack stats are increased by 10% for each fainted teammate.",
+      desc: "This Pokémon's moves have their power multiplied by 1+(X*0.1), where X is the total number of times any Pokémon has fainted on the user's side when this Ability became active, and X cannot be greater than 5.",
       name: 'Supreme Overlord',
-      shortDesc: "This Pokémon's Attack and Special Attack raise by 10% per fainted teammate."
+      shortDesc: "This Pokémon's moves have 10% more power for each fainted ally, up to 5 allies."
     }
   ],
   [
@@ -2031,7 +2031,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'swordofruin',
     {
       name: 'Sword of Ruin',
-      shortDesc: 'The Defense stat of all other active Pokémon is reduced by 25%.'
+      shortDesc: 'Active Pokémon without this Ability have their Defense multiplied by 0.75.'
     }
   ],
   [
@@ -2056,7 +2056,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'tabletsofruin',
     {
       name: 'Tablets of Ruin',
-      shortDesc: 'The Attack stat of all other active Pokémon is reduced by 25%.'
+      shortDesc: 'Active Pokémon without this Ability have their Attack multiplied by 0.75.'
     }
   ],
   [
@@ -2223,7 +2223,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'vesselofruin',
     {
       name: 'Vessel of Ruin',
-      shortDesc: 'The Sp. Atk stat of all other active Pokémon is reduced by 25%.'
+      shortDesc: 'Active Pokémon without this Ability have their Special Attack multiplied by 0.75.'
     }
   ],
   [

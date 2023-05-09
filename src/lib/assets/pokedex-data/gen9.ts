@@ -1198,7 +1198,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'flittle',
     {
       abilities: { first: 'anticipation', second: 'frisk', hidden: 'speedboost' },
-      baseStats: { hp: 30, atk: 35, def: 30, spa: 55, spd: 40, spe: 75 },
+      baseStats: { hp: 30, atk: 35, def: 30, spa: 55, spd: 30, spe: 75 },
       catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Yellow',
       eggGroups: ['Flying'],

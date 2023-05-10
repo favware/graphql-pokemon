@@ -94,16 +94,25 @@ for (const pokemon of parsedPokemon) {
 
     if (svData) {
       if (flavorTexts[pokemon.number]) {
-        flavorTexts[pokemon.number].push(
-          {
+        const scarletVersionFlavorText = flavorTexts[pokemon.number].filter((a) => a.version_id === 'Scarlet');
+        if (scarletVersionFlavorText) {
+          scarletVersionFlavorText.flavor_text = svData;
+        } else {
+          flavorTexts[pokemon.number].push({
             version_id: 'Scarlet',
             flavor_text: svData
-          },
-          {
+          });
+        }
+
+        const violetVersionFlavorText = flavorTexts[pokemon.number].filter((a) => a.version_id === 'Violet');
+        if (violetVersionFlavorText) {
+          violetVersionFlavorText.flavor_text = svData;
+        } else {
+          flavorTexts[pokemon.number].push({
             version_id: 'Violet',
             flavor_text: svData
-          }
-        );
+          });
+        }
       } else {
         flavorTexts[pokemon.number] = [
           {
@@ -132,10 +141,15 @@ for (const pokemon of parsedPokemon) {
 
     if (scarletData) {
       if (flavorTexts[pokemon.number]) {
-        flavorTexts[pokemon.number].push({
-          version_id: 'Scarlet',
-          flavor_text: scarletData
-        });
+        const scarletVersionFlavorText = flavorTexts[pokemon.number].filter((a) => a.version_id === 'Scarlet');
+        if (scarletVersionFlavorText) {
+          scarletVersionFlavorText.flavor_text = scarletData;
+        } else {
+          flavorTexts[pokemon.number].push({
+            version_id: 'Scarlet',
+            flavor_text: scarletData
+          });
+        }
       } else {
         flavorTexts[pokemon.number] = [
           {
@@ -161,10 +175,15 @@ for (const pokemon of parsedPokemon) {
 
     if (violetData) {
       if (flavorTexts[pokemon.number]) {
-        flavorTexts[pokemon.number].push({
-          version_id: 'Violet',
-          flavor_text: violetData
-        });
+        const violetVersionFlavorText = flavorTexts[pokemon.number].filter((a) => a.version_id === 'Violet');
+        if (violetVersionFlavorText) {
+          violetVersionFlavorText.flavor_text = violetData;
+        } else {
+          flavorTexts[pokemon.number].push({
+            version_id: 'Violet',
+            flavor_text: violetData
+          });
+        }
       } else {
         flavorTexts[pokemon.number] = [
           {

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.3.1](https://github.com/favware/graphql-pokemon/compare/v7.3.0...v7.3.1) - (2023-05-10)
+
+## 🐛 Bug Fixes
+
+- Add empty flavortext entries for Walking Wake and Iron Leaves ([20313bb](https://github.com/favware/graphql-pokemon/commit/20313bb9a2135d84f048e3fb6390b340a98312eb))
+
 # [7.3.0](https://github.com/favware/graphql-pokemon/compare/v7.2.2...v7.3.0) - (2023-05-10)
 
 ## 🏠 Refactor

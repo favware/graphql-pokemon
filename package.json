@@ -30,7 +30,7 @@
     "lint": "eslint src tests scripts --ext ts,mjs --fix",
     "format": "prettier --write --loglevel=warn \"{src,tests,scripts}/**/*.{ts,json}\"",
     "test": "vitest run",
-    "typecheck": "tsc -b src",
+    "typecheck": "tsc -b src && tsc -b tests",
     "start": "node --enable-source-maps api/index.js",
     "build": "tsup --onSuccess \"node scripts/on-build-success.mjs\"",
     "watch": "tsup --watch --onSuccess \"node scripts/on-build-success.mjs\"",

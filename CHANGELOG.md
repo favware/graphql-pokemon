@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.3.0](https://github.com/favware/graphql-pokemon/compare/v7.2.2...v7.3.0) - (2023-05-10)
+
+## 🏠 Refactor
+
+- Allow a maximum take of 1392 for `getAllPokemon` ([c46a067](https://github.com/favware/graphql-pokemon/commit/c46a0676060ba37f8c03b89bcb493f593239fd7d))
+
+## 🐛 Bug Fixes
+
+- Remove test move magikarp's revenge ([9341d4b](https://github.com/favware/graphql-pokemon/commit/9341d4bc8ece35b00ca5c18ac341bc5e32795944))
+- Fixed various move descriptions ([a83b641](https://github.com/favware/graphql-pokemon/commit/a83b641d2cf4611d602179118b05676a45fceb23))
+- Fixed various ability descriptions ([1093231](https://github.com/favware/graphql-pokemon/commit/1093231db4fca9ab580c7e7583df5f82cd77909d))
+- Add bundlechan as alias for iron bundle ([aadf79a](https://github.com/favware/graphql-pokemon/commit/aadf79a928e5ca1f2d78becda406d30cf9b0f2b0))
+- Fixed base stats for flittle ([aeff100](https://github.com/favware/graphql-pokemon/commit/aeff10063ad57101b61bfe8df3eef5ed93da370b))
+- Fixed kleavor's base stats ([8d861c2](https://github.com/favware/graphql-pokemon/commit/8d861c2d74c4f4e9251f6a876c820e2c21f8574f))
+- Fixed abilities for kubfu ([62cfa5f](https://github.com/favware/graphql-pokemon/commit/62cfa5f0926667a6507224f6c99844c466c7bdd3))
+- Fixed base states for hisuian zoroark ([957c2e5](https://github.com/favware/graphql-pokemon/commit/957c2e5576fe2c46560e470686bb55345c52f1dd))
+- Rename tauros paldean forms ([ec52753](https://github.com/favware/graphql-pokemon/commit/ec52753e7a42657cc9dd82e0c4855b7898cd6045))
+- Add egg groups to rebble, tactite, and stratagem ([2ce22e2](https://github.com/favware/graphql-pokemon/commit/2ce22e29cade241ab92aa59d12a0a4be72f840da))
+
+## 🚀 Features
+
+- Add hydro steam and psyblade moves ([58aac30](https://github.com/favware/graphql-pokemon/commit/58aac300bf5eac4340d419fd58c1bbe9122ce085))
+- Add Walking Wake and Iron Leaves ([725d273](https://github.com/favware/graphql-pokemon/commit/725d2735226ac5b6c014f0cb740b830a64e1e722))
+- Update learnsets ([d5efb52](https://github.com/favware/graphql-pokemon/commit/d5efb524d241e9b463065ce3527eee9955d6cf7e))
+- Update smogon tiers file ([039d765](https://github.com/favware/graphql-pokemon/commit/039d765db8a78677bff7d9087d8e1af9b33cfa71))
+- Add `pokemon.legendary` and `pokemon.mythical` boolean fields ([f4bf096](https://github.com/favware/graphql-pokemon/commit/f4bf09625720fc0b113de7fbe478dd03587ad2dc))
+
+## 🧪 Testing
+
+- Update all the test data ([951d6ee](https://github.com/favware/graphql-pokemon/commit/951d6ee316805613988d9dc52a5f67323a83228c))
+
 # [7.2.1](https://github.com/favware/graphql-pokemon/compare/v7.2.0...v7.2.1) - (2023-03-19)
 
 ## 🐛 Bug Fixes

@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.BOT_TOKEN }}
       - name: Use Node.js v18
         uses: actions/setup-node@v3
         with:
@@ -32,15 +34,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add .;
-          if git diff-index --quiet HEAD --; then
-            echo "No changes to commit, exiting with code 0"
-            exit 0;
-          else
+          if ! git diff-index --quiet HEAD --; then
             git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git";
             git config --local user.email "${GITHUB_EMAIL}";
             git config --local user.name "${GITHUB_USER}";
-            git checkout -b favware-bot/update-data/$(date +%F-%H-%M);
             git commit -sam "refactor: update data [skip publish]";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-            gh pr create -t "refactor: update data [skip publish]" -b "*bleep bloop* I updated the data files" -B main;
           fi

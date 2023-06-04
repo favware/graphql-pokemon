@@ -63,7 +63,7 @@
     "@sapphire/eslint-config": "^4.4.2",
     "@sapphire/fetch": "^2.4.1",
     "@sapphire/prettier-config": "^1.4.5",
-    "@sapphire/shapeshift": "^3.9.1",
+    "@sapphire/shapeshift": "^3.9.2",
     "@sapphire/timestamp": "^1.0.1",
     "@sapphire/ts-config": "^4.0.0",
     "@sapphire/utilities": "^3.11.2",

@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.3.2](https://github.com/favware/graphql-pokemon/compare/v7.3.1...v7.3.2) - (2023-06-04)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([29f0fe8](https://github.com/favware/graphql-pokemon/commit/29f0fe86a91805551cf90216925c703e3b05f935))
+- Update data [skip publish] ([d44d9dc](https://github.com/favware/graphql-pokemon/commit/d44d9dcd2be062adb1cdf2bd0a288c7acb7d95fc))
+- Update data [skip publish] ([a2a301e](https://github.com/favware/graphql-pokemon/commit/a2a301ee092e270f07d4c1410d577fd4047c5315))
+- Update data [skip publish] ([192960e](https://github.com/favware/graphql-pokemon/commit/192960ebe3bc355eba88981d83d59d6b81bdf076))
+- Update data [skip publish] ([b49770b](https://github.com/favware/graphql-pokemon/commit/b49770bd3866762f2080adaa45b989a8a92db4ce))
+- Update data [skip publish] ([4cec27f](https://github.com/favware/graphql-pokemon/commit/4cec27fa8e8f3fac6bf74a01d4d06ff5ff8f2fb9))
+- Update data [skip publish] ([5a110b1](https://github.com/favware/graphql-pokemon/commit/5a110b12df5983850c7bc276822c23747311a7fd))
+- Update data [skip publish] ([6db1055](https://github.com/favware/graphql-pokemon/commit/6db105555bec761643693bb1c6d2e8a23c777e1c))
+- Update data [skip publish] (#830) ([de9b4be](https://github.com/favware/graphql-pokemon/commit/de9b4be22601adcb8e97df4ecf5878f3c2a30fd1))
+
+## 📝 Documentation
+
+- Add missing links ([19dee74](https://github.com/favware/graphql-pokemon/commit/19dee74623211af5a86a7bbe8c2cb434dd9a955a))
+
 # [7.3.1](https://github.com/favware/graphql-pokemon/compare/v7.3.0...v7.3.1) - (2023-05-10)
 
 ## 🐛 Bug Fixes

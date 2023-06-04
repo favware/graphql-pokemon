@@ -1,8 +1,7 @@
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import type { NonNullObject } from '@sapphire/shapeshift';
 import { isFunction, isNullish } from '@sapphire/utilities';
 
-export function addPropertyToObjectConditional<T extends NonNullObject, K extends keyof T>({
+export function addPropertyToObjectConditional<T extends object, K extends keyof T>({
   objectTarget,
   propertyKey,
   propertyValue,
@@ -19,7 +18,7 @@ export function addPropertyToObjectConditional<T extends NonNullObject, K extend
   return objectTarget;
 }
 
-export function addPropertyToObjectFieldBased<T extends NonNullObject, K extends keyof T>({
+export function addPropertyToObjectFieldBased<T extends object, K extends keyof T>({
   objectTarget,
   propertyKey,
   propertyValue,
@@ -37,26 +36,26 @@ export function addPropertyToObjectFieldBased<T extends NonNullObject, K extends
   return objectTarget;
 }
 
-function addPropertyToObject<T extends NonNullObject, K extends keyof T>({
+function addPropertyToObject<T extends object, K extends keyof T>({
   objectTarget,
   propertyKey,
   propertyValue
 }: Omit<AddPropertyToObjectParameters<T, K>, 'requestedFields' | 'fieldAccessor'>): void {
-  const resolvedPropertyValue = isFunction(propertyValue) ? propertyValue() : propertyValue;
+  const resolvedPropertyValue = isFunction(propertyValue) ? (propertyValue as () => T[K] | null)() : propertyValue;
 
   if (!isNullish(resolvedPropertyValue)) {
     Reflect.set(objectTarget, propertyKey, resolvedPropertyValue);
   }
 }
 
-type AddPropertyToObjectConditionalParameters<T extends NonNullObject, K extends keyof T> = Omit<
+type AddPropertyToObjectConditionalParameters<T extends object, K extends keyof T> = Omit<
   AddPropertyToObjectParameters<T, K>,
   'requestedFields' | 'fieldAccessor'
 > & {
   condition: boolean;
 };
 
-interface AddPropertyToObjectParameters<T extends NonNullObject, K extends keyof T> {
+interface AddPropertyToObjectParameters<T extends object, K extends keyof T> {
   objectTarget: T;
   propertyKey: K;
   propertyValue: T[K] | (() => T[K] | null);

@@ -3,7 +3,7 @@ services:
   pokedex:
     build: ./
     container_name: graphql-pokemon
-    image: 'favware/graphql-pokemon:latest'
+    image: 'favware/graphql-pokemon:remove-old-versions'
     networks:
       - pokedex
     ports:

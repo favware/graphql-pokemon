@@ -9,9 +9,9 @@
   "module": "dist/graphql-pokemon.js",
   "types": "dist/graphql-pokemon.d.ts",
   "exports": {
+    "types": "./dist/graphql-pokemon.d.ts",
     "import": "./dist/graphql-pokemon.js",
-    "require": "./dist/graphql-pokemon.cjs",
-    "types": "./dist/graphql-pokemon.d.ts"
+    "require": "./dist/graphql-pokemon.cjs"
   },
   "sideEffects": false,
   "imports": {

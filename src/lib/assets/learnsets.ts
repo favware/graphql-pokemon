@@ -63703,7 +63703,7 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
     }
   ],
   [
-    'greninjaash',
+    'greninjabond',
     {
       acrobatics: ['7M'],
       aerialace: ['9M', '9L33', '7M', '7S0'],

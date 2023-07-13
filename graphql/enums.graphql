@@ -2761,6 +2761,7 @@ enum MovesEnum {
   hurricane
   hydrocannon
   hydropump
+  hydrosteam
   hydrovortex
   hyperbeam
   hyperdrill
@@ -2838,7 +2839,6 @@ enum MovesEnum {
   magiccoat
   magicpowder
   magicroom
-  magikarpsrevenge
   magmastorm
   magnetbomb
   magneticflux
@@ -2979,6 +2979,7 @@ enum MovesEnum {
   prismaticlaser
   protect
   psybeam
+  psyblade
   psychic
   psychicfangs
   psychicterrain

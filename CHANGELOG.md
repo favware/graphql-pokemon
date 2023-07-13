@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+# [7.3.3](https://github.com/favware/graphql-pokemon/compare/v7.3.2...v7.3.3) - (2023-07-13)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([2cdbb65](https://github.com/favware/graphql-pokemon/commit/2cdbb6574f38b0490a1fdc7f478a9d8917d53fba))
+- Update data [skip publish] ([d3f96a0](https://github.com/favware/graphql-pokemon/commit/d3f96a091f3f8f11a12984e856c09ef22625afbb))
+- Update data [skip publish] ([32c698d](https://github.com/favware/graphql-pokemon/commit/32c698dcfaa0660f3a8b3eebf80da4d34c348256))
+- Update data [skip publish] ([f4bbf3c](https://github.com/favware/graphql-pokemon/commit/f4bbf3c149f2702ac80b0ae1ccbaa2e6054e07a2))
+- Update data [skip publish] ([5f8bb0f](https://github.com/favware/graphql-pokemon/commit/5f8bb0f2e2ba35cc1673549cd8816ded112cb517))
+- Update data [skip publish] ([17ab58d](https://github.com/favware/graphql-pokemon/commit/17ab58d8aba41b4406591ece48afca733df97f05))
+- Update data [skip publish] ([0bf59a8](https://github.com/favware/graphql-pokemon/commit/0bf59a816d9c16cb83523bc04b9571858a59bd33))
+- Update data [skip publish] ([6b05f16](https://github.com/favware/graphql-pokemon/commit/6b05f163ce3ec750ab298f60c7c5be99fc3ed975))
+- Update data [skip publish] ([115d9f9](https://github.com/favware/graphql-pokemon/commit/115d9f9cb82b28ac4bbb483ee4e0f99033d1b0df))
+- Update data [skip publish] ([f95461e](https://github.com/favware/graphql-pokemon/commit/f95461eb14f7efe7e376ed7b9edb3627296a72c6))
+- Update data [skip publish] ([91dc65d](https://github.com/favware/graphql-pokemon/commit/91dc65d92e0165d80daa87283523e40f2bced4ed))
+- Update data [skip publish] ([c1c5838](https://github.com/favware/graphql-pokemon/commit/c1c5838bfddb88530344cba200e85149724caaa7))
+- Update data [skip publish] ([da7df3f](https://github.com/favware/graphql-pokemon/commit/da7df3f501f49e85a68c46c760a102efec501bc7))
+
+## 🐛 Bug Fixes
+
+- Add `hydrostream` and `psyblade` to the `MovesEnum` ([8258eaa](https://github.com/favware/graphql-pokemon/commit/8258eaafb961715bb51a61116f34618519f6294c))
+- Move types export to the top to ensure it is selected first and not as a fallback ([5ddfa94](https://github.com/favware/graphql-pokemon/commit/5ddfa94dbe4dd2082d1af2b78483dac7530de2f3))
+
+## 📝 Documentation
+
+- **readme:** Fix ToC link for contributors ([9768be2](https://github.com/favware/graphql-pokemon/commit/9768be269d221bb960039721e99ef6fcaf6bea25))
+
+## 🧪 Testing
+
+- Switch to coverage v8 ([a56cdb7](https://github.com/favware/graphql-pokemon/commit/a56cdb73505b582c17871ce6f64638f066fdeb9c))
+
 # [7.3.2](https://github.com/favware/graphql-pokemon/compare/v7.3.1...v7.3.2) - (2023-06-04)
 
 ## 🏠 Refactor

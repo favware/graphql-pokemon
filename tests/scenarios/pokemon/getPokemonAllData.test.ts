@@ -23,6 +23,30 @@ describe('Get Pokémon with all data', () => {
       variables: { pokemon }
     });
 
+    await (async function copyToClipboard() {
+      const { platform } = await import('node:process');
+      const { execFile, spawn } = await import('node:child_process');
+      const { inspect } = await import('node:util');
+
+      const inspectedText = inspect(data, {
+        depth: Infinity,
+        maxArrayLength: Infinity,
+        showHidden: false
+      });
+
+      let process: import('node:child_process').ChildProcessWithoutNullStreams | import('node:child_process').ChildProcess | null = null;
+
+      if (platform === 'darwin') {
+        process = spawn('pbcopy');
+        process.stdin?.write(inspectedText);
+        process.stdin?.end();
+      } else {
+        process = execFile('clippy', ['--copy']);
+        process.stdin?.write(inspectedText);
+        process.stdin?.end();
+      }
+    })();
+
     expect(data).toEqual(returnedData);
   });
 });

@@ -114,34 +114,15 @@ describe('getPokemon', () => {
       expect(data.getPokemon).toEqual({
         abilities: {
           first: { name: 'Torrent' },
-          hidden: { name: 'Protean' },
           second: null,
+          hidden: { name: 'Protean' },
           special: { name: 'Battle Bond' }
         },
-        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/greninja.gif',
-        baseForme: null,
-        baseSpecies: null,
-        baseStats: {
-          attack: 95,
-          defense: 67,
-          hp: 72,
-          specialattack: 103,
-          specialdefense: 71,
-          speed: 122
-        },
-        baseStatsTotal: 530,
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/greninja_(Pokémon)',
-        catchRate: {
-          base: 45,
-          percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
-        },
-        color: 'Blue',
-        cosmeticFormes: null,
         eggGroups: ['Water 1'],
         evYields: {
+          hp: 0,
           attack: 0,
           defense: 0,
-          hp: 0,
           specialattack: 0,
           specialdefense: 0,
           speed: 3
@@ -159,6 +140,7 @@ describe('getPokemon', () => {
         gender: { female: '12.5%', male: '87.5%' },
         height: 1.5,
         isEggObtainable: true,
+        backSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/greninja.gif',
         levellingRate: 'Medium Slow',
         maximumHatchTime: 5396,
         minimumHatchTime: 5140,
@@ -168,10 +150,28 @@ describe('getPokemon', () => {
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/greninja.gif',
         shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/greninja.gif',
         smogonPage: 'https://www.smogon.com/dex/sv/pokemon/greninja',
-        smogonTier: 'UU',
+        baseForme: null,
+        smogonTier: 'OU',
         species: 'greninja',
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/greninja.gif',
-        types: [{ name: 'Water' }, { name: 'Dark' }]
+        types: [{ name: 'Water' }, { name: 'Dark' }],
+        baseSpecies: null,
+        baseStats: {
+          hp: 72,
+          attack: 95,
+          defense: 67,
+          specialattack: 103,
+          specialdefense: 71,
+          speed: 122
+        },
+        baseStatsTotal: 530,
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/greninja_(Pokémon)',
+        catchRate: {
+          base: 45,
+          percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
+        },
+        color: 'Blue',
+        cosmeticFormes: null
       });
     });
 
@@ -290,7 +290,7 @@ describe('getPokemon', () => {
         shinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/typhlosion-hisui.png',
         smogonPage: 'https://www.smogon.com/dex/sv/pokemon/typhlosion-hisui',
         baseForme: null,
-        smogonTier: 'UU',
+        smogonTier: 'RU',
         species: 'typhlosion-hisui',
         sprite: 'https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png',
         types: [{ name: 'Fire' }, { name: 'Ghost' }],

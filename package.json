@@ -56,7 +56,7 @@
     "@commitlint/config-conventional": "^17.6.7",
     "@discordjs/collection": "^1.5.1",
     "@favware/cliff-jumper": "^2.1.1",
-    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/cli": "^5.0.0",
     "@graphql-codegen/schema-ast": "^4.0.0",
     "@graphql-codegen/typescript": "^4.0.1",
     "@graphql-codegen/typescript-resolvers": "^4.0.1",

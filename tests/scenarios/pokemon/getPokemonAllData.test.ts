@@ -1,11 +1,17 @@
-import beldumData from '#test-utils/full-data-responses/beldum.json' assert { type: 'json' };
-import dragonairData from '#test-utils/full-data-responses/dragonair.json' assert { type: 'json' };
-import eeveeData from '#test-utils/full-data-responses/eevee.json' assert { type: 'json' };
-import rattataalolaData from '#test-utils/full-data-responses/rattata-alola.json' assert { type: 'json' };
-import salamenceData from '#test-utils/full-data-responses/salamence.json' assert { type: 'json' };
-import syclarData from '#test-utils/full-data-responses/syclar.json' assert { type: 'json' };
 import { getPokemonWithFullDataAndEvolutions } from '#test-utils/queries/pokemon-all-data';
 import { executeGraphQL } from '#test-utils/testUtils';
+import { readFile } from 'node:fs/promises';
+
+const parse = (data: string) => JSON.parse(data);
+
+const [beldumData, dragonairData, eeveeData, rattataalolaData, salamenceData, syclarData] = await Promise.all([
+  readFile(new URL('../../testUtils/full-data-responses/beldum.json', import.meta.url), { encoding: 'utf-8' }).then(parse),
+  readFile(new URL('../../testUtils/full-data-responses/dragonair.json', import.meta.url), { encoding: 'utf-8' }).then(parse),
+  readFile(new URL('../../testUtils/full-data-responses/eevee.json', import.meta.url), { encoding: 'utf-8' }).then(parse),
+  readFile(new URL('../../testUtils/full-data-responses/rattata-alola.json', import.meta.url), { encoding: 'utf-8' }).then(parse),
+  readFile(new URL('../../testUtils/full-data-responses/salamence.json', import.meta.url), { encoding: 'utf-8' }).then(parse),
+  readFile(new URL('../../testUtils/full-data-responses/syclar.json', import.meta.url), { encoding: 'utf-8' }).then(parse)
+]);
 
 describe('Get Pokémon with all data', () => {
   const verifiableData: [string, unknown][] = [

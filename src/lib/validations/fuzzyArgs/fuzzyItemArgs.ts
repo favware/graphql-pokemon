@@ -1,4 +1,4 @@
-import { baseFuzzySchema, type BaseFuzzyArgs } from '#validations/fuzzyArgs/base.ts';
+import { baseFuzzySchema, type BaseFuzzyArgs } from '#validations/fuzzyArgs/base';
 import { s, type SchemaOf } from '@sapphire/shapeshift';
 
 export interface GetFuzzyItemArgs extends BaseFuzzyArgs {

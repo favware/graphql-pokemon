@@ -1,9 +1,7 @@
 {
-  "extends": "@sapphire/ts-config/extra-strict-without-decorators",
+  "extends": ["@sapphire/ts-config", "@sapphire/ts-config/extra-strict", "@sapphire/ts-config/bundler", "@sapphire/ts-config/verbatim"],
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
-    "target": "ESNext",
-    "module": "ESNext",
     "noEmit": true,
     "incremental": false
   }

@@ -1,8 +1,6 @@
 import { abilities } from '#assets/abilities';
 import { pokedex } from '#assets/pokedex';
 import type { PokemonTypes } from '#assets/pokemon-source';
-import flavors from '#jsonAssets/flavorText.json' assert { type: 'json' };
-import tiers from '#jsonAssets/formats.json' assert { type: 'json' };
 import { AbilityReferencedCallIdentifier, mapAbilityDataToAbilityGraphQL } from '#mappers/abilityMapper';
 import { getLearnsetDataset, mapPokemonToPokemonLearnsetGraphQL } from '#mappers/learnsetMapper';
 import { mapTypesToTypeMatchupGraphQL } from '#mappers/typeMatchupMapper';
@@ -20,8 +18,10 @@ import type {
   Stats,
   TypeMatchup
 } from '#types';
-import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import type { GraphQLSet } from '#utils/GraphQLSet';
+import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import { flavorsModule as flavors } from '#utils/flavorsModule';
+import { formatsModule as formats } from '#utils/formatsModule';
 import { speciesThatAreNotInGeneration8Nor9 } from '#utils/pastGenerationPokemon';
 import type { TypesEnum } from '#utils/pokemonTypes';
 import { parseSpeciesForSprite } from '#utils/spriteParser';
@@ -430,7 +430,7 @@ export function mapPokemonDataToPokemonGraphQL({
     fieldAccessor: `${resolvedRecursingAs}evolutionLevel`
   });
 
-  const smogonTier = tiers[toLowerSingleWordCase(data.species)] || 'Undiscovered';
+  const smogonTier = formats[toLowerSingleWordCase(data.species)] || 'Undiscovered';
   addPropertyToObjectFieldBased({
     objectTarget: pokemonData,
     propertyKey: 'smogonTier',

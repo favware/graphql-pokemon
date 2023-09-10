@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-koa';
+import gql from 'graphql-tag';
 
 export const getLearnset = gql`
   query ($pokemon: PokemonEnum!, $moves: [MovesEnum!]!, $generation: Int) {

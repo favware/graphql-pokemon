@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-koa';
+import gql from 'graphql-tag';
 import type { PathLike } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 

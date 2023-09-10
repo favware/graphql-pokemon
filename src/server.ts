@@ -20,6 +20,7 @@ const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof Server
     introspection: true,
     csrfPrevention: true,
     cache: 'bounded',
+    status400ForVariableCoercionErrors: true,
     plugins: [
       ApolloServerPluginDrainHttpServer({ httpServer }),
       ApolloServerPluginLandingPageLocalDefault({

@@ -1802,7 +1802,14 @@
       },
       "key": "rattataalola",
       "eggGroups": ["Field"],
-      "evYields": { "hp": 0, "attack": 0, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 1 },
+      "evYields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 0,
+        "specialattack": 0,
+        "specialdefense": 0,
+        "speed": 1
+      },
       "evolutionLevel": null,
       "flavorTexts": [
         {
@@ -1812,7 +1819,10 @@
       ],
       "forme": "Alola",
       "formeLetter": "A",
-      "gender": { "female": "50%", "male": "50%" },
+      "gender": {
+        "female": "50%",
+        "male": "50%"
+      },
       "height": 0.3,
       "isEggObtainable": true,
       "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/rattata-alola.gif",
@@ -1907,10 +1917,20 @@
         }
       ],
       "baseSpecies": "Rattata",
-      "baseStats": { "hp": 30, "attack": 56, "defense": 35, "specialattack": 25, "specialdefense": 35, "speed": 72 },
+      "baseStats": {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "specialattack": 25,
+        "specialdefense": 35,
+        "speed": 72
+      },
       "baseStatsTotal": 253,
       "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pokémon)",
-      "catchRate": { "base": 255, "percentageWithOrdinaryPokeballAtFullHealth": "43.9%" },
+      "catchRate": {
+        "base": 255,
+        "percentageWithOrdinaryPokeballAtFullHealth": "43.9%"
+      },
       "color": "Black",
       "cosmeticFormes": null,
       "weight": 3.8,
@@ -3719,7 +3739,14 @@
           },
           "key": "raticatealola",
           "eggGroups": ["Field"],
-          "evYields": { "hp": 0, "attack": 0, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 2 },
+          "evYields": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 0,
+            "specialattack": 0,
+            "specialdefense": 0,
+            "speed": 2
+          },
           "evolutionLevel": "level 20 at night",
           "flavorTexts": [
             {
@@ -3729,7 +3756,10 @@
           ],
           "forme": "Alola",
           "formeLetter": "A",
-          "gender": { "female": "50%", "male": "50%" },
+          "gender": {
+            "female": "50%",
+            "male": "50%"
+          },
           "height": 0.7,
           "isEggObtainable": true,
           "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/raticate-alola.gif",
@@ -3838,10 +3868,20 @@
             }
           ],
           "baseSpecies": "Raticate",
-          "baseStats": { "hp": 75, "attack": 71, "defense": 70, "specialattack": 40, "specialdefense": 80, "speed": 77 },
+          "baseStats": {
+            "hp": 75,
+            "attack": 71,
+            "defense": 70,
+            "specialattack": 40,
+            "specialdefense": 80,
+            "speed": 77
+          },
           "baseStatsTotal": 413,
           "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pokémon)",
-          "catchRate": { "base": 127, "percentageWithOrdinaryPokeballAtFullHealth": "26%" },
+          "catchRate": {
+            "base": 127,
+            "percentageWithOrdinaryPokeballAtFullHealth": "26%"
+          },
           "color": "Black",
           "cosmeticFormes": null,
           "weight": 25.5,

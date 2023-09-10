@@ -1,12 +1,19 @@
 import { RootResolver } from '#resolvers/RootResolver';
 import { defaultDocument, defaultVariables } from '#root/defaultDocument';
 import { RootTypedef } from '#utils/typeDefs';
-import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
-import { ApolloServer } from 'apollo-server-koa';
+import { ApolloServer } from '@apollo/server';
+import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
+import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
+import { koaMiddleware } from '@as-integrations/koa';
+import cors from '@koa/cors';
 import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+import { createServer, type IncomingMessage, type Server, type ServerResponse } from 'node:http';
 
-const gqlServer = async (): Promise<Koa<Koa.DefaultState, Koa.DefaultContext>> => {
+const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof ServerResponse>> => {
   const app = new Koa();
+  const httpServer = createServer(app.callback());
+
   const apolloServer = new ApolloServer({
     resolvers: RootResolver,
     typeDefs: RootTypedef,
@@ -14,6 +21,7 @@ const gqlServer = async (): Promise<Koa<Koa.DefaultState, Koa.DefaultContext>> =
     csrfPrevention: true,
     cache: 'bounded',
     plugins: [
+      ApolloServerPluginDrainHttpServer({ httpServer }),
       ApolloServerPluginLandingPageLocalDefault({
         footer: false,
         document: defaultDocument,
@@ -24,9 +32,17 @@ const gqlServer = async (): Promise<Koa<Koa.DefaultState, Koa.DefaultContext>> =
   });
 
   await apolloServer.start();
-  apolloServer.applyMiddleware({ app, path: '/', cors: true });
 
-  return app;
+  app.use(cors());
+  app.use(bodyParser());
+  app.use(
+    koaMiddleware(apolloServer, {
+      // eslint-disable-next-line @typescript-eslint/require-await
+      context: async ({ ctx }) => ({ token: ctx.headers.token })
+    })
+  );
+
+  return httpServer;
 };
 
 export default gqlServer;

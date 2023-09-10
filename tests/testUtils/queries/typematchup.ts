@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-koa';
+import gql from 'graphql-tag';
 
 export const getTypeMatchup = gql`
   fragment type on TypeEffectiveness {

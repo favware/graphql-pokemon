@@ -318,7 +318,7 @@ describe('getLearnset', () => {
       });
     });
 
-    test('GIVEN valid Pokémon and null generation request THEN returns Learnset WITH all generation 8 data', async () => {
+    test('GIVEN valid Pokémon and null generation request THEN returns Learnset WITH all generation 9 data', async () => {
       const { data } = await executeGraphQL<'getLearnset'>({
         query: getLearnset,
         variables: { pokemon: 'vulpix', moves: ['darkpulse'], generation: null }
@@ -326,7 +326,14 @@ describe('getLearnset', () => {
 
       expect(data.getLearnset).toEqual({
         species: 'vulpix',
-        tmMoves: [],
+        tmMoves: [
+          {
+            generation: 9,
+            move: {
+              name: 'Dark Pulse'
+            }
+          }
+        ],
         virtualTransferMoves: [],
         dreamworldMoves: [],
         eggMoves: [],

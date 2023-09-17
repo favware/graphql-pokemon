@@ -9255,6 +9255,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "dualwingbeat",
+                "accuracy": 90,
+                "basePower": "40",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dual_Wingbeat_(move)",
+                "category": "Physical",
+                "contestType": null,
+                "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Dual Wingbeat",
+                "pp": 10,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/dualwingbeat.shtml",
+                "shortDesc": "Hits 2 times in one turn.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/dual-wingbeat",
+                "target": "Normal",
+                "type": "Flying",
+                "zMovePower": 100
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "earthquake",
                 "accuracy": 100,
                 "basePower": "100",
@@ -9847,6 +9873,32 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                 "target": "Self",
                 "type": "Psychic",
+                "zMovePower": 0
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "roar",
+                "accuracy": 100,
+                "basePower": "0",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Roar_(move)",
+                "category": "Status",
+                "contestType": "Cool",
+                "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokémon in its party, or if the target used Ingrain previously or has the Suction Cups Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Roar",
+                "pp": 20,
+                "priority": -6,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/roar.shtml",
+                "shortDesc": "Forces the target to switch to a random ally.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/roar",
+                "target": "Normal",
+                "type": "Normal",
                 "zMovePower": 0
               }
             },
@@ -20056,6 +20108,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "dualwingbeat",
+                    "accuracy": 90,
+                    "basePower": "40",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dual_Wingbeat_(move)",
+                    "category": "Physical",
+                    "contestType": null,
+                    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Dual Wingbeat",
+                    "pp": 10,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/dualwingbeat.shtml",
+                    "shortDesc": "Hits 2 times in one turn.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/dual-wingbeat",
+                    "target": "Normal",
+                    "type": "Flying",
+                    "zMovePower": 100
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "earthquake",
                     "accuracy": 100,
                     "basePower": "100",
@@ -20648,6 +20726,32 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                     "target": "Self",
                     "type": "Psychic",
+                    "zMovePower": 0
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "roar",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Roar_(move)",
+                    "category": "Status",
+                    "contestType": "Cool",
+                    "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokémon in its party, or if the target used Ingrain previously or has the Suction Cups Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Roar",
+                    "pp": 20,
+                    "priority": -6,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/roar.shtml",
+                    "shortDesc": "Forces the target to switch to a random ally.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/roar",
+                    "target": "Normal",
+                    "type": "Normal",
                     "zMovePower": 0
                   }
                 },
@@ -28809,6 +28913,32 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
+                        "zMovePower": 0
+                      }
+                    },
+                    {
+                      "generation": 9,
+                      "move": {
+                        "key": "roar",
+                        "accuracy": 100,
+                        "basePower": "0",
+                        "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Roar_(move)",
+                        "category": "Status",
+                        "contestType": "Cool",
+                        "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokémon in its party, or if the target used Ingrain previously or has the Suction Cups Ability.",
+                        "isFieldMove": null,
+                        "isGMax": null,
+                        "isNonstandard": null,
+                        "isZ": null,
+                        "maxMovePower": null,
+                        "name": "Roar",
+                        "pp": 20,
+                        "priority": -6,
+                        "serebiiPage": "https://www.serebii.net/attackdex-swsh/roar.shtml",
+                        "shortDesc": "Forces the target to switch to a random ally.",
+                        "smogonPage": "https://www.smogon.com/dex/ss/moves/roar",
+                        "target": "Normal",
+                        "type": "Normal",
                         "zMovePower": 0
                       }
                     },

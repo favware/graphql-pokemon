@@ -25,6 +25,15 @@ jobs:
         run: yarn au:tiers
       - name: Run Learnsets updater
         run: yarn au:learnsets
+      - name: Build code
+        run: yarn build
+      - name: Start server in the background
+        working-directory: ./scripts
+        run: |
+          yarn start &
+          ./wait-for-port.sh
+      - name: Update test data
+        run: yarn au:testdata
       - name: Run prettier on the code
         run: yarn format
       - name: Commit any changes and create a pull request

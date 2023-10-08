@@ -43,6 +43,7 @@
     "typescript:compile": "tsup --config tsup.config-codegen.ts",
     "au:tiers": "node scripts/smogontiers.mjs",
     "au:learnsets": "node scripts/pokemonlearnsets.mjs",
+    "au:testdata": "yarn tsx scripts/update-test-files.mts",
     "tsx": "tsx --tsconfig ./scripts/data-gen-scripts/tsconfig.json",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",

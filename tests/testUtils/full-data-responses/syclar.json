@@ -4883,22 +4883,12 @@
       },
       "key": "syclar",
       "eggGroups": ["Bug"],
-      "evYields": {
-        "hp": 0,
-        "attack": 0,
-        "defense": 0,
-        "specialattack": 0,
-        "specialdefense": 0,
-        "speed": 0
-      },
+      "evYields": { "hp": 0, "attack": 0, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": null,
       "flavorTexts": [],
       "forme": null,
       "formeLetter": null,
-      "gender": {
-        "female": "50%",
-        "male": "50%"
-      },
+      "gender": { "female": "50%", "male": "50%" },
       "height": 0.2,
       "isEggObtainable": false,
       "backSprite": "https://play.pokemonshowdown.com/sprites/gen5-back/syclar.png",
@@ -4974,20 +4964,10 @@
         }
       ],
       "baseSpecies": null,
-      "baseStats": {
-        "hp": 40,
-        "attack": 76,
-        "defense": 45,
-        "specialattack": 74,
-        "specialdefense": 39,
-        "speed": 91
-      },
+      "baseStats": { "hp": 40, "attack": 76, "defense": 45, "specialattack": 74, "specialdefense": 39, "speed": 91 },
       "baseStatsTotal": 365,
       "bulbapediaPage": "",
-      "catchRate": {
-        "base": 0,
-        "percentageWithOrdinaryPokeballAtFullHealth": "0%"
-      },
+      "catchRate": { "base": 0, "percentageWithOrdinaryPokeballAtFullHealth": "0%" },
       "color": "Blue",
       "cosmeticFormes": null,
       "weight": 4,
@@ -9877,22 +9857,12 @@
           },
           "key": "syclant",
           "eggGroups": ["Bug"],
-          "evYields": {
-            "hp": 0,
-            "attack": 0,
-            "defense": 0,
-            "specialattack": 0,
-            "specialdefense": 0,
-            "speed": 0
-          },
+          "evYields": { "hp": 0, "attack": 0, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": "30",
           "flavorTexts": [],
           "forme": null,
           "formeLetter": null,
-          "gender": {
-            "female": "50%",
-            "male": "50%"
-          },
+          "gender": { "female": "50%", "male": "50%" },
           "height": 1.7,
           "isEggObtainable": false,
           "backSprite": "https://play.pokemonshowdown.com/sprites/gen5-back/syclant.png",
@@ -9968,20 +9938,10 @@
             }
           ],
           "baseSpecies": null,
-          "baseStats": {
-            "hp": 70,
-            "attack": 116,
-            "defense": 70,
-            "specialattack": 114,
-            "specialdefense": 64,
-            "speed": 121
-          },
+          "baseStats": { "hp": 70, "attack": 116, "defense": 70, "specialattack": 114, "specialdefense": 64, "speed": 121 },
           "baseStatsTotal": 555,
           "bulbapediaPage": "",
-          "catchRate": {
-            "base": 0,
-            "percentageWithOrdinaryPokeballAtFullHealth": "0%"
-          },
+          "catchRate": { "base": 0, "percentageWithOrdinaryPokeballAtFullHealth": "0%" },
           "color": "Blue",
           "cosmeticFormes": null,
           "weight": 52,

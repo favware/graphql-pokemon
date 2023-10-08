@@ -10734,27 +10734,14 @@
       },
       "key": "salamence",
       "eggGroups": ["Dragon"],
-      "evYields": {
-        "hp": 0,
-        "attack": 3,
-        "defense": 0,
-        "specialattack": 0,
-        "specialdefense": 0,
-        "speed": 0
-      },
+      "evYields": { "hp": 0, "attack": 3, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": "50",
       "flavorTexts": [
-        {
-          "flavor": "It becomes uncontrollable if it is enraged. It destroys everything with shredding claws and fire.",
-          "game": "Violet"
-        }
+        { "flavor": "It becomes uncontrollable if it is enraged. It destroys everything with shredding claws and fire.", "game": "Violet" }
       ],
       "forme": null,
       "formeLetter": null,
-      "gender": {
-        "female": "50%",
-        "male": "50%"
-      },
+      "gender": { "female": "50%", "male": "50%" },
       "height": 1.5,
       "isEggObtainable": true,
       "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/salamence.gif",
@@ -10832,20 +10819,10 @@
         }
       ],
       "baseSpecies": null,
-      "baseStats": {
-        "hp": 95,
-        "attack": 135,
-        "defense": 80,
-        "specialattack": 110,
-        "specialdefense": 80,
-        "speed": 100
-      },
+      "baseStats": { "hp": 95, "attack": 135, "defense": 80, "specialattack": 110, "specialdefense": 80, "speed": 100 },
       "baseStatsTotal": 600,
       "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/salamence_(Pokémon)",
-      "catchRate": {
-        "base": 45,
-        "percentageWithOrdinaryPokeballAtFullHealth": "11.9%"
-      },
+      "catchRate": { "base": 45, "percentageWithOrdinaryPokeballAtFullHealth": "11.9%" },
       "color": "Blue",
       "cosmeticFormes": null,
       "weight": 102.6,
@@ -21587,14 +21564,7 @@
           },
           "key": "shelgon",
           "eggGroups": ["Dragon"],
-          "evYields": {
-            "hp": 0,
-            "attack": 0,
-            "defense": 2,
-            "specialattack": 0,
-            "specialdefense": 0,
-            "speed": 0
-          },
+          "evYields": { "hp": 0, "attack": 0, "defense": 2, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": "30",
           "flavorTexts": [
             {
@@ -21604,10 +21574,7 @@
           ],
           "forme": null,
           "formeLetter": null,
-          "gender": {
-            "female": "50%",
-            "male": "50%"
-          },
+          "gender": { "female": "50%", "male": "50%" },
           "height": 1.1,
           "isEggObtainable": true,
           "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/shelgon.gif",
@@ -21664,20 +21631,10 @@
             }
           ],
           "baseSpecies": null,
-          "baseStats": {
-            "hp": 65,
-            "attack": 95,
-            "defense": 100,
-            "specialattack": 60,
-            "specialdefense": 50,
-            "speed": 50
-          },
+          "baseStats": { "hp": 65, "attack": 95, "defense": 100, "specialattack": 60, "specialdefense": 50, "speed": 50 },
           "baseStatsTotal": 420,
           "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/shelgon_(Pokémon)",
-          "catchRate": {
-            "base": 45,
-            "percentageWithOrdinaryPokeballAtFullHealth": "11.9%"
-          },
+          "catchRate": { "base": 45, "percentageWithOrdinaryPokeballAtFullHealth": "11.9%" },
           "color": "White",
           "cosmeticFormes": null,
           "weight": 110.5,
@@ -29615,14 +29572,7 @@
               },
               "key": "bagon",
               "eggGroups": ["Dragon"],
-              "evYields": {
-                "hp": 0,
-                "attack": 1,
-                "defense": 0,
-                "specialattack": 0,
-                "specialdefense": 0,
-                "speed": 0
-              },
+              "evYields": { "hp": 0, "attack": 1, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
               "evolutionLevel": null,
               "flavorTexts": [
                 {
@@ -29632,10 +29582,7 @@
               ],
               "forme": null,
               "formeLetter": null,
-              "gender": {
-                "female": "50%",
-                "male": "50%"
-              },
+              "gender": { "female": "50%", "male": "50%" },
               "height": 0.6,
               "isEggObtainable": true,
               "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/bagon.gif",
@@ -29692,20 +29639,10 @@
                 }
               ],
               "baseSpecies": null,
-              "baseStats": {
-                "hp": 45,
-                "attack": 75,
-                "defense": 60,
-                "specialattack": 40,
-                "specialdefense": 30,
-                "speed": 50
-              },
+              "baseStats": { "hp": 45, "attack": 75, "defense": 60, "specialattack": 40, "specialdefense": 30, "speed": 50 },
               "baseStatsTotal": 300,
               "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/bagon_(Pokémon)",
-              "catchRate": {
-                "base": 45,
-                "percentageWithOrdinaryPokeballAtFullHealth": "11.9%"
-              },
+              "catchRate": { "base": 45, "percentageWithOrdinaryPokeballAtFullHealth": "11.9%" },
               "color": "Blue",
               "cosmeticFormes": null,
               "weight": 42.1,

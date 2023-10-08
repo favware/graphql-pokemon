@@ -28,7 +28,7 @@
   "homepage": "https://graphql-pokemon.js.org/",
   "scripts": {
     "lint": "eslint src tests scripts --ext ts,mjs --fix",
-    "format": "prettier --write --loglevel=warn \"{src,tests,scripts}/**/*.{ts,json}\"",
+    "format": "prettier --write --log-level=warn \"{src,tests,scripts}/**/*.{ts,json}\"",
     "test": "vitest run",
     "typecheck": "tsc -b src && tsc -b tests",
     "start": "node --enable-source-maps api/index.js",

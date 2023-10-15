@@ -6,7 +6,7 @@ FROM node:20-alpine as base
 
 WORKDIR /usr/src/app
 
-ENV HUSKY=0
+ENV YARN_DISABLE_GIT_HOOKS=1
 ENV CI=true
 
 RUN apk add --no-cache dumb-init
@@ -20,8 +20,6 @@ COPY --chown=node:node graphql/ graphql/
 COPY --chown=node:node scripts/on-build-success.mjs scripts/on-build-success.mjs
 COPY --chown=node:node .yarnrc.yml .
 COPY --chown=node:node .yarn/ .yarn/
-
-RUN sed -i 's/"postinstall": "husky install .github\/husky"/"postinstall": ""/' ./package.json
 
 ENTRYPOINT ["dumb-init", "--"]
 

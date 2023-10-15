@@ -44,10 +44,7 @@
     "au:tiers": "node scripts/smogontiers.mjs",
     "au:learnsets": "node scripts/pokemonlearnsets.mjs",
     "au:testdata": "yarn tsx scripts/update-test-files.mts",
-    "tsx": "tsx --tsconfig ./scripts/data-gen-scripts/tsconfig.json",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
-    "postinstall": "husky install .github/husky"
+    "tsx": "tsx --tsconfig ./scripts/data-gen-scripts/tsconfig.json"
   },
   "dependencies": {
     "graphql": "^16.8.1"
@@ -87,12 +84,10 @@
     "eslint-plugin-prettier": "^5.0.1",
     "graphql-parse-resolve-info": "^4.14.0",
     "graphql-tag": "^2.12.6",
-    "husky": "^8.0.3",
     "koa": "^2.14.2",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.0.1",
     "npm-run-all": "^4.1.5",
-    "pinst": "^3.0.0",
     "prettier": "^3.0.3",
     "replace-in-file": "^7.0.1",
     "tsup": "^7.2.0",

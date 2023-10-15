@@ -1378,12 +1378,10 @@ __metadata:
     graphql: ^16.8.1
     graphql-parse-resolve-info: ^4.14.0
     graphql-tag: ^2.12.6
-    husky: ^8.0.3
     koa: ^2.14.2
     koa-bodyparser: ^4.4.1
     lint-staged: ^15.0.1
     npm-run-all: ^4.1.5
-    pinst: ^3.0.0
     prettier: ^3.0.3
     replace-in-file: ^7.0.1
     tsup: ^7.2.0
@@ -6138,15 +6136,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
-  bin:
-    husky: lib/bin.js
-  checksum: 837bc7e4413e58c1f2946d38fb050f5d7324c6f16b0fd66411ffce5703b294bd21429e8ba58711cd331951ee86ed529c5be4f76805959ff668a337dbfa82a1b0
-  languageName: node
-  linkType: hard
-
 "iconv-lite@npm:0.4.24, iconv-lite@npm:^0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -8370,15 +8359,6 @@ __metadata:
   version: 3.0.0
   resolution: "pify@npm:3.0.0"
   checksum: 6cdcbc3567d5c412450c53261a3f10991665d660961e06605decf4544a61a97a54fefe70a68d5c37080ff9d6f4cf51444c90198d1ba9f9309a6c0d6e9f5c4fde
-  languageName: node
-  linkType: hard
-
-"pinst@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "pinst@npm:3.0.0"
-  bin:
-    pinst: bin.js
-  checksum: 4ae48a6a60f79c37071233af51b4d91bfc85cfa3c12b66ccda60cdb642b4d14a4ab0cb3587afc55b1f6192cea1772a5e4822026a0d0d3528296edef00cc2d61f
   languageName: node
   linkType: hard
 

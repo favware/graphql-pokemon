@@ -52,8 +52,8 @@
   "devDependencies": {
     "@apollo/server": "^4.9.4",
     "@as-integrations/koa": "^1.1.1",
-    "@commitlint/cli": "^17.8.1",
-    "@commitlint/config-conventional": "^17.8.1",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
     "@discordjs/collection": "^1.5.3",
     "@favware/cliff-jumper": "^2.2.0",
     "@graphql-codegen/cli": "^5.0.0",

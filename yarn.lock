@@ -1105,10 +1105,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/collection@npm:^1.5.3":
-  version: 1.5.3
-  resolution: "@discordjs/collection@npm:1.5.3"
-  checksum: 770d0576612555c848858ead2a6c6242252f51ae3a7a6fdcc4986ceeb330ed8cffb81bcd1819e1ef11cce946cb9e707791926e757985cc2e081e984012c08dad
+"@discordjs/collection@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@discordjs/collection@npm:2.0.0"
+  checksum: 58e91ed7f29671c1c6fe98d2e23599100c1098fe26e0ca71ff52e15bacd95407e0b56c69155403a81e07d9abf208aa39f57404e80f5d2f6fb37c150e1262265a
   languageName: node
   linkType: hard
 
@@ -1490,7 +1490,7 @@ __metadata:
     "@as-integrations/koa": "npm:^1.1.1"
     "@commitlint/cli": "npm:^18.4.2"
     "@commitlint/config-conventional": "npm:^18.4.2"
-    "@discordjs/collection": "npm:^1.5.3"
+    "@discordjs/collection": "npm:^2.0.0"
     "@favware/cliff-jumper": "npm:^2.2.3"
     "@graphql-codegen/cli": "npm:^5.0.0"
     "@graphql-codegen/schema-ast": "npm:^4.0.0"

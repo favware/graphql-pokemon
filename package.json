@@ -54,7 +54,7 @@
     "@as-integrations/koa": "^1.1.1",
     "@commitlint/cli": "^18.4.2",
     "@commitlint/config-conventional": "^18.4.2",
-    "@discordjs/collection": "^1.5.3",
+    "@discordjs/collection": "^2.0.0",
     "@favware/cliff-jumper": "^2.2.3",
     "@graphql-codegen/cli": "^5.0.0",
     "@graphql-codegen/schema-ast": "^4.0.0",

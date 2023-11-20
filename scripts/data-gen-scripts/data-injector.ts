@@ -1,7 +1,11 @@
+import { readFile } from 'node:fs/promises';
 import { entries } from '../../src/lib/assets/pokedex-data/gen9.js';
 import { dataToClipboard } from './data-to-clipboard.js';
 import { sortObjectByKey } from './map-data-key-sorter.js';
-import partialBulbaData from './sample.json' assert { type: 'json' };
+
+const pathToFile = new URL('./sample.json', import.meta.url);
+const file = await readFile(pathToFile, { encoding: 'utf-8' });
+const partialBulbaData: Array<Record<string, string>> = JSON.parse(file);
 
 function findPokemon(pokemon: string) {
   return partialBulbaData.find((entry) => entry.species === pokemon);

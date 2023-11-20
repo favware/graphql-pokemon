@@ -14,6 +14,7 @@ export const getAbilityWithFullData = gql`
     bulbapediaPage
     desc
     isFieldAbility
+    isNonstandard
     name
     serebiiPage
     shortDesc
@@ -24,6 +25,7 @@ export const getAbilityWithFullData = gql`
     getAbility(ability: $ability) {
       desc
       isFieldAbility
+      isNonstandard
       name
       shortDesc
       serebiiPage
@@ -65,6 +67,7 @@ export const getFuzzyAbilityWithFullData = gql`
     getFuzzyAbility(ability: $ability, take: $take, reverse: $reverse) {
       desc
       isFieldAbility
+      isNonstandard
       name
       shortDesc
       serebiiPage

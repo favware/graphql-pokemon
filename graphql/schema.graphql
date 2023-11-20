@@ -12,6 +12,9 @@ type Ability {
   "Whether this ability has effects outside of battle, and if so what the effect is"
   isFieldAbility: String
 
+  "Whether an ability is non-standard, and if it is why"
+  isNonstandard: String
+
   "The name for an ability"
   name: String!
 

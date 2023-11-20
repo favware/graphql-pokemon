@@ -17,6 +17,7 @@ export function mapAbilityDataToAbilityGraphQL({
   addPropertyToObjectFieldBased({ objectTarget: abilityObject, propertyKey: 'name', propertyValue: data.name, requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: abilityObject, propertyKey: 'desc', propertyValue: data.desc, requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: abilityObject, propertyKey: 'shortDesc', propertyValue: data.shortDesc, requestedFields });
+  addPropertyToObjectFieldBased({ objectTarget: abilityObject, propertyKey: 'isNonstandard', propertyValue: data.isNonstandard, requestedFields });
   addPropertyToObjectFieldBased({
     objectTarget: abilityObject,
     propertyKey: 'isFieldAbility',

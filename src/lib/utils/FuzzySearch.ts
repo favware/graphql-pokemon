@@ -1,15 +1,32 @@
 import type { Collection } from '@discordjs/collection';
 import { jaroWinkler } from '@skyra/jaro-winkler';
 
+/**
+ * FuzzySearch is a utility class that performs fuzzy search on a collection of items.
+ * It allows searching for items based on a query string and returns the most relevant results.
+ *
+ * @template K - The type of the keys in the collection.
+ * @template V - The type of the values in the collection.
+ */
 export class FuzzySearch<K extends string, V> {
   readonly #collection: Collection<K, V>;
   readonly #accessKeys: (keyof V)[];
 
+  /**
+   * Constructs a new instance of the {@link FuzzySearch} class.
+   * @param collection The collection to perform fuzzy search on.
+   * @param keys The keys of the collection to search on.
+   */
   public constructor(collection: Collection<K, V>, keys: (keyof V)[]) {
     this.#collection = collection;
     this.#accessKeys = keys;
   }
 
+  /**
+   * Runs a fuzzy search on the collection using the provided query.
+   * @param query - The search query.
+   * @returns An array of values that match the search query, sorted by similarity.
+   */
   public runFuzzy(query: string): V[] {
     const results: [K, V, number][] = [];
     const threshold = 0.3;

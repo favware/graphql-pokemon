@@ -1,5 +1,5 @@
 import { mapTypesToTypeMatchupGraphQL } from '#mappers/typeMatchupMapper';
-import type { TypeMatchup } from '#types';
+import type { TypeMatchup } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import { validateGetTypeMatchupArgs, type GetTypeMatchupArgs } from '#validations/getTypeMatchupArgs';
 

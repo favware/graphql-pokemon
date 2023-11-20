@@ -3,10 +3,10 @@ import { pokedex } from '#assets/pokedex';
 import { mapPokemonAndMovesToLearnsetGraphQL } from '#mappers/learnsetMapper';
 import { fuzzySearch as moveFuzzySearch } from '#resolvers/moveResolvers';
 import { fuzzySearch as pokemonFuzzySearch } from '#resolvers/pokemonResolvers';
-import type { Learnset } from '#types';
+import type { Learnset } from '#types/graphql-mapped-types';
+import type { NonNullish } from '#types/utility-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { toLowerSingleWordCase } from '#utils/util';
-import type { NonNullish } from '#utils/utilTypes';
+import { toLowerSingleWordCase } from '#utils/utils';
 import { validateGetLearnsetArgs, type GetLearnsetArgs } from '#validations/getLearnsetArgs';
 import { lazy } from '@sapphire/utilities';
 

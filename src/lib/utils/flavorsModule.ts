@@ -1,4 +1,4 @@
-import type { PokemonTypes } from '#assets/pokemon-source.d.ts';
+import type { PokemonTypes } from '#assets/pokemon-source';
 import { readFile } from 'node:fs/promises';
 
 const pathToFile = new URL('../assets/flavorText.json', import.meta.url);

@@ -1,9 +1,9 @@
 import { moves } from '#assets/moves';
 import { mapMoveDataToMoveGraphQL } from '#mappers/moveMapper';
-import type { Move } from '#types';
+import type { Move } from '#types/graphql-mapped-types';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput } from '#utils/util';
+import { preParseInput } from '#utils/utils';
 import { validateGetFuzzyMoveArgs, type GetFuzzyMoveArgs } from '#validations/fuzzyArgs/fuzzyMoveArgs';
 import { validateGetMoveArgs, type GetMoveArgs } from '#validations/getMoveArgs';
 

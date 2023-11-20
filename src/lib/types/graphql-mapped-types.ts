@@ -405,7 +405,7 @@ declare enum TypesEnum {
   Water = 'water'
 }
 
-export {
+export type {
   TypesEnum,
   Flavor,
   IsNonStandard,

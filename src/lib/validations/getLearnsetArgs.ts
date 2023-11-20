@@ -1,4 +1,4 @@
-import type { NonNullish } from '#utils/utilTypes';
+import type { NonNullish } from '#types/utility-types';
 import { getPokemonSchema, type GetPokemonArgs } from '#validations/pokemonArgs/getPokemonArgs';
 import { s, type SchemaOf } from '@sapphire/shapeshift';
 import type { Nullish } from '@sapphire/utilities';

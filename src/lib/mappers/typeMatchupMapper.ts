@@ -1,8 +1,8 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
 import { typechart } from '#assets/typechart';
-import type { TypeEffectiveness, TypeMatchup } from '#types';
-import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import type { TypeEffectiveness, TypeMatchup } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
+import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import type { GetTypeMatchupArgs } from '#validations/getTypeMatchupArgs';
 import { filterNullish } from '@sapphire/utilities';
 

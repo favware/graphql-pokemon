@@ -1,3 +1,6 @@
+/**
+ * Array of species names that are not present in Generation 8 or 9.
+ */
 export const speciesThatAreNotInGeneration8Nor9: string[] = [
   'snivy',
   'servine',

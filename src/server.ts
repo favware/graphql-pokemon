@@ -1,6 +1,6 @@
 import { RootResolver } from '#resolvers/RootResolver';
 import { defaultDocument, defaultVariables } from '#root/defaultDocument';
-import { RootTypedef } from '#utils/typeDefs';
+import { RootTypedef } from '#utils/grapqhl-root-typedef-resolver';
 import { ApolloServer } from '@apollo/server';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';

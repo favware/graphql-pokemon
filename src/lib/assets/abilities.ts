@@ -1,6 +1,6 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
-import { Collection } from '@discordjs/collection';
 import { IsNonStandard } from '#utils/isNonStandardEnum';
+import { Collection } from '@discordjs/collection';
 
 /** The abilities in Pokémon */
 export const abilities = new Collection<string, PokemonTypes.Ability>([

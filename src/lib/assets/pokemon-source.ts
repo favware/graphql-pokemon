@@ -1,5 +1,5 @@
-import type { TypesEnum } from '#utils/pokemonTypes';
 import type { IsNonStandard } from '#utils/isNonStandardEnum';
+import type { TypesEnum } from '#utils/pokemonTypes';
 
 export namespace PokemonTypes {
   interface AliasEntry {

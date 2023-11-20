@@ -408,25 +408,25 @@ declare enum TypesEnum {
 }
 
 export type {
-  TypesEnum,
-  Flavor,
-  IsNonStandard,
-  CatchRate,
   Abilities,
   Ability,
-  Move,
-  Gender,
-  Maybe,
+  CatchRate,
   EvYields,
+  Flavor,
+  Gender,
+  GenerationalPokemonLearnset,
+  IsNonStandard,
   Item,
+  Learnset,
+  LearnsetLevelUpMove,
+  LearnsetMove,
+  Maybe,
+  Move,
   Pokemon,
   PokemonLearnset,
-  GenerationalPokemonLearnset,
-  Learnset,
-  LearnsetMove,
-  LearnsetLevelUpMove,
   PokemonType,
-  TypeMatchup,
+  Stats,
   TypeEffectiveness,
-  Stats
+  TypeMatchup,
+  TypesEnum
 };

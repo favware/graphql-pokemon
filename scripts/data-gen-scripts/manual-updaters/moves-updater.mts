@@ -1,9 +1,9 @@
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { importFileFromWeb } from '#scripts/utils';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
-import { moves as currentMoves } from '../../src/lib/assets/moves.js';
-import { dataToClipboard } from './data-to-clipboard.js';
-import { sortObjectByKey } from './map-data-key-sorter.js';
+import { moves as currentMoves } from '#assets/moves.js';
+import { dataToClipboard } from '../data-to-clipboard.js';
+import { sortObjectByKey } from '../map-data-key-sorter.js';
 
 // Note that manual checking is still required for "basePower" and "target" properties!
 

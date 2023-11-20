@@ -3091,13 +3091,13 @@ enum MovesEnum {
   prismaticlaser
   protect
   psybeam
-  psyblade
   psychic
   psychicfangs
   psychicterrain
   psychoboost
   psychocut
   psychoshift
+  psyblade
   psychup
   psyshieldbash
   psyshock
@@ -3402,6 +3402,10 @@ enum MovesEnum {
   zenheadbutt
   zingzap
   zippyzap
+  bloodmoon
+  ivycudgel
+  matchagotcha
+  syrupbomb
 }
 
 "The types in Pokémon"

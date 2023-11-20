@@ -1,9 +1,9 @@
 import { items } from '#assets/items';
 import { mapItemDataToItemGraphQL } from '#mappers/itemMapper';
-import type { Item } from '#types';
+import type { Item } from '#types/graphql-mapped-types';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput } from '#utils/util';
+import { preParseInput } from '#utils/utils';
 import { validateGetFuzzyItemArgs, type GetFuzzyItemArgs } from '#validations/fuzzyArgs/fuzzyItemArgs';
 import { validateGetItemArgs, type GetItemArgs } from '#validations/getItemArgs';
 

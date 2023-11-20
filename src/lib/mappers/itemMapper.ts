@@ -1,8 +1,8 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
-import type { Item } from '#types';
-import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import type { Item } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
+import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/utils';
 import { toTitleCase } from '@sapphire/utilities';
 
 export function mapItemDataToItemGraphQL({ data, requestedFields }: MapItemDataToItemGraphQLParameters): Item {

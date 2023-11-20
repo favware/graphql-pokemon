@@ -17,16 +17,16 @@ import type {
   PokemonType,
   Stats,
   TypeMatchup
-} from '#types';
+} from '#types/graphql-mapped-types';
+import type { Generation, UnwrapArray } from '#types/utility-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import { flavorsModule as flavors } from '#utils/flavorsModule';
 import { formatsModule as formats } from '#utils/formatsModule';
 import { speciesThatAreNotInGeneration8Nor9 } from '#utils/pastGenerationPokemon';
 import type { TypesEnum } from '#utils/pokemonTypes';
-import { parseSpeciesForSprite } from '#utils/spriteParser';
-import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/util';
-import type { Generation, UnwrapArray } from '#utils/utilTypes';
+import { parseSpeciesForSprite } from '#utils/sprite-parser';
+import { toLowerHyphenCase, toLowerSingleWordCase } from '#utils/utils';
 import { cast, toTitleCase } from '@sapphire/utilities';
 
 const bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/wiki/';

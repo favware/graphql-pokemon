@@ -1,5 +1,8 @@
-import { toLowerSingleWordCase } from '#utils/util';
+import { toLowerSingleWordCase } from '#utils/utils';
 
+/**
+ * Parameters for parsing species for sprite.
+ */
 interface ParseSpeciesForSpriteParams {
   backSprite?: boolean;
 
@@ -34,7 +37,12 @@ const Gen9SpriteUrls = {
   animatedShinySprites: 'gen5-shiny/'
 };
 
-export const parseSpeciesForSprite = ({
+/**
+ * Parses the species information to determine the appropriate sprite URL based on the given parameters.
+ * @param params The parameters for parsing the species sprite.
+ * @returns The URL of the sprite image.
+ */
+export function parseSpeciesForSprite({
   pokemonName,
   pokemonNumber,
   baseSpecies,
@@ -44,7 +52,7 @@ export const parseSpeciesForSprite = ({
   specialShinyBackSprite,
   shiny = false,
   backSprite = false
-}: ParseSpeciesForSpriteParams) => {
+}: ParseSpeciesForSpriteParams): string {
   if (shiny && backSprite && specialShinyBackSprite) return specialShinyBackSprite;
   if (backSprite && specialBackSprite) return specialBackSprite;
   if (shiny && specialShinySprite) return specialShinySprite;
@@ -75,4 +83,4 @@ export const parseSpeciesForSprite = ({
   if (backSprite) return SpriteUrls.baseUrl + SpriteUrls.animatedBackSprites + pokemonGif;
   if (shiny) return SpriteUrls.baseUrl + SpriteUrls.animatedShinySprites + pokemonGif;
   return SpriteUrls.baseUrl + SpriteUrls.animatedSprites + pokemonGif;
-};
+}

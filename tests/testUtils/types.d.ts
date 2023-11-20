@@ -1,4 +1,4 @@
-import { Ability, Item, Learnset, Move, Pokemon, TypeMatchup } from '#types';
+import { Ability, Item, Learnset, Move, Pokemon, TypeMatchup } from '#types/graphql-mapped-types';
 
 export interface Query {
   /** Gets the details on a Pokémon ability, using the ability name */

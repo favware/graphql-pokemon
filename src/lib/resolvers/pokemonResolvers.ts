@@ -1,10 +1,10 @@
 import { pokedex } from '#assets/pokedex';
 import { mapPokemonDataToPokemonGraphQL } from '#mappers/pokemonMapper';
-import type { Pokemon } from '#types';
+import type { Pokemon } from '#types/graphql-mapped-types';
+import type { NonNullish } from '#types/utility-types';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput } from '#utils/util';
-import type { NonNullish } from '#utils/utilTypes';
+import { preParseInput } from '#utils/utils';
 import { validateGetAllPokemonArgs, type GetAllPokemonArgs } from '#validations/pokemonArgs/getAllPokemonArgs';
 import { validateGetFuzzyPokemonArgs, type GetFuzzyPokemonArgs } from '#validations/pokemonArgs/getFuzzyPokemonArgs';
 import { validateGetPokemonArgs, type GetPokemonArgs } from '#validations/pokemonArgs/getPokemonArgs';

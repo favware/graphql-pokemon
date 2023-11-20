@@ -7,12 +7,12 @@ export function toTitleSnakeCaseWithoutHyphenConvert(str: string): string {
   return replaceSymbols(toTitleCase(str), '_', COMMON_SYMBOLS_WITHOUT_HYPHEN);
 }
 
-/** Converts a string to lower-hypen-case */
+/** Converts a string to lower-hyphen-case */
 export function toLowerHyphenCase(str: string): string {
   return replaceSymbols(str, '-').toLowerCase();
 }
 
-/** Converts a string to `singlewordlowercase */
+/** Converts a string to `singlewordlowercase` */
 export function toLowerSingleWordCase<T extends string>(str: T): T {
   return replaceSymbols(str, '').toLowerCase() as T;
 }

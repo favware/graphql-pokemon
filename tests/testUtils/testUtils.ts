@@ -1,6 +1,6 @@
 import { RootResolver } from '#resolvers/RootResolver';
 import type { Query } from '#test-utils/types';
-import { RootTypedef } from '#utils/typeDefs';
+import { RootTypedef } from '#utils/grapqhl-root-typedef-resolver';
 import { ApolloServer } from '@apollo/server';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import cors from '@koa/cors';

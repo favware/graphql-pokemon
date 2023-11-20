@@ -1,9 +1,9 @@
 import { abilities } from '#assets/abilities';
 import { mapAbilityDataToAbilityGraphQL } from '#mappers/abilityMapper';
-import type { Ability } from '#types';
 import { FuzzySearch } from '#utils/FuzzySearch';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { preParseInput } from '#utils/util';
+import type { Ability } from '#types/graphql-mapped-types';
+import { preParseInput } from '#utils/utils';
 import { validateGetFuzzyAbilityArgs, type GetFuzzyAbilityArgs } from '#validations/fuzzyArgs/fuzzyAbilityArgs';
 import { validateGetAbilityArgs, type GetAbilityArgs } from '#validations/getAbilityArgs';
 

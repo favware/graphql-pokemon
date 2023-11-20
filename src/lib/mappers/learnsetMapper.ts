@@ -3,12 +3,12 @@ import { moves } from '#assets/moves';
 import { pokedex } from '#assets/pokedex';
 import type { PokemonTypes } from '#assets/pokemon-source';
 import { mapMoveDataToMoveGraphQL } from '#mappers/moveMapper';
-import type { Learnset, LearnsetLevelUpMove, LearnsetMove, Move, PokemonLearnset } from '#types';
-import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import type { Learnset, LearnsetLevelUpMove, LearnsetMove, Move, PokemonLearnset } from '#types/graphql-mapped-types';
+import type { Generation, NonNullish } from '#types/utility-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { parseSpeciesForSprite } from '#utils/spriteParser';
-import { toLowerSingleWordCase } from '#utils/util';
-import type { Generation, NonNullish } from '#utils/utilTypes';
+import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import { parseSpeciesForSprite } from '#utils/sprite-parser';
+import { toLowerSingleWordCase } from '#utils/utils';
 import type { GetLearnsetArgs } from '#validations/getLearnsetArgs';
 import { cast, isNullish } from '@sapphire/utilities';
 

@@ -1,5 +1,8 @@
 import { cast } from '@sapphire/utilities';
 
+/**
+ * Represents the constructor for the GraphQLSet class.
+ */
 export interface GraphQLSetConstructor {
   new (): GraphQLSet<unknown>;
 

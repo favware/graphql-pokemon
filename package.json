@@ -16,9 +16,10 @@
   "sideEffects": false,
   "imports": {
     "#assets/*": "./api/lib/assets/*.js",
-    "#jsonAssets/*": "./api/lib/assets/*",
+    "#jsonAssets/*": "./api/lib/assets/*.json",
     "#dexdata/*": "./api/lib/assets/pokedex-data/*.js",
     "#resolvers/*": "./api/lib/resolvers/*.js",
+    "#types/*": "./api/lib/types/*.js",
     "#utils/*": "./api/lib/utils/*.js",
     "#validations/*": "./api/lib/validations/*.js",
     "#mappers/*": "./api/lib/mappers/*.js",

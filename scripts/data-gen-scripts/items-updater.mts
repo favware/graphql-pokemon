@@ -15,7 +15,7 @@ const { ItemsText } = await importFileFromWeb({
   temporaryFileName: 'item-texts.mjs'
 });
 
-const itemDataEntries = Object.entries<ItemData>(Items);
+const itemsDataEntries = Object.entries<ItemData>(Items);
 const itemsTextEntries = Object.entries<ItemText>(ItemsText);
 
 const newMap = new Map();
@@ -23,8 +23,8 @@ const newMap = new Map();
 for (let [key, data] of currentItems.entries()) {
   Reflect.deleteProperty(data, 'key');
 
-  const itemFromData: any = itemDataEntries.find(([itemKey]) => itemKey === key)?.at(1);
-  const itemsFromText: any = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1);
+  const itemFromData = itemsDataEntries.find(([itemKey]) => itemKey === key)?.at(1) as ItemData;
+  const itemFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1) as ItemText;
 
   if (itemFromData) {
     if (itemFromData.isNonstandard === 'Past') {
@@ -33,6 +33,10 @@ for (let [key, data] of currentItems.entries()) {
       data.isNonstandard = IsNonStandard.Cap;
     } else if (itemFromData.isNonstandard === 'Unobtainable') {
       data.isNonstandard = IsNonStandard.Unobtainable;
+    } else if (itemFromData.isNonstandard === 'LGPE') {
+      data.isNonstandard = IsNonStandard.LetsGoPikachuEevee;
+    } else if (itemFromData.isNonstandard === 'Gigantamax') {
+      data.isNonstandard = IsNonStandard.Gigantamax;
     } else {
       Reflect.deleteProperty(data, 'isNonstandard');
     }
@@ -41,26 +45,25 @@ for (let [key, data] of currentItems.entries()) {
     data.name = itemFromData.name;
   }
 
-  if (itemsFromText) {
-    data.desc = itemsFromText.desc;
-    if (itemsFromText.shortDesc) {
-      data.shortDesc = itemsFromText.shortDesc;
+  if (itemFromText) {
+    data.desc = itemFromText.desc;
+    if (itemFromText.shortDesc) {
+      data.shortDesc = itemFromText.shortDesc;
     }
   }
 
   newMap.set(key, sortObjectByKey(data));
 }
 
-for (const [key, itemFromData] of itemDataEntries) {
+for (const [key, itemFromData] of itemsDataEntries) {
   // Skip if the item is already in the map
   if (newMap.has(key)) continue;
 
-  const itemsFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1);
-  let castedItemsFromText = itemsFromText as ItemText;
+  let itemFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1) as ItemText | undefined;
 
-  if (typeof itemsFromText === 'undefined' || typeof itemsFromText === 'string') {
+  if (!itemFromText) {
     if (key === 'strangeball') {
-      castedItemsFromText = {
+      itemFromText = {
         desc: 'In Pokémon Brilliant Diamond and Shining Pearl, Pokémon Legends: Arceus, and Pokémon Scarlet and Violet, Pokémon caught in Poké Balls that do not exist in that game instead display a Strange Ball as their Poké Ball.',
         shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.',
         name: 'Strange Ball'
@@ -72,7 +75,7 @@ for (const [key, itemFromData] of itemDataEntries) {
   }
 
   let data: PokemonTypes.Item = {
-    desc: castedItemsFromText.desc,
+    desc: itemFromText.desc,
     gen: itemFromData.gen,
     name: itemFromData.name
   };
@@ -83,10 +86,14 @@ for (const [key, itemFromData] of itemDataEntries) {
     data.isNonstandard = IsNonStandard.Cap;
   } else if (itemFromData.isNonstandard === 'Unobtainable') {
     data.isNonstandard = IsNonStandard.Unobtainable;
+  } else if (itemFromData.isNonstandard === 'LGPE') {
+    data.isNonstandard = IsNonStandard.LetsGoPikachuEevee;
+  } else if (itemFromData.isNonstandard === 'Gigantamax') {
+    data.isNonstandard = IsNonStandard.Gigantamax;
   }
 
-  if (castedItemsFromText.shortDesc) {
-    data.shortDesc = castedItemsFromText.shortDesc;
+  if (itemFromText.shortDesc) {
+    data.shortDesc = itemFromText.shortDesc;
   }
 
   newMap.set(key, sortObjectByKey(data));

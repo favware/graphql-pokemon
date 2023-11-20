@@ -7,7 +7,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'abilityshield',
     {
-      desc: "Holder's Ability cannot be changed by another Pokémon.",
+      desc: "Holder's Ability cannot be changed by any effect.",
       gen: 9,
       name: 'Ability Shield'
     }
@@ -54,7 +54,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Adamant Orb'
     }
   ],
@@ -223,7 +222,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'auspiciousarmor',
     {
-      desc: 'A peculiar set of armor that can make a certain species of Pokémon evolve. Auspicious wishes live within it.',
+      desc: 'Evolves Charcadet into Armarouge when used.',
       gen: 9,
       name: 'Auspicious Armor',
       shortDesc: 'This item can be used to evolve Charcadet into Armarouge.'
@@ -288,7 +287,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'beastball',
     {
-      desc: 'A special Poké Ball designed to catch Ultra Beasts.',
+      desc: 'A special Poke Ball designed to catch Ultra Beasts.',
       gen: 7,
       name: 'Beast Ball'
     }
@@ -355,6 +354,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Berry Sweet'
     }
   ],
@@ -469,7 +469,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     'blueorb',
     {
       desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
-      gen: 3,
+      gen: 6,
       isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Blue Orb',
@@ -491,6 +491,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       name: 'Bluk Berry'
     }
   ],
@@ -505,7 +506,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'boosterenergy',
     {
-      desc: 'Activates the Protosynthesis or Quark Drive abilities. Single use.',
+      desc: 'Activates the Protosynthesis or Quark Drive Abilities. Single use.',
       gen: 9,
       name: 'Booster Energy'
     }
@@ -523,7 +524,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 2,
-      name: 'BrightPowder'
+      name: 'Bright Powder'
     }
   ],
   [
@@ -672,7 +673,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'cherishball',
     {
-      desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.',
+      desc: 'A rare Poke Ball that has been crafted to commemorate an occasion.',
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Cherish Ball'
@@ -760,7 +761,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'clearamulet',
     {
-      desc: "Prevents other Pokémon from lowering this Pokémon's stat stages.",
+      desc: "Prevents other Pokémon from lowering the holder's stat stages.",
       gen: 9,
       name: 'Clear Amulet'
     }
@@ -780,6 +781,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Clover Sweet'
     }
   ],
@@ -918,7 +920,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
       aliases: ['custap'],
       desc: 'Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Custap Berry'
     }
   ],
@@ -1077,7 +1078,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'diveball',
     {
-      desc: 'A Poké Ball that works especially well on Pokémon that live underwater.',
+      desc: 'A Poke Ball that works especially well on Pokémon that live underwater.',
       gen: 3,
       name: 'Dive Ball'
     }
@@ -1136,7 +1137,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Draco Plate'
     }
   ],
@@ -1208,14 +1208,13 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Dread Plate'
     }
   ],
   [
     'dreamball',
     {
-      desc: "A Poké Ball that makes it easier to catch wild Pokémon while they're asleep.",
+      desc: "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep.",
       gen: 5,
       name: 'Dream Ball'
     }
@@ -1252,7 +1251,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'duskball',
     {
-      desc: 'A Poké Ball that makes it easier to catch wild Pokémon at night or in caves.',
+      desc: 'A Poke Ball that makes it easier to catch wild Pokémon at night or in caves.',
       gen: 4,
       name: 'Dusk Ball'
     }
@@ -1281,7 +1280,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Earth Plate'
     }
   ],
@@ -1407,7 +1405,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Restores 1/4 max HP after holder is hit by a supereffective move. Single use.',
       gen: 3,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Enigma Berry'
     }
   ],
@@ -1559,7 +1556,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'fastball',
     {
-      desc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.',
+      desc: 'A Poke Ball that makes it easier to catch Pokémon which are quick to run away.',
       gen: 2,
       name: 'Fast Ball'
     }
@@ -1669,7 +1666,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Fist Plate'
     }
   ],
@@ -1686,7 +1682,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Flame Plate'
     }
   ],
@@ -1696,6 +1691,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Flower Sweet'
     }
   ],
@@ -1802,7 +1798,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'friendball',
     {
-      desc: 'A Poké Ball that makes caught Pokémon more friendly.',
+      desc: 'A Poke Ball that makes caught Pokémon more friendly.',
       gen: 2,
       name: 'Friend Ball'
     }
@@ -1812,7 +1808,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Holder moves last in its priority bracket.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Full Incense'
     }
   ],
@@ -1839,7 +1835,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Galarica Cuff',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png'
     }
@@ -1849,7 +1845,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Galarica Wreath',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png'
     }
@@ -2098,7 +2094,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'greatball',
     {
-      desc: 'A high-performance Ball that provides a higher catch rate than a Poké Ball.',
+      desc: 'A high-performance Ball that provides a higher catch rate than a Poke Ball.',
       gen: 1,
       name: 'Great Ball'
     }
@@ -2134,7 +2130,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Griseous Orb'
     }
   ],
@@ -2223,7 +2218,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'healball',
     {
-      desc: "A remedial Poké Ball that restores the caught Pokémon's HP and status problem.",
+      desc: "A remedial Poke Ball that restores the caught Pokémon's HP and status problem.",
       gen: 4,
       name: 'Heal Ball'
     }
@@ -2239,7 +2234,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'heavyball',
     {
-      desc: 'A Poké Ball for catching very heavy Pokémon.',
+      desc: 'A Poke Ball for catching very heavy Pokémon.',
       gen: 2,
       name: 'Heavy Ball'
     }
@@ -2384,7 +2379,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Icicle Plate'
     }
   ],
@@ -2429,7 +2423,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Insect Plate'
     }
   ],
@@ -2456,7 +2449,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Iron Plate'
     }
   ],
@@ -2476,7 +2468,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Jaboca Berry'
     }
   ],
@@ -2539,7 +2530,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
       gen: 6,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Kee Berry'
     }
   ],
@@ -2678,7 +2668,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 3,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Lax Incense'
     }
   ],
@@ -2762,7 +2752,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'levelball',
     {
-      desc: 'A Poké Ball for catching Pokémon that are a lower level than your own.',
+      desc: 'A Poke Ball for catching Pokémon that are a lower level than your own.',
       gen: 2,
       name: 'Level Ball'
     }
@@ -2833,7 +2823,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'loadeddice',
     {
-      desc: "Holder's 5 hit multi-hit attacks will always hit at least 4 times.",
+      desc: "Holder's moves that hit 2-5 times hit 4-5 times; Population Bomb hits 4-10 times.",
       gen: 9,
       name: 'Loaded Dice'
     }
@@ -2890,7 +2880,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'loveball',
     {
-      desc: 'Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.',
+      desc: 'Poke Ball for catching Pokémon that are the opposite gender of your Pokémon.',
       gen: 2,
       name: 'Love Ball'
     }
@@ -2900,6 +2890,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Love Sweet'
     }
   ],
@@ -2960,7 +2951,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'lureball',
     {
-      desc: 'A Poké Ball for catching Pokémon hooked by a Rod when fishing.',
+      desc: 'A Poke Ball for catching Pokémon hooked by a Rod when fishing.',
       gen: 2,
       name: 'Lure Ball'
     }
@@ -2970,14 +2961,13 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Lustrous Orb'
     }
   ],
   [
     'luxuryball',
     {
-      desc: 'A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.',
+      desc: 'A comfortable Poke Ball that makes a caught wild Pokémon quickly grow friendly.',
       gen: 3,
       name: 'Luxury Ball'
     }
@@ -3017,6 +3007,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       name: 'Macho Brace'
     }
   ],
@@ -3036,6 +3027,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Magmar into Magmortar when traded.',
       gen: 4,
+      isNonstandard: IsNonStandard.Past,
       name: 'Magmarizer'
     }
   ],
@@ -3106,7 +3098,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'maliciousarmor',
     {
-      desc: 'A peculiar set of armor that can make a certain species of Pokémon evolve. Malicious will lurks within it.',
+      desc: 'Evolves Charcadet into Ceruledge when used.',
       gen: 9,
       name: 'Malicious Armor',
       shortDesc: 'This item can be used to evolve Charcadet into Ceruledge.'
@@ -3126,7 +3118,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
       gen: 6,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Maranga Berry'
     }
   ],
@@ -3169,7 +3160,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Meadow Plate'
     }
   ],
@@ -3254,6 +3244,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "If held by a Ditto that hasn't Transformed, its Defense is doubled.",
       gen: 2,
+      isNonstandard: IsNonStandard.Past,
       name: 'Metal Powder'
     }
   ],
@@ -3318,7 +3309,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Micle Berry'
     }
   ],
@@ -3336,7 +3326,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Mind Plate'
     }
   ],
@@ -3379,7 +3368,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'mirrorherb',
     {
-      desc: 'When an opposing Pokémon recieves stat boosts, those boosts are copied. Single use.',
+      desc: 'When an opposing Pokémon raises a stat stage, the holder copies it. Single use.',
       gen: 9,
       name: 'Mirror Herb'
     }
@@ -3395,7 +3384,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'moonball',
     {
-      desc: 'A Poké Ball for catching Pokémon that evolve using the Moon Stone.',
+      desc: 'A Poke Ball for catching Pokémon that evolve using the Moon Stone.',
       gen: 2,
       name: 'Moon Ball'
     }
@@ -3477,7 +3466,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'nestball',
     {
-      desc: 'A Poké Ball that works especially well on weaker Pokémon in the wild.',
+      desc: 'A Poke Ball that works especially well on weaker Pokémon in the wild.',
       gen: 3,
       name: 'Nest Ball'
     }
@@ -3485,7 +3474,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'netball',
     {
-      desc: 'A Poké Ball that works especially well on Water- and Bug-type Pokémon.',
+      desc: 'A Poke Ball that works especially well on Water- and Bug-type Pokémon.',
       gen: 3,
       name: 'Net Ball'
     }
@@ -3522,7 +3511,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Normal Gem'
     }
   ],
@@ -3588,7 +3576,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Psychic-type attacks have 1.2x power.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Odd Incense'
     }
   ],
@@ -3720,7 +3708,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'parkball',
     {
-      desc: 'A special Poké Ball for the Pal Park.',
+      desc: 'A special Poke Ball for the Pal Park.',
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Park Ball'
@@ -3829,6 +3817,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
       gen: 3,
+      isNonstandard: IsNonStandard.Past,
       name: 'Pinap Berry'
     }
   ],
@@ -3865,7 +3854,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
       gen: 6,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Pixie Plate'
     }
   ],
@@ -3957,7 +3945,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A device for catching wild Pokémon. It is designed as a capsule system.',
       gen: 1,
-      name: 'Poké Ball'
+      name: 'Poke Ball'
     }
   ],
   [
@@ -3998,7 +3986,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 8,
       keyItem: true,
       name: 'Pokémon Box Link',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokemonboxlink.png'
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pokémonboxlink.png'
     }
   ],
   [
@@ -4116,7 +4104,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'premierball',
     {
-      desc: 'A rare Poké Ball that has been crafted to commemorate an event.',
+      desc: 'A rare Poke Ball that has been crafted to commemorate an event.',
       gen: 3,
       name: 'Premier Ball'
     }
@@ -4135,7 +4123,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Feebas into Milotic when traded.',
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Prism Scale'
     }
   ],
@@ -4261,7 +4248,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'punchingglove',
     {
-      desc: "Holder's punch-based attacks do 1.1x damage and avoid adverse contact effects.",
+      desc: "Holder's punch-based attacks have 1.1x power and do not make contact.",
       gen: 9,
       name: 'Punching Glove'
     }
@@ -4287,7 +4274,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'quickball',
     {
-      desc: 'A Poké Ball that provides a better catch rate at the start of a wild encounter.',
+      desc: 'A Poke Ball that provides a better catch rate at the start of a wild encounter.',
       gen: 4,
       name: 'Quick Ball'
     }
@@ -4305,6 +4292,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "If held by a Ditto that hasn't Transformed, its Speed is doubled.",
       gen: 4,
+      isNonstandard: IsNonStandard.Past,
       name: 'Quick Powder'
     }
   ],
@@ -4388,7 +4376,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
       gen: 4,
-      isNonstandard: IsNonStandard.Past,
       name: 'Razor Fang',
       shortDesc: "Holder's attacks without a chance to flinch gain a 10% chance to flinch."
     }
@@ -4407,7 +4394,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Dusclops into Dusknoir when traded.',
       gen: 4,
-      isNonstandard: IsNonStandard.Past,
       name: 'Reaper Cloth'
     }
   ],
@@ -4433,7 +4419,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     'redorb',
     {
       desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
-      gen: 3,
+      gen: 6,
       isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Red Orb',
@@ -4463,7 +4449,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'repeatball',
     {
-      desc: 'A Poké Ball that works well on Pokémon species that were previously caught.',
+      desc: 'A Poke Ball that works well on Pokémon species that were previously caught.',
       gen: 3,
       name: 'Repeat Ball'
     }
@@ -4483,6 +4469,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Ribbon Sweet'
     }
   ],
@@ -4570,7 +4557,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Rock-type attacks have 1.2x power.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Rock Incense'
     }
   ],
@@ -4641,7 +4628,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Grass-type attacks have 1.2x power.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Rose Incense'
     }
   ],
@@ -4688,7 +4675,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.',
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Rowap Berry'
     }
   ],
@@ -4718,7 +4704,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Zamazenta, this item changes its forme to Crowned Shield.',
       gen: 8,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Rusted Shield'
     }
   ],
@@ -4727,7 +4712,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Zacian, this item changes its forme to Crowned Sword.',
       gen: 8,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Rusted Sword'
     }
   ],
@@ -4752,8 +4736,9 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'safariball',
     {
-      desc: 'A special Poké Ball that is used only in the Safari Zone and Great Marsh.',
+      desc: 'A special Poke Ball that is used only in the Safari Zone and Great Marsh.',
       gen: 1,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Safari Ball'
     }
   ],
@@ -4780,7 +4765,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       aliases: ['salac'],
       desc: "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
-      gen: 6,
+      gen: 3,
       name: 'Salac Berry'
     }
   ],
@@ -4866,7 +4851,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 3,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Sea Incense'
     }
   ],
@@ -5038,7 +5023,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Sky Plate'
     }
   ],
@@ -5165,7 +5149,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Splash Plate'
     }
   ],
@@ -5174,15 +5157,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Spooky Plate'
     }
   ],
   [
     'sportball',
     {
-      desc: 'A special Poké Ball for the Bug-Catching Contest.',
+      desc: 'A special Poke Ball for the Bug-Catching Contest.',
       gen: 2,
+      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Sport Ball'
     }
   ],
@@ -5239,6 +5222,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Star Sweet'
     }
   ],
@@ -5309,7 +5293,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Stone Plate'
     }
   ],
@@ -5328,6 +5311,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
+      isNonstandard: IsNonStandard.Past,
       name: 'Strawberry Sweet'
     }
   ],
@@ -5516,7 +5500,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'timerball',
     {
-      desc: 'A Poké Ball that becomes better the more turns there are in a battle.',
+      desc: 'A Poke Ball that becomes better the more turns there are in a battle.',
       gen: 3,
       name: 'Timer Ball'
     }
@@ -5565,7 +5549,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Toxic Plate'
     }
   ],
@@ -5778,7 +5761,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
+      isNonstandard: IsNonStandard.Past,
       name: 'Wave Incense'
     }
   ],
@@ -5895,7 +5878,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
       gen: 4,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Zap Plate'
     }
   ],
@@ -5935,6 +5917,1004 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Zygarde Cube',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
+    }
+  ],
+  [
+    'adamantcrystal',
+    {
+      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
+      gen: 8,
+      name: 'Adamant Crystal'
+    }
+  ],
+  [
+    'bignugget',
+    {
+      desc: 'A big nugget of pure gold that gives off a lustrous gleam.',
+      gen: 5,
+      name: 'Big Nugget'
+    }
+  ],
+  [
+    'cornerstonemask',
+    {
+      desc: 'Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.',
+      gen: 9,
+      name: 'Cornerstone Mask'
+    }
+  ],
+  [
+    'fairyfeather',
+    {
+      desc: "Holder's Fairy-type attacks have 1.2x power.",
+      gen: 9,
+      name: 'Fairy Feather'
+    }
+  ],
+  [
+    'griseouscore',
+    {
+      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
+      gen: 8,
+      name: 'Griseous Core'
+    }
+  ],
+  [
+    'hearthflamemask',
+    {
+      desc: 'Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.',
+      gen: 9,
+      name: 'Hearthflame Mask'
+    }
+  ],
+  [
+    'lustrousglobe',
+    {
+      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
+      gen: 8,
+      name: 'Lustrous Globe'
+    }
+  ],
+  [
+    'masterpieceteacup',
+    {
+      desc: 'Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.',
+      gen: 9,
+      name: 'Masterpiece Teacup'
+    }
+  ],
+  [
+    'strangeball',
+    {
+      desc: 'In Pokémon Brilliant Diamond and Shining Pearl, Pokémon Legends: Arceus, and Pokémon Scarlet and Violet, Pokémon caught in Poké Balls that do not exist in that game instead display a Strange Ball as their Poké Ball.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Strange Ball',
+      shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.'
+    }
+  ],
+  [
+    'syrupyapple',
+    {
+      desc: 'Evolves Applin into Dipplin when used.',
+      gen: 9,
+      name: 'Syrupy Apple'
+    }
+  ],
+  [
+    'tr00',
+    {
+      desc: 'Teaches certain Pokémon the move Swords Dance. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR00'
+    }
+  ],
+  [
+    'tr01',
+    {
+      desc: 'Teaches certain Pokémon the move Body Slam. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR01'
+    }
+  ],
+  [
+    'tr02',
+    {
+      desc: 'Teaches certain Pokémon the move Flamethrower. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR02'
+    }
+  ],
+  [
+    'tr03',
+    {
+      desc: 'Teaches certain Pokémon the move Hydro Pump. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR03'
+    }
+  ],
+  [
+    'tr04',
+    {
+      desc: 'Teaches certain Pokémon the move Surf. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR04'
+    }
+  ],
+  [
+    'tr05',
+    {
+      desc: 'Teaches certain Pokémon the move Ice Beam. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR05'
+    }
+  ],
+  [
+    'tr06',
+    {
+      desc: 'Teaches certain Pokémon the move Blizzard. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR06'
+    }
+  ],
+  [
+    'tr07',
+    {
+      desc: 'Teaches certain Pokémon the move Low Kick. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR07'
+    }
+  ],
+  [
+    'tr08',
+    {
+      desc: 'Teaches certain Pokémon the move Thunderbolt. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR08'
+    }
+  ],
+  [
+    'tr09',
+    {
+      desc: 'Teaches certain Pokémon the move Thunder. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR09'
+    }
+  ],
+  [
+    'tr10',
+    {
+      desc: 'Teaches certain Pokémon the move Earthquake. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR10'
+    }
+  ],
+  [
+    'tr11',
+    {
+      desc: 'Teaches certain Pokémon the move Psychic. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR11'
+    }
+  ],
+  [
+    'tr12',
+    {
+      desc: 'Teaches certain Pokémon the move Agility. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR12'
+    }
+  ],
+  [
+    'tr13',
+    {
+      desc: 'Teaches certain Pokémon the move Focus Energy. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR13'
+    }
+  ],
+  [
+    'tr14',
+    {
+      desc: 'Teaches certain Pokémon the move Metronome. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR14'
+    }
+  ],
+  [
+    'tr15',
+    {
+      desc: 'Teaches certain Pokémon the move Fire Blast. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR15'
+    }
+  ],
+  [
+    'tr16',
+    {
+      desc: 'Teaches certain Pokémon the move Waterfall. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR16'
+    }
+  ],
+  [
+    'tr17',
+    {
+      desc: 'Teaches certain Pokémon the move Amnesia. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR17'
+    }
+  ],
+  [
+    'tr18',
+    {
+      desc: 'Teaches certain Pokémon the move Leech Life. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR18'
+    }
+  ],
+  [
+    'tr19',
+    {
+      desc: 'Teaches certain Pokémon the move Tri Attack. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR19'
+    }
+  ],
+  [
+    'tr20',
+    {
+      desc: 'Teaches certain Pokémon the move Substitute. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR20'
+    }
+  ],
+  [
+    'tr21',
+    {
+      desc: 'Teaches certain Pokémon the move Reversal. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR21'
+    }
+  ],
+  [
+    'tr22',
+    {
+      desc: 'Teaches certain Pokémon the move Sludge Bomb. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR22'
+    }
+  ],
+  [
+    'tr23',
+    {
+      desc: 'Teaches certain Pokémon the move Spikes. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR23'
+    }
+  ],
+  [
+    'tr24',
+    {
+      desc: 'Teaches certain Pokémon the move Outrage. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR24'
+    }
+  ],
+  [
+    'tr25',
+    {
+      desc: 'Teaches certain Pokémon the move Psyshock. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR25'
+    }
+  ],
+  [
+    'tr26',
+    {
+      desc: 'Teaches certain Pokémon the move Endure. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR26'
+    }
+  ],
+  [
+    'tr27',
+    {
+      desc: 'Teaches certain Pokémon the move Sleep Talk. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR27'
+    }
+  ],
+  [
+    'tr28',
+    {
+      desc: 'Teaches certain Pokémon the move Megahorn. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR28'
+    }
+  ],
+  [
+    'tr29',
+    {
+      desc: 'Teaches certain Pokémon the move Baton Pass. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR29'
+    }
+  ],
+  [
+    'tr30',
+    {
+      desc: 'Teaches certain Pokémon the move Encore. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR30'
+    }
+  ],
+  [
+    'tr31',
+    {
+      desc: 'Teaches certain Pokémon the move Iron Tail. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR31'
+    }
+  ],
+  [
+    'tr32',
+    {
+      desc: 'Teaches certain Pokémon the move Crunch. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR32'
+    }
+  ],
+  [
+    'tr33',
+    {
+      desc: 'Teaches certain Pokémon the move Shadow Ball. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR33'
+    }
+  ],
+  [
+    'tr34',
+    {
+      desc: 'Teaches certain Pokémon the move Future Sight. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR34'
+    }
+  ],
+  [
+    'tr35',
+    {
+      desc: 'Teaches certain Pokémon the move Uproar. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR35'
+    }
+  ],
+  [
+    'tr36',
+    {
+      desc: 'Teaches certain Pokémon the move Heat Wave. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR36'
+    }
+  ],
+  [
+    'tr37',
+    {
+      desc: 'Teaches certain Pokémon the move Taunt. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR37'
+    }
+  ],
+  [
+    'tr38',
+    {
+      desc: 'Teaches certain Pokémon the move Trick. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR38'
+    }
+  ],
+  [
+    'tr39',
+    {
+      desc: 'Teaches certain Pokémon the move Superpower. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR39'
+    }
+  ],
+  [
+    'tr40',
+    {
+      desc: 'Teaches certain Pokémon the move Skill Swap. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR40'
+    }
+  ],
+  [
+    'tr41',
+    {
+      desc: 'Teaches certain Pokémon the move Blaze Kick. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR41'
+    }
+  ],
+  [
+    'tr42',
+    {
+      desc: 'Teaches certain Pokémon the move Hyper Voice. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR42'
+    }
+  ],
+  [
+    'tr43',
+    {
+      desc: 'Teaches certain Pokémon the move Overheat. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR43'
+    }
+  ],
+  [
+    'tr44',
+    {
+      desc: 'Teaches certain Pokémon the move Cosmic Power. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR44'
+    }
+  ],
+  [
+    'tr45',
+    {
+      desc: 'Teaches certain Pokémon the move Muddy Water. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR45'
+    }
+  ],
+  [
+    'tr46',
+    {
+      desc: 'Teaches certain Pokémon the move Iron Defense. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR46'
+    }
+  ],
+  [
+    'tr47',
+    {
+      desc: 'Teaches certain Pokémon the move Dragon Claw. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR47'
+    }
+  ],
+  [
+    'tr48',
+    {
+      desc: 'Teaches certain Pokémon the move Bulk Up. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR48'
+    }
+  ],
+  [
+    'tr49',
+    {
+      desc: 'Teaches certain Pokémon the move Calm Mind. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR49'
+    }
+  ],
+  [
+    'tr50',
+    {
+      desc: 'Teaches certain Pokémon the move Leaf Blade. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR50'
+    }
+  ],
+  [
+    'tr51',
+    {
+      desc: 'Teaches certain Pokémon the move Dragon Dance. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR51'
+    }
+  ],
+  [
+    'tr52',
+    {
+      desc: 'Teaches certain Pokémon the move Gyro Ball. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR52'
+    }
+  ],
+  [
+    'tr53',
+    {
+      desc: 'Teaches certain Pokémon the move Close Combat. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR53'
+    }
+  ],
+  [
+    'tr54',
+    {
+      desc: 'Teaches certain Pokémon the move Toxic Spikes. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR54'
+    }
+  ],
+  [
+    'tr55',
+    {
+      desc: 'Teaches certain Pokémon the move Flare Blitz. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR55'
+    }
+  ],
+  [
+    'tr56',
+    {
+      desc: 'Teaches certain Pokémon the move Aura Sphere. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR56'
+    }
+  ],
+  [
+    'tr57',
+    {
+      desc: 'Teaches certain Pokémon the move Poison Jab. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR57'
+    }
+  ],
+  [
+    'tr58',
+    {
+      desc: 'Teaches certain Pokémon the move Dark Pulse. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR58'
+    }
+  ],
+  [
+    'tr59',
+    {
+      desc: 'Teaches certain Pokémon the move Seed Bomb. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR59'
+    }
+  ],
+  [
+    'tr60',
+    {
+      desc: 'Teaches certain Pokémon the move X-Scissor. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR60'
+    }
+  ],
+  [
+    'tr61',
+    {
+      desc: 'Teaches certain Pokémon the move Bug Buzz. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR61'
+    }
+  ],
+  [
+    'tr62',
+    {
+      desc: 'Teaches certain Pokémon the move Dragon Pulse. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR62'
+    }
+  ],
+  [
+    'tr63',
+    {
+      desc: 'Teaches certain Pokémon the move Power Gem. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR63'
+    }
+  ],
+  [
+    'tr64',
+    {
+      desc: 'Teaches certain Pokémon the move Focus Blast. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR64'
+    }
+  ],
+  [
+    'tr65',
+    {
+      desc: 'Teaches certain Pokémon the move Energy Ball. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR65'
+    }
+  ],
+  [
+    'tr66',
+    {
+      desc: 'Teaches certain Pokémon the move Brave Bird. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR66'
+    }
+  ],
+  [
+    'tr67',
+    {
+      desc: 'Teaches certain Pokémon the move Earth Power. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR67'
+    }
+  ],
+  [
+    'tr68',
+    {
+      desc: 'Teaches certain Pokémon the move Nasty Plot. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR68'
+    }
+  ],
+  [
+    'tr69',
+    {
+      desc: 'Teaches certain Pokémon the move Zen Headbutt. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR69'
+    }
+  ],
+  [
+    'tr70',
+    {
+      desc: 'Teaches certain Pokémon the move Flash Cannon. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR70'
+    }
+  ],
+  [
+    'tr71',
+    {
+      desc: 'Teaches certain Pokémon the move Leaf Storm. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR71'
+    }
+  ],
+  [
+    'tr72',
+    {
+      desc: 'Teaches certain Pokémon the move Power Whip. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR72'
+    }
+  ],
+  [
+    'tr73',
+    {
+      desc: 'Teaches certain Pokémon the move Gunk Shot. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR73'
+    }
+  ],
+  [
+    'tr74',
+    {
+      desc: 'Teaches certain Pokémon the move Iron Head. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR74'
+    }
+  ],
+  [
+    'tr75',
+    {
+      desc: 'Teaches certain Pokémon the move Stone Edge. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR75'
+    }
+  ],
+  [
+    'tr76',
+    {
+      desc: 'Teaches certain Pokémon the move Stealth Rock. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR76'
+    }
+  ],
+  [
+    'tr77',
+    {
+      desc: 'Teaches certain Pokémon the move Grass Knot. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR77'
+    }
+  ],
+  [
+    'tr78',
+    {
+      desc: 'Teaches certain Pokémon the move Sludge Wave. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR78'
+    }
+  ],
+  [
+    'tr79',
+    {
+      desc: 'Teaches certain Pokémon the move Heavy Slam. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR79'
+    }
+  ],
+  [
+    'tr80',
+    {
+      desc: 'Teaches certain Pokémon the move Electro Ball. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR80'
+    }
+  ],
+  [
+    'tr81',
+    {
+      desc: 'Teaches certain Pokémon the move Foul Play. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR81'
+    }
+  ],
+  [
+    'tr82',
+    {
+      desc: 'Teaches certain Pokémon the move Stored Power. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR82'
+    }
+  ],
+  [
+    'tr83',
+    {
+      desc: 'Teaches certain Pokémon the move Ally Switch. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR83'
+    }
+  ],
+  [
+    'tr84',
+    {
+      desc: 'Teaches certain Pokémon the move Scald. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR84'
+    }
+  ],
+  [
+    'tr85',
+    {
+      desc: 'Teaches certain Pokémon the move Work Up. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR85'
+    }
+  ],
+  [
+    'tr86',
+    {
+      desc: 'Teaches certain Pokémon the move Wild Charge. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR86'
+    }
+  ],
+  [
+    'tr87',
+    {
+      desc: 'Teaches certain Pokémon the move Drill Run. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR87'
+    }
+  ],
+  [
+    'tr88',
+    {
+      desc: 'Teaches certain Pokémon the move Heat Crash. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR88'
+    }
+  ],
+  [
+    'tr89',
+    {
+      desc: 'Teaches certain Pokémon the move Hurricane. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR89'
+    }
+  ],
+  [
+    'tr90',
+    {
+      desc: 'Teaches certain Pokémon the move Play Rough. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR90'
+    }
+  ],
+  [
+    'tr91',
+    {
+      desc: 'Teaches certain Pokémon the move Venom Drench. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR91'
+    }
+  ],
+  [
+    'tr92',
+    {
+      desc: 'Teaches certain Pokémon the move Dazzling Gleam. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR92'
+    }
+  ],
+  [
+    'tr93',
+    {
+      desc: 'Teaches certain Pokémon the move Darkest Lariat. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR93'
+    }
+  ],
+  [
+    'tr94',
+    {
+      desc: 'Teaches certain Pokémon the move High Horsepower. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR94'
+    }
+  ],
+  [
+    'tr95',
+    {
+      desc: 'Teaches certain Pokémon the move Throat Chop. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR95'
+    }
+  ],
+  [
+    'tr96',
+    {
+      desc: 'Teaches certain Pokémon the move Pollen Puff. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR96'
+    }
+  ],
+  [
+    'tr97',
+    {
+      desc: 'Teaches certain Pokémon the move Psychic Fangs. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR97'
+    }
+  ],
+  [
+    'tr98',
+    {
+      desc: 'Teaches certain Pokémon the move Liquidation. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR98'
+    }
+  ],
+  [
+    'tr99',
+    {
+      desc: 'Teaches certain Pokémon the move Body Press. One use.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Past,
+      name: 'TR99'
+    }
+  ],
+  [
+    'unremarkableteacup',
+    {
+      desc: 'Evolves Poltchageist into Sinistcha when used.',
+      gen: 9,
+      name: 'Unremarkable Teacup'
+    }
+  ],
+  [
+    'wellspringmask',
+    {
+      desc: 'Ogerpon-Wellspring: 1.2x power attacks; Terastallize to gain Embody Aspect.',
+      gen: 9,
+      name: 'Wellspring Mask'
     }
   ]
 ]);

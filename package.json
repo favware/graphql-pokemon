@@ -7,11 +7,16 @@
   "type": "module",
   "main": "dist/graphql-pokemon.cjs",
   "module": "dist/graphql-pokemon.js",
-  "types": "dist/graphql-pokemon.d.ts",
+  "types": "dist/graphql-pokemon.d.cts",
   "exports": {
-    "types": "./dist/graphql-pokemon.d.ts",
-    "import": "./dist/graphql-pokemon.js",
-    "require": "./dist/graphql-pokemon.cjs"
+    "import": {
+      "types": "./dist/graphql-pokemon.d.ts",
+      "default": "./dist/graphql-pokemon.js"
+    },
+    "require": {
+      "types": "./dist/graphql-pokemon.d.cts",
+      "default": "./dist/graphql-pokemon.cjs"
+    }
   },
   "sideEffects": false,
   "imports": {

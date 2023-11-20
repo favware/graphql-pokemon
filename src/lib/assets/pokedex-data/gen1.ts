@@ -131,7 +131,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       forme: 'Gmax',
       formeLetter: 'G',
       genderRatio: { male: '87.5%', female: '12.5%' },
-      heightm: 2,
+      heightm: 24,
       isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
@@ -395,7 +395,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       forme: 'Gmax',
       formeLetter: 'G',
       genderRatio: { male: '87.5%', female: '12.5%' },
-      heightm: 1.6,
+      heightm: 25,
       isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
@@ -5055,7 +5055,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeablaze.png',
       species: 'tauros-paldea-blaze',
       types: [TypesEnum.Fighting, TypesEnum.Fire],
-      weightkg: 88.4,
+      weightkg: 85,
       aliases: ['paldeanfiretauros', 'taurospf', 'paldeantaurosfire', 'paldeaonblazetaurus', 'pladeantaurosblaze', 'taurospaldeafire']
     }
   ],
@@ -5084,7 +5084,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/tauros-paldeaaqua.png',
       species: 'tauros-paldea-aqua',
       types: [TypesEnum.Fighting, TypesEnum.Water],
-      weightkg: 88.4,
+      weightkg: 110,
       aliases: ['paldeanwatertauros', 'taurospw', 'paldeantauroswater', 'paldeanaquatauros', 'paldeantaurosaqua', 'taurospaldeawater']
     }
   ],

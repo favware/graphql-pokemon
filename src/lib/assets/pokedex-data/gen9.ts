@@ -754,7 +754,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       evYields: { hp: 0, atk: 0, def: 3, spa: 0, spd: 0, spe: 0 },
       evoLevel: 38,
       genderRatio: { male: '50%', female: '50%' },
-      heightm: 2.5,
+      heightm: 2.3,
       isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
@@ -1112,7 +1112,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'capsakid',
     {
       abilities: { first: 'chlorophyll', second: 'insomnia', hidden: 'klutz' },
-      baseStats: { hp: 52, atk: 62, def: 40, spa: 62, spd: 40, spe: 50 },
+      baseStats: { hp: 50, atk: 62, def: 40, spa: 62, spd: 40, spe: 50 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Green',
       eggGroups: ['Grass'],
@@ -2449,6 +2449,185 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Iron Leaves',
       types: [TypesEnum.Grass, TypesEnum.Psychic],
       weightkg: 125
+    }
+  ],
+  [
+    'dipplin',
+    {
+      abilities: { first: 'supersweetsyrup', second: 'gluttony', hidden: 'stickyhold' },
+      baseStats: { hp: 80, atk: 80, def: 110, spa: 95, spd: 80, spe: 40 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+      color: 'Green',
+      eggGroups: ['Grass', 'Dragon'],
+      evoLevel: 'use Syrupy Apple',
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.4,
+      isEggObtainable: true,
+      levellingRate: 'Erratic',
+      minimumHatchTime: 5140,
+      num: 1011,
+      prevo: 'applin',
+      species: 'dipplin',
+      types: [TypesEnum.Grass, TypesEnum.Dragon],
+      weightkg: 4.4
+    }
+  ],
+  [
+    'poltchageist',
+    {
+      abilities: { first: 'hospitality', hidden: 'heatproof' },
+      baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      color: 'Green',
+      eggGroups: ['Mineral', 'Amorphous'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['sinistcha'],
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.1,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 1012,
+      otherFormes: ['poltchageistartisan'],
+      species: 'poltchageist',
+      types: [TypesEnum.Grass, TypesEnum.Ghost],
+      weightkg: 1.1
+    }
+  ],
+  [
+    'poltchageistartisan',
+    {
+      abilities: { first: 'hospitality', hidden: 'heatproof' },
+      baseSpecies: 'Poltchageist',
+      baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
+      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      color: 'Green',
+      eggGroups: ['Mineral', 'Amorphous'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
+      evos: ['sinistchamasterpiece'],
+      forme: 'artisan',
+      formeLetter: 'A',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.1,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 1012,
+      otherFormes: ['poltchageist'],
+      species: 'poltchageist-artisan',
+      types: [TypesEnum.Grass, TypesEnum.Ghost],
+      weightkg: 1.1
+    }
+  ],
+  [
+    'sinistcha',
+    {
+      abilities: { first: 'hospitality', hidden: 'heatproof' },
+      baseForme: 'Unremarkable',
+      baseStats: { hp: 71, atk: 60, def: 106, spa: 121, spd: 80, spe: 70 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
+      color: 'Green',
+      eggGroups: ['Mineral', 'Amorphous'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 'use Unremarkable Teacup',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.2,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 1013,
+      otherFormes: ['sinistchamasterpiece'],
+      prevo: 'poltchageist',
+      species: 'sinistcha',
+      types: [TypesEnum.Grass, TypesEnum.Ghost],
+      weightkg: 2.2
+    }
+  ],
+  [
+    'sinistchamasterpiece',
+    {
+      abilities: { first: 'hospitality', hidden: 'heatproof' },
+      baseSpecies: 'Sinistcha',
+      baseStats: { hp: 71, atk: 60, def: 106, spa: 121, spd: 80, spe: 70 },
+      catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
+      color: 'Green',
+      eggGroups: ['Mineral', 'Amorphous'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      evoLevel: 'use Masterpiece Teacup',
+      forme: 'Masterpiece',
+      formeLetter: 'M',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.2,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 1013,
+      otherFormes: ['sinistcha'],
+      prevo: 'poltchageistartisan',
+      species: 'sinistcha-masterpiece',
+      types: [TypesEnum.Grass, TypesEnum.Ghost],
+      weightkg: 2.2
+    }
+  ],
+  [
+    'okidogi',
+    {
+      abilities: { first: 'toxicchain', hidden: 'guarddog' },
+      baseStats: { hp: 88, atk: 128, def: 115, spa: 58, spd: 86, spe: 80 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+      color: 'Black',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 1.8,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1014,
+      species: 'okidogi',
+      types: [TypesEnum.Poison, TypesEnum.Fighting],
+      weightkg: 92
+    }
+  ],
+  [
+    'munkidori',
+    {
+      abilities: { first: 'toxicchain', hidden: 'frisk' },
+      baseStats: { hp: 88, atk: 75, def: 66, spa: 130, spd: 90, spe: 106 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+      color: 'Black',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 1,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1015,
+      species: 'munkidori',
+      types: [TypesEnum.Poison, TypesEnum.Psychic],
+      weightkg: 12.2
+    }
+  ],
+  [
+    'fezandipiti',
+    {
+      abilities: { first: 'toxicchain', hidden: 'technician' },
+      baseStats: { hp: 88, atk: 91, def: 82, spa: 70, spd: 125, spe: 99 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+      color: 'Black',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 3, spe: 0 },
+      genderRatio: { male: '100%', female: '0%' },
+      heightm: 1.4,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1016,
+      species: 'fezandipiti',
+      types: [TypesEnum.Poison, TypesEnum.Fairy],
+      weightkg: 30.1
     }
   ]
 ];

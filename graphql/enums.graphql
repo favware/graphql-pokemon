@@ -302,6 +302,14 @@ enum AbilitiesEnum {
   wonderskin
   zenmode
   zerotohero
+  embodyaspectcornerstone
+  embodyaspecthearthflame
+  embodyaspectteal
+  embodyaspectwellspring
+  hospitality
+  mindseye
+  supersweetsyrup
+  toxicchain
 }
 
 "The supported Pokémon"

@@ -1,5 +1,6 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
 import { Collection } from '@discordjs/collection';
+import { IsNonStandard } from '#utils/isNonStandardEnum';
 
 /** The abilities in Pokémon */
 export const abilities = new Collection<string, PokemonTypes.Ability>([
@@ -53,9 +54,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'angershell',
     {
-      desc: 'When this Pokémon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Attack, Special Attack, and Speed are raised by 1 stage, and its Defense and Speed are lowered by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.',
+      desc: 'When this Pokémon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Attack, Special Attack, and Speed are raised by 1 stage, and its Defense and Special Defense are lowered by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.',
       name: 'Anger Shell',
-      shortDesc: 'When this Pokémon reaches 1/2 or less of its max HP: +1 Atk, Sp. Atk, and Spe; -1 Def and Sp. Def.'
+      shortDesc: "At 1/2 or less of this Pokémon's max HP: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def."
     }
   ],
   [
@@ -79,7 +80,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'armortail',
     {
-      desc: 'While this Pokémon is active, priority moves from opposing Pokémon that target this Pokémon or its allies are prevented from having an effect.',
+      desc: 'Priority moves used by opposing Pokémon targeting this Pokémon or its allies are prevented from having an effect.',
       name: 'Armor Tail',
       shortDesc: 'This Pokémon and its allies are protected from opposing priority moves.'
     }
@@ -148,8 +149,8 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'battlebond',
     {
       desc: 'If this Pokémon is a Greninja, its Attack, Special Attack, and Speed are raised by 1 stage if it attacks and knocks out another Pokémon. This effect can only happen once per battle.',
-      shortDesc: 'After KOing a Pokémon: raises Attack, Sp. Atk, Speed by 1 stage. Once per battle.',
-      name: 'Battle Bond'
+      name: 'Battle Bond',
+      shortDesc: 'After KOing a Pokémon: raises Attack, Sp. Atk, Speed by 1 stage. Once per battle.'
     }
   ],
   [
@@ -255,7 +256,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'commander',
     {
-      desc: "If this Pokémon is Tatsugiri and Dondozo is an active ally, Dondozo will swallow this Pokémon. This prevents this Pokémon from acting and boosts all of Dondozo's stats by 2 stages. Attacks targeted at this Pokémon will fail if it has been swallowed. Tatsugiri can still take indirect damage while swallowed.",
+      desc: "If this Pokémon is a Tatsugiri and a Dondozo is an active ally, this Pokémon goes into the Dondozo's mouth. The Dondozo has its Attack, Special Attack, Speed, Defense, and Special Defense raised by 2 stages. During the effect, the Dondozo cannot be switched out, this Pokémon cannot select an action, and attacks targeted at this Pokémon will be avoided but it will still take indirect damage. If this Pokémon faints during the effect, a Pokémon can be switched in as a replacement but the Dondozo remains unable to be switched out. If the Dondozo faints during the effect, this Pokémon regains the ability to select an action.",
       name: 'Commander',
       shortDesc: "If ally is Dondozo: this Pokémon cannot act or be hit, +2 to all Dondozo's stats."
     }
@@ -296,7 +297,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'costar',
     {
       name: 'Costar',
-      shortDesc: "On switch-in, this Pokémon copies an ally's stat changes."
+      shortDesc: "On switch-in, this Pokémon copies all of its ally's stat stage changes."
     }
   ],
   [
@@ -312,7 +313,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       desc: 'When this Pokémon consumes a berry, it will consume the berry again at the end of the following turn.',
       name: 'Cud Chew',
-      shortDesc: 'If this Pokémon eats a berry, it will consume the berry again at the end of next turn.'
+      shortDesc: 'If this Pokémon eats a Berry, it will eat that Berry again at the end of the next turn.'
     }
   ],
   [
@@ -374,7 +375,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'dazzling',
     {
-      desc: 'While this Pokémon is active, priority moves from opposing Pokémon that target this Pokémon or its allies are prevented from having an effect.',
+      desc: 'Priority moves used by opposing Pokémon targeting this Pokémon or its allies are prevented from having an effect.',
       name: 'Dazzling',
       shortDesc: 'This Pokémon and its allies are protected from opposing priority moves.'
     }
@@ -491,7 +492,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       desc: "This Pokémon's next Electric-type attack will have its power doubled if it takes direct damage.",
       name: 'Electromorphosis',
-      shortDesc: 'This Pokémon becomes charged if it takes direct damage.'
+      shortDesc: 'This Pokémon gains the Charge effect when it takes a hit from an attack.'
     }
   ],
   [
@@ -682,6 +683,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'guarddog',
     {
+      desc: "This Pokémon is immune to the effect of the Intimidate Ability and raises its Attack by 1 stage instead. This Pokémon cannot be forced to switch out by another Pokémon's attack or item.",
       name: 'Guard Dog',
       shortDesc: 'Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.'
     }
@@ -706,7 +708,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'hadronengine',
     {
       name: 'Hadron Engine',
-      shortDesc: 'On switch-in, summons Electric Terrain. Sp. Atk is boosted by 30% in Electric Terrain.'
+      shortDesc: 'On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333x.'
     }
   ],
   [
@@ -730,9 +732,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'heatproof',
     {
-      desc: 'The power of Fire-type attacks against this Pokémon is halved. This Pokémon takes half of the usual burn damage, rounded down.',
+      desc: "If a Pokémon uses a Fire-type attack against this Pokémon, that Pokémon's offensive stat is halved when calculating the damage to this Pokémon. This Pokémon takes half of the usual burn damage, rounded down.",
       name: 'Heatproof',
-      shortDesc: 'The power of Fire-type attacks against this Pokémon is halved; burn damage halved.'
+      shortDesc: 'Fire damage against this Pokémon is dealt with 1/2 offensive stat; 1/2 burn damage.'
     }
   ],
   [
@@ -807,7 +809,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       desc: 'If this Pokémon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snow begins or when Eiscue switches in while Snow is active. Confusion damage also breaks the ice face.',
       name: 'Ice Face',
-      shortDesc: 'If Eiscue, the first physical hit it takes deals 0 damage. This effect is restored in Snow.'
+      shortDesc: 'If Eiscue, the first physical hit it takes deals 0 damage. Effect is restored in Snow.'
     }
   ],
   [
@@ -821,10 +823,11 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'illuminate',
     {
+      desc: "Prevents other Pokémon from lowering this Pokémon's accuracy stat stage. This Pokémon ignores a target's evasiveness stat stage.",
       isFieldAbility:
         'If a Pokémon with Illuminate is at the front of the the party (even if fainted), the wild Pokémon encounter rate of all Pokémon is doubled.',
       name: 'Illuminate',
-      shortDesc: 'No competitive use.'
+      shortDesc: "This Pokémon's accuracy can't be lowered by others; ignores their evasiveness stat."
     }
   ],
   [
@@ -961,8 +964,8 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'libero',
     {
       desc: "This Pokémon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokémon is not Terastallized.",
-      shortDesc: "This Pokémon's type changes to the type of the move it is using. Once per switch-in.",
-      name: 'Libero'
+      name: 'Libero',
+      shortDesc: "This Pokémon's type changes to the type of the move it is using. Once per switch-in."
     }
   ],
   [
@@ -994,9 +997,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'lingeringaroma',
     {
-      desc: 'Pokémon making contact with this Pokémon have their Ability changed to Lingering Aroma. Does not affect Pokémon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.',
+      desc: 'Pokémon making contact with this Pokémon have their Ability changed to Lingering Aroma. Does not affect Pokémon with the As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Lingering Aroma, Multitype, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Zen Mode, or Zero to Hero Abilities.',
       name: 'Lingering Aroma',
-      shortDesc: 'Pokémon making contact with this Pokémon have their Ability changed to Lingering Aroma.'
+      shortDesc: "Making contact with this Pokémon has the attacker's Ability become Lingering Aroma."
     }
   ],
   [
@@ -1142,6 +1145,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'mountaineer',
     {
+      isNonstandard: IsNonStandard.Cap,
       name: 'Mountaineer',
       shortDesc: 'On switch-in, this Pokémon avoids all Rock-type attacks and Stealth Rock.'
     }
@@ -1171,7 +1175,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'mummy',
     {
-      desc: 'Pokémon making contact with this Pokémon have their Ability changed to Mummy. Does not affect Pokémon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.',
+      desc: 'Pokémon making contact with this Pokémon have their Ability changed to Mummy. Does not affect Pokémon with the As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Ice Face, Multitype, Mummy, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Zen Mode, or Zero to Hero Abilities.',
       name: 'Mummy',
       shortDesc: 'Pokémon making contact with this Pokémon have their Ability changed to Mummy.'
     }
@@ -1179,6 +1183,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'myceliummight',
     {
+      desc: "This Pokémon's Status moves ignore certain Abilities of other Pokémon, and go last among Pokémon using the same or greater priority moves.",
       name: 'Mycelium Might',
       shortDesc: "This Pokémon's Status moves go last in their priority bracket and ignore Abilities."
     }
@@ -1201,12 +1206,19 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'neutralizinggas',
     {
-      desc: 'While this Pokémon is active, Abilities have no effect. This Ability activates before hazards and other Abilities take effect. Does not affect the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode Abilities.',
+      desc: 'While this Pokémon is active, Abilities have no effect. This Ability activates before hazards and other Abilities take effect. Does not affect the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Zen Mode or Zero to Hero Abilities.',
       name: 'Neutralizing Gas',
       shortDesc: 'While this Pokémon is active, Abilities have no effect.'
     }
   ],
-  ['noability', { name: 'No Ability', shortDesc: 'Does nothing.' }],
+  [
+    'noability',
+    {
+      isNonstandard: IsNonStandard.Past,
+      name: 'No Ability',
+      shortDesc: 'Does nothing.'
+    }
+  ],
   [
     'noguard',
     {
@@ -1236,14 +1248,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'opportunist',
     {
       name: 'Opportunist',
-      shortDesc: 'When an opposing Pokémon recieves stat boosts, this Pokémon gets the same boosts.'
+      shortDesc: 'When an opposing Pokémon has a stat stage raised, this Pokémon copies the effect.'
     }
   ],
   [
     'orichalcumpulse',
     {
       name: 'Orichalcum Pulse',
-      shortDesc: 'On switch-in, summons Sunny Day. Attack is boosted by 30% in Sunny Day.'
+      shortDesc: 'On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x.'
     }
   ],
   [
@@ -1298,6 +1310,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'persistent',
     {
       desc: 'The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokémon.',
+      isNonstandard: IsNonStandard.Cap,
       name: 'Persistent',
       shortDesc: 'When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.'
     }
@@ -1369,7 +1382,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'powerofalchemy',
     {
-      desc: 'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.',
+      desc: 'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero.',
       name: 'Power of Alchemy',
       shortDesc: 'This Pokémon copies the Ability of an ally that faints.'
     }
@@ -1434,9 +1447,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'protosynthesis',
     {
-      desc: "If Sunny Day is active or this Pokémon has used a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed.",
+      desc: "If Sunny Day is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sunny Day, a held Booster Energy will not activate and the effect ends when Sunny Day is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
       name: 'Protosynthesis',
-      shortDesc: 'While Sunny Day or Booster Energy are active, highest stat is 1.3x, or 1.5x if Speed.'
+      shortDesc: 'Sunny Day active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.'
     }
   ],
   [
@@ -1472,9 +1485,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'quarkdrive',
     {
-      desc: "If Electric Terrain is active or this Pokémon has used a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed.",
+      desc: "If Electric Terrain is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Electric Terrain, a held Booster Energy will not activate and the effect ends when Electric Terrain is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
       name: 'Quark Drive',
-      shortDesc: 'While Electric Terrain or Booster Energy are active, highest stat is 1.3x, or 1.5x if Speed.'
+      shortDesc: 'Electric Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.'
     }
   ],
   [
@@ -1522,6 +1535,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'rebound',
     {
       desc: 'On switch-in, this Pokémon blocks certain status moves and instead uses the move against the original user.',
+      isNonstandard: IsNonStandard.Cap,
       name: 'Rebound',
       shortDesc: 'On switch-in, blocks certain status moves and bounces them back to the user.'
     }
@@ -1529,7 +1543,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'receiver',
     {
-      desc: 'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, and Zen Mode.',
+      desc: 'This Pokémon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, Zen Mode, and Zero to Hero.',
       name: 'Receiver',
       shortDesc: 'This Pokémon copies the Ability of an ally that faints.'
     }
@@ -1714,7 +1728,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       desc: "This Pokémon's slicing attacks have their power multiplied by 1.5.",
       name: 'Sharpness',
-      shortDesc: "This Pokémon's slicing attacks have 1.5x power."
+      shortDesc: "This Pokémon's slicing moves have their power multiplied by 1.5."
     }
   ],
   [
@@ -2099,9 +2113,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'thermalexchange',
     {
-      desc: "This Pokémon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokémon cannot be burned.",
+      desc: "This Pokémon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokémon cannot be burned. Gaining this Ability while burned cures it.",
       name: 'Thermal Exchange',
-      shortDesc: "This Pokémon's Attack is raised by 1 stage when hit by Fire moves; it can't be burned."
+      shortDesc: "This Pokémon's Attack is raised by 1 when damaged by Fire moves; can't be burned."
     }
   ],
   [
@@ -2147,13 +2161,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       desc: 'When this Pokémon is hit by a physical attack, Toxic Spikes are set on the opposing side of the field.',
       name: 'Toxic Debris',
-      shortDesc: 'When this Pokémon is hit by a physical attack, Toxic Spikes are set around the attacker.'
+      shortDesc: 'If this Pokémon is hit by a physical attack, Toxic Spikes are set on the opposing side.'
     }
   ],
   [
     'trace',
     {
-      desc: "On switch-in, this Pokémon copies a random opposing Pokémon's Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, and Zen Mode. If no opposing Pokémon has an Ability that can be copied, this Ability will activate as soon as one does.",
+      desc: "On switch-in, this Pokémon copies a random opposing Pokémon's Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Flower Gift, Forecast, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Zen Mode, and Zero to Hero. If no opposing Pokémon has an Ability that can be copied, this Ability will activate as soon as one does.",
       name: 'Trace',
       shortDesc: "On switch-in, or when it can, this Pokémon copies a random adjacent foe's Ability."
     }
@@ -2162,7 +2176,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'transistor',
     {
       name: 'Transistor',
-      shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using an Electric-type attack."
+      shortDesc: "This Pokémon's offensive stat is multiplied by 1.3 while using an Electric-type attack."
     }
   ],
   [
@@ -2253,7 +2267,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'wanderingspirit',
     {
-      desc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect Pokémon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode Abilities.',
+      desc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect Pokémon with the As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Hadron Engine, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Orichalcum Pulse, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, Zen Mode, or Zero to Hero Abilities.',
       name: 'Wandering Spirit',
       shortDesc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one.'
     }
@@ -2324,17 +2338,17 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'windpower',
     {
-      desc: "This Pokémon's next Electric-type attack will have its power doubled if it is hit by a wind move or Tailwind begins.",
+      desc: "This Pokémon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokémon's side.",
       name: 'Wind Power',
-      shortDesc: 'This Pokémon becomes charged if it is hit by a wind move or Tailwind begins.'
+      shortDesc: 'This Pokémon gains the Charge effect when hit by a wind move or Tailwind begins.'
     }
   ],
   [
     'windrider',
     {
-      desc: "This Pokémon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move. Attack is also raised when Tailwind begins on this Pokémon's side.",
+      desc: "This Pokémon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind begins on this Pokémon's side.",
       name: 'Wind Rider',
-      shortDesc: 'If hit by a wind move or Tailwind begins: +1 Attack. Wind move immunity.'
+      shortDesc: 'Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.'
     }
   ],
   [
@@ -2364,7 +2378,65 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'zerotohero',
     {
       name: 'Zero to Hero',
-      shortDesc: 'If this Pokémon is Palafin, it changes to Hero Mode when it switches out.'
+      shortDesc: 'If this Pokémon is a Palafin in Zero Form, switching out has it change to Hero Form.'
+    }
+  ],
+  [
+    'embodyaspectcornerstone',
+    {
+      name: 'Embody Aspect (Cornerstone)',
+      shortDesc: "On switch-in, this Pokémon's Defense is raised by 1 stage."
+    }
+  ],
+  [
+    'embodyaspecthearthflame',
+    {
+      name: 'Embody Aspect (Hearthflame)',
+      shortDesc: "On switch-in, this Pokémon's Attack is raised by 1 stage."
+    }
+  ],
+  [
+    'embodyaspectteal',
+    {
+      name: 'Embody Aspect (Teal)',
+      shortDesc: "On switch-in, this Pokémon's Speed is raised by 1 stage."
+    }
+  ],
+  [
+    'embodyaspectwellspring',
+    {
+      name: 'Embody Aspect (Wellspring)',
+      shortDesc: "On switch-in, this Pokémon's Special Defense is raised by 1 stage."
+    }
+  ],
+  [
+    'hospitality',
+    {
+      name: 'Hospitality',
+      shortDesc: "On switch-in, this Pokémon restores 1/4 of its ally's maximum HP, rounded down."
+    }
+  ],
+  [
+    'mindseye',
+    {
+      desc: "This Pokémon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokémon from lowering this Pokémon's accuracy stat stage. This Pokémon ignores a target's evasiveness stat stage.",
+      name: "Mind's Eye",
+      shortDesc: "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness."
+    }
+  ],
+  [
+    'supersweetsyrup',
+    {
+      name: 'Supersweet Syrup',
+      shortDesc: 'On switch-in, this Pokémon lowers the evasiveness of opponents 1 stage. Once per battle.'
+    }
+  ],
+  [
+    'toxicchain',
+    {
+      desc: "This Pokémon's moves have a 30% chance of badly poisoning. This effect comes after a move's inherent secondary effect chance.",
+      name: 'Toxic Chain',
+      shortDesc: "This Pokémon's moves have a 30% chance of badly poisoning."
     }
   ]
 ]);

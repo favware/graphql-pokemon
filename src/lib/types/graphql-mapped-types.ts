@@ -27,6 +27,8 @@ interface Ability {
   desc?: Maybe<string>;
   /** Whether this ability has effects outside of battle, and if so what the effect is */
   isFieldAbility?: Maybe<string>;
+  /** Whether an ability is non-standard, and if it is why */
+  isNonstandard?: Maybe<string>;
   /** The key of the ability as stored in the API */
   key: string;
   /** The name for an ability */

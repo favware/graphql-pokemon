@@ -167,6 +167,8 @@ export namespace PokemonTypes {
 
     isFieldAbility?: string;
 
+    isNonstandard?: IsNonStandard;
+
     name: string;
 
     shortDesc: string;

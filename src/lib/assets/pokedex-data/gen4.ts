@@ -144,7 +144,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'piplup',
     {
-      abilities: { first: 'torrent', hidden: 'defiant' },
+      abilities: { first: 'torrent', hidden: 'competitive' },
       baseStats: { hp: 53, atk: 51, def: 53, spa: 61, spd: 56, spe: 40 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -166,7 +166,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'prinplup',
     {
-      abilities: { first: 'torrent', hidden: 'defiant' },
+      abilities: { first: 'torrent', hidden: 'competitive' },
       baseStats: { hp: 64, atk: 66, def: 68, spa: 81, spd: 76, spe: 50 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -190,7 +190,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'empoleon',
     {
-      abilities: { first: 'torrent', hidden: 'defiant' },
+      abilities: { first: 'torrent', hidden: 'competitive' },
       baseStats: { hp: 84, atk: 86, def: 88, spa: 111, spd: 101, spe: 60 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',

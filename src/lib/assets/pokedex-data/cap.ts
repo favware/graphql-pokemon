@@ -1584,6 +1584,75 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ground],
       weightkg: 303.9
     }
+  ],
+  [
+    'ababo',
+    {
+      abilities: { first: 'pixilate', second: 'rattled', hidden: 'owntempo' },
+      baseStats: { hp: 42, atk: 35, def: 27, spa: 35, spd: 35, spe: 38 },
+      color: 'White',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '75%', female: '25%' },
+      heightm: 0.5,
+      isEggObtainable: false,
+      num: -69,
+      evos: ['scattervein'],
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/ababo.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/ababo.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/ababo.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/ababo.png',
+      species: 'ababo',
+      types: [TypesEnum.Fairy],
+      weightkg: 3.5
+    }
+  ],
+  [
+    'scattervein',
+    {
+      abilities: { first: 'pixilate', second: 'intimidate', hidden: 'owntempo' },
+      baseStats: { hp: 75, atk: 74, def: 87, spa: 62, spd: 89, spe: 63 },
+      color: 'Pink',
+      eggGroups: ['Monster', 'Fairy'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'Level up with happiness of at least 220',
+      genderRatio: { male: '75%', female: '25%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      num: -70,
+      evos: ['hemogoblin'],
+      prevo: 'ababo',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/scattervein.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/scattervein.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/scattervein.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/scattervein.png',
+      species: 'scattervein',
+      types: [TypesEnum.Fairy],
+      weightkg: 25
+    }
+  ],
+  [
+    'hemogoblin',
+    {
+      abilities: { first: 'pixilate', second: 'intimidate', hidden: 'owntempo' },
+      baseStats: { hp: 90, atk: 96, def: 87, spa: 96, spd: 89, spe: 55 },
+      color: 'Pink',
+      eggGroups: ['Monster', 'Fairy'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      evoLevel: 'use Fire Stone',
+      genderRatio: { male: '75%', female: '25%' },
+      heightm: 1.4,
+      isEggObtainable: false,
+      num: -71,
+      prevo: 'scattervein',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/hemogoblin.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/hemogoblin.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/hemogoblin.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/hemogoblin.png',
+      species: 'scattervein',
+      types: [TypesEnum.Fairy, TypesEnum.Fire],
+      weightkg: 85
+    }
   ]
 ];
 

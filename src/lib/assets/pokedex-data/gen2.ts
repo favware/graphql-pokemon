@@ -1090,7 +1090,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['wooper'],
       species: 'wooper-paldea',
       types: [TypesEnum.Poison, TypesEnum.Ground],
-      weightkg: 8.5,
+      weightkg: 11,
       aliases: ['wooperp']
     }
   ],

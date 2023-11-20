@@ -489,7 +489,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'vivillonpokeball',
     {
-      abilities: { first: 'shielddust', second: 'compoundeyes' },
+      abilities: { first: 'shielddust', second: 'compoundeyes', hidden: 'friendguard' },
       baseSpecies: 'Vivillon',
       baseStats: { hp: 80, atk: 52, def: 50, spa: 90, spd: 50, spe: 89 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },

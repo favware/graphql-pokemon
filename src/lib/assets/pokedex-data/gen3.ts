@@ -665,7 +665,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'shiftry',
     {
-      abilities: { first: 'chlorophyll', second: 'earlybird', hidden: 'pickpocket' },
+      abilities: { first: 'chlorophyll', second: 'windrider', hidden: 'pickpocket' },
       baseStats: { hp: 90, atk: 100, def: 60, spa: 90, spd: 60, spe: 80 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',

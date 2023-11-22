@@ -1606,6 +1606,32 @@
                 "type": "Fighting",
                 "zMovePower": 190
               }
+            },
+            {
+              "generation": 5,
+              "move": {
+                "key": "tailglow",
+                "accuracy": 100,
+                "basePower": "0",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Tail_Glow_(move)",
+                "category": "Status",
+                "contestType": "Beautiful",
+                "desc": "Raises the user's Special Attack by 3 stages.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": "Past",
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Tail Glow",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/tailglow.shtml",
+                "shortDesc": "Raises the user's Sp. Atk by 3.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/tail-glow",
+                "target": "Self",
+                "type": "Bug",
+                "zMovePower": 0
+              }
             }
           ],
           "eventMoves": [],
@@ -1827,6 +1853,32 @@
                 "target": "Normal",
                 "type": "Fighting",
                 "zMovePower": 190
+              }
+            },
+            {
+              "generation": 6,
+              "move": {
+                "key": "tailglow",
+                "accuracy": 100,
+                "basePower": "0",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Tail_Glow_(move)",
+                "category": "Status",
+                "contestType": "Beautiful",
+                "desc": "Raises the user's Special Attack by 3 stages.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": "Past",
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Tail Glow",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/tailglow.shtml",
+                "shortDesc": "Raises the user's Sp. Atk by 3.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/tail-glow",
+                "target": "Self",
+                "type": "Bug",
+                "zMovePower": 0
               }
             }
           ],
@@ -3713,6 +3765,32 @@
                 "type": "Bug",
                 "zMovePower": 100
               }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "tailglow",
+                "accuracy": 100,
+                "basePower": "0",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Tail_Glow_(move)",
+                "category": "Status",
+                "contestType": "Beautiful",
+                "desc": "Raises the user's Special Attack by 3 stages.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": "Past",
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Tail Glow",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/tailglow.shtml",
+                "shortDesc": "Raises the user's Sp. Atk by 3.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/tail-glow",
+                "target": "Self",
+                "type": "Bug",
+                "zMovePower": 0
+              }
             }
           ],
           "eventMoves": [],
@@ -3767,6 +3845,32 @@
                 "target": "Adjacent Foes",
                 "type": "Ice",
                 "zMovePower": 185
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "bugbite",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                "category": "Physical",
+                "contestType": "Cute",
+                "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Bug Bite",
+                "pp": 20,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                "shortDesc": "User steals and eats the target's Berry.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                "target": "Normal",
+                "type": "Bug",
+                "zMovePower": 120
               }
             },
             {
@@ -3923,6 +4027,32 @@
                 "target": "Normal",
                 "type": "Dark",
                 "zMovePower": 0
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "focuspunch",
+                "accuracy": 100,
+                "basePower": "150",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Focus_Punch_(move)",
+                "category": "Physical",
+                "contestType": "Tough",
+                "desc": "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 100,
+                "name": "Focus Punch",
+                "pp": 20,
+                "priority": -3,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/focuspunch.shtml",
+                "shortDesc": "Fails if the user takes damage before it hits.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/focus-punch",
+                "target": "Normal",
+                "type": "Fighting",
+                "zMovePower": 200
               }
             },
             {
@@ -6580,6 +6710,32 @@
                     "type": "Fighting",
                     "zMovePower": 190
                   }
+                },
+                {
+                  "generation": 5,
+                  "move": {
+                    "key": "tailglow",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Tail_Glow_(move)",
+                    "category": "Status",
+                    "contestType": "Beautiful",
+                    "desc": "Raises the user's Special Attack by 3 stages.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": "Past",
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Tail Glow",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/tailglow.shtml",
+                    "shortDesc": "Raises the user's Sp. Atk by 3.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/tail-glow",
+                    "target": "Self",
+                    "type": "Bug",
+                    "zMovePower": 0
+                  }
                 }
               ],
               "eventMoves": [],
@@ -6801,6 +6957,32 @@
                     "target": "Normal",
                     "type": "Fighting",
                     "zMovePower": 190
+                  }
+                },
+                {
+                  "generation": 6,
+                  "move": {
+                    "key": "tailglow",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Tail_Glow_(move)",
+                    "category": "Status",
+                    "contestType": "Beautiful",
+                    "desc": "Raises the user's Special Attack by 3 stages.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": "Past",
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Tail Glow",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/tailglow.shtml",
+                    "shortDesc": "Raises the user's Sp. Atk by 3.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/tail-glow",
+                    "target": "Self",
+                    "type": "Bug",
+                    "zMovePower": 0
                   }
                 }
               ],
@@ -8687,6 +8869,32 @@
                     "type": "Bug",
                     "zMovePower": 100
                   }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "tailglow",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Tail_Glow_(move)",
+                    "category": "Status",
+                    "contestType": "Beautiful",
+                    "desc": "Raises the user's Special Attack by 3 stages.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": "Past",
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Tail Glow",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/tailglow.shtml",
+                    "shortDesc": "Raises the user's Sp. Atk by 3.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/tail-glow",
+                    "target": "Self",
+                    "type": "Bug",
+                    "zMovePower": 0
+                  }
                 }
               ],
               "eventMoves": [],
@@ -8741,6 +8949,32 @@
                     "target": "Adjacent Foes",
                     "type": "Ice",
                     "zMovePower": 185
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "bugbite",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Bug_Bite_(move)",
+                    "category": "Physical",
+                    "contestType": "Cute",
+                    "desc": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Bug Bite",
+                    "pp": 20,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/bugbite.shtml",
+                    "shortDesc": "User steals and eats the target's Berry.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/bug-bite",
+                    "target": "Normal",
+                    "type": "Bug",
+                    "zMovePower": 120
                   }
                 },
                 {
@@ -8897,6 +9131,32 @@
                     "target": "Normal",
                     "type": "Dark",
                     "zMovePower": 0
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "focuspunch",
+                    "accuracy": 100,
+                    "basePower": "150",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Focus_Punch_(move)",
+                    "category": "Physical",
+                    "contestType": "Tough",
+                    "desc": "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 100,
+                    "name": "Focus Punch",
+                    "pp": 20,
+                    "priority": -3,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/focuspunch.shtml",
+                    "shortDesc": "Fails if the user takes damage before it hits.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/focus-punch",
+                    "target": "Normal",
+                    "type": "Fighting",
+                    "zMovePower": 200
                   }
                 },
                 {

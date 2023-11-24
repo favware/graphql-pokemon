@@ -76,6 +76,7 @@
     "@sapphire/utilities": "^3.13.0",
     "@skyra/jaro-winkler": "^1.1.0",
     "@swc/core": "^1.3.99",
+    "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.13.12",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa__cors": "^4.0.3",

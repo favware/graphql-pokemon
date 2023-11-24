@@ -401,6 +401,9 @@ enum PokemonEnum {
   venomiconepilogue
   saharascal
   saharaja
+  ababo
+  scattervein
+  hemogoblin
   missingno
   m00
   bulbasaur
@@ -1587,6 +1590,7 @@ enum PokemonEnum {
   wyrdeer
   kleavor
   ursaluna
+  ursalunabloodmoon
   basculegion
   basculegionf
   sneasler
@@ -1706,6 +1710,22 @@ enum PokemonEnum {
   miraidon
   walkingwake
   ironleaves
+  dipplin
+  poltchageist
+  poltchageistartisan
+  sinistcha
+  sinistchamasterpiece
+  okidogi
+  munkidori
+  fezandipiti
+  ogerpon
+  ogerponcornerstone
+  ogerponcornerstonetera
+  ogerponhearthflame
+  ogerponhearthflametera
+  ogerponwellspring
+  ogerponwellspringtera
+  ogerpontealtera
 }
 
 "The supported items"

@@ -2629,6 +2629,260 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison, TypesEnum.Fairy],
       weightkg: 30.1
     }
+  ],
+  [
+    'ogerpon',
+    {
+      abilities: { first: 'defiant' },
+      baseForme: 'Teal',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Green',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerponcornerstone',
+        'ogerponcornerstonetera',
+        'ogerponhearthflame',
+        'ogerponhearthflametera',
+        'ogerpontealtera',
+        'ogerponwellspring',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon',
+      types: [TypesEnum.Grass],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerponcornerstone',
+    {
+      abilities: { first: 'sturdy' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Gray',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Cornerstone',
+      formeLetter: 'C',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstonetera',
+        'ogerponhearthflame',
+        'ogerponhearthflametera',
+        'ogerpontealtera',
+        'ogerponwellspring',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon-cornerstone',
+      types: [TypesEnum.Grass, TypesEnum.Rock],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerponcornerstonetera',
+    {
+      abilities: { first: 'embodyaspectcornerstone' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Gray',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Cornerstone-Tera',
+      formeLetter: 'CT',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstone',
+        'ogerponhearthflame',
+        'ogerponhearthflametera',
+        'ogerpontealtera',
+        'ogerponwellspring',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon-cornerstone-tera',
+      types: [TypesEnum.Grass, TypesEnum.Rock],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerponhearthflame',
+    {
+      abilities: { first: 'moldbreaker' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Red',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Hearthflame',
+      formeLetter: 'H',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstone',
+        'ogerponcornerstonetera',
+        'ogerponhearthflametera',
+        'ogerpontealtera',
+        'ogerponwellspring',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon-hearthflame',
+      types: [TypesEnum.Grass, TypesEnum.Fire],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerponhearthflametera',
+    {
+      abilities: { first: 'embodyaspecthearthflame' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Red',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Hearthflame-Tera',
+      formeLetter: 'HT',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstone',
+        'ogerponcornerstonetera',
+        'ogerponhearthflame',
+        'ogerpontealtera',
+        'ogerponwellspring',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon-hearthflame-tera',
+      types: [TypesEnum.Grass, TypesEnum.Fire],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerponwellspring',
+    {
+      abilities: { first: 'waterabsorb' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Green',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Wellspring',
+      formeLetter: 'W',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstone',
+        'ogerponcornerstonetera',
+        'ogerponhearthflame',
+        'ogerponhearthflametera',
+        'ogerpontealtera',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon-wellspring',
+      types: [TypesEnum.Grass, TypesEnum.Water],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerponwellspringtera',
+    {
+      abilities: { first: 'embodyaspectwellspring' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Green',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Wellspring-Tera',
+      formeLetter: 'WT',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstone',
+        'ogerponcornerstonetera',
+        'ogerponhearthflame',
+        'ogerponhearthflametera',
+        'ogerpontealtera',
+        'ogerponwellspring'
+      ],
+      species: 'ogerpon-wellspring-tera',
+      types: [TypesEnum.Grass, TypesEnum.Water],
+      weightkg: 39.8
+    }
+  ],
+  [
+    'ogerpontealtera',
+    {
+      abilities: { first: 'embodyaspectteal' },
+      baseSpecies: 'Ogerpon',
+      baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
+      catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
+      color: 'Green',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Teal-Tera',
+      formeLetter: 'TT',
+      genderRatio: { male: '0%', female: '100%' },
+      heightm: 1.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1017,
+      otherFormes: [
+        'ogerpon',
+        'ogerponcornerstone',
+        'ogerponcornerstonetera',
+        'ogerponhearthflame',
+        'ogerponhearthflametera',
+        'ogerponwellspring',
+        'ogerponwellspringtera'
+      ],
+      species: 'ogerpon-teal-tera',
+      types: [TypesEnum.Grass],
+      weightkg: 39.8
+    }
   ]
 ];
 

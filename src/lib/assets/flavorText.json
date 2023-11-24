@@ -64601,6 +64601,156 @@
   ],
   "1009": [],
   "1010": [],
+  "1011": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Dipplin is two creatures in one Pokémon. Its evolution was triggered by a special apple grown only in one place."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The head sticking out belongs to the fore-wyrm, while the tail belongs to the core-wyrm. The two share one apple and help each other out."
+    }
+  ],
+  "1012": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Supposedly, the regrets of a tea ceremony master who died before perfecting his craft lingered in some matcha and became a Pokémon."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Poltchageist looks like a regional form of Sinistea, but it was recently discovered that the two Pokémon are entirely unrelated."
+    }
+  ],
+  "1012artisan": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It sprinkles some of its powdery body onto food and drains the life-force from those who so much as lick it."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It has taken up residence in a very expensive tea caddy. It takes an expert to distinguish the expensive tea caddies from the cheap ones."
+    }
+  ],
+  "1013": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It pretends to be tea, trying to fool people into drinking it so it can drain their life-force. Its ruse is generally unsuccessful."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It prefers cool, dark places, such as the back of a shelf or the space beneath a home's floorboards. It wanders in search of prey after sunset."
+    }
+  ],
+  "1013masterpiece": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It lives inside a superb teacup that was crafted by a potter of great renown. Collectors positively adore this Pokémon."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The more stirring it does with the tea whisk on its head, the more energy it builds up. It does this to prepare for battle."
+    }
+  ],
+  "1014": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "After all its muscles were stimulated by the toxic chain around its neck, Okidogi transformed and gained a powerful physique."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Okidogi is a ruffian with a short temper. It can pulverize anything by swinging around the chain on its neck."
+    }
+  ],
+  "1015": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The chain is made from toxins that enhance capabilities. It stimulated Munkidori's brain and caused the Pokémon's psychic powers to bloom."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Munkidori keeps itself somewhere safe while it toys with its foes, using psychokinesis to induce intense dizziness."
+    }
+  ],
+  "1016": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Fezandipiti owes its beautiful looks and lovely voice to the toxic stimulants emanating from the chain wrapped around its body."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Fezandipiti beats its glossy wings to scatter pheromones that captivate people and Pokémon."
+    }
+  ],
+  "1017": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon's type changes based on which mask it's wearing. It confounds its enemies with nimble movements and kicks."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This mischief-loving Pokémon is full of curiosity. It battles by drawing out the type-based energy contained within its masks."
+    }
+  ],
+  "1017cornerstone": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This form has excellent defenses, absorbing impacts solidly like the cornerstones that support houses."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In this form, it draws on the power of stone. Its body is rock-solid, protecting it from all manner of attacks."
+    }
+  ],
+  "1017cornerstone-tera": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This form has excellent defenses, absorbing impacts solidly like the cornerstones that support houses."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In this form, it draws on the power of stone. Its body is rock-solid, protecting it from all manner of attacks."
+    }
+  ],
+  "1017hearthflame": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This form is the most aggressive, bombarding enemies with the intensity of flames blazing within a hearth."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In this form, it draws on the power of fire. It spears its enemies with thorn-covered ivy."
+    }
+  ],
+  "1017hearthflame-tera": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This form is the most aggressive, bombarding enemies with the intensity of flames blazing within a hearth."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In this form, it draws on the power of fire. It spears its enemies with thorn-covered ivy."
+    }
+  ],
+  "1017wellspring": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This form excels in both attack and defense. It ceaselessly unleashes moves like a spring gushes water."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In this form, it draws on the power of water. It attacks unrelentingly with kicks and ivy strikes."
+    }
+  ],
+  "1017wellspring-tera": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This form excels in both attack and defense. It ceaselessly unleashes moves like a spring gushes water."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In this form, it draws on the power of water. It attacks unrelentingly with kicks and ivy strikes."
+    }
+  ],
   "3mega": [
     {
       "version_id": "Let's Go Pikachu",

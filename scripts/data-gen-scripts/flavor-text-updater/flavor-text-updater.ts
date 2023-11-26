@@ -9,6 +9,12 @@ import { appendToLog } from './append-to-log.js';
 import { logFile, type ParsedPokemon } from './constants.js';
 import { getGen1GameSetsData } from './game-sets/gen1-game-sets.js';
 import { getGen2GameSetsData } from './game-sets/gen2-game-sets.js';
+import { getGen3GameSetsData } from './game-sets/gen3-game-sets.js';
+import { getGen4GameSetsData } from './game-sets/gen4-game-sets.js';
+import { getGen5GameSetsData } from './game-sets/gen5-game-sets.js';
+import { getGen6GameSetsData } from './game-sets/gen6-game-sets.js';
+import { getGen7GameSetsData } from './game-sets/gen7-game-sets.js';
+import { getGen8GameSetsData } from './game-sets/gen8-game-sets.js';
 import { getGen9GameSetsData } from './game-sets/gen9-game-sets.js';
 
 const bulbapediaBaseUrlPrefix = 'https://bulbapedia.bulbagarden.net/w/index.php?title=';
@@ -75,6 +81,12 @@ for (const pokemon of parsedPokemon) {
     await Promise.all([
       getGen1GameSetsData(text, pokemon),
       getGen2GameSetsData(text, pokemon),
+      getGen3GameSetsData(text, pokemon),
+      getGen4GameSetsData(text, pokemon),
+      getGen5GameSetsData(text, pokemon),
+      getGen6GameSetsData(text, pokemon),
+      getGen7GameSetsData(text, pokemon),
+      getGen8GameSetsData(text, pokemon),
       getGen9GameSetsData(text, pokemon) //
     ])
   ).flat();

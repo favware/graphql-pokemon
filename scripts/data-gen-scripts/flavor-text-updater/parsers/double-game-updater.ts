@@ -1,27 +1,25 @@
-import type { PokemonTypes } from '#assets/pokemon-source';
+import type { FlavorsModule } from '#utils/flavorsModule.js';
 import { green, yellow } from 'colorette';
-import { appendToLog } from '../append-to-log.js';
+import { log } from '../append-to-log.js';
 import type { ParsedPokemon } from '../constants.js';
 import { getTextContent } from '../get-text-content.js';
 
 export async function doubleGameUpdater(
   text: string | undefined,
-  flavorTexts: Record<string, PokemonTypes.FlavorText[]>,
+  flavorTexts: FlavorsModule,
   pokemon: ParsedPokemon,
   game1: string,
   game2: string
 ): Promise<boolean> {
-  const regexGame12 = new RegExp(`^(?:{{Dex\/Entry2\|v=${game1}\|v2=${game2})`);
-  const regexGame21 = new RegExp(`^(?:{{Dex\/Entry2\|v=${game2}\|v2=${game1})`);
+  const regexGame12 = new RegExp(`^(?:{{Dex/Entry2\\|v=${game1}\\|v2=${game2}\\|)`);
+  const regexGame21 = new RegExp(`^(?:{{Dex/Entry2\\|v=${game2}\\|v2=${game1}\\|)`);
 
   const textSplitByNewLine = text?.split('\n');
   const game1Based = getTextContent(textSplitByNewLine?.find((e) => regexGame12.test(e)));
   const game2Based = getTextContent(textSplitByNewLine?.find((e) => regexGame21.test(e)));
 
   const gameData = game1Based || game2Based;
-  const retrievedSvDataMsg = `Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`;
-  console.log(yellow(retrievedSvDataMsg));
-  await appendToLog(retrievedSvDataMsg);
+  await log(`Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, console.log, yellow, false, true);
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -56,9 +54,7 @@ export async function doubleGameUpdater(
         }
       ];
     }
-    const storedSvMsg = `Stored new ${game1}-${game2} Combined entries in flavor texts`;
-    console.log(green(storedSvMsg));
-    await appendToLog(storedSvMsg);
+    await log(`Stored new ${game1}-${game2} Combined entries in flavor texts`, console.log, green, false, true);
   }
 
   return Boolean(gameData);

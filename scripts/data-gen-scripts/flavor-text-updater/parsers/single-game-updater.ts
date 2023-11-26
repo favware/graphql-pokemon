@@ -1,21 +1,21 @@
-import type { PokemonTypes } from '#assets/pokemon-source';
+import type { FlavorsModule } from '#utils/flavorsModule.js';
 import { green, yellow } from 'colorette';
-import { appendToLog } from '../append-to-log.js';
+import { log } from '../append-to-log.js';
 import type { ParsedPokemon } from '../constants.js';
 import { getTextContent } from '../get-text-content.js';
 
 export async function singleGameUpdater(
   text: string | undefined,
-  flavorTexts: Record<string, PokemonTypes.FlavorText[]>,
+  flavorTexts: FlavorsModule,
   pokemon: ParsedPokemon,
   game: string
 ): Promise<boolean> {
-  const textSplitByNewLine = text?.split('\n');
+  const regexGame = new RegExp(`^(?:{{Dex/Entry1\\|v=${game}\\|)`);
 
-  const gameData = getTextContent(textSplitByNewLine?.find((e) => e.startsWith(`{{Dex/Entry1|v=${game}`)));
-  const retrievedGameMsg = `Retrieved ${game} data, it is ${gameData ? 'defined' : 'not defined'}`;
-  console.log(yellow(retrievedGameMsg));
-  await appendToLog(retrievedGameMsg);
+  const textSplitByNewLine = text?.split('\n');
+  const gameData = getTextContent(textSplitByNewLine?.find((e) => regexGame.test(e)));
+
+  await log(`Retrieved ${game} data, it is ${gameData ? 'defined' : 'not defined'}`, console.log, yellow, false, true);
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -36,9 +36,8 @@ export async function singleGameUpdater(
         }
       ];
     }
-    const storedGameMsg = `Stored new ${game} Singular entry in flavor texts`;
-    console.log(green(storedGameMsg));
-    await appendToLog(storedGameMsg);
+
+    await log(`Stored new ${game} Singular entry in flavor texts`, console.log, green, false, true);
   }
 
   return Boolean(gameData);

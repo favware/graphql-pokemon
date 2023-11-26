@@ -1,9 +1,9 @@
-import { flavorsModule } from '#utils/flavorsModule';
+import type { FlavorsModule } from '#utils/flavorsModule.js';
 import type { ParsedPokemon } from '../constants.js';
 import { doubleGameUpdater } from '../parsers/double-game-updater.js';
 import { singleGameUpdater } from '../parsers/single-game-updater.js';
 
-export async function getGen7GameSetsData(text: string, pokemon: ParsedPokemon) {
+export async function getGen7GameSetsData(text: string, pokemon: ParsedPokemon, flavorsModule: FlavorsModule) {
   const single1 = await singleGameUpdater(text, flavorsModule, pokemon, 'Sun');
   const single2 = await singleGameUpdater(text, flavorsModule, pokemon, 'Moon');
   const single3 = await singleGameUpdater(text, flavorsModule, pokemon, 'Ultra Sun');

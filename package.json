@@ -28,29 +28,29 @@
     "#utils/*": "./api/lib/utils/*.js",
     "#validations/*": "./api/lib/validations/*.js",
     "#mappers/*": "./api/lib/mappers/*.js",
-    "#root/*": "./api/*.js",
-    "#scripts/*": "./scripts/*.mjs"
+    "#root/*": "./api/*.js"
   },
   "homepage": "https://graphql-pokemon.js.org/",
   "scripts": {
-    "lint": "eslint src tests scripts --ext ts,mjs --fix",
+    "lint": "eslint src tests scripts --ext ts --fix",
     "format": "prettier --write --log-level=warn \"{src,tests,scripts}/**/*.{ts,json}\"",
     "test": "vitest run",
     "typecheck": "tsc -b src && tsc -b tests",
     "start": "node --enable-source-maps api/index.js",
-    "build": "tsup --onSuccess \"node scripts/on-build-success.mjs\"",
-    "watch": "tsup --watch --onSuccess \"node scripts/on-build-success.mjs\"",
+    "build": "tsup --onSuccess \"yarn tsx scripts/on-build-success.ts\"",
+    "watch": "tsup --watch --onSuccess \"yarn tsx scripts/on-build-success.ts\"",
     "dev": "yarn build && yarn start",
-    "clean": "node scripts/clean.mjs",
+    "clean": "yarn tsx scripts/clean.ts",
     "bump": "cliff-jumper",
     "check-update": "cliff-jumper --dry-run",
     "codegen": "graphql-codegen && npm-run-all -s \"typescript:*\"",
     "typescript:replace-invalid-code": "replace-in-file /\\}\\;/g \"}\" codegen/graphql-pokemon.ts --isRegex",
     "typescript:compile": "tsup --config tsup.config-codegen.ts",
-    "au:tiers": "node scripts/smogontiers.mjs",
-    "au:learnsets": "node scripts/pokemonlearnsets.mjs",
-    "au:testdata": "yarn tsx scripts/update-test-files.mts",
-    "tsx": "tsx --tsconfig ./scripts/data-gen-scripts/tsconfig.json"
+    "au:tiers": "yarn tsx ./scripts/smogontiers.ts",
+    "au:learnsets": "node ./scripts/pokemonlearnsets.ts",
+    "au:testdata": "yarn tsx scripts/update-test-files.ts",
+    "au:flavors": "yarn tsx ./scripts/data-gen-scripts/flavor-text-updater/flavor-text-updater.ts",
+    "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/data-gen-scripts/tsconfig.json"
   },
   "dependencies": {
     "graphql": "^16.8.1"

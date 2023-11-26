@@ -1,9 +1,10 @@
-import { importFileFromWeb, mapToJson } from '#scripts/utils';
-import { fetch, FetchResultTypes } from '@sapphire/fetch';
+import { FetchResultTypes, fetch } from '@sapphire/fetch';
 import { Time, Timestamp } from '@sapphire/timestamp';
+import { objectEntries } from '@sapphire/utilities';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
+import { importFileFromWeb, mapToJson, type GitCommit } from './utils.js';
 
 const filePrefix = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
@@ -25,7 +26,8 @@ url.searchParams.append('path', 'data/learnsets.ts');
 url.searchParams.append('since', timestamp);
 
 const [commits, { default: ciData }] = await Promise.all([
-  fetch(url, FetchResultTypes.JSON), //
+  fetch<GitCommit[]>(url, FetchResultTypes.JSON), //
+  // @ts-expect-error Node supports URLs just fine
   import(shaTrackerFileUrl, { assert: { type: 'json' } }) //
 ]);
 
@@ -37,19 +39,19 @@ if (data.sha === null || data.sha === ciData.learnsetsLastSha) {
   process.exit(0);
 }
 
-const { Learnsets } = await importFileFromWeb({
+const { Learnsets } = await importFileFromWeb<{ Learnsets: { [k: string]: Record<string, string[]> } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/learnsets.ts',
-  temporaryFileName: 'learnsets.mjs'
+  temporaryFileName: 'learnsets.js'
 });
 
 const output = new Map();
-for (const [pokemon, learnset] of Object.entries(Learnsets)) {
+for (const [pokemon, learnset] of objectEntries(Learnsets)) {
   if (learnset.eventOnly === undefined && learnset.learnset === undefined) continue;
   if (learnset.eventOnly !== undefined && learnset.learnset === undefined) output.set(pokemon, { eventOnly: ['See base forme of this Pokémon'] });
   else output.set(pokemon, learnset.learnset);
 }
 
-const writePromises = [];
+const writePromises: Promise<void>[] = [];
 
 if (data.sha) writePromises.push(writeFile(shaTrackerFileUrl, JSON.stringify({ ...ciData, learnsetsLastSha: data.sha })));
 if (output.size) writePromises.push(writeFile(learnsetsFileUrl, `${filePrefix}${mapToJson(output)}${fileSuffix}`));

@@ -1,26 +1,27 @@
 import type { PokemonTypes } from '#assets/pokemon-source.js';
-import { importFileFromWeb } from '#scripts/utils';
+import { importFileFromWeb } from '../../utils.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { abilities as currentAbilities } from '#assets/abilities.js';
 import { dataToClipboard } from '../data-to-clipboard.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
+import { objectEntries } from '@sapphire/utilities';
 
-const { Abilities } = await importFileFromWeb({
+const { Abilities } = await importFileFromWeb<{ Abilities: { [abilityName: string]: AbilityData } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/abilities.ts',
-  temporaryFileName: 'abilities.mjs'
+  temporaryFileName: 'abilities.js'
 });
 
-const { AbilitiesText } = await importFileFromWeb({
+const { AbilitiesText } = await importFileFromWeb<{ AbilitiesText: { [abilityName: string]: AbilityText } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/text/abilities.ts',
-  temporaryFileName: 'abilities-texts.mjs'
+  temporaryFileName: 'abilities-texts.js'
 });
 
-const abilitiesDataEntries = Object.entries<AbilityData>(Abilities);
-const abilitiesTextEntries = Object.entries<AbilityText>(AbilitiesText);
+const abilitiesDataEntries = objectEntries(Abilities);
+const abilitiesTextEntries = objectEntries(AbilitiesText);
 
 const newMap = new Map();
 
-for (let [key, data] of currentAbilities.entries()) {
+for (const [key, data] of currentAbilities.entries()) {
   Reflect.deleteProperty(data, 'key');
 
   const abilityFromData = abilitiesDataEntries.find(([abilityKey]) => abilityKey === key)?.at(1) as AbilityData | undefined;
@@ -59,14 +60,14 @@ for (const [key, abilityFromData] of abilitiesDataEntries) {
   // Skip if the ability is already in the map
   if (newMap.has(key)) continue;
 
-  let abilityFromText = abilitiesTextEntries.find(([abilityTextKey]) => abilityTextKey === key)?.at(1) as AbilityText | undefined;
+  const abilityFromText = abilitiesTextEntries.find(([abilityTextKey]) => abilityTextKey === key)?.at(1) as AbilityText | undefined;
 
   if (!abilityFromText) {
     console.error(`Missing ability text for ${key}`);
     continue;
   }
 
-  let data: PokemonTypes.Ability = {
+  const data: PokemonTypes.Ability = {
     shortDesc: abilityFromText.shortDesc,
     name: abilityFromData.name
   };

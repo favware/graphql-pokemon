@@ -1,18 +1,18 @@
 import type { PokemonTypes } from '#assets/pokemon-source.js';
-import { importFileFromWeb } from '#scripts/utils';
+import { importFileFromWeb } from '../../utils.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { items as currentItems } from '#assets/items.js';
 import { dataToClipboard } from '../data-to-clipboard.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
 
-const { Items } = await importFileFromWeb({
+const { Items } = await importFileFromWeb<{ Items: { [itemName: string]: ItemData } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/items.ts',
-  temporaryFileName: 'items.mjs'
+  temporaryFileName: 'items.js'
 });
 
-const { ItemsText } = await importFileFromWeb({
+const { ItemsText } = await importFileFromWeb<{ ItemsText: { [itemName: string]: ItemText } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/text/items.ts',
-  temporaryFileName: 'item-texts.mjs'
+  temporaryFileName: 'item-texts.js'
 });
 
 const itemsDataEntries = Object.entries<ItemData>(Items);
@@ -20,7 +20,7 @@ const itemsTextEntries = Object.entries<ItemText>(ItemsText);
 
 const newMap = new Map();
 
-for (let [key, data] of currentItems.entries()) {
+for (const [key, data] of currentItems.entries()) {
   Reflect.deleteProperty(data, 'key');
 
   const itemFromData = itemsDataEntries.find(([itemKey]) => itemKey === key)?.at(1) as ItemData;
@@ -74,7 +74,7 @@ for (const [key, itemFromData] of itemsDataEntries) {
     }
   }
 
-  let data: PokemonTypes.Item = {
+  const data: PokemonTypes.Item = {
     desc: itemFromText.desc,
     gen: itemFromData.gen,
     name: itemFromData.name

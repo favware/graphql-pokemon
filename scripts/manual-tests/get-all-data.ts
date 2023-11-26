@@ -413,18 +413,18 @@ const resGen9 = await fetch(url, {
   })
 });
 
-const readablePokestar = Readable.from(resPokestar.body, { encoding: 'utf-8' });
-const readableCap = Readable.from(resCap.body, { encoding: 'utf-8' });
-const readableGen1Part1 = Readable.from(resGen1Part1.body, { encoding: 'utf-8' });
-const readableGen1Part2 = Readable.from(resGen1Part2.body, { encoding: 'utf-8' });
-const readableGen2 = Readable.from(resGen2.body, { encoding: 'utf-8' });
-const readableGen3 = Readable.from(resGen3.body, { encoding: 'utf-8' });
-const readableGen4 = Readable.from(resGen4.body, { encoding: 'utf-8' });
-const readableGen5 = Readable.from(resGen5.body, { encoding: 'utf-8' });
-const readableGen6 = Readable.from(resGen6.body, { encoding: 'utf-8' });
-const readableGen7 = Readable.from(resGen7.body, { encoding: 'utf-8' });
-const readableGen8 = Readable.from(resGen8.body, { encoding: 'utf-8' });
-const readableGen9 = Readable.from(resGen9.body, { encoding: 'utf-8' });
+const readablePokestar = Readable.from(resPokestar.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableCap = Readable.from(resCap.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen1Part1 = Readable.from(resGen1Part1.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen1Part2 = Readable.from(resGen1Part2.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen2 = Readable.from(resGen2.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen3 = Readable.from(resGen3.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen4 = Readable.from(resGen4.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen5 = Readable.from(resGen5.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen6 = Readable.from(resGen6.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen7 = Readable.from(resGen7.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen8 = Readable.from(resGen8.body as unknown as Iterable<string>, { encoding: 'utf-8' });
+const readableGen9 = Readable.from(resGen9.body as unknown as Iterable<string>, { encoding: 'utf-8' });
 
 const writablePokestar = createWriteStream(new URL('./res-pokestar.json', import.meta.url));
 const writableCap = createWriteStream(new URL('./res-cap.json', import.meta.url));

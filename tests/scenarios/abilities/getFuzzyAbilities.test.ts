@@ -29,6 +29,7 @@ describe('getFuzzyAbility', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Multiscale_(Ability)',
           desc: null,
           isFieldAbility: null,
+          isNonstandard: null,
           name: 'Multiscale',
           serebiiPage: 'https://www.serebii.net/abilitydex/multiscale.shtml',
           shortDesc: 'If this Pokémon is at full HP, damage taken from attacks is halved.',
@@ -47,6 +48,7 @@ describe('getFuzzyAbility', () => {
         {
           desc: 'While this Pokémon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.',
           isFieldAbility: null,
+          isNonstandard: null,
           name: 'Damp',
           shortDesc: 'Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.',
           serebiiPage: 'https://www.serebii.net/abilitydex/damp.shtml',
@@ -56,6 +58,7 @@ describe('getFuzzyAbility', () => {
         {
           desc: "This Pokémon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
           isFieldAbility: null,
+          isNonstandard: null,
           name: 'Aerilate',
           shortDesc: "This Pokémon's Normal-type moves become Flying type and have 1.2x power.",
           serebiiPage: 'https://www.serebii.net/abilitydex/aerilate.shtml',
@@ -65,6 +68,7 @@ describe('getFuzzyAbility', () => {
         {
           desc: null,
           isFieldAbility: null,
+          isNonstandard: null,
           name: 'Air Lock',
           shortDesc: 'While this Pokémon is active, the effects of weather conditions are disabled.',
           serebiiPage: 'https://www.serebii.net/abilitydex/air_lock.shtml',
@@ -84,29 +88,32 @@ describe('getFuzzyAbility', () => {
         {
           desc: null,
           isFieldAbility: null,
-          name: 'Water Compaction',
-          shortDesc: "This Pokémon's Defense is raised 2 stages after it is damaged by a Water-type move.",
-          serebiiPage: 'https://www.serebii.net/abilitydex/water_compaction.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/water_compaction',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Water_Compaction_(Ability)'
+          isNonstandard: null,
+          name: 'Embody Aspect (Hearthflame)',
+          shortDesc: "On switch-in, this Pokémon's Attack is raised by 1 stage.",
+          serebiiPage: 'https://www.serebii.net/abilitydex/embody_aspect_(hearthflame).shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/embody_aspect_(hearthflame)',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Embody_Aspect_(Hearthflame)_(Ability)'
         },
         {
-          desc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one. Does not affect Pokémon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode Abilities.',
+          desc: null,
           isFieldAbility: null,
-          name: 'Wandering Spirit',
-          shortDesc: 'Pokémon making contact with this Pokémon have their Ability swapped with this one.',
-          serebiiPage: 'https://www.serebii.net/abilitydex/wandering_spirit.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/wandering_spirit',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Wandering_Spirit_(Ability)'
+          isNonstandard: null,
+          name: 'Embody Aspect (Cornerstone)',
+          shortDesc: "On switch-in, this Pokémon's Defense is raised by 1 stage.",
+          serebiiPage: 'https://www.serebii.net/abilitydex/embody_aspect_(cornerstone).shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/embody_aspect_(cornerstone)',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Embody_Aspect_(Cornerstone)_(Ability)'
         },
         {
-          desc: "This Pokémon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokémon cannot be burned.",
+          desc: null,
           isFieldAbility: null,
-          name: 'Thermal Exchange',
-          shortDesc: "This Pokémon's Attack is raised by 1 stage when hit by Fire moves; it can't be burned.",
-          serebiiPage: 'https://www.serebii.net/abilitydex/thermal_exchange.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/thermal_exchange',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Thermal_Exchange_(Ability)'
+          isNonstandard: null,
+          name: 'Embody Aspect (Wellspring)',
+          shortDesc: "On switch-in, this Pokémon's Special Defense is raised by 1 stage.",
+          serebiiPage: 'https://www.serebii.net/abilitydex/embody_aspect_(wellspring).shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/embody_aspect_(wellspring)',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Embody_Aspect_(Wellspring)_(Ability)'
         }
       ]);
     });

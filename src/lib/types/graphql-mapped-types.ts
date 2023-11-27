@@ -46,7 +46,6 @@ interface Ability {
   /** Smogon page for an ability */
   smogonPage: string;
 }
-
 /** A Pokémon catch rate entry */
 interface CatchRate {
   /** The base catch rate for a Pokémon that will be used to calculate the final catch rate */
@@ -54,7 +53,6 @@ interface CatchRate {
   /** The chance to capture a Pokémon when an ordinary Poké Ball is thrown at full health without any status condition */
   percentageWithOrdinaryPokeballAtFullHealth: string;
 }
-
 /** A Pokémon's EV yields */
 interface EvYields {
   /** The attack EV yield of a Pokémon */
@@ -70,7 +68,6 @@ interface EvYields {
   /** The speed EV yield of a Pokémon */
   speed: number;
 }
-
 /** A flavor text entry for a Pokémon */
 interface Flavor {
   /** The flavor text for this entry */
@@ -78,7 +75,6 @@ interface Flavor {
   /** The name of the game this flavor text is from */
   game: string;
 }
-
 /** A Pokémon gender ratio entry */
 interface Gender {
   /** The percentage for female occurrences */
@@ -86,7 +82,6 @@ interface Gender {
   /** The percentage of male occurrences */
   male: string;
 }
-
 /** The learnset for each Pokémon split by generation */
 interface GenerationalPokemonLearnset {
   /** The learnset of this Pokémon in Generation 3 */
@@ -102,7 +97,6 @@ interface GenerationalPokemonLearnset {
   /** The learnset of this Pokémon in Generation 8 */
   generation8: PokemonLearnset;
 }
-
 /** The variants of why an item or move can be non-standard in the current meta or generation. */
 declare enum IsNonStandard {
   /** When set the item or move is from Smogon's CAP project and is not in the official Nintendo games. */
@@ -116,7 +110,6 @@ declare enum IsNonStandard {
   /** When set the item or move is available within the generation 9 data, however is cannot currently be obtained. It is safe to presume that Gamefreak/Nintendo will add it in later DLC. */
   Unobtainable = 'Unobtainable'
 }
-
 /** A single item entry */
 interface Item {
   /** Bulbapedia page for an item */
@@ -174,7 +167,6 @@ interface Learnset {
   /** The moves that can be learned through virtual console transfer */
   virtualTransferMoves?: Maybe<Array<LearnsetMove>>;
 }
-
 /** A learnset level up move entry */
 interface LearnsetLevelUpMove {
   /** The generation in which this pokémon learned the move this way */
@@ -184,7 +176,6 @@ interface LearnsetLevelUpMove {
   /** The move */
   move: Move;
 }
-
 /** A learnset move entry */
 interface LearnsetMove {
   /** The generation in which this pokémon learned the move this way */
@@ -192,7 +183,6 @@ interface LearnsetMove {
   /** The move */
   move: Move;
 }
-
 /** A single Pokémon move entry */
 interface Move {
   /** The accuracy for a move */
@@ -263,12 +253,12 @@ interface Pokemon {
   cosmeticFormes?: Maybe<Array<string>>;
   /** The egg groups a Pokémon is in */
   eggGroups?: Maybe<Array<string>>;
-  /** EV yields for a Pokémon */
-  evYields: EvYields;
   /** The evolution level, or special method, for a Pokémon */
   evolutionLevel?: Maybe<string>;
   /** The evolutions for a Pokémon, if any */
   evolutions?: Maybe<Array<Pokemon>>;
+  /** EV yields for a Pokémon */
+  evYields: EvYields;
   /** The flavor texts for a Pokémon */
   flavorTexts: Array<Flavor>;
   /** The form identifier of a Pokémon */
@@ -285,12 +275,16 @@ interface Pokemon {
   key: string;
   /** The learnset for this pokemon */
   learnsets?: Maybe<GenerationalPokemonLearnset>;
+  /** Whether this Pokémon is a legendary Pokémon. The list is based on what is provided by Bulbapedia. */
+  legendary: boolean;
   /** The levelling rate of a Pokémon */
   levellingRate?: Maybe<string>;
   /** The maximum number of steps required for the egg of a Pokémon to hatch */
   maximumHatchTime?: Maybe<number>;
   /** The minimum number of steps required for the egg of a Pokémon to hatch */
   minimumHatchTime?: Maybe<number>;
+  /** Whether this Pokémon is a mythical Pokémon. The list is based on what is provided by Bulbapedia. */
+  mythical: boolean;
   /** The dex number for a Pokémon */
   num: number;
   /** Any other forms for a Pokémon */
@@ -315,11 +309,8 @@ interface Pokemon {
   types: Array<PokemonType>;
   /** The weight of a Pokémon in kilograms */
   weight: number;
-  /** Whether this Pokémon is a mythical Pokémon. The list is based on what is provided by Bulbapedia. */
-  mythical: boolean;
-  /** Whether this Pokémon is a legendary Pokémon. The list is based on what is provided by Bulbapedia.*/
-  legendary: boolean;
 }
+
 interface PokemonLearnset {
   /** The moves that are exclusively learned in the Unova Dream World */
   dreamworldMoves?: Maybe<Array<LearnsetMove>>;
@@ -336,7 +327,6 @@ interface PokemonLearnset {
   /** The moves that can be learned through virtual console transfer */
   virtualTransferMoves?: Maybe<Array<LearnsetMove>>;
 }
-
 /** The type of a Pokémon and that types matchup */
 interface PokemonType {
   /** The type matchup for this type */
@@ -360,7 +350,6 @@ interface Stats {
   /** The base speed stat of a Pokémon */
   speed: number;
 }
-
 /** A type matchup entry */
 interface TypeEffectiveness {
   /** The types with 4x effectiveness */
@@ -376,7 +365,6 @@ interface TypeEffectiveness {
   /** The types with 0.5x effectiveness */
   resistedTypes: Array<string>;
 }
-
 /** The type matchups for any one or two given types */
 interface TypeMatchup {
   /** The type matchups when attacking */
@@ -384,7 +372,6 @@ interface TypeMatchup {
   /** The type matchups when defending */
   defending: TypeEffectiveness;
 }
-
 /** The types in Pokémon */
 declare enum TypesEnum {
   Bug = 'bug',

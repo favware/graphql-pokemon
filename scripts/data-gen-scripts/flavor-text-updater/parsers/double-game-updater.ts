@@ -9,7 +9,8 @@ export async function doubleGameUpdater(
   flavorTexts: FlavorsModule,
   pokemon: ParsedPokemon,
   game1: string,
-  game2: string
+  game2: string,
+  logPrefix: string
 ): Promise<boolean> {
   const regexGame12 = new RegExp(`^(?:{{Dex/Entry2\\|v=${game1}\\|v2=${game2}\\|)`);
   const regexGame21 = new RegExp(`^(?:{{Dex/Entry2\\|v=${game2}\\|v2=${game1}\\|)`);
@@ -19,7 +20,7 @@ export async function doubleGameUpdater(
   const game2Based = getTextContent(textSplitByNewLine?.find((e) => regexGame21.test(e)));
 
   const gameData = game1Based || game2Based;
-  await log(`Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, console.log, yellow, false, true);
+  await log(`${logPrefix}Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, yellow, false, true);
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -54,7 +55,7 @@ export async function doubleGameUpdater(
         }
       ];
     }
-    await log(`Stored new ${game1}-${game2} Combined entries in flavor texts`, console.log, green, false, true);
+    await log(`${logPrefix}Stored new ${game1}-${game2} Combined entries in flavor texts`, green, false, true);
   }
 
   return Boolean(gameData);

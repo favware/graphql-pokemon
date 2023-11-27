@@ -1,7 +1,7 @@
-import type { PokemonTypes } from '#assets/pokemon-source.js';
-import { importFileFromWeb } from '../../utils.js';
-import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { moves as currentMoves } from '#assets/moves.js';
+import type { PokemonTypes } from '#assets/pokemon-source.js';
+import { IsNonStandard } from '#utils/isNonStandardEnum.js';
+import { importFileFromWeb, replacePokeWithAccentedPoke } from '../../utils.js';
 import { dataToClipboard } from '../data-to-clipboard.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
 
@@ -64,11 +64,11 @@ for (const [key, data] of currentMoves.entries()) {
     if (key.startsWith('hiddenpower')) {
       data.shortDesc = "Varies in type based on the user's IVs.";
     } else {
-      data.shortDesc = moveFromText.shortDesc;
+      data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc);
     }
 
     if (moveFromText.desc) {
-      data.desc = moveFromText.desc;
+      data.desc = replacePokeWithAccentedPoke(moveFromText.desc);
     }
   }
 
@@ -87,7 +87,7 @@ for (const [key, moveFromData] of movesDataEntries) {
   }
 
   const data: PokemonTypes.Move = {
-    shortDesc: moveFromText.shortDesc,
+    shortDesc: replacePokeWithAccentedPoke(moveFromText.shortDesc),
     name: moveFromData.name,
     category: moveFromData.category,
     pp: moveFromData.pp,
@@ -118,7 +118,7 @@ for (const [key, moveFromData] of movesDataEntries) {
   }
 
   if (moveFromText.desc) {
-    data.desc = moveFromText.desc;
+    data.desc = replacePokeWithAccentedPoke(moveFromText.desc);
   }
 
   newMap.set(key, sortObjectByKey(data));

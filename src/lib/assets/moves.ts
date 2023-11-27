@@ -1825,7 +1825,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "100% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Ice'
+      type: 'Water'
     }
   ],
   [
@@ -5494,7 +5494,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Target: 50% Yawn.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Dark'
     }
   ],
   [
@@ -5638,7 +5638,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Base move affects power. Foes: -1/6 HP, 4 turns.',
       target: 'Adjacent Foes',
-      type: 'Ghost'
+      type: 'Rock'
     }
   ],
   [

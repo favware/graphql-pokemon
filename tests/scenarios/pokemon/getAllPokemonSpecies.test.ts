@@ -249,6 +249,7 @@ describe('getAllPokemon', () => {
         species: 'scattervein'
       },
       { key: 'hemogoblin', species: 'hemogoblin' },
+      { key: 'cresceidon', species: 'cresceidon' },
       { key: 'missingno', species: 'missingno.' },
       { key: 'm00', species: "'m (00)" },
       { key: 'bulbasaur', species: 'bulbasaur' },

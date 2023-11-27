@@ -32,6 +32,36 @@ describe('getAbility', () => {
         key: 'multiscale',
         pokemonThatHaveThisAbility: [
           {
+            key: 'cresceidon',
+            species: 'cresceidon',
+            abilities: {
+              first: {
+                key: 'multiscale',
+                bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Multiscale_(Ability)',
+                desc: null,
+                isFieldAbility: null,
+                isNonstandard: null,
+                name: 'Multiscale',
+                serebiiPage: 'https://www.serebii.net/abilitydex/multiscale.shtml',
+                shortDesc: 'If this Pokémon is at full HP, damage taken from attacks is halved.',
+                smogonPage: 'https://www.smogon.com/dex/ss/abilities/multiscale'
+              },
+              hidden: null,
+              second: {
+                key: 'roughskin',
+                bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Rough_Skin_(Ability)',
+                desc: 'Pokémon making contact with this Pokémon lose 1/8 of their maximum HP, rounded down.',
+                isFieldAbility: null,
+                isNonstandard: null,
+                name: 'Rough Skin',
+                serebiiPage: 'https://www.serebii.net/abilitydex/rough_skin.shtml',
+                shortDesc: 'Pokémon making contact with this Pokémon lose 1/8 of their max HP.',
+                smogonPage: 'https://www.smogon.com/dex/ss/abilities/rough_skin'
+              },
+              special: null
+            }
+          },
+          {
             key: 'dragonite',
             species: 'dragonite',
             abilities: {

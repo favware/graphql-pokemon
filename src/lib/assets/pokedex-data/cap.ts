@@ -1653,6 +1653,27 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy, TypesEnum.Fire],
       weightkg: 85
     }
+  ],
+  [
+    'cresceidon',
+    {
+      abilities: { first: 'multiscale', second: 'roughskin' },
+      baseStats: { hp: 80, atk: 32, def: 111, spa: 88, spd: 99, spe: 125 },
+      color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      evYields: { atk: 0, def: 0, hp: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 10,
+      isEggObtainable: false,
+      num: -72,
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back/cresceidon.png',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/cresceidon.png',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/cresceidon.png',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/cresceidon.png',
+      species: 'cresceidon',
+      types: [TypesEnum.Water, TypesEnum.Fairy],
+      weightkg: 999.9
+    }
   ]
 ];
 

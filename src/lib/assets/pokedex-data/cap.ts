@@ -1649,7 +1649,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/gen5-back-shiny/hemogoblin.png',
       specialShinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/hemogoblin.png',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/hemogoblin.png',
-      species: 'scattervein',
+      species: 'hemogoblin',
       types: [TypesEnum.Fairy, TypesEnum.Fire],
       weightkg: 85
     }

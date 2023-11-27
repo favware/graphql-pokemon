@@ -13,7 +13,7 @@ __metadata:
   linkType: hard
 
 "@ampproject/remapping@npm:^2.2.0, @ampproject/remapping@npm:^2.2.1":
-  version: 2.2.1z
+  version: 2.2.1
   resolution: "@ampproject/remapping@npm:2.2.1"
   dependencies:
     "@jridgewell/gen-mapping": "npm:^0.3.0"

@@ -248,10 +248,7 @@ describe('getAllPokemon', () => {
         key: 'scattervein',
         species: 'scattervein'
       },
-      {
-        key: 'hemogoblin',
-        species: 'scattervein'
-      },
+      { key: 'hemogoblin', species: 'hemogoblin' },
       { key: 'missingno', species: 'missingno.' },
       { key: 'm00', species: "'m (00)" },
       { key: 'bulbasaur', species: 'bulbasaur' },
@@ -2509,6 +2506,30 @@ describe('getAllPokemon', () => {
       {
         key: 'ogerponcornerstone',
         species: 'ogerpon-cornerstone'
+      },
+      {
+        key: 'ogerponcornerstonetera',
+        species: 'ogerpon-cornerstone-tera'
+      },
+      {
+        key: 'ogerponhearthflame',
+        species: 'ogerpon-hearthflame'
+      },
+      {
+        key: 'ogerponhearthflametera',
+        species: 'ogerpon-hearthflame-tera'
+      },
+      {
+        key: 'ogerponwellspring',
+        species: 'ogerpon-wellspring'
+      },
+      {
+        key: 'ogerponwellspringtera',
+        species: 'ogerpon-wellspring-tera'
+      },
+      {
+        key: 'ogerpontealtera',
+        species: 'ogerpon-teal-tera'
       }
     ]);
   });

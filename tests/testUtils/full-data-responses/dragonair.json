@@ -9802,27 +9802,14 @@
       },
       "key": "dragonair",
       "eggGroups": ["Water 1", "Dragon"],
-      "evYields": {
-        "hp": 0,
-        "attack": 2,
-        "defense": 0,
-        "specialattack": 0,
-        "specialdefense": 0,
-        "speed": 0
-      },
+      "evYields": { "hp": 0, "attack": 2, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": "30",
       "flavorTexts": [
-        {
-          "flavor": "It is called the divine Pokémon. When its entire body brightens slightly, the weather changes.",
-          "game": "Violet"
-        }
+        { "flavor": "It is called the divine Pokémon. When its entire body brightens slightly, the weather changes.", "game": "Violet" }
       ],
       "forme": null,
       "formeLetter": null,
-      "gender": {
-        "female": "50%",
-        "male": "50%"
-      },
+      "gender": { "female": "50%", "male": "50%" },
       "height": 4,
       "isEggObtainable": true,
       "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/dragonair.gif",
@@ -9879,20 +9866,10 @@
         }
       ],
       "baseSpecies": null,
-      "baseStats": {
-        "hp": 61,
-        "attack": 84,
-        "defense": 65,
-        "specialattack": 70,
-        "specialdefense": 70,
-        "speed": 70
-      },
+      "baseStats": { "hp": 61, "attack": 84, "defense": 65, "specialattack": 70, "specialdefense": 70, "speed": 70 },
       "baseStatsTotal": 420,
       "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/dragonair_(Pokémon)",
-      "catchRate": {
-        "base": 45,
-        "percentageWithOrdinaryPokeballAtFullHealth": "11.9%"
-      },
+      "catchRate": { "base": 45, "percentageWithOrdinaryPokeballAtFullHealth": "11.9%" },
       "color": "Blue",
       "cosmeticFormes": null,
       "weight": 16.5,
@@ -19701,27 +19678,14 @@
           },
           "key": "dragonite",
           "eggGroups": ["Water 1", "Dragon"],
-          "evYields": {
-            "hp": 0,
-            "attack": 3,
-            "defense": 0,
-            "specialattack": 0,
-            "specialdefense": 0,
-            "speed": 0
-          },
+          "evYields": { "hp": 0, "attack": 3, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": "55",
           "flavorTexts": [
-            {
-              "flavor": "It can fly in spite of its big and bulky physique. It circles the globe in just 16 hours.",
-              "game": "Violet"
-            }
+            { "flavor": "It can fly in spite of its big and bulky physique. It circles the globe in just 16 hours.", "game": "Violet" }
           ],
           "forme": null,
           "formeLetter": null,
-          "gender": {
-            "female": "50%",
-            "male": "50%"
-          },
+          "gender": { "female": "50%", "male": "50%" },
           "height": 2.2,
           "isEggObtainable": true,
           "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/dragonite.gif",
@@ -19799,20 +19763,10 @@
             }
           ],
           "baseSpecies": null,
-          "baseStats": {
-            "hp": 91,
-            "attack": 134,
-            "defense": 95,
-            "specialattack": 100,
-            "specialdefense": 100,
-            "speed": 80
-          },
+          "baseStats": { "hp": 91, "attack": 134, "defense": 95, "specialattack": 100, "specialdefense": 100, "speed": 80 },
           "baseStatsTotal": 600,
           "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/dragonite_(Pokémon)",
-          "catchRate": {
-            "base": 45,
-            "percentageWithOrdinaryPokeballAtFullHealth": "11.9%"
-          },
+          "catchRate": { "base": 45, "percentageWithOrdinaryPokeballAtFullHealth": "11.9%" },
           "color": "Brown",
           "cosmeticFormes": null,
           "weight": 210,
@@ -29625,27 +29579,14 @@
           },
           "key": "dratini",
           "eggGroups": ["Water 1", "Dragon"],
-          "evYields": {
-            "hp": 0,
-            "attack": 1,
-            "defense": 0,
-            "specialattack": 0,
-            "specialdefense": 0,
-            "speed": 0
-          },
+          "evYields": { "hp": 0, "attack": 1, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": null,
           "flavorTexts": [
-            {
-              "flavor": "It is born large to start with. It repeatedly sheds its skin as it steadily grows longer.",
-              "game": "Violet"
-            }
+            { "flavor": "It is born large to start with. It repeatedly sheds its skin as it steadily grows longer.", "game": "Violet" }
           ],
           "forme": null,
           "formeLetter": null,
-          "gender": {
-            "female": "50%",
-            "male": "50%"
-          },
+          "gender": { "female": "50%", "male": "50%" },
           "height": 1.8,
           "isEggObtainable": true,
           "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/dratini.gif",
@@ -29702,20 +29643,10 @@
             }
           ],
           "baseSpecies": null,
-          "baseStats": {
-            "hp": 41,
-            "attack": 64,
-            "defense": 45,
-            "specialattack": 50,
-            "specialdefense": 50,
-            "speed": 50
-          },
+          "baseStats": { "hp": 41, "attack": 64, "defense": 45, "specialattack": 50, "specialdefense": 50, "speed": 50 },
           "baseStatsTotal": 300,
           "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/dratini_(Pokémon)",
-          "catchRate": {
-            "base": 45,
-            "percentageWithOrdinaryPokeballAtFullHealth": "11.9%"
-          },
+          "catchRate": { "base": 45, "percentageWithOrdinaryPokeballAtFullHealth": "11.9%" },
           "color": "Blue",
           "cosmeticFormes": null,
           "weight": 3.3,

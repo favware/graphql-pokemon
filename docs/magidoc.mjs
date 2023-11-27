@@ -33,7 +33,7 @@ const config = {
         {
           group: 'Demo',
           label: 'Playground',
-          href: 'https://graphqlpokemon.favware.tech/v7'
+          href: 'https://graphqlpokemon.favware.tech/v8'
         },
         {
           group: 'Donate',

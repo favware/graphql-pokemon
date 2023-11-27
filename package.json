@@ -47,7 +47,7 @@
     "typescript:replace-invalid-code": "replace-in-file /\\}\\;/g \"}\" codegen/graphql-pokemon.ts --isRegex",
     "typescript:compile": "tsup --config tsup.config-codegen.ts",
     "au:tiers": "yarn tsx ./scripts/smogontiers.ts",
-    "au:learnsets": "node ./scripts/pokemonlearnsets.ts",
+    "au:learnsets": "yarn tsx ./scripts/pokemonlearnsets.ts",
     "au:testdata": "yarn tsx scripts/update-test-files.ts",
     "au:flavors": "yarn tsx ./scripts/data-gen-scripts/flavor-text-updater/flavor-text-updater.ts",
     "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/data-gen-scripts/tsconfig.json"

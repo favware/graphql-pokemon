@@ -8,14 +8,15 @@ export async function singleGameUpdater(
   text: string | undefined,
   flavorTexts: FlavorsModule,
   pokemon: ParsedPokemon,
-  game: string
+  game: string,
+  logPrefix: string
 ): Promise<boolean> {
   const regexGame = new RegExp(`^(?:{{Dex/Entry1\\|v=${game}\\|)`);
 
   const textSplitByNewLine = text?.split('\n');
   const gameData = getTextContent(textSplitByNewLine?.find((e) => regexGame.test(e)));
 
-  await log(`Retrieved ${game} data, it is ${gameData ? 'defined' : 'not defined'}`, console.log, yellow, false, true);
+  await log(`${logPrefix}Retrieved ${game} data, it is ${gameData ? 'defined' : 'not defined'}`, yellow, false, true);
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -37,7 +38,7 @@ export async function singleGameUpdater(
       ];
     }
 
-    await log(`Stored new ${game} Singular entry in flavor texts`, console.log, green, false, true);
+    await log(`${logPrefix}Stored new ${game} Singular entry in flavor texts`, green, false, true);
   }
 
   return Boolean(gameData);

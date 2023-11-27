@@ -2,7 +2,8 @@ import { pokedex } from '#assets/pokedex.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { flavorsModule } from '#utils/flavorsModule';
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
-import { blue, green, red, yellow } from 'colorette';
+import { eachLimit } from 'async';
+import { green, red, yellow } from 'colorette';
 import * as cheerio from 'https://cdn.skypack.dev/cheerio';
 import { access, appendFile, writeFile } from 'node:fs/promises';
 import { format } from 'prettier';
@@ -56,29 +57,29 @@ for (const dexEntry of pokedex.values()) {
   }
 }
 
-for (const pokemon of parsedPokemon) {
-  await log(`Parsing ${pokemon.species} (${pokemon.number}${pokemon.forme ?? ''})`, console.group, blue, false, false);
+await eachLimit(parsedPokemon, 10, async (pokemon) => {
+  const logPrefix = `${pokemon.species} (${pokemon.number}${pokemon.forme ?? ''}) - `;
 
   const html = await fetch(pokemon.url, FetchResultTypes.Text);
-  await log('Fetched data', console.log, yellow, false, true);
+  await log(`${logPrefix}Fetched data`, yellow, false, true);
 
   const $ = cheerio.load(html);
-  await log('Loaded text into cheerio', console.log, yellow, false, true);
+  await log(`${logPrefix}Loaded text into cheerio`, yellow, false, true);
 
   const text = $('#wpTextbox1').text();
-  await log('Loaded text element', console.log, yellow, false, true);
+  await log(`${logPrefix}Loaded text element`, yellow, false, true);
 
   const results = (
     await Promise.all([
-      getGen1GameSetsData(text, pokemon, flavorsModule),
-      getGen2GameSetsData(text, pokemon, flavorsModule),
-      getGen3GameSetsData(text, pokemon, flavorsModule),
-      getGen4GameSetsData(text, pokemon, flavorsModule),
-      getGen5GameSetsData(text, pokemon, flavorsModule),
-      getGen6GameSetsData(text, pokemon, flavorsModule),
-      getGen7GameSetsData(text, pokemon, flavorsModule),
-      getGen8GameSetsData(text, pokemon, flavorsModule),
-      getGen9GameSetsData(text, pokemon, flavorsModule) //
+      getGen1GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen2GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen3GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen4GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen5GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen6GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen7GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen8GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getGen9GameSetsData(text, pokemon, flavorsModule, logPrefix) //
     ])
   ).flat();
 
@@ -87,20 +88,18 @@ for (const pokemon of parsedPokemon) {
       pokemon,
       text
     });
-    await log('Did not store data for Pokemon', console.log, red, false, true);
+    await log(`${logPrefix}Did not store data for Pokemon`, red, false, true);
   }
+});
 
-  console.groupEnd();
-}
-
-await log("Done fetching and storing data in memory, sorting version_id's", console.log, green, true, false);
+await log("Done fetching and storing data in memory, sorting version_id's", green, true, false);
 
 gameSorter(flavorsModule);
 
-await log('Done sorting, Formatting and writing to disk', console.log, green, true, false);
+await log('Done sorting, Formatting and writing to disk', green, true, false);
 
 const formatted = await format(JSON.stringify(flavorsModule, null, 4), { parser: 'json', ...prettierConfig });
 await writeFile(pathToFlavorTextFile, formatted, { encoding: 'utf-8' });
-await log('Done writing to disk', console.log, green, true, false);
+await log('Done writing to disk', green, true, false);
 
 await writeFile(failedPokemonTextFile, JSON.stringify(failedPokemon, null, 4), { encoding: 'utf-8' });

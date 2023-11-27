@@ -10,7 +10,8 @@ export async function tripleGameUpdater(
   pokemon: ParsedPokemon,
   game1: string,
   game2: string,
-  game3: string
+  game3: string,
+  logPrefix: string
 ): Promise<boolean> {
   const regexGame123 = new RegExp(`^(?:{{Dex/Entry2\\|v=${game1}\\|v2=${game2}\\|v3=${game3}\\|)`);
   const regexGame132 = new RegExp(`^(?:{{Dex/Entry2\\|v=${game1}\\|v2=${game3}\\|v3=${game2}\\|)`);
@@ -31,7 +32,7 @@ export async function tripleGameUpdater(
 
   const gameData = game123Based || game132Based || game213Based || game231Based || game321Based || game312Based;
 
-  await log(`Retrieved ${game1}-${game2}-${game3} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, console.log, yellow, false, true);
+  await log(`${logPrefix}Retrieved ${game1}-${game2}-${game3} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, yellow, false, true);
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -81,7 +82,7 @@ export async function tripleGameUpdater(
       ];
     }
 
-    await log(`Stored new ${game1}-${game2}-${game3} Combined entries in flavor texts`, console.log, green, false, true);
+    await log(`${logPrefix}Stored new ${game1}-${game2}-${game3} Combined entries in flavor texts`, green, false, true);
   }
 
   return Boolean(gameData);

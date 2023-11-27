@@ -271,7 +271,7 @@ describe('getPokemon', () => {
           {
             flavor:
               "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center.",
-            game: 'Legends Arceus'
+            game: 'Legends: Arceus'
           }
         ],
         forme: 'Hisui',

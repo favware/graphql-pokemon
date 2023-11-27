@@ -751,14 +751,27 @@
       },
       "key": "beldum",
       "eggGroups": ["Mineral"],
-      "evYields": { "hp": 0, "attack": 0, "defense": 1, "specialattack": 0, "specialdefense": 0, "speed": 0 },
+      "evYields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 1,
+        "specialattack": 0,
+        "specialdefense": 0,
+        "speed": 0
+      },
       "evolutionLevel": null,
       "flavorTexts": [
-        { "flavor": "They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison.", "game": "Shining Pearl" }
+        {
+          "flavor": "They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison.",
+          "game": "Shining Pearl"
+        }
       ],
       "forme": null,
       "formeLetter": null,
-      "gender": { "female": "0%", "male": "0%" },
+      "gender": {
+        "female": "0%",
+        "male": "0%"
+      },
       "height": 0.6,
       "isEggObtainable": true,
       "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/beldum.gif",
@@ -834,10 +847,20 @@
         }
       ],
       "baseSpecies": null,
-      "baseStats": { "hp": 40, "attack": 55, "defense": 80, "specialattack": 35, "specialdefense": 60, "speed": 30 },
+      "baseStats": {
+        "hp": 40,
+        "attack": 55,
+        "defense": 80,
+        "specialattack": 35,
+        "specialdefense": 60,
+        "speed": 30
+      },
       "baseStatsTotal": 300,
       "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/beldum_(Pokémon)",
-      "catchRate": { "base": 3, "percentageWithOrdinaryPokeballAtFullHealth": "1.6%" },
+      "catchRate": {
+        "base": 3,
+        "percentageWithOrdinaryPokeballAtFullHealth": "1.6%"
+      },
       "color": "Blue",
       "cosmeticFormes": null,
       "weight": 95.2,
@@ -1595,7 +1618,14 @@
           },
           "key": "metang",
           "eggGroups": ["Mineral"],
-          "evYields": { "hp": 0, "attack": 0, "defense": 2, "specialattack": 0, "specialdefense": 0, "speed": 0 },
+          "evYields": {
+            "hp": 0,
+            "attack": 0,
+            "defense": 2,
+            "specialattack": 0,
+            "specialdefense": 0,
+            "speed": 0
+          },
           "evolutionLevel": "20",
           "flavorTexts": [
             {
@@ -1605,7 +1635,10 @@
           ],
           "forme": null,
           "formeLetter": null,
-          "gender": { "female": "0%", "male": "0%" },
+          "gender": {
+            "female": "0%",
+            "male": "0%"
+          },
           "height": 1.2,
           "isEggObtainable": true,
           "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/metang.gif",
@@ -1695,10 +1728,20 @@
             }
           ],
           "baseSpecies": null,
-          "baseStats": { "hp": 60, "attack": 75, "defense": 100, "specialattack": 55, "specialdefense": 80, "speed": 50 },
+          "baseStats": {
+            "hp": 60,
+            "attack": 75,
+            "defense": 100,
+            "specialattack": 55,
+            "specialdefense": 80,
+            "speed": 50
+          },
           "baseStatsTotal": 420,
           "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/metang_(Pokémon)",
-          "catchRate": { "base": 3, "percentageWithOrdinaryPokeballAtFullHealth": "1.6%" },
+          "catchRate": {
+            "base": 3,
+            "percentageWithOrdinaryPokeballAtFullHealth": "1.6%"
+          },
           "color": "Blue",
           "cosmeticFormes": null,
           "weight": 202.5,
@@ -2138,7 +2181,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Protect_(move)",
                         "category": "Status",
                         "contestType": "Cute",
-                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -2634,7 +2677,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Endure_(move)",
                         "category": "Status",
                         "contestType": "Tough",
-                        "desc": "The user will survive attacks made by other Pokémon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user will survive attacks made by other Pokémon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -3486,7 +3529,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Endure_(move)",
                         "category": "Status",
                         "contestType": "Tough",
-                        "desc": "The user will survive attacks made by other Pokémon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user will survive attacks made by other Pokémon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -3798,7 +3841,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Protect_(move)",
                         "category": "Status",
                         "contestType": "Cute",
-                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -4214,7 +4257,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Stealth_Rock_(move)",
                         "category": "Status",
                         "contestType": "Cool",
-                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -5591,7 +5634,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Protect_(move)",
                         "category": "Status",
                         "contestType": "Cute",
-                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -6399,7 +6442,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Stealth_Rock_(move)",
                         "category": "Status",
                         "contestType": "Cool",
-                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -7385,7 +7428,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Protect_(move)",
                         "category": "Status",
                         "contestType": "Cute",
-                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -8193,7 +8236,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Stealth_Rock_(move)",
                         "category": "Status",
                         "contestType": "Cool",
-                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -9075,7 +9118,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Protect_(move)",
                         "category": "Status",
                         "contestType": "Cute",
-                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+                        "desc": "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -9831,7 +9874,7 @@
                         "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Stealth_Rock_(move)",
                         "category": "Status",
                         "contestType": "Cool",
-                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+                        "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
                         "isFieldMove": null,
                         "isGMax": null,
                         "isNonstandard": null,
@@ -10347,14 +10390,27 @@
               },
               "key": "metagross",
               "eggGroups": ["Mineral"],
-              "evYields": { "hp": 0, "attack": 0, "defense": 3, "specialattack": 0, "specialdefense": 0, "speed": 0 },
+              "evYields": {
+                "hp": 0,
+                "attack": 0,
+                "defense": 3,
+                "specialattack": 0,
+                "specialdefense": 0,
+                "speed": 0
+              },
               "evolutionLevel": "45",
               "flavorTexts": [
-                { "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.", "game": "Shining Pearl" }
+                {
+                  "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
+                  "game": "Shining Pearl"
+                }
               ],
               "forme": null,
               "formeLetter": null,
-              "gender": { "female": "0%", "male": "0%" },
+              "gender": {
+                "female": "0%",
+                "male": "0%"
+              },
               "height": 1.6,
               "isEggObtainable": true,
               "backSprite": "https://play.pokemonshowdown.com/sprites/ani-back/metagross.gif",
@@ -10444,10 +10500,20 @@
                 }
               ],
               "baseSpecies": null,
-              "baseStats": { "hp": 80, "attack": 135, "defense": 130, "specialattack": 95, "specialdefense": 90, "speed": 70 },
+              "baseStats": {
+                "hp": 80,
+                "attack": 135,
+                "defense": 130,
+                "specialattack": 95,
+                "specialdefense": 90,
+                "speed": 70
+              },
               "baseStatsTotal": 600,
               "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/metagross_(Pokémon)",
-              "catchRate": { "base": 3, "percentageWithOrdinaryPokeballAtFullHealth": "1.6%" },
+              "catchRate": {
+                "base": 3,
+                "percentageWithOrdinaryPokeballAtFullHealth": "1.6%"
+              },
               "color": "Blue",
               "cosmeticFormes": null,
               "weight": 550,

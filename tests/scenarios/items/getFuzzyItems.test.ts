@@ -108,15 +108,15 @@ describe('getFuzzyItem', () => {
           sprite: "https://www.serebii.net/itemdex/sprites/koraidon'spokeball.png"
         },
         {
-          bulbapediaPage: "https://bulbapedia.bulbagarden.net/wiki/Ilima's_Normalium_Z",
-          desc: 'The Normalium Z you were entrusted with by Ilima. You were asked to place it on the pedestal at the back of Verdant Cavern.',
-          generationIntroduced: 7,
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Unremarkable_Teacup',
+          desc: 'Evolves Poltchageist into Sinistcha when used.',
+          generationIntroduced: 9,
           isNonstandard: null,
-          name: "Ilima's Normalium Z",
-          serebiiPage: 'https://www.serebii.net/itemdex/ilimasnormaliumz.shtml',
+          name: 'Unremarkable Teacup',
+          serebiiPage: 'https://www.serebii.net/itemdex/unremarkableteacup.shtml',
           shortDesc: null,
-          smogonPage: 'https://www.smogon.com/dex/sv/items/ilima-s-normalium-z',
-          sprite: "https://www.serebii.net/itemdex/sprites/ilima'snormaliumz.png"
+          smogonPage: 'https://www.smogon.com/dex/sv/items/unremarkable-teacup',
+          sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/unremarkable-teacup.png'
         }
       ]);
     });

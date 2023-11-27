@@ -287,7 +287,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'beastball',
     {
-      desc: 'A special Poke Ball designed to catch Ultra Beasts.',
+      desc: 'A special Poké Ball designed to catch Ultra Beasts.',
       gen: 7,
       name: 'Beast Ball'
     }
@@ -673,7 +673,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'cherishball',
     {
-      desc: 'A rare Poke Ball that has been crafted to commemorate an occasion.',
+      desc: 'A rare Poké Ball that has been crafted to commemorate an occasion.',
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Cherish Ball'
@@ -1078,7 +1078,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'diveball',
     {
-      desc: 'A Poke Ball that works especially well on Pokémon that live underwater.',
+      desc: 'A Poké Ball that works especially well on Pokémon that live underwater.',
       gen: 3,
       name: 'Dive Ball'
     }
@@ -1214,7 +1214,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'dreamball',
     {
-      desc: "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep.",
+      desc: "A Poké Ball that makes it easier to catch wild Pokémon while they're asleep.",
       gen: 5,
       name: 'Dream Ball'
     }
@@ -1251,7 +1251,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'duskball',
     {
-      desc: 'A Poke Ball that makes it easier to catch wild Pokémon at night or in caves.',
+      desc: 'A Poké Ball that makes it easier to catch wild Pokémon at night or in caves.',
       gen: 4,
       name: 'Dusk Ball'
     }
@@ -1556,7 +1556,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'fastball',
     {
-      desc: 'A Poke Ball that makes it easier to catch Pokémon which are quick to run away.',
+      desc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.',
       gen: 2,
       name: 'Fast Ball'
     }
@@ -1798,7 +1798,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'friendball',
     {
-      desc: 'A Poke Ball that makes caught Pokémon more friendly.',
+      desc: 'A Poké Ball that makes caught Pokémon more friendly.',
       gen: 2,
       name: 'Friend Ball'
     }
@@ -2094,7 +2094,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'greatball',
     {
-      desc: 'A high-performance Ball that provides a higher catch rate than a Poke Ball.',
+      desc: 'A high-performance Ball that provides a higher catch rate than a Poké Ball.',
       gen: 1,
       name: 'Great Ball'
     }
@@ -2218,7 +2218,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'healball',
     {
-      desc: "A remedial Poke Ball that restores the caught Pokémon's HP and status problem.",
+      desc: "A remedial Poké Ball that restores the caught Pokémon's HP and status problem.",
       gen: 4,
       name: 'Heal Ball'
     }
@@ -2234,7 +2234,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'heavyball',
     {
-      desc: 'A Poke Ball for catching very heavy Pokémon.',
+      desc: 'A Poké Ball for catching very heavy Pokémon.',
       gen: 2,
       name: 'Heavy Ball'
     }
@@ -2752,7 +2752,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'levelball',
     {
-      desc: 'A Poke Ball for catching Pokémon that are a lower level than your own.',
+      desc: 'A Poké Ball for catching Pokémon that are a lower level than your own.',
       gen: 2,
       name: 'Level Ball'
     }
@@ -2880,7 +2880,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'loveball',
     {
-      desc: 'Poke Ball for catching Pokémon that are the opposite gender of your Pokémon.',
+      desc: 'Poké Ball for catching Pokémon that are the opposite gender of your Pokémon.',
       gen: 2,
       name: 'Love Ball'
     }
@@ -2951,7 +2951,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'lureball',
     {
-      desc: 'A Poke Ball for catching Pokémon hooked by a Rod when fishing.',
+      desc: 'A Poké Ball for catching Pokémon hooked by a Rod when fishing.',
       gen: 2,
       name: 'Lure Ball'
     }
@@ -2967,7 +2967,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'luxuryball',
     {
-      desc: 'A comfortable Poke Ball that makes a caught wild Pokémon quickly grow friendly.',
+      desc: 'A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly.',
       gen: 3,
       name: 'Luxury Ball'
     }
@@ -3384,7 +3384,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'moonball',
     {
-      desc: 'A Poke Ball for catching Pokémon that evolve using the Moon Stone.',
+      desc: 'A Poké Ball for catching Pokémon that evolve using the Moon Stone.',
       gen: 2,
       name: 'Moon Ball'
     }
@@ -3466,7 +3466,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'nestball',
     {
-      desc: 'A Poke Ball that works especially well on weaker Pokémon in the wild.',
+      desc: 'A Poké Ball that works especially well on weaker Pokémon in the wild.',
       gen: 3,
       name: 'Nest Ball'
     }
@@ -3474,7 +3474,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'netball',
     {
-      desc: 'A Poke Ball that works especially well on Water- and Bug-type Pokémon.',
+      desc: 'A Poké Ball that works especially well on Water- and Bug-type Pokémon.',
       gen: 3,
       name: 'Net Ball'
     }
@@ -3708,7 +3708,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'parkball',
     {
-      desc: 'A special Poke Ball for the Pal Park.',
+      desc: 'A special Poké Ball for the Pal Park.',
       gen: 4,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Park Ball'
@@ -4104,7 +4104,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'premierball',
     {
-      desc: 'A rare Poke Ball that has been crafted to commemorate an event.',
+      desc: 'A rare Poké Ball that has been crafted to commemorate an event.',
       gen: 3,
       name: 'Premier Ball'
     }
@@ -4274,7 +4274,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'quickball',
     {
-      desc: 'A Poke Ball that provides a better catch rate at the start of a wild encounter.',
+      desc: 'A Poké Ball that provides a better catch rate at the start of a wild encounter.',
       gen: 4,
       name: 'Quick Ball'
     }
@@ -4449,7 +4449,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'repeatball',
     {
-      desc: 'A Poke Ball that works well on Pokémon species that were previously caught.',
+      desc: 'A Poké Ball that works well on Pokémon species that were previously caught.',
       gen: 3,
       name: 'Repeat Ball'
     }
@@ -4736,7 +4736,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'safariball',
     {
-      desc: 'A special Poke Ball that is used only in the Safari Zone and Great Marsh.',
+      desc: 'A special Poké Ball that is used only in the Safari Zone and Great Marsh.',
       gen: 1,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Safari Ball'
@@ -5163,7 +5163,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'sportball',
     {
-      desc: 'A special Poke Ball for the Bug-Catching Contest.',
+      desc: 'A special Poké Ball for the Bug-Catching Contest.',
       gen: 2,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Sport Ball'
@@ -5500,7 +5500,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'timerball',
     {
-      desc: 'A Poke Ball that becomes better the more turns there are in a battle.',
+      desc: 'A Poké Ball that becomes better the more turns there are in a battle.',
       gen: 3,
       name: 'Timer Ball'
     }

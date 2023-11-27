@@ -35,6 +35,17 @@ export async function importFileFromWeb<T extends object>({ url, temporaryFileNa
   return tiersData;
 }
 
+/**
+ * Replaces occurrences of "Poke Ball" with "Poké Ball" and "Pokemon" with "Pokémon" in the input string.
+ * @param input - The input string to be processed.
+ * @returns The input string with the replacements made.
+ */
+export function replacePokeWithAccentedPoke(input: string) {
+  return input //
+    .replaceAll('Poke Ball', 'Poké Ball')
+    .replaceAll('Pokemon', 'Pokémon');
+}
+
 export interface GitCommit {
   sha: string;
 }

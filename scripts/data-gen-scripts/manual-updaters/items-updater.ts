@@ -1,7 +1,7 @@
-import type { PokemonTypes } from '#assets/pokemon-source.js';
-import { importFileFromWeb } from '../../utils.js';
-import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { items as currentItems } from '#assets/items.js';
+import type { PokemonTypes } from '#assets/pokemon-source.js';
+import { IsNonStandard } from '#utils/isNonStandardEnum.js';
+import { importFileFromWeb, replacePokeWithAccentedPoke } from '../../utils.js';
 import { dataToClipboard } from '../data-to-clipboard.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
 
@@ -46,9 +46,9 @@ for (const [key, data] of currentItems.entries()) {
   }
 
   if (itemFromText) {
-    data.desc = itemFromText.desc;
+    data.desc = replacePokeWithAccentedPoke(itemFromText.desc);
     if (itemFromText.shortDesc) {
-      data.shortDesc = itemFromText.shortDesc;
+      data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
     }
   }
 
@@ -75,7 +75,7 @@ for (const [key, itemFromData] of itemsDataEntries) {
   }
 
   const data: PokemonTypes.Item = {
-    desc: itemFromText.desc,
+    desc: replacePokeWithAccentedPoke(itemFromText.desc),
     gen: itemFromData.gen,
     name: itemFromData.name
   };
@@ -93,7 +93,7 @@ for (const [key, itemFromData] of itemsDataEntries) {
   }
 
   if (itemFromText.shortDesc) {
-    data.shortDesc = itemFromText.shortDesc;
+    data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
   }
 
   newMap.set(key, sortObjectByKey(data));

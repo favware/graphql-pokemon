@@ -496,6 +496,34 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'embodyaspectcornerstone',
+    {
+      name: 'Embody Aspect (Cornerstone)',
+      shortDesc: "On switch-in, this Pokémon's Defense is raised by 1 stage."
+    }
+  ],
+  [
+    'embodyaspecthearthflame',
+    {
+      name: 'Embody Aspect (Hearthflame)',
+      shortDesc: "On switch-in, this Pokémon's Attack is raised by 1 stage."
+    }
+  ],
+  [
+    'embodyaspectteal',
+    {
+      name: 'Embody Aspect (Teal)',
+      shortDesc: "On switch-in, this Pokémon's Speed is raised by 1 stage."
+    }
+  ],
+  [
+    'embodyaspectwellspring',
+    {
+      name: 'Embody Aspect (Wellspring)',
+      shortDesc: "On switch-in, this Pokémon's Special Defense is raised by 1 stage."
+    }
+  ],
+  [
     'emergencyexit',
     {
       desc: 'When this Pokémon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.',
@@ -752,6 +780,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
         'A Pokémon with Honey Gather may collect Honey after a battle if it is not already holding an item. The chance for a Pokémon with Honey Gather to pick up Honey depends on its level, starting at 5% if the Pokémon is between levels 1 and 10, and going up by 5% every ten levels, ending at a 50% chance from levels 91-100.',
       name: 'Honey Gather',
       shortDesc: 'No competitive use.'
+    }
+  ],
+  [
+    'hospitality',
+    {
+      name: 'Hospitality',
+      shortDesc: "On switch-in, this Pokémon restores 1/4 of its ally's maximum HP, rounded down."
     }
   ],
   [
@@ -1093,6 +1128,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       desc: "This Pokémon's types change to match the active Terrain when this Pokémon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokémon's types become the original types for its species.",
       name: 'Mimicry',
       shortDesc: "This Pokémon's types change to match the Terrain. Type reverts when Terrain ends."
+    }
+  ],
+  [
+    'mindseye',
+    {
+      desc: "This Pokémon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokémon from lowering this Pokémon's accuracy stat stage. This Pokémon ignores a target's evasiveness stat stage.",
+      name: "Mind's Eye",
+      shortDesc: "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness."
     }
   ],
   [
@@ -2002,6 +2045,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'supersweetsyrup',
+    {
+      name: 'Supersweet Syrup',
+      shortDesc: 'On switch-in, this Pokémon lowers the evasiveness of opponents 1 stage. Once per battle.'
+    }
+  ],
+  [
     'supremeoverlord',
     {
       desc: "This Pokémon's moves have their power multiplied by 1+(X*0.1), where X is the total number of times any Pokémon has fainted on the user's side when this Ability became active, and X cannot be greater than 5.",
@@ -2154,6 +2204,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       desc: 'While this Pokémon is poisoned, the power of its physical attacks is multiplied by 1.5.',
       name: 'Toxic Boost',
       shortDesc: 'While this Pokémon is poisoned, its physical attacks have 1.5x power.'
+    }
+  ],
+  [
+    'toxicchain',
+    {
+      desc: "This Pokémon's moves have a 30% chance of badly poisoning. This effect comes after a move's inherent secondary effect chance.",
+      name: 'Toxic Chain',
+      shortDesc: "This Pokémon's moves have a 30% chance of badly poisoning."
     }
   ],
   [
@@ -2379,64 +2437,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       name: 'Zero to Hero',
       shortDesc: 'If this Pokémon is a Palafin in Zero Form, switching out has it change to Hero Form.'
-    }
-  ],
-  [
-    'embodyaspectcornerstone',
-    {
-      name: 'Embody Aspect (Cornerstone)',
-      shortDesc: "On switch-in, this Pokémon's Defense is raised by 1 stage."
-    }
-  ],
-  [
-    'embodyaspecthearthflame',
-    {
-      name: 'Embody Aspect (Hearthflame)',
-      shortDesc: "On switch-in, this Pokémon's Attack is raised by 1 stage."
-    }
-  ],
-  [
-    'embodyaspectteal',
-    {
-      name: 'Embody Aspect (Teal)',
-      shortDesc: "On switch-in, this Pokémon's Speed is raised by 1 stage."
-    }
-  ],
-  [
-    'embodyaspectwellspring',
-    {
-      name: 'Embody Aspect (Wellspring)',
-      shortDesc: "On switch-in, this Pokémon's Special Defense is raised by 1 stage."
-    }
-  ],
-  [
-    'hospitality',
-    {
-      name: 'Hospitality',
-      shortDesc: "On switch-in, this Pokémon restores 1/4 of its ally's maximum HP, rounded down."
-    }
-  ],
-  [
-    'mindseye',
-    {
-      desc: "This Pokémon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokémon from lowering this Pokémon's accuracy stat stage. This Pokémon ignores a target's evasiveness stat stage.",
-      name: "Mind's Eye",
-      shortDesc: "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness."
-    }
-  ],
-  [
-    'supersweetsyrup',
-    {
-      name: 'Supersweet Syrup',
-      shortDesc: 'On switch-in, this Pokémon lowers the evasiveness of opponents 1 stage. Once per battle.'
-    }
-  ],
-  [
-    'toxicchain',
-    {
-      desc: "This Pokémon's moves have a 30% chance of badly poisoning. This effect comes after a move's inherent secondary effect chance.",
-      name: 'Toxic Chain',
-      shortDesc: "This Pokémon's moves have a 30% chance of badly poisoning."
     }
   ]
 ]);

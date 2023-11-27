@@ -1,10 +1,10 @@
-import type { PokemonTypes } from '#assets/pokemon-source.js';
-import { importFileFromWeb } from '../../utils.js';
-import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { abilities as currentAbilities } from '#assets/abilities.js';
+import type { PokemonTypes } from '#assets/pokemon-source.js';
+import { IsNonStandard } from '#utils/isNonStandardEnum.js';
+import { objectEntries } from '@sapphire/utilities';
+import { importFileFromWeb, replacePokeWithAccentedPoke } from '../../utils.js';
 import { dataToClipboard } from '../data-to-clipboard.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
-import { objectEntries } from '@sapphire/utilities';
 
 const { Abilities } = await importFileFromWeb<{ Abilities: { [abilityName: string]: AbilityData } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/abilities.ts',
@@ -46,10 +46,10 @@ for (const [key, data] of currentAbilities.entries()) {
   }
 
   if (abilityFromText) {
-    data.shortDesc = abilityFromText.shortDesc;
+    data.shortDesc = replacePokeWithAccentedPoke(abilityFromText.shortDesc);
 
     if (abilityFromText.desc) {
-      data.desc = abilityFromText.desc;
+      data.desc = replacePokeWithAccentedPoke(abilityFromText.desc);
     }
   }
 
@@ -68,7 +68,7 @@ for (const [key, abilityFromData] of abilitiesDataEntries) {
   }
 
   const data: PokemonTypes.Ability = {
-    shortDesc: abilityFromText.shortDesc,
+    shortDesc: replacePokeWithAccentedPoke(abilityFromText.shortDesc),
     name: abilityFromData.name
   };
 
@@ -85,7 +85,7 @@ for (const [key, abilityFromData] of abilitiesDataEntries) {
   }
 
   if (abilityFromText.desc) {
-    data.desc = abilityFromText.desc;
+    data.desc = replacePokeWithAccentedPoke(abilityFromText.desc);
   }
 
   newMap.set(key, sortObjectByKey(data));

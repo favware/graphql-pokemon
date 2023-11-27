@@ -1,5 +1,5 @@
-isNonstandard: 'Past' -> isNonstandard: IsNonStandard.Past
-isNonstandard: 'Unobtainable' -> isNonstandard: IsNonStandard.Unobtainable
-isNonstandard: 'CAP' -> isNonstandard: IsNonStandard.Cap
-isNonstandard: 'Gigantamax' -> isNonstandard: IsNonStandard.Gigantamax
-isNonstandard: 'LetsGoPikachuEevee' -> isNonstandard: IsNonStandard.LetsGoPikachuEevee
+"?isNonstandard"?: ['"]Past['"] -> isNonstandard: IsNonStandard.Past
+"?isNonstandard"?: ['"]Unobtainable['"] -> isNonstandard: IsNonStandard.Unobtainable
+"?isNonstandard"?: ['"]CAP['"] -> isNonstandard: IsNonStandard.Cap
+"?isNonstandard"?: ['"]Gigantamax['"] -> isNonstandard: IsNonStandard.Gigantamax
+"?isNonstandard"?: ['"]LetsGoPikachuEevee['"] -> isNonstandard: IsNonStandard.LetsGoPikachuEevee

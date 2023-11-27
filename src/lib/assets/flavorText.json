@@ -1440,7 +1440,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "Its hard shell doesn't crack a bit even if {{P|Pikipek}} pecks at it, but it will tip over, spilling out its insides."
+      "flavor_text": "Its hard shell doesn't crack a bit even if Pikipek pecks at it, but it will tip over, spilling out its insides."
     },
     {
       "version_id": "Let's Go Pikachu",
@@ -1688,11 +1688,11 @@
     },
     {
       "version_id": "Black",
-      "flavor_text": "It {{tt|eats its weight|7.2 lb/3.2kg}} in leaves every day. It fends off attackers with the needle on its head."
+      "flavor_text": "It eats its weight in leaves every day. It fends off attackers with the needle on its head."
     },
     {
       "version_id": "White",
-      "flavor_text": "It {{tt|eats its weight|7.2 lb/3.2kg}} in leaves every day. It fends off attackers with the needle on its head."
+      "flavor_text": "It eats its weight in leaves every day. It fends off attackers with the needle on its head."
     },
     {
       "version_id": "Black 2",
@@ -1994,7 +1994,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "If at all possible, it will try to avoid battles. Small or weak enemies are blown away by <sc>Whirlwind</sc>."
+      "flavor_text": "If at all possible, it will try to avoid battles. Small or weak enemies are blown away by ."
     },
     {
       "version_id": "Gold",
@@ -2668,7 +2668,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "It busily flits around here and there. Even if it is frail, it can be a tough foe that uses {{m|Mirror Move}}."
+      "flavor_text": "It busily flits around here and there. Even if it is frail, it can be a tough foe that uses Mirror Move."
     },
     {
       "version_id": "LeafGreen",
@@ -5212,11 +5212,11 @@
   "39": [
     {
       "version_id": "Red",
-      "flavor_text": "When its huge eyes light up, it {{m|Sing|sing}}s a mysteriously soothing melody that lulls its enemies to {{status|sleep}}."
+      "flavor_text": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "When its huge eyes light up, it {{m|Sing|sing}}s a mysteriously soothing melody that lulls its enemies to {{status|sleep}}."
+      "flavor_text": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
     },
     {
       "version_id": "Yellow",
@@ -5386,7 +5386,7 @@
     },
     {
       "version_id": "Silver",
-      "flavor_text": "It has a very fine fur. Take care not to make it angry, or it may inflate steadily and hit with a {{m|Body Slam}}."
+      "flavor_text": "It has a very fine fur. Take care not to make it angry, or it may inflate steadily and hit with a Body Slam."
     },
     {
       "version_id": "Crystal",
@@ -5690,11 +5690,11 @@
     },
     {
       "version_id": "Silver",
-      "flavor_text": "It can drink more than {{tt|10 ounces|300 cubic centimeters (millilitres)}} of blood at once. If it has too much, it gets heavy and flies clumsily."
+      "flavor_text": "It can drink more than 10 ounces of blood at once. If it has too much, it gets heavy and flies clumsily."
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "When it plunges its fangs into its prey, it instantly draws and gulps down more than {{tt|ten ounces|300 cubic centimeters (millilitres)}} of blood."
+      "flavor_text": "When it plunges its fangs into its prey, it instantly draws and gulps down more than ten ounces of blood."
     },
     {
       "version_id": "Stadium 2",
@@ -5714,7 +5714,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "It clamps down on its prey with needle-sharp fangs and drains over {{tt|10 ounces|300 cubic centimeters (millilitres)}} of blood in one gulp."
+      "flavor_text": "It clamps down on its prey with needle-sharp fangs and drains over 10 ounces of blood in one gulp."
     },
     {
       "version_id": "LeafGreen",
@@ -5738,7 +5738,7 @@
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "It can drink more than {{tt|10 ounces|300 cubic centimeters (millilitres)}} of blood at once. If it has too much, it gets heavy and flies clumsily."
+      "flavor_text": "It can drink more than 10 ounces of blood at once. If it has too much, it gets heavy and flies clumsily."
     },
     {
       "version_id": "Black",
@@ -5864,7 +5864,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "Its scientific name is \"Oddium Wanderus.\" At night, it is said to walk {{tt|nearly 1,000 feet|300&nbsp;m}} on its two roots."
+      "flavor_text": "Its scientific name is \"Oddium Wanderus.\" At night, it is said to walk nearly 1,000 feet on its two roots."
     },
     {
       "version_id": "LeafGreen",
@@ -5912,7 +5912,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "Its scientific name is \"Oddium Wanderus.\" At night, it is said to walk {{tt|nearly 1,000 feet|300&nbsp;m}} on its two roots."
+      "flavor_text": "Its scientific name is \"Oddium Wanderus.\" At night, it is said to walk nearly 1,000 feet on its two roots."
     },
     {
       "version_id": "Omega Ruby",
@@ -5994,7 +5994,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of {{tt|1.25 miles|2 kilometers}}."
+      "flavor_text": "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles."
     },
     {
       "version_id": "LeafGreen",
@@ -6062,7 +6062,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of {{tt|1.25 miles|2 kilometers}}."
+      "flavor_text": "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles."
     },
     {
       "version_id": "Shield",
@@ -6242,11 +6242,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from {{tt|this|''the'' in Ruby v1.0}} {{tt|Bug/Grass Pokémon|''BUG POKéMON'' in R/S v1.0}} host. They are highly valued as a medicine for extending life."
+      "flavor_text": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug/Grass Pokémon host. They are highly valued as a medicine for extending life."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from {{tt|this|''the'' in Ruby v1.0}} {{tt|Bug/Grass Pokémon|''BUG POKéMON'' in R/S v1.0}} host. They are highly valued as a medicine for extending life."
+      "flavor_text": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug/Grass Pokémon host. They are highly valued as a medicine for extending life."
     },
     {
       "version_id": "Emerald",
@@ -6656,11 +6656,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Venomoth is {{pkmn2|nocturnal}} - it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness."
+      "flavor_text": "Venomoth is nocturnal - it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Venomoth is {{pkmn2|nocturnal}} - it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness."
+      "flavor_text": "Venomoth is nocturnal - it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness."
     },
     {
       "version_id": "Emerald",
@@ -7012,7 +7012,7 @@
     },
     {
       "version_id": "Sun",
-      "flavor_text": "This set of triplets moves cooperatively. It's the power of teamwork that enables this Pokémon to dig to a depth of {{tt|60 miles.|100 km}}"
+      "flavor_text": "This set of triplets moves cooperatively. It's the power of teamwork that enables this Pokémon to dig to a depth of 60 miles."
     },
     {
       "version_id": "Moon",
@@ -7028,11 +7028,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "A team of triplets that can burrow to a depth of {{tt|60 miles.|100 km}} It's reported that this triggers an earthquake."
+      "flavor_text": "A team of triplets that can burrow to a depth of 60 miles. It's reported that this triggers an earthquake."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "A team of triplets that can burrow to a depth of {{tt|60 miles.|100 km}} It's reported that this triggers an earthquake."
+      "flavor_text": "A team of triplets that can burrow to a depth of 60 miles. It's reported that this triggers an earthquake."
     },
     {
       "version_id": "Sword",
@@ -7528,11 +7528,11 @@
   "55": [
     {
       "version_id": "Red",
-      "flavor_text": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, {{wp|Kappa (folklore)|Kappa}}."
+      "flavor_text": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, {{wp|Kappa (folklore)|Kappa}}."
+      "flavor_text": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
     },
     {
       "version_id": "Yellow",
@@ -8280,7 +8280,7 @@
     },
     {
       "version_id": "Legends: Arceus",
-      "flavor_text": "Snaps at its foes with {{m|Fire Fang|fangs cloaked in blazing flame}}. Despite its bulk, it deftly feints every which way, leading opponents on a deceptively merry chase as it all but dances around them."
+      "flavor_text": "Snaps at its foes with fangs cloaked in blazing flame. Despite its bulk, it deftly feints every which way, leading opponents on a deceptively merry chase as it all but dances around them."
     },
     {
       "version_id": "Scarlet",
@@ -8602,11 +8602,11 @@
   "62": [
     {
       "version_id": "Red",
-      "flavor_text": "An adept swimmer at both the {{wp|front crawl}} and {{wp|breaststroke|breast stroke}}. Easily overtakes the best human swimmers."
+      "flavor_text": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "An adept swimmer at both the {{wp|front crawl}} and {{wp|breaststroke|breast stroke}}. Easily overtakes the best human swimmers."
+      "flavor_text": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
     },
     {
       "version_id": "Yellow",
@@ -8618,7 +8618,7 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "This strong and skilled swimmer is even capable of crossing the {{wp|Pacific Ocean}} just by kicking."
+      "flavor_text": "This strong and skilled swimmer is even capable of crossing the Pacific Ocean just by kicking."
     },
     {
       "version_id": "Silver",
@@ -8646,7 +8646,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "An adept swimmer, it knows the front crawl, {{wp|butterfly stroke|butterfly}}, and more. It is faster than the best human swimmers."
+      "flavor_text": "An adept swimmer, it knows the front crawl, butterfly, and more. It is faster than the best human swimmers."
     },
     {
       "version_id": "LeafGreen",
@@ -8756,11 +8756,11 @@
   "63": [
     {
       "version_id": "Red",
-      "flavor_text": "Using its ability to read minds, it will identify impending danger and <sc>Teleport</sc> to safety."
+      "flavor_text": "Using its ability to read minds, it will identify impending danger and  to safety."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "Using its ability to read minds, it will identify impending danger and <sc>Teleport</sc> to safety."
+      "flavor_text": "Using its ability to read minds, it will identify impending danger and  to safety."
     },
     {
       "version_id": "Yellow",
@@ -8768,7 +8768,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Even while asleep, it can sense enemies approaching. It <sc>Teleport</sc>s itself to a distant spot if there is any danger."
+      "flavor_text": "Even while asleep, it can sense enemies approaching. It s itself to a distant spot if there is any danger."
     },
     {
       "version_id": "Gold",
@@ -9518,7 +9518,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Among its fighting moves is a simultaneous volley of an uppercut, hook, straight and <sc>{{m|Karate Chop}}</sc> from its four arms."
+      "flavor_text": "Among its fighting moves is a simultaneous volley of an uppercut, hook, straight and  from its four arms."
     },
     {
       "version_id": "Gold",
@@ -9798,7 +9798,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Armed with razor-sharp leaves, it uses toxic pollen to immobilize its enemy and melts the helpless foe with <sc>Acid</sc>."
+      "flavor_text": "Armed with razor-sharp leaves, it uses toxic pollen to immobilize its enemy and melts the helpless foe with ."
     },
     {
       "version_id": "Gold",
@@ -11372,11 +11372,11 @@
   "81": [
     {
       "version_id": "Red",
-      "flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses <sc>{{m|Thunder Wave}}</sc> and similar moves."
+      "flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses  and similar moves."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses <sc>{{m|Thunder Wave}}</sc> and similar moves."
+      "flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses  and similar moves."
     },
     {
       "version_id": "Yellow",
@@ -11538,11 +11538,11 @@
     },
     {
       "version_id": "Yellow",
-      "flavor_text": "Generates strange radio signals. It raises the temperature by {{tt|3.6F degrees|2 degrees C}} within 3,300 feet."
+      "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6F degrees within 3,300 feet."
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Formed by <sc>Magnemite</sc> that link together when the number of black spots on the sun increases. Fires high-voltage power, etc."
+      "flavor_text": "Formed by  that link together when the number of black spots on the sun increases. Fires high-voltage power, etc."
     },
     {
       "version_id": "Gold",
@@ -11570,7 +11570,7 @@
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "It is actually three Magnemite linked by magnetism. It generates powerful radio waves that raise temperatures by {{tt|3.6 degrees F|2 degrees C}} within a 3,300-foot radius."
+      "flavor_text": "It is actually three Magnemite linked by magnetism. It generates powerful radio waves that raise temperatures by 3.6 degrees F within a 3,300-foot radius."
     },
     {
       "version_id": "FireRed",
@@ -11622,7 +11622,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "Generates strange radio signals. It raises the temperature by {{tt|3.6 degrees Fahrenheit|2 degrees Celsius}} within 3,300 feet."
+      "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet."
     },
     {
       "version_id": "Omega Ruby",
@@ -11650,11 +11650,11 @@
     },
     {
       "version_id": "Let's Go Pikachu",
-      "flavor_text": "Generates strange radio signals. It raises the temperature by {{tt|3.6 degrees Fahrenheit|2 degrees Celsius}} within 3,300 feet."
+      "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet."
     },
     {
       "version_id": "Let's Go Eevee",
-      "flavor_text": "Generates strange radio signals. It raises the temperature by {{tt|3.6 degrees Fahrenheit|2 degrees Celsius}} within 3,300 feet."
+      "flavor_text": "Generates strange radio signals. It raises the temperature by 3.6 degrees Fahrenheit within 3,300 feet."
     },
     {
       "version_id": "Sword",
@@ -12070,7 +12070,7 @@
     },
     {
       "version_id": "Yellow",
-      "flavor_text": "Loves freezing cold conditions. Relishes swimming in a frigid climate of around {{tt|14F degrees|-10°C}}."
+      "flavor_text": "Loves freezing cold conditions. Relishes swimming in a frigid climate of around 14F degrees."
     },
     {
       "version_id": "Stadium",
@@ -12106,7 +12106,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "Covered with light blue fur, its hide is thick and tough. It is active in bitter cold of {{tt|minus 40 degrees Fahrenheit|-40°C}}."
+      "flavor_text": "Covered with light blue fur, its hide is thick and tough. It is active in bitter cold of minus 40 degrees Fahrenheit."
     },
     {
       "version_id": "LeafGreen",
@@ -12966,7 +12966,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "A being that exists as a thin gas. It can topple an {{wp|Indian elephant}} by enveloping the prey in two seconds."
+      "flavor_text": "A being that exists as a thin gas. It can topple an Indian elephant by enveloping the prey in two seconds."
     },
     {
       "version_id": "LeafGreen",
@@ -13290,7 +13290,7 @@
     },
     {
       "version_id": "Diamond",
-      "flavor_text": "It hides in shadows. It is said that if Gengar is hiding, it cools the area by nearly {{tt|10 degrees F|5°C}}."
+      "flavor_text": "It hides in shadows. It is said that if Gengar is hiding, it cools the area by nearly 10 degrees F."
     },
     {
       "version_id": "Pearl",
@@ -13530,11 +13530,11 @@
   "96": [
     {
       "version_id": "Red",
-      "flavor_text": "Puts enemies to {{status|sleep}} then eats their dreams. Occasionally gets sick from eating bad dreams."
+      "flavor_text": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "Puts enemies to {{status|sleep}} then eats their dreams. Occasionally gets sick from eating bad dreams."
+      "flavor_text": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams."
     },
     {
       "version_id": "Yellow",
@@ -13542,7 +13542,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "It puts its enemy to sleep and eats the victim's dreams. Said to have descended from the legendary beast, {{wp|Baku (spirit)|Baku}}."
+      "flavor_text": "It puts its enemy to sleep and eats the victim's dreams. Said to have descended from the legendary beast, Baku."
     },
     {
       "version_id": "Gold",
@@ -13952,11 +13952,11 @@
   "99": [
     {
       "version_id": "Red",
-      "flavor_text": "The large pincer has 10000 {{wp|horsepower|hp}} of crushing power. However, its huge size makes it unwieldy to use."
+      "flavor_text": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "The large pincer has 10000 {{wp|horsepower|hp}} of crushing power. However, its huge size makes it unwieldy to use."
+      "flavor_text": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use."
     },
     {
       "version_id": "Yellow",
@@ -14800,7 +14800,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Originally a small and weak Pokémon, it became rough and aggressive when it begin <!--error in game--> using bones as weapons."
+      "flavor_text": "Originally a small and weak Pokémon, it became rough and aggressive when it begin using bones as weapons."
     },
     {
       "version_id": "Gold",
@@ -15108,7 +15108,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "The spirit of a pro boxer has infused this Pokémon. It throws punches that are faster than a {{wp|bullet train}}."
+      "flavor_text": "The spirit of a pro boxer has infused this Pokémon. It throws punches that are faster than a bullet train."
     },
     {
       "version_id": "LeafGreen",
@@ -15156,7 +15156,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "The spirit of a pro boxer has infused this Pokémon. It throws punches that are faster than a {{wp|bullet train}}."
+      "flavor_text": "The spirit of a pro boxer has infused this Pokémon. It throws punches that are faster than a bullet train."
     },
     {
       "version_id": "Omega Ruby",
@@ -15218,7 +15218,7 @@
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "It has a tongue that is over {{tt|6'6\"|2 meters}} long. It uses this long tongue to lick its body clean."
+      "flavor_text": "It has a tongue that is over 6'6\" long. It uses this long tongue to lick its body clean."
     },
     {
       "version_id": "Stadium 2",
@@ -15372,7 +15372,7 @@
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Koffing embodies toxic substances. It mixes the toxins with raw garbage to set off a chemical reaction that results in a terribly powerful {{m|Poison Gas}}. The higher the temperature, the more gas is concocted by this Pokémon."
+      "flavor_text": "Koffing embodies toxic substances. It mixes the toxins with raw garbage to set off a chemical reaction that results in a terribly powerful Poison Gas. The higher the temperature, the more gas is concocted by this Pokémon."
     },
     {
       "version_id": "Emerald",
@@ -15754,11 +15754,11 @@
   "112": [
     {
       "version_id": "Red",
-      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of {{tt|3,600 degrees|Fahrenheit; 2,000 degrees Celsius}}."
+      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of {{tt|3,600 degrees|Fahrenheit; 2,000 degrees Celsius}}."
+      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
     },
     {
       "version_id": "Yellow",
@@ -15766,7 +15766,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Protected by an armor-like hide, it can survive in lava over {{tt|3,600 degrees|Fahrenheit; 2,000 degrees Celsius}}. Its horn can bore holes through boulders."
+      "flavor_text": "Protected by an armor-like hide, it can survive in lava over 3,600 degrees. Its horn can bore holes through boulders."
     },
     {
       "version_id": "Gold",
@@ -15802,7 +15802,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of {{tt|3,600 degrees|Fahrenheit; 2,000 degrees Celsius}}."
+      "flavor_text": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
     },
     {
       "version_id": "Diamond",
@@ -17778,7 +17778,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "With a body temperature of close to {{tt|2,200 degrees|1,200°C}}, its body is always burning with orange flames. Lives near volcanoes."
+      "flavor_text": "With a body temperature of close to 2,200 degrees, its body is always burning with orange flames. Lives near volcanoes."
     },
     {
       "version_id": "Gold",
@@ -18418,7 +18418,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "It has an extremely aggressive nature. The {{m|Hyper Beam}} it shoots from its mouth totally incinerates all targets."
+      "flavor_text": "It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets."
     },
     {
       "version_id": "LeafGreen",
@@ -18486,7 +18486,7 @@
     },
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "It fires {{m|Hyper Beam|hyper beams}} in all directions, burning the surrounding area to ash. There are some regions where it's called \"the deity of destruction.\""
+      "flavor_text": "It fires hyper beams in all directions, burning the surrounding area to ash. There are some regions where it's called \"the deity of destruction.\""
     },
     {
       "version_id": "Ultra Moon",
@@ -18502,7 +18502,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It has an extremely aggressive nature. The {{m|Hyper Beam}} it shoots from its mouth totally incinerates all targets."
+      "flavor_text": "It has an extremely aggressive nature. The Hyper Beam it shoots from its mouth totally incinerates all targets."
     },
     {
       "version_id": "Shield",
@@ -19306,11 +19306,11 @@
   "136": [
     {
       "version_id": "Red",
-      "flavor_text": "When storing thermal energy in its body, its temperature could soar to over {{tt|1600 degrees|Fahrenheit; 900 degrees Celsius}}."
+      "flavor_text": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "When storing thermal energy in its body, its temperature could soar to over {{tt|1600 degrees|Fahrenheit; 900 degrees Celsius}}."
+      "flavor_text": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
     },
     {
       "version_id": "Yellow",
@@ -19318,23 +19318,23 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Its fiery breath reaches close to {{tt|3,000 degrees|Fahrenheit; 1,700 degrees Celsius}}. Its body temperature exceeds {{tt|1,650 degrees|Fahrenheit; 900 degrees Celsius}} when storing fire inside."
+      "flavor_text": "Its fiery breath reaches close to 3,000 degrees. Its body temperature exceeds 1,650 degrees when storing fire inside."
     },
     {
       "version_id": "Gold",
-      "flavor_text": "It stores some of the air it inhales in its internal flame pouch, which heats it to over {{tt|3,000 degrees|Fahrenheit; 1,700 degrees Celsius}}."
+      "flavor_text": "It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees."
     },
     {
       "version_id": "Silver",
-      "flavor_text": "It fluffs out its fur collar to cool down its body temperature, which can reach {{tt|1,650 degrees|Fahrenheit; 900 degrees Celsius}}."
+      "flavor_text": "It fluffs out its fur collar to cool down its body temperature, which can reach 1,650 degrees."
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "Once it has stored up enough heat, this Pokémon's body temperature can reach up to {{tt|1700 degrees|Fahrenheit; 900 degrees Celsius}}."
+      "flavor_text": "Once it has stored up enough heat, this Pokémon's body temperature can reach up to 1700 degrees."
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "It stores some of the air it inhales in its internal flame pouch, which heats it to over {{tt|3,000 degrees|Fahrenheit; 1,700 degrees Celsius}}."
+      "flavor_text": "It stores some of the air it inhales in its internal flame pouch, which heats it to over 3,000 degrees."
     },
     {
       "version_id": "Ruby",
@@ -19414,7 +19414,7 @@
     },
     {
       "version_id": "Moon",
-      "flavor_text": "Its average body temperature is between 1,300 and 1,500 degrees Fahrenheit. In its internal flame sac, temperatures reach {{tt|3,000 degrees|Fahrenheit; 1,700 degrees Celsius}}."
+      "flavor_text": "Its average body temperature is between 1,300 and 1,500 degrees Fahrenheit. In its internal flame sac, temperatures reach 3,000 degrees."
     },
     {
       "version_id": "Ultra Sun",
@@ -20896,7 +20896,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "Even the young are known to exceed {{tt|6' 6\"|2 m}}. It is rare and was long considered to exist only in myth."
+      "flavor_text": "Even the young are known to exceed 6' 6\". It is rare and was long considered to exist only in myth."
     },
     {
       "version_id": "Gold",
@@ -20928,7 +20928,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "Even the young can exceed {{tt|6.5 feet|2 meters}} in length. It grows larger by repeatedly shedding skin."
+      "flavor_text": "Even the young can exceed 6.5 feet in length. It grows larger by repeatedly shedding skin."
     },
     {
       "version_id": "LeafGreen",
@@ -21458,11 +21458,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Created from the DNA of Mew, this Pokémon is a dangerous combination of overwhelming power and a savage heart.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Created from the DNA of Mew, this Pokémon is a dangerous combination of overwhelming power and a savage heart."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "The research efforts of a certain scientist ultimately resulted in this Pokémon. Its powers are dedicated to battling.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "The research efforts of a certain scientist ultimately resulted in this Pokémon. Its powers are dedicated to battling."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -21488,7 +21488,7 @@
     },
     {
       "version_id": "Stadium",
-      "flavor_text": "A mythical Pokémon of {{wp|South America}} which had been thought extinct. A growing number of people have seen it recently."
+      "flavor_text": "A mythical Pokémon of South America which had been thought extinct. A growing number of people have seen it recently."
     },
     {
       "version_id": "Gold",
@@ -21588,11 +21588,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It's very intelligent and can use an incredible variety of moves. Many believe that all other Pokémon are descendants of this one.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It's very intelligent and can use an incredible variety of moves. Many believe that all other Pokémon are descendants of this one."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "This mythical Pokémon is said to be extinct, but sightings of it are still being reported to this day.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "This mythical Pokémon is said to be extinct, but sightings of it are still being reported to this day."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -21634,7 +21634,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "Its pleasantly aromatic {{tt|leaf|leaves in Ver 1.0}} has the ability to check the humidity and temperature."
+      "flavor_text": "Its pleasantly aromatic leaf has the ability to check the humidity and temperature."
     },
     {
       "version_id": "LeafGreen",
@@ -28352,7 +28352,7 @@
   "211": [
     {
       "version_id": "Gold",
-      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking {{tt|over 2.6 gallons|10 litres}} of water all at once."
+      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once."
     },
     {
       "version_id": "Silver",
@@ -28364,7 +28364,7 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking {{tt|over 2.6 gallons|10 litres}} of water all at once."
+      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once."
     },
     {
       "version_id": "Ruby",
@@ -28384,7 +28384,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking {{tt|over 2.6 gallons|10 litres}} of water all at once."
+      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once."
     },
     {
       "version_id": "Diamond",
@@ -28400,7 +28400,7 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking {{tt|over 2.6 gallons|10 litres}} of water all at once."
+      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water all at once."
     },
     {
       "version_id": "SoulSilver",
@@ -28424,7 +28424,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking {{tt|over 2.6 gallons|10 litres}} of water at once."
+      "flavor_text": "To fire its poison spikes, it must inflate its body by drinking over 2.6 gallons of water at once."
     },
     {
       "version_id": "Y",
@@ -30032,11 +30032,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of {{wp|Mount Everest|Mt. Everest}} thanks to one of these Pokémon sharing its food."
+      "flavor_text": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of Mt. Everest thanks to one of these Pokémon sharing its food."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of {{wp|Mount Everest|Mt. Everest}} thanks to one of these Pokémon sharing its food."
+      "flavor_text": "Delibird carries its food bundled up in its tail. There once was a famous explorer who managed to reach the peak of Mt. Everest thanks to one of these Pokémon sharing its food."
     },
     {
       "version_id": "Emerald",
@@ -31298,11 +31298,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the {{pkmn|Trainer}} must establish and uphold various training methods."
+      "flavor_text": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the Trainer must establish and uphold various training methods."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the {{pkmn|Trainer}} must establish and uphold various training methods."
+      "flavor_text": "Tyrogue becomes stressed out if it does not get to train every day. When raising this Pokémon, the Trainer must establish and uphold various training methods."
     },
     {
       "version_id": "Emerald",
@@ -31738,11 +31738,11 @@
     },
     {
       "version_id": "Silver",
-      "flavor_text": "It is found in volcanic craters. Its body temp. is over {{tt|1100 degrees|600°C}}, so don't under-estimate it."
+      "flavor_text": "It is found in volcanic craters. Its body temp. is over 1100 degrees, so don't under-estimate it."
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "It naturally spits an {{tt|1100-degree|600°C}} flame. It is said when many appear, it heralds a volcanic eruption."
+      "flavor_text": "It naturally spits an 1100-degree flame. It is said when many appear, it heralds a volcanic eruption."
     },
     {
       "version_id": "Stadium 2",
@@ -32682,7 +32682,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "It has an impudent nature. Having great strength, it can even change surrounding landforms.{{tt|*|In Ver 1.0, Tyranitar uses its entry from LeafGreen}}"
+      "flavor_text": "It has an impudent nature. Having great strength, it can even change surrounding landforms."
     },
     {
       "version_id": "LeafGreen",
@@ -33060,11 +33060,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "This Pokémon has the ability to move through time. Records describing it as a forest deity can be found from many different eras.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "This Pokémon has the ability to move through time. Records describing it as a forest deity can be found from many different eras."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "This Pokémon traveled through time to come from the future. It bolsters grass and trees with its own strength, and it can heal wounds, too.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "This Pokémon traveled through time to come from the future. It bolsters grass and trees with its own strength, and it can heal wounds, too."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -35194,7 +35194,7 @@
   "276": [
     {
       "version_id": "Ruby",
-      "flavor_text": "Taillow courageously stands its ground against foes, however strong they may be. This {{a|guts}}y Pokémon will remain defiant even after a loss. On the other hand, it cries loudly if it becomes hungry."
+      "flavor_text": "Taillow courageously stands its ground against foes, however strong they may be. This gutsy Pokémon will remain defiant even after a loss. On the other hand, it cries loudly if it becomes hungry."
     },
     {
       "version_id": "Sapphire",
@@ -36832,7 +36832,7 @@
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "Its cries equal a {{tt|jet plane|approx. 120 to 140 dB}} in volume. It inhales through its ear canals. Because of this system, it can cry continually without having to catch its breath."
+      "flavor_text": "Its cries equal a jet plane in volume. It inhales through its ear canals. Because of this system, it can cry continually without having to catch its breath."
     },
     {
       "version_id": "FireRed",
@@ -37408,7 +37408,7 @@
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Nosepass had been said to be completely unmoving, with its magnetic nose pointed due north. However, close observation has revealed that the Pokémon actually moves by {{tt|a little over 3/8 of an inch|1 centimeter}} every year."
+      "flavor_text": "Nosepass had been said to be completely unmoving, with its magnetic nose pointed due north. However, close observation has revealed that the Pokémon actually moves by a little over 3/8 of an inch every year."
     },
     {
       "version_id": "Emerald",
@@ -37792,7 +37792,7 @@
   "303": [
     {
       "version_id": "Ruby",
-      "flavor_text": "{{tt|Mawile|Misspelled as MAWHILE in English version 1.0}}'s huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, {{tt|Mawile|Misspelled as MAWHILE in English version 1.0}} chomps it with its gaping jaws."
+      "flavor_text": "Mawile's huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, Mawile chomps it with its gaping jaws."
     },
     {
       "version_id": "Sapphire",
@@ -39880,7 +39880,7 @@
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "A Pokémon that manipulates {{t|psychic}} power at will. It doesn't stop bouncing even when it is asleep. It loves eating mushrooms that grow underground."
+      "flavor_text": "A Pokémon that manipulates psychic power at will. It doesn't stop bouncing even when it is asleep. It loves eating mushrooms that grow underground."
     },
     {
       "version_id": "FireRed",
@@ -39962,7 +39962,7 @@
   "326": [
     {
       "version_id": "Ruby",
-      "flavor_text": "Grumpig uses the black pearls on its body to amplify its {{m|Psywave|psychic power waves}} for gaining total control over its foe. When this Pokémon uses its special power, its snorting breath grows labored."
+      "flavor_text": "Grumpig uses the black pearls on its body to amplify its psychic power waves for gaining total control over its foe. When this Pokémon uses its special power, its snorting breath grows labored."
     },
     {
       "version_id": "Sapphire",
@@ -43456,11 +43456,11 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "It is said that a home visited by a Snorunt will prosper. It can withstand cold of {{tt|minus 150 degrees Fahrenheit.|minus 100 degrees Celsius}}."
+      "flavor_text": "It is said that a home visited by a Snorunt will prosper. It can withstand cold of minus 150 degrees Fahrenheit.."
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "It is said that a home visited by a Snorunt will prosper. It can withstand cold of {{tt|minus 150 degrees Fahrenheit.|minus 100 degrees Celsius}}."
+      "flavor_text": "It is said that a home visited by a Snorunt will prosper. It can withstand cold of minus 150 degrees Fahrenheit.."
     },
     {
       "version_id": "Diamond",
@@ -43536,7 +43536,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It can only survive in cold areas. It bounces happily around, even in environments as cold as {{tt|−150 degrees Fahrenheit|-100 degrees Celsius}}."
+      "flavor_text": "It can only survive in cold areas. It bounces happily around, even in environments as cold as −150 degrees Fahrenheit."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -45266,7 +45266,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "With cold air that can reach temperatures as low as {{tt|−328 degrees Fahrenheit|-200 degrees Celsius}}, Regice instantly freezes any creature that approaches it."
+      "flavor_text": "With cold air that can reach temperatures as low as −328 degrees Fahrenheit, Regice instantly freezes any creature that approaches it."
     },
     {
       "version_id": "Shield",
@@ -45856,11 +45856,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Once every 1,000 years, the singing of a pure voice will rouse this Pokémon from its near-perpetual slumber. It wakes for only seven days.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Once every 1,000 years, the singing of a pure voice will rouse this Pokémon from its near-perpetual slumber. It wakes for only seven days."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It's believed that when this Pokémon wakes from its 1,000-year slumber, it will grant any wishes written on the notes attached to its head.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It's believed that when this Pokémon wakes from its 1,000-year slumber, it will grant any wishes written on the notes attached to its head."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -52006,7 +52006,7 @@
     },
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "It uses radar to monitor its territory. Intruders are quickly disposed of with a {{m|Hyper Beam|hyper beam}}."
+      "flavor_text": "It uses radar to monitor its territory. Intruders are quickly disposed of with a hyper beam."
     },
     {
       "version_id": "Ultra Moon",
@@ -52760,7 +52760,7 @@
     },
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "It protects itself by freezing its fur into sharp needles. It can drop its body temperature below {{tt|–75 degrees Fahrenheit|–60 degrees Celsius}}."
+      "flavor_text": "It protects itself by freezing its fur into sharp needles. It can drop its body temperature below -75 degrees Fahrenheit."
     },
     {
       "version_id": "Ultra Moon",
@@ -53314,7 +53314,7 @@
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Legends in snowy regions say that a woman who was lost on an icy mountain was reborn as Froslass<!-- period is missing -->"
+      "flavor_text": "Legends in snowy regions say that a woman who was lost on an icy mountain was reborn as Froslass."
     },
     {
       "version_id": "Black",
@@ -53370,15 +53370,15 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It spits out cold air of nearly {{tt|−60 degrees Fahrenheit|-50 degree Celsius}} to freeze its quarry. It brings frozen prey back to its lair and neatly lines them up."
+      "flavor_text": "It spits out cold air of nearly -60 degrees Fahrenheit to freeze its quarry. It brings frozen prey back to its lair and neatly lines them up."
     },
     {
       "version_id": "Brilliant Diamond",
-      "flavor_text": "It freezes foes with an icy breath that is nearly {{tt|−60 degrees Fahrenheit|-50 degree Celsius}}. What seems to be its body is actually hollow."
+      "flavor_text": "It freezes foes with an icy breath that is nearly -60 degrees Fahrenheit. What seems to be its body is actually hollow."
     },
     {
       "version_id": "Shining Pearl",
-      "flavor_text": "It freezes foes with an icy breath that is nearly {{tt|−60 degrees Fahrenheit|-50 degree Celsius}}. What seems to be its body is actually hollow."
+      "flavor_text": "It freezes foes with an icy breath that is nearly -60 degrees Fahrenheit. What seems to be its body is actually hollow."
     },
     {
       "version_id": "Legends: Arceus",
@@ -53742,67 +53742,67 @@
   "484": [
     {
       "version_id": "Diamond",
-      "flavor_text": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity."
+      "flavor_text": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "A Pokémon spoken of in legend. It is said that time began moving when Dialga was born."
+      "flavor_text": "It is said to live in a gap in the spatial dimension parallel to ours. It appears in mythology."
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga's heart beats."
+      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia's every breath."
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "This Pokémon completely controls the flow of time. It uses its power to travel at will through the past and future."
+      "flavor_text": "Its total control over the boundaries of space enable it to transport itself to faraway places or even other dimensions."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "This Pokémon completely controls the flow of time. It uses its power to travel at will through the past and future."
+      "flavor_text": "Its total control over the boundaries of space enable it to transport itself to faraway places or even other dimensions."
     },
     {
       "version_id": "Black",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga's heart beats."
+      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia's every breath."
     },
     {
       "version_id": "White",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga's heart beats."
+      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia's every breath."
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga's heart beats."
+      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia's every breath."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga's heart beats."
+      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia's every breath."
     },
     {
       "version_id": "X",
-      "flavor_text": "A Pokémon spoken of in legend. It is said that time began moving when Dialga was born."
+      "flavor_text": "It is said to live in a gap in the spatial dimension parallel to ours. It appears in mythology."
     },
     {
       "version_id": "Y",
-      "flavor_text": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity."
+      "flavor_text": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "A Pokémon spoken of in legend. It is said that time began moving when Dialga was born."
+      "flavor_text": "It is said to live in a gap in the spatial dimension parallel to ours. It appears in mythology."
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity."
+      "flavor_text": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
     },
     {
       "version_id": "Brilliant Diamond",
-      "flavor_text": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity."
+      "flavor_text": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
     },
     {
       "version_id": "Shining Pearl",
-      "flavor_text": "This Pokémon is spoken of in legend. It is said that time began moving when Dialga was born."
+      "flavor_text": "It is said to live in a gap in the spatial dimension parallel to ours. Palkia appears in mythology."
     },
     {
       "version_id": "Legends: Arceus",
-      "flavor_text": "This Pokémon is revered as a deity in Hisuian legend. The birth of Dialga was what caused the vast river of time to begin flowing in our world."
+      "flavor_text": "This Pokémon is feared as a deity in Hisuian legend. The birth of Palkia was what caused the walls of our world to disappear, creating a sky that spans for infinity."
     }
   ],
   "485": [
@@ -53926,11 +53926,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "All over the world, there are legends that tell of Regigigas creating other Pokémon in its own image.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "All over the world, there are legends that tell of Regigigas creating other Pokémon in its own image."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It's said that Regigigas created other Pokémon from many different materials before it moved the continents to where they are today.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "It's said that Regigigas created other Pokémon from many different materials before it moved the continents to where they are today."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -55156,11 +55156,11 @@
   "513": [
     {
       "version_id": "Black",
-      "flavor_text": "When it is angered, the temperature of its head tuft reaches {{tt|600°F|300°C}}. It uses its tuft to roast berries."
+      "flavor_text": "When it is angered, the temperature of its head tuft reaches 600°F. It uses its tuft to roast berries."
     },
     {
       "version_id": "White",
-      "flavor_text": "This Pokémon lives in caves in volcanoes. The fire within the tuft on its head can reach {{tt|600°F|300°C}}."
+      "flavor_text": "This Pokémon lives in caves in volcanoes. The fire within the tuft on its head can reach 600°F."
     },
     {
       "version_id": "Black 2",
@@ -57090,11 +57090,11 @@
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to {{tt|1,100°F|600°C}}."
+      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100°F."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to {{tt|1,100°F|600°C}}."
+      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100°F."
     },
     {
       "version_id": "X",
@@ -57124,7 +57124,7 @@
   "555": [
     {
       "version_id": "Black",
-      "flavor_text": "Its internal fire burns at {{tt|2,500° F|1,400° C}}, making enough power that it can destroy a dump truck with one punch."
+      "flavor_text": "Its internal fire burns at 2,500° F, making enough power that it can destroy a dump truck with one punch."
     },
     {
       "version_id": "White",
@@ -57748,7 +57748,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It needs a running start to take off. If Archeops wants to fly, it first needs to run nearly 25 mph, building speed over a course of about {{tt|2.5 miles|4 kilometers}}."
+      "flavor_text": "It needs a running start to take off. If Archeops wants to fly, it first needs to run nearly 25 mph, building speed over a course of about 2.5 miles."
     },
     {
       "version_id": "Shield",
@@ -58458,7 +58458,7 @@
   "582": [
     {
       "version_id": "Black",
-      "flavor_text": "The temperature of their breath is {{tt|-58° F|-50° C}}. They create snow crystals and make snow fall in the areas around them."
+      "flavor_text": "The temperature of their breath is -58° F. They create snow crystals and make snow fall in the areas around them."
     },
     {
       "version_id": "White",
@@ -58466,11 +58466,11 @@
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "Theoretically, this Pokémon formed from icicles bathed in energy from the morning sun. Their breath is {{tt|-58° F|-50° C}}."
+      "flavor_text": "Theoretically, this Pokémon formed from icicles bathed in energy from the morning sun. Their breath is -58° F."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "Theoretically, this Pokémon formed from icicles bathed in energy from the morning sun. Their breath is {{tt|-58° F|-50° C}}."
+      "flavor_text": "Theoretically, this Pokémon formed from icicles bathed in energy from the morning sun. Their breath is -58° F."
     },
     {
       "version_id": "X",
@@ -58626,7 +58626,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "People believe this Pokémon formed when two Vanillish stuck together. Its body temperature is roughly {{tt|21 degrees Fahrenheit|−6 degrees Celsius}}."
+      "flavor_text": "People believe this Pokémon formed when two Vanillish stuck together. Its body temperature is roughly 21 degrees Fahrenheit."
     }
   ],
   "585": [
@@ -58852,7 +58852,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It charges its enemies, lances at the ready. An image of one of its duels is captured in a famous painting of Escavalier clashing with {{p|Sirfetch'd}}."
+      "flavor_text": "It charges its enemies, lances at the ready. An image of one of its duels is captured in a famous painting of Escavalier clashing with Sirfetch'd."
     }
   ],
   "590": [
@@ -60044,11 +60044,11 @@
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at {{tt|-148° F|-100° C}}."
+      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148° F."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at {{tt|-148° F|-100° C}}."
+      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148° F."
     },
     {
       "version_id": "X",
@@ -60056,7 +60056,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at {{tt|-148° F|-100° C}}."
+      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148° F."
     },
     {
       "version_id": "Omega Ruby",
@@ -60064,7 +60064,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at {{tt|-148° F|-100° C}}."
+      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148° F."
     },
     {
       "version_id": "Sword",
@@ -61492,11 +61492,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Flames spew from its tail as it flies through the sky like a jet airplane. It's said that this Pokémon will scorch the world.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Flames spew from its tail as it flies through the sky like a jet airplane. It's said that this Pokémon will scorch the world."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "According to myth, if people ignore truth and let themselves become consumed by greed, Reshiram will arrive to burn their kingdoms down.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "According to myth, if people ignore truth and let themselves become consumed by greed, Reshiram will arrive to burn their kingdoms down."
     }
   ],
   "644": [
@@ -61534,11 +61534,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "When the interior part of its tail spins like a motor, Zekrom can generate many bolts of lightning to blast its surroundings.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "When the interior part of its tail spins like a motor, Zekrom can generate many bolts of lightning to blast its surroundings."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Mythology tells us that if people lose the righteousness in their hearts, their kingdoms will be razed by Zekrom's lightning.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Mythology tells us that if people lose the righteousness in their hearts, their kingdoms will be razed by Zekrom's lightning."
     }
   ],
   "645": [
@@ -61614,11 +61614,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Dwelling within it is a power even greater than that of Reshiram or Zekrom, but the extreme cold keeps that power bound.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Dwelling within it is a power even greater than that of Reshiram or Zekrom, but the extreme cold keeps that power bound."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It appears that this Pokémon uses its powers over ice to freeze its own body in order to stabilize its cellular structure.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It appears that this Pokémon uses its powers over ice to freeze its own body in order to stabilize its cellular structure."
     }
   ],
   "647": [
@@ -61656,11 +61656,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Cobalion, Terrakion, and Virizion taught this Pokémon how to fight. It dashes across the world, seeking more opportunities to further its training.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Cobalion, Terrakion, and Virizion taught this Pokémon how to fight. It dashes across the world, seeking more opportunities to further its training."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "They say that Keldeo must survive harsh battles and fully develop the horn on its forehead before this Pokémon's true power will awaken.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "They say that Keldeo must survive harsh battles and fully develop the horn on its forehead before this Pokémon's true power will awaken."
     }
   ],
   "648": [
@@ -62882,7 +62882,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "It's not good at swimming, so it clings to the seaweed. In the Alola region, it's often found near {{P|Dhelmise}}."
+      "flavor_text": "It's not good at swimming, so it clings to the seaweed. In the Alola region, it's often found near Dhelmise."
     },
     {
       "version_id": "Sword",
@@ -63204,7 +63204,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around {{tt|–240 degrees Fahrenheit|-150 degrees Celsius}}."
+      "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around –240 degrees Fahrenheit."
     },
     {
       "version_id": "Sword",
@@ -64070,11 +64070,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "At a distance, it launches its sharp feathers while flying about. If the enemy gets too close, Rowlet switches tactics and delivers vicious kicks.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "At a distance, it launches its sharp feathers while flying about. If the enemy gets too close, Rowlet switches tactics and delivers vicious kicks."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "During the day, it builds up energy via photosynthesis. At night, it flies silently through the sky, on the prowl for prey.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "During the day, it builds up energy via photosynthesis. At night, it flies silently through the sky, on the prowl for prey."
     },
     {
       "version_id": "Legends: Arceus",
@@ -64100,11 +64100,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It throws one knifelike feather after another at its enemies, and each one precisely strikes a weak point. These feathers are known as blade quills.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It throws one knifelike feather after another at its enemies, and each one precisely strikes a weak point. These feathers are known as blade quills."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It never slacks when it comes to the task of cleaning its feathers. Thorough preening keeps it looking spiffy and its blade quills nice and sharp.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It never slacks when it comes to the task of cleaning its feathers. Thorough preening keeps it looking spiffy and its blade quills nice and sharp."
     },
     {
       "version_id": "Legends: Arceus",
@@ -64130,11 +64130,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "As if wielding a bow, it launches the arrow quills hidden among the feathers of its wings. Decidueye's shots never miss.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "As if wielding a bow, it launches the arrow quills hidden among the feathers of its wings. Decidueye's shots never miss."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "In a tenth of a second, it can nock and fire an arrow quill, piercing an opponent's weak point before they notice what's happening.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "In a tenth of a second, it can nock and fire an arrow quill, piercing an opponent's weak point before they notice what's happening."
     },
     {
       "version_id": "Legends: Arceus",
@@ -64160,11 +64160,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It spends even the smallest amount of downtime grooming its fur with its tongue. Loose fur gathers in its stomach and serves as fuel for fiery moves.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It spends even the smallest amount of downtime grooming its fur with its tongue. Loose fur gathers in its stomach and serves as fuel for fiery moves."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Trying to pet Litten before it trusts you will result in a nasty scratch from its sharp claws. Be careful.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Trying to pet Litten before it trusts you will result in a nasty scratch from its sharp claws. Be careful."
     }
   ],
   "726": [
@@ -64186,11 +64186,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "In the midst of battle, the fire pouch on Torracat's neck rings like a bell and produces stronger flames than usual.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "In the midst of battle, the fire pouch on Torracat's neck rings like a bell and produces stronger flames than usual."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "When facing a powerful enemy, Torracat's fighting spirit gets pumped up, and its fire bell blazes hotter.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "When facing a powerful enemy, Torracat's fighting spirit gets pumped up, and its fire bell blazes hotter."
     }
   ],
   "727": [
@@ -64212,11 +64212,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It excels at violent, no-holds-barred battles. The temperature of the flames that issue from its navel exceeds 3,600 degrees Fahrenheit.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It excels at violent, no-holds-barred battles. The temperature of the flames that issue from its navel exceeds 3,600 degrees Fahrenheit."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Incineroar's rough and aggressive behavior is its most notable trait, but the way it helps out small Pokémon shows that it has a kind side as well.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Incineroar's rough and aggressive behavior is its most notable trait, but the way it helps out small Pokémon shows that it has a kind side as well."
     }
   ],
   "728": [
@@ -64238,11 +64238,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It creates special bouncy balloons to send at its opponents. When the balloons pop, the sheer force of their bursting is what deals damage.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It creates special bouncy balloons to send at its opponents. When the balloons pop, the sheer force of their bursting is what deals damage."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "If Popplio want to create big, powerful balloons, they must be persistent. It takes daily practice for these Pokémon to develop their skills.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "If Popplio want to create big, powerful balloons, they must be persistent. It takes daily practice for these Pokémon to develop their skills."
     }
   ],
   "729": [
@@ -64264,17 +64264,17 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "As if dancing, it artfully dodges the attacks of its enemies. All the while, it's busy forming a bunch of balloons to overwhelm its foes.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "As if dancing, it artfully dodges the attacks of its enemies. All the while, it's busy forming a bunch of balloons to overwhelm its foes."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "On nights when the sea is calm, Brionne dance with one another to the singing of the Primarina that's leading them.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "On nights when the sea is calm, Brionne dance with one another to the singing of the Primarina that's leading them."
     }
   ],
   "730": [
     {
       "version_id": "Sun",
-      "flavor_text": "It {{m|Sparkling Aria|controls its water balloons with song}}. The melody is learned from others of its kind and is passed down from one generation to the next."
+      "flavor_text": "It controls its water balloons with song. The melody is learned from others of its kind and is passed down from one generation to the next."
     },
     {
       "version_id": "Moon",
@@ -64290,11 +64290,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "With its mouth, it makes sonic waves that sound like beautiful singing. It uses the sonic waves to control its water balloons.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "With its mouth, it makes sonic waves that sound like beautiful singing. It uses the sonic waves to control its water balloons."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "For Primarina, every battle's a stage. Its singing and the dancing of its balloons will mesmerize the audience.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "For Primarina, every battle's a stage. Its singing and the dancing of its balloons will mesmerize the audience."
     }
   ],
   "731": [
@@ -64336,7 +64336,7 @@
   "733": [
     {
       "version_id": "Sun",
-      "flavor_text": "When it battles, {{m|Beak Blast|its beak heats up}}. The temperature can easily exceed 212 degrees Fahrenheit, causing severe burns when it hits."
+      "flavor_text": "When it battles, its beak heats up. The temperature can easily exceed 212 degrees Fahrenheit, causing severe burns when it hits."
     },
     {
       "version_id": "Moon",
@@ -64384,7 +64384,7 @@
     },
     {
       "version_id": "Moon",
-      "flavor_text": "It adores having Rattata and Raticate for dinner, but as it's {{pkmn2|diurnal}}, it never encounters them. This Pokémon boasts incredible patience."
+      "flavor_text": "It adores having Rattata and Raticate for dinner, but as it's diurnal, it never encounters them. This Pokémon boasts incredible patience."
     },
     {
       "version_id": "Ultra Sun",
@@ -64422,7 +64422,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Its natural enemies, like {{P|Rookidee}}, may flee rather than risk getting caught in its large mandibles that can snap thick tree branches."
+      "flavor_text": "Its natural enemies, like Rookidee, may flee rather than risk getting caught in its large mandibles that can snap thick tree branches."
     },
     {
       "version_id": "Shield",
@@ -64940,7 +64940,7 @@
     },
     {
       "version_id": "Moon",
-      "flavor_text": "They give off a sweet and refreshing scent. {{P|Cutiefly}} often gather near the tall grass where Fomantis are hiding."
+      "flavor_text": "They give off a sweet and refreshing scent. Cutiefly often gather near the tall grass where Fomantis are hiding."
     },
     {
       "version_id": "Ultra Sun",
@@ -65230,7 +65230,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Any {{P|Corvisquire}} that pecks at this Pokémon will be greeted with a smack from its sepals followed by a sharp kick."
+      "flavor_text": "Any Corvisquire that pecks at this Pokémon will be greeted with a smack from its sepals followed by a sharp kick."
     },
     {
       "version_id": "Scarlet",
@@ -65418,7 +65418,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "They live in sunken ships or in holes in the seabed. When Golisopod and {{P|Grapploct}} battle, the loser becomes the winner's meal."
+      "flavor_text": "They live in sunken ships or in holes in the seabed. When Golisopod and Grapploct battle, the loser becomes the winner's meal."
     }
   ],
   "769": [
@@ -65538,7 +65538,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It was modeled after {{p|Arceus|a mighty Pokémon of myth}}. The mask placed upon it limits its power in order to keep it under control."
+      "flavor_text": "It was modeled after a mighty Pokémon of myth. The mask placed upon it limits its power in order to keep it under control."
     }
   ],
   "773": [
@@ -65614,7 +65614,7 @@
   "776": [
     {
       "version_id": "Sun",
-      "flavor_text": "The shell on its back is chemically unstable and {{m|Shell Trap|explodes violently if struck}}. The hole in its stomach is its weak point."
+      "flavor_text": "The shell on its back is chemically unstable and explodes violently if struck. The hole in its stomach is its weak point."
     },
     {
       "version_id": "Moon",
@@ -65704,7 +65704,7 @@
     },
     {
       "version_id": "Moon",
-      "flavor_text": "It stuns its prey with psychokinesis and then grinds them to mush with its strong teeth. Even {{P|Shellder}}'s shell is no match for it."
+      "flavor_text": "It stuns its prey with psychokinesis and then grinds them to mush with its strong teeth. Even Shellder's shell is no match for it."
     },
     {
       "version_id": "Ultra Sun",
@@ -65712,7 +65712,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "Its skin is thick enough to fend off {{P|Mareanie}}'s spikes. With its robust teeth, Bruxish crunches up the spikes and eats them."
+      "flavor_text": "Its skin is thick enough to fend off Mareanie's spikes. With its robust teeth, Bruxish crunches up the spikes and eats them."
     },
     {
       "version_id": "Scarlet",
@@ -65768,7 +65768,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "After a piece of seaweed merged with debris from a sunken ship, it was reborn as this {{t|ghost}} Pokémon."
+      "flavor_text": "After a piece of seaweed merged with debris from a sunken ship, it was reborn as this ghost Pokémon."
     },
     {
       "version_id": "Shield",
@@ -65968,11 +65968,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "This Pokémon came from another universe. Its gaseous body is so light that even a gentle breeze can blow it away.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "This Pokémon came from another universe. Its gaseous body is so light that even a gentle breeze can blow it away."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Cosmog is very curious but not very cautious, often placing itself in danger. If things start to look dicey, it teleports away.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "Cosmog is very curious but not very cautious, often placing itself in danger. If things start to look dicey, it teleports away."
     }
   ],
   "790": [
@@ -65994,11 +65994,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "The absorption of starlight fuels this Pokémon's growth. The shell that encases it is harder than any known material.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "The absorption of starlight fuels this Pokémon's growth. The shell that encases it is harder than any known material."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It sucks in dust from the air at an astounding rate, frantically building up energy within its core as preparation for evolution.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "It sucks in dust from the air at an astounding rate, frantically building up energy within its core as preparation for evolution."
     }
   ],
   "791": [
@@ -66020,11 +66020,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "When light radiates from its body, this Pokémon could almost appear to be the sun. It will dispel any darkness and light up the world.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "When light radiates from its body, this Pokémon could almost appear to be the sun. It will dispel any darkness and light up the world."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Solgaleo was once known as the Beast That Devours the Sun. Energy in the form of light radiates boundlessly from it.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "Solgaleo was once known as the Beast That Devours the Sun. Energy in the form of light radiates boundlessly from it."
     }
   ],
   "792": [
@@ -66046,11 +66046,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Known as the Beast That Calls the Moon, this Pokémon lives by taking in any and all light and converting it into its own energy.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "Known as the Beast That Calls the Moon, this Pokémon lives by taking in any and all light and converting it into its own energy."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It steals the light from its surroundings and then becomes the full moon, showering its own light across the night sky.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "It steals the light from its surroundings and then becomes the full moon, showering its own light across the night sky."
     }
   ],
   "793": [
@@ -66186,7 +66186,7 @@
     },
     {
       "version_id": "Moon",
-      "flavor_text": "Light is apparently the source of its energy. It has an extraordinarily vicious disposition and is constantly firing off {{m|Prismatic Laser|laser beams}}."
+      "flavor_text": "Light is apparently the source of its energy. It has an extraordinarily vicious disposition and is constantly firing off laser beams."
     },
     {
       "version_id": "Ultra Sun",
@@ -66198,11 +66198,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It survives by absorbing light. After a long time spent slumbering underground, impurities accumulated within it, causing its body to darken.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "It survives by absorbing light. After a long time spent slumbering underground, impurities accumulated within it, causing its body to darken."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It needs light to survive, and it goes on a rampage seeking it out. Its laser beams will cut anything to pieces.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "It needs light to survive, and it goes on a rampage seeking it out. Its laser beams will cut anything to pieces."
     }
   ],
   "801": [
@@ -66242,11 +66242,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "By slipping into the shadow of a martial arts master and copying their movements, this Pokémon learned the ultimate techniques.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "By slipping into the shadow of a martial arts master and copying their movements, this Pokémon learned the ultimate techniques."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "This Pokémon can conceal itself in any shadow, so it went undiscovered for a long time.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "This Pokémon can conceal itself in any shadow, so it went undiscovered for a long time."
     }
   ],
   "803": [
@@ -66282,7 +66282,7 @@
   "806": [
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "It slithers toward people. Then, without warning, it triggers the {{m|Mind Blown|explosion of its own head}}. It's apparently one kind of Ultra Beast."
+      "flavor_text": "It slithers toward people. Then, without warning, it triggers the explosion of its own head. It's apparently one kind of Ultra Beast."
     },
     {
       "version_id": "Ultra Moon",
@@ -66300,11 +66300,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It runs as fast as lightning strikes, shredding its opponents with its high-voltage claws.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "It runs as fast as lightning strikes, shredding its opponents with its high-voltage claws."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Electricity sparks from the pads on its limbs. Wherever Zeraora runs, lightning flashes and thunder echoes.{{tt|*|Pokédex entry only found in Pokémon HOME.}}"
+      "flavor_text": "Electricity sparks from the pads on its limbs. Wherever Zeraora runs, lightning flashes and thunder echoes."
     }
   ],
   "808": [
@@ -66318,11 +66318,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "It dissolves and eats metal. Circulating liquid metal within its body is how it generates energy.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "It dissolves and eats metal. Circulating liquid metal within its body is how it generates energy."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "They live as a group, but when the time comes, one strong Meltan will absorb all the others and evolve.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "They live as a group, but when the time comes, one strong Meltan will absorb all the others and evolve."
     }
   ],
   "809": [
@@ -66336,11 +66336,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "At the end of its life-span, Melmetal will rust and fall apart. The small shards left behind will eventually be reborn as Meltan.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "At the end of its life-span, Melmetal will rust and fall apart. The small shards left behind will eventually be reborn as Meltan."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Centrifugal force is behind the punches of Melmetal's heavy hex-nut arms. Melmetal is said to deliver the strongest punches of all Pokémon.{{tt|*|Pokédex entry only found in Pokémon HOME}}"
+      "flavor_text": "Centrifugal force is behind the punches of Melmetal's heavy hex-nut arms. Melmetal is said to deliver the strongest punches of all Pokémon."
     }
   ],
   "810": [
@@ -66396,7 +66396,7 @@
   "815": [
     {
       "version_id": "Sword",
-      "flavor_text": "It juggles a pebble with its feet, turning it into a {{m|Pyro Ball|burning soccer ball}}. Its shots strike opponents hard and leave them {{status|burn|scorched}}."
+      "flavor_text": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
     },
     {
       "version_id": "Shield",
@@ -66570,7 +66570,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "With a lithe body and sharp claws, it goes around stealing food and eggs. {{P|Boltund}} is its natural enemy."
+      "flavor_text": "With a lithe body and sharp claws, it goes around stealing food and eggs. Boltund is its natural enemy."
     }
   ],
   "829": [
@@ -67054,7 +67054,7 @@
   "860": [
     {
       "version_id": "Sword",
-      "flavor_text": "When it gets down on all fours as if to beg for forgiveness, it's trying to lure opponents in so that it can {{m|False Surrender|stab them with its spear-like hair}}."
+      "flavor_text": "When it gets down on all fours as if to beg for forgiveness, it's trying to lure opponents in so that it can stab them with its spear-like hair."
     },
     {
       "version_id": "Shield",
@@ -67120,7 +67120,7 @@
   "865": [
     {
       "version_id": "Sword",
-      "flavor_text": "Only {{p|Farfetch'd}} that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
+      "flavor_text": "Only Farfetch'd that have survived many battles can attain this evolution. When this Pokémon's leek withers, it will retire from combat."
     },
     {
       "version_id": "Shield",
@@ -67436,7 +67436,7 @@
   "887": [
     {
       "version_id": "Sword",
-      "flavor_text": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it {{m|Dragon Darts|launches the Dreepy like supersonic missiles}}."
+      "flavor_text": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles."
     },
     {
       "version_id": "Shield",

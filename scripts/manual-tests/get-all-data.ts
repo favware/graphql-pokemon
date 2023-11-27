@@ -1,5 +1,5 @@
 import { createWriteStream } from 'node:fs';
-import { pipeline as syncPipeline, Readable } from 'node:stream';
+import { Readable, pipeline as syncPipeline } from 'node:stream';
 import { promisify } from 'node:util';
 
 const pipeline = promisify(syncPipeline);

@@ -112,7 +112,7 @@ interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
   data: Record<K, Omit<Query[K], '__typename'>>;
 }
 
-fetch('https://graphqlpokemon.favware.tech/v7', {
+fetch('https://graphqlpokemon.favware.tech/v8', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -161,7 +161,7 @@ const getFuzzyPokemon = gql`
 `;
 
 const apolloClient = new ApolloClient({
-  uri: 'https://graphqlpokemon.favware.tech/v7',
+  uri: 'https://graphqlpokemon.favware.tech/v8',
   fetch
 });
 
@@ -189,7 +189,7 @@ import { HttpLink } from 'apollo-link-http';
 // Instantiate required constructor fields
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'https://graphqlpokemon.favware.tech/v7'
+  uri: 'https://graphqlpokemon.favware.tech/v8'
 });
 
 export const client = new ApolloClient({
@@ -285,7 +285,7 @@ Thank you to all the people who already contributed to GraphQL-Pokemon!
 </a>
 
 [contributing]: ./.github/CONTRIBUTING.md
-[dashboard]: https://graphqlpokemon.favware.tech/v7
+[dashboard]: https://graphqlpokemon.favware.tech/v8
 [yarn]: https://yarnpkg.com/package/@favware/graphql-pokemon
 [npm]: https://www.npmjs.com/package/@favware/graphql-pokemon
 [ghcr_npm]: https://github.com/favware/graphql-pokemon/packages/199047

@@ -51,7 +51,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'revenankh',
     {
-      abilities: { first: 'shedskin', second: 'airlock', hidden: 'triage' },
+      abilities: { first: 'airlock', second: 'triage', hidden: 'shedskin' },
       baseStats: { hp: 90, atk: 105, def: 90, spa: 65, spd: 110, spe: 65 },
       color: 'White',
       eggGroups: ['Amorphous', 'Human-Like'],

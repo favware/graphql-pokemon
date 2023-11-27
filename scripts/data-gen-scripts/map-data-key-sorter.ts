@@ -1,6 +1,6 @@
+import { Collection } from '@discordjs/collection';
 import { abilities } from '../../src/lib/assets/abilities.js';
 import { dataToClipboard } from './data-to-clipboard.js';
-import { Collection } from '@discordjs/collection';
 
 export function sortObjectByKey<T extends object>(obj: T): T {
   const keys: string[] = [];

@@ -2,6 +2,62 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.0.0](https://github.com/favware/graphql-pokemon/compare/v8.0.0...v8.0.0) - (2023-11-27)
+
+## 🏠 Refactor
+
+- Cleanup file locations, add a lot of documentation ([76fb16a](https://github.com/favware/graphql-pokemon/commit/76fb16ab0825e5a9435b1264cc98616fa57b0129))
+- Update data [skip publish] ([18f2eff](https://github.com/favware/graphql-pokemon/commit/18f2eff49ae91f663eb9231da26378cb8cedc934))
+- Update data [skip publish] ([d0cb50d](https://github.com/favware/graphql-pokemon/commit/d0cb50d1d91644c4431d11a5fd83b808ef84d530))
+- Update data [skip publish] ([623c570](https://github.com/favware/graphql-pokemon/commit/623c570c2a179018c05029070a50028e8628a0cc))
+- Update data [skip publish] ([4216bfc](https://github.com/favware/graphql-pokemon/commit/4216bfcbeb13b3e2c79c04881fb794e8ba48c0df))
+- Update data [skip publish] ([f523d6f](https://github.com/favware/graphql-pokemon/commit/f523d6fd675e5d4f855f4969dacbd83d16bffbda))
+- Update data [skip publish] ([542c291](https://github.com/favware/graphql-pokemon/commit/542c29160986d26ff6cf067a3182a122dbf076fb))
+- Update data [skip publish] ([f6b6f5e](https://github.com/favware/graphql-pokemon/commit/f6b6f5e306f5f70d1e4f265072bc1b32697143d9))
+- Update data [skip publish] ([32cb553](https://github.com/favware/graphql-pokemon/commit/32cb553c86fdba462def6c4fadee7305802cb2e8))
+- Update data [skip publish] ([49fc9ef](https://github.com/favware/graphql-pokemon/commit/49fc9ef4fab319b1688ee23ab48d9a754b6feef1))
+- Update data [skip publish] ([2c3e0c1](https://github.com/favware/graphql-pokemon/commit/2c3e0c155a83de1adb7cf5d61e745d1601e52b67))
+- Update data [skip publish] ([c499649](https://github.com/favware/graphql-pokemon/commit/c499649d4d864d370906b271fec9952cbbe0ff46))
+- Update data [skip publish] ([408717d](https://github.com/favware/graphql-pokemon/commit/408717deaeec31fdca18fcdca730e2fc866dc3ec))
+- Update data [skip publish] ([fe87502](https://github.com/favware/graphql-pokemon/commit/fe87502ecd54dfded1095f42ace109f4ed7ebf6f))
+- Update data [skip publish] ([ef441c4](https://github.com/favware/graphql-pokemon/commit/ef441c4bf232133192055a7bb94efd0cac85f8b4))
+
+## 🐛 Bug Fixes
+
+- Update dockerfile ([d06ebf5](https://github.com/favware/graphql-pokemon/commit/d06ebf5a3dbce6d0578d237252d3019f72a06d3a))
+- Set correct species for hemogoblin ([0550342](https://github.com/favware/graphql-pokemon/commit/0550342ecae6b8f51c80eb2e39540c70ca3ab514))
+- Correct the maximums for `take` and `offset` for `getAllPokemon` ([e72df87](https://github.com/favware/graphql-pokemon/commit/e72df87c36f1cc3c02f42efd5359c0df36a0c3c8))
+- Fixed some of the abilities, items and moves data ([9fa63e8](https://github.com/favware/graphql-pokemon/commit/9fa63e897cdbb4477dccd74d570994dab31ed9e7))
+- Finish all parsing of flavor texts ([5dbd079](https://github.com/favware/graphql-pokemon/commit/5dbd0790583b44ebd929185e259572c442761066))
+- Replace all remaining `[[templates]]` ([c8f4e62](https://github.com/favware/graphql-pokemon/commit/c8f4e62c330464fd72f4bf8435aa1aeafc20bf9d))
+- Make type for flavors module ([062a19f](https://github.com/favware/graphql-pokemon/commit/062a19fc2d3e0f6bbc81f015ad314668572e0116))
+- Update `Legends Arceus` to `Legends: Arceus` in `version_id` ([a8e4a0c](https://github.com/favware/graphql-pokemon/commit/a8e4a0c9a8bb5afe493cafcfc10699e7b4c4813b))
+  - 💥 **BREAKING CHANGE:** `Legends Arceus` is now `Legends: Arceus` for `pokemon.flavor.game`
+- Proper export mapping ([08ad5c7](https://github.com/favware/graphql-pokemon/commit/08ad5c73472a7b3ac42503a67ade9c02f0ba9bbb))
+
+## 📝 Documentation
+
+- Update urls to mention v8 ([f7e4cb0](https://github.com/favware/graphql-pokemon/commit/f7e4cb0d06cfc04470f538e8964d37f05c4308dd))
+- Update readme header ([0968274](https://github.com/favware/graphql-pokemon/commit/096827432d96df3e25c5cdf34a54faabffae63b4))
+
+## 🚀 Features
+
+- Update flavor texts, add stadium and stadium 2 ([5ebc599](https://github.com/favware/graphql-pokemon/commit/5ebc59937e49e98f99e433eb04d2a84d35513879))
+- Update flavor text for Teal Mask DLC ([4dc2acf](https://github.com/favware/graphql-pokemon/commit/4dc2acf20ba9d2eade178d366eee87939018af90))
+- Add flavor texts for Teal Mask DLC Pokemon ([4f2d360](https://github.com/favware/graphql-pokemon/commit/4f2d3602cdeec01b55898773d36de09c33acc4fb))
+- Add Ogerpon Pokémon ([aa2ce64](https://github.com/favware/graphql-pokemon/commit/aa2ce64160e5db156362ed77b5c77ef0afdf6721))
+- Add Teal Mask DLC Pokémon ([2815898](https://github.com/favware/graphql-pokemon/commit/28158982380a4ef69d362b6e7c8569276b1207c7))
+- Add `isNonStandard` to abilities for the CAP and Past abilities ([19c129b](https://github.com/favware/graphql-pokemon/commit/19c129b19b24c28b28e58dded20baf8be1019b0c))
+- Update abilities data to include all known abilities ([3658b41](https://github.com/favware/graphql-pokemon/commit/3658b4194ddd7cf57b83ccd1f7df84edd35232af))
+- Update moves data to include all known moves ([72c714c](https://github.com/favware/graphql-pokemon/commit/72c714ca939a32de3814098de2e9610b02dc161e))
+- Update items data to include all known items ([bfd8b19](https://github.com/favware/graphql-pokemon/commit/bfd8b193c51f66bc78f41e84858cded695906285))
+
+## 🧪 Testing
+
+- Update test data ([0f07022](https://github.com/favware/graphql-pokemon/commit/0f07022c47d81c0eca6df6661b1aede7ce02ecac))
+- Update test data ([1cb6c28](https://github.com/favware/graphql-pokemon/commit/1cb6c284cfbebe2495f1892b2da1fdc5ec32b3d1))
+- Update test data ([5392fa8](https://github.com/favware/graphql-pokemon/commit/5392fa88edd7bfb1eb89b026f623020d7d6552a9))
+
 # [7.3.4](https://github.com/favware/graphql-pokemon/compare/v7.3.4...v7.3.4) - (2023-10-15)
 
 ## 🏠 Refactor

@@ -116,6 +116,7 @@ query = '''
         bulbapediaPage
         desc
         isFieldAbility
+        isNonstandard
         serebiiPage
         shortDesc
         smogonPage

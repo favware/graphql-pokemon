@@ -2719,7 +2719,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'ogerponwellspring',
         'ogerponwellspringtera'
       ],
-      species: 'ogerpon-cornerstone-tera',
+      species: 'ogerpon-cornerstonetera',
       types: [TypesEnum.Grass, TypesEnum.Rock],
       weightkg: 39.8
     }
@@ -2783,7 +2783,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'ogerponwellspring',
         'ogerponwellspringtera'
       ],
-      species: 'ogerpon-hearthflame-tera',
+      species: 'ogerpon-hearthflametera',
       types: [TypesEnum.Grass, TypesEnum.Fire],
       weightkg: 39.8
     }
@@ -2847,7 +2847,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'ogerpontealtera',
         'ogerponwellspring'
       ],
-      species: 'ogerpon-wellspring-tera',
+      species: 'ogerpon-wellspringtera',
       types: [TypesEnum.Grass, TypesEnum.Water],
       weightkg: 39.8
     }
@@ -2879,7 +2879,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'ogerponwellspring',
         'ogerponwellspringtera'
       ],
-      species: 'ogerpon-teal-tera',
+      species: 'ogerpon-tealtera',
       types: [TypesEnum.Grass],
       weightkg: 39.8
     }

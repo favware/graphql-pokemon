@@ -68,7 +68,7 @@ export function parseSpeciesForSprite({
 
   // TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
   // Parse differently for generation 9 (Number 906 is sprigatito)
-  if (pokemonNumber >= 906) {
+  if (pokemonNumber >= 906 || pokemonName === 'ursaluna-bloodmoon') {
     const pokemonPng = `${pokemonName}.png`;
 
     if (shiny && backSprite) return SpriteUrls.baseUrl + Gen9SpriteUrls.animatedShinyBackSprites + pokemonPng;

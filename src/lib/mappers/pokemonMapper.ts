@@ -844,10 +844,11 @@ function parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, p
     return `${smogonBaseUrl}/sm/pokemon/${parsedPokemonName}`;
   }
 
-  // If the Pokémon is `'past'` in Generation 9, but was not included in `speciesThatAreNotInGeneration8Nor9`
-  // or the Pokémon is within the numbers range for generation 8,
+  // IF the pokemon is not ursaluna-bloodmoon
+  // AND the Pokémon is `'past'` in Generation 9, but was not included in `speciesThatAreNotInGeneration8Nor9`
+  // OR the Pokémon is within the numbers range for generation 8,
   // then build a Generation 8 based URL
-  if (pokemonTier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905)) {
+  if (pokemonName !== 'ursaluna-bloodmoon' && (pokemonTier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905))) {
     return `${smogonBaseUrl}/ss/pokemon/${parsedPokemonName}`;
   }
 

@@ -2921,7 +2921,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       isEggObtainable: false,
       num: 901,
       otherFormes: ['ursaluna'],
-      species: 'ursalun-bloodmoon',
+      species: 'ursaluna-bloodmoon',
       types: [TypesEnum.Ground, TypesEnum.Normal],
       weightkg: 333
     }

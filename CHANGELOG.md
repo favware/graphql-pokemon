@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.1.0](https://github.com/favware/graphql-pokemon/compare/v8.1.0...v8.1.0) - (2023-11-28)
+
+## 🏠 Refactor
+
+- Update data ([447244b](https://github.com/favware/graphql-pokemon/commit/447244b0c888af004cbe87defdca898c80df95e5))
+
+## 🐛 Bug Fixes
+
+- **cap:** Fixed abilities for Revenankh ([3b6a476](https://github.com/favware/graphql-pokemon/commit/3b6a476fed6262db25631518c35df78443192c26))
+
+## 🚀 Features
+
+- **cap:** Add Cresceidon ([c6a31f8](https://github.com/favware/graphql-pokemon/commit/c6a31f8524b534599b2ad9e0dfb4e8513763acc4))
+
 # [8.0.0](https://github.com/favware/graphql-pokemon/compare/v8.0.0...v8.0.0) - (2023-11-27)
 
 ## 🏠 Refactor

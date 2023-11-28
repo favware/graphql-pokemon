@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.1.1](https://github.com/favware/graphql-pokemon/compare/v8.1.1...v8.1.1) - (2023-11-28)
+
+## 🐛 Bug Fixes
+
+- Fixed sprite url parsing for ursaluna-bloodmoon ([5d4a6e3](https://github.com/favware/graphql-pokemon/commit/5d4a6e3ae4236903567a104bb4e4fc3ba5f8cc27))
+- Fixed smogon url parsing for ursaluna-bloodmoon ([19d3658](https://github.com/favware/graphql-pokemon/commit/19d3658aef035866869e65ce450bbf50310480ca))
+- Fixed species name for several ogerpon forms ([68609d0](https://github.com/favware/graphql-pokemon/commit/68609d0b01b4289861a5f535b72ce6ad6943d447))
+- Fixed species name for ursaluna-bloodmoon ([28c829d](https://github.com/favware/graphql-pokemon/commit/28c829d96f82757629e285747fbaa0544fddd07c))
+
+## 🧪 Testing
+
+- Update test data ([bd52390](https://github.com/favware/graphql-pokemon/commit/bd523904d26328939cead33a8be2a2ee45a4869e))
+
 # [8.1.0](https://github.com/favware/graphql-pokemon/compare/v8.1.0...v8.1.0) - (2023-11-28)
 
 ## 🏠 Refactor

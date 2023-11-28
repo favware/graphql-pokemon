@@ -2275,7 +2275,7 @@ describe('getAllPokemon', () => {
       { key: 'ursaluna', species: 'ursaluna' },
       {
         key: 'ursalunabloodmoon',
-        species: 'ursalun-bloodmoon'
+        species: 'ursaluna-bloodmoon'
       },
       {
         key: 'basculegion',
@@ -2510,7 +2510,7 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'ogerponcornerstonetera',
-        species: 'ogerpon-cornerstone-tera'
+        species: 'ogerpon-cornerstonetera'
       },
       {
         key: 'ogerponhearthflame',
@@ -2518,7 +2518,7 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'ogerponhearthflametera',
-        species: 'ogerpon-hearthflame-tera'
+        species: 'ogerpon-hearthflametera'
       },
       {
         key: 'ogerponwellspring',
@@ -2526,11 +2526,11 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'ogerponwellspringtera',
-        species: 'ogerpon-wellspring-tera'
+        species: 'ogerpon-wellspringtera'
       },
       {
         key: 'ogerpontealtera',
-        species: 'ogerpon-teal-tera'
+        species: 'ogerpon-tealtera'
       }
     ]);
   });

@@ -19,7 +19,7 @@ jobs:
   Publish:
     name: Publish image to container registries
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip docker]')"
+    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
     steps:
       - name: Checkout Project
         uses: actions/checkout@v3
@@ -52,12 +52,28 @@ jobs:
           repository: favware/graphql-pokemon
           short-description: Extensive Pokemon GraphQL API
 
+  UpdateOnServer:
+    name: Update running container on server
+    runs-on: ubuntu-latest
+    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
+    needs: Publish
+    steps:
+      - name: Update container on server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_SERVER: ${{ secrets.SSH_SERVER }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_COMMAND: ${{ secrets.SSH_COMMAND }}
+        run: |
+          echo "${SSH_PRIVATE_KEY}" > ./private.key
+          sudo chmod 600 ./private.key
+          ssh -i /private.key -p ${SSH_PORT} ${SSH_USERNAME}@${SSH_SERVER} "${SSH_COMMAND}""
+
   GenerateTypings:
     name: Generate TypeScript, and SDL type information
     runs-on: ubuntu-latest
-    if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]')
-      ||github.event.inputs.skip-publish == true)
+    if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
     needs: Publish
     services:
       pokedex:
@@ -95,9 +111,7 @@ jobs:
   GitHubCreateTag:
     name: Create tag on GitHub
     runs-on: ubuntu-latest
-    if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]')
-      ||github.event.inputs.skip-publish == true)
+    if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
     needs: GenerateTypings
     steps:
       - name: Checkout Project
@@ -125,7 +139,7 @@ jobs:
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
       - name: Bump semver
-        if: "!contains(github.event.head_commit.message, '[skip bump]')"
+        if: ${{ ! contains(github.event.head_commit.message, '[skip bump]') }}
         run: yarn bump --no-skip-tag --no-skip-changelog
         env:
           CI: false
@@ -142,15 +156,13 @@ jobs:
           path: CHANGELOG.md
           if-no-files-found: error
       - name: Push changes
-        if: "!contains(github.event.head_commit.message, '[skip bump]')"
+        if: ${{ ! contains(github.event.head_commit.message, '[skip bump]') }}
         run: git push origin main && git push --tags origin main
 
   NPMPublish:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
-    if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]')
-      ||github.event.inputs.skip-publish == true)
+    if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
     needs: GitHubCreateTag
     steps:
       - name: Checkout Project
@@ -187,9 +199,7 @@ jobs:
   Github-Package-Registry-Node:
     name: Publishing release to Github Package Registry
     runs-on: ubuntu-latest
-    if: >-
-      !(contains(github.event.head_commit.message, '[skip publish]')
-      ||github.event.inputs.skip-publish == true)
+    if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
     needs: GitHubCreateTag
     steps:
       - name: Checkout Project

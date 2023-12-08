@@ -67,8 +67,8 @@ jobs:
           SSH_COMMAND: ${{ secrets.SSH_COMMAND }}
         run: |
           echo "${SSH_PRIVATE_KEY}" > ./private.key
-          sudo chmod 600 ./private.key
-          ssh -i /private.key -p ${SSH_PORT} ${SSH_USERNAME}@${SSH_SERVER} "${SSH_COMMAND}"
+          chmod 600 ./private.key
+          ssh -i ./private.key -p ${SSH_PORT} ${SSH_USERNAME}@${SSH_SERVER} "${SSH_COMMAND}"
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

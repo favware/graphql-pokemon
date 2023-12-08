@@ -59,16 +59,14 @@ jobs:
     needs: Publish
     steps:
       - name: Update container on server
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_SERVER: ${{ secrets.SSH_SERVER }}
-          SSH_PORT: ${{ secrets.SSH_PORT }}
-          SSH_COMMAND: ${{ secrets.SSH_COMMAND }}
-        run: |
-          echo "${SSH_PRIVATE_KEY}" > ./private.key
-          chmod 600 ./private.key
-          ssh -i ./private.key -p ${SSH_PORT} ${SSH_USERNAME}@${SSH_SERVER} "${SSH_COMMAND}"
+        uses: favware/ssh-remote-action@main
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
+          username: ${{ secrets.SSH_USERNAME }}
+          command: ${{ secrets.SSH_COMMAND }}
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

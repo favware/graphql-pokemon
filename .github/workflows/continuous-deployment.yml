@@ -67,6 +67,7 @@ jobs:
           passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
           username: ${{ secrets.SSH_USERNAME }}
           command: ${{ secrets.SSH_COMMAND }}
+          silent: true
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

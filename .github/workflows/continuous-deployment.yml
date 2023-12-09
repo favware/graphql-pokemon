@@ -59,7 +59,7 @@ jobs:
     needs: Publish
     steps:
       - name: Update container on server
-        uses: favware/ssh-remote-action@main
+        uses: favware/ssh-remote-action@v1
         with:
           host: ${{ secrets.SSH_HOST }}
           port: ${{ secrets.SSH_PORT }}

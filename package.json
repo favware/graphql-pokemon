@@ -68,7 +68,7 @@
     "@graphql-codegen/typescript-resolvers": "^4.0.1",
     "@koa/cors": "^4.0.0",
     "@sapphire/eslint-config": "^5.0.3",
-    "@sapphire/fetch": "^2.4.2",
+    "@sapphire/fetch": "^3.0.0",
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/shapeshift": "^3.9.4",
     "@sapphire/timestamp": "^1.0.2",

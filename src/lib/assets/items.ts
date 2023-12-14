@@ -50,6 +50,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'adamantcrystal',
+    {
+      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
+      gen: 8,
+      name: 'Adamant Crystal'
+    }
+  ],
+  [
     'adamantorb',
     {
       desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
@@ -375,6 +383,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Bicycle',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/bicycle.png'
+    }
+  ],
+  [
+    'bignugget',
+    {
+      desc: 'A big nugget of pure gold that gives off a lustrous gleam.',
+      gen: 5,
+      name: 'Big Nugget'
     }
   ],
   [
@@ -839,6 +855,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Contest Pass',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/contestpass.png'
+    }
+  ],
+  [
+    'cornerstonemask',
+    {
+      desc: 'Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.',
+      gen: 9,
+      name: 'Cornerstone Mask'
     }
   ],
   [
@@ -1506,6 +1530,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'fairyfeather',
+    {
+      desc: "Holder's Fairy-type attacks have 1.2x power.",
+      gen: 9,
+      name: 'Fairy Feather'
+    }
+  ],
+  [
     'fairygem',
     {
       desc: "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
@@ -2126,6 +2158,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'griseouscore',
+    {
+      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
+      gen: 8,
+      name: 'Griseous Core'
+    }
+  ],
+  [
     'griseousorb',
     {
       desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
@@ -2221,6 +2261,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "A remedial Poké Ball that restores the caught Pokémon's HP and status problem.",
       gen: 4,
       name: 'Heal Ball'
+    }
+  ],
+  [
+    'hearthflamemask',
+    {
+      desc: 'Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.',
+      gen: 9,
+      name: 'Hearthflame Mask'
     }
   ],
   [
@@ -2957,6 +3005,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'lustrousglobe',
+    {
+      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
+      gen: 8,
+      name: 'Lustrous Globe'
+    }
+  ],
+  [
     'lustrousorb',
     {
       desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
@@ -3136,6 +3192,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'The best Ball with the ultimate performance. It will catch any wild Pokémon.',
       gen: 1,
       name: 'Master Ball'
+    }
+  ],
+  [
+    'masterpieceteacup',
+    {
+      desc: 'Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.',
+      gen: 9,
+      name: 'Masterpiece Teacup'
     }
   ],
   [
@@ -5307,6 +5371,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'strangeball',
+    {
+      desc: 'In Pokémon Brilliant Diamond and Shining Pearl, Pokémon Legends: Arceus, and Pokémon Scarlet and Violet, Pokémon caught in Poké Balls that do not exist in that game instead display a Strange Ball as their Poké Ball.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Unobtainable,
+      name: 'Strange Ball',
+      shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.'
+    }
+  ],
+  [
     'strawberrysweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
@@ -5387,6 +5461,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Evolves Applin into Appletun when used.',
       gen: 8,
       name: 'Sweet Apple'
+    }
+  ],
+  [
+    'syrupyapple',
+    {
+      desc: 'Evolves Applin into Dipplin when used.',
+      gen: 9,
+      name: 'Syrupy Apple'
     }
   ],
   [
@@ -5550,455 +5632,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
       gen: 4,
       name: 'Toxic Plate'
-    }
-  ],
-  [
-    'traveltrunk',
-    {
-      desc: 'A light and yet incredibly effective trunk, which can contain every last piece of clothing that can be bought.',
-      gen: 6,
-      keyItem: true,
-      name: 'Travel Trunk',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png'
-    }
-  ],
-  [
-    'tripass',
-    {
-      desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'tripass',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
-    }
-  ],
-  [
-    'twistedspoon',
-    {
-      desc: "Holder's Psychic-type attacks have 1.2x power.",
-      gen: 2,
-      name: 'Twisted Spoon'
-    }
-  ],
-  [
-    'tyranitarite',
-    {
-      desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Tyranitarite'
-    }
-  ],
-  [
-    'ultraball',
-    {
-      desc: 'An ultra-performance Ball that provides a higher catch rate than a Great Ball.',
-      gen: 1,
-      name: 'Ultra Ball'
-    }
-  ],
-  [
-    'ultranecroziumz',
-    {
-      desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
-      gen: 7,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Ultranecrozium Z'
-    }
-  ],
-  [
-    'unownreport',
-    {
-      desc: 'A report of all the discovered kinds of Unown.',
-      gen: 4,
-      keyItem: true,
-      name: 'Unown Report',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png'
-    }
-  ],
-  [
-    'upgrade',
-    {
-      desc: 'Evolves Porygon into Porygon2 when traded.',
-      gen: 2,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Up-Grade'
-    }
-  ],
-  [
-    'utilityumbrella',
-    {
-      desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
-      gen: 8,
-      name: 'Utility Umbrella',
-      shortDesc: 'The holder ignores rain- and sun-based effects.'
-    }
-  ],
-  [
-    'venusaurite',
-    {
-      desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Venusaurite'
-    }
-  ],
-  [
-    'vilevial',
-    {
-      desc: 'If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.',
-      gen: 8,
-      isNonstandard: IsNonStandard.Cap,
-      name: 'Vile Vial'
-    }
-  ],
-  [
-    'violetbook',
-    {
-      desc: 'A record of the expedition that the author, Heath, went on within the Great Crater of Paldea. The book has the name "Turo" written on it in clumsy handwriting.',
-      gen: 9,
-      keyItem: true,
-      name: 'Violet Book',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/violetbook.png'
-    }
-  ],
-  [
-    'vsrecorder',
-    {
-      desc: 'An amazing device that can record a battle between friends or the battles at certain special battle facilities.',
-      gen: 5,
-      keyItem: true,
-      name: 'Vs. Recorder',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png'
-    }
-  ],
-  [
-    'vsseeker',
-    {
-      desc: 'A device that indicates Trainers who want to battle. Its battery charges while you walk.',
-      gen: 3,
-      keyItem: true,
-      name: 'Vs. Seeker',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png'
-    }
-  ],
-  [
-    'wacanberry',
-    {
-      desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.',
-      gen: 4,
-      name: 'Wacan Berry'
-    }
-  ],
-  [
-    'wailmerpail',
-    {
-      desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      keyItem: true,
-      name: 'Wailmer Pail',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'
-    }
-  ],
-  [
-    'watergem',
-    {
-      desc: "Holder's first successful Water-type attack will have 1.3x power. Single use.",
-      gen: 5,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Water Gem'
-    }
-  ],
-  [
-    'wateriumz',
-    {
-      desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
-      gen: 7,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Waterium Z'
-    }
-  ],
-  [
-    'watermemory',
-    {
-      desc: "Holder's Multi-Attack is Water type.",
-      gen: 7,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Water Memory'
-    }
-  ],
-  [
-    'waterstone',
-    {
-      desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
-      gen: 1,
-      name: 'Water Stone',
-      shortDesc: 'Evolves certain species of Pokémon when used.'
-    }
-  ],
-  [
-    'waterterashard',
-    {
-      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
-      gen: 9,
-      name: 'Water Tera Shard',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/waterterashard.png'
-    }
-  ],
-  [
-    'watmelberry',
-    {
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Watmel Berry'
-    }
-  ],
-  [
-    'waveincense',
-    {
-      desc: "Holder's Water-type attacks have 1.2x power.",
-      gen: 4,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Wave Incense'
-    }
-  ],
-  [
-    'weaknesspolicy',
-    {
-      aliases: ['wp'],
-      desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.',
-      gen: 6,
-      name: 'Weakness Policy'
-    }
-  ],
-  [
-    'wepearberry',
-    {
-      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
-      gen: 3,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Wepear Berry'
-    }
-  ],
-  [
-    'whippeddream',
-    {
-      desc: 'Evolves Swirlix into Slurpuff when traded.',
-      gen: 6,
-      isNonstandard: IsNonStandard.Past,
-      name: 'Whipped Dream'
-    }
-  ],
-  [
-    'whiteherb',
-    {
-      desc: 'Restores all lowered stat stages to 0 when one is less than 0. Single use.',
-      gen: 3,
-      name: 'White Herb'
-    }
-  ],
-  [
-    'widelens',
-    {
-      desc: 'The accuracy of attacks by the holder is 1.1x.',
-      gen: 4,
-      name: 'Wide Lens'
-    }
-  ],
-  [
-    'wikiberry',
-    {
-      desc: 'Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.',
-      gen: 3,
-      name: 'Wiki Berry'
-    }
-  ],
-  [
-    'wiseglasses',
-    {
-      desc: "Holder's special attacks have 1.1x power.",
-      gen: 4,
-      name: 'Wise Glasses'
-    }
-  ],
-  [
-    'wishingstar',
-    {
-      desc: "A stone found in the Galar region with a mysterious power. It's said that your dreams come true if you find one.",
-      gen: 8,
-      keyItem: true,
-      name: 'Wishing Star',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/wishingstar.png'
-    }
-  ],
-  [
-    'workskey',
-    {
-      desc: 'A large key for operating the doors of the Valley Windworks in the canyon. It was held by a Team Galactic Grunt.',
-      gen: 4,
-      keyItem: true,
-      name: 'Works Key',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/workskey.png'
-    }
-  ],
-  [
-    'xtransceiver',
-    {
-      desc: 'A high-tech transceiver with a camera function. It allows up to four-way calls.',
-      gen: 5,
-      keyItem: true,
-      name: 'Xtransceiver',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/xtransceiver.png'
-    }
-  ],
-  [
-    'yacheberry',
-    {
-      aliases: ['yache'],
-      desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
-      gen: 4,
-      name: 'Yache Berry'
-    }
-  ],
-  [
-    'yellowpetal',
-    {
-      desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
-      gen: 7,
-      keyItem: true,
-      name: 'Yellow Petal',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/yellowpetal.png'
-    }
-  ],
-  [
-    'zapplate',
-    {
-      desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
-      gen: 4,
-      name: 'Zap Plate'
-    }
-  ],
-  [
-    'zoomlens',
-    {
-      desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
-      gen: 4,
-      name: 'Zoom Lens'
-    }
-  ],
-  [
-    'zpowering',
-    {
-      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
-      gen: 7,
-      keyItem: true,
-      name: 'Z-Power Ring',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-powerring.png'
-    }
-  ],
-  [
-    'zring',
-    {
-      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
-      gen: 7,
-      keyItem: true,
-      name: 'Z-Ring',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-ring.png'
-    }
-  ],
-  [
-    'zygardecube',
-    {
-      desc: 'An item to store Zygarde Cores and Cells. You can also use it to teach Zygarde moves.',
-      gen: 7,
-      keyItem: true,
-      name: 'Zygarde Cube',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
-    }
-  ],
-  [
-    'adamantcrystal',
-    {
-      desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
-      gen: 8,
-      name: 'Adamant Crystal'
-    }
-  ],
-  [
-    'bignugget',
-    {
-      desc: 'A big nugget of pure gold that gives off a lustrous gleam.',
-      gen: 5,
-      name: 'Big Nugget'
-    }
-  ],
-  [
-    'cornerstonemask',
-    {
-      desc: 'Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.',
-      gen: 9,
-      name: 'Cornerstone Mask'
-    }
-  ],
-  [
-    'fairyfeather',
-    {
-      desc: "Holder's Fairy-type attacks have 1.2x power.",
-      gen: 9,
-      name: 'Fairy Feather'
-    }
-  ],
-  [
-    'griseouscore',
-    {
-      desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
-      gen: 8,
-      name: 'Griseous Core'
-    }
-  ],
-  [
-    'hearthflamemask',
-    {
-      desc: 'Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.',
-      gen: 9,
-      name: 'Hearthflame Mask'
-    }
-  ],
-  [
-    'lustrousglobe',
-    {
-      desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
-      gen: 8,
-      name: 'Lustrous Globe'
-    }
-  ],
-  [
-    'masterpieceteacup',
-    {
-      desc: 'Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.',
-      gen: 9,
-      name: 'Masterpiece Teacup'
-    }
-  ],
-  [
-    'strangeball',
-    {
-      desc: 'In Pokémon Brilliant Diamond and Shining Pearl, Pokémon Legends: Arceus, and Pokémon Scarlet and Violet, Pokémon caught in Poké Balls that do not exist in that game instead display a Strange Ball as their Poké Ball.',
-      gen: 8,
-      isNonstandard: IsNonStandard.Unobtainable,
-      name: 'Strange Ball',
-      shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.'
-    }
-  ],
-  [
-    'syrupyapple',
-    {
-      desc: 'Evolves Applin into Dipplin when used.',
-      gen: 9,
-      name: 'Syrupy Apple'
     }
   ],
   [
@@ -6902,6 +6535,71 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'traveltrunk',
+    {
+      desc: 'A light and yet incredibly effective trunk, which can contain every last piece of clothing that can be bought.',
+      gen: 6,
+      keyItem: true,
+      name: 'Travel Trunk',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/traveltrunk.png'
+    }
+  ],
+  [
+    'tripass',
+    {
+      desc: 'A pass for ferries between One, Two, and Three Island. It has a drawing of three islands.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'tripass',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tripass.png'
+    }
+  ],
+  [
+    'twistedspoon',
+    {
+      desc: "Holder's Psychic-type attacks have 1.2x power.",
+      gen: 2,
+      name: 'Twisted Spoon'
+    }
+  ],
+  [
+    'tyranitarite',
+    {
+      desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Tyranitarite'
+    }
+  ],
+  [
+    'ultraball',
+    {
+      desc: 'An ultra-performance Ball that provides a higher catch rate than a Great Ball.',
+      gen: 1,
+      name: 'Ultra Ball'
+    }
+  ],
+  [
+    'ultranecroziumz',
+    {
+      desc: 'Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.',
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Ultranecrozium Z'
+    }
+  ],
+  [
+    'unownreport',
+    {
+      desc: 'A report of all the discovered kinds of Unown.',
+      gen: 4,
+      keyItem: true,
+      name: 'Unown Report',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/unownreport.png'
+    }
+  ],
+  [
     'unremarkableteacup',
     {
       desc: 'Evolves Poltchageist into Sinistcha when used.',
@@ -6910,11 +6608,313 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'upgrade',
+    {
+      desc: 'Evolves Porygon into Porygon2 when traded.',
+      gen: 2,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Up-Grade'
+    }
+  ],
+  [
+    'utilityumbrella',
+    {
+      desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
+      gen: 8,
+      name: 'Utility Umbrella',
+      shortDesc: 'The holder ignores rain- and sun-based effects.'
+    }
+  ],
+  [
+    'venusaurite',
+    {
+      desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Venusaurite'
+    }
+  ],
+  [
+    'vilevial',
+    {
+      desc: 'If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.',
+      gen: 8,
+      isNonstandard: IsNonStandard.Cap,
+      name: 'Vile Vial'
+    }
+  ],
+  [
+    'violetbook',
+    {
+      desc: 'A record of the expedition that the author, Heath, went on within the Great Crater of Paldea. The book has the name "Turo" written on it in clumsy handwriting.',
+      gen: 9,
+      keyItem: true,
+      name: 'Violet Book',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/violetbook.png'
+    }
+  ],
+  [
+    'vsrecorder',
+    {
+      desc: 'An amazing device that can record a battle between friends or the battles at certain special battle facilities.',
+      gen: 5,
+      keyItem: true,
+      name: 'Vs. Recorder',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.recorder.png'
+    }
+  ],
+  [
+    'vsseeker',
+    {
+      desc: 'A device that indicates Trainers who want to battle. Its battery charges while you walk.',
+      gen: 3,
+      keyItem: true,
+      name: 'Vs. Seeker',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/vs.seeker.png'
+    }
+  ],
+  [
+    'wacanberry',
+    {
+      desc: 'Halves damage taken from a supereffective Electric-type attack. Single use.',
+      gen: 4,
+      name: 'Wacan Berry'
+    }
+  ],
+  [
+    'wailmerpail',
+    {
+      desc: 'This is a tool for watering Berries you planted to make them grow more quickly.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      keyItem: true,
+      name: 'Wailmer Pail',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wailmerpail.png'
+    }
+  ],
+  [
+    'watergem',
+    {
+      desc: "Holder's first successful Water-type attack will have 1.3x power. Single use.",
+      gen: 5,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Water Gem'
+    }
+  ],
+  [
+    'wateriumz',
+    {
+      desc: 'If holder has a Water move, this item allows it to use a Water Z-Move.',
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Waterium Z'
+    }
+  ],
+  [
+    'watermemory',
+    {
+      desc: "Holder's Multi-Attack is Water type.",
+      gen: 7,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Water Memory'
+    }
+  ],
+  [
+    'waterstone',
+    {
+      desc: 'Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.',
+      gen: 1,
+      name: 'Water Stone',
+      shortDesc: 'Evolves certain species of Pokémon when used.'
+    }
+  ],
+  [
+    'waterterashard',
+    {
+      desc: 'On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.',
+      gen: 9,
+      name: 'Water Tera Shard',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/waterterashard.png'
+    }
+  ],
+  [
+    'watmelberry',
+    {
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Watmel Berry'
+    }
+  ],
+  [
+    'waveincense',
+    {
+      desc: "Holder's Water-type attacks have 1.2x power.",
+      gen: 4,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Wave Incense'
+    }
+  ],
+  [
+    'weaknesspolicy',
+    {
+      aliases: ['wp'],
+      desc: 'If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.',
+      gen: 6,
+      name: 'Weakness Policy'
+    }
+  ],
+  [
     'wellspringmask',
     {
       desc: 'Ogerpon-Wellspring: 1.2x power attacks; Terastallize to gain Embody Aspect.',
       gen: 9,
       name: 'Wellspring Mask'
+    }
+  ],
+  [
+    'wepearberry',
+    {
+      desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
+      gen: 3,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Wepear Berry'
+    }
+  ],
+  [
+    'whippeddream',
+    {
+      desc: 'Evolves Swirlix into Slurpuff when traded.',
+      gen: 6,
+      isNonstandard: IsNonStandard.Past,
+      name: 'Whipped Dream'
+    }
+  ],
+  [
+    'whiteherb',
+    {
+      desc: 'Restores all lowered stat stages to 0 when one is less than 0. Single use.',
+      gen: 3,
+      name: 'White Herb'
+    }
+  ],
+  [
+    'widelens',
+    {
+      desc: 'The accuracy of attacks by the holder is 1.1x.',
+      gen: 4,
+      name: 'Wide Lens'
+    }
+  ],
+  [
+    'wikiberry',
+    {
+      desc: 'Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.',
+      gen: 3,
+      name: 'Wiki Berry'
+    }
+  ],
+  [
+    'wiseglasses',
+    {
+      desc: "Holder's special attacks have 1.1x power.",
+      gen: 4,
+      name: 'Wise Glasses'
+    }
+  ],
+  [
+    'wishingstar',
+    {
+      desc: "A stone found in the Galar region with a mysterious power. It's said that your dreams come true if you find one.",
+      gen: 8,
+      keyItem: true,
+      name: 'Wishing Star',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/wishingstar.png'
+    }
+  ],
+  [
+    'workskey',
+    {
+      desc: 'A large key for operating the doors of the Valley Windworks in the canyon. It was held by a Team Galactic Grunt.',
+      gen: 4,
+      keyItem: true,
+      name: 'Works Key',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/workskey.png'
+    }
+  ],
+  [
+    'xtransceiver',
+    {
+      desc: 'A high-tech transceiver with a camera function. It allows up to four-way calls.',
+      gen: 5,
+      keyItem: true,
+      name: 'Xtransceiver',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/xtransceiver.png'
+    }
+  ],
+  [
+    'yacheberry',
+    {
+      aliases: ['yache'],
+      desc: 'Halves damage taken from a supereffective Ice-type attack. Single use.',
+      gen: 4,
+      name: 'Yache Berry'
+    }
+  ],
+  [
+    'yellowpetal',
+    {
+      desc: "A pressed flower petal you receive from Ilima during Mina's trial. The goal is to collect seven different kinds of petals.",
+      gen: 7,
+      keyItem: true,
+      name: 'Yellow Petal',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/yellowpetal.png'
+    }
+  ],
+  [
+    'zapplate',
+    {
+      desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+      gen: 4,
+      name: 'Zap Plate'
+    }
+  ],
+  [
+    'zoomlens',
+    {
+      desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
+      gen: 4,
+      name: 'Zoom Lens'
+    }
+  ],
+  [
+    'zpowering',
+    {
+      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
+      gen: 7,
+      keyItem: true,
+      name: 'Z-Power Ring',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-powerring.png'
+    }
+  ],
+  [
+    'zring',
+    {
+      desc: 'A mysterious ring that enables Pokémon to use Z-Power. It requires both the willpower and the physical power of the Trainer wearing it.',
+      gen: 7,
+      keyItem: true,
+      name: 'Z-Ring',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/z-ring.png'
+    }
+  ],
+  [
+    'zygardecube',
+    {
+      desc: 'An item to store Zygarde Cores and Cells. You can also use it to teach Zygarde moves.',
+      gen: 7,
+      keyItem: true,
+      name: 'Zygarde Cube',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
     }
   ]
 ]);

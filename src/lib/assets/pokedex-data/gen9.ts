@@ -2888,7 +2888,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'archaludon',
     {
-      abilities: { first: 'stamini', second: 'sturdy', hidden: 'stalwart' },
+      abilities: { first: 'stamina', second: 'sturdy', hidden: 'stalwart' },
       baseStats: { hp: 90, atk: 105, def: 130, spa: 125, spd: 65, spe: 85 },
       catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
       color: 'White',

@@ -63,6 +63,10 @@ enum AbilitiesEnum {
   effectspore
   electricsurge
   electromorphosis
+  embodyaspectcornerstone
+  embodyaspecthearthflame
+  embodyaspectteal
+  embodyaspectwellspring
   emergencyexit
   fairyaura
   filter
@@ -96,6 +100,7 @@ enum AbilitiesEnum {
   heatproof
   heavymetal
   honeygather
+  hospitality
   hugepower
   hungerswitch
   hustle
@@ -138,6 +143,7 @@ enum AbilitiesEnum {
   megalauncher
   merciless
   mimicry
+  mindseye
   minus
   mirrorarmor
   mistysurge
@@ -253,6 +259,7 @@ enum AbilitiesEnum {
   sturdy
   suctioncups
   superluck
+  supersweetsyrup
   supremeoverlord
   surgesurfer
   swarm
@@ -266,6 +273,9 @@ enum AbilitiesEnum {
   tanglinghair
   technician
   telepathy
+  teraformzero
+  terashell
+  terashift
   teravolt
   thermalexchange
   thickfat
@@ -273,6 +283,7 @@ enum AbilitiesEnum {
   torrent
   toughclaws
   toxicboost
+  toxicchain
   toxicdebris
   trace
   transistor
@@ -302,14 +313,6 @@ enum AbilitiesEnum {
   wonderskin
   zenmode
   zerotohero
-  embodyaspectcornerstone
-  embodyaspecthearthflame
-  embodyaspectteal
-  embodyaspectwellspring
-  hospitality
-  mindseye
-  supersweetsyrup
-  toxicchain
 }
 
 "The supported Pokémon"
@@ -1727,6 +1730,15 @@ enum PokemonEnum {
   ogerponwellspring
   ogerponwellspringtera
   ogerpontealtera
+  archaludon
+  hydrapple
+  gougingfire
+  ragingbolt
+  ironboulder
+  ironcrown
+  terapagos
+  terapagosterastal
+  terapagosstellar
 }
 
 "The supported items"
@@ -1736,6 +1748,7 @@ enum ItemsEnum {
   absolite
   absorbbulb
   acrobike
+  adamantcrystal
   adamantorb
   adrenalineorb
   adventureguide
@@ -1772,6 +1785,7 @@ enum ItemsEnum {
   berrysweet
   berserkgene
   bicycle
+  bignugget
   bigroot
   bikevoucher
   bindingband
@@ -1824,6 +1838,7 @@ enum ItemsEnum {
   colressmchn
   contestcostume
   contestpass
+  cornerstonemask
   cornnberry
   coupon1
   coupon2
@@ -1896,6 +1911,7 @@ enum ItemsEnum {
   explorerkit
   expshare
   fairiumz
+  fairyfeather
   fairygem
   fairymemory
   fairyterashard
@@ -1965,6 +1981,7 @@ enum ItemsEnum {
   greenpetal
   grepaberry
   gripclaw
+  griseouscore
   griseousorb
   groundgem
   groundiumz
@@ -1976,6 +1993,7 @@ enum ItemsEnum {
   habanberry
   hardstone
   healball
+  hearthflamemask
   heatrock
   heavyball
   heavydutyboots
@@ -2057,6 +2075,7 @@ enum ItemsEnum {
   lunaliumz
   lunarwing
   lureball
+  lustrousglobe
   lustrousorb
   luxuryball
   lycaniumz
@@ -2077,6 +2096,7 @@ enum ItemsEnum {
   marangaberry
   marshadiumz
   masterball
+  masterpieceteacup
   mawilite
   maxpotion
   meadowplate
@@ -2315,6 +2335,7 @@ enum ItemsEnum {
   stickybarb
   stoneplate
   storagekey
+  strangeball
   strawberrysweet
   suitekey
   sunflute
@@ -2324,6 +2345,7 @@ enum ItemsEnum {
   surgebadge
   swampertite
   sweetapple
+  syrupyapple
   tamatoberry
   tangaberry
   tapuniumz
@@ -2342,56 +2364,6 @@ enum ItemsEnum {
   townmap
   toxicorb
   toxicplate
-  traveltrunk
-  tripass
-  twistedspoon
-  tyranitarite
-  ultraball
-  ultranecroziumz
-  unownreport
-  upgrade
-  utilityumbrella
-  venusaurite
-  vilevial
-  violetbook
-  vsrecorder
-  vsseeker
-  wacanberry
-  wailmerpail
-  watergem
-  wateriumz
-  watermemory
-  waterstone
-  waterterashard
-  watmelberry
-  waveincense
-  weaknesspolicy
-  wepearberry
-  whippeddream
-  whiteherb
-  widelens
-  wikiberry
-  wiseglasses
-  wishingstar
-  workskey
-  xtransceiver
-  yacheberry
-  yellowpetal
-  zapplate
-  zoomlens
-  zpowering
-  zring
-  zygardecube
-  adamantcrystal
-  bignugget
-  cornerstonemask
-  fairyfeather
-  griseouscore
-  hearthflamemask
-  lustrousglobe
-  masterpieceteacup
-  strangeball
-  syrupyapple
   tr00
   tr01
   tr02
@@ -2492,8 +2464,48 @@ enum ItemsEnum {
   tr97
   tr98
   tr99
+  traveltrunk
+  tripass
+  twistedspoon
+  tyranitarite
+  ultraball
+  ultranecroziumz
+  unownreport
   unremarkableteacup
+  upgrade
+  utilityumbrella
+  venusaurite
+  vilevial
+  violetbook
+  vsrecorder
+  vsseeker
+  wacanberry
+  wailmerpail
+  watergem
+  wateriumz
+  watermemory
+  waterstone
+  waterterashard
+  watmelberry
+  waveincense
+  weaknesspolicy
   wellspringmask
+  wepearberry
+  whippeddream
+  whiteherb
+  widelens
+  wikiberry
+  wiseglasses
+  wishingstar
+  workskey
+  xtransceiver
+  yacheberry
+  yellowpetal
+  zapplate
+  zoomlens
+  zpowering
+  zring
+  zygardecube
 }
 
 "The supported moves"
@@ -2566,6 +2578,7 @@ enum MovesEnum {
   bleakwindstorm
   blizzard
   block
+  bloodmoon
   bloomdoom
   blueflare
   bodypress
@@ -2709,6 +2722,7 @@ enum MovesEnum {
   electrify
   electroball
   electrodrift
+  electroshot
   electroweb
   embargo
   ember
@@ -2934,6 +2948,7 @@ enum MovesEnum {
   irondefense
   ironhead
   irontail
+  ivycudgel
   jawlock
   jetpunch
   judgment
@@ -2988,6 +3003,7 @@ enum MovesEnum {
   makeitrain
   maliciousmoonsault
   matblock
+  matchagotcha
   maxairstream
   maxdarkness
   maxflare
@@ -3120,13 +3136,14 @@ enum MovesEnum {
   prismaticlaser
   protect
   psybeam
+  psyblade
   psychic
   psychicfangs
+  psychicnoise
   psychicterrain
   psychoboost
   psychocut
   psychoshift
-  psyblade
   psychup
   psyshieldbash
   psyshock
@@ -3329,6 +3346,8 @@ enum MovesEnum {
   swordsdance
   synchronoise
   synthesis
+  syrupbomb
+  tachyoncutter
   tackle
   tailglow
   tailslap
@@ -3356,6 +3375,7 @@ enum MovesEnum {
   thunder
   thunderbolt
   thundercage
+  thunderclap
   thunderfang
   thunderouskick
   thunderpunch
@@ -3385,6 +3405,7 @@ enum MovesEnum {
   twineedle
   twinkletackle
   twister
+  upperhand
   uproar
   uturn
   vacuumwave
@@ -3431,10 +3452,6 @@ enum MovesEnum {
   zenheadbutt
   zingzap
   zippyzap
-  bloodmoon
-  ivycudgel
-  matchagotcha
-  syrupbomb
 }
 
 "The types in Pokémon"

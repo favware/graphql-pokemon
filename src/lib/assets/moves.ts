@@ -3536,6 +3536,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'electroshot',
+    {
+      accuracy: 100,
+      basePower: '130',
+      category: 'Special',
+      name: 'Electro Shot',
+      pp: 10,
+      priority: 0,
+      shortDesc:
+        'The user gathers electricity on the first turn, boosting its Sp. Atk stat, then fires a high-voltage shot on the next turn. The shot will be fired immediately in rain.',
+      target: 'Normal',
+      type: 'Electric'
+    }
+  ],
+  [
     'electroweb',
     {
       accuracy: 95,
@@ -10565,6 +10580,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'psychicnoise',
+    {
+      accuracy: 100,
+      basePower: '75',
+      category: 'Physical',
+      name: 'Psychic Noise ',
+      pp: 10,
+      priority: 0,
+      shortDesc:
+        'The user attacks the target with unpleasant sound waves. For two turns, the target is prevented from recovering HP through moves, Abilities, or held items.',
+      target: 'Normal',
+      type: 'Psychic'
+    }
+  ],
+  [
     'psychicterrain',
     {
       accuracy: 100,
@@ -14032,6 +14062,20 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'tachyoncutter',
+    {
+      accuracy: 100,
+      basePower: '50',
+      category: 'Special',
+      name: 'Tachyon Cutter',
+      pp: 10,
+      priority: 0,
+      shortDesc: 'The user attacks by launching particle blades at the target twice in a row. This attack never misses.',
+      target: 'Normal',
+      type: 'Steel'
+    }
+  ],
+  [
     'tackle',
     {
       accuracy: 100,
@@ -14476,6 +14520,20 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       pp: 15,
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
+      target: 'Normal',
+      type: 'Electric'
+    }
+  ],
+  [
+    'thunderclap',
+    {
+      accuracy: 100,
+      basePower: '70',
+      category: 'Special',
+      shortDesc: 'This move enables the user to attack first with a jolt of electricity. This move fails if the target is not readying an attack.',
+      name: 'Thunderclap',
+      pp: 5,
+      priority: 1,
       target: 'Normal',
       type: 'Electric'
     }
@@ -15786,6 +15844,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: "Target's Speed is lowered by 1 stage for 3 turns.",
       target: 'Normal',
       type: 'Grass'
+    }
+  ],
+  [
+    'upperhand',
+    {
+      accuracy: 100,
+      basePower: '65',
+      category: 'Physical',
+      name: 'Upper Hand',
+      pp: 15,
+      priority: 0,
+      shortDesc:
+        "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move.",
+      target: 'Normal',
+      type: 'Fighting'
     }
   ]
 ]);

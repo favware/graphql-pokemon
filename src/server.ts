@@ -6,6 +6,7 @@ import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHt
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 import { koaMiddleware } from '@as-integrations/koa';
 import cors from '@koa/cors';
+import { JsonStreamStringify } from 'json-stream-stringify';
 import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import { createServer, type IncomingMessage, type Server, type ServerResponse } from 'node:http';
@@ -27,7 +28,21 @@ const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof Server
         variables: defaultVariables,
         embed: true
       })
-    ]
+    ],
+    stringifyResult: async (value) => {
+      const stringifyStream = new JsonStreamStringify(value);
+      let stringified = '';
+
+      try {
+        for await (const chunk of stringifyStream) {
+          stringified += chunk;
+        }
+
+        return `${stringified}\n`;
+      } catch (error) {
+        return '';
+      }
+    }
   });
 
   await apolloServer.start();

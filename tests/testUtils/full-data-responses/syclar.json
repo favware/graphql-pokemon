@@ -5026,7 +5026,6 @@
       "maximumHatchTime": null,
       "minimumHatchTime": null,
       "num": -1,
-      "otherFormes": null,
       "serebiiPage": "",
       "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclar.png",
       "shinySprite": "https://play.pokemonshowdown.com/sprites/gen5-shiny/syclar.png",
@@ -10130,7 +10129,6 @@
           "maximumHatchTime": null,
           "minimumHatchTime": null,
           "num": -2,
-          "otherFormes": null,
           "serebiiPage": "",
           "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/gen5-back-shiny/syclant.png",
           "shinySprite": "https://play.pokemonshowdown.com/sprites/gen5-shiny/syclant.png",
@@ -10211,6 +10209,7 @@
           "preevolutions": null
         }
       ],
+      "otherFormes": null,
       "preevolutions": null
     }
   }

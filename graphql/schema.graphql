@@ -116,7 +116,7 @@ type Pokemon {
   learnsets: GenerationalPokemonLearnset
 
   "Any other forms for a Pokémon"
-  otherFormes: [String!]
+  otherFormes: [Pokemon!]
 
   "The preevolutions for a Pokémon, if any"
   preevolutions: [Pokemon!]

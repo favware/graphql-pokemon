@@ -205,7 +205,6 @@ query = '''
         maximumHatchTime
         minimumHatchTime
         num
-        otherFormes
         serebiiPage
         shinyBackSprite
         shinySprite
@@ -244,6 +243,15 @@ query = '''
     fragment FullData on Pokemon {
         ...FullDataFragment
         evolutions {
+            ...FullDataFragment
+            evolutions {
+                ...FullDataFragment
+            }
+            preevolutions {
+                ...FullDataFragment
+            }
+        }
+        otherFormes {
             ...FullDataFragment
             evolutions {
                 ...FullDataFragment

@@ -9869,7 +9869,6 @@
       "maximumHatchTime": 10536,
       "minimumHatchTime": 10280,
       "num": 148,
-      "otherFormes": null,
       "serebiiPage": "https://www.serebii.net/pokedex-sv/dragonair",
       "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/dragonair.gif",
       "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/dragonair.gif",
@@ -19797,7 +19796,6 @@
           "maximumHatchTime": 10536,
           "minimumHatchTime": 10280,
           "num": 149,
-          "otherFormes": null,
           "serebiiPage": "https://www.serebii.net/pokedex-sv/dragonite",
           "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/dragonite.gif",
           "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/dragonite.gif",
@@ -19880,6 +19878,7 @@
           "preevolutions": null
         }
       ],
+      "otherFormes": null,
       "preevolutions": [
         {
           "abilities": {
@@ -29750,7 +29749,6 @@
           "maximumHatchTime": 10536,
           "minimumHatchTime": 10280,
           "num": 147,
-          "otherFormes": null,
           "serebiiPage": "https://www.serebii.net/pokedex-sv/dratini",
           "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/dratini.gif",
           "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/dratini.gif",

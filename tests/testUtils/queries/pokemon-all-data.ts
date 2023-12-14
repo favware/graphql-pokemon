@@ -194,7 +194,6 @@ export const getPokemonWithFullDataAndEvolutions = gql`
     maximumHatchTime
     minimumHatchTime
     num
-    otherFormes
     serebiiPage
     shinyBackSprite
     shinySprite
@@ -235,6 +234,16 @@ export const getPokemonWithFullDataAndEvolutions = gql`
   fragment FullData on Pokemon {
     ...FullDataFragment
     evolutions {
+      ...FullDataFragment
+      evolutions {
+        ...FullDataFragment
+      }
+      preevolutions {
+        ...FullDataFragment
+      }
+    }
+
+    otherFormes {
       ...FullDataFragment
       evolutions {
         ...FullDataFragment

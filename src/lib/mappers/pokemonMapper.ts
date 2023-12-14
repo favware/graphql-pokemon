@@ -336,6 +336,7 @@ export function mapPokemonDataToPokemonGraphQL({
   };
 
   const evolutionChain: Pokemon[] = [];
+  const otherFormsChain: Pokemon[] = [];
   const preevolutionChain: Pokemon[] = [];
 
   const pokemonData: Pokemon = {} as Pokemon;
@@ -480,13 +481,6 @@ export function mapPokemonDataToPokemonGraphQL({
     propertyValue: data.baseSpecies,
     requestedFields,
     fieldAccessor: `${resolvedRecursingAs}baseSpecies`
-  });
-  addPropertyToObjectFieldBased({
-    objectTarget: pokemonData,
-    propertyKey: 'otherFormes',
-    propertyValue: data.otherFormes,
-    requestedFields,
-    fieldAccessor: `${resolvedRecursingAs}otherFormes`
   });
   addPropertyToObjectFieldBased({
     objectTarget: pokemonData,
@@ -685,7 +679,7 @@ export function mapPokemonDataToPokemonGraphQL({
           data: pokedex.get(toLowerSingleWordCase(prevoPokemon.species))!,
           requestedFields,
           ...basePokemonArgs,
-          parsingPokemon: parseDataForEvolutionRecursion(data, prevoPokemon),
+          parsingPokemon: parseDataForEvolutionRecursion(data),
           recursingAs: 'preevolutions'
         })
       );
@@ -709,7 +703,7 @@ export function mapPokemonDataToPokemonGraphQL({
             data: pokedex.get(toLowerSingleWordCase(evoPokemon.species))!,
             requestedFields,
             ...basePokemonArgs,
-            parsingPokemon: parseDataForEvolutionRecursion(data, evoPokemon),
+            parsingPokemon: parseDataForEvolutionRecursion(data),
             recursingAs: 'evolutions'
           })
         );
@@ -722,6 +716,35 @@ export function mapPokemonDataToPokemonGraphQL({
       propertyValue: evolutionChain,
       requestedFields,
       fieldAccessor: `${resolvedRecursingAs}evolutions`
+    });
+  }
+
+  if (
+    (requestedFields as GraphQLSet<string>).has(`${resolvedRecursingAs}otherFormes`) &&
+    data.otherFormes &&
+    data.otherFormes[0] !== parsingPokemon
+  ) {
+    for (const otherForm of data.otherFormes) {
+      const otherFormPokemon = pokedex.get(toLowerSingleWordCase(otherForm));
+      if (otherFormPokemon) {
+        otherFormsChain.push(
+          mapPokemonDataToPokemonGraphQL({
+            data: pokedex.get(toLowerSingleWordCase(otherFormPokemon.species))!,
+            requestedFields,
+            ...basePokemonArgs,
+            parsingPokemon: parseDataForEvolutionRecursion(data),
+            recursingAs: 'otherFormes'
+          })
+        );
+      }
+    }
+
+    addPropertyToObjectFieldBased({
+      objectTarget: pokemonData,
+      propertyKey: 'otherFormes',
+      propertyValue: otherFormsChain,
+      requestedFields,
+      fieldAccessor: `${resolvedRecursingAs}otherFormes`
     });
   }
 
@@ -814,7 +837,7 @@ function parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, 
   return `${serebiiBaseUrl}-sv/${pokemonName.replace(/ /g, '').toLowerCase()}`;
 }
 
-function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, _: PokemonTypes.DexEntry) {
+function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry) {
   if (basePokemonData.forme) {
     return toLowerSingleWordCase(basePokemonData.species);
   }
@@ -870,5 +893,5 @@ interface MapPokemonDataToPokemonGraphQLParameters {
   reverseFlavorTexts: boolean;
   referencedCall?: PokemonReferencedCallIdentifier;
   parsingPokemon?: string;
-  recursingAs?: 'preevolutions' | 'evolutions' | false;
+  recursingAs?: 'preevolutions' | 'evolutions' | 'otherFormes' | false;
 }

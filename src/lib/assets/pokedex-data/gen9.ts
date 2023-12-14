@@ -174,7 +174,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 1,
       num: 913,
-      prevo: 'Quaxly',
+      prevo: 'quaxly',
       species: 'quaxwell',
       types: [TypesEnum.Water],
       weightkg: 21.5
@@ -196,7 +196,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
       num: 914,
-      prevo: 'Quaxwell',
+      prevo: 'quaxwell',
       species: 'quaquaval',
       types: [TypesEnum.Water, TypesEnum.Fighting],
       weightkg: 61.9

@@ -29,7 +29,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'm00',
     {
       abilities: { first: 'pressure' },
-      baseSpecies: 'MissingNo.',
+      baseSpecies: 'missingno',
       baseStats: { hp: 33, atk: 137, def: 0, spa: 29, spd: 29, spe: 6 },
       color: 'Gray',
       eggGroups: ['Undiscovered'],
@@ -122,7 +122,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'venusaurgmax',
     {
       abilities: { first: 'overgrow', hidden: 'chlorophyll' },
-      baseSpecies: 'Venusaur',
+      baseSpecies: 'venusaur',
       baseStats: { hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
@@ -146,7 +146,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'venusaurmega',
     {
       abilities: { first: 'thickfat' },
-      baseSpecies: 'Venusaur',
+      baseSpecies: 'venusaur',
       baseStats: { hp: 80, atk: 100, def: 123, spa: 122, spd: 120, spe: 80 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
@@ -241,7 +241,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'charizardmegax',
     {
       abilities: { first: 'toughclaws' },
-      baseSpecies: 'Charizard',
+      baseSpecies: 'charizard',
       baseStats: { hp: 78, atk: 130, def: 111, spa: 130, spd: 85, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
@@ -266,7 +266,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'charizardmegay',
     {
       abilities: { first: 'drought' },
-      baseSpecies: 'Charizard',
+      baseSpecies: 'charizard',
       baseStats: { hp: 78, atk: 104, def: 78, spa: 159, spd: 115, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
@@ -291,7 +291,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'charizardgmax',
     {
       abilities: { first: 'blaze', hidden: 'solarpower' },
-      baseSpecies: 'Charizard',
+      baseSpecies: 'charizard',
       baseStats: { hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
@@ -386,7 +386,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'blastoisegmax',
     {
       abilities: { first: 'torrent', hidden: 'raindish' },
-      baseSpecies: 'Blastoise',
+      baseSpecies: 'blastoise',
       baseStats: { hp: 79, atk: 83, def: 100, spa: 85, spd: 105, spe: 78 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -410,7 +410,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'blastoisemega',
     {
       abilities: { first: 'megalauncher' },
-      baseSpecies: 'Blastoise',
+      baseSpecies: 'blastoise',
       baseStats: { hp: 79, atk: 103, def: 120, spa: 135, spd: 115, spe: 78 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -504,7 +504,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'butterfreegmax',
     {
       abilities: { first: 'compoundeyes', hidden: 'tintedlens' },
-      baseSpecies: 'Butterfree',
+      baseSpecies: 'butterfree',
       baseStats: { hp: 60, atk: 45, def: 50, spa: 90, spd: 80, spe: 70 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'White',
@@ -599,7 +599,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'beedrillmega',
     {
       abilities: { first: 'adaptability' },
-      baseSpecies: 'Beedrill',
+      baseSpecies: 'beedrill',
       baseStats: { hp: 65, atk: 150, def: 40, spa: 15, spd: 80, spe: 145 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
@@ -694,7 +694,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pidgeotmega',
     {
       abilities: { first: 'noguard' },
-      baseSpecies: 'Pidgeot',
+      baseSpecies: 'pidgeot',
       baseStats: { hp: 83, atk: 80, def: 80, spa: 135, spd: 80, spe: 121 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
@@ -741,7 +741,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'rattataalola',
     {
       abilities: { first: 'gluttony', second: 'hustle', hidden: 'thickfat' },
-      baseSpecies: 'Rattata',
+      baseSpecies: 'rattata',
       baseStats: { hp: 30, atk: 56, def: 35, spa: 25, spd: 35, spe: 72 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Black',
@@ -791,7 +791,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'raticatealola',
     {
       abilities: { first: 'gluttony', second: 'hustle', hidden: 'thickfat' },
-      baseSpecies: 'Raticate',
+      baseSpecies: 'raticate',
       baseStats: { hp: 75, atk: 71, def: 70, spa: 40, spd: 80, spe: 77 },
       catchRate: { base: 127, percentageWithOrdinaryPokeballAtFullHealth: '26%' },
       color: 'Black',
@@ -818,7 +818,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'raticatealolatotem',
     {
       abilities: { first: 'thickfat' },
-      baseSpecies: 'Raticate',
+      baseSpecies: 'raticate',
       baseStats: { hp: 75, atk: 71, def: 70, spa: 40, spd: 80, spe: 77 },
       catchRate: { base: 127, percentageWithOrdinaryPokeballAtFullHealth: '26%' },
       color: 'Black',
@@ -975,7 +975,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachugmax',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1017,7 +1017,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachucosplay',
     {
       abilities: { first: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1058,7 +1058,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachurockstar',
     {
       abilities: { first: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1099,7 +1099,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachubelle',
     {
       abilities: { first: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1140,7 +1140,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachupopstar',
     {
       abilities: { first: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1181,7 +1181,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachuphd',
     {
       abilities: { first: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1223,7 +1223,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachulibre',
     {
       abilities: { first: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1264,7 +1264,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachuoriginal',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1306,7 +1306,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachuhoenn',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1347,7 +1347,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachusinnoh',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1388,7 +1388,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachuunova',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       otherFormes: [
@@ -1429,7 +1429,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachukalos',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1470,7 +1470,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachualola',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1511,7 +1511,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachupartner',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1552,7 +1552,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachustarter',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 45, atk: 80, def: 50, spa: 75, spd: 60, spe: 120 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1593,7 +1593,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pikachuworld',
     {
       abilities: { first: 'static', hidden: 'lightningrod' },
-      baseSpecies: 'Pikachu',
+      baseSpecies: 'pikachu',
       baseStats: { hp: 35, atk: 55, def: 40, spa: 50, spd: 50, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -1658,7 +1658,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'raichualola',
     {
       abilities: { first: 'surgesurfer' },
-      baseSpecies: 'Raichu',
+      baseSpecies: 'raichu',
       baseStats: { hp: 60, atk: 85, def: 50, spa: 95, spd: 85, spe: 110 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Brown',
@@ -1708,7 +1708,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'sandshrewalola',
     {
       abilities: { first: 'snowcloak', hidden: 'slushrush' },
-      baseSpecies: 'Sandshrew',
+      baseSpecies: 'sandshrew',
       baseStats: { hp: 50, atk: 75, def: 90, spa: 10, spd: 35, spe: 40 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'White',
@@ -1758,7 +1758,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'sandslashalola',
     {
       abilities: { first: 'snowcloak', hidden: 'slushrush' },
-      baseSpecies: 'Sandslash',
+      baseSpecies: 'sandslash',
       baseStats: { hp: 75, atk: 100, def: 120, spa: 25, spd: 65, spe: 65 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Blue',
@@ -1995,7 +1995,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'vulpixalola',
     {
       abilities: { first: 'snowcloak', hidden: 'snowwarning' },
-      baseSpecies: 'Vulpix',
+      baseSpecies: 'vulpix',
       baseStats: { hp: 38, atk: 41, def: 40, spa: 50, spd: 65, spe: 65 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'White',
@@ -2045,7 +2045,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ninetalesalola',
     {
       abilities: { first: 'snowcloak', hidden: 'snowwarning' },
-      baseSpecies: 'Ninetales',
+      baseSpecies: 'ninetales',
       baseStats: { hp: 73, atk: 67, def: 75, spa: 81, spd: 100, spe: 109 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Blue',
@@ -2347,7 +2347,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'diglettalola',
     {
       abilities: { first: 'sandveil', second: 'tanglinghair', hidden: 'sandforce' },
-      baseSpecies: 'Diglett',
+      baseSpecies: 'diglett',
       baseStats: { hp: 10, atk: 55, def: 30, spa: 35, spd: 45, spe: 90 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Brown',
@@ -2397,7 +2397,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'dugtrioalola',
     {
       abilities: { first: 'sandveil', second: 'tanglinghair', hidden: 'sandforce' },
-      baseSpecies: 'Dugtrio',
+      baseSpecies: 'dugtrio',
       baseStats: { hp: 35, atk: 100, def: 60, spa: 50, spd: 70, spe: 110 },
       catchRate: { base: 50, percentageWithOrdinaryPokeballAtFullHealth: '12.9%' },
       color: 'Brown',
@@ -2447,7 +2447,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'meowthalola',
     {
       abilities: { first: 'pickup', second: 'technician', hidden: 'rattled' },
-      baseSpecies: 'Meowth',
+      baseSpecies: 'meowth',
       baseStats: { hp: 40, atk: 35, def: 35, spa: 50, spd: 40, spe: 90 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Blue',
@@ -2473,7 +2473,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'meowthgalar',
     {
       abilities: { first: 'pickup', second: 'technician', hidden: 'rattled' },
-      baseSpecies: 'Meowth',
+      baseSpecies: 'meowth',
       baseStats: { hp: 40, atk: 35, def: 35, spa: 50, spd: 40, spe: 90 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Blue',
@@ -2498,7 +2498,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'meowthgmax',
     {
       abilities: { first: 'pickup', second: 'technician', hidden: 'unnerve' },
-      baseSpecies: 'Meowth',
+      baseSpecies: 'meowth',
       baseStats: { hp: 40, atk: 45, def: 35, spa: 40, spd: 40, spe: 90 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Yellow',
@@ -2547,7 +2547,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'persianalola',
     {
       abilities: { first: 'furcoat', second: 'technician', hidden: 'rattled' },
-      baseSpecies: 'Persian',
+      baseSpecies: 'persian',
       baseStats: { hp: 65, atk: 60, def: 60, spa: 75, spd: 65, spe: 115 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Blue',
@@ -2688,7 +2688,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'growlithehisui',
     {
       abilities: { first: 'intimidate', second: 'flashfire', hidden: 'rockhead' },
-      baseSpecies: 'Growlithe',
+      baseSpecies: 'growlithe',
       baseStats: { hp: 60, atk: 75, def: 45, spa: 65, spd: 50, spe: 55 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Brown',
@@ -2742,7 +2742,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'arcaninehisui',
     {
       abilities: { first: 'intimidate', second: 'flashfire', hidden: 'rockhead' },
-      baseSpecies: 'Arcanine',
+      baseSpecies: 'arcanine',
       baseStats: { hp: 95, atk: 115, def: 80, spa: 95, spd: 80, spe: 90 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Brown',
@@ -2912,7 +2912,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'alakazammega',
     {
       abilities: { first: 'trace' },
-      baseSpecies: 'Alakazam',
+      baseSpecies: 'alakazam',
       baseStats: { hp: 55, atk: 50, def: 65, spa: 175, spd: 105, spe: 150 },
       catchRate: { base: 50, percentageWithOrdinaryPokeballAtFullHealth: '12.9%' },
       color: 'Brown',
@@ -3007,7 +3007,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'machampgmax',
     {
       abilities: { first: 'guts', second: 'noguard', hidden: 'steadfast' },
-      baseSpecies: 'Machamp',
+      baseSpecies: 'machamp',
       baseStats: { hp: 90, atk: 130, def: 80, spa: 65, spd: 85, spe: 55 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
@@ -3169,7 +3169,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'geodudealola',
     {
       abilities: { first: 'magnetpull', second: 'sturdy', hidden: 'galvanize' },
-      baseSpecies: 'Geodude',
+      baseSpecies: 'geodude',
       baseStats: { hp: 40, atk: 80, def: 100, spa: 30, spd: 30, spe: 20 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Gray',
@@ -3220,7 +3220,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'graveleralola',
     {
       abilities: { first: 'magnetpull', second: 'sturdy', hidden: 'galvanize' },
-      baseSpecies: 'Graveler',
+      baseSpecies: 'graveler',
       baseStats: { hp: 55, atk: 95, def: 115, spa: 45, spd: 45, spe: 35 },
       catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Gray',
@@ -3272,7 +3272,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'golemalola',
     {
       abilities: { first: 'magnetpull', second: 'sturdy', hidden: 'galvanize' },
-      baseSpecies: 'Golem',
+      baseSpecies: 'golem',
       baseStats: { hp: 80, atk: 120, def: 130, spa: 55, spd: 65, spe: 45 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Gray',
@@ -3322,7 +3322,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ponytagalar',
     {
       abilities: { first: 'runaway', second: 'pastelveil', hidden: 'anticipation' },
-      baseSpecies: 'Ponyta',
+      baseSpecies: 'ponyta',
       baseStats: { hp: 50, atk: 85, def: 55, spa: 65, spd: 65, spe: 90 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'White',
@@ -3371,7 +3371,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'rapidashgalar',
     {
       abilities: { first: 'runaway', second: 'pastelveil', hidden: 'anticipation' },
-      baseSpecies: 'Rapidash',
+      baseSpecies: 'rapidash',
       baseStats: { hp: 65, atk: 100, def: 70, spa: 80, spd: 80, spe: 105 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'White',
@@ -3419,7 +3419,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'slowpokegalar',
     {
       abilities: { first: 'gluttony', second: 'owntempo', hidden: 'regenerator' },
-      baseSpecies: 'Slowpoke',
+      baseSpecies: 'slowpoke',
       baseStats: { hp: 90, atk: 65, def: 65, spa: 40, spd: 40, spe: 15 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Pink',
@@ -3467,7 +3467,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'slowbrogalar',
     {
       abilities: { first: 'quickdraw', second: 'owntempo', hidden: 'regenerator' },
-      baseSpecies: 'Slowbro',
+      baseSpecies: 'slowbro',
       baseStats: { hp: 95, atk: 100, def: 95, spa: 100, spd: 70, spe: 30 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Pink',
@@ -3493,7 +3493,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'slowbromega',
     {
       abilities: { first: 'shellarmor' },
-      baseSpecies: 'Slowbro',
+      baseSpecies: 'slowbro',
       baseStats: { hp: 95, atk: 75, def: 180, spa: 130, spd: 80, spe: 30 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Pink',
@@ -3587,7 +3587,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'farfetchdgalar',
     {
       abilities: { first: 'steadfast', second: 'steadfast', hidden: 'scrappy' },
-      baseSpecies: "Farfetch'd",
+      baseSpecies: 'farfetchd',
       baseStats: { hp: 52, atk: 95, def: 55, spa: 58, spd: 62, spe: 55 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
@@ -3725,7 +3725,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'grimeralola',
     {
       abilities: { first: 'poisontouch', second: 'gluttony', hidden: 'powerofalchemy' },
-      baseSpecies: 'Grimer',
+      baseSpecies: 'grimer',
       baseStats: { hp: 80, atk: 80, def: 50, spa: 40, spd: 50, spe: 25 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Green',
@@ -3775,7 +3775,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'mukalola',
     {
       abilities: { first: 'poisontouch', second: 'gluttony', hidden: 'powerofalchemy' },
-      baseSpecies: 'Muk',
+      baseSpecies: 'muk',
       baseStats: { hp: 105, atk: 105, def: 75, spa: 65, spd: 100, spe: 50 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Green',
@@ -3917,7 +3917,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'gengarmega',
     {
       abilities: { first: 'shadowtag' },
-      baseSpecies: 'Gengar',
+      baseSpecies: 'gengar',
       baseStats: { hp: 60, atk: 65, def: 80, spa: 170, spd: 95, spe: 130 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
@@ -3942,7 +3942,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'gengargmax',
     {
       abilities: { first: 'cursedbody' },
-      baseSpecies: 'Gengar',
+      baseSpecies: 'gengar',
       baseStats: { hp: 60, atk: 65, def: 60, spa: 130, spd: 75, spe: 110 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
@@ -4080,7 +4080,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'kinglergmax',
     {
       abilities: { first: 'hypercutter', second: 'shellarmor', hidden: 'sheerforce' },
-      baseSpecies: 'Kingler',
+      baseSpecies: 'kingler',
       baseStats: { hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Red',
@@ -4128,7 +4128,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'voltorbhisui',
     {
       abilities: { first: 'soundproof', second: 'static', hidden: 'aftermath' },
-      baseSpecies: 'Voltorb',
+      baseSpecies: 'voltorb',
       baseStats: { hp: 40, atk: 30, def: 50, spa: 55, spd: 55, spe: 100 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Red',
@@ -4182,7 +4182,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'electrodehisui',
     {
       abilities: { first: 'soundproof', second: 'static', hidden: 'aftermath' },
-      baseSpecies: 'Electrode',
+      baseSpecies: 'electrode',
       baseStats: { hp: 60, atk: 50, def: 70, spa: 80, spd: 80, spe: 150 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Red',
@@ -4258,7 +4258,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'exeggutoralola',
     {
       abilities: { first: 'frisk', hidden: 'harvest' },
-      baseSpecies: 'Exeggutor',
+      baseSpecies: 'exeggutor',
       baseStats: { hp: 95, atk: 105, def: 85, spa: 125, spd: 75, spe: 45 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
@@ -4331,7 +4331,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'marowakalola',
     {
       abilities: { first: 'cursedbody', second: 'lightningrod', hidden: 'rockhead' },
-      baseSpecies: 'Marowak',
+      baseSpecies: 'marowak',
       baseStats: { hp: 60, atk: 80, def: 110, spa: 50, spd: 80, spe: 45 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Purple',
@@ -4358,7 +4358,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'marowakalolatotem',
     {
       abilities: { first: 'rockhead' },
-      baseSpecies: 'Marowak',
+      baseSpecies: 'marowak',
       baseStats: { hp: 60, atk: 80, def: 110, spa: 50, spd: 80, spe: 45 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Purple',
@@ -4496,7 +4496,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'weezinggalar',
     {
       abilities: { first: 'levitate', second: 'neutralizinggas', hidden: 'mistysurge' },
-      baseSpecies: 'Weezing',
+      baseSpecies: 'weezing',
       baseStats: { hp: 65, atk: 90, def: 120, spa: 85, spd: 70, spe: 60 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
@@ -4635,7 +4635,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'kangaskhanmega',
     {
       abilities: { first: 'parentalbond' },
-      baseSpecies: 'Kangaskhan',
+      baseSpecies: 'kangaskhan',
       baseStats: { hp: 105, atk: 125, def: 100, spa: 60, spd: 100, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
@@ -4819,7 +4819,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'mrmimegalar',
     {
       abilities: { first: 'vitalspirit', second: 'screencleaner', hidden: 'icebody' },
-      baseSpecies: 'Mr. Mime',
+      baseSpecies: 'mrmime',
       baseStats: { hp: 50, atk: 65, def: 65, spa: 90, spd: 90, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'White',
@@ -4959,7 +4959,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pinsirmega',
     {
       abilities: { first: 'aerilate' },
-      baseSpecies: 'Pinsir',
+      baseSpecies: 'pinsir',
       baseStats: { hp: 65, atk: 155, def: 120, spa: 65, spd: 90, spe: 105 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
@@ -5005,7 +5005,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'taurospaldeacombat',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
-      baseSpecies: 'Tauros',
+      baseSpecies: 'tauros',
       baseStats: { hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Black',
@@ -5034,7 +5034,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'taurospaldeablaze',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
-      baseSpecies: 'Tauros',
+      baseSpecies: 'tauros',
       baseStats: { hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Black',
@@ -5063,7 +5063,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'taurospaldeaaqua',
     {
       abilities: { first: 'intimidate', second: 'angerpoint', hidden: 'cudchew' },
-      baseSpecies: 'Tauros',
+      baseSpecies: 'tauros',
       baseStats: { hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Black',
@@ -5138,7 +5138,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'gyaradosmega',
     {
       abilities: { first: 'moldbreaker' },
-      baseSpecies: 'Gyarados',
+      baseSpecies: 'gyarados',
       baseStats: { hp: 95, atk: 155, def: 109, spa: 70, spd: 130, spe: 81 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -5184,7 +5184,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'laprasgmax',
     {
       abilities: { first: 'waterabsorb', second: 'shellarmor', hidden: 'hydration' },
-      baseSpecies: 'Lapras',
+      baseSpecies: 'lapras',
       baseStats: { hp: 130, atk: 85, def: 80, spa: 85, spd: 95, spe: 60 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -5253,7 +5253,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'eeveestarter',
     {
       abilities: { first: 'runaway', second: 'adaptability', hidden: 'anticipation' },
-      baseSpecies: 'Eevee',
+      baseSpecies: 'eevee',
       baseStats: { hp: 65, atk: 75, def: 70, spa: 65, spd: 85, spe: 75 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
@@ -5277,7 +5277,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'eeveegmax',
     {
       abilities: { first: 'runaway', second: 'adaptability', hidden: 'anticipation' },
-      baseSpecies: 'Eevee',
+      baseSpecies: 'eevee',
       baseStats: { hp: 55, atk: 55, def: 50, spa: 45, spd: 65, spe: 55 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Brown',
@@ -5504,7 +5504,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'aerodactylmega',
     {
       abilities: { first: 'toughclaws' },
-      baseSpecies: 'Aerodactyl',
+      baseSpecies: 'aerodactyl',
       baseStats: { hp: 80, atk: 135, def: 85, spa: 70, spd: 95, spe: 150 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Purple',
@@ -5553,7 +5553,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'snorlaxgmax',
     {
       abilities: { first: 'immunity', second: 'thickfat', hidden: 'gluttony' },
-      baseSpecies: 'Snorlax',
+      baseSpecies: 'snorlax',
       baseStats: { hp: 160, atk: 110, def: 65, spa: 65, spd: 110, spe: 30 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Black',
@@ -5601,7 +5601,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'articunogalar',
     {
       abilities: { first: 'competitive' },
-      baseSpecies: 'Articuno',
+      baseSpecies: 'articuno',
       baseStats: { hp: 90, atk: 85, def: 85, spa: 125, spd: 100, spe: 95 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Purple',
@@ -5649,7 +5649,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'zapdosgalar',
     {
       abilities: { first: 'defiant' },
-      baseSpecies: 'Zapdos',
+      baseSpecies: 'zapdos',
       baseStats: { hp: 90, atk: 125, def: 90, spa: 85, spd: 90, spe: 100 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Yellow',
@@ -5697,7 +5697,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'moltresgalar',
     {
       abilities: { first: 'berserk' },
-      baseSpecies: 'Moltres',
+      baseSpecies: 'moltres',
       baseStats: { hp: 90, atk: 85, def: 90, spa: 100, spd: 125, spe: 90 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Red',
@@ -5814,7 +5814,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'mewtwomegax',
     {
       abilities: { first: 'steadfast' },
-      baseSpecies: 'Mewtwo',
+      baseSpecies: 'mewtwo',
       baseStats: { hp: 106, atk: 190, def: 100, spa: 154, spd: 100, spe: 130 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Purple',
@@ -5840,7 +5840,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'mewtwomegay',
     {
       abilities: { first: 'insomnia' },
-      baseSpecies: 'Mewtwo',
+      baseSpecies: 'mewtwo',
       baseStats: { hp: 106, atk: 150, def: 70, spa: 194, spd: 120, spe: 140 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Purple',

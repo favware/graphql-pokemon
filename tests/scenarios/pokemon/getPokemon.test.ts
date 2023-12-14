@@ -294,7 +294,7 @@ describe('getPokemon', () => {
         species: 'typhlosion-hisui',
         sprite: 'https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png',
         types: [{ name: 'Fire' }, { name: 'Ghost' }],
-        baseSpecies: 'Typhlosion',
+        baseSpecies: 'typhlosion',
         baseStats: {
           hp: 73,
           attack: 84,

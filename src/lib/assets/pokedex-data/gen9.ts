@@ -2500,7 +2500,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'poltchageistartisan',
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
-      baseSpecies: 'Poltchageist',
+      baseSpecies: 'poltchageist',
       baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
       catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
       color: 'Green',
@@ -2549,7 +2549,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'sinistchamasterpiece',
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
-      baseSpecies: 'Sinistcha',
+      baseSpecies: 'sinistcha',
       baseStats: { hp: 71, atk: 60, def: 106, spa: 121, spd: 80, spe: 70 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Green',
@@ -2665,7 +2665,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerponcornerstone',
     {
       abilities: { first: 'sturdy' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Gray',
@@ -2697,7 +2697,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerponcornerstonetera',
     {
       abilities: { first: 'embodyaspectcornerstone' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Gray',
@@ -2729,7 +2729,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerponhearthflame',
     {
       abilities: { first: 'moldbreaker' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Red',
@@ -2761,7 +2761,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerponhearthflametera',
     {
       abilities: { first: 'embodyaspecthearthflame' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Red',
@@ -2793,7 +2793,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerponwellspring',
     {
       abilities: { first: 'waterabsorb' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Green',
@@ -2825,7 +2825,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerponwellspringtera',
     {
       abilities: { first: 'embodyaspectwellspring' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Green',
@@ -2857,7 +2857,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ogerpontealtera',
     {
       abilities: { first: 'embodyaspectteal' },
-      baseSpecies: 'Ogerpon',
+      baseSpecies: 'ogerpon',
       baseStats: { hp: 80, atk: 120, def: 84, spa: 60, spd: 96, spe: 110 },
       catchRate: { base: 5, percentageWithOrdinaryPokeballAtFullHealth: '2.3%' },
       color: 'Green',

@@ -1132,6 +1132,20 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'bloodmoon',
+    {
+      accuracy: 100,
+      basePower: '140',
+      category: 'Special',
+      name: 'Blood Moon',
+      pp: 5,
+      priority: 0,
+      shortDesc: 'Cannot be used twice in a row.',
+      target: 'Normal',
+      type: 'Normal'
+    }
+  ],
+  [
     'bloomdoom',
     {
       accuracy: 100,
@@ -7406,6 +7420,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'ivycudgel',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Physical',
+      desc: "Has a higher chance for a critical hit. If the user is an Ogerpon holding a mask, this move's type changes to match. Water type for Wellspring Mask, Fire type for Hearthflame Mask, and Rock type for Cornerstone Mask.",
+      name: 'Ivy Cudgel',
+      pp: 10,
+      priority: 0,
+      shortDesc: "High critical hit ratio. Type depends on user's form.",
+      target: 'Normal',
+      type: 'Grass'
+    }
+  ],
+  [
     'jawlock',
     {
       accuracy: 100,
@@ -8303,6 +8332,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: 'Protects allies from damaging attacks. Turn 1 only.',
       target: "Ally's Side",
       type: 'Fighting'
+    }
+  ],
+  [
+    'matchagotcha',
+    {
+      accuracy: 90,
+      basePower: '80',
+      category: 'Special',
+      desc: 'Has a 20% chance to burn the target. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. The target thaws out if it is frozen.',
+      name: 'Matcha Gotcha',
+      pp: 15,
+      priority: 0,
+      shortDesc: '20% burn. Recovers 50% dmg dealt. Thaws foe(s).',
+      target: 'Adjacent Foes',
+      type: 'Grass'
     }
   ],
   [
@@ -10546,6 +10590,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'psyblade',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Physical',
+      desc: "If the current terrain is Electric Terrain, this move's power is multiplied by 1.5.",
+      name: 'Psyblade',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'During Electric Terrain: 1.5x power.',
+      target: 'Normal',
+      type: 'Psychic'
+    }
+  ],
+  [
     'psychic',
     {
       accuracy: 100,
@@ -10658,21 +10717,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       pp: 10,
       priority: 0,
       shortDesc: "Transfers the user's status ailment to the target.",
-      target: 'Normal',
-      type: 'Psychic'
-    }
-  ],
-  [
-    'psyblade',
-    {
-      accuracy: 100,
-      basePower: '80',
-      category: 'Physical',
-      desc: "If the current terrain is Electric Terrain, this move's power is multiplied by 1.5.",
-      name: 'Psyblade',
-      pp: 15,
-      priority: 0,
-      shortDesc: 'During Electric Terrain: 1.5x power.',
       target: 'Normal',
       type: 'Psychic'
     }
@@ -14062,6 +14106,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'syrupbomb',
+    {
+      accuracy: 85,
+      basePower: '60',
+      category: 'Special',
+      desc: "If this move is successful, it causes the target's Speed to be lowered by 1 stage at the end of each turn for 3 turns.",
+      name: 'Syrup Bomb',
+      pp: 10,
+      priority: 0,
+      shortDesc: "Target's Speed is lowered by 1 stage for 3 turns.",
+      target: 'Normal',
+      type: 'Grass'
+    }
+  ],
+  [
     'tachyoncutter',
     {
       accuracy: 100,
@@ -14530,10 +14589,10 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '70',
       category: 'Special',
-      shortDesc: 'This move enables the user to attack first with a jolt of electricity. This move fails if the target is not readying an attack.',
       name: 'Thunderclap',
       pp: 5,
       priority: 1,
+      shortDesc: 'This move enables the user to attack first with a jolt of electricity. This move fails if the target is not readying an attack.',
       target: 'Normal',
       type: 'Electric'
     }
@@ -15012,6 +15071,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: '20% chance to make the foe(s) flinch.',
       target: 'Adjacent Foes',
       type: 'Dragon'
+    }
+  ],
+  [
+    'upperhand',
+    {
+      accuracy: 100,
+      basePower: '65',
+      category: 'Physical',
+      name: 'Upper Hand',
+      pp: 15,
+      priority: 0,
+      shortDesc:
+        "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move.",
+      target: 'Normal',
+      type: 'Fighting'
     }
   ],
   [
@@ -15785,80 +15859,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: "Goes first. Raises user's evasion by 1.",
       target: 'Normal',
       type: 'Electric'
-    }
-  ],
-  [
-    'bloodmoon',
-    {
-      accuracy: 100,
-      basePower: '140',
-      category: 'Special',
-      name: 'Blood Moon',
-      pp: 5,
-      priority: 0,
-      shortDesc: 'Cannot be used twice in a row.',
-      target: 'Normal',
-      type: 'Normal'
-    }
-  ],
-  [
-    'ivycudgel',
-    {
-      accuracy: 100,
-      basePower: '100',
-      category: 'Physical',
-      desc: "Has a higher chance for a critical hit. If the user is an Ogerpon holding a mask, this move's type changes to match. Water type for Wellspring Mask, Fire type for Hearthflame Mask, and Rock type for Cornerstone Mask.",
-      name: 'Ivy Cudgel',
-      pp: 10,
-      priority: 0,
-      shortDesc: "High critical hit ratio. Type depends on user's form.",
-      target: 'Normal',
-      type: 'Grass'
-    }
-  ],
-  [
-    'matchagotcha',
-    {
-      accuracy: 90,
-      basePower: '80',
-      category: 'Special',
-      desc: 'Has a 20% chance to burn the target. The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. The target thaws out if it is frozen.',
-      name: 'Matcha Gotcha',
-      pp: 15,
-      priority: 0,
-      shortDesc: '20% burn. Recovers 50% dmg dealt. Thaws foe(s).',
-      target: 'Adjacent Foes',
-      type: 'Grass'
-    }
-  ],
-  [
-    'syrupbomb',
-    {
-      accuracy: 85,
-      basePower: '60',
-      category: 'Special',
-      desc: "If this move is successful, it causes the target's Speed to be lowered by 1 stage at the end of each turn for 3 turns.",
-      name: 'Syrup Bomb',
-      pp: 10,
-      priority: 0,
-      shortDesc: "Target's Speed is lowered by 1 stage for 3 turns.",
-      target: 'Normal',
-      type: 'Grass'
-    }
-  ],
-  [
-    'upperhand',
-    {
-      accuracy: 100,
-      basePower: '65',
-      category: 'Physical',
-      name: 'Upper Hand',
-      pp: 15,
-      priority: 0,
-      shortDesc:
-        "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move.",
-      target: 'Normal',
-      type: 'Fighting'
     }
   ]
 ]);

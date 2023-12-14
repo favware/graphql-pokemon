@@ -273,7 +273,7 @@ query = '''
 # Send the request
 response = requests.post(
     'http://localhost:4000',
-    json={'query': query, 'variables': {'offset': 0, 'take': 1413}},
+    json={'query': query, 'variables': {'offset': 0, 'take': 1422}},
     headers={'Content-Type': 'application/json'}
 )
 

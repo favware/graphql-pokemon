@@ -1,10 +1,10 @@
-import { pokedex } from '../../src/lib/assets/pokedex.js';
+import { pokedex as data } from '../../src/lib/assets/pokedex.js';
 import { dataToClipboard } from './data-to-clipboard.js';
 
 const keys: string[] = [];
 
-for (const [, data] of pokedex.entries()) {
-  keys.push(data.key);
+for (const [, entry] of data.entries()) {
+  keys.push(entry.key);
 }
 
 dataToClipboard(keys);

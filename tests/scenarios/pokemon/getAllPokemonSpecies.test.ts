@@ -2531,6 +2531,30 @@ describe('getAllPokemon', () => {
       {
         key: 'ogerpontealtera',
         species: 'ogerpon-tealtera'
+      },
+      { key: 'archaludon', species: 'archaludon' },
+      { key: 'hydrapple', species: 'hydrapple' },
+      {
+        key: 'gougingfire',
+        species: 'Gouging Fire'
+      },
+      {
+        key: 'ragingbolt',
+        species: 'Raging Bolt'
+      },
+      {
+        key: 'ironboulder',
+        species: 'Iron Boulder'
+      },
+      { key: 'ironcrown', species: 'Iron Crown' },
+      { key: 'terapagos', species: 'terapagos' },
+      {
+        key: 'terapagosterastal',
+        species: 'terapagos-terastal'
+      },
+      {
+        key: 'terapagosstellar',
+        species: 'terapagos-stellar'
       }
     ]);
   });

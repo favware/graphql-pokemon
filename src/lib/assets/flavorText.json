@@ -133,6 +133,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "For some time after its birth, it grows by taking nourishment from the seed on its back."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "For some time after its birth, it uses the nutrients that are packed into the seed on its back in order to grow."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It carries a seed on its back right from birth. As its body grows larger, the seed does too."
     }
   ],
   "2": [
@@ -263,6 +271,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The more sunlight Ivysaur bathes in, the more strength wells up within it, allowing the bud on its back to grow larger."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The bulb on its back grows as it absorbs nutrients. The bulb gives off a pleasant aroma when it blooms."
     }
   ],
   "3": [
@@ -393,6 +409,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "After a rainy day, the flower on its back smells stronger. The scent attracts other Pokémon."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "While it basks in the sun, it can convert the light into energy. As a result, it is more powerful in the summertime."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "By spreading the broad petals of its flower and catching the sun's rays, it fills its body with power."
     }
   ],
   "4": [
@@ -523,6 +547,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The fire on the tip of its tail is a measure of its life. If the Pokémon is healthy, its tail burns intensely."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The flame on its tail shows the strength of its life-force. If Charmander is weak, the flame also burns weakly."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "If Charmander is healthy, the flame on the tip of its tail will burn vigorously and won't go out even if it gets a bit wet."
     }
   ],
   "5": [
@@ -653,6 +685,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "In the rocky mountains where Charmeleon live, their fiery tails shine at night like stars."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When it swings its burning tail, the temperature around it rises higher and higher, tormenting its opponents."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It is very hotheaded by nature, so it constantly seeks opponents to battle against. Its aggression will not be quelled if it doesn't win."
     }
   ],
   "6": [
@@ -783,6 +823,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It is said that Charizard's fire burns hotter if it has experienced harsh battles."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "If Charizard becomes truly angered, the flame at the tip of its tail burns in a light blue shade."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It uses its wings to fly sky-high. The more experience it gains in battle, the greater the temperature at which its flames burn."
     }
   ],
   "7": [
@@ -913,6 +961,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It hides in its shell to protect itself, then strikes back with spouts of water at every opportunity."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "After birth, its back swells and hardens into a shell. It sprays a potent foam from its mouth."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its shell is soft immediately after it is born. In no time at all, the shell becomes so resilient that a prodding finger will bounce right off it."
     }
   ],
   "8": [
@@ -1043,6 +1099,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It is said to live 10,000 years. Its furry tail is popular as a symbol of longevity."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Wartortle's long, furry tail is a symbol of longevity, so this Pokémon is quite popular among older people."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It often hides in water to stalk unwary prey. While swimming quickly, it moves its ears to maintain balance."
     }
   ],
   "9": [
@@ -1173,6 +1237,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The jets of water it spouts from the rocket cannons on its shell can punch through thick steel."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It deliberately increases its body weight so it can withstand the recoil of the water jets it fires."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It has jet nozzles on its shell. This impressive Pokémon uses these jets to charge toward foes with all the force of a rocket."
     }
   ],
   "10": [
@@ -5945,6 +6017,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It often plants its root feet in the ground during the day and sows seeds as it walks about at night."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its scientific name is Oddium wanderus. It is said to cover distances as far as 1,000 feet when night falls, walking on its two roots."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When it is woken by moonlight, it wanders about. But during the day, it stays still underground."
     }
   ],
   "44": [
@@ -6075,6 +6155,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The nectar it drools from its mouth smells so atrocious that it can make noses curl from more than a mile away."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It secretes a sticky, drool-like nectar. Though sweet, it smells too repulsive to get very close."
     }
   ],
   "45": [
@@ -6205,6 +6293,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its petals are the largest in the world. As it walks, it scatters extremely allergenic pollen."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The bud bursts into bloom with a bang. It then starts scattering allergenic, poisonous pollen."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It fiendishly scatters allergenic pollen from its petals, which are the largest in the world."
     }
   ],
   "46": [
@@ -10191,6 +10287,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "They fire beams from the glassy, magenta orbs that resemble eyes atop their heads, and they drift in shallow seas. During low tide, they can sometimes be found on beaches, desiccated."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When the tide goes out, dehydrated Tentacool can be found left behind on the shore."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its eyes are as transparent as crystals. From them, it shoots mysterious beams of light."
     }
   ],
   "73": [
@@ -10341,6 +10445,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "It has 80 tentacles, each with a venomous tip. These tentacles are also extendible, lengthening when Tentacruel attempts to catch prey. Use caution."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "On the rare occasions that large outbreaks of Tentacruel occur, all fish Pokémon disappear from the surrounding sea."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In battle, it extends all 80 of its tentacles to entrap its opponent inside a poisonous net."
     }
   ],
   "74": [
@@ -11935,6 +12047,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The brains in its two heads appear to communicate emotions to each other with a telepathic power."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its twin heads have exactly the same genes and battle in perfect sync with each other."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its heads never sleep at the same time—each one takes a turn keeping watch while the other sleeps, switching every hour or so."
     }
   ],
   "85": [
@@ -12057,6 +12177,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "When Doduo evolves into this odd breed, one of its heads splits into two. This Pokémon runs at nearly 40 mph."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It now has three hearts and three sets of lungs. Though it can't run as fast as Doduo, Dodrio can keep running for longer stretches of time."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The strongest head with the thickest neck becomes the leader and gains primary control of the body."
     }
   ],
   "86": [
@@ -12187,6 +12315,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "This Pokémon lives on icebergs. It uses the sharp point on its head to break up ice as it swims in the sea."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The protrusion on its head is very hard. It is used for bashing through thick ice."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The colder it gets, the better it feels. It joyfully swims around oceans so cold that they are filled with floating ice."
     }
   ],
   "87": [
@@ -12317,6 +12453,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "In snow, the pure white coat covering its body obscures it from predators."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It sleeps under shallow ocean waters during the day, then looks for food at night when it's colder."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It stores thermal energy in its body to fend off the cold. It swims at eight knots even in frigid waters."
     }
   ],
   "88": [
@@ -14491,6 +14635,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its six eggs converse using telepathy. They can quickly gather if they become separated."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "If you touch one of Exeggcute's heads, mistaking it for an egg, the other heads will quickly gather and attack you in a swarm."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Using telepathy only fellow Exeggcute can pick up on, they always form a cluster of six."
     }
   ],
   "103": [
@@ -14637,6 +14789,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It is called the Walking Jungle. If a head grows too big, it falls off and becomes an Exeggcute."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It is called the Walking Jungle. Each of the nuts has a face and a will of its own."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It is said that on rare occasions, one of its heads will drop off and continue on as an Exeggcute."
     }
   ],
   "104": [
@@ -15059,6 +15219,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its legs can stretch to double their length. First-time foes are startled by Hitmonlee's extensible reach."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "At the exact moment it lands a kick on its target, Hitmonlee hardens the muscles on the sole of its foot, maximizing the power of the kick."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It has complete control over the ligaments in its legs, expanding and contracting them to double the reach of its kicks."
     }
   ],
   "107": [
@@ -15189,6 +15357,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "When Hitmonchan twists its arm while throwing a punch, the blow will pulverize even concrete. The Pokémon rests after three minutes of fighting."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It corners its foes with combo punches from both sides, then finishes them off with a single straight punch launched at over 300 mph."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its fists are masses of muscle. It takes a break every three minutes to steady its breath and mood."
     }
   ],
   "108": [
@@ -15749,6 +15925,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Ludicrously strong—when it butts heads with a mountain, it is the mountain that shatters. But its short legs struggle with turns, and it is incapable of stopping unless it collides with something."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Rhyhorn claims an area with over a six mile radius as its territory. It apparently forgets where this territory is when running, however."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Once it starts running, it won't stop—even if it crashes through boulders. This disposition is what's caused its habitat to expand."
     }
   ],
   "112": [
@@ -15891,6 +16075,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Rapidly rotates its horn to bore through bedrock. It swaggers around volcanic regions, protected from the lava's heat by its tough, armorlike hide."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The horn of a Rhydon is powerful enough to crush raw diamonds. These Pokémon polish their horns by bashing them together."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It evolved to walk using only its hind legs, which has allowed it to expand its habitat even onto steep mountains."
     }
   ],
   "113": [
@@ -16459,6 +16651,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It makes its nest in the shade of corals. If it senses danger, it spits black ink and flees."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "If attacked—even by a large enemy—Horsea effortlessly swims to safety by utilizing its well-developed dorsal fin."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It maintains balance using its tail, which is wound up like a coil. It may spray ink from its mouth."
     }
   ],
   "117": [
@@ -16589,6 +16789,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its spines provide protection. Its fins and bones are prized as traditional medicine ingredients."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The male raises the young. If it is approached while caring for young, it will use its toxic spines to fend off the intruder."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its fin tips leak poison. Its fins and bones are highly valued as ingredients in herbal medicine."
     }
   ],
   "118": [
@@ -17761,6 +17969,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Feeds on electrical energy. During sudden showers beneath looming thunderclouds, one can observe Electabuzz scaling tall trees, where the Pokémon will then wait for lightning to strike."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its body constantly discharges electricity. Getting close to it will make your hair stand on end."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Research is progressing on storing lightning in Electabuzz so this energy can be used at any time."
     }
   ],
   "126": [
@@ -17911,6 +18127,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Legend has it that this Pokémon was born from the crater of a volcano. When wounded, it bathes in lava to heal its body, much as one would soak in a hot spring."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Found near the mouth of a volcano. This fire-breather's body temperature is nearly 2,200 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Wavering flames similar to those of the sun appear on the surface of this Pokémon's body."
     }
   ],
   "127": [
@@ -18673,6 +18897,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It loves crossing the sea with people and Pokémon on its back. It understands human speech."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It ferries people across the sea on its back. It may sing an enchanting cry if it is in a good mood."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Able to understand human speech and very intelligent, it loves to swim in the sea with people on its back."
     }
   ],
   "132": [
@@ -19609,6 +19841,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "It has no discernible heartbeat and does not seem to draw breath, and yet it appears to function without issue. I cannot even begin to explain this utterly bizarre anomaly."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It is an artificial Pokémon. Since it doesn't breathe, people are excited by its potential to be useful in any environment."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Porygon is an artificial Pokémon created using advanced scientific means. It can move freely through cyberspace."
     }
   ],
   "138": [
@@ -21699,6 +21939,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It uses the leaf on its head to determine the air's temperature and humidity. It loves to sunbathe."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It loves to bask in the sunlight. It uses the leaf on its head to seek out warm places."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its pleasantly aromatic leaf has the ability to check the humidity and temperature of the area around it."
     }
   ],
   "153": [
@@ -21797,6 +22045,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The buds that ring its neck give off a spicy aroma that perks people up."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The spicy scent that wafts from around Bayleef's neck somehow makes those who smell it want to fight."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The scent that wafts from the leaves on its neck causes anyone who smells it to become energetic."
     }
   ],
   "154": [
@@ -21895,6 +22151,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its breath has the fantastic ability to revive dead plants and flowers."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Anyone who stands beside it becomes refreshed, just as if they were soaking in the soothing atmosphere of a forest."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Meganium's breath holds within it the power to revive grasses and plants that have withered."
     }
   ],
   "155": [
@@ -22299,6 +22563,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It has a habit of biting everything with its well-developed jaws. Even its Trainer needs to be careful."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its powerful, well-developed jaws are capable of crushing anything. Even its Trainer must be careful."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This rough critter chomps at any moving object it sees. Turning your back on it is not recommended."
     }
   ],
   "159": [
@@ -22397,6 +22669,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Once it bites down, it won't let go until it loses its fangs. New fangs quickly grow into place."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The tips of its fangs are slanted backward. Once those fangs clamp down, the prey has no hope of escape."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It opens its huge jaws wide to attack. If it loses fangs while biting, they'll just keep on growing back, one after another."
     }
   ],
   "160": [
@@ -22495,6 +22775,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It usually moves slowly, but it goes at blinding speed when it attacks and bites prey."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Although it has a massive body, its powerful hind legs enable it to move quickly, even on land."
     }
   ],
   "161": [
@@ -23679,6 +23967,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It discharges positive and negative electricity from the tips of its antennae to shock its foes."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It lives in ocean depths beyond the reach of sunlight. It flashes lights on its antennae to communicate with others of its kind."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It shoots positively and negatively charged electricity from the tips of its two antennae and stuns its opponents."
     }
   ],
   "171": [
@@ -23809,6 +24105,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Lanturn's light can shine up from great depths. It is nicknamed the Deep-Sea Star."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Portions of its dorsal fin mutated, becoming the parts that glow brightly to lure prey."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It blinds prey with an intense burst of light. With the prey incapacitated, the Pokémon swallows it in a single gulp."
     }
   ],
   "172": [
@@ -25103,6 +25407,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "When the heavy rainfall season ends, it is drawn out by warm sunlight to dance in the open."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Due to the effects of the Sun Stone, it is now active during the daytime. It likes to dance in pools of sunlight."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "After it grows up, it leaves the forest it was born in to form groups with other Bellossom. It breaks into dance when it gets excited."
     }
   ],
   "183": [
@@ -28233,6 +28545,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Small Pokémon flee from its scary face. It is, however, considered by many people to be cute."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "In truth, it is a cowardly Pokémon. It growls eagerly in order to hide its fear from its opponent."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its growls make its opponents uneasy. This laid-back Pokémon tends to sleep half the day."
     }
   ],
   "210": [
@@ -28347,6 +28667,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It is timid in spite of its looks. If it becomes enraged, however, it will strike with its huge fangs."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It is actually timid and easily spooked. If attacked, it desperately flails its limbs about in an attempt to repel its opponent."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It can make most any Pokémon run away by opening its big mouth to reveal its thick fangs."
     }
   ],
   "211": [
@@ -30381,6 +30709,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Skarmory is clad entirely in ironhard armor. It flies at speeds over 180 mph."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its sturdy, heavy-looking iron body is actually thin and light, so it can fly at speeds over 180 mph."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Since the feathers that it sheds are thin and sharp, people apparently once used them as swords."
     }
   ],
   "228": [
@@ -30715,6 +31051,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It lives in caves on the seafloor and creates giant whirlpools every time it moves."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It sleeps deep on the ocean floor to build its energy. It is said to cause tornadoes as it wakes."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon is said to sleep at the bottom of the sea—deeper than any other life-form can descend—building its energy."
     }
   ],
   "231": [
@@ -31053,6 +31397,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "A bizarre item caused this Pokémon to evolve. While it now exhibits many new gestures and expressions, its biology remains inscrutable."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This artificial Pokémon evolved thanks to cutting- edge science. It sometimes displays behavior that is not in its programming."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Porygon was upgraded to become capable of planetary development. However, this upgraded version cannot even fly yet."
     }
   ],
   "234": [
@@ -31277,6 +31629,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It marks its territory by using its tail like a paintbrush. There are more than 5,000 different marks."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Once a Smeargle reaches adulthood, it will have other members of its species leave paw prints on its back."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The color of the mysterious fluid secreted from the tip of the tail is predetermined for each Smeargle."
     }
   ],
   "236": [
@@ -31383,6 +31743,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It is famous for its eagerness to fight and always nurses injuries from challenging larger foes."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This earnest Pokémon battles all sorts of opponents, searching for the fighting style that suits it best."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its intense desire to become stronger and stronger drives it to recklessly train its body and challenge any opponent it can find to battle."
     }
   ],
   "237": [
@@ -31489,6 +31857,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It fights while spinning like a top. The centrifugal force boosts its destructive power by a factor of 10."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon is adept at dance-like kicks. The horn atop its head is made from the same substance that generally forms fur and claws."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It spins on its horn while dealing out elegant kicks. Its horn grows continuously through its lifetime."
     }
   ],
   "238": [
@@ -31729,6 +32105,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "They generate electricity by spinning their arms. During a thunderstorm, if one hears the lively voices of children out in the wilderness, what one is actually hearing are the voices of Elekid."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It loves violent thunder. The space between its horns flickers bluish white when it is charging energy."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It rotates its arms to generate electricity, but it tires easily, so it only charges up a little bit."
     }
   ],
   "240": [
@@ -31855,6 +32239,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This Pokémon lives in volcanic areas. With each breath, sparks spurt from its mouth and nose. When Magby is in good health, its flames gain a yellow tint."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Each and every time it inhales and exhales, sparks leak from its mouth and nostrils."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Magma-like blood circulates throughout this Pokémon's body, raising its body temperature as high as 1,100 degrees Fahrenheit."
     }
   ],
   "241": [
@@ -33155,6 +33547,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The soles of its feet are covered by countless tiny hooks, enabling it to walk on walls and ceilings."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The small hooks on the soles of its feet latch on to walls and ceilings, so it will never fall even while hanging upside down."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Treecko can quickly scale even vertical surfaces. It senses humidity with its tail to predict the next day's weather."
     }
   ],
   "253": [
@@ -33237,6 +33637,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It lives in dense jungles. While closing in on its prey, it leaps from branch to branch."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its strongly developed thigh muscles give it astounding agility and jumping performance."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Grovyle leaps from branch to branch in large trees, moving with ease. It propels itself with astounding speed and force."
     }
   ],
   "254": [
@@ -33319,6 +33727,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "The leaves that grow on its arms can slice down thick trees. It is without peer in jungle combat."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It agilely flits through the jungle and uses the sharp-edged leaves on its arms to cut down its prey."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The leaves on its arms are as sharp as swords. It agilely leaps about the branches of trees to strike its enemies."
     }
   ],
   "255": [
@@ -33401,6 +33817,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "A fire burns inside it, so it feels very warm to hug. It launches fireballs of 1,800 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Torchic feels toasty warm if you hug it. It has a flame sac inside its belly, and the flames burn continuously as long as Torchic has life in it."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "In its belly, it has a sac filled with burning fire, meaning that Torchic feels as warm as a hot-water bottle if you hug it."
     }
   ],
   "256": [
@@ -33483,6 +33907,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its kicking mastery lets it loose 10 kicks per second. It emits sharp cries to intimidate foes."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It boosts its concentration by emitting harsh cries. Its kicks have outstanding destructive power."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When it enters battle, the flame inside its body burns stronger. Its kicks have outstanding destructive power."
     }
   ],
   "257": [
@@ -33565,6 +33997,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Flames spout from its wrists, enveloping its knuckles. Its punches scorch its foes."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When facing a tough foe, it looses flames from its wrists. Its powerful legs let it jump clear over buildings."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It can jump powerfully, clearing a 30-story building in a single leap. Its flaming punches scorch its opponents."
     }
   ],
   "258": [
@@ -33647,6 +34087,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Using the fin on its head, Mudkip senses the flow of water to keep track of what's going on around it. Mudkip has the strength to heft boulders."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It has the power to crush large boulders into pieces. To rest, it buries itself in mud at the bottom of a river."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When it uses its large tail fin, it picks up speed rapidly in the water. It is strong in spite of its small size."
     }
   ],
   "259": [
@@ -33729,6 +34177,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Its sturdy legs give it sure footing, even in mud. It burrows into dirt to sleep."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Living on muddy ground that provides poor footing has served to train its lower body and caused it to develop sturdy legs."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It is at its best when on muddy ground that offers poor footing. It quickly overwhelms opponents that are bogged down and unable to move."
     }
   ],
   "260": [
@@ -33811,6 +34267,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It can swim while towing a large ship. It bashes down foes with a swing of its thick arms."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its arms are hard as rock. With one swing, it can break an enormous boulder into pieces."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Swampert's arms are rock-hard. With one swing, they can batter down Swampert's foes. This Pokémon makes its nest on beautiful beaches."
     }
   ],
   "261": [
@@ -38613,6 +39077,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It cheers on friends with pom-poms made of sparks. It drains power from telephone poles."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It cheers on partners while scattering sparks from its body. It climbs telephone poles to absorb electricity."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon absorbs electricity from telephone poles. It shorts out the electricity stored inside its body to create noises."
     }
   ],
   "312": [
@@ -38695,6 +39167,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It cheers on friends. If its friends are losing, its body lets off more and more sparks."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Exposure to electricity from Minun and Plusle promotes blood circulation and relaxes muscles."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its dislike of water makes it take shelter under the eaves of houses in rain. It uses pom-poms made of sparks for cheering."
     }
   ],
   "313": [
@@ -40251,6 +40731,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It makes a conical pit in desert sand and lies in wait at the bottom for prey to come tumbling down."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon lives in arid deserts. It patiently awaits prey inside its funnel- shaped nest."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "As it digs through the sand, its giant jaws crush any rocks that obstruct its path. It builds a funnel-shaped nest."
     }
   ],
   "329": [
@@ -40357,6 +40845,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It violently shudders its wings, generating ultrasonic waves to induce headaches in people."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Rather than using its underdeveloped wings for flight, it rubs them together, emitting ultrasonic waves to attack its enemies."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It generates ultrasonic waves by vigorously vibrating its wings. After making its prey faint, it dissolves the prey with its digestive juices."
     }
   ],
   "330": [
@@ -40463,6 +40959,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It whips up sandstorms with powerful flaps of its wings. It is known as the Desert Spirit."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Known as the Desert Spirit, this Pokémon hides in the sandstorms it causes by beating its wings."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The sound of its wings flapping resembles singing. Those entranced by this sound get lured into a sandstorm and become Flygon's prey."
     }
   ],
   "331": [
@@ -43536,7 +44040,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "It can only survive in cold areas. It bounces happily around, even in environments as cold as −150 degrees Fahrenheit."
+      "flavor_text": "It can only survive in cold areas. It bounces happily around, even in environments as cold as -150 degrees Fahrenheit."
     },
     {
       "version_id": "Brilliant Diamond",
@@ -44887,6 +45391,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The magnetic force generated by its body repels the ground's natural magnetism, letting it float."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "All its cells are magnets. It communicates with others of its kind by transmitting magnetic forces from its body."
     }
   ],
   "375": [
@@ -44993,6 +45505,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It is formed by two Beldum joining together. Its two brains are linked, amplifying its psychic power."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It adores magnetic minerals, so it pursues Nosepass at speeds exceeding 60 mph."
     }
   ],
   "376": [
@@ -45099,6 +45619,14 @@
     {
       "version_id": "Shining Pearl",
       "flavor_text": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It folds its four legs when flying. Its four brains are said to be superior to a supercomputer."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It firmly pins its prey using its four claws and large body. Then Metagross uses the mouth on its stomach to chew its prey to bits."
     }
   ],
   "377": [
@@ -45266,7 +45794,7 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "With cold air that can reach temperatures as low as −328 degrees Fahrenheit, Regice instantly freezes any creature that approaches it."
+      "flavor_text": "With cold air that can reach temperatures as low as -328 degrees Fahrenheit, Regice instantly freezes any creature that approaches it."
     },
     {
       "version_id": "Shield",
@@ -46017,6 +46545,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This Pokémon becomes more energetic the more sunlight there is. The part resembling a shell is similar to silt and is slightly damp and warm to the touch."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The shell on its back is made of soil. If the shell is moist to the touch, Turtwig is very healthy."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It uses its whole body to photosynthesize when exposed to sunlight. Its shell is made from hardened soil."
     }
   ],
   "388": [
@@ -46083,6 +46619,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Appears where there is clean spring water. The fruit that grows on the shrubs on its shell is sweet, nutritious, and truly delicious."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Grotle live in the forest. Each is said to have its own secret place for getting clean springwater."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It knows where pure water wells up. It carries fellow Pokémon there on its back."
     }
   ],
   "389": [
@@ -46149,6 +46693,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This remarkable, large-bodied Pokémon would serve beautifully as borrowed scenery for a garden, and its strength is peerless. Torterra roams the wilderness in search of clean water."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Ancient people imagined that beneath the ground dwelt a gigantic Torterra."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Some Pokémon are born on a Torterra's back and spend their entire life there."
     }
   ],
   "390": [
@@ -46215,6 +46767,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Full of vigor and always in high spirits. It was once known by the name \"Lantern-Tail\" and feared as some kind of apparition."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It is very agile. Before going to sleep, it extinguishes the flame on its tail to prevent fires."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The gas made in its belly burns from its rear end. The fire burns weakly when it feels sick."
     }
   ],
   "391": [
@@ -46281,6 +46841,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "The deeper the blue on its face, the more powerful it will grow to become. It leaps about every which way and lands powerful blows against its opponents with the flame on its tail."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It skillfully controls the intensity of the fire on its tail to keep its foes at an ideal distance."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "A bigger fire on its tail and a brighter blue pattern on its face means it holds a higher rank in its troop."
     }
   ],
   "392": [
@@ -46347,6 +46915,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "A tall, hardy Pokémon with a dazzling appearance. It shrouds itself in flame and battles as if engaged in dance—truly a sight to behold."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon confounds opponents with its speed. It uses all its limbs to fight in its own unique style."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It uses unique fighting moves with fire on its hands and feet. It will take on any opponent."
     }
   ],
   "393": [
@@ -46413,6 +46989,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Prefers cold climes and appears along coasts. It's an adorable little thing—as cute as any child—but it's also prideful, unwilling to accept handouts from people."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "A poor walker, it often falls down. However, its strong pride makes it puff up its chest without a care."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It doesn't like to be taken care of. It's difficult to bond with since it won't listen to its Trainer."
     }
   ],
   "394": [
@@ -46479,6 +47063,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "It swims gracefully through the frigid sea and sings with a voice like the roaring tide. It has powerful, sturdy wings and dignity to match."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It lives a solitary life. Its wings deliver wicked blows that can snap even the thickest of trees in half with a single hit."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Because every Prinplup considers itself to be the most important, they can never form a group."
     }
   ],
   "395": [
@@ -46545,6 +47137,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Since ancient times, it has been revered by the people of Hisui, who call it the Master of the Waves. Its wings are a match for even master-crafted blades."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "If anyone were to hurt its pride, it would slash them in two with wings that can cleave through an ice floe."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It avoids unnecessary disputes, but it will mercilessly decimate anything that threatens the safety of its colony."
     }
   ],
   "396": [
@@ -47523,6 +48123,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "An incredibly rare sight. They duel each other by ramming their heads together, and the resulting sound echoes throughout the area like the pealing of a bell."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It lived in jungles around a hundred million years ago. It used its skillful headbutts to combat Aerodactyl."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Cranidos toughen up their already sturdy heads by headbutting one another."
     }
   ],
   "409": [
@@ -47605,6 +48213,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Very little is known about its biology. Can knock down massive trees by smashing its beautiful, pearl-like crown against them."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Stifled by a thick skull that can withstand any impact, this Pokémon's brain never got very big."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "If two were to smash their heads together, their foot-thick skulls would keep them from fainting."
     }
   ],
   "410": [
@@ -47687,6 +48303,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Much remains unknown about this Pokémon, as few have ever seen it. However, we know that it is calm and dislikes conflict, and it enjoys polishing its face against trees and rocks."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It is outstandingly armored. As a result, it has no particular need to battle with others and can spend its time feeding on grass and berries."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon lived in primeval jungles. It's thought that Shieldon had few enemies thanks to its sturdy face."
     }
   ],
   "411": [
@@ -47769,6 +48393,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Its face is sturdy—as strong as diamond—and this hardness offers a very stable defense. Much about this species is still unknown, such as its natural habitat."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "While it can guard against any sort of attack from the front, it is left without recourse when attacked from behind."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Bastiodon live in herds. When assaulted by enemies, they line up side by side and use their hard faces to block attacks."
     }
   ],
   "412": [
@@ -52195,6 +52827,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This Pokémon evolved through use of a curious item. Its rocklike hide is composed of a mysterious substance and can withstand a blow from a masterwork sword with nary a scratch."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon's sturdy carapace protects it from volcanic eruptions. It shoots round rocks from the holes in its hands."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "A Rhyperior's brain is smaller than a Rhydon's, but the Rhyperior is stronger because it spends more energy on battling and less on brainpower."
     }
   ],
   "465": [
@@ -52359,6 +52999,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Its evolution was induced by an unusual item, and its electrical output rises along with its heart rate. From its tails, it can unleash an electric current measuring 20,000 volts."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When it gets excited, it thumps its chest. With every thud, thunder roars and electric sparks shower all around."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon presses the tips of its tails onto an opponent and instantly sends over 20,000 volts of high-voltage electricity through them."
     }
   ],
   "467": [
@@ -52449,6 +53097,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Use of a strange item caused this Pokémon to evolve. Fireballs launched from the ends of its tubelike arms are hot enough to melt an iron pot in an instant."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When shooting 3,600 degree Fahrenheit fireballs from its arms, its body takes on a whitish hue from the intense heat."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "They dwell in volcanic craters. It's said that only a single pair of Magmortar will inhabit any given volcano."
     }
   ],
   "468": [
@@ -53039,6 +53695,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "A curious item induced this evolution. The Pokémon's offensive capabilities have greatly increased, but the strangeness of its behavior has magnified in equal measure. This worries me."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "An additional program was installed to create a more advanced Pokémon, but it was apparently flawed. Porygon-Z moves oddly as a result."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its programming was modified to enable it to operate in other dimensions. This did not work as planned."
     }
   ],
   "475": [
@@ -54473,6 +55137,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "They photosynthesize by bathing their tails in sunlight. When they are not feeling well, their tails droop."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The leaf on Snivy's tail generates energy when exposed to sunlight, making Snivy swifter and adding an edge to its moves."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It prefers to avoid groups. In its day-to-day life, it dexterously controls its vines to compensate for its short arms."
     }
   ],
   "496": [
@@ -54507,6 +55179,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "When it gets dirty, its leaves can't be used in photosynthesis, so it always keeps itself clean."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It runs low to the ground, weaving through the grass, then mercilessly pummels its target by whipping them with its vines."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Servine's one weakness is its inflated sense of pride. It takes a while for Servine to be able to cooperate with other Pokémon."
     }
   ],
   "497": [
@@ -54541,6 +55221,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It can stop its opponents' movements with just a glare. It takes in solar energy and boosts it internally."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It generates energy from sunlight, then amplifies that energy dozens of times within its long body."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "An intimidating gaze and majestic appearance have caused this Pokémon to be known as the Lord of the Forest."
     }
   ],
   "498": [
@@ -54575,6 +55263,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It loves to eat roasted berries, but sometimes it gets too excited and burns them to a crisp."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It's more nimble than it looks, and it uses its speed to confound its enemies. It rapidly launches fireballs from both nostrils."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon is a ravenous glutton. It uses its excellent sense of smell to find food, then cooks it to a crisp before eating."
     }
   ],
   "499": [
@@ -54609,6 +55305,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "When its internal fire flares up, its movements grow sharper and faster. When in trouble, it emits smoke."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When Pignite enters battle, its body temperature rapidly soars until Pignite itself is engulfed by a scorching fireball."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When defending its friends, Pignite will stand up to any opponent, no matter how strong. But it's powerless when faced with an empty stomach."
     }
   ],
   "500": [
@@ -54643,6 +55347,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It has mastered fast and powerful fighting moves. It grows a beard of fire."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The flames blazing deep inside Emboar's chest erupt vigorously from its chin, forming a beard of fire."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The direr the situation, the more it seems to enjoy itself. The flames around its neck intensify, too, increasing Emboar's power and speed."
     }
   ],
   "501": [
@@ -54681,6 +55393,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This Pokémon from the Unova region uses the shell on its belly as a weapon to cut down its foes. Thus, I've conferred upon this shell the name \"scalchop.\""
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It wields the scalchop on its stomach like a knife, blocking the moves of its enemies before slashing back at them in swift retaliation."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It's said that Oshawott learned to maintain its scalchop with riverbed stones by mimicking humans it saw using whetstones."
     }
   ],
   "502": [
@@ -54719,6 +55439,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Its exquisite double-scalchop technique is likely the result of daily training, and it can send even masters of the blade fleeing in defeat."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It's said that people modeled swordplay after the way Dewott's movements flow like water while it's wielding its two scalchops."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Dewott has a studious and stern personality. It masters the use of its scalchops through dedicated, repeated training."
     }
   ],
   "503": [
@@ -54757,6 +55485,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Hard of heart and deft of blade, this rare form of Samurott is a product of the Pokémon's evolution in the region of Hisui. Its turbulent blows crash into foes like ceaseless pounding waves."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "A master of a sword-drawing art called iaijutsu, Samurott settles its battles with a single swing of either large sword sheathed in its foreleg armor."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Samurott leads its group strictly. Those who do not follow its rules receive a merciless thrashing."
     }
   ],
   "504": [
@@ -55531,6 +56267,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Its mane shines when it discharges electricity. They use the frequency and rhythm of these flashes to communicate."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its heartbeat generates electricity. When Blitzle is surprised and its heart rate goes up, the voltage of its electricity also rises."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon prefers places with lots of lightning strikes. It catches lightning with its mane and stores the electricity within its body."
     }
   ],
   "523": [
@@ -55565,6 +56309,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "They have lightning-like movements. When Zebstrika run at full speed, the sound of thunder reverberates."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon is aggressive and has a volatile disposition. When agitated, it will illuminate its mane in yellow and fire off bolts of electricity."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Once the herd hears thunder, it chases after the storm clouds so that the Blitzle in the group can use the lightning to charge up."
     }
   ],
   "524": [
@@ -55865,6 +56617,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It's a digger, using its claws to burrow through the ground. It causes damage to vegetable crops, so many farmers have little love for it."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It can dig through the ground at a speed of 30 mph. It could give a car running aboveground a good race."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It makes its way swiftly through the soil by putting both claws together and rotating at high speed."
     }
   ],
   "530": [
@@ -55907,6 +56667,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Known as the Drill King, this Pokémon can tunnel through the terrain at speeds of over 90 mph."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Forming a drill with its steel claws and head, it can bore through a steel plate, no matter how thick it is."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its drill, which has evolved into steel, is strong enough to bore through iron plates. This Pokémon is a great help in tunnel construction."
     }
   ],
   "531": [
@@ -56619,6 +57387,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Weaving together the cotton of both Cottonee and Eldegoss produces exquisite cloth that's highly prized by many luxury brands."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Pillows and beds stuffed with cotton exhaled by Cottonee are soft and puffy, light and airy— altogether top quality."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When attacked, it escapes by shooting cotton from its body. The cotton serves as a decoy to distract the attacker."
     }
   ],
   "547": [
@@ -56677,6 +57453,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "As long as this Pokémon bathes in sunlight, its cotton keeps growing. If too much cotton fluff builds up, Whimsicott tears it off and scatters it."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It rides on the wind and slips into people's homes. After it has turned a room into a cotton- filled mess, it giggles to itself and takes off."
     }
   ],
   "548": [
@@ -57337,6 +58121,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It protects itself with its durable skin. It's thought that this Pokémon will evolve once its skin has completely stretched out."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It stretches its saggy skin up to its neck to protect itself. Among Scraggy, individuals with saggier skin apparently garner more respect."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It will abruptly headbutt anyone that makes eye contact with it. Its skull is extremely hard."
     }
   ],
   "560": [
@@ -57387,6 +58179,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "While mostly known for having the temperament of an aggressive ruffian, this Pokémon takes very good care of its family, friends, and territory."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Groups of them beat up anything that enters their territory. Each can spit acidic liquid from its mouth."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon may be rude, but it takes very good care of its family, its friends, and its turf."
     }
   ],
   "561": [
@@ -58043,6 +58843,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "They pet each other with their tails as a form of greeting. Of the two, the one whose tail is fluffier is a bit more boastful."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When its tail has gotten dirty from self-cleaning or from cleaning its nest, Minccino spends a whole day washing its tail in clean springwater."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "These Pokémon like things neat and tidy. They are always sweeping and dusting their habitat, using their tails as brooms."
     }
   ],
   "573": [
@@ -58093,6 +58901,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "A special oil that seeps through their fur helps them avoid attacks. The oil fetches a high price at market."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Their white fur is coated in a special oil that makes it easy for them to deflect attacks."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The oil that seeps from its body is really smooth. For people troubled by bad skin, this oil is an effective treatment."
     }
   ],
   "574": [
@@ -58285,6 +59101,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Many say that the special liquid covering this Pokémon's body would allow it to survive in the vacuum of space."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Because their bodies are enveloped in a special liquid, they can survive in any environment."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "They drive away attackers by unleashing psychic power. They can use telepathy to talk with others."
     }
   ],
   "578": [
@@ -58327,6 +59151,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Its brain has split into two, and the two halves rarely think alike. Its actions are utterly unpredictable."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Since they have two divided brains, at times they suddenly try to take two different actions at once."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When their brains, now divided in two, are thinking the same thoughts, these Pokémon exhibit their maximum power."
     }
   ],
   "579": [
@@ -58369,6 +59201,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It's said that drinking the liquid surrounding Reuniclus grants wisdom. Problem is, the liquid is highly toxic to anything besides Reuniclus itself."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Their arms are made of a special liquid. They use psychic power to control these arms and crush boulders."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When Reuniclus shake hands, a network forms between their brains, increasing their psychic power."
     }
   ],
   "580": [
@@ -59153,6 +59993,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Joltik latch on to other Pokémon and suck out static electricity. They're often found sticking to Yamper's hindquarters."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Joltik that live in cities have learned a technique for sucking electricity from the outlets in houses."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Since it can't generate its own electricity, it sticks onto large-bodied Pokémon and absorbs static electricity."
     }
   ],
   "596": [
@@ -59195,6 +60043,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It lays traps of electrified threads near the nests of bird Pokémon, aiming to snare chicks that are not yet good at flying."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "They employ an electrically charged web to trap their prey. While it is immobilized by shock, they leisurely consume it."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When attacked, they create an electric barrier by spitting out many electrically charged threads."
     }
   ],
   "597": [
@@ -60423,6 +61279,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "This Pokémon was created from clay. It received orders from its master many thousands of years ago, and it still follows those orders to this day."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "These Pokémon are thought to have been created by the science of an ancient and mysterious civilization."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its movements are powered by a mysterious energy. It has continued to move since ancient times, so its power may soon run out."
     }
   ],
   "623": [
@@ -60473,6 +61337,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "There's a theory that inside Golurk is a perpetual motion machine that produces limitless energy, but this belief hasn't been proven."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When the seal on its chest is removed, it rages indiscriminately. During such rampages, it can turn a whole town into a mountain of rubble."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Golurk were created by ancient people to protect both people and Pokémon. They run on a mysterious energy."
     }
   ],
   "624": [
@@ -61747,6 +62619,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Such a thick shell of wood covers its head and back that even a direct hit from a truck wouldn't faze it."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When Chespin tenses up just before landing a headbutt, the spikes on its head sharpen to points, piercing the enemy's body on contact."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Eating lots of berries makes the bark shell that covers Chespin's head and body grow sturdier."
     }
   ],
   "651": [
@@ -61765,6 +62645,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "They strengthen their lower bodies by running into one another. They are very kind and won't start fights."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It's protected by a sturdy shell. The shell is also very heavy, which naturally strengthens Quilladin's lower body."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It can send a trailer flying with a tackle. It's numb to pain, so even violent collisions don't faze it."
     }
   ],
   "652": [
@@ -61783,6 +62671,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "When it takes a defensive posture with its fists guarding its face, it could withstand a bomb blast."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When its allies are in trouble, Chesnaught creates a shield with its arms and uses its own body to block attacks."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its gentle disposition would have it avoid conflict, but it gives opponents a thrashing with its thorned fists when the situation calls for it."
     }
   ],
   "653": [
@@ -61801,6 +62697,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon gets worked up easily. Its body can also overheat, so it uses its ears to dissipate the heat and calm down."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Twigs make for Fennekin's snacks. When it nibbles on twigs, it finds the courage to face strong foes."
     }
   ],
   "654": [
@@ -61819,6 +62723,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "When the twig is plucked from its tail, friction sets the twig alight. The flame is used to send signals to its allies."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It ignites the twig from its tail and waves the twig around to signal its allies. To indicate danger, it draws circles in the air with the twig's flame."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Braixen's branch ignites as it's pulled from the Pokémon's tail. Braixen then uses the flame to spark powerful attacks."
     }
   ],
   "655": [
@@ -61837,6 +62749,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Using psychic power, it generates a fiery vortex of 5,400 degree Fahrenheit, incinerating foes swept into this whirl of flame."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It leaves burn marks in the ground with the flame at the tip of its wand. Long ago, people used the shapes of these burn marks for divination."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It controls flames telekinetically, trapping its foes in a fiery vortex surpassing 5,400 degrees Fahrenheit and burning them to a crisp."
     }
   ],
   "656": [
@@ -61855,6 +62775,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It protects its skin by covering its body in delicate bubbles. Beneath its happy-go-lucky air, it keeps a watchful eye on its surroundings."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its happy-go-lucky look is an act intended to fool its enemies. It will suddenly drop the facade and overwhelm its foes with its blinding speed."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It utilizes its extraordinary jumping abilities to flummox its foes, throwing springy bubbles at them from above their heads."
     }
   ],
   "657": [
@@ -61873,6 +62801,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "Its swiftness is unparalleled. It can scale a tower of more than 2,000 feet in a minute's time."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It excels at devising battle strategies that make use of the terrain, and it never misses its mark when throwing bubble-covered pebbles."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The tips of its fingers and toes stick firmly to vertical surfaces. Frogadier can scale skyscrapers with ease."
     }
   ],
   "658": [
@@ -61891,6 +62827,14 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The movement of air against the long tongue Greninja keeps wrapped around its neck allows it to sense enemies it can't see."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It makes shuriken out of mucus excreted from its thighs. These shuriken can cut cleanly through steel cables."
     }
   ],
   "659": [
@@ -62529,6 +63473,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "There's enough psychic power in Espurr to send a wrestler flying, but because this power can't be controlled, Espurr finds it troublesome."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It keeps its ears covered to prevent the intense psychic power in its body from escaping, but it falls unconscious if this power builds too much."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Behind an Espurr's expressionless face is a frantic struggle to contain psychic power."
     }
   ],
   "678": [
@@ -62555,6 +63507,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "The defensive instinct of the males is strong. It's when they're protecting themselves or their partners that they unleash their full power."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Though it has enough psychic power to blast away any opponent, Meowstic prefers to support its allies rather than attack."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "If Meowstic continuously emits its powerful psychic energy, it will damage its own body."
     }
   ],
   "679": [
@@ -62771,6 +63731,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "By exposing foes to the blinking of its luminescent spots, Inkay demoralizes them, and then it seizes the chance to flee."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It protects itself from tough foes by flashing its luminescent spots to discourage them."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Being upside-down improves its blood flow and clears its mind, causing the power of its psychic moves to increase dramatically."
     }
   ],
   "687": [
@@ -62805,6 +63773,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It's said that Malamar's hypnotic powers played a role in certain history-changing events."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Its hypnotic powers are dangerously strong. Anyone who falls under Malamar's control loses their memories surrounding the event."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It flashes the luminescent spots on its body to hypnotize its opponents, gaining total control over them."
     }
   ],
   "688": [
@@ -63204,7 +64180,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around –240 degrees Fahrenheit."
+      "flavor_text": "This usually quiet and kindly Pokémon has a surface temperature of around -240 degrees Fahrenheit."
     },
     {
       "version_id": "Sword",
@@ -64079,6 +65055,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Flies noiselessly on delicate wings. It has mastered the art of deftly launching dagger-sharp feathers from those same wings."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Silently it glides, streaking toward its targets to get close to them. Before they even notice it, it begins to pelt them with vicious kicks."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It feels relaxed in tight, dark places and has been known to nestle into its Trainer's bag or the front of their jacket."
     }
   ],
   "723": [
@@ -64109,6 +65093,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Regularly basks in sunlight to gather power—presumably due to the frigid climate. Nonetheless, the edges of the blade quills set into its wings are keen as ever."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This narcissistic Pokémon is a clean freak. If you don't groom it diligently, it may stop listening to you."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It throws sharp feathers called blade quills at enemies or prey. It seldom misses."
     }
   ],
   "724": [
@@ -64139,6 +65131,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "The air stored inside the rachises of Decidueye's feathers insulates the Pokémon against Hisui's extreme cold. This is firm proof that evolution can be influenced by environment."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It cunningly conceals arrow quills in its wings. It launches these quills with such precision that they can pierce a pebble at over a hundred yards."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It nocks its arrow quills and looses them at opponents. When it needs to hit, it pulls the vines on its hood to narrow its view and focus."
     }
   ],
   "725": [
@@ -64165,6 +65165,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Trying to pet Litten before it trusts you will result in a nasty scratch from its sharp claws. Be careful."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "If you try too hard to get close to it, it won't open up to you. Even if you do grow close, giving it too much affection is still a no-no."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "While grooming itself, it builds up fur inside its stomach. It sets the fur alight and spews fiery attacks, which change based on how it coughs."
     }
   ],
   "726": [
@@ -64191,6 +65199,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "When facing a powerful enemy, Torracat's fighting spirit gets pumped up, and its fire bell blazes hotter."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "At its throat, it bears a bell of fire. The bell rings brightly whenever fire spews out."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Torracat will let its Trainer coddle it once they've grown close, but it's a powerful, sharp-clawed Pokémon, so its Trainer gets covered in scratches."
     }
   ],
   "727": [
@@ -64217,6 +65233,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Incineroar's rough and aggressive behavior is its most notable trait, but the way it helps out small Pokémon shows that it has a kind side as well."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "When its fighting spirit is set alight, the flames around its waist become especially intense."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "After hurling ferocious punches and flinging furious kicks, it finishes opponents off by spewing fire from around its navel."
     }
   ],
   "728": [
@@ -64243,6 +65267,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "If Popplio want to create big, powerful balloons, they must be persistent. It takes daily practice for these Pokémon to develop their skills."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon can control balloons made of water. It practices diligently so it can learn to make big balloons."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The balloons it inflates with its nose grow larger and larger as it practices day by day."
     }
   ],
   "729": [
@@ -64269,6 +65301,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "On nights when the sea is calm, Brionne dance with one another to the singing of the Primarina that's leading them."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "A skillful dancer, it creates a sequence of water balloons as it dances, then briskly bombards its enemies."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It cares deeply for its companions. When its Trainer is feeling down, it performs a cheery dance to try to help."
     }
   ],
   "730": [
@@ -64295,6 +65335,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "For Primarina, every battle's a stage. Its singing and the dancing of its balloons will mesmerize the audience."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "To Primarina, every battle is a stage. It takes down its prey with beautiful singing and dancing."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Also known as a songstress, it is a sight to behold on moonlit nights when it sings in front of the colony it leads."
     }
   ],
   "731": [
@@ -64313,6 +65361,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It may look spindly, but its neck muscles are heavy-duty. It can peck at a tree 16 times per second!"
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Using its beak to strike 16 times per second, it opens holes in even the hardest of trees."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Pikipek has strong muscles in its neck, so it won't hurt itself even if it violently shakes its head."
     }
   ],
   "732": [
@@ -64331,6 +65387,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "From its mouth, it fires the seeds of berries it has eaten. The scattered seeds give rise to new plants."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It flies around using a hundred different cries in various ways to declare its territory to others."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When it encounters foes, it launches the many seeds stored in its beak in a radial burst."
     }
   ],
   "733": [
@@ -64349,6 +65413,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Known for forming harmonious couples, this Pokémon is brought to wedding ceremonies as a good luck charm."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The compressed gas in Toucannon's beak launches seeds with such force that they can shatter large boulders."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Pairs of Toucannon are considered symbols of companionship, as these Pokémon will raise the temperature of their beaks to warm each other."
     }
   ],
   "734": [
@@ -64905,6 +65977,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Dewpider normally lives underwater. When it comes onto land in search of food, it takes water with it in the form of a bubble on its head."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Dewpider uses sticky threads to create the water bubble that covers its head, so the bubble very rarely bursts."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It supports the water bubble that envelops its head with three of its legs. Sometimes it secretly swaps which legs are holding up the bubble."
     }
   ],
   "752": [
@@ -64931,6 +66011,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It acts as a caretaker for Dewpider, putting them inside its bubble and letting them eat any leftover food."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "A caring Pokémon, Araquanid carries Dewpider around inside its water bubble to protect them as it walks. It protects its food in its bubble too."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It launches sticky water bubbles. Foes who lose consciousness while trapped inside these bubbles will get torn apart by Araquanid's gnashing jaws."
     }
   ],
   "753": [
@@ -65299,6 +66387,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "These Pokémon smell very nice. All Comfey wear different flowers, so each of these Pokémon has its own individual scent."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It uses its vine to pick flowers. The flowers that Comfey attaches to itself develop healing properties."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It prefers areas with lots of flowers. A Comfey adorned with flowers is a happy Comfey, and the flowers gain healing effects."
     }
   ],
   "765": [
@@ -65583,6 +66679,14 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Although its outer shell is uncommonly durable, the shock of falling to the ground smashes the shell to smithereens."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This Pokémon is born in the ozone layer. It falls to the ground once the outer shell enclosing its core grows heavy."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It will react when touched or called to, but it's unknown whether such responses indicate consciousness."
     }
   ],
   "775": [
@@ -66351,6 +67455,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It attacks with rapid beats of its stick. As it strikes with amazing speed, it gets more and more pumped."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The stick Grookey holds has grown harder and more flexible after soaking in the energy that emanates from inside Grookey's body."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "As Grookey strikes everything in sight with its stick, it has more and more fun, and its rhythm becomes livelier."
     }
   ],
   "811": [
@@ -66361,6 +67473,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "When it's drumming out rapid beats in battle, it gets so caught up in the rhythm that it won't even notice that it's already knocked out its opponent."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It skillfully uses its two sticks not only for drumming out rapid beats but also for pummeling opponents during battle."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It becomes intensely focused while it drums out vigorous beats—so much so that sometimes it won't listen to its Trainer's commands."
     }
   ],
   "812": [
@@ -66371,6 +67491,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "The one with the best drumming techniques becomes the boss of the troop. It has a gentle disposition and values harmony among its group."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Though it has a calm disposition, it won't tolerate those who drum up discord. It strictly disciplines offenders until they learn their lesson."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When one Rillaboom challenges another who leads a troop, a drumming battle commences. The victor becomes the troop's new boss."
     }
   ],
   "813": [
@@ -66381,6 +67509,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It has special pads on the backs of its feet, and one on its nose. Once it's raring to fight, these pads radiate tremendous heat."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Once its body has heated up, Scorbunny can use the full extent of its power. That's why it does warm-up exercises."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Fire energy gathers in the pads of its feet, raising their temperature. Once hot, Scorbunny's footpads can deal heavy damage to opponents."
     }
   ],
   "814": [
@@ -66391,6 +67527,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Thanks to its soft and fluffy fur, Raboot can easily heat up its fire energy and produce flames with more power."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "While it prides itself on its varied kicking moves, it can also deliver powerful headbutts once its flames have heated up its forehead."
     }
   ],
   "815": [
@@ -66401,6 +67545,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "It's skilled at both offense and defense, and it gets pumped up when cheered on. But if it starts showboating, it could put itself in a tough spot."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Although Cinderace loses its cool easily, it will battle flawlessly for a Trainer it trusts."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Using a ball that it made out of flames, Cinderace blinds its opponents and keeps them at bay."
     }
   ],
   "816": [
@@ -66411,6 +67563,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "When it gets wet, its skin changes color, and this Pokémon becomes invisible as if it were camouflaged."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It gets berries to eat by shooting them down with bullets of water it spurts from its mouth. Its aim is perfect."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It's a very cautious Pokémon. When it has no choice but to battle, it hides itself before attacking."
     }
   ],
   "817": [
@@ -66421,6 +67581,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Highly intelligent but also very lazy, it keeps enemies out of its territory by laying traps everywhere."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It extends its long, slimy tongue at blinding speeds and finishes off its prey with great skill."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Highly intelligent but also very lazy, it defends its home by laying traps."
     }
   ],
   "818": [
@@ -66431,6 +67599,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "Its nictitating membranes let it pick out foes' weak points so it can precisely blast them with water that shoots from its fingertips at Mach 3."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It uses special lenses in its eyes to sense things about its opponents—like their body heat—then attacks once it identifies a weak spot."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It may present itself as being well-mannered, but deep down, it still has a lazy side. It will slack off when its Trainer isn't looking."
     }
   ],
   "819": [
@@ -67155,6 +68331,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "They say that any patisserie visited by Milcery is guaranteed success and good fortune."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "The more sweet aromas it absorbs, the more its body swells. Milcery will deflate when its energy level drops."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "When attacked, it tackles its foe and covers them in cream. With its foe either blinded or astonished by deliciousness, Milcery flees."
     }
   ],
   "869": [
@@ -67165,6 +68349,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Desserts that Alcremie have decorated with their cream have a rich, sweet flavor and bring happiness to all who eat them."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Alcremie that have been cherished produce exquisite cream, so Trainers always raise them lovingly."
     }
   ],
   "870": [
@@ -67395,6 +68587,14 @@
     {
       "version_id": "Shield",
       "flavor_text": "The special metal that composes its body is very light, so this Pokémon has considerable agility. It lives in caves because it dislikes the rain."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Duraludon's body is comprised of a special metal that's lightweight and scratch resistant. It's also smooth, as though it was given a mirror finish."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its metal body is durable but prone to retaining heat. It vents this heat from the slits in its tail."
     }
   ],
   "885": [
@@ -67571,6 +68771,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Parts of its body turned to stone when it evolved thanks to an extremely rare ore found in volcanic areas."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "This Pokémon is a rough, crude, and violent sort. It swings around its large, heavy stone axes to finish off its prey."
     }
   ],
   "901": [
@@ -67611,6 +68819,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Its lancelike spikes and savage temperament have earned it the nickname \"sea fiend.\" It slurps up poison to nourish itself."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Overqwil's poisonous spikes will reflexively react even while Overqwil sleeps, stabbing any moving thing that approaches."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It's ferocious and has a short temper. The ends of its spikes are barbed, and they can't be easily removed once they've punctured something."
     }
   ],
   "905": [
@@ -68649,8 +69865,26 @@
       "flavor_text": "This seems to be the Iron Serpent mentioned in an old book.. The Iron Serpent is said to have turned the land to ash with its lightning."
     }
   ],
-  "1009": [],
-  "1010": [],
+  "1009": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "This ferocious creature is shrouded in mystery. It's named after an aquatic monster mentioned in an old expedition journal."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It resembles an illustration published in a paranormal magazine, said to be a depiction of a super-ancient Suicune."
+    }
+  ],
+  "1010": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Many of its physical characteristics match those of a Virizion from the future that was covered in a paranormal magazine."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "According to the few eyewitness accounts that exist, it used its shining blades to julienne large trees and boulders."
+    }
+  ],
   "1011": [
     {
       "version_id": "Scarlet",
@@ -68719,6 +69953,92 @@
     {
       "version_id": "Violet",
       "flavor_text": "This mischief-loving Pokémon is full of curiosity. It battles by drawing out the type-based energy contained within its masks."
+    }
+  ],
+  "1018": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It gathers static electricity from its surroundings. The beams it launches when down on all fours are tremendously powerful."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It digs holes on mountains, searching for food. It's so durable that being caught in a cave-in won't faze it."
+    }
+  ],
+  "1019": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Seven syrpents live inside an apple made of syrup. The syrpent in the center is the commander."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "These capricious syrpents have banded together. On the rare occasion that their moods align, their true power is unleashed."
+    }
+  ],
+  "1020": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "There are scant few reports of this creature being sighted. One short video shows it rampaging and spouting pillars of flame."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It resembles an eerie Pokémon once shown in a paranormal magazine. That Pokémon was said to be an Entei regenerated from a fossil."
+    }
+  ],
+  "1021": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It's said to incinerate everything around it with lightning launched from its fur. Very little is known about this creature."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It bears resemblance to a Pokémon that became a hot topic for a short while after a paranormal magazine touted it as Raikou's ancestor."
+    }
+  ],
+  "1022": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It resembles a Pokémon described in a dubious magazine as a Terrakion that had been modified by an evil organization."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It was named after a mysterious object recorded in an old book. Its body seems to be metallic."
+    }
+  ],
+  "1023": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It resembles a mysterious object introduced in a paranormal magazine as a cutting-edge weapon shaped like a Cobalion."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "There was supposedly an incident in which it launched shining blades to cut everything around it to pieces. Little else is known about it."
+    }
+  ],
+  "1024": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Terapagos protects itself using its power to transform energy into hard crystals. This Pokémon is the source of the Terastal phenomenon."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "It's thought that this Pokémon lived in ancient Paldea until it got caught in seismic shifts and went extinct."
+    }
+  ],
+  "784totem": [
+    {
+      "version_id": "Ultra Sun",
+      "flavor_text": "When it howls after finishing off its prey, the metallic sounds of its celebrating comrades can be heard from all around."
+    },
+    {
+      "version_id": "Ultra Moon",
+      "flavor_text": "It battles valiantly with its fists, which are armored in steel scales. Kommo-o specializes in uppercuts."
+    }
+  ],
+  "905therian": [
+    {
+      "version_id": "Legends: Arceus",
+      "flavor_text": "A different guise from its feminine humanoid form. From the clouds, it descends upon those who treat any form of life with disrespect and metes out wrathful, ruthless punishment."
     }
   ],
   "1012artisan": [
@@ -71491,7 +72811,7 @@
       "flavor_text": "The slightest shock is sometimes enough to get this Pokémon to spit out the Arrokuda lodged in its throat."
     }
   ],
-  "849lowkey": [
+  "849low-key": [
     {
       "version_id": "Sword",
       "flavor_text": "Capable of generating 15,000 volts of electricity, this Pokémon looks down on all that would challenge it."
@@ -71502,6 +72822,16 @@
     }
   ],
   "849gmax": [
+    {
+      "version_id": "Sword",
+      "flavor_text": "Its excessive electric energy is its weapon. This Pokémon can build up more electricity than any thundercloud."
+    },
+    {
+      "version_id": "Shield",
+      "flavor_text": "Out of control after its own poison penetrated its brain, it tears across the land in a rampage, contaminating the earth with toxic sweat."
+    }
+  ],
+  "849low-key-gmax": [
     {
       "version_id": "Sword",
       "flavor_text": "Its excessive electric energy is its weapon. This Pokémon can build up more electricity than any thundercloud."

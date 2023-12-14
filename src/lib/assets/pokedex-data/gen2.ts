@@ -146,7 +146,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'typhlosionhisui',
     {
       abilities: { first: 'blaze', hidden: 'frisk' },
-      baseSpecies: 'Typhlosion',
+      baseSpecies: 'typhlosion',
       baseStats: { hp: 73, atk: 84, def: 78, spa: 119, spd: 85, spe: 95 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
@@ -517,7 +517,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pichuspikyeared',
     {
       abilities: { first: 'static' },
-      baseSpecies: 'Pichu',
+      baseSpecies: 'pichu',
       baseStats: { hp: 20, atk: 40, def: 15, spa: 35, spd: 35, spe: 60 },
       catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
       color: 'Yellow',
@@ -750,7 +750,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'ampharosmega',
     {
       abilities: { first: 'moldbreaker' },
-      baseSpecies: 'Ampharos',
+      baseSpecies: 'ampharos',
       baseStats: { hp: 90, atk: 95, def: 105, spa: 165, spd: 110, spe: 45 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
@@ -1072,7 +1072,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'wooperpaldea',
     {
       abilities: { first: 'poisonpoint', second: 'waterabsorb', hidden: 'unaware' },
-      baseSpecies: 'Wooper',
+      baseSpecies: 'wooper',
       baseStats: { hp: 55, atk: 45, def: 45, spa: 25, spd: 25, spe: 15 },
       catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
       color: 'Brown',
@@ -1213,7 +1213,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'slowkinggalar',
     {
       abilities: { first: 'curiousmedicine', second: 'owntempo', hidden: 'regenerator' },
-      baseSpecies: 'Slowking',
+      baseSpecies: 'slowking',
       baseStats: { hp: 95, atk: 65, def: 80, spa: 110, spd: 110, spe: 30 },
       catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
       color: 'Pink',
@@ -1499,7 +1499,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'steelixmega',
     {
       abilities: { first: 'sandforce' },
-      baseSpecies: 'Steelix',
+      baseSpecies: 'steelix',
       baseStats: { hp: 75, atk: 125, def: 230, spa: 55, spd: 95, spe: 30 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Gray',
@@ -1590,7 +1590,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'qwilfishhisui',
     {
       abilities: { first: 'poisonpoint', second: 'swiftswim', hidden: 'intimidate' },
-      baseSpecies: 'Qwilfish',
+      baseSpecies: 'qwilfish',
       baseStats: { hp: 65, atk: 95, def: 85, spa: 55, spd: 55, spe: 85 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
@@ -1644,7 +1644,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'scizormega',
     {
       abilities: { first: 'technician' },
-      baseSpecies: 'Scizor',
+      baseSpecies: 'scizor',
       baseStats: { hp: 70, atk: 150, def: 140, spa: 65, spd: 100, spe: 75 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Red',
@@ -1712,7 +1712,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'heracrossmega',
     {
       abilities: { first: 'skilllink' },
-      baseSpecies: 'Heracross',
+      baseSpecies: 'heracross',
       baseStats: { hp: 80, atk: 185, def: 115, spa: 40, spd: 105, spe: 75 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -1760,7 +1760,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'sneaselhisui',
     {
       abilities: { first: 'innerfocus', second: 'keeneye', hidden: 'pickpocket' },
-      baseSpecies: 'Sneasel',
+      baseSpecies: 'sneasel',
       baseStats: { hp: 55, atk: 95, def: 55, spa: 35, spd: 75, spe: 115 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
@@ -1943,7 +1943,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'corsolagalar',
     {
       abilities: { first: 'weakarmor', second: 'weakarmor', hidden: 'cursedbody' },
-      baseSpecies: 'Corsola',
+      baseSpecies: 'corsola',
       baseStats: { hp: 60, atk: 55, def: 100, spa: 65, spd: 100, spe: 30 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'White',
@@ -2124,7 +2124,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'houndoommega',
     {
       abilities: { first: 'solarpower' },
-      baseSpecies: 'Houndoom',
+      baseSpecies: 'houndoom',
       baseStats: { hp: 75, atk: 90, def: 90, spa: 140, spd: 90, spe: 115 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
@@ -2574,7 +2574,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'tyranitarmega',
     {
       abilities: { first: 'sandstream' },
-      baseSpecies: 'Tyranitar',
+      baseSpecies: 'tyranitar',
       baseStats: { hp: 100, atk: 164, def: 150, spa: 95, spd: 120, spe: 71 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',

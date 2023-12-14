@@ -890,7 +890,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'crucibellemega',
     {
       abilities: { first: 'magicguard' },
-      baseSpecies: 'Crucibelle',
+      baseSpecies: 'crucibelle',
       baseStats: { hp: 106, atk: 135, def: 75, spa: 91, spd: 125, spe: 108 },
       color: 'Purple',
       eggGroups: ['Amorphous', 'Mineral'],
@@ -1521,7 +1521,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'venomiconepilogue',
     {
       abilities: { first: 'tintedlens' },
-      baseSpecies: 'Venomicon',
+      baseSpecies: 'venomicon',
       baseStats: { hp: 85, atk: 102, def: 85, spa: 62, spd: 85, spe: 101 },
       color: 'Purple',
       eggGroups: ['Amorphous'],

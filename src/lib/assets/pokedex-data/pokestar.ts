@@ -52,7 +52,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'pokestarufo2',
     {
       abilities: { first: 'levitate' },
-      baseSpecies: 'Pokestar UFO',
+      baseSpecies: 'pokestarufo',
       baseStats: { hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100 },
       color: 'White',
       eggGroups: ['Undiscovered'],

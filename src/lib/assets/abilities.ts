@@ -2153,6 +2153,29 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'teraformzero',
+    {
+      name: 'Teraform Zero',
+      shortDesc:
+        'When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero.'
+    }
+  ],
+  [
+    'terashell',
+    {
+      name: 'Tera Shell',
+      shortDesc:
+        "The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective."
+    }
+  ],
+  [
+    'terashift',
+    {
+      name: 'Tera Shift',
+      shortDesc: 'When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form.'
+    }
+  ],
+  [
     'teravolt',
     {
       desc: "This Pokémon's moves and their effects ignore certain Abilities of other Pokémon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokémon on the field, whether or not it is a target of this Pokémon's move, and whether or not their Ability is beneficial to this Pokémon.",

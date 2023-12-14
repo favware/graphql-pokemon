@@ -2461,6 +2461,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       eggGroups: ['Grass', 'Dragon'],
       evoLevel: 'use Syrupy Apple',
       evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
+      evos: ['hydrapple'],
       genderRatio: { male: '50%', female: '50%' },
       heightm: 0.4,
       isEggObtainable: true,
@@ -2882,6 +2883,196 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'ogerpon-tealtera',
       types: [TypesEnum.Grass],
       weightkg: 39.8
+    }
+  ],
+  [
+    'archaludon',
+    {
+      abilities: { first: 'stamini', second: 'sturdy', hidden: 'stalwart' },
+      baseStats: { hp: 90, atk: 105, def: 130, spa: 125, spd: 65, spe: 85 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'White',
+      eggGroups: ['Mineral', 'Dragon'],
+      evYields: { hp: 0, atk: 0, def: 3, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 2.0,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      num: 1018,
+      species: 'archaludon',
+      types: [TypesEnum.Steel, TypesEnum.Dragon],
+      weightkg: 60
+    }
+  ],
+  [
+    'hydrapple',
+    {
+      abilities: { first: 'supersweetsyrup', second: 'regenerator', hidden: 'stickyhold' },
+      baseStats: { hp: 106, atk: 80, def: 110, spa: 120, spd: 80, spe: 44 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'Green',
+      eggGroups: ['Grass', 'Dragon'],
+      evoLevel: 'Level up while knowing Dragon Cheer',
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.8,
+      isEggObtainable: true,
+      levellingRate: 'Erratic',
+      num: 1019,
+      prevo: 'dipplin',
+      species: 'hydrapple',
+      types: [TypesEnum.Grass, TypesEnum.Dragon],
+      weightkg: 93
+    }
+  ],
+  [
+    'gougingfire',
+    {
+      abilities: { first: 'protosynthesis' },
+      baseStats: { hp: 105, atk: 115, def: 121, spa: 65, spd: 93, spe: 91 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'Brown',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 3, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 3.5,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 12850,
+      num: 1020,
+      species: 'Gouging Fire',
+      types: [TypesEnum.Fire, TypesEnum.Dragon],
+      weightkg: 590
+    }
+  ],
+  [
+    'ragingbolt',
+    {
+      abilities: { first: 'protosynthesis' },
+      baseStats: { hp: 125, atk: 73, def: 91, spa: 137, spd: 89, spe: 75 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'Yellow',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 5.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 12850,
+      num: 1021,
+      species: 'Raging Bolt',
+      types: [TypesEnum.Electric, TypesEnum.Dragon],
+      weightkg: 480
+    }
+  ],
+  [
+    'ironboulder',
+    {
+      abilities: { first: 'quarkdrive' },
+      baseStats: { hp: 90, atk: 120, def: 80, spa: 68, spd: 108, spe: 124 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'Gray',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 3 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.5,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 12850,
+      num: 1022,
+      species: 'Iron Boulder',
+      types: [TypesEnum.Rock, TypesEnum.Psychic],
+      weightkg: 162.5
+    }
+  ],
+  [
+    'ironcrown',
+    {
+      abilities: { first: 'quarkdrive' },
+      baseStats: { hp: 90, atk: 72, def: 100, spa: 122, spd: 108, spe: 98 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.6,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 12850,
+      num: 1023,
+      species: 'Iron Crown',
+      types: [TypesEnum.Steel, TypesEnum.Psychic],
+      weightkg: 156
+    }
+  ],
+  [
+    'terapagos',
+    {
+      abilities: { first: 'terashift' },
+      baseForme: 'Normal',
+      baseStats: { hp: 90, atk: 65, def: 85, spa: 65, spd: 85, spe: 60 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.2,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1024,
+      otherFormes: ['terapagosterastal', 'terapagosstellar'],
+      species: 'terapagos',
+      types: [TypesEnum.Normal],
+      weightkg: 6.5
+    }
+  ],
+  [
+    'terapagosterastal',
+    {
+      abilities: { first: 'terashell' },
+      baseSpecies: 'terapagos',
+      baseStats: { hp: 95, atk: 95, def: 110, spa: 105, spd: 110, spe: 85 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 2, spe: 0 },
+      forme: 'Terastal',
+      formeLetter: 'T',
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.3,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1024,
+      otherFormes: ['terapagos', 'terapagosstellar'],
+      species: 'terapagos-terastal',
+      types: [TypesEnum.Normal],
+      weightkg: 16
+    }
+  ],
+  [
+    'terapagosstellar',
+    {
+      abilities: { first: 'teraformzero' },
+      baseSpecies: 'terapagos',
+      baseStats: { hp: 160, atk: 105, def: 110, spa: 130, spd: 110, spe: 85 },
+      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      color: 'Blue',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Stellar',
+      formeLetter: 'S',
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.7,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1024,
+      otherFormes: ['terapagos', 'terapagosterastal'],
+      species: 'terapagos-stellar',
+      types: [TypesEnum.Normal],
+      weightkg: 77
     }
   ]
 ];

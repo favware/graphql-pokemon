@@ -56,6 +56,16 @@ describe('getFuzzyAbility', () => {
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Damp_(Ability)'
         },
         {
+          desc: 'Prevents opposing Pokémon from choosing to switch out, unless they are holding a Shed Shell, are a Ghost type, or also have this Ability.',
+          isFieldAbility: null,
+          isNonstandard: null,
+          name: 'Shadow Tag',
+          shortDesc: 'Prevents foes from choosing to switch unless they also have this Ability.',
+          serebiiPage: 'https://www.serebii.net/abilitydex/shadow_tag.shtml',
+          smogonPage: 'https://www.smogon.com/dex/ss/abilities/shadow_tag',
+          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Shadow_Tag_(Ability)'
+        },
+        {
           desc: "This Pokémon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
           isFieldAbility: null,
           isNonstandard: null,
@@ -64,16 +74,6 @@ describe('getFuzzyAbility', () => {
           serebiiPage: 'https://www.serebii.net/abilitydex/aerilate.shtml',
           smogonPage: 'https://www.smogon.com/dex/ss/abilities/aerilate',
           bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Aerilate_(Ability)'
-        },
-        {
-          desc: null,
-          isFieldAbility: null,
-          isNonstandard: null,
-          name: 'Air Lock',
-          shortDesc: 'While this Pokémon is active, the effects of weather conditions are disabled.',
-          serebiiPage: 'https://www.serebii.net/abilitydex/air_lock.shtml',
-          smogonPage: 'https://www.smogon.com/dex/ss/abilities/air_lock',
-          bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Air_Lock_(Ability)'
         }
       ]);
     });

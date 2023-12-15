@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.2.0](https://github.com/favware/graphql-pokemon/compare/v8.2.0...v8.2.0) - (2023-12-15)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([b409d42](https://github.com/favware/graphql-pokemon/commit/b409d42bc074a608cf100f4a53d3740ca6c7175b))
+- Update data [skip publish] ([353a1e4](https://github.com/favware/graphql-pokemon/commit/353a1e432a230b437be9ad2b6617c95bb4e4d3c3))
+- Update data [skip publish] ([8766b59](https://github.com/favware/graphql-pokemon/commit/8766b590e803fdb9f03d8e3c68a3f7fa1b57559a))
+- Update data [skip publish] ([b636241](https://github.com/favware/graphql-pokemon/commit/b636241829cba4431d404a6a0ae03784ef532fce))
+- Update data [skip publish] ([232c397](https://github.com/favware/graphql-pokemon/commit/232c3974c6093d533ea0292d6948e08731e7d96f))
+- Update data [skip publish] ([a1e0557](https://github.com/favware/graphql-pokemon/commit/a1e05575627f53319d0821767a3bfd2bda726bcb))
+
+## 🐛 Bug Fixes
+
+- Add indigo disk moves to graphql enum ([b288a34](https://github.com/favware/graphql-pokemon/commit/b288a346212ee7060e55845c501a93dda7d3774d))
+- Fixed a few mistakes in indigo disk moves ([de4b819](https://github.com/favware/graphql-pokemon/commit/de4b81901abbba60363cd82bd1d132eae21ebc1e))
+- Fixed other forms for pokestar ufo ([c31e145](https://github.com/favware/graphql-pokemon/commit/c31e14584902f66fea98cc4e01f172a749ab834f))
+- Fixed incorrect prevo names for urshifu, quaxwell, and quaquaval ([b37f4a6](https://github.com/favware/graphql-pokemon/commit/b37f4a6d2763330654411961ae6e2c5d8f2b59b5))
+- Fixed abilities for archaludon ([60c2835](https://github.com/favware/graphql-pokemon/commit/60c2835a2cef91afe29f6f84a4febf3b213fc956))
+- Ensure that base species properly link back to the pokemon they refer to ([e458ef0](https://github.com/favware/graphql-pokemon/commit/e458ef0d98103e32dbe72afba0e45f1929edf850))
+
+## 🚀 Features
+
+- Add the remaining moves ([0038c22](https://github.com/favware/graphql-pokemon/commit/0038c2217438aea2dc5e683809e5a42f95f6992a))
+- Update flavor texts ([8c9334f](https://github.com/favware/graphql-pokemon/commit/8c9334f0a894b75058bfb13083053229324bce44))
+- Add indigo disk dlc data to graphql enums ([1dc1817](https://github.com/favware/graphql-pokemon/commit/1dc18176279f7a27dc26a6bab0825165cb13f440))
+- Expand allowed amount to take for `getAllPokemon` ([69f193f](https://github.com/favware/graphql-pokemon/commit/69f193f4d81ba94028ac85385517b74c50440017))
+- Add indigo disk dlc data ([11ee6d9](https://github.com/favware/graphql-pokemon/commit/11ee6d9c207ca4c51d6641a46692d6e1ff4f6a34))
+
+## 🧪 Testing
+
+- Update test data after jaro winkler update ([e9cbfe7](https://github.com/favware/graphql-pokemon/commit/e9cbfe7503699cb464ebfeb53200cfbce1c38288))
+- Update test data ([1305c40](https://github.com/favware/graphql-pokemon/commit/1305c40d641201db7ceb44616607db346b0ed75c))
+- Update test data ([73c363c](https://github.com/favware/graphql-pokemon/commit/73c363cf13e61ce0318b980af5297cd48e40db59))
+- Cover newly added pokemon in tests ([dbf70d1](https://github.com/favware/graphql-pokemon/commit/dbf70d1dbe12725b17dce05b57e66a6694dda7e8))
+- Cleanup vitest config [skip publish] ([164de94](https://github.com/favware/graphql-pokemon/commit/164de946ca2240d6674d364c481b503f32dea074))
+
 # [8.1.1](https://github.com/favware/graphql-pokemon/compare/v8.1.1...v8.1.1) - (2023-11-28)
 
 ## 🐛 Bug Fixes

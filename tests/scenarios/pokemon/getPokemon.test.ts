@@ -130,9 +130,8 @@ describe('getPokemon', () => {
         evolutionLevel: '36',
         flavorTexts: [
           {
-            flavor:
-              "It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water.",
-            game: 'Alpha Sapphire'
+            flavor: 'It makes shuriken out of mucus excreted from its thighs. These shuriken can cut cleanly through steel cables.',
+            game: 'Violet'
           }
         ],
         forme: null,
@@ -304,7 +303,7 @@ describe('getPokemon', () => {
           speed: 95
         },
         baseStatsTotal: 534,
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Typhlosion_(Pokémon)',
+        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/typhlosion_(Pokémon)',
         catchRate: {
           base: 45,
           percentageWithOrdinaryPokeballAtFullHealth: '11.9%'

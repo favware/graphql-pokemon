@@ -15860,6 +15860,113 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       target: 'Normal',
       type: 'Electric'
     }
+  ],
+  [
+    'temperflare',
+    {
+      accuracy: 100,
+      basePower: '75',
+      category: 'Physical',
+      desc: "f, on the previous turn, the user's last move missed, failed to affect each of its targets, or was prevented from being used due to an effect such as paralysis, Temper Flare's power is doubled from 75 to 150. If the user was recharging, grabbed by Sky Drop, or any target of the user's last move blocked it with a protection move such as Protect on the previous turn, Temper Flare's base power is not doubled.",
+      maxMovePower: 150,
+      name: 'Temper Flare',
+      pp: 10,
+      priority: 0,
+      shortDesc: "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed.",
+      target: 'Normal',
+      type: 'Fire'
+    }
+  ],
+  [
+    'dragoncheer',
+    {
+      accuracy: 101,
+      basePower: '0',
+      category: 'Status',
+      name: 'Dragon Cheer',
+      pp: 15,
+      priority: 0,
+      shortDesc:
+        "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+      target: "Ally's Side",
+      type: 'Dragon'
+    }
+  ],
+  [
+    'ficklebeam',
+    {
+      accuracy: 100,
+      basePower: '80',
+      maxMovePower: 160,
+      category: 'Special',
+      name: 'Fickle Beam',
+      pp: 5,
+      priority: 0,
+      shortDesc:
+        "The user shoots a beam of light to inflict damage. Sometimes all the user's heads shoot beams in unison, doubling the move's power.",
+      target: 'Normal',
+      type: 'Dragon'
+    }
+  ],
+  [
+    'terastarstorm',
+    {
+      accuracy: 100,
+      basePower: '120',
+      category: 'Special',
+      name: 'Tera Starstorm',
+      pp: 5,
+      priority: 0,
+      shortDesc:
+        'With the power of its crystals, the user bombards and eliminates the target. When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon.',
+      target: 'Normal',
+      type: 'Normal'
+    }
+  ],
+  [
+    'malignantchain',
+    {
+      accuracy: 100,
+      basePower: '100',
+      category: 'Special',
+      name: 'Malignant Chain',
+      pp: 5,
+      priority: 0,
+      shortDesc: 'The user pours toxins into the target by wrapping them in a toxic, corrosive chain. This may also leave the target badly poisoned.',
+      target: 'Normal',
+      type: 'Poison'
+    }
+  ],
+  [
+    'mightycleave',
+    {
+      accuracy: 100,
+      basePower: '95',
+      category: 'Physical',
+      name: 'Mighty Cleave',
+      desc: "Mighty Cleave inflicts damage. It bypasses the effects of Protect, Detect, Spiky Shield, King's Shield, Baneful Bunker, Silk Trap, and Burning Bulwark, but does not lift the effects of these moves.",
+      pp: 5,
+      priority: 0,
+      shortDesc:
+        'The user wields the light that has accumulated atop its head to cleave the target. This move hits even if the target protects itself.',
+      target: 'Normal',
+      type: 'Rock'
+    }
+  ],
+  [
+    'burningbulwark',
+    {
+      accuracy: 101,
+      basePower: '100',
+      category: 'Status',
+      name: 'Burning Bulwark',
+      desc: 'Burning Bulwark protects the user from all effects of moves that target it during the turn it is used, including damage. (This does not include damage at the end of a turn such as from weather or a status condition.) If Burning Bulwark blocks an attack that would make contact with the user, the attacker becomes burned, unless they are immune. (Moves that are blocked do not activate other effects that require making contact, like Rocky Helmet or Rough Skin. If the user goes last in the turn, the move will fail. The chance that Burning Bulwark will succeed also drops each time the user successfully and consecutively uses Endure, any protection move that only affects the user, Quick Guard, or Wide Guard. Each time, the chance of success is divided by 3. Some moves will do damage through Burning Bulwark. Moves that break protection, like Feint, will do their full damage and remove the effects of Burning Bulwark. The Ability Unseen Fist allows contact moves to bypass Burning Bulwark. Moves that target the user, moves that target the user and all allies, moves that target all Pokémon, and entry hazard moves cannot be blocked by Burning Bulwark. Burning Bulwark is an increased priority move that will go before most attacks in a turn.',
+      pp: 10,
+      priority: 4,
+      shortDesc: "The user's intensely hot fur protects it from attacks and also burns any attacker that makes direct contact with it.",
+      target: 'Self',
+      type: 'Fire'
+    }
   ]
 ]);
 

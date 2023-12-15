@@ -1,5 +1,5 @@
 import { Collection } from '@discordjs/collection';
-import { abilities } from '../../src/lib/assets/abilities.js';
+import { moves as data } from '../../src/lib/assets/moves.js';
 import { dataToClipboard } from './data-to-clipboard.js';
 
 export function sortObjectByKey<T extends object>(obj: T): T {
@@ -34,7 +34,7 @@ export function sortObjectByKey<T extends object>(obj: T): T {
   return sortedObj;
 }
 
-const abilitiesSortedKeys = abilities.sort((_, __, c, d) => {
+const dataSortedKeys = data.sort((_, __, c, d) => {
   if (c < d) {
     return -1;
   }
@@ -48,12 +48,12 @@ const abilitiesSortedKeys = abilities.sort((_, __, c, d) => {
 
 const finalCollection = new Collection<string, any>();
 
-for (let [abilityKey, abilityData] of abilitiesSortedKeys.entries()) {
-  Reflect.deleteProperty(abilityData, 'key');
+for (let [entryKey, entryData] of dataSortedKeys.entries()) {
+  Reflect.deleteProperty(entryData, 'key');
 
-  abilityData = sortObjectByKey(abilityData);
+  entryData = sortObjectByKey(entryData);
 
-  finalCollection.set(abilityKey, abilityData);
+  finalCollection.set(entryKey, entryData);
 }
 
 dataToClipboard([...finalCollection.entries()]);

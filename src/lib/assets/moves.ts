@@ -15867,8 +15867,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '75',
       category: 'Physical',
-      desc: "f, on the previous turn, the user's last move missed, failed to affect each of its targets, or was prevented from being used due to an effect such as paralysis, Temper Flare's power is doubled from 75 to 150. If the user was recharging, grabbed by Sky Drop, or any target of the user's last move blocked it with a protection move such as Protect on the previous turn, Temper Flare's base power is not doubled.",
-      maxMovePower: 150,
+      desc: "If, on the previous turn, the user's last move missed, failed to affect each of its targets, or was prevented from being used due to an effect such as paralysis, Temper Flare's power is doubled from 75 to 150. If the user was recharging, grabbed by Sky Drop, or any target of the user's last move blocked it with a protection move such as Protect on the previous turn, Temper Flare's base power is not doubled.",
       name: 'Temper Flare',
       pp: 10,
       priority: 0,
@@ -15880,7 +15879,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
   [
     'dragoncheer',
     {
-      accuracy: 101,
+      accuracy: 100,
       basePower: '0',
       category: 'Status',
       name: 'Dragon Cheer',
@@ -15897,7 +15896,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     {
       accuracy: 100,
       basePower: '80',
-      maxMovePower: 160,
       category: 'Special',
       name: 'Fickle Beam',
       pp: 5,
@@ -15956,8 +15954,8 @@ export const moves = new Collection<string, PokemonTypes.Move>([
   [
     'burningbulwark',
     {
-      accuracy: 101,
-      basePower: '100',
+      accuracy: 100,
+      basePower: '0',
       category: 'Status',
       name: 'Burning Bulwark',
       desc: 'Burning Bulwark protects the user from all effects of moves that target it during the turn it is used, including damage. (This does not include damage at the end of a turn such as from weather or a status condition.) If Burning Bulwark blocks an attack that would make contact with the user, the attacker becomes burned, unless they are immune. (Moves that are blocked do not activate other effects that require making contact, like Rocky Helmet or Rough Skin. If the user goes last in the turn, the move will fail. The chance that Burning Bulwark will succeed also drops each time the user successfully and consecutively uses Endure, any protection move that only affects the user, Quick Guard, or Wide Guard. Each time, the chance of success is divided by 3. Some moves will do damage through Burning Bulwark. Moves that break protection, like Feint, will do their full damage and remove the effects of Burning Bulwark. The Ability Unseen Fist allows contact moves to bypass Burning Bulwark. Moves that target the user, moves that target the user and all allies, moves that target all Pokémon, and entry hazard moves cannot be blocked by Burning Bulwark. Burning Bulwark is an increased priority move that will go before most attacks in a turn.',

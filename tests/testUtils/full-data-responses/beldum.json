@@ -754,7 +754,10 @@
       "evYields": { "hp": 0, "attack": 0, "defense": 1, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": null,
       "flavorTexts": [
-        { "flavor": "They converse with one another by using magnetic pulses. In a swarm, they move in perfect unison.", "game": "Shining Pearl" }
+        {
+          "flavor": "All its cells are magnets. It communicates with others of its kind by transmitting magnetic forces from its body.",
+          "game": "Violet"
+        }
       ],
       "forme": null,
       "formeLetter": null,
@@ -1597,12 +1600,7 @@
           "eggGroups": ["Mineral"],
           "evYields": { "hp": 0, "attack": 0, "defense": 2, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": "20",
-          "flavorTexts": [
-            {
-              "flavor": "It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet.",
-              "game": "Shining Pearl"
-            }
-          ],
+          "flavorTexts": [{ "flavor": "It adores magnetic minerals, so it pursues Nosepass at speeds exceeding 60 mph.", "game": "Violet" }],
           "forme": null,
           "formeLetter": null,
           "gender": { "female": "0%", "male": "0%" },
@@ -10350,7 +10348,10 @@
               "evYields": { "hp": 0, "attack": 0, "defense": 3, "specialattack": 0, "specialdefense": 0, "speed": 0 },
               "evolutionLevel": "45",
               "flavorTexts": [
-                { "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.", "game": "Shining Pearl" }
+                {
+                  "flavor": "It firmly pins its prey using its four claws and large body. Then Metagross uses the mouth on its stomach to chew its prey to bits.",
+                  "game": "Violet"
+                }
               ],
               "forme": null,
               "formeLetter": null,

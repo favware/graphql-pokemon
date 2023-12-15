@@ -1906,10 +1906,10 @@
           }
         }
       ],
-      "baseSpecies": "Rattata",
+      "baseSpecies": "rattata",
       "baseStats": { "hp": 30, "attack": 56, "defense": 35, "specialattack": 25, "specialdefense": 35, "speed": 72 },
       "baseStatsTotal": 253,
-      "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pokémon)",
+      "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/rattata_(Pokémon)",
       "catchRate": { "base": 255, "percentageWithOrdinaryPokeballAtFullHealth": "43.9%" },
       "color": "Black",
       "cosmeticFormes": null,
@@ -3837,10 +3837,10 @@
               }
             }
           ],
-          "baseSpecies": "Raticate",
+          "baseSpecies": "raticate",
           "baseStats": { "hp": 75, "attack": 71, "defense": 70, "specialattack": 40, "specialdefense": 80, "speed": 77 },
           "baseStatsTotal": 413,
-          "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pokémon)",
+          "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/raticate_(Pokémon)",
           "catchRate": { "base": 127, "percentageWithOrdinaryPokeballAtFullHealth": "26%" },
           "color": "Black",
           "cosmeticFormes": null,

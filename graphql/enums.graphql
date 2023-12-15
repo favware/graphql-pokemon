@@ -2606,6 +2606,7 @@ enum MovesEnum {
   bulldoze
   bulletpunch
   bulletseed
+  burningbulwark
   burningjealousy
   burnup
   buzzybuzz
@@ -2693,6 +2694,7 @@ enum MovesEnum {
   dracometeor
   dragonascent
   dragonbreath
+  dragoncheer
   dragonclaw
   dragondance
   dragondarts
@@ -2750,6 +2752,7 @@ enum MovesEnum {
   feint
   feintattack
   fellstinger
+  ficklebeam
   fierydance
   fierywrath
   filletaway
@@ -3002,6 +3005,7 @@ enum MovesEnum {
   magnitude
   makeitrain
   maliciousmoonsault
+  malignantchain
   matblock
   matchagotcha
   maxairstream
@@ -3039,6 +3043,7 @@ enum MovesEnum {
   meteorbeam
   meteormash
   metronome
+  mightycleave
   milkdrink
   mimic
   mindblown
@@ -3364,8 +3369,10 @@ enum MovesEnum {
   teeterdance
   telekinesis
   teleport
+  temperflare
   tenmillionvoltthunderbolt
   terablast
+  terastarstorm
   terrainpulse
   thief
   thousandarrows

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.2.1](https://github.com/favware/graphql-pokemon/compare/v8.2.1...v8.2.1) - (2023-12-16)
+
+## 🐛 Bug Fixes
+
+- Add missing pecharunt entry ([c407a63](https://github.com/favware/graphql-pokemon/commit/c407a632e42d18e46fd4478a34378fe99c0c870e))
+
 # [8.2.0](https://github.com/favware/graphql-pokemon/compare/v8.2.0...v8.2.0) - (2023-12-15)
 
 ## 🏠 Refactor

@@ -2555,6 +2555,10 @@ describe('getAllPokemon', () => {
       {
         key: 'terapagosstellar',
         species: 'terapagos-stellar'
+      },
+      {
+        key: 'pecharunt',
+        species: 'pecharunt'
       }
     ]);
   });

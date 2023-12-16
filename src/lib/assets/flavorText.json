@@ -70025,6 +70025,16 @@
       "flavor_text": "It's thought that this Pokémon lived in ancient Paldea until it got caught in seismic shifts and went extinct."
     }
   ],
+  "1025": [
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It feeds others toxic mochi that draw out desires and capabilities. Those who eat the mochi fall under Pecharunt's control, chained to its will."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "Its peach-shaped shell serves as storage for a potent poison. It makes poisonous mochi and serves them to people and Pokémon."
+    }
+  ],
   "784totem": [
     {
       "version_id": "Ultra Sun",

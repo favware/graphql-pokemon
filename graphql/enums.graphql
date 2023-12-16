@@ -178,6 +178,7 @@ enum AbilitiesEnum {
   plus
   poisonheal
   poisonpoint
+  poisonpuppeteer
   poisontouch
   powerconstruct
   powerofalchemy
@@ -1739,6 +1740,7 @@ enum PokemonEnum {
   terapagos
   terapagosterastal
   terapagosstellar
+  pecharunt
 }
 
 "The supported items"

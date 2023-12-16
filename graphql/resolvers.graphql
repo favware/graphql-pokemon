@@ -117,7 +117,7 @@ type Query {
     offset: Int = 0
 
     "Return only this many results, starting from the offset"
-    take: Int = 1422
+    take: Int = 1423
 
     "Reverses the dataset before paginating"
     reverse: Boolean = false

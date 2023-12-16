@@ -3074,6 +3074,26 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 77
     }
+  ],
+  [
+    'pecharunt',
+    {
+      abilities: { first: 'poisonpuppeteer' },
+      baseStats: { hp: 88, atk: 88, def: 160, spa: 88, spd: 88, spe: 88 },
+      catchRate: { base: 3, percentageWithOrdinaryPokeballAtFullHealth: '1.6%' },
+      color: 'Purple',
+      eggGroups: ['Undiscovered'],
+      evYields: { hp: 0, atk: 0, def: 3, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 0.3,
+      isEggObtainable: false,
+      levellingRate: 'Slow',
+      minimumHatchTime: 30840,
+      num: 1025,
+      species: 'pecharunt',
+      types: [TypesEnum.Poison, TypesEnum.Ghost],
+      weightkg: 0.3
+    }
   ]
 ];
 

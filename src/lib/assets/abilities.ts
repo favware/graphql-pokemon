@@ -1407,6 +1407,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'poisonpuppeteer',
+    {
+      name: 'Poison Puppeteer',
+      shortDesc: "Pokémon poisoned by Pecharunt's moves will also become confused."
+    }
+  ],
+  [
     'poisontouch',
     {
       desc: "This Pokémon's contact moves have a 30% chance of poisoning. This effect comes after a move's inherent secondary effect chance.",

@@ -362,7 +362,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Berry Sweet'
     }
   ],
@@ -797,7 +796,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Clover Sweet'
     }
   ],
@@ -1259,7 +1257,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Porygon2 into Porygon-Z when traded.',
       gen: 4,
-      isNonstandard: IsNonStandard.Past,
       name: 'Dubious Disc'
     }
   ],
@@ -1348,7 +1345,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Electabuzz into Electivire when traded.',
       gen: 4,
-      isNonstandard: IsNonStandard.Past,
       name: 'Electirizer'
     }
   ],
@@ -1723,7 +1719,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Flower Sweet'
     }
   ],
@@ -2938,7 +2933,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Love Sweet'
     }
   ],
@@ -3083,7 +3077,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Magmar into Magmortar when traded.',
       gen: 4,
-      isNonstandard: IsNonStandard.Past,
       name: 'Magmarizer'
     }
   ],
@@ -4243,7 +4236,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Rhydon into Rhyperior when traded.',
       gen: 4,
-      isNonstandard: IsNonStandard.Past,
       name: 'Protector'
     }
   ],
@@ -4533,7 +4525,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Ribbon Sweet'
     }
   ],
@@ -5177,7 +5168,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
       gen: 3,
-      isNonstandard: IsNonStandard.Past,
       name: 'Soul Dew'
     }
   ],
@@ -5286,7 +5276,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Star Sweet'
     }
   ],
@@ -5385,7 +5374,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
       gen: 8,
-      isNonstandard: IsNonStandard.Past,
       name: 'Strawberry Sweet'
     }
   ],
@@ -6612,7 +6600,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Porygon into Porygon2 when traded.',
       gen: 2,
-      isNonstandard: IsNonStandard.Past,
       name: 'Up-Grade'
     }
   ],

@@ -198,16 +198,16 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
       - name: Download generated typings artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: typescript_bundle
           path: dist/
       - name: Download stored package.json
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: changelog_bundle
       - name: Setup Node for publishing to NPM
@@ -242,16 +242,16 @@ jobs:
           scope: '@favware'
           cache: yarn
       - name: Download generated typings artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: typescript_bundle
           path: dist/
       - name: Download stored package.json
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: package_bundle
       - name: Download stored changelog.md
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: changelog_bundle
       - name: Install Dependencies

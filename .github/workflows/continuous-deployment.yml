@@ -57,23 +57,6 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
     needs: Publish
-    steps:
-      - name: Update container on server
-        uses: favware/ssh-remote-action@v1
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
-          username: ${{ secrets.SSH_USERNAME }}
-          command: ${{ secrets.SSH_COMMAND }}
-          silent: true
-
-  UpdateOnServer:
-    name: Update running container on server
-    runs-on: ubuntu-latest
-    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
-    needs: ValidateAllData
     services:
       pokedex:
         image: ghcr.io/favware/graphql-pokemon:latest
@@ -99,6 +82,23 @@ jobs:
       - name: Run get-all-data
         working-directory: ./scripts/manual-tests
         run: python get-all-data.py
+
+  UpdateOnServer:
+    name: Update running container on server
+    runs-on: ubuntu-latest
+    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
+    needs: ValidateAllData
+    steps:
+      - name: Update container on server
+        uses: favware/ssh-remote-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
+          username: ${{ secrets.SSH_USERNAME }}
+          command: ${{ secrets.SSH_COMMAND }}
+          silent: true
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

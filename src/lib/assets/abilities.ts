@@ -1410,7 +1410,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'poisonpuppeteer',
     {
       name: 'Poison Puppeteer',
-      shortDesc: "Pokémon poisoned by Pecharunt's moves will also become confused."
+      shortDesc: 'If this Pokémon poisons or badly poisons a target, the target also becomes confused.'
     }
   ],
   [
@@ -2163,23 +2163,22 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'teraformzero',
     {
       name: 'Teraform Zero',
-      shortDesc:
-        'When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero.'
+      shortDesc: 'On switch-in, ends the effects of weather and terrain. Once per battle.'
     }
   ],
   [
     'terashell',
     {
+      desc: 'If this Pokémon is at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokémon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.',
       name: 'Tera Shell',
-      shortDesc:
-        "The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective."
+      shortDesc: 'If full HP, attacks taken have effectiveness changed to 0.5 unless naturally immune.'
     }
   ],
   [
     'terashift',
     {
       name: 'Tera Shift',
-      shortDesc: 'When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form.'
+      shortDesc: 'If this Pokémon is a Terapagos, it transforms into its Terastal Form on entry.'
     }
   ],
   [

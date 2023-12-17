@@ -104,7 +104,7 @@ jobs:
     name: Generate TypeScript, and SDL type information
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
-    needs: Publish
+    needs: ValidateAllData
     services:
       pokedex:
         image: ghcr.io/favware/graphql-pokemon:latest

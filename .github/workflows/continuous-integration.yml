@@ -13,7 +13,7 @@ jobs:
       - name: Add problem matcher
         run: echo "::add-matcher::.github/problemMatchers/eslint.json"
       - name: Use Node.js v20
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: yarn
@@ -44,7 +44,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
       - name: Use Node.js v20
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: yarn
@@ -63,7 +63,7 @@ jobs:
       - name: Add problem matcher
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v20
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: yarn

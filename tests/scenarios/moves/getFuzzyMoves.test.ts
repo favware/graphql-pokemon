@@ -1,5 +1,6 @@
 import { getFuzzyMoveName, getFuzzyMoveWithFullData } from '#test-utils/queries/moves';
 import { executeGraphQL } from '#test-utils/testUtils';
+import { IsNonStandard } from '#utils/isNonStandardEnum';
 
 describe('getFuzzyMove', () => {
   describe('Fuzzy Move name only requests', () => {
@@ -72,7 +73,7 @@ describe('getFuzzyMove', () => {
           desc: 'No additional effect.',
           isFieldMove: null,
           isGMax: null,
-          isNonstandard: 'Past',
+          isNonstandard: IsNonStandard.Past,
           isZ: 'Decidium Z'
         },
         {
@@ -148,7 +149,7 @@ describe('getFuzzyMove', () => {
           desc: null,
           isFieldMove: null,
           isGMax: null,
-          isNonstandard: 'Past',
+          isNonstandard: IsNonStandard.Past,
           isZ: 'Psychium Z'
         },
         {

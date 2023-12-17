@@ -3288,6 +3288,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'metalalloy',
+    {
+      desc: 'Evolves Duraludon into Archaludon when used.',
+      gen: 9,
+      name: 'Metal Alloy'
+    }
+  ],
+  [
     'metalcoat',
     {
       desc: "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
@@ -6902,14 +6910,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Zygarde Cube',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
-    }
-  ],
-  [
-    'metalalloy',
-    {
-      desc: 'Evolves Duraludon into Archaludon when used.',
-      gen: 9,
-      name: 'Metal Alloy'
     }
   ]
 ]);

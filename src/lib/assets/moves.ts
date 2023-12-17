@@ -258,6 +258,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'alluringvoice',
+    {
+      accuracy: 100,
+      basePower: '80',
+      category: 'Special',
+      desc: 'Has a 100% chance to confuse the target if it had a stat stage raised this turn.',
+      name: 'Alluring Voice',
+      pp: 10,
+      priority: 0,
+      shortDesc: '100% confuse target that had a stat rise this turn.',
+      target: 'Normal',
+      type: 'Fairy'
+    }
+  ],
+  [
     'allyswitch',
     {
       accuracy: 100,
@@ -6104,6 +6119,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: "Raises the user's Defense by 1.",
       target: 'Self',
       type: 'Normal'
+    }
+  ],
+  [
+    'hardpress',
+    {
+      accuracy: 100,
+      basePower: 'Power varies between 1 and 100, and is greater the more HP the target has',
+      category: 'Physical',
+      desc: "Power is equal to 120 * (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
+      name: 'Hard Press',
+      pp: 10,
+      priority: 0,
+      shortDesc: 'More power the more HP the target has left.',
+      target: 'Normal',
+      type: 'Steel'
     }
   ],
   [
@@ -13908,6 +13938,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
     }
   ],
   [
+    'supercellslam',
+    {
+      accuracy: 95,
+      basePower: '100',
+      category: 'Physical',
+      desc: 'If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokémon with the Magic Guard Ability are unaffected by crash damage.',
+      name: 'Supercell Slam',
+      pp: 15,
+      priority: 0,
+      shortDesc: 'User is hurt by 50% of its max HP if it misses.',
+      target: 'Normal',
+      type: 'Electric'
+    }
+  ],
+  [
     'superfang',
     {
       accuracy: 90,
@@ -15943,51 +15988,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       pp: 10,
       priority: 2,
       shortDesc: "Goes first. Raises user's evasion by 1.",
-      target: 'Normal',
-      type: 'Electric'
-    }
-  ],
-  [
-    'alluringvoice',
-    {
-      accuracy: 100,
-      basePower: '80',
-      category: 'Special',
-      desc: 'Has a 100% chance to confuse the target if it had a stat stage raised this turn.',
-      name: 'Alluring Voice',
-      pp: 10,
-      priority: 0,
-      shortDesc: '100% confuse target that had a stat rise this turn.',
-      target: 'Normal',
-      type: 'Fairy'
-    }
-  ],
-  [
-    'hardpress',
-    {
-      accuracy: 100,
-      basePower: 'Power varies between 1 and 100, and is greater the more HP the target has',
-      category: 'Physical',
-      desc: "Power is equal to 120 * (target's current HP / target's maximum HP), rounded half down, but not less than 1.",
-      name: 'Hard Press',
-      pp: 10,
-      priority: 0,
-      shortDesc: 'More power the more HP the target has left.',
-      target: 'Normal',
-      type: 'Steel'
-    }
-  ],
-  [
-    'supercellslam',
-    {
-      accuracy: 95,
-      basePower: '100',
-      category: 'Physical',
-      desc: 'If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokémon with the Magic Guard Ability are unaffected by crash damage.',
-      name: 'Supercell Slam',
-      pp: 15,
-      priority: 0,
-      shortDesc: 'User is hurt by 50% of its max HP if it misses.',
       target: 'Normal',
       type: 'Electric'
     }

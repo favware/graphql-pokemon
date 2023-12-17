@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.3.0](https://github.com/favware/graphql-pokemon/compare/v8.3.0...v8.3.0) - (2023-12-17)
+
+## 🏠 Refactor
+
+- Resort moves items and moves alphabetically ([e38272b](https://github.com/favware/graphql-pokemon/commit/e38272b613107e68e527f9f642eb402b4101794a))
+- Update data [skip publish] ([70fac71](https://github.com/favware/graphql-pokemon/commit/70fac7170cb733930707a34a1904cffa5876588c))
+
+## 🐛 Bug Fixes
+
+- Update formats and learnsets ([407da17](https://github.com/favware/graphql-pokemon/commit/407da1754312b28c092bd190369ea9ae8d8459d2))
+- **abilities:** Update descriptions for Poison Puppeteer, Teraform Zero, Tera Shell, and Tera Shift ([5597534](https://github.com/favware/graphql-pokemon/commit/5597534af2c12a1ebc3491cb5d1c0809c05ec1ba))
+- **items:** Mark items added in Indigo Disk as available in generation 9 ([9e01c90](https://github.com/favware/graphql-pokemon/commit/9e01c9053d121178f1f01f46c01aaa6e8acea36e))
+
+## 🚀 Features
+
+- Update graphql enums with the added items and moves ([9811807](https://github.com/favware/graphql-pokemon/commit/981180753f8fd88317a7f6032580507ad9987ecd))
+- **moves:** Update to Indigo Disk data. This includes descriptions, marking moves as available for gen9, and adding moves "Alluring Voice", "Hard Press", and "Supercell Slam" ([a8e95cb](https://github.com/favware/graphql-pokemon/commit/a8e95cbd922f1ff6ce75c4c1a61313bdd9ea87f9))
+- **items:** Add Metal Alloy ([cee8fec](https://github.com/favware/graphql-pokemon/commit/cee8fecfb1b5c6a4fb3f1988af18c59f64744257))
+
+## 🧪 Testing
+
+- Update test data ([23d6d52](https://github.com/favware/graphql-pokemon/commit/23d6d52190e3ae843841c9c2e7495a87454eb197))
+
 # [8.2.1](https://github.com/favware/graphql-pokemon/compare/v8.2.1...v8.2.1) - (2023-12-16)
 
 ## 🐛 Bug Fixes

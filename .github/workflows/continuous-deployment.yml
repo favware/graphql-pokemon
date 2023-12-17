@@ -52,8 +52,8 @@ jobs:
           repository: favware/graphql-pokemon
           short-description: Extensive Pokemon GraphQL API
 
-  UpdateOnServer:
-    name: Update running container on server
+  ValidateAllData:
+    name: Validate all data
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
     needs: Publish
@@ -68,6 +68,37 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           command: ${{ secrets.SSH_COMMAND }}
           silent: true
+
+  UpdateOnServer:
+    name: Update running container on server
+    runs-on: ubuntu-latest
+    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
+    needs: ValidateAllData
+    services:
+      pokedex:
+        image: ghcr.io/favware/graphql-pokemon:latest
+        options: >-
+          --health-cmd "nc -z localhost 4000"
+          --health-interval 10s
+          --health-timeout 10s
+          --health-retries 6
+          --health-start-period 5s
+        ports:
+          - 4000:4000
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install Dependencies
+        working-directory: ./scripts/manual-tests
+        run: pip install -r requirements.txt
+      - name: Run get-all-data
+        working-directory: ./scripts/manual-tests
+        run: python get-all-data.py
 
   GenerateTypings:
     name: Generate TypeScript, and SDL type information

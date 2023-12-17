@@ -22261,6 +22261,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Hails from the Johto region. Though usually curled into a ball due to its timid disposition, it harbors tremendous firepower."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It usually stays hunched over. If it is angry or surprised, it shoots flames out of its back."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The fire that spouts from its back burns hottest when it is angry. The flaring flames intimidate foes."
     }
   ],
   "156": [
@@ -22363,6 +22371,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This creature's fur is most mysterious—it is wholly impervious to the burning touch of flame. Should Quilava turn its back to you, take heed! Such a posture indicates a forthcoming attack."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "Before battle, it turns its back on its opponent to demonstrate how ferociously its fire blazes."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "The fur covering this Pokémon's body never burns, no matter what. It can shrug off any kind of fire attack."
     }
   ],
   "157": [
@@ -22465,6 +22481,14 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "Said to purify lost, forsaken souls with its flames and guide them to the afterlife. I believe its form has been influenced by the energy of the sacred mountain towering at Hisui's center."
+    },
+    {
+      "version_id": "Scarlet",
+      "flavor_text": "It has a secret, devastating move. It rubs its blazing fur to cause huge explosions."
+    },
+    {
+      "version_id": "Violet",
+      "flavor_text": "If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames."
     }
   ],
   "158": [
@@ -42150,7 +42174,7 @@
     },
     {
       "version_id": "Violet",
-      "flavor_text": "A rough customer that wildly flails its giant claws It is said to be extremely hard to raise."
+      "flavor_text": "A rough customer that wildly flails its giant claws. It is said to be extremely hard to raise."
     }
   ],
   "343": [

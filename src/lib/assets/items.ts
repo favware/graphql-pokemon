@@ -6903,6 +6903,14 @@ export const items = new Collection<string, PokemonTypes.Item>([
       name: 'Zygarde Cube',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
     }
+  ],
+  [
+    'metalalloy',
+    {
+      desc: 'Evolves Duraludon into Archaludon when used.',
+      gen: 9,
+      name: 'Metal Alloy'
+    }
   ]
 ]);
 

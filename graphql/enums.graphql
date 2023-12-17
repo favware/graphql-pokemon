@@ -2109,6 +2109,7 @@ enum ItemsEnum {
   membercard
   mentalherb
   metagrossite
+  metalalloy
   metalcoat
   metalpowder
   meteorite
@@ -2527,6 +2528,7 @@ enum MovesEnum {
   aircutter
   airslash
   alloutpummeling
+  alluringvoice
   allyswitch
   amnesia
   anchorshot
@@ -2875,6 +2877,7 @@ enum MovesEnum {
   hammerarm
   happyhour
   harden
+  hardpress
   haze
   headbutt
   headcharge
@@ -3338,6 +3341,7 @@ enum MovesEnum {
   suckerpunch
   sunnyday
   sunsteelstrike
+  supercellslam
   superfang
   superpower
   supersonic

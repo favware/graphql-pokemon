@@ -132,7 +132,7 @@ jobs:
       - name: Generate GraphQL Schema code
         run: yarn codegen
       - name: Upload typescript bundle to artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: typescript_bundle
           path: dist/
@@ -174,13 +174,13 @@ jobs:
         env:
           CI: false
       - name: Store bumped package.json
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: package_bundle
           path: package.json
           if-no-files-found: error
       - name: Store bumped changelog.md
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: changelog_bundle
           path: CHANGELOG.md

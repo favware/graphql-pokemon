@@ -22,7 +22,7 @@ jobs:
     if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v2.10.0
       - name: Login to DockerHub
@@ -70,7 +70,7 @@ jobs:
           - 4000:4000
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -118,7 +118,7 @@ jobs:
           - 4000:4000
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Add problem matchers
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v20
@@ -145,7 +145,7 @@ jobs:
     needs: GenerateTypings
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.BOT_TOKEN }}
@@ -196,7 +196,7 @@ jobs:
     needs: GitHubCreateTag
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Download generated typings artifact
         uses: actions/download-artifact@v3
         with:
@@ -233,7 +233,7 @@ jobs:
     needs: GitHubCreateTag
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node for publishing to Github
         uses: actions/setup-node@v3
         with:

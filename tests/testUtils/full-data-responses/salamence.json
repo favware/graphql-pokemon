@@ -9047,6 +9047,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "breakingswipe",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Breaking_Swipe_(move)",
+                "category": "Physical",
+                "contestType": null,
+                "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Breaking Swipe",
+                "pp": 15,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/breakingswipe.shtml",
+                "shortDesc": "100% chance to lower the foe(s) Attack by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/breaking-swipe",
+                "target": "Adjacent Foes",
+                "type": "Dragon",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "brickbreak",
                 "accuracy": 100,
                 "basePower": "75",
@@ -9125,6 +9151,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "doubleedge",
+                "accuracy": 100,
+                "basePower": "120",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Double-edge_(move)",
+                "category": "Physical",
+                "contestType": "Tough",
+                "desc": "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 140,
+                "name": "Double-Edge",
+                "pp": 15,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/doubleedge.shtml",
+                "shortDesc": "Has 33% recoil.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/double-edge",
+                "target": "Normal",
+                "type": "Normal",
+                "zMovePower": 190
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "dracometeor",
                 "accuracy": 90,
                 "basePower": "130",
@@ -9146,6 +9198,32 @@
                 "target": "Normal",
                 "type": "Dragon",
                 "zMovePower": 195
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "dragoncheer",
+                "accuracy": 100,
+                "basePower": "0",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dragon_Cheer_(move)",
+                "category": "Status",
+                "contestType": null,
+                "desc": null,
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Dragon Cheer",
+                "pp": 15,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/dragoncheer.shtml",
+                "shortDesc": "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/dragon-cheer",
+                "target": "Ally's Side",
+                "type": "Dragon",
+                "zMovePower": 0
               }
             },
             {
@@ -10186,6 +10264,32 @@
                 "target": "Normal",
                 "type": "Normal",
                 "zMovePower": 175
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "temperflare",
+                "accuracy": 100,
+                "basePower": "75",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Temper_Flare_(move)",
+                "category": "Physical",
+                "contestType": null,
+                "desc": "If, on the previous turn, the user's last move missed, failed to affect each of its targets, or was prevented from being used due to an effect such as paralysis, Temper Flare's power is doubled from 75 to 150. If the user was recharging, grabbed by Sky Drop, or any target of the user's last move blocked it with a protection move such as Protect on the previous turn, Temper Flare's base power is not doubled.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Temper Flare",
+                "pp": 10,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/temperflare.shtml",
+                "shortDesc": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/temper-flare",
+                "target": "Normal",
+                "type": "Fire",
+                "zMovePower": 140
               }
             },
             {
@@ -19877,6 +19981,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "breakingswipe",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Breaking_Swipe_(move)",
+                    "category": "Physical",
+                    "contestType": null,
+                    "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Breaking Swipe",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/breakingswipe.shtml",
+                    "shortDesc": "100% chance to lower the foe(s) Attack by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/breaking-swipe",
+                    "target": "Adjacent Foes",
+                    "type": "Dragon",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "brickbreak",
                     "accuracy": 100,
                     "basePower": "75",
@@ -19955,6 +20085,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "doubleedge",
+                    "accuracy": 100,
+                    "basePower": "120",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Double-edge_(move)",
+                    "category": "Physical",
+                    "contestType": "Tough",
+                    "desc": "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 140,
+                    "name": "Double-Edge",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/doubleedge.shtml",
+                    "shortDesc": "Has 33% recoil.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/double-edge",
+                    "target": "Normal",
+                    "type": "Normal",
+                    "zMovePower": 190
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "dracometeor",
                     "accuracy": 90,
                     "basePower": "130",
@@ -19976,6 +20132,32 @@
                     "target": "Normal",
                     "type": "Dragon",
                     "zMovePower": 195
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "dragoncheer",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dragon_Cheer_(move)",
+                    "category": "Status",
+                    "contestType": null,
+                    "desc": null,
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Dragon Cheer",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/dragoncheer.shtml",
+                    "shortDesc": "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/dragon-cheer",
+                    "target": "Ally's Side",
+                    "type": "Dragon",
+                    "zMovePower": 0
                   }
                 },
                 {
@@ -21016,6 +21198,32 @@
                     "target": "Normal",
                     "type": "Normal",
                     "zMovePower": 175
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "temperflare",
+                    "accuracy": 100,
+                    "basePower": "75",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Temper_Flare_(move)",
+                    "category": "Physical",
+                    "contestType": null,
+                    "desc": "If, on the previous turn, the user's last move missed, failed to affect each of its targets, or was prevented from being used due to an effect such as paralysis, Temper Flare's power is doubled from 75 to 150. If the user was recharging, grabbed by Sky Drop, or any target of the user's last move blocked it with a protection move such as Protect on the previous turn, Temper Flare's base power is not doubled.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Temper Flare",
+                    "pp": 10,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/temperflare.shtml",
+                    "shortDesc": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/temper-flare",
+                    "target": "Normal",
+                    "type": "Fire",
+                    "zMovePower": 140
                   }
                 },
                 {
@@ -28330,6 +28538,32 @@
                     {
                       "generation": 9,
                       "move": {
+                        "key": "doubleedge",
+                        "accuracy": 100,
+                        "basePower": "120",
+                        "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Double-edge_(move)",
+                        "category": "Physical",
+                        "contestType": "Tough",
+                        "desc": "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+                        "isFieldMove": null,
+                        "isGMax": null,
+                        "isNonstandard": null,
+                        "isZ": null,
+                        "maxMovePower": 140,
+                        "name": "Double-Edge",
+                        "pp": 15,
+                        "priority": 0,
+                        "serebiiPage": "https://www.serebii.net/attackdex-swsh/doubleedge.shtml",
+                        "shortDesc": "Has 33% recoil.",
+                        "smogonPage": "https://www.smogon.com/dex/ss/moves/double-edge",
+                        "target": "Normal",
+                        "type": "Normal",
+                        "zMovePower": 190
+                      }
+                    },
+                    {
+                      "generation": 9,
+                      "move": {
                         "key": "dracometeor",
                         "accuracy": 90,
                         "basePower": "130",
@@ -28351,6 +28585,32 @@
                         "target": "Normal",
                         "type": "Dragon",
                         "zMovePower": 195
+                      }
+                    },
+                    {
+                      "generation": 9,
+                      "move": {
+                        "key": "dragoncheer",
+                        "accuracy": 100,
+                        "basePower": "0",
+                        "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dragon_Cheer_(move)",
+                        "category": "Status",
+                        "contestType": null,
+                        "desc": null,
+                        "isFieldMove": null,
+                        "isGMax": null,
+                        "isNonstandard": null,
+                        "isZ": null,
+                        "maxMovePower": null,
+                        "name": "Dragon Cheer",
+                        "pp": 15,
+                        "priority": 0,
+                        "serebiiPage": "https://www.serebii.net/attackdex-swsh/dragoncheer.shtml",
+                        "shortDesc": "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+                        "smogonPage": "https://www.smogon.com/dex/ss/moves/dragon-cheer",
+                        "target": "Ally's Side",
+                        "type": "Dragon",
+                        "zMovePower": 0
                       }
                     },
                     {
@@ -29105,6 +29365,32 @@
                         "target": "Normal",
                         "type": "Normal",
                         "zMovePower": 175
+                      }
+                    },
+                    {
+                      "generation": 9,
+                      "move": {
+                        "key": "temperflare",
+                        "accuracy": 100,
+                        "basePower": "75",
+                        "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Temper_Flare_(move)",
+                        "category": "Physical",
+                        "contestType": null,
+                        "desc": "If, on the previous turn, the user's last move missed, failed to affect each of its targets, or was prevented from being used due to an effect such as paralysis, Temper Flare's power is doubled from 75 to 150. If the user was recharging, grabbed by Sky Drop, or any target of the user's last move blocked it with a protection move such as Protect on the previous turn, Temper Flare's base power is not doubled.",
+                        "isFieldMove": null,
+                        "isGMax": null,
+                        "isNonstandard": null,
+                        "isZ": null,
+                        "maxMovePower": null,
+                        "name": "Temper Flare",
+                        "pp": 10,
+                        "priority": 0,
+                        "serebiiPage": "https://www.serebii.net/attackdex-swsh/temperflare.shtml",
+                        "shortDesc": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed.",
+                        "smogonPage": "https://www.smogon.com/dex/ss/moves/temper-flare",
+                        "target": "Normal",
+                        "type": "Fire",
+                        "zMovePower": 140
                       }
                     },
                     {

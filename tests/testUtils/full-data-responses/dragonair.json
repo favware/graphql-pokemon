@@ -8456,6 +8456,32 @@
             {
               "generation": 9,
               "move": {
+                "key": "breakingswipe",
+                "accuracy": 100,
+                "basePower": "60",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Breaking_Swipe_(move)",
+                "category": "Physical",
+                "contestType": null,
+                "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": 110,
+                "name": "Breaking Swipe",
+                "pp": 15,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/breakingswipe.shtml",
+                "shortDesc": "100% chance to lower the foe(s) Attack by 1.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/breaking-swipe",
+                "target": "Adjacent Foes",
+                "type": "Dragon",
+                "zMovePower": 120
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
                 "key": "chillingwater",
                 "accuracy": 100,
                 "basePower": "50",
@@ -8503,6 +8529,32 @@
                 "target": "Normal",
                 "type": "Dragon",
                 "zMovePower": 195
+              }
+            },
+            {
+              "generation": 9,
+              "move": {
+                "key": "dragoncheer",
+                "accuracy": 100,
+                "basePower": "0",
+                "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dragon_Cheer_(move)",
+                "category": "Status",
+                "contestType": null,
+                "desc": null,
+                "isFieldMove": null,
+                "isGMax": null,
+                "isNonstandard": null,
+                "isZ": null,
+                "maxMovePower": null,
+                "name": "Dragon Cheer",
+                "pp": 15,
+                "priority": 0,
+                "serebiiPage": "https://www.serebii.net/attackdex-swsh/dragoncheer.shtml",
+                "shortDesc": "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+                "smogonPage": "https://www.smogon.com/dex/ss/moves/dragon-cheer",
+                "target": "Ally's Side",
+                "type": "Dragon",
+                "zMovePower": 0
               }
             },
             {
@@ -18332,6 +18384,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "breakingswipe",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Breaking_Swipe_(move)",
+                    "category": "Physical",
+                    "contestType": null,
+                    "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Breaking Swipe",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/breakingswipe.shtml",
+                    "shortDesc": "100% chance to lower the foe(s) Attack by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/breaking-swipe",
+                    "target": "Adjacent Foes",
+                    "type": "Dragon",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "chillingwater",
                     "accuracy": 100,
                     "basePower": "50",
@@ -18379,6 +18457,32 @@
                     "target": "Normal",
                     "type": "Dragon",
                     "zMovePower": 195
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "dragoncheer",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dragon_Cheer_(move)",
+                    "category": "Status",
+                    "contestType": null,
+                    "desc": null,
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Dragon Cheer",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/dragoncheer.shtml",
+                    "shortDesc": "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/dragon-cheer",
+                    "target": "Ally's Side",
+                    "type": "Dragon",
+                    "zMovePower": 0
                   }
                 },
                 {
@@ -28233,6 +28337,32 @@
                 {
                   "generation": 9,
                   "move": {
+                    "key": "breakingswipe",
+                    "accuracy": 100,
+                    "basePower": "60",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Breaking_Swipe_(move)",
+                    "category": "Physical",
+                    "contestType": null,
+                    "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": 110,
+                    "name": "Breaking Swipe",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/breakingswipe.shtml",
+                    "shortDesc": "100% chance to lower the foe(s) Attack by 1.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/breaking-swipe",
+                    "target": "Adjacent Foes",
+                    "type": "Dragon",
+                    "zMovePower": 120
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
                     "key": "chillingwater",
                     "accuracy": 100,
                     "basePower": "50",
@@ -28280,6 +28410,32 @@
                     "target": "Normal",
                     "type": "Dragon",
                     "zMovePower": 195
+                  }
+                },
+                {
+                  "generation": 9,
+                  "move": {
+                    "key": "dragoncheer",
+                    "accuracy": 100,
+                    "basePower": "0",
+                    "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Dragon_Cheer_(move)",
+                    "category": "Status",
+                    "contestType": null,
+                    "desc": null,
+                    "isFieldMove": null,
+                    "isGMax": null,
+                    "isNonstandard": null,
+                    "isZ": null,
+                    "maxMovePower": null,
+                    "name": "Dragon Cheer",
+                    "pp": 15,
+                    "priority": 0,
+                    "serebiiPage": "https://www.serebii.net/attackdex-swsh/dragoncheer.shtml",
+                    "shortDesc": "The user raises its allies' morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+                    "smogonPage": "https://www.smogon.com/dex/ss/moves/dragon-cheer",
+                    "target": "Ally's Side",
+                    "type": "Dragon",
+                    "zMovePower": 0
                   }
                 },
                 {

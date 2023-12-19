@@ -933,7 +933,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'Brown',
       eggGroups: ['Mineral'],
       evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 1, spe: 0 },
-      evoLevel: 35,
+      evoLevel: 'use Dusk Stone',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.7,
       isEggObtainable: true,

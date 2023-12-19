@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.3.1](https://github.com/favware/graphql-pokemon/compare/v8.3.1...v8.3.1) - (2023-12-19)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([f983884](https://github.com/favware/graphql-pokemon/commit/f983884b7ee38ae9c444f218c709db950f2bb1f9))
+
+## 🐛 Bug Fixes
+
+- Fixed evolution condition for doublade ([9d6c947](https://github.com/favware/graphql-pokemon/commit/9d6c947c014bc8e3f028205aeb65afaadb28a9e2))
+- Fixed evolution condition for florges ([8eae40b](https://github.com/favware/graphql-pokemon/commit/8eae40b6ef84e595073bb4ae9c5bca32cc679d94))
+
 # [8.3.0](https://github.com/favware/graphql-pokemon/compare/v8.3.0...v8.3.0) - (2023-12-17)
 
 ## 🏠 Refactor

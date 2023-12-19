@@ -654,7 +654,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       cosmeticFormes: ['Florges-Blue', 'Florges-Orange', 'Florges-White', 'Florges-Yellow'],
       eggGroups: ['Fairy'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 3, spe: 0 },
-      evoLevel: 19,
+      evoLevel: 'use Shiny Stone',
       genderRatio: { male: '0%', female: '100%' },
       heightm: 1.1,
       isEggObtainable: true,

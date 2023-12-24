@@ -954,7 +954,6 @@
       "maximumHatchTime": 10536,
       "minimumHatchTime": 10280,
       "num": 374,
-      "otherFormes": null,
       "serebiiPage": "https://www.serebii.net/pokedex-sv/beldum",
       "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/beldum.gif",
       "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/beldum.gif",
@@ -1981,7 +1980,6 @@
           "maximumHatchTime": 10536,
           "minimumHatchTime": 10280,
           "num": 375,
-          "otherFormes": null,
           "serebiiPage": "https://www.serebii.net/pokedex-sv/metang",
           "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/metang.gif",
           "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/metang.gif",
@@ -12518,7 +12516,6 @@
               "maximumHatchTime": 10536,
               "minimumHatchTime": 10280,
               "num": 376,
-              "otherFormes": ["metagrossmega"],
               "serebiiPage": "https://www.serebii.net/pokedex-sv/metagross",
               "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/metagross.gif",
               "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/metagross.gif",
@@ -12614,6 +12611,7 @@
           "preevolutions": null
         }
       ],
+      "otherFormes": null,
       "preevolutions": null
     }
   }

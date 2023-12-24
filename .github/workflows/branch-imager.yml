@@ -31,7 +31,7 @@ jobs:
         run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
       - name: Build and push Docker image
         id: docker_build
-        uses: docker/build-push-action@v3.3.1
+        uses: docker/build-push-action@v5.1.0
         with:
           push: true
           context: .

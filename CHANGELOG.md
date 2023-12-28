@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.3.2](https://github.com/favware/graphql-pokemon/compare/v8.3.2...v8.3.2) - (2023-12-28)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([3c53921](https://github.com/favware/graphql-pokemon/commit/3c539213b5d893a162fc731f93313b2fc205b4f2))
+- Update data [skip publish] ([eb4adea](https://github.com/favware/graphql-pokemon/commit/eb4adea8e54056f1983cba57387bc4e27e642731))
+- Update data [skip publish] ([d7596f8](https://github.com/favware/graphql-pokemon/commit/d7596f861aa4b2d76b8c78ec7bbbaa4d996c64a9))
+- Update data [skip publish] ([dcf5d68](https://github.com/favware/graphql-pokemon/commit/dcf5d68d58e290c18a735a56b8f433076a249089))
+- Update data [skip publish] ([12c8d15](https://github.com/favware/graphql-pokemon/commit/12c8d1530b653da4c2d99be5ecf3da019d5b2320))
+- Update data [skip publish] ([6a1540f](https://github.com/favware/graphql-pokemon/commit/6a1540f7ac671ea18bf84f08e0b7766aad482be2))
+
+## 🐛 Bug Fixes
+
+- **moves:** Update description for Tera Blast ([b15a070](https://github.com/favware/graphql-pokemon/commit/b15a0704b33ab4dcefe6375d060f3ef555634951))
+- **abilities:** Update descriptions for Teraform Zero and Tera Shidt ([d1a2b74](https://github.com/favware/graphql-pokemon/commit/d1a2b74c4a6629957399086cde7e987a01bd45e4))
+- Correct various gigantamax form heights ([e3f8412](https://github.com/favware/graphql-pokemon/commit/e3f84129d8e29a000bfc050eb9e19154e593d3e5))
+
+## 🧪 Testing
+
+- Update test data ([ead5d30](https://github.com/favware/graphql-pokemon/commit/ead5d30dec9047ea9f34f935d196599a8e7941e6))
+
 # [8.3.1](https://github.com/favware/graphql-pokemon/compare/v8.3.1...v8.3.1) - (2023-12-19)
 
 ## 🏠 Refactor

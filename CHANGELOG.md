@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.3.3](https://github.com/favware/graphql-pokemon/compare/v8.3.3...v8.3.3) - (2023-12-28)
+
+## 🐛 Bug Fixes
+
+- Fixed species for `palafinhero` so the sprite gives the correct URL ([c745f24](https://github.com/favware/graphql-pokemon/commit/c745f245af8677f9150090a4205c1872161b4db2))
+
 # [8.3.2](https://github.com/favware/graphql-pokemon/compare/v8.3.2...v8.3.2) - (2023-12-28)
 
 ## 🏠 Refactor

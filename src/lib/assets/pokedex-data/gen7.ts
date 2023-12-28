@@ -3395,7 +3395,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       forme: 'Gmax',
       formeLetter: 'G',
       genderRatio: { male: '0%', female: '0%' },
-      heightm: 20,
+      heightm: 25,
       isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 30840,

@@ -2163,15 +2163,15 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'teraformzero',
     {
       name: 'Teraform Zero',
-      shortDesc: 'On switch-in, ends the effects of weather and terrain. Once per battle.'
+      shortDesc: 'Terapagos: Terastallizing ends the effects of weather and terrain. Once per battle.'
     }
   ],
   [
     'terashell',
     {
-      desc: 'If this Pokémon is at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokémon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.',
+      desc: 'If this Pokemon is a Terapagos at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokemon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.',
       name: 'Tera Shell',
-      shortDesc: 'If full HP, attacks taken have effectiveness changed to 0.5 unless naturally immune.'
+      shortDesc: 'Terapagos: If full HP, attacks taken have 0.5x effectiveness unless naturally immune.'
     }
   ],
   [

@@ -1432,7 +1432,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 964,
       prevo: 'finizen',
       otherFormes: ['palafin'],
-      species: 'palafinhero',
+      species: 'palafin-hero',
       types: [TypesEnum.Water],
       weightkg: 97.4
     }

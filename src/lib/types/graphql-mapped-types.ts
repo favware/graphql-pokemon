@@ -288,7 +288,7 @@ interface Pokemon {
   /** The dex number for a Pokémon */
   num: number;
   /** Any other forms for a Pokémon */
-  otherFormes?: Maybe<Array<string>>;
+  otherFormes?: Maybe<Array<Pokemon>>;
   /** The preevolutions for a Pokémon, if any */
   preevolutions?: Maybe<Array<Pokemon>>;
   /** Serebii page for a Pokémon */

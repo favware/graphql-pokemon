@@ -72,7 +72,6 @@ export const getPokemonWithFullData = gql`
       maximumHatchTime
       minimumHatchTime
       num
-      otherFormes
       serebiiPage
       shinyBackSprite
       shinySprite

@@ -1377,6 +1377,7 @@ __metadata:
     graphql: "npm:^16.8.1"
     graphql-parse-resolve-info: "npm:^4.14.0"
     graphql-tag: "npm:^2.12.6"
+    json-stream-stringify: "npm:^3.1.1"
     koa: "npm:^2.14.2"
     koa-bodyparser: "npm:^4.4.1"
     lint-staged: "npm:^15.2.0"
@@ -6859,6 +6860,13 @@ __metadata:
     jsonify: "npm:^0.0.1"
     object-keys: "npm:^1.1.1"
   checksum: 2889eca4f39574905bde288791d3fcc79fc9952f445a5fefb82af175a7992ec48c64161421c1e142f553a14a5f541de2e173cb22ce61d7fffc36d4bb44720541
+  languageName: node
+  linkType: hard
+
+"json-stream-stringify@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "json-stream-stringify@npm:3.1.1"
+  checksum: db6234d7afe5b933aee6b8d6328fb2816850ab6c1741ce3b335f29d866e9dad7fc1f0ca0d7961bd75145d3d9e6b725d73169de09982cb465537becf20ba3a36b
   languageName: node
   linkType: hard
 

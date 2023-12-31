@@ -2385,7 +2385,7 @@ describe('getAllPokemon', () => {
       { key: 'palafin', species: 'palafin' },
       {
         key: 'palafinhero',
-        species: 'palafinhero'
+        species: 'palafin-hero'
       },
       { key: 'varoom', species: 'varoom' },
       { key: 'revavroom', species: 'revavroom' },

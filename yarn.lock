@@ -1363,7 +1363,7 @@ __metadata:
     "@types/cheerio": "npm:^0.22.35"
     "@types/koa": "npm:^2.13.12"
     "@types/koa-bodyparser": "npm:^4.3.12"
-    "@types/koa__cors": "npm:^4.0.3"
+    "@types/koa__cors": "npm:^5.0.0"
     "@types/node": "npm:^20.10.5"
     "@typescript-eslint/eslint-plugin": "npm:^6.15.0"
     "@typescript-eslint/parser": "npm:^6.15.0"
@@ -2745,12 +2745,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa__cors@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@types/koa__cors@npm:4.0.3"
+"@types/koa__cors@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@types/koa__cors@npm:5.0.0"
   dependencies:
     "@types/koa": "npm:*"
-  checksum: ca7bfd1ffacf6c425393e2716a88d66dfe1b5e9a32cd92253cc846fa95bd7fd44c1dc848252f13b7febb5bccf23b8e88716b051cfa04d18fa31e0768432dccb7
+  checksum: ad8e6a482f1bb0e357e0051faec328a75e2978a24065a953032d5dba58ac08edf5ca66b03059551f0faf9e085b15ee7892e6ab03c9500af4be8bd258965479c9
   languageName: node
   linkType: hard
 

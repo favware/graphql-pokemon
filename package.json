@@ -56,7 +56,7 @@
     "graphql": "^16.8.1"
   },
   "devDependencies": {
-    "@apollo/server": "^4.9.5",
+    "@apollo/server": "^4.10.0",
     "@as-integrations/koa": "^1.1.1",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
@@ -82,8 +82,8 @@
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa__cors": "^5.0.0",
     "@types/node": "^20.10.6",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
     "@vitest/coverage-v8": "^0.34.6",
     "async": "^3.2.5",
     "colorette": "^2.0.20",
@@ -93,6 +93,7 @@
     "eslint-plugin-prettier": "^5.1.2",
     "graphql-parse-resolve-info": "^4.14.0",
     "graphql-tag": "^2.12.6",
+    "json-stream-stringify": "^3.1.1",
     "koa": "^2.15.0",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.2.0",

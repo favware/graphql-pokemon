@@ -1,6 +1,7 @@
 import { RootResolver } from '#resolvers/RootResolver';
 import { defaultDocument, defaultVariables } from '#root/defaultDocument';
 import { RootTypedef } from '#utils/grapqhl-root-typedef-resolver';
+import { stringifyResult } from '#utils/stringifyResult';
 import { ApolloServer } from '@apollo/server';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
@@ -27,7 +28,8 @@ const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof Server
         variables: defaultVariables,
         embed: true
       })
-    ]
+    ],
+    stringifyResult
   });
 
   await apolloServer.start();

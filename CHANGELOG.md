@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.4.0](https://github.com/favware/graphql-pokemon/compare/v8.4.0...v8.4.0) - (2024-01-04)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([586cb40](https://github.com/favware/graphql-pokemon/commit/586cb40e851543859999b92c3b5c7bed619e582a))
+- Update apollo server and implement streaming JSON.stringify for the result ([db34157](https://github.com/favware/graphql-pokemon/commit/db34157fa7212dd9a71beadb3f37ad963be0b7b2))
+
+## 🚀 Features
+
+- Add utilities for parsing graphql-pokemon data (#925) ([af3bea5](https://github.com/favware/graphql-pokemon/commit/af3bea51567fb66c90001080506b8bf02131a7c0))
+
 # [8.3.3](https://github.com/favware/graphql-pokemon/compare/v8.3.3...v8.3.3) - (2023-12-28)
 
 ## 🐛 Bug Fixes

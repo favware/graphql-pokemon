@@ -1,5 +1,8 @@
 {
   "extends": ["@sapphire"],
+  "rules": {
+    "@typescript-eslint/unified-signatures": "off"
+  },
   "overrides": [
     {
       "files": ["src/lib/assets/learnsets.ts"],

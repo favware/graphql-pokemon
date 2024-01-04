@@ -100,8 +100,8 @@ jobs:
           command: ${{ secrets.SSH_COMMAND }}
           silent: true
 
-  GenerateTypings:
-    name: Generate TypeScript, and SDL type information
+  GeneratePackage:
+    name: Generate JavaScript companion library
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
     needs: ValidateAllData
@@ -129,12 +129,12 @@ jobs:
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
-      - name: Generate GraphQL Schema code
+      - name: Generate library code
         run: yarn package
       - name: Upload typescript bundle to artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: typescript_bundle
+          name: package_bundle
           path: dist/
           if-no-files-found: error
 
@@ -142,7 +142,7 @@ jobs:
     name: Create tag on GitHub
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
-    needs: GenerateTypings
+    needs: GeneratePackage
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -200,7 +200,7 @@ jobs:
       - name: Download generated typings artifact
         uses: actions/download-artifact@v4
         with:
-          name: typescript_bundle
+          name: package_bundle
           path: dist/
       - name: Download stored package.json
         uses: actions/download-artifact@v4
@@ -244,7 +244,7 @@ jobs:
       - name: Download generated typings artifact
         uses: actions/download-artifact@v4
         with:
-          name: typescript_bundle
+          name: package_bundle
           path: dist/
       - name: Download stored package.json
         uses: actions/download-artifact@v4

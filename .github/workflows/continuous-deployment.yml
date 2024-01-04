@@ -176,13 +176,13 @@ jobs:
       - name: Store bumped package.json
         uses: actions/upload-artifact@v4
         with:
-          name: package_bundle
+          name: package_json
           path: package.json
           if-no-files-found: error
       - name: Store bumped changelog.md
         uses: actions/upload-artifact@v4
         with:
-          name: changelog_bundle
+          name: changelog_md
           path: CHANGELOG.md
           if-no-files-found: error
       - name: Push changes
@@ -205,11 +205,11 @@ jobs:
       - name: Download stored package.json
         uses: actions/download-artifact@v4
         with:
-          name: package_bundle
+          name: package_json
       - name: Download stored changelog.md
         uses: actions/download-artifact@v4
         with:
-          name: changelog_bundle
+          name: changelog_md
       - name: Setup Node for publishing to NPM
         uses: actions/setup-node@v4
         with:
@@ -249,11 +249,11 @@ jobs:
       - name: Download stored package.json
         uses: actions/download-artifact@v4
         with:
-          name: package_bundle
+          name: package_json
       - name: Download stored changelog.md
         uses: actions/download-artifact@v4
         with:
-          name: changelog_bundle
+          name: changelog_md
       - name: Install Dependencies
         run: yarn --immutable
       - name: Publish to Github

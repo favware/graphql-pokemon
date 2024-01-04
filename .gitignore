@@ -38,6 +38,7 @@ api/
 dist/
 codegen/
 docs/magidoc/
+docs/typedoc/
 
 ## Scripts
 scripts/data-gen-scripts/flavor-text-updater/failed-pokemon.json

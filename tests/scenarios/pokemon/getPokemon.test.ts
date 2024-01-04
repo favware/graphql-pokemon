@@ -150,7 +150,7 @@ describe('getPokemon', () => {
         shinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/greninja.gif',
         smogonPage: 'https://www.smogon.com/dex/sv/pokemon/greninja',
         baseForme: null,
-        smogonTier: 'OU',
+        smogonTier: 'UU',
         species: 'greninja',
         sprite: 'https://play.pokemonshowdown.com/sprites/ani/greninja.gif',
         types: [{ name: 'Water' }, { name: 'Dark' }],

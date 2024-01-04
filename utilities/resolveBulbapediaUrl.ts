@@ -3,10 +3,9 @@ import { isCapPokemon, isM00, isMissingNo } from './guards';
 import { parseBulbapediaURL } from './parseBulbapediaUrl';
 
 /**
- * Transforms the Bulbapedia URL for a given Pokemon to a Markdown masked URL.
+ * Transforms the Bulbapedia URL for a given Pokemon.
  *
- * This function takes in the details of a Pokemon and returns the corresponding Bulbapedia URL in
- * markdown format.
+ * This function takes in the details of a Pokemon and returns the corresponding Bulbapedia URL
  * - If the Pokemon is MissingNo, it returns the URL for MissingNo on Bulbapedia.
  * - If the Pokemon is M00, it returns the URL for M00 on Bulbapedia.
  *
@@ -31,11 +30,9 @@ import { parseBulbapediaURL } from './parseBulbapediaUrl';
 export function resolveBulbapediaURL(pokemon: Pokemon) {
   if (isCapPokemon(pokemon)) throw new RangeError('This function does not work for CAP or PokéStar Pokémon.');
 
-  const url = isMissingNo(pokemon)
+  return isMissingNo(pokemon)
     ? 'https://bulbapedia.bulbagarden.net/wiki/MissingNo.'
     : isM00(pokemon)
       ? "https://bulbapedia.bulbagarden.net/wiki/'M_(00)"
       : parseBulbapediaURL(pokemon.bulbapediaPage);
-
-  return `[Bulbapedia](<${url}>)`;
 }

@@ -24,11 +24,11 @@ import { parseBulbapediaURL } from './parseBulbapediaUrl';
  *   level: 25
  * };
  *
- * const url = resolveBulbapediaEmbeddedURL(pokeDetails);
+ * const url = resolveBulbapediaURL(pokeDetails);
  * // Returns: "[Bulbapedia](<https://bulbapedia.bulbagarden.net/wiki/Pikachu>)"
  * ```
  */
-export function resolveBulbapediaEmbeddedURL(pokemon: Pokemon) {
+export function resolveBulbapediaURL(pokemon: Pokemon) {
   if (isCapPokemon(pokemon)) throw new RangeError('This function does not work for CAP or PokéStar Pokémon.');
 
   const url = isMissingNo(pokemon)

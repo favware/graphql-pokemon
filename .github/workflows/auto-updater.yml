@@ -9,6 +9,22 @@ jobs:
   DataUpdater:
     name: Automatic Data Update
     runs-on: ubuntu-latest
+    services:
+      flaresolverr:
+        image: ghcr.io/flaresolverr/flaresolverr:latest
+        env:
+          LOG_LEVEL: info
+          LOG_HTML: false
+          CAPTCHA_SOLVER: none
+          TZ: Europe/London
+        options: >-
+          --health-cmd "nc -z localhost 8191"
+          --health-interval 10s
+          --health-timeout 10s
+          --health-retries 6
+          --health-start-period 5s
+        ports:
+          - 8191:8191
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -26,9 +42,8 @@ jobs:
         run: yarn au:tiers
       - name: Run Learnsets updater
         run: yarn au:learnsets
-      # Disabled until I find a way to bypass CloudFlare captcha
-      # - name: Run Flavor Text Updater
-      #   run: yarn au:flavors
+      - name: Run Flavor Text Updater
+        run: yarn au:flavors
       - name: Build code
         run: yarn build
       - name: Start server in the background

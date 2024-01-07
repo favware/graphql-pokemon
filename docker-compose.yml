@@ -10,5 +10,17 @@ services:
       - '8080:4000'
     restart: 'no'
 
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    environment:
+      - LOG_LEVEL=info
+      - LOG_HTML=false
+      - CAPTCHA_SOLVER=none
+      - TZ=Europe/London
+    ports:
+      - '8191:8191'
+    restart: no
+
 networks:
   pokedex:

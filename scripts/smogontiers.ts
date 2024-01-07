@@ -4,7 +4,7 @@ import { objectEntries } from '@sapphire/utilities';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
-import { importFileFromWeb, type GitCommit } from './utils.js';
+import { importFileFromWeb, userAgentHeader, type GitCommit } from './utils.js';
 
 const shaTrackerFileUrl = new URL('sha-tracker.json', import.meta.url);
 const formatsFileUrl = new URL('../src/lib/assets/formats.json', import.meta.url);
@@ -16,7 +16,7 @@ url.searchParams.append('path', 'data/formats-data.ts');
 url.searchParams.append('since', timestamp);
 
 const [commits, { default: ciData }] = await Promise.all([
-  fetch<GitCommit[]>(url, FetchResultTypes.JSON), //
+  fetch<GitCommit[]>(url, { headers: userAgentHeader }, FetchResultTypes.JSON), //
   // @ts-expect-error Node supports URLs just fine
   import(shaTrackerFileUrl, { assert: { type: 'json' } }) //
 ]);

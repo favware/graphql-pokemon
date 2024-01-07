@@ -1,5 +1,6 @@
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
-import { rm, writeFile } from 'node:fs/promises';
+import { readFile, rm, writeFile } from 'node:fs/promises';
+import { platform, release } from 'node:os';
 import ts from 'typescript';
 
 export function mapToJson<K extends PropertyKey, V extends object>(map: Map<K, V>): string {
@@ -7,7 +8,7 @@ export function mapToJson<K extends PropertyKey, V extends object>(map: Map<K, V
 }
 
 export async function importFileFromWeb<T extends object>({ url, temporaryFileName }): Promise<T> {
-  const body = await fetch(url, FetchResultTypes.Text);
+  const body = await fetch(url, { headers: userAgentHeader }, FetchResultTypes.Text);
 
   const result = ts.transpileModule(body, {
     compilerOptions: {
@@ -49,3 +50,8 @@ export function replacePokeWithAccentedPoke(input: string) {
 export interface GitCommit {
   sha: string;
 }
+
+const packageJsonRaw = await readFile(new URL('../package.json', import.meta.url), 'utf8');
+const { version, repository } = JSON.parse(packageJsonRaw);
+const userAgent = `@favware/graphql-pokemon/${version} (NodeJS) ${platform()}/${release()} (${repository.url.slice(4)})`;
+export const userAgentHeader = { 'User-Agent': userAgent };

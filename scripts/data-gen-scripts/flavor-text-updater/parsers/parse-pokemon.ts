@@ -2,6 +2,7 @@ import { flavorsModule } from '#utils/flavorsModule';
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
 import { red, yellow } from 'colorette';
 import * as cheerio from 'https://cdn.skypack.dev/cheerio';
+import { userAgentHeader } from '../../../utils.js';
 import { log } from '../append-to-log.js';
 import type { ParsedPokemon } from '../constants';
 import { getCurrentSession } from '../flaresolverr-session-management';
@@ -26,6 +27,7 @@ export async function parsePokemon(pokemon: ParsedPokemon) {
     {
       method: FetchMethods.Post,
       headers: {
+        ...userAgentHeader,
         'Content-Type': FetchMediaContentTypes.JSON
       },
       body: JSON.stringify({

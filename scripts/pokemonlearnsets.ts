@@ -4,7 +4,7 @@ import { objectEntries } from '@sapphire/utilities';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
-import { importFileFromWeb, mapToJson, type GitCommit } from './utils.js';
+import { importFileFromWeb, mapToJson, userAgentHeader, type GitCommit } from './utils.js';
 
 const filePrefix = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
@@ -26,7 +26,7 @@ url.searchParams.append('path', 'data/learnsets.ts');
 url.searchParams.append('since', timestamp);
 
 const [commits, { default: ciData }] = await Promise.all([
-  fetch<GitCommit[]>(url, FetchResultTypes.JSON), //
+  fetch<GitCommit[]>(url, { headers: userAgentHeader }, FetchResultTypes.JSON), //
   // @ts-expect-error Node supports URLs just fine
   import(shaTrackerFileUrl, { assert: { type: 'json' } }) //
 ]);

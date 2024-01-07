@@ -1,4 +1,5 @@
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
+import { userAgentHeader } from '../../utils';
 import type { FlareSolverrSessionCreateResponse } from './types';
 
 let currentSession: string;
@@ -13,6 +14,7 @@ export async function createFlaresolverrSession(): Promise<void> {
     {
       method: FetchMethods.Post,
       headers: {
+        ...userAgentHeader,
         'Content-Type': FetchMediaContentTypes.JSON
       },
       body: JSON.stringify({
@@ -35,6 +37,7 @@ export async function destroySession(): Promise<void> {
     {
       method: FetchMethods.Post,
       headers: {
+        ...userAgentHeader,
         'Content-Type': FetchMediaContentTypes.JSON
       },
       body: JSON.stringify({

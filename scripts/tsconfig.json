@@ -1,10 +1,10 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../tsconfig.base.json",
   "include": ["."],
   "compilerOptions": {
     "strict": false,
     "resolveJsonModule": true,
-    "baseUrl": "../../src",
+    "baseUrl": "../src",
     "paths": {
       "#assets/*": ["./lib/assets/*"],
       "#jsonAssets/*.json": ["./lib/assets/*.json"],

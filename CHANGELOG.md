@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.4.1](https://github.com/favware/graphql-pokemon/compare/v8.4.1...v8.4.1) - (2024-01-07)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([bbe3eba](https://github.com/favware/graphql-pokemon/commit/bbe3eba0fc8cf54db72f80a1bbe8b6de3b960d82))
+
+## 🐛 Bug Fixes
+
+- Update formats data ([3b56a24](https://github.com/favware/graphql-pokemon/commit/3b56a2434837d6ccc162666be3e7f4898aebeff2))
+- Fixed published bundle files ([cc9df0e](https://github.com/favware/graphql-pokemon/commit/cc9df0e934c1b698ddcf2cc2fee7ad6f80643b99))
+
 # [8.4.0](https://github.com/favware/graphql-pokemon/compare/v8.4.0...v8.4.0) - (2024-01-04)
 
 ## 🏠 Refactor

@@ -26,8 +26,9 @@ jobs:
         run: yarn au:tiers
       - name: Run Learnsets updater
         run: yarn au:learnsets
-      - name: Run Flavor Text Updater
-        run: yarn au:flavors
+      # Disabled until I find a way to bypass CloudFlare captcha
+      # - name: Run Flavor Text Updater
+      #   run: yarn au:flavors
       - name: Build code
         run: yarn build
       - name: Start server in the background

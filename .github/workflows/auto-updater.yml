@@ -17,12 +17,6 @@ jobs:
           LOG_HTML: false
           CAPTCHA_SOLVER: none
           TZ: Europe/London
-        options: >-
-          --health-cmd "nc -z localhost 8191"
-          --health-interval 10s
-          --health-timeout 10s
-          --health-retries 6
-          --health-start-period 5s
         ports:
           - 8191:8191
     steps:
@@ -42,6 +36,11 @@ jobs:
         run: yarn au:tiers
       - name: Run Learnsets updater
         run: yarn au:learnsets
+      - name: Wait for Flaresolverr to be online
+        working-directory: ./scripts
+        run: ./wait-for-port.sh
+        env:
+          PORT: 8191
       - name: Run Flavor Text Updater
         run: yarn au:flavors
       - name: Build code

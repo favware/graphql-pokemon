@@ -63,7 +63,7 @@
     "au:learnsets": "yarn tsx ./scripts/pokemonlearnsets.ts",
     "au:testdata": "yarn tsx scripts/update-test-files.ts",
     "au:flavors": "yarn tsx ./scripts/data-gen-scripts/flavor-text-updater/flavor-text-updater.ts",
-    "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/data-gen-scripts/tsconfig.json"
+    "tsx": "tsx --experimental-network-imports --tsconfig ./scripts`/tsconfig.json"
   },
   "dependencies": {
     "graphql": "^16.8.1"

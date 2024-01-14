@@ -51,14 +51,14 @@ for (const pokemon of parsedPokemon) {
   await destroyFlaresolverrSession();
 }
 
-await log("Done fetching and storing data in memory, sorting version_id's", green, true, false);
+await log({ msg: "Done fetching and storing data in memory, sorting version_id's", color: green, isBold: true, isIndent: false });
 
 gameSorter(flavorsModule);
 
-await log('Done sorting, Formatting and writing to disk', green, true, false);
+await log({ msg: 'Done sorting, Formatting and writing to disk', color: green, isBold: true, isIndent: false });
 
 const formatted = await format(JSON.stringify(flavorsModule, null, 4), { parser: 'json', ...prettierConfig });
 await writeFile(pathToFlavorTextFile, formatted, { encoding: 'utf-8' });
-await log('Done writing to disk', green, true, false);
+await log({ msg: 'Done writing to disk', color: green, isBold: true, isIndent: false });
 
 await writeFile(failedPokemonTextFile, JSON.stringify(getFailedPokemon(), null, 4), { encoding: 'utf-8' });

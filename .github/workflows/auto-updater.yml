@@ -68,3 +68,9 @@ jobs:
             git commit -sam "refactor: update data [skip publish]";
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
           fi
+      - name: Create artifact of formats data log file
+        uses: actions/upload-artifact@v4
+        with:
+          name: formats_log_file
+          path: scripts/data-gen-scripts/flavor-text-updater/output.log
+          if-no-files-found: error

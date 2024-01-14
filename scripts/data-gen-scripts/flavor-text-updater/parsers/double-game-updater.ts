@@ -20,7 +20,12 @@ export async function doubleGameUpdater(
   const game2Based = getTextContent(textSplitByNewLine?.find((e) => regexGame21.test(e)));
 
   const gameData = game1Based || game2Based;
-  await log(`${logPrefix}Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, yellow, false, true);
+  await log({
+    msg: `${logPrefix}Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`,
+    color: yellow,
+    isBold: false,
+    isIndent: true
+  });
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -55,7 +60,7 @@ export async function doubleGameUpdater(
         }
       ];
     }
-    await log(`${logPrefix}Stored new ${game1}-${game2} Combined entries in flavor texts`, green, false, true);
+    await log({ msg: `${logPrefix}Stored new ${game1}-${game2} Combined entries in flavor texts`, color: green, isBold: false, isIndent: true });
   }
 
   return Boolean(gameData);

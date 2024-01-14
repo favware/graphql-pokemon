@@ -22,6 +22,8 @@ const failedPokemon = [];
 export async function parsePokemon(pokemon: ParsedPokemon) {
   const logPrefix = `${pokemon.species} (${pokemon.number}${pokemon.forme ?? ''}) - `;
 
+  await log({ msg: `${logPrefix}Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });
+
   const response = await fetch<FlareSolverrResponse>(
     'http://localhost:8191/v1',
     {
@@ -39,13 +41,13 @@ export async function parsePokemon(pokemon: ParsedPokemon) {
     },
     FetchResultTypes.JSON
   );
-  await log(`${logPrefix}Fetched data`, yellow, false, true);
+  await log({ msg: `${logPrefix}Fetched data`, color: yellow, isBold: false, isIndent: true });
 
   const $ = cheerio.load(response.solution.response);
-  await log(`${logPrefix}Loaded text into cheerio`, yellow, false, true);
+  await log({ msg: `${logPrefix}Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
   const text = $('#wpTextbox1').text();
-  await log(`${logPrefix}Loaded text element`, yellow, false, true);
+  await log({ msg: `${logPrefix}Loaded text element`, color: yellow, isBold: false, isIndent: true });
 
   const results = (
     await Promise.all([
@@ -66,7 +68,7 @@ export async function parsePokemon(pokemon: ParsedPokemon) {
       pokemon,
       text
     });
-    await log(`${logPrefix}Did not store data for Pokemon`, red, false, true);
+    await log({ msg: `${logPrefix}Did not store data for Pokemon`, color: red, isBold: false, isIndent: true });
   }
 }
 

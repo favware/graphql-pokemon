@@ -32,7 +32,12 @@ export async function tripleGameUpdater(
 
   const gameData = game123Based || game132Based || game213Based || game231Based || game321Based || game312Based;
 
-  await log(`${logPrefix}Retrieved ${game1}-${game2}-${game3} Combined data, it is ${gameData ? 'defined' : 'not defined'}`, yellow, false, true);
+  await log({
+    msg: `${logPrefix}Retrieved ${game1}-${game2}-${game3} Combined data, it is ${gameData ? 'defined' : 'not defined'}`,
+    color: yellow,
+    isBold: false,
+    isIndent: true
+  });
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -82,7 +87,12 @@ export async function tripleGameUpdater(
       ];
     }
 
-    await log(`${logPrefix}Stored new ${game1}-${game2}-${game3} Combined entries in flavor texts`, green, false, true);
+    await log({
+      msg: `${logPrefix}Stored new ${game1}-${game2}-${game3} Combined entries in flavor texts`,
+      color: green,
+      isBold: false,
+      isIndent: true
+    });
   }
 
   return Boolean(gameData);

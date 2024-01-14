@@ -16,7 +16,12 @@ export async function singleGameUpdater(
   const textSplitByNewLine = text?.split('\n');
   const gameData = getTextContent(textSplitByNewLine?.find((e) => regexGame.test(e)));
 
-  await log(`${logPrefix}Retrieved ${game} data, it is ${gameData ? 'defined' : 'not defined'}`, yellow, false, true);
+  await log({
+    msg: `${logPrefix}Retrieved ${game} data, it is ${gameData ? 'defined' : 'not defined'}`,
+    color: yellow,
+    isBold: false,
+    isIndent: true
+  });
 
   if (gameData) {
     if (flavorTexts[pokemon.number]) {
@@ -38,7 +43,7 @@ export async function singleGameUpdater(
       ];
     }
 
-    await log(`${logPrefix}Stored new ${game} Singular entry in flavor texts`, green, false, true);
+    await log({ msg: `${logPrefix}Stored new ${game} Singular entry in flavor texts`, color: green, isBold: false, isIndent: true });
   }
 
   return Boolean(gameData);

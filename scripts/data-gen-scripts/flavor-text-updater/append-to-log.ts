@@ -2,6 +2,14 @@ import { bold } from 'colorette';
 import { appendFile } from 'node:fs/promises';
 import { logFile } from './constants.js';
 
+interface LogParamaters {
+  bypassCiCheck?: boolean;
+  msg: string;
+  color: (msg: string) => string;
+  isBold: boolean;
+  isIndent: boolean;
+}
+
 /**
  * Logs a message with the specified log level, color, and formatting options.
  * @param msg - The message to be logged.
@@ -9,16 +17,22 @@ import { logFile } from './constants.js';
  * @param isBold - Indicates whether the message should be displayed in bold.
  * @param isIndent - Indicates whether the message should be indented.
  */
-export async function log(msg: string, color: (msg: string) => string, isBold: boolean, isIndent: boolean) {
-  if (isBold) {
-    console.log(bold(color(msg)));
+export async function log({ msg, color, isBold, isIndent, bypassCiCheck = false }: LogParamaters) {
+  if (process.env.CI) {
+    if (bypassCiCheck) {
+      logToConsole({ msg, color, isBold });
+    }
   } else {
-    console.log(color(msg));
+    logToConsole({ msg, color, isBold });
   }
 
-  await appendToLog(msg, isIndent);
+  await appendToLog({ msg, isIndent });
 }
 
-async function appendToLog(data: string, indent = true) {
-  await appendFile(logFile, `\n${indent ? '\t' : ''}${data}`, { encoding: 'utf-8' });
+function logToConsole({ msg, color, isBold }: Omit<LogParamaters, 'isIndent' | 'bypassCiCheck'>) {
+  console.log(isBold ? bold(color(msg)) : color(msg));
+}
+
+async function appendToLog({ msg, isIndent = true }: Pick<LogParamaters, 'msg' | 'isIndent'>) {
+  await appendFile(logFile, `\n${isIndent ? '\t' : ''}${msg}`, { encoding: 'utf-8' });
 }

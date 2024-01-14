@@ -1,14 +1,13 @@
 import { pokedex } from '#assets/pokedex.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { flavorsModule } from '#utils/flavorsModule';
-import { eachLimit } from 'async';
 import { green } from 'colorette';
 import { access, appendFile, writeFile } from 'node:fs/promises';
 import { format } from 'prettier';
 import prettierConfig from '../../../.prettierrc.mjs';
 import { log } from './append-to-log.js';
 import { logFile, type ParsedPokemon } from './constants.js';
-import { createFlaresolverrSession, destroySession } from './flaresolverr-session-management.js';
+import { createFlaresolverrSession, destroyFlaresolverrSession } from './flaresolverr-session-management.js';
 import { gameSorter } from './game-sorter.js';
 import { getFailedPokemon, parsePokemon } from './parsers/parse-pokemon.js';
 
@@ -46,15 +45,11 @@ for (const dexEntry of pokedex.values()) {
   }
 }
 
-await createFlaresolverrSession();
-
-const firstPokemon = parsedPokemon.shift();
-
-await parsePokemon(firstPokemon);
-
-await eachLimit(parsedPokemon, 10, parsePokemon);
-
-await destroySession();
+for (const pokemon of parsedPokemon) {
+  await createFlaresolverrSession();
+  await parsePokemon(pokemon);
+  await destroyFlaresolverrSession();
+}
 
 await log("Done fetching and storing data in memory, sorting version_id's", green, true, false);
 

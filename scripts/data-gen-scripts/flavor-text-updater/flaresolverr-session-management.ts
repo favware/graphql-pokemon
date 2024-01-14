@@ -1,6 +1,6 @@
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
-import { userAgentHeader } from '../../utils';
-import type { FlareSolverrSessionCreateResponse } from './types';
+import { userAgentHeader } from '../../utils.js';
+import type { FlareSolverrSessionCreateResponse } from './types.js';
 
 let currentSession: string;
 
@@ -31,7 +31,7 @@ export async function createFlaresolverrSession(): Promise<void> {
  * Destroys the current FlareSolverr session.
  * @returns A promise that resolves when the session is destroyed.
  */
-export async function destroySession(): Promise<void> {
+export async function destroyFlaresolverrSession(): Promise<void> {
   await fetch<FlareSolverrSessionCreateResponse>(
     'http://localhost:8191/v1',
     {

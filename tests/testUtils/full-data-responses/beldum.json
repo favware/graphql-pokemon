@@ -6867,7 +6867,7 @@
                   "levelUpMoves": [
                     {
                       "generation": 5,
-                      "level": 44,
+                      "level": 38,
                       "move": {
                         "key": "agility",
                         "accuracy": 100,
@@ -6948,7 +6948,7 @@
                     },
                     {
                       "generation": 5,
-                      "level": 56,
+                      "level": 50,
                       "move": {
                         "key": "hyperbeam",
                         "accuracy": 90,
@@ -7056,7 +7056,7 @@
                     },
                     {
                       "generation": 5,
-                      "level": 48,
+                      "level": 44,
                       "move": {
                         "key": "meteormash",
                         "accuracy": 90,
@@ -7137,7 +7137,7 @@
                     },
                     {
                       "generation": 5,
-                      "level": 28,
+                      "level": 23,
                       "move": {
                         "key": "pursuit",
                         "accuracy": 100,
@@ -7218,7 +7218,7 @@
                     },
                     {
                       "generation": 5,
-                      "level": 52,
+                      "level": 29,
                       "move": {
                         "key": "zenheadbutt",
                         "accuracy": 90,

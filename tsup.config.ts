@@ -1,18 +1,42 @@
-import { defineConfig } from 'tsup';
+import { defineConfig, type Options } from 'tsup';
 
-export default defineConfig({
-  outDir: 'api',
+const baseConfig: Options = {
   clean: true,
-  dts: false,
-  entry: ['src/**/*.ts', '!src/**/*.d.ts'],
-  format: ['esm'],
+  dts: true,
   minify: false,
   skipNodeModulesBundle: true,
   sourcemap: true,
-  target: 'esnext',
-  tsconfig: 'src/tsconfig.json',
-  bundle: false,
-  shims: false,
+  target: 'es2020',
+  tsconfig: './tsconfig.package.json',
   keepNames: true,
-  splitting: false
-});
+  treeshake: true
+};
+
+export default [
+  defineConfig({
+    ...baseConfig,
+    outDir: 'dist/codegen/cjs',
+    format: 'cjs',
+    entry: ['codegen/graphql-pokemon.ts']
+  }),
+  defineConfig({
+    ...baseConfig,
+    outDir: 'dist/codegen/esm',
+    format: 'esm',
+    entry: ['codegen/graphql-pokemon.ts'],
+    outExtension: () => ({ js: '.mjs' })
+  }),
+  defineConfig({
+    ...baseConfig,
+    outDir: 'dist/utilities/cjs',
+    format: 'cjs',
+    entry: ['utilities/index.ts']
+  }),
+  defineConfig({
+    ...baseConfig,
+    outDir: 'dist/utilities/esm',
+    format: 'esm',
+    entry: ['utilities/index.ts'],
+    outExtension: () => ({ js: '.mjs' })
+  })
+];

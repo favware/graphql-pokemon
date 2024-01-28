@@ -3,9 +3,9 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "runtimeArgs": ["run-script", "start"],
+      "runtimeArgs": ["run", "start"],
       "name": "Debugger",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "bun",
       "skipFiles": ["<node_internals>/**", "node_modules/tslib/**"],
       "internalConsoleOptions": "openOnSessionStart",
       "env": {

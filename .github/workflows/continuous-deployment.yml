@@ -122,15 +122,11 @@ jobs:
       - name: Add problem matchers
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Generate library code
-        run: yarn package
+        run: bun run package
       - name: Upload typescript bundle to artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -150,13 +146,9 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.BOT_TOKEN }}
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Configure Git
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
@@ -170,7 +162,7 @@ jobs:
         uses: kenji-miyake/setup-git-cliff@v2
       - name: Bump semver
         if: ${{ ! contains(github.event.head_commit.message, '[skip bump]') }}
-        run: yarn bump --no-skip-tag --no-skip-changelog
+        run: bun run bump --no-skip-tag --no-skip-changelog
         env:
           CI: false
       - name: Store bumped package.json
@@ -211,13 +203,9 @@ jobs:
         with:
           name: changelog_md
       - name: Setup Node for publishing to NPM
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Publish to NPM
         run: |
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN}
@@ -235,12 +223,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
       - name: Setup Node for publishing to Github
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@favware'
-          cache: yarn
+        uses: oven-sh/setup-bun@v1
       - name: Download generated typings artifact
         uses: actions/download-artifact@v4
         with:
@@ -255,7 +238,7 @@ jobs:
         with:
           name: changelog_md
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Publish to Github
         run: |
           yarn config set npmAuthToken ${NODE_AUTH_TOKEN}

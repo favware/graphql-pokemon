@@ -27,15 +27,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Generate Magidoc
-        run: yarn docs
+        run: bun run docs
       - name: Add static files
         run: |
           printf "User-agent: *\nDisallow:" > docs/magidoc/robots.txt

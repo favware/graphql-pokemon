@@ -25,35 +25,31 @@ jobs:
         with:
           token: ${{ secrets.BOT_TOKEN }}
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Run Smogon Tiers updater
-        run: yarn au:tiers
+        run: bun run au:tiers
       - name: Run Learnsets updater
-        run: yarn au:learnsets
+        run: bun run au:learnsets
       - name: Wait for Flaresolverr to be online
         working-directory: ./scripts
         run: ./wait-for-port.sh
         env:
           PORT: 8191
       - name: Run Flavor Text Updater
-        run: yarn au:flavors
+        run: bun run au:flavors
       - name: Build code
-        run: yarn build
+        run: bun run build
       - name: Start server in the background
         working-directory: ./scripts
         run: |
-          yarn start &
+          bun run start &
           ./wait-for-port.sh
       - name: Update test data
-        run: yarn au:testdata
+        run: bun run au:testdata
       - name: Run prettier on the code
-        run: yarn format
+        run: bun run format
       - name: Commit any changes and create a pull request
         env:
           GITHUB_USER: github-actions[bot]

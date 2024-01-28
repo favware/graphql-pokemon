@@ -13,15 +13,11 @@ jobs:
       - name: Add problem matcher
         run: echo "::add-matcher::.github/problemMatchers/eslint.json"
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Run ESLint
-        run: yarn lint --fix=false
+        run: bun run lint --fix=false
 
   CodeQL:
     name: Codequality
@@ -44,15 +40,11 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v4
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Run tests
-        run: yarn test
+        run: bun run test
 
   Building:
     name: Compile source code
@@ -63,14 +55,10 @@ jobs:
       - name: Add problem matcher
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v20
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
+        uses: oven-sh/setup-bun@v1
       - name: Install Dependencies
-        run: yarn --immutable
+        run: bun install --frozen-lockfile
       - name: Typecheck
-        run: yarn typecheck
+        run: bun run typecheck
       - name: Build Code
-        run: yarn build
+        run: bun run build

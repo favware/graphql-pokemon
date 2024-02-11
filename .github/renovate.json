@@ -1,5 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sapphiredev/.github:sapphire-renovate"],
-  "commitBody": "[skip publish]"
+  "commitBody": "[skip publish]",
+  "npm": {
+    "packageRules": [
+      {
+        "matchPackagePatterns": ["@types/node"],
+        "enabled": false
+      }
+    ]
+  }
 }

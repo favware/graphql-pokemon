@@ -71,8 +71,8 @@
   "devDependencies": {
     "@apollo/server": "^4.10.0",
     "@as-integrations/koa": "^1.1.1",
-    "@commitlint/cli": "^18.6.0",
-    "@commitlint/config-conventional": "^18.6.0",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "@discordjs/collection": "^2.0.0",
     "@favware/cliff-jumper": "^2.2.3",
     "@graphql-codegen/cli": "^5.0.2",
@@ -80,7 +80,7 @@
     "@graphql-codegen/typescript": "^4.0.4",
     "@graphql-codegen/typescript-resolvers": "^4.0.4",
     "@koa/cors": "^5.0.0",
-    "@magidoc/cli": "^4.1.2",
+    "@magidoc/cli": "^4.1.4",
     "@sapphire/eslint-config": "^5.0.3",
     "@sapphire/fetch": "^3.0.2",
     "@sapphire/prettier-config": "^2.0.0",
@@ -88,7 +88,7 @@
     "@sapphire/timestamp": "^1.0.3",
     "@sapphire/ts-config": "^5.0.0",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.4.0",
+    "@swc/core": "^1.4.1",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.14.0",
     "@types/koa-bodyparser": "^4.3.12",
@@ -160,6 +160,6 @@
   },
   "packageManager": "yarn@4.1.0",
   "volta": {
-    "node": "20.11.0"
+    "node": "20.11.1"
   }
 }

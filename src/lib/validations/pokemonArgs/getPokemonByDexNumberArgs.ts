@@ -10,7 +10,7 @@ export interface GetPokemonByDexNumberArgs extends BasePokemonArgs {
 }
 
 const getPokemonByDexNumberSchema: SchemaOf<GetPokemonByDexNumberArgs> = basePokemonArgsSchema.extend({
-  number: s.number.greaterThanOrEqual(-68).lessThanOrEqual(905)
+  number: s.number.greaterThanOrEqual(-72).lessThanOrEqual(1025).or(s.number.greaterThanOrEqual(-5014).lessThanOrEqual(-5000))
 });
 
 export function validateGetPokemonByDexNumberArgs(args: GetPokemonByDexNumberArgs): NonNullish<GetPokemonByDexNumberArgs> {

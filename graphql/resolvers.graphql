@@ -40,7 +40,10 @@ type Query {
     "Whether to reverse the list of games from which to get the data. By default Generation 1 is considered for `take` first, when setting this to true that is instead Generation 8."
     reverseFlavorTexts: Boolean = true
 
-    "The International PokéDex number of the Pokémon to look up"
+    """
+    The International PokéDex number of the Pokémon to look up.
+    The valid value ranges are (boundaries inclusive) `-5000` to `-5014` and `-72` to `1025`
+    """
     number: Int!
   ): Pokemon!
 

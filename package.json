@@ -59,11 +59,14 @@
     "package": "graphql-codegen && npm-run-all -s \"package:*\"",
     "package:replace-invalid-code": "replace-in-file /\\}\\;/g \"}\" codegen/graphql-pokemon.ts --isRegex",
     "package:compile": "tsup --config tsup.config-package.ts",
+    "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/tsconfig.json",
     "au:tiers": "yarn tsx ./scripts/smogontiers.ts",
     "au:learnsets": "yarn tsx ./scripts/pokemonlearnsets.ts",
     "au:testdata": "yarn tsx scripts/update-test-files.ts",
     "au:flavors": "yarn tsx ./scripts/data-gen-scripts/flavor-text-updater/flavor-text-updater.ts",
-    "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/tsconfig.json"
+    "au:abilities": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/abilities-updater.ts",
+    "au:items": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/items-updater.ts",
+    "au:moves": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/moves-updater.ts"
   },
   "dependencies": {
     "graphql": "^16.8.1"

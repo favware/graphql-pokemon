@@ -36,6 +36,12 @@ jobs:
         run: yarn au:tiers
       - name: Run Learnsets updater
         run: yarn au:learnsets
+      - name: Run Abilities Updater
+        run: yarn au:abilities
+      - name: Run Items Updater
+        run: yarn au:items
+      - name: Run Moves Updater
+        run: yarn au:moves
       - name: Wait for Flaresolverr to be online
         working-directory: ./scripts
         run: ./wait-for-port.sh

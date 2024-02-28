@@ -1,7 +1,7 @@
 import { flavorsModule } from '#utils/flavorsModule';
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
+import * as cheerio from 'cheerio';
 import { red, yellow } from 'colorette';
-import * as cheerio from 'https://cdn.skypack.dev/cheerio';
 import { userAgentHeader } from '../../../utils.js';
 import { log } from '../append-to-log.js';
 import type { ParsedPokemon } from '../constants.js';

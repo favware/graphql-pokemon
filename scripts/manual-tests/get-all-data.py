@@ -226,6 +226,7 @@ query = '''
         catchRate {
             ...CatchRateFragment
         }
+        classification
         color
         cosmeticFormes
         weight

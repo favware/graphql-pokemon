@@ -207,7 +207,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'aromaveil', second: 'gluttony', hidden: 'thickfat' },
       baseStats: { hp: 54, atk: 45, def: 40, spa: 35, spd: 45, spe: 35 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'Gray',
       eggGroups: ['Field'],
       evos: ['oinkologne', 'oinkolognef'],
@@ -226,10 +229,17 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'oinkologne',
     {
-      abilities: { first: 'lingeringaroma', second: 'gluttony', hidden: 'thickfat' },
+      abilities: {
+        first: 'lingeringaroma',
+        second: 'gluttony',
+        hidden: 'thickfat'
+      },
       baseForme: 'male',
       baseStats: { hp: 110, atk: 100, def: 75, spa: 59, spd: 80, spe: 65 },
-      catchRate: { base: 100, percentageWithOrdinaryPokeballAtFullHealth: '21.7%' },
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
       color: 'Gray',
       eggGroups: ['Field'],
       evoLevel: 18,
@@ -253,7 +263,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'aromaveil', second: 'gluttony', hidden: 'thickfat' },
       baseSpecies: 'oinkologne',
       baseStats: { hp: 115, atk: 90, def: 70, spa: 59, spd: 90, spe: 65 },
-      catchRate: { base: 100, percentageWithOrdinaryPokeballAtFullHealth: '21.7%' },
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
       color: 'Brown',
       eggGroups: ['Field'],
       evoLevel: 18,
@@ -278,7 +291,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'insomnia', hidden: 'stakeout' },
       baseStats: { hp: 35, atk: 41, def: 45, spa: 29, spd: 40, spe: 20 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'White',
       eggGroups: ['Bug'],
       evos: ['spidops'],
@@ -299,7 +315,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'insomnia', hidden: 'stakeout' },
       baseStats: { hp: 60, atk: 79, def: 92, spa: 52, spd: 86, spe: 35 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Green',
       eggGroups: ['Bug'],
       evoLevel: 15,
@@ -321,7 +340,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'swarm', hidden: 'tintedlens' },
       baseStats: { hp: 33, atk: 46, def: 40, spa: 21, spd: 25, spe: 45 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Gray',
       eggGroups: ['Bug'],
       evos: ['lokix'],
@@ -364,7 +386,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'static', second: 'naturalcure', hidden: 'ironfist' },
       baseStats: { hp: 45, atk: 50, def: 20, spa: 40, spd: 25, spe: 60 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Yellow',
       eggGroups: ['Field'],
       evos: ['pawmo'],
@@ -383,7 +408,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'pawmo',
     {
-      abilities: { first: 'voltabsorb', second: 'naturalcure', hidden: 'ironfist' },
+      abilities: {
+        first: 'voltabsorb',
+        second: 'naturalcure',
+        hidden: 'ironfist'
+      },
       baseStats: { hp: 60, atk: 75, def: 40, spa: 50, spd: 40, spe: 85 },
       catchRate: { base: 80, percentageWithOrdinaryPokeballAtFullHealth: '18.4%' },
       color: 'Yellow',
@@ -406,7 +435,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'pawmot',
     {
-      abilities: { first: 'voltabsorb', second: 'naturalcure', hidden: 'ironfist' },
+      abilities: {
+        first: 'voltabsorb',
+        second: 'naturalcure',
+        hidden: 'ironfist'
+      },
       baseStats: { hp: 70, atk: 115, def: 70, spa: 70, spd: 60, spe: 105 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',
@@ -430,7 +463,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'runaway', second: 'pickup', hidden: 'owntempo' },
       baseStats: { hp: 50, atk: 50, def: 45, spa: 40, spd: 45, spe: 75 },
-      catchRate: { base: 150, percentageWithOrdinaryPokeballAtFullHealth: '29.5%' },
+      catchRate: {
+        base: 150,
+        percentageWithOrdinaryPokeballAtFullHealth: '29.5%'
+      },
       color: 'White',
       eggGroups: ['Field', 'Fairy'],
       evos: ['maushold', 'mausholdfour'],
@@ -449,7 +485,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'maushold',
     {
-      abilities: { first: 'friendguard', second: 'cheekpouch', hidden: 'technician' },
+      abilities: {
+        first: 'friendguard',
+        second: 'cheekpouch',
+        hidden: 'technician'
+      },
       baseForme: 'Family of Three',
       baseStats: { hp: 74, atk: 75, def: 70, spa: 65, spd: 75, spe: 111 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
@@ -473,7 +513,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'mausholdfour',
     {
-      abilities: { first: 'friendguard', second: 'cheekpouch', hidden: 'technician' },
+      abilities: {
+        first: 'friendguard',
+        second: 'cheekpouch',
+        hidden: 'technician'
+      },
       baseSpecies: 'maushold',
       baseStats: { hp: 74, atk: 75, def: 70, spa: 65, spd: 75, spe: 111 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
@@ -501,7 +545,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'owntempo', hidden: 'klutz' },
       baseStats: { hp: 37, atk: 55, def: 70, spa: 30, spd: 55, spe: 65 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Yellow',
       eggGroups: ['Field', 'Mineral'],
       evos: ['dachsbun'],
@@ -544,7 +591,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'earlybird', hidden: 'harvest' },
       baseStats: { hp: 41, atk: 35, def: 45, spa: 58, spd: 51, spe: 30 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'Green',
       eggGroups: ['Grass'],
       evos: ['dolliv'],
@@ -565,7 +615,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'earlybird', hidden: 'harvest' },
       baseStats: { hp: 52, atk: 53, def: 60, spa: 78, spd: 78, spe: 33 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Green',
       eggGroups: ['Grass'],
       evos: ['arboliva'],
@@ -611,7 +664,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'intimidate', second: 'hustle', hidden: 'guts' },
       baseForme: 'Green',
       baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Green',
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -633,7 +689,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'intimidate', second: 'hustle', hidden: 'guts' },
       baseSpecies: 'squawkabilly',
       baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Blue',
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -657,7 +716,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'intimidate', second: 'hustle', hidden: 'sheerforce' },
       baseSpecies: 'squawkabilly',
       baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Yellow',
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -681,7 +743,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'intimidate', second: 'hustle', hidden: 'sheerforce' },
       baseSpecies: 'squawkabilly',
       baseStats: { hp: 82, atk: 96, def: 51, spa: 45, spd: 51, spe: 92 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'White',
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 1, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -704,7 +769,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'purifyingsalt', second: 'sturdy', hidden: 'clearbody' },
       baseStats: { hp: 55, atk: 55, def: 75, spa: 35, spd: 35, spe: 25 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'Brown',
       eggGroups: ['Mineral'],
       evos: ['naclstack'],
@@ -725,7 +793,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'purifyingsalt', second: 'sturdy', hidden: 'clearbody' },
       baseStats: { hp: 60, atk: 60, def: 100, spa: 35, spd: 65, spe: 35 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Brown',
       eggGroups: ['Mineral'],
       evos: ['garganacl'],
@@ -835,7 +906,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'owntempo', second: 'static', hidden: 'damp' },
       baseStats: { hp: 61, atk: 31, def: 41, spa: 59, spd: 35, spe: 45 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Yellow',
       eggGroups: ['Water 1'],
       evos: ['bellibolt'],
@@ -876,9 +950,16 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'wattrel',
     {
-      abilities: { first: 'windpower', second: 'voltabsorb', hidden: 'competitive' },
+      abilities: {
+        first: 'windpower',
+        second: 'voltabsorb',
+        hidden: 'competitive'
+      },
       baseStats: { hp: 40, atk: 40, def: 35, spa: 55, spd: 40, spe: 70 },
-      catchRate: { base: 180, percentageWithOrdinaryPokeballAtFullHealth: '33.8%' },
+      catchRate: {
+        base: 180,
+        percentageWithOrdinaryPokeballAtFullHealth: '33.8%'
+      },
       color: 'Black',
       eggGroups: ['Water 1', 'Flying'],
       evos: ['kilowattrel'],
@@ -897,7 +978,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'kilowattrel',
     {
-      abilities: { first: 'windpower', second: 'voltabsorb', hidden: 'competitive' },
+      abilities: {
+        first: 'windpower',
+        second: 'voltabsorb',
+        hidden: 'competitive'
+      },
       baseStats: { hp: 70, atk: 70, def: 60, spa: 105, spd: 60, spe: 125 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Yellow',
@@ -921,7 +1006,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'intimidate', second: 'runaway', hidden: 'stakeout' },
       baseStats: { hp: 60, atk: 78, def: 60, spa: 40, spd: 51, spe: 51 },
-      catchRate: { base: 150, percentageWithOrdinaryPokeballAtFullHealth: '29.5%' },
+      catchRate: {
+        base: 150,
+        percentageWithOrdinaryPokeballAtFullHealth: '29.5%'
+      },
       color: 'Brown',
       eggGroups: ['Field'],
       evos: ['mabosstiff'],
@@ -964,7 +1052,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'unburden', second: 'pickpocket', hidden: 'prankster' },
       baseStats: { hp: 40, atk: 65, def: 35, spa: 40, spd: 35, spe: 75 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Gray',
       eggGroups: ['Field'],
       evos: ['grafaiai'],
@@ -1007,7 +1098,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'windrider', hidden: 'infiltrator' },
       baseStats: { hp: 40, atk: 65, def: 30, spa: 45, spd: 35, spe: 60 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Brown',
       eggGroups: ['Grass'],
       evos: ['brambleghast'],
@@ -1050,7 +1144,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'myceliummight' },
       baseStats: { hp: 40, atk: 40, def: 35, spa: 50, spd: 100, spe: 70 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Yellow',
       eggGroups: ['Field'],
       evos: ['toedscruel'],
@@ -1091,9 +1188,16 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'klawf',
     {
-      abilities: { first: 'angershell', second: 'shellarmor', hidden: 'regenerator' },
+      abilities: {
+        first: 'angershell',
+        second: 'shellarmor',
+        hidden: 'regenerator'
+      },
       baseStats: { hp: 70, atk: 100, def: 115, spa: 35, spd: 55, spe: 75 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Red',
       eggGroups: ['Water 3'],
       evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 0, spe: 0 },
@@ -1113,7 +1217,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'chlorophyll', second: 'insomnia', hidden: 'klutz' },
       baseStats: { hp: 50, atk: 62, def: 40, spa: 62, spd: 40, spe: 50 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Green',
       eggGroups: ['Grass'],
       evos: ['scovillain'],
@@ -1156,7 +1263,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'compoundeyes', hidden: 'shedskin' },
       baseStats: { hp: 41, atk: 50, def: 60, spa: 31, spd: 58, spe: 30 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Brown',
       eggGroups: ['Bug'],
       evos: ['rabsca'],
@@ -1199,7 +1309,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'anticipation', second: 'frisk', hidden: 'speedboost' },
       baseStats: { hp: 30, atk: 35, def: 30, spa: 55, spd: 30, spe: 75 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Yellow',
       eggGroups: ['Flying'],
       evos: ['espathra'],
@@ -1240,9 +1353,16 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'tinkatink',
     {
-      abilities: { first: 'moldbreaker', second: 'owntempo', hidden: 'pickpocket' },
+      abilities: {
+        first: 'moldbreaker',
+        second: 'owntempo',
+        hidden: 'pickpocket'
+      },
       baseStats: { hp: 50, atk: 45, def: 45, spa: 35, spd: 64, spe: 58 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Pink',
       eggGroups: ['Fairy'],
       evos: ['tinkatuff'],
@@ -1261,7 +1381,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'tinkatuff',
     {
-      abilities: { first: 'moldbreaker', second: 'owntempo', hidden: 'pickpocket' },
+      abilities: {
+        first: 'moldbreaker',
+        second: 'owntempo',
+        hidden: 'pickpocket'
+      },
       baseStats: { hp: 65, atk: 55, def: 55, spa: 45, spd: 82, spe: 78 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Pink',
@@ -1284,7 +1408,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'tinkaton',
     {
-      abilities: { first: 'moldbreaker', second: 'owntempo', hidden: 'pickpocket' },
+      abilities: {
+        first: 'moldbreaker',
+        second: 'owntempo',
+        hidden: 'pickpocket'
+      },
       baseStats: { hp: 85, atk: 75, def: 77, spa: 70, spd: 105, spe: 94 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Pink',
@@ -1308,7 +1436,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'gooey', second: 'rattled', hidden: 'sandveil' },
       baseStats: { hp: 10, atk: 55, def: 25, spa: 35, spd: 25, spe: 95 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'White',
       eggGroups: ['Water 3'],
       evos: ['wugtrio'],
@@ -1371,7 +1502,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'waterveil' },
       baseStats: { hp: 70, atk: 45, def: 40, spa: 45, spd: 40, spe: 75 },
-      catchRate: { base: 200, percentageWithOrdinaryPokeballAtFullHealth: '36.6%' },
+      catchRate: {
+        base: 200,
+        percentageWithOrdinaryPokeballAtFullHealth: '36.6%'
+      },
       color: 'Blue',
       eggGroups: ['Field', 'Water 2'],
       evos: ['palafin'],
@@ -1442,7 +1576,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'overcoat', hidden: 'slowstart' },
       baseStats: { hp: 45, atk: 70, def: 63, spa: 30, spd: 45, spe: 47 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Gray',
       eggGroups: ['Mineral'],
       evos: ['revavroom'],
@@ -1485,7 +1622,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'shedskin', hidden: 'regenerator' },
       baseStats: { hp: 70, atk: 95, def: 65, spa: 85, spd: 65, spe: 121 },
-      catchRate: { base: 190, percentageWithOrdinaryPokeballAtFullHealth: '35.2%' },
+      catchRate: {
+        base: 190,
+        percentageWithOrdinaryPokeballAtFullHealth: '35.2%'
+      },
       color: 'Green',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 2 },
@@ -1568,7 +1708,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'pickup', hidden: 'fluffy' },
       baseStats: { hp: 50, atk: 61, def: 60, spa: 30, spd: 55, spe: 34 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'White',
       eggGroups: ['Field'],
       evos: ['houndstone'],
@@ -1611,7 +1754,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'scrappy', second: 'tangledfeet', hidden: 'costar' },
       baseStats: { hp: 82, atk: 115, def: 74, spa: 75, spd: 64, spe: 90 },
-      catchRate: { base: 100, percentageWithOrdinaryPokeballAtFullHealth: '21.7%' },
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
       color: 'Pink',
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -1631,7 +1777,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'thickfat', second: 'snowcloak', hidden: 'sheerforce' },
       baseStats: { hp: 108, atk: 68, def: 45, spa: 30, spd: 40, spe: 43 },
-      catchRate: { base: 150, percentageWithOrdinaryPokeballAtFullHealth: '29.5%' },
+      catchRate: {
+        base: 150,
+        percentageWithOrdinaryPokeballAtFullHealth: '29.5%'
+      },
       color: 'White',
       eggGroups: ['Field'],
       evos: ['cetitan'],
@@ -1674,7 +1823,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'moldbreaker', hidden: 'sharpness' },
       baseStats: { hp: 90, atk: 102, def: 73, spa: 78, spd: 65, spe: 70 },
-      catchRate: { base: 100, percentageWithOrdinaryPokeballAtFullHealth: '21.7%' },
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
       color: 'Gray',
       eggGroups: ['Water 2'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -1714,7 +1866,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'commander', hidden: 'stormdrain' },
       baseStats: { hp: 68, atk: 50, def: 60, spa: 120, spd: 95, spe: 82 },
-      catchRate: { base: 100, percentageWithOrdinaryPokeballAtFullHealth: '21.7%' },
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
       color: 'Pink',
       cosmeticFormes: ['Tatsugiri-Droopy', 'Tatsugiri-Stretchy'],
       eggGroups: ['Water 2'],
@@ -1755,7 +1910,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'clodsire',
     {
-      abilities: { first: 'poisonpoint', second: 'waterabsorb', hidden: 'unaware' },
+      abilities: {
+        first: 'poisonpoint',
+        second: 'waterabsorb',
+        hidden: 'unaware'
+      },
       baseStats: { hp: 130, atk: 75, def: 60, spa: 45, spd: 100, spe: 20 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Brown',
@@ -1849,7 +2008,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'kingambit',
     {
-      abilities: { first: 'defiant', second: 'supremeoverlord', hidden: 'pressure' },
+      abilities: {
+        first: 'defiant',
+        second: 'supremeoverlord',
+        hidden: 'pressure'
+      },
       baseStats: { hp: 100, atk: 135, def: 120, spa: 60, spd: 85, spe: 50 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Black',
@@ -2454,7 +2617,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'dipplin',
     {
-      abilities: { first: 'supersweetsyrup', second: 'gluttony', hidden: 'stickyhold' },
+      abilities: {
+        first: 'supersweetsyrup',
+        second: 'gluttony',
+        hidden: 'stickyhold'
+      },
       baseStats: { hp: 80, atk: 80, def: 110, spa: 95, spd: 80, spe: 40 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
@@ -2479,7 +2646,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
       baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Green',
       eggGroups: ['Mineral', 'Amorphous'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
@@ -2502,7 +2672,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'hospitality', hidden: 'heatproof' },
       baseSpecies: 'poltchageist',
       baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
-      catchRate: { base: 120, percentageWithOrdinaryPokeballAtFullHealth: '24.9%' },
+      catchRate: {
+        base: 120,
+        percentageWithOrdinaryPokeballAtFullHealth: '24.9%'
+      },
       color: 'Green',
       eggGroups: ['Mineral', 'Amorphous'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 1, spd: 0, spe: 0 },
@@ -2895,7 +3068,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       eggGroups: ['Mineral', 'Dragon'],
       evYields: { hp: 0, atk: 0, def: 3, spa: 0, spd: 0, spe: 0 },
       genderRatio: { male: '50%', female: '50%' },
-      heightm: 2.0,
+      heightm: 2,
       isEggObtainable: true,
       levellingRate: 'Medium Fast',
       num: 1018,
@@ -2907,7 +3080,11 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'hydrapple',
     {
-      abilities: { first: 'supersweetsyrup', second: 'regenerator', hidden: 'stickyhold' },
+      abilities: {
+        first: 'supersweetsyrup',
+        second: 'regenerator',
+        hidden: 'stickyhold'
+      },
       baseStats: { hp: 106, atk: 80, def: 110, spa: 120, spd: 80, spe: 44 },
       catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
       color: 'Green',
@@ -3011,7 +3188,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'terashift' },
       baseForme: 'Normal',
       baseStats: { hp: 90, atk: 65, def: 85, spa: 65, spd: 85, spe: 60 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
       evYields: { hp: 0, atk: 0, def: 1, spa: 0, spd: 0, spe: 0 },
@@ -3033,7 +3213,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'terashell' },
       baseSpecies: 'terapagos',
       baseStats: { hp: 95, atk: 95, def: 110, spa: 105, spd: 110, spe: 85 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
       evYields: { hp: 0, atk: 0, def: 2, spa: 0, spd: 2, spe: 0 },
@@ -3057,7 +3240,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       abilities: { first: 'teraformzero' },
       baseSpecies: 'terapagos',
       baseStats: { hp: 160, atk: 105, def: 110, spa: 130, spd: 110, spe: 85 },
-      catchRate: { base: 255, percentageWithOrdinaryPokeballAtFullHealth: '43.9%' },
+      catchRate: {
+        base: 255,
+        percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
+      },
       color: 'Blue',
       eggGroups: ['Undiscovered'],
       evYields: { hp: 3, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
@@ -3099,5 +3285,6 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 
 for (const [key, value] of entries) {
   value.key = key;
+
   Pokedex.set(key, value);
 }

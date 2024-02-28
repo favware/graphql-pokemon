@@ -229,6 +229,7 @@ fragment FullDataFragmentWithoutNested on Pokemon {
   catchRate {
     ...CatchRateFragment
   }
+  classification
   color
   cosmeticFormes
   weight

@@ -2,10 +2,9 @@ import { flavorsModule } from '#utils/flavorsModule';
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
 import * as cheerio from 'cheerio';
 import { red, yellow } from 'colorette';
-import { userAgentHeader } from '../../../utils.js';
-import { log } from '../append-to-log.js';
-import type { ParsedPokemon } from '../constants.js';
-import { getCurrentSession } from '../flaresolverr-session-management.js';
+import { userAgentHeader } from '../../../../utils.js';
+import { getCurrentSession } from '../../flaresolverr-session-management.js';
+import type { ParsedPokemon } from '../../scripted-bulbapedia-utils.js';
 import { getGen1GameSetsData } from '../game-sets/gen1-game-sets.js';
 import { getGen2GameSetsData } from '../game-sets/gen2-game-sets.js';
 import { getGen3GameSetsData } from '../game-sets/gen3-game-sets.js';
@@ -15,7 +14,8 @@ import { getGen6GameSetsData } from '../game-sets/gen6-game-sets.js';
 import { getGen7GameSetsData } from '../game-sets/gen7-game-sets.js';
 import { getGen8GameSetsData } from '../game-sets/gen8-game-sets.js';
 import { getGen9GameSetsData } from '../game-sets/gen9-game-sets.js';
-import type { FlareSolverrResponse } from '../types.js';
+import { log } from '../log-wrapper.js';
+import type { FlareSolverrResponse } from '../../types.js';
 
 const failedPokemon = [];
 
@@ -34,7 +34,7 @@ export async function parsePokemon(pokemon: ParsedPokemon) {
       },
       body: JSON.stringify({
         cmd: 'request.get',
-        url: pokemon.url,
+        url: pokemon.flavorTextUrl,
         maxTimeout: 60_000,
         session: getCurrentSession()
       })

@@ -59,12 +59,27 @@ export function inspectData<T>(data: T): string {
 }
 
 export function replaceEnumLikeValues(data: string): string {
-  return data
+  const isNonStandardReplacedData = data
     .replaceAll(/"?isNonstandard"?: ['"]Past['"]/g, 'isNonstandard: IsNonStandard.Past')
     .replaceAll(/"?isNonstandard"?: ['"]Unobtainable['"]/g, 'isNonstandard: IsNonStandard.Unobtainable')
     .replaceAll(/"?isNonstandard"?: ['"]CAP['"]/g, 'isNonstandard: IsNonStandard.Cap')
     .replaceAll(/"?isNonstandard"?: ['"]Gigantamax['"]/g, 'isNonstandard: IsNonStandard.Gigantamax')
     .replaceAll(/"?isNonstandard"?: ['"]LetsGoPikachuEevee['"]/g, 'isNonstandard: IsNonStandard.LetsGoPikachuEevee');
+
+  const typesEnumRegex = /"?types"?: \[\s['"]([a-zA-Z]+)['"](?:, ['"]([a-zA-Z]+)['"])?\s\]/g;
+
+  const replacedTypesData = isNonStandardReplacedData.replace(typesEnumRegex, (_, type1, type2) => {
+    const capitalizedType1 = type1.charAt(0).toUpperCase() + type1.slice(1);
+
+    if (type2) {
+      const capitalizedType2 = type2.charAt(0).toUpperCase() + type2.slice(1);
+      return `types: [TypesEnum.${capitalizedType1}, TypesEnum.${capitalizedType2}]`;
+    }
+
+    return `types: [TypesEnum.${capitalizedType1}]`;
+  });
+
+  return replacedTypesData;
 }
 
 export async function writeDataToFileAndPrettify(data: string, fileResolver: string): Promise<void> {

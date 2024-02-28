@@ -247,6 +247,8 @@ interface Pokemon {
   bulbapediaPage: string;
   /** The catch rate data for a Pokémon */
   catchRate?: Maybe<CatchRate>;
+  /** The classification of a Pokémon as listed in the Pokedex */
+  classification?: Maybe<string>;
   /** The colour of a Pokémon as listed in the Pokedex */
   color: string;
   /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data. */

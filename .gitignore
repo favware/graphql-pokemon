@@ -39,7 +39,3 @@ dist/
 codegen/
 docs/magidoc/
 docs/typedoc/
-
-## Scripts
-scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/failed-pokemon.json
-scripts/manual-tests/*.json

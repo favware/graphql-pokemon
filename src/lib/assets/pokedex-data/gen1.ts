@@ -2949,7 +2949,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'growlithe-hisui',
       types: [TypesEnum.Fire, TypesEnum.Rock],
       weightkg: 22.7,
-      aliases: ['hisuiangrowlithe', 'growlitheh']
+      aliases: ['hisuiangrowlithe', 'growlitheh'],
+      classification: 'Lookout Pokémon'
     }
   ],
   [
@@ -3655,7 +3656,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['ponyta'],
       species: 'ponyta-galar',
       types: [TypesEnum.Psychic],
-      weightkg: 24
+      weightkg: 24,
+      classification: 'One Horn Pokémon'
     }
   ],
   [
@@ -3710,7 +3712,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'ponytagalar',
       species: 'rapidash-galar',
       types: [TypesEnum.Psychic, TypesEnum.Fairy],
-      weightkg: 95
+      weightkg: 95,
+      classification: 'One Horn Pokémon'
     }
   ],
   [
@@ -4552,7 +4555,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'voltorb-hisui',
       types: [TypesEnum.Electric, TypesEnum.Grass],
       weightkg: 13,
-      aliases: ['hisuianvoltorb', 'voltorbh']
+      aliases: ['hisuianvoltorb', 'voltorbh'],
+      classification: 'Sphere Pokémon'
     }
   ],
   [
@@ -4607,7 +4611,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'electrode-hisui',
       types: [TypesEnum.Electric, TypesEnum.Grass],
       weightkg: 71,
-      aliases: ['hisuianelectrode', 'electrodeh']
+      aliases: ['hisuianelectrode', 'electrodeh'],
+      classification: 'Sphere Pokémon'
     }
   ],
   [
@@ -5322,7 +5327,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'Mr. Mime-Galar',
       types: [TypesEnum.Ice, TypesEnum.Psychic],
       weightkg: 56.8,
-      aliases: ['gmime', 'gmrmime']
+      aliases: ['gmime', 'gmrmime'],
+      classification: 'Dance Pokémon'
     }
   ],
   [
@@ -6161,7 +6167,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'articuno-galar',
       types: [TypesEnum.Psychic, TypesEnum.Flying],
       weightkg: 50.9,
-      legendary: true
+      legendary: true,
+      classification: 'Cruel Pokémon'
     }
   ],
   [
@@ -6210,7 +6217,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zapdos-galar',
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 58.2,
-      legendary: true
+      legendary: true,
+      classification: 'Good Walker Pokémon'
     }
   ],
   [
@@ -6259,7 +6267,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'moltres-galar',
       types: [TypesEnum.Dark, TypesEnum.Flying],
       weightkg: 66,
-      legendary: true
+      legendary: true,
+      classification: 'Evil Pokémon'
     }
   ],
   [

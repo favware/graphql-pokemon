@@ -1523,7 +1523,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'lilligant-hisui',
       types: [TypesEnum.Grass, TypesEnum.Fighting],
       weightkg: 19.2,
-      aliases: ['hisuianlilligant', 'lilliganth']
+      aliases: ['hisuianlilligant', 'lilliganth'],
+      classification: 'Spin Pokémon'
     }
   ],
   [
@@ -1792,7 +1793,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'darumakagalar',
       species: 'darmanitan-galar',
       types: [TypesEnum.Ice],
-      weightkg: 120
+      weightkg: 120,
+      classification: 'Daruma Pokémon'
     }
   ],
   [
@@ -2308,7 +2310,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zorua-hisui',
       types: [TypesEnum.Normal, TypesEnum.Ghost],
       weightkg: 12.5,
-      aliases: ['hisuianzoroa', 'zoroah']
+      aliases: ['hisuianzoroa', 'zoroah'],
+      classification: 'Grudge Fox Pokémon'
     }
   ],
   [
@@ -2364,7 +2367,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen5/zoroark-hisui.png',
       types: [TypesEnum.Normal, TypesEnum.Ghost],
       weightkg: 73,
-      aliases: ['hisuianzoroark', 'zoroarkh']
+      aliases: ['hisuianzoroark', 'zoroarkh'],
+      classification: 'Curse Fox Pokémon'
     }
   ],
   [
@@ -3947,7 +3951,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'braviary-hisui',
       types: [TypesEnum.Psychic, TypesEnum.Flying],
       weightkg: 54,
-      aliases: ['hisuianbraviary', 'braviaryh']
+      aliases: ['hisuianbraviary', 'braviaryh'],
+      classification: 'War Cry Pokémon'
     }
   ],
   [

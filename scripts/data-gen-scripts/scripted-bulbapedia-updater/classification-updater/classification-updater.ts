@@ -54,13 +54,16 @@ await each(getBulbapediaReadyPokemon(), async (pokemon) => {
 
   await log({ msg: `${pokemon.species} (${paddedNumber}) - Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });
 
-  const regex = new RegExp(`${paddedNumber} \\|\\|(?<content>[^]*?)\\n`);
+  const regex = pokemon.forme
+    ? new RegExp(`{{ArtP\\|${paddedNumber}\\|[^}}]+\\|form=-${pokemon.forme}}} \\|\\|(?<content>[^]*?)\\n`, 'i')
+    : new RegExp(`{{ArtP\\|${paddedNumber}\\|.+}} \\|\\|(?<content>[^]*?)\\n`);
   const match = text.match(regex);
 
   const classification = match?.groups?.content.trim().split('||').at(-1)?.trim();
   if (classification) {
     succeededPokemon.push({
       num: pokemon.number,
+      forme: pokemon.forme,
       species: pokemon.species,
       generation: getPokemonGenerationForDexNumber(pokemon.number),
       classification
@@ -73,9 +76,11 @@ await each(getBulbapediaReadyPokemon(), async (pokemon) => {
 await log({ msg: 'Done storing data in memory, formatting and writing to disk', color: green, isBold: true, isIndent: false });
 
 for (const pokemon of succeededPokemon) {
-  const pokemonFromData = pokedex.find((pokemonData) => pokemonData.num === pokemon.num);
+  const pokemonFromData = pokemon.forme
+    ? pokedex.find((pokemonData) => pokemonData.num === pokemon.num && pokemonData.forme?.toLowerCase() === pokemon.forme.toLowerCase())
+    : pokedex.find((pokemonData) => pokemonData.num === pokemon.num);
+
   pokemonFromData.classification = pokemon.classification;
-  delete pokemonFromData.key;
 }
 
 const prependContent = [

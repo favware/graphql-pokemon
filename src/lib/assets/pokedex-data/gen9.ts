@@ -1627,7 +1627,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['palafin'],
       species: 'palafin-hero',
       types: [TypesEnum.Water],
-      weightkg: 97.4
+      weightkg: 97.4,
+      classification: 'Hero Pokémon'
     }
   ],
   [
@@ -2477,7 +2478,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['gimmighoul'],
       species: 'gimmighoulroaming',
       types: [TypesEnum.Ghost],
-      weightkg: 0.1
+      weightkg: 0.1,
+      classification: 'Treasure Hunting Pokémon'
     }
   ],
   [

@@ -1202,7 +1202,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Seadra into Kingdra when traded.',
       gen: 2,
-      isNonstandard: IsNonStandard.Past,
       name: 'Dragon Scale'
     }
   ],

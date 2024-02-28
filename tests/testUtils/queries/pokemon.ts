@@ -99,6 +99,7 @@ export const getPokemonWithFullData = gql`
         base
         percentageWithOrdinaryPokeballAtFullHealth
       }
+      classification
       color
       cosmeticFormes
     }

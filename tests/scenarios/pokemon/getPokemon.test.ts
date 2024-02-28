@@ -169,6 +169,7 @@ describe('getPokemon', () => {
           base: 45,
           percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
         },
+        classification: null,
         color: 'Blue',
         cosmeticFormes: null
       });
@@ -238,6 +239,7 @@ describe('getPokemon', () => {
           base: 0,
           percentageWithOrdinaryPokeballAtFullHealth: '0%'
         },
+        classification: null,
         color: 'Gray',
         cosmeticFormes: null
       });
@@ -308,6 +310,7 @@ describe('getPokemon', () => {
           base: 45,
           percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
         },
+        classification: null,
         color: 'Yellow',
         cosmeticFormes: null
       });

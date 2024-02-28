@@ -215,6 +215,7 @@ export const getPokemonWithFullDataAndEvolutions = gql`
     catchRate {
       ...CatchRateFragment
     }
+    classification
     color
     cosmeticFormes
     weight

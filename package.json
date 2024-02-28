@@ -64,6 +64,7 @@
     "au:learnsets": "yarn tsx ./scripts/pokemonlearnsets.ts",
     "au:testdata": "yarn tsx scripts/update-test-files.ts",
     "au:flavors": "yarn tsx ./scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/flavor-text-updater.ts",
+    "au:classifications": "yarn tsx ./scripts/data-gen-scripts/scripted-bulbapedia-updater/classification-updater/classification-updater.ts",
     "au:abilities": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/abilities-updater.ts",
     "au:items": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/items-updater.ts",
     "au:moves": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/moves-updater.ts"
@@ -92,6 +93,7 @@
     "@sapphire/ts-config": "^5.0.0",
     "@skyra/jaro-winkler": "^1.1.1",
     "@swc/core": "^1.4.2",
+    "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
     "@types/koa-bodyparser": "^4.3.12",
@@ -100,6 +102,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "@vitest/coverage-v8": "^0.34.6",
+    "async": "^3.2.5",
     "cheerio": "^1.0.0-rc.12",
     "colorette": "^2.0.20",
     "cz-conventional-changelog": "^3.3.0",

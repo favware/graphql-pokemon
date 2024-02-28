@@ -92,6 +92,8 @@ export namespace PokemonTypes {
 
     catchRate?: CatchRateEntry;
 
+    classification?: string;
+
     color: `${Capitalize<'Black' | 'Blue' | 'Brown' | 'Gray' | 'Green' | 'Pink' | 'Purple' | 'Red' | 'White' | 'Yellow'>}`;
 
     cosmeticFormes?: string[];

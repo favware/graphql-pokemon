@@ -1,8 +1,8 @@
 import type { FlavorsModule } from '#utils/flavorsModule.js';
 import { green, yellow } from 'colorette';
-import { log } from '../append-to-log.js';
-import type { ParsedPokemon } from '../constants.js';
+import type { ParsedPokemon } from '../../scripted-bulbapedia-utils.js';
 import { getTextContent } from '../get-text-content.js';
+import { log } from '../log-wrapper.js';
 
 export async function tripleGameUpdater(
   text: string | undefined,

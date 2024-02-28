@@ -47,6 +47,8 @@ jobs:
         run: ./wait-for-port.sh
         env:
           PORT: 8191
+      - name: Run Classifications Updater
+        run: yarn au:classifications
       - name: Run Flavor Text Updater
         run: yarn au:flavors
       - name: Build code

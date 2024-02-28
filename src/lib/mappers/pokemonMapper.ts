@@ -410,6 +410,13 @@ export function mapPokemonDataToPokemonGraphQL({
   });
   addPropertyToObjectFieldBased({
     objectTarget: pokemonData,
+    propertyKey: 'classification',
+    propertyValue: data.classification,
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}classification`
+  });
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
     propertyKey: 'color',
     propertyValue: data.color,
     requestedFields,

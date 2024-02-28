@@ -64,6 +64,9 @@ type Pokemon {
   "The catch rate data for a Pokémon"
   catchRate: CatchRate
 
+  "The classification of a Pokémon as listed in the Pokedex"
+  classification: String
+
   "The colour of a Pokémon as listed in the Pokedex"
   color: String!
 

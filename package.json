@@ -63,7 +63,7 @@
     "au:tiers": "yarn tsx ./scripts/smogontiers.ts",
     "au:learnsets": "yarn tsx ./scripts/pokemonlearnsets.ts",
     "au:testdata": "yarn tsx scripts/update-test-files.ts",
-    "au:flavors": "yarn tsx ./scripts/data-gen-scripts/flavor-text-updater/flavor-text-updater.ts",
+    "au:flavors": "yarn tsx ./scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/flavor-text-updater.ts",
     "au:abilities": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/abilities-updater.ts",
     "au:items": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/items-updater.ts",
     "au:moves": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/moves-updater.ts"

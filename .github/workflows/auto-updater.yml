@@ -78,5 +78,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: formats_log_file
-          path: scripts/data-gen-scripts/flavor-text-updater/output.log
+          path: scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/output.log
           if-no-files-found: error

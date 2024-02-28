@@ -169,7 +169,7 @@ describe('getPokemon', () => {
           base: 45,
           percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
         },
-        classification: null,
+        classification: 'Ninja Pokémon',
         color: 'Blue',
         cosmeticFormes: null
       });

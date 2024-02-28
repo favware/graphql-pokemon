@@ -1,6 +1,6 @@
 import { pokedex } from '#assets/pokedex.js';
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
-import { eachLimit } from 'async';
+import { each } from 'async';
 import * as cheerio from 'cheerio';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
@@ -49,7 +49,7 @@ await log({ msg: `Loaded text into cheerio`, color: yellow, isBold: false, isInd
 const text = $('#wpTextbox1').text();
 await log({ msg: `Loaded text element`, color: yellow, isBold: false, isIndent: true });
 
-await eachLimit(getBulbapediaReadyPokemon().slice(0, 1), 100, async (pokemon) => {
+await each(getBulbapediaReadyPokemon(), async (pokemon) => {
   const paddedNumber = pokemon.number.toString().padStart(4, '0');
 
   await log({ msg: `${pokemon.species} (${paddedNumber}) - Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });

@@ -1611,7 +1611,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'basculin-white-striped',
       types: [TypesEnum.Water],
       weightkg: 18,
-      aliases: ['basculinw', 'basculinwhite', 'basculinwhitestripe', 'hisuianbasculin', 'basculinhisui', 'basculinh']
+      aliases: ['basculinw', 'basculinwhite', 'basculinwhitestripe', 'hisuianbasculin', 'basculinhisui', 'basculinh'],
+      classification: 'Mellow Pokémon'
     }
   ],
   [
@@ -1848,7 +1849,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'darmanitan-galar-zen',
       types: [TypesEnum.Ice, TypesEnum.Fire],
       weightkg: 120,
-      aliases: ['darmanitangalarzen', 'darmanitanzengalar', 'darmgz']
+      aliases: ['darmanitangalarzen', 'darmanitanzengalar', 'darmgz'],
+      classification: 'Blazing Pokémon'
     }
   ],
   [

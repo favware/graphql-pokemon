@@ -1227,7 +1227,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       isEggObtainable: false,
       levellingRate: 'Slow',
       minimumHatchTime: 20560,
-      num: 145,
+      num: 199,
       otherFormes: ['slowking'],
       prevo: 'slowpokegalar',
       species: 'slowking-galar',

@@ -1702,7 +1702,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'sliggoo-hisui',
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 68.5,
-      aliases: ['hisuiansliggoo', 'sliggooh']
+      aliases: ['hisuiansliggoo', 'sliggooh'],
+      classification: 'Snail Pokémon'
     }
   ],
   [
@@ -1758,7 +1759,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'goodra-hisui',
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 334.1,
-      aliases: ['hisuiangoodra', 'goodrah']
+      aliases: ['hisuiangoodra', 'goodrah'],
+      classification: 'Shelled Pokémon'
     }
   ],
   [
@@ -2432,7 +2434,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic, TypesEnum.Dark],
       weightkg: 490,
       aliases: ['hoopau'],
-      mythical: true
+      mythical: true,
+      classification: 'Majin Pokémon'
     }
   ],
   [

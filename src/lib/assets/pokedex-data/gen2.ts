@@ -176,7 +176,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'typhlosion-hisui',
       types: [TypesEnum.Fire, TypesEnum.Ghost],
       weightkg: 69.8,
-      aliases: ['hisuiantyphlosion', 'typhlosionh']
+      aliases: ['hisuiantyphlosion', 'typhlosionh'],
+      classification: 'Ghost Flame Pokémon'
     }
   ],
   [
@@ -1242,7 +1243,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'wooper-paldea',
       types: [TypesEnum.Poison, TypesEnum.Ground],
       weightkg: 11,
-      aliases: ['wooperp']
+      aliases: ['wooperp'],
+      classification: 'Poison Fish Pokémon'
     }
   ],
   [
@@ -1392,7 +1394,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'slowpokegalar',
       species: 'slowking-galar',
       types: [TypesEnum.Poison, TypesEnum.Psychic],
-      weightkg: 79.5
+      weightkg: 79.5,
+      classification: 'Shaman Pokémon'
     }
   ],
   [

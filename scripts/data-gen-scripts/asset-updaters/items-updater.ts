@@ -1,8 +1,7 @@
 import { items as currentItems } from '#assets/items.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
-import { importFileFromWeb, replacePokeWithAccentedPoke } from '../../utils.js';
-import { dataToClipboard } from '../data-to-clipboard.js';
+import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../utils.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
 
 const { Items } = await importFileFromWeb<{ Items: { [itemName: string]: ItemData } }>({
@@ -99,7 +98,26 @@ for (const [key, itemFromData] of itemsDataEntries) {
   newMap.set(key, sortObjectByKey(data));
 }
 
-dataToClipboard([...newMap.entries()]);
+const prependContent = [
+  "import type { PokemonTypes } from '#assets/pokemon-source';",
+  "import { IsNonStandard } from '#utils/isNonStandardEnum';",
+  "import { Collection } from '@discordjs/collection';",
+  '',
+  '/** The item in Pokémon */',
+  'export const items = new Collection<string, PokemonTypes.Item>('
+].join('\n');
+const appendContent = [
+  ');', //
+  '',
+  'for (const [key, value] of items.entries()) {',
+  '\tvalue.key = key;',
+  '}',
+  ''
+].join('\n');
+
+const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
+
+await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/items.js');
 
 interface ItemData {
   name: string;

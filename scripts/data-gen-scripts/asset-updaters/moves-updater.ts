@@ -1,8 +1,7 @@
 import { moves as currentMoves } from '#assets/moves.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
-import { importFileFromWeb, replacePokeWithAccentedPoke } from '../../utils.js';
-import { dataToClipboard } from '../data-to-clipboard.js';
+import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../utils.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
 
 // Note that manual checking is still required for "basePower" and "target" properties!
@@ -124,7 +123,26 @@ for (const [key, moveFromData] of movesDataEntries) {
   newMap.set(key, sortObjectByKey(data));
 }
 
-dataToClipboard([...newMap.entries()]);
+const prependContent = [
+  "import type { PokemonTypes } from '#assets/pokemon-source';",
+  "import { IsNonStandard } from '#utils/isNonStandardEnum';",
+  "import { Collection } from '@discordjs/collection';",
+  '',
+  '/** The moves in Pokémon */',
+  'export const moves = new Collection<string, PokemonTypes.Move>('
+].join('\n');
+const appendContent = [
+  ');', //
+  '',
+  'for (const [key, value] of moves.entries()) {',
+  '\tvalue.key = key;',
+  '}',
+  ''
+].join('\n');
+
+const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
+
+await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/moves.js');
 
 interface MoveData {
   num: number;

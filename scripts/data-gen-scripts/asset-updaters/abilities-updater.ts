@@ -2,8 +2,7 @@ import { abilities as currentAbilities } from '#assets/abilities.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { objectEntries } from '@sapphire/utilities';
-import { importFileFromWeb, replacePokeWithAccentedPoke } from '../../utils.js';
-import { dataToClipboard } from '../data-to-clipboard.js';
+import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../utils.js';
 import { sortObjectByKey } from '../map-data-key-sorter.js';
 
 const { Abilities } = await importFileFromWeb<{ Abilities: { [abilityName: string]: AbilityData } }>({
@@ -91,7 +90,26 @@ for (const [key, abilityFromData] of abilitiesDataEntries) {
   newMap.set(key, sortObjectByKey(data));
 }
 
-dataToClipboard([...newMap.entries()]);
+const prependContent = [
+  "import type { PokemonTypes } from '#assets/pokemon-source';",
+  "import { IsNonStandard } from '#utils/isNonStandardEnum';",
+  "import { Collection } from '@discordjs/collection';",
+  '',
+  '/** The abilities in Pokémon */',
+  'export const abilities = new Collection<string, PokemonTypes.Ability>('
+].join('\n');
+const appendContent = [
+  ');', //
+  '',
+  'for (const [key, value] of abilities.entries()) {',
+  '\tvalue.key = key;',
+  '}',
+  ''
+].join('\n');
+
+const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
+
+await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/abilities.js');
 
 interface AbilityData {
   isNonstandard?: string;

@@ -1,7 +1,10 @@
 import { fetch, FetchResultTypes } from '@sapphire/fetch';
 import { readFile, rm, writeFile } from 'node:fs/promises';
 import { platform, release } from 'node:os';
+import { inspect } from 'node:util';
+import prettier from 'prettier';
 import ts from 'typescript';
+import prettierConfig from '../.prettierrc.mjs';
 
 export function mapToJson<K extends PropertyKey, V extends object>(map: Map<K, V>): string {
   return JSON.stringify([...map]);
@@ -45,6 +48,30 @@ export function replacePokeWithAccentedPoke(input: string) {
   return input //
     .replaceAll('Poke Ball', 'Poké Ball')
     .replaceAll('Pokemon', 'Pokémon');
+}
+
+export function inspectData<T>(data: T): string {
+  return inspect(data, {
+    depth: Infinity,
+    maxArrayLength: Infinity,
+    showHidden: false
+  });
+}
+
+export function replaceEnumLikeValues(data: string): string {
+  return data
+    .replaceAll(/"?isNonstandard"?: ['"]Past['"]/g, 'isNonstandard: IsNonStandard.Past')
+    .replaceAll(/"?isNonstandard"?: ['"]Unobtainable['"]/g, 'isNonstandard: IsNonStandard.Unobtainable')
+    .replaceAll(/"?isNonstandard"?: ['"]CAP['"]/g, 'isNonstandard: IsNonStandard.Cap')
+    .replaceAll(/"?isNonstandard"?: ['"]Gigantamax['"]/g, 'isNonstandard: IsNonStandard.Gigantamax')
+    .replaceAll(/"?isNonstandard"?: ['"]LetsGoPikachuEevee['"]/g, 'isNonstandard: IsNonStandard.LetsGoPikachuEevee');
+}
+
+export async function writeDataToFileAndPrettify(data: string, fileResolver: string): Promise<void> {
+  const fileToWriteTo = new URL(import.meta.resolve(fileResolver));
+
+  const formattedData = await prettier.format(data, { ...prettierConfig, parser: 'typescript' });
+  await writeFile(fileToWriteTo, formattedData);
 }
 
 export interface GitCommit {

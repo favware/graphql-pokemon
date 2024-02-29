@@ -82,3 +82,9 @@ jobs:
           name: formats_log_file
           path: scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/output.log
           if-no-files-found: error
+      - name: Create artifact of classifications update log file
+        uses: actions/upload-artifact@v4
+        with:
+          name: classification_log_file
+          path: scripts/data-gen-scripts/scripted-bulbapedia-updater/classification-updater/output.log
+          if-no-files-found: error

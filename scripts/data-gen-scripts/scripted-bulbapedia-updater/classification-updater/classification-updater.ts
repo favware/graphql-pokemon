@@ -58,8 +58,17 @@ await each(getBulbapediaReadyPokemon(), async (pokemon) => {
     ? new RegExp(`{{ArtP\\|${paddedNumber}\\|[^}}]+\\|form=-${pokemon.forme}}} \\|\\|(?<content>[^]*?)\\n`, 'i')
     : new RegExp(`{{ArtP\\|${paddedNumber}\\|.+}} \\|\\|(?<content>[^]*?)\\n`);
   const match = text.match(regex);
+  const regexForTranslateBlock = /\{\{tt\|([^|]+)\|[^}]+\}\}/;
 
-  const classification = match?.groups?.content.trim().split('||').at(-1)?.trim();
+  const useHigherIndexFromTable = pokemon.forme || pokemon.number === 720 || pokemon.number === 964 || pokemon.number === 999;
+
+  const classification = match?.groups?.content
+    .trim()
+    .split('||')
+    .at(useHigherIndexFromTable ? 1 : 0)
+    ?.trim()
+    .replace(regexForTranslateBlock, '$1');
+
   if (classification) {
     succeededPokemon.push({
       num: pokemon.number,

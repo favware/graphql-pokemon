@@ -338,7 +338,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 9,
       aliases: ['zenigame'],
-      classification: 'Young Turtle Pokémon'
+      classification: 'Tiny Turtle Pokémon'
     }
   ],
   [
@@ -388,7 +388,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 85.5,
       aliases: ['kamekkusu'],
-      classification: 'Shell Pokémon'
+      classification: 'Shellfish Pokémon'
     }
   ],
   [
@@ -462,7 +462,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug],
       weightkg: 2.9,
       aliases: ['kyatapii'],
-      classification: 'Caterpillar Pokémon'
+      classification: 'Worm Pokémon'
     }
   ],
   [
@@ -490,7 +490,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug],
       weightkg: 9.9,
       aliases: ['toranseru'],
-      classification: 'Chrysalis Pokémon'
+      classification: 'Cocoon Pokémon'
     }
   ],
   [
@@ -566,7 +566,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug, TypesEnum.Poison],
       weightkg: 3.2,
       aliases: ['biidoru'],
-      classification: 'Hairy Caterpillar Pokémon'
+      classification: 'Hairy Bug Pokémon'
     }
   ],
   [
@@ -594,7 +594,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug, TypesEnum.Poison],
       weightkg: 10,
       aliases: ['kokuun'],
-      classification: 'Chrysalis Pokémon'
+      classification: 'Cocoon Pokémon'
     }
   ],
   [
@@ -2651,7 +2651,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 4.2,
       aliases: ['nyaasu'],
-      classification: '{{wp|Bakeneko}} Pokémon'
+      classification: 'Scratch Cat Pokémon'
     }
   ],
   [
@@ -2761,7 +2761,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 32,
       aliases: ['perushian'],
-      classification: 'Siamese Cat Pokémon'
+      classification: 'Classy Cat Pokémon'
     }
   ],
   [
@@ -2950,7 +2950,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Rock],
       weightkg: 22.7,
       aliases: ['hisuiangrowlithe', 'growlitheh'],
-      classification: 'Lookout Pokémon'
+      classification: 'Scout Pokémon'
     }
   ],
   [
@@ -2975,7 +2975,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire],
       weightkg: 155,
       aliases: ['uindi'],
-      classification: 'Legend Pokémon'
+      classification: 'Legendary Pokémon'
     }
   ],
   [
@@ -3114,7 +3114,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 19.5,
       aliases: ['keeshy'],
-      classification: 'Psychic Power Pokémon'
+      classification: 'Psi Pokémon'
     }
   ],
   [
@@ -3146,7 +3146,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 56.5,
       aliases: ['yungeraa'],
-      classification: 'Psychic Power Pokémon'
+      classification: 'Psi Pokémon'
     }
   ],
   [
@@ -3175,7 +3175,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 48,
       aliases: ['fuudin', 'zam'],
-      classification: 'Psychic Power Pokémon'
+      classification: 'Psi Pokémon'
     }
   ],
   [
@@ -3226,7 +3226,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 19.5,
       aliases: ['wanrikii'],
-      classification: 'Superhuman Strength Pokémon'
+      classification: 'Superpower Pokémon'
     }
   ],
   [
@@ -3251,7 +3251,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 70.5,
       aliases: ['goorikii'],
-      classification: 'Superhuman Strength Pokémon'
+      classification: 'Superpower Pokémon'
     }
   ],
   [
@@ -3276,7 +3276,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 130,
       aliases: ['kairikii'],
-      classification: 'Superhuman Strength Pokémon'
+      classification: 'Superpower Pokémon'
     }
   ],
   [
@@ -3657,7 +3657,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'ponyta-galar',
       types: [TypesEnum.Psychic],
       weightkg: 24,
-      classification: 'One Horn Pokémon'
+      classification: 'Unique Horn Pokémon'
     }
   ],
   [
@@ -3713,7 +3713,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rapidash-galar',
       types: [TypesEnum.Psychic, TypesEnum.Fairy],
       weightkg: 95,
-      classification: 'One Horn Pokémon'
+      classification: 'Unique Horn Pokémon'
     }
   ],
   [
@@ -3739,7 +3739,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water, TypesEnum.Psychic],
       weightkg: 36,
       aliases: ['yadon'],
-      classification: 'Stupid Pokémon'
+      classification: 'Dopey Pokémon'
     }
   ],
   [
@@ -3917,7 +3917,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 15,
       aliases: ['kamonegi'],
-      classification: 'Spot-Billed Duck Pokémon'
+      classification: 'Wild Duck Pokémon'
     }
   ],
   [
@@ -3992,7 +3992,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 85.2,
       aliases: ['doodorio'],
-      classification: 'Triplet Bird Pokémon'
+      classification: 'Triple Bird Pokémon'
     }
   ],
   [
@@ -4234,7 +4234,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Poison],
       weightkg: 0.1,
       aliases: ['goosu'],
-      classification: 'Gaseous Pokémon'
+      classification: 'Gas Pokémon'
     }
   ],
   [
@@ -4259,7 +4259,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Poison],
       weightkg: 0.1,
       aliases: ['goosuto'],
-      classification: 'Gaseous Pokémon'
+      classification: 'Gas Pokémon'
     }
   ],
   [
@@ -4437,7 +4437,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 6.5,
       aliases: ['kurabu'],
-      classification: 'Freshwater Crab Pokémon'
+      classification: 'River Crab Pokémon'
     }
   ],
   [
@@ -4746,7 +4746,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ground],
       weightkg: 45,
       aliases: ['garagara'],
-      classification: 'Bone Lover Pokémon'
+      classification: 'Bone Keeper Pokémon'
     }
   ],
   [
@@ -4826,7 +4826,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 49.8,
       aliases: ['sawamuraa'],
-      classification: 'Kick Pokémon'
+      classification: 'Kicking Pokémon'
     }
   ],
   [
@@ -4850,7 +4850,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 50.2,
       aliases: ['ebiwaraa'],
-      classification: 'Punch Pokémon'
+      classification: 'Punching Pokémon'
     }
   ],
   [
@@ -4982,7 +4982,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ground, TypesEnum.Rock],
       weightkg: 115,
       aliases: ['saihoon'],
-      classification: 'Spiky Pokémon'
+      classification: 'Spikes Pokémon'
     }
   ],
   [
@@ -5082,7 +5082,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 80,
       aliases: ['garuura', 'kanga'],
-      classification: 'Parent and Child Pokémon'
+      classification: 'Parent Pokémon'
     }
   ],
   [
@@ -5328,7 +5328,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice, TypesEnum.Psychic],
       weightkg: 56.8,
       aliases: ['gmime', 'gmrmime'],
-      classification: 'Dance Pokémon'
+      classification: 'Dancing Pokémon'
     }
   ],
   [
@@ -5375,7 +5375,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice, TypesEnum.Psychic],
       weightkg: 40.6,
       aliases: ['ruujura'],
-      classification: 'Humanoid Pokémon'
+      classification: 'Human Shape Pokémon'
     }
   ],
   [
@@ -5400,7 +5400,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric],
       weightkg: 30,
       aliases: ['erebuu'],
-      classification: 'Electric Shock Pokémon'
+      classification: 'Electric Pokémon'
     }
   ],
   [
@@ -5739,7 +5739,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 4,
       aliases: ['metamon'],
-      classification: 'Transformation Pokémon'
+      classification: 'Transform Pokémon'
     }
   ],
   [
@@ -5848,7 +5848,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 29,
       aliases: ['shawaazu'],
-      classification: 'Foam-Spitting Pokémon'
+      classification: 'Bubble Jet Pokémon'
     }
   ],
   [
@@ -5919,7 +5919,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 36.5,
       aliases: ['porigon'],
-      classification: '{{tt|Virtual Pokémon|CG Pokémon before Pokémon Blue}}'
+      classification: 'Virtual Pokémon'
     }
   ],
   [
@@ -5992,7 +5992,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'kabuto',
       types: [TypesEnum.Rock, TypesEnum.Water],
       weightkg: 11.5,
-      classification: 'Shell Pokémon'
+      classification: 'Shellfish Pokémon'
     }
   ],
   [
@@ -6020,7 +6020,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Water],
       weightkg: 40.5,
       aliases: ['kabutopusu'],
-      classification: 'Shell Pokémon'
+      classification: 'Shellfish Pokémon'
     }
   ],
   [
@@ -6093,7 +6093,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 460,
       aliases: ['kabigon'],
-      classification: 'Dozing Pokémon'
+      classification: 'Sleeping Pokémon'
     }
   ],
   [
@@ -6142,7 +6142,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 55.4,
       aliases: ['furiizaa'],
       legendary: true,
-      classification: 'Freezing Pokémon'
+      classification: 'Freeze Pokémon'
     }
   ],
   [
@@ -6192,7 +6192,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 52.6,
       aliases: ['sandaa'],
       legendary: true,
-      classification: 'Electric Shock Pokémon'
+      classification: 'Electric Pokémon'
     }
   ],
   [
@@ -6218,7 +6218,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 58.2,
       legendary: true,
-      classification: 'Good Walker Pokémon'
+      classification: 'Strong Legs Pokémon'
     }
   ],
   [
@@ -6268,7 +6268,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark, TypesEnum.Flying],
       weightkg: 66,
       legendary: true,
-      classification: 'Evil Pokémon'
+      classification: 'Malevolent Pokémon'
     }
   ],
   [

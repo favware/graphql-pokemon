@@ -41,6 +41,9 @@ jobs:
         with:
           push: true
           context: .
+          platforms: |
+            linux/amd64
+            linux/arm64v8
           tags: |
             favware/graphql-pokemon:latest
             ghcr.io/favware/graphql-pokemon:latest

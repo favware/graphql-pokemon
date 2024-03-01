@@ -9,7 +9,7 @@ jobs:
   Publish:
     name: Publish image to container registries
     runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip docker]'))"
+    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -30,11 +30,15 @@ jobs:
         id: get_branch_name
         run: echo ::set-output name=branch_name::$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')
       - name: Build and push Docker image
-        id: docker_build
         uses: docker/build-push-action@v5.1.0
         with:
           push: true
           context: .
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          platforms: |
+            linux/amd64
+            linux/arm64v8
           tags: |
             favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}
             ghcr.io/favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}

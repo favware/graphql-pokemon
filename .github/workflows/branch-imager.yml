@@ -38,7 +38,7 @@ jobs:
           cache-to: type=gha,mode=max
           platforms: |
             linux/amd64
-            linux/arm64v8
+            linux/arm64
           tags: |
             favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}
             ghcr.io/favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}

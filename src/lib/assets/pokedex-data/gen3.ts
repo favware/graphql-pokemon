@@ -413,7 +413,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['zigzagoon'],
       species: 'zigzagoon-galar',
       types: [TypesEnum.Dark, TypesEnum.Normal],
-      weightkg: 17.5
+      weightkg: 17.5,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zigzagoon.mp3'
     }
   ],
   [
@@ -466,7 +467,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'zigzagoongalar',
       species: 'linoone-galar',
       types: [TypesEnum.Dark, TypesEnum.Normal],
-      weightkg: 32.5
+      weightkg: 32.5,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/linoone.mp3'
     }
   ],
   [
@@ -3065,7 +3067,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'castform-sunny',
       types: [TypesEnum.Fire],
       weightkg: 0.8,
-      aliases: ['castformfire', 'castforms']
+      aliases: ['castformfire', 'castforms'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/castform.mp3'
     }
   ],
   [
@@ -3090,7 +3093,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'castform-rainy',
       types: [TypesEnum.Water],
       weightkg: 0.8,
-      aliases: ['castformr', 'castformwater']
+      aliases: ['castformr', 'castformwater'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/castform.mp3'
     }
   ],
   [
@@ -3115,7 +3119,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'castform-snowy',
       types: [TypesEnum.Ice],
       weightkg: 0.8,
-      aliases: ['castformh', 'castformice']
+      aliases: ['castformh', 'castformice'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/castform.mp3'
     }
   ],
   [
@@ -4294,7 +4299,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
       aliases: ['deoa', 'deoxysa'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/deoxys.mp3'
     }
   ],
   [
@@ -4320,7 +4326,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
       aliases: ['deod', 'deoxysd', 'deoxysdefence'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/deoxys.mp3'
     }
   ],
   [
@@ -4346,7 +4353,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 60.8,
       aliases: ['deos', 'deoxyss'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/deoxys.mp3'
     }
   ]
 ];

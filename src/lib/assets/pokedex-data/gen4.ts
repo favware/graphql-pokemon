@@ -732,7 +732,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'wormadam-sandy',
       types: [TypesEnum.Bug, TypesEnum.Ground],
       weightkg: 6.5,
-      aliases: ['wormadamg', 'wormadamground', 'wormadamsandycloak']
+      aliases: ['wormadamg', 'wormadamground', 'wormadamsandycloak'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/wormadam.mp3'
     }
   ],
   [
@@ -759,7 +760,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'wormadam-trash',
       types: [TypesEnum.Bug, TypesEnum.Steel],
       weightkg: 6.5,
-      aliases: ['wormadams', 'wormadamsteel', 'wormadamtrashcloak']
+      aliases: ['wormadams', 'wormadamsteel', 'wormadamtrashcloak'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/wormadam.mp3'
     }
   ],
   [
@@ -994,7 +996,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cherrim-sunshine',
       types: [TypesEnum.Grass],
       weightkg: 9.3,
-      aliases: ['cherrims', 'cherrimsunny']
+      aliases: ['cherrims', 'cherrimsunny'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/cherrim.mp3'
     }
   ],
   [
@@ -2663,7 +2666,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rotom-heat',
       types: [TypesEnum.Electric, TypesEnum.Fire],
       weightkg: 0.3,
-      aliases: ['rotomh']
+      aliases: ['rotomh'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/rotom.mp3'
     }
   ],
   [
@@ -2688,7 +2692,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rotom-wash',
       types: [TypesEnum.Electric, TypesEnum.Water],
       weightkg: 0.3,
-      aliases: ['rotomw']
+      aliases: ['rotomw'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/rotom.mp3'
     }
   ],
   [
@@ -2713,7 +2718,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rotom-frost',
       types: [TypesEnum.Electric, TypesEnum.Ice],
       weightkg: 0.3,
-      aliases: ['rotomf']
+      aliases: ['rotomf'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/rotom.mp3'
     }
   ],
   [
@@ -2738,7 +2744,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rotom-fan',
       types: [TypesEnum.Electric, TypesEnum.Flying],
       weightkg: 0.3,
-      aliases: ['rotoms', 'rotomspin']
+      aliases: ['rotoms', 'rotomspin'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/rotom.mp3'
     }
   ],
   [
@@ -2763,7 +2770,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'rotom-mow',
       types: [TypesEnum.Electric, TypesEnum.Grass],
       weightkg: 0.3,
-      aliases: ['rotomc', 'rotomcut']
+      aliases: ['rotomc', 'rotomcut'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/rotom.mp3'
     }
   ],
   [
@@ -2887,7 +2895,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 850,
       aliases: ['origindialga', 'dialgao'],
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dialga.mp3'
     }
   ],
   [
@@ -2939,7 +2948,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water, TypesEnum.Dragon],
       weightkg: 660,
       aliases: ['originpalkia', 'palkiao'],
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/palkia.mp3'
     }
   ],
   [
@@ -3039,7 +3049,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Dragon],
       weightkg: 650,
       aliases: ['origingiratina', 'girao', 'giratinao'],
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/giratina.mp3'
     }
   ],
   [
@@ -3277,7 +3288,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug],
       weightkg: 320,
       aliases: ['arcbug', 'bugceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3321,7 +3333,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark],
       weightkg: 320,
       aliases: ['arcdark', 'darkceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3365,7 +3378,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon],
       weightkg: 320,
       aliases: ['arcdragon', 'dragonceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3409,7 +3423,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric],
       weightkg: 320,
       aliases: ['arcelectric', 'eleceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3453,7 +3468,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 320,
       aliases: ['arcfairy', 'fairyceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3497,7 +3513,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 320,
       aliases: ['arcfighting', 'fightceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3541,7 +3558,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire],
       weightkg: 320,
       aliases: ['arcfire', 'fireceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3585,7 +3603,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Flying],
       weightkg: 320,
       aliases: ['arcflying', 'flyceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3629,7 +3648,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost],
       weightkg: 320,
       aliases: ['arcghost', 'ghostceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3673,7 +3693,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass],
       weightkg: 320,
       aliases: ['arcgrass', 'grassceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3717,7 +3738,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ground],
       weightkg: 320,
       aliases: ['arcground', 'groundceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3761,7 +3783,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice],
       weightkg: 320,
       aliases: ['arcice', 'iceceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3805,7 +3828,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison],
       weightkg: 320,
       aliases: ['arcpoison', 'poisonceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3849,7 +3873,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 320,
       aliases: ['arcpsychic', 'psyceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3893,7 +3918,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock],
       weightkg: 320,
       aliases: ['arcrock', 'rockceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3937,7 +3963,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel],
       weightkg: 320,
       aliases: ['arcsteel', 'steelceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -3981,7 +4008,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 320,
       aliases: ['arcwater', 'waterceus'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ],
   [
@@ -4026,7 +4054,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 320,
       aliases: ['arceuslegendary', 'plarceus', 'god'],
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/arceus.mp3'
     }
   ]
 ];

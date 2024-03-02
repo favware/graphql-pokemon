@@ -315,7 +315,7 @@ describe('getPokemon', () => {
         classification: 'Ghost Flame Pokémon',
         color: 'Yellow',
         cosmeticFormes: null,
-        cry: null
+        cry: 'https://play.pokemonshowdown.com/audio/cries/typhlosion.mp3'
       });
     });
   });

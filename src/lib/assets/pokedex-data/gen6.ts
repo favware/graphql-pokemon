@@ -251,7 +251,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'greninja-ash',
       types: [TypesEnum.Water, TypesEnum.Dark],
       weightkg: 40,
-      aliases: ['ashgren', 'ashgreninja', 'bondgreninja', 'gekkougasatoshi', 'satoshigekkouga']
+      aliases: ['ashgren', 'ashgreninja', 'bondgreninja', 'gekkougasatoshi', 'satoshigekkouga'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/greninja.mp3'
     }
   ],
   [
@@ -544,7 +545,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['vivillon', 'vivillonpokeball'],
       species: 'vivillon-fancy',
       types: [TypesEnum.Bug, TypesEnum.Flying],
-      weightkg: 17
+      weightkg: 17,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/vivillon.mp3'
     }
   ],
   [
@@ -572,7 +574,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['vivillon', 'vivillonfancy'],
       species: 'vivillon-pokeball',
       types: [TypesEnum.Bug, TypesEnum.Flying],
-      weightkg: 17
+      weightkg: 17,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/vivillon.mp3'
     }
   ],
   [
@@ -992,7 +995,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'meowstic-f',
       types: [TypesEnum.Psychic],
       weightkg: 8.5,
-      aliases: ['meowsticfemale']
+      aliases: ['meowsticfemale'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3'
     }
   ],
   [
@@ -1099,7 +1103,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'aegislash-blade',
       types: [TypesEnum.Steel, TypesEnum.Ghost],
       weightkg: 53,
-      aliases: ['aegiblade']
+      aliases: ['aegiblade'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/aegislash.mp3'
     }
   ],
   [
@@ -1760,7 +1765,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 68.5,
       aliases: ['hisuiansliggoo', 'sliggooh'],
-      classification: 'Snail Pokémon'
+      classification: 'Snail Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sliggoo.mp3'
     }
   ],
   [
@@ -1818,7 +1824,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 334.1,
       aliases: ['hisuiangoodra', 'goodrah'],
-      classification: 'Shell Bunker Pokémon'
+      classification: 'Shell Bunker Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/goodra.mp3'
     }
   ],
   [
@@ -1950,7 +1957,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['pumpkaboo', 'pumpkaboolarge', 'pumpkaboosuper'],
       species: 'pumpkaboo-small',
       types: [TypesEnum.Ghost, TypesEnum.Grass],
-      weightkg: 3.5
+      weightkg: 3.5,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pumpkaboo.mp3'
     }
   ],
   [
@@ -1978,7 +1986,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['pumpkaboo', 'pumpkaboosmall', 'pumpkaboosuper'],
       species: 'pumpkaboo-large',
       types: [TypesEnum.Ghost, TypesEnum.Grass],
-      weightkg: 7.5
+      weightkg: 7.5,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pumpkaboo.mp3'
     }
   ],
   [
@@ -2062,7 +2071,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'gourgeist-small',
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 9.5,
-      aliases: ['gourgeists']
+      aliases: ['gourgeists'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gourgeist.mp3'
     }
   ],
   [
@@ -2089,7 +2099,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'gourgeist-large',
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 14,
-      aliases: ['gourgeistl']
+      aliases: ['gourgeistl'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gourgeist.mp3'
     }
   ],
   [
@@ -2201,7 +2212,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'avalugg-hisui',
       types: [TypesEnum.Ice, TypesEnum.Rock],
       weightkg: 262.4,
-      aliases: ['kurebeesu']
+      aliases: ['kurebeesu'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/avalugg.mp3'
     }
   ],
   [
@@ -2304,7 +2316,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'xerneas-neutral',
       types: [TypesEnum.Fairy],
       weightkg: 215,
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/xerneas.mp3'
     }
   ],
   [

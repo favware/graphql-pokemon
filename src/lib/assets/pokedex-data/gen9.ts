@@ -305,7 +305,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'lechonk',
       species: 'oinkolognef',
       types: [TypesEnum.Normal],
-      weightkg: 120
+      weightkg: 120,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/oinkologne.mp3'
     }
   ],
   [
@@ -577,7 +578,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['maushold'],
       species: 'mausholdfour',
       types: [TypesEnum.Normal],
-      weightkg: 2.8
+      weightkg: 2.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/maushold.mp3'
     }
   ],
   [
@@ -759,7 +761,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['squawkabilly', 'squawkabillyyellow', 'squawkabillywhite'],
       species: 'squawkabillyblue',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      weightkg: 2.4
+      weightkg: 2.4,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3'
     }
   ],
   [
@@ -786,7 +789,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['squawkabilly', 'squawkabillyblue', 'squawkabillywhite'],
       species: 'squawkabillyyellow',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      weightkg: 2.4
+      weightkg: 2.4,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3'
     }
   ],
   [
@@ -813,7 +817,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['squawkabilly', 'squawkabillyblue', 'squawkabillyyellow'],
       species: 'squawkabillywhite',
       types: [TypesEnum.Normal, TypesEnum.Flying],
-      weightkg: 2.4
+      weightkg: 2.4,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3'
     }
   ],
   [
@@ -2158,7 +2163,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'dunsparce',
       species: 'dudunsparcethreesegment',
       types: [TypesEnum.Normal],
-      weightkg: 47.4
+      weightkg: 47.4,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dudunsparce.mp3'
     }
   ],
   [
@@ -2574,7 +2580,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'gimmighoulroaming',
       types: [TypesEnum.Ghost],
       weightkg: 0.1,
-      classification: 'Coin Hunter Pokémon'
+      classification: 'Coin Hunter Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gimmighoul.mp3'
     }
   ],
   [
@@ -2908,7 +2915,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['poltchageist'],
       species: 'poltchageist-artisan',
       types: [TypesEnum.Grass, TypesEnum.Ghost],
-      weightkg: 1.1
+      weightkg: 1.1,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/poltchageist.mp3'
     }
   ],
   [
@@ -2960,7 +2968,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'poltchageistartisan',
       species: 'sinistcha-masterpiece',
       types: [TypesEnum.Grass, TypesEnum.Ghost],
-      weightkg: 2.2
+      weightkg: 2.2,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sinistcha.mp3'
     }
   ],
   [
@@ -3090,7 +3099,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-cornerstone',
       types: [TypesEnum.Grass, TypesEnum.Rock],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3122,7 +3132,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-cornerstonetera',
       types: [TypesEnum.Grass, TypesEnum.Rock],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3154,7 +3165,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-hearthflame',
       types: [TypesEnum.Grass, TypesEnum.Fire],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3186,7 +3198,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-hearthflametera',
       types: [TypesEnum.Grass, TypesEnum.Fire],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3218,7 +3231,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-wellspring',
       types: [TypesEnum.Grass, TypesEnum.Water],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3250,7 +3264,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-wellspringtera',
       types: [TypesEnum.Grass, TypesEnum.Water],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3282,7 +3297,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       ],
       species: 'ogerpon-tealtera',
       types: [TypesEnum.Grass],
-      weightkg: 39.8
+      weightkg: 39.8,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ogerpon.mp3'
     }
   ],
   [
@@ -3472,7 +3488,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['terapagos', 'terapagosstellar'],
       species: 'terapagos-terastal',
       types: [TypesEnum.Normal],
-      weightkg: 16
+      weightkg: 16,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/terapagos.mp3'
     }
   ],
   [
@@ -3499,7 +3516,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['terapagos', 'terapagosterastal'],
       species: 'terapagos-stellar',
       types: [TypesEnum.Normal],
-      weightkg: 77
+      weightkg: 77,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/terapagos.mp3'
     }
   ],
   [

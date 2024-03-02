@@ -183,7 +183,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Ghost],
       weightkg: 69.8,
       aliases: ['hisuiantyphlosion', 'typhlosionh'],
-      classification: 'Ghost Flame Pokémon'
+      classification: 'Ghost Flame Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/typhlosion.mp3'
     }
   ],
   [
@@ -610,7 +611,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       specialSprite: 'https://play.pokemonshowdown.com/sprites/gen4/pichu-spikyeared.png',
       species: 'pichu-spiky-eared',
       types: [TypesEnum.Electric],
-      weightkg: 2
+      weightkg: 2,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pichu.mp3'
     }
   ],
   [
@@ -1288,7 +1290,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison, TypesEnum.Ground],
       weightkg: 11,
       aliases: ['wooperp'],
-      classification: 'Poison Fish Pokémon'
+      classification: 'Poison Fish Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/wooper.mp3'
     }
   ],
   [
@@ -1444,7 +1447,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'slowking-galar',
       types: [TypesEnum.Poison, TypesEnum.Psychic],
       weightkg: 79.5,
-      classification: 'Hexpert Pokémon'
+      classification: 'Hexpert Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/slowking.mp3'
     }
   ],
   [
@@ -2256,7 +2260,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['corsola'],
       species: 'corsola-galar',
       types: [TypesEnum.Ghost],
-      weightkg: 0.5
+      weightkg: 0.5,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/corsola.mp3'
     }
   ],
   [

@@ -98,7 +98,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['rillaboom'],
       species: 'rillaboom-gmax',
       types: [TypesEnum.Grass],
-      weightkg: 90
+      weightkg: 90,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/rillaboom.mp3'
     }
   ],
   [
@@ -196,7 +197,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['cinderace'],
       species: 'cinderace-gmax',
       types: [TypesEnum.Fire],
-      weightkg: 33
+      weightkg: 33,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/cinderace.mp3'
     }
   ],
   [
@@ -294,7 +296,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['inteleon'],
       species: 'inteleon-gmax',
       types: [TypesEnum.Water],
-      weightkg: 45.2
+      weightkg: 45.2,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/inteleon.mp3'
     }
   ],
   [
@@ -448,7 +451,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'corviknight-gmax',
       types: [TypesEnum.Flying, TypesEnum.Steel],
       weightkg: 350,
-      aliases: ['gigantamax corviknight']
+      aliases: ['gigantamax corviknight'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/corviknight.mp3'
     }
   ],
   [
@@ -552,7 +556,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'orbeetle-gmax',
       types: [TypesEnum.Bug, TypesEnum.Psychic],
       weightkg: 122.4,
-      aliases: ['gigantamax orbeetle']
+      aliases: ['gigantamax orbeetle'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/orbeetle.mp3'
     }
   ],
   [
@@ -786,7 +791,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'drednaw-gmax',
       types: [TypesEnum.Water, TypesEnum.Rock],
       weightkg: 346.5,
-      aliases: ['gigantamax drednaw']
+      aliases: ['gigantamax drednaw'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/drednaw.mp3'
     }
   ],
   [
@@ -956,7 +962,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'coalossal-gmax',
       types: [TypesEnum.Rock, TypesEnum.Fire],
       weightkg: 930,
-      aliases: ['gigantamax coalossal']
+      aliases: ['gigantamax coalossal'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/coalossal.mp3'
     }
   ],
   [
@@ -1032,7 +1039,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'flapple-gmax',
       types: [TypesEnum.Grass, TypesEnum.Dragon],
       weightkg: 1,
-      aliases: ['gigantamax flapple']
+      aliases: ['gigantamax flapple'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/flapple.mp3'
     }
   ],
   [
@@ -1084,7 +1092,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'appletun-gmax',
       types: [TypesEnum.Grass, TypesEnum.Dragon],
       weightkg: 40,
-      aliases: ['gigantamax appletun']
+      aliases: ['gigantamax appletun'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/appletun.mp3'
     }
   ],
   [
@@ -1168,7 +1177,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'sandaconda-gmax',
       types: [TypesEnum.Ground],
       weightkg: 197,
-      aliases: ['gigantamax sandaconda']
+      aliases: ['gigantamax sandaconda'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sandaconda.mp3'
     }
   ],
   [
@@ -1215,7 +1225,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['cramorant', 'cramorantgorging'],
       species: 'Cramorant-Gulping',
       types: [TypesEnum.Flying, TypesEnum.Water],
-      weightkg: 18
+      weightkg: 18,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
     }
   ],
   [
@@ -1239,7 +1250,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['cramorant', 'cramorantgulping'],
       species: 'Cramorant-Gorging',
       types: [TypesEnum.Flying, TypesEnum.Water],
-      weightkg: 18
+      weightkg: 18,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
     }
   ],
   [
@@ -1366,7 +1378,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'toxtricity-low-key',
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 40,
-      aliases: ['toxtricityl', 'toxtricitylk']
+      aliases: ['toxtricityl', 'toxtricitylk'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/toxtricity.mp3'
     }
   ],
   [
@@ -1391,7 +1404,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'toxtricity-gmax',
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 140,
-      aliases: ['gigantamax toxtricity']
+      aliases: ['gigantamax toxtricity'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/toxtricity.mp3'
     }
   ],
   [
@@ -1489,7 +1503,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'centiskorch-gmax',
       types: [TypesEnum.Fire, TypesEnum.Bug],
       weightkg: 360,
-      aliases: ['gigantamax centiskorch']
+      aliases: ['gigantamax centiskorch'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/centiskorch.mp3'
     }
   ],
   [
@@ -1595,7 +1610,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['sinistea'],
       species: 'sinistea-antique',
       types: [TypesEnum.Ghost],
-      weightkg: 0.2
+      weightkg: 0.2,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sinistea.mp3'
     }
   ],
   [
@@ -1647,7 +1663,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'sinisteaantique',
       species: 'polteageist-antique',
       types: [TypesEnum.Ghost],
-      weightkg: 0.4
+      weightkg: 0.4,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/polteageist.mp3'
     }
   ],
   [
@@ -1766,7 +1783,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'hatterene-gmax',
       types: [TypesEnum.Psychic, TypesEnum.Fairy],
       weightkg: 15.3,
-      aliases: ['gigantamax hatterene']
+      aliases: ['gigantamax hatterene'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/hatterene.mp3'
     }
   ],
   [
@@ -1872,7 +1890,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'grimmsnarl-gmax',
       types: [TypesEnum.Dark, TypesEnum.Fairy],
       weightkg: 183,
-      aliases: ['gigantamax grimmsnarl']
+      aliases: ['gigantamax grimmsnarl'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/grimmsnarl.mp3'
     }
   ],
   [
@@ -2129,7 +2148,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'alcremie-gmax',
       types: [TypesEnum.Fairy],
       weightkg: 3,
-      aliases: ['gigantamax alcremie']
+      aliases: ['gigantamax alcremie'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/alcremie.mp3'
     }
   ],
   [
@@ -2479,7 +2499,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'copperajah-gmax',
       types: [TypesEnum.Steel],
       weightkg: 1950,
-      aliases: ['gigantamax copperajah']
+      aliases: ['gigantamax copperajah'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/copperajah.mp3'
     }
   ],
   [
@@ -2613,7 +2634,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'duraludon-gmax',
       types: [TypesEnum.Steel, TypesEnum.Dragon],
       weightkg: 120,
-      aliases: ['gigantamax duraludon']
+      aliases: ['gigantamax duraludon'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/duraludon.mp3'
     }
   ],
   [
@@ -2935,7 +2957,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Water],
       weightkg: 105,
       aliases: ['urshifurapid', 'urshifurs', 'watershifu'],
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/urshifu.mp3'
     }
   ],
   [
@@ -2960,7 +2983,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'urshifu-gmax',
       types: [TypesEnum.Fighting, TypesEnum.Dark],
       weightkg: 105,
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/urshifu.mp3'
     }
   ],
   [
@@ -3034,7 +3058,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zarude-dada',
       types: [TypesEnum.Dark, TypesEnum.Grass],
       weightkg: 70,
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zarude.mp3'
     }
   ],
   [
@@ -3289,7 +3314,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['ursaluna'],
       species: 'ursaluna-bloodmoon',
       types: [TypesEnum.Ground, TypesEnum.Normal],
-      weightkg: 333
+      weightkg: 333,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ursaluna.mp3'
     }
   ],
   [
@@ -3342,7 +3368,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       prevo: 'basculinwhitestriped',
       species: 'basculegion-f',
       types: [TypesEnum.Water, TypesEnum.Ghost],
-      weightkg: 110
+      weightkg: 110,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/basculegion.mp3'
     }
   ],
   [

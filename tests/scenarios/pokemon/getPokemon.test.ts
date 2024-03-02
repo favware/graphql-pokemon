@@ -293,7 +293,7 @@ describe('getPokemon', () => {
         shinySprite: 'https://play.pokemonshowdown.com/sprites/gen5-shiny/typhlosion-hisui.png',
         smogonPage: 'https://www.smogon.com/dex/sv/pokemon/typhlosion-hisui',
         baseForme: null,
-        smogonTier: 'RU',
+        smogonTier: 'NU',
         species: 'typhlosion-hisui',
         sprite: 'https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png',
         types: [{ name: 'Fire' }, { name: 'Ghost' }],

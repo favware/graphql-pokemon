@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.5.0](https://github.com/favware/graphql-pokemon/compare/v8.5.0...v8.5.0) - (2024-03-02)
+
+## 🏠 Refactor
+
+- Rework script updaters ([8311da2](https://github.com/favware/graphql-pokemon/commit/8311da2a7d6f512f3a32074c6e1c00d7716600f1))
+- Add scripts for updating pokedex classifications ([1ebcd05](https://github.com/favware/graphql-pokemon/commit/1ebcd05834860d8e6a8938c250155bfc40f98f7a))
+
+## 🐛 Bug Fixes
+
+- Update formats and learnsets ([99c4e0a](https://github.com/favware/graphql-pokemon/commit/99c4e0ae70bce4584e0888f06e252ce0026b312d))
+- Update learnset and tiers updater scripts ([e68db19](https://github.com/favware/graphql-pokemon/commit/e68db19bae7a891897d683f91856e817ae515e12))
+- Add cries for form pokemon ([22753bb](https://github.com/favware/graphql-pokemon/commit/22753bb8eafa21ed35a177184e089bd63d61040b))
+- Update cry updater to handle forms ([206aa9e](https://github.com/favware/graphql-pokemon/commit/206aa9ee964141783f55a839e4a9ed1d52b4009e))
+- Publish docker image for both amd64 and arm64 ([eca9b44](https://github.com/favware/graphql-pokemon/commit/eca9b4489b751b40d1682173ed4ed2a5d5472f3b))
+- Use english classifications, not japanese ([b363816](https://github.com/favware/graphql-pokemon/commit/b363816d7d62570d6540efb5f6510e3dd9c3c091))
+- Add missing classifications that werent parseable ([ed37461](https://github.com/favware/graphql-pokemon/commit/ed37461e3a6a87f269ddc4e39bfb2ee987a94bda))
+- Auto update abilities, items, and moves and update the data directly ([7ae7e3a](https://github.com/favware/graphql-pokemon/commit/7ae7e3ab3ce34261faef8886e1df79530c97f5da))
+- Fixed dex number for slowking-galar ([bb64ef1](https://github.com/favware/graphql-pokemon/commit/bb64ef1fdb8b83bfa614e9d68647f87b539d537d))
+
+## 🚀 Features
+
+- Add cries data ([6906cc7](https://github.com/favware/graphql-pokemon/commit/6906cc7cdaa3351811f6345d4b51f591a25467e1))
+- Add `cry` property to pokemon ([7a7b39b](https://github.com/favware/graphql-pokemon/commit/7a7b39b41380f06f76582925e18cf9ba917acba1))
+- Add classifications data for special form Pokémon ([619cec2](https://github.com/favware/graphql-pokemon/commit/619cec21d1d97110c546a4fb9b5ba035fe1e782a))
+- Add classifications data for non special form Pokémon ([f7c3943](https://github.com/favware/graphql-pokemon/commit/f7c3943d2c6ada40dc204f4184f1022c983e0460))
+
+## 🧪 Testing
+
+- Update test data ([0210312](https://github.com/favware/graphql-pokemon/commit/021031279c7750ab7ae0d04289357f5501af9fbf))
+- Update test data ([6b6ae1b](https://github.com/favware/graphql-pokemon/commit/6b6ae1b50ff325bba7428c2fde5e425408c1ca3e))
+- Update test data ([c3b2d74](https://github.com/favware/graphql-pokemon/commit/c3b2d74c38ad6dc1ecddd6476ed250758c595807))
+
 # [8.4.2](https://github.com/favware/graphql-pokemon/compare/v8.4.2...v8.4.2) - (2024-02-25)
 
 ## 🏠 Refactor

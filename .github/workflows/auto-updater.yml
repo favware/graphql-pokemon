@@ -42,6 +42,8 @@ jobs:
         run: yarn au:items
       - name: Run Moves Updater
         run: yarn au:moves
+      - name: Run Cries Updater
+        run: yarn au:cries
       - name: Wait for Flaresolverr to be online
         working-directory: ./scripts
         run: ./wait-for-port.sh
@@ -49,8 +51,6 @@ jobs:
           PORT: 8191
       - name: Run Classifications Updater
         run: yarn au:classifications
-      - name: Run Cries Updater
-        run: yarn au:cries
       - name: Run Flavor Text Updater
         run: yarn au:flavors
       - name: Build code

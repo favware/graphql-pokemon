@@ -45,7 +45,7 @@ jobs:
           cache-to: type=gha,mode=max
           platforms: |
             linux/amd64
-            linux/arm64v8
+            linux/arm64
           tags: |
             favware/graphql-pokemon:latest
             ghcr.io/favware/graphql-pokemon:latest

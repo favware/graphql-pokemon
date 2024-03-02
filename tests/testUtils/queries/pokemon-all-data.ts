@@ -218,6 +218,7 @@ export const getPokemonWithFullDataAndEvolutions = gql`
     classification
     color
     cosmeticFormes
+    cry
     weight
     legendary
     mythical

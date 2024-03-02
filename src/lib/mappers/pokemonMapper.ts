@@ -424,6 +424,13 @@ export function mapPokemonDataToPokemonGraphQL({
   });
   addPropertyToObjectFieldBased({
     objectTarget: pokemonData,
+    propertyKey: 'cry',
+    propertyValue: data.cry,
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}cry`
+  });
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
     propertyKey: 'eggGroups',
     propertyValue: data.eggGroups,
     requestedFields,

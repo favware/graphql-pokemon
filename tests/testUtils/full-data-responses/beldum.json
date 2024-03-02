@@ -1029,6 +1029,7 @@
       "classification": "Iron Ball Pokémon",
       "color": "Blue",
       "cosmeticFormes": null,
+      "cry": null,
       "weight": 95.2,
       "legendary": false,
       "mythical": false,
@@ -2071,6 +2072,7 @@
           "classification": "Iron Claw Pokémon",
           "color": "Blue",
           "cosmeticFormes": null,
+          "cry": null,
           "weight": 202.5,
           "legendary": false,
           "mythical": false,
@@ -12609,6 +12611,7 @@
               "classification": "Iron Leg Pokémon",
               "color": "Blue",
               "cosmeticFormes": null,
+              "cry": null,
               "weight": 550,
               "legendary": false,
               "mythical": false

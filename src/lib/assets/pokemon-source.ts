@@ -98,6 +98,8 @@ export namespace PokemonTypes {
 
     cosmeticFormes?: string[];
 
+    cry?: string;
+
     eggGroups?: `${Capitalize<
       | 'Monster'
       | 'Water 1'

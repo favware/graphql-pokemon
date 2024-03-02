@@ -251,6 +251,8 @@ interface Pokemon {
   classification?: Maybe<string>;
   /** The colour of a Pokémon as listed in the Pokedex */
   color: string;
+  /** An URL to an mp3 file of the Pokémon's cry. */
+  cry?: Maybe<string>;
   /** Any other *cosmetic* forms for a Pokémon, distinguished from other formes as cosmetic formes only change the look of the Pokémon, while other formes might also change an ability, move set or other data. */
   cosmeticFormes?: Maybe<Array<string>>;
   /** The egg groups a Pokémon is in */

@@ -1,12 +1,9 @@
-import { FetchResultTypes, fetch } from '@sapphire/fetch';
-import { Time, Timestamp } from '@sapphire/timestamp';
 import { objectEntries } from '@sapphire/utilities';
-import { green, yellow } from 'colorette';
-import { writeFile } from 'node:fs/promises';
+import { green } from 'colorette';
 import { URL } from 'node:url';
-import { importFileFromWeb, mapToJson, userAgentHeader, type GitCommit } from '../../../utils.js';
+import { importFileFromWeb, mapToJson, writeDataToFileAndPrettify } from '../../../utils.js';
 
-const filePrefix = [
+const prependContent = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
   '',
   "import { Collection } from '@discordjs/collection';",
@@ -14,30 +11,9 @@ const filePrefix = [
   '/** The learnsets in Pokémon */',
   'export const learnsets = new Collection<string, Record<string, string[]>>('
 ].join('\n');
-const fileSuffix = [');', ''].join('\n');
+const appendContent = [');', ''].join('\n');
 
-const shaTrackerFileUrl = new URL('sha-tracker.json', import.meta.url);
-const learnsetsFileUrl = new URL('../src/lib/assets/learnsets.ts', import.meta.url);
-const oneMonthAgo = Date.now() - Time.Month * 2;
-const timestamp = new Timestamp('YYYY-MM-DD[T]HH:mm:ssZ').display(oneMonthAgo);
-
-const url = new URL('https://api.github.com/repos/smogon/pokemon-showdown/commits');
-url.searchParams.append('path', 'data/learnsets.ts');
-url.searchParams.append('since', timestamp);
-
-const [commits, { default: ciData }] = await Promise.all([
-  fetch<GitCommit[]>(url, { headers: userAgentHeader }, FetchResultTypes.JSON), //
-  // @ts-expect-error Node supports URLs just fine
-  import(shaTrackerFileUrl, { assert: { type: 'json' } }) //
-]);
-
-const data = { sha: commits.length ? commits[0].sha : null, length: commits.length };
-
-if (data.sha === null || data.sha === ciData.learnsetsLastSha) {
-  console.info(yellow('Fetched data but no new commit was available'));
-
-  process.exit(0);
-}
+const learnsetsFileUrl = new URL('../../../../src/lib/assets/learnsets.ts', import.meta.url);
 
 const { Learnsets } = await importFileFromWeb<{ Learnsets: { [k: string]: Record<string, string[]> } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/learnsets.ts',
@@ -51,11 +27,10 @@ for (const [pokemon, learnset] of objectEntries(Learnsets)) {
   else output.set(pokemon, learnset.learnset);
 }
 
-const writePromises: Promise<void>[] = [];
+if (output.size) {
+  const content = mapToJson(output);
 
-if (data.sha) writePromises.push(writeFile(shaTrackerFileUrl, JSON.stringify({ ...ciData, learnsetsLastSha: data.sha })));
-if (output.size) writePromises.push(writeFile(learnsetsFileUrl, `${filePrefix}${mapToJson(output)}${fileSuffix}`));
+  await writeDataToFileAndPrettify(prependContent + content + appendContent, learnsetsFileUrl);
 
-await Promise.all(writePromises);
-
-console.log(green(`Successfully wrote updated learnsets data to file; Latest SHA ${data.sha}`));
+  console.log(green(`Successfully wrote updated learnsets data to file`));
+}

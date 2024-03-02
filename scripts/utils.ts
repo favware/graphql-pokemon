@@ -82,8 +82,8 @@ export function replaceEnumLikeValues(data: string): string {
   return replacedTypesData;
 }
 
-export async function writeDataToFileAndPrettify(data: string, fileResolver: string): Promise<void> {
-  const fileToWriteTo = new URL(import.meta.resolve(fileResolver));
+export async function writeDataToFileAndPrettify(data: string, fileResolver: string | URL): Promise<void> {
+  const fileToWriteTo = typeof fileResolver === 'string' ? new URL(import.meta.resolve(fileResolver)) : fileResolver;
 
   const formattedData = await prettier.format(data, { ...prettierConfig, parser: 'typescript' });
   await writeFile(fileToWriteTo, formattedData);

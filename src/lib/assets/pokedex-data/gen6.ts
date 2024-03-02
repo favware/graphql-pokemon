@@ -23,7 +23,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass],
       weightkg: 9,
       aliases: ['harimaron'],
-      classification: 'Spiny Nut Pokémon'
+      classification: 'Spiny Nut Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/chespin.mp3'
     }
   ],
   [
@@ -48,7 +49,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass],
       weightkg: 29,
       aliases: ['hariboogu'],
-      classification: 'Spiny Armor Pokémon'
+      classification: 'Spiny Armor Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/quilladin.mp3'
     }
   ],
   [
@@ -72,7 +74,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass, TypesEnum.Fighting],
       weightkg: 90,
       aliases: ['burigaron'],
-      classification: 'Spiny Armor Pokémon'
+      classification: 'Spiny Armor Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/chesnaught.mp3'
     }
   ],
   [
@@ -95,7 +98,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire],
       weightkg: 9.4,
       aliases: ['fokko'],
-      classification: 'Fox Pokémon'
+      classification: 'Fox Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/fennekin.mp3'
     }
   ],
   [
@@ -120,7 +124,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire],
       weightkg: 14.5,
       aliases: ['teerunaa'],
-      classification: 'Fox Pokémon'
+      classification: 'Fox Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/braixen.mp3'
     }
   ],
   [
@@ -144,7 +149,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Psychic],
       weightkg: 39,
       aliases: ['mafokushii'],
-      classification: 'Fox Pokémon'
+      classification: 'Fox Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/delphox.mp3'
     }
   ],
   [
@@ -167,7 +173,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 7,
       aliases: ['keromatsu'],
-      classification: 'Bubble Frog Pokémon'
+      classification: 'Bubble Frog Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/froakie.mp3'
     }
   ],
   [
@@ -192,7 +199,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 10.9,
       aliases: ['gekogashira'],
-      classification: 'Bubble Frog Pokémon'
+      classification: 'Bubble Frog Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/frogadier.mp3'
     }
   ],
   [
@@ -217,7 +225,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water, TypesEnum.Dark],
       weightkg: 40,
       aliases: ['gekkouga', 'gren'],
-      classification: 'Ninja Pokémon'
+      classification: 'Ninja Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/greninja.mp3'
     }
   ],
   [
@@ -268,7 +277,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal],
       weightkg: 5,
       aliases: ['horubii'],
-      classification: 'Digging Pokémon'
+      classification: 'Digging Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/bunnelby.mp3'
     }
   ],
   [
@@ -292,7 +302,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal, TypesEnum.Ground],
       weightkg: 42.4,
       aliases: ['horuudo'],
-      classification: 'Digging Pokémon'
+      classification: 'Digging Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/diggersby.mp3'
     }
   ],
   [
@@ -318,7 +329,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 1.7,
       aliases: ['yayakoma'],
-      classification: 'Tiny Robin Pokémon'
+      classification: 'Tiny Robin Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/fletchling.mp3'
     }
   ],
   [
@@ -346,7 +358,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Flying],
       weightkg: 16,
       aliases: ['hinoyakoma', 'linda'],
-      classification: 'Ember Pokémon'
+      classification: 'Ember Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/fletchinder.mp3'
     }
   ],
   [
@@ -370,7 +383,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Flying],
       weightkg: 24.5,
       aliases: ['faiaroo', 'smogonbird', 'talon', 'tflame'],
-      classification: 'Scorching Pokémon'
+      classification: 'Scorching Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/talonflame.mp3'
     }
   ],
   [
@@ -400,7 +414,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug],
       weightkg: 2.5,
       aliases: ['kofukimushi'],
-      classification: 'Scatterdust Pokémon'
+      classification: 'Scatterdust Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scatterbug.mp3'
     }
   ],
   [
@@ -428,7 +443,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug],
       weightkg: 8.4,
       aliases: ['kofuurai'],
-      classification: 'Scatterdust Pokémon'
+      classification: 'Scatterdust Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/spewpa.mp3'
     }
   ],
   [
@@ -497,7 +513,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'vivillonsun',
         'vivillontundra'
       ],
-      classification: 'Scale Pokémon'
+      classification: 'Scale Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/vivillon.mp3'
     }
   ],
   [
@@ -581,7 +598,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Normal],
       weightkg: 13.5,
       aliases: ['shishiko'],
-      classification: 'Lion Cub Pokémon'
+      classification: 'Lion Cub Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/litleo.mp3'
     }
   ],
   [
@@ -605,7 +623,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Normal],
       weightkg: 81.5,
       aliases: ['kaenjishi'],
-      classification: 'Royal Pokémon'
+      classification: 'Royal Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pyroar.mp3'
     }
   ],
   [
@@ -647,7 +666,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'flabebeyellow',
         'furabebe'
       ],
-      classification: 'Single Bloom Pokémon'
+      classification: 'Single Bloom Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/flabebe.mp3'
     }
   ],
   [
@@ -677,7 +697,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 0.9,
       aliases: ['floetteblue', 'floetteorange', 'floettered', 'floettewhite', 'floetteyellow', 'furaette'],
-      classification: 'Single Bloom Pokémon'
+      classification: 'Single Bloom Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/floette.mp3'
     }
   ],
   [
@@ -704,7 +725,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'floette-eternal',
       types: [TypesEnum.Fairy],
       weightkg: 0.9,
-      aliases: ['eternalfloette', 'floettee', 'floetteeternalflower']
+      aliases: ['eternalfloette', 'floettee', 'floetteeternalflower'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/floette-eternal.mp3'
     }
   ],
   [
@@ -730,7 +752,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 10,
       aliases: ['florgesblue', 'florgesorange', 'florgesred', 'florgeswhite', 'florgesyellow', 'furaajesu'],
-      classification: 'Garden Pokémon'
+      classification: 'Garden Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/florges.mp3'
     }
   ],
   [
@@ -756,7 +779,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass],
       weightkg: 31,
       aliases: ['meeekuru'],
-      classification: 'Mount Pokémon'
+      classification: 'Mount Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/skiddo.mp3'
     }
   ],
   [
@@ -780,7 +804,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass],
       weightkg: 91,
       aliases: ['googooto'],
-      classification: 'Mount Pokémon'
+      classification: 'Mount Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gogoat.mp3'
     }
   ],
   [
@@ -806,7 +831,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting],
       weightkg: 8,
       aliases: ['yanchamu'],
-      classification: 'Playful Pokémon'
+      classification: 'Playful Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pancham.mp3'
     }
   ],
   [
@@ -830,7 +856,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Dark],
       weightkg: 136,
       aliases: ['goronda'],
-      classification: 'Daunting Pokémon'
+      classification: 'Daunting Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pangoro.mp3'
     }
   ],
   [
@@ -879,7 +906,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'furfroustar',
         'torimian'
       ],
-      classification: 'Poodle Pokémon'
+      classification: 'Poodle Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/furfrou.mp3'
     }
   ],
   [
@@ -905,7 +933,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 3.5,
       aliases: ['nyasupaa'],
-      classification: 'Restraint Pokémon'
+      classification: 'Restraint Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/espurr.mp3'
     }
   ],
   [
@@ -931,7 +960,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Psychic],
       weightkg: 8.5,
       aliases: ['meowsticm', 'meowsticmale', 'nyaonikusu'],
-      classification: 'Constraint Pokémon'
+      classification: 'Constraint Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3'
     }
   ],
   [
@@ -988,7 +1018,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Ghost],
       weightkg: 2,
       aliases: ['hitotsuki'],
-      classification: 'Sword Pokémon'
+      classification: 'Sword Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/honedge.mp3'
     }
   ],
   [
@@ -1013,7 +1044,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Ghost],
       weightkg: 4.5,
       aliases: ['nidangiru'],
-      classification: 'Sword Pokémon'
+      classification: 'Sword Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/doublade.mp3'
     }
   ],
   [
@@ -1039,7 +1071,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Ghost],
       weightkg: 53,
       aliases: ['aegi', 'aegis', 'aegislashs', 'aegislashshield', 'girugarudo'],
-      classification: 'Royal Sword Pokémon'
+      classification: 'Royal Sword Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/aegislash.mp3'
     }
   ],
   [
@@ -1092,7 +1125,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 0.5,
       aliases: ['shushupu'],
-      classification: 'Perfume Pokémon'
+      classification: 'Perfume Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/spritzee.mp3'
     }
   ],
   [
@@ -1116,7 +1150,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 15.5,
       aliases: ['furefuwan'],
-      classification: 'Fragrance Pokémon'
+      classification: 'Fragrance Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/aromatisse.mp3'
     }
   ],
   [
@@ -1142,7 +1177,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 3.5,
       aliases: ['peroppafu'],
-      classification: 'Cotton Candy Pokémon'
+      classification: 'Cotton Candy Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/swirlix.mp3'
     }
   ],
   [
@@ -1166,7 +1202,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 5,
       aliases: ['peroriimu'],
-      classification: 'Meringue Pokémon'
+      classification: 'Meringue Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/slurpuff.mp3'
     }
   ],
   [
@@ -1196,7 +1233,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark, TypesEnum.Psychic],
       weightkg: 3.5,
       aliases: ['maaiika'],
-      classification: 'Revolving Pokémon'
+      classification: 'Revolving Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/inkay.mp3'
     }
   ],
   [
@@ -1224,7 +1262,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark, TypesEnum.Psychic],
       weightkg: 47,
       aliases: ['karamanero'],
-      classification: 'Overturning Pokémon'
+      classification: 'Overturning Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/malamar.mp3'
     }
   ],
   [
@@ -1250,7 +1289,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Water],
       weightkg: 31,
       aliases: ['kametete'],
-      classification: 'Two-Handed Pokémon'
+      classification: 'Two-Handed Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/binacle.mp3'
     }
   ],
   [
@@ -1274,7 +1314,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Water],
       weightkg: 96,
       aliases: ['gamenodesu'],
-      classification: 'Collective Pokémon'
+      classification: 'Collective Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/barbaracle.mp3'
     }
   ],
   [
@@ -1304,7 +1345,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison, TypesEnum.Water],
       weightkg: 7.3,
       aliases: ['kuzumoo'],
-      classification: 'Mock Kelp Pokémon'
+      classification: 'Mock Kelp Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/skrelp.mp3'
     }
   ],
   [
@@ -1332,7 +1374,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison, TypesEnum.Dragon],
       weightkg: 81.5,
       aliases: ['doramidoro'],
-      classification: 'Mock Kelp Pokémon'
+      classification: 'Mock Kelp Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dragalge.mp3'
     }
   ],
   [
@@ -1358,7 +1401,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 8.3,
       aliases: ['udeppou'],
-      classification: 'Water Gun Pokémon'
+      classification: 'Water Gun Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/clauncher.mp3'
     }
   ],
   [
@@ -1382,7 +1426,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water],
       weightkg: 35.3,
       aliases: ['burosutaa'],
-      classification: 'Howitzer Pokémon'
+      classification: 'Howitzer Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/clawitzer.mp3'
     }
   ],
   [
@@ -1408,7 +1453,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric, TypesEnum.Normal],
       weightkg: 6,
       aliases: ['erikiteru'],
-      classification: 'Generator Pokémon'
+      classification: 'Generator Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/helioptile.mp3'
     }
   ],
   [
@@ -1432,7 +1478,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric, TypesEnum.Normal],
       weightkg: 21,
       aliases: ['erezaado'],
-      classification: 'Generator Pokémon'
+      classification: 'Generator Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/heliolisk.mp3'
     }
   ],
   [
@@ -1455,7 +1502,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Dragon],
       weightkg: 26,
       aliases: ['chigorasu'],
-      classification: 'Royal Heir Pokémon'
+      classification: 'Royal Heir Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/tyrunt.mp3'
     }
   ],
   [
@@ -1479,7 +1527,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Dragon],
       weightkg: 270,
       aliases: ['gachigorasu'],
-      classification: 'Despot Pokémon'
+      classification: 'Despot Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/tyrantrum.mp3'
     }
   ],
   [
@@ -1502,7 +1551,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Ice],
       weightkg: 25.2,
       aliases: ['amarusu'],
-      classification: 'Tundra Pokémon'
+      classification: 'Tundra Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/amaura.mp3'
     }
   ],
   [
@@ -1526,7 +1576,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Ice],
       weightkg: 225,
       aliases: ['amaruruga'],
-      classification: 'Tundra Pokémon'
+      classification: 'Tundra Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/aurorus.mp3'
     }
   ],
   [
@@ -1550,7 +1601,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 23.5,
       aliases: ['ninfia'],
-      classification: 'Intertwining Pokémon'
+      classification: 'Intertwining Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sylveon.mp3'
     }
   ],
   [
@@ -1575,7 +1627,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 21.5,
       aliases: ['ruchaburu'],
-      classification: 'Wrestling Pokémon'
+      classification: 'Wrestling Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/hawlucha.mp3'
     }
   ],
   [
@@ -1599,7 +1652,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'dedenne',
       types: [TypesEnum.Electric, TypesEnum.Fairy],
       weightkg: 2.2,
-      classification: 'Antenna Pokémon'
+      classification: 'Antenna Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dedenne.mp3'
     }
   ],
   [
@@ -1621,7 +1675,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Fairy],
       weightkg: 5.7,
       aliases: ['mereshii'],
-      classification: 'Jewel Pokémon'
+      classification: 'Jewel Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/carbink.mp3'
     }
   ],
   [
@@ -1644,7 +1699,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon],
       weightkg: 2.8,
       aliases: ['numera'],
-      classification: 'Soft Tissue Pokémon'
+      classification: 'Soft Tissue Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/goomy.mp3'
     }
   ],
   [
@@ -1670,7 +1726,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon],
       weightkg: 17.5,
       aliases: ['numeiru'],
-      classification: 'Soft Tissue Pokémon'
+      classification: 'Soft Tissue Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sliggoo.mp3'
     }
   ],
   [
@@ -1728,7 +1785,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon],
       weightkg: 150.5,
       aliases: ['numerugon'],
-      classification: 'Dragon Pokémon'
+      classification: 'Dragon Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/goodra.mp3'
     }
   ],
   [
@@ -1782,7 +1840,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Fairy],
       weightkg: 3,
       aliases: ['klef', 'kureffi'],
-      classification: 'Key Ring Pokémon'
+      classification: 'Key Ring Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/klefki.mp3'
     }
   ],
   [
@@ -1808,7 +1867,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 7,
       aliases: ['bokuree'],
-      classification: 'Stump Pokémon'
+      classification: 'Stump Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/phantump.mp3'
     }
   ],
   [
@@ -1832,7 +1892,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 71,
       aliases: ['cathy', 'oorotto'],
-      classification: 'Elder Tree Pokémon'
+      classification: 'Elder Tree Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/trevenant.mp3'
     }
   ],
   [
@@ -1860,7 +1921,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 5,
       aliases: ['baketcha', 'pumpkabooaverage'],
-      classification: 'Pumpkin Pokémon'
+      classification: 'Pumpkin Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pumpkaboo.mp3'
     }
   ],
   [
@@ -1945,7 +2007,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'pumpkaboo-super',
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 15,
-      aliases: ['pumpkaboohuge']
+      aliases: ['pumpkaboohuge'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pumpkaboo-super.mp3'
     }
   ],
   [
@@ -1971,7 +2034,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 12.5,
       aliases: ['gourgeistaverage', 'panpujin'],
-      classification: 'Pumpkin Pokémon'
+      classification: 'Pumpkin Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gourgeist.mp3'
     }
   ],
   [
@@ -2052,7 +2116,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'gourgeist-super',
       types: [TypesEnum.Ghost, TypesEnum.Grass],
       weightkg: 39,
-      aliases: ['gourgeisth', 'gourgeisthuge', 'gourgeistxl']
+      aliases: ['gourgeisth', 'gourgeisthuge', 'gourgeistxl'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gourgeist-super.mp3'
     }
   ],
   [
@@ -2078,7 +2143,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice],
       weightkg: 99.5,
       aliases: ['kachikooru'],
-      classification: 'Ice Chunk Pokémon'
+      classification: 'Ice Chunk Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/bergmite.mp3'
     }
   ],
   [
@@ -2103,7 +2169,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice],
       weightkg: 505,
       aliases: ['kurebeesu'],
-      classification: 'Iceberg Pokémon'
+      classification: 'Iceberg Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/avalugg.mp3'
     }
   ],
   [
@@ -2160,7 +2227,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Flying, TypesEnum.Dragon],
       weightkg: 8,
       aliases: ['onbatto'],
-      classification: 'Sound Wave Pokémon'
+      classification: 'Sound Wave Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/noibat.mp3'
     }
   ],
   [
@@ -2184,7 +2252,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Flying, TypesEnum.Dragon],
       weightkg: 85,
       aliases: ['onbaan'],
-      classification: 'Sound Wave Pokémon'
+      classification: 'Sound Wave Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/noivern.mp3'
     }
   ],
   [
@@ -2209,7 +2278,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 215,
       aliases: ['rudolf', 'xern', 'zeruneasu'],
       legendary: true,
-      classification: 'Life Pokémon'
+      classification: 'Life Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/xerneas.mp3'
     }
   ],
   [
@@ -2257,7 +2327,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 203,
       aliases: ['baconbird', 'iberutaru', 'ygod'],
       legendary: true,
-      classification: 'Destruction Pokémon'
+      classification: 'Destruction Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/yveltal.mp3'
     }
   ],
   [
@@ -2282,7 +2353,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 305,
       aliases: ['jigarude', 'zyg', 'zygarde50'],
       legendary: true,
-      classification: 'Order Pokémon'
+      classification: 'Order Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zygarde.mp3'
     }
   ],
   [
@@ -2308,7 +2380,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon, TypesEnum.Ground],
       weightkg: 33.5,
       aliases: ['zydog', 'zydoge', 'zygardedog'],
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zygarde-10.mp3'
     }
   ],
   [
@@ -2334,7 +2407,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon, TypesEnum.Ground],
       weightkg: 610,
       aliases: ['perfectzygarde', 'zyc', 'zygarde100', 'zygardec', 'zygardefull', 'zygod'],
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zygarde-complete.mp3'
     }
   ],
   [
@@ -2358,7 +2432,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 8.8,
       aliases: ['dianshii'],
       mythical: true,
-      classification: 'Jewel Pokémon'
+      classification: 'Jewel Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/diancie.mp3'
     }
   ],
   [
@@ -2383,7 +2458,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'diancie-mega',
       types: [TypesEnum.Rock, TypesEnum.Fairy],
       weightkg: 27.8,
-      mythical: true
+      mythical: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/diancie-mega.mp3'
     }
   ],
   [
@@ -2408,7 +2484,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 9,
       aliases: ['fuupa', 'hoopac', 'hoopaconfined'],
       mythical: true,
-      classification: 'Mischief Pokémon'
+      classification: 'Mischief Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/hoopa.mp3'
     }
   ],
   [
@@ -2435,7 +2512,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 490,
       aliases: ['hoopau'],
       mythical: true,
-      classification: 'Djinn Pokémon'
+      classification: 'Djinn Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/hoopa-unbound.mp3'
     }
   ],
   [
@@ -2458,7 +2536,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 195,
       aliases: ['borukenion'],
       mythical: true,
-      classification: 'Steam Pokémon'
+      classification: 'Steam Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/volcanion.mp3'
     }
   ]
 ];

@@ -178,6 +178,7 @@ jobs:
         run: yarn bump --no-skip-tag --no-skip-changelog
         env:
           CI: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Store bumped package.json
         uses: actions/upload-artifact@v4
         with:

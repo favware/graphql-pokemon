@@ -232,6 +232,7 @@ fragment FullDataFragmentWithoutNested on Pokemon {
   classification
   color
   cosmeticFormes
+  cry
   weight
 }
 

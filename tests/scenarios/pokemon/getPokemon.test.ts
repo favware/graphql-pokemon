@@ -171,7 +171,8 @@ describe('getPokemon', () => {
         },
         classification: 'Ninja Pokémon',
         color: 'Blue',
-        cosmeticFormes: null
+        cosmeticFormes: null,
+        cry: null
       });
     });
 
@@ -241,7 +242,8 @@ describe('getPokemon', () => {
         },
         classification: null,
         color: 'Gray',
-        cosmeticFormes: null
+        cosmeticFormes: null,
+        cry: null
       });
     });
 
@@ -312,7 +314,8 @@ describe('getPokemon', () => {
         },
         classification: null,
         color: 'Yellow',
-        cosmeticFormes: null
+        cosmeticFormes: null,
+        cry: null
       });
     });
   });

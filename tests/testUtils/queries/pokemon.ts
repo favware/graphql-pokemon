@@ -102,6 +102,7 @@ export const getPokemonWithFullData = gql`
       classification
       color
       cosmeticFormes
+      cry
     }
   }
 `;

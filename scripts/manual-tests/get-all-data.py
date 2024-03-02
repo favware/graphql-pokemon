@@ -229,6 +229,7 @@ query = '''
         classification
         color
         cosmeticFormes
+        cry
         weight
     }
 

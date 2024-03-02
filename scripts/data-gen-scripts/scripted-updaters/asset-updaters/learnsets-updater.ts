@@ -4,7 +4,7 @@ import { objectEntries } from '@sapphire/utilities';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
-import { importFileFromWeb, mapToJson, userAgentHeader, type GitCommit } from './utils.js';
+import { importFileFromWeb, mapToJson, userAgentHeader, type GitCommit } from '../../../utils.js';
 
 const filePrefix = [
   '// @ts-nocheck TS checking this file causes major delays in developing',

@@ -2,8 +2,8 @@ import { abilities as currentAbilities } from '#assets/abilities.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import { objectEntries } from '@sapphire/utilities';
-import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../utils.js';
-import { sortObjectByKey } from '../map-data-key-sorter.js';
+import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../../utils.js';
+import { sortObjectByKey } from '../../map-data-key-sorter.js';
 
 const { Abilities } = await importFileFromWeb<{ Abilities: { [abilityName: string]: AbilityData } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/abilities.ts',

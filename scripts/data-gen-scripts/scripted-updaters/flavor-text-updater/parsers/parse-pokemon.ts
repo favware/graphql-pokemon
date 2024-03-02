@@ -3,8 +3,9 @@ import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@
 import * as cheerio from 'cheerio';
 import { red, yellow } from 'colorette';
 import { userAgentHeader } from '../../../../utils.js';
-import { getCurrentSession } from '../../flaresolverr-session-management.js';
-import type { ParsedPokemon } from '../../scripted-bulbapedia-utils.js';
+import type { ParsedPokemon } from '../../utils/bulbapedia-utils.js';
+import { getCurrentSession } from '../../utils/flaresolverr-session-management.js';
+import type { FlareSolverrResponse } from '../../utils/types.js';
 import { getGen1GameSetsData } from '../game-sets/gen1-game-sets.js';
 import { getGen2GameSetsData } from '../game-sets/gen2-game-sets.js';
 import { getGen3GameSetsData } from '../game-sets/gen3-game-sets.js';
@@ -15,7 +16,6 @@ import { getGen7GameSetsData } from '../game-sets/gen7-game-sets.js';
 import { getGen8GameSetsData } from '../game-sets/gen8-game-sets.js';
 import { getGen9GameSetsData } from '../game-sets/gen9-game-sets.js';
 import { log } from '../log-wrapper.js';
-import type { FlareSolverrResponse } from '../../types.js';
 
 const failedPokemon = [];
 

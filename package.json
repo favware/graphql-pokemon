@@ -60,14 +60,15 @@
     "package:replace-invalid-code": "replace-in-file /\\}\\;/g \"}\" codegen/graphql-pokemon.ts --isRegex",
     "package:compile": "tsup --config tsup.config-package.ts",
     "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/tsconfig.json",
-    "au:tiers": "yarn tsx ./scripts/smogontiers.ts",
-    "au:learnsets": "yarn tsx ./scripts/pokemonlearnsets.ts",
-    "au:testdata": "yarn tsx scripts/update-test-files.ts",
-    "au:flavors": "yarn tsx ./scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/flavor-text-updater.ts",
-    "au:classifications": "yarn tsx ./scripts/data-gen-scripts/scripted-bulbapedia-updater/classification-updater/classification-updater.ts",
-    "au:abilities": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/abilities-updater.ts",
-    "au:items": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/items-updater.ts",
-    "au:moves": "yarn tsx ./scripts/data-gen-scripts/asset-updaters/moves-updater.ts"
+    "au:tiers": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/tiers-updater.ts",
+    "au:learnsets": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/learnsets-updater.ts",
+    "au:testdata": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/update-test-files.ts",
+    "au:flavors": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/flavor-text-updater/flavor-text-updater.ts",
+    "au:classifications": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/classification-updater/classification-updater.ts",
+    "au:abilities": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/abilities-updater.ts",
+    "au:items": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/items-updater.ts",
+    "au:moves": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/moves-updater.ts",
+    "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/cry-updater.ts"
   },
   "dependencies": {
     "graphql": "^16.8.1"

@@ -68,7 +68,7 @@
     "au:abilities": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/abilities-updater.ts",
     "au:items": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/items-updater.ts",
     "au:moves": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/moves-updater.ts",
-    "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/cry-updater.ts"
+    "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
   },
   "dependencies": {
     "graphql": "^16.8.1"

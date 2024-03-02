@@ -49,6 +49,8 @@ jobs:
           PORT: 8191
       - name: Run Classifications Updater
         run: yarn au:classifications
+      - name: Run Cries Updater
+        run: yarn au:cries
       - name: Run Flavor Text Updater
         run: yarn au:flavors
       - name: Build code
@@ -80,11 +82,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: formats_log_file
-          path: scripts/data-gen-scripts/scripted-bulbapedia-updater/flavor-text-updater/output.log
+          path: scripts/data-gen-scripts/scripted-updaters/flavor-text-updater/output.log
           if-no-files-found: error
       - name: Create artifact of classifications update log file
         uses: actions/upload-artifact@v4
         with:
           name: classification_log_file
-          path: scripts/data-gen-scripts/scripted-bulbapedia-updater/classification-updater/output.log
+          path: scripts/data-gen-scripts/scripted-updaters/classification-updater/output.log
           if-no-files-found: error

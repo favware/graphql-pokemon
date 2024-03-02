@@ -1,5 +1,5 @@
 import type { FlavorsModule } from '#utils/flavorsModule.js';
-import type { ParsedPokemon } from '../../scripted-bulbapedia-utils.js';
+import type { ParsedPokemon } from '../../utils/bulbapedia-utils.js';
 import { doubleGameUpdater } from '../parsers/double-game-updater.js';
 import { singleGameUpdater } from '../parsers/single-game-updater.js';
 import { tripleGameUpdater } from '../parsers/triple-game-updater.js';

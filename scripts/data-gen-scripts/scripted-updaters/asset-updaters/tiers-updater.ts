@@ -4,7 +4,7 @@ import { objectEntries } from '@sapphire/utilities';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
-import { importFileFromWeb, userAgentHeader, type GitCommit } from './utils.js';
+import { importFileFromWeb, userAgentHeader, type GitCommit } from '../../../utils.js';
 
 const shaTrackerFileUrl = new URL('sha-tracker.json', import.meta.url);
 const formatsFileUrl = new URL('../src/lib/assets/formats.json', import.meta.url);

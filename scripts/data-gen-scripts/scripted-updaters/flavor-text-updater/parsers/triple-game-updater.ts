@@ -1,6 +1,6 @@
 import type { FlavorsModule } from '#utils/flavorsModule.js';
 import { green, yellow } from 'colorette';
-import type { ParsedPokemon } from '../../scripted-bulbapedia-utils.js';
+import type { ParsedPokemon } from '../../utils/bulbapedia-utils.js';
 import { getTextContent } from '../get-text-content.js';
 import { log } from '../log-wrapper.js';
 

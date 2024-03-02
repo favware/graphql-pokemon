@@ -1,5 +1,5 @@
 import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
-import { userAgentHeader } from '../../utils.js';
+import { userAgentHeader } from '../../../utils.js';
 import type { FlareSolverrSessionCreateResponse } from './types.js';
 
 let currentSession: string;

@@ -172,7 +172,7 @@ describe('getPokemon', () => {
         classification: 'Ninja Pokémon',
         color: 'Blue',
         cosmeticFormes: null,
-        cry: null
+        cry: 'https://play.pokemonshowdown.com/audio/cries/greninja.mp3'
       });
     });
 
@@ -312,7 +312,7 @@ describe('getPokemon', () => {
           base: 45,
           percentageWithOrdinaryPokeballAtFullHealth: '11.9%'
         },
-        classification: null,
+        classification: 'Ghost Flame Pokémon',
         color: 'Yellow',
         cosmeticFormes: null,
         cry: null

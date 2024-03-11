@@ -1,8 +1,14 @@
 import { moves as currentMoves } from '#assets/moves.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
-import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../../utils.js';
-import { sortObjectByKey } from '../../map-data-key-sorter.js';
+import {
+  importFileFromWeb,
+  inspectData,
+  replaceEnumLikeValues,
+  replacePokeWithAccentedPoke,
+  sortObjectByKey,
+  writeDataToFileAndPrettify
+} from '../../../utils.js';
 
 // Note that manual checking is still required for "basePower" and "target" properties!
 

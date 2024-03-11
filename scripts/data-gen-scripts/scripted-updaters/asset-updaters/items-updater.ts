@@ -1,8 +1,14 @@
 import { items as currentItems } from '#assets/items.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
-import { importFileFromWeb, inspectData, replaceEnumLikeValues, replacePokeWithAccentedPoke, writeDataToFileAndPrettify } from '../../../utils.js';
-import { sortObjectByKey } from '../../map-data-key-sorter.js';
+import {
+  importFileFromWeb,
+  inspectData,
+  replaceEnumLikeValues,
+  replacePokeWithAccentedPoke,
+  sortObjectByKey,
+  writeDataToFileAndPrettify
+} from '../../../utils.js';
 
 const { Items } = await importFileFromWeb<{ Items: { [itemName: string]: ItemData } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/items.ts',

@@ -4,7 +4,7 @@ import { writeFile } from 'node:fs/promises';
 import { format } from 'prettier';
 import prettierConfig from '../../../../.prettierrc.mjs';
 import { ensureLogfileExists, getBulbapediaReadyPokemon } from '../utils/bulbapedia-utils.js';
-import { createFlaresolverrSession, destroyFlaresolverrSession } from '../utils/flaresolverr-session-management.js';
+// import { createFlaresolverrSession, destroyFlaresolverrSession } from '../utils/flaresolverr-session-management.js';
 import { logFile } from './constants.js';
 import { gameSorter } from './game-sorter.js';
 import { log } from './log-wrapper.js';
@@ -16,9 +16,9 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 await ensureLogfileExists(logFile);
 
 for (const pokemon of getBulbapediaReadyPokemon()) {
-  await createFlaresolverrSession();
+  // await createFlaresolverrSession();
   await parsePokemon(pokemon);
-  await destroyFlaresolverrSession();
+  // await destroyFlaresolverrSession();
 }
 
 await log({ msg: "Done fetching and storing data in memory, sorting version_id's", color: green, isBold: true, isIndent: false });

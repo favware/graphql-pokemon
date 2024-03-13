@@ -9,16 +9,16 @@ jobs:
   DataUpdater:
     name: Automatic Data Update
     runs-on: ubuntu-latest
-    services:
-      flaresolverr:
-        image: ghcr.io/flaresolverr/flaresolverr:latest
-        env:
-          LOG_LEVEL: info
-          LOG_HTML: false
-          CAPTCHA_SOLVER: none
-          TZ: Europe/London
-        ports:
-          - 8191:8191
+    # services:
+    #   flaresolverr:
+    #     image: ghcr.io/flaresolverr/flaresolverr:latest
+    #     env:
+    #       LOG_LEVEL: info
+    #       LOG_HTML: false
+    #       CAPTCHA_SOLVER: none
+    #       TZ: Europe/London
+    #     ports:
+    #       - 8191:8191
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -44,11 +44,11 @@ jobs:
         run: yarn au:moves
       - name: Run Cries Updater
         run: yarn au:cries
-      - name: Wait for Flaresolverr to be online
-        working-directory: ./scripts
-        run: ./wait-for-port.sh
-        env:
-          PORT: 8191
+      # - name: Wait for Flaresolverr to be online
+      #   working-directory: ./scripts
+      #   run: ./wait-for-port.sh
+      #   env:
+      #     PORT: 8191
       - name: Run Classifications Updater
         run: yarn au:classifications
       - name: Run Flavor Text Updater

@@ -6,8 +6,8 @@ import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { inspectData, replaceEnumLikeValues, userAgentHeader, writeDataToFileAndPrettify } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon, type ParsedPokemon } from '../utils/bulbapedia-utils.js';
-import { createFlaresolverrSession, destroyFlaresolverrSession, getCurrentSession } from '../utils/flaresolverr-session-management.js';
-import type { FlareSolverrResponse } from '../utils/types.js';
+// import { createFlaresolverrSession, destroyFlaresolverrSession, getCurrentSession } from '../utils/flaresolverr-session-management.js';
+// import type { FlareSolverrResponse } from '../utils/types.js';
 import { classificationsUrl, generations, logFile, type SucceededPokemon } from './constants.js';
 import { log } from './log-wrapper.js';
 import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from './utils.js';
@@ -19,31 +19,43 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
-await createFlaresolverrSession();
+// await createFlaresolverrSession();
 
-const response = await fetch<FlareSolverrResponse>(
-  'http://localhost:8191/v1',
+// const response = await fetch<FlareSolverrResponse>(
+//   'http://localhost:8191/v1',
+//   {
+//     method: FetchMethods.Post,
+//     headers: {
+//       ...userAgentHeader,
+//       'Content-Type': FetchMediaContentTypes.JSON
+//     },
+//     body: JSON.stringify({
+//       cmd: 'request.get',
+//       url: classificationsUrl,
+//       maxTimeout: 60_000,
+//       session: getCurrentSession()
+//     })
+//   },
+//   FetchResultTypes.JSON
+// );
+const response = await fetch(
+  classificationsUrl,
   {
-    method: FetchMethods.Post,
+    method: FetchMethods.Get,
     headers: {
       ...userAgentHeader,
       'Content-Type': FetchMediaContentTypes.JSON
-    },
-    body: JSON.stringify({
-      cmd: 'request.get',
-      url: classificationsUrl,
-      maxTimeout: 60_000,
-      session: getCurrentSession()
-    })
+    }
   },
-  FetchResultTypes.JSON
+  FetchResultTypes.Text
 );
 
-await destroyFlaresolverrSession();
+// await destroyFlaresolverrSession();
 
 await log({ msg: `Fetched data`, color: yellow, isBold: false, isIndent: true });
 
-const $ = cheerio.load(response.solution.response);
+// const $ = cheerio.load(response.solution.response);
+const $ = cheerio.load(response);
 await log({ msg: `Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
 const text = $('#wpTextbox1').text();

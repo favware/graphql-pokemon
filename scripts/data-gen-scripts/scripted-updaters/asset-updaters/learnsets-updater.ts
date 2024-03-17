@@ -1,7 +1,7 @@
 import { objectEntries } from '@sapphire/utilities';
 import { green } from 'colorette';
 import { URL } from 'node:url';
-import { importFileFromWeb, mapToJson, writeDataToFileAndPrettify } from '../../../utils.js';
+import { importFileFromWeb, mapToJson, rootDir, writeDataToFileAndPrettify } from '../../../utils.js';
 
 const prependContent = [
   '// @ts-nocheck TS checking this file causes major delays in developing',
@@ -13,7 +13,7 @@ const prependContent = [
 ].join('\n');
 const appendContent = [');', ''].join('\n');
 
-const learnsetsFileUrl = new URL('../../../../src/lib/assets/learnsets.ts', import.meta.url);
+const learnsetsFileUrl = new URL('src/lib/assets/learnsets.ts', rootDir);
 
 const { Learnsets } = await importFileFromWeb<{ Learnsets: { [k: string]: Record<string, string[]> } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/learnsets.ts',

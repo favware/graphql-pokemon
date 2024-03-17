@@ -6,6 +6,8 @@ import prettier from 'prettier';
 import ts from 'typescript';
 import prettierConfig from '../.prettierrc.mjs';
 
+export const rootDir = new URL('../', import.meta.url);
+
 export function mapToJson<K extends PropertyKey, V extends object>(map: Map<K, V>): string {
   return JSON.stringify([...map]);
 }

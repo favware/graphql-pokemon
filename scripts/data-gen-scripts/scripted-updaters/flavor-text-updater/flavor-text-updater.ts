@@ -5,12 +5,13 @@ import { format } from 'prettier';
 import prettierConfig from '../../../../.prettierrc.mjs';
 import { ensureLogfileExists, getBulbapediaReadyPokemon } from '../utils/bulbapedia-utils.js';
 // import { createFlaresolverrSession, destroyFlaresolverrSession } from '../utils/flaresolverr-session-management.js';
+import { rootDir } from '../../../utils.js';
 import { logFile } from './constants.js';
 import { gameSorter } from './game-sorter.js';
 import { log } from './log-wrapper.js';
 import { getFailedPokemon, parsePokemon } from './parsers/parse-pokemon.js';
 
-const pathToFlavorTextFile = new URL('../../../src/lib/assets/flavorText.json', import.meta.url);
+const pathToFlavorTextFile = new URL('src/lib/assets/flavorText.json', rootDir);
 const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);

@@ -1,11 +1,11 @@
 import { fetch, FetchMethods, FetchResultTypes } from '@sapphire/fetch';
 import { writeFile } from 'node:fs/promises';
-import { getPokemonWithFullDataAndEvolutions } from '../../../tests/testUtils/queries/pokemon-all-data.js';
-import { userAgentHeader } from '../../utils.js';
 import prettier from 'prettier';
 import prettierConfig from '../../../.prettierrc.mjs';
+import { getPokemonWithFullDataAndEvolutions } from '../../../tests/testUtils/queries/pokemon-all-data.js';
+import { rootDir, userAgentHeader } from '../../utils.js';
 
-const fullDataResponsesFolder = new URL('../../../tests/testUtils/full-data-responses/', import.meta.url);
+const fullDataResponsesFolder = new URL('tests/testUtils/full-data-responses/', rootDir);
 
 const data = await Promise.all(['beldum', 'dragonair', 'eevee', 'rattataalola', 'salamence', 'syclar'].map((pokemon) => executeGraphQL(pokemon)));
 const [beldumData, dragonairData, eeveeData, rattataalolaData, salamenceData, syclarData] = await Promise.all(

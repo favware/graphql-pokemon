@@ -2,11 +2,11 @@ import { objectEntries } from '@sapphire/utilities';
 import { green } from 'colorette';
 import { writeFile } from 'node:fs/promises';
 import { URL } from 'node:url';
-import { importFileFromWeb } from '../../../utils.js';
 import prettier from 'prettier';
 import prettierConfig from '../../../../.prettierrc.mjs';
+import { importFileFromWeb, rootDir } from '../../../utils.js';
 
-const formatsFileUrl = new URL('../../../../src/lib/assets/formats.json', import.meta.url);
+const formatsFileUrl = new URL('src/lib/assets/formats.json', rootDir);
 
 const { FormatsData } = await importFileFromWeb<{ FormatsData: { [k: string]: FormatsData } }>({
   url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/formats-data.ts',

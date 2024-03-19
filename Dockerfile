@@ -33,6 +33,7 @@ COPY --chown=node:node tsconfig.base.json tsconfig.base.json
 COPY --chown=node:node tsup.config.ts tsup.config.ts
 COPY --chown=node:node src/ src/
 COPY --chown=node:node scripts/on-build-success.ts scripts/on-build-success.ts
+COPY --chown=node:node scripts/utils.ts scripts/utils.ts
 COPY --chown=node:node scripts/tsconfig.json scripts/tsconfig.json
 
 RUN yarn build

@@ -1357,7 +1357,7 @@ __metadata:
     "@graphql-codegen/typescript": "npm:^4.0.6"
     "@graphql-codegen/typescript-resolvers": "npm:^4.0.6"
     "@koa/cors": "npm:^5.0.0"
-    "@magidoc/cli": "npm:^4.1.4"
+    "@magidoc/cli": "npm:^4.2.0"
     "@sapphire/eslint-config": "npm:^5.0.4"
     "@sapphire/fetch": "npm:^3.0.2"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -2167,47 +2167,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@magidoc/cli@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@magidoc/cli@npm:4.1.4"
+"@magidoc/cli@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "@magidoc/cli@npm:4.2.0"
   dependencies:
-    "@magidoc/plugin-starter-variables": "npm:^4.1.4"
-    "@magidoc/rollup-plugin-gql-schema": "npm:^4.1.4"
-    axios: "npm:^1.6.7"
+    "@magidoc/plugin-starter-variables": "npm:^4.2.0"
+    "@magidoc/rollup-plugin-gql-schema": "npm:^4.2.0"
+    axios: "npm:^1.6.8"
     chokidar: "npm:^3.6.0"
-    commander: "npm:^11.1.0"
+    commander: "npm:^12.0.0"
     extract-zip: "npm:^2.0.1"
     fs-extra: "npm:^11.2.0"
-    listr2: "npm:^7.0.2"
+    listr2: "npm:^8.1.2"
     lodash: "npm:^4.17.21"
     sirv: "npm:^2.0.4"
     zod: "npm:^3.22.4"
   bin:
     magidoc: build/index.js
-  checksum: 10/70ad319f85a9baf7c3c53fc9592ef069d23ffbb7fd8421e070e9951f8c83bde11269f531cae5dfcdc1f2240fc2e3672cb3d37bc8c582982b8c771cd82468e025
+  checksum: 10/3c44c31c6cf6fc7c3de23711182143c2a0ded386399ac87aebb1d7695e6ddb0eae698fc3f76e8a5968b3ec692d4fd3fd409d620a60f5452552dab7df7344d866
   languageName: node
   linkType: hard
 
-"@magidoc/plugin-starter-variables@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@magidoc/plugin-starter-variables@npm:4.1.4"
+"@magidoc/plugin-starter-variables@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "@magidoc/plugin-starter-variables@npm:4.2.0"
   dependencies:
     zod: "npm:^3.22.4"
   dependenciesMeta:
     zod:
       optional: true
-  checksum: 10/46b72706bcb6414be4542440af4754e6d4136488c0fd799ee8583a5c0f4bf66aa8b5c7a6e04a36922e2320c09dea543f7f9a0fc2af311e8b4e17d5dc92037dd3
+  checksum: 10/f0d55013dfd2466fd36f0ec4703a2a9dd693de9a43fbf7adec7e8d0ad6b28e767140371d785fd7d355952e243a63d3c8ff66c08795e6b9dbaa726607fafaa081
   languageName: node
   linkType: hard
 
-"@magidoc/rollup-plugin-gql-schema@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@magidoc/rollup-plugin-gql-schema@npm:4.1.4"
+"@magidoc/rollup-plugin-gql-schema@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "@magidoc/rollup-plugin-gql-schema@npm:4.2.0"
   dependencies:
-    axios: "npm:^1.6.7"
+    axios: "npm:^1.6.8"
     fast-glob: "npm:^3.3.2"
     graphql: "npm:^16.8.1"
-  checksum: 10/784744d9784edc46b1c522cec6d8122c76309e4990ca7597b150885e7f8994daf141ab87e06314edc33f7bd1dbe74c202447805e32c7b265399099a6000f1018
+  checksum: 10/b30d39d592eba3379ea0c580d8c8e44fdb84c3a33ad874d1d7581f7645fb103ea291c3a79db28a6a906b3ba8acc6f10c0b26a142d5759c5242f70ffedf139281
   languageName: node
   linkType: hard
 
@@ -3385,15 +3385,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-escapes@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "ansi-escapes@npm:5.0.0"
-  dependencies:
-    type-fest: "npm:^1.0.2"
-  checksum: 10/cbfb95f9f6d8a1ffc89f50fcda3313effae2d9ac2f357f89f626815b4d95fdc3f10f74e0887614ff850d01f805b7505eb1e7ebfdd26144bbfc26c5de08e19195
-  languageName: node
-  linkType: hard
-
 "ansi-escapes@npm:^6.2.0":
   version: 6.2.0
   resolution: "ansi-escapes@npm:6.2.0"
@@ -3563,14 +3554,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.7":
-  version: 1.6.7
-  resolution: "axios@npm:1.6.7"
+"axios@npm:^1.6.8":
+  version: 1.6.8
+  resolution: "axios@npm:1.6.8"
   dependencies:
-    follow-redirects: "npm:^1.15.4"
+    follow-redirects: "npm:^1.15.6"
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
-  checksum: 10/a1932b089ece759cd261f175d9ebf4d41c8994cf0c0767cda86055c7a19bcfdade8ae3464bf4cec4c8b142f4a657dc664fb77a41855e8376cf38b86d7a86518f
+  checksum: 10/3f9a79eaf1d159544fca9576261ff867cbbff64ed30017848e4210e49f3b01e97cf416390150e6fdf6633f336cd43dc1151f890bbd09c3c01ad60bb0891eee63
   languageName: node
   linkType: hard
 
@@ -4065,16 +4056,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "cli-truncate@npm:3.1.0"
-  dependencies:
-    slice-ansi: "npm:^5.0.0"
-    string-width: "npm:^5.0.0"
-  checksum: 10/c3243e41974445691c63f8b405df1d5a24049dc33d324fe448dc572e561a7b772ae982692900b1a5960901cc4fc7def25a629b9c69a4208ee89d12ab3332617a
-  languageName: node
-  linkType: hard
-
 "cli-truncate@npm:^4.0.0":
   version: 4.0.0
   resolution: "cli-truncate@npm:4.0.0"
@@ -4188,7 +4169,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:11.1.0, commander@npm:^11.1.0":
+"commander@npm:11.1.0":
   version: 11.1.0
   resolution: "commander@npm:11.1.0"
   checksum: 10/66bd2d8a0547f6cb1d34022efb25f348e433b0e04ad76a65279b1b09da108f59a4d3001ca539c60a7a46ea38bcf399fc17d91adad76a8cf43845d8dcbaf5cda1
@@ -5501,7 +5482,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.4":
+"follow-redirects@npm:^1.15.6":
   version: 1.15.6
   resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
@@ -6992,17 +6973,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"listr2@npm:^7.0.2":
-  version: 7.0.2
-  resolution: "listr2@npm:7.0.2"
+"listr2@npm:^8.1.2":
+  version: 8.1.2
+  resolution: "listr2@npm:8.1.2"
   dependencies:
-    cli-truncate: "npm:^3.1.0"
+    cli-truncate: "npm:^4.0.0"
     colorette: "npm:^2.0.20"
     eventemitter3: "npm:^5.0.1"
-    log-update: "npm:^5.0.1"
-    rfdc: "npm:^1.3.0"
-    wrap-ansi: "npm:^8.1.0"
-  checksum: 10/42cda5764906f9d298e3b0b0a684e71a3737533b2aef66f361265a3b938c4bc8f49bcea91536a8daa956833658d14108469b00c565c8e93ce4079795f6a06e07
+    log-update: "npm:^6.0.0"
+    rfdc: "npm:^1.3.1"
+    wrap-ansi: "npm:^9.0.0"
+  checksum: 10/b57490c661e807bc3cab5f96a18140e88d7b9a9268d6133581cf11f3a01b43156e17419de52102c91491506c8000b0ba4ec806aa231e03751a3bcb9a013f7173
   languageName: node
   linkType: hard
 
@@ -7150,19 +7131,6 @@ __metadata:
     slice-ansi: "npm:^4.0.0"
     wrap-ansi: "npm:^6.2.0"
   checksum: 10/ae2f85bbabc1906034154fb7d4c4477c79b3e703d22d78adee8b3862fa913942772e7fa11713e3d96fb46de4e3cabefbf5d0a544344f03b58d3c4bff52aa9eb2
-  languageName: node
-  linkType: hard
-
-"log-update@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "log-update@npm:5.0.1"
-  dependencies:
-    ansi-escapes: "npm:^5.0.0"
-    cli-cursor: "npm:^4.0.0"
-    slice-ansi: "npm:^5.0.0"
-    strip-ansi: "npm:^7.0.1"
-    wrap-ansi: "npm:^8.0.1"
-  checksum: 10/0e154e46744125b6d20c30289e90091794d58b83c2f01d7676da2afa2411c6ec2c3ee2c99753b9c6b896b9ee496a9a403a563330a2d5914a3bdb30e836f17cfb
   languageName: node
   linkType: hard
 
@@ -8602,7 +8570,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rfdc@npm:^1.3.0":
+"rfdc@npm:^1.3.0, rfdc@npm:^1.3.1":
   version: 1.3.1
   resolution: "rfdc@npm:1.3.1"
   checksum: 10/44cc6a82e2fe1db13b7d3c54e9ffd0b40ef070cbde69ffbfbb38dab8cee46bd68ba686784b96365ff08d04798bc121c3465663a0c91f2c421c90546c4366f4a6
@@ -9130,7 +9098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^5.0.0, string-width@npm:^5.0.1, string-width@npm:^5.1.2":
+"string-width@npm:^5.0.1, string-width@npm:^5.1.2":
   version: 5.1.2
   resolution: "string-width@npm:5.1.2"
   dependencies:
@@ -9548,13 +9516,6 @@ __metadata:
   version: 0.21.3
   resolution: "type-fest@npm:0.21.3"
   checksum: 10/f4254070d9c3d83a6e573bcb95173008d73474ceadbbf620dd32d273940ca18734dff39c2b2480282df9afe5d1675ebed5499a00d791758748ea81f61a38961f
-  languageName: node
-  linkType: hard
-
-"type-fest@npm:^1.0.2":
-  version: 1.4.0
-  resolution: "type-fest@npm:1.4.0"
-  checksum: 10/89875c247564601c2650bacad5ff80b859007fbdb6c9e43713ae3ffa3f584552eea60f33711dd762e16496a1ab4debd409822627be14097d9a17e39c49db591a
   languageName: node
   linkType: hard
 
@@ -10099,7 +10060,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^8.0.1, wrap-ansi@npm:^8.1.0":
+"wrap-ansi@npm:^8.1.0":
   version: 8.1.0
   resolution: "wrap-ansi@npm:8.1.0"
   dependencies:

@@ -1,11 +1,8 @@
 import { flavorsModule } from '#utils/flavorsModule';
-import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
 import * as cheerio from 'cheerio';
 import { red, yellow } from 'colorette';
-import { userAgentHeader } from '../../../../utils.js';
 import type { ParsedPokemon } from '../../utils/bulbapedia-utils.js';
-// import { getCurrentSession } from '../../utils/flaresolverr-session-management.js';
-// import type { FlareSolverrResponse } from '../../utils/types.js';
+import { fetchFlareSolverr } from '../../utils/flaresolverr-session-management.js';
 import { getGen1GameSetsData } from '../game-sets/gen1-game-sets.js';
 import { getGen2GameSetsData } from '../game-sets/gen2-game-sets.js';
 import { getGen3GameSetsData } from '../game-sets/gen3-game-sets.js';
@@ -24,38 +21,22 @@ export async function parsePokemon(pokemon: ParsedPokemon) {
 
   await log({ msg: `${logPrefix}Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });
 
-  // const response = await fetch<FlareSolverrResponse>(
-  //   'http://localhost:8191/v1',
+  const response = await fetchFlareSolverr(pokemon.flavorTextUrl);
+  // const response = await fetch(
+  //   pokemon.flavorTextUrl,
   //   {
-  //     method: FetchMethods.Post,
+  //     method: FetchMethods.Get,
   //     headers: {
   //       ...userAgentHeader,
   //       'Content-Type': FetchMediaContentTypes.JSON
-  //     },
-  //     body: JSON.stringify({
-  //       cmd: 'request.get',
-  //       url: pokemon.flavorTextUrl,
-  //       maxTimeout: 60_000,
-  //       session: getCurrentSession()
-  //     })
+  //     }
   //   },
-  //   FetchResultTypes.JSON
+  //   FetchResultTypes.Text
   // );
-  const response = await fetch(
-    pokemon.flavorTextUrl,
-    {
-      method: FetchMethods.Get,
-      headers: {
-        ...userAgentHeader,
-        'Content-Type': FetchMediaContentTypes.JSON
-      }
-    },
-    FetchResultTypes.Text
-  );
   await log({ msg: `${logPrefix}Fetched data`, color: yellow, isBold: false, isIndent: true });
 
-  // const $ = cheerio.load(response.solution.response);
-  const $ = cheerio.load(response);
+  const $ = cheerio.load(response.solution.response);
+  // const $ = cheerio.load(response);
   await log({ msg: `${logPrefix}Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
   const text = $('#wpTextbox1').text();

@@ -1,13 +1,11 @@
 import { pokedex } from '#assets/pokedex.js';
-import { FetchMediaContentTypes, FetchMethods, FetchResultTypes, fetch } from '@sapphire/fetch';
 import { each } from 'async';
 import * as cheerio from 'cheerio';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
-import { inspectData, replaceEnumLikeValues, userAgentHeader, writeDataToFileAndPrettify } from '../../../utils.js';
+import { inspectData, replaceEnumLikeValues, writeDataToFileAndPrettify } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon, type ParsedPokemon } from '../utils/bulbapedia-utils.js';
-// import { createFlaresolverrSession, destroyFlaresolverrSession, getCurrentSession } from '../utils/flaresolverr-session-management.js';
-// import type { FlareSolverrResponse } from '../utils/types.js';
+import { fetchFlareSolverr } from '../utils/flaresolverr-session-management.js';
 import { classificationsUrl, generations, logFile, type SucceededPokemon } from './constants.js';
 import { log } from './log-wrapper.js';
 import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from './utils.js';
@@ -19,43 +17,23 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
-// await createFlaresolverrSession();
-
-// const response = await fetch<FlareSolverrResponse>(
-//   'http://localhost:8191/v1',
+const response = await fetchFlareSolverr(classificationsUrl);
+// const response = await fetch(
+//   classificationsUrl,
 //   {
-//     method: FetchMethods.Post,
+//     method: FetchMethods.Get,
 //     headers: {
 //       ...userAgentHeader,
 //       'Content-Type': FetchMediaContentTypes.JSON
-//     },
-//     body: JSON.stringify({
-//       cmd: 'request.get',
-//       url: classificationsUrl,
-//       maxTimeout: 60_000,
-//       session: getCurrentSession()
-//     })
+//     }
 //   },
-//   FetchResultTypes.JSON
+//   FetchResultTypes.Text
 // );
-const response = await fetch(
-  classificationsUrl,
-  {
-    method: FetchMethods.Get,
-    headers: {
-      ...userAgentHeader,
-      'Content-Type': FetchMediaContentTypes.JSON
-    }
-  },
-  FetchResultTypes.Text
-);
-
-// await destroyFlaresolverrSession();
 
 await log({ msg: `Fetched data`, color: yellow, isBold: false, isIndent: true });
 
-// const $ = cheerio.load(response.solution.response);
-const $ = cheerio.load(response);
+const $ = cheerio.load(response.solution.response);
+// const $ = cheerio.load(response);
 await log({ msg: `Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
 const text = $('#wpTextbox1').text();
@@ -69,7 +47,7 @@ await each(getBulbapediaReadyPokemon(), async (pokemon) => {
   const regex = pokemon.forme
     ? new RegExp(`{{ArtP\\|${paddedNumber}\\|[^}}]+\\|form=-${pokemon.forme}}} \\|\\|(?<content>[^]*?)\\n`, 'i')
     : new RegExp(`{{ArtP\\|${paddedNumber}\\|.+}} \\|\\|(?<content>[^]*?)\\n`);
-  const match = text.match(regex);
+  const match = regex.exec(text);
   const regexForTranslateBlock = /\{\{tt\|([^|]+)\|[^}]+\}\}/;
 
   const useHigherIndexFromTable = pokemon.forme || pokemon.number === 720 || pokemon.number === 964 || pokemon.number === 999;

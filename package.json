@@ -59,7 +59,7 @@
     "package": "graphql-codegen && npm-run-all -s \"package:*\"",
     "package:replace-invalid-code": "replace-in-file /\\}\\;/g \"}\" codegen/graphql-pokemon.ts --isRegex",
     "package:compile": "tsup --config tsup.config-package.ts",
-    "tsx": "tsx --experimental-network-imports --tsconfig ./scripts/tsconfig.json",
+    "tsx": "tsx --tsconfig ./scripts/tsconfig.json",
     "au:tiers": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/tiers-updater.ts",
     "au:learnsets": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/learnsets-updater.ts",
     "au:testdata": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/update-test-files.ts",

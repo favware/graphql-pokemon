@@ -1,4 +1,4 @@
-import { fetch, FetchResultTypes } from '@sapphire/fetch';
+import { FetchResultTypes, fetch } from '@sapphire/fetch';
 import { readFile, rm, writeFile } from 'node:fs/promises';
 import { platform, release } from 'node:os';
 import { inspect } from 'node:util';

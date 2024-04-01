@@ -1,4 +1,4 @@
-import { fetch, FetchMethods, FetchResultTypes } from '@sapphire/fetch';
+import { fetch, FetchMediaContentTypes, FetchMethods, FetchResultTypes } from '@sapphire/fetch';
 import { writeFile } from 'node:fs/promises';
 import prettier from 'prettier';
 import prettierConfig from '../../../.prettierrc.mjs';
@@ -33,7 +33,7 @@ async function executeGraphQL(pokemon: string): Promise<PokemonResponse> {
       method: FetchMethods.Post,
       headers: {
         ...userAgentHeader,
-        'Content-Type': 'application/json'
+        'Content-Type': FetchMediaContentTypes.JSON
       },
       body: JSON.stringify({
         query: getPokemonWithFullDataAndEvolutions.loc?.source.body,

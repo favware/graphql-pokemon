@@ -1861,7 +1861,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Galarian Slowpoke into Galarian Slowbro when used.',
       gen: 8,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Galarica Cuff',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricacuff.png'
     }
@@ -1871,7 +1870,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Galarian Slowpoke into Galarian Slowking when used.',
       gen: 8,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Galarica Wreath',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/galaricawreath.png'
     }
@@ -4800,7 +4798,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A special Poké Ball that is used only in the Safari Zone and Great Marsh.',
       gen: 1,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Safari Ball'
     }
   ],
@@ -5226,7 +5223,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'A special Poké Ball for the Bug-Catching Contest.',
       gen: 2,
-      isNonstandard: IsNonStandard.Unobtainable,
       name: 'Sport Ball'
     }
   ],

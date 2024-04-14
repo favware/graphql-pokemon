@@ -79,7 +79,7 @@
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@discordjs/collection": "^2.0.0",
-    "@favware/cliff-jumper": "^3.0.1",
+    "@favware/cliff-jumper": "^3.0.2",
     "@graphql-codegen/cli": "^5.0.2",
     "@graphql-codegen/schema-ast": "^4.0.2",
     "@graphql-codegen/typescript": "^4.0.6",
@@ -93,15 +93,15 @@
     "@sapphire/timestamp": "^1.0.3",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.4.12",
+    "@swc/core": "^1.4.13",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa__cors": "^5.0.0",
     "@types/node": "^20.11.24",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "@vitest/coverage-v8": "^0.34.6",
     "async": "^3.2.5",
     "cheerio": "^1.0.0-rc.12",
@@ -113,7 +113,7 @@
     "graphql-parse-resolve-info": "4.13.0",
     "graphql-tag": "^2.12.6",
     "json-stream-stringify": "^3.1.4",
-    "koa": "^2.15.2",
+    "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.2.2",
     "npm-run-all2": "^6.1.2",
@@ -122,9 +122,9 @@
     "rimraf": "^5.0.5",
     "tsup": "^8.0.2",
     "tsx": "^4.7.2",
-    "typedoc": "^0.25.12",
+    "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "^3.17.1",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "vitest": "^0.34.6"
   },
   "resolutions": {
@@ -168,6 +168,6 @@
   },
   "packageManager": "yarn@4.1.1",
   "volta": {
-    "node": "20.12.1"
+    "node": "20.12.2"
   }
 }

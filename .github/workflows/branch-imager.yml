@@ -10,9 +10,6 @@ jobs:
     name: Publish image to container registries
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
-    strategy:
-      matrix:
-        architecture: [linux/amd64, linux/arm64]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -39,7 +36,9 @@ jobs:
           context: .
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          platforms: ${{ matrix.architecture }}
+          platforms: |
+            linux/amd64
+            linux/arm64
           tags: |
             favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}
             ghcr.io/favware/graphql-pokemon:${{ steps.get_branch_name.outputs.branch_name }}

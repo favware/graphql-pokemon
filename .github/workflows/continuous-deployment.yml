@@ -20,6 +20,9 @@ jobs:
     name: Publish image to container registries
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
+    strategy:
+      matrix:
+        architecture: [linux/amd64, linux/arm64]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -43,18 +46,26 @@ jobs:
           context: .
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          platforms: |
-            linux/amd64
-            linux/arm64
+          platforms: ${{ matrix.architecture }}
           tags: |
             favware/graphql-pokemon:latest
             ghcr.io/favware/graphql-pokemon:latest
+
+  UpdateDockerHubDescription:
+    name: Update DockerHub description
+    runs-on: ubuntu-latest
+    if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
+    needs: Publish
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
       - name: Update repo description
-        uses: peter-evans/dockerhub-description@v4.0.0
+        uses: peter-evans/dockerhub-description@v4
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: favware/graphql-pokemon
+          enable-url-completion: true
           short-description: Extensive Pokemon GraphQL API
 
   ValidateAllData:

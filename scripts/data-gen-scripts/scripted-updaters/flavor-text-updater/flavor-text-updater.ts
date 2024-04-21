@@ -17,22 +17,19 @@ await ensureLogfileExists(logFile);
 
 const pokemonToParse = getBulbapediaReadyPokemon();
 
-// Get the current day of the month
-const dayOfMonth = new Date().getDate();
+// Get the current day of the week and add 1 to get a number from 1 to 7
+const dayOfWeek = new Date().getDay() + 1;
 
-// Use modulo to get a number between 0 and 3
-const quarterToProcess = dayOfMonth % 4;
+// Calculate the size of each seventh
+const seventhSize = Math.ceil(pokemonToParse.length / 7);
 
-// Calculate the size of each quarter
-const quarterSize = Math.ceil(pokemonToParse.length / 4);
-
-// Split the array into quarters
-const quarters = Array(4)
+// Split the array into sevenths
+const sevenths = Array(7)
   .fill(0)
-  .map((_, i) => pokemonToParse.slice(i * quarterSize, (i + 1) * quarterSize));
+  .map((_, i) => pokemonToParse.slice(i * seventhSize, (i + 1) * seventhSize));
 
-// Select the quarter to process
-const pokemonToProcess = quarters[quarterToProcess];
+// Select the seventh to process based on the day of the week
+const pokemonToProcess = sevenths.at(dayOfWeek - 1);
 
 for (const pokemon of pokemonToProcess) {
   await parsePokemon(pokemon);

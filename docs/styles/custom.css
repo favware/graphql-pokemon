@@ -1,0 +1,15 @@
+.customUnorderedList {
+  padding: 0;
+}
+
+.customListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 0.2rem;
+}
+
+.customUnorderedList .customListItem:before {
+  content: '－';
+  position: relative;
+}

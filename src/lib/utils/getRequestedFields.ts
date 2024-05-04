@@ -1,6 +1,6 @@
 import { GraphQLSet } from '#utils/GraphQLSet';
 import type { GraphQLResolveInfo } from 'graphql';
-import { parseResolveInfo, type FieldsByTypeName, type ResolveTree } from 'graphql-parse-resolve-info';
+import { parseResolveInfo, type FieldsByTypeName, type ResolveTree } from '#utils/graphql-parse-resolve-info';
 
 /**
  * Checks if the provided `info` object is an instance of `ResolveTree`.

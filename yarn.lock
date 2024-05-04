@@ -1518,7 +1518,7 @@ __metadata:
     "@graphql-codegen/typescript": "npm:^4.0.6"
     "@graphql-codegen/typescript-resolvers": "npm:^4.0.6"
     "@koa/cors": "npm:^5.0.0"
-    "@magidoc/cli": "npm:^4.2.1"
+    "@magidoc/cli": "npm:^5.0.3"
     "@sapphire/eslint-config": "npm:^5.0.4"
     "@sapphire/fetch": "npm:^3.0.2"
     "@sapphire/prettier-config": "npm:^2.0.0"
@@ -2328,47 +2328,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@magidoc/cli@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@magidoc/cli@npm:4.2.1"
+"@magidoc/cli@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@magidoc/cli@npm:5.0.3"
   dependencies:
-    "@magidoc/plugin-starter-variables": "npm:^4.2.1"
-    "@magidoc/rollup-plugin-gql-schema": "npm:^4.2.1"
+    "@magidoc/plugin-starter-variables": "npm:^5.0.3"
+    "@magidoc/rollup-plugin-gql-schema": "npm:^5.0.3"
     axios: "npm:^1.6.8"
     chokidar: "npm:^3.6.0"
     commander: "npm:^12.0.0"
     extract-zip: "npm:^2.0.1"
     fs-extra: "npm:^11.2.0"
-    listr2: "npm:^8.1.3"
+    listr2: "npm:^8.2.1"
     lodash: "npm:^4.17.21"
     sirv: "npm:^2.0.4"
-    zod: "npm:^3.22.4"
+    zod: "npm:^3.23.6"
   bin:
     magidoc: build/index.js
-  checksum: 10/a418c3ff1304b43a160a06f4ef5b8c73c2c30f7ffe20654971129945f4bdad8024b55b803cafc9cca79f75f0741ea3be21c5d2d30914f960f880f648476c556a
+  checksum: 10/45215d3b2359e04db71cfcec6a4349380ded444d9c13c99849d6fac450a2de06e58cb843bdf5a46d5f1c90536921ee7d66b5ee368dd97e7344046734405adc11
   languageName: node
   linkType: hard
 
-"@magidoc/plugin-starter-variables@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@magidoc/plugin-starter-variables@npm:4.2.1"
+"@magidoc/plugin-starter-variables@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@magidoc/plugin-starter-variables@npm:5.0.3"
   dependencies:
-    zod: "npm:^3.22.4"
+    zod: "npm:^3.23.6"
   dependenciesMeta:
     zod:
       optional: true
-  checksum: 10/8f457c5b81a9cbb88ab57c82d467d96460404082cdf19cd2321df3ebe8b11882c8fd63bbf9f6ad581b19873b06bb074ba0daae7fd20e2a66630c7da262408e3a
+  checksum: 10/ac6df5cb0f4ca4f20ff6023db60a2efb8a7c1c4db53c6a475b75d95dcf72250753b67a8cae796496b7c1d3d7212595c63a7cbab298a26bd815109253abd2b8d7
   languageName: node
   linkType: hard
 
-"@magidoc/rollup-plugin-gql-schema@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@magidoc/rollup-plugin-gql-schema@npm:4.2.1"
+"@magidoc/rollup-plugin-gql-schema@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@magidoc/rollup-plugin-gql-schema@npm:5.0.3"
   dependencies:
     axios: "npm:^1.6.8"
     fast-glob: "npm:^3.3.2"
     graphql: "npm:^16.8.1"
-  checksum: 10/bfefae6415e154c0111e7432169f3b2771b8f61847d5e6a68a873c28cbfbdadb032890b9a1ba36f05d2ca1ad4114f2d6ab8aea187d33986bfdcbbc8e97faae35
+  checksum: 10/b89965e8071e4169583ca0f81168cf70e214986bf96c48c3ba702342f57c29288f4e332365dd7fc65fd1dfceaf31164192211a55ef76129e67d1d63d4279d303
   languageName: node
   linkType: hard
 
@@ -7228,7 +7228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"listr2@npm:^8.1.3":
+"listr2@npm:^8.2.1":
   version: 8.2.1
   resolution: "listr2@npm:8.2.1"
   dependencies:
@@ -10498,9 +10498,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.22.4":
-  version: 3.22.4
-  resolution: "zod@npm:3.22.4"
-  checksum: 10/73622ca36a916f785cf528fe612a884b3e0f183dbe6b33365a7d0fc92abdbedf7804c5e2bd8df0a278e1472106d46674281397a3dd800fa9031dc3429758c6ac
+"zod@npm:^3.23.6":
+  version: 3.23.6
+  resolution: "zod@npm:3.23.6"
+  checksum: 10/a3b0ea904f0615c67ef01ab3abc4e917d3bb87d46fc39515bcb68e59450b54f175dc9d29ddc7e13217dd456099729afa0b76609db135ca158e3ccebcac6153d9
   languageName: node
   linkType: hard

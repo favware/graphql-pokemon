@@ -15,17 +15,18 @@ const config = {
     paths: ['./graphql/*.graphql'] // CWD is the root of the project, not the current docs/ directory
   },
   dev: {
-    watch: [fileURLToPath(new URL('./pages', import.meta.url)), fileURLToPath(new URL('./pages.mjs', import.meta.url))]
+    watch: [fileURLToPath(new URL('./pages/', import.meta.url)), fileURLToPath(new URL('./pages.mjs', import.meta.url))]
   },
   website: {
     template: 'carbon-multi-page',
-    output: fileURLToPath(new URL('./magidoc', import.meta.url)),
+    output: fileURLToPath(new URL('./magidoc/', import.meta.url)),
+    staticAssets: fileURLToPath(new URL('./static/', import.meta.url)),
     options: {
       pages,
       appTitle: 'GraphQL Pokémon Docs',
       appFavicon: 'https://cdn.favware.tech/img/gqlp.png',
       appLogo: 'https://cdn.favware.tech/img/gqlp-and-name.png',
-      customStyles: ['./styles/custom.css'],
+      customStyles: ['/styles/custom.css'],
       externalLinks: [
         {
           label: 'Github',

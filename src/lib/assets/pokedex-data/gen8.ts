@@ -2016,6 +2016,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 866,
       prevo: 'mrmimegalar',
       species: 'Mr. Rime',
+      specialBulbapediaUrl: 'Mr._Rime',
       types: [TypesEnum.Ice, TypesEnum.Psychic],
       weightkg: 58.2,
       aliases: ['rime'],

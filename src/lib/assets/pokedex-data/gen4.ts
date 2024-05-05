@@ -1500,6 +1500,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 6425,
       num: 439,
       species: 'Mime Jr.',
+      specialBulbapediaUrl: 'Mime_Jr.',
       types: [TypesEnum.Psychic, TypesEnum.Fairy],
       weightkg: 13,
       aliases: ['manene', 'mime jr.', 'mime jr', 'mime junior'],

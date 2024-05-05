@@ -3,6 +3,7 @@ import {
   GraphQLInterfaceType,
   GraphQLObjectType,
   GraphQLUnionType,
+  getArgumentValues,
   getNamedType,
   isCompositeType,
   type ASTNode,
@@ -16,7 +17,6 @@ import {
   type NamedTypeNode,
   type SelectionNode
 } from 'graphql';
-import { getArgumentValues } from 'graphql/execution/values';
 
 /**
  * Parses the provided GraphQLResolveInfo object.

@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.5.1](https://github.com/favware/graphql-pokemon/compare/v8.5.0...v8.5.1) - (2024-05-05)
+
+## 🏠 Refactor
+
+- Migrate over code from graphql-parse-resolve-info ([4b46845](https://github.com/favware/graphql-pokemon/commit/4b46845e8fefb2c3cfe02ae1feba136fa526916d))
+- Update data [skip publish] ([3c4d47d](https://github.com/favware/graphql-pokemon/commit/3c4d47de4e12c179fa96560d1d126b5395fd59c4))
+- Update data [skip publish] ([23a135b](https://github.com/favware/graphql-pokemon/commit/23a135bd94ccae02f755ac9cc649465e5c6118be))
+- Update data [skip publish] ([3dfeaba](https://github.com/favware/graphql-pokemon/commit/3dfeabacbd03b4c4b6ea55f105b3cf27c5f73d26))
+- Update data [skip publish] ([47bc806](https://github.com/favware/graphql-pokemon/commit/47bc806ecf48bf4adef830db9817f04c4dc572af))
+- Update data [skip publish] ([3384375](https://github.com/favware/graphql-pokemon/commit/33843759f77e0738723a8773ddb881d6c200b550))
+- Update data [skip publish] ([c7adf17](https://github.com/favware/graphql-pokemon/commit/c7adf17c46a19a6bf0543574fc6d4889b66f11b9))
+- Update data [skip publish] ([faf2683](https://github.com/favware/graphql-pokemon/commit/faf2683100440edead1f11738a8de36505c99288))
+- Update data [skip publish] ([da9b448](https://github.com/favware/graphql-pokemon/commit/da9b44818bb2210455474b2db4f4ebb96f68a332))
+- Update data [skip publish] ([6c601f8](https://github.com/favware/graphql-pokemon/commit/6c601f8121cb34926f77b7c29cc25994a8db3683))
+- Process only a quarter of the pokemon for flavor updates every day ([ade6b0b](https://github.com/favware/graphql-pokemon/commit/ade6b0b4b8d025ddd28e227b48b95a5052278b16))
+- Import improvement ([6f19b64](https://github.com/favware/graphql-pokemon/commit/6f19b64223933acdddf2f52b7fd81632af5b230b))
+- Reduce cognitive complexity for `sprite-parser` ([0b06d69](https://github.com/favware/graphql-pokemon/commit/0b06d69780aac4846961fcd58206ca260193ccb3))
+- Update data [skip publish] ([f9a43d4](https://github.com/favware/graphql-pokemon/commit/f9a43d4052c4d15082b68c232de95de2d51195c6))
+- Update data [skip publish] ([df4f3ee](https://github.com/favware/graphql-pokemon/commit/df4f3ee79cc4202e617c1fc1cce6ed16f78e9cf1))
+- Update data [skip publish] ([d166528](https://github.com/favware/graphql-pokemon/commit/d166528bcc529ba93ac90ceda8fa154b69dcfc71))
+- Update data [skip publish] ([5c29978](https://github.com/favware/graphql-pokemon/commit/5c299787a093faf78382aeda801ecfa491569648))
+- Update data [skip publish] ([e31a619](https://github.com/favware/graphql-pokemon/commit/e31a61920b375731d22bad55620f8f407f04ddec))
+
+## 🐛 Bug Fixes
+
+- Fixed problematic data with Mime Jr., Mr. Mime, and Mr. Rime ([4e83dd7](https://github.com/favware/graphql-pokemon/commit/4e83dd76e0647c5b7c95df2cdbce87dd6da080a4))
+- Fixed import from graphql ([0f68dbb](https://github.com/favware/graphql-pokemon/commit/0f68dbb1d0ce9f1f3bfcc0f2097766a7dd78118f))
+
+## 📝 Documentation
+
+- Add custom style sheet (#964) ([9f5b97a](https://github.com/favware/graphql-pokemon/commit/9f5b97aed3ef587f6e11f56b05d3651352c91ae2))
+
 # [8.5.0](https://github.com/favware/graphql-pokemon/compare/v8.5.0...v8.5.0) - (2024-03-02)
 
 ## 🏠 Refactor

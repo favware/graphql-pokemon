@@ -1,7 +1,5 @@
 import { isNullish } from '@sapphire/utilities';
 import {
-  GraphQLInterfaceType,
-  GraphQLObjectType,
   GraphQLUnionType,
   getArgumentValues,
   getNamedType,
@@ -11,7 +9,9 @@ import {
   type FragmentSpreadNode,
   type GraphQLCompositeType,
   type GraphQLField,
+  type GraphQLInterfaceType,
   type GraphQLNamedType,
+  type GraphQLObjectType,
   type GraphQLResolveInfo,
   type InlineFragmentNode,
   type NamedTypeNode,

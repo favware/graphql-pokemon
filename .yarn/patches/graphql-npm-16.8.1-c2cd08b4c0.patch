@@ -1,0 +1,26 @@
+diff --git a/package.json b/package.json
+index 67818190393e01c3175ae1cf9231f5e51b77c4e4..e97782ce9283bd5660d91ab124d6b528f8f82f18 100644
+--- a/package.json
++++ b/package.json
+@@ -3,8 +3,20 @@
+   "version": "16.8.1",
+   "description": "A Query Language and Runtime which can target any service.",
+   "license": "MIT",
+-  "main": "index",
++  "main": "index.js",
+   "module": "index.mjs",
++  "exports": {
++    ".": {
++      "import": {
++        "types": "./index.d.ts",
++        "default": "./index.mjs"
++      },
++      "require": {
++        "types": "./index.d.ts",
++        "default": "./index.js"
++      }
++    }
++  },
+   "typesVersions": {
+     ">=4.1.0": {
+       "*": [

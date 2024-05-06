@@ -6233,8 +6233,8 @@ __metadata:
 
 "graphql@patch:graphql@npm%3A16.8.1#~/.yarn/patches/graphql-npm-16.8.1-c2cd08b4c0.patch":
   version: 16.8.1
-  resolution: "graphql@patch:graphql@npm%3A16.8.1#~/.yarn/patches/graphql-npm-16.8.1-c2cd08b4c0.patch::version=16.8.1&hash=937aa1"
-  checksum: 10/e76446ae90e875b916f81f28ab70d03def2018a079858a8c067b617c42f2e45d20cc52ccd17ed2f2cde4f9f54d9169feb6e0f0b8d263351211743604f7796f54
+  resolution: "graphql@patch:graphql@npm%3A16.8.1#~/.yarn/patches/graphql-npm-16.8.1-c2cd08b4c0.patch::version=16.8.1&hash=adc8c3"
+  checksum: 10/971fe130480461f9666184a7c941ed9bc4e8fb0b311a16192f678dd8df6646c245e26fc894cfc05a7cc07fea1327880f3d5ed594b20d1a5b61f51e613fd43fd0
   languageName: node
   linkType: hard
 

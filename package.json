@@ -118,7 +118,7 @@
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
     "replace-in-file": "^7.1.0",
-    "rimraf": "^5.0.6",
+    "rimraf": "^5.0.7",
     "tsup": "^8.0.2",
     "tsx": "^4.10.0",
     "typescript": "^5.4.5",

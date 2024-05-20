@@ -97718,5 +97718,34 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       wish: ['9E'],
       zenheadbutt: ['9M']
     }
+  ],
+  [
+    'chuggalong',
+    {
+      clangingscales: ['9L1'],
+      clangoroussoul: ['9L1'],
+      destinybond: ['9L1'],
+      dracometeor: ['9M'],
+      dragontail: ['9M'],
+      drainingkiss: ['9M'],
+      encore: ['9M'],
+      endure: ['9M'],
+      facade: ['9M'],
+      flamethrower: ['9M'],
+      healbell: ['9L1'],
+      helpinghand: ['9M'],
+      protect: ['9M'],
+      rest: ['9M'],
+      roar: ['9M'],
+      sleeptalk: ['9M'],
+      sludgebomb: ['9M'],
+      sludgewave: ['9M'],
+      storedpower: ['9M'],
+      substitute: ['9M'],
+      surf: ['9M'],
+      takedown: ['9M'],
+      taunt: ['9M'],
+      terablast: ['9M']
+    }
   ]
 ]);

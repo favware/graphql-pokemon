@@ -8,7 +8,7 @@ export interface GetMoveArgs {
 }
 
 const getMoveSchema: SchemaOf<GetMoveArgs> = s.object({
-  move: s.string
+  move: s.string({ message: 'The move has to be a string' })
 });
 
 export function validateGetMoveArgs(args: GetMoveArgs): GetMoveArgs {

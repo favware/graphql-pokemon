@@ -9,7 +9,7 @@ export interface GetFuzzyItemArgs extends BaseFuzzyArgs {
 }
 
 const getFuzzyItemSchema: SchemaOf<GetFuzzyItemArgs> = baseFuzzySchema.extend({
-  item: s.string
+  item: s.string({ message: 'The item has to be a string' })
 });
 
 export function validateGetFuzzyItemArgs(args: GetFuzzyItemArgs): GetFuzzyItemArgs {

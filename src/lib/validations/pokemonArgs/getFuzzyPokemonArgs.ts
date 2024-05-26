@@ -13,7 +13,7 @@ export interface GetFuzzyPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
 const getFuzzyPokemonSchema: SchemaOf<GetFuzzyPokemonArgs> = baseFuzzySchema //
   .extend(basePokemonArgsSchema)
   .extend({
-    pokemon: s.string
+    pokemon: s.string({ message: 'The Pokémon has to be a string' })
   });
 
 export function validateGetFuzzyPokemonArgs(args: GetFuzzyPokemonArgs): NonNullish<GetFuzzyPokemonArgs> {

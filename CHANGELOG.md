@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.5.3](https://github.com/favware/graphql-pokemon/compare/v8.5.2...v8.5.3) - (2024-05-26)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([79740e5](https://github.com/favware/graphql-pokemon/commit/79740e5e180db90151c862ea15ab59a9926a3fee))
+- Update data [skip publish] ([ace5704](https://github.com/favware/graphql-pokemon/commit/ace5704b6f61814f531c3c62a59386ce943d4f98))
+- Update data [skip publish] ([8c45057](https://github.com/favware/graphql-pokemon/commit/8c45057b36c4f38e48ab084a23abdbaa1610e73b))
+- Update data [skip publish] ([2fe85e4](https://github.com/favware/graphql-pokemon/commit/2fe85e4c946831ce62254c270c2af7b2ac7bdc6a))
+- Update data [skip publish] ([4765396](https://github.com/favware/graphql-pokemon/commit/47653960db25ea9223c74689a864c9c1ff1be5b3))
+- Update data [skip publish] ([d05e843](https://github.com/favware/graphql-pokemon/commit/d05e8438947e83ff150a83c5c960da9a6fa65aaf))
+- Update data [skip publish] ([3240a75](https://github.com/favware/graphql-pokemon/commit/3240a75825680d0a071cf6e86aff2f49a9777cbd))
+
+## 🐛 Bug Fixes
+
+- Fully update to shapeshift v4 and set custom error messages ([63a0752](https://github.com/favware/graphql-pokemon/commit/63a07527e250062234a4c329a466cef2572e0d1a))
+
 # [8.5.1](https://github.com/favware/graphql-pokemon/compare/v8.5.0...v8.5.1) - (2024-05-05)
 
 ## 🏠 Refactor

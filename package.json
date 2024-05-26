@@ -89,7 +89,7 @@
     "@sapphire/eslint-config": "^5.0.4",
     "@sapphire/fetch": "^3.0.2",
     "@sapphire/prettier-config": "^2.0.0",
-    "@sapphire/shapeshift": "^3.9.7",
+    "@sapphire/shapeshift": "^4.0.0",
     "@sapphire/timestamp": "^1.0.3",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",

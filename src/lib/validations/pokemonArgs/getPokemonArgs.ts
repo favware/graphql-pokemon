@@ -10,7 +10,7 @@ export interface GetPokemonArgs extends BasePokemonArgs {
 }
 
 export const getPokemonSchema: SchemaOf<GetPokemonArgs> = basePokemonArgsSchema.extend({
-  pokemon: s.string
+  pokemon: s.string({ message: 'The Pokémon has to be a string' })
 });
 
 export function validateGetPokemonArgs(args: GetPokemonArgs): NonNullish<GetPokemonArgs> {

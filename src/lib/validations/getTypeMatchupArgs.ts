@@ -14,8 +14,8 @@ export interface GetTypeMatchupArgs {
 }
 
 const getTypeMatchupSchema: SchemaOf<GetTypeMatchupArgs> = s.object({
-  primaryType: s.nativeEnum(TypesEnum),
-  secondaryType: s.nativeEnum(TypesEnum).nullish
+  primaryType: s.nativeEnum(TypesEnum, { message: 'The primary type has to be a valid type' }),
+  secondaryType: s.nativeEnum(TypesEnum, { message: 'The secondary type has to be a valid type' }).nullish()
 });
 
 export function validateGetTypeMatchupArgs(args: GetTypeMatchupArgs): GetTypeMatchupArgs {

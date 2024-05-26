@@ -8,7 +8,7 @@ export interface GetItemArgs {
 }
 
 const getItemSchema: SchemaOf<GetItemArgs> = s.object({
-  item: s.string
+  item: s.string({ message: 'The item has to be a string' })
 });
 
 export function validateGetItemArgs(args: GetItemArgs): GetItemArgs {

@@ -24,14 +24,18 @@ export interface GetAllPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
 const getAllPokemonSchema: SchemaOf<GetAllPokemonArgs> = baseFuzzySchema //
   .extend(basePokemonArgsSchema)
   .extend({
-    offset: s.number
-      .greaterThanOrEqual(0)
-      .lessThanOrEqual(1422)
-      .nullish.transform((v) => v ?? 0),
-    take: s.number
-      .greaterThanOrEqual(1)
-      .lessThanOrEqual(1423)
-      .nullish.transform((v) => v ?? 1)
+    offset: s
+      .number({ message: 'The offset has to be a number' })
+      .greaterThanOrEqual(0, { message: 'The offset has to be at least 0' })
+      .lessThanOrEqual(1422, { message: 'The offset has to be at most 1422' })
+      .nullish({ message: 'The offset has to be a number' })
+      .transform((v) => v ?? 0),
+    take: s
+      .number({ message: 'The amount to take has to be a number' })
+      .greaterThanOrEqual(1, { message: 'The amount to take has to be at least 1' })
+      .lessThanOrEqual(1423, { message: 'The amount to take has to be at most 1423' })
+      .nullish({ message: 'The amount to take has to be a number' })
+      .transform((v) => v ?? 1)
   });
 
 export function validateGetAllPokemonArgs(args: GetAllPokemonArgs): NonNullish<GetAllPokemonArgs> {

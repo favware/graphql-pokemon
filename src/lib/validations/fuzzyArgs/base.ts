@@ -25,10 +25,19 @@ export interface BaseFuzzyArgs {
 }
 
 export const baseFuzzySchema: SchemaOf<BaseFuzzyArgs> = s.object({
-  take: s.number
-    .greaterThanOrEqual(1)
-    .lessThanOrEqual(50)
-    .nullish.transform((v) => v ?? 1),
-  offset: s.number.greaterThanOrEqual(0).nullish.transform((v) => v ?? 0),
-  reverse: s.boolean.nullish.transform((v) => v ?? false)
+  take: s
+    .number({ message: 'The amount to take has to be a number' })
+    .greaterThanOrEqual(1, { message: 'You have to take at least 1 result' })
+    .lessThanOrEqual(50, { message: 'You can only take up to 50 results' })
+    .nullish({ message: 'The amount to take has to be a number' })
+    .transform((v) => v ?? 1),
+  offset: s
+    .number({ message: 'The offset has to be a number' })
+    .greaterThanOrEqual(0, { message: 'The offset has to be at least 0' })
+    .nullish({ message: 'The offset has to be a number' })
+    .transform((v) => v ?? 0),
+  reverse: s
+    .boolean({ message: 'The reverse flag has to be a boolean' })
+    .nullish({ message: 'The reverse flag has to be a boolean' })
+    .transform((v) => v ?? false)
 });

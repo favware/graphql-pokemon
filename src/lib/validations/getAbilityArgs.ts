@@ -8,7 +8,7 @@ export interface GetAbilityArgs {
 }
 
 const getAbilitySchema: SchemaOf<GetAbilityArgs> = s.object({
-  ability: s.string
+  ability: s.string({ message: 'The ability has to be a string' })
 });
 
 export function validateGetAbilityArgs(args: GetAbilityArgs): GetAbilityArgs {

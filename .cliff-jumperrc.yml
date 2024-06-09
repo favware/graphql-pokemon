@@ -5,3 +5,7 @@ monoRepo: false
 commitMessageTemplate: 'chore(release): release {{new-version}}'
 tagTemplate: 'v{{new-version}}'
 githubRepo: auto
+identifierBase: false
+pushTag: true
+githubRelease: true
+githubReleaseLatest: true

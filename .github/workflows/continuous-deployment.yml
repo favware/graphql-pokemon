@@ -144,8 +144,8 @@ jobs:
           path: dist/
           if-no-files-found: error
 
-  GitHubCreateTag:
-    name: Create tag on GitHub
+  GitHubMakeRelease:
+    name: Make release on GitHub
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
     needs: GeneratePackage
@@ -165,20 +165,17 @@ jobs:
         run: yarn --immutable
       - name: Configure Git
         run: |
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_EMAIL}"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
+          git remote set-url origin "https://${GITHUB_TOKEN}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git"
+          git config --local user.email "${GITHUB_EMAIL}"
+          git config --local user.name "${GITHUB_USER}"
         env:
-          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
-          GITHUB_USER: Favware-bot
-          GITHUB_EMAIL: favwarebot@gmail.com
-      - name: Set up git-cliff
-        uses: kenji-miyake/setup-git-cliff@v2
+          GITHUB_USER: github-actions[bot]
+          GITHUB_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Bump semver
         if: ${{ ! contains(github.event.head_commit.message, '[skip bump]') }}
-        run: yarn bump --no-skip-tag --no-skip-changelog
+        run: yarn bump
         env:
-          CI: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Store bumped package.json
         uses: actions/upload-artifact@v4
@@ -200,7 +197,7 @@ jobs:
     name: Publishing release to NPM
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
-    needs: GitHubCreateTag
+    needs: GitHubMakeRelease
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
@@ -237,7 +234,7 @@ jobs:
     name: Publishing release to Github Package Registry
     runs-on: ubuntu-latest
     if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') || github.event.inputs.skip-publish == true }}
-    needs: GitHubCreateTag
+    needs: GitHubMakeRelease
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4

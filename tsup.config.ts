@@ -14,5 +14,9 @@ export default defineConfig({
   bundle: false,
   shims: false,
   keepNames: true,
-  splitting: false
+  splitting: false,
+  define: {
+    'globalThis.process': JSON.stringify(true),
+    'process.env.NODE_ENV': JSON.stringify('production')
+  }
 });

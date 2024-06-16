@@ -3,7 +3,7 @@ index 67818190393e01c3175ae1cf9231f5e51b77c4e4..2575a014118c86e85023e723bf1e15e6
 --- a/package.json
 +++ b/package.json
 @@ -3,8 +3,200 @@
-   "version": "16.8.1",
+   "version": "16.8.2",
    "description": "A Query Language and Runtime which can target any service.",
    "license": "MIT",
 -  "main": "index",

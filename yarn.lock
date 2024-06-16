@@ -6397,24 +6397,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:16.8.1":
-  version: 16.8.1
-  resolution: "graphql@npm:16.8.1"
-  checksum: 10/7a09d3ec5f75061afe2bd2421a2d53cf37273d2ecaad8f34febea1f1ac205dfec2834aec3419fa0a10fcc9fb345863b2f893562fb07ea825da2ae82f6392893c
-  languageName: node
-  linkType: hard
-
-"graphql@npm:^16.8.2":
+"graphql@npm:16.8.2, graphql@npm:^16.8.1":
   version: 16.8.2
   resolution: "graphql@npm:16.8.2"
   checksum: 10/d74aa1f28a0bbc1c7e60aeb7e4e199e0818ed7169b97bd4d4e86cf345d5645615a9ccb33a11f1ab5e145fdd91d432b3aa475836d3bc5f9647e6103c8854e7e99
   languageName: node
   linkType: hard
 
-"graphql@patch:graphql@npm%3A16.8.1#~/.yarn/patches/graphql-npm-16.8.1-c2cd08b4c0.patch":
-  version: 16.8.1
-  resolution: "graphql@patch:graphql@npm%3A16.8.1#~/.yarn/patches/graphql-npm-16.8.1-c2cd08b4c0.patch::version=16.8.1&hash=adc8c3"
-  checksum: 10/971fe130480461f9666184a7c941ed9bc4e8fb0b311a16192f678dd8df6646c245e26fc894cfc05a7cc07fea1327880f3d5ed594b20d1a5b61f51e613fd43fd0
+"graphql@patch:graphql@npm%3A16.8.2#~/.yarn/patches/graphql-npm-16.8.2-c2cd08b4c0.patch":
+  version: 16.8.2
+  resolution: "graphql@patch:graphql@npm%3A16.8.2#~/.yarn/patches/graphql-npm-16.8.2-c2cd08b4c0.patch::version=16.8.2&hash=f35d19"
+  checksum: 10/7fda25d4488af90d64f452bd5820639667c60fa8a2568a60f02e371265c09103fc624eddaf3142be1d2f094cb5b952924a184140af5f4c8e15d33d48005b3805
   languageName: node
   linkType: hard
 

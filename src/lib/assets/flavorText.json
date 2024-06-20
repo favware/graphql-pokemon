@@ -59866,7 +59866,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Legend has it that the residents of a sunken ancient city changed into these Pokémon."
+      "flavor_text": "Legend has it that the residents of a sunken ancient city changed into these Pokémon.{{tt|*|Used for both genders in-game}}"
     }
   ],
   "593": [
@@ -59912,11 +59912,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Most of this Pokémon's body composition is identical to sea water. It makes sunken ships its lair."
+      "flavor_text": "Most of this Pokémon's body composition is identical to sea water. It makes sunken ships its lair.{{tt|*|Used for both genders in-game}}"
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Whenever a full moon hangs in the night sky, schools of Jellicent gather near the surface of the sea, waiting for their prey to appear."
+      "flavor_text": "Whenever a full moon hangs in the night sky, schools of Jellicent gather near the surface of the sea, waiting for their prey to appear.{{tt|*|Used for both genders in-game}}"
     }
   ],
   "594": [

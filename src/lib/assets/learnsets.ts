@@ -97716,7 +97716,6 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       destinybond: ['9L1'],
       dracometeor: ['9M'],
       dragontail: ['9M'],
-      drainingkiss: ['9M'],
       encore: ['9M'],
       endure: ['9M'],
       facade: ['9M'],

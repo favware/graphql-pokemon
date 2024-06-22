@@ -3129,7 +3129,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 800,
       legendary: true,
       classification: 'Wild Horse Pokémon',
-      cry: 'https://play.pokemonshowdown.com/audio/cries/glastrier.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/glastrier.mp3',
+      respelling: 'GLASS-tree-er',
+      ipa: '/ˈɡlæstriːər/'
     }
   ],
   [

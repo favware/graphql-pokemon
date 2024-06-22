@@ -3550,7 +3550,7 @@
     },
     {
       "version_id": "Legends: Arceus",
-      "flavor_text": "It can discharge bursts of electricity exceeding 100,000 volts—a single strike with that amount of power would incapacitate one of the Copperajah of [[Professor Laventon|my]] [[Galar|homeland]]."
+      "flavor_text": "It can discharge bursts of electricity exceeding 100,000 volts—a single strike with that amount of power would incapacitate one of the Copperajah of my homeland."
     },
     {
       "version_id": "Scarlet",
@@ -6338,11 +6338,11 @@
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "'''Version 1.0:''' Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from the{{sup/3|R}}/this{{sup/3|S}} Bug Pokémon host. They are highly valued as a medicine for extending life.<br>'''Versions 1.1 and 1.2:''' Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug/Grass Pokémon host. They are highly valued as a medicine for extending life."
+      "flavor_text": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug/Grass Pokémon host. They are highly valued as a medicine for extending life."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "'''Version 1.0:''' Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from the{{sup/3|R}}/this{{sup/3|S}} Bug Pokémon host. They are highly valued as a medicine for extending life.<br>'''Versions 1.1 and 1.2:''' Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug/Grass Pokémon host. They are highly valued as a medicine for extending life."
+      "flavor_text": "Paras has parasitic mushrooms growing on its back called tochukaso. They grow large by drawing nutrients from this Bug/Grass Pokémon host. They are highly valued as a medicine for extending life."
     },
     {
       "version_id": "Emerald",
@@ -17206,7 +17206,7 @@
     },
     {
       "version_id": "Ultra Sun",
-      "flavor_text": "In many places, there are folktales of stardust falling into the ocean and becoming Staryu.}}\t"
+      "flavor_text": "In many places, there are folktales of stardust falling into the ocean and becoming Staryu."
     },
     {
       "version_id": "Ultra Moon",
@@ -21874,7 +21874,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "'''Version 1.0:''' Its pleasantly aromatic leaves have the ability to check the humidity and temperature.<br>'''Version 1.1:''' Its pleasantly aromatic leaf has the ability to check the humidity and temperature."
+      "flavor_text": "Its pleasantly aromatic leaf has the ability to check the humidity and temperature."
     },
     {
       "version_id": "LeafGreen",
@@ -31534,7 +31534,7 @@
     },
     {
       "version_id": "Scarlet",
-      "flavor_text": "This Pokémon apparently used to live in [[Hisui|much harsher environments]], and thus it once had stronger psychic powers than it does now."
+      "flavor_text": "This Pokémon apparently used to live in much harsher environments, and thus it once had stronger psychic powers than it does now."
     },
     {
       "version_id": "Violet",
@@ -33098,7 +33098,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "'''Version 1.0:''' Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies.<br>'''Version 1.1:''' It has an impudent nature. Having great strength, it can even change surrounding landforms."
+      "flavor_text": "It has an impudent nature. Having great strength, it can even change surrounding landforms."
     },
     {
       "version_id": "LeafGreen",
@@ -38280,7 +38280,7 @@
   "303": [
     {
       "version_id": "Ruby",
-      "flavor_text": "'''Version 1.0:''' Mawhile's huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, Mawhile chomps it with its gaping jaws.<br>'''Versions 1.1 and 1.2:''' Mawile's huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, Mawile chomps it with its gaping jaws."
+      "flavor_text": "Mawile's huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, Mawile chomps it with its gaping jaws."
     },
     {
       "version_id": "Sapphire",
@@ -59866,7 +59866,7 @@
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Legend has it that the residents of a sunken ancient city changed into these Pokémon.{{tt|*|Used for both genders in-game}}"
+      "flavor_text": "Legend has it that the residents of a sunken ancient city changed into these Pokémon."
     }
   ],
   "593": [
@@ -59912,11 +59912,11 @@
     },
     {
       "version_id": "Sword",
-      "flavor_text": "Most of this Pokémon's body composition is identical to sea water. It makes sunken ships its lair.{{tt|*|Used for both genders in-game}}"
+      "flavor_text": "Most of this Pokémon's body composition is identical to sea water. It makes sunken ships its lair."
     },
     {
       "version_id": "Shield",
-      "flavor_text": "Whenever a full moon hangs in the night sky, schools of Jellicent gather near the surface of the sea, waiting for their prey to appear.{{tt|*|Used for both genders in-game}}"
+      "flavor_text": "Whenever a full moon hangs in the night sky, schools of Jellicent gather near the surface of the sea, waiting for their prey to appear."
     }
   ],
   "594": [
@@ -69886,7 +69886,7 @@
     },
     {
       "version_id": "Violet",
-      "flavor_text": "This seems to be the Iron Serpent mentioned in an old book.. The Iron Serpent is said to have turned the land to ash with its lightning."
+      "flavor_text": "This seems to be the Iron Serpent mentioned in an old book. The Iron Serpent is said to have turned the land to ash with its lightning."
     }
   ],
   "1009": [

@@ -19,9 +19,14 @@ export function getTextContent(bit1: string) {
     .replace(/{{pkmn2\|([a-zA-Z]+)}}/g, '$1')
     .replace(/{{wp\|([a-zA-Z ]+)}}/g, '$1')
     .replace(/{{wp\|[a-zA-Z ()]+\|([a-zA-Z. ]+)}}/g, '$1')
+    .replace(/'''Version 1\.0:''' .+1.2:''' (.+)/, '$1')
+    .replace(/'''Version 1\.0:''' .+1\.1:''' (.+)/, '$1')
+    .replace(/'''Version 1\.0:''' .+1\.2:''' (.+)/, '$1')
     .replaceAll('{{tt|*|Pokédex entry only found in Pokémon HOME.}}', '')
     .replaceAll('{{tt|*|Pokédex entry only found in Pokémon HOME}}', '')
     .replaceAll('{{tt|*|In Ver 1.0, Tyranitar uses its entry from LeafGreen}}', '')
+    .replaceAll('{{tt|*|Used for both genders in-game}}', '')
+    .replaceAll('}}\t', '')
     .replaceAll('’', "'")
     .replaceAll('−', '-')
     .replaceAll('“', '"')
@@ -64,5 +69,8 @@ export function getTextContent(bit1: string) {
     .replaceAll('[[Mega Evolution|a phenomenon that occurs in a certain region]]', 'a phenomenon that occurs in a certain region')
     .replaceAll('[[Violet Book|certain expedition journal.]]', 'certain expedition journal.')
     .replaceAll('[[Scarlet Book|old expedition journal]]', 'old expedition journal.')
-    .replaceAll('[[Violet Book|old book]]', 'old book.');
+    .replaceAll('[[Violet Book|old book]]', 'old book')
+    .replaceAll('[[Professor Laventon|my]]', 'my')
+    .replaceAll('[[Galar|homeland]]', 'homeland')
+    .replaceAll('[[Hisui|much harsher environments]]', 'much harsher environments');
 }

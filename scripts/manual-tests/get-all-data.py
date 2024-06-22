@@ -227,6 +227,8 @@ query = '''
             ...CatchRateFragment
         }
         classification
+        respelling
+        ipa
         color
         cosmeticFormes
         cry

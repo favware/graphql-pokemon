@@ -1,21 +1,27 @@
-import { pokedex } from '#assets/pokedex.js';
 import { each } from 'async';
 import * as cheerio from 'cheerio';
 import { green, yellow } from 'colorette';
-import { writeFile } from 'node:fs/promises';
-import { inspectData, replaceEnumLikeValues, writeDataToFileAndPrettify } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon, type ParsedPokemon } from '../utils/bulbapedia-utils.js';
-import { classificationsUrl, generations } from '../utils/constants.js';
+import { generations, ipaNamesUrl } from '../utils/constants.js';
 import { fetchFlareSolverr } from '../utils/flaresolverr-session-management.js';
 import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from '../utils/utils.js';
 import { log, logFile } from './log-wrapper.js';
+import { pokedex } from '#assets/pokedex.js';
+import { inspectData, replaceEnumLikeValues, writeDataToFileAndPrettify } from '../../../utils.js';
+import { writeFile } from 'node:fs/promises';
 
 interface SucceededPokemon {
   num: number;
   forme?: string;
   species: string;
   generation: number;
-  classification: string;
+  respelling: string;
+  ipa: string;
+}
+
+function getPokemonFormLetter(forme: string | undefined): string {
+  if (forme?.toLowerCase() === 'alola') return 'A';
+  return '';
 }
 
 const failedPokemon: ParsedPokemon[] = [];
@@ -25,9 +31,9 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
-const response = await fetchFlareSolverr(classificationsUrl);
+const response = await fetchFlareSolverr(ipaNamesUrl);
 // const response = await fetch(
-//   classificationsUrl,
+//   ipaNamesUrl,
 //   {
 //     method: FetchMethods.Get,
 //     headers: {
@@ -48,32 +54,27 @@ const text = $('#wpTextbox1').text();
 await log({ msg: `Loaded text element`, color: yellow, isBold: false, isIndent: true });
 
 await each(getBulbapediaReadyPokemon(), async (pokemon) => {
-  const paddedNumber = pokemon.number.toString().padStart(4, '0');
+  const paddedNumber = pokemon.number.toString().padStart(3, '0');
 
   await log({ msg: `${pokemon.species} (${paddedNumber}) - Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });
 
-  const regex = pokemon.forme
-    ? new RegExp(`{{ArtP\\|${paddedNumber}\\|[^}}]+\\|form=-${pokemon.forme}}} \\|\\|(?<content>[^]*?)\\n`, 'i')
-    : new RegExp(`{{ArtP\\|${paddedNumber}\\|.+}} \\|\\|(?<content>[^]*?)\\n`);
+  const regex = new RegExp(
+    `${paddedNumber}${getPokemonFormLetter(pokemon.forme)}\\|\\w+}}\\n.+\\n\\|(?<respelling>[\\w- ]+).+\\n\\|(?<ipa>\\/[^/]+\\/)`,
+    'i'
+  );
   const match = regex.exec(text);
-  const regexForTranslateBlock = /\{\{tt\|([^|]+)\|[^}]+\}\}/;
 
-  const useHigherIndexFromTable = pokemon.forme || pokemon.number === 720 || pokemon.number === 964 || pokemon.number === 999;
+  const respelling = match?.groups?.respelling;
+  const ipa = match?.groups?.ipa;
 
-  const classification = match?.groups?.content
-    .trim()
-    .split('||')
-    .at(useHigherIndexFromTable ? 1 : 0)
-    ?.trim()
-    .replace(regexForTranslateBlock, '$1');
-
-  if (classification) {
+  if (respelling && ipa) {
     succeededPokemon.push({
       num: pokemon.number,
       forme: pokemon.forme,
       species: pokemon.species,
       generation: getPokemonGenerationForDexNumber(pokemon.number),
-      classification
+      respelling,
+      ipa
     });
   } else {
     failedPokemon.push(pokemon);
@@ -87,7 +88,8 @@ for (const pokemon of succeededPokemon) {
     ? pokedex.find((pokemonData) => pokemonData.num === pokemon.num && pokemonData.forme?.toLowerCase() === pokemon.forme.toLowerCase())
     : pokedex.find((pokemonData) => pokemonData.num === pokemon.num);
 
-  pokemonFromData.classification = pokemon.classification;
+  pokemonFromData.respelling = pokemon.respelling;
+  pokemonFromData.ipa = pokemon.ipa;
 }
 
 const prependContent = [

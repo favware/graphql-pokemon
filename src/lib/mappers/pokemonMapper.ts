@@ -417,6 +417,20 @@ export function mapPokemonDataToPokemonGraphQL({
   });
   addPropertyToObjectFieldBased({
     objectTarget: pokemonData,
+    propertyKey: 'respelling',
+    propertyValue: data.respelling,
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}respelling`
+  });
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
+    propertyKey: 'ipa',
+    propertyValue: data.ipa,
+    requestedFields,
+    fieldAccessor: `${resolvedRecursingAs}ipa`
+  });
+  addPropertyToObjectFieldBased({
+    objectTarget: pokemonData,
     propertyKey: 'color',
     propertyValue: data.color,
     requestedFields,

@@ -230,6 +230,8 @@ fragment FullDataFragmentWithoutNested on Pokemon {
     ...CatchRateFragment
   }
   classification
+  respelling
+  ipa
   color
   cosmeticFormes
   cry

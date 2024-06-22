@@ -1,5 +1,3 @@
-export const logFile = new URL('./output.log', import.meta.url);
-
 export const sortOrder = [
   'Red',
   'Blue',

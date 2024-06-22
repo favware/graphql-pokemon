@@ -216,6 +216,8 @@ export const getPokemonWithFullDataAndEvolutions = gql`
       ...CatchRateFragment
     }
     classification
+    respelling
+    ipa
     color
     cosmeticFormes
     cry

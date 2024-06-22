@@ -51,6 +51,8 @@ jobs:
           PORT: 8191
       - name: Run Classifications Updater
         run: yarn au:classifications || true
+      - name: Run IPA Updater
+        run: yarn au:ipa || true
       - name: Run Flavor Text Updater
         run: yarn au:flavors || true
       - name: Build code

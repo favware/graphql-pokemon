@@ -249,6 +249,10 @@ interface Pokemon {
   catchRate?: Maybe<CatchRate>;
   /** The classification of a Pokémon as listed in the Pokedex */
   classification?: Maybe<string>;
+  /** The respelling of the name of the Pokémon */
+  respelling?: Maybe<string>;
+  /** The International Phonetic Alphabet (IPA) representation of the name of the Pokémon */
+  ipa?: Maybe<string>;
   /** The colour of a Pokémon as listed in the Pokedex */
   color: string;
   /** An URL to an mp3 file of the Pokémon's cry. */

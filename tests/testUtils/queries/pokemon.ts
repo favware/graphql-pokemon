@@ -100,6 +100,8 @@ export const getPokemonWithFullData = gql`
         percentageWithOrdinaryPokeballAtFullHealth
       }
       classification
+      respelling
+      ipa
       color
       cosmeticFormes
       cry

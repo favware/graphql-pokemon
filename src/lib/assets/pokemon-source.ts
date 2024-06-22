@@ -93,6 +93,8 @@ export namespace PokemonTypes {
     catchRate?: CatchRateEntry;
 
     classification?: string;
+    respelling?: string;
+    ipa?: string;
 
     color: `${Capitalize<'Black' | 'Blue' | 'Brown' | 'Gray' | 'Green' | 'Pink' | 'Purple' | 'Red' | 'White' | 'Yellow'>}`;
 

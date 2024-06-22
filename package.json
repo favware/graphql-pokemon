@@ -65,6 +65,7 @@
     "au:testdata": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/update-test-files.ts",
     "au:flavors": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/flavor-text-updater/flavor-text-updater.ts",
     "au:classifications": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/classification-updater/classification-updater.ts",
+    "au:ipa": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/ipa-name-updater/ipa-updater.ts",
     "au:abilities": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/abilities-updater.ts",
     "au:items": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/items-updater.ts",
     "au:moves": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/moves-updater.ts",

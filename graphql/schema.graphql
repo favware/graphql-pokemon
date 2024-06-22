@@ -67,6 +67,12 @@ type Pokemon {
   "The classification of a Pokémon as listed in the Pokedex"
   classification: String
 
+  "The respelling of the name of the Pokémon"
+  respelling: String
+
+  "The International Phonetic Alphabet (IPA) representation of the name of the Pokémon"
+  ipa: String
+
   "The colour of a Pokémon as listed in the Pokedex"
   color: String!
 

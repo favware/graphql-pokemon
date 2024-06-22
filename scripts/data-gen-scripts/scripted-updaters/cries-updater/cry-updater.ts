@@ -2,9 +2,9 @@ import { pokedex } from '#assets/pokedex.js';
 import { eachLimit } from 'async';
 import { green } from 'colorette';
 import { inspectData, replaceEnumLikeValues, writeDataToFileAndPrettify } from '../../../utils';
-import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from '../classification-updater/utils';
 import { generations } from '../utils/constants';
 import { pokedexAppendContent, pokedexPrependContent } from '../utils/pokedex-constants';
+import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from '../utils/utils';
 import { getCryUrl } from './get-cry-url';
 import { log } from './log-wrapper';
 

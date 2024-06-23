@@ -128,7 +128,7 @@
   "resolutions": {
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.8",
-    "graphql@npm:^16.8.1": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch"
+    "graphql@npm:^16.9.0": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch"
   },
   "files": [
     "dist/",

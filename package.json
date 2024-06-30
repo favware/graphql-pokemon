@@ -86,7 +86,7 @@
     "@graphql-codegen/typescript": "^4.0.7",
     "@graphql-codegen/typescript-resolvers": "^4.1.0",
     "@koa/cors": "^5.0.0",
-    "@magidoc/cli": "^5.0.3",
+    "@magidoc/cli": "^6.0.0",
     "@sapphire/eslint-config": "^5.0.5",
     "@sapphire/fetch": "^3.0.2",
     "@sapphire/prettier-config": "^2.0.0",

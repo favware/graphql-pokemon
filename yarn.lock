@@ -1410,7 +1410,7 @@ __metadata:
     lint-staged: "npm:^15.2.7"
     npm-run-all2: "npm:^6.2.0"
     prettier: "npm:^3.3.2"
-    replace-in-file: "npm:^7.2.0"
+    replace-in-file: "npm:^8.0.1"
     rimraf: "npm:^5.0.7"
     tsup: "npm:^8.1.0"
     tsx: "npm:^4.16.0"
@@ -4001,7 +4001,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -5963,7 +5963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:^10.3.7":
+"glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:^10.3.7, glob@npm:^10.4.2":
   version: 10.4.2
   resolution: "glob@npm:10.4.2"
   dependencies:
@@ -5976,19 +5976,6 @@ __metadata:
   bin:
     glob: dist/esm/bin.mjs
   checksum: 10/e412776b5952a818eba790c830bea161c9a56813fd767d8c4c49f855603b1fb962b3e73f1f627a47298a57d2992b9f0f2fe15cf93e74ecaaa63fb45d63fdd090
-  languageName: node
-  linkType: hard
-
-"glob@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "glob@npm:8.1.0"
-  dependencies:
-    fs.realpath: "npm:^1.0.0"
-    inflight: "npm:^1.0.4"
-    inherits: "npm:2"
-    minimatch: "npm:^5.0.1"
-    once: "npm:^1.3.0"
-  checksum: 10/9aab1c75eb087c35dbc41d1f742e51d0507aa2b14c910d96fb8287107a10a22f4bbdce26fc0a3da4c69a20f7b26d62f1640b346a4f6e6becfff47f335bb1dc5e
   languageName: node
   linkType: hard
 
@@ -7549,15 +7536,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^5.0.1":
-  version: 5.1.6
-  resolution: "minimatch@npm:5.1.6"
-  dependencies:
-    brace-expansion: "npm:^2.0.1"
-  checksum: 10/126b36485b821daf96d33b5c821dac600cc1ab36c87e7a532594f9b1652b1fa89a1eebcaad4dff17c764dce1a7ac1531327f190fed5f97d8f6e5f889c116c429
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:^9.0.0, minimatch@npm:^9.0.4":
   version: 9.0.4
   resolution: "minimatch@npm:9.0.4"
@@ -8605,16 +8583,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"replace-in-file@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "replace-in-file@npm:7.2.0"
+"replace-in-file@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "replace-in-file@npm:8.0.1"
   dependencies:
-    chalk: "npm:^4.1.2"
-    glob: "npm:^8.1.0"
+    chalk: "npm:^5.3.0"
+    glob: "npm:^10.4.2"
     yargs: "npm:^17.7.2"
   bin:
     replace-in-file: bin/cli.js
-  checksum: 10/9d08fc6c65dc3a06cb386ce00d03ca1acdfade394ca79e349777d2cc4dc346827b589ad6749e42aba602725e462b84d2386a77e22120cd3b8b8d764684f1e8d7
+  checksum: 10/29def93bdb6bd5c3d6bb280214e52f156c2e6c1fd8b16e6813980bc1d90063692708556774c99a1e74eb9d603a16c4f6a8b5913dae655405f9ed3dea5d2135b6
   languageName: node
   linkType: hard
 

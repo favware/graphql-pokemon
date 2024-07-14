@@ -117,9 +117,9 @@
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.2.7",
     "npm-run-all2": "^6.2.2",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "replace-in-file": "^8.1.0",
-    "rimraf": "^5.0.8",
+    "rimraf": "^5.0.9",
     "tsup": "^8.1.0",
     "tsx": "^4.16.2",
     "typescript": "~5.4.5",
@@ -167,6 +167,6 @@
   },
   "packageManager": "yarn@4.3.1",
   "volta": {
-    "node": "20.15.0"
+    "node": "20.15.1"
   }
 }

@@ -75,12 +75,12 @@
     "graphql": "^16.9.0"
   },
   "devDependencies": {
-    "@apollo/server": "^4.10.4",
+    "@apollo/server": "^4.10.5",
     "@as-integrations/koa": "^1.1.1",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@discordjs/collection": "^2.1.0",
-    "@favware/cliff-jumper": "^4.0.2",
+    "@favware/cliff-jumper": "^4.0.3",
     "@graphql-codegen/cli": "^5.0.2",
     "@graphql-codegen/schema-ast": "^4.1.0",
     "@graphql-codegen/typescript": "^4.0.7",
@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.3",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.7.0",
+    "@swc/core": "^1.7.3",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
@@ -103,7 +103,7 @@
     "@types/node": "^20.14.8",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
-    "@vitest/coverage-v8": "^2.0.3",
+    "@vitest/coverage-v8": "^2.0.4",
     "async": "^3.2.5",
     "cheerio": "^1.0.0-rc.12",
     "colorette": "^2.0.20",
@@ -120,10 +120,10 @@
     "prettier": "^3.3.3",
     "replace-in-file": "^8.1.0",
     "rimraf": "^6.0.1",
-    "tsup": "^8.2.1",
+    "tsup": "^8.2.3",
     "tsx": "^4.16.2",
     "typescript": "~5.4.5",
-    "vitest": "^2.0.3"
+    "vitest": "^2.0.4"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",
@@ -167,6 +167,6 @@
   },
   "packageManager": "yarn@4.3.1",
   "volta": {
-    "node": "20.15.1"
+    "node": "20.16.0"
   }
 }

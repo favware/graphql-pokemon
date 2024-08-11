@@ -75,9 +75,9 @@
     "graphql": "^16.9.0"
   },
   "devDependencies": {
-    "@apollo/server": "^4.10.5",
+    "@apollo/server": "^4.11.0",
     "@as-integrations/koa": "^1.1.1",
-    "@commitlint/cli": "^19.3.0",
+    "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@discordjs/collection": "^2.1.0",
     "@favware/cliff-jumper": "^4.0.3",
@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.3",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.7.6",
+    "@swc/core": "^1.7.10",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
@@ -105,7 +105,7 @@
     "@typescript-eslint/parser": "^7.13.1",
     "@vitest/coverage-v8": "^2.0.5",
     "async": "^3.2.5",
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^1.0.0",
     "colorette": "^2.0.20",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
@@ -121,7 +121,7 @@
     "replace-in-file": "^8.1.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.2.4",
-    "tsx": "^4.16.5",
+    "tsx": "^4.17.0",
     "typescript": "~5.4.5",
     "vitest": "^2.0.5"
   },

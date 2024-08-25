@@ -1495,28 +1495,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@favware/cliff-jumper@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "@favware/cliff-jumper@npm:4.0.3"
+"@favware/cliff-jumper@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@favware/cliff-jumper@npm:4.1.0"
   dependencies:
     "@favware/colorette-spinner": "npm:^1.0.1"
     "@octokit/auth-token": "npm:^5.1.1"
     "@octokit/core": "npm:^6.1.2"
     "@octokit/plugin-retry": "npm:^7.1.1"
     "@sapphire/result": "npm:^2.6.6"
-    "@sapphire/utilities": "npm:3.16.2"
+    "@sapphire/utilities": "npm:3.17.0"
     colorette: "npm:^2.0.20"
     commander: "npm:^12.1.0"
     conventional-recommended-bump: "npm:^10.0.0"
-    execa: "npm:^9.3.0"
-    git-cliff: "npm:^2.4.0"
+    execa: "npm:^9.3.1"
+    git-cliff: "npm:^2.5.0"
     js-yaml: "npm:^4.1.0"
     semver: "npm:^7.6.3"
     smol-toml: "npm:^1.3.0"
   bin:
     cj: ./dist/cli.js
     cliff-jumper: ./dist/cli.js
-  checksum: 10/c39b331b8ffee92491ecb17e7d797936f6fbc10fe79cfa789e55bb195858a41e1d0401b8d4b84d027ba29f10fe5d73745c7ca0d7b44e38213d45a9f93005e410
+  checksum: 10/aeaa6ff69ff5fc3302178436b5c61a97f4e31544c0451fe8787fa14f8ab847e30971a108c56437be2a9642ad072030e5b8c1177769bb6781b2a73c4ca9b8895d
   languageName: node
   linkType: hard
 
@@ -1538,7 +1538,7 @@ __metadata:
     "@commitlint/cli": "npm:^19.4.0"
     "@commitlint/config-conventional": "npm:^19.2.2"
     "@discordjs/collection": "npm:^2.1.0"
-    "@favware/cliff-jumper": "npm:^4.0.3"
+    "@favware/cliff-jumper": "npm:^4.1.0"
     "@graphql-codegen/cli": "npm:^5.0.2"
     "@graphql-codegen/schema-ast": "npm:^4.1.0"
     "@graphql-codegen/typescript": "npm:^4.0.7"
@@ -1552,7 +1552,7 @@ __metadata:
     "@sapphire/timestamp": "npm:^1.0.3"
     "@sapphire/ts-config": "npm:^5.0.1"
     "@skyra/jaro-winkler": "npm:^1.1.1"
-    "@swc/core": "npm:^1.7.11"
+    "@swc/core": "npm:^1.7.18"
     "@types/async": "npm:^3.2.24"
     "@types/cheerio": "npm:^0.22.35"
     "@types/koa": "npm:^2.15.0"
@@ -1562,7 +1562,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^7.13.1"
     "@typescript-eslint/parser": "npm:^7.13.1"
     "@vitest/coverage-v8": "npm:^2.0.5"
-    async: "npm:^3.2.5"
+    async: "npm:^3.2.6"
     cheerio: "npm:^1.0.0"
     colorette: "npm:^2.0.20"
     cz-conventional-changelog: "npm:^3.3.0"
@@ -1580,7 +1580,7 @@ __metadata:
     replace-in-file: "npm:^8.1.0"
     rimraf: "npm:^6.0.1"
     tsup: "npm:^8.2.4"
-    tsx: "npm:^4.17.0"
+    tsx: "npm:^4.18.0"
     typescript: "npm:~5.4.5"
     vitest: "npm:^2.0.5"
   languageName: unknown
@@ -2837,10 +2837,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:3.16.2":
-  version: 3.16.2
-  resolution: "@sapphire/utilities@npm:3.16.2"
-  checksum: 10/9801f26cc7c37f1c4d56231d2e3967e7ac072d037dbc11b577d1ecf09fe7c6e4141bd1d1a10490f3c51eeeaf81eac0373502d41366dc68627b490597ea6d1ebe
+"@sapphire/utilities@npm:3.17.0":
+  version: 3.17.0
+  resolution: "@sapphire/utilities@npm:3.17.0"
+  checksum: 10/cfdf604be06e1e4f7fd26f10c198586eef9012001b83dcc8178886d88145334db06e164725aadf5bfb065b39ecdefaa8286c695576e7674b5a3bc9280ce02e0d
   languageName: node
   linkType: hard
 
@@ -2865,90 +2865,90 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-darwin-arm64@npm:1.7.11"
+"@swc/core-darwin-arm64@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-darwin-arm64@npm:1.7.18"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-darwin-x64@npm:1.7.11"
+"@swc/core-darwin-x64@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-darwin-x64@npm:1.7.18"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.7.11"
+"@swc/core-linux-arm-gnueabihf@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.7.18"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.7.11"
+"@swc/core-linux-arm64-gnu@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.7.18"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-linux-arm64-musl@npm:1.7.11"
+"@swc/core-linux-arm64-musl@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-linux-arm64-musl@npm:1.7.18"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-linux-x64-gnu@npm:1.7.11"
+"@swc/core-linux-x64-gnu@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-linux-x64-gnu@npm:1.7.18"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-linux-x64-musl@npm:1.7.11"
+"@swc/core-linux-x64-musl@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-linux-x64-musl@npm:1.7.18"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.7.11"
+"@swc/core-win32-arm64-msvc@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.7.18"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.7.11"
+"@swc/core-win32-ia32-msvc@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.7.18"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core-win32-x64-msvc@npm:1.7.11"
+"@swc/core-win32-x64-msvc@npm:1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core-win32-x64-msvc@npm:1.7.18"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.7.11":
-  version: 1.7.11
-  resolution: "@swc/core@npm:1.7.11"
+"@swc/core@npm:^1.7.18":
+  version: 1.7.18
+  resolution: "@swc/core@npm:1.7.18"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.7.11"
-    "@swc/core-darwin-x64": "npm:1.7.11"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.7.11"
-    "@swc/core-linux-arm64-gnu": "npm:1.7.11"
-    "@swc/core-linux-arm64-musl": "npm:1.7.11"
-    "@swc/core-linux-x64-gnu": "npm:1.7.11"
-    "@swc/core-linux-x64-musl": "npm:1.7.11"
-    "@swc/core-win32-arm64-msvc": "npm:1.7.11"
-    "@swc/core-win32-ia32-msvc": "npm:1.7.11"
-    "@swc/core-win32-x64-msvc": "npm:1.7.11"
+    "@swc/core-darwin-arm64": "npm:1.7.18"
+    "@swc/core-darwin-x64": "npm:1.7.18"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.7.18"
+    "@swc/core-linux-arm64-gnu": "npm:1.7.18"
+    "@swc/core-linux-arm64-musl": "npm:1.7.18"
+    "@swc/core-linux-x64-gnu": "npm:1.7.18"
+    "@swc/core-linux-x64-musl": "npm:1.7.18"
+    "@swc/core-win32-arm64-msvc": "npm:1.7.18"
+    "@swc/core-win32-ia32-msvc": "npm:1.7.18"
+    "@swc/core-win32-x64-msvc": "npm:1.7.18"
     "@swc/counter": "npm:^0.1.3"
     "@swc/types": "npm:^0.1.12"
   peerDependencies:
@@ -2977,7 +2977,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10/5ffb3333b4cb76366095cbd0ffd84bdcb8e2ff338ebeb203ae1af007cff95ca24741347da378ea2030ae7ef52fb5dc19a9b317c92cbc8c412d526f07a4a470c6
+  checksum: 10/e41e9ef2ec66c8121d3b30b60fe5d2a75117cd6aabbb6a7e8ca872a284dc0dd4c3a6db1e9ac426135d307cd8f9f2a9fa1ae6f82a0c5d6785f82526b802b7421e
   languageName: node
   linkType: hard
 
@@ -3763,10 +3763,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^3.2.5":
-  version: 3.2.5
-  resolution: "async@npm:3.2.5"
-  checksum: 10/323c3615c3f0ab1ac25a6f953296bc0ac3213d5e0f1c0debdb12964e55963af288d570293c11e44f7967af58c06d2a88d0ea588c86ec0fbf62fa98037f604a0f
+"async@npm:^3.2.6":
+  version: 3.2.6
+  resolution: "async@npm:3.2.6"
+  checksum: 10/cb6e0561a3c01c4b56a799cc8bab6ea5fef45f069ab32500b6e19508db270ef2dffa55e5aed5865c5526e9907b1f8be61b27530823b411ffafb5e1538c86c368
   languageName: node
   linkType: hard
 
@@ -5519,15 +5519,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^9.3.0":
-  version: 9.3.0
-  resolution: "execa@npm:9.3.0"
+"execa@npm:^9.3.1":
+  version: 9.3.1
+  resolution: "execa@npm:9.3.1"
   dependencies:
     "@sindresorhus/merge-streams": "npm:^4.0.0"
     cross-spawn: "npm:^7.0.3"
     figures: "npm:^6.1.0"
     get-stream: "npm:^9.0.0"
-    human-signals: "npm:^7.0.0"
+    human-signals: "npm:^8.0.0"
     is-plain-obj: "npm:^4.1.0"
     is-stream: "npm:^4.0.1"
     npm-run-path: "npm:^5.2.0"
@@ -5535,7 +5535,7 @@ __metadata:
     signal-exit: "npm:^4.1.0"
     strip-final-newline: "npm:^4.0.0"
     yoctocolors: "npm:^2.0.0"
-  checksum: 10/07cf570a8482b124971e7a01ba047a3d3f80c7ebf7a6c937a65d9cd593f6487b419ba9e7cf4388464e4a605ea4849d4c266d57465bb0496d8fa9275a063ce842
+  checksum: 10/ec4a5aec9660cd990cb6f850159945a25f50ab24e1dc5333700299ed874d8a0e7306c6a870121f0eb83662562c49d5009abf01ae5c1d81d425290c5ca49c0f4f
   languageName: node
   linkType: hard
 
@@ -6075,59 +6075,59 @@ __metadata:
   languageName: node
   linkType: hard
 
-"git-cliff-darwin-arm64@npm:2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff-darwin-arm64@npm:2.4.0"
+"git-cliff-darwin-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff-darwin-arm64@npm:2.5.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"git-cliff-darwin-x64@npm:2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff-darwin-x64@npm:2.4.0"
+"git-cliff-darwin-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff-darwin-x64@npm:2.5.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"git-cliff-linux-arm64@npm:2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff-linux-arm64@npm:2.4.0"
+"git-cliff-linux-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff-linux-arm64@npm:2.5.0"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"git-cliff-linux-x64@npm:2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff-linux-x64@npm:2.4.0"
+"git-cliff-linux-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff-linux-x64@npm:2.5.0"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"git-cliff-windows-arm64@npm:2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff-windows-arm64@npm:2.4.0"
+"git-cliff-windows-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff-windows-arm64@npm:2.5.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"git-cliff-windows-x64@npm:2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff-windows-x64@npm:2.4.0"
+"git-cliff-windows-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff-windows-x64@npm:2.5.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"git-cliff@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "git-cliff@npm:2.4.0"
+"git-cliff@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "git-cliff@npm:2.5.0"
   dependencies:
     execa: "npm:^8.0.1"
-    git-cliff-darwin-arm64: "npm:2.4.0"
-    git-cliff-darwin-x64: "npm:2.4.0"
-    git-cliff-linux-arm64: "npm:2.4.0"
-    git-cliff-linux-x64: "npm:2.4.0"
-    git-cliff-windows-arm64: "npm:2.4.0"
-    git-cliff-windows-x64: "npm:2.4.0"
+    git-cliff-darwin-arm64: "npm:2.5.0"
+    git-cliff-darwin-x64: "npm:2.5.0"
+    git-cliff-linux-arm64: "npm:2.5.0"
+    git-cliff-linux-x64: "npm:2.5.0"
+    git-cliff-windows-arm64: "npm:2.5.0"
+    git-cliff-windows-x64: "npm:2.5.0"
   dependenciesMeta:
     git-cliff-darwin-arm64:
       optional: true
@@ -6143,7 +6143,7 @@ __metadata:
       optional: true
   bin:
     git-cliff: lib/cli/cli.js
-  checksum: 10/74f7f46766a7f81bf7930c72b2f0079e2832581082290ff46db00df1711c2c09d26e06a0c290dc6cd326f88f860791e7b0c521de607fac7d0d0cdb83ca8f3a88
+  checksum: 10/98dcbacb1cfcd2b7ed4add2ae1096ddcdd8360fc82a62c32e9ad441909da00d3319437d10d344b296797de9610a17627e27739a7c10d1a20f3afcec4b6100b99
   languageName: node
   linkType: hard
 
@@ -6551,10 +6551,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"human-signals@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "human-signals@npm:7.0.0"
-  checksum: 10/f1356547f6553a90530527ba2325c2281e33fa3b9b372a647e377fd8f24e9eb8119082051ca6a9f8821e24f1faa13cd462c849a9476c86e7c190dbf0aa2ee8a4
+"human-signals@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "human-signals@npm:8.0.0"
+  checksum: 10/89acdc7081ac2a065e41cca7351c4b0fe2382e213b7372f90df6a554e340f31b49388a307adc1d6f4c60b2b4fe81eeff0bc1f44be6f5d844311cd92ccc7831c6
   languageName: node
   linkType: hard
 
@@ -9842,9 +9842,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:^4.17.0":
-  version: 4.17.0
-  resolution: "tsx@npm:4.17.0"
+"tsx@npm:^4.18.0":
+  version: 4.18.0
+  resolution: "tsx@npm:4.18.0"
   dependencies:
     esbuild: "npm:~0.23.0"
     fsevents: "npm:~2.3.3"
@@ -9854,7 +9854,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10/192dda2794c1e28b8e57cd5296953f49b2a4bca143a6ac427f30a244f9d2fb0aca6ea8f1d7c8d50ddf87cecc78d482ac68fc2d3f21bbcaaa0e84ef1f2dce0c79
+  checksum: 10/b292e48accbb42bc8e5f3c33fdd74b49177009e42a66999b091e0769b2ec5837f948187a5059c93057c11c4d7e8a238f824d91fc7bc4f2751cd5ecf9b07742ac
   languageName: node
   linkType: hard
 

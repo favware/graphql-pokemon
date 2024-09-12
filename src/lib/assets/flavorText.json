@@ -59742,7 +59742,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "It lures Pokémon with its pattern that looks just like a Poké Ball then releases poison spores."
+      "flavor_text": "It lures Pokémon with its pattern that looks just like a Poké Ball, then releases poison spores."
     },
     {
       "version_id": "Omega Ruby",
@@ -59750,7 +59750,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "It lures Pokémon with its pattern that looks just like a Poké Ball then releases poison spores."
+      "flavor_text": "It lures Pokémon with its pattern that looks just like a Poké Ball, then releases poison spores."
     },
     {
       "version_id": "Sword",
@@ -60936,7 +60936,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148° F."
+      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148 degrees Fahrenheit."
     },
     {
       "version_id": "Omega Ruby",
@@ -60944,7 +60944,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148° F."
+      "flavor_text": "They are composed of ice crystals. They capture prey with chains of ice, freezing the prey at -148 degrees Fahrenheit."
     },
     {
       "version_id": "Sword",
@@ -61166,7 +61166,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "It wields the fur on its arm like a whip. Its arm attacks come with such rapidity that they cannot even be seen."
+      "flavor_text": "It wields the fur on its arms like a whip. Its arm attacks come with such rapidity that they cannot even be seen."
     },
     {
       "version_id": "Y",
@@ -61174,7 +61174,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "It wields the fur on its arm like a whip. Its arm attacks come with such rapidity that they cannot even be seen."
+      "flavor_text": "It wields the fur on its arms like a whip. Its arm attacks come with such rapidity that they cannot even be seen."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -61738,7 +61738,7 @@
   "630": [
     {
       "version_id": "Black",
-      "flavor_text": "It makes a nest out of the bones it finds. It grabs weakened prey in its talons and hauls it to its nest of bones."
+      "flavor_text": "It makes a nest out of bones it finds. It grabs weakened prey in its talons and hauls it to its nest of bones."
     },
     {
       "version_id": "White",
@@ -61850,7 +61850,7 @@
     },
     {
       "version_id": "White",
-      "flavor_text": "Durant dig nests in mountains. They build their complicated, interconnected tunnels in mazes."
+      "flavor_text": "Durant dig nests in mountains. They build their complicated, interconnected tunnels into mazes."
     },
     {
       "version_id": "Black 2",
@@ -62764,7 +62764,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "Using psychic power, it generates a fiery vortex of 5,400 degree Fahrenheit, incinerating foes swept into this whirl of flame."
+      "flavor_text": "Using psychic power, it generates a fiery vortex of 5,400 degrees Fahrenheit, incinerating foes swept into this whirl of flame."
     },
     {
       "version_id": "Omega Ruby",
@@ -62772,7 +62772,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "Using psychic power, it generates a fiery vortex of 5,400 degree Fahrenheit, incinerating foes swept into this whirl of flame."
+      "flavor_text": "Using psychic power, it generates a fiery vortex of 5,400 degrees Fahrenheit, incinerating foes swept into this whirl of flame."
     },
     {
       "version_id": "Scarlet",
@@ -63096,7 +63096,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "The beaks of birds can't begin to scratch its stalwart body. To defend itself, it spews powder."
+      "flavor_text": "The beaks of bird Pokémon can't begin to scratch its stalwart body. To defend itself, it spews powder."
     },
     {
       "version_id": "Omega Ruby",
@@ -63104,7 +63104,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "The beaks of birds can't begin to scratch its stalwart body. To defend itself, it spews powder."
+      "flavor_text": "The beaks of bird Pokémon can't begin to scratch its stalwart body. To defend itself, it spews powder."
     },
     {
       "version_id": "Scarlet",
@@ -63246,7 +63246,7 @@
   "670": [
     {
       "version_id": "X",
-      "flavor_text": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the power of flowers to battle."
+      "flavor_text": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle."
     },
     {
       "version_id": "Y",
@@ -63254,7 +63254,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the power of flowers to battle."
+      "flavor_text": "It flutters around fields of flowers and cares for flowers that are starting to wilt. It draws out the hidden power of flowers to battle."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -63340,7 +63340,7 @@
   "673": [
     {
       "version_id": "X",
-      "flavor_text": "It can tell how its trainer is feeling by subtle shifts in the grip on its horns. This empathetic sense lets them run as if one being."
+      "flavor_text": "It can tell how its Trainer is feeling by subtle shifts in the grip on its horns. This empathic sense lets them run as if one being."
     },
     {
       "version_id": "Y",
@@ -63348,7 +63348,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "It can tell how its trainer is feeling by subtle shifts in the grip on its horns. This empathetic sense lets them run as if one being."
+      "flavor_text": "It can tell how its Trainer is feeling by subtle shifts in the grip on its horns. This empathic sense lets them run as if one being."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -63772,7 +63772,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "It lures prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids."
+      "flavor_text": "It lures its prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids."
     },
     {
       "version_id": "Omega Ruby",
@@ -63950,7 +63950,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "Through controlled expulsions of internal gas, it can expel water like a pistol shot. At close distances, it can shatter rock."
+      "flavor_text": "Through controlled explosions of internal gas, it can expel water like a pistol shot. At close distances, it can shatter rock."
     },
     {
       "version_id": "Omega Ruby",
@@ -64356,7 +64356,7 @@
   "703": [
     {
       "version_id": "X",
-      "flavor_text": "Born from temperatures and pressures deep underground, it fires beams from the stone in its head."
+      "flavor_text": "Born from the temperatures and pressures deep underground, it fires beams from the stone in its head."
     },
     {
       "version_id": "Y",
@@ -64364,7 +64364,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "Born from temperatures and pressures deep underground, it fires beams from the stone in its head."
+      "flavor_text": "Born from the temperatures and pressures deep underground, it fires beams from the stone in its head."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -64812,7 +64812,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "The way several Bergmite huddle on its back make it look like an aircraft carrier made of ice."
+      "flavor_text": "The way several Bergmite huddle on its back makes it look like an aircraft carrier made of ice."
     },
     {
       "version_id": "Omega Ruby",
@@ -64820,7 +64820,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "The way several Bergmite huddle on its back make it look like an aircraft carrier made of ice."
+      "flavor_text": "The way several Bergmite huddle on its back makes it look like an aircraft carrier made of ice."
     },
     {
       "version_id": "Sword",
@@ -64846,7 +64846,7 @@
   "714": [
     {
       "version_id": "X",
-      "flavor_text": "They live in pitch black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz."
+      "flavor_text": "They live in pitch-black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz."
     },
     {
       "version_id": "Y",
@@ -64854,7 +64854,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "They live in pitch black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz."
+      "flavor_text": "They live in pitch-black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -64934,7 +64934,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "When the horns on its head shine in seven different colors, it is said to be sharing everlasting life."
+      "flavor_text": "When the horns on its head shine in seven colors, it is said to be sharing everlasting life."
     },
     {
       "version_id": "Omega Ruby",
@@ -65030,7 +65030,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "It is said to be able to seize anything it desires with its six rings and six huge arms. With its powers sealed, it is transformed into a much smaller form."
+      "flavor_text": "It is said to be able to seize anything it desires with its six rings and six huge arms. With its power sealed, it is transformed into a much smaller form."
     }
   ],
   "721": [

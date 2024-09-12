@@ -51,9 +51,11 @@ for (const [key, data] of currentItems.entries()) {
   }
 
   if (itemFromText) {
-    data.desc = replacePokeWithAccentedPoke(itemFromText.desc);
     if (itemFromText.shortDesc) {
       data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
+    }
+    if (itemFromText.desc) {
+      data.desc = replacePokeWithAccentedPoke(itemFromText.desc);
     }
   }
 

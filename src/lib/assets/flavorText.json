@@ -66664,11 +66664,11 @@
   "773": [
     {
       "version_id": "Sun",
-      "flavor_text": "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle."
+      "flavor_text": "Its trust in its partner is what awakens it. This {{OBP|Pokémon|species}} is capable of changing its [[type]], a flexibility that is well displayed in battle."
     },
     {
       "version_id": "Moon",
-      "flavor_text": "Although its name was Type: Null at first, the boy who evolved it into this form gave it the name by which it is now known."
+      "flavor_text": "Although its name was {{p|Type: Null}} at first, the [[Gladion|boy]] who [[Evolution|evolved]] it into this form gave it the name by which it is now known."
     },
     {
       "version_id": "Ultra Sun",
@@ -66676,7 +66676,7 @@
     },
     {
       "version_id": "Ultra Moon",
-      "flavor_text": "Through the bond it formed with its Trainer, its will was strengthened, and it was able to destroy its control mask."
+      "flavor_text": "Through the bond it formed with its [[Pokémon Trainer|Trainer]], its will was strengthened, and it was able to destroy its control mask."
     },
     {
       "version_id": "Sword",

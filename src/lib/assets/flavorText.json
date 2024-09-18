@@ -51054,7 +51054,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot into its nest."
+      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot in its nest."
     },
     {
       "version_id": "HeartGold",
@@ -51066,19 +51066,19 @@
     },
     {
       "version_id": "Black",
-      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot into its nest."
+      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot in its nest."
     },
     {
       "version_id": "White",
-      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot into its nest."
+      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot in its nest."
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot into its nest."
+      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot in its nest."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot into its nest."
+      "flavor_text": "It loves sparkly things. It seeks treasures in caves and hoards the loot in its nest."
     },
     {
       "version_id": "X",
@@ -51344,7 +51344,7 @@
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "Its body is little yet powerful. It can crest three mountains and cross two canyons in one night."
+      "flavor_text": "Its body is lithe yet powerful. It can crest three mountains and cross two canyons in one night."
     },
     {
       "version_id": "Platinum",
@@ -51438,11 +51438,11 @@
   "448": [
     {
       "version_id": "Diamond",
-      "flavor_text": "It has the ability to sense the Auras of all things. It understands human speech."
+      "flavor_text": "It has the ability to sense the auras of all things. It understands human speech."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "By catching the Aura emanating from others, it can read their thoughts and movements."
+      "flavor_text": "By catching the aura emanating from others, it can read their thoughts and movements."
     },
     {
       "version_id": "Platinum",
@@ -51450,11 +51450,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "It's said that no foe can remain invisible to Lucario, since it can detect Auras. Even foes it could not otherwise see."
+      "flavor_text": "It's said that no foe can remain invisible to , since it can detect auras. Even foes it could not otherwise see."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "It's said that no foe can remain invisible to Lucario, since it can detect Auras. Even foes it could not otherwise see."
+      "flavor_text": "It's said that no foe can remain invisible to , since it can detect auras. Even foes it could not otherwise see."
     },
     {
       "version_id": "Black",
@@ -51466,15 +51466,15 @@
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "By reading the aura of all things, it can tell how others are feeling from over half a mile away."
+      "flavor_text": "By reading the auras of all things, it can tell how others are feeling from over half a mile away."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "By reading the aura of all things, it can tell how others are feeling from over half a mile away."
+      "flavor_text": "By reading the auras of all things, it can tell how others are feeling from over half a mile away."
     },
     {
       "version_id": "X",
-      "flavor_text": "By catching the Aura emanating from others, it can read their thoughts and movements."
+      "flavor_text": "By catching the aura emanating from others, it can read their thoughts and movements."
     },
     {
       "version_id": "Y",
@@ -51486,7 +51486,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "By reading the auras of all things it can tell how others are feeling from over half a mile away."
+      "flavor_text": "By reading the auras of all things, it can tell how others are feeling from over half a mile away."
     },
     {
       "version_id": "Sun",
@@ -51544,7 +51544,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "It shuts its nostrils tight then travels through the sand as if walking. They form colonies of around ten."
+      "flavor_text": "It shuts its nostrils tight then travels through sand as if walking. They form colonies of around ten."
     },
     {
       "version_id": "HeartGold",
@@ -51556,11 +51556,11 @@
     },
     {
       "version_id": "Black",
-      "flavor_text": "It shuts its nostrils tight then travels through the sand as if walking. They form colonies of around ten."
+      "flavor_text": "It shuts its nostrils tight then travels through sand as if walking. They form colonies of around ten."
     },
     {
       "version_id": "White",
-      "flavor_text": "It shuts its nostrils tight then travels through the sand as if walking. They form colonies of around ten."
+      "flavor_text": "It shuts its nostrils tight then travels through sand as if walking. They form colonies of around ten."
     },
     {
       "version_id": "Black 2",
@@ -51626,7 +51626,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "Surprisingly quick to anger. It holds its mouth agape as a display of strength."
+      "flavor_text": "It is surprisingly quick to anger. It holds its mouth agape as a display of its strength."
     },
     {
       "version_id": "HeartGold",
@@ -51638,11 +51638,11 @@
     },
     {
       "version_id": "Black",
-      "flavor_text": "Surprisingly quick to anger. It holds its mouth agape as a display of strength."
+      "flavor_text": "It is surprisingly quick to anger. It holds its mouth agape as a display of its strength."
     },
     {
       "version_id": "White",
-      "flavor_text": "Surprisingly quick to anger. It holds its mouth agape as a display of strength."
+      "flavor_text": "It is surprisingly quick to anger. It holds its mouth agape as a display of its strength."
     },
     {
       "version_id": "Black 2",
@@ -51810,7 +51810,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "It takes great pride in its strength. Even though it can tear foes apart, it finishes them off with powerful poison."
+      "flavor_text": "It takes pride in its strength. Even though it can tear foes apart, it finishes them off with powerful poison."
     },
     {
       "version_id": "Y",
@@ -51818,7 +51818,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "It takes great pride in its strength. Even though it can tear foes apart, it finishes them off with powerful poison."
+      "flavor_text": "It takes pride in its strength. Even though it can tear foes apart, it finishes them off with powerful poison."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -51860,11 +51860,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Fluid squeezed from its finger, albeit poisonous, is a significant ingredient in remedies for lower-back pain."
+      "flavor_text": "Fluid squeezed from its finger, albeit poisonous, is a significant ingredient in remedies for lower-back{{sup/4|HG}}/lower back{{sup/4|SS}} pain."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Fluid squeezed from its finger, albeit poisonous, is a significant ingredient in remedies for lower-back pain."
+      "flavor_text": "Fluid squeezed from its finger, albeit poisonous, is a significant ingredient in remedies for lower-back{{sup/4|HG}}/lower back{{sup/4|SS}} pain."
     },
     {
       "version_id": "Black",
@@ -51938,7 +51938,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "It has a poison sac at its throat. When it croaks, the stored poison is churned for more potency."
+      "flavor_text": "It has a poison sac at its throat. When it croaks, the stored poison is churned for greater potency."
     },
     {
       "version_id": "HeartGold",
@@ -51950,11 +51950,11 @@
     },
     {
       "version_id": "Black",
-      "flavor_text": "It has a poison sac at its throat. When it croaks, the stored poison is churned for more potency."
+      "flavor_text": "It has a poison sac at its throat. When it croaks, the stored poison is churned for greater potency."
     },
     {
       "version_id": "White",
-      "flavor_text": "It has a poison sac at its throat. When it croaks, the stored poison is churned for more potency."
+      "flavor_text": "It has a poison sac at its throat. When it croaks, the stored poison is churned for greater potency."
     },
     {
       "version_id": "Black 2",
@@ -52082,7 +52082,7 @@
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "The way its two tail fins flutter while it swims has earned it the nickname \"Beautifly of the Sea.\""
+      "flavor_text": "The way its two tail fins flutter while it swims has earned it the nickname \" of the Sea.\""
     },
     {
       "version_id": "Platinum",
@@ -52090,11 +52090,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Swimming and fluttering its two tail fins, it looks like a Beautifly. At night, the patterns on its tail fins softly shine."
+      "flavor_text": "Swimming and fluttering its two tail fins, it looks like a . At night, the patterns on its tail fins softly shine."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Swimming and fluttering its two tail fins, it looks like a Beautifly. At night, the patterns on its tail fins softly shine."
+      "flavor_text": "Swimming and fluttering its two tail fins, it looks like a . At night, the patterns on its tail fins softly shine."
     },
     {
       "version_id": "Black",
@@ -52176,15 +52176,15 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "It crawls along the seafloor using its long front fins like legs. It competes for food with Lanturn."
+      "flavor_text": "It crawls along the seafloor using its long front fins like legs. It competes for food with ."
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Lumineon swimming in the darkness of the deep sea look like stars shining in the night sky."
+      "flavor_text": " swimming in the darkness of the deep sea look like stars shining in the night sky."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Lumineon swimming in the darkness of the deep sea look like stars shining in the night sky."
+      "flavor_text": " swimming in the darkness of the deep sea look like stars shining in the night sky."
     },
     {
       "version_id": "Black",
@@ -52266,7 +52266,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "People organize tours to see this Pokémon frolic and skim the tops of the waves with Remoraid."
+      "flavor_text": "People organize tours to see this Pokémon frolic and skim the tops of waves with ."
     },
     {
       "version_id": "HeartGold",
@@ -52610,15 +52610,15 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "A group tried to use scientific means to make Magnezone evolve, but their efforts ended in failure."
+      "flavor_text": "A group tried to use scientific means to make  evolve, but their efforts ended in failure."
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Exposure to a special magnetic field changed Magneton's molecular structure, turning it into Magnezone."
+      "flavor_text": "Exposure to a special magnetic field changed 's molecular structure, turning it into <sc>Magnezone</sc>."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Exposure to a special magnetic field changed Magneton's molecular structure, turning it into Magnezone."
+      "flavor_text": "Exposure to a special magnetic field changed 's molecular structure, turning it into <sc>Magnezone</sc>."
     },
     {
       "version_id": "Black",
@@ -52782,23 +52782,23 @@
   "464": [
     {
       "version_id": "Diamond",
-      "flavor_text": "It puts rocks in holes in its palms and uses its muscles to shoot them. Geodude are shot at rare times."
+      "flavor_text": "It puts rocks in holes in its palms and uses its muscles to shoot them.  are shot at rare times."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "It puts rocks in holes in its palms and uses its muscles to shoot them. Geodude are shot at rare times."
+      "flavor_text": "It puts rocks in holes in its palms and uses its muscles to shoot them.  are shot at rare times."
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "It can launch a rock held in its hand like a missile by tightening then expanding its muscles instantly."
+      "flavor_text": "It can launch a rock held in its hand like a missile by tightening then expanding muscles instantly."
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "From holes in its palms, it fires out Geodude. Its carapace can withstand volcanic eruptions."
+      "flavor_text": "From holes in its palms, it fires out . Its carapace can withstand volcanic eruptions."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "From holes in its palms, it fires out Geodude. Its carapace can withstand volcanic eruptions."
+      "flavor_text": "From holes in its palms, it fires out . Its carapace can withstand volcanic eruptions."
     },
     {
       "version_id": "Black",
@@ -53208,11 +53208,11 @@
   "469": [
     {
       "version_id": "Diamond",
-      "flavor_text": "By churning its wings, it creates shock waves that inflict critical internal injuries on foes."
+      "flavor_text": "By churning its wings, it creates shock waves that inflict critical internal injuries to foes."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "By churning its wings, it creates shock waves that inflict critical internal injuries on foes."
+      "flavor_text": "By churning its wings, it creates shock waves that inflict critical internal injuries to foes."
     },
     {
       "version_id": "Platinum",
@@ -53294,11 +53294,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "When you see Leafeon asleep in a patch of sunshine, you'll know it is using photosynthesis to produce clean air."
+      "flavor_text": "When you see  asleep in a patch of sunshine, you'll know it is using photosynthesis to produce clean air."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "When you see Leafeon asleep in a patch of sunshine, you'll know it is using photosynthesis to produce clean air."
+      "flavor_text": "When you see  asleep in a patch of sunshine, you'll know it is using photosynthesis to produce clean air."
     },
     {
       "version_id": "Black",
@@ -53564,7 +53564,7 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "A frozen Mamoswine was dug from ice dating back 10,000 years. This Pokémon has been around a long, long, long time."
+      "flavor_text": "A frozen  was dug from ice dating back 10,000 years. This Pokémon has been around a long, long, long time."
     },
     {
       "version_id": "SoulSilver",
@@ -53740,7 +53740,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "When protecting someone, it extends its elbows as if they were swords and fights savagely."
+      "flavor_text": "When trying to protect someone, it extends its elbows as if they were swords and fights savagely."
     },
     {
       "version_id": "HeartGold",
@@ -53752,11 +53752,11 @@
     },
     {
       "version_id": "Black",
-      "flavor_text": "When protecting someone, it extends its elbows as if they were swords and fights savagely."
+      "flavor_text": "When trying to protect someone, it extends its elbows as if they were swords and fights savagely."
     },
     {
       "version_id": "White",
-      "flavor_text": "When protecting someone, it extends its elbows as if they were swords and fights savagely."
+      "flavor_text": "When trying to protect someone, it extends its elbows as if they were swords and fights savagely."
     },
     {
       "version_id": "Black 2",
@@ -53998,11 +53998,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Legends in snowy regions say that a woman who was lost on an icy mountain was reborn as Froslass."
+      "flavor_text": "Legends in snowy regions say that a woman who was lost on an icy mountain was reborn as .{{sup/4|HG}}/<sc>Froslass</sc>{{sup/4|SS}}"
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Legends in snowy regions say that a woman who was lost on an icy mountain was reborn as Froslass."
+      "flavor_text": "Legends in snowy regions say that a woman who was lost on an icy mountain was reborn as .{{sup/4|HG}}/<sc>Froslass</sc>{{sup/4|SS}}"
     },
     {
       "version_id": "Black",
@@ -54174,7 +54174,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "When Uxie flew, people gained the ability to solve problems. It was the birth of knowledge."
+      "flavor_text": "When  flew, people gained the ability to solve problems. It was the birth of knowledge."
     },
     {
       "version_id": "HeartGold",
@@ -54236,11 +54236,11 @@
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "Although it slumbers at the bottom of the lake, its spirit is said to leave its body and flitter on the water surface."
+      "flavor_text": "It sleeps at the bottom of a lake. Its spirit is said to leave its body to fly on the lake's surface."
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "When Mesprit flew, people learned the joy and sadness of living. It was the birth of emotions."
+      "flavor_text": "When  flew, people learned the joy and sadness of living. It was the birth of emotions."
     },
     {
       "version_id": "HeartGold",
@@ -54302,11 +54302,11 @@
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "It is thought that Uxie, Mesprit and Azelf all came from the same egg."
+      "flavor_text": "It is thought that , <sc>Mesprit</sc> and <sc>Azelf</sc> all came from the same egg."
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "When Azelf flew, people gained the determination to do things. It was the birth of willpower."
+      "flavor_text": "When  flew, people gained the determination to do things. It was the birth of willpower."
     },
     {
       "version_id": "HeartGold",
@@ -54338,7 +54338,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "It is thought that Uxie, Mesprit and Azelf all came from the same egg."
+      "flavor_text": "It is thought that Uxie, Mesprit, and Azelf all came from the same egg."
     },
     {
       "version_id": "Omega Ruby",
@@ -54364,23 +54364,23 @@
   "483": [
     {
       "version_id": "Diamond",
-      "flavor_text": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity."
+      "flavor_text": "It has the power to control time. It appears in [[Sinnoh]]-region [[Sinnoh myths|myths]] as an ancient deity."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "A Pokémon spoken of in legend. It is said that time began moving when Dialga was born."
+      "flavor_text": "A {{OBP|Pokémon|species}} spoken of in legend. It is said that time began moving when  was born."
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that time flows when Dialga's heart beats."
+      "flavor_text": "A [[legendary Pokémon]] of Sinnoh. It is said that time flows when 's heart beats."
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "This Pokémon completely controls the flow of time. It uses its power to travel at will through the past and future."
+      "flavor_text": "This Pokémon completely controls the flow of time. It uses its power to [[Time travel|travel at will through the past and future]]."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "This Pokémon completely controls the flow of time. It uses its power to travel at will through the past and future."
+      "flavor_text": "This Pokémon completely controls the flow of time. It uses its power to [[Time travel|travel at will through the past and future]]."
     },
     {
       "version_id": "Black",
@@ -54430,15 +54430,15 @@
   "484": [
     {
       "version_id": "Diamond",
-      "flavor_text": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
+      "flavor_text": "It has the ability to distort space. It is described as a deity in [[Sinnoh]]-region [[Sinnoh myths|mythology]]."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "It is said to live in a gap in the spatial dimension parallel to ours. It appears in mythology."
+      "flavor_text": "It is said to live in a gap in the [[Dimension#Palkia's world|spatial dimension]] parallel to ours. It appears in mythology."
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "A legendary Pokémon of Sinnoh. It is said that space becomes more stable with Palkia's every breath."
+      "flavor_text": "A [[legendary Pokémon]] of Sinnoh. It is said that space becomes more stable with 's every breath."
     },
     {
       "version_id": "HeartGold",
@@ -54574,11 +54574,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "It is believed to have shaped Regirock, Regice, and Registeel out of clay, ice, and magma."
+      "flavor_text": "It is believed to have shaped , <sc>Regice</sc>, and <sc>Registeel</sc> out of clay, ice, and magma."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "It is believed to have shaped Regirock, Regice, and Registeel out of clay, ice, and magma."
+      "flavor_text": "It is believed to have shaped , <sc>Regice</sc>, and <sc>Registeel</sc> out of clay, ice, and magma."
     },
     {
       "version_id": "Black",
@@ -54636,11 +54636,11 @@
   "487": [
     {
       "version_id": "Diamond",
-      "flavor_text": "A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery."
+      "flavor_text": "A {{OBP|Pokémon|species}} that is said to live in a [[Distortion World|world]] on the reverse side of [[Pokémon world|ours]]. It appears in an ancient cemetery."
     },
     {
       "version_id": "Pearl",
-      "flavor_text": "A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery."
+      "flavor_text": "A {{OBP|Pokémon|species}} that is said to live in a [[Distortion World|world]] on the reverse side of [[Pokémon world|ours]]. It appears in an ancient cemetery."
     },
     {
       "version_id": "Platinum",
@@ -54714,11 +54714,11 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Those who sleep holding Cresselia's feather are assured of joyful dreams. It is said to represent the crescent moon."
+      "flavor_text": "Those who sleep holding 's feather are assured of joyful dreams. It is said to represent the crescent moon."
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": "Those who sleep holding Cresselia's feather are assured of joyful dreams. It is said to represent the crescent moon."
+      "flavor_text": "Those who sleep holding 's feather are assured of joyful dreams. It is said to represent the crescent moon."
     },
     {
       "version_id": "Black",
@@ -55388,7 +55388,7 @@
     },
     {
       "version_id": "White",
-      "flavor_text": "The scalchop on its stomach is made from the same element as claws. It detaches the scalchop for use as a blade."
+      "flavor_text": "The scalchop on its stomach is made from the same elements as claws. It detaches the scalchop for use as a blade."
     },
     {
       "version_id": "Black 2",
@@ -55916,11 +55916,11 @@
   "513": [
     {
       "version_id": "Black",
-      "flavor_text": "When it is angered, the temperature of its head tuft reaches 600°F. It uses its tuft to roast berries."
+      "flavor_text": "When it is angered, the temperature of its head tuft reaches 600° F. It uses its tuft to roast berries."
     },
     {
       "version_id": "White",
-      "flavor_text": "This Pokémon lives in caves in volcanoes. The fire within the tuft on its head can reach 600°F."
+      "flavor_text": "This Pokémon lives in caves in volcanoes. The fire within the tuft on its head can reach 600° F."
     },
     {
       "version_id": "Black 2",
@@ -56562,7 +56562,7 @@
   "528": [
     {
       "version_id": "Black",
-      "flavor_text": "It emits sound waves of various frequencies from its nose including some powerful enough to destroy rocks."
+      "flavor_text": "It emits sound waves of various frequencies from its nose, including some powerful enough to destroy rocks."
     },
     {
       "version_id": "White",
@@ -56708,7 +56708,7 @@
     },
     {
       "version_id": "White",
-      "flavor_text": "Its auditory sense is astounding. It has a radar-like ability to understand its surrounding through slight sounds."
+      "flavor_text": "Its auditory sense is astounding. It has a radarlike ability to understand its surroundings through slight sounds."
     },
     {
       "version_id": "Black 2",
@@ -57576,7 +57576,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "The fragrance of the garland on its head has a relaxing effect. It withers if a trainer does not take good care of it."
+      "flavor_text": "The fragrance of the garland on its head has a relaxing effect. It withers if a Trainer does not take good care of it."
     },
     {
       "version_id": "Y",
@@ -57584,7 +57584,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "The fragrance of the garland on its head has a relaxing effect. It withers if a trainer does not take good care of it."
+      "flavor_text": "The fragrance of the garland on its head has a relaxing effect. It withers if a Trainer does not take good care of it."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -57762,7 +57762,7 @@
     },
     {
       "version_id": "White",
-      "flavor_text": "The special membrane covering its eyes can sense the heat of objects, so it can see its surroundings, even in darkness."
+      "flavor_text": "The special membrane covering its eyes can sense the heat of objects, so it can see its surroundings even in darkness."
     },
     {
       "version_id": "Black 2",
@@ -57898,11 +57898,11 @@
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100°F."
+      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100° F."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100°F."
+      "flavor_text": "When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100° F."
     },
     {
       "version_id": "X",
@@ -58158,7 +58158,7 @@
   "560": [
     {
       "version_id": "Black",
-      "flavor_text": "Groups of them beat up anything that enter their territory. Each can spit acidic liquid from its mouth."
+      "flavor_text": "Groups of them beat up anything that enters their territory. Each can spit acidic liquid from its mouth."
     },
     {
       "version_id": "White",
@@ -58424,7 +58424,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "They can live in the ocean and on land. A slap from one of them is enough to open a hole in the bottom of a tanker."
+      "flavor_text": "They can live both in the ocean and on land. A slap from one of them is enough to open a hole in the bottom of a tanker."
     },
     {
       "version_id": "Y",
@@ -58714,7 +58714,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "It changes so it looks like its foe, tricks it, and then uses that opportunity to flee."
+      "flavor_text": "It changes so it looks just like its foe, tricks it, and then uses that opportunity to flee."
     },
     {
       "version_id": "Y",
@@ -58722,7 +58722,7 @@
     },
     {
       "version_id": "Omega Ruby",
-      "flavor_text": "It changes so it looks like its foe, tricks it, and then uses that opportunity to flee."
+      "flavor_text": "It changes so it looks just like its foe, tricks it, and then uses that opportunity to flee."
     },
     {
       "version_id": "Alpha Sapphire",
@@ -58958,7 +58958,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "They intently observe both Trainers and Pokémon. Apparently, they are looking at something only Gothita can see."
+      "flavor_text": "They intently observe both Trainers and Pokémon. Apparently, they are looking at something that only Gothita can see."
     },
     {
       "version_id": "Omega Ruby",
@@ -58966,7 +58966,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "They intently observe both Trainers and Pokémon. Apparently, they are looking at something only Gothita can see."
+      "flavor_text": "They intently observe both Trainers and Pokémon. Apparently, they are looking at something that only Gothita can see."
     },
     {
       "version_id": "Sword",
@@ -59512,7 +59512,7 @@
     },
     {
       "version_id": "X",
-      "flavor_text": "Their coloring changes according to the season and can be slightly affected by the temperature and humidity as well."
+      "flavor_text": "Their coloring changes according to the seasons and can be slightly affected by the temperature and humidity as well."
     },
     {
       "version_id": "Y",
@@ -59546,11 +59546,11 @@
     },
     {
       "version_id": "Black 2",
-      "flavor_text": "They migrate according to seasons, so some people call Sawsbuck the harbingers of spring."
+      "flavor_text": "They migrate according to the seasons, so some people call Sawsbuck the harbingers of spring."
     },
     {
       "version_id": "White 2",
-      "flavor_text": "They migrate according to seasons, so some people call Sawsbuck the harbingers of spring."
+      "flavor_text": "They migrate according to the seasons, so some people call Sawsbuck the harbingers of spring."
     },
     {
       "version_id": "X",
@@ -59558,7 +59558,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "They migrate according to seasons, so some people call Sawsbuck the harbingers of spring."
+      "flavor_text": "They migrate according to the seasons, so some people call Sawsbuck the harbingers of spring."
     },
     {
       "version_id": "Omega Ruby",
@@ -59566,7 +59566,7 @@
     },
     {
       "version_id": "Alpha Sapphire",
-      "flavor_text": "They migrate according to seasons, so some people call Sawsbuck the harbingers of spring."
+      "flavor_text": "They migrate according to the seasons, so some people call Sawsbuck the harbingers of spring."
     },
     {
       "version_id": "Scarlet",
@@ -59580,7 +59580,7 @@
   "587": [
     {
       "version_id": "Black",
-      "flavor_text": "The energy made in its cheeks' electric pouches is stored inside its membranes and released while it is gliding."
+      "flavor_text": "The energy made in its cheeks' electric pouches is stored inside its membrane and released while it is gliding."
     },
     {
       "version_id": "White",
@@ -59600,7 +59600,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "The energy made in its cheeks' electric pouches is stored inside its membranes and released while it is gliding."
+      "flavor_text": "The energy made in its cheeks' electric pouches is stored inside its membrane and released while it is gliding."
     },
     {
       "version_id": "Omega Ruby",

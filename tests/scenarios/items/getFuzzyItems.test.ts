@@ -28,7 +28,7 @@ describe('getFuzzyItem', () => {
           isNonstandard: null,
           name: 'Life Orb',
           serebiiPage: 'https://www.serebii.net/itemdex/lifeorb.shtml',
-          shortDesc: null,
+          shortDesc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
           smogonPage: 'https://www.smogon.com/dex/sv/items/life-orb',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/life-orb.png'
         }
@@ -49,7 +49,7 @@ describe('getFuzzyItem', () => {
           isNonstandard: null,
           name: 'Assault Vest',
           serebiiPage: 'https://www.serebii.net/itemdex/assaultvest.shtml',
-          shortDesc: null,
+          shortDesc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
           smogonPage: 'https://www.smogon.com/dex/sv/items/assault-vest',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/assault-vest.png'
         },
@@ -60,7 +60,7 @@ describe('getFuzzyItem', () => {
           isNonstandard: null,
           name: 'Choice Band',
           serebiiPage: 'https://www.serebii.net/itemdex/choiceband.shtml',
-          shortDesc: null,
+          shortDesc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
           smogonPage: 'https://www.smogon.com/dex/sv/items/choice-band',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png'
         },
@@ -71,7 +71,7 @@ describe('getFuzzyItem', () => {
           isNonstandard: null,
           name: 'Focus Sash',
           serebiiPage: 'https://www.serebii.net/itemdex/focussash.shtml',
-          shortDesc: null,
+          shortDesc: "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
           smogonPage: 'https://www.smogon.com/dex/sv/items/focus-sash',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/focus-sash.png'
         }
@@ -114,7 +114,7 @@ describe('getFuzzyItem', () => {
           isNonstandard: null,
           name: 'Unremarkable Teacup',
           serebiiPage: 'https://www.serebii.net/itemdex/unremarkableteacup.shtml',
-          shortDesc: null,
+          shortDesc: 'Evolves Poltchageist into Sinistcha when used.',
           smogonPage: 'https://www.smogon.com/dex/sv/items/unremarkable-teacup',
           sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/unremarkable-teacup.png'
         }

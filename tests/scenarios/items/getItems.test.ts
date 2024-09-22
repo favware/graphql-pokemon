@@ -27,7 +27,7 @@ describe('getItem', () => {
         isNonstandard: null,
         name: 'Life Orb',
         serebiiPage: 'https://www.serebii.net/itemdex/lifeorb.shtml',
-        shortDesc: null,
+        shortDesc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
         smogonPage: 'https://www.smogon.com/dex/sv/items/life-orb',
         sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/life-orb.png'
       });

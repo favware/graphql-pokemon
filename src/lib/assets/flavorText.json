@@ -9326,19 +9326,19 @@
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "It trains by lifting rocks in the mountains. It can even pick up a Graveler with ease."
+      "flavor_text": "It trains by lifting rocks in the mountains. It can even pick up a  with ease."
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "Always brimming with power, it passes time by lifting boulders. Doing so makes it even stronger."
+      "flavor_text": "Always brimming with power, it passes time by lifting boulders. Doing so makes it even stronger. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>It loves to work out and build its muscles. It is never satisfied, even if it trains hard all day long. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Machop's muscles are special - they never get sore no matter how much they are used in exercise. This Pokémon has sufficient power to hurl a hundred adult humans."
+      "flavor_text": "'s muscles are special - they never get sore no matter how much they are used in exercise. This {{ScPkmn}} has sufficient power to hurl a hundred adult humans."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Machop exercises by hefting around a Graveler as if it were a barbell. There are some Machop that travel the world in a quest to master all kinds of martial arts."
+      "flavor_text": " exercises by hefting around a <sc>Graveler</sc> as if it were a barbell. There are some <sc>Machop</sc> that travel the world in a quest to master all kinds of martial arts."
     },
     {
       "version_id": "Emerald",
@@ -9354,7 +9354,7 @@
     },
     {
       "version_id": "Diamond",
-      "flavor_text": "It hefts a Graveler repeatedly to strengthen its entire body. It uses every type of martial arts."
+      "flavor_text": "It hefts a  repeatedly to strengthen its entire body. It uses every type of martial arts."
     },
     {
       "version_id": "Pearl",
@@ -9362,7 +9362,7 @@
     },
     {
       "version_id": "Platinum",
-      "flavor_text": "Though small in stature, it is powerful enough to easily heft and throw a number of Geodude at once."
+      "flavor_text": "Though small in stature, it is powerful enough to easily heft and throw a number of  at once."
     },
     {
       "version_id": "HeartGold",
@@ -9460,7 +9460,7 @@
     },
     {
       "version_id": "Yellow",
-      "flavor_text": "The belt around its waist holds back its energy. Without it, this Pokémon would be unstoppable."
+      "flavor_text": "The belt around its waist holds back its energy. Without it, this {{ScPkmn}} would be unstoppable."
     },
     {
       "version_id": "Stadium",
@@ -9468,7 +9468,7 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "It always goes at its full power, but this very tough and durable Pokémon never gets tired."
+      "flavor_text": "It always goes at its full power, but this very tough and durable {{ScPkmn}} never gets tired."
     },
     {
       "version_id": "Silver",
@@ -9476,23 +9476,23 @@
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "This tough Pokémon always stays in the zone. Its muscles become thicker after every battle."
+      "flavor_text": "This tough {{ScPkmn}} always stays in the zone. Its muscles become thicker after every battle."
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "It always goes at its full power, but this very tough and durable Pokémon never gets tired."
+      "flavor_text": "It always goes at its full power, but this very tough and durable {{ScPkmn}} never gets tired. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>The muscles covering its body teem with power. Even when still, it exudes an amazing sense of strength. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Machoke's thoroughly toned muscles possess the hardness of steel. This Pokémon has so much strength, it can easily hold aloft a sumo wrestler on just one finger."
+      "flavor_text": "'s thoroughly toned muscles possess the hardness of steel. This {{ScPkmn}} has so much strength, it can easily hold aloft a sumo wrestler on just one finger."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Machoke undertakes bodybuilding every day even as it helps people with tough, physically demanding labor. On its days off, this Pokémon heads to the fields and mountains to exercise and train."
+      "flavor_text": " undertakes bodybuilding every day even as it helps people with tough, physically demanding labor. On its days off, this {{ScPkmn}} heads to the fields and mountains to exercise and train."
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "A belt is worn by a Machoke to keep its overwhelming power under control. Because it is so dangerous, no one has ever removed the belt."
+      "flavor_text": "A belt is worn by a  to keep its overwhelming power under control. Because it is so dangerous, no one has ever removed the belt."
     },
     {
       "version_id": "FireRed",
@@ -9504,7 +9504,7 @@
     },
     {
       "version_id": "Diamond",
-      "flavor_text": "Machoke's boundless power is very dangerous, so it wears a belt that suppresses its energy."
+      "flavor_text": "'s boundless power is very dangerous, so it wears a belt that suppresses its energy."
     },
     {
       "version_id": "Pearl",
@@ -9610,7 +9610,7 @@
     },
     {
       "version_id": "Yellow",
-      "flavor_text": "One arm alone can move mountains. Using all four arms, this Pokémon fires off awesome punches."
+      "flavor_text": "One arm alone can move mountains. Using all four arms, this {{ScPkmn}} fires off awesome punches."
     },
     {
       "version_id": "Stadium",
@@ -9630,15 +9630,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles."
+      "flavor_text": "It quickly swings its four arms to rock its opponents with ceaseless punches and chops from all angles. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>It uses its four powerful arms to pin the limbs of its foe, then throws the victim over the horizon. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Machamp has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This Pokémon tends to leap into action before it thinks."
+      "flavor_text": " has the power to hurl anything aside. However, trying to do any work requiring care and dexterity causes its arms to get tangled. This {{ScPkmn}} tends to leap into action before it thinks."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Machamp is known as the Pokémon that has mastered every kind of martial arts. If it grabs hold of the foe with its four arms, the battle is all but over. The hapless foe is thrown far over the horizon."
+      "flavor_text": " is known as the {{ScPkmn}} that has mastered every kind of martial arts. If it grabs hold of the foe with its four arms, the battle is all but over. The hapless foe is thrown far over the horizon."
     },
     {
       "version_id": "Emerald",
@@ -9650,7 +9650,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
+      "flavor_text": "Its superpowerful punches are said to knock the victim flying clear over the horizon."
     },
     {
       "version_id": "Diamond",
@@ -9752,11 +9752,11 @@
   "69": [
     {
       "version_id": "Red",
-      "flavor_text": "A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture."
+      "flavor_text": "A carnivorous {{ScPkmn}} that traps and eats bugs. It uses its root feet to soak up needed moisture."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture."
+      "flavor_text": "A carnivorous {{ScPkmn}} that traps and eats bugs. It uses its root feet to soak up needed moisture."
     },
     {
       "version_id": "Yellow",
@@ -9780,19 +9780,19 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "Even though its body is extremely skinny, it is blindingly fast when catching its prey."
+      "flavor_text": "Even though its body is extremely skinny, it is blindingly fast when catching its prey. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>It plants its feet deep underground to replenish water. It can't escape its enemy while it's rooted. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this POKéMON spits a corrosive fluid that melts even iron."
+      "flavor_text": "'s thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this {{ScPkmn}} spits a corrosive fluid that melts even iron."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this POKéMON spits a corrosive fluid that melts even iron."
+      "flavor_text": "'s thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this {{ScPkmn}} spits a corrosive fluid that melts even iron."
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "A Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, it leaks a fluid that melts even iron."
+      "flavor_text": "A 's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, it leaks a fluid that melts even iron."
     },
     {
       "version_id": "FireRed",
@@ -9800,7 +9800,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "A carnivorous Pokémon that traps and eats bugs. It appears to use its root feet to replenish moisture."
+      "flavor_text": "A carnivorous {{ScPkmn}} that traps and eats bugs. It appears to use its root feet to replenish moisture."
     },
     {
       "version_id": "Diamond",
@@ -9882,11 +9882,11 @@
   "70": [
     {
       "version_id": "Red",
-      "flavor_text": "It spits out PoisonPowder to immobilize the enemy and then finishes it with a spray of Acid."
+      "flavor_text": "It spits out  to immobilize the enemy and then finishes it with a spray of <sc>Acid</sc>."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "It spits out PoisonPowder to immobilize the enemy and then finishes it with a spray of Acid."
+      "flavor_text": "It spits out  to immobilize the enemy and then finishes it with a spray of <sc>Acid</sc>."
     },
     {
       "version_id": "Yellow",
@@ -9898,7 +9898,7 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "Even though it is filled with acid, it does not melt because it also oozes a neutralizing fluid."
+      "flavor_text": "Even though it is filled with , it does not melt because it also oozes a neutralizing fluid."
     },
     {
       "version_id": "Silver",
@@ -9906,23 +9906,23 @@
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "When its hungry, it swings its razor-sharp leaves, slicing up any unlucky object nearby for food."
+      "flavor_text": "When it's hungry, it swings its razor-sharp leaves, slicing up any unlucky object nearby for food."
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "Even though it is filled with acid, it does not melt because it also oozes a neutralizing fluid."
+      "flavor_text": "Even though it is filled with , it does not melt because it also oozes a neutralizing fluid. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>If its prey is bigger than its mouth, it slices up the victim with sharp leaves, then eats every morsel. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground."
+      "flavor_text": " has a large hook on its rear end. At night, the {{ScPkmn}} hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground."
+      "flavor_text": " has a large hook on its rear end. At night, the {{ScPkmn}} hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground."
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "At night, a Weepinbell hangs on to a tree branch with its hooked rear and sleeps. If it moves around in its sleep, it may wake up to find itself on the ground."
+      "flavor_text": "At night, a  hangs on to a tree branch with its hooked rear and sleeps. If it moves around in its sleep, it may wake up to find itself on the ground."
     },
     {
       "version_id": "FireRed",
@@ -9930,7 +9930,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "It spits out poisonpowder to immobilize the enemy and then finishes it with a spray of acid."
+      "flavor_text": "It spits out  to immobilize the enemy and then finishes it with a spray of <sc>Acid</sc>."
     },
     {
       "version_id": "Diamond",
@@ -9974,7 +9974,7 @@
     },
     {
       "version_id": "Y",
-      "flavor_text": "It spits out poisonpowder to immobilize the enemy and then finishes it with a spray of acid."
+      "flavor_text": "It spits out Poison Powder to immobilize the enemy and then finishes it with a spray of Acid."
     },
     {
       "version_id": "Omega Ruby",
@@ -10028,27 +10028,27 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "Acid that has dissolved many prey becomes sweeter, making it even more effective at attracting prey."
+      "flavor_text": " that has dissolved many prey becomes sweeter, making it even more effective at attracting prey."
     },
     {
       "version_id": "Silver",
-      "flavor_text": "This horrifying plant Pokémon attracts prey with aromatic honey, then melts them in its mouth."
+      "flavor_text": "This horrifying plant {{ScPkmn}} attracts prey with aromatic honey, then melts them in its mouth."
     },
     {
       "version_id": "Crystal",
-      "flavor_text": "Once ingested into this Pokémon's body, even the hardest object will melt into nothing."
+      "flavor_text": "Once ingested into this {{ScPkmn}}'s body, even the hardest object will melt into nothing."
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "Acid that has dissolved many prey becomes sweeter, making it even more effective at attracting prey."
+      "flavor_text": " that has dissolved many prey becomes sweeter, making it even more effective at attracting prey. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>This horrifying plant {{ScPkmn}} attracts prey with aromatic honey, then melts them in its mouth. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole."
+      "flavor_text": " has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this {{ScPkmn}} swallows it whole."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole."
+      "flavor_text": " has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this {{ScPkmn}} swallows it whole."
     },
     {
       "version_id": "Emerald",
@@ -10158,7 +10158,7 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "When the tide goes out, dehydrated Tentacool remains can be found washed up on the shore."
+      "flavor_text": "When the tide goes out, dehydrated  remains can be found washed up on the shore."
     },
     {
       "version_id": "Silver",
@@ -10170,15 +10170,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "When the tide goes out, dehydrated Tentacool remains can be found washed up on the shore."
+      "flavor_text": "When the tide goes out, dehydrated  remains can be found washed up on the shore. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>It drifts aimlessly in waves. Very difficult to see in water, it may not be noticed until it stings. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Tentacool's body is largely composed of water. If it is removed from the sea, it dries up like parchment. If this Pokémon happens to become dehydrated, put it back into the sea."
+      "flavor_text": "'s body is largely composed of water. If it is removed from the sea, it dries up like parchment. If this {{ScPkmn}} happens to become dehydrated, put it back into the sea."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Tentacool absorbs sunlight and refracts it using water inside its body to convert it into beam energy. This Pokémon shoots beams from its crystal-like eyes."
+      "flavor_text": " absorbs sunlight and refracts it using water inside its body to convert it into beam energy. This {{ScPkmn}} shoots beams from its crystal-like eyes."
     },
     {
       "version_id": "Emerald",
@@ -10206,7 +10206,7 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "When the tide goes out, dehydrated Tentacool remains can be found washed up on the shore."
+      "flavor_text": "When the tide goes out, dehydrated  remains can be found washed up on the shore."
     },
     {
       "version_id": "SoulSilver",
@@ -10316,7 +10316,7 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "Its 80 tentacles absorb water and stretch almost endlessly to constrict its prey and enemies."
+      "flavor_text": "Its 80 tentacles absorb water and stretch almost endlessly to  its prey and enemies."
     },
     {
       "version_id": "Silver",
@@ -10328,15 +10328,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "Its 80 tentacles absorb water and stretch almost endlessly to constrict its prey and enemies."
+      "flavor_text": "Its 80 tentacles absorb water and stretch almost endlessly to  its prey and enemies. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>In battle, it extends all 80 of its tentacles to entrap its opponent inside a poisonous net. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Tentacruel has large red orbs on its head. The orbs glow before lashing the vicinity with a harsh ultrasonic blast. This Pokémon's outburst causes rough waves around it."
+      "flavor_text": " has large red orbs on its head. The orbs glow before lashing the vicinity with a harsh ultrasonic blast. This {{ScPkmn}}'s outburst creates rough waves around it."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Tentacruel has tentacles that can be freely elongated and shortened at will. It ensnares prey with its tentacles and weakens the prey by dosing it with a harsh toxin. It can catch up to 80 prey at the same time."
+      "flavor_text": " has tentacles that can be freely elongated and shortened at will. It ensnares prey with its tentacles and weakens the prey by dosing it with a harsh toxin. It can catch up to 80 prey at the same time."
     },
     {
       "version_id": "Emerald",
@@ -10474,7 +10474,7 @@
     },
     {
       "version_id": "Gold",
-      "flavor_text": "Most people may not notice, but a closer look should reveal that there are many Geodude around."
+      "flavor_text": "Most people may not notice, but a closer look should reveal that there are many  around."
     },
     {
       "version_id": "Silver",
@@ -10486,15 +10486,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "Most people may not notice, but a closer look should reveal that there are many Geodude around."
+      "flavor_text": "Most people may not notice, but a closer look should reveal that there are many  around. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>It uses its arms to steadily climb steep mountain paths. It swings its fists around if angered. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "The longer a Geodude lives, the more its edges are chipped and worn away, making it more rounded in appearance. However, this Pokémon's heart will remain hard, craggy, and rough always."
+      "flavor_text": "The longer a  lives, the more its edges are chipped and worn away, making it more rounded in appearance. However, this {{ScPkmn}}'s heart will remain hard, craggy, and rough always."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "When Geodude sleeps deeply, it buries itself halfway into the ground. It will not awaken even if hikers step on it unwittingly. In the morning, this Pokémon rolls downhill in search of food."
+      "flavor_text": "When  sleeps deeply, it buries itself halfway into the ground. It will not awaken even if hikers step on it unwittingly. In the morning, this {{ScPkmn}} rolls downhill in search of food."
     },
     {
       "version_id": "Emerald",
@@ -10522,7 +10522,7 @@
     },
     {
       "version_id": "HeartGold",
-      "flavor_text": "Most people may not notice, but a closer look should reveal that there are many Geodude around."
+      "flavor_text": "Most people may not notice, but a closer look should reveal that there are many  around."
     },
     {
       "version_id": "SoulSilver",
@@ -10636,15 +10636,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "With a free and uncaring nature, it doesn't mind if pieces break off while it rolls down mountains."
+      "flavor_text": "With a free and uncaring nature, it doesn't mind if pieces break off while it rolls down mountains. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>A slow walker, it rolls to move. It pays no attention to any object that happens to be in its path. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Graveler grows by feeding on rocks. Apparently, it prefers to eat rocks that are covered in moss. This Pokémon eats it way through a ton of rocks on a daily basis."
+      "flavor_text": " grows by feeding on rocks. Apparently, it prefers to eat rocks that are covered in moss. This {{ScPkmn}} eats its way through a ton of rocks on a daily basis."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Rocks are Graveler's favorite food. This Pokémon will climb a mountain from the base to the summit, crunchingly feasting on rocks all the while. Upon reaching the peak, it rolls back down to the bottom."
+      "flavor_text": "Rocks are 's favorite food. This {{ScPkmn}} will climb a mountain from the base to the summit, crunchingly feasting on rocks all the while. Upon reaching the peak, it rolls back down to the bottom."
     },
     {
       "version_id": "Emerald",
@@ -10652,7 +10652,7 @@
     },
     {
       "version_id": "FireRed",
-      "flavor_text": "Be careful while hiking on mountain trails. Graveler may come rolling down the path without slowing."
+      "flavor_text": "Be careful while hiking on mountain trails.  may come rolling down the path without slowing."
     },
     {
       "version_id": "LeafGreen",
@@ -10660,7 +10660,7 @@
     },
     {
       "version_id": "Diamond",
-      "flavor_text": "Graveler make their homes on sheer cliff faces by gouging out numerous horizontal holes."
+      "flavor_text": " make their homes on sheer cliff faces by gouging out numerous horizontal holes."
     },
     {
       "version_id": "Pearl",
@@ -10676,7 +10676,7 @@
     },
     {
       "version_id": "SoulSilver",
-      "flavor_text": " A slow walker, it rolls to move. It pays no attention to any object that happens to be in its path."
+      "flavor_text": "A slow walker, it rolls to move. It pays no attention to any object that happens to be in its path."
     },
     {
       "version_id": "Black",
@@ -10786,15 +10786,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "It sheds its skin once a year. the discarded shell immediately hardens and crumbles away."
+      "flavor_text": "It sheds its skin once a year. The discarded shell immediately hardens and crumbles away. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>It is capable of blowing itself up. It uses this explosive force to jump from mountain to mountain. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Golem live up on mountains. If there is a large earthquake, these Pokémon will come rolling down off the mountains en masse to the foothills below."
+      "flavor_text": " live up on mountains. If there is a large earthquake, these {{ScPkmn}} will come rolling down off the mountains en masse to the foothills below."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Golem is known for rolling down from mountains. To prevent them from rolling into the homes of people downhill, grooves have been dug into the sides of mountains to serve as guideways for diverting this Pokémon's course."
+      "flavor_text": " is known for rolling down from mountains. To prevent them from rolling into the homes of people downhill, grooves have been dug into the sides of mountains to serve as guideways for diverting this {{ScPkmn}}'s course."
     },
     {
       "version_id": "Emerald",
@@ -10936,19 +10936,19 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "It is a weak runner immediately after birth. It gradually becomes faster by chasing after its parents."
+      "flavor_text": "It is a weak runner immediately after birth. It gradually becomes faster by chasing after its parents. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>Its hind legs, which have harder-than-diamond hooves, kick back at any presence it senses behind it. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent."
+      "flavor_text": " is very weak at birth. It can barely stand up. This {{ScPkmn}} becomes stronger by stumbling and falling to keep up with its parent."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent."
+      "flavor_text": " is very weak at birth. It can barely stand up. This {{ScPkmn}} becomes stronger by stumbling and falling to keep up with its parent."
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "A Ponyta is very weak at birth. It can barely stand up. Its legs become stronger as it stumbles and falls while trying to keep up with its parent."
+      "flavor_text": "A  is very weak at birth. It can barely stand up. Its legs become stronger as it stumbles and falls while trying to keep up with its parent."
     },
     {
       "version_id": "FireRed",
@@ -11042,11 +11042,11 @@
   "78": [
     {
       "version_id": "Red",
-      "flavor_text": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it."
+      "flavor_text": "Very competitive, this {{ScPkmn}} will chase anything that moves fast in the hopes of racing it."
     },
     {
       "version_id": "Blue",
-      "flavor_text": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it."
+      "flavor_text": "Very competitive, this {{ScPkmn}} will chase anything that moves fast in the hopes of racing it."
     },
     {
       "version_id": "Yellow",
@@ -11070,19 +11070,19 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "At full gallop, its four hooves barely touch the ground because it moves so incredibly fast."
+      "flavor_text": "At full gallop, its four hooves barely touch the ground because it moves so incredibly fast. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>With incredible acceleration, it reaches its top speed of 150 mph after running just ten steps. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
+      "flavor_text": " usually can be seen casually cantering in the fields and plains. However, when this {{ScPkmn}} turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
+      "flavor_text": " usually can be seen casually cantering in the fields and plains. However, when this {{ScPkmn}} turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
     },
     {
       "version_id": "Emerald",
-      "flavor_text": "It usually canters casually in the fields and plains. But once a Rapidash turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
+      "flavor_text": "It usually canters casually in the fields and plains. But once a  turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
     },
     {
       "version_id": "FireRed",
@@ -11090,7 +11090,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it."
+      "flavor_text": "Very competitive, this {{ScPkmn}} will chase anything that moves fast in the hopes of racing it."
     },
     {
       "version_id": "Diamond",
@@ -11204,15 +11204,15 @@
     },
     {
       "version_id": "Stadium 2",
-      "flavor_text": "It lazes vacantly near water. If something bites its tail, it won't even notice for a whole day."
+      "flavor_text": "It lazes vacantly near water. If something bites its tail, it won't even notice for a whole day. <small>''(Pokémon Red, Silver, or Crystal inserted)''</small><br>A sweet sap leaks from its tail's tip. Although not nutritious, the tail is pleasant to chew on. <small>''(Pokémon Blue, Gold, or Yellow inserted)''</small>"
     },
     {
       "version_id": "Ruby",
-      "flavor_text": "Slowpoke uses its tail to catch prey by dipping it in water at the side of a river. However, this Pokémon often forgets what it's doing and often spends entire days just loafing at water's edge."
+      "flavor_text": " uses its tail to catch prey by dipping it in water at the side of a river. However, this {{ScPkmn}} often forgets what it's doing and often spends entire days just loafing at water's edge."
     },
     {
       "version_id": "Sapphire",
-      "flavor_text": "Slowpoke uses its tail to catch prey by dipping it in water at the side of a river. However, this Pokémon often forgets what it's doing and often spends entire days just loafing at water's edge."
+      "flavor_text": " uses its tail to catch prey by dipping it in water at the side of a river. However, this {{ScPkmn}} often forgets what it's doing and often spends entire days just loafing at water's edge."
     },
     {
       "version_id": "Emerald",
@@ -11224,7 +11224,7 @@
     },
     {
       "version_id": "LeafGreen",
-      "flavor_text": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
+      "flavor_text": "Incredibly slow and dopey. It takes five seconds for it to feel pain when under attack."
     },
     {
       "version_id": "Diamond",

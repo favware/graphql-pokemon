@@ -81,12 +81,12 @@
     "@commitlint/config-conventional": "^19.5.0",
     "@discordjs/collection": "^2.1.1",
     "@favware/cliff-jumper": "^4.1.0",
-    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/cli": "^5.0.3",
     "@graphql-codegen/schema-ast": "^4.1.0",
     "@graphql-codegen/typescript": "^4.0.7",
     "@graphql-codegen/typescript-resolvers": "^4.1.0",
     "@koa/cors": "^5.0.0",
-    "@magidoc/cli": "^6.0.1",
+    "@magidoc/cli": "^6.1.0",
     "@sapphire/eslint-config": "^5.0.5",
     "@sapphire/fetch": "^3.0.3",
     "@sapphire/prettier-config": "^2.0.0",
@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.3",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.7.26",
+    "@swc/core": "^1.7.36",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
@@ -103,7 +103,7 @@
     "@types/node": "^20.14.8",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
-    "@vitest/coverage-v8": "^2.1.1",
+    "@vitest/coverage-v8": "^2.1.3",
     "async": "^3.2.6",
     "cheerio": "^1.0.0",
     "colorette": "^2.0.20",
@@ -112,18 +112,18 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "graphql-tag": "^2.12.6",
-    "json-stream-stringify": "^3.1.4",
+    "json-stream-stringify": "^3.1.6",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.2.10",
-    "npm-run-all2": "^6.2.3",
+    "npm-run-all2": "^6.2.4",
     "prettier": "^3.3.3",
     "replace-in-file": "^8.2.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
     "typescript": "~5.4.5",
-    "vitest": "^2.1.1"
+    "vitest": "^2.1.3"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",
@@ -165,8 +165,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.5.1",
   "volta": {
-    "node": "20.17.0"
+    "node": "20.18.0"
   }
 }

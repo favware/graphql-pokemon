@@ -4,8 +4,9 @@ org: favware
 monoRepo: false
 commitMessageTemplate: 'chore(release): release {{new-version}}'
 tagTemplate: 'v{{new-version}}'
-githubRepo: auto
+gitRepo: auto
 identifierBase: false
 pushTag: true
 githubRelease: true
 githubReleaseLatest: true
+gitHostVariant: github

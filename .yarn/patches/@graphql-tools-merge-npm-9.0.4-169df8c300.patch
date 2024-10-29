@@ -1,0 +1,24 @@
+diff --git a/cjs/typedefs-mergers/merge-nodes.js b/cjs/typedefs-mergers/merge-nodes.js
+index 1b9db2b3056a5c58dff449eb3424a14ae3dc89f3..726f5b4bd36dde2c540f8e51790d9c8d31015117 100644
+--- a/cjs/typedefs-mergers/merge-nodes.js
++++ b/cjs/typedefs-mergers/merge-nodes.js
+@@ -2,7 +2,7 @@
+ Object.defineProperty(exports, "__esModule", { value: true });
+ exports.mergeGraphQLNodes = exports.isNamedDefinitionNode = exports.schemaDefSymbol = void 0;
+ const graphql_1 = require("graphql");
+-const ast_js_1 = require("graphql/language/ast.js");
++const ast_js_1 = require("graphql/language/ast");
+ const utils_1 = require("@graphql-tools/utils");
+ const directives_js_1 = require("./directives.js");
+ const enum_js_1 = require("./enum.js");
+diff --git a/esm/typedefs-mergers/merge-nodes.js b/esm/typedefs-mergers/merge-nodes.js
+index 1203c26a3cf3a4bcb5b18924ca67b63cf34a5dc8..d16d39018bd6499f3dd1483dfef2522331ecff2b 100644
+--- a/esm/typedefs-mergers/merge-nodes.js
++++ b/esm/typedefs-mergers/merge-nodes.js
+@@ -1,5 +1,5 @@
+ import { Kind, } from 'graphql';
+-import { isNode } from 'graphql/language/ast.js';
++import { isNode } from 'graphql/language/ast';
+ import { collectComment } from '@graphql-tools/utils';
+ import { mergeDirective } from './directives.js';
+ import { mergeEnum } from './enum.js';

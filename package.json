@@ -75,7 +75,7 @@
     "graphql": "^16.9.0"
   },
   "devDependencies": {
-    "@apollo/server": "^4.11.0",
+    "@apollo/server": "^4.11.1",
     "@as-integrations/koa": "^1.1.1",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
@@ -83,8 +83,8 @@
     "@favware/cliff-jumper": "^5.0.0",
     "@graphql-codegen/cli": "^5.0.3",
     "@graphql-codegen/schema-ast": "^4.1.0",
-    "@graphql-codegen/typescript": "^4.0.7",
-    "@graphql-codegen/typescript-resolvers": "^4.1.0",
+    "@graphql-codegen/typescript": "^4.1.1",
+    "@graphql-codegen/typescript-resolvers": "^4.4.0",
     "@koa/cors": "^5.0.0",
     "@magidoc/cli": "^6.1.0",
     "@sapphire/eslint-config": "^5.0.5",
@@ -100,10 +100,10 @@
     "@types/koa": "^2.15.0",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa__cors": "^5.0.0",
-    "@types/node": "^20.14.8",
-    "@typescript-eslint/eslint-plugin": "^7.13.1",
-    "@typescript-eslint/parser": "^7.13.1",
-    "@vitest/coverage-v8": "^2.1.3",
+    "@types/node": "^20.17.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^2.1.4",
     "async": "^3.2.6",
     "cheerio": "^1.0.0",
     "colorette": "^2.0.20",
@@ -123,12 +123,14 @@
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "~5.4.5",
-    "vitest": "^2.1.3"
+    "vitest": "^2.1.4"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.8",
-    "graphql@npm:^16.9.0": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch"
+    "graphql@npm:^16.9.0": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch",
+    "@graphql-tools/merge@npm:^9.0.0": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch",
+    "@graphql-tools/merge@npm:^9.0.3": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch"
   },
   "files": [
     "dist/",

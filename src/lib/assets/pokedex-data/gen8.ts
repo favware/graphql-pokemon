@@ -2063,6 +2063,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       },
       color: 'White',
       eggGroups: ['Fairy', 'Amorphous'],
+      evos: ['alcremie'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 1, spe: 0 },
       genderRatio: { male: '0%', female: '100%' },
       heightm: 0.2,

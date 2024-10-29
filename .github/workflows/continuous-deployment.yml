@@ -5,15 +5,16 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
-      - '.github/workflows/continuous-deployment.yml'
-      - 'README.md'
-      - 'Dockerfile'
+      - src/**
+      - .github/workflows/continuous-deployment.yml
+      - README.md
+      - Dockerfile
   workflow_dispatch:
     inputs:
       skip-publish:
-        description: 'Whether to skip publishing typings to NPM'
+        description: Whether to skip publishing typings to NPM
         required: false
+        type: boolean
 
 jobs:
   Publish:

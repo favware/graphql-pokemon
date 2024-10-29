@@ -2,7 +2,7 @@
 #    Base Stage    #
 # ================ #
 
-FROM node:20-alpine as base
+FROM node:20-alpine AS base
 
 WORKDIR /usr/src/app
 
@@ -25,7 +25,7 @@ ENTRYPOINT ["dumb-init", "--"]
 #   Builder Stage  #
 # ================ #
 
-FROM base as builder
+FROM base AS builder
 
 COPY --from=base --chown=node:node /usr/src/app/node_modules/ /usr/src/app/node_modules/
 
@@ -43,7 +43,7 @@ RUN yarn build
 #   Runner Stage   #
 # ================ #
 
-FROM base as runner
+FROM base AS runner
 
 ENV NODE_ENV="production"
 ENV NODE_OPTIONS="--enable-source-maps"

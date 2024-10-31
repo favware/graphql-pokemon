@@ -5754,7 +5754,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 8,
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Strange Ball',
-      shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.'
+      shortDesc: 'Placeholder if caught in Poké Ball not in current game.'
     }
   ],
   [

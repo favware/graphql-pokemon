@@ -45,5 +45,6 @@ export function getTextContent(bit1: string) {
     .replaceAll('{{sup/4|HG}}/Froslass{{sup/4|SS}}', '')
     .replaceAll('lower-back{{sup/4|HG}}/lower back{{sup/4|SS}}', 'lower-back')
     .replaceAll('the{{sup/3|R}}/this{{sup/3|S}}', 'this')
-    .replaceAll('a <!--typo exists in-game--> ', '');
+    .replaceAll('a <!--typo exists in-game--> ', '')
+    .replaceAll('<sc>Berries</sc>', 'Berries');
 }

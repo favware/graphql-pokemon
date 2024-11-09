@@ -7114,7 +7114,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'utilityumbrella',
     {
-      desc: 'The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
+      desc: 'The holder ignores rain- and sun-based effects, including those of its Ability unless it is Orichalcum Pulse or Protosynthesis. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.',
       gen: 8,
       name: 'Utility Umbrella',
       shortDesc: 'The holder ignores rain- and sun-based effects.'

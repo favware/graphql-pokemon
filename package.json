@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.9.1",
+    "@swc/core": "^1.9.2",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
@@ -103,7 +103,7 @@
     "@types/node": "^20.17.3",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.5",
     "async": "^3.2.6",
     "cheerio": "^1.0.0",
     "colorette": "^2.0.20",
@@ -123,7 +123,7 @@
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "~5.4.5",
-    "vitest": "^2.1.4"
+    "vitest": "^2.1.5"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",

@@ -97736,5 +97736,34 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       uproar: ['9M'],
       venoshock: ['9M']
     }
+  ],
+  [
+    'shox',
+    {
+      bodyslam: ['9M'],
+      discharge: ['9M'],
+      doubleedge: ['9M'],
+      endure: ['9M'],
+      facade: ['9M'],
+      glare: ['9M'],
+      helpinghand: ['9M'],
+      hypervoice: ['9M'],
+      icebeam: ['9M'],
+      knockoff: ['9M'],
+      milkdrink: ['9M'],
+      nuzzle: ['9M'],
+      protect: ['9M'],
+      rest: ['9M'],
+      sleeptalk: ['9M'],
+      substitute: ['9M'],
+      superfang: ['9M'],
+      takedown: ['9M'],
+      terablast: ['9M'],
+      thunder: ['9M'],
+      thunderwave: ['9M'],
+      thunderbolt: ['9M'],
+      voltswitch: ['9M'],
+      wildcharge: ['9M']
+    }
   ]
 ]);

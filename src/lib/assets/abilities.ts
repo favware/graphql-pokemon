@@ -2240,9 +2240,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'toxicchain',
     {
-      desc: "This Pokémon's moves have a 30% chance of badly poisoning. This effect comes after a move's inherent secondary effect chance.",
+      desc: "This Pokémon's attacks have a 30% chance of badly poisoning. This effect comes before a move's inherent secondary effect chance.",
       name: 'Toxic Chain',
-      shortDesc: "This Pokémon's moves have a 30% chance of badly poisoning."
+      shortDesc: "This Pokémon's attacks have a 30% chance of badly poisoning."
     }
   ],
   [

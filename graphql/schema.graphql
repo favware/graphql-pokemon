@@ -496,3 +496,24 @@ type TypeEffectiveness {
   "The types with 0.5x effectiveness"
   resistedTypes: [String!]!
 }
+
+"A single Nature entry"
+type Nature {
+  "The key of the nature as stored in the API"
+  key: NaturesEnum!
+
+  "The name of a nature"
+  name: String!
+
+  "The stat the nature increases by 10%"
+  increasedStat: String
+
+  "The stat the nature decreases by 10%"
+  decreasedStat: String
+
+  "The flavor of food the nature prefers"
+  preferredFlavor: String
+
+  "The flavor of food the nature dislikes"
+  dislikedFlavor: String
+}

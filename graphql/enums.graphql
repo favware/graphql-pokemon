@@ -3502,3 +3502,32 @@ enum IsNonStandard {
   "When set the move can exclusively be used Pokémon Sword and Pokémon Shield as it requires Gigantamaxing your Pokémon."
   Gigantamax
 }
+
+"The Natures in Pokémon"
+enum NaturesEnum {
+  adamant
+  bashful
+  bold
+  brave
+  calm
+  careful
+  docile
+  gentle
+  hardy
+  hasty
+  impish
+  jolly
+  lax
+  lonely
+  mild
+  modest
+  naive
+  naughty
+  quiet
+  quirky
+  rash
+  relaxed
+  sassy
+  serious
+  timid
+}

@@ -2697,7 +2697,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       name: 'Defog',
       pp: 15,
       priority: 0,
-      shortDesc: '-1 evasion; clears terrain and hazards on both sides.',
+      shortDesc: '-1 evasion; ends user and target hazards/terrain.',
       target: 'Normal',
       type: 'Flying'
     }
@@ -7489,7 +7489,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '100',
       category: 'Physical',
-      desc: "Has a higher chance for a critical hit. If the user is an Ogerpon holding a mask, this move's type changes to match. Water type for Wellspring Mask, Fire type for Hearthflame Mask, and Rock type for Cornerstone Mask.",
+      desc: "Has a higher chance for a critical hit. If the user is an Ogerpon, this move's type changes depending on its form. Water type for Wellspring Mask, Fire type for Hearthflame Mask, and Rock type for Cornerstone Mask.",
       name: 'Ivy Cudgel',
       pp: 10,
       priority: 0,

@@ -10,7 +10,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ability cannot be changed by any effect.",
       gen: 9,
       name: 'Ability Shield',
-      shortDesc: "Holder's Ability cannot be changed by any effect."
+      shortDesc: "Holder's Ability cannot be changed, suppressed, or ignored by any effect."
     }
   ],
   [

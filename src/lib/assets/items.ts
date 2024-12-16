@@ -5332,7 +5332,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Holder may switch out even when trapped by another Pokémon, or by Ingrain.',
       gen: 4,
       name: 'Shed Shell',
-      shortDesc: 'Holder may switch out even when trapped by another Pokémon, or by Ingrain.'
+      shortDesc: 'Holder cannot be prevented from choosing to switch out by any effect.'
     }
   ],
   [

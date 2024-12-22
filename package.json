@@ -72,12 +72,12 @@
     "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
   },
   "dependencies": {
-    "graphql": "^16.9.0"
+    "graphql": "^16.10.0"
   },
   "devDependencies": {
     "@apollo/server": "^4.11.2",
     "@as-integrations/koa": "^1.1.1",
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@discordjs/collection": "^2.1.1",
     "@favware/cliff-jumper": "^5.0.0",
@@ -116,9 +116,9 @@
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.2.11",
-    "npm-run-all2": "^7.0.1",
+    "npm-run-all2": "^7.0.2",
     "prettier": "^3.4.2",
-    "replace-in-file": "^8.2.0",
+    "replace-in-file": "^8.3.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",

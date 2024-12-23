@@ -128,10 +128,10 @@
   "resolutions": {
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.8",
-    "graphql@npm:^16.9.0": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch",
+    "graphql@npm:16.9.0": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch",
     "@graphql-tools/merge@npm:^9.0.0": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch",
     "@graphql-tools/merge@npm:^9.0.3": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch",
-    "graphql@npm:16.9.0": "patch:graphql@npm%3A16.10.0#~/.yarn/patches/graphql-npm-16.10.0-bc1b088de1.patch"
+    "graphql@npm:^16.10.0": "patch:graphql@npm%3A16.10.0#~/.yarn/patches/graphql-npm-16.10.0-bc1b088de1.patch"
   },
   "files": [
     "dist/",

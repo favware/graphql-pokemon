@@ -6574,17 +6574,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:16.9.0":
-  version: 16.9.0
-  resolution: "graphql@npm:16.9.0"
-  checksum: 10/5833f82bb6c31bec120bbf9cd400eda873e1bb7ef5c17974fa262cd82dc68728fda5d4cb859dc8aaa4c4fe4f6fe1103a9c47efc01a12c02ae5cb581d8e4029e2
-  languageName: node
-  linkType: hard
-
-"graphql@npm:^16.10.0":
+"graphql@npm:16.10.0, graphql@npm:^16.10.0":
   version: 16.10.0
   resolution: "graphql@npm:16.10.0"
   checksum: 10/d42cf81ddcf3a61dfb213217576bf33c326f15b02c4cee369b373dc74100cbdcdc4479b3b797e79b654dabd8fddf50ef65ff75420e9ce5596c02e21f24c9126a
+  languageName: node
+  linkType: hard
+
+"graphql@patch:graphql@npm%3A16.10.0#~/.yarn/patches/graphql-npm-16.10.0-bc1b088de1.patch":
+  version: 16.10.0
+  resolution: "graphql@patch:graphql@npm%3A16.10.0#~/.yarn/patches/graphql-npm-16.10.0-bc1b088de1.patch::version=16.10.0&hash=f5700f"
+  checksum: 10/1ad6d2eb62a2d013972e0f1101216a2159ac019aaca50d47ae6d9b129b2da6dad87b98471f6d5a27582e88f99fc330ee1b32929df482a8484810b58243e4e215
   languageName: node
   linkType: hard
 

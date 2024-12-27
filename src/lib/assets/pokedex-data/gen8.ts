@@ -2234,7 +2234,6 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       eggGroups: ['Bug'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
       evoLevel: 'Level up during Nighttime with happiness of at least 220',
-      evos: ['frosmoth'],
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.3,
       isEggObtainable: true,

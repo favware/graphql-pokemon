@@ -389,7 +389,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       eggGroups: ['Flying'],
       evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 2 },
       evoLevel: 18,
-      evos: ['corvisquire'],
+      evos: ['corviknight'],
       genderRatio: { male: '50%', female: '50%' },
       heightm: 0.8,
       isEggObtainable: true,

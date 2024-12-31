@@ -21,8 +21,8 @@ export const getNatureWithFullData = gql`
 `;
 
 export const getAllNatures = gql`
-  query ($offset: Int, $take: Int) {
-    getAllNatures(offset: $offset, take: $take) {
+  query () {
+    getAllNatures() {
       key
       name
     }

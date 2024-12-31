@@ -52,8 +52,8 @@ export const RootResolver: IExecutableSchemaDefinition['resolvers'] = {
     getNature(_, args, _2, info) {
       return getNature(args, graphqlResolveInfoToRequestedFields(info));
     },
-    getAllNatures(_, args, _2, info) {
-      return getAllNatures(args, graphqlResolveInfoToRequestedFields(info));
+    getAllNatures(_, _2, _3, info) {
+      return getAllNatures(graphqlResolveInfoToRequestedFields(info));
     }
   }
 };

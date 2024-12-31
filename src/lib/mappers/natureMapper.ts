@@ -6,6 +6,7 @@ import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 export function mapNatureDataToNatureGraphQL({ data, requestedFields }: MapNatureDataToNatureGraphQLParameters): Nature {
   const natureObject: Nature = {} as Nature;
 
+  addPropertyToObjectFieldBased({ objectTarget: natureObject, propertyKey: 'key', propertyValue: data.key, requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: natureObject, propertyKey: 'name', propertyValue: data.name, requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: natureObject, propertyKey: 'increasedStat', propertyValue: data.increasedStat, requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: natureObject, propertyKey: 'decreasedStat', propertyValue: data.decreasedStat, requestedFields });

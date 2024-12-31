@@ -254,3 +254,7 @@ export const natures = new Collection<string, PokemonTypes.Natures>([
     }
   ]
 ]);
+
+for (const [key, value] of natures.entries()) {
+  value.key = key;
+}

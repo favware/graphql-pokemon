@@ -289,6 +289,7 @@ export namespace PokemonTypes {
     | 'All';
 
   export interface Natures {
+    key?: string;
     name: string;
 
     increasedStat: string | null;

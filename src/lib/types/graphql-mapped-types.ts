@@ -428,6 +428,8 @@ export type {
 
 /** A single Nature entry */
 export interface Nature {
+  /** The key of the nature as stored in the API */
+  key: string;
   /** The stat the nature decreases by 10% */
   decreasedStat?: Maybe<string>;
   /** The flavor of food the nature dislikes */

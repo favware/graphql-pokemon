@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.7.0](https://github.com/favware/graphql-pokemon/compare/v8.6.2...v8.7.0) - (2025-01-02)
+
+## 🏠 Refactor
+
+- Update data [skip publish] ([e3bc7dc](https://github.com/favware/graphql-pokemon/commit/e3bc7dc768b49de4f4d1b524ae4ddb3634645f77))
+
+## 🚀 Features
+
+- Add Natures (#1028) ([5d5d8fc](https://github.com/favware/graphql-pokemon/commit/5d5d8fcfd36cf8d0d33f5b212c011b4633cfb83d))
+
 # [8.6.2](https://github.com/favware/graphql-pokemon/compare/v8.6.1...v8.6.2) - (2024-12-29)
 
 ## 🏠 Refactor

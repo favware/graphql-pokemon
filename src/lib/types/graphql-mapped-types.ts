@@ -425,3 +425,19 @@ export type {
   TypeMatchup,
   TypesEnum
 };
+
+/** A single Nature entry */
+export interface Nature {
+  /** The key of the nature as stored in the API */
+  key: string;
+  /** The stat the nature decreases by 10% */
+  decreasedStat?: Maybe<string>;
+  /** The flavor of food the nature dislikes */
+  dislikedFlavor?: Maybe<string>;
+  /** The stat the nature increases by 10% */
+  increasedStat?: Maybe<string>;
+  /** The name of a nature */
+  name: string;
+  /** The flavor of food the nature prefers */
+  preferredFlavor?: Maybe<string>;
+}

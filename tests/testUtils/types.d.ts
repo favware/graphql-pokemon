@@ -1,4 +1,4 @@
-import { Ability, Item, Learnset, Move, Pokemon, TypeMatchup } from '#types/graphql-mapped-types';
+import { Ability, Item, Learnset, Move, Pokemon, TypeMatchup, Nature } from '#types/graphql-mapped-types';
 
 export interface Query {
   /** Gets the details on a Pokémon ability, using the ability name */
@@ -93,4 +93,12 @@ export interface Query {
   getPokemonByDexNumber: Pokemon;
   /** Gets the type matchup data for the given type or types */
   getTypeMatchup: TypeMatchup;
+  /** Gets the details on a Pokémon ability, using the ability name */
+  getNature: Nature;
+  /**
+   * Returns a list of all the Natures in Pokémon.
+   *
+   * For every Nature all the data on each requested field is returned.
+   */
+  getAllNatures: Array<Nature>;
 }

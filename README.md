@@ -62,6 +62,7 @@ and [Bulbapedia].
   - Moves
   - Learnsets
   - Type matchups
+  - Natures
 
 ## JavaScript Companion Library
 

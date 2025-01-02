@@ -4,6 +4,7 @@ import { getFuzzyLearnset, getLearnset } from '#resolvers/learnsetResolvers';
 import { getFuzzyMove, getMove } from '#resolvers/moveResolvers';
 import { getAllPokemon, getFuzzyPokemon, getPokemon, getPokemonByDexNumber } from '#resolvers/pokemonResolvers';
 import { getTypeMatchup } from '#resolvers/typeResolver';
+import { getNature, getAllNatures } from '#resolvers/natureResolver';
 import { graphqlResolveInfoToRequestedFields } from '#utils/getRequestedFields';
 import type { IExecutableSchemaDefinition } from '@graphql-tools/schema';
 
@@ -47,6 +48,12 @@ export const RootResolver: IExecutableSchemaDefinition['resolvers'] = {
     },
     getFuzzyLearnset(_, args, _2, info) {
       return getFuzzyLearnset(args, graphqlResolveInfoToRequestedFields(info));
+    },
+    getNature(_, args, _2, info) {
+      return getNature(args, graphqlResolveInfoToRequestedFields(info));
+    },
+    getAllNatures(_, _2, _3, info) {
+      return getAllNatures(graphqlResolveInfoToRequestedFields(info));
     }
   }
 };

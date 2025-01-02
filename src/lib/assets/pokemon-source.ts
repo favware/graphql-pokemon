@@ -287,4 +287,17 @@ export namespace PokemonTypes {
     | "Ally's Side"
     | 'Normal'
     | 'All';
+
+  export interface Natures {
+    key?: string;
+    name: string;
+
+    increasedStat: string | null;
+
+    decreasedStat: string | null;
+
+    preferredFlavor: string | null;
+
+    dislikedFlavor: string | null;
+  }
 }

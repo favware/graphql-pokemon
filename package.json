@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.10.4",
+    "@swc/core": "^1.10.7",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
@@ -170,6 +170,6 @@
   },
   "packageManager": "yarn@4.6.0",
   "volta": {
-    "node": "22.12.0"
+    "node": "22.13.0"
   }
 }

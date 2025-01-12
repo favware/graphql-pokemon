@@ -80,7 +80,7 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@discordjs/collection": "^2.1.1",
-    "@favware/cliff-jumper": "^5.0.0",
+    "@favware/cliff-jumper": "^6.0.0",
     "@graphql-codegen/cli": "^5.0.3",
     "@graphql-codegen/schema-ast": "^4.1.0",
     "@graphql-codegen/typescript": "^4.1.1",

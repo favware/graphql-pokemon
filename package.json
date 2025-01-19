@@ -109,7 +109,7 @@
     "colorette": "^2.0.20",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "graphql-tag": "^2.12.6",
     "json-stream-stringify": "^3.1.6",

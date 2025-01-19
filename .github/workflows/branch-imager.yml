@@ -30,7 +30,7 @@ jobs:
         id: get_branch_name
         run: echo "branch_name=$(echo $( [ -z "${{ github.head_ref }}" ] && echo ${{ github.ref }} | cut -c12- || echo ${{ github.head_ref }} ) | sed -e 's/\/\|_/-/g' | sed -e 's/@//g')" >> $GITHUB_OUTPUT
       - name: Build and push Docker image
-        uses: docker/build-push-action@v6.11.0
+        uses: docker/build-push-action@v6.12.0
         with:
           push: true
           context: .

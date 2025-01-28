@@ -103,7 +103,7 @@
     "@types/node": "^20.17.3",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/coverage-v8": "^3.0.4",
     "async": "^3.2.6",
     "cheerio": "^1.0.0",
     "colorette": "^2.0.20",
@@ -123,7 +123,7 @@
     "tsup": "^8.3.6",
     "tsx": "^4.19.2",
     "typescript": "~5.4.5",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.4"
   },
   "resolutions": {
     "ansi-regex": "^5.0.1",

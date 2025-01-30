@@ -14833,7 +14833,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
-      desc: "Raises the user's Attack and Speed by 1 stage. Removes subtitutes from all active Pokémon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides.",
+      desc: "Raises the user's Attack and Speed by 1 stage. Removes substitutes from all active Pokémon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides.",
       name: 'Tidy Up',
       pp: 10,
       priority: 0,

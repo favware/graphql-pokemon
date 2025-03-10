@@ -93025,7 +93025,6 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       dreameater: ['7M', '4M'],
       earthquake: ['9M', '8M', '7M', '4M'],
       embargo: ['7M', '4M'],
-      encore: ['9M'],
       endeavor: ['9M', '7T', '4T'],
       facade: ['9M', '8M', '7M', '4M'],
       fakeout: ['9L1', '8L1', '7L27', '4L35'],

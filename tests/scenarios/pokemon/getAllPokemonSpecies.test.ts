@@ -807,7 +807,7 @@ describe('getAllPokemon', () => {
       { key: 'qwilfish', species: 'qwilfish' },
       {
         key: 'qwilfishhisui',
-        species: 'qwilfish'
+        species: 'qwilfish-hisui'
       },
       { key: 'scizor', species: 'scizor' },
       {
@@ -821,7 +821,7 @@ describe('getAllPokemon', () => {
         species: 'heracross-mega'
       },
       { key: 'sneasel', species: 'sneasel' },
-      { key: 'sneaselhisui', species: 'sneasel' },
+      { key: 'sneaselhisui', species: 'sneasel-hisui' },
       { key: 'teddiursa', species: 'teddiursa' },
       { key: 'ursaring', species: 'ursaring' },
       { key: 'slugma', species: 'slugma' },

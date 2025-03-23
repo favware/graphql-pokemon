@@ -1907,7 +1907,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 95,
       basePower: '150',
       category: 'Special',
-      desc: 'If this move is successful, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability.',
+      desc: 'If this move is successful, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard or Rock Head Abilities.',
       name: 'Chloroblast',
       pp: 5,
       priority: 0,

@@ -77,17 +77,9 @@ export function parseSpeciesForSprite({
   // TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
   // Parse differently for remaining generation 9 Pokémon
   switch (pokemonNumber) {
-    case 921:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 922:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 923:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 926:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 927:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 931:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 932:
       return parsePngSprite(pokemonName, shiny, backSprite);

@@ -2334,15 +2334,15 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'squawkabillyblue',
-        species: 'squawkabillyblue'
+        species: 'squawkabilly-blue'
       },
       {
         key: 'squawkabillyyellow',
-        species: 'squawkabillyyellow'
+        species: 'squawkabilly-yellow'
       },
       {
         key: 'squawkabillywhite',
-        species: 'squawkabillywhite'
+        species: 'squawkabilly-white'
       },
       { key: 'nacli', species: 'nacli' },
       { key: 'naclstack', species: 'naclstack' },

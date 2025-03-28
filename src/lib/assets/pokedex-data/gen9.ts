@@ -413,7 +413,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'pawmi', // TODO: Check if animated sprite has been added
+    'pawmi',
     {
       abilities: { first: 'static', second: 'naturalcure', hidden: 'ironfist' },
       baseStats: { hp: 45, atk: 50, def: 20, spa: 40, spd: 25, spe: 60 },
@@ -439,7 +439,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'pawmo', // TODO: Check if animated sprite has been added
+    'pawmo',
     {
       abilities: {
         first: 'voltabsorb',
@@ -468,7 +468,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'pawmot', // TODO: Check if animated sprite has been added
+    'pawmot',
     {
       abilities: {
         first: 'voltabsorb',
@@ -711,7 +711,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'squawkabilly', // TODO: Check if animated sprite has been added
+    'squawkabilly',
     {
       abilities: { first: 'intimidate', second: 'hustle', hidden: 'guts' },
       baseForme: 'Green',
@@ -759,7 +759,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 3855,
       num: 931,
       otherFormes: ['squawkabilly', 'squawkabillyyellow', 'squawkabillywhite'],
-      species: 'squawkabillyblue',
+      species: 'squawkabilly-blue',
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 2.4,
       cry: 'https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3'
@@ -787,7 +787,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 3855,
       num: 931,
       otherFormes: ['squawkabilly', 'squawkabillyblue', 'squawkabillywhite'],
-      species: 'squawkabillyyellow',
+      species: 'squawkabilly-yellow',
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 2.4,
       cry: 'https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3'
@@ -815,7 +815,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 3855,
       num: 931,
       otherFormes: ['squawkabilly', 'squawkabillyblue', 'squawkabillyyellow'],
-      species: 'squawkabillywhite',
+      species: 'squawkabilly-white',
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 2.4,
       cry: 'https://play.pokemonshowdown.com/audio/cries/squawkabilly.mp3'
@@ -1891,7 +1891,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'flamigo', // TODO: Check if animated sprite has been added
+    'flamigo',
     {
       abilities: { first: 'scrappy', second: 'tangledfeet', hidden: 'costar' },
       baseStats: { hp: 82, atk: 115, def: 74, spa: 75, spd: 64, spe: 90 },
@@ -2039,7 +2039,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'annihilape', // TODO: Check if animated sprite has been added
+    'annihilape',
     {
       abilities: { first: 'vitalspirit', second: 'innerfocus', hidden: 'defiant' },
       baseStats: { hp: 110, atk: 115, def: 80, spa: 50, spd: 90, spe: 90 },

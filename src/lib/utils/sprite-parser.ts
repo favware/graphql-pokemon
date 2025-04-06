@@ -75,10 +75,143 @@ export function parseSpeciesForSprite({
   }
 
   // TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
-  // Parse differently for generation 9 (Number 906 is sprigatito)
-  if (pokemonNumber >= 906 || pokemonName === 'ursaluna-bloodmoon') return parsePngSprite(pokemonName, shiny, backSprite);
+  // Parse differently for remaining generation 9 Pokémon
+  switch (pokemonNumber) {
+    case 926:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 927:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 932:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 933:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 934:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 935:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 936:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 937:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 940:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 941:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 942:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 943:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 944:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 945:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 946:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 947:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 948:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 949:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 950:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 962:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 969:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 970:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 983:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 984:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 985:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 986:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 987:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 988:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 989:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 990:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 991:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 992:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 993:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 994:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 995:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 996:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 997:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 998:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 999:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1000:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1001:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1002:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1003:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1004:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1005:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1006:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1007:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1008:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1009:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1010:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1011:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1012:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1013:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1014:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1015:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1016:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1017:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1018:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1019:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1020:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1021:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1022:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1023:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1024:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    case 1025:
+      return parsePngSprite(pokemonName, shiny, backSprite);
+    default:
+      return parseGifSprite(pokemonName, shiny, backSprite);
+  }
 
-  return parseGifSprite(pokemonName, shiny, backSprite);
+  // if (pokemonNumber >= 906 || pokemonName === 'ursaluna-bloodmoon') return parsePngSprite(pokemonName, shiny, backSprite);
 }
 
 function parseSpecialSprites(

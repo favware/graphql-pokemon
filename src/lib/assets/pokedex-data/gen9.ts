@@ -583,7 +583,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'fidough', // TODO: Check if animated sprite has been added
+    'fidough',
     {
       abilities: { first: 'owntempo', hidden: 'klutz' },
       baseStats: { hp: 37, atk: 55, def: 70, spa: 30, spd: 55, spe: 65 },
@@ -609,7 +609,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'dachsbun', // TODO: Check if animated sprite has been added
+    'dachsbun',
     {
       abilities: { first: 'wellbakedbody', hidden: 'aromaveil' },
       baseStats: { hp: 57, atk: 80, def: 115, spa: 50, spd: 80, spe: 95 },
@@ -822,7 +822,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'nacli', // TODO: Check if animated sprite has been added
+    'nacli',
     {
       abilities: { first: 'purifyingsalt', second: 'sturdy', hidden: 'clearbody' },
       baseStats: { hp: 55, atk: 55, def: 75, spa: 35, spd: 35, spe: 25 },
@@ -848,7 +848,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'naclstack', // TODO: Check if animated sprite has been added
+    'naclstack',
     {
       abilities: { first: 'purifyingsalt', second: 'sturdy', hidden: 'clearbody' },
       baseStats: { hp: 60, atk: 60, def: 100, spa: 35, spd: 65, spe: 35 },
@@ -876,7 +876,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'garganacl', // TODO: Check if animated sprite has been added
+    'garganacl',
     {
       abilities: { first: 'purifyingsalt', second: 'sturdy', hidden: 'clearbody' },
       baseStats: { hp: 100, atk: 100, def: 130, spa: 45, spd: 90, spe: 35 },
@@ -900,7 +900,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'charcadet', // TODO: Check if animated sprite has been added
+    'charcadet',
     {
       abilities: { first: 'flashfire', hidden: 'flamebody' },
       baseStats: { hp: 40, atk: 50, def: 40, spa: 50, spd: 40, spe: 35 },
@@ -923,7 +923,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'armarouge', // TODO: Check if animated sprite has been added
+    'armarouge',
     {
       abilities: { first: 'flashfire', hidden: 'weakarmor' },
       baseStats: { hp: 85, atk: 60, def: 100, spa: 125, spd: 80, spe: 75 },
@@ -947,7 +947,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ceruledge', // TODO: Check if animated sprite has been added
+    'ceruledge',
     {
       abilities: { first: 'flashfire', hidden: 'weakarmor' },
       baseStats: { hp: 75, atk: 125, def: 80, spa: 60, spd: 100, spe: 85 },
@@ -1021,7 +1021,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'wattrel', // TODO: Check if animated sprite has been added
+    'wattrel',
     {
       abilities: {
         first: 'windpower',
@@ -1051,7 +1051,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'kilowattrel', // TODO: Check if animated sprite has been added
+    'kilowattrel',
     {
       abilities: {
         first: 'windpower',
@@ -1079,7 +1079,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'maschiff', // TODO: Check if animated sprite has been added
+    'maschiff',
     {
       abilities: { first: 'intimidate', second: 'runaway', hidden: 'stakeout' },
       baseStats: { hp: 60, atk: 78, def: 60, spa: 40, spd: 51, spe: 51 },
@@ -1105,7 +1105,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'mabosstiff', // TODO: Check if animated sprite has been added
+    'mabosstiff',
     {
       abilities: { first: 'intimidate', second: 'guarddog', hidden: 'stakeout' },
       baseStats: { hp: 80, atk: 120, def: 90, spa: 60, spd: 70, spe: 85 },
@@ -1129,7 +1129,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'shroodle', // TODO: Check if animated sprite has been added
+    'shroodle',
     {
       abilities: { first: 'unburden', second: 'pickpocket', hidden: 'prankster' },
       baseStats: { hp: 40, atk: 65, def: 35, spa: 40, spd: 35, spe: 75 },
@@ -1155,7 +1155,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'grafaiai', // TODO: Check if animated sprite has been added
+    'grafaiai',
     {
       abilities: { first: 'unburden', second: 'poisontouch', hidden: 'prankster' },
       baseStats: { hp: 63, atk: 95, def: 65, spa: 80, spd: 72, spe: 110 },
@@ -1179,7 +1179,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'bramblin', // TODO: Check if animated sprite has been added
+    'bramblin',
     {
       abilities: { first: 'windrider', hidden: 'infiltrator' },
       baseStats: { hp: 40, atk: 65, def: 30, spa: 45, spd: 35, spe: 60 },
@@ -1205,7 +1205,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'brambleghast', // TODO: Check if animated sprite has been added
+    'brambleghast',
     {
       abilities: { first: 'windrider', hidden: 'infiltrator' },
       baseStats: { hp: 55, atk: 115, def: 70, spa: 80, spd: 70, spe: 90 },
@@ -1229,7 +1229,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'toedscool', // TODO: Check if animated sprite has been added
+    'toedscool',
     {
       abilities: { first: 'myceliummight' },
       baseStats: { hp: 40, atk: 40, def: 35, spa: 50, spd: 100, spe: 70 },
@@ -1255,7 +1255,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'toedscruel', // TODO: Check if animated sprite has been added
+    'toedscruel',
     {
       abilities: { first: 'myceliummight' },
       baseStats: { hp: 80, atk: 70, def: 65, spa: 80, spd: 120, spe: 100 },
@@ -1279,7 +1279,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'klawf', // TODO: Check if animated sprite has been added
+    'klawf',
     {
       abilities: {
         first: 'angershell',
@@ -1595,7 +1595,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'bombirdier', // TODO: Check if animated sprite has been added
+    'bombirdier',
     {
       abilities: { first: 'bigpecks', second: 'keeneye', hidden: 'rockypayload' },
       baseStats: { hp: 70, atk: 103, def: 85, spa: 60, spd: 85, spe: 82 },
@@ -1794,7 +1794,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'glimmet', // TODO: Check if animated sprite has been added
+    'glimmet',
     {
       abilities: { first: 'toxicdebris', hidden: 'corrosion' },
       baseStats: { hp: 48, atk: 35, def: 42, spa: 105, spd: 60, spe: 60 },
@@ -1817,7 +1817,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'glimmora', // TODO: Check if animated sprite has been added
+    'glimmora',
     {
       abilities: { first: 'toxicdebris', hidden: 'corrosion' },
       baseStats: { hp: 83, atk: 55, def: 90, spa: 130, spd: 81, spe: 86 },
@@ -2168,7 +2168,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'kingambit', // TODO: Check if animated sprite has been added
+    'kingambit',
     {
       abilities: {
         first: 'defiant',
@@ -2196,7 +2196,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'greattusk', // TODO: Check if animated sprite has been added
+    'greattusk',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 115, atk: 131, def: 131, spa: 53, spd: 53, spe: 87 },
@@ -2218,7 +2218,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'screamtail', // TODO: Check if animated sprite has been added
+    'screamtail',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 115, atk: 65, def: 99, spa: 65, spd: 115, spe: 111 },
@@ -2240,7 +2240,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'brutebonnet', // TODO: Check if animated sprite has been added
+    'brutebonnet',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 111, atk: 127, def: 99, spa: 79, spd: 99, spe: 55 },
@@ -2262,7 +2262,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'fluttermane', // TODO: Check if animated sprite has been added
+    'fluttermane',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 55, atk: 55, def: 55, spa: 135, spd: 135, spe: 135 },
@@ -2284,7 +2284,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'slitherwing', // TODO: Check if animated sprite has been added
+    'slitherwing',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 85, atk: 135, def: 79, spa: 85, spd: 105, spe: 81 },
@@ -2306,7 +2306,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'sandyshocks', // TODO: Check if animated sprite has been added
+    'sandyshocks',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 85, atk: 81, def: 97, spa: 121, spd: 85, spe: 101 },
@@ -2328,7 +2328,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'irontreads', // TODO: Check if animated sprite has been added
+    'irontreads',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 90, atk: 112, def: 120, spa: 72, spd: 70, spe: 106 },
@@ -2350,7 +2350,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironbundle', // TODO: Check if animated sprite has been added
+    'ironbundle',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 56, atk: 80, def: 114, spa: 124, spd: 60, spe: 136 },
@@ -2373,7 +2373,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironhands', // TODO: Check if animated sprite has been added
+    'ironhands',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 154, atk: 140, def: 108, spa: 50, spd: 68, spe: 50 },
@@ -2395,7 +2395,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironjugulis', // TODO: Check if animated sprite has been added
+    'ironjugulis',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 94, atk: 80, def: 86, spa: 122, spd: 80, spe: 108 },
@@ -2417,7 +2417,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironmoth', // TODO: Check if animated sprite has been added
+    'ironmoth',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 80, atk: 70, def: 60, spa: 140, spd: 110, spe: 110 },
@@ -2439,7 +2439,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironthorns', // TODO: Check if animated sprite has been added
+    'ironthorns',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 100, atk: 134, def: 110, spa: 70, spd: 84, spe: 72 },
@@ -2461,7 +2461,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'frigibax', // TODO: Check if animated sprite has been added
+    'frigibax',
     {
       abilities: { first: 'thermalexchange', hidden: 'icebody' },
       baseStats: { hp: 65, atk: 75, def: 45, spa: 35, spd: 45, spe: 55 },
@@ -2484,7 +2484,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'arctibax', // TODO: Check if animated sprite has been added
+    'arctibax',
     {
       abilities: { first: 'thermalexchange', hidden: 'icebody' },
       baseStats: { hp: 90, atk: 95, def: 66, spa: 45, spd: 65, spe: 62 },
@@ -2509,7 +2509,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'baxcalibur', // TODO: Check if animated sprite has been added
+    'baxcalibur',
     {
       abilities: { first: 'thermalexchange', hidden: 'icebody' },
       baseStats: { hp: 115, atk: 145, def: 92, spa: 75, spd: 86, spe: 87 },
@@ -2533,7 +2533,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'gimmighoul', // TODO: Check if animated sprite has been added
+    'gimmighoul',
     {
       abilities: { first: 'rattled' },
       baseForme: 'Chest',
@@ -2558,7 +2558,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'gimmighoulroaming', // TODO: Check if animated sprite has been added
+    'gimmighoulroaming',
     {
       abilities: { first: 'runaway' },
       baseSpecies: 'gimmighoul',
@@ -2585,7 +2585,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'gholdengo', // TODO: Check if animated sprite has been added
+    'gholdengo',
     {
       abilities: { first: 'goodasgold' },
       baseStats: { hp: 87, atk: 60, def: 95, spa: 133, spd: 91, spe: 84 },
@@ -2609,7 +2609,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'wochien', // TODO: Check if animated sprite has been added
+    'wochien',
     {
       abilities: { first: 'tabletsofruin' },
       baseStats: { hp: 85, atk: 85, def: 100, spa: 95, spd: 135, spe: 70 },
@@ -2632,7 +2632,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'chienpao', // TODO: Check if animated sprite has been added
+    'chienpao',
     {
       abilities: { first: 'swordofruin' },
       baseStats: { hp: 80, atk: 120, def: 80, spa: 90, spd: 65, spe: 135 },
@@ -2655,7 +2655,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'tinglu', // TODO: Check if animated sprite has been added
+    'tinglu',
     {
       abilities: { first: 'vesselofruin' },
       baseStats: { hp: 155, atk: 110, def: 125, spa: 55, spd: 80, spe: 45 },
@@ -2678,7 +2678,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'chiyu', // TODO: Check if animated sprite has been added
+    'chiyu',
     {
       abilities: { first: 'beadsofruin' },
       baseStats: { hp: 55, atk: 80, def: 80, spa: 135, spd: 120, spe: 100 },
@@ -2701,7 +2701,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'roaringmoon', // TODO: Check if animated sprite has been added
+    'roaringmoon',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 105, atk: 139, def: 71, spa: 55, spd: 101, spe: 119 },
@@ -2723,7 +2723,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironvaliant', // TODO: Check if animated sprite has been added
+    'ironvaliant',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 74, atk: 130, def: 90, spa: 120, spd: 60, spe: 116 },
@@ -2745,7 +2745,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'koraidon', // TODO: Check if animated sprite has been added
+    'koraidon',
     {
       abilities: { first: 'orichalcumpulse' },
       baseStats: { hp: 100, atk: 135, def: 115, spa: 85, spd: 100, spe: 135 },
@@ -2768,7 +2768,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'miraidon', // TODO: Check if animated sprite has been added
+    'miraidon',
     {
       abilities: { first: 'hadronengine' },
       baseStats: { hp: 100, atk: 85, def: 100, spa: 135, spd: 115, spe: 135 },
@@ -2791,7 +2791,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'walkingwake', // TODO: Check if animated sprite has been added
+    'walkingwake',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 99, atk: 83, def: 91, spa: 125, spd: 83, spe: 109 },
@@ -2813,7 +2813,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironleaves', // TODO: Check if animated sprite has been added
+    'ironleaves',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 90, atk: 130, def: 88, spa: 70, spd: 108, spe: 104 },
@@ -2835,7 +2835,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'dipplin', // TODO: Check if animated sprite has been added
+    'dipplin',
     {
       abilities: {
         first: 'supersweetsyrup',
@@ -2864,7 +2864,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'poltchageist', // TODO: Check if animated sprite has been added
+    'poltchageist',
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
       baseStats: { hp: 40, atk: 45, def: 45, spa: 74, spd: 54, spe: 50 },
@@ -2891,7 +2891,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'poltchageistartisan', // TODO: Check if animated sprite has been added
+    'poltchageistartisan',
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
       baseSpecies: 'poltchageist',
@@ -2920,7 +2920,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'sinistcha', // TODO: Check if animated sprite has been added
+    'sinistcha',
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
       baseForme: 'Unremarkable',
@@ -2946,7 +2946,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'sinistchamasterpiece', // TODO: Check if animated sprite has been added
+    'sinistchamasterpiece',
     {
       abilities: { first: 'hospitality', hidden: 'heatproof' },
       baseSpecies: 'sinistcha',
@@ -2973,7 +2973,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'okidogi', // TODO: Check if animated sprite has been added
+    'okidogi',
     {
       abilities: { first: 'toxicchain', hidden: 'guarddog' },
       baseStats: { hp: 88, atk: 128, def: 115, spa: 58, spd: 86, spe: 80 },
@@ -2995,7 +2995,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'munkidori', // TODO: Check if animated sprite has been added
+    'munkidori',
     {
       abilities: { first: 'toxicchain', hidden: 'frisk' },
       baseStats: { hp: 88, atk: 75, def: 66, spa: 130, spd: 90, spe: 106 },
@@ -3017,7 +3017,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'fezandipiti', // TODO: Check if animated sprite has been added
+    'fezandipiti',
     {
       abilities: { first: 'toxicchain', hidden: 'technician' },
       baseStats: { hp: 88, atk: 91, def: 82, spa: 70, spd: 125, spe: 99 },
@@ -3039,7 +3039,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerpon', // TODO: Check if animated sprite has been added
+    'ogerpon',
     {
       abilities: { first: 'defiant' },
       baseForme: 'Teal',
@@ -3071,7 +3071,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerponcornerstone', // TODO: Check if animated sprite has been added
+    'ogerponcornerstone',
     {
       abilities: { first: 'sturdy' },
       baseSpecies: 'ogerpon',
@@ -3104,7 +3104,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerponcornerstonetera', // TODO: Check if animated sprite has been added
+    'ogerponcornerstonetera',
     {
       abilities: { first: 'embodyaspectcornerstone' },
       baseSpecies: 'ogerpon',
@@ -3137,7 +3137,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerponhearthflame', // TODO: Check if animated sprite has been added
+    'ogerponhearthflame',
     {
       abilities: { first: 'moldbreaker' },
       baseSpecies: 'ogerpon',
@@ -3170,7 +3170,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerponhearthflametera', // TODO: Check if animated sprite has been added
+    'ogerponhearthflametera',
     {
       abilities: { first: 'embodyaspecthearthflame' },
       baseSpecies: 'ogerpon',
@@ -3203,7 +3203,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerponwellspring', // TODO: Check if animated sprite has been added
+    'ogerponwellspring',
     {
       abilities: { first: 'waterabsorb' },
       baseSpecies: 'ogerpon',
@@ -3236,7 +3236,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerponwellspringtera', // TODO: Check if animated sprite has been added
+    'ogerponwellspringtera',
     {
       abilities: { first: 'embodyaspectwellspring' },
       baseSpecies: 'ogerpon',
@@ -3269,7 +3269,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ogerpontealtera', // TODO: Check if animated sprite has been added
+    'ogerpontealtera',
     {
       abilities: { first: 'embodyaspectteal' },
       baseSpecies: 'ogerpon',
@@ -3302,7 +3302,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'archaludon', // TODO: Check if animated sprite has been added
+    'archaludon',
     {
       abilities: { first: 'stamina', second: 'sturdy', hidden: 'stalwart' },
       baseStats: { hp: 90, atk: 105, def: 130, spa: 125, spd: 65, spe: 85 },
@@ -3323,7 +3323,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'hydrapple', // TODO: Check if animated sprite has been added
+    'hydrapple',
     {
       abilities: {
         first: 'supersweetsyrup',
@@ -3350,7 +3350,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'gougingfire', // TODO: Check if animated sprite has been added
+    'gougingfire',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 105, atk: 115, def: 121, spa: 65, spd: 93, spe: 91 },
@@ -3372,7 +3372,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ragingbolt', // TODO: Check if animated sprite has been added
+    'ragingbolt',
     {
       abilities: { first: 'protosynthesis' },
       baseStats: { hp: 125, atk: 73, def: 91, spa: 137, spd: 89, spe: 75 },
@@ -3394,7 +3394,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironboulder', // TODO: Check if animated sprite has been added
+    'ironboulder',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 90, atk: 120, def: 80, spa: 68, spd: 108, spe: 124 },
@@ -3416,7 +3416,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'ironcrown', // TODO: Check if animated sprite has been added
+    'ironcrown',
     {
       abilities: { first: 'quarkdrive' },
       baseStats: { hp: 90, atk: 72, def: 100, spa: 122, spd: 108, spe: 98 },
@@ -3438,7 +3438,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'terapagos', // TODO: Check if animated sprite has been added
+    'terapagos',
     {
       abilities: { first: 'terashift' },
       baseForme: 'Normal',
@@ -3465,7 +3465,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'terapagosterastal', // TODO: Check if animated sprite has been added
+    'terapagosterastal',
     {
       abilities: { first: 'terashell' },
       baseSpecies: 'terapagos',
@@ -3493,7 +3493,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'terapagosstellar', // TODO: Check if animated sprite has been added
+    'terapagosstellar',
     {
       abilities: { first: 'teraformzero' },
       baseSpecies: 'terapagos',
@@ -3521,7 +3521,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'pecharunt', // TODO: Check if animated sprite has been added
+    'pecharunt',
     {
       abilities: { first: 'poisonpuppeteer' },
       baseStats: { hp: 88, atk: 88, def: 160, spa: 88, spd: 88, spe: 88 },

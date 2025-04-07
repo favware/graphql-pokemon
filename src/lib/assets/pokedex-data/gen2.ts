@@ -2191,7 +2191,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Poison],
       weightkg: 27,
       aliases: ['hisuiansneasel', 'sneaselh'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/sneasel.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/sneasel.mp3',
+      respelling: 'SNEE-zul',
+      ipa: '/ˈsniːzəl/'
     }
   ],
   [

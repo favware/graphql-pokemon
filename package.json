@@ -75,7 +75,7 @@
     "graphql": "^16.10.0"
   },
   "devDependencies": {
-    "@apollo/server": "^4.11.3",
+    "@apollo/server": "^4.12.0",
     "@as-integrations/koa": "^1.1.1",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.11.16",
+    "@swc/core": "^1.11.20",
     "@types/async": "^3.2.24",
     "@types/cheerio": "^0.22.35",
     "@types/koa": "^2.15.0",
@@ -109,13 +109,13 @@
     "colorette": "^2.0.20",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "graphql-tag": "^2.12.6",
     "json-stream-stringify": "^3.1.6",
-    "koa": "^2.16.0",
+    "koa": "^2.16.1",
     "koa-bodyparser": "^4.4.1",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^15.5.1",
     "npm-run-all2": "^7.0.2",
     "prettier": "^3.5.3",
     "replace-in-file": "^8.3.0",
@@ -168,7 +168,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.8.1",
+  "packageManager": "yarn@4.9.0",
   "volta": {
     "node": "22.14.0"
   }

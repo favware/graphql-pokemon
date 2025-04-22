@@ -1809,6 +1809,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'shielddust',
     {
+      desc: "This Pokémon is not affected by the secondary effect of another Pokémon's attack. Attacks with secondary effects that are prevented include those with a chance (even 100%) to paralyze, sleep, freeze, burn, poison, confuse, cause this Pokémon to flinch, cause this Pokémon's stat stages to be lowered, as well as Anchor Shot, Eerie Spell, Fling, Psychic Noise, Salt Cure, Spirit Shackle, Syrup Bomb, and Throat Chop. The effect of Sparkling Aria is prevented if this Pokémon is the only target. Secondary effects added by King's Rock, Razor Fang, and the Poison Touch, Stench, and Toxic Chain Abilities are also prevented against this Pokémon.",
       name: 'Shield Dust',
       shortDesc: "This Pokémon is not affected by the secondary effect of another Pokémon's attack."
     }

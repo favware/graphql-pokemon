@@ -23,7 +23,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'aftermath',
     {
-      desc: "If this Pokémon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokémon has the Damp Ability, this effect is prevented.",
+      desc: "If this Pokémon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokémon has the Damp Ability.",
       name: 'Aftermath',
       shortDesc: "If this Pokémon is KOed with a contact move, that move's user loses 1/4 its max HP."
     }
@@ -62,7 +62,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'anticipation',
     {
-      desc: 'On switch-in, this Pokémon is alerted if any opposing Pokémon has an attack that is super effective against this Pokémon, or an OHKO move. This effect considers any move that deals direct damage as an attacking move of its respective type, Hidden Power counts as its determined type, and Judgment, Multi-Attack, Natural Gift, Revelation Dance, Techno Blast, and Weather Ball are considered Normal-type moves.',
+      desc: 'On switch-in, this Pokémon is alerted if any opposing Pokémon has an attacking move with a type that is super effective against this Pokémon, or any OHKO move. This effect considers Hidden Power to be its determined type, and every other move to be its original type.',
       name: 'Anticipation',
       shortDesc: 'On switch-in, this Pokémon shudders if any foe has a supereffective or OHKO move.'
     }
@@ -1078,7 +1078,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'magician',
     {
-      desc: 'If this Pokémon has no item, it steals the item off a Pokémon it hits with an attack. Does not affect Doom Desire and Future Sight.',
+      desc: 'If this Pokémon has no item, it steals the item off a Pokémon it hits with an attack. Does not affect Doom Desire and Future Sight. If multiple targets are hit by an attack the item is stolen from the fastest Pokémon, while considering the effect of Trick Room and prioritizing opposing Pokémon before allies.',
       name: 'Magician',
       shortDesc: 'If this Pokémon has no item, it steals the item off a Pokémon it hits with an attack.'
     }

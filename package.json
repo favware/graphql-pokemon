@@ -113,7 +113,7 @@
     "eslint-plugin-prettier": "^5.2.6",
     "graphql-tag": "^2.12.6",
     "json-stream-stringify": "^3.1.6",
-    "koa": "^2.16.1",
+    "koa": "^3.0.0",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^15.5.1",
     "npm-run-all2": "^7.0.2",

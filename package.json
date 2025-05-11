@@ -96,7 +96,7 @@
     "@skyra/jaro-winkler": "^1.1.1",
     "@swc/core": "^1.11.20",
     "@types/async": "^3.2.24",
-    "@types/cheerio": "^0.22.35",
+    "@types/cheerio": "^1.0.0",
     "@types/koa": "^2.15.0",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa__cors": "^5.0.0",

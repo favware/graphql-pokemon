@@ -115,7 +115,7 @@
     "json-stream-stringify": "^3.1.6",
     "koa": "^3.0.0",
     "koa-bodyparser": "^4.4.1",
-    "lint-staged": "^15.5.1",
+    "lint-staged": "^16.0.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "^3.5.3",
     "replace-in-file": "^8.3.0",

@@ -1415,7 +1415,7 @@ __metadata:
     eslint: "npm:^8.57.1"
     eslint-config-prettier: "npm:^10.1.5"
     eslint-plugin-prettier: "npm:^5.4.0"
-    graphql: "npm:^16.11.0"
+    graphql: "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch"
     graphql-tag: "npm:^2.12.6"
     json-stream-stringify: "npm:^3.1.6"
     koa: "npm:^3.0.0"
@@ -1940,39 +1940,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/merge@npm:^8.4.1":
-  version: 8.4.2
-  resolution: "@graphql-tools/merge@npm:8.4.2"
-  dependencies:
-    "@graphql-tools/utils": "npm:^9.2.1"
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10/62a4e93812e11d083c17f7763f4333a29dbe99fddbff705ff5942a0bdbb9dcd14f668bd76bd3edda485534d5d1a7f09bac311b979196b6149df11d8968a83723
-  languageName: node
-  linkType: hard
-
-"@graphql-tools/merge@npm:^9.0.24":
-  version: 9.0.24
-  resolution: "@graphql-tools/merge@npm:9.0.24"
-  dependencies:
-    "@graphql-tools/utils": "npm:^10.8.6"
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10/95f77ff141f10d5d726cd8d1ae1ad84ed944c84346bf20461adca9b1543bb94cb524b0347885fe61d3158ccf5ffe1dddec361787ae40bfcc3449aad51528dd77
-  languageName: node
-  linkType: hard
-
 "@graphql-tools/merge@patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch":
   version: 9.0.4
-  resolution: "@graphql-tools/merge@patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch::version=9.0.4&hash=63418c"
+  resolution: "@graphql-tools/merge@patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch::version=9.0.4&hash=6b1fcc"
   dependencies:
     "@graphql-tools/utils": "npm:^10.0.13"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10/5e6673ac6c18b3d33081733c5955d5a7dccecc077981949eb710614105f0907706b26b406b8109937e652895ac6e3572302fcff99dc890048b95b4b330ae36b8
+  checksum: 10/338f59e0b9616f58944d8e1b75c49b12d39e225b5089b4b7854f0efe269b4bc8b296667681a3c2e18e6d6805b072a482411ecac4359497f5706233af281d7641
   languageName: node
   linkType: hard
 
@@ -6193,24 +6169,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:16.9.0":
-  version: 16.9.0
-  resolution: "graphql@npm:16.9.0"
-  checksum: 10/5833f82bb6c31bec120bbf9cd400eda873e1bb7ef5c17974fa262cd82dc68728fda5d4cb859dc8aaa4c4fe4f6fe1103a9c47efc01a12c02ae5cb581d8e4029e2
-  languageName: node
-  linkType: hard
-
-"graphql@npm:^16.11.0":
+"graphql@npm:16.11.0":
   version: 16.11.0
   resolution: "graphql@npm:16.11.0"
   checksum: 10/e3e1633d0b464bbb3fa41283fae938bd3bac801c350555b3f1a129d99fb3cfe157fa69c1389229dba902731942eb08bdea4b29f1271965feee8779576b26ef01
   languageName: node
   linkType: hard
 
-"graphql@patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch":
-  version: 16.9.0
-  resolution: "graphql@patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch::version=16.9.0&hash=66abf0"
-  checksum: 10/199c56cfd0e2698f16bd138a13159aba20cf808f91ab685441c75498d1523981bbe7915ee94d7e1e1531e88d02c0ec3b193ef24edb23a1cc733d7dcd9dfca494
+"graphql@patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch":
+  version: 16.11.0
+  resolution: "graphql@patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch::version=16.11.0&hash=b00a8f"
+  checksum: 10/a5c9c924df36404038f90365250cbe08d3e98b227f4c07ce07b5d942664cd03dd6478d57ab7559b1dedb9b2c24e40f24bdc1df08487967bbaec30358f707da4f
   languageName: node
   linkType: hard
 

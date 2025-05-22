@@ -72,7 +72,7 @@
     "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
   },
   "dependencies": {
-    "graphql": "^16.11.0"
+    "graphql": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch"
   },
   "devDependencies": {
     "@apollo/server": "^4.12.1",
@@ -128,10 +128,12 @@
   "resolutions": {
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.8",
-    "graphql@npm:16.9.0": "patch:graphql@npm%3A16.9.0#~/.yarn/patches/graphql-npm-16.9.0-a36f71845f.patch",
+    "graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
     "@graphql-tools/merge@npm:^9.0.0": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch",
     "@graphql-tools/merge@npm:^9.0.3": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch",
-    "graphql@npm:^16.10.0": "patch:graphql@npm%3A16.10.0#~/.yarn/patches/graphql-npm-16.10.0-bc1b088de1.patch"
+    "graphql@npm:^16.10.0": "patch:graphql@npm%3A16.10.0#~/.yarn/patches/graphql-npm-16.10.0-bc1b088de1.patch",
+    "@graphql-tools/merge@npm:^8.4.1": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch",
+    "@graphql-tools/merge@npm:^9.0.24": "patch:@graphql-tools/merge@npm%3A9.0.4#~/.yarn/patches/@graphql-tools-merge-npm-9.0.4-169df8c300.patch"
   },
   "files": [
     "dist/",

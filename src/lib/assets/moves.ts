@@ -15990,6 +15990,21 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       target: 'Normal',
       type: 'Electric'
     }
+  ],
+  [
+    'polarflare',
+    {
+      accuracy: 100,
+      category: 'Special',
+      contestType: 'Beautiful',
+      desc: 'Has a 10% chance to freeze the target. If this move is successful on at least one target and the user is a Ramnarok, it changes to Radiant Forme if it is currently in Dormant Forme, or changes to Dormant Forme if it is currently in Radiant Forme. This forme change does not happen if the Ramnarok has the Sheer Force Ability. The Radiant Forme reverts to Dormant Forme when Ramnarok is not active.',
+      isNonstandard: IsNonStandard.Cap,
+      name: 'Polar Flare',
+      pp: 10,
+      priority: 0,
+      shortDesc: '10% chance to frz foe(s). Ramnarok transforms.',
+      type: 'Fire'
+    }
   ]
 ]);
 

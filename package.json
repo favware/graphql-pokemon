@@ -97,7 +97,7 @@
     "@swc/core": "^1.13.3",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
-    "@types/koa": "^2.15.0",
+    "@types/koa": "^3.0.0",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa__cors": "^5.0.0",
     "@types/node": "^24.1.0",

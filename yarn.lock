@@ -1397,7 +1397,7 @@ __metadata:
     "@swc/core": "npm:^1.13.3"
     "@types/async": "npm:^3.2.25"
     "@types/cheerio": "npm:^1.0.0"
-    "@types/koa": "npm:^2.15.0"
+    "@types/koa": "npm:^3.0.0"
     "@types/koa-bodyparser": "npm:^4.3.12"
     "@types/koa__cors": "npm:^5.0.0"
     "@types/node": "npm:^24.1.0"
@@ -2935,10 +2935,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/http-errors@npm:*":
-  version: 2.0.4
-  resolution: "@types/http-errors@npm:2.0.4"
-  checksum: 10/1f3d7c3b32c7524811a45690881736b3ef741bf9849ae03d32ad1ab7062608454b150a4e7f1351f83d26a418b2d65af9bdc06198f1c079d75578282884c4e8e3
+"@types/http-errors@npm:*, @types/http-errors@npm:^2":
+  version: 2.0.5
+  resolution: "@types/http-errors@npm:2.0.5"
+  checksum: 10/a88da669366bc483e8f3b3eb3d34ada5f8d13eeeef851b1204d77e2ba6fc42aba4566d877cca5c095204a3f4349b87fe397e3e21288837bdd945dd514120755b
   languageName: node
   linkType: hard
 
@@ -2974,19 +2974,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa@npm:*, @types/koa@npm:^2.15.0":
-  version: 2.15.0
-  resolution: "@types/koa@npm:2.15.0"
+"@types/koa@npm:*, @types/koa@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/koa@npm:3.0.0"
   dependencies:
     "@types/accepts": "npm:*"
     "@types/content-disposition": "npm:*"
     "@types/cookies": "npm:*"
     "@types/http-assert": "npm:*"
-    "@types/http-errors": "npm:*"
+    "@types/http-errors": "npm:^2"
     "@types/keygrip": "npm:*"
     "@types/koa-compose": "npm:*"
     "@types/node": "npm:*"
-  checksum: 10/2be9dff1ef66bf15b037386c188893761a8fb46390a5e1d2a2031d9e1ba4473e40ddfbd625980a504bd804d7148b3e230c18e240503f33eac3b6e5e830645d30
+  checksum: 10/db461810b71afe7b73dc849c0832669d1d838edd15b81b0c07d37d32545620dfb0efc19cc120485f5e06a805a151cd89696eb53a5bfad8e223d7e593080069cb
   languageName: node
   linkType: hard
 

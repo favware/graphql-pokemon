@@ -77,50 +77,6 @@ export function parseSpeciesForSprite({
   // TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
   // Parse differently for remaining generation 9 Pokémon
   switch (pokemonNumber) {
-    case 926:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 927:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 932:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 933:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 934:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 935:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 936:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 937:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 940:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 941:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 942:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 943:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 944:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 945:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 946:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 947:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 948:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 949:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 950:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 962:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 969:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 970:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 983:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 984:
@@ -146,12 +102,6 @@ export function parseSpeciesForSprite({
     case 994:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 995:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 996:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 997:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 998:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 999:
       return parsePngSprite(pokemonName, shiny, backSprite);
@@ -179,10 +129,6 @@ export function parseSpeciesForSprite({
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1011:
       return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1012:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1013:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 1014:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1015:
@@ -190,8 +136,6 @@ export function parseSpeciesForSprite({
     case 1016:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1017:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1018:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1019:
       return parsePngSprite(pokemonName, shiny, backSprite);

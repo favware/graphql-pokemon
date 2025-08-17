@@ -131,7 +131,7 @@ jobs:
       - name: Use Node.js v20
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: yarn
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
@@ -159,7 +159,7 @@ jobs:
       - name: Use Node.js v20
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: yarn
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
@@ -218,7 +218,7 @@ jobs:
       - name: Setup Node for publishing to NPM
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: yarn
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
@@ -242,7 +242,7 @@ jobs:
       - name: Setup Node for publishing to Github
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           registry-url: 'https://npm.pkg.github.com'
           scope: '@favware'
           cache: yarn

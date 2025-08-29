@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.13.3",
+    "@swc/core": "^1.13.5",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
     "@types/koa": "^3.0.0",
@@ -121,7 +121,7 @@
     "replace-in-file": "^8.3.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.5.0",
-    "tsx": "^4.20.4",
+    "tsx": "^4.20.5",
     "typescript": "~5.8.3",
     "vitest": "^3.2.4"
   },
@@ -164,7 +164,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.9.4",
   "volta": {
     "node": "22.18.0"
   }

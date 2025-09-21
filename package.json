@@ -164,7 +164,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "yarn@4.10.0",
   "volta": {
     "node": "22.19.0"
   }

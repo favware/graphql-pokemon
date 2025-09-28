@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "^1.13.5",
+    "@swc/core": "^1.13.20",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
     "@types/koa": "^3.0.0",
@@ -115,13 +115,13 @@
     "json-stream-stringify": "^3.1.6",
     "koa": "^3.0.1",
     "koa-bodyparser": "^4.4.1",
-    "lint-staged": "^16.1.6",
+    "lint-staged": "^16.2.1",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
     "replace-in-file": "^8.3.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.5.0",
-    "tsx": "^4.20.5",
+    "tsx": "^4.20.6",
     "typescript": "~5.8.3",
     "vitest": "^3.2.4"
   },
@@ -164,8 +164,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.10.0",
+  "packageManager": "yarn@4.10.3",
   "volta": {
-    "node": "22.19.0"
+    "node": "22.20.0"
   }
 }

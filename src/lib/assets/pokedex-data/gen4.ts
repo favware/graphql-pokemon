@@ -26,7 +26,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       classification: 'Tiny Leaf Pokémon',
       cry: 'https://play.pokemonshowdown.com/audio/cries/turtwig.mp3',
       respelling: 'TUR-twig',
-      ipa: '/ˈtərtwɪɡ/'
+      ipa: '/ˈtɜːrtwɪɡ/'
     }
   ],
   [

@@ -1757,7 +1757,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       classification: 'Iron Armor Pokémon',
       cry: 'https://play.pokemonshowdown.com/audio/cries/aron.mp3',
       respelling: 'AIR-ron',
-      ipa: '/ˈɛərmɒn/'
+      ipa: '/ˈɛərɒn/'
     }
   ],
   [
@@ -1785,7 +1785,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       classification: 'Iron Armor Pokémon',
       cry: 'https://play.pokemonshowdown.com/audio/cries/lairon.mp3',
       respelling: 'LAIR-ron',
-      ipa: '/ˈlɛərmɒn/'
+      ipa: '/ˈlɛərɒn/'
     }
   ],
   [
@@ -1813,7 +1813,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       classification: 'Iron Armor Pokémon',
       cry: 'https://play.pokemonshowdown.com/audio/cries/aggron.mp3',
       respelling: 'AGG-ron',
-      ipa: '/ˈæɡmɒn/'
+      ipa: '/ˈæɡrɒn/'
     }
   ],
   [
@@ -1840,7 +1840,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 395,
       cry: 'https://play.pokemonshowdown.com/audio/cries/aggron-mega.mp3',
       respelling: 'AGG-ron',
-      ipa: '/ˈæɡmɒn/'
+      ipa: '/ˈæɡrɒn/'
     }
   ],
   [

@@ -1191,7 +1191,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       classification: 'Muscular Pokémon',
       cry: 'https://play.pokemonshowdown.com/audio/cries/gurdurr.mp3',
       respelling: 'GUR-dur',
-      ipa: '/ˈɡərdər/'
+      ipa: '/ˈɡɜːrdər/'
     }
   ],
   [

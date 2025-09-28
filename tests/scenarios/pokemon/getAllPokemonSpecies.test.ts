@@ -545,7 +545,7 @@ describe('getAllPokemon', () => {
       { key: 'farfetchd', species: "farfetch'd" },
       {
         key: 'farfetchdgalar',
-        species: "farfetch'd-galar"
+        species: 'farfetchd-galar'
       },
       { key: 'doduo', species: 'doduo' },
       { key: 'dodrio', species: 'dodrio' },
@@ -1447,7 +1447,7 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'darmanitangalarzen',
-        species: 'darmanitan-galar-zen'
+        species: 'darmanitan-galarzen'
       },
       { key: 'maractus', species: 'maractus' },
       { key: 'dwebble', species: 'dwebble' },
@@ -1805,7 +1805,7 @@ describe('getAllPokemon', () => {
       { key: 'oricorio', species: 'oricorio' },
       {
         key: 'oricoriopompom',
-        species: 'oricorio-pom-pom'
+        species: 'oricorio-pompom'
       },
       {
         key: 'oricoriopau',
@@ -1996,11 +1996,11 @@ describe('getAllPokemon', () => {
       { key: 'necrozma', species: 'necrozma' },
       {
         key: 'necrozmaduskmane',
-        species: 'necrozma-dusk-mane'
+        species: 'necrozma-duskmane'
       },
       {
         key: 'necrozmadawnwings',
-        species: 'necrozma-dawn-wings'
+        species: 'necrozma-dawnwings'
       },
       {
         key: 'necrozmaultra',
@@ -2242,7 +2242,7 @@ describe('getAllPokemon', () => {
       { key: 'urshifu', species: 'urshifu' },
       {
         key: 'urshifurapidstrike',
-        species: 'urshifu-rapid-strike'
+        species: 'urshifu-rapidstrike'
       },
       {
         key: 'urshifugmax',

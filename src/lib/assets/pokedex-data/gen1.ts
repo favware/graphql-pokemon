@@ -2947,7 +2947,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'pickup', second: 'technician', hidden: 'rattled' },
       baseSpecies: 'meowth',
-      baseStats: { hp: 40, atk: 35, def: 35, spa: 50, spd: 40, spe: 90 },
+      baseStats: { hp: 50, atk: 65, def: 55, spa: 40, spd: 40, spe: 40 },
       catchRate: {
         base: 255,
         percentageWithOrdinaryPokeballAtFullHealth: '43.9%'
@@ -2966,7 +2966,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 52,
       otherFormes: ['meowth', 'meowthalola', 'meowthgmax'],
       species: 'meowth-galar',
-      types: [TypesEnum.Dark],
+      types: [TypesEnum.Steel],
       weightkg: 4.2,
       cry: 'https://play.pokemonshowdown.com/audio/cries/meowth.mp3',
       respelling: 'me-OUTH',
@@ -4327,7 +4327,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 83,
       otherFormes: ['farfetchd'],
       specialBulbapediaUrl: "Farfetch'd",
-      species: "farfetch'd-galar",
+      species: 'farfetchd-galar',
       types: [TypesEnum.Fighting],
       weightkg: 42,
       cry: 'https://play.pokemonshowdown.com/audio/cries/farfetchd.mp3'
@@ -5446,7 +5446,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 110,
       prevo: 'koffing',
       species: 'weezing-galar',
-      types: [TypesEnum.Poison],
+      types: [TypesEnum.Poison, TypesEnum.Fairy],
       weightkg: 16,
       cry: 'https://play.pokemonshowdown.com/audio/cries/weezing.mp3',
       respelling: 'WEEZE-ing',

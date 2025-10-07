@@ -682,7 +682,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 741,
       otherFormes: ['oricorio', 'oricoriopau', 'oricoriosensu'],
-      species: 'oricorio-pom-pom',
+      species: 'oricorio-pompom',
       types: [TypesEnum.Electric, TypesEnum.Flying],
       weightkg: 3.4,
       aliases: ['oricorioe', 'oricorioelectric'],
@@ -3553,7 +3553,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 30840,
       num: 800,
       otherFormes: ['necrozma', 'necrozmadawnwings', 'necrozmaultra'],
-      species: 'necrozma-dusk-mane',
+      species: 'necrozma-duskmane',
       types: [TypesEnum.Psychic, TypesEnum.Steel],
       weightkg: 460,
       aliases: [
@@ -3595,7 +3595,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 30840,
       num: 800,
       otherFormes: ['necrozma', 'necrozmaduskmane', 'necrozmaultra'],
-      species: 'necrozma-dawn-wings',
+      species: 'necrozma-dawnwings',
       types: [TypesEnum.Psychic, TypesEnum.Ghost],
       weightkg: 350,
       aliases: [

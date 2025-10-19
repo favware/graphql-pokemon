@@ -129,7 +129,7 @@ jobs:
       - name: Add problem matchers
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v20
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: yarn
@@ -157,7 +157,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.BOT_TOKEN }}
       - name: Use Node.js v20
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: yarn
@@ -216,7 +216,7 @@ jobs:
         with:
           name: changelog_md
       - name: Setup Node for publishing to NPM
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: yarn
@@ -240,7 +240,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v5
       - name: Setup Node for publishing to Github
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           registry-url: 'https://npm.pkg.github.com'

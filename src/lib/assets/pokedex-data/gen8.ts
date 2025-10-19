@@ -2252,7 +2252,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'stonjourner',
     {
       abilities: { first: 'powerspot' },
-      baseStats: { hp: 100, atk: 125, def: 135, spa: 20, spd: 20, spe: 20 },
+      baseStats: { hp: 100, atk: 125, def: 135, spa: 20, spd: 20, spe: 70 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
       eggGroups: ['Mineral'],
@@ -2298,7 +2298,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'iceface' },
       baseSpecies: 'eiscue',
-      baseStats: { hp: 75, atk: 80, def: 110, spa: 65, spd: 90, spe: 50 },
+      baseStats: { hp: 75, atk: 80, def: 110, spa: 65, spd: 90, spe: 130 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Blue',
       eggGroups: ['Water 1', 'Field'],
@@ -2954,7 +2954,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 892,
       otherFormes: ['urshifu', 'urshifugmax', 'urshifurapidstrikegmax'],
       prevo: 'kubfu',
-      species: 'urshifu-rapid-strike',
+      species: 'urshifu-rapidstrike',
       types: [TypesEnum.Fighting, TypesEnum.Water],
       weightkg: 105,
       aliases: ['urshifurapid', 'urshifurs', 'watershifu'],

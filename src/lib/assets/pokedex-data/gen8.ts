@@ -2959,7 +2959,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 105,
       aliases: ['urshifurapid', 'urshifurs', 'watershifu'],
       legendary: true,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/urshifu.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/urshifu-rapidstrike.mp3'
     }
   ],
   [
@@ -3010,7 +3010,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'urshifu-rapid-strike-gmax',
       types: [TypesEnum.Fighting, TypesEnum.Water],
       weightkg: 0,
-      legendary: true
+      legendary: true,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/urshifu-rapidstrike.mp3'
     }
   ],
   [

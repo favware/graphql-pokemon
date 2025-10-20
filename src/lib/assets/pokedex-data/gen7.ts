@@ -686,7 +686,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric, TypesEnum.Flying],
       weightkg: 3.4,
       aliases: ['oricorioe', 'oricorioelectric'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/oricorio.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/oricorio-pompom.mp3',
       respelling: 'or-ih-KOR-ee-oh',
       ipa: '/ɔːrɪˈkɔːriːoʊ/'
     }
@@ -3568,7 +3568,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'necrozmadusk'
       ],
       legendary: true,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/necrozma.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/necrozma-duskmane.mp3',
       respelling: 'neh-KROHZ-muh',
       ipa: '/nɛˈkroʊzmə/'
     }
@@ -3610,7 +3610,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
         'necrozmadw'
       ],
       legendary: true,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/necrozma.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/necrozma-dawnwings.mp3',
       respelling: 'neh-KROHZ-muh',
       ipa: '/nɛˈkroʊzmə/'
     }

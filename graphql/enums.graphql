@@ -1272,6 +1272,7 @@ enum PokemonEnum {
   flabebe
   floette
   floetteeternal
+  floeetteeternalmega
   florges
   skiddo
   gogoat
@@ -1772,10 +1773,12 @@ enum ItemsEnum {
   auroraticket
   auspiciousarmor
   autograph
+  autographedplush
   azureflute
   babiriberry
   bandautograph
   banettite
+  barbaracite
   basementkey
   beastball
   beedrillite
@@ -1797,6 +1800,9 @@ enum ItemsEnum {
   blacksludge
   blastoisinite
   blazikenite
+  bluecanariplushlv1
+  bluecanariplushlv2
+  bluecanariplushlv3
   bluecard
   blueorb
   bluepetal
@@ -1816,12 +1822,15 @@ enum ItemsEnum {
   cardkey
   catchingcharm
   cellbattery
+  chandelurite
   charcoal
   charizarditex
   charizarditey
   chartiberry
   cheriberry
   cherishball
+  cherishedring
+  chesnaughtite
   chestoberry
   chilanberry
   chilldrive
@@ -1833,10 +1842,12 @@ enum ItemsEnum {
   clawfossil
   clearamulet
   clearbell
+  clefablite
   cloversweet
   cobaberry
   coincase
   colburberry
+  colorfulscrew
   colressmchn
   contestcostume
   contestpass
@@ -1860,6 +1871,7 @@ enum ItemsEnum {
   decidiumz
   deepseascale
   deepseatooth
+  delphoxite
   destinyknot
   devongoods
   devonparts
@@ -1873,13 +1885,16 @@ enum ItemsEnum {
   dowsingmachine
   dowsingmchn
   dracoplate
+  dragalgite
   dragonfang
   dragongem
+  dragoninite
   dragoniumz
   dragonmemory
   dragonscale
   dragonskull
   dragonterashard
+  drampanite
   dreadplate
   dreamball
   droppeditem
@@ -1889,6 +1904,7 @@ enum ItemsEnum {
   duskstone
   dynamaxband
   earthplate
+  eelektrossite
   eeviumz
   eggcard
   ejectbutton
@@ -1900,6 +1916,7 @@ enum ItemsEnum {
   electricterashard
   electriumz
   elevatorkey
+  emboarite
   endorsement
   energypowder
   enigmaberry
@@ -1909,6 +1926,7 @@ enum ItemsEnum {
   eonticket
   escaperope
   eviolite
+  excadrite
   expertbelt
   explorerkit
   expshare
@@ -1917,9 +1935,11 @@ enum ItemsEnum {
   fairygem
   fairymemory
   fairyterashard
+  falinksite
   famechecker
   fashioncase
   fastball
+  feraligite
   fightinggem
   fightingmemory
   fightingterashard
@@ -1935,6 +1955,7 @@ enum ItemsEnum {
   flameorb
   flameplate
   floatstone
+  floettite
   flowersweet
   flyinggem
   flyingmemory
@@ -1948,6 +1969,7 @@ enum ItemsEnum {
   fossilizeddrake
   fossilizedfish
   friendball
+  froslassite
   fullincense
   fullrestore
   galactickey
@@ -1968,6 +1990,9 @@ enum ItemsEnum {
   gogoggles
   goldberry
   goldbottlecap
+  goldcanariplushlv1
+  goldcanariplushlv2
+  goldcanariplushlv3
   goldteeth
   goodrod
   gracidea
@@ -1980,7 +2005,11 @@ enum ItemsEnum {
   grassterashard
   grassyseed
   greatball
+  greencanariplushlv1
+  greencanariplushlv2
+  greencanariplushlv3
   greenpetal
+  greninjite
   grepaberry
   gripclaw
   griseouscore
@@ -1994,6 +2023,7 @@ enum ItemsEnum {
   gyaradosite
   habanberry
   hardstone
+  hawluchanite
   healball
   hearthflamemask
   heatrock
@@ -2035,12 +2065,16 @@ enum ItemsEnum {
   keystone
   keytoroom1
   keytoroom2
+  keytoroom202
   keytoroom4
   keytoroom6
   kingsrock
   kofuswallet
   kommoniumz
   koraidonspokeball
+  labkeycarda
+  labkeycardb
+  labkeycardc
   laggingtail
   lansatberry
   latiasite
@@ -2056,6 +2090,7 @@ enum ItemsEnum {
   letter
   levelball
   libertypass
+  lidasthings
   liechiberry
   lifeorb
   liftkey
@@ -2093,6 +2128,7 @@ enum ItemsEnum {
   magostberry
   mail
   makeupbag
+  malamarite
   maliciousarmor
   manectite
   marangaberry
@@ -2105,7 +2141,9 @@ enum ItemsEnum {
   medalbox
   medichamite
   megabracelet
+  meganiumite
   megaring
+  megashard
   membercard
   mentalherb
   metagrossite
@@ -2166,6 +2204,7 @@ enum ItemsEnum {
   pass
   passhoberry
   payapaberry
+  pebble
   pechaberry
   permit
   persimberry
@@ -2176,6 +2215,9 @@ enum ItemsEnum {
   pikashuniumz
   pinapberry
   pinkbow
+  pinkcanariplushlv1
+  pinkcanariplushlv2
+  pinkcanariplushlv3
   pinkpetal
   pinsirite
   pixieplate
@@ -2224,6 +2266,7 @@ enum ItemsEnum {
   psychiumz
   punchingglove
   purplepetal
+  pyroarite
   qualotberry
   quickball
   quickclaw
@@ -2239,6 +2282,9 @@ enum ItemsEnum {
   razorfang
   razzberry
   reapercloth
+  redcanariplushlv1
+  redcanariplushlv2
+  redcanariplushlv3
   redcard
   redchain
   redorb
@@ -2246,6 +2292,7 @@ enum ItemsEnum {
   redscale
   repeatball
   revealglass
+  revitalizingtwig
   ribbonsweet
   ridepager
   rindoberry
@@ -2286,12 +2333,15 @@ enum ItemsEnum {
   scarletbook
   sceptilite
   scizorite
+  scolipite
   scopelens
+  scraftinite
   seaincense
   sealbag
   sealcase
   secretkey
   secretpotion
+  seedofmastery
   sharpbeak
   sharpedonite
   shedshell
@@ -2305,6 +2355,7 @@ enum ItemsEnum {
   silverpowder
   silverwing
   sitrusberry
+  skarmorite
   skullfossil
   skyplate
   slowbronite
@@ -2328,6 +2379,7 @@ enum ItemsEnum {
   squirtbottle
   ssticket
   starfberry
+  starminite
   starsweet
   steelgem
   steeliumz
@@ -2343,6 +2395,7 @@ enum ItemsEnum {
   suitekey
   sunflute
   sunstone
+  superlumiosegalette
   superpotion
   superrod
   surgebadge
@@ -2353,6 +2406,7 @@ enum ItemsEnum {
   tangaberry
   tapuniumz
   tartapple
+  tastytrash
   tea
   teachytv
   teraorb
@@ -2478,6 +2532,7 @@ enum ItemsEnum {
   upgrade
   utilityumbrella
   venusaurite
+  victreebelite
   vilevial
   violetbook
   vsrecorder
@@ -2509,6 +2564,7 @@ enum ItemsEnum {
   zpowering
   zring
   zygardecube
+  zygardite
 }
 
 "The supported moves"
@@ -3086,6 +3142,7 @@ enum MovesEnum {
   nightmare
   nightshade
   nightslash
+  nihillight
   nobleroar
   noretreat
   noxioustorque

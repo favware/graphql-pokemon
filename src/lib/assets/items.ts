@@ -305,6 +305,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'barbaracite',
+    {
+      desc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Barbaracite',
+      shortDesc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'basementkey',
     {
       desc: 'A key that opens a door in the Goldenrod Tunnel.',
@@ -695,6 +704,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'chandelurite',
+    {
+      desc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chandelurite',
+      shortDesc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'charcoal',
     {
       desc: "Holder's Fire-type attacks have 1.2x power.",
@@ -749,6 +767,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Cherish Ball',
       shortDesc: 'A rare Poké Ball that has been crafted to commemorate an occasion.'
+    }
+  ],
+  [
+    'chesnautite',
+    {
+      desc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chesnaught',
+      shortDesc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -856,6 +883,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Clear Bell',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png'
+    }
+  ],
+  [
+    'clefablite',
+    {
+      desc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Clefablite',
+      shortDesc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1120,6 +1156,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'delphoxite',
+    {
+      desc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Delphoxite',
+      shortDesc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'destinyknot',
     {
       desc: 'If holder becomes infatuated, the other Pokémon also becomes infatuated.',
@@ -1251,6 +1296,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'dragalgite',
+    {
+      desc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Dragalgite',
+      shortDesc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'dragonfang',
     {
       desc: "Holder's Dragon-type attacks have 1.2x power.",
@@ -1267,6 +1321,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       isNonstandard: IsNonStandard.Past,
       name: 'Dragon Gem',
       shortDesc: "Holder's first successful Dragon-type attack will have 1.3x power. Single use."
+    }
+  ],
+  [
+    'dragoninite',
+    {
+      desc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Dragoninite',
+      shortDesc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1315,6 +1378,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 9,
       name: 'Dragon Tera Shard',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonterashard.png'
+    }
+  ],
+  [
+    'drampanite',
+    {
+      desc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Drampanite',
+      shortDesc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1400,6 +1472,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       name: 'Earth Plate',
       shortDesc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type."
+    }
+  ],
+  [
+    'eelektrossite',
+    {
+      desc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Eelektrossite',
+      shortDesc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1509,6 +1590,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'emboarite',
+    {
+      desc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Emboarite',
+      shortDesc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'endorsement',
     {
       desc: "A letter of recommendation that you'll need in order to participate in the Gym Challenge.",
@@ -1596,6 +1686,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'excadrite',
+    {
+      desc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Excadrite',
+      shortDesc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'expertbelt',
     {
       aliases: ['ebelt'],
@@ -1674,6 +1773,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'falinksite',
+    {
+      desc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Falinksite',
+      shortDesc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'famechecker',
     {
       desc: "A device that enables you to recall what you've heard and seen about famous people.",
@@ -1701,6 +1809,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       name: 'Fast Ball',
       shortDesc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.'
+    }
+  ],
+  [
+    'feraligite',
+    {
+      desc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Feraligite',
+      shortDesc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1847,6 +1964,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'floettite',
+    {
+      desc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Floettite',
+      shortDesc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'flowersweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
@@ -1971,6 +2097,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       name: 'Friend Ball',
       shortDesc: 'A Poké Ball that makes caught Pokémon more friendly.'
+    }
+  ],
+  [
+    'froslassite',
+    {
+      desc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Froslassite',
+      shortDesc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -2297,6 +2432,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'greninjite',
+    {
+      desc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Greninjite',
+      shortDesc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'grepaberry',
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
@@ -2418,6 +2562,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       name: 'Hard Stone',
       shortDesc: "Holder's Rock-type attacks have 1.2x power."
+    }
+  ],
+  [
+    'hawluchanite',
+    {
+      desc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Hawluchanite',
+      shortDesc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -3376,6 +3529,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'malamarite',
+    {
+      desc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Malamarite',
+      shortDesc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'maliciousarmor',
     {
       desc: 'Evolves Charcadet into Ceruledge when used.',
@@ -3487,6 +3649,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Mega Bracelet',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
+    }
+  ],
+  [
+    'meganiumite',
+    {
+      desc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Meganiumite',
+      shortDesc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -4473,6 +4644,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       name: 'Premier Ball',
       shortDesc: 'A rare Poké Ball that has been crafted to commemorate an event.'
+    }
+  ],
+  [
+    'prettyfeather',
+    {
+      desc: "Though this feather is beautiful, it's just a regular feather and has no effect.",
+      gen: 5,
+      name: 'Pretty Feather',
+      shortDesc: "Though this feather is beautiful, it's just a regular feather and has no effect."
     }
   ],
   [
@@ -7432,183 +7612,12 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'barbaracite',
-    {
-      desc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Barbaracite',
-      shortDesc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'chandelurite',
-    {
-      desc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Chandelurite',
-      shortDesc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
     'chesnaughtite',
     {
       desc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.',
       gen: 9,
       name: 'Chesnaughtite',
       shortDesc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'clefablite',
-    {
-      desc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Clefablite',
-      shortDesc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'delphoxite',
-    {
-      desc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Delphoxite',
-      shortDesc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'dragalgite',
-    {
-      desc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Dragalgite',
-      shortDesc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'dragoninite',
-    {
-      desc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Dragoninite',
-      shortDesc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'drampanite',
-    {
-      desc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Drampanite',
-      shortDesc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'eelektrossite',
-    {
-      desc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Eelektrossite',
-      shortDesc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'emboarite',
-    {
-      desc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Emboarite',
-      shortDesc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'excadrite',
-    {
-      desc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Excadrite',
-      shortDesc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'falinksite',
-    {
-      desc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Falinksite',
-      shortDesc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'feraligite',
-    {
-      desc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Feraligite',
-      shortDesc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'floettite',
-    {
-      desc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Floettite',
-      shortDesc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'froslassite',
-    {
-      desc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Froslassite',
-      shortDesc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'greninjite',
-    {
-      desc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Greninjite',
-      shortDesc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'hawluchanite',
-    {
-      desc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Hawluchanite',
-      shortDesc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'malamarite',
-    {
-      desc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Malamarite',
-      shortDesc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'meganiumite',
-    {
-      desc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.',
-      gen: 9,
-      name: 'Meganiumite',
-      shortDesc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.'
-    }
-  ],
-  [
-    'prettyfeather',
-    {
-      desc: "Though this feather is beautiful, it's just a regular feather and has no effect.",
-      gen: 5,
-      name: 'Pretty Feather',
-      shortDesc: "Though this feather is beautiful, it's just a regular feather and has no effect."
     }
   ],
   [
@@ -7672,6 +7681,296 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 9,
       name: 'Zygardite',
       shortDesc: 'If held by a Zygarde in Complete Forme, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'seedofmastery',
+    {
+      desc: "A rare variety of seed. A certain person can help you upgrade your Pokémon's moves into Plus Moves if given one of these.",
+      gen: 9,
+      name: 'Seed of Mastery',
+      shortDesc: "Used to upgrade a Pokemon's moves into Plus Moves",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/seedofmastery.png'
+    }
+  ],
+  [
+    'keytoroom202',
+    {
+      desc: 'A key for room 202 at Hotel Z',
+      gen: 9,
+      name: 'Key to Room 202',
+      shortDesc: 'A key for room 202 at Hotel Z',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom202.png'
+    }
+  ],
+  [
+    'superlumiosegalette',
+    {
+      desc: 'A popular treat among certain residents of Lumiose City. This variety is baked to be incredibly firm so that one can savor the crunch.',
+      gen: 9,
+      name: 'Super Lumiose Galette',
+      shortDesc: 'A popular treat among certain residents of Lumiose City.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/superlumiosegalette.png'
+    }
+  ],
+  [
+    'labkeycarda',
+    {
+      desc: "A key card that can be used in Lysandre Labs. The locks were each programmed to take different keys for security purposes, but mostly it's just an inconvenience.",
+      gen: 9,
+      name: 'Lab Key Card A',
+      shortDesc: 'A key card that can be used in Lysandre Labs.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/labkeycarda.png'
+    }
+  ],
+  [
+    'labkeycardb',
+    {
+      desc: "A key card that can be used in Lysandre Labs. The locks were each programmed to take different keys for security purposes, but mostly it's just an inconvenience.",
+      gen: 9,
+      name: 'Lab Key Card B',
+      shortDesc: 'A key card that can be used in Lysandre Labs.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/labkeycardb.png'
+    }
+  ],
+  [
+    'labkeycardc',
+    {
+      desc: "A key card that can be used in Lysandre Labs. The locks were each programmed to take different keys for security purposes, but mostly it's just an inconvenience.",
+      gen: 9,
+      name: 'Lab Key Card C',
+      shortDesc: 'A key card that can be used in Lysandre Labs.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/labkeycardc.png'
+    }
+  ],
+  [
+    'pebble',
+    {
+      desc: 'An ordinary pebble entrusted to you by the Pokémon known as Zygarde. It is completely unremarkable.',
+      gen: 9,
+      name: 'Pebble',
+      shortDesc: 'An unremarkable pebble.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pebble.png'
+    }
+  ],
+  [
+    'cherishedring',
+    {
+      desc: 'A ring that an old woman asked you to retrieve. It seems to hold some value to her.',
+      gen: 9,
+      name: 'Cherished Ring',
+      shortDesc: 'A valuable ring that belongs to an old woman.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cherishedring.png'
+    }
+  ],
+  [
+    'colorfulscrew',
+    {
+      desc: 'A colorful screw. These screws have been left here and there around Lumiose City, and the staff at Racine Construction will trade you goods in exchange for them.',
+      gen: 9,
+      name: 'Colorful Screw',
+      shortDesc: 'A valuable ring that belongs to an old woman.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cherishedring.png'
+    }
+  ],
+  [
+    'autographedplush',
+    {
+      desc: 'A plush doll that has been autographed by Canari. Just having one puts you in a good mood.',
+      gen: 9,
+      name: 'Autographed Plush',
+      shortDesc: 'A plush doll that has been autographed by Canari.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/autographedplush.png'
+    }
+  ],
+  [
+    'tastytrash',
+    {
+      desc: 'Food waste made up of cooking ingredients. Although they were thrown away after the best parts were used, some edible bits still remain.',
+      gen: 9,
+      name: 'Tasty Trash',
+      shortDesc: 'Food waste made up of cooking ingredients.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tastytrash.png'
+    }
+  ],
+  [
+    'revitalizingtwig',
+    {
+      desc: "A small twig that is beloved by Fennekin. It's said that chewing on one of these twigs can be both soothing and cheering.",
+      gen: 9,
+      name: 'Revitalizing Twig',
+      shortDesc: 'A small twig that is beloved by Fennekin.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/revitalizingtwig.png'
+    }
+  ],
+  [
+    'lidasthings',
+    {
+      desc: "Lida's accessories and other items that she uses when practicing dance. They're kept in a small pouch that was handmade by Naveen.",
+      gen: 9,
+      name: "Lida's Things",
+      shortDesc: "Lida's accessories and other items that she uses when practicing dance.",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/za/th/lida'sthings.png"
+    }
+  ],
+  [
+    'megashard',
+    {
+      desc: 'A mysterious shard that can be found after smashing Mega Crystals using Pokémon moves. It seems that some people collect these shards.',
+      gen: 9,
+      name: 'Mega Shard',
+      shortDesc: 'A mysterious shard that can be found after smashing Mega Crystals',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/megashard.png'
+    }
+  ],
+  [
+    'redcanariplushlv1',
+    {
+      desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get by a little.',
+      gen: 9,
+      name: 'Red Canari Plush Lv. 1',
+      shortDesc: 'A red Canari plush doll that increases Exp. Points by a little.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.1.png'
+    }
+  ],
+  [
+    'redcanariplushlv2',
+    {
+      desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get.',
+      gen: 9,
+      name: 'Red Canari Plush Lv. 2',
+      shortDesc: 'A red Canari plush doll that increases Exp. Points.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.2.png'
+    }
+  ],
+  [
+    'redcanariplushlv3',
+    {
+      desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get by a lot.',
+      gen: 9,
+      name: 'Red Canari Plush Lv. 3',
+      shortDesc: 'A red Canari plush doll that increases Exp. Points by a lot.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.3.png'
+    }
+  ],
+  [
+    'goldcanariplushlv1',
+    {
+      desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles by a little.',
+      gen: 9,
+      name: 'Gold Canari Plush Lv. 1',
+      shortDesc: 'A gold Canari plush doll that increases money received from battles by a little.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.1.png'
+    }
+  ],
+  [
+    'goldcanariplushlv2',
+    {
+      desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles.',
+      gen: 9,
+      name: 'Gold Canari Plush Lv. 2',
+      shortDesc: 'A gold Canari plush doll that increases money received from battles.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.2.png'
+    }
+  ],
+  [
+    'goldcanariplushlv3',
+    {
+      desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles by a lot.',
+      gen: 9,
+      name: 'Gold Canari Plush Lv. 3',
+      shortDesc: 'A gold Canari plush doll that increases money received from battles by a lot.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.3.png'
+    }
+  ],
+  [
+    'pinkcanariplushlv1',
+    {
+      desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals by a little.",
+      gen: 9,
+      name: 'Pink Canari Plush Lv. 1',
+      shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals by a little.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.1.png'
+    }
+  ],
+  [
+    'pinkcanariplushlv2',
+    {
+      desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals.",
+      gen: 9,
+      name: 'Pink Canari Plush Lv. 2',
+      shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.2.png'
+    }
+  ],
+  [
+    'pinkcanariplushlv3',
+    {
+      desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals by a lot.",
+      gen: 9,
+      name: 'Pink Canari Plush Lv. 3',
+      shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals by a lot.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.1.png'
+    }
+  ],
+  [
+    'greencanariplushlv1',
+    {
+      desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you a little less likely to black out from taking damage.',
+      gen: 9,
+      name: 'Green Canari Plush Lv. 1',
+      shortDesc: 'A green Canari plush doll that makes you a little less likely to black out.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.1.png'
+    }
+  ],
+  [
+    'greencanariplushlv2',
+    {
+      desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you less likely to black out from taking damage.',
+      gen: 9,
+      name: 'Green Canari Plush Lv. 2',
+      shortDesc: 'A green Canari plush doll that makes you a less likely to black out.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.2.png'
+    }
+  ],
+  [
+    'greencanariplushlv3',
+    {
+      desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you a lot less likely to black out from taking damage.',
+      gen: 9,
+      name: 'Green Canari Plush Lv. 3',
+      shortDesc: 'A green Canari plush doll that makes you a lot less likely to black out.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.3.png'
+    }
+  ],
+  [
+    'bluecanariplushlv1',
+    {
+      desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it a little more likely that you'll succeed at catching Pokémon.",
+      gen: 9,
+      name: 'Blue Canari Plush Lv. 3',
+      shortDesc: 'A blue Canari plush doll that makes you a lot more likely to catch Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.1.png'
+    }
+  ],
+  [
+    'bluecanariplushlv2',
+    {
+      desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it more likely that you'll succeed at catching Pokémon.",
+      gen: 9,
+      name: 'Blue Canari Plush Lv. 2',
+      shortDesc: 'A blue Canari plush doll that makes you more likely to catch Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.2.png'
+    }
+  ],
+  [
+    'bluecanariplushlv3',
+    {
+      desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it a lot more likely that you'll succeed at catching Pokémon.",
+      gen: 9,
+      name: 'Blue Canari Plush Lv. 3',
+      shortDesc: 'A blue Canari plush doll that makes you a lot more likely to catch Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.3.png'
     }
   ]
 ]);

@@ -22807,6 +22807,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Although it has a massive body, its powerful hind legs enable it to move quickly, even on land."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It usually moves slowly, but it goes at blinding speed when it attacks and bites prey."
     }
   ],
   "161": [
@@ -52417,6 +52421,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Seemingly curious about people, they gather around footsteps they find on snowy mountains."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "In the spring, it grows berries with the texture of frozen treats around its belly."
     }
   ],
   "460": [
@@ -52499,6 +52507,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "They appear when the snow flowers bloom. When the petals fall, they retreat to places unknown again."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It blankets wide areas in snow by whipping up blizzards. It is also known as the Ice Monster."
     }
   ],
   "461": [
@@ -53375,6 +53387,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "The younger they are, the more they smell like fresh grass. With age, their fragrance takes on the odor of fallen leaves."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air."
     }
   ],
   "471": [
@@ -53473,6 +53489,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It lowers its body heat to freeze its fur. The hairs then become like needles it can fire."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "By controlling its body heat, it can freeze the atmosphere around it to make a diamond-dust flurry."
     }
   ],
   "472": [
@@ -53809,6 +53829,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Because it can sense what its foe is thinking, its attacks burst out first, fast, and fierce."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "A master of courtesy and swordsmanship, it fights using the extending swords on its elbows."
     }
   ],
   "476": [
@@ -54079,6 +54103,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It freezes prey by blowing its -58 degree Fahrenheit breath. It is said to then secretly display its prey."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It freezes foes with an icy breath that is nearly -60 degrees Fahrenheit. What seems to be its body is actually hollow."
     }
   ],
   "479": [

@@ -3,12 +3,14 @@ import { each } from 'async';
 import * as cheerio from 'cheerio';
 import { green, yellow } from 'colorette';
 import { writeFile } from 'node:fs/promises';
-import { inspectData, replaceEnumLikeValues, writeDataToFileAndPrettify } from '../../../utils.js';
+import { inspectData, replaceEnumLikeValues, userAgentHeader, writeDataToFileAndPrettify } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon, type ParsedPokemon } from '../utils/bulbapedia-utils.js';
 import { classificationsUrl, generations } from '../utils/constants.js';
 import { fetchFlareSolverr } from '../utils/flaresolverr-session-management.js';
 import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from '../utils/utils.js';
 import { log, logFile } from './log-wrapper.js';
+import { fetch, FetchMethods, FetchMediaContentTypes, FetchResultTypes } from '@sapphire/fetch';
+import type { FlareSolverrResponse } from '../utils/types.js';
 
 interface SucceededPokemon {
   num: number;
@@ -18,6 +20,7 @@ interface SucceededPokemon {
   classification: string;
 }
 
+const withFlaresolverr = Boolean(process.env.CI);
 const failedPokemon: ParsedPokemon[] = [];
 const succeededPokemon: SucceededPokemon[] = [];
 
@@ -25,23 +28,23 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
-const response = await fetchFlareSolverr(classificationsUrl);
-// const response = await fetch(
-//   classificationsUrl,
-//   {
-//     method: FetchMethods.Get,
-//     headers: {
-//       ...userAgentHeader,
-//       'Content-Type': FetchMediaContentTypes.JSON
-//     }
-//   },
-//   FetchResultTypes.Text
-// );
+const response = withFlaresolverr
+  ? await fetchFlareSolverr(classificationsUrl)
+  : await fetch(
+      classificationsUrl,
+      {
+        method: FetchMethods.Get,
+        headers: {
+          ...userAgentHeader,
+          'Content-Type': FetchMediaContentTypes.JSON
+        }
+      },
+      FetchResultTypes.Text
+    );
 
 await log({ msg: `Fetched data`, color: yellow, isBold: false, isIndent: true });
 
-const $ = cheerio.load(response.solution.response);
-// const $ = cheerio.load(response);
+const $ = withFlaresolverr ? cheerio.load((response as FlareSolverrResponse).solution.response) : cheerio.load(response as string);
 await log({ msg: `Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
 const text = $('#wpTextbox1').text();

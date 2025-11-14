@@ -7430,6 +7430,249 @@ export const items = new Collection<string, PokemonTypes.Item>([
       name: 'Zygarde Cube',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
     }
+  ],
+  [
+    'barbaracite',
+    {
+      desc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Barbaracite',
+      shortDesc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'chandelurite',
+    {
+      desc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chandelurite',
+      shortDesc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'chesnaughtite',
+    {
+      desc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chesnaughtite',
+      shortDesc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'clefablite',
+    {
+      desc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Clefablite',
+      shortDesc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'delphoxite',
+    {
+      desc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Delphoxite',
+      shortDesc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'dragalgite',
+    {
+      desc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Dragalgite',
+      shortDesc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'dragoninite',
+    {
+      desc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Dragoninite',
+      shortDesc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'drampanite',
+    {
+      desc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Drampanite',
+      shortDesc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'eelektrossite',
+    {
+      desc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Eelektrossite',
+      shortDesc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'emboarite',
+    {
+      desc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Emboarite',
+      shortDesc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'excadrite',
+    {
+      desc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Excadrite',
+      shortDesc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'falinksite',
+    {
+      desc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Falinksite',
+      shortDesc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'feraligite',
+    {
+      desc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Feraligite',
+      shortDesc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'floettite',
+    {
+      desc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Floettite',
+      shortDesc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'froslassite',
+    {
+      desc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Froslassite',
+      shortDesc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'greninjite',
+    {
+      desc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Greninjite',
+      shortDesc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'hawluchanite',
+    {
+      desc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Hawluchanite',
+      shortDesc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'malamarite',
+    {
+      desc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Malamarite',
+      shortDesc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'meganiumite',
+    {
+      desc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Meganiumite',
+      shortDesc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'prettyfeather',
+    {
+      desc: "Though this feather is beautiful, it's just a regular feather and has no effect.",
+      gen: 5,
+      name: 'Pretty Feather',
+      shortDesc: "Though this feather is beautiful, it's just a regular feather and has no effect."
+    }
+  ],
+  [
+    'pyroarite',
+    {
+      desc: 'If held by a Pyroar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Pyroarite',
+      shortDesc: 'If held by a Pyroar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'scolipite',
+    {
+      desc: 'If held by a Scolipede, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Scolipite',
+      shortDesc: 'If held by a Scolipede, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'scraftinite',
+    {
+      desc: 'If held by a Scrafty, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Scraftinite',
+      shortDesc: 'If held by a Scrafty, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'skarmorite',
+    {
+      desc: 'If held by a Skarmory, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Skarmorite',
+      shortDesc: 'If held by a Skarmory, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'starminite',
+    {
+      desc: 'If held by a Starmie, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Starminite',
+      shortDesc: 'If held by a Starmie, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'victreebelite',
+    {
+      desc: 'If held by a Victreebel, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Victreebelite',
+      shortDesc: 'If held by a Victreebel, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'zygardite',
+    {
+      desc: 'If held by a Zygarde in Complete Forme, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Zygardite',
+      shortDesc: 'If held by a Zygarde in Complete Forme, this item allows it to Mega Evolve in battle.'
+    }
   ]
 ]);
 

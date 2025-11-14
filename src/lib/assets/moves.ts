@@ -16007,6 +16007,19 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       target: 'All Adjacent',
       type: 'Fire'
     }
+  ],
+  [
+    'nihillight',
+    {
+      accuracy: 100,
+      category: 'Special',
+      name: 'Nihil Light',
+      pp: 10,
+      priority: 0,
+      shortDesc:
+        'The user attacks by unleashing a powerful light that defies all laws of nature, striking even Fairy types and ignoring any stat changes affecting its targets.',
+      type: 'Dragon'
+    }
   ]
 ]);
 

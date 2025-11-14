@@ -81,8 +81,11 @@ for (const [key, data] of currentMoves.entries()) {
 }
 
 for (const [key, moveFromData] of movesDataEntries) {
-  // Skip if the move is already in the map, or if the key is 10000000voltthunderbolt (which is named tenmillionvoltthunderbolt)
-  if (newMap.has(key) || key === '10000000voltthunderbolt') continue;
+  // Skip if
+  // 1. The move is already in the map
+  // 2. The key is 10000000voltthunderbolt (which is named tenmillionvoltthunderbolt)
+  // 3. The move is nihillight (which is missing text data in Showdown)
+  if (newMap.has(key) || key === '10000000voltthunderbolt' || key === 'nihillight') continue;
 
   const moveFromText = movesTextEntries.find(([moveTextKey]) => moveTextKey === key)?.at(1) as MoveText | undefined;
 
@@ -92,7 +95,7 @@ for (const [key, moveFromData] of movesDataEntries) {
   }
 
   const data: PokemonTypes.Move = {
-    shortDesc: replacePokeWithAccentedPoke(moveFromText.shortDesc),
+    shortDesc: replacePokeWithAccentedPoke(moveFromText.shortDesc ?? ''),
     name: moveFromData.name,
     category: moveFromData.category,
     pp: moveFromData.pp,

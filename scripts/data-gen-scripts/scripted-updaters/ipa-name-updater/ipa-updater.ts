@@ -1,14 +1,16 @@
+import { pokedex } from '#assets/pokedex.js';
+import { fetch, FetchMediaContentTypes, FetchMethods, FetchResultTypes } from '@sapphire/fetch';
 import { each } from 'async';
 import * as cheerio from 'cheerio';
 import { green, yellow } from 'colorette';
+import { writeFile } from 'node:fs/promises';
+import { inspectData, replaceEnumLikeValues, userAgentHeader, writeDataToFileAndPrettify } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon, type ParsedPokemon } from '../utils/bulbapedia-utils.js';
 import { generations, ipaNamesUrl } from '../utils/constants.js';
 import { fetchFlareSolverr } from '../utils/flaresolverr-session-management.js';
+import type { FlareSolverrResponse } from '../utils/types.js';
 import { getModulePathForGeneration, getPokemonGenerationForDexNumber } from '../utils/utils.js';
 import { log, logFile } from './log-wrapper.js';
-import { pokedex } from '#assets/pokedex.js';
-import { inspectData, replaceEnumLikeValues, writeDataToFileAndPrettify } from '../../../utils.js';
-import { writeFile } from 'node:fs/promises';
 
 interface SucceededPokemon {
   num: number;
@@ -24,6 +26,7 @@ function getPokemonFormLetter(forme: string | undefined): string {
   return '';
 }
 
+const withFlaresolverr = Boolean(process.env.CI);
 const failedPokemon: ParsedPokemon[] = [];
 const succeededPokemon: SucceededPokemon[] = [];
 
@@ -31,23 +34,23 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
-const response = await fetchFlareSolverr(ipaNamesUrl);
-// const response = await fetch(
-//   ipaNamesUrl,
-//   {
-//     method: FetchMethods.Get,
-//     headers: {
-//       ...userAgentHeader,
-//       'Content-Type': FetchMediaContentTypes.JSON
-//     }
-//   },
-//   FetchResultTypes.Text
-// );
+const response = withFlaresolverr
+  ? await fetchFlareSolverr(ipaNamesUrl)
+  : await fetch(
+      ipaNamesUrl,
+      {
+        method: FetchMethods.Get,
+        headers: {
+          ...userAgentHeader,
+          'Content-Type': FetchMediaContentTypes.JSON
+        }
+      },
+      FetchResultTypes.Text
+    );
 
 await log({ msg: `Fetched data`, color: yellow, isBold: false, isIndent: true });
 
-const $ = cheerio.load(response.solution.response);
-// const $ = cheerio.load(response);
+const $ = withFlaresolverr ? cheerio.load((response as FlareSolverrResponse).solution.response) : cheerio.load(response as string);
 await log({ msg: `Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
 const text = $('#wpTextbox1').text();

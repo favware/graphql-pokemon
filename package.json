@@ -72,7 +72,7 @@
     "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
   },
   "dependencies": {
-    "graphql": "16.11.0"
+    "graphql": "16.12.0"
   },
   "devDependencies": {
     "@apollo/server": "^5.1.0",
@@ -81,7 +81,7 @@
     "@commitlint/config-conventional": "^20.0.0",
     "@discordjs/collection": "^2.1.1",
     "@favware/cliff-jumper": "^6.0.0",
-    "@graphql-codegen/cli": "^6.0.1",
+    "@graphql-codegen/cli": "^6.0.2",
     "@graphql-codegen/schema-ast": "^5.0.0",
     "@graphql-codegen/typescript": "^5.0.2",
     "@graphql-codegen/typescript-resolvers": "^5.1.0",
@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "1.14.0",
+    "@swc/core": "1.15.1",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
     "@types/koa": "^3.0.1",
@@ -103,7 +103,7 @@
     "@types/node": "^24.8.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^4.0.6",
+    "@vitest/coverage-v8": "^4.0.8",
     "async": "^3.2.6",
     "cheerio": "^1.1.2",
     "colorette": "^2.0.20",
@@ -120,10 +120,10 @@
     "prettier": "^3.6.2",
     "replace-in-file": "^8.3.0",
     "rimraf": "^6.1.0",
-    "tsup": "^8.5.0",
+    "tsup": "^8.5.1",
     "tsx": "^4.20.6",
     "typescript": "~5.8.3",
-    "vitest": "^4.0.6"
+    "vitest": "^4.0.8"
   },
   "resolutions": {
     "graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
@@ -164,7 +164,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.10.3",
+  "packageManager": "yarn@4.11.0",
   "volta": {
     "node": "24.11.1"
   }

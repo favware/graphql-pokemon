@@ -1290,7 +1290,7 @@ enum PokemonEnum {
   flabebe
   floette
   floetteeternal
-  floettemega
+  floeettemega
   florges
   skiddo
   gogoat
@@ -1856,7 +1856,6 @@ enum ItemsEnum {
   cherishball
   cherishedring
   chesnaughtite
-  chesnautite
   chestoberry
   chilanberry
   chilldrive

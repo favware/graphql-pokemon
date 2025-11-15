@@ -1773,6 +1773,7 @@ enum ItemsEnum {
   auroraticket
   auspiciousarmor
   autograph
+  autographedplush
   azureflute
   babiriberry
   bandautograph
@@ -1799,6 +1800,9 @@ enum ItemsEnum {
   blacksludge
   blastoisinite
   blazikenite
+  bluecanariplushlv1
+  bluecanariplushlv2
+  bluecanariplushlv3
   bluecard
   blueorb
   bluepetal
@@ -1825,7 +1829,9 @@ enum ItemsEnum {
   chartiberry
   cheriberry
   cherishball
+  cherishedring
   chesnaughtite
+  chesnautite
   chestoberry
   chilanberry
   chilldrive
@@ -1842,6 +1848,7 @@ enum ItemsEnum {
   cobaberry
   coincase
   colburberry
+  colorfulscrew
   colressmchn
   contestcostume
   contestpass
@@ -1984,6 +1991,9 @@ enum ItemsEnum {
   gogoggles
   goldberry
   goldbottlecap
+  goldcanariplushlv1
+  goldcanariplushlv2
+  goldcanariplushlv3
   goldteeth
   goodrod
   gracidea
@@ -1996,6 +2006,9 @@ enum ItemsEnum {
   grassterashard
   grassyseed
   greatball
+  greencanariplushlv1
+  greencanariplushlv2
+  greencanariplushlv3
   greenpetal
   greninjite
   grepaberry
@@ -2053,12 +2066,16 @@ enum ItemsEnum {
   keystone
   keytoroom1
   keytoroom2
+  keytoroom202
   keytoroom4
   keytoroom6
   kingsrock
   kofuswallet
   kommoniumz
   koraidonspokeball
+  labkeycarda
+  labkeycardb
+  labkeycardc
   laggingtail
   lansatberry
   latiasite
@@ -2074,6 +2091,7 @@ enum ItemsEnum {
   letter
   levelball
   libertypass
+  lidasthings
   liechiberry
   lifeorb
   liftkey
@@ -2126,6 +2144,7 @@ enum ItemsEnum {
   megabracelet
   meganiumite
   megaring
+  megashard
   membercard
   mentalherb
   metagrossite
@@ -2186,6 +2205,7 @@ enum ItemsEnum {
   pass
   passhoberry
   payapaberry
+  pebble
   pechaberry
   permit
   persimberry
@@ -2196,6 +2216,9 @@ enum ItemsEnum {
   pikashuniumz
   pinapberry
   pinkbow
+  pinkcanariplushlv1
+  pinkcanariplushlv2
+  pinkcanariplushlv3
   pinkpetal
   pinsirite
   pixieplate
@@ -2261,6 +2284,9 @@ enum ItemsEnum {
   razorfang
   razzberry
   reapercloth
+  redcanariplushlv1
+  redcanariplushlv2
+  redcanariplushlv3
   redcard
   redchain
   redorb
@@ -2268,6 +2294,7 @@ enum ItemsEnum {
   redscale
   repeatball
   revealglass
+  revitalizingtwig
   ribbonsweet
   ridepager
   rindoberry
@@ -2316,6 +2343,7 @@ enum ItemsEnum {
   sealcase
   secretkey
   secretpotion
+  seedofmastery
   sharpbeak
   sharpedonite
   shedshell
@@ -2369,6 +2397,7 @@ enum ItemsEnum {
   suitekey
   sunflute
   sunstone
+  superlumiosegalette
   superpotion
   superrod
   surgebadge
@@ -2379,6 +2408,7 @@ enum ItemsEnum {
   tangaberry
   tapuniumz
   tartapple
+  tastytrash
   tea
   teachytv
   teraorb

@@ -94,7 +94,7 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.1",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "1.15.1",
+    "@swc/core": "1.15.2",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
     "@types/koa": "^3.0.1",
@@ -103,7 +103,7 @@
     "@types/node": "^24.8.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^4.0.8",
+    "@vitest/coverage-v8": "^4.0.9",
     "async": "^3.2.6",
     "cheerio": "^1.1.2",
     "colorette": "^2.0.20",
@@ -123,7 +123,7 @@
     "tsup": "^8.5.1",
     "tsx": "^4.20.6",
     "typescript": "~5.8.3",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.9"
   },
   "resolutions": {
     "graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",

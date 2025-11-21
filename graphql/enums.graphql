@@ -479,6 +479,7 @@ enum PokemonEnum {
   nidoking
   clefairy
   clefable
+  clefablemega
   vulpix
   vulpixalola
   ninetales
@@ -526,6 +527,7 @@ enum PokemonEnum {
   bellsprout
   weepinbell
   victreebel
+  victreebelmega
   tentacool
   tentacruel
   geodude
@@ -597,6 +599,7 @@ enum PokemonEnum {
   seaking
   staryu
   starmie
+  starmiemega
   mrmime
   mrmimegalar
   scyther
@@ -639,6 +642,7 @@ enum PokemonEnum {
   dratini
   dragonair
   dragonite
+  dragonitemega
   mewtwo
   mewtwomegax
   mewtwomegay
@@ -646,6 +650,7 @@ enum PokemonEnum {
   chikorita
   bayleef
   meganium
+  meganiummega
   cyndaquil
   quilava
   typhlosion
@@ -653,6 +658,7 @@ enum PokemonEnum {
   totodile
   croconaw
   feraligatr
+  feraligatrmega
   sentret
   furret
   hoothoot
@@ -730,6 +736,7 @@ enum PokemonEnum {
   delibird
   mantine
   skarmory
+  skarmorymega
   houndour
   houndoom
   houndoommega
@@ -1021,6 +1028,7 @@ enum PokemonEnum {
   probopass
   dusknoir
   froslass
+  froslassmega
   rotom
   rotomheat
   rotomwash
@@ -1070,6 +1078,7 @@ enum PokemonEnum {
   tepig
   pignite
   emboar
+  emboarmega
   oshawott
   dewott
   samurott
@@ -1101,6 +1110,7 @@ enum PokemonEnum {
   swoobat
   drilbur
   excadrill
+  excadrillmega
   audino
   audinomega
   timburr
@@ -1117,6 +1127,7 @@ enum PokemonEnum {
   venipede
   whirlipede
   scolipede
+  scolipedemega
   cottonee
   whimsicott
   petilil
@@ -1139,6 +1150,7 @@ enum PokemonEnum {
   crustle
   scraggy
   scrafty
+  scraftymega
   sigilyph
   yamask
   yamaskgalar
@@ -1189,11 +1201,13 @@ enum PokemonEnum {
   tynamo
   eelektrik
   eelektross
+  eelektrossmega
   elgyem
   beheeyem
   litwick
   lampent
   chandelure
+  chandeluremega
   axew
   fraxure
   haxorus
@@ -1250,13 +1264,16 @@ enum PokemonEnum {
   chespin
   quilladin
   chesnaught
+  chesnaughtmega
   fennekin
   braixen
   delphox
+  delphoxmega
   froakie
   frogadier
   greninja
   greninjaash
+  greninjamega
   bunnelby
   diggersby
   fletchling
@@ -1269,6 +1286,7 @@ enum PokemonEnum {
   vivillonpokeball
   litleo
   pyroar
+  pyroarmega
   flabebe
   floette
   floetteeternal
@@ -1292,10 +1310,13 @@ enum PokemonEnum {
   slurpuff
   inkay
   malamar
+  malamarmega
   binacle
   barbaracle
+  barbaraclemega
   skrelp
   dragalge
+  dragalgemega
   clauncher
   clawitzer
   helioptile
@@ -1306,6 +1327,7 @@ enum PokemonEnum {
   aurorus
   sylveon
   hawlucha
+  hawluchamega
   dedenne
   carbink
   goomy
@@ -1335,6 +1357,7 @@ enum PokemonEnum {
   zygarde
   zygarde10
   zygardecomplete
+  zygardecompletemega
   diancie
   dianciemega
   hoopa
@@ -1434,6 +1457,7 @@ enum PokemonEnum {
   mimikyubustedtotem
   bruxish
   drampa
+  drampamega
   dhelmise
   jangmoo
   hakamoo
@@ -1551,6 +1575,7 @@ enum PokemonEnum {
   alcremie
   alcremiegmax
   falinks
+  falinksmega
   pincurchin
   snom
   frosmoth

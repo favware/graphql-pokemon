@@ -2171,9 +2171,35 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 6425,
       num: 870,
       species: 'falinks',
+      otherFormes: ['falinksmega'],
       types: [TypesEnum.Fighting],
       weightkg: 62,
       classification: 'Formation Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/falinks.mp3'
+    }
+  ],
+  [
+    'falinksmega',
+    {
+      abilities: { first: 'battlearmor', hidden: 'defiant' },
+      baseStats: { hp: 65, atk: 135, def: 135, spa: 70, spd: 65, spe: 100 },
+      catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
+      color: 'Yellow',
+      baseSpecies: 'falinks',
+      eggGroups: ['Fairy', 'Mineral'],
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 1, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 1.6,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      num: 870,
+      otherFormes: ['falinks'],
+      species: 'falinks-mega',
+      types: [TypesEnum.Fighting],
+      weightkg: 99.0,
       cry: 'https://play.pokemonshowdown.com/audio/cries/falinks.mp3'
     }
   ],

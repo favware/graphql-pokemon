@@ -7824,153 +7824,53 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
-    'redcanariplushlv1',
-    {
-      desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get by a little.',
-      gen: 9,
-      name: 'Red Canari Plush Lv. 1',
-      shortDesc: 'A red Canari plush doll that increases Exp. Points by a little.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.1.png'
-    }
-  ],
-  [
-    'redcanariplushlv2',
+    'redcanariplush',
     {
       desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get.',
       gen: 9,
-      name: 'Red Canari Plush Lv. 2',
+      name: 'Red Canari Plush',
       shortDesc: 'A red Canari plush doll that increases Exp. Points.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.2.png'
     }
   ],
   [
-    'redcanariplushlv3',
-    {
-      desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get by a lot.',
-      gen: 9,
-      name: 'Red Canari Plush Lv. 3',
-      shortDesc: 'A red Canari plush doll that increases Exp. Points by a lot.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.3.png'
-    }
-  ],
-  [
-    'goldcanariplushlv1',
-    {
-      desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles by a little.',
-      gen: 9,
-      name: 'Gold Canari Plush Lv. 1',
-      shortDesc: 'A gold Canari plush doll that increases money received from battles by a little.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.1.png'
-    }
-  ],
-  [
-    'goldcanariplushlv2',
+    'goldcanariplush',
     {
       desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles.',
       gen: 9,
-      name: 'Gold Canari Plush Lv. 2',
+      name: 'Gold Canari Plush',
       shortDesc: 'A gold Canari plush doll that increases money received from battles.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.2.png'
     }
   ],
   [
-    'goldcanariplushlv3',
-    {
-      desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles by a lot.',
-      gen: 9,
-      name: 'Gold Canari Plush Lv. 3',
-      shortDesc: 'A gold Canari plush doll that increases money received from battles by a lot.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.3.png'
-    }
-  ],
-  [
-    'pinkcanariplushlv1',
-    {
-      desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals by a little.",
-      gen: 9,
-      name: 'Pink Canari Plush Lv. 1',
-      shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals by a little.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.1.png'
-    }
-  ],
-  [
-    'pinkcanariplushlv2',
+    'pinkcanariplush',
     {
       desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals.",
       gen: 9,
-      name: 'Pink Canari Plush Lv. 2',
+      name: 'Pink Canari Plush',
       shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.2.png'
     }
   ],
   [
-    'pinkcanariplushlv3',
-    {
-      desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals by a lot.",
-      gen: 9,
-      name: 'Pink Canari Plush Lv. 3',
-      shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals by a lot.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.1.png'
-    }
-  ],
-  [
-    'greencanariplushlv1',
-    {
-      desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you a little less likely to black out from taking damage.',
-      gen: 9,
-      name: 'Green Canari Plush Lv. 1',
-      shortDesc: 'A green Canari plush doll that makes you a little less likely to black out.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.1.png'
-    }
-  ],
-  [
-    'greencanariplushlv2',
+    'greencanariplush',
     {
       desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you less likely to black out from taking damage.',
       gen: 9,
-      name: 'Green Canari Plush Lv. 2',
+      name: 'Green Canari Plush',
       shortDesc: 'A green Canari plush doll that makes you a less likely to black out.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.2.png'
     }
   ],
   [
-    'greencanariplushlv3',
-    {
-      desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you a lot less likely to black out from taking damage.',
-      gen: 9,
-      name: 'Green Canari Plush Lv. 3',
-      shortDesc: 'A green Canari plush doll that makes you a lot less likely to black out.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.3.png'
-    }
-  ],
-  [
-    'bluecanariplushlv1',
-    {
-      desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it a little more likely that you'll succeed at catching Pokémon.",
-      gen: 9,
-      name: 'Blue Canari Plush Lv. 3',
-      shortDesc: 'A blue Canari plush doll that makes you a lot more likely to catch Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.1.png'
-    }
-  ],
-  [
-    'bluecanariplushlv2',
+    'bluecanariplush',
     {
       desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it more likely that you'll succeed at catching Pokémon.",
       gen: 9,
-      name: 'Blue Canari Plush Lv. 2',
+      name: 'Blue Canari Plush',
       shortDesc: 'A blue Canari plush doll that makes you more likely to catch Pokémon.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.2.png'
-    }
-  ],
-  [
-    'bluecanariplushlv3',
-    {
-      desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it a lot more likely that you'll succeed at catching Pokémon.",
-      gen: 9,
-      name: 'Blue Canari Plush Lv. 3',
-      shortDesc: 'A blue Canari plush doll that makes you a lot more likely to catch Pokémon.',
-      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.3.png'
     }
   ]
 ]);

@@ -145,7 +145,7 @@ describe('getPokemon', () => {
         maximumHatchTime: 5396,
         minimumHatchTime: 5140,
         num: 658,
-        otherFormes: ['greninjaash'],
+        otherFormes: ['greninjaash', 'greninjamega'],
         respelling: 'greh-NIN-jah',
         serebiiPage: 'https://www.serebii.net/pokedex-sv/greninja',
         shinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/greninja.gif',

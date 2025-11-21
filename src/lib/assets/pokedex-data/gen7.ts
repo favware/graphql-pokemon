@@ -2992,7 +2992,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       forme: 'Mega',
       formeLetter: 'M',
       genderRatio: { male: '50%', female: '50%' },
-      heightm: 3.0,
+      heightm: 3,
       isEggObtainable: true,
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,

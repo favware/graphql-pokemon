@@ -2200,7 +2200,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['falinks'],
       species: 'falinks-mega',
       types: [TypesEnum.Fighting],
-      weightkg: 99.0,
+      weightkg: 99,
       cry: 'https://play.pokemonshowdown.com/audio/cries/falinks.mp3'
     }
   ],

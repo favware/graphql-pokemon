@@ -2458,7 +2458,7 @@ describe('getAllPokemon', () => {
       { key: 'gimmighoul', species: 'gimmighoul' },
       {
         key: 'gimmighoulroaming',
-        species: 'gimmighoulroaming'
+        species: 'gimmighoul-roaming'
       },
       { key: 'gholdengo', species: 'gholdengo' },
       { key: 'wochien', species: 'Wo-Chien' },

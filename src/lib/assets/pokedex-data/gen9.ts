@@ -2577,7 +2577,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 12850,
       num: 999,
       otherFormes: ['gimmighoul'],
-      species: 'gimmighoulroaming',
+      species: 'gimmighoul-roaming',
       types: [TypesEnum.Ghost],
       weightkg: 0.1,
       classification: 'Coin Hunter Pokémon',

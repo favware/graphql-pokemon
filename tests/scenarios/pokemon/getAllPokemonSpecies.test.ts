@@ -1732,8 +1732,8 @@ describe('getAllPokemon', () => {
         species: 'floette-eternal'
       },
       {
-        key: 'floetteeternalmega',
-        species: 'floette-eternal-mega'
+        key: 'floettemega',
+        species: 'floette-mega'
       },
       { key: 'florges', species: 'florges' },
       { key: 'skiddo', species: 'skiddo' },

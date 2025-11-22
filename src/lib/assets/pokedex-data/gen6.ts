@@ -887,7 +887,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 670,
       species: 'floette-eternal',
-      otherFormes: ['floetteeternalmega'],
+      otherFormes: ['floettemega'],
       types: [TypesEnum.Fairy],
       weightkg: 0.9,
       aliases: ['eternalfloette', 'floettee', 'floetteeternalflower'],
@@ -897,7 +897,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'floetteeternalmega',
+    'floettemega',
     {
       abilities: { first: 'flowerveil' },
       baseSpecies: 'floette',
@@ -918,10 +918,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 668,
       otherFormes: ['floetteeternal'],
-      species: 'floette-eternal-mega',
+      species: 'floette-mega',
       types: [TypesEnum.Fairy],
       weightkg: 0.9,
-      aliases: ['eternalfloettemega', 'floettemega', 'floetteeternalflowermega'],
+      aliases: ['eternalfloettemega', 'floetteeternalflowermega'],
       cry: 'https://play.pokemonshowdown.com/audio/cries/floette.mp3',
       respelling: 'floh-ET',
       ipa: '/floʊˈɛt/'

@@ -647,15 +647,15 @@ describe('getAllPokemon', () => {
       { key: 'tauros', species: 'tauros' },
       {
         key: 'taurospaldeacombat',
-        species: 'tauros-paldea-combat'
+        species: 'tauros-paldeacombat'
       },
       {
         key: 'taurospaldeablaze',
-        species: 'tauros-paldea-blaze'
+        species: 'tauros-paldeablaze'
       },
       {
         key: 'taurospaldeaaqua',
-        species: 'tauros-paldea-aqua'
+        species: 'tauros-paldeaaqua'
       },
       { key: 'magikarp', species: 'magikarp' },
       { key: 'gyarados', species: 'gyarados' },

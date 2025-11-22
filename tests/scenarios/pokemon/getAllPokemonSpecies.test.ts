@@ -2410,7 +2410,7 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'dudunsparcethreesegment',
-        species: 'dudunsparcethreesegment'
+        species: 'dudunsparce-threesegment'
       },
       { key: 'kingambit', species: 'kingambit' },
       { key: 'greattusk', species: 'Great Tusk' },

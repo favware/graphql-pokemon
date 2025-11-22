@@ -2161,7 +2161,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 982,
       otherFormes: ['dudunsparce'],
       prevo: 'dunsparce',
-      species: 'dudunsparcethreesegment',
+      species: 'dudunsparce-threesegment',
       types: [TypesEnum.Normal],
       weightkg: 47.4,
       cry: 'https://play.pokemonshowdown.com/audio/cries/dudunsparce.mp3'

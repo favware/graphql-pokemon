@@ -1223,7 +1223,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 845,
       otherFormes: ['cramorant', 'cramorantgorging'],
-      species: 'Cramorant-Gulping',
+      species: 'cramorant-gulping',
       types: [TypesEnum.Flying, TypesEnum.Water],
       weightkg: 18,
       cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
@@ -1248,7 +1248,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 845,
       otherFormes: ['cramorant', 'cramorantgulping'],
-      species: 'Cramorant-Gorging',
+      species: 'cramorant-gorging',
       types: [TypesEnum.Flying, TypesEnum.Water],
       weightkg: 18,
       cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'

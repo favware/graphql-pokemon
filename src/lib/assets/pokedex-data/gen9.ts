@@ -303,7 +303,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 916,
       otherFormes: ['oinkologne'],
       prevo: 'lechonk',
-      species: 'oinkolognef',
+      species: 'oinkologne-f',
       types: [TypesEnum.Normal],
       weightkg: 120,
       cry: 'https://play.pokemonshowdown.com/audio/cries/oinkologne.mp3'
@@ -576,7 +576,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 925,
       prevo: 'tandemaus',
       otherFormes: ['maushold'],
-      species: 'mausholdfour',
+      species: 'maushold-four',
       types: [TypesEnum.Normal],
       weightkg: 2.8,
       cry: 'https://play.pokemonshowdown.com/audio/cries/maushold.mp3'

@@ -2110,11 +2110,11 @@ describe('getAllPokemon', () => {
       { key: 'cramorant', species: 'cramorant' },
       {
         key: 'cramorantgulping',
-        species: 'Cramorant-Gulping'
+        species: 'cramorant-gulping'
       },
       {
         key: 'cramorantgorging',
-        species: 'Cramorant-Gorging'
+        species: 'cramorant-gorging'
       },
       { key: 'arrokuda', species: 'arrokuda' },
       {
@@ -2308,7 +2308,7 @@ describe('getAllPokemon', () => {
       { key: 'oinkologne', species: 'oinkologne' },
       {
         key: 'oinkolognef',
-        species: 'oinkolognef'
+        species: 'oinkologne-f'
       },
       { key: 'tarountula', species: 'tarountula' },
       { key: 'spidops', species: 'spidops' },
@@ -2321,7 +2321,7 @@ describe('getAllPokemon', () => {
       { key: 'maushold', species: 'maushold' },
       {
         key: 'mausholdfour',
-        species: 'mausholdfour'
+        species: 'maushold-four'
       },
       { key: 'fidough', species: 'fidough' },
       { key: 'dachsbun', species: 'dachsbun' },

@@ -3459,6 +3459,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 905,
       otherFormes: ['enamorus'],
       species: 'enamorus-therian',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/enamorus-therian.gif',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/enamorus-therian.gif',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/enamorus-therian.gif',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/enamorus-therian.gif',
       types: [TypesEnum.Fairy, TypesEnum.Flying],
       weightkg: 48,
       legendary: true

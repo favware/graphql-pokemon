@@ -2125,7 +2125,7 @@ describe('getAllPokemon', () => {
       { key: 'toxtricity', species: 'toxtricity' },
       {
         key: 'toxtricitylowkey',
-        species: 'toxtricity-low-key'
+        species: 'toxtricity-lowkey'
       },
       {
         key: 'toxtricitygmax',
@@ -2133,7 +2133,7 @@ describe('getAllPokemon', () => {
       },
       {
         key: 'toxtricitylowkeygmax',
-        species: 'toxtricity-low-key-gmax'
+        species: 'toxtricity-lowkey-gmax'
       },
       { key: 'sizzlipede', species: 'sizzlipede' },
       {

@@ -1375,7 +1375,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 849,
       otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkeygmax'],
       prevo: 'toxel',
-      species: 'toxtricity-low-key',
+      species: 'toxtricity-lowkey',
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 40,
       aliases: ['toxtricityl', 'toxtricitylk'],

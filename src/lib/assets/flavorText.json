@@ -64685,6 +64685,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "When Sliggoo senses danger, the mucus coating its entire body becomes more concentrated— it'll dissolve anything."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its four horns are a high-performance radar system. It uses them to sense sounds and smells, rather than using ears or a nose."
     }
   ],
   "706": [
@@ -64739,6 +64743,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "This Pokémon is uncontrollable when enraged. It rampages on and on, lashing its tail with enough power to send a dump truck flying."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This very friendly dragon Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime."
     }
   ],
   "707": [
@@ -64789,6 +64797,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "In the past, noble families entrusted their vault keys to a Klefki. They passed the Klefki down through the generations, taking good care of it."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It never lets go of a key that it likes, so people give it the keys to vaults and safes as a way to prevent crime."
     }
   ],
   "708": [
@@ -64839,6 +64851,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "This Pokémon came to be when the spirit of a deceased child possessed a tree stump. It now wanders the forest searching for friends."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "According to old tales, these Pokémon are stumps possessed by the spirits of children who died while lost in the forest."
     }
   ],
   "709": [
@@ -64889,6 +64905,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Trevenant is very kind to Pokémon living in the forest. It doesn't even care if these Pokémon take up residence in the greenery on its head."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Using its roots as a nervous system, it controls the trees in the forest. It's kind to the Pokémon that reside in its body."
     }
   ],
   "710": [
@@ -64915,6 +64935,10 @@
     {
       "version_id": "Shield",
       "flavor_text": "Small Pumpkaboo are said to be the product of areas where few lost souls lingered."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "In keeping with the size of its body, this variety of Pumpkaboo takes the small spirits of children to the afterlife."
     }
   ],
   "711": [
@@ -64941,6 +64965,10 @@
     {
       "version_id": "Shield",
       "flavor_text": "A small-sized Pumpkaboo evolves into a small-sized Gourgeist. Its bodily proportions also get passed on to its descendants."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Small Gourgeist pretend to be children to fool adults. Anyone who falls for the act gets carried away to the hereafter."
     }
   ],
   "712": [
@@ -64979,6 +65007,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Bergmite protects itself by coating its body in ice formed by frigid air of -148 degrees Fahrenheit. It fights with Frigibax whenever they meet."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It blocks opponents' attacks with the ice that shields its body. If the ice breaks, this Pokémon uses cold air to quickly create new ice."
     }
   ],
   "713": [
@@ -65017,6 +65049,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "This Pokémon uses its massive icy body to flatten anything that gets in its way. When it's floating out on the ocean, it looks exactly like drift ice."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its ice-covered body is as hard as steel. Its enormous frame crushes anything that stands in its way."
     }
   ],
   "714": [
@@ -65059,6 +65095,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Noibat can change the frequency of its sound waves at will, and it generates ultrasonic waves of up to 200,000 hertz."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Even a robust wrestler will become dizzy and unable to stand when exposed to its 200,000-hertz ultrasonic waves."
     }
   ],
   "715": [
@@ -65101,6 +65141,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "In the dark, even Hydreigon are terrified of this Pokémon. But in the light, Noivern is the one that avoids battle."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark."
     }
   ],
   "716": [
@@ -65118,6 +65162,10 @@
     },
     {
       "version_id": "Alpha Sapphire",
+      "flavor_text": "When the horns on its head shine in seven colors, it is said to be sharing everlasting life."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "When the horns on its head shine in seven colors, it is said to be sharing everlasting life."
     }
   ],
@@ -65137,6 +65185,10 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It's said that when its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more."
     }
   ],
   "718": [
@@ -65171,6 +65223,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Some say it can change to an even more powerful form when battling those who threaten the ecosystem."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It's hypothesized that it's monitoring those who destroy the ecosystem from deep in the cave where it lives."
     }
   ],
   "719": [
@@ -65189,6 +65245,10 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It can instantly create many diamonds by compressing the carbon in the air between its hands."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Diancie is a spontaneous mutation of Carbink. Its pink, glimmering body is said to be the loveliest sight in the whole world."
     }
   ],
   "720": [
@@ -65207,6 +65267,10 @@
     {
       "version_id": "Alpha Sapphire",
       "flavor_text": "It is said to be able to seize anything it desires with its six rings and six huge arms. With its power sealed, it is transformed into a much smaller form."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses loops to gather things it likes and take them to its secret home. It also teleports through a loop."
     }
   ],
   "721": [
@@ -65224,6 +65288,10 @@
     },
     {
       "version_id": "Alpha Sapphire",
+      "flavor_text": "It expels its internal steam from the arms on its back. It has enough power to blow away a mountain."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "It expels its internal steam from the arms on its back. It has enough power to blow away a mountain."
     }
   ],

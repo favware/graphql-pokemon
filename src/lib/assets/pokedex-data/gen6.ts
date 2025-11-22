@@ -921,7 +921,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'floette-mega',
       types: [TypesEnum.Fairy],
       weightkg: 0.9,
-      aliases: ['eternalfloettemega', 'floettemega', 'floetteeternalflowermega'],
+      aliases: ['eternalfloettemega', 'floetteeternalflowermega'],
       cry: 'https://play.pokemonshowdown.com/audio/cries/floette.mp3',
       respelling: 'floh-ET',
       ipa: '/floʊˈɛt/'

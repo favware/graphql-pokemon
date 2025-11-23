@@ -1426,8 +1426,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 6425,
       num: 849,
-      otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkeygmax'],
-      species: 'toxtricity-low-key-gmax',
+      otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkey'],
+      species: 'toxtricity-lowkey-gmax',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/toxtricity-gmax.gif',
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 140
     }

@@ -14,9 +14,9 @@ export interface GetAllPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
   offset: number | Nullish;
   /**
    * Return only this many results, starting from the offset
-   * @default 1423
+   * @default 1449
    * @minimum 1
-   * @maximum 1423
+   * @maximum 1449
    */
   take: number | Nullish;
 }
@@ -27,13 +27,13 @@ const getAllPokemonSchema: SchemaOf<GetAllPokemonArgs> = baseFuzzySchema //
     offset: s
       .number({ message: 'The offset has to be a number' })
       .greaterThanOrEqual(0, { message: 'The offset has to be at least 0' })
-      .lessThanOrEqual(1422, { message: 'The offset has to be at most 1422' })
+      .lessThanOrEqual(1448, { message: 'The offset has to be at most 1448' })
       .nullish({ message: 'The offset has to be a number' })
       .transform((v) => v ?? 0),
     take: s
       .number({ message: 'The amount to take has to be a number' })
       .greaterThanOrEqual(1, { message: 'The amount to take has to be at least 1' })
-      .lessThanOrEqual(1423, { message: 'The amount to take has to be at most 1423' })
+      .lessThanOrEqual(1449, { message: 'The amount to take has to be at most 1449' })
       .nullish({ message: 'The amount to take has to be a number' })
       .transform((v) => v ?? 1)
   });

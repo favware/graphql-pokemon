@@ -75,13 +75,13 @@
     "graphql": "16.12.0"
   },
   "devDependencies": {
-    "@apollo/server": "^5.1.0",
+    "@apollo/server": "^5.2.0",
     "@as-integrations/koa": "^1.1.1",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@discordjs/collection": "^2.1.1",
     "@favware/cliff-jumper": "^6.0.0",
-    "@graphql-codegen/cli": "^6.0.2",
+    "@graphql-codegen/cli": "^6.1.0",
     "@graphql-codegen/schema-ast": "^5.0.0",
     "@graphql-codegen/typescript": "^5.0.2",
     "@graphql-codegen/typescript-resolvers": "^5.1.0",
@@ -92,9 +92,9 @@
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/shapeshift": "^4.0.0",
     "@sapphire/timestamp": "^1.0.5",
-    "@sapphire/ts-config": "^5.0.1",
+    "@sapphire/ts-config": "^5.0.3",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "1.15.2",
+    "@swc/core": "1.15.3",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
     "@types/koa": "^3.0.1",
@@ -103,7 +103,7 @@
     "@types/node": "^24.8.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^4.0.9",
+    "@vitest/coverage-v8": "^4.0.14",
     "async": "^3.2.6",
     "cheerio": "^1.1.2",
     "colorette": "^2.0.20",
@@ -115,15 +115,15 @@
     "json-stream-stringify": "^3.1.6",
     "koa": "^3.1.1",
     "koa-bodyparser": "^4.4.1",
-    "lint-staged": "^16.2.6",
+    "lint-staged": "^16.2.7",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.1",
     "replace-in-file": "^8.3.0",
-    "rimraf": "^6.1.0",
+    "rimraf": "^6.1.2",
     "tsup": "^8.5.1",
     "tsx": "^4.20.6",
     "typescript": "~5.8.3",
-    "vitest": "^4.0.9"
+    "vitest": "^4.0.14"
   },
   "resolutions": {
     "graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
@@ -165,7 +165,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.11.0",
+  "packageManager": "yarn@4.12.0",
   "volta": {
     "node": "24.11.1"
   }

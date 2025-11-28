@@ -2326,7 +2326,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       isEggObtainable: true,
       levellingRate: 'Fast',
       minimumHatchTime: 2570,
-      num: 65,
+      num: 36,
       otherFormes: ['clefable'],
       species: 'clefable-mega',
       types: [TypesEnum.Fairy],

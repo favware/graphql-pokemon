@@ -17919,7 +17919,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '200',
       category: 'Special',
       contestType: 'Clever',
-      cooldown: undefined,
       desc: 'The user attacks by unleashing a powerful light that defies all laws of nature, striking even Fairy types and ignoring any stat changes affecting its targets.',
       maxMovePower: 90,
       name: 'Nihil Light',
@@ -17927,7 +17926,7 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       pp: 10,
       priority: 0,
       shortDesc: 'Deals damage and ignores any stat changes affecting its targets, including Fairy types. ',
-      target: 'Adjacent Foes',
+      target: 'Normal',
       type: 'Dragon'
     }
   ]

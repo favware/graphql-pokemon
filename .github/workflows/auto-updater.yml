@@ -21,7 +21,7 @@ jobs:
           - 8191:8191
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.BOT_TOKEN }}
       - name: Use Node.js v20

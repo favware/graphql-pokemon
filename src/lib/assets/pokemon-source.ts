@@ -230,6 +230,10 @@ export namespace PokemonTypes {
     type: `${Capitalize<keyof Types>}`;
 
     zMovePower?: number;
+
+    cooldown?: number;
+
+    plusMovePower?: number;
   }
 
   export interface LearnsetMove {

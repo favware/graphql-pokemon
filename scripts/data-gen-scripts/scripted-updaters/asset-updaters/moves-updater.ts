@@ -63,6 +63,8 @@ for (const [key, data] of currentMoves.entries()) {
     data.priority = moveFromData.priority;
     data.name = moveFromData.name;
     data.type = moveFromData.type;
+    data.cooldown = moveFromData.cooldown;
+    data.plusMovePower = moveFromData.plusMovePower;
   }
 
   if (moveFromText) {
@@ -169,6 +171,8 @@ interface MoveData {
   target: string;
   type: `${Capitalize<keyof PokemonTypes.Types>}`;
   contestType: string;
+  cooldown: number;
+  plusMovePower: number;
 }
 
 interface MoveText {

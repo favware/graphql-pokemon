@@ -465,6 +465,12 @@ type Move {
 
   "The power this move will have when used with its Z-move equivalent"
   zMovePower: Int!
+
+  "The cooldown time before the move can be used again (between 3-60 seconds)"
+  cooldown: Int!
+
+  "The power this move will have when used as a Plus Move"
+  plusMovePower: Int!
 }
 
 "The type matchups for any one or two given types"

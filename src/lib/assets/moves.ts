@@ -20,7 +20,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 7,
+      plusMovePower: 24
     }
   ],
   [
@@ -39,7 +41,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -58,7 +62,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to lower the foe(s) Sp. Def by 1.',
       target: 'Adjacent Foes',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -76,7 +82,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Defense by 2.",
       target: 'Self',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 9,
+      plusMovePower: 0
     }
   ],
   [
@@ -171,7 +179,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 9,
+      plusMovePower: 72
     }
   ],
   [
@@ -226,7 +236,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Speed by 2.",
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -264,7 +276,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 7,
+      plusMovePower: 90
     }
   ],
   [
@@ -337,7 +351,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Def by 2.",
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 9,
+      plusMovePower: 0
     }
   ],
   [
@@ -431,7 +447,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 3,
+      plusMovePower: 36
     }
   ],
   [
@@ -449,7 +467,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 1/16 max HP per turn.',
       target: 'Self',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -689,7 +709,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Any',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -1115,7 +1137,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -1261,7 +1285,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to freeze foe(s). Can't miss in Snow.",
       target: 'Adjacent Foes',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 12,
+      plusMovePower: 132
     }
   ],
   [
@@ -1371,7 +1397,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 8,
+      plusMovePower: 102
     }
   ],
   [
@@ -1486,7 +1514,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 12,
+      plusMovePower: 168
     }
   ],
   [
@@ -1505,7 +1535,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Bounces turn 1. Hits turn 2. 30% paralyze.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 12,
+      plusMovePower: 102
     }
   ],
   [
@@ -1562,7 +1594,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 10,
+      plusMovePower: 144
     }
   ],
   [
@@ -1580,7 +1614,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Attack by 1.',
       target: 'Adjacent Foes',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 9,
+      plusMovePower: 72
     }
   ],
   [
@@ -1619,7 +1655,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Destroys screens, unless the target is immune.',
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 7,
+      plusMovePower: 90
     }
   ],
   [
@@ -1657,7 +1695,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -1695,7 +1735,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Speed by 1.",
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 6,
+      plusMovePower: 78
     }
   ],
   [
@@ -1733,7 +1775,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -1751,7 +1795,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Attack and Defense by 1.",
       target: 'Self',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 18,
+      plusMovePower: 0
     }
   ],
   [
@@ -1770,7 +1816,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance lower adjacent Pkmn Speed by 1.',
       target: 'All Adjacent',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -1789,7 +1837,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 3,
+      plusMovePower: 36
     }
   ],
   [
@@ -1808,7 +1858,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 6,
+      plusMovePower: 18
     }
   ],
   [
@@ -1901,7 +1953,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk and Sp. Def by 1.",
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 18,
+      plusMovePower: 0
     }
   ],
   [
@@ -2013,7 +2067,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "+1 SpD, user's next Electric move 2x power.",
       target: 'Self',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -2050,7 +2106,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Attack by 2.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -2277,7 +2335,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 12,
+      plusMovePower: 144
     }
   ],
   [
@@ -2421,7 +2481,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Confuses the target.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 6,
+      plusMovePower: 0
     }
   ],
   [
@@ -2440,7 +2502,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to confuse the target.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 6,
+      plusMovePower: 60
     }
   ],
   [
@@ -2545,7 +2609,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Tough',
       cooldown: undefined,
       desc: "If the user moves after the target, the target's Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.",
-      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Core Enforcer',
       plusMovePower: undefined,
@@ -2554,7 +2617,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: 'Nullifies the foe(s) Ability if the foe(s) move first.',
       target: 'Adjacent Foes',
       type: 'Dragon',
-      zMovePower: 140
+      zMovePower: 140,
+      cooldown: 15,
+      plusMovePower: 120
     }
   ],
   [
@@ -2628,7 +2693,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Defense by 3.",
       target: 'Self',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -2796,7 +2863,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "20% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -2852,7 +2921,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Curses if Ghost, else -1 Spe, +1 Atk, +1 Def.',
       target: 'Random',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -2912,7 +2983,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Any',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -2950,7 +3023,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -3060,7 +3135,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 4,
       shortDesc: 'Prevents moves from affecting the user this turn.',
       target: 'Self',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 13,
+      plusMovePower: 0
     }
   ],
   [
@@ -3099,7 +3176,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "50% chance to raise user's Defense by 2.",
       target: 'Adjacent Foes',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 10,
+      plusMovePower: 120
     }
   ],
   [
@@ -3120,7 +3199,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Digs underground turn 1, strikes turn 2.',
       target: 'Normal',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 12,
+      plusMovePower: 96
     }
   ],
   [
@@ -3174,7 +3255,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy. Hits foes.',
       target: 'Adjacent Foes',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -3193,7 +3276,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to paralyze adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -3288,7 +3373,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 10,
+      plusMovePower: 144
     }
   ],
   [
@@ -3401,7 +3488,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's evasiveness by 1.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -3420,7 +3509,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 10,
+      plusMovePower: 156
     }
   ],
   [
@@ -3458,7 +3549,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -3494,7 +3587,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -3586,7 +3681,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Any',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 8,
+      plusMovePower: 102
     }
   ],
   [
@@ -3624,7 +3721,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 12,
+      plusMovePower: 120
     }
   ],
   [
@@ -3662,7 +3761,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 75% of the damage dealt.',
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 7,
+      plusMovePower: 60
     }
   ],
   [
@@ -3738,7 +3839,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -3829,7 +3932,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to confuse the target.',
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 12,
+      plusMovePower: 120
     }
   ],
   [
@@ -3848,7 +3953,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -3868,7 +3975,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. Double damage on Dig.',
       target: 'All Adjacent',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 10,
+      plusMovePower: 120
     }
   ],
   [
@@ -3905,7 +4014,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -4051,7 +4162,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Speed by 1.',
       target: 'Adjacent Foes',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 7,
+      plusMovePower: 66
     }
   ],
   [
@@ -4089,7 +4202,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -4144,7 +4259,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 4,
       shortDesc: 'User survives attacks this turn with at least 1 HP.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -4163,7 +4280,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -4272,7 +4391,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. The user faints.',
       target: 'All Adjacent',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 300
     }
   ],
   [
@@ -4332,7 +4453,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 2,
       shortDesc: 'Nearly always goes first.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 3,
+      plusMovePower: 78
     }
   ],
   [
@@ -4388,7 +4511,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -4425,7 +4550,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Sp. Def by 2.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -4479,7 +4606,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Attack by 2.",
       target: 'Normal',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -4644,7 +4773,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 10,
+      plusMovePower: 132
     }
   ],
   [
@@ -4663,7 +4794,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn. 10% chance to flinch.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 6,
+      plusMovePower: 78
     }
   ],
   [
@@ -4720,7 +4853,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 7,
+      plusMovePower: 90
     }
   ],
   [
@@ -4739,7 +4874,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 7,
+      plusMovePower: 24
     }
   ],
   [
@@ -4872,7 +5009,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -4891,7 +5030,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn the target. Thaws user.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -4910,7 +5051,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 33% recoil. 10% chance to burn. Thaws user.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 8,
+      plusMovePower: 144
     }
   ],
   [
@@ -4950,7 +5093,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -5023,7 +5168,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User switches out after damaging the target.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 12,
+      plusMovePower: 72
     }
   ],
   [
@@ -5117,7 +5264,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Flies up on first turn, then strikes the next turn.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 12,
+      plusMovePower: 108
     }
   ],
   [
@@ -5137,7 +5286,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       shortDesc: 'Combines Flying in its type effectiveness.',
       target: 'Any',
       type: 'Fighting',
-      zMovePower: 170
+      zMovePower: 170,
+      cooldown: 9,
+      plusMovePower: 120
     }
   ],
   [
@@ -5156,7 +5307,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 12,
+      plusMovePower: 144
     }
   ],
   [
@@ -5174,7 +5327,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's critical hit ratio by 2.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -5267,7 +5422,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Adds Grass to the target's type(s).",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -5305,7 +5462,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to freeze. Super effective on Water.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 9,
+      plusMovePower: 84
     }
   ],
   [
@@ -5532,7 +5691,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits two turns after being used.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 10,
+      plusMovePower: 144
     }
   ],
   [
@@ -5623,14 +5784,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       cooldown: undefined,
       desc: "Raises the user's Special Attack, Special Defense, and Speed by 2 stages. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-      isNonstandard: IsNonStandard.Past,
       name: 'Geomancy',
       plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Charges, then raises SpA, SpD, Spe by 2 turn 2.',
       target: 'Self',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 30,
+      plusMovePower: 0
     }
   ],
   [
@@ -5649,7 +5811,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 9,
+      plusMovePower: 90
     }
   ],
   [
@@ -5668,7 +5832,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User cannot move next turn.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 20,
+      plusMovePower: 180
     }
   ],
   [
@@ -5776,7 +5942,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 8,
+      plusMovePower: 0
     }
   ],
   [
@@ -6602,7 +6770,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Lowers the foe(s) Attack by 1.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 6,
+      plusMovePower: 0
     }
   ],
   [
@@ -6620,7 +6790,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -6734,7 +6906,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 10,
+      plusMovePower: 144
     }
   ],
   [
@@ -6753,7 +6927,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Power doubles during Bounce, Fly, and Sky Drop.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -6846,7 +7022,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Defense by 1.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 6,
+      plusMovePower: 0
     }
   ],
   [
@@ -6881,7 +7059,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Eliminates all stat changes.',
       target: 'All',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -6902,7 +7082,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 7,
+      plusMovePower: 84
     }
   ],
   [
@@ -6958,7 +7140,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 1/2 recoil.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 10,
+      plusMovePower: 180
     }
   ],
   [
@@ -6988,14 +7172,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Clever',
       cooldown: undefined,
       desc: 'For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokémon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.',
-      isNonstandard: IsNonStandard.Past,
       name: 'Heal Block',
       plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'For 5 turns, the foe(s) is prevented from healing.',
       target: 'Adjacent Foes',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -7106,7 +7291,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'More power the heavier the user than the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -7125,7 +7312,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to burn the foe(s).',
       target: 'Adjacent Foes',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 9,
+      plusMovePower: 114
     }
   ],
   [
@@ -7144,7 +7333,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'More power the heavier the user than the target.',
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 10,
+      plusMovePower: 1
     }
   ],
   [
@@ -7692,7 +7883,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 9,
+      plusMovePower: 90
     }
   ],
   [
@@ -7729,7 +7922,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "30% chance to confuse target. Can't miss in rain.",
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 10,
+      plusMovePower: 132
     }
   ],
   [
@@ -7767,7 +7962,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 12,
+      plusMovePower: 132
     }
   ],
   [
@@ -7823,7 +8020,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User cannot move next turn.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 20,
+      plusMovePower: 180
     }
   ],
   [
@@ -7880,7 +8079,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Hoopa-U: Lowers user's Def by 1; breaks protect.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 10,
+      plusMovePower: 120
     }
   ],
   [
@@ -7899,7 +8100,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Breaks the target's protection for this turn.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -7918,7 +8121,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -7936,7 +8141,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Causes the target to fall asleep.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -7974,7 +8181,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to freeze the target.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -8012,7 +8221,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to freeze. 10% chance to flinch.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 6,
+      plusMovePower: 78
     }
   ],
   [
@@ -8050,7 +8261,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to freeze the target.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 7,
+      plusMovePower: 90
     }
   ],
   [
@@ -8069,7 +8282,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 3,
+      plusMovePower: 48
     }
   ],
   [
@@ -8105,7 +8320,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 8,
+      plusMovePower: 102
     }
   ],
   [
@@ -8143,7 +8360,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Speed by 1.',
       target: 'Adjacent Foes',
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 7,
+      plusMovePower: 68
     }
   ],
   [
@@ -8255,7 +8474,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 6,
+      plusMovePower: 24
     }
   ],
   [
@@ -8328,7 +8549,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Defense by 2.",
       target: 'Self',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 9,
+      plusMovePower: 0
     }
   ],
   [
@@ -8347,7 +8570,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -8366,7 +8591,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "30% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 10,
+      plusMovePower: 120
     }
   ],
   [
@@ -8524,14 +8751,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Cool',
       cooldown: undefined,
       desc: "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-      isNonstandard: IsNonStandard.Past,
       name: "King's Shield",
       plusMovePower: undefined,
       pp: 10,
       priority: 4,
       shortDesc: 'Protects from damaging attacks. Contact: -1 Atk.',
       target: 'Self',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -8550,7 +8778,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '1.5x damage if foe holds an item. Removes item.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 10,
+      plusMovePower: 78
     }
   ],
   [
@@ -8579,7 +8809,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       cooldown: undefined,
       desc: 'No additional effect.',
-      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: "Land's Wrath",
       plusMovePower: undefined,
@@ -8587,7 +8816,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -8678,7 +8909,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to burn adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -8697,7 +8930,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -8716,7 +8951,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -8735,7 +8972,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 10,
+      plusMovePower: 156
     }
   ],
   [
@@ -8774,7 +9013,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 9,
+      plusMovePower: 96
     }
   ],
   [
@@ -8792,7 +9033,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "1/8 of target's HP is restored to user every turn.",
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -8810,7 +9053,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Lowers the foe(s) Defense by 1.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 6,
+      plusMovePower: 0
     }
   ],
   [
@@ -8850,7 +9095,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 6,
+      plusMovePower: 36
     }
   ],
   [
@@ -8879,7 +9126,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.',
-      isNonstandard: IsNonStandard.Past,
       maxMovePower: 140,
       name: 'Light of Ruin',
       plusMovePower: undefined,
@@ -8887,7 +9133,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 1/2 recoil.',
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 15,
+      plusMovePower: 168
     }
   ],
   [
@@ -8905,7 +9153,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'For 5 turns, special damage to allies is halved.',
       target: "Ally's Side",
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -8945,7 +9195,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "20% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 8,
+      plusMovePower: 102
     }
   ],
   [
@@ -9110,7 +9362,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "100% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 9,
+      plusMovePower: 96
     }
   ],
   [
@@ -9148,7 +9402,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 3,
+      plusMovePower: 36
     }
   ],
   [
@@ -9167,7 +9423,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -9899,7 +10157,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 10,
+      plusMovePower: 144
     }
   ],
   [
@@ -10014,7 +10274,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to raise the user's Attack by 1.",
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 6,
+      plusMovePower: 60
     }
   ],
   [
@@ -10032,7 +10294,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Sp. Def by 2.",
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -10105,7 +10369,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Picks a random move.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 4,
+      plusMovePower: 0
     }
   ],
   [
@@ -10311,7 +10577,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "For 5 turns, protects user's party from stat drops.",
       target: "Ally's Side",
-      type: 'Ice'
+      type: 'Ice',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -10384,7 +10652,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "30% chance to lower the target's Sp. Atk by 1.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 8,
+      plusMovePower: 114
     }
   ],
   [
@@ -10421,7 +10691,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Heals the user by a weather-dependent amount.',
       target: 'Self',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -10439,7 +10711,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Heals the user by a weather-dependent amount.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -10530,7 +10804,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "100% chance to lower the target's Speed by 1.",
       target: 'Normal',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 6,
+      plusMovePower: 66
     }
   ],
   [
@@ -10607,7 +10883,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 8,
+      plusMovePower: 90
     }
   ],
   [
@@ -10643,7 +10921,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk by 2.",
       target: 'Self',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -10817,7 +11097,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 7,
+      plusMovePower: 84
     }
   ],
   [
@@ -10852,7 +11134,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Raises all stats by 1 (not acc/eva). Traps user.',
       target: 'Self',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 60,
+      plusMovePower: 0
     }
   ],
   [
@@ -10889,7 +11173,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 6,
+      plusMovePower: 24
     }
   ],
   [
@@ -10901,7 +11187,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Cool',
       cooldown: undefined,
       desc: 'The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
-      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Oblivion Wing',
       plusMovePower: undefined,
@@ -10909,7 +11194,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 75% of the damage dealt.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 12,
+      plusMovePower: 96
     }
   ],
   [
@@ -11079,7 +11366,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Lasts 2-3 turns. Confuses the user afterwards.',
       target: 'Random',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 15,
+      plusMovePower: 144
     }
   ],
   [
@@ -11116,7 +11405,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 10,
+      plusMovePower: 156
     }
   ],
   [
@@ -11172,7 +11463,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'All Adjacent',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 9,
+      plusMovePower: 78
     }
   ],
   [
@@ -11190,7 +11483,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers target's Atk, Sp. Atk by 1. User switches.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -11247,7 +11542,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 6,
+      plusMovePower: 42
     }
   ],
   [
@@ -11265,7 +11562,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'All active Pokémon will faint in 3 turns.',
       target: 'All',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 20,
+      plusMovePower: 0
     }
   ],
   [
@@ -11322,7 +11621,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Disappears turn 1. Hits turn 2. Breaks protection.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 12,
+      plusMovePower: 108
     }
   ],
   [
@@ -11379,7 +11680,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 6,
+      plusMovePower: 18
     }
   ],
   [
@@ -11438,7 +11741,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Fairy'
+      type: 'Fairy',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -11513,7 +11818,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -11531,7 +11838,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Poisons the target.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -11550,7 +11859,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 6,
+      plusMovePower: 36
     }
   ],
   [
@@ -11716,7 +12027,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -11828,7 +12141,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "100% chance to raise the user's Attack by 1.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 10,
+      plusMovePower: 48
     }
   ],
   [
@@ -11847,7 +12162,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 12,
+      plusMovePower: 144
     }
   ],
   [
@@ -11922,7 +12239,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 4,
       shortDesc: 'Prevents moves from affecting the user this turn.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -11941,7 +12260,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to confuse the target.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 6,
+      plusMovePower: 78
     }
   ],
   [
@@ -11977,7 +12298,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -12069,7 +12392,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 7,
+      plusMovePower: 84
     }
   ],
   [
@@ -12142,7 +12467,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Damages target based on Defense, not Sp. Def.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -12161,7 +12488,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Damages target based on Defense, not Sp. Def.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 9,
+      plusMovePower: 120
     }
   ],
   [
@@ -12313,7 +12642,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 3,
+      plusMovePower: 36
     }
   ],
   [
@@ -12495,7 +12826,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 6,
+      plusMovePower: 66
     }
   ],
   [
@@ -12551,7 +12884,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Heals the user by 50% of its max HP.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -12587,7 +12922,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'For 5 turns, physical damage to allies is halved.',
       target: "Ally's Side",
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -12719,7 +13056,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Type varies based on the user's primary type.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -12775,7 +13114,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Revives a fainted Pokémon to 50% HP.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -12811,7 +13152,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: -6,
       shortDesc: 'Forces the target to switch to a random ally.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 6,
+      plusMovePower: 0
     }
   ],
   [
@@ -12849,7 +13192,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 6,
+      plusMovePower: 18
     }
   ],
   [
@@ -12907,7 +13252,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to make the foe(s) flinch.',
       target: 'Adjacent Foes',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 7,
+      plusMovePower: 90
     }
   ],
   [
@@ -12928,7 +13275,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "50% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Fighting'
+      type: 'Fighting',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -12947,7 +13296,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 6,
+      plusMovePower: 60
     }
   ],
   [
@@ -12966,7 +13317,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "100% chance to lower the target's Speed by 1.",
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 10,
+      plusMovePower: 72
     }
   ],
   [
@@ -13041,7 +13394,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Power doubles with each hit. Repeats for 5 turns.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -13171,7 +13526,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "For 5 turns, protects user's party from status.",
       target: "Ally's Side",
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -13260,7 +13617,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 7,
+      plusMovePower: 24
     }
   ],
   [
@@ -13407,7 +13766,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's Defense by 2.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -13565,7 +13926,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. The user faints.',
       target: 'All Adjacent',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 240
     }
   ],
   [
@@ -13584,7 +13947,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "20% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -13623,7 +13988,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 7,
+      plusMovePower: 84
     }
   ],
   [
@@ -13680,7 +14047,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 3,
+      plusMovePower: 48
     }
   ],
   [
@@ -13738,7 +14107,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -14015,7 +14386,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -14220,7 +14593,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 7,
+      plusMovePower: 84
     }
   ],
   [
@@ -14238,7 +14613,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Causes the target to fall asleep.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -14294,7 +14671,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 7,
+      plusMovePower: 108
     }
   ],
   [
@@ -14313,7 +14692,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to poison adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 8,
+      plusMovePower: 114
     }
   ],
   [
@@ -14407,7 +14788,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Lowers the target's accuracy by 1.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -14445,7 +14828,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Sp. Atk by 1.',
       target: 'Adjacent Foes',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 9,
+      plusMovePower: 66
     }
   ],
   [
@@ -14575,7 +14960,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Charges turn 1. Hits turn 2. No charge in sunlight.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 12,
+      plusMovePower: 144
     }
   ],
   [
@@ -14672,7 +15059,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 6,
+      plusMovePower: 78
     }
   ],
   [
@@ -14821,7 +15210,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hurts grounded foes on switch-in. Max 3 layers.',
       target: "Foe's Side",
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 7,
+      plusMovePower: 0
     }
   ],
   [
@@ -14839,7 +15230,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 4,
       shortDesc: 'Protects from moves. Contact: loses 1/8 max HP.',
       target: 'Self',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -14948,7 +15341,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No competitive use.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 4,
+      plusMovePower: 0
     }
   ],
   [
@@ -15061,7 +15456,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hurts foes on switch-in. Factors Rock weakness.',
       target: "Foe's Side",
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -15080,7 +15477,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '30% chance to burn the target. Thaws target.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 10,
+      plusMovePower: 132
     }
   ],
   [
@@ -15153,7 +15552,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "10% chance to raise the user's Defense by 1.",
       target: 'Normal',
-      type: 'Steel'
+      type: 'Steel',
+      cooldown: 7,
+      plusMovePower: 84
     }
   ],
   [
@@ -15172,7 +15573,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Lowers Speed of grounded foes by 1 on switch-in.',
       target: "Foe's Side",
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 7,
+      plusMovePower: 0
     }
   ],
   [
@@ -15286,7 +15689,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Rock'
+      type: 'Rock',
+      cooldown: 10,
+      plusMovePower: 120
     }
   ],
   [
@@ -15399,7 +15804,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Lowers the foe(s) Speed by 2.',
       target: 'Adjacent Foes',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 9,
+      plusMovePower: 0
     }
   ],
   [
@@ -15474,7 +15881,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -15513,7 +15922,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User takes 1/4 its max HP to put in a substitute.',
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -15625,7 +16036,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Does damage equal to 1/2 target's current HP.",
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 9,
+      plusMovePower: 1
     }
   ],
   [
@@ -15661,7 +16074,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Causes the target to become confused.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 6,
+      plusMovePower: 0
     }
   ],
   [
@@ -15701,7 +16116,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. Double damage on Dive.',
       target: 'All Adjacent',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -15813,7 +16230,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'This move does not check accuracy. Hits foes.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 5,
+      plusMovePower: 72
     }
   ],
   [
@@ -15850,7 +16269,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Attack by 2.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -15887,7 +16308,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Heals the user by a weather-dependent amount.',
       target: 'Self',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -15941,7 +16364,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 4,
+      plusMovePower: 48
     }
   ],
   [
@@ -15996,7 +16421,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Lowers the foe(s) Defense by 1.',
       target: 'Adjacent Foes',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 7,
+      plusMovePower: 0
     }
   ],
   [
@@ -16033,7 +16460,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 1/4 recoil.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -16085,7 +16514,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Target can't use status moves its next 3 turns.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -16217,7 +16648,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: -6,
       shortDesc: 'User switches out.',
       target: 'Self',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 7,
+      plusMovePower: 0
     }
   ],
   [
@@ -16335,7 +16768,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Beautiful',
       cooldown: undefined,
       desc: 'This move can hit airborne Pokémon, which includes Flying-type Pokémon, Pokémon with the Levitate Ability, Pokémon holding an Air Balloon, and Pokémon under the effect of Magnet Rise or Telekinesis. If the target is a Flying type and is not already grounded, this move deals neutral damage regardless of its other type(s). This move can hit a target using Bounce, Fly, or Sky Drop. If this move hits a target under the effect of Bounce, Fly, Magnet Rise, or Telekinesis, the effect ends. If the target is a Flying type that has not used Roost this turn or a Pokémon with the Levitate Ability, it loses its immunity to Ground-type attacks and the Arena Trap Ability as long as it remains active. During the effect, Magnet Rise fails for the target and Telekinesis fails against the target.',
-      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Thousand Arrows',
       plusMovePower: undefined,
@@ -16343,7 +16775,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Grounds adjacent foes. First hit neutral on Flying.',
       target: 'Adjacent Foes',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 10,
+      plusMovePower: 108
     }
   ],
   [
@@ -16355,7 +16789,6 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Tough',
       cooldown: undefined,
       desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.',
-      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Thousand Waves',
       plusMovePower: undefined,
@@ -16363,7 +16796,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Hits adjacent foes. Prevents them from switching.',
       target: 'Adjacent Foes',
-      type: 'Ground'
+      type: 'Ground',
+      cooldown: 10,
+      plusMovePower: 108
     }
   ],
   [
@@ -16420,7 +16855,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "30% chance to paralyze. Can't miss in rain.",
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 10,
+      plusMovePower: 132
     }
   ],
   [
@@ -16440,7 +16877,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -16494,7 +16933,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to paralyze. 10% chance to flinch.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 6,
+      plusMovePower: 78
     }
   ],
   [
@@ -16530,7 +16971,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 7,
+      plusMovePower: 90
     }
   ],
   [
@@ -16549,7 +16992,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -16568,7 +17013,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -16621,7 +17068,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Inverts the target's stat stages.",
       target: 'Normal',
-      type: 'Dark'
+      type: 'Dark',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -16675,7 +17124,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Badly poisons the target. Poison types can't miss.",
       target: 'Normal',
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -16694,7 +17145,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Poisons grounded foes on switch-in. Max 2 layers.',
       target: "Foe's Side",
-      type: 'Poison'
+      type: 'Poison',
+      cooldown: 7,
+      plusMovePower: 0
     }
   ],
   [
@@ -16797,14 +17250,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       contestType: 'Cute',
       cooldown: undefined,
       desc: "Causes the Ghost type to be added to the target, effectively making it have two or three types. Fails if the target is already a Ghost type. If Forest's Curse adds a type to the target, it replaces the type added by this move and vice versa.",
-      isNonstandard: IsNonStandard.Past,
       name: 'Trick-or-Treat',
       plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Adds Ghost to the target's type(s).",
       target: 'Normal',
-      type: 'Ghost'
+      type: 'Ghost',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -17007,7 +17461,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '20% chance to make the foe(s) flinch.',
       target: 'Adjacent Foes',
-      type: 'Dragon'
+      type: 'Dragon',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -17062,7 +17518,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User switches out after damaging the target.',
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 12,
+      plusMovePower: 84
     }
   ],
   [
@@ -17195,7 +17653,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 45,
+      plusMovePower: 54
     }
   ],
   [
@@ -17254,7 +17714,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'User switches out after damaging the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 12,
+      plusMovePower: 84
     }
   ],
   [
@@ -17273,7 +17735,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 33% recoil. 10% chance to paralyze target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 0,
+      plusMovePower: 0
     }
   ],
   [
@@ -17313,7 +17777,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -17332,7 +17798,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 6,
+      plusMovePower: 48
     }
   ],
   [
@@ -17370,7 +17838,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '20% chance to confuse the target.',
       target: 'Any',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -17389,7 +17859,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 1,
       shortDesc: 'Usually goes first. Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 3,
+      plusMovePower: 18
     }
   ],
   [
@@ -17485,7 +17957,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Water'
+      type: 'Water',
+      cooldown: 7,
+      plusMovePower: 24
     }
   ],
   [
@@ -17503,7 +17977,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: -6,
       shortDesc: 'Forces the target to switch to a random ally.',
       target: 'Normal',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 7,
+      plusMovePower: 0
     }
   ],
   [
@@ -17592,7 +18068,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 1/4 recoil.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 8,
+      plusMovePower: 108
     }
   ],
   [
@@ -17611,7 +18089,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Burns the target.',
       target: 'Normal',
-      type: 'Fire'
+      type: 'Fire',
+      cooldown: 10,
+      plusMovePower: 0
     }
   ],
   [
@@ -17630,7 +18110,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Any',
-      type: 'Flying'
+      type: 'Flying',
+      cooldown: 6,
+      plusMovePower: 72
     }
   ],
   [
@@ -17648,7 +18130,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Next turn, 50% of the user's max HP is restored.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 12,
+      plusMovePower: 0
     }
   ],
   [
@@ -17703,7 +18187,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Normal',
-      type: 'Grass'
+      type: 'Grass',
+      cooldown: 10,
+      plusMovePower: 144
     }
   ],
   [
@@ -17721,7 +18207,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: "Raises the user's Attack and Sp. Atk by 1.",
       target: 'Self',
-      type: 'Normal'
+      type: 'Normal',
+      cooldown: 15,
+      plusMovePower: 0
     }
   ],
   [
@@ -17796,7 +18284,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Bug'
+      type: 'Bug',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -17833,7 +18323,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '100% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric'
+      type: 'Electric',
+      cooldown: 15,
+      plusMovePower: 144
     }
   ],
   [
@@ -17852,7 +18344,9 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Psychic'
+      type: 'Psychic',
+      cooldown: 8,
+      plusMovePower: 96
     }
   ],
   [
@@ -17926,8 +18420,10 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       pp: 10,
       priority: 0,
       shortDesc: 'Deals damage and ignores any stat changes affecting its targets, including Fairy types. ',
-      target: 'Normal',
-      type: 'Dragon'
+      target: 'Adjacent Foes',
+      type: 'Dragon',
+      cooldown: 15,
+      plusMovePower: 240
     }
   ]
 ]);

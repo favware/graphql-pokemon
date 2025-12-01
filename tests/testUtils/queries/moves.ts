@@ -39,6 +39,8 @@ export const getMoveWithFullData = gql`
       isGMax
       isNonstandard
       isZ
+      cooldown
+      plusMovePower
     }
   }
 `;
@@ -74,6 +76,8 @@ export const getFuzzyMoveWithFullData = gql`
       isGMax
       isNonstandard
       isZ
+      cooldown
+      plusMovePower
     }
   }
 `;

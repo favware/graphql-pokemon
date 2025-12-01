@@ -24,6 +24,8 @@ export function mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataT
   addPropertyToObjectFieldBased({ objectTarget: moveObject, propertyKey: 'isZ', propertyValue: parseZCrystal(data.isZ), requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: moveObject, propertyKey: 'isFieldMove', propertyValue: data.isFieldMove, requestedFields });
   addPropertyToObjectFieldBased({ objectTarget: moveObject, propertyKey: 'maxMovePower', propertyValue: data.maxMovePower, requestedFields });
+  addPropertyToObjectFieldBased({ objectTarget: moveObject, propertyKey: 'cooldown', propertyValue: data.cooldown, requestedFields });
+  addPropertyToObjectFieldBased({ objectTarget: moveObject, propertyKey: 'plusMovePower', propertyValue: data.plusMovePower, requestedFields });
   addPropertyToObjectFieldBased({
     objectTarget: moveObject,
     propertyKey: 'zMovePower',

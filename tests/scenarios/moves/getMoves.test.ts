@@ -40,7 +40,9 @@ describe('getMove', () => {
         isFieldMove: null,
         isGMax: null,
         isNonstandard: null,
-        isZ: null
+        isZ: null,
+        cooldown: 8,
+        plusMovePower: 96
       });
     });
   });

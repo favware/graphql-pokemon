@@ -42,7 +42,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
-          isZ: null
+          isZ: null,
+          cooldown: 8,
+          plusMovePower: 96
         }
       ]);
     });
@@ -74,7 +76,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: IsNonStandard.Past,
-          isZ: 'Decidium Z'
+          isZ: 'Decidium Z',
+          cooldown: 0,
+          plusMovePower: 0
         },
         {
           accuracy: 100,
@@ -96,7 +100,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
-          isZ: null
+          isZ: null,
+          cooldown: 0,
+          plusMovePower: 0
         },
         {
           accuracy: 100,
@@ -118,7 +124,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
-          isZ: null
+          isZ: null,
+          cooldown: 7,
+          plusMovePower: 24
         }
       ]);
     });
@@ -150,7 +158,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: IsNonStandard.Past,
-          isZ: 'Psychium Z'
+          isZ: 'Psychium Z',
+          cooldown: 0,
+          plusMovePower: 0
         },
         {
           accuracy: 100,
@@ -172,7 +182,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
-          isZ: null
+          isZ: null,
+          cooldown: 0,
+          plusMovePower: 0
         },
         {
           accuracy: 100,
@@ -194,7 +206,9 @@ describe('getFuzzyMove', () => {
           isFieldMove: null,
           isGMax: null,
           isNonstandard: null,
-          isZ: null
+          isZ: null,
+          cooldown: 0,
+          plusMovePower: 0
         }
       ]);
     });

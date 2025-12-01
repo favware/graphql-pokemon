@@ -117,7 +117,7 @@
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^16.2.7",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.7.1",
+    "prettier": "^3.7.3",
     "replace-in-file": "^8.3.0",
     "rimraf": "^6.1.2",
     "tsup": "^8.5.1",

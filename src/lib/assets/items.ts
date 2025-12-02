@@ -3772,7 +3772,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite X',
       shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
     }
@@ -3782,7 +3781,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite Y',
       shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
     }

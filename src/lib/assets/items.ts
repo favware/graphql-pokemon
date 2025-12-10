@@ -18,7 +18,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Abomasite',
       shortDesc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.'
     }
@@ -28,7 +27,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Absolite',
       shortDesc: 'If held by an Absol, this item allows it to Mega Evolve in battle.'
     }
@@ -95,7 +93,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Aerodactylite',
       shortDesc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.'
     }
@@ -105,7 +102,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Aggronite',
       shortDesc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.'
     }
@@ -133,7 +129,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Alakazite',
       shortDesc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.'
     }
@@ -153,7 +148,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Altarianite',
       shortDesc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.'
     }
@@ -163,7 +157,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Ampharosite',
       shortDesc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.'
     }
@@ -231,7 +224,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Audinite',
       shortDesc: 'If held by an Audino, this item allows it to Mega Evolve in battle.'
     }
@@ -299,7 +291,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Banettite',
       shortDesc: 'If held by a Banette, this item allows it to Mega Evolve in battle.'
     }
@@ -337,7 +328,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Beedrillite',
       shortDesc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.'
     }
@@ -502,7 +492,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Blastoisinite',
       shortDesc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.'
     }
@@ -659,7 +648,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Cameruptite',
       shortDesc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.'
     }
@@ -726,7 +714,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite X',
       shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
     }
@@ -736,7 +723,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite Y',
       shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
     }
@@ -1221,7 +1207,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Diancite',
       shortDesc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.'
     }
@@ -2161,7 +2146,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Galladite',
       shortDesc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.'
     }
@@ -2180,7 +2164,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Garchompite',
       shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.'
     }
@@ -2190,7 +2173,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gardevoirite',
       shortDesc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.'
     }
@@ -2210,7 +2192,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gengarite',
       shortDesc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.'
     }
@@ -2259,7 +2240,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Glalitite',
       shortDesc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.'
     }
@@ -2541,7 +2521,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gyaradosite',
       shortDesc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.'
     }
@@ -2634,7 +2613,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Heracronite',
       shortDesc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.'
     }
@@ -2683,7 +2661,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Houndoominite',
       shortDesc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.'
     }
@@ -2893,7 +2870,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Kangaskhanite',
       shortDesc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.'
     }
@@ -3046,7 +3022,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Latiasite',
       shortDesc: 'If held by a Latias, this item allows it to Mega Evolve in battle.'
     }
@@ -3056,7 +3031,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Latiosite',
       shortDesc: 'If held by a Latios, this item allows it to Mega Evolve in battle.'
     }
@@ -3271,7 +3245,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Lopunnite',
       shortDesc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.'
     }
@@ -3309,7 +3282,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Lucarionite',
       shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.'
     }
@@ -3551,7 +3523,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Manectite',
       shortDesc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.'
     }
@@ -3598,7 +3569,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mawilite',
       shortDesc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.'
     }
@@ -3635,7 +3605,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Medichamite',
       shortDesc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.'
     }
@@ -3694,7 +3663,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Metagrossite',
       shortDesc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.'
     }
@@ -4302,7 +4270,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Pidgeotite',
       shortDesc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.'
     }
@@ -4362,7 +4329,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Pinsirite',
       shortDesc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.'
     }
@@ -5300,7 +5266,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sablenite',
       shortDesc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.'
     }
@@ -5310,7 +5275,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Spritzee into Aromatisse when traded.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sachet',
       shortDesc: 'Evolves Spritzee into Aromatisse when traded.'
     }
@@ -5339,7 +5303,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Amaura.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sail Fossil',
       shortDesc: 'Can be revived into Amaura.'
     }
@@ -5359,7 +5322,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Salamencite',
       shortDesc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.'
     }
@@ -5421,7 +5383,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Scizorite',
       shortDesc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.'
     }
@@ -5499,7 +5460,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sharpedonite',
       shortDesc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.'
     }
@@ -5632,7 +5592,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Slowbronite',
       shortDesc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.'
     }
@@ -5863,7 +5822,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Steelixite',
       shortDesc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.'
     }
@@ -7237,7 +7195,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Tyranitarite',
       shortDesc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.'
     }
@@ -7303,7 +7260,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Venusaurite',
       shortDesc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.'
     }

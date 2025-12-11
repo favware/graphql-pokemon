@@ -10841,7 +10841,7 @@
       "evYields": { "hp": 0, "attack": 3, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": "50",
       "flavorTexts": [
-        { "flavor": "It becomes uncontrollable if it is enraged. It destroys everything with shredding claws and fire.", "game": "Violet" }
+        { "flavor": "It's uncontrollable if enraged. It flies around spouting flames, scorching fields and mountains.", "game": "Legends: Z-A" }
       ],
       "forme": null,
       "formeLetter": null,
@@ -21780,8 +21780,8 @@
           "evolutionLevel": "30",
           "flavorTexts": [
             {
-              "flavor": "Its armored body makes all attacks bounce off. The armor is too tough, however, making it heavy and somewhat sluggish.",
-              "game": "Violet"
+              "flavor": "Within its rugged shell, its cells have begun changing. The shell peels off the instant the Pokémon evolves.",
+              "game": "Legends: Z-A"
             }
           ],
           "forme": null,
@@ -29870,8 +29870,8 @@
               "evolutionLevel": null,
               "flavorTexts": [
                 {
-                  "flavor": "Its belief that it will be able to fly one day is apparently the influence of information carried in its genes.",
-                  "game": "Violet"
+                  "flavor": "Its well-developed neck muscles and ironlike head can smash boulders into pieces.",
+                  "game": "Legends: Z-A"
                 }
               ],
               "forme": null,

@@ -467,6 +467,8 @@ enum PokemonEnum {
   pikachuworld
   raichu
   raichualola
+  raichumegax
+  raichumegay
   sandshrew
   sandshrewalola
   sandslash
@@ -888,8 +890,10 @@ enum PokemonEnum {
   dusclops
   tropius
   chimecho
+  chimechomega
   absol
   absolmega
+  absolmegaz
   wynaut
   snorunt
   glalie
@@ -940,6 +944,7 @@ enum PokemonEnum {
   starly
   staravia
   staraptor
+  staraptormega
   bidoof
   bibarel
   kricketot
@@ -992,10 +997,12 @@ enum PokemonEnum {
   gabite
   garchomp
   garchompmega
+  garchompmegaz
   munchlax
   riolu
   lucario
   lucariomega
+  lucariomegaz
   hippopotas
   hippowdon
   skorupi
@@ -1043,6 +1050,7 @@ enum PokemonEnum {
   palkia
   palkiaorigin
   heatran
+  heatranmega
   regigigas
   giratina
   giratinaorigin
@@ -1050,6 +1058,7 @@ enum PokemonEnum {
   phione
   manaphy
   darkrai
+  darkraimega
   shaymin
   shayminsky
   arceus
@@ -1223,6 +1232,7 @@ enum PokemonEnum {
   druddigon
   golett
   golurk
+  golurkmega
   pawniard
   bisharp
   bouffalant
@@ -1300,6 +1310,7 @@ enum PokemonEnum {
   espurr
   meowstic
   meowsticf
+  meowsticmega
   honedge
   doublade
   aegislash
@@ -1385,6 +1396,7 @@ enum PokemonEnum {
   vikavolttotem
   crabrawler
   crabominable
+  crabominablemega
   oricorio
   oricoriopompom
   oricoriopau
@@ -1423,6 +1435,7 @@ enum PokemonEnum {
   passimian
   wimpod
   golisopod
+  golisopodmega
   sandygast
   palossand
   pyukumuku
@@ -1483,13 +1496,16 @@ enum PokemonEnum {
   necrozmadawnwings
   necrozmaultra
   magearna
+  magearnamega
   magearnaoriginal
+  magearnaoriginalmega
   marshadow
   poipole
   naganadel
   stakataka
   blacephalon
   zeraora
+  zeraoramega
   meltan
   melmetal
   melmetalgmax
@@ -1680,6 +1696,7 @@ enum PokemonEnum {
   klawf
   capsakid
   scovillain
+  scovillainmega
   rellor
   rabsca
   flittle
@@ -1699,6 +1716,7 @@ enum PokemonEnum {
   orthworm
   glimmet
   glimmora
+  glimmoramega
   greavard
   houndstone
   flamigo
@@ -1707,6 +1725,7 @@ enum PokemonEnum {
   veluza
   dondozo
   tatsugiri
+  tatsugirimega
   annihilape
   clodsire
   farigiraf
@@ -1728,6 +1747,7 @@ enum PokemonEnum {
   frigibax
   arctibax
   baxcalibur
+  baxcaliburmega
   gimmighoul
   gimmighoulroaming
   gholdengo
@@ -1774,6 +1794,7 @@ enum ItemsEnum {
   abilityshield
   abomasite
   absolite
+  absolitez
   absorbbulb
   acrobike
   adamantcrystal
@@ -1787,10 +1808,12 @@ enum ItemsEnum {
   alakazite
   aloraichiumz
   altarianite
+  amazingbutter
   ampharosite
   apicotberry
   apricornbox
   aquasuit
+  arbolivaoil
   armorfossil
   aspearberry
   assaultvest
@@ -1805,6 +1828,7 @@ enum ItemsEnum {
   banettite
   barbaracite
   basementkey
+  baxcalibrite
   beastball
   beedrillite
   belueberry
@@ -1844,6 +1868,7 @@ enum ItemsEnum {
   burntberry
   cameruptite
   campinggear
+  canaribread
   cardkey
   catchingcharm
   cellbattery
@@ -1860,6 +1885,7 @@ enum ItemsEnum {
   chestoberry
   chilanberry
   chilldrive
+  chimechite
   chippedpot
   choiceband
   choicescarf
@@ -1884,6 +1910,7 @@ enum ItemsEnum {
   coupon3
   coverfossil
   covertcloak
+  crabominite
   crackedpot
   crucibellite
   custapberry
@@ -1891,6 +1918,7 @@ enum ItemsEnum {
   darkgem
   darkiniumz
   darkmemory
+  darkranite
   darkstone
   darkterashard
   dawnstone
@@ -1950,6 +1978,7 @@ enum ItemsEnum {
   enigmaticcard
   eonflute
   eonticket
+  epicenoire
   escaperope
   eviolite
   excadrite
@@ -2004,6 +2033,7 @@ enum ItemsEnum {
   galladite
   ganlonberry
   garchompite
+  garchompitez
   gardevoirite
   gbsounds
   gengarite
@@ -2012,6 +2042,7 @@ enum ItemsEnum {
   ghostmemory
   ghostterashard
   glalitite
+  glimmoranite
   godstone
   gogoggles
   goldberry
@@ -2020,6 +2051,8 @@ enum ItemsEnum {
   goldcanariplushlv2
   goldcanariplushlv3
   goldteeth
+  golisopite
+  golurkite
   goodrod
   gracidea
   gram1
@@ -2031,6 +2064,7 @@ enum ItemsEnum {
   grassterashard
   grassyseed
   greatball
+  greatbutter
   greencanariplushlv1
   greencanariplushlv2
   greencanariplushlv3
@@ -2052,17 +2086,53 @@ enum ItemsEnum {
   hawluchanite
   healball
   hearthflamemask
+  heatranite
   heatrock
   heavyball
   heavydutyboots
   helixfossil
   heracronite
   hitechearbuds
+  hoenniansalt
   holocaster
   hondewberry
   honorofkalos
   houndoominite
+  hyperaspearberry
+  hyperbabiriberry
+  hyperchartiberry
+  hypercheriberry
+  hyperchestoberry
+  hyperchilanberry
+  hyperchopleberry
+  hypercobaberry
+  hypercolburberry
+  hypergrepaberry
+  hyperhabanberry
+  hyperhondewberry
+  hyperkasibberry
+  hyperkebiaberry
+  hyperkelpsyberry
+  hyperlumberry
+  hyperoccaberry
+  hyperoranberry
+  hyperpasshoberry
+  hyperpayapaberry
+  hyperpechaberry
+  hyperpersimberry
+  hyperpomegberry
   hyperpotion
+  hyperqualotberry
+  hyperrawstberry
+  hyperrindoberry
+  hyperroseliberry
+  hypershucaberry
+  hypersitrusberry
+  hyperspacebutter
+  hypertamatoberry
+  hypertangaberry
+  hyperwacanberry
+  hyperyacheberry
   iapapaberry
   iceberry
   icegem
@@ -2073,6 +2143,7 @@ enum ItemsEnum {
   iciumz
   icyrock
   ilimasnormaliumz
+  importantletter
   inciniumz
   insectplate
   intriguingstone
@@ -2132,9 +2203,11 @@ enum ItemsEnum {
   loveball
   lovesweet
   lucarionite
+  lucarionitez
   luckypunch
   lumberry
   luminousmoss
+  lumiosianbutter
   lunaliumz
   lunarwing
   lureball
@@ -2145,6 +2218,7 @@ enum ItemsEnum {
   machbike
   machinepart
   machobrace
+  magearnite
   magmaemblem
   magmarizer
   magmastone
@@ -2172,6 +2246,7 @@ enum ItemsEnum {
   megashard
   membercard
   mentalherb
+  meowsticite
   metagrossite
   metalalloy
   metalcoat
@@ -2203,6 +2278,7 @@ enum ItemsEnum {
   nestball
   netball
   nevermeltice
+  nicebutter
   nlunarizer
   nomelberry
   normalgem
@@ -2264,6 +2340,7 @@ enum ItemsEnum {
   pokeradar
   polkadotbow
   pomegberry
+  poppingcandy
   potion
   powderjar
   poweranklet
@@ -2300,6 +2377,8 @@ enum ItemsEnum {
   quickpowder
   rabutaberry
   ragecandybar
+  raichunitex
+  raichunitey
   rainbowflower
   rainbowpass
   rainbowwing
@@ -2362,6 +2441,7 @@ enum ItemsEnum {
   scizorite
   scolipite
   scopelens
+  scovillainite
   scraftinite
   seaincense
   sealbag
@@ -2405,6 +2485,7 @@ enum ItemsEnum {
   sprinklotad
   squirtbottle
   ssticket
+  staraptite
   starfberry
   starminite
   starsweet
@@ -2425,6 +2506,7 @@ enum ItemsEnum {
   superlumiosegalette
   superpotion
   superrod
+  supremebutter
   surgebadge
   swampertite
   sweetapple
@@ -2434,6 +2516,7 @@ enum ItemsEnum {
   tapuniumz
   tartapple
   tastytrash
+  tatsugirinite
   tea
   teachytv
   teraorb
@@ -2587,6 +2670,7 @@ enum ItemsEnum {
   yacheberry
   yellowpetal
   zapplate
+  zeraorite
   zoomlens
   zpowering
   zring

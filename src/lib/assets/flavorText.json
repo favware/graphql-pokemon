@@ -43281,6 +43281,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It feeds on the dark emotions of sadness and hatred, which make it grow steadily stronger."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses its horn to feed on envy and malice—or so it's said. It's very active at night."
     }
   ],
   "354": [
@@ -43379,6 +43383,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Strong feelings of hatred turned a puppet into a Pokémon. If it opens its mouth, its cursed energy escapes."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "A doll bore a grudge over being junked, and it became a Pokémon. It seeks the child that disowned it."
     }
   ],
   "355": [
@@ -43775,6 +43783,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Its cries echo inside its hollow body to emerge as beautiful notes for startling and repelling foes."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It vibrates its entire body to attack in all directions using sound waves. Any who hear the vibrations get so confused, they forget who they are."
     }
   ],
   "359": [
@@ -43880,6 +43892,10 @@
     },
     {
       "version_id": "Shining Pearl",
+      "flavor_text": "It senses coming disasters and appears before people only to warn them of impending danger."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "It senses coming disasters and appears before people only to warn them of impending danger."
     }
   ],
@@ -44089,6 +44105,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It is said that a home visited by a Snorunt will prosper. It can withstand cold of -150 degrees Fahrenheit."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "In some snowy lands, certain folklore says a house will prosper if a Snorunt lives there."
     }
   ],
   "362": [
@@ -44207,6 +44227,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It prevents prey from escaping by instantaneously freezing moisture in the air."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "To protect itself, it clad its body in an armor of ice, made by freezing moisture in the air."
     }
   ],
   "363": [
@@ -45085,6 +45109,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Its belief that it will be able to fly one day is apparently the influence of information carried in its genes."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its well-developed neck muscles and ironlike head can smash boulders into pieces."
     }
   ],
   "372": [
@@ -45199,6 +45227,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Its armored body makes all attacks bounce off. The armor is too tough, however, making it heavy and somewhat sluggish."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Within its rugged shell, its cells have begun changing. The shell peels off the instant the Pokémon evolves."
     }
   ],
   "373": [
@@ -45313,6 +45345,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It becomes uncontrollable if it is enraged. It destroys everything with shredding claws and fire."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It's uncontrollable if enraged. It flies around spouting flames, scorching fields and mountains."
     }
   ],
   "374": [
@@ -45427,6 +45463,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "All its cells are magnets. It communicates with others of its kind by transmitting magnetic forces from its body."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "They communicate with one another by using magnetic pulses. In a swarm, they move in perfect unison."
     }
   ],
   "375": [
@@ -45541,6 +45581,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It adores magnetic minerals, so it pursues Nosepass at speeds exceeding 60 mph."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet."
     }
   ],
   "376": [
@@ -45655,6 +45699,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It firmly pins its prey using its four claws and large body. Then Metagross uses the mouth on its stomach to chew its prey to bits."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer."
     }
   ],
   "377": [

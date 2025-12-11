@@ -9,7 +9,7 @@ export interface GetAllPokemonArgs extends BaseFuzzyArgs, BasePokemonArgs {
    * Sets the offset where to start
    * @default 0
    * @minimum 0
-   * @maximum 1422
+   * @maximum 1448
    */
   offset: number | Nullish;
   /**

@@ -324,7 +324,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 398,
       prevo: 'staravia',
       species: 'staraptor',
-      otherFormes: ['starptormega'],
+      otherFormes: ['staraptormega'],
       types: [TypesEnum.Normal, TypesEnum.Flying],
       weightkg: 24.9,
       aliases: ['mukuhooku'],

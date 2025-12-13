@@ -461,6 +461,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'blackaugurite',
+    {
+      desc: "A glassy black stone that produces a sharp cutting edge when split. It's loved by a certain Pokémon.",
+      gen: 8,
+      name: 'Black Augurite',
+      shortDesc: 'Evolves Scyther into Kleavor when used.'
+    }
+  ],
+  [
     'blackbelt',
     {
       desc: "Holder's Fighting-type attacks have 1.2x power.",
@@ -520,7 +529,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Blue Orb',
       shortDesc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
@@ -627,7 +635,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Fire type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Burn Drive',
       shortDesc: "Holder's Techno Blast is Fire type."
     }
@@ -787,7 +794,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Ice type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Chill Drive',
       shortDesc: "Holder's Techno Blast is Ice type."
     }
@@ -1244,7 +1250,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Water type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Douse Drive',
       shortDesc: "Holder's Techno Blast is Water type."
     }
@@ -1567,7 +1572,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     'elevatorkey',
     {
       desc: "A card key that activates the elevator in Lysandre Labs. It is emblazoned with Team Flare's logo.",
-      gen: 7,
+      gen: 6,
       keyItem: true,
       name: 'Elevator Key',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png'
@@ -4949,7 +4954,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Red Orb',
       shortDesc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
@@ -5504,7 +5508,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Electric type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Shock Drive',
       shortDesc: "Holder's Techno Blast is Electric type."
     }
@@ -7423,7 +7426,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Swirlix into Slurpuff when traded.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Whipped Dream',
       shortDesc: 'Evolves Swirlix into Slurpuff when traded.'
     }
@@ -8462,6 +8464,16 @@ export const items = new Collection<string, PokemonTypes.Item>([
       name: 'Important Letter',
       shortDesc: 'A letter that you were asked to deliver to the director of Académie Étoile by a somewhat peculiar character.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/importantletter.png'
+    }
+  ],
+  [
+    'dirtyscarf',
+    {
+      desc: "A scarf that has grown quite shabby. It's easy to imagine that it must have once felt quite luxurious.",
+      gen: 9,
+      name: 'Dirty Scarf',
+      shortDesc: 'A scarf that has grown quite shabby',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/dirtyscarf.png'
     }
   ]
 ]);

@@ -81,13 +81,13 @@ jobs:
             git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
           fi
       - name: Create artifact of flavor text update log file
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: formats_log_file
           path: scripts/data-gen-scripts/scripted-updaters/flavor-text-updater/output.log
           if-no-files-found: error
       - name: Create artifact of classifications update log file
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: classification_log_file
           path: scripts/data-gen-scripts/scripted-updaters/classification-updater/output.log

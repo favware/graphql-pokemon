@@ -1223,7 +1223,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 845,
       otherFormes: ['cramorant', 'cramorantgorging'],
-      species: 'Cramorant-Gulping',
+      species: 'cramorant-gulping',
       types: [TypesEnum.Flying, TypesEnum.Water],
       weightkg: 18,
       cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
@@ -1248,7 +1248,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 5140,
       num: 845,
       otherFormes: ['cramorant', 'cramorantgulping'],
-      species: 'Cramorant-Gorging',
+      species: 'cramorant-gorging',
       types: [TypesEnum.Flying, TypesEnum.Water],
       weightkg: 18,
       cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
@@ -1375,7 +1375,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 849,
       otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkeygmax'],
       prevo: 'toxel',
-      species: 'toxtricity-low-key',
+      species: 'toxtricity-lowkey',
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 40,
       aliases: ['toxtricityl', 'toxtricitylk'],
@@ -1426,8 +1426,9 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Slow',
       minimumHatchTime: 6425,
       num: 849,
-      otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkeygmax'],
-      species: 'toxtricity-low-key-gmax',
+      otherFormes: ['toxtricity', 'toxtricitygmax', 'toxtricitylowkey'],
+      species: 'toxtricity-lowkey-gmax',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/toxtricity-gmax.gif',
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 140
     }
@@ -3459,6 +3460,10 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 905,
       otherFormes: ['enamorus'],
       species: 'enamorus-therian',
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/enamorus-therian.gif',
+      specialBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back/enamorus-therian.gif',
+      specialShinySprite: 'https://play.pokemonshowdown.com/sprites/ani-shiny/enamorus-therian.gif',
+      specialShinyBackSprite: 'https://play.pokemonshowdown.com/sprites/ani-back-shiny/enamorus-therian.gif',
       types: [TypesEnum.Fairy, TypesEnum.Flying],
       weightkg: 48,
       legendary: true

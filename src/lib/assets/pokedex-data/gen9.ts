@@ -303,7 +303,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 916,
       otherFormes: ['oinkologne'],
       prevo: 'lechonk',
-      species: 'oinkolognef',
+      species: 'oinkologne-f',
       types: [TypesEnum.Normal],
       weightkg: 120,
       cry: 'https://play.pokemonshowdown.com/audio/cries/oinkologne.mp3'
@@ -576,7 +576,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 925,
       prevo: 'tandemaus',
       otherFormes: ['maushold'],
-      species: 'mausholdfour',
+      species: 'maushold-four',
       types: [TypesEnum.Normal],
       weightkg: 2.8,
       cry: 'https://play.pokemonshowdown.com/audio/cries/maushold.mp3'
@@ -2161,7 +2161,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 982,
       otherFormes: ['dudunsparce'],
       prevo: 'dunsparce',
-      species: 'dudunsparcethreesegment',
+      species: 'dudunsparce-threesegment',
       types: [TypesEnum.Normal],
       weightkg: 47.4,
       cry: 'https://play.pokemonshowdown.com/audio/cries/dudunsparce.mp3'
@@ -2577,7 +2577,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 12850,
       num: 999,
       otherFormes: ['gimmighoul'],
-      species: 'gimmighoulroaming',
+      species: 'gimmighoul-roaming',
       types: [TypesEnum.Ghost],
       weightkg: 0.1,
       classification: 'Coin Hunter Pokémon',

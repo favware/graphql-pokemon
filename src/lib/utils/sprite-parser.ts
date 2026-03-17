@@ -77,20 +77,6 @@ export function parseSpeciesForSprite({
   // TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
   // Parse differently for remaining generation 9 Pokémon
   switch (pokemonNumber) {
-    case 983:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 984:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 985:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 986:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 987:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 988:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 989:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 990:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 991:
@@ -102,10 +88,6 @@ export function parseSpeciesForSprite({
     case 994:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 995:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 999:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1000:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1001:
       return parsePngSprite(pokemonName, shiny, backSprite);
@@ -119,15 +101,9 @@ export function parseSpeciesForSprite({
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1006:
       return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1007:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 1008:
       return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1009:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 1010:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1011:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1014:
       return parsePngSprite(pokemonName, shiny, backSprite);
@@ -136,12 +112,6 @@ export function parseSpeciesForSprite({
     case 1016:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1017:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1019:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1020:
-      return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1021:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1022:
       return parsePngSprite(pokemonName, shiny, backSprite);

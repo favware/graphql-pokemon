@@ -92,6 +92,36 @@ describe('getAbility', () => {
             }
           },
           {
+            key: 'dragonitemega',
+            species: 'dragonite-mega',
+            abilities: {
+              first: {
+                key: 'innerfocus',
+                bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Inner_Focus_(Ability)',
+                desc: 'This Pokémon cannot be made to flinch. This Pokémon is immune to the effect of the Intimidate Ability.',
+                isFieldAbility: null,
+                isNonstandard: null,
+                name: 'Inner Focus',
+                serebiiPage: 'https://www.serebii.net/abilitydex/inner_focus.shtml',
+                shortDesc: 'This Pokémon cannot be made to flinch. Immune to Intimidate.',
+                smogonPage: 'https://www.smogon.com/dex/ss/abilities/inner_focus'
+              },
+              hidden: {
+                key: 'multiscale',
+                bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Multiscale_(Ability)',
+                desc: null,
+                isFieldAbility: null,
+                isNonstandard: null,
+                name: 'Multiscale',
+                serebiiPage: 'https://www.serebii.net/abilitydex/multiscale.shtml',
+                shortDesc: 'If this Pokémon is at full HP, damage taken from attacks is halved.',
+                smogonPage: 'https://www.smogon.com/dex/ss/abilities/multiscale'
+              },
+              second: null,
+              special: null
+            }
+          },
+          {
             key: 'lugia',
             species: 'lugia',
             abilities: {

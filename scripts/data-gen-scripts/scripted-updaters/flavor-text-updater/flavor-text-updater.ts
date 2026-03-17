@@ -7,7 +7,7 @@ import { rootDir } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon } from '../utils/bulbapedia-utils.js';
 import { gameSorter } from './game-sorter.js';
 import { log, logFile } from './log-wrapper.js';
-import { getFailedPokemon, parsePokemon } from './parsers/parse-pokemon.js';
+import { getFailedPokemon, parsePokemonWithFlaresolverr, parsePokemonWithoutFlareSolverr } from './parsers/parse-pokemon.js';
 
 const pathToFlavorTextFile = new URL('src/lib/assets/flavorText.json', rootDir);
 const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
@@ -16,22 +16,26 @@ await ensureLogfileExists(logFile);
 
 const pokemonToParse = getBulbapediaReadyPokemon();
 
-// Get the current day of the week and add 1 to get a number from 1 to 7
-const dayOfWeek = new Date().getDay() + 1;
+// Determine the current day of the month (1-based). Clamp to 30 to avoid out-of-range on 31-day months.
+const dayOfMonth = Math.min(new Date().getDate(), 30);
 
-// Calculate the size of each seventh
-const seventhSize = Math.ceil(pokemonToParse.length / 7);
+// We split the workload across 30 sets (approximate average month length).
+const numberOfSets = 30;
+const setSize = Math.ceil(pokemonToParse.length / numberOfSets);
 
-// Split the array into sevenths
-const sevenths = Array(7)
-  .fill(0)
-  .map((_, i) => pokemonToParse.slice(i * seventhSize, (i + 1) * seventhSize));
+// Split the array into 30 roughly equal sets.
+const monthlySets = Array.from({ length: numberOfSets }, (_, i) => pokemonToParse.slice(i * setSize, (i + 1) * setSize));
 
-// Select the seventh to process based on the day of the week
-const pokemonToProcess = sevenths.at(dayOfWeek - 1);
+// Select the set to process based on the current day of the month.
+const pokemonToProcess = monthlySets.at(dayOfMonth - 1) ?? [];
+
+console.group('=========== Starting Flavor Text Updater ===========');
+console.log(`Processing set ${dayOfMonth} of ${numberOfSets}, containing ${pokemonToProcess.length} Pokémon.`);
+console.log('process.env.CI is: ', process.env.CI);
+console.groupEnd();
 
 for (const pokemon of pokemonToProcess) {
-  await parsePokemon(pokemon);
+  process.env.CI ? await parsePokemonWithFlaresolverr(pokemon) : await parsePokemonWithoutFlareSolverr(pokemon);
 }
 
 await log({ msg: "Done fetching and storing data in memory, sorting version_id's", color: green, isBold: true, isIndent: false });

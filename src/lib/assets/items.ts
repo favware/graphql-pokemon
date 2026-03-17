@@ -18,7 +18,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Abomasite',
       shortDesc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.'
     }
@@ -28,7 +27,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Absolite',
       shortDesc: 'If held by an Absol, this item allows it to Mega Evolve in battle.'
     }
@@ -95,7 +93,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Aerodactylite',
       shortDesc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.'
     }
@@ -105,7 +102,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Aggronite',
       shortDesc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.'
     }
@@ -133,7 +129,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Alakazite',
       shortDesc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.'
     }
@@ -153,7 +148,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Altarianite',
       shortDesc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.'
     }
@@ -163,7 +157,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Ampharosite',
       shortDesc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.'
     }
@@ -231,7 +224,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Audinite',
       shortDesc: 'If held by an Audino, this item allows it to Mega Evolve in battle.'
     }
@@ -299,9 +291,17 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Banettite',
       shortDesc: 'If held by a Banette, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'barbaracite',
+    {
+      desc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Barbaracite',
+      shortDesc: 'If held by a Barbaracle, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -328,7 +328,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Beedrillite',
       shortDesc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.'
     }
@@ -493,7 +492,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Blastoisinite',
       shortDesc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.'
     }
@@ -650,7 +648,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Cameruptite',
       shortDesc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.'
     }
@@ -695,6 +692,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'chandelurite',
+    {
+      desc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chandelurite',
+      shortDesc: 'If held by a Chandelure, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'charcoal',
     {
       desc: "Holder's Fire-type attacks have 1.2x power.",
@@ -708,7 +714,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite X',
       shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
     }
@@ -718,7 +723,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite Y',
       shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
     }
@@ -749,6 +753,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       isNonstandard: IsNonStandard.Unobtainable,
       name: 'Cherish Ball',
       shortDesc: 'A rare Poké Ball that has been crafted to commemorate an occasion.'
+    }
+  ],
+  [
+    'chesnautite',
+    {
+      desc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chesnaught',
+      shortDesc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -856,6 +869,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Clear Bell',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/clearbell.png'
+    }
+  ],
+  [
+    'clefablite',
+    {
+      desc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Clefablite',
+      shortDesc: 'If held by a Clefable, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1120,6 +1142,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'delphoxite',
+    {
+      desc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Delphoxite',
+      shortDesc: 'If held by a Delphox, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'destinyknot',
     {
       desc: 'If holder becomes infatuated, the other Pokémon also becomes infatuated.',
@@ -1176,7 +1207,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Diancite',
       shortDesc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.'
     }
@@ -1251,6 +1281,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'dragalgite',
+    {
+      desc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Dragalgite',
+      shortDesc: 'If held by a Dragalge, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'dragonfang',
     {
       desc: "Holder's Dragon-type attacks have 1.2x power.",
@@ -1267,6 +1306,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       isNonstandard: IsNonStandard.Past,
       name: 'Dragon Gem',
       shortDesc: "Holder's first successful Dragon-type attack will have 1.3x power. Single use."
+    }
+  ],
+  [
+    'dragoninite',
+    {
+      desc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Dragoninite',
+      shortDesc: 'If held by a Dragonite, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1315,6 +1363,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 9,
       name: 'Dragon Tera Shard',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/dragonterashard.png'
+    }
+  ],
+  [
+    'drampanite',
+    {
+      desc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Drampanite',
+      shortDesc: 'If held by a Drampa, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1400,6 +1457,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       name: 'Earth Plate',
       shortDesc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type."
+    }
+  ],
+  [
+    'eelektrossite',
+    {
+      desc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Eelektrossite',
+      shortDesc: 'If held by an Eelektross, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1509,6 +1575,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'emboarite',
+    {
+      desc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Emboarite',
+      shortDesc: 'If held by an Emboar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'endorsement',
     {
       desc: "A letter of recommendation that you'll need in order to participate in the Gym Challenge.",
@@ -1596,6 +1671,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'excadrite',
+    {
+      desc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Excadrite',
+      shortDesc: 'If held by an Excadrill, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'expertbelt',
     {
       aliases: ['ebelt'],
@@ -1674,6 +1758,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'falinksite',
+    {
+      desc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Falinksite',
+      shortDesc: 'If held by a Falinks, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'famechecker',
     {
       desc: "A device that enables you to recall what you've heard and seen about famous people.",
@@ -1701,6 +1794,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       name: 'Fast Ball',
       shortDesc: 'A Poké Ball that makes it easier to catch Pokémon which are quick to run away.'
+    }
+  ],
+  [
+    'feraligite',
+    {
+      desc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Feraligite',
+      shortDesc: 'If held by a Feraligatr, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -1847,6 +1949,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'floettite',
+    {
+      desc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Floettite',
+      shortDesc: 'If held by an Eternal Flower Floette, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'flowersweet',
     {
       desc: 'Evolves Milcery into Alcremie when held and spun around.',
@@ -1974,6 +2085,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'froslassite',
+    {
+      desc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Froslassite',
+      shortDesc: 'If held by a Froslass, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'fullincense',
     {
       desc: 'Holder moves last in its priority bracket.',
@@ -2026,7 +2146,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Galladite',
       shortDesc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.'
     }
@@ -2045,7 +2164,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Garchompite',
       shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.'
     }
@@ -2055,7 +2173,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gardevoirite',
       shortDesc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.'
     }
@@ -2075,7 +2192,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gengarite',
       shortDesc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.'
     }
@@ -2124,7 +2240,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Glalitite',
       shortDesc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.'
     }
@@ -2297,6 +2412,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'greninjite',
+    {
+      desc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Greninjite',
+      shortDesc: 'If held by a Greninja, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'grepaberry',
     {
       desc: 'Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.',
@@ -2397,7 +2521,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gyaradosite',
       shortDesc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.'
     }
@@ -2418,6 +2541,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       name: 'Hard Stone',
       shortDesc: "Holder's Rock-type attacks have 1.2x power."
+    }
+  ],
+  [
+    'hawluchanite',
+    {
+      desc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Hawluchanite',
+      shortDesc: 'If held by a Hawlucha, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -2481,7 +2613,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Heracronite',
       shortDesc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.'
     }
@@ -2530,7 +2661,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Houndoominite',
       shortDesc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.'
     }
@@ -2740,7 +2870,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Kangaskhanite',
       shortDesc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.'
     }
@@ -2893,7 +3022,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Latiasite',
       shortDesc: 'If held by a Latias, this item allows it to Mega Evolve in battle.'
     }
@@ -2903,7 +3031,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Latiosite',
       shortDesc: 'If held by a Latios, this item allows it to Mega Evolve in battle.'
     }
@@ -3118,7 +3245,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Lopunnite',
       shortDesc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.'
     }
@@ -3156,7 +3282,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Lucarionite',
       shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.'
     }
@@ -3376,6 +3501,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'malamarite',
+    {
+      desc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Malamarite',
+      shortDesc: 'If held by a Malamar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
     'maliciousarmor',
     {
       desc: 'Evolves Charcadet into Ceruledge when used.',
@@ -3389,7 +3523,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Manectite',
       shortDesc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.'
     }
@@ -3436,7 +3569,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mawilite',
       shortDesc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.'
     }
@@ -3473,7 +3605,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Medichamite',
       shortDesc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.'
     }
@@ -3487,6 +3618,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Mega Bracelet',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/megabracelet.png'
+    }
+  ],
+  [
+    'meganiumite',
+    {
+      desc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Meganiumite',
+      shortDesc: 'If held by a Meganium, this item allows it to Mega Evolve in battle.'
     }
   ],
   [
@@ -3523,7 +3663,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Metagrossite',
       shortDesc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.'
     }
@@ -3601,7 +3740,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite X',
       shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
     }
@@ -3611,7 +3749,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite Y',
       shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
     }
@@ -4133,7 +4270,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Pidgeotite',
       shortDesc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.'
     }
@@ -4193,7 +4329,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Pinsirite',
       shortDesc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.'
     }
@@ -4473,6 +4608,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       name: 'Premier Ball',
       shortDesc: 'A rare Poké Ball that has been crafted to commemorate an event.'
+    }
+  ],
+  [
+    'prettyfeather',
+    {
+      desc: "Though this feather is beautiful, it's just a regular feather and has no effect.",
+      gen: 5,
+      name: 'Pretty Feather',
+      shortDesc: "Though this feather is beautiful, it's just a regular feather and has no effect."
     }
   ],
   [
@@ -5122,7 +5266,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sablenite',
       shortDesc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.'
     }
@@ -5132,7 +5275,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Spritzee into Aromatisse when traded.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sachet',
       shortDesc: 'Evolves Spritzee into Aromatisse when traded.'
     }
@@ -5161,7 +5303,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Amaura.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sail Fossil',
       shortDesc: 'Can be revived into Amaura.'
     }
@@ -5181,7 +5322,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Salamencite',
       shortDesc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.'
     }
@@ -5243,7 +5383,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Scizorite',
       shortDesc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.'
     }
@@ -5321,7 +5460,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sharpedonite',
       shortDesc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.'
     }
@@ -5454,7 +5592,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Slowbronite',
       shortDesc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.'
     }
@@ -5685,7 +5822,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Steelixite',
       shortDesc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.'
     }
@@ -7059,7 +7195,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Tyranitarite',
       shortDesc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.'
     }
@@ -7125,7 +7260,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Venusaurite',
       shortDesc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.'
     }
@@ -7429,6 +7563,268 @@ export const items = new Collection<string, PokemonTypes.Item>([
       keyItem: true,
       name: 'Zygarde Cube',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/zygardecube.png'
+    }
+  ],
+  [
+    'chesnaughtite',
+    {
+      desc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chesnaughtite',
+      shortDesc: 'If held by a Chesnaught, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'pyroarite',
+    {
+      desc: 'If held by a Pyroar, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Pyroarite',
+      shortDesc: 'If held by a Pyroar, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'scolipite',
+    {
+      desc: 'If held by a Scolipede, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Scolipite',
+      shortDesc: 'If held by a Scolipede, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'scraftinite',
+    {
+      desc: 'If held by a Scrafty, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Scraftinite',
+      shortDesc: 'If held by a Scrafty, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'skarmorite',
+    {
+      desc: 'If held by a Skarmory, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Skarmorite',
+      shortDesc: 'If held by a Skarmory, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'starminite',
+    {
+      desc: 'If held by a Starmie, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Starminite',
+      shortDesc: 'If held by a Starmie, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'victreebelite',
+    {
+      desc: 'If held by a Victreebel, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Victreebelite',
+      shortDesc: 'If held by a Victreebel, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'zygardite',
+    {
+      desc: 'If held by a Zygarde in Complete Forme, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Zygardite',
+      shortDesc: 'If held by a Zygarde in Complete Forme, this item allows it to Mega Evolve in battle.'
+    }
+  ],
+  [
+    'seedofmastery',
+    {
+      desc: "A rare variety of seed. A certain person can help you upgrade your Pokémon's moves into Plus Moves if given one of these.",
+      gen: 9,
+      name: 'Seed of Mastery',
+      shortDesc: "Used to upgrade a Pokemon's moves into Plus Moves",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/seedofmastery.png'
+    }
+  ],
+  [
+    'keytoroom202',
+    {
+      desc: 'A key for room 202 at Hotel Z',
+      gen: 9,
+      name: 'Key to Room 202',
+      shortDesc: 'A key for room 202 at Hotel Z',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/keytoroom202.png'
+    }
+  ],
+  [
+    'superlumiosegalette',
+    {
+      desc: 'A popular treat among certain residents of Lumiose City. This variety is baked to be incredibly firm so that one can savor the crunch.',
+      gen: 9,
+      name: 'Super Lumiose Galette',
+      shortDesc: 'A popular treat among certain residents of Lumiose City.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/superlumiosegalette.png'
+    }
+  ],
+  [
+    'labkeycarda',
+    {
+      desc: "A key card that can be used in Lysandre Labs. The locks were each programmed to take different keys for security purposes, but mostly it's just an inconvenience.",
+      gen: 9,
+      name: 'Lab Key Card A',
+      shortDesc: 'A key card that can be used in Lysandre Labs.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/labkeycarda.png'
+    }
+  ],
+  [
+    'labkeycardb',
+    {
+      desc: "A key card that can be used in Lysandre Labs. The locks were each programmed to take different keys for security purposes, but mostly it's just an inconvenience.",
+      gen: 9,
+      name: 'Lab Key Card B',
+      shortDesc: 'A key card that can be used in Lysandre Labs.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/labkeycardb.png'
+    }
+  ],
+  [
+    'labkeycardc',
+    {
+      desc: "A key card that can be used in Lysandre Labs. The locks were each programmed to take different keys for security purposes, but mostly it's just an inconvenience.",
+      gen: 9,
+      name: 'Lab Key Card C',
+      shortDesc: 'A key card that can be used in Lysandre Labs.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/labkeycardc.png'
+    }
+  ],
+  [
+    'pebble',
+    {
+      desc: 'An ordinary pebble entrusted to you by the Pokémon known as Zygarde. It is completely unremarkable.',
+      gen: 9,
+      name: 'Pebble',
+      shortDesc: 'An unremarkable pebble.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/pebble.png'
+    }
+  ],
+  [
+    'cherishedring',
+    {
+      desc: 'A ring that an old woman asked you to retrieve. It seems to hold some value to her.',
+      gen: 9,
+      name: 'Cherished Ring',
+      shortDesc: 'A valuable ring that belongs to an old woman.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cherishedring.png'
+    }
+  ],
+  [
+    'colorfulscrew',
+    {
+      desc: 'A colorful screw. These screws have been left here and there around Lumiose City, and the staff at Racine Construction will trade you goods in exchange for them.',
+      gen: 9,
+      name: 'Colorful Screw',
+      shortDesc: 'A valuable ring that belongs to an old woman.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/cherishedring.png'
+    }
+  ],
+  [
+    'autographedplush',
+    {
+      desc: 'A plush doll that has been autographed by Canari. Just having one puts you in a good mood.',
+      gen: 9,
+      name: 'Autographed Plush',
+      shortDesc: 'A plush doll that has been autographed by Canari.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/autographedplush.png'
+    }
+  ],
+  [
+    'tastytrash',
+    {
+      desc: 'Food waste made up of cooking ingredients. Although they were thrown away after the best parts were used, some edible bits still remain.',
+      gen: 9,
+      name: 'Tasty Trash',
+      shortDesc: 'Food waste made up of cooking ingredients.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/tastytrash.png'
+    }
+  ],
+  [
+    'revitalizingtwig',
+    {
+      desc: "A small twig that is beloved by Fennekin. It's said that chewing on one of these twigs can be both soothing and cheering.",
+      gen: 9,
+      name: 'Revitalizing Twig',
+      shortDesc: 'A small twig that is beloved by Fennekin.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/revitalizingtwig.png'
+    }
+  ],
+  [
+    'lidasthings',
+    {
+      desc: "Lida's accessories and other items that she uses when practicing dance. They're kept in a small pouch that was handmade by Naveen.",
+      gen: 9,
+      name: "Lida's Things",
+      shortDesc: "Lida's accessories and other items that she uses when practicing dance.",
+      specialSprite: "https://www.serebii.net/itemdex/sprites/za/th/lida'sthings.png"
+    }
+  ],
+  [
+    'megashard',
+    {
+      desc: 'A mysterious shard that can be found after smashing Mega Crystals using Pokémon moves. It seems that some people collect these shards.',
+      gen: 9,
+      name: 'Mega Shard',
+      shortDesc: 'A mysterious shard that can be found after smashing Mega Crystals',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/megashard.png'
+    }
+  ],
+  [
+    'redcanariplush',
+    {
+      desc: 'A plush doll of Canari that holds a red charm. Having one of these increases the Exp. Points your Pokémon get.',
+      gen: 9,
+      name: 'Red Canari Plush',
+      shortDesc: 'A red Canari plush doll that increases Exp. Points.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/redcanariplushlv.2.png'
+    }
+  ],
+  [
+    'goldcanariplush',
+    {
+      desc: 'A plush doll of Canari that holds a gold charm. Having one of these increases the prize money you receive from battles.',
+      gen: 9,
+      name: 'Gold Canari Plush',
+      shortDesc: 'A gold Canari plush doll that increases money received from battles.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/goldcanariplushlv.2.png'
+    }
+  ],
+  [
+    'pinkcanariplush',
+    {
+      desc: "A plush doll of Canari that holds a pink charm. Having one of these increases the number of Mega Shards you'll find after smashing Mega Crystals.",
+      gen: 9,
+      name: 'Pink Canari Plush',
+      shortDesc: 'A pink Canari plush doll that increases Mega Shards after smashing Mega Crystals.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/pinkcanariplushlv.2.png'
+    }
+  ],
+  [
+    'greencanariplush',
+    {
+      desc: 'A plush doll of Canari that holds a green charm. Having one of these makes you less likely to black out from taking damage.',
+      gen: 9,
+      name: 'Green Canari Plush',
+      shortDesc: 'A green Canari plush doll that makes you a less likely to black out.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greencanariplushlv.2.png'
+    }
+  ],
+  [
+    'bluecanariplush',
+    {
+      desc: "A plush doll of Canari that holds a blue charm. Having one of these makes it more likely that you'll succeed at catching Pokémon.",
+      gen: 9,
+      name: 'Blue Canari Plush',
+      shortDesc: 'A blue Canari plush doll that makes you more likely to catch Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.2.png'
     }
   ]
 ]);

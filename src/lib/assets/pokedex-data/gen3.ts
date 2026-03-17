@@ -1708,7 +1708,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'hugepower' },
       baseSpecies: 'mawile',
-      baseStats: { hp: 50, atk: 105, def: 125, spa: 55, spd: 95, spe: 50 },
+      baseStats: { hp: 50, atk: 147, def: 125, spa: 55, spd: 95, spe: 50 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
       eggGroups: ['Field', 'Fairy'],
@@ -1876,7 +1876,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'medicham',
     {
       abilities: { first: 'purepower', hidden: 'telepathy' },
-      baseStats: { hp: 60, atk: 60, def: 75, spa: 60, spd: 75, spe: 80 },
+      baseStats: { hp: 60, atk: 84, def: 75, spa: 60, spd: 75, spe: 80 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Red',
       eggGroups: ['Human-Like'],
@@ -1905,7 +1905,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     {
       abilities: { first: 'purepower' },
       baseSpecies: 'medicham',
-      baseStats: { hp: 60, atk: 100, def: 85, spa: 80, spd: 85, spe: 100 },
+      baseStats: { hp: 60, atk: 140, def: 85, spa: 80, spd: 85, spe: 100 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Red',
       eggGroups: ['Human-Like'],

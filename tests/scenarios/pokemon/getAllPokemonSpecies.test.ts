@@ -416,6 +416,10 @@ describe('getAllPokemon', () => {
       { key: 'nidoking', species: 'nidoking' },
       { key: 'clefairy', species: 'clefairy' },
       { key: 'clefable', species: 'clefable' },
+      {
+        key: 'clefablemega',
+        species: 'clefable-mega'
+      },
       { key: 'vulpix', species: 'vulpix' },
       {
         key: 'vulpixalola',
@@ -499,6 +503,10 @@ describe('getAllPokemon', () => {
       { key: 'bellsprout', species: 'bellsprout' },
       { key: 'weepinbell', species: 'weepinbell' },
       { key: 'victreebel', species: 'victreebel' },
+      {
+        key: 'victreebelmega',
+        species: 'victreebel-mega'
+      },
       { key: 'tentacool', species: 'tentacool' },
       { key: 'tentacruel', species: 'tentacruel' },
       { key: 'geodude', species: 'geodude' },
@@ -630,6 +638,10 @@ describe('getAllPokemon', () => {
       { key: 'seaking', species: 'seaking' },
       { key: 'staryu', species: 'staryu' },
       { key: 'starmie', species: 'starmie' },
+      {
+        key: 'starmiemega',
+        species: 'starmie-mega'
+      },
       { key: 'mrmime', species: 'Mr. Mime' },
       {
         key: 'mrmimegalar',
@@ -711,6 +723,10 @@ describe('getAllPokemon', () => {
       { key: 'dratini', species: 'dratini' },
       { key: 'dragonair', species: 'dragonair' },
       { key: 'dragonite', species: 'dragonite' },
+      {
+        key: 'dragonitemega',
+        species: 'dragonite-mega'
+      },
       { key: 'mewtwo', species: 'mewtwo' },
       {
         key: 'mewtwomegax',
@@ -724,6 +740,10 @@ describe('getAllPokemon', () => {
       { key: 'chikorita', species: 'chikorita' },
       { key: 'bayleef', species: 'bayleef' },
       { key: 'meganium', species: 'meganium' },
+      {
+        key: 'meganiummega',
+        species: 'meganium-mega'
+      },
       { key: 'cyndaquil', species: 'cyndaquil' },
       { key: 'quilava', species: 'quilava' },
       { key: 'typhlosion', species: 'typhlosion' },
@@ -734,6 +754,10 @@ describe('getAllPokemon', () => {
       { key: 'totodile', species: 'totodile' },
       { key: 'croconaw', species: 'croconaw' },
       { key: 'feraligatr', species: 'feraligatr' },
+      {
+        key: 'feraligatrmega',
+        species: 'feraligatr-mega'
+      },
       { key: 'sentret', species: 'sentret' },
       { key: 'furret', species: 'furret' },
       { key: 'hoothoot', species: 'hoothoot' },
@@ -838,6 +862,10 @@ describe('getAllPokemon', () => {
       { key: 'delibird', species: 'delibird' },
       { key: 'mantine', species: 'mantine' },
       { key: 'skarmory', species: 'skarmory' },
+      {
+        key: 'skarmorymega',
+        species: 'skarmory-mega'
+      },
       { key: 'houndour', species: 'houndour' },
       { key: 'houndoom', species: 'houndoom' },
       {
@@ -1246,6 +1274,10 @@ describe('getAllPokemon', () => {
       { key: 'probopass', species: 'probopass' },
       { key: 'dusknoir', species: 'dusknoir' },
       { key: 'froslass', species: 'froslass' },
+      {
+        key: 'froslassmega',
+        species: 'froslass-mega'
+      },
       { key: 'rotom', species: 'rotom' },
       { key: 'rotomheat', species: 'rotom-heat' },
       { key: 'rotomwash', species: 'rotom-wash' },
@@ -1358,6 +1390,10 @@ describe('getAllPokemon', () => {
       { key: 'tepig', species: 'tepig' },
       { key: 'pignite', species: 'pignite' },
       { key: 'emboar', species: 'emboar' },
+      {
+        key: 'emboarmega',
+        species: 'emboar-mega'
+      },
       { key: 'oshawott', species: 'oshawott' },
       { key: 'dewott', species: 'dewott' },
       { key: 'samurott', species: 'samurott' },
@@ -1392,6 +1428,10 @@ describe('getAllPokemon', () => {
       { key: 'swoobat', species: 'swoobat' },
       { key: 'drilbur', species: 'drilbur' },
       { key: 'excadrill', species: 'excadrill' },
+      {
+        key: 'excadrillmega',
+        species: 'excadrill-mega'
+      },
       { key: 'audino', species: 'audino' },
       {
         key: 'audinomega',
@@ -1411,6 +1451,10 @@ describe('getAllPokemon', () => {
       { key: 'venipede', species: 'venipede' },
       { key: 'whirlipede', species: 'whirlipede' },
       { key: 'scolipede', species: 'scolipede' },
+      {
+        key: 'scolipedemega',
+        species: 'scolipede-mega'
+      },
       { key: 'cottonee', species: 'cottonee' },
       { key: 'whimsicott', species: 'whimsicott' },
       { key: 'petilil', species: 'petilil' },
@@ -1454,6 +1498,10 @@ describe('getAllPokemon', () => {
       { key: 'crustle', species: 'crustle' },
       { key: 'scraggy', species: 'scraggy' },
       { key: 'scrafty', species: 'scrafty' },
+      {
+        key: 'scraftymega',
+        species: 'scrafty-mega'
+      },
       { key: 'sigilyph', species: 'sigilyph' },
       { key: 'yamask', species: 'yamask' },
       {
@@ -1522,11 +1570,19 @@ describe('getAllPokemon', () => {
       { key: 'tynamo', species: 'tynamo' },
       { key: 'eelektrik', species: 'eelektrik' },
       { key: 'eelektross', species: 'eelektross' },
+      {
+        key: 'eelektrossmega',
+        species: 'eelektross-mega'
+      },
       { key: 'elgyem', species: 'elgyem' },
       { key: 'beheeyem', species: 'beheeyem' },
       { key: 'litwick', species: 'litwick' },
       { key: 'lampent', species: 'lampent' },
       { key: 'chandelure', species: 'chandelure' },
+      {
+        key: 'chandeluremega',
+        species: 'chandelure-mega'
+      },
       { key: 'axew', species: 'axew' },
       { key: 'fraxure', species: 'fraxure' },
       { key: 'haxorus', species: 'haxorus' },
@@ -1622,15 +1678,27 @@ describe('getAllPokemon', () => {
       { key: 'chespin', species: 'chespin' },
       { key: 'quilladin', species: 'quilladin' },
       { key: 'chesnaught', species: 'chesnaught' },
+      {
+        key: 'chesnaughtmega',
+        species: 'chesnaught-mega'
+      },
       { key: 'fennekin', species: 'fennekin' },
       { key: 'braixen', species: 'braixen' },
       { key: 'delphox', species: 'delphox' },
+      {
+        key: 'delphoxmega',
+        species: 'delphox-mega'
+      },
       { key: 'froakie', species: 'froakie' },
       { key: 'frogadier', species: 'frogadier' },
       { key: 'greninja', species: 'greninja' },
       {
         key: 'greninjaash',
         species: 'greninja-ash'
+      },
+      {
+        key: 'greninjamega',
+        species: 'greninja-mega'
       },
       { key: 'bunnelby', species: 'bunnelby' },
       { key: 'diggersby', species: 'diggersby' },
@@ -1653,11 +1721,19 @@ describe('getAllPokemon', () => {
       },
       { key: 'litleo', species: 'litleo' },
       { key: 'pyroar', species: 'pyroar' },
+      {
+        key: 'pyroarmega',
+        species: 'pyroar-mega'
+      },
       { key: 'flabebe', species: 'flabebe' },
       { key: 'floette', species: 'floette' },
       {
         key: 'floetteeternal',
         species: 'floette-eternal'
+      },
+      {
+        key: 'floettemega',
+        species: 'floette-mega'
       },
       { key: 'florges', species: 'florges' },
       { key: 'skiddo', species: 'skiddo' },
@@ -1681,10 +1757,22 @@ describe('getAllPokemon', () => {
       { key: 'slurpuff', species: 'slurpuff' },
       { key: 'inkay', species: 'inkay' },
       { key: 'malamar', species: 'malamar' },
+      {
+        key: 'malamarmega',
+        species: 'malamar-mega'
+      },
       { key: 'binacle', species: 'binacle' },
       { key: 'barbaracle', species: 'barbaracle' },
+      {
+        key: 'barbaraclemega',
+        species: 'barbaracle-mega'
+      },
       { key: 'skrelp', species: 'skrelp' },
       { key: 'dragalge', species: 'dragalge' },
+      {
+        key: 'dragalgemega',
+        species: 'dragalge-mega'
+      },
       { key: 'clauncher', species: 'clauncher' },
       { key: 'clawitzer', species: 'clawitzer' },
       { key: 'helioptile', species: 'helioptile' },
@@ -1695,6 +1783,10 @@ describe('getAllPokemon', () => {
       { key: 'aurorus', species: 'aurorus' },
       { key: 'sylveon', species: 'sylveon' },
       { key: 'hawlucha', species: 'hawlucha' },
+      {
+        key: 'hawluchamega',
+        species: 'hawlucha-mega'
+      },
       { key: 'dedenne', species: 'dedenne' },
       { key: 'carbink', species: 'carbink' },
       { key: 'goomy', species: 'goomy' },
@@ -1756,6 +1848,10 @@ describe('getAllPokemon', () => {
       {
         key: 'zygardecomplete',
         species: 'zygarde-complete'
+      },
+      {
+        key: 'zygardecompletemega',
+        species: 'zygarde-complete-mega'
       },
       { key: 'diancie', species: 'diancie' },
       {
@@ -1970,6 +2066,10 @@ describe('getAllPokemon', () => {
       },
       { key: 'bruxish', species: 'bruxish' },
       { key: 'drampa', species: 'drampa' },
+      {
+        key: 'drampamega',
+        species: 'drampa-mega'
+      },
       { key: 'dhelmise', species: 'dhelmise' },
       { key: 'jangmoo', species: 'jangmo-o' },
       { key: 'hakamoo', species: 'hakamo-o' },
@@ -2186,6 +2286,10 @@ describe('getAllPokemon', () => {
         species: 'alcremie-gmax'
       },
       { key: 'falinks', species: 'falinks' },
+      {
+        key: 'falinksmega',
+        species: 'falinks-mega'
+      },
       { key: 'pincurchin', species: 'pincurchin' },
       { key: 'snom', species: 'snom' },
       { key: 'frosmoth', species: 'frosmoth' },

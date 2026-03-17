@@ -1,4 +1,4 @@
-import { pokedex as data } from '../../src/lib/assets/pokedex.js';
+import { items as data } from '../../src/lib/assets/items.js';
 import { dataToClipboard } from './data-to-clipboard.js';
 
 const keys: string[] = [];

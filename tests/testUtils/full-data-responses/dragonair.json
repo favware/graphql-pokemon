@@ -19801,7 +19801,7 @@
           "maximumHatchTime": 10536,
           "minimumHatchTime": 10280,
           "num": 149,
-          "otherFormes": null,
+          "otherFormes": ["dragonitemega"],
           "serebiiPage": "https://www.serebii.net/pokedex-sv/dragonite",
           "shinyBackSprite": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/dragonite.gif",
           "shinySprite": "https://play.pokemonshowdown.com/sprites/ani-shiny/dragonite.gif",

@@ -37,5 +37,6 @@ export const sortOrder = [
   'Shining Pearl',
   'Legends: Arceus',
   'Scarlet',
-  'Violet'
+  'Violet',
+  'Legends: Z-A'
 ];

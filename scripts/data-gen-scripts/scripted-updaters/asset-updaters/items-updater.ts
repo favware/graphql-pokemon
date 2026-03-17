@@ -82,7 +82,7 @@ for (const [key, itemFromData] of itemsDataEntries) {
   }
 
   const data: PokemonTypes.Item = {
-    desc: replacePokeWithAccentedPoke(itemFromText.desc),
+    desc: replacePokeWithAccentedPoke(itemFromText.desc ?? itemFromText.shortDesc),
     gen: itemFromData.gen,
     name: itemFromData.name
   };

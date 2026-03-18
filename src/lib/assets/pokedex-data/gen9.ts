@@ -306,7 +306,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'oinkologne-f',
       types: [TypesEnum.Normal],
       weightkg: 120,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/oinkologne.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/oinkologne-f.mp3'
     }
   ],
   [
@@ -579,7 +579,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'maushold-four',
       types: [TypesEnum.Normal],
       weightkg: 2.8,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/maushold.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/maushold-four.mp3'
     }
   ],
   [
@@ -2581,7 +2581,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost],
       weightkg: 0.1,
       classification: 'Coin Hunter Pokémon',
-      cry: 'https://play.pokemonshowdown.com/audio/cries/gimmighoul.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/gimmighoul-roaming.mp3'
     }
   ],
   [

@@ -1226,7 +1226,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cramorant-gulping',
       types: [TypesEnum.Flying, TypesEnum.Water],
       weightkg: 18,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant-gulping.mp3'
     }
   ],
   [
@@ -1251,7 +1251,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'cramorant-gorging',
       types: [TypesEnum.Flying, TypesEnum.Water],
       weightkg: 18,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/cramorant-gorging.mp3'
     }
   ],
   [
@@ -1379,7 +1379,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric, TypesEnum.Poison],
       weightkg: 40,
       aliases: ['toxtricityl', 'toxtricitylk'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/toxtricity.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/toxtricity-lowkey.mp3'
     }
   ],
   [
@@ -1430,7 +1430,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'toxtricity-lowkey-gmax',
       specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/toxtricity-gmax.gif',
       types: [TypesEnum.Electric, TypesEnum.Poison],
-      weightkg: 140
+      weightkg: 140,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/toxtricity-lowkey.mp3'
     }
   ],
   [

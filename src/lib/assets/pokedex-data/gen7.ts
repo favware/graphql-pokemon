@@ -3004,7 +3004,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       aliases: ['jijiironmega'],
       cry: 'https://play.pokemonshowdown.com/audio/cries/drampa.mp3',
       respelling: 'DRAM-puh',
-      ipa: '/ˈdræmpə/'
+      ipa: '/ˈdræmpə/',
+      classification: 'Imposing Pokémon'
     }
   ],
   [

@@ -1017,7 +1017,7 @@ __metadata:
     "@swc/core": "npm:1.15.18"
     "@types/async": "npm:^3.2.25"
     "@types/cheerio": "npm:^1.0.0"
-    "@types/koa": "npm:^3.0.1"
+    "@types/koa": "npm:^3.0.2"
     "@types/koa-bodyparser": "npm:^4.3.13"
     "@types/koa__cors": "npm:^5.0.1"
     "@types/node": "npm:^24.12.0"
@@ -3016,9 +3016,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/koa@npm:*, @types/koa@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@types/koa@npm:3.0.1"
+"@types/koa@npm:*, @types/koa@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@types/koa@npm:3.0.2"
   dependencies:
     "@types/accepts": "npm:*"
     "@types/content-disposition": "npm:*"
@@ -3028,7 +3028,7 @@ __metadata:
     "@types/keygrip": "npm:*"
     "@types/koa-compose": "npm:*"
     "@types/node": "npm:*"
-  checksum: 10/b1581d31d562bb5d9f61bc0148652abffc701c39930eb77a57b7d1f43aaad56ffa1970f6f3d4d6a0a56395a6832e2711a3278850dcc5a6c986ba6ed2cd0f4f1f
+  checksum: 10/1522fa11ec3520275232b4e054424142a3cdb19e7991673d6371b6cdcb5587d56858098dc196a9580b98174a66326545fc64be98d88652915b21bdebc2905dcf
   languageName: node
   linkType: hard
 

@@ -68005,6 +68005,10 @@
     {
       "version_id": "Shield",
       "flavor_text": "Cunning and cautious, this Pokémon survives by stealing food from others. It erases its tracks with swipes of its tail as it makes off with its plunder."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It filches food from people and Pokémon alike. While fleeing the scene, it wipes its tracks away with its tail to throw off pursuers."
     }
   ],
   "828": [
@@ -68015,6 +68019,10 @@
     {
       "version_id": "Shield",
       "flavor_text": "With a lithe body and sharp claws, it goes around stealing food and eggs. Boltund is its natural enemy."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This clever Pokémon marks potential targets with its scent, then follows its nose to locate their nests."
     }
   ],
   "829": [
@@ -68327,6 +68335,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "This selfish, attention-seeking Pokémon stores poison and electricity in two different sacs inside its body."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It manipulates the chemical makeup of its poison to produce electricity. The wattage is weak, but it can cause a tingling numbness."
     }
   ],
   "849": [
@@ -68345,6 +68357,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "The jolts of electricity it launches by violently strumming the protrusions on its chest easily exceed 15,000 volts."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "When Toxtricity claws at the protrusions on its chest to generate electricity, a sound like that of a guitar echoes through the air."
     }
   ],
   "850": [
@@ -68375,6 +68391,10 @@
     {
       "version_id": "Shield",
       "flavor_text": "Its tentacles tear off easily, but it isn't alarmed when that happens—it knows they'll grow back. It's about as smart as a three-year-old."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The bulbous ends of its tentacles are perfect for pummeling but next to useless for gripping."
     }
   ],
   "853": [
@@ -68385,6 +68405,10 @@
     {
       "version_id": "Shield",
       "flavor_text": "Searching for an opponent to test its skills against, it emerges onto land. Once the battle is over, it returns to the sea."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Grapploct pins opponents to the ground with its prized tentacles. Not even monstrously strong Pokémon can wrestle free from its hold."
     }
   ],
   "854": [

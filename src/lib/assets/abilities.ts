@@ -2470,6 +2470,21 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       name: 'Zero to Hero',
       shortDesc: 'If this Pokémon is a Palafin in Zero Form, switching out has it change to Hero Form.'
     }
+  ],
+  [
+    'dragonize',
+    {
+      desc: "This Pokémon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+      name: 'Dragonize',
+      shortDesc: "This Pokémon's Normal-type moves become Dragon type and have 1.2x power."
+    }
+  ],
+  [
+    'megasol',
+    {
+      name: 'Mega Sol',
+      shortDesc: "This Pokémon's moves are used as if the effects of Sunny Day were active."
+    }
   ]
 ]);
 

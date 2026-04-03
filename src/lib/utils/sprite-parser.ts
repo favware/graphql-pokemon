@@ -97,8 +97,6 @@ export function parseSpeciesForSprite({
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1004:
       return parsePngSprite(pokemonName, shiny, backSprite);
-    case 1005:
-      return parsePngSprite(pokemonName, shiny, backSprite);
     case 1006:
       return parsePngSprite(pokemonName, shiny, backSprite);
     case 1008:

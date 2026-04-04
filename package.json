@@ -72,7 +72,7 @@
     "au:cries": "yarn tsx ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
   },
   "dependencies": {
-    "graphql": "16.13.1"
+    "graphql": "16.13.2"
   },
   "devDependencies": {
     "@apollo/server": "^5.4.0",
@@ -94,16 +94,16 @@
     "@sapphire/timestamp": "^1.0.5",
     "@sapphire/ts-config": "^5.0.3",
     "@skyra/jaro-winkler": "^1.1.1",
-    "@swc/core": "1.15.18",
+    "@swc/core": "1.15.24",
     "@types/async": "^3.2.25",
     "@types/cheerio": "^1.0.0",
-    "@types/koa": "^3.0.1",
+    "@types/koa": "^3.0.2",
     "@types/koa-bodyparser": "^4.3.13",
     "@types/koa__cors": "^5.0.1",
     "@types/node": "^24.12.0",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.2",
     "async": "^3.2.6",
     "cheerio": "^1.2.0",
     "colorette": "^2.0.20",
@@ -113,7 +113,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "graphql-tag": "^2.12.6",
     "json-stream-stringify": "^3.1.6",
-    "koa": "^3.1.2",
+    "koa": "^3.2.0",
     "koa-bodyparser": "^4.4.1",
     "lint-staged": "^16.4.0",
     "npm-run-all2": "^8.0.4",
@@ -123,7 +123,7 @@
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "~5.9.3",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.2"
   },
   "resolutions": {
     "graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
@@ -166,8 +166,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@4.12.0",
+  "packageManager": "yarn@4.13.0",
   "volta": {
-    "node": "24.14.0"
+    "node": "24.14.1"
   }
 }

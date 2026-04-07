@@ -27055,6 +27055,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It uses the fine hair that covers its body to sense air currents and predict its enemy's actions."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses the fine fur on its body to sense movement in the air and predict the weather...as well as its foes' thoughts."
     }
   ],
   "197": [
@@ -27189,6 +27193,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "When darkness falls, the rings on the body begin to glow, striking fear in the hearts of anyone nearby."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The light of the moon changed Eevee's genetic structure. It lurks in the darkness, waiting for prey."
     }
   ],
   "198": [
@@ -27448,6 +27456,10 @@
     },
     {
       "version_id": "Violet",
+      "flavor_text": "It has incredible intellect and intuition. Whatever the situation, it remains calm and collected."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "It has incredible intellect and intuition. Whatever the situation, it remains calm and collected."
     }
   ],
@@ -28459,6 +28471,10 @@
     {
       "version_id": "Legends: Arceus",
       "flavor_text": "This Pokémon evolved through use of a strange item. Its body is coated with steel powder and notably hard—not even diamond can leave so much as a scratch."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It chews its way through boulders with its sturdy jaws. Its eyes can see in the darkness underground."
     }
   ],
   "209": [
@@ -28821,6 +28837,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "Experienced fishers say they try to catch Qwilfish in the brief moment that these Pokémon become defenseless just after launching poisonous spikes."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "To fire off the poison spikes covering its body, it inflates itself by sucking in over 2.6 gallons of water all at once."
     }
   ],
   "212": [
@@ -28955,6 +28975,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It swings its eye-patterned pincers up to scare its foes. This makes it look like it has three heads."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It has a steel-hard body. It intimidates foes by upraising its eye-patterned pincers."
     }
   ],
   "213": [
@@ -29187,6 +29211,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "With its herculean powers, it can easily throw around an object that is 100 times its own weight."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This powerful Pokémon thrusts its prized horn under its enemies' bellies, then lifts and throws them."
     }
   ],
   "215": [

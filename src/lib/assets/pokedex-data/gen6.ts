@@ -1236,7 +1236,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 10.1,
       cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3',
       respelling: 'MYOW-stik',
-      ipa: '/ˈmjaʊstɪk/'
+      ipa: '/ˈmjaʊstɪk/',
+      classification: 'Second Sight Pokémon'
     }
   ],
   [

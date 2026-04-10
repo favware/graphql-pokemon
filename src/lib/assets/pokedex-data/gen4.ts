@@ -3566,7 +3566,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 240,
       cry: 'https://play.pokemonshowdown.com/audio/cries/darkrai.mp3',
       respelling: 'DARK-rye',
-      ipa: '/ˈdɑːrkraɪ/'
+      ipa: '/ˈdɑːrkraɪ/',
+      classification: 'Bad Dreams Pokémon'
     }
   ],
   [

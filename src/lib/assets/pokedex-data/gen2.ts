@@ -333,7 +333,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       aliases: ['gatrmega', 'oodairumega'],
       cry: 'https://play.pokemonshowdown.com/audio/cries/feraligatr.mp3',
       respelling: 'fur-AL-i-gay-ter',
-      ipa: '/fɜːrˈælɪɡeɪtər/'
+      ipa: '/fɜːrˈælɪɡeɪtər/',
+      classification: 'Double Jaw Pokémon'
     }
   ],
   [

@@ -88,7 +88,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'meganiummega',
     {
-      abilities: { first: 'overgrow', hidden: 'leafguard' },
+      abilities: { first: 'megasol' },
       baseStats: { hp: 80, atk: 92, def: 115, spa: 143, spd: 115, spe: 80 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
@@ -311,7 +311,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'feraligatrmega',
     {
-      abilities: { first: 'overgrow', hidden: 'leafguard' },
+      abilities: { first: 'dragonize' },
       baseStats: { hp: 85, atk: 160, def: 125, spa: 89, spd: 93, spe: 78 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -2619,7 +2619,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'skarmorymega',
     {
-      abilities: { first: 'keeneye', second: 'sturdy', hidden: 'weakarmor' },
+      abilities: { first: 'stalwart' },
       baseStats: { hp: 65, atk: 140, def: 110, spa: 40, spd: 100, spe: 110 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Gray',

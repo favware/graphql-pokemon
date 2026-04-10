@@ -640,11 +640,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'crabominablemega',
     {
-      abilities: {
-        first: 'hypercutter',
-        second: 'ironfist',
-        hidden: 'angerpoint'
-      },
+      abilities: { first: 'ironfist' },
       baseStats: { hp: 97, atk: 157, def: 122, spa: 62, spd: 107, spe: 33 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'White',
@@ -3044,7 +3040,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'drampamega',
     {
-      abilities: { first: 'berserk', second: 'sapsipper', hidden: 'cloudnine' },
+      abilities: { first: 'berserk' },
       baseStats: { hp: 78, atk: 85, def: 110, spa: 160, spd: 116, spe: 36 },
       catchRate: { base: 70, percentageWithOrdinaryPokeballAtFullHealth: '16.6%' },
       color: 'White',

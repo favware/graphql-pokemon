@@ -2368,7 +2368,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'clefablemega',
     {
-      abilities: { first: 'cutecharm', second: 'magicguard', hidden: 'unaware' },
+      abilities: { first: 'magicbounce' },
       baseSpecies: 'clefable',
       baseStats: { hp: 95, atk: 80, def: 93, spa: 135, spd: 110, spe: 70 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
@@ -3800,7 +3800,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'victreebelmega',
     {
-      abilities: { first: 'chlorophyll', hidden: 'gluttony' },
+      abilities: { first: 'innardsout' },
       baseSpecies: 'victreebel',
       baseStats: { hp: 80, atk: 125, def: 85, spa: 135, spd: 95, spe: 70 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -5925,11 +5925,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'starmiemega',
     {
-      abilities: {
-        first: 'illuminate',
-        second: 'naturalcure',
-        hidden: 'analytic'
-      },
+      abilities: { first: 'hugepower' },
       baseStats: { hp: 60, atk: 140, def: 105, spa: 130, spd: 105, spe: 120 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       baseSpecies: 'starmie',
@@ -7140,7 +7136,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'dragonitemega',
     {
-      abilities: { first: 'innerfocus', hidden: 'multiscale' },
+      abilities: { first: 'multiscale' },
       baseStats: { hp: 91, atk: 124, def: 115, spa: 145, spd: 125, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       baseSpecies: 'dragonite',

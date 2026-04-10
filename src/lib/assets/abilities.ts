@@ -429,6 +429,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'dragonize',
+    {
+      name: 'Dragonize',
+      shortDesc: "The Pokémon's Normal-type moves become Dragon-type moves and their power is boosted by 20%."
+    }
+  ],
+  [
     'dragonsmaw',
     {
       name: "Dragon's Maw",
@@ -1116,6 +1123,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'megasol',
+    {
+      name: 'Mega Sol',
+      shortDesc: 'Even when the sunlight has not turned harsh, the Pokémon can use its moves as if the weather were harsh sunlight.'
+    }
+  ],
+  [
     'merciless',
     {
       name: 'Merciless',
@@ -1373,6 +1387,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       isFieldAbility: 'After winning a battle, there is a 10% chance that a Pokémon with Pickup will create a held item for itself, even if fainted.',
       name: 'Pickup',
       shortDesc: 'If this Pokémon has no item, it finds one used by an adjacent Pokémon this turn.'
+    }
+  ],
+  [
+    'piercingdrill',
+    {
+      desc: "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves, dealing 1/4 of the damage that the move would otherwise deal. Everything aside from the target's protective effects is still triggered.",
+      name: 'Piercing Drill',
+      shortDesc: 'When the Pokémon uses contact moves, it can hit even targets that are protecting themselves.'
     }
   ],
   [
@@ -1912,6 +1934,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       desc: "This Pokémon's Speed is raised by 1 stage at the end of each full turn it has been on the field.",
       name: 'Speed Boost',
       shortDesc: "This Pokémon's Speed is raised 1 stage at the end of each full turn on the field."
+    }
+  ],
+  [
+    'spicyspray',
+    {
+      name: 'Spicy Spray',
+      shortDesc: 'When the Pokémon takes damage from a move, it burns the attacker.'
     }
   ],
   [

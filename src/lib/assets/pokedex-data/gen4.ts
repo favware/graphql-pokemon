@@ -2905,7 +2905,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'froslassmega',
     {
-      abilities: { first: 'snowcloak', hidden: 'cursedbody' },
+      abilities: { first: 'snowwarning' },
       baseStats: { hp: 70, atk: 80, def: 70, spa: 140, spd: 100, spe: 120 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'White',

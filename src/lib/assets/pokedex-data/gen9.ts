@@ -1361,7 +1361,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'scovillainmega',
     {
-      abilities: { first: 'chlorophyll', second: 'insomnia', hidden: 'moody' },
+      abilities: { first: 'spicyspray' },
       baseStats: { hp: 65, atk: 138, def: 85, spa: 138, spd: 85, spe: 75 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       color: 'Green',
@@ -1870,7 +1870,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'glimmoramega',
     {
-      abilities: { first: 'toxicdebris', hidden: 'corrosion' },
+      abilities: { first: 'adaptability' },
       baseStats: { hp: 83, atk: 90, def: 105, spa: 150, spd: 96, spe: 101 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
       color: 'Blue',

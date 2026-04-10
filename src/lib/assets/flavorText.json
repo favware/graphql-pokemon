@@ -36175,6 +36175,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It is highly attuned to the emotions of people and Pokémon. It hides if it senses hostility."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "If its red horns capture the warm feelings of people or Pokémon, its body warms up slightly."
     }
   ],
   "281": [
@@ -36276,6 +36280,10 @@
     },
     {
       "version_id": "Violet",
+      "flavor_text": "The cheerful spirit of its Trainer gives it energy for its psychokinetic power. It spins and dances when happy."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "The cheerful spirit of its Trainer gives it energy for its psychokinetic power. It spins and dances when happy."
     }
   ],
@@ -36379,6 +36387,10 @@
     {
       "version_id": "Violet",
       "flavor_text": "It unleashes psychokinetic energy at full power when protecting a Trainer it has bonded closely with."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It has the power to predict the future. Its power peaks when it is protecting its Trainer."
     }
   ],
   "283": [
@@ -37780,11 +37792,11 @@
     },
     {
       "version_id": "Brilliant Diamond",
-      "flavor_text": "It loves to match power with big-bodied\tPokémon. It can send a truck flying with its arm thrusts."
+      "flavor_text": "It loves to match power with big-bodied Pokémon. It can send a truck flying with its arm thrusts."
     },
     {
       "version_id": "Shining Pearl",
-      "flavor_text": "It loves to match power with big-bodied\tPokémon. It can send a truck flying with its arm thrusts."
+      "flavor_text": "It loves to match power with big-bodied Pokémon. It can send a truck flying with its arm thrusts."
     },
     {
       "version_id": "Scarlet",
@@ -38279,12 +38291,16 @@
     {
       "version_id": "Violet",
       "flavor_text": "Materials from gems it has eaten float to the surface of its body and can form an infinite number of patterns among individuals."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It hides in the darkness of caves. Its diet of gems has transformed its eyes into gemstones."
     }
   ],
   "303": [
     {
       "version_id": "Ruby",
-      "flavor_text": "Mawhile's huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, Mawhile chomps it with its gaping jaws."
+      "flavor_text": "Mawile's huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, Mawile chomps it with its gaping jaws."
     },
     {
       "version_id": "Sapphire",
@@ -38376,6 +38392,10 @@
     },
     {
       "version_id": "Shining Pearl",
+      "flavor_text": "Attached to its head is a huge set of jaws formed by horns. It can chew through iron beams."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "Attached to its head is a huge set of jaws formed by horns. It can chew through iron beams."
     }
   ],

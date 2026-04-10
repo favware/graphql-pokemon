@@ -638,7 +638,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     }
   ],
   [
-    'crabombinablemega',
+    'crabominablemega',
     {
       abilities: {
         first: 'hypercutter',
@@ -3841,7 +3841,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 30840,
       num: 801,
       otherFormes: ['magearnaoriginal', 'magearnamega', 'magearna'],
-      species: 'magearna-orignal-mega',
+      species: 'magearna-original-mega',
       types: [TypesEnum.Steel, TypesEnum.Fairy],
       mythical: true,
       weightkg: 248.1,

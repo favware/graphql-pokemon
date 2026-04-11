@@ -916,7 +916,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      num: 668,
+      num: 670,
       otherFormes: ['floetteeternal'],
       species: 'floette-mega',
       types: [TypesEnum.Fairy],

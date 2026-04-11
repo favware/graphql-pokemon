@@ -5926,7 +5926,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
     'starmiemega',
     {
       abilities: { first: 'hugepower' },
-      baseStats: { hp: 60, atk: 140, def: 105, spa: 130, spd: 105, spe: 120 },
+      baseStats: { hp: 60, atk: 100, def: 105, spa: 130, spd: 105, spe: 120 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       baseSpecies: 'starmie',
       color: 'Purple',

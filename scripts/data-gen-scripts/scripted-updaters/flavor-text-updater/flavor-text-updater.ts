@@ -14,23 +14,24 @@ const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
-const pokemonToParse = getBulbapediaReadyPokemon();
+// const pokemonToParse = getBulbapediaReadyPokemon();
 
-// Determine the current day of the month (1-based). Clamp to 30 to avoid out-of-range on 31-day months.
-const dayOfMonth = Math.min(new Date().getDate(), 30);
+// // Determine the current day of the month (1-based). Clamp to 30 to avoid out-of-range on 31-day months.
+// const dayOfMonth = Math.min(new Date().getDate(), 30);
 
-// We split the workload across 30 sets (approximate average month length).
-const numberOfSets = 30;
-const setSize = Math.ceil(pokemonToParse.length / numberOfSets);
+// // We split the workload across 30 sets (approximate average month length).
+// const numberOfSets = 30;
+// const setSize = Math.ceil(pokemonToParse.length / numberOfSets);
 
-// Split the array into 30 roughly equal sets.
-const monthlySets = Array.from({ length: numberOfSets }, (_, i) => pokemonToParse.slice(i * setSize, (i + 1) * setSize));
+// // Split the array into 30 roughly equal sets.
+// const monthlySets = Array.from({ length: numberOfSets }, (_, i) => pokemonToParse.slice(i * setSize, (i + 1) * setSize));
 
 // Select the set to process based on the current day of the month.
-const pokemonToProcess = monthlySets.at(dayOfMonth - 1) ?? [];
+// const pokemonToProcess = monthlySets.at(dayOfMonth - 1) ?? [];
+const pokemonToProcess = getBulbapediaReadyPokemon();
 
 console.group('=========== Starting Flavor Text Updater ===========');
-console.log(`Processing set ${dayOfMonth} of ${numberOfSets}, containing ${pokemonToProcess.length} Pokémon.`);
+// console.log(`Processing set ${dayOfMonth} of ${numberOfSets}, containing ${pokemonToProcess.length} Pokémon.`);
 console.log('process.env.CI is: ', process.env.CI);
 console.groupEnd();
 

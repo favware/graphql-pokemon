@@ -16,6 +16,7 @@ import { getGen7GameSetsData } from '../game-sets/gen7-game-sets.js';
 import { getGen8GameSetsData } from '../game-sets/gen8-game-sets.js';
 import { getGen9GameSetsData } from '../game-sets/gen9-game-sets.js';
 import { log } from '../log-wrapper.js';
+import { getPokopiaGameData } from '../game-sets/pokopia.js';
 
 const failedPokemon = [];
 
@@ -63,7 +64,8 @@ async function parsePokemon(pokemon: ParsedPokemon, withFlareSolverr: boolean) {
       getGen6GameSetsData(text, pokemon, flavorsModule, logPrefix),
       getGen7GameSetsData(text, pokemon, flavorsModule, logPrefix),
       getGen8GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen9GameSetsData(text, pokemon, flavorsModule, logPrefix) //
+      getGen9GameSetsData(text, pokemon, flavorsModule, logPrefix),
+      getPokopiaGameData(text, pokemon, flavorsModule, logPrefix)
     ])
   ).flat();
 

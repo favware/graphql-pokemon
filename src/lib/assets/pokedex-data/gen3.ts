@@ -3672,7 +3672,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       color: 'White',
       eggGroups: ['Field'],
       evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
-      forme: 'Mega',
+      forme: 'Mega-Z',
       formeLetter: 'M',
       genderRatio: { male: '50%', female: '50%' },
       heightm: 1.2,

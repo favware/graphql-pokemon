@@ -71643,6 +71643,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The overwhelming power that fills its entire body causes it to turn black and create intense blue flames."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The overwhelming power that fills its entire body causes it to turn black and creates intense blue flames."
     }
   ],
   "6mega-y": [
@@ -71653,6 +71657,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet fighter."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its bond with its Trainer is the source of its power. It boasts speed and maneuverability greater than that of a jet."
     }
   ],
   "6gmax": [
@@ -71672,6 +71680,10 @@
     },
     {
       "version_id": "Let's Go Eevee",
+      "flavor_text": "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
     }
   ],
@@ -71703,6 +71715,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its legs have become poison stingers. It stabs its prey repeatedly with the stingers on its limbs, dealing the final blow with the stinger on its rear."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its legs have become poison stingers. It stabs its prey repeatedly with the stingers on its limbs, dealing the final blow with the stinger on its rear."
     }
   ],
   "18mega": [
@@ -71712,6 +71728,10 @@
     },
     {
       "version_id": "Let's Go Eevee",
+      "flavor_text": "With its muscular strength now greatly increased, it can fly continuously for two weeks without resting."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "With its muscular strength now greatly increased, it can fly continuously for two weeks without resting."
     }
   ],
@@ -72015,6 +72035,22 @@
     {
       "version_id": "Shield",
       "flavor_text": "This Pokémon rides on its tail while it uses its psychic powers to levitate. It attacks with star-shaped thunderbolts."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses psychokinesis to control electricity. It hops aboard its own tail, using psychic power to lift the tail and move about while riding it."
+    }
+  ],
+  "26mega-x": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It resembles an X as it flies through the air with 50 million volts of electricity sparking from its ears and forked tail."
+    }
+  ],
+  "26mega-y": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It fires bolts of electricity from the tip of its tail and from the spiky tufts of fur growing out of its temples. This electricity forms the letter Y."
     }
   ],
   "27alola": [
@@ -72083,6 +72119,12 @@
     {
       "version_id": "Shield",
       "flavor_text": "Many people climb snowy mountains, hoping to see the icy spikes of these Pokémon glistening in the light of dawn."
+    }
+  ],
+  "36mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It flies by using the power of moonlight to control gravity within a radius of over 32 feet around it."
     }
   ],
   "37alola": [
@@ -72333,6 +72375,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It's adept at precognition. When attacks completely miss Alakazam, that's because it's seeing the future."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Alakazam has traded away its muscles, unleashing its true power. With its psychic powers, it can foresee all things."
     }
   ],
   "68gmax": [
@@ -72343,6 +72389,12 @@
     {
       "version_id": "Shield",
       "flavor_text": "One of these Pokémon once used its immeasurable strength to lift a large ship that was in trouble. It then carried the ship to port."
+    }
+  ],
+  "71mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The volume of this Pokémon's acid has increased due to Mega Evolution, filling its mouth. If it's not careful, the acid will overflow and spill out."
     }
   ],
   "74alola": [
@@ -72477,6 +72529,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Under the influence of Shellder's digestive fluids, Slowpoke has awakened, gaining a great deal of power-and a little motivation to boot."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "When bathed in the energy of Mega Evolution, Shellder converts into impregnable armor. There is virtually no change in Slowpoke."
     }
   ],
   "80galar": [
@@ -72575,6 +72631,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "It can pass through other dimensions and can appear anywhere. It caused a stir one time when it stuck just one leg out of a wall."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It can pass through other dimensions and appear anywhere. It caused a stir one time when it stuck just one leg out of a wall."
     }
   ],
   "94gmax": [
@@ -72725,6 +72785,16 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Its child has grown rapidly, thanks to the energy of Mega Evolution. Mother and child show their harmonious teamwork in battle."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its child has grown rapidly, thanks to the energy of Mega Evolution. Mother and child show off their harmonious teamwork in battle."
+    }
+  ],
+  "121mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its movements have become more humanlike. Whether it's simply trying to communicate or wants to supplant humanity is unclear."
     }
   ],
   "122galar": [
@@ -72761,6 +72831,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "With its vaunted horns, it can lift an opponent 10 times heavier than itself and fly about with ease."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "After Mega Evolution, it becomes able to fly. Perhaps because it's so happy, it rarely touches the ground."
     }
   ],
   "130mega": [
@@ -72787,6 +72861,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Although it obeys its instinctive drive to destroy everything within its reach, it will respond to orders from a Trainer it truly trusts."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It jets water from the orifices on its sides, streaking above the water surface at supersonic speed."
     }
   ],
   "131gmax": [
@@ -72839,6 +72917,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "The power of Mega Evolution has completely restored its genes. The rocks on its body are harder than diamond."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Parts of its body have become stone. Some scholars claim that this is Aerodactyl's true appearance."
     }
   ],
   "143gmax": [
@@ -72881,6 +72963,12 @@
       "flavor_text": "The sinister aura that blazes like molten fire around this Pokémon is what inspired the name Moltres."
     }
   ],
+  "149mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Evolution has excessively powered up this Pokémon's feelings of kindness. It finishes off its opponents with mercy in its heart."
+    }
+  ],
   "150mega-x": [
     {
       "version_id": "Let's Go Pikachu",
@@ -72889,6 +72977,10 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint a hundred meters in two seconds flat!"
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint 100 meters in two seconds flat!"
     }
   ],
   "150mega-y": [
@@ -72899,6 +72991,22 @@
     {
       "version_id": "Let's Go Eevee",
       "flavor_text": "Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens."
+    }
+  ],
+  "154mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This Pokémon can fire a tremendously powerful Solar Beam from its four flowers. Another name for this is Mega Sol Cannon."
+    }
+  ],
+  "160mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "With its arms and hoodlike fin, this Pokémon forms a gigantic set of jaws with a bite 10 times as powerful as Mega Feraligatr's actual jaws."
     }
   ],
   "181mega": [
@@ -72908,6 +73016,10 @@
     },
     {
       "version_id": "Ultra Moon",
+      "flavor_text": "Massive amounts of energy intensely stimulated Ampharos's cells, apparently awakening its long-sleeping dragon's blood."
+    },
+    {
+      "version_id": "Legends: Z-A",
       "flavor_text": "Massive amounts of energy intensely stimulated Ampharos's cells, apparently awakening its long-sleeping dragon's blood."
     }
   ],
@@ -72919,6 +73031,12 @@
     {
       "version_id": "Shield",
       "flavor_text": "While chanting strange spells, this Pokémon combines its internal toxins with what it's eaten, creating strange potions."
+    }
+  ],
+  "208mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "To protect itself from opponents' attacks, it uses magnetism to control pieces of its hard outer shell that have flaked off."
     }
   ],
   "212mega": [
@@ -72937,6 +73055,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It's better at beating things than grasping them. When it battles for a long time, the weight of its pincers becomes too much to bear."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Due to the effects of Mega Evolution, its pincers have taken on a more diabolical form, ripping anything they pinch to shreds."
     }
   ],
   "214mega": [
@@ -72947,6 +73069,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "A tremendous influx of energy builds it up, but when Mega Evolution ends, Heracross is bothered by terrible soreness in its muscles."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It can grip things with its two horns and lift 500 times its own body weight."
     }
   ],
   "222galar": [
@@ -72959,6 +73085,12 @@
       "flavor_text": "Sudden climate change wiped out this ancient kind of Corsola. This Pokémon absorbs others' life-force through its branches."
     }
   ],
+  "227mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It flies faster than the speed of sound. After whipping up shock waves to send enemies flying, it finishes them off with its talons."
+    }
+  ],
   "229mega": [
     {
       "version_id": "Ultra Sun",
@@ -72967,6 +73099,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Houndoom's entire body generates heat when it Mega Evolves. Its fearsome fiery breath turns its opponents to ash."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Houndoom's entire body generates heat when it Mega Evolves. Its intense, fiery breath turns its opponents to charcoal."
     }
   ],
   "248mega": [
@@ -72977,6 +73113,28 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The effects of Mega Evolution make it more ferocious than ever. It's unclear whether it can even hear its Trainer's orders."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The effects of Mega Evolution make it more ferocious than ever. It's unclear whether it can even hear its Trainer's orders."
+    }
+  ],
+  "254mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The seeds on its back are filled with energy from Mega Evolution. The Pokémon detonates these seeds to launch the tip of its tail."
+    }
+  ],
+  "257mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Boiling-hot blood courses through its entire body, doubling the sharpness of its moves. It subdues opponents in the blink of an eye."
+    }
+  ],
+  "260mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The water within its body further strengthens its already enlarged muscles, using the same principles as a hydraulic pump."
     }
   ],
   "263galar": [
@@ -72999,6 +73157,12 @@
       "flavor_text": "This very aggressive Pokémon will recklessly challenge opponents stronger than itself."
     }
   ],
+  "282mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "When it opens the red plate on its chest and unleashes its heart, its strongest psychic power is released."
+    }
+  ],
   "302mega": [
     {
       "version_id": "Sun",
@@ -73015,6 +73179,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It blocks any and all attacks with its giant-sized gemstone. However, the stone's a heavy burden, and it limits Mega Sableye's movements."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The jewel from its chest, which has grown gigantic due to the effects of Mega Evolution, can turn back any attack."
     }
   ],
   "303mega": [
@@ -73025,6 +73193,22 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its two sets of jaws thrash about violently as if they each had a will of their own. One gnash from them can turn a boulder to dust."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its two sets of jaws thrash about violently as if they each had a will of their own. One gnash from them can turn a boulder to dust."
+    }
+  ],
+  "306mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Energy from Mega Evolution has turned the iron inside this Pokémon into steel armor that covers Mega Aggron's whole body."
+    }
+  ],
+  "308mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Thanks to Mega Evolution, its mental power is limitless. It conjures up arms imbued with malice to defeat its enemies."
     }
   ],
   "310mega": [
@@ -73035,6 +73219,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Too much electricity has built up in its body, irritating Manectric. Its explosive speed is equal to that of a lightning bolt."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Evolution fills its body with a tremendous amount of electricity, but it's too much for Manectric to fully control."
     }
   ],
   "319mega": [
@@ -73053,6 +73241,22 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The moment it charges into its opponent, sharp spikes pop out of Sharpedo's head,"
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The spines sprouting from its head are transformed fangs. If they're injured or broken off, the spines will regenerate countless times."
+    }
+  ],
+  "323mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "When this Pokémon's rage reaches a boiling point, the huge volcano in the hump on its back erupts violently, spewing molten lava."
+    }
+  ],
+  "334mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its down is so soft, it seems as if a touch could melt it. But it's strong enough that just a few strands could be used to hoist a dump truck."
     }
   ],
   "351sunny": [
@@ -73117,6 +73321,16 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Extraordinary energy amplifies its cursing power to such an extent that it can't help but curse its own Trainer."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its down is so soft, it seems as if a touch could melt it. But it's strong enough that just a few strands could be used to hoist a dump truck."
+    }
+  ],
+  "358mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It vibrates its entire body to attack in all directions using sound waves. Any who hear the vibrations get so confused, they forget who they are."
     }
   ],
   "359mega": [
@@ -73135,6 +73349,16 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It converts the energy from Mega Evolution into an intimidating aura. Fainthearted people expire from shock at the sight of it."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "When this Pokémon whips the winglike fur on its back as though beating its wings, it sends an intimidating aura flying at its opponents."
+    }
+  ],
+  "359mega-z": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Using fur that it has made into sharp, clawlike shapes, it cuts down foes with a single blow. This is an act of kindness to keep them from suffering."
     }
   ],
   "362mega": [
@@ -73153,6 +73377,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "The power of Mega Evolution was so strong that it smashed Glalie's jaw. Its inability to eat very well leaves Glalie irritated."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "When it spews stupendously cold air from its broken mouth, the entire area around it gets whited out."
     }
   ],
   "373mega": [
@@ -73171,6 +73399,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It puts its forelegs inside its shell to streamline itself for flight. Salamence flies at high speeds over all kinds of topographical features."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "To streamline itself for flight, it pulls its forelegs into its shell. Salamence flies at high speeds even when faced with complex topographical features."
     }
   ],
   "376mega": [
@@ -73189,6 +73421,40 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "When it knows it can't win, it digs the claws on its legs into its opponent and starts the countdown to a big explosion."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This form results from one Metagross, one Metang, and two Beldum linking up."
+    }
+  ],
+  "380mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It flies at speeds exceeding Mach 4. It is among the top tier of all Pokémon in terms of aerial combat capability."
+    }
+  ],
+  "381mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Both its flying capabilities and its attack power have increased. It scatters transparent down to confuse its enemies."
+    }
+  ],
+  "382primal": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Kyogre reverted to this state via the Blue Orb, which contains the energy of the primordial world. Kyogre's body resembles seawater."
+    }
+  ],
+  "383primal": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This is Groudon's true form, restored using the Red Orb. Energy spills from its body in the form of magma."
+    }
+  ],
+  "384mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "A shooting star streaking across the night sky may, in fact, be Mega Rayquaza flying gracefully after a meteoroid."
     }
   ],
   "422east": [
@@ -73219,6 +73485,10 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Mega Evolution awakens its combative instincts. It has shed any fur that got in the way of its attacks."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It swings its ears like whips and strikes its enemies with them. It has an intensely combative disposition."
     }
   ],
   "445mega": [
@@ -73237,6 +73507,16 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Its disposition is more vicious than before its Mega Evolution. Garchomp carves its opponents up with the scythes on both arms."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its disposition is more vicious than before its Mega Evolution. Garchomp carves its opponents up with the scythes on both arms."
+    }
+  ],
+  "445mega-z": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Garchomp has gained a new Mega-Evolved form. It flies around foes at Mach speed and cuts them to shreds with its sinister wing claws."
     }
   ],
   "448mega": [
@@ -73255,6 +73535,34 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Bathed in explosive energy, its combative instincts have awakened. For its enemies, it has no mercy whatsoever."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Black streaks all over its body show where its auras and the energy of Mega Evolution intermingled and raced through it."
+    }
+  ],
+  "448mega-z": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "By completely cloaking itself in its aura, Mega Lucario Z can parry all manner of attacks, battling as if it were gracefully dancing."
+    }
+  ],
+  "460mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The buds on its back have sprouted into impressive icicles that can whip up massive blizzards of −22 degrees Fahrenheit."
+    }
+  ],
+  "475mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It gets power from the bond it has with its Trainer. Mega Evolution has given it plates to slice its enemies and a cape to protect its body."
+    }
+  ],
+  "478mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This Pokémon can use eerie cold air imbued with ghost energy to freeze even insubstantial things, such as flames or the wind."
     }
   ],
   "479heat": [
@@ -73305,6 +73613,42 @@
     {
       "version_id": "Shield",
       "flavor_text": "In this form, Rotom focuses its antics on plants. Any flowers you were growing are going to get mowed down."
+    }
+  ],
+  "485mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It's said that if it goes all out, it can heat its body up to temperatures over 1.8 million degrees Fahrenheit. This heat keeps enemies at bay."
+    }
+  ],
+  "491mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its dark power blocks out the sun, plunging the surrounding area into darkness. There is no escaping its evil eye."
+    }
+  ],
+  "500mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Brandishing a blazing flame shaped like a serpentine spear, it rushes in to rescue its imperiled allies."
+    }
+  ],
+  "530mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "If this Pokémon brings its arms and head together to form a streamlined shape and spins at high speeds, it can destroy anything."
+    }
+  ],
+  "531mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Anyone who touches the secondary feelers that have sprouted from the base of its throat will fall into a deep sleep."
+    }
+  ],
+  "545mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Its deadly venom gives off a faint glow. The venom affects Scolipede's mind, honing its viciousness."
     }
   ],
   "550blue-striped": [
@@ -73365,6 +73709,12 @@
       "flavor_text": "Darmanitan takes this form when enraged. It won't stop spewing flames until its rage has settled, even if its body starts to melt."
     }
   ],
+  "560mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Evolution has caused Scrafty's shed skin to turn white, growing tough and supple. Of course, this Pokémon is still as feisty as ever."
+    }
+  ],
   "562galar": [
     {
       "version_id": "Sword",
@@ -73405,6 +73755,18 @@
       "flavor_text": "The crown on its head gets bigger and bigger as it absorbs more and more of the life-force of other creatures."
     }
   ],
+  "604mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It now generates 10 times the electricity it did before Mega Evolving. It discharges this electricity from its false Eelektrik, which are made of mucus."
+    }
+  ],
+  "609mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "One of its eyes is a window linking our world with the afterlife. This Pokémon draws in hatred and converts it into power."
+    }
+  ],
   "618galar": [
     {
       "version_id": "Sword",
@@ -73413,6 +73775,30 @@
     {
       "version_id": "Shield",
       "flavor_text": "Its conspicuous lips lure prey in as it lies in wait in the mud. When prey gets close, Stunfisk clamps its jagged steel fins down on them."
+    }
+  ],
+  "623mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The energy within Golurk has been stimulated by Mega Evolution. The Pokémon could explode at any moment."
+    }
+  ],
+  "652mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It has fortified armor and a will to defend at all costs. Both are absurdly strong."
+    }
+  ],
+  "655mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It wields flaming branches to dazzle its opponents before incinerating them with a huge fireball."
+    }
+  ],
+  "658mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This Pokémon spins a giant shuriken at high speed to make it float, then clings to it upside down to catch opponents unawares."
     }
   ],
   "670eternal": [
@@ -73425,6 +73811,12 @@
       "flavor_text": "Terrifying energy is concealed within its ominous flower, but Floette still swings it about innocently."
     }
   ],
+  "670mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "The Eternal Flower has absorbed all the energy from Mega Evolution. The flower now attacks enemies on its own."
+    }
+  ],
   "678f": [
     {
       "version_id": "Sword",
@@ -73435,6 +73827,12 @@
       "flavor_text": "If it doesn't hold back when it unleashes its psychic power, it can tear apart a tanker. Its unfriendliness is part of its charm."
     }
   ],
+  "678mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Meowstic can use its psychic power to compress or expand anything. It overwhelms foes by contorting space itself."
+    }
+  ],
   "681blade": [
     {
       "version_id": "Sword",
@@ -73443,6 +73841,30 @@
     {
       "version_id": "Shield",
       "flavor_text": "Once upon a time, a king with an Aegislash reigned over the land. His Pokémon eventually drained him of life, and his kingdom fell with him."
+    }
+  ],
+  "687mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses its colorful lights to overwrite the personalities and memories of others—and to control them."
+    }
+  ],
+  "689mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses its many arms to toy with its opponents. This keeps the head extremely busy."
+    }
+  ],
+  "691mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It spits a liquid that causes the regenerative power of cells to run wild. The liquid is deadly poison to everything other than itself."
+    }
+  ],
+  "701mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Evolution has pumped up all its muscles. Hawlucha flexes to show off its strength."
     }
   ],
   "710small": [
@@ -73539,6 +73961,24 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "Born when all of Zygarde's cells have been gathered together, it uses force to neutralize those who harm the ecosystem."
+    }
+  ],
+  "718mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "In response to people's emotions during an unprecedented crisis, Zygarde Mega Evolves and calms the situation with its unmatched power."
+    }
+  ],
+  "719mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This Pokémon is also known as the Royal Pink Princess. The dazzling, sparkling diamond on its forehead is a whopping 2,000 carats."
+    }
+  ],
+  "740mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It can pulverize reinforced concrete with a light swing of one of its fists, each of which is covered in a thick layer of ice."
     }
   ],
   "741pom-pom": [
@@ -73663,6 +74103,12 @@
     {
       "version_id": "Shield",
       "flavor_text": "When facing tough opponents, they get into formation. But if they get wounded in battle, they'll scatter and become solitary again."
+    }
+  ],
+  "768mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It uses four of its arms to fiercely assail its foes. Once they've been pushed to the brink of defeat, it finishes them off with the arms it kept hidden."
     }
   ],
   "773bug": [
@@ -74151,6 +74597,12 @@
       "flavor_text": "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
     }
   ],
+  "780mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Drampa's cells have been invigorated, allowing it to regain its youth. It manipulates the atmosphere to summon storms."
+    }
+  ],
   "800dusk-mane": [
     {
       "version_id": "Ultra Sun",
@@ -74197,6 +74649,12 @@
       "flavor_text": "The light pouring out from all over its body affects living things and nature, impacting them in various ways."
     }
   ],
+  "801mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This is Magearna once a previously hidden mode activates. The emotions Magearna had begun to feel now hide away as it fells foe after foe."
+    }
+  ],
   "801original": [
     {
       "version_id": "Sun",
@@ -74213,6 +74671,22 @@
     {
       "version_id": "Ultra Moon",
       "flavor_text": "It functions thanks to its artificial soul. The vivid decoration is proof that it was presented as a gift to royalty."
+    },
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "This Magearna looks as it did at the time of its invention. Its magnificent ornamentation delighted the king's daughter."
+    }
+  ],
+  "801original-mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "A mechanism to remove Magearna's limitations has lain secretly within Magearna for 500 years. This mechanism is triggered by a Mega Stone."
+    }
+  ],
+  "807mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "It stores up 10 lightning strikes' worth of electricity. When it stops limiting itself, it's in the strongest class of electric Pokémon."
     }
   ],
   "809gmax": [
@@ -74395,6 +74869,12 @@
       "flavor_text": "It launches swarms of missiles, each made of cream and loaded with 100,000 kilocalories. Get hit by one of these, and your head will swim."
     }
   ],
+  "870mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Falinks has taken on the ultimate battle formation, which can be achieved only if the troopers and brass have the strongest of bonds."
+    }
+  ],
   "875noice": [
     {
       "version_id": "Sword",
@@ -74543,6 +75023,30 @@
     {
       "version_id": "Shield",
       "flavor_text": "Legend says that by using its power to see all events from past to future, this Pokémon saved the creatures of a forest from a meteorite strike."
+    }
+  ],
+  "952mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Mega Evolution has dialed up this Pokémon's spiciness. It swings its 'necktie' around to wallop its foes."
+    }
+  ],
+  "970mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Glimmora's petals—now larger and separated from its main body—rotate around it to provide defense while scattering poisonous fragments."
+    }
+  ],
+  "978mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Tatsugiri's brain has been invigorated by Mega Evolution, making it even wilier. It can create and command copies of itself."
+    }
+  ],
+  "998mega": [
+    {
+      "version_id": "Legends: Z-A",
+      "flavor_text": "Baxcalibur's dorsal blade has grown even more massive thanks to Mega Evolution. This Pokémon fires beams from the hilt at its solar plexus."
     }
   ],
   "58hisui": [

@@ -2485,6 +2485,20 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       name: 'Mega Sol',
       shortDesc: "This Pokémon's moves are used as if the effects of Sunny Day were active."
     }
+  ],
+  [
+    'piercingdrill',
+    {
+      name: 'Piercing Drill',
+      shortDesc: "This Pokémon's contact moves ignore a target's protection and deal 1/4 the usual damage."
+    }
+  ],
+  [
+    'spicyspray',
+    {
+      name: 'Spicy Spray',
+      shortDesc: 'If this Pokémon is hit by an attack, the attacker becomes burned.'
+    }
   ]
 ]);
 

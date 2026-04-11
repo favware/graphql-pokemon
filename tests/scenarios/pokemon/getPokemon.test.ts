@@ -130,8 +130,9 @@ describe('getPokemon', () => {
         evolutionLevel: '36',
         flavorTexts: [
           {
-            flavor: 'It makes shuriken out of mucus excreted from its thighs. These shuriken can cut cleanly through steel cables.',
-            game: 'Violet'
+            flavor:
+              'It creates throwing stars out of compressed water. When it spins them and throws them at high speed, these stars can split metal in two.',
+            game: 'Legends: Z-A'
           }
         ],
         forme: null,

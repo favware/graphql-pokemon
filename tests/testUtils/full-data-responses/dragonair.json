@@ -9857,7 +9857,7 @@
       "evYields": { "hp": 0, "attack": 2, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": "30",
       "flavorTexts": [
-        { "flavor": "It is called the divine Pokémon. When its entire body brightens slightly, the weather changes.", "game": "Violet" }
+        { "flavor": "Its crystalline orbs appear to give this Pokémon the power to freely control the weather.", "game": "Legends: Z-A" }
       ],
       "forme": null,
       "formeLetter": null,
@@ -19789,7 +19789,7 @@
           "evYields": { "hp": 0, "attack": 3, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": "55",
           "flavorTexts": [
-            { "flavor": "It can fly in spite of its big and bulky physique. It circles the globe in just 16 hours.", "game": "Violet" }
+            { "flavor": "It is said to make its home somewhere in the sea. It guides wrecked ships to shore.", "game": "Legends: Z-A" }
           ],
           "forme": null,
           "formeLetter": null,
@@ -29746,7 +29746,7 @@
           "evYields": { "hp": 0, "attack": 1, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
           "evolutionLevel": null,
           "flavorTexts": [
-            { "flavor": "It is born large to start with. It repeatedly sheds its skin as it steadily grows longer.", "game": "Violet" }
+            { "flavor": "This Pokémon is full of life energy. It continually sheds its skin and grows steadily larger.", "game": "Legends: Z-A" }
           ],
           "forme": null,
           "formeLetter": null,

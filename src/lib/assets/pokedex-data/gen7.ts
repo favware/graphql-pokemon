@@ -3830,7 +3830,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       evYields: { hp: 0, atk: 0, def: 0, spa: 3, spd: 0, spe: 0 },
       genderRatio: { male: '0%', female: '0%' },
       baseSpecies: 'magearna',
-      forme: 'Mega',
+      forme: 'Original-Mega',
       formeLetter: 'M',
       heightm: 1.3,
       isEggObtainable: false,

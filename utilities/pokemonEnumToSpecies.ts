@@ -43,6 +43,11 @@ export function pokemonEnumToSpecies(pokemon: PokemonEnum): string {
     case PokemonEnum.Charizardmegay:
       return 'Mega Charizard Y';
 
+    case PokemonEnum.Raichumegax:
+      return 'Mega Raichu X';
+    case PokemonEnum.Raichumegay:
+      return 'Mega Raichu Y';
+
     case PokemonEnum.Mewtwomegax:
       return 'Mega Mewtwo X';
     case PokemonEnum.Mewtwomegay:
@@ -50,6 +55,14 @@ export function pokemonEnumToSpecies(pokemon: PokemonEnum): string {
 
     case PokemonEnum.Venomiconepilogue:
       return 'Venomicon Epilogue';
+
+    // The Z Formes of Mega Pokemon
+    case PokemonEnum.Absolmegaz:
+      return 'Mega Absol Z';
+    case PokemonEnum.Garchompmegaz:
+      return 'Mega Garchomp Z';
+    case PokemonEnum.Lucariomegaz:
+      return 'Mega Lucario Z';
 
     // The mimes
     case PokemonEnum.Mimejr:

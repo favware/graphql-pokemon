@@ -1351,9 +1351,35 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 952,
       prevo: 'capsakid',
       species: 'scovillain',
+      otherFormes: ['scovillainmega'],
       types: [TypesEnum.Grass, TypesEnum.Fire],
       weightkg: 15,
       classification: 'Spicy Pepper Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scovillain.mp3'
+    }
+  ],
+  [
+    'scovillainmega',
+    {
+      abilities: { first: 'spicyspray' },
+      baseStats: { hp: 65, atk: 138, def: 85, spa: 138, spd: 85, spe: 75 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
+      color: 'Green',
+      eggGroups: ['Grass'],
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      baseSpecies: 'scovillain',
+      forme: 'Mega',
+      formeLetter: 'M',
+      heightm: 1.2,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 952,
+      otherFormes: ['scovillain'],
+      species: 'scovillain-mega',
+      types: [TypesEnum.Grass, TypesEnum.Fire],
+      weightkg: 22,
       cry: 'https://play.pokemonshowdown.com/audio/cries/scovillain.mp3'
     }
   ],
@@ -1834,9 +1860,35 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 970,
       prevo: 'glimmet',
       species: 'glimmora',
+      otherFormes: ['glimmoramega'],
       types: [TypesEnum.Rock, TypesEnum.Poison],
       weightkg: 45,
       classification: 'Ore Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/glimmora.mp3'
+    }
+  ],
+  [
+    'glimmoramega',
+    {
+      abilities: { first: 'adaptability' },
+      baseStats: { hp: 83, atk: 90, def: 105, spa: 150, spd: 96, spe: 101 },
+      catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
+      color: 'Blue',
+      eggGroups: ['Mineral'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      baseSpecies: 'glimmora',
+      forme: 'Mega',
+      formeLetter: 'M',
+      heightm: 2.8,
+      isEggObtainable: true,
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 7710,
+      num: 970,
+      otherFormes: ['glimmora'],
+      species: 'glimmora-mega',
+      types: [TypesEnum.Rock, TypesEnum.Poison],
+      weightkg: 77,
       cry: 'https://play.pokemonshowdown.com/audio/cries/glimmora.mp3'
     }
   ],
@@ -2032,9 +2084,39 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       minimumHatchTime: 2,
       num: 978,
       species: 'tatsugiri',
+      otherFormes: ['tatsugirimega'],
       types: [TypesEnum.Dragon, TypesEnum.Water],
       weightkg: 8,
       classification: 'Mimicry Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3'
+    }
+  ],
+  [
+    'tatsugirimega',
+    {
+      abilities: { first: 'commander', hidden: 'stormdrain' },
+      baseStats: { hp: 68, atk: 65, def: 90, spa: 135, spd: 125, spe: 92 },
+      catchRate: {
+        base: 100,
+        percentageWithOrdinaryPokeballAtFullHealth: '21.7%'
+      },
+      color: 'Pink',
+      cosmeticFormes: ['Tatsugiri-Droopy', 'Tatsugiri-Stretchy'],
+      eggGroups: ['Water 2'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 2, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.6,
+      isEggObtainable: true,
+      levellingRate: 'Medium Slow',
+      minimumHatchTime: 2,
+      baseSpecies: 'tatsugiri',
+      forme: 'Mega',
+      formeLetter: 'M',
+      num: 978,
+      otherFormes: ['tatsugiri'],
+      species: 'tatsugiri-mega',
+      types: [TypesEnum.Dragon, TypesEnum.Water],
+      weightkg: 24,
       cry: 'https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3'
     }
   ],
@@ -2526,9 +2608,35 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       num: 998,
       prevo: 'arctibax',
       species: 'baxcalibur',
+      otherFormes: ['baxcaliburmega'],
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 210,
       classification: 'Ice Dragon Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur.mp3'
+    }
+  ],
+  [
+    'baxcaliburmega',
+    {
+      abilities: { first: 'thermalexchange', hidden: 'icebody' },
+      baseStats: { hp: 115, atk: 145, def: 92, spa: 75, spd: 86, spe: 87 },
+      catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
+      color: 'Gray',
+      eggGroups: ['Dragon', 'Mineral'],
+      evYields: { hp: 0, atk: 3, def: 0, spa: 0, spd: 0, spe: 0 },
+      genderRatio: { male: '50%', female: '50%' },
+      baseSpecies: 'baxcalibur',
+      forme: 'Mega',
+      formeLetter: 'M',
+      heightm: 2.1,
+      isEggObtainable: true,
+      levellingRate: 'Slow',
+      minimumHatchTime: 10280,
+      num: 998,
+      otherFormes: ['baxcalibur'],
+      species: 'baxcalibur-mega',
+      types: [TypesEnum.Dragon, TypesEnum.Ice],
+      weightkg: 315,
       cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur.mp3'
     }
   ],

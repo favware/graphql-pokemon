@@ -195,7 +195,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'emboarmega',
     {
-      abilities: { first: 'blaze', hidden: 'reckless' },
+      abilities: { first: 'moldbreaker' },
       baseStats: { hp: 110, atk: 123, def: 65, spa: 100, spd: 65, spe: 65 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
@@ -1083,7 +1083,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'excadrill',
     {
-      abilities: { first: 'sandrush', second: 'sandforce', hidden: 'moldbreaker' },
+      abilities: { first: 'piercingdrill' },
       baseStats: { hp: 110, atk: 135, def: 60, spa: 50, spd: 65, spe: 88 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
@@ -3954,11 +3954,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'chandeluremega',
     {
-      abilities: {
-        first: 'flashfire',
-        second: 'flamebody',
-        hidden: 'infiltrator'
-      },
+      abilities: { first: 'infiltrator' },
       baseStats: { hp: 60, atk: 75, def: 110, spa: 175, spd: 110, spe: 90 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Black',
@@ -4398,8 +4394,37 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'golurk',
       types: [TypesEnum.Ground, TypesEnum.Ghost],
       weightkg: 330,
+      otherFormes: ['golurkmega'],
       aliases: ['goruugu', 'lurk'],
       classification: 'Automaton Pokémon',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/golurk.mp3',
+      respelling: 'GO-lurk',
+      ipa: '/ˈɡoʊlərk/'
+    }
+  ],
+  [
+    'golurkmega',
+    {
+      abilities: { first: 'unseenfist' },
+      baseStats: { hp: 89, atk: 159, def: 105, spa: 70, spd: 105, spe: 55 },
+      catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
+      color: 'Green',
+      eggGroups: ['Mineral'],
+      baseSpecies: 'golurk',
+      evYields: { hp: 0, atk: 2, def: 0, spa: 0, spd: 0, spe: 0 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: '0%', female: '0%' },
+      heightm: 4,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 6425,
+      num: 623,
+      otherFormes: ['golurk'],
+      species: 'golurk-mega',
+      types: [TypesEnum.Ground, TypesEnum.Ghost],
+      weightkg: 330,
+      aliases: ['goruugumega', 'lurkmega'],
       cry: 'https://play.pokemonshowdown.com/audio/cries/golurk.mp3',
       respelling: 'GO-lurk',
       ipa: '/ˈɡoʊlərk/'

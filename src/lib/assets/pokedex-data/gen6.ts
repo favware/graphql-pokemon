@@ -88,7 +88,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'chesnaughtmega',
     {
-      abilities: { first: 'overgrow', hidden: 'bulletproof' },
+      abilities: { first: 'bulletproof' },
       baseStats: { hp: 88, atk: 137, def: 172, spa: 74, spd: 115, spe: 44 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Green',
@@ -198,7 +198,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'delphoxmega',
     {
-      abilities: { first: 'blaze', hidden: 'magician' },
+      abilities: { first: 'levitate' },
       baseStats: { hp: 75, atk: 69, def: 72, spa: 159, spd: 125, spe: 134 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
@@ -336,7 +336,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'greninjamega',
     {
-      abilities: { first: 'torrent', hidden: 'protean', special: 'battlebond' },
+      abilities: { first: 'protean' },
       baseStats: { hp: 72, atk: 125, def: 77, spa: 133, spd: 81, spe: 142 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Blue',
@@ -899,7 +899,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'floettemega',
     {
-      abilities: { first: 'flowerveil' },
+      abilities: { first: 'fairyaura' },
       baseSpecies: 'floette',
       baseStats: { hp: 74, atk: 85, def: 87, spa: 155, spd: 148, spe: 102 },
       catchRate: {
@@ -916,7 +916,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       isEggObtainable: true,
       levellingRate: 'Medium Slow',
       minimumHatchTime: 5140,
-      num: 668,
+      num: 670,
       otherFormes: ['floetteeternal'],
       species: 'floette-mega',
       types: [TypesEnum.Fairy],
@@ -1166,7 +1166,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
       num: 678,
-      otherFormes: ['meowsticf'],
+      otherFormes: ['meowsticf', 'meowsticmega'],
       prevo: 'espurr',
       species: 'meowstic',
       types: [TypesEnum.Psychic],
@@ -1201,7 +1201,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 5140,
       num: 678,
-      otherFormes: ['meowstic'],
+      otherFormes: ['meowstic', 'meowsticmega'],
       prevo: 'espurr',
       species: 'meowstic-f',
       types: [TypesEnum.Psychic],
@@ -1210,6 +1210,34 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3',
       respelling: 'MYOW-stik',
       ipa: '/ˈmjaʊstɪk/'
+    }
+  ],
+  [
+    'meowsticmega',
+    {
+      abilities: { first: 'trace' },
+      baseStats: { hp: 74, atk: 48, def: 76, spa: 143, spd: 101, spe: 124 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
+      color: 'Blue',
+      eggGroups: ['Field'],
+      baseSpecies: 'meowstic',
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 2 },
+      forme: 'Mega',
+      formeLetter: 'M',
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 0.8,
+      isEggObtainable: true,
+      levellingRate: 'Medium Fast',
+      minimumHatchTime: 5140,
+      num: 678,
+      otherFormes: ['meowstic', 'meowsticf'],
+      species: 'meowstic-mega',
+      types: [TypesEnum.Psychic],
+      weightkg: 10.1,
+      cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3',
+      respelling: 'MYOW-stik',
+      ipa: '/ˈmjaʊstɪk/',
+      classification: 'Second Sight Pokémon'
     }
   ],
   [
@@ -1996,7 +2024,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'hawluchamega',
     {
-      abilities: { first: 'limber', second: 'unburden', hidden: 'moldbreaker' },
+      abilities: { first: 'noguard' },
       baseStats: { hp: 78, atk: 137, def: 100, spa: 74, spd: 93, spe: 118 },
       catchRate: {
         base: 100,

@@ -18,7 +18,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Abomasite',
       shortDesc: 'If held by an Abomasnow, this item allows it to Mega Evolve in battle.'
     }
@@ -28,7 +27,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Absolite',
       shortDesc: 'If held by an Absol, this item allows it to Mega Evolve in battle.'
     }
@@ -95,7 +93,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Aerodactylite',
       shortDesc: 'If held by an Aerodactyl, this item allows it to Mega Evolve in battle.'
     }
@@ -105,7 +102,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Aggronite',
       shortDesc: 'If held by an Aggron, this item allows it to Mega Evolve in battle.'
     }
@@ -133,7 +129,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Alakazite',
       shortDesc: 'If held by an Alakazam, this item allows it to Mega Evolve in battle.'
     }
@@ -153,7 +148,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Altarianite',
       shortDesc: 'If held by an Altaria, this item allows it to Mega Evolve in battle.'
     }
@@ -163,7 +157,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Ampharosite',
       shortDesc: 'If held by an Ampharos, this item allows it to Mega Evolve in battle.'
     }
@@ -231,7 +224,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by an Audino, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Audinite',
       shortDesc: 'If held by an Audino, this item allows it to Mega Evolve in battle.'
     }
@@ -299,7 +291,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Banette, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Banettite',
       shortDesc: 'If held by a Banette, this item allows it to Mega Evolve in battle.'
     }
@@ -337,7 +328,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Beedrillite',
       shortDesc: 'If held by a Beedrill, this item allows it to Mega Evolve in battle.'
     }
@@ -471,6 +461,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
     }
   ],
   [
+    'blackaugurite',
+    {
+      desc: "A glassy black stone that produces a sharp cutting edge when split. It's loved by a certain Pokémon.",
+      gen: 8,
+      name: 'Black Augurite',
+      shortDesc: 'Evolves Scyther into Kleavor when used.'
+    }
+  ],
+  [
     'blackbelt',
     {
       desc: "Holder's Fighting-type attacks have 1.2x power.",
@@ -502,7 +501,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Blastoisinite',
       shortDesc: 'If held by a Blastoise, this item allows it to Mega Evolve in battle.'
     }
@@ -512,7 +510,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Blaziken, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Blazikenite',
       shortDesc: 'If held by a Blaziken, this item allows it to Mega Evolve in battle.'
     }
@@ -532,7 +529,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Blue Orb',
       shortDesc: 'If held by a Kyogre, this item triggers its Primal Reversion in battle.',
@@ -639,7 +635,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Fire type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Burn Drive',
       shortDesc: "Holder's Techno Blast is Fire type."
     }
@@ -659,7 +654,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Cameruptite',
       shortDesc: 'If held by a Camerupt, this item allows it to Mega Evolve in battle.'
     }
@@ -726,7 +720,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite X',
       shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
     }
@@ -736,7 +729,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Charizardite Y',
       shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
     }
@@ -802,7 +794,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Ice type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Chill Drive',
       shortDesc: "Holder's Techno Blast is Ice type."
     }
@@ -1221,7 +1212,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Diancite',
       shortDesc: 'If held by a Diancie, this item allows it to Mega Evolve in battle.'
     }
@@ -1260,7 +1250,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Water type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Douse Drive',
       shortDesc: "Holder's Techno Blast is Water type."
     }
@@ -1583,7 +1572,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
     'elevatorkey',
     {
       desc: "A card key that activates the elevator in Lysandre Labs. It is emblazoned with Team Flare's logo.",
-      gen: 7,
+      gen: 6,
       keyItem: true,
       name: 'Elevator Key',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/elevatorkey.png'
@@ -2161,7 +2150,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Galladite',
       shortDesc: 'If held by a Gallade, this item allows it to Mega Evolve in battle.'
     }
@@ -2180,7 +2168,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Garchompite',
       shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.'
     }
@@ -2190,7 +2177,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gardevoirite',
       shortDesc: 'If held by a Gardevoir, this item allows it to Mega Evolve in battle.'
     }
@@ -2210,7 +2196,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gengarite',
       shortDesc: 'If held by a Gengar, this item allows it to Mega Evolve in battle.'
     }
@@ -2259,7 +2244,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Glalitite',
       shortDesc: 'If held by a Glalie, this item allows it to Mega Evolve in battle.'
     }
@@ -2541,7 +2525,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Gyaradosite',
       shortDesc: 'If held by a Gyarados, this item allows it to Mega Evolve in battle.'
     }
@@ -2634,7 +2617,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Heracronite',
       shortDesc: 'If held by a Heracross, this item allows it to Mega Evolve in battle.'
     }
@@ -2683,7 +2665,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Houndoominite',
       shortDesc: 'If held by a Houndoom, this item allows it to Mega Evolve in battle.'
     }
@@ -2893,7 +2874,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Kangaskhanite',
       shortDesc: 'If held by a Kangaskhan, this item allows it to Mega Evolve in battle.'
     }
@@ -3046,7 +3026,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latias, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Latiasite',
       shortDesc: 'If held by a Latias, this item allows it to Mega Evolve in battle.'
     }
@@ -3056,7 +3035,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Latios, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Latiosite',
       shortDesc: 'If held by a Latios, this item allows it to Mega Evolve in battle.'
     }
@@ -3271,7 +3249,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Lopunnite',
       shortDesc: 'If held by a Lopunny, this item allows it to Mega Evolve in battle.'
     }
@@ -3309,7 +3286,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Lucarionite',
       shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.'
     }
@@ -3551,7 +3527,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Manectite',
       shortDesc: 'If held by a Manectric, this item allows it to Mega Evolve in battle.'
     }
@@ -3598,7 +3573,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mawilite',
       shortDesc: 'If held by a Mawile, this item allows it to Mega Evolve in battle.'
     }
@@ -3635,7 +3609,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Medichamite',
       shortDesc: 'If held by a Medicham, this item allows it to Mega Evolve in battle.'
     }
@@ -3694,7 +3667,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Metagrossite',
       shortDesc: 'If held by a Metagross, this item allows it to Mega Evolve in battle.'
     }
@@ -3772,7 +3744,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite X',
       shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
     }
@@ -3782,7 +3753,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite Y',
       shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
     }
@@ -4304,7 +4274,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Pidgeotite',
       shortDesc: 'If held by a Pidgeot, this item allows it to Mega Evolve in battle.'
     }
@@ -4364,7 +4333,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Pinsirite',
       shortDesc: 'If held by a Pinsir, this item allows it to Mega Evolve in battle.'
     }
@@ -4986,7 +4954,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       keyItem: true,
       name: 'Red Orb',
       shortDesc: 'If held by a Groudon, this item triggers its Primal Reversion in battle.',
@@ -5302,7 +5269,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sablenite',
       shortDesc: 'If held by a Sableye, this item allows it to Mega Evolve in battle.'
     }
@@ -5312,7 +5278,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Spritzee into Aromatisse when traded.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sachet',
       shortDesc: 'Evolves Spritzee into Aromatisse when traded.'
     }
@@ -5341,7 +5306,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Can be revived into Amaura.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sail Fossil',
       shortDesc: 'Can be revived into Amaura.'
     }
@@ -5361,7 +5325,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Salamencite',
       shortDesc: 'If held by a Salamence, this item allows it to Mega Evolve in battle.'
     }
@@ -5413,7 +5376,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sceptile, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sceptilite',
       shortDesc: 'If held by a Sceptile, this item allows it to Mega Evolve in battle.'
     }
@@ -5423,7 +5385,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Scizorite',
       shortDesc: 'If held by a Scizor, this item allows it to Mega Evolve in battle.'
     }
@@ -5501,7 +5462,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Sharpedonite',
       shortDesc: 'If held by a Sharpedo, this item allows it to Mega Evolve in battle.'
     }
@@ -5548,7 +5508,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: "Holder's Techno Blast is Electric type.",
       gen: 5,
-      isNonstandard: IsNonStandard.Past,
       name: 'Shock Drive',
       shortDesc: "Holder's Techno Blast is Electric type."
     }
@@ -5634,7 +5593,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Slowbronite',
       shortDesc: 'If held by a Slowbro, this item allows it to Mega Evolve in battle.'
     }
@@ -5865,7 +5823,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Steelixite',
       shortDesc: 'If held by a Steelix, this item allows it to Mega Evolve in battle.'
     }
@@ -6008,7 +5965,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Swampert, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Swampertite',
       shortDesc: 'If held by a Swampert, this item allows it to Mega Evolve in battle.'
     }
@@ -7239,7 +7195,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Tyranitarite',
       shortDesc: 'If held by a Tyranitar, this item allows it to Mega Evolve in battle.'
     }
@@ -7305,7 +7260,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Venusaurite',
       shortDesc: 'If held by a Venusaur, this item allows it to Mega Evolve in battle.'
     }
@@ -7472,7 +7426,6 @@ export const items = new Collection<string, PokemonTypes.Item>([
     {
       desc: 'Evolves Swirlix into Slurpuff when traded.',
       gen: 6,
-      isNonstandard: IsNonStandard.Past,
       name: 'Whipped Dream',
       shortDesc: 'Evolves Swirlix into Slurpuff when traded.'
     }
@@ -7871,6 +7824,656 @@ export const items = new Collection<string, PokemonTypes.Item>([
       name: 'Blue Canari Plush',
       shortDesc: 'A blue Canari plush doll that makes you more likely to catch Pokémon.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/bluecanariplushlv.2.png'
+    }
+  ],
+  [
+    'heatranite',
+    {
+      desc: 'If held by a Heatran, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Heatranite',
+      shortDesc: 'If held by a Heatran, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/heatranite.png'
+    }
+  ],
+  [
+    'darkranite',
+    {
+      desc: 'If held by a Darkrai, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Darkranite',
+      shortDesc: 'If held by a Darkrai, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/darkranite.png'
+    }
+  ],
+  [
+    'zeraorite',
+    {
+      desc: 'If held by a Zeraora, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Zeraorite',
+      shortDesc: 'If held by a Zeraora, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/zeraorite.png'
+    }
+  ],
+  [
+    'raichunitex',
+    {
+      desc: 'If held by a Raichu, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Raichunite X',
+      shortDesc: 'If held by a Raichu, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/raichunitex.png'
+    }
+  ],
+  [
+    'raichinitey',
+    {
+      desc: 'If held by a Raichu, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Raichunite Y',
+      shortDesc: 'If held by a Raichu, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/raichunitey.png'
+    }
+  ],
+  [
+    'chimechite',
+    {
+      desc: 'If held by a Chimecho, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Chimechite',
+      shortDesc: 'If held by a Chimechite, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/chimechite.png'
+    }
+  ],
+  [
+    'absolitez',
+    {
+      desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Absolite Z',
+      shortDesc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/absolitez.png'
+    }
+  ],
+  [
+    'staraptite',
+    {
+      desc: 'If held by a Staraptor, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Staraptite',
+      shortDesc: 'If held by a Staraptor, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/staraptite.png'
+    }
+  ],
+  [
+    'garchompitez',
+    {
+      desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Garchompite Z',
+      shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/garchompitez.png'
+    }
+  ],
+  [
+    'lucarionitez',
+    {
+      desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Lucarionite Z',
+      shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/lucarionitez.png'
+    }
+  ],
+  [
+    'golurkite',
+    {
+      desc: 'If held by a Golurk, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Golurkite',
+      shortDesc: 'If held by a Golurk, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/golurkite.png'
+    }
+  ],
+  [
+    'meowsticite',
+    {
+      desc: 'If held by a Meowstic, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Meowsticite',
+      shortDesc: 'If held by a Meowstic, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/meowsticite.png'
+    }
+  ],
+  [
+    'crabominite',
+    {
+      desc: 'If held by a Crabominable, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Crabominite',
+      shortDesc: 'If held by a Crabominable, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/crabombinite.png'
+    }
+  ],
+  [
+    'golisopite',
+    {
+      desc: 'If held by a Golisopod, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Golisopite',
+      shortDesc: 'If held by a Golisopod, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/golisopite.png'
+    }
+  ],
+  [
+    'magearnite',
+    {
+      desc: 'If held by a Magearna, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Magearnite',
+      shortDesc: 'If held by a Magearna, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/magearnite.png'
+    }
+  ],
+  [
+    'scovillainite',
+    {
+      desc: 'If held by a Scovillain, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Scovillainite',
+      shortDesc: 'If held by a Scovillain, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/scovillainite.png'
+    }
+  ],
+  [
+    'baxcalibrite',
+    {
+      desc: 'If held by a Baxcalibur, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Baxcalibrite',
+      shortDesc: 'If held by a Baxcalibur, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/baxcalibrite.png'
+    }
+  ],
+  [
+    'tatsugirinite',
+    {
+      desc: 'If held by a Tatsugiri, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Tatsugirinite',
+      shortDesc: 'If held by a Tatsugiri, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/tatsugirinite.png'
+    }
+  ],
+  [
+    'glimmoranite',
+    {
+      desc: 'If held by a Glimmora, this item allows it to Mega Evolve in battle.',
+      gen: 9,
+      name: 'Glimmoranite',
+      shortDesc: 'If held by a Glimmora, this item allows it to Mega Evolve in battle.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/glimmoranite.png'
+    }
+  ],
+  [
+    'hypercheriberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. Its spicy kick is great when added to curries.",
+      gen: 9,
+      name: 'Hyper Cheri Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypercheriberry.png'
+    }
+  ],
+  [
+    'hyperchestoberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. Its dry flavor offers a good balance when used in sweet cream.",
+      gen: 9,
+      name: 'Hyper Chesto Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperchestoberry.png'
+    }
+  ],
+  [
+    'hyperpechaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. Its sweet flavor makes it a great ingredient for meringue.",
+      gen: 9,
+      name: 'Hyper Pecha Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperpechaberry.png'
+    }
+  ],
+  [
+    'hyperrawstberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. Its bitter bite works beautifully in chocolate.",
+      gen: 9,
+      name: 'Hyper Rawst Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperrawstberry.png'
+    }
+  ],
+  [
+    'hyperaspearberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. Its sour bite makes it perfect for stewing into a confiture.",
+      gen: 9,
+      name: 'Hyper Aspear Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperaspearberry.png'
+    }
+  ],
+  [
+    'hyperoranberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries, meringue, chocolate, and confitures.",
+      gen: 9,
+      name: 'Hyper Oran Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperoranberry.png'
+    }
+  ],
+  [
+    'hyperpersimberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries, cream, chocolate, and confitures.",
+      gen: 9,
+      name: 'Hyper Persim Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperpersimberry.png'
+    }
+  ],
+  [
+    'hyperlumberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries, cream, meringue, and confitures.",
+      gen: 9,
+      name: 'Hyper Lum Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperlumberry.png'
+    }
+  ],
+  [
+    'hypersitrusberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries, cream, meringue, and chocolate.",
+      gen: 9,
+      name: 'Hyper Sitrus Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypersitrusberry.png'
+    }
+  ],
+  [
+    'hyperpomegberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries and meringue.",
+      gen: 9,
+      name: 'Hyper Pomeg Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperpomegberry.png'
+    }
+  ],
+  [
+    'hyperkelpsyberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream and chocolate.",
+      gen: 9,
+      name: 'Hyper Kelspy Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperkelpsyberry.png'
+    }
+  ],
+  [
+    'hyperqualotberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in meringue and confitures.",
+      gen: 9,
+      name: 'Hyper Qualot Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperqualotberry.png'
+    }
+  ],
+  [
+    'hyperhondewberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream and confitures.",
+      gen: 9,
+      name: 'Hyper Hondew Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperhondewberry.png'
+    }
+  ],
+  [
+    'hypergrepaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries.",
+      gen: 9,
+      name: 'Hyper Grepa Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypergrepaberry.png'
+    }
+  ],
+  [
+    'hypertamatoberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream.",
+      gen: 9,
+      name: 'Hyper Tamato Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypertamatoberry.png'
+    }
+  ],
+  [
+    'hyperoccaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in meringue.",
+      gen: 9,
+      name: 'Hyper Occa Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperoccaberry.png'
+    }
+  ],
+  [
+    'hyperpasshoberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in chocolate.",
+      gen: 9,
+      name: 'Hyper Passho Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperpasshoberry.png'
+    }
+  ],
+  [
+    'hyperwacanberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in confitures.",
+      gen: 9,
+      name: 'Hyper Wacan Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperwacanberry.png'
+    }
+  ],
+  [
+    'hyperrindoberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries.",
+      gen: 9,
+      name: 'Hyper Rindo Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperrindoberry.png'
+    }
+  ],
+  [
+    'hyperyacheberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream.",
+      gen: 9,
+      name: 'Hyper Yache Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperyacheberry.png'
+    }
+  ],
+  [
+    'hyperchopleberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in meringue.",
+      gen: 9,
+      name: 'Hyper Chople Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperchopleberry.png'
+    }
+  ],
+  [
+    'hyperkebiaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in chocolate.",
+      gen: 9,
+      name: 'Hyper Kebia Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperkebiaberry.png'
+    }
+  ],
+  [
+    'hypershucaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in confitures.",
+      gen: 9,
+      name: 'Hyper Shuca Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypershucaberry.png'
+    }
+  ],
+  [
+    'hypercobaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries.",
+      gen: 9,
+      name: 'Hyper Coba Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypercobaberry.png'
+    }
+  ],
+  [
+    'hyperpayapaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream.",
+      gen: 9,
+      name: 'Hyper Payapa Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperpayapaberry.png'
+    }
+  ],
+  [
+    'hypertangaberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in meringue.",
+      gen: 9,
+      name: 'Hyper Tanga Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypertangaberry.png'
+    }
+  ],
+  [
+    'hyperchartiberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in chocolate.",
+      gen: 9,
+      name: 'Hyper Charti Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperchartiberry.png'
+    }
+  ],
+  [
+    'hyperkasibberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in confitures.",
+      gen: 9,
+      name: 'Hyper Kasib Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperkasibberry.png'
+    }
+  ],
+  [
+    'hyperhabanberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream and meringue.",
+      gen: 9,
+      name: 'Hyper Haban Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperhabanberry.png'
+    }
+  ],
+  [
+    'hypercolburberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in cream and confitures.",
+      gen: 9,
+      name: 'Hyper Colbur Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hypercolburberry.png'
+    }
+  ],
+  [
+    'hyperbabiriberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in chocolate and confitures.",
+      gen: 9,
+      name: 'Hyper Babiri Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperbabiriberry.png'
+    }
+  ],
+  [
+    'hyperchilanberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries and chocolate.",
+      gen: 9,
+      name: 'Hyper Chilan Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperchilanberry.png'
+    }
+  ],
+  [
+    'hyperoseliberry',
+    {
+      desc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts. It goes well in curries and confitures.",
+      gen: 9,
+      name: 'Hyper Roseli Berry',
+      shortDesc: "A mysterious Berry found in Hyperspace Lumiose that's ideal for making donuts.",
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hyperroseliberry.png'
+    }
+  ],
+  [
+    'canaribread',
+    {
+      desc: "A bun made to look like Canari's face. It can be used to restore 100 HP to a Pokémon.",
+      gen: 9,
+      name: 'Canari Bread',
+      shortDesc: 'It can be used to restore 100 HP to a Pokémon.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/canaribread.png'
+    }
+  ],
+  [
+    'lumiosianbutter',
+    {
+      desc: 'Some of the absolute best butter produced in the Kalos region. Highly sought after by the cooks of Lumiose—if you know, you know. Makes for great donuts.',
+      gen: 9,
+      name: 'Lumiosian Butter',
+      shortDesc: 'Sought after butter that makes great donuts.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/lumiosianbutter.png'
+    }
+  ],
+  [
+    'nicebutter',
+    {
+      desc: 'A nice pack of butter found in Hyperspace Lumiose. With it, you should be able to make even higher quality donuts than before.',
+      gen: 9,
+      name: 'Nice Butter',
+      shortDesc: 'A nice pack of butter found in Hyperspace Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/nicebutter.png'
+    }
+  ],
+  [
+    'greatbutter',
+    {
+      desc: 'A great pack of butter found in Hyperspace Lumiose. With it, you should be able to make even higher quality donuts than before.',
+      gen: 9,
+      name: 'Great Butter',
+      shortDesc: 'A great pack of butter found in Hyperspace Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/greatbutter.png'
+    }
+  ],
+  [
+    'amazingbutter',
+    {
+      desc: 'An amazing pack of butter found in Hyperspace Lumiose. With it, you should be able to make even higher quality donuts than before.',
+      gen: 9,
+      name: 'Amazing Butter',
+      shortDesc: 'An amazing pack of butter found in Hyperspace Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/amazingbutter.png'
+    }
+  ],
+  [
+    'supremebutter',
+    {
+      desc: 'A supreme pack of butter found in Hyperspace Lumiose. With it, you should be able to make even higher quality donuts than before.',
+      gen: 9,
+      name: 'Supreme Butter',
+      shortDesc: 'A supreme pack of butter found in Hyperspace Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/supremebutter.png'
+    }
+  ],
+  [
+    'hyperspacebutter',
+    {
+      desc: 'The absolute ultimate in butter, found in Hyperspace Lumiose. With it, you should be able to make even higher quality donuts than before.',
+      gen: 9,
+      name: 'Hyperspace Butter',
+      shortDesc: 'The absolute ultimate in butter, found in Hyperspace Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/supremebutter.png'
+    }
+  ],
+  [
+    'hoenniansalt',
+    {
+      desc: 'A coarse salt that can only be harvested in small amounts in the Hoenn region. A tiny pinch will impart a wondrous depth of flavor.',
+      gen: 9,
+      name: 'Hoennian Salt',
+      shortDesc: 'The absolute ultimate in butter, found in Hyperspace Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/hoenniansalt.png'
+    }
+  ],
+  [
+    'epicenoire',
+    {
+      desc: "A mysterious spice that is highly valued among members of the Rust Syndicate. A sprinkle of it elevates the flavor of any dish so sublimely you'll feel as if you're dreaming.",
+      gen: 9,
+      name: 'Épice Noire',
+      shortDesc: 'A mysterious spice that is highly valued among members of the Rust Syndicate.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/epicenoire.png'
+    }
+  ],
+  [
+    'arbolivaoil',
+    {
+      desc: "The oil produced by Paldea's Arboliva is said to be so delicious you'll feel as if you've gone to heaven after tasting it. How Corbeau got some is best left a mystery.",
+      gen: 9,
+      name: 'Arboliva Oil',
+      shortDesc: 'An oil produced by Arboliva in Paldea.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/arbolivaoil.png'
+    }
+  ],
+  [
+    'poppingcandy',
+    {
+      desc: "A popular candy among the children of Lumiose. It pops in your mouth as if it's exploding, so you can enjoy a shocking experience while eating it.",
+      gen: 9,
+      name: 'Popping Candy',
+      shortDesc: 'A popular candy among the children of Lumiose.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/poppingcandy.png'
+    }
+  ],
+  [
+    'importantletter',
+    {
+      desc: 'A letter that you were asked to deliver to the director of Académie Étoile by a somewhat peculiar character.',
+      gen: 9,
+      name: 'Important Letter',
+      shortDesc: 'A letter that you were asked to deliver to the director of Académie Étoile by a somewhat peculiar character.',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/importantletter.png'
+    }
+  ],
+  [
+    'dirtyscarf',
+    {
+      desc: "A scarf that has grown quite shabby. It's easy to imagine that it must have once felt quite luxurious.",
+      gen: 9,
+      name: 'Dirty Scarf',
+      shortDesc: 'A scarf that has grown quite shabby',
+      specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/dirtyscarf.png'
     }
   ]
 ]);

@@ -1912,7 +1912,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 2570,
       num: 26,
-      otherFormes: ['raichualola'],
+      otherFormes: ['raichualola', 'raichumegax', 'raichumegay'],
       prevo: 'pikachu',
       species: 'raichu',
       types: [TypesEnum.Electric],
@@ -1943,7 +1943,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       levellingRate: 'Medium Fast',
       minimumHatchTime: 2570,
       num: 26,
-      otherFormes: ['raichu'],
+      otherFormes: ['raichu', 'raichumegax', 'raichumegay'],
       prevo: 'pikachu',
       species: 'raichu-alola',
       types: [TypesEnum.Electric, TypesEnum.Psychic],
@@ -1952,6 +1952,62 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       cry: 'https://play.pokemonshowdown.com/audio/cries/raichu.mp3',
       respelling: 'uh-LO-luhn RYE-choo',
       ipa: '/əˈloʊlən ˈraɪtʃuː/'
+    }
+  ],
+  [
+    'raichumegax',
+    {
+      abilities: { first: 'static', hidden: 'lightningrod' },
+      baseStats: { hp: 60, atk: 135, def: 95, spa: 90, spd: 95, spe: 110 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
+      baseSpecies: 'raichu',
+      color: 'Yellow',
+      eggGroups: ['Fairy'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 3 },
+      forme: 'Mega-X',
+      formeLetter: 'M',
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1.2,
+      isEggObtainable: true,
+      levellingRate: 'Fast',
+      minimumHatchTime: 2570,
+      num: 26,
+      otherFormes: ['raichu', 'raichualola', 'raichumegay'],
+      species: 'raichu-mega-x',
+      types: [TypesEnum.Electric],
+      weightkg: 38,
+      aliases: ['raichux'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/raichu.mp3',
+      respelling: 'RYE-chew',
+      ipa: '/ˈraɪtʃuː/'
+    }
+  ],
+  [
+    'raichumegay',
+    {
+      abilities: { first: 'static', hidden: 'lightningrod' },
+      baseStats: { hp: 60, atk: 135, def: 95, spa: 90, spd: 95, spe: 110 },
+      catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
+      baseSpecies: 'raichu',
+      color: 'Yellow',
+      eggGroups: ['Fairy'],
+      evYields: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 3 },
+      forme: 'Mega-Y',
+      formeLetter: 'M',
+      genderRatio: { male: '50%', female: '50%' },
+      heightm: 1,
+      isEggObtainable: true,
+      levellingRate: 'Fast',
+      minimumHatchTime: 2570,
+      num: 26,
+      otherFormes: ['raichu', 'raichualola', 'raichumegax'],
+      species: 'raichu-mega-y',
+      types: [TypesEnum.Electric],
+      weightkg: 26,
+      aliases: ['raichuy'],
+      cry: 'https://play.pokemonshowdown.com/audio/cries/raichu.mp3',
+      respelling: 'RYE-chew',
+      ipa: '/ˈraɪtʃuː/'
     }
   ],
   [
@@ -2312,7 +2368,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'clefablemega',
     {
-      abilities: { first: 'cutecharm', second: 'magicguard', hidden: 'unaware' },
+      abilities: { first: 'magicbounce' },
       baseSpecies: 'clefable',
       baseStats: { hp: 95, atk: 80, def: 93, spa: 135, spd: 110, spe: 70 },
       catchRate: { base: 25, percentageWithOrdinaryPokeballAtFullHealth: '7.7%' },
@@ -3744,7 +3800,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'victreebelmega',
     {
-      abilities: { first: 'chlorophyll', hidden: 'gluttony' },
+      abilities: { first: 'innardsout' },
       baseSpecies: 'victreebel',
       baseStats: { hp: 80, atk: 125, def: 85, spa: 135, spd: 95, spe: 70 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -5869,12 +5925,8 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'starmiemega',
     {
-      abilities: {
-        first: 'illuminate',
-        second: 'naturalcure',
-        hidden: 'analytic'
-      },
-      baseStats: { hp: 60, atk: 140, def: 105, spa: 130, spd: 105, spe: 120 },
+      abilities: { first: 'hugepower' },
+      baseStats: { hp: 60, atk: 100, def: 105, spa: 130, spd: 105, spe: 120 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       baseSpecies: 'starmie',
       color: 'Purple',
@@ -7084,7 +7136,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'dragonitemega',
     {
-      abilities: { first: 'innerfocus', hidden: 'multiscale' },
+      abilities: { first: 'multiscale' },
       baseStats: { hp: 91, atk: 124, def: 115, spa: 145, spd: 125, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       baseSpecies: 'dragonite',

@@ -16,14 +16,14 @@ await ensureLogfileExists(logFile);
 
 const pokemonToParse = getBulbapediaReadyPokemon();
 
-// // Determine the current day of the month (1-based). Clamp to 30 to avoid out-of-range on 31-day months.
+// Determine the current day of the month (1-based). Clamp to 30 to avoid out-of-range on 31-day months.
 const dayOfMonth = Math.min(new Date().getDate(), 30);
 
-// // We split the workload across 30 sets (approximate average month length).
+// We split the workload across 30 sets (approximate average month length).
 const numberOfSets = 30;
 const setSize = Math.ceil(pokemonToParse.length / numberOfSets);
 
-// // Split the array into 30 roughly equal sets.
+// Split the array into 30 roughly equal sets.
 const monthlySets = Array.from({ length: numberOfSets }, (_, i) => pokemonToParse.slice(i * setSize, (i + 1) * setSize));
 
 // Select the set to process based on the current day of the month.

@@ -939,10 +939,7 @@
       "evYields": { "hp": 0, "attack": 0, "defense": 1, "specialattack": 0, "specialdefense": 0, "speed": 0 },
       "evolutionLevel": null,
       "flavorTexts": [
-        {
-          "flavor": "They communicate with one another by using magnetic pulses. In a swarm, they move in perfect unison.",
-          "game": "Legends: Z-A"
-        }
+        { "flavor": "They communicate with one another by using magnetic pulses. In a swarm, they move in perfect unison.", "game": "Legends: Z-A" }
       ],
       "forme": null,
       "formeLetter": null,
@@ -12516,10 +12513,7 @@
               "evYields": { "hp": 0, "attack": 0, "defense": 3, "specialattack": 0, "specialdefense": 0, "speed": 0 },
               "evolutionLevel": "45",
               "flavorTexts": [
-                {
-                  "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
-                  "game": "Legends: Z-A"
-                }
+                { "flavor": "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.", "game": "Legends: Z-A" }
               ],
               "forme": null,
               "formeLetter": null,

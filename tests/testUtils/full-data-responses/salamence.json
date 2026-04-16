@@ -29869,10 +29869,7 @@
               "evYields": { "hp": 0, "attack": 1, "defense": 0, "specialattack": 0, "specialdefense": 0, "speed": 0 },
               "evolutionLevel": null,
               "flavorTexts": [
-                {
-                  "flavor": "Its well-developed neck muscles and ironlike head can smash boulders into pieces.",
-                  "game": "Legends: Z-A"
-                }
+                { "flavor": "Its well-developed neck muscles and ironlike head can smash boulders into pieces.", "game": "Legends: Z-A" }
               ],
               "forme": null,
               "formeLetter": null,

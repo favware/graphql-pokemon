@@ -1866,7 +1866,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       aliases: ['garchompz'],
       types: [TypesEnum.Dragon],
       weightkg: 99,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/garchomp-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/garchomp.mp3',
       respelling: 'gar-CHOMP',
       ipa: '/ɡɑːrˈtʃɒmp/'
     }
@@ -2002,7 +2002,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Steel],
       weightkg: 49.4,
       aliases: ['megalucz', 'megalukez', 'lucarioz'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/lucario-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/lucario.mp3',
       respelling: 'loo-CAR-ee-oh',
       ipa: '/luːˈkɑːriːoʊ/'
     }

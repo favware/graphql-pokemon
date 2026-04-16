@@ -11,16 +11,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '20',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
       maxMovePower: 90,
       name: 'Absorb',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 7,
-      plusMovePower: 24
+      type: 'Grass'
     }
   ],
   [
@@ -30,16 +30,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Accelerock',
+      plusMovePower: undefined,
       pp: 20,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Rock'
     }
   ],
   [
@@ -49,16 +49,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 70,
       name: 'Acid',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: '10% chance to lower the foe(s) Sp. Def by 1.',
       target: 'Adjacent Foes',
-      type: 'Poison',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Poison'
     }
   ],
   [
@@ -68,15 +68,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Raises the user's Defense by 2 stages.",
       name: 'Acid Armor',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises the user's Defense by 2.",
       target: 'Self',
-      type: 'Poison',
-      cooldown: 9,
-      plusMovePower: 0
+      type: 'Poison'
     }
   ],
   [
@@ -162,16 +162,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'This move does not check accuracy.',
       maxMovePower: 110,
       name: 'Aerial Ace',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 9,
-      plusMovePower: 72
+      type: 'Flying'
     }
   ],
   [
@@ -218,15 +218,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Raises the user's Speed by 2 stages.",
       name: 'Agility',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: "Raises the user's Speed by 2.",
       target: 'Self',
-      type: 'Psychic',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -255,16 +255,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 30% chance to make the target flinch.',
       maxMovePower: 130,
       name: 'Air Slash',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 7,
-      plusMovePower: 90
+      type: 'Flying'
     }
   ],
   [
@@ -329,15 +329,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Raises the user's Special Defense by 2 stages.",
       name: 'Amnesia',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises the user's Sp. Def by 2.",
       target: 'Self',
-      type: 'Psychic',
-      cooldown: 9,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -422,16 +422,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Aqua Jet',
+      plusMovePower: undefined,
       pp: 20,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 3,
-      plusMovePower: 36
+      type: 'Water'
     }
   ],
   [
@@ -441,15 +441,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.',
       name: 'Aqua Ring',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'User recovers 1/16 max HP per turn.',
       target: 'Self',
-      type: 'Water',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Water'
     }
   ],
   [
@@ -680,16 +680,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'This move does not check accuracy.',
       maxMovePower: 90,
       name: 'Aura Sphere',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Any',
-      type: 'Fighting',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Fighting'
     }
   ],
   [
@@ -1106,16 +1106,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to make the target flinch.',
       maxMovePower: 110,
       name: 'Bite',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Dark'
     }
   ],
   [
@@ -1252,16 +1252,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '110',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.',
       maxMovePower: 140,
       name: 'Blizzard',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "10% chance to freeze foe(s). Can't miss in Snow.",
       target: 'Adjacent Foes',
-      type: 'Ice',
-      cooldown: 12,
-      plusMovePower: 132
+      type: 'Ice'
     }
   ],
   [
@@ -1362,16 +1362,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '85',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to paralyze the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.',
       maxMovePower: 130,
       name: 'Body Slam',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 8,
-      plusMovePower: 102
+      type: 'Normal'
     }
   ],
   [
@@ -1477,16 +1477,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '140',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 140,
       name: 'Boomburst',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Normal',
-      cooldown: 12,
-      plusMovePower: 168
+      type: 'Normal'
     }
   ],
   [
@@ -1496,16 +1496,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '85',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'Has a 30% chance to paralyze the target. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.',
       maxMovePower: 130,
       name: 'Bounce',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Bounces turn 1. Hits turn 2. 30% paralyze.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 12,
-      plusMovePower: 102
+      type: 'Flying'
     }
   ],
   [
@@ -1553,16 +1553,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 140,
       name: 'Brave Bird',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 10,
-      plusMovePower: 144
+      type: 'Flying'
     }
   ],
   [
@@ -1571,16 +1571,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '60',
       category: 'Physical',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
       maxMovePower: 110,
       name: 'Breaking Swipe',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Attack by 1.',
       target: 'Adjacent Foes',
-      type: 'Dragon',
-      cooldown: 9,
-      plusMovePower: 72
+      type: 'Dragon'
     }
   ],
   [
@@ -1610,16 +1610,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
       maxMovePower: 90,
       name: 'Brick Break',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Destroys screens, unless the target is immune.',
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 7,
-      plusMovePower: 90
+      type: 'Fighting'
     }
   ],
   [
@@ -1648,16 +1648,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 110,
       name: 'Brutal Swing',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Dark',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Dark'
     }
   ],
   [
@@ -1686,16 +1686,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 120,
       name: 'Bubble Beam',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "10% chance to lower the target's Speed by 1.",
       target: 'Normal',
-      type: 'Water',
-      cooldown: 6,
-      plusMovePower: 78
+      type: 'Water'
     }
   ],
   [
@@ -1724,16 +1724,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Bug Buzz',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Bug'
     }
   ],
   [
@@ -1743,15 +1743,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Raises the user's Attack and Defense by 1 stage.",
       name: 'Bulk Up',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises the user's Attack and Defense by 1.",
       target: 'Self',
-      type: 'Fighting',
-      cooldown: 18,
-      plusMovePower: 0
+      type: 'Fighting'
     }
   ],
   [
@@ -1761,16 +1761,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 110,
       name: 'Bulldoze',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '100% chance lower adjacent Pkmn Speed by 1.',
       target: 'All Adjacent',
-      type: 'Ground',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Ground'
     }
   ],
   [
@@ -1780,16 +1780,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Bullet Punch',
+      plusMovePower: undefined,
       pp: 30,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 3,
-      plusMovePower: 36
+      type: 'Steel'
     }
   ],
   [
@@ -1799,16 +1799,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '25',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
       maxMovePower: 130,
       name: 'Bullet Seed',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 6,
-      plusMovePower: 18
+      type: 'Grass'
     }
   ],
   [
@@ -1893,15 +1893,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Raises the user's Special Attack and Special Defense by 1 stage.",
       name: 'Calm Mind',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk and Sp. Def by 1.",
       target: 'Self',
-      type: 'Psychic',
-      cooldown: 18,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -2005,15 +2005,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Raises the user's Special Defense by 1 stage. The user's next Electric-type attack will have its power doubled; the effect ends when the user is no longer active, or after the user attempts to use any Electric-type move besides Charge, even if it is not successful.",
       name: 'Charge',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "+1 SpD, user's next Electric move 2x power.",
       target: 'Self',
-      type: 'Electric',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Electric'
     }
   ],
   [
@@ -2042,15 +2042,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Lowers the target's Attack by 2 stages.",
       name: 'Charm',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Lowers the target's Attack by 2.",
       target: 'Normal',
-      type: 'Fairy',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Fairy'
     }
   ],
   [
@@ -2268,16 +2268,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Lowers the user's Defense and Special Defense by 1 stage.",
       maxMovePower: 95,
       name: 'Close Combat',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 12,
-      plusMovePower: 144
+      type: 'Fighting'
     }
   ],
   [
@@ -2413,15 +2413,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Causes the target to become confused.',
       name: 'Confuse Ray',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Confuses the target.',
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 6,
-      plusMovePower: 0
+      type: 'Ghost'
     }
   ],
   [
@@ -2431,16 +2431,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '50',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Has a 10% chance to confuse the target.',
       maxMovePower: 100,
       name: 'Confusion',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: '10% chance to confuse the target.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 6,
-      plusMovePower: 60
+      type: 'Psychic'
     }
   ],
   [
@@ -2543,17 +2543,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "If the user moves after the target, the target's Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.",
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Core Enforcer',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Nullifies the foe(s) Ability if the foe(s) move first.',
       target: 'Adjacent Foes',
       type: 'Dragon',
-      zMovePower: 140,
-      cooldown: 15,
-      plusMovePower: 120
+      zMovePower: 140
     }
   ],
   [
@@ -2619,15 +2620,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Raises the user's Defense by 3 stages.",
       name: 'Cotton Guard',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "Raises the user's Defense by 3.",
       target: 'Self',
-      type: 'Grass',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -2786,16 +2787,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 20% chance to lower the target's Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Crunch',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "20% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Dark'
     }
   ],
   [
@@ -2843,15 +2844,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "If the user is not a Ghost type, lowers the user's Speed by 1 stage and raises the user's Attack and Defense by 1 stage. If the user is a Ghost type, the user loses 1/2 of its maximum HP, rounded down and even if it would cause fainting, in exchange for the target losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if there is no target or if the target is already affected.",
       name: 'Curse',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Curses if Ghost, else -1 Spe, +1 Atk, +1 Def.',
       target: 'Random',
-      type: 'Ghost',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Ghost'
     }
   ],
   [
@@ -2902,16 +2903,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 20% chance to make the target flinch.',
       maxMovePower: 130,
       name: 'Dark Pulse',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Any',
-      type: 'Dark',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Dark'
     }
   ],
   [
@@ -2940,16 +2941,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'Dazzling Gleam',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Fairy',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Fairy'
     }
   ],
   [
@@ -3051,15 +3052,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       name: 'Detect',
+      plusMovePower: undefined,
       pp: 5,
       priority: 4,
       shortDesc: 'Prevents moves from affecting the user this turn.',
       target: 'Self',
-      type: 'Fighting',
-      cooldown: 13,
-      plusMovePower: 0
+      type: 'Fighting'
     }
   ],
   [
@@ -3089,16 +3090,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 50% chance to raise the user's Defense by 2 stages.",
       maxMovePower: 130,
       name: 'Diamond Storm',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "50% chance to raise user's Defense by 2.",
       target: 'Adjacent Foes',
-      type: 'Rock',
-      cooldown: 10,
-      plusMovePower: 120
+      type: 'Rock'
     }
   ],
   [
@@ -3108,18 +3109,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude but takes double damage from them, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.',
       isFieldMove:
         'The Pokémon can dig the player out of a cavern to the place where the player entered it, similar to an Escape Rope. It can be taught to a Pokémon by using TM28 in all generations. Several Pokémon can also learn the move by leveling up.',
       maxMovePower: 130,
       name: 'Dig',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Digs underground turn 1, strikes turn 2.',
       target: 'Normal',
-      type: 'Ground',
-      cooldown: 12,
-      plusMovePower: 96
+      type: 'Ground'
     }
   ],
   [
@@ -3164,16 +3165,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'This move does not check accuracy.',
       maxMovePower: 90,
       name: 'Disarming Voice',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'This move does not check accuracy. Hits foes.',
       target: 'Adjacent Foes',
-      type: 'Fairy',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Fairy'
     }
   ],
   [
@@ -3183,16 +3184,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 30% chance to paralyze the target.',
       maxMovePower: 130,
       name: 'Discharge',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '30% chance to paralyze adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Electric',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Electric'
     }
   ],
   [
@@ -3278,16 +3279,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 140,
       name: 'Double-Edge',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 10,
-      plusMovePower: 144
+      type: 'Normal'
     }
   ],
   [
@@ -3392,15 +3393,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Raises the user's evasiveness by 1 stage.",
       name: 'Double Team',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "Raises the user's evasiveness by 1.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -3410,16 +3411,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '130',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Lowers the user's Special Attack by 2 stages.",
       maxMovePower: 140,
       name: 'Draco Meteor',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Dragon',
-      cooldown: 10,
-      plusMovePower: 156
+      type: 'Dragon'
     }
   ],
   [
@@ -3448,16 +3449,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 30% chance to paralyze the target.',
       maxMovePower: 110,
       name: 'Dragon Breath',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Dragon',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Dragon'
     }
   ],
   [
@@ -3484,16 +3485,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'Dragon Claw',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Dragon',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Dragon'
     }
   ],
   [
@@ -3576,16 +3577,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '85',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'Dragon Pulse',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Any',
-      type: 'Dragon',
-      cooldown: 8,
-      plusMovePower: 102
+      type: 'Dragon'
     }
   ],
   [
@@ -3614,16 +3615,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 20% chance to make the target flinch. Damage doubles and no accuracy check is done if the target has used Minimize while active.',
       maxMovePower: 130,
       name: 'Dragon Rush',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Dragon',
-      cooldown: 12,
-      plusMovePower: 120
+      type: 'Dragon'
     }
   ],
   [
@@ -3652,16 +3653,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '50',
       category: 'Special',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
       maxMovePower: 100,
       name: 'Draining Kiss',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'User recovers 75% of the damage dealt.',
       target: 'Normal',
-      type: 'Fairy',
-      cooldown: 7,
-      plusMovePower: 60
+      type: 'Fairy'
     }
   ],
   [
@@ -3728,16 +3729,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 130,
       name: 'Drill Run',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Ground',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Ground'
     }
   ],
   [
@@ -3819,16 +3820,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 100% chance to confuse the target.',
       maxMovePower: 90,
       name: 'Dynamic Punch',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: '100% chance to confuse the target.',
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 12,
-      plusMovePower: 120
+      type: 'Fighting'
     }
   ],
   [
@@ -3838,16 +3839,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Earth Power',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Ground',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Ground'
     }
   ],
   [
@@ -3858,16 +3859,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Damage doubles if the target is using Dig.',
       maxMovePower: 130,
       name: 'Earthquake',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. Double damage on Dig.',
       target: 'All Adjacent',
-      type: 'Ground',
-      cooldown: 10,
-      plusMovePower: 120
+      type: 'Ground'
     }
   ],
   [
@@ -3896,15 +3897,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Lowers the target's Special Attack by 2 stages.",
       name: 'Eerie Impulse',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "Lowers the target's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Electric'
     }
   ],
   [
@@ -4041,16 +4042,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '55',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 110,
       name: 'Electroweb',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Speed by 1.',
       target: 'Adjacent Foes',
-      type: 'Electric',
-      cooldown: 7,
-      plusMovePower: 66
+      type: 'Electric'
     }
   ],
   [
@@ -4079,16 +4080,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target.',
       maxMovePower: 90,
       name: 'Ember',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Fire'
     }
   ],
   [
@@ -4135,15 +4136,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "The user will survive attacks made by other Pokémon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       name: 'Endure',
+      plusMovePower: undefined,
       pp: 10,
       priority: 4,
       shortDesc: 'User survives attacks this turn with at least 1 HP.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -4153,16 +4154,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Energy Ball',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Grass'
     }
   ],
   [
@@ -4262,16 +4263,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '250',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokémon has the Damp Ability.',
       maxMovePower: 150,
       name: 'Explosion',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. The user faints.',
       target: 'All Adjacent',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 300
+      type: 'Normal'
     }
   ],
   [
@@ -4322,16 +4323,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'Extreme Speed',
+      plusMovePower: undefined,
       pp: 5,
       priority: 2,
       shortDesc: 'Nearly always goes first.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 3,
-      plusMovePower: 78
+      type: 'Normal'
     }
   ],
   [
@@ -4378,16 +4379,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Fairy Wind',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Fairy',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Fairy'
     }
   ],
   [
@@ -4416,15 +4417,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Lowers the target's Special Defense by 2 stages.",
       name: 'Fake Tears',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Lowers the target's Sp. Def by 2.",
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Dark'
     }
   ],
   [
@@ -4470,15 +4471,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Lowers the target's Attack by 2 stages.",
       name: 'Feather Dance',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "Lowers the target's Attack by 2.",
       target: 'Normal',
-      type: 'Flying',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Flying'
     }
   ],
   [
@@ -4634,16 +4635,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '110',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target.',
       maxMovePower: 140,
       name: 'Fire Blast',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 10,
-      plusMovePower: 132
+      type: 'Fire'
     }
   ],
   [
@@ -4653,16 +4654,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target and a 10% chance to make it flinch.',
       maxMovePower: 120,
       name: 'Fire Fang',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to burn. 10% chance to flinch.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 6,
-      plusMovePower: 78
+      type: 'Fire'
     }
   ],
   [
@@ -4710,16 +4711,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target.',
       maxMovePower: 130,
       name: 'Fire Punch',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 7,
-      plusMovePower: 90
+      type: 'Fire'
     }
   ],
   [
@@ -4729,16 +4730,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '35',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       maxMovePower: 90,
       name: 'Fire Spin',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 7,
-      plusMovePower: 24
+      type: 'Fire'
     }
   ],
   [
@@ -4862,16 +4863,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target.',
       maxMovePower: 130,
       name: 'Flamethrower',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to burn the target.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Fire'
     }
   ],
   [
@@ -4881,16 +4882,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target.',
       maxMovePower: 110,
       name: 'Flame Wheel',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: '10% chance to burn the target. Thaws user.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Fire'
     }
   ],
   [
@@ -4900,16 +4901,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 140,
       name: 'Flare Blitz',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Has 33% recoil. 10% chance to burn. Thaws user.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 8,
-      plusMovePower: 144
+      type: 'Fire'
     }
   ],
   [
@@ -4940,16 +4941,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Flash Cannon',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Steel'
     }
   ],
   [
@@ -5014,15 +5015,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '60',
       category: 'Physical',
+      cooldown: undefined,
       desc: 'If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.',
       name: 'Flip Turn',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'User switches out after damaging the target.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 12,
-      plusMovePower: 72
+      type: 'Water'
     }
   ],
   [
@@ -5105,18 +5106,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.',
       isFieldMove:
         'The Pokémon can fly the player to any previously visited town/landmark. Fly can be taught to Pokémon with HM02 in all generations.',
       maxMovePower: 130,
       name: 'Fly',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Flies up on first turn, then strikes the next turn.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 12,
-      plusMovePower: 108
+      type: 'Flying'
     }
   ],
   [
@@ -5126,17 +5127,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'This move combines Flying in its type effectiveness against the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.',
       maxMovePower: 90,
       name: 'Flying Press',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Combines Flying in its type effectiveness.',
       target: 'Any',
       type: 'Fighting',
-      zMovePower: 170,
-      cooldown: 9,
-      plusMovePower: 120
+      zMovePower: 170
     }
   ],
   [
@@ -5146,16 +5147,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 95,
       name: 'Focus Blast',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 12,
-      plusMovePower: 144
+      type: 'Fighting'
     }
   ],
   [
@@ -5165,15 +5166,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Raises the user's chance for a critical hit by 2 stages. Fails if the user already has the effect. Baton Pass can be used to transfer this effect to an ally.",
       name: 'Focus Energy',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: "Raises the user's critical hit ratio by 2.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -5258,15 +5259,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Causes the Grass type to be added to the target, effectively making it have two or three types. Fails if the target is already a Grass type. If Trick-or-Treat adds a type to the target, it replaces the type added by this move and vice versa.',
       name: "Forest's Curse",
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Adds Grass to the target's type(s).",
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -5295,16 +5296,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 10% chance to freeze the target. This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
       maxMovePower: 120,
       name: 'Freeze-Dry',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '10% chance to freeze. Super effective on Water.',
       target: 'Normal',
-      type: 'Ice',
-      cooldown: 9,
-      plusMovePower: 84
+      type: 'Ice'
     }
   ],
   [
@@ -5522,16 +5523,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokémon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position.",
       maxMovePower: 140,
       name: 'Future Sight',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Hits two turns after being used.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 10,
-      plusMovePower: 144
+      type: 'Psychic'
     }
   ],
   [
@@ -5620,15 +5621,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Raises the user's Special Attack, Special Defense, and Speed by 2 stages. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+      isNonstandard: IsNonStandard.Past,
       name: 'Geomancy',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Charges, then raises SpA, SpD, Spe by 2 turn 2.',
       target: 'Self',
-      type: 'Fairy',
-      cooldown: 30,
-      plusMovePower: 0
+      type: 'Fairy'
     }
   ],
   [
@@ -5638,16 +5640,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
       maxMovePower: 130,
       name: 'Giga Drain',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 9,
-      plusMovePower: 90
+      type: 'Grass'
     }
   ],
   [
@@ -5657,16 +5659,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '150',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'If this move is successful, the user must recharge on the following turn and cannot select a move.',
       maxMovePower: 150,
       name: 'Giga Impact',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'User cannot move next turn.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 20,
-      plusMovePower: 180
+      type: 'Normal'
     }
   ],
   [
@@ -5766,15 +5768,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Paralyzes the target.',
       name: 'Glare',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 8,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -6592,15 +6594,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Lowers the target's Attack by 1 stage.",
       name: 'Growl',
+      plusMovePower: undefined,
       pp: 40,
       priority: 0,
       shortDesc: 'Lowers the foe(s) Attack by 1.',
       target: 'Adjacent Foes',
-      type: 'Normal',
-      cooldown: 6,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -6610,15 +6612,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day or Desolate Land, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
       name: 'Growth',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -6723,16 +6725,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to poison the target.',
       maxMovePower: 95,
       name: 'Gunk Shot',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison',
-      cooldown: 10,
-      plusMovePower: 144
+      type: 'Poison'
     }
   ],
   [
@@ -6742,16 +6744,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.',
       maxMovePower: 90,
       name: 'Gust',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: 'Power doubles during Bounce, Fly, and Sky Drop.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Flying'
     }
   ],
   [
@@ -6836,15 +6838,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Raises the user's Defense by 1 stage.",
       name: 'Harden',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: "Raises the user's Defense by 1.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 6,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -6871,15 +6873,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Resets the stat stages of all active Pokémon to 0.',
       name: 'Haze',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'Eliminates all stat changes.',
       target: 'All',
-      type: 'Ice',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Ice'
     }
   ],
   [
@@ -6889,18 +6891,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to make the target flinch.',
       isFieldMove:
         "The Pokémon can shake a small tree which may cause a wild Pokémon to fall down. It can be taught to a Pokémon by using TM02 in Generation II. Though available as a level up move in Generation I and future generations, it only had status as a field move in Generation II and Generation IV's HeartGold and SoulSilver.",
       maxMovePower: 120,
       name: 'Headbutt',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 7,
-      plusMovePower: 84
+      type: 'Normal'
     }
   ],
   [
@@ -6947,16 +6949,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '150',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 150,
       name: 'Head Smash',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Has 1/2 recoil.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 10,
-      plusMovePower: 180
+      type: 'Rock'
     }
   ],
   [
@@ -6984,15 +6986,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'For 5 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokémon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.',
+      isNonstandard: IsNonStandard.Past,
       name: 'Heal Block',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'For 5 turns, the foe(s) is prevented from healing.',
       target: 'Adjacent Foes',
-      type: 'Psychic',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -7094,16 +7097,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "The power of this move depends on (user's weight / target's weight), rounded down. Power is equal to 120 if the result is 5 or more, 100 if 4, 80 if 3, 60 if 2, and 40 if 1 or less. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
       maxMovePower: 130,
       name: 'Heat Crash',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'More power the heavier the user than the target.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Fire'
     }
   ],
   [
@@ -7113,16 +7116,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '95',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to burn the target.',
       maxMovePower: 130,
       name: 'Heat Wave',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '10% chance to burn the foe(s).',
       target: 'Adjacent Foes',
-      type: 'Fire',
-      cooldown: 9,
-      plusMovePower: 114
+      type: 'Fire'
     }
   ],
   [
@@ -7132,16 +7135,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "The power of this move depends on (user's weight / target's weight), rounded down. Power is equal to 120 if the result is 5 or more, 100 if 4, 80 if 3, 60 if 2, and 40 if 1 or less. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
       maxMovePower: 130,
       name: 'Heavy Slam',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'More power the heavier the user than the target.',
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 10,
-      plusMovePower: 1
+      type: 'Steel'
     }
   ],
   [
@@ -7680,16 +7683,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
       maxMovePower: 130,
       name: 'Horn Leech',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 9,
-      plusMovePower: 90
+      type: 'Grass'
     }
   ],
   [
@@ -7717,16 +7720,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '110',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 30% chance to confuse the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokémon holding Utility Umbrella, this move's accuracy remains at 70%.",
       maxMovePower: 140,
       name: 'Hurricane',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "30% chance to confuse target. Can't miss in rain.",
       target: 'Any',
-      type: 'Flying',
-      cooldown: 10,
-      plusMovePower: 132
+      type: 'Flying'
     }
   ],
   [
@@ -7755,16 +7758,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '110',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 140,
       name: 'Hydro Pump',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 12,
-      plusMovePower: 132
+      type: 'Water'
     }
   ],
   [
@@ -7811,16 +7814,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '150',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'If this move is successful, the user must recharge on the following turn and cannot select a move.',
       maxMovePower: 150,
       name: 'Hyper Beam',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'User cannot move next turn.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 20,
-      plusMovePower: 180
+      type: 'Normal'
     }
   ],
   [
@@ -7868,16 +7871,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Lowers the user's Defense by 1 stage. This move cannot be used successfully unless the user's current form, while considering Transform, is Hoopa Unbound. If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokémon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokémon may attack the target's side normally.",
       maxMovePower: 130,
       name: 'Hyperspace Fury',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "Hoopa-U: Lowers user's Def by 1; breaks protect.",
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 10,
-      plusMovePower: 120
+      type: 'Dark'
     }
   ],
   [
@@ -7887,16 +7890,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokémon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokémon may attack the target's side normally.",
       maxMovePower: 130,
       name: 'Hyperspace Hole',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "Breaks the target's protection for this turn.",
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Psychic'
     }
   ],
   [
@@ -7906,16 +7909,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'Hyper Voice',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Normal',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Normal'
     }
   ],
   [
@@ -7925,15 +7928,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Causes the target to fall asleep.',
       name: 'Hypnosis',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Causes the target to fall asleep.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -7962,16 +7965,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to freeze the target.',
       maxMovePower: 130,
       name: 'Ice Beam',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '10% chance to freeze the target.',
       target: 'Normal',
-      type: 'Ice',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Ice'
     }
   ],
   [
@@ -8000,16 +8003,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to freeze the target and a 10% chance to make it flinch.',
       maxMovePower: 120,
       name: 'Ice Fang',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to freeze. 10% chance to flinch.',
       target: 'Normal',
-      type: 'Ice',
-      cooldown: 6,
-      plusMovePower: 78
+      type: 'Ice'
     }
   ],
   [
@@ -8038,16 +8041,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to freeze the target.',
       maxMovePower: 130,
       name: 'Ice Punch',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to freeze the target.',
       target: 'Normal',
-      type: 'Ice',
-      cooldown: 7,
-      plusMovePower: 90
+      type: 'Ice'
     }
   ],
   [
@@ -8057,16 +8060,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Ice Shard',
+      plusMovePower: undefined,
       pp: 30,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Ice',
-      cooldown: 3,
-      plusMovePower: 48
+      type: 'Ice'
     }
   ],
   [
@@ -8093,16 +8096,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '85',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 30% chance to make the target flinch.',
       maxMovePower: 130,
       name: 'Icicle Crash',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Ice',
-      cooldown: 8,
-      plusMovePower: 102
+      type: 'Ice'
     }
   ],
   [
@@ -8131,16 +8134,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '55',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 110,
       name: 'Icy Wind',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Speed by 1.',
       target: 'Adjacent Foes',
-      type: 'Ice',
-      cooldown: 7,
-      plusMovePower: 68
+      type: 'Ice'
     }
   ],
   [
@@ -8243,16 +8246,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '20',
       category: 'Special',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       maxMovePower: 90,
       name: 'Infestation',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 6,
-      plusMovePower: 24
+      type: 'Bug'
     }
   ],
   [
@@ -8317,15 +8320,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Raises the user's Defense by 2 stages.",
       name: 'Iron Defense',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "Raises the user's Defense by 2.",
       target: 'Self',
-      type: 'Steel',
-      cooldown: 9,
-      plusMovePower: 0
+      type: 'Steel'
     }
   ],
   [
@@ -8335,16 +8338,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to make the target flinch.',
       maxMovePower: 130,
       name: 'Iron Head',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '30% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Steel'
     }
   ],
   [
@@ -8354,16 +8357,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Has a 30% chance to lower the target's Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Iron Tail',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "30% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 10,
-      plusMovePower: 120
+      type: 'Steel'
     }
   ],
   [
@@ -8519,15 +8522,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon trying to make contact with the user have their Attack lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+      isNonstandard: IsNonStandard.Past,
       name: "King's Shield",
+      plusMovePower: undefined,
       pp: 10,
       priority: 4,
       shortDesc: 'Protects from damaging attacks. Contact: -1 Atk.',
       target: 'Self',
-      type: 'Steel',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Steel'
     }
   ],
   [
@@ -8537,16 +8541,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot cause Pokémon with the Sticky Hold Ability to lose their held item or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, a Silvally, a Zacian, or a Zamazenta to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, Memory, Rusted Sword, or Rusted Shield respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
       maxMovePower: 120,
       name: 'Knock Off',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '1.5x damage if foe holds an item. Removes item.',
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 10,
-      plusMovePower: 78
+      type: 'Dark'
     }
   ],
   [
@@ -8573,16 +8577,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: "Land's Wrath",
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Ground',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Ground'
     }
   ],
   [
@@ -8664,16 +8669,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to burn the target.',
       maxMovePower: 130,
       name: 'Lava Plume',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '30% chance to burn adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Fire',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Fire'
     }
   ],
   [
@@ -8683,16 +8688,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Leafage',
+      plusMovePower: undefined,
       pp: 40,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Grass'
     }
   ],
   [
@@ -8702,16 +8707,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 130,
       name: 'Leaf Blade',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Grass'
     }
   ],
   [
@@ -8721,16 +8726,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '130',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Lowers the user's Special Attack by 2 stages.",
       maxMovePower: 140,
       name: 'Leaf Storm',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 10,
-      plusMovePower: 156
+      type: 'Grass'
     }
   ],
   [
@@ -8760,16 +8765,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
       maxMovePower: 130,
       name: 'Leech Life',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 9,
-      plusMovePower: 96
+      type: 'Bug'
     }
   ],
   [
@@ -8779,15 +8784,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "The Pokémon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Mortal Spin or Rapid Spin successfully, the effect ends. Grass-type Pokémon are immune to this move on use, but not its effect.",
       name: 'Leech Seed',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "1/8 of target's HP is restored to user every turn.",
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -8797,15 +8802,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Lowers the target's Defense by 1 stage.",
       name: 'Leer',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'Lowers the foe(s) Defense by 1.',
       target: 'Adjacent Foes',
-      type: 'Normal',
-      cooldown: 6,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -8836,16 +8841,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '30',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'Has a 30% chance to paralyze the target.',
       maxMovePower: 90,
       name: 'Lick',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 6,
-      plusMovePower: 36
+      type: 'Ghost'
     }
   ],
   [
@@ -8872,16 +8877,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '140',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 1/2 the HP lost by the target, rounded half up, but not less than 1 HP.',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 140,
       name: 'Light of Ruin',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Has 1/2 recoil.',
       target: 'Normal',
-      type: 'Fairy',
-      cooldown: 15,
-      plusMovePower: 168
+      type: 'Fairy'
     }
   ],
   [
@@ -8891,15 +8897,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "For 5 turns, the user and its party members take 0.5x damage from special attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
       name: 'Light Screen',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'For 5 turns, special damage to allies is halved.',
       target: "Ally's Side",
-      type: 'Psychic',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -8930,16 +8936,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '85',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Has a 20% chance to lower the target's Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Liquidation',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "20% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Water',
-      cooldown: 8,
-      plusMovePower: 102
+      type: 'Water'
     }
   ],
   [
@@ -9095,16 +9101,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
       maxMovePower: 130,
       name: 'Lunge',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "100% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 9,
-      plusMovePower: 96
+      type: 'Bug'
     }
   ],
   [
@@ -9133,16 +9139,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 70,
       name: 'Mach Punch',
+      plusMovePower: undefined,
       pp: 30,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 3,
-      plusMovePower: 36
+      type: 'Fighting'
     }
   ],
   [
@@ -9152,16 +9158,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'This move does not check accuracy.',
       maxMovePower: 110,
       name: 'Magical Leaf',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'This move does not check accuracy.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Grass'
     }
   ],
   [
@@ -9884,16 +9890,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 140,
       name: 'Megahorn',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 10,
-      plusMovePower: 144
+      type: 'Bug'
     }
   ],
   [
@@ -9999,16 +10005,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '50',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Has a 10% chance to raise the user's Attack by 1 stage.",
       maxMovePower: 100,
       name: 'Metal Claw',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: "10% chance to raise the user's Attack by 1.",
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 6,
-      plusMovePower: 60
+      type: 'Steel'
     }
   ],
   [
@@ -10018,15 +10024,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Lowers the target's Special Defense by 2 stages.",
       name: 'Metal Sound',
+      plusMovePower: undefined,
       pp: 40,
       priority: 0,
       shortDesc: "Lowers the target's Sp. Def by 2.",
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Steel'
     }
   ],
   [
@@ -10091,15 +10097,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "A random move is selected for use, other than After You, Apple Acid, Armor Cannon, Assist, Astral Barrage, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Blazing Torque, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Chilling Water, Chilly Reception, Clangorous Soul, Collision Course, Combat Torque, Comeuppance, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Doodle, Double Iron Bash, Double Shock, Dragon Ascent, Dragon Energy, Drum Beating, Dynamax Cannon, Electro Drift, Endure, Eternabeam, False Surrender, Feint, Fiery Wrath, Fillet Away, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Freezing Glare, Glacial Lance, Grav Apple, Helping Hand, Hold Hands, Hyper Drill, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, Jet Punch, Jungle Healing, King's Shield, Life Dew, Light of Ruin, Magical Torque, Make It Rain, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Noxious Torque, Obstruct, Order Up, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Population Bomb, Pounce, Power Shift, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Fist, Rage Powder, Raging Bull, Raging Fury, Relic Song, Revival Blessing, Ruination, Salt Cure, Secret Sword, Shed Tail, Shell Trap, Silk Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Snowscape, Spectral Thief, Spicy Extract, Spiky Shield, Spirit Break, Spotlight, Springtide Storm, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Surging Strikes, Switcheroo, Techno Blast, Tera Starstorm, Thief, Thousand Arrows, Thousand Waves, Thunder Cage, Thunderous Kick, Tidy Up, Trailblaze, Transform, Trick, Twin Beam, V-create, Wicked Blow, Wicked Torque, or Wide Guard.",
       name: 'Metronome',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Picks a random move.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 4,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -10297,15 +10303,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "For 5 turns, the user and its party members are protected from having their stat stages lowered by other Pokémon. Fails if the effect is already active on the user's side.",
       name: 'Mist',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: "For 5 turns, protects user's party from stat drops.",
       target: "Ally's Side",
-      type: 'Ice',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Ice'
     }
   ],
   [
@@ -10369,16 +10375,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '95',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 30% chance to lower the target's Special Attack by 1 stage.",
       maxMovePower: 130,
       name: 'Moonblast',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "30% chance to lower the target's Sp. Atk by 1.",
       target: 'Normal',
-      type: 'Fairy',
-      cooldown: 8,
-      plusMovePower: 114
+      type: 'Fairy'
     }
   ],
   [
@@ -10407,15 +10413,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.',
       name: 'Moonlight',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Heals the user by a weather-dependent amount.',
       target: 'Self',
-      type: 'Fairy',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Fairy'
     }
   ],
   [
@@ -10425,15 +10431,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.',
       name: 'Morning Sun',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Heals the user by a weather-dependent amount.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -10515,16 +10521,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '55',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 110,
       name: 'Mud Shot',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "100% chance to lower the target's Speed by 1.",
       target: 'Normal',
-      type: 'Ground',
-      cooldown: 6,
-      plusMovePower: 66
+      type: 'Ground'
     }
   ],
   [
@@ -10592,16 +10598,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
       maxMovePower: 130,
       name: 'Mystical Fire',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "100% chance to lower the target's Sp. Atk by 1.",
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 8,
-      plusMovePower: 90
+      type: 'Fire'
     }
   ],
   [
@@ -10629,15 +10635,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Raises the user's Special Attack by 2 stages.",
       name: 'Nasty Plot',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises the user's Sp. Atk by 2.",
       target: 'Self',
-      type: 'Dark',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Dark'
     }
   ],
   [
@@ -10802,16 +10808,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 120,
       name: 'Night Slash',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 7,
-      plusMovePower: 84
+      type: 'Dark'
     }
   ],
   [
@@ -10838,15 +10844,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      cooldown: undefined,
       desc: "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. Fails if the user has already been prevented from switching by this effect.",
       name: 'No Retreat',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Raises all stats by 1 (not acc/eva). Traps user.',
       target: 'Self',
-      type: 'Fighting',
-      cooldown: 60,
-      plusMovePower: 0
+      type: 'Fighting'
     }
   ],
   [
@@ -10874,16 +10880,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '20',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'Has a 100% chance to paralyze the target.',
       maxMovePower: 90,
       name: 'Nuzzle',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '100% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 6,
-      plusMovePower: 24
+      type: 'Electric'
     }
   ],
   [
@@ -10893,16 +10899,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'The user recovers 3/4 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Oblivion Wing',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'User recovers 75% of the damage dealt.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 12,
-      plusMovePower: 96
+      type: 'Flying'
     }
   ],
   [
@@ -11063,16 +11070,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokémon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.',
       maxMovePower: 140,
       name: 'Outrage',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Lasts 2-3 turns. Confuses the user afterwards.',
       target: 'Random',
-      type: 'Dragon',
-      cooldown: 15,
-      plusMovePower: 144
+      type: 'Dragon'
     }
   ],
   [
@@ -11100,16 +11107,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '130',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Lowers the user's Special Attack by 2 stages.",
       maxMovePower: 140,
       name: 'Overheat',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: "Lowers the user's Sp. Atk by 2.",
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 10,
-      plusMovePower: 156
+      type: 'Fire'
     }
   ],
   [
@@ -11156,16 +11163,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
       maxMovePower: 120,
       name: 'Parabolic Charge',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'User recovers 50% of the damage dealt.',
       target: 'All Adjacent',
-      type: 'Electric',
-      cooldown: 9,
-      plusMovePower: 78
+      type: 'Electric'
     }
   ],
   [
@@ -11175,15 +11182,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Lowers the target's Attack and Special Attack by 1 stage. If this move is successful, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if the target's Attack and Special Attack stat stages were both unchanged, or if there are no unfainted party members.",
       name: 'Parting Shot',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Lowers target's Atk, Sp. Atk by 1. User switches.",
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Dark'
     }
   ],
   [
@@ -11231,16 +11238,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '35',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Peck',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 6,
-      plusMovePower: 42
+      type: 'Flying'
     }
   ],
   [
@@ -11250,15 +11257,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Each active Pokémon receives a perish count of 4 if it doesn't already have a perish count. At the end of each turn including the turn used, the perish count of all active Pokémon lowers by 1 and Pokémon faint if the number reaches 0. The perish count is removed from Pokémon that switch out. If a Pokémon uses Baton Pass while it has a perish count, the replacement will gain the perish count and continue to count down.",
       name: 'Perish Song',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'All active Pokémon will faint in 3 turns.',
       target: 'All',
-      type: 'Normal',
-      cooldown: 20,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -11306,16 +11313,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokémon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokémon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
       maxMovePower: 130,
       name: 'Phantom Force',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Disappears turn 1. Hits turn 2. Breaks protection.',
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 12,
-      plusMovePower: 108
+      type: 'Ghost'
     }
   ],
   [
@@ -11363,16 +11370,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '25',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
       maxMovePower: 130,
       name: 'Pin Missile',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 6,
-      plusMovePower: 18
+      type: 'Bug'
     }
   ],
   [
@@ -11422,16 +11429,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Attack by 1 stage.",
       maxMovePower: 130,
       name: 'Play Rough',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "10% chance to lower the target's Attack by 1.",
       target: 'Normal',
-      type: 'Fairy',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Fairy'
     }
   ],
   [
@@ -11497,16 +11504,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to poison the target.',
       maxMovePower: 90,
       name: 'Poison Jab',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Poison'
     }
   ],
   [
@@ -11516,15 +11523,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Poisons the target.',
       name: 'Poison Powder',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: 'Poisons the target.',
       target: 'Normal',
-      type: 'Poison',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Poison'
     }
   ],
   [
@@ -11534,16 +11541,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '15',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Has a 30% chance to poison the target.',
       maxMovePower: 70,
       name: 'Poison Sting',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison',
-      cooldown: 6,
-      plusMovePower: 36
+      type: 'Poison'
     }
   ],
   [
@@ -11700,16 +11707,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'Power Gem',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Rock'
     }
   ],
   [
@@ -11811,17 +11818,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 100% chance to raise the user's Attack by 1 stage.",
       isNonstandard: IsNonStandard.Past,
       maxMovePower: 70,
       name: 'Power-Up Punch',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "100% chance to raise the user's Attack by 1.",
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 10,
-      plusMovePower: 48
+      type: 'Fighting'
     }
   ],
   [
@@ -11831,16 +11838,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 140,
       name: 'Power Whip',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 12,
-      plusMovePower: 144
+      type: 'Grass'
     }
   ],
   [
@@ -11907,15 +11914,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "The user is protected from most attacks made by other Pokémon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       name: 'Protect',
+      plusMovePower: undefined,
       pp: 10,
       priority: 4,
       shortDesc: 'Prevents moves from affecting the user this turn.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -11925,16 +11932,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 10% chance to confuse the target.',
       maxMovePower: 120,
       name: 'Psybeam',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '10% chance to confuse the target.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 6,
-      plusMovePower: 78
+      type: 'Psychic'
     }
   ],
   [
@@ -11961,16 +11968,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Psychic',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "10% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Psychic'
     }
   ],
   [
@@ -12053,16 +12060,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 120,
       name: 'Psycho Cut',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 7,
-      plusMovePower: 84
+      type: 'Psychic'
     }
   ],
   [
@@ -12126,16 +12133,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Deals damage to the target based on its Defense instead of Special Defense.',
       maxMovePower: 130,
       name: 'Psyshock',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Damages target based on Defense, not Sp. Def.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Psychic'
     }
   ],
   [
@@ -12145,16 +12152,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Deals damage to the target based on its Defense instead of Special Defense.',
       maxMovePower: 130,
       name: 'Psystrike',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Damages target based on Defense, not Sp. Def.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 9,
-      plusMovePower: 120
+      type: 'Psychic'
     }
   ],
   [
@@ -12297,16 +12304,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Quick Attack',
+      plusMovePower: undefined,
       pp: 30,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 3,
-      plusMovePower: 36
+      type: 'Normal'
     }
   ],
   [
@@ -12479,16 +12486,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '55',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 110,
       name: 'Razor Leaf',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: 'High critical hit ratio. Hits adjacent foes.',
       target: 'Adjacent Foes',
-      type: 'Grass',
-      cooldown: 6,
-      plusMovePower: 66
+      type: 'Grass'
     }
   ],
   [
@@ -12536,15 +12543,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user restores 1/2 of its maximum HP, rounded half up.',
       name: 'Recover',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Heals the user by 50% of its max HP.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -12572,15 +12579,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "For 5 turns, the user and its party members take 0.5x damage from physical attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
       name: 'Reflect',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'For 5 turns, physical damage to allies is halved.',
       target: "Ally's Side",
-      type: 'Psychic',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -12703,16 +12710,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
       maxMovePower: 130,
       name: 'Revelation Dance',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "Type varies based on the user's primary type.",
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -12760,15 +12767,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       accuracy: 100,
       basePower: '0',
       category: 'Status',
+      cooldown: undefined,
       desc: 'A fainted party member is selected and revived with 1/2 its max HP, rounded down. Fails if there are no fainted party members.',
       name: 'Revival Blessing',
+      plusMovePower: undefined,
       pp: 1,
       priority: 0,
       shortDesc: 'Revives a fainted Pokémon to 50% HP.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -12796,15 +12803,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokémon in its party, or if the target used Ingrain previously or has the Suction Cups Ability.',
       name: 'Roar',
+      plusMovePower: undefined,
       pp: 20,
       priority: -6,
       shortDesc: 'Forces the target to switch to a random ally.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 6,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -12833,16 +12840,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '25',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
       maxMovePower: 130,
       name: 'Rock Blast',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 6,
-      plusMovePower: 18
+      type: 'Rock'
     }
   ],
   [
@@ -12891,16 +12898,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to make the target flinch.',
       maxMovePower: 130,
       name: 'Rock Slide',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '30% chance to make the foe(s) flinch.',
       target: 'Adjacent Foes',
-      type: 'Rock',
-      cooldown: 7,
-      plusMovePower: 90
+      type: 'Rock'
     }
   ],
   [
@@ -12910,18 +12917,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 50% chance to lower the target's Defense by 1 stage.",
       isFieldMove:
         'The Pokémon can smash small boulders. Rock smash can be taught to a Pokémon by using TM08 in Generation II, by using HM06 in Generations III and IV, TM94 in Generation V and Pokémon X and Y, and HM06 in Omega Ruby and Alpha Sapphire.',
       maxMovePower: 70,
       name: 'Rock Smash',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "50% chance to lower the target's Defense by 1.",
       target: 'Normal',
-      type: 'Fighting',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Fighting'
     }
   ],
   [
@@ -12931,16 +12938,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '50',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 100,
       name: 'Rock Throw',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 6,
-      plusMovePower: 60
+      type: 'Rock'
     }
   ],
   [
@@ -12950,16 +12957,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
       maxMovePower: 110,
       name: 'Rock Tomb',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "100% chance to lower the target's Speed by 1.",
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 10,
-      plusMovePower: 72
+      type: 'Rock'
     }
   ],
   [
@@ -13025,16 +13032,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '30',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn.',
       maxMovePower: 90,
       name: 'Rollout',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Power doubles with each hit. Repeats for 5 turns.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Rock'
     }
   ],
   [
@@ -13156,15 +13163,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "For 5 turns, the user and its party members cannot have non-volatile status conditions or confusion inflicted on them by other Pokémon. Pokémon on the user's side cannot become affected by Yawn but can fall asleep from its effect. It is removed from the user's side if the user or an ally is successfully hit by Defog. Fails if the effect is already active on the user's side.",
       name: 'Safeguard',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: "For 5 turns, protects user's party from status.",
       target: "Ally's Side",
-      type: 'Normal',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -13244,16 +13251,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '35',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       maxMovePower: 90,
       name: 'Sand Tomb',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Ground',
-      cooldown: 7,
-      plusMovePower: 24
+      type: 'Ground'
     }
   ],
   [
@@ -13392,15 +13399,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Lowers the target's Defense by 2 stages.",
       name: 'Screech',
+      plusMovePower: undefined,
       pp: 40,
       priority: 0,
       shortDesc: "Lowers the target's Defense by 2.",
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -13549,16 +13556,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '200',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokémon has the Damp Ability.',
       maxMovePower: 150,
       name: 'Self-Destruct',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. The user faints.',
       target: 'All Adjacent',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 240
+      type: 'Normal'
     }
   ],
   [
@@ -13568,16 +13575,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Has a 20% chance to lower the target's Special Defense by 1 stage.",
       maxMovePower: 130,
       name: 'Shadow Ball',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: "20% chance to lower the target's Sp. Def by 1.",
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Ghost'
     }
   ],
   [
@@ -13607,16 +13614,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 120,
       name: 'Shadow Claw',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 7,
-      plusMovePower: 84
+      type: 'Ghost'
     }
   ],
   [
@@ -13664,16 +13671,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Shadow Sneak',
+      plusMovePower: undefined,
       pp: 30,
       priority: 1,
       shortDesc: 'Usually goes first.',
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 3,
-      plusMovePower: 48
+      type: 'Ghost'
     }
   ],
   [
@@ -13722,16 +13729,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '1',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       isNonstandard: IsNonStandard.Past,
       isZ: 'psychiumz',
       name: 'Shattered Psyche',
+      plusMovePower: undefined,
       pp: 1,
       priority: 0,
       shortDesc: "Power is equal to the base move's Z-Power.",
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -13998,17 +14005,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '180',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       isNonstandard: IsNonStandard.Past,
       isZ: 'decidiumz',
       name: 'Sinister Arrow Raid',
+      plusMovePower: undefined,
       pp: 1,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Ghost'
     }
   ],
   [
@@ -14204,16 +14211,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 120,
       name: 'Slash',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 7,
-      plusMovePower: 84
+      type: 'Normal'
     }
   ],
   [
@@ -14223,15 +14230,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Causes the target to fall asleep.',
       name: 'Sleep Powder',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Causes the target to fall asleep.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -14278,16 +14285,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 30% chance to poison the target.',
       maxMovePower: 90,
       name: 'Sludge Bomb',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '30% chance to poison the target.',
       target: 'Normal',
-      type: 'Poison',
-      cooldown: 7,
-      plusMovePower: 108
+      type: 'Poison'
     }
   ],
   [
@@ -14297,16 +14304,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '95',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 10% chance to poison the target.',
       maxMovePower: 90,
       name: 'Sludge Wave',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: '10% chance to poison adjacent Pokémon.',
       target: 'All Adjacent',
-      type: 'Poison',
-      cooldown: 8,
-      plusMovePower: 114
+      type: 'Poison'
     }
   ],
   [
@@ -14392,15 +14399,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Lowers the target's accuracy by 1 stage.",
       name: 'Smokescreen',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Lowers the target's accuracy by 1.",
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -14429,16 +14436,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '55',
       category: 'Special',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Has a 100% chance to lower the target's Special Attack by 1 stage.",
       maxMovePower: 110,
       name: 'Snarl',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '100% chance to lower the foe(s) Sp. Atk by 1.',
       target: 'Adjacent Foes',
-      type: 'Dark',
-      cooldown: 9,
-      plusMovePower: 66
+      type: 'Dark'
     }
   ],
   [
@@ -14559,16 +14566,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'This attack charges on the first turn and executes on the second. Power is halved if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.',
       maxMovePower: 140,
       name: 'Solar Beam',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Charges turn 1. Hits turn 2. No charge in sunlight.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 12,
-      plusMovePower: 144
+      type: 'Grass'
     }
   ],
   [
@@ -14656,16 +14663,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 30% chance to paralyze the target.',
       maxMovePower: 120,
       name: 'Spark',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '30% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 6,
-      plusMovePower: 78
+      type: 'Electric'
     }
   ],
   [
@@ -14806,15 +14813,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in, unless it is a Flying-type Pokémon or has the Levitate Ability. Can be used up to three times before failing. Opponents lose 1/8 of their maximum HP with one layer, 1/6 of their maximum HP with two layers, and 1/4 of their maximum HP with three layers, all rounded down. Can be removed from the opposing side if any Pokémon uses Tidy Up, or if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.',
       name: 'Spikes',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Hurts grounded foes on switch-in. Max 3 layers.',
       target: "Foe's Side",
-      type: 'Ground',
-      cooldown: 7,
-      plusMovePower: 0
+      type: 'Ground'
     }
   ],
   [
@@ -14824,15 +14831,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "The user is protected from most attacks made by other Pokémon during this turn, and Pokémon making contact with the user lose 1/8 of their maximum HP, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
       name: 'Spiky Shield',
+      plusMovePower: undefined,
       pp: 10,
       priority: 4,
       shortDesc: 'Protects from moves. Contact: loses 1/8 max HP.',
       target: 'Self',
-      type: 'Grass',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -14933,15 +14940,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'Nothing happens...',
       name: 'Splash',
+      plusMovePower: undefined,
       pp: 40,
       priority: 0,
       shortDesc: 'No competitive use.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 4,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -15046,15 +15053,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Sets up a hazard on the opposing side of the field, damaging each opposing Pokémon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokémon uses Tidy Up, or if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.',
       name: 'Stealth Rock',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Hurts foes on switch-in. Factors Rock weakness.',
       target: "Foe's Side",
-      type: 'Rock',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Rock'
     }
   ],
   [
@@ -15064,16 +15071,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '110',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 30% chance to burn the target. The target thaws out if it is frozen.',
       maxMovePower: 140,
       name: 'Steam Eruption',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: '30% chance to burn the target. Thaws target.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 10,
-      plusMovePower: 132
+      type: 'Water'
     }
   ],
   [
@@ -15137,16 +15144,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Has a 10% chance to raise the user's Defense by 1 stage.",
       maxMovePower: 120,
       name: 'Steel Wing',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: "10% chance to raise the user's Defense by 1.",
       target: 'Normal',
-      type: 'Steel',
-      cooldown: 7,
-      plusMovePower: 84
+      type: 'Steel'
     }
   ],
   [
@@ -15157,15 +15164,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Sets up a hazard on the opposing side of the field, lowering the Speed by 1 stage of each opposing Pokémon that switches in, unless it is a Flying-type Pokémon or has the Levitate Ability. Fails if the effect is already active on the opposing side. Can be removed from the opposing side if any Pokémon uses Tidy Up, or if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.',
       name: 'Sticky Web',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Lowers Speed of grounded foes by 1 on switch-in.',
       target: "Foe's Side",
-      type: 'Bug',
-      cooldown: 7,
-      plusMovePower: 0
+      type: 'Bug'
     }
   ],
   [
@@ -15270,16 +15277,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '100',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a higher chance for a critical hit.',
       maxMovePower: 130,
       name: 'Stone Edge',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'High critical hit ratio.',
       target: 'Normal',
-      type: 'Rock',
-      cooldown: 10,
-      plusMovePower: 120
+      type: 'Rock'
     }
   ],
   [
@@ -15384,15 +15391,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "Lowers the target's Speed by 2 stages.",
       name: 'String Shot',
+      plusMovePower: undefined,
       pp: 40,
       priority: 0,
       shortDesc: 'Lowers the foe(s) Speed by 2.',
       target: 'Adjacent Foes',
-      type: 'Bug',
-      cooldown: 9,
-      plusMovePower: 0
+      type: 'Bug'
     }
   ],
   [
@@ -15459,15 +15466,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Paralyzes the target.',
       name: 'Stun Spore',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -15498,15 +15505,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'The user takes 1/4 of its maximum HP, rounded down, and puts it into a substitute to take its place in battle. The substitute is removed once enough damage is inflicted on it, if the user switches out or faints, or if any Pokémon uses Tidy Up. Baton Pass can be used to transfer the substitute to an ally, and the substitute will keep its remaining HP. Until the substitute is broken, it receives damage from all attacks made by other Pokémon and shields the user from status effects and stat stage changes caused by other Pokémon. Sound-based moves and Pokémon with the Infiltrator Ability ignore substitutes. The user still takes normal damage from weather and status effects while behind its substitute. If the substitute breaks during a multi-hit attack, the user will take damage from any remaining hits. If a substitute is created while the user is trapped by a binding move, the binding effect ends immediately. Fails if the user does not have enough HP remaining to create a substitute without fainting, or if it already has a substitute.',
       name: 'Substitute',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'User takes 1/4 its max HP to put in a substitute.',
       target: 'Self',
-      type: 'Normal',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -15609,16 +15616,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP.',
       maxMovePower: 100,
       name: 'Super Fang',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "Does damage equal to 1/2 target's current HP.",
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 9,
-      plusMovePower: 1
+      type: 'Normal'
     }
   ],
   [
@@ -15646,15 +15653,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Causes the target to become confused.',
       name: 'Supersonic',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Causes the target to become confused.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 6,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -15684,17 +15691,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Damage doubles if the target is using Dive.',
       isFieldMove: "The player can travel across water on the Pokémon's back. Surf can be taught to Pokémon with HMO3 in all generations.",
       maxMovePower: 130,
       name: 'Surf',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Hits adjacent Pokémon. Double damage on Dive.',
       target: 'All Adjacent',
-      type: 'Water',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Water'
     }
   ],
   [
@@ -15797,16 +15804,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'This move does not check accuracy.',
       maxMovePower: 110,
       name: 'Swift',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'This move does not check accuracy. Hits foes.',
       target: 'Adjacent Foes',
-      type: 'Normal',
-      cooldown: 5,
-      plusMovePower: 72
+      type: 'Normal'
     }
   ],
   [
@@ -15835,15 +15842,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: "Raises the user's Attack by 2 stages.",
       name: 'Swords Dance',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Raises the user's Attack by 2.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -15872,15 +15879,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.',
       name: 'Synthesis',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: 'Heals the user by a weather-dependent amount.',
       target: 'Self',
-      type: 'Grass',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Grass'
     }
   ],
   [
@@ -15925,16 +15932,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Tackle',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 4,
-      plusMovePower: 48
+      type: 'Normal'
     }
   ],
   [
@@ -15981,15 +15988,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Lowers the target's Defense by 1 stage.",
       name: 'Tail Whip',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: 'Lowers the foe(s) Defense by 1.',
       target: 'Adjacent Foes',
-      type: 'Normal',
-      cooldown: 7,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -16017,16 +16024,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 130,
       name: 'Take Down',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Has 1/4 recoil.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Normal'
     }
   ],
   [
@@ -16070,15 +16077,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Prevents the target from using non-damaging moves for its next three turns. Pokémon with the Oblivious Ability or protected by the Aroma Veil Ability are immune.',
       name: 'Taunt',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Target can't use status moves its next 3 turns.",
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Dark'
     }
   ],
   [
@@ -16200,17 +16207,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members.',
       isFieldMove:
         'The Pokémon can teleport the player to the front of the last visited Pokémon Center by using telekinesis. It can be taught to a Pokémon by using TM30 in Generation I, and it can be learned by many Psychic-type Pokémon.',
       name: 'Teleport',
+      plusMovePower: undefined,
       pp: 20,
       priority: -6,
       shortDesc: 'User switches out.',
       target: 'Self',
-      type: 'Psychic',
-      cooldown: 7,
-      plusMovePower: 0
+      type: 'Psychic'
     }
   ],
   [
@@ -16326,16 +16333,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'This move can hit airborne Pokémon, which includes Flying-type Pokémon, Pokémon with the Levitate Ability, Pokémon holding an Air Balloon, and Pokémon under the effect of Magnet Rise or Telekinesis. If the target is a Flying type and is not already grounded, this move deals neutral damage regardless of its other type(s). This move can hit a target using Bounce, Fly, or Sky Drop. If this move hits a target under the effect of Bounce, Fly, Magnet Rise, or Telekinesis, the effect ends. If the target is a Flying type that has not used Roost this turn or a Pokémon with the Levitate Ability, it loses its immunity to Ground-type attacks and the Arena Trap Ability as long as it remains active. During the effect, Magnet Rise fails for the target and Telekinesis fails against the target.',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Thousand Arrows',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Grounds adjacent foes. First hit neutral on Flying.',
       target: 'Adjacent Foes',
-      type: 'Ground',
-      cooldown: 10,
-      plusMovePower: 108
+      type: 'Ground'
     }
   ],
   [
@@ -16345,16 +16353,17 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.',
+      isNonstandard: IsNonStandard.Past,
       maxMovePower: 130,
       name: 'Thousand Waves',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Hits adjacent foes. Prevents them from switching.',
       target: 'Adjacent Foes',
-      type: 'Ground',
-      cooldown: 10,
-      plusMovePower: 108
+      type: 'Ground'
     }
   ],
   [
@@ -16402,16 +16411,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '110',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Has a 30% chance to paralyze the target. This move can hit a target using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If the weather is Desolate Land or Sunny Day, this move's accuracy is 50%. If this move is used against a Pokémon holding Utility Umbrella, this move's accuracy remains at 70%.",
       maxMovePower: 40,
       name: 'Thunder',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "30% chance to paralyze. Can't miss in rain.",
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 10,
-      plusMovePower: 132
+      type: 'Electric'
     }
   ],
   [
@@ -16422,16 +16431,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to paralyze the target.',
       maxMovePower: 130,
       name: 'Thunderbolt',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Electric'
     }
   ],
   [
@@ -16476,16 +16485,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '65',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to paralyze the target and a 10% chance to make it flinch.',
       maxMovePower: 120,
       name: 'Thunder Fang',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to paralyze. 10% chance to flinch.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 6,
-      plusMovePower: 78
+      type: 'Electric'
     }
   ],
   [
@@ -16512,16 +16521,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '75',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to paralyze the target.',
       maxMovePower: 130,
       name: 'Thunder Punch',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 7,
-      plusMovePower: 90
+      type: 'Electric'
     }
   ],
   [
@@ -16531,16 +16540,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to paralyze the target.',
       maxMovePower: 90,
       name: 'Thunder Shock',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: '10% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Electric'
     }
   ],
   [
@@ -16551,15 +16560,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Paralyzes the target. This move does not ignore type immunity.',
       name: 'Thunder Wave',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Paralyzes the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Electric'
     }
   ],
   [
@@ -16604,15 +16613,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: "The target's positive stat stages become negative and vice versa. Fails if all of the target's stat stages are 0.",
       name: 'Topsy-Turvy',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Inverts the target's stat stages.",
       target: 'Normal',
-      type: 'Dark',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Dark'
     }
   ],
   [
@@ -16658,15 +16667,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Badly poisons the target. If a Poison-type Pokémon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.',
       name: 'Toxic',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "Badly poisons the target. Poison types can't miss.",
       target: 'Normal',
-      type: 'Poison',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Poison'
     }
   ],
   [
@@ -16677,15 +16686,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Sets up a hazard on the opposing side of the field, poisoning each opposing Pokémon that switches in, unless it is a Flying-type Pokémon or has the Levitate Ability. Can be used up to two times before failing. Opposing Pokémon become poisoned with one layer and badly poisoned with two layers. Can be removed from the opposing side if any Pokémon uses Tidy Up, or if any opposing Pokémon uses Mortal Spin, Rapid Spin, or Defog successfully, is hit by Defog, or a grounded Poison-type Pokémon switches in. Safeguard prevents the opposing party from being poisoned on switch-in, but a substitute does not.',
       name: 'Toxic Spikes',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'Poisons grounded foes on switch-in. Max 2 layers.',
       target: "Foe's Side",
-      type: 'Poison',
-      cooldown: 7,
-      plusMovePower: 0
+      type: 'Poison'
     }
   ],
   [
@@ -16786,15 +16795,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "Causes the Ghost type to be added to the target, effectively making it have two or three types. Fails if the target is already a Ghost type. If Forest's Curse adds a type to the target, it replaces the type added by this move and vice versa.",
+      isNonstandard: IsNonStandard.Past,
       name: 'Trick-or-Treat',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: "Adds Ghost to the target's type(s).",
       target: 'Normal',
-      type: 'Ghost',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Ghost'
     }
   ],
   [
@@ -16988,16 +16998,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.',
       maxMovePower: 90,
       name: 'Twister',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '20% chance to make the foe(s) flinch.',
       target: 'Adjacent Foes',
-      type: 'Dragon',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Dragon'
     }
   ],
   [
@@ -17043,16 +17053,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Physical',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.',
       maxMovePower: 120,
       name: 'U-turn',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'User switches out after damaging the target.',
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 12,
-      plusMovePower: 84
+      type: 'Bug'
     }
   ],
   [
@@ -17176,16 +17186,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '45',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 100,
       name: 'Vine Whip',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 45,
-      plusMovePower: 54
+      type: 'Grass'
     }
   ],
   [
@@ -17235,16 +17245,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '70',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.',
       maxMovePower: 120,
       name: 'Volt Switch',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: 'User switches out after damaging the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 12,
-      plusMovePower: 84
+      type: 'Electric'
     }
   ],
   [
@@ -17254,16 +17264,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 10% chance to paralyze the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 140,
       name: 'Volt Tackle',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Has 33% recoil. 10% chance to paralyze target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 0,
-      plusMovePower: 0
+      type: 'Electric'
     }
   ],
   [
@@ -17292,18 +17302,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'Has a 20% chance to make the target flinch.',
       isFieldMove:
         "The player can climb up waterfalls on the Pokémon's back. Waterfall can be taught to Pokémon with HM07 in generations II, III and IV, and HM05 in generation 5 onwards. It was available in generation I as a level-up move, but did not have any out-of-battle effects.",
       maxMovePower: 130,
       name: 'Waterfall',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Water'
     }
   ],
   [
@@ -17313,16 +17323,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '40',
       category: 'Special',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 90,
       name: 'Water Gun',
+      plusMovePower: undefined,
       pp: 25,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 6,
-      plusMovePower: 48
+      type: 'Water'
     }
   ],
   [
@@ -17351,16 +17361,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Has a 20% chance to confuse the target.',
       maxMovePower: 110,
       name: 'Water Pulse',
+      plusMovePower: undefined,
       pp: 20,
       priority: 0,
       shortDesc: '20% chance to confuse the target.',
       target: 'Any',
-      type: 'Water',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Water'
     }
   ],
   [
@@ -17370,16 +17380,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '15',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is an Ash-Greninja with the Battle Bond Ability, this move has a power of 20 and always hits three times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
       maxMovePower: 90,
       name: 'Water Shuriken',
+      plusMovePower: undefined,
       pp: 20,
       priority: 1,
       shortDesc: 'Usually goes first. Hits 2-5 times in one turn.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 3,
-      plusMovePower: 18
+      type: 'Water'
     }
   ],
   [
@@ -17464,18 +17474,18 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '35',
       category: 'Special',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.',
       isFieldMove:
         "The Pokémon can dismiss small whirlpools in the water. Whirlpool is taught to Pokémon with HM06 in generation II and generation IV's HeartGold and SoulSilver as HM05",
       maxMovePower: 90,
       name: 'Whirlpool',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Traps and damages the target for 4-5 turns.',
       target: 'Normal',
-      type: 'Water',
-      cooldown: 7,
-      plusMovePower: 24
+      type: 'Water'
     }
   ],
   [
@@ -17485,15 +17495,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokémon in its party, or if the target used Ingrain previously or has the Suction Cups Ability.',
       name: 'Whirlwind',
+      plusMovePower: undefined,
       pp: 20,
       priority: -6,
       shortDesc: 'Forces the target to switch to a random ally.',
       target: 'Normal',
-      type: 'Normal',
-      cooldown: 7,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -17573,16 +17583,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '90',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 130,
       name: 'Wild Charge',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Has 1/4 recoil.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 8,
-      plusMovePower: 108
+      type: 'Electric'
     }
   ],
   [
@@ -17593,15 +17603,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Beautiful',
+      cooldown: undefined,
       desc: 'Burns the target.',
       name: 'Will-O-Wisp',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Burns the target.',
       target: 'Normal',
-      type: 'Fire',
-      cooldown: 10,
-      plusMovePower: 0
+      type: 'Fire'
     }
   ],
   [
@@ -17611,16 +17621,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '60',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 110,
       name: 'Wing Attack',
+      plusMovePower: undefined,
       pp: 35,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Any',
-      type: 'Flying',
-      cooldown: 6,
-      plusMovePower: 72
+      type: 'Flying'
     }
   ],
   [
@@ -17630,15 +17640,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Cute',
+      cooldown: undefined,
       desc: "At the end of the next turn, the Pokémon at the user's position has 1/2 of the user's maximum HP restored to it, rounded down. Fails if this move is already in effect for the user's position.",
       name: 'Wish',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: "Next turn, 50% of the user's max HP is restored.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 12,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -17684,16 +17694,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Physical',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: 'If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.',
       maxMovePower: 140,
       name: 'Wood Hammer',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'Has 33% recoil.',
       target: 'Normal',
-      type: 'Grass',
-      cooldown: 10,
-      plusMovePower: 144
+      type: 'Grass'
     }
   ],
   [
@@ -17703,15 +17713,15 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '0',
       category: 'Status',
       contestType: 'Tough',
+      cooldown: undefined,
       desc: "Raises the user's Attack and Special Attack by 1 stage.",
       name: 'Work Up',
+      plusMovePower: undefined,
       pp: 30,
       priority: 0,
       shortDesc: "Raises the user's Attack and Sp. Atk by 1.",
       target: 'Self',
-      type: 'Normal',
-      cooldown: 15,
-      plusMovePower: 0
+      type: 'Normal'
     }
   ],
   [
@@ -17777,16 +17787,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'No additional effect.',
       maxMovePower: 130,
       name: 'X-Scissor',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: 'No additional effect.',
       target: 'Normal',
-      type: 'Bug',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Bug'
     }
   ],
   [
@@ -17814,16 +17824,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '120',
       category: 'Special',
       contestType: 'Cool',
+      cooldown: undefined,
       desc: 'Has a 100% chance to paralyze the target.',
       maxMovePower: 140,
       name: 'Zap Cannon',
+      plusMovePower: undefined,
       pp: 5,
       priority: 0,
       shortDesc: '100% chance to paralyze the target.',
       target: 'Normal',
-      type: 'Electric',
-      cooldown: 15,
-      plusMovePower: 144
+      type: 'Electric'
     }
   ],
   [
@@ -17833,16 +17843,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '80',
       category: 'Physical',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'Has a 20% chance to make the target flinch.',
       maxMovePower: 130,
       name: 'Zen Headbutt',
+      plusMovePower: undefined,
       pp: 15,
       priority: 0,
       shortDesc: '20% chance to make the target flinch.',
       target: 'Normal',
-      type: 'Psychic',
-      cooldown: 8,
-      plusMovePower: 96
+      type: 'Psychic'
     }
   ],
   [
@@ -17909,16 +17919,16 @@ export const moves = new Collection<string, PokemonTypes.Move>([
       basePower: '200',
       category: 'Special',
       contestType: 'Clever',
+      cooldown: undefined,
       desc: 'The user attacks by unleashing a powerful light that defies all laws of nature, striking even Fairy types and ignoring any stat changes affecting its targets.',
       maxMovePower: 90,
       name: 'Nihil Light',
+      plusMovePower: undefined,
       pp: 10,
       priority: 0,
       shortDesc: 'Deals damage and ignores any stat changes affecting its targets, including Fairy types. ',
       target: 'Adjacent Foes',
-      type: 'Dragon',
-      cooldown: 15,
-      plusMovePower: 240
+      type: 'Dragon'
     }
   ]
 ]);

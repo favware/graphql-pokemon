@@ -3685,7 +3685,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'absol-mega-z',
       types: [TypesEnum.Dark, TypesEnum.Ghost],
       weightkg: 49,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/absol-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/absol.mp3',
       respelling: 'AB-sol',
       ipa: '/ˈæbsoʊl/'
     }

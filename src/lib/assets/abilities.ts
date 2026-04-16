@@ -431,8 +431,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'dragonize',
     {
+      desc: "This Pokémon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
       name: 'Dragonize',
-      shortDesc: "The Pokémon's Normal-type moves become Dragon-type moves and their power is boosted by 20%."
+      shortDesc: "This Pokémon's Normal-type moves become Dragon type and have 1.2x power."
     }
   ],
   [
@@ -1126,7 +1127,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'megasol',
     {
       name: 'Mega Sol',
-      shortDesc: 'Even when the sunlight has not turned harsh, the Pokémon can use its moves as if the weather were harsh sunlight.'
+      shortDesc: "This Pokémon's moves are used as if the effects of Sunny Day were active."
     }
   ],
   [
@@ -1392,9 +1393,8 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'piercingdrill',
     {
-      desc: "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves, dealing 1/4 of the damage that the move would otherwise deal. Everything aside from the target's protective effects is still triggered.",
       name: 'Piercing Drill',
-      shortDesc: 'When the Pokémon uses contact moves, it can hit even targets that are protecting themselves.'
+      shortDesc: "This Pokémon's contact moves ignore a target's protection and deal 1/4 the usual damage."
     }
   ],
   [
@@ -1940,7 +1940,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'spicyspray',
     {
       name: 'Spicy Spray',
-      shortDesc: 'When the Pokémon takes damage from a move, it burns the attacker.'
+      shortDesc: 'If this Pokémon is hit by an attack, the attacker becomes burned.'
     }
   ],
   [
@@ -2498,35 +2498,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       name: 'Zero to Hero',
       shortDesc: 'If this Pokémon is a Palafin in Zero Form, switching out has it change to Hero Form.'
-    }
-  ],
-  [
-    'dragonize',
-    {
-      desc: "This Pokémon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-      name: 'Dragonize',
-      shortDesc: "This Pokémon's Normal-type moves become Dragon type and have 1.2x power."
-    }
-  ],
-  [
-    'megasol',
-    {
-      name: 'Mega Sol',
-      shortDesc: "This Pokémon's moves are used as if the effects of Sunny Day were active."
-    }
-  ],
-  [
-    'piercingdrill',
-    {
-      name: 'Piercing Drill',
-      shortDesc: "This Pokémon's contact moves ignore a target's protection and deal 1/4 the usual damage."
-    }
-  ],
-  [
-    'spicyspray',
-    {
-      name: 'Spicy Spray',
-      shortDesc: 'If this Pokémon is hit by an attack, the attacker becomes burned.'
     }
   ]
 ]);

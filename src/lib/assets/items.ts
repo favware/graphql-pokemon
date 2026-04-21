@@ -30,7 +30,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Absolite',
-      shortDesc: 'If held by an Absol, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by an Absol, this item allows it to Mega Evolve into Mega Absol in battle.'
     }
   ],
   [
@@ -737,7 +737,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Charizardite X',
-      shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard X.'
     }
   ],
   [
@@ -747,7 +747,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Charizardite Y',
-      shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard Y.'
     }
   ],
   [
@@ -2191,7 +2191,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Garchompite',
-      shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp.'
     }
   ],
   [
@@ -3320,7 +3320,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Lucarionite',
-      shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario in battle.'
     }
   ],
   [
@@ -3783,7 +3783,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite X',
-      shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve into Mega Mewtwo X in battle.'
     }
   ],
   [
@@ -3793,7 +3793,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Mewtwonite Y',
-      shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve in battle.'
+      shortDesc: 'If held by a Mewtwo, this item allows it to Mega Evolve into Mega Mewtwo Y in battle.'
     }
   ],
   [
@@ -7918,7 +7918,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Raichu, this item allows it to Mega Evolve in battle.',
       gen: 9,
       name: 'Raichunite X',
-      shortDesc: 'If held by a Raichu, this item allows it to Mega Evolve in battle.',
+      shortDesc: 'If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu X in battle.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/raichunitex.png'
     }
   ],
@@ -7938,7 +7938,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Chimecho, this item allows it to Mega Evolve in battle.',
       gen: 9,
       name: 'Chimechite',
-      shortDesc: 'If held by a Chimechite, this item allows it to Mega Evolve in battle.',
+      shortDesc: 'If held by a Chimecho, this item allows it to Mega Evolve in battle.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/chimechite.png'
     }
   ],
@@ -7948,7 +7948,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
       gen: 9,
       name: 'Absolite Z',
-      shortDesc: 'If held by an Absol, this item allows it to Mega Evolve in battle.',
+      shortDesc: 'If held by an Absol, this item allows it to Mega Evolve into Mega Absol Z in battle.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/absolitez.png'
     }
   ],
@@ -7968,7 +7968,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
       gen: 9,
       name: 'Garchompite Z',
-      shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve in battle.',
+      shortDesc: 'If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp Z.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/garchompitez.png'
     }
   ],
@@ -7978,7 +7978,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
       gen: 9,
       name: 'Lucarionite Z',
-      shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve in battle.',
+      shortDesc: 'If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario Z in battle.',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/lucarionitez.png'
     }
   ],
@@ -8530,6 +8530,15 @@ export const items = new Collection<string, PokemonTypes.Item>([
       name: 'Dirty Scarf',
       shortDesc: 'A scarf that has grown quite shabby',
       specialSprite: 'https://www.serebii.net/itemdex/sprites/za/th/dirtyscarf.png'
+    }
+  ],
+  [
+    'raichunitey',
+    {
+      desc: 'If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle.',
+      gen: 9,
+      name: 'Raichunite Y',
+      shortDesc: 'If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle.'
     }
   ]
 ]);

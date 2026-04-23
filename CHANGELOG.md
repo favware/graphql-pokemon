@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.8.1](https://github.com/favware/graphql-pokemon/compare/v8.8.0...v8.8.1) - (2026-04-23)
+
+## 🐛 Bug Fixes
+
+- Remove `cooldown` and `plusMovePower` ([70957ca](https://github.com/favware/graphql-pokemon/commit/70957ca3853f267b28db04513eeaeb691abd7788))
+
 # [8.8.0](https://github.com/favware/graphql-pokemon/compare/v8.7.3...v8.8.0) - (2026-04-23)
 
 ## 🏠 Refactor

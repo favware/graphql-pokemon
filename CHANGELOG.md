@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.8.0](https://github.com/favware/graphql-pokemon/compare/v8.7.3...v8.8.0) - (2026-04-23)
+
+## 🏠 Refactor
+
+- **flavor-text-updater:** Remove unused parser function ([64a4399](https://github.com/favware/graphql-pokemon/commit/64a4399f3102e3a5ef30ff665a59031c46391398))
+- **docker-compose:** Remove version declaration ([b01b314](https://github.com/favware/graphql-pokemon/commit/b01b314f7bf8bcf2bc821ab0cf1a41359965b63f))
+- Update data [skip publish] ([007181f](https://github.com/favware/graphql-pokemon/commit/007181f342098d289805fb99966ffeda09ff023c))
+- Update data [skip publish] ([7ff3ee6](https://github.com/favware/graphql-pokemon/commit/7ff3ee6e34cfddd4fc57bbe00ed29eadc17785ae))
+- Update data [skip publish] ([68f39c0](https://github.com/favware/graphql-pokemon/commit/68f39c00f896f1e9b3a73f50915442703461d1e6))
+- Update data [skip publish] ([466d441](https://github.com/favware/graphql-pokemon/commit/466d441edf66e0994b7cc782f996fcf4879eea22))
+- Update data [skip publish] ([a52b3c6](https://github.com/favware/graphql-pokemon/commit/a52b3c6a48d5363e4f742cf5a4de6e9230fa17c1))
+- Update data [skip publish] ([048cb14](https://github.com/favware/graphql-pokemon/commit/048cb14d3f21c106359b75d3c351202236b8ca62))
+- Update data [skip publish] ([dd36b73](https://github.com/favware/graphql-pokemon/commit/dd36b7315ef8b06cbb549b36ed015bf6264d2bc4))
+- Update data [skip publish] ([3ace22b](https://github.com/favware/graphql-pokemon/commit/3ace22bf95d2f42e1c2d32c8eea067f9518281a8))
+- Update data [skip publish] ([29735bc](https://github.com/favware/graphql-pokemon/commit/29735bc9fbd1bc7b20a2d1186dc2abc49f437abd))
+- Update data [skip publish] ([46a8940](https://github.com/favware/graphql-pokemon/commit/46a894084c5dddfd9fed14d2ab551477181e60a7))
+- Update data [skip publish] ([8741e5d](https://github.com/favware/graphql-pokemon/commit/8741e5d328cbcb6b6500bfb61969e50957c00ff2))
+- Update data [skip publish] ([a2cb4b4](https://github.com/favware/graphql-pokemon/commit/a2cb4b470296d86249ea9d2078de863ce2867489))
+- Update data [skip publish] ([be4f5d3](https://github.com/favware/graphql-pokemon/commit/be4f5d33abacf5298b7f0ce7dad6e53d3ac5222f))
+- Update data [skip publish] ([e0cfb05](https://github.com/favware/graphql-pokemon/commit/e0cfb050ff7a76883702688cdb9171bd40248f2f))
+- Update data [skip publish] ([8590393](https://github.com/favware/graphql-pokemon/commit/85903937e9be3bbabde923768bba2820d57480e9))
+- Update data [skip publish] ([b186a30](https://github.com/favware/graphql-pokemon/commit/b186a301101f59c553b580335cda15af3d8f1c54))
+
+## 🐛 Bug Fixes
+
+- Add and update multiple sprites (#1119) ([6998b10](https://github.com/favware/graphql-pokemon/commit/6998b10126221ad5db05d930627cbaadaca278bb))
+- **deps:** Update all non-major dependencies (#1113) ([6f58d80](https://github.com/favware/graphql-pokemon/commit/6f58d80602751e77f5f4381358869c65afa6f967))
+
+## 🚀 Features
+
+- **flavor-text:** Add new flavor text for Pokopia version ([194d64b](https://github.com/favware/graphql-pokemon/commit/194d64bc9ca37c0e55b79e819ad94e951f82a277))
+- Add new Legends Z-A DLC (#1147) ([2e5b639](https://github.com/favware/graphql-pokemon/commit/2e5b639d05116a5778bad9fd5a094a4f6f23ea8e))
+- Add Legends Z-A Megas (#1120) ([01effc3](https://github.com/favware/graphql-pokemon/commit/01effc31695daf82e7db806a490d896b061d99e8))
+
 # [8.7.3](https://github.com/favware/graphql-pokemon/compare/v8.7.2...v8.7.3) - (2025-10-19)
 
 ## 🏠 Refactor

@@ -7,7 +7,7 @@ import { rootDir } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon } from '../utils/bulbapedia-utils.js';
 import { gameSorter } from './game-sorter.js';
 import { log, logFile } from './log-wrapper.js';
-import { getFailedPokemon, parsePokemonWithFlaresolverr, parsePokemonWithoutFlareSolverr } from './parsers/parse-pokemon.js';
+import { getFailedPokemon, parsePokemonWithoutFlareSolverr } from './parsers/parse-pokemon.js';
 
 const pathToFlavorTextFile = new URL('src/lib/assets/flavorText.json', rootDir);
 const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
@@ -35,7 +35,8 @@ console.log('process.env.CI is: ', process.env.CI);
 console.groupEnd();
 
 for (const pokemon of pokemonToProcess) {
-  process.env.CI ? await parsePokemonWithFlaresolverr(pokemon) : await parsePokemonWithoutFlareSolverr(pokemon);
+  // process.env.CI ? await parsePokemonWithFlaresolverr(pokemon) :
+  await parsePokemonWithoutFlareSolverr(pokemon);
 }
 
 await log({ msg: "Done fetching and storing data in memory, sorting version_id's", color: green, isBold: true, isIndent: false });

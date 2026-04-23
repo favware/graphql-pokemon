@@ -13,9 +13,9 @@ export async function getCryUrl(pokemon: PokemonTypes.DexEntry, recursivePokemon
 
 	let nameToUse = pokemon.baseSpecies ? pokemon.species : toLowerSingleWordCase(pokemon.species);
 
-	if (MegaSpriteRegex.test(nameToUse)) {
-		nameToUse = nameToUse.replace(MegaSpriteRegex, '$1$2');
-	}
+  if (nameToUse.match(MegaSpriteRegex)) {
+    nameToUse = nameToUse.replace(MegaSpriteRegex, '$1$2');
+  }
 
 	const urlToFetch = `${baseUrl}/${nameToUse}.mp3` as const;
 	await log({ msg: `${logPrefix}Fetching URL ${urlToFetch}`, color: yellow, isBold: false, isIndent: true });

@@ -6,7 +6,6 @@ import {
 	inspectData,
 	replaceEnumLikeValues,
 	replacePokeWithAccentedPoke,
-	rootDir,
 	sortObjectByKey,
 	writeDataToFileAndPrettify
 } from '../../../utils.js';
@@ -23,8 +22,14 @@ const { MovesText } = await importFileFromWeb<{ MovesText: { [moveName: string]:
 	temporaryFileName: 'moves-texts.js'
 });
 
+const { Moves: MovesChampions } = await importFileFromWeb<{ Moves: { [moveName: string]: MoveDataChampions } }>({
+	url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/refs/heads/master/data/mods/champions/moves.ts',
+	temporaryFileName: 'moves-champions.js'
+});
+
 const movesDataEntries = Object.entries<MoveData>(Moves);
 const movesTextEntries = Object.entries<MoveText>(MovesText);
+const movesChampionsEntries = Object.entries<MoveData>(MovesChampions);
 
 const newMap = new Map();
 
@@ -32,6 +37,7 @@ for (const [key, data] of currentMoves.entries()) {
 	Reflect.deleteProperty(data, 'key');
 
 	const moveFromData = movesDataEntries.find(([moveKey]) => moveKey === key)?.at(1) as MoveData | undefined;
+	const moveFromChampions = movesChampionsEntries.find(([moveChampionsKey]) => moveChampionsKey === key)?.at(1) as MoveDataChampions | undefined;
 	const moveFromText = movesTextEntries.find(([moveTextKey]) => moveTextKey === key)?.at(1) as MoveText | undefined;
 
 	if (moveFromData) {
@@ -59,6 +65,38 @@ for (const [key, data] of currentMoves.entries()) {
 			data.contestType = moveFromData.contestType;
 		}
 
+		if (moveFromChampions) {
+			if (!data.champions) {
+				data.champions = {};
+			}
+
+			if (moveFromChampions.accuracy === true) {
+				data.champions.accuracy = 100;
+			} else if (moveFromChampions.accuracy) {
+				data.champions.accuracy = moveFromChampions.accuracy;
+			}
+
+			if (moveFromChampions.desc) {
+				data.champions.desc = replacePokeWithAccentedPoke(moveFromChampions.desc);
+			}
+
+			if (moveFromChampions.shortDesc) {
+				data.champions.shortDesc = replacePokeWithAccentedPoke(moveFromChampions.shortDesc);
+			}
+
+			if (moveFromChampions.type) {
+				data.champions.type = moveFromChampions.type;
+			}
+
+			if (moveFromChampions.pp) {
+				data.champions.pp = moveFromChampions.pp;
+			}
+
+			if (Object.keys(data.champions).length === 0) {
+				Reflect.deleteProperty(data, 'champions');
+			}
+		}
+
 		data.category = moveFromData.category;
 		data.pp = moveFromData.pp;
 		data.priority = moveFromData.priority;
@@ -70,7 +108,7 @@ for (const [key, data] of currentMoves.entries()) {
 		if (key.startsWith('hiddenpower')) {
 			data.shortDesc = "Varies in type based on the user's IVs.";
 		} else {
-			data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc ?? '');
+			data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc);
 		}
 
 		if (moveFromText.desc) {
@@ -175,5 +213,10 @@ interface MoveData {
 interface MoveText {
 	name: string;
 	desc: string;
+	shortDesc?: string;
+}
+
+interface MoveDataChampions extends MoveData {
+	desc?: string;
 	shortDesc?: string;
 }

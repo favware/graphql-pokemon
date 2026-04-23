@@ -6,7 +6,7 @@ import { cast } from '@sapphire/utilities';
 export interface GraphQLSetConstructor {
 	new (): GraphQLSet<unknown>;
 
-	new <V>(entries?: readonly V[] | null): GraphQLSet<V>;
+	new <V>(entries?: ReadonlyArray<V> | null): GraphQLSet<V>;
 
 	new <V>(iterable: Iterable<V>): GraphQLSet<V>;
 
@@ -22,7 +22,7 @@ export interface GraphQLSetConstructor {
  * @property size - The amount of elements in this GraphQLSet.
  */
 export class GraphQLSet<V> extends Set<V> {
-	public constructor(entries?: readonly V[] | null) {
+	public constructor(entries?: ReadonlyArray<V> | null) {
 		super(entries);
 	}
 

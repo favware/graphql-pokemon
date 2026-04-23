@@ -74,7 +74,8 @@ describe('getFuzzyMove', () => {
 					isFieldMove: null,
 					isGMax: null,
 					isNonstandard: IsNonStandard.Past,
-					isZ: 'Decidium Z'
+					isZ: 'Decidium Z',
+					champions: null
 				},
 				{
 					accuracy: 100,
@@ -96,7 +97,8 @@ describe('getFuzzyMove', () => {
 					isFieldMove: null,
 					isGMax: null,
 					isNonstandard: null,
-					isZ: null
+					isZ: null,
+					champions: null
 				},
 				{
 					accuracy: 100,
@@ -114,11 +116,12 @@ describe('getFuzzyMove', () => {
 					bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Absorb_(move)',
 					category: 'Special',
 					contestType: 'Clever',
-					desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3× normal, rounded half down.',
+					desc: 'The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.',
 					isFieldMove: null,
 					isGMax: null,
 					isNonstandard: null,
-					isZ: null
+					isZ: null,
+					champions: null
 				}
 			]);
 		});
@@ -150,7 +153,8 @@ describe('getFuzzyMove', () => {
 					isFieldMove: null,
 					isGMax: null,
 					isNonstandard: IsNonStandard.Past,
-					isZ: 'Psychium Z'
+					isZ: 'Psychium Z',
+					champions: null
 				},
 				{
 					accuracy: 100,
@@ -172,7 +176,8 @@ describe('getFuzzyMove', () => {
 					isFieldMove: null,
 					isGMax: null,
 					isNonstandard: null,
-					isZ: null
+					isZ: null,
+					champions: null
 				},
 				{
 					accuracy: 100,
@@ -194,7 +199,8 @@ describe('getFuzzyMove', () => {
 					isFieldMove: null,
 					isGMax: null,
 					isNonstandard: null,
-					isZ: null
+					isZ: null,
+					champions: null
 				}
 			]);
 		});

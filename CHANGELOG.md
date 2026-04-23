@@ -1342,30 +1342,21 @@ All notable changes to this project will be documented in this file.
 
 ## 🚀 Features
 
-- Complete rewrite, version 7.0.0 (#700)
-  ([06695a6](https://github.com/favware/graphql-pokemon/commit/06695a6b9562061a74609cca9d73e8b21b75187a))
+- Complete rewrite, version 7.0.0 (#700) ([06695a6](https://github.com/favware/graphql-pokemon/commit/06695a6b9562061a74609cca9d73e8b21b75187a))
   - 💥 **feat:** `Pokemon` now have a new field `learnset` to get access to the moves learned by the Pokémon
-  - 💥 **feat:** `Ability` now has a new field `pokemonThatHaveThisAbility` which is a list of Pokémon that get this
-    ability
+  - 💥 **feat:** `Ability` now has a new field `pokemonThatHaveThisAbility` which is a list of Pokémon that get this ability
   - 💥 **BREAKING CHANGE:** This package now depends on GraphQL v16
   - 💥 **BREAKING CHANGE:** The schema has changed, please see below for further details
-  - 💥 **BREAKING CHANGE:** your requests MUST now include a `Content-Type` header with `application/json` as value to
-    [prevent CSFR](https://www.apollographql.com/docs/apollo-server/security/cors#:~:text=apollo%20server%203.7%20introduced%20a%20csrf%20prevention%20feature)
-  - 💥 **BREAKING CHANGE:** The property in `name` in `LearnsetMove` and `LearnsetLevelUpMove` is now removed in favour
-    of `move`
-  - 💥 **BREAKING CHANGE:** Every move in a `LearnsetMove` and `LearnsetLevelUpMove` is now a `Move` object instead of
-    just the name of the move
-  - 💥 **BREAKING CHANGE:** Each entry in `Pokemon.abilities` is now an `Ability` type instead of a `string` type. Use
-    `Pokemon.ability[x].name` to get the name.
-  - 💥 **BREAKING CHANGE:** Each entry in `Pokemon.types` is now a `PokemonType` object. Use `Pokemon.types[n].name` to
-    get the type name
+  - 💥 **BREAKING CHANGE:** your requests MUST now include a `Content-Type` header with `application/json` as value to [prevent CSFR](https://www.apollographql.com/docs/apollo-server/security/cors#:~:text=apollo%20server%203.7%20introduced%20a%20csrf%20prevention%20feature)
+  - 💥 **BREAKING CHANGE:** The property in `name` in `LearnsetMove` and `LearnsetLevelUpMove` is now removed in favour of `move`
+  - 💥 **BREAKING CHANGE:** Every move in a `LearnsetMove` and `LearnsetLevelUpMove` is now a `Move` object instead of just the name of the move
+  - 💥 **BREAKING CHANGE:** Each entry in `Pokemon.abilities` is now an `Ability` type instead of a `string` type. Use `Pokemon.ability[x].name` to get the name.
+  - 💥 **BREAKING CHANGE:** Each entry in `Pokemon.types` is now a `PokemonType` object. Use `Pokemon.types[n].name` to get the type name
   - 💥 **BREAKING CHANGE:** `getPokemonByName` query has been removed, use `getPokemon` instead.
   - 💥 **BREAKING CHANGE:** `getPokemonBySpecies` query has been removed, use `getPokemon` instead.
   - 💥 **BREAKING CHANGE:** `getAllPokemon` now returns a full `Pokemon` object instead of just a string of names
-  - 💥 **BREAKING CHANGE:** The `getTypeMatchup` query now takes 2 parameters, the required `primaryType` and optional
-    `secondaryType`. The replaces the array of `types` which left it ambiguous that the limit was 2 types.
-  - 💥 **BREAKING CHANGE:** The GraphQL type `Type` has been renamed to `TypeEffectiveness` to avoid confusion with the
-    noun `type`.
+  - 💥 **BREAKING CHANGE:** The `getTypeMatchup` query now takes 2 parameters, the required `primaryType` and optional `secondaryType`. The replaces the array of `types` which left it ambiguous that the limit was 2 types.
+  - 💥 **BREAKING CHANGE:** The GraphQL type `Type` has been renamed to `TypeEffectiveness` to avoid confusion with the noun `type`.
   - 💥 **BREAKING CHANGE:** When providing 2 identical types to `getTypeMatchup` the `secondaryType` will be nulled out.
 
 # [6.5.11](https://github.com/favware/graphql-pokemon/compare/v6.5.10...v6.5.11) - (2022-05-13)

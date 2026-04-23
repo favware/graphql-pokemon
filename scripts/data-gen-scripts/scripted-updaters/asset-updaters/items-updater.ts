@@ -6,7 +6,6 @@ import {
 	inspectData,
 	replaceEnumLikeValues,
 	replacePokeWithAccentedPoke,
-	rootDir,
 	sortObjectByKey,
 	writeDataToFileAndPrettify
 } from '../../../utils.js';

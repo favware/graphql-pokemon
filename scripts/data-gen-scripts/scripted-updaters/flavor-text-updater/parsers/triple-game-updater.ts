@@ -30,7 +30,7 @@ export async function tripleGameUpdater(
 	const game321Based = getTextContent(textSplitByNewLine?.find((e) => regexGame321.test(e)));
 	const game312Based = getTextContent(textSplitByNewLine?.find((e) => regexGame312.test(e)));
 
-	const gameData = game123Based ?? game132Based ?? game213Based ?? game231Based ?? game321Based ?? game312Based;
+	const gameData = game123Based || game132Based || game213Based || game231Based || game321Based || game312Based;
 
 	await log({
 		msg: `${logPrefix}Retrieved ${game1}-${game2}-${game3} Combined data, it is ${gameData ? 'defined' : 'not defined'}`,

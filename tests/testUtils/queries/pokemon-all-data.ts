@@ -21,7 +21,50 @@ export const getPokemonWithFullDataAndEvolutions = gql`
 			...PokemonLearnsetFragment
 		}
 	}
+	fragment GenerationalPokemonLearnsetFragment on GenerationalPokemonLearnset {
+		generation3 {
+			...PokemonLearnsetFragment
+		}
+		generation4 {
+			...PokemonLearnsetFragment
+		}
+		generation5 {
+			...PokemonLearnsetFragment
+		}
+		generation6 {
+			...PokemonLearnsetFragment
+		}
+		generation7 {
+			...PokemonLearnsetFragment
+		}
+		generation8 {
+			...PokemonLearnsetFragment
+		}
+	}
 
+	fragment PokemonLearnsetFragment on PokemonLearnset {
+		dreamworldMoves {
+			...LearnsetMoveFragment
+		}
+		eggMoves {
+			...LearnsetMoveFragment
+		}
+		eventMoves {
+			...LearnsetMoveFragment
+		}
+		tmMoves {
+			...LearnsetMoveFragment
+		}
+		tutorMoves {
+			...LearnsetMoveFragment
+		}
+		virtualTransferMoves {
+			...LearnsetMoveFragment
+		}
+		levelUpMoves {
+			...LearnsetLevelUpMoveFragment
+		}
+	}
 	fragment PokemonLearnsetFragment on PokemonLearnset {
 		dreamworldMoves {
 			...LearnsetMoveFragment
@@ -53,6 +96,13 @@ export const getPokemonWithFullDataAndEvolutions = gql`
 			...MoveFragment
 		}
 	}
+	fragment LearnsetLevelUpMoveFragment on LearnsetLevelUpMove {
+		generation
+		level
+		move {
+			...MoveFragment
+		}
+	}
 
 	fragment MoveFragment on Move {
 		key
@@ -76,8 +126,26 @@ export const getPokemonWithFullDataAndEvolutions = gql`
 		target
 		type
 		zMovePower
+		champions {
+			...ChampionsMoveFragment
+		}
 	}
 
+	fragment ChampionsMoveFragment on MoveChampions {
+		basePower
+		accuracy
+		desc
+		shortDesc
+		type
+		pp
+	}
+
+	fragment LearnsetMoveFragment on LearnsetMove {
+		generation
+		move {
+			...MoveFragment
+		}
+	}
 	fragment LearnsetMoveFragment on LearnsetMove {
 		generation
 		move {
@@ -99,7 +167,37 @@ export const getPokemonWithFullDataAndEvolutions = gql`
 			...AbilityFragment
 		}
 	}
+	fragment AbilitiesFragment on Abilities {
+		first {
+			...AbilityFragment
+		}
+		second {
+			...AbilityFragment
+		}
+		hidden {
+			...AbilityFragment
+		}
+		special {
+			...AbilityFragment
+		}
+	}
 
+	fragment AbilityFragment on Ability {
+		name
+		key
+		bulbapediaPage
+		desc
+		isFieldAbility
+		serebiiPage
+		shortDesc
+		smogonPage
+		pokemonThatHaveThisAbility {
+			...FullDataFragmentWithoutNested
+			learnsets {
+				...GenerationalPokemonLearnsetFragment
+			}
+		}
+	}
 	fragment AbilityFragment on Ability {
 		name
 		key

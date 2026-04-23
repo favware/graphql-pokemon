@@ -68,15 +68,14 @@ export function parseSpeciesForSprite({
 	if (parsedSpecialSprite) return parsedSpecialSprite;
 
 	if (!baseSpecies) {
-		// oxlint-disable-next-line no-param-reassign
 		pokemonName = toLowerSingleWordCase(pokemonName);
 	}
 
-	if (MegaSpriteRegex.test(pokemonName)) {
-		// oxlint-disable-next-line no-param-reassign
-		pokemonName = pokemonName.replaceAll(MegaSpriteRegex, '$1$2');
+	if (pokemonName.match(MegaSpriteRegex)) {
+		pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
 	}
 
+	// TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
 	// Parse differently for remaining generation 9 Pokémon
 	switch (pokemonNumber) {
 		case 990:
@@ -91,35 +90,35 @@ export function parseSpeciesForSprite({
 			return parsePngSprite(pokemonName, shiny, backSprite);
 		case 995:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_001:
+		case 1001:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_002:
+		case 1002:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_003:
+		case 1003:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_004:
+		case 1004:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_006:
+		case 1006:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_008:
+		case 1008:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_010:
+		case 1010:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_014:
+		case 1014:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_015:
+		case 1015:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_016:
+		case 1016:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_017:
+		case 1017:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_022:
+		case 1022:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_023:
+		case 1023:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_024:
+		case 1024:
 			return parsePngSprite(pokemonName, shiny, backSprite);
-		case 1_025:
+		case 1025:
 			return parsePngSprite(pokemonName, shiny, backSprite);
 		default:
 			return parseGifSprite(pokemonName, shiny, backSprite);
@@ -171,13 +170,11 @@ function isAprilFools() {
 
 function parseAsAfd(pokemonName: string, baseSpecies: string | undefined, shiny: boolean, backSprite: boolean) {
 	if (!baseSpecies) {
-		// oxlint-disable-next-line no-param-reassign
 		pokemonName = toLowerSingleWordCase(pokemonName);
 	}
 
-	if (MegaSpriteRegex.test(pokemonName)) {
-		// oxlint-disable-next-line no-param-reassign
-		pokemonName = pokemonName.replaceAll(MegaSpriteRegex, '$1$2');
+	if (pokemonName.match(MegaSpriteRegex)) {
+		pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
 	}
 
 	const pokemonGif = `${pokemonName}.png`;

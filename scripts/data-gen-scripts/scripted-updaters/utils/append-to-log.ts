@@ -5,7 +5,7 @@ import { bold } from 'colorette';
 export interface LogParamaters {
 	bypassCiCheck?: boolean;
 	msg: string;
-	color(msg: string): string;
+	color: (msg: string) => string;
 	isBold: boolean;
 	isIndent: boolean;
 	logFile: URL;
@@ -35,5 +35,5 @@ function logToConsole({ msg, color, isBold }: Omit<LogParamaters, 'isIndent' | '
 }
 
 async function appendToLog({ msg, logFile, isIndent = true }: Pick<LogParamaters, 'msg' | 'isIndent' | 'logFile'>) {
-	await appendFile(logFile, `\n${isIndent ? '\t' : ''}${msg}`, { encoding: 'utf8' });
+	await appendFile(logFile, `\n${isIndent ? '\t' : ''}${msg}`, { encoding: 'utf-8' });
 }

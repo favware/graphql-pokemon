@@ -28,7 +28,7 @@ import {
  * @copyright 2018 Benjie Gillam - Retrieved on `2024-04-05` from {@linkplain https://github.com/graphile/graphile-engine/blob/v4.14.0/packages/graphql-parse-resolve-info/src/index.ts}
  */
 export function parseResolveInfo(resolveInfo: GraphQLResolveInfo, options: ParseOptions = {}): ResolveTree | FieldsByTypeName | null | undefined {
-	const fieldNodes: readonly FieldNode[] =
+	const fieldNodes: ReadonlyArray<FieldNode> =
 		// @ts-expect-error Property 'fieldASTs' does not exist on type 'GraphQLResolveInfo'.
 		resolveInfo.fieldNodes || resolveInfo.fieldASTs;
 
@@ -78,7 +78,7 @@ function getFieldFromAST<TContext>(ast: ASTNode, parentType: GraphQLCompositeTyp
 }
 
 function fieldTreeFromAST<T extends SelectionNode>(
-	inASTs: readonly T[] | T,
+	inASTs: ReadonlyArray<T> | T,
 	resolveInfo: GraphQLResolveInfo,
 	parentType: GraphQLCompositeType,
 	initTree: FieldsByTypeName = {},
@@ -86,7 +86,7 @@ function fieldTreeFromAST<T extends SelectionNode>(
 ): FieldsByTypeName {
 	const { variableValues } = resolveInfo;
 	const fragments = resolveInfo.fragments || {};
-	const asts: readonly T[] = Array.isArray(inASTs) ? inASTs : [inASTs];
+	const asts: ReadonlyArray<T> = Array.isArray(inASTs) ? inASTs : [inASTs];
 	if (!initTree[parentType.name]) {
 		initTree[parentType.name] = {};
 	}
@@ -96,7 +96,7 @@ function fieldTreeFromAST<T extends SelectionNode>(
 			const name = val.name.value;
 			const isReserved = name.startsWith('_') && name[1] === '_' && name !== '__id';
 			if (!isReserved) {
-				const alias: string = val.alias?.value ?? name;
+				const alias: string = val.alias?.value ? val.alias.value : name;
 				const field = getFieldFromAST(val, parentType);
 				if (!field) {
 					return tree;

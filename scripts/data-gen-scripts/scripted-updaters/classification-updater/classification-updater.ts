@@ -66,10 +66,8 @@ await each(getBulbapediaReadyPokemon(), async (pokemon) => {
 		? new RegExp(`{{ArtP\\|${paddedNumber}\\|[^}}]+\\|form=-${pokemon.forme}}} \\|\\|(?<content>[^]*?)\\n`, 'i')
 		: new RegExp(`{{ArtP\\|${paddedNumber}\\|.+}} \\|\\|(?<content>[^]*?)\\n`);
 	const match = regex.exec(text);
-	// oxlint-disable-next-line prefer-named-capture-group
 	const regexForTranslateBlock = /\{\{tt\|([^|]+)\|[^}]+\}\}/;
 
-	// oxlint-disable-next-line typescript/prefer-nullish-coalescing
 	const useHigherIndexFromTable = pokemon.forme || pokemon.number === 720 || pokemon.number === 964 || pokemon.number === 999;
 
 	const classification = match?.groups?.content
@@ -96,12 +94,10 @@ await log({ msg: 'Done storing data in memory, formatting and writing to disk', 
 
 for (const pokemon of succeededPokemon) {
 	const pokemonFromData = pokemon.forme
-		? pokedex.find((pokemonData) => pokemonData.num === pokemon.num && pokemonData.forme?.toLowerCase() === pokemon.forme?.toLowerCase())
+		? pokedex.find((pokemonData) => pokemonData.num === pokemon.num && pokemonData.forme?.toLowerCase() === pokemon.forme.toLowerCase())
 		: pokedex.find((pokemonData) => pokemonData.num === pokemon.num);
 
-	if (pokemonFromData) {
-		pokemonFromData.classification = pokemon.classification;
-	}
+	pokemonFromData.classification = pokemon.classification;
 }
 
 const prependContent = [

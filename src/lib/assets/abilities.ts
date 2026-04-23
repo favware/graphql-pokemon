@@ -17,7 +17,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			name: 'Aerilate',
-			shortDesc: "This Pokémon's Normal-type moves become Flying type and have 1.2× power."
+			shortDesc: "This Pokémon's Normal-type moves become Flying type and have 1.2x power."
 		}
 	],
 	[
@@ -40,7 +40,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "The power of this Pokémon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
 			name: 'Analytic',
-			shortDesc: "This Pokémon's attacks have 1.3× power if it is the last to move in a turn."
+			shortDesc: "This Pokémon's attacks have 1.3x power if it is the last to move in a turn."
 		}
 	],
 	[
@@ -112,7 +112,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'While this Pokémon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33.',
 			name: 'Aura Break',
-			shortDesc: 'While this Pokémon is active, the Dark Aura and Fairy Aura power modifier is 0.75×.'
+			shortDesc: 'While this Pokémon is active, the Dark Aura and Fairy Aura power modifier is 0.75x.'
 		}
 	],
 	[
@@ -188,7 +188,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Fire-type attack.',
 			name: 'Blaze',
-			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5× with Fire attacks."
+			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5x with Fire attacks."
 		}
 	],
 	[
@@ -218,9 +218,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'chlorophyll',
 		{
-			desc: "If Sun is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
+			desc: "If Sunny Day is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
 			name: 'Chlorophyll',
-			shortDesc: "If Sun is active, this Pokémon's Speed is doubled."
+			shortDesc: "If Sunny Day is active, this Pokémon's Speed is doubled."
 		}
 	],
 	[
@@ -362,7 +362,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'While this Pokémon is active, the power of Dark-type moves used by active Pokémon is multiplied by 1.33.',
 			name: 'Dark Aura',
-			shortDesc: 'While this Pokémon is active, a Dark move used by any Pokémon has 1.33× power.'
+			shortDesc: 'While this Pokémon is active, a Dark move used by any Pokémon has 1.33x power.'
 		}
 	],
 	[
@@ -399,7 +399,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'deltastream',
 		{
-			desc: 'On switch-in, the weather becomes Strong Winds, which removes the weaknesses of the Flying type from Flying-type Pokémon. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Desolate Land or Primordial Sea Abilities.',
+			desc: 'On switch-in, the weather becomes Delta Stream, which removes the weaknesses of the Flying type from Flying-type Pokémon. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Desolate Land or Primordial Sea Abilities.',
 			name: 'Delta Stream',
 			shortDesc: 'On switch-in, strong winds begin until this Ability is not active in battle.'
 		}
@@ -407,7 +407,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'desolateland',
 		{
-			desc: 'On switch-in, the weather becomes Intense Sun, which includes all the effects of Sun and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.',
+			desc: 'On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.',
 			name: 'Desolate Land',
 			shortDesc: 'On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.'
 		}
@@ -433,7 +433,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			name: 'Dragonize',
-			shortDesc: "This Pokémon's Normal-type moves become Dragon type and have 1.2× power."
+			shortDesc: "This Pokémon's Normal-type moves become Dragon type and have 1.2x power."
 		}
 	],
 	[
@@ -447,22 +447,22 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		'drizzle',
 		{
 			name: 'Drizzle',
-			shortDesc: 'On switch-in, this Pokémon summons Rain.'
+			shortDesc: 'On switch-in, this Pokémon summons Rain Dance.'
 		}
 	],
 	[
 		'drought',
 		{
 			name: 'Drought',
-			shortDesc: 'On switch-in, this Pokémon summons Sun.'
+			shortDesc: 'On switch-in, this Pokémon summons Sunny Day.'
 		}
 	],
 	[
 		'dryskin',
 		{
-			desc: 'This Pokémon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokémon. At the end of each turn, this Pokémon restores 1/8 of its maximum HP, rounded down, if the weather is Rain, and loses 1/8 of its maximum HP, rounded down, if the weather is Sun. The weather effects are prevented if this Pokémon is holding a Utility Umbrella.',
+			desc: 'This Pokémon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokémon. At the end of each turn, this Pokémon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day. The weather effects are prevented if this Pokémon is holding a Utility Umbrella.',
 			name: 'Dry Skin',
-			shortDesc: 'This Pokémon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25× by Fire, 1/8 by Sun.'
+			shortDesc: 'This Pokémon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25x by Fire, 1/8 by Sun.'
 		}
 	],
 	[
@@ -478,6 +478,15 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			desc: 'This Pokémon is immune to Ground-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ground-type move.',
 			name: 'Earth Eater',
 			shortDesc: 'This Pokémon heals 1/4 of its max HP when hit by Ground moves; Ground immunity.'
+		}
+	],
+	[
+		'eelevate',
+		{
+			desc: 'The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses. When the Pokémon knocks out a target with an attack, its highest stat is boosted by 1 stage.',
+			name: 'Eelevate',
+			shortDesc:
+				'This Pokémon has its highest stat boosted by 1 stage when it knocks out a target; Ground, Spikes, Toxic Spikes, and Sticky Web immunity.'
 		}
 	],
 	[
@@ -544,7 +553,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'While this Pokémon is active, the power of Fairy-type moves used by active Pokémon is multiplied by 1.33.',
 			name: 'Fairy Aura',
-			shortDesc: 'While this Pokémon is active, a Fairy move used by any Pokémon has 1.33× power.'
+			shortDesc: 'While this Pokémon is active, a Fairy move used by any Pokémon has 1.33x power.'
 		}
 	],
 	[
@@ -552,6 +561,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			name: 'Filter',
 			shortDesc: 'This Pokémon receives 3/4 damage from supereffective attacks.'
+		}
+	],
+	[
+		'firemane',
+		{
+			name: 'Fire Mane',
+			shortDesc: 'Boosts the power of the Pokémon’s Fire-type moves by 50%'
 		}
 	],
 	[
@@ -568,7 +584,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'While this Pokémon is burned, the power of its special attacks is multiplied by 1.5.',
 			name: 'Flare Boost',
-			shortDesc: 'While this Pokémon is burned, its special attacks have 1.5× power.'
+			shortDesc: 'While this Pokémon is burned, its special attacks have 1.5x power.'
 		}
 	],
 	[
@@ -578,15 +594,15 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			isFieldAbility:
 				'In Pokémon Sword and Shield, If you have a Pokémon with Flash Fire at the front of your party (even if fainted), there is a 50% chance an encounter with a Fire-type Pokémon will be forced, if possible.',
 			name: 'Flash Fire',
-			shortDesc: "This Pokémon's Fire attacks do 1.5× damage if hit by one Fire move; Fire immunity."
+			shortDesc: "This Pokémon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity."
 		}
 	],
 	[
 		'flowergift',
 		{
-			desc: 'If this Pokémon is a Cherrim and Sun is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokémon is holding a Utility Umbrella.',
+			desc: 'If this Pokémon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokémon is holding a Utility Umbrella.',
 			name: 'Flower Gift',
-			shortDesc: "If user is Cherrim and Sun is active, it and allies' Attack and Sp. Def are 1.5×."
+			shortDesc: "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x."
 		}
 	],
 	[
@@ -602,13 +618,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'This Pokémon receives 1/2 damage from contact moves, but double damage from Fire moves.',
 			name: 'Fluffy',
-			shortDesc: 'This Pokémon takes 1/2 damage from contact moves, 2× damage from Fire moves.'
+			shortDesc: 'This Pokémon takes 1/2 damage from contact moves, 2x damage from Fire moves.'
 		}
 	],
 	[
 		'forecast',
 		{
-			desc: "If this Pokémon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokémon is holding a Utility Umbrella and the weather is Rain or Sun.",
+			desc: "If this Pokémon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokémon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
 			name: 'Forecast',
 			shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm."
 		}
@@ -662,7 +678,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's Normal-type moves become Electric-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			name: 'Galvanize',
-			shortDesc: "This Pokémon's Normal-type moves become Electric type and have 1.2× power."
+			shortDesc: "This Pokémon's Normal-type moves become Electric type and have 1.2x power."
 		}
 	],
 	[
@@ -692,7 +708,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's Attack is multiplied by 1.5, but it can only select the first move it executes. These effects are prevented while this Pokémon is Dynamaxed.",
 			name: 'Gorilla Tactics',
-			shortDesc: "This Pokémon's Attack is 1.5×, but it can only select the first move it executes."
+			shortDesc: "This Pokémon's Attack is 1.5x, but it can only select the first move it executes."
 		}
 	],
 	[
@@ -738,20 +754,20 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "If this Pokémon has a non-volatile status condition, its Attack is multiplied by 1.5. This Pokémon's physical attacks ignore the burn effect of halving damage.",
 			name: 'Guts',
-			shortDesc: 'If this Pokémon is statused, its Attack is 1.5×; ignores burn halving physical damage.'
+			shortDesc: 'If this Pokémon is statused, its Attack is 1.5x; ignores burn halving physical damage.'
 		}
 	],
 	[
 		'hadronengine',
 		{
 			name: 'Hadron Engine',
-			shortDesc: 'On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333×.'
+			shortDesc: 'On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333x.'
 		}
 	],
 	[
 		'harvest',
 		{
-			desc: 'If the last item this Pokémon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sun is active, this chance is 100%.',
+			desc: 'If the last item this Pokémon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.',
 			isFieldAbility:
 				'In Pokémon Sword and Shield, If you have a Pokémon with Harvest at the front of your party (even if fainted), there is a 50% chance an encounter with a Grass-type Pokémon will be forced, if possible.',
 			name: 'Harvest',
@@ -820,15 +836,15 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			isFieldAbility:
 				'If you have a Pokémon with Hustle at the front of your party (even if fainted), there is a 50% chance that a Pokémon will be forced to the upper bound of their encounter level range.',
 			name: 'Hustle',
-			shortDesc: "This Pokémon's Attack is 1.5× and accuracy of its physical attacks is 0.8×."
+			shortDesc: "This Pokémon's Attack is 1.5x and accuracy of its physical attacks is 0.8x."
 		}
 	],
 	[
 		'hydration',
 		{
-			desc: 'This Pokémon has its non-volatile status condition cured at the end of each turn if Rain is active. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
+			desc: 'This Pokémon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
 			name: 'Hydration',
-			shortDesc: 'This Pokémon has its status cured at the end of each turn if Rain is active.'
+			shortDesc: 'This Pokémon has its status cured at the end of each turn if Rain Dance is active.'
 		}
 	],
 	[
@@ -960,7 +976,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's punch-based attacks have their power multiplied by 1.2.",
 			name: 'Iron Fist',
-			shortDesc: "This Pokémon's punch-based attacks have 1.2× power. Sucker Punch is not boosted."
+			shortDesc: "This Pokémon's punch-based attacks have 1.2x power. Sucker Punch is not boosted."
 		}
 	],
 	[
@@ -991,9 +1007,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'leafguard',
 		{
-			desc: 'If Sun is active, this Pokémon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
+			desc: 'If Sunny Day is active, this Pokémon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
 			name: 'Leaf Guard',
-			shortDesc: 'If Sun is active, this Pokémon cannot be statused and Rest will fail for it.'
+			shortDesc: 'If Sunny Day is active, this Pokémon cannot be statused and Rest will fail for it.'
 		}
 	],
 	[
@@ -1122,14 +1138,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's pulse moves have their power multiplied by 1.5. Heal Pulse restores 3/4 of a target's maximum HP, rounded half down.",
 			name: 'Mega Launcher',
-			shortDesc: "This Pokémon's pulse moves have 1.5× power. Heal Pulse heals 3/4 target's max HP."
+			shortDesc: "This Pokémon's pulse moves have 1.5x power. Heal Pulse heals 3/4 target's max HP."
 		}
 	],
 	[
 		'megasol',
 		{
 			name: 'Mega Sol',
-			shortDesc: "This Pokémon's moves are used as if the effects of Sun were active."
+			shortDesc: "This Pokémon's moves are used as if the effects of Sunny Day were active."
 		}
 	],
 	[
@@ -1160,7 +1176,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "If an active ally has this Ability or the Plus Ability, this Pokémon's Special Attack is multiplied by 1.5.",
 			name: 'Minus',
-			shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokémon's Sp. Atk is 1.5×."
+			shortDesc: "If an active ally has this Ability or the Plus Ability, this Pokémon's Sp. Atk is 1.5x."
 		}
 	],
 	[
@@ -1260,7 +1276,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's attacks that are super effective against the target have their damage multiplied by 1.25.",
 			name: 'Neuroforce',
-			shortDesc: "This Pokémon's attacks that are super effective against the target do 1.25× damage."
+			shortDesc: "This Pokémon's attacks that are super effective against the target do 1.25x damage."
 		}
 	],
 	[
@@ -1293,7 +1309,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's moves are changed to be Normal type and have their power multiplied by 1.2. This effect comes before other effects that change a move's type.",
 			name: 'Normalize',
-			shortDesc: "This Pokémon's moves are changed to be Normal type and have 1.2× power."
+			shortDesc: "This Pokémon's moves are changed to be Normal type and have 1.2x power."
 		}
 	],
 	[
@@ -1315,7 +1331,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		'orichalcumpulse',
 		{
 			name: 'Orichalcum Pulse',
-			shortDesc: 'On switch-in, summons Sun. During Sun, Attack is 1.3333×.'
+			shortDesc: 'On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x.'
 		}
 	],
 	[
@@ -1331,7 +1347,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Grass-type attack.',
 			name: 'Overgrow',
-			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5× with Grass attacks."
+			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5x with Grass attacks."
 		}
 	],
 	[
@@ -1405,7 +1421,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			name: 'Pixilate',
-			shortDesc: "This Pokémon's Normal-type moves become Fairy type and have 1.2× power."
+			shortDesc: "This Pokémon's Normal-type moves become Fairy type and have 1.2x power."
 		}
 	],
 	[
@@ -1413,7 +1429,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "If an active ally has this Ability or the Minus Ability, this Pokémon's Special Attack is multiplied by 1.5.",
 			name: 'Plus',
-			shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokémon's Sp. Atk is 1.5×."
+			shortDesc: "If an active ally has this Ability or the Minus Ability, this Pokémon's Sp. Atk is 1.5x."
 		}
 	],
 	[
@@ -1493,7 +1509,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'primordialsea',
 		{
-			desc: 'On switch-in, the weather becomes Heavy Rain, which includes all the effects of Rain and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Desolate Land Abilities.',
+			desc: 'On switch-in, the weather becomes Primordial Sea, which includes all the effects of Rain Dance and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Desolate Land Abilities.',
 			name: 'Primordial Sea',
 			shortDesc: 'On switch-in, heavy rain begins until this Ability is not active in battle.'
 		}
@@ -1524,9 +1540,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'protosynthesis',
 		{
-			desc: "If Sun is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sun, a held Booster Energy will not activate and the effect ends when Sun is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
+			desc: "If Sunny Day is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sunny Day, a held Booster Energy will not activate and the effect ends when Sunny Day is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
 			name: 'Protosynthesis',
-			shortDesc: 'Sun active or Booster Energy used: highest stat is 1.3×, or 1.5× if Speed.'
+			shortDesc: 'Sunny Day active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.'
 		}
 	],
 	[
@@ -1541,7 +1557,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's sound-based moves have their power multiplied by 1.3. This Pokémon takes halved damage from sound-based moves.",
 			name: 'Punk Rock',
-			shortDesc: 'This Pokémon receives 1/2 damage from sound moves. Its own have 1.3× power.'
+			shortDesc: 'This Pokémon receives 1/2 damage from sound moves. Its own have 1.3x power.'
 		}
 	],
 	[
@@ -1564,7 +1580,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "If Electric Terrain is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Electric Terrain, a held Booster Energy will not activate and the effect ends when Electric Terrain is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
 			name: 'Quark Drive',
-			shortDesc: 'Electric Terrain active or Booster Energy used: highest stat is 1.3×, or 1.5× if Speed.'
+			shortDesc: 'Electric Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.'
 		}
 	],
 	[
@@ -1589,15 +1605,15 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			isFieldAbility:
 				'If a Pokémon with Quick Feet is in the first place in the party (even if fainted), the chance of encountering a wild Pokémon is decreased by 50%.',
 			name: 'Quick Feet',
-			shortDesc: 'If this Pokémon is statused, its Speed is 1.5×; ignores Speed drop from paralysis.'
+			shortDesc: 'If this Pokémon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.'
 		}
 	],
 	[
 		'raindish',
 		{
-			desc: 'If Rain is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
+			desc: 'If Rain Dance is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
 			name: 'Rain Dish',
-			shortDesc: 'If Rain is active, this Pokémon heals 1/16 of its max HP each turn.'
+			shortDesc: 'If Rain Dance is active, this Pokémon heals 1/16 of its max HP each turn.'
 		}
 	],
 	[
@@ -1630,7 +1646,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle.",
 			name: 'Reckless',
-			shortDesc: "This Pokémon's attacks with recoil or crash damage have 1.2× power; not Struggle."
+			shortDesc: "This Pokémon's attacks with recoil or crash damage have 1.2x power; not Struggle."
 		}
 	],
 	[
@@ -1638,7 +1654,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's Normal-type moves become Ice-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			name: 'Refrigerate',
-			shortDesc: "This Pokémon's Normal-type moves become Ice type and have 1.2× power."
+			shortDesc: "This Pokémon's Normal-type moves become Ice type and have 1.2x power."
 		}
 	],
 	[
@@ -1661,7 +1677,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokémon or the target is genderless.",
 			name: 'Rivalry',
-			shortDesc: "This Pokémon's attacks do 1.25× on same gender targets; 0.75× on opposite gender."
+			shortDesc: "This Pokémon's attacks do 1.25x on same gender targets; 0.75x on opposite gender."
 		}
 	],
 	[
@@ -1700,7 +1716,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "If Sandstorm is active, this Pokémon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokémon takes no damage from Sandstorm.",
 			name: 'Sand Force',
-			shortDesc: "This Pokémon's Ground/Rock/Steel attacks do 1.3× in Sandstorm; immunity to it."
+			shortDesc: "This Pokémon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it."
 		}
 	],
 	[
@@ -1733,7 +1749,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			isFieldAbility:
 				'If a Pokémon with Sand Veil is in the first place in the party (even if fainted) in an area with a sandstorm, the chance of encountering a wild Pokémon is decreased by 50%.',
 			name: 'Sand Veil',
-			shortDesc: "If Sandstorm is active, this Pokémon's evasiveness is 1.25×; immunity to Sandstorm."
+			shortDesc: "If Sandstorm is active, this Pokémon's evasiveness is 1.25x; immunity to Sandstorm."
 		}
 	],
 	[
@@ -1821,7 +1837,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed. If a secondary effect was removed, it also removes the user's Life Orb recoil and Shell Bell recovery, and prevents the target's Anger Shell, Berserk, Color Change, Emergency Exit, Pickpocket, Wimp Out, Red Card, Eject Button, Kee Berry, and Maranga Berry from activating.",
 			name: 'Sheer Force',
-			shortDesc: "This Pokémon's attacks with secondary effects have 1.3× power; nullifies the effects."
+			shortDesc: "This Pokémon's attacks with secondary effects have 1.3x power; nullifies the effects."
 		}
 	],
 	[
@@ -1891,7 +1907,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			isFieldAbility:
 				'If a Pokémon with Snow Cloak is in the first place in the party (even if fainted) in an area with hail, the chance of encountering a wild Pokémon is decreased by 50%.',
 			name: 'Snow Cloak',
-			shortDesc: "If Snow is active, this Pokémon's evasiveness is 1.25×."
+			shortDesc: "If Snow is active, this Pokémon's evasiveness is 1.25x."
 		}
 	],
 	[
@@ -1904,9 +1920,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'solarpower',
 		{
-			desc: "If Sun is active, this Pokémon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokémon is holding a Utility Umbrella.",
+			desc: "If Sunny Day is active, this Pokémon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokémon is holding a Utility Umbrella.",
 			name: 'Solar Power',
-			shortDesc: "If Sun is active, this Pokémon's Sp. Atk is 1.5×; loses 1/8 max HP per turn."
+			shortDesc: "If Sunny Day is active, this Pokémon's Sp. Atk is 1.5x; loses 1/8 max HP per turn."
 		}
 	],
 	[
@@ -2058,7 +2074,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's bite-based attacks have their power multiplied by 1.5.",
 			name: 'Strong Jaw',
-			shortDesc: "This Pokémon's bite-based attacks have 1.5× power. Bug Bite is not boosted."
+			shortDesc: "This Pokémon's bite-based attacks have 1.5x power. Bug Bite is not boosted."
 		}
 	],
 	[
@@ -2097,7 +2113,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'supremeoverlord',
 		{
-			desc: "This Pokémon's moves have their power multiplied by 1+(X × 0.1), where X is the total number of times any Pokémon has fainted on the user's side when this Ability became active, and X cannot be greater than 5.",
+			desc: "This Pokémon's moves have their power multiplied by 1+(X*0.1), where X is the total number of times any Pokémon has fainted on the user's side when this Ability became active, and X cannot be greater than 5.",
 			name: 'Supreme Overlord',
 			shortDesc: "This Pokémon's moves have 10% more power for each fainted ally, up to 5 allies."
 		}
@@ -2115,7 +2131,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 			desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Bug-type attack.',
 			isFieldAbility: 'In Pokémon Emerald, this Ability also increases the frequency cries of wild Pokémon that are heard in the overworld.',
 			name: 'Swarm',
-			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5× with Bug attacks."
+			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5x with Bug attacks."
 		}
 	],
 	[
@@ -2129,9 +2145,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'swiftswim',
 		{
-			desc: "If Rain is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
+			desc: "If Rain Dance is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
 			name: 'Swift Swim',
-			shortDesc: "If Rain is active, this Pokémon's Speed is doubled."
+			shortDesc: "If Rain Dance is active, this Pokémon's Speed is doubled."
 		}
 	],
 	[
@@ -2185,7 +2201,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's moves of 60 power or less have their power multiplied by 1.5, including Struggle. This effect comes after a move's effect changes its own power.",
 			name: 'Technician',
-			shortDesc: "This Pokémon's moves of 60 power or less have 1.5× power, including Struggle."
+			shortDesc: "This Pokémon's moves of 60 power or less have 1.5x power, including Struggle."
 		}
 	],
 	[
@@ -2207,7 +2223,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'If this Pokémon is a Terapagos at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokémon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.',
 			name: 'Tera Shell',
-			shortDesc: 'Terapagos: If full HP, attacks taken have 0.5× effectiveness unless naturally immune.'
+			shortDesc: 'Terapagos: If full HP, attacks taken have 0.5x effectiveness unless naturally immune.'
 		}
 	],
 	[
@@ -2253,7 +2269,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'When this Pokémon has 1/3 or less of its maximum HP, rounded down, its offensive stat is multiplied by 1.5 while using a Water-type attack.',
 			name: 'Torrent',
-			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5× with Water attacks."
+			shortDesc: "At 1/3 or less of its max HP, this Pokémon's offensive stat is 1.5x with Water attacks."
 		}
 	],
 	[
@@ -2268,7 +2284,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'While this Pokémon is poisoned, the power of its physical attacks is multiplied by 1.5.',
 			name: 'Toxic Boost',
-			shortDesc: 'While this Pokémon is poisoned, its physical attacks have 1.5× power.'
+			shortDesc: 'While this Pokémon is poisoned, its physical attacks have 1.5x power.'
 		}
 	],
 	[
@@ -2408,7 +2424,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: "This Pokémon's offensive stat is doubled while using a Water-type attack. If a Pokémon uses a Fire-type attack against this Pokémon, that Pokémon's offensive stat is halved when calculating the damage to this Pokémon. This Pokémon cannot be burned. Gaining this Ability while burned cures it.",
 			name: 'Water Bubble',
-			shortDesc: "This Pokémon's Water power is 2×; it can't be burned; Fire power against it is halved."
+			shortDesc: "This Pokémon's Water power is 2x; it can't be burned; Fire power against it is halved."
 		}
 	],
 	[
@@ -2502,28 +2518,6 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			name: 'Zero to Hero',
 			shortDesc: 'If this Pokémon is a Palafin in Zero Form, switching out has it change to Hero Form.'
-		}
-	],
-	[
-		'eelevate',
-		{
-			desc: "This Pokémon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokémon as if it did not have this Ability. This Pokémon's highest stat is raised by 1 stage if it attacks and knocks out another Pokémon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
-			name: 'Eelevate',
-			shortDesc: 'This Pokémon is immune to Ground; +1 to highest stat if it KOes another Pokémon.'
-		}
-	],
-	[
-		'firemane',
-		{
-			name: 'Fire Mane',
-			shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
-		}
-	],
-	[
-		'auraguard',
-		{
-			name: 'Aura Guard',
-			shortDesc: 'This Pokémon receives 1/2 damage from contact moves.'
 		}
 	]
 ]);

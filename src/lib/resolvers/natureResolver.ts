@@ -6,18 +6,18 @@ import { preParseInput } from '#utils/utils';
 import { validateGetNatureArgs, type GetNatureArgs } from '#validations/getNatureArgs';
 
 export function getNature(args: GetNatureArgs, requestedFields: GraphQLSet<keyof Nature>): Nature {
-	const validatedArgs = validateGetNatureArgs(args);
+	args = validateGetNatureArgs(args);
 
-	const natureFromDataset = natures.get(preParseInput(validatedArgs.nature));
+	const natureFromDataset = natures.get(preParseInput(args.nature));
 
 	if (!natureFromDataset) {
-		throw new Error(`No nature found for ${validatedArgs.nature}`);
+		throw new Error(`No nature found for ${args.nature}`);
 	}
 
 	const graphqlObject = mapNatureDataToNatureGraphQL({ data: natureFromDataset, requestedFields });
 
 	if (!graphqlObject) {
-		throw new Error(`Failed to get data for nature: ${validatedArgs.nature}`);
+		throw new Error(`Failed to get data for nature: ${args.nature}`);
 	}
 
 	return graphqlObject;

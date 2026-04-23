@@ -13,18 +13,18 @@ const fuzzySearch = new FuzzySearch(items, ['name', 'aliases']);
  * Gets the details on a Pokémon item, using the item name
  */
 export function getItem(args: GetItemArgs, requestedFields: GraphQLSet<keyof Item>): Item {
-	const validatedArgs = validateGetItemArgs(args);
+	args = validateGetItemArgs(args);
 
-	const itemFromDataset = items.get(validatedArgs.item);
+	const itemFromDataset = items.get(args.item);
 
 	if (!itemFromDataset) {
-		throw new Error(`No item found for ${validatedArgs.item}`);
+		throw new Error(`No item found for ${args.item}`);
 	}
 
 	const graphqlObject = mapItemDataToItemGraphQL({ data: itemFromDataset, requestedFields });
 
 	if (!graphqlObject) {
-		throw new Error(`Failed to get data for item: ${validatedArgs.item}`);
+		throw new Error(`Failed to get data for item: ${args.item}`);
 	}
 
 	return graphqlObject;
@@ -38,7 +38,6 @@ export function getItem(args: GetItemArgs, requestedFields: GraphQLSet<keyof Ite
  * By default only 1 result is returned. You can provide the arguments `take`, `offset`, and `reverse` to modify this behaviour.
  */
 export function getFuzzyItem(args: GetFuzzyItemArgs, requestedFields: GraphQLSet<keyof Item>): Item[] {
-	// oxlint-disable-next-line no-param-reassign
 	args = validateGetFuzzyItemArgs(args);
 
 	let { item } = args;

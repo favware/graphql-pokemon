@@ -86,8 +86,6 @@ query = '''
         target
         type
         zMovePower
-        cooldown
-        plusMovePower
     }
 
     fragment LearnsetMoveFragment on LearnsetMove {

@@ -227,10 +227,6 @@ interface Move {
   type: string;
   /** The power this move will have when used with its Z-move equivalent */
   zMovePower?: Maybe<number>;
-  /** The cooldown time before the move can be used again (between 3-60 seconds) */
-  cooldown?: Maybe<number>;
-  /** The power this move will have when used as a Plus Move */
-  plusMovePower: Maybe<number>;
 }
 
 /** A Pokémon's entry */

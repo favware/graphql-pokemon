@@ -68787,6 +68787,10 @@
   ],
   "813": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Once its body has heated up, Scorbunny can use the full extent of its power. That's why it does warm-up exercises."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "A warm-up of running around gets fire energy coursing through this Pokémon's body. Once that happens, it's ready to fight at full power."
     },
@@ -68804,6 +68808,10 @@
     }
   ],
   "814": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Thanks to its soft and fluffy fur, Raboot can easily heat up its fire energy and produce flames with more power."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "Its thick and fluffy fur protects it from the cold and enables it to use hotter fire moves."

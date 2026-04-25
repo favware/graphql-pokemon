@@ -68831,6 +68831,10 @@
   ],
   "815": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "It juggles a pebble with its feet, turning it into a burning soccer ball. Its shots strike opponents hard and leave them scorched."
     },
@@ -68903,6 +68907,10 @@
   ],
   "819": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "No matter how much it stuffs its belly with food, it is always anxious about getting hungry again. So, it stashes berries in its cheeks and tail."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "Found throughout the Galar region, this Pokémon becomes uneasy if its cheeks are ever completely empty of berries."
     },
@@ -68921,6 +68929,10 @@
   ],
   "820": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Growing up with a family of foodies, this Pokémon learned to love cooking. It will happily eat pretty much anything, so it tends to season food rather carelessly."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "It stashes berries in its tail—so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn't notice the loss."
     },
@@ -68938,6 +68950,10 @@
     }
   ],
   "821": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon is brave and reckless. The white markings around a Rookidee's eyes intimidate fainthearted Pokémon."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "It will bravely challenge any opponent, no matter how powerful. This Pokémon benefits from every battle—even a defeat increases its strength a bit."
@@ -68961,6 +68977,10 @@
   ],
   "822": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This intelligent Pokémon will quickly learn how to use any tool it can hold in its beak or its talons."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies."
     },
@@ -68982,6 +69002,10 @@
     }
   ],
   "823": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Although its wings have partly turned to steel and become heavy as a result, this Pokémon flies through the skies with ease."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its steel body could drive terror into the heart of any foe."
@@ -69159,6 +69183,10 @@
   ],
   "837": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "On sunny days, Rolycoly will come out onto grassy plains and roll around. Then it will eat the grass that gets tangled in its wheel-like leg."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "Most of its body has the same composition as coal. Fittingly, this Pokémon was first discovered in coal mines about 400 years ago."
     },
@@ -69177,6 +69205,10 @@
   ],
   "838": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Due to the coal tar created inside it, the heap of coal on Carkol's back never falls apart, even when the Pokémon rolls around at high speeds."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "It forms coal inside its body. Coal dropped by this Pokémon once helped fuel the lives of people in the Galar region."
     },
@@ -69194,6 +69226,10 @@
     }
   ],
   "839": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It's gentle usually but fearsome when angered. With a body that burns at over 2,700 degrees Fahrenheit, it crushes foes and turns them to ash."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "It's usually peaceful, but the vandalism of mines enrages it. Offenders will be incinerated with flames that reach 2,700 degrees Fahrenheit."
@@ -69303,6 +69339,10 @@
   ],
   "845": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Cramorant instinctively swallow everything whole. They're at their most formidable when they're struggling to swallow overly large prey."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "It's so strong that it can knock out some opponents in a single hit, but it also may forget what it's battling midfight."
     },
@@ -69357,6 +69397,10 @@
   ],
   "848": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has no problem drinking dirty water. An organ inside Toxel's body filters such water into a poisonous liquid that is harmless to Toxel."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "It stores poison in an internal poison sac and secretes that poison through its skin. If you touch this Pokémon, a tingling sensation follows."
     },
@@ -69378,6 +69422,10 @@
     }
   ],
   "849": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "As it scatters toxic sweat and emits electricity, a melody that sounds like it came from a guitar reverberates through the surrounding area."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "When this Pokémon sounds as if it's strumming a guitar, it's actually clawing at the protrusions on its chest to generate electricity."

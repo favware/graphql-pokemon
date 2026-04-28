@@ -227,6 +227,23 @@ interface Move {
   type: string;
   /** The power this move will have when used with its Z-move equivalent */
   zMovePower?: Maybe<number>;
+  /** "Pokémon Champions specific data about a move" */
+  champions?: Maybe<MoveChampions>;
+}
+
+interface MoveChampions {
+  /** The accuracy for a move */
+  accuracy: number;
+  /** The base power for a move */
+  basePower: string;
+  /** The long description for a move */
+  desc?: string;
+  /** The power points for a move */
+  pp: number;
+  /** The short description for a move */
+  shortDesc: string;
+  /** The type for a move */
+  type: string;
 }
 
 /** A Pokémon's entry */
@@ -417,6 +434,7 @@ export type {
   LearnsetMove,
   Maybe,
   Move,
+  MoveChampions,
   Pokemon,
   PokemonLearnset,
   PokemonType,

@@ -90,6 +90,16 @@ fragment MoveFragment on Move {
   target
   type
   zMovePower
+  champions
+}
+
+fragment ChampionsMoveFragment on Move {
+  basePower
+  accuracy
+  desc
+  shortDesc
+  type
+  pp
 }
 
 fragment LearnsetMoveFragment on LearnsetMove {

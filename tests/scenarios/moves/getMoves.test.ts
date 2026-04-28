@@ -40,7 +40,8 @@ describe('getMove', () => {
         isFieldMove: null,
         isGMax: null,
         isNonstandard: null,
-        isZ: null
+        isZ: null,
+        champions: null
       });
     });
   });

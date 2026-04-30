@@ -71371,6 +71371,10 @@
   ],
   "999": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It lives inside an old treasure chest. Sometimes it gets left in shop corners since no one realizes it's actually a Pokémon."
+    },
+    {
       "version_id": "Scarlet",
       "flavor_text": "This Pokémon was born inside a treasure chest about 1,500 years ago. It sucks the life-force out of scoundrels who try to steal the treasure."
     },
@@ -71384,6 +71388,10 @@
     }
   ],
   "1000": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its body seems to be made up of 1,000 coins. This Pokémon gets along well with others and is quick to make friends with anybody."
+    },
     {
       "version_id": "Scarlet",
       "flavor_text": "Its body seems to be made up of 1,000 coins. This Pokémon gets along well with others and is quick to make friends with anybody."

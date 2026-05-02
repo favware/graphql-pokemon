@@ -3537,6 +3537,10 @@
   ],
   "26": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its tail discharges electricity into the ground, protecting it from getting shocked."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Its long tail serves as a ground to protect itself from its own high voltage power."
     },
@@ -4787,6 +4791,10 @@
   ],
   "35": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
     },
@@ -4948,6 +4956,10 @@
     }
   ],
   "36": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Said to live in quiet, remote mountains, this type of fairy has a strong aversion to being seen."
+    },
     {
       "version_id": "Red",
       "flavor_text": "A timid fairy Pokémon that is rarely seen. It will run and hide the moment it senses people."
@@ -5111,6 +5123,10 @@
   ],
   "37": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "From its mouth spew flames that seem to resemble the spirits of the deceased. Some people mistakenly think this fire is a ghost."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older."
     },
@@ -5268,6 +5284,10 @@
     }
   ],
   "38": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It has nine long tails and fur that gleams gold. It is said to live for 1,000 years."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse."
@@ -5427,6 +5447,10 @@
   ],
   "39": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "When its huge eyes waver, it sings a mysteriously soothing melody that lulls its enemies to sleep."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
     },
@@ -5584,6 +5608,10 @@
     }
   ],
   "40": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "When it gets angry, it inhales with all its might, and its body gradually inflates. Sometimes they can grow 20 times larger!"
+    },
     {
       "version_id": "Red",
       "flavor_text": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size."
@@ -5743,6 +5771,10 @@
   ],
   "41": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has no eyes. Instead, it relies on its ultrasonic cries for echolocation to flit about in darkness."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets."
     },
@@ -5896,6 +5928,10 @@
     }
   ],
   "42": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its feet are tiny, but this Pokémon walks skillfully. It sneaks up on sleeping prey before sinking in its fangs and slurping up blood."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
@@ -6051,6 +6087,10 @@
   ],
   "43": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its scientific name is Oddium wanderus. It is said to cover distances as far as 1,000 feet when night falls, walking on its two roots."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
     },
@@ -6188,6 +6228,10 @@
     }
   ],
   "44": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "The nectar it drools from its mouth smells so atrocious that it can make noses curl from more than a mile away."
+    },
     {
       "version_id": "Red",
       "flavor_text": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey."
@@ -6327,6 +6371,10 @@
   ],
   "45": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up."
     },
@@ -6464,6 +6512,10 @@
     }
   ],
   "46": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host."
@@ -6607,6 +6659,10 @@
   ],
   "47": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places."
     },
@@ -6749,6 +6805,10 @@
   ],
   "48": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night."
     },
@@ -6879,6 +6939,10 @@
   ],
   "49": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The wings are covered with dustlike scales. Every time it flaps its wings, it looses highly toxic dust."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has."
     },
@@ -7008,6 +7072,10 @@
     }
   ],
   "50": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It prefers dark places. It spends most of its time underground, though it may pop up in caves."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground."
@@ -7163,6 +7231,10 @@
   ],
   "51": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its three heads bob separately up and down to loosen the soil nearby, making it easier for it to burrow."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground."
     },
@@ -7316,6 +7388,10 @@
     }
   ],
   "52": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Appears to be more active at night. It loves round and shiny things. It can't stop itself from picking them up."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change."

@@ -90,10 +90,12 @@ fragment MoveFragment on Move {
   target
   type
   zMovePower
-  champions
+  champions {
+    ...ChampionsMoveFragment
+  }
 }
 
-fragment ChampionsMoveFragment on Move {
+fragment ChampionsMoveFragment on MoveChampions {
   basePower
   accuracy
   desc

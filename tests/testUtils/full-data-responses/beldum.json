@@ -60,7 +60,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             }
           ]
@@ -94,7 +95,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/headbutt",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 140
+                "zMovePower": 140,
+                "champions": null
               }
             },
             {
@@ -120,7 +122,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                 "target": "Self",
                 "type": "Steel",
-                "zMovePower": 0
+                "zMovePower": 0,
+                "champions": null
               }
             },
             {
@@ -146,7 +149,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -172,7 +176,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -202,7 +207,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             }
           ]
@@ -232,7 +238,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -258,7 +265,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             },
             {
@@ -284,7 +292,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -315,7 +324,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                 "target": "Self",
                 "type": "Steel",
-                "zMovePower": 0
+                "zMovePower": 0,
+                "champions": null
               }
             },
             {
@@ -341,7 +351,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -367,7 +378,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -397,7 +409,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             }
           ]
@@ -429,7 +442,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/hold-back",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 100
+                "zMovePower": 100,
+                "champions": null
               }
             },
             {
@@ -455,7 +469,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                 "target": "Self",
                 "type": "Steel",
-                "zMovePower": 0
+                "zMovePower": 0,
+                "champions": null
               }
             },
             {
@@ -481,7 +496,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -507,7 +523,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -536,7 +553,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                 "target": "Self",
                 "type": "Steel",
-                "zMovePower": 0
+                "zMovePower": 0,
+                "champions": null
               }
             },
             {
@@ -562,7 +580,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -588,7 +607,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -618,7 +638,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             }
           ]
@@ -652,7 +673,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                 "target": "Self",
                 "type": "Steel",
-                "zMovePower": 0
+                "zMovePower": 0,
+                "champions": null
               }
             },
             {
@@ -678,7 +700,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -704,7 +727,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -734,7 +758,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             }
           ]
@@ -767,7 +792,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                 "target": "Self",
                 "type": "Steel",
-                "zMovePower": 0
+                "zMovePower": 0,
+                "champions": null
               }
             },
             {
@@ -793,7 +819,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                 "target": "Normal",
                 "type": "Steel",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -819,7 +846,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/steel-beam",
                 "target": "All Adjacent",
                 "type": "Steel",
-                "zMovePower": 200
+                "zMovePower": 200,
+                "champions": null
               }
             },
             {
@@ -845,7 +873,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 175
+                "zMovePower": 175,
+                "champions": null
               }
             },
             {
@@ -871,7 +900,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/tera-blast",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             },
             {
@@ -897,7 +927,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                 "target": "Normal",
                 "type": "Psychic",
-                "zMovePower": 160
+                "zMovePower": 160,
+                "champions": null
               }
             }
           ],
@@ -928,7 +959,8 @@
                 "smogonPage": "https://www.smogon.com/dex/ss/moves/tackle",
                 "target": "Normal",
                 "type": "Normal",
-                "zMovePower": 100
+                "zMovePower": 100,
+                "champions": null
               }
             }
           ]
@@ -1093,7 +1125,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 }
               ]
@@ -1127,7 +1160,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/headbutt",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 140
+                    "zMovePower": 140,
+                    "champions": null
                   }
                 },
                 {
@@ -1153,7 +1187,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                     "target": "Self",
                     "type": "Steel",
-                    "zMovePower": 0
+                    "zMovePower": 0,
+                    "champions": null
                   }
                 },
                 {
@@ -1179,7 +1214,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1205,7 +1241,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1235,7 +1272,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 }
               ]
@@ -1265,7 +1303,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1291,7 +1330,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 },
                 {
@@ -1317,7 +1357,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1348,7 +1389,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                     "target": "Self",
                     "type": "Steel",
-                    "zMovePower": 0
+                    "zMovePower": 0,
+                    "champions": null
                   }
                 },
                 {
@@ -1374,7 +1416,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1400,7 +1443,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1430,7 +1474,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 }
               ]
@@ -1462,7 +1507,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/hold-back",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 100
+                    "zMovePower": 100,
+                    "champions": null
                   }
                 },
                 {
@@ -1488,7 +1534,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                     "target": "Self",
                     "type": "Steel",
-                    "zMovePower": 0
+                    "zMovePower": 0,
+                    "champions": null
                   }
                 },
                 {
@@ -1514,7 +1561,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1540,7 +1588,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1569,7 +1618,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                     "target": "Self",
                     "type": "Steel",
-                    "zMovePower": 0
+                    "zMovePower": 0,
+                    "champions": null
                   }
                 },
                 {
@@ -1595,7 +1645,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1621,7 +1672,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1651,7 +1703,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 }
               ]
@@ -1685,7 +1738,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                     "target": "Self",
                     "type": "Steel",
-                    "zMovePower": 0
+                    "zMovePower": 0,
+                    "champions": null
                   }
                 },
                 {
@@ -1711,7 +1765,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1737,7 +1792,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1767,7 +1823,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 }
               ]
@@ -1800,7 +1857,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                     "target": "Self",
                     "type": "Steel",
-                    "zMovePower": 0
+                    "zMovePower": 0,
+                    "champions": null
                   }
                 },
                 {
@@ -1826,7 +1884,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                     "target": "Normal",
                     "type": "Steel",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1852,7 +1911,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/steel-beam",
                     "target": "All Adjacent",
                     "type": "Steel",
-                    "zMovePower": 200
+                    "zMovePower": 200,
+                    "champions": null
                   }
                 },
                 {
@@ -1878,7 +1938,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 175
+                    "zMovePower": 175,
+                    "champions": null
                   }
                 },
                 {
@@ -1904,7 +1965,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/tera-blast",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 },
                 {
@@ -1930,7 +1992,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                     "target": "Normal",
                     "type": "Psychic",
-                    "zMovePower": 160
+                    "zMovePower": 160,
+                    "champions": null
                   }
                 }
               ],
@@ -1961,7 +2024,8 @@
                     "smogonPage": "https://www.smogon.com/dex/ss/moves/tackle",
                     "target": "Normal",
                     "type": "Normal",
-                    "zMovePower": 100
+                    "zMovePower": 100,
+                    "champions": null
                   }
                 }
               ]
@@ -2138,7 +2202,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -2164,7 +2229,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -2190,7 +2256,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/refresh",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2216,7 +2283,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     }
                   ],
@@ -2244,7 +2312,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/aerial-ace",
                         "target": "Any",
                         "type": "Flying",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -2270,7 +2339,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/brick-break",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -2296,7 +2366,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/cut",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -2322,7 +2393,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-team",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2348,7 +2420,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/earthquake",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -2374,7 +2447,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/facade",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -2400,7 +2474,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2426,7 +2501,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/frustration",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -2452,7 +2528,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hidden-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -2478,7 +2555,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -2504,7 +2582,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/light-screen",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2530,7 +2609,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/protect",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2556,7 +2636,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -2582,7 +2663,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rain-dance",
                         "target": "All",
                         "type": "Water",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2608,7 +2690,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/reflect",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2634,7 +2717,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2660,7 +2744,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/return",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -2686,7 +2771,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-smash",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -2712,7 +2798,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-tomb",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -2738,7 +2825,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sandstorm",
                         "target": "All",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2764,7 +2852,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/secret-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -2790,7 +2879,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/shadow-ball",
                         "target": "Normal",
                         "type": "Ghost",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -2816,7 +2906,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sludge-bomb",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -2842,7 +2933,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/strength",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -2868,7 +2960,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sunny-day",
                         "target": "All",
                         "type": "Fire",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2894,7 +2987,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/toxic",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     }
                   ],
@@ -2922,7 +3016,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/body-slam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -2948,7 +3043,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/defense-curl",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -2974,7 +3070,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-edge",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 190
+                        "zMovePower": 190,
+                        "champions": null
                       }
                     },
                     {
@@ -3000,7 +3097,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/dynamic-punch",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -3026,7 +3124,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/endure",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3052,7 +3151,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/explosion",
                         "target": "All Adjacent",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -3078,7 +3178,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/fury-cutter",
                         "target": "Normal",
                         "type": "Bug",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3104,7 +3205,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-punch",
                         "target": "Normal",
                         "type": "Ice",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -3130,7 +3232,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/icy-wind",
                         "target": "Adjacent Foes",
                         "type": "Ice",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3156,7 +3259,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/mimic",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3182,7 +3286,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/mud-slap",
                         "target": "Normal",
                         "type": "Ground",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3208,7 +3313,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psych-up",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3234,7 +3340,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-slide",
                         "target": "Adjacent Foes",
                         "type": "Rock",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -3260,7 +3367,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rollout",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3286,7 +3394,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/self-destruct",
                         "target": "All Adjacent",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -3312,7 +3421,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sleep-talk",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3338,7 +3448,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/snore",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3364,7 +3475,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/substitute",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3390,7 +3502,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swagger",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3416,7 +3529,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swift",
                         "target": "Adjacent Foes",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -3442,7 +3556,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/thunder-punch",
                         "target": "Normal",
                         "type": "Electric",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     }
                   ],
@@ -3472,7 +3587,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3499,7 +3615,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3526,7 +3643,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -3553,7 +3671,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3580,7 +3699,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3607,7 +3727,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-mash",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -3634,7 +3755,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -3661,7 +3783,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/pursuit",
                         "target": "Normal",
                         "type": "Dark",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3688,7 +3811,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3715,7 +3839,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     }
                   ]
@@ -3748,7 +3873,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/aerial-ace",
                         "target": "Any",
                         "type": "Flying",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -3774,7 +3900,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/brick-break",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -3800,7 +3927,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/cut",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -3826,7 +3954,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-team",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3852,7 +3981,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/earthquake",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -3878,7 +4008,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/endure",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3904,7 +4035,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/explosion",
                         "target": "All Adjacent",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -3930,7 +4062,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/facade",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -3956,7 +4089,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -3982,7 +4116,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash-cannon",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -4008,7 +4143,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/frustration",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -4034,7 +4170,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/grass-knot",
                         "target": "Adjacent Foes",
                         "type": "Grass",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4060,7 +4197,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gyro-ball",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4086,7 +4224,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hidden-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -4112,7 +4251,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -4138,7 +4278,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/light-screen",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4164,7 +4305,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/natural-gift",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4190,7 +4332,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/protect",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4216,7 +4359,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -4242,7 +4386,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psych-up",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4268,7 +4413,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rain-dance",
                         "target": "All",
                         "type": "Water",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4294,7 +4440,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/reflect",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4320,7 +4467,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4346,7 +4494,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/return",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -4372,7 +4521,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-polish",
                         "target": "Self",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4398,7 +4548,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-slide",
                         "target": "Adjacent Foes",
                         "type": "Rock",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -4424,7 +4575,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-smash",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -4450,7 +4602,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-tomb",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -4476,7 +4629,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sandstorm",
                         "target": "All",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4502,7 +4656,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/secret-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -4528,7 +4683,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/shadow-ball",
                         "target": "Normal",
                         "type": "Ghost",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -4554,7 +4710,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sleep-talk",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4580,7 +4737,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sludge-bomb",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -4606,7 +4764,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/stealth-rock",
                         "target": "Foe's Side",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4632,7 +4791,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/strength",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -4658,7 +4818,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/substitute",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4684,7 +4845,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sunny-day",
                         "target": "All",
                         "type": "Fire",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4710,7 +4872,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swagger",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4736,7 +4899,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/toxic",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     }
                   ],
@@ -4764,7 +4928,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/fury-cutter",
                         "target": "Normal",
                         "type": "Bug",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -4790,7 +4955,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gravity",
                         "target": "All",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4816,7 +4982,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/headbutt",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -4842,7 +5009,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-punch",
                         "target": "Normal",
                         "type": "Ice",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -4868,7 +5036,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/icy-wind",
                         "target": "Adjacent Foes",
                         "type": "Ice",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -4894,7 +5063,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4920,7 +5090,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -4946,7 +5117,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -4972,7 +5144,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/mud-slap",
                         "target": "Normal",
                         "type": "Ground",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -4998,7 +5171,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rollout",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5024,7 +5198,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/signal-beam",
                         "target": "Normal",
                         "type": "Bug",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -5050,7 +5225,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/snore",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5076,7 +5252,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swift",
                         "target": "Adjacent Foes",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -5102,7 +5279,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/thunder-punch",
                         "target": "Normal",
                         "type": "Electric",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -5128,7 +5306,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/trick",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5154,7 +5333,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ],
@@ -5184,7 +5364,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5211,7 +5392,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bullet-punch",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5238,7 +5420,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5265,7 +5448,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -5292,7 +5476,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5319,7 +5504,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5346,7 +5532,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5373,7 +5560,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-mash",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -5400,7 +5588,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -5427,7 +5616,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/pursuit",
                         "target": "Normal",
                         "type": "Dark",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5454,7 +5644,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5481,7 +5672,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -5508,7 +5700,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ]
@@ -5541,7 +5734,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/aerial-ace",
                         "target": "Any",
                         "type": "Flying",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -5567,7 +5761,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/brick-break",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -5593,7 +5788,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bulldoze",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -5619,7 +5815,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/cut",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -5645,7 +5842,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-team",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5671,7 +5869,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/earthquake",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -5697,7 +5896,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/explosion",
                         "target": "All Adjacent",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -5723,7 +5923,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/facade",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -5749,7 +5950,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5775,7 +5977,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash-cannon",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -5801,7 +6004,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/frustration",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -5827,7 +6031,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/grass-knot",
                         "target": "Adjacent Foes",
                         "type": "Grass",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5853,7 +6058,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gyro-ball",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5879,7 +6085,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hidden-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -5905,7 +6112,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hone-claws",
                         "target": "Self",
                         "type": "Dark",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5931,7 +6139,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -5957,7 +6166,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/light-screen",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -5983,7 +6193,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/protect",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6009,7 +6220,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -6035,7 +6247,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psych-up",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6061,7 +6274,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psyshock",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -6087,7 +6301,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rain-dance",
                         "target": "All",
                         "type": "Water",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6113,7 +6328,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/reflect",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6139,7 +6355,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6165,7 +6382,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/return",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -6191,7 +6409,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-polish",
                         "target": "Self",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6217,7 +6436,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-slide",
                         "target": "Adjacent Foes",
                         "type": "Rock",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -6243,7 +6463,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-smash",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -6269,7 +6490,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-tomb",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -6295,7 +6517,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/round",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -6321,7 +6544,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sandstorm",
                         "target": "All",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6347,7 +6571,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/shadow-ball",
                         "target": "Normal",
                         "type": "Ghost",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -6373,7 +6598,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sludge-bomb",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -6399,7 +6625,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/strength",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -6425,7 +6652,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/substitute",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6451,7 +6679,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sunny-day",
                         "target": "All",
                         "type": "Fire",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6477,7 +6706,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swagger",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6503,7 +6733,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/telekinesis",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6529,7 +6760,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/toxic",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     }
                   ],
@@ -6557,7 +6789,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gravity",
                         "target": "All",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6583,7 +6816,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-punch",
                         "target": "Normal",
                         "type": "Ice",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -6609,7 +6843,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/icy-wind",
                         "target": "Adjacent Foes",
                         "type": "Ice",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -6635,7 +6870,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6661,7 +6897,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -6687,7 +6924,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6713,7 +6951,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/signal-beam",
                         "target": "Normal",
                         "type": "Bug",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -6739,7 +6978,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sleep-talk",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6765,7 +7005,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/snore",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -6791,7 +7032,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/stealth-rock",
                         "target": "Foe's Side",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6817,7 +7059,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/thunder-punch",
                         "target": "Normal",
                         "type": "Electric",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -6843,7 +7086,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/trick",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6869,7 +7113,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ],
@@ -6899,7 +7144,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -6926,7 +7172,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bullet-punch",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -6953,7 +7200,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -6980,7 +7228,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -7007,7 +7256,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7034,7 +7284,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7061,7 +7312,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -7088,7 +7340,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-mash",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -7115,7 +7368,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/miracle-eye",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7142,7 +7396,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -7169,7 +7424,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/pursuit",
                         "target": "Normal",
                         "type": "Dark",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -7196,7 +7452,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7223,7 +7480,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -7250,7 +7508,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ]
@@ -7283,7 +7542,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/aerial-ace",
                         "target": "Any",
                         "type": "Flying",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -7309,7 +7569,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/brick-break",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -7335,7 +7596,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bulldoze",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -7361,7 +7623,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confide",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7387,7 +7650,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/cut",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -7413,7 +7677,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-team",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7439,7 +7704,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/earthquake",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -7465,7 +7731,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/explosion",
                         "target": "All Adjacent",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -7491,7 +7758,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/facade",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -7517,7 +7785,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7543,7 +7812,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash-cannon",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -7569,7 +7839,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/frustration",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -7595,7 +7866,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/grass-knot",
                         "target": "Adjacent Foes",
                         "type": "Grass",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7621,7 +7893,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gyro-ball",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7647,7 +7920,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hidden-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -7673,7 +7947,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hone-claws",
                         "target": "Self",
                         "type": "Dark",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7699,7 +7974,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -7725,7 +8001,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/light-screen",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7751,7 +8028,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/power-up-punch",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -7777,7 +8055,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/protect",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7803,7 +8082,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -7829,7 +8109,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psych-up",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7855,7 +8136,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psyshock",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -7881,7 +8163,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rain-dance",
                         "target": "All",
                         "type": "Water",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7907,7 +8190,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/reflect",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7933,7 +8217,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -7959,7 +8244,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/return",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -7985,7 +8271,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-polish",
                         "target": "Self",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8011,7 +8298,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-slide",
                         "target": "Adjacent Foes",
                         "type": "Rock",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -8037,7 +8325,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-smash",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8063,7 +8352,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-tomb",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -8089,7 +8379,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/round",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -8115,7 +8406,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sandstorm",
                         "target": "All",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8141,7 +8433,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/secret-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -8167,7 +8460,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/shadow-ball",
                         "target": "Normal",
                         "type": "Ghost",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -8193,7 +8487,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sleep-talk",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8219,7 +8514,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sludge-bomb",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -8245,7 +8541,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/strength",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -8271,7 +8568,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/substitute",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8297,7 +8595,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sunny-day",
                         "target": "All",
                         "type": "Fire",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8323,7 +8622,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swagger",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8349,7 +8649,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/toxic",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     }
                   ],
@@ -8377,7 +8678,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gravity",
                         "target": "All",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8403,7 +8705,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-punch",
                         "target": "Normal",
                         "type": "Ice",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -8429,7 +8732,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/icy-wind",
                         "target": "Adjacent Foes",
                         "type": "Ice",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8455,7 +8759,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8481,7 +8786,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -8507,7 +8813,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8533,7 +8840,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/signal-beam",
                         "target": "Normal",
                         "type": "Bug",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -8559,7 +8867,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/snore",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8585,7 +8894,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/stealth-rock",
                         "target": "Foe's Side",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8611,7 +8921,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/thunder-punch",
                         "target": "Normal",
                         "type": "Electric",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -8637,7 +8948,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/trick",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8663,7 +8975,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ],
@@ -8693,7 +9006,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8720,7 +9034,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bullet-punch",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8747,7 +9062,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8774,7 +9090,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -8801,7 +9118,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8828,7 +9146,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8855,7 +9174,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8882,7 +9202,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-mash",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -8909,7 +9230,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/miracle-eye",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -8936,7 +9258,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -8963,7 +9286,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/pursuit",
                         "target": "Normal",
                         "type": "Dark",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -8990,7 +9314,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9017,7 +9342,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -9044,7 +9370,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ]
@@ -9077,7 +9404,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/aerial-ace",
                         "target": "Any",
                         "type": "Flying",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -9103,7 +9431,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/brick-break",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -9129,7 +9458,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bulldoze",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -9155,7 +9485,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confide",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9181,7 +9512,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-team",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9207,7 +9539,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/earthquake",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -9233,7 +9566,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/explosion",
                         "target": "All Adjacent",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -9259,7 +9593,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/facade",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -9285,7 +9620,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash-cannon",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -9311,7 +9647,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/frustration",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -9337,7 +9674,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/grass-knot",
                         "target": "Adjacent Foes",
                         "type": "Grass",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9363,7 +9701,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gyro-ball",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9389,7 +9728,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hidden-power",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -9415,7 +9755,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -9441,7 +9782,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/light-screen",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9467,7 +9809,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/protect",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9493,7 +9836,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -9519,7 +9863,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psych-up",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9545,7 +9890,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psyshock",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -9571,7 +9917,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rain-dance",
                         "target": "All",
                         "type": "Water",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9597,7 +9944,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/reflect",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9623,7 +9971,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9649,7 +9998,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/return",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -9675,7 +10025,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-polish",
                         "target": "Self",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9701,7 +10052,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-slide",
                         "target": "Adjacent Foes",
                         "type": "Rock",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -9727,7 +10079,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-tomb",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -9753,7 +10106,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/round",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -9779,7 +10133,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sandstorm",
                         "target": "All",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9805,7 +10160,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/shadow-ball",
                         "target": "Normal",
                         "type": "Ghost",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -9831,7 +10187,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sleep-talk",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9857,7 +10214,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sludge-bomb",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -9883,7 +10241,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/substitute",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9909,7 +10268,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sunny-day",
                         "target": "All",
                         "type": "Fire",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9935,7 +10295,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swagger",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -9961,7 +10322,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/toxic",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     }
                   ],
@@ -9989,7 +10351,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ally-switch",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10015,7 +10378,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gravity",
                         "target": "All",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10041,7 +10405,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-punch",
                         "target": "Normal",
                         "type": "Ice",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -10067,7 +10432,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/icy-wind",
                         "target": "Adjacent Foes",
                         "type": "Ice",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -10093,7 +10459,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10119,7 +10486,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -10145,7 +10513,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10171,7 +10540,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/signal-beam",
                         "target": "Normal",
                         "type": "Bug",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -10197,7 +10567,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/snore",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -10223,7 +10594,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/stealth-rock",
                         "target": "Foe's Side",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10249,7 +10621,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/telekinesis",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10275,7 +10648,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/thunder-punch",
                         "target": "Normal",
                         "type": "Electric",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -10301,7 +10675,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/trick",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10327,7 +10702,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ],
@@ -10357,7 +10733,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10384,7 +10761,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bullet-punch",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -10411,7 +10789,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -10438,7 +10817,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -10465,7 +10845,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10492,7 +10873,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10519,7 +10901,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -10546,7 +10929,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-mash",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -10573,7 +10957,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/miracle-eye",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10600,7 +10985,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -10627,7 +11013,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/pursuit",
                         "target": "Normal",
                         "type": "Dark",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -10654,7 +11041,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10681,7 +11069,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -10708,7 +11097,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ]
@@ -10741,7 +11131,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/aerial-ace",
                         "target": "Any",
                         "type": "Flying",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -10767,7 +11158,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10793,7 +11185,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/body-slam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -10819,7 +11212,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/brick-break",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -10845,7 +11239,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bulldoze",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -10871,7 +11266,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/double-edge",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 190
+                        "zMovePower": 190,
+                        "champions": null
                       }
                     },
                     {
@@ -10897,7 +11293,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/earthquake",
                         "target": "All Adjacent",
                         "type": "Ground",
-                        "zMovePower": 180
+                        "zMovePower": 180,
+                        "champions": null
                       }
                     },
                     {
@@ -10923,7 +11320,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/endure",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -10949,7 +11347,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/expanding-force",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -10975,7 +11374,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/facade",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -11001,7 +11401,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash-cannon",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -11027,7 +11428,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/focus-punch",
                         "target": "Normal",
                         "type": "Fighting",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -11053,7 +11455,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/future-sight",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 190
+                        "zMovePower": 190,
+                        "champions": null
                       }
                     },
                     {
@@ -11079,7 +11482,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/giga-impact",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -11105,7 +11509,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/grass-knot",
                         "target": "Adjacent Foes",
                         "type": "Grass",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11131,7 +11536,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gravity",
                         "target": "All",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11157,7 +11563,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/gyro-ball",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11183,7 +11590,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hard-press",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11209,7 +11617,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/heavy-slam",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11235,7 +11644,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -11261,7 +11671,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/ice-punch",
                         "target": "Normal",
                         "type": "Ice",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -11287,7 +11698,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/icy-wind",
                         "target": "Adjacent Foes",
                         "type": "Ice",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -11313,7 +11725,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11339,7 +11752,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-head",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -11365,7 +11779,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/light-screen",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11391,7 +11806,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -11417,7 +11833,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-beam",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 190
+                        "zMovePower": 190,
+                        "champions": null
                       }
                     },
                     {
@@ -11443,7 +11860,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/protect",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11469,7 +11887,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -11495,7 +11914,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic-noise",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -11521,7 +11941,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psych-up",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11547,7 +11968,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psyshock",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -11573,7 +11995,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rain-dance",
                         "target": "All",
                         "type": "Water",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11599,7 +12022,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/reflect",
                         "target": "Ally's Side",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11625,7 +12049,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rest",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11651,7 +12076,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-slide",
                         "target": "Adjacent Foes",
                         "type": "Rock",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -11677,7 +12103,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/rock-tomb",
                         "target": "Normal",
                         "type": "Rock",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -11703,7 +12130,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sandstorm",
                         "target": "All",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11729,7 +12157,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11755,7 +12184,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/shadow-ball",
                         "target": "Normal",
                         "type": "Ghost",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -11781,7 +12211,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sleep-talk",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11807,7 +12238,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sludge-bomb",
                         "target": "Normal",
                         "type": "Poison",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -11833,7 +12265,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/stealth-rock",
                         "target": "Foe's Side",
                         "type": "Rock",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11859,7 +12292,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/steel-beam",
                         "target": "All Adjacent",
                         "type": "Steel",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -11885,7 +12319,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/substitute",
                         "target": "Self",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11911,7 +12346,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/sunny-day",
                         "target": "All",
                         "type": "Fire",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -11937,7 +12373,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/swift",
                         "target": "Adjacent Foes",
                         "type": "Normal",
-                        "zMovePower": 120
+                        "zMovePower": 120,
+                        "champions": null
                       }
                     },
                     {
@@ -11963,7 +12400,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -11989,7 +12427,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/tera-blast",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -12015,7 +12454,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/thunder-punch",
                         "target": "Normal",
                         "type": "Electric",
-                        "zMovePower": 140
+                        "zMovePower": 140,
+                        "champions": null
                       }
                     },
                     {
@@ -12041,7 +12481,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/trailblaze",
                         "target": "Normal",
                         "type": "Grass",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -12067,7 +12508,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/trick",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -12093,7 +12535,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ],
@@ -12124,7 +12567,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/agility",
                         "target": "Self",
                         "type": "Psychic",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -12151,7 +12595,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/bullet-punch",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -12178,7 +12623,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/confusion",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -12205,7 +12651,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/flash-cannon",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     },
                     {
@@ -12232,7 +12679,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hone-claws",
                         "target": "Self",
                         "type": "Dark",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -12259,7 +12707,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/hyper-beam",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 200
+                        "zMovePower": 200,
+                        "champions": null
                       }
                     },
                     {
@@ -12286,7 +12735,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/iron-defense",
                         "target": "Self",
                         "type": "Steel",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -12313,7 +12763,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/magnet-rise",
                         "target": "Self",
                         "type": "Electric",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -12340,7 +12791,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/metal-claw",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -12367,7 +12819,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/meteor-mash",
                         "target": "Normal",
                         "type": "Steel",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -12394,7 +12847,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/psychic",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -12421,7 +12875,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/scary-face",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 0
+                        "zMovePower": 0,
+                        "champions": null
                       }
                     },
                     {
@@ -12448,7 +12903,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/tackle",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 100
+                        "zMovePower": 100,
+                        "champions": null
                       }
                     },
                     {
@@ -12475,7 +12931,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/take-down",
                         "target": "Normal",
                         "type": "Normal",
-                        "zMovePower": 175
+                        "zMovePower": 175,
+                        "champions": null
                       }
                     },
                     {
@@ -12502,7 +12959,8 @@
                         "smogonPage": "https://www.smogon.com/dex/ss/moves/zen-headbutt",
                         "target": "Normal",
                         "type": "Psychic",
-                        "zMovePower": 160
+                        "zMovePower": 160,
+                        "champions": null
                       }
                     }
                   ]

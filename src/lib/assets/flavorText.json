@@ -7551,6 +7551,10 @@
   ],
   "53": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The gem in its forehead glows on its own! It walks with all the grace and elegance of a proud queen."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness."
     },
@@ -7709,6 +7713,10 @@
   ],
   "54": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is constantly wracked by a headache. When the headache turns intense, it begins using mysterious powers."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers."
     },
@@ -7866,6 +7874,10 @@
     }
   ],
   "55": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It swims gracefully along on the quiet, slow- moving rivers and lakes of which it is so fond."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
@@ -8325,6 +8337,10 @@
   ],
   "58": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Very protective of its territory. It will bark and bite to repel intruders from its space."
     },
@@ -8482,6 +8498,10 @@
     }
   ],
   "59": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "An ancient picture scroll shows that people were captivated by its movement as it ran through prairies."
+    },
     {
       "version_id": "Red",
       "flavor_text": "A Pokémon that has been admired since the past for its beauty. It runs agilely as if on wings."
@@ -8641,6 +8661,10 @@
   ],
   "60": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "For Poliwag, swimming is easier than walking. The swirl pattern on its belly is actually part of the Pokémon's innards showing through the skin."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
     },
@@ -8794,6 +8818,10 @@
     }
   ],
   "61": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its two legs are well developed. Even though it can live on the ground, it prefers living in water."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy."
@@ -8949,6 +8977,10 @@
   ],
   "62": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The muscles it has developed through swimming are thick and powerful. When it lands a square punch, it can turn huge boulders to dust."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
     },
@@ -9102,6 +9134,10 @@
     }
   ],
   "63": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It uses various psychic powers even while it's sleeping, so you can't tell whether or not it's awake."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Using its ability to read minds, it will identify impending danger and Teleport to safety."
@@ -9257,6 +9293,10 @@
   ],
   "64": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It possesses strong mental capabilities, but its psychic powers are halved when it's not holding a silver spoon."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "It emits special alpha waves from its body that induce headaches just by being close by."
     },
@@ -9410,6 +9450,10 @@
     }
   ],
   "65": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A Pokémon that can memorize anything. It never forgets what it learns—that's why this Pokémon is smart."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000."
@@ -9565,6 +9609,10 @@
   ],
   "66": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It hefts a Graveler repeatedly to strengthen its entire body. It uses every type of martial arts."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger."
     },
@@ -9718,6 +9766,10 @@
     }
   ],
   "67": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It willingly assists with hard labor because it knows the work is good training for its muscles."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions."
@@ -9873,6 +9925,10 @@
   ],
   "68": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It can lift heavy loads with the greatest of ease. It can even heft dump trucks. But its clumsy fingers prevent it from doing any precision work."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
     },
@@ -10027,6 +10083,10 @@
   ],
   "69": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It plants its feet deep underground to rehydrate itself. While doing so, it's unable to run away if it's attacked."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture."
     },
@@ -10161,6 +10221,10 @@
   ],
   "70": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Even though it is filled with acid, it does not melt because it also oozes a protective fluid."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "It spits out PoisonPowder to immobilize the enemy and then finishes it with a spray of Acid."
     },
@@ -10294,6 +10358,10 @@
     }
   ],
   "71": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "After dissolving many prey, this Pokémon's acid becomes sweeter. This makes it even easier to attract more prey."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Said to live in huge colonies deep in jungles, although no one has ever returned from there."
@@ -10745,6 +10813,10 @@
   ],
   "74": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "At rest, it looks just like a rock. Carelessly stepping on it will make it swing its fists angrily."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them."
     },
@@ -10895,6 +10967,10 @@
   ],
   "75": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Often seen rolling down mountain trails. Obstacles are just things to roll straight over, not avoid."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction."
     },
@@ -11044,6 +11120,10 @@
     }
   ],
   "76": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Once it sheds its skin, its body turns tender and whitish. Its hide hardens when it's exposed to air."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage."
@@ -11463,6 +11543,10 @@
   ],
   "79": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is incredibly slow and dopey. It takes five seconds for it to feel pain when under attack."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
     },
@@ -11620,6 +11704,10 @@
     }
   ],
   "80": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "When a Slowpoke went hunting in the sea, its tail was bitten by a Shellder. That made it evolve into Slowbro."
+    },
     {
       "version_id": "Red",
       "flavor_text": "The Shellder that is latched onto Slowpoke's tail is said to feed on the host's left over scraps."
@@ -11779,6 +11867,10 @@
   ],
   "81": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The electromagnetic waves emitted by the units at the sides of its head expel antigravity, which allows it to float."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Uses anti-gravity to stay suspended. Appears without warning and uses Thunder Wave and similar moves."
     },
@@ -11936,6 +12028,10 @@
     }
   ],
   "82": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon is three Magnemite that have linked together. Magneton sends out powerful radio waves to study its surroundings."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Formed by several Magnemites linked together. They frequently appear when sunspots flare up."

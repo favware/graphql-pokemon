@@ -12191,6 +12191,10 @@
   ],
   "83": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It always walks about with a plant stalk clamped in its beak. The stalk is used for building its nest."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "The sprig of green onions it holds is its weapon. It is used much like a metal sword."
     },
@@ -12861,6 +12865,10 @@
   ],
   "88": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Born from sludge, these Pokémon now gather in polluted places and increase the bacteria in their bodies."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories."
     },
@@ -13006,6 +13014,10 @@
     }
   ],
   "89": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Smells so awful, it can cause fainting. Through degeneration of its nose, it lost its sense of smell."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison."
@@ -13461,6 +13473,10 @@
   ],
   "92": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Said to appear in decrepit, deserted buildings. It has no real shape, as it appears to be made of a gas."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice."
     },
@@ -13622,6 +13638,10 @@
     }
   ],
   "93": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "If you get the feeling of being watched in darkness when nobody is around, Haunter is there."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Because of its ability to slip through block walls, it is said to be from another dimension."
@@ -13785,6 +13805,10 @@
   ],
   "94": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "A Gengar is close by if you feel a sudden chill. It may be trying to lay a curse on you."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Under a full moon, this {{OBP|Pokémon|species|Pokémon}} likes to mimic the shadows of people and laugh at their fright."
     },
@@ -13946,6 +13970,10 @@
     }
   ],
   "95": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It rapidly bores through the ground at 50 mph by squirming and twisting its massive, rugged body."
+    },
     {
       "version_id": "Red",
       "flavor_text": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black."
@@ -14637,6 +14665,10 @@
   ],
   "100": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is said to camouflage itself as a Poké Ball. It will self-destruct with very little stimulus."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Usually found in power plants. Easily mistaken for a Poké Ball, they have zapped many people."
     },
@@ -14771,6 +14803,10 @@
   ],
   "101": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It stores an overflowing amount of electric energy inside its body. Even a small shock makes it explode."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "It stores electric energy under very high pressure. It often explodes with little or no provocation."
     },
@@ -14904,6 +14940,10 @@
     }
   ],
   "102": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Using telepathy only fellow Exeggcute can pick up on, they always form a cluster of six."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms."
@@ -15059,6 +15099,10 @@
   ],
   "103": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Each of Exeggutor's three heads is thinking different thoughts. The three don't seem to be very interested in one another."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute."
     },
@@ -15213,6 +15257,10 @@
   ],
   "104": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Because it never removes its skull helmet, no one has ever seen this Pokémon's real face."
     },
@@ -15362,6 +15410,10 @@
     }
   ],
   "105": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Small and weak, this Pokémon is adept with its bone club. It has grown more vicious over the ages."
+    },
     {
       "version_id": "Red",
       "flavor_text": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets."
@@ -15513,6 +15565,10 @@
   ],
   "106": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has complete control over the ligaments in its legs, expanding and contracting them to double the reach of its kicks."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides."
     },
@@ -15650,6 +15706,10 @@
     }
   ],
   "107": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It corners its foes with combo punches from both sides, then finishes them off with a single straight punch launched at over 300 mph."
+    },
     {
       "version_id": "Red",
       "flavor_text": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see."
@@ -15931,6 +15991,10 @@
   ],
   "109": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Lighter-than-air gases in its body keep it aloft. The gases not only smell; they are also explosive."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning."
     },
@@ -16068,6 +16132,10 @@
     }
   ],
   "110": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Top-grade perfume is made using its internal poison gases by diluting them to the highest level."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Where two kinds of poison gases meet, 2 Koffings can fuse into a Weezing over many years."
@@ -16507,6 +16575,10 @@
   ],
   "113": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "A gentle and kindhearted Pokémon that shares its nutritious eggs if it sees an injured Pokémon."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A rare and elusive Pokémon that is said to bring happiness to those who manage to get it."
     },
@@ -16664,6 +16736,10 @@
     }
   ],
   "114": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon's true appearance remains a mystery."
+    },
     {
       "version_id": "Red",
       "flavor_text": "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks."

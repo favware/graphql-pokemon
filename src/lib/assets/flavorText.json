@@ -17893,6 +17893,10 @@
   ],
   "122": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Always practicing its pantomime act. It makes enemies believe something exists that really doesn't."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "If interrupted while it is miming, it will slap around the offender with its broad hands."
     },
@@ -18038,6 +18042,10 @@
     }
   ],
   "123": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "The sharp scythes on its forearms become increasingly sharp by cutting through hard objects."
+    },
     {
       "version_id": "Red",
       "flavor_text": "With ninja-like agility and speed, it can create the illusion that there is more than one."
@@ -18339,6 +18347,10 @@
   ],
   "125": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its body constantly discharges electricity. Getting close to it will make your hair stand on end."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Normally found near power plants, they can wander away and cause major blackouts in cities."
     },
@@ -18497,6 +18509,10 @@
   ],
   "126": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Found near the mouth of a volcano. This fire-breather's body temperature is nearly 2,200 degrees Fahrenheit."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
     },
@@ -18654,6 +18670,10 @@
     }
   ],
   "127": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It swings its long pincers wildly to attack. During cold periods, it hides deep in forests."
+    },
     {
       "version_id": "Red",
       "flavor_text": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard."
@@ -18959,6 +18979,10 @@
   ],
   "129": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "An underpowered, pathetic Pokémon. It may jump high on rare occasions but never more than seven feet."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today."
     },
@@ -19120,6 +19144,10 @@
     }
   ],
   "130": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Once it appears, it goes on a rampage. It remains enraged until it demolishes everything around it."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage."
@@ -19283,6 +19311,10 @@
   ],
   "131": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "A smart and kindhearted Pokémon, it glides across the surface of the sea while its beautiful song echoes around it."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A Pokémon that has been overhunted almost to extinction. It can ferry people across the water."
     },
@@ -19437,6 +19469,10 @@
   ],
   "132": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It can reorganize its cells to make itself into a duplicate of anything it sees. The quality of the duplicate depends on the individual."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy."
     },
@@ -19590,6 +19626,10 @@
     }
   ],
   "133": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its ability to evolve into many forms allows it to adapt smoothly and perfectly to any environment."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element Stones."
@@ -19753,6 +19793,10 @@
   ],
   "134": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It prefers beautiful shores. With cells similar to water molecules, it could melt in water."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's."
     },
@@ -19914,6 +19958,10 @@
     }
   ],
   "135": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A sensitive Pokémon that easily becomes sad or angry. Every time its mood changes, it charges power."
+    },
     {
       "version_id": "Red",
       "flavor_text": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts."
@@ -20077,6 +20125,10 @@
   ],
   "136": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Inhaled air is carried to its flame sac, heated, and exhaled as fire that reaches over 3,000 degrees Fahrenheit."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
     },
@@ -20238,6 +20290,10 @@
     }
   ],
   "137": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It is an artificial Pokémon. Since it doesn't breathe, people are excited by its potential to be useful in any environment."
+    },
     {
       "version_id": "Red",
       "flavor_text": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace."
@@ -20953,6 +21009,10 @@
   ],
   "142": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It flew through the open skies over the ancient continent as if they were its own. When it touched ground, its walk was weak and slow."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A ferocious, prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs."
     },
@@ -21102,6 +21162,10 @@
     }
   ],
   "143": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It doesn't do anything other than eat and sleep. When prompted to make a serious effort, though, it apparently displays awesome power."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
@@ -21261,6 +21325,10 @@
   ],
   "144": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains."
     },
@@ -21390,6 +21458,10 @@
     }
   ],
   "145": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon has complete control over electricity. There are tales of Zapdos nesting in the dark depths of pitch-black thunderclouds."
+    },
     {
       "version_id": "Red",
       "flavor_text": "A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts."
@@ -21544,6 +21616,10 @@
     }
   ],
   "146": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames."

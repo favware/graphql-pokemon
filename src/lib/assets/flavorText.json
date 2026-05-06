@@ -21751,6 +21751,10 @@
   ],
   "147": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is called the Mirage Pokémon because so few have seen it, but its shed skin has been found."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Long considered a mythical Pokémon until recently when a small colony was found living underwater."
     },
@@ -21908,6 +21912,10 @@
     }
   ],
   "148": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "They say that if it emits an aura from its whole body, the weather will begin to change instantly."
+    },
     {
       "version_id": "Red",
       "flavor_text": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions."
@@ -22067,6 +22075,10 @@
   ],
   "149": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It can fly in spite of its big and bulky physique. It circles the globe in just 16 hours."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans."
     },
@@ -22225,6 +22237,10 @@
   ],
   "150": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its DNA is almost the same as Mew's. However, its size and disposition are vastly different."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
     },
@@ -22358,6 +22374,10 @@
     }
   ],
   "151": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It's very intelligent and can use an incredible variety of moves. Many believe that all other Pokémon are descendants of this one."
+    },
     {
       "version_id": "Red",
       "flavor_text": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
@@ -22819,6 +22839,10 @@
   ],
   "155": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It usually stays hunched over. If it is angry or surprised, it shoots flames out of its back."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It is timid, and always curls itself up in a ball. If attacked, it flares up its back for protection."
     },
@@ -22929,6 +22953,10 @@
   ],
   "156": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Before battle, it turns its back on its opponent to demonstrate how ferociously its fire blazes."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Be careful if it turns its back during battle. It means that it will attack with the fire on its back."
     },
@@ -23038,6 +23066,10 @@
     }
   ],
   "157": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It has a secret, devastating move. It rubs its blazing fur to cause huge explosions."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames."
@@ -23691,6 +23723,10 @@
   ],
   "163": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Hoothoot's internal clock is precise at all times. It tilts its head in a fixed rhythm."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It always stands on one foot. It changes feet so fast, the movement can rarely be seen."
     },
@@ -23812,6 +23848,10 @@
     }
   ],
   "164": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its eyes are specially adapted. They concentrate even faint light and enable it to see in the dark."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Its eyes are specially adapted. They concentrate even faint light and enable it to see in the dark."
@@ -24163,6 +24203,10 @@
   ],
   "167": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "With threads from its mouth, it fashions sturdy webs that won't break even if you set a rock on them."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close."
     },
@@ -24289,6 +24333,10 @@
   ],
   "168": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It spins string not only from its rear but also from its mouth. It's hard to tell which end is which."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It spins string not only from its rear but also from its mouth. It is hard to tell which end is which."
     },
@@ -24414,6 +24462,10 @@
     }
   ],
   "169": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It flies so silently through the dark on its four wings that it may not be noticed even when nearby."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "It flies so silently through the dark on its four wings that it may not be noticed even when nearby."
@@ -24821,6 +24873,10 @@
   ],
   "172": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has electric sacs in its cheeks. When they're fully charged, Pichu plays very energetically."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It is not yet skilled at storing electricity. It may send out a jolt if amused or startled."
     },
@@ -24959,6 +25015,10 @@
   ],
   "173": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Since it is often seen when shooting stars fill the night skies, it's said to come here by riding on a star."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Because of its unusual, star-like silhouette, people believe that it came here on a meteor."
     },
@@ -25096,6 +25156,10 @@
     }
   ],
   "174": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Igglybuff loves to sing. Its marshmallow-like body gives off a faint sweet smell."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "It has a very soft body. If it starts to roll, it will bounce all over and be impossible to stop."
@@ -25679,6 +25743,10 @@
   ],
   "179": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "If static electricity builds in its body, its fleece doubles in volume. Touching it will shock you."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "If static electricity builds in its body, its fleece doubles in volume. Touching it will shock you."
     },
@@ -25796,6 +25864,10 @@
     }
   ],
   "180": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "As a result of storing too much electricity, it developed patches where even downy wool won't grow."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "As a result of storing too much electricity, it developed patches where even downy wool won't grow."
@@ -25915,6 +25987,10 @@
   ],
   "181": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "When it gets dark, the light from its bright, shiny tail can be seen from far away on the ocean's surface."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people."
     },
@@ -26033,6 +26109,10 @@
   ],
   "182": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Plentiful in the tropics. When it dances, its petals rub together and make a pleasant ringing sound."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Bellossom gather at times and appear to dance. They say that the dance is a ritual to summon the sun."
     },
@@ -26147,6 +26227,10 @@
   ],
   "183": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The oil-filled tail functions as a buoy, so it's fine even in rivers with strong currents."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "The tip of its tail, which contains oil that is lighter than water, lets it swim without drowning."
     },
@@ -26260,6 +26344,10 @@
     }
   ],
   "184": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its long ears are superb sensors. It can distinguish the movements of things in water and tell what they are."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "By keeping still and listening intently, it can tell what is in even wild, fast-moving rivers."

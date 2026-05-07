@@ -26463,6 +26463,10 @@
   ],
   "185": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Although it always pretends to be a tree, its composition appears more similar to rock than to vegetation."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Although it always pretends to be a tree, its composition appears to be closer to a rock than a plant."
     },
@@ -26597,6 +26601,10 @@
   ],
   "186": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "They gather on moonlit nights to form a large chorus. Their cries sound angry and not at all pleasant, but they are certainly distinctive."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "If Poliwag and Poliwhirl hear its echoing cry, they respond by gathering from far and wide."
     },
@@ -26727,6 +26735,10 @@
   ],
   "187": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Outside of cold regions, Hoppip can be found practically everywhere. This is because the wind carries this species all over the world."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "To keep from being blown away by the wind, they gather in clusters. They do enjoy gentle breezes, though."
     },
@@ -26833,6 +26845,10 @@
   ],
   "188": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "When the weather grows cold, Skiploom's flower closes and the Pokémon cannot photosynthesize, so it flies away to warmer regions."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "The bloom on top of its head opens and closes as the temperature fluctuates up and down."
     },
@@ -26938,6 +26954,10 @@
     }
   ],
   "189": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Jumpluff travels on seasonal winds. Once its cotton spores run out, its journey ends, as does its life."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Once it catches the wind, it deftly controls its cotton-puff spores to float, even around the world."
@@ -27485,6 +27505,10 @@
   ],
   "194": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "After losing a territorial struggle, Wooper began living on land. The Pokémon changed over time, developing a poisonous film to protect its body."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "This Pokémon lives in cold water. It will leave the water to search for food when it gets cold outside."
     },
@@ -27713,6 +27737,10 @@
   ],
   "196": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "By reading air currents, it can predict things such as the weather or its foe's next move."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It uses the fine hair that covers its body to sense air currents and predict its enemy's actions."
     },
@@ -27850,6 +27878,10 @@
     }
   ],
   "197": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "On the night of a full moon, or when it gets excited, the ring patterns on its body glow yellow."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "When agitated, this Pokémon protects itself by spraying poisonous sweat from its pores."
@@ -27989,6 +28021,10 @@
   ],
   "198": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "They awaken at dusk and take wing in the twilight, leading to the expression, \"Get home before the Murkrow fly.\""
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Feared and loathed by many, it is believed to bring misfortune to all those who see it at night."
     },
@@ -28117,6 +28153,10 @@
     {
       "version_id": "Sun ",
       "flavor_text": "A poisonous bite reacted with its system, blessing it with the enhanced intellect of a genius. It has full control of its psychic powers."
+    },
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It has incredible intellect and intuition. Whatever the situation, it remains calm and collected."
     },
     {
       "version_id": "Gold",
@@ -28252,6 +28292,10 @@
     }
   ],
   "200": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It likes playing mischievous tricks, such as screaming and wailing to startle people at night."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "It likes playing mischievous tricks such as screaming and wailing to startle people at night."
@@ -28586,6 +28630,10 @@
     }
   ],
   "203": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Girafarig's tail has a small head. It instinctively bites at any foe that approaches the Pokémon from behind."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Its tail has a small brain of its own. Beware! If you get close, it may react to your scent and bite."
@@ -29153,6 +29201,10 @@
   ],
   "208": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is thought its body transformed as a result of iron accumulating internally from swallowing soil."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Its body has been compressed deep under the ground. As a result, it is even harder than a diamond."
     },
@@ -29633,6 +29685,10 @@
   ],
   "212": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It swings its eye-patterned pincers up to scare its foes. This makes it look like it has three heads."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It swings its eye-patterned pincers up to scare its foes. This makes it look like it has three heads."
     },
@@ -29876,6 +29932,10 @@
     }
   ],
   "214": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Heracross loves sweet sap and will go looking through forests for it. The Pokémon uses its two antennae to pick up scents as it searches."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "This powerful Pokémon thrusts its prized horn under its enemies' bellies then lifts and throws them."

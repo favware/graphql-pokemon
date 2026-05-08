@@ -32195,6 +32195,10 @@
   ],
   "233": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This artificial Pokémon evolved thanks to cutting-edge science. It sometimes displays behavior that is not in its programming."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "This upgraded version of Porygon is designed for space exploration. It can't fly, though."
     },
@@ -32443,6 +32447,10 @@
   ],
   "235": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon secretes multicolored bodily fluids from the tip of its tail that it uses as paint. It hopes to paint the landscape of its birthplace someday."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "A special fluid oozes from the tip of its tail. It paints the fluid everywhere to mark its territory."
     },
@@ -32565,6 +32573,10 @@
   ],
   "236": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its intense desire to become stronger and stronger drives it to recklessly train its body and challenge any opponent it can find to battle."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It is always bursting with energy. To make itself stronger, it keeps on fighting even if it loses."
     },
@@ -32678,6 +32690,10 @@
     }
   ],
   "237": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon is adept at dance-like kicks. The horn atop its head is made from the same substance that generally forms fur and claws."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "If you become enchanted by its smooth, elegant, dance-like kicks, you may get drilled hard."
@@ -32907,6 +32923,10 @@
   ],
   "239": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It rotates its arms to generate electricity, but it tires easily, so it only charges up a little bit."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It rotates its arms to generate electricity, but it tires easily, so it charges up only a little bit."
     },
@@ -33040,6 +33060,10 @@
     }
   ],
   "240": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Each and every time it inhales and exhales, sparks leak from its mouth and nostrils."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Each and every time it inhales and exhales, hot embers dribble out of its mouth and nostrils."
@@ -33297,6 +33321,10 @@
   ],
   "242": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The eggs it lays are filled with happiness. Eating even one bite will bring a smile to anyone."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Anyone who takes even one bite of Blissey's egg becomes unfailingly caring and pleasant to everyone."
     },
@@ -33431,6 +33459,10 @@
   ],
   "243": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning."
     },
@@ -33528,6 +33560,10 @@
     }
   ],
   "244": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It is said that when it roars, a volcano erupts somewhere around the globe."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Volcanoes erupt when it barks. Unable to restrain its extreme power, it races headlong around the land."
@@ -33627,6 +33663,10 @@
   ],
   "245": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It races around the world to purify fouled water. It dashes away with the north wind."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Said to be the reincarnation of north winds, it can instantly purify filthy, murky water."
     },
@@ -33724,6 +33764,10 @@
     }
   ],
   "246": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "It feeds on soil. After it has eaten a large mountain, it will fall asleep so it can grow."
@@ -33851,6 +33895,10 @@
   ],
   "247": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its shell is as hard as bedrock, and it is also very strong. Its thrashing can topple a mountain."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Its shell is as hard as sheet rock, and it is also very strong. Its Thrashing can topple a mountain."
     },
@@ -33976,6 +34024,10 @@
     }
   ],
   "248": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Extremely strong, it can change the landscape. It is so insolent that it doesn't care about others."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Its body can't be harmed by any sort of attack, so it is very eager to make challenges against enemies."
@@ -34103,6 +34155,10 @@
   ],
   "249": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It sleeps in a deep-sea trench. If it flaps its wings, it is said to cause a 40-day storm."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong."
     },
@@ -34200,6 +34256,10 @@
     }
   ],
   "250": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A legend says that its body glows in seven colors. A rainbow is said to form behind it when it flies."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "Legends claim this Pokémon flies the world's skies continuously on its magnificent seven-colored wings."
@@ -34687,6 +34747,10 @@
   ],
   "255": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "In its belly, it has a sac filled with burning fire, meaning that Torchic feels as warm as a hot-water bottle if you hug it."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Torchic sticks with its Trainer, following behind with unsteady steps. This Pokémon breathes fire of over 1,800 degrees F, including fireballs that leave the foe scorched black."
     },
@@ -34781,6 +34845,10 @@
   ],
   "256": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It boosts its concentration by emitting harsh cries. Its kicks have outstanding destructive power."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Combusken toughens up its legs and thighs by running through fields and mountains. This Pokémon's legs possess both speed and power, enabling it to dole out ten kicks in one second."
     },
@@ -34874,6 +34942,10 @@
     }
   ],
   "257": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "When facing a tough foe, it looses flames from its wrists. Its powerful legs let it jump clear over buildings."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "In battle, Blaziken blows out intense flames from its wrists and attacks foes courageously. The stronger the foe, the more intensely this Pokémon's wrists burn."

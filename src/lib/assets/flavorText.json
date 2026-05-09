@@ -36113,6 +36113,10 @@
   ],
   "270": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The leaf on its head is naturally dirt repellent and will stay clean even after transporting Pokémon that are covered in mud."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Lotad live in ponds and lakes, where they float on the surface. It grows weak if its broad leaf dies. On rare occasions, this Pokémon travels on land in search of clean water."
     },
@@ -36211,6 +36215,10 @@
   ],
   "271": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is nocturnal and becomes active at nightfall. It feeds on aquatic mosses that grow in the riverbed."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Lombre is nocturnal - it will get active after dusk. It is also a mischief-maker. When this Pokémon spots anglers, it tugs on their fishing lines from beneath the surface and enjoys their consternation."
     },
@@ -36308,6 +36316,10 @@
     }
   ],
   "272": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "If it hears festive music, all its muscles fill with energy. It can't help breaking out into a dance."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Ludicolo begins dancing as soon as it hears cheerful, festive music. This Pokémon is said to appear when it hears the singing of children on hiking outings."
@@ -36865,6 +36877,10 @@
   ],
   "278": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Catching sea winds with its long wings, it soars as if it were a glider. It folds its wings to rest."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Wingull has the habit of carrying prey and valuables in its beak and hiding them in all sorts of locations. This Pokémon rides the winds and flies as if it were skating across the sky."
     },
@@ -36978,6 +36994,10 @@
     }
   ],
   "279": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It protects its young in its beak. It bobs on waves, resting on them on days when the waters are calm."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Pelipper is a flying transporter that carries small Pokémon and eggs inside its massive bill. This Pokémon builds its nest on steep cliffs facing the sea."
@@ -37093,6 +37113,10 @@
   ],
   "280": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "If its red horns capture the warm feelings of people or Pokémon, its body warms up slightly."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Ralts senses the emotions of people using the horns on its head. This Pokémon rarely appears before people. But when it does, it draws closer if it senses that the person has a positive disposition."
     },
@@ -37199,6 +37223,10 @@
   ],
   "281": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It has a psychic power that enables it to distort the space around it and see into the future."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "It is said that a Kirlia that is exposed to the positive emotions of its Trainer grows beautiful. This Pokémon controls psychokinetic powers with its highly developed brain."
     },
@@ -37304,6 +37332,10 @@
     }
   ],
   "282": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "To protect its Trainer, it will expend all its psychic power to create a small black hole."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Gardevoir has the ability to read the future. If it senses impending danger to its Trainer, this Pokémon is said to unleash its psychokinetic energy at full power."
@@ -38613,6 +38645,10 @@
   ],
   "296": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It toughens up by slamming into thick trees over and over. It gains a sturdy body and dauntless spirit."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Makuhita is tenacious - it will keep getting up and attacking its foe however many times it is knocked down. Every time it gets back up, this Pokémon stores more energy in its body for evolving."
     },
@@ -38719,6 +38755,10 @@
   ],
   "297": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It loves challenging others to tests of strength. It has the power to stop a train with a slap."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Hariyama practices its straight-arm slaps in any number of locations. One hit of this Pokémon's powerful, openhanded, straight-arm punches could snap a telephone pole in two."
     },
@@ -38824,6 +38864,10 @@
     }
   ],
   "298": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its tail is packed full of the nutrients it needs to grow."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Azurill spins its tail as if it were a lasso, then hurls it far. The momentum of the throw sends its body flying, too. Using this unique action, one of these Pokémon managed to hurl itself a record 33 feet."
@@ -39197,6 +39241,10 @@
   ],
   "302": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It dwells in the darkness of caves. It uses its sharp claws to dig up gems to nourish itself."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Sableye lead quiet lives deep inside caverns. They are feared, however, because these Pokémon are thought to steal the spirits of people when their eyes burn with a sinister glow in the darkness."
     },
@@ -39314,6 +39362,10 @@
     }
   ],
   "303": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its giant jaws are actually steel horns that transformed. It fools foes into complacency with its adorable gestures, then chomps them with its huge jaws."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": " {{tt|Mawile|Misspelled as \"Mawhile\" in version 1.0, corrected in newer revisions}}'s huge jaws are actually steel horns that have been transformed. Its docile-looking face serves to lull its foe into letting down its guard. When the foe least expects it, {{tt|Mawile|Misspelled as \"Mawhile\" in version 1.0, corrected in newer revisions}} chomps it with its gaping jaws.}} "

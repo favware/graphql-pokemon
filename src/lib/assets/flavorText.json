@@ -47409,6 +47409,10 @@
   ],
   "382": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is said to have widened the seas by causing downpours. It had been asleep in a marine trench."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Kyogre has the power to create massive rain clouds that cover the entire sky and bring about torrential downpours. This {{OBP|Pokémon|species|Pokémon}} saved people who were suffering from droughts."
     },
@@ -48283,6 +48287,10 @@
   ],
   "393": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "A poor walker, it often falls down. However, its strong pride makes it puff up its chest without a care."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "Because it is very proud, it hates accepting food from people. Its thick down guards it from cold."
     },
@@ -48357,6 +48365,10 @@
   ],
   "394": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Because every Prinplup considers itself to be the most important, they can never form a group."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It lives alone, away from others. Apparently, every one of them believes it is the most important."
     },
@@ -48430,6 +48442,10 @@
     }
   ],
   "395": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "If anyone were to hurt its pride, it would slash them in two with wings that can cleave through an ice floe."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "The three horns that extend from its beak attest to its power. The leader has the biggest horns."
@@ -48871,6 +48887,10 @@
   ],
   "401": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its legs are short. Whenever it stumbles, its stiff antennae clack with a xylophone-like sound."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It shakes its head back to front, causing its antennae to hit each other and sound like a xylophone."
     },
@@ -48944,6 +48964,10 @@
     }
   ],
   "402": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "By allowing its cry to resonate in the hollow of its belly, it produces a captivating sound."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It crosses its knifelike arms in front of its chest when it cries. It can compose melodies ad lib."
@@ -49421,6 +49445,10 @@
   ],
   "408": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "In rock layers where Cranidos fossils are found, the fossilized trunks of trees snapped in two are also often found."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It lived in jungles around 100 million years ago. Its skull is as hard as iron."
     },
@@ -49510,6 +49538,10 @@
     }
   ],
   "409": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "In ancient times, people would dig up fossils of this Pokémon and use its skull, which is harder than steel, to make helmets."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "Its powerful head butt has enough power to shatter even the most durable things upon impact."
@@ -49601,6 +49633,10 @@
   ],
   "410": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Although its fossils can be found in layers of primeval rock, nothing but its face has ever been discovered."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "A Pokémon that lived in jungles around 100 million years ago. Its facial hide is extremely hard."
     },
@@ -49690,6 +49726,10 @@
     }
   ],
   "411": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It lived in the same environments as Rampardos. Their fossils have been found together—seemingly from after they'd fought to the finish."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "Any frontal attack is repulsed. It is a docile Pokémon that feeds on grass and berries."

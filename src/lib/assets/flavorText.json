@@ -50019,6 +50019,10 @@
   ],
   "415": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The trio is together from birth. It constantly gathers nectar from flowers to please Vespiquen."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "A Pokémon formed by three others. It busily carries sweet floral honey to Vespiquen."
     },
@@ -50100,6 +50104,10 @@
     }
   ],
   "416": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It houses its colony in cells in its body and releases various pheromones to make those grubs do its bidding."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee."
@@ -50553,6 +50561,10 @@
   ],
   "422": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Subjecting this Pokémon to a strong force causes it to secrete a strange purple fluid. Though harmless, the fluid is awfully sticky."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "Its colors and shapes differ from region to region. In the Sinnoh region, two types are confirmed."
     },
@@ -50650,6 +50662,10 @@
     }
   ],
   "423": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "The softness of its body helps disperse the force of impacts, so although its body is uncommonly squishy, it's also surprisingly resilient."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It has a pliable body without any bones. If any part of its body is torn off, it grows right back."
@@ -50831,6 +50847,10 @@
   ],
   "425": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Because of the way it floats aimlessly, an old folktale calls it a \"signpost for wandering spirits.\""
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "A Pokémon formed by the spirits of people and Pokémon. It loves damp, humid seasons."
     },
@@ -50928,6 +50948,10 @@
     }
   ],
   "426": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It can generate and release gas within its body. That's how it can control the altitude of its drift."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It's drowzy in daytime, but flies off in the evening in big groups. No one knows where they go."
@@ -51207,6 +51231,10 @@
   ],
   "429": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its cries sound like incantations to torment the foe. It appears where you least expect it."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "Its cries sound like incantations. Those hearing it are tormented by headaches and hallucinations."
     },
@@ -51296,6 +51324,10 @@
     }
   ],
   "430": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A single cry from this nocturnal Pokémon, and more than 100 of its Murkrow cronies will assemble."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "Becoming active at night, it is known to swarm with numerous Murkrow in tow."
@@ -51925,6 +51957,10 @@
   ],
   "438": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "From its eyes, it can expel excess moisture from its body. This liquid is similar in composition to human sweat."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It looks as if it is always crying. It is actually adjusting its body's fluid levels by eliminating excess."
     },
@@ -52023,6 +52059,10 @@
   ],
   "439": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Mime Jr. is a gifted mimic. When it startles an opponent with its skills, it feels so delighted that it forgets to keep up its act."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It habitually mimics foes. Once mimicked, the foe cannot take its eyes off this Pokémon."
     },
@@ -52108,6 +52148,10 @@
     }
   ],
   "440": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It carefully carries a round, white rock that it thinks is an egg. It's bothered by how curly its hair looks."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It loves round white things. It carries an egg-shaped rock in imitation of Chansey."
@@ -52206,6 +52250,10 @@
     }
   ],
   "441": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "They can learn and speak human words. If they gather, they all learn the same saying."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It can learn and speak human words. If they gather, they all learn the same saying."
@@ -52661,6 +52709,10 @@
   ],
   "446": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "When it is voraciously gulping down food, it forgets about the food it has hidden under its fur."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It wolfs down its weight in food once a day, swallowing food whole with almost no chewing."
     },
@@ -52758,6 +52810,10 @@
     }
   ],
   "447": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It's exceedingly energetic, with enough stamina to keep running all through the night. Taking it for walks can be a challenging experience."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "The aura that emanates from its body intensifies to alert others if it is afraid or sad."
@@ -52860,6 +52916,10 @@
     }
   ],
   "448": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A well-trained one can use its aura to identify and take in the feelings of creatures over half a mile away."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It has the ability to sense the auras of all things. It understands human speech."

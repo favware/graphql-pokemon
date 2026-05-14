@@ -54105,6 +54105,10 @@
   ],
   "462": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "As it zooms through the sky, this Pokémon seems to be receiving signals of unknown origin while transmitting signals of unknown purpose."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It evolved from exposure to a special magnetic field. Three units generate magnetism."
     },
@@ -54367,6 +54371,10 @@
   ],
   "465": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Vine growth is accelerated for Tangrowth living in warm climates. If the vines grow long, Tangrowth shortens them by tearing parts of them off."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It ensnares prey by extending arms made of vines. Losing arms to predators does not trouble it."
     },
@@ -54440,6 +54448,10 @@
     }
   ],
   "466": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A single Electivire can provide enough electricity for all the buildings in a big city for a year."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power."
@@ -54538,6 +54550,10 @@
     }
   ],
   "467": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "When shooting 3,600 degree Fahrenheit fireballs from its arms, its body takes on a whitish hue from the intense heat."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It blasts fireballs of over 3,600 degrees F from the ends of its arms. It lives in volcanic craters."
@@ -54785,6 +54801,10 @@
   ],
   "470": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "When you see Leafeon asleep in a patch of sunshine, you'll know it is using photosynthesis to produce clean air."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air."
     },
@@ -54886,6 +54906,10 @@
     }
   ],
   "471": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It can control its body temperature at will. This enables it to freeze the moisture in the atmosphere, creating flurries of diamond dust."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "As a protective technique, it can completely freeze its fur to make its hairs stand like needles."
@@ -55145,6 +55169,10 @@
   ],
   "474": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "An additional program was installed to create a more advanced Pokémon, but it was apparently flawed. Porygon-Z moves oddly as a result."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "Additional software was installed to make it a better Pokémon. It began acting oddly, however."
     },
@@ -55246,6 +55274,10 @@
     }
   ],
   "475": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Because it can sense what its foe is thinking, its attacks burst out first, fast, and fierce."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "A master of courtesy and swordsmanship, it fights using extending swords on its elbows."
@@ -55422,6 +55454,10 @@
     }
   ],
   "477": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It comes and goes between this world and the afterlife. People fear this Pokémon because it is said to suck in lost spirits and take them along."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "The antenna on its head captures radio waves from the world of spirits that command it to take people there."
@@ -55606,6 +55642,10 @@
     }
   ],
   "479": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Rotom entered a mini stereo system and was deeply moved by the synth-pop CD someone left inside. The experience gave this Pokémon an upbeat personality."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc."

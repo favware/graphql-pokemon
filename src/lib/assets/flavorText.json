@@ -56707,6 +56707,10 @@
   ],
   "495": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The leaf on Snivy's tail generates energy when exposed to sunlight, making Snivy swifter and adding an edge to its moves."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter."
     },
@@ -56749,6 +56753,10 @@
   ],
   "496": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "When it gets dirty, its leaves can't be used in photosynthesis, so it always keeps itself clean."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip."
     },
@@ -56790,6 +56798,10 @@
     }
   ],
   "497": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "An intimidating gaze and majestic appearance have caused this Pokémon to be known as the Lord of the Forest."
+    },
     {
       "version_id": "Black",
       "flavor_text": "It can stop its opponents' movements with just a glare. It takes in solar energy and boosts it internally."

@@ -58251,6 +58251,10 @@
   ],
   "529": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It makes its way swiftly through the soil by putting both claws together and rotating at high speed."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "It can dig through the ground at a speed of 30 mph. It could give a car running aboveground a good race."
     },
@@ -58304,6 +58308,10 @@
     }
   ],
   "530": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Forming a drill with its steel claws and head, it can bore through a steel plate, no matter how thick it is."
+    },
     {
       "version_id": "Black",
       "flavor_text": "It can help in tunnel construction. Its drill has evolved into steel strong enough to bore through iron plates."
@@ -58359,6 +58367,10 @@
   ],
   "531": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Audino's sense of hearing is superb. Not even a pebble rolling along over a mile away will escape Audino's ears."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "It touches others with the feelers on its ears, using the sound of their heartbeats to tell how they are feeling."
     },
@@ -58404,6 +58416,10 @@
     }
   ],
   "532": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Always carrying squared logs, they help out with construction. As they grow, they carry bigger logs."
+    },
     {
       "version_id": "Black",
       "flavor_text": "It fights by swinging a piece of lumber around. It is close to evolving when it can handle the lumber without difficulty."
@@ -58455,6 +58471,10 @@
   ],
   "533": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "They strengthen their bodies by carrying steel beams. They show off their big muscles to their friends."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "This Pokémon is so muscular and strongly built that even a group of wrestlers could not make it budge an inch."
     },
@@ -58504,6 +58524,10 @@
     }
   ],
   "534": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It is thought that Conkeldurr taught humans how to make concrete more than 2,000 years ago."
+    },
     {
       "version_id": "Black",
       "flavor_text": "It is thought that Conkeldurr taught humans how to make concrete more than 2,000 years ago."

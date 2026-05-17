@@ -60313,6 +60313,10 @@
   ],
   "568": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its favorite places are unsanitary ones. If you leave trash lying around, you could even find one of these Pokémon living in your room."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "Inhaling the gas they belch will make you sleep for a week. They prefer unsanitary places."
     },
@@ -60374,6 +60378,10 @@
     }
   ],
   "569": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon eats trash, which turns into poison inside its body. The main component of the poison depends on what sort of trash was eaten."
+    },
     {
       "version_id": "Black",
       "flavor_text": "It clenches opponents with its left arm and finishes them off with foul-smelling poison gas belched from its mouth."
@@ -60437,6 +60445,10 @@
   ],
   "570": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Zorua is a timid Pokémon. This disposition seems to be what led to the development of Zorua's ability to take on the forms of other creatures."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "It changes into the forms of others to surprise them. Apparently, it often transforms into a silent child."
     },
@@ -60498,6 +60510,10 @@
     }
   ],
   "571": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon cares deeply about others of its kind, and it will conjure terrifying illusions to keep its den and pack safe."
+    },
     {
       "version_id": "Black",
       "flavor_text": "Bonds between these Pokémon are very strong. It protects the safety of its pack by tricking its opponents."
@@ -60561,6 +60577,10 @@
   ],
   "572": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "These Pokémon like things neat and tidy. They are always sweeping and dusting their habitat, using their tails as brooms."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "They greet one another by rubbing each other with their tails, which are always kept well groomed and clean."
     },
@@ -60618,6 +60638,10 @@
     }
   ],
   "573": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its body secretes oil that this Pokémon spreads over its nest as a coating to protect it from dust. Cinccino won't tolerate even a speck of the stuff."
+    },
     {
       "version_id": "Black",
       "flavor_text": "Their white fur is coated in a special oil that makes it easy for them to deflect attacks."

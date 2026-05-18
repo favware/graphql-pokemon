@@ -62315,6 +62315,10 @@
   ],
   "607": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "While shining a light and pretending to be a guide, it leeches off the life-force of any who follow it."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "Litwick shines a light that absorbs the life energy of people and Pokémon, which becomes the fuel that it burns."
     },
@@ -62368,6 +62372,10 @@
     }
   ],
   "608": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Lampent appears at the moment of death and promptly absorbs the spirit as it leaves the body."
+    },
     {
       "version_id": "Black",
       "flavor_text": "This ominous Pokémon is feared. Through cities it wanders, searching for the spirits of the fallen."
@@ -62423,6 +62431,10 @@
   ],
   "609": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The spirits burned up in its ominous flame lose their way and wander this world forever."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "It absorbs a spirit, which it then burns. By waving the flames on its arms, it puts its foes into a hypnotic trance."
     },
@@ -62477,6 +62489,10 @@
   ],
   "610": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "These Pokémon nest in the ground and use their tusks to crush hard berries. Crushing berries is also how they test each other's strength."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "They use their tusks to crush the berries they eat. Repeated regrowth makes their tusks strong and sharp."
     },
@@ -62527,6 +62543,10 @@
   ],
   "611": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Fraxure uses its thick tusks to neatly cut prey into two portions—one to eat now and one to save for later."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "Since a broken tusk will not grow back, they diligently sharpen their tusks on river rocks after they've been fighting."
     },
@@ -62576,6 +62596,10 @@
     }
   ],
   "612": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its resilient tusks are its pride and joy. It licks up dirt to take in the minerals it needs to keep its tusks in top condition."
+    },
     {
       "version_id": "Black",
       "flavor_text": "They are kind but can be relentless when defending territory. They challenge foes with tusks that can cut steel."

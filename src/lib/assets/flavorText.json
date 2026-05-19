@@ -63889,6 +63889,10 @@
   ],
   "636": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The people of ancient times believed that Larvesta fell from the sun."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "This Pokémon was believed to have been born from the sun. When it evolves, its entire body is engulfed in flames."
     },
@@ -63946,6 +63950,10 @@
     }
   ],
   "637": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its burning body causes it to be unpopular in hot parts of the world, but in cold ones, Volcarona is revered as an embodiment of the sun."
+    },
     {
       "version_id": "Black",
       "flavor_text": "When volcanic ash darkened the atmosphere, it is said that Volcarona's fire provided a replacement for the sun."
@@ -64685,6 +64693,10 @@
   ],
   "656": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It protects its skin by covering its body in delicate bubbles. Beneath its happy-go-lucky air, it keeps a watchful eye on its surroundings."
+    },
+    {
       "version_id": "X",
       "flavor_text": "It secretes flexible bubbles from its chest and back. The bubbles reduce the damage it would otherwise take when attacked."
     },
@@ -64715,6 +64727,10 @@
   ],
   "657": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The tips of its fingers and toes stick firmly to vertical surfaces. Frogadier can scale skyscrapers with ease."
+    },
+    {
       "version_id": "X",
       "flavor_text": "It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away."
     },
@@ -64744,6 +64760,10 @@
     }
   ],
   "658": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It makes shuriken out of mucus excreted from its thighs. These shuriken can cut cleanly through steel cables."
+    },
     {
       "version_id": "X",
       "flavor_text": "It creates throwing stars out of compressed water. When it spins them and throws them at high speed, these stars can split metal in two."

@@ -66161,6 +66161,10 @@
   ],
   "696": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This is an ancient Pokémon, revived in modern times. It has a violent disposition, and it'll tear apart anything it gets between its hefty jaws."
+    },
+    {
       "version_id": "X",
       "flavor_text": "This Pokémon was restored from a fossil. If something happens that it doesn't like, it throws a tantrum and runs wild."
     },
@@ -66198,6 +66202,10 @@
     }
   ],
   "697": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Complete restoration is impossible, allowing room for theories that its entire body was once covered in a feather-like coat."
+    },
     {
       "version_id": "X",
       "flavor_text": "Thanks to its gargantuan jaws, which could shred thick metal plates as if they were paper, it was invincible in the ancient world it once inhabited."
@@ -66237,6 +66245,10 @@
   ],
   "698": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon was successfully restored from a fossil. In the past, it lived with others of its kind in cold lands where there were fewer predators."
+    },
+    {
       "version_id": "X",
       "flavor_text": "This ancient Pokémon was restored from part of its body that had been frozen in ice for over 100 million years."
     },
@@ -66275,6 +66287,10 @@
   ],
   "699": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Aurorus was restored from a fossil. It's said that when this Pokémon howls, auroras appear in the night sky."
+    },
+    {
       "version_id": "X",
       "flavor_text": "The diamond-shaped crystals on its body expel air as cold as -240 degrees Fahrenheit, surrounding its enemies and encasing them in ice."
     },
@@ -66312,6 +66328,10 @@
     }
   ],
   "700": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "By releasing enmity-erasing waves from its ribbonlike feelers, Sylveon stops any conflict."
+    },
     {
       "version_id": "X",
       "flavor_text": "It sends a soothing aura from its ribbonlike feelers to calm fights."
@@ -66417,6 +66437,10 @@
   ],
   "702": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "A Dedenne's whiskers pick up electrical waves other Dedenne send out. These Pokémon share locations of food or electricity with one another."
+    },
+    {
       "version_id": "X",
       "flavor_text": "Its whiskers serve as antennas. By sending and receiving electrical waves, it can communicate with others over vast distances."
     },
@@ -66517,6 +66541,10 @@
   ],
   "704": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Most of a Goomy's body is water. A membrane covers the whole Pokémon to prevent it from shriveling up in dry weather."
+    },
+    {
       "version_id": "X",
       "flavor_text": "The weakest Dragon-type Pokémon, it lives in damp, shady places, so its body doesn't dry out."
     },
@@ -66575,6 +66603,10 @@
   ],
   "705": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The swirly protrusion on its back is filled with all its vital organs, such as its brain and heart."
+    },
+    {
       "version_id": "X",
       "flavor_text": "It drives away opponents by excreting a sticky liquid that can dissolve anything. Its eyes devolved, so it can't see anything."
     },
@@ -66632,6 +66664,10 @@
     }
   ],
   "706": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its form of offense is forcefully stretching out its horns. The strikes land 100 times harder than any blow from a heavyweight boxer."
+    },
     {
       "version_id": "X",
       "flavor_text": "This very friendly Dragon-type Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime."
@@ -66997,6 +67033,10 @@
   ],
   "714": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "After nightfall, they emerge from the caves they nest in during the day. Using their ultrasonic waves, they go on the hunt for ripened fruit."
+    },
+    {
       "version_id": "X",
       "flavor_text": "They live in pitch-black caves. Their enormous ears can emit ultrasonic waves of 200,000 hertz."
     },
@@ -67042,6 +67082,10 @@
     }
   ],
   "715": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Although it has a violent disposition, if you give it a nice ripe fruit that it loves, Noivern will suddenly become tame."
+    },
     {
       "version_id": "X",
       "flavor_text": "They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark."
@@ -67215,6 +67259,10 @@
   ],
   "721": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It lets out billows of steam and disappears into the dense fog. It's said to live in mountains where humans do not tread."
+    },
+    {
       "version_id": "X",
       "flavor_text": "It lets out billows of steam and disappears into the dense fog. It's said to live in mountains where humans do not tread."
     },
@@ -67236,6 +67284,10 @@
     }
   ],
   "722": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It feels relaxed in tight, dark places and has been known to nestle into its Trainer's bag or the front of their jacket."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "This wary Pokémon uses photosynthesis to store up energy during the day, while becoming active at night."
@@ -67275,6 +67327,10 @@
   ],
   "723": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This narcissistic Pokémon is a clean freak. If you don't groom it diligently, it may stop listening to you."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "A bit of a dandy, it spends its free time preening its wings. Its preoccupation with any dirt on its plumage can leave it unable to battle."
     },
@@ -67312,6 +67368,10 @@
     }
   ],
   "724": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It cunningly conceals arrow quills in its wings. It launches these quills with such precision that they can pierce a pebble at over a hundred yards."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "It fires arrow quills from its wings with such precision, they can pierce a pebble at distances over a hundred yards."

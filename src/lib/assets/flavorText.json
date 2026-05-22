@@ -67745,6 +67745,10 @@
   ],
   "736": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Grubbin normally live underground, but if they get unearthed by Hoothoot, they may be found gathered around electric Pokémon."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "Its strong jaw enables it to scrape trees and slurp out the sap. It normally lives underground."
     },
@@ -67779,6 +67783,10 @@
   ],
   "737": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "From the food it digests, it generates electricity, and it stores this energy in its electric sac."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "Its body is capable of storing electricity. On camping trips, people are grateful to have one around."
     },
@@ -67812,6 +67820,10 @@
     }
   ],
   "738": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Displaying exceptional mobility, it weaves between trees and shoots down bird Pokémon with its electromagnetic beams."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies."

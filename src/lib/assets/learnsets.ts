@@ -98431,5 +98431,32 @@ export const learnsets = new Collection<string, Record<string, string[]>>([
       wildcharge: ['9M'],
       willowisp: ['9M']
     }
+  ],
+  [
+    'obliteryx',
+    {
+      airslash: ['9M'],
+      beakblast: ['9M'],
+      bodypress: ['9M'],
+      crunch: ['9M'],
+      darkpulse: ['9M'],
+      darkestlariat: ['9M'],
+      drillpeck: ['9M'],
+      encore: ['9M'],
+      endure: ['9M'],
+      facade: ['9M'],
+      helpinghand: ['9M'],
+      knockoff: ['9M'],
+      protect: ['9M'],
+      rest: ['9M'],
+      roost: ['9M'],
+      sleeptalk: ['9M'],
+      stealthrock: ['9M'],
+      substitute: ['9M'],
+      suckerpunch: ['9M'],
+      takedown: ['9M'],
+      taunt: ['9M'],
+      terablast: ['9M']
+    }
   ]
 ]);

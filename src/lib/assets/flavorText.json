@@ -71055,6 +71055,10 @@
   ],
   "885": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "In the evening, groups of Dreepy will fly at high speeds over the ocean and poke at Pokémon in the water for fun."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "After being reborn as a ghost Pokémon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
     },
@@ -71073,6 +71077,10 @@
   ],
   "886": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon flies around at over 120 miles per hour. If a Drakloak is defeated in a battle, its Dreepy will wander off without a second thought."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "It's capable of flying faster than 120 mph. It battles alongside Dreepy and dotes on them until they successfully evolve."
     },
@@ -71090,6 +71098,10 @@
     }
   ],
   "887": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Dragapult can make its whole body transparent by clearing its mind and focusing. Even the Dreepy in Dragapult's horns become invisible."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles."
@@ -71301,6 +71313,10 @@
   ],
   "906": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its fluffy fur is similar in composition to plants. This Pokémon frequently washes its face to keep it from drying out."
+    },
+    {
       "version_id": "Scarlet",
       "flavor_text": "Its fluffy fur is similar in composition to plants. This Pokémon frequently washes its face to keep it from drying out."
     },
@@ -71311,6 +71327,10 @@
   ],
   "907": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The hardness of Floragato's fur depends on the Pokémon's mood. When Floragato is prepared to battle, its fur becomes pointed and needle sharp."
+    },
+    {
       "version_id": "Scarlet",
       "flavor_text": "Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents."
     },
@@ -71320,6 +71340,10 @@
     }
   ],
   "908": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon uses the reflective fur lining in its cape to camouflage the stem of its flower, creating the illusion that the flower is floating."
+    },
     {
       "version_id": "Scarlet",
       "flavor_text": "This Pokémon uses the reflective fur lining in its cape to camouflage the stem of its flower, creating the illusion that the flower is floating."

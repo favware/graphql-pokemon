@@ -2005,7 +2005,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric],
       weightkg: 26,
       aliases: ['raichuy'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/raichu.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/raichu-megay.mp3',
       respelling: 'RYE-chew',
       ipa: '/ˈraɪtʃuː/'
     }

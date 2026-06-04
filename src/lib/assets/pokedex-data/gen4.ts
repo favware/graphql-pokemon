@@ -356,7 +356,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'staraptor-mega',
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 50,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/staraptor.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/staraptor-mega.mp3',
       respelling: 'star-RAPT-orr',
       ipa: '/stɑːˈræptɒr/'
     }
@@ -3564,7 +3564,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       mythical: true,
       types: [TypesEnum.Dark],
       weightkg: 240,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/darkrai.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/darkrai-mega.mp3',
       respelling: 'DARK-rye',
       ipa: '/ˈdɑːrkraɪ/',
       classification: 'Bad Dreams Pokémon'

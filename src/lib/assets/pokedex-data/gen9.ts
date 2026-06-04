@@ -1380,7 +1380,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'scovillain-mega',
       types: [TypesEnum.Grass, TypesEnum.Fire],
       weightkg: 22,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/scovillain.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scovillain-mega.mp3'
     }
   ],
   [
@@ -2637,7 +2637,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'baxcalibur-mega',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 315,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur-mega.mp3'
     }
   ],
   [

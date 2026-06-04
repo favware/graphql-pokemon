@@ -1626,7 +1626,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug, TypesEnum.Poison],
       weightkg: 230.5,
       aliases: ['pendoraamega', 'scolimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/scolipede.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scolipede-mega.mp3',
       respelling: 'SKOH-lih-peed',
       ipa: '/ˈskoʊlɪpiːd/'
     }
@@ -2312,7 +2312,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark, TypesEnum.Fighting],
       weightkg: 31,
       aliases: ['zuruzukinmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/scrafty.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scrafty-mega.mp3',
       respelling: 'SKRAF-tee',
       ipa: '/ˈskræftiː/'
     }
@@ -3793,7 +3793,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric],
       weightkg: 180,
       aliases: ['shibirudonmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/eelektross.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/eelektross-mega.mp3',
       respelling: 'ee-LEK-trahs',
       ipa: '/iːˈlɛktrɑːs/'
     }

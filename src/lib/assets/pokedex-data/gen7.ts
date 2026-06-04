@@ -3060,7 +3060,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Normal, TypesEnum.Dragon],
       weightkg: 240.5,
       aliases: ['jijiironmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/drampa.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/drampa-mega.mp3',
       respelling: 'DRAM-puh',
       ipa: '/ˈdræmpə/',
       classification: 'Imposing Pokémon'
@@ -3786,7 +3786,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 248.1,
       mythical: true,
       aliases: ['magemega', 'magianamega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/magearna.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/magearna-mega.mp3',
       respelling: 'muh-GEER-nuh',
       ipa: '/məˈgɪərnə/'
     }
@@ -4024,7 +4024,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zeraora-mega',
       types: [TypesEnum.Electric],
       weightkg: 248.1,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/zeraora.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zeraora-mega.mp3'
     }
   ],
   [

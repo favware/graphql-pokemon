@@ -108,7 +108,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass, TypesEnum.Fighting],
       weightkg: 90,
       aliases: ['burigaronmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/chesnaught.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/chesnaught-mega.mp3',
       respelling: 'CHESS-nawt',
       ipa: '/ˈtʃɛsnɔːt/'
     }
@@ -784,7 +784,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Normal],
       weightkg: 93.3,
       aliases: ['kaenjishimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/pyroar.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/pyroar-mega.mp3',
       respelling: 'PIE-roar',
       ipa: '/ˈpaɪrɔər/'
     }
@@ -922,7 +922,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 0.9,
       aliases: ['eternalfloettemega', 'floetteeternalflowermega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/floette.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/floette-mega.mp3',
       respelling: 'floh-ET',
       ipa: '/floʊˈɛt/'
     }
@@ -1234,7 +1234,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'meowstic-mega',
       types: [TypesEnum.Psychic],
       weightkg: 10.1,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic-mega.mp3',
       respelling: 'MYOW-stik',
       ipa: '/ˈmjaʊstɪk/',
       classification: 'Second Sight Pokémon'
@@ -1560,7 +1560,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark, TypesEnum.Psychic],
       weightkg: 69.8,
       aliases: ['karamaneromega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/malamar.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/malamar-mega.mp3',
       respelling: 'MAL-uh-MAR',
       ipa: '/ˈmæləˌmɑːr/'
     }
@@ -1645,7 +1645,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Fighting],
       weightkg: 100,
       aliases: ['gamenodesumega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/barbaracle.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/barbaracle-mega.mp3',
       respelling: 'bar-BARE-uh-kull',
       ipa: '/bɑːrˈbɛərəkəl/'
     }
@@ -1742,7 +1742,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison, TypesEnum.Dragon],
       weightkg: 100.3,
       aliases: ['doramidoromega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/dragalge.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dragalge-mega.mp3',
       respelling: 'druh-GAL-jee',
       ipa: '/drəˈɡældʒiː/'
     }

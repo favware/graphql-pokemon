@@ -2925,7 +2925,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice, TypesEnum.Ghost],
       weightkg: 29.6,
       aliases: ['yukimenokomega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/froslass.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/froslass-mega.mp3',
       respelling: 'FROS-lass',
       ipa: '/ˈfrɒslæs/'
     }
@@ -3347,7 +3347,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Steel],
       legendary: true,
       weightkg: 570,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/heatran.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/heatran-mega.mp3',
       respelling: 'HEE-tran',
       ipa: '/ˈhiːtræn/'
     }

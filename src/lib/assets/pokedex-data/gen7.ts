@@ -660,7 +660,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Ice],
       weightkg: 252.8,
       aliases: ['kekenkanimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/crabominable.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/crabominable-mega.mp3',
       respelling: 'crab-BAH-min-uh-bull',
       ipa: '/kræbˈbɑːmɪnəbʊl/'
     }
@@ -1780,7 +1780,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug, TypesEnum.Steel],
       weightkg: 148,
       aliases: ['kekenkanimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/golisopod.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/golisopod-mega.mp3',
       respelling: 'go-LIE-suh-pod',
       ipa: '/ɡoʊˈlaɪsəpɒd/'
     }

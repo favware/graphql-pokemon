@@ -2201,7 +2201,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'falinks-mega',
       types: [TypesEnum.Fighting],
       weightkg: 99,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/falinks.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/falinks-mega.mp3'
     }
   ],
   [
@@ -3347,7 +3347,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'ursaluna-bloodmoon',
       types: [TypesEnum.Ground, TypesEnum.Normal],
       weightkg: 333,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/ursaluna.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/ursaluna-bloodmoon.mp3'
     }
   ],
   [

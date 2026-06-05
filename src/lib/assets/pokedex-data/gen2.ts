@@ -108,7 +108,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass, TypesEnum.Fairy],
       weightkg: 201,
       aliases: ['meganiumumega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/meganium.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/meganium-mega.mp3',
       respelling: 'muh-GAY-knee-um',
       ipa: '/məˈɡeɪniː.ʌm/'
     }
@@ -2640,7 +2640,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Flying],
       weightkg: 40.4,
       aliases: ['eaamudomega', 'skarmmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/skarmory.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/skarmory-mega.mp3',
       respelling: 'SCAR-muh-ree',
       ipa: '/ˈskɑːrməriː/'
     }

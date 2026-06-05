@@ -1977,7 +1977,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric],
       weightkg: 38,
       aliases: ['raichux'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/raichu.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/raichu-megax.mp3',
       respelling: 'RYE-chew',
       ipa: '/ˈraɪtʃuː/'
     }
@@ -2388,7 +2388,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fairy],
       weightkg: 42.3,
       aliases: ['megafable'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/clefable.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/clefable-mega.mp3',
       respelling: 'cluh-FAY-bull',
       ipa: '/kləˈfeɪbʊl/'
     }
@@ -3820,7 +3820,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass, TypesEnum.Poison],
       weightkg: 125.5,
       aliases: ['megabell', 'megatree'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/victreebel.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/victreebel-mega.mp3',
       respelling: 'VICK-tree-bell',
       ipa: '/ˈvɪktriːbɛl/'
     }
@@ -5945,7 +5945,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water, TypesEnum.Psychic],
       weightkg: 80,
       aliases: ['megastar', 'megastarmie'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/starmie.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/starmie-mega.mp3',
       respelling: 'STAR-me',
       ipa: '/ˈstɑːrmiː/'
     }
@@ -7156,7 +7156,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dragon, TypesEnum.Flying],
       weightkg: 290,
       aliases: ['megadnite', 'megafavna', 'kairyuu-mega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/dragonite.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dragonite-mega.mp3',
       respelling: 'drag-uh-NITE',
       ipa: '/dræɡəˈnaɪt/'
     }

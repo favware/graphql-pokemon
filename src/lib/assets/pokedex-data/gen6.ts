@@ -218,7 +218,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Psychic],
       weightkg: 39,
       aliases: ['mafokushiimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/delphox.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/delphox-mega.mp3',
       respelling: 'DELL-fox',
       ipa: '/ˈdɛlfɒks/'
     }
@@ -356,7 +356,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water, TypesEnum.Dark],
       weightkg: 40,
       aliases: ['gekkougamega', 'grenmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/greninja.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/greninja-mega.mp3',
       respelling: 'greh-NIN-jah',
       ipa: '/ɡrɛˈnɪndʒɑː/'
     }
@@ -2047,7 +2047,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 25,
       aliases: ['ruchaburu'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/hawlucha.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/hawlucha-mega.mp3',
       respelling: 'haw-LOO-cha',
       ipa: '/hɔːˈluːtʃæ/'
     }

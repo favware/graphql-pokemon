@@ -1889,7 +1889,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'glimmora-mega',
       types: [TypesEnum.Rock, TypesEnum.Poison],
       weightkg: 77,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/glimmora.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/glimmora-mega.mp3'
     }
   ],
   [
@@ -2117,7 +2117,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'tatsugiri-mega',
       types: [TypesEnum.Dragon, TypesEnum.Water],
       weightkg: 24,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/tatsugiri-mega.mp3'
     }
   ],
   [

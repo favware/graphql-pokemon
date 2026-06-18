@@ -2499,6 +2499,21 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       name: 'Zero to Hero',
       shortDesc: 'If this Pokémon is a Palafin in Zero Form, switching out has it change to Hero Form.'
     }
+  ],
+  [
+    'eelevate',
+    {
+      desc: "This Pokémon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokémon as if it did not have this Ability. This Pokémon's highest stat is raised by 1 stage if it attacks and knocks out another Pokémon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+      name: 'Eelevate',
+      shortDesc: 'This Pokémon is immune to Ground; +1 to highest stat if it KOes another Pokémon.'
+    }
+  ],
+  [
+    'firemane',
+    {
+      name: 'Fire Mane',
+      shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
+    }
   ]
 ]);
 

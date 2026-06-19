@@ -337,7 +337,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'staraptormega',
     {
-      abilities: { first: 'intimidate', hidden: 'reckless' },
+      abilities: { first: 'contrary' },
       baseStats: { hp: 85, atk: 140, def: 100, spa: 60, spd: 90, spe: 110 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       baseSpecies: 'staraptor',

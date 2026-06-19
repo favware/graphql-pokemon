@@ -764,7 +764,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'pyroarmega',
     {
-      abilities: { first: 'rivalry', second: 'unnerve', hidden: 'moxie' },
+      abilities: { first: 'firemane' },
       baseStats: { hp: 86, atk: 88, def: 92, spa: 129, spd: 86, spe: 126 },
       catchRate: { base: 65, percentageWithOrdinaryPokeballAtFullHealth: '15.7%' },
       color: 'Brown',
@@ -1536,11 +1536,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'malamarmega',
     {
-      abilities: {
-        first: 'contrary',
-        second: 'suctioncups',
-        hidden: 'infiltrator'
-      },
+      abilities: { first: 'contrary' },
       baseStats: { hp: 86, atk: 102, def: 88, spa: 98, spd: 120, spe: 88 },
       catchRate: { base: 80, percentageWithOrdinaryPokeballAtFullHealth: '18.4%' },
       baseSpecies: 'malamar',
@@ -1625,7 +1621,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'barbaraclemega',
     {
-      abilities: { first: 'toughclaws', second: 'sniper', hidden: 'pickpocket' },
+      abilities: { first: 'toughclaws' },
       baseStats: { hp: 72, atk: 140, def: 130, spa: 64, spd: 106, spe: 88 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       baseSpecies: 'barbaracle',
@@ -1718,11 +1714,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'dragalgemega',
     {
-      abilities: {
-        first: 'poisonpoint',
-        second: 'poisontouch',
-        hidden: 'adaptability'
-      },
+      abilities: { first: 'regenerator' },
       baseStats: { hp: 65, atk: 85, def: 105, spa: 132, spd: 163, spe: 44 },
       catchRate: { base: 55, percentageWithOrdinaryPokeballAtFullHealth: '13.9%' },
       baseSpecies: 'dragalge',

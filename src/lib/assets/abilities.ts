@@ -481,6 +481,15 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     }
   ],
   [
+    'eelevate',
+    {
+      desc: 'The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses. When the Pokémon knocks out a target with an attack, its highest stat is boosted by 1 stage.',
+      name: 'Eelevate',
+      shortDesc:
+        'This Pokémon has its highest stat boosted by 1 stage when it knocks out a target; Ground, Spikes, Toxic Spikes, and Sticky Web immunity.'
+    }
+  ],
+  [
     'effectspore',
     {
       desc: '30% chance a Pokémon making contact with this Pokémon will be poisoned, paralyzed, or fall asleep.',
@@ -552,6 +561,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     {
       name: 'Filter',
       shortDesc: 'This Pokémon receives 3/4 damage from supereffective attacks.'
+    }
+  ],
+  [
+    'firemane',
+    {
+      name: 'Fire Mane',
+      shortDesc: 'Boosts the power of the Pokémon’s Fire-type moves by 50%'
     }
   ],
   [

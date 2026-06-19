@@ -61,6 +61,7 @@ enum AbilitiesEnum {
   dryskin
   earlybird
   eartheater
+  eelevate
   effectspore
   electricsurge
   electromorphosis
@@ -71,6 +72,7 @@ enum AbilitiesEnum {
   emergencyexit
   fairyaura
   filter
+  firemane
   flamebody
   flareboost
   flashfire

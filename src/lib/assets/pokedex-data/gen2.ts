@@ -331,7 +331,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Water, TypesEnum.Dragon],
       weightkg: 108,
       aliases: ['gatrmega', 'oodairumega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/feraligatr-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/feraligatr.mp3',
       respelling: 'fur-AL-i-gay-ter',
       ipa: '/fɜːrˈælɪɡeɪtər/',
       classification: 'Double Jaw Pokémon'
@@ -2640,7 +2640,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Steel, TypesEnum.Flying],
       weightkg: 40.4,
       aliases: ['eaamudomega', 'skarmmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/skarmory-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/skarmory.mp3',
       respelling: 'SCAR-muh-ree',
       ipa: '/ˈskɑːrməriː/'
     }

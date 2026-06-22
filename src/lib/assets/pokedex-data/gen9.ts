@@ -1380,7 +1380,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'scovillain-mega',
       types: [TypesEnum.Grass, TypesEnum.Fire],
       weightkg: 22,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/scovillain-mega.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scovillain.mp3'
     }
   ],
   [
@@ -1889,7 +1889,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'glimmora-mega',
       types: [TypesEnum.Rock, TypesEnum.Poison],
       weightkg: 77,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/glimmora-mega.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/glimmora.mp3'
     }
   ],
   [
@@ -2117,7 +2117,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'tatsugiri-mega',
       types: [TypesEnum.Dragon, TypesEnum.Water],
       weightkg: 24,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/tatsugiri-mega.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3'
     }
   ],
   [
@@ -2637,7 +2637,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'baxcalibur-mega',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 315,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur-mega.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur.mp3'
     }
   ],
   [

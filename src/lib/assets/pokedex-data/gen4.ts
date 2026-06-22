@@ -356,7 +356,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'staraptor-mega',
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 50,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/staraptor-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/staraptor.mp3',
       respelling: 'star-RAPT-orr',
       ipa: '/stɑːˈræptɒr/'
     }
@@ -2925,7 +2925,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ice, TypesEnum.Ghost],
       weightkg: 29.6,
       aliases: ['yukimenokomega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/froslass-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/froslass.mp3',
       respelling: 'FROS-lass',
       ipa: '/ˈfrɒslæs/'
     }
@@ -3347,7 +3347,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Steel],
       legendary: true,
       weightkg: 570,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/heatran-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/heatran.mp3',
       respelling: 'HEE-tran',
       ipa: '/ˈhiːtræn/'
     }
@@ -3564,7 +3564,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       mythical: true,
       types: [TypesEnum.Dark],
       weightkg: 240,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/darkrai-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/darkrai.mp3',
       respelling: 'DARK-rye',
       ipa: '/ˈdɑːrkraɪ/',
       classification: 'Bad Dreams Pokémon'

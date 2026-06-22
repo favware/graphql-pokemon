@@ -215,7 +215,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fire, TypesEnum.Fighting],
       weightkg: 180.3,
       aliases: ['enbuoomega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/emboar-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/emboar.mp3',
       respelling: 'EHM-bohr',
       ipa: '/ˈɛmbɔər/'
     }
@@ -1626,7 +1626,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Bug, TypesEnum.Poison],
       weightkg: 230.5,
       aliases: ['pendoraamega', 'scolimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/scolipede-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scolipede.mp3',
       respelling: 'SKOH-lih-peed',
       ipa: '/ˈskoʊlɪpiːd/'
     }
@@ -2312,7 +2312,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Dark, TypesEnum.Fighting],
       weightkg: 31,
       aliases: ['zuruzukinmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/scrafty-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/scrafty.mp3',
       respelling: 'SKRAF-tee',
       ipa: '/ˈskræftiː/'
     }
@@ -3793,7 +3793,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Electric],
       weightkg: 180,
       aliases: ['shibirudonmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/eelektross-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/eelektross.mp3',
       respelling: 'ee-LEK-trahs',
       ipa: '/iːˈlɛktrɑːs/'
     }
@@ -3974,7 +3974,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ghost, TypesEnum.Fire],
       weightkg: 69.6,
       aliases: ['chandymega', 'shanderamega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/chandelure-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/chandelure.mp3',
       respelling: 'shan-duh-LOOR',
       ipa: '/ʃændəˈlʊər/'
     }
@@ -4425,7 +4425,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Ground, TypesEnum.Ghost],
       weightkg: 330,
       aliases: ['goruugumega', 'lurkmega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/golurk-mega.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/golurk.mp3',
       respelling: 'GO-lurk',
       ipa: '/ˈɡoʊlərk/'
     }

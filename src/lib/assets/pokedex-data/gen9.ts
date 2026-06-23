@@ -2637,7 +2637,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'baxcalibur-mega',
       types: [TypesEnum.Dragon, TypesEnum.Ice],
       weightkg: 315,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/baxcalibur-mega.mp3'
     }
   ],
   [

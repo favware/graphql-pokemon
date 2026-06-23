@@ -1645,7 +1645,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Rock, TypesEnum.Fighting],
       weightkg: 100,
       aliases: ['gamenodesumega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/barbaracle.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/barbaracle-mega.mp3',
       respelling: 'bar-BARE-uh-kull',
       ipa: '/bɑːrˈbɛərəkəl/'
     }
@@ -1742,7 +1742,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Poison, TypesEnum.Dragon],
       weightkg: 100.3,
       aliases: ['doramidoromega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/dragalge.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/dragalge-mega.mp3',
       respelling: 'druh-GAL-jee',
       ipa: '/drəˈɡældʒiː/'
     }
@@ -2047,7 +2047,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Flying],
       weightkg: 25,
       aliases: ['ruchaburu'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/hawlucha.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/hawlucha-mega.mp3',
       respelling: 'haw-LOO-cha',
       ipa: '/hɔːˈluːtʃæ/'
     }

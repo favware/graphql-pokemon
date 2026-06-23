@@ -660,7 +660,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Fighting, TypesEnum.Ice],
       weightkg: 252.8,
       aliases: ['kekenkanimega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/crabominable.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/crabominable-mega.mp3',
       respelling: 'crab-BAH-min-uh-bull',
       ipa: '/kræbˈbɑːmɪnəbʊl/'
     }
@@ -3786,7 +3786,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       weightkg: 248.1,
       mythical: true,
       aliases: ['magemega', 'magianamega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/magearna.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/magearna-mega.mp3',
       respelling: 'muh-GEER-nuh',
       ipa: '/məˈgɪərnə/'
     }
@@ -4024,7 +4024,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'zeraora-mega',
       types: [TypesEnum.Electric],
       weightkg: 248.1,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/zeraora.mp3'
+      cry: 'https://play.pokemonshowdown.com/audio/cries/zeraora-mega.mp3'
     }
   ],
   [

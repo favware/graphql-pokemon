@@ -3820,7 +3820,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass, TypesEnum.Poison],
       weightkg: 125.5,
       aliases: ['megabell', 'megatree'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/victreebel.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/victreebel-mega.mp3',
       respelling: 'VICK-tree-bell',
       ipa: '/ˈvɪktriːbɛl/'
     }

@@ -108,7 +108,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       types: [TypesEnum.Grass, TypesEnum.Fairy],
       weightkg: 201,
       aliases: ['meganiumumega'],
-      cry: 'https://play.pokemonshowdown.com/audio/cries/meganium.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/meganium-mega.mp3',
       respelling: 'muh-GAY-knee-um',
       ipa: '/məˈɡeɪniː.ʌm/'
     }

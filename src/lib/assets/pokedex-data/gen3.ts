@@ -3604,7 +3604,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       otherFormes: ['chimecho'],
       types: [TypesEnum.Psychic, TypesEnum.Steel],
       weightkg: 8,
-      cry: 'https://play.pokemonshowdown.com/audio/cries/chimecho.mp3',
+      cry: 'https://play.pokemonshowdown.com/audio/cries/chimecho-mega.mp3',
       respelling: 'chime-ECK-ko',
       ipa: '/tʃaɪmˈɛkoʊ/'
     }

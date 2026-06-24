@@ -2182,7 +2182,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'falinksmega',
     {
-      abilities: { first: 'battlearmor', hidden: 'defiant' },
+      abilities: { first: 'defiant' },
       baseStats: { hp: 65, atk: 135, def: 135, spa: 70, spd: 65, spe: 100 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Yellow',

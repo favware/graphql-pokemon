@@ -76,6 +76,18 @@ export const getPokemonWithFullDataAndEvolutions = gql`
     target
     type
     zMovePower
+    champions {
+      ...ChampionsMoveFragment
+    }
+  }
+
+  fragment ChampionsMoveFragment on MoveChampions {
+    basePower
+    accuracy
+    desc
+    shortDesc
+    type
+    pp
   }
 
   fragment LearnsetMoveFragment on LearnsetMove {

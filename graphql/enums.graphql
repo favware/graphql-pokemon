@@ -55,11 +55,13 @@ enum AbilitiesEnum {
   disguise
   download
   dragonsmaw
+  dragonize
   drizzle
   drought
   dryskin
   earlybird
   eartheater
+  eelevate
   effectspore
   electricsurge
   electromorphosis
@@ -70,6 +72,7 @@ enum AbilitiesEnum {
   emergencyexit
   fairyaura
   filter
+  firemane
   flamebody
   flareboost
   flashfire
@@ -141,6 +144,7 @@ enum AbilitiesEnum {
   magnetpull
   marvelscale
   megalauncher
+  megasol
   merciless
   mimicry
   mindseye
@@ -174,6 +178,7 @@ enum AbilitiesEnum {
   persistent
   pickpocket
   pickup
+  piercingdrill
   pixilate
   plus
   poisonheal
@@ -243,6 +248,7 @@ enum AbilitiesEnum {
   soulheart
   soundproof
   speedboost
+  spicyspray
   stakeout
   stall
   stalwart

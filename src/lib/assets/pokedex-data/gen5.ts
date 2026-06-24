@@ -1083,7 +1083,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'excadrill',
     {
-      abilities: { first: 'piercingdrill' },
+      abilities: { first: 'sandrush', second: 'sandforce', hidden: 'moldbreaker' },
       baseStats: { hp: 110, atk: 135, def: 60, spa: 50, spd: 65, spe: 88 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
@@ -1111,7 +1111,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'excadrillmega',
     {
-      abilities: { first: 'sandrush', second: 'sandforce', hidden: 'moldbreaker' },
+      abilities: { first: 'piercingdrill' },
       baseStats: { hp: 110, atk: 165, def: 100, spa: 65, spd: 65, spe: 103 },
       catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
       color: 'Gray',
@@ -1606,7 +1606,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'scolipedemega',
     {
-      abilities: { first: 'poisonpoint', second: 'swarm', hidden: 'speedboost' },
+      abilities: { first: 'shellarmor' },
       baseStats: { hp: 60, atk: 140, def: 149, spa: 75, spd: 99, spe: 62 },
       catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
       color: 'Red',
@@ -2292,7 +2292,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'scraftymega',
     {
-      abilities: { first: 'shedskin', second: 'moxie', hidden: 'intimidate' },
+      abilities: { first: 'intimidate' },
       baseStats: { hp: 65, atk: 130, def: 135, spa: 55, spd: 135, spe: 68 },
       catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
       color: 'Red',
@@ -3773,7 +3773,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'eelektrossmega',
     {
-      abilities: { first: 'levitate' },
+      abilities: { first: 'eelevate' },
       baseStats: { hp: 85, atk: 145, def: 80, spa: 135, spd: 90, spe: 80 },
       catchRate: { base: 30, percentageWithOrdinaryPokeballAtFullHealth: '8.8%' },
       color: 'Blue',

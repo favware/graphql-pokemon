@@ -1957,7 +1957,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'raichumegax',
     {
-      abilities: { first: 'static', hidden: 'lightningrod' },
+      abilities: { first: 'electricsurge' },
       baseStats: { hp: 60, atk: 135, def: 95, spa: 90, spd: 95, spe: 110 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       baseSpecies: 'raichu',
@@ -1985,7 +1985,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
   [
     'raichumegay',
     {
-      abilities: { first: 'static', hidden: 'lightningrod' },
+      abilities: { first: 'noguard' },
       baseStats: { hp: 60, atk: 135, def: 95, spa: 90, spd: 95, spe: 110 },
       catchRate: { base: 75, percentageWithOrdinaryPokeballAtFullHealth: '17.5%' },
       baseSpecies: 'raichu',

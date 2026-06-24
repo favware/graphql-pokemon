@@ -465,6 +465,9 @@ type Move {
 
   "The power this move will have when used with its Z-move equivalent"
   zMovePower: Int!
+
+  "The Champions specific data for a move"
+  champions: MoveChampions
 }
 
 "The type matchups for any one or two given types"
@@ -516,4 +519,25 @@ type Nature {
 
   "The flavor of food the nature dislikes"
   dislikedFlavor: String
+}
+
+"Pokémon Champions specific data about a move"
+type MoveChampions {
+  "The base power for a move"
+  basePower: String
+
+  "The accuracy for a move"
+  accuracy: Int
+
+  "The long description for a move"
+  desc: String
+
+  "The short description for a move"
+  shortDesc: String
+
+  "The type for a move"
+  type: String
+
+  "The power points for a move"
+  pp: Int
 }

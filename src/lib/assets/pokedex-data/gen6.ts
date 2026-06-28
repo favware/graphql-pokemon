@@ -1234,6 +1234,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
       species: 'meowstic-mega',
       types: [TypesEnum.Psychic],
       weightkg: 10.1,
+      specialSprite: 'https://play.pokemonshowdown.com/sprites/ani/meowstic-mmega.gif',
       cry: 'https://play.pokemonshowdown.com/audio/cries/meowstic.mp3',
       respelling: 'MYOW-stik',
       ipa: '/ˈmjaʊstɪk/',

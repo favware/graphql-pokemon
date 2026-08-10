@@ -40821,6 +40821,10 @@
   ],
   "318": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "These Pokémon have sharp fangs and powerful jaws. Sailors avoid Carvanha dens at all costs."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Carvanha's strongly developed jaws and its sharply pointed fangs pack the destructive power to rip out boat hulls. Many boats have been attacked and sunk by this Pokémon."
     },
@@ -40930,6 +40934,10 @@
     }
   ],
   "319": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its fangs rip through sheet iron. It swims at 75 mph and is known as the Bully of the Sea."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Nicknamed \"the bully of the sea,\" Sharpedo is widely feared. Its cruel fangs grow back immediately if they snap off. Just one of these Pokémon can thoroughly tear apart a supertanker."
@@ -42967,6 +42975,10 @@
   ],
   "339": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its whiskers make a superb radar. They are used to locate prey, even in the murkiest of water."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Barboach's sensitive whiskers serve as a superb radar system. This Pokémon hides in mud, leaving only its two whiskers exposed while it waits for prey to come along."
     },
@@ -43084,6 +43096,10 @@
     }
   ],
   "340": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Whiscash shakes the ground at high intensities to intimidate its opponents. It swallows its prey whole—along with mud from the swamp floor."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Whiscash is extremely territorial. Just one of these Pokémon will claim a large pond as its exclusive territory. If a foe approaches it, it thrashes about and triggers a massive earthquake."
@@ -43203,6 +43219,10 @@
   ],
   "341": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its hardy vitality enables it to adapt to any environment. Its pincers will never release prey."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "Corphish were originally foreign Pokémon that were imported as pets. They eventually turned up in the wild. This Pokémon is very hardy and has greatly increased its population."
     },
@@ -43308,6 +43328,10 @@
     }
   ],
   "342": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A rough customer that wildly flails its giant claws. It is said to be extremely hard to raise."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Crawdaunt has an extremely violent nature that compels it to challenge other living things to battle. Other life-forms refuse to live in ponds inhabited by this Pokémon, making them desolate places."

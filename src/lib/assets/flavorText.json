@@ -50305,6 +50305,10 @@
   ],
   "418": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It spins its two tails like a screw to propel itself through water. The tails also slice clinging seaweed."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "It has a flotation sac that is like an inflatable collar. It floats on water with its head out."
     },
@@ -50378,6 +50382,10 @@
     }
   ],
   "419": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its flotation sac developed as a result of pursuing aquatic prey. Floatzel carries people as if it were a rubber raft."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It floats using its well-developed flotation sac. It assists in the rescues of drowning people."

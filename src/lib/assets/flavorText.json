@@ -53621,6 +53621,10 @@
   ],
   "456": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The line running down its side can store sunlight. It shines vividly at night."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "After long exposure to sunlight, the patterns on its tail fins shine vividly when darkness arrives."
     },
@@ -53710,6 +53714,10 @@
     }
   ],
   "457": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Lumineon swimming in the darkness of the deep sea look like stars shining in the night sky."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "It lives on the deep-sea floor. It attracts prey by flashing the patterns on its four tail fins."

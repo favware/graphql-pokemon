@@ -56395,6 +56395,10 @@
   ],
   "489": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It drifts in warm seas. It always returns to where it was born, no matter how far it may have drifted."
+    },
+    {
       "version_id": "Diamond",
       "flavor_text": "A Pokémon that lives in warm seas. It inflates the flotation sac on its head to drift and search for food."
     },
@@ -56460,6 +56464,10 @@
     }
   ],
   "490": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It starts its life with a wondrous power that permits it to bond with any kind of Pokémon."
+    },
     {
       "version_id": "Diamond",
       "flavor_text": "Born on a cold seafloor, it will swim great distances to return to its birthplace."

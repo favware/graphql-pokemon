@@ -61673,6 +61673,10 @@
   ],
   "592": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It wraps its veillike arms and legs around prey swimming by and drags them down to the depths of the ocean."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "With its thin, veil-like arms wrapped around the body of its opponent, it sinks to the ocean floor."
     },
@@ -61723,6 +61727,10 @@
   ],
   "593": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its body is mostly seawater. It's said there's a castle of ships Jellicent have sunk on the seafloor."
+    },
+    {
       "version_id": "Black",
       "flavor_text": "The fate of the ships and crew that wander into Jellicent's habitat: all sunken, all lost, all vanished."
     },
@@ -61772,6 +61780,10 @@
     }
   ],
   "594": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It gently holds injured and weak Pokémon in its fins. Its special membrane heals their wounds."
+    },
     {
       "version_id": "Black",
       "flavor_text": "The special membrane enveloping Alomomola has the ability to heal wounds."
@@ -62952,6 +62964,10 @@
     }
   ],
   "618": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "For some reason, this Pokémon smiles slightly when it emits a strong electric current from the yellow markings on its body."
+    },
     {
       "version_id": "Black",
       "flavor_text": "Its skin is very hard, so it is unhurt even if stepped on by sumo wrestlers. It smiles when transmitting electricity."

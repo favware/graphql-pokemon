@@ -67601,6 +67601,10 @@
   ],
   "728": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The balloons it inflates with its nose grow larger and larger as it practices day by day."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "This Pokémon snorts body fluids from its nose, blowing balloons to smash into its foes. It's famous for being a hard worker."
     },
@@ -67635,6 +67639,10 @@
   ],
   "729": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It gets excited when it sees a dance it doesn't know. This hard worker practices diligently until it can learn that dance."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "A skillful dancer, it creates a sequence of water balloons as it dances, and briskly bombards its enemies."
     },
@@ -67668,6 +67676,10 @@
     }
   ],
   "730": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Also known as a songstress, it is a sight to behold on moonlit nights when it sings in front of the colony it leads."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "It controls its water balloons with song. The melody is learned from others of its kind and is passed down from one generation to the next."
@@ -68195,6 +68207,10 @@
   ],
   "747": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The first symptom of its sting is numbness. The next is an itching sensation so intense that it's impossible to resist the urge to claw at your skin."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "It plunges the poison spike on its head into its prey. When the prey has weakened, Mareanie deals the finishing blow with its 10 tentacles."
     },
@@ -68228,6 +68244,10 @@
     }
   ],
   "748": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "With its 12 legs, it creates a dome to shelter within. The flow of the tides doesn't affect Toxapex in there, so it's very comfortable."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "Toxapex crawls along the ocean floor on its 12 legs. It leaves a trail of Corsola bits scattered in its wake."

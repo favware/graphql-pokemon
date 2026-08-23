@@ -68863,6 +68863,10 @@
   ],
   "767": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its habitat includes everything from beaches to seabeds. It is happy to eat up even rotten scraps, providing a sort of natural cleaning service."
+    },
+    {
       "version_id": "Sun",
       "flavor_text": "This Pokémon is a coward. As it desperately dashes off, the flailing of its many legs leaves a sparkling clean path in its wake."
     },
@@ -68892,6 +68896,10 @@
     }
   ],
   "768": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "The shell covering its body is as hard as diamond. This Pokémon will do anything it takes to win."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "With a flashing slash of its giant sharp claws, it cleaves seawater—or even air—right in two."
@@ -69222,6 +69230,10 @@
     }
   ],
   "779": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "It grinds its teeth with great force to stimulate its brain. It fires the psychic energy created by this process from the protuberance on its head."
+    },
     {
       "version_id": "Sun",
       "flavor_text": "When it unleashes its psychic power from the protuberance on its head, the grating sound of grinding teeth echoes through the area."

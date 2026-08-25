@@ -70303,6 +70303,10 @@
   ],
   "833": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Apparently the itch of its teething impels it to snap its jaws at anything in front of it."
+    },
+    {
       "version_id": "Sword",
       "flavor_text": "Apparently the itch of its teething impels it to snap its jaws at anything in front of it."
     },
@@ -70320,6 +70324,10 @@
     }
   ],
   "834": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down."
+    },
     {
       "version_id": "Sword",
       "flavor_text": "With jaws that can shear through steel rods, this highly aggressive Pokémon chomps down on its unfortunate prey."

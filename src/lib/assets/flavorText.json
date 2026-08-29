@@ -72125,6 +72125,10 @@
   ],
   "960": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Though it looks like Diglett, Wiglett is an entirely different species. The resemblance seems to be a coincidental result of environmental adaptation."
+    },
+    {
       "version_id": "Scarlet",
       "flavor_text": "This Pokémon can pick up the scent of a Veluza just over 65 feet away and will hide itself in the sand."
     },
@@ -72134,6 +72138,10 @@
     }
   ],
   "961": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "A variety of fish Pokémon, Wugtrio was once considered to be a regional form of Dugtrio."
+    },
     {
       "version_id": "Scarlet",
       "flavor_text": "It has a vicious temperament, contrary to what its appearance may suggest. It wraps its long bodies around prey, then drags the prey into its den."
@@ -72316,6 +72324,10 @@
     }
   ],
   "976": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Veluza has excellent regenerative capabilities. It sheds spare flesh from its body to boost its agility, then charges at its prey."
+    },
     {
       "version_id": "Scarlet",
       "flavor_text": "When Veluza discards unnecessary flesh, its mind becomes honed and its psychic power increases. The spare flesh has a mild but delicious flavor."

@@ -218,9 +218,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'chlorophyll',
     {
-      desc: "If Sunny Day is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
+      desc: "If Sun is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
       name: 'Chlorophyll',
-      shortDesc: "If Sunny Day is active, this Pokémon's Speed is doubled."
+      shortDesc: "If Sun is active, this Pokémon's Speed is doubled."
     }
   ],
   [
@@ -399,7 +399,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'deltastream',
     {
-      desc: 'On switch-in, the weather becomes Delta Stream, which removes the weaknesses of the Flying type from Flying-type Pokémon. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Desolate Land or Primordial Sea Abilities.',
+      desc: 'On switch-in, the weather becomes Strong Winds, which removes the weaknesses of the Flying type from Flying-type Pokémon. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Desolate Land or Primordial Sea Abilities.',
       name: 'Delta Stream',
       shortDesc: 'On switch-in, strong winds begin until this Ability is not active in battle.'
     }
@@ -407,7 +407,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'desolateland',
     {
-      desc: 'On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.',
+      desc: 'On switch-in, the weather becomes Intense Sun, which includes all the effects of Sun and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.',
       name: 'Desolate Land',
       shortDesc: 'On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.'
     }
@@ -447,20 +447,20 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'drizzle',
     {
       name: 'Drizzle',
-      shortDesc: 'On switch-in, this Pokémon summons Rain Dance.'
+      shortDesc: 'On switch-in, this Pokémon summons Rain.'
     }
   ],
   [
     'drought',
     {
       name: 'Drought',
-      shortDesc: 'On switch-in, this Pokémon summons Sunny Day.'
+      shortDesc: 'On switch-in, this Pokémon summons Sun.'
     }
   ],
   [
     'dryskin',
     {
-      desc: 'This Pokémon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokémon. At the end of each turn, this Pokémon restores 1/8 of its maximum HP, rounded down, if the weather is Rain Dance, and loses 1/8 of its maximum HP, rounded down, if the weather is Sunny Day. The weather effects are prevented if this Pokémon is holding a Utility Umbrella.',
+      desc: 'This Pokémon is immune to Water-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Water-type move. The power of Fire-type moves is multiplied by 1.25 when used on this Pokémon. At the end of each turn, this Pokémon restores 1/8 of its maximum HP, rounded down, if the weather is Rain, and loses 1/8 of its maximum HP, rounded down, if the weather is Sun. The weather effects are prevented if this Pokémon is holding a Utility Umbrella.',
       name: 'Dry Skin',
       shortDesc: 'This Pokémon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25x by Fire, 1/8 by Sun.'
     }
@@ -583,9 +583,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'flowergift',
     {
-      desc: 'If this Pokémon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokémon is holding a Utility Umbrella.',
+      desc: 'If this Pokémon is a Cherrim and Sun is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. These effects are prevented if the Pokémon is holding a Utility Umbrella.',
       name: 'Flower Gift',
-      shortDesc: "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x."
+      shortDesc: "If user is Cherrim and Sun is active, it and allies' Attack and Sp. Def are 1.5x."
     }
   ],
   [
@@ -607,7 +607,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'forecast',
     {
-      desc: "If this Pokémon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokémon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
+      desc: "If this Pokémon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokémon is holding a Utility Umbrella and the weather is Rain or Sun.",
       name: 'Forecast',
       shortDesc: "Castform's type changes to the current weather condition's type, except Sandstorm."
     }
@@ -750,7 +750,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'harvest',
     {
-      desc: 'If the last item this Pokémon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.',
+      desc: 'If the last item this Pokémon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sun is active, this chance is 100%.',
       isFieldAbility:
         'In Pokémon Sword and Shield, If you have a Pokémon with Harvest at the front of your party (even if fainted), there is a 50% chance an encounter with a Grass-type Pokémon will be forced, if possible.',
       name: 'Harvest',
@@ -825,9 +825,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'hydration',
     {
-      desc: 'This Pokémon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
+      desc: 'This Pokémon has its non-volatile status condition cured at the end of each turn if Rain is active. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
       name: 'Hydration',
-      shortDesc: 'This Pokémon has its status cured at the end of each turn if Rain Dance is active.'
+      shortDesc: 'This Pokémon has its status cured at the end of each turn if Rain is active.'
     }
   ],
   [
@@ -990,9 +990,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'leafguard',
     {
-      desc: 'If Sunny Day is active, this Pokémon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
+      desc: 'If Sun is active, this Pokémon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
       name: 'Leaf Guard',
-      shortDesc: 'If Sunny Day is active, this Pokémon cannot be statused and Rest will fail for it.'
+      shortDesc: 'If Sun is active, this Pokémon cannot be statused and Rest will fail for it.'
     }
   ],
   [
@@ -1127,7 +1127,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'megasol',
     {
       name: 'Mega Sol',
-      shortDesc: "This Pokémon's moves are used as if the effects of Sunny Day were active."
+      shortDesc: "This Pokémon's moves are used as if the effects of Sun were active."
     }
   ],
   [
@@ -1313,7 +1313,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
     'orichalcumpulse',
     {
       name: 'Orichalcum Pulse',
-      shortDesc: 'On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x.'
+      shortDesc: 'On switch-in, summons Sun. During Sun, Attack is 1.3333x.'
     }
   ],
   [
@@ -1490,7 +1490,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'primordialsea',
     {
-      desc: 'On switch-in, the weather becomes Primordial Sea, which includes all the effects of Rain Dance and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Desolate Land Abilities.',
+      desc: 'On switch-in, the weather becomes Heavy Rain, which includes all the effects of Rain and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokémon, or the weather is changed by the Delta Stream or Desolate Land Abilities.',
       name: 'Primordial Sea',
       shortDesc: 'On switch-in, heavy rain begins until this Ability is not active in battle.'
     }
@@ -1521,9 +1521,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'protosynthesis',
     {
-      desc: "If Sunny Day is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sunny Day, a held Booster Energy will not activate and the effect ends when Sunny Day is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
+      desc: "If Sun is active or this Pokémon uses a held Booster Energy, this Pokémon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sun, a held Booster Energy will not activate and the effect ends when Sun is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokémon is no longer active.",
       name: 'Protosynthesis',
-      shortDesc: 'Sunny Day active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.'
+      shortDesc: 'Sun active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.'
     }
   ],
   [
@@ -1592,9 +1592,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'raindish',
     {
-      desc: 'If Rain Dance is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
+      desc: 'If Rain is active, this Pokémon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokémon is holding a Utility Umbrella.',
       name: 'Rain Dish',
-      shortDesc: 'If Rain Dance is active, this Pokémon heals 1/16 of its max HP each turn.'
+      shortDesc: 'If Rain is active, this Pokémon heals 1/16 of its max HP each turn.'
     }
   ],
   [
@@ -1901,9 +1901,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'solarpower',
     {
-      desc: "If Sunny Day is active, this Pokémon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokémon is holding a Utility Umbrella.",
+      desc: "If Sun is active, this Pokémon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokémon is holding a Utility Umbrella.",
       name: 'Solar Power',
-      shortDesc: "If Sunny Day is active, this Pokémon's Sp. Atk is 1.5x; loses 1/8 max HP per turn."
+      shortDesc: "If Sun is active, this Pokémon's Sp. Atk is 1.5x; loses 1/8 max HP per turn."
     }
   ],
   [
@@ -2125,9 +2125,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
   [
     'swiftswim',
     {
-      desc: "If Rain Dance is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
+      desc: "If Rain is active, this Pokémon's Speed is doubled. This effect is prevented if this Pokémon is holding a Utility Umbrella.",
       name: 'Swift Swim',
-      shortDesc: "If Rain Dance is active, this Pokémon's Speed is doubled."
+      shortDesc: "If Rain is active, this Pokémon's Speed is doubled."
     }
   ],
   [

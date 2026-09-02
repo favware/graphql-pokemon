@@ -2514,6 +2514,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
       name: 'Fire Mane',
       shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
     }
+  ],
+  [
+    'auraguard',
+    {
+      name: 'Aura Guard',
+      shortDesc: 'This Pokémon receives 1/2 damage from contact moves.'
+    }
   ]
 ]);
 

@@ -17033,6 +17033,10 @@
   ],
   "116": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It maintains balance using its tail, which is wound up like a coil. It may spray ink from its mouth."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water."
     },
@@ -17170,6 +17174,10 @@
     }
   ],
   "117": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its body bristles with sharp spikes. Carelessly trying to touch it could cause fainting from the spikes."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail."
@@ -17601,6 +17609,10 @@
   ],
   "120": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "As long as the center section is unharmed, this Pokémon can grow back fully even if it is chopped to bits."
+    },
+    {
       "version_id": "Red",
       "flavor_text": "An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle."
     },
@@ -17750,6 +17762,10 @@
     }
   ],
   "121": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "The center section is named the core. People think it is communicating when it glows in seven colors."
+    },
     {
       "version_id": "Red",
       "flavor_text": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem."

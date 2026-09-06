@@ -23205,6 +23205,10 @@
   ],
   "158": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "It is small but rough and tough. It won't hesitate to take a bite out of anything that moves."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "Its well-developed jaws are powerful and capable of crushing anything. Even its trainer must be careful."
     },
@@ -23315,6 +23319,10 @@
   ],
   "159": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "The tips of its fangs are slanted backward. Once those fangs clamp down, the prey has no hope of escape."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "If it loses a fang, a new one grows back in its place. There are always 48 fangs lining its mouth."
     },
@@ -23424,6 +23432,10 @@
     }
   ],
   "160": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Although it has a massive body, its powerful hind legs enable it to move quickly, even on land."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up."
@@ -24621,6 +24633,10 @@
   ],
   "170": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Its antennae, which evolved from a fin, have both positive and negative charges flowing through them."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It shoots positive and negative electricity between the tips of its two antennae and zaps its enemies."
     },
@@ -24758,6 +24774,10 @@
     }
   ],
   "171": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Portions of its dorsal fin mutated, becoming the parts that glow brightly to lure prey."
+    },
     {
       "version_id": "Gold",
       "flavor_text": "The light it emits is so bright that it can illuminate the sea's surface from a depth of over three miles."

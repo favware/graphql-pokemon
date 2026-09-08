@@ -31917,6 +31917,10 @@
   ],
   "230": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Scales shed by this Pokémon have such a splendorous gleam to them that they've been given to royalty as gifts."
+    },
+    {
       "version_id": "Gold",
       "flavor_text": "It is said that it usually hides in underwater caves. It can create whirlpools by yawning."
     },
@@ -35187,6 +35191,10 @@
   ],
   "259": [
     {
+      "version_id": "Pokopia",
+      "flavor_text": "Living on muddy ground that provides poor footing has served to train its lower body and caused it to develop sturdy legs."
+    },
+    {
       "version_id": "Ruby",
       "flavor_text": "The surface of Marshtomp's body is enveloped by a thin, sticky film that enables it to live on land. This Pokémon plays in mud on beaches when the ocean tide is low."
     },
@@ -35280,6 +35288,10 @@
     }
   ],
   "260": [
+    {
+      "version_id": "Pokopia",
+      "flavor_text": "Its arms are hard as rock. With one swing, it can break an enormous boulder into pieces."
+    },
     {
       "version_id": "Ruby",
       "flavor_text": "Swampert is very strong. It has enough power to easily drag a boulder weighing more than a ton. This Pokémon also has powerful vision that lets it see even in murky water."

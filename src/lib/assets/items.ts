@@ -59,7 +59,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       gen: 8,
       name: 'Adamant Crystal',
-      shortDesc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2× power.'
     }
   ],
   [
@@ -68,7 +68,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.',
       gen: 4,
       name: 'Adamant Orb',
-      shortDesc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Dialga, its Steel- and Dragon-type attacks have 1.2× power.'
     }
   ],
   [
@@ -223,7 +223,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
       gen: 6,
       name: 'Assault Vest',
-      shortDesc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves."
+      shortDesc: "Holder's Sp. Def is 1.5×, but it can only select damaging moves."
     }
   ],
   [
@@ -437,7 +437,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.',
       gen: 4,
       name: 'Big Root',
-      shortDesc: 'Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.'
+      shortDesc: 'Holder gains 1.3× HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.'
     }
   ],
   [
@@ -485,7 +485,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Fighting-type attacks have 1.2x power.",
       gen: 2,
       name: 'Black Belt',
-      shortDesc: "Holder's Fighting-type attacks have 1.2x power."
+      shortDesc: "Holder's Fighting-type attacks have 1.2× power."
     }
   ],
   [
@@ -494,7 +494,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Dark-type attacks have 1.2x power.",
       gen: 2,
       name: 'Black Glasses',
-      shortDesc: "Holder's Dark-type attacks have 1.2x power."
+      shortDesc: "Holder's Dark-type attacks have 1.2× power."
     }
   ],
   [
@@ -601,7 +601,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'The accuracy of attacks against the holder is 0.9x.',
       gen: 2,
       name: 'Bright Powder',
-      shortDesc: 'The accuracy of attacks against the holder is 0.9x.'
+      shortDesc: 'The accuracy of attacks against the holder is 0.9×.'
     }
   ],
   [
@@ -611,7 +611,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Bug Gem',
-      shortDesc: "Holder's first successful Bug-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Bug-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -727,7 +727,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Fire-type attacks have 1.2x power.",
       gen: 2,
       name: 'Charcoal',
-      shortDesc: "Holder's Fire-type attacks have 1.2x power."
+      shortDesc: "Holder's Fire-type attacks have 1.2× power."
     }
   ],
   [
@@ -832,7 +832,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
       gen: 3,
       name: 'Choice Band',
-      shortDesc: "Holder's Attack is 1.5x, but it can only select the first move it executes."
+      shortDesc: "Holder's Attack is 1.5×, but it can only select the first move it executes."
     }
   ],
   [
@@ -842,7 +842,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Speed is 1.5x, but it can only select the first move it executes.",
       gen: 4,
       name: 'Choice Scarf',
-      shortDesc: "Holder's Speed is 1.5x, but it can only select the first move it executes."
+      shortDesc: "Holder's Speed is 1.5×, but it can only select the first move it executes."
     }
   ],
   [
@@ -852,7 +852,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
       gen: 4,
       name: 'Choice Specs',
-      shortDesc: "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes."
+      shortDesc: "Holder's Sp. Atk is 1.5×, but it can only select the first move it executes."
     }
   ],
   [
@@ -976,7 +976,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.',
       gen: 9,
       name: 'Cornerstone Mask',
-      shortDesc: 'Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.'
+      shortDesc: 'Ogerpon-Cornerstone: 1.2× power attacks; Terastallize to gain Embody Aspect.'
     }
   ],
   [
@@ -1083,7 +1083,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Dark Gem',
-      shortDesc: "Holder's first successful Dark-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Dark-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -1301,7 +1301,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
       gen: 4,
       name: 'Draco Plate',
-      shortDesc: "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type."
+      shortDesc: "Holder's Dragon-type attacks have 1.2× power. Judgment is Dragon type."
     }
   ],
   [
@@ -1319,7 +1319,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Dragon-type attacks have 1.2x power.",
       gen: 2,
       name: 'Dragon Fang',
-      shortDesc: "Holder's Dragon-type attacks have 1.2x power."
+      shortDesc: "Holder's Dragon-type attacks have 1.2× power."
     }
   ],
   [
@@ -1329,7 +1329,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Dragon Gem',
-      shortDesc: "Holder's first successful Dragon-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Dragon-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -1404,7 +1404,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
       gen: 4,
       name: 'Dread Plate',
-      shortDesc: "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type."
+      shortDesc: "Holder's Dark-type attacks have 1.2× power. Judgment is Dark type."
     }
   ],
   [
@@ -1480,7 +1480,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
       gen: 4,
       name: 'Earth Plate',
-      shortDesc: "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type."
+      shortDesc: "Holder's Ground-type attacks have 1.2× power. Judgment is Ground type."
     }
   ],
   [
@@ -1547,7 +1547,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Electric Gem',
-      shortDesc: "Holder's first successful Electric-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Electric-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -1691,7 +1691,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
       gen: 5,
       name: 'Eviolite',
-      shortDesc: "If holder's species can evolve, its Defense and Sp. Def are 1.5x."
+      shortDesc: "If holder's species can evolve, its Defense and Sp. Def are 1.5×."
     }
   ],
   [
@@ -1710,7 +1710,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's attacks that are super effective against the target do 1.2x damage.",
       gen: 4,
       name: 'Expert Belt',
-      shortDesc: "Holder's attacks that are super effective against the target do 1.2x damage."
+      shortDesc: "Holder's attacks that are super effective against the target do 1.2× damage."
     }
   ],
   [
@@ -1749,7 +1749,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Fairy-type attacks have 1.2x power.",
       gen: 9,
       name: 'Fairy Feather',
-      shortDesc: "Holder's Fairy-type attacks have 1.2x power."
+      shortDesc: "Holder's Fairy-type attacks have 1.2× power."
     }
   ],
   [
@@ -1759,7 +1759,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 6,
       isNonstandard: IsNonStandard.Past,
       name: 'Fairy Gem',
-      shortDesc: "Holder's first successful Fairy-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Fairy-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -1837,7 +1837,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Fighting Gem',
-      shortDesc: "Holder's first successful Fighting-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Fighting-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -1885,7 +1885,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Fire Gem',
-      shortDesc: "Holder's first successful Fire-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Fire-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -1942,7 +1942,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
       gen: 4,
       name: 'Fist Plate',
-      shortDesc: "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type."
+      shortDesc: "Holder's Fighting-type attacks have 1.2× power. Judgment is Fighting type."
     }
   ],
   [
@@ -1960,7 +1960,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
       gen: 4,
       name: 'Flame Plate',
-      shortDesc: "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type."
+      shortDesc: "Holder's Fire-type attacks have 1.2× power. Judgment is Fire type."
     }
   ],
   [
@@ -1998,7 +1998,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Flying Gem',
-      shortDesc: "Holder's first successful Flying-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Flying-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -2231,7 +2231,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Ghost Gem',
-      shortDesc: "Holder's first successful Ghost-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Ghost-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -2380,7 +2380,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Grass Gem',
-      shortDesc: "Holder's first successful Grass-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Grass-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -2473,7 +2473,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       gen: 8,
       name: 'Griseous Core',
-      shortDesc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2× power.'
     }
   ],
   [
@@ -2482,7 +2482,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.',
       gen: 4,
       name: 'Griseous Orb',
-      shortDesc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2× power.'
     }
   ],
   [
@@ -2492,7 +2492,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Ground Gem',
-      shortDesc: "Holder's first successful Ground-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Ground-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -2570,7 +2570,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Rock-type attacks have 1.2x power.",
       gen: 2,
       name: 'Hard Stone',
-      shortDesc: "Holder's Rock-type attacks have 1.2x power."
+      shortDesc: "Holder's Rock-type attacks have 1.2× power."
     }
   ],
   [
@@ -2597,7 +2597,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.',
       gen: 9,
       name: 'Hearthflame Mask',
-      shortDesc: 'Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.'
+      shortDesc: 'Ogerpon-Hearthflame: 1.2× power attacks; Terastallize to gain Embody Aspect.'
     }
   ],
   [
@@ -2731,7 +2731,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Ice Gem',
-      shortDesc: "Holder's first successful Ice-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Ice-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -2768,7 +2768,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
       gen: 4,
       name: 'Icicle Plate',
-      shortDesc: "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type."
+      shortDesc: "Holder's Ice-type attacks have 1.2× power. Judgment is Ice type."
     }
   ],
   [
@@ -2816,7 +2816,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
       gen: 4,
       name: 'Insect Plate',
-      shortDesc: "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type."
+      shortDesc: "Holder's Bug-type attacks have 1.2× power. Judgment is Bug type."
     }
   ],
   [
@@ -2844,7 +2844,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
       gen: 4,
       name: 'Iron Plate',
-      shortDesc: "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type."
+      shortDesc: "Holder's Steel-type attacks have 1.2× power. Judgment is Steel type."
     }
   ],
   [
@@ -3077,7 +3077,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       isNonstandard: IsNonStandard.Past,
       name: 'Lax Incense',
-      shortDesc: 'The accuracy of attacks against the holder is 0.9x.'
+      shortDesc: 'The accuracy of attacks against the holder is 0.9×.'
     }
   ],
   [
@@ -3195,7 +3195,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
       gen: 4,
       name: 'Life Orb',
-      shortDesc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack."
+      shortDesc: "Holder's attacks do 1.3× damage, and it loses 1/10 its max HP after the attack."
     }
   ],
   [
@@ -3387,7 +3387,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       gen: 8,
       name: 'Lustrous Globe',
-      shortDesc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2× power.'
     }
   ],
   [
@@ -3396,7 +3396,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.',
       gen: 4,
       name: 'Lustrous Orb',
-      shortDesc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Palkia, its Water- and Dragon-type attacks have 1.2× power.'
     }
   ],
   [
@@ -3495,7 +3495,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Electric-type attacks have 1.2x power.",
       gen: 2,
       name: 'Magnet',
-      shortDesc: "Holder's Electric-type attacks have 1.2x power."
+      shortDesc: "Holder's Electric-type attacks have 1.2× power."
     }
   ],
   [
@@ -3626,7 +3626,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
       gen: 4,
       name: 'Meadow Plate',
-      shortDesc: "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type."
+      shortDesc: "Holder's Grass-type attacks have 1.2× power. Judgment is Grass type."
     }
   ],
   [
@@ -3720,10 +3720,10 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'metalcoat',
     {
-      desc: "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
+      desc: "Holder's Steel-type attacks have 1.2× power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
       gen: 2,
       name: 'Metal Coat',
-      shortDesc: "Holder's Steel-type attacks have 1.2x power."
+      shortDesc: "Holder's Steel-type attacks have 1.2× power."
     }
   ],
   [
@@ -3763,7 +3763,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.',
       gen: 4,
       name: 'Metronome',
-      shortDesc: 'Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.'
+      shortDesc: 'Damage of moves used on consecutive turns is increased. Max 2× after 5 turns.'
     }
   ],
   [
@@ -3802,7 +3802,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
       gen: 4,
       name: 'Micle Berry',
-      shortDesc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use."
+      shortDesc: "Holder's next move has 1.2× accuracy when at 1/4 max HP or less. Single use."
     }
   ],
   [
@@ -3821,7 +3821,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
       gen: 4,
       name: 'Mind Plate',
-      shortDesc: "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type."
+      shortDesc: "Holder's Psychic-type attacks have 1.2× power. Judgment is Psychic type."
     }
   ],
   [
@@ -3850,7 +3850,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Grass-type attacks have 1.2x power.",
       gen: 2,
       name: 'Miracle Seed',
-      shortDesc: "Holder's Grass-type attacks have 1.2x power."
+      shortDesc: "Holder's Grass-type attacks have 1.2× power."
     }
   ],
   [
@@ -3915,7 +3915,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's physical attacks have 1.1x power.",
       gen: 4,
       name: 'Muscle Band',
-      shortDesc: "Holder's physical attacks have 1.1x power."
+      shortDesc: "Holder's physical attacks have 1.1× power."
     }
   ],
   [
@@ -3955,7 +3955,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Water-type attacks have 1.2x power.",
       gen: 2,
       name: 'Mystic Water',
-      shortDesc: "Holder's Water-type attacks have 1.2x power."
+      shortDesc: "Holder's Water-type attacks have 1.2× power."
     }
   ],
   [
@@ -3992,7 +3992,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ice-type attacks have 1.2x power.",
       gen: 2,
       name: 'Never-Melt Ice',
-      shortDesc: "Holder's Ice-type attacks have 1.2x power."
+      shortDesc: "Holder's Ice-type attacks have 1.2× power."
     }
   ],
   [
@@ -4021,7 +4021,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
       gen: 5,
       name: 'Normal Gem',
-      shortDesc: "Holder's first successful Normal-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Normal-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -4090,7 +4090,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       isNonstandard: IsNonStandard.Past,
       name: 'Odd Incense',
-      shortDesc: "Holder's Psychic-type attacks have 1.2x power."
+      shortDesc: "Holder's Psychic-type attacks have 1.2× power."
     }
   ],
   [
@@ -4355,7 +4355,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       isNonstandard: IsNonStandard.Past,
       name: 'Pink Bow',
-      shortDesc: "(Gen 2) Holder's Normal-type attacks have 1.1x power."
+      shortDesc: "(Gen 2) Holder's Normal-type attacks have 1.1× power."
     }
   ],
   [
@@ -4384,7 +4384,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
       gen: 6,
       name: 'Pixie Plate',
-      shortDesc: "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type."
+      shortDesc: "Holder's Fairy-type attacks have 1.2× power. Judgment is Fairy type."
     }
   ],
   [
@@ -4433,7 +4433,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Poison-type attacks have 1.2x power.",
       gen: 2,
       name: 'Poison Barb',
-      shortDesc: "Holder's Poison-type attacks have 1.2x power."
+      shortDesc: "Holder's Poison-type attacks have 1.2× power."
     }
   ],
   [
@@ -4443,7 +4443,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Poison Gem',
-      shortDesc: "Holder's first successful Poison-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Poison-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -4542,7 +4542,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 2,
       isNonstandard: IsNonStandard.Past,
       name: 'Polkadot Bow',
-      shortDesc: "(Gen 2) Holder's Normal-type attacks have 1.1x power."
+      shortDesc: "(Gen 2) Holder's Normal-type attacks have 1.1× power."
     }
   ],
   [
@@ -4768,7 +4768,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Psychic Gem',
-      shortDesc: "Holder's first successful Psychic-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Psychic-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -4815,7 +4815,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's punch-based attacks have 1.1x power and do not make contact.",
       gen: 9,
       name: 'Punching Glove',
-      shortDesc: "Holder's punch-based attacks have 1.1x power and do not make contact."
+      shortDesc: "Holder's punch-based attacks have 1.1× power and do not make contact."
     }
   ],
   [
@@ -5129,7 +5129,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Rock Gem',
-      shortDesc: "Holder's first successful Rock-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Rock-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -5139,7 +5139,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       isNonstandard: IsNonStandard.Past,
       name: 'Rock Incense',
-      shortDesc: "Holder's Rock-type attacks have 1.2x power."
+      shortDesc: "Holder's Rock-type attacks have 1.2× power."
     }
   ],
   [
@@ -5216,7 +5216,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       isNonstandard: IsNonStandard.Past,
       name: 'Rose Incense',
-      shortDesc: "Holder's Grass-type attacks have 1.2x power."
+      shortDesc: "Holder's Grass-type attacks have 1.2× power."
     }
   ],
   [
@@ -5453,7 +5453,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 3,
       isNonstandard: IsNonStandard.Past,
       name: 'Sea Incense',
-      shortDesc: "Holder's Water-type attacks have 1.2x power."
+      shortDesc: "Holder's Water-type attacks have 1.2× power."
     }
   ],
   [
@@ -5502,7 +5502,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Flying-type attacks have 1.2x power.",
       gen: 2,
       name: 'Sharp Beak',
-      shortDesc: "Holder's Flying-type attacks have 1.2x power."
+      shortDesc: "Holder's Flying-type attacks have 1.2× power."
     }
   ],
   [
@@ -5577,7 +5577,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Normal-type attacks have 1.2x power.",
       gen: 3,
       name: 'Silk Scarf',
-      shortDesc: "Holder's Normal-type attacks have 1.2x power."
+      shortDesc: "Holder's Normal-type attacks have 1.2× power."
     }
   ],
   [
@@ -5596,7 +5596,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Bug-type attacks have 1.2x power.",
       gen: 2,
       name: 'Silver Powder',
-      shortDesc: "Holder's Bug-type attacks have 1.2x power."
+      shortDesc: "Holder's Bug-type attacks have 1.2× power."
     }
   ],
   [
@@ -5635,7 +5635,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
       gen: 4,
       name: 'Sky Plate',
-      shortDesc: "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type."
+      shortDesc: "Holder's Flying-type attacks have 1.2× power. Judgment is Flying type."
     }
   ],
   [
@@ -5692,7 +5692,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ground-type attacks have 1.2x power.",
       gen: 2,
       name: 'Soft Sand',
-      shortDesc: "Holder's Ground-type attacks have 1.2x power."
+      shortDesc: "Holder's Ground-type attacks have 1.2× power."
     }
   ],
   [
@@ -5732,7 +5732,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.',
       gen: 3,
       name: 'Soul Dew',
-      shortDesc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.'
+      shortDesc: 'If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2× power.'
     }
   ],
   [
@@ -5751,7 +5751,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ghost-type attacks have 1.2x power.",
       gen: 2,
       name: 'Spell Tag',
-      shortDesc: "Holder's Ghost-type attacks have 1.2x power."
+      shortDesc: "Holder's Ghost-type attacks have 1.2× power."
     }
   ],
   [
@@ -5770,7 +5770,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
       gen: 4,
       name: 'Splash Plate',
-      shortDesc: "Holder's Water-type attacks have 1.2x power. Judgment is Water type."
+      shortDesc: "Holder's Water-type attacks have 1.2× power. Judgment is Water type."
     }
   ],
   [
@@ -5779,7 +5779,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
       gen: 4,
       name: 'Spooky Plate',
-      shortDesc: "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type."
+      shortDesc: "Holder's Ghost-type attacks have 1.2× power. Judgment is Ghost type."
     }
   ],
   [
@@ -5856,7 +5856,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Steel Gem',
-      shortDesc: "Holder's first successful Steel-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Steel-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -5923,7 +5923,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
       gen: 4,
       name: 'Stone Plate',
-      shortDesc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type."
+      shortDesc: "Holder's Rock-type attacks have 1.2× power. Judgment is Rock type."
     }
   ],
   [
@@ -6210,7 +6210,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
       gen: 4,
       name: 'Toxic Plate',
-      shortDesc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type."
+      shortDesc: "Holder's Poison-type attacks have 1.2× power. Judgment is Poison type."
     }
   ],
   [
@@ -7240,7 +7240,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Psychic-type attacks have 1.2x power.",
       gen: 2,
       name: 'Twisted Spoon',
-      shortDesc: "Holder's Psychic-type attacks have 1.2x power."
+      shortDesc: "Holder's Psychic-type attacks have 1.2× power."
     }
   ],
   [
@@ -7326,7 +7326,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 8,
       isNonstandard: IsNonStandard.Cap,
       name: 'Vile Vial',
-      shortDesc: 'If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.'
+      shortDesc: 'If held by a Venomicon, its Poison- and Flying-type attacks have 1.2× power.'
     }
   ],
   [
@@ -7386,7 +7386,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 5,
       isNonstandard: IsNonStandard.Past,
       name: 'Water Gem',
-      shortDesc: "Holder's first successful Water-type attack will have 1.3x power. Single use."
+      shortDesc: "Holder's first successful Water-type attack will have 1.3× power. Single use."
     }
   ],
   [
@@ -7444,7 +7444,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 4,
       isNonstandard: IsNonStandard.Past,
       name: 'Wave Incense',
-      shortDesc: "Holder's Water-type attacks have 1.2x power."
+      shortDesc: "Holder's Water-type attacks have 1.2× power."
     }
   ],
   [
@@ -7463,7 +7463,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'Ogerpon-Wellspring: 1.2x power attacks; Terastallize to gain Embody Aspect.',
       gen: 9,
       name: 'Wellspring Mask',
-      shortDesc: 'Ogerpon-Wellspring: 1.2x power attacks; Terastallize to gain Embody Aspect.'
+      shortDesc: 'Ogerpon-Wellspring: 1.2× power attacks; Terastallize to gain Embody Aspect.'
     }
   ],
   [
@@ -7501,7 +7501,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'The accuracy of attacks by the holder is 1.1x.',
       gen: 4,
       name: 'Wide Lens',
-      shortDesc: 'The accuracy of attacks by the holder is 1.1x.'
+      shortDesc: 'The accuracy of attacks by the holder is 1.1×.'
     }
   ],
   [
@@ -7519,7 +7519,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's special attacks have 1.1x power.",
       gen: 4,
       name: 'Wise Glasses',
-      shortDesc: "Holder's special attacks have 1.1x power."
+      shortDesc: "Holder's special attacks have 1.1× power."
     }
   ],
   [
@@ -7578,7 +7578,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
       gen: 4,
       name: 'Zap Plate',
-      shortDesc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type."
+      shortDesc: "Holder's Electric-type attacks have 1.2× power. Judgment is Electric type."
     }
   ],
   [
@@ -7587,7 +7587,7 @@ export const items = new Collection<string, PokemonTypes.Item>([
       desc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.',
       gen: 4,
       name: 'Zoom Lens',
-      shortDesc: 'The accuracy of attacks by the holder is 1.2x if it moves after its target.'
+      shortDesc: 'The accuracy of attacks by the holder is 1.2× if it moves after its target.'
     }
   ],
   [

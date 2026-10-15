@@ -2,8 +2,8 @@ import { readFile, rm, writeFile } from 'node:fs/promises';
 import { platform, release } from 'node:os';
 import { inspect } from 'node:util';
 import { FetchResultTypes, fetch } from '@sapphire/fetch';
+import { transform } from 'oxc-transform';
 import { format, type FormatConfig } from 'oxfmt';
-import ts from 'typescript';
 import oxfmtConfig from '../.oxfmtrc.json';
 
 const packageJsonRaw = await readFile(new URL('../package.json', import.meta.url), 'utf8');
@@ -17,33 +17,28 @@ export function mapToJson<K extends PropertyKey, V extends object>(map: Map<K, V
 	return JSON.stringify([...map]);
 }
 
-export async function importFileFromWeb<T extends object>({ url, temporaryFileName }): Promise<T> {
+export async function importFileFromWeb<T extends object>({ url, temporaryFileName }: { url: string; temporaryFileName: string }): Promise<T> {
 	const body = await fetch(url, { headers: userAgentHeader }, FetchResultTypes.Text);
 
-	const result = ts.transpileModule(body, {
-		compilerOptions: {
-			module: ts.ModuleKind.ESNext,
-			newLine: ts.NewLineKind.LineFeed,
-			moduleResolution: ts.ModuleResolutionKind.NodeJs,
-			target: ts.ScriptTarget.ESNext,
-			removeComments: true,
-			declaration: false,
-			sourceMap: false,
-			declarationMap: false,
-			incremental: false,
-			importHelpers: false
-		}
+	const result = await transform(temporaryFileName, body, {
+		lang: 'ts',
+		sourceType: 'module',
+		target: 'esnext'
 	});
+
+	if (result.errors.length > 0) {
+		throw new Error(`Failed to compile ${url}: ${result.errors.map((error) => error.message).join('\n')}`);
+	}
 
 	const temporaryOutputFile = new URL(temporaryFileName, import.meta.url);
 
-	await writeFile(temporaryOutputFile, result.outputText);
-	// @ts-expect-error Node supports URLs just fine
-	const tiersData = await import(temporaryOutputFile);
+	await writeFile(temporaryOutputFile, result.code);
 
-	await rm(temporaryOutputFile);
-
-	return tiersData;
+	try {
+		return (await import(temporaryOutputFile.href)) as T;
+	} finally {
+		await rm(temporaryOutputFile);
+	}
 }
 
 export function sortObjectByKey<T extends object>(obj: T): T {

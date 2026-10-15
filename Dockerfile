@@ -30,12 +30,8 @@ FROM base AS builder
 COPY --from=base --chown=node:node /usr/src/app/node_modules/ /usr/src/app/node_modules/
 
 COPY --chown=node:node tsconfig.base.json .
-COPY --chown=node:node tsup.config.ts .
-COPY --chown=node:node .oxfmtrc.json .
+COPY --chown=node:node tsdown.config.ts .
 COPY --chown=node:node src/ src/
-COPY --chown=node:node scripts/on-build-success.ts scripts/on-build-success.ts
-COPY --chown=node:node scripts/utils.ts scripts/utils.ts
-COPY --chown=node:node scripts/tsconfig.json scripts/tsconfig.json
 
 RUN yarn build
 

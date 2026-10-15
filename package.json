@@ -93,7 +93,7 @@
 		"au:cries": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
 	},
 	"dependencies": {
-		"graphql": "17.0.2"
+		"graphql": "16.11.0"
 	},
 	"devDependencies": {
 		"@apollo/server": "^5.5.1",
@@ -141,6 +141,12 @@
 		"unrun": "^0.3.1",
 		"vite": "^8.3.4",
 		"vitest": "^5.0.4"
+	},
+	"resolutions": {
+		"graphql@npm:16.11.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
+		"graphql@npm:16.12.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
+		"graphql@npm:16.13.1": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
+		"graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch"
 	},
 	"lint-staged": {
 		"!(*.mjs|*.js|*.ts)": "oxfmt --no-error-on-unmatched-pattern",

@@ -18,11 +18,11 @@ jobs:
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
-      - name: Run ESLint
-        run: yarn lint --fix=false
+      - name: Run Oxlint
+        run: yarn lint:github
 
   CodeQL:
-    name: Codequality
+    name: Code Quality
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

@@ -9,7 +9,7 @@ import '#dexdata/gen6';
 import '#dexdata/gen7';
 import '#dexdata/gen8';
 import '#dexdata/gen9';
-import { Pokedex } from '#dexdata/pokedex';
 
 /** The entire PokéDex of Pokémon */
-export { Pokedex as pokedex };
+
+export { Pokedex as pokedex } from '#dexdata/pokedex';

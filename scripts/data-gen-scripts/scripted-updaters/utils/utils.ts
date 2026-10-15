@@ -1,3 +1,6 @@
+import { URL } from 'node:url';
+import { rootDir } from '../../../utils';
+
 export function getPokemonGenerationForDexNumber(dexNumber: number) {
 	if (dexNumber >= 0 && dexNumber <= 151) return 1;
 	if (dexNumber >= 152 && dexNumber <= 251) return 2;
@@ -12,26 +15,27 @@ export function getPokemonGenerationForDexNumber(dexNumber: number) {
 	return -1;
 }
 
-export function getModulePathForGeneration(generation: number) {
+export function getModulePathForGeneration(generation: number): URL {
+	const dexdataFolder = new URL('src/lib/assets/pokedex-data/', rootDir);
 	switch (generation) {
 		case 1:
-			return '#dexdata/gen1';
+			return new URL('gen1.ts', dexdataFolder);
 		case 2:
-			return '#dexdata/gen2';
+			return new URL('gen2.ts', dexdataFolder);
 		case 3:
-			return '#dexdata/gen3';
+			return new URL('gen3.ts', dexdataFolder);
 		case 4:
-			return '#dexdata/gen4';
+			return new URL('gen4.ts', dexdataFolder);
 		case 5:
-			return '#dexdata/gen5';
+			return new URL('gen5.ts', dexdataFolder);
 		case 6:
-			return '#dexdata/gen6';
+			return new URL('gen6.ts', dexdataFolder);
 		case 7:
-			return '#dexdata/gen7';
+			return new URL('gen7.ts', dexdataFolder);
 		case 8:
-			return '#dexdata/gen8';
+			return new URL('gen8.ts', dexdataFolder);
 		case 9:
-			return '#dexdata/gen9';
+			return new URL('gen9.ts', dexdataFolder);
 		default:
 			throw new Error(`Invalid generation: ${generation}`);
 	}

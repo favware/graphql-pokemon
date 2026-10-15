@@ -117,9 +117,7 @@ export function replaceEnumLikeValues(data: string): string {
 	return replacedTypesData;
 }
 
-export async function writeDataToFileAndPrettify(data: string, fileResolver: string | URL): Promise<void> {
-	const fileToWriteTo = typeof fileResolver === 'string' ? new URL(import.meta.resolve(fileResolver)) : fileResolver;
-
+export async function writeDataToFileAndPrettify(data: string, fileToWriteTo: URL): Promise<void> {
 	const formattedData = await format('', data, oxfmtConfig as FormatConfig);
 	await writeFile(fileToWriteTo, formattedData.code);
 }

@@ -181,9 +181,7 @@ export function getLearnsetDataset(pokemon: string): Record<string, string[]> | 
 	// If there is still no learnset then try to get it from other formes
 	if (!learnsetFromDataset) {
 		// First ensure the pokemon is retrieved from the dataset
-		if (!pokemonFromDataset) {
-			pokemonFromDataset = pokedex.get(toLowerSingleWordCase(pokemon));
-		}
+		pokemonFromDataset ??= pokedex.get(toLowerSingleWordCase(pokemon));
 
 		for (const otherForm of pokemonFromDataset?.otherFormes ?? []) {
 			learnsetFromDataset = learnsets.get(toLowerSingleWordCase(otherForm));

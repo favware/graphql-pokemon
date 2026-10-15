@@ -1,5 +1,3 @@
-/// <reference lib="es2021" />
-
 import { resolve } from 'node:path';
 import { defineConfig } from 'vitest/config';
 

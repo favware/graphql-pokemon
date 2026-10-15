@@ -1,3 +1,4 @@
+import process from 'node:process';
 import { eachLimit } from 'async';
 import { green } from 'colorette';
 import { pokedex } from '#assets/pokedex.js';

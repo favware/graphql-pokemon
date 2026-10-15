@@ -66,6 +66,7 @@ export function resolveColor(pokemon: Pokemon): number;
  * a {@linkplain https://discord.js.org/docs/packages/discord.js/14.14.1/Embed:Class DiscordJS Embed}
  */
 export function resolveColor(colorOrPokemon: string | Omit<Pokemon, '__typename'>): number {
+	// oxlint-disable-next-line no-param-reassign
 	if (typeof colorOrPokemon !== 'string') colorOrPokemon = colorOrPokemon.color;
 
 	switch (colorOrPokemon) {

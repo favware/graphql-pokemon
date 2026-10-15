@@ -27,6 +27,7 @@ export function pokemonEnumToSpecies(pokemon: PokemonEnum): string {
 		return pokemon;
 	}
 
+	// oxlint-disable-next-line typescript/switch-exhaustiveness-check
 	switch (pokemon) {
 		// Some exclusions that cannot be handled easily by the regex
 		case PokemonEnum.Missingno:
@@ -519,7 +520,5 @@ export function pokemonEnumToSpecies(pokemon: PokemonEnum): string {
 
 const TO_TITLE_CASE = /[A-Za-zÀ-ÖØ-öø-ÿ]\S*/g;
 function toTitleCase(str: string) {
-	return str.replace(TO_TITLE_CASE, (txt) => 
-		txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase()
-	);
+	return str.replace(TO_TITLE_CASE, (txt) => txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase());
 }

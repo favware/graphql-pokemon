@@ -1,8 +1,9 @@
-export function getTextContent(bit1: string) {
+// oxlint-disable prefer-named-capture-group
+export function getTextContent(bit1: string | undefined) {
 	return bit1
 		?.split(/\|[a-z]+=/g)
 		?.at(-1)
-		.replace(/}}$/, '')
+		?.replace(/}}$/, '')
 		.replace(/\s?<small>.+<\/small>/, '')
 		.replaceAll(/<sc>([a-zA-Z0-9 {}|'.-]+)<\/sc>/g, '$1')
 		.replaceAll(/{{[pP]\|([a-zA-Z']+)}}/g, '$1')

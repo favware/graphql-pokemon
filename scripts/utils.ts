@@ -100,6 +100,7 @@ export function replaceEnumLikeValues(data: string): string {
 		.replaceAll(/"?isNonstandard"?: ['"]Gigantamax['"]/g, 'isNonstandard: IsNonStandard.Gigantamax')
 		.replaceAll(/"?isNonstandard"?: ['"]LetsGoPikachuEevee['"]/g, 'isNonstandard: IsNonStandard.LetsGoPikachuEevee');
 
+	// oxlint-disable-next-line prefer-named-capture-group
 	const typesEnumRegex = /"?types"?: \[\s['"]([a-zA-Z]+)['"](?:, ['"]([a-zA-Z]+)['"])?\s\]/g;
 
 	const replacedTypesData = isNonStandardReplacedData.replace(typesEnumRegex, (_, type1, type2) => {

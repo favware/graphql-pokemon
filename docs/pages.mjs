@@ -49,7 +49,7 @@ async function asPage(item) {
 
 		return {
 			title,
-			content: await Promise.all(filesInDirectory.map((item) => asPage(item)))
+			content: await Promise.all(filesInDirectory.map(async (item) => asPage(item)))
 		};
 	}
 
@@ -63,4 +63,4 @@ const pagesDirectory = new URL('pages', import.meta.url);
 
 const filesInPagesDirectory = await getFiles(pagesDirectory);
 
-export const pages = await Promise.all(filesInPagesDirectory.map((item) => asPage(item)));
+export const pages = await Promise.all(filesInPagesDirectory.map(async (item) => asPage(item)));

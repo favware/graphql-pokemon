@@ -1,5 +1,5 @@
 import { writeFile } from 'node:fs/promises';
-import { URL } from 'node:url';
+import { fileURLToPath, URL } from 'node:url';
 import { objectEntries } from '@sapphire/utilities';
 import { green } from 'colorette';
 import { format, type FormatConfig } from 'oxfmt';
@@ -21,7 +21,13 @@ for (const [pokemon, smogonFormatsData] of objectEntries(FormatsData)) {
 }
 
 if (output && Object.entries(output).length) {
-	const formattedOutput = await format('', JSON.stringify(output), oxfmtConfig as FormatConfig);
+	const filePath = fileURLToPath(formatsFileUrl);
+	const formattedOutput = await format(filePath, JSON.stringify(output), oxfmtConfig as FormatConfig);
+
+	if (formattedOutput.errors.length > 0) {
+		throw new Error(`Failed to format ${filePath}: ${formattedOutput.errors.map((error) => error.codeframe ?? error.message).join('\n')}`);
+	}
+
 	await writeFile(formatsFileUrl, formattedOutput.code);
 	console.log(green(`Successfully wrote updated formats data to file`));
 }

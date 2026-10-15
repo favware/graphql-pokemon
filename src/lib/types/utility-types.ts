@@ -4,7 +4,7 @@
  * `NonNullable<T>` and `NonUndefined<T>`
  */
 export type NonNullish<T> = {
-  [P in keyof T]-?: Exclude<T[P], undefined | null>;
+	[P in keyof T]-?: Exclude<T[P], undefined | null>;
 };
 
 export type UnwrapArray<T extends unknown[]> = T extends (infer U)[] ? U : never;

@@ -28,11 +28,11 @@ import { parseBulbapediaURL } from './parseBulbapediaUrl';
  * ```
  */
 export function resolveBulbapediaURL(pokemon: Pokemon) {
-  if (isCapPokemon(pokemon)) throw new RangeError('This function does not work for CAP or PokéStar Pokémon.');
+	if (isCapPokemon(pokemon)) throw new RangeError('This function does not work for CAP or PokéStar Pokémon.');
 
-  return isMissingNo(pokemon)
-    ? 'https://bulbapedia.bulbagarden.net/wiki/MissingNo.'
-    : isM00(pokemon)
-      ? "https://bulbapedia.bulbagarden.net/wiki/'M_(00)"
-      : parseBulbapediaURL(pokemon.bulbapediaPage);
+	return isMissingNo(pokemon)
+		? 'https://bulbapedia.bulbagarden.net/wiki/MissingNo.'
+		: isM00(pokemon)
+			? "https://bulbapedia.bulbagarden.net/wiki/'M_(00)"
+			: parseBulbapediaURL(pokemon.bulbapediaPage);
 }

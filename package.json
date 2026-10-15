@@ -80,17 +80,16 @@
 		"check-update": "cliff-jumper --dry-run",
 		"package": "graphql-codegen && yarn package:compile",
 		"package:compile": "tsdown --config tsdown.config-package.ts",
-		"unrun": "node scripts/run.ts",
-		"au:tiers": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/tiers-updater.ts",
-		"au:learnsets": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/learnsets-updater.ts",
-		"au:testdata": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/update-test-files.ts",
-		"au:flavors": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/flavor-text-updater/flavor-text-updater.ts",
-		"au:classifications": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/classification-updater/classification-updater.ts",
-		"au:ipa": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/ipa-name-updater/ipa-updater.ts",
-		"au:abilities": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/abilities-updater.ts",
-		"au:items": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/items-updater.ts",
-		"au:moves": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/moves-updater.ts",
-		"au:cries": "yarn unrun ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
+		"au:tiers": "unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/tiers-updater.ts",
+		"au:learnsets": "unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/learnsets-updater.ts",
+		"au:testdata": "unrun ./scripts/data-gen-scripts/scripted-updaters/update-test-files.ts",
+		"au:flavors": "unrun ./scripts/data-gen-scripts/scripted-updaters/flavor-text-updater/flavor-text-updater.ts",
+		"au:classifications": "unrun ./scripts/data-gen-scripts/scripted-updaters/classification-updater/classification-updater.ts",
+		"au:ipa": "unrun ./scripts/data-gen-scripts/scripted-updaters/ipa-name-updater/ipa-updater.ts",
+		"au:abilities": "unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/abilities-updater.ts",
+		"au:items": "unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/items-updater.ts",
+		"au:moves": "unrun ./scripts/data-gen-scripts/scripted-updaters/asset-updaters/moves-updater.ts",
+		"au:cries": "unrun ./scripts/data-gen-scripts/scripted-updaters/cries-updater/cry-updater.ts"
 	},
 	"dependencies": {
 		"graphql": "16.11.0"

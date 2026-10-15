@@ -20,27 +20,27 @@ export const fuzzySearch = new FuzzySearch(pokedex, ['num', 'species', 'aliases'
  * **Reversal is applied before pagination!**
  */
 export function getPokemonByDexNumber(args: NonNullish<GetPokemonByDexNumberArgs>, requestedFields: GraphQLSet<keyof Pokemon>): Pokemon {
-  args = validateGetPokemonByDexNumberArgs(args);
+	args = validateGetPokemonByDexNumberArgs(args);
 
-  const pokemonFromDataset = pokedex.find((pokemon) => pokemon.num === args.number);
+	const pokemonFromDataset = pokedex.find((pokemon) => pokemon.num === args.number);
 
-  if (!pokemonFromDataset) {
-    throw new Error(`No Pokémon found for ${args.number}`);
-  }
+	if (!pokemonFromDataset) {
+		throw new Error(`No Pokémon found for ${args.number}`);
+	}
 
-  const graphqlObject = mapPokemonDataToPokemonGraphQL({
-    data: pokemonFromDataset,
-    requestedFields,
-    offsetFlavorTexts: args.offsetFlavorTexts,
-    reverseFlavorTexts: args.reverseFlavorTexts,
-    takeFlavorTexts: args.takeFlavorTexts
-  });
+	const graphqlObject = mapPokemonDataToPokemonGraphQL({
+		data: pokemonFromDataset,
+		requestedFields,
+		offsetFlavorTexts: args.offsetFlavorTexts,
+		reverseFlavorTexts: args.reverseFlavorTexts,
+		takeFlavorTexts: args.takeFlavorTexts
+	});
 
-  if (!graphqlObject) {
-    throw new Error(`Failed to get data for Pokémon: ${args.number}`);
-  }
+	if (!graphqlObject) {
+		throw new Error(`Failed to get data for Pokémon: ${args.number}`);
+	}
 
-  return graphqlObject;
+	return graphqlObject;
 }
 
 /**
@@ -51,27 +51,27 @@ export function getPokemonByDexNumber(args: NonNullish<GetPokemonByDexNumberArgs
  * **Reversal is applied before pagination!**
  */
 export function getPokemon(args: NonNullish<GetPokemonArgs>, requestedFields: GraphQLSet<keyof Pokemon>): Pokemon {
-  args = validateGetPokemonArgs(args);
+	args = validateGetPokemonArgs(args);
 
-  const pokemonData = pokedex.get(args.pokemon);
+	const pokemonData = pokedex.get(args.pokemon);
 
-  if (!pokemonData) {
-    throw new Error(`No Pokémon found for ${args.pokemon}`);
-  }
+	if (!pokemonData) {
+		throw new Error(`No Pokémon found for ${args.pokemon}`);
+	}
 
-  const graphqlObject = mapPokemonDataToPokemonGraphQL({
-    data: pokemonData,
-    offsetFlavorTexts: args.offsetFlavorTexts,
-    reverseFlavorTexts: args.reverseFlavorTexts,
-    takeFlavorTexts: args.takeFlavorTexts,
-    requestedFields
-  });
+	const graphqlObject = mapPokemonDataToPokemonGraphQL({
+		data: pokemonData,
+		offsetFlavorTexts: args.offsetFlavorTexts,
+		reverseFlavorTexts: args.reverseFlavorTexts,
+		takeFlavorTexts: args.takeFlavorTexts,
+		requestedFields
+	});
 
-  if (!graphqlObject) {
-    throw new Error(`Failed to get data for Pokémon: ${args.pokemon}`);
-  }
+	if (!graphqlObject) {
+		throw new Error(`Failed to get data for Pokémon: ${args.pokemon}`);
+	}
 
-  return graphqlObject;
+	return graphqlObject;
 }
 
 /**
@@ -90,35 +90,35 @@ export function getPokemon(args: NonNullish<GetPokemonArgs>, requestedFields: Gr
  * It is advisable to cache responses of this query.
  */
 export function getAllPokemon(args: NonNullish<GetAllPokemonArgs>, requestedFields: GraphQLSet<keyof Pokemon>): Pokemon[] {
-  args = validateGetAllPokemonArgs(args);
+	args = validateGetAllPokemonArgs(args);
 
-  const clonedPokedex = pokedex.clone();
+	const clonedPokedex = pokedex.clone();
 
-  if (args.reverse) {
-    clonedPokedex.reverse();
-  }
+	if (args.reverse) {
+		clonedPokedex.reverse();
+	}
 
-  const pokemonValues = [...clonedPokedex.values()].slice(args.offset, args.offset + args.take);
+	const pokemonValues = [...clonedPokedex.values()].slice(args.offset, args.offset + args.take);
 
-  const graphqlObjects: Pokemon[] = [];
+	const graphqlObjects: Pokemon[] = [];
 
-  for (const pokemonData of pokemonValues) {
-    graphqlObjects.push(
-      mapPokemonDataToPokemonGraphQL({
-        data: pokemonData,
-        requestedFields,
-        offsetFlavorTexts: 0,
-        reverseFlavorTexts: true,
-        takeFlavorTexts: 1
-      })
-    );
-  }
+	for (const pokemonData of pokemonValues) {
+		graphqlObjects.push(
+			mapPokemonDataToPokemonGraphQL({
+				data: pokemonData,
+				requestedFields,
+				offsetFlavorTexts: 0,
+				reverseFlavorTexts: true,
+				takeFlavorTexts: 1
+			})
+		);
+	}
 
-  if (!graphqlObjects.length) {
-    throw new Error('Failed to get data for Pokémon');
-  }
+	if (!graphqlObjects.length) {
+		throw new Error('Failed to get data for Pokémon');
+	}
 
-  return graphqlObjects;
+	return graphqlObjects;
 }
 
 /**
@@ -131,41 +131,41 @@ export function getAllPokemon(args: NonNullish<GetAllPokemonArgs>, requestedFiel
  * **Reversal is applied before pagination!**
  */
 export function getFuzzyPokemon(args: NonNullish<GetFuzzyPokemonArgs>, requestedFields: GraphQLSet<keyof Pokemon>): Pokemon[] {
-  args = validateGetFuzzyPokemonArgs(args);
+	args = validateGetFuzzyPokemonArgs(args);
 
-  args.pokemon = parseFormeIdentifiers(preParseInput(args.pokemon));
+	args.pokemon = parseFormeIdentifiers(preParseInput(args.pokemon));
 
-  let fuzzyEntries = fuzzySearch.runFuzzy(args.pokemon);
+	let fuzzyEntries = fuzzySearch.runFuzzy(args.pokemon);
 
-  if (!fuzzyEntries.length) {
-    throw new Error(`No Pokémon found for ${args.pokemon}`);
-  }
+	if (!fuzzyEntries.length) {
+		throw new Error(`No Pokémon found for ${args.pokemon}`);
+	}
 
-  if (args.reverse) {
-    fuzzyEntries.reverse();
-  }
+	if (args.reverse) {
+		fuzzyEntries.reverse();
+	}
 
-  fuzzyEntries = fuzzyEntries.slice(args.offset, args.offset + args.take);
+	fuzzyEntries = fuzzyEntries.slice(args.offset, args.offset + args.take);
 
-  const graphqlObjects: Pokemon[] = [];
+	const graphqlObjects: Pokemon[] = [];
 
-  for (const pokemonData of fuzzyEntries) {
-    graphqlObjects.push(
-      mapPokemonDataToPokemonGraphQL({
-        data: pokemonData,
-        requestedFields,
-        offsetFlavorTexts: args.offsetFlavorTexts,
-        reverseFlavorTexts: args.reverseFlavorTexts,
-        takeFlavorTexts: args.takeFlavorTexts
-      })
-    );
-  }
+	for (const pokemonData of fuzzyEntries) {
+		graphqlObjects.push(
+			mapPokemonDataToPokemonGraphQL({
+				data: pokemonData,
+				requestedFields,
+				offsetFlavorTexts: args.offsetFlavorTexts,
+				reverseFlavorTexts: args.reverseFlavorTexts,
+				takeFlavorTexts: args.takeFlavorTexts
+			})
+		);
+	}
 
-  if (!graphqlObjects.length) {
-    throw new Error(`Failed to get data for Pokémon: ${args.pokemon}`);
-  }
+	if (!graphqlObjects.length) {
+		throw new Error(`Failed to get data for Pokémon: ${args.pokemon}`);
+	}
 
-  return graphqlObjects;
+	return graphqlObjects;
 }
 
 /**
@@ -229,57 +229,57 @@ export function getFuzzyPokemon(args: NonNullish<GetFuzzyPokemonArgs>, requested
  * ```
  */
 function parseFormeIdentifiers(pokemon: string) {
-  switch (pokemon.split(' ')[0]) {
-    case 'mega':
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
-      break;
-    case 'gigantamax':
-    case 'gmax':
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-gmax`;
-      break;
-    case 'alola':
-    case 'alolan':
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-alola`;
-      break;
-    case 'galar':
-    case 'galarian':
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-galar`;
-      break;
-    case 'paldea':
-    case 'paldean':
-      pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-paldea`;
-      break;
-    default:
-      break;
-  }
+	switch (pokemon.split(' ')[0]) {
+		case 'mega':
+			pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-mega`;
+			break;
+		case 'gigantamax':
+		case 'gmax':
+			pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-gmax`;
+			break;
+		case 'alola':
+		case 'alolan':
+			pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-alola`;
+			break;
+		case 'galar':
+		case 'galarian':
+			pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-galar`;
+			break;
+		case 'paldea':
+		case 'paldean':
+			pokemon = `${pokemon.substring(pokemon.split(' ')[0].length + 1)}-paldea`;
+			break;
+		default:
+			break;
+	}
 
-  if (pokemon.startsWith('mega')) {
-    pokemon = `${pokemon.substring(4, pokemon.length)}mega`;
-  }
+	if (pokemon.startsWith('mega')) {
+		pokemon = `${pokemon.substring(4, pokemon.length)}mega`;
+	}
 
-  if (pokemon.startsWith('gigantamax')) {
-    pokemon = `${pokemon.substring(10, pokemon.length)}gmax`;
-  } else if (pokemon.startsWith('gmax')) {
-    pokemon = `${pokemon.substring(4, pokemon.length)}gmax`;
-  }
+	if (pokemon.startsWith('gigantamax')) {
+		pokemon = `${pokemon.substring(10, pokemon.length)}gmax`;
+	} else if (pokemon.startsWith('gmax')) {
+		pokemon = `${pokemon.substring(4, pokemon.length)}gmax`;
+	}
 
-  if (pokemon.startsWith('alolan')) {
-    pokemon = `${pokemon.substring(6, pokemon.length)}alola`;
-  } else if (pokemon.startsWith('alola')) {
-    pokemon = `${pokemon.substring(5, pokemon.length)}alola`;
-  }
+	if (pokemon.startsWith('alolan')) {
+		pokemon = `${pokemon.substring(6, pokemon.length)}alola`;
+	} else if (pokemon.startsWith('alola')) {
+		pokemon = `${pokemon.substring(5, pokemon.length)}alola`;
+	}
 
-  if (pokemon.startsWith('galarian')) {
-    pokemon = `${pokemon.substring(8, pokemon.length)}galar`;
-  } else if (pokemon.startsWith('galar')) {
-    pokemon = `${pokemon.substring(5, pokemon.length)}galar`;
-  }
+	if (pokemon.startsWith('galarian')) {
+		pokemon = `${pokemon.substring(8, pokemon.length)}galar`;
+	} else if (pokemon.startsWith('galar')) {
+		pokemon = `${pokemon.substring(5, pokemon.length)}galar`;
+	}
 
-  if (pokemon.startsWith('paldean')) {
-    pokemon = `${pokemon.substring(7, pokemon.length)}paldea`;
-  } else if (pokemon.startsWith('paldea')) {
-    pokemon = `${pokemon.substring(6, pokemon.length)}paldea`;
-  }
+	if (pokemon.startsWith('paldean')) {
+		pokemon = `${pokemon.substring(7, pokemon.length)}paldea`;
+	} else if (pokemon.startsWith('paldea')) {
+		pokemon = `${pokemon.substring(6, pokemon.length)}paldea`;
+	}
 
-  return pokemon;
+	return pokemon;
 }

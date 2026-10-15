@@ -13,27 +13,27 @@ import { fileURLToPath } from 'node:url';
  * @returns {Promise<Array<{ dir: boolean; name: string; path: string; }>>} The files in the directory
  */
 async function getFiles(dir) {
-  /**
-   * @type Array<{ dir: boolean; name: string; path: string; }>
-   */
-  const result = [];
-  const dirAsPathString = dir instanceof URL ? fileURLToPath(dir) : dir;
+	/**
+	 * @type Array<{ dir: boolean; name: string; path: string; }>
+	 */
+	const result = [];
+	const dirAsPathString = dir instanceof URL ? fileURLToPath(dir) : dir;
 
-  const dirContents = await readdir(dir);
+	const dirContents = await readdir(dir);
 
-  for (const item of dirContents) {
-    const currentPath = join(dirAsPathString, item);
+	for (const item of dirContents) {
+		const currentPath = join(dirAsPathString, item);
 
-    const currentPathStat = await stat(currentPath);
+		const currentPathStat = await stat(currentPath);
 
-    result.push({
-      dir: currentPathStat.isDirectory(),
-      name: item,
-      path: currentPath
-    });
-  }
+		result.push({
+			dir: currentPathStat.isDirectory(),
+			name: item,
+			path: currentPath
+		});
+	}
 
-  return result;
+	return result;
 }
 
 /**
@@ -42,24 +42,24 @@ async function getFiles(dir) {
  * @returns {{ title: string; content: any }} Returns the item as a Page
  */
 async function asPage(item) {
-  const title = item.name.split('.')[1];
+	const title = item.name.split('.')[1];
 
-  if (item.dir) {
-    const filesInDirectory = await getFiles(item.path);
+	if (item.dir) {
+		const filesInDirectory = await getFiles(item.path);
 
-    return {
-      title,
-      content: await Promise.all(filesInDirectory.map((item) => asPage(item)))
-    };
-  }
+		return {
+			title,
+			content: await Promise.all(filesInDirectory.map((item) => asPage(item)))
+		};
+	}
 
-  return {
-    title,
-    content: await readFile(item.path, { encoding: 'utf-8' })
-  };
+	return {
+		title,
+		content: await readFile(item.path, { encoding: 'utf8' })
+	};
 }
 
-const pagesDirectory = new URL('./pages', import.meta.url);
+const pagesDirectory = new URL('pages', import.meta.url);
 
 const filesInPagesDirectory = await getFiles(pagesDirectory);
 

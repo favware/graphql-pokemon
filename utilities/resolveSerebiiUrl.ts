@@ -25,7 +25,7 @@ import { isCapPokemon, isMissingNoOrM00 } from './guards';
  * ```
  */
 export function resolveSerebiiUrl(pokemon: Pokemon) {
-  if (isCapPokemon(pokemon)) throw new RangeError('This function does not work for CAP or PokéStar Pokémon.');
+	if (isCapPokemon(pokemon)) throw new RangeError('This function does not work for CAP or PokéStar Pokémon.');
 
-  return isMissingNoOrM00(pokemon) ? 'https://www.serebii.net/pokedex/000.shtml' : pokemon.serebiiPage;
+	return isMissingNoOrM00(pokemon) ? 'https://www.serebii.net/pokedex/000.shtml' : pokemon.serebiiPage;
 }

@@ -10,7 +10,7 @@ import { PokemonEnum, type Pokemon } from '../codegen/graphql-pokemon';
  * @returns `true` if the Pokemon is MissingNo, `false` otherwise.
  */
 export function isMissingNo(pokemon: Pokemon) {
-  return pokemon.key === PokemonEnum.Missingno;
+	return pokemon.key === PokemonEnum.Missingno;
 }
 
 /**
@@ -23,7 +23,7 @@ export function isMissingNo(pokemon: Pokemon) {
  * @returns `true` if the Pokemon is M00, `false` otherwise.
  */
 export function isM00(pokemon: Pokemon) {
-  return pokemon.key === PokemonEnum.M00;
+	return pokemon.key === PokemonEnum.M00;
 }
 
 /**
@@ -36,7 +36,7 @@ export function isM00(pokemon: Pokemon) {
  * @returns `true` if the Pokemon is MissingNo or M00, `false` otherwise.
  */
 export function isMissingNoOrM00(pokemon: Pokemon) {
-  return isMissingNo(pokemon) || isM00(pokemon);
+	return isMissingNo(pokemon) || isM00(pokemon);
 }
 
 /**
@@ -49,7 +49,7 @@ export function isMissingNoOrM00(pokemon: Pokemon) {
  * @returns `true` if the Pokemon is a Cap Pokemon, `false` otherwise.
  */
 export function isCapPokemon(pokemon: Pokemon) {
-  return pokemon.num < 0;
+	return pokemon.num < 0;
 }
 
 /**
@@ -60,5 +60,5 @@ export function isCapPokemon(pokemon: Pokemon) {
  * @returns `true` if the Pokemon is regular, `false` otherwise.
  */
 export function isRegularPokemon(pokemon: Pokemon) {
-  return pokemon.num > 0;
+	return pokemon.num > 0;
 }

@@ -7,36 +7,36 @@ let cookies: null | object;
 let sessionTicker: number = 0;
 
 export async function fetchFlareSolverr(url: URL | string): Promise<FlareSolverrResponse> {
-  await createFlaresolverrSession();
+	await createFlaresolverrSession();
 
-  const response = await fetch<FlareSolverrResponse>(
-    'http://localhost:8191/v1',
-    {
-      method: FetchMethods.Post,
-      headers: {
-        ...userAgentHeader,
-        'Content-Type': FetchMediaContentTypes.JSON
-      },
-      body: JSON.stringify({
-        cmd: 'request.get',
-        url,
-        maxTimeout: 120_000,
-        // session: getCurrentSession(),
-        cookies
-      })
-    },
-    FetchResultTypes.JSON
-  );
+	const response = await fetch<FlareSolverrResponse>(
+		'http://localhost:8191/v1',
+		{
+			method: FetchMethods.Post,
+			headers: {
+				...userAgentHeader,
+				'Content-Type': FetchMediaContentTypes.JSON
+			},
+			body: JSON.stringify({
+				cmd: 'request.get',
+				url,
+				maxTimeout: 120_000,
+				// session: getCurrentSession(),
+				cookies
+			})
+		},
+		FetchResultTypes.JSON
+	);
 
-  sessionTicker++;
-  cookies = response.solution.cookies;
+	sessionTicker++;
+	cookies = response.solution.cookies;
 
-  if (sessionTicker >= 50) {
-    cookies = null;
-    await destroyFlaresolverrSession();
-  }
+	if (sessionTicker >= 50) {
+		cookies = null;
+		await destroyFlaresolverrSession();
+	}
 
-  return response;
+	return response;
 }
 
 /**
@@ -44,22 +44,22 @@ export async function fetchFlareSolverr(url: URL | string): Promise<FlareSolverr
  * @returns A promise that resolves to void.
  */
 export async function createFlaresolverrSession(): Promise<void> {
-  const response = await fetch<FlareSolverrSessionCreateResponse>(
-    'http://localhost:8191/v1',
-    {
-      method: FetchMethods.Post,
-      headers: {
-        ...userAgentHeader,
-        'Content-Type': FetchMediaContentTypes.JSON
-      },
-      body: JSON.stringify({
-        cmd: 'sessions.create'
-      })
-    },
-    FetchResultTypes.JSON
-  );
+	const response = await fetch<FlareSolverrSessionCreateResponse>(
+		'http://localhost:8191/v1',
+		{
+			method: FetchMethods.Post,
+			headers: {
+				...userAgentHeader,
+				'Content-Type': FetchMediaContentTypes.JSON
+			},
+			body: JSON.stringify({
+				cmd: 'sessions.create'
+			})
+		},
+		FetchResultTypes.JSON
+	);
 
-  currentSession = response.session;
+	currentSession = response.session;
 }
 
 /**
@@ -67,21 +67,21 @@ export async function createFlaresolverrSession(): Promise<void> {
  * @returns A promise that resolves when the session is destroyed.
  */
 export async function destroyFlaresolverrSession(): Promise<void> {
-  await fetch<FlareSolverrSessionCreateResponse>(
-    'http://localhost:8191/v1',
-    {
-      method: FetchMethods.Post,
-      headers: {
-        ...userAgentHeader,
-        'Content-Type': FetchMediaContentTypes.JSON
-      },
-      body: JSON.stringify({
-        cmd: 'sessions.destroy',
-        session: getCurrentSession()
-      })
-    },
-    FetchResultTypes.JSON
-  );
+	await fetch<FlareSolverrSessionCreateResponse>(
+		'http://localhost:8191/v1',
+		{
+			method: FetchMethods.Post,
+			headers: {
+				...userAgentHeader,
+				'Content-Type': FetchMediaContentTypes.JSON
+			},
+			body: JSON.stringify({
+				cmd: 'sessions.destroy',
+				session: getCurrentSession()
+			})
+		},
+		FetchResultTypes.JSON
+	);
 }
 
 /**
@@ -90,5 +90,5 @@ export async function destroyFlaresolverrSession(): Promise<void> {
  * @returns The current session as a string.
  */
 export function getCurrentSession(): string {
-  return currentSession;
+	return currentSession;
 }

@@ -1,17 +1,17 @@
-import { baseFuzzySchema, type BaseFuzzyArgs } from '#validations/fuzzyArgs/base';
 import { s, type SchemaOf } from '@sapphire/shapeshift';
+import { baseFuzzySchema, type BaseFuzzyArgs } from '#validations/fuzzyArgs/base';
 
 export interface GetFuzzyAbilityArgs extends BaseFuzzyArgs {
-  /**
-   * The ability to fuzzily search
-   */
-  ability: string;
+	/**
+	 * The ability to fuzzily search
+	 */
+	ability: string;
 }
 
 const getFuzzyAbilitySchema: SchemaOf<GetFuzzyAbilityArgs> = baseFuzzySchema.extend({
-  ability: s.string({ message: 'The ability has to be a string' })
+	ability: s.string({ message: 'The ability has to be a string' })
 });
 
 export function validateGetFuzzyAbilityArgs(args: GetFuzzyAbilityArgs): GetFuzzyAbilityArgs {
-  return getFuzzyAbilitySchema.parse(args);
+	return getFuzzyAbilitySchema.parse(args);
 }

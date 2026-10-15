@@ -1,4 +1,5 @@
 import { execFile } from 'node:child_process';
+import process from 'node:process';
 import { inspect } from 'node:util';
 
 export function dataToClipboard<T>(data: T): void {

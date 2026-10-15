@@ -1,10 +1,11 @@
 import { appendFile } from 'node:fs/promises';
+import process from 'node:process';
 import { bold } from 'colorette';
 
 export interface LogParamaters {
 	bypassCiCheck?: boolean;
 	msg: string;
-	color: (msg: string) => string;
+	color(msg: string): string;
 	isBold: boolean;
 	isIndent: boolean;
 	logFile: URL;

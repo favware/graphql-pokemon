@@ -1,6 +1,7 @@
 import type { IsNonStandard } from '#utils/isNonStandardEnum';
 import type { TypesEnum } from '#utils/pokemonTypes';
 
+// oxlint-disable-next-line typescript/no-namespace
 export namespace PokemonTypes {
 	interface AliasEntry {
 		key?: string;

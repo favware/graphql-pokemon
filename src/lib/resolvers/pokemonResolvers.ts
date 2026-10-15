@@ -1,3 +1,4 @@
+// oxlint-disable unicorn/prefer-string-slice no-param-reassign
 import { pokedex } from '#assets/pokedex';
 import { mapPokemonDataToPokemonGraphQL } from '#mappers/pokemonMapper';
 import type { Pokemon } from '#types/graphql-mapped-types';

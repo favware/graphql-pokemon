@@ -22,6 +22,7 @@ interface ParseSpeciesForSpriteParams {
 	specialSprite?: string;
 }
 
+// oxlint-disable-next-line prefer-named-capture-group
 const MegaSpriteRegex = /^(.+)-([xy])$/g;
 const SpriteUrls = {
 	baseUrl: 'https://play.pokemonshowdown.com/sprites/',
@@ -67,14 +68,15 @@ export function parseSpeciesForSprite({
 	if (parsedSpecialSprite) return parsedSpecialSprite;
 
 	if (!baseSpecies) {
+		// oxlint-disable-next-line no-param-reassign
 		pokemonName = toLowerSingleWordCase(pokemonName);
 	}
 
 	if (MegaSpriteRegex.test(pokemonName)) {
+		// oxlint-disable-next-line no-param-reassign
 		pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
 	}
 
-	// TODO: Remove when Showdown adds GIFs of Gen 9 Pokémon
 	// Parse differently for remaining generation 9 Pokémon
 	switch (pokemonNumber) {
 		case 990:
@@ -169,10 +171,12 @@ function isAprilFools() {
 
 function parseAsAfd(pokemonName: string, baseSpecies: string | undefined, shiny: boolean, backSprite: boolean) {
 	if (!baseSpecies) {
+		// oxlint-disable-next-line no-param-reassign
 		pokemonName = toLowerSingleWordCase(pokemonName);
 	}
 
 	if (MegaSpriteRegex.test(pokemonName)) {
+		// oxlint-disable-next-line no-param-reassign
 		pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
 	}
 

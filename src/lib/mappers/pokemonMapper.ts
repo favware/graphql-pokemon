@@ -47,7 +47,7 @@ export function mapPokemonDataToPokemonGraphQL({
 
 	const genderEntryRequestedFields = cast<GraphQLSet<keyof Gender>>(requestedFields);
 	const genderObject: Gender = {} as Gender;
-	const basePokemonGenderRatio: PokemonTypes.DexEntry['genderRatio'] = data.genderRatio || {
+	const basePokemonGenderRatio: PokemonTypes.DexEntry['genderRatio'] = data.genderRatio ?? {
 		male: '50%',
 		female: '50%'
 	};
@@ -310,7 +310,7 @@ export function mapPokemonDataToPokemonGraphQL({
 
 	const catchRateRequestedFields = cast<GraphQLSet<keyof CatchRate>>(requestedFields);
 	const catchRateObject: CatchRate = {} as CatchRate;
-	const basePokemonCatchRate: PokemonTypes.DexEntry['catchRate'] = data.catchRate || {
+	const basePokemonCatchRate: PokemonTypes.DexEntry['catchRate'] = data.catchRate ?? {
 		base: 0,
 		percentageWithOrdinaryPokeballAtFullHealth: '0%'
 	};
@@ -847,7 +847,7 @@ function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, 
 		return toLowerSingleWordCase(basePokemonData.species);
 	}
 
-	return toLowerSingleWordCase(basePokemonData.baseSpecies || basePokemonData.species);
+	return toLowerSingleWordCase(basePokemonData.baseSpecies ?? basePokemonData.species);
 }
 
 /**

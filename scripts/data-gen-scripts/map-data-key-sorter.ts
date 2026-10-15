@@ -17,6 +17,7 @@ const dataSortedKeys = data.sort((_, __, c, d) => {
 
 const finalCollection = new Collection<string, any>();
 
+// oxlint-disable-next-line prefer-const
 for (let [entryKey, entryData] of dataSortedKeys.entries()) {
 	Reflect.deleteProperty(entryData, 'key');
 

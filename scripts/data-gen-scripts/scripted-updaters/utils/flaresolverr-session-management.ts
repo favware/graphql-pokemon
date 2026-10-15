@@ -4,7 +4,7 @@ import type { FlareSolverrResponse, FlareSolverrSessionCreateResponse } from './
 
 let currentSession: string;
 let cookies: null | object;
-let sessionTicker: number = 0;
+let sessionTicker = 0;
 
 export async function fetchFlareSolverr(url: URL | string): Promise<FlareSolverrResponse> {
 	await createFlaresolverrSession();

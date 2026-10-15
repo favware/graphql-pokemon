@@ -1,4 +1,5 @@
 import { writeFile } from 'node:fs/promises';
+import process from 'node:process';
 import { fetch, FetchMediaContentTypes, FetchMethods, FetchResultTypes } from '@sapphire/fetch';
 import { each } from 'async';
 import * as cheerio from 'cheerio';

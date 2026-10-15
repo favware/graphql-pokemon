@@ -19,7 +19,7 @@ export async function doubleGameUpdater(
 	const game1Based = getTextContent(textSplitByNewLine?.find((e) => regexGame12.test(e)));
 	const game2Based = getTextContent(textSplitByNewLine?.find((e) => regexGame21.test(e)));
 
-	const gameData = game1Based || game2Based;
+	const gameData = game1Based ?? game2Based;
 	await log({
 		msg: `${logPrefix}Retrieved ${game1}-${game2} Combined data, it is ${gameData ? 'defined' : 'not defined'}`,
 		color: yellow,

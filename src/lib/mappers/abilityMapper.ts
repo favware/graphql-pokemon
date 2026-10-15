@@ -6,6 +6,11 @@ import type { Ability, Pokemon } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 
+export const enum AbilityReferencedCallIdentifier {
+	None = 'none',
+	PokemonToAbility = 'pokemonToAbility'
+}
+
 export function mapAbilityDataToAbilityGraphQL({
 	data,
 	requestedFields,
@@ -76,11 +81,6 @@ export function mapAbilityDataToAbilityGraphQL({
 	}
 
 	return abilityObject;
-}
-
-export const enum AbilityReferencedCallIdentifier {
-	None = 'none',
-	PokemonToAbility = 'pokemonToAbility'
 }
 
 interface MapAbilityDataToAbilityGraphQLParameters {

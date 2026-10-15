@@ -96,7 +96,7 @@ function fieldTreeFromAST<T extends SelectionNode>(
 			const name = val.name.value;
 			const isReserved = name.startsWith('_') && name[1] === '_' && name !== '__id';
 			if (!isReserved) {
-				const alias: string = val.alias?.value ? val.alias.value : name;
+				const alias: string = val.alias?.value ?? name;
 				const field = getFieldFromAST(val, parentType);
 				if (!field) {
 					return tree;

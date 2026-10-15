@@ -1,7 +1,8 @@
 import { readFile } from 'node:fs/promises';
+import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { entries } from '../../src/lib/assets/pokedex-data/gen9.js';
+import { sortObjectByKey } from '../utils.js';
 import { dataToClipboard } from './data-to-clipboard.js';
-import { sortObjectByKey } from './map-data-key-sorter.js';
 
 const pathToFile = new URL('sample.json', import.meta.url);
 const file = await readFile(pathToFile, { encoding: 'utf8' });
@@ -13,18 +14,19 @@ function findPokemon(pokemon: string) {
 
 const newMap = new Map();
 
+// oxlint-disable-next-line prefer-const
 for (let [species, data] of entries.values()) {
 	Reflect.deleteProperty(data, 'key');
 
 	const pokemon = findPokemon(species);
 
 	if (pokemon) {
-		data.genderRatio = pokemon.genderRatio;
+		data.genderRatio = pokemon.genderRatio as any;
 		data.evYields = {} as any;
-		data.isEggObtainable = pokemon.isEggObtainable;
-		data.catchRate = pokemon.catchRate;
+		data.isEggObtainable = pokemon.isEggObtainable as any;
+		data.catchRate = pokemon.catchRate as any;
 		data.levellingRate = pokemon.levellingRate as any;
-		data.minimumHatchTime = pokemon.minimumHatchTime;
+		data.minimumHatchTime = pokemon.minimumHatchTime as any;
 	}
 
 	data = sortObjectByKey(data);

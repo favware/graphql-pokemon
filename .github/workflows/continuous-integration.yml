@@ -9,26 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
-      - name: Add problem matcher
-        run: echo "::add-matcher::.github/problemMatchers/eslint.json"
-      - name: Use Node.js v20
-        uses: actions/setup-node@v6
+        uses: actions/checkout@v7
+      - name: Use Node.js v24
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: yarn
           registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
         run: yarn --immutable
-      - name: Run ESLint
-        run: yarn lint --fix=false
+      - name: Run Oxlint
+        run: yarn lint:github
 
   CodeQL:
-    name: Codequality
+    name: Code Quality
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
         with:
@@ -42,9 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
-      - name: Use Node.js v20
-        uses: actions/setup-node@v6
+        uses: actions/checkout@v7
+      - name: Use Node.js v24
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: yarn
@@ -59,11 +57,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
-      - name: Add problem matcher
-        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
-      - name: Use Node.js v20
-        uses: actions/setup-node@v6
+        uses: actions/checkout@v7
+      - name: Use Node.js v24
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: yarn

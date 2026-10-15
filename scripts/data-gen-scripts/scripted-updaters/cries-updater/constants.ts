@@ -1,5 +1,6 @@
-export const logFile = new URL('./output.log', import.meta.url);
+export const logFile = new URL('output.log', import.meta.url);
 
+// oxlint-disable-next-line prefer-named-capture-group
 export const MegaSpriteRegex = /^(.+)-(x|y)$/g;
 
 export const baseUrl = 'https://play.pokemonshowdown.com/audio/cries' as const;

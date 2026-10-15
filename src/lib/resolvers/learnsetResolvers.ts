@@ -1,3 +1,4 @@
+import { lazy } from '@sapphire/utilities';
 import { moves } from '#assets/moves';
 import { pokedex } from '#assets/pokedex';
 import { mapPokemonAndMovesToLearnsetGraphQL } from '#mappers/learnsetMapper';
@@ -8,7 +9,6 @@ import type { NonNullish } from '#types/utility-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
 import { toLowerSingleWordCase } from '#utils/utils';
 import { validateGetLearnsetArgs, type GetLearnsetArgs } from '#validations/getLearnsetArgs';
-import { lazy } from '@sapphire/utilities';
 
 const formatter = lazy(() => new Intl.ListFormat('en', { style: 'long', type: 'conjunction' }));
 
@@ -20,19 +20,21 @@ const formatter = lazy(() => new Intl.ListFormat('en', { style: 'long', type: 'c
  * You can also apply a generation filter (only results for the given generation will be returned) with the generation argument
  */
 export function getLearnset(args: NonNullish<GetLearnsetArgs>, requestedFields: GraphQLSet<keyof Learnset>): Learnset {
-  args = validateGetLearnsetArgs(args);
+	const validatedArgs = validateGetLearnsetArgs(args);
 
-  const graphqlObject = mapPokemonAndMovesToLearnsetGraphQL({ args, requestedFields });
+	const graphqlObject = mapPokemonAndMovesToLearnsetGraphQL({ args: validatedArgs, requestedFields });
 
-  if (!graphqlObject) {
-    const movesString = args.moves.length > 1 ? 'moves' : 'move';
-    const movesList = formatter().format(args.moves);
-    const generationString = args.generation ? ` with generation filter set to ${args.generation}` : '';
+	if (!graphqlObject) {
+		const movesString = validatedArgs.moves.length > 1 ? 'moves' : 'move';
+		const movesList = formatter().format(validatedArgs.moves);
+		const generationString = validatedArgs.generation ? ` with generation filter set to ${validatedArgs.generation}` : '';
 
-    throw new Error(`Failed to get learnsets for the combination of Pokémon "${args.pokemon}", and ${movesString} "${movesList}"${generationString}`);
-  }
+		throw new Error(
+			`Failed to get learnsets for the combination of Pokémon "${validatedArgs.pokemon}", and ${movesString} "${movesList}"${generationString}`
+		);
+	}
 
-  return graphqlObject;
+	return graphqlObject;
 }
 
 /**
@@ -45,36 +47,36 @@ export function getLearnset(args: NonNullish<GetLearnsetArgs>, requestedFields: 
  * You can also apply a generation filter (only results for the given generation will be returned) with the generation argument
  */
 export function getFuzzyLearnset(args: NonNullish<GetLearnsetArgs>, requestedFields: GraphQLSet<keyof Learnset>): Learnset {
-  args = validateGetLearnsetArgs(args);
+	const validatedArgs = validateGetLearnsetArgs(args);
 
-  // Try and get an exactly matching Pokémon
-  const pokemonData = pokedex.get(args.pokemon);
+	// Try and get an exactly matching Pokémon
+	const pokemonData = pokedex.get(validatedArgs.pokemon);
 
-  // If it not an exact move then perform a fuzzy search
-  if (!pokemonData) {
-    const fuzzyEntry = pokemonFuzzySearch.runFuzzy(args.pokemon);
-    if (fuzzyEntry === undefined || !fuzzyEntry.length) {
-      throw new Error(`Failed to get data for Pokémon: ${args.pokemon}`);
-    }
-    args.pokemon = toLowerSingleWordCase(fuzzyEntry[0].species);
-  }
+	// If it not an exact move then perform a fuzzy search
+	if (!pokemonData) {
+		const fuzzyEntry = pokemonFuzzySearch.runFuzzy(validatedArgs.pokemon);
+		if (fuzzyEntry === undefined || !fuzzyEntry.length) {
+			throw new Error(`Failed to get data for Pokémon: ${validatedArgs.pokemon}`);
+		}
+		validatedArgs.pokemon = toLowerSingleWordCase(fuzzyEntry[0].species);
+	}
 
-  for (const [index, move] of args.moves.entries()) {
-    // Try and get an exactly matching move
-    const moveFromDataset = moves.get(move);
+	for (const [index, move] of validatedArgs.moves.entries()) {
+		// Try and get an exactly matching move
+		const moveFromDataset = moves.get(move);
 
-    // If it not an exact move then perform a fuzzy search
-    if (!moveFromDataset) {
-      const fuzzyEntry = moveFuzzySearch.runFuzzy(move);
+		// If it not an exact move then perform a fuzzy search
+		if (!moveFromDataset) {
+			const fuzzyEntry = moveFuzzySearch.runFuzzy(move);
 
-      if (fuzzyEntry === undefined || !fuzzyEntry.length) {
-        throw new Error(`Failed to get data for move: ${move}`);
-      }
+			if (fuzzyEntry === undefined || !fuzzyEntry.length) {
+				throw new Error(`Failed to get data for move: ${move}`);
+			}
 
-      // And overwrite the move at  this index with the proper entry
-      args.moves[index] = toLowerSingleWordCase(fuzzyEntry[0].name);
-    }
-  }
+			// And overwrite the move at  this index with the proper entry
+			validatedArgs.moves[index] = toLowerSingleWordCase(fuzzyEntry[0].name);
+		}
+	}
 
-  return getLearnset(args, requestedFields);
+	return getLearnset(validatedArgs, requestedFields);
 }

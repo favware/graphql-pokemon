@@ -1,7 +1,7 @@
-import type { DocumentNode } from 'graphql';
-import gql from 'graphql-tag';
 import type { PathLike } from 'node:fs';
 import { readFile } from 'node:fs/promises';
+import type { DocumentNode } from 'graphql';
+import gql from 'graphql-tag';
 
 /**
  * Reads and imports a GraphQL file.
@@ -16,7 +16,7 @@ const importGraphQL = async (file: PathLike) => readFile(file, { encoding: 'utf8
  * @returns The gql template literal with the wrapped files.
  */
 const gqlFileWrapper = (...files: string[]) => gql`
-  ${files}
+	${files}
 `;
 
 const graphqlDir = new URL('../../../graphql/', import.meta.url);

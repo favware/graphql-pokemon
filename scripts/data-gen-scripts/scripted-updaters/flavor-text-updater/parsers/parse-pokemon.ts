@@ -1,7 +1,7 @@
-import { flavorsModule } from '#utils/flavorsModule';
 import { fetch, FetchMediaContentTypes, FetchMethods, FetchResultTypes } from '@sapphire/fetch';
 import * as cheerio from 'cheerio';
 import { red, yellow } from 'colorette';
+import { flavorsModule } from '#utils/flavorsModule';
 import { userAgentHeader } from '../../../../utils.js';
 import type { ParsedPokemon } from '../../utils/bulbapedia-utils.js';
 import { fetchFlareSolverr } from '../../utils/flaresolverr-session-management.js';
@@ -15,69 +15,69 @@ import { getGen6GameSetsData } from '../game-sets/gen6-game-sets.js';
 import { getGen7GameSetsData } from '../game-sets/gen7-game-sets.js';
 import { getGen8GameSetsData } from '../game-sets/gen8-game-sets.js';
 import { getGen9GameSetsData } from '../game-sets/gen9-game-sets.js';
-import { log } from '../log-wrapper.js';
 import { getPokopiaGameData } from '../game-sets/pokopia.js';
+import { log } from '../log-wrapper.js';
 
 const failedPokemon = [];
 
 export async function parsePokemonWithoutFlareSolverr(pokemon: ParsedPokemon) {
-  return parsePokemon(pokemon, false);
+	return parsePokemon(pokemon, false);
 }
 
 export async function parsePokemonWithFlaresolverr(pokemon: ParsedPokemon) {
-  return parsePokemon(pokemon, true);
+	return parsePokemon(pokemon, true);
 }
 
 async function parsePokemon(pokemon: ParsedPokemon, withFlareSolverr: boolean) {
-  const logPrefix = `${pokemon.species} (${pokemon.number}${pokemon.forme ?? ''}) - `;
+	const logPrefix = `${pokemon.species} (${pokemon.number}${pokemon.forme ?? ''}) - `;
 
-  await log({ msg: `${logPrefix}Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });
+	await log({ msg: `${logPrefix}Started processing`, color: yellow, isBold: false, isIndent: true, bypassCiCheck: true });
 
-  const response = withFlareSolverr
-    ? await fetchFlareSolverr(pokemon.flavorTextUrl)
-    : await fetch(
-        pokemon.flavorTextUrl,
-        {
-          method: FetchMethods.Get,
-          headers: {
-            ...userAgentHeader,
-            'Content-Type': FetchMediaContentTypes.JSON
-          }
-        },
-        FetchResultTypes.Text
-      );
-  await log({ msg: `${logPrefix}Fetched data`, color: yellow, isBold: false, isIndent: true });
+	const response = withFlareSolverr
+		? await fetchFlareSolverr(pokemon.flavorTextUrl)
+		: await fetch(
+				pokemon.flavorTextUrl,
+				{
+					method: FetchMethods.Get,
+					headers: {
+						...userAgentHeader,
+						'Content-Type': FetchMediaContentTypes.JSON
+					}
+				},
+				FetchResultTypes.Text
+			);
+	await log({ msg: `${logPrefix}Fetched data`, color: yellow, isBold: false, isIndent: true });
 
-  const $ = withFlareSolverr ? cheerio.load((response as FlareSolverrResponse).solution.response) : cheerio.load(response as string);
-  await log({ msg: `${logPrefix}Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
+	const $ = withFlareSolverr ? cheerio.load((response as FlareSolverrResponse).solution.response) : cheerio.load(response as string);
+	await log({ msg: `${logPrefix}Loaded text into cheerio`, color: yellow, isBold: false, isIndent: true });
 
-  const text = $('#wpTextbox1').text();
-  await log({ msg: `${logPrefix}Loaded text element`, color: yellow, isBold: false, isIndent: true });
+	const text = $('#wpTextbox1').text();
+	await log({ msg: `${logPrefix}Loaded text element`, color: yellow, isBold: false, isIndent: true });
 
-  const results = (
-    await Promise.all([
-      getGen1GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen2GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen3GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen4GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen5GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen6GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen7GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen8GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getGen9GameSetsData(text, pokemon, flavorsModule, logPrefix),
-      getPokopiaGameData(text, pokemon, flavorsModule, logPrefix)
-    ])
-  ).flat();
+	const results = (
+		await Promise.all([
+			getGen1GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen2GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen3GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen4GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen5GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen6GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen7GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen8GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getGen9GameSetsData(text, pokemon, flavorsModule, logPrefix),
+			getPokopiaGameData(text, pokemon, flavorsModule, logPrefix)
+		])
+	).flat();
 
-  if (results.every((value) => !value)) {
-    failedPokemon.push({
-      pokemon,
-      text
-    });
-    await log({ msg: `${logPrefix}Did not store data for Pokemon`, color: red, isBold: false, isIndent: true });
-  }
+	if (results.every((value) => !value)) {
+		failedPokemon.push({
+			pokemon,
+			text
+		});
+		await log({ msg: `${logPrefix}Did not store data for Pokemon`, color: red, isBold: false, isIndent: true });
+	}
 }
 
 export function getFailedPokemon() {
-  return failedPokemon;
+	return failedPokemon;
 }

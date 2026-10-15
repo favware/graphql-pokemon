@@ -16,5 +16,5 @@
  * ```
  */
 export function parseBulbapediaURL(url: string) {
-  return url.replace(/[ ]/g, '_').replace(/\(/g, '%28').replace(/\)/g, '%29');
+	return url.replaceAll(/[ ]/g, '_').replaceAll('(', '%28').replaceAll(')', '%29');
 }

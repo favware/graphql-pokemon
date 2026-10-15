@@ -66,30 +66,31 @@ export function resolveColor(pokemon: Pokemon): number;
  * a {@linkplain https://discord.js.org/docs/packages/discord.js/14.14.1/Embed:Class DiscordJS Embed}
  */
 export function resolveColor(colorOrPokemon: string | Omit<Pokemon, '__typename'>): number {
-  if (typeof colorOrPokemon !== 'string') colorOrPokemon = colorOrPokemon.color;
+	// oxlint-disable-next-line no-param-reassign
+	if (typeof colorOrPokemon !== 'string') colorOrPokemon = colorOrPokemon.color;
 
-  switch (colorOrPokemon) {
-    case 'Black':
-      return 0x323232;
-    case 'Blue':
-      return 0x257cff;
-    case 'Brown':
-      return 0xa3501a;
-    case 'Gray':
-      return 0x969696;
-    case 'Green':
-      return 0x3eff4e;
-    case 'Pink':
-      return 0xff65a5;
-    case 'Purple':
-      return 0xa63de8;
-    case 'Red':
-      return 0xff3232;
-    case 'White':
-      return 0xe1e1e1;
-    case 'Yellow':
-      return 0xfff359;
-    default:
-      return 0x000000;
-  }
+	switch (colorOrPokemon) {
+		case 'Black':
+			return 0x323232;
+		case 'Blue':
+			return 0x257cff;
+		case 'Brown':
+			return 0xa3501a;
+		case 'Gray':
+			return 0x969696;
+		case 'Green':
+			return 0x3eff4e;
+		case 'Pink':
+			return 0xff65a5;
+		case 'Purple':
+			return 0xa63de8;
+		case 'Red':
+			return 0xff3232;
+		case 'White':
+			return 0xe1e1e1;
+		case 'Yellow':
+			return 0xfff359;
+		default:
+			return 0x000000;
+	}
 }

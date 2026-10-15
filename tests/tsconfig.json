@@ -1,20 +1,19 @@
 {
-  "extends": "../tsconfig.base.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "#assets/*": ["../src/lib/assets/*"],
-      "#jsonAssets/*.json": ["../src/lib/assets/*.json"],
-      "#dexdata/*": ["../src/lib/assets/pokedex-data/*"],
-      "#resolvers/*": ["../src/lib/resolvers/*"],
-      "#types/*": ["../src/lib/types/*"],
-      "#utils/*": ["../src/lib/utils/*"],
-      "#validations/*": ["../src/lib/validations/*"],
-      "#mappers/*": ["../src/lib/mappers/*"],
-      "#test-utils/*": ["./testUtils/*"],
-      "#root/*": ["../src/*"]
-    },
-    "types": ["vitest/globals"]
-  },
-  "include": ["."]
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"paths": {
+			"#assets/*": ["../src/lib/assets/*"],
+			"#jsonAssets/*.json": ["../src/lib/assets/*.json"],
+			"#dexdata/*": ["../src/lib/assets/pokedex-data/*"],
+			"#resolvers/*": ["../src/lib/resolvers/*"],
+			"#types/*": ["../src/lib/types/*"],
+			"#utils/*": ["../src/lib/utils/*"],
+			"#validations/*": ["../src/lib/validations/*"],
+			"#mappers/*": ["../src/lib/mappers/*"],
+			"#test-utils/*": ["./testUtils/*"],
+			"#root/*": ["../src/*"]
+		},
+		"types": ["vitest/globals"]
+	},
+	"include": ["."]
 }

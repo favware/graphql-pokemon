@@ -1,0 +1,35 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"endOfLine": "lf",
+	"printWidth": 150,
+	"quoteProps": "as-needed",
+	"semi": true,
+	"singleQuote": true,
+	"tabWidth": 4,
+	"trailingComma": "none",
+	"useTabs": true,
+	"sortImports": {
+		"newlinesBetween": false,
+		"ignoreCase": false,
+		"groups": ["side_effect", "builtin", "external", ["internal", "subpath"], ["parent", "sibling", "index"], "unknown"]
+	},
+	"ignorePatterns": ["tests/fixtures/invalid-teams.tf", "modules/**/dist/**", ".yarn/**", "templates/**"],
+	"overrides": [
+		{
+			"files": ["*.yml", "*.yaml"],
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false
+			}
+		},
+		{
+			"files": ["*.md"],
+			"options": {
+				"tabWidth": 2,
+				"useTabs": false,
+				"printWidth": 120,
+				"proseWrap": "always"
+			}
+		}
+	]
+}

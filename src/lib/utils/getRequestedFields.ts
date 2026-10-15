@@ -1,5 +1,5 @@
-import { GraphQLSet } from '#utils/GraphQLSet';
 import type { GraphQLResolveInfo } from 'graphql';
+import { GraphQLSet } from '#utils/GraphQLSet';
 import { parseResolveInfo, type FieldsByTypeName, type ResolveTree } from '#utils/graphql-parse-resolve-info';
 
 /**
@@ -8,8 +8,8 @@ import { parseResolveInfo, type FieldsByTypeName, type ResolveTree } from '#util
  * @returns `true` if `info` is an instance of `ResolveTree`, `false` otherwise.
  */
 function infoIsResolveTree(info?: ResolveTree | FieldsByTypeName | null): info is ResolveTree {
-  if (!info) return false;
-  return (info as ResolveTree).fieldsByTypeName !== undefined;
+	if (!info) return false;
+	return (info as ResolveTree).fieldsByTypeName !== undefined;
 }
 
 /**
@@ -22,22 +22,22 @@ function infoIsResolveTree(info?: ResolveTree | FieldsByTypeName | null): info i
  * @returns The set of collected fields.
  */
 function collectRequestedFields<T extends string>(
-  fieldsToParse: Record<string, ResolveTree>,
-  collectedFields: GraphQLSet<T> = new GraphQLSet<T>(),
-  parent = ''
+	fieldsToParse: Record<string, ResolveTree>,
+	collectedFields: GraphQLSet<T> = new GraphQLSet<T>(),
+	parent = ''
 ): GraphQLSet<T> {
-  for (const fieldValue of Object.values(fieldsToParse)) {
-    if (Object.keys(fieldValue.fieldsByTypeName).length === 0) {
-      if (parent && !collectedFields.has(parent as T)) {
-        collectedFields.add(parent as T);
-      }
-      collectedFields.add(`${parent ? `${parent}.` : ''}${fieldValue.name}` as T);
-    } else {
-      collectRequestedFields(Object.values(fieldValue.fieldsByTypeName)[0], collectedFields, `${parent ? `${parent}.` : ''}${fieldValue.name}`);
-    }
-  }
+	for (const fieldValue of Object.values(fieldsToParse)) {
+		if (Object.keys(fieldValue.fieldsByTypeName).length === 0) {
+			if (parent && !collectedFields.has(parent as T)) {
+				collectedFields.add(parent as T);
+			}
+			collectedFields.add(`${parent ? `${parent}.` : ''}${fieldValue.name}` as T);
+		} else {
+			collectRequestedFields(Object.values(fieldValue.fieldsByTypeName)[0], collectedFields, `${parent ? `${parent}.` : ''}${fieldValue.name}`);
+		}
+	}
 
-  return collectedFields;
+	return collectedFields;
 }
 
 /**
@@ -46,10 +46,10 @@ function collectRequestedFields<T extends string>(
  * @returns A GraphQLSet containing the requested fields.
  */
 export function graphqlResolveInfoToRequestedFields<T extends string>(info: GraphQLResolveInfo): GraphQLSet<T> {
-  const resolvedInfo = parseResolveInfo(info, { deep: true });
-  if (infoIsResolveTree(resolvedInfo)) {
-    return collectRequestedFields<T>(Object.values(resolvedInfo.fieldsByTypeName)[0]);
-  }
+	const resolvedInfo = parseResolveInfo(info, { deep: true });
+	if (infoIsResolveTree(resolvedInfo)) {
+		return collectRequestedFields<T>(Object.values(resolvedInfo.fieldsByTypeName)[0]);
+	}
 
-  return new GraphQLSet<T>();
+	return new GraphQLSet<T>();
 }

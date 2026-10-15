@@ -272,10 +272,10 @@ fragment FullData on Pokemon {
 `;
 
 export const defaultVariables = JSON.parse(
-  JSON.stringify({
-    pokemon: 'dragonair',
-    offsetFlavorTexts: 0,
-    takeFlavorTexts: 1,
-    reverseFlavorTexts: true
-  })
+	JSON.stringify({
+		pokemon: 'dragonair',
+		offsetFlavorTexts: 0,
+		takeFlavorTexts: 1,
+		reverseFlavorTexts: true
+	})
 );

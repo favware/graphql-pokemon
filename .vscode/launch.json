@@ -1,19 +1,19 @@
 {
-  "configurations": [
-    {
-      "type": "pwa-node",
-      "request": "launch",
-      "runtimeArgs": ["run-script", "start"],
-      "name": "Debugger",
-      "runtimeExecutable": "npm",
-      "skipFiles": ["<node_internals>/**", "node_modules/tslib/**"],
-      "internalConsoleOptions": "openOnSessionStart",
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "console": "internalConsole",
-      "outputCapture": "std",
-      "outFiles": ["${workspaceFolder}/api/**/*.js"]
-    }
-  ]
+	"configurations": [
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"runtimeArgs": ["run-script", "start"],
+			"name": "Debugger",
+			"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**", "node_modules/tslib/**"],
+			"internalConsoleOptions": "openOnSessionStart",
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"console": "internalConsole",
+			"outputCapture": "std",
+			"outFiles": ["${workspaceFolder}/api/**/*.js"]
+		}
+	]
 }

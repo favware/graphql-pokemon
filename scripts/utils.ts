@@ -129,8 +129,9 @@ export async function writeDataToFileAndPrettify(data: string, fileToWriteTo: UR
 
 	await writeFile(fileToWriteTo, formattedData.code);
 
+	console.log(`Formatted and wrote data to ${filePath}, starting linting`);
 	const quotedFilePath = `'${filePath.replaceAll("'", String.raw`'\''`)}'`;
-	execSync(`yarn lint ${quotedFilePath}`, { cwd: rootDir, stdio: 'inherit' });
+	execSync(`yarn lint ${quotedFilePath}`, { cwd: rootDir, stdio: 'ignore' });
 }
 
 export interface GitCommit {

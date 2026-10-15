@@ -6,6 +6,7 @@ import {
 	inspectData,
 	replaceEnumLikeValues,
 	replacePokeWithAccentedPoke,
+	rootDir,
 	sortObjectByKey,
 	writeDataToFileAndPrettify
 } from '../../../utils.js';
@@ -69,7 +70,7 @@ for (const [key, data] of currentMoves.entries()) {
 		if (key.startsWith('hiddenpower')) {
 			data.shortDesc = "Varies in type based on the user's IVs.";
 		} else {
-			data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc);
+			data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc ?? '');
 		}
 
 		if (moveFromText.desc) {
@@ -151,7 +152,7 @@ const appendContent = [
 
 const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
 
-await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/moves.js');
+await writeDataToFileAndPrettify(prependContent + content + appendContent, new URL('src/lib/assets/moves.ts', rootDir));
 
 interface MoveData {
 	num: number;

@@ -1,8 +1,9 @@
-import { flavorsModule } from '#utils/flavorsModule';
-import { green } from 'colorette';
 import { writeFile } from 'node:fs/promises';
-import { format } from 'prettier';
-import prettierConfig from '../../../../.prettierrc.mjs';
+import { env } from 'node:process';
+import { green } from 'colorette';
+import { format, type FormatConfig } from 'oxfmt';
+import { flavorsModule } from '#utils/flavorsModule';
+import oxfmtConfig from '../../../../.oxfmtrc.json';
 import { rootDir } from '../../../utils.js';
 import { ensureLogfileExists, getBulbapediaReadyPokemon } from '../utils/bulbapedia-utils.js';
 import { gameSorter } from './game-sorter.js';
@@ -10,7 +11,7 @@ import { log, logFile } from './log-wrapper.js';
 import { getFailedPokemon, parsePokemonWithoutFlareSolverr } from './parsers/parse-pokemon.js';
 
 const pathToFlavorTextFile = new URL('src/lib/assets/flavorText.json', rootDir);
-const failedPokemonTextFile = new URL('./failed-pokemon.json', import.meta.url);
+const failedPokemonTextFile = new URL('failed-pokemon.json', import.meta.url);
 
 await ensureLogfileExists(logFile);
 
@@ -31,12 +32,12 @@ const pokemonToProcess = monthlySets.at(dayOfMonth - 1) ?? [];
 
 console.group('=========== Starting Flavor Text Updater ===========');
 console.log(`Processing set ${dayOfMonth} of ${numberOfSets}, containing ${pokemonToProcess.length} Pokémon.`);
-console.log('process.env.CI is: ', process.env.CI);
+console.log('process.env.CI is: ', env.CI);
 console.groupEnd();
 
 for (const pokemon of pokemonToProcess) {
-  // process.env.CI ? await parsePokemonWithFlaresolverr(pokemon) :
-  await parsePokemonWithoutFlareSolverr(pokemon);
+	// process.env.CI ? await parsePokemonWithFlaresolverr(pokemon) :
+	await parsePokemonWithoutFlareSolverr(pokemon);
 }
 
 await log({ msg: "Done fetching and storing data in memory, sorting version_id's", color: green, isBold: true, isIndent: false });
@@ -45,8 +46,8 @@ gameSorter(flavorsModule);
 
 await log({ msg: 'Done sorting, formatting and writing to disk', color: green, isBold: true, isIndent: false });
 
-const formatted = await format(JSON.stringify(flavorsModule, null, 4), { parser: 'json', ...prettierConfig });
-await writeFile(pathToFlavorTextFile, formatted, { encoding: 'utf-8' });
+const formatted = await format('', JSON.stringify(flavorsModule, null, 4), oxfmtConfig as FormatConfig);
+await writeFile(pathToFlavorTextFile, formatted.code, { encoding: 'utf8' });
 await log({ msg: 'Done writing to disk', color: green, isBold: true, isIndent: false });
 
-await writeFile(failedPokemonTextFile, JSON.stringify(getFailedPokemon(), null, 4), { encoding: 'utf-8' });
+await writeFile(failedPokemonTextFile, JSON.stringify(getFailedPokemon(), null, 4), { encoding: 'utf8' });

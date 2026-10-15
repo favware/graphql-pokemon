@@ -1,10 +1,14 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "cSpell.words": ["Flaresolverr", "updaters"]
+	"editor.defaultFormatter": "oxc.oxc-vscode",
+	"editor.formatOnSave": true,
+	"eslint.enable": false,
+	"oxc.fmt.configPath": ".oxfmtrc.json",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.oxc": "always",
+		"source.fixAll": "explicit",
+		"source.fixAll.eslint": "never",
+		"source.organizeImports": "never"
+	},
+	"cSpell.words": ["Flaresolverr", "updaters"],
+	"js/ts.experimental.useTsgo": true
 }

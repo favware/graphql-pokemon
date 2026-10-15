@@ -1,8 +1,9 @@
 {
-  "extends": ["@sapphire/ts-config", "@sapphire/ts-config/extra-strict", "@sapphire/ts-config/bundler", "@sapphire/ts-config/verbatim"],
-  "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
-    "noEmit": true,
-    "incremental": false
-  }
+	"extends": ["@sapphire/ts-config", "@sapphire/ts-config/extra-strict", "@sapphire/ts-config/bundler", "@sapphire/ts-config/verbatim"],
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"noEmit": true,
+		"incremental": false,
+		"types": ["node"]
+	}
 }

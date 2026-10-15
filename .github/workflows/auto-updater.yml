@@ -64,7 +64,7 @@ jobs:
           ./wait-for-port.sh
       - name: Update test data
         run: yarn au:testdata
-      - name: Run prettier on the code
+      - name: Run oxfmt on the code
         run: yarn format
       - name: Commit any changes and create a pull request
         env:

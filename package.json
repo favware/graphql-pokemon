@@ -24,7 +24,12 @@
 		"graphql/"
 	],
 	"type": "module",
-	"sideEffects": false,
+	"sideEffects": [
+		"./src/lib/assets/pokedex.ts",
+		"./src/lib/assets/pokedex-data/*.ts",
+		"./api/lib/assets/pokedex.js",
+		"./api/lib/assets/pokedex-data/*.js"
+	],
 	"main": "dist/codegen/cjs/graphql-pokemon.cjs",
 	"module": "dist/codegen/esm/graphql-pokemon.mjs",
 	"types": "dist/codegen/cjs/graphql-pokemon.d.cts",

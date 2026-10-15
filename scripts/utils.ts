@@ -1,5 +1,7 @@
+import { execSync } from 'node:child_process';
 import { readFile, rm, writeFile } from 'node:fs/promises';
 import { platform, release } from 'node:os';
+import { fileURLToPath } from 'node:url';
 import { inspect } from 'node:util';
 import { FetchResultTypes, fetch } from '@sapphire/fetch';
 import { transform } from 'oxc-transform';
@@ -118,8 +120,17 @@ export function replaceEnumLikeValues(data: string): string {
 }
 
 export async function writeDataToFileAndPrettify(data: string, fileToWriteTo: URL): Promise<void> {
-	const formattedData = await format('', data, oxfmtConfig as FormatConfig);
+	const filePath = fileURLToPath(fileToWriteTo);
+	const formattedData = await format(filePath, data, oxfmtConfig as FormatConfig);
+
+	if (formattedData.errors.length > 0) {
+		throw new Error(`Failed to format ${filePath}: ${formattedData.errors.map((error) => error.codeframe ?? error.message).join('\n')}`);
+	}
+
 	await writeFile(fileToWriteTo, formattedData.code);
+
+	const quotedFilePath = `'${filePath.replaceAll("'", String.raw`'\''`)}'`;
+	execSync(`yarn lint ${quotedFilePath}`, { cwd: rootDir, stdio: 'inherit' });
 }
 
 export interface GitCommit {

@@ -7,6 +7,7 @@ import {
 	inspectData,
 	replaceEnumLikeValues,
 	replacePokeWithAccentedPoke,
+	rootDir,
 	sortObjectByKey,
 	writeDataToFileAndPrettify
 } from '../../../utils.js';
@@ -115,7 +116,7 @@ const appendContent = [
 
 const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
 
-await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/abilities.js');
+await writeDataToFileAndPrettify(prependContent + content + appendContent, new URL('src/lib/assets/abilities.ts', rootDir));
 
 interface AbilityData {
 	isNonstandard?: string;

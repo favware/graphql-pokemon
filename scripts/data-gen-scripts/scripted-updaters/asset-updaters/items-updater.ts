@@ -6,6 +6,7 @@ import {
 	inspectData,
 	replaceEnumLikeValues,
 	replacePokeWithAccentedPoke,
+	rootDir,
 	sortObjectByKey,
 	writeDataToFileAndPrettify
 } from '../../../utils.js';
@@ -125,7 +126,7 @@ const appendContent = [
 
 const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
 
-await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/items.js');
+await writeDataToFileAndPrettify(prependContent + content + appendContent, new URL('src/lib/assets/items.ts', rootDir));
 
 interface ItemData {
 	name: string;

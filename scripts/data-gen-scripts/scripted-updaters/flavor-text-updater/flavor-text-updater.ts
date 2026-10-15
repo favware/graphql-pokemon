@@ -1,5 +1,6 @@
 import { writeFile } from 'node:fs/promises';
 import { env } from 'node:process';
+import { fileURLToPath } from 'node:url';
 import { green } from 'colorette';
 import { format, type FormatConfig } from 'oxfmt';
 import { flavorsModule } from '#utils/flavorsModule';
@@ -46,7 +47,13 @@ gameSorter(flavorsModule);
 
 await log({ msg: 'Done sorting, formatting and writing to disk', color: green, isBold: true, isIndent: false });
 
-const formatted = await format('', JSON.stringify(flavorsModule, null, 4), oxfmtConfig as FormatConfig);
+const filePath = fileURLToPath(pathToFlavorTextFile);
+const formatted = await format(filePath, JSON.stringify(flavorsModule, null, 4), oxfmtConfig as FormatConfig);
+
+if (formatted.errors.length > 0) {
+	throw new Error(`Failed to format ${filePath}: ${formatted.errors.map((error) => error.codeframe ?? error.message).join('\n')}`);
+}
+
 await writeFile(pathToFlavorTextFile, formatted.code, { encoding: 'utf8' });
 await log({ msg: 'Done writing to disk', color: green, isBold: true, isIndent: false });
 

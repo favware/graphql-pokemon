@@ -24,7 +24,12 @@ await Promise.all([
 ]);
 
 async function stringifyAndFormat(response: PokemonResponse): Promise<string> {
-	const formatted = await format('', JSON.stringify(response), oxfmtConfig as FormatConfig);
+	const formatted = await format('response.json', JSON.stringify(response), oxfmtConfig as FormatConfig);
+
+	if (formatted.errors.length > 0) {
+		throw new Error(`Failed to format response JSON: ${formatted.errors.map((error) => error.codeframe ?? error.message).join('\n')}`);
+	}
+
 	return formatted.code;
 }
 

@@ -2,7 +2,7 @@ import type { PokemonTypes } from '#assets/pokemon-source';
 import { Pokedex } from '#dexdata/pokedex';
 import { TypesEnum } from '#utils/pokemonTypes';
 
-export const entries: [string, PokemonTypes.DexEntry][] = [
+const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'sprigatito',
 		{

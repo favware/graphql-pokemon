@@ -3122,10 +3122,11 @@ export const items = new Collection<string, PokemonTypes.Item>([
   [
     'legendplate',
     {
-      desc: 'A stone tablet imbued with the essence of all creation. When used on a certain Pokémon, it allows that Pokémon to gain the power of every type there is.',
+      desc: 'When used on Arceus in Legends: Arceus, changes it to the Normal type. When Arceus uses Judgment, Arceus and the move change to a type that is most effective against the target.',
       gen: 8,
       keyItem: true,
       name: 'Legend Plate',
+      shortDesc: "In Legends: Arceus, Arceus's Judgment changes type to be supereffective.",
       specialSprite: 'https://www.serebii.net/itemdex/sprites/legendplate.png'
     }
   ],
@@ -8539,6 +8540,24 @@ export const items = new Collection<string, PokemonTypes.Item>([
       gen: 9,
       name: 'Raichunite Y',
       shortDesc: 'If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle.'
+    }
+  ],
+  [
+    'blankplate',
+    {
+      desc: 'Changes Arceus to the Normal type when used in Legends: Arceus.',
+      gen: 8,
+      name: 'Blank Plate',
+      shortDesc: 'Changes Arceus to the Normal type when used in Legends: Arceus.'
+    }
+  ],
+  [
+    'peatblock',
+    {
+      desc: 'Evolves Ursaring into Ursaluna when used during a full moon.',
+      gen: 8,
+      name: 'Peat Block',
+      shortDesc: 'Evolves Ursaring into Ursaluna when used during a full moon.'
     }
   ]
 ]);

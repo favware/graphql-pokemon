@@ -22,7 +22,8 @@ export function toLowerSingleWordCase<T extends string>(str: T): T {
 export function parseZCrystal(str: string | undefined): string | undefined {
 	if (str === undefined) return str;
 
-  return `${toTitleCase(str.substr(0, str.length - 1))} Z`;
+	// oxlint-disable-next-line unicorn/prefer-string-slice
+	return `${toTitleCase(str.substr(0, str.length - 1))} Z`;
 }
 
 /** Lowercases string and trims spaces */
@@ -35,10 +36,6 @@ export function preParseInput(str: string): string {
  * @param str The string to get symbols removed from
  * @param replacement The replacement to fill instead of the symbols
  */
-function replaceSymbols<T extends string>(
-  str: T,
-  replacement: string,
-  symbols: typeof COMMON_SYMBOLS | typeof COMMON_SYMBOLS_WITHOUT_HYPHEN = COMMON_SYMBOLS
-): T {
-  return str.replace(symbols, replacement) as T;
+function replaceSymbols<T extends string>(str: T, replacement: string, symbols: typeof COMMON_SYMBOLS = COMMON_SYMBOLS): T {
+	return str.replace(symbols, replacement) as T;
 }

@@ -94,12 +94,14 @@ await each(getBulbapediaReadyPokemon(), async (pokemon) => {
 await log({ msg: 'Done storing data in memory, formatting and writing to disk', color: green, isBold: true, isIndent: false });
 
 for (const pokemon of succeededPokemon) {
-  const pokemonFromData = pokemon.forme
-    ? pokedex.find((pokemonData) => pokemonData.num === pokemon.num && pokemonData.forme?.toLowerCase() === pokemon.forme.toLowerCase())
-    : pokedex.find((pokemonData) => pokemonData.num === pokemon.num);
+	const pokemonFromData = pokemon.forme
+		? pokedex.find((pokemonData) => pokemonData.num === pokemon.num && pokemonData.forme?.toLowerCase() === pokemon.forme?.toLowerCase())
+		: pokedex.find((pokemonData) => pokemonData.num === pokemon.num);
 
-  pokemonFromData.respelling = pokemon.respelling;
-  pokemonFromData.ipa = pokemon.ipa;
+	if (pokemonFromData) {
+		pokemonFromData.respelling = pokemon.respelling;
+		pokemonFromData.ipa = pokemon.ipa;
+	}
 }
 
 const prependContent = [

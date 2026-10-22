@@ -33,14 +33,14 @@ const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof Server
 
 	await apolloServer.start();
 
-  app.use(cors());
-  app.use(bodyParser());
-  app.use(
-    koaMiddleware(apolloServer, {
-      // eslint-disable-next-line @typescript-eslint/require-await
-      context: async ({ ctx }) => ({ token: ctx.headers.token })
-    })
-  );
+	app.use(cors());
+	app.use(bodyParser());
+	app.use(
+		koaMiddleware(apolloServer, {
+			// eslint-disable-next-line @typescript-eslint/require-await
+			context: async ({ ctx }) => ({ token: ctx.headers.token })
+		})
+	);
 
 	return httpServer;
 };

@@ -47,16 +47,16 @@ async function asPage(item) {
 	if (item.dir) {
 		const filesInDirectory = await getFiles(item.path);
 
-    return {
-      title,
-      content: await Promise.all(filesInDirectory.map((item) => asPage(item)))
-    };
-  }
+		return {
+			title,
+			content: await Promise.all(filesInDirectory.map(async (item) => asPage(item)))
+		};
+	}
 
-  return {
-    title,
-    content: await readFile(item.path, { encoding: 'utf-8' })
-  };
+	return {
+		title,
+		content: await readFile(item.path, { encoding: 'utf8' })
+	};
 }
 
 const pagesDirectory = new URL('pages', import.meta.url);

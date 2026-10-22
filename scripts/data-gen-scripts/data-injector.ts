@@ -21,12 +21,12 @@ for (let [species, data] of entries.values()) {
 	const pokemon = findPokemon(species);
 
 	if (pokemon) {
-		data.genderRatio = pokemon.genderRatio;
+		data.genderRatio = pokemon.genderRatio as any;
 		data.evYields = {} as any;
-		data.isEggObtainable = pokemon.isEggObtainable;
-		data.catchRate = pokemon.catchRate;
+		data.isEggObtainable = pokemon.isEggObtainable as any;
+		data.catchRate = pokemon.catchRate as any;
 		data.levellingRate = pokemon.levellingRate as any;
-		data.minimumHatchTime = pokemon.minimumHatchTime;
+		data.minimumHatchTime = pokemon.minimumHatchTime as any;
 	}
 
 	data = sortObjectByKey(data);

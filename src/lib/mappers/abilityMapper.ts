@@ -4,7 +4,12 @@ import type { PokemonTypes } from '#assets/pokemon-source';
 import { mapPokemonDataToPokemonGraphQL, PokemonReferencedCallIdentifier } from '#mappers/pokemonMapper';
 import type { Ability, Pokemon } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { isNullishOrEmpty, toTitleCase } from '@sapphire/utilities';
+import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+
+export const enum AbilityReferencedCallIdentifier {
+	None = 'none',
+	PokemonToAbility = 'pokemonToAbility'
+}
 
 export function mapAbilityDataToAbilityGraphQL({
 	data,
@@ -27,19 +32,19 @@ export function mapAbilityDataToAbilityGraphQL({
 	addPropertyToObjectFieldBased({
 		objectTarget: abilityObject,
 		propertyKey: 'bulbapediaPage',
-		propertyValue: `https://bulbapedia.bulbagarden.net/wiki/${toTitleCase(data.name).replace(/ /g, '_')}_(Ability)`,
+		propertyValue: `https://bulbapedia.bulbagarden.net/wiki/${toTitleCase(data.name).replaceAll(' ', '_')}_(Ability)`,
 		requestedFields
 	});
 	addPropertyToObjectFieldBased({
 		objectTarget: abilityObject,
 		propertyKey: 'serebiiPage',
-		propertyValue: `https://www.serebii.net/abilitydex/${data.name.replace(/ /g, '_').toLowerCase()}.shtml`,
+		propertyValue: `https://www.serebii.net/abilitydex/${data.name.replaceAll(' ', '_').toLowerCase()}.shtml`,
 		requestedFields
 	});
 	addPropertyToObjectFieldBased({
 		objectTarget: abilityObject,
 		propertyKey: 'smogonPage',
-		propertyValue: `https://www.smogon.com/dex/ss/abilities/${data.name.toLowerCase().replace(/ /g, '_')}`,
+		propertyValue: `https://www.smogon.com/dex/ss/abilities/${data.name.toLowerCase().replaceAll(' ', '_')}`,
 		requestedFields
 	});
 
@@ -76,11 +81,6 @@ export function mapAbilityDataToAbilityGraphQL({
 	}
 
 	return abilityObject;
-}
-
-export const enum AbilityReferencedCallIdentifier {
-	None = 'none',
-	PokemonToAbility = 'pokemonToAbility'
 }
 
 interface MapAbilityDataToAbilityGraphQLParameters {

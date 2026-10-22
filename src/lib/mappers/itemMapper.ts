@@ -24,7 +24,7 @@ export function mapItemDataToItemGraphQL({ data, requestedFields }: MapItemDataT
 	addPropertyToObjectFieldBased({
 		objectTarget: itemObject,
 		propertyKey: 'bulbapediaPage',
-		propertyValue: `https://bulbapedia.bulbagarden.net/wiki/${toTitleCase(data.name).replace(/ /g, '_')}`,
+		propertyValue: `https://bulbapedia.bulbagarden.net/wiki/${toTitleCase(data.name).replaceAll(' ', '_')}`,
 		requestedFields
 	});
 	addPropertyToObjectFieldBased({

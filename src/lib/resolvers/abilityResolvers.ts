@@ -13,18 +13,18 @@ const fuzzySearch = new FuzzySearch(abilities, ['name', 'aliases']);
  * Gets the details on a Pokémon ability, using the ability name
  */
 export function getAbility(args: GetAbilityArgs, requestedFields: GraphQLSet<keyof Ability>): Ability {
-	args = validateGetAbilityArgs(args);
+	const validatedArgs = validateGetAbilityArgs(args);
 
-	const abilityFromDataset = abilities.get(args.ability);
+	const abilityFromDataset = abilities.get(validatedArgs.ability);
 
 	if (!abilityFromDataset) {
-		throw new Error(`No ability found for ${args.ability}`);
+		throw new Error(`No ability found for ${validatedArgs.ability}`);
 	}
 
 	const graphqlObject = mapAbilityDataToAbilityGraphQL({ data: abilityFromDataset, requestedFields });
 
 	if (!graphqlObject) {
-		throw new Error(`Failed to get data for ability: ${args.ability}`);
+		throw new Error(`Failed to get data for ability: ${validatedArgs.ability}`);
 	}
 
 	return graphqlObject;
@@ -38,10 +38,10 @@ export function getAbility(args: GetAbilityArgs, requestedFields: GraphQLSet<key
  * By default only 1 result is returned. You can provide the arguments `take`, `offset`, and `reverse` to modify this behaviour.
  */
 export function getFuzzyAbility(args: GetFuzzyAbilityArgs, requestedFields: GraphQLSet<keyof Ability>): Ability[] {
-	args = validateGetFuzzyAbilityArgs(args);
+	const validatedDargs = validateGetFuzzyAbilityArgs(args);
 
-	let { ability } = args;
-	const { offset, reverse, take } = args;
+	let { ability } = validatedDargs;
+	const { offset, reverse, take } = validatedDargs;
 
 	ability = preParseInput(ability);
 
@@ -54,13 +54,13 @@ export function getFuzzyAbility(args: GetFuzzyAbilityArgs, requestedFields: Grap
 	const fuzzyEntries = fuzzyResult.slice(offset!, offset! + take!);
 
 	if (!fuzzyEntries.length) {
-		throw new Error(`No abilities found for: ${args.ability}`);
+		throw new Error(`No abilities found for: ${validatedDargs.ability}`);
 	}
 
 	const graphqlObjects = fuzzyEntries.map((abilityData) => mapAbilityDataToAbilityGraphQL({ data: abilityData, requestedFields }));
 
 	if (!graphqlObjects.length) {
-		throw new Error(`Failed to get data for ability: ${args.ability}`);
+		throw new Error(`Failed to get data for ability: ${validatedDargs.ability}`);
 	}
 
 	return graphqlObjects;

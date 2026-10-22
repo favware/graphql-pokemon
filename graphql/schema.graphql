@@ -463,8 +463,8 @@ type Move {
 	"The type for a move"
 	type: String!
 
-  "The power this move will have when used with its Z-move equivalent"
-  zMovePower: Int!
+	"The power this move will have when used with its Z-move equivalent"
+	zMovePower: Int!
 }
 
 "The type matchups for any one or two given types"

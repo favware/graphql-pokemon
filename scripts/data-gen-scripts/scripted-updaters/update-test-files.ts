@@ -11,7 +11,7 @@ const data = await Promise.all(
 	['beldum', 'dragonair', 'eevee', 'rattataalola', 'salamence', 'syclar'].map(async (pokemon) => executeGraphQL(pokemon))
 );
 const [beldumData, dragonairData, eeveeData, rattataalolaData, salamenceData, syclarData] = await Promise.all(
-	data.map((response) => stringifyAndFormat(response))
+	data.map(async (response) => stringifyAndFormat(response))
 );
 
 await Promise.all([
@@ -24,8 +24,13 @@ await Promise.all([
 ]);
 
 async function stringifyAndFormat(response: PokemonResponse): Promise<string> {
-	const formatted = prettier.format(JSON.stringify(response), { ...prettierConfig, parser: 'json' });
-	return formatted;
+	const formatted = await format('response.json', JSON.stringify(response), oxfmtConfig as FormatConfig);
+
+	if (formatted.errors.length > 0) {
+		throw new Error(`Failed to format response JSON: ${formatted.errors.map((error) => error.codeframe ?? error.message).join('\n')}`);
+	}
+
+	return formatted.code;
 }
 
 async function executeGraphQL(pokemon: string): Promise<PokemonResponse> {

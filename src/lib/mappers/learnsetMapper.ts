@@ -181,9 +181,7 @@ export function getLearnsetDataset(pokemon: string): Record<string, string[]> | 
 	// If there is still no learnset then try to get it from other formes
 	if (!learnsetFromDataset) {
 		// First ensure the pokemon is retrieved from the dataset
-		if (!pokemonFromDataset) {
-			pokemonFromDataset = pokedex.get(toLowerSingleWordCase(pokemon));
-		}
+		pokemonFromDataset ??= pokedex.get(toLowerSingleWordCase(pokemon));
 
 		for (const otherForm of pokemonFromDataset?.otherFormes ?? []) {
 			learnsetFromDataset = learnsets.get(toLowerSingleWordCase(otherForm));
@@ -431,11 +429,11 @@ function createLevelupMove({ level, ...params }: CreateLevelupMoveParameters): L
 }
 
 function getMethodGeneration(method: string): Generation {
-	return parseInt(method.slice(0, 1), 10) as Generation;
+	return Number.parseInt(method.slice(0, 1), 10) as Generation;
 }
 
 function getMethodLevel(method: string): number {
-	return parseInt(method.slice(2), 10);
+	return Number.parseInt(method.slice(2), 10);
 }
 
 function getMethodType(method: string): MethodTypes {

@@ -27,13 +27,13 @@ const getAllPokemonSchema: SchemaOf<GetAllPokemonArgs> = baseFuzzySchema //
 		offset: s
 			.number({ message: 'The offset has to be a number' })
 			.greaterThanOrEqual(0, { message: 'The offset has to be at least 0' })
-			.lessThanOrEqual(1468, { message: 'The offset has to be at most 1468' })
+			.lessThanOrEqual(1_468, { message: 'The offset has to be at most 1468' })
 			.nullish({ message: 'The offset has to be a number' })
 			.transform((v) => v ?? 0),
 		take: s
 			.number({ message: 'The amount to take has to be a number' })
 			.greaterThanOrEqual(1, { message: 'The amount to take has to be at least 1' })
-			.lessThanOrEqual(1469, { message: 'The amount to take has to be at most 1469' })
+			.lessThanOrEqual(1_469, { message: 'The amount to take has to be at most 1469' })
 			.nullish({ message: 'The amount to take has to be a number' })
 			.transform((v) => v ?? 1)
 	});

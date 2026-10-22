@@ -20,30 +20,30 @@ describe('getMove', () => {
 				variables: { move: 'dragonclaw' }
 			});
 
-      expect(data.getMove).toEqual({
-        accuracy: 100,
-        maxMovePower: 130,
-        name: 'Dragon Claw',
-        pp: 15,
-        priority: 0,
-        serebiiPage: 'https://www.serebii.net/attackdex-swsh/dragonclaw.shtml',
-        shortDesc: 'No additional effect.',
-        smogonPage: 'https://www.smogon.com/dex/ss/moves/dragon-claw',
-        target: 'Normal',
-        type: 'Dragon',
-        zMovePower: 160,
-        basePower: '80',
-        bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Dragon_Claw_(move)',
-        category: 'Physical',
-        contestType: 'Cool',
-        desc: 'No additional effect.',
-        isFieldMove: null,
-        isGMax: null,
-        isNonstandard: null,
-        isZ: null
-      });
-    });
-  });
+			expect(data.getMove).toEqual({
+				accuracy: 100,
+				maxMovePower: 130,
+				name: 'Dragon Claw',
+				pp: 15,
+				priority: 0,
+				serebiiPage: 'https://www.serebii.net/attackdex-swsh/dragonclaw.shtml',
+				shortDesc: 'No additional effect.',
+				smogonPage: 'https://www.smogon.com/dex/ss/moves/dragon-claw',
+				target: 'Normal',
+				type: 'Dragon',
+				zMovePower: 160,
+				basePower: '80',
+				bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Dragon_Claw_(move)',
+				category: 'Physical',
+				contestType: 'Cool',
+				desc: 'No additional effect.',
+				isFieldMove: null,
+				isGMax: null,
+				isNonstandard: null,
+				isZ: null
+			});
+		});
+	});
 
 	describe('Get differently computed Z-Power', () => {
 		test('GIVEN move with custom z-power THEN returns predefined Z-Power', async () => {

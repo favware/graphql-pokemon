@@ -45,26 +45,26 @@ export function mapPokemonDataToPokemonGraphQL({
 }: MapPokemonDataToPokemonGraphQLParameters) {
 	const resolvedRecursingAs = recursingAs ? (`${recursingAs}.` as const) : ('' as const);
 
-  const genderEntryRequestedFields = cast<GraphQLSet<keyof Gender>>(requestedFields);
-  const genderObject: Gender = {} as Gender;
-  const basePokemonGenderRatio: PokemonTypes.DexEntry['genderRatio'] = data.genderRatio || {
-    male: '50%',
-    female: '50%'
-  };
-  addPropertyToObjectFieldBased({
-    objectTarget: genderObject,
-    propertyKey: 'male',
-    propertyValue: basePokemonGenderRatio.male,
-    requestedFields: genderEntryRequestedFields,
-    fieldAccessor: `${resolvedRecursingAs}gender.male`
-  });
-  addPropertyToObjectFieldBased({
-    objectTarget: genderObject,
-    propertyKey: 'female',
-    propertyValue: basePokemonGenderRatio.female,
-    requestedFields: genderEntryRequestedFields,
-    fieldAccessor: `${resolvedRecursingAs}gender.female`
-  });
+	const genderEntryRequestedFields = cast<GraphQLSet<keyof Gender>>(requestedFields);
+	const genderObject: Gender = {} as Gender;
+	const basePokemonGenderRatio: PokemonTypes.DexEntry['genderRatio'] = data.genderRatio ?? {
+		male: '50%',
+		female: '50%'
+	};
+	addPropertyToObjectFieldBased({
+		objectTarget: genderObject,
+		propertyKey: 'male',
+		propertyValue: basePokemonGenderRatio.male,
+		requestedFields: genderEntryRequestedFields,
+		fieldAccessor: `${resolvedRecursingAs}gender.male`
+	});
+	addPropertyToObjectFieldBased({
+		objectTarget: genderObject,
+		propertyKey: 'female',
+		propertyValue: basePokemonGenderRatio.female,
+		requestedFields: genderEntryRequestedFields,
+		fieldAccessor: `${resolvedRecursingAs}gender.female`
+	});
 
 	const baseStatsRequestedFields = cast<GraphQLSet<keyof Stats>>(requestedFields);
 	const baseStatsObject: Stats = {} as Stats;
@@ -308,26 +308,26 @@ export function mapPokemonDataToPokemonGraphQL({
 		condition: generationalLearnsetsRequestedFields.hasStartsWith(`${resolvedRecursingAs}learnsets.generation8.`)
 	});
 
-  const catchRateRequestedFields = cast<GraphQLSet<keyof CatchRate>>(requestedFields);
-  const catchRateObject: CatchRate = {} as CatchRate;
-  const basePokemonCatchRate: PokemonTypes.DexEntry['catchRate'] = data.catchRate || {
-    base: 0,
-    percentageWithOrdinaryPokeballAtFullHealth: '0%'
-  };
-  addPropertyToObjectFieldBased({
-    objectTarget: catchRateObject,
-    propertyKey: 'base',
-    propertyValue: basePokemonCatchRate.base,
-    requestedFields: catchRateRequestedFields,
-    fieldAccessor: `${resolvedRecursingAs}catchRate.base`
-  });
-  addPropertyToObjectFieldBased({
-    objectTarget: catchRateObject,
-    propertyKey: 'percentageWithOrdinaryPokeballAtFullHealth',
-    propertyValue: basePokemonCatchRate.percentageWithOrdinaryPokeballAtFullHealth,
-    requestedFields: catchRateRequestedFields,
-    fieldAccessor: `${resolvedRecursingAs}catchRate.percentageWithOrdinaryPokeballAtFullHealth`
-  });
+	const catchRateRequestedFields = cast<GraphQLSet<keyof CatchRate>>(requestedFields);
+	const catchRateObject: CatchRate = {} as CatchRate;
+	const basePokemonCatchRate: PokemonTypes.DexEntry['catchRate'] = data.catchRate ?? {
+		base: 0,
+		percentageWithOrdinaryPokeballAtFullHealth: '0%'
+	};
+	addPropertyToObjectFieldBased({
+		objectTarget: catchRateObject,
+		propertyKey: 'base',
+		propertyValue: basePokemonCatchRate.base,
+		requestedFields: catchRateRequestedFields,
+		fieldAccessor: `${resolvedRecursingAs}catchRate.base`
+	});
+	addPropertyToObjectFieldBased({
+		objectTarget: catchRateObject,
+		propertyKey: 'percentageWithOrdinaryPokeballAtFullHealth',
+		propertyValue: basePokemonCatchRate.percentageWithOrdinaryPokeballAtFullHealth,
+		requestedFields: catchRateRequestedFields,
+		fieldAccessor: `${resolvedRecursingAs}catchRate.percentageWithOrdinaryPokeballAtFullHealth`
+	});
 
 	const basePokemonArgs = {
 		offsetFlavorTexts,
@@ -824,22 +824,22 @@ function parseSpeciesForSerebiiPage(pokemonName: string, pokemonNumber: number, 
 	// If the Pokémon has a number of 0 or lower (0 is Missingno, negatives are Smogon CAP and PokéStar) then it doesn't have a Serebii page
 	if (pokemonNumber <= 0) return '';
 
-  const parsedPokemonName = toLowerHyphenCase(pokemonName.replace(/:/g, ''));
+	const parsedPokemonName = toLowerHyphenCase(pokemonName.replaceAll(':', ''));
 
 	// If the Pokémon is not in Generation 8 or 9 then build a Generation 7 based URL
 	if (speciesThatAreNotInGeneration8Nor9.includes(parsedPokemonName)) {
 		return `${serebiiBaseUrl}-sm/${pokemonNumber < 100 ? pokemonNumber.toString().padStart(3, '0') : pokemonNumber}.shtml`;
 	}
 
-  // If the Pokémon is `'past'` in Generation 9, but was not included in speciesThatAreNotInGeneration8Nor9
-  // or the Pokémon is within the numbers range for generation 8,
-  // then build a Generation 8 based URL
-  if (pokemonTier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905)) {
-    return `${serebiiBaseUrl}-swsh/${pokemonName.replace(/ /g, '').toLowerCase()}`;
-  }
+	// If the Pokémon is `'past'` in Generation 9, but was not included in speciesThatAreNotInGeneration8Nor9
+	// or the Pokémon is within the numbers range for generation 8,
+	// then build a Generation 8 based URL
+	if (pokemonTier.toLowerCase() === 'past' || (pokemonNumber >= 810 && pokemonNumber <= 905)) {
+		return `${serebiiBaseUrl}-swsh/${pokemonName.replaceAll(' ', '').toLowerCase()}`;
+	}
 
-  // If the Pokémon is available in Generation 9 then build a Generation 9 based URL
-  return `${serebiiBaseUrl}-sv/${pokemonName.replace(/ /g, '').toLowerCase()}`;
+	// If the Pokémon is available in Generation 9 then build a Generation 9 based URL
+	return `${serebiiBaseUrl}-sv/${pokemonName.replaceAll(' ', '').toLowerCase()}`;
 }
 
 function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, _: PokemonTypes.DexEntry) {
@@ -847,7 +847,7 @@ function parseDataForEvolutionRecursion(basePokemonData: PokemonTypes.DexEntry, 
 		return toLowerSingleWordCase(basePokemonData.species);
 	}
 
-  return toLowerSingleWordCase(basePokemonData.baseSpecies || basePokemonData.species);
+	return toLowerSingleWordCase(basePokemonData.baseSpecies ?? basePokemonData.species);
 }
 
 /**
@@ -860,7 +860,7 @@ function parseSpeciesForSmogonPage(pokemonName: string, pokemonNumber: number, p
 	// If the Pokémon is Missingno, then it doesn't have a Smogon Dex page
 	if (pokemonNumber === 0) return '';
 
-  const parsedPokemonName = toLowerHyphenCase(pokemonName.replace(/:/g, ''));
+	const parsedPokemonName = toLowerHyphenCase(pokemonName.replaceAll(':', ''));
 
 	// If the Pokémon has a number of lower than 0 then it is CAP so we can always send the latest generation URL
 	if (pokemonNumber < 0) {

@@ -39,7 +39,7 @@ const dexEntryKeys = [
 const newMap = new Map();
 
 for (const [species, data] of entries.values()) {
-	const missingKeys = _.xorWith([...Object.keys(data)], dexEntryKeys);
+	const missingKeys = _.xorWith(Object.keys(data), dexEntryKeys);
 
 	newMap.set(species, missingKeys);
 }

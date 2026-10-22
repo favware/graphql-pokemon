@@ -19,33 +19,28 @@ export function mapToJson<K extends PropertyKey, V extends object>(map: Map<K, V
 	return JSON.stringify([...map]);
 }
 
-export async function importFileFromWeb<T extends object>({ url, temporaryFileName }): Promise<T> {
-  const body = await fetch(url, { headers: userAgentHeader }, FetchResultTypes.Text);
+export async function importFileFromWeb<T extends object>({ url, temporaryFileName }: { url: string; temporaryFileName: string }): Promise<T> {
+	const body = await fetch(url, { headers: userAgentHeader }, FetchResultTypes.Text);
 
-  const result = ts.transpileModule(body, {
-    compilerOptions: {
-      module: ts.ModuleKind.ESNext,
-      newLine: ts.NewLineKind.LineFeed,
-      moduleResolution: ts.ModuleResolutionKind.NodeJs,
-      target: ts.ScriptTarget.ESNext,
-      removeComments: true,
-      declaration: false,
-      sourceMap: false,
-      declarationMap: false,
-      incremental: false,
-      importHelpers: false
-    }
-  });
+	const result = await transform(temporaryFileName, body, {
+		lang: 'ts',
+		sourceType: 'module',
+		target: 'esnext'
+	});
+
+	if (result.errors.length > 0) {
+		throw new Error(`Failed to compile ${url}: ${result.errors.map((error) => error.message).join('\n')}`);
+	}
 
 	const temporaryOutputFile = new URL(temporaryFileName, import.meta.url);
 
-  await writeFile(temporaryOutputFile, result.outputText);
-  // @ts-expect-error Node supports URLs just fine
-  const tiersData = await import(temporaryOutputFile);
+	await writeFile(temporaryOutputFile, result.code);
 
-  await rm(temporaryOutputFile);
-
-  return tiersData;
+	try {
+		return (await import(temporaryOutputFile.href)) as T;
+	} finally {
+		await rm(temporaryOutputFile);
+	}
 }
 
 export function sortObjectByKey<T extends object>(obj: T): T {
@@ -107,10 +102,11 @@ export function replaceEnumLikeValues(data: string): string {
 		.replaceAll(/"?isNonstandard"?: ['"]Gigantamax['"]/g, 'isNonstandard: IsNonStandard.Gigantamax')
 		.replaceAll(/"?isNonstandard"?: ['"]LetsGoPikachuEevee['"]/g, 'isNonstandard: IsNonStandard.LetsGoPikachuEevee');
 
-  const typesEnumRegex = /"?types"?: \[\s['"]([a-zA-Z]+)['"](?:, ['"]([a-zA-Z]+)['"])?\s\]/g;
+	// oxlint-disable-next-line prefer-named-capture-group
+	const typesEnumRegex = /"?types"?: \[\s['"]([a-zA-Z]+)['"](?:, ['"]([a-zA-Z]+)['"])?\s\]/g;
 
-  const replacedTypesData = isNonStandardReplacedData.replace(typesEnumRegex, (_, type1, type2) => {
-    const capitalizedType1 = type1.charAt(0).toUpperCase() + type1.slice(1);
+	const replacedTypesData = isNonStandardReplacedData.replaceAll(typesEnumRegex, (_, type1, type2) => {
+		const capitalizedType1 = type1.charAt(0).toUpperCase() + type1.slice(1);
 
 		if (type2) {
 			const capitalizedType2 = type2.charAt(0).toUpperCase() + type2.slice(1);
@@ -123,11 +119,19 @@ export function replaceEnumLikeValues(data: string): string {
 	return replacedTypesData;
 }
 
-export async function writeDataToFileAndPrettify(data: string, fileResolver: string | URL): Promise<void> {
-  const fileToWriteTo = typeof fileResolver === 'string' ? new URL(import.meta.resolve(fileResolver)) : fileResolver;
+export async function writeDataToFileAndPrettify(data: string, fileToWriteTo: URL): Promise<void> {
+	const filePath = fileURLToPath(fileToWriteTo);
+	const formattedData = await format(filePath, data, oxfmtConfig as FormatConfig);
 
-  const formattedData = await prettier.format(data, { ...prettierConfig, parser: 'typescript' });
-  await writeFile(fileToWriteTo, formattedData);
+	if (formattedData.errors.length > 0) {
+		throw new Error(`Failed to format ${filePath}: ${formattedData.errors.map((error) => error.codeframe ?? error.message).join('\n')}`);
+	}
+
+	await writeFile(fileToWriteTo, formattedData.code);
+
+	console.log(`Formatted and wrote data to ${filePath}, starting linting`);
+	const quotedFilePath = `'${filePath.replaceAll("'", String.raw`'\''`)}'`;
+	execSync(`yarn lint ${quotedFilePath}`, { cwd: rootDir, stdio: 'ignore' });
 }
 
 export interface GitCommit {

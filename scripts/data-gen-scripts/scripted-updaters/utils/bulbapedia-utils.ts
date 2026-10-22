@@ -19,8 +19,8 @@ function parseSpeciesForBulbapedia(pokemonData: PokemonTypes.DexEntry) {
 
 export async function ensureLogfileExists(logFile: URL | string) {
 	await access(logFile) //
-		.then(() => writeFile(logFile, ''))
-		.catch(() => appendFile(logFile, ''));
+		.then(async () => writeFile(logFile, ''))
+		.catch(async () => appendFile(logFile, ''));
 }
 
 export function getBulbapediaReadyPokemon() {

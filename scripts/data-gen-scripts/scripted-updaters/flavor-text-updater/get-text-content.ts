@@ -1,8 +1,9 @@
-export function getTextContent(bit1: string) {
+// oxlint-disable prefer-named-capture-group
+export function getTextContent(bit1: string | undefined) {
 	return bit1
 		?.split(/\|[a-z]+=/g)
 		?.at(-1)
-		.replace(/}}$/, '')
+		?.replace(/}}$/, '')
 		.replace(/\s?<small>.+<\/small>/, '')
 		.replaceAll(/<sc>([a-zA-Z0-9 {}|'.-]+)<\/sc>/g, '$1')
 		.replaceAll(/{{[pP]\|([a-zA-Z']+)}}/g, '$1')
@@ -11,11 +12,11 @@ export function getTextContent(bit1: string) {
 		.replaceAll(/{{m\|([a-zA-Z ]+)}}/g, '$1')
 		.replaceAll(/{{m\|[a-zA-Z ]+\|([a-zA-Z -]+)}}/g, '$1')
 		.replaceAll(/{{t\|([a-zA-Z]+)}}/g, '$1')
-		.replaceAll(/{{tt\|([-a-zA-Z0-9,.\/()&;–−'"° ]+)\|[-a-zA-Z0-9,.\/()&;–−'"° ]+}}/g, '$1')
-		.replaceAll(/{{a\|([-a-zA-Z0-9,\/ ]+)}}/g, '$1')
-		.replaceAll(/{{a\|[-a-zA-Z0-9, ]+\|([-a-zA-Z0-9,\/ ]+)}}/g, '$1')
-		.replaceAll(/{{status\|[-a-zA-Z0-9,.\/ ]+\|([-a-zA-Z0-9,.\/ ]+)}}/g, '$1')
-		.replaceAll(/{{status\|([-a-zA-Z0-9,.\/ ]+)}}/g, '$1')
+		.replaceAll(/{{tt\|([-a-zA-Z0-9,./()&;–−'"° ]+)\|[-a-zA-Z0-9,./()&;–−'"° ]+}}/g, '$1')
+		.replaceAll(/{{a\|([-a-zA-Z0-9,/ ]+)}}/g, '$1')
+		.replaceAll(/{{a\|[-a-zA-Z0-9, ]+\|([-a-zA-Z0-9,/ ]+)}}/g, '$1')
+		.replaceAll(/{{status\|[-a-zA-Z0-9,./ ]+\|([-a-zA-Z0-9,./ ]+)}}/g, '$1')
+		.replaceAll(/{{status\|([-a-zA-Z0-9,./ ]+)}}/g, '$1')
 		.replaceAll(/{{pkmn\|([a-zA-Z]+)}}/g, '$1')
 		.replaceAll(/{{pkmn2\|([a-zA-Z]+)}}/g, '$1')
 		.replaceAll(/{{wp\|([a-zA-Z ]+)}}/g, '$1')

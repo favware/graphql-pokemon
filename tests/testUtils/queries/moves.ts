@@ -39,6 +39,14 @@ export const getMoveWithFullData = gql`
 			isGMax
 			isNonstandard
 			isZ
+			champions {
+				basePower
+				accuracy
+				desc
+				shortDesc
+				type
+				pp
+			}
 		}
 	}
 `;
@@ -74,6 +82,14 @@ export const getFuzzyMoveWithFullData = gql`
 			isGMax
 			isNonstandard
 			isZ
+			champions {
+				basePower
+				accuracy
+				desc
+				shortDesc
+				type
+				pp
+			}
 		}
 	}
 `;

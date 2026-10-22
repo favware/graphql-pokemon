@@ -193,6 +193,8 @@ interface Move {
 	bulbapediaPage: string;
 	/** The category for a move */
 	category: string;
+	/** Pokémon Champions specific data about a move */
+	champions?: Maybe<MoveChampions>;
 	/** The contest type for a move */
 	contestType?: Maybe<string>;
 	/** The long description for a move */
@@ -228,6 +230,22 @@ interface Move {
 	/** The power this move will have when used with its Z-move equivalent */
 	zMovePower?: Maybe<number>;
 }
+
+/** Pokémon Champions specific data about a move */
+export type MoveChampions = {
+	/** The accuracy for a move */
+	readonly accuracy?: Maybe<number>;
+	/** The base power for a move */
+	readonly basePower?: Maybe<string>;
+	/** The long description for a move */
+	readonly desc?: Maybe<string>;
+	/** The power points for a move */
+	readonly pp?: Maybe<number>;
+	/** The short description for a move */
+	readonly shortDesc?: Maybe<string>;
+	/** The type for a move */
+	readonly type?: Maybe<string>;
+};
 
 /** A Pokémon's entry */
 interface Pokemon {

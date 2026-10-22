@@ -48,6 +48,12 @@ export function mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataT
 		propertyValue: `https://www.smogon.com/dex/ss/moves/${toLowerHyphenCase(data.name)}`,
 		requestedFields
 	});
+	addPropertyToObjectFieldBased({
+		objectTarget: moveObject,
+		propertyKey: 'champions',
+		propertyValue: data.champions,
+		requestedFields
+	});
 
 	return moveObject;
 }

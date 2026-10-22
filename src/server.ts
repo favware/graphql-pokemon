@@ -37,7 +37,6 @@ const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof Server
 	app.use(bodyParser());
 	app.use(
 		koaMiddleware(apolloServer, {
-			// eslint-disable-next-line @typescript-eslint/require-await
 			context: async ({ ctx }) => ({ token: ctx.headers.token })
 		})
 	);

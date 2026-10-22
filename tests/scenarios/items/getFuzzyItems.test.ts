@@ -28,7 +28,7 @@ describe('getFuzzyItem', () => {
 					isNonstandard: null,
 					name: 'Life Orb',
 					serebiiPage: 'https://www.serebii.net/itemdex/lifeorb.shtml',
-					shortDesc: "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+					shortDesc: "Holder's attacks do 1.3× damage, and it loses 1/10 its max HP after the attack.",
 					smogonPage: 'https://www.smogon.com/dex/sv/items/life-orb',
 					sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/life-orb.png'
 				}
@@ -49,7 +49,7 @@ describe('getFuzzyItem', () => {
 					isNonstandard: null,
 					name: 'Assault Vest',
 					serebiiPage: 'https://www.serebii.net/itemdex/assaultvest.shtml',
-					shortDesc: "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
+					shortDesc: "Holder's Sp. Def is 1.5×, but it can only select damaging moves.",
 					smogonPage: 'https://www.smogon.com/dex/sv/items/assault-vest',
 					sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/assault-vest.png'
 				},
@@ -60,7 +60,7 @@ describe('getFuzzyItem', () => {
 					isNonstandard: null,
 					name: 'Choice Band',
 					serebiiPage: 'https://www.serebii.net/itemdex/choiceband.shtml',
-					shortDesc: "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+					shortDesc: "Holder's Attack is 1.5×, but it can only select the first move it executes.",
 					smogonPage: 'https://www.smogon.com/dex/sv/items/choice-band',
 					sprite: 'https://play.pokemonshowdown.com/sprites/itemicons/choice-band.png'
 				},

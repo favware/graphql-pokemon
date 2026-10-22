@@ -70,7 +70,7 @@ describe('getFuzzyAbility', () => {
 					isFieldAbility: null,
 					isNonstandard: null,
 					name: 'Aerilate',
-					shortDesc: "This Pokémon's Normal-type moves become Flying type and have 1.2x power.",
+					shortDesc: "This Pokémon's Normal-type moves become Flying type and have 1.2× power.",
 					serebiiPage: 'https://www.serebii.net/abilitydex/aerilate.shtml',
 					smogonPage: 'https://www.smogon.com/dex/ss/abilities/aerilate',
 					bulbapediaPage: 'https://bulbapedia.bulbagarden.net/wiki/Aerilate_(Ability)'

@@ -465,6 +465,9 @@ type Move {
 
 	"The power this move will have when used with its Z-move equivalent"
 	zMovePower: Int!
+
+	"Pokémon Champions specific data about a move"
+	champions: MoveChampions
 }
 
 "The type matchups for any one or two given types"

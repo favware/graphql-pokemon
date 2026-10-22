@@ -1,7 +1,7 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
 import type { Move } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import { parseZCrystal, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCaseWithoutHyphenConvert } from '#utils/utils';
 
 export function mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataToMoveGraphQLParameters): Move {
@@ -46,6 +46,12 @@ export function mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataT
 		objectTarget: moveObject,
 		propertyKey: 'smogonPage',
 		propertyValue: `https://www.smogon.com/dex/ss/moves/${toLowerHyphenCase(data.name)}`,
+		requestedFields
+	});
+	addPropertyToObjectFieldBased({
+		objectTarget: moveObject,
+		propertyKey: 'champions',
+		propertyValue: data.champions,
 		requestedFields
 	});
 

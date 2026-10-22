@@ -1,0 +1,32 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"extends": [
+		"./node_modules/eslint-config-neon/oxlint-configs/common.json",
+		"./node_modules/eslint-config-neon/oxlint-configs/module.json",
+		"./node_modules/eslint-config-neon/oxlint-configs/no-deprecated.json",
+		"./node_modules/eslint-config-neon/oxlint-configs/node.json",
+		"./node_modules/eslint-config-neon/oxlint-configs/prettier.json",
+		"./node_modules/eslint-config-neon/oxlint-configs/typescript.json"
+	],
+	"categories": {
+		"correctness": "off"
+	},
+	"options": {
+		"typeAware": true
+	},
+	"rules": {
+		"@typescript-eslint/unified-signatures": "off",
+		"@typescript-eslint/unbound-method": "off",
+		"@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports", "disallowTypeAnnotations": false }],
+		"eslint/id-length": "off"
+	},
+	"ignorePatterns": [".yarn/**", "modules/**/dist/**", "tests/testUtils/types/types.d.ts"],
+	"overrides": [
+		{
+			"files": ["src/lib/assets/learnsets.ts"],
+			"rules": {
+				"@typescript-eslint/ban-ts-comment": "off"
+			}
+		}
+	]
+}

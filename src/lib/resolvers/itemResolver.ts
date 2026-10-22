@@ -13,21 +13,21 @@ const fuzzySearch = new FuzzySearch(items, ['name', 'aliases']);
  * Gets the details on a Pokémon item, using the item name
  */
 export function getItem(args: GetItemArgs, requestedFields: GraphQLSet<keyof Item>): Item {
-  args = validateGetItemArgs(args);
+	const validatedArgs = validateGetItemArgs(args);
 
-  const itemFromDataset = items.get(args.item);
+	const itemFromDataset = items.get(validatedArgs.item);
 
-  if (!itemFromDataset) {
-    throw new Error(`No item found for ${args.item}`);
-  }
+	if (!itemFromDataset) {
+		throw new Error(`No item found for ${validatedArgs.item}`);
+	}
 
-  const graphqlObject = mapItemDataToItemGraphQL({ data: itemFromDataset, requestedFields });
+	const graphqlObject = mapItemDataToItemGraphQL({ data: itemFromDataset, requestedFields });
 
-  if (!graphqlObject) {
-    throw new Error(`Failed to get data for item: ${args.item}`);
-  }
+	if (!graphqlObject) {
+		throw new Error(`Failed to get data for item: ${validatedArgs.item}`);
+	}
 
-  return graphqlObject;
+	return graphqlObject;
 }
 
 /**
@@ -38,30 +38,31 @@ export function getItem(args: GetItemArgs, requestedFields: GraphQLSet<keyof Ite
  * By default only 1 result is returned. You can provide the arguments `take`, `offset`, and `reverse` to modify this behaviour.
  */
 export function getFuzzyItem(args: GetFuzzyItemArgs, requestedFields: GraphQLSet<keyof Item>): Item[] {
-  args = validateGetFuzzyItemArgs(args);
+	// oxlint-disable-next-line no-param-reassign
+	args = validateGetFuzzyItemArgs(args);
 
-  let { item } = args;
-  const { offset, reverse, take } = args;
+	let { item } = args;
+	const { offset, reverse, take } = args;
 
-  item = preParseInput(item);
+	item = preParseInput(item);
 
-  const fuzzyResult = fuzzySearch.runFuzzy(item);
+	const fuzzyResult = fuzzySearch.runFuzzy(item);
 
-  if (reverse) {
-    fuzzyResult.reverse();
-  }
+	if (reverse) {
+		fuzzyResult.reverse();
+	}
 
-  const fuzzyEntries = fuzzyResult.slice(offset!, offset! + take!);
+	const fuzzyEntries = fuzzyResult.slice(offset!, offset! + take!);
 
-  if (!fuzzyEntries.length) {
-    throw new Error(`No items found for: ${args.item}`);
-  }
+	if (!fuzzyEntries.length) {
+		throw new Error(`No items found for: ${args.item}`);
+	}
 
-  const graphqlObjects = fuzzyEntries.map((itemData) => mapItemDataToItemGraphQL({ data: itemData, requestedFields }));
+	const graphqlObjects = fuzzyEntries.map((itemData) => mapItemDataToItemGraphQL({ data: itemData, requestedFields }));
 
-  if (!graphqlObjects.length) {
-    throw new Error(`Failed to get data for item: ${args.item}`);
-  }
+	if (!graphqlObjects.length) {
+		throw new Error(`Failed to get data for item: ${args.item}`);
+	}
 
-  return graphqlObjects;
+	return graphqlObjects;
 }

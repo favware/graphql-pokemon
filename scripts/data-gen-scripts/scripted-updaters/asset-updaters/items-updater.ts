@@ -2,22 +2,23 @@ import { items as currentItems } from '#assets/items.js';
 import type { PokemonTypes } from '#assets/pokemon-source.js';
 import { IsNonStandard } from '#utils/isNonStandardEnum.js';
 import {
-  importFileFromWeb,
-  inspectData,
-  replaceEnumLikeValues,
-  replacePokeWithAccentedPoke,
-  sortObjectByKey,
-  writeDataToFileAndPrettify
+	importFileFromWeb,
+	inspectData,
+	replaceEnumLikeValues,
+	replacePokeWithAccentedPoke,
+	rootDir,
+	sortObjectByKey,
+	writeDataToFileAndPrettify
 } from '../../../utils.js';
 
 const { Items } = await importFileFromWeb<{ Items: { [itemName: string]: ItemData } }>({
-  url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/items.ts',
-  temporaryFileName: 'items.js'
+	url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/items.ts',
+	temporaryFileName: 'items.js'
 });
 
 const { ItemsText } = await importFileFromWeb<{ ItemsText: { [itemName: string]: ItemText } }>({
-  url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/text/items.ts',
-  temporaryFileName: 'item-texts.js'
+	url: 'https://raw.githubusercontent.com/smogon/pokemon-showdown/master/data/text/items.ts',
+	temporaryFileName: 'item-texts.js'
 });
 
 const itemsDataEntries = Object.entries<ItemData>(Items);
@@ -26,120 +27,120 @@ const itemsTextEntries = Object.entries<ItemText>(ItemsText);
 const newMap = new Map();
 
 for (const [key, data] of currentItems.entries()) {
-  Reflect.deleteProperty(data, 'key');
+	Reflect.deleteProperty(data, 'key');
 
-  const itemFromData = itemsDataEntries.find(([itemKey]) => itemKey === key)?.at(1) as ItemData;
-  const itemFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1) as ItemText;
+	const itemFromData = itemsDataEntries.find(([itemKey]) => itemKey === key)?.at(1) as ItemData;
+	const itemFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1) as ItemText;
 
-  if (itemFromData) {
-    if (itemFromData.isNonstandard === 'Past') {
-      data.isNonstandard = IsNonStandard.Past;
-    } else if (itemFromData.isNonstandard === 'CAP') {
-      data.isNonstandard = IsNonStandard.Cap;
-    } else if (itemFromData.isNonstandard === 'Unobtainable') {
-      data.isNonstandard = IsNonStandard.Unobtainable;
-    } else if (itemFromData.isNonstandard === 'LGPE') {
-      data.isNonstandard = IsNonStandard.LetsGoPikachuEevee;
-    } else if (itemFromData.isNonstandard === 'Gigantamax') {
-      data.isNonstandard = IsNonStandard.Gigantamax;
-    } else {
-      Reflect.deleteProperty(data, 'isNonstandard');
-    }
+	if (itemFromData) {
+		if (itemFromData.isNonstandard === 'Past') {
+			data.isNonstandard = IsNonStandard.Past;
+		} else if (itemFromData.isNonstandard === 'CAP') {
+			data.isNonstandard = IsNonStandard.Cap;
+		} else if (itemFromData.isNonstandard === 'Unobtainable') {
+			data.isNonstandard = IsNonStandard.Unobtainable;
+		} else if (itemFromData.isNonstandard === 'LGPE') {
+			data.isNonstandard = IsNonStandard.LetsGoPikachuEevee;
+		} else if (itemFromData.isNonstandard === 'Gigantamax') {
+			data.isNonstandard = IsNonStandard.Gigantamax;
+		} else {
+			Reflect.deleteProperty(data, 'isNonstandard');
+		}
 
-    data.gen = itemFromData.gen;
-    data.name = itemFromData.name;
-  }
+		data.gen = itemFromData.gen;
+		data.name = itemFromData.name;
+	}
 
-  if (itemFromText) {
-    if (itemFromText.shortDesc) {
-      data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
-    }
-    if (itemFromText.desc) {
-      data.desc = replacePokeWithAccentedPoke(itemFromText.desc);
-    }
-  }
+	if (itemFromText) {
+		if (itemFromText.shortDesc) {
+			data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
+		}
+		if (itemFromText.desc) {
+			data.desc = replacePokeWithAccentedPoke(itemFromText.desc);
+		}
+	}
 
-  newMap.set(key, sortObjectByKey(data));
+	newMap.set(key, sortObjectByKey(data));
 }
 
 for (const [key, itemFromData] of itemsDataEntries) {
-  // Skip if the item is already in the map
-  if (newMap.has(key)) continue;
+	// Skip if the item is already in the map
+	if (newMap.has(key)) continue;
 
-  let itemFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1) as ItemText | undefined;
+	let itemFromText = itemsTextEntries.find(([itemTextKey]) => itemTextKey === key)?.at(1) as ItemText | undefined;
 
-  if (!itemFromText) {
-    if (key === 'strangeball') {
-      itemFromText = {
-        desc: 'In Pokémon Brilliant Diamond and Shining Pearl, Pokémon Legends: Arceus, and Pokémon Scarlet and Violet, Pokémon caught in Poké Balls that do not exist in that game instead display a Strange Ball as their Poké Ball.',
-        shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.',
-        name: 'Strange Ball'
-      };
-    } else {
-      console.error(`Missing item text for ${key}`);
-      continue;
-    }
-  }
+	if (!itemFromText) {
+		if (key === 'strangeball') {
+			itemFromText = {
+				desc: 'In Pokémon Brilliant Diamond and Shining Pearl, Pokémon Legends: Arceus, and Pokémon Scarlet and Violet, Pokémon caught in Poké Balls that do not exist in that game instead display a Strange Ball as their Poké Ball.',
+				shortDesc: 'A placeholder Poké Ball for Pokémon in Poké Balls that do not exist in the current game.',
+				name: 'Strange Ball'
+			};
+		} else {
+			console.error(`Missing item text for ${key}`);
+			continue;
+		}
+	}
 
-  const data: PokemonTypes.Item = {
-    desc: replacePokeWithAccentedPoke(itemFromText.desc ?? itemFromText.shortDesc),
-    gen: itemFromData.gen,
-    name: itemFromData.name
-  };
+	const data: PokemonTypes.Item = {
+		desc: replacePokeWithAccentedPoke(itemFromText.desc ?? itemFromText.shortDesc),
+		gen: itemFromData.gen,
+		name: itemFromData.name
+	};
 
-  if (itemFromData.isNonstandard === 'Past') {
-    data.isNonstandard = IsNonStandard.Past;
-  } else if (itemFromData.isNonstandard === 'CAP') {
-    data.isNonstandard = IsNonStandard.Cap;
-  } else if (itemFromData.isNonstandard === 'Unobtainable') {
-    data.isNonstandard = IsNonStandard.Unobtainable;
-  } else if (itemFromData.isNonstandard === 'LGPE') {
-    data.isNonstandard = IsNonStandard.LetsGoPikachuEevee;
-  } else if (itemFromData.isNonstandard === 'Gigantamax') {
-    data.isNonstandard = IsNonStandard.Gigantamax;
-  }
+	if (itemFromData.isNonstandard === 'Past') {
+		data.isNonstandard = IsNonStandard.Past;
+	} else if (itemFromData.isNonstandard === 'CAP') {
+		data.isNonstandard = IsNonStandard.Cap;
+	} else if (itemFromData.isNonstandard === 'Unobtainable') {
+		data.isNonstandard = IsNonStandard.Unobtainable;
+	} else if (itemFromData.isNonstandard === 'LGPE') {
+		data.isNonstandard = IsNonStandard.LetsGoPikachuEevee;
+	} else if (itemFromData.isNonstandard === 'Gigantamax') {
+		data.isNonstandard = IsNonStandard.Gigantamax;
+	}
 
-  if (itemFromText.shortDesc) {
-    data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
-  }
+	if (itemFromText.shortDesc) {
+		data.shortDesc = replacePokeWithAccentedPoke(itemFromText.shortDesc);
+	}
 
-  newMap.set(key, sortObjectByKey(data));
+	newMap.set(key, sortObjectByKey(data));
 }
 
 const prependContent = [
-  "import type { PokemonTypes } from '#assets/pokemon-source';",
-  "import { IsNonStandard } from '#utils/isNonStandardEnum';",
-  "import { Collection } from '@discordjs/collection';",
-  '',
-  '/** The item in Pokémon */',
-  'export const items = new Collection<string, PokemonTypes.Item>('
+	"import type { PokemonTypes } from '#assets/pokemon-source';",
+	"import { IsNonStandard } from '#utils/isNonStandardEnum';",
+	"import { Collection } from '@discordjs/collection';",
+	'',
+	'/** The item in Pokémon */',
+	'export const items = new Collection<string, PokemonTypes.Item>('
 ].join('\n');
 const appendContent = [
-  ');', //
-  '',
-  'for (const [key, value] of items.entries()) {',
-  '\tvalue.key = key;',
-  '}',
-  ''
+	');', //
+	'',
+	'for (const [key, value] of items.entries()) {',
+	'\tvalue.key = key;',
+	'}',
+	''
 ].join('\n');
 
 const content = replaceEnumLikeValues(inspectData([...newMap.entries()]));
 
-await writeDataToFileAndPrettify(prependContent + content + appendContent, '#assets/items.js');
+await writeDataToFileAndPrettify(prependContent + content + appendContent, new URL('src/lib/assets/items.ts', rootDir));
 
 interface ItemData {
-  name: string;
-  spritenum: number;
-  megaStone: string;
-  megaEvolves: string;
-  itemUser: string[];
-  num: number;
-  gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
-  isNonstandard: string;
+	name: string;
+	spritenum: number;
+	megaStone: string;
+	megaEvolves: string;
+	itemUser: string[];
+	num: number;
+	gen: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+	isNonstandard: string;
 }
 
 interface ItemText {
-  name: string;
-  desc: string;
-  shortDesc?: string;
+	name: string;
+	desc: string;
+	shortDesc?: string;
 }

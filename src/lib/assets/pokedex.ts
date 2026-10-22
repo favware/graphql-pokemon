@@ -1,5 +1,3 @@
-import { Pokedex } from '#dexdata/pokedex';
-
 import '#dexdata/pokestar';
 import '#dexdata/cap';
 import '#dexdata/gen1';
@@ -13,4 +11,5 @@ import '#dexdata/gen8';
 import '#dexdata/gen9';
 
 /** The entire PokéDex of Pokémon */
-export { Pokedex as pokedex };
+
+export { Pokedex as pokedex } from '#dexdata/pokedex';

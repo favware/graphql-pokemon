@@ -1,3 +1,4 @@
 {
-  "recommendations": ["graphql.vscode-graphql", "graphql.vscode-graphql-syntax", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+	"recommendations": ["graphql.vscode-graphql", "graphql.vscode-graphql-syntax", "oxc.oxc-vscode"],
+	"unwantedRecommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
 }

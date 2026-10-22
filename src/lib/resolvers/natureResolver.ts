@@ -6,21 +6,21 @@ import { preParseInput } from '#utils/utils';
 import { validateGetNatureArgs, type GetNatureArgs } from '#validations/getNatureArgs';
 
 export function getNature(args: GetNatureArgs, requestedFields: GraphQLSet<keyof Nature>): Nature {
-  args = validateGetNatureArgs(args);
+	const validatedArgs = validateGetNatureArgs(args);
 
-  const natureFromDataset = natures.get(preParseInput(args.nature));
+	const natureFromDataset = natures.get(preParseInput(validatedArgs.nature));
 
-  if (!natureFromDataset) {
-    throw new Error(`No nature found for ${args.nature}`);
-  }
+	if (!natureFromDataset) {
+		throw new Error(`No nature found for ${validatedArgs.nature}`);
+	}
 
-  const graphqlObject = mapNatureDataToNatureGraphQL({ data: natureFromDataset, requestedFields });
+	const graphqlObject = mapNatureDataToNatureGraphQL({ data: natureFromDataset, requestedFields });
 
-  if (!graphqlObject) {
-    throw new Error(`Failed to get data for nature: ${args.nature}`);
-  }
+	if (!graphqlObject) {
+		throw new Error(`Failed to get data for nature: ${validatedArgs.nature}`);
+	}
 
-  return graphqlObject;
+	return graphqlObject;
 }
 
 /**
@@ -28,20 +28,20 @@ export function getNature(args: GetNatureArgs, requestedFields: GraphQLSet<keyof
  *
  */
 export function getAllNatures(requestedFields: GraphQLSet<keyof Nature>): Nature[] {
-  const graphqlObjects: Nature[] = [];
+	const graphqlObjects: Nature[] = [];
 
-  for (const natureData of natures.values()) {
-    graphqlObjects.push(
-      mapNatureDataToNatureGraphQL({
-        data: natureData,
-        requestedFields
-      })
-    );
-  }
+	for (const natureData of natures.values()) {
+		graphqlObjects.push(
+			mapNatureDataToNatureGraphQL({
+				data: natureData,
+				requestedFields
+			})
+		);
+	}
 
-  if (!graphqlObjects.length) {
-    throw new Error('Failed to get data for Natures');
-  }
+	if (!graphqlObjects.length) {
+		throw new Error('Failed to get data for Natures');
+	}
 
-  return graphqlObjects;
+	return graphqlObjects;
 }

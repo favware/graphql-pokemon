@@ -23,7 +23,7 @@ jobs:
     if: ${{ ! contains(github.event.head_commit.message, '[skip docker]') }}
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v4.0.0
       - name: Login to DockerHub
@@ -77,9 +77,9 @@ jobs:
           - 4000:4000
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.14'
           cache: pip
@@ -125,11 +125,9 @@ jobs:
           - 4000:4000
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
-      - name: Add problem matchers
-        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
-      - name: Use Node.js v20
-        uses: actions/setup-node@v6
+        uses: actions/checkout@v7
+      - name: Use Node.js v24
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: yarn
@@ -152,12 +150,12 @@ jobs:
     needs: GeneratePackage
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           token: ${{ secrets.BOT_TOKEN }}
-      - name: Use Node.js v20
-        uses: actions/setup-node@v6
+      - name: Use Node.js v24
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: yarn
@@ -201,7 +199,7 @@ jobs:
     needs: GitHubMakeRelease
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Download generated typings artifact
         uses: actions/download-artifact@v8
         with:
@@ -216,7 +214,7 @@ jobs:
         with:
           name: changelog_md
       - name: Setup Node for publishing to NPM
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: yarn
@@ -238,9 +236,9 @@ jobs:
     needs: GitHubMakeRelease
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Setup Node for publishing to Github
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           registry-url: 'https://npm.pkg.github.com'

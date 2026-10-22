@@ -1,5 +1,5 @@
-import type { GraphQLSet } from '#utils/GraphQLSet';
 import { isFunction, isNullish } from '@sapphire/utilities';
+import type { GraphQLSet } from '#utils/GraphQLSet';
 
 /**
  * Adds a property to an object conditionally based on a given condition.
@@ -10,20 +10,20 @@ import { isFunction, isNullish } from '@sapphire/utilities';
  * @returns The object with the property added conditionally.
  */
 export function addPropertyToObjectConditional<T extends object, K extends keyof T>({
-  objectTarget,
-  propertyKey,
-  propertyValue,
-  condition
+	objectTarget,
+	propertyKey,
+	propertyValue,
+	condition
 }: AddPropertyToObjectConditionalParameters<T, K>): T {
-  if (condition) {
-    addPropertyToObject({
-      objectTarget,
-      propertyKey,
-      propertyValue
-    });
-  }
+	if (condition) {
+		addPropertyToObject({
+			objectTarget,
+			propertyKey,
+			propertyValue
+		});
+	}
 
-  return objectTarget;
+	return objectTarget;
 }
 
 /**
@@ -36,21 +36,21 @@ export function addPropertyToObjectConditional<T extends object, K extends keyof
  * @returns The object with the property added.
  */
 export function addPropertyToObjectFieldBased<T extends object, K extends keyof T>({
-  objectTarget,
-  propertyKey,
-  propertyValue,
-  requestedFields,
-  fieldAccessor = propertyKey as string
+	objectTarget,
+	propertyKey,
+	propertyValue,
+	requestedFields,
+	fieldAccessor = propertyKey as string
 }: AddPropertyToObjectParameters<T, K>): T {
-  if (requestedFields.has(fieldAccessor as K)) {
-    addPropertyToObject({
-      objectTarget,
-      propertyKey,
-      propertyValue
-    });
-  }
+	if (requestedFields.has(fieldAccessor as K)) {
+		addPropertyToObject({
+			objectTarget,
+			propertyKey,
+			propertyValue
+		});
+	}
 
-  return objectTarget;
+	return objectTarget;
 }
 
 /**
@@ -61,15 +61,15 @@ export function addPropertyToObjectFieldBased<T extends object, K extends keyof 
  * @param params - The `objectTarget`, `propertyKey`, and `propertyValue` parameters.
  */
 function addPropertyToObject<T extends object, K extends keyof T>({
-  objectTarget,
-  propertyKey,
-  propertyValue
+	objectTarget,
+	propertyKey,
+	propertyValue
 }: Omit<AddPropertyToObjectParameters<T, K>, 'requestedFields' | 'fieldAccessor'>): void {
-  const resolvedPropertyValue = isFunction(propertyValue) ? (propertyValue as () => T[K] | null)() : propertyValue;
+	const resolvedPropertyValue = isFunction(propertyValue) ? (propertyValue as () => T[K] | null)() : propertyValue;
 
-  if (!isNullish(resolvedPropertyValue)) {
-    Reflect.set(objectTarget, propertyKey, resolvedPropertyValue);
-  }
+	if (!isNullish(resolvedPropertyValue)) {
+		Reflect.set(objectTarget, propertyKey, resolvedPropertyValue);
+	}
 }
 
 /**
@@ -78,10 +78,10 @@ function addPropertyToObject<T extends object, K extends keyof T>({
  * @template K - The key of the property to be added.
  */
 type AddPropertyToObjectConditionalParameters<T extends object, K extends keyof T> = Omit<
-  AddPropertyToObjectParameters<T, K>,
-  'requestedFields' | 'fieldAccessor'
+	AddPropertyToObjectParameters<T, K>,
+	'requestedFields' | 'fieldAccessor'
 > & {
-  condition: boolean;
+	condition: boolean;
 };
 
 /**
@@ -90,9 +90,9 @@ type AddPropertyToObjectConditionalParameters<T extends object, K extends keyof 
  * @template K - The type of the property key.
  */
 interface AddPropertyToObjectParameters<T extends object, K extends keyof T> {
-  objectTarget: T;
-  propertyKey: K;
-  propertyValue: T[K] | (() => T[K] | null);
-  requestedFields: GraphQLSet<K>;
-  fieldAccessor?: string;
+	objectTarget: T;
+	propertyKey: K;
+	propertyValue: T[K] | (() => T[K] | null);
+	requestedFields: GraphQLSet<K>;
+	fieldAccessor?: string;
 }

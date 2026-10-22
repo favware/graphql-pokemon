@@ -1,9 +1,9 @@
 diff --git a/package.json b/package.json
-index d4d6e112be345bf616cdd042a9f55ac0b1e2d5bf..129889dd7f10af43dac65e41231b5665738004b9 100644
+index 4960ba1a81187ae363a449c6cd85231b03bbcdbd..6ec1ce94551bf39ef2186c561193640c652e5394 100644
 --- a/package.json
 +++ b/package.json
 @@ -3,8 +3,200 @@
-   "version": "16.11.0",
+   "version": "16.14.2",
    "description": "A Query Language and Runtime which can target any service.",
    "license": "MIT",
 -  "main": "index",

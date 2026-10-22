@@ -106,7 +106,7 @@
 		"@commitlint/config-conventional": "^21.2.4",
 		"@discordjs/collection": "^2.1.1",
 		"@favware/cliff-jumper": "^6.1.0",
-		"@graphql-codegen/cli": "^7.4.6",
+		"@graphql-codegen/cli": "^6.3.1",
 		"@graphql-codegen/schema-ast": "^6.1.1",
 		"@graphql-codegen/typescript": "^6.1.2",
 		"@graphql-codegen/typescript-resolvers": "^6.1.1",
@@ -147,12 +147,8 @@
 		"vitest": "^5.0.5"
 	},
 	"resolutions": {
-		"graphql@npm:16.11.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
-		"graphql@npm:16.12.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
-		"graphql@npm:16.13.1": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
-		"graphql@npm:16.14.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
-		"graphql@npm:16.14.2": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch",
-		"graphql@npm:16.9.0": "patch:graphql@npm%3A16.11.0#~/.yarn/patches/graphql-npm-16.11.0-836e6ade28.patch"
+		"graphql@npm:16.14.0": "patch:graphql@npm%3A16.14.2#~/.yarn/patches/graphql-npm-16.14.2-3f85a393fd.patch",
+		"graphql@npm:16.14.2": "patch:graphql@npm%3A16.14.2#~/.yarn/patches/graphql-npm-16.14.2-3f85a393fd.patch"
 	},
 	"lint-staged": {
 		"!(*.mjs|*.js|*.ts)": "oxfmt --no-error-on-unmatched-pattern",

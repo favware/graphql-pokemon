@@ -74,7 +74,7 @@ export function parseSpeciesForSprite({
 
 	if (MegaSpriteRegex.test(pokemonName)) {
 		// oxlint-disable-next-line no-param-reassign
-		pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
+		pokemonName = pokemonName.replaceAll(MegaSpriteRegex, '$1$2');
 	}
 
 	// Parse differently for remaining generation 9 Pokémon
@@ -177,7 +177,7 @@ function parseAsAfd(pokemonName: string, baseSpecies: string | undefined, shiny:
 
 	if (MegaSpriteRegex.test(pokemonName)) {
 		// oxlint-disable-next-line no-param-reassign
-		pokemonName = pokemonName.replace(MegaSpriteRegex, '$1$2');
+		pokemonName = pokemonName.replaceAll(MegaSpriteRegex, '$1$2');
 	}
 
 	const pokemonGif = `${pokemonName}.png`;

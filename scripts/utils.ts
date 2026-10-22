@@ -105,7 +105,7 @@ export function replaceEnumLikeValues(data: string): string {
 	// oxlint-disable-next-line prefer-named-capture-group
 	const typesEnumRegex = /"?types"?: \[\s['"]([a-zA-Z]+)['"](?:, ['"]([a-zA-Z]+)['"])?\s\]/g;
 
-	const replacedTypesData = isNonStandardReplacedData.replace(typesEnumRegex, (_, type1, type2) => {
+	const replacedTypesData = isNonStandardReplacedData.replaceAll(typesEnumRegex, (_, type1, type2) => {
 		const capitalizedType1 = type1.charAt(0).toUpperCase() + type1.slice(1);
 
 		if (type2) {

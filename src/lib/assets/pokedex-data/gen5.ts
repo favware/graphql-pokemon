@@ -215,7 +215,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Fire, TypesEnum.Fighting],
 			weightkg: 180.3,
 			aliases: ['enbuoomega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/emboar.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/emboar-mega.mp3',
 			respelling: 'EHM-bohr',
 			ipa: '/ˈɛmbɔər/'
 		}
@@ -1083,7 +1083,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'excadrill',
 		{
-			abilities: { first: 'sandrush', second: 'sandforce', hidden: 'moldbreaker' },
+			abilities: { first: 'piercingdrill' },
 			baseStats: { hp: 110, atk: 135, def: 60, spa: 50, spd: 65, spe: 88 },
 			catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
 			color: 'Gray',
@@ -1111,7 +1111,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'excadrillmega',
 		{
-			abilities: { first: 'piercingdrill' },
+			abilities: { first: 'sandrush', second: 'sandforce', hidden: 'moldbreaker' },
 			baseStats: { hp: 110, atk: 165, def: 100, spa: 65, spd: 65, spe: 103 },
 			catchRate: { base: 60, percentageWithOrdinaryPokeballAtFullHealth: '14.8%' },
 			color: 'Gray',
@@ -1131,7 +1131,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Ground, TypesEnum.Steel],
 			weightkg: 60,
 			aliases: ['doryuuzumega', 'drillmega', 'drillermega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/excadrill.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/excadrill-mega.mp3',
 			respelling: 'EKS-kuh-dril',
 			ipa: '/ˈɛkskədrɪl/'
 		}
@@ -1606,7 +1606,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'scolipedemega',
 		{
-			abilities: { first: 'shellarmor' },
+			abilities: { first: 'poisonpoint', second: 'swarm', hidden: 'speedboost' },
 			baseStats: { hp: 60, atk: 140, def: 149, spa: 75, spd: 99, spe: 62 },
 			catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
 			color: 'Red',
@@ -1626,7 +1626,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Bug, TypesEnum.Poison],
 			weightkg: 230.5,
 			aliases: ['pendoraamega', 'scolimega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/scolipede.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/scolipede-mega.mp3',
 			respelling: 'SKOH-lih-peed',
 			ipa: '/ˈskoʊlɪpiːd/'
 		}
@@ -2292,7 +2292,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'scraftymega',
 		{
-			abilities: { first: 'intimidate' },
+			abilities: { first: 'shedskin', second: 'moxie', hidden: 'intimidate' },
 			baseStats: { hp: 65, atk: 130, def: 135, spa: 55, spd: 135, spe: 68 },
 			catchRate: { base: 90, percentageWithOrdinaryPokeballAtFullHealth: '20.1%' },
 			color: 'Red',
@@ -2312,7 +2312,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Dark, TypesEnum.Fighting],
 			weightkg: 31,
 			aliases: ['zuruzukinmega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/scrafty.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/scrafty-mega.mp3',
 			respelling: 'SKRAF-tee',
 			ipa: '/ˈskræftiː/'
 		}
@@ -3773,7 +3773,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'eelektrossmega',
 		{
-			abilities: { first: 'eelevate' },
+			abilities: { first: 'levitate' },
 			baseStats: { hp: 85, atk: 145, def: 80, spa: 135, spd: 90, spe: 80 },
 			catchRate: { base: 30, percentageWithOrdinaryPokeballAtFullHealth: '8.8%' },
 			color: 'Blue',
@@ -3793,7 +3793,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Electric],
 			weightkg: 180,
 			aliases: ['shibirudonmega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/eelektross.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/eelektross-mega.mp3',
 			respelling: 'ee-LEK-trahs',
 			ipa: '/iːˈlɛktrɑːs/'
 		}
@@ -3974,7 +3974,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Ghost, TypesEnum.Fire],
 			weightkg: 69.6,
 			aliases: ['chandymega', 'shanderamega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/chandelure.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/chandelure-mega.mp3',
 			respelling: 'shan-duh-LOOR',
 			ipa: '/ʃændəˈlʊər/'
 		}
@@ -4425,7 +4425,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			types: [TypesEnum.Ground, TypesEnum.Ghost],
 			weightkg: 330,
 			aliases: ['goruugumega', 'lurkmega'],
-			cry: 'https://play.pokemonshowdown.com/audio/cries/golurk.mp3',
+			cry: 'https://play.pokemonshowdown.com/audio/cries/golurk-mega.mp3',
 			respelling: 'GO-lurk',
 			ipa: '/ˈɡoʊlərk/'
 		}

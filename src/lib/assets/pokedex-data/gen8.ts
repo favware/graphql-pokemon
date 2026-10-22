@@ -2182,7 +2182,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'falinksmega',
 		{
-			abilities: { first: 'defiant' },
+			abilities: { first: 'battlearmor', hidden: 'defiant' },
 			baseStats: { hp: 65, atk: 135, def: 135, spa: 70, spd: 65, spe: 100 },
 			catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
 			color: 'Yellow',
@@ -2201,7 +2201,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 			species: 'falinks-mega',
 			types: [TypesEnum.Fighting],
 			weightkg: 99,
-			cry: 'https://play.pokemonshowdown.com/audio/cries/falinks.mp3'
+			cry: 'https://play.pokemonshowdown.com/audio/cries/falinks-mega.mp3'
 		}
 	],
 	[

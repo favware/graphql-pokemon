@@ -67,9 +67,7 @@ for (const [key, data] of currentMoves.entries()) {
 		}
 
 		if (moveFromChampions) {
-			if (!data.champions) {
-				data.champions = {};
-			}
+			data.champions ??= {};
 
 			if (moveFromChampions.accuracy === true) {
 				data.champions.accuracy = 100;
@@ -109,7 +107,7 @@ for (const [key, data] of currentMoves.entries()) {
 		if (key.startsWith('hiddenpower')) {
 			data.shortDesc = "Varies in type based on the user's IVs.";
 		} else {
-			data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc);
+			data.shortDesc = replacePokeWithAccentedPoke(moveFromText.shortDesc ?? '');
 		}
 
 		if (moveFromText.desc) {

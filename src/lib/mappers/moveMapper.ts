@@ -1,7 +1,7 @@
 import type { PokemonTypes } from '#assets/pokemon-source';
 import type { Move } from '#types/graphql-mapped-types';
 import type { GraphQLSet } from '#utils/GraphQLSet';
-import { addPropertyToObjectConditional, addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
+import { addPropertyToObjectFieldBased } from '#utils/addPropertyToObject';
 import { parseZCrystal, toLowerHyphenCase, toLowerSingleWordCase, toTitleSnakeCaseWithoutHyphenConvert } from '#utils/utils';
 
 export function mapMoveDataToMoveGraphQL({ data, requestedFields }: MapMoveDataToMoveGraphQLParameters): Move {

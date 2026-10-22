@@ -235,17 +235,12 @@ export namespace PokemonTypes {
 	}
 
 	type MoveChampions = {
-		readonly accuracy?: number;
-
-		readonly basePower?: string;
-
-		readonly desc?: string;
-
-		readonly pp?: number;
-
-		readonly shortDesc?: string;
-
-		readonly type?: string;
+		accuracy?: number;
+		basePower?: string;
+		desc?: string;
+		pp?: number;
+		shortDesc?: string;
+		type?: string;
 	};
 
 	export interface LearnsetMove {

@@ -944,7 +944,7 @@ __metadata:
     colorette: "npm:^2.0.20"
     cz-conventional-changelog: "npm:^3.3.0"
     eslint-config-neon: "npm:^0.5.4"
-    graphql: "npm:16.14.2"
+    graphql: "npm:17.0.2"
     graphql-tag: "npm:^2.12.7"
     json-stream-stringify: "npm:^3.1.7"
     koa: "npm:^3.2.1"
@@ -7874,6 +7874,13 @@ __metadata:
   version: 16.14.2
   resolution: "graphql@npm:16.14.2"
   checksum: 10/cd9a2581508f82621112a4dc625714e81ce725ab0a62502d97c14f61fee180e85276ac64bf9094f4fbf237737832ad4bb970aa26088f9dffece56f8919a49a29
+  languageName: node
+  linkType: hard
+
+"graphql@npm:17.0.2":
+  version: 17.0.2
+  resolution: "graphql@npm:17.0.2"
+  checksum: 10/e3760187b08cafd0755cc504bf272623cba8a05c29671c9ec5709fe634aaf62011a98e7831f67add3775261a0617e1b0d548da99ab70532b72d6dd5e1f0915ca
   languageName: node
   linkType: hard
 

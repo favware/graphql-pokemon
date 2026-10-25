@@ -114,7 +114,7 @@
 		"@koa/cors": "^5.0.0",
 		"@magidoc/cli": "^7.0.0",
 		"@sapphire/fetch": "^3.0.5",
-		"@sapphire/shapeshift": "^4.0.0",
+		"@sapphire/shapeshift": "^5.0.0",
 		"@sapphire/timestamp": "^1.0.5",
 		"@sapphire/ts-config": "^5.0.3",
 		"@skyra/jaro-winkler": "^1.1.1",

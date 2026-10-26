@@ -337,7 +337,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'staraptormega',
 		{
-			abilities: { first: 'intimidate', hidden: 'reckless' },
+			abilities: { first: 'contrary' },
 			baseStats: { hp: 85, atk: 140, def: 100, spa: 60, spd: 90, spe: 110 },
 			catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
 			baseSpecies: 'staraptor',
@@ -1846,7 +1846,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'garchompmegaz',
 		{
-			abilities: { first: 'sandforce' },
+			abilities: { first: 'levitate' },
 			baseSpecies: 'garchomp',
 			baseStats: { hp: 108, atk: 130, def: 85, spa: 141, spd: 85, spe: 151 },
 			catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
@@ -1982,7 +1982,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'lucariomegaz',
 		{
-			abilities: { first: 'adaptability' },
+			abilities: { first: 'auraguard' },
 			baseSpecies: 'lucario',
 			baseStats: { hp: 70, atk: 100, def: 70, spa: 164, spd: 70, spe: 151 },
 			catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },

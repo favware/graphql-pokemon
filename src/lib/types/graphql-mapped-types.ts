@@ -232,7 +232,7 @@ interface Move {
 }
 
 /** Pokémon Champions specific data about a move */
-export type MoveChampions = {
+type MoveChampions = {
 	/** The accuracy for a move */
 	readonly accuracy?: Maybe<number>;
 	/** The base power for a move */
@@ -435,6 +435,7 @@ export type {
 	LearnsetMove,
 	Maybe,
 	Move,
+	MoveChampions,
 	Pokemon,
 	PokemonLearnset,
 	PokemonType,

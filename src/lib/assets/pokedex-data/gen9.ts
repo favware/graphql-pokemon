@@ -2618,7 +2618,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'baxcaliburmega',
 		{
-			abilities: { first: 'thermalexchange', hidden: 'icebody' },
+			abilities: { first: 'thermalexchange' },
 			baseStats: { hp: 115, atk: 145, def: 92, spa: 75, spd: 86, spe: 87 },
 			catchRate: { base: 10, percentageWithOrdinaryPokeballAtFullHealth: '3.9%' },
 			color: 'Gray',

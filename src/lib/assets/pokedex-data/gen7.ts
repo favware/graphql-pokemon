@@ -1760,7 +1760,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'golisopodmega',
 		{
-			abilities: { first: 'emergencyexit' },
+			abilities: { first: 'toughclaws' },
 			baseStats: { hp: 75, atk: 150, def: 175, spa: 70, spd: 120, spe: 40 },
 			catchRate: { base: 45, percentageWithOrdinaryPokeballAtFullHealth: '11.9%' },
 			color: 'Gray',

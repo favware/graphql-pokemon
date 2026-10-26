@@ -240,7 +240,7 @@ export namespace PokemonTypes {
 		desc?: string;
 		pp?: number;
 		shortDesc?: string;
-		type?: string;
+		type?: `${Capitalize<keyof Types>}`;
 	};
 
 	export interface LearnsetMove {

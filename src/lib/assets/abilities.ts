@@ -481,6 +481,14 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		}
 	],
 	[
+		'eelevate',
+		{
+			desc: "This Pokémon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokémon as if it did not have this Ability. This Pokémon's highest stat is raised by 1 stage if it attacks and knocks out another Pokémon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+			name: 'Eelevate',
+			shortDesc: 'This Pokémon is immune to Ground; +1 to highest stat if it KOes another Pokémon.'
+		}
+	],
+	[
 		'effectspore',
 		{
 			desc: '30% chance a Pokémon making contact with this Pokémon will be poisoned, paralyzed, or fall asleep.',
@@ -552,6 +560,13 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			name: 'Filter',
 			shortDesc: 'This Pokémon receives 3/4 damage from supereffective attacks.'
+		}
+	],
+	[
+		'firemane',
+		{
+			name: 'Fire Mane',
+			shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
 		}
 	],
 	[
@@ -2505,23 +2520,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		}
 	],
 	[
-		'eelevate',
-		{
-			desc: "This Pokémon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokémon as if it did not have this Ability. This Pokémon's highest stat is raised by 1 stage if it attacks and knocks out another Pokémon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
-			name: 'Eelevate',
-			shortDesc: 'This Pokémon is immune to Ground; +1 to highest stat if it KOes another Pokémon.'
-		}
-	],
-	[
-		'firemane',
-		{
-			name: 'Fire Mane',
-			shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
-		}
-	],
-	[
 		'auraguard',
 		{
+			desc: 'A Pokémon with Aura Guard takes half damage from moves that make contact. Moves affected by Long Reach which make contact will deal regular damage.',
 			name: 'Aura Guard',
 			shortDesc: 'This Pokémon receives 1/2 damage from contact moves.'
 		}

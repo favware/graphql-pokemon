@@ -3665,7 +3665,7 @@ const entries: [string, PokemonTypes.DexEntry][] = [
 	[
 		'absolmegaz',
 		{
-			abilities: { first: 'magicbounce' },
+			abilities: { first: 'sharpness' },
 			baseSpecies: 'absol',
 			baseStats: { hp: 65, atk: 154, def: 60, spa: 75, spd: 60, spe: 151 },
 			catchRate: { base: 30, percentageWithOrdinaryPokeballAtFullHealth: '8.8%' },

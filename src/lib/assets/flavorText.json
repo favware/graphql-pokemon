@@ -13992,7 +13992,7 @@
 		},
 		{
 			"version_id": "Yellow",
-			"flavor_text": "Burrows at high speed in search of food. The tunnels it leaves are used as homes by DIGLETTs."
+			"flavor_text": "Burrows at high speed in search of food. The tunnels it leaves are used as homes by Digletts."
 		},
 		{
 			"version_id": "Stadium",
@@ -44083,6 +44083,10 @@
 	],
 	"349": [
 		{
+			"version_id": "Pokopia",
+			"flavor_text": "It is a shabby and ugly Pokémon. However, it is very hardy and can survive on little water."
+		},
+		{
 			"version_id": "Ruby",
 			"flavor_text": "Feebas's fins are ragged and tattered from the start of its life. Because of its shoddy appearance, this Pokémon is largely ignored. It is capable of living in both the sea and in rivers."
 		},
@@ -44200,6 +44204,10 @@
 		}
 	],
 	"350": [
+		{
+			"version_id": "Pokopia",
+			"flavor_text": "Its lovely scales are described as rainbow-colored. They change color depending on the viewing angle."
+		},
 		{
 			"version_id": "Ruby",
 			"flavor_text": "Milotic is said to be the most beautiful of all the Pokémon. It has the power to becalm such emotions as anger and hostility to quell bitter feuding."
@@ -67033,6 +67041,10 @@
 	],
 	"710": [
 		{
+			"version_id": "Pokopia",
+			"flavor_text": "Spirits that wander this world are placed into Pumpkaboo's body. They're then moved on to the afterlife."
+		},
+		{
 			"version_id": "X",
 			"flavor_text": "The pumpkin body is inhabited by a spirit trapped in this world. As the sun sets, it becomes restless and active."
 		},
@@ -67062,6 +67074,10 @@
 		}
 	],
 	"711": [
+		{
+			"version_id": "Pokopia",
+			"flavor_text": "Eerie cries emanate from its body in the dead of night. The sounds are said to be the wails of spirits who are suffering in the afterlife."
+		},
 		{
 			"version_id": "X",
 			"flavor_text": "Singing in eerie voices, they wander town streets on the night of the new moon. Anyone who hears their song is cursed."

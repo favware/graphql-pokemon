@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+# [8.9.0](https://github.com/favware/graphql-pokemon/compare/v8.8.2...v8.9.0) - (2026-10-26)
+
+## 🐛 Bug Fixes
+
+- **GHSA-gr3p-rq55-9r9g:** Resolve security advisory (#1166) ([378f10a](https://github.com/favware/graphql-pokemon/commit/378f10ab07030f5fd8231f2a4a75a86bc4fe0a1e))
+
+## 🚀 Features
+
+- Add pokémon champions move data (#1151) ([2cb915d](https://github.com/favware/graphql-pokemon/commit/2cb915dd9f1679606dc1bad11bf5f1e75966d9c5))
+
 # [8.8.2](https://github.com/favware/graphql-pokemon/compare/v8.8.1...v8.8.2) - (2026-10-22)
 
 ## 🏠 Refactor

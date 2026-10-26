@@ -6,6 +6,7 @@ import cors from '@koa/cors';
 import Koa from 'koa';
 import { RootResolver } from '#resolvers/RootResolver';
 import type { Query } from '#test-utils/types';
+import { queryComplexityLimitPlugin, queryResourceLimitRule } from '#utils/graphqlValidationRules';
 import { RootTypedef } from '#utils/grapqhl-root-typedef-resolver';
 
 let testServer: ApolloServer | undefined = undefined;
@@ -23,7 +24,9 @@ export async function executeGraphQL<K extends keyof Omit<Query, '__typename'> |
 		testServer = new ApolloServer({
 			resolvers: RootResolver,
 			typeDefs: RootTypedef,
-			plugins: [ApolloServerPluginDrainHttpServer({ httpServer })]
+			validationRules: [queryResourceLimitRule],
+			includeStacktraceInErrorResponses: false,
+			plugins: [ApolloServerPluginDrainHttpServer({ httpServer }), queryComplexityLimitPlugin]
 		});
 	}
 

@@ -8,6 +8,7 @@ import cors from '@koa/cors';
 import Koa from 'koa';
 import { RootResolver } from '#resolvers/RootResolver';
 import { defaultDocument, defaultVariables } from '#root/defaultDocument';
+import { queryComplexityLimitPlugin, queryResourceLimitRule } from '#utils/graphqlValidationRules';
 import { RootTypedef } from '#utils/grapqhl-root-typedef-resolver';
 import { stringifyResult } from '#utils/stringifyResult';
 
@@ -18,9 +19,12 @@ const gqlServer = async (): Promise<Server<typeof IncomingMessage, typeof Server
 	const apolloServer = new ApolloServer({
 		resolvers: RootResolver,
 		typeDefs: RootTypedef,
+		validationRules: [queryResourceLimitRule],
+		includeStacktraceInErrorResponses: false,
 		introspection: true,
 		plugins: [
 			ApolloServerPluginDrainHttpServer({ httpServer }),
+			queryComplexityLimitPlugin,
 			ApolloServerPluginLandingPageLocalDefault({
 				footer: false,
 				document: defaultDocument,

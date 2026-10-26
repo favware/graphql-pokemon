@@ -14,6 +14,8 @@ export interface Query {
 	 *
 	 * You can provide `takeFlavorTexts` to limit the amount of flavour texts to return, set the offset of where to start with `offsetFlavorTexts`, and reverse the entire array with `reverseFlavorTexts`.
 	 *
+	 * The `take` argument is also used to estimate query complexity. Requests with broad field selections may be rejected when their estimated complexity is too high, even when `take` is within its schema limit. For requests selecting most or all Pokémon data, use a `take` of 30 or less.
+	 *
 	 * While the API will currently not rate limit the usage of this query, it may do so in the future.
 	 *
 	 * It is advisable to cache responses of this query.

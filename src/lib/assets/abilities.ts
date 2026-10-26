@@ -483,10 +483,9 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 	[
 		'eelevate',
 		{
-			desc: 'The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses. When the Pokémon knocks out a target with an attack, its highest stat is boosted by 1 stage.',
+			desc: "This Pokémon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokémon as if it did not have this Ability. This Pokémon's highest stat is raised by 1 stage if it attacks and knocks out another Pokémon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
 			name: 'Eelevate',
-			shortDesc:
-				'This Pokémon has its highest stat boosted by 1 stage when it knocks out a target; Ground, Spikes, Toxic Spikes, and Sticky Web immunity.'
+			shortDesc: 'This Pokémon is immune to Ground; +1 to highest stat if it KOes another Pokémon.'
 		}
 	],
 	[
@@ -567,7 +566,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		'firemane',
 		{
 			name: 'Fire Mane',
-			shortDesc: 'Boosts the power of the Pokémon’s Fire-type moves by 50%'
+			shortDesc: "This Pokémon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
 		}
 	],
 	[
@@ -2525,7 +2524,7 @@ export const abilities = new Collection<string, PokemonTypes.Ability>([
 		{
 			desc: 'A Pokémon with Aura Guard takes half damage from moves that make contact. Moves affected by Long Reach which make contact will deal regular damage.',
 			name: 'Aura Guard',
-			shortDesc: 'Halves the damage the Pokémon takes from contact moves.'
+			shortDesc: 'This Pokémon receives 1/2 damage from contact moves.'
 		}
 	]
 ]);

@@ -926,7 +926,7 @@ __metadata:
     "@graphql-codegen/typescript-resolvers": "npm:^6.1.1"
     "@koa/bodyparser": "npm:^6.1.0"
     "@koa/cors": "npm:^5.0.0"
-    "@magidoc/cli": "npm:^7.0.0"
+    "@magidoc/cli": "npm:^8.0.3"
     "@sapphire/fetch": "npm:^3.0.5"
     "@sapphire/shapeshift": "npm:^4.0.0"
     "@sapphire/timestamp": "npm:^1.0.5"
@@ -1994,12 +1994,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@magidoc/cli@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@magidoc/cli@npm:7.0.0"
+"@magidoc/cli@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@magidoc/cli@npm:8.0.3"
   dependencies:
-    "@magidoc/plugin-starter-variables": "npm:^7.0.0"
-    "@magidoc/rollup-plugin-gql-schema": "npm:^7.0.0"
+    "@magidoc/plugin-starter-variables": "npm:^8.0.3"
+    "@magidoc/rollup-plugin-gql-schema": "npm:^8.0.3"
     axios: "npm:1.16.0"
     chokidar: "npm:5.0.0"
     commander: "npm:14.0.3"
@@ -2012,30 +2012,30 @@ __metadata:
     zod: "npm:4.4.3"
   bin:
     magidoc: ./build/index.js
-  checksum: 10/279a3226429584e9aa8f7dfbf94639edfb5f12be49b3ae9b44bba4487bdad3842e617d76323150637a298db9a63efd6b8917de96629c24129dcd1327276982b9
+  checksum: 10/0df0fc06a3fb25829d9b06b63164c773c50dc6ecc047bcd015b044437e6d9aec7dfe5567a479d004382bd823d50ca3aaecb323caebd44d024616d137c8c9bfc7
   languageName: node
   linkType: hard
 
-"@magidoc/plugin-starter-variables@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@magidoc/plugin-starter-variables@npm:7.0.0"
+"@magidoc/plugin-starter-variables@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@magidoc/plugin-starter-variables@npm:8.0.3"
   dependencies:
     zod: "npm:4.4.3"
   dependenciesMeta:
     zod:
       optional: true
-  checksum: 10/ac9a1dab2881929e8d11ec0003a3984ea725b4a7b5a836a3aac5e29ce9d039a070421a752c8641021123042c9b69946f808fdd4f46503c5cbf9740367809a5de
+  checksum: 10/4df1c845b3e49feb7b315f2177b138422edc3c6ad275fc6db863a656baa647dbfc37d76dbd1a54a71fba48671fa3b8118e6135b886f4851b51d838f3010f1f32
   languageName: node
   linkType: hard
 
-"@magidoc/rollup-plugin-gql-schema@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@magidoc/rollup-plugin-gql-schema@npm:7.0.0"
+"@magidoc/rollup-plugin-gql-schema@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@magidoc/rollup-plugin-gql-schema@npm:8.0.3"
   dependencies:
     axios: "npm:1.16.0"
     fast-glob: "npm:3.3.3"
     graphql: "npm:16.14.0"
-  checksum: 10/7e1a4c4bd3bd66d97e9b84e08a1dd139173da9ffbd1cd98d6db0581c68ed6bfe4cff3269ea3c2aaca90008f435f7cdf8ee85953f18450dc0f8482fc020cb20a4
+  checksum: 10/13bb8fff681b6e9a73c89719e63c0e69e8b8a88501151d82a948c4e634b2a516dce3ae29b95d6f39007201226089b4b5d5d614f8fdc8b62fbec06d93cd1b2a83
   languageName: node
   linkType: hard
 

@@ -929,7 +929,7 @@ __metadata:
     "@magidoc/cli": "npm:^7.0.0"
     "@sapphire/fetch": "npm:^3.0.5"
     "@sapphire/shapeshift": "npm:^4.0.0"
-    "@sapphire/timestamp": "npm:^1.0.5"
+    "@sapphire/timestamp": "npm:^2.0.0"
     "@sapphire/ts-config": "npm:^5.0.3"
     "@skyra/jaro-winkler": "npm:^1.1.1"
     "@types/async": "npm:^3.2.26"
@@ -2987,10 +2987,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/timestamp@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "@sapphire/timestamp@npm:1.0.5"
-  checksum: 10/ebd5216de2e2f63a481359c3f6beb76f6b07f855f07088ec0146d86d270d014a25661d337fa5abb9c4089345fc7f730c5e76cbad7154bce8208002e971d01ea0
+"@sapphire/timestamp@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@sapphire/timestamp@npm:2.0.0"
+  checksum: 10/17a2b392acb2910f912799f767306cb70fcad4a7d5fb5316522fd8d6a28e6cf2564e0d413a4bda9d22c93e53ed1094ad8cacecb2d8f73913cee9edb727f1b9a0
   languageName: node
   linkType: hard
 
